@@ -1,690 +1,601 @@
-from __future__ import annotations
+"""Volume 007 diagram data: Unclaimed Property Recovery."""
 
-VOLUME_007_SUBTITLE = (
-    "The Complete Playbook for Unclaimed Property Recovery: "
-    "$60,000–$450,000 USD in Annual Service Fees, Starting with a "
-    "1 FT + 2 C (3 People) Pod and Scaling to Five"
+from typing import Any, Dict, List
+
+VOLUME_007_SUBTITLE: str = (
+    "Free State Searches, Capped Finder Fees, Skip-Traced Heirs, Licensed "
+    "Claim Filing, Bankruptcy and Royalty Recoveries, and Holder Audit Defense"
 )
 
-VOLUME_007_POSITIONING_ALTERNATIVES = [
+
+def build_volume_007_diagrams_data() -> List[Dict[str, Any]]:
+    """Return the eight structured diagram dicts for Volume 007."""
+    return [
+        {
+            "diagram_id": "diag-01-search-entry-sequence",
+            "chapter_number": 1,
+            "title": "Unclaimed Property Search Entry Sequence",
+            "subtitle": "From dormancy clock to a free claim or a capped finder agreement",
+            "chart_type": "process_flow",
+            "stages": [
+                {
+                    "step": "01",
+                    "label": "Confirm Dormancy Has Run",
+                    "value": "Step 1",
+                    "detail": (
+                        "Dormancy runs one year for payroll and three to five years for "
+                        "bank accounts; an empty search may only mean the property has "
+                        "not yet been reported to the state (Hoang Le CFP, EA)."
+                    ),
+                },
+                {
+                    "step": "02",
+                    "label": "Sweep MissingMoney.com First",
+                    "value": "Step 2",
+                    "detail": (
+                        "More than $70 billion sits in state custody and about one in "
+                        "seven Americans has a stake; the median claim is about $100 "
+                        "against a $2,080 average (Hoang Le; Money Missed)."
+                    ),
+                },
+                {
+                    "step": "03",
+                    "label": "Search Every State Portal",
+                    "value": "Step 3",
+                    "detail": (
+                        "Search each state where the owner lived or worked, including "
+                        "deceased relatives; Illinois traced 119 relatives back five "
+                        "generations on the $11 million Stancak estate (Money Missed)."
+                    ),
+                },
+                {
+                    "step": "04",
+                    "label": "Check Federal Registries",
+                    "value": "Step 4",
+                    "detail": (
+                        "State databases do not hold federal assets such as wages, "
+                        "pensions, FHA refunds, failed banks, or bankruptcy court funds, "
+                        "so one portal never proves a zero result (This Guy Knows Tech)."
+                    ),
+                },
+                {
+                    "step": "05",
+                    "label": "File Free or Use a Capped Finder",
+                    "value": "Step 5",
+                    "detail": (
+                        "Self-filing costs nothing; registered finders are commonly "
+                        "capped at 10% to 30%, and a legitimate locator never asks to be "
+                        "paid first. State payouts typically land in 16 to 120 days."
+                    ),
+                },
+            ],
+            "caption": (
+                "Five-step entry sequence for locating custodial money before it is "
+                "worked as a claim."
+            ),
+            "assumptions_note": (
+                "Step order follows the practitioner consensus on search entry points; "
+                "dollar figures are attributed practitioner claims, not audited totals."
+            ),
+            "note": (
+                "Attributed to Hoang Le CFP, EA, Real Estate Agent; Money Missed; "
+                "This Guy Knows Tech; Money Making Juggernaut (Eric Richardson)."
+            ),
+        },
+        {
+            "diagram_id": "diag-02-licensed-volume-funnel",
+            "chapter_number": 6,
+            "title": "Licensed Recovery Volume Funnel",
+            "subtitle": "Dial volume narrowing to a few collections under a 10% ceiling",
+            "chart_type": "funnel",
+            "stages": [
+                {
+                    "label": "Weekly Dial Volume",
+                    "value": 1000,
+                    "display": "Over 1,000 calls a week",
+                    "conversion": "Entry volume",
+                    "detail": (
+                        "Joe Green's first mentor taught calling every skip-traced "
+                        "prospect at least 10 times; most never answered (Unclaimed CEO)."
+                    ),
+                },
+                {
+                    "label": "Skip-Traced Lead List",
+                    "value": 100,
+                    "display": "100 leads",
+                    "conversion": "10 calls per lead on a 100-lead list",
+                    "detail": (
+                        "Paid tracing beats free sites; Tracers runs about $1.50 per "
+                        "skip and Skip Matrix $0.14 per matched record."
+                    ),
+                },
+                {
+                    "label": "Business Targets Pitched",
+                    "value": 20,
+                    "display": "15 to 20 corporations",
+                    "conversion": "15 to 20 corporations contacted per batch",
+                    "detail": (
+                        "David Church pitches business owners, including local banks, "
+                        "on balances found in downloaded state lists."
+                    ),
+                },
+                {
+                    "label": "Licensed Fee Ceiling",
+                    "value": 10,
+                    "display": "10% cap in Texas and California",
+                    "conversion": "At or under 10% on California and Texas agreements",
+                    "detail": (
+                        "Sharalyn Criswell cites the Texas 10% PI cap; Michelle sponsors "
+                        "registrants at $295 per year; ShadowAnyone warns unlicensed work "
+                        "can bar a PI license with no time limit."
+                    ),
+                },
+                {
+                    "label": "Collections Landed",
+                    "value": 3,
+                    "display": "2 to 3 collections",
+                    "conversion": "2 to 3 collections per 15 to 20 corporations",
+                    "detail": (
+                        "Church reports checks of $1,400 to $1,600 on mid-size claims; "
+                        "Michelle relies on volume rather than workarounds."
+                    ),
+                },
+            ],
+            "caption": (
+                "Volume pipeline for a licensed or registered operator, from dials to "
+                "paid collections."
+            ),
+            "assumptions_note": (
+                "Stages combine separately reported operator figures; the fee ceiling "
+                "stage is a percentage, while other stages are counts. Upper ends of "
+                "reported ranges are plotted as values."
+            ),
+            "note": (
+                "Attributed to Unclaimed CEO (Joe Green); Surplus Institute / David "
+                "Church; Texas Licensed Private Investigator (Sharalyn Criswell); Money "
+                "Making Juggernaut (Michelle, Shai Korn); ShadowAnyone (Larry Kay)."
+            ),
+        },
+        {
+            "diagram_id": "diag-03-state-return-waterfall",
+            "chapter_number": 3,
+            "title": "State Intake Versus Returns",
+            "subtitle": "Delaware net retention beside Illinois and California pools (USD millions)",
+            "chart_type": "waterfall",
+            "bars": [
+                {
+                    "label": "Delaware Gross Intake",
+                    "value": 554,
+                    "display": "$554 million",
+                    "kind": "total",
+                },
+                {
+                    "label": "Owner Refunds Paid",
+                    "value": 128,
+                    "display": "$128 million",
+                    "kind": "deduction",
+                },
+                {
+                    "label": "Delaware Net Booked",
+                    "value": 426,
+                    "display": "About $426 million",
+                    "kind": "result",
+                },
+                {
+                    "label": "Illinois Pool Held",
+                    "value": 5000,
+                    "display": "About $5 billion",
+                    "kind": "total",
+                },
+                {
+                    "label": "Illinois Proactive Check Run",
+                    "value": 13.2,
+                    "display": "140,000 checks, $13.2 million",
+                    "kind": "deduction",
+                },
+                {
+                    "label": "California Backlog Awaiting Owners",
+                    "value": 7000,
+                    "display": "$7 billion across 28 million accounts",
+                    "kind": "total",
+                },
+            ],
+            "caption": (
+                "Delaware kept about $426 million net after refunds, while Illinois and "
+                "California pools dwarf their proactive returns."
+            ),
+            "assumptions_note": (
+                "All values in USD millions as reported; Illinois and California bars are "
+                "separate pools, not a continuation of the Delaware sequence. New York "
+                "separately reports $1.5 million paid per day with automatic checks on "
+                "claims of $250 or less."
+            ),
+            "note": (
+                "Attributed to Off The Receipt (Delaware); WGN News (Treasurer Michael "
+                "Frerichs, Illinois); CBS News Sacramento (California); NBC New York."
+            ),
+        },
+        {
+            "diagram_id": "diag-04-launch-benchmarks",
+            "chapter_number": 2,
+            "title": "Launch-Phase Operator Benchmarks",
+            "subtitle": "Follow-up, tracing cost, tracking, and fee-split ranges",
+            "chart_type": "horizontal_bars",
+            "unit": "Mixed operator benchmarks (unit shown in each label)",
+            "bars": [
+                {
+                    "label": "Follow-Up Calls Per Prospect (calls)",
+                    "min": 3,
+                    "max": 5,
+                    "typical": 5,
+                    "display": "3 to 5 follow-up calls",
+                },
+                {
+                    "label": "Contact Where Most Sales Close (contact number)",
+                    "min": 5,
+                    "max": 12,
+                    "typical": 5,
+                    "display": "80% of sales on the 5th to 12th contact",
+                },
+                {
+                    "label": "Batch Skip Tracing Per 100 Leads (USD)",
+                    "min": 14,
+                    "max": 15,
+                    "typical": 14,
+                    "display": "About $14 to $15 per 100 leads",
+                },
+                {
+                    "label": "Calls-To-Pickups Tracking Window (weeks)",
+                    "min": 2,
+                    "max": 3,
+                    "typical": 2,
+                    "display": "Track 2 to 3 weeks before doubling volume",
+                },
+                {
+                    "label": "Florida Lawyer Fee Split, Operator Share (percent)",
+                    "min": 50,
+                    "max": 70,
+                    "typical": 50,
+                    "display": "50/50 now, pushing toward 70/30",
+                },
+            ],
+            "caption": (
+                "Benchmarks for the first months of a state funds operation, after the "
+                "fee cap and claim-package rules are read."
+            ),
+            "assumptions_note": (
+                "Typical markers sit on a value the speaker actually stated, not on a "
+                "computed midpoint; units differ per bar as labeled."
+            ),
+            "note": (
+                "Attributed to Surplus Funds 101 (David Wilkerson); Money Making "
+                "Juggernaut (Eric Richardson); Unclaimed CEO; Surplus Institute / David "
+                "Church."
+            ),
+        },
+        {
+            "diagram_id": "diag-05-business-name-gates",
+            "chapter_number": 5,
+            "title": "Business-Name Claim Gates",
+            "subtitle": "Four checks before filing on a company balance",
+            "chart_type": "decision_tree",
+            "nodes": [
+                {
+                    "gate": "G1",
+                    "question": (
+                        "Was the company entered in the last-name field with the first "
+                        "name left blank?"
+                    ),
+                    "pass_next": "G2",
+                    "fail_action": (
+                        "Re-run with the company in the last-name field and legal "
+                        "suffixes like LLC, Inc., or Corp. dropped on the first pass."
+                    ),
+                },
+                {
+                    "gate": "G2",
+                    "question": (
+                        "Have DBAs, prior names, acronyms, FEIN, and former office zip "
+                        "codes all been searched?"
+                    ),
+                    "pass_next": "G3",
+                    "fail_action": (
+                        "Stack every name variant and old zip code; check federal "
+                        "sources separately because federal agencies are exempt from "
+                        "state escheatment."
+                    ),
+                },
+                {
+                    "gate": "G3",
+                    "question": (
+                        "For a merged or dissolved entity, is the full ownership chain "
+                        "documented?"
+                    ),
+                    "pass_next": "G4",
+                    "fail_action": (
+                        "Pull certified articles of merger or dissolution plus a "
+                        "certificate of good standing; budget 6 to 12 months for the "
+                        "lineage audit."
+                    ),
+                },
+                {
+                    "gate": "G4",
+                    "question": (
+                        "Is the locator fee inside the state cap and past the "
+                        "unenforceable window?"
+                    ),
+                    "pass_next": (
+                        "File, then calendar the payout; South Carolina checks void at "
+                        "90 days and force a full refile."
+                    ),
+                    "fail_action": (
+                        "Hold; Missouri voids deals in the first 12 months, Colorado in "
+                        "the first 24 months with a 10% cap, and Georgia caps general "
+                        "agents at 10%."
+                    ),
+                },
+            ],
+            "caption": (
+                "Most business-name misses come from searching wrong; these gates catch "
+                "the common traps before a claim is filed."
+            ),
+            "assumptions_note": (
+                "Gate order reflects search-then-document-then-fee sequencing; state "
+                "rules cited are as reported by the named channels and vary by state."
+            ),
+            "note": (
+                "Attributed to Как се прави; GardenShop.Pro; Garden Shop Pro; Surplus "
+                "Institute / David Church."
+            ),
+        },
+        {
+            "diagram_id": "diag-06-specialty-asset-architecture",
+            "chapter_number": 11,
+            "title": "Royalty, Insurance, and Share Recovery Architecture",
+            "subtitle": "One claimant working four custodian channels",
+            "chart_type": "org_architecture",
+            "center": {
+                "role": "Claimant or Heir",
+                "headcount": "Every heir named in the will or letter of administration",
+                "focus": (
+                    "Name-variant searches across every state, portal, and registrar, "
+                    "backed by ID and probate or heirship proof."
+                ),
+            },
+            "spokes": [
+                {
+                    "role": "Texas Comptroller",
+                    "type": "State custodian for royalties",
+                    "kpi": (
+                        "MI02 royalties abandoned after 3 years; finder fee capped at "
+                        "10%; $10,000 affidavit-of-heirship ceiling."
+                    ),
+                },
+                {
+                    "role": "Well Operator",
+                    "type": "Royalty holder",
+                    "kpi": (
+                        "Redirect future checks after the claim; claiming suspended "
+                        "royalties can cure title and restore pay status."
+                    ),
+                },
+                {
+                    "role": "Policy Locator",
+                    "type": "Insurance search",
+                    "kpi": (
+                        "Run NAIC and MissingMoney.com first; MIB costs $75 for "
+                        "policies after 1995 as an absolute last resort."
+                    ),
+                },
+                {
+                    "role": "Share Registrar",
+                    "type": "Statutory dividend custodian",
+                    "kpi": (
+                        "7 years to the IEPFA in India, 6 years to the Nigerian trust "
+                        "fund; get the amount from the registrar, not the broker."
+                    ),
+                },
+            ],
+            "caption": (
+                "Specialty assets escheat on the same dormancy mechanic, but each "
+                "custodian channel has its own proof and fee rules."
+            ),
+            "assumptions_note": (
+                "Spokes group the custodians named by practitioners; dormancy periods "
+                "and fees are as stated for Texas, India, and Nigeria only."
+            ),
+            "note": (
+                "Attributed to Royalty Clerk; txcomptroller; Blue Mesa Minerals; Garden "
+                "Shop Pro; Mint; Broadstreet Radio."
+            ),
+        },
+        {
+            "diagram_id": "diag-07-finder-fee-ceilings",
+            "chapter_number": 4,
+            "title": "Finder Fee Ceilings by State",
+            "subtitle": "Reported caps across four state walkthroughs (percent)",
+            "chart_type": "stacked_comparison",
+            "total_range": "10% to 40% finder fee ceilings across reported states",
+            "buckets": [
+                {
+                    "label": "New York",
+                    "low": 15,
+                    "high": 15,
+                    "notes": (
+                        "Capped at 15% with a written, notarized contract; the state "
+                        "sends 100% of the check to the owner."
+                    ),
+                },
+                {
+                    "label": "Kansas",
+                    "low": 15,
+                    "high": 15,
+                    "notes": (
+                        "15% ceiling; Kansas intercepts delinquent state taxes, child "
+                        "support, and court fines and pays only the net."
+                    ),
+                },
+                {
+                    "label": "Georgia",
+                    "low": 10,
+                    "high": 30,
+                    "notes": "Reported range of 10% to 30% depending on agent type.",
+                },
+                {
+                    "label": "Montana",
+                    "low": 10,
+                    "high": 40,
+                    "notes": (
+                        "Reported range of 10% to 40%; the state auto-mails up to "
+                        "$1,000 without a formal claim."
+                    ),
+                },
+            ],
+            "caption": (
+                "Finder ceilings split widely by state even though every portal runs on "
+                "the same free search engine."
+            ),
+            "assumptions_note": (
+                "Single-value caps are shown with equal low and high; ranges are as "
+                "reported and may reflect different agent categories."
+            ),
+            "note": (
+                "Attributed to Как се прави (New York); GardenShop.Pro (Kansas, Georgia, "
+                "Montana); WFAA; KHOU 11."
+            ),
+        },
+        {
+            "diagram_id": "diag-08-holder-compliance-roadmap",
+            "chapter_number": 12,
+            "title": "Holder Compliance Roadmap",
+            "subtitle": "Four-week sprint from exposure review to audit posture",
+            "chart_type": "timeline_roadmap",
+            "weeks": [
+                {
+                    "week": "Week 1",
+                    "title": "Exposure Assessment",
+                    "deliverable": (
+                        "Review receivable credit balances and the voided check register; "
+                        "stop sweeping stale items into miscellaneous income."
+                    ),
+                    "gate": (
+                        "Voided and stale items flagged before they age into unclaimed "
+                        "property within three to five years."
+                    ),
+                },
+                {
+                    "week": "Week 2",
+                    "title": "Due Diligence Letters",
+                    "deliverable": (
+                        "Send South Carolina letters on items of $50 or more no more "
+                        "than 120 days before filing; apply the Texas $250 notice floor."
+                    ),
+                    "gate": "Texas July 1 and Utah November 1 report deadlines calendared.",
+                },
+                {
+                    "week": "Week 3",
+                    "title": "Exemption Review",
+                    "deliverable": (
+                        "Screen recoupment, business-to-business, and de minimis "
+                        "exemptions; Kodiak counts about 100 in healthcare."
+                    ),
+                    "gate": "Compliant but not overly compliant before remitting.",
+                },
+                {
+                    "week": "Week 4",
+                    "title": "Audit and Disclosure Posture",
+                    "deliverable": (
+                        "Decide on any Delaware VDA invitation within 90 days; voluntary "
+                        "disclosure cuts look-back to about ten years and waives penalties."
+                    ),
+                    "gate": (
+                        "Participating-state list pulled from state notifications, never "
+                        "from the auditor."
+                    ),
+                },
+            ],
+            "caption": (
+                "Non-filing, missing property types, and M&A trigger audits; Tennessee "
+                "penalizes willful failure at $1,000 a day up to $25,000 plus 25%."
+            ),
+            "assumptions_note": (
+                "The four-week cadence is an organizing frame; deadlines, floors, and "
+                "penalties are as stated by the named examiners and advisors."
+            ),
+            "note": (
+                "Attributed to TNTreasury; Utah Office of State Treasurer; SimekScott "
+                "LLC; Friedman LLP; Kodiak Solutions; COMPUTERSHARE (Pam Wentz, Jennifer "
+                "Borden)."
+            ),
+        },
+    ]
+
+
+VOLUME_007_POSITIONING_ALTERNATIVES: List[Dict[str, Any]] = [
     {
-        "title": "The Corporate Lost-Asset Recovery Desk",
+        "title": "The Ten Percent Locator",
         "subtitle": (
-            "Recover corporate uncashed warrants and dormant business balances "
-            "with documented ownership chains and disciplined service-fee economics."
+            "Capped fees, data-loaded calls, relative tracing, and interest clauses "
+            "for state funds operators"
         ),
-        "audience": (
-            "Bookkeeping firms, corporate records researchers, and recovery operators "
-            "serving controllers with unresolved state-held business assets."
-        ),
+        "audience": "New and early-stage unclaimed funds locators and heir finders",
         "research_basis": (
-            "California Code of Civil Procedure sections 1540 and 1582 distinguish "
-            "the owner's claim process from compensated recovery agreements. Build "
-            "the service around entity continuity, authorized signers, supporting "
-            "records, and jurisdiction-specific agreement requirements; never count "
-            "the recovered corporate principal as operator revenue."
+            "David Church's California 10% direct payout and $5,400 invoice on a "
+            "$54,000 claim, David Wilkerson's 5th-to-12th contact close rate, Sean "
+            "Boujie's 40-50% relative outreach lift, and Jay's interest clause lifting "
+            "a fee from $18,000 to $31,000."
         ),
         "sources": [
-            "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CCP&sectionNum=1540.",
-            "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CCP&sectionNum=1582.",
+            "https://www.youtube.com/watch?v=IIBKDdChS-k&t=103s",
+            "https://www.youtube.com/watch?v=qyRWV76TgwE&t=439s",
+            "https://www.youtube.com/watch?v=wp5vC44yQQg&t=256s",
+            "https://www.youtube.com/watch?v=kb-pXZgQdoE&t=57s",
+            "https://www.youtube.com/watch?v=ZvJ4yCc9em4&t=262s",
+            "https://www.youtube.com/watch?v=ujbTh1In_c4&t=157s",
         ],
-        "validation_status": (
-            "Source-informed editorial positioning; not market-tested."
-        ),
+        "validation_status": "Grounded strictly in Vol. 007 YouTube practitioner transcripts.",
     },
     {
-        "title": "The Evidence-First Property Recovery Practice",
+        "title": "Claim It Free",
         "subtitle": (
-            "Win owner trust through verifiable treasury records, transparent "
-            "finder agreements, and a clear direct-claim alternative."
+            "Finding your own dormant money across state, federal, and business-name "
+            "searches without paying anyone"
         ),
-        "audience": (
-            "Small research practices that can verify identity carefully and "
-            "explain why an owner might purchase assistance instead of filing alone."
-        ),
+        "audience": "Individuals, families, and small business owners searching on their own behalf",
         "research_basis": (
-            "New York Abandoned Property Law section 1416 regulates agreements "
-            "to locate abandoned property. California Code of Civil Procedure "
-            "section 1582 supplies a separate agreement regime. Use state-specific "
-            "fee and timing checks rather than exporting one state's contract "
-            "nationwide, and disclose that owners can claim directly without "
-            "purchasing recovery services."
+            "More than $70 billion in state custody, a $100 median claim, federal "
+            "assets missing from state portals, New York automatic checks on claims of "
+            "$250 or less, and a 37 business day Texas turnaround."
         ),
         "sources": [
-            "https://www.nysenate.gov/legislation/laws/ABP/1416",
-            "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CCP&sectionNum=1582.",
+            "https://www.youtube.com/watch?v=kZMkghcevh8&t=423s",
+            "https://www.youtube.com/watch?v=sfcrjWHv_7k&t=737s",
+            "https://www.youtube.com/watch?v=74IHdXzW4aQ&t=167s",
+            "https://www.youtube.com/watch?v=wCk_H4rThTo&t=19s",
+            "https://www.youtube.com/watch?v=7Fc0D2RuIJE&t=194s",
+            "https://www.youtube.com/watch?v=0UUN2j2_dFU&t=102s",
         ],
-        "validation_status": (
-            "Source-informed editorial positioning; not market-tested."
-        ),
+        "validation_status": "Grounded strictly in Vol. 007 YouTube practitioner transcripts.",
     },
     {
-        "title": "The Secure Claims Operations Pod",
+        "title": "Before the Auditor Calls",
         "subtitle": (
-            "Combine record matching and claim-status tracking with tightly "
-            "controlled identity evidence and exception handling."
+            "Holder reporting, exemption hunting, voluntary disclosure, and audit "
+            "defense for unclaimed property"
         ),
-        "audience": (
-            "Process-oriented founders building a three-person recovery pod "
-            "before expanding to a five-person specialist operation."
-        ),
+        "audience": "Controllers, compliance leads, and counsel at companies that hold unclaimed property",
         "research_basis": (
-            "California Civil Code section 1798.81.5 establishes reasonable-security "
-            "requirements for covered businesses handling covered personal "
-            "information. Pair its applicability assessment with the ownership "
-            "evidence required by California's claim process. Automate candidate "
-            "matching and reminders, while retaining human review of identity, "
-            "signing authority, disputed ownership, and sensitive-document access."
+            "States estimating 65% to 90% non-filing, roughly 90% to 95% of remitted "
+            "property kept by states, Tennessee's $1,000-a-day willful penalty, and "
+            "Delaware's 90-day VDA decision window."
         ),
         "sources": [
-            "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1798.81.5.",
-            "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CCP&sectionNum=1540.",
+            "https://www.youtube.com/watch?v=duwB7Y82flc&t=158s",
+            "https://www.youtube.com/watch?v=2BplqmdsUpU&t=664s",
+            "https://www.youtube.com/watch?v=KiR-ZUeCE5g&t=165s",
+            "https://www.youtube.com/watch?v=79d39hagJ6U&t=40s",
+            "https://www.youtube.com/watch?v=TGu6R9Pc0-4&t=19s",
         ],
-        "validation_status": (
-            "Source-informed editorial positioning; not market-tested."
-        ),
+        "validation_status": "Grounded strictly in Vol. 007 YouTube practitioner transcripts.",
     },
 ]
-
-
-def build_volume_007_diagrams_data() -> list[dict]:
-    specs = [
-        (
-            "diag-01-evidence-to-service-fee",
-            "process_flow",
-            "From Treasury Record to Recognized Service Fee",
-            "Five operating stages separate client assets from operator earnings.",
-            1,
-            "operating_framework",
-            (
-                "Use authorized public records and owner-provided evidence. "
-                "A matching name is only a lead, not proof of entitlement. "
-                "The canonical first-deal planning window is 3–12 months; "
-                "filing does not establish a payment date."
-            ),
-            (
-                "State-held principal belongs to the owner. Recognize only "
-                "earned service fees under the applicable accounting policy."
-            ),
-            [
-                (
-                    "Source eligible records",
-                    "Capture the official record and custody dates",
-                    1.0,
-                    (
-                        "Record treasury jurisdiction, property identifier, holder, "
-                        "reported owner, and available dates in SQLite. Preserve "
-                        "source links and follow the portal's access conditions."
-                    ),
-                ),
-                (
-                    "Resolve ownership",
-                    "Build an evidence-backed owner identity chain",
-                    2.0,
-                    (
-                        "Compare addresses, entity filings, name changes, and "
-                        "signer authority. Escalate mergers, estates, and dissolved "
-                        "entities instead of treating fuzzy matches as ownership."
-                    ),
-                ),
-                (
-                    "Qualify the engagement",
-                    "Check finder rules before compensated recovery work",
-                    3.0,
-                    (
-                        "Document registration requirements, permitted contracting "
-                        "dates, fee limits, and required agreement terms. Explain "
-                        "the owner's direct-claim option before requesting signature."
-                    ),
-                ),
-                (
-                    "Submit and track",
-                    "File authorized evidence through the treasury channel",
-                    4.0,
-                    (
-                        "Use the state's accepted claimant or representative "
-                        "process. Log receipt identifiers, evidence requests, "
-                        "response deadlines, and owner-authorized status checks."
-                    ),
-                ),
-                (
-                    "Reconcile and bill",
-                    "Separate owner proceeds from earned service fees",
-                    5.0,
-                    (
-                        "Prefer treasury payment directly to the owner. Confirm "
-                        "the contractual earning event, invoice the permitted fee, "
-                        "and reconcile fee receivables separately from client principal."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-02-mature-cohort-conversion",
-            "funnel",
-            "A Mature Cohort Producing 75 Paid Cases",
-            "Nested case populations support $255,000 in Base-Case service fees.",
-            6,
-            "illustrative_model",
-            (
-                "Illustrative mature cohort, not observed conversion performance. "
-                "Begin with 1,000 distinct owner-property case IDs; each later "
-                "population is a subset of the preceding population. Assume "
-                "75 completed, fee-paid cases recognized within one modeled year "
-                "at $3,400 average service fees. This is not a 30-day forecast."
-            ),
-            (
-                "1,000 × 40% × 40% × 62.5% × 75% = 75 paid cases; "
-                "75 × $3,400 = $255,000 recognized service-fee revenue."
-            ),
-            [
-                (
-                    "Screened prospects",
-                    "1,000 distinct cases enter the research cohort",
-                    1000.0,
-                    (
-                        "Deduplicate by jurisdiction, property identifier, and "
-                        "reported owner. Exclude repeated outreach records rather "
-                        "than inflating the top of the funnel."
-                    ),
-                ),
-                (
-                    "Evidence-supported matches",
-                    "400 cases pass preliminary identity and value screening",
-                    400.0,
-                    (
-                        "Forty percent of screened cases have a supportable "
-                        "ownership hypothesis and sufficient expected fees to "
-                        "justify additional research; entitlement remains subject to proof."
-                    ),
-                ),
-                (
-                    "Lawfully engaged owners",
-                    "160 matched cases obtain valid service agreements",
-                    160.0,
-                    (
-                        "Forty percent of matched cases proceed after direct-claim "
-                        "disclosure, signer verification, statutory timing checks, "
-                        "and acceptance of a permitted fee structure."
-                    ),
-                ),
-                (
-                    "Complete claims filed",
-                    "100 engaged cases reach accepted submission status",
-                    100.0,
-                    (
-                        "Sixty-two and one-half percent of engagements supply "
-                        "the necessary records. Submission acceptance does not "
-                        "mean the treasury has approved ownership or payment."
-                    ),
-                ),
-                (
-                    "Recovered and fee-paid",
-                    "75 filed cases produce recognized and collected fees",
-                    75.0,
-                    (
-                        "Seventy-five percent of filed cases complete within the "
-                        "modeled recognition year. Remaining cases stay open, "
-                        "withdraw, or fail; do not book their hoped-for fees."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-03-base-service-fee-waterfall",
-            "waterfall",
-            "Base-Case Revenue to $95,625 Owner Net",
-            "Six bars reconcile $255,000 gross fees to a 37.5% net margin.",
-            3,
-            "illustrative_model",
-            (
-                "Expense categories are an illustrative allocation, not supplied "
-                "scorecard line items. First and last bars are totals; intermediate "
-                "negative bars are deductions. Total expenses are $159,375 annually, "
-                "or $13,281.25 monthly, exceeding the supplied $1,500–$8,000 monthly "
-                "opex band. That band cannot represent all-in Base expenses; only "
-                "the modeled $4,000 monthly fixed-overhead component falls inside it."
-            ),
-            (
-                "$255,000 − $48,000 − $66,000 − $25,500 − $19,875 = "
-                "$95,625; $95,625 ÷ $255,000 = 37.5%."
-            ),
-            [
-                (
-                    "Recognized service fees",
-                    "$255,000 annual operator revenue before modeled expenses",
-                    255000.0,
-                    (
-                        "Starting total: 75 paid cases at $3,400 average fees. "
-                        "Exclude treasury disbursements belonging to owners and "
-                        "exclude unearned fees from unresolved claims."
-                    ),
-                ),
-                (
-                    "Fixed operating overhead",
-                    "Deduct $48,000 for recurring operating infrastructure",
-                    -48000.0,
-                    (
-                        "Allocate $4,000 monthly to software, insurance, secure "
-                        "document handling, bookkeeping, and administration. Remaining "
-                        "annual contribution after this deduction is $207,000."
-                    ),
-                ),
-                (
-                    "Contract case delivery",
-                    "Deduct $66,000 for two contractors' delivery work",
-                    -66000.0,
-                    (
-                        "Budget researcher and claims-administrator capacity at "
-                        "$880 per completed case across 75 cases. Remaining "
-                        "annual contribution after this deduction is $141,000."
-                    ),
-                ),
-                (
-                    "Research and acquisition",
-                    "Deduct $25,500 for sourcing and owner engagement",
-                    -25500.0,
-                    (
-                        "Allocate record acquisition, permitted outreach, and "
-                        "unsuccessful prospect research at $340 per completed "
-                        "case. Remaining annual contribution is $115,500."
-                    ),
-                ),
-                (
-                    "Verification and exceptions",
-                    "Deduct $19,875 for evidence and exception handling",
-                    -19875.0,
-                    (
-                        "Allocate $265 per completed case to incremental certified "
-                        "records, identity checks, and specialist review. Keep these "
-                        "charges distinct from contractor delivery and fixed overhead."
-                    ),
-                ),
-                (
-                    "Annual owner net profit",
-                    "$95,625 ending profit equals 37.5% of service fees",
-                    95625.0,
-                    (
-                        "Ending total uses the canonical owner-net metric. "
-                        "Conservative remains $60,000 × 25% = $15,000; "
-                        "Scaled remains $450,000 × 50% = $225,000."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-04-paid-case-yield-by-property-rail",
-            "horizontal_bars",
-            "Illustrative Service-Fee Yield by Property Rail",
-            "Compare dollars per completed paid case, not client asset balances.",
-            2,
-            "illustrative_model",
-            (
-                "Selected high-value cases only; these are constructed planning "
-                "figures, not market averages. Assume 15 paid cases in each of "
-                "five mutually exclusive property categories. A hypothetical "
-                "permitted 10% fee connects the example balances to fee yields; "
-                "actual fee bases, caps, timing, and agreements require state review."
-            ),
-            (
-                "15 × ($5,000 + $4,500 + $3,500 + $2,500 + $1,500) = "
-                "$255,000 fees on $2,550,000 owner principal at the assumed rate."
-            ),
-            [
-                (
-                    "Corporate government warrants",
-                    "$5,000 service fees per completed paid case",
-                    5000.0,
-                    (
-                        "Illustrative $50,000 owner balance at 10%. Confirm that "
-                        "the warrant proceeds are actually state-held, then verify "
-                        "entity continuity and the officer's signing authority."
-                    ),
-                ),
-                (
-                    "Business vendor checks",
-                    "$4,500 service fees per completed paid case",
-                    4500.0,
-                    (
-                        "Illustrative $45,000 owner balance at 10%. Reconcile "
-                        "supplier names, former addresses, and successor entities; "
-                        "exclude government warrants assigned to the preceding category."
-                    ),
-                ),
-                (
-                    "Insurance proceeds",
-                    "$3,500 service fees per completed paid case",
-                    3500.0,
-                    (
-                        "Illustrative $35,000 owner balance at 10%. Resolve "
-                        "policyholder, beneficiary, and estate distinctions before "
-                        "requesting documents or representing a claimant's entitlement."
-                    ),
-                ),
-                (
-                    "Securities-related cash",
-                    "$2,500 service fees per completed paid case",
-                    2500.0,
-                    (
-                        "Illustrative $25,000 recoverable cash balance at 10%. "
-                        "Confirm the state's recorded property form; do not price "
-                        "fees from a speculative current share-market valuation."
-                    ),
-                ),
-                (
-                    "High-value wage balances",
-                    "$1,500 service fees per completed paid case",
-                    1500.0,
-                    (
-                        "Illustrative $15,000 owner balance at 10%. Screen "
-                        "for consolidated high-value balances; ordinary small "
-                        "payroll checks may not support manual recovery economics."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-05-statutory-and-risk-routing",
-            "decision_tree",
-            "Four Pre-Flight Checks Before Taking a Case",
-            "Advance only with documented evidence; route failures explicitly.",
-            5,
-            "operating_framework",
-            (
-                "Read sequentially: passing a check advances to the next check. "
-                "The numeric field is a check ordinal, not a probability. "
-                "Determine the applicable jurisdiction and current statutory text "
-                "for each case; California and New York are concrete examples, "
-                "not a nationwide substitute."
-            ),
-            (
-                "Registration, contract timing, ownership, and secure handling "
-                "must be resolved before a case enters paid delivery."
-            ),
-            [
-                (
-                    "Finder status and authority",
-                    "Verify required registration and permitted representative activity",
-                    1.0,
-                    (
-                        "Check the treasury's finder requirements and any "
-                        "applicable occupational licensing rules. If required "
-                        "credentials or owner authorization are absent, pause the "
-                        "engagement and identify the specific missing requirement."
-                    ),
-                ),
-                (
-                    "Agreement timing and fee",
-                    "Test statutory dates, fee limits, and contract terms",
-                    2.0,
-                    (
-                        "For California, examine Code of Civil Procedure section "
-                        "1582; for New York, Abandoned Property Law section 1416. "
-                        "Document relevant event dates and fee calculations. Route "
-                        "premature cases to a dated revisit list; reject prohibited fees."
-                    ),
-                ),
-                (
-                    "Ownership and case value",
-                    "Verify the claimant and calculate expected contribution",
-                    3.0,
-                    (
-                        "California Code of Civil Procedure section 1540 anchors "
-                        "the claim process. Escalate conflicting identities or "
-                        "successor rights. Decline cases whose expected lawful fees "
-                        "cannot cover research, evidence, delivery, and collection costs."
-                    ),
-                ),
-                (
-                    "Privacy and owner understanding",
-                    "Protect identity evidence and disclose direct claiming",
-                    4.0,
-                    (
-                        "Assess California Civil Code section 1798.81.5 where "
-                        "applicable. Use restricted encrypted storage, multifactor "
-                        "authentication, and expiring document links. Explain that "
-                        "the owner can claim directly; pause if understanding or "
-                        "secure evidence collection remains unresolved."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-06-three-to-five-person-pod",
-            "org_architecture",
-            "Three Core Seats, Two Scale Seats",
-            "Keep accountable ownership explicit as annual service fees grow.",
-            11,
-            "operating_framework",
-            (
-                "FT means full-time; C means contractor. Conservative and Base "
-                "use one FT plus two C, totaling three people. Scaled uses two "
-                "FT plus three C, totaling five people. Each numeric value is "
-                "one person; the final two seats belong only to the scaled pod."
-            ),
-            (
-                "Core pod: $60,000 revenue / $15,000 net or $255,000 / $95,625. "
-                "Scaled five-person pod: $450,000 revenue / $225,000 net."
-            ),
-            [
-                (
-                    "Founder and accountable operator",
-                    "Core seat: one full-time operating owner",
-                    1.0,
-                    (
-                        "Own engagement decisions, treasury relationships, fee "
-                        "pricing, dispute resolution, and cash reconciliation. "
-                        "Review exception queues rather than delegating final "
-                        "ownership judgments to an automated matcher."
-                    ),
-                ),
-                (
-                    "Records investigator",
-                    "Core seat: one contractor researching owner evidence",
-                    1.0,
-                    (
-                        "Maintain source provenance, entity histories, address "
-                        "matches, and duplicate controls. Access only assigned "
-                        "case records; return ambiguous matches with explicit "
-                        "evidence gaps instead of confident guesses."
-                    ),
-                ),
-                (
-                    "Claims administrator",
-                    "Core seat: one contractor managing submission completeness",
-                    1.0,
-                    (
-                        "Prepare authorized claim packets, track treasury receipts, "
-                        "request missing evidence, and maintain aging reports. "
-                        "Never convert a status update into an unsupported "
-                        "promise about payment timing."
-                    ),
-                ),
-                (
-                    "Delivery and queue manager",
-                    "Scale addition: one full-time case operations lead",
-                    1.0,
-                    (
-                        "Coordinate researcher capacity, evidence response times, "
-                        "handoffs, and receivable follow-up. Add this seat when "
-                        "measured backlog and collected-fee economics support "
-                        "ongoing payroll, not merely a larger prospect list."
-                    ),
-                ),
-                (
-                    "Complex-case specialist",
-                    "Scale addition: one contractor reviewing exceptional cases",
-                    1.0,
-                    (
-                        "Handle documented entity succession, estate evidence, "
-                        "or jurisdiction-specific specialist work within their "
-                        "credentials. Escalate matters requiring licensed counsel "
-                        "instead of expanding administrative staff authority."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-07-startup-capital-allocation",
-            "stacked_comparison",
-            "Allocate Startup Capital Before Scaling Outreach",
-            "Four buckets total $20,000 within the $5,000–$35,000 range.",
-            4,
-            "illustrative_model",
-            (
-                "Numeric values describe one $20,000 startup allocation. "
-                "Details also provide lean and expanded allocations totaling "
-                "$5,000 and $35,000 respectively. These are deployment budgets, "
-                "not projected revenue or sufficient runway for every case. "
-                "Owner living costs are outside these allocations."
-            ),
-            (
-                "Central allocation: $4,000 + $6,000 + $5,000 + $5,000 = "
-                "$20,000. A 3–12 month first-deal window requires separate "
-                "runway planning against actual recurring and variable costs."
-            ),
-            [
-                (
-                    "Jurisdiction and agreement setup",
-                    "$4,000 central allocation for lawful engagement setup",
-                    4000.0,
-                    (
-                        "Lean allocation $1,000; expanded allocation $7,000. "
-                        "Fund applicable registration, jurisdiction-specific "
-                        "agreement drafting, and focused professional review "
-                        "before purchasing a large prospect inventory."
-                    ),
-                ),
-                (
-                    "Secure records and workflow",
-                    "$6,000 central allocation for evidence-handling infrastructure",
-                    6000.0,
-                    (
-                        "Lean allocation $1,500; expanded allocation $10,000. "
-                        "Configure Microsoft 365 or Google Workspace access "
-                        "controls, encrypted endpoints, backup restoration tests, "
-                        "and a minimal claim-status database."
-                    ),
-                ),
-                (
-                    "Research and owner acquisition",
-                    "$5,000 central allocation for measured prospect development",
-                    5000.0,
-                    (
-                        "Lean allocation $1,000; expanded allocation $8,000. "
-                        "Purchase authorized records, obtain certified entity "
-                        "documents, and test transparent outreach. Track spend "
-                        "per evidence-supported case before increasing volume."
-                    ),
-                ),
-                (
-                    "Operating liquidity reserve",
-                    "$5,000 central allocation for early cash timing gaps",
-                    5000.0,
-                    (
-                        "Lean allocation $1,500; expanded allocation $10,000. "
-                        "At $4,000 monthly fixed overhead, the central reserve "
-                        "covers only 1.25 months before variable costs; arrange "
-                        "additional runway or reduce the initial cost structure."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-08-thirty-day-launch-sprint",
-            "timeline_roadmap",
-            "Thirty Days to a Controlled Recovery Operation",
-            "Build a qualified pipeline without promising a treasury payout.",
-            12,
-            "operating_framework",
-            (
-                "Four weekly milestones establish operating readiness, not "
-                "first-deal completion. The canonical first-deal window remains "
-                "3–12 months. Pilot counts are workload targets rather than "
-                "predicted engagement or collection results."
-            ),
-            (
-                "Finish the month with traceable records, reviewed agreements, "
-                "secure evidence handling, and an owner-authorized claim queue."
-            ),
-            [
-                (
-                    "Days 1-7",
-                    "Select one jurisdiction and document the operating rules",
-                    1.0,
-                    (
-                        "Choose a treasury and two property categories. Capture "
-                        "finder requirements, statutory event dates, fee limits, "
-                        "claim evidence requirements, and direct-claim instructions. "
-                        "Budget fixed overhead and document the funding gap."
-                    ),
-                ),
-                (
-                    "Days 8-14",
-                    "Configure secure intake and review twenty-five records",
-                    2.0,
-                    (
-                        "Create a SQLite case register with stable identifiers, "
-                        "source links, access owners, and next-action dates. "
-                        "Test restricted uploads and backups. Manually review "
-                        "25 public records to calibrate duplicate and identity rules."
-                    ),
-                ),
-                (
-                    "Days 15-21",
-                    "Test transparent outreach against ten screened prospects",
-                    3.0,
-                    (
-                        "Where permitted, contact ten evidence-supported prospects "
-                        "without implying government affiliation. Explain direct "
-                        "claiming, document responses, and execute only agreements "
-                        "whose timing, fees, and signer authority have been checked."
-                    ),
-                ),
-                (
-                    "Days 22-30",
-                    "Prepare eligible packets and inspect the evidence backlog",
-                    4.0,
-                    (
-                        "Submit only complete, authorized claims; otherwise log "
-                        "the exact missing evidence and responsible person. "
-                        "Review case aging, estimated contribution, and cash "
-                        "runway. Schedule weekly treasury-status and receivable reviews."
-                    ),
-                ),
-            ],
-        ),
-    ]
-
-    return [
-        dict(
-            diagram_id=identifier,
-            chart_type=kind,
-            title=title,
-            subtitle=subtitle,
-            chapter_number=chapter,
-            epistemic_tag=tag,
-            assumptions_note=note,
-            caption=caption,
-            stages=[
-                dict(
-                    label=label,
-                    value=value,
-                    numeric_value=float(number),
-                    detail=detail,
-                )
-                for label, value, number, detail in stages
-            ],
-        )
-        for (
-            identifier,
-            kind,
-            title,
-            subtitle,
-            chapter,
-            tag,
-            note,
-            caption,
-            stages,
-        ) in specs
-    ]

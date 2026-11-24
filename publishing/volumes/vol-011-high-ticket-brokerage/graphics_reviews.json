@@ -29,14 +29,14 @@
     "08_phone_tablet_mockup",
     "09_series_collection_mockup",
     "10_social_promo_pack",
-    "diag-01-exclusive-mandate-to-settlement",
-    "diag-02-annual-mandate-conversion-funnel",
-    "diag-03-base-case-commission-waterfall",
-    "diag-04-specialist-retained-fee-yields",
-    "diag-05-statutory-and-settlement-decision-tree",
-    "diag-06-four-person-core-pod",
-    "diag-07-startup-capital-allocation",
-    "diag-08-first-thirty-days-roadmap"
+    "diag-01-closer-seat-to-repeatable-close",
+    "diag-02-yacht-commission-funnel",
+    "diag-03-state-m-and-a-relief-gap",
+    "diag-04-success-fee-ladders",
+    "diag-05-ncnda-signing-gates",
+    "diag-06-specialist-lane-architecture",
+    "diag-07-supervision-cadence",
+    "diag-08-closing-certainty-roadmap"
   ],
   "cover_graphic_ids": [
     "cover_front",
@@ -54,14 +54,14 @@
     "10_social_promo_pack"
   ],
   "diagram_graphic_ids": [
-    "diag-01-exclusive-mandate-to-settlement",
-    "diag-02-annual-mandate-conversion-funnel",
-    "diag-03-base-case-commission-waterfall",
-    "diag-04-specialist-retained-fee-yields",
-    "diag-05-statutory-and-settlement-decision-tree",
-    "diag-06-four-person-core-pod",
-    "diag-07-startup-capital-allocation",
-    "diag-08-first-thirty-days-roadmap"
+    "diag-01-closer-seat-to-repeatable-close",
+    "diag-02-yacht-commission-funnel",
+    "diag-03-state-m-and-a-relief-gap",
+    "diag-04-success-fee-ladders",
+    "diag-05-ncnda-signing-gates",
+    "diag-06-specialist-lane-architecture",
+    "diag-07-supervision-cadence",
+    "diag-08-closing-certainty-roadmap"
   ],
   "allowed_statuses": [
     "approved",
@@ -486,11 +486,11 @@
         "reviewed_at": null
       }
     },
-    "diag-01-exclusive-mandate-to-settlement": {
+    "diag-01-closer-seat-to-repeatable-close": {
       "concept_a": {
-        "graphic_id": "diag-01-exclusive-mandate-to-settlement",
+        "graphic_id": "diag-01-closer-seat-to-repeatable-close",
         "graphic_type": "diagram",
-        "label": "Earn the Commission Through Five Controlled Handoffs",
+        "label": "From Vetted Seat to Repeatable High-Ticket Close",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -498,9 +498,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-01-exclusive-mandate-to-settlement",
+        "graphic_id": "diag-01-closer-seat-to-repeatable-close",
         "graphic_type": "diagram",
-        "label": "Earn the Commission Through Five Controlled Handoffs",
+        "label": "From Vetted Seat to Repeatable High-Ticket Close",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -508,9 +508,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-01-exclusive-mandate-to-settlement",
+        "graphic_id": "diag-01-closer-seat-to-repeatable-close",
         "graphic_type": "diagram",
-        "label": "Earn the Commission Through Five Controlled Handoffs",
+        "label": "From Vetted Seat to Repeatable High-Ticket Close",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -518,11 +518,11 @@
         "reviewed_at": null
       }
     },
-    "diag-02-annual-mandate-conversion-funnel": {
+    "diag-02-yacht-commission-funnel": {
       "concept_a": {
-        "graphic_id": "diag-02-annual-mandate-conversion-funnel",
+        "graphic_id": "diag-02-yacht-commission-funnel",
         "graphic_type": "diagram",
-        "label": "Ten Closings From One Tracked Annual Cohort",
+        "label": "From Yacht Sale Price to Broker Take-Home",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -530,9 +530,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-02-annual-mandate-conversion-funnel",
+        "graphic_id": "diag-02-yacht-commission-funnel",
         "graphic_type": "diagram",
-        "label": "Ten Closings From One Tracked Annual Cohort",
+        "label": "From Yacht Sale Price to Broker Take-Home",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -540,9 +540,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-02-annual-mandate-conversion-funnel",
+        "graphic_id": "diag-02-yacht-commission-funnel",
         "graphic_type": "diagram",
-        "label": "Ten Closings From One Tracked Annual Cohort",
+        "label": "From Yacht Sale Price to Broker Take-Home",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -550,11 +550,11 @@
         "reviewed_at": null
       }
     },
-    "diag-03-base-case-commission-waterfall": {
+    "diag-03-state-m-and-a-relief-gap": {
       "concept_a": {
-        "graphic_id": "diag-03-base-case-commission-waterfall",
+        "graphic_id": "diag-03-state-m-and-a-relief-gap",
         "graphic_type": "diagram",
-        "label": "$550,000 Revenue to $206,250 Owner Net",
+        "label": "The State-Level M&A Broker Relief Gap",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -562,9 +562,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-03-base-case-commission-waterfall",
+        "graphic_id": "diag-03-state-m-and-a-relief-gap",
         "graphic_type": "diagram",
-        "label": "$550,000 Revenue to $206,250 Owner Net",
+        "label": "The State-Level M&A Broker Relief Gap",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -572,9 +572,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-03-base-case-commission-waterfall",
+        "graphic_id": "diag-03-state-m-and-a-relief-gap",
         "graphic_type": "diagram",
-        "label": "$550,000 Revenue to $206,250 Owner Net",
+        "label": "The State-Level M&A Broker Relief Gap",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -582,11 +582,11 @@
         "reviewed_at": null
       }
     },
-    "diag-04-specialist-retained-fee-yields": {
+    "diag-04-success-fee-ladders": {
       "concept_a": {
-        "graphic_id": "diag-04-specialist-retained-fee-yields",
+        "graphic_id": "diag-04-success-fee-ladders",
         "graphic_type": "diagram",
-        "label": "Compare Retained Fees, Not Asset Prices",
+        "label": "Success-Fee Ranges by Intermediary Type",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -594,9 +594,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-04-specialist-retained-fee-yields",
+        "graphic_id": "diag-04-success-fee-ladders",
         "graphic_type": "diagram",
-        "label": "Compare Retained Fees, Not Asset Prices",
+        "label": "Success-Fee Ranges by Intermediary Type",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -604,9 +604,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-04-specialist-retained-fee-yields",
+        "graphic_id": "diag-04-success-fee-ladders",
         "graphic_type": "diagram",
-        "label": "Compare Retained Fees, Not Asset Prices",
+        "label": "Success-Fee Ranges by Intermediary Type",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -614,11 +614,11 @@
         "reviewed_at": null
       }
     },
-    "diag-05-statutory-and-settlement-decision-tree": {
+    "diag-05-ncnda-signing-gates": {
       "concept_a": {
-        "graphic_id": "diag-05-statutory-and-settlement-decision-tree",
+        "graphic_id": "diag-05-ncnda-signing-gates",
         "graphic_type": "diagram",
-        "label": "Four Checks Before a Mandate Becomes Executable",
+        "label": "Four Gates Before Signing an NCNDA",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -626,9 +626,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-05-statutory-and-settlement-decision-tree",
+        "graphic_id": "diag-05-ncnda-signing-gates",
         "graphic_type": "diagram",
-        "label": "Four Checks Before a Mandate Becomes Executable",
+        "label": "Four Gates Before Signing an NCNDA",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -636,9 +636,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-05-statutory-and-settlement-decision-tree",
+        "graphic_id": "diag-05-ncnda-signing-gates",
         "graphic_type": "diagram",
-        "label": "Four Checks Before a Mandate Becomes Executable",
+        "label": "Four Gates Before Signing an NCNDA",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -646,11 +646,11 @@
         "reviewed_at": null
       }
     },
-    "diag-06-four-person-core-pod": {
+    "diag-06-specialist-lane-architecture": {
       "concept_a": {
-        "graphic_id": "diag-06-four-person-core-pod",
+        "graphic_id": "diag-06-specialist-lane-architecture",
         "graphic_type": "diagram",
-        "label": "One Principal, Three Bounded Contractor Scopes",
+        "label": "Price the Paper, Not the Pitch",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -658,9 +658,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-06-four-person-core-pod",
+        "graphic_id": "diag-06-specialist-lane-architecture",
         "graphic_type": "diagram",
-        "label": "One Principal, Three Bounded Contractor Scopes",
+        "label": "Price the Paper, Not the Pitch",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -668,9 +668,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-06-four-person-core-pod",
+        "graphic_id": "diag-06-specialist-lane-architecture",
         "graphic_type": "diagram",
-        "label": "One Principal, Three Bounded Contractor Scopes",
+        "label": "Price the Paper, Not the Pitch",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -678,11 +678,11 @@
         "reviewed_at": null
       }
     },
-    "diag-07-startup-capital-allocation": {
+    "diag-07-supervision-cadence": {
       "concept_a": {
-        "graphic_id": "diag-07-startup-capital-allocation",
+        "graphic_id": "diag-07-supervision-cadence",
         "graphic_type": "diagram",
-        "label": "A $60,000 Launch Budget Inside the Canonical Range",
+        "label": "Supervision and Recordkeeping Cadence",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -690,9 +690,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-07-startup-capital-allocation",
+        "graphic_id": "diag-07-supervision-cadence",
         "graphic_type": "diagram",
-        "label": "A $60,000 Launch Budget Inside the Canonical Range",
+        "label": "Supervision and Recordkeeping Cadence",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -700,9 +700,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-07-startup-capital-allocation",
+        "graphic_id": "diag-07-supervision-cadence",
         "graphic_type": "diagram",
-        "label": "A $60,000 Launch Budget Inside the Canonical Range",
+        "label": "Supervision and Recordkeeping Cadence",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -710,11 +710,11 @@
         "reviewed_at": null
       }
     },
-    "diag-08-first-thirty-days-roadmap": {
+    "diag-08-closing-certainty-roadmap": {
       "concept_a": {
-        "graphic_id": "diag-08-first-thirty-days-roadmap",
+        "graphic_id": "diag-08-closing-certainty-roadmap",
         "graphic_type": "diagram",
-        "label": "Thirty Days to a Documented Brokerage Operating System",
+        "label": "Building Closing Certainty Before the Buyer Arrives",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -722,9 +722,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-08-first-thirty-days-roadmap",
+        "graphic_id": "diag-08-closing-certainty-roadmap",
         "graphic_type": "diagram",
-        "label": "Thirty Days to a Documented Brokerage Operating System",
+        "label": "Building Closing Certainty Before the Buyer Arrives",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -732,9 +732,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-08-first-thirty-days-roadmap",
+        "graphic_id": "diag-08-closing-certainty-roadmap",
         "graphic_type": "diagram",
-        "label": "Thirty Days to a Documented Brokerage Operating System",
+        "label": "Building Closing Certainty Before the Buyer Arrives",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -743,5 +743,5 @@
       }
     }
   },
-  "updated_at": "2026-11-23T22:48:01Z"
+  "updated_at": "2026-11-24T19:54:29Z"
 }

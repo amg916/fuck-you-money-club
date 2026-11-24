@@ -29,14 +29,14 @@
     "08_phone_tablet_mockup",
     "09_series_collection_mockup",
     "10_social_promo_pack",
-    "diag-01-accepted-lead-workflow",
-    "diag-02-annual-account-to-acceptance-funnel",
-    "diag-03-base-case-owner-net-waterfall",
-    "diag-04-subniche-accepted-appointment-yields",
-    "diag-05-channel-and-commercial-risk-decisions",
-    "diag-06-four-to-six-person-pod",
-    "diag-07-startup-capital-allocation",
-    "diag-08-thirty-day-commercial-launch"
+    "diag-01-pay-per-lead-arbitrage-loop",
+    "diag-02-claude-code-smartlead-30-day-funnel",
+    "diag-03-verified-list-leakage-waterfall",
+    "diag-04-commercial-lead-and-appointment-price-bands",
+    "diag-05-cold-email-launch-gates",
+    "diag-06-one-to-one-consent-architecture",
+    "diag-07-email-coverage-by-enrichment-setup",
+    "diag-08-ping-post-and-call-routing-roadmap"
   ],
   "cover_graphic_ids": [
     "cover_front",
@@ -54,14 +54,14 @@
     "10_social_promo_pack"
   ],
   "diagram_graphic_ids": [
-    "diag-01-accepted-lead-workflow",
-    "diag-02-annual-account-to-acceptance-funnel",
-    "diag-03-base-case-owner-net-waterfall",
-    "diag-04-subniche-accepted-appointment-yields",
-    "diag-05-channel-and-commercial-risk-decisions",
-    "diag-06-four-to-six-person-pod",
-    "diag-07-startup-capital-allocation",
-    "diag-08-thirty-day-commercial-launch"
+    "diag-01-pay-per-lead-arbitrage-loop",
+    "diag-02-claude-code-smartlead-30-day-funnel",
+    "diag-03-verified-list-leakage-waterfall",
+    "diag-04-commercial-lead-and-appointment-price-bands",
+    "diag-05-cold-email-launch-gates",
+    "diag-06-one-to-one-consent-architecture",
+    "diag-07-email-coverage-by-enrichment-setup",
+    "diag-08-ping-post-and-call-routing-roadmap"
   ],
   "allowed_statuses": [
     "approved",
@@ -486,11 +486,11 @@
         "reviewed_at": null
       }
     },
-    "diag-01-accepted-lead-workflow": {
+    "diag-01-pay-per-lead-arbitrage-loop": {
       "concept_a": {
-        "graphic_id": "diag-01-accepted-lead-workflow",
+        "graphic_id": "diag-01-pay-per-lead-arbitrage-loop",
         "graphic_type": "diagram",
-        "label": "Turn Eligible Accounts into Accepted Operator Revenue",
+        "label": "The Pay-Per-Lead Arbitrage Loop",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -498,9 +498,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-01-accepted-lead-workflow",
+        "graphic_id": "diag-01-pay-per-lead-arbitrage-loop",
         "graphic_type": "diagram",
-        "label": "Turn Eligible Accounts into Accepted Operator Revenue",
+        "label": "The Pay-Per-Lead Arbitrage Loop",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -508,9 +508,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-01-accepted-lead-workflow",
+        "graphic_id": "diag-01-pay-per-lead-arbitrage-loop",
         "graphic_type": "diagram",
-        "label": "Turn Eligible Accounts into Accepted Operator Revenue",
+        "label": "The Pay-Per-Lead Arbitrage Loop",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -518,11 +518,11 @@
         "reviewed_at": null
       }
     },
-    "diag-02-annual-account-to-acceptance-funnel": {
+    "diag-02-claude-code-smartlead-30-day-funnel": {
       "concept_a": {
-        "graphic_id": "diag-02-annual-account-to-acceptance-funnel",
+        "graphic_id": "diag-02-claude-code-smartlead-30-day-funnel",
         "graphic_type": "diagram",
-        "label": "One Annual Cohort, Five Nested Conversion Stages",
+        "label": "A 30-Day Smartlead Campaign, Sent to Calls",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -530,9 +530,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-02-annual-account-to-acceptance-funnel",
+        "graphic_id": "diag-02-claude-code-smartlead-30-day-funnel",
         "graphic_type": "diagram",
-        "label": "One Annual Cohort, Five Nested Conversion Stages",
+        "label": "A 30-Day Smartlead Campaign, Sent to Calls",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -540,9 +540,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-02-annual-account-to-acceptance-funnel",
+        "graphic_id": "diag-02-claude-code-smartlead-30-day-funnel",
         "graphic_type": "diagram",
-        "label": "One Annual Cohort, Five Nested Conversion Stages",
+        "label": "A 30-Day Smartlead Campaign, Sent to Calls",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -550,11 +550,11 @@
         "reviewed_at": null
       }
     },
-    "diag-03-base-case-owner-net-waterfall": {
+    "diag-03-verified-list-leakage-waterfall": {
       "concept_a": {
-        "graphic_id": "diag-03-base-case-owner-net-waterfall",
+        "graphic_id": "diag-03-verified-list-leakage-waterfall",
         "graphic_type": "diagram",
-        "label": "Reconcile $425,000 Revenue to $127,500 Owner Net",
+        "label": "How a Verified List Leaks Before the First Send",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -562,9 +562,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-03-base-case-owner-net-waterfall",
+        "graphic_id": "diag-03-verified-list-leakage-waterfall",
         "graphic_type": "diagram",
-        "label": "Reconcile $425,000 Revenue to $127,500 Owner Net",
+        "label": "How a Verified List Leaks Before the First Send",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -572,9 +572,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-03-base-case-owner-net-waterfall",
+        "graphic_id": "diag-03-verified-list-leakage-waterfall",
         "graphic_type": "diagram",
-        "label": "Reconcile $425,000 Revenue to $127,500 Owner Net",
+        "label": "How a Verified List Leaks Before the First Send",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -582,11 +582,11 @@
         "reviewed_at": null
       }
     },
-    "diag-04-subniche-accepted-appointment-yields": {
+    "diag-04-commercial-lead-and-appointment-price-bands": {
       "concept_a": {
-        "graphic_id": "diag-04-subniche-accepted-appointment-yields",
+        "graphic_id": "diag-04-commercial-lead-and-appointment-price-bands",
         "graphic_type": "diagram",
-        "label": "Compare Accepted-Appointment Fee Hypotheses",
+        "label": "What Commercial Leads and Appointments Cost",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -594,9 +594,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-04-subniche-accepted-appointment-yields",
+        "graphic_id": "diag-04-commercial-lead-and-appointment-price-bands",
         "graphic_type": "diagram",
-        "label": "Compare Accepted-Appointment Fee Hypotheses",
+        "label": "What Commercial Leads and Appointments Cost",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -604,9 +604,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-04-subniche-accepted-appointment-yields",
+        "graphic_id": "diag-04-commercial-lead-and-appointment-price-bands",
         "graphic_type": "diagram",
-        "label": "Compare Accepted-Appointment Fee Hypotheses",
+        "label": "What Commercial Leads and Appointments Cost",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -614,11 +614,11 @@
         "reviewed_at": null
       }
     },
-    "diag-05-channel-and-commercial-risk-decisions": {
+    "diag-05-cold-email-launch-gates": {
       "concept_a": {
-        "graphic_id": "diag-05-channel-and-commercial-risk-decisions",
+        "graphic_id": "diag-05-cold-email-launch-gates",
         "graphic_type": "diagram",
-        "label": "Four Pre-Flight Checks Before Contact or Routing",
+        "label": "Four Gates Before a Cold Email Campaign Launches",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -626,9 +626,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-05-channel-and-commercial-risk-decisions",
+        "graphic_id": "diag-05-cold-email-launch-gates",
         "graphic_type": "diagram",
-        "label": "Four Pre-Flight Checks Before Contact or Routing",
+        "label": "Four Gates Before a Cold Email Campaign Launches",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -636,9 +636,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-05-channel-and-commercial-risk-decisions",
+        "graphic_id": "diag-05-cold-email-launch-gates",
         "graphic_type": "diagram",
-        "label": "Four Pre-Flight Checks Before Contact or Routing",
+        "label": "Four Gates Before a Cold Email Campaign Launches",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -646,11 +646,11 @@
         "reviewed_at": null
       }
     },
-    "diag-06-four-to-six-person-pod": {
+    "diag-06-one-to-one-consent-architecture": {
       "concept_a": {
-        "graphic_id": "diag-06-four-to-six-person-pod",
+        "graphic_id": "diag-06-one-to-one-consent-architecture",
         "graphic_type": "diagram",
-        "label": "Four Core Seats, Two Explicit Scale Additions",
+        "label": "One-to-One Consent Architecture for Lead Buyers",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -658,9 +658,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-06-four-to-six-person-pod",
+        "graphic_id": "diag-06-one-to-one-consent-architecture",
         "graphic_type": "diagram",
-        "label": "Four Core Seats, Two Explicit Scale Additions",
+        "label": "One-to-One Consent Architecture for Lead Buyers",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -668,9 +668,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-06-four-to-six-person-pod",
+        "graphic_id": "diag-06-one-to-one-consent-architecture",
         "graphic_type": "diagram",
-        "label": "Four Core Seats, Two Explicit Scale Additions",
+        "label": "One-to-One Consent Architecture for Lead Buyers",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -678,11 +678,11 @@
         "reviewed_at": null
       }
     },
-    "diag-07-startup-capital-allocation": {
+    "diag-07-email-coverage-by-enrichment-setup": {
       "concept_a": {
-        "graphic_id": "diag-07-startup-capital-allocation",
+        "graphic_id": "diag-07-email-coverage-by-enrichment-setup",
         "graphic_type": "diagram",
-        "label": "Allocate Startup Cash Before Expanding Volume",
+        "label": "Email Coverage by Enrichment Setup",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -690,9 +690,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-07-startup-capital-allocation",
+        "graphic_id": "diag-07-email-coverage-by-enrichment-setup",
         "graphic_type": "diagram",
-        "label": "Allocate Startup Cash Before Expanding Volume",
+        "label": "Email Coverage by Enrichment Setup",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -700,9 +700,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-07-startup-capital-allocation",
+        "graphic_id": "diag-07-email-coverage-by-enrichment-setup",
         "graphic_type": "diagram",
-        "label": "Allocate Startup Cash Before Expanding Volume",
+        "label": "Email Coverage by Enrichment Setup",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -710,11 +710,11 @@
         "reviewed_at": null
       }
     },
-    "diag-08-thirty-day-commercial-launch": {
+    "diag-08-ping-post-and-call-routing-roadmap": {
       "concept_a": {
-        "graphic_id": "diag-08-thirty-day-commercial-launch",
+        "graphic_id": "diag-08-ping-post-and-call-routing-roadmap",
         "graphic_type": "diagram",
-        "label": "Build a Measurable Commercial Service in Thirty Days",
+        "label": "Four-Week Roadmap to Live Lead and Call Distribution",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -722,9 +722,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-08-thirty-day-commercial-launch",
+        "graphic_id": "diag-08-ping-post-and-call-routing-roadmap",
         "graphic_type": "diagram",
-        "label": "Build a Measurable Commercial Service in Thirty Days",
+        "label": "Four-Week Roadmap to Live Lead and Call Distribution",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -732,9 +732,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-08-thirty-day-commercial-launch",
+        "graphic_id": "diag-08-ping-post-and-call-routing-roadmap",
         "graphic_type": "diagram",
-        "label": "Build a Measurable Commercial Service in Thirty Days",
+        "label": "Four-Week Roadmap to Live Lead and Call Distribution",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -743,5 +743,5 @@
       }
     }
   },
-  "updated_at": "2026-11-23T22:48:00Z"
+  "updated_at": "2026-11-24T19:54:29Z"
 }

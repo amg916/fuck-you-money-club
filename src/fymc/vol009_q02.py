@@ -1,731 +1,839 @@
 from __future__ import annotations
 
-CHAPTER_2 = {
-    "id": "Q2",
-    "chapter_id": "Q2",
-    "chapter_number": 2,
-    "question_number": 2,
-    "slug": "who-pays-why-they-pay-payment-rails",
-    "question_prompt": "Who writes the check in million-dollar lead generation, what acute financial or statutory pain forces them to pay, and how do funds clear cleanly without circumvention or non-payment?",
-    "kicker": "Q2 / THE BIG MONEY PLAYBOOKS",
-    "title": "Who Pays, Why They Pay & How the Payment Rail Works",
-    "subtitle": "Enterprise ABM Buying Committees, Protected Opportunity Fees, ACH Settlement, Arizona ABS, USPTO Triggers & 340B Administrative Economics",
-    "layout_template": "executive_summary",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #21, Million-Dollar Lead Generation, holds Rank #18 with an "
-        "86/100 Money-to-Manpower Score across 30 mapped plays. The payer buys "
-        "documented access to qualified demand, not ownership of a prospect's "
-        "eventual contract value. This chapter connects enterprise buying "
-        "committees, eight settlement arrangements, counterparty credit, and "
-        "fee-protection evidence to three demanding applications: Arizona ABS "
-        "case acquisition, USPTO office-action triggers, and 340B administrative "
-        "origination. Annual owner net profit is $30,000 Conservative, $202,500 "
-        "Base, and $480,000 Scaled. Separate marketing revenue from attorney "
-        "fees, pharmacy reimbursement, and client funds. Establish the authorized "
-        "payer, objective acceptance event, permitted compensation structure, "
-        "and collection route before spending on account acquisition."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$150,000",
-            "context": "Annual retainers and qualified-opportunity fees; excludes client contract values",
-            "note": "20% net margin; $30,000 annual owner net profit; 2 FT + 3 C",
-        },
-        {
-            "label": "Base",
-            "value": "$675,000",
-            "context": "Annual retainers and qualified-opportunity fees; excludes client contract values",
-            "note": "30.0% net margin; $202,500 annual owner net profit; 2 FT + 3 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$1,200,000",
-            "context": "Annual retainers and qualified-opportunity fees; excludes client contract values",
-            "note": "40% net margin; $480,000 annual owner net profit; 3 FT + 4 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Find the budget owner, then price the loss they can measure",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "The enterprise check normally comes from a vendor selling expensive "
-                    "software, infrastructure, professional services, or regulated operating "
-                    "capacity, not from the prospect receiving outreach. A chief revenue "
-                    "officer sponsors pipeline creation; a demand-generation director "
-                    "administers the program; procurement negotiates the purchase order; "
-                    "accounts payable releases cash. Treat those as separate authorities "
-                    "even when one enthusiastic executive introduces everyone. Ask which "
-                    "legal entity signs, which cost center funds the work, who can accept "
-                    "an opportunity, and who can change bank instructions. A champion's "
-                    "Salesforce access establishes none of those powers. Their acute pain "
-                    "is a costly sales team waiting for credible buying conversations "
-                    "while an annual bookings target approaches. Illustratively, four "
-                    "enterprise sellers costing $250,000 each consume $1 million annually "
-                    "before implementation staff or media spend. A $90,000 annual "
-                    "origination retainer is therefore evaluated against productive seller "
-                    "capacity and expected contribution, not against the price of scraped "
-                    "email addresses. Build the buying case around an agreed account "
-                    "universe, reachable buying roles, a verified business problem, and "
-                    "evidence of a next step. Never present the prospect's million-dollar "
-                    "purchase as agency revenue or imply that a scheduled calendar event "
-                    "has already created collectible pipeline."
-                ),
-                (
-                    "Decision-maker psychology changes with the budget source. A revenue "
-                    "leader wants defensible pipeline attribution before the next board "
-                    "meeting; a marketing leader wants acceptance from sales; a controller "
-                    "wants invoices that match a purchase order without manual exceptions. "
-                    "Show each person their own evidence rather than one inflated "
-                    "dashboard. Define a qualified opportunity as an eligible account, "
-                    "an identified buying participant, a documented need, an agreed "
-                    "commercial scope, and a completed discovery event with a recorded "
-                    "next action. Set any timing or budget threshold expressly instead "
-                    "of assuming every enterprise buyer reveals procurement plans during "
-                    "the first call. For an illustrative $1 million client contract at "
-                    "40% contribution and a 10% close probability, expected contribution "
-                    "is $40,000 before selling costs, timing, and correlated losses. "
-                    "A $2,500 opportunity fee can fit that model, but the probability "
-                    "must come from the client's comparable cohort, not the operator's "
-                    "optimism. Use a limited paid pilot to establish acceptance rates. "
-                    "A regulator's deadline can intensify demand for qualified professional "
-                    "help, but it does not compel anyone to hire this agency. Sell "
-                    "timely, accurate routing and documented work, never privileged "
-                    "access, official affiliation, or an invented statutory obligation."
-                ),
-                (
-                    "Screen collectability before launching expensive account-based "
-                    "marketing. Obtain the contracting entity's registration, tax form, "
-                    "billing address, purchase-order requirements, and authorized signer's "
-                    "name through an approved onboarding channel. Review available "
-                    "financial statements, payment references, commercial credit reports, "
-                    "and relevant public insolvency records; a recognizable brand can "
-                    "still contract through a thin subsidiary. Dun & Bradstreet and "
-                    "Experian Business reports are inputs, not substitutes for entity "
-                    "verification. For a young buyer, shorten billing intervals and collect "
-                    "the first service period before reserving delivery capacity. If the "
-                    "brand requires its subsidiary to sign, consider a negotiated parent "
-                    "undertaking rather than silently treating group revenue as subsidiary "
-                    "credit. Confirm that a purchase-order ceiling covers both retainers "
-                    "and variable fees. Map who may authorize escrow release separately "
-                    "from who approves an invoice; procurement cannot release funds it "
-                    "does not control. Start with a written credit limit and a suspension "
-                    "trigger tied to overdue undisputed balances. A $7,500 monthly "
-                    "retainer plus eight $2,500 opportunities creates $27,500 of exposure "
-                    "for that service month. Waiting two unpaid months can finance "
-                    "$55,000 of client activity before collection costs. Restrict "
-                    "additional delivery when that exposure exceeds the amount the "
-                    "business can absorb."
-                ),
-            ],
-            "table": {
-                "caption": "Enterprise Buyer Authority and Collectability Evidence Matrix",
-                "headers": [
-                    "Payer or decision participant",
-                    "Acute economic or operating pain",
-                    "Evidence required before delivery",
-                    "Collection design and risk fallback",
-                ],
-                "rows": [
-                    [
-                        "Enterprise software vendor funding named-account demand creation",
-                        "Expensive enterprise sellers lack enough credible discovery conversations",
-                        "Approved account universe and signed opportunity acceptance schedule",
-                        "Collect monthly retainers before allocating dedicated research capacity",
-                    ],
-                    [
-                        "Chief revenue officer sponsoring the pipeline creation program",
-                        "Board scrutiny increases when bookings coverage misses expectations",
-                        "Written sponsorship tied to an identified spending authority",
-                        "Require the contracting entity's authorized signature before activation",
-                    ],
-                    [
-                        "Demand-generation director administering the ongoing campaign budget",
-                        "Sales rejects meetings when qualification evidence is incomplete",
-                        "Joint sales and marketing acceptance rubric with examples",
-                        "Use documented rejection reasons rather than subjective satisfaction",
-                    ],
-                    [
-                        "Procurement manager controlling vendor onboarding and purchase orders",
-                        "Unapproved variable charges create invoice exceptions and disputes",
-                        "Purchase-order ceiling explicitly includes retainers and opportunity fees",
-                        "Refresh purchase authority before exceeding remaining authorized spend",
-                    ],
-                    [
-                        "Accounts payable team executing the approved payment run",
-                        "Invoice mismatches prevent otherwise authorized balances from clearing",
-                        "Correct entity, tax documentation, purchase order, and invoice references",
-                        "Confirm payment calendar and escalation contact during onboarding",
-                    ],
-                    [
-                        "Subsidiary controller authorizing a locally funded acquisition program",
-                        "Limited subsidiary liquidity creates risk despite parent visibility",
-                        "Entity-level credit evidence and any executed parent undertaking",
-                        "Reduce credit exposure through prepaid service periods immediately",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Sell evidence to every member of the buying committee",
-                "body": (
-                    "Enterprise origination gets paid when sales acceptance, budget "
-                    "authority, and invoice processing agree on the same event."
-                ),
-                "items": [
-                    "Ask accounts payable for a sample accepted invoice before signing; mirror its entity, purchase-order, service-period, and reference fields.",
-                    "Attach a frozen target-account register to the pilot and identify existing opportunities before the first introduction.",
-                    "Use Salesforce campaign membership or HubSpot source properties plus an immutable delivery export; editable CRM fields alone are weak dispute evidence.",
-                    "Review credit exposure after every large acceptance batch, not merely at month-end, because variable fees can exhaust the purchase order first.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Choose the settlement arrangement without confusing custody and revenue",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "The eight arrangements below are commercially comparable, but they "
-                    "are not eight equivalent banking networks. Wire and ACH move money; "
-                    "retainers and milestone holds allocate payment timing; escrow adds "
-                    "third-party custody; factoring finances a receivable; statutory "
-                    "disbursement follows a legally constrained waterfall; platform "
-                    "checkout packages a processor's services. Choose the arrangement "
-                    "after defining the invoice event. For ordinary enterprise work, "
-                    "invoice a monthly retainer in advance and accepted opportunities "
-                    "on a regular schedule, with separate line items and evidence "
-                    "references. An ACH credit initiated by the buyer avoids the "
-                    "operator pulling funds, while an ACH debit requires appropriate "
-                    "authorization and remains exposed to applicable returns and "
-                    "disputes. Verify bank details through a previously established "
-                    "contact using a different channel from the change request. A "
-                    "fraudulent email announcing new wiring instructions can erase "
-                    "the economics of many successful introductions. Use a dedicated "
-                    "business collection account and reconcile receipts to invoices "
-                    "rather than treating every deposit as earned revenue. Advance "
-                    "cash can remain deferred revenue until the associated services "
-                    "are delivered. No payment method cures an unauthorized referral "
-                    "fee or transforms client settlement proceeds into unrestricted "
-                    "agency operating cash."
-                ),
-                (
-                    "Use escrow only when both parties need custody protection and "
-                    "can specify an objective release condition. Verify the provider's "
-                    "legal authority for the transaction and the account structure, "
-                    "fees, dispute process, and treatment of insolvency before sending "
-                    "funds. Neither an agency's ordinary bank account nor a processor "
-                    "balance becomes escrow because a contract uses that word. For "
-                    "an illustrative $20,000 pilot, the buyer might fund $10,000 for "
-                    "setup and $10,000 for an evidence-backed delivery milestone; "
-                    "release instructions must identify the authorized signers and "
-                    "what happens when only part of delivery is disputed. Keep "
-                    "undisputed amounts payable on schedule. Milestone holds serve "
-                    "a similar negotiating purpose without necessarily involving "
-                    "independent custody, so they leave greater buyer credit exposure. "
-                    "Platform checkout through Stripe or another approved provider "
-                    "can simplify smaller retainers, but underwriting limits, reserves, "
-                    "chargebacks, and prohibited-business rules still apply. An "
-                    "illustrative 3% processing charge on $7,500 consumes $225 "
-                    "before fixed fees. Quote the service price and permitted "
-                    "payment terms clearly rather than adding an unexpected surcharge. "
-                    "For larger invoices, compare the actual bank and processor "
-                    "quotes against administrative effort, settlement speed, recovery "
-                    "risk, and the buyer's treasury policy."
-                ),
-                (
-                    "Factoring belongs after a clean receivable exists, not before "
-                    "the parties agree that a meeting qualifies. A factor purchasing "
-                    "a $25,000 accepted invoice at an illustrative 3% discount "
-                    "leaves $24,250 before other charges; an 85% advance would "
-                    "initially release $21,250, with the reserve reconciled later "
-                    "under the agreement. Recourse terms can return non-payment "
-                    "risk to the operator. Review assignment restrictions, setoff "
-                    "rights, debtor notices, and applicable UCC provisions before "
-                    "selling invoices. Statutory disbursement is different: a legal "
-                    "settlement may require trust-account handling, lien resolution, "
-                    "court authorization, or client authorization before any attorney "
-                    "fee becomes distributable. Healthcare reimbursement likewise "
-                    "follows payer contracts and program requirements rather than "
-                    "a marketing agency's preferred split. Never ask a settlement "
-                    "administrator or pharmacy payer to route restricted proceeds "
-                    "straight into the agency's general account merely to accelerate "
-                    "collection. Require the professional business to pay its own "
-                    "lawful service invoice through an appropriate operating account. "
-                    "For government-contract introductions, examine FAR 52.203-5 "
-                    "when applicable before proposing award-contingent compensation; "
-                    "its covenant and exceptions require factual analysis. A fixed, "
-                    "documented research engagement is a practical fallback when "
-                    "the proposed success-fee structure cannot be supported."
-                ),
-            ],
-            "table": {
-                "caption": "Eight Payment and Settlement Arrangements for Enterprise Origination",
-                "headers": [
-                    "Arrangement and actual economic function",
-                    "Authority and release evidence",
-                    "Cost or collection exposure",
-                    "Practical operator design and fallback",
-                ],
-                "rows": [
-                    [
-                        "Wire transfer through the buyer's verified treasury bank",
-                        "Authorized treasury instruction matching the correct beneficiary account",
-                        "Bank charges vary; fraudulent beneficiary changes threaten recovery",
-                        "Independently verify instructions and reconcile the bank reference",
-                    ],
-                    [
-                        "Independent escrow holding funds against defined delivery milestones",
-                        "Executed escrow instructions naming authorized releasers and evidence",
-                        "Provider charges and disputed releases can delay availability",
-                        "Use objective releases and separately resolve contested deliverables",
-                    ],
-                    [
-                        "ACH credit or authorized debit for recurring invoices",
-                        "Buyer initiation or valid debit authorization with invoice references",
-                        "Returns and bank rules differ across transaction circumstances",
-                        "Prefer documented mandates and monitor settlement exceptions daily",
-                    ],
-                    [
-                        "Prepaid retainer funding reserved enterprise account development capacity",
-                        "Signed service scope defining coverage period and deliverables",
-                        "Advance receipts can remain deferred until services occur",
-                        "Invoice before allocation and recognize revenue as earned",
-                    ],
-                    [
-                        "Legally constrained disbursement following settlement or program requirements",
-                        "Applicable trust, lien, court, client, or payer documentation",
-                        "Restricted proceeds cannot freely fund unrelated marketing operations",
-                        "Bill the authorized business outside restricted custodial balances",
-                    ],
-                    [
-                        "Platform checkout processing card or supported bank payments",
-                        "Processor-approved business activity and documented customer payment authority",
-                        "Fees, reserves, disputes, and chargebacks reduce available cash",
-                        "Check underwriting fit before routing large enterprise invoices",
-                    ],
-                    [
-                        "Factoring accepted business receivables into earlier operating liquidity",
-                        "Assignable invoice supported by acceptance and debtor verification",
-                        "Discounts, reserves, recourse, and setoff affect net proceeds",
-                        "Finance clean invoices rather than disputed opportunity claims",
-                    ],
-                    [
-                        "Milestone hold retaining payment until specified evidence arrives",
-                        "Contract identifies acceptance criteria and responsible reviewing personnel",
-                        "Buyer retains cash and therefore preserves credit exposure",
-                        "Limit retained amounts and demand timely undisputed payment",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Establish payer identity and spending authority",
-                    "action": "Match the signed agreement, purchase order, tax details, and beneficiary records.",
-                    "detail": "Record the legal entity, authorized buyer, accounts-payable contact, credit ceiling, and independent bank-verification channel.",
-                },
-                {
-                    "step": 2,
-                    "title": "Define the earned-fee event",
-                    "action": "Attach the opportunity rubric, exclusion register, acceptance deadline, and dispute process.",
-                    "detail": "Distinguish scheduled meetings, completed discoveries, accepted opportunities, and downstream contract awards rather than billing them interchangeably.",
-                },
-                {
-                    "step": 3,
-                    "title": "Collect and reconcile through the selected arrangement",
-                    "action": "Issue an evidence-linked invoice and match the settled receipt to its open balance.",
-                    "detail": "Track processor deductions, ACH returns, escrow holds, deferred revenue, and any reserve separately from earned service revenue.",
-                },
-                {
-                    "step": 4,
-                    "title": "Resolve exceptions before expanding exposure",
-                    "action": "Escalate disputed evidence and suspend additional delivery at the agreed credit limit.",
-                    "detail": "Keep undisputed balances payable, preserve the audit packet, and resume work only under documented revised terms or cleared funds.",
-                },
-            ],
-        },
-        {
-            "heading": "3. Route the three regulated plays through lawful payer economics",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "The play arizona_abs_mass_tort_cocounsel changes the potential "
-                    "business owner, not merely the invoice label. Arizona Supreme "
-                    "Court Rule 31.1(c) and ACJA section 7-209 govern the licensed "
-                    "alternative business structure route; Arizona removed its own "
-                    "ER 5.4 prohibition, not the ABA model rule nationwide. Nonlawyer "
-                    "ownership requires the actual ABS authorization, responsible "
-                    "professionals, and applicable safeguards. Institutional sexual "
-                    "assault survivor matters involving juvenile detention, rideshare "
-                    "litigation, clergy, boarding schools, or medical settings demand "
-                    "trauma-informed intake and attorney evaluation of defendants, "
-                    "limitations, lookback windows, venue, and corroborating primary "
-                    "documents. Catastrophic mass torts likewise require substantive "
-                    "case assessment rather than purchased signatures. An illustrative "
-                    "$500,000 recovery with a permitted 30% fee produces a "
-                    "$150,000 attorney-fee pool before expenses and any lawful "
-                    "co-counsel allocation; a 40% allocation would be $60,000, "
-                    "not $500,000 of operator revenue. The mapped $50,000 to "
-                    "$400,000-plus settled-case fees describe potential legal-business "
-                    "economics, not a standard marketing bounty. Attorneys must "
-                    "satisfy applicable fee-division rules and client requirements. "
-                    "Outside the authorized structure, use a properly designed MSO "
-                    "providing genuine services at supportable compensation without "
-                    "controlling legal judgment or disguising fee sharing. Blend "
-                    "suitable single-event injury matters with longer institutional "
-                    "dockets for cash planning, without promising settlement timing "
-                    "or subordinating clients' interests to liquidity."
-                ),
-                (
-                    "The play patent_trademark_office_action_arbitrage uses a public "
-                    "procedural event to identify timely demand for licensed trademark "
-                    "counsel. Poll permitted USPTO TSDR resources and Trademark "
-                    "Daily XML feeds within published access limits, then verify "
-                    "the current prosecution record before contacting an apparently "
-                    "unrepresented applicant. A non-final office action can involve "
-                    "substantive refusal grounds, identification defects, specimen "
-                    "issues, or other requirements; the operator should not diagnose "
-                    "the legal response. Most covered trademark office actions have "
-                    "a three-month response period with an available paid extension, "
-                    "while exceptions, including Madrid applications, require separate "
-                    "deadline treatment under 37 CFR 2.62. Mail must plainly identify "
-                    "the private sender, avoid government-like invoices, and distinguish "
-                    "optional attorney services from official USPTO charges. Illustratively, "
-                    "100 verified records at $4 for research and mailing cost $400. "
-                    "If eight applicants independently request introductions, acquisition "
-                    "cost is $50 per request before platform labor. A law firm "
-                    "might instead buy a $2,000 monthly directory subscription with "
-                    "defined software services; payment must satisfy applicable "
-                    "advertising and recommendation rules, including 37 CFR 11.702 "
-                    "where relevant. Do not convert response rates into guaranteed "
-                    "legal outcomes or collect a percentage of attorney fees. The "
-                    "fallback is a transparent directory or software platform, "
-                    "with attorney selection and legal work remaining with the "
-                    "applicant and licensed professional."
-                ),
-                (
-                    "The play section_340b_contract_pharmacy_spread_arbitrage requires "
-                    "especially careful separation between demand generation and "
-                    "drug economics. Eligible covered entities include qualifying "
-                    "health centers, Ryan White grantees, and qualifying hospitals; "
-                    "eligibility is category-specific, not established by a rural "
-                    "address alone. Section 340B, 42 U.S.C. 256b, sets ceiling-price "
-                    "mechanics and prohibits diversion and duplicate discounts. "
-                    "A universal 25% to 50% discount and full billed commercial "
-                    "reimbursement are not entitlements. Model actual acquisition "
-                    "cost and allowed reimbursement: $12,000 collected less $8,000 "
-                    "drug cost, $500 dispensing and administration, and $300 "
-                    "other attributable charges leaves $3,200 before remaining "
-                    "entity overhead and adjustments. That residual belongs to "
-                    "the appropriate pharmacy and covered-entity economics, not "
-                    "automatically to the lead generator. An illustrative TPA "
-                    "contract paying $4,000 monthly for documented split-billing, "
-                    "reconciliation, and reporting yields $48,000 annual service "
-                    "revenue, not the prescription principal. Flat fees alone do "
-                    "not resolve the federal anti-kickback statute; assess fair "
-                    "market value, actual services, referral influence, and applicable "
-                    "safe-harbor conditions. Preserve EHR encounter eligibility "
-                    "checks and Medicaid duplicate-discount controls. An entity-owned "
-                    "specialty pharmacy can reduce dependence on contract-pharmacy "
-                    "access, subject to licensing and payer requirements. Automating "
-                    "340B ESP submissions may address particular manufacturer "
-                    "policies, but cannot universally unlock restricted NDCs or "
-                    "replace current legal and operational review."
-                ),
-            ],
-            "table": {
-                "caption": "Regulated Play Payer, Unit Economics, and Structural Fallback Matrix",
-                "headers": [
-                    "Mapped play and commercial position",
-                    "Authorized payer and compensation basis",
-                    "Illustrative unit economics and revenue boundary",
-                    "Required evidence and practical fallback",
-                ],
-                "rows": [
-                    [
-                        "arizona_abs_mass_tort_cocounsel through an actually licensed Arizona legal business",
-                        "Authorized legal business distributes only lawfully available earnings",
-                        "$500,000 recovery produces $150,000 fees at an assumed 30%",
-                        "Verify ABS authority, client terms, case evidence, and allocation rules",
-                    ],
-                    [
-                        "Arizona survivor acquisition supported by substantive attorney case work",
-                        "Professional business pays a properly structured service provider",
-                        "$150,000 fee pool times 40% equals $60,000 illustrative allocation",
-                        "Use genuine MSO services where ownership or fee sharing is restricted",
-                    ],
-                    [
-                        "patent_trademark_office_action_arbitrage using verified public trademark prosecution triggers",
-                        "Participating law firm buys documented directory or software services",
-                        "100 records times $4 costs $400 before internal labor",
-                        "Confirm current representation, deadlines, private branding, and outreach permissions",
-                    ],
-                    [
-                        "Trademark directory fallback separating introductions from professional legal judgment",
-                        "Subscribing firm pays an appropriately structured monthly platform charge",
-                        "$2,000 monthly subscription produces $24,000 annual platform revenue",
-                        "Avoid government-like invoices and unsupported attorney-fee percentage arrangements",
-                    ],
-                    [
-                        "section_340b_contract_pharmacy_spread_arbitrage with covered-entity controlled eligibility and reporting",
-                        "Covered entity purchases genuine TPA administrative service capacity",
-                        "$4,000 monthly administration contract produces $48,000 annual service revenue",
-                        "Validate eligibility, duplicate-discount controls, privacy safeguards, and fee structure",
-                    ],
-                    [
-                        "Entity-owned specialty pharmacy fallback for constrained contract-pharmacy access",
-                        "Licensed pharmacy receives reimbursement under applicable payer contracts",
-                        "$12,000 less $8,000 less $500 less $300 leaves $3,200",
-                        "Model payer adjustments and manufacturer restrictions before committing capital",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Verify the compensation structure before acquiring the first record",
-                "body": (
-                    "These checks establish whether the proposed payer, services, "
-                    "data access, and funds flow fit the actual operating structure."
-                ),
-                "items": [
-                    "For Arizona ABS work, verify the active license, responsible attorney roles, permitted ownership, substantive intake process, and applicable client-authorized fee allocation.",
-                    "For trademark triggers, inspect the live prosecution record, representation status, response deadline, private-sender branding, and permitted advertising payment structure.",
-                    "For 340B work, verify covered-entity eligibility, patient and encounter controls, Medicaid treatment, pharmacy authority, manufacturer access conditions, and documented service compensation.",
-                    "For every play, identify the legal payer and bank beneficiary, exclude restricted client funds, test the invoice event, and approve a realistic credit ceiling.",
-                ],
-            },
-        },
-        {
-            "heading": "4. Protect earned fees and reconcile the three canonical outcomes",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Fee protection begins before the introduction, with a contract "
-                    "that defines what was sourced and how acceptance becomes "
-                    "observable. Record the legal account name, relevant domain, "
-                    "buying unit, introduction timestamp, participant role, and "
-                    "source evidence in Salesforce or HubSpot. Establish an "
-                    "existing-opportunity exclusion register and a process for "
-                    "parent-subsidiary overlaps. Agree whether the fee covers an "
-                    "account, a business unit, or a discrete buying project; "
-                    "otherwise one multinational can generate endless duplicate "
-                    "claims. Specify a reasonable review period, written rejection "
-                    "reasons, and a cure process for missing evidence. Any "
-                    "deemed-acceptance provision must be expressly negotiated rather "
-                    "than hidden in an invoice footer. A narrowly defined "
-                    "non-circumvention obligation can address deliberate routing "
-                    "around an earned fee, but should not claim perpetual "
-                    "ownership of every future customer transaction. Define "
-                    "introduced accounts, covered conduct, duration, exclusions, "
-                    "and proportionate remedies under the governing law. Preserve "
-                    "timestamped delivery packets and acceptance records outside "
-                    "editable CRM fields, while limiting personal data to what "
-                    "the service requires. For commercial email, implement the "
-                    "applicable CAN-SPAM requirements, including truthful headers, "
-                    "sender identification, postal address, and functioning "
-                    "opt-out handling. Attribution evidence is useful only when "
-                    "its collection and retention are themselves supportable."
-                ),
-                (
-                    "Reconcile the canonical scorecard with a service ledger rather "
-                    "than a pipeline dashboard. Conservative revenue can be "
-                    "illustrated as three clients paying $3,000 monthly, producing "
-                    "$108,000, plus 42 accepted opportunities at $1,000, producing "
-                    "$42,000. Total revenue is $150,000; $120,000 of modeled "
-                    "cost leaves $30,000 owner net profit at 20%, with "
-                    "2 FT + 3 C. Base revenue can be illustrated as five "
-                    "clients paying $7,500 monthly, producing $450,000, plus "
-                    "90 opportunities at $2,500, producing $225,000. Total "
-                    "revenue is $675,000; $472,500 of modeled cost leaves "
-                    "$202,500 at 30.0%, again with 2 FT + 3 C. "
-                    "Scaled revenue can be illustrated as eight clients paying "
-                    "$10,000 monthly, producing $960,000, plus 80 opportunities "
-                    "at $3,000, producing $240,000. Total revenue is "
-                    "$1,200,000; $720,000 of modeled cost leaves $480,000 "
-                    "at 40%, with 3 FT + 4 C. These are illustrative "
-                    "revenue constructions matching the required totals, not "
-                    "additional scorecard assumptions. Their opportunity fees "
-                    "describe permissible enterprise engagements, not automatic "
-                    "pricing for legal or healthcare referrals. None of the "
-                    "client's contract value, settlement principal, or prescription "
-                    "reimbursement enters these agency revenue totals."
-                ),
-                (
-                    "Cash planning must also expose the difference between baseline "
-                    "overhead and total scenario cost. The stated $4,000 to "
-                    "$20,000 monthly operating range cannot represent every "
-                    "expense in the Base and Scaled cases: their implied "
-                    "total monthly costs are $39,375 and $60,000 respectively, "
-                    "compared with $10,000 Conservative. Treat the range as "
-                    "an initial planning reference and build a complete cost "
-                    "schedule for payroll, contractors, data, media, travel, "
-                    "processors, losses, and administration. Contractor counts "
-                    "do not establish full-year utilization or compensation. "
-                    "Similarly, the $15,000 to $100,000 startup-capital range "
-                    "must be tested against a three-to-twelve-month first-deal "
-                    "cycle rather than treated as sufficient runway by itself. "
-                    "At $10,000 monthly cash burn, six months consumes "
-                    "$60,000 before unusual setup costs. Maintain a thirteen-week "
-                    "cash forecast showing invoice dates, expected clearance, "
-                    "disputed balances, and committed delivery spend. Stress "
-                    "customer concentration by removing the largest account's "
-                    "receipts and its avoidable costs separately. If one of "
-                    "five equal Base retainer clients stops paying, $7,500 "
-                    "monthly disappears before any associated opportunity fees. "
-                    "Reprice delivery, tighten credit, or replace the account; "
-                    "do not hide the loss by counting unsigned pipeline "
-                    "as earned revenue or factoring a disputed receivable."
-                ),
-            ],
-            "table": {
-                "caption": "Canonical Revenue Reconciliation and Fee-Protection Forensics",
-                "headers": [
-                    "Scenario or control being reconciled",
-                    "Earned revenue or source evidence",
-                    "Cost, profit, or exposure calculation",
-                    "Operator interpretation and required response",
-                ],
-                "rows": [
-                    [
-                        "Conservative service ledger with two employees and three contractors",
-                        "Three $3,000 monthly retainers plus 42 opportunities at $1,000",
-                        "$150,000 revenue less $120,000 cost yields $30,000 profit",
-                        "Preserve the canonical 20% margin without counting client contracts",
-                    ],
-                    [
-                        "Base service ledger with two employees and three contractors",
-                        "Five $7,500 monthly retainers plus 90 opportunities at $2,500",
-                        "$675,000 revenue less $472,500 cost yields $202,500 profit",
-                        "Preserve the canonical 30.0% margin and audit acceptance evidence",
-                    ],
-                    [
-                        "Scaled service ledger with three employees and four contractors",
-                        "Eight $10,000 monthly retainers plus 80 opportunities at $3,000",
-                        "$1,200,000 revenue less $720,000 cost yields $480,000 profit",
-                        "Preserve the canonical 40% margin across seven total people",
-                    ],
-                    [
-                        "Source attribution control before any enterprise introduction occurs",
-                        "Frozen exclusion register and timestamped account-level delivery packet",
-                        "Duplicate claims create avoidable credits and collection delays",
-                        "Resolve entity and buying-project overlap before issuing invoices",
-                    ],
-                    [
-                        "Credit exposure control after each accepted opportunity batch",
-                        "Open invoices plus earned unbilled work and committed delivery",
-                        "$7,500 retainer plus eight $2,500 fees creates $27,500 exposure",
-                        "Suspend expansion when exposure exceeds the documented credit ceiling",
-                    ],
-                    [
-                        "Cash resilience control during the first-deal waiting period",
-                        "Thirteen-week forecast supported by actual payment and cost schedules",
-                        "Six months at $10,000 burn consumes $60,000 before setup",
-                        "Separate available cash from pipeline estimates and restricted balances",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": (
-        "An introduction becomes a business only when authority, acceptance, "
-        "and collectible payment describe the same event."
-    ),
-    "diagram_id": "diag-04",
-    "action_checklist": [
-        "Identify the contracting entity, budget owner, opportunity reviewer, accounts-payable operator, and authorized bank-instruction contact before launch.",
-        "Attach a qualified-opportunity rubric, existing-account register, review deadline, permitted fee structure, and documented dispute process to the service agreement.",
-        "Choose the settlement arrangement using actual custody needs, processor eligibility, return exposure, invoice size, and buyer treasury requirements.",
-        "Verify Arizona ABS, USPTO advertising, or 340B operating requirements for the relevant play before buying records, accepting referrals, or issuing contingent invoices.",
-        "Reconcile retainers and accepted-opportunity fees to $150,000, $675,000, and $1,200,000 annual revenue without importing client transaction principal.",
-        "Maintain a thirteen-week cash forecast, entity-level credit ceiling, independent bank-change verification, and evidence-backed collection escalation procedure.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "Arizona Supreme Court Rule 31.1(c), authorized practice of law",
-            "url": "https://www.azcourts.gov/rules/Arizona-Rules-of-Court",
-            "relevance": (
-                "The court's official rules collection provides the authorization "
-                "framework to review alongside ABS licensing requirements; "
-                "Arizona authorization does not establish permission in other states."
-            ),
-        },
-        {
-            "title": "Arizona Code of Judicial Administration section 7-209, Alternative Business Structures",
-            "url": "https://www.azcourts.gov/Portals/0/admcode/pdfcurrentcode/7-209.pdf",
-            "relevance": (
-                "Establishes the Arizona ABS licensing and oversight framework "
-                "that must support the actual ownership and legal-service business."
-            ),
-        },
-        {
-            "title": "37 CFR 2.62, Procedure for submitting response",
-            "url": "https://www.ecfr.gov/current/title-37/chapter-I/subchapter-A/part-2/subpart-D/section-2.62",
-            "relevance": (
-                "Governs trademark office-action response periods and extension "
-                "mechanics, including circumstances requiring different deadline treatment."
-            ),
-        },
-        {
-            "title": "37 CFR 11.702, Advertising",
-            "url": "https://www.ecfr.gov/current/title-37/chapter-I/subchapter-A/part-11/subpart-D/section-11.702",
-            "relevance": (
-                "Addresses practitioner advertising and payments for recommendations, "
-                "including specified exceptions that matter when designing directory compensation."
-            ),
-        },
-        {
-            "title": "42 U.S.C. 256b, Limitation on prices of drugs purchased by covered entities",
-            "url": "https://www.law.cornell.edu/uscode/text/42/256b",
-            "relevance": (
-                "Defines covered-entity categories and 340B requirements, including "
-                "ceiling-price mechanics, duplicate-discount prevention, and diversion restrictions."
-            ),
-        },
-        {
-            "title": "42 U.S.C. 1320a-7b(b), Federal anti-kickback statute",
-            "url": "https://www.law.cornell.edu/uscode/text/42/1320a-7b",
-            "relevance": (
-                "Restricts specified remuneration involving federal healthcare "
-                "program business; labeling compensation a flat administrative fee "
-                "does not by itself resolve the analysis."
-            ),
-        },
-        {
-            "title": "42 CFR 1001.952(d), Personal services and management contracts safe harbor",
-            "url": "https://www.ecfr.gov/current/title-42/chapter-V/subchapter-B/part-1001/subpart-C/section-1001.952",
-            "relevance": (
-                "Provides conditions relevant to qualifying service arrangements, "
-                "including written scope, compensation methodology, fair market value, "
-                "and restrictions involving referral volume or value."
-            ),
-        },
-        {
-            "title": "15 U.S.C. 7704, Requirements for transmission of messages",
-            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
-            "relevance": (
-                "Supplies concrete commercial-email requirements concerning headers, "
-                "subject lines, identification, postal addresses, and opt-out handling."
-            ),
-        },
-        {
-            "title": "FAR 52.203-5, Covenant Against Contingent Fees",
-            "url": "https://www.acquisition.gov/far/52.203-5",
-            "relevance": (
-                "Requires examination of covered government-contract acquisition "
-                "arrangements and the stated bona fide employee or agency exceptions "
-                "before offering award-contingent origination compensation."
-            ),
-        },
-        {
-            "title": "UCC section 9-406, Discharge of account debtor and notification of assignment",
-            "url": "https://www.law.cornell.edu/ucc/9/9-406",
-            "relevance": (
-                "Provides the model assignment-notice framework relevant to factoring; "
-                "apply the governing state's enacted version and applicable exceptions."
-            ),
-        },
-    ],
-}
+CHAPTER_2 = {'id': 'Q2',
+ 'chapter_id': 'Q2',
+ 'chapter_number': 2,
+ 'question_number': 2,
+ 'slug': 'account-based-marketing-operating-system',
+ 'question_prompt': 'When should we use account-based marketing, and how do we organize sales, marketing, '
+                    'advertising, and outreach around selected accounts?',
+ 'kicker': 'Q2 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Build the Account-Based Marketing Operating System',
+ 'subtitle': 'ABM versus demand generation, high-value account targeting, sales–marketing alignment, '
+             'LinkedIn, ABM advertising, Claude-assisted outreach, and enterprise pipeline workflows',
+ 'layout_template': 'executive_summary',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Practitioners converge on one rule: ABM is a joint sales-and-marketing operating '
+                      'system aimed at a short, tiered account list, not a lead-volume campaign. TK Kader, '
+                      'AdConversion and Fullfunnel io all gate entry on deal size, with floors cited at '
+                      'roughly $20,000 ACV, CFO sign-off, or 30K ACV, and flag a thousand-account list or '
+                      'a $1M-in-30-days expectation as red flags. The street mechanics run ICP, messaging, '
+                      'a Dream 100, personalization, then sales outbound under paid and organic air cover, '
+                      "tracked in weekly account-level meetings. Reported numbers include terminus's 124% "
+                      "demo-to-close lift, Snowflake's 2-3% account-ad click-through against 0.09% "
+                      'display, and a 994-day enterprise journey. Practitioners split on automation: '
+                      'GrowthSpree pushes Claude-driven outreach to 100 contacts, while Fullfunnel io '
+                      'warns that volume beyond capacity kills the program.',
+ 'key_metrics': [{'label': 'Demo-to-Closed-Won Conversion Lift After ABM',
+                  'metric': 'Demo-to-Closed-Won Conversion Lift After ABM',
+                  'value': '+124% conversion, +35% ACV, 20-day shorter sales cycle',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'terminus results in the 12 months after implementing ABM; every pipeline '
+                             "dollar became 'twice as valuable'",
+                  'source': 'LinkedIn for Marketing ([Co22pd-mVlk @ 00:06:52])'},
+                 {'label': 'Account-Based Ad Click-Through Rate',
+                  'metric': 'Account-Based Ad Click-Through Rate',
+                  'value': '2-3% versus 0.09% typical display',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Snowflake's Lars Kristensen comparing account-based ads with standard "
+                             "display; only one prospect 'freaked out'",
+                  'source': 'LinkedIn for Marketing ([Co22pd-mVlk @ 01:46:43])'},
+                 {'label': 'Minimum ACV for ABM Qualification',
+                  'metric': 'Minimum ACV for ABM Qualification',
+                  'value': 'About $20,000 ACV, or any contract requiring CFO sign-off',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Fit threshold below which accounts are likely too small for title filters '
+                             'and not ABM-qualified',
+                  'source': 'AdConversion ([FPPnVM3_KPk @ 00:18:13])'},
+                 {'label': 'Enterprise Journey Length to Engagement',
+                  'metric': 'Enterprise Journey Length to Engagement',
+                  'value': '994 days',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Measured from first tracked touchpoint to engagement, used to justify '
+                             'long-cycle playbooks over short-term conversion plays',
+                  'source': 'Fullfunnel io ([glV72-awJAU @ 00:37:06])'}],
+ 'sections': [{'heading': 'Section 1: The Practitioner Consensus',
+               'paragraphs': ['Every serious operator gates ABM on deal economics before touching tactics. '
+                              'TK Kader lays out the fit test: a larger ACV, multiple decision makers and '
+                              'long sales cycles, and flatly says that for a self-service SaaS business '
+                              "where a user signs up and swipes a credit card, ABM 'might be overkill' "
+                              "[rH2rc9-LY00 @ 00:04:01]. AdConversion's Brandon Alysa Glue puts a number "
+                              'on it, roughly $20,000 ACV or more, or any contract that requires a CFO '
+                              'sign-off, and adds that if accounts are too small for title filters to '
+                              'work, they probably are not ABM-qualified at all [FPPnVM3_KPk @ 00:18:13]. '
+                              'Fullfunnel io sets its red-flag line higher for enterprise pipeline, '
+                              'listing ACV below 30K, an MQL-driven lead-gen focus, siloed teams, a '
+                              '1,000-account list and an expectation of $1M in 30 days as red flags '
+                              '[glV72-awJAU @ 01:17:37]. Senator We Run Ads closes the low end entirely: '
+                              'ABM is not built for $2 to $10 per month tickets, and when it does fit, it '
+                              'deserves at least 25% of the media mix [Jx0muHw5NUY @ 00:13:30]. The shared '
+                              "logic is blunt: TK Kader calls ABM 'probably a little bit more expensive' "
+                              'than other motions, so it only pays where deal size justifies concentrated '
+                              'spend.',
+                              'The second point of agreement is that ABM dies without sales and marketing '
+                              'operating as one unit, with leadership forcing it from the top. Craig '
+                              "Rosenberg of TOPO calls ABM 'a business decision' made top-down, with the "
+                              "VP of Sales and the CEO saying 'get us in... we got it,' and Sangram of "
+                              'terminus says pure marketing-only or sales-only efforts fail, pushing a '
+                              'single shared scorecard instead of 15 to 20 minutes of arguing over whose '
+                              'numbers are right [Co22pd-mVlk @ 00:39:16]. Sarah Challis is equally '
+                              "direct: if the sales team or senior management is not on board, 'it can be "
+                              "really hard to pull this off,' and marketing cannot run the strategy alone "
+                              '[nZS7xjR3bD0 @ 00:07:19]. Marketing Business Network describes the '
+                              'mechanics as an inverted funnel, where sales and marketing first agree on '
+                              'accounts by revenue potential and strategic fit [MNUNce5QMnc @ 00:00:44]. '
+                              "Fullfunnel io's diagnosis of failing programs lands in the same place, "
+                              'naming the absence of shared systematic planning with sales, where the only '
+                              "alignment is a list of territory 'biggest logos', as the first of five "
+                              'failure causes [glV72-awJAU @ 00:06:45]. Every operator here treats that '
+                              'alignment as the entry ticket, not a later optimization.',
+                              'Practitioners also agree that the account, and the buying group inside it, '
+                              'replaces the lead as the unit of work, while demand generation stays '
+                              "switched on. Sangram puts it as 'we don't close leads we close accounts,' "
+                              "and Craig Rosenberg tells teams not to turn demand gen off ('the Titanic'), "
+                              'instead pivoting field events so 60% or more of the seats come from target '
+                              'accounts; that client grew pipeline 30% on 20% fewer leads [Co22pd-mVlk @ '
+                              "01:03:22]. Rosenberg's replacement scorecard metric is TAP, target account "
+                              'pipeline. In Love With Marketing frames ABM as demand gen pointed at '
+                              'specific target accounts only, with the two sharing workforce, vendors, '
+                              "budgets and martech [CNTwxh9-1AI @ 00:02:38]. ATAK Interactive's Hannah "
+                              "Keeling uses the net-versus-spear image, says ABM breaks with 'a million "
+                              "accounts,' and argues the two run in tandem, with the only question being "
+                              'which lever to pull harder [FCu5IsBzx4U @ 00:03:46]. TK Kader warns against '
+                              'confusing ICP with TAM, citing a $12B TAM where the real ICP is a narrow '
+                              'slice, and says thousands of Dream 100 candidates mean the ICP needs '
+                              'refining [rH2rc9-LY00 @ 00:05:13]. The consensus target list stays short, '
+                              'strategic, validated against closed deals, and owned jointly by sales and '
+                              'marketing.'],
+               'table': {'caption': 'Where the practitioners agree: ABM fit, ownership and prerequisites',
+                         'headers': ['Consensus Principle',
+                                     'What the Practitioner Reports',
+                                     'Operator Implication',
+                                     'Expert Source'],
+                         'rows': [['Gate ABM on deal size and complexity',
+                                   'Larger ACV, multiple decision makers and long cycles; card-swipe '
+                                   'self-serve SaaS is likely overkill',
+                                   'Run demand gen instead when users self-sign-up and pay by card',
+                                   'TK Kader ([rH2rc9-LY00 @ 00:04:01])'],
+                                  ['Set a hard ACV floor for qualification',
+                                   'Roughly $20,000 ACV or more, or any contract that needs CFO sign-off',
+                                   'If title filters cannot isolate buyers, the account is too small',
+                                   'AdConversion ([FPPnVM3_KPk @ 00:18:13])'],
+                                  ['Leadership must mandate the motion from the top',
+                                   'ABM is a top-down business decision backed by the VP of Sales and CEO',
+                                   'Secure executive commitment before building lists or signing any '
+                                   'tooling contracts',
+                                   'LinkedIn for Marketing ([Co22pd-mVlk @ 00:39:16])'],
+                                  ['Sales and marketing share systematic planning',
+                                   "Alignment limited to a territory 'biggest logos' list is the first "
+                                   'failure cause',
+                                   'Lock a cross-functional team into a one-to-three-day planning working '
+                                   'session',
+                                   'Fullfunnel io ([glV72-awJAU @ 00:06:45])'],
+                                  ['Keep demand generation running alongside ABM',
+                                   "Turning demand gen off sinks 'the Titanic'; pivot field events toward "
+                                   'target accounts',
+                                   'Fill 60% or more of event seats with target-account attendees',
+                                   'LinkedIn for Marketing ([Co22pd-mVlk @ 01:03:22])'],
+                                  ['Start with a focused one-quarter pilot program',
+                                   'Minimal viable ABM program over one quarter with one marketer and one '
+                                   'BDR',
+                                   'Scale into repeatable playbooks only after the pilot KPIs are hit',
+                                   'UrbanSpell ([bSYYUhXxy4Y @ 00:01:07])'],
+                                  ['Keep the active target list short and real',
+                                   "Separate 'could buy' accounts from the smaller 'likely to buy now' "
+                                   'list',
+                                   'Targeting ten to twenty companies is fine when budget concentrates on '
+                                   'them',
+                                   'AdConversion ([LbEgZ7SpArs @ 00:01:00])']]}},
+              {'heading': 'Section 2: Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ["TK Kader's five-step build runs in strict order. First comes an ICP fleshed "
+                              'out across 29 points of firmographic, demographic and technographic data; '
+                              'then messaging that spans email subject lines, the first sentence of a cold '
+                              'call, ad copy and homepage hero text; then a Dream 100 built in a '
+                              'spreadsheet or CRM with key contacts; then real personalization, which at '
+                              "Tower meant researching public quarterly filings rather than 'insert "
+                              "school' tokens [rH2rc9-LY00 @ 00:05:00]. Execution pairs sales outbound by "
+                              'email, DM and calls with marketing air cover from ads, organic social, '
+                              'SEM/SEO, intent tools and events, sized at 100 accounts times 5 people, or '
+                              '500 contacts [rH2rc9-LY00 @ 00:11:24]. Skip steps one through four and hand '
+                              "an agency a 'napkin' ICP, Kader warns, and you burn your brand. Prospeo's "
+                              'Cole tiers the list in Sales Navigator by headcount, 1,000+, 200 to 1,000 '
+                              'and 1 to 200, saves each as a named account list, and runs lead search for '
+                              "titles like 'head of marketing,' remembering Sales Navigator shows only 25 "
+                              'accounts per page [OqdXhRy5QNY @ 00:02:08]. Senator We Run Ads expands '
+                              'lists with Leadfeeder website-visitor identification or a one-time manual '
+                              'Google search, and segments 2,000-account lists by size or revenue '
+                              '[Jx0muHw5NUY @ 00:03:58].',
+                              'Fullfunnel io turns that sequence into an operating system. Accounts split '
+                              'into three sublists: a Cluster ICP of cold accounts getting awareness, a '
+                              'Future Pipeline that sales touches only after an agreed engagement '
+                              'threshold, taking about 20% of sales time, and an Active Focus list on '
+                              'fully personalized playbooks with weekly touchpoints [glV72-awJAU @ '
+                              '00:38:59]. Each playbook ships with an outline, success criteria agreed '
+                              'with sales such as 20 accounts and 25 buyers, time required, templates, AI '
+                              'prompts and a plan B, while reps run a one-hour daily slot against a '
+                              'checklist and the whole team holds weekly meetings plus 5 to 10 minute '
+                              'daily stand-ups early on; the full stack runs under $1,000 a month with '
+                              'Goldcast, FullEnrich connected to Claude, and Apify scraping LinkedIn '
+                              "engagement weekly [glV72-awJAU @ 01:14:21]. Snowflake's Lars Kristensen "
+                              'scores engagement in Engagio at 2 points per site visit, plus 2 for a '
+                              'high-value page, 10 for a white paper, 15 for a webcast and 30 for a '
+                              'physical event, then seeds new AE territories with the most-engaged '
+                              'accounts [Co22pd-mVlk @ 01:35:55]. Offers escalate by stage, from a dummies '
+                              'guide for unaware accounts to a live demo for engaged ones and a free trial '
+                              'for highly engaged ones.',
+                              "Paid and outbound mechanics come with hard settings. Prospeo's LinkedIn ad "
+                              'build uses a lead-gen objective with an uploaded company list, which needs '
+                              'at least 300 valid contacts and 24 to 48 hours of processing before '
+                              'targeting goes live, narrowed by job title and run as warm-up, cover and '
+                              "wake-up ads; outbound starts with email in LGM because of LinkedIn's weekly "
+                              'connection limits [OqdXhRy5QNY @ 00:08:12]. Aqil Jannaty budgets 5,000 to '
+                              '10,000 a month for LinkedIn awareness ads despite high CPMs, calls ZoomInfo '
+                              'very expensive, and favors a B2B podcast play where the prospect is invited '
+                              'on as a guest, warmed up on an intro call, and the content is repurposed '
+                              '[sYgF5NyLeo8 @ 00:07:18]. AdConversion reports that at Thought Industry a '
+                              "Google Ads question keyword, 'LXP vs LMS,' cost pennies on the dollar "
+                              'against roughly $75-a-click target keywords, with the next-closest '
+                              "campaign's cost per lead 123% higher [FPPnVM3_KPk @ 00:25:10]. On the AI "
+                              'side, GrowthSpree runs Claude co-work on the Pro plan or above plus the '
+                              'Chrome extension to pull ICP-matched people from a LinkedIn company page, '
+                              'research posts and company news, write a personalized drip for 100 '
+                              'contacts, and send the connection requests [gq_DLeTobXo @ 00:03:39].'],
+               'table': {'caption': 'Street mechanics: exact settings, thresholds and budgets operators '
+                                    'run',
+                         'headers': ['Mechanic',
+                                     'Exact Setting or Number',
+                                     'How Operators Run It',
+                                     'Expert Source'],
+                         'rows': [['ICP depth before any list building',
+                                   '29-point firmographic, demographic and technographic profile built '
+                                   'with founders',
+                                   'Refine the ICP whenever the Dream 100 balloons into thousands',
+                                   'TK Kader ([rH2rc9-LY00 @ 00:05:00])'],
+                                  ['Sales Navigator account tiering by headcount',
+                                   'Bands of 1,000+, 200 to 1,000 and 1 to 200; 25 accounts per page',
+                                   'Save each tier as a named list, then run title lead search',
+                                   'Prospeo ([OqdXhRy5QNY @ 00:02:08])'],
+                                  ['LinkedIn company-list matched audience',
+                                   'Minimum 300 valid contacts and 24 to 48 hours of processing',
+                                   'Upload list, narrow by job title, rotate warm-up, cover and wake-up '
+                                   'ads',
+                                   'Prospeo ([OqdXhRy5QNY @ 00:08:12])'],
+                                  ['Account engagement scoring in Engagio',
+                                   'Site visit 2, high-value page +2, white paper 10, webcast 15, event 30',
+                                   'Seed new AE territories with the highest-scoring engaged accounts '
+                                   'first',
+                                   'LinkedIn for Marketing ([Co22pd-mVlk @ 01:35:55])'],
+                                  ['Lean ABM operating stack cost ceiling',
+                                   'Total tooling under $1,000 per month with Goldcast, FullEnrich and '
+                                   'Apify',
+                                   'Scrape LinkedIn engagement weekly and connect enrichment directly into '
+                                   'Claude',
+                                   'Fullfunnel io ([glV72-awJAU @ 01:14:21])'],
+                                  ['LinkedIn awareness media budget',
+                                   '5,000 to 10,000 per month for awareness despite high CPMs',
+                                   'Fund awareness on LinkedIn, then convert through podcast invitations '
+                                   'and outreach',
+                                   'Aqil Jannaty ([sYgF5NyLeo8 @ 00:07:18])'],
+                                  ['Account-based ad click-through benchmark',
+                                   '2 to 3% click-through versus 0.09% for typical display ads',
+                                   'Expect prospects to either click or occasionally freak out at '
+                                   'targeting',
+                                   'LinkedIn for Marketing ([Co22pd-mVlk @ 01:46:43])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Field-Tested Accelerators From the Operators',
+                           'body': 'Four plays the practitioners use to pull open opportunities and cold '
+                                   'accounts forward faster than standard ABM sequencing.',
+                           'items': ['Run objection-acceleration campaigns: ask sales for their top 10 '
+                                     'objections and target the open-opportunity list with ads answering '
+                                     "each one, such as accounts 'concerned about price' [AdConversion — "
+                                     'FPPnVM3_KPk @ 00:06:48].',
+                                     'Fire pre-SDR campaigns 2 days to 2 weeks before outreach; at the CPG '
+                                     'client this lifted connect rates, meetings and target account '
+                                     'pipeline [LinkedIn for Marketing — Co22pd-mVlk @ 01:00:37].',
+                                     'Mine job changes: champions who changed jobs carry a 114% higher win '
+                                     "rate per UserGems, and 70% of budget decisions happen in a buyer's "
+                                     'first 100 days [AdConversion — LbEgZ7SpArs @ 00:02:02].',
+                                     'Work the buying committee bottom-up through Relationship Explorer, '
+                                     'then reference those conversations when you reach the VP [Prospeo — '
+                                     'OqdXhRy5QNY @ 00:03:49].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Qualify Fit and Plan Jointly',
+                              'action': 'Confirm ACV and buying-committee fit, then lock sales and '
+                                        'marketing into a one-to-three-day planning session.',
+                              'detail': 'Run closed-won analysis on the highest-ACV and fastest deals, use '
+                                        'lost deals for disqualification criteria, and match account count '
+                                        'to team capacity [Fullfunnel io — glV72-awJAU @ 00:24:14].'},
+                             {'step': 2,
+                              'title': 'Build and Tier the Account List',
+                              'action': "Split 'could buy' from 'likely to buy now' and concentrate budget "
+                                        'on the smaller list.',
+                              'detail': 'Ask your best reps who belongs on it or mine the CRM; targeting '
+                                        '10 to 20 companies is fine when 5 to 10 accounts would otherwise '
+                                        'eat the budget [AdConversion — LbEgZ7SpArs @ 00:01:00].'},
+                             {'step': 3,
+                              'title': 'Map Personas and Messaging Pillars',
+                              'action': 'Strip non-buyers from targeting and build messaging pillars for '
+                                        'decision makers and influencers.',
+                              'detail': 'Exclude accounting, admin and HR, separate decision makers (CEO, '
+                                        'procurement) from influencers, and build pillars on testimonials, '
+                                        'USPs and pricing, and ease of migration and support [Senator We '
+                                        'Run Ads — Jx0muHw5NUY @ 00:05:50].'},
+                             {'step': 4,
+                              'title': 'Launch With Air Cover and a Monday Metrics Loop',
+                              'action': 'Run sales outbound under ads, social and events, then review '
+                                        'results weekly as one team.',
+                              'detail': 'Hold a Monday sales and marketing meeting tracking campaign to '
+                                        'opportunity to customer, diagnose ICP, then messaging, then '
+                                        'channel, and double down on the one channel that crushes it [TK '
+                                        'Kader — rH2rc9-LY00 @ 00:15:10].'}]},
+              {'heading': 'Section 3: Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The first fight is over who owns the target account list. Sangram of '
+                              'Terminus tells marketers to be brave and build the list themselves instead '
+                              'of waiting for sales, because companies hire Account Executives, not lead '
+                              'executives [Co22pd-mVlk @ 00:15:41]. Aqil Jannaty reverses that split: '
+                              'sales builds the list, marketing builds the channels, and the starting unit '
+                              'is about 100 dream companies with mapped buying committees, ranked line by '
+                              'line with AI [sYgF5NyLeo8 @ 00:01:51]. Size is the second fault line. Lars '
+                              'Kristensen at Snowflake runs 3,000 target accounts and 200 one-to-one '
+                              'accounts with only two ABM staff. That list came from pushing 25,000 '
+                              'accounts through ICP mapping and letting each of about 50 reps pick roughly '
+                              '60 [Co22pd-mVlk @ 01:32:09]. Fullfunnel io treats 1,000 accounts as a red '
+                              'flag on its own, alongside ACV below 30K, a lead-gen MQL focus, siloed '
+                              'teams, and an expectation of $1M in 30 days [glV72-awJAU @ 01:17:37]. '
+                              "Fullfunnel's own planning checklist ties account count to team capacity. "
+                              "Snowflake's 3,000 also sits on top of a far smaller one-to-one core of 200. "
+                              'Match the count to the people actually running the plays, then expand once '
+                              'the core is producing.',
+                              'Automation splits the room hardest. GrowthSpree runs the entire outreach '
+                              'motion through Claude co-work and the Claude Chrome extension with no other '
+                              'automation tools. It builds the persona list from LinkedIn company pages, '
+                              'researches posts, comments and company news, and writes a personalized '
+                              'LinkedIn drip. It then scales from one prospect to all 100 contacts, with '
+                              'separate primary and secondary ICP sequences [gq_DLeTobXo @ 00:03:18]. '
+                              'Fullfunnel io pushes the other way. It warns that volume beyond team '
+                              'capacity will kill the program and that accounts which have never engaged '
+                              "get no sales pitch, because if they don't know us, probably they're not "
+                              'going to buy from us. Its Active Focus sublist gets fully personalized '
+                              'playbooks and weekly touchpoints, while cold Cluster ICP accounts get '
+                              'awareness only [glV72-awJAU @ 00:39:16]. Personalization depth is the '
+                              'second split. TK Kader says inserting a school name is not personalization; '
+                              'at Tower the team researched public quarterly filings before touching an '
+                              'account [rH2rc9-LY00 @ 00:09:47]. Aqil Jannaty argues that '
+                              'overpersonalization is killing ABM. The better move, in that view, is '
+                              'finding the watering holes where each persona actually spends time, and '
+                              'Aqil notes that security buyers are closed to cold email entirely '
+                              '[sYgF5NyLeo8 @ 00:05:23].',
+                              'On demand generation, nobody fully agrees. Aqil Jannaty dismisses it as '
+                              'spray and pray [sYgF5NyLeo8 @ 00:00:54]. Craig Rosenberg of TOPO gives the '
+                              "opposite tip number one: don't turn it off, because it is the Titanic. "
+                              'Rosenberg instead pivots field events so 60%+ of the seats come from target '
+                              'accounts, a move that grew pipeline 30% on 20% fewer leads [Co22pd-mVlk @ '
+                              '01:03:22]. Hannah Keeling at ATAK Interactive refuses to pit the two '
+                              'against each other at all. In that framing demand gen is the net and ABM is '
+                              'the spear, and companies start with demand gen because it is quicker, then '
+                              'shift to ABM as they find their niche [FCu5IsBzx4U @ 00:04:30]. Paid media '
+                              'and tooling draw the same split. Aqil budgets 5 to 10,000 a month for '
+                              'LinkedIn ads, and Senator We Run Ads wants at least 25% of the media mix in '
+                              'ABM. Fullfunnel io, by contrast, calls ads a quantity distribution channel '
+                              'and runs its full stack for under $1,000 a month [glV72-awJAU @ 01:32:34]. '
+                              'Terminus runs 20+ tools and Snowflake about 25, with Snowflake piping '
+                              "everything into its own data warehouse. Craig Rosenberg's rule holds either "
+                              'way: strategy first, tech stack second.'],
+               'table': {'caption': 'ABM fault lines: two competing playbooks, side by side, with the '
+                                    'practitioners behind each.',
+                         'headers': ['Fault Line', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Who builds the target account list',
+                                   'Marketing builds the list; be brave, because companies hire Account '
+                                   'Executives, not lead executives',
+                                   'Sales builds the list and marketing builds the channels around about '
+                                   '100 dream companies',
+                                   'LinkedIn for Marketing ([Co22pd-mVlk @ 00:15:41]); Aqil Jannaty '
+                                   '([sYgF5NyLeo8 @ 00:01:51])'],
+                                  ['How many accounts a program can carry',
+                                   'Snowflake runs 3,000 target accounts and 200 one-to-one accounts with '
+                                   'two ABM staff',
+                                   'Fullfunnel io flags 1,000 accounts as a red flag; Russell Prue says 10 '
+                                   'to 20 companies is fine',
+                                   'LinkedIn for Marketing ([Co22pd-mVlk @ 01:32:09]); Fullfunnel io '
+                                   '([glV72-awJAU @ 01:17:37])'],
+                                  ['Automating outreach at volume',
+                                   'Claude co-work builds lists, writes LinkedIn drips and sends '
+                                   'connection requests to all 100 contacts',
+                                   'Volume beyond team capacity will kill the program; never-engaged '
+                                   'accounts get no sales pitch',
+                                   'GrowthSpree - AI Native B2B Marketing Agency ([gq_DLeTobXo @ '
+                                   '00:03:18]); Fullfunnel io ([glV72-awJAU @ 00:39:16])'],
+                                  ['How deep personalization should go',
+                                   'Insert school is not personalization; research public quarterly '
+                                   'filings before reaching out to any account',
+                                   "Overpersonalization is killing ABM; find each persona's watering holes "
+                                   'instead of researching every individual',
+                                   'TK Kader ([rH2rc9-LY00 @ 00:09:47]); Aqil Jannaty ([sYgF5NyLeo8 @ '
+                                   '00:05:23])'],
+                                  ['What to do with demand generation',
+                                   "Don't turn it off, it is the Titanic; pivot field events to 60%+ "
+                                   'target accounts instead',
+                                   'Demand gen is spray and pray; or run both in tandem and pull the right '
+                                   'lever harder',
+                                   'LinkedIn for Marketing ([Co22pd-mVlk @ 01:03:22]); ATAK Interactive '
+                                   '([FCu5IsBzx4U @ 00:03:46])'],
+                                  ['Size of the technology stack',
+                                   'Terminus runs 20+ tools and Snowflake about 25, feeding everything '
+                                   'into its own data warehouse',
+                                   'Whole stack under $1,000 a month; scrappy ABM gets traction before '
+                                   'signing 12-month contracts',
+                                   'Fullfunnel io ([glV72-awJAU @ 01:14:21]); AdConversion ([FPPnVM3_KPk @ '
+                                   '00:04:36])'],
+                                  ['Role of paid ads in the program',
+                                   'Set aside 5 to 10,000 a month for LinkedIn ads; give ABM at least 25% '
+                                   'of media mix',
+                                   'Ads are a quantity distribution channel, and advertising is not all of '
+                                   'ABM',
+                                   'Aqil Jannaty ([sYgF5NyLeo8 @ 00:07:18]); Senator We Run Ads '
+                                   '([Jx0muHw5NUY @ 00:13:30]); Fullfunnel io ([glV72-awJAU @ '
+                                   '01:32:34])']]}},
+              {'heading': 'Section 4: Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The cheapest failure to avoid is running ABM on a business that cannot '
+                              'carry it. TK Kader calls ABM probably a little bit more expensive than '
+                              'other motions. A self-service SaaS where users sign up and swipe a credit '
+                              'card might find it overkill, because fit needs a larger ACV, multiple '
+                              'decision makers and long sales cycles [rH2rc9-LY00 @ 00:04:01]. Brandon '
+                              'Alysa Glue on AdConversion puts the floor at about a $20,000 ACV, or any '
+                              'contract that requires a CFO sign-off. Glue adds that accounts too small '
+                              'for title filters are likely not ABM-qualified [FPPnVM3_KPk @ 00:18:13]. '
+                              'Fullfunnel io sets its red line higher and flags ACV below 30K as a reason '
+                              'to walk away [glV72-awJAU @ 01:17:37]. Senator We Run Ads rules out $2 to '
+                              '$10 a month tickets entirely [Jx0muHw5NUY @ 00:13:30]. Hannah Keeling adds '
+                              'the account-count version of the same check: ABM fails with a million '
+                              'accounts, and if you cannot identify targets or align sales and marketing, '
+                              'you are a demand-gen client. Sarah Challis supplies the budget sanity check '
+                              'for teams that clear the bar. Spend roughly 5% of deal value, which is '
+                              '£5,000 against a 100K deal, and do not get crazy ambitious relative to what '
+                              'the company is doing now.',
+                              'The second trap is a clock that does not match the sales cycle. A '
+                              'Fullfunnel io client demanded $3M from a pilot within three months on a '
+                              "15-month cycle, while Fullfunnel's own tracking shows 994 days from the "
+                              'first touchpoint to engagement [glV72-awJAU @ 00:24:14]. Their webinar poll '
+                              'found nobody rating ABM great, about 60% so-so and 40% frustrated. '
+                              'Short-term conversion playbooks and missing leading or lagging indicators '
+                              'were among the five causes they named. Russell Prue at AdConversion watched '
+                              'a client burn most of the budget on 5 to 10 accounts. Meanwhile, the list '
+                              'sales actually cared about for the next 3 to 6 months got only 20 to 50 '
+                              "impressions in 90 days [LbEgZ7SpArs @ 00:01:00]. Prue's diagnostic is "
+                              'blunt. No impressions means fixing distribution, no engagement means fixing '
+                              'content, and sales saying not sure at two months is a red flag [LbEgZ7SpArs '
+                              '@ 00:08:08]. Rob on the LinkedIn panel warns against buying programmatic '
+                              'before the list, database and sales orchestration are built, since that '
+                              'invites ROI questions that tarnish the whole initiative [Co22pd-mVlk @ '
+                              '02:17:30]. Fullfunnel also refuses to chase early budget increases, because '
+                              'asking puts the gun in front of your head.',
+                              'The ugliest failures happen at the moment of contact. TK Kader warns that '
+                              'skipping the ICP, messaging, Dream 100 and personalization steps and '
+                              'handing a napkin ICP to an agency or fractional CMO will burn your brand. A '
+                              'weak first impression earns the reply: we went with the other guy '
+                              '[rH2rc9-LY00 @ 00:13:24]. The LinkedIn panel catalogued what this looks '
+                              'like on the receiving end. Rob was told we sell to e-commerce companies '
+                              'like you despite running a B2B tech company. Matt received cupcakes with no '
+                              'sender name and a pizza box holding only a glossy sheet. Tai got a '
+                              "marshmallow fluff jar captioned last fluff you'll ever get from us "
+                              "[Co22pd-mVlk @ 01:52:08]. Matt's rule is that gifts sent to the wrong "
+                              "person just look like regular marketing with direct mail. The moderator's "
+                              'brother was hooked by a free-trial offer, but the telesales rep did not '
+                              'know about the trial and pushed an amazing deal today. The brother never '
+                              "bought, and the story spread among Seattle entrepreneurs, because you can't "
+                              'isolate those bad experiences anymore [Co22pd-mVlk @ 01:54:54]. Sarah '
+                              'Challis names the internal version: if sales or senior management are not '
+                              'on board, it is really hard to pull off [nZS7xjR3bD0 @ 00:07:19].'],
+               'table': {'caption': 'Firsthand ABM failures, what they cost, and the economics check that '
+                                    'catches each one.',
+                         'headers': ['Failure Mode',
+                                     'What Happened Firsthand',
+                                     'Economics Check',
+                                     'Expert Source'],
+                         'rows': [['Pilot expectations that ignore the sales cycle',
+                                   'A client wanted $3M from a pilot within three months on a 15-month '
+                                   'cycle',
+                                   'Set realistic goals against 994 days from first tracked touchpoint to '
+                                   'engagement',
+                                   'Fullfunnel io ([glV72-awJAU @ 00:24:14])'],
+                                  ['Budget concentrated on the wrong accounts',
+                                   "5 to 10 accounts ate most of the budget while sales' list got 20 to 50 "
+                                   'impressions in 90 days',
+                                   'No impressions means fixing targeting, list size against budget, and '
+                                   'spend concentration',
+                                   'AdConversion ([LbEgZ7SpArs @ 00:01:00])'],
+                                  ['Overspending on technology before traction',
+                                   'Companies overspend on technology instead of the basics and sign '
+                                   '12-month contracts worth tens to hundreds of thousands',
+                                   'Get traction first; Fullfunnel io runs a full stack for under $1,000 a '
+                                   'month',
+                                   'TK Kader ([rH2rc9-LY00 @ 00:00:13]); AdConversion ([FPPnVM3_KPk @ '
+                                   '00:04:36])'],
+                                  ['Direct mail that lands with no context',
+                                   'Cupcakes with no sender name, and a pizza box containing only a glossy '
+                                   'sheet',
+                                   'Gifts sent to the wrong person just look like regular marketing with '
+                                   'direct mail',
+                                   'LinkedIn for Marketing ([Co22pd-mVlk @ 01:52:45])'],
+                                  ['Sales rep not briefed on the play',
+                                   'A rep ignored the free-trial hook, pushed an amazing deal today, and '
+                                   'lost the buyer',
+                                   'Bad experiences now spread through networks; you cannot isolate them '
+                                   'anymore',
+                                   'LinkedIn for Marketing ([Co22pd-mVlk @ 01:54:54])'],
+                                  ['Handing a napkin ICP to an agency',
+                                   'Skipping ICP, messaging, Dream 100 and personalization before '
+                                   'outsourcing burns your brand',
+                                   'Build the 29-point ICP first, then audit how any agency builds lists',
+                                   'TK Kader ([rH2rc9-LY00 @ 00:13:24]); Aqil Jannaty ([sYgF5NyLeo8 @ '
+                                   '00:14:12])'],
+                                  ['Channels that burn leads quietly',
+                                   'Cold email deliverability keeps getting harder and burns leads; Meta '
+                                   'list retargeting shows low match rates',
+                                   'Expect 3, 6 and 9 month ROI; map touchpoints through client interviews',
+                                   'Aqil Jannaty ([sYgF5NyLeo8 @ 00:13:18])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Kill-or-Continue Gate Before Spending Another Dollar',
+                           'body': 'Run these four practitioner-reported checks before launch and again at '
+                                   'the two-month mark. Any single failure is a reason to stop, reset the '
+                                   'list, or fall back to demand gen.',
+                           'items': ['Walk away if ACV is below 30K, the team is chasing MQLs, the list is '
+                                     '1,000 accounts, or leadership expects $1M in 30 days [Fullfunnel io '
+                                     '— glV72-awJAU @ 01:17:37].',
+                                     'Treat sales saying not sure at two months as a red flag; diagnose no '
+                                     'impressions as a distribution problem and no engagement as a content '
+                                     'problem [AdConversion — LbEgZ7SpArs @ 00:08:08].',
+                                     'Do not ask for a budget increase to rescue a weak pilot, because '
+                                     'that puts the gun in front of your head [Fullfunnel io — glV72-awJAU '
+                                     '@ 01:23:19].',
+                                     "Audit any agency's list-building, demand clear outcomes such as 4 to "
+                                     '8 conversations a month, and treat revenue promises as a red flag '
+                                     '[Aqil Jannaty — sYgF5NyLeo8 @ 00:14:12].']}}],
+ 'pull_quote': '"We don\'t close leads, we close accounts." — Sangram, attributed to LinkedIn for '
+               'Marketing (Co22pd-mVlk @ 00:14:02).',
+ 'diagram_id': 'diag-04',
+ 'action_checklist': ['Run a closed-won analysis of your highest-ACV and fastest deals, plus lost deals '
+                      'for disqualification criteria, before picking a single account (Fullfunnel io, '
+                      'glV72-awJAU @ 00:24:14).',
+                      'Split the list into could buy and likely to buy now, and start with the smaller '
+                      'in-market list of 10 to 20 companies (AdConversion, LbEgZ7SpArs @ 00:01:00).',
+                      'Tier accounts with Tier 1 enterprise getting deep personalization from top reps, '
+                      'Tier 2 mid-market getting structured outreach, and Tier 3 small businesses getting '
+                      'automation (Prospeo, OqdXhRy5QNY @ 00:00:50).',
+                      'Set leading KPIs (are accounts seeing ads, engaging, progressing) and lagging KPIs '
+                      '(meetings, pipeline, conversion against baseline) in a CRM report or Looker before '
+                      'launch (AdConversion, LbEgZ7SpArs @ 00:05:58).',
+                      'Run pre-SDR campaigns 2 days to 2 weeks before outreach so marketing and SDRs hit '
+                      'target accounts together and lift connect rates and meetings (LinkedIn for '
+                      'Marketing, Co22pd-mVlk @ 01:00:37).',
+                      'Hold a Monday sales and marketing metrics meeting, check ICP then messaging then '
+                      'channel, and double down on the one channel that crushes it (TK Kader, rH2rc9-LY00 '
+                      '@ 00:14:21).'],
+ 'statutory_citations': [{'title': 'Fullfunnel io — [Webinar] ABM as an operating system to generate '
+                                   'enterprise pipeline [01:17:37]',
+                          'url': 'https://www.youtube.com/watch?v=glV72-awJAU&t=4657s',
+                          'relevance': 'Primary practitioner testimony on ABM red flags: ACV below 30K, '
+                                       'MQL focus, siloed teams, 1,000-account lists, and $1M-in-30-days '
+                                       'expectations.'},
+                         {'title': 'LinkedIn for Marketing — I Heart ABM: Bringing Sales and Marketing '
+                                   'Together [00:58:01]',
+                          'url': 'https://www.youtube.com/watch?v=Co22pd-mVlk&t=3481s',
+                          'relevance': 'Primary practitioner testimony on validating the sales-supplied '
+                                       'top 50 list against closed deals and tiering accounts by deal '
+                                       'size.'},
+                         {'title': 'AdConversion — ABM in 2026: What Actually Works for B2B Marketing '
+                                   '[00:08:08]',
+                          'url': 'https://www.youtube.com/watch?v=LbEgZ7SpArs&t=488s',
+                          'relevance': 'Primary practitioner testimony on troubleshooting ABM programs '
+                                       'through distribution, content, and two-month sales sentiment '
+                                       'checks.'},
+                         {'title': 'TK Kader — Account-Based Marketing: 5 Steps to Get Started And Drive '
+                                   'Growth for Your SaaS Business [00:04:01]',
+                          'url': 'https://www.youtube.com/watch?v=rH2rc9-LY00&t=241s',
+                          'relevance': 'Primary practitioner testimony on ABM fit, cost, and why '
+                                       'self-service SaaS may find ABM overkill.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'rH2rc9-LY00',
+                       'title': 'Account-Based Marketing: 5 Steps to Get Started And Drive Growth for Your '
+                                'SaaS Business',
+                       'channel': 'TK Kader',
+                       'author': 'TK Kader',
+                       'text': 'If you are a self-service SaaS business where a user just signs up for the '
+                               'product and swipes a credit card, ABM might be overkill for you and may '
+                               'not be the right thing for you.',
+                       'tip': 'If you are a self-service SaaS business where a user just signs up for the '
+                              'product and swipes a credit card, ABM might be overkill for you and may not '
+                              'be the right thing for you.',
+                       'timestamp': 241,
+                       'timestamp_seconds': 241,
+                       'timestamp_label': '[00:04:01]',
+                       'url': 'https://www.youtube.com/watch?v=rH2rc9-LY00&t=241s',
+                       'markdown': '[00:04:01](https://www.youtube.com/watch?v=rH2rc9-LY00&t=241s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'CNTwxh9-1AI',
+                       'title': 'Who is best? Account Based Marketing or Demand Generation?',
+                       'channel': 'In Love With Marketing',
+                       'author': 'In Love With Marketing',
+                       'text': 'Demand gen is very much part of ABM with a small tweak, because ABM is '
+                               'demand gen for specific target accounts only.',
+                       'tip': 'Demand gen is very much part of ABM with a small tweak, because ABM is '
+                              'demand gen for specific target accounts only.',
+                       'timestamp': 158,
+                       'timestamp_seconds': 158,
+                       'timestamp_label': '[00:02:38]',
+                       'url': 'https://www.youtube.com/watch?v=CNTwxh9-1AI&t=158s',
+                       'markdown': '[00:02:38](https://www.youtube.com/watch?v=CNTwxh9-1AI&t=158s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'FPPnVM3_KPk',
+                       'title': '10 Effective Account-Based Marketing Tactics For Modern B2B Marketers',
+                       'channel': 'AdConversion',
+                       'author': 'AdConversion',
+                       'text': "Stop running demo ads at accounts that don't know who you are.",
+                       'tip': "Stop running demo ads at accounts that don't know who you are.",
+                       'timestamp': 72,
+                       'timestamp_seconds': 72,
+                       'timestamp_label': '[00:01:12]',
+                       'url': 'https://www.youtube.com/watch?v=FPPnVM3_KPk&t=72s',
+                       'markdown': '[00:01:12](https://www.youtube.com/watch?v=FPPnVM3_KPk&t=72s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'MNUNce5QMnc',
+                       'title': 'What is Account-Based Marketing (ABM)?',
+                       'channel': 'Marketing Business Network',
+                       'author': 'Marketing Business Network',
+                       'text': 'One-to-one or strategic ABM means building a fully custom program for a '
+                               'single top priority account.',
+                       'tip': 'One-to-one or strategic ABM means building a fully custom program for a '
+                              'single top priority account.',
+                       'timestamp': 103,
+                       'timestamp_seconds': 103,
+                       'timestamp_label': '[00:01:43]',
+                       'url': 'https://www.youtube.com/watch?v=MNUNce5QMnc&t=103s',
+                       'markdown': '[00:01:43](https://www.youtube.com/watch?v=MNUNce5QMnc&t=103s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Jx0muHw5NUY',
+                       'title': 'What is Account Based Marketing? How to setup for your B2B business (2024 '
+                                'version)',
+                       'channel': 'Senator We Run Ads',
+                       'author': 'Senator We Run Ads',
+                       'text': 'Allocate at least 25% of your media mix to ABM, and ABM is not suited to '
+                               'tickets of $2 to $10 a month.',
+                       'tip': 'Allocate at least 25% of your media mix to ABM, and ABM is not suited to '
+                              'tickets of $2 to $10 a month.',
+                       'timestamp': 810,
+                       'timestamp_seconds': 810,
+                       'timestamp_label': '[00:13:30]',
+                       'url': 'https://www.youtube.com/watch?v=Jx0muHw5NUY&t=810s',
+                       'markdown': '[00:13:30](https://www.youtube.com/watch?v=Jx0muHw5NUY&t=810s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'glV72-awJAU',
+                       'title': '[Webinar] ABM as an operating system to generate enterprise pipeline',
+                       'channel': 'Fullfunnel io',
+                       'author': 'Fullfunnel io',
+                       'text': "Because if they don't know us, probably they're not going to buy from us.",
+                       'tip': "Because if they don't know us, probably they're not going to buy from us.",
+                       'timestamp': 2356,
+                       'timestamp_seconds': 2356,
+                       'timestamp_label': '[00:39:16]',
+                       'url': 'https://www.youtube.com/watch?v=glV72-awJAU&t=2356s',
+                       'markdown': '[00:39:16](https://www.youtube.com/watch?v=glV72-awJAU&t=2356s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'glV72-awJAU',
+                       'title': '[Webinar] ABM as an operating system to generate enterprise pipeline',
+                       'channel': 'Fullfunnel io',
+                       'author': 'Fullfunnel io',
+                       'text': "So, that's not the goal because when you ask for the budget increase, then "
+                               'you basically put the gun in front of your head.',
+                       'tip': "So, that's not the goal because when you ask for the budget increase, then "
+                              'you basically put the gun in front of your head.',
+                       'timestamp': 4999,
+                       'timestamp_seconds': 4999,
+                       'timestamp_label': '[01:23:19]',
+                       'url': 'https://www.youtube.com/watch?v=glV72-awJAU&t=4999s',
+                       'markdown': '[01:23:19](https://www.youtube.com/watch?v=glV72-awJAU&t=4999s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'nZS7xjR3bD0',
+                       'title': 'The Ultimate Guide to Account Based Marketing (ABM)',
+                       'channel': 'Sarah Challis',
+                       'author': 'Sarah Challis',
+                       'text': 'Your sales team are not on board or the Senior Management is not on board '
+                               'it can be really hard to pull this off well this one really has to be a '
+                               'coordinated effort.',
+                       'tip': 'Your sales team are not on board or the Senior Management is not on board '
+                              'it can be really hard to pull this off well this one really has to be a '
+                              'coordinated effort.',
+                       'timestamp': 439,
+                       'timestamp_seconds': 439,
+                       'timestamp_label': '[00:07:19]',
+                       'url': 'https://www.youtube.com/watch?v=nZS7xjR3bD0&t=439s',
+                       'markdown': '[00:07:19](https://www.youtube.com/watch?v=nZS7xjR3bD0&t=439s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'gq_DLeTobXo',
+                       'title': 'Claude AI ABM Campaign Walkthrough | B2B Account-Based Marketing '
+                                'Automation with AI',
+                       'channel': 'GrowthSpree - AI Native B2B Marketing Agency',
+                       'author': 'GrowthSpree - AI Native B2B Marketing Agency',
+                       'text': 'It was able to build a list of all the marketing folks which are my ICP.',
+                       'tip': 'It was able to build a list of all the marketing folks which are my ICP.',
+                       'timestamp': 61,
+                       'timestamp_seconds': 61,
+                       'timestamp_label': '[00:01:01]',
+                       'url': 'https://www.youtube.com/watch?v=gq_DLeTobXo&t=61s',
+                       'markdown': '[00:01:01](https://www.youtube.com/watch?v=gq_DLeTobXo&t=61s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'bSYYUhXxy4Y',
+                       'title': 'The ABM Workflow Explained | How B2B Companies Win with Account-Based '
+                                'Marketing | UrbanSpell |',
+                       'channel': 'UrbanSpell',
+                       'author': 'UrbanSpell',
+                       'text': 'We implement a minimal viable ABM program over a quarter without pausing '
+                               'your existing process.',
+                       'tip': 'We implement a minimal viable ABM program over a quarter without pausing '
+                              'your existing process.',
+                       'timestamp': 67,
+                       'timestamp_seconds': 67,
+                       'timestamp_label': '[00:01:07]',
+                       'url': 'https://www.youtube.com/watch?v=bSYYUhXxy4Y&t=67s',
+                       'markdown': '[00:01:07](https://www.youtube.com/watch?v=bSYYUhXxy4Y&t=67s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Co22pd-mVlk',
+                       'title': 'I Heart ABM: Bringing Sales and Marketing Together',
+                       'channel': 'LinkedIn for Marketing',
+                       'author': 'LinkedIn for Marketing',
+                       'text': "So to me we don't close leads we close accounts.",
+                       'tip': "So to me we don't close leads we close accounts.",
+                       'timestamp': 842,
+                       'timestamp_seconds': 842,
+                       'timestamp_label': '[00:14:02]',
+                       'url': 'https://www.youtube.com/watch?v=Co22pd-mVlk&t=842s',
+                       'markdown': '[00:14:02](https://www.youtube.com/watch?v=Co22pd-mVlk&t=842s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Co22pd-mVlk',
+                       'title': 'I Heart ABM: Bringing Sales and Marketing Together',
+                       'channel': 'LinkedIn for Marketing',
+                       'author': 'LinkedIn for Marketing',
+                       'text': "I'll tell you right now is tip number one don't don't turn it off right.",
+                       'tip': "I'll tell you right now is tip number one don't don't turn it off right.",
+                       'timestamp': 3802,
+                       'timestamp_seconds': 3802,
+                       'timestamp_label': '[01:03:22]',
+                       'url': 'https://www.youtube.com/watch?v=Co22pd-mVlk&t=3802s',
+                       'markdown': '[01:03:22](https://www.youtube.com/watch?v=Co22pd-mVlk&t=3802s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'OqdXhRy5QNY',
+                       'title': 'How to Use LinkedIn for Account-Based Marketing in 2026 (Complete ABM '
+                                'Guide)',
+                       'channel': 'Prospeo',
+                       'author': 'Prospeo',
+                       'text': 'Just remember Sales Navigator only displays 25 accounts per page.',
+                       'tip': 'Just remember Sales Navigator only displays 25 accounts per page.',
+                       'timestamp': 128,
+                       'timestamp_seconds': 128,
+                       'timestamp_label': '[00:02:08]',
+                       'url': 'https://www.youtube.com/watch?v=OqdXhRy5QNY&t=128s',
+                       'markdown': '[00:02:08](https://www.youtube.com/watch?v=OqdXhRy5QNY&t=128s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'LbEgZ7SpArs',
+                       'title': 'ABM in 2026: What Actually Works for B2B Marketing',
+                       'channel': 'AdConversion',
+                       'author': 'AdConversion',
+                       'text': 'So, start small, prove it, then scale it.',
+                       'tip': 'So, start small, prove it, then scale it.',
+                       'timestamp': 570,
+                       'timestamp_seconds': 570,
+                       'timestamp_label': '[00:09:30]',
+                       'url': 'https://www.youtube.com/watch?v=LbEgZ7SpArs&t=570s',
+                       'markdown': '[00:09:30](https://www.youtube.com/watch?v=LbEgZ7SpArs&t=570s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'FCu5IsBzx4U',
+                       'title': 'ABM vs. Demand Generation | How to Choose the Right Strategy',
+                       'channel': 'ATAK Interactive',
+                       'author': 'ATAK Interactive',
+                       'text': "It works when you're niche and have a set list of identifiable target "
+                               'accounts for us to really conquer.',
+                       'tip': "It works when you're niche and have a set list of identifiable target "
+                              'accounts for us to really conquer.',
+                       'timestamp': 109,
+                       'timestamp_seconds': 109,
+                       'timestamp_label': '[00:01:49]',
+                       'url': 'https://www.youtube.com/watch?v=FCu5IsBzx4U&t=109s',
+                       'markdown': '[00:01:49](https://www.youtube.com/watch?v=FCu5IsBzx4U&t=109s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'MhQ7Toiejks',
+                       'title': 'Traditional B2B Marketing vs ABM Account Based Marketing',
+                       'channel': 'In Love With Marketing',
+                       'author': 'In Love With Marketing',
+                       'text': 'Traditional marketing hands off the lead and stops, while ABM teams work '
+                               'together across the entire sales cycle.',
+                       'tip': 'Traditional marketing hands off the lead and stops, while ABM teams work '
+                              'together across the entire sales cycle.',
+                       'timestamp': 97,
+                       'timestamp_seconds': 97,
+                       'timestamp_label': '[00:01:37]',
+                       'url': 'https://www.youtube.com/watch?v=MhQ7Toiejks&t=97s',
+                       'markdown': '[00:01:37](https://www.youtube.com/watch?v=MhQ7Toiejks&t=97s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'sYgF5NyLeo8',
+                       'title': 'ABM (Account-Based-Marketing) 2026 Playbook and Strategies',
+                       'channel': 'Aqil Jannaty',
+                       'author': 'Aqil Jannaty',
+                       'text': 'And so, setting aside maybe 5 to 10,000 a month for LinkedIn ads is a '
+                               'strategy that works really well.',
+                       'tip': 'And so, setting aside maybe 5 to 10,000 a month for LinkedIn ads is a '
+                              'strategy that works really well.',
+                       'timestamp': 438,
+                       'timestamp_seconds': 438,
+                       'timestamp_label': '[00:07:18]',
+                       'url': 'https://www.youtube.com/watch?v=sYgF5NyLeo8&t=438s',
+                       'markdown': '[00:07:18](https://www.youtube.com/watch?v=sYgF5NyLeo8&t=438s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'OUJnsDXmOwU',
+                       'title': 'what is ABM, Account Based Marketing? Simplified and detailed!',
+                       'channel': 'In Love With Marketing',
+                       'author': 'In Love With Marketing',
+                       'text': "ABM doesn't confine to marketing team, and it is not just a funnel-filling "
+                               'tactic.',
+                       'tip': "ABM doesn't confine to marketing team, and it is not just a funnel-filling "
+                              'tactic.',
+                       'timestamp': 1,
+                       'timestamp_seconds': 1,
+                       'timestamp_label': '[00:00:01]',
+                       'url': 'https://www.youtube.com/watch?v=OUJnsDXmOwU&t=1s',
+                       'markdown': '[00:00:01](https://www.youtube.com/watch?v=OUJnsDXmOwU&t=1s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'}]}

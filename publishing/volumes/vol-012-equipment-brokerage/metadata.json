@@ -8,49 +8,49 @@
       "BROKERAGE"
     ],
     "deck": [
-      "VERIFY SERIAL & UCC. INSPECT IRON.",
-      "SETTLE VIA ESCROW."
+      "BROKER OTHER PEOPLE'S IRON ON CONSIGNMENT FOR 5 TO 12 PERCENT ACROSS RETAIL, WHOLESALE, AND AUCTION",
+      "READ PRICES THROUGH SUPPLY, HOUR METERS, HIDDEN OIL LEAKS, AND DOCUMENTED SERVICE HISTORY"
     ],
-    "lead": "Surplus Plant, Yellow-Iron, CNC & Commercial Fleet Brokerage Without Warehouse Overhead or Inventory Balance-Sheet Risk",
-    "summary": "Broker high-ticket industrial machinery across regional price spreads using serial-level UCC-1 searches, third-party inspections, and escrow wires.",
+    "lead": "Practitioners who broker, auction, inspect, finance, rent, haul, and machine used equipment show how a home-office broker earns 5 to 12 percent on someone else's machine by pricing on condition, reading auction supply, and demanding the paperwork buyers pay for.",
+    "summary": "All 12 chapters synthesize 192 verbatim YouTube practitioner testimonies, with every claim carried by timestamped inline attribution to the source video. The chapters run from consignment brokering and auction price reading through inspection, liens and fraud, finance, rental economics, heavy haul, carrier compliance, CNC shops, medical imaging and data-center gear, and adjacent business models.",
     "chapters": [
-      "Business model & revenue boundaries",
-      "Decision-makers & payment rails",
-      "Unit economics & margin waterfall",
-      "Startup capital & lean stack",
-      "Beginner traps & failure modes",
-      "Sourcing & first deals",
-      "End-to-end operating blueprint",
-      "Public records, APIs & tooling",
-      "Contracts, statutes & scripts",
-      "Automation & distribution loops",
-      "Small-team pod & exit valuation",
-      "First 30-day launch sprint"
+      "Building a Used-Equipment Brokerage",
+      "Reading Used-Equipment Prices",
+      "Buying and Selling at Equipment Auctions",
+      "Undercarriage Inspection and Oil Analysis",
+      "Liens, Sales Paperwork, and Fraud Risks",
+      "Equipment Finance: Referrals Through Funding",
+      "Rental Economics and Contractor Equipment Costs",
+      "Heavy-Haul Planning and Fleet Control",
+      "Freight-Broker and Carrier Compliance",
+      "CNC Machines, Shop Economics, and Used Purchases",
+      "Medical Imaging and Data-Center Equipment",
+      "Adjacent Business Models and Equipment Case Studies"
     ],
     "flow": [
       [
         "SOURCE",
-        "Mine high-intent deal triggers"
+        "Sign consignors averaging 3.5 machines each and hunt badly presented listings that open the door to tougher negotiation and lower prices."
       ],
       [
-        "UNDERWRITE",
-        "Screen margin, float & rules"
+        "QUALIFY",
+        "Call the seller before money moves and get the story of why the machine is on the market: a fire, worn-out iron, or a job that ran out."
       ],
       [
-        "ENGAGE",
-        "Execute mandate or pre-sell"
+        "INSPECT",
+        "Count hour-meter digits on older Deere tractors, climb up to check transmission and hydraulic housings for oil, and look for fresh drip stripes where it parked."
       ],
       [
-        "DELIVER",
-        "Run standardized SOP & ledger"
+        "PRICE",
+        "Price on condition, not seller hope, using hour-banded auction comps and supply shifts, and bring work orders and warranty paperwork that buyers pay for."
       ],
       [
-        "VERIFY",
-        "Audit quality, scrubs & statutes"
+        "LIST",
+        "Refuse to go live with poor photos or thin descriptions and push one listing to several channels, then play the long game of 105 days or more."
       ],
       [
-        "COMPOUND",
-        "Reconcile cash & scale pod"
+        "CLOSE",
+        "Shield the seller from tire kickers, probe price by phone, and close remotely, with the Academy selling over 50 percent of equipment sight unseen."
       ]
     ]
   },
@@ -58,10 +58,10 @@
   "book_series": "THE BIG MONEY PLAYBOOKS",
   "tagline": "Big Money. Small Teams. No Bullshit.",
   "title": "EQUIPMENT BROKERAGE",
-  "subtitle": "The Complete Playbook for Equipment Brokerage: $100,000–$800,000 USD in Annual Broker Commissions, Built Around a 1 FT + 3 C Four-Person Pod",
+  "subtitle": "Consign the Iron, Price on Condition, Measure the Wear, Clear the Lien, and Broker the Money Behind the Seller",
   "chapter_count": 12,
-  "total_word_count": 76561,
-  "expert_youtube_link_count": 180,
+  "total_word_count": 73718,
+  "expert_youtube_link_count": 211,
   "min_expert_youtube_links_required": 150,
   "target_expert_youtube_links": "150-200+",
   "min_expert_youtube_links_per_chapter": 12,
@@ -76,5 +76,5 @@
   "publication_status": "approved_master",
   "public_deploy_approved": false,
   "paid_sales_approved": false,
-  "updated_at": "2026-11-23T22:48:01Z"
+  "updated_at": "2026-11-24T19:54:29Z"
 }

@@ -1,676 +1,866 @@
 from __future__ import annotations
 
-CHAPTER_10 = {
-    "id": "Q10",
-    "chapter_id": "Q10",
-    "chapter_number": 10,
-    "question_number": 10,
-    "slug": "automation-ai-leverage-scalable-distribution-flywheels",
-    "question_prompt": "How does a 1 FT + 2 C (3 people) unclaimed property recovery team automate 70%+ of repetitive research, qualification, fulfillment, and traffic/deal acquisition while keeping human-in-the-loop QA?",
-    "kicker": "Q10 / THE BIG MONEY PLAYBOOKS",
-    "title": "Automation, AI Leverage & Scalable Distribution Flywheels",
-    "subtitle": "Python Record Matching, Treasury Claim-State Webhooks, California Finder Restrictions, and Evidence-Led Acquisition Loops",
-    "layout_template": "case_study_walkthrough",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #5, Unclaimed Property Recovery, holds Rank #04 with an 89/100 "
-        "Money-to-Manpower Score. This chapter maps 12 operator plays into an evidence-led "
-        "system for treasury records, corporate uncashed warrants, claim fulfillment, and "
-        "distribution. A 1 FT + 2 C team targets more than 70% repetitive-work reduction "
-        "through Python normalization, bounded LLM extraction, permissioned status collection, "
-        "and exception queues; humans retain identity, authority, agreement, and submission "
-        "decisions. Canonical annual owner profits remain $15,000 Conservative, $95,625 Base, "
-        "and $225,000 Scaled, with recognized service fees separated from owner assets. "
-        "The Scaled case requires 2 FT + 3 C. Unit-cost budgets, replay-safe events, "
-        "state-specific finder restrictions, and a quarantined debt-adjacency test make "
-        "automation measurable without turning uncertain matches into consequential actions."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$60,000",
-            "context": "Annual recognized service fees, excluding recovered owner assets",
-            "note": "25% net margin; $15,000 annual owner net profit; 1 FT + 2 C",
-        },
-        {
-            "label": "Base",
-            "value": "$255,000",
-            "context": "Annual recognized service fees, excluding recovered owner assets",
-            "note": "37.5% net margin; $95,625 annual owner net profit; 1 FT + 2 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$450,000",
-            "context": "Annual recognized service fees, excluding recovered owner assets",
-            "note": "50% net margin; $225,000 annual owner net profit; 2 FT + 3 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Build an evidence ledger before connecting automation",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Start with an event ledger, not a browser robot that clicks through treasury "
-                    "forms. Give every imported property a source jurisdiction, official property "
-                    "identifier, retrieval timestamp, source checksum, and permitted-use record. "
-                    "Python's csv, sqlite3, hashlib, and datetime modules are sufficient for a "
-                    "single-worker pilot: preserve the original row, create a normalized working "
-                    "record, and append subsequent decisions rather than overwriting history. "
-                    "Normalize punctuation and address components while retaining original spellings, "
-                    "because a dissolved corporation and its similarly named successor can have "
-                    "different ownership rights. Keep claimant documents in encrypted object storage "
-                    "with narrowly scoped access; the ledger holds document references, not copied "
-                    "identity numbers. Separate property, claimant, engagement, claim, and invoice "
-                    "entities so one owner with six properties does not become six contradictory "
-                    "customer profiles. A property listing establishes a research lead, not entitlement "
-                    "or permission to contact someone through every available channel. Route licensed "
-                    "bulk files and expressly permitted public downloads through ingestion adapters. "
-                    "Where a treasury offers only interactive access, assign a scheduled human lookup "
-                    "rather than bypassing access controls. Record the source restriction beside the "
-                    "adapter so future contractors cannot mistake technical access for permitted reuse."
-                ),
-                (
-                    "Use explicit transitions: discovered, research-ready, identity-reviewed, "
-                    "agreement-reviewed, document-ready, submitted, evidence-requested, paid, and "
-                    "closed. An internal webhook announces a proposed transition; it never proves "
-                    "that a treasury accepted a claim. Implement receivers with Python's http.server "
-                    "only for a local prototype, placing production handlers behind a managed HTTPS "
-                    "endpoint with authentication, request-size limits, and durable queuing. Verify "
-                    "HMAC signatures using hmac.compare_digest, reject stale timestamps, and enforce "
-                    "an idempotency key combining engagement identifier, event type, and upstream event "
-                    "identifier. Store the event before acknowledging receipt. A worker then validates "
-                    "the current state, applies an allowed transition, and emits an audit entry. "
-                    "Duplicate payment notifications must not generate duplicate invoices or owner "
-                    "messages. Assume events can arrive late and out of order; a document-request "
-                    "event received after payment becomes an exception rather than reopening the "
-                    "claim automatically. The full-time operator owns exceptions and final decisions. "
-                    "Contractor one handles evidence research; contractor two assembles packets and "
-                    "checks status. Neither contractor can silently change fee rules or release "
-                    "claimant documents externally. Maintain a daily reconciliation between ledger "
-                    "states, official acknowledgments, and the operator's unresolved-work queue."
-                ),
-                (
-                    "Define the 70% target against measured repetitive labor, not the proportion of "
-                    "screens containing an AI button. In an illustrative weekly batch, baseline "
-                    "research, qualification preparation, fulfillment preparation, and acquisition "
-                    "administration consume 30, 18, 24, and 18 hours respectively: 90 hours total. "
-                    "After automation, those same tasks consume 6, 5, 8, and 5 hours, or 24 "
-                    "hours. The reduction is 66 divided by 90, or 73.3%. Separately reserve "
-                    "12 hours for identity decisions, authority review, conversations, and exception "
-                    "resolution; these consequential activities are outside both repetitive-work "
-                    "measurements. Resulting weekly effort is 36 hours for this batch, distributed "
-                    "across the three-person team without implying three full-time salaries. Validate "
-                    "the result with four weeks of tagged time entries before advertising capacity. "
-                    "Count retries, correction work, and rejected drafts in the automated workload. "
-                    "Track accepted packets per paid labor hour alongside automation percentage, "
-                    "because faster production of unusable packets destroys leverage. Start within "
-                    "the $5,000–$35,000 startup-capital range, reserve cash for the 3–12 month "
-                    "first-deal interval, and expand only after measured throughput survives an "
-                    "exception-heavy week. A low exception count is credible only when reviewers "
-                    "sample supposedly clean records as well as flagged ones."
-                ),
-            ],
-            "table": {
-                "caption": "Permissioned Python Pipeline and Evidence-Ledger Control Matrix",
-                "headers": [
-                    "Pipeline component and specific operating purpose",
-                    "Concrete implementation and retained evidence fields",
-                    "Human decision preserved outside unattended execution",
-                    "Failure recovery without losing source provenance",
-                ],
-                "rows": [
-                    [
-                        "Treasury file ingestion preserves the official property listing",
-                        "Use csv parsing with jurisdiction identifiers and source checksums",
-                        "Research contractor confirms publication terms and permitted reuse",
-                        "Quarantine malformed files while preserving their original downloaded bytes",
-                    ],
-                    [
-                        "Entity normalization creates comparable names without erasing distinctions",
-                        "Store original text beside normalized tokens and address components",
-                        "Operator resolves successor entities and conflicting ownership histories",
-                        "Reprocess affected rows using the previous normalization version",
-                    ],
-                    [
-                        "Webhook receiver records authenticated requests before acknowledging delivery",
-                        "Verify signatures and timestamps before committing durable event records",
-                        "Operator authorizes changes to externally consequential transition rules",
-                        "Reject forged requests and replay valid unprocessed ledger events",
-                    ],
-                    [
-                        "State worker separates proposed transitions from verified claim outcomes",
-                        "Enforce allowed transitions using transactional updates and unique keys",
-                        "Packet contractor compares submission evidence with official acknowledgment",
-                        "Route conflicting events into an assigned exception work queue",
-                    ],
-                    [
-                        "Document storage limits exposure of claimant identity evidence",
-                        "Use encrypted storage references with expiring narrowly scoped links",
-                        "Operator authorizes each external recipient and document purpose",
-                        "Revoke exposed links and investigate recorded document access events",
-                    ],
-                    [
-                        "Weekly measurement distinguishes labor reduction from consequential judgment",
-                        "Compare tagged baseline minutes with retries and accepted outputs",
-                        "Operator samples clean records and approves capacity assumptions",
-                        "Reduce batch intake when correction work exceeds staffing capacity",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Verify four conditions before a batch leaves preparation",
-                "body": (
-                    "Automation may prepare evidence and proposed actions; release requires "
-                    "a recorded reviewer decision tied to the exact batch version."
-                ),
-                "items": [
-                    "Verify treasury source permissions, retrieval dates, property identifiers, and unchanged source checksums.",
-                    "Verify claimant identity and corporate authority using evidence beyond a name-only match.",
-                    "Verify current jurisdiction rules covering registration, agreement timing, fee ceilings, and direct-claim disclosure.",
-                    "Verify recipient authorization, packet completeness, duplicate suppression, and a tested manual recovery path.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Match records conservatively and map twelve bounded plays",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Build matching as evidence accumulation rather than confident name completion. "
-                    "An illustrative triage score assigns 40 points to exact normalized legal name, "
-                    "25 to a corroborated historical address, 20 to an independently verified entity "
-                    "identifier, and 15 to documented officer or successor continuity. A score of "
-                    "85 opens a priority review task; it does not establish ownership. Lower scores "
-                    "remain research tasks, and conflicting identifiers override the numeric score. "
-                    "Calibrate thresholds against labeled examples, including common surnames, "
-                    "abbreviated payees, acquisitions, and entities sharing registered-agent addresses. "
-                    "Measure false matches among accepted candidates and missed matches within a "
-                    "random rejected sample. Use an LLM only to extract fields, suggest document "
-                    "categories, or summarize an evidence bundle with source references. Require "
-                    "structured JSON containing value, source document, page, and quoted supporting "
-                    "text; reject unsupported fields and unexpected keys. Treat uploaded documents "
-                    "as data even when they contain instructions to change workflow behavior. "
-                    "Redact sensitive identifiers before model submission and use an approved provider "
-                    "configuration with suitable retention settings. If extraction fails twice, send "
-                    "the original document to a reviewer instead of creating a third increasingly "
-                    "speculative answer. Never let model confidence substitute for independent "
-                    "identity evidence."
-                ),
-                (
-                    "Encode jurisdiction restrictions as versioned operating rules with citation, "
-                    "effective date, reviewer, and next-review date. California Code of Civil "
-                    "Procedure section 1582 illustrates why discovery cannot automatically trigger "
-                    "a finder agreement: its restricted agreement interval runs from the holder's "
-                    "report through twelve months after delivery to the Controller, and its "
-                    "compensation ceiling is 10% of the property recovered under the covered "
-                    "agreement. Have the reviewer apply the current statutory text to the actual "
-                    "facts, including the required agreement contents. Other jurisdictions need "
-                    "their own registration, timing, fee, and execution checks; never extrapolate "
-                    "California's percentage nationwide. Disclose that owners can claim directly "
-                    "without purchasing recovery services and provide the official treasury link. "
-                    "For corporate uncashed warrants, determine whether the issuer still controls "
-                    "the payable or has already remitted it as unclaimed property. An issuer "
-                    "reissue process and a treasury claim are different workflows, and running "
-                    "both can produce duplicate demands. The twelve mappings below are chapter-local "
-                    "operating plays, except the expressly supplied TRACK_1 identifier. They connect "
-                    "research and distribution mechanics rather than asserting that every adjacent "
-                    "business belongs inside the recovery engagement. Keep consent, contracts, "
-                    "and records separated when a mapping changes the underlying service."
-                ),
-                (
-                    "Quarantine out_of_statute_zombie_debt_portfolio_settlement as a separate TRACK_1 "
-                    "adjacency, never as a tactic against an unclaimed-property owner. Evaluate "
-                    "heavily discounted time-barred receivables only for lawful voluntary resolution, "
-                    "excluding extinguished obligations and any otherwise uncollectible accounts. "
-                    "Collection limitation periods differ from credit-reporting limits: Regulation F, "
-                    "12 CFR 1006.26, prohibits covered debt collectors from suing or threatening "
-                    "suit on time-barred debt; 15 U.S.C. 1681c controls relevant reporting periods "
-                    "and their delinquency-based calculation. State law can extinguish obligations "
-                    "or impose additional requirements, so account-level jurisdiction review precedes "
-                    "any contact. Illustratively, 100 eligible accounts with $100,000 face value "
-                    "might cost $2,000, with $800 validation expense and $600 outreach expense. "
-                    "Five voluntary payments of $500 produce $2,500 cash, leaving a $900 deficit "
-                    "against $3,400 cash outlay before overhead. Face value is neither collected "
-                    "cash nor recovery-service revenue; purchased-receivable accounting also needs "
-                    "separate treatment. Do not promise tradeline deletion, re-age delinquency, "
-                    "or imply payment is required to obtain treasury property. Suppress affected "
-                    "accounts, correct reporting, and suspend collection until counsel approves "
-                    "remediation whenever eligibility or reporting fails. Keep this experiment "
-                    "outside all three canonical recovery scenarios and reject it when its "
-                    "unit economics or evidence cannot support operation."
-                ),
-            ],
-            "table": {
-                "caption": "Twelve Mapped Plays with Explicit Unit Economics and Risk Fallbacks",
-                "headers": [
-                    "Mapped play and bounded operating application",
-                    "Illustrative unit math for evaluating the mechanism",
-                    "Evidence required before consequential human release",
-                    "Risk fallback when the operating assumption fails",
-                ],
-                "rows": [
-                    [
-                        "treasury_bulk_record_matching: prioritize permissioned state property research batches",
-                        "Screen 1,000 records for $4 before separate human review",
-                        "Retain official identifiers and corroborating claimant ownership evidence",
-                        "Quarantine ambiguous names rather than contacting every possible owner",
-                    ],
-                    [
-                        "corporate_warrant_reconciliation: reconcile issuer payables against treasury listings",
-                        "Review 100 warrant entries in two contractor hours",
-                        "Confirm issuer custody before choosing reissue or treasury recovery",
-                        "Pause duplicate demands until issuer and treasury custody reconcile",
-                    ],
-                    [
-                        "successor_entity_evidence_graph: map acquisitions and historical corporate identities",
-                        "Review ten entity histories at twenty minutes each",
-                        "Require documented ownership succession rather than shared officer names",
-                        "Escalate broken ownership chains to qualified document review",
-                    ],
-                    [
-                        "finder_rule_calendar: schedule state-specific agreement eligibility and review",
-                        "Check fifty engagements in one weekly calendar batch",
-                        "Verify current registration requirements and actual statutory timing facts",
-                        "Hold agreements when eligibility dates lack reliable source evidence",
-                    ],
-                    [
-                        "claim_packet_prefill: assemble supported fields into reviewer-ready packets",
-                        "Prepare twenty packets at three automated minutes each",
-                        "Compare every consequential field with its cited source evidence",
-                        "Return unsupported fields to manual preparation without fabricated values",
-                    ],
-                    [
-                        "claim_status_event_tracking: translate permissioned observations into internal events",
-                        "Poll forty permitted endpoints for two illustrative dollars",
-                        "Require official acknowledgment before marking any claim submitted",
-                        "Schedule manual checks when access permissions or adapters fail",
-                    ],
-                    [
-                        "owner_document_reminder_sequence: request missing evidence through private links",
-                        "Send sixty permitted reminders at two illustrative cents each",
-                        "Confirm recipient identity and the specific missing document purpose",
-                        "Stop reminders after disputes and offer a human callback",
-                    ],
-                    [
-                        "accountant_referral_loop: distribute useful checklists through professional relationships",
-                        "Ten introductions at $75 yield $750 acquisition spend",
-                        "Obtain owner authorization before sharing any property-specific information",
-                        "Stop paid incentives where applicable rules restrict referral compensation",
-                    ],
-                    [
-                        "jurisdiction_education_pages: publish reviewed state-specific recovery process guidance",
-                        "Six pages costing $150 each require $900 investment",
-                        "Verify current primary authorities and official direct-claim destinations",
-                        "Withdraw stale instructions while preserving useful general education",
-                    ],
-                    [
-                        "corporate_outbound_research: contact verified business representatives with evidence",
-                        "One hundred $3 research touches produce $300 cost",
-                        "Check representative relevance and suppress previously declined outreach",
-                        "Pause the cohort when replies reveal systematic identity errors",
-                    ],
-                    [
-                        "owner_initiated_referral_sharing: let satisfied clients share generic resources",
-                        "Twenty invitations producing two clients cost $20 each",
-                        "Separate permission to request feedback from permission to publish",
-                        "Remove sensitive details and stop requests after client objection",
-                    ],
-                    [
-                        "out_of_statute_zombie_debt_portfolio_settlement: separate TRACK_1 voluntary-resolution experiment only",
-                        "Five $500 receipts against $3,400 outlay lose $900",
-                        "Separate limitation periods from reporting limits and exclude ineligible obligations",
-                        "Suppress affected accounts, correct reporting, and suspend collection until counsel approves remediation",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Use treasury-specific evidence to reduce expensive false positives",
-                "body": (
-                    "Experienced operators improve the evidence path before increasing "
-                    "the number of names entering outreach."
-                ),
-                "items": [
-                    "Keep the holder-reported address as historical evidence; a current mailing address alone cannot resolve ownership.",
-                    "Check issuer custody before preparing a corporate warrant claim, preventing simultaneous reissue and treasury demands.",
-                    "Cluster properties by verified owner only after identity review, then reuse authorized evidence without assuming identical state requirements.",
-                    "Preserve every official request and acknowledgment with its date; a portal label can change while the underlying evidence remains decisive.",
-                ],
-            },
-        },
-        {
-            "heading": "3. Price automated runs and recover safely from failures",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Price the pipeline at the accepted-output level. An illustrative run ingests "
-                    "1,000 permitted records for $1 of compute and storage, normalizes them for "
-                    "$3, sends 100 redacted extraction requests at $0.02 each for $2, performs "
-                    "40 permitted status checks for $2, and sends 60 authorized messages at "
-                    "$0.02 each for $1.20. Direct machine expense is $9.20. Add a 20% retry "
-                    "reserve of $1.84, making the budget $11.04 per run. These are planning "
-                    "assumptions, not vendor quotations; replace each rate with observed invoices. "
-                    "If 20 candidates require four minutes of contractor review at $30 hourly, "
-                    "review costs $40. Three packet checks at twelve minutes and $40 hourly "
-                    "add $24. Total run cost is therefore $75.04, or approximately $25.01 "
-                    "per accepted packet when all three pass. If only one packet passes, "
-                    "the cost is $75.04, demonstrating why cheap extraction cannot rescue "
-                    "weak targeting. Report machine expense, reviewer expense, accepted packets, "
-                    "and eventual fee receipts separately. Do not count an assembled packet "
-                    "as a paid recovery. Allocate unsuccessful research across the cohort "
-                    "rather than hiding it in a miscellaneous software account. Maintain "
-                    "the same denominator when comparing manual and automated processing."
-                ),
-                (
-                    "Reconcile throughput to the canonical scorecard using an illustrative average "
-                    "recognized service fee of $750 per completed engagement. Conservative requires "
-                    "80 completions for $60,000 revenue; Base requires 340 for $255,000; Scaled "
-                    "requires 600 for $450,000. At an illustrative lawful 10% contracted fee, "
-                    "each engagement represents $7,500 of recovered owner property, not $7,500 "
-                    "of operator revenue. Owner assets would total $600,000, $2,550,000, and "
-                    "$4,500,000 respectively, entirely outside recognized service-fee revenue. "
-                    "The canonical margins imply total annual expenses of $45,000, $159,375, "
-                    "and $225,000, leaving owner profits of $15,000, $95,625, and $225,000. "
-                    "Allocate labor, acquisition, research failures, software, insurance, and "
-                    "administration inside those totals; the run model is one component, "
-                    "not an additional profit projection. Average monthly total expenses "
-                    "are $3,750, $13,281.25, and $18,750. Consequently, the supplied "
-                    "$1,500–$8,000 monthly opex planning range cannot serve as an all-in "
-                    "expense ceiling for every scenario. Use the scenario-derived expense "
-                    "totals when budgeting these outcomes and resolve category definitions "
-                    "before committing cash. Preserve staffing at 1 FT + 2 C for "
-                    "Conservative and Base, and 2 FT + 3 C for Scaled. "
-                    "A software improvement does not authorize silently removing the second "
-                    "full-time role from the Scaled case."
-                ),
-                (
-                    "Treat claim tracking as reconciliation against external evidence. Treasury "
-                    "systems do not universally expose APIs or webhooks, so adapters may consume "
-                    "authorized exports, owner-forwarded correspondence, or scheduled manual "
-                    "observations. Each observation records claim identifier, source timestamp, "
-                    "observed status, document request, and next permitted action. Never infer "
-                    "payment from a disappearing portal row. Use bounded exponential backoff "
-                    "with jitter for transient failures, respect published rate limits, and "
-                    "move repeated failures into a dead-letter queue with an assigned owner. "
-                    "After three failed attempts, stop unattended retries until the next "
-                    "reviewed schedule; distinguish a temporary outage from revoked access. "
-                    "Detect schema drift through required-field checks and a small set of "
-                    "known test records. A changed date format should quarantine the batch, "
-                    "not rewrite agreement eligibility dates. Keep daily encrypted backups "
-                    "and run a monthly restore exercise that reconciles event counts and "
-                    "document references. During an outage, contractors use a minimal manual "
-                    "worksheet containing identifiers, next actions, and reviewer initials. "
-                    "Import that worksheet with unique event keys after service returns. "
-                    "Customer updates should state the last verified milestone and the "
-                    "next action, avoiding invented treasury deadlines. Release invoices "
-                    "only after the engagement's contractual earning conditions and supporting "
-                    "recovery evidence are satisfied."
-                ),
-            ],
-            "table": {
-                "caption": "Run-Cost Controls and Claim-State Failure-Recovery Matrix",
-                "headers": [
-                    "Observed condition requiring an operational response",
-                    "Detection evidence and explicit accounting treatment",
-                    "Bounded automated response before human intervention",
-                    "Human fallback preserving claimant and revenue accuracy",
-                ],
-                "rows": [
-                    [
-                        "Extraction response omits evidence for a consequential field",
-                        "Schema validation records the missing citation and request cost",
-                        "Retry once using the same redacted source bundle",
-                        "Reviewer reads original evidence and rejects unsupported field values",
-                    ],
-                    [
-                        "Treasury status adapter encounters a changed response structure",
-                        "Required-field checks fail before any claim state changes",
-                        "Quarantine the response and disable affected transition processing",
-                        "Contractor verifies status manually and documents the changed interface",
-                    ],
-                    [
-                        "Repeated delivery reports attempt to create duplicate messages",
-                        "Unique event keys identify repeated notifications before dispatch",
-                        "Acknowledge prior processing without repeating customer communication actions",
-                        "Operator investigates contradictory payloads using retained event evidence",
-                    ],
-                    [
-                        "One accepted packet replaces three expected accepted packets",
-                        "Run cost remains $75.04 despite reduced usable output",
-                        "Flag the cohort for targeting and evidence-quality review",
-                        "Operator reduces intake until accepted-packet economics recover adequately",
-                    ],
-                    [
-                        "Portal record disappears without a supporting payment acknowledgment",
-                        "Store disappearance as an observation rather than earned revenue",
-                        "Create a verification task without sending payment claims",
-                        "Reviewer obtains official evidence before invoicing the service fee",
-                    ],
-                    [
-                        "Outage forces temporary manual tracking of active engagements",
-                        "Record minimal identifiers with timestamps and responsible reviewer initials",
-                        "Suspend unattended changes while preserving queued authenticated events",
-                        "Reconcile manual actions before replaying events into restored systems",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Freeze and identify the affected batch",
-                    "action": "Stop the failing adapter and assign an incident owner.",
-                    "detail": (
-                        "Preserve source files, event identifiers, software version, and "
-                        "the last verified external milestone for every affected claim."
-                    ),
-                },
-                {
-                    "step": 2,
-                    "title": "Continue essential work through the manual queue",
-                    "action": "Route time-sensitive document requests to the packet contractor.",
-                    "detail": (
-                        "Use only verified recipient details and record each manual action "
-                        "with a unique identifier to prevent duplicate replay."
-                    ),
-                },
-                {
-                    "step": 3,
-                    "title": "Repair and replay a bounded test sample",
-                    "action": "Validate the corrected adapter against retained source examples.",
-                    "detail": (
-                        "Compare expected transitions with actual results, including duplicate, "
-                        "late, conflicting, and malformed events before restoring batch processing."
-                    ),
-                },
-                {
-                    "step": 4,
-                    "title": "Reconcile before resuming normal throughput",
-                    "action": "Match ledger events, official acknowledgments, and customer messages.",
-                    "detail": (
-                        "Record corrected costs and reviewer minutes, resolve discrepancies, "
-                        "and expand the resumed batch only after the sample reconciles."
-                    ),
-                },
-            ],
-        },
-        {
-            "heading": "4. Compound trusted distribution without outrunning review capacity",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Build programmatic education around questions owners actually need answered: "
-                    "how to locate an official treasury portal, document a corporate name change, "
-                    "or distinguish an issuer-held warrant from escheated property. Generate page "
-                    "drafts from a jurisdiction rules table, then require an editor to verify "
-                    "citations, dates, direct-claim links, and state-specific instructions. Do not "
-                    "publish pages naming apparent owners or suggesting that an unverified amount "
-                    "belongs to them. A six-page pilot at $150 production cost per page "
-                    "costs $900. If it produces 30 qualified inquiries and three paid "
-                    "engagements, acquisition cost is $300 per engagement before ongoing maintenance. "
-                    "At the illustrative $750 fee, that leaves $450 before fulfillment and "
-                    "other expenses, not $450 profit. Attribute results through first-party "
-                    "landing-page parameters and engagement identifiers without embedding sensitive "
-                    "property details in URLs. Improve pages using aggregated missing-document "
-                    "patterns from completed cases, stripping identifiers before editorial use. "
-                    "This creates a useful loop: real operational friction improves education, "
-                    "better education attracts prepared owners, and prepared owners reduce "
-                    "packet revisions. Retire pages whose rules cannot be maintained. Traffic "
-                    "growth matters only when resulting engagements fit the evidence standards, "
-                    "review capacity, and fee economics of the operation."
-                ),
-                (
-                    "Use professional referrals and narrow corporate outreach before broad automated "
-                    "messaging. Accountants, business attorneys, and corporate administrators often "
-                    "understand historical names and authorized signatories better than a scraped "
-                    "contact list. Give partners a generic evidence checklist and official "
-                    "direct-claim links; share a specific property's details only with appropriate "
-                    "authorization. An illustrative campaign researching 100 corporate contacts "
-                    "at $3 each costs $300. Eight substantive replies, four qualified "
-                    "engagements, and two eventual paid recoveries yield $150 acquisition cost "
-                    "per paid engagement, before fulfillment. Treat those conversions as a "
-                    "test hypothesis rather than a forecast. For commercial email, implement "
-                    "15 U.S.C. 7704 requirements including accurate headers, nondeceptive subjects, "
-                    "required identification and address information, and a functioning opt-out "
-                    "that is honored within the statutory period. Do not disguise a private "
-                    "service as a treasury notice. Suppress declined recipients across every "
-                    "campaign, and retain only the minimal suppression data necessary to "
-                    "honor that choice. A satisfied owner may voluntarily share a generic "
-                    "resource link, but their recovery amount, documents, and testimonial "
-                    "require separate publication permission. Avoid public leaderboards, "
-                    "exposed claim identifiers, and referral incentives that conflict with "
-                    "applicable professional or finder rules."
-                ),
-                (
-                    "Connect distribution to capacity through a weekly cohort dashboard. Track "
-                    "source records, reviewed matches, qualified owners, signed eligible agreements, "
-                    "accepted submissions, paid engagements, recognized fees, and attributable "
-                    "expense. Separate these stages by acquisition month because a 3–12 month "
-                    "first-deal interval makes same-month conversion ratios misleading. At Base, "
-                    "340 paid engagements annually average 28.33 monthly, while Scaled averages "
-                    "50; these are throughput requirements, not treasury processing promises. "
-                    "If an illustrative 40% of qualified engagements eventually pay, Base "
-                    "requires 850 qualified engagements annually, approximately 70.83 monthly. "
-                    "If only 20% pay, that requirement doubles to 1,700 annually. Use "
-                    "observed aging and conversion before buying more traffic. Set work-in-progress "
-                    "limits from reviewer minutes: 120 available packet-review minutes daily "
-                    "at twelve minutes per packet support ten reviews, not unlimited submissions. "
-                    "When identity exceptions or missing-document requests consume that reserve, "
-                    "slow acquisition instead of allowing unsafe automatic release. Reinvest "
-                    "only within the canonical expense envelope and keep cash runway "
-                    "separate from recognized profit. The distribution flywheel becomes "
-                    "scalable when each completed cohort improves source selection, document "
-                    "readiness, and trust while preserving the owner's direct-claim choice. "
-                    "Automate preparation aggressively; expand consequential throughput only "
-                    "as fast as evidence quality and staffed review permit."
-                ),
-            ],
-            "table": {
-                "caption": "Distribution Cohorts, Capacity Limits, and Measurable Stop Conditions",
-                "headers": [
-                    "Distribution mechanism and intended qualified audience",
-                    "Illustrative cohort economics with explicit conversion denominator",
-                    "Evidence or capacity condition required for continuation",
-                    "Stop condition and practical lower-risk fallback",
-                ],
-                "rows": [
-                    [
-                        "Reviewed jurisdiction pages answer specific owner process questions",
-                        "Spend $900 for three paid engagements at $300 acquisition",
-                        "Maintain verified citations and useful official direct-claim links",
-                        "Withdraw outdated instructions until an editor verifies replacement text",
-                    ],
-                    [
-                        "Corporate outreach targets representatives with relevant authority evidence",
-                        "Spend $300 for two paid engagements at $150 acquisition",
-                        "Confirm contact relevance and maintain centralized suppression records",
-                        "Pause the cohort when replies expose repeated entity mismatches",
-                    ],
-                    [
-                        "Professional referral resources improve document readiness before engagement",
-                        "Spend $750 on ten introductions before measuring paid conversion",
-                        "Share generic checklists before obtaining property-specific owner authorization",
-                        "Remove incentives that conflict with applicable professional referral rules",
-                    ],
-                    [
-                        "Owner-initiated sharing distributes generic educational resources voluntarily",
-                        "Spend $40 for two resulting clients at $20 each",
-                        "Obtain separate permission before publishing identifiable client stories",
-                        "Stop requests after objection and remove unauthorized identifying content",
-                    ],
-                    [
-                        "Base acquisition planning uses eventually paid engagement cohorts",
-                        "At 40% conversion, 850 qualified engagements yield 340 payments",
-                        "Verify aging and conversion using completed historical acquisition cohorts",
-                        "Reduce spend when actual conversion requires unaffordable qualification volume",
-                    ],
-                    [
-                        "Reviewer capacity constrains daily packet release despite machine throughput",
-                        "Twelve minutes per packet permits ten daily two-hour reviews",
-                        "Reserve additional review time for identity and authority exceptions",
-                        "Throttle incoming work before backlog overwhelms consequential decision capacity",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": (
-        "Automate the evidence trail, not the leap from a matching name to a rightful owner."
-    ),
-    "diagram_id": "diag-02",
-    "action_checklist": [
-        "Create separate property, claimant, engagement, claim, invoice, and immutable event records with source provenance.",
-        "Benchmark repetitive labor across four weeks and test the 73.3% illustrative reduction against actual correction time.",
-        "Implement jurisdiction-specific agreement rules, direct-claim disclosures, identity review, and document-release permissions.",
-        "Deploy signed internal webhooks with idempotency keys, bounded retries, dead-letter ownership, and a tested manual fallback.",
-        "Reconcile $750 illustrative fee throughput to the exact three revenue, expense, profit, and staffing scenarios.",
-        "Launch one reviewed education cohort and one narrow corporate outreach cohort, expanding only after paid conversion and reviewer capacity reconcile.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "California Code of Civil Procedure § 1582",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CCP&sectionNum=1582.",
-            "relevance": (
-                "Controls covered finder agreements, including the restricted agreement "
-                "interval, compensation ceiling, and required agreement information."
-            ),
-        },
-        {
-            "title": "12 CFR § 1006.26 — Collection of time-barred debts",
-            "url": "https://www.ecfr.gov/current/title-12/chapter-X/part-1006/subpart-B/section-1006.26",
-            "relevance": (
-                "Prohibits covered debt collectors from bringing or threatening legal "
-                "action against consumers to collect time-barred debts; applies to "
-                "the separately quarantined TRACK_1 evaluation."
-            ),
-        },
-        {
-            "title": "15 U.S.C. § 1681c(a)(4) and (c)(1)",
-            "url": "https://www.law.cornell.edu/uscode/text/15/1681c",
-            "relevance": (
-                "Establishes relevant credit-reporting age restrictions and the "
-                "delinquency-based calculation for covered collection and charge-off "
-                "accounts, distinct from collection limitation periods."
-            ),
-        },
-        {
-            "title": "15 U.S.C. § 1692e — False or misleading representations",
-            "url": "https://www.law.cornell.edu/uscode/text/15/1692e",
-            "relevance": (
-                "Restricts false or misleading representations by covered debt "
-                "collectors, including representations concerning an obligation's "
-                "character, amount, or legal status."
-            ),
-        },
-        {
-            "title": "15 U.S.C. § 7704 — Commercial electronic mail requirements",
-            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
-            "relevance": (
-                "Sets commercial-email requirements covering transmission information, "
-                "subject lines, opt-out mechanisms, sender identification, postal "
-                "address information, and honoring opt-out requests."
-            ),
-        },
-    ],
-}
+CHAPTER_10 = {'id': 'Q10',
+ 'chapter_id': 'Q10',
+ 'chapter_number': 10,
+ 'question_number': 10,
+ 'slug': 'bankruptcy-unclaimed-funds-recovery',
+ 'question_prompt': 'How do practitioners find and verify bankruptcy unclaimed funds, navigate '
+                    'court-specific issues, and evaluate fees and payout examples?',
+ 'kicker': 'Q10 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Bankruptcy Unclaimed Funds Recovery',
+ 'subtitle': 'U.S. Courts locator searches, claims registers, fund-amount discrepancies, creditor-claim '
+             'difficulties, Florida districts, U.S. territories, finder fees, and practitioner payout '
+             'cases',
+ 'layout_template': 'expert_commentary',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Eric Richardson, Will Whitman, Darius, and Spring Porter describe a recovery '
+                      'business built around bankruptcy payments that never reached their owners. The '
+                      'operating sequence is concrete: locate a balance, identify the entitled party, '
+                      'research the docket, explain the money, secure the agreement, and submit the '
+                      "court's documents. Richardson promotes centralized leads and a $300 monthly "
+                      'platform; Porter demonstrates district-specific searches, claims-register research, '
+                      "and persistent follow-up. Their economics range from Porter's smaller stacked "
+                      "commissions to Richardson's guest accepting 20% on a recovery slightly above "
+                      '$34,000. The contrasts matter: centralized searches omit districts, actual payouts '
+                      "can exceed Richardson's 30–60-day expectation, and Porter's finder-fee discussion "
+                      "raises state-level contract concerns alongside the speakers' emphasis on "
+                      'negotiation. Documented ownership, court-specific paperwork, and claimant '
+                      'follow-through drive the work.',
+ 'key_metrics': [{'label': 'Bankruptcy Surplus monthly subscription',
+                  'metric': 'Bankruptcy Surplus monthly subscription',
+                  'value': '$300 a month',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Richardson quoted this subscription price for the platform described as '
+                             'combining researched leads, deposit documents, a CRM, and access to claim '
+                             'processing.',
+                  'source': 'Money Making Juggernaut ([NxCoaATrtq4 @ 00:27:36])'},
+                 {'label': "Negotiated fee on the guest's paid recovery",
+                  'metric': "Negotiated fee on the guest's paid recovery",
+                  'value': '20%',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Richardson's guest reported agreeing to 20% on a straightforward case that "
+                             'Richardson described as paying slightly more than $34,000.',
+                  'source': 'Money Making Juggernaut ([waps0YmW8BI @ 00:07:14])'},
+                 {'label': "Porter's combined commissions across three recoveries",
+                  'metric': "Porter's combined commissions across three recoveries",
+                  'value': '$1,030.14',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Porter combined the Middle District of Alabama and Western District of '
+                             'Missouri payouts with an earlier Eastern District of Virginia recovery. This '
+                             'was not the total of only the two checks received that day.',
+                  'source': 'Spring Solutions, LLC ([ckzrLZgtcYI @ 00:04:00])'},
+                 {'label': 'Western District of Missouri commission',
+                  'metric': 'Western District of Missouri commission',
+                  'value': '$335.34 at 30%',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Porter reported a $1,117.83 recovery and a requested 30% fee, producing the '
+                             'stated $335.34 commission.',
+                  'source': 'Spring Solutions, LLC ([ckzrLZgtcYI @ 00:02:52])'}],
+ 'sections': [{'title': '1. The Practitioner Consensus',
+               'paragraphs': ['The business starts with a payment that failed to reach its owner, not with '
+                              'a promise that every bankruptcy produces a windfall. Eric Richardson '
+                              'describes closed cases with undistributed money, incorrect addresses, '
+                              'deceased recipients, and checks that somebody simply never claimed. The '
+                              'debtor is the party in debt; the creditor is the party entitled to payment '
+                              'on that debt. Those roles matter before any outreach because the money can '
+                              'belong to either side [EyQovsqVOnE @ 00:00:28]. Darius at ACE SURPLUS gives '
+                              'the same basic picture: a distribution cannot be delivered, a check remains '
+                              'uncashed, and the payment returns as unclaimed funds. Individuals and '
+                              'companies can be recipients, and a debtor can receive a refund [daCZb9lQvnc '
+                              "@ 00:00:28]. Will Whitman frames the operator's job as identifying people "
+                              'separated from their money and bringing the two back together, whether the '
+                              'person filed the bankruptcy or participated as a creditor [NxCoaATrtq4 @ '
+                              "00:03:36]. Richardson's practical sequence is research, skip tracing, "
+                              'marketing, contracting, and claim submission. The research must explain how '
+                              'the funds arose, because a person whose bankruptcy ended years ago may '
+                              'reject the premise immediately. Reading the docket is part of being able to '
+                              'explain the claim professionally, not just a way to collect another name '
+                              'for a calling list [EyQovsqVOnE @ 00:02:31].',
+                              'The shared starting point is a searchable court balance followed by case '
+                              'research, but the national locator is not the whole inventory. Whitman '
+                              'describes a database sortable by amount and filterable by court, estimating '
+                              'participation at roughly 95% and suggesting a focused Northern District of '
+                              'Georgia search for claims between $10,000 and $20,000 [NxCoaATrtq4 @ '
+                              '00:10:05]. Darius also directs searchers to the online registry while '
+                              'estimating 90% coverage and saying the missing courts require direct '
+                              'contact [daCZb9lQvnc @ 00:04:22]. Spring Porter supplies the concrete '
+                              'district example: Western District of Missouri used its own PDF with more '
+                              'than 400 cases rather than appearing in the locator [ckzrLZgtcYI @ '
+                              "00:03:12]. That means the district's own information remains part of the "
+                              'search work, even when the main locator makes national prospecting '
+                              'convenient. Richardson then separates locating a listing from establishing '
+                              'its current status. In PACER, the operator checks whether somebody '
+                              'submitted a claim, whether payment followed, and whether the filing covered '
+                              'only part of the balance. Richardson and Whitman also report encountering a '
+                              'false claim, so an application appearing in the docket is not their signal '
+                              'to automatically abandon the lead. Their instruction is to read what '
+                              'happened and determine whether money remains rather than treating every '
+                              'existing filing as the end of the opportunity [NxCoaATrtq4 @ 00:15:14].',
+                              'The service pitch rests on explaining the record and handling the '
+                              'paperwork, not merely announcing that money exists. Richardson recommends '
+                              'sending the documentary proof with an introductory email, alongside the '
+                              "company's website and email identity. Whitman identifies the trustee's "
+                              'report of deposit as the written record produced when unclaimed money '
+                              "enters the court [NxCoaATrtq4 @ 00:12:04]. Richardson's guest makes the "
+                              'same point from actual conversations: understanding the bankruptcy lets the '
+                              'caller explain where the money came from, which makes the service easier '
+                              'for a claimant to understand and accept [waps0YmW8BI @ 00:04:11]. Porter '
+                              'describes the work as researching leads, contacting prospective clients, '
+                              'and preparing documents for filing; the scripts, letters, and contracts '
+                              'support that sequence rather than replacing it [CJMCHDgNh4M @ 00:01:54]. '
+                              "Baseline preparation also includes learning the receiving court's process. "
+                              'Darius says ACE SURPLUS handles application preparation and filing, '
+                              "emphasizes each court's administrative process, and points to errors as a "
+                              'reason clients experience delays or denials [daCZb9lQvnc @ 00:03:22]. These '
+                              'practitioners sell the ability to connect the claimant, the documented '
+                              'balance, and the required submission. A name and amount provide a lead; the '
+                              'conversation needs the explanation, and the filing needs the forms. That is '
+                              "the common service underneath Richardson's marketing system, Porter's "
+                              "document work, and Darius's application-handling offer."],
+               'table': {'caption': 'The common recovery model, with the distinctions practitioners '
+                                    'actually make',
+                         'headers': ['Operating Element',
+                                     'Practitioner Instruction or Observation',
+                                     'Expert Source'],
+                         'rows': [['Start with an undelivered payment rather than assuming auction surplus',
+                                   'Darius describes a distribution check that remains uncashed and '
+                                   'returns as unclaimed funds; both debtors and creditors can qualify.',
+                                   'ACE SURPLUS ([daCZb9lQvnc @ 00:00:28])'],
+                                  ['Identify which party owns the money before making contact',
+                                   'Whitman distinguishes people whose own bankruptcy generated the '
+                                   'balance from people who participated as creditors in another '
+                                   'bankruptcy.',
+                                   'Money Making Juggernaut ([NxCoaATrtq4 @ 00:03:36])'],
+                                  ['Use the centralized locator without treating participation as complete',
+                                   'Whitman estimates roughly 95% participation, while Darius estimates '
+                                   '90% and says absent courts require direct contact.',
+                                   'Money Making Juggernaut ([NxCoaATrtq4 @ 00:10:05]); ACE SURPLUS '
+                                   '([daCZb9lQvnc @ 00:04:22])'],
+                                  ['Read existing applications instead of automatically discarding the '
+                                   'lead',
+                                   'Richardson says an earlier application could involve a false claim or '
+                                   'only a portion of the money rather than a completed payout.',
+                                   'Money Making Juggernaut ([NxCoaATrtq4 @ 00:15:14])'],
+                                  ['Use the deposit report to explain the balance to claimants',
+                                   'Richardson recommends documentary proof in outreach, and Whitman '
+                                   "identifies the trustee's written report of deposited unclaimed funds.",
+                                   'Money Making Juggernaut ([NxCoaATrtq4 @ 00:12:04])'],
+                                  ["Learn the receiving district's actual application and document "
+                                   'requirements',
+                                   'Porter finds application forms in Northern Florida but a motion '
+                                   'requirement in Middle Florida, despite both districts being in one '
+                                   'state.',
+                                   'Spring Solutions, LLC ([R8PpcOrRZc4 @ 00:07:24])']]}},
+              {'title': '2. Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ["For a focused lead search, use Whitman's district-and-amount example: "
+                              'Northern District of Georgia, $10,000–$20,000 claims. Richardson also '
+                              'describes sorting fresh entries above $10,000 or ordering balances from '
+                              'highest to lowest [NxCoaATrtq4 @ 00:10:25]. For a broad personal search, '
+                              'Badwolf recommends leaving the court field empty and running the name '
+                              'separately as creditor and debtor, with case number and time frame left '
+                              'open when those details are not being used [suC7b2tuNcc @ 00:05:00]. Porter '
+                              "demonstrates a different route in Eastern New York, where the district's "
+                              'search requires a case number, debtor name, or creditor name. Entering bank '
+                              "names, or simply 'bank,' produces creditor leads; the example selected is a "
+                              '$31,802 Citibank balance [5A3cah6ujY4 @ 00:02:03]. Porter tries '
+                              'CourtListener first, finds that the case does not appear, and moves to '
+                              'PACER. There, the sequence is Find Cases, docket report, the '
+                              'unclaimed-funds entry near the bottom, and then the claims register. The '
+                              'Citibank filing is claim number three; its supporting document identifies '
+                              'the person who filed and provides a telephone number. Porter treats that as '
+                              'a contact lead while acknowledging the employee may no longer be there. The '
+                              'document also supplies supporting information for the recovery application '
+                              '[5A3cah6ujY4 @ 00:05:37].',
+                              "Richardson's tool-assisted route combines skip tracing and documentary "
+                              'proof inside Bankruptcy Surplus. Richardson names BeenVerified and Skip '
+                              "Matrix as other research options, then describes the platform's phone "
+                              "numbers, relatives' details, email addresses, social links, and "
+                              'notice-of-deposit documents [NxCoaATrtq4 @ 00:16:48]. The marketing stack '
+                              'includes calls, texts, voicemail drops, emails, and follow-up triggers; '
+                              'Richardson reports four to five incoming calls per day and describes asking '
+                              'interested callers for an email address so the proof can be sent '
+                              'immediately [NxCoaATrtq4 @ 00:18:33]. Porter supplies the manual '
+                              'follow-through. When a client returned something signed but omitted another '
+                              'requirement, Porter texted a photograph of the signed contract and used '
+                              'casual language to remind the client that the remaining documents were '
+                              'still needed. Porter also suggests asking about Facebook as another '
+                              'communication route [YKjd__UIhB8 @ 00:02:05]. The CRM must include '
+                              'prospects, not only signed clients: Porter recounts forgetting earlier '
+                              'mailings and being caught unprepared when recipients called back. Record '
+                              'working and nonworking numbers, email, preferred communication, case '
+                              'information, the fund amount, and the agreed percentage. Porter '
+                              'specifically warns against remembering a different fee than the one '
+                              'originally discussed. Those notes let the operator resume the actual '
+                              'conversation rather than ask the returning prospect what was offered '
+                              '[YKjd__UIhB8 @ 00:03:26].',
+                              'The economics are negotiated percentages on particular recoveries, with '
+                              'different operators choosing different deal sizes. Richardson quotes '
+                              'Bankruptcy Surplus at $300 monthly and describes 30–60 days as the ideal '
+                              'payment window, while noting that probate and additional work can extend it '
+                              "[NxCoaATrtq4 @ 00:27:36]. Richardson's guest accepted 20% on a "
+                              'straightforward recovery slightly above $34,000, but reports three or four '
+                              'months for the New York process, including a court Zoom call and successive '
+                              'processing periods of 21–35 days [waps0YmW8BI @ 00:07:14]. Porter shows the '
+                              'smaller-deal version: a 30% fee on $1,117.83 in Western Missouri produced '
+                              '$335.34, and that recovery joined Alabama and an earlier Virginia deal in a '
+                              'combined $1,030.14 commission total. Porter estimates about an hour of '
+                              'work, including travel, notarization, copies, and mailing, while explicitly '
+                              'separating that work from the waiting time [ckzrLZgtcYI @ 00:02:52]. On '
+                              'pricing, Porter urges negotiation rather than losing a client over a demand '
+                              'for half the recovery. Porter describes starting high and settling '
+                              'somewhere in the middle, and explains that 35% or 40% will not always be '
+                              'accepted. The specific tactic is to discuss the work being performed and '
+                              'adjust the percentage instead of treating the opening request as immovable '
+                              '[YKjd__UIhB8 @ 00:07:01].'],
+               'table': {'caption': 'Search paths, operating tools, and attributed deal economics',
+                         'headers': ['Execution Point',
+                                     'Exact Mechanics, Numbers, or Boundaries',
+                                     'Expert Source'],
+                         'rows': [['Filter a manageable district and balance range before researching '
+                                   'cases',
+                                   "Whitman's example is Northern District of Georgia claims between "
+                                   '$10,000 and $20,000; Richardson also describes sorting new entries '
+                                   'above $10,000.',
+                                   'Money Making Juggernaut ([NxCoaATrtq4 @ 00:10:25])'],
+                                  ['Expand Northern Florida case totals before assigning money to someone',
+                                   'Porter opens a roughly $2,300 case total and finds five creditors with '
+                                   'separate amounts, rather than one person entitled to the whole '
+                                   'balance.',
+                                   'Spring Solutions, LLC ([R8PpcOrRZc4 @ 00:03:32])'],
+                                  ['Move from a creditor listing into the actual claims register',
+                                   "Porter's $31,802 Citibank example leads to claim number three, a named "
+                                   'filer, a telephone number, and supporting claim documents.',
+                                   'Spring Solutions, LLC ([5A3cah6ujY4 @ 00:06:55])'],
+                                  ['Compare the platform subscription with the functions Richardson '
+                                   'actually describes',
+                                   'Richardson quotes $300 monthly for the service after describing its '
+                                   'lead database, deposit documents, CRM, and claim-processing workflow.',
+                                   'Money Making Juggernaut ([NxCoaATrtq4 @ 00:26:51])'],
+                                  ["Separate the recovered balance from the operator's negotiated "
+                                   'commission',
+                                   "Richardson's guest accepted 20% on slightly more than $34,000; Porter "
+                                   'reports $335.34 at 30% on a $1,117.83 Missouri recovery.',
+                                   'Money Making Juggernaut ([waps0YmW8BI @ 00:07:14]); Spring Solutions, '
+                                   'LLC ([ckzrLZgtcYI @ 00:02:52])'],
+                                  ['Distinguish quoted turnaround expectations from the payment dates '
+                                   'operators report',
+                                   'Richardson gives an ideal 30–60 days; Porter submitted Alabama on '
+                                   'September 30 and reports the check was cut January 7.',
+                                   'Money Making Juggernaut ([NxCoaATrtq4 @ 00:28:30]); Spring Solutions, '
+                                   'LLC ([ckzrLZgtcYI @ 00:01:15])'],
+                                  ["Preserve both sides of Porter's finder-fee and negotiation discussion",
+                                   'Porter says federal bankruptcy provisions do not specify finder fees, '
+                                   'but separately describes state-level rules and contract disputes as '
+                                   'issues that can surface when a deal goes wrong.',
+                                   'Spring Solutions, LLC ([YKjd__UIhB8 @ 00:07:51]); Spring Solutions, '
+                                   'LLC ([sf-f4iZbpRo @ 00:04:04])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': "Porter's moves for incomplete packets and stalled conversations",
+                           'body': "Porter's follow-up tactics address clients who hesitate over "
+                                   'identification, return incomplete documents, or stop short of '
+                                   'notarization.',
+                           'items': ['If the client will not give you a copy of their ID, Porter suggests '
+                                     'having them send it directly to the court while you send the other '
+                                     'documents separately. Porter also reports the drawback: some clerks '
+                                     'may issue a deficiency notice when the packet arrives in pieces. '
+                                     '[Spring Solutions, LLC — YKjd__UIhB8 @ 00:01:20]',
+                                     'For an incomplete return, Porter texts a photograph of the already '
+                                     'signed contract and reminds the client about the missing material. '
+                                     'The conversational approach produced responses for Porter when '
+                                     'another phone message was not getting the paperwork back. [Spring '
+                                     'Solutions, LLC — YKjd__UIhB8 @ 00:02:05]',
+                                     "Complete the remaining preparation while waiting for the client's "
+                                     'documents. Porter then follows up with the concrete message that the '
+                                     "operator's portion is finished and the missing client documents are "
+                                     'what remain before submission. [Spring Solutions, LLC — YKjd__UIhB8 '
+                                     '@ 00:06:04]',
+                                     'Offer to cover a mobile notary when notarization is the missing step '
+                                     'or the client has difficulty getting out. Porter suggests searching '
+                                     'locally, avoiding excessive cost, and mentions using their own bank '
+                                     'without a notarization charge. [Spring Solutions, LLC — YKjd__UIhB8 '
+                                     '@ 00:08:53]']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Select a search route and identify the entitled party',
+                              'action': 'Search the locator by district and amount, then use the '
+                                        "district's own search when its records are not listed centrally.",
+                              'detail': 'Whitman demonstrates a $10,000–$20,000 Northern District of '
+                                        'Georgia focus. Porter shows that Northern and Middle Florida '
+                                        'required their own district sites, and that opening a Northern '
+                                        'Florida case could reveal several creditors sharing the displayed '
+                                        'total. [Money Making Juggernaut — NxCoaATrtq4 @ 00:10:25] [Spring '
+                                        'Solutions, LLC — R8PpcOrRZc4 @ 00:03:32]'},
+                             {'step': 2,
+                              'title': 'Research the docket and retrieve the supporting documents',
+                              'action': 'Locate the deposit record, inspect earlier applications and '
+                                        'payments, and use the claims register when researching a '
+                                        'creditor.',
+                              'detail': 'Richardson says to establish whether an existing claim was paid '
+                                        'or concerned only part of the balance. Porter moves from '
+                                        'CourtListener to PACER when the case is unavailable, then uses '
+                                        "the docket and claims register to find the creditor's original "
+                                        'filing and contact information. [Money Making Juggernaut — '
+                                        'NxCoaATrtq4 @ 00:15:14] [Spring Solutions, LLC — 5A3cah6ujY4 @ '
+                                        '00:05:37]'},
+                             {'step': 3,
+                              'title': 'Explain the money, negotiate the fee, and record the conversation',
+                              'action': 'Contact the claimant with the case explanation and documentary '
+                                        'proof; record the proposed service and agreed percentage in the '
+                                        'CRM.',
+                              'detail': "Richardson's guest reports success through calling and explaining "
+                                        'where the funds originated. Porter records prospects before they '
+                                        'become clients and keeps the amount, contact preferences, and '
+                                        'percentage in the CRM so the contract matches the conversation. '
+                                        '[Money Making Juggernaut — waps0YmW8BI @ 00:05:28] [Spring '
+                                        'Solutions, LLC — YKjd__UIhB8 @ 00:03:26]'},
+                             {'step': 4,
+                              'title': 'Finish the court-specific packet and track the actual payout',
+                              'action': "Complete the receiving district's required submission, obtain the "
+                                        'missing client documents, and follow the case through the order '
+                                        'and payment.',
+                              'detail': "Porter contrasts Northern Florida's forms with Middle Florida's "
+                                        'motion requirement. After filing, Porter checks PACER or calls '
+                                        'the clerk periodically rather than daily, and keeps the contract '
+                                        'and percentage accessible when multiple recoveries arrive '
+                                        'together. [Spring Solutions, LLC — R8PpcOrRZc4 @ 00:07:24] '
+                                        '[Spring Solutions, LLC — ckzrLZgtcYI @ 00:04:21] [Spring '
+                                        'Solutions, LLC — ckzrLZgtcYI @ 00:05:21]'}]},
+              {'title': 'Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['Eric Richardson sells bankruptcy recovery as a centralized alternative to '
+                              'hunting county foreclosure lists: one site supplies names, amounts, and '
+                              'court locations, then the operator researches the case. Will Whitman '
+                              'narrows that pitch in their webinar, estimating that the locator covers '
+                              'about 95% of bankruptcy courts rather than every court; they also describe '
+                              'filtering a particular district for claims between $10,000 and $20,000 '
+                              '[NxCoaATrtq4 @ 00:10:05]. Darius at ACE SURPLUS gives a different coverage '
+                              'estimate, saying 90% of courts appear and that missing courts require '
+                              'direct contact [daCZb9lQvnc @ 00:04:22]. Spring Porter demonstrates what '
+                              'searching beyond the central locator actually involves. In Florida, Porter '
+                              'finds only the Southern District listed, then visits the Northern and '
+                              'Middle District websites separately. The Northern District offers '
+                              'application paperwork and an affidavit, while the Middle District calls for '
+                              'a motion; the same state does not mean identical filing mechanics '
+                              '[R8PpcOrRZc4 @ 00:07:24]. Porter also searches territories: Puerto Rico '
+                              'appears in the locator, Guam has a separate PDF, and other territory '
+                              'searches lead to clerk contacts. Puerto Rico introduces a practical '
+                              'language barrier: Porter encounters Spanish court documents despite English '
+                              'search pages and describes discovering that difficulty firsthand. These are '
+                              'alternative lead routes, not completed territory recoveries [lWmrc3x-B-E @ '
+                              '00:02:42].',
+                              "Fee advice splits between negotiated percentages and Porter's warning about "
+                              'what happens when a client relationship becomes a contract dispute. '
+                              "Richardson answers the webinar's fee-cap question by saying the percentage "
+                              'is discretionary and negotiable, immediately adding that asking for 50% or '
+                              '60% does not mean the client will accept it [NxCoaATrtq4 @ 00:28:49]. '
+                              'Porter likewise tells operators to negotiate rather than abandon a claim '
+                              'because the owner will not surrender half. Porter recounts contacting '
+                              'someone whose earlier locator wanted half and would not negotiate, and '
+                              'describes starting high before settling somewhere in the middle '
+                              "[YKjd__UIhB8 @ 00:07:01]. But Porter's dedicated finder-fee discussion "
+                              'takes a different position on state rules: absence of fee language in '
+                              "bankruptcy materials does not, in Porter's account, remove state-level "
+                              'exposure when a deal turns into litigation. Porter describes considering an '
+                              '$1,100 Virginia contract suit against a client who had not paid, without '
+                              "reporting a court victory [sf-f4iZbpRo @ 00:06:45]. Richardson's interview "
+                              'guest supplies a completed-deal comparison: a claim worth a little more '
+                              'than $34,000 carried an agreed 20% company fee because the case was '
+                              'straightforward. That figure describes the recovered claim, not a $34,000 '
+                              "take-home commission. The guest's rationale was accepting a worthwhile fee "
+                              'rather than pushing for more [waps0YmW8BI @ 00:07:14].',
+                              'The outreach playbooks range from a paid operating system to ordinary calls '
+                              'and self-directed name searches. Richardson describes Bankruptcy Surplus as '
+                              'a database with skip-traced contacts, supporting documents, a CRM, and '
+                              'claim processing; the webinar prices that service at $300 monthly. '
+                              'Operators can market inside the system and request filing when a prospect '
+                              'is ready, while the course also teaches independent research and filing '
+                              "[NxCoaATrtq4 @ 00:26:51]. Richardson's interview guest reports a simpler "
+                              'acquisition method: calling. Their partnership divides calls and paperwork, '
+                              'but several identified owners still procrastinate, including contacts '
+                              'associated with $232,000 and $65,000 claims. The guest keeps checking '
+                              'whether those owners have filed and offers help again [waps0YmW8BI @ '
+                              '00:05:47]. Porter favors text follow-up when contracts return incomplete, '
+                              'sometimes sending a photograph of the signed contract and using '
+                              'conversational language. Porter also asks about Facebook and records how '
+                              'clients prefer to communicate [YKjd__UIhB8 @ 00:02:05]. Badwolf '
+                              'Unincorporated takes a different route entirely: search for yourself or '
+                              'relatives, leave the court field empty, and run the name separately as '
+                              "creditor and debtor. Badwolf's broad search produces many similar names, "
+                              'followed by suggestions to request identifying information. That '
+                              'demonstration is personal discovery and inquiry, not a reported paid '
+                              'recovery operation [suC7b2tuNcc @ 00:05:00].'],
+               'table': {'caption': 'Different operating choices, competing fee advice, and '
+                                    'district-specific alternatives.',
+                         'headers': ['Decision Point',
+                                     'One Practitioner Approach',
+                                     'Contrasting Approach or Reported Limit',
+                                     'Expert Source'],
+                         'rows': [['Choose between a central search and additional district-level lead '
+                                   'hunting.',
+                                   'Whitman estimates approximately 95% coverage and demonstrates district '
+                                   'and amount filtering.',
+                                   'Darius estimates 90% coverage and says missing courts require '
+                                   'contacting them directly.',
+                                   'Money Making Juggernaut ([NxCoaATrtq4 @ 00:10:05]); ACE SURPLUS '
+                                   '([daCZb9lQvnc @ 00:04:22])'],
+                                  ['Decide whether familiar paperwork carries across districts within one '
+                                   'state.',
+                                   "Porter finds an application and claimant affidavit for Florida's "
+                                   'Northern District.',
+                                   "Florida's Middle District instead describes a motion and its required "
+                                   'supporting information.',
+                                   'Spring Solutions, LLC ([R8PpcOrRZc4 @ 00:07:24])'],
+                                  ["Compare negotiated fee freedom with Porter's separate discussion of "
+                                   'contract disputes.',
+                                   'Richardson describes percentages as negotiable while questioning '
+                                   'whether clients accept very high demands.',
+                                   'Porter says missing bankruptcy fee language does not eliminate '
+                                   'state-level litigation concerns.',
+                                   'Money Making Juggernaut ([NxCoaATrtq4 @ 00:28:49]); Spring Solutions, '
+                                   'LLC ([sf-f4iZbpRo @ 00:04:04])'],
+                                  ['Choose how to reach owners after identifying and researching a claim.',
+                                   'Richardson describes automated CRM outreach using calls, texts, '
+                                   'voicemail drops, and emails.',
+                                   'The interview guest attributes their marketing success to calling '
+                                   'rather than other channels.',
+                                   'Money Making Juggernaut ([NxCoaATrtq4 @ 00:18:33]); Money Making '
+                                   'Juggernaut ([waps0YmW8BI @ 00:05:47])'],
+                                  ['Consider territory searches alongside the districts already appearing '
+                                   'in the locator.',
+                                   'Porter locates Puerto Rico through the central search and Guam through '
+                                   'a separate PDF.',
+                                   'Porter encounters Spanish documents in Puerto Rico and lacks completed '
+                                   'Guam operating experience.',
+                                   'Spring Solutions, LLC ([lWmrc3x-B-E @ 00:02:42]); Spring Solutions, '
+                                   'LLC ([lWmrc3x-B-E @ 00:04:43])'],
+                                  ['Separate personal name discovery from selling a researched recovery '
+                                   'service.',
+                                   'Badwolf searches creditor and debtor fields for personal names and '
+                                   'relatives.',
+                                   'Richardson teaches researching court documents, explaining '
+                                   'entitlement, securing contracts, and submitting claims.',
+                                   'Badwolf Unincorporated ([suC7b2tuNcc @ 00:05:00]); Money Making '
+                                   'Juggernaut ([EyQovsqVOnE @ 00:02:31])']]}},
+              {'title': 'Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ["Porter's Missouri discrepancy shows why a listed amount can stall the "
+                              "entire job. A district PDF showed $1,983, while the trustee's final report "
+                              'showed more than $13,000. Porter found repeated deposit entries and '
+                              'withdrawals, could not reconcile the figures, and pursued clarification '
+                              'because the larger commission made the extra work worthwhile [y2j1Ux0R9jY @ '
+                              "00:01:08]. The bankruptcy clerk could not resolve it; the trustee's office "
+                              "also struggled; a judge's law clerk redirected Porter to the courtroom "
+                              'deputy. Porter left a message rather than reporting a resolved balance. '
+                              'Porter explicitly declined to contact the owner and prepare an application '
+                              'with an amount that might be wrong, and contemplated moving on if nobody '
+                              "answered [y2j1Ux0R9jY @ 00:04:48]. Another amount trap appears in Porter's "
+                              'Northern Florida walkthrough: a displayed case total of roughly $2,300 was '
+                              'divided among five creditors, rather than belonging to one claimant. '
+                              'Opening the case exposed the individual allocations [R8PpcOrRZc4 @ '
+                              '00:03:32]. Richardson and Whitman add a different docket trap: they '
+                              'encountered a false claim, and Richardson explains that an existing '
+                              'application does not automatically exhaust the funds. Their research '
+                              'includes whether payment occurred or whether somebody sought only a '
+                              'portion. The job is to understand the entries, not simply abandon every '
+                              'docket containing a claim [NxCoaATrtq4 @ 00:15:32].',
+                              'Payout timing and headline earnings diverge sharply across the reported '
+                              'jobs. Richardson describes 30 to 60 days as an ideal payout window, with '
+                              'additional proceedings such as probate potentially extending it '
+                              "[NxCoaATrtq4 @ 00:28:30]. The interview guest's completed New York claim "
+                              'instead took about three or four months, including a court Zoom '
+                              'verification and successive processing intervals described as 21 to 35 '
+                              'days. The same guest reports two Texas filings delayed by a six-month '
+                              'backlog with one person handling the work; an Illinois filing had been '
+                              'accepted, but its anticipated payout had not arrived [waps0YmW8BI @ '
+                              '00:02:30] [waps0YmW8BI @ 00:08:13]. Porter supplies another concrete '
+                              'timeline: a Middle District of Alabama claim submitted September 30 '
+                              "produced a check dated January 7. Porter's fee there was $294.80 at 40%, "
+                              'while the Western District of Missouri example produced a $335.34 fee at '
+                              '30%. Porter describes Missouri as fast and Alabama as slow despite friendly '
+                              'staff and easy paperwork. The $1,030.14 headline combines those fees with '
+                              'an earlier Eastern District of Virginia deal; Porter estimates about an '
+                              'hour of work but explicitly says there was waiting and that this was not '
+                              'daily income. Some districts mailed checks rather than sending electronic '
+                              'transfers [ckzrLZgtcYI @ 00:00:32].',
+                              'Institutional access and unfinished client paperwork create bottlenecks '
+                              "before payment processing even begins. Porter contacted Georgia's "
+                              'Department of Revenue about $9,718 still sitting in a court registry, '
+                              'returned after an earlier January call, and reached a representative who '
+                              'lacked authority. The manager was unavailable, leaving another message '
+                              'rather than a signed engagement. Porter describes government creditors as '
+                              'difficult to reach through someone who understands the recovery request '
+                              '[1fuOy7IsEMo @ 00:00:31]. In the Eastern District of New York walkthrough, '
+                              'Porter researches a $31,802 Citibank entry through PACER and the claims '
+                              "register, locating the original claim signer's telephone number. Porter "
+                              'does not report collecting that money and says banking contacts have '
+                              'promised to investigate, then failed to return calls [5A3cah6ujY4 @ '
+                              '00:09:31]. Smaller administrative failures are just as explicit: Porter has '
+                              'forgotten prospects after mailing them, struggled to remember quoted '
+                              'percentages, and received signed contracts with missing notarization. The '
+                              'response is to record prospects and communication preferences, retain fee '
+                              'notes, and follow up on missing documents. Sending identification '
+                              'separately can also trigger a deficiency notice when a clerk expects one '
+                              'package [YKjd__UIhB8 @ 00:00:50]. Darius at ACE SURPLUS identifies filing '
+                              'errors as a source of client delays and denials, making document '
+                              'preparation a central part of the service [daCZb9lQvnc @ 00:03:42].'],
+               'table': {'caption': 'Reported failures and payment facts that change the work required.',
+                         'headers': ['Failure or Bottleneck',
+                                     'Firsthand Detail',
+                                     'Practitioner Response or Outcome',
+                                     'Expert Source'],
+                         'rows': [['The public list and trustee accounting show substantially different '
+                                   'recovery amounts.',
+                                   'Porter compares a $1,983 listing with a final report exceeding '
+                                   '$13,000.',
+                                   "Porter contacts the clerk, trustee's office, and courtroom deputy "
+                                   'without reporting resolution.',
+                                   'Spring Solutions, LLC ([y2j1Ux0R9jY @ 00:01:08]); Spring Solutions, '
+                                   'LLC ([y2j1Ux0R9jY @ 00:04:48])'],
+                                  ['A displayed case total can overstate what one creditor receives.',
+                                   'Porter opens a roughly $2,300 Florida entry and finds five separate '
+                                   'creditor allocations.',
+                                   'Porter instructs operators to open entries and distinguish individual '
+                                   'amounts from combined totals.',
+                                   'Spring Solutions, LLC ([R8PpcOrRZc4 @ 00:03:32])'],
+                                  ['An application already appearing on the docket can require further '
+                                   'investigation.',
+                                   'Richardson says that Richardson and Whitman encountered a false claim '
+                                   'during research.',
+                                   'Richardson checks payment status and whether an earlier applicant '
+                                   'sought only part.',
+                                   'Money Making Juggernaut ([NxCoaATrtq4 @ 00:15:32])'],
+                                  ['Accepted filings and anticipated commissions remain different from '
+                                   'money already received.',
+                                   'The interview guest reports a completed New York payout after three or '
+                                   'four months.',
+                                   'Texas filings remained delayed, while the Illinois payout was still '
+                                   'something anticipated.',
+                                   'Money Making Juggernaut ([waps0YmW8BI @ 00:02:30]); Money Making '
+                                   'Juggernaut ([waps0YmW8BI @ 00:08:13])'],
+                                  ['Reaching the right department does not necessarily reach someone with '
+                                   'authority.',
+                                   "Porter's Georgia revenue contact could not authorize the recovery "
+                                   'arrangement being proposed.',
+                                   'The absent manager received a message, and Porter describes continued '
+                                   'institutional difficulty.',
+                                   'Spring Solutions, LLC ([1fuOy7IsEMo @ 00:01:06])'],
+                                  ['Incomplete prospect records can leave the operator unable to recognize '
+                                   'returning callers.',
+                                   'Porter admits forgetting mailed prospects and needing better records '
+                                   'of quoted percentages.',
+                                   'Porter records prospects, working numbers, preferred communication '
+                                   'methods, amounts, and agreed fees.',
+                                   'Spring Solutions, LLC ([YKjd__UIhB8 @ 00:03:26]); Spring Solutions, '
+                                   'LLC ([YKjd__UIhB8 @ 00:05:05])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Resolve the amount, the paperwork, and the payout record',
+                           'body': "Porter's operating checks address conflicting balances, incomplete "
+                                   'submissions, forgotten prospects, and incorrect client distributions.',
+                           'items': ['Resolve a material balance discrepancy before approaching the owner '
+                                     "with that amount. Porter pursued the clerk, trustee's office, and "
+                                     'courtroom deputy rather than preparing a claim around an unresolved '
+                                     'figure. [Spring Solutions, LLC — y2j1Ux0R9jY @ 00:06:02]',
+                                     'Record prospects before their callbacks arrive, including the '
+                                     'amount, quoted percentage, working contact details, and preferred '
+                                     'communication method. Porter describes forgetting mailed prospects '
+                                     'and struggling to reconstruct earlier conversations. [Spring '
+                                     'Solutions, LLC — YKjd__UIhB8 @ 00:03:26]',
+                                     'Follow up on missing notarization and consider offering a mobile '
+                                     'notary when that is the remaining obstacle. Porter reports receiving '
+                                     'contracts while the other required document remained unnotarized. '
+                                     '[Spring Solutions, LLC — YKjd__UIhB8 @ 00:08:53]',
+                                     'Locate each contract and check its percentage before distributing '
+                                     'simultaneous payouts. Porter warns that paying a client the wrong '
+                                     'amount breaches the agreed arrangement. [Spring Solutions, LLC — '
+                                     'ckzrLZgtcYI @ 00:05:21]']}}],
+ 'pull_quote': '"You may not get every large one that you go after." — Spring Solutions, LLC (ckzrLZgtcYI '
+               '@ 00:02:21).',
+ 'diagram_id': 'diag-02',
+ 'action_checklist': ['Filter the locator by court and amount when concentrating on a district; Whitman '
+                      'illustrates Northern District of Georgia claims between $10,000 and $20,000. [Money '
+                      'Making Juggernaut — NxCoaATrtq4 @ 00:10:25]',
+                      'Search the individual district website when its funds do not appear in the locator; '
+                      'Porter finds Northern and Middle Florida information through court resources and '
+                      'unclaimed funds. [Spring Solutions, LLC — R8PpcOrRZc4 @ 00:11:30]',
+                      'Review the docket for a deposit, existing applications, payments, and partial '
+                      'claims before treating an earlier application as the end of the opportunity. [Money '
+                      'Making Juggernaut — NxCoaATrtq4 @ 00:15:32]',
+                      'For a creditor claim, open the claims register and original proof of claim to find '
+                      'the person who filed it and available contact information. [Spring Solutions, LLC — '
+                      '5A3cah6ujY4 @ 00:07:14]',
+                      'Prepare the remaining case paperwork while waiting for missing client documents, '
+                      'then tell the client exactly what still needs to come back. [Spring Solutions, LLC '
+                      '— YKjd__UIhB8 @ 00:06:04]',
+                      'Space out PACER checks or clerk calls while awaiting payment, and match each '
+                      'arriving payout to its contract and percentage before paying the client. [Spring '
+                      'Solutions, LLC — ckzrLZgtcYI @ 00:04:21] [Spring Solutions, LLC — ckzrLZgtcYI @ '
+                      '00:05:21]'],
+ 'statutory_citations': [{'title': 'Money Making Juggernaut — Unclaimed Bankruptcy Funds webinar '
+                                   '[00:15:32]',
+                          'url': 'https://www.youtube.com/watch?v=NxCoaATrtq4&t=932s',
+                          'relevance': 'Primary practitioner testimony on false claims, payment '
+                                       'verification, and applications covering only part of the available '
+                                       'funds.'},
+                         {'title': "Spring Solutions, LLC — Finder's Fees-Bankruptcy Unclaimed Funds "
+                                   '[00:04:04]',
+                          'url': 'https://www.youtube.com/watch?v=sf-f4iZbpRo&t=244s',
+                          'relevance': "Primary practitioner testimony on Porter's distinction between "
+                                       'bankruptcy website language and state-level fee disputes.'},
+                         {'title': 'Spring Solutions, LLC — Discrepancies with Verifying Funds-Bankruptcy '
+                                   'Unclaimed Funds [00:06:02]',
+                          'url': 'https://www.youtube.com/watch?v=y2j1Ux0R9jY&t=362s',
+                          'relevance': 'Primary practitioner testimony on withholding outreach and '
+                                       'application preparation while the recovery amount remains '
+                                       'unresolved.'},
+                         {'title': 'Money Making Juggernaut — UNTAPPED OPPORTUNITY: $34k From 1 Claim '
+                                   '(Unclaimed Bankruptcy Funds) [00:08:13]',
+                          'url': 'https://www.youtube.com/watch?v=waps0YmW8BI&t=493s',
+                          'relevance': 'Primary practitioner testimony on a completed payout, court '
+                                       'verification, and three-to-four-month elapsed processing.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'EyQovsqVOnE',
+                       'title': 'BANKRUPTCY Unclaimed Funds Explained: UNTAPPED NICHE (Surplus Funds '
+                                'Recovery)',
+                       'channel': 'Money Making Juggernaut',
+                       'author': 'Money Making Juggernaut',
+                       'text': 'You have to know how to read these dockets, how to understand documents '
+                               "and actually explain to somebody that they're entitled these funds.",
+                       'tip': 'You have to know how to read these dockets, how to understand documents and '
+                              "actually explain to somebody that they're entitled these funds.",
+                       'timestamp': 165,
+                       'timestamp_seconds': 165,
+                       'timestamp_label': '[00:02:45]',
+                       'url': 'https://www.youtube.com/watch?v=EyQovsqVOnE&t=165s',
+                       'markdown': '[00:02:45](https://www.youtube.com/watch?v=EyQovsqVOnE&t=165s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'NxCoaATrtq4',
+                       'title': 'Unclaimed Bankruptcy Funds webinar',
+                       'channel': 'Money Making Juggernaut',
+                       'author': 'Money Making Juggernaut',
+                       'text': "We don't want to just say, oh, there's a claim in and then jump to the "
+                               'next one.',
+                       'tip': "We don't want to just say, oh, there's a claim in and then jump to the next "
+                              'one.',
+                       'timestamp': 953,
+                       'timestamp_seconds': 953,
+                       'timestamp_label': '[00:15:53]',
+                       'url': 'https://www.youtube.com/watch?v=NxCoaATrtq4&t=953s',
+                       'markdown': '[00:15:53](https://www.youtube.com/watch?v=NxCoaATrtq4&t=953s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '91o6wv-g6D0',
+                       'title': 'UNTAPPED Business - Unclaimed BANKRUPTCY Funds Recovery ($5B)',
+                       'channel': 'Money Making Juggernaut',
+                       'author': 'Money Making Juggernaut',
+                       'text': "There's going to be an agreement form that's necessary, there's going to "
+                               "be a claim form, there's going to be proof of identification.",
+                       'tip': "There's going to be an agreement form that's necessary, there's going to be "
+                              "a claim form, there's going to be proof of identification.",
+                       'timestamp': 197,
+                       'timestamp_seconds': 197,
+                       'timestamp_label': '[00:03:17]',
+                       'url': 'https://www.youtube.com/watch?v=91o6wv-g6D0&t=197s',
+                       'markdown': '[00:03:17](https://www.youtube.com/watch?v=91o6wv-g6D0&t=197s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'daCZb9lQvnc',
+                       'title': 'What are Unclaimed Bankruptcy Funds?',
+                       'channel': 'ACE SURPLUS',
+                       'author': 'ACE SURPLUS',
+                       'text': 'Clients often face delays or denials due to errors in their filings.',
+                       'tip': 'Clients often face delays or denials due to errors in their filings.',
+                       'timestamp': 222,
+                       'timestamp_seconds': 222,
+                       'timestamp_label': '[00:03:42]',
+                       'url': 'https://www.youtube.com/watch?v=daCZb9lQvnc&t=222s',
+                       'markdown': '[00:03:42](https://www.youtube.com/watch?v=daCZb9lQvnc&t=222s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'CJMCHDgNh4M',
+                       'title': 'MY COURSE HAS LAUNCHED!  Recovering Bankruptcy Unclaimed Funds!',
+                       'channel': 'Spring Solutions, LLC',
+                       'author': 'Spring Solutions, LLC',
+                       'text': 'I have decided to price my course at $1,000.',
+                       'tip': 'I have decided to price my course at $1,000.',
+                       'timestamp': 17,
+                       'timestamp_seconds': 17,
+                       'timestamp_label': '[00:00:17]',
+                       'url': 'https://www.youtube.com/watch?v=CJMCHDgNh4M&t=17s',
+                       'markdown': '[00:00:17](https://www.youtube.com/watch?v=CJMCHDgNh4M&t=17s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ckzrLZgtcYI',
+                       'title': '$1,030.14 in a day! Bankruptcy Unclaimed Funds!',
+                       'channel': 'Spring Solutions, LLC',
+                       'author': 'Spring Solutions, LLC',
+                       'text': 'You may not get every large one that you go after.',
+                       'tip': 'You may not get every large one that you go after.',
+                       'timestamp': 141,
+                       'timestamp_seconds': 141,
+                       'timestamp_label': '[00:02:21]',
+                       'url': 'https://www.youtube.com/watch?v=ckzrLZgtcYI&t=141s',
+                       'markdown': '[00:02:21](https://www.youtube.com/watch?v=ckzrLZgtcYI&t=141s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'waps0YmW8BI',
+                       'title': 'UNTAPPED OPPORTUNITY: $34k From 1 Claim (Unclaimed Bankruptcy Funds)',
+                       'channel': 'Money Making Juggernaut',
+                       'author': 'Money Making Juggernaut',
+                       'text': 'It was a very straightforward case. We just file it and get paid.',
+                       'tip': 'It was a very straightforward case. We just file it and get paid.',
+                       'timestamp': 455,
+                       'timestamp_seconds': 455,
+                       'timestamp_label': '[00:07:35]',
+                       'url': 'https://www.youtube.com/watch?v=waps0YmW8BI&t=455s',
+                       'markdown': '[00:07:35](https://www.youtube.com/watch?v=waps0YmW8BI&t=455s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'YKjd__UIhB8',
+                       'title': 'How to Find Unclaimed Funds | Top 7 Tips Bankruptcy Unclaimed Funds in '
+                                '2022',
+                       'channel': 'Spring Solutions, LLC',
+                       'author': 'Spring Solutions, LLC',
+                       'text': "It's important to update your CRM.",
+                       'tip': "It's important to update your CRM.",
+                       'timestamp': 206,
+                       'timestamp_seconds': 206,
+                       'timestamp_label': '[00:03:26]',
+                       'url': 'https://www.youtube.com/watch?v=YKjd__UIhB8&t=206s',
+                       'markdown': '[00:03:26](https://www.youtube.com/watch?v=YKjd__UIhB8&t=206s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'lWmrc3x-B-E',
+                       'title': 'Recover Bankruptcy Unclaimed Funds in U.S. Territories- Work From Home '
+                                '2020.',
+                       'channel': 'Spring Solutions, LLC',
+                       'author': 'Spring Solutions, LLC',
+                       'text': 'Some of those documents may be in Spanish.',
+                       'tip': 'Some of those documents may be in Spanish.',
+                       'timestamp': 162,
+                       'timestamp_seconds': 162,
+                       'timestamp_label': '[00:02:42]',
+                       'url': 'https://www.youtube.com/watch?v=lWmrc3x-B-E&t=162s',
+                       'markdown': '[00:02:42](https://www.youtube.com/watch?v=lWmrc3x-B-E&t=162s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'y2j1Ux0R9jY',
+                       'title': 'Discrepancies with Verifying Funds-Bankruptcy Unclaimed Funds',
+                       'channel': 'Spring Solutions, LLC',
+                       'author': 'Spring Solutions, LLC',
+                       'text': "The trustee's final report has all the accounting of the case.",
+                       'tip': "The trustee's final report has all the accounting of the case.",
+                       'timestamp': 68,
+                       'timestamp_seconds': 68,
+                       'timestamp_label': '[00:01:08]',
+                       'url': 'https://www.youtube.com/watch?v=y2j1Ux0R9jY&t=68s',
+                       'markdown': '[00:01:08](https://www.youtube.com/watch?v=y2j1Ux0R9jY&t=68s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '1fuOy7IsEMo',
+                       'title': 'I HATE CREDITOR CLAIMS-Bankruptcy Unclaimed Funds',
+                       'channel': 'Spring Solutions, LLC',
+                       'author': 'Spring Solutions, LLC',
+                       'text': 'Although you have the right department, you still may not get what you '
+                               'want.',
+                       'tip': 'Although you have the right department, you still may not get what you '
+                              'want.',
+                       'timestamp': 49,
+                       'timestamp_seconds': 49,
+                       'timestamp_label': '[00:00:49]',
+                       'url': 'https://www.youtube.com/watch?v=1fuOy7IsEMo&t=49s',
+                       'markdown': '[00:00:49](https://www.youtube.com/watch?v=1fuOy7IsEMo&t=49s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'R8PpcOrRZc4',
+                       'title': 'Northern and Middle District of Florida Bankruptcy Court-Recovery '
+                                'unclaimed funds',
+                       'channel': 'Spring Solutions, LLC',
+                       'author': 'Spring Solutions, LLC',
+                       'text': 'You need to determine: is it just one creditor that gets the amount, or is '
+                               'it broken down per creditor, per claim.',
+                       'tip': 'You need to determine: is it just one creditor that gets the amount, or is '
+                              'it broken down per creditor, per claim.',
+                       'timestamp': 257,
+                       'timestamp_seconds': 257,
+                       'timestamp_label': '[00:04:17]',
+                       'url': 'https://www.youtube.com/watch?v=R8PpcOrRZc4&t=257s',
+                       'markdown': '[00:04:17](https://www.youtube.com/watch?v=R8PpcOrRZc4&t=257s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'suC7b2tuNcc',
+                       'title': '$$$ U.S. Courts Unclaimed Funds Locator: Get lost MONIES owed to you or '
+                                'your family. By the badwolf',
+                       'channel': 'Badwolf Unincorporated',
+                       'author': 'Badwolf Unincorporated',
+                       'text': 'Run it through one time with your name as the creditor, one time with your '
+                               'name as the debtor.',
+                       'tip': 'Run it through one time with your name as the creditor, one time with your '
+                              'name as the debtor.',
+                       'timestamp': 321,
+                       'timestamp_seconds': 321,
+                       'timestamp_label': '[00:05:21]',
+                       'url': 'https://www.youtube.com/watch?v=suC7b2tuNcc&t=321s',
+                       'markdown': '[00:05:21](https://www.youtube.com/watch?v=suC7b2tuNcc&t=321s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'V_ElSJZFszg',
+                       'title': 'U.S. Courts Unclaimed Funds Locator: Does the court owe you money?',
+                       'channel': 'Badwolf Unincorporated',
+                       'author': 'Badwolf Unincorporated',
+                       'text': 'You can put in the court; you can just leave it blank, is what I '
+                               'recommend.',
+                       'tip': 'You can put in the court; you can just leave it blank, is what I recommend.',
+                       'timestamp': 256,
+                       'timestamp_seconds': 256,
+                       'timestamp_label': '[00:04:16]',
+                       'url': 'https://www.youtube.com/watch?v=V_ElSJZFszg&t=256s',
+                       'markdown': '[00:04:16](https://www.youtube.com/watch?v=V_ElSJZFszg&t=256s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '5A3cah6ujY4',
+                       'title': 'Claims Register Part 2-Eastern District of New York Bankruptcy Unclaimed '
+                                'Funds',
+                       'channel': 'Spring Solutions, LLC',
+                       'author': 'Spring Solutions, LLC',
+                       'text': "I have not had that much luck. I had people say they'll look into it and, "
+                               'you know, they never get back to me. They dodge my calls.',
+                       'tip': "I have not had that much luck. I had people say they'll look into it and, "
+                              'you know, they never get back to me. They dodge my calls.',
+                       'timestamp': 571,
+                       'timestamp_seconds': 571,
+                       'timestamp_label': '[00:09:31]',
+                       'url': 'https://www.youtube.com/watch?v=5A3cah6ujY4&t=571s',
+                       'markdown': '[00:09:31](https://www.youtube.com/watch?v=5A3cah6ujY4&t=571s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'sf-f4iZbpRo',
+                       'title': "Finder's Fees-Bankruptcy Unclaimed Funds",
+                       'channel': 'Spring Solutions, LLC',
+                       'author': 'Spring Solutions, LLC',
+                       'text': 'Just because you can charge 45, does it mean that you should? And it '
+                               "doesn't mean that the client that you're working with is going to be "
+                               'willing to pay you that.',
+                       'tip': 'Just because you can charge 45, does it mean that you should? And it '
+                              "doesn't mean that the client that you're working with is going to be "
+                              'willing to pay you that.',
+                       'timestamp': 474,
+                       'timestamp_seconds': 474,
+                       'timestamp_label': '[00:07:54]',
+                       'url': 'https://www.youtube.com/watch?v=sf-f4iZbpRo&t=474s',
+                       'markdown': '[00:07:54](https://www.youtube.com/watch?v=sf-f4iZbpRo&t=474s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'}]}

@@ -1,470 +1,470 @@
 {
   "workbook_id": "wb-013-intellectual-property-licensing",
   "volume_id": "vol-013-intellectual-property-licensing",
-  "title": "Intellectual Property Licensing — Operator Companion Workbook",
-  "subtitle": "6 Printable Operator Worksheets for Patent, Brand, Catalog, and Dataset Licensing: Rights Underwriting, Minimum Guarantees, Royalty Controls, Contract Execution, Automation, and Transfer-Ready Operations",
+  "title": "Intellectual Property Licensing — Practitioner Testimony Operator Workbook",
+  "subtitle": "Choosing the licensing model, protecting the invention, running royalty math, finding licensees, negotiating the term sheet and commercializing research through technology transfer.",
   "worksheets": [
     {
       "worksheet_id": "ws-01",
       "number": 1,
-      "title": "Opportunity Underwriting and Licensee Qualification",
-      "purpose": "Select a licensable asset and solvent counterparty before spending on prosecution, packaging, or negotiations. Establish ownership, commercial demand, permitted uses, territorial boundaries, and reporting feasibility. Convert speculative intellectual property into an evidence-backed deal thesis with explicit rejection criteria.",
-      "chapter_ref": "Q1, Q2, Q6",
+      "title": "Licensing Model and Protection Stack Builder",
+      "purpose": "Choose between manufacturing, assignment and licensing with evidence instead of excitement, then build a lean protection stack of research, assignment checks and a provisional filing so every pitch rests on perceived ownership and a fixed walk-away position.",
+      "chapter_ref": "Q1-Q2",
       "instructions": [
-        "Create one underwriting record per asset and proposed licensee. Separate patents, brands, copyrighted catalogs, and datasets because their ownership evidence and permissible uses differ. Attach dated source documents rather than relying on a seller's presentation.",
-        "Interview product, procurement, and accounting personnel at the prospective licensee. Confirm the product roadmap, budget owner, launch timing, and royalty-reporting system. Treat enthusiastic technical feedback without purchasing authority as discovery evidence, not committed demand.",
-        "Map the proposed grant across territory, field of use, channels, term, exclusivity, and sublicensing. Test each dimension against existing grants and retained rights. Identify overlaps before discussing a price or promising category exclusivity.",
-        "Calculate operator revenue separately from licensee product sales. Use the canonical annual scenarios as portfolio reference points, then document the commercial assumptions supporting this particular deal. Reject projections that quietly count the licensee's manufacturing turnover as licensing revenue.",
-        "Assign an owner and resolution date to every material uncertainty. Rank evidence by source quality and commercial consequence. Advance only when title, demand, solvency, and reporting capability are documented sufficiently to justify the next underwriting expenditure."
+        "Complete the business-model fields before touching search tools, because the path you choose shapes every protection decision that follows.",
+        "Back every royalty figure with a named practitioner range and state whether it applies to wholesale or gross sales.",
+        "Run the patent search by concept, group synonyms in parentheses, and loosen abstract filters before declaring the field empty.",
+        "Pull the assignment record yourself rather than trusting the assignee printed on the face of any patent.",
+        "Leave price for last in negotiation, but fix your private floor, minimums and indemnity position before the first meeting."
       ],
       "fields": [
         {
-          "name": "Asset identity and monetizable advantage",
+          "name": "business_model_fork",
           "type": "textarea",
-          "prompt": "Identify the specific asset, protected subject matter, customer problem, and measurable advantage. Explain why a licensee would pay instead of building, sourcing, or using a substitute with fewer restrictions.",
-          "example": "A catalog contains 240 commissioned industrial illustrations with signed assignments and editable source files. Four equipment publishers need consistent maintenance diagrams. The proposed license replaces an estimated 600 annual illustration hours per publisher; the underwriting record links that estimate to two procurement interviews and three recent production invoices."
+          "prompt": "Decide which of the three paths you will take: manufacture the product yourself, sell the rights outright through an assignment, or license them while keeping title. Write down the reasons that rule out the two paths you are rejecting today.",
+          "example": "Licensing, not venturing. Making the product would mean floating at least $250,000 in inventory while retailers pay in 60 to 90 days [inventRightTV — E5dH32uMqOY @ 00:05:05]. Assignment is out because buyers often offer far less than inventors expect, sometimes five thousand dollars against a million-dollar ask [Eric Hanscom (ICIP) — yUPS-UISPnQ @ 00:05:39]. Licensing keeps title and borrows a partner's shelf space."
         },
         {
-          "name": "Chain of title and encumbrance evidence",
+          "name": "manufacturing_gate_check",
           "type": "textarea",
-          "prompt": "List creators, inventors, employers, assignors, registration references, and prior grants. Identify liens, retained rights, termination interests, or missing signatures that could prevent the exact license proposed to this counterparty.",
-          "example": "The asset register links 240 illustration files to eight creator agreements and eight signed assignments. Two agreements reserve portfolio-display rights but no commercial sublicensing rights. The operator obtains a seller lien search and releases before closing; 12 illustrations with incomplete assignment schedules remain excluded from the initial licensed catalog."
+          "prompt": "Test the manufacturing option against four conditions: strong demand, healthy margins, a clear sales channel, and the ability to manage operations. Note which conditions you can prove with evidence today and which ones are only hopes driven by excitement.",
+          "example": "Demand: unproven beyond friends. Margins: unknown until factory quotes arrive. Channel: no retail buyer relationships. Operations: no staff or warehouse. All four fail, so no manufacturing, echoing the warning not to manufacture just because someone called it a million-dollar idea [Patent Question — E7nUaZBoVeI @ 00:05:11]. The four-part gate itself comes from the same practitioner [Patent Question — E7nUaZBoVeI @ 00:05:27]."
         },
         {
-          "name": "Buyer problem and verified demand",
-          "type": "textarea",
-          "prompt": "Record who experiences the problem, who controls purchasing, and what evidence supports willingness to pay. Distinguish interviews, sample evaluations, budget reservations, and executed purchase commitments rather than blending them into one pipeline total.",
-          "example": "Discovery covers 12 publishers: seven confirm a diagram backlog, four accept a sample package, and two budget owners discuss annual licensing. One procurement manager confirms a $110,000 spending envelope by email. No interview enters booked revenue; the next milestone is a signed paid evaluation with defined conversion terms."
+          "name": "target_royalty_band",
+          "type": "text",
+          "prompt": "Record the royalty band you will treat as realistic for your category, citing at least two practitioner ranges. State whether the rate applies to wholesale or gross sales, and note how much sales volume the rate needs to matter.",
+          "example": "Working band of 3 to 5% of wholesale, inside the 2 to 10% of wholesale range that varies by industry [Patent Question — dlTT-hWgkB8 @ 00:00:43]. The broader 5 to 20% band carries a warning that real profit needs significant sales volume [UpCounsel — wiI7fBL42Vg @ 00:02:12]. Volume target: enough units that even 3% pays meaningfully."
         },
         {
-          "name": "Counterparty solvency and payment security",
+          "name": "exclusivity_structure",
           "type": "textarea",
-          "prompt": "Document the contracting entity, payment history, available credit evidence, and exposure before collection. Specify when deposits, parent support, shorter reporting intervals, or restricted delivery are necessary for a newly formed or thinly capitalized licensee.",
-          "example": "The proposed licensee is a recently formed subsidiary with $85,000 cash and no trading history. The operator requires a $15,000 quarterly minimum payment before access, a parent guarantee reviewed for enforceability, and monthly sales reports. Source-file delivery waits until the first payment clears and the authorized signatory is verified."
+          "prompt": "Choose the grant structure you will offer first: exclusive, co-exclusive, sole, or non-exclusive, plus any field-of-use or territory split. Explain how much market power you hold and why that power supports the structure you picked for this product.",
+          "example": "Exclusive grant only if the partner is picked very carefully; with market power, non-exclusive is the demand [Patent pc — A7xn_DzjKzE @ 00:01:04]. Plan: split by field of use, licensing a medical device into human and pet markets at the same time so a competitor with similar technology cannot arrive first [Licensing Consulting Group — 0MpPL7OXNr4 @ 00:01:34]."
         },
         {
-          "name": "Territory, field, channel, and exclusivity",
-          "type": "textarea",
-          "prompt": "Define the grant using boundaries that operations can enforce. State included products, excluded applications, geographic coverage, sales channels, affiliates, sublicense permissions, and performance conditions for retaining any negotiated exclusivity.",
-          "example": "The grant covers maintenance manuals for commercial refrigeration equipment sold in the United States and Canada for 24 months. Consumer appliances, merchandise, and training-model use are excluded. Exclusivity applies only to the named refrigeration field and converts to nonexclusive status if the annual $60,000 minimum is not paid after the contractual cure period."
+          "name": "fee_structure_mix",
+          "type": "text",
+          "prompt": "Specify the payment mix you will propose: a fixed licensing fee, a running royalty, guaranteed annual minimums, per-unit caps, equity, or a combination. Explain why each element appears and which one the licensee will most likely resist.",
+          "example": "Fixed licensing fee at signing plus a running royalty, since some businesses pay both [Simple Explain — 2-_h0sI3YQI @ 00:02:31]. Annual minimums are non-negotiable so the licensee is pushed to sell as many covered products as possible [Michigan Engineering — EPj0ydCGdiU @ 00:03:03]. Expected resistance: the minimums. Price discussion is held until last because every other term moves it."
         },
         {
-          "name": "Competitive substitutes and infringement exposure",
+          "name": "next_best_alternative_value",
           "type": "textarea",
-          "prompt": "Identify competing assets, public-domain alternatives, technical workarounds, and plausible infringement allegations. Separate ownership of the offered asset from the licensee's freedom to commercialize a finished product containing other protected components.",
-          "example": "A sensor patent license covers one calibration method, not the entire device. The licensee identifies three competing calibration methods and commissions a separate product clearance review. The operator supplies claim charts and prosecution records; the proposal does not represent that the license automatically clears enclosure, wireless, or firmware rights."
+          "prompt": "Estimate what your technology is worth by naming the licensee's next best alternative and what that alternative would cost them. Compare that figure against the quarter-to-a-third-of-profits rule of thumb and note where the two disagree before any meeting.",
+          "example": "Next best alternative: the licensee redesigning around the idea in-house, costing them engineering time and a delayed launch. That cost caps the value, because technology is worth no more than the licensee's next best alternative, and the quarter-to-a-third-of-profits rule is only a starting point [Kauffman FoundersSchool — q5uDRlH_eFo @ 00:01:41]. Gap noted: the rule overstates value."
         },
         {
-          "name": "Royalty data availability and audit access",
+          "name": "prior_art_search_log",
           "type": "textarea",
-          "prompt": "Verify that the licensee can produce transaction-level records matching the proposed royalty definition. Specify identifiers, deduction evidence, affiliate transfers, returns, currency treatment, retention periods, and an achievable contractual inspection mechanism.",
-          "example": "The licensee exports invoice ID, SKU, territory, gross sales, returns, freight, tax, and currency from NetSuite. The draft permits documented returns and separately stated sales tax as deductions, but excludes general overhead. A seven-year record retention clause and annual independent inspection right support reconciliation back to the sales ledger."
+          "prompt": "Log your concept-based Boolean search of the patent database. List the concepts and synonyms you grouped with parentheses, the hit counts before and after grouping, and whether you loosened any abstract filter before concluding nothing similar exists.",
+          "example": "Searched for the concept, not the word [Edel Patents — SDXhhmDKGJo @ 00:00:56]. Grouping synonyms inside parentheses cut one example query from 316 hits to 46. The abstract-only filter returned almost nothing, so it was loosened, since abstract searches narrow fast enough to drop important documents [Edel Patents — SDXhhmDKGJo @ 00:04:28]. Full-text coverage runs from 1976 onward."
         },
         {
-          "name": "Portfolio revenue thesis and scenario anchor",
+          "name": "application_and_assignment_record",
           "type": "textarea",
-          "prompt": "Select the canonical scenario used for planning and explain the revenue composition. Show underlying licensee sales only as a royalty driver, with license fees and earned royalties reported separately as operator revenue.",
-          "example": "The Base portfolio targets $425,000 annual operator revenue: $125,000 nonrecoupable license fees plus $300,000 earned royalties. At a 5% royalty rate, those royalties require $6,000,000 eligible licensee sales. Four equal accounts contribute $106,250 operator revenue each; the $6,000,000 sales denominator never appears as operator gross revenue."
+          "prompt": "Record the exact application number from the top left of the filing receipt, then pull the assignment record. List the current owner, any security interests, reel/frame bulk deals, name changes, and any unrecorded licenses you still need to rule out.",
+          "example": "Number copied from the receipt's top left before searching [Edel Patents — oOln2IDvhqE @ 00:01:47]. The assignee on the patent face was only current at issue, so the assignment record was pulled [USPTOvideo — np8RKbVMSLg @ 00:10:51]. One bank entry looked like a sale but was a security agreement, meaning loan collateral [Patents Demystified — zel57Kej5nY @ 00:06:15]."
         },
         {
-          "name": "Underwriting budget and decision timetable",
+          "name": "provisional_filing_plan",
           "type": "textarea",
-          "prompt": "Set a staged expenditure limit for title review, demand testing, valuation, and negotiation. Connect spending releases to evidence received, and distinguish the 30-day preparation sprint from the likely time needed to close a first license.",
-          "example": "The operator starts with $75,000 capital, within the $25,000 to $250,000 planning range. Initial underwriting receives $9,000: $4,000 title work, $2,500 customer testing, and $2,500 contract design. A further $6,000 requires two qualified licensees. The first-deal planning window remains 4 to 14 months, not the first sprint."
+          "prompt": "Plan your provisional filing for perceived ownership. Note your entity status and fee, confirm the draft discloses every implementation detail, set the same-day fee payment, and decide whether the licensee will be asked to fund the non-provisional application later.",
+          "example": "Micro entity, income under $150k, so the provisional costs $65 and buys perceived ownership [inventRightTV — CS31715RNQk @ 00:05:30]. Draft checked for every implementation detail and the fee paid the same day [Idea2PatentAI — ixENhsfAdEA @ 00:05:22]. Royalty offered on a 7/5/1 tier: seven if granted, five if pending, one if it never issues [inventRightTV — CS31715RNQk @ 00:11:10]."
         },
         {
-          "name": "Advance, revise, or reject decision",
+          "name": "pre_meeting_lockdown",
           "type": "textarea",
-          "prompt": "Record the decision, decisive evidence, unresolved issues, and next expenditure limit. Make rejection criteria observable so commercial enthusiasm cannot override defective title, absent purchasing authority, or an unauditable royalty calculation.",
-          "example": "Decision: revise before negotiation. Demand and budget are credible, but 12 catalog assets lack complete assignment schedules and the buyer cannot yet report affiliate sales. The operator excludes those assets, requests an affiliate export within ten business days, and caps additional diligence at $2,000 until both issues are resolved."
+          "prompt": "Before the first licensing meeting, write down your price, your annual minimums, your refusal to indemnify the manufacturer, and your refusal to permanently transfer title. Confirm a proprietary, protectable element is locked in before any pitch conversation begins.",
+          "example": "Price, annual minimums and no indemnity for the manufacturer, all fixed before the first meeting [John Ferrell, Esq. — Te8GX-Xx4mo @ 00:01:28]. Rights may be licensed, even exclusively, but never permanently transferred inside the license [John Ferrell, Esq. — Te8GX-Xx4mo @ 00:02:24]. Provisional on file, so the protection gate that stops deal conversations is cleared [The Sourcing Gals — 7aTTgSE0elA @ 00:24:41]."
         }
       ],
-      "completion_gate": "The deal owner signs a dated decision supported by a rights map, buyer evidence, solvency review, auditable royalty definition, and bounded diligence budget; unresolved rights are excluded explicitly."
+      "completion_gate": "Do not move to Worksheet 2 until a business path is chosen with the manufacturing gate documented, a provisional is filed or scheduled with the fee paid the same day, the assignment record is checked, and your price, minimums and no-indemnity position are written down."
     },
     {
       "worksheet_id": "ws-02",
       "number": 2,
-      "title": "Unit Economics, Defect Reserve, and Working-Capital Float",
-      "purpose": "Reconcile license-level economics to the three canonical annual scenarios without counting customer product sales as operator revenue. Model minimum guarantees, recoupment, collection timing, defect exposure, and liquidity separately so strong contracted royalties do not conceal a near-term cash shortage.",
-      "chapter_ref": "Q3, Q4",
+      "title": "Royalty Math and Licensee Outreach Tracker",
+      "purpose": "Turn royalty rates into dollar projections grounded in store counts, lock minimum guarantees and reversion rights, and run a disciplined outreach campaign to 20 to 30 vetted companies with a two-sentence pitch, a working prototype and persistent follow-up.",
+      "chapter_ref": "Q3-Q4",
       "instructions": [
-        "Copy the canonical revenue, margin, owner profit, and staffing figures into the scenario record before building supporting assumptions. Derive total annual costs by subtraction. Keep monthly fixed overhead distinct from the broader annual cost envelope.",
-        "Write the royalty formula using the agreement's eligible sales definition, permitted deductions, currency rules, and reporting periods. Model recoupable minimums as credits against the same earned royalties, never as additional revenue automatically stacked above them.",
-        "Prepare separate earned-revenue, invoicing, and cash schedules. A payment date alone does not establish revenue recognition. Document the accounting treatment of each license fee, access obligation, support service, and annual minimum with the accounting owner.",
-        "Build a managerial reserve for refunds, title defects, collection disputes, and reporting corrections using explicit probability and exposure assumptions. Identify whether each amount is already inside the scenario cost envelope to prevent duplicate deductions.",
-        "Stress collection delays and lower sales independently. Show opening cash, restricted amounts, overdue receivables, and the minimum operating buffer by month. Escalate when unrestricted cash cannot cover the next committed payments without assuming an unsigned deal closes."
+        "Chart the volume math at 3%, 4%, 5% and 6% before naming any rate to a company.",
+        "Treat about 5% as the anchor and justify every point above it with completed CAD, testing or tooling.",
+        "Vet each target for complaints, lawsuits, outside-submission processes and NDA fairness before the first connection request.",
+        "Log every touch with its date so follow-ups land every five days until six or seven touches are reached.",
+        "Keep the day job funded through the one-to-two-year gap between signature and meaningful royalty checks."
       ],
       "fields": [
         {
-          "name": "Canonical annual scenario reconciliation",
+          "name": "volume_math",
           "type": "textarea",
-          "prompt": "Enter all three canonical annual cases with revenue, net margin, owner net profit, total costs, and staffing. Use exact amounts so every supporting worksheet can reconcile to the same portfolio baseline.",
-          "example": "Conservative: $50,000 revenue, 25% margin, $12,500 owner net, $37,500 costs, 1 FT plus 3 C. Base: $425,000 revenue, 42.5% margin, $180,625 owner net, $244,375 costs, same staffing. Scaled: $800,000 revenue, 60% margin, $480,000 owner net, $320,000 costs, 2 FT plus 4 C."
+          "prompt": "Run the volume math before any negotiation. Multiply the licensee's store count by roughly one sale a week per store, then chart annual royalty income at 3%, 4%, 5% and 6%. Decide whether the volume justifies an exclusive.",
+          "example": "A licensee with 2,000 stores at one sale a week per store moves about 104,000 units a year. Charted at 3%, 4%, 5% and 6% of wholesale, the spread decides the deal; if the volume is not there, walk or give only a non-exclusive [inventRightTV — 5pNsi_2H-J4 @ 00:02:17]. Here the volume supports an exclusive."
         },
         {
-          "name": "License fees and royalty revenue bridge",
-          "type": "textarea",
-          "prompt": "Specify a nonoverlapping revenue composition for each scenario. State the royalty rate and eligible sales denominator, and identify the treatment of nonrecoupable fees separately from royalty advances and minimum guarantees.",
-          "example": "Conservative combines $20,000 fees with $30,000 royalties on $600,000 eligible sales. Base combines $125,000 fees with $300,000 royalties on $6,000,000 sales. Scaled combines $200,000 fees with $600,000 royalties on $12,000,000 sales. All three use 5%; modeled fees are nonrecoupable and recognized within the illustrated annual period."
+          "name": "royalty_rate_anchor",
+          "type": "text",
+          "prompt": "Set your royalty anchor using the most common rate practitioners report, then adjust it up or down. List the work you have already done, such as CAD, testing or tooling, and whether the product is a high-volume consumable.",
+          "example": "Anchor at about 5%, the most common average seen across years of student deals [inventRightTV — 5pNsi_2H-J4 @ 00:04:38]. CAD files and testing are complete, which supports asking for seven or eight. Not a high-volume consumable, so no drop toward three. Cross-check: 3 to 6% of gross sales is the typical patent range [UpCounsel — mtxmo_OkhSw @ 00:00:30]."
         },
         {
-          "name": "Minimum guarantee and recoupment waterfall",
+          "name": "percentage_timing",
           "type": "textarea",
-          "prompt": "Define the minimum payment, payment dates, recoupment pool, carryforward rules, and true-up sequence. Show why the guarantee protects a floor without being counted twice when earned royalties exceed that floor.",
-          "example": "Each Base licensee owes a $60,000 annual minimum against earned royalties, paid in four $15,000 installments. At $1,500,000 annual eligible sales, earned royalties equal $75,000. The licensee pays a further $15,000 true-up; royalty revenue is $75,000, not $135,000. Credits expire annually and cannot cross between licensees."
+          "prompt": "Describe when and how you will name a percentage. Note whether you will let the company gather manufacturer quotes and calculate its own profit first, or walk in with written walk-away terms, and what evidence will move the needle upward.",
+          "example": "No percentage in the opening call; the first question is simply whether they are interested [The Patent Professor — bO09tLv7ysM @ 00:00:38]. Once they have factory quotes, their own profit figure becomes leverage for a convincing argument that a bigger royalty is affordable [inventRightTV — G2JXLQrTZXI @ 00:29:45]. Walk-away floor written privately beforehand: 4% with minimums."
         },
         {
-          "name": "Quarterly royalty calculation and deductions",
+          "name": "minimum_guarantees_and_reversion",
           "type": "textarea",
-          "prompt": "Calculate one reporting period from gross transactions through eligible sales, earned royalties, minimum credits, and balance due. Give each deduction a contractual basis and preserve the supporting source-record reference.",
-          "example": "Across four Base accounts, quarterly gross sales are $1,575,000. Documented returns of $45,000 and separately stated sales tax of $30,000 produce $1,500,000 eligible sales. At 5%, earned royalties are $75,000. Quarterly minimum payments total $60,000, leaving $15,000 additional royalties due without subtracting unrelated marketing expenses."
+          "prompt": "Write the minimum guarantee and required sales figures you will demand, plus the trigger that returns the rights to you. Include termination language for a licensee that sits on the product instead of manufacturing it after signing.",
+          "example": "Minimum guarantees are locked so the rights come back if the licensee does not perform [inventRightTV — 5pNsi_2H-J4 @ 00:03:37]. A rotating label carried guarantees from $250,000 to $750,000 per year across roughly 20 years [inventRightTV — Se-TzTVqhfY @ 00:02:18]. Termination applies if the licensee shelves the product [J.D. Houvener / Bold Patents Law Firm — 2yLgmvphmBw @ 00:05:03]."
         },
         {
-          "name": "Annual costs and monthly overhead boundary",
+          "name": "improvements_and_enforcement",
           "type": "textarea",
-          "prompt": "Separate recurring fixed overhead from other annual operating costs. Reconcile both categories to canonical profit, and explain why total annual costs divided by twelve need not equal the stated fixed-overhead planning range.",
-          "example": "Conservative uses $24,000 fixed overhead plus $13,500 other costs. Base uses $96,000 plus $148,375. Scaled uses $180,000 plus $140,000. Fixed monthly overhead is therefore $2,000, $8,000, and $15,000. Other costs include deal-specific support, outside specialists, and forecast losses, without changing the canonical annual net figures."
+          "prompt": "Decide who owns improvements and version two, and who carries the cost of enforcing the patent. Note whether you would accept slightly lower royalties in exchange for placing enforcement on an exclusive licensee, and the reasoning behind that trade.",
+          "example": "Ownership of future versions stays with the inventor, so a manufacturer that improves the product during tooling cannot claim version two [J.D. Houvener / Bold Patents Law Firm — 2yLgmvphmBw @ 00:05:03]. Under the exclusive grant, a slightly lower royalty is traded for making the licensee carry the expensive job of enforcement [Jeff Schell — cfPpWt8cw64 @ 00:02:52]. Accepted trade: one point."
         },
         {
-          "name": "Scrub and title-defect reserve",
-          "type": "textarea",
-          "prompt": "Estimate the managerial reserve for defective rights, disputed deductions, refunds, and collection loss. Separate expected economic exposure from accounting entries, and show its position inside the existing annual scenario cost envelope.",
-          "example": "The Base plan allocates $12,000 within its $148,375 other-cost envelope: $6,000 for reporting adjustments, $4,000 for title-remediation work, and $2,000 for collection losses. This planning reserve is not an automatic ledger expense. Recognized provisions and actual costs follow the accounting policy; the model never deducts the reserve twice."
+          "name": "cash_runway",
+          "type": "text",
+          "prompt": "Estimate your personal cash runway from signature to meaningful royalties. Note how payments arrive, whether quarterly and on wholesale price, and how your day job or other income will fund the gap while sales build over time.",
+          "example": "Royalties figured as a percentage of the wholesale price and paid quarterly [Brian Fried - The Inventor Coach — UnGdjQb467o @ 00:01:58]. Budget one to two years from signature before checks really add up, with the day job covering the gap [inventRightTV — Se-TzTVqhfY @ 00:06:40]. Upside reference: one inventor's quarterly checks reached about $250,000 [inventRightTV — gxeuCPaGeHY @ 00:06:14]."
         },
         {
-          "name": "Opening capital and collection-delay float",
+          "name": "licensee_target_list",
           "type": "textarea",
-          "prompt": "Build a cash bridge using actual receipt dates and committed outflows rather than annual profit averages. Identify minimum liquidity, collection timing sensitivity, and which discretionary expenditures can pause without breaching contracts.",
-          "example": "Opening capital of $75,000 funds $25,000 setup work, leaving $50,000 unrestricted cash. Three months of $8,000 fixed overhead and a $10,000 specialist payment leave $16,000 before receipts. A further month without collection reduces cash to $8,000, below the chosen $16,000 two-month fixed-overhead buffer."
+          "prompt": "Build a fit-checked list of 20 to 30 potential licensees. For each, note its product lines and retailers, whether it accepts outside submissions, any complaints or lawsuits found by search, and how one-sided its NDA appears.",
+          "example": "Twenty-six companies listed, because one deal may take reaching 20 to 30 and most inventors never bother [inventRightTV — IMLF0c7wOQI @ 00:00:51]. Each name searched with complaints and lawsuits; three were dropped for having no outside-submission process or a heavily one-sided NDA [inventRightTV — MvycxV2ib_8 @ 00:01:17]. Priority goes to partners already holding multiple retail SKUs."
         },
         {
-          "name": "Revenue recognition and deferred cash",
+          "name": "outreach_cadence",
           "type": "textarea",
-          "prompt": "Identify the performance obligations and recognition policy for fees, royalties, support, and advance payments. Reconcile cash received with earned revenue and deferred balances, including the evidence supporting any point-in-time treatment.",
-          "example": "A licensee pays its $31,250 nonrecoupable fee and first $15,000 minimum together, producing $46,250 cash. The accounting owner documents when the specific license is available for use and whether continuing obligations alter recognition. The annual Base model assumes $31,250 fee revenue and $75,000 royalties, not immediate recognition of every receipt."
+          "prompt": "Map your outreach cadence across LinkedIn, email and phone. Record connections per company, companies covered per session, the spacing between follow-ups, and the touch count you will reach before treating any company as unresponsive or closed.",
+          "example": "About ten LinkedIn connections per company with no note attached, five companies per 30-minute session [inventRightTV — 1w_iTE7ZNso @ 00:20:54]. Follow-ups every five days, since success tends to arrive at six to seven touches while 48 percent never follow up [inventRightTV — 1w_iTE7ZNso @ 00:27:54]. Going dark triggers a concern-first message asking whether everything is okay."
         },
         {
-          "name": "Downside sensitivity and guarantee exposure",
+          "name": "two_sentence_pitch",
           "type": "textarea",
-          "prompt": "Model lower licensee sales and collection failure separately from the canonical cases. State which minimum obligations remain enforceable and collectible, and keep sensitivities clearly labeled rather than silently replacing published scenario figures.",
-          "example": "In a Base sensitivity, eligible sales fall 30% to $4,200,000, producing $210,000 percentage royalties. Collectible annual minimums of $240,000 establish the modeled royalty floor. With unchanged $125,000 fees and $244,375 costs, illustrative revenue becomes $365,000 and owner net $120,625; the canonical Base remains $425,000 and $180,625."
+          "prompt": "Draft your two-sentence pitch stating your IP status, what the product is, and its single most important benefit. Then list the cost and comparable price points you will have ready, since price is the leading reason products get rejected.",
+          "example": "Pitch covers IP status, product and benefit in two sentences [inventRightTV — 1w_iTE7ZNso @ 00:26:10]: provisional patent filed; a one-handed kitchen tool that cuts prep time. Manufacturing cost and three comparable shelf prices are on hand, because price is the number one reason products get kicked out [inventRightTV — 1w_iTE7ZNso @ 00:50:47]."
         },
         {
-          "name": "Capital allocation and payout discipline",
+          "name": "prototype_and_nda_readiness",
           "type": "textarea",
-          "prompt": "Set rules for owner distributions, reserve replenishment, and new asset acquisition. Tie available cash to collected receivables and committed obligations rather than treating forecast owner profit as immediately distributable money.",
-          "example": "The operator withholds distributions while unrestricted cash is below $16,000 or a material title claim remains unfunded. A proposed $20,000 catalog acquisition requires a separate cash forecast including specialist invoices and the next minimum-payment cycle. Base annual owner net stays $180,625, but payment timing follows actual liquidity and entity-level obligations."
+          "prompt": "Confirm your demonstration readiness and confidentiality approach. Note the works-like prototype you can show, the backup demo recording, when you will ask for an NDA, and how you will handle a company asking to see IP.",
+          "example": "A cheap frankenstein works-like prototype is within reach, plus a backup demo recording because prototypes break [inventRightTV — biVTpLl2T5U @ 00:09:53]. Companies need to see the product does what is claimed [inventRightTV — p3ODWhpvt3E @ 00:02:07]. An NDA is requested only when they ask for IP or a prototype, an easy ask [inventRightTV — 1w_iTE7ZNso @ 00:48:53]."
         }
       ],
-      "completion_gate": "The accounting owner verifies all three exact scenario reconciliations, the minimum-credit waterfall, reserve placement, and a dated cash forecast showing the lowest unrestricted balance and required response."
+      "completion_gate": "Do not move to Worksheet 3 until the volume chart is complete, minimum guarantees and termination triggers are drafted, at least 20 vetted companies are listed, your two-sentence pitch is final, and a works-like prototype plus a backup demo recording are ready."
     },
     {
       "worksheet_id": "ws-03",
       "number": 3,
-      "title": "Execution Ledger and Technical QA Pre-Flight",
-      "purpose": "Translate signed rights into controlled delivery, accurate royalty statements, and reproducible audit evidence. Define identifiers, source records, calculation versions, access controls, and exception handling before the first reporting cycle, with distinct technical checks for patent, brand, catalog, and dataset licenses.",
-      "chapter_ref": "Q7, Q8",
+      "title": "Term Sheet, Grant Matrix and Technology Transfer Planner",
+      "purpose": "Lock the commercial skeleton in a short term sheet, then define scope, money, milestones and exit triggers for the definitive license, and apply the same discipline to university and research licensing where filings, inventorship and equity decide the outcome.",
+      "chapter_ref": "Q5-Q6",
       "instructions": [
-        "Create persistent identifiers for the agreement, amendment, asset, licensee, reporting period, statement, and receipt. Use those identifiers across the contract repository and ledger so an auditor can trace one royalty amount without relying on filenames alone.",
-        "Convert every operative clause into a named obligation with a responsible person, due date, evidence requirement, and escalation path. Include delivery, marking, quality review, sublicensing, reporting, payment, renewal, and post-termination duties.",
-        "Run a pre-delivery rights and technical review against the executed asset schedule. Compare file hashes, territorial permissions, approved branding, dataset provenance, and access permissions. Quarantine mismatches instead of expanding the grant through an informal delivery.",
-        "Recompute the first royalty statement independently from transaction records. Test duplicates, missing identifiers, reversed invoices, currencies, deductions, and minimum-credit allocation. Preserve both the original submission and the corrected version with an explanation of every change.",
-        "Close the period only after ledger totals, invoices, receipts, and exception records reconcile. Retain the calculation version and reviewer evidence. An unresolved discrepancy must have an owner, bounded amount, next action, and contractual deadline."
+        "Mark each term-sheet clause as binding or non-binding; exclusivity and confidentiality are the usual binding pair.",
+        "Never hand over a right in the grant matrix that has no value attached to it.",
+        "Index any per-unit or foreign-currency royalty and write automatic reversion triggers before the deal closes.",
+        "For research inventions, file the provisional before any talk, poster or manuscript, including oral presentations.",
+        "Price equity as deferred compensation against high failure odds rather than as a substitute for diligence milestones."
       ],
       "fields": [
         {
-          "name": "Agreement and asset identifier register",
+          "name": "term_sheet_binding_clauses",
           "type": "textarea",
-          "prompt": "Define stable identifiers and relationships connecting each asset to its executed grant, amendments, licensee entity, and reporting obligations. Prevent informal project names from becoming the sole reference for enforceable rights.",
-          "example": "Agreement LIC-013-004 connects entity PUB-004 to catalog CAT-240, asset schedule version 3, and amendment AMD-001. The executed schedule contains 228 deliverable illustrations after excluding 12 incomplete-title items. Each illustration retains its own asset ID, checksum, creator agreement reference, permitted territory, and approved distribution format."
+          "prompt": "List the commercial skeleton of your short term sheet and mark which clauses will be binding. Separate non-binding business terms from binding exclusivity or no-shop, confidentiality, expenses and validity dates, and explain each choice in one line.",
+          "example": "Non-binding: royalty, territory, field and term. Binding: no-shop exclusivity and confidentiality, plus a validity date. The sheet exists to show how risk is shared, because many inventors lose out by not understanding deal mechanics [Trenner Law Firm - Patents & Trademarks — dSzZD5CnwK8 @ 00:03:52]. Payment uses a percentage of sales or a fixed fee per unit [UpCounsel — QaABLYw6maY @ 00:00:34]."
         },
         {
-          "name": "Clause-to-obligation execution ledger",
+          "name": "grant_of_rights_matrix",
           "type": "textarea",
-          "prompt": "Extract operational duties from the executed agreement and assign evidence-based completion criteria. Include contractual cure periods and notices so a missed internal reminder does not become an invented termination right.",
-          "example": "Clause 6.2 requires quarterly statements within 30 days after quarter-end; clause 6.3 requires payment within the same period. The royalty analyst prepares the reconciliation, the operator reviews it, and the ledger stores delivery evidence. Late-payment notices follow the negotiated ten-business-day cure mechanism and designated notice addresses."
+          "prompt": "Fill in the grant-of-rights matrix: exclusive, sole or non-exclusive; field of use; territory; and whether manufacture, use and sell rights are included. Flag any right you are handing over without a value attached to it before the definitive license is drafted.",
+          "example": "Exclusive in North American consumer retail, non-exclusive elsewhere, with manufacture and sell rights granted but no sublicensing. The grant language states the type outright, because discovering later that a license was non-exclusive leaves no way to stop a competitor [Ayers Law TV ~ Andrew M. Ayers, Esq. — lVFYoVaNnrs @ 00:04:35]. Pending-patent rights become active upon grant [UpCounsel — AaEw4SGbkk0 @ 00:02:27]."
         },
         {
-          "name": "Catalog and dataset delivery manifest",
+          "name": "royalty_and_hybrid_payment",
           "type": "textarea",
-          "prompt": "Specify deliverable versions, integrity checks, source permissions, access limitations, and acceptance tests. For datasets, include provenance, permitted transformations, prohibited uses, and the contractual treatment of updates and derived outputs.",
-          "example": "A dataset delivery contains 80,000 equipment observations in CSV files, a schema dictionary, and a SHA-256 manifest. Validation confirms row counts, permitted source licenses, and removal of direct personal identifiers. The grant allows internal predictive maintenance analysis but excludes resale and model training unless a signed amendment adds those uses."
+          "prompt": "Set the royalty rate and payment architecture for the definitive license. Note your anchor rate, any upfront fee, rate-adjustment provisions tied to sales performance or industry shifts, and how distribution reach compares in importance to the headline rate.",
+          "example": "Anchor at about 5% inside a 3 to 7% band [Licensing Basics — uBnJLlSWMLk @ 00:02:31], accepting less from a licensee with far wider distribution, since distribution matters more than the specific rate [Licensing Basics — uBnJLlSWMLk @ 00:01:40]. Hybrid structure: upfront fee plus ongoing royalty, with rate adjustment tied to sales performance [UpCounsel — cURFfKlt_Ek @ 00:01:35]."
         },
         {
-          "name": "Brand quality and patent-use pre-flight",
-          "type": "textarea",
-          "prompt": "List asset-specific checks beyond file delivery, including brand quality controls, approved specimens, patent claim scope, marking instructions, and responsibility for finished-product clearance outside the licensed rights.",
-          "example": "A brand license requires review of packaging artwork and two production samples before sale, with defects logged against the quality schedule. A separate patent license identifies covered claims and any applicable marking instructions under 35 U.S.C. § 287(a). Neither workflow treats an approved logo or patent grant as product-wide clearance."
+          "name": "currency_and_indexation",
+          "type": "text",
+          "prompt": "Identify every royalty that is fixed per unit or paid in a foreign currency, and write the indexation provision that protects it. Note the currency, the index you will reference, and how often the adjustment will be recalculated over the term.",
+          "example": "A fixed per-unit royalty paid in a foreign currency, which can deliver an exchange gain or lose badly, so proper indexation is written in [BaxterIPAttorneys — yl8L7tuwNuI @ 00:04:55]. The rule is simple: index every per-unit or foreign-currency royalty before signing [BaxterIPAttorneys — yl8L7tuwNuI @ 00:05:12]. Recalculation set annually against the agreed index."
         },
         {
-          "name": "Source data schema and ingestion controls",
+          "name": "performance_and_milestones",
           "type": "textarea",
-          "prompt": "Define required columns, accepted formats, identifier uniqueness, period rules, and rejection behavior. State how the operator preserves raw submissions while converting licensee-specific exports into a consistent royalty calculation dataset.",
-          "example": "The ingestion schema requires licensee_id, invoice_id, line_id, SKU, invoice_date, territory, currency, gross_amount, return_amount, and tax_amount. A composite licensee-invoice-line key rejects duplicates. Raw CSV files remain immutable in a restricted S3 bucket; normalized records enter a separate ledger with import timestamp, source checksum, and validation results."
+          "prompt": "Write the performance obligations attached to an exclusive grant. Name each milestone, its deadline, and whether missing it gives you an explicit right to terminate or merely triggers good-faith renegotiation, and decide which outcome you will accept.",
+          "example": "Milestones: first production run within twelve months, retail launch within eighteen. Missing either gives an explicit right to terminate, distinct from good-faith renegotiation [Bao Tran, Esq. | Patent Attorney — SkIAUEkenak @ 00:13:01]. A performance clause lets the licensor exit if the product is shelved [J.D. Houvener / Bold Patents Law Firm — -VhDIVEwvzI @ 00:00:58]."
         },
         {
-          "name": "Royalty calculation acceptance tests",
+          "name": "reversion_triggers",
           "type": "textarea",
-          "prompt": "Write test cases with expected outputs for deductions, returns, rates, rounding, currencies, and recoupment. Include failure cases that must stop statement generation rather than producing plausible but unreviewed royalty totals.",
-          "example": "A $10,000 sale with $500 permitted returns yields $9,500 eligible sales and $475 royalty at 5%. A duplicate invoice line must fail ingestion. An unapproved 8% marketing deduction must be rejected. Portfolio quarterly royalties of $75,000 less $60,000 minimum credits must produce exactly $15,000 additional royalties due."
+          "prompt": "List the automatic reversion triggers that return rights to you without negotiation. Cover bankruptcy, the licensee ceasing to operate, out-of-print or discontinued status, and decide whether a sale of the licensee company should also trigger reversion.",
+          "example": "Rights revert automatically on bankruptcy, on the licensee ceasing to operate, and on out-of-print status, all written before the deal closes [Boardgame Publisher — SOV77fL52Dw @ 00:04:37]. Sale of the licensee company is treated as a trigger too, since practitioners split on that point. Term length benchmark: one board game publisher asks for five-year terms."
         },
         {
-          "name": "Statement, receivable, and receipt reconciliation",
-          "type": "textarea",
-          "prompt": "Connect earned royalties to statements, invoices, credits, bank receipts, and outstanding balances. Distinguish a missing payment from a disputed calculation and preserve the cash-application rule for partial or combined remittances.",
-          "example": "Statement STM-Q1-004 records $18,750 earned royalties for one Base account. The ledger applies its $15,000 quarterly minimum receipt, leaving $3,750 due. A $3,000 remittance reduces the receivable to $750. The operator records the short payment without rewriting earned royalties or allocating another licensee's available credit."
+          "name": "know_how_definition",
+          "type": "text",
+          "prompt": "Document the know-how that travels with the license so it can be defined in the grant. List each item in summary bullet form, and note which items depend on a pending patent whose rights activate only upon grant.",
+          "example": "Know-how listed in summary bullets: assembly sequence, tooling tolerances, supplier specifications and test protocol, so it can actually be defined in the grant [BaxterIPAttorneys — yl8L7tuwNuI @ 00:02:40]. The pending-patent clause makes those rights active upon grant, with filing completed before any details were disclosed [UpCounsel — AaEw4SGbkk0 @ 00:02:27]. Each bullet is cross-referenced to the grant schedule."
         },
         {
-          "name": "Royalty audit sampling and discrepancy treatment",
+          "name": "equity_vs_cash",
           "type": "textarea",
-          "prompt": "Define the population, sampling method, escalation threshold, and evidence required to expand testing. Specify how contractual audit-cost shifting, interest, and corrections are calculated without assuming every discrepancy proves intentional concealment.",
-          "example": "An audit reconciles the full SKU list and samples 40 invoices across territories and channels. Testing finds $200,000 eligible sales omitted from a separate audit-period submission, implying $10,000 underpaid royalties at 5%. The auditor expands testing, evaluates the contract's cost-shifting threshold, and records any recovery outside the unchanged canonical baseline."
+          "prompt": "If the licensee is a cash-poor startup, decide whether to take equity in place of upfront cash. Record the stake range you will accept, the failure odds you are pricing in, and any liquidity-fee offset you will request.",
+          "example": "Equity of 2 to 5% in place of upfront cash, priced against a 90% chance it ends up worth nothing [Bao Tran, Esq. | Patent Attorney — SkIAUEkenak @ 00:09:28]. The university's liquidity fee is to be offset by its equity payout, and on sublicenses the spread over the university royalty stays with the startup [Osage University Partners — Q3YzwCiT2M4 @ 00:48:14]."
         },
         {
-          "name": "Exception ownership and correction history",
+          "name": "publication_and_inventorship_gate",
           "type": "textarea",
-          "prompt": "Record the issue, affected amount, source evidence, owner, deadline, and resolution authority. Preserve superseded statements and calculation versions so a correction remains explainable during a later audit or portfolio sale.",
-          "example": "Exception EX-017 concerns $45,000 returns deducted without credit-memo references. The analyst requests support within five business days and freezes only the disputed adjustment. Version 1 remains archived; version 2 records $30,000 supported returns and a $750 royalty increase on the unsupported $15,000 balance at 5%."
+          "prompt": "Before any talk, poster or manuscript goes public, confirm a provisional is on file. Record who selected the key compounds or designs, the agreed inventor contribution percentages, and every NDA, MOU and MTA signed with collaborating institutions.",
+          "example": "Provisional filed before the conference talk, because outside the US the invention is unpatentable the day it is published and oral presentations count [Salk Institute — 3iEjObMZnZo @ 00:49:36]. Compound selection was run in-house, since whoever picks the compounds is the inventor [Salk Institute — 3iEjObMZnZo @ 00:40:21]. Contribution splits and an MTA were signed before cross-institution work [USPTOvideo — hwcNfSr-ia0 @ 00:46:04]."
         },
         {
-          "name": "Termination, access withdrawal, and retention",
+          "name": "tech_transfer_economics",
           "type": "textarea",
-          "prompt": "Translate expiration and termination provisions into technical actions while preserving required evidence. Address credentials, delivered copies, sell-off rights, final statements, retained backups, and the boundaries of any continuing access permission.",
-          "example": "After the contractual cure period expires, the operator sends the required notice and disables future dataset downloads on the effective termination date. A negotiated 60-day inventory sell-off remains reportable and royalty-bearing. The licensee certifies deletion of prohibited working copies while the operator retains contracts and accounting evidence under the seven-year records schedule."
+          "prompt": "Model the realistic income from a university-licensed invention. Note the provisional and non-provisional costs, the admin fee and inventor share in the revenue waterfall, the royalty base definition, and the lottery-like odds that any single invention pays off.",
+          "example": "Waterfall: a 15% admin fee and patent-cost recovery come off first, then inventors receive one third [Technology Licensing Office (TLO) — 2ADE7tP4bYM @ 00:10:33]. Odds: 0.1% of disclosed inventions ever reach $1M cumulative [OSU Center for Clinical and Translational Science — HKAvhkDKxNQ @ 00:27:16]. Royalty base defined to capture trademark and brand extensions [USPTOvideo — AcpNKjCol4s @ 00:33:37]."
         }
       ],
-      "completion_gate": "A reviewer reproduces one complete royalty statement from preserved source records, confirms delivery against the executed grant, and signs the exception ledger with every material discrepancy resolved or bounded."
+      "completion_gate": "This worksheet is complete when the term sheet marks binding clauses, the grant matrix states exclusivity type, field, territory and rights, every royalty is indexed where needed, termination and reversion triggers are written, and any research invention has a provisional on file before public disclosure."
     },
     {
       "worksheet_id": "ws-04",
       "number": 4,
-      "title": "Statutory, Contract, Licensing, and Outreach Audit",
-      "purpose": "Identify the concrete statutory and contractual requirements governing the proposed asset and sales motion. Link each requirement to documents, operating controls, and accountable reviewers, while separating ownership, permitted use, privacy, competition, and outreach questions that cannot be resolved by one broad warranty.",
-      "chapter_ref": "Q5, Q9",
+      "title": "Brand Licensing Program and Portfolio Monetization Planner",
+      "purpose": "Turn a brand or patent portfolio into licensing income by fixing the royalty position, the minimum guarantee math, the scope of licensed products and the monetization route before any licensor, licensee, broker or funder conversation begins.",
+      "chapter_ref": "Q7-Q8",
       "instructions": [
-        "Classify each licensed component before reviewing the agreement. A product package can contain patents, marks, copyrighted files, confidential know-how, and personal data simultaneously. Create separate evidence requirements instead of assuming one registration establishes rights in every component.",
-        "Check ownership documents against the precise grant and applicable statutory requirements. Record jurisdiction, effective dates, signatures, recording status, and retained interests. Route material gaps to the assigned specialist before promising exclusivity or unrestricted sublicensing.",
-        "Review royalty definitions alongside competition, territorial, and duration provisions. Flag arrangements involving price coordination, market allocation, coercive bundles, or patent-expiration issues for fact-specific review. Do not treat a standard template as a substantive assessment.",
-        "Map data flows and outreach channels separately from intellectual-property ownership. Establish processing purposes, recipient restrictions, suppression handling, and evidence retention. A license to use a database does not automatically authorize every personal-data use or marketing contact.",
-        "Close each audit item with a document reference, control owner, and retest date. Track contractual deviations in the obligation ledger so negotiated protections survive handoff to the royalty analyst, delivery contractor, and commercial relationship owner."
+        "Gather your licensee's own year-one sales projection, your product cost, and the retail price of any unbranded equivalent before you begin.",
+        "Complete the brand licensing fields first, because royalty rate, guarantee and scope decisions shape every later negotiation.",
+        "Show every calculation in full, including rates, projections and payment installments, so a partner or advisor can check your numbers.",
+        "For portfolio fields, list each patent separately and mark any patent lacking evidence of use as excluded from the package.",
+        "Do not contact licensors, brokers, funders or suspected infringers until every field is complete and reviewed against the completion gate."
       ],
       "fields": [
         {
-          "name": "Patent ownership and territorial coverage",
-          "type": "textarea",
-          "prompt": "Identify issued claims, jurisdictions, expiration assumptions, maintenance status, assignments, and prior licenses. Connect the proposed grant to actual patent rights rather than application titles or marketing descriptions of worldwide protection.",
-          "example": "The patent file includes signed assignments under 35 U.S.C. § 261, USPTO recording references, maintenance-fee records, and claim charts for two issued United States patents. A pending European application is labeled separately. The contract grants only listed rights and requires updates if claims lapse, expire, or materially change during the term."
+          "name": "royalty_band_position",
+          "type": "text",
+          "prompt": "State the royalty rate you will propose or accept for your brand license, then place it inside the operating band practitioners quote, naming the category comparison you used and explaining why your property sits low, middle, or high in that range.",
+          "example": "Apparel license proposed at 10% of wholesale. Daymond John's working band runs 2% to 15%, with 8% as the normal number and 10% or 12% common [Daymond John — knoob7eUS6Y @ 00:10:34]. Our character is not a hot entertainment property, which would command 12% to 16%, so we sit in the middle rather than the top of the band."
         },
         {
-          "name": "Patent expiration, exhaustion, and marking",
+          "name": "minimum_guarantee_math",
           "type": "textarea",
-          "prompt": "Review royalty duration, authorized sales, downstream restrictions, and applicable marking duties. Separate current patent use from deferred payment, know-how rights, and other consideration when constructing a royalty schedule extending beyond patent expiration.",
-          "example": "A patent expires in year three of a five-year commercial relationship. The draft separates patent consideration from continuing know-how support and reviews Brulotte v. Thys and Kimble v. Marvel before setting later payments. Product marking is assessed under 35 U.S.C. § 287(a); authorized-sale effects are reviewed under Impression Products v. Lexmark."
+          "prompt": "Write out the licensee's year-one sales projection, multiply it by the royalty rate to get projected royalties, then set the minimum guarantee and the quarterly payment schedule, showing each calculation step so the numbers can be checked against the half-of-projection rule.",
+          "example": "Licensee projects $1,000,000 in year-one sales at a 12% royalty, which yields $120,000 projected. Following Stu Seltzer's rule, the guarantee is half of the licensee's own projection [SeltzerLicensingGrp — qx___lyJ5yQ @ 00:04:30], so $60,000, paid as four $15,000 quarterly installments with the first due on contract signing [SeltzerLicensingGrp — MGH55iIT-A0 @ 00:04:03]."
         },
         {
-          "name": "Copyright transfers and catalog permissions",
+          "name": "price_or_volume_lift_test",
           "type": "textarea",
-          "prompt": "Verify signed transfers, work-made-for-hire assumptions, underlying components, and reserved rights for catalog assets. Review termination interests and distinguish copyright in selection or arrangement from rights in individual facts or third-party material.",
-          "example": "For 240 illustrations, the operator checks written transfers under 17 U.S.C. § 204(a) and evaluates work-made-for-hire claims under § 101. Older author grants receive termination review under §§ 203 and 304 where applicable. Stock photographs embedded in 18 files require separate redistribution permission before inclusion in the deliverable schedule."
+          "prompt": "Describe how the licensed brand will raise either the selling price or the unit volume of your product compared with an unbranded version, and give the before-and-after numbers, because a royalty paid on the same units at the same price is pure cost.",
+          "example": "Unbranded jeans retail at $100. With the licensed mark they must clear at least $115, mirroring the jeans test Daymond John applies before taking any license [Daymond John — knoob7eUS6Y @ 00:08:34]. If buyers will not pay the premium or order more units, the royalty simply eats margin on the same pairs, so we walk."
         },
         {
-          "name": "Trademark ownership and quality controls",
-          "type": "textarea",
-          "prompt": "Record mark ownership, covered goods, territorial registrations, quality standards, inspection rights, and corrective actions. Distinguish a license from an assignment and ensure practical oversight supports the continuing significance of the licensed mark.",
-          "example": "The brand schedule identifies registered marks, approved refrigeration products, and packaging specimens. Quality reviews occur before launch and quarterly thereafter, with documented correction rights. The review considers abandonment principles in 15 U.S.C. § 1127; any proposed ownership transfer separately addresses the goodwill requirements of 15 U.S.C. § 1060."
+          "name": "licensor_tier_selection",
+          "type": "text",
+          "prompt": "Name the licensor tier you are targeting, a major studio or a smaller niche property, and explain how its minimum guarantee and paperwork burden fit your brand's current size, cash position, and ability to absorb a guarantee that sales might not cover.",
+          "example": "We are a small loungewear label, so we will approach niche licensors in their early stages, which often carry very low or zero guarantees [Davie Fogarty — 7U8vYps8fMk @ 00:07:39]. The Oodie's first Warner Brothers drop sold over $500,000 in weeks [Davie Fogarty — 7U8vYps8fMk @ 00:01:35], but we cannot yet carry studio-sized guarantees."
         },
         {
-          "name": "Dataset rights, privacy, and purpose limits",
+          "name": "licensed_products_definition",
           "type": "textarea",
-          "prompt": "Separate source permissions, confidentiality, copyright, database restrictions, and personal-data obligations. Record processing purposes and recipient roles, and avoid treating a purchased collection of facts as unrestricted ownership of every downstream use.",
-          "example": "A maintenance dataset contains 80,000 observations plus technician identifiers. The operator removes unnecessary identifiers and documents source permissions. Review addresses 17 U.S.C. §§ 102(b) and 103, applicable California Civil Code § 1798.100 duties, and GDPR Articles 6, 28, and 44 when relevant. Model-training rights require an express purpose assessment and contractual grant."
+          "prompt": "Draft the licensed-products definition clause in plain language, listing every product category included and stating that anything not specifically identified is excluded, so neither party can later argue that a neighboring category falls inside the grant or outside the royalty base.",
+          "example": "Licensed products are limited to cotton t-shirts, hooded sweatshirts and fleece blankets bearing the approved artwork, and anything not specifically identified is excluded. That wording prevents the scope fight Mayer Brown describes, where parties battled over whether a beer definition included hard seltzers because they were not malt based [Mayer Brown — yRNAVrfCNIE @ 00:58:54]."
         },
         {
-          "name": "Trade-secret handling and disclosure controls",
-          "type": "textarea",
-          "prompt": "Identify confidential know-how that derives value from secrecy and define reasonable protection measures. Specify recipient access, onward disclosure, return duties, incident notice, and evidence proving the information was treated as confidential.",
-          "example": "A calibration recipe is distributed only to three named engineers through role-restricted access. The agreement bars unauthorized disclosure and requires return or deletion after termination. The operator logs access and labels the technical package confidential, supporting the reasonable-measures element of 18 U.S.C. § 1839(3) rather than relying on secrecy language alone."
+          "name": "pre_leak_lockdown",
+          "type": "text",
+          "prompt": "List every domain name, social media handle, and non-disclosure agreement you will secure before any licensing conversation becomes public, with the person responsible and the date each item will be locked, so a leak cannot hold your launch hostage.",
+          "example": "Before the first licensor call, our operations lead registers the campaign domain plus two spelling variants, claims matching handles on every social platform, and collects signed NDAs from the design agency. Todd Davitz saw a leaked campaign domain bought and the project held hostage on a Friday before a Monday execution [Mayer Brown — yRNAVrfCNIE @ 00:12:33]."
         },
         {
-          "name": "Competition constraints and exclusivity review",
+          "name": "evidence_of_use_claim_chart",
           "type": "textarea",
-          "prompt": "Assess commercial context for exclusivity, territorial limits, tying, grantbacks, resale restrictions, and competitor coordination. Record market facts and rationale so a specialist can evaluate the actual arrangement rather than a clause in isolation.",
-          "example": "A proposed exclusive refrigeration-field license runs 24 months and depends on a $60,000 annual minimum. The operator documents substitute suppliers, market position, and investment rationale. Review addresses Sherman Act §§ 1 and 2, 15 U.S.C. §§ 1 and 2, and applicable Clayton Act § 3 issues under 15 U.S.C. § 14."
+          "prompt": "For each patent you plan to sell or license, identify the company you believe is practicing it, the product involved, and whether a claim chart already maps every claim element to that product, since portfolios without evidence of use do not sell.",
+          "example": "Patent one maps to a competitor's wireless charging dock; the claim chart covers all independent claim elements and is complete. Patent two has no identified user yet, so it stays out of the package. Clause 8 warns that without a claim chart showing someone practicing the patent, the portfolio will not sell [Clause 8 — t98CwzofUz0 @ 00:34:27]."
         },
         {
-          "name": "Royalty definitions and dispute mechanics",
+          "name": "funder_screen_checklist",
           "type": "textarea",
-          "prompt": "Audit the contract's economic language for inconsistent definitions, ambiguous deductions, affiliate leakage, and inaccessible evidence. Specify reporting deadlines, audit procedures, correction mechanics, remedies, and notice requirements in executable operational terms.",
-          "example": "Eligible sales exclude documented returns and separately stated sales tax, but not internal commissions. Affiliate transfers use the expressly defined valuation method. Statements and payments are due 30 days after quarter-end. The agreement provides annual inspection on 20 business days' notice and shifts reasonable audit costs when underpayment exceeds 5% of royalties due."
+          "prompt": "Score your portfolio against the litigation funder screen by recording damages potential, likely venue, marking status, prior licenses, and any grant interests, and note which item is weakest, because funders review these before they ever examine technical merit.",
+          "example": "Damages estimate exceeds $100M across three patent families; venue is favorable; products were marked; one prior license exists; no grant interests apply. Weakest item is the prior license. Funders pass on 19 of every 20 portfolios and check these points before technical merit [IPWatchdog, Inc. — pyi_x9MFGjs @ 00:23:42], so we resolve the license question first."
         },
         {
-          "name": "Commercial outreach and suppression controls",
+          "name": "monetization_route_and_split",
           "type": "textarea",
-          "prompt": "Document the actual email, telephone, and messaging channels used for licensee acquisition. Connect applicable requirements to sender identity, address information, opt-out processing, calling permissions, and records showing suppression before subsequent campaigns.",
-          "example": "The initial campaign uses individually reviewed commercial email to 40 business contacts. Templates include accurate routing information, required advertising identification, a physical postal address, and functioning opt-out instructions under 15 U.S.C. § 7704. The operator honors opt-outs within ten business days; automated calls and texts require separate 47 U.S.C. § 227 review."
+          "prompt": "Choose your monetization route, a broker-led sale, a funded enforcement campaign, or a direct license, and write down the expected cost share, commission or proceeds split, and the timeline you are budgeting from launch to closing, along with who controls outreach to targets.",
+          "example": "Broker-led sale chosen. Commission budgeted at 20%, inside the 10-30% range, with closing expected in 6 to 18 months [UpCounsel — xRRc9i7j5A8 @ 00:04:11]. If we instead pursue funded enforcement, the opening split would be 50% owner, 30% funder and 20% law firm [IPWatchdog, Inc. — pyi_x9MFGjs @ 00:07:24]. The broker handles all target contact."
         },
         {
-          "name": "Contract authority, jurisdiction, and exceptions",
-          "type": "textarea",
-          "prompt": "Verify signatory authority, governing law, dispute forum, notice addresses, assignment restrictions, and cross-border payment requirements. Capture deviations from the approved commercial position with their operational consequence and designated reviewer.",
-          "example": "The subsidiary's procurement manager provides delegated signing authority, while the parent guarantee receives a separate authorized signature. The contract specifies governing law, forum, and notice delivery methods. A negotiated assignment restriction requires consent for an asset sale; the exit ledger flags that dependency before the operator markets the portfolio."
+          "name": "outreach_timing_and_infringer_contact",
+          "type": "text",
+          "prompt": "Set the date your package will be ready, the budget-cycle window you will aim outreach at, and the short list of entities you will contact, and confirm that nobody on your team will approach suspected infringers directly before the package is complete.",
+          "example": "Package ready March 1; outreach lands before target budgets close, limited to the four entities that matter for our case [International Trade Council — _bueYwQ3iHE @ 00:27:44]. No early contact, since approaching too soon risks silence on a second try [International Trade Council — _bueYwQ3iHE @ 00:46:06], and our broker alone handles suspected infringers."
         }
       ],
-      "completion_gate": "The assigned reviewers close the rights, privacy, competition, contract, and outreach checks with cited evidence; each remaining restriction is reflected in the grant, delivery controls, and obligation ledger."
+      "completion_gate": "Done when the royalty rate sits inside a quoted band, the minimum guarantee is no more than half of the licensee's year-one royalty projection, the licensed-products definition excludes anything not identified, domains and handles are secured, and every patent offered has a claim chart showing use."
     },
     {
       "worksheet_id": "ws-05",
       "number": 5,
-      "title": "Automation, Growth Flywheel, and Risk Fallback Tracker",
-      "purpose": "Automate repetitive royalty administration without surrendering control of contractual interpretation, cash application, or sensitive data. Build a narrow outbound engine around verified buyer needs, then define observable failure signals and manual fallback procedures for reporting, renewals, delivery, and disputes.",
-      "chapter_ref": "Q6, Q10",
+      "title": "Permissions, Infringement Response and Royalty Audit Control Sheet",
+      "purpose": "Confirm that every asset in your licensing program is cleared in writing, prepare a disciplined response to infringement on either side, and build the audit rights and statement checks that catch underreported royalties before recovery windows close.",
+      "chapter_ref": "Q9-Q10",
       "instructions": [
-        "Start with the three named automation levers: royalty reporting, license renewal alerts, and contract obligation tracking. Assign each workflow a source of truth, service owner, reconciliation test, and manual procedure before connecting production data.",
-        "Separate deterministic calculations from interpretive decisions. Software may validate schemas, calculate approved rates, and schedule reminders. A responsible person resolves ambiguous grant language, disputed deductions, changes in ownership, and decisions affecting contractual rights.",
-        "Build outbound lists from the asset's demonstrated commercial use rather than broad industry labels. Track a specific buyer problem, a plausible budget owner, and a reporting-capability hypothesis for every account before initiating contact.",
-        "Instrument workflow failures and commercial conversion separately. A successful file import is not a collected royalty, and a positive reply is not an executed license. Use stage definitions tied to documents, meetings, signatures, and cash.",
-        "Test fallback procedures with a missed report, duplicate event, revoked credential, and disputed renewal date. Confirm that the operator can reconstruct the current state and meet contractual deadlines without relying on the automation vendor's availability."
+        "Pull every contract, license receipt and permission email tied to the assets and products covered by this sheet.",
+        "Treat any asset without written permission or a purchased license as uncleared until you can attach proof.",
+        "Identify the true seller and clear every independent claim before sending a demand, filing a takedown or launching a redesign.",
+        "Compare each royalty statement against the contract line by line, logging flagged lines with the date and the licensee's explanation.",
+        "Rule out plain underperformance in writing before you allege underpayment or commission a formal audit."
       ],
       "fields": [
         {
-          "name": "Systems map and authoritative records",
+          "name": "written_permission_inventory",
           "type": "textarea",
-          "prompt": "Assign authoritative systems for contracts, assets, obligations, royalty calculations, receivables, and prospect stages. Document integration boundaries and prevent multiple applications from silently maintaining conflicting versions of the same commercial term.",
-          "example": "Executed agreements reside in restricted SharePoint storage; Airtable tracks obligations; QuickBooks records invoices and receipts; HubSpot tracks prospects. A versioned royalty ledger stores approved formulas. Contract amendments update the obligation register through a documented review, not by scraping a sales note or trusting the latest spreadsheet attachment."
+          "prompt": "List every image, music clip, figure, or other third-party asset your licensed product or campaign uses, and beside each one record the written permission or purchased license that covers it, the source, and the scope of use allowed.",
+          "example": "Hero photo: purchased license, editorial and web use only. Journal figure: cleared through ScienceDirect's get rights and content flow at a zero-fee quote, as Barbara Aboagye demonstrates. Background texture: no watermark, but no license either, so it is removed, because a missing watermark does not mean free [Matthew Anderson — manKMR61ho0 @ 00:10:02]."
         },
         {
-          "name": "Royalty reporting automation specification",
-          "type": "textarea",
-          "prompt": "Define ingestion triggers, schema validation, calculation versions, review queues, and statement release conditions. Show how the workflow handles repeated submissions and fails safely when required source data or contractual parameters are absent.",
-          "example": "A quarterly upload triggers CSV validation and computes royalties using formula version ROY-005. The event key combines licensee, period, and source checksum. Repeated uploads do not create duplicate invoices. Missing territory or currency values place the report in an exception queue; only reviewed statements synchronize with QuickBooks."
+          "name": "commissioned_work_ownership",
+          "type": "text",
+          "prompt": "For each commissioned photograph or creative asset, state who holds the copyright under the engagement terms, what uses you as the client are actually allowed, and whether passing the files to a licensee or third party requires a separate written license.",
+          "example": "Product shoot by a freelance photographer: the photographer keeps copyright, as happens in '90 some percent' of client jobs according to Matthew Anderson [Matthew Anderson — manKMR61ho0 @ 00:02:57]. We may use the images on our site and packaging, but sharing them with our apparel licensee, contests or editorials needs a separate written license from the photographer."
         },
         {
-          "name": "Renewal alerts and notice verification",
+          "name": "registration_timing_plan",
           "type": "textarea",
-          "prompt": "Translate contract-specific renewal and termination notice periods into reminders with confirmed recipients and escalation. Distinguish internal planning alerts from legally effective notices and preserve proof of required delivery.",
-          "example": "A license expires December 31 and requires nonrenewal notice at least 90 days earlier. The system creates internal reviews 150, 120, and 105 days before expiry. The operator verifies the contractual counting rule and notice method, then records delivery evidence; an email reminder alone never constitutes the counterparty notice."
+          "prompt": "Map your copyright registration schedule for the creative works you license, showing batch sizes, filing cost, expected turnaround, and how each filing lands before client delivery and inside the three-month window after publication to preserve statutory damages and attorney fees.",
+          "example": "Each month we batch about 1,500 images into one $35 registration with roughly six-week turnaround, using 600-pixel JPEG deposits [B&H Photo Video Pro Audio — 74bQUodJbWY @ 01:16:43]. Registration is filed before files reach the client and within three months of publication [B&H Photo Video Pro Audio — 74bQUodJbWY @ 01:20:24], unlocking $750 to $150,000 per work."
         },
         {
-          "name": "Obligation tracking and change control",
-          "type": "textarea",
-          "prompt": "Specify how new agreements and amendments create or change operational tasks. Require a comparison between the executed language and stored parameters before automated rates, deadlines, or access permissions change.",
-          "example": "Amendment AMD-002 expands territory to Canada on July 1 but leaves the 5% rate unchanged. A reviewer compares the signed document with the proposed parameter update. The ledger preserves earlier territory rules for historical periods and creates new delivery and reporting tasks only from the effective date."
+          "name": "true_seller_identification",
+          "type": "text",
+          "prompt": "Before sending any takedown or demand, record how you identified the true seller behind an unauthorized listing, naming which platform records, corporate searches, domain name lookups, or investigator findings you relied on and what other platforms that seller also uses.",
+          "example": "The marketplace disclosed the seller's registered business name, which a corporate search tied to a foreign trading company; a domain lookup linked it to two more storefronts. Torys LLP calls the platform the best source for the true seller [Torys LLP — ijF0IyvjXXg @ 00:06:21] and warns that cross-border enforcement can become whack-a-mole [Torys LLP — ijF0IyvjXXg @ 00:02:09]."
         },
         {
-          "name": "Ideal licensee list and outbound proposition",
+          "name": "independent_claim_clearance",
           "type": "textarea",
-          "prompt": "Define a tightly bounded buyer segment, observable qualification signals, contact roles, and a proposition supported by asset evidence. Set a manageable outreach batch size that permits individual review and suppression checks.",
-          "example": "The first list contains 40 commercial refrigeration publishers and manufacturers with active manual-production teams. Each account record names a product-documentation leader and procurement contact. The message offers a 12-image evaluation addressing maintenance-diagram backlog, rather than a generic portfolio pitch. Suppressed contacts are excluded before each send."
+          "prompt": "For any patent that could read on your licensed product, list every independent claim, including method claims, and explain element by element whether your product contains each one, so you can show the design-around clears the dependent claims as well.",
+          "example": "The competitor patent has three independent claims: two apparatus and one method. Our redesigned clip omits the spring element in both apparatus claims and skips the heating step in the method claim. Patent Insanity stresses clearing every independent claim [Patent Insanity — Jwz-iMwUtCU @ 00:07:47] and cautions that courts may differ on equivalence [Patent Insanity — Jwz-iMwUtCU @ 00:04:53]."
         },
         {
-          "name": "Growth stages and conversion economics",
+          "name": "infringement_response_protocol",
           "type": "textarea",
-          "prompt": "Define measurable pipeline stages and conversion assumptions. Calculate acquisition cost using attributable spend, and keep expected licenses separate from signed contracts and recognized revenue when interpreting campaign results.",
-          "example": "A planning funnel uses 40 researched accounts, 12 replies, six qualified meetings, three paid evaluations, and one eventual license. With $4,000 attributable research and selling costs, modeled acquisition cost is $4,000 per signed license. Until that signature occurs, the figure remains a hypothesis rather than a realized conversion metric."
+          "prompt": "Write the step-by-step response your team will follow if you receive an infringement claim or discover one, covering who reviews it, how quickly you respond, what you will not do, and how willfulness exposure shapes your settlement position.",
+          "example": "If an image claim arrives, counsel reviews it within two business days; we neither ignore it nor get defensive, since pulling the image down does not cure the infringement and costs can reach tens of thousands [Matthew Anderson — manKMR61ho0 @ 00:11:29]. On patent claims, willful infringement can bring up to three times damages [LawShelf — WtxlYb996kI @ 00:14:33]."
         },
         {
-          "name": "Credential scope and data minimization",
+          "name": "audit_clause_terms",
           "type": "textarea",
-          "prompt": "Limit automation identities to the records and actions needed for their function. Specify secret storage, rotation, logging, export restrictions, and separation between prospect information and licensee transaction data.",
-          "example": "The reporting service can read its designated S3 prefix and write draft ledger records, but cannot delete source files or issue refunds. Credentials live in AWS Secrets Manager with access logging. HubSpot receives account status and renewal dates, not transaction-level sales exports or dataset source records."
+          "prompt": "Draft the audit clause terms you will insist on, including the look-back window, the underpayment threshold that shifts audit cost to the licensee, the specific source data the licensee must produce, and a right to review the draft report.",
+          "example": "Licensee reimburses audit cost when underpayment reaches 5% or more [Authors Guild — NrMiKZwGTD4 @ 00:57:10]. No short look-back cap; a client who accepted two years against an 11-year statute lost most of the window. Source data is named as monthly sales ledgers by SKU, never 'all books and records', and we review any draft report before it goes final."
         },
         {
-          "name": "Underreporting and dispute fallback",
+          "name": "statement_line_check",
           "type": "textarea",
-          "prompt": "Define signals suggesting incomplete reporting and the bounded response to each signal. Separate anomaly detection from accusations, and preserve contractual rights while investigating source records and calculation differences.",
-          "example": "A 35% drop in reported royalties alongside unchanged shipment volumes triggers analyst review. The operator requests SKU-level reconciliation and affiliate-transfer records within the contract's response period. Undisputed amounts remain collectible. If the variance persists, the operator invokes the agreed audit process instead of automatically disabling all licensed operations."
+          "prompt": "Describe how each royalty statement will be checked line by line against the granted territory, the approved product list, and the contracted rate for each sales channel before you accept the report and raise an invoice to the licensee.",
+          "example": "Our contract sets ten percent for wholesale and twelve for online [Flowhaven — M69XC4rxxQc @ 00:01:48]. Each quarterly report is matched to those rates, the territory list and approved SKUs. Flowhaven's walkthrough flags three lines, an ungranted territory, an unapproved product and a mismatched rate [Flowhaven — HkDV-RELNXc @ 00:03:10], and we invoice only after resolving each flag."
         },
         {
-          "name": "Outage recovery and manual operating packet",
-          "type": "textarea",
-          "prompt": "Prepare a manual procedure for vendor outages, failed integrations, or corrupted imports. List available backups, responsible operators, reconciliation steps, and tests proving restored automation will not duplicate prior actions.",
-          "example": "The weekly recovery packet contains current contracts, obligation exports, open receivables, and approved calculation templates. During a 48-hour outage, the analyst prepares statements offline and records unique statement IDs. After restoration, a comparison of IDs and bank receipts prevents duplicate invoices and duplicate minimum-credit applications."
+          "name": "red_flag_watchlist",
+          "type": "text",
+          "prompt": "List the red flags you will monitor across every licensee, such as late statements, unexplained adjustments, spreadsheet-built reports, new statement formats, staff turnover, or mergers, and state which combination of flags will trigger escalation from desktop review to a formal audit.",
+          "example": "Watchlist: unexplained adjustments, chronically late statements, Excel-made statements, new formats or software, new royalty staff and mergers [Authors Guild — NrMiKZwGTD4 @ 00:08:28]. Two flags in one year move a licensee from desktop review to formal audit, a step worth taking since recoveries reportedly run 5 to 20 times audit cost [Uncover Fraud — 9Fku-QlhyHc @ 00:05:08]."
         },
         {
-          "name": "Automation value and escalation thresholds",
+          "name": "underperformance_vs_underpayment",
           "type": "textarea",
-          "prompt": "Measure saved processing time, exception rates, statement accuracy, and deadline performance against a documented manual baseline. Set thresholds that require corrective work before adding more accounts or broader automation permissions.",
-          "example": "Four quarterly statements take eight analyst hours manually. The target workflow reduces that to three hours including review, saving five hours per cycle. Any duplicate invoice, missed notice deadline, or unexplained royalty difference above $100 pauses expansion until the operator fixes and retests the specific failure."
+          "prompt": "Before alleging underpayment, explain how you will separate a licensee that is simply selling fewer units from one that is misreporting, naming the sell-through data, trend analysis, or independent sales sources you will compare against the royalty statements received.",
+          "example": "Royalties fell 30% this half. Before claiming underpayment, we compare reported units with BookScan figures at about $50-65 per ISBN, as Julie Tate does, and run trend analysis to find risky areas [PKF Texas — Z-vXnFsa6zY @ 00:01:29]. Sabarwal Law reminds us a shortfall may simply mean the product is underperforming [Sabarwal Law — 4ZKPBotNzQw @ 00:03:55]."
         }
       ],
-      "completion_gate": "The operator demonstrates one successful reporting cycle, one renewal notice check, and one manual recovery exercise; outbound stages and automation metrics remain separate from booked and collected revenue."
+      "completion_gate": "Done when every third-party asset has attached written permission, registrations are scheduled before delivery, the audit clause includes a 5% cost-shifting threshold, no short look-back cap, named source data and draft-report review, and each statement has passed a line-by-line check."
     },
     {
       "worksheet_id": "ws-06",
       "number": 6,
-      "title": "30-Day Launch Sprint, Pod Scorecard, and Exit Ledger",
-      "purpose": "Turn the licensing thesis into a disciplined first-month execution plan without compressing a 6-to-24-month sales cycle into an artificial promise. Assign pod responsibilities, track evidence-based milestones, preserve canonical economics, and assemble records that support renewal, delegation, and eventual transfer.",
-      "chapter_ref": "Q11, Q12",
+      "title": "Creative Catalog, Knowledge and Digital Data Licensing Builder",
+      "purpose": "Build a compounding catalog of creative work, knowledge products and digital data that you rent out rather than sell, with delivery specifications, revenue splits, term limits and deletion terms written down before any library, publisher, business client or AI lab signs.",
+      "chapter_ref": "Q11-Q12",
       "instructions": [
-        "Treat the first 30 days as a preparation and validation sprint, not a requirement to close a license. Prioritize rights evidence, buyer qualification, contract economics, and a reproducible reporting demonstration over presentation volume or speculative revenue announcements.",
-        "Assign the Conservative and Base pod as one full-time operator plus three contractors. Define contractor deliverables and availability explicitly. Use the Scaled structure of two full-time staff plus four contractors only with a documented workload and cost reconciliation.",
-        "Review weekly leading indicators alongside cash and risk exposure. Separate researched prospects, qualified meetings, paid evaluations, signed grants, earned royalties, and collected receipts. A growing pipeline does not justify ignoring unresolved title or an approaching liquidity shortfall.",
-        "Build transfer readiness from the first contract. Retain assignments, amendments, reporting history, renewal dates, dispute records, and documented operating procedures. Flag assignment restrictions and buyer dependencies before estimating value from recurring royalties or marketing the portfolio.",
-        "At day 30, compare completed evidence with the original spending limits and rejection criteria. Choose continue, narrow, or stop for each opportunity. Authorize the next bounded work period only after updating cash, unresolved risks, and accountable owners."
+        "List every creative work, training product and data set you own, and confirm you hold the rights needed to license each one.",
+        "Complete the creative catalog fields before the digital data fields, since delivery standards and splits set your pricing baseline.",
+        "Write tags, specifications and clauses in the exact wording you would send to a buyer, not as summary notes.",
+        "Record every commission, sync fee share and buyout percentage as a number so routes can be compared side by side.",
+        "Do not send files, data exports or signed agreements until the deletion, term limit and exclusivity fields are complete."
       ],
       "fields": [
         {
-          "name": "Days 1–7 rights and demand foundation",
+          "name": "catalog_compounding_plan",
           "type": "textarea",
-          "prompt": "Schedule the first week's asset intake, ownership review, buyer research, and capital setup. Assign concrete evidence deliverables and spending limits rather than activity counts without commercial or rights-validation value.",
-          "example": "By day seven, the operator creates the asset register, collects eight creator agreements, identifies 12 incomplete-title illustrations, and researches 40 target accounts. The rights contractor delivers a gap memo capped at $4,000. The cash ledger records $75,000 starting capital and separates committed setup costs from discretionary spending."
+          "prompt": "Set your annual output target for licensable creative works, then show how each new piece multiplies into additional assets such as stems, instrumentals, alternate edits, or cut-downs, and project catalog size and income for years one through five.",
+          "example": "We write 20 songs a year and turn each into a full mix, instrumental, stems and short edits, building toward 400 licensable assets by year five. Michael Elsner models that climb from roughly $2,000 in year one to $75,000 to $100,000 annually [Elite Music Coaching — D6XhETdysBM @ 00:09:44] while earlier placements keep earning."
         },
         {
-          "name": "Days 8–14 commercial and contract design",
-          "type": "textarea",
-          "prompt": "Define second-week buyer interviews, sample evaluation design, royalty terms, and contract drafting outputs. Require confirmation of budget authority and reporting capability before treating an account as commercially qualified.",
-          "example": "By day fourteen, six discovery meetings identify three plausible evaluation candidates. The draft term sheet proposes $31,250 nonrecoupable fees, a 5% royalty, and a $60,000 annual minimum per Base-style account. Two buyers provide sample sales exports; procurement confirms the signatory path before negotiation costs expand."
+          "name": "technical_delivery_spec",
+          "type": "text",
+          "prompt": "Record the technical delivery specification every licensable track must meet before pitching, including sample rate, bit depth, file format, sample clearance status, available versions, and edit points, and name the person who verifies each file against that specification.",
+          "example": "Every track ships as a 48 kHz, 24-bit WAV with an instrumental version and stems, and any uncleared sample is stripped before pitching [Majeston — 7t871xx-ysc @ 00:03:23]. Edits land on clean 8- or 16-bar points and end with a sting outro. Our engineer signs off on each export before it enters the catalog folder."
         },
         {
-          "name": "Days 15–21 reporting and delivery rehearsal",
+          "name": "supervisor_metadata_tags",
           "type": "textarea",
-          "prompt": "Plan the third-week technical rehearsal using representative records and a bounded asset package. Specify calculation tests, exception handling, access checks, and the evidence required to demonstrate operational readiness without live contract execution.",
-          "example": "The analyst rehearses a $1,500,000 portfolio quarter, calculates $75,000 royalties, applies $60,000 minimum credits, and produces $15,000 additional royalties due. A duplicate invoice and unsupported deduction must fail. The delivery contractor validates 228 asset hashes and demonstrates access withdrawal on a test account."
+          "prompt": "Write the metadata tags for your three strongest tracks the way a music supervisor would search for them, replacing generic words with precise mood, instrument, tempo, and key descriptors, and note where the catalog will be uploaded for discovery.",
+          "example": "Track one: triumphant, uplifting, victorious; acoustic fingerstyle guitar; not simply happy guitar [Elite Music Coaching — D6XhETdysBM @ 00:06:45]. Track two: clean electric guitar with delay, celebratory. The full catalog with stems, cuts and edits goes to Disco, whose AI tags mood, instruments, tempo and key and helps supervisors discover us [Majeston — 7t871xx-ysc @ 00:02:40]."
         },
         {
-          "name": "Days 22–30 evaluation and next-period decision",
+          "name": "library_route_split",
           "type": "textarea",
-          "prompt": "Set final-week deliverables for buyer follow-up, risk closure, cash review, and operating handoff. State what evidence supports continued investment and which unresolved conditions require narrowing or stopping the opportunity.",
-          "example": "By day thirty, the operator has two qualified evaluation discussions, a reviewed term sheet, a reproducible royalty model, and a rights exception log. No license is signed. The decision authorizes another $6,000 of bounded work only if the liquidity forecast preserves the $16,000 buffer and buyer reporting tests succeed."
+          "prompt": "Compare the routes you are considering for your catalog, such as an agency, a library, or a sub-published library, and write down for each one the share of the sync fee you keep, who holds publishing, and whether exclusivity applies.",
+          "example": "Agencies take 25-50% of the fee. On a $1,000 placement through a library sub-published by a major, about 25% comes off the top, leaving $375 each for library and composer [Randy McGravey Music — iF_Z6ikfzMo @ 00:11:11]. We reject any library that refuses to share sync fees, as McGravey did with KPM [Randy McGravey Music — iF_Z6ikfzMo @ 00:09:06]."
         },
         {
-          "name": "Pod roles, capacity, and escalation ownership",
-          "type": "textarea",
-          "prompt": "Assign accountable owners for commercial negotiation, rights review, royalty accounting, and delivery automation. Distinguish headcount from contractor hours, and document who can resolve disputed terms or authorize contractual actions.",
-          "example": "The Base pod has one full-time operator and three contractors: rights specialist, royalty accountant, and delivery engineer. The operator owns negotiation and notices; contractors provide bounded specialist deliverables. Scaled adds one full-time relationship manager and one audit contractor, reaching two full-time staff plus four contractors, six people total."
+          "name": "advance_and_buyout_terms",
+          "type": "text",
+          "prompt": "If a publisher offers an advance, record the advance amount, the recoupment term, the buyout percentage you will demand on the unrecouped balance, and confirm that the publisher made the first offer rather than you naming a number first.",
+          "example": "Publisher sent its offer first, as Producer Royalty advises so we never bid against ourselves [Producer Royalty — gN8CTjqp8lA @ 00:08:20]. Advance of $40,000 under a three-years-or-recoupment term. We require a buyout right at 110 to 125 percent of the unrecouped balance [Producer Royalty — gN8CTjqp8lA @ 00:14:32], so the deal cannot hold us indefinitely."
         },
         {
-          "name": "Weekly operating and risk KPI scorecard",
+          "name": "knowledge_term_license",
           "type": "textarea",
-          "prompt": "Define each metric with a denominator, source system, review frequency, and response threshold. Include rights coverage, buyer qualification, report timeliness, reconciliation accuracy, collection exposure, and minimum cash rather than revenue alone.",
-          "example": "The weekly scorecard shows 228 of 240 assets cleared, two of six meetings commercially qualified, and four of four test statements reconciled. Required live statement timeliness is 100%. Any receivable over 30 days past due receives an owner; forecast unrestricted cash below $16,000 triggers a spending review."
+          "prompt": "Describe a course, training, process, or program you could license to a business for deployment across its own clients, stating the one-off sale price, the proposed term license fee, the term length, and what happens to access when the term ends.",
+          "example": "Our posture-correction course sells for $2,000 to one chiropractor. Licensed to a practice for a fixed period so it can release the material to all of its patients, it is priced at $20,000 [Dr. Lauryn B — QRv3A_DETg4 @ 00:05:53]. The term limit is written in, so we never hand the system over forever [Dr. Lauryn B — QRv3A_DETg4 @ 00:08:11]."
         },
         {
-          "name": "Canonical economics and leverage checkpoint",
+          "name": "data_asset_inventory",
           "type": "textarea",
-          "prompt": "Restate the canonical portfolio economics and leverage rating without changing them to match an early pipeline. Explain how actual contracts and costs will be compared with these reference scenarios over time.",
-          "example": "Candidate 19 ranks 13 of 29 with a 88/100 score: revenue potential 24, margin potential 24, team efficiency 19, startup accessibility 11, and automation potential 10. Annual revenue and owner net remain $50,000/$12,500 Conservative, $425,000/$180,625 Base, and $800,000/$480,000 Scaled. The score expresses operating leverage, not a probability of closing or a substitute for deal underwriting."
+          "prompt": "Inventory the operational data your company could license to AI labs, such as IT tickets, chat exports, or support records, and note for each set its volume, how it will be anonymized, and the exclusivity position that drives its price.",
+          "example": "First set: six years of IT tickets, which Jason Varner calls perfect training data because each holds a problem, an action and a fix [Jason Varner — XDzwbT8LWMQ @ 00:05:22]. Second set: anonymized Slack exports. Varner quotes payouts of $100K to $3M plus, driven by exclusivity [Jason Varner — nKuxu_x-s6o @ 00:01:44], so we price exclusive first."
         },
         {
-          "name": "Renewal quality and concentration exposure",
+          "name": "deletion_and_model_fate_clause",
           "type": "textarea",
-          "prompt": "Measure renewal eligibility, payment performance, licensee concentration, remaining term, and dependence on specific assets. Separate recurring contractual economics from nonrecurring fees when judging the durability of future cash flows.",
-          "example": "Four equal Base accounts each contribute $106,250 first-year revenue, creating 25% concentration per account. Their combined $125,000 fees do not automatically repeat at renewal. The renewal forecast separately models $300,000 earned royalties at current sales, $240,000 contractual minimums if renewed, and any new fees only when supported by specific renewal terms."
+          "prompt": "Draft the deletion and post-termination clause for your data license, naming every place copies can survive, including labels, caches, backups, and checkpoints, and stating what happens to any model trained on your data once the agreement ends.",
+          "example": "On termination the licensee deletes source files plus every label, cache, backup and checkpoint derived from them, since clauses limited to source files miss those copies [Archive Trove — y5YpFZxHpYE @ 00:02:01]. Any model trained on our data is retired or retrained without it, because the agreement has to decide the model's fate [Archive Trove — y5YpFZxHpYE @ 00:02:17]."
         },
         {
-          "name": "Exit-readiness evidence and transfer restrictions",
+          "name": "dataset_and_cloud_tool_diligence",
           "type": "textarea",
-          "prompt": "Build the record set a purchaser would need to validate ownership, transferability, cash generation, and operational continuity. Flag required consents, unresolved claims, and personal relationships that cannot transfer through document delivery alone.",
-          "example": "The exit folder contains assignments, executed licenses, amendments, 24 months of statements when accumulated, bank reconciliations, audit findings, renewal schedules, and operating procedures. Two agreements require counterparty consent for assignment. Those dependencies remain explicit in the transfer ledger; the operator does not present the portfolio as freely transferable before resolving them."
+          "prompt": "Before your data trains a provider's cloud tool or you build on a public dataset, record the license terms you checked, the commercial-use restrictions found, and the audit, regulator, and version-ownership rights you secured in the contract.",
+          "example": "The public dataset we reviewed uses a custom license barring commercial use, a pattern found in a study where 65% of 221 datasets carried commercial risk [The Linux Foundation — bii4_gwgoBY @ 00:16:50]. For the cloud tool, we secured diligence, regulator and audit access to every model version [Mayer Brown — 5gxaM62YYFk @ 00:25:24] plus ownership of evolutions."
         },
         {
-          "name": "Day-30 decision and next 90-day mandate",
-          "type": "textarea",
-          "prompt": "Record completed evidence, actual spend, remaining cash, unresolved risks, and the next bounded mandate. Choose an explicit continue, narrow, or stop decision without treating unsigned pipeline as achieved revenue or promised collections.",
-          "example": "Decision: continue with the 228 cleared catalog assets and exclude the 12 defective-title items. The first month spends $9,000 underwriting and $8,000 fixed overhead from $75,000, leaving $58,000 before other committed setup payments. The next 90 days target three qualified evaluations and one negotiated draft; first-deal timing remains 6 to 24 months."
+          "name": "exclusivity_and_sales_channel",
+          "type": "text",
+          "prompt": "State whether each digital asset or dataset will be licensed exclusively at a premium or non-exclusively for volume, where it will be sold, and what commission each marketplace takes compared with selling through a site you own.",
+          "example": "Our illustration packs sell non-exclusively for volume through a hybrid model: an owned site plus one stock marketplace, because stock sites take 50-80% of each sale [Gait Gain — lvsa9U4qZJA @ 00:10:33]. Custom commissions go out as exclusive licenses at a premium, and every contract states which type applies [Gait Gain — lvsa9U4qZJA @ 00:07:13]."
         }
       ],
-      "completion_gate": "The operator signs the day-30 decision with actual spending, cash, evidence, pod ownership, and the next bounded mandate; canonical scenario figures and transfer restrictions remain intact in the record."
+      "completion_gate": "Done when every track meets the 48 kHz, 24-bit delivery spec with stems and no uncleared samples, each library route shows the composer's sync share, every advance has a buyout right, knowledge licenses carry term limits, and data licenses name labels, caches, backups, checkpoints and the trained model's fate."
     }
   ]
 }

@@ -9,49 +9,49 @@
       "RECOVERY"
     ],
     "deck": [
-      "INGEST THE LEDGER. VERIFY AUTHORITY.",
-      "EARN THE CONTINGENT FEE."
+      "SEARCH STATE AND FEDERAL DATABASES, TRACE OWNERS AND HEIRS, FILE CLAIMS UNDER STATE FEE CAPS",
+      "BUILD REGISTERED RECOVERY BUSINESSES ON ONE NICHE, DAILY FOLLOW-UP, AND FEES PAID ONLY AFTER PAYOUT"
     ],
-    "lead": "State-Controller Escheatment Ledgers, Corporate Warrant Matching, Statutory Fee Caps & Lean 3-Person Recovery Operations",
-    "summary": "Cross-match public state escheatment datasets and municipal warrant registers with corporate officer records under explicit state finder rules.",
+    "lead": "Field-tested playbooks from unclaimed property practitioners on searching state and federal databases, launching a registered recovery business, tracing owners and heirs, and closing claims under state fee caps.",
+    "summary": "All 12 chapters synthesize 192 verbatim YouTube practitioner testimonies, each quoted with timestamped inline attribution to its source video. Coverage runs from search entry points and state claim filing through skip tracing, prospect outreach, fee collection, bankruptcy funds, and holder compliance.",
     "chapters": [
-      "Business model & revenue boundaries",
-      "Decision-makers & payment rails",
-      "Unit economics & margin waterfall",
-      "Startup capital & lean stack",
-      "Beginner traps & failure modes",
-      "Sourcing & first deals",
-      "End-to-end operating blueprint",
-      "Public records, APIs & tooling",
-      "Contracts, statutes & scripts",
-      "Automation & distribution loops",
-      "Small-team pod & exit valuation",
-      "First 30-day launch sprint"
+      "Unclaimed Property Fundamentals and Search Entry Points",
+      "Launch and Focus the Recovery Business",
+      "Public Portals and State Return Practices",
+      "State-by-State Personal Property Searches",
+      "Find Unclaimed Funds Under Business Names",
+      "Investigator Requirements and State Claim Filing",
+      "Skip Tracing, Heirs, and Estate Claims",
+      "Prospect Outreach and Recovery-Service Credibility",
+      "Close Claims and Collect Recovery Fees",
+      "Bankruptcy Unclaimed Funds Recovery",
+      "Royalties, Insurance, Shares, and Dividends",
+      "Holder Reporting, Compliance, and Audit Risk"
     ],
     "flow": [
       [
-        "SOURCE",
-        "Mine high-intent deal triggers"
+        "RESEARCH",
+        "Pull the state's registration requirements, fee cap, agreement form, and claim-package instructions before dialing, and call the state office if anything is unclear."
       ],
       [
-        "UNDERWRITE",
-        "Screen margin, float & rules"
+        "TARGET",
+        "Pick one niche and one or two states, download or buy state lists, and filter for big claims, holding a $10,000 floor under a 10% cap."
       ],
       [
-        "ENGAGE",
-        "Execute mandate or pre-sell"
+        "SEARCH",
+        "Start at MissingMoney.com, then unclaimed.org state portals, then federal registries for wages, pensions, FHA refunds, failed banks, and bankruptcy courts."
       ],
       [
-        "DELIVER",
-        "Run standardized SOP & ledger"
+        "SKIP TRACE",
+        "Locate owners and heirs for free or through batch skip tracing at about $14 to $15 per 100 leads instead of hours of manual research."
       ],
       [
-        "VERIFY",
-        "Audit quality, scrubs & statutes"
+        "OUTREACH",
+        "Prospect daily in a roughly three-hour block, weekends included, and commit to three to five follow-up calls per prospect."
       ],
       [
-        "COMPOUND",
-        "Reconcile cash & scale pod"
+        "CLOSE AND COLLECT",
+        "Sign notarized agreements, file the claim package, and collect the capped fee only after the claimant is paid, with states like California paying the locator directly."
       ]
     ]
   },
@@ -59,10 +59,10 @@
   "book_series": "THE BIG MONEY PLAYBOOKS",
   "tagline": "Big Money. Small Teams. No Bullshit.",
   "title": "UNCLAIMED PROPERTY RECOVERY",
-  "subtitle": "The Complete Playbook for Unclaimed Property Recovery: $60,000–$450,000 USD in Annual Service Fees, Starting with a 1 FT + 2 C (3 People) Pod and Scaling to Five",
+  "subtitle": "Free State Searches, Capped Finder Fees, Skip-Traced Heirs, Licensed Claim Filing, Bankruptcy and Royalty Recoveries, and Holder Audit Defense",
   "chapter_count": 12,
-  "total_word_count": 75914,
-  "expert_youtube_link_count": 180,
+  "total_word_count": 75250,
+  "expert_youtube_link_count": 205,
   "min_expert_youtube_links_required": 150,
   "target_expert_youtube_links": "150-200+",
   "min_expert_youtube_links_per_chapter": 12,
@@ -77,5 +77,5 @@
   "publication_status": "approved_master",
   "public_deploy_approved": false,
   "paid_sales_approved": false,
-  "updated_at": "2026-11-23T22:48:00Z"
+  "updated_at": "2026-11-24T19:54:29Z"
 }

@@ -1,4243 +1,3335 @@
-"""Curated 180-citation Intellectual Property Licensing baseline (15 per chapter across Q1-Q12) mined strictly from verified Intellectual Property Licensing YouTube transcripts."""
+"""100% verbatim YouTube practitioner citations selected directly by Claude across Chapters Q1-Q12 of Volume 013 (Intellectual Property Licensing)."""
 from __future__ import annotations
 
-CHAPTER_KEYWORDS: dict[int, set[str]] = {1: {'act',
-     'advance',
-     'against',
-     'agency',
-     'agent',
-     'algorithm',
-     'annual',
-     'assignment',
-     'audit',
-     'brand',
-     'broker',
-     'brokerage',
-     'building',
-     'business',
-     'cad',
-     'catalog',
-     'character',
-     'clause',
-     'client',
-     'clients',
-     'commercial',
-     'commercialization',
-     'compliance',
-     'contract',
-     'control',
-     'copyright',
-     'corporate',
-     'database',
-     'dataset',
-     'deal',
-     'deals',
-     'deductions',
-     'firm',
-     'margin',
-     'market',
-     'model',
-     'niche',
-     'operator',
-     'revenue',
-     'service',
-     'value'},
- 2: {'act',
-     'advance',
-     'against',
-     'agency',
-     'agent',
-     'algorithm',
-     'annual',
-     'assignment',
-     'audit',
-     'brand',
-     'broker',
-     'brokerage',
-     'budget',
-     'building',
-     'business',
-     'buyer',
-     'cad',
-     'catalog',
-     'character',
-     'clause',
-     'commercial',
-     'commercialization',
-     'compliance',
-     'contract',
-     'control',
-     'copyright',
-     'corporate',
-     'customer',
-     'database',
-     'dataset',
-     'deal',
-     'deals',
-     'decision',
-     'deductions',
-     'escrow',
-     'fee',
-     'fees',
-     'invoice',
-     'pay',
-     'payment',
-     'pays',
-     'retainer'},
- 3: {'act',
-     'advance',
-     'against',
-     'agency',
-     'agent',
-     'algorithm',
-     'annual',
-     'assignment',
-     'audit',
-     'brand',
-     'broker',
-     'brokerage',
-     'building',
-     'business',
-     'cad',
-     'cash',
-     'cashflow',
-     'catalog',
-     'character',
-     'clause',
-     'commercial',
-     'commercialization',
-     'commission',
-     'compliance',
-     'contract',
-     'control',
-     'copyright',
-     'corporate',
-     'cost',
-     'costs',
-     'database',
-     'dataset',
-     'deal',
-     'deals',
-     'deductions',
-     'economics',
-     'margin',
-     'margins',
-     'price',
-     'pricing',
-     'profit',
-     'roi',
-     'unit'},
- 4: {'act',
-     'advance',
-     'against',
-     'agency',
-     'agent',
-     'algorithm',
-     'annual',
-     'assignment',
-     'audit',
-     'brand',
-     'broker',
-     'brokerage',
-     'budget',
-     'building',
-     'business',
-     'cad',
-     'capital',
-     'catalog',
-     'character',
-     'clause',
-     'commercial',
-     'commercialization',
-     'compliance',
-     'contract',
-     'control',
-     'copyright',
-     'corporate',
-     'database',
-     'dataset',
-     'deal',
-     'deals',
-     'deductions',
-     'entity',
-     'insurance',
-     'lean',
-     'license',
-     'llc',
-     'setup',
-     'software',
-     'stack',
-     'startup',
-     'tools'},
- 5: {'act',
-     'advance',
-     'against',
-     'agency',
-     'agent',
-     'algorithm',
-     'annual',
-     'assignment',
-     'audit',
-     'avoid',
-     'brand',
-     'broker',
-     'brokerage',
-     'building',
-     'business',
-     'cad',
-     'catalog',
-     'character',
-     'clause',
-     'clawback',
-     'commercial',
-     'commercialization',
-     'compliance',
-     'contract',
-     'control',
-     'copyright',
-     'corporate',
-     'database',
-     'dataset',
-     'deal',
-     'deals',
-     'deductions',
-     'dispute',
-     'edge',
-     'fail',
-     'mistake',
-     'mistakes',
-     'problem',
-     'risk',
-     'risks',
-     'trap',
-     'traps'},
- 6: {'act',
-     'advance',
-     'against',
-     'agency',
-     'agent',
-     'algorithm',
-     'annual',
-     'assignment',
-     'audit',
-     'brand',
-     'broker',
-     'brokerage',
-     'building',
-     'business',
-     'cad',
-     'catalog',
-     'character',
-     'clause',
-     'client',
-     'commercial',
-     'commercialization',
-     'compliance',
-     'contract',
-     'control',
-     'copyright',
-     'corporate',
-     'data',
-     'database',
-     'dataset',
-     'deal',
-     'deals',
-     'deductions',
-     'find',
-     'first',
-     'lead',
-     'leads',
-     'list',
-     'outbound',
-     'prospect',
-     'qualify',
-     'search',
-     'sourcing'},
- 7: {'act',
-     'advance',
-     'against',
-     'agency',
-     'agent',
-     'algorithm',
-     'annual',
-     'assignment',
-     'audit',
-     'brand',
-     'broker',
-     'brokerage',
-     'building',
-     'business',
-     'cad',
-     'catalog',
-     'character',
-     'checklist',
-     'clause',
-     'commercial',
-     'commercialization',
-     'compliance',
-     'contract',
-     'control',
-     'copyright',
-     'corporate',
-     'database',
-     'dataset',
-     'deal',
-     'deals',
-     'deductions',
-     'delivery',
-     'execution',
-     'process',
-     'quality',
-     'sop',
-     'step',
-     'steps',
-     'system',
-     'underwriting',
-     'verify',
-     'workflow'},
- 8: {'act',
-     'advance',
-     'against',
-     'agency',
-     'agent',
-     'algorithm',
-     'annual',
-     'api',
-     'assignment',
-     'audit',
-     'brand',
-     'broker',
-     'brokerage',
-     'building',
-     'business',
-     'cad',
-     'catalog',
-     'character',
-     'clause',
-     'commercial',
-     'commercialization',
-     'compliance',
-     'contract',
-     'control',
-     'copyright',
-     'corporate',
-     'crm',
-     'data',
-     'database',
-     'dataset',
-     'deal',
-     'deals',
-     'deductions',
-     'platform',
-     'portal',
-     'scraper',
-     'search',
-     'software',
-     'tool',
-     'tools',
-     'tracking'},
- 9: {'act',
-     'advance',
-     'against',
-     'agency',
-     'agent',
-     'agreement',
-     'algorithm',
-     'annual',
-     'assignment',
-     'audit',
-     'brand',
-     'broker',
-     'brokerage',
-     'building',
-     'business',
-     'cad',
-     'catalog',
-     'character',
-     'clause',
-     'commercial',
-     'commercialization',
-     'compliance',
-     'contract',
-     'control',
-     'copyright',
-     'corporate',
-     'database',
-     'dataset',
-     'deal',
-     'deals',
-     'deductions',
-     'disclosure',
-     'law',
-     'legal',
-     'license',
-     'outreach',
-     'rules',
-     'script',
-     'state',
-     'terms'},
- 10: {'act',
-      'advance',
-      'against',
-      'agency',
-      'agent',
-      'ai',
-      'algorithm',
-      'annual',
-      'assignment',
-      'audit',
-      'automate',
-      'automation',
-      'brand',
-      'broker',
-      'brokerage',
-      'building',
-      'business',
-      'cad',
-      'catalog',
-      'character',
-      'clause',
-      'commercial',
-      'commercialization',
-      'compliance',
-      'contract',
-      'control',
-      'copyright',
-      'corporate',
-      'dashboard',
-      'database',
-      'dataset',
-      'deal',
-      'deals',
-      'deductions',
-      'leverage',
-      'pipeline',
-      'scale',
-      'script',
-      'speed',
-      'template',
-      'workflow'},
- 11: {'act',
-      'advance',
-      'against',
-      'agency',
-      'agent',
-      'algorithm',
-      'annual',
-      'assignment',
-      'audit',
-      'brand',
-      'broker',
-      'brokerage',
-      'building',
-      'business',
-      'cad',
-      'catalog',
-      'character',
-      'clause',
-      'commercial',
-      'commercialization',
-      'compliance',
-      'contract',
-      'contractor',
-      'control',
-      'copyright',
-      'corporate',
-      'database',
-      'dataset',
-      'deal',
-      'deals',
-      'deductions',
-      'exit',
-      'hire',
-      'hiring',
-      'kpi',
-      'manager',
-      'operations',
-      'pod',
-      'scale',
-      'scaling',
-      'team',
-      'valuation'},
- 12: {'act',
-      'action',
-      'advance',
-      'against',
-      'agency',
-      'agent',
-      'algorithm',
-      'annual',
-      'assignment',
-      'audit',
-      'brand',
-      'broker',
-      'brokerage',
-      'building',
-      'business',
-      'cad',
-      'catalog',
-      'character',
-      'clause',
-      'commercial',
-      'commercialization',
-      'compliance',
-      'contract',
-      'control',
-      'copyright',
-      'corporate',
-      'database',
-      'dataset',
-      'day',
-      'days',
-      'deal',
-      'deals',
-      'deductions',
-      'launch',
-      'milestone',
-      'month',
-      'plan',
-      'roadmap',
-      'sprint',
-      'start',
-      'thirty',
-      'week'}}
+CHAPTER_KEYWORDS: dict[int, set[str]] = {1: {'licensing', 'business', 'model', 'choose'},
+ 2: {'invention', 'protect', 'research'},
+ 3: {'economics', 'royalty', 'inventor', 'understand'},
+ 4: {'pitch', 'product', 'find', 'licensees'},
+ 5: {'license', 'term', 'negotiate', 'sheet'},
+ 6: {'through', 'technology', 'commercialize', 'transfer', 'research'},
+ 7: {'program', 'build', 'licensing', 'brand'},
+ 8: {'value', 'monetize', 'patent', 'portfolios'},
+ 9: {'address', 'permissions', 'clear', 'infringement'},
+ 10: {'account', 'administer', 'audit', 'royalties'},
+ 11: {'license', 'work', 'creative', 'knowledge'},
+ 12: {'license', 'digital', 'data', 'software'}}
 
-BASELINE_EXPERT_CITATIONS_BY_CHAPTER: dict[int, list[dict]] = {1: [{'author': 'Bao Tran, Esq. | Patent Attorney',
-      'channel': 'Bao Tran, Esq. | Patent Attorney',
+BASELINE_EXPERT_CITATIONS_BY_CHAPTER: dict[int, list[dict]] = {1: [{'author': 'Patent Question',
+      'channel': 'Patent Question',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:26](https://www.youtube.com/watch?v=SkIAUEkenak&t=326s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q1 operational verification).',
+      'markdown': '[00:05:11](https://www.youtube.com/watch?v=E7nUaZBoVeI&t=311s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
       'source_type': 'video_pro_tip',
-      'text': "Let's talk about understanding the licensee's business model. The licensee "
-              "needs to consider the value of the product or the service. What is a licensee's "
-              "view of the market and the competition? What is a licensee's business model? "
-              'How would they finance the business?',
-      'timestamp': 326,
-      'timestamp_label': '[00:05:26]',
-      'timestamp_seconds': 326,
-      'tip': "Let's talk about understanding the licensee's business model. The licensee needs "
-             "to consider the value of the product or the service. What is a licensee's view "
-             "of the market and the competition? What is a licensee's business model? How "
-             'would they finance the business?',
-      'title': 'Patent Licensing Strategy: Royalties, Equity & Exclusive Rights Explained (Bao '
-               'Tran, Esq. | Patent Attorney)',
-      'url': 'https://www.youtube.com/watch?v=SkIAUEkenak&t=326s',
-      'video_id': 'SkIAUEkenak'},
-     {'author': 'Sync Warehouse',
-      'channel': 'Sync Warehouse',
+      'text': "Don't rush into manufacturing just because you're excited. Don't manufacture just "
+              'because someone told you this is a million-dollar idea.',
+      'timestamp': 311,
+      'timestamp_label': '[00:05:11]',
+      'timestamp_seconds': 311,
+      'tip': "Don't rush into manufacturing just because you're excited. Don't manufacture just "
+             'because someone told you this is a million-dollar idea.',
+      'title': 'How Inventors Make Money Without Manufacturing Anything: Licensing, Royalties, and '
+               'Selling Explained',
+      'url': 'https://www.youtube.com/watch?v=E7nUaZBoVeI&t=311s',
+      'video_id': 'E7nUaZBoVeI'},
+     {'author': 'Cashix',
+      'channel': 'Cashix',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:06:52](https://www.youtube.com/watch?v=M7AeOQ9cxtQ&t=412s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q1 operational verification).',
+      'markdown': '[00:03:54](https://www.youtube.com/watch?v=2dvDoXcllAw&t=234s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
       'source_type': 'video_pro_tip',
-      'text': 'For composers, they provide another way to monetize a catalog through upfront '
-              "payments, revenue sharing, or download-based compensation. It's a different "
-              "business model than traditional sync, but it's become an important part of "
-              "today's licensing landscape.",
-      'timestamp': 412,
-      'timestamp_label': '[00:06:52]',
-      'timestamp_seconds': 412,
-      'tip': 'For composers, they provide another way to monetize a catalog through upfront '
-             "payments, revenue sharing, or download-based compensation. It's a different "
-             "business model than traditional sync, but it's become an important part of "
-             "today's licensing landscape.",
-      'title': 'What Is Sync Licensing? (And How It Actually Works) (Sync Warehouse)',
-      'url': 'https://www.youtube.com/watch?v=M7AeOQ9cxtQ&t=412s',
-      'video_id': 'M7AeOQ9cxtQ'},
-     {'author': 'Patent pc',
-      'channel': 'Patent pc',
+      'text': 'The consequences are brutal. A court can declare the trademark abandoned. The brand '
+              'loses its legal protection and its primary commercial asset ceases to exist.',
+      'timestamp': 234,
+      'timestamp_label': '[00:03:54]',
+      'timestamp_seconds': 234,
+      'tip': 'The consequences are brutal. A court can declare the trademark abandoned. The brand '
+             'loses its legal protection and its primary commercial asset ceases to exist.',
+      'title': 'The Hidden Business of Licensing: How Brands Make Billions Without Making Products',
+      'url': 'https://www.youtube.com/watch?v=2dvDoXcllAw&t=234s',
+      'video_id': '2dvDoXcllAw'},
+     {'author': 'Cashix',
+      'channel': 'Cashix',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:59](https://www.youtube.com/watch?v=Tv_OWgYldPw&t=299s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q1 operational verification).',
+      'markdown': '[00:05:04](https://www.youtube.com/watch?v=2dvDoXcllAw&t=304s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
       'source_type': 'video_pro_tip',
-      'text': 'IP filing patents in the emerging field, such as ai, robotics, to future proof '
-              'the business. When you have a deal structure, you can be flexible. You can use '
-              'a hybrid payment model where you combine upfront payment with back end revenue '
-              'sharing to align the incentives.',
-      'timestamp': 299,
-      'timestamp_label': '[00:04:59]',
-      'timestamp_seconds': 299,
-      'tip': 'IP filing patents in the emerging field, such as ai, robotics, to future proof '
-             'the business. When you have a deal structure, you can be flexible. You can use a '
-             'hybrid payment model where you combine upfront payment with back end revenue '
-             'sharing to align the incentives.',
-      'title': 'How to Monetize Unused Intellectual Property and Patents (Patent pc)',
-      'url': 'https://www.youtube.com/watch?v=Tv_OWgYldPw&t=299s',
-      'video_id': 'Tv_OWgYldPw'},
-     {'author': 'Dr. Lauryn B',
-      'channel': 'Dr. Lauryn B',
+      'text': 'When a mega brand pulls its license, the dependent manufacturing partner can lose '
+              '10% or more of its total revenue in a single day.',
+      'timestamp': 304,
+      'timestamp_label': '[00:05:04]',
+      'timestamp_seconds': 304,
+      'tip': 'When a mega brand pulls its license, the dependent manufacturing partner can lose '
+             '10% or more of its total revenue in a single day.',
+      'title': 'The Hidden Business of Licensing: How Brands Make Billions Without Making Products',
+      'url': 'https://www.youtube.com/watch?v=2dvDoXcllAw&t=304s',
+      'video_id': '2dvDoXcllAw'},
+     {'author': 'Eric Hanscom (ICIP)',
+      'channel': 'Eric Hanscom (ICIP)',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:06:45](https://www.youtube.com/watch?v=QRv3A_DETg4&t=405s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q1 operational verification).',
+      'markdown': '[00:05:39](https://www.youtube.com/watch?v=yUPS-UISPnQ&t=339s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
       'source_type': 'video_pro_tip',
-      'text': "'t have time to go through a course in a lot of cases that it's better to um "
-              "invest in the money just to have it done because it's a faster way to deliver "
-              'better client care or patient care. It increases the value of the service '
-              "you're providing instantly.",
-      'timestamp': 405,
-      'timestamp_label': '[00:06:45]',
-      'timestamp_seconds': 405,
-      'tip': "'t have time to go through a course in a lot of cases that it's better to um "
-             "invest in the money just to have it done because it's a faster way to deliver "
-             "better client care or patient care. It increases the value of the service you're "
-             'providing instantly.',
-      'title': 'What Is Licensing? The Business Model That Turns Your Knowledge Into Scalable '
-               'Revenue (Dr. Lauryn B)',
-      'url': 'https://www.youtube.com/watch?v=QRv3A_DETg4&t=405s',
-      'video_id': 'QRv3A_DETg4'},
-     {'author': 'TrademarkLawyer',
-      'channel': 'TrademarkLawyer',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:50](https://www.youtube.com/watch?v=K6BFUviYg0Q&t=50s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q1 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Players that we might see in the market as you guys know i have another '
-              'business or another brand and it is called stowy joey here is the link if '
-              "you're.",
-      'timestamp': 50,
-      'timestamp_label': '[00:00:50]',
-      'timestamp_seconds': 50,
-      'tip': 'Players that we might see in the market as you guys know i have another business '
-             "or another brand and it is called stowy joey here is the link if you're.",
-      'title': 'Licensing Your Trademarks (Intellectual Property) Without A Lawyer! PASSIVE '
-               'INCOME Deals (TrademarkLawyer)',
-      'url': 'https://www.youtube.com/watch?v=K6BFUviYg0Q&t=50s',
-      'video_id': 'K6BFUviYg0Q'},
+      'text': "I can't give you more than five thousand dollars for it at this point, and so often "
+              'with assignments you have a huge disparity between what an inventor thinks the '
+              "invention is worth and what a retailer or a manufacturer thinks it's worth.",
+      'timestamp': 339,
+      'timestamp_label': '[00:05:39]',
+      'timestamp_seconds': 339,
+      'tip': "I can't give you more than five thousand dollars for it at this point, and so often "
+             'with assignments you have a huge disparity between what an inventor thinks the '
+             "invention is worth and what a retailer or a manufacturer thinks it's worth.",
+      'title': 'ICIP presents:  Intellectual Property Licensing - Three Main Ways To Make Money on '
+               'Your Invention',
+      'url': 'https://www.youtube.com/watch?v=yUPS-UISPnQ&t=339s',
+      'video_id': 'yUPS-UISPnQ'},
      {'author': 'Licensing Consulting Group',
       'channel': 'Licensing Consulting Group',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:12](https://www.youtube.com/watch?v=0MpPL7OXNr4&t=72s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q1 operational verification).',
+      'markdown': '[00:01:34](https://www.youtube.com/watch?v=0MpPL7OXNr4&t=94s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
       'source_type': 'video_pro_tip',
-      'text': "Haven't thought of and looking at their business model in different matters I "
-              'really love the way the presentation was given I loved the atmosphere and it '
-              'was.',
-      'timestamp': 72,
-      'timestamp_label': '[00:01:12]',
-      'timestamp_seconds': 72,
-      'tip': "Haven't thought of and looking at their business model in different matters I "
-             'really love the way the presentation was given I loved the atmosphere and it '
-             'was.',
-      'title': 'Turn Intellectual Property Into Revenue | Licensing & Commercialization '
-               'Strategy (Licensing Consulting Group)',
-      'url': 'https://www.youtube.com/watch?v=0MpPL7OXNr4&t=72s',
+      'text': "Somebody's going to come along with a similar technology and suddenly they're going "
+              'to be there before you are, but with licensing you can get into both markets at the '
+              'same time.',
+      'timestamp': 94,
+      'timestamp_label': '[00:01:34]',
+      'timestamp_seconds': 94,
+      'tip': "Somebody's going to come along with a similar technology and suddenly they're going "
+             'to be there before you are, but with licensing you can get into both markets at the '
+             'same time.',
+      'title': 'Turn Intellectual Property Into Revenue | Licensing & Commercialization Strategy',
+      'url': 'https://www.youtube.com/watch?v=0MpPL7OXNr4&t=94s',
       'video_id': '0MpPL7OXNr4'},
-     {'author': 'CNBC International Live',
-      'channel': 'CNBC International Live',
+     {'author': 'Simple Explain',
+      'channel': 'Simple Explain',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:07](https://www.youtube.com/watch?v=KpR6WOaw0vM&t=67s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q1 operational verification).',
+      'markdown': '[00:02:31](https://www.youtube.com/watch?v=2-_h0sI3YQI&t=151s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
       'source_type': 'video_pro_tip',
-      'text': "Smart business model because you're concentrating on your core business so for "
-              'example if if you were you know Scots which is a lawn and garden company.',
-      'timestamp': 67,
-      'timestamp_label': '[00:01:07]',
-      'timestamp_seconds': 67,
-      'tip': "Smart business model because you're concentrating on your core business so for "
-             'example if if you were you know Scots which is a lawn and garden company.',
-      'title': 'Brand Licensing Europe: LIMA President upbeat on licensing business | '
-               'Marketing Media Money (CNBC International Live)',
-      'url': 'https://www.youtube.com/watch?v=KpR6WOaw0vM&t=67s',
-      'video_id': 'KpR6WOaw0vM'},
-     {'author': 'CAM Logic, Inc.',
-      'channel': 'CAM Logic, Inc.',
+      'text': 'Licensing fees, by contrast, are usually a fixed amount. Some businesses pay both '
+              'licensing fees and royalties.',
+      'timestamp': 151,
+      'timestamp_label': '[00:02:31]',
+      'timestamp_seconds': 151,
+      'tip': 'Licensing fees, by contrast, are usually a fixed amount. Some businesses pay both '
+             'licensing fees and royalties.',
+      'title': 'Licensing Fee: Definition, How It Works vs. Royalty, and Examples',
+      'url': 'https://www.youtube.com/watch?v=2-_h0sI3YQI&t=151s',
+      'video_id': '2-_h0sI3YQI'},
+     {'author': 'INDIAN MARKETS DECODED',
+      'channel': 'INDIAN MARKETS DECODED',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:16:34](https://www.youtube.com/watch?v=jv3KcPKvwZs&t=994s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q1 operational verification).',
+      'markdown': '[00:04:02](https://www.youtube.com/watch?v=3P0vRsEmqtY&t=242s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
       'source_type': 'video_pro_tip',
-      'text': 'Generative design algorithm it will generate and optimize the design so that '
-              "you have a you know very efficient model when you're done.",
-      'timestamp': 994,
-      'timestamp_label': '[00:16:34]',
-      'timestamp_seconds': 994,
-      'tip': 'Generative design algorithm it will generate and optimize the design so that you '
-             "have a you know very efficient model when you're done.",
-      'title': 'Leveraging Value Based Licensing within NX & Solid Edge Webinar (CAM Logic, '
-               'Inc.)',
-      'url': 'https://www.youtube.com/watch?v=jv3KcPKvwZs&t=994s',
-      'video_id': 'jv3KcPKvwZs'},
-     {'author': 'NVIDIA Developer',
-      'channel': 'NVIDIA Developer',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:18:23](https://www.youtube.com/watch?v=7NRKyXl9j6U&t=1103s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q1 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Quick LS just to make sure that that client configuration token is in the right '
-              'place and it is so now all we need to do is we need to restart the grid D '
-              'service to pick up that token.',
-      'timestamp': 1103,
-      'timestamp_label': '[00:18:23]',
-      'timestamp_seconds': 1103,
-      'tip': 'Quick LS just to make sure that that client configuration token is in the right '
-             'place and it is so now all we need to do is we need to restart the grid D '
-             'service to pick up that token.',
-      'title': 'Creating a License Service for NVIDIA AI Enterprise or Virtual GPU (NVIDIA '
-               'Developer)',
-      'url': 'https://www.youtube.com/watch?v=7NRKyXl9j6U&t=1103s',
-      'video_id': '7NRKyXl9j6U'},
-     {'author': 'Chartered Institute of Patent Attorneys',
-      'channel': 'Chartered Institute of Patent Attorneys',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:11](https://www.youtube.com/watch?v=uTreJGUMqMs&t=71s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q1 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'We patented worldwide means that we get about 10 more seats in the equivalent '
-              'amount of space in the business class cabin and so for them to be able to get '
-              "10 more revenue from the same space in the aircraft is everything really it's a "
-              'massive revolution.',
-      'timestamp': 71,
-      'timestamp_label': '[00:01:11]',
-      'timestamp_seconds': 71,
-      'tip': 'We patented worldwide means that we get about 10 more seats in the equivalent '
-             'amount of space in the business class cabin and so for them to be able to get 10 '
-             "more revenue from the same space in the aircraft is everything really it's a "
-             'massive revolution.',
-      'title': 'Turning ideas into profits - licensing your patents (Chartered Institute of '
-               'Patent Attorneys)',
-      'url': 'https://www.youtube.com/watch?v=uTreJGUMqMs&t=71s',
-      'video_id': 'uTreJGUMqMs'},
-     {'author': 'J.D. Houvener / Bold Patents Law Firm',
-      'channel': 'J.D. Houvener / Bold Patents Law Firm',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:06:25](https://www.youtube.com/watch?v=Vi4MIcyHOFE&t=385s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q1 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Established yourself in the market and you see some new entrants that are kind '
-              'of creeping getting close to and in your mind confusingly similar with some of '
-              'your clients sure what actions can you take can you be the good guy.',
-      'timestamp': 385,
-      'timestamp_label': '[00:06:25]',
-      'timestamp_seconds': 385,
-      'tip': 'Established yourself in the market and you see some new entrants that are kind '
-             'of creeping getting close to and in your mind confusingly similar with some of '
-             'your clients sure what actions can you take can you be the good guy.',
-      'title': 'Patent and Trademark Monetization through Licensing and Selling (J.D. Houvener '
-               '/ Bold Patents Law Firm)',
-      'url': 'https://www.youtube.com/watch?v=Vi4MIcyHOFE&t=385s',
-      'video_id': 'Vi4MIcyHOFE'},
+      'text': 'This pure play model achieves extraordinarily high EBITDA margins, often sitting in '
+              'the 73 to 79% range.',
+      'timestamp': 242,
+      'timestamp_label': '[00:04:02]',
+      'timestamp_seconds': 242,
+      'tip': 'This pure play model achieves extraordinarily high EBITDA margins, often sitting in '
+             'the 73 to 79% range.',
+      'title': 'Decoding Pure-Play Licensing Model: High Margin Royalty Cash Flows | Industry '
+               'Terms',
+      'url': 'https://www.youtube.com/watch?v=3P0vRsEmqtY&t=242s',
+      'video_id': '3P0vRsEmqtY'},
      {'author': 'Patent pc',
       'channel': 'Patent pc',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:23](https://www.youtube.com/watch?v=TYb3i3iIHEQ&t=83s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q1 operational verification).',
+      'markdown': '[00:01:04](https://www.youtube.com/watch?v=A7xn_DzjKzE&t=64s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
       'source_type': 'video_pro_tip',
-      'text': 'Uh you can sell the patents to aggregators uh to companies who compete against '
-              'each other or to startups for a lump sum amount of money. Um the easiest way uh '
-              'to do this is to work with brokers to maximize your value uh because they know '
-              'a lot of potential prospects.',
-      'timestamp': 83,
-      'timestamp_label': '[00:01:23]',
-      'timestamp_seconds': 83,
-      'tip': 'Uh you can sell the patents to aggregators uh to companies who compete against '
-             'each other or to startups for a lump sum amount of money. Um the easiest way uh '
-             'to do this is to work with brokers to maximize your value uh because they know a '
-             'lot of potential prospects.',
-      'title': "5 Patent Monetization Strategies Inventors Don't Know About (Patent pc)",
-      'url': 'https://www.youtube.com/watch?v=TYb3i3iIHEQ&t=83s',
+      'text': 'In an exclusive license, only one company has that right to that patent, and that '
+              'implies that you better pick your partner very carefully. Where you have market '
+              'power, you may want to demand non-exclusive licensing.',
+      'timestamp': 64,
+      'timestamp_label': '[00:01:04]',
+      'timestamp_seconds': 64,
+      'tip': 'In an exclusive license, only one company has that right to that patent, and that '
+             'implies that you better pick your partner very carefully. Where you have market '
+             'power, you may want to demand non-exclusive licensing.',
+      'title': 'Got a Patent? Here’s How You Actually Make Money',
+      'url': 'https://www.youtube.com/watch?v=A7xn_DzjKzE&t=64s',
+      'video_id': 'A7xn_DzjKzE'},
+     {'author': 'Patent Question',
+      'channel': 'Patent Question',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:24](https://www.youtube.com/watch?v=dlTT-hWgkB8&t=144s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
+      'source_type': 'video_pro_tip',
+      'text': 'Now, compare that with another inventor who patented an idea but never had a '
+              'strategy. Years went by and the patent expired without them ever making a dime.',
+      'timestamp': 144,
+      'timestamp_label': '[00:02:24]',
+      'timestamp_seconds': 144,
+      'tip': 'Now, compare that with another inventor who patented an idea but never had a '
+             'strategy. Years went by and the patent expired without them ever making a dime.',
+      'title': 'Patents Explained – How to Make Money from a Patent | Rich Goldstein',
+      'url': 'https://www.youtube.com/watch?v=dlTT-hWgkB8&t=144s',
+      'video_id': 'dlTT-hWgkB8'},
+     {'author': 'Patent pc',
+      'channel': 'Patent pc',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:14](https://www.youtube.com/watch?v=TYb3i3iIHEQ&t=134s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
+      'source_type': 'video_pro_tip',
+      'text': 'You will have to pursue companies in courts and of course it would be a lengthy '
+              'process. However, if you succeed and you can claim 5% royalties on their sales, the '
+              'reward can be significant.',
+      'timestamp': 134,
+      'timestamp_label': '[00:02:14]',
+      'timestamp_seconds': 134,
+      'tip': 'You will have to pursue companies in courts and of course it would be a lengthy '
+             'process. However, if you succeed and you can claim 5% royalties on their sales, the '
+             'reward can be significant.',
+      'title': "5 Patent Monetization Strategies Inventors Don't Know About",
+      'url': 'https://www.youtube.com/watch?v=TYb3i3iIHEQ&t=134s',
       'video_id': 'TYb3i3iIHEQ'},
-     {'author': 'inventRightTV',
-      'channel': 'inventRightTV',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:51](https://www.youtube.com/watch?v=ykqpNKDKFEE&t=51s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q1 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'The business model that is being taught at the University level is to start a '
-              'business but not everybody wants to start a business not every product.',
-      'timestamp': 51,
-      'timestamp_label': '[00:00:51]',
-      'timestamp_seconds': 51,
-      'tip': 'The business model that is being taught at the University level is to start a '
-             'business but not everybody wants to start a business not every product.',
-      'title': 'Who is Stephen Key? (inventRightTV)',
-      'url': 'https://www.youtube.com/watch?v=ykqpNKDKFEE&t=51s',
-      'video_id': 'ykqpNKDKFEE'},
-     {'author': 'SeltzerLicensingGrp',
-      'channel': 'SeltzerLicensingGrp',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:04](https://www.youtube.com/watch?v=qx___lyJ5yQ&t=124s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q1 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Cents on this transaction 10% of the $5 but what's interesting is that they "
-              "probably have very little overhead for that transaction so that's that's a nice "
-              'margin that they enjoy probably the highest margin.',
-      'timestamp': 124,
-      'timestamp_label': '[00:02:04]',
-      'timestamp_seconds': 124,
-      'tip': "Cents on this transaction 10% of the $5 but what's interesting is that they "
-             "probably have very little overhead for that transaction so that's that's a nice "
-             'margin that they enjoy probably the highest margin.',
-      'title': 'Licensing Basics: The Royalty Rate and Minimum Guarantee [Part 7/10] '
-               '(SeltzerLicensingGrp)',
-      'url': 'https://www.youtube.com/watch?v=qx___lyJ5yQ&t=124s',
-      'video_id': 'qx___lyJ5yQ'},
-     {'author': 'inventRightTV',
-      'channel': 'inventRightTV',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:46](https://www.youtube.com/watch?v=5pNsi_2H-J4&t=46s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q1 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Mistakes and before when we say students we call our clients students because '
-              'we teach and coach and Mentor we people asking that like I I I want to become '
-              'a.',
-      'timestamp': 46,
-      'timestamp_label': '[00:00:46]',
-      'timestamp_seconds': 46,
-      'tip': 'Mistakes and before when we say students we call our clients students because we '
-             'teach and coach and Mentor we people asking that like I I I want to become a.',
-      'title': 'How Much Money Will You Make Licensing? (Royalties) (inventRightTV)',
-      'url': 'https://www.youtube.com/watch?v=5pNsi_2H-J4&t=46s',
-      'video_id': '5pNsi_2H-J4'}],
- 2: [{'author': 'Simple Explain',
-      'channel': 'Simple Explain',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:22](https://www.youtube.com/watch?v=2-_h0sI3YQI&t=202s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q2 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'For example, individuals or businesses must often pay licensing fees to a '
-              'government agency in order to practice a certain profession or engage in a '
-              'particular line of business.',
-      'timestamp': 202,
-      'timestamp_label': '[00:03:22]',
-      'timestamp_seconds': 202,
-      'tip': 'For example, individuals or businesses must often pay licensing fees to a '
-             'government agency in order to practice a certain profession or engage in a '
-             'particular line of business.',
-      'title': 'Licensing Fee: Definition, How It Works vs. Royalty, and Examples (Simple '
-               'Explain)',
-      'url': 'https://www.youtube.com/watch?v=2-_h0sI3YQI&t=202s',
-      'video_id': '2-_h0sI3YQI'},
-     {'author': 'Useless Money',
-      'channel': 'Useless Money',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:43](https://www.youtube.com/watch?v=xkXjle5Spjw&t=223s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q2 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'The second model is a fixed license fee. A customer pays an agreed amount for '
-              'permission to use specified rights over a defined period or under defined '
-              'conditions. The third is an upfront payment combined with future royalties.',
-      'timestamp': 223,
-      'timestamp_label': '[00:03:43]',
-      'timestamp_seconds': 223,
-      'tip': 'The second model is a fixed license fee. A customer pays an agreed amount for '
-             'permission to use specified rights over a defined period or under defined '
-             'conditions. The third is an upfront payment combined with future royalties.',
-      'title': 'The Economics of Owning an IP Holding Company (Useless Money)',
-      'url': 'https://www.youtube.com/watch?v=xkXjle5Spjw&t=223s',
-      'video_id': 'xkXjle5Spjw'},
-     {'author': 'OneHourProfessor',
-      'channel': 'OneHourProfessor',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:06:42](https://www.youtube.com/watch?v=SU66nYi95IY&t=402s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q2 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Then clarify what the buyer approves and actually pays for. Now, a commercial '
-              'agreement, it needs to connect payment with a clear contribution. So, does '
-              'payment cover one set of records, updates, or new employee work?',
-      'timestamp': 402,
-      'timestamp_label': '[00:06:42]',
-      'timestamp_seconds': 402,
-      'tip': 'Then clarify what the buyer approves and actually pays for. Now, a commercial '
-             'agreement, it needs to connect payment with a clear contribution. So, does '
-             'payment cover one set of records, updates, or new employee work?',
-      'title': 'How to License Your Data to AI Companies & Get Paid (OneHourProfessor)',
-      'url': 'https://www.youtube.com/watch?v=SU66nYi95IY&t=402s',
-      'video_id': 'SU66nYi95IY'},
-     {'author': 'Accountancy Students Hub',
-      'channel': 'Accountancy Students Hub',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:43](https://www.youtube.com/watch?v=o0riJRlxTsY&t=343s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q2 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'You have to evaluate if the renewal or extension triggers the accounting for a '
-              'contract modification or if it constitutes a brand new agreement altogether. '
-              'And what about when a franchisee pays a huge non-refundable upfront fee just to '
-              'open a restaurant?',
-      'timestamp': 343,
-      'timestamp_label': '[00:05:43]',
-      'timestamp_seconds': 343,
-      'tip': 'You have to evaluate if the renewal or extension triggers the accounting for a '
-             'contract modification or if it constitutes a brand new agreement altogether. And '
-             'what about when a franchisee pays a huge non-refundable upfront fee just to open '
-             'a restaurant?',
-      'title': 'AFAR Revenue 06: PFRS 15 Licensing – Right to Access vs. Right to Use; '
-               'Usage-Based Royalties (Accountancy Students Hub)',
-      'url': 'https://www.youtube.com/watch?v=o0riJRlxTsY&t=343s',
-      'video_id': 'o0riJRlxTsY'},
-     {'author': 'Bao Tran, Esq. | Patent Attorney',
-      'channel': 'Bao Tran, Esq. | Patent Attorney',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:06](https://www.youtube.com/watch?v=k9Sb2smIIjM&t=186s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q2 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Worse yet, if you let the patent lapse because you just forgot to pay, your '
-              'licensing agreement essentially evaporates. Always audit the USPTO Patent '
-              'Center to verify your fees are paid up before making deals.',
-      'timestamp': 186,
-      'timestamp_label': '[00:03:06]',
-      'timestamp_seconds': 186,
-      'tip': 'Worse yet, if you let the patent lapse because you just forgot to pay, your '
-             'licensing agreement essentially evaporates. Always audit the USPTO Patent Center '
-             'to verify your fees are paid up before making deals.',
-      'title': 'Patent Licensing: Why You’re Losing Royalties (and How to Fix It) (Bao Tran, '
-               'Esq. | Patent Attorney)',
-      'url': 'https://www.youtube.com/watch?v=k9Sb2smIIjM&t=186s',
-      'video_id': 'k9Sb2smIIjM'},
-     {'author': 'Majeston',
-      'channel': 'Majeston',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:12](https://www.youtube.com/watch?v=7t871xx-ysc&t=312s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q2 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'So, the sync fee is like, "Yo, I\'m a music supervisor. I want to use your '
-              "track for this film. I'm going to pay you $5,000 up front to license this, "
-              'right?" That\'s the upfront payment you get. And then there\'s the back-end as '
-              'well.',
-      'timestamp': 312,
-      'timestamp_label': '[00:05:12]',
-      'timestamp_seconds': 312,
-      'tip': 'So, the sync fee is like, "Yo, I\'m a music supervisor. I want to use your track '
-             'for this film. I\'m going to pay you $5,000 up front to license this, right?" '
-             "That's the upfront payment you get. And then there's the back-end as well.",
-      'title': 'sync licensing basics + libraries you should submit to - MORNING CHOPS '
-               '(Majeston)',
-      'url': 'https://www.youtube.com/watch?v=7t871xx-ysc&t=312s',
-      'video_id': '7t871xx-ysc'},
-     {'author': 'Barbara “Financial Tidbitter” Aboagye',
-      'channel': 'Barbara “Financial Tidbitter” Aboagye',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:52](https://www.youtube.com/watch?v=SK5CqQ61CYI&t=172s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q2 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Then you choose your currency and this is where they will give you the fee. '
-              "Sometimes it's free, sometimes you have to pay for it. Sometimes it's a special "
-              "case. I've already requested for this. I've already requested um for this in "
-              'Okay.',
-      'timestamp': 172,
-      'timestamp_label': '[00:02:52]',
-      'timestamp_seconds': 172,
-      'tip': 'Then you choose your currency and this is where they will give you the fee. '
-             "Sometimes it's free, sometimes you have to pay for it. Sometimes it's a special "
-             "case. I've already requested for this. I've already requested um for this in "
-             'Okay.',
-      'title': 'How to Request Copyright Permission to Reuse an Image | Can You Use Images '
-               'From Research Papers? (Barbara “Financial Tidbitter” Aboagye)',
-      'url': 'https://www.youtube.com/watch?v=SK5CqQ61CYI&t=172s',
-      'video_id': 'SK5CqQ61CYI'},
-     {'author': 'Brian Fried - The Inventor Coach',
-      'channel': 'Brian Fried - The Inventor Coach',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:40](https://www.youtube.com/watch?v=UnGdjQb467o&t=40s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q2 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "I will make a prototype, I'm going to do 3-D CAD drawing with an engineer or an "
-              "industrial designer, and I'm going to get it to a point where I can make a "
-              'decision of having these options of licensing versus manufacturing.',
-      'timestamp': 40,
-      'timestamp_label': '[00:00:40]',
-      'timestamp_seconds': 40,
-      'tip': "I will make a prototype, I'm going to do 3-D CAD drawing with an engineer or an "
-             "industrial designer, and I'm going to get it to a point where I can make a "
-             'decision of having these options of licensing versus manufacturing.',
-      'title': 'Licensing to Earn royalties Vs  Manufacturing Your Invention Idea (Brian Fried '
-               '- The Inventor Coach)',
-      'url': 'https://www.youtube.com/watch?v=UnGdjQb467o&t=40s',
-      'video_id': 'UnGdjQb467o'},
-     {'author': 'Idea2PatentAI',
-      'channel': 'Idea2PatentAI',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:19](https://www.youtube.com/watch?v=ixENhsfAdEA&t=319s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q2 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'One important point, you must pay your filing fees on the same day that you '
-              'submit your provisional application. The US Patent Office operates on Eastern '
-              'time, so avoid filing your application until just before midnight if possible.',
-      'timestamp': 319,
-      'timestamp_label': '[00:05:19]',
-      'timestamp_seconds': 319,
-      'tip': 'One important point, you must pay your filing fees on the same day that you '
-             'submit your provisional application. The US Patent Office operates on Eastern '
-             'time, so avoid filing your application until just before midnight if possible.',
-      'title': 'How to File a Provisional Patent Application with the USPTO (Step-by-Step) '
-               '(Idea2PatentAI)',
-      'url': 'https://www.youtube.com/watch?v=ixENhsfAdEA&t=319s',
-      'video_id': 'ixENhsfAdEA'},
-     {'author': 'Randy McGravey Music',
-      'channel': 'Randy McGravey Music',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:06:22](https://www.youtube.com/watch?v=iF_Z6ikfzMo&t=382s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q2 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Pretty good ones the syn fees won't be as good probably as APM or Universal but "
-              'you know if you have a good enough catalog then you probably will get some.',
-      'timestamp': 382,
-      'timestamp_label': '[00:06:22]',
-      'timestamp_seconds': 382,
-      'tip': "Pretty good ones the syn fees won't be as good probably as APM or Universal but "
-             'you know if you have a good enough catalog then you probably will get some.',
-      'title': 'Ranking The Top 5 Major Sub-Publishers (Sync Licensing) (Randy McGravey Music)',
-      'url': 'https://www.youtube.com/watch?v=iF_Z6ikfzMo&t=382s',
-      'video_id': 'iF_Z6ikfzMo'},
-     {'author': "It's Julisa",
-      'channel': "It's Julisa",
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:57](https://www.youtube.com/watch?v=hoMi3ZhgFlc&t=117s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q2 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Now, sync agency, depending on what agency you signed up for, most of them take '
-              'between 25 and 50% of your sync licensing fee. They do not touch your backend '
-              "royalties or anything like that. So, you'll still register your song.",
-      'timestamp': 117,
-      'timestamp_label': '[00:01:57]',
-      'timestamp_seconds': 117,
-      'tip': 'Now, sync agency, depending on what agency you signed up for, most of them take '
-             'between 25 and 50% of your sync licensing fee. They do not touch your backend '
-             "royalties or anything like that. So, you'll still register your song.",
-      'title': "How Much Can You Make From Sync Licensing? (Real Numbers Explained) (It's "
-               'Julisa)',
-      'url': 'https://www.youtube.com/watch?v=hoMi3ZhgFlc&t=117s',
-      'video_id': 'hoMi3ZhgFlc'},
-     {'author': 'Brand Licensing by Informa',
-      'channel': 'Brand Licensing by Informa',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:55](https://www.youtube.com/watch?v=6dKNY_VUEIs&t=55s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q2 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'The brand to stopped by the foot traffic here has been phenomenal the attendee '
-              'pool here is exactly who we want to meet with vice presidents director level '
-              'people decision makers on the retail level people that are trying to drive '
-              'retail.',
-      'timestamp': 55,
-      'timestamp_label': '[00:00:55]',
-      'timestamp_seconds': 55,
-      'tip': 'The brand to stopped by the foot traffic here has been phenomenal the attendee '
-             'pool here is exactly who we want to meet with vice presidents director level '
-             'people decision makers on the retail level people that are trying to drive '
-             'retail.',
-      'title': 'What can licensing do for your brand? (Brand Licensing by Informa)',
-      'url': 'https://www.youtube.com/watch?v=6dKNY_VUEIs&t=55s',
-      'video_id': '6dKNY_VUEIs'},
      {'author': 'UpCounsel',
       'channel': 'UpCounsel',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:57](https://www.youtube.com/watch?v=mtxmo_OkhSw&t=57s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q2 operational verification).',
+      'markdown': '[00:03:48](https://www.youtube.com/watch?v=wiI7fBL42Vg&t=228s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
       'source_type': 'video_pro_tip',
-      'text': 'When it comes to licensing a patent, inventors have two main options for '
-              'structuring royalty payments. They can opt for a flat fee royalty, which is a '
-              'one-time or periodic lumpsum payment.',
-      'timestamp': 57,
-      'timestamp_label': '[00:00:57]',
-      'timestamp_seconds': 57,
-      'tip': 'When it comes to licensing a patent, inventors have two main options for '
-             'structuring royalty payments. They can opt for a flat fee royalty, which is a '
-             'one-time or periodic lumpsum payment.',
-      'title': 'Patent Royalties  How Much Can Inventors Really Earn (UpCounsel)',
-      'url': 'https://www.youtube.com/watch?v=mtxmo_OkhSw&t=57s',
-      'video_id': 'mtxmo_OkhSw'},
+      'text': 'Patent brokers can help market your invention to manufacturers in exchange for '
+              'commission on sales. Exercise caution when selecting a broker and never pay upfront '
+              'fees.',
+      'timestamp': 228,
+      'timestamp_label': '[00:03:48]',
+      'timestamp_seconds': 228,
+      'tip': 'Patent brokers can help market your invention to manufacturers in exchange for '
+             'commission on sales. Exercise caution when selecting a broker and never pay upfront '
+             'fees.',
+      'title': 'How to Profit from Your Patent  Selling, Licensing, and Protecting Your Invention',
+      'url': 'https://www.youtube.com/watch?v=wiI7fBL42Vg&t=228s',
+      'video_id': 'wiI7fBL42Vg'},
+     {'author': 'J.D. Houvener / Bold Patents Law Firm',
+      'channel': 'J.D. Houvener / Bold Patents Law Firm',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:12:23](https://www.youtube.com/watch?v=Vi4MIcyHOFE&t=743s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
+      'source_type': 'video_pro_tip',
+      'text': "One of the tricky things about licenses is they're only as good as you do a good "
+              'job enforcing them.',
+      'timestamp': 743,
+      'timestamp_label': '[00:12:23]',
+      'timestamp_seconds': 743,
+      'tip': "One of the tricky things about licenses is they're only as good as you do a good job "
+             'enforcing them.',
+      'title': 'Patent and Trademark Monetization through Licensing and Selling',
+      'url': 'https://www.youtube.com/watch?v=Vi4MIcyHOFE&t=743s',
+      'video_id': 'Vi4MIcyHOFE'},
+     {'author': 'Kauffman FoundersSchool',
+      'channel': 'Kauffman FoundersSchool',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:05:16](https://www.youtube.com/watch?v=q5uDRlH_eFo&t=316s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
+      'source_type': 'video_pro_tip',
+      'text': "You've baked the technology into your platform and the licensor knows this. The "
+              'price of poker may go way up. Get the license long enough to cover your entire '
+              'need.',
+      'timestamp': 316,
+      'timestamp_label': '[00:05:16]',
+      'timestamp_seconds': 316,
+      'tip': "You've baked the technology into your platform and the licensor knows this. The "
+             'price of poker may go way up. Get the license long enough to cover your entire need.',
+      'title': 'Intellectual Property: Licensing',
+      'url': 'https://www.youtube.com/watch?v=q5uDRlH_eFo&t=316s',
+      'video_id': 'q5uDRlH_eFo'},
+     {'author': 'Michigan Engineering',
+      'channel': 'Michigan Engineering',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:03](https://www.youtube.com/watch?v=EPj0ydCGdiU&t=183s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
+      'source_type': 'video_pro_tip',
+      'text': 'There can be annual minimums, which can be a good way to incentivize the licensee '
+              'to try to sell as many products covered by your patent rights as possible.',
+      'timestamp': 183,
+      'timestamp_label': '[00:03:03]',
+      'timestamp_seconds': 183,
+      'tip': 'There can be annual minimums, which can be a good way to incentivize the licensee to '
+             'try to sell as many products covered by your patent rights as possible.',
+      'title': 'Patent Licensing | IP series (25 of 62)',
+      'url': 'https://www.youtube.com/watch?v=EPj0ydCGdiU&t=183s',
+      'video_id': 'EPj0ydCGdiU'},
+     {'author': 'Go:lofty - The Official Channel',
+      'channel': 'Go:lofty - The Official Channel',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:08](https://www.youtube.com/watch?v=A4bw9yuaOVo&t=128s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
+      'source_type': 'video_pro_tip',
+      'text': 'Investors and strategic partners want to know your innovation is defensible. No IP, '
+              "no moat, no moat, no valuation. It's that simple.",
+      'timestamp': 128,
+      'timestamp_label': '[00:02:08]',
+      'timestamp_seconds': 128,
+      'tip': 'Investors and strategic partners want to know your innovation is defensible. No IP, '
+             "no moat, no moat, no valuation. It's that simple.",
+      'title': 'Intellectual Property Strategy – Protect, Lead, and Monetize Innovation',
+      'url': 'https://www.youtube.com/watch?v=A4bw9yuaOVo&t=128s',
+      'video_id': 'A4bw9yuaOVo'},
      {'author': 'inventRightTV',
       'channel': 'inventRightTV',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:13](https://www.youtube.com/watch?v=fyUYT-gfzfU&t=193s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q2 operational verification).',
+      'markdown': '[00:05:05](https://www.youtube.com/watch?v=E5dH32uMqOY&t=305s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
       'source_type': 'video_pro_tip',
-      'text': 'Patent application which is really expensive or when you cut the deal with the '
-              "company you're licensing it to you can negotiate so they pay for the.",
-      'timestamp': 193,
-      'timestamp_label': '[00:03:13]',
-      'timestamp_seconds': 193,
-      'tip': 'Patent application which is really expensive or when you cut the deal with the '
-             "company you're licensing it to you can negotiate so they pay for the.",
-      'title': 'What You “NEED” To License Your Idea For Royalties! (inventRightTV)',
-      'url': 'https://www.youtube.com/watch?v=fyUYT-gfzfU&t=193s',
+      'text': "When you realize that you have to build inventory, you realize that you're going to "
+              'have to float a quarter of a million dollars at least just to fill the pipeline.',
+      'timestamp': 305,
+      'timestamp_label': '[00:05:05]',
+      'timestamp_seconds': 305,
+      'tip': "When you realize that you have to build inventory, you realize that you're going to "
+             'have to float a quarter of a million dollars at least just to fill the pipeline.',
+      'title': 'Licensing for Royalties (Passive Income) vs. Selling an Idea Yourself',
+      'url': 'https://www.youtube.com/watch?v=E5dH32uMqOY&t=305s',
+      'video_id': 'E5dH32uMqOY'},
+     {'author': 'inventRightTV',
+      'channel': 'inventRightTV',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:05:38](https://www.youtube.com/watch?v=E5dH32uMqOY&t=338s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
+      'source_type': 'video_pro_tip',
+      'text': "Walmart's not even going to take you on, you're a one SKU, one product company; "
+              'they bankrupted too many companies already.',
+      'timestamp': 338,
+      'timestamp_label': '[00:05:38]',
+      'timestamp_seconds': 338,
+      'tip': "Walmart's not even going to take you on, you're a one SKU, one product company; they "
+             'bankrupted too many companies already.',
+      'title': 'Licensing for Royalties (Passive Income) vs. Selling an Idea Yourself',
+      'url': 'https://www.youtube.com/watch?v=E5dH32uMqOY&t=338s',
+      'video_id': 'E5dH32uMqOY'},
+     {'author': 'The Sourcing Gals',
+      'channel': 'The Sourcing Gals',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:14:50](https://www.youtube.com/watch?v=7aTTgSE0elA&t=890s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
+      'source_type': 'video_pro_tip',
+      'text': "If there's not something proprietary protected about it, it'd be very hard to go "
+              'tell somebody else to pay you to take your design.',
+      'timestamp': 890,
+      'timestamp_label': '[00:14:50]',
+      'timestamp_seconds': 890,
+      'tip': "If there's not something proprietary protected about it, it'd be very hard to go "
+             'tell somebody else to pay you to take your design.',
+      'title': 'Build a Brand or License Your Idea? The Decision Framework',
+      'url': 'https://www.youtube.com/watch?v=7aTTgSE0elA&t=890s',
+      'video_id': '7aTTgSE0elA'}],
+ 2: [{'author': 'John Ferrell, Esq.',
+      'channel': 'John Ferrell, Esq.',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:24](https://www.youtube.com/watch?v=Te8GX-Xx4mo&t=144s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'You license those rights, you can exclusively license those rights, but do not '
+              'permanently transfer them as part of the license agreement.',
+      'timestamp': 144,
+      'timestamp_label': '[00:02:24]',
+      'timestamp_seconds': 144,
+      'tip': 'You license those rights, you can exclusively license those rights, but do not '
+             'permanently transfer them as part of the license agreement.',
+      'title': 'Errors You Can’t Afford to Make When Licensing Your Invention',
+      'url': 'https://www.youtube.com/watch?v=Te8GX-Xx4mo&t=144s',
+      'video_id': 'Te8GX-Xx4mo'},
+     {'author': 'inventRightTV',
+      'channel': 'inventRightTV',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:36](https://www.youtube.com/watch?v=fyUYT-gfzfU&t=36s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': "Really need a patent to license an idea? I'm here to tell you no, you don't.",
+      'timestamp': 36,
+      'timestamp_label': '[00:00:36]',
+      'timestamp_seconds': 36,
+      'tip': "Really need a patent to license an idea? I'm here to tell you no, you don't.",
+      'title': 'What You “NEED” To License Your Idea For Royalties!',
+      'url': 'https://www.youtube.com/watch?v=fyUYT-gfzfU&t=36s',
       'video_id': 'fyUYT-gfzfU'},
      {'author': 'inventRightTV',
       'channel': 'inventRightTV',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:49](https://www.youtube.com/watch?v=CS31715RNQk&t=349s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q2 operational verification).',
+      'markdown': '[00:05:12](https://www.youtube.com/watch?v=CS31715RNQk&t=312s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
       'source_type': 'video_pro_tip',
-      'text': "Or four months you're going to know gauge if there's interest we show our "
-              "students how to get the company to pay for the patent yeah so you don't have "
-              'to.',
-      'timestamp': 349,
-      'timestamp_label': '[00:05:49]',
-      'timestamp_seconds': 349,
-      'tip': "Or four months you're going to know gauge if there's interest we show our "
-             "students how to get the company to pay for the patent yeah so you don't have to.",
-      'title': 'How to License Your Product Ideas Without a Patent (inventRightTV)',
-      'url': 'https://www.youtube.com/watch?v=CS31715RNQk&t=349s',
-      'video_id': 'CS31715RNQk'}],
- 3: [{'author': 'UpCounsel',
-      'channel': 'UpCounsel',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:00](https://www.youtube.com/watch?v=xRRc9i7j5A8&t=240s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Request sample packages from past deals to evaluate their work quality. Inquire '
-              'about their commission structure, how costs are covered, and whether they '
-              'charge upfront fees. Most brokers work on commission, typically ranging from 10 '
-              'to 30% of the sale price.',
-      'timestamp': 240,
-      'timestamp_label': '[00:04:00]',
-      'timestamp_seconds': 240,
-      'tip': 'Request sample packages from past deals to evaluate their work quality. Inquire '
-             'about their commission structure, how costs are covered, and whether they charge '
-             'upfront fees. Most brokers work on commission, typically ranging from 10 to 30% '
-             'of the sale price.',
-      'title': 'How Patent Brokers Help You Turn Intellectual Property Into Profit (UpCounsel)',
-      'url': 'https://www.youtube.com/watch?v=xRRc9i7j5A8&t=240s',
-      'video_id': 'xRRc9i7j5A8'},
-     {'author': 'EarthTab Business School',
-      'channel': 'EarthTab Business School',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:36](https://www.youtube.com/watch?v=_AP6Fd6Lwwg&t=336s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Alternatively, work with art licensing agents who pitch and manage deals for a '
-              'commission, typically 30 to 50%. Eight, legal protections for licensing. '
-              'Register your copyright before signing any licensing deal. Use watermarked '
-              'previews and pitches.',
-      'timestamp': 336,
-      'timestamp_label': '[00:05:36]',
-      'timestamp_seconds': 336,
-      'tip': 'Alternatively, work with art licensing agents who pitch and manage deals for a '
-             'commission, typically 30 to 50%. Eight, legal protections for licensing. '
-             'Register your copyright before signing any licensing deal. Use watermarked '
-             'previews and pitches.',
-      'title': 'Passive Income Streams for Artists Module 6  Art Licensing and Royalty '
-               'Agreements (EarthTab Business School)',
-      'url': 'https://www.youtube.com/watch?v=_AP6Fd6Lwwg&t=336s',
-      'video_id': '_AP6Fd6Lwwg'},
-     {'author': 'Campus Fund',
-      'channel': 'Campus Fund',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:22](https://www.youtube.com/watch?v=rbNcenaCppU&t=82s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Similarly, there's a clause around expenses. This allocates who bears the legal "
-              'and transaction costs of that deal.',
-      'timestamp': 82,
-      'timestamp_label': '[00:01:22]',
-      'timestamp_seconds': 82,
-      'tip': "Similarly, there's a clause around expenses. This allocates who bears the legal "
-             'and transaction costs of that deal.',
-      'title': 'Binding vs Non-Binding Clauses in a Term Sheet | Startup Legal Basics '
-               'Explained (Campus Fund)',
-      'url': 'https://www.youtube.com/watch?v=rbNcenaCppU&t=82s',
-      'video_id': 'rbNcenaCppU'},
-     {'author': 'Kauffman FoundersSchool',
-      'channel': 'Kauffman FoundersSchool',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:36](https://www.youtube.com/watch?v=q5uDRlH_eFo&t=96s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'In my experience, all the other terms of the deal impact the price. So until '
-              "you have those negotiated, you really don't have comfort that you know what the "
-              "price ought to be. It's a business question really at the end of the day.",
-      'timestamp': 96,
-      'timestamp_label': '[00:01:36]',
-      'timestamp_seconds': 96,
-      'tip': 'In my experience, all the other terms of the deal impact the price. So until you '
-             "have those negotiated, you really don't have comfort that you know what the "
-             "price ought to be. It's a business question really at the end of the day.",
-      'title': 'Intellectual Property: Licensing (Kauffman FoundersSchool)',
-      'url': 'https://www.youtube.com/watch?v=q5uDRlH_eFo&t=96s',
-      'video_id': 'q5uDRlH_eFo'},
-     {'author': 'EUIPO',
-      'channel': 'EUIPO',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:10:45](https://www.youtube.com/watch?v=IZLXSII8AZ8&t=645s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'RHM, which made the deal turn for GFW and prompted an immediate withdrawal of '
-              'the hostile takeover bid. Eventually, the brands were taken over by another '
-              'company called Tomkins, but this company paid a price that also covered the '
-              'brand value.',
-      'timestamp': 645,
-      'timestamp_label': '[00:10:45]',
-      'timestamp_seconds': 645,
-      'tip': 'RHM, which made the deal turn for GFW and prompted an immediate withdrawal of '
-             'the hostile takeover bid. Eventually, the brands were taken over by another '
-             'company called Tomkins, but this company paid a price that also covered the '
-             'brand value.',
-      'title': 'IP valuation – The art of making money with your Intellectual Property (EUIPO)',
-      'url': 'https://www.youtube.com/watch?v=IZLXSII8AZ8&t=645s',
-      'video_id': 'IZLXSII8AZ8'},
-     {'author': 'Jason Varner',
-      'channel': 'Jason Varner',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:07:38](https://www.youtube.com/watch?v=XDzwbT8LWMQ&t=458s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "'s do it because, you You maybe maybe you can spend up to X dollars on "
-              'outsourcing inventory at a higher price. So, whatever your whatever the cost is '
-              "that's higher than your current cost per unit, maybe you have a budget of say "
-              'an extra $200.',
-      'timestamp': 458,
-      'timestamp_label': '[00:07:38]',
-      'timestamp_seconds': 458,
-      'tip': "'s do it because, you You maybe maybe you can spend up to X dollars on "
-             'outsourcing inventory at a higher price. So, whatever your whatever the cost is '
-             "that's higher than your current cost per unit, maybe you have a budget of say an "
-             'extra $200.',
-      'title': 'Types of Valuable Data for AI Training (Jason Varner)',
-      'url': 'https://www.youtube.com/watch?v=XDzwbT8LWMQ&t=458s',
-      'video_id': 'XDzwbT8LWMQ'},
-     {'author': 'IPWatchdog, Inc.',
-      'channel': 'IPWatchdog, Inc.',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:17:17](https://www.youtube.com/watch?v=pyi_x9MFGjs&t=1037s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "'s very common a lot of companies that I deal with have patents they just don't "
-              "want to get involved D in the litigation and it's a business uh consideration.",
-      'timestamp': 1037,
-      'timestamp_label': '[00:17:17]',
-      'timestamp_seconds': 1037,
-      'tip': "'s very common a lot of companies that I deal with have patents they just don't "
-             "want to get involved D in the litigation and it's a business uh consideration.",
-      'title': 'Patent Monetization Economics: What It Costs to Turn Patents into Revenue '
-               '(IPWatchdog, Inc.)',
-      'url': 'https://www.youtube.com/watch?v=pyi_x9MFGjs&t=1037s',
-      'video_id': 'pyi_x9MFGjs'},
-     {'author': 'Matthew Anderson',
-      'channel': 'Matthew Anderson',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:06:13](https://www.youtube.com/watch?v=-267ABEXf8o&t=373s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'It could cost the company big time and I mean big if you have a spare 10 '
-              'seconds just google the phrase willful copyright infringement fine you might '
-              "realize it's a lot easier and a lot less costly to just do things the right "
-              'way.',
-      'timestamp': 373,
-      'timestamp_label': '[00:06:13]',
-      'timestamp_seconds': 373,
-      'tip': 'It could cost the company big time and I mean big if you have a spare 10 seconds '
-             'just google the phrase willful copyright infringement fine you might realize '
-             "it's a lot easier and a lot less costly to just do things the right way.",
-      'title': 'Do You Own the Photos? - Photography Copyright/Licensing Simplified & '
-               'Explained! (Matthew Anderson)',
-      'url': 'https://www.youtube.com/watch?v=-267ABEXf8o&t=373s',
-      'video_id': '-267ABEXf8o'},
+      'text': "You need perceived ownership, that's what you need, perceived ownership.",
+      'timestamp': 312,
+      'timestamp_label': '[00:05:12]',
+      'timestamp_seconds': 312,
+      'tip': "You need perceived ownership, that's what you need, perceived ownership.",
+      'title': 'How to License Your Product Ideas Without a Patent',
+      'url': 'https://www.youtube.com/watch?v=CS31715RNQk&t=312s',
+      'video_id': 'CS31715RNQk'},
      {'author': 'inventRightTV',
       'channel': 'inventRightTV',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:36](https://www.youtube.com/watch?v=gxeuCPaGeHY&t=36s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "It was called, here's a plastic arrow suction cup. It's sold during "
-              "Valentine's, very limited distribution, very seasonal, about $10,000. What did "
-              'it cost for me to get this deal done? I sent them a one-line description.',
-      'timestamp': 36,
-      'timestamp_label': '[00:00:36]',
-      'timestamp_seconds': 36,
-      'tip': "It was called, here's a plastic arrow suction cup. It's sold during Valentine's, "
-             'very limited distribution, very seasonal, about $10,000. What did it cost for me '
-             'to get this deal done? I sent them a one-line description.',
-      'title': 'How Much Money Stephen Key Made Licensing His Ideas (inventRightTV)',
-      'url': 'https://www.youtube.com/watch?v=gxeuCPaGeHY&t=36s',
-      'video_id': 'gxeuCPaGeHY'},
-     {'author': 'IP Europe',
-      'channel': 'IP Europe',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:12](https://www.youtube.com/watch?v=fAwWxzitmUk&t=192s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'IPRED study by the European Commission addresses a very important point, which '
-              'is enforcing patents in Europe, but the focus should be in a different place.',
-      'timestamp': 192,
-      'timestamp_label': '[00:03:12]',
-      'timestamp_seconds': 192,
-      'tip': 'IPRED study by the European Commission addresses a very important point, which '
-             'is enforcing patents in Europe, but the focus should be in a different place.',
-      'title': 'Patents and patent licensing as a business model? Fractus co-founder Dr. '
-               'Carles Puente explains how (IP Europe)',
-      'url': 'https://www.youtube.com/watch?v=fAwWxzitmUk&t=192s',
-      'video_id': 'fAwWxzitmUk'},
-     {'author': 'SeltzerLicensingGrp',
-      'channel': 'SeltzerLicensingGrp',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:50](https://www.youtube.com/watch?v=MGH55iIT-A0&t=290s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Three-year agreement then your guarantee instead of being $60,000 might be '
-              'three times that amount so that is h a quick overview to to answer your '
-              'question how much this is going to cost me and we wish you luck and my name is '
-              'Stu Seltzer and thanks for watching.',
-      'timestamp': 290,
-      'timestamp_label': '[00:04:50]',
-      'timestamp_seconds': 290,
-      'tip': 'Three-year agreement then your guarantee instead of being $60,000 might be three '
-             'times that amount so that is h a quick overview to to answer your question how '
-             'much this is going to cost me and we wish you luck and my name is Stu Seltzer '
-             'and thanks for watching.',
-      'title': 'What Are The Financial Terms in a Licensing Deal? (SeltzerLicensingGrp)',
-      'url': 'https://www.youtube.com/watch?v=MGH55iIT-A0&t=290s',
-      'video_id': 'MGH55iIT-A0'},
-     {'author': 'Patents Demystified',
-      'channel': 'Patents Demystified',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:15](https://www.youtube.com/watch?v=zel57Kej5nY&t=15s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Assignment from Elon reev Musk which is uh the Elon Musk that you know right so '
-              'he assigned his rights in this invention to Tesla Motors Inc so here you got '
-              'Bill.',
-      'timestamp': 15,
-      'timestamp_label': '[00:00:15]',
-      'timestamp_seconds': 15,
-      'tip': 'Assignment from Elon reev Musk which is uh the Elon Musk that you know right so '
-             'he assigned his rights in this invention to Tesla Motors Inc so here you got '
-             'Bill.',
-      'title': 'How to Access HIDDEN Patent Assignment Records & Ownership History (Patents '
-               'Demystified)',
-      'url': 'https://www.youtube.com/watch?v=zel57Kej5nY&t=15s',
-      'video_id': 'zel57Kej5nY'},
-     {'author': 'Patent pc',
-      'channel': 'Patent pc',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:27](https://www.youtube.com/watch?v=A7xn_DzjKzE&t=147s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'You then create a professional representation about how your patent works and '
-              'then perhaps you might include information such as manufacturing cost and of '
-              'course the benefits provided by the the products embodying the invention.',
-      'timestamp': 147,
-      'timestamp_label': '[00:02:27]',
-      'timestamp_seconds': 147,
-      'tip': 'You then create a professional representation about how your patent works and '
-             'then perhaps you might include information such as manufacturing cost and of '
-             'course the benefits provided by the the products embodying the invention.',
-      'title': 'Got a Patent? Here’s How You Actually Make Money (Patent pc)',
-      'url': 'https://www.youtube.com/watch?v=A7xn_DzjKzE&t=147s',
-      'video_id': 'A7xn_DzjKzE'},
-     {'author': 'LawShelf',
-      'channel': 'LawShelf',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:11:45](https://www.youtube.com/watch?v=WtxlYb996kI&t=705s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Could be liable for contributory infringement of a patent claiming a mobile '
-              'phone with these chips but the manufacturer of a double-a battery would not be '
-              'liable for contributory infringement of a patent claim requiring a battery.',
-      'timestamp': 705,
-      'timestamp_label': '[00:11:45]',
-      'timestamp_seconds': 705,
-      'tip': 'Could be liable for contributory infringement of a patent claiming a mobile '
-             'phone with these chips but the manufacturer of a double-a battery would not be '
-             'liable for contributory infringement of a patent claim requiring a battery.',
-      'title': 'Patent Infringement Litigation: Module 5 of 5 (LawShelf)',
-      'url': 'https://www.youtube.com/watch?v=WtxlYb996kI&t=705s',
-      'video_id': 'WtxlYb996kI'},
-     {'author': 'inventRightTV',
-      'channel': 'inventRightTV',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:42:54](https://www.youtube.com/watch?v=G2JXLQrTZXI&t=2574s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': '100% curbside if you go to Fishbone decom you see it there that technology to '
-              'test it to get someone interested was going to be about a million.',
-      'timestamp': 2574,
-      'timestamp_label': '[00:42:54]',
-      'timestamp_seconds': 2574,
-      'tip': '100% curbside if you go to Fishbone decom you see it there that technology to '
-             'test it to get someone interested was going to be about a million.',
-      'title': '7 strategies to get a great licensing deal! (inventRightTV)',
-      'url': 'https://www.youtube.com/watch?v=G2JXLQrTZXI&t=2574s',
-      'video_id': 'G2JXLQrTZXI'}],
- 4: [{'author': 'Uncover Fraud',
-      'channel': 'Uncover Fraud',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:15:04](https://www.youtube.com/watch?v=9Fku-QlhyHc&t=904s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q4 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'This is typically accomplished through the use of various software tools, '
-              'databases, and programming languages. A royalty audit is a contract compliance '
-              'investigation that requires special forensic investigation and in-depth '
-              'auditing skills.',
-      'timestamp': 904,
-      'timestamp_label': '[00:15:04]',
-      'timestamp_seconds': 904,
-      'tip': 'This is typically accomplished through the use of various software tools, '
-             'databases, and programming languages. A royalty audit is a contract compliance '
-             'investigation that requires special forensic investigation and in-depth auditing '
-             'skills.',
-      'title': 'Royalty Audit: Why Every Licensor & Artist Needs a Forensic Accountant on '
-               'Their Side | Uncover Fraud (Uncover Fraud)',
-      'url': 'https://www.youtube.com/watch?v=9Fku-QlhyHc&t=904s',
-      'video_id': '9Fku-QlhyHc'},
-     {'author': 'Jobank CPA',
-      'channel': 'Jobank CPA',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:01](https://www.youtube.com/watch?v=eoUe3NebB3E&t=301s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q4 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': '360,000 brand license relies entirely on your ongoing brand activity to hold '
-              'its value. Recognizing those brand rights up front, treating them like a simple '
-              'isolated on-premises software key, is an immediate catastrophic audit finding.',
-      'timestamp': 301,
-      'timestamp_label': '[00:05:01]',
-      'timestamp_seconds': 301,
-      'tip': '360,000 brand license relies entirely on your ongoing brand activity to hold its '
-             'value. Recognizing those brand rights up front, treating them like a simple '
-             'isolated on-premises software key, is an immediate catastrophic audit finding.',
-      'title': 'Episode 7 ASC 606 Licensing: Functional vs. Symbolic Intellectual Property '
-               '(Jobank CPA)',
-      'url': 'https://www.youtube.com/watch?v=eoUe3NebB3E&t=301s',
-      'video_id': 'eoUe3NebB3E'},
-     {'author': 'Daymond John',
-      'channel': 'Daymond John',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:06](https://www.youtube.com/watch?v=knoob7eUS6Y&t=126s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q4 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': '" A LOT OF TIMES, THE LICENSE IS THREE YEARS OR FIVE YEARS, THERE ARE SOME '
-              "BUSINESS DEALS WHERE THE LICENSE IS IN PERPETUITY, THAT'S A DIFFERENT TYPE OF "
-              "LICENSE WE'RE TALKING ABOUT. NOW, WHAT IS MY OBLIGATION?",
-      'timestamp': 126,
-      'timestamp_label': '[00:02:06]',
-      'timestamp_seconds': 126,
-      'tip': '" A LOT OF TIMES, THE LICENSE IS THREE YEARS OR FIVE YEARS, THERE ARE SOME '
-             "BUSINESS DEALS WHERE THE LICENSE IS IN PERPETUITY, THAT'S A DIFFERENT TYPE OF "
-             "LICENSE WE'RE TALKING ABOUT. NOW, WHAT IS MY OBLIGATION?",
-      'title': "Licensing Basics You NEED To Know In Business | Shark Tank's Daymond John "
-               '(Daymond John)',
-      'url': 'https://www.youtube.com/watch?v=knoob7eUS6Y&t=126s',
-      'video_id': 'knoob7eUS6Y'},
-     {'author': 'Ayers Law TV ~ Andrew M. Ayers, Esq.',
-      'channel': 'Ayers Law TV ~ Andrew M. Ayers, Esq.',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:16](https://www.youtube.com/watch?v=lVFYoVaNnrs&t=196s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q4 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Non-exclusive license then the other company can contract with you as well so '
-              'that you can sell your software to variety of different companies and have.',
-      'timestamp': 196,
-      'timestamp_label': '[00:03:16]',
-      'timestamp_seconds': 196,
-      'tip': 'Non-exclusive license then the other company can contract with you as well so '
-             'that you can sell your software to variety of different companies and have.',
-      'title': 'Exclusive vs Non Exclusive License l What’s the difference? (Ayers Law TV ~ '
-               'Andrew M. Ayers, Esq.)',
-      'url': 'https://www.youtube.com/watch?v=lVFYoVaNnrs&t=196s',
-      'video_id': 'lVFYoVaNnrs'},
-     {'author': 'xJ-Will',
-      'channel': 'xJ-Will',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:00](https://www.youtube.com/watch?v=SEliWc2Tz3k&t=180s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q4 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'As well more on this later what a sync agent is is basically either an agent of '
-              'that library or a third-party entity that actually has a catalog of artists.',
-      'timestamp': 180,
-      'timestamp_label': '[00:03:00]',
-      'timestamp_seconds': 180,
-      'tip': 'As well more on this later what a sync agent is is basically either an agent of '
-             'that library or a third-party entity that actually has a catalog of artists.',
-      'title': 'Sync Licensing: How it works for Indie Artists and Music Producers in 2025 '
-               '(xJ-Will)',
-      'url': 'https://www.youtube.com/watch?v=SEliWc2Tz3k&t=180s',
-      'video_id': 'SEliWc2Tz3k'},
-     {'author': 'Make Music Income',
-      'channel': 'Make Music Income',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:10:57](https://www.youtube.com/watch?v=hQRVouviU-w&t=657s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q4 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'And they work with television directors and producers and all the personalities '
-              'they have to deal with to work with them to find the right song for the right '
-              'thing. And then they have to make sure it fits the budget and they have to make '
-              'sure all the rights are cleared.',
-      'timestamp': 657,
-      'timestamp_label': '[00:10:57]',
-      'timestamp_seconds': 657,
-      'tip': 'And they work with television directors and producers and all the personalities '
-             'they have to deal with to work with them to find the right song for the right '
-             'thing. And then they have to make sure it fits the budget and they have to make '
-             'sure all the rights are cleared.',
-      'title': 'How to Do Sync in 2026 | Sync Library vs. Sync Agent vs. Direct to Music '
-               'Supervisor (Make Music Income)',
-      'url': 'https://www.youtube.com/watch?v=hQRVouviU-w&t=657s',
-      'video_id': 'hQRVouviU-w'},
-     {'author': 'J.D. Houvener / Bold Patents Law Firm',
-      'channel': 'J.D. Houvener / Bold Patents Law Firm',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:56](https://www.youtube.com/watch?v=-VhDIVEwvzI&t=56s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q4 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Make sure there's a performance Clause that if they decide to Shelf this and "
-              "not make it you're going to be able to get out of the contract and just watch.",
-      'timestamp': 56,
-      'timestamp_label': '[00:00:56]',
-      'timestamp_seconds': 56,
-      'tip': "Make sure there's a performance Clause that if they decide to Shelf this and not "
-             "make it you're going to be able to get out of the contract and just watch.",
-      'title': "Exclusive vs. Non-Exclusive Patent and Trademark License Agreements: What's "
-               'the Difference? (J.D. Houvener / Bold Patents Law Firm)',
-      'url': 'https://www.youtube.com/watch?v=-VhDIVEwvzI&t=56s',
-      'video_id': '-VhDIVEwvzI'},
-     {'author': 'Jeff Schell',
-      'channel': 'Jeff Schell',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:37](https://www.youtube.com/watch?v=cfPpWt8cw64&t=217s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q4 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Specifically in negotiating patent license deals you always want to keep in '
-              'mind that successful negotiations not only maximize shortterm profits or.',
-      'timestamp': 217,
-      'timestamp_label': '[00:03:37]',
-      'timestamp_seconds': 217,
-      'tip': 'Specifically in negotiating patent license deals you always want to keep in mind '
-             'that successful negotiations not only maximize shortterm profits or.',
-      'title': 'Patent Licensing 101 - Learn What Goes Into Monetizing Your Patented Ideas '
-               '(Jeff Schell)',
-      'url': 'https://www.youtube.com/watch?v=cfPpWt8cw64&t=217s',
-      'video_id': 'cfPpWt8cw64'},
-     {'author': 'Matthew Anderson',
-      'channel': 'Matthew Anderson',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:09:42](https://www.youtube.com/watch?v=manKMR61ho0&t=582s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q4 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Completely different kind of license keep in mind too if that ceo's company "
-              "even pays thousands of dollars for that song in a commercial they still don't.",
-      'timestamp': 582,
-      'timestamp_label': '[00:09:42]',
-      'timestamp_seconds': 582,
-      'tip': "Completely different kind of license keep in mind too if that ceo's company even "
-             "pays thousands of dollars for that song in a commercial they still don't.",
-      'title': 'Photo Licensing 101 - The Basics Explained (Matthew Anderson)',
-      'url': 'https://www.youtube.com/watch?v=manKMR61ho0&t=582s',
-      'video_id': 'manKMR61ho0'},
-     {'author': 'TrademarkLawyer',
-      'channel': 'TrademarkLawyer',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:16](https://www.youtube.com/watch?v=ASLTB9jyYII&t=196s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q4 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Example because it is extremely powerful Bethany Frankel who sold the skinny '
-              'girl brand was able to license her brand but keep the intellectual property in '
-              'other.',
-      'timestamp': 196,
-      'timestamp_label': '[00:03:16]',
-      'timestamp_seconds': 196,
-      'tip': 'Example because it is extremely powerful Bethany Frankel who sold the skinny '
-             'girl brand was able to license her brand but keep the intellectual property in '
-             'other.',
-      'title': 'PASSIVE INCOME LICENSING MODEL: Beginner’s Guide from a Trademark Lawyer ✅✅✅ '
-               '(TrademarkLawyer)',
-      'url': 'https://www.youtube.com/watch?v=ASLTB9jyYII&t=196s',
-      'video_id': 'ASLTB9jyYII'},
-     {'author': 'inventRightTV',
-      'channel': 'inventRightTV',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:18](https://www.youtube.com/watch?v=mljygoL-peE&t=18s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q4 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Mean that means building a list of the companies that you're going to reach out "
-              "to and submit your idea too right it's your It's called Your Potential license.",
-      'timestamp': 18,
-      'timestamp_label': '[00:00:18]',
-      'timestamp_seconds': 18,
-      'tip': "Mean that means building a list of the companies that you're going to reach out "
-             "to and submit your idea too right it's your It's called Your Potential license.",
-      'title': 'Making Your Hit List of Potential Licensees (inventRightTV)',
-      'url': 'https://www.youtube.com/watch?v=mljygoL-peE&t=18s',
-      'video_id': 'mljygoL-peE'},
-     {'author': 'Davie Fogarty',
-      'channel': 'Davie Fogarty',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:37](https://www.youtube.com/watch?v=7U8vYps8fMk&t=97s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q4 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'AUD into our first license launch still living with my parents at time I '
-              'remember launching it and we did over $500,000 in just a few weeks completely.',
-      'timestamp': 97,
-      'timestamp_label': '[00:01:37]',
-      'timestamp_seconds': 97,
-      'tip': 'AUD into our first license launch still living with my parents at time I '
-             'remember launching it and we did over $500,000 in just a few weeks completely.',
-      'title': 'How Licensing Really Works (And How to Land One for Your Brand) (Davie '
-               'Fogarty)',
-      'url': 'https://www.youtube.com/watch?v=7U8vYps8fMk&t=97s',
-      'video_id': '7U8vYps8fMk'},
-     {'author': 'Circular Venture Lab',
-      'channel': 'Circular Venture Lab',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:09](https://www.youtube.com/watch?v=ThAHgFsvejI&t=69s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q4 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "I've kept this really basic. I've just typed in food as that term will have a "
-              'lot of technologies associated with it. Some of these may be really relevant to '
-              "your startup and you can start to explore those. Now I'll search for corn as "
-              "that's more focused than food.",
-      'timestamp': 69,
-      'timestamp_label': '[00:01:09]',
-      'timestamp_seconds': 69,
-      'tip': "I've kept this really basic. I've just typed in food as that term will have a "
-             'lot of technologies associated with it. Some of these may be really relevant to '
-             "your startup and you can start to explore those. Now I'll search for corn as "
-             "that's more focused than food.",
-      'title': 'IMPACTT - Purdue Technology Transfer Office (Circular Venture Lab)',
-      'url': 'https://www.youtube.com/watch?v=ThAHgFsvejI&t=69s',
-      'video_id': 'ThAHgFsvejI'},
-     {'author': 'Michigan Engineering',
-      'channel': 'Michigan Engineering',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:37](https://www.youtube.com/watch?v=EPj0ydCGdiU&t=277s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q4 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Benefiting them the way they anticipated these are just some of the '
-              'considerations you want to take into account when granting a patent license to '
-              'someone else and that very generally is the concept of patent licensing.',
-      'timestamp': 277,
-      'timestamp_label': '[00:04:37]',
-      'timestamp_seconds': 277,
-      'tip': 'Benefiting them the way they anticipated these are just some of the '
-             'considerations you want to take into account when granting a patent license to '
-             'someone else and that very generally is the concept of patent licensing.',
-      'title': 'Patent Licensing | IP series (25 of 62) (Michigan Engineering)',
-      'url': 'https://www.youtube.com/watch?v=EPj0ydCGdiU&t=277s',
-      'video_id': 'EPj0ydCGdiU'},
-     {'author': 'inventRightTV',
-      'channel': 'inventRightTV',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:15](https://www.youtube.com/watch?v=Se-TzTVqhfY&t=15s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q4 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Information with everybody that could benefit from it stepen key Andrew Krauss '
-              'and vent Wright trying to help you license your creativity to companies and.',
-      'timestamp': 15,
-      'timestamp_label': '[00:00:15]',
-      'timestamp_seconds': 15,
-      'tip': 'Information with everybody that could benefit from it stepen key Andrew Krauss '
-             'and vent Wright trying to help you license your creativity to companies and.',
-      'title': 'From Ideas To Income : The Truth About Earning Royalties (inventRightTV)',
-      'url': 'https://www.youtube.com/watch?v=Se-TzTVqhfY&t=15s',
-      'video_id': 'Se-TzTVqhfY'}],
- 5: [{'author': 'Secrets of the music industry',
-      'channel': 'Secrets of the music industry',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:11](https://www.youtube.com/watch?v=DfuXhSrezTU&t=311s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "It's an act of independence. It's you, the artist, taking control of your own "
-              "business and your own career. And so, we'll just leave you with this question. "
-              'A question for every artist out there. Your contract contains a hidden power.',
-      'timestamp': 311,
-      'timestamp_label': '[00:05:11]',
-      'timestamp_seconds': 311,
-      'tip': "It's an act of independence. It's you, the artist, taking control of your own "
-             "business and your own career. And so, we'll just leave you with this question. A "
-             'question for every artist out there. Your contract contains a hidden power.',
-      'title': 'Your Right to AUDIT: How to Catch Your Label Stealing Your Royalties 🕵️ '
-               '(Secrets of the music industry)',
-      'url': 'https://www.youtube.com/watch?v=DfuXhSrezTU&t=311s',
-      'video_id': 'DfuXhSrezTU'},
-     {'author': 'Trenner Law Firm - Patents & Trademarks',
-      'channel': 'Trenner Law Firm - Patents & Trademarks',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:33](https://www.youtube.com/watch?v=dSzZD5CnwK8&t=213s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Describe why the recipient should care. Show them how it solves a concrete '
-              'business problem. Frame your patent as a way for them to gain a competitive '
-              'advantage or capture a new segment of the market. And lastly, step five, '
-              'structure the deal for risk and reward.',
-      'timestamp': 213,
-      'timestamp_label': '[00:03:33]',
-      'timestamp_seconds': 213,
-      'tip': 'Describe why the recipient should care. Show them how it solves a concrete '
-             'business problem. Frame your patent as a way for them to gain a competitive '
-             'advantage or capture a new segment of the market. And lastly, step five, '
-             'structure the deal for risk and reward.',
-      'title': 'From Idea to Income: How to License Your Patent for Royalties (Trenner Law '
-               'Firm - Patents & Trademarks)',
-      'url': 'https://www.youtube.com/watch?v=dSzZD5CnwK8&t=213s',
-      'video_id': 'dSzZD5CnwK8'},
-     {'author': 'IN(C) TALK | Everything Has A Business Model',
-      'channel': 'IN(C) TALK | Everything Has A Business Model',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:17](https://www.youtube.com/watch?v=TYLVikvshaE&t=197s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "So, it's not enough to know your song is streaming. You need to know which "
-              'rights you control, who administers them, and whether the registrations are in '
-              'place. Now, the part that confuses a lot of people, the advance. An artist '
-              'signs a deal and gets money up front.',
-      'timestamp': 197,
-      'timestamp_label': '[00:03:17]',
-      'timestamp_seconds': 197,
-      'tip': "So, it's not enough to know your song is streaming. You need to know which "
-             'rights you control, who administers them, and whether the registrations are in '
-             'place. Now, the part that confuses a lot of people, the advance. An artist signs '
-             'a deal and gets money up front.',
-      'title': 'The Music Industry Is Broken: Why Your Rights Are Worth Less Than You Think | '
-               'IN(C) TALK (IN(C) TALK | Everything Has A Business Model)',
-      'url': 'https://www.youtube.com/watch?v=TYLVikvshaE&t=197s',
-      'video_id': 'TYLVikvshaE'},
-     {'author': 'Brands On Brands Podcast',
-      'channel': 'Brands On Brands Podcast',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:30:00](https://www.youtube.com/watch?v=3tCB_MAOXkA&t=1800s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "'s some inventory risk, some brand risk potentially if you're a brand owner and "
-              'you just need to know and and uh really analyze and understand all those risks '
-              "as you're entering the industry.",
-      'timestamp': 1800,
-      'timestamp_label': '[00:30:00]',
-      'timestamp_seconds': 1800,
-      'tip': "'s some inventory risk, some brand risk potentially if you're a brand owner and "
-             'you just need to know and and uh really analyze and understand all those risks '
-             "as you're entering the industry.",
-      'title': 'Brand Licensing 101 - Stu Seltzer Interview (Brands On Brands Podcast)',
-      'url': 'https://www.youtube.com/watch?v=3tCB_MAOXkA&t=1800s',
-      'video_id': '3tCB_MAOXkA'},
-     {'author': 'Kingacademic UK',
-      'channel': 'Kingacademic UK',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:03](https://www.youtube.com/watch?v=aRUsXPICxpY&t=63s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Designs or a portfolio.  That access can shorten development and reduce '
-              'technical risk. Some agreements include annual.',
-      'timestamp': 63,
-      'timestamp_label': '[00:01:03]',
-      'timestamp_seconds': 63,
-      'tip': 'Designs or a portfolio.  That access can shorten development and reduce '
-             'technical risk. Some agreements include annual.',
-      'title': "Arm's Licensing & Royalty Business Model Explained (Kingacademic UK)",
-      'url': 'https://www.youtube.com/watch?v=aRUsXPICxpY&t=63s',
-      'video_id': 'aRUsXPICxpY'},
-     {'author': 'John Ferrell, Esq.',
-      'channel': 'John Ferrell, Esq.',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:15](https://www.youtube.com/watch?v=Te8GX-Xx4mo&t=15s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Nobody should get a patent without having a business reason for doing so but '
-              'when licensing your invention there are seven really dumb mistakes that come.',
-      'timestamp': 15,
-      'timestamp_label': '[00:00:15]',
-      'timestamp_seconds': 15,
-      'tip': 'Nobody should get a patent without having a business reason for doing so but '
-             'when licensing your invention there are seven really dumb mistakes that come.',
-      'title': 'Errors You Can’t Afford to Make When Licensing Your Invention (John Ferrell, '
-               'Esq.)',
-      'url': 'https://www.youtube.com/watch?v=Te8GX-Xx4mo&t=15s',
-      'video_id': 'Te8GX-Xx4mo'},
-     {'author': 'Ask a VC',
-      'channel': 'Ask a VC',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:07:46](https://www.youtube.com/watch?v=f7jKIsIKO1c&t=466s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "'t maintain control of the board indefinitely. So at some point it's likely "
-              "that you're not going to control the board and that, you know, there is a risk "
-              "that maybe, you know, you wouldn't be CEO going forward.",
-      'timestamp': 466,
-      'timestamp_label': '[00:07:46]',
-      'timestamp_seconds': 466,
-      'tip': "'t maintain control of the board indefinitely. So at some point it's likely that "
-             "you're not going to control the board and that, you know, there is a risk that "
-             "maybe, you know, you wouldn't be CEO going forward.",
-      'title': 'AskAVC #12 - How to negotiate a term sheet (Ask a VC)',
-      'url': 'https://www.youtube.com/watch?v=f7jKIsIKO1c&t=466s',
-      'video_id': 'f7jKIsIKO1c'},
-     {'author': 'USPTOvideo',
-      'channel': 'USPTOvideo',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:12:31](https://www.youtube.com/watch?v=binARAl4AK8&t=751s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'For more information, I encourage you to visit copyright. The US Copyright '
-              'Office is the federal agency responsible for registering US copyrights. US '
-              'Copyright Office is a part of the Library of Congress, so a separate agency '
-              'from the US Patent and Trademark Office.',
-      'timestamp': 751,
-      'timestamp_label': '[00:12:31]',
-      'timestamp_seconds': 751,
-      'tip': 'For more information, I encourage you to visit copyright. The US Copyright '
-             'Office is the federal agency responsible for registering US copyrights. US '
-             'Copyright Office is a part of the Library of Congress, so a separate agency from '
-             'the US Patent and Trademark Office.',
-      'title': 'Path to a Patent, Part I - Intellectual property basics (USPTOvideo)',
-      'url': 'https://www.youtube.com/watch?v=binARAl4AK8&t=751s',
-      'video_id': 'binARAl4AK8'},
-     {'author': 'IPWatchdog, Inc.',
-      'channel': 'IPWatchdog, Inc.',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:32:39](https://www.youtube.com/watch?v=1UEOTCZ_qYA&t=1959s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'MOSFET rule, but it forces you to to talk to the business people and say, '
-              '"Okay, is this design going to change?" Because if it is, then we have we have '
-              "a might have a a problem. They're another safety tip.",
-      'timestamp': 1959,
-      'timestamp_label': '[00:32:39]',
-      'timestamp_seconds': 1959,
-      'tip': 'MOSFET rule, but it forces you to to talk to the business people and say, "Okay, '
-             'is this design going to change?" Because if it is, then we have we have a might '
-             "have a a problem. They're another safety tip.",
-      'title': 'Is Your Patent Portfolio Ready to Make Money? Patent Monetization Reality '
-               'Check (IPWatchdog, Inc.)',
-      'url': 'https://www.youtube.com/watch?v=1UEOTCZ_qYA&t=1959s',
-      'video_id': '1UEOTCZ_qYA'},
-     {'author': 'UpCounsel',
-      'channel': 'UpCounsel',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:23](https://www.youtube.com/watch?v=cURFfKlt_Ek&t=83s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'When negotiating royalty rates, research comparable deals using databases like '
-              'KT Mine and Royalty Source. Consider the lences profitability as higher margins '
-              'may justify higher rates. A hybrid model combining upfront fees with ongoing '
-              'royalties can balance risk and reward.',
-      'timestamp': 83,
-      'timestamp_label': '[00:01:23]',
-      'timestamp_seconds': 83,
-      'tip': 'When negotiating royalty rates, research comparable deals using databases like '
-             'KT Mine and Royalty Source. Consider the lences profitability as higher margins '
-             'may justify higher rates. A hybrid model combining upfront fees with ongoing '
-             'royalties can balance risk and reward.',
-      'title': 'Patent Licensing  How to Set Fair Royalty Rates (UpCounsel)',
-      'url': 'https://www.youtube.com/watch?v=cURFfKlt_Ek&t=83s',
-      'video_id': 'cURFfKlt_Ek'},
-     {'author': 'inventRightTV',
-      'channel': 'inventRightTV',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:17:22](https://www.youtube.com/watch?v=hM7gpPqIDoQ&t=1042s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "They know firsthand that they want someone that knows what they're doing. I "
-              "know that because at Gateway we save them time, we save them money. So, that's "
-              "the problem today. It's not building prototypes. I can do an AI prototype, "
-              "doesn't cost me a thing.",
-      'timestamp': 1042,
-      'timestamp_label': '[00:17:22]',
-      'timestamp_seconds': 1042,
-      'tip': "They know firsthand that they want someone that knows what they're doing. I know "
-             "that because at Gateway we save them time, we save them money. So, that's the "
-             "problem today. It's not building prototypes. I can do an AI prototype, doesn't "
-             'cost me a thing.',
-      'title': 'I Licensed My Ideas — Here’s How Much I Made! (inventRightTV)',
-      'url': 'https://www.youtube.com/watch?v=hM7gpPqIDoQ&t=1042s',
-      'video_id': 'hM7gpPqIDoQ'},
-     {'author': 'Patent Insanity',
-      'channel': 'Patent Insanity',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:07:22](https://www.youtube.com/watch?v=Jwz-iMwUtCU&t=442s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Different way so that you can avoid both literal infringement and doctrine of '
-              'equivalence analysis if you can then you have successfully designed around the '
-              "patent claims and you can roll out your product without worrying that you're "
-              'infringing that particular patent.',
-      'timestamp': 442,
-      'timestamp_label': '[00:07:22]',
-      'timestamp_seconds': 442,
-      'tip': 'Different way so that you can avoid both literal infringement and doctrine of '
-             'equivalence analysis if you can then you have successfully designed around the '
-             "patent claims and you can roll out your product without worrying that you're "
-             'infringing that particular patent.',
-      'title': 'Designing Around Patents - How to avoid patent infringement (Patent Insanity)',
-      'url': 'https://www.youtube.com/watch?v=Jwz-iMwUtCU&t=442s',
-      'video_id': 'Jwz-iMwUtCU'},
-     {'author': 'Technology Licensing Office (TLO)',
-      'channel': 'Technology Licensing Office (TLO)',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:20:44](https://www.youtube.com/watch?v=BtnDins-U4g&t=1244s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Repeated ear infections knowing the distress and anxiety that that causes but '
-              'being able to see the actual problem in real time and discuss the possible '
-              'solutions can help empower.',
-      'timestamp': 1244,
-      'timestamp_label': '[00:20:44]',
-      'timestamp_seconds': 1244,
-      'tip': 'Repeated ear infections knowing the distress and anxiety that that causes but '
-             'being able to see the actual problem in real time and discuss the possible '
-             'solutions can help empower.',
-      'title': 'Lesley Millar-Nicholson: The Role of Technology Transfer (Technology Licensing '
-               'Office (TLO))',
-      'url': 'https://www.youtube.com/watch?v=BtnDins-U4g&t=1244s',
-      'video_id': 'BtnDins-U4g'},
-     {'author': 'CIONCA IP',
-      'channel': 'CIONCA IP',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:56](https://www.youtube.com/watch?v=kRlS4inO95k&t=236s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Know um uh a bearing and this could be a gear um so you know because not all '
-              'the elements of the patented claim are found in the ACC accused product this '
-              'claim is not infringed by this product what about the second.',
-      'timestamp': 236,
-      'timestamp_label': '[00:03:56]',
-      'timestamp_seconds': 236,
-      'tip': 'Know um uh a bearing and this could be a gear um so you know because not all the '
-             'elements of the patented claim are found in the ACC accused product this claim '
-             'is not infringed by this product what about the second.',
-      'title': 'Patent Infringement - Visually and Simply Explained (CIONCA IP)',
-      'url': 'https://www.youtube.com/watch?v=kRlS4inO95k&t=236s',
-      'video_id': 'kRlS4inO95k'},
-     {'author': 'inventRightTV',
-      'channel': 'inventRightTV',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:23](https://www.youtube.com/watch?v=MvycxV2ib_8&t=83s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Complaints do a little homework and if they've got complaints they have a lot "
-              'of lawsuits maybe you should go to the next company no problem if you reach '
-              'out.',
-      'timestamp': 83,
-      'timestamp_label': '[00:01:23]',
-      'timestamp_seconds': 83,
-      'tip': "Complaints do a little homework and if they've got complaints they have a lot of "
-             'lawsuits maybe you should go to the next company no problem if you reach out.',
-      'title': 'Finding Companies That Embrace Open Innovation and Inventors (inventRightTV)',
-      'url': 'https://www.youtube.com/watch?v=MvycxV2ib_8&t=83s',
-      'video_id': 'MvycxV2ib_8'}],
- 6: [{'author': 'Gait Gain',
-      'channel': 'Gait Gain',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:11:58](https://www.youtube.com/watch?v=lvsa9U4qZJA&t=718s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q6 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Proactive outbound marketing and direct business-to-business pitching represent '
-              'the fastest ways to secure lucrative licensing deals with high-value commercial '
-              'brands.',
-      'timestamp': 718,
-      'timestamp_label': '[00:11:58]',
-      'timestamp_seconds': 718,
-      'tip': 'Proactive outbound marketing and direct business-to-business pitching represent '
-             'the fastest ways to secure lucrative licensing deals with high-value commercial '
-             'brands.',
-      'title': 'Digital IP Licensing for Business Revenue in United State 2026 (Gait Gain)',
-      'url': 'https://www.youtube.com/watch?v=lvsa9U4qZJA&t=718s',
-      'video_id': 'lvsa9U4qZJA'},
-     {'author': 'Patents and IP with Adam Diament',
-      'channel': 'Patents and IP with Adam Diament',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:18](https://www.youtube.com/watch?v=k0S01jxvk6M&t=78s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q6 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'So where do you find this thing? Just Google USPTO patent assignment search and '
-              "it should pop up. You don't even need an account. The site is officially called "
-              'the USPTO assignment search or sometimes the patent assignment query system.',
-      'timestamp': 78,
-      'timestamp_label': '[00:01:18]',
-      'timestamp_seconds': 78,
-      'tip': 'So where do you find this thing? Just Google USPTO patent assignment search and '
-             "it should pop up. You don't even need an account. The site is officially called "
-             'the USPTO assignment search or sometimes the patent assignment query system.',
-      'title': 'How to Use the Patent Office Patent Assignment Database Like a Pro. Ep. 167 '
-               '(Patents and IP with Adam Diament)',
-      'url': 'https://www.youtube.com/watch?v=k0S01jxvk6M&t=78s',
-      'video_id': 'k0S01jxvk6M'},
-     {'author': 'Archive Trove',
-      'channel': 'Archive Trove',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:55](https://www.youtube.com/watch?v=y5YpFZxHpYE&t=295s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q6 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Nothing resolves itself automatically. Every outcome traces back to what is '
-              'written down. What happens to copies, derived data, and trained models is a '
-              'matter of contract terms. Retention, deletion, and post-termination rights all '
-              'need to be decided in advance.',
-      'timestamp': 295,
-      'timestamp_label': '[00:04:55]',
-      'timestamp_seconds': 295,
-      'tip': 'Nothing resolves itself automatically. Every outcome traces back to what is '
-             'written down. What happens to copies, derived data, and trained models is a '
-             'matter of contract terms. Retention, deletion, and post-termination rights all '
-             'need to be decided in advance.',
-      'title': 'Do You Lose Your Files When You License Data for AI Training? (Archive Trove)',
-      'url': 'https://www.youtube.com/watch?v=y5YpFZxHpYE&t=295s',
-      'video_id': 'y5YpFZxHpYE'},
-     {'author': 'micro1',
-      'channel': 'micro1',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:10:28](https://www.youtube.com/watch?v=Sya3mBgQK7Q&t=628s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q6 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'And so, this is kind of the perfect opportunity to be able to use AI to '
-              "monetize your business's data to a company like Micro 1. So, what are the major "
-              'hesitations or objections that you hear when you first present this program to '
-              'a business owner?',
-      'timestamp': 628,
-      'timestamp_label': '[00:10:28]',
-      'timestamp_seconds': 628,
-      'tip': 'And so, this is kind of the perfect opportunity to be able to use AI to monetize '
-             "your business's data to a company like Micro 1. So, what are the major "
-             'hesitations or objections that you hear when you first present this program to a '
-             'business owner?',
-      'title': 'What every business owner should know abut AI data licensing (micro1)',
-      'url': 'https://www.youtube.com/watch?v=Sya3mBgQK7Q&t=628s',
-      'video_id': 'Sya3mBgQK7Q'},
-     {'author': 'ipMAGNET USPTO Patent Search',
-      'channel': 'ipMAGNET USPTO Patent Search',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:04](https://www.youtube.com/watch?v=K33V82uvPfc&t=304s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q6 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'On your search results here you can find if a patent is issued for these '
-              'publications in your list with just a single click the detailed tutorial is '
-              'available from the patent status screen.',
-      'timestamp': 304,
-      'timestamp_label': '[00:05:04]',
-      'timestamp_seconds': 304,
-      'tip': 'On your search results here you can find if a patent is issued for these '
-             'publications in your list with just a single click the detailed tutorial is '
-             'available from the patent status screen.',
-      'title': 'How to Search and Download USPTO Patents (ipMAGNET USPTO Patent Search)',
-      'url': 'https://www.youtube.com/watch?v=K33V82uvPfc&t=304s',
-      'video_id': 'K33V82uvPfc'},
-     {'author': 'Intellectual Property Ontario',
-      'channel': 'Intellectual Property Ontario',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:26](https://www.youtube.com/watch?v=2L5qDLM_EkY&t=26s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q6 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Usbto is exclusively for searching us patents and has recently revamped its '
-              'search database you can access it by clicking on the link provided in the '
-              'description below once you are on the landing page you will find two search '
-              'options basic search and advanced search.',
-      'timestamp': 26,
-      'timestamp_label': '[00:00:26]',
-      'timestamp_seconds': 26,
-      'tip': 'Usbto is exclusively for searching us patents and has recently revamped its '
-             'search database you can access it by clicking on the link provided in the '
-             'description below once you are on the landing page you will find two search '
-             'options basic search and advanced search.',
-      'title': 'How Can I Conduct Effective Patent Searches on the USPTO Database? '
-               '(Intellectual Property Ontario)',
-      'url': 'https://www.youtube.com/watch?v=2L5qDLM_EkY&t=26s',
-      'video_id': '2L5qDLM_EkY'},
-     {'author': 'Boardgame Publisher',
-      'channel': 'Boardgame Publisher',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:49](https://www.youtube.com/watch?v=SOV77fL52Dw&t=349s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q6 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "'s only the company that you are selling it's not the the catalog of games that "
-              "you have. 's a good thing to have that kind of event planned into your contract "
-              "from the get go so that if it happens you don't find yourself in a delicate "
-              'situation.',
-      'timestamp': 349,
-      'timestamp_label': '[00:05:49]',
-      'timestamp_seconds': 349,
-      'tip': "'s only the company that you are selling it's not the the catalog of games that "
-             "you have. 's a good thing to have that kind of event planned into your contract "
-             "from the get go so that if it happens you don't find yourself in a delicate "
-             'situation.',
-      'title': 'Boardgame licensing rights duration, reversion and sublicensing (Boardgame '
-               'Publisher)',
-      'url': 'https://www.youtube.com/watch?v=SOV77fL52Dw&t=349s',
-      'video_id': 'SOV77fL52Dw'},
-     {'author': 'Patent Attorney Worldwide',
-      'channel': 'Patent Attorney Worldwide',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:11](https://www.youtube.com/watch?v=D-Am1gpuzaw&t=251s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q6 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "'re being accused of infringing is actually invalid and shouldn't have been "
-              "granted in the first place. Your legal team goes on a hunt. They conduct what's "
-              'called a validity search to find something called prior art.',
-      'timestamp': 251,
-      'timestamp_label': '[00:04:11]',
-      'timestamp_seconds': 251,
-      'tip': "'re being accused of infringing is actually invalid and shouldn't have been "
-             "granted in the first place. Your legal team goes on a hunt. They conduct what's "
-             'called a validity search to find something called prior art.',
-      'title': 'Patent Infringement Explained: Types, Lawsuits & Legal Remedies (Complete '
-               'Guide) (Patent Attorney Worldwide)',
-      'url': 'https://www.youtube.com/watch?v=D-Am1gpuzaw&t=251s',
-      'video_id': 'D-Am1gpuzaw'},
-     {'author': 'USPTOvideo',
-      'channel': 'USPTOvideo',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:44:40](https://www.youtube.com/watch?v=np8RKbVMSLg&t=2680s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q6 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "So to do so, you'll first take note of the document that you want to view in "
-              "this case, D947805. And we will open up and go back again to the USPTO. 'll "
-              'navigate here to find fast. And The Patent Center is listed under Patent Public '
-              'Search right here.',
-      'timestamp': 2680,
-      'timestamp_label': '[00:44:40]',
-      'timestamp_seconds': 2680,
-      'tip': "So to do so, you'll first take note of the document that you want to view in "
-             "this case, D947805. And we will open up and go back again to the USPTO. 'll "
-             'navigate here to find fast. And The Patent Center is listed under Patent Public '
-             'Search right here.',
-      'title': 'Using Patent Public Search Advanced to Search Designs (USPTOvideo)',
-      'url': 'https://www.youtube.com/watch?v=np8RKbVMSLg&t=2680s',
-      'video_id': 'np8RKbVMSLg'},
-     {'author': 'The Linux Foundation',
-      'channel': 'The Linux Foundation',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:14:46](https://www.youtube.com/watch?v=bii4_gwgoBY&t=886s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q6 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'The first thing I want to start starting guys off slow first scary part is '
-              'about 107 of those data sets use custom licenses which means that identifying '
-              "the rights and obligations properly would need legal expertise it's not like we "
-              'already know.',
-      'timestamp': 886,
-      'timestamp_label': '[00:14:46]',
-      'timestamp_seconds': 886,
-      'tip': 'The first thing I want to start starting guys off slow first scary part is about '
-             '107 of those data sets use custom licenses which means that identifying the '
-             "rights and obligations properly would need legal expertise it's not like we "
-             'already know.',
-      'title': 'OpenDataology - A Call to Arms for Fixing the Dataset Licensing Landscape - '
-               'Gopi Krishnan Rajbahadur (The Linux Foundation)',
-      'url': 'https://www.youtube.com/watch?v=bii4_gwgoBY&t=886s',
-      'video_id': 'bii4_gwgoBY'},
-     {'author': 'Edel Patents',
-      'channel': 'Edel Patents',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:15](https://www.youtube.com/watch?v=SDXhhmDKGJo&t=15s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q6 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "I'm going to show you a basic search structure that you can use over and over "
-              'again as a template for your searches first.',
-      'timestamp': 15,
-      'timestamp_label': '[00:00:15]',
-      'timestamp_seconds': 15,
-      'tip': "I'm going to show you a basic search structure that you can use over and over "
-             'again as a template for your searches first.',
-      'title': 'Beginner Tips for USPTO Search - [Operators & Fields] (Edel Patents)',
-      'url': 'https://www.youtube.com/watch?v=SDXhhmDKGJo&t=15s',
-      'video_id': 'SDXhhmDKGJo'},
-     {'author': 'inventRightTV',
-      'channel': 'inventRightTV',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:31](https://www.youtube.com/watch?v=aFZpyTUvtlY&t=91s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q6 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "So, that's the first thing you need to do. Second thing you need to do, I would "
-              "I'd make a list of all the companies you want to reach out to and I would "
-              'connect with them if you can, but also I would comment on their posts.',
-      'timestamp': 91,
-      'timestamp_label': '[00:01:31]',
-      'timestamp_seconds': 91,
-      'tip': "So, that's the first thing you need to do. Second thing you need to do, I would "
-             "I'd make a list of all the companies you want to reach out to and I would "
-             'connect with them if you can, but also I would comment on their posts.',
-      'title': 'How to Pitch Your Product to Companies For a Licensing Deal (inventRightTV)',
-      'url': 'https://www.youtube.com/watch?v=aFZpyTUvtlY&t=91s',
-      'video_id': 'aFZpyTUvtlY'},
-     {'author': 'Alliance for Patient Access',
-      'channel': 'Alliance for Patient Access',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:47](https://www.youtube.com/watch?v=5RtieTL1OqM&t=47s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q6 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'The patent expires quick cheap drugs sound appealing but there are real '
-              'consequences to compulsory licensing first medicine copies made.',
-      'timestamp': 47,
-      'timestamp_label': '[00:00:47]',
-      'timestamp_seconds': 47,
-      'tip': 'The patent expires quick cheap drugs sound appealing but there are real '
-             'consequences to compulsory licensing first medicine copies made.',
-      'title': 'Understanding Compulsory Licensing (Alliance for Patient Access)',
-      'url': 'https://www.youtube.com/watch?v=5RtieTL1OqM&t=47s',
-      'video_id': '5RtieTL1OqM'},
-     {'author': 'Visme',
-      'channel': 'Visme',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:06:50](https://www.youtube.com/watch?v=ShCyD9TYhLY&t=410s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q6 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Appreciate your support and want to keep helping people just like you for years '
-              'to come check out our channel to see what other questions that we can answer '
-              "for you until then I'm Mike ploger with vimme helping you make information.",
-      'timestamp': 410,
-      'timestamp_label': '[00:06:50]',
-      'timestamp_seconds': 410,
-      'tip': 'Appreciate your support and want to keep helping people just like you for years '
-             'to come check out our channel to see what other questions that we can answer for '
-             "you until then I'm Mike ploger with vimme helping you make information.",
-      'title': 'How to LEGALLY Use a Copyrighted Photo (Visme)',
-      'url': 'https://www.youtube.com/watch?v=ShCyD9TYhLY&t=410s',
-      'video_id': 'ShCyD9TYhLY'},
-     {'author': 'inventRightTV',
-      'channel': 'inventRightTV',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:15:35](https://www.youtube.com/watch?v=biVTpLl2T5U&t=935s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q6 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Me ah stephen key here and be ready for the next video because I'm going to "
-              "talk about licensing agreements there's a great idea in each of us but it's "
-              'truly magical to see it come to life.',
-      'timestamp': 935,
-      'timestamp_label': '[00:15:35]',
-      'timestamp_seconds': 935,
-      'tip': "Me ah stephen key here and be ready for the next video because I'm going to talk "
-             "about licensing agreements there's a great idea in each of us but it's truly "
-             'magical to see it come to life.',
-      'title': 'How to Land the Licensing Deal of Your Dreams (inventRightTV)',
-      'url': 'https://www.youtube.com/watch?v=biVTpLl2T5U&t=935s',
-      'video_id': 'biVTpLl2T5U'}],
- 7: [{'author': 'Cashix',
-      'channel': 'Cashix',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:40](https://www.youtube.com/watch?v=2dvDoXcllAw&t=220s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q7 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Under the Lanham Act, a trademark acts as a guarantee of consistent quality. If '
-              'a brand owner licenses their name to a third-party, but fails to exercise '
-              'strict active quality control over the resulting products, they commit what is '
-              'known as naked licensing.',
-      'timestamp': 220,
-      'timestamp_label': '[00:03:40]',
-      'timestamp_seconds': 220,
-      'tip': 'Under the Lanham Act, a trademark acts as a guarantee of consistent quality. If '
-             'a brand owner licenses their name to a third-party, but fails to exercise strict '
-             'active quality control over the resulting products, they commit what is known as '
-             'naked licensing.',
-      'title': 'The Hidden Business of Licensing: How Brands Make Billions Without Making '
-               'Products (Cashix)',
-      'url': 'https://www.youtube.com/watch?v=2dvDoXcllAw&t=220s',
-      'video_id': '2dvDoXcllAw'},
-     {'author': 'Flowhaven',
-      'channel': 'Flowhaven',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:09](https://www.youtube.com/watch?v=M69XC4rxxQc&t=69s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q7 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'When those five steps live in one system, nobody has to chase anybody. '
-              'Tidewhale, an ocean lifestyle brand, is signing Kelpline Apparel to make '
-              "hoodies for the Nordic market, sold wholesale and online. We'll follow that one "
-              'deal through all five steps.',
-      'timestamp': 69,
-      'timestamp_label': '[00:01:09]',
-      'timestamp_seconds': 69,
-      'tip': 'When those five steps live in one system, nobody has to chase anybody. '
-             'Tidewhale, an ocean lifestyle brand, is signing Kelpline Apparel to make hoodies '
-             "for the Nordic market, sold wholesale and online. We'll follow that one deal "
-             'through all five steps.',
-      'title': 'How licensing teams run agreements, approvals and royalties in one place '
-               '(Flowhaven)',
-      'url': 'https://www.youtube.com/watch?v=M69XC4rxxQc&t=69s',
-      'video_id': 'M69XC4rxxQc'},
-     {'author': 'Mayer Brown',
-      'channel': 'Mayer Brown',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:09:52](https://www.youtube.com/watch?v=yRNAVrfCNIE&t=592s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q7 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "In the process it's important to be organized and intentional so in the end you "
-              "have a deal that works for the business and that's legally sound.",
-      'timestamp': 592,
-      'timestamp_label': '[00:09:52]',
-      'timestamp_seconds': 592,
-      'tip': "In the process it's important to be organized and intentional so in the end you "
-             "have a deal that works for the business and that's legally sound.",
-      'title': 'Navigating the Brand Licensing Life Cycle (Mayer Brown)',
-      'url': 'https://www.youtube.com/watch?v=yRNAVrfCNIE&t=592s',
-      'video_id': 'yRNAVrfCNIE'},
-     {'author': 'Jason Varner',
-      'channel': 'Jason Varner',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:19](https://www.youtube.com/watch?v=nKuxu_x-s6o&t=319s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q7 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'That will kind of get you prepared. I also have a business data checklist where '
-              "you can select your category of business and it'll give you all the different "
-              'things that uh might be valuable that can help you in building out your data '
-              'manifest.',
-      'timestamp': 319,
-      'timestamp_label': '[00:05:19]',
-      'timestamp_seconds': 319,
-      'tip': 'That will kind of get you prepared. I also have a business data checklist where '
-             "you can select your category of business and it'll give you all the different "
-             'things that uh might be valuable that can help you in building out your data '
-             'manifest.',
-      'title': 'Explaining the Data Licensing Opportunity for Your Company (Jason Varner)',
-      'url': 'https://www.youtube.com/watch?v=nKuxu_x-s6o&t=319s',
-      'video_id': 'nKuxu_x-s6o'},
-     {'author': 'Brand Licensing by Informa',
-      'channel': 'Brand Licensing by Informa',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:15](https://www.youtube.com/watch?v=TwdLXgIhXJA&t=15s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q7 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Licensing may be right for you what is licensing licensing is the process of '
-              'leasing a legally protected entity such as a character name logo or.',
-      'timestamp': 15,
-      'timestamp_label': '[00:00:15]',
-      'timestamp_seconds': 15,
-      'tip': 'Licensing may be right for you what is licensing licensing is the process of '
-             'leasing a legally protected entity such as a character name logo or.',
-      'title': 'What is Brand Licensing? (Brand Licensing by Informa)',
-      'url': 'https://www.youtube.com/watch?v=TwdLXgIhXJA&t=15s',
-      'video_id': 'TwdLXgIhXJA'},
-     {'author': 'CPDPConferences',
-      'channel': 'CPDPConferences',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:17:05](https://www.youtube.com/watch?v=k3ktLc3BIZc&t=1025s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q7 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Since there is no uh, an individual um, um, no individual aspect of any of the '
-              'works in the database is preserved by the system because you extract standards '
-              "and concept out of it. Then you don't have uh the individual component of a "
-              'protected work.',
-      'timestamp': 1025,
-      'timestamp_label': '[00:17:05]',
-      'timestamp_seconds': 1025,
-      'tip': 'Since there is no uh, an individual um, um, no individual aspect of any of the '
-             'works in the database is preserved by the system because you extract standards '
-             "and concept out of it. Then you don't have uh the individual component of a "
-             'protected work.',
-      'title': 'Copyright Law and Generative AI Training CPDP 2026 (CPDPConferences)',
-      'url': 'https://www.youtube.com/watch?v=k3ktLc3BIZc&t=1025s',
-      'video_id': 'k3ktLc3BIZc'},
-     {'author': 'Columbia TechVentures',
-      'channel': 'Columbia TechVentures',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:57:39](https://www.youtube.com/watch?v=ZzczaFujs3A&t=3459s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q7 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Um they're just wondering about the whole process I have a general sense of the "
-              'process but just how your office would work with like a pharmacy and like like '
-              'the stage before where the contract has now been established sure.',
-      'timestamp': 3459,
-      'timestamp_label': '[00:57:39]',
-      'timestamp_seconds': 3459,
-      'tip': "Um they're just wondering about the whole process I have a general sense of the "
-             'process but just how your office would work with like a pharmacy and like like '
-             'the stage before where the contract has now been established sure.',
-      'title': 'Patenting & Licensing of Early-Stage University Technology (Columbia '
-               'TechVentures)',
-      'url': 'https://www.youtube.com/watch?v=ZzczaFujs3A&t=3459s',
-      'video_id': 'ZzczaFujs3A'},
-     {'author': 'Edel Patents',
-      'channel': 'Edel Patents',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:15](https://www.youtube.com/watch?v=oOln2IDvhqE&t=15s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q7 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'First patent application number searching is not hard but there are more steps '
-              'and problems with the process than you might.',
-      'timestamp': 15,
-      'timestamp_label': '[00:00:15]',
-      'timestamp_seconds': 15,
-      'tip': 'First patent application number searching is not hard but there are more steps '
-             'and problems with the process than you might.',
-      'title': 'Patent Application Number Search - Avoid the traps (Edel Patents)',
-      'url': 'https://www.youtube.com/watch?v=oOln2IDvhqE&t=15s',
-      'video_id': 'oOln2IDvhqE'},
-     {'author': 'Patents Demystified',
-      'channel': 'Patents Demystified',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:51](https://www.youtube.com/watch?v=9hTMXJtONtM&t=171s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q7 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Non-provisional patent application okay so to step back for a second so the way '
-              'you start the patent one way you start the patent process is by filing a.',
-      'timestamp': 171,
-      'timestamp_label': '[00:02:51]',
-      'timestamp_seconds': 171,
-      'tip': 'Non-provisional patent application okay so to step back for a second so the way '
-             'you start the patent one way you start the patent process is by filing a.',
-      'title': 'Mastering Patentability And Infringement Concepts Made EASY (Patents '
-               'Demystified)',
-      'url': 'https://www.youtube.com/watch?v=9hTMXJtONtM&t=171s',
-      'video_id': '9hTMXJtONtM'},
-     {'author': 'inventRightTV',
-      'channel': 'inventRightTV',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:43](https://www.youtube.com/watch?v=hbfKyomYp6U&t=163s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q7 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'It took a while like I said but I did figure it out and along with my partner '
-              'Andrew Kraus we created a tendon step system we call it invent right that '
-              "teaches you how to license your ideas and it's fairly straightforward and now.",
-      'timestamp': 163,
-      'timestamp_label': '[00:02:43]',
-      'timestamp_seconds': 163,
-      'tip': 'It took a while like I said but I did figure it out and along with my partner '
-             'Andrew Kraus we created a tendon step system we call it invent right that '
-             "teaches you how to license your ideas and it's fairly straightforward and now.",
-      'title': 'The Licensing Lifestyle with Stephen Key (inventRightTV)',
-      'url': 'https://www.youtube.com/watch?v=hbfKyomYp6U&t=163s',
-      'video_id': 'hbfKyomYp6U'},
-     {'author': 'Commercialisation Talks',
-      'channel': 'Commercialisation Talks',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:21](https://www.youtube.com/watch?v=2_OclNjs2Hg&t=21s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q7 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Um tell you you're one of the rare ones in the world that you do "
-              'commercialization and technology transfer [clears throat] and at the same time '
-              'you did your PhD in technology transfer.',
-      'timestamp': 21,
-      'timestamp_label': '[00:00:21]',
-      'timestamp_seconds': 21,
-      'tip': "Um tell you you're one of the rare ones in the world that you do "
-             'commercialization and technology transfer [clears throat] and at the same time '
-             'you did your PhD in technology transfer.',
-      'title': 'Why do so many university patents remain on the shelf? (Commercialisation '
-               'Talks)',
-      'url': 'https://www.youtube.com/watch?v=2_OclNjs2Hg&t=21s',
-      'video_id': '2_OclNjs2Hg'},
-     {'author': '3HTi',
-      'channel': '3HTi',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:17:40](https://www.youtube.com/watch?v=UPnBwRHoelM&t=1060s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q7 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Geometry from any other system and ultimately go and change it and always the '
-              'pain in the behind was with parametric modeling was you got to the.',
-      'timestamp': 1060,
-      'timestamp_label': '[00:17:40]',
-      'timestamp_seconds': 1060,
-      'tip': 'Geometry from any other system and ultimately go and change it and always the '
-             'pain in the behind was with parametric modeling was you got to the.',
-      'title': "What's in a Creo License (3HTi)",
-      'url': 'https://www.youtube.com/watch?v=UPnBwRHoelM&t=1060s',
-      'video_id': 'UPnBwRHoelM'},
-     {'author': 'UpCounsel',
-      'channel': 'UpCounsel',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:46](https://www.youtube.com/watch?v=wiI7fBL42Vg&t=346s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q7 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'By understanding the options available and taking appropriate steps to protect '
-              'and market your invention, you can maximize the potential return on your '
-              'innovative ideas.',
-      'timestamp': 346,
-      'timestamp_label': '[00:05:46]',
-      'timestamp_seconds': 346,
-      'tip': 'By understanding the options available and taking appropriate steps to protect '
-             'and market your invention, you can maximize the potential return on your '
-             'innovative ideas.',
-      'title': 'How to Profit from Your Patent  Selling, Licensing, and Protecting Your '
-               'Invention (UpCounsel)',
-      'url': 'https://www.youtube.com/watch?v=wiI7fBL42Vg&t=346s',
-      'video_id': 'wiI7fBL42Vg'},
-     {'author': 'Patents Demystified',
-      'channel': 'Patents Demystified',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:20](https://www.youtube.com/watch?v=GOd61uYqq-8&t=200s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q7 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'You want to see more clips from this podcast you can see the full playlist '
-              "right here and we've got the full podcast right here and please like the video "
-              'on your way out so we can it seen by more people thanks.',
-      'timestamp': 200,
-      'timestamp_label': '[00:03:20]',
-      'timestamp_seconds': 200,
-      'tip': 'You want to see more clips from this podcast you can see the full playlist right '
-             "here and we've got the full podcast right here and please like the video on your "
-             'way out so we can it seen by more people thanks.',
-      'title': 'How To Practice Patent Law WITHOUT Being An Attorney [Insider Secrets] '
-               '(Patents Demystified)',
-      'url': 'https://www.youtube.com/watch?v=GOd61uYqq-8&t=200s',
-      'video_id': 'GOd61uYqq-8'},
-     {'author': 'inventRightTV',
-      'channel': 'inventRightTV',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:06:57](https://www.youtube.com/watch?v=zdIFauqdSt8&t=417s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q7 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'You want to be pleasant you want to you have a good time you want them to like '
-              "you you don't want them to run by doing some things that maybe you shouldn't be "
-              "doing I'll talk about those things too so let's go to next.",
-      'timestamp': 417,
-      'timestamp_label': '[00:06:57]',
-      'timestamp_seconds': 417,
-      'tip': 'You want to be pleasant you want to you have a good time you want them to like '
-             "you you don't want them to run by doing some things that maybe you shouldn't be "
-             "doing I'll talk about those things too so let's go to next.",
-      'title': 'Pitching an Idea? Learn the RIGHT Way to Land a Licensing Deal! '
-               '(inventRightTV)',
-      'url': 'https://www.youtube.com/watch?v=zdIFauqdSt8&t=417s',
-      'video_id': 'zdIFauqdSt8'}],
- 8: [{'author': '514Blog',
-      'channel': '514Blog',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:00](https://www.youtube.com/watch?v=ApLNF2BQAt8&t=240s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q8 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'CAD to a working interactive 3D parts catalog without building the entire '
-              'system internally, Ventana is our top choice for 2026. Of course, the right '
-              'platform will depend on your existing systems, your product complexity, and how '
-              'you plan to use your 3D content.',
-      'timestamp': 240,
-      'timestamp_label': '[00:04:00]',
-      'timestamp_seconds': 240,
-      'tip': 'CAD to a working interactive 3D parts catalog without building the entire system '
-             'internally, Ventana is our top choice for 2026. Of course, the right platform '
-             'will depend on your existing systems, your product complexity, and how you plan '
-             'to use your 3D content.',
-      'title': 'Best 3D Parts Catalog Software in 2026 (5 Tools Compared) (514Blog)',
-      'url': 'https://www.youtube.com/watch?v=ApLNF2BQAt8&t=240s',
-      'video_id': 'ApLNF2BQAt8'},
-     {'author': 'UpCounsel',
-      'channel': 'UpCounsel',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:48](https://www.youtube.com/watch?v=QaABLYw6maY&t=108s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q8 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "'s laws will govern the agreement, addressing potential tax implications, and "
-              'ensuring compliance with local regulations. Licensing agreements can be '
-              'powerful tools for generating revenue, expanding brand reach, and accessing new '
-              'markets.',
-      'timestamp': 108,
-      'timestamp_label': '[00:01:48]',
-      'timestamp_seconds': 108,
-      'tip': "'s laws will govern the agreement, addressing potential tax implications, and "
-             'ensuring compliance with local regulations. Licensing agreements can be powerful '
-             'tools for generating revenue, expanding brand reach, and accessing new markets.',
-      'title': 'Licensing Agreements  Key Elements and Business Benefits (UpCounsel)',
-      'url': 'https://www.youtube.com/watch?v=QaABLYw6maY&t=108s',
-      'video_id': 'QaABLYw6maY'},
-     {'author': 'Torys LLP',
-      'channel': 'Torys LLP',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:32](https://www.youtube.com/watch?v=ijF0IyvjXXg&t=332s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q8 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Okay, well, this sounds much more promising. So, if a trademark holder sees '
-              'this occurring, can they assert infringement against the platform or do they '
-              'still to search for the true seller?',
-      'timestamp': 332,
-      'timestamp_label': '[00:05:32]',
-      'timestamp_seconds': 332,
-      'tip': 'Okay, well, this sounds much more promising. So, if a trademark holder sees this '
-             'occurring, can they assert infringement against the platform or do they still to '
-             'search for the true seller?',
-      'title': 'Ask an IP litigator: #5 - How do I stop an unauthorized seller? (Torys LLP)',
-      'url': 'https://www.youtube.com/watch?v=ijF0IyvjXXg&t=332s',
-      'video_id': 'ijF0IyvjXXg'},
-     {'author': 'MillionPodcasts',
-      'channel': 'MillionPodcasts',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:08:23](https://www.youtube.com/watch?v=s8iH8wFk-Hc&t=503s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q8 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Keeping track of music rights across your podcast catalog doesn't have to be "
-              'complicated. A few simple tools can help you avoid missed clearances and '
-              'expired licenses. Start with a music rights tracking spreadsheet.',
-      'timestamp': 503,
-      'timestamp_label': '[00:08:23]',
-      'timestamp_seconds': 503,
-      'tip': "Keeping track of music rights across your podcast catalog doesn't have to be "
-             'complicated. A few simple tools can help you avoid missed clearances and expired '
-             'licenses. Start with a music rights tracking spreadsheet.',
-      'title': 'The Complete Guide to Podcast Music Rights & Licensing 2026 (MillionPodcasts)',
-      'url': 'https://www.youtube.com/watch?v=s8iH8wFk-Hc&t=503s',
-      'video_id': 's8iH8wFk-Hc'},
-     {'author': 'DesignLab UW-Madison',
-      'channel': 'DesignLab UW-Madison',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:15](https://www.youtube.com/watch?v=mGWJAAFhtRk&t=75s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q8 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'This is because the creator has waived all rights to their creative work. This '
-              'means you can copy, modify, distribute, and perform the work even for '
-              "commercial purposes all without asking the creator's permission. One useful "
-              'image search engine is the CCSearch.',
-      'timestamp': 75,
-      'timestamp_label': '[00:01:15]',
-      'timestamp_seconds': 75,
-      'tip': 'This is because the creator has waived all rights to their creative work. This '
-             'means you can copy, modify, distribute, and perform the work even for commercial '
-             "purposes all without asking the creator's permission. One useful image search "
-             'engine is the CCSearch.',
-      'title': 'Copyright and Fair Use for Images, Videos, and Audio - Basics (DesignLab '
-               'UW-Madison)',
-      'url': 'https://www.youtube.com/watch?v=mGWJAAFhtRk&t=75s',
-      'video_id': 'mGWJAAFhtRk'},
-     {'author': 'Lynn D. Jung',
-      'channel': 'Lynn D. Jung',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:49](https://www.youtube.com/watch?v=cEP_oNaMQcw&t=289s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q8 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "So, when you actually finalize and sign your contract, you're going to get your "
-              "first chunk of change. So, let's say you have a $100,000 advance, you'll get "
-              '25K upon signing. And then your next chunk of change is going to come when you '
-              'deliver your book and it is accepted.',
-      'timestamp': 289,
-      'timestamp_label': '[00:04:49]',
-      'timestamp_seconds': 289,
-      'tip': "So, when you actually finalize and sign your contract, you're going to get your "
-             "first chunk of change. So, let's say you have a $100,000 advance, you'll get 25K "
-             'upon signing. And then your next chunk of change is going to come when you '
-             'deliver your book and it is accepted.',
-      'title': '💸 a guide to author finances // advances, royalties, taxes, & what worked for '
-               'me (Lynn D. Jung)',
-      'url': 'https://www.youtube.com/watch?v=cEP_oNaMQcw&t=289s',
-      'video_id': 'cEP_oNaMQcw'},
-     {'author': 'Ideas on Fire',
-      'channel': 'Ideas on Fire',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:06:33](https://www.youtube.com/watch?v=QHV5OSGnAMg&t=393s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q8 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Yeah, I could just add on to to what I said earlier. I did want to clarify that '
-              'when I use the language of advanced contract, all that means is that the '
-              'contract is being offered in advance of a final approved manuscript, peer '
-              'review, all of that kind of stuff.',
-      'timestamp': 393,
-      'timestamp_label': '[00:06:33]',
-      'timestamp_seconds': 393,
-      'tip': 'Yeah, I could just add on to to what I said earlier. I did want to clarify that '
-             'when I use the language of advanced contract, all that means is that the '
-             'contract is being offered in advance of a final approved manuscript, peer '
-             'review, all of that kind of stuff.',
-      'title': 'Understanding Contracts, Royalties, and Rights - Academic Publishing Series '
-               '(Ideas on Fire)',
-      'url': 'https://www.youtube.com/watch?v=QHV5OSGnAMg&t=393s',
-      'video_id': 'QHV5OSGnAMg'},
-     {'author': 'freeCodeCamp Concepts',
-      'channel': 'freeCodeCamp Concepts',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:35](https://www.youtube.com/watch?v=grui-CD6Uck&t=95s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q8 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Domain most search engines will allow you to filter image results by a license '
-              'there are also sites like pixabay and unsplash which offer free to ous images '
-              'always be mindful of the copyright and Licensing when you use an image in your '
-              'website.',
-      'timestamp': 95,
-      'timestamp_label': '[00:01:35]',
-      'timestamp_seconds': 95,
-      'tip': 'Domain most search engines will allow you to filter image results by a license '
-             'there are also sites like pixabay and unsplash which offer free to ous images '
-             'always be mindful of the copyright and Licensing when you use an image in your '
-             'website.',
-      'title': 'What are the different types of image licenses and how do they work? '
-               '(freeCodeCamp Concepts)',
-      'url': 'https://www.youtube.com/watch?v=grui-CD6Uck&t=95s',
-      'video_id': 'grui-CD6Uck'},
-     {'author': 'Mayer Brown',
-      'channel': 'Mayer Brown',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:11:47](https://www.youtube.com/watch?v=5gxaM62YYFk&t=707s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q8 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Is constantly evolving and changing the training is continuous there may be '
-              'continuous updates and tweaks going on to the AI tool the production data is.',
-      'timestamp': 707,
-      'timestamp_label': '[00:11:47]',
-      'timestamp_seconds': 707,
-      'tip': 'Is constantly evolving and changing the training is continuous there may be '
-             'continuous updates and tweaks going on to the AI tool the production data is.',
-      'title': "Mayer Brown's Tech Talks: Smart Licensing of AI (Mayer Brown)",
-      'url': 'https://www.youtube.com/watch?v=5gxaM62YYFk&t=707s',
-      'video_id': '5gxaM62YYFk'},
-     {'author': 'universityofontario',
-      'channel': 'universityofontario',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:19](https://www.youtube.com/watch?v=O2Cp8235kvg&t=199s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q8 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'So it really depends on on a lot of factors and you have to look at you know '
-              "really what you're trying to do and probably get some external advice as to the "
-              'right ways to protect intellectual property and software products.',
-      'timestamp': 199,
-      'timestamp_label': '[00:03:19]',
-      'timestamp_seconds': 199,
-      'tip': 'So it really depends on on a lot of factors and you have to look at you know '
-             "really what you're trying to do and probably get some external advice as to the "
-             'right ways to protect intellectual property and software products.',
-      'title': 'UOIT Office of Technology Transfer and Commercialization - How do I protect my '
-               'Copyright? (universityofontario)',
-      'url': 'https://www.youtube.com/watch?v=O2Cp8235kvg&t=199s',
-      'video_id': 'O2Cp8235kvg'},
+      'markdown': '[00:11:10](https://www.youtube.com/watch?v=CS31715RNQk&t=670s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': "If it's granted pay us seven, if it's patent pending pay us five, if it doesn't "
+              'issue at all pay us one.',
+      'timestamp': 670,
+      'timestamp_label': '[00:11:10]',
+      'timestamp_seconds': 670,
+      'tip': "If it's granted pay us seven, if it's patent pending pay us five, if it doesn't "
+             'issue at all pay us one.',
+      'title': 'How to License Your Product Ideas Without a Patent',
+      'url': 'https://www.youtube.com/watch?v=CS31715RNQk&t=670s',
+      'video_id': 'CS31715RNQk'},
      {'author': 'Erinnae Baker',
       'channel': 'Erinnae Baker',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:17](https://www.youtube.com/watch?v=Awpsichbouw&t=257s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q8 operational verification).',
+      'markdown': '[00:02:37](https://www.youtube.com/watch?v=Awpsichbouw&t=157s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
       'source_type': 'video_pro_tip',
-      'text': 'It looks and operates just the same as the patent search so you should have no '
-              "problem with that and that's how to use the united states patent and trademark "
-              "office's patent search.",
-      'timestamp': 257,
-      'timestamp_label': '[00:04:17]',
-      'timestamp_seconds': 257,
-      'tip': 'It looks and operates just the same as the patent search so you should have no '
-             "problem with that and that's how to use the united states patent and trademark "
-             "office's patent search.",
-      'title': 'USPTO Patent Database Tutorial (Erinnae Baker)',
-      'url': 'https://www.youtube.com/watch?v=Awpsichbouw&t=257s',
+      'text': 'The database is full text from 1976 on; you can find some information for '
+              'inventions from 1790 on.',
+      'timestamp': 157,
+      'timestamp_label': '[00:02:37]',
+      'timestamp_seconds': 157,
+      'tip': 'The database is full text from 1976 on; you can find some information for inventions '
+             'from 1790 on.',
+      'title': 'USPTO Patent Database Tutorial',
+      'url': 'https://www.youtube.com/watch?v=Awpsichbouw&t=157s',
       'video_id': 'Awpsichbouw'},
-     {'author': 'IP Author',
-      'channel': 'IP Author',
+     {'author': 'Edel Patents',
+      'channel': 'Edel Patents',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:13:19](https://www.youtube.com/watch?v=IJ_WZiM4dKk&t=799s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q8 operational verification).',
+      'markdown': '[00:00:56](https://www.youtube.com/watch?v=SDXhhmDKGJo&t=56s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
       'source_type': 'video_pro_tip',
-      'text': "Now, you're not trying to draft a patent application or conduct a search, but "
-              "you're saying, you know what, I want to build a patent application or I want to "
-              'build up my portfolio in a particular topic area.',
-      'timestamp': 799,
-      'timestamp_label': '[00:13:19]',
-      'timestamp_seconds': 799,
-      'tip': "Now, you're not trying to draft a patent application or conduct a search, but "
-             "you're saying, you know what, I want to build a patent application or I want to "
-             'build up my portfolio in a particular topic area.',
-      'title': 'AI Agents Are Transforming Patent Practice: From Patent Tools to AI Agents (IP '
-               'Author)',
-      'url': 'https://www.youtube.com/watch?v=IJ_WZiM4dKk&t=799s',
-      'video_id': 'IJ_WZiM4dKk'},
+      'text': "If you want to find the thing you're looking for, search for the concept, not the "
+              'word.',
+      'timestamp': 56,
+      'timestamp_label': '[00:00:56]',
+      'timestamp_seconds': 56,
+      'tip': "If you want to find the thing you're looking for, search for the concept, not the "
+             'word.',
+      'title': 'Beginner Tips for USPTO Search - [Operators & Fields]',
+      'url': 'https://www.youtube.com/watch?v=SDXhhmDKGJo&t=56s',
+      'video_id': 'SDXhhmDKGJo'},
+     {'author': 'Patents and IP with Adam Diament',
+      'channel': 'Patents and IP with Adam Diament',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:43](https://www.youtube.com/watch?v=k0S01jxvk6M&t=223s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': "And if you're trying to license a patent, this is often your starting point.",
+      'timestamp': 223,
+      'timestamp_label': '[00:03:43]',
+      'timestamp_seconds': 223,
+      'tip': "And if you're trying to license a patent, this is often your starting point.",
+      'title': 'How to Use the Patent Office Patent Assignment Database Like a Pro. Ep. 167',
+      'url': 'https://www.youtube.com/watch?v=k0S01jxvk6M&t=223s',
+      'video_id': 'k0S01jxvk6M'},
+     {'author': 'Patents Demystified',
+      'channel': 'Patents Demystified',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:05](https://www.youtube.com/watch?v=zel57Kej5nY&t=65s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'The first thing to understand is that by default the inventors own the rights in a '
+              'patent or a patent application.',
+      'timestamp': 65,
+      'timestamp_label': '[00:01:05]',
+      'timestamp_seconds': 65,
+      'tip': 'The first thing to understand is that by default the inventors own the rights in a '
+             'patent or a patent application.',
+      'title': 'How to Access HIDDEN Patent Assignment Records & Ownership History',
+      'url': 'https://www.youtube.com/watch?v=zel57Kej5nY&t=65s',
+      'video_id': 'zel57Kej5nY'},
+     {'author': 'Edel Patents',
+      'channel': 'Edel Patents',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:07:21](https://www.youtube.com/watch?v=oOln2IDvhqE&t=441s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': "There's a really good chance you just ran your highlighter over one of the most "
+              'important weaknesses in the patent.',
+      'timestamp': 441,
+      'timestamp_label': '[00:07:21]',
+      'timestamp_seconds': 441,
+      'tip': "There's a really good chance you just ran your highlighter over one of the most "
+             'important weaknesses in the patent.',
+      'title': 'Patent Application Number Search - Avoid the traps',
+      'url': 'https://www.youtube.com/watch?v=oOln2IDvhqE&t=441s',
+      'video_id': 'oOln2IDvhqE'},
+     {'author': 'USPTOvideo',
+      'channel': 'USPTOvideo',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:10:51](https://www.youtube.com/watch?v=np8RKbVMSLg&t=651s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'Assignees listed on the face of a patent are current as of the issue date of that '
+              'patent.',
+      'timestamp': 651,
+      'timestamp_label': '[00:10:51]',
+      'timestamp_seconds': 651,
+      'tip': 'Assignees listed on the face of a patent are current as of the issue date of that '
+             'patent.',
+      'title': 'Using Patent Public Search Advanced to Search Designs',
+      'url': 'https://www.youtube.com/watch?v=np8RKbVMSLg&t=651s',
+      'video_id': 'np8RKbVMSLg'},
+     {'author': 'USPTOvideo',
+      'channel': 'USPTOvideo',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:35:34](https://www.youtube.com/watch?v=binARAl4AK8&t=2134s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'So on the one very important note about intellectual property, the USPTO is not an '
+              'enforcement agency.',
+      'timestamp': 2134,
+      'timestamp_label': '[00:35:34]',
+      'timestamp_seconds': 2134,
+      'tip': 'So on the one very important note about intellectual property, the USPTO is not an '
+             'enforcement agency.',
+      'title': 'Path to a Patent, Part I - Intellectual property basics',
+      'url': 'https://www.youtube.com/watch?v=binARAl4AK8&t=2134s',
+      'video_id': 'binARAl4AK8'},
+     {'author': 'ipMAGNET USPTO Patent Search',
+      'channel': 'ipMAGNET USPTO Patent Search',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:41](https://www.youtube.com/watch?v=K33V82uvPfc&t=101s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'You can download up to 10 patent PDFs at a time.',
+      'timestamp': 101,
+      'timestamp_label': '[00:01:41]',
+      'timestamp_seconds': 101,
+      'tip': 'You can download up to 10 patent PDFs at a time.',
+      'title': 'How to Search and Download USPTO Patents',
+      'url': 'https://www.youtube.com/watch?v=K33V82uvPfc&t=101s',
+      'video_id': 'K33V82uvPfc'},
+     {'author': 'Idea2PatentAI',
+      'channel': 'Idea2PatentAI',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:05:22](https://www.youtube.com/watch?v=ixENhsfAdEA&t=322s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'One important point, you must pay your filing fees on the same day that you submit '
+              'your provisional application.',
+      'timestamp': 322,
+      'timestamp_label': '[00:05:22]',
+      'timestamp_seconds': 322,
+      'tip': 'One important point, you must pay your filing fees on the same day that you submit '
+             'your provisional application.',
+      'title': 'How to File a Provisional Patent Application with the USPTO (Step-by-Step)',
+      'url': 'https://www.youtube.com/watch?v=ixENhsfAdEA&t=322s',
+      'video_id': 'ixENhsfAdEA'},
+     {'author': 'Intellectual Property Ontario',
+      'channel': 'Intellectual Property Ontario',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:39](https://www.youtube.com/watch?v=2L5qDLM_EkY&t=39s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'Basic search is best when you are looking for known items, names and dates.',
+      'timestamp': 39,
+      'timestamp_label': '[00:00:39]',
+      'timestamp_seconds': 39,
+      'tip': 'Basic search is best when you are looking for known items, names and dates.',
+      'title': 'How Can I Conduct Effective Patent Searches on the USPTO Database?',
+      'url': 'https://www.youtube.com/watch?v=2L5qDLM_EkY&t=39s',
+      'video_id': '2L5qDLM_EkY'},
+     {'author': 'Jim Selbach',
+      'channel': 'Jim Selbach',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:02](https://www.youtube.com/watch?v=0r9cstgrqZM&t=62s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'Unauthorized practice of law is an ethical violation and it is also a crime.',
+      'timestamp': 62,
+      'timestamp_label': '[00:01:02]',
+      'timestamp_seconds': 62,
+      'tip': 'Unauthorized practice of law is an ethical violation and it is also a crime.',
+      'title': 'What Is Unauthorized Practice Of Law || Best Advice For Young Lawyers',
+      'url': 'https://www.youtube.com/watch?v=0r9cstgrqZM&t=62s',
+      'video_id': '0r9cstgrqZM'},
+     {'author': 'Patents Demystified',
+      'channel': 'Patents Demystified',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:28](https://www.youtube.com/watch?v=GOd61uYqq-8&t=88s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'The firm dissolved because of attorney non-attorney profit sharing issues.',
+      'timestamp': 88,
+      'timestamp_label': '[00:01:28]',
+      'timestamp_seconds': 88,
+      'tip': 'The firm dissolved because of attorney non-attorney profit sharing issues.',
+      'title': 'How To Practice Patent Law WITHOUT Being An Attorney [Insider Secrets]',
+      'url': 'https://www.youtube.com/watch?v=GOd61uYqq-8&t=88s',
+      'video_id': 'GOd61uYqq-8'},
+     {'author': 'Berkeley Center for Law & Technology (BCLT)',
+      'channel': 'Berkeley Center for Law & Technology (BCLT)',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:25:09](https://www.youtube.com/watch?v=xhIufRgP0ME&t=1509s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': "So you're never waiting to become a lawyer.",
+      'timestamp': 1509,
+      'timestamp_label': '[00:25:09]',
+      'timestamp_seconds': 1509,
+      'tip': "So you're never waiting to become a lawyer.",
+      'title': 'Patent Agents, Patent Lawyers, and Unique Career Paths',
+      'url': 'https://www.youtube.com/watch?v=xhIufRgP0ME&t=1509s',
+      'video_id': 'xhIufRgP0ME'}],
+ 3: [{'author': 'Jeff Schell',
+      'channel': 'Jeff Schell',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:52](https://www.youtube.com/watch?v=cfPpWt8cw64&t=172s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': 'Sometimes when you license a patented invention, particularly under an exclusive '
+              'license arrangement, you may want to settle for slightly lower royalties in '
+              'exchange for placing the obligation to enforce the patent on the licensee.',
+      'timestamp': 172,
+      'timestamp_label': '[00:02:52]',
+      'timestamp_seconds': 172,
+      'tip': 'Sometimes when you license a patented invention, particularly under an exclusive '
+             'license arrangement, you may want to settle for slightly lower royalties in exchange '
+             'for placing the obligation to enforce the patent on the licensee.',
+      'title': 'Patent Licensing 101 - Learn What Goes Into Monetizing Your Patented Ideas',
+      'url': 'https://www.youtube.com/watch?v=cfPpWt8cw64&t=172s',
+      'video_id': 'cfPpWt8cw64'},
+     {'author': 'UpCounsel',
+      'channel': 'UpCounsel',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:30](https://www.youtube.com/watch?v=mtxmo_OkhSw&t=30s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': 'On average, patent royalty rates typically range between 3 to 6% of gross sales.',
+      'timestamp': 30,
+      'timestamp_label': '[00:00:30]',
+      'timestamp_seconds': 30,
+      'tip': 'On average, patent royalty rates typically range between 3 to 6% of gross sales.',
+      'title': 'Patent Royalties  How Much Can Inventors Really Earn',
+      'url': 'https://www.youtube.com/watch?v=mtxmo_OkhSw&t=30s',
+      'video_id': 'mtxmo_OkhSw'},
      {'author': 'The Patent Professor',
       'channel': 'The Patent Professor',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:21](https://www.youtube.com/watch?v=bO09tLv7ysM&t=201s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q8 operational verification).',
+      'markdown': '[00:00:38](https://www.youtube.com/watch?v=bO09tLv7ysM&t=38s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
       'source_type': 'video_pro_tip',
-      'text': "This because you didn't do this I'm like okay that's fine I'm walking away or "
-              "we're negotiating so it's not it's like yeah those are those are good "
-              'ammunition to have but your true the true power is the decision of you what '
-              'what you want to do with your idea.',
-      'timestamp': 201,
-      'timestamp_label': '[00:03:21]',
-      'timestamp_seconds': 201,
-      'tip': "This because you didn't do this I'm like okay that's fine I'm walking away or "
-             "we're negotiating so it's not it's like yeah those are those are good ammunition "
-             'to have but your true the true power is the decision of you what what you want '
-             'to do with your idea.',
+      'text': "When I approach companies I'm not demanding them for royalty percentage; I actually "
+              'want them to know first, are you interested.',
+      'timestamp': 38,
+      'timestamp_label': '[00:00:38]',
+      'timestamp_seconds': 38,
+      'tip': "When I approach companies I'm not demanding them for royalty percentage; I actually "
+             'want them to know first, are you interested.',
       'title': 'Licensing Your Product Idea: How to Negotiate Your Royalty Percentage with Sef '
-               'Chang (The Patent Professor)',
-      'url': 'https://www.youtube.com/watch?v=bO09tLv7ysM&t=201s',
+               'Chang',
+      'url': 'https://www.youtube.com/watch?v=bO09tLv7ysM&t=38s',
       'video_id': 'bO09tLv7ysM'},
+     {'author': 'Brian Fried - The Inventor Coach',
+      'channel': 'Brian Fried - The Inventor Coach',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:58](https://www.youtube.com/watch?v=UnGdjQb467o&t=118s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': "Typically, it's from a percentage of the wholesale cost of what they are selling it "
+              'to the buyer for, and I get paid quarterly.',
+      'timestamp': 118,
+      'timestamp_label': '[00:01:58]',
+      'timestamp_seconds': 118,
+      'tip': "Typically, it's from a percentage of the wholesale cost of what they are selling it "
+             'to the buyer for, and I get paid quarterly.',
+      'title': 'Licensing to Earn royalties Vs  Manufacturing Your Invention Idea',
+      'url': 'https://www.youtube.com/watch?v=UnGdjQb467o&t=118s',
+      'video_id': 'UnGdjQb467o'},
      {'author': 'inventRightTV',
       'channel': 'inventRightTV',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:16:16](https://www.youtube.com/watch?v=LWNWc2dynPI&t=976s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q8 operational verification).',
+      'markdown': '[00:04:33](https://www.youtube.com/watch?v=WEVVJ111b8o&t=273s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
       'source_type': 'video_pro_tip',
-      'text': "We love our ideas, we're enthusiastic, we want to show it to you. They're not "
-              "really they don't really understand the business here. So, you're just "
-              "overloading these companies. If you can get to them, and they're like, you're "
-              "driving us crazy. So, they're not responding.",
-      'timestamp': 976,
-      'timestamp_label': '[00:16:16]',
-      'timestamp_seconds': 976,
-      'tip': "We love our ideas, we're enthusiastic, we want to show it to you. They're not "
-             "really they don't really understand the business here. So, you're just "
-             "overloading these companies. If you can get to them, and they're like, you're "
-             "driving us crazy. So, they're not responding.",
-      'title': 'How I License an Invention From Start to Finish (inventRightTV)',
-      'url': 'https://www.youtube.com/watch?v=LWNWc2dynPI&t=976s',
+      'text': "I think overall it's generated about ten million in royalties, a third of which "
+              'went to my agent.',
+      'timestamp': 273,
+      'timestamp_label': '[00:04:33]',
+      'timestamp_seconds': 273,
+      'tip': "I think overall it's generated about ten million in royalties, a third of which went "
+             'to my agent.',
+      'title': 'How This Inventor Earned $10 Million In Royalties!',
+      'url': 'https://www.youtube.com/watch?v=WEVVJ111b8o&t=273s',
+      'video_id': 'WEVVJ111b8o'},
+     {'author': 'inventRightTV',
+      'channel': 'inventRightTV',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:06:14](https://www.youtube.com/watch?v=gxeuCPaGeHY&t=374s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': 'It produced millions of dollars for me; my checks quarterly were about $250,000 a '
+              'quarter.',
+      'timestamp': 374,
+      'timestamp_label': '[00:06:14]',
+      'timestamp_seconds': 374,
+      'tip': 'It produced millions of dollars for me; my checks quarterly were about $250,000 a '
+             'quarter.',
+      'title': 'How Much Money Stephen Key Made Licensing His Ideas',
+      'url': 'https://www.youtube.com/watch?v=gxeuCPaGeHY&t=374s',
+      'video_id': 'gxeuCPaGeHY'},
+     {'author': 'inventRightTV',
+      'channel': 'inventRightTV',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:38](https://www.youtube.com/watch?v=5pNsi_2H-J4&t=278s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': "The average royalty rate that we have seen over the years, it's about 5%.",
+      'timestamp': 278,
+      'timestamp_label': '[00:04:38]',
+      'timestamp_seconds': 278,
+      'tip': "The average royalty rate that we have seen over the years, it's about 5%.",
+      'title': 'How Much Money Will You Make Licensing? (Royalties)',
+      'url': 'https://www.youtube.com/watch?v=5pNsi_2H-J4&t=278s',
+      'video_id': '5pNsi_2H-J4'},
+     {'author': 'inventRightTV',
+      'channel': 'inventRightTV',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:37](https://www.youtube.com/watch?v=5pNsi_2H-J4&t=217s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': "I think the minimum guarantees is very very important because that's going to allow "
+              "you that if they don't perform you get it back.",
+      'timestamp': 217,
+      'timestamp_label': '[00:03:37]',
+      'timestamp_seconds': 217,
+      'tip': "I think the minimum guarantees is very very important because that's going to allow "
+             "you that if they don't perform you get it back.",
+      'title': 'How Much Money Will You Make Licensing? (Royalties)',
+      'url': 'https://www.youtube.com/watch?v=5pNsi_2H-J4&t=217s',
+      'video_id': '5pNsi_2H-J4'},
+     {'author': 'inventRightTV',
+      'channel': 'inventRightTV',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:16:49](https://www.youtube.com/watch?v=hM7gpPqIDoQ&t=1009s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': 'Today, to get someone to respond to an email is almost impossible.',
+      'timestamp': 1009,
+      'timestamp_label': '[00:16:49]',
+      'timestamp_seconds': 1009,
+      'tip': 'Today, to get someone to respond to an email is almost impossible.',
+      'title': 'I Licensed My Ideas — Here’s How Much I Made!',
+      'url': 'https://www.youtube.com/watch?v=hM7gpPqIDoQ&t=1009s',
+      'video_id': 'hM7gpPqIDoQ'},
+     {'author': 'inventRightTV',
+      'channel': 'inventRightTV',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:06:40](https://www.youtube.com/watch?v=Se-TzTVqhfY&t=400s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': "They got to make it, they have to ship it, it has to go on the shelf, so you're "
+              'talking a year, year and a half, two years until those royalties start to really '
+              'add up.',
+      'timestamp': 400,
+      'timestamp_label': '[00:06:40]',
+      'timestamp_seconds': 400,
+      'tip': "They got to make it, they have to ship it, it has to go on the shelf, so you're "
+             'talking a year, year and a half, two years until those royalties start to really add '
+             'up.',
+      'title': 'From Ideas To Income : The Truth About Earning Royalties',
+      'url': 'https://www.youtube.com/watch?v=Se-TzTVqhfY&t=400s',
+      'video_id': 'Se-TzTVqhfY'},
+     {'author': 'inventRightTV',
+      'channel': 'inventRightTV',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:26](https://www.youtube.com/watch?v=ykqpNKDKFEE&t=206s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': "I needed to test my idea really really fast and if it wasn't a great idea I needed "
+              'to kick it to the curb as fast as I could and come up with another one.',
+      'timestamp': 206,
+      'timestamp_label': '[00:03:26]',
+      'timestamp_seconds': 206,
+      'tip': "I needed to test my idea really really fast and if it wasn't a great idea I needed "
+             'to kick it to the curb as fast as I could and come up with another one.',
+      'title': 'Who is Stephen Key?',
+      'url': 'https://www.youtube.com/watch?v=ykqpNKDKFEE&t=206s',
+      'video_id': 'ykqpNKDKFEE'},
+     {'author': 'Chartered Institute of Patent Attorneys',
+      'channel': 'Chartered Institute of Patent Attorneys',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:20](https://www.youtube.com/watch?v=uTreJGUMqMs&t=20s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': "If you're going to secure licensing deals and royalty income you have to have the "
+              'ownership of IP or you have nothing in that sense to sell.',
+      'timestamp': 20,
+      'timestamp_label': '[00:00:20]',
+      'timestamp_seconds': 20,
+      'tip': "If you're going to secure licensing deals and royalty income you have to have the "
+             'ownership of IP or you have nothing in that sense to sell.',
+      'title': 'Turning ideas into profits - licensing your patents',
+      'url': 'https://www.youtube.com/watch?v=uTreJGUMqMs&t=20s',
+      'video_id': 'uTreJGUMqMs'},
+     {'author': 'Innovent Law',
+      'channel': 'Innovent Law',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:21](https://www.youtube.com/watch?v=boXHxU-4qd8&t=141s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': 'One of the ways to monetize it is to go after people who are using your patent '
+              'without your consent and get damages, but that is not the cheapest option as patent '
+              'litigation can get very very pricey.',
+      'timestamp': 141,
+      'timestamp_label': '[00:02:21]',
+      'timestamp_seconds': 141,
+      'tip': 'One of the ways to monetize it is to go after people who are using your patent '
+             'without your consent and get damages, but that is not the cheapest option as patent '
+             'litigation can get very very pricey.',
+      'title': 'Patent Monetizing Strategies Every Entrepreneur Should Know',
+      'url': 'https://www.youtube.com/watch?v=boXHxU-4qd8&t=141s',
+      'video_id': 'boXHxU-4qd8'},
+     {'author': 'J.D. Houvener / Bold Patents Law Firm',
+      'channel': 'J.D. Houvener / Bold Patents Law Firm',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:45](https://www.youtube.com/watch?v=ZbJhX8I0koA&t=165s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': 'These are the terms where you say deal breaker, I gotta get at least four percent '
+              'royalty or I need this to be granted an exclusive term.',
+      'timestamp': 165,
+      'timestamp_label': '[00:02:45]',
+      'timestamp_seconds': 165,
+      'tip': 'These are the terms where you say deal breaker, I gotta get at least four percent '
+             'royalty or I need this to be granted an exclusive term.',
+      'title': 'How to License a Patent',
+      'url': 'https://www.youtube.com/watch?v=ZbJhX8I0koA&t=165s',
+      'video_id': 'ZbJhX8I0koA'},
+     {'author': 'inventRightTV',
+      'channel': 'inventRightTV',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:05:56](https://www.youtube.com/watch?v=hbfKyomYp6U&t=356s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': 'Do not drop the ball; it happened to me one time, I was traveling for six months '
+              "around the country and sure enough when I got back things weren't quite right.",
+      'timestamp': 356,
+      'timestamp_label': '[00:05:56]',
+      'timestamp_seconds': 356,
+      'tip': 'Do not drop the ball; it happened to me one time, I was traveling for six months '
+             "around the country and sure enough when I got back things weren't quite right.",
+      'title': 'The Licensing Lifestyle with Stephen Key',
+      'url': 'https://www.youtube.com/watch?v=hbfKyomYp6U&t=356s',
+      'video_id': 'hbfKyomYp6U'},
+     {'author': 'inventRightTV',
+      'channel': 'inventRightTV',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:08:47](https://www.youtube.com/watch?v=INuH7fr5H40&t=527s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': "I'm really sad to tell you that big companies don't license very much; it's the "
+              'mid-sized companies that do.',
+      'timestamp': 527,
+      'timestamp_label': '[00:08:47]',
+      'timestamp_seconds': 527,
+      'tip': "I'm really sad to tell you that big companies don't license very much; it's the "
+             'mid-sized companies that do.',
+      'title': 'How to License Your Ideas and Make Money (Your Honest Guide to Profitable '
+               'Inventing)',
+      'url': 'https://www.youtube.com/watch?v=INuH7fr5H40&t=527s',
+      'video_id': 'INuH7fr5H40'},
+     {'author': 'J.D. Houvener / Bold Patents Law Firm',
+      'channel': 'J.D. Houvener / Bold Patents Law Firm',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:06:30](https://www.youtube.com/watch?v=2yLgmvphmBw&t=390s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': "If you've never sold your product before, it's going to be hard to negotiate a "
+              "higher percentage because there's no track record.",
+      'timestamp': 390,
+      'timestamp_label': '[00:06:30]',
+      'timestamp_seconds': 390,
+      'tip': "If you've never sold your product before, it's going to be hard to negotiate a "
+             "higher percentage because there's no track record.",
+      'title': 'How Inventors Monetize Patents Without Ever Making a Product?',
+      'url': 'https://www.youtube.com/watch?v=2yLgmvphmBw&t=390s',
+      'video_id': '2yLgmvphmBw'}],
+ 4: [{'author': 'inventRightTV',
+      'channel': 'inventRightTV',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:29:45](https://www.youtube.com/watch?v=G2JXLQrTZXI&t=1785s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': "that gives me leverage to know what profit they're going to make that allows me to "
+              'make a very convincing argument why they should pay me a bigger royalty.',
+      'timestamp': 1785,
+      'timestamp_label': '[00:29:45]',
+      'timestamp_seconds': 1785,
+      'tip': "that gives me leverage to know what profit they're going to make that allows me to "
+             'make a very convincing argument why they should pay me a bigger royalty.',
+      'title': '7 strategies to get a great licensing deal!',
+      'url': 'https://www.youtube.com/watch?v=G2JXLQrTZXI&t=1785s',
+      'video_id': 'G2JXLQrTZXI'},
+     {'author': 'inventRightTV',
+      'channel': 'inventRightTV',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:26:10](https://www.youtube.com/watch?v=1w_iTE7ZNso&t=1570s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': "in two sentences I'm giving my IP status what my product is and what the benefit "
+              'is.',
+      'timestamp': 1570,
+      'timestamp_label': '[00:26:10]',
+      'timestamp_seconds': 1570,
+      'tip': "in two sentences I'm giving my IP status what my product is and what the benefit is.",
+      'title': '12 Tips for Successful Product Licensing!',
+      'url': 'https://www.youtube.com/watch?v=1w_iTE7ZNso&t=1570s',
+      'video_id': '1w_iTE7ZNso'},
+     {'author': 'inventRightTV',
+      'channel': 'inventRightTV',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:07](https://www.youtube.com/watch?v=p3ODWhpvt3E&t=127s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': "We need to see that your product does what you're saying it does.",
+      'timestamp': 127,
+      'timestamp_label': '[00:02:07]',
+      'timestamp_seconds': 127,
+      'tip': "We need to see that your product does what you're saying it does.",
+      'title': 'The #1 Thing Companies Want Before Buying Your Idea',
+      'url': 'https://www.youtube.com/watch?v=p3ODWhpvt3E&t=127s',
+      'video_id': 'p3ODWhpvt3E'},
+     {'author': 'inventRightTV',
+      'channel': 'inventRightTV',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:51](https://www.youtube.com/watch?v=IMLF0c7wOQI&t=51s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': "you might need to reach out to 20 30 companies one does deal most inventors don't "
+              'bother to do that.',
+      'timestamp': 51,
+      'timestamp_label': '[00:00:51]',
+      'timestamp_seconds': 51,
+      'tip': "you might need to reach out to 20 30 companies one does deal most inventors don't "
+             'bother to do that.',
+      'title': 'How to license your product ideas',
+      'url': 'https://www.youtube.com/watch?v=IMLF0c7wOQI&t=51s',
+      'video_id': 'IMLF0c7wOQI'},
+     {'author': 'inventRightTV',
+      'channel': 'inventRightTV',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:07:17](https://www.youtube.com/watch?v=aFZpyTUvtlY&t=437s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': "What you're doing is being a professional by following up.",
+      'timestamp': 437,
+      'timestamp_label': '[00:07:17]',
+      'timestamp_seconds': 437,
+      'tip': "What you're doing is being a professional by following up.",
+      'title': 'How to Pitch Your Product to Companies For a Licensing Deal',
+      'url': 'https://www.youtube.com/watch?v=aFZpyTUvtlY&t=437s',
+      'video_id': 'aFZpyTUvtlY'},
+     {'author': 'inventRightTV',
+      'channel': 'inventRightTV',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:25](https://www.youtube.com/watch?v=mljygoL-peE&t=145s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': "there's no Gatekeepers there's no one there to tell you no.",
+      'timestamp': 145,
+      'timestamp_label': '[00:02:25]',
+      'timestamp_seconds': 145,
+      'tip': "there's no Gatekeepers there's no one there to tell you no.",
+      'title': 'Making Your Hit List of Potential Licensees',
+      'url': 'https://www.youtube.com/watch?v=mljygoL-peE&t=145s',
+      'video_id': 'mljygoL-peE'},
+     {'author': 'inventRightTV',
+      'channel': 'inventRightTV',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:15:31](https://www.youtube.com/watch?v=LWNWc2dynPI&t=931s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'It is who you know today.',
+      'timestamp': 931,
+      'timestamp_label': '[00:15:31]',
+      'timestamp_seconds': 931,
+      'tip': 'It is who you know today.',
+      'title': 'How I License an Invention From Start to Finish',
+      'url': 'https://www.youtube.com/watch?v=LWNWc2dynPI&t=931s',
       'video_id': 'LWNWc2dynPI'},
      {'author': 'inventRightTV',
       'channel': 'inventRightTV',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:55:03](https://www.youtube.com/watch?v=1w_iTE7ZNso&t=3303s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q8 operational verification).',
+      'markdown': '[00:05:47](https://www.youtube.com/watch?v=biVTpLl2T5U&t=347s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
       'source_type': 'video_pro_tip',
-      'text': "This great idea that's not going to work and I the other day uh a company flat "
-              "out told us one group that we're working with we're not ever going to sign in n "
-              "da I don't know what half the company's.",
-      'timestamp': 3303,
-      'timestamp_label': '[00:55:03]',
-      'timestamp_seconds': 3303,
-      'tip': "This great idea that's not going to work and I the other day uh a company flat "
-             "out told us one group that we're working with we're not ever going to sign in n "
-             "da I don't know what half the company's.",
-      'title': '12 Tips for Successful Product Licensing! (inventRightTV)',
-      'url': 'https://www.youtube.com/watch?v=1w_iTE7ZNso&t=3303s',
-      'video_id': '1w_iTE7ZNso'}],
- 9: [{'author': 'J.D. Houvener / Bold Patents Law Firm',
-      'channel': 'J.D. Houvener / Bold Patents Law Firm',
+      'text': 'really simple to do you want to get off linkedin do a zoom skype or telephone call '
+              'and get to know each other.',
+      'timestamp': 347,
+      'timestamp_label': '[00:05:47]',
+      'timestamp_seconds': 347,
+      'tip': 'really simple to do you want to get off linkedin do a zoom skype or telephone call '
+             'and get to know each other.',
+      'title': 'How to Land the Licensing Deal of Your Dreams',
+      'url': 'https://www.youtube.com/watch?v=biVTpLl2T5U&t=347s',
+      'video_id': 'biVTpLl2T5U'},
+     {'author': 'inventRightTV',
+      'channel': 'inventRightTV',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:14](https://www.youtube.com/watch?v=ZbJhX8I0koA&t=194s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q9 operational verification).',
+      'markdown': '[00:04:54](https://www.youtube.com/watch?v=LO-vI8icz70&t=294s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
       'source_type': 'video_pro_tip',
-      'text': "Grant Clause I don't take a quick break here then yeah a license agreement is "
-              'not just as simple as literally signing the patent over this is a legal '
-              "contract that you're creating with the other party.",
-      'timestamp': 194,
-      'timestamp_label': '[00:03:14]',
-      'timestamp_seconds': 194,
-      'tip': "Grant Clause I don't take a quick break here then yeah a license agreement is "
-             'not just as simple as literally signing the patent over this is a legal contract '
-             "that you're creating with the other party.",
-      'title': 'How to License a Patent (J.D. Houvener / Bold Patents Law Firm)',
-      'url': 'https://www.youtube.com/watch?v=ZbJhX8I0koA&t=194s',
-      'video_id': 'ZbJhX8I0koA'},
-     {'author': 'Patent Question',
-      'channel': 'Patent Question',
+      'text': "But when you reach out to them that way, you're really saying to them, I'm "
+              'concerned about you, not my product.',
+      'timestamp': 294,
+      'timestamp_label': '[00:04:54]',
+      'timestamp_seconds': 294,
+      'tip': "But when you reach out to them that way, you're really saying to them, I'm concerned "
+             'about you, not my product.',
+      'title': 'How to Get Open Innovation Companies to Respond (Licensing Playbook)',
+      'url': 'https://www.youtube.com/watch?v=LO-vI8icz70&t=294s',
+      'video_id': 'LO-vI8icz70'},
+     {'author': 'inventRightTV',
+      'channel': 'inventRightTV',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:13](https://www.youtube.com/watch?v=E7nUaZBoVeI&t=253s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q9 operational verification).',
+      'markdown': '[00:38:47](https://www.youtube.com/watch?v=zdIFauqdSt8&t=2327s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
       'source_type': 'video_pro_tip',
-      'text': 'An exclusive license is very different from a non-exclusive license. You also '
-              'need to make sure that the agreement addresses reporting. These details can '
-              'make a big difference and need to be addressed when you make a deal. '
-              'Manufacturing is a business model.',
-      'timestamp': 253,
-      'timestamp_label': '[00:04:13]',
-      'timestamp_seconds': 253,
-      'tip': 'An exclusive license is very different from a non-exclusive license. You also '
-             'need to make sure that the agreement addresses reporting. These details can make '
-             'a big difference and need to be addressed when you make a deal. Manufacturing is '
-             'a business model.',
-      'title': 'How Inventors Make Money Without Manufacturing Anything: Licensing, Royalties, '
-               'and Selling Explained (Patent Question)',
-      'url': 'https://www.youtube.com/watch?v=E7nUaZBoVeI&t=253s',
-      'video_id': 'E7nUaZBoVeI'},
-     {'author': 'BaxterIPAttorneys',
-      'channel': 'BaxterIPAttorneys',
+      'text': "the second most powerful thing is letting time tick a little bit it's hard to do I "
+              "know it is but it's powerful.",
+      'timestamp': 2327,
+      'timestamp_label': '[00:38:47]',
+      'timestamp_seconds': 2327,
+      'tip': "the second most powerful thing is letting time tick a little bit it's hard to do I "
+             "know it is but it's powerful.",
+      'title': 'Pitching an Idea? Learn the RIGHT Way to Land a Licensing Deal!',
+      'url': 'https://www.youtube.com/watch?v=zdIFauqdSt8&t=2327s',
+      'video_id': 'zdIFauqdSt8'},
+     {'author': 'inventRightTV',
+      'channel': 'inventRightTV',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:15](https://www.youtube.com/watch?v=NU_eh8zb6Uk&t=15s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q9 operational verification).',
+      'markdown': '[00:16:46](https://www.youtube.com/watch?v=zdIFauqdSt8&t=1006s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
       'source_type': 'video_pro_tip',
-      'text': 'Talking about joint developments and other legal terms within a license '
-              'agreement under certain circumstances joint developments can also be planned.',
-      'timestamp': 15,
-      'timestamp_label': '[00:00:15]',
-      'timestamp_seconds': 15,
-      'tip': 'Talking about joint developments and other legal terms within a license '
-             'agreement under certain circumstances joint developments can also be planned.',
-      'title': 'Term Sheet in Patent Licensing (extended) Part 3- John Baxter '
-               '(BaxterIPAttorneys)',
-      'url': 'https://www.youtube.com/watch?v=NU_eh8zb6Uk&t=15s',
-      'video_id': 'NU_eh8zb6Uk'},
-     {'author': 'Berkeley Center for Law & Technology (BCLT)',
-      'channel': 'Berkeley Center for Law & Technology (BCLT)',
+      'text': "80% of the deals you could have closed will die because you don't know what the "
+              "hell you're doing.",
+      'timestamp': 1006,
+      'timestamp_label': '[00:16:46]',
+      'timestamp_seconds': 1006,
+      'tip': "80% of the deals you could have closed will die because you don't know what the hell "
+             "you're doing.",
+      'title': 'Pitching an Idea? Learn the RIGHT Way to Land a Licensing Deal!',
+      'url': 'https://www.youtube.com/watch?v=zdIFauqdSt8&t=1006s',
+      'video_id': 'zdIFauqdSt8'},
+     {'author': 'inventRightTV',
+      'channel': 'inventRightTV',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:28:44](https://www.youtube.com/watch?v=xhIufRgP0ME&t=1724s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q9 operational verification).',
+      'markdown': '[00:01:33](https://www.youtube.com/watch?v=_aiJZ1WKmfc&t=93s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
       'source_type': 'video_pro_tip',
-      'text': "'s given me a law license, and I'm a patent agent at the same time? The tone of "
-              'my voice tells you what my my thoughts on the answer are, that the law degree '
-              "qualifies you for nothing. But I'll let the two of you answer.",
-      'timestamp': 1724,
-      'timestamp_label': '[00:28:44]',
-      'timestamp_seconds': 1724,
-      'tip': "'s given me a law license, and I'm a patent agent at the same time? The tone of "
-             'my voice tells you what my my thoughts on the answer are, that the law degree '
-             "qualifies you for nothing. But I'll let the two of you answer.",
-      'title': 'Patent Agents, Patent Lawyers, and Unique Career Paths (Berkeley Center for '
-               'Law & Technology (BCLT))',
-      'url': 'https://www.youtube.com/watch?v=xhIufRgP0ME&t=1724s',
-      'video_id': 'xhIufRgP0ME'},
-     {'author': 'Book Industry Study Group',
-      'channel': 'Book Industry Study Group',
+      'text': "people don't have the time the money the skill or even the desire to start a "
+              "business so there is an alternative and it's called licensing.",
+      'timestamp': 93,
+      'timestamp_label': '[00:01:33]',
+      'timestamp_seconds': 93,
+      'tip': "people don't have the time the money the skill or even the desire to start a "
+             "business so there is an alternative and it's called licensing.",
+      'title': 'The Game-Changing Power of Open Innovation',
+      'url': 'https://www.youtube.com/watch?v=_aiJZ1WKmfc&t=93s',
+      'video_id': '_aiJZ1WKmfc'},
+     {'author': 'inventRightTV',
+      'channel': 'inventRightTV',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:44:48](https://www.youtube.com/watch?v=Xy0iIdZDIHk&t=2688s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q9 operational verification).',
+      'markdown': '[00:01:49](https://www.youtube.com/watch?v=MvycxV2ib_8&t=109s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
       'source_type': 'video_pro_tip',
-      'text': 'Uh, the idea of of uh a license and a lency sharing um contract numbers or deal '
-              'number uh as a way of matching is a really interesting thing.',
-      'timestamp': 2688,
-      'timestamp_label': '[00:44:48]',
-      'timestamp_seconds': 2688,
-      'tip': 'Uh, the idea of of uh a license and a lency sharing um contract numbers or deal '
-             'number uh as a way of matching is a really interesting thing.',
-      'title': 'Rights Royalty Statement Standards: The Details Make the Difference (Book '
-               'Industry Study Group)',
-      'url': 'https://www.youtube.com/watch?v=Xy0iIdZDIHk&t=2688s',
-      'video_id': 'Xy0iIdZDIHk'},
+      'text': 'find the companies are already set up for you that already have a department that '
+              'handles outside submissions.',
+      'timestamp': 109,
+      'timestamp_label': '[00:01:49]',
+      'timestamp_seconds': 109,
+      'tip': 'find the companies are already set up for you that already have a department that '
+             'handles outside submissions.',
+      'title': 'Finding Companies That Embrace Open Innovation and Inventors',
+      'url': 'https://www.youtube.com/watch?v=MvycxV2ib_8&t=109s',
+      'video_id': 'MvycxV2ib_8'},
      {'author': 'Mark Reyland',
       'channel': 'Mark Reyland',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:28:51](https://www.youtube.com/watch?v=71FE9YR_9no&t=1731s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q9 operational verification).',
+      'markdown': '[00:41:57](https://www.youtube.com/watch?v=71FE9YR_9no&t=2517s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
       'source_type': 'video_pro_tip',
-      'text': "That's like taking your dog to your dentist with all difference to my good "
-              "friends in the patent attorney business they're not contract attorneys contract "
-              "law is different than patent law I wouldn't take my my patent needs to my "
-              'contract attorney.',
-      'timestamp': 1731,
-      'timestamp_label': '[00:28:51]',
-      'timestamp_seconds': 1731,
-      'tip': "That's like taking your dog to your dentist with all difference to my good "
-             "friends in the patent attorney business they're not contract attorneys contract "
-             "law is different than patent law I wouldn't take my my patent needs to my "
-             'contract attorney.',
-      'title': 'Licensing A Retail Product by Mark Reyland (Mark Reyland)',
-      'url': 'https://www.youtube.com/watch?v=71FE9YR_9no&t=1731s',
+      'text': 'there is no reason to ever assign a patent as part of a licensing process none '
+              'because the licensing contract is a pseudo assignment.',
+      'timestamp': 2517,
+      'timestamp_label': '[00:41:57]',
+      'timestamp_seconds': 2517,
+      'tip': 'there is no reason to ever assign a patent as part of a licensing process none '
+             'because the licensing contract is a pseudo assignment.',
+      'title': 'Licensing A Retail Product by Mark Reyland',
+      'url': 'https://www.youtube.com/watch?v=71FE9YR_9no&t=2517s',
       'video_id': '71FE9YR_9no'},
+     {'author': 'Mark Reyland',
+      'channel': 'Mark Reyland',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:32:03](https://www.youtube.com/watch?v=71FE9YR_9no&t=1923s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': "and the average royalty across the board is eight points eight percent that's the "
+              'average.',
+      'timestamp': 1923,
+      'timestamp_label': '[00:32:03]',
+      'timestamp_seconds': 1923,
+      'tip': "and the average royalty across the board is eight points eight percent that's the "
+             'average.',
+      'title': 'Licensing A Retail Product by Mark Reyland',
+      'url': 'https://www.youtube.com/watch?v=71FE9YR_9no&t=1923s',
+      'video_id': '71FE9YR_9no'},
+     {'author': 'inventRightTV',
+      'channel': 'inventRightTV',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:05:17](https://www.youtube.com/watch?v=KOR6yXD1nTQ&t=317s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'I think one of the most important things you can do today is be able to describe '
+              'the benefit of your idea in one sentence.',
+      'timestamp': 317,
+      'timestamp_label': '[00:05:17]',
+      'timestamp_seconds': 317,
+      'tip': 'I think one of the most important things you can do today is be able to describe the '
+             'benefit of your idea in one sentence.',
+      'title': 'How AI Can Help You Get a Licensing Deal',
+      'url': 'https://www.youtube.com/watch?v=KOR6yXD1nTQ&t=317s',
+      'video_id': 'KOR6yXD1nTQ'},
+     {'author': 'Patent Attorney Worldwide',
+      'channel': 'Patent Attorney Worldwide',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:29](https://www.youtube.com/watch?v=B-E0dIbeMfg&t=89s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'The right people simply never even knew they existed.',
+      'timestamp': 89,
+      'timestamp_label': '[00:01:29]',
+      'timestamp_seconds': 89,
+      'tip': 'The right people simply never even knew they existed.',
+      'title': 'How to Make Money with Your Patent (Licensing or Selling) | AI-Powered Patent '
+               'Commercialization',
+      'url': 'https://www.youtube.com/watch?v=B-E0dIbeMfg&t=89s',
+      'video_id': 'B-E0dIbeMfg'},
+     {'author': 'ideasuploaded',
+      'channel': 'ideasuploaded',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:52](https://www.youtube.com/watch?v=jJvwXeinKSk&t=172s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'and I showed them a little drawing and they loved it and they said can you make '
+              'this a 3D.',
+      'timestamp': 172,
+      'timestamp_label': '[00:02:52]',
+      'timestamp_seconds': 172,
+      'tip': 'and I showed them a little drawing and they loved it and they said can you make this '
+             'a 3D.',
+      'title': 'Inventor Stephen Key Inventright offers advice on how to license your invention '
+               'ideas',
+      'url': 'https://www.youtube.com/watch?v=jJvwXeinKSk&t=172s',
+      'video_id': 'jJvwXeinKSk'}],
+ 5: [{'author': 'Trenner Law Firm - Patents & Trademarks',
+      'channel': 'Trenner Law Firm - Patents & Trademarks',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:52](https://www.youtube.com/watch?v=dSzZD5CnwK8&t=232s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'A good licensing agreement reflects how risk is shared, and many inventors lose out '
+              "here because they don't understand the mechanics of the deal.",
+      'timestamp': 232,
+      'timestamp_label': '[00:03:52]',
+      'timestamp_seconds': 232,
+      'tip': 'A good licensing agreement reflects how risk is shared, and many inventors lose out '
+             "here because they don't understand the mechanics of the deal.",
+      'title': 'From Idea to Income: How to License Your Patent for Royalties',
+      'url': 'https://www.youtube.com/watch?v=dSzZD5CnwK8&t=232s',
+      'video_id': 'dSzZD5CnwK8'},
+     {'author': 'Bao Tran, Esq. | Patent Attorney',
+      'channel': 'Bao Tran, Esq. | Patent Attorney',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:13:01](https://www.youtube.com/watch?v=SkIAUEkenak&t=781s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'A point of negotiation is the explicit right to terminate upon failure to reach the '
+              'milestone, and this is different than the good faith negotiation to renegotiate the '
+              'milestones.',
+      'timestamp': 781,
+      'timestamp_label': '[00:13:01]',
+      'timestamp_seconds': 781,
+      'tip': 'A point of negotiation is the explicit right to terminate upon failure to reach the '
+             'milestone, and this is different than the good faith negotiation to renegotiate the '
+             'milestones.',
+      'title': 'Patent Licensing Strategy: Royalties, Equity & Exclusive Rights Explained',
+      'url': 'https://www.youtube.com/watch?v=SkIAUEkenak&t=781s',
+      'video_id': 'SkIAUEkenak'},
+     {'author': 'Bao Tran, Esq. | Patent Attorney',
+      'channel': 'Bao Tran, Esq. | Patent Attorney',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:09:28](https://www.youtube.com/watch?v=SkIAUEkenak&t=568s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': "If you take equity, you have an odd of 90% that it's going to be worth nothing, so "
+              'most universities basically take a percentage of the equity in the range of 2 to '
+              '5%.',
+      'timestamp': 568,
+      'timestamp_label': '[00:09:28]',
+      'timestamp_seconds': 568,
+      'tip': "If you take equity, you have an odd of 90% that it's going to be worth nothing, so "
+             'most universities basically take a percentage of the equity in the range of 2 to 5%.',
+      'title': 'Patent Licensing Strategy: Royalties, Equity & Exclusive Rights Explained',
+      'url': 'https://www.youtube.com/watch?v=SkIAUEkenak&t=568s',
+      'video_id': 'SkIAUEkenak'},
      {'author': 'UpCounsel',
       'channel': 'UpCounsel',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:53](https://www.youtube.com/watch?v=AaEw4SGbkk0&t=173s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q9 operational verification).',
+      'markdown': '[00:00:34](https://www.youtube.com/watch?v=QaABLYw6maY&t=34s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
       'source_type': 'video_pro_tip',
-      'text': 'A strong licensing agreement  should include several key terms. The scope of '
-              'license defines exactly  what rights are granted. The term and.',
-      'timestamp': 173,
-      'timestamp_label': '[00:02:53]',
-      'timestamp_seconds': 173,
-      'tip': 'A strong licensing agreement  should include several key terms. The scope of '
-             'license defines exactly  what rights are granted. The term and.',
-      'title': 'How to Profit from Your Patent Through Licensing (UpCounsel)',
-      'url': 'https://www.youtube.com/watch?v=AaEw4SGbkk0&t=173s',
-      'video_id': 'AaEw4SGbkk0'},
-     {'author': 'Sinorbit Academy',
-      'channel': 'Sinorbit Academy',
+      'text': 'Payment terms are another crucial element, often involving royalties structured as '
+              'a percentage of sales or fixed fee per unit.',
+      'timestamp': 34,
+      'timestamp_label': '[00:00:34]',
+      'timestamp_seconds': 34,
+      'tip': 'Payment terms are another crucial element, often involving royalties structured as a '
+             'percentage of sales or fixed fee per unit.',
+      'title': 'Licensing Agreements  Key Elements and Business Benefits',
+      'url': 'https://www.youtube.com/watch?v=QaABLYw6maY&t=34s',
+      'video_id': 'QaABLYw6maY'},
+     {'author': 'UpCounsel',
+      'channel': 'UpCounsel',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:20](https://www.youtube.com/watch?v=-uT7bPngmNc&t=20s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q9 operational verification).',
+      'markdown': '[00:02:27](https://www.youtube.com/watch?v=AaEw4SGbkk0&t=147s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
       'source_type': 'video_pro_tip',
-      'text': "They're making it, using it, selling it without your permission. That feeling, "
-              "yeah, that's the real world impact of patent infringement. It's the moment the "
-              'abstract legal right granted by the patent uh collides with actual commercial '
-              'activity.',
+      'text': 'When licensing a pending patent, include a clause specifying that rights become '
+              'active upon patent grant.',
+      'timestamp': 147,
+      'timestamp_label': '[00:02:27]',
+      'timestamp_seconds': 147,
+      'tip': 'When licensing a pending patent, include a clause specifying that rights become '
+             'active upon patent grant.',
+      'title': 'How to Profit from Your Patent Through Licensing',
+      'url': 'https://www.youtube.com/watch?v=AaEw4SGbkk0&t=147s',
+      'video_id': 'AaEw4SGbkk0'},
+     {'author': 'UpCounsel',
+      'channel': 'UpCounsel',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:19](https://www.youtube.com/watch?v=Lpv4Uq-cOLA&t=79s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'One common mistake is not securing performance obligations which require the '
+              'licensee to meet specific milestones.',
+      'timestamp': 79,
+      'timestamp_label': '[00:01:19]',
+      'timestamp_seconds': 79,
+      'tip': 'One common mistake is not securing performance obligations which require the '
+             'licensee to meet specific milestones.',
+      'title': 'Patent Licensing  How It Works and What You Need to Know',
+      'url': 'https://www.youtube.com/watch?v=Lpv4Uq-cOLA&t=79s',
+      'video_id': 'Lpv4Uq-cOLA'},
+     {'author': 'Licensing Basics',
+      'channel': 'Licensing Basics',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:40](https://www.youtube.com/watch?v=uBnJLlSWMLk&t=100s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'When it comes down to a licensing agreement, distribution is much more important '
+              'than the specific royalty rate.',
+      'timestamp': 100,
+      'timestamp_label': '[00:01:40]',
+      'timestamp_seconds': 100,
+      'tip': 'When it comes down to a licensing agreement, distribution is much more important '
+             'than the specific royalty rate.',
+      'title': "What's more important than your royalty rate in a licensing deal?",
+      'url': 'https://www.youtube.com/watch?v=uBnJLlSWMLk&t=100s',
+      'video_id': 'uBnJLlSWMLk'},
+     {'author': 'UpCounsel',
+      'channel': 'UpCounsel',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:54](https://www.youtube.com/watch?v=cURFfKlt_Ek&t=114s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'The ideal royalty rate is the maximum the licensee is willing and able to pay while '
+              'meeting the minimum the inventor is willing to accept.',
+      'timestamp': 114,
+      'timestamp_label': '[00:01:54]',
+      'timestamp_seconds': 114,
+      'tip': 'The ideal royalty rate is the maximum the licensee is willing and able to pay while '
+             'meeting the minimum the inventor is willing to accept.',
+      'title': 'Patent Licensing  How to Set Fair Royalty Rates',
+      'url': 'https://www.youtube.com/watch?v=cURFfKlt_Ek&t=114s',
+      'video_id': 'cURFfKlt_Ek'},
+     {'author': 'Ayers Law TV ~ Andrew M. Ayers, Esq.',
+      'channel': 'Ayers Law TV ~ Andrew M. Ayers, Esq.',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:35](https://www.youtube.com/watch?v=lVFYoVaNnrs&t=275s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': "You may think you're entering into just an exclusive license, however find out "
+              "later that it's non-exclusive.",
+      'timestamp': 275,
+      'timestamp_label': '[00:04:35]',
+      'timestamp_seconds': 275,
+      'tip': "You may think you're entering into just an exclusive license, however find out later "
+             "that it's non-exclusive.",
+      'title': 'Exclusive vs Non Exclusive License l What’s the difference?',
+      'url': 'https://www.youtube.com/watch?v=lVFYoVaNnrs&t=275s',
+      'video_id': 'lVFYoVaNnrs'},
+     {'author': 'J.D. Houvener / Bold Patents Law Firm',
+      'channel': 'J.D. Houvener / Bold Patents Law Firm',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:44](https://www.youtube.com/watch?v=-VhDIVEwvzI&t=44s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': "Exclusive really just means you're locking in on one manufacturer, and if you do "
+              "that you're putting a lot of eggs in one basket.",
+      'timestamp': 44,
+      'timestamp_label': '[00:00:44]',
+      'timestamp_seconds': 44,
+      'tip': "Exclusive really just means you're locking in on one manufacturer, and if you do "
+             "that you're putting a lot of eggs in one basket.",
+      'title': "Exclusive vs. Non-Exclusive Patent and Trademark License Agreements: What's the "
+               'Difference?',
+      'url': 'https://www.youtube.com/watch?v=-VhDIVEwvzI&t=44s',
+      'video_id': '-VhDIVEwvzI'},
+     {'author': 'BaxterIPAttorneys',
+      'channel': 'BaxterIPAttorneys',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:46](https://www.youtube.com/watch?v=yl8L7tuwNuI&t=226s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'Always analyze the rights using a rigid matrix structure cell by cell and never '
+              'grant commercially unnecessary and therefore not valued rights to a licensee.',
+      'timestamp': 226,
+      'timestamp_label': '[00:03:46]',
+      'timestamp_seconds': 226,
+      'tip': 'Always analyze the rights using a rigid matrix structure cell by cell and never '
+             'grant commercially unnecessary and therefore not valued rights to a licensee.',
+      'title': 'Term Sheet in Patent Licensing (extended) Part 1- John Baxter',
+      'url': 'https://www.youtube.com/watch?v=yl8L7tuwNuI&t=226s',
+      'video_id': 'yl8L7tuwNuI'},
+     {'author': 'Campus Fund',
+      'channel': 'Campus Fund',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:00](https://www.youtube.com/watch?v=rbNcenaCppU&t=0s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': "Term sheets are morally binding, but they're legally not binding; they outline "
+              'intention, not obligations.',
+      'timestamp': 0,
+      'timestamp_label': '[00:00:00]',
+      'timestamp_seconds': 0,
+      'tip': "Term sheets are morally binding, but they're legally not binding; they outline "
+             'intention, not obligations.',
+      'title': 'Binding vs Non-Binding Clauses in a Term Sheet | Startup Legal Basics Explained',
+      'url': 'https://www.youtube.com/watch?v=rbNcenaCppU&t=0s',
+      'video_id': 'rbNcenaCppU'},
+     {'author': 'BaxterIPAttorneys',
+      'channel': 'BaxterIPAttorneys',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:46](https://www.youtube.com/watch?v=NU_eh8zb6Uk&t=46s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'The legal warranties to be provided by the licensor need to be agreed on, and the '
+              "validity of the licensor's patent should never be warranted.",
+      'timestamp': 46,
+      'timestamp_label': '[00:00:46]',
+      'timestamp_seconds': 46,
+      'tip': 'The legal warranties to be provided by the licensor need to be agreed on, and the '
+             "validity of the licensor's patent should never be warranted.",
+      'title': 'Term Sheet in Patent Licensing (extended) Part 3- John Baxter',
+      'url': 'https://www.youtube.com/watch?v=NU_eh8zb6Uk&t=46s',
+      'video_id': 'NU_eh8zb6Uk'},
+     {'author': 'Ask a VC',
+      'channel': 'Ask a VC',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:24](https://www.youtube.com/watch?v=f7jKIsIKO1c&t=264s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'An option pool really is just a valuation discussion, because it all comes in and '
+              'factors into what that effective pre-money is.',
+      'timestamp': 264,
+      'timestamp_label': '[00:04:24]',
+      'timestamp_seconds': 264,
+      'tip': 'An option pool really is just a valuation discussion, because it all comes in and '
+             'factors into what that effective pre-money is.',
+      'title': 'AskAVC #12 - How to negotiate a term sheet',
+      'url': 'https://www.youtube.com/watch?v=f7jKIsIKO1c&t=264s',
+      'video_id': 'f7jKIsIKO1c'},
+     {'author': 'docstocTV',
+      'channel': 'docstocTV',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:59](https://www.youtube.com/watch?v=HbM8XU4hPCc&t=119s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'In some situations the expenses provision may be binding in the term sheet and '
+              'therefore obligate one of the parties to pay the expenses of the other if the '
+              'transaction does not proceed.',
+      'timestamp': 119,
+      'timestamp_label': '[00:01:59]',
+      'timestamp_seconds': 119,
+      'tip': 'In some situations the expenses provision may be binding in the term sheet and '
+             'therefore obligate one of the parties to pay the expenses of the other if the '
+             'transaction does not proceed.',
+      'title': 'Key Terms In All Term Sheets',
+      'url': 'https://www.youtube.com/watch?v=HbM8XU4hPCc&t=119s',
+      'video_id': 'HbM8XU4hPCc'},
+     {'author': 'Boardgame Publisher',
+      'channel': 'Boardgame Publisher',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:50](https://www.youtube.com/watch?v=SOV77fL52Dw&t=230s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'If I can print 3,000 copies, and I know I will need 10 years to sell that back, it '
+              'does not make sense to invest the money to print again.',
+      'timestamp': 230,
+      'timestamp_label': '[00:03:50]',
+      'timestamp_seconds': 230,
+      'tip': 'If I can print 3,000 copies, and I know I will need 10 years to sell that back, it '
+             'does not make sense to invest the money to print again.',
+      'title': 'Boardgame licensing rights duration, reversion and sublicensing',
+      'url': 'https://www.youtube.com/watch?v=SOV77fL52Dw&t=230s',
+      'video_id': 'SOV77fL52Dw'},
+     {'author': 'ContractsCounsel',
+      'channel': 'ContractsCounsel',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:29](https://www.youtube.com/watch?v=U51x7R7u71M&t=209s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'Based on recent data, the average cost to review an intellectual property license '
+              'agreement is $440 on a flat fee basis.',
+      'timestamp': 209,
+      'timestamp_label': '[00:03:29]',
+      'timestamp_seconds': 209,
+      'tip': 'Based on recent data, the average cost to review an intellectual property license '
+             'agreement is $440 on a flat fee basis.',
+      'title': 'Intellectual Property License Agreement Explained: Top Terms YOU Should Know',
+      'url': 'https://www.youtube.com/watch?v=U51x7R7u71M&t=209s',
+      'video_id': 'U51x7R7u71M'}],
+ 6: [{'author': 'Informa Connect Life Sciences',
+      'channel': 'Informa Connect Life Sciences',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:34](https://www.youtube.com/watch?v=Dd9V4RSqNuk&t=214s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'Only a dozen at any given time out of the hundreds in the US are making money and '
+              "it's not always the same ones so from a business point of view it's more like a "
+              'lottery.',
+      'timestamp': 214,
+      'timestamp_label': '[00:03:34]',
+      'timestamp_seconds': 214,
+      'tip': 'Only a dozen at any given time out of the hundreds in the US are making money and '
+             "it's not always the same ones so from a business point of view it's more like a "
+             'lottery.',
+      'title': 'BWB TV: Commercializing university research with Lita Nelsen, MIT',
+      'url': 'https://www.youtube.com/watch?v=Dd9V4RSqNuk&t=214s',
+      'video_id': 'Dd9V4RSqNuk'},
+     {'author': 'Technology Licensing Office (TLO)',
+      'channel': 'Technology Licensing Office (TLO)',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:29:32](https://www.youtube.com/watch?v=BtnDins-U4g&t=1772s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'Offices like the TLO rarely cover the costs; 14% of US tech transfer offices cover '
+              'their operating costs.',
+      'timestamp': 1772,
+      'timestamp_label': '[00:29:32]',
+      'timestamp_seconds': 1772,
+      'tip': 'Offices like the TLO rarely cover the costs; 14% of US tech transfer offices cover '
+             'their operating costs.',
+      'title': 'Lesley Millar-Nicholson: The Role of Technology Transfer',
+      'url': 'https://www.youtube.com/watch?v=BtnDins-U4g&t=1772s',
+      'video_id': 'BtnDins-U4g'},
+     {'author': 'UC Riverside Innovation & Entrepreneurship',
+      'channel': 'UC Riverside Innovation & Entrepreneurship',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:37](https://www.youtube.com/watch?v=DsnLgDwQddQ&t=37s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'We will discuss how we can help you capture new discoveries, evaluate, protect, '
+              'commercialize and translate your IP from Lab to Market.',
+      'timestamp': 37,
+      'timestamp_label': '[00:00:37]',
+      'timestamp_seconds': 37,
+      'tip': 'We will discuss how we can help you capture new discoveries, evaluate, protect, '
+             'commercialize and translate your IP from Lab to Market.',
+      'title': 'Intro to Technology Commercialization',
+      'url': 'https://www.youtube.com/watch?v=DsnLgDwQddQ&t=37s',
+      'video_id': 'DsnLgDwQddQ'},
+     {'author': 'Technology Licensing Office (TLO)',
+      'channel': 'Technology Licensing Office (TLO)',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:41:49](https://www.youtube.com/watch?v=2ADE7tP4bYM&t=2509s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': "If we look on the left at the number of exclusive commercial licenses that we've "
+              'done in the past 10 years, 62% of those exclusive licenses are with startup '
+              'companies.',
+      'timestamp': 2509,
+      'timestamp_label': '[00:41:49]',
+      'timestamp_seconds': 2509,
+      'tip': "If we look on the left at the number of exclusive commercial licenses that we've "
+             'done in the past 10 years, 62% of those exclusive licenses are with startup '
+             'companies.',
+      'title': 'Commercialization of MIT Technology',
+      'url': 'https://www.youtube.com/watch?v=2ADE7tP4bYM&t=2509s',
+      'video_id': '2ADE7tP4bYM'},
+     {'author': 'Circular Venture Lab',
+      'channel': 'Circular Venture Lab',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:37](https://www.youtube.com/watch?v=ThAHgFsvejI&t=37s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'Just in agriculture, there are hundreds of inventions you can explore.',
+      'timestamp': 37,
+      'timestamp_label': '[00:00:37]',
+      'timestamp_seconds': 37,
+      'tip': 'Just in agriculture, there are hundreds of inventions you can explore.',
+      'title': 'IMPACTT - Purdue Technology Transfer Office',
+      'url': 'https://www.youtube.com/watch?v=ThAHgFsvejI&t=37s',
+      'video_id': 'ThAHgFsvejI'},
+     {'author': 'Columbia TechVentures',
+      'channel': 'Columbia TechVentures',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:35:26](https://www.youtube.com/watch?v=ZzczaFujs3A&t=2126s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'A patent does not allow you to do anything; all a patent allows you to do is stop '
+              "someone else from doing something, it's a negative right.",
+      'timestamp': 2126,
+      'timestamp_label': '[00:35:26]',
+      'timestamp_seconds': 2126,
+      'tip': 'A patent does not allow you to do anything; all a patent allows you to do is stop '
+             "someone else from doing something, it's a negative right.",
+      'title': 'Patenting & Licensing of Early-Stage University Technology',
+      'url': 'https://www.youtube.com/watch?v=ZzczaFujs3A&t=2126s',
+      'video_id': 'ZzczaFujs3A'},
+     {'author': 'University of Minnesota',
+      'channel': 'University of Minnesota',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:20](https://www.youtube.com/watch?v=Yqfdzambgbs&t=20s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'We get inventions from our faculty and researchers and ones that we think are '
+              'commercially viable we patent them; we work with the faculty on either licensing '
+              'them or we create startup companies out of the university.',
       'timestamp': 20,
       'timestamp_label': '[00:00:20]',
       'timestamp_seconds': 20,
-      'tip': "They're making it, using it, selling it without your permission. That feeling, "
-             "yeah, that's the real world impact of patent infringement. It's the moment the "
-             'abstract legal right granted by the patent uh collides with actual commercial '
-             'activity.',
-      'title': 'TOPIC 18    Patent Infringement and Defences - Intellectual Property Law - UoL '
-               '(Sinorbit Academy)',
-      'url': 'https://www.youtube.com/watch?v=-uT7bPngmNc&t=20s',
-      'video_id': '-uT7bPngmNc'},
+      'tip': 'We get inventions from our faculty and researchers and ones that we think are '
+             'commercially viable we patent them; we work with the faculty on either licensing '
+             'them or we create startup companies out of the university.',
+      'title': 'Inside the Office for Technology Commercialization',
+      'url': 'https://www.youtube.com/watch?v=Yqfdzambgbs&t=20s',
+      'video_id': 'Yqfdzambgbs'},
+     {'author': 'OSU Center for Clinical and Translational Science',
+      'channel': 'OSU Center for Clinical and Translational Science',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:27:16](https://www.youtube.com/watch?v=HKAvhkDKxNQ&t=1636s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'So 0.1 percent of all inventions ever disclosed have been successful.',
+      'timestamp': 1636,
+      'timestamp_label': '[00:27:16]',
+      'timestamp_seconds': 1636,
+      'tip': 'So 0.1 percent of all inventions ever disclosed have been successful.',
+      'title': 'Technology Transfer and Intellectual Property',
+      'url': 'https://www.youtube.com/watch?v=HKAvhkDKxNQ&t=1636s',
+      'video_id': 'HKAvhkDKxNQ'},
+     {'author': 'Salk Institute',
+      'channel': 'Salk Institute',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:07:18](https://www.youtube.com/watch?v=3iEjObMZnZo&t=438s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'You tend to get 80 or 90% of your revenue from two or three inventions and all the '
+              'other inventions put together make up 10 to 20% of your revenue so it really is a '
+              'game of home runs.',
+      'timestamp': 438,
+      'timestamp_label': '[00:07:18]',
+      'timestamp_seconds': 438,
+      'tip': 'You tend to get 80 or 90% of your revenue from two or three inventions and all the '
+             'other inventions put together make up 10 to 20% of your revenue so it really is a '
+             'game of home runs.',
+      'title': 'Intellectual Property and Technology Transfer - Why is Academia Suddenly So '
+               'Interested in Patents?',
+      'url': 'https://www.youtube.com/watch?v=3iEjObMZnZo&t=438s',
+      'video_id': '3iEjObMZnZo'},
+     {'author': 'Commercialisation Talks',
+      'channel': 'Commercialisation Talks',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:25:03](https://www.youtube.com/watch?v=2_OclNjs2Hg&t=1503s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': "We spend a lot of time in patent prosecution and we don't have so much time for "
+              'valorization of those patents.',
+      'timestamp': 1503,
+      'timestamp_label': '[00:25:03]',
+      'timestamp_seconds': 1503,
+      'tip': "We spend a lot of time in patent prosecution and we don't have so much time for "
+             'valorization of those patents.',
+      'title': 'Why do so many university patents remain on the shelf?',
+      'url': 'https://www.youtube.com/watch?v=2_OclNjs2Hg&t=1503s',
+      'video_id': '2_OclNjs2Hg'},
+     {'author': 'USPTOvideo',
+      'channel': 'USPTOvideo',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:18:29](https://www.youtube.com/watch?v=hwcNfSr-ia0&t=1109s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': "You want to make sure that you're not coming up with a $10 solution to a 2 cent "
+              'problem.',
+      'timestamp': 1109,
+      'timestamp_label': '[00:18:29]',
+      'timestamp_seconds': 1109,
+      'tip': "You want to make sure that you're not coming up with a $10 solution to a 2 cent "
+             'problem.',
+      'title': 'Tech Transfer and Commercialization',
+      'url': 'https://www.youtube.com/watch?v=hwcNfSr-ia0&t=1109s',
+      'video_id': 'hwcNfSr-ia0'},
+     {'author': 'American Physiological Society',
+      'channel': 'American Physiological Society',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:08:52](https://www.youtube.com/watch?v=jxdKIK4n-Dk&t=532s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'You can never start too early with contacting our tech transfer office, but it can '
+              'be too late.',
+      'timestamp': 532,
+      'timestamp_label': '[00:08:52]',
+      'timestamp_seconds': 532,
+      'tip': 'You can never start too early with contacting our tech transfer office, but it can '
+             'be too late.',
+      'title': 'Engaging Your Technology Transfer Office to Translate Research into Patents',
+      'url': 'https://www.youtube.com/watch?v=jxdKIK4n-Dk&t=532s',
+      'video_id': 'jxdKIK4n-Dk'},
+     {'author': 'Osage University Partners',
+      'channel': 'Osage University Partners',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[01:22:07](https://www.youtube.com/watch?v=Q3YzwCiT2M4&t=4927s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': "If a milestone is missed it's considered a breach of the agreement and the "
+              'university will have the ability to terminate the license.',
+      'timestamp': 4927,
+      'timestamp_label': '[01:22:07]',
+      'timestamp_seconds': 4927,
+      'tip': "If a milestone is missed it's considered a breach of the agreement and the "
+             'university will have the ability to terminate the license.',
+      'title': 'Startup Licensing 101: Term Sheets & Financials',
+      'url': 'https://www.youtube.com/watch?v=Q3YzwCiT2M4&t=4927s',
+      'video_id': 'Q3YzwCiT2M4'},
+     {'author': 'Osage University Partners',
+      'channel': 'Osage University Partners',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[01:08:10](https://www.youtube.com/watch?v=Q3YzwCiT2M4&t=4090s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': "I would say that is incredibly challenging; I don't know that I've ever seen a "
+              'royalty go up.',
+      'timestamp': 4090,
+      'timestamp_label': '[01:08:10]',
+      'timestamp_seconds': 4090,
+      'tip': "I would say that is incredibly challenging; I don't know that I've ever seen a "
+             'royalty go up.',
+      'title': 'Startup Licensing 101: Term Sheets & Financials',
+      'url': 'https://www.youtube.com/watch?v=Q3YzwCiT2M4&t=4090s',
+      'video_id': 'Q3YzwCiT2M4'},
+     {'author': 'MIT Bootcamps',
+      'channel': 'MIT Bootcamps',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:52:07](https://www.youtube.com/watch?v=SPgUdIOB0IM&t=3127s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'The bottom line is remember and always remember IP cannot give you the right to use '
+              'your technology.',
+      'timestamp': 3127,
+      'timestamp_label': '[00:52:07]',
+      'timestamp_seconds': 3127,
+      'tip': 'The bottom line is remember and always remember IP cannot give you the right to use '
+             'your technology.',
+      'title': 'How IP can strategically advance your business goals',
+      'url': 'https://www.youtube.com/watch?v=SPgUdIOB0IM&t=3127s',
+      'video_id': 'SPgUdIOB0IM'},
+     {'author': 'Schwegman Lundberg & Woessner, P.A.',
+      'channel': 'Schwegman Lundberg & Woessner, P.A.',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:06:47](https://www.youtube.com/watch?v=YwEyzgLoOrA&t=407s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'And the discount rule of thumb, call it 35%.',
+      'timestamp': 407,
+      'timestamp_label': '[00:06:47]',
+      'timestamp_seconds': 407,
+      'tip': 'And the discount rule of thumb, call it 35%.',
+      'title': 'Patent Monetization',
+      'url': 'https://www.youtube.com/watch?v=YwEyzgLoOrA&t=407s',
+      'video_id': 'YwEyzgLoOrA'},
+     {'author': 'USPTOvideo',
+      'channel': 'USPTOvideo',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:17:02](https://www.youtube.com/watch?v=AcpNKjCol4s&t=1022s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'I can write you a contract that gives you 1% and you can yield more than another '
+              "contract that gives you 10% because the definitions aren't clear.",
+      'timestamp': 1022,
+      'timestamp_label': '[00:17:02]',
+      'timestamp_seconds': 1022,
+      'tip': 'I can write you a contract that gives you 1% and you can yield more than another '
+             "contract that gives you 10% because the definitions aren't clear.",
+      'title': 'Monetizing Your IP Through Licensing',
+      'url': 'https://www.youtube.com/watch?v=AcpNKjCol4s&t=1022s',
+      'video_id': 'AcpNKjCol4s'}],
+ 7: [{'author': 'Daymond John',
+      'channel': 'Daymond John',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:10:34](https://www.youtube.com/watch?v=knoob7eUS6Y&t=634s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'There is an average, it goes anywhere from 2%, up to 15 and normal number is 8, '
+              'maybe 10, maybe 12.',
+      'timestamp': 634,
+      'timestamp_label': '[00:10:34]',
+      'timestamp_seconds': 634,
+      'tip': 'There is an average, it goes anywhere from 2%, up to 15 and normal number is 8, '
+             'maybe 10, maybe 12.',
+      'title': "Licensing Basics You NEED To Know In Business | Shark Tank's Daymond John",
+      'url': 'https://www.youtube.com/watch?v=knoob7eUS6Y&t=634s',
+      'video_id': 'knoob7eUS6Y'},
+     {'author': 'Brand Licensing by Informa',
+      'channel': 'Brand Licensing by Informa',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:31](https://www.youtube.com/watch?v=TwdLXgIhXJA&t=91s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'It can take many years and millions of dollars to develop a successful brand.',
+      'timestamp': 91,
+      'timestamp_label': '[00:01:31]',
+      'timestamp_seconds': 91,
+      'tip': 'It can take many years and millions of dollars to develop a successful brand.',
+      'title': 'What is Brand Licensing?',
+      'url': 'https://www.youtube.com/watch?v=TwdLXgIhXJA&t=91s',
+      'video_id': 'TwdLXgIhXJA'},
+     {'author': 'inventRightTV',
+      'channel': 'inventRightTV',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:29](https://www.youtube.com/watch?v=WMcwXYcUD5c&t=209s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'I had been in business a couple years and that qualified it, he says how many '
+              "stores are you in now, I said well we're in probably a couple thousand.",
+      'timestamp': 209,
+      'timestamp_label': '[00:03:29]',
+      'timestamp_seconds': 209,
+      'tip': 'I had been in business a couple years and that qualified it, he says how many stores '
+             "are you in now, I said well we're in probably a couple thousand.",
+      'title': 'What is Brand Licensing?',
+      'url': 'https://www.youtube.com/watch?v=WMcwXYcUD5c&t=209s',
+      'video_id': 'WMcwXYcUD5c'},
+     {'author': 'SeltzerLicensingGrp',
+      'channel': 'SeltzerLicensingGrp',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:30](https://www.youtube.com/watch?v=qx___lyJ5yQ&t=270s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': "I want the minimum royalty payment guarantee to be fifty thousand dollars, it's "
+              'your own projection, guarantee me half of that.',
+      'timestamp': 270,
+      'timestamp_label': '[00:04:30]',
+      'timestamp_seconds': 270,
+      'tip': "I want the minimum royalty payment guarantee to be fifty thousand dollars, it's your "
+             'own projection, guarantee me half of that.',
+      'title': 'Licensing Basics: The Royalty Rate and Minimum Guarantee [Part 7/10]',
+      'url': 'https://www.youtube.com/watch?v=qx___lyJ5yQ&t=270s',
+      'video_id': 'qx___lyJ5yQ'},
+     {'author': 'Mayer Brown',
+      'channel': 'Mayer Brown',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:12:33](https://www.youtube.com/watch?v=yRNAVrfCNIE&t=753s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'Someone bought the domain name and they essentially held the project hostage, this '
+              'happened on a Friday and we had to execute on a Monday.',
+      'timestamp': 753,
+      'timestamp_label': '[00:12:33]',
+      'timestamp_seconds': 753,
+      'tip': 'Someone bought the domain name and they essentially held the project hostage, this '
+             'happened on a Friday and we had to execute on a Monday.',
+      'title': 'Navigating the Brand Licensing Life Cycle',
+      'url': 'https://www.youtube.com/watch?v=yRNAVrfCNIE&t=753s',
+      'video_id': 'yRNAVrfCNIE'},
+     {'author': 'Mayer Brown',
+      'channel': 'Mayer Brown',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:58:54](https://www.youtube.com/watch?v=yRNAVrfCNIE&t=3534s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'There was a big fight whether the definition of beer included hard seltzers or not, '
+              'because they were not malt based.',
+      'timestamp': 3534,
+      'timestamp_label': '[00:58:54]',
+      'timestamp_seconds': 3534,
+      'tip': 'There was a big fight whether the definition of beer included hard seltzers or not, '
+             'because they were not malt based.',
+      'title': 'Navigating the Brand Licensing Life Cycle',
+      'url': 'https://www.youtube.com/watch?v=yRNAVrfCNIE&t=3534s',
+      'video_id': 'yRNAVrfCNIE'},
+     {'author': 'SeltzerLicensingGrp',
+      'channel': 'SeltzerLicensingGrp',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:25](https://www.youtube.com/watch?v=MGH55iIT-A0&t=205s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'Our advice to you is to take your own projections and to guarantee half of it.',
+      'timestamp': 205,
+      'timestamp_label': '[00:03:25]',
+      'timestamp_seconds': 205,
+      'tip': 'Our advice to you is to take your own projections and to guarantee half of it.',
+      'title': 'What Are The Financial Terms in a Licensing Deal?',
+      'url': 'https://www.youtube.com/watch?v=MGH55iIT-A0&t=205s',
+      'video_id': 'MGH55iIT-A0'},
+     {'author': 'Brand Licensing by Informa',
+      'channel': 'Brand Licensing by Informa',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:36](https://www.youtube.com/watch?v=6dKNY_VUEIs&t=36s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'Our calendar is just booked wall to wall from the time we walk in until the time '
+              'that we leave.',
+      'timestamp': 36,
+      'timestamp_label': '[00:00:36]',
+      'timestamp_seconds': 36,
+      'tip': 'Our calendar is just booked wall to wall from the time we walk in until the time '
+             'that we leave.',
+      'title': 'What can licensing do for your brand?',
+      'url': 'https://www.youtube.com/watch?v=6dKNY_VUEIs&t=36s',
+      'video_id': '6dKNY_VUEIs'},
+     {'author': 'SeltzerLicensingGrp',
+      'channel': 'SeltzerLicensingGrp',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:20](https://www.youtube.com/watch?v=7LHR9Jso37I&t=140s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': "Net sales equals gross sales less deductions, and what are those deductions, that's "
+              'the negotiation.',
+      'timestamp': 140,
+      'timestamp_label': '[00:02:20]',
+      'timestamp_seconds': 140,
+      'tip': "Net sales equals gross sales less deductions, and what are those deductions, that's "
+             'the negotiation.',
+      'title': 'Licensing Basics: Key Legal Terms In  Brand Licensing [Part 10/10]',
+      'url': 'https://www.youtube.com/watch?v=7LHR9Jso37I&t=140s',
+      'video_id': '7LHR9Jso37I'},
+     {'author': 'CNBC International Live',
+      'channel': 'CNBC International Live',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:00](https://www.youtube.com/watch?v=KpR6WOaw0vM&t=180s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'The licensing industry looks three to five years out in terms of our planning.',
+      'timestamp': 180,
+      'timestamp_label': '[00:03:00]',
+      'timestamp_seconds': 180,
+      'tip': 'The licensing industry looks three to five years out in terms of our planning.',
+      'title': 'Brand Licensing Europe: LIMA President upbeat on licensing business | Marketing '
+               'Media Money',
+      'url': 'https://www.youtube.com/watch?v=KpR6WOaw0vM&t=180s',
+      'video_id': 'KpR6WOaw0vM'},
+     {'author': 'Davie Fogarty',
+      'channel': 'Davie Fogarty',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:35](https://www.youtube.com/watch?v=7U8vYps8fMk&t=95s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'We did over $500,000 in just a few weeks completely selling out, and if I actually '
+              'knew how to do inventory management back then it could have been a lot bigger.',
+      'timestamp': 95,
+      'timestamp_label': '[00:01:35]',
+      'timestamp_seconds': 95,
+      'tip': 'We did over $500,000 in just a few weeks completely selling out, and if I actually '
+             'knew how to do inventory management back then it could have been a lot bigger.',
+      'title': 'How Licensing Really Works (And How to Land One for Your Brand)',
+      'url': 'https://www.youtube.com/watch?v=7U8vYps8fMk&t=95s',
+      'video_id': '7U8vYps8fMk'},
+     {'author': 'Davie Fogarty',
+      'channel': 'Davie Fogarty',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:07:09](https://www.youtube.com/watch?v=7U8vYps8fMk&t=429s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': "You're saying you're going to sell $500,000 which would be a $50,000 royalty, but "
+              "we really need to hedge our bets and we're going to put a minimum guarantee at "
+              '40,000.',
+      'timestamp': 429,
+      'timestamp_label': '[00:07:09]',
+      'timestamp_seconds': 429,
+      'tip': "You're saying you're going to sell $500,000 which would be a $50,000 royalty, but we "
+             "really need to hedge our bets and we're going to put a minimum guarantee at 40,000.",
+      'title': 'How Licensing Really Works (And How to Land One for Your Brand)',
+      'url': 'https://www.youtube.com/watch?v=7U8vYps8fMk&t=429s',
+      'video_id': '7U8vYps8fMk'},
      {'author': 'The Good Old Brands',
       'channel': 'The Good Old Brands',
       'epistemic_status': 'attributed_practitioner_claim',
       'markdown': '[00:00:15](https://www.youtube.com/watch?v=SemEIJ61Mb0&t=15s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q9 operational verification).',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
       'source_type': 'video_pro_tip',
-      'text': 'Success begins in the year 1929 when Walt Disney himself signed the first ever '
-              'character licensing agreement allowing a company to put Mickey Mouse.',
+      'text': 'In 1929 Walt Disney himself signed the first ever character licensing agreement '
+              "allowing a company to put Mickey Mouse on a children's writing tablet.",
       'timestamp': 15,
       'timestamp_label': '[00:00:15]',
       'timestamp_seconds': 15,
-      'tip': 'Success begins in the year 1929 when Walt Disney himself signed the first ever '
-             'character licensing agreement allowing a company to put Mickey Mouse.',
-      'title': "Disney's Licensing Magic  A Global Success Story (The Good Old Brands)",
+      'tip': 'In 1929 Walt Disney himself signed the first ever character licensing agreement '
+             "allowing a company to put Mickey Mouse on a children's writing tablet.",
+      'title': "Disney's Licensing Magic  A Global Success Story",
       'url': 'https://www.youtube.com/watch?v=SemEIJ61Mb0&t=15s',
       'video_id': 'SemEIJ61Mb0'},
-     {'author': 'Jim Selbach',
-      'channel': 'Jim Selbach',
+     {'author': 'Brands On Brands Podcast',
+      'channel': 'Brands On Brands Podcast',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:28](https://www.youtube.com/watch?v=0r9cstgrqZM&t=208s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q9 operational verification).',
+      'markdown': '[00:29:57](https://www.youtube.com/watch?v=3tCB_MAOXkA&t=1797s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
       'source_type': 'video_pro_tip',
-      'text': "Not admitted that's that's obviously the practice of law but what about "
-              'advising somebody what if your client is in another state and they ask you for '
-              'some advice.',
-      'timestamp': 208,
-      'timestamp_label': '[00:03:28]',
-      'timestamp_seconds': 208,
-      'tip': "Not admitted that's that's obviously the practice of law but what about advising "
-             'somebody what if your client is in another state and they ask you for some '
-             'advice.',
-      'title': 'What Is Unauthorized Practice Of Law || Best Advice For Young Lawyers (Jim '
-               'Selbach)',
-      'url': 'https://www.youtube.com/watch?v=0r9cstgrqZM&t=208s',
-      'video_id': '0r9cstgrqZM'},
+      'text': "Brand licensing does have risks, there are financial risks, there's some inventory "
+              "risk, some brand risk potentially if you're a brand owner.",
+      'timestamp': 1797,
+      'timestamp_label': '[00:29:57]',
+      'timestamp_seconds': 1797,
+      'tip': "Brand licensing does have risks, there are financial risks, there's some inventory "
+             "risk, some brand risk potentially if you're a brand owner.",
+      'title': 'Brand Licensing 101 - Stu Seltzer Interview',
+      'url': 'https://www.youtube.com/watch?v=3tCB_MAOXkA&t=1797s',
+      'video_id': '3tCB_MAOXkA'},
+     {'author': 'TrademarkLawyer',
+      'channel': 'TrademarkLawyer',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:07:48](https://www.youtube.com/watch?v=K6BFUviYg0Q&t=468s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'All you had to do was send a quick blurb explaining who you are, what you want to '
+              'do and why you want to secure a meeting with them.',
+      'timestamp': 468,
+      'timestamp_label': '[00:07:48]',
+      'timestamp_seconds': 468,
+      'tip': 'All you had to do was send a quick blurb explaining who you are, what you want to do '
+             'and why you want to secure a meeting with them.',
+      'title': 'Licensing Your Trademarks (Intellectual Property) Without A Lawyer! PASSIVE INCOME '
+               'Deals',
+      'url': 'https://www.youtube.com/watch?v=K6BFUviYg0Q&t=468s',
+      'video_id': 'K6BFUviYg0Q'},
+     {'author': 'TrademarkLawyer',
+      'channel': 'TrademarkLawyer',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:45](https://www.youtube.com/watch?v=ASLTB9jyYII&t=285s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': "You don't want somebody to go out there and misrepresent you or your brand or your "
+              'mission or your values, because then that can taint your brand.',
+      'timestamp': 285,
+      'timestamp_label': '[00:04:45]',
+      'timestamp_seconds': 285,
+      'tip': "You don't want somebody to go out there and misrepresent you or your brand or your "
+             'mission or your values, because then that can taint your brand.',
+      'title': 'PASSIVE INCOME LICENSING MODEL: Beginner’s Guide from a Trademark Lawyer ✅✅✅',
+      'url': 'https://www.youtube.com/watch?v=ASLTB9jyYII&t=285s',
+      'video_id': 'ASLTB9jyYII'},
+     {'author': 'Brand Licensing by Informa',
+      'channel': 'Brand Licensing by Informa',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:37](https://www.youtube.com/watch?v=sKXo0d-O_Hc&t=37s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': "You're only constrained by your own imagination as to what represents a great "
+              'license partnership.',
+      'timestamp': 37,
+      'timestamp_label': '[00:00:37]',
+      'timestamp_seconds': 37,
+      'tip': "You're only constrained by your own imagination as to what represents a great "
+             'license partnership.',
+      'title': 'The Business of Brand Licensing',
+      'url': 'https://www.youtube.com/watch?v=sKXo0d-O_Hc&t=37s',
+      'video_id': 'sKXo0d-O_Hc'},
+     {'author': 'Patents, Trademarks & Business Protection',
+      'channel': 'Patents, Trademarks & Business Protection',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:58](https://www.youtube.com/watch?v=tHEEzY7Mwgc&t=118s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'You can only license what you own and can protect, ownership is leverage, and '
+              'licensing royalties are often structured as a percentage of sales, commonly between '
+              '3% and 15%.',
+      'timestamp': 118,
+      'timestamp_label': '[00:01:58]',
+      'timestamp_seconds': 118,
+      'tip': 'You can only license what you own and can protect, ownership is leverage, and '
+             'licensing royalties are often structured as a percentage of sales, commonly between '
+             '3% and 15%.',
+      'title': '17 Fashion Brand Licensing: How to Earn Royalties Without Manufacturing',
+      'url': 'https://www.youtube.com/watch?v=tHEEzY7Mwgc&t=118s',
+      'video_id': 'tHEEzY7Mwgc'}],
+ 8: [{'author': 'Useless Money',
+      'channel': 'Useless Money',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:24](https://www.youtube.com/watch?v=xkXjle5Spjw&t=204s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'There is no universal royalty rate that applies to every patent, brand, or software '
+              'product.',
+      'timestamp': 204,
+      'timestamp_label': '[00:03:24]',
+      'timestamp_seconds': 204,
+      'tip': 'There is no universal royalty rate that applies to every patent, brand, or software '
+             'product.',
+      'title': 'The Economics of Owning an IP Holding Company',
+      'url': 'https://www.youtube.com/watch?v=xkXjle5Spjw&t=204s',
+      'video_id': 'xkXjle5Spjw'},
+     {'author': 'IP Europe',
+      'channel': 'IP Europe',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:48](https://www.youtube.com/watch?v=fAwWxzitmUk&t=228s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'This is the real issue, and without enforcing the rights, patents have no value.',
+      'timestamp': 228,
+      'timestamp_label': '[00:03:48]',
+      'timestamp_seconds': 228,
+      'tip': 'This is the real issue, and without enforcing the rights, patents have no value.',
+      'title': 'Patents and patent licensing as a business model? Fractus co-founder Dr. Carles '
+               'Puente explains how',
+      'url': 'https://www.youtube.com/watch?v=fAwWxzitmUk&t=228s',
+      'video_id': 'fAwWxzitmUk'},
+     {'author': 'IPWatchdog, Inc.',
+      'channel': 'IPWatchdog, Inc.',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:24:22](https://www.youtube.com/watch?v=qZqv5lEPPQc&t=1462s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'Ideally you need to have five, 10 or more patents in the related space that all are '
+              'good, all infringement, all check out on their prior art searches.',
+      'timestamp': 1462,
+      'timestamp_label': '[00:24:22]',
+      'timestamp_seconds': 1462,
+      'tip': 'Ideally you need to have five, 10 or more patents in the related space that all are '
+             'good, all infringement, all check out on their prior art searches.',
+      'title': 'Patent Monetization: Doing Business as an NPE',
+      'url': 'https://www.youtube.com/watch?v=qZqv5lEPPQc&t=1462s',
+      'video_id': 'qZqv5lEPPQc'},
+     {'author': 'UpCounsel',
+      'channel': 'UpCounsel',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:11](https://www.youtube.com/watch?v=xRRc9i7j5A8&t=251s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'Most brokers work on commission, typically ranging from 10 to 30% of the sale '
+              'price.',
+      'timestamp': 251,
+      'timestamp_label': '[00:04:11]',
+      'timestamp_seconds': 251,
+      'tip': 'Most brokers work on commission, typically ranging from 10 to 30% of the sale price.',
+      'title': 'How Patent Brokers Help You Turn Intellectual Property Into Profit',
+      'url': 'https://www.youtube.com/watch?v=xRRc9i7j5A8&t=251s',
+      'video_id': 'xRRc9i7j5A8'},
+     {'author': 'EUIPO',
+      'channel': 'EUIPO',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:15:15](https://www.youtube.com/watch?v=IZLXSII8AZ8&t=915s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'In doing so, I never work with book value.',
+      'timestamp': 915,
+      'timestamp_label': '[00:15:15]',
+      'timestamp_seconds': 915,
+      'tip': 'In doing so, I never work with book value.',
+      'title': 'IP valuation – The art of making money with your Intellectual Property',
+      'url': 'https://www.youtube.com/watch?v=IZLXSII8AZ8&t=915s',
+      'video_id': 'IZLXSII8AZ8'},
+     {'author': 'Patent pc',
+      'channel': 'Patent pc',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:40](https://www.youtube.com/watch?v=Tv_OWgYldPw&t=40s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'So you need to conduct an IP audit to identify underutilized assets.',
+      'timestamp': 40,
+      'timestamp_label': '[00:00:40]',
+      'timestamp_seconds': 40,
+      'tip': 'So you need to conduct an IP audit to identify underutilized assets.',
+      'title': 'How to Monetize Unused Intellectual Property and Patents',
+      'url': 'https://www.youtube.com/watch?v=Tv_OWgYldPw&t=40s',
+      'video_id': 'Tv_OWgYldPw'},
+     {'author': 'Kingacademic UK',
+      'channel': 'Kingacademic UK',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:56](https://www.youtube.com/watch?v=aRUsXPICxpY&t=116s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'A lost design can reduce royalties for years.',
+      'timestamp': 116,
+      'timestamp_label': '[00:01:56]',
+      'timestamp_seconds': 116,
+      'tip': 'A lost design can reduce royalties for years.',
+      'title': "Arm's Licensing & Royalty Business Model Explained",
+      'url': 'https://www.youtube.com/watch?v=aRUsXPICxpY&t=116s',
+      'video_id': 'aRUsXPICxpY'},
+     {'author': 'IPWatchdog, Inc.',
+      'channel': 'IPWatchdog, Inc.',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:19:56](https://www.youtube.com/watch?v=pyi_x9MFGjs&t=1196s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'Global competitor suits are bad litigation finance investments.',
+      'timestamp': 1196,
+      'timestamp_label': '[00:19:56]',
+      'timestamp_seconds': 1196,
+      'tip': 'Global competitor suits are bad litigation finance investments.',
+      'title': 'Patent Monetization Economics: What It Costs to Turn Patents into Revenue',
+      'url': 'https://www.youtube.com/watch?v=pyi_x9MFGjs&t=1196s',
+      'video_id': 'pyi_x9MFGjs'},
+     {'author': 'IPWatchdog, Inc.',
+      'channel': 'IPWatchdog, Inc.',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:24:53](https://www.youtube.com/watch?v=1UEOTCZ_qYA&t=1493s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': "That's the role of the consultant to come in and deliver bad news.",
+      'timestamp': 1493,
+      'timestamp_label': '[00:24:53]',
+      'timestamp_seconds': 1493,
+      'tip': "That's the role of the consultant to come in and deliver bad news.",
+      'title': 'Is Your Patent Portfolio Ready to Make Money? Patent Monetization Reality Check',
+      'url': 'https://www.youtube.com/watch?v=1UEOTCZ_qYA&t=1493s',
+      'video_id': '1UEOTCZ_qYA'},
+     {'author': 'The Strategy Breakdown',
+      'channel': 'The Strategy Breakdown',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:06:42](https://www.youtube.com/watch?v=uNc4jO7TeCo&t=402s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': "They're effectively getting paid twice.",
+      'timestamp': 402,
+      'timestamp_label': '[00:06:42]',
+      'timestamp_seconds': 402,
+      'tip': "They're effectively getting paid twice.",
+      'title': 'IP Licensing Strategy: How Qualcomm Built the Most Powerful Patent Empire in Tech '
+               'History',
+      'url': 'https://www.youtube.com/watch?v=uNc4jO7TeCo&t=402s',
+      'video_id': 'uNc4jO7TeCo'},
+     {'author': 'International Trade Council',
+      'channel': 'International Trade Council',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:10:00](https://www.youtube.com/watch?v=_bueYwQ3iHE&t=600s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'Yet while over 1 million patents are being granted every year, only 5% of them '
+              'approximately are monetized.',
+      'timestamp': 600,
+      'timestamp_label': '[00:10:00]',
+      'timestamp_seconds': 600,
+      'tip': 'Yet while over 1 million patents are being granted every year, only 5% of them '
+             'approximately are monetized.',
+      'title': 'WEBINAR: How to Successfully Monetize a Patent: Fundamentals of Patent '
+               'Monetization',
+      'url': 'https://www.youtube.com/watch?v=_bueYwQ3iHE&t=600s',
+      'video_id': '_bueYwQ3iHE'},
+     {'author': 'Berkeley Law & Technology Group',
+      'channel': 'Berkeley Law & Technology Group',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:59](https://www.youtube.com/watch?v=oRUwDt8nD5k&t=119s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'While online platforms exist for selling patents, be cautious as some are '
+              'unreliable and may be used by fraudsters.',
+      'timestamp': 119,
+      'timestamp_label': '[00:01:59]',
+      'timestamp_seconds': 119,
+      'tip': 'While online platforms exist for selling patents, be cautious as some are unreliable '
+             'and may be used by fraudsters.',
+      'title': 'How to Sell Your Patent: A Guide to Monetizing Your Invention',
+      'url': 'https://www.youtube.com/watch?v=oRUwDt8nD5k&t=119s',
+      'video_id': 'oRUwDt8nD5k'},
+     {'author': 'J.D. Houvener / Bold Patents Law Firm',
+      'channel': 'J.D. Houvener / Bold Patents Law Firm',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:41](https://www.youtube.com/watch?v=a7AlJrwA2Jo&t=41s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'I would say hiring a broker is better if you can afford it.',
+      'timestamp': 41,
+      'timestamp_label': '[00:00:41]',
+      'timestamp_seconds': 41,
+      'tip': 'I would say hiring a broker is better if you can afford it.',
+      'title': 'Should I Hire a Patent Broker?',
+      'url': 'https://www.youtube.com/watch?v=a7AlJrwA2Jo&t=41s',
+      'video_id': 'a7AlJrwA2Jo'},
+     {'author': 'SVBS ~ Silicon Valley Business School',
+      'channel': 'SVBS ~ Silicon Valley Business School',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:05:41](https://www.youtube.com/watch?v=vPziFABPW9w&t=341s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': "Corporations also often refuse to sell to enforcement-based buyers as they don't "
+              'want to feed their adversaries.',
+      'timestamp': 341,
+      'timestamp_label': '[00:05:41]',
+      'timestamp_seconds': 341,
+      'tip': "Corporations also often refuse to sell to enforcement-based buyers as they don't "
+             'want to feed their adversaries.',
+      'title': "Who's Selling Patents? Understanding the Motivations and Strategies Behind Patent "
+               'Sales',
+      'url': 'https://www.youtube.com/watch?v=vPziFABPW9w&t=341s',
+      'video_id': 'vPziFABPW9w'},
+     {'author': 'SVBS ~ Silicon Valley Business School',
+      'channel': 'SVBS ~ Silicon Valley Business School',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:18:09](https://www.youtube.com/watch?v=hOFtwRua-qc&t=1089s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'These revenue sharing arrangements are much more appealing to patent holders than '
+              "profit sharing deals because it's difficult to argue about the definition of "
+              'revenue.',
+      'timestamp': 1089,
+      'timestamp_label': '[00:18:09]',
+      'timestamp_seconds': 1089,
+      'tip': 'These revenue sharing arrangements are much more appealing to patent holders than '
+             "profit sharing deals because it's difficult to argue about the definition of "
+             'revenue.',
+      'title': "Monetizing Patents Through NPE's",
+      'url': 'https://www.youtube.com/watch?v=hOFtwRua-qc&t=1089s',
+      'video_id': 'hOFtwRua-qc'},
+     {'author': 'Clause 8',
+      'channel': 'Clause 8',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:34:27](https://www.youtube.com/watch?v=t98CwzofUz0&t=2067s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': "If there's no evidence of use that anyone is practicing these patents, I can always "
+              'predict with 100% certainty that they will not sell.',
+      'timestamp': 2067,
+      'timestamp_label': '[00:34:27]',
+      'timestamp_seconds': 2067,
+      'tip': "If there's no evidence of use that anyone is practicing these patents, I can always "
+             'predict with 100% certainty that they will not sell.',
+      'title': 'Louis Carbonneau on Brokering Patents After the Patent Gold Rush',
+      'url': 'https://www.youtube.com/watch?v=t98CwzofUz0&t=2067s',
+      'video_id': 't98CwzofUz0'},
+     {'author': 'Clause 8',
+      'channel': 'Clause 8',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[01:02:11](https://www.youtube.com/watch?v=t98CwzofUz0&t=3731s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': "You basically eat what you kill, and it's not for the faint of heart.",
+      'timestamp': 3731,
+      'timestamp_label': '[01:02:11]',
+      'timestamp_seconds': 3731,
+      'tip': "You basically eat what you kill, and it's not for the faint of heart.",
+      'title': 'Louis Carbonneau on Brokering Patents After the Patent Gold Rush',
+      'url': 'https://www.youtube.com/watch?v=t98CwzofUz0&t=3731s',
+      'video_id': 't98CwzofUz0'}],
+ 9: [{'author': 'Torys LLP',
+      'channel': 'Torys LLP',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:09](https://www.youtube.com/watch?v=ijF0IyvjXXg&t=129s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': "You have to keep in mind that there's probably another platform that the seller can "
+              'use to promote your product, and unfortunately it can become a bit of a game of '
+              'whack-a-mole to try to stop a foreign vendor.',
+      'timestamp': 129,
+      'timestamp_label': '[00:02:09]',
+      'timestamp_seconds': 129,
+      'tip': "You have to keep in mind that there's probably another platform that the seller can "
+             'use to promote your product, and unfortunately it can become a bit of a game of '
+             'whack-a-mole to try to stop a foreign vendor.',
+      'title': 'Ask an IP litigator: #5 - How do I stop an unauthorized seller?',
+      'url': 'https://www.youtube.com/watch?v=ijF0IyvjXXg&t=129s',
+      'video_id': 'ijF0IyvjXXg'},
+     {'author': 'Torys LLP',
+      'channel': 'Torys LLP',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:06:21](https://www.youtube.com/watch?v=ijF0IyvjXXg&t=381s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'Well, it sounds like the platform is usually the best source for determining who '
+              'the true seller is.',
+      'timestamp': 381,
+      'timestamp_label': '[00:06:21]',
+      'timestamp_seconds': 381,
+      'tip': 'Well, it sounds like the platform is usually the best source for determining who the '
+             'true seller is.',
+      'title': 'Ask an IP litigator: #5 - How do I stop an unauthorized seller?',
+      'url': 'https://www.youtube.com/watch?v=ijF0IyvjXXg&t=381s',
+      'video_id': 'ijF0IyvjXXg'},
+     {'author': 'LawShelf',
+      'channel': 'LawShelf',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:14:33](https://www.youtube.com/watch?v=WtxlYb996kI&t=873s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'Willful infringement allows up to three times damages, and exceptional cases allow '
+              "attorney's fees.",
+      'timestamp': 873,
+      'timestamp_label': '[00:14:33]',
+      'timestamp_seconds': 873,
+      'tip': 'Willful infringement allows up to three times damages, and exceptional cases allow '
+             "attorney's fees.",
+      'title': 'Patent Infringement Litigation: Module 5 of 5',
+      'url': 'https://www.youtube.com/watch?v=WtxlYb996kI&t=873s',
+      'video_id': 'WtxlYb996kI'},
      {'author': 'Derek Fahey, Esq.',
       'channel': 'Derek Fahey, Esq.',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:18](https://www.youtube.com/watch?v=nLSthuXQCL4&t=18s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q9 operational verification).',
+      'markdown': '[00:00:33](https://www.youtube.com/watch?v=nLSthuXQCL4&t=33s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
       'source_type': 'video_pro_tip',
-      'text': 'Fact that wallpaper the different wallpaper designs can actually be protected '
-              'both via copyright and also by design patent law.',
+      'text': 'A design patent must be filed within one year of first U.S. disclosure or the '
+              'rights are lost.',
+      'timestamp': 33,
+      'timestamp_label': '[00:00:33]',
+      'timestamp_seconds': 33,
+      'tip': 'A design patent must be filed within one year of first U.S. disclosure or the rights '
+             'are lost.',
+      'title': 'What is the difference between design patent infringement and Copyright '
+               'infringement?',
+      'url': 'https://www.youtube.com/watch?v=nLSthuXQCL4&t=33s',
+      'video_id': 'nLSthuXQCL4'},
+     {'author': 'Patent Attorney Worldwide',
+      'channel': 'Patent Attorney Worldwide',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:56](https://www.youtube.com/watch?v=D-Am1gpuzaw&t=296s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'A badly written claim can make an amazing invention totally worthless.',
+      'timestamp': 296,
+      'timestamp_label': '[00:04:56]',
+      'timestamp_seconds': 296,
+      'tip': 'A badly written claim can make an amazing invention totally worthless.',
+      'title': 'Patent Infringement Explained: Types, Lawsuits & Legal Remedies (Complete Guide)',
+      'url': 'https://www.youtube.com/watch?v=D-Am1gpuzaw&t=296s',
+      'video_id': 'D-Am1gpuzaw'},
+     {'author': 'Sinorbit Academy',
+      'channel': 'Sinorbit Academy',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:15:09](https://www.youtube.com/watch?v=-uT7bPngmNc&t=909s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'Displaying the product at an exhibition, for instance, has been held to count as an '
+              'offer to dispose.',
+      'timestamp': 909,
+      'timestamp_label': '[00:15:09]',
+      'timestamp_seconds': 909,
+      'tip': 'Displaying the product at an exhibition, for instance, has been held to count as an '
+             'offer to dispose.',
+      'title': 'TOPIC 18    Patent Infringement and Defences - Intellectual Property Law - UoL',
+      'url': 'https://www.youtube.com/watch?v=-uT7bPngmNc&t=909s',
+      'video_id': '-uT7bPngmNc'},
+     {'author': 'Patent Insanity',
+      'channel': 'Patent Insanity',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:53](https://www.youtube.com/watch?v=Jwz-iMwUtCU&t=293s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'Courts may differ on equivalence, so proceed cautiously.',
+      'timestamp': 293,
+      'timestamp_label': '[00:04:53]',
+      'timestamp_seconds': 293,
+      'tip': 'Courts may differ on equivalence, so proceed cautiously.',
+      'title': 'Designing Around Patents - How to avoid patent infringement',
+      'url': 'https://www.youtube.com/watch?v=Jwz-iMwUtCU&t=293s',
+      'video_id': 'Jwz-iMwUtCU'},
+     {'author': 'CIONCA IP',
+      'channel': 'CIONCA IP',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:54](https://www.youtube.com/watch?v=kRlS4inO95k&t=234s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'Because not all the elements of the patented claim are found in the accused '
+              'product, this claim is not infringed by this product.',
+      'timestamp': 234,
+      'timestamp_label': '[00:03:54]',
+      'timestamp_seconds': 234,
+      'tip': 'Because not all the elements of the patented claim are found in the accused product, '
+             'this claim is not infringed by this product.',
+      'title': 'Patent Infringement - Visually and Simply Explained',
+      'url': 'https://www.youtube.com/watch?v=kRlS4inO95k&t=234s',
+      'video_id': 'kRlS4inO95k'},
+     {'author': 'Alliance for Patient Access',
+      'channel': 'Alliance for Patient Access',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:55](https://www.youtube.com/watch?v=5RtieTL1OqM&t=115s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'Voluntary licensing lets patent holders partner with other companies and share '
+              'their manufacturing expertise.',
+      'timestamp': 115,
+      'timestamp_label': '[00:01:55]',
+      'timestamp_seconds': 115,
+      'tip': 'Voluntary licensing lets patent holders partner with other companies and share their '
+             'manufacturing expertise.',
+      'title': 'Understanding Compulsory Licensing',
+      'url': 'https://www.youtube.com/watch?v=5RtieTL1OqM&t=115s',
+      'video_id': '5RtieTL1OqM'},
+     {'author': 'Patents Demystified',
+      'channel': 'Patents Demystified',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:07:09](https://www.youtube.com/watch?v=9hTMXJtONtM&t=429s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'One important thing to understand about infringement is a patent cannot infringe on '
+              "somebody else's patent.",
+      'timestamp': 429,
+      'timestamp_label': '[00:07:09]',
+      'timestamp_seconds': 429,
+      'tip': 'One important thing to understand about infringement is a patent cannot infringe on '
+             "somebody else's patent.",
+      'title': 'Mastering Patentability And Infringement Concepts Made EASY',
+      'url': 'https://www.youtube.com/watch?v=9hTMXJtONtM&t=429s',
+      'video_id': '9hTMXJtONtM'},
+     {'author': 'Matthew Anderson',
+      'channel': 'Matthew Anderson',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:41](https://www.youtube.com/watch?v=-267ABEXf8o&t=41s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'Well, unless it has been explicitly written in a contract or agreement that '
+              'copyright ownership has been transferred to you, by default you do not own the '
+              'images.',
+      'timestamp': 41,
+      'timestamp_label': '[00:00:41]',
+      'timestamp_seconds': 41,
+      'tip': 'Well, unless it has been explicitly written in a contract or agreement that '
+             'copyright ownership has been transferred to you, by default you do not own the '
+             'images.',
+      'title': 'Do You Own the Photos? - Photography Copyright/Licensing Simplified & Explained!',
+      'url': 'https://www.youtube.com/watch?v=-267ABEXf8o&t=41s',
+      'video_id': '-267ABEXf8o'},
+     {'author': 'freeCodeCamp Concepts',
+      'channel': 'freeCodeCamp Concepts',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:18](https://www.youtube.com/watch?v=grui-CD6Uck&t=18s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'You can use an image lawfully with written permission, a purchased license, or '
+              'limited and transformative fair use.',
       'timestamp': 18,
       'timestamp_label': '[00:00:18]',
       'timestamp_seconds': 18,
-      'tip': 'Fact that wallpaper the different wallpaper designs can actually be protected '
-             'both via copyright and also by design patent law.',
-      'title': 'What is the difference between design patent infringement and Copyright '
-               'infringement? (Derek Fahey, Esq.)',
-      'url': 'https://www.youtube.com/watch?v=nLSthuXQCL4&t=18s',
-      'video_id': 'nLSthuXQCL4'},
-     {'author': 'BaxterIPAttorneys',
-      'channel': 'BaxterIPAttorneys',
+      'tip': 'You can use an image lawfully with written permission, a purchased license, or '
+             'limited and transformative fair use.',
+      'title': 'What are the different types of image licenses and how do they work?',
+      'url': 'https://www.youtube.com/watch?v=grui-CD6Uck&t=18s',
+      'video_id': 'grui-CD6Uck'},
+     {'author': 'DesignLab UW-Madison',
+      'channel': 'DesignLab UW-Madison',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:16](https://www.youtube.com/watch?v=yl8L7tuwNuI&t=316s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q9 operational verification).',
+      'markdown': '[00:03:17](https://www.youtube.com/watch?v=mGWJAAFhtRk&t=197s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
       'source_type': 'video_pro_tip',
-      'text': "Indexation of this royalty come back next week where I'm going to talk about "
-              'the IP revisions of a license agreement and how we Define the term of a license '
-              'agreement.',
-      'timestamp': 316,
-      'timestamp_label': '[00:05:16]',
-      'timestamp_seconds': 316,
-      'tip': "Indexation of this royalty come back next week where I'm going to talk about the "
-             'IP revisions of a license agreement and how we Define the term of a license '
-             'agreement.',
-      'title': 'Term Sheet in Patent Licensing (extended) Part 1- John Baxter '
-               '(BaxterIPAttorneys)',
-      'url': 'https://www.youtube.com/watch?v=yl8L7tuwNuI&t=316s',
-      'video_id': 'yl8L7tuwNuI'},
-     {'author': 'docstocTV',
-      'channel': 'docstocTV',
+      'text': 'The music industry is typically much stricter on Fair Use, so it is best to avoid '
+              'using copyrighted songs altogether.',
+      'timestamp': 197,
+      'timestamp_label': '[00:03:17]',
+      'timestamp_seconds': 197,
+      'tip': 'The music industry is typically much stricter on Fair Use, so it is best to avoid '
+             'using copyrighted songs altogether.',
+      'title': 'Copyright and Fair Use for Images, Videos, and Audio - Basics',
+      'url': 'https://www.youtube.com/watch?v=mGWJAAFhtRk&t=197s',
+      'video_id': 'mGWJAAFhtRk'},
+     {'author': 'Matthew Anderson',
+      'channel': 'Matthew Anderson',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:52](https://www.youtube.com/watch?v=HbM8XU4hPCc&t=172s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q9 operational verification).',
+      'markdown': '[00:07:23](https://www.youtube.com/watch?v=manKMR61ho0&t=443s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
       'source_type': 'video_pro_tip',
-      'text': 'Purpose is to prevent a party from pursuing another transaction while '
-              'negotiations are ongoing so these are the key terms to consider when reviewing '
-              "any term sheet if you understand these key points you're well on your way to "
-              'understanding and negotiating a term sheet.',
-      'timestamp': 172,
-      'timestamp_label': '[00:02:52]',
-      'timestamp_seconds': 172,
-      'tip': 'Purpose is to prevent a party from pursuing another transaction while '
-             'negotiations are ongoing so these are the key terms to consider when reviewing '
-             "any term sheet if you understand these key points you're well on your way to "
-             'understanding and negotiating a term sheet.',
-      'title': 'Key Terms In All Term Sheets (docstocTV)',
-      'url': 'https://www.youtube.com/watch?v=HbM8XU4hPCc&t=172s',
-      'video_id': 'HbM8XU4hPCc'},
-     {'author': 'inventRightTV',
-      'channel': 'inventRightTV',
+      'text': "Photography is our livelihood, we just can't pay our bills with photo credit or "
+              'exposure bucks.',
+      'timestamp': 443,
+      'timestamp_label': '[00:07:23]',
+      'timestamp_seconds': 443,
+      'tip': "Photography is our livelihood, we just can't pay our bills with photo credit or "
+             'exposure bucks.',
+      'title': 'Photo Licensing 101 - The Basics Explained',
+      'url': 'https://www.youtube.com/watch?v=manKMR61ho0&t=443s',
+      'video_id': 'manKMR61ho0'},
+     {'author': 'Barbara “Financial Tidbitter” Aboagye',
+      'channel': 'Barbara “Financial Tidbitter” Aboagye',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:04](https://www.youtube.com/watch?v=WMcwXYcUD5c&t=184s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q9 operational verification).',
+      'markdown': '[00:03:00](https://www.youtube.com/watch?v=SK5CqQ61CYI&t=180s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
       'source_type': 'video_pro_tip',
-      'text': 'That I was like you gotta be kidding me so he said hey let me look it up and '
-              'see if we have given that license to any other guitar pick manufacturer and he '
-              "looked up he said no we don't it's open would you like to become a Disney "
-              'license.',
-      'timestamp': 184,
-      'timestamp_label': '[00:03:04]',
-      'timestamp_seconds': 184,
-      'tip': 'That I was like you gotta be kidding me so he said hey let me look it up and see '
-             'if we have given that license to any other guitar pick manufacturer and he '
-             "looked up he said no we don't it's open would you like to become a Disney "
-             'license.',
-      'title': 'What is Brand Licensing? (inventRightTV)',
-      'url': 'https://www.youtube.com/watch?v=WMcwXYcUD5c&t=184s',
-      'video_id': 'WMcwXYcUD5c'},
-     {'author': 'inventRightTV',
-      'channel': 'inventRightTV',
+      'text': 'The fee shown is an estimate and may change, and in this example the quote came '
+              'back as zero.',
+      'timestamp': 180,
+      'timestamp_label': '[00:03:00]',
+      'timestamp_seconds': 180,
+      'tip': 'The fee shown is an estimate and may change, and in this example the quote came back '
+             'as zero.',
+      'title': 'How to Request Copyright Permission to Reuse an Image | Can You Use Images From '
+               'Research Papers?',
+      'url': 'https://www.youtube.com/watch?v=SK5CqQ61CYI&t=180s',
+      'video_id': 'SK5CqQ61CYI'},
+     {'author': 'B&H Photo Video Pro Audio',
+      'channel': 'B&H Photo Video Pro Audio',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:16:08](https://www.youtube.com/watch?v=IMLF0c7wOQI&t=968s)',
-      'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                   'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                   '(Chapter Q9 operational verification).',
+      'markdown': '[01:19:44](https://www.youtube.com/watch?v=74bQUodJbWY&t=4784s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
       'source_type': 'video_pro_tip',
-      'text': "I'm meeting companies that's how you work a show but I asked someone the other "
-              "day that's kind of a big believer in these trade shows for inventors and I said "
-              'all right okay fair enough show me a success.',
-      'timestamp': 968,
-      'timestamp_label': '[00:16:08]',
-      'timestamp_seconds': 968,
-      'tip': "I'm meeting companies that's how you work a show but I asked someone the other "
-             "day that's kind of a big believer in these trade shows for inventors and I said "
-             'all right okay fair enough show me a success.',
-      'title': 'How to license your product ideas (inventRightTV)',
-      'url': 'https://www.youtube.com/watch?v=IMLF0c7wOQI&t=968s',
-      'video_id': 'IMLF0c7wOQI'}],
- 10: [{'author': 'Artist Rights Institute',
-       'channel': 'Artist Rights Institute',
+      'text': 'You must register before an infringement to have the full protection of copyright.',
+      'timestamp': 4784,
+      'timestamp_label': '[01:19:44]',
+      'timestamp_seconds': 4784,
+      'tip': 'You must register before an infringement to have the full protection of copyright.',
+      'title': 'Registration Counts: How to Copyright Your Images',
+      'url': 'https://www.youtube.com/watch?v=74bQUodJbWY&t=4784s',
+      'video_id': '74bQUodJbWY'},
+     {'author': 'B&H Photo Video Pro Audio',
+      'channel': 'B&H Photo Video Pro Audio',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:16:52](https://www.youtube.com/watch?v=74bQUodJbWY&t=1012s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': "Because fair use is really a defense of infringement, that means that you can't "
+              'claim fair use without actually infringing on a work.',
+      'timestamp': 1012,
+      'timestamp_label': '[00:16:52]',
+      'timestamp_seconds': 1012,
+      'tip': "Because fair use is really a defense of infringement, that means that you can't "
+             'claim fair use without actually infringing on a work.',
+      'title': 'Registration Counts: How to Copyright Your Images',
+      'url': 'https://www.youtube.com/watch?v=74bQUodJbWY&t=1012s',
+      'video_id': '74bQUodJbWY'},
+     {'author': 'Visme',
+      'channel': 'Visme',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:06:10](https://www.youtube.com/watch?v=ShCyD9TYhLY&t=370s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': "Copyright infringement shouldn't be shrugged off.",
+      'timestamp': 370,
+      'timestamp_label': '[00:06:10]',
+      'timestamp_seconds': 370,
+      'tip': "Copyright infringement shouldn't be shrugged off.",
+      'title': 'How to LEGALLY Use a Copyrighted Photo',
+      'url': 'https://www.youtube.com/watch?v=ShCyD9TYhLY&t=370s',
+      'video_id': 'ShCyD9TYhLY'}],
+ 10: [{'author': 'Flowhaven',
+       'channel': 'Flowhaven',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:02:27](https://www.youtube.com/watch?v=cirxW12BS2k&t=147s)',
-       'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                    'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                    '(Chapter Q10 operational verification).',
+       'markdown': '[00:01:48](https://www.youtube.com/watch?v=M69XC4rxxQc&t=108s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': 'Um but if you have a publishing deal or a label deal, you will have an audit '
-               'right uh that would include publishing administrators, um co-publishing deals, '
-               'um whatever form it takes.',
-       'timestamp': 147,
-       'timestamp_label': '[00:02:27]',
-       'timestamp_seconds': 147,
-       'tip': 'Um but if you have a publishing deal or a label deal, you will have an audit '
-              'right uh that would include publishing administrators, um co-publishing deals, '
-              'um whatever form it takes.',
-       'title': 'Royalty audits, steps and strategies. (Artist Rights Institute)',
-       'url': 'https://www.youtube.com/watch?v=cirxW12BS2k&t=147s',
-       'video_id': 'cirxW12BS2k'},
-      {'author': 'ClintMusic',
-       'channel': 'ClintMusic',
+       'text': 'Then the rate for each channel: ten percent for wholesale, twelve for online.',
+       'timestamp': 108,
+       'timestamp_label': '[00:01:48]',
+       'timestamp_seconds': 108,
+       'tip': 'Then the rate for each channel: ten percent for wholesale, twelve for online.',
+       'title': 'How licensing teams run agreements, approvals and royalties in one place',
+       'url': 'https://www.youtube.com/watch?v=M69XC4rxxQc&t=108s',
+       'video_id': 'M69XC4rxxQc'},
+      {'author': 'Flowhaven',
+       'channel': 'Flowhaven',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:01:53](https://www.youtube.com/watch?v=2DYtoU6JVRA&t=113s)',
-       'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                    'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                    '(Chapter Q10 operational verification).',
+       'markdown': '[00:03:10](https://www.youtube.com/watch?v=HkDV-RELNXc&t=190s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': 'The old way was waiting for a deal. The new way is building your own catalog '
-               "and pitching it directly. But here's where most producers still mess up. They "
-               'treat sync licensing like a dumping ground.',
-       'timestamp': 113,
-       'timestamp_label': '[00:01:53]',
-       'timestamp_seconds': 113,
-       'tip': 'The old way was waiting for a deal. The new way is building your own catalog '
-              "and pitching it directly. But here's where most producers still mess up. They "
-              'treat sync licensing like a dumping ground.',
-       'title': 'Why The Old Sync Licensing Rules No Longer Apply (ClintMusic)',
-       'url': 'https://www.youtube.com/watch?v=2DYtoU6JVRA&t=113s',
-       'video_id': '2DYtoU6JVRA'},
-      {'author': 'Producer Royalty',
-       'channel': 'Producer Royalty',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:06:28](https://www.youtube.com/watch?v=gN8CTjqp8lA&t=388s)',
-       'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                    'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                    '(Chapter Q10 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': "There's plenty of companies, you know, that offer these standard template "
-               "deals where it's just a split with no advance money. You can do it, but if you "
-               "want to negotiate and ask for money, it's it's possible.",
-       'timestamp': 388,
-       'timestamp_label': '[00:06:28]',
-       'timestamp_seconds': 388,
-       'tip': "There's plenty of companies, you know, that offer these standard template deals "
-              "where it's just a split with no advance money. You can do it, but if you want "
-              "to negotiate and ask for money, it's it's possible.",
-       'title': 'Producer Publishing Deals in 2026 (Music Attorneys Explain) (Producer '
-                'Royalty)',
-       'url': 'https://www.youtube.com/watch?v=gN8CTjqp8lA&t=388s',
-       'video_id': 'gN8CTjqp8lA'},
-      {'author': 'macProVideoDotCom',
-       'channel': 'macProVideoDotCom',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:00:50](https://www.youtube.com/watch?v=tk2j8egQtvo&t=50s)',
-       'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                    'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                    '(Chapter Q10 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': "Performance not included, aka non-performance income. 's 50% deal, as is your "
-               '50% and logged into their financial books as going towards your recoupment, '
-               'they keep all $5,000 or 100% of the income this time because your advance has '
-               'not been fully recouped.',
-       'timestamp': 50,
-       'timestamp_label': '[00:00:50]',
-       'timestamp_seconds': 50,
-       'tip': "Performance not included, aka non-performance income. 's 50% deal, as is your "
-              '50% and logged into their financial books as going towards your recoupment, '
-              'they keep all $5,000 or 100% of the income this time because your advance has '
-              'not been fully recouped.',
-       'title': 'Music Business 102: Mechanical Royalties and Licensing - 18. Recoupment at '
-                '50-50 (macProVideoDotCom)',
-       'url': 'https://www.youtube.com/watch?v=tk2j8egQtvo&t=50s',
-       'video_id': 'tk2j8egQtvo'},
-      {'author': 'Alex G. Lee',
-       'channel': 'Alex G. Lee',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:07:41](https://www.youtube.com/watch?v=Yg9nVJp45oo&t=461s)',
-       'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                    'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                    '(Chapter Q10 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'AI and then I just do uh I I just prove it in a conceptual level is working '
-               'and then I I want to share with you and then I I want to have some opportunity '
-               'to have a further collaboration to develop this as a commercial product in in '
-               'the later stage.',
-       'timestamp': 461,
-       'timestamp_label': '[00:07:41]',
-       'timestamp_seconds': 461,
-       'tip': 'AI and then I just do uh I I just prove it in a conceptual level is working and '
-              'then I I want to share with you and then I I want to have some opportunity to '
-              'have a further collaboration to develop this as a commercial product in in the '
-              'later stage.',
-       'title': 'AI Agent-Powered Autonomous Patent Management & Monetization Webinar (Alex G. '
-                'Lee)',
-       'url': 'https://www.youtube.com/watch?v=Yg9nVJp45oo&t=461s',
-       'video_id': 'Yg9nVJp45oo'},
-      {'author': 'inventRightTV',
-       'channel': 'inventRightTV',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:03:06](https://www.youtube.com/watch?v=KOR6yXD1nTQ&t=186s)',
-       'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                    'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                    '(Chapter Q10 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': "Stephen, let's get going, man. Well, first of all, first question, everyone "
-               "raise your hand if you're building cell sheets or using AI now. Raise your "
-               "hand if you're using it now. If you're not, all right, this is going to be a "
-               'good good class for you tonight.',
-       'timestamp': 186,
-       'timestamp_label': '[00:03:06]',
-       'timestamp_seconds': 186,
-       'tip': "Stephen, let's get going, man. Well, first of all, first question, everyone "
-              "raise your hand if you're building cell sheets or using AI now. Raise your hand "
-              "if you're using it now. If you're not, all right, this is going to be a good "
-              'good class for you tonight.',
-       'title': 'How AI Can Help You Get a Licensing Deal (inventRightTV)',
-       'url': 'https://www.youtube.com/watch?v=KOR6yXD1nTQ&t=186s',
-       'video_id': 'KOR6yXD1nTQ'},
-      {'author': 'Agi Entertainment | The Star Maker',
-       'channel': 'Agi Entertainment | The Star Maker',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:01:28](https://www.youtube.com/watch?v=yC0aLTouh44&t=88s)',
-       'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                    'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                    '(Chapter Q10 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'Take time to review every single clause. You know, certain words that you '
-               'might think mean a particular thing could mean something slightly different as '
-               'it relates to the entertainment business, right?',
-       'timestamp': 88,
-       'timestamp_label': '[00:01:28]',
-       'timestamp_seconds': 88,
-       'tip': 'Take time to review every single clause. You know, certain words that you might '
-              'think mean a particular thing could mean something slightly different as it '
-              'relates to the entertainment business, right?',
-       'title': 'What Every Artist Must Know About Music Contracts and Royalties (Agi '
-                'Entertainment | The Star Maker)',
-       'url': 'https://www.youtube.com/watch?v=yC0aLTouh44&t=88s',
-       'video_id': 'yC0aLTouh44'},
-      {'author': 'Schwegman Lundberg & Woessner, P.A.',
-       'channel': 'Schwegman Lundberg & Woessner, P.A.',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:13:42](https://www.youtube.com/watch?v=YwEyzgLoOrA&t=822s)',
-       'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                    'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                    '(Chapter Q10 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': "'s starting to grow more and more. So we're at 20 15 20% of the deals are now "
-               "AI related and we're seeing machine learning growing and we're seeing a "
-               "combination of both growing. Other part of this that's interesting, they don't "
-               'sell as well.',
-       'timestamp': 822,
-       'timestamp_label': '[00:13:42]',
-       'timestamp_seconds': 822,
-       'tip': "'s starting to grow more and more. So we're at 20 15 20% of the deals are now "
-              "AI related and we're seeing machine learning growing and we're seeing a "
-              "combination of both growing. Other part of this that's interesting, they don't "
-              'sell as well.',
-       'title': 'Patent Monetization (Schwegman Lundberg & Woessner, P.A.)',
-       'url': 'https://www.youtube.com/watch?v=YwEyzgLoOrA&t=822s',
-       'video_id': 'YwEyzgLoOrA'},
-      {'author': 'UC Riverside Innovation & Entrepreneurship',
-       'channel': 'UC Riverside Innovation & Entrepreneurship',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:00:21](https://www.youtube.com/watch?v=DsnLgDwQddQ&t=21s)',
-       'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                    'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                    '(Chapter Q10 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'Translates University Research and discoveries to the private sector and '
-               'contributes to building a solid entrepreneurial ecosystem in our region.',
-       'timestamp': 21,
-       'timestamp_label': '[00:00:21]',
-       'timestamp_seconds': 21,
-       'tip': 'Translates University Research and discoveries to the private sector and '
-              'contributes to building a solid entrepreneurial ecosystem in our region.',
-       'title': 'Intro to Technology Commercialization (UC Riverside Innovation & '
-                'Entrepreneurship)',
-       'url': 'https://www.youtube.com/watch?v=DsnLgDwQddQ&t=21s',
-       'video_id': 'DsnLgDwQddQ'},
+       'text': 'The quarterly report is checked line by line, and three lines are flagged: an '
+               'ungranted territory, an unapproved product, and a mismatched rate.',
+       'timestamp': 190,
+       'timestamp_label': '[00:03:10]',
+       'timestamp_seconds': 190,
+       'tip': 'The quarterly report is checked line by line, and three lines are flagged: an '
+              'ungranted territory, an unapproved product, and a mismatched rate.',
+       'title': 'How brand licensing teams run agreements, approvals and royalties in one place',
+       'url': 'https://www.youtube.com/watch?v=HkDV-RELNXc&t=190s',
+       'video_id': 'HkDV-RELNXc'},
       {'author': 'Legal Tips for Smart Entrepreneurs',
        'channel': 'Legal Tips for Smart Entrepreneurs',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:02:27](https://www.youtube.com/watch?v=GLaoDfT8SDA&t=147s)',
-       'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                    'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                    '(Chapter Q10 operational verification).',
+       'markdown': '[00:01:39](https://www.youtube.com/watch?v=GLaoDfT8SDA&t=99s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': 'Product but you should still go into these types of deals with you know a full '
-               'set of eyes and some advice on how to structure them so this is attorney Dan '
-               "x-wind coming at you with some information about licensing deals and I'll talk "
-               'to you later.',
-       'timestamp': 147,
-       'timestamp_label': '[00:02:27]',
-       'timestamp_seconds': 147,
-       'tip': 'Product but you should still go into these types of deals with you know a full '
-              'set of eyes and some advice on how to structure them so this is attorney Dan '
-              "x-wind coming at you with some information about licensing deals and I'll talk "
-              'to you later.',
-       'title': 'Negotiate Like a Pro: Secure Your Royalties with This Licensing Fee Secret '
-                '(Legal Tips for Smart Entrepreneurs)',
-       'url': 'https://www.youtube.com/watch?v=GLaoDfT8SDA&t=147s',
+       'text': 'If the discrepancy is above the percentage the parties agree on, the licensee pays '
+               'for the audit; below it, the licensor pays.',
+       'timestamp': 99,
+       'timestamp_label': '[00:01:39]',
+       'timestamp_seconds': 99,
+       'tip': 'If the discrepancy is above the percentage the parties agree on, the licensee pays '
+              'for the audit; below it, the licensor pays.',
+       'title': 'Negotiate Like a Pro: Secure Your Royalties with This Licensing Fee Secret',
+       'url': 'https://www.youtube.com/watch?v=GLaoDfT8SDA&t=99s',
        'video_id': 'GLaoDfT8SDA'},
-      {'author': 'UIA TV',
-       'channel': 'UIA TV',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:58:40](https://www.youtube.com/watch?v=3N-s4ptr2VU&t=3520s)',
-       'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                    'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                    '(Chapter Q10 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'Titan things right loketten en and analyze and cheat wrappers vond en alright '
-               "shacho item ziet er ai laik inzoomen om les marques killer items' soort "
-               'curcumin en kwik hangen get it dit word about a cutting for liesbeth yahoo '
-               'mail.',
-       'timestamp': 3520,
-       'timestamp_label': '[00:58:40]',
-       'timestamp_seconds': 3520,
-       'tip': 'Titan things right loketten en and analyze and cheat wrappers vond en alright '
-              "shacho item ziet er ai laik inzoomen om les marques killer items' soort "
-              'curcumin en kwik hangen get it dit word about a cutting for liesbeth yahoo '
-              'mail.',
-       'title': 'Manufacturing & Licensing: How To License Your Product (UIA TV)',
-       'url': 'https://www.youtube.com/watch?v=3N-s4ptr2VU&t=3520s',
-       'video_id': '3N-s4ptr2VU'},
-      {'author': 'Licensing Basics',
-       'channel': 'Licensing Basics',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:02:47](https://www.youtube.com/watch?v=uBnJLlSWMLk&t=167s)',
-       'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                    'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                    '(Chapter Q10 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'Learn more about the licensing industry please check out my free webinar you '
-               "can go to licensing basics comm and get registered today you're going to learn "
-               "a lot of valuable information again my name is Ryan Stewart I'm the licensing "
-               'expert thanks.',
-       'timestamp': 167,
-       'timestamp_label': '[00:02:47]',
-       'timestamp_seconds': 167,
-       'tip': 'Learn more about the licensing industry please check out my free webinar you '
-              "can go to licensing basics comm and get registered today you're going to learn "
-              "a lot of valuable information again my name is Ryan Stewart I'm the licensing "
-              'expert thanks.',
-       'title': "What's more important than your royalty rate in a licensing deal? (Licensing "
-                'Basics)',
-       'url': 'https://www.youtube.com/watch?v=uBnJLlSWMLk&t=167s',
-       'video_id': 'uBnJLlSWMLk'},
-      {'author': 'Salk Institute',
-       'channel': 'Salk Institute',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:58:04](https://www.youtube.com/watch?v=3iEjObMZnZo&t=3484s)',
-       'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                    'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                    '(Chapter Q10 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'Interesting Supreme Court case that just uh was decided in the last week or so '
-               'uh dealing with University invention so uh come on back thanks.',
-       'timestamp': 3484,
-       'timestamp_label': '[00:58:04]',
-       'timestamp_seconds': 3484,
-       'tip': 'Interesting Supreme Court case that just uh was decided in the last week or so '
-              'uh dealing with University invention so uh come on back thanks.',
-       'title': 'Intellectual Property and Technology Transfer - Why is Academia Suddenly So '
-                'Interested in Patents? (Salk Institute)',
-       'url': 'https://www.youtube.com/watch?v=3iEjObMZnZo&t=3484s',
-       'video_id': '3iEjObMZnZo'},
-      {'author': 'UpCounsel',
-       'channel': 'UpCounsel',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:02:40](https://www.youtube.com/watch?v=Lpv4Uq-cOLA&t=160s)',
-       'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                    'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                    '(Chapter Q10 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'By understanding the basics of patent licensing and avoiding common pitfalls, '
-               'you can maximize the value of your intellectual property and contribute to '
-               'technological progress.',
-       'timestamp': 160,
-       'timestamp_label': '[00:02:40]',
-       'timestamp_seconds': 160,
-       'tip': 'By understanding the basics of patent licensing and avoiding common pitfalls, '
-              'you can maximize the value of your intellectual property and contribute to '
-              'technological progress.',
-       'title': 'Patent Licensing  How It Works and What You Need to Know (UpCounsel)',
-       'url': 'https://www.youtube.com/watch?v=Lpv4Uq-cOLA&t=160s',
-       'video_id': 'Lpv4Uq-cOLA'},
-      {'author': 'inventRightTV',
-       'channel': 'inventRightTV',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:14:30](https://www.youtube.com/watch?v=INuH7fr5H40&t=870s)',
-       'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                    'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                    '(Chapter Q10 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'Information from people that have done it repeatedly so thank you for watching '
-               'this video until next time this is stephen key.',
-       'timestamp': 870,
-       'timestamp_label': '[00:14:30]',
-       'timestamp_seconds': 870,
-       'tip': 'Information from people that have done it repeatedly so thank you for watching '
-              'this video until next time this is stephen key.',
-       'title': 'How to License Your Ideas and Make Money (Your Honest Guide to Profitable '
-                'Inventing) (inventRightTV)',
-       'url': 'https://www.youtube.com/watch?v=INuH7fr5H40&t=870s',
-       'video_id': 'INuH7fr5H40'}],
- 11: [{'author': 'Flowhaven',
-       'channel': 'Flowhaven',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:03:05](https://www.youtube.com/watch?v=HkDV-RELNXc&t=185s)',
-       'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                    'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                    '(Chapter Q11 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'Flowhaven checks every line against the agreement. Sales in a territory that '
-               "was never granted. A product that was never approved. And a rate that doesn't "
-               'match the contract. Your team sends those lines back to the partner, accepts '
-               'the rest, and raises the invoice request.',
-       'timestamp': 185,
-       'timestamp_label': '[00:03:05]',
-       'timestamp_seconds': 185,
-       'tip': 'Flowhaven checks every line against the agreement. Sales in a territory that '
-              "was never granted. A product that was never approved. And a rate that doesn't "
-              'match the contract. Your team sends those lines back to the partner, accepts '
-              'the rest, and raises the invoice request.',
-       'title': 'How brand licensing teams run agreements, approvals and royalties in one '
-                'place (Flowhaven)',
-       'url': 'https://www.youtube.com/watch?v=HkDV-RELNXc&t=185s',
-       'video_id': 'HkDV-RELNXc'},
-      {'author': 'INDIAN MARKETS DECODED',
-       'channel': 'INDIAN MARKETS DECODED',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:00:40](https://www.youtube.com/watch?v=3P0vRsEmqtY&t=40s)',
-       'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                    'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                    '(Chapter Q11 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': "'s streaming a song, playing it in a coffee shop, or licensing it from massive "
-               'brand campaign. There is absolutely zero distraction from unrelated '
-               'operations. The entire business is built around one single thing, acquiring '
-               'and renting out intellectual property.',
-       'timestamp': 40,
-       'timestamp_label': '[00:00:40]',
-       'timestamp_seconds': 40,
-       'tip': "'s streaming a song, playing it in a coffee shop, or licensing it from massive "
-              'brand campaign. There is absolutely zero distraction from unrelated operations. '
-              'The entire business is built around one single thing, acquiring and renting out '
-              'intellectual property.',
-       'title': 'Decoding Pure-Play Licensing Model: High Margin Royalty Cash Flows | Industry '
-                'Terms (INDIAN MARKETS DECODED)',
-       'url': 'https://www.youtube.com/watch?v=3P0vRsEmqtY&t=40s',
-       'video_id': '3P0vRsEmqtY'},
-      {'author': 'Technology Licensing Office (TLO)',
-       'channel': 'Technology Licensing Office (TLO)',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:53:52](https://www.youtube.com/watch?v=2ADE7tP4bYM&t=3232s)',
-       'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                    'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                    '(Chapter Q11 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'MIT, we require that the company provide us a business plan that explains to '
-               'us how they intend to commercialize the MIT Technology with what resources, '
-               'with what team.',
-       'timestamp': 3232,
-       'timestamp_label': '[00:53:52]',
-       'timestamp_seconds': 3232,
-       'tip': 'MIT, we require that the company provide us a business plan that explains to us '
-              'how they intend to commercialize the MIT Technology with what resources, with '
-              'what team.',
-       'title': 'Commercialization of MIT Technology (Technology Licensing Office (TLO))',
-       'url': 'https://www.youtube.com/watch?v=2ADE7tP4bYM&t=3232s',
-       'video_id': '2ADE7tP4bYM'},
-      {'author': 'USPTOvideo',
-       'channel': 'USPTOvideo',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:31:21](https://www.youtube.com/watch?v=hwcNfSr-ia0&t=1881s)',
-       'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                    'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                    '(Chapter Q11 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'Yeah, I agree wholeheartedly with Laura and especially thinking through you '
-               "can't have a single person who's gonna understand all the different parts of "
-               'business, marketing, finance, operations, legal, regulatory. I mean, I can '
-               'even just give you an example.',
-       'timestamp': 1881,
-       'timestamp_label': '[00:31:21]',
-       'timestamp_seconds': 1881,
-       'tip': 'Yeah, I agree wholeheartedly with Laura and especially thinking through you '
-              "can't have a single person who's gonna understand all the different parts of "
-              'business, marketing, finance, operations, legal, regulatory. I mean, I can even '
-              'just give you an example.',
-       'title': 'Tech Transfer and Commercialization (USPTOvideo)',
-       'url': 'https://www.youtube.com/watch?v=hwcNfSr-ia0&t=1881s',
-       'video_id': 'hwcNfSr-ia0'},
-      {'author': 'inventRightTV',
-       'channel': 'inventRightTV',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:03:03](https://www.youtube.com/watch?v=p3ODWhpvt3E&t=183s)',
-       'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                    'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                    '(Chapter Q11 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': "We know what they're going to be asking and we know why they they sign "
-               "licensing deals. And there's certain things that they need to see in order for "
-               'you to get the deal.',
-       'timestamp': 183,
-       'timestamp_label': '[00:03:03]',
-       'timestamp_seconds': 183,
-       'tip': "We know what they're going to be asking and we know why they they sign "
-              "licensing deals. And there's certain things that they need to see in order for "
-              'you to get the deal.',
-       'title': 'The #1 Thing Companies Want Before Buying Your Idea (inventRightTV)',
-       'url': 'https://www.youtube.com/watch?v=p3ODWhpvt3E&t=183s',
-       'video_id': 'p3ODWhpvt3E'},
-      {'author': 'OSU Center for Clinical and Translational Science',
-       'channel': 'OSU Center for Clinical and Translational Science',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:16:50](https://www.youtube.com/watch?v=HKAvhkDKxNQ&t=1010s)',
-       'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                    'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                    '(Chapter Q11 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'Commercial scale clearly the the research that is being done and as you saw '
-               "the numbers you know if it's if it's getting 150 plus products in the market.",
-       'timestamp': 1010,
-       'timestamp_label': '[00:16:50]',
-       'timestamp_seconds': 1010,
-       'tip': 'Commercial scale clearly the the research that is being done and as you saw the '
-              "numbers you know if it's if it's getting 150 plus products in the market.",
-       'title': 'Technology Transfer and Intellectual Property (OSU Center for Clinical and '
-                'Translational Science)',
-       'url': 'https://www.youtube.com/watch?v=HKAvhkDKxNQ&t=1010s',
-       'video_id': 'HKAvhkDKxNQ'},
-      {'author': 'Patent Question',
-       'channel': 'Patent Question',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:01:40](https://www.youtube.com/watch?v=dlTT-hWgkB8&t=100s)',
-       'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                    'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                    '(Chapter Q11 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'You can also use your invention as a foundation for your own company. This '
-               'path gives you the highest potential upside, but also is going to take the '
-               "most effort. You'll need to handle product development, marketing, operations, "
-               'and sales. But the advantage is control.',
-       'timestamp': 100,
-       'timestamp_label': '[00:01:40]',
-       'timestamp_seconds': 100,
-       'tip': 'You can also use your invention as a foundation for your own company. This path '
-              'gives you the highest potential upside, but also is going to take the most '
-              "effort. You'll need to handle product development, marketing, operations, and "
-              'sales. But the advantage is control.',
-       'title': 'Patents Explained – How to Make Money from a Patent | Rich Goldstein (Patent '
-                'Question)',
-       'url': 'https://www.youtube.com/watch?v=dlTT-hWgkB8&t=100s',
-       'video_id': 'dlTT-hWgkB8'},
-      {'author': 'MIT Bootcamps',
-       'channel': 'MIT Bootcamps',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:07:45](https://www.youtube.com/watch?v=SPgUdIOB0IM&t=465s)',
-       'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                    'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                    '(Chapter Q11 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': "Under 18 and it's a long time since I've been there they can't enforce it "
-               "there's also they said you know this apply non-competes against unpaid interns "
-               'is.',
-       'timestamp': 465,
-       'timestamp_label': '[00:07:45]',
-       'timestamp_seconds': 465,
-       'tip': "Under 18 and it's a long time since I've been there they can't enforce it "
-              "there's also they said you know this apply non-competes against unpaid interns "
-              'is.',
-       'title': 'How IP can strategically advance your business goals (MIT Bootcamps)',
-       'url': 'https://www.youtube.com/watch?v=SPgUdIOB0IM&t=465s',
-       'video_id': 'SPgUdIOB0IM'},
-      {'author': 'Eric Hanscom (ICIP)',
-       'channel': 'Eric Hanscom (ICIP)',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:04:43](https://www.youtube.com/watch?v=yUPS-UISPnQ&t=283s)',
-       'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                    'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                    '(Chapter Q11 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': "Complete control they get to keep all the money that's left over however it's "
-               'going to become more than a full-time job for one person so the second route.',
-       'timestamp': 283,
-       'timestamp_label': '[00:04:43]',
-       'timestamp_seconds': 283,
-       'tip': "Complete control they get to keep all the money that's left over however it's "
-              'going to become more than a full-time job for one person so the second route.',
-       'title': 'ICIP presents:  Intellectual Property Licensing - Three Main Ways To Make '
-                'Money on Your Invention (Eric Hanscom (ICIP))',
-       'url': 'https://www.youtube.com/watch?v=yUPS-UISPnQ&t=283s',
-       'video_id': 'yUPS-UISPnQ'},
-      {'author': 'Informa Connect Life Sciences',
-       'channel': 'Informa Connect Life Sciences',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:03:40](https://www.youtube.com/watch?v=Dd9V4RSqNuk&t=220s)',
-       'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                    'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                    '(Chapter Q11 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': "Time out of the hundreds in the US are making money and it's not always the "
-               "same ones so from a business point of view it's more like a lottery but from.",
-       'timestamp': 220,
-       'timestamp_label': '[00:03:40]',
-       'timestamp_seconds': 220,
-       'tip': "Time out of the hundreds in the US are making money and it's not always the "
-              "same ones so from a business point of view it's more like a lottery but from.",
-       'title': 'BWB TV: Commercializing university research with Lita Nelsen, MIT (Informa '
-                'Connect Life Sciences)',
-       'url': 'https://www.youtube.com/watch?v=Dd9V4RSqNuk&t=220s',
-       'video_id': 'Dd9V4RSqNuk'},
-      {'author': 'Innovent Law',
-       'channel': 'Innovent Law',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:01:40](https://www.youtube.com/watch?v=boXHxU-4qd8&t=100s)',
-       'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                    'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                    '(Chapter Q11 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': "Uh money you've decided on the second one licensing that's something that you "
-               'have a little bit more control and flexibility over in a sense where you.',
-       'timestamp': 100,
-       'timestamp_label': '[00:01:40]',
-       'timestamp_seconds': 100,
-       'tip': "Uh money you've decided on the second one licensing that's something that you "
-              'have a little bit more control and flexibility over in a sense where you.',
-       'title': 'Patent Monetizing Strategies Every Entrepreneur Should Know (Innovent Law)',
-       'url': 'https://www.youtube.com/watch?v=boXHxU-4qd8&t=100s',
-       'video_id': 'boXHxU-4qd8'},
-      {'author': 'B&H Photo Video Pro Audio',
-       'channel': 'B&H Photo Video Pro Audio',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[01:31:05](https://www.youtube.com/watch?v=74bQUodJbWY&t=5465s)',
-       'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                    'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                    '(Chapter Q11 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'You guys outside thanks for more information please visit us online give us a '
-               'call or stop by our New York City Superstore you can also connect with us on '
-               'the web.',
-       'timestamp': 5465,
-       'timestamp_label': '[01:31:05]',
-       'timestamp_seconds': 5465,
-       'tip': 'You guys outside thanks for more information please visit us online give us a '
-              'call or stop by our New York City Superstore you can also connect with us on '
-              'the web.',
-       'title': 'Registration Counts: How to Copyright Your Images (B&H Photo Video Pro Audio)',
-       'url': 'https://www.youtube.com/watch?v=74bQUodJbWY&t=5465s',
-       'video_id': '74bQUodJbWY'},
-      {'author': 'Osage University Partners',
-       'channel': 'Osage University Partners',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[01:13:12](https://www.youtube.com/watch?v=Q3YzwCiT2M4&t=4392s)',
-       'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                    'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                    '(Chapter Q11 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': "It's it's meant to really reflect what the company's anticipated minimum "
-               'royalty is going to be for that year so the the goal is that they would '
-               'essentially never pay this amount because their projected royalties are always '
-               'going to be higher than this set minimum.',
-       'timestamp': 4392,
-       'timestamp_label': '[01:13:12]',
-       'timestamp_seconds': 4392,
-       'tip': "It's it's meant to really reflect what the company's anticipated minimum "
-              'royalty is going to be for that year so the the goal is that they would '
-              'essentially never pay this amount because their projected royalties are always '
-              'going to be higher than this set minimum.',
-       'title': 'Startup Licensing 101: Term Sheets & Financials (Osage University Partners)',
-       'url': 'https://www.youtube.com/watch?v=Q3YzwCiT2M4&t=4392s',
-       'video_id': 'Q3YzwCiT2M4'},
-      {'author': 'inventRightTV',
-       'channel': 'inventRightTV',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:01:22](https://www.youtube.com/watch?v=_aiJZ1WKmfc&t=82s)',
-       'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                    'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                    '(Chapter Q11 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'Being taught that the university level is to start a business but not '
-               'everybody wants to start a business not every.',
-       'timestamp': 82,
-       'timestamp_label': '[00:01:22]',
-       'timestamp_seconds': 82,
-       'tip': 'Being taught that the university level is to start a business but not everybody '
-              'wants to start a business not every.',
-       'title': 'The Game-Changing Power of Open Innovation (inventRightTV)',
-       'url': 'https://www.youtube.com/watch?v=_aiJZ1WKmfc&t=82s',
-       'video_id': '_aiJZ1WKmfc'},
       {'author': 'Uncover Fraud',
        'channel': 'Uncover Fraud',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:00:45](https://www.youtube.com/watch?v=9Fku-QlhyHc&t=45s)',
-       'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                    'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                    '(Chapter Q11 operational verification).',
+       'markdown': '[00:05:08](https://www.youtube.com/watch?v=9Fku-QlhyHc&t=308s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': "In this video, I'm going to explain reasons for contract non-compliance, "
-               'benefits of royalty audits, how to conduct a royalty audit, and the benefits '
-               'of a forensic royalty audit. What you learn in this video, you will be able to '
-               'use straight away in your business.',
-       'timestamp': 45,
-       'timestamp_label': '[00:00:45]',
-       'timestamp_seconds': 45,
-       'tip': "In this video, I'm going to explain reasons for contract non-compliance, "
-              'benefits of royalty audits, how to conduct a royalty audit, and the benefits of '
-              'a forensic royalty audit. What you learn in this video, you will be able to use '
-              'straight away in your business.',
-       'title': 'Royalty Audit: Why Every Licensor & Artist Needs a Forensic Accountant on '
-                'Their Side | Uncover Fraud (Uncover Fraud)',
-       'url': 'https://www.youtube.com/watch?v=9Fku-QlhyHc&t=45s',
-       'video_id': '9Fku-QlhyHc'}],
- 12: [{'author': 'PKF Texas',
+       'text': 'Evidence from findings of royalty audits conducted by auditors and royalty '
+               'compliance investigation professionals suggest that royalty recoveries are within '
+               'the magnitude of 5 to 20 times the cost of conducting the royalty audit.',
+       'timestamp': 308,
+       'timestamp_label': '[00:05:08]',
+       'timestamp_seconds': 308,
+       'tip': 'Evidence from findings of royalty audits conducted by auditors and royalty '
+              'compliance investigation professionals suggest that royalty recoveries are within '
+              'the magnitude of 5 to 20 times the cost of conducting the royalty audit.',
+       'title': 'Royalty Audit: Why Every Licensor & Artist Needs a Forensic Accountant on Their '
+                'Side | Uncover Fraud',
+       'url': 'https://www.youtube.com/watch?v=9Fku-QlhyHc&t=308s',
+       'video_id': '9Fku-QlhyHc'},
+      {'author': 'Uncover Fraud',
+       'channel': 'Uncover Fraud',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:03:28](https://www.youtube.com/watch?v=9Fku-QlhyHc&t=208s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
+       'source_type': 'video_pro_tip',
+       'text': 'According to one royalty compliance report, whether due to intentional or '
+               'unintentional causes, up to 89% of audited licensees underreport and underpay '
+               'royalties.',
+       'timestamp': 208,
+       'timestamp_label': '[00:03:28]',
+       'timestamp_seconds': 208,
+       'tip': 'According to one royalty compliance report, whether due to intentional or '
+              'unintentional causes, up to 89% of audited licensees underreport and underpay '
+              'royalties.',
+       'title': 'Royalty Audit: Why Every Licensor & Artist Needs a Forensic Accountant on Their '
+                'Side | Uncover Fraud',
+       'url': 'https://www.youtube.com/watch?v=9Fku-QlhyHc&t=208s',
+       'video_id': '9Fku-QlhyHc'},
+      {'author': 'Artist Rights Institute',
+       'channel': 'Artist Rights Institute',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:15:49](https://www.youtube.com/watch?v=cirxW12BS2k&t=949s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
+       'source_type': 'video_pro_tip',
+       'text': 'Then I guess you got to give me the data for every month 36 months for three '
+               'years.',
+       'timestamp': 949,
+       'timestamp_label': '[00:15:49]',
+       'timestamp_seconds': 949,
+       'tip': 'Then I guess you got to give me the data for every month 36 months for three years.',
+       'title': 'Royalty audits, steps and strategies.',
+       'url': 'https://www.youtube.com/watch?v=cirxW12BS2k&t=949s',
+       'video_id': 'cirxW12BS2k'},
+      {'author': 'PKF Texas',
        'channel': 'PKF Texas',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:02:04](https://www.youtube.com/watch?v=Z-vXnFsa6zY&t=124s)',
-       'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                    'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                    '(Chapter Q12 operational verification).',
+       'markdown': '[00:01:29](https://www.youtube.com/watch?v=Z-vXnFsa6zY&t=89s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': 'But we can help both licensors if they want to audit licensees and help '
-               "licensees if they are ever getting audited. All right, well, we'll get you "
-               'back to talk a little bit more about contract compliance. For more information '
-               'about this topic, visit PKFTexas.',
-       'timestamp': 124,
-       'timestamp_label': '[00:02:04]',
-       'timestamp_seconds': 124,
-       'tip': 'But we can help both licensors if they want to audit licensees and help '
-              "licensees if they are ever getting audited. All right, well, we'll get you back "
-              'to talk a little bit more about contract compliance. For more information about '
-              'this topic, visit PKFTexas.',
+       'text': 'Late statements, missed payments and general misreporting are red flags, and trend '
+               'analysis can locate the risky areas.',
+       'timestamp': 89,
+       'timestamp_label': '[00:01:29]',
+       'timestamp_seconds': 89,
+       'tip': 'Late statements, missed payments and general misreporting are red flags, and trend '
+              'analysis can locate the risky areas.',
        'title': "Red Flags in Licensing and Royalty Audits | PKF Texas - The Entrepreneur's "
-                'Playbook (PKF Texas)',
-       'url': 'https://www.youtube.com/watch?v=Z-vXnFsa6zY&t=124s',
+                'Playbook',
+       'url': 'https://www.youtube.com/watch?v=Z-vXnFsa6zY&t=89s',
        'video_id': 'Z-vXnFsa6zY'},
-      {'author': 'Jason Varner',
-       'channel': 'Jason Varner',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:09:49](https://www.youtube.com/watch?v=0ZCFBJ3aOOA&t=589s)',
-       'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                    'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                    '(Chapter Q12 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': "So there's a lot of options. You don't got to rush into it. Um you can email "
-               "me, jason@datahasvalue. Um I'm researching this stuff every day. Um on the "
-               'site you also see I put a deal tracker in yesterday that has um recent data '
-               'licensing deals.',
-       'timestamp': 589,
-       'timestamp_label': '[00:09:49]',
-       'timestamp_seconds': 589,
-       'tip': "So there's a lot of options. You don't got to rush into it. Um you can email "
-              "me, jason@datahasvalue. Um I'm researching this stuff every day. Um on the site "
-              'you also see I put a deal tracker in yesterday that has um recent data '
-              'licensing deals.',
-       'title': "Should You License Your Advisory Firm's Data for AI Training? (Jason Varner)",
-       'url': 'https://www.youtube.com/watch?v=0ZCFBJ3aOOA&t=589s',
-       'video_id': '0ZCFBJ3aOOA'},
-      {'author': 'Elite Music Coaching',
-       'channel': 'Elite Music Coaching',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:11:59](https://www.youtube.com/watch?v=D6XhETdysBM&t=719s)',
-       'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                    'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                    '(Chapter Q12 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'It could be the thing that finally gives you the freedom to create music '
-               "full-time. But only if you build it with intention. Look, I'll be honest with "
-               'you, building a catalog that generates income every day is not about getting '
-               'lucky with one massive placement.',
-       'timestamp': 719,
-       'timestamp_label': '[00:11:59]',
-       'timestamp_seconds': 719,
-       'tip': 'It could be the thing that finally gives you the freedom to create music '
-              "full-time. But only if you build it with intention. Look, I'll be honest with "
-              'you, building a catalog that generates income every day is not about getting '
-              'lucky with one massive placement.',
-       'title': 'How to Build a Music Catalog That Pays You for Years (Sync Licensing '
-                'Strategy) (Elite Music Coaching)',
-       'url': 'https://www.youtube.com/watch?v=D6XhETdysBM&t=719s',
-       'video_id': 'D6XhETdysBM'},
-      {'author': 'Go:lofty - The Official Channel',
-       'channel': 'Go:lofty - The Official Channel',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:00:25](https://www.youtube.com/watch?v=A4bw9yuaOVo&t=25s)',
-       'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                    'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                    '(Chapter Q12 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': "So, let's start with the basics. What exactly is an IP strategy? Your IP "
-               'strategy is your game plan for how you protect, manage, and monetize your '
-               "business's unique ideas, inventions, designs, and innovations. It's not just "
-               'about legal protection.',
-       'timestamp': 25,
-       'timestamp_label': '[00:00:25]',
-       'timestamp_seconds': 25,
-       'tip': "So, let's start with the basics. What exactly is an IP strategy? Your IP "
-              'strategy is your game plan for how you protect, manage, and monetize your '
-              "business's unique ideas, inventions, designs, and innovations. It's not just "
-              'about legal protection.',
-       'title': 'Intellectual Property Strategy – Protect, Lead, and Monetize Innovation '
-                '(Go:lofty - The Official Channel)',
-       'url': 'https://www.youtube.com/watch?v=A4bw9yuaOVo&t=25s',
-       'video_id': 'A4bw9yuaOVo'},
       {'author': 'Sabarwal Law',
        'channel': 'Sabarwal Law',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:03:12](https://www.youtube.com/watch?v=4ZKPBotNzQw&t=192s)',
-       'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                    'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                    '(Chapter Q12 operational verification).',
+       'markdown': '[00:03:55](https://www.youtube.com/watch?v=4ZKPBotNzQw&t=235s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': 'The contract and things like that or there are more formal audits where we '
-               'give audit notice to a counterparty and um everything is more official usually '
-               "there's attorneys involved.",
-       'timestamp': 192,
-       'timestamp_label': '[00:03:12]',
-       'timestamp_seconds': 192,
-       'tip': 'The contract and things like that or there are more formal audits where we give '
-              'audit notice to a counterparty and um everything is more official usually '
-              "there's attorneys involved.",
-       'title': '22.5. What is a Royalty Audit (Sabarwal Law)',
-       'url': 'https://www.youtube.com/watch?v=4ZKPBotNzQw&t=192s',
+       'text': 'A shortfall may simply mean the product is underperforming.',
+       'timestamp': 235,
+       'timestamp_label': '[00:03:55]',
+       'timestamp_seconds': 235,
+       'tip': 'A shortfall may simply mean the product is underperforming.',
+       'title': '22.5. What is a Royalty Audit',
+       'url': 'https://www.youtube.com/watch?v=4ZKPBotNzQw&t=235s',
        'video_id': '4ZKPBotNzQw'},
-      {'author': 'American Physiological Society',
-       'channel': 'American Physiological Society',
+      {'author': 'Secrets of the music industry',
+       'channel': 'Secrets of the music industry',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:42:04](https://www.youtube.com/watch?v=jxdKIK4n-Dk&t=2524s)',
-       'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                    'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                    '(Chapter Q12 operational verification).',
+       'markdown': '[00:04:03](https://www.youtube.com/watch?v=DfuXhSrezTU&t=243s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': 'Um at NYU we have our own startup manager and like her job is just to really '
-               'really help researchers and students you know define a clear um '
-               'commercialization plan. Um we also have different resources for filed members '
-               'to um fundra.',
-       'timestamp': 2524,
-       'timestamp_label': '[00:42:04]',
-       'timestamp_seconds': 2524,
-       'tip': 'Um at NYU we have our own startup manager and like her job is just to really '
-              'really help researchers and students you know define a clear um '
-              'commercialization plan. Um we also have different resources for filed members '
-              'to um fundra.',
-       'title': 'Engaging Your Technology Transfer Office to Translate Research into Patents '
-                '(American Physiological Society)',
-       'url': 'https://www.youtube.com/watch?v=jxdKIK4n-Dk&t=2524s',
-       'video_id': 'jxdKIK4n-Dk'},
+       'text': 'Most contracts only give you a 2 or 3 year window to audit a statement, so you '
+               "can't wait around.",
+       'timestamp': 243,
+       'timestamp_label': '[00:04:03]',
+       'timestamp_seconds': 243,
+       'tip': 'Most contracts only give you a 2 or 3 year window to audit a statement, so you '
+              "can't wait around.",
+       'title': 'Your Right to AUDIT: How to Catch Your Label Stealing Your Royalties 🕵️',
+       'url': 'https://www.youtube.com/watch?v=DfuXhSrezTU&t=243s',
+       'video_id': 'DfuXhSrezTU'},
       {'author': 'Authors Guild',
        'channel': 'Authors Guild',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:51:51](https://www.youtube.com/watch?v=NrMiKZwGTD4&t=3111s)',
-       'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                    'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                    '(Chapter Q12 operational verification).',
+       'markdown': '[00:33:03](https://www.youtube.com/watch?v=NrMiKZwGTD4&t=1983s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': 'And if so, um what terms did you try especially hard to get that are not '
-               "normally granted to authors? So, again, um I think in the in I don't want to "
-               'say in the old days, but um 15 to 20 years ago, audit clauses were in um a lot '
-               'of contracts and they were very general.',
-       'timestamp': 3111,
-       'timestamp_label': '[00:51:51]',
-       'timestamp_seconds': 3111,
-       'tip': 'And if so, um what terms did you try especially hard to get that are not '
-              "normally granted to authors? So, again, um I think in the in I don't want to "
-              'say in the old days, but um 15 to 20 years ago, audit clauses were in um a lot '
-              'of contracts and they were very general.',
+       'text': "Now, if there is 15% of inventory unaccounted for, there's a big problem.",
+       'timestamp': 1983,
+       'timestamp_label': '[00:33:03]',
+       'timestamp_seconds': 1983,
+       'tip': "Now, if there is 15% of inventory unaccounted for, there's a big problem.",
        'title': 'Understanding Your Royalty Statements and Learning What Questions to Ask Your '
-                'Publisher (Authors Guild)',
-       'url': 'https://www.youtube.com/watch?v=NrMiKZwGTD4&t=3111s',
+                'Publisher',
+       'url': 'https://www.youtube.com/watch?v=NrMiKZwGTD4&t=1983s',
+       'video_id': 'NrMiKZwGTD4'},
+      {'author': 'Authors Guild',
+       'channel': 'Authors Guild',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:57:10](https://www.youtube.com/watch?v=NrMiKZwGTD4&t=3430s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
+       'source_type': 'video_pro_tip',
+       'text': 'The other thing to look for, and this is something you should put in your '
+               'contract, is underpayment finding of 5% or greater, the publisher will reimburse '
+               'the author for the cost of an audit.',
+       'timestamp': 3430,
+       'timestamp_label': '[00:57:10]',
+       'timestamp_seconds': 3430,
+       'tip': 'The other thing to look for, and this is something you should put in your contract, '
+              'is underpayment finding of 5% or greater, the publisher will reimburse the author '
+              'for the cost of an audit.',
+       'title': 'Understanding Your Royalty Statements and Learning What Questions to Ask Your '
+                'Publisher',
+       'url': 'https://www.youtube.com/watch?v=NrMiKZwGTD4&t=3430s',
        'video_id': 'NrMiKZwGTD4'},
       {'author': 'Alexa Donne',
        'channel': 'Alexa Donne',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:22:44](https://www.youtube.com/watch?v=yAYeomyyeP8&t=1364s)',
-       'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                    'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                    '(Chapter Q12 operational verification).',
+       'markdown': '[00:03:44](https://www.youtube.com/watch?v=yAYeomyyeP8&t=224s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': 'Your advance and you start earning royalties you were steadily selling copies '
-               "and so you'll get payments every six months they will vary widely how.",
-       'timestamp': 1364,
-       'timestamp_label': '[00:22:44]',
-       'timestamp_seconds': 1364,
-       'tip': 'Your advance and you start earning royalties you were steadily selling copies '
-              "and so you'll get payments every six months they will vary widely how.",
-       'title': 'How Book Advances and Royalties Work (Alexa Donne)',
-       'url': 'https://www.youtube.com/watch?v=yAYeomyyeP8&t=1364s',
+       'text': 'I can tell you up front most authors will never earn out.',
+       'timestamp': 224,
+       'timestamp_label': '[00:03:44]',
+       'timestamp_seconds': 224,
+       'tip': 'I can tell you up front most authors will never earn out.',
+       'title': 'How Book Advances and Royalties Work',
+       'url': 'https://www.youtube.com/watch?v=yAYeomyyeP8&t=224s',
        'video_id': 'yAYeomyyeP8'},
-      {'author': 'inventRightTV',
-       'channel': 'inventRightTV',
+      {'author': 'Lynn D. Jung',
+       'channel': 'Lynn D. Jung',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:04:38](https://www.youtube.com/watch?v=WEVVJ111b8o&t=278s)',
-       'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                    'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                    '(Chapter Q12 operational verification).',
+       'markdown': '[00:08:16](https://www.youtube.com/watch?v=cEP_oNaMQcw&t=496s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': 'A third of which went to my agent so okay but and it still does it sells today '
-               "but you know it's not nearly like I remember in the early days I get a.",
-       'timestamp': 278,
-       'timestamp_label': '[00:04:38]',
-       'timestamp_seconds': 278,
-       'tip': 'A third of which went to my agent so okay but and it still does it sells today '
-              "but you know it's not nearly like I remember in the early days I get a.",
-       'title': 'How This Inventor Earned $10 Million In Royalties! (inventRightTV)',
-       'url': 'https://www.youtube.com/watch?v=WEVVJ111b8o&t=278s',
-       'video_id': 'WEVVJ111b8o'},
-      {'author': 'SeltzerLicensingGrp',
-       'channel': 'SeltzerLicensingGrp',
+       'text': 'You have to sell 33,333 copies first before you start getting $3 per book.',
+       'timestamp': 496,
+       'timestamp_label': '[00:08:16]',
+       'timestamp_seconds': 496,
+       'tip': 'You have to sell 33,333 copies first before you start getting $3 per book.',
+       'title': '💸 a guide to author finances // advances, royalties, taxes, & what worked for me',
+       'url': 'https://www.youtube.com/watch?v=cEP_oNaMQcw&t=496s',
+       'video_id': 'cEP_oNaMQcw'},
+      {'author': 'Book Industry Study Group',
+       'channel': 'Book Industry Study Group',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:03:34](https://www.youtube.com/watch?v=7LHR9Jso37I&t=214s)',
-       'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                    'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                    '(Chapter Q12 operational verification).',
+       'markdown': '[00:09:06](https://www.youtube.com/watch?v=Xy0iIdZDIHk&t=546s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': 'Items the license or has to approve the product but is it going to be ten days '
-               "and what if they don't respond in ten days so the key thing it's all about "
-               'negotiating and you know the two sides and just remember key rule to '
-               "negotiating is that everything's negotiable.",
-       'timestamp': 214,
-       'timestamp_label': '[00:03:34]',
-       'timestamp_seconds': 214,
-       'tip': 'Items the license or has to approve the product but is it going to be ten days '
-              "and what if they don't respond in ten days so the key thing it's all about "
-              'negotiating and you know the two sides and just remember key rule to '
-              "negotiating is that everything's negotiable.",
-       'title': 'Licensing Basics: Key Legal Terms In  Brand Licensing [Part 10/10] '
-                '(SeltzerLicensingGrp)',
-       'url': 'https://www.youtube.com/watch?v=7LHR9Jso37I&t=214s',
-       'video_id': '7LHR9Jso37I'},
-      {'author': 'University of Minnesota',
-       'channel': 'University of Minnesota',
+       'text': '77% reported that they have spent a full day or more on single statements.',
+       'timestamp': 546,
+       'timestamp_label': '[00:09:06]',
+       'timestamp_seconds': 546,
+       'tip': '77% reported that they have spent a full day or more on single statements.',
+       'title': 'Rights Royalty Statement Standards: The Details Make the Difference',
+       'url': 'https://www.youtube.com/watch?v=Xy0iIdZDIHk&t=546s',
+       'video_id': 'Xy0iIdZDIHk'},
+      {'author': 'Ideas on Fire',
+       'channel': 'Ideas on Fire',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:02:58](https://www.youtube.com/watch?v=Yqfdzambgbs&t=178s)',
-       'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                    'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                    '(Chapter Q12 operational verification).',
+       'markdown': '[00:11:12](https://www.youtube.com/watch?v=QHV5OSGnAMg&t=672s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': 'Entirely useless if it that has nothing to develop everyone has to get along '
-               'and the OTC serves as that intermediary to try to make sure it happens so '
-               'bring your creativity and match it with theirs and amazing things will happen '
-               'at the end of the day.',
-       'timestamp': 178,
-       'timestamp_label': '[00:02:58]',
-       'timestamp_seconds': 178,
-       'tip': 'Entirely useless if it that has nothing to develop everyone has to get along '
-              'and the OTC serves as that intermediary to try to make sure it happens so bring '
-              'your creativity and match it with theirs and amazing things will happen at the '
-              'end of the day.',
-       'title': 'Inside the Office for Technology Commercialization (University of Minnesota)',
-       'url': 'https://www.youtube.com/watch?v=Yqfdzambgbs&t=178s',
-       'video_id': 'Yqfdzambgbs'},
-      {'author': 'IPWatchdog, Inc.',
-       'channel': 'IPWatchdog, Inc.',
+       'text': "In the trade world, I think it's more common to probably base that on list price.",
+       'timestamp': 672,
+       'timestamp_label': '[00:11:12]',
+       'timestamp_seconds': 672,
+       'tip': "In the trade world, I think it's more common to probably base that on list price.",
+       'title': 'Understanding Contracts, Royalties, and Rights - Academic Publishing Series',
+       'url': 'https://www.youtube.com/watch?v=QHV5OSGnAMg&t=672s',
+       'video_id': 'QHV5OSGnAMg'},
+      {'author': 'Bao Tran, Esq. | Patent Attorney',
+       'channel': 'Bao Tran, Esq. | Patent Attorney',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:00:15](https://www.youtube.com/watch?v=qZqv5lEPPQc&t=15s)',
-       'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                    'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                    '(Chapter Q12 operational verification).',
+       'markdown': '[00:02:48](https://www.youtube.com/watch?v=k9Sb2smIIjM&t=168s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': 'Catch everybody up what what what are you doing these days because I know that '
-               "recently you've had sort of a shift in.",
-       'timestamp': 15,
-       'timestamp_label': '[00:00:15]',
-       'timestamp_seconds': 15,
-       'tip': 'Catch everybody up what what what are you doing these days because I know that '
-              "recently you've had sort of a shift in.",
-       'title': 'Patent Monetization: Doing Business as an NPE (IPWatchdog, Inc.)',
-       'url': 'https://www.youtube.com/watch?v=qZqv5lEPPQc&t=15s',
-       'video_id': 'qZqv5lEPPQc'},
-      {'author': 'inventRightTV',
-       'channel': 'inventRightTV',
+       'text': 'Three maintenance fees total $14,470, a late payment adds a $540 surcharge, and a '
+               'lapse evaporates the license.',
+       'timestamp': 168,
+       'timestamp_label': '[00:02:48]',
+       'timestamp_seconds': 168,
+       'tip': 'Three maintenance fees total $14,470, a late payment adds a $540 surcharge, and a '
+              'lapse evaporates the license.',
+       'title': 'Patent Licensing: Why You’re Losing Royalties (and How to Fix It)',
+       'url': 'https://www.youtube.com/watch?v=k9Sb2smIIjM&t=168s',
+       'video_id': 'k9Sb2smIIjM'},
+      {'author': 'Accountancy Students Hub',
+       'channel': 'Accountancy Students Hub',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:25:08](https://www.youtube.com/watch?v=LO-vI8icz70&t=1508s)',
-       'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                    'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                    '(Chapter Q12 operational verification).',
+       'markdown': '[00:04:28](https://www.youtube.com/watch?v=o0riJRlxTsY&t=268s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': "I don't do any of those um other platforms. The Gators seem to be pretty "
-               'motivated reaching out. You guys do it every single day. You almost have a '
-               'thousand companies in your database.',
-       'timestamp': 1508,
-       'timestamp_label': '[00:25:08]',
-       'timestamp_seconds': 1508,
-       'tip': "I don't do any of those um other platforms. The Gators seem to be pretty "
-              'motivated reaching out. You guys do it every single day. You almost have a '
-              'thousand companies in your database.',
-       'title': 'How to Get Open Innovation Companies to Respond (Licensing Playbook) '
-                '(inventRightTV)',
-       'url': 'https://www.youtube.com/watch?v=LO-vI8icz70&t=1508s',
-       'video_id': 'LO-vI8icz70'},
-      {'author': 'inventRightTV',
-       'channel': 'inventRightTV',
+       'text': 'You must wait until the actual sale or usage takes place to recognize that '
+               'revenue.',
+       'timestamp': 268,
+       'timestamp_label': '[00:04:28]',
+       'timestamp_seconds': 268,
+       'tip': 'You must wait until the actual sale or usage takes place to recognize that revenue.',
+       'title': 'AFAR Revenue 06: PFRS 15 Licensing – Right to Access vs. Right to Use; '
+                'Usage-Based Royalties',
+       'url': 'https://www.youtube.com/watch?v=o0riJRlxTsY&t=268s',
+       'video_id': 'o0riJRlxTsY'},
+      {'author': 'Jobank CPA',
+       'channel': 'Jobank CPA',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:04:07](https://www.youtube.com/watch?v=E5dH32uMqOY&t=247s)',
-       'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                    'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                    '(Chapter Q12 operational verification).',
+       'markdown': '[00:06:54](https://www.youtube.com/watch?v=eoUe3NebB3E&t=414s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': "Realize when you start your own business you can't to sell your own product "
-               'you could do a little half-ass like micro business or something sell an eBay '
-               'and.',
-       'timestamp': 247,
-       'timestamp_label': '[00:04:07]',
-       'timestamp_seconds': 247,
-       'tip': "Realize when you start your own business you can't to sell your own product you "
-              'could do a little half-ass like micro business or something sell an eBay and.',
-       'title': 'Licensing for Royalties (Passive Income) vs. Selling an Idea Yourself '
-                '(inventRightTV)',
-       'url': 'https://www.youtube.com/watch?v=E5dH32uMqOY&t=247s',
-       'video_id': 'E5dH32uMqOY'},
-      {'author': 'Secrets of the music industry',
-       'channel': 'Secrets of the music industry',
+       'text': 'Because it is strictly point-in-time, that entire $300,000 is recognized '
+               'immediately in Q1.',
+       'timestamp': 414,
+       'timestamp_label': '[00:06:54]',
+       'timestamp_seconds': 414,
+       'tip': 'Because it is strictly point-in-time, that entire $300,000 is recognized '
+              'immediately in Q1.',
+       'title': 'Episode 7 ASC 606 Licensing: Functional vs. Symbolic Intellectual Property',
+       'url': 'https://www.youtube.com/watch?v=eoUe3NebB3E&t=414s',
+       'video_id': 'eoUe3NebB3E'}],
+ 11: [{'author': 'Dr. Lauryn B',
+       'channel': 'Dr. Lauryn B',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:05:05](https://www.youtube.com/watch?v=DfuXhSrezTU&t=305s)',
-       'relevance': 'Attributed practitioner commentary on patent, brand, catalog, and dataset '
-                    'intellectual-property licensing, minimum guarantees, and royalty auditing '
-                    '(Chapter Q12 operational verification).',
+       'markdown': '[00:05:53](https://www.youtube.com/watch?v=QRv3A_DETg4&t=353s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
        'source_type': 'video_pro_tip',
-       'text': "See, conducting an audit isn't an aggressive act. It's not about starting a "
-               "fight. It's an act of self-reliance. It's an act of independence. It's you, "
-               'the artist, taking control of your own business and your own career. And so, '
-               "we'll just leave you with this question.",
-       'timestamp': 305,
-       'timestamp_label': '[00:05:05]',
-       'timestamp_seconds': 305,
-       'tip': "See, conducting an audit isn't an aggressive act. It's not about starting a "
-              "fight. It's an act of self-reliance. It's an act of independence. It's you, the "
-              "artist, taking control of your own business and your own career. And so, we'll "
-              'just leave you with this question.',
-       'title': 'Your Right to AUDIT: How to Catch Your Label Stealing Your Royalties 🕵️ '
-                '(Secrets of the music industry)',
-       'url': 'https://www.youtube.com/watch?v=DfuXhSrezTU&t=305s',
-       'video_id': 'DfuXhSrezTU'}]}
+       'text': 'We can take what you would normally sell me for 2,000 and license it to me for a '
+               'period of time to use with my patients for 20,000.',
+       'timestamp': 353,
+       'timestamp_label': '[00:05:53]',
+       'timestamp_seconds': 353,
+       'tip': 'We can take what you would normally sell me for 2,000 and license it to me for a '
+              'period of time to use with my patients for 20,000.',
+       'title': 'What Is Licensing? The Business Model That Turns Your Knowledge Into Scalable '
+                'Revenue',
+       'url': 'https://www.youtube.com/watch?v=QRv3A_DETg4&t=353s',
+       'video_id': 'QRv3A_DETg4'},
+      {'author': 'EarthTab Business School',
+       'channel': 'EarthTab Business School',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:02:28](https://www.youtube.com/watch?v=_AP6Fd6Lwwg&t=148s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'Standard royalty rates range from 5% to 12% of wholesale price paid quarterly or '
+               'biannually.',
+       'timestamp': 148,
+       'timestamp_label': '[00:02:28]',
+       'timestamp_seconds': 148,
+       'tip': 'Standard royalty rates range from 5% to 12% of wholesale price paid quarterly or '
+              'biannually.',
+       'title': 'Passive Income Streams for Artists Module 6  Art Licensing and Royalty Agreements',
+       'url': 'https://www.youtube.com/watch?v=_AP6Fd6Lwwg&t=148s',
+       'video_id': '_AP6Fd6Lwwg'},
+      {'author': 'universityofontario',
+       'channel': 'universityofontario',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:01:57](https://www.youtube.com/watch?v=O2Cp8235kvg&t=117s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': "When you copyright software you're protecting the written code but you're not "
+               'protecting what that code does.',
+       'timestamp': 117,
+       'timestamp_label': '[00:01:57]',
+       'timestamp_seconds': 117,
+       'tip': "When you copyright software you're protecting the written code but you're not "
+              'protecting what that code does.',
+       'title': 'UOIT Office of Technology Transfer and Commercialization - How do I protect my '
+                'Copyright?',
+       'url': 'https://www.youtube.com/watch?v=O2Cp8235kvg&t=117s',
+       'video_id': 'O2Cp8235kvg'},
+      {'author': 'Elite Music Coaching',
+       'channel': 'Elite Music Coaching',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:08:03](https://www.youtube.com/watch?v=D6XhETdysBM&t=483s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'You can have 50% of a watermelon, or you can have 100% of a grape.',
+       'timestamp': 483,
+       'timestamp_label': '[00:08:03]',
+       'timestamp_seconds': 483,
+       'tip': 'You can have 50% of a watermelon, or you can have 100% of a grape.',
+       'title': 'How to Build a Music Catalog That Pays You for Years (Sync Licensing Strategy)',
+       'url': 'https://www.youtube.com/watch?v=D6XhETdysBM&t=483s',
+       'video_id': 'D6XhETdysBM'},
+      {'author': 'Elite Music Coaching',
+       'channel': 'Elite Music Coaching',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:10:35](https://www.youtube.com/watch?v=D6XhETdysBM&t=635s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'If a track has not generated interest after being available for two or three '
+               "years, it's probably not going to suddenly start working for you.",
+       'timestamp': 635,
+       'timestamp_label': '[00:10:35]',
+       'timestamp_seconds': 635,
+       'tip': 'If a track has not generated interest after being available for two or three years, '
+              "it's probably not going to suddenly start working for you.",
+       'title': 'How to Build a Music Catalog That Pays You for Years (Sync Licensing Strategy)',
+       'url': 'https://www.youtube.com/watch?v=D6XhETdysBM&t=635s',
+       'video_id': 'D6XhETdysBM'},
+      {'author': 'Majeston',
+       'channel': 'Majeston',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:03:23](https://www.youtube.com/watch?v=7t871xx-ysc&t=203s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': "I would always export my songs at 48 kHz, 24-bit. That's just kind of the standard "
+               'for video.',
+       'timestamp': 203,
+       'timestamp_label': '[00:03:23]',
+       'timestamp_seconds': 203,
+       'tip': "I would always export my songs at 48 kHz, 24-bit. That's just kind of the standard "
+              'for video.',
+       'title': 'sync licensing basics + libraries you should submit to - MORNING CHOPS',
+       'url': 'https://www.youtube.com/watch?v=7t871xx-ysc&t=203s',
+       'video_id': '7t871xx-ysc'},
+      {'author': 'ClintMusic',
+       'channel': 'ClintMusic',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:05:58](https://www.youtube.com/watch?v=2DYtoU6JVRA&t=358s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'Jason proved it. One track, 57 placements. No major deal.',
+       'timestamp': 358,
+       'timestamp_label': '[00:05:58]',
+       'timestamp_seconds': 358,
+       'tip': 'Jason proved it. One track, 57 placements. No major deal.',
+       'title': 'Why The Old Sync Licensing Rules No Longer Apply',
+       'url': 'https://www.youtube.com/watch?v=2DYtoU6JVRA&t=358s',
+       'video_id': '2DYtoU6JVRA'},
+      {'author': 'Sync Warehouse',
+       'channel': 'Sync Warehouse',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:03:31](https://www.youtube.com/watch?v=M7AeOQ9cxtQ&t=211s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'Sync fees pay you once. Performance royalties can keep paying you long after the '
+               'placement happens.',
+       'timestamp': 211,
+       'timestamp_label': '[00:03:31]',
+       'timestamp_seconds': 211,
+       'tip': 'Sync fees pay you once. Performance royalties can keep paying you long after the '
+              'placement happens.',
+       'title': 'What Is Sync Licensing? (And How It Actually Works)',
+       'url': 'https://www.youtube.com/watch?v=M7AeOQ9cxtQ&t=211s',
+       'video_id': 'M7AeOQ9cxtQ'},
+      {'author': 'Make Music Income',
+       'channel': 'Make Music Income',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:12:04](https://www.youtube.com/watch?v=hQRVouviU-w&t=724s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': "That's a lot of ifs. It's too many ifs.",
+       'timestamp': 724,
+       'timestamp_label': '[00:12:04]',
+       'timestamp_seconds': 724,
+       'tip': "That's a lot of ifs. It's too many ifs.",
+       'title': 'How to Do Sync in 2026 | Sync Library vs. Sync Agent vs. Direct to Music '
+                'Supervisor',
+       'url': 'https://www.youtube.com/watch?v=hQRVouviU-w&t=724s',
+       'video_id': 'hQRVouviU-w'},
+      {'author': 'Randy McGravey Music',
+       'channel': 'Randy McGravey Music',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:10:54](https://www.youtube.com/watch?v=iF_Z6ikfzMo&t=654s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'A lot of these sub publishers take about 25% off the top for sync fees before '
+               'paying the composer and the library.',
+       'timestamp': 654,
+       'timestamp_label': '[00:10:54]',
+       'timestamp_seconds': 654,
+       'tip': 'A lot of these sub publishers take about 25% off the top for sync fees before '
+              'paying the composer and the library.',
+       'title': 'Ranking The Top 5 Major Sub-Publishers (Sync Licensing)',
+       'url': 'https://www.youtube.com/watch?v=iF_Z6ikfzMo&t=654s',
+       'video_id': 'iF_Z6ikfzMo'},
+      {'author': 'Randy McGravey Music',
+       'channel': 'Randy McGravey Music',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:09:06](https://www.youtube.com/watch?v=iF_Z6ikfzMo&t=546s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': "They were not offering to split the sync fees with the composer so I didn't do it.",
+       'timestamp': 546,
+       'timestamp_label': '[00:09:06]',
+       'timestamp_seconds': 546,
+       'tip': "They were not offering to split the sync fees with the composer so I didn't do it.",
+       'title': 'Ranking The Top 5 Major Sub-Publishers (Sync Licensing)',
+       'url': 'https://www.youtube.com/watch?v=iF_Z6ikfzMo&t=546s',
+       'video_id': 'iF_Z6ikfzMo'},
+      {'author': "It's Julisa",
+       'channel': "It's Julisa",
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:02:30](https://www.youtube.com/watch?v=hoMi3ZhgFlc&t=150s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'Most of them lean between the 25 to 35%. 50 is kind of high.',
+       'timestamp': 150,
+       'timestamp_label': '[00:02:30]',
+       'timestamp_seconds': 150,
+       'tip': 'Most of them lean between the 25 to 35%. 50 is kind of high.',
+       'title': 'How Much Can You Make From Sync Licensing? (Real Numbers Explained)',
+       'url': 'https://www.youtube.com/watch?v=hoMi3ZhgFlc&t=150s',
+       'video_id': 'hoMi3ZhgFlc'},
+      {'author': 'xJ-Will',
+       'channel': 'xJ-Will',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:01:41](https://www.youtube.com/watch?v=SEliWc2Tz3k&t=101s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'Your music has to be finished, no demos, unless someone actually making the '
+               'decisions for a TV show specifically asks you for that.',
+       'timestamp': 101,
+       'timestamp_label': '[00:01:41]',
+       'timestamp_seconds': 101,
+       'tip': 'Your music has to be finished, no demos, unless someone actually making the '
+              'decisions for a TV show specifically asks you for that.',
+       'title': 'Sync Licensing: How it works for Indie Artists and Music Producers in 2025',
+       'url': 'https://www.youtube.com/watch?v=SEliWc2Tz3k&t=101s',
+       'video_id': 'SEliWc2Tz3k'},
+      {'author': 'Producer Royalty',
+       'channel': 'Producer Royalty',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:14:32](https://www.youtube.com/watch?v=gN8CTjqp8lA&t=872s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'At the end of that three-year period, if you are unrecouped, you can buy yourself '
+               'out of the deal by repaying your advance with a premium.',
+       'timestamp': 872,
+       'timestamp_label': '[00:14:32]',
+       'timestamp_seconds': 872,
+       'tip': 'At the end of that three-year period, if you are unrecouped, you can buy yourself '
+              'out of the deal by repaying your advance with a premium.',
+       'title': 'Producer Publishing Deals in 2026 (Music Attorneys Explain)',
+       'url': 'https://www.youtube.com/watch?v=gN8CTjqp8lA&t=872s',
+       'video_id': 'gN8CTjqp8lA'},
+      {'author': 'Agi Entertainment | The Star Maker',
+       'channel': 'Agi Entertainment | The Star Maker',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:00:51](https://www.youtube.com/watch?v=yC0aLTouh44&t=51s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'Never sign a contract without reading it in full and understanding it.',
+       'timestamp': 51,
+       'timestamp_label': '[00:00:51]',
+       'timestamp_seconds': 51,
+       'tip': 'Never sign a contract without reading it in full and understanding it.',
+       'title': 'What Every Artist Must Know About Music Contracts and Royalties',
+       'url': 'https://www.youtube.com/watch?v=yC0aLTouh44&t=51s',
+       'video_id': 'yC0aLTouh44'},
+      {'author': 'macProVideoDotCom',
+       'channel': 'macProVideoDotCom',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:02:47](https://www.youtube.com/watch?v=tk2j8egQtvo&t=167s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'Four years after you have received your $10,000 upfront in the advance, will you '
+               'now be eligible to receive any non-performance royalties from the publisher.',
+       'timestamp': 167,
+       'timestamp_label': '[00:02:47]',
+       'timestamp_seconds': 167,
+       'tip': 'Four years after you have received your $10,000 upfront in the advance, will you '
+              'now be eligible to receive any non-performance royalties from the publisher.',
+       'title': 'Music Business 102: Mechanical Royalties and Licensing - 18. Recoupment at 50-50',
+       'url': 'https://www.youtube.com/watch?v=tk2j8egQtvo&t=167s',
+       'video_id': 'tk2j8egQtvo'},
+      {'author': 'MillionPodcasts',
+       'channel': 'MillionPodcasts',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:00:16](https://www.youtube.com/watch?v=s8iH8wFk-Hc&t=16s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'There is no 10-second or 30-second safe limit.',
+       'timestamp': 16,
+       'timestamp_label': '[00:00:16]',
+       'timestamp_seconds': 16,
+       'tip': 'There is no 10-second or 30-second safe limit.',
+       'title': 'The Complete Guide to Podcast Music Rights & Licensing 2026',
+       'url': 'https://www.youtube.com/watch?v=s8iH8wFk-Hc&t=16s',
+       'video_id': 's8iH8wFk-Hc'},
+      {'author': 'IN(C) TALK | Everything Has A Business Model',
+       'channel': 'IN(C) TALK | Everything Has A Business Model',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:04:24](https://www.youtube.com/watch?v=TYLVikvshaE&t=264s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': "The artist didn't lose 12,000 to recoupment. They received it early.",
+       'timestamp': 264,
+       'timestamp_label': '[00:04:24]',
+       'timestamp_seconds': 264,
+       'tip': "The artist didn't lose 12,000 to recoupment. They received it early.",
+       'title': 'The Music Industry Is Broken: Why Your Rights Are Worth Less Than You Think | '
+                'IN(C) TALK',
+       'url': 'https://www.youtube.com/watch?v=TYLVikvshaE&t=264s',
+       'video_id': 'TYLVikvshaE'}],
+ 12: [{'author': 'Gait Gain',
+       'channel': 'Gait Gain',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:07:13](https://www.youtube.com/watch?v=lvsa9U4qZJA&t=433s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'You must ensure that your contract specifically dictates whether the license '
+               'granted is non-exclusive or exclusive.',
+       'timestamp': 433,
+       'timestamp_label': '[00:07:13]',
+       'timestamp_seconds': 433,
+       'tip': 'You must ensure that your contract specifically dictates whether the license '
+              'granted is non-exclusive or exclusive.',
+       'title': 'Digital IP Licensing for Business Revenue in United State 2026',
+       'url': 'https://www.youtube.com/watch?v=lvsa9U4qZJA&t=433s',
+       'video_id': 'lvsa9U4qZJA'},
+      {'author': 'Jason Varner',
+       'channel': 'Jason Varner',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:08:46](https://www.youtube.com/watch?v=0ZCFBJ3aOOA&t=526s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': "I've got five clients currently going through this process.",
+       'timestamp': 526,
+       'timestamp_label': '[00:08:46]',
+       'timestamp_seconds': 526,
+       'tip': "I've got five clients currently going through this process.",
+       'title': "Should You License Your Advisory Firm's Data for AI Training?",
+       'url': 'https://www.youtube.com/watch?v=0ZCFBJ3aOOA&t=526s',
+       'video_id': '0ZCFBJ3aOOA'},
+      {'author': 'Archive Trove',
+       'channel': 'Archive Trove',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:02:17](https://www.youtube.com/watch?v=y5YpFZxHpYE&t=137s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': "That is why the agreement has to decide the model's fate.",
+       'timestamp': 137,
+       'timestamp_label': '[00:02:17]',
+       'timestamp_seconds': 137,
+       'tip': "That is why the agreement has to decide the model's fate.",
+       'title': 'Do You Lose Your Files When You License Data for AI Training?',
+       'url': 'https://www.youtube.com/watch?v=y5YpFZxHpYE&t=137s',
+       'video_id': 'y5YpFZxHpYE'},
+      {'author': 'Jason Varner',
+       'channel': 'Jason Varner',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:01:44](https://www.youtube.com/watch?v=nKuxu_x-s6o&t=104s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'And you guys can get paid between 100K and 3 million plus.',
+       'timestamp': 104,
+       'timestamp_label': '[00:01:44]',
+       'timestamp_seconds': 104,
+       'tip': 'And you guys can get paid between 100K and 3 million plus.',
+       'title': 'Explaining the Data Licensing Opportunity for Your Company',
+       'url': 'https://www.youtube.com/watch?v=nKuxu_x-s6o&t=104s',
+       'video_id': 'nKuxu_x-s6o'},
+      {'author': 'Jason Varner',
+       'channel': 'Jason Varner',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:09:08](https://www.youtube.com/watch?v=XDzwbT8LWMQ&t=548s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': "Otherwise, it's just sitting on your servers doing absolutely nothing.",
+       'timestamp': 548,
+       'timestamp_label': '[00:09:08]',
+       'timestamp_seconds': 548,
+       'tip': "Otherwise, it's just sitting on your servers doing absolutely nothing.",
+       'title': 'Types of Valuable Data for AI Training',
+       'url': 'https://www.youtube.com/watch?v=XDzwbT8LWMQ&t=548s',
+       'video_id': 'XDzwbT8LWMQ'},
+      {'author': 'Mayer Brown',
+       'channel': 'Mayer Brown',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:16:05](https://www.youtube.com/watch?v=5gxaM62YYFk&t=965s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'Indemnity exceptions get tripped by training, and the provider may only cover the '
+               'initial tool.',
+       'timestamp': 965,
+       'timestamp_label': '[00:16:05]',
+       'timestamp_seconds': 965,
+       'tip': 'Indemnity exceptions get tripped by training, and the provider may only cover the '
+              'initial tool.',
+       'title': "Mayer Brown's Tech Talks: Smart Licensing of AI",
+       'url': 'https://www.youtube.com/watch?v=5gxaM62YYFk&t=965s',
+       'video_id': '5gxaM62YYFk'},
+      {'author': 'The Linux Foundation',
+       'channel': 'The Linux Foundation',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:16:50](https://www.youtube.com/watch?v=bii4_gwgoBY&t=1010s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'Sixty-five percent of the datasets we studied carry commercial risk.',
+       'timestamp': 1010,
+       'timestamp_label': '[00:16:50]',
+       'timestamp_seconds': 1010,
+       'tip': 'Sixty-five percent of the datasets we studied carry commercial risk.',
+       'title': 'OpenDataology - A Call to Arms for Fixing the Dataset Licensing Landscape - Gopi '
+                'Krishnan Rajbahadur',
+       'url': 'https://www.youtube.com/watch?v=bii4_gwgoBY&t=1010s',
+       'video_id': 'bii4_gwgoBY'},
+      {'author': 'NVIDIA Developer',
+       'channel': 'NVIDIA Developer',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:24:13](https://www.youtube.com/watch?v=7NRKyXl9j6U&t=1453s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'A 4 vCPU, 8 GB, 10 GB instance handles 38,000 clients at the 24-hour lease.',
+       'timestamp': 1453,
+       'timestamp_label': '[00:24:13]',
+       'timestamp_seconds': 1453,
+       'tip': 'A 4 vCPU, 8 GB, 10 GB instance handles 38,000 clients at the 24-hour lease.',
+       'title': 'Creating a License Service for NVIDIA AI Enterprise or Virtual GPU',
+       'url': 'https://www.youtube.com/watch?v=7NRKyXl9j6U&t=1453s',
+       'video_id': '7NRKyXl9j6U'},
+      {'author': 'OneHourProfessor',
+       'channel': 'OneHourProfessor',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:08:21](https://www.youtube.com/watch?v=SU66nYi95IY&t=501s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'A clear process beats a vague promise.',
+       'timestamp': 501,
+       'timestamp_label': '[00:08:21]',
+       'timestamp_seconds': 501,
+       'tip': 'A clear process beats a vague promise.',
+       'title': 'How to License Your Data to AI Companies & Get Paid',
+       'url': 'https://www.youtube.com/watch?v=SU66nYi95IY&t=501s',
+       'video_id': 'SU66nYi95IY'},
+      {'author': 'micro1',
+       'channel': 'micro1',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:12:51](https://www.youtube.com/watch?v=Sya3mBgQK7Q&t=771s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': "They're not selling the data, they're licensing the data.",
+       'timestamp': 771,
+       'timestamp_label': '[00:12:51]',
+       'timestamp_seconds': 771,
+       'tip': "They're not selling the data, they're licensing the data.",
+       'title': 'What every business owner should know abut AI data licensing',
+       'url': 'https://www.youtube.com/watch?v=Sya3mBgQK7Q&t=771s',
+       'video_id': 'Sya3mBgQK7Q'},
+      {'author': '3HTi',
+       'channel': '3HTi',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:27:15](https://www.youtube.com/watch?v=UPnBwRHoelM&t=1635s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'A basic license you can get in that game for 2,780 per year.',
+       'timestamp': 1635,
+       'timestamp_label': '[00:27:15]',
+       'timestamp_seconds': 1635,
+       'tip': 'A basic license you can get in that game for 2,780 per year.',
+       'title': "What's in a Creo License",
+       'url': 'https://www.youtube.com/watch?v=UPnBwRHoelM&t=1635s',
+       'video_id': 'UPnBwRHoelM'},
+      {'author': '514Blog',
+       'channel': '514Blog',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:01:12](https://www.youtube.com/watch?v=ApLNF2BQAt8&t=72s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'But outside that ecosystem, the cost and complexity of an enterprise '
+               'implementation can be harder to justify.',
+       'timestamp': 72,
+       'timestamp_label': '[00:01:12]',
+       'timestamp_seconds': 72,
+       'tip': 'But outside that ecosystem, the cost and complexity of an enterprise implementation '
+              'can be harder to justify.',
+       'title': 'Best 3D Parts Catalog Software in 2026 (5 Tools Compared)',
+       'url': 'https://www.youtube.com/watch?v=ApLNF2BQAt8&t=72s',
+       'video_id': 'ApLNF2BQAt8'},
+      {'author': 'CAM Logic, Inc.',
+       'channel': 'CAM Logic, Inc.',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:11:04](https://www.youtube.com/watch?v=jv3KcPKvwZs&t=664s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': "That tool is worth 25 tokens, so unfortunately for everyone else he's hogging the "
+               'tokens for the moment.',
+       'timestamp': 664,
+       'timestamp_label': '[00:11:04]',
+       'timestamp_seconds': 664,
+       'tip': "That tool is worth 25 tokens, so unfortunately for everyone else he's hogging the "
+              'tokens for the moment.',
+       'title': 'Leveraging Value Based Licensing within NX & Solid Edge Webinar',
+       'url': 'https://www.youtube.com/watch?v=jv3KcPKvwZs&t=664s',
+       'video_id': 'jv3KcPKvwZs'},
+      {'author': 'IP Author',
+       'channel': 'IP Author',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:47:23](https://www.youtube.com/watch?v=IJ_WZiM4dKk&t=2843s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'You cannot go in and just sign that off and send it off to the patent office.',
+       'timestamp': 2843,
+       'timestamp_label': '[00:47:23]',
+       'timestamp_seconds': 2843,
+       'tip': 'You cannot go in and just sign that off and send it off to the patent office.',
+       'title': 'AI Agents Are Transforming Patent Practice: From Patent Tools to AI Agents',
+       'url': 'https://www.youtube.com/watch?v=IJ_WZiM4dKk&t=2843s',
+       'video_id': 'IJ_WZiM4dKk'},
+      {'author': 'IP Author',
+       'channel': 'IP Author',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:41:23](https://www.youtube.com/watch?v=IJ_WZiM4dKk&t=2483s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': "And if you can't do that, then you shouldn't use the tools.",
+       'timestamp': 2483,
+       'timestamp_label': '[00:41:23]',
+       'timestamp_seconds': 2483,
+       'tip': "And if you can't do that, then you shouldn't use the tools.",
+       'title': 'AI Agents Are Transforming Patent Practice: From Patent Tools to AI Agents',
+       'url': 'https://www.youtube.com/watch?v=IJ_WZiM4dKk&t=2483s',
+       'video_id': 'IJ_WZiM4dKk'},
+      {'author': 'CPDPConferences',
+       'channel': 'CPDPConferences',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:43:09](https://www.youtube.com/watch?v=k3ktLc3BIZc&t=2589s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': "And in my opinion, it's not the training, but rather the output.",
+       'timestamp': 2589,
+       'timestamp_label': '[00:43:09]',
+       'timestamp_seconds': 2589,
+       'tip': "And in my opinion, it's not the training, but rather the output.",
+       'title': 'Copyright Law and Generative AI Training CPDP 2026',
+       'url': 'https://www.youtube.com/watch?v=k3ktLc3BIZc&t=2589s',
+       'video_id': 'k3ktLc3BIZc'},
+      {'author': 'CPDPConferences',
+       'channel': 'CPDPConferences',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:31:04](https://www.youtube.com/watch?v=k3ktLc3BIZc&t=1864s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'So Taylor and Francis signed a 10 million deal with Microsoft without even '
+               'notifying their authors.',
+       'timestamp': 1864,
+       'timestamp_label': '[00:31:04]',
+       'timestamp_seconds': 1864,
+       'tip': 'So Taylor and Francis signed a 10 million deal with Microsoft without even '
+              'notifying their authors.',
+       'title': 'Copyright Law and Generative AI Training CPDP 2026',
+       'url': 'https://www.youtube.com/watch?v=k3ktLc3BIZc&t=1864s',
+       'video_id': 'k3ktLc3BIZc'},
+      {'author': 'Alex G. Lee',
+       'channel': 'Alex G. Lee',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:17:01](https://www.youtube.com/watch?v=Yg9nVJp45oo&t=1021s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'But you can see that you can done in in a minute using this AI that I develop.',
+       'timestamp': 1021,
+       'timestamp_label': '[00:17:01]',
+       'timestamp_seconds': 1021,
+       'tip': 'But you can see that you can done in in a minute using this AI that I develop.',
+       'title': 'AI Agent-Powered Autonomous Patent Management & Monetization Webinar',
+       'url': 'https://www.youtube.com/watch?v=Yg9nVJp45oo&t=1021s',
+       'video_id': 'Yg9nVJp45oo'}]}

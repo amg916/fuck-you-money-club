@@ -1,659 +1,823 @@
 from __future__ import annotations
 
-CHAPTER_6 = {
-    "id": "Q6",
-    "chapter_id": "Q6",
-    "chapter_number": 6,
-    "question_number": 6,
-    "slug": "sourcing-demand-mining-landing-first-deals",
-    "question_prompt": "Where do high-margin deals, clients, or undervalued assets hide in high-ticket brokerage, and what repeatable outbound/inbound sourcing system lands the first 3-to-10 wins (3–12 months)?",
-    "kicker": "Q6 / THE BIG MONEY PLAYBOOKS",
-    "title": "Sourcing, Demand Mining & Landing Your First Deals",
-    "subtitle": "UCC Filing Signals, Verified Buyer Mandates, Easement Rights, Exclusive Engagements & Escrow-Funded Commissions",
-    "layout_template": "step_by_step_sop",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #26, High-Ticket Brokerage, ranks #10 with an 88/100 Money-to-Manpower "
-        "Score across 21 mapped plays. The sourcing advantage comes from documented "
-        "transaction pressure, verified buyer demand, and defensible rights—not larger "
-        "contact lists. This chapter operationalizes UCC financing triggers and cell-tower, "
-        "rooftop, and billboard rights separation, then connects both to qualification, "
-        "exclusive mandates, controlled introductions, and escrow closings. Build toward "
-        "the first 3–10 completed transactions over 3–12 months using explicit funnel "
-        "assumptions rather than promised conversion rates. Canonical annual owner profit "
-        "is $25,000 Conservative, $206,250 Base, and $500,000 Scaled. Recognized revenue "
-        "means retained transaction commissions only; asset purchase prices, financing "
-        "principal, and client funds never become brokerage revenue."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$100,000",
-            "context": "Annual retained transaction commissions; underlying asset values excluded",
-            "note": "25% net margin; $25,000 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Base",
-            "value": "$550,000",
-            "context": "Annual retained transaction commissions; underlying asset values excluded",
-            "note": "37.5% net margin; $206,250 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$1,000,000",
-            "context": "Annual retained transaction commissions; underlying asset values excluded",
-            "note": "50% net margin; $500,000 annual owner net profit; 2 FT + 4 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Mine transaction pressure without mistaking public records for proof",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Start with one asset class, one jurisdiction, and one executable buyer "
-                    "mandate. A mandate means written acquisition criteria, ticket range, "
-                    "funding evidence, decision-maker access, and an agreed diligence path; "
-                    "a buyer saying they buy everything is not demand. Interview ten "
-                    "specialist buyers before purchasing a contact database. Ask which "
-                    "rejected opportunities would become executable after a specific "
-                    "documentation repair, price adjustment, or rights clarification. "
-                    "Record those answers in Airtable or HubSpot as searchable constraints, "
-                    "not narrative meeting notes. Build separate fields for geography, "
-                    "asset type, minimum remaining term, acceptable tenant concentration, "
-                    "lien tolerance, and maximum diligence duration. Mine state Secretary "
-                    "of State records, county recorder indexes, assessor ownership data, "
-                    "local permit records, and owner-authorized operating statements "
-                    "against that demand. Record the source URL, retrieval date, legal "
-                    "entity, and the exact observation supporting outreach. A permit "
-                    "application is evidence of an application, not proof of an approved "
-                    "project. A mailing address is not proof of signing authority. Deduplicate "
-                    "by entity identifier and parcel or collateral identifier before "
-                    "enriching contacts. This prevents three contractors from repeatedly "
-                    "approaching the same owner under slightly different entity names "
-                    "and makes the eventual introduction history defensible."
-                ),
-                (
-                    "For ucc1_expiration_refi_trigger_arbitrage, monitor initial UCC-1 "
-                    "financing statements, amendments, and continuations through official "
-                    "state search systems or licensed record providers. Build a dated "
-                    "watchlist, then test whether businesses four to nine months beyond "
-                    "a filing actually have costly MCA obligations or equipment notes. "
-                    "The filing does not establish advance date, payoff balance, pricing, "
-                    "payment burden, or contractual maturity. Under UCC § 9-515, the "
-                    "ordinary financing statement lasts five years, subject to exceptions, "
-                    "and continuation normally occurs within the final six months; "
-                    "neither event proves a near-term debt maturity. Multiple filings "
-                    "can represent amendments, purchase-money interests, or legitimate "
-                    "separate collateral rather than stacked advances. Obtain owner "
-                    "authorization, current agreements, payment schedules, bank evidence, "
-                    "and payoff letters before discussing consolidation economics. "
-                    "Illustratively, 100 screened entities producing 20 conversations, "
-                    "eight authorized reviews, four executable offers, and two funded "
-                    "transactions at $7,500 retained compensation yield $15,000 operator "
-                    "revenue. The funded principal remains lender or client volume. "
-                    "Use that bridge only where the compensation structure and activity "
-                    "are permitted. If automated channels or a proposed product fail "
-                    "the jurisdictional review, revert to direct mail, B2B work-email "
-                    "sequences, and manual human-dialed outreach with applicable state "
-                    "commercial financing disclosures."
-                ),
-                (
-                    "For cell_tower_billboard_easement_strip_out, search recorded leases, "
-                    "memoranda, access easements, permit histories, and assessor ownership "
-                    "records for sites matching actual infrastructure buyers. The "
-                    "opportunity is separating assignable access and rent rights from "
-                    "the land, not treating every rent stream as freely transferable. "
-                    "Request the executed lease, amendments, rent ledger, site plan, "
-                    "lender documents, and title commitment. Identify tenant termination "
-                    "rights, relocation provisions, assignment restrictions, purchase "
-                    "options, rights of first refusal, and mortgagee consent requirements. "
-                    "Illustratively, $60,000 annual contractual rent multiplied by an "
-                    "assumed eight-times pricing factor produces a $480,000 proposed "
-                    "rights purchase price, not an appraisal or brokerage revenue. "
-                    "A five-percent commission equals $24,000 gross; a $6,000 authorized "
-                    "co-broker share leaves $18,000 retained revenue before operating "
-                    "costs. Compare that proposal with retaining the lease, including "
-                    "rent escalation, termination exposure, taxes, and residual property "
-                    "value. A perpetual burden can obstruct redevelopment long after "
-                    "the current tenant leaves. If assignment, lender consent, or "
-                    "residual-value economics fail, retain the lease or negotiate a "
-                    "narrower term-limited assignment with all required approvals. "
-                    "Package the rights diagram before the marketing brochure: buyers "
-                    "price enforceable access, revenue durability, and exit constraints, "
-                    "not aerial photographs alone."
-                ),
-            ],
-            "table": {
-                "caption": "Public-Record Signals Translated into Verifiable Brokerage Opportunities",
-                "headers": [
-                    "Signal and source",
-                    "Executable demand hypothesis",
-                    "Required verification evidence",
-                    "Failure response and next action",
-                ],
-                "rows": [
-                    [
-                        "Initial UCC financing statement retrieved from official state records",
-                        "Operating company may benefit from a documented obligation review",
-                        "Signed agreements, payment schedules, current balances, and owner authorization",
-                        "Exclude stale obligations before discussing any replacement financing product",
-                    ],
-                    [
-                        "Several secured parties appearing against one normalized debtor entity",
-                        "Payment burden may justify examining permitted consolidation alternatives",
-                        "Collateral descriptions and payoff letters distinguishing separate secured obligations",
-                        "Reject stacking assumptions until actual repayment commitments are reconciled",
-                    ],
-                    [
-                        "Continuation filing approaching ordinary five-year financing statement expiration",
-                        "Existing secured relationship may support a timely owner conversation",
-                        "Contractual maturity schedule verified independently from public filing dates",
-                        "Describe filing maintenance accurately without manufacturing imminent default pressure",
-                    ],
-                    [
-                        "Recorded tower lease memorandum attached to an identified parcel",
-                        "Specialist infrastructure buyer may purchase assignable site revenue rights",
-                        "Executed lease amendments plus access plan and assignment restrictions",
-                        "Retain existing lease when assignment economics or approvals fail",
-                    ],
-                    [
-                        "Billboard permit history combined with recorded landowner lease documents",
-                        "Outdoor advertising buyer may value durable permitted site occupancy",
-                        "Current permit status, rent ledger, termination clauses, and title exceptions",
-                        "Remove suspended locations until operating rights are independently established",
-                    ],
-                    [
-                        "Owner succession announcement paired with a verified specialist buyer",
-                        "Controlled business transfer may solve a documented ownership transition",
-                        "Seller authority, transaction perimeter, reliable earnings, and buyer funding",
-                        "Pause introductions when securities or asset licensing requirements remain unresolved",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Buy evidence before buying more leads",
-                "body": "The strongest sourcing edge is identifying the document that changes a buyer's decision before competitors request it.",
-                "items": [
-                    "Ask infrastructure buyers for three recently rejected sites and code the exact lease clause, access defect, or tenant concentration that killed each bid.",
-                    "Save UCC filing images alongside normalized records; an amendment can explain an apparent second lender before an embarrassing owner call.",
-                    "Attach a parcel-level rights sketch showing access, utilities, retained land, and proposed burden so the owner can evaluate residual property consequences.",
-                    "Negotiate introduction registration and a named preexisting-contact schedule before releasing identities; a generic NCNDA is weaker than a documented introduction trail.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Qualify economic fit, authority, and legal execution before outreach scales",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Use a 100-point qualification scorecard that measures executable "
-                    "transactions rather than curiosity. Allocate twenty points each "
-                    "to seller authority and rights, buyer fit and funding, and economic "
-                    "headroom; allocate fifteen each to document readiness and timing, "
-                    "and ten to counterparty responsiveness. Give points only for "
-                    "evidence linked in the deal record. Economic headroom means a "
-                    "price and fee structure that survives payoff obligations, required "
-                    "repairs, taxes identified by the parties' advisers, and realistic "
-                    "closing costs. It does not mean multiplying the owner's desired "
-                    "price by an attractive commission percentage. Require seventy-five "
-                    "points before proposing exclusivity, with hard stops for missing "
-                    "authority, prohibited compensation, or an unexecutable rights "
-                    "transfer regardless of total score. A seventy-point opportunity "
-                    "can stay in nurture with a named missing document and next review "
-                    "date. A ninety-point opportunity with a forged signature cannot "
-                    "advance. For buyers, inspect evidence proportionate to transaction "
-                    "size: a current bank or financing letter, acquisition history, "
-                    "named investment decision-maker, and a credible source-of-funds "
-                    "explanation. Share sensitive records only through permissioned "
-                    "deal rooms. Give contractors redacted diligence tasks instead "
-                    "of unrestricted access to the owner's complete banking history."
-                ),
-                (
-                    "Map the service to the asset and jurisdiction before quoting "
-                    "fees. California Business and Professions Code § 10131 illustrates "
-                    "why compensated negotiation of real-property interests and certain "
-                    "secured loans can require a real estate broker license. Other "
-                    "states draw different boundaries. A transaction involving company "
-                    "securities raises Exchange Act registration questions; the federal "
-                    "M&A broker exemption in 15 U.S.C. § 78o(b)(13) has eligibility "
-                    "conditions and exclusions, including restrictions involving custody "
-                    "and passive buyers. It is not blanket permission for securities "
-                    "introductions, and state requirements still need separate analysis. "
-                    "For commercial financing, map provider, broker, product, recipient "
-                    "location, transaction size, and exemptions to applicable rules "
-                    "such as California Financial Code §§ 22800–22805 and New York "
-                    "Financial Services Law Article 8. Preserve required disclosures "
-                    "at the applicable offer stage; a later signature cannot repair "
-                    "every earlier omission. Keep client money with the appropriately "
-                    "authorized escrow or closing provider, not the sourcing contractor. "
-                    "Assign one accountable professional to document the operating "
-                    "route before work begins. If the route requires a licensed "
-                    "partner, establish permitted responsibilities and compensation "
-                    "in writing; merely calling a commission a consulting fee does "
-                    "not change the underlying regulated activity."
-                ),
-                (
-                    "Secure a narrow exclusive mandate only after the owner understands "
-                    "the proposed transaction. Specify the asset or rights being "
-                    "marketed, term, territory, fee basis, earned-fee event, payment "
-                    "instructions, expenses, and termination process. Define whether "
-                    "the commission uses gross consideration, specified proceeds, "
-                    "or another negotiated base; never silently count assumed debt "
-                    "twice. Attach existing buyer exclusions and a finite tail "
-                    "covering documented introductions, with the required notice "
-                    "procedure. Use an NCNDA to describe permitted use of information, "
-                    "protected introductions, confidentiality duration, and dispute "
-                    "terms, while recognizing that enforceability depends on drafting "
-                    "and governing law. It does not replace licensing, a fee agreement, "
-                    "or proof that an introduction caused the protected transaction. "
-                    "Get the owner's authority documents before distributing an "
-                    "identifiable teaser. For easements, identify every required "
-                    "landowner, lender, tenant, and superior-interest approval. For "
-                    "M&A, distinguish asset sale from equity sale before soliciting "
-                    "buyers. Put counterparty identities, introduction timestamps, "
-                    "signed acknowledgments, and document versions in the CRM. "
-                    "When a buyer insists they already know the seller, request "
-                    "dated evidence and resolve the exclusion before revealing "
-                    "new diligence. Protect the relationship through precise "
-                    "boundaries, not threats about a document neither party has read."
-                ),
-            ],
-            "table": {
-                "caption": "Evidence-Weighted Qualification and Mandatory Stop Conditions",
-                "headers": [
-                    "Scoring category",
-                    "Evidence required for full credit",
-                    "Advancement decision",
-                    "Repair path when evidence fails",
-                ],
-                "rows": [
-                    [
-                        "Twenty points for seller authority and transferable ownership rights",
-                        "Entity resolutions and title evidence identify every necessary signatory",
-                        "Advance only when proposed rights can actually be conveyed",
-                        "Obtain missing consents or narrow the proposed transaction perimeter",
-                    ],
-                    [
-                        "Twenty points for buyer fit and credible funding capacity",
-                        "Written acquisition criteria align with independently reviewed funding evidence",
-                        "Introduce only buyers matching asset constraints and purchase size",
-                        "Replace speculative buyers before exposing sensitive owner operating information",
-                    ],
-                    [
-                        "Twenty points for sufficient transaction economics after required deductions",
-                        "Indicative consideration exceeds payoff obligations and supported closing costs",
-                        "Proceed when the owner accepts a documented proceeds bridge",
-                        "Reprice terms or stop when required proceeds remain unattainable",
-                    ],
-                    [
-                        "Fifteen points for organized and internally consistent diligence documents",
-                        "Current agreements reconcile with payment records and identified exceptions",
-                        "Release controlled diligence only after material contradictions are resolved",
-                        "Assign document repair tasks with named owners and deadlines",
-                    ],
-                    [
-                        "Fifteen points for timing supported by actual transaction milestones",
-                        "Seller objectives and buyer review capacity support a shared calendar",
-                        "Prioritize opportunities with a credible executable closing window",
-                        "Move distant opportunities into dated nurture rather than active forecasting",
-                    ],
-                    [
-                        "Ten points for responsive counterparties completing agreed next actions",
-                        "Decision-makers return requested evidence and attend substantive scheduled meetings",
-                        "Retain active status when responsibilities and deadlines remain credible",
-                        "Suspend stalled records until the missing decision-maker reengages directly",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four checks before identifiable deal circulation",
-                "body": "A high score cannot override a missing operating permission, signing authority, or enforceable transfer path.",
-                "items": [
-                    "Verify the applicable asset, financing, real estate, and securities operating route, including required licenses and any exemption conditions.",
-                    "Verify seller authority, transfer restrictions, superior liens, tenant rights, and every consent necessary for the proposed transaction.",
-                    "Verify buyer acquisition criteria, decision authority, funding evidence, and agreement to the controlled diligence process.",
-                    "Verify the signed mandate, permitted compensation, introduction exclusions, disclosure responsibilities, and independently confirmed closing-provider instructions.",
-                ],
-            },
-        },
-        {
-            "heading": "3. Run an evidence-led cadence that converts attention into signed mandates",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Run a twelve-business-day cadence around one verified observation "
-                    "and one low-friction next step. On day one, send a short work-email "
-                    "message explaining the public-record observation without claiming "
-                    "to know private debt terms. Offer a fifteen-minute fit check or "
-                    "a one-page document list. On day three, make a manual human-dialed "
-                    "call after required suppression and jurisdiction checks. On day "
-                    "five, send a brief LinkedIn message through normal platform "
-                    "features; do not scrape restricted profiles or manufacture "
-                    "familiarity. On day eight, mail a tailored letter when the "
-                    "opportunity justifies postage and research expense. On day "
-                    "twelve, close the loop with a specific reason to reconnect, "
-                    "then move the record to permission-based or otherwise permitted "
-                    "nurture. Stop immediately when the recipient objects. Commercial "
-                    "email must follow 15 U.S.C. § 7704, including accurate routing "
-                    "information, required identification, a valid postal address, "
-                    "and a functioning opt-out honored within the statutory period. "
-                    "A business contact can use a personal mobile number; manual "
-                    "dialing does not erase all federal or state calling obligations. "
-                    "Avoid prerecorded voice, automated texts, and recording calls "
-                    "until the relevant requirements are established. Measure unique "
-                    "contacts and conversations, not inflated counts of repeated touches."
-                ),
-                (
-                    "Treat funnel benchmarks as testable planning assumptions, not "
-                    "published market averages. Begin with 1,000 raw records, retain "
-                    "600 after source and buyer-fit screening, reach 180 substantive "
-                    "conversations, complete 72 qualified reviews, sign 24 mandates, "
-                    "and close six transactions. That means sixty percent raw-to-screened, "
-                    "thirty percent screened-to-conversation, forty percent conversation-to-review, "
-                    "one-third review-to-mandate, and twenty-five percent mandate-to-close. "
-                    "Overall raw-to-close conversion is 0.6 percent. At the same assumed "
-                    "rates, three closings require roughly 500 raw records and ten "
-                    "require roughly 1,667; actual cohort outcomes will vary. Budget "
-                    "1,000 records across twenty weeks at fifty records weekly, then "
-                    "allow diligence and closing to extend through the 3–12 month "
-                    "window. This is workload planning, not a claim that every "
-                    "mandate closes within its acquisition quarter. Track each "
-                    "source cohort by first contact date, qualified review date, "
-                    "mandate date, and cash receipt date. If conversations are "
-                    "healthy but reviews collapse, repair targeting or the evidence "
-                    "request before adding volume. If mandates accumulate without "
-                    "bids, revisit price, transferability, or buyer qualification. "
-                    "A six-closing funnel at $18,000 retained per closing generates "
-                    "$108,000 illustrative revenue; it is not a replacement for "
-                    "the canonical annual scenarios."
-                ),
-                (
-                    "Build inbound around narrow owner questions that expose purchase "
-                    "intent. Publish a tower-lease assignment checklist, a financing "
-                    "filing-versus-maturity explainer, and an acquisition-readiness "
-                    "document index with a clear invitation to request a fit review. "
-                    "Use Google Search Console for query discovery and a CRM form "
-                    "for attribution; do not promise valuations from a parcel number "
-                    "alone. Ask accountants, equipment service firms, property managers, "
-                    "and transaction attorneys for introductions within their permitted "
-                    "professional arrangements. Review referral compensation before "
-                    "offering it. Answer objections by diagnosing missing trust or "
-                    "economics. For 'send your buyers first,' provide anonymized "
-                    "criteria and a controlled introduction process rather than "
-                    "disclosing a buyer list. For 'your fee is too high,' show "
-                    "net proceeds, required work, and the alternative of retaining "
-                    "the asset. For 'I already have a buyer,' document that "
-                    "exclusion and define whether other introductions merit an "
-                    "engagement. For 'call after my loan expires,' ask which "
-                    "contract establishes maturity instead of repeating a filing "
-                    "date. Every response ends with one concrete next action: "
-                    "a redacted lease, payoff authorization, authority document, "
-                    "or scheduled buyer-fit call. Decline pressure to invent "
-                    "competing bids; false urgency can turn a modest commission "
-                    "into a misrepresentation dispute."
-                ),
-            ],
-            "table": {
-                "caption": "Multi-Channel Cadence, Objection Diagnosis, and Measurable Next Actions",
-                "headers": [
-                    "Contact stage",
-                    "Message or objection handling",
-                    "Evidence requested or offered",
-                    "Measurement and stop rule",
-                ],
-                "rows": [
-                    [
-                        "Day one work-email anchored to one verified public observation",
-                        "Explain the observed filing without claiming private repayment knowledge",
-                        "Offer a concise obligation-review checklist and short fit discussion",
-                        "Track substantive replies and immediately suppress contacts requesting removal",
-                    ],
-                    [
-                        "Day three manual call after required contact eligibility checks",
-                        "Ask whether reviewing documented alternatives fits the owner's objectives",
-                        "Request permission to obtain current agreements and payoff information",
-                        "Count completed conversations separately from unanswered repeated dialing attempts",
-                    ],
-                    [
-                        "Day five professional network message through ordinary platform features",
-                        "Answer buyer-list demands with anonymized criteria and introduction controls",
-                        "Provide verified acquisition parameters without exposing protected counterparty identities",
-                        "Stop duplicate channels when the owner declines further contact",
-                    ],
-                    [
-                        "Day eight tailored letter for sufficiently valuable qualified opportunities",
-                        "Explain retained lease economics alongside a possible rights purchase",
-                        "Offer a rights diagram and specific document collection list",
-                        "Attribute replies to mailing cohorts rather than overall website traffic",
-                    ],
-                    [
-                        "Day twelve close-loop message proposing one dated next action",
-                        "Resolve maturity objections by requesting the actual contractual schedule",
-                        "Ask for an authorized document review or future contact date",
-                        "Remove inactive opportunities from current closing forecasts until requalified",
-                    ],
-                    [
-                        "Inbound checklist request originating from a focused educational page",
-                        "Address fee resistance through documented proceeds and service scope",
-                        "Provide a sample proceeds bridge with explicit illustrative assumptions",
-                        "Measure qualified reviews and mandates instead of raw download totals",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Translate buyer demand into a searchable sourcing brief",
-                    "action": "Interview ten specialist buyers and record executable acquisition constraints.",
-                    "detail": "Choose one jurisdiction and asset class; save ticket size, rights requirements, funding evidence, and decision authority before collecting owner records.",
-                },
-                {
-                    "step": 2,
-                    "title": "Build and verify a fifty-record weekly cohort",
-                    "action": "Normalize entities, attach primary source observations, and remove duplicates.",
-                    "detail": "Separate filing dates from contractual maturity and separate recorded interests from confirmed transferability; assign each surviving record to one accountable researcher.",
-                },
-                {
-                    "step": 3,
-                    "title": "Run the twelve-day contact sequence",
-                    "action": "Use permitted email, manual calls, professional messaging, and targeted letters.",
-                    "detail": "Apply suppression checks before contact, preserve the exact observation used, and advance only when the owner agrees to a concrete evidence request.",
-                },
-                {
-                    "step": 4,
-                    "title": "Convert verified fit into a controlled mandate",
-                    "action": "Score evidence, resolve hard stops, sign the engagement, and register introductions.",
-                    "detail": "Require seventy-five points plus all mandatory checks; establish a permissioned deal room, buyer review calendar, and transaction-specific closing checklist.",
-                },
-            ],
-        },
-        {
-            "heading": "4. Land the first closings while protecting cash, evidence, and retained fees",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Manage the first 3–10 wins as completed transactions, not "
-                    "signed mandates or enthusiastic buyer calls. During month "
-                    "one, establish the operating route, buyer interviews, research "
-                    "template, and source-quality checks. During months two and "
-                    "three, run weekly cohorts, repair the document request, and "
-                    "pursue the strongest mandates. During months three through "
-                    "twelve, prioritize transactions with verified rights, realistic "
-                    "pricing, and counterparties meeting deadlines. Use milestone "
-                    "tracking for indicative offer, signed letter of intent, "
-                    "diligence completion, definitive documents, required consents, "
-                    "funding, and commission receipt. Automation should flag missing "
-                    "documents and stale milestones, not declare title clean or "
-                    "approve a securities exemption. A failed closing gets a "
-                    "coded reason: economics, rights, financing, authority, diligence, "
-                    "or counterparty withdrawal. Recycle the opportunity only "
-                    "after its defect changes. For an equipment transaction, "
-                    "a payoff letter and negotiated release can matter more "
-                    "than a photographed serial number. Under UCC § 9-315, "
-                    "security interests can continue in disposed collateral "
-                    "unless disposition is authorized free of the interest "
-                    "or another rule applies. Do not tell a buyer that "
-                    "possession alone removes a lien. Make release delivery "
-                    "and recording responsibilities explicit in closing instructions."
-                ),
-                (
-                    "Reconcile the annual model using retained commissions only. "
-                    "The Conservative case is $100,000 revenue less $75,000 "
-                    "total modeled expenses, leaving $25,000 owner net profit "
-                    "at twenty-five percent with one full-time operator and "
-                    "three contractors. Four closings retaining $25,000 each "
-                    "provide one illustrative revenue bridge. The Base case "
-                    "is $550,000 revenue less $343,750 expenses, leaving "
-                    "$206,250 at 37.5 percent with the same staffing count; "
-                    "ten closings retaining $55,000 each provide its bridge. "
-                    "The Scaled case is $1,000,000 revenue less $500,000 "
-                    "expenses, leaving $500,000 at fifty percent with two "
-                    "full-time people and four contractors; twenty closings "
-                    "retaining $50,000 each provide that bridge. These "
-                    "transaction counts explain arithmetic, not assured fee "
-                    "availability or a first-year forecast. Owner net profit "
-                    "is the scorecard residual, not additional salary to "
-                    "subtract or add without changing the accounting convention. "
-                    "The $3,000–$18,000 monthly operating range is not a "
-                    "ceiling on total annual expenses: reconcile transaction "
-                    "support, acquisition spending, and other modeled costs "
-                    "separately. Never deduct an external co-broker share "
-                    "twice after revenue has already been stated net of "
-                    "that share. Larger underlying asset prices improve "
-                    "revenue only when the negotiated retained fee actually increases."
-                ),
-                (
-                    "Hold a weekly cash-and-closing review separate from the "
-                    "sales pipeline meeting. With startup capital of "
-                    "$15,000–$100,000 and first-deal timing of 3–12 months, "
-                    "runway determines how selective the operator can remain. "
-                    "Illustratively, $30,000 available cash divided by $6,000 "
-                    "monthly fixed cash expense provides five months before "
-                    "transaction-specific spending; a credible six-month closing "
-                    "path requires lower burn or additional capital. Do "
-                    "not count signed mandates as spendable receipts. Maintain "
-                    "a thirteen-week cash forecast with committed costs, "
-                    "optional research spending, and separate closing-sensitive "
-                    "receipts. Confirm escrow identity, licensing where required, "
-                    "and wire instructions through independently obtained "
-                    "contact details; email alone is insufficient when "
-                    "instructions change. Require a settlement statement "
-                    "showing the actual fee recipient, fee basis, permitted "
-                    "splits, and disbursement conditions. Avoid taking custody "
-                    "of client funds or facilitating undisclosed side payments. "
-                    "After closing, reconcile the bank receipt to the "
-                    "mandate and settlement statement, archive releases "
-                    "and consents, and request a reference with permission. "
-                    "Capture why the owner chose the service and which "
-                    "document removed buyer hesitation. Feed those findings "
-                    "into the next sourcing cohort. The repeatable advantage "
-                    "is a shorter path from documented owner problem "
-                    "to executable buyer decision, not a larger pile "
-                    "of unverified leads."
-                ),
-            ],
-            "table": {
-                "caption": "Closing Controls and Canonical Annual Revenue-to-Profit Reconciliation",
-                "headers": [
-                    "Operating checkpoint",
-                    "Required arithmetic or evidence",
-                    "Accountable execution detail",
-                    "Failure response or interpretation",
-                ],
-                "rows": [
-                    [
-                        "Conservative annual scenario using four illustrative retained commission closings",
-                        "$100,000 revenue less $75,000 expenses equals $25,000 owner profit",
-                        "One full-time operator plus three contractors; twenty-five percent margin",
-                        "Four $25,000 retained fees reconcile revenue without counting asset consideration",
-                    ],
-                    [
-                        "Base annual scenario using ten illustrative retained commission closings",
-                        "$550,000 revenue less $343,750 expenses equals $206,250 owner profit",
-                        "One full-time operator plus three contractors; 37.5 percent margin",
-                        "Ten $55,000 retained fees require documented capacity and suitable transactions",
-                    ],
-                    [
-                        "Scaled annual scenario using twenty illustrative retained commission closings",
-                        "$1,000,000 revenue less $500,000 expenses equals $500,000 owner profit",
-                        "Two full-time people plus four contractors; fifty percent margin",
-                        "Twenty $50,000 retained fees describe annual arithmetic rather than initial wins",
-                    ],
-                    [
-                        "Preclosing lien and rights review before releasing purchase funds",
-                        "Payoff letters, release terms, title exceptions, and required consents",
-                        "Authorized closing professionals coordinate delivery and required recording responsibilities",
-                        "Delay closing when a surviving lien prevents the promised transfer",
-                    ],
-                    [
-                        "Escrow instruction verification before any outward transfer of funds",
-                        "Independently confirmed recipient identity and transaction-specific written disbursement instructions",
-                        "Named closing contact verifies changes through an established separate channel",
-                        "Freeze transfer when beneficiary details or instructions cannot be reconciled",
-                    ],
-                    [
-                        "Postclosing commission reconciliation and evidence retention for each completed transaction",
-                        "Bank receipt matches settlement statement, mandate, and permitted fee splits",
-                        "Operator records retained revenue without including client principal or purchase price",
-                        "Investigate discrepancies before paying contractors or releasing final deal archives",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": "Source the missing evidence before you source another lead, because executable rights—not introductions alone—earn the commission.",
-    "diagram_id": "diag-02",
-    "action_checklist": [
-        "Interview ten specialist buyers and convert their acquisition criteria into one jurisdiction-specific sourcing brief with verified funding and decision authority.",
-        "Build a fifty-record weekly cohort from official UCC, recorder, assessor, and permit sources; preserve dates, entity identifiers, and the precise observation supporting outreach.",
-        "Separate UCC filing age from contractual maturity, and obtain authorized agreements, payment schedules, and payoff evidence before proposing financing alternatives.",
-        "Model each easement proposal against lease retention, tenant termination rights, required approvals, residual property burden, and the actual retained commission.",
-        "Run the twelve-business-day cadence with channel-specific checks, suppression controls, evidence-weighted scoring, signed mandates, and registered introductions.",
-        "Track completed transactions and cash receipts separately from mandates; reconcile every closing to the canonical revenue basis, settlement statement, permitted splits, and thirteen-week cash forecast.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "UCC § 9-515 — Duration and effectiveness of financing statements",
-            "url": "https://www.law.cornell.edu/ucc/9/9-515",
-            "relevance": "Explains ordinary five-year effectiveness and the continuation window; verify the applicable state's enacted text and distinguish filing lapse from contractual debt maturity.",
-        },
-        {
-            "title": "UCC § 9-315 — Secured party's rights on disposition of collateral",
-            "url": "https://www.law.cornell.edu/ucc/9/9-315",
-            "relevance": "Supports checking surviving security interests, authorized dispositions, proceeds, and release mechanics before transferring equipment or other collateral.",
-        },
-        {
-            "title": "15 U.S.C. § 78o(b)(13) — Federal M&A broker registration exemption",
-            "url": "https://www.law.cornell.edu/uscode/text/15/78o",
-            "relevance": "Requires transaction-specific examination of eligibility conditions and excluded activities when brokerage involves ownership interests in a privately held company.",
-        },
-        {
-            "title": "California Business and Professions Code § 10131 — Real estate broker activities",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=10131.",
-            "relevance": "Identifies compensated real-property and specified secured-loan activities that require analysis of California brokerage licensing before solicitation or negotiation.",
-        },
-        {
-            "title": "California Financial Code § 22800 — Commercial financing disclosure framework",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=FIN&sectionNum=22800.",
-            "relevance": "Provides definitions within the commercial financing disclosure framework; apply the remaining statutory provisions and implementing rules to the actual product and parties.",
-        },
-        {
-            "title": "New York Financial Services Law § 802 — Commercial financing disclosures",
-            "url": "https://www.nysenate.gov/legislation/laws/FIS/802",
-            "relevance": "Establishes disclosure requirements within Article 8 for covered commercial financing offers; assess transaction coverage, exemptions, and implementing rules before presenting terms.",
-        },
-        {
-            "title": "15 U.S.C. § 7704 — Requirements for commercial electronic mail",
-            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
-            "relevance": "Governs commercial email routing information, subject lines, identification, postal address, opt-out mechanisms, and timely suppression of recipients who decline further messages.",
-        },
-        {
-            "title": "47 CFR § 64.1200 — Restrictions on telemarketing and telephone solicitation",
-            "url": "https://www.ecfr.gov/current/title-47/chapter-I/subchapter-B/part-64/subpart-L/section-64.1200",
-            "relevance": "Supports channel-specific review of calling, texting, prerecorded communications, do-not-call procedures, and related requirements rather than assuming every business contact is exempt.",
-        },
-    ],
-}
+CHAPTER_6 = {'id': 'Q6',
+ 'chapter_id': 'Q6',
+ 'chapter_number': 6,
+ 'question_number': 6,
+ 'slug': 'yacht-and-aircraft-brokerage-entry-sourcing-economics',
+ 'question_prompt': 'How do practitioners enter yacht and aircraft brokerage, source vessels, work with '
+                    'luxury clients, and evaluate sales and charter economics?',
+ 'kicker': 'Q6 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Yacht and Aircraft Brokerage: Entry, Sourcing, and Economics',
+ 'subtitle': 'Aircraft brokerage startup, yacht-broker compensation, luxury-client service, yacht '
+             'sourcing, operator-document checks, charter investment economics, and broker-panel case '
+             'studies',
+ 'layout_template': 'step_by_step_blueprint',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Yacht and aircraft brokers agree the trade runs on trust, referrals, and '
+                      'relationships, not credentials: aircraft sales carry no FAA license and no training '
+                      'path, while only Florida and California license yacht brokers. Entry means living '
+                      'in a yacht hub, taking any yachting job, and farming captains and managers for '
+                      'leads. On yachts, the street schedule pays 10% on the first $10M, 5% on the next '
+                      "$10M, and 2.5% per $10M after, split 60/40 toward the buyer's broker; a junior on a "
+                      '20% house split nets $80K off a $1M commission. Aircraft commissions slide from '
+                      'about 10% on $50K planes to 0.5-1% on a $40M G550. Practitioners clash on whether '
+                      '10% is fixed or negotiable, on going solo versus joining a big house, and on '
+                      'chasing mega-deals versus building volume pipelines.',
+ 'key_metrics': [{'label': 'Tiered yacht brokerage commission schedule',
+                  'metric': 'Tiered yacht brokerage commission schedule',
+                  'value': '10% on first $10M, 5% on next $10M, 2.5% per $10M after',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Standard brokerage-yacht commission quoted by a Northrop & Johnson broker; a '
+                             '$30M yacht carries a potential $1.75M commission.',
+                  'source': 'Yachts For Sale ([FpmvbD9-7yc @ 00:05:18])'},
+                 {'label': 'Co-broker commission split',
+                  'metric': 'Co-broker commission split',
+                  'value': "60% buyer's broker / 40% seller's broker",
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Split applied under most circumstances when two brokers share a yacht sale; '
+                             'on a $1M commission a 50/50 house broker keeps $300,000 (buyer side) or '
+                             '$200,000 (seller side).',
+                  'source': 'Yacht Broker Masterclass ([_Shd1I2mefI @ 00:06:24])'},
+                 {'label': 'Share of aircraft deals with a broker on both sides',
+                  'metric': 'Share of aircraft deals with a broker on both sides',
+                  'value': 'Over 80%',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "GLADA chairman Phil Jordan's estimate of co-brokered aircraft transactions, "
+                             'called critical to the business.',
+                  'source': 'Own The Jet ([i36Xg_tsVAY @ 00:23:44])'},
+                 {'label': 'Sales volume needed for EUR 1M in commission',
+                  'metric': 'Sales volume needed for EUR 1M in commission',
+                  'value': 'EUR 20M in sales at 5% kept commission',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Reachable via 2 x EUR 10M, 4 x EUR 5M, 10 x EUR 2M, or 20 x EUR 1M yacht '
+                             'sales.',
+                  'source': 'The Art of Yacht Sales ([elBm9ZOqdsA @ 00:06:09])'}],
+ 'sections': [{'section': 1,
+               'title': 'The Practitioner Consensus',
+               'paragraphs': ['Every practitioner on this beat lands on the same foundation: the deal '
+                              'moves on trust, and trust compounds into referrals. Gerry Mendria calls '
+                              'integrity the key and says the business is strictly referral and repeat, '
+                              'warning that anyone whose main motive is commission would fit better in '
+                              'another business [5hRyQr7CMkA @ 00:00:17]. The Yacht Broker Masterclass '
+                              'instructor reduces it to one line, saying it really is a relationships '
+                              'business, and backs that up with a broker who visited an owner at home and '
+                              'surfaced a 70m build [_Shd1I2mefI @ 00:13:10]. Wealth Pilot puts the same '
+                              'point in buyer terms: clients buy from people they trust and know, and the '
+                              'recurring money that follows a closed deal comes from management and '
+                              'charter commissions plus a resale roughly five years later [WWrDBEGo6gM @ '
+                              '00:03:24]. On the aircraft side, GLADA chairman Phil Jordan stresses that '
+                              'aircraft sales has no training path and no regulation, which is why the '
+                              'association built an online course of 8 to 9 sections with quizzes and a '
+                              'certificate, plus an internal channel for planes not yet on the market and '
+                              "pre-buy openings [i36Xg_tsVAY @ 00:02:56]. Jordan's sharpest line on the "
+                              'gap: a haircut legally requires a license, while selling a '
+                              'multimillion-dollar jet does not, so reputation becomes the only credential '
+                              'a buyer can actually check.',
+                              'The entry path is consistent across yacht and aircraft practitioners: get '
+                              'physically close to the asset and its owners before trying to sell it. The '
+                              'Yacht Broker Masterclass sets the first step as moving to a yacht hub such '
+                              'as Fort Lauderdale, Palma, or Antibes, taking any yachting-associated job '
+                              'even if no brokerage company hires you immediately, and networking with '
+                              'captains and yacht managers who become future lead sources [-7bW4uN98Hc @ '
+                              '00:00:23]. David, a Northrop & Johnson broker formerly at Camper & '
+                              'Nicholsons, confirms what the houses actually screen for: connections, '
+                              'yacht knowledge, networking ability, and a sales record, with a degree '
+                              'nowhere on the list [FpmvbD9-7yc @ 00:03:08]. Gerry Mendria adds that '
+                              'boating experience was only a partial advantage, which fits the pattern of '
+                              'relationships outranking seamanship [5hRyQr7CMkA @ 00:00:46]. Aircraft '
+                              'entry is even lighter. Alex Bengoechea states that no FAA license is needed '
+                              "to broker aircraft, including at someone else's brokerage; some states "
+                              'require an aircraft dealer license that works like a business license with '
+                              'no test, Arizona and Washington add a surety bond, Florida only requires '
+                              'Department of Revenue registration, and the build-out is an LLC plus an EIN '
+                              '[p6XXGAWrnB8 @ 00:00:14]. The shared baseline is access, product fluency, '
+                              'and patience while the network matures into buyer and seller leads.',
+                              'Nobody pretends the income is steady. Wealth Pilot states flatly that '
+                              'brokers do not earn a steady salary, pay for Monaco, Miami, and Fort '
+                              'Lauderdale boat shows out of pocket, earn $0 when a deal falls through, and '
+                              'can run 18 months with no deal before an 8-figure payday lands, calling it '
+                              'a feast or famine economy [WWrDBEGo6gM @ 00:01:07]. Gerry Mendria lived the '
+                              'seasonal version: working every single day from May until after Labor Day '
+                              'with no time for family or boating, then a winter that went dead, meaning '
+                              'no income coming in at all [5hRyQr7CMkA @ 00:02:44]. Tomic of W Yachts '
+                              'frames the cure as volume rather than whale hunting: ten $100k sales or '
+                              'twenty $50k sales can equal one $1M sale, and brokers who only chase the '
+                              'big fish fall into a feast-or-famine cycle that ends in burnout, because '
+                              'consistency trumps singularity [elBm9ZOqdsA @ 00:02:22]. David reaches the '
+                              'same verdict from inside a major house, calling yacht sales a high-risk, '
+                              'high-reward industry where the headline commission gets carved up long '
+                              "before it reaches a junior broker's account [FpmvbD9-7yc @ 00:15:06]. The "
+                              'working prerequisite every one of these operators implies is a cash cushion '
+                              'sized for long dry stretches and a pipeline deep enough that one collapsed '
+                              'deal does not end the year.'],
+               'table': {'caption': 'Where yacht and aircraft brokers agree: baseline mechanics and '
+                                    'prerequisites',
+                         'headers': ['Consensus Point',
+                                     'What Practitioners Report',
+                                     'Operator Implication',
+                                     'Expert Source'],
+                         'rows': [['Trust drives repeat and referral business',
+                                   'Integrity is the key; the business is strictly referral and repeat, '
+                                   'not commission chasing',
+                                   'Protect reputation on every deal because referrals are the main lead '
+                                   'engine',
+                                   'Gerry Mendria ([5hRyQr7CMkA @ 00:00:17])'],
+                                  ['Live where the yachts and owners are',
+                                   'Move to Fort Lauderdale, Palma, or Antibes and take any '
+                                   'yachting-associated job',
+                                   'Relocate first, then network captains and yacht managers for future '
+                                   'leads',
+                                   'Yacht Broker Masterclass ([-7bW4uN98Hc @ 00:00:23])'],
+                                  ['Houses hire connections, not academic degrees',
+                                   'Brokerages screen for connections, yacht knowledge, networking '
+                                   'ability, and a sales record',
+                                   'Build a demonstrable network before pitching any major brokerage house '
+                                   'for a seat',
+                                   'Yachts For Sale ([FpmvbD9-7yc @ 00:03:08])'],
+                                  ['Aircraft brokerage needs no FAA license',
+                                   'No FAA license required; some states want a no-test dealer license '
+                                   'plus bond',
+                                   'Form an LLC, get an EIN, and check your state dealer rules first',
+                                   'Alex Bengoechea ([p6XXGAWrnB8 @ 00:00:14])'],
+                                  ['Most aircraft deals run broker to broker',
+                                   'Over 80% of aircraft deals have a broker sitting on both sides',
+                                   'Co-brokering relationships are critical, so build them across the '
+                                   'dealer network early',
+                                   'Own The Jet ([i36Xg_tsVAY @ 00:23:44])'],
+                                  ['Income is feast or famine with zero salary',
+                                   'Boat shows paid out of pocket, $0 on failed deals, 18 months with no '
+                                   'deal',
+                                   'Hold cash reserves sized for long stretches with no closings at all',
+                                   'Wealth Pilot ([WWrDBEGo6gM @ 00:02:09])'],
+                                  ['Consistent pipeline beats chasing one whale',
+                                   'Ten $100k sales or twenty $50k sales can equal one $1M sale',
+                                   'Build steady mid-size deal flow to avoid feast-or-famine burnout '
+                                   'cycles entirely',
+                                   'The Art of Yacht Sales ([elBm9ZOqdsA @ 00:02:22])']]}},
+              {'section': 2,
+               'title': 'Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['The yacht commission schedule the house-trained brokers quote is tiered: '
+                              '10% on the first $10M, 5% on the next $10M, and 2.5% on each $10M after '
+                              'that, so a $30M yacht carries a potential $1.75M commission [FpmvbD9-7yc @ '
+                              '00:05:18]. The Yacht Broker Masterclass instructor runs the same ladder on '
+                              'a $100M yacht: $1M on the first $10M, $500,000 on the second, then $250,000 '
+                              'per additional $10M [_Shd1I2mefI @ 00:05:41]. That commission is then split '
+                              "60% to the buyer's broker and 40% to the seller's broker, so on a $1M "
+                              'commission a broker on a 50/50 house split keeps $300,000 representing the '
+                              "buyer or $200,000 representing the seller [_Shd1I2mefI @ 00:07:06]. David's "
+                              'worked example shows how fast the gross shrinks in practice. A yacht asking '
+                              '$30M sells at $25M for a $1.625M commission, but the seller insists on $24M '
+                              'net, which drops the commission to $1M. David defends the 60/40 tilt '
+                              "bluntly, since the buyer's broker can always steer the client to another "
+                              'yacht. After the co-broker takes that share, the house keeps $400,000; a '
+                              'junior broker on 20% walks away with $80,000, while a senior broker on a '
+                              '50/50 split with no wage clears about $200,000 from the same sale '
+                              '[FpmvbD9-7yc @ 00:13:22]. The lesson in the arithmetic: the headline '
+                              'percentage is never the check.',
+                              'Pay structure is where new brokers get burned or protected. The Yacht '
+                              'Broker Masterclass instructor lays out the menu: apprentices may get a '
+                              'small basic wage with a lower split, trainee splits run 30/70 or 20/80, the '
+                              "instructor's own first employer paid 20%, and independent contractors get "
+                              '50/50 but fund their own flights and hotels, the example being trips to the '
+                              'Exumas. The trap is the clawback, where 2,000 to 3,000 a month in pay is '
+                              'treated as an advance against commission and recovered out of the first '
+                              'sale, so it has to be clarified before signing [_Shd1I2mefI @ 00:03:06]. '
+                              'New builds pay differently: Lurssen and Amels deals usually pay about 5% '
+                              'rather than 10%, and Benetti ratchets the fee from introduction only, to '
+                              'introduction plus contract, to full commission for brokers who make regular '
+                              'shipyard visits [_Shd1I2mefI @ 00:11:20]. David pegs junior house packages '
+                              'at a small wage plus roughly 10 to 20% of the house commission, with office '
+                              'space, cards, boat-show access, and a shared assistant, and notes that a '
+                              'higher wage always means a lower percentage [FpmvbD9-7yc @ 00:07:30]. '
+                              'Charter runs in its own lane: Behind the Gold reports charter brokers earn '
+                              'up to 20%, on superyachts whose running costs sit around 10% of value per '
+                              'year, so a EUR 100M yacht burns roughly EUR 10M annually [LBp3Cz4zFQI @ '
+                              '00:01:22].',
+                              'Aircraft brokerage runs on a tighter cost stack and a sliding fee. Alex '
+                              'Bengoechea prices the toolkit line by line: JetNet at $750 a month on a '
+                              '12-month contract, Controller ads at $600 to $2,000, and a photographer at '
+                              '$1,500 to $2,000 or about $500 for a budget shooter, with the rule to buy '
+                              'subscriptions only when a deal needs them and to start in piston aircraft, '
+                              'which are easier to enter than jets that demand cash reserves [p6XXGAWrnB8 '
+                              '@ 00:04:13]. Commission slides with price: about 10% on a roughly $50,000 '
+                              'aircraft, about 6% on a $500,000 Navajo or a $1M aircraft, and 1% or 0.5% '
+                              'on a $40M G550, and Bengoechea always pushes for an exclusive over a '
+                              "non-exclusive agreement [p6XXGAWrnB8 @ 00:17:26]. Phil Jordan's GLADA "
+                              'playbook front-loads the deal team: an aviation tax adviser, finance, an '
+                              'escrow agent and escrow agreement, and a broker contract, plus a deposit or '
+                              'retainer on acquisitions and some sales so the broker is not working for '
+                              'free [i36Xg_tsVAY @ 00:18:24]. Jordan also warns that a general CPA lacks '
+                              'aviation tax knowledge; the host cited a $17,000 tax bill from a state the '
+                              'owner does not even live in, and when a client pushes back, the fix is '
+                              "having the client's own accountant call the aviation specialist directly "
+                              '[i36Xg_tsVAY @ 00:21:44].'],
+               'table': {'caption': 'Street numbers and tools brokers use to price, source, and close',
+                         'headers': ['Mechanic',
+                                     'Exact Number or Tool',
+                                     'How Operators Use It',
+                                     'Expert Source'],
+                         'rows': [['Tiered yacht brokerage commission schedule',
+                                   '10% first $10M, 5% next $10M, 2.5% per $10M after',
+                                   'Quote potential gross on any brokerage yacht before pitching the owner',
+                                   'Yachts For Sale ([FpmvbD9-7yc @ 00:05:18])'],
+                                  ['Co-broker commission split between both sides',
+                                   "60% to buyer's broker, 40% to seller's broker under most circumstances",
+                                   'Expect a smaller take whenever you represent the seller side',
+                                   'Yacht Broker Masterclass ([_Shd1I2mefI @ 00:06:24])'],
+                                  ['New-build shipyard commission rate',
+                                   'About 5% on Lurssen and Amels builds, not the usual 10%',
+                                   'Work the Monaco Yacht Show to build shipyard relationships early',
+                                   'Yacht Broker Masterclass ([_Shd1I2mefI @ 00:10:16])'],
+                                  ['Aircraft market data subscription',
+                                   'JetNet at $750 per month on a 12-month contract',
+                                   'Subscribe only when a live deal requires jet fleet data',
+                                   'Alex Bengoechea ([p6XXGAWrnB8 @ 00:04:13])'],
+                                  ['Aircraft commission ladder by price band',
+                                   'About 10% on $50K aircraft down to 0.5% on a $40M G550',
+                                   'Price fee proposals according to the aircraft value band involved',
+                                   'Alex Bengoechea ([p6XXGAWrnB8 @ 00:17:26])'],
+                                  ['Charter yacht sourcing roster',
+                                   '2,500+ operators covering yachts from 40 to 400 ft',
+                                   'Build a personal operator list because no standard sourcing software '
+                                   'exists',
+                                   'International Aircraft Broker Institute IABI ([Oxw138mRpnA @ '
+                                   '00:07:39])'],
+                                  ['Flat listing prep and promotion fee',
+                                   '$1,500 fee, minimum 50 photos plus a video walkthrough',
+                                   'Produce professional media for every listing; the seller owns it '
+                                   'afterward',
+                                   'Current Yachts ([wqPY1eV4vuQ @ 00:30:02])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Street Moves That Protect the Commission',
+                           'body': 'Four moves working brokers use to keep deals inside their own hands '
+                                   'and close before the asset goes stale.',
+                           'items': ['Keep the seller off the yacht during showings; David flags the '
+                                     'cut-out risk when owner and buyer meet directly [Yachts For Sale — '
+                                     'FpmvbD9-7yc @ 00:33:11].',
+                                     'Visit owners at home: one broker learned of a 70m build that way, '
+                                     'and a 70m sale can bring about $1M even after the house split [Yacht '
+                                     'Broker Masterclass — _Shd1I2mefI @ 00:14:59].',
+                                     'Move on off-market aircraft early and treat the first offer as one '
+                                     'of the best before the listing becomes a stinky fish and a '
+                                     'desperation sale [Own The Jet — i36Xg_tsVAY @ 00:15:19].',
+                                     "Before booking a charter, demand the operator's AOC and D085, "
+                                     'insurance, company and registration numbers, and hull number '
+                                     '[International Aircraft Broker Institute IABI — xl7JC2nh0UQ @ '
+                                     '00:00:00].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Plant Yourself in a Yacht Hub',
+                              'action': 'Relocate to Fort Lauderdale, Palma, or Antibes and take any '
+                                        'yachting-associated job.',
+                              'detail': 'Brokerage work may not come immediately, but a yachting job puts '
+                                        'you next to captains and yacht managers who later feed buyer and '
+                                        'seller leads [Yacht Broker Masterclass — -7bW4uN98Hc @ '
+                                        '00:00:45].'},
+                             {'step': 2,
+                              'title': 'Negotiate the Pay Structure Up Front',
+                              'action': 'Choose between a wage and a higher split, and pin down any '
+                                        'clawback before signing.',
+                              'detail': 'Gerry Mendria refused any wage in exchange for a higher '
+                                        'commission percentage and hit a two-year profitability target in '
+                                        '6 months [Gerry Mendria — 5hRyQr7CMkA @ 00:01:32]; clarify '
+                                        'whether 2,000 to 3,000 a month is an advance recovered from the '
+                                        'first sale [Yacht Broker Masterclass — _Shd1I2mefI @ 00:03:06].'},
+                             {'step': 3,
+                              'title': 'Screen Every Buyer Before Showing',
+                              'action': 'Run Google searches, collect proof of funds, and complete KYC and '
+                                        'AML checks.',
+                              'detail': 'David screens buyers with Google, proof of funds, KYC, and AML, '
+                                        'then checks names on World-Check before access to the yacht '
+                                        '[Yachts For Sale — FpmvbD9-7yc @ 00:28:46].'},
+                             {'step': 4,
+                              'title': 'Close Through Escrow and Binding Paper',
+                              'action': 'Move from non-binding LOI to binding APA with a lawyer on '
+                                        'retainer, and close through escrow.',
+                              'detail': 'Bengoechea always uses escrow via AIC Title or Aerospace Reports, '
+                                        'usually splitting the fee, and says there is a way without escrow '
+                                        'but does not recommend it [Alex Bengoechea — p6XXGAWrnB8 @ '
+                                        '00:21:23].'}]},
+              {'section_number': 3,
+               'title': 'Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The sharpest fault line is whether the 10% headline is law or opening bid. '
+                              'David of Yachts For Sale, a Northrop & Johnson broker, works the classic '
+                              'tiered schedule as standard: 10% on the first $10M, 5% on the second $10M, '
+                              '2.5% per $10M after that, so a $30M yacht carries a potential $1.75M '
+                              'commission [FpmvbD9-7yc @ 00:05:18]. Yacht Broker Masterclass runs the same '
+                              "ladder and the same 60/40 split favoring the buyer's broker, while "
+                              'admitting brokers often need flexibility on commission [_Shd1I2mefI @ '
+                              '00:05:17]. Current Yachts attacks the premise head-on. Amanda Haley and '
+                              'Maryline Bossar say the 10% is mostly un-negotiated, that it sometimes gets '
+                              'negotiated to 8%, and that fixed commissions risk being price setting; '
+                              'their stance is blunt: it is not set at 10% [wqPY1eV4vuQ @ 00:21:38]. They '
+                              'let the seller choose whether to co-broke at all, recommending at least 4% '
+                              'compensation but allowing two, three, four or eight. On the aircraft side '
+                              'Alex Bengoechea treats the percentage as a sliding function of ticket size: '
+                              'about 10% on a $50K airplane, roughly 6% on a $500K Navajo or $1M aircraft, '
+                              'and 1% or 0.5% on a $40M G550 [p6XXGAWrnB8 @ 00:17:26]. Operator takeaway: '
+                              'quote the schedule, but know which camp your counterparty sits in before '
+                              'you defend it.',
+                              'Pay structure splits practitioners into two camps. Gerry Mendria refused '
+                              'any wage outright in exchange for a higher percentage of the commission, '
+                              'called it win-win, took over and renovated an office facing a competitor, '
+                              'and turned a two-year profitability projection into six months [5hRyQr7CMkA '
+                              '@ 00:01:32]. Yacht Broker Masterclass maps the safer path: apprentices take '
+                              'a small basic wage at a lower split, trainees run 30/70 or 20/80, and the '
+                              "speaker's own first employer kept 80 while they got 20; independent "
+                              'contractors jump to 50/50 but fund their own flights and hotels down to the '
+                              'Exumas [_Shd1I2mefI @ 00:04:37]. David at Yachts For Sale prices the same '
+                              'trade-off from the junior seat: a small wage plus about 10 to 20% of house '
+                              'commission, office space, cards, boat-show access and a shared assistant, '
+                              'with the rule that a higher wage means a lower percentage. On going solo, '
+                              'David draws a hard line: it works if you hold a buyer network, but '
+                              'seller-side brokers need a large house for credibility, websites, legal '
+                              'support and show access [FpmvbD9-7yc @ 00:16:31]. Current Yachts sidesteps '
+                              'the debate entirely, shifting from a commission-based to a service-based '
+                              'model with a $1,500 listing prep and promotion fee [wqPY1eV4vuQ @ '
+                              '00:30:02].',
+                              'Entry and sourcing playbooks diverge just as hard. Yacht Broker Masterclass '
+                              'insists you physically relocate to Fort Lauderdale, Palma or Antibes, take '
+                              'any yachting-associated job, and network with captains and yacht managers '
+                              'until buyer and seller leads surface through patience and tenacity '
+                              '[-7bW4uN98Hc @ 00:00:23]. Alex Bengoechea runs aircraft prospecting from a '
+                              'desk: the public FAA owner database, skip tracing, cold calls and '
+                              'postcards, plus Facebook Marketplace, which they say works less well now '
+                              '[p6XXGAWrnB8 @ 00:16:17]. Ali Merchant on the IABI podcast says no standard '
+                              'sourcing software exists for charter; they built a private roster of 2,500+ '
+                              'operators spanning owners, central agents and captain-managers covering 40 '
+                              'to 400 ft yachts [Oxw138mRpnA @ 00:07:39]. Europe demands 3-day minimums '
+                              'while the US caps charters at 13 guests. Deal-size strategy splits too. '
+                              'Tomic of W Yachts argues consistency trumps singularity: 10 sales at $100k '
+                              'or 20 at $50k can match one $1M sale, and chasing only the big fish breeds '
+                              'a feast-or-famine cycle and burnout [elBm9ZOqdsA @ 00:02:22]. On a 5% kept '
+                              'commission, €20M in volume equals €1M, reachable as 2 x €10M, 4 x €5M, 10 x '
+                              '€2M or 20 x €1M. Pick the playbook that matches your geography, capital '
+                              'reserves, network depth and tolerance for long dry months between closes.'],
+               'table': {'caption': 'Competing playbooks on commission, pay, entry, and deal size',
+                         'headers': ['Decision Point',
+                                     'Camp A Playbook',
+                                     'Camp B Playbook',
+                                     'Expert Source'],
+                         'rows': [['Headline sales commission rate',
+                                   'Tiered 10% / 5% / 2.5% schedule treated as the industry standard for '
+                                   'brokerage yachts',
+                                   '10% mostly un-negotiated, sometimes cut to 8%; seller picks a co-broke '
+                                   'rate from 2% to 8%',
+                                   'Yachts For Sale ([FpmvbD9-7yc @ 00:05:18]); Current Yachts '
+                                   '([wqPY1eV4vuQ @ 00:20:08])'],
+                                  ['Co-brokerage commission split',
+                                   "Buyer's broker takes 60% and seller's broker 40%, because the buyer's "
+                                   'broker can steer to another yacht',
+                                   'Splits usually run 50/50; a co-broker fee such as 5% is paid only if a '
+                                   'co-broker is present',
+                                   'Yachts For Sale ([FpmvbD9-7yc @ 00:12:41]); Current Yachts '
+                                   '([wqPY1eV4vuQ @ 00:51:05])'],
+                                  ['Newcomer pay structure',
+                                   'Refuse any wage and negotiate a higher commission percentage instead, '
+                                   'a self-described win-win',
+                                   'Accept a small basic wage with a lower split, with trainees on 30/70 '
+                                   'or 20/80',
+                                   'Gerry Mendria ([5hRyQr7CMkA @ 00:01:32]); Yacht Broker Masterclass '
+                                   '([_Shd1I2mefI @ 00:02:28])'],
+                                  ['Going solo versus staying in a house',
+                                   'Go solo only when you already hold a deep buyer network to work from',
+                                   'Seller-side brokers stay inside a large house for credibility, '
+                                   'websites, legal support and show access',
+                                   'Yachts For Sale ([FpmvbD9-7yc @ 00:16:31])'],
+                                  ['Market entry and lead sourcing',
+                                   'Relocate to Fort Lauderdale, Palma or Antibes and take any '
+                                   'yachting-associated job first',
+                                   'Prospect aircraft owners remotely via the FAA database, skip tracing, '
+                                   'cold calls and postcards',
+                                   'Yacht Broker Masterclass ([-7bW4uN98Hc @ 00:00:23]); Alex Bengoechea '
+                                   '([p6XXGAWrnB8 @ 00:16:17])'],
+                                  ['Aircraft listing agreement type',
+                                   'Always push hard for an exclusive listing agreement over a '
+                                   'non-exclusive one',
+                                   'GLADA offers a non-exclusive contract that openly discloses the broker '
+                                   'commission to the client',
+                                   'Alex Bengoechea ([p6XXGAWrnB8 @ 00:18:35]); Own The Jet ([i36Xg_tsVAY '
+                                   '@ 00:27:33])'],
+                                  ['Deal size focus',
+                                   'Build a pipeline of 10 x $100k or 20 x $50k sales to avoid '
+                                   'feast-or-famine burnout',
+                                   'Accept 18 months of zero deals in exchange for an eventual '
+                                   'eight-figure close',
+                                   'The Art of Yacht Sales ([elBm9ZOqdsA @ 00:02:22]); Wealth Pilot '
+                                   '([WWrDBEGo6gM @ 00:02:25])']]}},
+              {'section_number': 4,
+               'title': 'Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The most-reported trap is cash flow. Gerry Mendria worked every single day '
+                              'from May until after Labor Day with no time for family or boating, then '
+                              'watched winter go dead, meaning no income coming in, which pushed them into '
+                              'an online business for residual income [5hRyQr7CMkA @ 00:02:44]. Wealth '
+                              'Pilot puts the same risk in plain numbers: brokers do not earn a steady '
+                              'salary, boat shows in Monaco, Miami and Fort Lauderdale come out of pocket, '
+                              'pay is $0 when a deal falls through, and a broker can go 18 months with no '
+                              'deal before an 8-figure close, which they call a feast or famine economy '
+                              '[WWrDBEGo6gM @ 00:02:09]. David at Yachts For Sale confesses the classic '
+                              'rookie blowout: after a first big sale, a top-100 yacht under NDA, they '
+                              'overspent on a car and hotels; the fix is to treat every commission as your '
+                              'last [FpmvbD9-7yc @ 00:23:00]. Yacht Broker Masterclass flags the hidden '
+                              'version of the same problem: a clawback where 2 to 3,000 a month in pay is '
+                              'really an advance against commission, recovered from your first sale, so '
+                              'clarify it before signing [_Shd1I2mefI @ 00:03:06]. Budget for dead winter '
+                              'months and failed deals before you budget for the next yacht show.',
+                              'Overpricing is the second killer. David pitched a Monaco owner against five '
+                              'brokers, advising an ask of 30, serious attention to offers over 25, and an '
+                              'expected landing near 27; rivals promised 35 and a 33 sale, won the '
+                              'listing, and the yacht sat two years, was cut to 27, and sold for less '
+                              '[FpmvbD9-7yc @ 00:25:05]. Phil Jordan of GLADA reaches the same verdict '
+                              'from aircraft: the first offer is one of your best, and a listing that sits '
+                              'becomes a stinky fish that ends in a desperation sale [i36Xg_tsVAY @ '
+                              '00:15:59]. Current Yachts lists the seller-side errors behind stale '
+                              'inventory: emotional pricing, upgrades that never return their cost, and '
+                              'holding costs like insurance, hull cleaning and washing while boats take '
+                              'four to six months to sell once listed [wqPY1eV4vuQ @ 00:27:05]. They also '
+                              'catch listing misrepresentation in the wild: a spec saying Volvo when the '
+                              "engine was a Yanmar, and Garmin units swapped for Raymarine. Jordan's own "
+                              'red flags for aircraft are a spec sheet with no registration or serial '
+                              "number and a middleman markup, illustrated as $650 versus $750. David's "
+                              'market rule closes it out: a boat a year on market and still unsold means '
+                              'the market is telling you something.',
+                              'Deal mechanics fail where controls are skipped. Current Yachts reports '
+                              'about one in ten deals reject after survey; a $25K generator problem found '
+                              'at survey ends in an allowance, an escrow holdback or rejection, so the 10% '
+                              'deposit goes into trust before anything else [wqPY1eV4vuQ @ 00:55:01]. '
+                              'David keeps the seller off the yacht during showings because of cut-out '
+                              'risk, screens buyers through Google, proof of funds, KYC, AML and '
+                              'World-Check, and insists the business relies on cast iron, watertight '
+                              'contracts [FpmvbD9-7yc @ 00:33:11]. The IYBA broker panel shows what '
+                              'happens without them: one broker cut commission 10% for VAT in a side '
+                              'letter while a second badgered the client after contract execution; nobody '
+                              'sues, the business runs on trust, and a Florida tortious interference claim '
+                              'was not pursued because both brokers were in the Med [RPROcS6hZSE @ '
+                              '00:09:41]. The panel also rules that commission is earned at contract plus '
+                              'deposit, and that an option holds only 48 hours unless a contract and '
+                              'deposit follow. Alex Bengoechea warns the aircraft market is unregulated, '
+                              'says the LOI is non-binding while the APA binds, keeps a lawyer on '
+                              'retainer, and always uses escrow [p6XXGAWrnB8 @ 00:21:23]. Every one of '
+                              'these failures traces back to a missing document, a missing deposit or a '
+                              'missing screening check.'],
+               'table': {'caption': 'Firsthand failures and the economics check each one demands',
+                         'headers': ['Failure Mode',
+                                     'What Happened Firsthand',
+                                     'Economics Check',
+                                     'Expert Source'],
+                         'rows': [['Seasonal income collapse',
+                                   'Worked every day from May through Labor Day, then winter went dead '
+                                   'with no income',
+                                   'Build residual income outside peak season; the broker pivoted to an '
+                                   'online business',
+                                   'Gerry Mendria ([5hRyQr7CMkA @ 00:02:44])'],
+                                  ['Wage clawback against commission',
+                                   'Monthly pay of 2 to 3,000 treated as an advance and recovered from the '
+                                   'first sale',
+                                   'Clarify up front whether base pay is a true salary or a recoverable '
+                                   'advance',
+                                   'Yacht Broker Masterclass ([_Shd1I2mefI @ 00:03:06])'],
+                                  ['Post-commission overspending',
+                                   'After a top-100 yacht sale under NDA, the broker overspent on a car '
+                                   'and hotels',
+                                   'Treat every commission as your last, because 18-month droughts with no '
+                                   'deal happen',
+                                   'Yachts For Sale ([FpmvbD9-7yc @ 00:23:00]); Wealth Pilot ([WWrDBEGo6gM '
+                                   '@ 00:02:25])'],
+                                  ['Overpriced listing won on promises',
+                                   'Rival promised 35, the yacht sat two years, was cut to 27, and sold '
+                                   'for less',
+                                   'A listing a year on market and still unsold means the market is '
+                                   'telling you something',
+                                   'Yachts For Sale ([FpmvbD9-7yc @ 00:25:05])'],
+                                  ['Survey-stage deal rejection',
+                                   'A $25K generator problem surfaced at survey; about 1 in 10 deals '
+                                   'reject after survey',
+                                   'Negotiate an allowance or escrow holdback before letting the deal die '
+                                   'outright',
+                                   'Current Yachts ([wqPY1eV4vuQ @ 00:54:41])'],
+                                  ['Out-of-state aircraft tax hit',
+                                   'An owner received a $17,000 tax bill from a state the owner does not '
+                                   'live in',
+                                   'Put an aviation tax adviser on the deal team instead of a general CPA',
+                                   'Own The Jet ([i36Xg_tsVAY @ 00:21:44])'],
+                                  ['Charter operational breakdown',
+                                   'A Seakeeper failed mid-booking; client was upgraded to another boat '
+                                   'plus a Sprinter for 13',
+                                   'After a grounding, the broker committed to zero margin on the next 5 '
+                                   'charters',
+                                   'International Aircraft Broker Institute IABI ([Oxw138mRpnA @ '
+                                   '00:20:16])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Four checks before you sign, list, or wire',
+                           'body': 'Every item below maps to a loss, reversal, or bottleneck a named '
+                                   'practitioner lived through. Clear all four before committing time or '
+                                   'client money.',
+                           'items': ['Confirm in writing whether any base pay is a clawback advance '
+                                     'recovered from your first sale before accepting a brokerage seat '
+                                     '[Yacht Broker Masterclass — _Shd1I2mefI @ 00:03:06].',
+                                     'Refuse to win a listing on a fantasy number: ask 30 to land near 27 '
+                                     'rather than promise 35 and watch the yacht sit two years [Yachts For '
+                                     'Sale — FpmvbD9-7yc @ 00:25:05].',
+                                     'Run every closing through escrow; there is a way to do it without '
+                                     'escrow, and the practitioner does not recommend it [Alex Bengoechea '
+                                     '— p6XXGAWrnB8 @ 00:21:23].',
+                                     'Assemble the aviation tax adviser, finance, escrow agent, escrow '
+                                     'agreement and broker contract up front, and take a deposit or '
+                                     'retainer on acquisitions [Own The Jet — i36Xg_tsVAY @ 00:18:24].']}}],
+ 'pull_quote': '"The first offer you get on this airplane is going to be one of your best." — Own The Jet '
+               '(i36Xg_tsVAY @ 00:00:00).',
+ 'diagram_id': 'diag-02',
+ 'action_checklist': ['Relocate to a yacht hub such as Fort Lauderdale, Palma or Antibes and take any '
+                      'yachting-associated job as your first step [Yacht Broker Masterclass — -7bW4uN98Hc '
+                      '@ 00:00:23].',
+                      'Network with captains and yacht managers as future lead sources, and stay patient '
+                      'and tenacious until buyer and seller leads surface [Yacht Broker Masterclass — '
+                      '-7bW4uN98Hc @ 00:01:08].',
+                      'For aircraft, form an LLC, get an EIN, and check whether your state requires a '
+                      'dealer license and a surety bond running about $100 a year [Alex Bengoechea — '
+                      'p6XXGAWrnB8 @ 00:01:10].',
+                      'Screen every buyer through Google, proof of funds, KYC, AML and World-Check before '
+                      'arranging a showing [Yachts For Sale — FpmvbD9-7yc @ 00:28:46].',
+                      'Shoot listings with a professional: a minimum of 50 photos plus a video '
+                      'walkthrough, with the seller owning the media [Current Yachts — wqPY1eV4vuQ @ '
+                      '00:30:36].',
+                      'Vet every charter operator for insurance, company and registration numbers, hull '
+                      'number, charter insurance, and bareboat or IYBA contracts [International Aircraft '
+                      'Broker Institute IABI — xl7JC2nh0UQ @ 00:00:14].'],
+ 'statutory_citations': [{'title': 'Yachts For Sale — BREAKING IN TO YACHT BROKERAGE - How Much can I '
+                                   'Make??? [00:05:18]',
+                          'url': 'https://www.youtube.com/watch?v=FpmvbD9-7yc&t=318s',
+                          'relevance': 'Primary practitioner testimony on the tiered 10% / 5% / 2.5% '
+                                       'commission schedule, 60/40 co-broke split, and junior broker '
+                                       'take-home math.'},
+                         {'title': 'Current Yachts — The truth about yacht brokers and boat sales '
+                                   '[00:20:08]',
+                          'url': 'https://www.youtube.com/watch?v=wqPY1eV4vuQ&t=1208s',
+                          'relevance': 'Primary practitioner testimony on negotiable commissions, '
+                                       'seller-chosen co-broke rates, and the service-based listing '
+                                       'model.'},
+                         {'title': 'Own The Jet — Understanding Aircraft Brokerage: Standards, Risk, and '
+                                   'Trust [00:15:59]',
+                          'url': 'https://www.youtube.com/watch?v=i36Xg_tsVAY&t=959s',
+                          'relevance': 'Primary practitioner testimony on aircraft listing pricing '
+                                       'discipline, red flags, and assembling the deal team.'},
+                         {'title': 'Alex Bengoechea — How to Start an Aircraft Brokerage Business | '
+                                   'Step-by-Step Guide [00:17:26]',
+                          'url': 'https://www.youtube.com/watch?v=p6XXGAWrnB8&t=1046s',
+                          'relevance': 'Primary practitioner testimony on aircraft commission scaling by '
+                                       'ticket size, licensing setup, and escrow-based closings.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'i36Xg_tsVAY',
+                       'title': 'Understanding Aircraft Brokerage: Standards, Risk, and Trust',
+                       'channel': 'Own The Jet',
+                       'author': 'Own The Jet',
+                       'text': "And I've been selling airplanes for 35 years, and I still learn something "
+                               'new in every transaction I do.',
+                       'tip': "And I've been selling airplanes for 35 years, and I still learn something "
+                              'new in every transaction I do.',
+                       'timestamp': 1929,
+                       'timestamp_seconds': 1929,
+                       'timestamp_label': '[00:32:09]',
+                       'url': 'https://www.youtube.com/watch?v=i36Xg_tsVAY&t=1929s',
+                       'markdown': '[00:32:09](https://www.youtube.com/watch?v=i36Xg_tsVAY&t=1929s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '5hRyQr7CMkA',
+                       'title': 'How To Become A Yacht Broker – My favorite work ever!',
+                       'channel': 'Gerry Mendria',
+                       'author': 'Gerry Mendria',
+                       'text': 'All of a sudden was dead and what it means dead it means you have no '
+                               'income coming in.',
+                       'tip': 'All of a sudden was dead and what it means dead it means you have no income '
+                              'coming in.',
+                       'timestamp': 164,
+                       'timestamp_seconds': 164,
+                       'timestamp_label': '[00:02:44]',
+                       'url': 'https://www.youtube.com/watch?v=5hRyQr7CMkA&t=164s',
+                       'markdown': '[00:02:44](https://www.youtube.com/watch?v=5hRyQr7CMkA&t=164s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '_Shd1I2mefI',
+                       'title': 'YACHT BROKERAGE - HOW MUCH WILL I BE PAID?',
+                       'channel': 'Yacht Broker Masterclass',
+                       'author': 'Yacht Broker Masterclass',
+                       'text': "Under most circumstances the buyer's broker expects 60% of the commission "
+                               'and the sellers broker under most circumstances will expect 40% of the '
+                               'commission.',
+                       'tip': "Under most circumstances the buyer's broker expects 60% of the commission "
+                              'and the sellers broker under most circumstances will expect 40% of the '
+                              'commission.',
+                       'timestamp': 384,
+                       'timestamp_seconds': 384,
+                       'timestamp_label': '[00:06:24]',
+                       'url': 'https://www.youtube.com/watch?v=_Shd1I2mefI&t=384s',
+                       'markdown': '[00:06:24](https://www.youtube.com/watch?v=_Shd1I2mefI&t=384s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '-7bW4uN98Hc',
+                       'title': 'HOW DO I GET STARTED AS A YACHT BROKER',
+                       'channel': 'Yacht Broker Masterclass',
+                       'author': 'Yacht Broker Masterclass',
+                       'text': 'If you want to be successful you really need to live in a place where '
+                               'there are yachts and Yacht owners.',
+                       'tip': 'If you want to be successful you really need to live in a place where there '
+                              'are yachts and Yacht owners.',
+                       'timestamp': 0,
+                       'timestamp_seconds': 0,
+                       'timestamp_label': '[00:00:00]',
+                       'url': 'https://www.youtube.com/watch?v=-7bW4uN98Hc&t=0s',
+                       'markdown': '[00:00:00](https://www.youtube.com/watch?v=-7bW4uN98Hc&t=0s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'elBm9ZOqdsA',
+                       'title': 'From Zero to €1,000,000 in Yacht Commissions – The Real Math & Mindset of '
+                                'Yacht Brokers',
+                       'channel': 'The Art of Yacht Sales',
+                       'author': 'The Art of Yacht Sales',
+                       'text': 'Successful yacht brokers understand that consistency trumps singularity.',
+                       'tip': 'Successful yacht brokers understand that consistency trumps singularity.',
+                       'timestamp': 163,
+                       'timestamp_seconds': 163,
+                       'timestamp_label': '[00:02:43]',
+                       'url': 'https://www.youtube.com/watch?v=elBm9ZOqdsA&t=163s',
+                       'markdown': '[00:02:43](https://www.youtube.com/watch?v=elBm9ZOqdsA&t=163s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'wqPY1eV4vuQ',
+                       'title': 'The truth about yacht brokers and boat sales',
+                       'channel': 'Current Yachts',
+                       'author': 'Current Yachts',
+                       'text': "Right now, we're recommending that the compensation be at least 4%, but "
+                               'they have a choice to set it at two, three, four, eight.',
+                       'tip': "Right now, we're recommending that the compensation be at least 4%, but "
+                              'they have a choice to set it at two, three, four, eight.',
+                       'timestamp': 1208,
+                       'timestamp_seconds': 1208,
+                       'timestamp_label': '[00:20:08]',
+                       'url': 'https://www.youtube.com/watch?v=wqPY1eV4vuQ&t=1208s',
+                       'markdown': '[00:20:08](https://www.youtube.com/watch?v=wqPY1eV4vuQ&t=1208s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'FpmvbD9-7yc',
+                       'title': 'BREAKING IN TO YACHT BROKERAGE - How Much can I Make???',
+                       'channel': 'Yachts For Sale',
+                       'author': 'Yachts For Sale',
+                       'text': 'This business relies upon good solid cast iron watertight contracts.',
+                       'tip': 'This business relies upon good solid cast iron watertight contracts.',
+                       'timestamp': 3226,
+                       'timestamp_seconds': 3226,
+                       'timestamp_label': '[00:53:46]',
+                       'url': 'https://www.youtube.com/watch?v=FpmvbD9-7yc&t=3226s',
+                       'markdown': '[00:53:46](https://www.youtube.com/watch?v=FpmvbD9-7yc&t=3226s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'p6XXGAWrnB8',
+                       'title': 'How to Start an Aircraft Brokerage Business | Step-by-Step Guide',
+                       'channel': 'Alex Bengoechea',
+                       'author': 'Alex Bengoechea',
+                       'text': 'Now, the commission range ranges from 1% to 10%.',
+                       'tip': 'Now, the commission range ranges from 1% to 10%.',
+                       'timestamp': 1029,
+                       'timestamp_seconds': 1029,
+                       'timestamp_label': '[00:17:09]',
+                       'url': 'https://www.youtube.com/watch?v=p6XXGAWrnB8&t=1029s',
+                       'markdown': '[00:17:09](https://www.youtube.com/watch?v=p6XXGAWrnB8&t=1029s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'p6XXGAWrnB8',
+                       'title': 'How to Start an Aircraft Brokerage Business | Step-by-Step Guide',
+                       'channel': 'Alex Bengoechea',
+                       'author': 'Alex Bengoechea',
+                       'text': "There's a way to do it without using escrow, but I do not recommend it.",
+                       'tip': "There's a way to do it without using escrow, but I do not recommend it.",
+                       'timestamp': 1283,
+                       'timestamp_seconds': 1283,
+                       'timestamp_label': '[00:21:23]',
+                       'url': 'https://www.youtube.com/watch?v=p6XXGAWrnB8&t=1283s',
+                       'markdown': '[00:21:23](https://www.youtube.com/watch?v=p6XXGAWrnB8&t=1283s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'xl7JC2nh0UQ',
+                       'title': 'Private aviation and luxury yachts operate on the same rules | THE JET '
+                                'PODCAST | IABI',
+                       'channel': 'International Aircraft Broker Institute IABI',
+                       'author': 'International Aircraft Broker Institute IABI',
+                       'text': 'Ask the operator for the AOC and the D085 before booking the aircraft.',
+                       'tip': 'Ask the operator for the AOC and the D085 before booking the aircraft.',
+                       'timestamp': 0,
+                       'timestamp_seconds': 0,
+                       'timestamp_label': '[00:00:00]',
+                       'url': 'https://www.youtube.com/watch?v=xl7JC2nh0UQ&t=0s',
+                       'markdown': '[00:00:00](https://www.youtube.com/watch?v=xl7JC2nh0UQ&t=0s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Oxw138mRpnA',
+                       'title': 'Luxury Yachts, Private Aviation & High-End Clients | Ali Merchant | The '
+                                'Jet Podcast by IABI',
+                       'channel': 'International Aircraft Broker Institute IABI',
+                       'author': 'International Aircraft Broker Institute IABI',
+                       'text': 'APA stands for advanced provisioning allowance.',
+                       'tip': 'APA stands for advanced provisioning allowance.',
+                       'timestamp': 743,
+                       'timestamp_seconds': 743,
+                       'timestamp_label': '[00:12:23]',
+                       'url': 'https://www.youtube.com/watch?v=Oxw138mRpnA&t=743s',
+                       'markdown': '[00:12:23](https://www.youtube.com/watch?v=Oxw138mRpnA&t=743s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'lrdWwuDaBtw',
+                       'title': 'How Yacht Brokers Actually Source Yachts - The Jet Podcast By IABI',
+                       'channel': 'International Aircraft Broker Institute IABI',
+                       'author': 'International Aircraft Broker Institute IABI',
+                       'text': 'There is no standard sourcing software, so the roster runs to more than '
+                               '2,500 operators including owners, central agents and captain-managers.',
+                       'tip': 'There is no standard sourcing software, so the roster runs to more than '
+                              '2,500 operators including owners, central agents and captain-managers.',
+                       'timestamp': 15,
+                       'timestamp_seconds': 15,
+                       'timestamp_label': '[00:00:15]',
+                       'url': 'https://www.youtube.com/watch?v=lrdWwuDaBtw&t=15s',
+                       'markdown': '[00:00:15](https://www.youtube.com/watch?v=lrdWwuDaBtw&t=15s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'xACWJ0HGNHs',
+                       'title': 'A Complete Guide to Profiting from a Yacht Charter Investment',
+                       'channel': 'Savvypreneurship',
+                       'author': 'Savvypreneurship',
+                       'text': 'Yacht charter is not passive income.',
+                       'tip': 'Yacht charter is not passive income.',
+                       'timestamp': 1112,
+                       'timestamp_seconds': 1112,
+                       'timestamp_label': '[00:18:32]',
+                       'url': 'https://www.youtube.com/watch?v=xACWJ0HGNHs&t=1112s',
+                       'markdown': '[00:18:32](https://www.youtube.com/watch?v=xACWJ0HGNHs&t=1112s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'RPROcS6hZSE',
+                       'title': 'Broker Panel Case Studies',
+                       'channel': 'International Yacht Brokers Association',
+                       'author': 'International Yacht Brokers Association',
+                       'text': 'Nobody sues, because this business runs on trust.',
+                       'tip': 'Nobody sues, because this business runs on trust.',
+                       'timestamp': 581,
+                       'timestamp_seconds': 581,
+                       'timestamp_label': '[00:09:41]',
+                       'url': 'https://www.youtube.com/watch?v=RPROcS6hZSE&t=581s',
+                       'markdown': '[00:09:41](https://www.youtube.com/watch?v=RPROcS6hZSE&t=581s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'WWrDBEGo6gM',
+                       'title': 'The Economics of Being a Luxury Yacht Broker',
+                       'channel': 'Wealth Pilot',
+                       'author': 'Wealth Pilot',
+                       'text': 'It is a feast or famine economy.',
+                       'tip': 'It is a feast or famine economy.',
+                       'timestamp': 129,
+                       'timestamp_seconds': 129,
+                       'timestamp_label': '[00:02:09]',
+                       'url': 'https://www.youtube.com/watch?v=WWrDBEGo6gM&t=129s',
+                       'markdown': '[00:02:09](https://www.youtube.com/watch?v=WWrDBEGo6gM&t=129s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'LBp3Cz4zFQI',
+                       'title': 'The Business Behind Superyacht Charters | Who Really Profits?',
+                       'channel': 'Behind the Gold',
+                       'author': 'Behind the Gold',
+                       'text': 'Charter rarely erases the cost of the dream.',
+                       'tip': 'Charter rarely erases the cost of the dream.',
+                       'timestamp': 101,
+                       'timestamp_seconds': 101,
+                       'timestamp_label': '[00:01:41]',
+                       'url': 'https://www.youtube.com/watch?v=LBp3Cz4zFQI&t=101s',
+                       'markdown': '[00:01:41](https://www.youtube.com/watch?v=LBp3Cz4zFQI&t=101s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Js6FctCqF3k',
+                       'title': 'Executive Yacht - Luxury Yacht Sales | Brokerage | Charters',
+                       'channel': 'Executive Yacht',
+                       'author': 'Executive Yacht',
+                       'text': 'Executive Yacht aims to be all things to a very select few.',
+                       'tip': 'Executive Yacht aims to be all things to a very select few.',
+                       'timestamp': 77,
+                       'timestamp_seconds': 77,
+                       'timestamp_label': '[00:01:17]',
+                       'url': 'https://www.youtube.com/watch?v=Js6FctCqF3k&t=77s',
+                       'markdown': '[00:01:17](https://www.youtube.com/watch?v=Js6FctCqF3k&t=77s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'}]}

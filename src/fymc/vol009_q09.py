@@ -1,817 +1,840 @@
 from __future__ import annotations
 
-CHAPTER_9 = {
-    "id": "Q9",
-    "chapter_id": "Q9",
-    "chapter_number": 9,
-    "question_number": 9,
-    "slug": "contracts-statutory-guardrails-licensing-outreach-scripts",
-    "question_prompt": "Which federal/state statutes, licensing boundaries, contract clauses, and compliant outreach scripts govern million-dollar lead generation?",
-    "kicker": "Q9 / THE BIG MONEY PLAYBOOKS",
-    "title": "Contracts, Statutory Guardrails, Licensing & Outreach Scripts",
-    "subtitle": "TCPA, CAN-SPAM, State Financing Rules, UCC Signals, Carrier Economics, and Evidence-Based Opportunity Contracts",
-    "layout_template": "legal_compliance_notes",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #21, Million-Dollar Lead Generation, ranks #18 with an 86/100 "
-        "Money-to-Manpower Score across 30 mapped plays. Its product is documented "
-        "enterprise buying intent, not ownership of a client's million-dollar contract. "
-        "Build contracts around accepted opportunities, traceable account attribution, "
-        "lawful contact channels, and sector-specific compensation boundaries. This "
-        "chapter separates UCC filing signals from debt maturity, legitimate telecom "
-        "demand from manufactured traffic, and authorized advertising rewards from "
-        "client-funded reward speculation. Canonical annual owner profit is $30,000 "
-        "Conservative, $202,500 Base, and $480,000 Scaled, on operator revenue of "
-        "$150,000, $675,000, and $1,200,000 respectively. Preserve those economics "
-        "through precise fee triggers, state-specific operating requirements, "
-        "inspectable outreach evidence, and scripts that never imply authority "
-        "the agency does not possess."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$150,000",
-            "context": "Annual operator revenue from retainers and qualified-opportunity fees; excludes client contract values",
-            "note": "20% net margin; $30,000 annual owner net profit; 2 FT + 3 C",
-        },
-        {
-            "label": "Base",
-            "value": "$675,000",
-            "context": "Annual operator revenue from retainers and qualified-opportunity fees; excludes client contract values",
-            "note": "30.0% net margin; $202,500 annual owner net profit; 2 FT + 3 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$1,200,000",
-            "context": "Annual operator revenue from retainers and qualified-opportunity fees; excludes client contract values",
-            "note": "40% net margin; $480,000 annual owner net profit; 3 FT + 4 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Classify the contact, channel, jurisdiction, and compensation before launch",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Build a channel register before loading accounts into Salesforce, "
-                    "HubSpot, Outreach, or Salesloft. Record the recipient's state, "
-                    "business role, number type, address source, campaign purpose, "
-                    "dialing method, and seller identity. A business title does not "
-                    "convert a personal mobile number into an unrestricted calling "
-                    "endpoint. The TCPA, 47 U.S.C. § 227, and 47 CFR § 64.1200 "
-                    "distinguish equipment, artificial or prerecorded voice, called "
-                    "number, and message purpose; evaluate each combination rather "
-                    "than treating B2B as a universal exemption. AI-generated voices "
-                    "fall within artificial-voice restrictions. For covered "
-                    "telemarketing, obtain the required prior express written consent "
-                    "before using restricted technologies. Human dialing avoids some "
-                    "automation-specific issues, but it does not erase applicable "
-                    "do-not-call rules, state solicitation restrictions, calling "
-                    "hours, or deception prohibitions. Scrub covered campaigns against "
-                    "the National Do Not Call Registry using data no older than "
-                    "31 days, and maintain seller-specific suppression records. "
-                    "Apply recipient-local scheduling and document reasonable "
-                    "revocations across the relevant campaign systems. Export a "
-                    "prelaunch evidence packet containing script version, list "
-                    "provenance, suppression timestamp, seller authorization, and "
-                    "equipment configuration. A vendor statement that its dialer "
-                    "is compliant cannot substitute for these campaign-level facts."
-                ),
-                (
-                    "Commercial work-email sequences need their own operating rules. "
-                    "CAN-SPAM, 15 U.S.C. § 7704, applies to B2B commercial email: use "
-                    "accurate routing information, nondeceptive subjects, required "
-                    "advertising identification, a valid physical postal address, and "
-                    "a clear opt-out mechanism. Keep that mechanism functional for "
-                    "at least 30 days after sending and honor requests within "
-                    "10 business days; immediate suppression is the stronger "
-                    "operating standard. Both the promoted business and the sender "
-                    "can face responsibility, so allocate execution without "
-                    "pretending the contract eliminates statutory exposure. Configure "
-                    "suppression centrally rather than separately in every sequence. "
-                    "California's CCPA can cover business-contact personal "
-                    "information when the business meets statutory applicability "
-                    "conditions; its former broad B2B exemption has expired. "
-                    "Document whether the agency acts as a business, service "
-                    "provider, contractor, or third party for each use. California "
-                    "Civil Code § 1798.100 requires relevant contractual controls "
-                    "when personal information is disclosed to covered recipients. "
-                    "Public UCC records and privately enriched contact profiles "
-                    "require separate analysis; a public filing does not "
-                    "automatically make every appended mobile number unrestricted. "
-                    "Map applicable access, deletion, correction, and sale or "
-                    "sharing opt-out workflows to actual database fields and "
-                    "downstream recipients."
-                ),
-                (
-                    "Maintain a jurisdiction matrix that follows recipients and "
-                    "activities, not just the agency's incorporation address. "
-                    "Florida Statutes § 501.059 and Oklahoma's Telephone "
-                    "Solicitation Act contain state-specific definitions and "
-                    "restrictions; determine their consumer, transaction, and "
-                    "technology scope before applying them to enterprise outreach. "
-                    "Do not assume every state provision covers every B2B call, "
-                    "and do not assume a federal exemption answers the state "
-                    "question. California Penal Code § 632 creates recording "
-                    "exposure for confidential communications; interstate discovery "
-                    "calls should use an announced recording request and an "
-                    "unrecorded alternative. For covered consumer telemarketing, "
-                    "evaluate the FTC Telemarketing Sales Rule, including applicable "
-                    "recordkeeping and calling restrictions. Although many B2B "
-                    "calls retain exemptions from much of that rule, its expanded "
-                    "misrepresentation prohibitions reach B2B telemarketing. Check "
-                    "state seller registration, bonding, and salesperson rules "
-                    "where applicable. Route international campaigns into a "
-                    "separate jurisdiction review rather than exporting the "
-                    "domestic playbook unchanged. The operating deliverable is "
-                    "a dated decision record: covered activity, relevant rule, "
-                    "implemented control, responsible owner, and evidence location. "
-                    "Revisit that record when a campaign adds SMS, synthetic "
-                    "voice, consumer contacts, a new state, or a compensation "
-                    "structure tied to regulated transactions."
-                ),
-            ],
-            "table": {
-                "caption": "Channel and Jurisdiction Evidence Matrix for Enterprise Account Outreach",
-                "headers": [
-                    "Activity and legal exposure",
-                    "Concrete operating requirement",
-                    "Evidence retained with campaign",
-                    "Failure response and permitted alternative",
-                ],
-                "rows": [
-                    [
-                        "Artificial-voice outreach reaching personal mobile business contacts",
-                        "Determine TCPA consent requirements before activating voice automation",
-                        "Store consent language, timestamp, seller identity, and collection source",
-                        "Disable restricted automation and use an otherwise lawful channel",
-                    ],
-                    [
-                        "Commercial work-email sequences promoting enterprise vendor discovery meetings",
-                        "Use truthful subjects, sender identification, postal address, and unsubscribe",
-                        "Retain rendered messages, delivery records, and suppression processing timestamps",
-                        "Stop the sequence immediately when unsubscribe processing fails",
-                    ],
-                    [
-                        "Covered telephone campaigns using purchased executive contact databases",
-                        "Apply federal and state calling restrictions to actual recipients",
-                        "Keep registry scrub dates and seller-specific suppression matching results",
-                        "Quarantine unmatched records until recipient and channel classification completes",
-                    ],
-                    [
-                        "California business-contact profiles enriched beyond public filing information",
-                        "Assess CCPA coverage, processing role, disclosures, and recipient contracts",
-                        "Preserve data lineage, contractual restrictions, and request fulfillment logs",
-                        "Remove unauthorized enrichment and propagate applicable deletion instructions downstream",
-                    ],
-                    [
-                        "Interstate discovery calls recorded for qualification and coaching",
-                        "Request recording permission and offer an equivalent unrecorded conversation",
-                        "Capture permission evidence without recording confidential substance prematurely",
-                        "Stop recording and retain only authorized written qualification notes",
-                    ],
-                    [
-                        "B2B telemarketing claims about savings, affiliations, and buying intent",
-                        "Substantiate material representations under applicable FTC and state requirements",
-                        "Archive approved claims, supporting evidence, and actual script versions",
-                        "Withdraw unsupported claims and retrain every affected calling contractor",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four launch checks that produce inspectable evidence",
-                "body": (
-                    "Release a campaign only after its owner can retrieve the "
-                    "underlying records, not merely confirm that a checklist exists."
-                ),
-                "items": [
-                    "Match recipient location, number type, dialing technology, and seller identity to a dated federal and state channel assessment.",
-                    "Test suppression using seeded opt-out records across CRM, sequencer, dialer, enrichment exports, and replacement vendor imports.",
-                    "Verify the proposed fee against the sector's licensing and referral restrictions before attaching an opportunity price.",
-                    "Retrieve one complete sample packet containing source permission, approved script, required consent, client authorization, and invoice evidence.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Constrain the three mapped plays to lawful signals and genuine economic demand",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "For ucc1_expiration_refi_trigger_arbitrage, treat Secretary of "
-                    "State filings as research signals, never proof of financing "
-                    "terms. UCC § 9-515 generally gives ordinary financing "
-                    "statements five-year effectiveness and permits continuation "
-                    "during the final six months, subject to exceptions. Filing "
-                    "lapse is not loan maturity, and neither an initial filing "
-                    "nor a continuation establishes an MCA balance, stacking, "
-                    "interest cost, or refinancing eligibility. Identify businesses "
-                    "four to nine months after a relevant filing, then ask an "
-                    "authorized finance contact to verify the instrument and "
-                    "timing. Illustrative screening math is 1,000 filings, 120 "
-                    "verified operating-company matches, 24 substantive "
-                    "conversations, and six accepted opportunities at $1,500, "
-                    "producing $9,000 in agency fees before costs. That fee "
-                    "requires a permissible compensation structure; client "
-                    "financing principal never becomes agency revenue. California "
-                    "Financial Code § 22100 can require licensing for covered "
-                    "commercial loan brokering, while California and New York "
-                    "commercial financing disclosure regimes require separate "
-                    "product and role analysis. An MCA label does not settle "
-                    "transaction classification. Use direct mail, lawful B2B "
-                    "work-email sequences, and manual human-dialed outreach as "
-                    "channel fallbacks, paired with required state financing "
-                    "disclosures at the applicable offer stage. If compensation "
-                    "or conduct crosses a licensing boundary, narrow the "
-                    "service or use an appropriately licensed partner."
-                ),
-                (
-                    "For telecom_voice_traffic_pumping_8yy_sms_arbitrage, reject "
-                    "manufactured demand and begin with carrier economics. Free "
-                    "conference bridges, radio call-in services, AI voice "
-                    "utilities, and verification endpoints create different "
-                    "traffic and compensation profiles; the play's name does "
-                    "not establish a lawful tariff entitlement. A CLEC revenue "
-                    "share requires review of access-stimulation definitions "
-                    "under 47 CFR § 61.3, applicable transport obligations under "
-                    "47 CFR § 51.914, current 8YY compensation treatment, and "
-                    "the executed carrier agreement. International Tier-2 or "
-                    "Tier-3 routing does not remove those obligations where "
-                    "they apply. Require genuine user initiation for all "
-                    "monetized sessions, auditable fraud controls, and "
-                    "appropriate STIR/SHAKEN treatment for covered voice "
-                    "traffic. Attestation authenticates calling-number "
-                    "information; it does not prove consent or validate the "
-                    "business model. SMS instead needs documented user "
-                    "authorization and applicable messaging-program controls; "
-                    "voice attestation is not an SMS safeguard. Illustratively, "
-                    "10 million genuine minutes at an assumed contractual "
-                    "$0.001 net contribution produce $10,000 before fixed "
-                    "costs, disputes, and reserves, not demand-generation "
-                    "revenue. The fallback is a non-access-stimulation SIP "
-                    "service with genuine customer demand. Distribute "
-                    "operations across jurisdictions only for legitimate "
-                    "service needs with destination-specific review, never "
-                    "to escape compensation restrictions. Pause settlement "
-                    "assumptions until carrier statements substantiate "
-                    "billable traffic and collectability."
-                ),
-                (
-                    "For agency_ad_spend_card_multiplier_rebate_cycling, preserve "
-                    "the distinction between media throughput and agency "
-                    "earnings. Obtain written client authorization identifying "
-                    "the advertising accounts, eligible payment arrangement, "
-                    "budget, reward ownership, rebate treatment, and funding "
-                    "schedule. Card issuer terms, agency program eligibility, "
-                    "Google Ads or Meta billing permissions, and client "
-                    "procurement terms must support the arrangement; ordinary "
-                    "card access is insufficient. Illustrative monthly "
-                    "economics are $100,000 genuine media spend, $2,000 "
-                    "contract-permitted rewards, less $600 processing, "
-                    "$400 financing, and $700 client pass-through, leaving "
-                    "$300 before labor and other costs. The $100,000 is "
-                    "not agency revenue, and that $300 is not an addition "
-                    "to this chapter's canonical retainer-and-opportunity "
-                    "scorecard. Assess gross-versus-net accounting from the "
-                    "actual principal-agent relationship. Never purchase "
-                    "unneeded advertising, cycle artificial transactions, "
-                    "misstate merchant categories, or extend unauthorized "
-                    "client credit to chase points. Fall back to client-direct "
-                    "billing or prefunded approved agency terms and stop "
-                    "rewards-dependent spending. Across all three plays, "
-                    "screen sector restrictions before promising success-based "
-                    "compensation: securities introductions can implicate "
-                    "15 U.S.C. § 78o, federally reimbursed healthcare "
-                    "referrals implicate 42 U.S.C. § 1320a-7b(b), and "
-                    "federal procurement contingent fees implicate FAR "
-                    "Subpart 3.4. A fixed-fee label cannot cure conduct "
-                    "that remains regulated."
-                ),
-            ],
-            "table": {
-                "caption": "Mapped-Play Economics, Licensing Boundaries, and Operational Fallbacks",
-                "headers": [
-                    "Play or sector boundary",
-                    "Permitted evidence and economic calculation",
-                    "Specific restriction requiring role analysis",
-                    "Fallback preserving a legitimate customer service",
-                ],
-                "rows": [
-                    [
-                        "UCC filing research supporting verified commercial refinancing introductions",
-                        "Six accepted opportunities multiplied by $1,500 produce $9,000 fees",
-                        "Filing dates cannot establish debt maturity or licensing exemption",
-                        "Use lawful mail and human outreach with required financing disclosures",
-                    ],
-                    [
-                        "CLEC and international switch arrangements for genuine voice services",
-                        "Ten million minutes multiplied by $0.001 produce $10,000 contribution",
-                        "Access-stimulation and transport rules can defeat assumed settlement economics",
-                        "Sell genuine SIP services without prohibited access-compensation dependence",
-                    ],
-                    [
-                        "Agency payment arrangements supporting authorized advertising purchases and rewards",
-                        "Two thousand dollars rewards less $1,700 deductions leaves $300",
-                        "Issuer terms and client agreements determine eligible reward ownership",
-                        "Move to client-direct billing or prefunded approved agency arrangements",
-                    ],
-                    [
-                        "Enterprise introductions involving securities transactions and investment capital raising",
-                        "Separate ordinary marketing deliverables from transaction-based investment solicitation compensation",
-                        "Broker registration analysis examines actual conduct and compensation structure",
-                        "Limit services to permitted marketing or engage appropriately registered intermediaries",
-                    ],
-                    [
-                        "Healthcare enterprise sourcing connected with federally reimbursed patient referrals",
-                        "Document actual services and review remuneration for referral connections",
-                        "Federal anti-kickback restrictions require fact-specific exception and safe-harbor analysis",
-                        "Remove prohibited referral remuneration rather than merely renaming invoices",
-                    ],
-                    [
-                        "Federal contract origination involving contingent procurement success compensation arrangements",
-                        "Separate documented commercial marketing work from contract-award contingent payments",
-                        "FAR contingent-fee restrictions include specifically defined employee and agency exceptions",
-                        "Use a reviewed permissible scope with accurate procurement representations",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Protect margin by challenging the signal before pricing it",
-                "body": (
-                    "The expensive mistakes occur when an attractive event is "
-                    "treated as proof of debt, traffic eligibility, or reward ownership."
-                ),
-                "items": [
-                    "Store UCC filing, continuation, amendment, and termination events separately; ask the finance contact to validate facility timing before proposing refinancing.",
-                    "Require sample carrier settlements and contractual dispute deductions before valuing a telecom introduction; a quoted tariff is not collected cash.",
-                    "Run the advertising arrangement at zero rewards in the cash forecast; reject budgets that become unaffordable when issuer benefits change.",
-                    "Create a Salesforce related record containing the opportunity evidence bundle, so invoice disputes reference immutable facts rather than overwritten lead fields.",
-                ],
-            },
-        },
-        {
-            "heading": "3. Write the agreement around accepted evidence, bounded rights, and exact fee math",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Use an MSA plus a campaign-specific statement of work. "
-                    "Define target accounts, excluded sectors, permitted "
-                    "channels, seller identity, subcontractor access, and "
-                    "the exact qualification evidence that earns a fee. "
-                    "A useful trigger is an attended discovery meeting "
-                    "with an identified buying-role participant, a "
-                    "documented business problem within scope, and an "
-                    "agreed next step, provided the account survives "
-                    "the contractual duplicate check. Do not sell "
-                    "calendar bookings as qualified pipeline without "
-                    "saying so. Specify a five-business-day review "
-                    "window, enumerated rejection reasons, and a "
-                    "named escalation contact. Any deemed acceptance "
-                    "mechanism needs conspicuous agreement and accessible "
-                    "evidence; unresolved objections should follow the "
-                    "dispute process rather than disappear through "
-                    "CRM status changes. Define cancellation, no-show "
-                    "replacement, refunds or credits, taxes, invoice "
-                    "timing, and termination assistance. Provide a "
-                    "sample clause: 'An Opportunity Fee becomes "
-                    "payable only when the meeting occurs, the "
-                    "Qualification Record contains every required "
-                    "field, and acceptance is established under "
-                    "the review procedure in this statement of "
-                    "work.' Add an attribution exhibit covering "
-                    "existing pipeline, account hierarchies, contacts "
-                    "moving employers, and competing sources. Store "
-                    "the agreed baseline account export before "
-                    "outreach begins, with a timestamp and "
-                    "restricted modification rights."
-                ),
-                (
-                    "Reconcile the commercial schedule to operator "
-                    "revenue rather than client deal size. One "
-                    "illustrative Conservative construction is three "
-                    "clients paying $3,000 monthly for twelve "
-                    "months, plus 28 accepted opportunities at "
-                    "$1,500: $108,000 plus $42,000 equals "
-                    "$150,000. Costs of $120,000 leave $30,000 "
-                    "owner net profit, a 20% margin, with "
-                    "2 FT plus 3 C. Base can comprise five "
-                    "clients at $7,500 monthly, plus 90 "
-                    "opportunities at $2,500: $450,000 plus "
-                    "$225,000 equals $675,000. Costs of "
-                    "$472,500 leave $202,500, a 30.0% margin, "
-                    "with the same team count. Scaled can "
-                    "comprise eight clients at $10,000 monthly, "
-                    "plus 80 opportunities at $3,000: $960,000 "
-                    "plus $240,000 equals $1,200,000. Costs "
-                    "of $720,000 leave $480,000, a 40% "
-                    "margin, with 3 FT plus 4 C. These "
-                    "are alternative annual constructions, not "
-                    "additive revenue streams or forecasts of "
-                    "identical client behavior. Contractor counts "
-                    "do not imply full-time utilization. Track "
-                    "delivery hours, collected cash, replacement "
-                    "meetings, and account concentration separately. "
-                    "The stated monthly operating range is not "
-                    "a substitute for total annual scenario "
-                    "costs; payroll, variable delivery, and other "
-                    "expenses must reconcile to the complete "
-                    "profit bridge."
-                ),
-                (
-                    "Keep anti-circumvention narrow enough to identify "
-                    "what was actually introduced. Use named "
-                    "accounts, documented introductions, a negotiated "
-                    "protection period, and exclusions for proven "
-                    "preexisting relationships. Avoid claiming "
-                    "ownership of an entire market or all "
-                    "future client revenue. Allocate liability "
-                    "with a negotiated aggregate cap and "
-                    "explicit treatment of unpaid fees, "
-                    "confidentiality breaches, data incidents, "
-                    "intentional misconduct, and indemnities; "
-                    "state law can constrain enforceability. "
-                    "Assign responsibility for inaccurate client "
-                    "claims separately from unauthorized agency "
-                    "outreach, with defense control and prompt "
-                    "notice procedures. Select governing law, "
-                    "forum, escalation deadlines, and either "
-                    "litigation or a specified arbitration "
-                    "process. Define ownership of client "
-                    "account lists, commissioned deliverables, "
-                    "agency templates, campaign telemetry, "
-                    "and derived scoring models. A database "
-                    "ownership clause cannot authorize "
-                    "processing that privacy law or the "
-                    "source license forbids. Require "
-                    "subprocessor disclosure, minimum access, "
-                    "security incident notification timing, "
-                    "return or deletion at termination, "
-                    "and narrowly justified retention of "
-                    "billing or suppression evidence. Preserve "
-                    "only what serves a documented purpose, "
-                    "and prevent retained suppression records "
-                    "from becoming another prospecting list. "
-                    "Tie audits to specific records and "
-                    "reasonable access procedures so verification "
-                    "does not expose unrelated clients or "
-                    "grant unrestricted access to production "
-                    "systems."
-                ),
-            ],
-            "table": {
-                "caption": "Negotiation Checklist for Evidence-Based Qualified-Opportunity Agreements",
-                "headers": [
-                    "Required contract clause and business purpose",
-                    "Concrete drafting position for the agency",
-                    "Evidence supporting performance and fee collection",
-                    "Failure treatment limiting unnecessary commercial conflict",
-                ],
-                "rows": [
-                    [
-                        "Scope clause identifying accounts, channels, sectors, and qualification deliverables",
-                        "Attach account criteria and prohibit unapproved channel or sector expansion",
-                        "Retain signed scope versions and campaign configuration matched to each",
-                        "Use written change orders before incurring additional delivery obligations",
-                    ],
-                    [
-                        "Fee trigger separating attended qualified discoveries from calendar bookings",
-                        "Require complete qualification evidence and an explicit acceptance procedure",
-                        "Preserve attendee role, meeting occurrence, next step, and duplicate assessment",
-                        "Apply agreed replacement or rejection terms to documented deficiencies",
-                    ],
-                    [
-                        "Attribution and anti-circumvention protecting documented introductions without market ownership",
-                        "Limit protection to named accounts and a negotiated finite period",
-                        "Archive baseline pipeline exports and dated introduction records before launch",
-                        "Exclude proven preexisting opportunities through the agreed evidence process",
-                    ],
-                    [
-                        "Liability and indemnity allocating responsibility for identifiable operational failures",
-                        "Negotiate a cap with explicit exceptions and coordinated defense procedures",
-                        "Retain client claim approvals and agency channel execution audit records",
-                        "Escalate incidents promptly while preserving defenses and affected customer evidence",
-                    ],
-                    [
-                        "Dispute resolution specifying governing law, forum, and escalation sequence",
-                        "Name decision makers and deadlines before selecting litigation or arbitration",
-                        "Maintain invoice evidence bundles and dated written objection histories",
-                        "Continue undisputed services only under the agreed payment and suspension terms",
-                    ],
-                    [
-                        "IP and data clauses separating reusable methods from client information",
-                        "Define ownership, licensed uses, subprocessors, retention, and termination deletion duties",
-                        "Keep access logs, source licenses, deletion records, and export inventories",
-                        "Return client assets while retaining only narrowly justified protected records",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "4. Use exact scripts, evidence-first discovery, and a repeatable release procedure",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Use scripts that identify the commercial "
-                    "purpose without pretending to know private "
-                    "account facts. In this illustrative "
-                    "campaign, Signal Ridge is the agency "
-                    "and Harbor Systems is its authorized "
-                    "client. Email subject: 'Commercial "
-                    "outreach: vendor discovery for your "
-                    "operations team.' Body: 'I work with "
-                    "Signal Ridge, an agency introducing "
-                    "enterprise teams to Harbor Systems. "
-                    "This is a commercial message about "
-                    "a potential vendor discussion. Are "
-                    "you the right person to evaluate "
-                    "workflow automation for your operations "
-                    "team? If this is relevant, I can "
-                    "arrange a twenty-minute discovery "
-                    "conversation. If you prefer no further "
-                    "marketing email from this campaign, "
-                    "reply unsubscribe or use the unsubscribe "
-                    "link below.' Send only after replacing "
-                    "illustrative identities with actual "
-                    "authorized identities and appending "
-                    "the sender's valid physical postal "
-                    "address and functioning opt-out link. "
-                    "Do not disguise advertising as an "
-                    "invoice, internal escalation, security "
-                    "alert, or prior conversation. For "
-                    "UCC-triggered outreach, add: 'We "
-                    "reviewed a public financing filing; "
-                    "that record does not tell us your "
-                    "current balance or maturity date. "
-                    "Would a review of financing options "
-                    "be relevant?' Never claim the "
-                    "prospect is distressed, overpaying, "
-                    "or approaching default based only "
-                    "on filing history."
-                ),
-                (
-                    "For a permitted manually dialed "
-                    "call, use: 'Hello, I am calling "
-                    "from Signal Ridge on behalf of "
-                    "Harbor Systems about an enterprise "
-                    "vendor discussion. Is this a suitable "
-                    "time for a brief explanation?' "
-                    "After permission: 'We help arrange "
-                    "discovery meetings about operations "
-                    "automation. Do you evaluate that "
-                    "area, or should we stop contacting "
-                    "this number?' If declined: 'Understood. "
-                    "I will add this number to our "
-                    "do-not-call list for this campaign.' "
-                    "Apply the actual suppression scope "
-                    "required by the request and "
-                    "applicable rules, not a narrower "
-                    "interpretation chosen by the script. "
-                    "Before recording, say: 'May we "
-                    "record this discussion for accurate "
-                    "qualification notes? We can continue "
-                    "without recording.' Obtain agreement "
-                    "before recording confidential substance. "
-                    "For discovery, ask: 'What operating "
-                    "problem is receiving budget attention? "
-                    "Who evaluates a solution, who "
-                    "controls procurement, and what event "
-                    "would justify a next meeting?' "
-                    "Close with: 'May we share these "
-                    "business requirements and your work "
-                    "contact details with Harbor Systems "
-                    "to arrange that next meeting?' "
-                    "Record the answer accurately. "
-                    "Permission for that introduction "
-                    "does not establish permission for "
-                    "automated marketing calls, unrelated "
-                    "vendors, or indefinite resale of "
-                    "the contact profile."
-                ),
-                (
-                    "For financing discovery, use: 'Are "
-                    "you authorized to discuss the "
-                    "business's financing options, and "
-                    "would you like an introduction "
-                    "to the identified provider? We "
-                    "do not determine approval or "
-                    "pricing. Any offer will come "
-                    "from the provider with the "
-                    "applicable disclosures.' Keep bank "
-                    "statements, account credentials, and "
-                    "sensitive underwriting documents "
-                    "out of the lead-generation CRM; "
-                    "use the provider's authorized "
-                    "intake process. For advertising "
-                    "arrangements, ask: 'Does your "
-                    "procurement policy permit agency "
-                    "payment of media, and who owns "
-                    "any rewards or rebates under "
-                    "the signed arrangement?' For "
-                    "telecom buyers, ask: 'Which "
-                    "genuine user action initiates "
-                    "each session, which carrier "
-                    "contract permits settlement, and "
-                    "who bears disputed traffic "
-                    "charges?' These questions expose "
-                    "commercial feasibility without "
-                    "soliciting manipulation. Train "
-                    "contractors on the approved "
-                    "scripts, then audit actual "
-                    "message samples and authorized "
-                    "call notes against them. "
-                    "Reconcile accepted opportunities "
-                    "to invoices weekly, investigate "
-                    "repeated rejection reasons, and "
-                    "measure concentration by collected "
-                    "client revenue. Stop a defective "
-                    "channel while preserving lawful "
-                    "alternatives. The service should "
-                    "survive a lost data vendor, "
-                    "withdrawn card benefit, disputed "
-                    "carrier settlement, or unavailable "
-                    "automation feature because its "
-                    "real asset is verified buyer "
-                    "intent supported by retrievable "
-                    "evidence."
-                ),
-            ],
-            "table": {
-                "caption": "Verbatim Field Scripts and the Records They Must Produce",
-                "headers": [
-                    "Conversation moment and permitted operating context",
-                    "Exact words the operator can use",
-                    "Evidence to record without unnecessary personal information",
-                    "Immediate response when the conversation cannot proceed",
-                ],
-                "rows": [
-                    [
-                        "First manual call within an already authorized campaign",
-                        "Is this a suitable time for a brief explanation?",
-                        "Record recipient response and the actual seller represented",
-                        "End promptly when declined and honor any suppression request",
-                    ],
-                    [
-                        "UCC research discussion without verified private financing terms",
-                        "Would a review of financing options be relevant?",
-                        "Record expressed interest without inventing balances or maturity dates",
-                        "Stop financing qualification when interest or authorization is absent",
-                    ],
-                    [
-                        "Discovery recording request before capturing any confidential substance",
-                        "We can continue without recording if you prefer.",
-                        "Record permission outcome and restrict access to authorized notes",
-                        "Continue unrecorded or end recording-dependent activity without pressure",
-                    ],
-                    [
-                        "Enterprise qualification identifying an actual procurement next step",
-                        "What event would justify a next meeting?",
-                        "Capture business problem, buying role, and agreed next action",
-                        "Classify exploratory interest separately from a contractually qualified opportunity",
-                    ],
-                    [
-                        "Client advertising authorization before choosing agency payment arrangements",
-                        "Who owns any rewards under the signed arrangement?",
-                        "Retain procurement authorization and the executed reward allocation clause",
-                        "Use client-direct billing until payment and ownership terms align",
-                    ],
-                    [
-                        "Telecom service discovery testing genuine demand and settlement responsibility",
-                        "Who bears disputed traffic charges under your carrier contract?",
-                        "Retain carrier obligations and documented user initiation evidence requirements",
-                        "Exclude unverified traffic economics from opportunity value and pricing",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Classify the campaign and compensation",
-                    "action": "Create the jurisdiction, channel, sector, and payment-role record.",
-                    "detail": (
-                        "Identify recipient states, contact types, equipment, actual "
-                        "seller, relevant registrations, and any financing, securities, "
-                        "healthcare, telecom, or procurement restrictions."
-                    ),
-                },
-                {
-                    "step": 2,
-                    "title": "Bind scope to evidence and data rights",
-                    "action": "Execute the MSA, statement of work, and applicable data terms.",
-                    "detail": (
-                        "Attach the account baseline, qualification fields, fee "
-                        "schedule, acceptance procedure, attribution window, source "
-                        "licenses, ownership rules, and termination handling."
-                    ),
-                },
-                {
-                    "step": 3,
-                    "title": "Test the actual outreach path",
-                    "action": "Verify suppression, sender identity, permissions, scripts, and routing.",
-                    "detail": (
-                        "Use internal test records to confirm opt-out propagation, "
-                        "correct postal identification, lawful scheduling, recording "
-                        "choices, and the absence of unauthorized automated outreach."
-                    ),
-                },
-                {
-                    "step": 4,
-                    "title": "Release, reconcile, and investigate exceptions",
-                    "action": "Launch the authorized campaign and review evidence-linked invoices weekly.",
-                    "detail": (
-                        "Compare accepted opportunities with qualification records "
-                        "and collected fees; suspend defective channels, investigate "
-                        "disputes, and preserve lawful alternative delivery methods."
-                    ),
-                },
-            ],
-        },
-    ],
-    "pull_quote": "A million-dollar client opportunity earns an agency fee only when lawful access, verified intent, and contractual evidence agree.",
-    "diagram_id": "diag-05",
-    "action_checklist": [
-        "Build a recipient-state and channel register covering TCPA technology, applicable calling rules, work-email requirements, and recording permissions.",
-        "Separate UCC filing events from verified financing terms and document the licensing and disclosure analysis before selling refinancing introductions.",
-        "Require carrier-contract evidence for telecom economics and client procurement authorization for every agency-funded advertising arrangement.",
-        "Execute a qualification-based fee schedule with duplicate rules, bounded attribution, anti-circumvention limits, liability allocation, dispute procedures, and data rights.",
-        "Load approved email, manual-call, discovery, recording, and suppression scripts into the team's actual delivery tools and test each workflow.",
-        "Reconcile collected retainers and opportunity fees to the three canonical annual scenarios without counting financing principal, media spend, or client contract values.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "47 U.S.C. § 227 — Restrictions on telephone equipment use",
-            "url": "https://www.law.cornell.edu/uscode/text/47/227",
-            "relevance": "Establishes federal restrictions relevant to automated calls, artificial or prerecorded voices, and protected telephone recipients.",
-        },
-        {
-            "title": "47 CFR § 64.1200 — Delivery restrictions",
-            "url": "https://www.ecfr.gov/current/title-47/section-64.1200",
-            "relevance": "Supplies operational rules for covered calling, consent, do-not-call procedures, and related communications practices.",
-        },
-        {
-            "title": "15 U.S.C. § 7704 — Commercial electronic mail requirements",
-            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
-            "relevance": "Governs truthful commercial email, advertising identification, postal identification, opt-out mechanisms, and suppression timing.",
-        },
-        {
-            "title": "16 CFR Part 310 — Telemarketing Sales Rule",
-            "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-C/part-310",
-            "relevance": "Defines covered telemarketing practices, exemptions, recordkeeping obligations, and prohibitions relevant to deceptive B2B representations.",
-        },
-        {
-            "title": "California Civil Code § 1798.100 — Personal information obligations",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1798.100.",
-            "relevance": "Establishes collection and processing obligations and contractual requirements for covered personal-information disclosures.",
-        },
-        {
-            "title": "California Penal Code § 632 — Confidential communication recording",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=PEN&sectionNum=632.",
-            "relevance": "Supports explicit recording-permission procedures for confidential discovery communications involving California.",
-        },
-        {
-            "title": "Florida Statutes § 501.059 — Telephone solicitation",
-            "url": "https://www.leg.state.fl.us/statutes/index.cfm?App_mode=Display_Statute&URL=0500-0599/0501/Sections/0501.059.html",
-            "relevance": "Requires transaction-specific analysis of Florida solicitation definitions, consent provisions, and calling restrictions.",
-        },
-        {
-            "title": "UCC § 9-515 — Duration and effectiveness of financing statements",
-            "url": "https://www.law.cornell.edu/ucc/9/9-515",
-            "relevance": "Provides the model filing-duration and continuation framework; verify the relevant state's enacted version and exceptions rather than inferring loan maturity.",
-        },
-        {
-            "title": "California Financial Code § 22100 — Finance lender and broker licensing",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=FIN&sectionNum=22100.",
-            "relevance": "Requires role and exemption analysis before performing activities within California finance lender or broker licensing requirements.",
-        },
-        {
-            "title": "California Financial Code § 22800 — Commercial financing disclosure framework",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=FIN&sectionNum=22800.",
-            "relevance": "Defines key concepts for California commercial financing disclosures; read with the remaining division and implementing regulations.",
-        },
-        {
-            "title": "47 CFR § 61.3 — Carrier tariff definitions",
-            "url": "https://www.ecfr.gov/current/title-47/section-61.3",
-            "relevance": "Contains access-stimulation definitions relevant to evaluating traffic-dependent carrier compensation arrangements.",
-        },
-        {
-            "title": "47 CFR § 51.914 — Access-stimulation transport obligations",
-            "url": "https://www.ecfr.gov/current/title-47/section-51.914",
-            "relevance": "Allocates specified transport responsibilities in access-stimulation arrangements and can alter assumed carrier settlement economics.",
-        },
-        {
-            "title": "15 U.S.C. § 78o — Broker and dealer registration",
-            "url": "https://www.law.cornell.edu/uscode/text/15/78o",
-            "relevance": "Requires securities-intermediation analysis before accepting transaction-based compensation for capital-raising introductions.",
-        },
-        {
-            "title": "42 U.S.C. § 1320a-7b(b) — Federal healthcare anti-kickback provisions",
-            "url": "https://www.law.cornell.edu/uscode/text/42/1320a-7b",
-            "relevance": "Restricts specified remuneration connected with federally reimbursable healthcare referrals and purchasing arrangements.",
-        },
-        {
-            "title": "FAR Subpart 3.4 — Contingent fees",
-            "url": "https://www.acquisition.gov/far/subpart-3.4",
-            "relevance": "Defines federal procurement contingent-fee restrictions and the conditions governing relevant employee and agency exceptions.",
-        },
-    ],
-}
+CHAPTER_9 = {'id': 'Q9',
+ 'chapter_id': 'Q9',
+ 'chapter_number': 9,
+ 'question_number': 9,
+ 'slug': 'property-opportunities-site-readiness-roof-damage-liens',
+ 'question_prompt': 'What property, damage, and financing facts should we understand when evaluating '
+                    'data-center land, solar sites, and commercial roofing opportunities?',
+ 'kicker': 'Q9 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Property Opportunities: Site Readiness, Roof Damage, and Liens',
+ 'subtitle': 'Powered land and data-center suitability, development and investment risks, Solar Site '
+             'Design, commercial hail-damage inspections, insurance claim disputes, and UCC-1 collateral '
+             'and financing implications',
+ 'layout_template': 'tool_resource_directory',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Practitioners across three lanes agree the money sits below the surface. '
+                      'Data-center land brokers and engineers price power before acreage. AECOM defines '
+                      'powered land as a deliverable path to energization. Saunders Real Estate wants a '
+                      '230 kV line at minimum and says a utility megawatt letter moves a site to the top '
+                      'of the list. The Industrial Real Estate Show cites roughly $1M-per-acre values '
+                      'against a couple grand as farmland. Flat-roof hail specialists at Jansen/Adjusters '
+                      'International and Digital Roofing Innovations core or cut the membrane to prove '
+                      'cracked ISO and split backing. They use 10x10 test squares, and about 20 hits in '
+                      'one square bought a roof. UCC speakers treat liens as public notice that blocks '
+                      'financing. The disagreements run hot: the Industrial Real Estate Show puts site '
+                      'qualification at a roughly 1% success rate and warns of obsolescence, while BizNick '
+                      'dismantles UCC-1 self-filing schemes.',
+ 'key_metrics': [{'label': 'Data-Center Land Repricing Per Acre',
+                  'metric': 'Data-Center Land Repricing Per Acre',
+                  'value': 'About $1M per acre vs. a couple thousand dollars per acre as farmland',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "The host's estimate of what qualifying data-center land can command compared "
+                             'with its farmland value.',
+                  'source': 'Industrial Real Estate Show ([jak1MCZd_UQ @ 00:23:06])'},
+                 {'label': 'Land Share of Total Development Deal',
+                  'metric': 'Land Share of Total Development Deal',
+                  'value': '6% of the overall development deal',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Saunders panelists use this share to argue landowners should not take the '
+                             'first offer, since raising land from $100k to $150k per acre barely moves '
+                             'project cost.',
+                  'source': 'Saunders Real Estate ([j0rQ27ZfIcU @ 00:36:22])'},
+                 {'label': 'Minimum Transmission Voltage for a Data-Center Site',
+                  'metric': 'Minimum Transmission Voltage for a Data-Center Site',
+                  'value': '230 kV minimum; 500 kV better',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'The first check a landowner should run before pitching a parcel. Gas is an '
+                             'alternative source, but adjacent solar is likely not enough.',
+                  'source': 'Saunders Real Estate ([j0rQ27ZfIcU @ 00:11:32])'},
+                 {'label': 'Hail Hits in One 10x10 Test Square',
+                  'metric': 'Hail Hits in One 10x10 Test Square',
+                  'value': 'About 20 circled hits',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'The hit count inside a single marked 10x10 test square that got a flat roof '
+                             'bought by the carrier.',
+                  'source': 'Jansen/Adjusters International ([oAK4wMoYcMA @ 00:27:18])'}],
+ 'sections': [{'heading': '1. The Practitioner Consensus',
+               'paragraphs': ['Every practitioner who prices land for data centers starts with electrons, '
+                              "not acreage. AECOM's panel defines powered land as “as close as possible to "
+                              'plugging in and generating revenue.” They sharpen that to sites with “a '
+                              'realistic and deliverable path” toward energization [DmHfrc4zfn0 @ '
+                              "00:07:19]. Adam Wei's primary trinity is power, water, and land/access. His "
+                              'blunt caveat is that everything else can be fixed with enough time and '
+                              'money. Spencer Smith and Jared Parker of Saunders Real Estate say the same '
+                              'thing in broker language. Value comes from how much power you can generate '
+                              'or draw to the site, so the order is “power first and then land.” That '
+                              'breaks the per-acre and per-unit pricing most landowners know [j0rQ27ZfIcU '
+                              '@ 00:05:11]. Backing into end-user math, they argue raw land is still '
+                              "undervalued. LandApp by LandGate's qualification checklist lines up behind "
+                              'them. It ranks substations, transmission lines, fiber, and a favorable '
+                              'political climate for approvals ahead of everything else. Ten acres is the '
+                              'floor and 40-plus acres is ideal for enterprise and hyperscale users '
+                              '[UqoyFfPDAmA @ 00:01:42]. The Industrial Real Estate Show puts a number on '
+                              'the spread. Farmland worth a couple grand an acre can become '
+                              'million-dollar-an-acre land if it qualifies for a data center [jak1MCZd_UQ '
+                              '@ 00:23:06]. That repricing gap is the opportunity every speaker is '
+                              'chasing.',
+                              'On commercial flat roofs, the consensus is that what you see on the surface '
+                              'is not the claim; what sits underneath is. Mark of Jansen/Adjusters '
+                              'International says TPO behaves like rubber. Hail leaves an indentation '
+                              'rather than a tear, and the real damage is cracked ISO board below it. That '
+                              "is why his team cores every file an adjuster doubts. In his words, “it's a "
+                              'little bit of a fight but we win it every time” [oAK4wMoYcMA @ 00:04:29]. '
+                              'Sean Smith of Sky Guard, speaking on Digital Roofing Innovations, runs the '
+                              'identical playbook from the inspector side. Hail on TPO, EPDM, and PVC '
+                              'leaves a windshield-style circle crack, and the insurer wants the membrane '
+                              'cut open so it can see the back split [GciwM0T3IPE @ 00:03:28]. Merlin Law '
+                              "Group attacks the carriers' favorite deflection, the cosmetic label. Their "
+                              'argument is that impacts reach the underlayment and shorten life '
+                              'expectancy. The insurer only wins that fight when the policy actually '
+                              'excludes cosmetic damage, which is increasingly common in hail regions '
+                              '[hb-cKsFxfwg @ 00:00:43]. Chad Michael pushes the same system logic in '
+                              'Boulder. Wet decking plus the one-roof-system limit force a tear-off to the '
+                              'deck. Solid nailable sheathing and an IECC R-value upgrade then ride along '
+                              "with the claim [d6mF320R8u0 @ 00:02:21]. Jansen's closing rule sums up the "
+                              'camp: no part of the roof works alone.',
+                              'The lien lane runs on public notice, and every UCC speaker agrees a filing '
+                              'is a signal to read before money moves. Applecation Lab lays out a '
+                              'three-step chain. The borrower signs a security agreement with a full '
+                              'collateral description. A UCC-1 is filed with the recorder of deeds. The '
+                              'filing then surfaces on the title report. As a result, removable fixtures '
+                              'like chandeliers or commercial refrigerators can be pulled on default, so '
+                              'the instruction is to check the title report for fixture liens before you '
+                              'buy [Qa47WMCz55k @ 00:04:07]. BizNick went through the records and is '
+                              'emphatic that the paper alone does nothing. “A UCC-1 financing statement '
+                              'does not create a security interest” unless there is a signed agreement, '
+                              "value given, and the debtor's rights in the collateral [22cx7DJjhTY @ "
+                              '00:16:09]. PK Patel of Midwest Corporate Credit gives the operator risk '
+                              'list. Filings block new financing, filings from the past five years show on '
+                              'business credit, and default triggers repossession, so check your file and '
+                              'demand releases [QzlAvX38RS4 @ 00:02:31]. Credit Suite confirms the '
+                              'friction costs real money. Filings deter second- and third-tier lenders and '
+                              'undercut stacking strategies, and they are often never released. In one '
+                              "case, a defunct lender's filing took months to clear before an SBA loan "
+                              'could close [TvwdUsUy-Cs @ 00:02:52].'],
+               'table': {'caption': 'Where the practitioners converge across land, roof, and lien '
+                                    'opportunities',
+                         'headers': ['Opportunity Lane',
+                                     'Consensus Signal',
+                                     'Why It Matters to the Operator',
+                                     'Expert Source'],
+                         'rows': [['Powered land valuation for data-center buyers',
+                                   'Value comes from deliverable power, priced power first and land second',
+                                   'Per-acre farmland comps undersell parcels that can draw serious '
+                                   'megawatts',
+                                   'Saunders Real Estate ([j0rQ27ZfIcU @ 00:05:11])'],
+                                  ['Ready-to-build definition used by engineers and developers',
+                                   'A realistic and deliverable path to energization, not just a queue '
+                                   'spot',
+                                   'Grid allocation is shifting from queue position toward demonstrated '
+                                   'project readiness',
+                                   'AECOM ([DmHfrc4zfn0 @ 00:15:29])'],
+                                  ['Baseline site qualification floor for hyperscale and enterprise',
+                                   'At least ten acres, forty-plus ideal, flat land near substations',
+                                   'Flood zones, wetlands, and endangered-species habitat complicate '
+                                   'development and approvals',
+                                   'LandApp by LandGate ([UqoyFfPDAmA @ 00:01:21])'],
+                                  ['Landowner upside on qualifying rural and farm parcels',
+                                   'Farmland worth a couple grand per acre can reprice dramatically',
+                                   'Data-center-suitable land can command roughly one million dollars per '
+                                   'acre',
+                                   'Industrial Real Estate Show ([jak1MCZd_UQ @ 00:23:06])'],
+                                  ['Proving flat-roof hail damage to a skeptical adjuster',
+                                   'Core or cut the membrane to expose cracked ISO and a split backing',
+                                   'Adjusters stay skeptical until they see damage hidden under the TPO '
+                                   'surface',
+                                   'Jansen/Adjusters International ([oAK4wMoYcMA @ 00:04:29])'],
+                                  ["Countering the carrier's cosmetic-damage denial on commercial roofs",
+                                   "Impacts reach the underlayment and cut the roof's life expectancy",
+                                   'The carrier only wins when the policy language actually excludes '
+                                   'cosmetic hail damage',
+                                   'Merlin Law Group ([hb-cKsFxfwg @ 00:00:43])'],
+                                  ['UCC-1 lien screening before buying or financing property',
+                                   'Search title reports and credit files for fixture and blanket liens',
+                                   'Removable fixtures can be confiscated on default, and open filings '
+                                   'block new financing',
+                                   'Applecation Lab ([Qa47WMCz55k @ 00:04:07])']]}},
+              {'heading': '2. Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['Saunders Real Estate walks through the exact value ladder on a 100-acre '
+                              'parcel at $70,000 an acre. Rezoning, a PSP, a full site plan, and SWFWMD '
+                              'permits each step the price up. The landowner should structure the deal to '
+                              'get paid at milestones rather than waiting on one close [j0rQ27ZfIcU @ '
+                              '00:30:05]. Their diligence budget is concrete: $30,000 to $40,000 on '
+                              'diligence or energy consulting, sometimes running up to a quarter million. '
+                              'The single document that moves a site “to the top of the list” is a utility '
+                              'megawatt letter [j0rQ27ZfIcU @ 00:34:59]. They also coach patience on '
+                              'price. The first offer is probably not the best, and land is only about 6% '
+                              'of the overall development deal, so moving from $100k to $150k an acre is a '
+                              'couple tenths of a percent of the project. LandApp by LandGate adds the '
+                              'clock. If zoning is wrong, rezoning can take three to six months. Purchase '
+                              'is more common than lease because buyers want control over operations, '
+                              "zoning, and expansion [UqoyFfPDAmA @ 00:02:04]. AECOM's Adam Wei runs the "
+                              'screen at scale. He scores megawatts per acre uniformly across '
+                              '50-to-1,000-acre filters using sources like Open Infrastructure Map. '
+                              'Because local data is weaker, a human reviews every result [DmHfrc4zfn0 @ '
+                              '00:20:40].',
+                              'The roof crews run a repeatable field routine. Jansen/Adjusters '
+                              'International starts on soft metals (caps, collars, vents, and AC fins) to '
+                              'gauge hail size and quantity before touching the membrane. Golf ball or '
+                              'baseball hits “should pop out,” while pea-size takes real hunting '
+                              '[oAK4wMoYcMA @ 00:01:09]. Their documentation system is the 10x10 test '
+                              'square. Circle every hit inside the square. Highlight marks that are not '
+                              'hail, such as mechanical damage, to buy credibility. Separate heat blisters '
+                              'by their very clean circle. Mark the roof hours or a day before the '
+                              'adjuster arrives. About 20 hits in a single square got one roof bought '
+                              '[oAK4wMoYcMA @ 00:25:17]. Digital Roofing Innovations contrasts the '
+                              'benchmarks. On slope, the bar is about three slopes with 10 or more hits '
+                              'per square, but flat roofs carry no set threshold. Carriers typically '
+                              'replace the whole roof when cuts show hits on every flat section '
+                              '[GciwM0T3IPE @ 00:02:20]. Tyler Melton of Proclaim Roofing turns that into '
+                              'a service model. On 20-year-old modified bitumen with damage every three '
+                              'feet, a prior roofer had called it no hail damage, yet the file ran to '
+                              'roughly a $1M loss. His crew fixes and maintains leaks for free while the '
+                              'insurer takes months, then bills the carrier [m37LDnkUURI @ 00:01:35].',
+                              "The money math on the claim side is unforgiving. Policy & Property's "
+                              'breakdown of the State Farm memo shows the replace-to-repair ratio sliding '
+                              'from 3.2:1 to about 2:1. Their homeowner example: on a $300,000 home, a 2% '
+                              'deductible is $6,000. A $2,500 repair therefore pays nothing, a $15,000 '
+                              'replacement pays $9,000, and actual cash value on a 12-of-25-year roof '
+                              "drops the check to $1,800 [V-xAfnhz1BY @ 00:04:40]. Chad Michael's counter "
+                              'is to stack code-driven scope. That means tear-off to the deck, solid '
+                              'nailable sheathing, IECC R-value, the lightning rod system, and damaged '
+                              'fasteners, with overhead and profit justified by trade complexity '
+                              '[d6mF320R8u0 @ 00:04:39]. On liens, BizNick lays out five legitimate moves. '
+                              'Run a UCC search on yourself. Read your security agreements, where “all '
+                              'assets” is the most aggressive form. File only when you lend against real '
+                              'collateral. Search sellers before an acquisition. Build an entity with '
+                              'clean credit [22cx7DJjhTY @ 00:22:54]. The Business Guy adds payoff '
+                              'discipline: make the lender terminate the filing after payoff. He also '
+                              'describes an aggressive asset-protection structure. A UCC-1 payable to the '
+                              "client's international LLC is sold to an international lender, and the "
+                              'proceeds park in an international asset protection trust. The filing is '
+                              'later terminated so the amounts cancel each other out [TmmMYBOJ_3c @ '
+                              '00:02:58].'],
+               'table': {'caption': 'Street-level tactics, tools, and figures the practitioners actually '
+                                    'use',
+                         'headers': ['Tactic',
+                                     'Exact Numbers or Tool',
+                                     'Execution Detail',
+                                     'Expert Source'],
+                         'rows': [['Utility megawatt letter positioning for land sellers',
+                                   'Megawatt letter backed by $30,000 to $40,000 in diligence spend',
+                                   'The letter moves a site to the top of the list; consulting can reach a '
+                                   'quarter million',
+                                   'Saunders Real Estate ([j0rQ27ZfIcU @ 00:34:59])'],
+                                  ['Entitlement value ladder on a raw parcel',
+                                   '100 acres at a $70,000-per-acre starting basis',
+                                   'Rezoning, PSP, full site plan, and SWFWMD permits each raise value; '
+                                   'get paid at milestones',
+                                   'Saunders Real Estate ([j0rQ27ZfIcU @ 00:30:05])'],
+                                  ['AI-assisted site screening at portfolio scale',
+                                   'Megawatts per acre scored across 50-to-1,000-acre filters',
+                                   'Open Infrastructure Map as a source, with human review because local '
+                                   'data is weaker',
+                                   'AECOM ([DmHfrc4zfn0 @ 00:20:40])'],
+                                  ['Hail sizing on rooftop soft metals first',
+                                   'Caps, collars, vents, and AC fins checked before the membrane',
+                                   'Golf ball hits pop out; pea-size hail requires slow, deliberate '
+                                   'hunting across the roof',
+                                   'Jansen/Adjusters International ([oAK4wMoYcMA @ 00:01:09])'],
+                                  ['10x10 test square marked before the adjuster arrives',
+                                   'About 20 circled hits in one square bought the roof',
+                                   'Also flag non-hail mechanical marks and clean-circle heat blisters to '
+                                   'show credibility',
+                                   'Jansen/Adjusters International ([oAK4wMoYcMA @ 00:27:18])'],
+                                  ['Yearly manufacturer roof grading as claim evidence',
+                                   'Manufacturer inspection and grade for about 150 dollars',
+                                   'The report states remaining roof life; maintenance patches should not '
+                                   'be used against the owner',
+                                   'Jansen/Adjusters International ([oAK4wMoYcMA @ 00:09:13])'],
+                                  ['Commercial and industrial solar lead origination for installers',
+                                   'Thousands of C&I clients claimed to be engaged in energy management',
+                                   'Free webinar pitch aimed at installers lacking business-development '
+                                   'resources for C&I projects',
+                                   'Jason Loyet ([d3bCxYtJi2M @ 00:01:02])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Field Edges the Practitioners Swear By',
+                           'body': 'Small, cheap moves that the speakers say change how adjusters, buyers, '
+                                   'and lenders read the file.',
+                           'items': ['Bring Windex or solvent to clean aging PVC before the inspection so '
+                                     'the carrier cannot write the surface off as deterioration '
+                                     '[Jansen/Adjusters International — oAK4wMoYcMA @ 00:18:52].',
+                                     'Carry a $9.99 magnifying glass: gray in the divot reads older, black '
+                                     'like tar reads newer, and older ISO facing turns yellow or orange '
+                                     '[Jansen/Adjusters International — oAK4wMoYcMA @ 00:13:18].',
+                                     'Watch for bird droppings on TPO and PVC, which mimic hail the way '
+                                     'blisters do on shingles. The Sky Guard team recommends a roughly '
+                                     'week-long certification [Digital Roofing Innovations — GciwM0T3IPE @ '
+                                     '00:04:58].',
+                                     'Do not take the first data-center offer: land is about 6% of the '
+                                     'development deal, so pushing per-acre price barely registers to the '
+                                     'end user [Saunders Real Estate — j0rQ27ZfIcU @ 00:36:22].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Screen the Parcel for Power Before Acreage',
+                              'action': 'Confirm transmission voltage, acreage, and zoning before '
+                                        'marketing any parcel as data-center land.',
+                              'detail': 'Require a 230 kV line at minimum, with 500 kV better, and treat '
+                                        'gas as the alternative source [Saunders Real Estate — j0rQ27ZfIcU '
+                                        '@ 00:11:32]. Check for at least 10 acres, ideally 40-plus, and '
+                                        'budget three to six months if rezoning is needed [LandApp by '
+                                        'LandGate — UqoyFfPDAmA @ 00:02:04].'},
+                             {'step': 2,
+                              'title': 'Pull UCC and Title Lien History',
+                              'action': 'Search the owner and the property for UCC-1 filings and fixture '
+                                        'liens before buying or lending.',
+                              'detail': 'Check the title report for fixture liens before purchase '
+                                        '[Applecation Lab — Qa47WMCz55k @ 00:04:07]. Run UCC searches on '
+                                        'yourself and on sellers, and read whether security agreements '
+                                        'claim all assets [BizNick — 22cx7DJjhTY @ 00:22:54].'},
+                             {'step': 3,
+                              'title': 'Map Hail Damage with Soft Metals and Test Squares',
+                              'action': 'Size the hail on soft metals, then circle hits in 10x10 squares '
+                                        'before the adjuster arrives.',
+                              'detail': 'Start on caps, collars, vents, and AC fins. Circle every hit in a '
+                                        '10x10, flag non-hail marks for credibility, and mark the roof '
+                                        'hours or a day early [Jansen/Adjusters International — '
+                                        'oAK4wMoYcMA @ 00:25:17].'},
+                             {'step': 4,
+                              'title': 'Prove It Under the Membrane',
+                              'action': 'Cut or core one spot per section with the manufacturer rep '
+                                        'present to expose split backing and cracked ISO.',
+                              'detail': 'Carriers cut each section rather than peel-testing; a split back '
+                                        'and busted underlayment gets that section replaced [Digital '
+                                        'Roofing Innovations — GciwM0T3IPE @ 00:04:14]. Bring the '
+                                        'manufacturer out and use a licensed roofer for a patch they will '
+                                        'warranty [Jansen/Adjusters International — oAK4wMoYcMA @ '
+                                        '00:08:16].'}]},
+              {'heading': 'Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The sharpest split is whether data-center land is a windfall or a trap. '
+                              "Saunders Real Estate's panel argues the value is “power first and then "
+                              'land,” that end-user math shows land is undervalued, and that buyers are '
+                              'already offering 5 to 7 times farmland value [j0rQ27ZfIcU @ 00:26:44]. They '
+                              'add that land is only 6% of the overall development deal, so pushing from '
+                              '$100,000 to $150,000 an acre barely moves the project budget [j0rQ27ZfIcU @ '
+                              '00:36:22]. The Industrial Real Estate Show host runs the opposite math: '
+                              'qualifying a site takes roughly five years and only about 1% of land is '
+                              'conducive, so the million-dollar-an-acre dream applies to a sliver of '
+                              'owners [jak1MCZd_UQ @ 00:24:12]. Matt Smith of RealNex pushes back on the '
+                              "host's obsolescence thesis, arguing that shrinking servers will simply be "
+                              'packed into the same buildings [jak1MCZd_UQ @ 00:13:06]. Even inside the '
+                              'bull camp, Jared Parker hedges by doubting micro data centers will spread, '
+                              'flagging obsolescence, and warning against jumping “on the bandwagon too '
+                              'hard.” The working playbook that falls out of this fight is to chase the '
+                              'power-first upside on sites with a real energization path while pricing in '
+                              'the low hit rate before committing capital or marketing dollars.',
+                              "Water and power sourcing split the room just as hard. AECOM's Adam Wei "
+                              'names power, water, and land or access as the “primary trinity” and calls '
+                              'water cooling the most cost-efficient option, with air cooling as the '
+                              'fallback, while the panel insists all of it “can be fixed with enough time '
+                              'and money” [DmHfrc4zfn0 @ 00:12:18]. LandApp by LandGate likewise lists '
+                              'water as a cooling input consumed in significant amounts daily. Saunders '
+                              "Real Estate's Jared Parker flatly disagrees that water is the constraint, "
+                              'pointing out that a 100-acre farm or a golf course uses more [j0rQ27ZfIcU @ '
+                              '00:12:34]. On power, the Saunders panel sets the landowner screen at a 230 '
+                              'kV line minimum with 500 kV better, treats gas as the alternative, and says '
+                              "adjacent solar is likely not enough [j0rQ27ZfIcU @ 00:11:32]. AECOM's Barry "
+                              'Baker runs a phased playbook instead: gas first, the grid three to five '
+                              'years later, with pipeline suppliers demanding 20 to 30 year contracts, and '
+                              "the panel's verdict is that gas solves today's timing problem but not "
+                              "tomorrow's energy strategy [DmHfrc4zfn0 @ 00:30:59]. Steven Buset of "
+                              'Siemens reports gas sits very low on the UK agenda and gives only a '
+                              'tentative yes on whether Europe falls behind without it.',
+                              'The lien and roof-claim crowds split on paperwork and proof. The Business '
+                              'Guy of Asset Protection Planners calls a security agreement recommended but '
+                              "not required, notes some filers drop the debtor's e-signature into the "
+                              "optional file reference field, and pitches a UCC-1 payable to a client's "
+                              'international LLC, sold to an international lender and later terminated so '
+                              'the amounts “cancel each other out” [TmmMYBOJ_3c @ 00:02:25]. BizNick says '
+                              'a financing statement without a security agreement, value given, and '
+                              "described collateral is “a nullity,” and points to Winston Shrout's "
+                              '13-count felony conviction and 10-year sentence as the endpoint of the '
+                              'secured-party-creditor play [22cx7DJjhTY @ 00:07:57]. On flat-roof hail, '
+                              'Jansen/Adjusters International builds proof with 10x10 test squares, and '
+                              'about 20 circled hits in one square got a roof bought [oAK4wMoYcMA @ '
+                              '00:27:18]. Digital Roofing Innovations counters that flat roofs have no set '
+                              'hits-per-square threshold at all; the carrier has the membrane cut open '
+                              'once per section and replaces any section where the back is split and the '
+                              "underlayment is busted [GciwM0T3IPE @ 00:03:57]. Even within Jansen's "
+                              'panel, Mark rejects adjusters pushing 200 patches while Luis accepts 100 '
+                              'patches on 20,000 square feet added at 10 per year, so the patch count '
+                              'conceded becomes a negotiating line.'],
+               'table': {'caption': 'Fault Lines: Competing Playbooks on Powered Land, UCC Liens, and Hail '
+                                    'Claims',
+                         'headers': ['Fault Line', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Whether data-center land is a windfall or a trap',
+                                   'Power first, then land: buyers offering 5 to 7 times farmland value on '
+                                   'powered sites',
+                                   'Qualifying takes about five years with roughly a 1% chance a parcel is '
+                                   'conducive',
+                                   'Saunders Real Estate ([j0rQ27ZfIcU @ 00:26:44]); Industrial Real '
+                                   'Estate Show ([jak1MCZd_UQ @ 00:24:12])'],
+                                  ['Whether water is a binding constraint on site selection',
+                                   'Water cooling is the most cost-efficient option inside the power, '
+                                   'water, land trinity',
+                                   'Water is not the concern because a 100-acre farm or golf course uses '
+                                   'more',
+                                   'AECOM ([DmHfrc4zfn0 @ 00:12:18]); Saunders Real Estate ([j0rQ27ZfIcU @ '
+                                   '00:12:34])'],
+                                  ['How community opposition is trending for new data-center projects',
+                                   'Barry Baker: local support, then state support, is eroding across '
+                                   'jurisdictions',
+                                   'Adam Wei: Microsoft has dropped NDAs and Google is holding open houses',
+                                   'AECOM ([DmHfrc4zfn0 @ 00:41:17]); AECOM ([DmHfrc4zfn0 @ 00:42:36])'],
+                                  ['Whether developers buy or lease the dirt they build on',
+                                   'Purchasing is more common because it controls operations, zoning, and '
+                                   'future expansion',
+                                   'Hyperscalers mostly lease, leaving asset holders to carry the '
+                                   'obsolescence risk',
+                                   'LandApp by LandGate ([UqoyFfPDAmA @ 00:02:49]); Industrial Real Estate '
+                                   'Show ([jak1MCZd_UQ @ 00:19:07])'],
+                                  ['Whether a UCC-1 needs a security agreement standing behind it',
+                                   'Recommended but not required; some place a debtor e-signature in the '
+                                   'optional file reference field',
+                                   'Without a security agreement, value given, and described collateral '
+                                   'the filing is a nullity',
+                                   'The Business Guy | Asset Protection Planners ([TmmMYBOJ_3c @ '
+                                   '00:02:25]); BizNick ([22cx7DJjhTY @ 00:07:57])'],
+                                  ['Whether insurer cosmetic-damage arguments hold up on commercial roofs',
+                                   'Insurers win only when the policy excludes cosmetic damage, '
+                                   'increasingly common in hail regions',
+                                   'Flashing damage alone justifies replacement even when the carrier paid '
+                                   'only to recoat',
+                                   'Merlin Law Group ([hb-cKsFxfwg @ 00:01:02]); Chad Michael - The '
+                                   'Practitioner ([d6mF320R8u0 @ 00:00:25])'],
+                                  ['How much flat-roof hail proof it takes to win a replacement',
+                                   'About 20 circled hits inside one 10x10 test square got the roof bought',
+                                   'No set hits-per-square threshold; one cut per section showing a split '
+                                   'back decides replacement',
+                                   'Jansen/Adjusters International ([oAK4wMoYcMA @ 00:27:18]); Digital '
+                                   'Roofing Innovations ([GciwM0T3IPE @ 00:04:14])']]}},
+              {'heading': 'Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The costliest data-center trap is building or buying an asset nobody else '
+                              'can use. The Industrial Real Estate Show host prices industrial '
+                              'construction at $200 a square foot against $800 for a data center, notes '
+                              'the buildings lack loading doors and are single-use, and puts a retrofit at '
+                              'roughly $1,000 a square foot, about five times the industrial baseline '
+                              '[jak1MCZd_UQ @ 00:11:30]. Richmond, Virginia has re-use demand; remote '
+                              'sites do not, and decommissioning and remediation costs can turn the asset '
+                              'into a liability, which is why the host says there is zero way to invest in '
+                              'a rural remote data center [jak1MCZd_UQ @ 00:26:14]. Speculation is the '
+                              'second trap: Steven Buset of Siemens contrasts roughly 10 billion in '
+                              'planning against about $1 billion actually spent, and grid allocation is '
+                              'shifting from queue position to project readiness, while the UK regulator '
+                              'has floated an upfront per-megawatt fee to curb speculative applications '
+                              '[DmHfrc4zfn0 @ 00:15:29]. The third trap is people: Saunders Real Estate '
+                              'reports the state shut down Okeechobee, Palm Beach was delayed about three '
+                              'times, and Virginia was shut down, with 6 to 12 month moratoriums now '
+                              "appearing [j0rQ27ZfIcU @ 00:15:49]. AECOM's Barry Baker adds that local, "
+                              'then state, support is eroding.',
+                              'On the lien side, the traps are stale filings and fake paper. Credit Suite '
+                              'warns that filings sit on business credit reports, scare off second- and '
+                              'third-tier lenders, and gut the strategy of stacking multiple funding '
+                              'approvals even though scores are not hurt. Filings are often not released, '
+                              "and in Credit Suite's own case a defunct lender's filing took months to "
+                              "clear for an SBA loan [TvwdUsUy-Cs @ 00:03:17]. Midwest Corporate Credit's "
+                              'PK Patel lists the same blockage, warning that a filing can force '
+                              'refinancing or financial engineering, that filings from the past five years '
+                              'show on business credit, and that default means repossession [QzlAvX38RS4 @ '
+                              '00:02:31]. BizNick catalogs the downside of the secured-party-creditor '
+                              'play: an IRS $5,000 frivolous-position penalty, up to 10 years under 18 '
+                              'U.S.C. 1521 for false liens against federal officers, and no court '
+                              'recognizing the straw man concept [22cx7DJjhTY @ 00:12:36]. Buyers get '
+                              'burned from the other direction: Applecation Lab shows removable fixtures '
+                              'such as chandeliers or commercial refrigerators can be confiscated on '
+                              'default, so the title report has to be checked for fixture liens before '
+                              'buying [Qa47WMCz55k @ 00:04:07]. The Business Guy adds the borrower-side '
+                              'fix: ask the lender to terminate the filing after payoff.',
+                              'Roof-claim money leaks through missed damage, voided warranties, and '
+                              "deductible math. Proclaim Roofing's Tyler Melton walked 20-year-old "
+                              'modified bitumen roofs where a prior roofer had reported no hail damage, '
+                              'found hits every three feet, and sized the loss at about $1 million '
+                              '[m37LDnkUURI @ 00:00:54]. Jansen/Adjusters International reports a '
+                              'manufacturer opposed coring done without its rep present, so the panel '
+                              'always brings the rep out and uses a licensed roofer for a bonafide patch '
+                              'the manufacturer will warranty; Mark also found that a granule-replacement '
+                              'repair cost about as much as another ply and violates the warranty '
+                              '[oAK4wMoYcMA @ 00:08:16]. Digital Roofing Innovations flags false '
+                              'positives: bird droppings on TPO and PVC mimic hail the way blisters do on '
+                              "shingles, and Jansen's crew warns that drone thermal over rock ballast "
+                              'reads false because the rock holds moisture [GciwM0T3IPE @ 00:04:58]. '
+                              'Policy & Property runs the homeowner deductible math: on a $300,000 home a '
+                              '2% deductible is $6,000, so a $2,500 repair pays nothing, a $15,000 '
+                              'replacement pays $9,000, and actual cash value on a 12-of-25-year roof pays '
+                              '$1,800 after $7,200 depreciation [V-xAfnhz1BY @ 00:04:18]. The State Farm '
+                              'memo shows replace-to-repair ratios falling from 3.2:1 to about 2:1 after '
+                              'full replacements began requiring manager approval in January 2021.'],
+               'table': {'caption': 'Firsthand Traps and the Economics Behind Them',
+                         'headers': ['Failure Mode',
+                                     'What Went Wrong Firsthand',
+                                     'Economics Check',
+                                     'Expert Source'],
+                         'rows': [['Buying into a single-use data-center building with no exit',
+                                   'Data centers lack loading doors and are not meant to be repurposed',
+                                   '$800 per square foot to build versus $200 industrial, about $1,000 '
+                                   'after retrofit',
+                                   'Industrial Real Estate Show ([jak1MCZd_UQ @ 00:11:30])'],
+                                  ['Holding a rural remote site without any re-use demand',
+                                   'Decommissioning and remediation costs could leave the asset as a '
+                                   'liability',
+                                   'Host sees zero way to invest in rural remote sites; Richmond, Virginia '
+                                   'keeps re-use demand',
+                                   'Industrial Real Estate Show ([jak1MCZd_UQ @ 00:26:14])'],
+                                  ['Signing the first offer that lands on powered acreage',
+                                   'The first offer is probably not the best one a landowner receives',
+                                   'Moving from $100k to $150k per acre is a couple tenths percent of the '
+                                   'project',
+                                   'Saunders Real Estate ([j0rQ27ZfIcU @ 00:33:32])'],
+                                  ["Leaving a paid-off lender's UCC filing sitting on record",
+                                   "A defunct lender's filing took months to clear before an SBA loan",
+                                   'Open filings deter second and third tier lenders and break funding '
+                                   'stacking',
+                                   'Credit Suite ([TvwdUsUy-Cs @ 00:03:17])'],
+                                  ["Trusting a prior roofer's no-damage verdict on old commercial roofs",
+                                   'Twenty-year-old modified bitumen roofs showed hail damage every three '
+                                   'feet',
+                                   'The overlooked claim was about a $1 million loss on those roofs',
+                                   'Proclaim Roofing ([m37LDnkUURI @ 00:01:23])'],
+                                  ['Running drone thermal scans over moisture-holding rock ballast',
+                                   'Rock holds moisture and throws false readings on drone thermal imaging',
+                                   'Sweep ballast first, use handheld thermal, and scan only with interior '
+                                   'leaks',
+                                   'Jansen/Adjusters International ([oAK4wMoYcMA @ 00:40:16])'],
+                                  ['Accepting a scrape-and-reapply on a broken foam overlay',
+                                   'A broken foam layer becomes a sponge under the new coating',
+                                   'Scrape-and-reapply costs nearly as much as new; roughly 50/50 total '
+                                   'replacement odds',
+                                   'Jansen/Adjusters International ([oAK4wMoYcMA @ 00:50:53])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Kill Criteria Before You Commit Capital or File a Claim',
+                           'body': 'Do not advance a land deal, lien play, or roof claim until each of '
+                                   'these practitioner-reported traps has been cleared.',
+                           'items': ['Confirm re-use demand before touching a data-center building or '
+                                     'site: Richmond, Virginia has it, remote sites do not [Industrial '
+                                     'Real Estate Show — jak1MCZd_UQ @ 00:11:46].',
+                                     'Run a UCC search on yourself and on any seller before an '
+                                     'acquisition, and read every security agreement for all-assets '
+                                     'language [BizNick — 22cx7DJjhTY @ 00:22:54].',
+                                     'Bring the manufacturer rep out before coring a membrane and use a '
+                                     'licensed roofer for a bonafide patch they will warranty '
+                                     '[Jansen/Adjusters International — oAK4wMoYcMA @ 00:08:16].',
+                                     'Rule out bird droppings on TPO and PVC before calling any mark a '
+                                     'hail hit [Digital Roofing Innovations — GciwM0T3IPE @ 00:04:58].']}}],
+ 'pull_quote': '“So always keep in mind the word system anytime you get up on a roof, because no part of '
+               'the roof works alone.” — Jansen/Adjusters International (oAK4wMoYcMA @ 00:55:04).',
+ 'diagram_id': 'diag-05',
+ 'action_checklist': ['Screen land for a 230 kV line minimum, with 500 kV better, and treat gas as the '
+                      'backup source because adjacent solar is likely not enough [Saunders Real Estate — '
+                      'j0rQ27ZfIcU @ 00:11:32].',
+                      'Qualify acreage at a 10-acre minimum with 40+ acres ideal, and avoid flood zones, '
+                      'wetlands, and endangered-species habitat [LandApp by LandGate — UqoyFfPDAmA @ '
+                      '00:01:21].',
+                      'Budget $30,000 to $40,000 for diligence or energy consulting and chase a utility '
+                      'megawatt letter that moves the site to the top of the list [Saunders Real Estate — '
+                      'j0rQ27ZfIcU @ 00:34:59].',
+                      'Pull business credit for UCC filings from the past five years and request releases '
+                      'before applying for new financing [Midwest Corporate Credit — QzlAvX38RS4 @ '
+                      '00:02:31].',
+                      'Cut the membrane open on suspected flat-roof hits so the insurer sees the back of '
+                      'the membrane split [Digital Roofing Innovations — GciwM0T3IPE @ 00:03:28].',
+                      'Circle hits inside 10x10 test squares hours or a day before the adjuster arrives, '
+                      'and also highlight non-hail mechanical marks for credibility [Jansen/Adjusters '
+                      'International — oAK4wMoYcMA @ 00:25:17].'],
+ 'statutory_citations': [{'title': 'Saunders Real Estate — How to Evaluate Land for Data Center '
+                                   'Development • The Yield [00:05:11]',
+                          'url': 'https://www.youtube.com/watch?v=j0rQ27ZfIcU&t=311s',
+                          'relevance': 'Primary practitioner testimony on power-first land valuation, kV '
+                                       'screens, and milestone-based rezoning economics.'},
+                         {'title': 'Industrial Real Estate Show — The Hidden Risk in Data Center Investing '
+                                   'Nobody’s Pricing In [00:24:12]',
+                          'url': 'https://www.youtube.com/watch?v=jak1MCZd_UQ&t=1452s',
+                          'relevance': 'Primary practitioner testimony on data-center site qualification '
+                                       'odds, obsolescence, and decommissioning risk.'},
+                         {'title': 'BizNick — What Actually Happens When You File a UCC-1 on Yourself (I '
+                                   'Went Through the Records) [00:16:09]',
+                          'url': 'https://www.youtube.com/watch?v=22cx7DJjhTY&t=969s',
+                          'relevance': 'Primary practitioner testimony on UCC-1 attachment requirements '
+                                       'and secured-party-creditor scheme penalties.'},
+                         {'title': 'Jansen/Adjusters International — How To Present Flat Roof Hail Damage '
+                                   'To The Insurance Company [00:25:17]',
+                          'url': 'https://www.youtube.com/watch?v=oAK4wMoYcMA&t=1517s',
+                          'relevance': 'Primary practitioner testimony on coring, 10x10 test squares, and '
+                                       'flat-roof hail claim presentation.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'DmHfrc4zfn0',
+                       'title': 'Powered land for data centers: what "ready to build" really means',
+                       'channel': 'AECOM',
+                       'author': 'AECOM',
+                       'text': "True powered land is where there's a realistic and deliverable path "
+                               'towards energization.',
+                       'tip': "True powered land is where there's a realistic and deliverable path towards "
+                              'energization.',
+                       'timestamp': 439,
+                       'timestamp_seconds': 439,
+                       'timestamp_label': '[00:07:19]',
+                       'url': 'https://www.youtube.com/watch?v=DmHfrc4zfn0&t=439s',
+                       'markdown': '[00:07:19](https://www.youtube.com/watch?v=DmHfrc4zfn0&t=439s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'UqoyFfPDAmA',
+                       'title': 'Does My Land Qualify for Data Centers?',
+                       'channel': 'LandApp by LandGate',
+                       'author': 'LandApp by LandGate',
+                       'text': 'Zoning: the property must be zoned appropriately; if not, rezoning might '
+                               'be required, which can take 3 to 6 months.',
+                       'tip': 'Zoning: the property must be zoned appropriately; if not, rezoning might be '
+                              'required, which can take 3 to 6 months.',
+                       'timestamp': 124,
+                       'timestamp_seconds': 124,
+                       'timestamp_label': '[00:02:04]',
+                       'url': 'https://www.youtube.com/watch?v=UqoyFfPDAmA&t=124s',
+                       'markdown': '[00:02:04](https://www.youtube.com/watch?v=UqoyFfPDAmA&t=124s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'jak1MCZd_UQ',
+                       'title': 'The Hidden Risk in Data Center Investing Nobody’s Pricing In',
+                       'channel': 'Industrial Real Estate Show',
+                       'author': 'Industrial Real Estate Show',
+                       'text': 'And the chances of it being conducive for a data center are like 1% of it.',
+                       'tip': 'And the chances of it being conducive for a data center are like 1% of it.',
+                       'timestamp': 1452,
+                       'timestamp_seconds': 1452,
+                       'timestamp_label': '[00:24:12]',
+                       'url': 'https://www.youtube.com/watch?v=jak1MCZd_UQ&t=1452s',
+                       'markdown': '[00:24:12](https://www.youtube.com/watch?v=jak1MCZd_UQ&t=1452s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'jak1MCZd_UQ',
+                       'title': 'The Hidden Risk in Data Center Investing Nobody’s Pricing In',
+                       'channel': 'Industrial Real Estate Show',
+                       'author': 'Industrial Real Estate Show',
+                       'text': "Not only is it four times as expensive to build a data center, but they're "
+                               'not meant to be repurposed.',
+                       'tip': "Not only is it four times as expensive to build a data center, but they're "
+                              'not meant to be repurposed.',
+                       'timestamp': 634,
+                       'timestamp_seconds': 634,
+                       'timestamp_label': '[00:10:34]',
+                       'url': 'https://www.youtube.com/watch?v=jak1MCZd_UQ&t=634s',
+                       'markdown': '[00:10:34](https://www.youtube.com/watch?v=jak1MCZd_UQ&t=634s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'j0rQ27ZfIcU',
+                       'title': 'How to Evaluate Land for Data Center Development • The Yield',
+                       'channel': 'Saunders Real Estate',
+                       'author': 'Saunders Real Estate',
+                       'text': "It's how much power can you generate or how much power can you draw to "
+                               'that site.',
+                       'tip': "It's how much power can you generate or how much power can you draw to that "
+                              'site.',
+                       'timestamp': 332,
+                       'timestamp_seconds': 332,
+                       'timestamp_label': '[00:05:32]',
+                       'url': 'https://www.youtube.com/watch?v=j0rQ27ZfIcU&t=332s',
+                       'markdown': '[00:05:32](https://www.youtube.com/watch?v=j0rQ27ZfIcU&t=332s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'j0rQ27ZfIcU',
+                       'title': 'How to Evaluate Land for Data Center Development • The Yield',
+                       'channel': 'Saunders Real Estate',
+                       'author': 'Saunders Real Estate',
+                       'text': 'The land is 6% of the overall development deal.',
+                       'tip': 'The land is 6% of the overall development deal.',
+                       'timestamp': 2182,
+                       'timestamp_seconds': 2182,
+                       'timestamp_label': '[00:36:22]',
+                       'url': 'https://www.youtube.com/watch?v=j0rQ27ZfIcU&t=2182s',
+                       'markdown': '[00:36:22](https://www.youtube.com/watch?v=j0rQ27ZfIcU&t=2182s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Qa47WMCz55k',
+                       'title': 'Uniform Commercial Code Explained | UCC-1, Collateral & Real Estate',
+                       'channel': 'Applecation Lab',
+                       'author': 'Applecation Lab',
+                       'text': 'First, the borrower signs a security agreement.',
+                       'tip': 'First, the borrower signs a security agreement.',
+                       'timestamp': 114,
+                       'timestamp_seconds': 114,
+                       'timestamp_label': '[00:01:54]',
+                       'url': 'https://www.youtube.com/watch?v=Qa47WMCz55k&t=114s',
+                       'markdown': '[00:01:54](https://www.youtube.com/watch?v=Qa47WMCz55k&t=114s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '22cx7DJjhTY',
+                       'title': 'What Actually Happens When You File a UCC-1 on Yourself (I Went Through '
+                                'the Records)',
+                       'channel': 'BizNick',
+                       'author': 'BizNick',
+                       'text': 'A UCC-1 financing statement does not create a security interest.',
+                       'tip': 'A UCC-1 financing statement does not create a security interest.',
+                       'timestamp': 969,
+                       'timestamp_seconds': 969,
+                       'timestamp_label': '[00:16:09]',
+                       'url': 'https://www.youtube.com/watch?v=22cx7DJjhTY&t=969s',
+                       'markdown': '[00:16:09](https://www.youtube.com/watch?v=22cx7DJjhTY&t=969s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'TmmMYBOJ_3c',
+                       'title': 'UCC-1 Financing Statement: What Is it? How Does It Work?',
+                       'channel': 'The Business Guy | Asset Protection Planners',
+                       'author': 'The Business Guy | Asset Protection Planners',
+                       'text': 'After the loan is paid off, ask the lender to terminate the UCC-1 filing.',
+                       'tip': 'After the loan is paid off, ask the lender to terminate the UCC-1 filing.',
+                       'timestamp': 126,
+                       'timestamp_seconds': 126,
+                       'timestamp_label': '[00:02:06]',
+                       'url': 'https://www.youtube.com/watch?v=TmmMYBOJ_3c&t=126s',
+                       'markdown': '[00:02:06](https://www.youtube.com/watch?v=TmmMYBOJ_3c&t=126s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'TvwdUsUy-Cs',
+                       'title': 'What is a UCC Filing',
+                       'channel': 'Credit Suite',
+                       'author': 'Credit Suite',
+                       'text': 'UCC filings are often not released.',
+                       'tip': 'UCC filings are often not released.',
+                       'timestamp': 172,
+                       'timestamp_seconds': 172,
+                       'timestamp_label': '[00:02:52]',
+                       'url': 'https://www.youtube.com/watch?v=TvwdUsUy-Cs&t=172s',
+                       'markdown': '[00:02:52](https://www.youtube.com/watch?v=TvwdUsUy-Cs&t=172s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'QzlAvX38RS4',
+                       'title': 'What is a UCC Filing? What you need to know! [UCC-1 lien]',
+                       'channel': 'Midwest Corporate Credit',
+                       'author': 'Midwest Corporate Credit',
+                       'text': 'There are two types of UCC filings: a blanket lien on all assets, and a '
+                               'lien on specific collateral like a vehicle or equipment.',
+                       'tip': 'There are two types of UCC filings: a blanket lien on all assets, and a '
+                              'lien on specific collateral like a vehicle or equipment.',
+                       'timestamp': 101,
+                       'timestamp_seconds': 101,
+                       'timestamp_label': '[00:01:41]',
+                       'url': 'https://www.youtube.com/watch?v=QzlAvX38RS4&t=101s',
+                       'markdown': '[00:01:41](https://www.youtube.com/watch?v=QzlAvX38RS4&t=101s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'm37LDnkUURI',
+                       'title': 'How to Identify Hail Damage on your Commercial Roof',
+                       'channel': 'Proclaim Roofing',
+                       'author': 'Proclaim Roofing',
+                       'text': 'A previous roofer said there was no hail damage, but these 20-year-old '
+                               'roofs have damage every three feet.',
+                       'tip': 'A previous roofer said there was no hail damage, but these 20-year-old '
+                              'roofs have damage every three feet.',
+                       'timestamp': 54,
+                       'timestamp_seconds': 54,
+                       'timestamp_label': '[00:00:54]',
+                       'url': 'https://www.youtube.com/watch?v=m37LDnkUURI&t=54s',
+                       'markdown': '[00:00:54](https://www.youtube.com/watch?v=m37LDnkUURI&t=54s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'V-xAfnhz1BY',
+                       'title': 'State Farm Roof Memo: Why Hail Claims Get Denied',
+                       'channel': 'Policy & Property',
+                       'author': 'Policy & Property',
+                       'text': 'On a home insured for $300,000, a 2% deductible is $6,000 out of your '
+                               'pocket first.',
+                       'tip': 'On a home insured for $300,000, a 2% deductible is $6,000 out of your '
+                              'pocket first.',
+                       'timestamp': 258,
+                       'timestamp_seconds': 258,
+                       'timestamp_label': '[00:04:18]',
+                       'url': 'https://www.youtube.com/watch?v=V-xAfnhz1BY&t=258s',
+                       'markdown': '[00:04:18](https://www.youtube.com/watch?v=V-xAfnhz1BY&t=258s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'hb-cKsFxfwg',
+                       'title': 'Commercial Roof Hail Damage: Is It Really Cosmetic?',
+                       'channel': 'Merlin Law Group',
+                       'author': 'Merlin Law Group',
+                       'text': 'And this is where policy holders need to go back and actually do a better '
+                               'investigation.',
+                       'tip': 'And this is where policy holders need to go back and actually do a better '
+                              'investigation.',
+                       'timestamp': 28,
+                       'timestamp_seconds': 28,
+                       'timestamp_label': '[00:00:28]',
+                       'url': 'https://www.youtube.com/watch?v=hb-cKsFxfwg&t=28s',
+                       'markdown': '[00:00:28](https://www.youtube.com/watch?v=hb-cKsFxfwg&t=28s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'd6mF320R8u0',
+                       'title': 'Commercial Flat Roof Hail Damage',
+                       'channel': 'Chad Michael - The Practitioner',
+                       'author': 'Chad Michael - The Practitioner',
+                       'text': 'Damage to the flashing alone is enough to justify replacing the roof.',
+                       'tip': 'Damage to the flashing alone is enough to justify replacing the roof.',
+                       'timestamp': 25,
+                       'timestamp_seconds': 25,
+                       'timestamp_label': '[00:00:25]',
+                       'url': 'https://www.youtube.com/watch?v=d6mF320R8u0&t=25s',
+                       'markdown': '[00:00:25](https://www.youtube.com/watch?v=d6mF320R8u0&t=25s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'oAK4wMoYcMA',
+                       'title': 'How To Present Flat Roof Hail Damage To The Insurance Company',
+                       'channel': 'Jansen/Adjusters International',
+                       'author': 'Jansen/Adjusters International',
+                       'text': 'So always keep in mind the word system anytime you get up on a roof, '
+                               'because no part of the roof works alone.',
+                       'tip': 'So always keep in mind the word system anytime you get up on a roof, '
+                              'because no part of the roof works alone.',
+                       'timestamp': 3304,
+                       'timestamp_seconds': 3304,
+                       'timestamp_label': '[00:55:04]',
+                       'url': 'https://www.youtube.com/watch?v=oAK4wMoYcMA&t=3304s',
+                       'markdown': '[00:55:04](https://www.youtube.com/watch?v=oAK4wMoYcMA&t=3304s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'GciwM0T3IPE',
+                       'title': 'Roofing Inspection | Hail Damage On Flat Roof',
+                       'channel': 'Digital Roofing Innovations',
+                       'author': 'Digital Roofing Innovations',
+                       'text': 'That looks like a hail hit; what we do is cut it open, because the '
+                               'insurance is going to want to see that the back of the membrane has been '
+                               'split.',
+                       'tip': 'That looks like a hail hit; what we do is cut it open, because the '
+                              'insurance is going to want to see that the back of the membrane has been '
+                              'split.',
+                       'timestamp': 208,
+                       'timestamp_seconds': 208,
+                       'timestamp_label': '[00:03:28]',
+                       'url': 'https://www.youtube.com/watch?v=GciwM0T3IPE&t=208s',
+                       'markdown': '[00:03:28](https://www.youtube.com/watch?v=GciwM0T3IPE&t=208s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'd3bCxYtJi2M',
+                       'title': 'Solar Site Design Commercial Solar Leads',
+                       'channel': 'Jason Loyet',
+                       'author': 'Jason Loyet',
+                       'text': 'We now have thousands of C&I clients across the country actively engaged '
+                               "in energy management, and they're ready for your solar solution.",
+                       'tip': 'We now have thousands of C&I clients across the country actively engaged in '
+                              "energy management, and they're ready for your solar solution.",
+                       'timestamp': 62,
+                       'timestamp_seconds': 62,
+                       'timestamp_label': '[00:01:02]',
+                       'url': 'https://www.youtube.com/watch?v=d3bCxYtJi2M&t=62s',
+                       'markdown': '[00:01:02](https://www.youtube.com/watch?v=d3bCxYtJi2M&t=62s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'}]}

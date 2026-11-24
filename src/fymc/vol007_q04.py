@@ -1,699 +1,852 @@
 from __future__ import annotations
 
-CHAPTER_4 = {
-    "id": "Q4",
-    "chapter_id": "Q4",
-    "chapter_number": 4,
-    "question_number": 4,
-    "slug": "startup-capital-lean-infrastructure-pre-flight-stack",
-    "question_prompt": "How do you allocate startup capital ($5,000–$35,000 USD) and configure a lean, low-opex ($1,500–$8,000 USD/mo) production stack without wasting cash on bloated overhead?",
-    "kicker": "Q4 / THE BIG MONEY PLAYBOOKS",
-    "title": "Startup Capital, Lean Infrastructure & Pre-Flight Stack",
-    "subtitle": "Treasury Ledger Intake, Corporate Warrant Matching, State Finder-Fee Controls, and a Reserve-First Production Stack",
-    "layout_template": "comparison_table",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #5, Unclaimed Property Recovery, holds Rank #04 with an 89/100 "
-        "Money-to-Manpower Score. This chapter builds the capital and infrastructure "
-        "foundation supporting the volume's 12 mapped plays, concentrating on state "
-        "treasury escheatment and corporate warrant recovery. Preserve at least half "
-        "of startup cash for operating runway; buy identity evidence, secure document "
-        "handling, and jurisdiction-specific contracts before buying prospecting volume. "
-        "Recognized service fees, never recovered client principal, anchor the scorecard: "
-        "Conservative produces $15,000 annual owner net profit, Base produces $95,625, "
-        "and Scaled produces $225,000. A twelve-layer stack separates free matching "
-        "utilities from conditional paid services. Reserve arithmetic, lawful fee ceilings, "
-        "corporate authority checks, and a complete practice claim determine readiness "
-        "more reliably than an expensive office or oversized software subscription."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$60,000",
-            "context": "Annual recognized service fees, excluding recovered client principal",
-            "note": "25% net margin; $15,000 annual owner net profit; 1 FT + 2 C",
-        },
-        {
-            "label": "Base",
-            "value": "$255,000",
-            "context": "Annual recognized service fees, excluding recovered client principal",
-            "note": "37.5% net margin; $95,625 annual owner net profit; 1 FT + 2 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$450,000",
-            "context": "Annual recognized service fees, excluding recovered client principal",
-            "note": "50% net margin; $225,000 annual owner net profit; 2 FT + 3 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Fund the collection delay before funding the workstation",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Start with a cash envelope, not a subscription list. The authorized "
-                    "startup range is $5,000–$35,000, while the first deal may take "
-                    "3–12 months; neither fact establishes when the first service fee "
-                    "will clear. Separate formation spending, recoverable operating runway, "
-                    "and client principal in both the budget and bank records. The "
-                    "allocation below preserves $2,500 of a $5,000 launch, $12,000 of "
-                    "a $20,000 launch, and $21,000 of a $35,000 launch as working "
-                    "capital. Those reserves represent 50%, 60%, and 60% of starting "
-                    "cash. They are operating reserves, not money for advancing a "
-                    "claimant's expected distribution. At $1,500 monthly fixed overhead, "
-                    "the smallest reserve funds only 1.67 months, the middle reserve "
-                    "funds eight months, and the largest funds fourteen months. Therefore "
-                    "the $5,000 version is a constrained validation launch requiring "
-                    "separate earned income or additional committed funding before "
-                    "sustained production. Do not describe that envelope as a fully "
-                    "funded twelve-month business. Preserve the reserve in a separate "
-                    "business savings account, reconcile transfers weekly, and require "
-                    "a written case-level justification before consuming it for evidence "
-                    "purchases. Unspent setup allocations stay in cash rather than "
-                    "becoming permission to upgrade equipment."
-                ),
-                (
-                    "Use the seven allocation categories as spending ceilings, not "
-                    "vendor quotations. Formation includes state filing charges, registered "
-                    "agent needs, and bookkeeping setup; obtain the actual state schedule "
-                    "before committing the amount. Legal configuration buys review of "
-                    "finder eligibility, contract timing, fee limits, and corporate "
-                    "signatory authority for the initial jurisdiction. It does not buy "
-                    "nationwide coverage. The equipment allowance assumes an existing "
-                    "usable computer at the smallest tier and encrypted replacement "
-                    "hardware only where necessary. Security setup includes authentication "
-                    "keys and recovery preparation rather than a decorative monitoring "
-                    "dashboard. Outreach funds a narrow batch of verified corporate "
-                    "contacts; evidence funds certified records, postage, and permitted "
-                    "document retrieval. When a jurisdiction requires registration, a "
-                    "bond, or insurance exceeding the envelope, reallocate discretionary "
-                    "setup cash or postpone that jurisdiction without reducing the "
-                    "reserve below half of starting capital. Review errors-and-omissions "
-                    "and cyber coverage for social engineering, identity-document handling, "
-                    "contractor acts, and any exclusion affecting recovery services. "
-                    "Request written coverage explanations rather than relying on a "
-                    "generic business-policy label. A home office and scheduled contractor "
-                    "hours are usually more useful here than leased premises, dedicated "
-                    "sales seats, or prepaid enterprise data."
-                ),
-                (
-                    "Reconcile the operating plan to the canonical scorecard before "
-                    "setting a hiring budget. Conservative revenue of $60,000 less "
-                    "$45,000 total modeled costs yields $15,000 owner net profit. "
-                    "Base revenue of $255,000 less $159,375 costs yields $95,625. "
-                    "Scaled revenue of $450,000 less $225,000 costs yields $225,000. "
-                    "These are annual recognized service fees and annual owner profit, "
-                    "not recovered asset balances or monthly cash collections. For an "
-                    "illustrative cost bridge, assign fixed monthly overhead of $1,500, "
-                    "$3,500, and $8,000 respectively. Annual fixed costs then equal "
-                    "$18,000, $42,000, and $96,000, leaving $27,000, $117,375, and "
-                    "$129,000 for all remaining modeled costs. Those residuals are "
-                    "budget capacity, not permission to exclude labor or duplicate "
-                    "contractor charges. Keep 1 FT + 2 C in the first two cases "
-                    "and 2 FT + 3 C in Scaled; contractor counts do not imply "
-                    "full-time salaries. Record actual hours and payment terms. At "
-                    "$8,000 monthly overhead, even the $21,000 reserve lasts only "
-                    "2.625 months before variable spending. Delay that burn rate until "
-                    "collected fees or additional committed capital support it. An "
-                    "unsigned prospect list contributes nothing to available runway."
-                ),
-            ],
-            "table": {
-                "caption": "Reserve-First Startup Allocation: Three Exact Cash Envelopes",
-                "headers": [
-                    "Allocation and purchase discipline",
-                    "$5,000 constrained validation launch",
-                    "$20,000 focused production launch",
-                    "$35,000 expanded production launch",
-                ],
-                "rows": [
-                    [
-                        "Working capital remains separated from setup purchasing",
-                        "$2,500 reserved; exactly half of starting cash",
-                        "$12,000 reserved; sixty percent of starting cash",
-                        "$21,000 reserved; sixty percent of starting cash",
-                    ],
-                    [
-                        "Entity formation and bookkeeping setup use actual schedules",
-                        "$300 ceiling; verify local formation costs first",
-                        "$700 ceiling; include required entity administration setup",
-                        "$1,000 ceiling; establish documented entity administration ownership",
-                    ],
-                    [
-                        "Jurisdiction-specific finder contracts receive focused professional review",
-                        "$900 ceiling; restrict launch to one jurisdiction",
-                        "$2,500 ceiling; deepen initial jurisdiction contract review",
-                        "$4,500 ceiling; add jurisdictions only after review",
-                    ],
-                    [
-                        "Encrypted equipment serves evidence handling and matching",
-                        "$400 ceiling; retain an existing suitable computer",
-                        "$1,600 ceiling; purchase one suitable encrypted workstation",
-                        "$3,000 ceiling; equip two controlled production workstations",
-                    ],
-                    [
-                        "Security setup funds authentication and recovery preparation",
-                        "$200 ceiling; prioritize keys and recovery documentation",
-                        "$600 ceiling; strengthen account recovery and backups",
-                        "$900 ceiling; extend authentication controls across operators",
-                    ],
-                    [
-                        "Verified outreach avoids broad purchased contact databases",
-                        "$300 ceiling; contact narrowly researched corporate owners",
-                        "$1,200 ceiling; test repeatable verified outreach batches",
-                        "$2,000 ceiling; expand only proven outreach cohorts",
-                    ],
-                    [
-                        "Evidence acquisition supports identified high-value claim files",
-                        "$400 ceiling; buy only essential ownership evidence",
-                        "$1,400 ceiling; fund certified records and delivery",
-                        "$2,600 ceiling; support concurrent documented claim preparation",
-                    ],
-                    [
-                        "Total capitalization reconciles every allocated startup dollar",
-                        "$5,000 total; $2,500 setup plus $2,500 reserve",
-                        "$20,000 total; $8,000 setup plus $12,000 reserve",
-                        "$35,000 total; $14,000 setup plus $21,000 reserve",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Buy evidence that removes a specific collection obstacle",
-                "body": (
-                    "Experienced recovery operators spend against documented impediments "
-                    "rather than treating every visible property record as a payable lead."
-                ),
-                "items": [
-                    "Before buying certified corporate records, ask the treasury which merger, dissolution, or officer-authority documents the specific claim requires.",
-                    "Start with corporate claims above $25,000, but quarantine records whose displayed amount is only a category or estimate until value is confirmed.",
-                    "Ask the issuing municipality whether an uncashed warrant remains payable there or has transferred to the state before preparing either claim packet.",
-                    "Batch evidence purchases by confirmed claimant and jurisdiction; stop buying records when ownership continuity cannot be established.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Assemble twelve narrow layers without twelve paid subscriptions",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Build the production stack around a case identifier that survives "
-                    "every export. Use a jurisdiction prefix, source property identifier, "
-                    "and internal sequence; keep owner names out of filenames that "
-                    "could appear in email previews. Python and SQLite perform record "
-                    "normalization and candidate scoring locally, while Airtable Free "
-                    "holds a limited operational queue containing case identifiers, "
-                    "dates, and task ownership rather than identity documents. Microsoft "
-                    "365 Business Basic provides business email and controlled document "
-                    "storage. Choose one authoritative document repository instead of "
-                    "copying passports into the CRM, inbox, and contractor chat. "
-                    "The twelve layers below are functions, not twelve mandatory paid "
-                    "accounts. Several are free utilities, and the archive and OCR "
-                    "layers remain disabled until a concrete workload justifies them. "
-                    "Treat every stated price as an exact planning input for the "
-                    "named tier, not a verified current offer. Confirm checkout pricing, "
-                    "billing commitment, taxes, regional availability, and contractual "
-                    "data terms before purchase. Model annual commitments as cash "
-                    "obligations even when a vendor advertises a monthly equivalent. "
-                    "No paid tool should become a prerequisite for inspecting a public "
-                    "ledger, calculating a lawful fee, or telling an owner how to "
-                    "claim directly."
-                ),
-                (
-                    "Use the matrix to distinguish license arithmetic from total "
-                    "operating cost. One Microsoft seat at $6 per month, one "
-                    "Bitwarden Teams seat at $4, and one Backblaze Computer Backup "
-                    "subscription at $9 produce a $19 monthly-equivalent software "
-                    "baseline under the listed assumptions. Add a $15 Dropbox Sign "
-                    "Essentials seat only after confirming the receiving agency accepts "
-                    "the resulting execution method. The baseline then becomes $34, "
-                    "before domain registration, taxes, transaction charges, or optional "
-                    "usage. Microsoft and Bitwarden annual billing alone implies "
-                    "$120 of yearly license commitment for one seat each; budget "
-                    "the actual payment schedule rather than assuming monthly cancellation. "
-                    "For optional Amazon S3 storage, 100 GB at $0.023 per GB-month "
-                    "creates $2.30 of storage charges before requests and transfer. "
-                    "For Amazon Textract Detect Document Text, 1,000 pages at $0.0015 "
-                    "per page creates $1.50 of processing charges under the stated "
-                    "regional tier. These calculations are procurement assumptions, "
-                    "not the whole $1,500–$8,000 operating envelope. Most spending "
-                    "belongs to people, evidence, owner acquisition, insurance, and "
-                    "administration. Add contractor licenses only when access is "
-                    "necessary, and remove those accounts when the assignment ends."
-                ),
-                (
-                    "Automation should produce reviewable evidence, not impersonate "
-                    "the claimant or assert ownership. Store each downloaded ledger "
-                    "with source URL, retrieval timestamp, permitted-use notes, and "
-                    "a SHA-256 digest. Preserve source spelling alongside normalized "
-                    "names so punctuation cleanup cannot erase an important distinction. "
-                    "A SQLite uniqueness constraint on jurisdiction and property "
-                    "identifier prevents duplicate outreach; a separate ownership "
-                    "table records the Secretary of State entity number and evidence "
-                    "supporting each link. GitHub Free stores code and synthetic "
-                    "test fixtures only, never live claimant documents or credentials. "
-                    "Require multifactor authentication on business accounts, encrypt "
-                    "workstations, and restrict contractor access to assigned folders. "
-                    "Test a backup restoration before trusting a successful upload "
-                    "indicator. If OCR fails on a warrant image, compare the "
-                    "original manually instead of allowing the extracted amount "
-                    "to drive a fee quote. If a portal lacks an authorized "
-                    "automation route, use scheduled manual checks rather than "
-                    "bypassing access controls or flooding endpoints. Maintain a "
-                    "documented retention schedule that reconciles agency requirements, "
-                    "contractual needs, disputes, and applicable privacy duties. Cheap "
-                    "infrastructure remains useful only when an operator can explain "
-                    "where each fact originated and who changed it."
-                ),
-            ],
-            "table": {
-                "caption": "Twelve-Layer Production Stack: Explicit Planning Prices, Functions, and Lean Substitutes",
-                "headers": [
-                    "Layer and named product tier",
-                    "Exact budgeting input and billing assumption",
-                    "Production role and purchase trigger",
-                    "Cheaper operating alternative and limitation",
-                ],
-                "rows": [
-                    [
-                        "01 — Microsoft 365 Business Basic business identity",
-                        "$6 per user monthly equivalent, annual subscription assumption",
-                        "Business email and controlled case-document storage establish accountability",
-                        "Use existing business email if access controls suffice",
-                    ],
-                    [
-                        "02 — Bitwarden Teams shared credential management layer",
-                        "$4 per user monthly equivalent, annual billing assumption",
-                        "Separate operator credentials and revoke departing contractor access",
-                        "Bitwarden Free individual vault cannot replace shared administration",
-                    ],
-                    [
-                        "03 — LibreOffice Community evidence worksheet preparation layer",
-                        "$0 license cost for the community desktop suite",
-                        "Prepare fee calculations and editable internal evidence schedules",
-                        "Use existing licensed spreadsheet software without buying seats",
-                    ],
-                    [
-                        "04 — Python CPython supported release matching engine",
-                        "$0 license cost; operator development time remains budgeted",
-                        "Normalize ledger fields and rank reviewable ownership candidates",
-                        "Use spreadsheet filters until repetitive volume justifies scripts",
-                    ],
-                    [
-                        "05 — SQLite embedded case evidence database layer",
-                        "$0 license cost; local storage and maintenance remain",
-                        "Enforce property uniqueness and preserve structured matching evidence",
-                        "Use controlled CSV files during a small pilot",
-                    ],
-                    [
-                        "06 — Airtable Free operational task queue layer",
-                        "$0 subscription cost within the Free tier limits",
-                        "Track deadlines and case identifiers without identity attachments",
-                        "Use SQLite views and calendar reminders after limits",
-                    ],
-                    [
-                        "07 — GitHub Free private code versioning layer",
-                        "$0 subscription cost within included Free tier allowances",
-                        "Version matching rules using synthetic fixtures and peer review",
-                        "Use local Git plus encrypted backup without collaboration",
-                    ],
-                    [
-                        "08 — Backblaze Computer Backup workstation recovery layer",
-                        "$9 per computer monthly subscription used for budgeting",
-                        "Recover supported local files after hardware loss incidents",
-                        "Rotate encrypted offline drives and verify restoration manually",
-                    ],
-                    [
-                        "09 — Adobe Acrobat Reader free document inspection",
-                        "$0 license cost for standard free Reader functionality",
-                        "Inspect agency forms without buying unnecessary editing subscriptions",
-                        "Use the operating system PDF viewer for inspection",
-                    ],
-                    [
-                        "10 — Dropbox Sign Essentials conditional execution layer",
-                        "$15 monthly equivalent per seat, annual billing assumption",
-                        "Execute eligible agreements only when signature rules permit",
-                        "Use wet signatures where required or economically preferable",
-                    ],
-                    [
-                        "11 — Amazon S3 Standard optional archive layer",
-                        "$0.023 per GB-month, first 50 TB, us-east-1 assumption",
-                        "Archive approved evidence with access logging and retention settings",
-                        "Use existing controlled storage; requests and transfer cost extra",
-                    ],
-                    [
-                        "12 — Amazon Textract Detect Document Text OCR",
-                        "$0.0015 per page, first million pages, us-east-1 assumption",
-                        "Extract text from eligible scanned warrants for human review",
-                        "Read small batches manually; other Textract features cost separately",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "3. Underwrite the recovery play before scaling record matching",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "The priority implementation is unclaimed_property_escheatment_arbitrage, "
-                    "the TRACK_1 State Treasury Escheatment & Unclaimed Corporate "
-                    "Warrant Recovery play. Ingest permitted state controller or "
-                    "treasury ledgers and uncashed municipal or corporate warrant "
-                    "registries, prioritizing amounts above $25,000. Separate a warrant "
-                    "still payable by its issuer from property already held by "
-                    "a state treasury; the correct obligor determines the evidence "
-                    "route. Cross-match corporate officers through Secretary of State "
-                    "filings, then establish entity continuity through name changes, "
-                    "mergers, dissolutions, and assignments. An officer-name match "
-                    "creates a research lead, not authority to sign a recovery "
-                    "agreement. The play's commercial fee range is 10–25%, but "
-                    "that range never overrides state law. California Code of "
-                    "Civil Procedure §1582 supplies agreement requirements and a "
-                    "10% ceiling for covered recovery agreements; Texas Property "
-                    "Code §74.507 also controls covered recovery assistance agreements "
-                    "and limits compensation. Read each provision's scope and timing "
-                    "before configuring intake. Store the governing jurisdiction, "
-                    "eligible signing date, maximum permitted compensation, required "
-                    "disclosures, and reviewer in the case record. When a timing "
-                    "restriction is unresolved, defer solicitation or execution as "
-                    "applicable instead of relabeling the fee as research."
-                ),
-                (
-                    "Use a $30,000 eligible claim and a lawful 10% contingent "
-                    "fee as the transparent unit model. Successful recovery produces "
-                    "$3,000 of operator service fees and leaves $27,000 with the "
-                    "owner before any separately applicable owner obligations. The "
-                    "$30,000 principal never becomes operator revenue. Twenty such "
-                    "paid recoveries generate the Conservative $60,000 revenue case; "
-                    "eighty-five generate Base revenue of $255,000; one hundred "
-                    "fifty generate Scaled revenue of $450,000. These are arithmetic "
-                    "equivalents, not asserted throughput or conversion rates. A "
-                    "$100,000 claim at 10% produces $10,000 of fees, while "
-                    "a $30,000 claim at 25% would produce $7,500 only where "
-                    "that rate and agreement are lawful. Do not build the "
-                    "business around the higher rate without jurisdiction-specific "
-                    "support. For triage, suppose an eligible $3,000 fee has "
-                    "a 40% collection probability, $500 of remaining direct costs, "
-                    "and a $300 collection-delay allowance. Its planning contribution "
-                    "is $1,200 minus $800, or $400 before fixed overhead. "
-                    "Document those assumptions rather than presenting them as "
-                    "historical performance. Reject low-value cases when evidence "
-                    "costs consume expected contribution; combine records only when "
-                    "ownership and agency procedures genuinely support aggregation."
-                ),
-                (
-                    "Customer distrust is an operating constraint, not a copywriting "
-                    "problem to solve with urgency. Disclose prominently that the "
-                    "owner can claim directly from the relevant state without "
-                    "paying a recovery service, provide the official claim URL, "
-                    "and explain the paid work actually offered. Avoid government "
-                    "styling, invented deadlines, or claims of exclusive access to "
-                    "public records. Verify a corporate contact through an independently "
-                    "obtained business channel before requesting identity documents. "
-                    "Have distributions sent directly to the verified owner whenever "
-                    "the agency process permits; invoice the contractual service "
-                    "fee separately after the agreed earning event. If a process "
-                    "requires custody of client money, resolve its legal, banking, "
-                    "and accounting requirements before accepting that workflow. Obtain "
-                    "an EIN through the IRS without paying a reseller merely "
-                    "to submit the application. Keep the entity account, reserve "
-                    "account, and bookkeeping ledger distinct from personal spending. "
-                    "California Civil Code §1798.81.5 requires reasonable security "
-                    "for covered personal information; translate applicable duties "
-                    "into restricted folders, secure transmission, vendor review, "
-                    "and documented deletion. Identity mismatch sends the case "
-                    "back to evidence review. It never becomes an invitation "
-                    "to submit a more persuasive but unsupported ownership narrative."
-                ),
-            ],
-            "table": {
-                "caption": "Recovery Economics and Evidence Controls Before Any Fee Forecast",
-                "headers": [
-                    "Case condition and economic consequence",
-                    "Required evidence and authority check",
-                    "Operator action before spending additional money",
-                    "Fallback when the condition fails",
-                ],
-                "rows": [
-                    [
-                        "Treasury property exceeds the $25,000 research threshold",
-                        "Confirm property identifier, custody status, and recoverable amount",
-                        "Record source evidence before calculating possible service fees",
-                        "Defer amount-dependent underwriting until agency records support valuation",
-                    ],
-                    [
-                        "Corporate officer resembles the listed property owner's contact",
-                        "Compare entity number, historical addresses, and authority documents",
-                        "Build ownership continuity separately from contact enrichment results",
-                        "Stop outreach when similarly named entities remain unresolved",
-                    ],
-                    [
-                        "$30,000 eligible recovery supports a lawful $3,000 fee",
-                        "Confirm ten percent is permitted for this agreement",
-                        "Budget only service fees as recognized operator revenue",
-                        "Reduce compensation or decline cases with unlawful economics",
-                    ],
-                    [
-                        "Warrant appears unpaid in the issuing municipality's registry",
-                        "Check cancellation, reissuance, payment, and transfer to treasury",
-                        "Identify the responsible payer before preparing claim documents",
-                        "Route the claim correctly without duplicate recovery submissions",
-                    ],
-                    [
-                        "Contingent agreement approaches a restricted statutory signing period",
-                        "Record current statutory text and applicable triggering dates",
-                        "Calculate the eligible date using reviewed jurisdiction rules",
-                        "Hold execution and any restricted solicitation until permitted",
-                    ],
-                    [
-                        "Claimant requests help while retaining direct recovery rights",
-                        "Confirm identity, corporate authority, and informed service selection",
-                        "Provide the official free claim route in writing",
-                        "Accept direct claiming without pressure or misleading exclusivity",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "4. Prove one complete claim workflow before increasing overhead",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Pre-launch readiness means a complete evidence trail can survive "
-                    "handoff, correction, and recovery from failure. Select one "
-                    "jurisdiction, one corporate claimant profile, and a small "
-                    "permitted sample of public records. Run the intake through "
-                    "deduplication, ownership review, statutory configuration, outreach "
-                    "drafting, agreement preparation, evidence indexing, and claim-status "
-                    "tracking. Use synthetic identity documents during rehearsal and "
-                    "do not submit a fictional claim to an agency. Confirm "
-                    "that every agreement states the correct fee basis, treats "
-                    "timing restrictions correctly, and explains the owner's direct "
-                    "claim option. Recalculate the fee independently of the "
-                    "template so a stale percentage cannot silently survive. "
-                    "Have the evidence contractor explain the corporate ownership "
-                    "chain to the principal operator without access to unrelated "
-                    "cases. Then restore the rehearsal folder from backup and "
-                    "compare its inventory with the original. Record missing "
-                    "permissions, broken links, incomplete signatures, and ambiguous "
-                    "amount fields as defects with an assigned owner. No "
-                    "claim enters production merely because the CRM shows a "
-                    "green status. Readiness is the ability to reconstruct "
-                    "the entire case from source records without relying "
-                    "on someone's memory or an undocumented conversation with "
-                    "the claimant."
-                ),
-                (
-                    "Install a thirteen-week cash forecast before signing recurring "
-                    "contracts. Separate beginning cash, collected fees, fixed payments, "
-                    "case-variable payments, taxes reserved from actual activity, and "
-                    "ending unrestricted cash. Keep prospective recoveries in a "
-                    "separate schedule until the contractual earning and collection "
-                    "conditions are satisfied. A state acknowledging a claim "
-                    "does not establish that the operator's invoice is earned "
-                    "or paid. At the $1,500 fixed-overhead planning level, "
-                    "one useful monthly allocation is $120 for software "
-                    "and connectivity, $500 for scheduled support, $250 for "
-                    "evidence and delivery, $200 for outreach, $180 for "
-                    "insurance and administration, and $250 for contingency. "
-                    "These six amounts total $1,500; replace them with "
-                    "actual quotes and avoid charging the same expense "
-                    "again to a variable-cost line. During each weekly "
-                    "review, compare committed obligations with reserve cash "
-                    "and the next eight weeks of unavoidable payments. "
-                    "If the cash floor is threatened, pause discretionary "
-                    "evidence purchases, reduce outreach, and defer additional "
-                    "jurisdictions before missing essential security or filing "
-                    "obligations. Owner distributions follow funded operating needs, "
-                    "not the headline amount of a newly discovered property. "
-                    "A promising claim remains illiquid until the relevant "
-                    "cash actually arrives."
-                ),
-                (
-                    "Expand only after measuring the bottleneck with paid-case "
-                    "data. Track eligible records reviewed, confirmed ownership "
-                    "matches, owner responses, signed lawful agreements, complete "
-                    "submissions, agency deficiency requests, recoveries, earned fees, "
-                    "and cash receipts as separate events. Record elapsed "
-                    "days between events instead of collapsing them into "
-                    "one conversion percentage. A high deficiency rate calls "
-                    "for better evidence preparation, not additional prospect "
-                    "volume. A low response rate calls for verified "
-                    "contacts and clearer direct-claim disclosure, not escalating "
-                    "pressure. The first two scorecard cases retain 1 "
-                    "FT + 2 C: the principal controls economics "
-                    "and claimant relationships while narrowly scoped contractors "
-                    "support research and document preparation. The Scaled "
-                    "case permits 2 FT + 3 C, but "
-                    "additional access follows demonstrated workload and documented "
-                    "responsibilities. Require confidentiality terms, least-privilege access, "
-                    "and deletion confirmation when assignments end. Expand "
-                    "matching automation only after a reviewed sample "
-                    "demonstrates acceptable false-positive handling. Expand claim-status "
-                    "tracking through permitted interfaces or disciplined reminders, "
-                    "not unattended assumptions about agency progress. Maintain "
-                    "the same revenue boundary at every size: "
-                    "client assets measure recovered value, collected contractual "
-                    "fees support cash planning, and recognized service "
-                    "fees feed the canonical profit model. These "
-                    "are related but different ledgers."
-                ),
-            ],
-            "table": {
-                "caption": "Pre-Launch Readiness Evidence and Failure Responses",
-                "headers": [
-                    "Readiness test and accountable operating function",
-                    "Evidence required before live production work",
-                    "Specific acceptance condition for the rehearsal",
-                    "Failure response protecting cash and claimants",
-                ],
-                "rows": [
-                    [
-                        "Principal operator validates jurisdiction-specific agreement mechanics first",
-                        "Reviewed fee ceiling, signing dates, disclosures, and registration",
-                        "One eligible rehearsal case passes independent contract recalculation",
-                        "Restrict launch scope until the jurisdiction rules resolve",
-                    ],
-                    [
-                        "Research contractor verifies claimant identity and corporate continuity",
-                        "Entity records, ownership chronology, and documented signatory authority",
-                        "A second reviewer reproduces the ownership conclusion independently",
-                        "Return the case to research without submitting assertions",
-                    ],
-                    [
-                        "Document operator tests secure evidence handling and recovery",
-                        "Permission inventory, encrypted storage, and successful restoration record",
-                        "Restored rehearsal files match the expected document inventory",
-                        "Stop identity-document collection until storage controls work correctly",
-                    ],
-                    [
-                        "Principal operator confirms direct-claim disclosure and trustworthy outreach",
-                        "Official agency link and plain service-fee explanation",
-                        "Outreach distinguishes private assistance from government claim processing",
-                        "Rewrite outreach before contacting any prospective corporate owner",
-                    ],
-                    [
-                        "Bookkeeping owner reconciles reserve and committed operating payments",
-                        "Bank balances, payment schedule, and thirteen-week cash forecast",
-                        "Startup reserve meets fifty percent and runway is explicit",
-                        "Reduce spending or secure funding before sustained production",
-                    ],
-                    [
-                        "Case owner tests submission readiness without fictional filing",
-                        "Agency checklist, evidence index, and documented status workflow",
-                        "Rehearsal identifies every required document and responsible person",
-                        "Resolve deficiencies internally before any authorized live submission",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four verifications before the first live recovery engagement",
-                "body": (
-                    "Record each verification in the launch file with its evidence, "
-                    "review date, and responsible operator."
-                ),
-                "items": [
-                    "Verify applicable finder registration, compensation ceiling, agreement timing, and mandatory disclosures against current primary authority for the first jurisdiction.",
-                    "Verify that at least 50% of starting capital remains reserved and explicitly fund any gap between available runway and the expected collection delay.",
-                    "Verify corporate ownership continuity and signatory authority using independent records before requesting an agreement or sensitive identity evidence.",
-                    "Verify secure document access, successful backup restoration, direct-claim disclosure, and agency-specific submission requirements through one complete internal rehearsal.",
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Freeze the launch envelope",
-                    "action": "Allocate starting cash and transfer the reserve into a separate business account.",
-                    "detail": "Use the exact budget columns, replace allowances with quotes, and retain at least half of starting capital as working capital.",
-                },
-                {
-                    "step": 2,
-                    "title": "Configure one lawful intake lane",
-                    "action": "Build one jurisdiction-specific record schema, fee rule, timing rule, and agreement template.",
-                    "detail": "Include source identifiers, corporate authority evidence, direct-claim disclosure, and a documented review path for ambiguous cases.",
-                },
-                {
-                    "step": 3,
-                    "title": "Rehearse and restore the case",
-                    "action": "Run a synthetic claim packet through matching, preparation, permissions, and backup recovery.",
-                    "detail": "Do not file the rehearsal with an agency; independently check fee arithmetic and the complete evidence inventory.",
-                },
-                {
-                    "step": 4,
-                    "title": "Release a measured live cohort",
-                    "action": "Begin narrowly scoped authorized outreach and update the cash forecast every week.",
-                    "detail": "Track ownership errors, agency deficiencies, collection delays, earned fees, and receipts separately before increasing fixed overhead.",
-                },
-            ],
-        },
-    ],
-    "pull_quote": "Preserve the cash, prove the owner, and count only the fee.",
-    "diagram_id": "diag-07",
-    "action_checklist": [
-        "Choose the $5,000, $20,000, or $35,000 capital envelope and preserve at least 50% in a separately tracked working-capital reserve.",
-        "Reconcile the annual scorecard to $15,000, $95,625, and $225,000 owner net profit without treating recovered client principal as revenue.",
-        "Confirm current vendor pricing and activate only the twelve-layer stack components required by the first jurisdiction and live workload.",
-        "Configure reviewed finder-fee limits, statutory timing, registration requirements, corporate authority checks, and written direct-claim disclosure.",
-        "Run one complete internal claim rehearsal using synthetic identity documents, then restore its evidence folder from backup.",
-        "Maintain a thirteen-week cash forecast and expand overhead only when funded obligations and measured paid-case performance support it.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "California Code of Civil Procedure §1582 — Recovery assistance agreements",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=1582.&lawCode=CCP",
-            "relevance": (
-                "Configure covered recovery agreements using the statutory compensation "
-                "ceiling, enforceability requirements, and timing restrictions rather "
-                "than applying a universal commercial fee schedule."
-            ),
-        },
-        {
-            "title": "Texas Property Code §74.507 — Fee for recovery",
-            "url": "https://statutes.capitol.texas.gov/Docs/PR/htm/PR.74.htm#74.507",
-            "relevance": (
-                "Review compensation limits and agreement requirements for covered "
-                "Texas recovery assistance before quoting fees or executing contracts."
-            ),
-        },
-        {
-            "title": "California Civil Code §1798.81.5 — Personal information security",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=1798.81.5.&lawCode=CIV",
-            "relevance": (
-                "Translate applicable reasonable-security and third-party handling "
-                "requirements into restricted evidence access, vendor terms, and "
-                "documented safeguards for claimant information."
-            ),
-        },
-        {
-            "title": "26 U.S.C. §6109 — Identifying numbers",
-            "url": "https://www.law.cornell.edu/uscode/text/26/6109",
-            "relevance": (
-                "Establish correct taxpayer identification for applicable entity "
-                "filings and information reporting; maintain the identifier within "
-                "controlled banking and bookkeeping records."
-            ),
-        },
-    ],
-}
+CHAPTER_4 = {'id': 'Q4',
+ 'chapter_id': 'Q4',
+ 'chapter_number': 4,
+ 'question_number': 4,
+ 'slug': 'state-by-state-personal-property-searches',
+ 'question_prompt': 'How do the demonstrated state searches locate personal unclaimed property and '
+                    'forgotten utility deposits?',
+ 'kicker': 'Q4 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'State-by-State Personal Property Searches',
+ 'subtitle': 'Texas, Pennsylvania, New York, Georgia, and Massachusetts search walkthroughs; '
+             'utility-deposit searches in Iowa, Montana, Colorado, Kansas, and Maryland',
+ 'layout_template': 'comparison_matrix',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'State unclaimed property portals across Texas, New York, Pennsylvania, '
+                      'Massachusetts, Indiana, Iowa, Montana, Colorado, Kansas, Maryland and Georgia run '
+                      'on the same engine: holders remit dormant money after losing contact, the state '
+                      'holds it, and you pull it back with a last-name search plus ID and address proof. '
+                      'Practitioners agree the search is free, name variations and old addresses unlock '
+                      'hidden records, and paid finders run the identical database. Street numbers: Texas '
+                      'averages 37 business days, New York pays most simple claims within 30 days, '
+                      "Colorado's average claim is $918, and utility deposits escheat after one year in "
+                      'Iowa, Montana and Kansas. They split on finder fee ceilings (15% in New York and '
+                      'Kansas, 10% to 30% in Georgia, 10% to 40% in Montana), on whether amounts are '
+                      'shown, and on how long states hold funds.',
+ 'key_metrics': [{'label': 'Texas Average Claim Turnaround',
+                  'metric': 'Texas Average Claim Turnaround',
+                  'value': '37 business days',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "WFAA reports the Texas Comptroller's office said last year's average "
+                             'turnaround for all claim types was 37 business days, with heirship claims '
+                             'taking longer and missing documentation slowing payouts.',
+                  'source': 'WFAA ([0UUN2j2_dFU @ 00:01:42])'},
+                 {'label': 'New York Finder Fee Cap',
+                  'metric': 'New York Finder Fee Cap',
+                  'value': '15% of recovered funds, written notarized contract required',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Location service providers are capped at 15% under Abandoned Property Law '
+                             'Section 1416; the state sends 100% of the check to the owner, who then pays '
+                             'the provider.',
+                  'source': 'Как се прави ([9BVp_yhswZY @ 00:05:25])'},
+                 {'label': 'Colorado Average Claim Payout',
+                  'metric': 'Colorado Average Claim Payout',
+                  'value': '$918',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'The Great Colorado Payback holds over $700 million across over a million '
+                             'individual properties, with the average claim paying out $918.',
+                  'source': 'GardenShop.Pro ([GWa4tWyuEoA @ 00:00:46])'},
+                 {'label': 'Montana Automatic Payout Ceiling',
+                  'metric': 'Montana Automatic Payout Ceiling',
+                  'value': 'Up to $1,000 without a formal claim',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'House Bill 88 from the 2025 session lets the Department of Revenue match and '
+                             'mail up to $1,000 using state tax records; manual searching is still '
+                             'encouraged for records that do not auto-match.',
+                  'source': 'GardenShop.Pro ([3iluxKs2wP8 @ 00:02:43])'}],
+ 'sections': [{'title': 'Section 1: The Practitioner Consensus',
+               'paragraphs': ['Nearly every speaker frames the state as a custodian, not a confiscator. '
+                              'KHOU 11 reports that by law businesses and financial institutions must turn '
+                              'money over to the state once they lose contact with the owner, and the '
+                              'Texas Comptroller is holding more than $10 billion [uY7XnXFfpv4 @ '
+                              "00:00:18]. Как се прави pins New York's trigger at roughly three years "
+                              'without owner-directed activity, after which the holder runs a due '
+                              'diligence attempt to reach you and then remits, with the state holding the '
+                              'funds in perpetual custody and no statute of limitations, so money lost '
+                              'three years or thirty years ago is equally claimable [cF0HhlLh7NI @ '
+                              '00:02:26]. GardenShop.Pro repeats the model for Kansas, describing the '
+                              'state as a perpetual safekeeper with no maintenance fees draining balances '
+                              'and no forfeiture [E2EtkM2OBvI @ 00:02:00]. The inventory is consistent: '
+                              'forgotten bank accounts, uncashed checks, utility deposits, insurance '
+                              'refunds, final paychecks, gift cards, stock dividends and safe deposit box '
+                              'contents. NBC New York adds that the money is usually uncashed checks sent '
+                              'to an old address, reported by banks, retailers and health insurers '
+                              '[qHskTBuAHTg @ 00:00:35]. The operator takeaway: anything a business owed '
+                              'you and could not deliver sits in a state ledger, indexed by the name and '
+                              'address that business had on file.',
+                              'The second consensus point is that the search itself is a last-name game, '
+                              'and exact-match indexing punishes lazy queries. Как се прави tells New York '
+                              'searchers to start with the surname or business name, refine with first '
+                              'name, city or zip, and then grind through maiden names, common misspellings '
+                              'and previous addresses, because even a tiny typo in how a bank recorded '
+                              'your name years ago can hide a match [9BVp_yhswZY @ 00:02:54]. '
+                              'GardenShop.Pro pushes this harder for utility money in Iowa: accounts are '
+                              'recorded under the exact name given when the account was opened, so if the '
+                              'gas company misspelled your name a decade ago you have to search that exact '
+                              "typo [OFnbGkVuoHQ @ 00:04:13]. The same channel's Maryland walkthrough says "
+                              'utilities logged names exactly as they appeared on the paper contract, so '
+                              'test hyphenated and unhyphenated versions, maiden names, and any LLC or '
+                              'small business name the bill ran under [1IpkVjkkXHg @ 00:04:31]. NBC New '
+                              'York gives the same instruction in one line: if your name is often '
+                              'misspelled, check the list for misspellings [qHskTBuAHTg @ 00:01:24]. '
+                              'Geography is the other lever. The money is tied to the address the holder '
+                              'had, not where you live now, so old cities and zip codes are filters to '
+                              'work, not afterthoughts.',
+                              'Third, every practitioner who addresses fees says the state route is free '
+                              'and the paid route duplicates it. Как се прави warns that location service '
+                              'providers mail letters offering to recover your money for a percentage, and '
+                              'says flatly that they are simply running a last name search on the exact '
+                              'same free public database, while going direct keeps 100% of the recovered '
+                              "funds [cF0HhlLh7NI @ 00:06:41]. GardenShop.Pro's Montana breakdown puts the "
+                              'ask at 10% to 40% of the deposit and lands on the same verdict: they are '
+                              'searching the same free database you now know how to use [3iluxKs2wP8 @ '
+                              '00:07:21]. The consensus also extends the hunt beyond your own name and '
+                              'your own state. WFAA tells viewers to search the names of friends and '
+                              'family while on the Texas portal and to hit the unclaimed property site for '
+                              'every state they have previously lived in [0UUN2j2_dFU @ 00:01:59]. '
+                              "GardenShop.Pro's Georgia episode goes further, noting the database is "
+                              'public and free to search, so you can look up parents, siblings, friends, '
+                              'and even current or former employers, then call them with the find '
+                              '[DVmNNFdoDzE @ 00:07:34]. That network search is where the volume lives: '
+                              'one name is one shot, while a family tree crossed with every former address '
+                              'and state multiplies the number of shots you get at a hit.'],
+               'table': {'caption': 'Where the practitioners line up on how state unclaimed property '
+                                    'searches work',
+                         'headers': ['Consensus Point',
+                                     'What The Practitioners Report',
+                                     'Operator Move',
+                                     'Expert Source'],
+                         'rows': [['Holders must remit after losing owner contact',
+                                   'Businesses and financial institutions turn money over to the state; '
+                                   'Texas holds more than $10 billion',
+                                   'Treat any business that ever owed you money as a possible reporting '
+                                   'holder',
+                                   'KHOU 11 ([uY7XnXFfpv4 @ 00:00:18])'],
+                                  ['State holds funds in perpetual custody',
+                                   'New York holds escheated money in trust with no statute of limitations '
+                                   'on claims',
+                                   'Search for money lost decades ago, including parents and grandparents',
+                                   'Как се прави ([cF0HhlLh7NI @ 00:02:56])'],
+                                  ['Utility deposits escheat on a fast clock',
+                                   'Iowa utility deposits and refunds escheat after one year versus three '
+                                   'years for bank accounts',
+                                   'Re-run searches yearly because new utility money keeps landing in '
+                                   'state custody',
+                                   'GardenShop.Pro ([OFnbGkVuoHQ @ 00:01:32])'],
+                                  ['Name variations unlock buried records',
+                                   'Maiden names, misspellings and previous addresses expose matches that '
+                                   'a bank typo hid for years',
+                                   'Build a full variant list before typing a single query into the portal',
+                                   'Как се прави ([9BVp_yhswZY @ 00:02:54])'],
+                                  ['Old addresses beat your current zip code',
+                                   'A reporter found two claims tied to former Queens and Albany addresses '
+                                   'by keeping filters broad',
+                                   'Never restrict the first search to the zip code you live in today',
+                                   'Как се прави ([cF0HhlLh7NI @ 00:04:40])'],
+                                  ['Search is free and finders duplicate it',
+                                   'Montana finder letters ask 10% to 40% for searching the same free '
+                                   'public database',
+                                   'File direct through the state portal and keep 100% of the recovered '
+                                   'deposit',
+                                   'GardenShop.Pro ([3iluxKs2wP8 @ 00:07:21])'],
+                                  ['Search every state you ever lived in',
+                                   'Every state has unclaimed property, so check each state website where '
+                                   'you previously lived',
+                                   'Map every prior state of residence and run each portal plus family '
+                                   'names',
+                                   'WFAA ([0UUN2j2_dFU @ 00:01:59])']]}},
+              {'title': 'Section 2: Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['Portals differ sharply in what they show you before you file, and that '
+                              'dictates how you triage results. On the Texas portal, WFAA reports that '
+                              'claimable property appears with the dollar amount listed [0UUN2j2_dFU @ '
+                              '00:00:17], and KHOU 11 shows the claim page naming the exact amount and '
+                              'type, down to contents of a safety deposit box [uY7XnXFfpv4 @ 00:00:48]. '
+                              'Pennsylvania runs a color-coded grid. Michael Curtis walks through it: '
+                              'green rows mean you must contact the office to determine eligibility, white '
+                              'rows are single-owner records you can claim, gray rows are joint ownership, '
+                              'and each row shows the reporting company with amounts only bucketed as '
+                              'under 100 or over 100 [0YK26E_fzYA @ 00:03:35]. He notes an over-100 record '
+                              'could be $500 or more and you simply do not know until you request the '
+                              'claim form, and that the results grid shows only the first 400 rows. '
+                              'Maryland, per GardenShop.Pro, uses prefix matching, so a search for Doe '
+                              'finds Doe, John but can miss a record filed as Estate of John Doe because '
+                              'the first word is Estate [1IpkVjkkXHg @ 00:03:58]. Anyone working a '
+                              "deceased relative's money needs to search with the estate prefix as well as "
+                              'the surname, and anyone working Pennsylvania should narrow with city and '
+                              'address before hitting that 400-row ceiling.',
+                              'Filing follows the same skeleton everywhere: claim button, relationship to '
+                              'owner, identity fields, then documents. WFAA lays out Texas click by click: '
+                              'hit claim next to the listing, open view claimed properties, pick your '
+                              'relationship from the dropdown as owner, heir or trustee, enter name, '
+                              'address and Social Security number, confirm you are telling the truth and '
+                              'submit; the state then sends a claim listing the items it needs, such as a '
+                              "driver's license and documents showing your relationship to the property "
+                              '[0UUN2j2_dFU @ 00:00:50]. In Iowa, GardenShop.Pro says a web wizard asks '
+                              'for current mailing address, phone and legal relationship, then emails a '
+                              'unique claim ID for tracking; minimum paperwork is a signed claim form, '
+                              'photo ID and Social Security number, plus historic address proof like an '
+                              'old lease [OFnbGkVuoHQ @ 00:03:40]. Maryland adds form COT ST-912, which '
+                              'must be notarized if the claim is over $500, with portal upload as the '
+                              'fastest path or mail to Baltimore [1IpkVjkkXHg @ 00:05:32]. Kansas splits '
+                              'the channels: routine ID and mail scans go through digital upload, but an '
+                              'original certified death certificate or notarized affidavit of heirship '
+                              'cannot be emailed or faxed and must be mailed to the division in Topeka '
+                              '[E2EtkM2OBvI @ 00:06:00].',
+                              'Turnaround numbers are specific and swing with claim complexity. WFAA '
+                              "reports the Texas Comptroller's average turnaround last year was 37 "
+                              'business days across all claim types, with heirship claims running longer '
+                              'and incomplete documentation slowing things down [0UUN2j2_dFU @ 00:01:42]. '
+                              "Как се прави gives New York's clock: a confirmation email within 48 hours, "
+                              'processing within 30 days if no further action is needed, and up to 90 days '
+                              'if the state asks for ID or proof of an old address; the check then arrives '
+                              'in a perforated envelope and must be cashed by December 31 of the following '
+                              'calendar year or it goes abandoned again [9BVp_yhswZY @ 00:03:36]. '
+                              'GardenShop.Pro tiers Colorado: simple cash claims with clear address '
+                              'matches in a few days to about four weeks, manual address validation in 90 '
+                              'to 150 days, and heirship, probate or business claims commonly six to '
+                              'twelve months [GWa4tWyuEoA @ 00:06:02]. The same channel flags the haircut '
+                              'the quick news segments skip: in Montana, approved claims are '
+                              'cross-referenced against government debts, so delinquent state taxes, '
+                              'unpaid child support, IRS assessments or tribal court obligations come out '
+                              'first and you receive a paper warrant check for the net balance '
+                              '[3iluxKs2wP8 @ 00:06:37].'],
+               'table': {'caption': 'State portal mechanics and the numbers practitioners attach to each',
+                         'headers': ['State Portal',
+                                     'Search Mechanic Taught',
+                                     'Claim Or Payout Number',
+                                     'Expert Source'],
+                         'rows': [['Texas through claimittexas.org',
+                                   'Enter name plus city; listings display the dollar amount beside each '
+                                   'property',
+                                   'Average turnaround of 37 business days across all claim types last '
+                                   'year',
+                                   'WFAA ([0UUN2j2_dFU @ 00:01:42])'],
+                                  ['Pennsylvania Treasury unclaimed property database',
+                                   'Green rows need office contact, white rows single owner, gray rows '
+                                   'joint ownership',
+                                   'Amounts shown only as under 100 or over 100 until the form request',
+                                   'Michael Curtis ([0YK26E_fzYA @ 00:03:35])'],
+                                  ['New York through ouf.osc.ny.gov',
+                                   'Start broad with surname, upload W-2 or 1099 PDFs when address proof '
+                                   'is requested',
+                                   'Simple claims paid within 30 days, manual reviews running up to 90 '
+                                   'days',
+                                   'Как се прави ([cF0HhlLh7NI @ 00:05:07])'],
+                                  ['Iowa Great Iowa Treasure Hunt portal',
+                                   'Isolate category codes UT01 for utility deposits and UT02 for utility '
+                                   'refunds',
+                                   'Exact character matches are prioritized at the very top of the results',
+                                   'GardenShop.Pro ([OFnbGkVuoHQ @ 00:02:52])'],
+                                  ['Montana TAP portal at mycash.mt.gov',
+                                   'Tax records drive automatic matching, but manual surname searches are '
+                                   'still encouraged',
+                                   'House Bill 88 auto-pays up to $1,000 with no formal claim filed',
+                                   'GardenShop.Pro ([3iluxKs2wP8 @ 00:02:43])'],
+                                  ['Colorado Great Colorado Payback portal',
+                                   'Filter by previous Colorado zip codes, former cities and old street '
+                                   'addresses',
+                                   'Database holds over 16.5 million records, so common names need '
+                                   'filtering',
+                                   'GardenShop.Pro ([GWa4tWyuEoA @ 00:02:33])'],
+                                  ['Maryland through claimitmd.gov',
+                                   'Portal hides exact dollar amounts under the Public Information Act and '
+                                   'Emanuel ruling',
+                                   'Listings show vague figures like over $100 until identity is proven',
+                                   'GardenShop.Pro ([1IpkVjkkXHg @ 00:06:50])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Index Hacks That Surface Buried Records',
+                           'body': 'The practitioners keep returning to one idea: the database matches '
+                                   'what the holder typed, so you search the way the holder recorded you, '
+                                   'not the way you spell yourself.',
+                           'items': ["Search the holder's typo, not your name: utility accounts are "
+                                     'recorded under the exact name given at signup, so a misspelling from '
+                                     'a decade ago is the only query that finds it [GardenShop.Pro — '
+                                     'OFnbGkVuoHQ @ 00:04:13].',
+                                     "Run the estate prefix as a separate search on Maryland's portal, "
+                                     'because prefix matching misses records filed as Estate of John Doe '
+                                     'when you only type Doe [GardenShop.Pro — 1IpkVjkkXHg @ 00:03:58].',
+                                     'In Colorado, electric and gas deposits never reach the state portal; '
+                                     'call the provider directly, such as Xcel Energy at 1-800-895-4999, '
+                                     'with the former service address, dates and Social Security number '
+                                     'ready [GardenShop.Pro — GWa4tWyuEoA @ 00:03:32].',
+                                     "On Pennsylvania's claim form, Social Security number and date of "
+                                     'birth carry no red asterisk, but entering them if you know them '
+                                     'speeds the claim up [Michael Curtis — 0YK26E_fzYA @ 00:07:28].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Build the name and address variant list',
+                              'action': 'List legal surname, maiden and prior married names, nicknames, '
+                                        'hyphenated forms, misspellings, business names, and every former '
+                                        'address.',
+                              'detail': 'Test maiden names, nicknames, common misspellings and hyphenated '
+                                        'structures, and do not limit the initial search to your current '
+                                        'zip code because moved money is tied to the old address [Как се '
+                                        'прави — cF0HhlLh7NI @ 00:04:25].'},
+                             {'step': 2,
+                              'title': 'Run each state portal plus the national registry',
+                              'action': 'Search the official portal for every state you lived in, then run '
+                                        'missingmoney.com for cross-state holders.',
+                              'detail': 'Kansas searchers start at missingmoney.ks.gov and also run '
+                                        'missingmoney.com, especially after living in multiple states, '
+                                        'typing just the last name and then variations [GardenShop.Pro — '
+                                        'E2EtkM2OBvI @ 00:03:21].'},
+                             {'step': 3,
+                              'title': 'Triage results and file the claim',
+                              'action': 'Match name and old address, read the property type and holder, '
+                                        'then hit claim and select your relationship to the owner.',
+                              'detail': 'Click claim next to the listing, open view claimed properties, '
+                                        'choose owner, heir or trustee from the dropdown, then enter name, '
+                                        'address and Social Security number and submit [WFAA — 0UUN2j2_dFU '
+                                        '@ 00:00:33].'},
+                             {'step': 4,
+                              'title': 'Send a complete document pack the first time',
+                              'action': 'Assemble photo ID, Social Security proof, current address proof, '
+                                        'and documentation tying you to the prior address before '
+                                        'submitting.',
+                              'detail': 'Gather all documents before you hit submit, because sending an '
+                                        'incomplete file is the most common reason people face a '
+                                        'frustrating 6-month claim denial [GardenShop.Pro — 3iluxKs2wP8 @ '
+                                        '00:06:22].'}]},
+              {'heading': 'Section 3: Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The sharpest split runs through third-party finders. Как се прави, in its '
+                              'New York explainer, treats location service providers as a regulated lane '
+                              'rather than a scam: their fee is capped at a maximum of 15% of recovered '
+                              'funds, they need a written notarized contract, and the state still mails '
+                              '100% of the check to the owner, leaving the owner to pay the provider '
+                              "afterward [9BVp_yhswZY @ 00:05:12]. The same channel's last-name "
+                              'walkthrough takes the hard line instead. If a finder letter shows up '
+                              'offering recovery for a percentage, do not pay, because the finder is '
+                              'simply running a last-name search on the identical free public database '
+                              '[cF0HhlLh7NI @ 00:06:28]. GardenShop.Pro adds a timing weapon from Iowa: '
+                              'any agreement to pay a finder made within the first 24 months of the state '
+                              'holding the property is unenforceable, and after that window the fee is '
+                              'still capped at 15% with a strict notarized contract [OFnbGkVuoHQ @ '
+                              '00:05:17]. In Georgia, the same channel concedes that claimants designated '
+                              'representatives operate legally and can charge 10 to 30%, then runs the '
+                              'math: a $1,000 find means handing over $300 for a search the owner could '
+                              'run free [DVmNNFdoDzE @ 00:04:19]. Both camps agree the state itself never '
+                              'takes a cut.',
+                              'Operators also split on how wide to throw the first search. Michael Curtis, '
+                              "working Pennsylvania's treasury database, pushes narrowing: last name, "
+                              'first name, middle initial, city, and the old address if it is known, '
+                              'because without those fields the operator faces a long list to scroll '
+                              'through [0YK26E_fzYA @ 00:11:35]. Как се прави argues the reverse for New '
+                              'York. Start broad, keep geographic filters wide, and never lock the first '
+                              'pass to the current zip code, because money left behind after a move is '
+                              'tied to the old address; a reporter pulled two claims linked to former '
+                              'addresses in Queens and Albany exactly that way [cF0HhlLh7NI @ 00:04:25]. '
+                              "GardenShop.Pro's Maryland walkthrough explains why simple input beats "
+                              'detailed input on some portals: claimitmd.gov runs a prefix matching '
+                              "algorithm, so a plain 'Doe' surfaces 'Doe, John' but can miss a record "
+                              "filed as 'Estate of John Doe' because the first word is Estate [1IpkVjkkXHg "
+                              '@ 00:03:42]. What comes back on screen differs too. KHOU 11 showed the '
+                              'Texas portal listing the exact amount and the kind of money, down to the '
+                              'contents of a safety deposit box [uY7XnXFfpv4 @ 00:00:48], while '
+                              'Pennsylvania only bands rows as under or over 100 and Maryland hides exact '
+                              'figures until identity is proven.',
+                              'States also disagree on whether the owner has to lift a finger at all. '
+                              "GardenShop.Pro reports that Iowa's Money Match program cross-references the "
+                              'unclaimed property database against current state income tax filings and '
+                              'mails a check automatically, no claim form required [OFnbGkVuoHQ @ '
+                              "00:04:46]. Montana's House Bill 88, passed in the 2025 legislative session, "
+                              'lets the Department of Revenue match and pay out up to $1,000 using state '
+                              'tax records, yet the same walkthrough still pushes manual searching because '
+                              'the auto-pay feature has limits and will not trigger on everything '
+                              '[3iluxKs2wP8 @ 00:02:43]. Colorado runs a similar automated identification '
+                              'match against state tax and motor vehicle records, and if one of those '
+                              'checks shows up in the mail the owner can cash it right away [GWa4tWyuEoA @ '
+                              '00:04:04]. The holding clock is the other fault line. New York, Kansas, '
+                              'Maryland, and Georgia are all described as perpetual custodians with no '
+                              "deadline, but Indiana's attorney general told WTHR his office keeps "
+                              'unclaimed money for 25 years, after which it goes to the state, which is '
+                              'why Indiana set up a booth at the state fair so people walking by could run '
+                              'a quick search [pPow2SwrxBE @ 00:01:16]. For Indiana claimants, waiting '
+                              'carries a real cost rather than a safe default.'],
+               'table': {'caption': 'Competing Playbooks Across State Portals, Fee Finders, and Utility '
+                                    'Deposit Routes',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Kansas third-party asset locator fee exposure',
+                                   'Locators mail letters offering recovery for a fee that can legally '
+                                   'reach 15% in Kansas',
+                                   'Do not pay them; the official state portal search and claim cost '
+                                   'absolutely zero',
+                                   'GardenShop.Pro ([E2EtkM2OBvI @ 00:04:23])'],
+                                  ['Montana finder letters versus doing it yourself',
+                                   'Official-looking letters usually ask for between 10% and 40% of the '
+                                   'deposit',
+                                   'Search the exact same free public database yourself and keep 100% of '
+                                   'the money',
+                                   'GardenShop.Pro ([3iluxKs2wP8 @ 00:07:21])'],
+                                  ['Maryland fee finder timing and enforceability',
+                                   'Fee finders pitch a 10 or 20% cut through very official-sounding '
+                                   'mailed letters',
+                                   'Fee contracts cannot be enforced within 24 months of turnover; go '
+                                   'direct via claimitmd.gov',
+                                   'GardenShop.Pro ([1IpkVjkkXHg @ 00:07:19])'],
+                                  ['How much the portal reveals before claiming',
+                                   'Pennsylvania only bands each row as under 100 or over 100, so exact '
+                                   'value stays unknown',
+                                   'Maryland hides exact dollar amounts until identity is proven and the '
+                                   'claim is officially filed',
+                                   'Michael Curtis ([0YK26E_fzYA @ 00:04:38]); GardenShop.Pro '
+                                   '([1IpkVjkkXHg @ 00:06:34])'],
+                                  ['Colorado water and telecom versus electric and gas deposits',
+                                   'Municipal water, sewer, and telecom deposits escheat to the state '
+                                   'portal after one year',
+                                   'Electric and gas deposits bypass the treasury into the low-income '
+                                   'energy fund; call Xcel at 1-800-895-4999',
+                                   'GardenShop.Pro ([GWa4tWyuEoA @ 00:01:51])'],
+                                  ['Montana investor-owned utilities versus rural electric cooperatives',
+                                   'NorthWestern Energy or Montana-Dakota Utilities deposits escheat to '
+                                   'the TAP portal after one year',
+                                   'Co-ops like Flathead Electric often hold deposits and capital credits '
+                                   'in their own internal registries',
+                                   'GardenShop.Pro ([3iluxKs2wP8 @ 00:04:19])'],
+                                  ["Heir claim thresholds for deceased relatives' property",
+                                   'New York kin file under $1,000 with death certificate, small estates '
+                                   'affidavit, and table of heirs',
+                                   'Georgia heirs claiming under $7,500 can use a simplified affidavit '
+                                   'under Senate Bill 403',
+                                   'Как се прави ([cF0HhlLh7NI @ 00:05:41]); GardenShop.Pro ([DVmNNFdoDzE '
+                                   '@ 00:07:04])']]}},
+              {'heading': 'Section 4: Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ["The most expensive mistake reported is an incomplete file. GardenShop.Pro's "
+                              'Montana walkthrough calls it the most common reason claimants hit a '
+                              'frustrating 6-month claim denial, and the fix is to gather a '
+                              'government-issued photo ID, Social Security proof, current address proof, '
+                              'and documentation of the prior address tied to the property before hitting '
+                              'submit; a Missoula rental from 10 years ago has to be proven [3iluxKs2wP8 @ '
+                              "00:06:08]. WFAA heard that the Texas document request 'can be a pain,' with "
+                              "the state asking for a driver's license or supporting documentation showing "
+                              "the claimant's relationship to the property, and when an old utility bill "
+                              'is missing, most companies will hand over a copy [0UUN2j2_dFU @ 00:01:10]. '
+                              'Delivery-channel rules trip people next. GardenShop.Pro warns that Kansas '
+                              'will not take an original certified death certificate or a notarized '
+                              'affidavit of heirship by email or fax; those have to travel by physical '
+                              'mail to the unclaimed property division in Topeka [E2EtkM2OBvI @ 00:06:00]. '
+                              "Maryland's form COT ST-912 must be notarized once the claim tops $500, and "
+                              'the checklist adds a historical lease, a bank record from that year, or an '
+                              'old utility statement proving residence at the BGE or Pepco service address '
+                              '[1IpkVjkkXHg @ 00:05:32].',
+                              'Approval does not mean the full amount lands. GardenShop.Pro describes '
+                              "Montana's interagency revenue offsets: once a claim is approved, the state "
+                              'must cross-reference the claimant against outstanding government debts, so '
+                              'delinquent state taxes, unpaid child support, IRS assessments, or tribal '
+                              'court obligations come out of the deposit first, followed by a written '
+                              'explanation and a paper warrant check for the net balance [3iluxKs2wP8 @ '
+                              '00:06:37]. Kansas runs the same play through its mandatory setoff program, '
+                              'checking a centralized state debt database and intercepting delinquent '
+                              'income taxes, child support, and district court fines before the treasurer '
+                              'writes the check; only a refund larger than the debt pays out, and only the '
+                              'net [E2EtkM2OBvI @ 00:07:00]. The second leak is sitting on the check. Как '
+                              'се прави says New York owners generally have until December 31st of the '
+                              'following calendar year to cash it, or the funds become abandoned all over '
+                              'again and the whole claim restarts from scratch; property that was '
+                              'originally interest-bearing may also be subject to federal and state taxes '
+                              "[9BVp_yhswZY @ 00:05:56]. Iowa's Money Match envelope arrives looking like "
+                              'junk mail, and GardenShop.Pro warns against throwing it away, because it '
+                              'has to be cashed within 6 months [OFnbGkVuoHQ @ 00:05:01].',
+                              'Search-side traps cost just as much. GardenShop.Pro stresses that utility '
+                              'accounts are recorded under the exact name given when the account was '
+                              'created, so a decade-old gas company misspelling has to be searched as that '
+                              'exact typo, along with maiden, hyphenated, and other spelling variations '
+                              "[OFnbGkVuoHQ @ 00:04:13]. Pennsylvania's results grid hides its own trap: "
+                              'Michael Curtis shows that green rows mean the claimant must contact the '
+                              'office to determine eligibility, white rows are single-owner records that '
+                              'can be claimed directly, and gray rows mark joint ownership [0YK26E_fzYA @ '
+                              "00:03:14]. On the fraud side, WTHR's Indiana segment warns to make sure the "
+                              'search runs on the right official website and nothing else, because the '
+                              'government will not charge a fee to recover your own money [pPow2SwrxBE @ '
+                              '00:01:33]. Как се прави lists the red flags in detail: anyone demanding an '
+                              'upfront fee, an administrative charge, or a made-up clearance tax; '
+                              'unsolicited text messages or cold calls asking for a full Social Security '
+                              'number or bank passwords; and pressure claiming the money is about to be '
+                              'permanently forfeited to the government [9BVp_yhswZY @ 00:04:47]. Every one '
+                              'of these warnings collapses into the same discipline: official portal only, '
+                              'the exact name on the old account, and no money paid up front.'],
+               'table': {'caption': 'Firsthand Bottlenecks, Delays, and Payout Leaks Reported by State',
+                         'headers': ['Failure Mode',
+                                     'What Was Reported',
+                                     'Economics Check',
+                                     'Expert Source'],
+                         'rows': [['Heirship claims dragging the Texas turnaround',
+                                   'Average turnaround for all claim types was 37 business days last year '
+                                   'in Texas',
+                                   'Heirship claims take longer than owner claims, and missing '
+                                   'documentation stretches the clock further',
+                                   'WFAA ([0UUN2j2_dFU @ 00:01:26])'],
+                                  ['Colorado manual address validation and probate backlog',
+                                   'Simple cash claims with clear address matches clear in a few days to 4 '
+                                   'weeks',
+                                   'Manual validation runs 90 to 150 days; heirship, probate, or business '
+                                   'claims run 6 to 12 months',
+                                   'GardenShop.Pro ([GWa4tWyuEoA @ 00:05:48])'],
+                                  ['Kansas standard audit window on submitted documents',
+                                   "The state generally takes up to 90 days to audit a standard claim's "
+                                   'documents',
+                                   'Complex estate claims can add another 90 days on top of the standard '
+                                   'audit',
+                                   'GardenShop.Pro ([E2EtkM2OBvI @ 00:06:42])'],
+                                  ['Moving out without leaving a forwarding address',
+                                   'Named the single biggest mistake that drops deposits into the one-year '
+                                   'dormancy trap',
+                                   'Leave a forwarding address, keep deposit records, cash refunds '
+                                   'immediately, and update USPS info',
+                                   'GardenShop.Pro ([GWa4tWyuEoA @ 00:06:34])'],
+                                  ['Strict identity verification on high-value safe deposit property',
+                                   'Colorado says there is nothing worse than sending the property to the '
+                                   'wrong person',
+                                   'Average claim around $970, with the largest single payout to one '
+                                   'person reaching 1 to 2 million',
+                                   'CBS Colorado ([GBOIDnAjQvc @ 00:00:56])'],
+                                  ['New York estate claims at $1,000 or more frozen',
+                                   "The state hits pause on the payout until the Surrogate's Court "
+                                   'appoints a formal representative',
+                                   'Claims under $1,000 avoid the court step and pay surviving kin under '
+                                   'intestacy laws',
+                                   'Как се прави ([cF0HhlLh7NI @ 00:05:57])'],
+                                  ['Massachusetts dividend records showing no dollar value',
+                                   'One owner showed 14 dividend records, but the portal would not reveal '
+                                   'how much was held',
+                                   'Claimant files on every owner record blind and learns the value only '
+                                   'after filing',
+                                   'Michael Curtis ([W_7Iapx9lzk @ 00:06:47])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Four Checks Before Any Claim Goes Out the Door',
+                           'body': 'These gates come straight from the delays, denials, and payout leaks '
+                                   'practitioners hit on real state portals. Clear all four before filing '
+                                   'or cashing.',
+                           'items': ['Assemble photo ID, Social Security proof, current address proof, and '
+                                     'prior-address documentation before submitting, because an incomplete '
+                                     'file is the most common trigger for a 6-month claim denial '
+                                     '[GardenShop.Pro — 3iluxKs2wP8 @ 00:06:08].',
+                                     'Price in setoffs before counting the money: Kansas intercepts '
+                                     'delinquent state income taxes, child support, and court fines and '
+                                     'only pays the net balance [GardenShop.Pro — E2EtkM2OBvI @ 00:07:00].',
+                                     'Cash the state check promptly; in New York the deadline is generally '
+                                     'December 31st of the following calendar year or the funds go '
+                                     'abandoned again [Как се прави — 9BVp_yhswZY @ 00:05:56].',
+                                     'Confirm the official state URL and refuse any upfront fee, because '
+                                     'the government will not charge a fee to recover your own money [WTHR '
+                                     '— pPow2SwrxBE @ 00:01:33].']}}],
+ 'pull_quote': '"I tell folks all the time, if you lost parents or grandparents you could be entitled to '
+               'the money. It goes back to the 1940s." - NBC New York (qHskTBuAHTg @ 00:00:51).',
+ 'diagram_id': 'diag-07',
+ 'action_checklist': ['Run the unclaimed property search on the official website of every state you have '
+                      'previously lived in, plus the names of friends and family members [WFAA — '
+                      '0UUN2j2_dFU @ 00:01:59].',
+                      'If your name is often misspelled, check the list for misspellings and also search '
+                      'relatives, including those who have passed on [NBC New York — qHskTBuAHTg @ '
+                      '00:01:10].',
+                      'On Iowa results, isolate category codes UT01 for deposits and UT02 for refunds to '
+                      'confirm a utility deposit hit before filing [GardenShop.Pro — OFnbGkVuoHQ @ '
+                      '00:02:52].',
+                      'Run a multi-state search on missingmoney.com when a utility parent company was '
+                      'incorporated elsewhere or you moved across state lines [GardenShop.Pro — '
+                      '1IpkVjkkXHg @ 00:08:04].',
+                      'After finding your name in Texas, hit claim, fill out the application, and track '
+                      "the claim's progress online at no cost [KHOU 11 — WdhaqcAUXBk @ 00:00:55].",
+                      'In Pennsylvania, pick a white single-owner row, request the claim form, complete '
+                      'every red-asterisk field, and add optional SSN and birth date to speed processing '
+                      '[Michael Curtis — 0YK26E_fzYA @ 00:07:06].'],
+ 'statutory_citations': [{'title': 'WFAA — How to get your unclaimed property in Texas [00:01:42]',
+                          'url': 'https://www.youtube.com/watch?v=0UUN2j2_dFU&t=102s',
+                          'relevance': 'Primary practitioner testimony on Texas claim turnaround of 37 '
+                                       'business days and slower heirship claims.'},
+                         {'title': 'GardenShop.Pro — How to find Montana unclaimed utility deposits by '
+                                   'last name [00:06:22]',
+                          'url': 'https://www.youtube.com/watch?v=3iluxKs2wP8&t=382s',
+                          'relevance': 'Primary practitioner testimony on incomplete files triggering '
+                                       '6-month denials and revenue offsets.'},
+                         {'title': 'Как се прави — How to use the unclaimed property database in New York '
+                                   '[00:05:25]',
+                          'url': 'https://www.youtube.com/watch?v=9BVp_yhswZY&t=325s',
+                          'relevance': 'Primary practitioner testimony on the 15% location service '
+                                       'provider fee cap and notarized contracts.'},
+                         {'title': 'GardenShop.Pro — How to find Colorado unclaimed utility deposits by '
+                                   'last name [00:01:21]',
+                          'url': 'https://www.youtube.com/watch?v=GWa4tWyuEoA&t=81s',
+                          'relevance': 'Primary practitioner testimony on the split between treasury-held '
+                                       'and utility-held electric and gas deposits.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': '0UUN2j2_dFU',
+                       'title': 'How to get your unclaimed property in Texas',
+                       'channel': 'WFAA',
+                       'author': 'WFAA',
+                       'text': 'Last year the average turnaround time for all claim types was 37 business '
+                               'days, but the length of time is going to depend on the type of claim.',
+                       'tip': 'Last year the average turnaround time for all claim types was 37 business '
+                              'days, but the length of time is going to depend on the type of claim.',
+                       'timestamp': 102,
+                       'timestamp_seconds': 102,
+                       'timestamp_label': '[00:01:42]',
+                       'url': 'https://www.youtube.com/watch?v=0UUN2j2_dFU&t=102s',
+                       'markdown': '[00:01:42](https://www.youtube.com/watch?v=0UUN2j2_dFU&t=102s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'uY7XnXFfpv4',
+                       'title': "There's more than $10 billion in unclaimed property in Texas. Here's how "
+                                'to claim yours',
+                       'channel': 'KHOU 11',
+                       'author': 'KHOU 11',
+                       'text': 'You look for your address and you hit claim, and it shows you the exact '
+                               'amount and what kind of money, this one says contents of a safety deposit '
+                               'box.',
+                       'tip': 'You look for your address and you hit claim, and it shows you the exact '
+                              'amount and what kind of money, this one says contents of a safety deposit '
+                              'box.',
+                       'timestamp': 48,
+                       'timestamp_seconds': 48,
+                       'timestamp_label': '[00:00:48]',
+                       'url': 'https://www.youtube.com/watch?v=uY7XnXFfpv4&t=48s',
+                       'markdown': '[00:00:48](https://www.youtube.com/watch?v=uY7XnXFfpv4&t=48s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'WdhaqcAUXBk',
+                       'title': 'How to check if you have unclaimed money in Texas',
+                       'channel': 'KHOU 11',
+                       'author': 'KHOU 11',
+                       'text': 'Once you find your name, hit claim, fill out the application and you can '
+                               'actually track your claims progress all online, and this process is free.',
+                       'tip': 'Once you find your name, hit claim, fill out the application and you can '
+                              'actually track your claims progress all online, and this process is free.',
+                       'timestamp': 55,
+                       'timestamp_seconds': 55,
+                       'timestamp_label': '[00:00:55]',
+                       'url': 'https://www.youtube.com/watch?v=WdhaqcAUXBk&t=55s',
+                       'markdown': '[00:00:55](https://www.youtube.com/watch?v=WdhaqcAUXBk&t=55s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '0YK26E_fzYA',
+                       'title': "Pennsylvania Unclaimed Property - How to Search PA's State Treasury "
+                                'Unclaimed Money Data Base',
+                       'channel': 'Michael Curtis',
+                       'author': 'Michael Curtis',
+                       'text': 'The white rows show single owner property records, click on those that you '
+                               'are entitled to claim, and the gray rows show joint ownership.',
+                       'tip': 'The white rows show single owner property records, click on those that you '
+                              'are entitled to claim, and the gray rows show joint ownership.',
+                       'timestamp': 215,
+                       'timestamp_seconds': 215,
+                       'timestamp_label': '[00:03:35]',
+                       'url': 'https://www.youtube.com/watch?v=0YK26E_fzYA&t=215s',
+                       'markdown': '[00:03:35](https://www.youtube.com/watch?v=0YK26E_fzYA&t=215s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '9BVp_yhswZY',
+                       'title': 'How to use the unclaimed property database in New York',
+                       'channel': 'Как се прави',
+                       'author': 'Как се прави',
+                       'text': 'By law, their fee is capped at a maximum of 15% of the recovered funds, '
+                               'and they must have a written, notarized contract with you.',
+                       'tip': 'By law, their fee is capped at a maximum of 15% of the recovered funds, and '
+                              'they must have a written, notarized contract with you.',
+                       'timestamp': 325,
+                       'timestamp_seconds': 325,
+                       'timestamp_label': '[00:05:25]',
+                       'url': 'https://www.youtube.com/watch?v=9BVp_yhswZY&t=325s',
+                       'markdown': '[00:05:25](https://www.youtube.com/watch?v=9BVp_yhswZY&t=325s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'qHskTBuAHTg',
+                       'title': 'How to Check Unclaimed Funds in New York',
+                       'channel': 'NBC New York',
+                       'author': 'NBC New York',
+                       'text': 'If you get that, ignore it. Come right to us. There is no fee. There is no '
+                               'charge.',
+                       'tip': 'If you get that, ignore it. Come right to us. There is no fee. There is no '
+                              'charge.',
+                       'timestamp': 84,
+                       'timestamp_seconds': 84,
+                       'timestamp_label': '[00:01:24]',
+                       'url': 'https://www.youtube.com/watch?v=qHskTBuAHTg&t=84s',
+                       'markdown': '[00:01:24](https://www.youtube.com/watch?v=qHskTBuAHTg&t=84s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'cF0HhlLh7NI',
+                       'title': 'How to search New York unclaimed property by last name',
+                       'channel': 'Как се прави',
+                       'author': 'Как се прави',
+                       'text': 'Do not limit your initial search to your current zip code. If you moved, '
+                               'the money is almost certainly tied to your old address.',
+                       'tip': 'Do not limit your initial search to your current zip code. If you moved, '
+                              'the money is almost certainly tied to your old address.',
+                       'timestamp': 265,
+                       'timestamp_seconds': 265,
+                       'timestamp_label': '[00:04:25]',
+                       'url': 'https://www.youtube.com/watch?v=cF0HhlLh7NI&t=265s',
+                       'markdown': '[00:04:25](https://www.youtube.com/watch?v=cF0HhlLh7NI&t=265s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'pPow2SwrxBE',
+                       'title': 'You can search a state website for unclaimed property',
+                       'channel': 'WTHR',
+                       'author': 'WTHR',
+                       'text': 'We keep it for 25 years and if no one claims it then it goes to the state, '
+                               "and I don't want that to happen.",
+                       'tip': 'We keep it for 25 years and if no one claims it then it goes to the state, '
+                              "and I don't want that to happen.",
+                       'timestamp': 76,
+                       'timestamp_seconds': 76,
+                       'timestamp_label': '[00:01:16]',
+                       'url': 'https://www.youtube.com/watch?v=pPow2SwrxBE&t=76s',
+                       'markdown': '[00:01:16](https://www.youtube.com/watch?v=pPow2SwrxBE&t=76s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'OFnbGkVuoHQ',
+                       'title': 'How to find Iowa unclaimed utility deposits by last name',
+                       'channel': 'GardenShop.Pro',
+                       'author': 'GardenShop.Pro',
+                       'text': 'If the local gas company misspelled your name a decade ago, you actually '
+                               'have to search for that exact typo to find your funds.',
+                       'tip': 'If the local gas company misspelled your name a decade ago, you actually '
+                              'have to search for that exact typo to find your funds.',
+                       'timestamp': 253,
+                       'timestamp_seconds': 253,
+                       'timestamp_label': '[00:04:13]',
+                       'url': 'https://www.youtube.com/watch?v=OFnbGkVuoHQ&t=253s',
+                       'markdown': '[00:04:13](https://www.youtube.com/watch?v=OFnbGkVuoHQ&t=253s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '3iluxKs2wP8',
+                       'title': 'How to find Montana unclaimed utility deposits by last name',
+                       'channel': 'GardenShop.Pro',
+                       'author': 'GardenShop.Pro',
+                       'text': 'Sending in an incomplete file is literally the most common reason people '
+                               'face a super frustrating 6-month claim denial.',
+                       'tip': 'Sending in an incomplete file is literally the most common reason people '
+                              'face a super frustrating 6-month claim denial.',
+                       'timestamp': 382,
+                       'timestamp_seconds': 382,
+                       'timestamp_label': '[00:06:22]',
+                       'url': 'https://www.youtube.com/watch?v=3iluxKs2wP8&t=382s',
+                       'markdown': '[00:06:22](https://www.youtube.com/watch?v=3iluxKs2wP8&t=382s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '3iluxKs2wP8',
+                       'title': 'How to find Montana unclaimed utility deposits by last name',
+                       'channel': 'GardenShop.Pro',
+                       'author': 'GardenShop.Pro',
+                       'text': 'Usually, they want between 10% and 40% of your deposit. Honestly, do not '
+                               'use them.',
+                       'tip': 'Usually, they want between 10% and 40% of your deposit. Honestly, do not '
+                              'use them.',
+                       'timestamp': 441,
+                       'timestamp_seconds': 441,
+                       'timestamp_label': '[00:07:21]',
+                       'url': 'https://www.youtube.com/watch?v=3iluxKs2wP8&t=441s',
+                       'markdown': '[00:07:21](https://www.youtube.com/watch?v=3iluxKs2wP8&t=441s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'GWa4tWyuEoA',
+                       'title': 'How to find Colorado unclaimed utility deposits by last name',
+                       'channel': 'GardenShop.Pro',
+                       'author': 'GardenShop.Pro',
+                       'text': 'If you want to track down that deposit you put down for electric or gas, '
+                               "you won't find it on the state website, you'll literally have to call your "
+                               'regional utility provider directly.',
+                       'tip': 'If you want to track down that deposit you put down for electric or gas, '
+                              "you won't find it on the state website, you'll literally have to call your "
+                              'regional utility provider directly.',
+                       'timestamp': 111,
+                       'timestamp_seconds': 111,
+                       'timestamp_label': '[00:01:51]',
+                       'url': 'https://www.youtube.com/watch?v=GWa4tWyuEoA&t=111s',
+                       'markdown': '[00:01:51](https://www.youtube.com/watch?v=GWa4tWyuEoA&t=111s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'E2EtkM2OBvI',
+                       'title': 'How to find Kansas unclaimed utility deposits by last name',
+                       'channel': 'GardenShop.Pro',
+                       'author': 'GardenShop.Pro',
+                       'text': 'Before the treasurer writes you a check, they cross-reference your name '
+                               'against a massive centralized state debt database, and those obligations '
+                               'will be automatically intercepted right out of your utility refund.',
+                       'tip': 'Before the treasurer writes you a check, they cross-reference your name '
+                              'against a massive centralized state debt database, and those obligations '
+                              'will be automatically intercepted right out of your utility refund.',
+                       'timestamp': 420,
+                       'timestamp_seconds': 420,
+                       'timestamp_label': '[00:07:00]',
+                       'url': 'https://www.youtube.com/watch?v=E2EtkM2OBvI&t=420s',
+                       'markdown': '[00:07:00](https://www.youtube.com/watch?v=E2EtkM2OBvI&t=420s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'GBOIDnAjQvc',
+                       'title': 'Colorado has $2.5B in unclaimed property. How to check whether any '
+                                'belongs to you.',
+                       'channel': 'CBS Colorado',
+                       'author': 'CBS Colorado',
+                       'text': "There's nothing worse than sending the property to the wrong person.",
+                       'tip': "There's nothing worse than sending the property to the wrong person.",
+                       'timestamp': 56,
+                       'timestamp_seconds': 56,
+                       'timestamp_label': '[00:00:56]',
+                       'url': 'https://www.youtube.com/watch?v=GBOIDnAjQvc&t=56s',
+                       'markdown': '[00:00:56](https://www.youtube.com/watch?v=GBOIDnAjQvc&t=56s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '1IpkVjkkXHg',
+                       'title': 'How to find Maryland unclaimed utility deposits by last name',
+                       'channel': 'GardenShop.Pro',
+                       'author': 'GardenShop.Pro',
+                       'text': 'The Maryland database uses what software engineers call a prefix matching '
+                               'algorithm, so it only looks for records that start with exactly what you '
+                               'typed.',
+                       'tip': 'The Maryland database uses what software engineers call a prefix matching '
+                              'algorithm, so it only looks for records that start with exactly what you '
+                              'typed.',
+                       'timestamp': 222,
+                       'timestamp_seconds': 222,
+                       'timestamp_label': '[00:03:42]',
+                       'url': 'https://www.youtube.com/watch?v=1IpkVjkkXHg&t=222s',
+                       'markdown': '[00:03:42](https://www.youtube.com/watch?v=1IpkVjkkXHg&t=222s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'DVmNNFdoDzE',
+                       'title': 'How to search unclaimed property in Georgia for free',
+                       'channel': 'GardenShop.Pro',
+                       'author': 'GardenShop.Pro',
+                       'text': 'This is a solicitation. This is not a bill or official government '
+                               'document, and has not been sent by the Georgia Department of Revenue.',
+                       'tip': 'This is a solicitation. This is not a bill or official government document, '
+                              'and has not been sent by the Georgia Department of Revenue.',
+                       'timestamp': 288,
+                       'timestamp_seconds': 288,
+                       'timestamp_label': '[00:04:48]',
+                       'url': 'https://www.youtube.com/watch?v=DVmNNFdoDzE&t=288s',
+                       'markdown': '[00:04:48](https://www.youtube.com/watch?v=DVmNNFdoDzE&t=288s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'W_7Iapx9lzk',
+                       'title': 'Massachusetts Unclaimed Property - How to Make an Unclaimed Money Search '
+                                'in Massachusetts',
+                       'channel': 'Michael Curtis',
+                       'author': 'Michael Curtis',
+                       'text': 'These are the companies that send the money to the state because they '
+                               "couldn't find the owners of this money.",
+                       'tip': 'These are the companies that send the money to the state because they '
+                              "couldn't find the owners of this money.",
+                       'timestamp': 229,
+                       'timestamp_seconds': 229,
+                       'timestamp_label': '[00:03:49]',
+                       'url': 'https://www.youtube.com/watch?v=W_7Iapx9lzk&t=229s',
+                       'markdown': '[00:03:49](https://www.youtube.com/watch?v=W_7Iapx9lzk&t=229s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'}]}

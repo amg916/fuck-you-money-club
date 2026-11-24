@@ -9,49 +9,49 @@
       "LICENSING"
     ],
     "deck": [
-      "VERIFY CHAIN OF TITLE. DEFINE FIELD.",
-      "AUDIT NET ROYALTIES."
+      "PERCEIVED OWNERSHIP, PROVISIONAL FILINGS AND ASSIGNMENT RECORD SEARCHES",
+      "ROYALTY RATES, ANNUAL MINIMUMS AND EXCLUSIVE VERSUS NON-EXCLUSIVE GRANTS"
     ],
-    "lead": "Commercializing Dormant Patents, Trademarks, Industrial Designs & Proprietary Datasets via Minimum-Guarantee Royalty Contracts",
-    "summary": "Structure field-of-use licensing agreements, quarterly royalty reporting, and audit rights without taking manufacturing inventory risk.",
+    "lead": "Patent attorneys, licensing coaches and product founders show how to keep title, file a provisional for perceived ownership, and license an invention for 2 to 10% of wholesale backed by annual minimums instead of floating $250,000 in inventory.",
+    "summary": "All 12 chapters synthesize 192 verbatim YouTube practitioner testimonies, with every quote carrying timestamped inline attribution to its channel and video. The chapters run from choosing a licensing business model through royalty administration to licensing digital IP, AI data and software.",
     "chapters": [
-      "Business model & revenue boundaries",
-      "Decision-makers & payment rails",
-      "Unit economics & margin waterfall",
-      "Startup capital & lean stack",
-      "Beginner traps & failure modes",
-      "Sourcing & first deals",
-      "End-to-end operating blueprint",
-      "Public records, APIs & tooling",
-      "Contracts, statutes & scripts",
-      "Automation & distribution loops",
-      "Small-team pod & exit valuation",
-      "First 30-day launch sprint"
+      "Choose the Licensing Business Model",
+      "Research and Protect the Invention",
+      "Understand Inventor Royalty Economics",
+      "Find Licensees and Pitch the Product",
+      "Negotiate the License and Term Sheet",
+      "Commercialize Research Through Technology Transfer",
+      "Build a Brand Licensing Program",
+      "Value and Monetize Patent Portfolios",
+      "Clear Permissions and Address Infringement",
+      "Administer, Audit and Account for Royalties",
+      "License Creative Work and Knowledge",
+      "License Digital IP, AI Data and Software"
     ],
     "flow": [
       [
-        "SOURCE",
-        "Mine high-intent deal triggers"
+        "RESEARCH",
+        "Run concept-based Boolean searches with parentheses, confirm the exact application number, and pull assignment records for current owners and security interests"
       ],
       [
-        "UNDERWRITE",
-        "Screen margin, float & rules"
+        "PROTECT",
+        "File a provisional for perceived ownership at the $65 micro entity rate, disclosing every implementation detail and paying the fee the same day"
       ],
       [
-        "ENGAGE",
-        "Execute mandate or pre-sell"
+        "CHOOSE",
+        "Weigh licensing against assignment and manufacturing, and manufacture only with strong demand, healthy margins, a clear sales channel and operating capacity"
       ],
       [
-        "DELIVER",
-        "Run standardized SOP & ledger"
+        "PITCH",
+        "Approach manufacturers as a product developer with polished brochures, formal letters and prototypes, never paying a broker upfront fees"
       ],
       [
-        "VERIFY",
-        "Audit quality, scrubs & statutes"
+        "NEGOTIATE",
+        "Lock price, annual minimums and a refusal to indemnify before the first meeting, settling price last against the licensee's next best alternative"
       ],
       [
-        "COMPOUND",
-        "Reconcile cash & scale pod"
+        "STRUCTURE",
+        "Keep title, pick exclusive or non-exclusive grants carefully, and tier royalties at 7% granted, 5% pending and 1% if the patent never issues"
       ]
     ]
   },
@@ -59,10 +59,10 @@
   "book_series": "THE BIG MONEY PLAYBOOKS",
   "tagline": "Big Money. Small Teams. No Bullshit.",
   "title": "INTELLECTUAL PROPERTY LICENSING",
-  "subtitle": "The Complete Playbook for $50,000–$800,000 USD in Annual IP Licensing Revenue: Launch with 1 FT + 3 C (4 People), Scale to 6 People",
+  "subtitle": "Keep Title, Rent the Rights: Perceived Ownership on a $65 Provisional, 5% Royalty Anchors, 20-30 Company Outreach, Half-Projection Minimum Guarantees, Claim-Charted Portfolios, Audit Clauses and AI-Data Deletion Terms",
   "chapter_count": 12,
-  "total_word_count": 75305,
-  "expert_youtube_link_count": 180,
+  "total_word_count": 71976,
+  "expert_youtube_link_count": 211,
   "min_expert_youtube_links_required": 150,
   "target_expert_youtube_links": "150-200+",
   "min_expert_youtube_links_per_chapter": 12,
@@ -77,5 +77,5 @@
   "publication_status": "approved_master",
   "public_deploy_approved": false,
   "paid_sales_approved": false,
-  "updated_at": "2026-11-23T22:48:01Z"
+  "updated_at": "2026-11-24T19:54:29Z"
 }

@@ -1,666 +1,852 @@
 from __future__ import annotations
 
-CHAPTER_6 = {
-    "id": "Q6",
-    "chapter_id": "Q6",
-    "chapter_number": 6,
-    "question_number": 6,
-    "slug": "sourcing-demand-mining-landing-first-equipment-deals",
-    "question_prompt": "Where do high-margin deals, clients, or undervalued assets hide in equipment brokerage, and what repeatable outbound/inbound sourcing system lands the first 3-to-10 wins (2–9 months)?",
-    "kicker": "Q6 / THE BIG MONEY PLAYBOOKS",
-    "title": "Sourcing, Demand Mining & Landing Your First Deals",
-    "subtitle": "Mine Fleet Rotations, CNC Replacement Orders and Plant Closures; Convert Verified Demand Through UCC Releases, Independent Inspection and Escrow",
-    "layout_template": "step_by_step_sop",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #11, Equipment Brokerage, ranks #16 with an 86/100 Money-to-Manpower "
-        "Score. The opportunity is verified matching, not speculative equipment ownership. "
-        "This chapter develops seven sourcing plays: fleet rotation, CNC replacement, "
-        "plant closure, rental refresh, lender-directed disposition, buyer-wanted matching, "
-        "and the mapped cell-tower, rooftop and billboard easement strip-out adjacency. "
-        "The last requires separate property-rights authority and stays outside equipment "
-        "commission projections. Build buyer specifications first, mine dated seller triggers, "
-        "and earn mandates through documented inspection, lien clearance and settlement. "
-        "Canonical annual owner profits are $25,000 Conservative, $157,500 Base and "
-        "$360,000 Scaled. A measured 2–9 month launch targets the first 3–10 completed "
-        "transactions without treating asset value, escrow balances or prospective commissions "
-        "as earned brokerage revenue."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$100,000",
-            "context": "Annual broker commissions only; equipment transaction value excluded",
-            "note": "25% net margin; $25,000 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Base",
-            "value": "$450,000",
-            "context": "Annual broker commissions only; equipment transaction value excluded",
-            "note": "35.0% net margin; $157,500 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$800,000",
-            "context": "Annual broker commissions only; equipment transaction value excluded",
-            "note": "45% net margin; $360,000 annual owner net profit; 2 FT + 4 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Mine Seven Triggered Plays Without Buying Speculative Inventory",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Begin with a buyer problem narrow enough to quote: a regional excavator "
-                    "needs two tracked machines below 4,000 documented hours; a job shop needs "
-                    "a specific CNC spindle taper and control; a fleet manager needs six "
-                    "replacement service trucks. Ask for application, required configuration, "
-                    "installed budget, delivery window, inspection standard and purchase authority. "
-                    "Create a buyer-wanted record before collecting listings. Mine SAM.gov "
-                    "award notices, municipal purchasing records, state WARN notices where "
-                    "published, company closure announcements and public auction calendars for "
-                    "dated events. A construction award signals possible equipment demand, not "
-                    "an equipment order. A WARN notice signals organizational change, not "
-                    "permission to sell machinery. Cross-check each trigger with an authorized "
-                    "manager before marketing anything. Use MachineryTrader, Equipment Trader, "
-                    "Machinio and OEM dealer listings for configuration comparisons; asking "
-                    "prices are hypotheses, while documented completed sales provide stronger "
-                    "evidence. Record source URL, observation date, machine category, named "
-                    "business contact and the next verification question in Airtable or "
-                    "HubSpot. Deduplicate by company, serial number and seller relationship. "
-                    "The scarce asset is a verified buying or selling decision with a "
-                    "deadline, not a spreadsheet containing thousands of scraped addresses."
-                ),
-                (
-                    "Run six equipment plays with explicit fee arithmetic and reversible "
-                    "fallbacks. Fleet rotation can match a $200,000 excavator at an agreed "
-                    "5% commission, producing $10,000 before brokerage expenses; if replacement "
-                    "delivery slips, keep the mandate conditional instead of promising immediate "
-                    "availability. CNC replacement can place a $150,000 machining center for "
-                    "$7,500 at 5%; missing parameter backups or failed spindle tests require "
-                    "repair, repricing or withdrawal. Plant closure can move a $300,000 "
-                    "machine package for $15,000 at 5%; if removal costs break buyer "
-                    "economics, split the package only with seller authorization. Rental "
-                    "refresh can place four $50,000 machines for $10,000 at 5%; uneven "
-                    "condition requires separate inspections and prices. Lender-directed "
-                    "disposition can produce $20,000 on $400,000 at 5%, but only after "
-                    "verifying sale authority and release mechanics; otherwise pause marketing. "
-                    "Buyer-wanted matching can earn $12,500 on $250,000 at 5%; an "
-                    "unfunded buyer returns to qualification rather than receiving a costly "
-                    "site visit. These are negotiated illustrations, not observed market rates. "
-                    "In every play, distinguish machine consideration from the broker's fee, "
-                    "identify who pays that fee, and document whether inspection, travel and "
-                    "advertising expenses are separately reimbursed before committing contractor time."
-                ),
-                (
-                    "The seventh play, cell_tower_billboard_easement_strip_out, is an adjacent "
-                    "property-rights assignment, not an equipment resale. A closing industrial "
-                    "site may carry a tower, rooftop or billboard arrangement whose assignable "
-                    "rent and access rights interest specialist buyers. Separate the underlying "
-                    "land, installed structures, tenant equipment, lease obligations and proposed "
-                    "easement in a rights schedule. Illustratively, $24,000 annual rent less "
-                    "$2,000 annual owner obligations produces $22,000 before taxes and "
-                    "transaction costs; a specialist's assumed 8% capitalization rate implies "
-                    "$275,000 before contractual and title adjustments. A hypothetical 30% "
-                    "haircut for termination exposure reduces that indication to $192,500, "
-                    "not a promised bid. Model tenant termination, renewal options, escalation, "
-                    "access width, utility obligations and mortgage priority. A $30,000 "
-                    "reduction in residual-property value would reduce that owner's combined "
-                    "economic benefit to $162,500 before other costs. Use the appropriately "
-                    "licensed property specialist and obtain required owner, tenant and "
-                    "lender approvals; an equipment mandate conveys none of those powers. "
-                    "Fallback: retain the lease or negotiate a narrower term-limited "
-                    "assignment with all required approvals. Keep this transaction and "
-                    "any permitted compensation separate from equipment commission projections. "
-                    "Its sourcing value is recognizing a distinct right during an authorized "
-                    "site-disposition conversation rather than accidentally selling someone else's interest."
-                ),
-            ],
-            "table": {
-                "caption": "Seven Triggered Sourcing Plays and Their Reversible First Moves",
-                "headers": [
-                    "Sourcing play and observable business event",
-                    "Demand evidence worth obtaining before outreach",
-                    "Illustrative fee or rights valuation mechanics",
-                    "Failure condition and practical operating fallback",
-                ],
-                "rows": [
-                    [
-                        "Fleet rotation after confirmed replacement equipment delivery",
-                        "Buyer specifies excavator hours, attachments and arrival deadline",
-                        "Two hundred thousand dollars at five percent earns ten thousand",
-                        "Replacement delay requires conditional availability rather than premature dispatch",
-                    ],
-                    [
-                        "CNC replacement following an authorized capacity upgrade",
-                        "Buyer confirms control generation, spindle taper and electrical supply",
-                        "One hundred fifty thousand dollars yields seven thousand five hundred",
-                        "Failed spindle testing requires repair, repricing or seller withdrawal",
-                    ],
-                    [
-                        "Plant closure with documented owner authorization to market",
-                        "Buyer accepts removal sequence, rigging scope and collection dates",
-                        "Three hundred thousand dollars at five percent earns fifteen thousand",
-                        "Excess removal costs trigger authorized lot splitting or rejection",
-                    ],
-                    [
-                        "Rental refresh supported by serial-level disposal approval",
-                        "Buyer accepts separate condition reports for each rental machine",
-                        "Four fifty thousand dollar machines yield ten thousand collectively",
-                        "Uneven wear requires individual prices and separate acceptance decisions",
-                    ],
-                    [
-                        "Lender-directed disposition with documented authority and release instructions",
-                        "Buyer accepts documented condition and enforceable settlement procedures",
-                        "Four hundred thousand dollars at five percent earns twenty thousand",
-                        "Disputed sale authority stops marketing until authority is established",
-                    ],
-                    [
-                        "Buyer-wanted matching around a funded equipment specification",
-                        "Purchasing authority confirms installed budget and deposit capability",
-                        "Two hundred fifty thousand dollars yields twelve thousand five hundred",
-                        "Unfunded interest returns to qualification before paid site inspection",
-                    ],
-                    [
-                        "Cell-tower, rooftop and billboard perpetual easement strip-out adjacency",
-                        "Specialist buyer reviews assignability, termination exposure and title burden",
-                        "Twenty-two thousand annual net rent supports explicitly adjusted valuation",
-                        "Retain lease or negotiate approved narrower term-limited assignment",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Find the Decision Behind the Listing",
-                "body": (
-                    "Experienced brokers trade on verified timing and configuration advantages, "
-                    "not merely on being first to forward a photograph."
-                ),
-                "items": [
-                    "Ask the OEM dealer when the replacement machine is actually scheduled to arrive; obtain the seller's permission before discussing their order.",
-                    "Request CNC option screens, control version and spindle hours before quoting comparables; identical model names can conceal materially different capabilities.",
-                    "Ask plant managers which machine must leave last to preserve production; a buyer accepting that sequence can outperform a higher but inflexible bid.",
-                    "Capture the included bucket, toolholder, fixture and software-license schedule separately; missing accessories can erase an apparent price advantage.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Turn Public Signals Into Qualified, Authorized Mandates",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Build a weekly signal desk rather than a perpetual browsing habit. "
-                    "On Monday, review selected public contract awards and regional business "
-                    "announcements for the chosen machine family. On Tuesday, inspect state "
-                    "WARN postings, authorized liquidation notices and auction catalogs for "
-                    "possible supply. On Wednesday, ask OEM dealers, riggers and independent "
-                    "technicians for permission-based introductions; agree any permitted referral "
-                    "compensation in writing and disclose material relationships. A rigger "
-                    "may know a removal deadline but cannot appoint you to sell the "
-                    "machine. A lender contact may discuss disposition without possessing "
-                    "authority to release every lien. On Thursday, reconcile fresh signals "
-                    "against existing buyer-wanted records. On Friday, call the most "
-                    "time-sensitive matches and archive stale claims. Capture the original "
-                    "record, its publication date, the inferred commercial event and the "
-                    "person who subsequently verified it. Use permitted site alerts, RSS "
-                    "feeds and manual review rather than bypassing access restrictions. "
-                    "Retain business contact data needed for the transaction, restrict "
-                    "exports from the CRM and remove unnecessary personal details. "
-                    "A productive research note ends with a specific question such as "
-                    "'Does the replacement delivery free serial 4821 in October?' "
-                    "rather than an unsupported conclusion that a company must liquidate."
-                ),
-                (
-                    "Score each prospective mandate out of 100 before spending on travel: "
-                    "20 points for verified seller authority, 20 for matched buyer demand, "
-                    "15 for economic spread after delivered costs, 15 for available "
-                    "condition evidence, 15 for a credible title-release path and 15 "
-                    "for timing alignment. Award full points only when the relevant "
-                    "document or accountable contact is recorded; use half points for "
-                    "partial evidence and zero for unsupported claims. A score of 75 "
-                    "earns deeper work only if authority and title-release feasibility "
-                    "are established. No aggregate score overrides an ownership dispute. "
-                    "For a $200,000 machine, add $8,000 freight, $4,000 rigging and "
-                    "$3,000 immediate service: the buyer's installed cost is $215,000 "
-                    "before applicable taxes and site modifications. Against a supported "
-                    "$230,000 installed alternative, the advantage is $15,000, not "
-                    "$30,000. At a seller-paid 5% fee, the broker earns $10,000 "
-                    "and the seller receives $190,000 before payoff and other seller "
-                    "costs. Explicitly identify which party pays freight and inspection. "
-                    "Reject apparent bargains that require hiding access costs, suppressing "
-                    "known defects or treating a speculative resale price as an executable "
-                    "buyer offer. Re-score after inspection, not just when the listing enters."
-                ),
-                (
-                    "Qualification must establish authority and settlement feasibility without "
-                    "pretending that a database search proves clean ownership. Obtain the "
-                    "seller's exact legal name, entity jurisdiction, invoice chain, serial "
-                    "photographs and any vehicle title. Under UCC § 9-307, debtor location "
-                    "often drives the filing jurisdiction; registered organizations generally "
-                    "require attention to their organizing jurisdiction. Fixtures, titled "
-                    "vehicles and other exceptions require the applicable record system. "
-                    "Search the relevant official UCC index using correct debtor information, "
-                    "then examine blanket collateral descriptions, amendments and continuations. "
-                    "UCC § 9-315 generally preserves a security interest following disposition "
-                    "unless the secured party authorized a free transfer or another rule "
-                    "applies. Obtain authenticated payoff and collateral-release instructions "
-                    "from each relevant secured party; independently verify contact details. "
-                    "UCC § 9-513 concerns termination statements, but a filed termination "
-                    "alone is not a universal ownership certificate. The signed mandate "
-                    "should define identified assets, authority, asking strategy, fee payer, "
-                    "commission trigger, term, expenses, permitted disclosures and any narrowly "
-                    "defined post-term protection. Check state dealer or broker licensing "
-                    "for the actual asset and activity before solicitation. Fleet transactions "
-                    "involving road vehicles may invoke rules that ordinary industrial "
-                    "machinery sales do not."
-                ),
-            ],
-            "table": {
-                "caption": "Evidence-Weighted Mandate Qualification and Title Investigation",
-                "headers": [
-                    "Qualification factor and allocated scoring weight",
-                    "Evidence required for a full score",
-                    "Specific verification method before deeper expenditure",
-                    "Failure response that protects transaction integrity",
-                ],
-                "rows": [
-                    [
-                        "Seller authority contributes twenty evidence-backed qualification points",
-                        "Entity representative supplies authority documentation and identified asset schedule",
-                        "Verify representative through independently sourced company contact information",
-                        "Stop promotion when authority is disputed or unsupported",
-                    ],
-                    [
-                        "Matched demand contributes twenty evidence-backed qualification points",
-                        "Buyer provides application, budget, configuration and purchase timing",
-                        "Confirm purchase authority and installed-cost ceiling directly",
-                        "Keep broad interest outside the inspection-ready buyer queue",
-                    ],
-                    [
-                        "Delivered economics contribute fifteen evidence-backed qualification points",
-                        "Written freight, rigging and service estimates support buyer advantage",
-                        "Compare installed alternatives rather than unmatched advertised asking prices",
-                        "Reprice or reject when installation consumes the apparent discount",
-                    ],
-                    [
-                        "Condition evidence contributes fifteen evidence-backed qualification points",
-                        "Serial photographs, service records and independent inspection are available",
-                        "Commission machine-specific tests using a qualified independent technician",
-                        "Withhold condition claims until inspection supports their precise wording",
-                    ],
-                    [
-                        "Title-release feasibility contributes fifteen evidence-backed qualification points",
-                        "Relevant secured parties provide authenticated payoff and release procedures",
-                        "Search correct jurisdictions and reconcile every relevant collateral claim",
-                        "Suspend settlement when any required release remains unresolved",
-                    ],
-                    [
-                        "Timing alignment contributes fifteen evidence-backed qualification points",
-                        "Seller release window matches buyer transport and installation availability",
-                        "Confirm replacement delivery and site access with accountable managers",
-                        "Use conditional scheduling instead of promising impossible collection dates",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four Checks Before Publishing a Deal-Ready Listing",
-                "body": (
-                    "A high qualification score never replaces authority, evidence or a "
-                    "workable release path. Complete these checks before representing an "
-                    "asset as ready for a committed buyer."
-                ),
-                "items": [
-                    "Verify the seller's authority, exact asset identity and your signed marketing mandate; confirm required dealer or broker credentials for the transaction.",
-                    "Obtain dated condition evidence and disclose known limitations; distinguish seller statements from independently verified inspection findings.",
-                    "Document the relevant lien searches, vehicle-title or fixture issues, authenticated payoff contacts and an executable collateral-release sequence.",
-                    "Confirm buyer purchasing authority, installed budget, inspection access and settlement instructions; use independently verified callbacks for account changes.",
-                ],
-            },
-        },
-        {
-            "heading": "3. Run a Measured Cadence From First Contact to Inspection",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Use a 15-business-day cadence centered on one evidenced event and "
-                    "one useful question. On day one, send a short business email "
-                    "referencing the published trigger: 'Your new machining line appears "
-                    "scheduled for November. Are any vertical machining centers being "
-                    "released, and who owns that decision?' Do not claim a funded "
-                    "buyer unless one exists. On day three, call the published business "
-                    "number and ask for the person responsible for disposition. On "
-                    "day six, send a configuration-specific buyer brief or a completed-sale "
-                    "comparison with its limitations. On day ten, request a warm "
-                    "introduction through an authorized dealer or service relationship. On "
-                    "day fifteen, close the sequence with a clear invitation to respond "
-                    "when timing changes. Stop immediately after an objection to further "
-                    "contact and synchronize suppression across tools. Commercial email "
-                    "must satisfy 15 U.S.C. § 7704, including accurate routing information, "
-                    "a valid postal address and an effective opt-out process. Do not "
-                    "assume a business number makes automated calls or texts permissible; "
-                    "evaluate 47 U.S.C. § 227 and applicable state rules before using "
-                    "those methods. Manual, relevant outreach is enough to test this "
-                    "niche without building a mass-contact operation."
-                ),
-                (
-                    "Inbound should collect specifications rather than applause. Publish one "
-                    "useful landing page per chosen machine family, showing the configurations "
-                    "you source, your inspection process and a buyer-wanted form. Ask for "
-                    "capacity, control or attachment requirements, location, installed budget "
-                    "and decision date; allow document upload through a restricted workspace. "
-                    "Publish actual authorized inventory with dated photographs and clear "
-                    "availability, then remove sold or withdrawn equipment promptly. Do "
-                    "not republish another dealer's inventory as your own. Offer buyer "
-                    "alerts only to contacts requesting them, matching required fields "
-                    "before optional preferences. In Airtable, require machine category, "
-                    "capacity and location compatibility before generating a draft alert; "
-                    "in HubSpot, log the human review and resulting conversation. A "
-                    "near-match should explain the mismatch instead of hiding it. Track "
-                    "which search phrase, dealer introduction or technical article produced "
-                    "a qualified specification, not merely a page view. A page explaining "
-                    "480-volt installation requirements or excavator auxiliary hydraulics can "
-                    "filter poor fits before a call. Avoid unsupported operating claims: "
-                    "service records and independent tests establish condition, while the "
-                    "broker explains how to obtain those records and what remains "
-                    "unverified before a buyer commits."
-                ),
-                (
-                    "Treat conversion benchmarks as planning hypotheses until your own cohorts "
-                    "replace them. Start with 300 researched company records over six "
-                    "weeks; suppose 180 are relevant and contactable, 54 yield substantive "
-                    "two-way conversations, 18 pass qualification, eight sign mandates and "
-                    "three close within the launch window. Those stage rates are 60%, "
-                    "30%, 33.3%, 44.4% and 37.5%, respectively; the overall researched-record "
-                    "to close rate is 1%. They are operating targets, not industry "
-                    "measurements. Eight mandates and five open or lost files must "
-                    "remain visible after three settlements. Tag every loss: no authority, "
-                    "price gap, configuration mismatch, title problem, inspection failure or "
-                    "timing slip. If conversations are scarce, repair relevance and contact "
-                    "quality. If inspections fail, tighten evidence requirements before accepting "
-                    "mandates. If qualified buyers stall, revisit installed economics rather "
-                    "than increasing message volume. Answer 'Your fee is too high' by "
-                    "showing seller net proceeds and the specific matching, inspection "
-                    "coordination and settlement work purchased. Answer 'Send your buyer "
-                    "first' with a limited, signed introduction agreement and permission-based "
-                    "disclosure. Answer 'Another broker promised more' with comparable "
-                    "configuration and executable terms, not an inflated estimate. "
-                    "Do not substitute elaborate scripts for a demonstrably better transaction."
-                ),
-            ],
-            "table": {
-                "caption": "Fifteen-Day Outreach Cadence and Evidence-Based Objection Handling",
-                "headers": [
-                    "Contact moment or specific buyer objection",
-                    "Operator message grounded in transaction evidence",
-                    "Concrete next commitment requested from counterparty",
-                    "Measurement or boundary controlling further effort",
-                ],
-                "rows": [
-                    [
-                        "Day one email follows a verified replacement trigger",
-                        "Ask whether identified machinery becomes available after replacement delivery",
-                        "Request the accountable disposition contact and realistic release month",
-                        "Count relevant replies rather than total messages sent",
-                    ],
-                    [
-                        "Day three call reaches the published business number",
-                        "Confirm responsibility before discussing confidential prices or buyer identity",
-                        "Request permission for a short specification review conversation",
-                        "Suppress further contact immediately when the recipient objects",
-                    ],
-                    [
-                        "Day six follow-up provides a configuration-specific buyer brief",
-                        "Show actual requirements without inventing funding or urgency",
-                        "Request serial photographs and permission to review service records",
-                        "Advance only when evidence supports the proposed machine match",
-                    ],
-                    [
-                        "Day ten introduction uses an authorized service relationship",
-                        "Explain why this specific machine fits the active requirement",
-                        "Request an introduction that respects existing dealer relationships",
-                        "Record permitted referral terms and disclose material relationships",
-                    ],
-                    [
-                        "Seller objects that the brokerage fee is excessive",
-                        "Compare net proceeds and enumerate the contracted transaction services",
-                        "Agree fee payer, scope and payment trigger in writing",
-                        "Decline assignments whose fee cannot support required diligence",
-                    ],
-                    [
-                        "Seller demands buyer identity before signing any mandate",
-                        "Offer a narrow introduction agreement with controlled information disclosure",
-                        "Secure permission and agreed compensation before introducing named parties",
-                        "Do not expose buyer details without their permission",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Capture a dated commercial trigger",
-                    "action": "Create a source-linked CRM record and identify the verification contact.",
-                    "detail": "Separate the published fact from the inferred equipment opportunity; assign one next question and a follow-up date.",
-                },
-                {
-                    "step": 2,
-                    "title": "Verify both sides of the potential match",
-                    "action": "Collect seller authority, machine identity and a buyer-wanted specification.",
-                    "detail": "Calculate installed costs, apply the 100-point qualification rubric and stop if authority or release feasibility fails.",
-                },
-                {
-                    "step": 3,
-                    "title": "Secure the mandate and coordinate inspection",
-                    "action": "Document the fee agreement before introducing protected information or booking paid diligence.",
-                    "detail": "Obtain permission for disclosures, identify who pays contractors and schedule machine-specific independent tests.",
-                },
-                {
-                    "step": 4,
-                    "title": "Close through verified settlement instructions",
-                    "action": "Reconcile payoff, release, acceptance, fee and collection documents with the escrow provider.",
-                    "detail": "Record collected commissions, final seller proceeds and the source cohort; retain unresolved files until explicitly lost or completed.",
-                },
-            ],
-        },
-        {
-            "heading": "4. Close the First Wins and Reconcile Every Commission Dollar",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "A first win is a completed transaction with collected commission, "
-                    "not a signed listing or refundable deposit. Convert buyer interest "
-                    "into a written offer identifying the machine, included accessories, "
-                    "price, inspection rights, deposit treatment, acceptance standard and "
-                    "collection deadline. Specify who bears loss before loading, during "
-                    "rigging and after carrier pickup. Independent inspection should match "
-                    "the asset: cold-start and hydraulic tests for construction equipment; "
-                    "geometry, spindle condition and control backups for CNC; title and "
-                    "service history for road fleets. Require buyer review of reports "
-                    "before waiving contractual inspection rights. UCC § 2-316 governs "
-                    "important aspects of warranty exclusion; a casual 'as is' label "
-                    "does not erase inconsistent express promises or excuse false "
-                    "condition statements. Use an established escrow provider able to "
-                    "handle the asset type, payoff instructions and agreed release "
-                    "sequence. The broker should not casually accept purchase funds "
-                    "into an operating account. Independently verify settlement contacts "
-                    "and account changes using previously established numbers. Release "
-                    "funds only under the written escrow instructions after required "
-                    "conditions are satisfied. Give the buyer the agreed transfer "
-                    "documents and arrange collection only when the settlement sequence "
-                    "authorizes it; possession and commission timing need not coincide."
-                ),
-                (
-                    "Use the canonical scorecard without confusing machinery value with "
-                    "broker revenue. The Conservative case is $100,000 annual commission "
-                    "revenue at 25% net margin, yielding $25,000 owner net profit "
-                    "with 1 FT + 3 C. One illustrative bridge is ten "
-                    "$200,000 sales at 5%, totaling $2,000,000 equipment consideration "
-                    "and $100,000 commissions; implied annual costs are $75,000. "
-                    "The Base case is $450,000 at 35.0%, yielding $157,500 "
-                    "with 1 FT + 3 C. Thirty $300,000 sales at "
-                    "5% create $9,000,000 equipment consideration and $450,000 "
-                    "commissions; implied costs are $292,500. The Scaled case "
-                    "is $800,000 at 45%, yielding $360,000 with 2 FT "
-                    "+ 4 C, six people. Forty $400,000 sales at 5% "
-                    "create $16,000,000 equipment consideration and $800,000 "
-                    "commissions; implied costs are $440,000. These deal counts "
-                    "illustrate arithmetic, not mandatory production assumptions. Contractors "
-                    "are rostered specialists, not automatically full-time equivalents. "
-                    "The $2,500–$14,000 monthly operating-expense range is a planning "
-                    "input, not a substitute for total annual scorecard costs. "
-                    "Include variable contractor work, acquisition expense and the "
-                    "scorecard's other cost categories when reconciling the complete "
-                    "budget; never force profit by omitting transaction-related expenditure."
-                ),
-                (
-                    "Sequence the 2–9 month launch around evidence accumulation. During "
-                    "the first month, select one equipment family, interview buyers, "
-                    "appoint inspection and rigging contacts, and establish mandate "
-                    "and escrow procedures. During months two and three, run the "
-                    "first researched cohort, seek eight qualified mandates under the "
-                    "illustrative funnel and schedule only funded inspections. During "
-                    "months four through nine, repeat the channels producing clean "
-                    "settlements and pursue three to ten cumulative wins as "
-                    "availability permits. Three $10,000 commissions produce $30,000 "
-                    "revenue, not the Conservative annual target or $30,000 "
-                    "profit. At $5,000 monthly recurring burn, six months consumes "
-                    "$30,000 before exceptional deal costs; size cash reserves "
-                    "against that timing within the $10,000–$75,000 startup range. "
-                    "Do not fund seller payoffs or buyer deposits from those "
-                    "reserves merely to rescue a weak match. Before cross-border "
-                    "offers, determine EAR jurisdiction and classification, destination, "
-                    "end user and end use; advanced machine tools can raise "
-                    "controls that ordinary domestic listings do not reveal. "
-                    "Track 15 CFR Part 744 restrictions and applicable licensing "
-                    "requirements before shipment commitments. Finish every settlement "
-                    "with a source attribution, defect review and permission-based "
-                    "referral request so the next deal costs less to originate."
-                ),
-            ],
-            "table": {
-                "caption": "Settlement Controls, Launch Economics and Canonical Annual Reconciliation",
-                "headers": [
-                    "Operating checkpoint or canonical business scenario",
-                    "Evidence or arithmetic that establishes the result",
-                    "Required operator action before counting success",
-                    "Specific failure mode and corrective response",
-                ],
-                "rows": [
-                    [
-                        "Inspection checkpoint separates seller claims from verified machine condition",
-                        "Independent report records serial identity and machine-specific test results",
-                        "Buyer reviews findings against the written contractual acceptance standard",
-                        "Failed tests trigger contractual repair, repricing or termination procedures",
-                    ],
-                    [
-                        "Settlement checkpoint protects payoff, ownership transfer and commission collection",
-                        "Escrow instructions reconcile required releases and independently verified payment details",
-                        "Authorize disbursement only when the agreed conditions are satisfied",
-                        "Changed banking instructions require an independently verified callback",
-                    ],
-                    [
-                        "Conservative annual case uses one employee and three contractors",
-                        "One hundred thousand revenue less seventy-five thousand costs yields twenty-five thousand",
-                        "Reconcile ten illustrative ten-thousand-dollar commissions to collected brokerage revenue",
-                        "Do not book two million equipment consideration as revenue",
-                    ],
-                    [
-                        "Base annual case uses one employee and three contractors",
-                        "Four hundred fifty thousand revenue yields one hundred fifty-seven thousand five hundred profit",
-                        "Reconcile thirty illustrative fifteen-thousand-dollar commissions at thirty-five percent margin",
-                        "Include all two hundred ninety-two thousand five hundred annual costs",
-                    ],
-                    [
-                        "Scaled annual case uses two employees and four contractors",
-                        "Eight hundred thousand revenue yields three hundred sixty thousand profit",
-                        "Reconcile forty illustrative twenty-thousand-dollar commissions at forty-five percent margin",
-                        "Exclude sixteen million equipment consideration from recognized brokerage revenue",
-                    ],
-                    [
-                        "Launch cash checkpoint recognizes delayed and uneven commission collection",
-                        "Six months at five thousand monthly consumes thirty thousand",
-                        "Reserve cash for recurring burn and separately approved deal expenditure",
-                        "Reduce discretionary spending before cash reserves require speculative deposits",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": "The best equipment lead is a verified machine, a qualified buyer and a release path that survives inspection.",
-    "diagram_id": "diag-02",
-    "action_checklist": [
-        "Choose one equipment family and record ten buyer-wanted specifications with installed budgets, required configurations and decision dates.",
-        "Build a 300-company research cohort from dated public signals, permission-based introductions and authorized inventory sources; preserve source evidence.",
-        "Apply the 100-point qualification rubric and verify seller authority, required licensing and title-release feasibility before accepting a mandate.",
-        "Run the 15-business-day outreach cadence with source-specific messages, permission-based disclosures and synchronized contact suppression.",
-        "Arrange independent inspections and written escrow procedures covering acceptance, payoff, collateral release, collection and broker compensation.",
-        "Reconcile collected commissions to the canonical annual cases, review every lost transaction and reinvest only in channels producing verified settlements.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "UCC § 9-307 — Location of Debtor",
-            "url": "https://www.law.cornell.edu/ucc/9/9-307",
-            "relevance": (
-                "Provides debtor-location rules relevant to identifying filing jurisdictions; "
-                "apply the governing state's enactment and relevant collateral exceptions."
-            ),
-        },
-        {
-            "title": "UCC § 9-315 — Secured Party's Rights on Disposition of Collateral",
-            "url": "https://www.law.cornell.edu/ucc/9/9-315",
-            "relevance": (
-                "Explains why a sale does not automatically eliminate a security interest "
-                "and why authenticated authorization and release mechanics matter."
-            ),
-        },
-        {
-            "title": "UCC § 9-513 — Termination Statement",
-            "url": "https://www.law.cornell.edu/ucc/9/9-513",
-            "relevance": (
-                "Governs termination statements; distinguish filing termination from the "
-                "complete ownership, payoff and collateral-release investigation."
-            ),
-        },
-        {
-            "title": "UCC § 2-316 — Exclusion or Modification of Warranties",
-            "url": "https://www.law.cornell.edu/ucc/2/2-316",
-            "relevance": (
-                "Addresses warranty exclusion and its relationship to express warranties, "
-                "supporting precise condition statements and carefully drafted sale terms."
-            ),
-        },
-        {
-            "title": "15 U.S.C. § 7704 — Requirements for Commercial Electronic Mail",
-            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
-            "relevance": (
-                "Sets commercial-email requirements relevant to sourcing campaigns, "
-                "including routing accuracy, postal identification and opt-out handling."
-            ),
-        },
-        {
-            "title": "47 U.S.C. § 227 — Restrictions on Certain Calling Practices",
-            "url": "https://www.law.cornell.edu/uscode/text/47/227",
-            "relevance": (
-                "Requires evaluation of calling technology, recipient numbers and applicable "
-                "restrictions before adding automated calls or texts to outreach."
-            ),
-        },
-        {
-            "title": "15 CFR Part 744 — Control Policy: End-User and End-Use Based",
-            "url": "https://www.ecfr.gov/current/title-15/subtitle-B/chapter-VII/subchapter-C/part-744",
-            "relevance": (
-                "Establishes end-user and end-use restrictions relevant to equipment exports; "
-                "review alongside classification, destination controls and licensing requirements."
-            ),
-        },
-        {
-            "title": "California Vehicle Code § 11700 — Vehicle Dealer Licensing",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=VEH&sectionNum=11700.",
-            "relevance": (
-                "Illustrates state licensing requirements affecting vehicle dealing; "
-                "determine covered activities, definitions and exceptions before fleet solicitation."
-            ),
-        },
-    ],
-}
+CHAPTER_6 = {'id': 'Q6',
+ 'chapter_id': 'Q6',
+ 'chapter_number': 6,
+ 'question_number': 6,
+ 'slug': 'equipment-finance-referrals-through-funding',
+ 'question_prompt': 'How do equipment-finance brokers develop referral relationships, select '
+                    'opportunities, and move an equipment purchase toward funding?',
+ 'kicker': 'Q6 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Equipment Finance: Referrals Through Funding',
+ 'subtitle': 'Finance-broker business models, niche selection, loans and leases, startup CNC financing, '
+             'Canadian brokerage, funding workflows, and a first excavator-deal case study',
+ 'layout_template': 'step_by_step_blueprint',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Equipment finance practitioners agree the money is behind the seller, not in front '
+                      'of the borrower: Jermane Cheathem, Buzz Glover, and Equipment Finance Academy all '
+                      'source deals through equipment vendors, CPAs, and bankers who already hold a '
+                      'trusting buyer, then match the file to a lender who can resell the collateral. '
+                      'Street numbers run wide: 4% to 6% spreads paying $12,500 to $20,000 on heavy iron, '
+                      "medical, and vocational fleets; Cheathem's claim of up to 20 points; and the "
+                      "Academy's more grounded $2,000 to $5,000 per funded deal, illustrated by a $4,200 "
+                      "first-deal commission on a $180,000 excavator. Glover's workflow adds hard rules: "
+                      'credit-app-only up to $75,000, one monthly payment as a performance deposit, and '
+                      'phone-first lender pitches. Disagreements center on commission size, '
+                      'application-only ceilings from $75,000 to $350,000, and credit floors from 580 to '
+                      '650.',
+ 'key_metrics': [{'label': 'Heavy Construction Broker Spread',
+                  'metric': 'Heavy Construction Broker Spread',
+                  'value': '$14,000 to $17,500 on a $350,000 excavator package at 4% to 5%',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Commission math on a Caterpillar excavator package for an excavation '
+                             'contractor, using a standard 4% to 5% broker spread on one approval.',
+                  'source': 'Equipment Finance Academy ([uzLIopNJDJY @ 00:01:24])'},
+                 {'label': 'Credit-App-Only Deal Ceiling',
+                  'metric': 'Credit-App-Only Deal Ceiling',
+                  'value': 'Up to $75,000',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Below this size the credit application is typically the whole package; above '
+                             'it the broker requests the last three years of tax returns or audited '
+                             'financials.',
+                  'source': 'BizLoanConsultants.com ([kOdpTliR_HM @ 00:06:19])'},
+                 {'label': 'Performance Deposit Size',
+                  'metric': 'Performance Deposit Size',
+                  'value': 'One monthly payment',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Collected once the borrower signs the proposal and returns the credit app; '
+                             'later deducted from the broker invoice, e.g. a $500 deposit.',
+                  'source': 'BizLoanConsultants.com ([kOdpTliR_HM @ 00:09:59])'},
+                 {'label': 'First-Deal Commission And Timeline',
+                  'metric': 'First-Deal Commission And Timeline',
+                  'value': '$4,200 on a $180,000 excavator, closed in 60 days',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Michael Chen, a student with zero finance background, arranged the financing '
+                             'without lending own money or taking on the debt.',
+                  'source': 'Equipment Finance Academy ([p-1FbIYoOCs @ 00:00:00])'}],
+ 'sections': [{'title': 'The Practitioner Consensus: Sit Behind the Seller, Lend Against Resellable Iron',
+               'paragraphs': ['The loudest point of agreement is where deals come from. Jermane Cheathem '
+                              'says most brokers build backwards by chasing business owners with bad '
+                              'credit who are already shopping themselves around, so Cheathem built the '
+                              'whole book on equipment sellers who already hold a buyer that trusts them '
+                              'and has picked the machine [6laX1_643JA @ 00:00:16]. Cheathem frames it as '
+                              'working the finance department of the car lot instead of the sales floor: '
+                              'the buyer already picked the color, the features, and the bells and '
+                              'whistles, so financing is just a formality, and the partner does 90% of the '
+                              'heavy lifting for free [I8ZezTXbvqQ @ 00:08:19]. Buzz Glover of '
+                              'BizLoanConsultants.com teaches the same annuity approach, naming equipment '
+                              'sales reps as the main line, with bankers declining deals, CPAs, and '
+                              'attorneys as secondary feeders, and noting the vendor has already endorsed '
+                              'the broker before the first call [kOdpTliR_HM @ 00:03:06]. Equipment '
+                              'Finance Academy widens the bench to accountants, bookkeepers, commercial '
+                              'realtors, equipment vendors, and business brokers, and insists a referral '
+                              'is a relationship, not a lead: treat it like a lead and the second one '
+                              'never arrives [YIQEV-r00oA @ 00:03:00]. Recruit five partners who genuinely '
+                              'understand the offer first, then use that case study to land the next '
+                              'fifty.',
+                              'Every camp agrees the asset is what makes this vertical approvable. '
+                              'Cheathem says banks and underwriters love equipment deals because the '
+                              'customer has to have the machine to operate, so the note gets paid and '
+                              'submissions get approved; that appetite is the reason to deal direct with '
+                              'underwriters instead of chopping a commission four, five, or six ways '
+                              'through other brokers [I8ZezTXbvqQ @ 00:05:09]. Equipment Finance Academy '
+                              'says lenders actually prefer high-ticket heavy iron because rock crushers, '
+                              'wheel loaders, and excavators hold resale value and carry a liquid '
+                              'secondary market at equipment auctions if the borrower defaults '
+                              '[uzLIopNJDJY @ 00:01:44]. Joe Camberato lays out the plumbing: the lender '
+                              'buys the machine straight from a legitimate, established vendor, leases it '
+                              'back to the operator, and takes it back on default, with the lien sitting '
+                              'against the equipment rather than the whole business [H6xXORaU7Jo @ '
+                              '00:01:12]. Demand is not in dispute either. The Academy cites $1.51 '
+                              'trillion in equipment financed in 2025 and 87% of companies financing their '
+                              'equipment, almost nine out of ten, and reads that as demand already sitting '
+                              'there: owners are already hunting for a way to pay for trucks, machines, '
+                              'and shop equipment without draining their bank accounts [p-1FbIYoOCs @ '
+                              '00:01:36].',
+                              'The practitioners also agree on who sits across the table. Mehmi Financial '
+                              'Group maps four players: conservative banks that prefer established '
+                              'businesses, captives like John Deere Financial and Caterpillar Financial '
+                              'owned by the manufacturers, more flexible independents, and brokers acting '
+                              'as matchmakers; it adds that bank approval rates are dropping while '
+                              'independent approval rates have jumped [BStMEmq3lwU @ 00:03:20]. '
+                              "NerdWallet's Karrin draws the same gradient: online lenders take bad credit "
+                              'and startups but charge higher rates on shorter terms, banks and credit '
+                              'unions give the best rates with the strictest requirements, and SBA lenders '
+                              'want a 650 personal score, two years in business, and strong revenue in '
+                              'exchange for terms up to 10 years [yAx4SRG_bfs @ 00:01:27]. That gap is the '
+                              "broker's opening: the Academy says when buyers fail the manufacturer's "
+                              'captive financing, the dealer needs a reliable broker on speed dial '
+                              '[uzLIopNJDJY @ 00:02:05]. The baseline prerequisite Cheathem stresses is '
+                              'focus. The riches are in the niches; a broker doing real estate, SBA, '
+                              'working capital, bridge, and equipment loans all at once never gets picked '
+                              "from anyone's Rolodex, so Cheathem chose equipment finance alone because it "
+                              'is essential, evergreen, and a trillion-dollar industry [I8ZezTXbvqQ @ '
+                              '00:02:45].'],
+               'table': {'caption': 'Where the practitioners line up on deal sourcing, collateral, and '
+                                    'focus',
+                         'headers': ['Consensus Point',
+                                     'What Practitioners Say Works',
+                                     'Why It Matters To The Broker',
+                                     'Expert Source'],
+                         'rows': [['Source deals through equipment sellers, not borrowers',
+                                   'Partner with sellers who already hold a trusting, ready buyer with '
+                                   'good credit',
+                                   'No cold calling; the seller simply introduces you to arrange financing '
+                                   'on a chosen machine',
+                                   'Jermane Cheathem ([6laX1_643JA @ 00:00:50])'],
+                                  ['Referral partnerships run as an annuity business',
+                                   'Equipment sales reps are the main line, plus declining bankers, CPAs, '
+                                   'and attorneys',
+                                   'The vendor has already endorsed you before your first call to the '
+                                   'borrower',
+                                   'BizLoanConsultants.com ([kOdpTliR_HM @ 00:03:06])'],
+                                  ['A referral is a relationship, never a lead',
+                                   'Start with five partners who genuinely understand the offer and trust '
+                                   'you',
+                                   'Referral deals close at a higher rate, run bigger on average, and come '
+                                   'back',
+                                   'Equipment Finance Academy ([YIQEV-r00oA @ 00:00:57])'],
+                                  ['Collateral resale value drives lender appetite',
+                                   'Lenders favor heavy iron with a liquid secondary market at equipment '
+                                   'auctions',
+                                   'High-ticket deals do not take ten times more work than micro leases',
+                                   'Equipment Finance Academy ([uzLIopNJDJY @ 00:01:44])'],
+                                  ["The lender's first question is whether it can resell",
+                                   'Ask whether the lender could actually sell those items in a default',
+                                   'Pages of oil rigs and tractors proved extremely hard to place with any '
+                                   'lender',
+                                   'ION Capital - Loan Broker University ([WfAvAf4wk0k @ 00:02:36])'],
+                                  ['Lender buys the equipment and leases it back',
+                                   'Lender purchases from a legitimate, established vendor and leases it '
+                                   'to the operator',
+                                   'Lien sits against the equipment, not the business, so other assets '
+                                   'stay untied',
+                                   'Joe Camberato ([H6xXORaU7Jo @ 00:01:12])'],
+                                  ['Niche down to equipment finance only',
+                                   'Pick one product instead of real estate, SBA, bridge, and working '
+                                   'capital loans',
+                                   'Being known for one thing creates network effects where referrers talk '
+                                   'to each other',
+                                   'Jermane Cheathem ([I8ZezTXbvqQ @ 00:02:45])']]}},
+              {'title': 'Exact Street Mechanics, Tools & Numbers: From Referral Call to Broker Invoice',
+               'paragraphs': ['Pricing starts with the spread. Equipment Finance Academy runs the '
+                              'high-ticket math: a $350,000 Caterpillar excavator package at a standard 4% '
+                              'to 5% broker spread pays $14,000 to $17,500, a $250,000 multi-platform '
+                              'laser system for a med spa at 5% to 6% pays $12,500 to $15,000, and a '
+                              'two-unit $500,000 hydrovac or concrete-pump fleet at a conservative 4% pays '
+                              '$20,000 [uzLIopNJDJY @ 00:01:24]. Cheathem pushes harder, saying equipment '
+                              'deals let a broker build up to 20 points into the deal, so a $100,000 '
+                              'transaction carries a $20,000 commission, and preferring ten of those over '
+                              'a hundred one-to-five-point deals in other financial products [I8ZezTXbvqQ '
+                              "@ 00:06:16]. The grounded numbers come from the same Academy: Sam's own "
+                              "funded deals typically paid $2,000 to $5,000, and Michael Chen's $4,200 on "
+                              'a $180,000 excavator, a first deal with zero finance background, sits '
+                              'inside that range [p-1FbIYoOCs @ 00:04:07]. ION Capital adds the lever '
+                              'behind those spreads: its network carries both low-rate and high-rate '
+                              'lenders, and on higher-interest paper the broker gets paid a little better '
+                              'because a few more points can be added; Ryan floats a rate around 11%, with '
+                              'single digits possible on low-risk files [WfAvAf4wk0k @ 00:03:51].',
+                              "Buzz Glover's deal flow is the most granular playbook. The referral source "
+                              'calls, the broker phones the borrower, then emails a proposal quoting 36-, '
+                              '48-, and 60-month payments alongside a credit application [kOdpTliR_HM @ '
+                              '00:06:01]. Up to $75,000 the credit app is typically the entire package; '
+                              'above that, Glover asks for the last three years of tax returns or audited '
+                              'financials on the first email. Glover follows up by the end of the next day '
+                              'rather than waiting four days, then collects the signed proposal plus one '
+                              'monthly payment as a performance deposit, which takes the deal off the '
+                              'street so the borrower cannot keep shopping it [kOdpTliR_HM @ 00:09:33]. '
+                              'Next comes the lender write-up: cash price, term, company age, what the '
+                              'machine does for margins or sales, and any bankruptcy disclosed with the '
+                              'story of how the borrower recovered. Glover then phones funding sources '
+                              'with bullet points only, withholding the company name so nobody poaches the '
+                              'deal, and emails the package only after a lender says it fits, because '
+                              'bankers ignore unsolicited deals [kOdpTliR_HM @ 00:15:12]. Application-only '
+                              'ceilings vary by lender: Joe Camberato cites programs that lease equipment '
+                              'up to roughly $100,000 to $150,000 off a simple application with about a '
+                              '620 score [H6xXORaU7Jo @ 00:03:29].',
+                              'The back half is paperwork and communication. Bigger packages go through '
+                              'Dropbox or another file-sharing link because many email services cap '
+                              'attachments around 10 megabytes; deals at $75,000 or less usually get an '
+                              'answer within a day or two, and a decline sends the broker back down the '
+                              'funding-source database to pitch the next lender [kOdpTliR_HM @ 00:16:47]. '
+                              'After approval, the lender prepares documents or opens an online portal, '
+                              'the broker gets them signed and submits a broker invoice for the commission '
+                              'minus the performance deposit already collected, so a $500 deposit comes '
+                              'off the invoice; the funder runs a telephone verification, pays the vendor '
+                              'and the broker, and the referral partner gets a thank-you lunch or dinner '
+                              '[kOdpTliR_HM @ 00:20:15]. Equipment Finance Academy pairs that workflow '
+                              'with its Equipment Finance Broker Mastery course and a broker CRM: lender '
+                              'directory, calculators, a deal pipeline, a borrower intake link, one-click '
+                              'lender submission, per-deal document checklists, an AI lead finder, and '
+                              'portfolio and renewals follow-up tools [p-1FbIYoOCs @ 00:05:27]. ION '
+                              "Capital's intake is lighter still: an intake form, an asset list, three "
+                              'months of business bank statements, and equipment invoices, treated like '
+                              'any business-funding file [WfAvAf4wk0k @ 00:00:42].'],
+               'table': {'caption': 'Commission math, document thresholds, and tools the practitioners '
+                                    'actually quote',
+                         'headers': ['Mechanic',
+                                     'Exact Number Or Tool',
+                                     'How Operators Use It',
+                                     'Expert Source'],
+                         'rows': [['Heavy construction broker spread',
+                                   '4% to 5% on $350,000 equals $14,000 to $17,500',
+                                   'Source through independent machinery dealerships and regional auction '
+                                   'reps',
+                                   'Equipment Finance Academy ([uzLIopNJDJY @ 00:01:24])'],
+                                  ['Medical and aesthetic device spread',
+                                   '5% to 6% on a $250,000 laser equals $12,500 to $15,000',
+                                   'Target device manufacturer reps; practices upgrade tech every 3 to 5 '
+                                   'years',
+                                   'Equipment Finance Academy ([uzLIopNJDJY @ 00:02:29])'],
+                                  ['Built-in points ceiling on equipment deals',
+                                   'Up to 20 points, so $20,000 on a $100,000 deal',
+                                   'Deal direct with underwriters to keep the whole commission unsplit',
+                                   'Jermane Cheathem ([I8ZezTXbvqQ @ 00:06:16])'],
+                                  ['Credit-app-only document threshold',
+                                   'Credit application alone on deals up to roughly $75,000',
+                                   'Above $75,000 request three years of tax returns or audited financials',
+                                   'BizLoanConsultants.com ([kOdpTliR_HM @ 00:06:19])'],
+                                  ['Performance deposit to lock the borrower',
+                                   'One monthly payment collected with the signed proposal',
+                                   'Deducted from the final broker invoice; borrower can no longer shop '
+                                   'the deal',
+                                   'BizLoanConsultants.com ([kOdpTliR_HM @ 00:09:59])'],
+                                  ['Fast-lane application-only program terms',
+                                   'Rates from 6.99%, terms to 84 months, zero down for qualified buyers',
+                                   'Pre-qualify without credit impact; application only up to $350,000',
+                                   'Equipment Finance Academy ([Ua7mCs7DMsw @ 00:01:26])'],
+                                  ['Referral partner income math',
+                                   '$2,000 average commission times five funded deals equals $10,000 '
+                                   'monthly',
+                                   'Pay partners a percentage only once the deal funds, under a one-page '
+                                   'agreement',
+                                   'Equipment Finance Academy ([YIQEV-r00oA @ 00:02:17])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Small moves that protect the deal and the commission',
+                           'body': 'Field habits the practitioners use to keep deals from leaking, get '
+                                   'lenders to answer, and widen the funded amount.',
+                           'items': ['Pitch every lender by phone with bullet points only, withholding the '
+                                     'company name until the lender says the deal fits its wheelhouse, so '
+                                     'nobody poaches it [BizLoanConsultants.com — kOdpTliR_HM @ 00:14:56]',
+                                     'Train equipment vendor reps to quote a monthly payment on every '
+                                     "deal, ideally your company's payment, so the borrower sees your "
+                                     'numbers before you ever call [BizLoanConsultants.com — kOdpTliR_HM @ '
+                                     '00:05:25]',
+                                     'Mine public municipal contract awards and infrastructure bids to '
+                                     'find regional contractors that just won major projects and need '
+                                     'vocational fleets [Equipment Finance Academy — uzLIopNJDJY @ '
+                                     '00:04:17]',
+                                     'Ask about soft costs: some lenders finance up to 125% of the '
+                                     'equipment cost, with the extra 25% covering delivery and '
+                                     'installation [NerdWallet Small Business — yAx4SRG_bfs @ 00:00:55]']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Qualify the referral and send the proposal',
+                              'action': 'Call the borrower the referral source handed you, confirm the '
+                                        'real request, then email a proposal with 36-, 48-, and 60-month '
+                                        'payments plus a credit application.',
+                              'detail': 'Ask outright whether the client wants financing to purchase '
+                                        'equipment or wants to borrow against equipment already owned, so '
+                                        'the deal does not go down a rabbit hole [ION Capital - Loan '
+                                        'Broker University — WfAvAf4wk0k @ 00:01:46]; then send the '
+                                        'proposal and credit app, adding tax returns for deals over '
+                                        '$75,000 [BizLoanConsultants.com — kOdpTliR_HM @ 00:06:01]'},
+                             {'step': 2,
+                              'title': 'Lock commitment with a performance deposit',
+                              'action': 'Follow up by the end of the next day, collect the signed proposal '
+                                        'and credit app, take one monthly payment as a deposit, and update '
+                                        'the referral source.',
+                              'detail': 'Get one monthly payment as a performance deposit once the '
+                                        'borrower agrees to the quoted payment; it takes the deal off the '
+                                        'street and was the gap that cost early deals to other brokers '
+                                        '[BizLoanConsultants.com — kOdpTliR_HM @ 00:09:59]'},
+                             {'step': 3,
+                              'title': 'Write it up and shop it by phone first',
+                              'action': 'Build a write-up covering cash price, term, company age, what the '
+                                        'machine earns, and any past bankruptcy, then phone lenders before '
+                                        'emailing.',
+                              'detail': 'Call funding sources with bullet points only, email the write-up '
+                                        'only after interest, use a Dropbox link for packages too big for '
+                                        '10MB email limits, and loop back to the next lender on any '
+                                        'decline [BizLoanConsultants.com — kOdpTliR_HM @ 00:16:47]'},
+                             {'step': 4,
+                              'title': 'Sign docs, invoice, and thank the partner',
+                              'action': 'Get lender documents signed, submit the broker invoice net of the '
+                                        'deposit, clear the telephone verification, and reward the '
+                                        'referral source.',
+                              'detail': 'Invoice the remaining commission minus the performance deposit, '
+                                        'e.g. less a $500 deposit, then take the referral partner to lunch '
+                                        'or dinner sized to the commission [BizLoanConsultants.com — '
+                                        'kOdpTliR_HM @ 00:20:15]'}]},
+              {'heading': 'Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['Jermane Cheathem runs a seller-only funnel, calling the standard approach '
+                              "of chasing business owners 'completely backwards,' because those borrowers "
+                              "often carry bad credit and are 'probably already shopping them around to "
+                              "different lenders,' and instead simply becoming the financing resource for "
+                              'equipment sellers who already have the buyer, the trust, and often the '
+                              'clean credit [6laX1_643JA @ 00:00:16]. Buzz Glover of '
+                              'BizLoanConsultants.com agrees equipment sellers are the main line, but '
+                              'widens the net to bankers who are turning down deals, CPAs, and attorneys, '
+                              'and names sellers of computers, office furniture, CNC machinery, mining '
+                              'equipment, and solar energy as targets [kOdpTliR_HM @ 00:03:06]. Equipment '
+                              'Finance Academy pushes a broader roster again: accountants, CPAs, '
+                              'bookkeepers, commercial realtors, equipment vendors, and business brokers, '
+                              'starting with five partners rather than 100 prospects [YIQEV-r00oA @ '
+                              '00:03:00]. The same channel also runs a direct-hunting play nobody else '
+                              'here teaches: pull local public municipal contract awards and '
+                              'infrastructure bids to find vocational contractors who just won major '
+                              'projects, then structure hydrovac or concrete pump truck fleet deals for '
+                              'them [uzLIopNJDJY @ 00:04:17]. The split is clean: Cheathem refuses to '
+                              'create demand and sits only inside existing dealer demand, while Equipment '
+                              'Finance Academy will go find demand through public bid records.',
+                              'On pricing, the spread between practitioners is wide. Cheathem says '
+                              "equipment deals are lucrative enough that 'you can build up to 20 points or "
+                              "20% as your commission,' turning a $100,000 deal into a $20,000 payday, and "
+                              "Cheathem would 'much rather do 10 deals than do 100 deals' for the same "
+                              'money [I8ZezTXbvqQ @ 00:06:16]. Equipment Finance Academy models far '
+                              'thinner spreads on bigger tickets: a standard 4% to 5% on a $350,000 '
+                              'Caterpillar excavator package for $14,000 to $17,500, and 5 to 6% on a '
+                              '$250,000 multi-platform laser system for $12,500 to $15,000 [uzLIopNJDJY @ '
+                              "00:01:24]. The Academy's own track record is lower still. Sam's commissions "
+                              "'typically ran $2,000 to $5,000 per funded deal,' and student Michael Chen "
+                              'collected $4,200 on a $180,000 excavator, a figure Sam places inside that '
+                              "range [p-1FbIYoOCs @ 00:04:07]. ION Capital's Ryan frames margin as "
+                              "lender-dependent rather than fixed: higher-interest lenders pay brokers 'a "
+                              "little bit better' because 'we can add a few more points to it,' while "
+                              'low-risk lenders deliver single-digit rates for clean files [WfAvAf4wk0k @ '
+                              '00:03:51]. The operator takeaway is that 20 points, 4% to 6%, and a $2,000 '
+                              'to $5,000 band are three different businesses; your realized spread depends '
+                              'on ticket size, lender tier, and who brought the deal.',
+                              'Lender access is the sharpest philosophical split. Cheathem says equipment '
+                              "underwriters love these deals so much that 'you don't have to work through "
+                              "Brokers,' and calls broker-to-broker chains 'bottom of the barrel' because "
+                              "the commission gets chopped 'four or five six ways' [I8ZezTXbvqQ @ "
+                              "00:05:09]. ION Capital sells the opposite model: a 'very large and vast' "
+                              'nationwide network spanning very high-risk and very low-risk lenders, plus '
+                              'the boast that setting up an ISO agreement with a new lender is easy '
+                              "because 'no lenders will say no to us' [DSEdy5KFvBs @ 00:14:16]. Buzz "
+                              'Glover sits between them, building a database of national, local, and '
+                              'regional sources but feeding one to three banks first looks on everything, '
+                              'knowing more than half might get declined, and in exchange those banks act '
+                              "as a back room that handles much of Glover's credit work [kOdpTliR_HM @ "
+                              '00:13:44]. Paperwork thresholds clash too. Glover treats $75,000 as the '
+                              'application-only ceiling, with three years of tax returns or audited '
+                              'financials above it, while Equipment Finance Academy advertises '
+                              'application-only up to $350,000, decisions in as fast as 4 hours, rates '
+                              'from 6.99%, and terms up to 84 months [Ua7mCs7DMsw @ 00:01:47]. Brokers '
+                              'quoting borrowers on documentation need to know which lender tier they are '
+                              'actually submitting into before promising a one-page process.'],
+               'table': {'caption': 'Competing Equipment Brokerage Playbooks Side by Side',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Where the deal flow comes from',
+                                   "Partner only with equipment sellers who already hold the buyer's trust "
+                                   'and selected equipment',
+                                   'Recruit accountants, CPAs, bookkeepers, commercial realtors, equipment '
+                                   'vendors, and business brokers, starting with five',
+                                   'Jermane Cheathem ([6laX1_643JA @ 00:00:16]); Equipment Finance Academy '
+                                   '([YIQEV-r00oA @ 00:03:00])'],
+                                  ['How much commission to build in',
+                                   'Build up to 20 points, meaning a $20,000 commission on a $100,000 deal',
+                                   "Charge 4% to 6% on high-ticket niches; Sam's own deals ran $2,000 to "
+                                   '$5,000 each',
+                                   'Jermane Cheathem ([I8ZezTXbvqQ @ 00:06:16]); Equipment Finance Academy '
+                                   '([uzLIopNJDJY @ 00:01:24])'],
+                                  ['How wide the lender bench should be',
+                                   'Partner with a couple select lenders, not everybody, and submit '
+                                   'directly to underwriters',
+                                   'Run a very large nationwide network and add new lenders through ISO '
+                                   'agreements on demand',
+                                   'Jermane Cheathem ([6laX1_643JA @ 00:00:50]); ION Capital - Loan Broker '
+                                   'University ([DSEdy5KFvBs @ 00:06:19])'],
+                                  ['Ceiling for application-only approvals',
+                                   'Credit application alone up to $75,000; above that, three years of tax '
+                                   'returns or audited financials',
+                                   'Application-only up to $350,000 at one network; other programs reach '
+                                   'about $100,000 to $150,000 with 620 credit',
+                                   'BizLoanConsultants.com ([kOdpTliR_HM @ 00:06:19]); Equipment Finance '
+                                   'Academy ([Ua7mCs7DMsw @ 00:01:47]); Joe Camberato ([H6xXORaU7Jo @ '
+                                   '00:03:29])'],
+                                  ['Which lease structure to recommend',
+                                   'Stick with a dollar buyout lease because it is simple and the borrower '
+                                   'owns it for one dollar',
+                                   'Leasing gives lower monthly payments but builds no equity unless a '
+                                   'purchase option is exercised',
+                                   'Joe Camberato ([H6xXORaU7Jo @ 00:01:29]); 850 Club Credit '
+                                   '([ZHcW7oPHW5Q @ 00:05:41])'],
+                                  ['Where a borrower should start shopping',
+                                   'Start at a bank or credit union you already use, then SBA lenders at '
+                                   '650 credit and two years',
+                                   'Use a matching platform with no minimum time in business, 580 credit, '
+                                   'and four months of statements',
+                                   'NerdWallet Small Business ([yAx4SRG_bfs @ 00:01:41]); Brennan Valeski '
+                                   '([oP0hP2pgigg @ 00:05:19])'],
+                                  ['Banks versus independent and online lenders',
+                                   'Banks keep getting more conservative while independents and story '
+                                   'lenders fill the gaps banks leave',
+                                   'Online lenders are most flexible but carry higher rates and shorter '
+                                   'terms than banks and credit unions',
+                                   'Mehmi Financial Group ([BStMEmq3lwU @ 00:04:06]); NerdWallet Small '
+                                   'Business ([yAx4SRG_bfs @ 00:01:27])']]}},
+              {'heading': 'Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ["Buzz Glover owns the biggest early mistake: 'the first couple years of me "
+                              "owning my brokerage I did not get performance deposits,' so the borrower "
+                              "would take all that work and 'find somebody else and go through them' "
+                              "[kOdpTliR_HM @ 00:09:13]. Glover's fix is one monthly payment collected as "
+                              'a performance deposit once the borrower signs the proposal and returns the '
+                              "credit application, which 'takes the deal off the street,' with a warning "
+                              'that raising the payment for bad credit means regrouping because the broker '
+                              'broke the bargain. Glover also withholds the company name when '
+                              "phone-shopping bullet points because poaching 'does happen occasionally,' "
+                              'and never emails unsolicited deals, since bankers let those go unnoticed. '
+                              "Cheathem's version of the same trap is the borrower who is already shopping "
+                              'you, which Cheathem dodges by refusing to sell from the front end like a '
+                              "used car salesman whose prospects 'go to four to five' dealerships and pit "
+                              'them against each other [I8ZezTXbvqQ @ 00:08:00]. Equipment Finance Academy '
+                              "flags the relationship side: treat a referral like a lead and 'you'll never "
+                              "get a second one,' and run referrals on a handshake and nothing protects "
+                              'you when a deal falls through, so the channel insists on a one-page written '
+                              'agreement paying a percentage once the deal actually funds [YIQEV-r00oA @ '
+                              '00:04:02].',
+                              "ION Capital's coaching call is the clearest loss story. Ryan describes an "
+                              "Alaska client with oil rigs and photos of 'giant big fat gold nuggets,' an "
+                              "asset list that looked like an obvious deal until it proved 'extremely "
+                              "difficult to find somebody who was willing to take on that kind of risk,' "
+                              'because lenders must resell equipment on default [WfAvAf4wk0k @ 00:03:22]. '
+                              "Christopher adds the valuation trap: lenders are 'not going to give you "
+                              "fair market value,' they price used equipment as if it had to be liquidated "
+                              'in a fire sale, so old equipment rarely raises much, and assets already '
+                              "carrying a UCC filing fail because lenders 'do not want to take a second "
+                              "position' [DSEdy5KFvBs @ 00:09:36]. When a caller floated using an MCA to "
+                              'buy auction equipment, Ryan laid out the death spiral: the borrower gets '
+                              "'smacked over the head with a daily or a weekly payment,' repays the lender "
+                              "with the lender's own money, and can default and lose the machine before it "
+                              'ever earns, just as a farmer waiting six months for harvest will not get '
+                              'funded today [WfAvAf4wk0k @ 00:12:07]. The fix is asking upfront whether '
+                              'the client wants purchase financing or to borrow against existing '
+                              'equipment, then sending the asset list to the equipment team.',
+                              'The economics checks come from the borrower side and the beginner side. Joe '
+                              "Camberato's test is blunt: a $25,000 piece of equipment over a five-year "
+                              'term runs about $500 a month, so ask whether the machine can generate more '
+                              'than $500 a month in income, and if credit sits below the 620 to 640 range '
+                              'expect money down or extra financial documentation [H6xXORaU7Jo @ '
+                              '00:02:53]. Equipment Finance Academy warns beginners against burning out on '
+                              "10 different $20,000 micro leases 'just to walk away with a couple hundred "
+                              "bucks per deal' when one high-ticket transaction can pay $15,000 "
+                              '[uzLIopNJDJY @ 00:00:01]. The same channel says beginners usually get stuck '
+                              "not knowing 'what to ask for, what order to ask for it in, or what a lender "
+                              "will want next'; Michael Chen's first deal took 60 days even with training, "
+                              'and the course pairs lessons with a CRM, pipeline, and per-deal document '
+                              'checklists [p-1FbIYoOCs @ 00:02:29]. Contend Capital draws the '
+                              'borrower-side prerequisite from client Ethan Lear: file a business as soon '
+                              "as possible because 'the clock starts to tick,' and Lear's small lease of "
+                              "'just a couple thousand' built the business credit behind seven machines "
+                              'Contend later financed [Hod3pJo62jY @ 00:02:04].'],
+               'table': {'caption': 'Firsthand Broker Failure Modes and the Fixes Practitioners Use',
+                         'headers': ['Failure Mode',
+                                     'What Happened or Mechanism',
+                                     'Fix Practitioners Use',
+                                     'Expert Source'],
+                         'rows': [['Skipping the performance deposit on signed proposals',
+                                   'Broker did all the work, then the uncommitted borrower funded through '
+                                   'somebody else',
+                                   'Collect one monthly payment as a performance deposit once the proposal '
+                                   'is signed',
+                                   'BizLoanConsultants.com ([kOdpTliR_HM @ 00:09:13])'],
+                                  ['Emailing deal packages to lenders unsolicited',
+                                   'Bankers ignore deals that arrive without a phone conversation, so '
+                                   'files go unnoticed',
+                                   'Pitch bullet points by phone without the company name, then email the '
+                                   'write-up',
+                                   'BizLoanConsultants.com ([kOdpTliR_HM @ 00:16:00])'],
+                                  ['Hiding a past bankruptcy from the lender',
+                                   "Lender discovers the negative history later and the broker's "
+                                   'transparency is gone',
+                                   'Disclose the bankruptcy in the write-up with the reason and the '
+                                   'recovery story',
+                                   'BizLoanConsultants.com ([kOdpTliR_HM @ 00:11:06])'],
+                                  ['Chasing an exotic asset list as collateral',
+                                   'Alaska oil rig and gold client looked strong but no lender would take '
+                                   'resale risk',
+                                   'Screen for recent, resellable models with VIN numbers and no existing '
+                                   'UCC filing',
+                                   'ION Capital - Loan Broker University ([WfAvAf4wk0k @ 00:03:22])'],
+                                  ['Using an MCA to buy auction equipment',
+                                   'Daily or weekly payments drain cash before the machine earns, risking '
+                                   'default and repossession',
+                                   'Work the business funding survey on liquidity, seasonality, and cash '
+                                   'flow first',
+                                   'ION Capital - Loan Broker University ([DSEdy5KFvBs @ 00:12:07])'],
+                                  ['Treating referrals as leads on a handshake',
+                                   'No second referral arrives and nothing protects the broker when a deal '
+                                   'falls through',
+                                   'Sign a one-page referral fee agreement paying a percentage once the '
+                                   'deal funds',
+                                   'Equipment Finance Academy ([YIQEV-r00oA @ 00:04:02])'],
+                                  ['Going silent on the referral source mid-deal',
+                                   "The vendor is at the broker's mercy, waiting on approval to earn their "
+                                   'commission',
+                                   'Call the source at every milestone and take them to lunch or dinner '
+                                   'after funding',
+                                   'BizLoanConsultants.com ([kOdpTliR_HM @ 00:07:32])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Four Gates Before a Deal Moves Forward',
+                           'body': 'Every gate below comes from a deal that practitioners lost, stalled, '
+                                   'or could not place. Clear all four before you spend underwriting time.',
+                           'items': ['No credit application goes to a lender until the borrower signs the '
+                                     'proposal and posts one monthly payment as a performance deposit '
+                                     '[BizLoanConsultants.com — kOdpTliR_HM @ 00:09:33].',
+                                     'Phone-qualify every funding source on bullet points first, '
+                                     'withholding the company name, and only email the package once the '
+                                     'lender says it fits their wheelhouse [BizLoanConsultants.com — '
+                                     'kOdpTliR_HM @ 00:15:12].',
+                                     'Ask whether the client is buying equipment or borrowing against '
+                                     'existing equipment, and kill collateral deals on assets that already '
+                                     'carry a UCC filing [ION Capital - Loan Broker University — '
+                                     'WfAvAf4wk0k @ 00:04:04].',
+                                     'Put every referral partner on a one-page written agreement stating '
+                                     'who gets paid, how much, and when before the first deal crosses '
+                                     '[Equipment Finance Academy — YIQEV-r00oA @ 00:04:02].']}}],
+ 'pull_quote': '"A referral is a relationship, and if you treat it like a lead, you\'ll never get a second '
+               'one." — Equipment Finance Academy (YIQEV-r00oA @ 00:00:00).',
+ 'diagram_id': 'diag-02',
+ 'action_checklist': ['Pick equipment finance as your single product and stop offering real estate, SBA, '
+                      'working capital, and bridge loans so referral sources know exactly what you do '
+                      '[Jermane Cheathem — I8ZezTXbvqQ @ 00:01:35].',
+                      'Recruit five referral partners who sit in front of your target customer daily, such '
+                      'as equipment vendors, CPAs, and business brokers, before trying to scale to 50 '
+                      '[Equipment Finance Academy — YIQEV-r00oA @ 00:03:41].',
+                      'Open every new file by asking whether the client wants to purchase equipment or '
+                      'borrow against existing equipment, then collect the intake form, asset list, and '
+                      'three months of business bank statements [ION Capital - Loan Broker University — '
+                      'DSEdy5KFvBs @ 00:01:31].',
+                      'Call the borrower the day the referral lands and email a proposal with 36, 48, and '
+                      '60 month payment options plus the credit application, adding tax returns for deals '
+                      'over $75,000 [BizLoanConsultants.com — kOdpTliR_HM @ 00:06:01].',
+                      'Collect one monthly payment as a performance deposit when the borrower signs off on '
+                      'the proposal so the deal comes off the street [BizLoanConsultants.com — kOdpTliR_HM '
+                      '@ 00:09:33].',
+                      'Send signed docs back with a broker invoice for your commission minus the '
+                      'performance deposit, then thank the referral source with a lunch or dinner sized to '
+                      'the deal [BizLoanConsultants.com — kOdpTliR_HM @ 00:19:54].'],
+ 'statutory_citations': [{'title': 'BizLoanConsultants.com — The Process For Getting An Equipment Finance '
+                                   'Deal Funded [00:09:13]',
+                          'url': 'https://www.youtube.com/watch?v=kOdpTliR_HM&t=553s',
+                          'relevance': 'Primary practitioner testimony on the full referral-to-funding '
+                                       'deal flow, performance deposits, lender write-ups, and broker '
+                                       'invoicing.'},
+                         {'title': 'Jermane Cheathem — How I Built an Equipment Finance Business (No Ads) '
+                                   '[00:08:39]',
+                          'url': 'https://www.youtube.com/watch?v=I8ZezTXbvqQ&t=519s',
+                          'relevance': 'Primary practitioner testimony on back-end positioning through '
+                                       'equipment seller partners, direct underwriter submission, and '
+                                       '20-point commissions.'},
+                         {'title': 'Equipment Finance Academy — The Referral Partner System That Pays '
+                                   '$10k/Month [00:04:02]',
+                          'url': 'https://www.youtube.com/watch?v=YIQEV-r00oA&t=242s',
+                          'relevance': 'Primary practitioner testimony on referral partner recruiting, '
+                                       'written referral fee agreements, and referral income math.'},
+                         {'title': 'ION Capital - Loan Broker University — How To Be A Business Loan '
+                                   'Broker  | The Basics of Equipment Finance [00:03:22]',
+                          'url': 'https://www.youtube.com/watch?v=WfAvAf4wk0k&t=202s',
+                          'relevance': 'Primary practitioner testimony on collateral resale risk, '
+                                       'liquidation pricing, second-position UCC limits, and MCA equipment '
+                                       'traps.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'uzLIopNJDJY',
+                       'title': 'These 3 Equipment Niches Pay $12,500 to $20,000 Per Deal',
+                       'channel': 'Equipment Finance Academy',
+                       'author': 'Equipment Finance Academy',
+                       'text': 'If an excavation contractor comes to you to finance a $350,000 Caterpillar '
+                               'excavator package, a standard 4% to 5% broker spread puts $14,000 to '
+                               '$17,500 straight into your pocket on one approval.',
+                       'tip': 'If an excavation contractor comes to you to finance a $350,000 Caterpillar '
+                              'excavator package, a standard 4% to 5% broker spread puts $14,000 to '
+                              '$17,500 straight into your pocket on one approval.',
+                       'timestamp': 84,
+                       'timestamp_seconds': 84,
+                       'timestamp_label': '[00:01:24]',
+                       'url': 'https://www.youtube.com/watch?v=uzLIopNJDJY&t=84s',
+                       'markdown': '[00:01:24](https://www.youtube.com/watch?v=uzLIopNJDJY&t=84s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '6laX1_643JA',
+                       'title': 'Equipment Finance Broker Business Model Explained',
+                       'channel': 'Jermane Cheathem',
+                       'author': 'Jermane Cheathem',
+                       'text': 'I built it entirely based on relationships with equipment sellers because '
+                               'they are already selling the trucks, the medical equipment, the '
+                               'technology, the devices.',
+                       'tip': 'I built it entirely based on relationships with equipment sellers because '
+                              'they are already selling the trucks, the medical equipment, the technology, '
+                              'the devices.',
+                       'timestamp': 16,
+                       'timestamp_seconds': 16,
+                       'timestamp_label': '[00:00:16]',
+                       'url': 'https://www.youtube.com/watch?v=6laX1_643JA&t=16s',
+                       'markdown': '[00:00:16](https://www.youtube.com/watch?v=6laX1_643JA&t=16s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'BStMEmq3lwU',
+                       'title': 'How Equipment Financing Brokers Actually Work (Banks Hate This)',
+                       'channel': 'Mehmi Financial Group',
+                       'author': 'Mehmi Financial Group',
+                       'text': 'As banks are getting more and more conservative, independent lenders are '
+                               'stepping up in a huge way and their approval rates have jumped '
+                               'significantly.',
+                       'tip': 'As banks are getting more and more conservative, independent lenders are '
+                              'stepping up in a huge way and their approval rates have jumped '
+                              'significantly.',
+                       'timestamp': 246,
+                       'timestamp_seconds': 246,
+                       'timestamp_label': '[00:04:06]',
+                       'url': 'https://www.youtube.com/watch?v=BStMEmq3lwU&t=246s',
+                       'markdown': '[00:04:06](https://www.youtube.com/watch?v=BStMEmq3lwU&t=246s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Hod3pJo62jY',
+                       'title': 'Financing CNC Machine Tools as a Startup Business',
+                       'channel': 'Contend Capital',
+                       'author': 'Contend Capital',
+                       'text': 'File a business as soon as possible because the clock starts to tick and '
+                               "the longer you've been in business shows you're more stable.",
+                       'tip': 'File a business as soon as possible because the clock starts to tick and '
+                              "the longer you've been in business shows you're more stable.",
+                       'timestamp': 124,
+                       'timestamp_seconds': 124,
+                       'timestamp_label': '[00:02:04]',
+                       'url': 'https://www.youtube.com/watch?v=Hod3pJo62jY&t=124s',
+                       'markdown': '[00:02:04](https://www.youtube.com/watch?v=Hod3pJo62jY&t=124s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'H6xXORaU7Jo',
+                       'title': 'How Does Equipment Leasing Work?',
+                       'channel': 'Joe Camberato',
+                       'author': 'Joe Camberato',
+                       'text': 'A 25,000-dollar piece of equipment over a 5-year term will be about $500 a '
+                               'month.',
+                       'tip': 'A 25,000-dollar piece of equipment over a 5-year term will be about $500 a '
+                              'month.',
+                       'timestamp': 173,
+                       'timestamp_seconds': 173,
+                       'timestamp_label': '[00:02:53]',
+                       'url': 'https://www.youtube.com/watch?v=H6xXORaU7Jo&t=173s',
+                       'markdown': '[00:02:53](https://www.youtube.com/watch?v=H6xXORaU7Jo&t=173s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'oP0hP2pgigg',
+                       'title': 'Best Equipment Financing Options & Loans of 2026',
+                       'channel': 'Brennan Valeski',
+                       'author': 'Brennan Valeski',
+                       'text': "There's no minimum time in business, there's no minimum monthly gross "
+                               'sales, and it is just a 580 credit score that may vary depending on the '
+                               'equipment type.',
+                       'tip': "There's no minimum time in business, there's no minimum monthly gross "
+                              'sales, and it is just a 580 credit score that may vary depending on the '
+                              'equipment type.',
+                       'timestamp': 319,
+                       'timestamp_seconds': 319,
+                       'timestamp_label': '[00:05:19]',
+                       'url': 'https://www.youtube.com/watch?v=oP0hP2pgigg&t=319s',
+                       'markdown': '[00:05:19](https://www.youtube.com/watch?v=oP0hP2pgigg&t=319s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'I8ZezTXbvqQ',
+                       'title': 'How I Built an Equipment Finance Business (No Ads)',
+                       'channel': 'Jermane Cheathem',
+                       'author': 'Jermane Cheathem',
+                       'text': "If you have a $100,000 deal and you can put up to 20 points in it, that's "
+                               'a $20,000 commission.',
+                       'tip': "If you have a $100,000 deal and you can put up to 20 points in it, that's a "
+                              '$20,000 commission.',
+                       'timestamp': 395,
+                       'timestamp_seconds': 395,
+                       'timestamp_label': '[00:06:35]',
+                       'url': 'https://www.youtube.com/watch?v=I8ZezTXbvqQ&t=395s',
+                       'markdown': '[00:06:35](https://www.youtube.com/watch?v=I8ZezTXbvqQ&t=395s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ZHcW7oPHW5Q',
+                       'title': "What Banks Don't Tell You About Equipment Financing",
+                       'channel': '850 Club Credit',
+                       'author': '850 Club Credit',
+                       'text': 'Leasing often requires lower monthly payments but does not build equity '
+                               'unless a purchase option is exercised.',
+                       'tip': 'Leasing often requires lower monthly payments but does not build equity '
+                              'unless a purchase option is exercised.',
+                       'timestamp': 341,
+                       'timestamp_seconds': 341,
+                       'timestamp_label': '[00:05:41]',
+                       'url': 'https://www.youtube.com/watch?v=ZHcW7oPHW5Q&t=341s',
+                       'markdown': '[00:05:41](https://www.youtube.com/watch?v=ZHcW7oPHW5Q&t=341s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'DaTuV1-Fst0',
+                       'title': "Insider's Canadian Brokerage Guide [Equipment financing and leasing]",
+                       'channel': 'Mehmi Financial Group',
+                       'author': 'Mehmi Financial Group',
+                       'text': 'Success fees typically range from 2 to 8%, and the percentage actually '
+                               'scales down as the total deal value scales up.',
+                       'tip': 'Success fees typically range from 2 to 8%, and the percentage actually '
+                              'scales down as the total deal value scales up.',
+                       'timestamp': 385,
+                       'timestamp_seconds': 385,
+                       'timestamp_label': '[00:06:25]',
+                       'url': 'https://www.youtube.com/watch?v=DaTuV1-Fst0&t=385s',
+                       'markdown': '[00:06:25](https://www.youtube.com/watch?v=DaTuV1-Fst0&t=385s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Ua7mCs7DMsw',
+                       'title': 'How to Get Equipment Financing in 4 Hours (Rates from 6.99%)',
+                       'channel': 'Equipment Finance Academy',
+                       'author': 'Equipment Finance Academy',
+                       'text': 'Application only up to $350,000 means no tax returns, no financials, just '
+                               'a simple one-page application for a faster decision.',
+                       'tip': 'Application only up to $350,000 means no tax returns, no financials, just a '
+                              'simple one-page application for a faster decision.',
+                       'timestamp': 107,
+                       'timestamp_seconds': 107,
+                       'timestamp_label': '[00:01:47]',
+                       'url': 'https://www.youtube.com/watch?v=Ua7mCs7DMsw&t=107s',
+                       'markdown': '[00:01:47](https://www.youtube.com/watch?v=Ua7mCs7DMsw&t=107s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'yAx4SRG_bfs',
+                       'title': 'Equipment Financing Made Simple | How to Get an Equipment Loan',
+                       'channel': 'NerdWallet Small Business',
+                       'author': 'NerdWallet Small Business',
+                       'text': 'Lenders may finance up to a hundred percent of the total cost of the '
+                               'equipment, though some offer up to 125% to cover soft costs like delivery '
+                               'and installation.',
+                       'tip': 'Lenders may finance up to a hundred percent of the total cost of the '
+                              'equipment, though some offer up to 125% to cover soft costs like delivery '
+                              'and installation.',
+                       'timestamp': 55,
+                       'timestamp_seconds': 55,
+                       'timestamp_label': '[00:00:55]',
+                       'url': 'https://www.youtube.com/watch?v=yAx4SRG_bfs&t=55s',
+                       'markdown': '[00:00:55](https://www.youtube.com/watch?v=yAx4SRG_bfs&t=55s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'YIQEV-r00oA',
+                       'title': 'The Referral Partner System That Pays $10k/Month',
+                       'channel': 'Equipment Finance Academy',
+                       'author': 'Equipment Finance Academy',
+                       'text': 'A simple one-page referral fee agreement says who gets paid, how much, and '
+                               'when, usually a percentage of the commission once the deal actually funds.',
+                       'tip': 'A simple one-page referral fee agreement says who gets paid, how much, and '
+                              'when, usually a percentage of the commission once the deal actually funds.',
+                       'timestamp': 242,
+                       'timestamp_seconds': 242,
+                       'timestamp_label': '[00:04:02]',
+                       'url': 'https://www.youtube.com/watch?v=YIQEV-r00oA&t=242s',
+                       'markdown': '[00:04:02](https://www.youtube.com/watch?v=YIQEV-r00oA&t=242s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'kOdpTliR_HM',
+                       'title': 'The Process For Getting An Equipment Finance Deal Funded',
+                       'channel': 'BizLoanConsultants.com',
+                       'author': 'BizLoanConsultants.com',
+                       'text': 'The first couple years of me owning my brokerage I did not get performance '
+                               'deposits, and the borrower would find somebody else and go through them.',
+                       'tip': 'The first couple years of me owning my brokerage I did not get performance '
+                              'deposits, and the borrower would find somebody else and go through them.',
+                       'timestamp': 553,
+                       'timestamp_seconds': 553,
+                       'timestamp_label': '[00:09:13]',
+                       'url': 'https://www.youtube.com/watch?v=kOdpTliR_HM&t=553s',
+                       'markdown': '[00:09:13](https://www.youtube.com/watch?v=kOdpTliR_HM&t=553s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'p-1FbIYoOCs',
+                       'title': 'How a Broker Got Paid $4,200 on a $180K Excavator — His First Deal Ever',
+                       'channel': 'Equipment Finance Academy',
+                       'author': 'Equipment Finance Academy',
+                       'text': 'Michael Chen closed a first deal in 60 days, and the average time to a '
+                               'first deal for Equipment Finance Academy students is 60 days.',
+                       'tip': 'Michael Chen closed a first deal in 60 days, and the average time to a '
+                              'first deal for Equipment Finance Academy students is 60 days.',
+                       'timestamp': 208,
+                       'timestamp_seconds': 208,
+                       'timestamp_label': '[00:03:28]',
+                       'url': 'https://www.youtube.com/watch?v=p-1FbIYoOCs&t=208s',
+                       'markdown': '[00:03:28](https://www.youtube.com/watch?v=p-1FbIYoOCs&t=208s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'WfAvAf4wk0k',
+                       'title': 'How To Be A Business Loan Broker  | The Basics of Equipment Finance',
+                       'channel': 'ION Capital - Loan Broker University',
+                       'author': 'ION Capital - Loan Broker University',
+                       'text': "It turns out it's extremely difficult to find somebody who was willing to "
+                               'take on that kind of risk because they have to resell that equipment in '
+                               'the case of default.',
+                       'tip': "It turns out it's extremely difficult to find somebody who was willing to "
+                              'take on that kind of risk because they have to resell that equipment in the '
+                              'case of default.',
+                       'timestamp': 202,
+                       'timestamp_seconds': 202,
+                       'timestamp_label': '[00:03:22]',
+                       'url': 'https://www.youtube.com/watch?v=WfAvAf4wk0k&t=202s',
+                       'markdown': '[00:03:22](https://www.youtube.com/watch?v=WfAvAf4wk0k&t=202s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'DSEdy5KFvBs',
+                       'title': 'How To Be A Business Loan Broker  |  Equipment Finance Basics',
+                       'channel': 'ION Capital - Loan Broker University',
+                       'author': 'ION Capital - Loan Broker University',
+                       'text': "They're immediately going to get smacked over the head with a daily or a "
+                               "weekly payment, and if they don't have money coming in they're just "
+                               'bleeding money.',
+                       'tip': "They're immediately going to get smacked over the head with a daily or a "
+                              "weekly payment, and if they don't have money coming in they're just "
+                              'bleeding money.',
+                       'timestamp': 727,
+                       'timestamp_seconds': 727,
+                       'timestamp_label': '[00:12:07]',
+                       'url': 'https://www.youtube.com/watch?v=DSEdy5KFvBs&t=727s',
+                       'markdown': '[00:12:07](https://www.youtube.com/watch?v=DSEdy5KFvBs&t=727s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'}]}

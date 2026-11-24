@@ -1,669 +1,845 @@
 from __future__ import annotations
 
-CHAPTER_3 = {
-    "id": "Q3",
-    "chapter_id": "Q3",
-    "chapter_number": 3,
-    "question_number": 3,
-    "slug": "unit-economics-margin-waterfall-working-capital-float",
-    "question_prompt": "What are the real unit economics, gross-to-net margin deductions, scrub/reversal reserves, and working-capital float requirements for intellectual property licensing?",
-    "kicker": "Q3 / THE BIG MONEY PLAYBOOKS",
-    "title": "Unit Economics, Margin Waterfall & Working-Capital Float",
-    "subtitle": "Patent, Brand, Catalog and Dataset Royalties: Recoupable Minimums, Audit Reserves, CBP Valuation and Collection Float",
-    "layout_template": "financial_breakdown",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #19, Intellectual Property Licensing, ranks #09 with a 88/100 "
-        "Money-to-Manpower Score. Its four operating plays here are patent "
-        "field-of-use licensing, territorial brand licensing, catalog-and-dataset "
-        "licensing, and customs_first_sale_rule_valuation_arbitrage. The first "
-        "three are chapter-local operating mappings; the fourth is the supplied "
-        "customs adjacency, monetized only through genuine licensed deliverables. "
-        "Conservative, Base, and Scaled annual owner profits reconcile to "
-        "$12,500, $180,625, and $480,000 on recognized revenue of $50,000, "
-        "$425,000, and $800,000. This chapter separates licensee sales from "
-        "operator revenue, decomposes deductions and contractor costs, and prices "
-        "the cash delay between delivery and unrestricted collection. Minimum "
-        "guarantees, royalty audits, title verification, and controlled reserves "
-        "determine whether attractive paper margins become distributable cash."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$50,000",
-            "context": "Annual license fees and royalties; excludes licensee product sales",
-            "note": "25% net margin; $12,500 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Base",
-            "value": "$425,000",
-            "context": "Annual license fees and royalties; excludes licensee product sales",
-            "note": "42.5% net margin; $180,625 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$800,000",
-            "context": "Annual license fees and royalties; excludes licensee product sales",
-            "note": "60% net margin; $480,000 annual owner net profit; 2 FT + 4 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Define the Revenue Unit Before Pricing the Rights",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Use one active licensee agreement for one measured year as the "
-                    "economic unit, with separate schedules for territories, permitted "
-                    "uses, reporting periods, and collection dates. The illustrative "
-                    "Conservative cohort contains two agreements generating $25,000 "
-                    "each after deductions; Base contains ten generating $42,500 "
-                    "each; Scaled contains sixteen generating $50,000 each. Those "
-                    "cohorts reproduce the canonical revenue totals without treating "
-                    "licensees' merchandise sales as operator revenue. Base starts "
-                    "with $8 million of eligible licensee sales at a five percent "
-                    "royalty, producing $400,000 of royalty billings, plus $50,000 "
-                    "of separately earned fixed license fees. Contract credits of "
-                    "$15,000 and an expected reversal allowance of $10,000 reduce "
-                    "$450,000 of billings to $425,000 of recognized revenue. A "
-                    "$200,000 recoupable minimum already credited against those "
-                    "royalties is a collection mechanism, not another revenue line. "
-                    "Advance cash remains deferred where the associated performance "
-                    "has not occurred. Maintain separate fields in PostgreSQL or "
-                    "Airtable for underlying sales, billings, earned consideration, "
-                    "receivables, and cash. A dashboard that collapses these fields "
-                    "can show growth while quietly spending money owed for future "
-                    "delivery. Require a contract identifier on every adjustment so "
-                    "the audit trail survives staff changes and spreadsheet exports."
-                ),
-                (
-                    "Map the first three operating plays to rights packages with "
-                    "different delivery burdens rather than applying one royalty "
-                    "percentage everywhere. Patent field-of-use licensing can price "
-                    "100,000 qualifying units at $0.20 each plus a separately "
-                    "earned $10,000 implementation license, yielding $30,000 before "
-                    "deductions; invalidity allegations or disputed claim coverage "
-                    "trigger a narrow evaluation license instead of an expensive "
-                    "exclusive grant. Territorial brand licensing can combine a "
-                    "$20,000 annual minimum with four percent of $750,000 in "
-                    "eligible sales: total royalty consideration is $30,000, not "
-                    "$50,000, when the minimum is fully recoupable. Its fallback "
-                    "is a shorter, nonexclusive territory with documented product "
-                    "quality inspections. Catalog-and-dataset licensing can sell "
-                    "four permitted-use packages at $7,500 each, also yielding "
-                    "$30,000, while charging separately for additional refreshes "
-                    "only when the contract permits them. If provenance is "
-                    "incomplete, remove affected assets and reprice the remaining "
-                    "package rather than promising unrestricted downstream rights. "
-                    "These are chapter-local pricing examples, not extra scorecard "
-                    "revenue. Copyright transfers require the signed writing "
-                    "specified by 17 U.S.C. 204; patent assignments follow "
-                    "35 U.S.C. 261. Dataset ownership does not automatically "
-                    "supply privacy permissions or rights in every embedded work."
-                ),
-                (
-                    "Treat customs_first_sale_rule_valuation_arbitrage as an adjacent "
-                    "licensing opportunity only when the operator actually licenses "
-                    "a valuation workflow, evidence taxonomy, or controlled software "
-                    "package. Under 19 CFR 152.103 and the Nissho Iwai framework, "
-                    "an eligible factory sale must be substantiated as a bona fide "
-                    "sale for export to the United States at an acceptable "
-                    "transaction value; a lower invoice alone proves nothing. "
-                    "At an illustrative ten percent duty rate, moving an eligible "
-                    "unit's valuation from $18 to $8 reduces duty from $1.80 "
-                    "to $0.80, a $1 saving. That is 55.56 percent on eligible "
-                    "units before valuation additions, not an automatic portfolio "
-                    "saving. Eligibility covering 63 to 99 percent of otherwise "
-                    "comparable import value produces approximately 35 to 55 "
-                    "percent aggregate reduction under these assumptions. At "
-                    "$10 million of importer-invoice value and 90 percent "
-                    "eligibility, modeled annual duty savings are $500,000. A "
-                    "$25,000 annual workflow license captures five percent of "
-                    "that benefit; only the fee enters operator revenue. For "
-                    "$250 million programs, validate entry-level evidence rather "
-                    "than extrapolating eligibility. The fallback is encrypted "
-                    "factory invoices in confidential customs-broker escrow with "
-                    "full CBP access, backed by a formal customs-counsel opinion "
-                    "letter; unsupported entries retain the defensible valuation."
-                ),
-            ],
-            "table": {
-                "caption": "Rights-Package Pricing and Customs-Adjacency Revenue Boundaries",
-                "headers": [
-                    "Agreement structure and licensed economic asset",
-                    "Concrete calculation of operator fee consideration",
-                    "Evidence required before treating consideration as earned",
-                    "Fallback when the modeled premise fails",
-                ],
-                "rows": [
-                    [
-                        "Patent field-of-use rights limited to identified product families",
-                        "100,000 covered units times $0.20 plus $10,000 implementation license",
-                        "Executed patent schedule, coverage analysis, and accepted implementation deliverables",
-                        "Offer narrow evaluation rights while resolving coverage disputes",
-                    ],
-                    [
-                        "Territorial brand rights with measurable product quality controls",
-                        "$750,000 eligible sales times four percent yields $30,000 royalties",
-                        "Royalty sales reports and documented quality inspection results",
-                        "Shorten territory duration and remove unsupported exclusive rights",
-                    ],
-                    [
-                        "Catalog and dataset packages limited to enumerated permitted uses",
-                        "Four independently priced packages times $7,500 yields $30,000",
-                        "Asset provenance register, delivery receipts, and permitted-use schedules",
-                        "Exclude disputed assets and credit only affected consideration",
-                    ],
-                    [
-                        "Licensed customs evidence workflow rather than importer merchandise",
-                        "$25,000 license against modeled $500,000 annual duty savings",
-                        "Genuine licensed deliverables plus counsel-reviewed transaction evidence dossier",
-                        "Use broker escrow and retain defensible values on unsupported entries",
-                    ],
-                    [
-                        "Base cohort minimum guarantees recoupable against earned royalties",
-                        "$200,000 collected minimum offsets the existing $400,000 royalty stream",
-                        "Contract recoupment ledger reconciled against each licensee statement",
-                        "Defer unearned collections and prevent duplicate royalty invoicing",
-                    ],
-                    [
-                        "Base cohort fixed fees distinct from underlying product sales",
-                        "$50,000 earned fixed fees supplement $400,000 royalty billings",
-                        "Separate performance records supporting each earned fixed license fee",
-                        "Reverse unsupported fees without changing licensee sales measurements",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Protect the Royalty Base Before Negotiating the Rate",
-                "body": (
-                    "A tightly defined royalty base often produces more collectible "
-                    "cash than a higher headline percentage with broad deductions."
-                ),
-                "items": [
-                    "Attach a numeric minimum-guarantee example showing exactly how each payment recoups against subsequent royalties.",
-                    "Require SKU-level returns and affiliate-transfer data so licensees cannot silently move sales outside the royalty base.",
-                    "For brand rights, budget actual inspection work and preserve evidence of quality control rather than relying on a contractual sentence.",
-                    "For first-sale workflows, escrow encrypted factory invoices with authorized broker access, CBP access procedures, and a customs-counsel opinion letter.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Reconcile Every Deduction to the Canonical Owner Profit",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Build the waterfall from gross contractual billings rather "
-                    "than from cash deposits. Conservative billings of $55,000 "
-                    "less $3,000 of credits and $2,000 of expected reversals "
-                    "produce $50,000 revenue. Base billings of $450,000 less "
-                    "$15,000 and $10,000 produce $425,000. Scaled billings of "
-                    "$840,000 less $24,000 and $16,000 produce $800,000. Credits "
-                    "represent identified returns, canceled permissions, and "
-                    "contractually valid true-ups; the reversal allowance covers "
-                    "supported estimates of additional price adjustments. Do not "
-                    "mix either category with unpaid but valid receivables: credit "
-                    "losses require their own assessment and accounting treatment. "
-                    "The illustrative gross-billings scrub rates are 9.09 percent, "
-                    "5.56 percent, and 4.76 percent respectively. Better reporting "
-                    "can reduce leakage, but these rates are assumptions rather "
-                    "than evidence that scale automatically improves contracts. "
-                    "Give each deduction a reason code, source document, owner, "
-                    "and resolution date. Preserve the original statement and "
-                    "post a linked correcting record instead of overwriting "
-                    "history. For quarterly royalties, estimate earned amounts "
-                    "using defensible reporting data and reconcile promptly when "
-                    "the licensee statement arrives. Collection timing changes "
-                    "cash availability; it does not by itself determine whether "
-                    "the licensed performance has been completed."
-                ),
-                (
-                    "Subtract direct contractor delivery labor of $12,000, "
-                    "$70,000, and $90,000, then third-party rights participation "
-                    "of $7,500, $55,000, and $80,000. Gross contribution becomes "
-                    "$30,500, $300,000, and $630,000, equivalent to 61 percent, "
-                    "70.59 percent, and 78.75 percent of recognized revenue. "
-                    "The labor budgets correspond to 120, 700, and 900 hours "
-                    "at a $100 blended hourly rate, covering technical rights "
-                    "packaging, metadata remediation, reporting setup, and "
-                    "scheduled quality reviews. These are purchased hours, not "
-                    "three or four full-time contractor salaries. Rights "
-                    "participation is modeled as an expense because this example "
-                    "assumes the operator controls the licensed rights and acts "
-                    "as principal; an agency arrangement may require net "
-                    "presentation instead. Obtain an accounting assessment before "
-                    "reusing this presentation for represented creators. Log "
-                    "contractor time by agreement and task so remediation cannot "
-                    "hide inside platform overhead. Separate revenue-share "
-                    "obligations from recoupable advances paid to rights owners. "
-                    "An advance can consume cash before its expense is recognized. "
-                    "Require the contract to state whether participation is "
-                    "calculated on invoiced, earned, or collected fees, because "
-                    "that distinction determines who finances a late-paying "
-                    "licensee and whether deductions can be passed through."
-                ),
-                (
-                    "Below gross contribution, charge acquisition spending of "
-                    "$6,000, $35,000, and $45,000; platforms and operating "
-                    "infrastructure of $4,000, $18,000, and $24,000; counsel, "
-                    "audit, and insurance of $5,000, $26,375, and $31,000; "
-                    "and retained staffing and administrative support of "
-                    "$3,000, $40,000, and $50,000. Total operating costs are "
-                    "$37,500, $244,375, and $320,000, leaving the required "
-                    "$12,500, $180,625, and $480,000 owner profits. Net margins "
-                    "therefore remain exactly 25 percent, 42.5 percent, and "
-                    "60 percent. Support spending covers non-delivery work and, "
-                    "in Scaled, the second full-time role; allocate time once "
-                    "rather than duplicating it in contractor delivery. This "
-                    "illustration treats the founder's residual as owner "
-                    "earnings before personal taxes, without a separate imputed "
-                    "replacement salary. Validate whether the support budget "
-                    "can actually purchase the proposed staffing locally. "
-                    "Conservative and Base use one full-time operator plus "
-                    "three contractors; Scaled uses two full-time people plus "
-                    "four contractors. The stated $2,000 to $12,000 monthly "
-                    "opex range describes the platform's operating envelope, "
-                    "not an all-inclusive cap on royalties and delivery costs. "
-                    "Base all-in monthly costs average $20,364.58 and Scaled "
-                    "$26,666.67; budgeting only recurring overhead would materially "
-                    "underfund both cohorts."
-                ),
-            ],
-            "table": {
-                "caption": "Complete Annual Billings-to-Owner-Profit Waterfall in USD",
-                "headers": [
-                    "Waterfall stage and treatment of the amounts",
-                    "Conservative cohort calculation and resulting annual balance",
-                    "Base cohort calculation and resulting annual balance",
-                    "Scaled cohort calculation and resulting annual balance",
-                ],
-                "rows": [
-                    [
-                        "Start with contractual billings before any deduction estimates",
-                        "$55,000 gross billings across two active annual agreements",
-                        "$450,000 gross billings across ten active annual agreements",
-                        "$840,000 gross billings across sixteen active annual agreements",
-                    ],
-                    [
-                        "Deduct identified credits and supported expected royalty reversals",
-                        "Subtract $3,000 credits and $2,000 reversals; revenue equals $50,000",
-                        "Subtract $15,000 credits and $10,000 reversals; revenue equals $425,000",
-                        "Subtract $24,000 credits and $16,000 reversals; revenue equals $800,000",
-                    ],
-                    [
-                        "Deduct direct contractor labor and third-party rights participation",
-                        "Subtract $12,000 labor and $7,500 participation; contribution equals $30,500",
-                        "Subtract $70,000 labor and $55,000 participation; contribution equals $300,000",
-                        "Subtract $90,000 labor and $80,000 participation; contribution equals $630,000",
-                    ],
-                    [
-                        "Deduct acquisition spending and platform operating infrastructure costs",
-                        "Subtract $6,000 acquisition and $4,000 platforms; remaining balance $20,500",
-                        "Subtract $35,000 acquisition and $18,000 platforms; remaining balance $247,000",
-                        "Subtract $45,000 acquisition and $24,000 platforms; remaining balance $561,000",
-                    ],
-                    [
-                        "Deduct counsel, audit, insurance, and retained operating support",
-                        "Subtract $5,000 professional costs and $3,000 support; profit $12,500",
-                        "Subtract $26,375 professional costs and $40,000 support; profit $180,625",
-                        "Subtract $31,000 professional costs and $50,000 support; profit $480,000",
-                    ],
-                    [
-                        "Verify total costs, exact margin, and assigned team capacity",
-                        "$37,500 costs; 25% margin; one full-time operator plus three contractors",
-                        "$244,375 costs; 42.5% margin; one full-time operator plus three contractors",
-                        "$320,000 costs; 60% margin; two full-time people plus four contractors",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "3. Fund the Collection Gap Without Spending Deferred Cash",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Measure the cash gap from payment of delivery obligations "
-                    "to unrestricted receipt, not simply from invoice date. "
-                    "For a comparable steady-state planning screen, assume costs "
-                    "are paid as incurred, no supplier credit, and a uniform "
-                    "daily cost rate. Conservative uses 90 days sales outstanding "
-                    "plus a separate 30-day payout lock; Base uses 75 plus "
-                    "15; Scaled uses 60 plus ten. Here the lock begins after "
-                    "the licensee pays into a collecting intermediary, so adding "
-                    "the periods does not double-count the same delay. A direct "
-                    "bank receipt without a contractual restriction has no such "
-                    "lock. Applying total annual costs divided by 365 to gaps "
-                    "of 120, 90, and 70 days yields operating bridges of "
-                    "$12,328.77, $60,256.85, and $61,369.86. Add designated "
-                    "liquidity buffers of $2,000, $10,000, and $16,000 to "
-                    "obtain $14,328.77, $70,256.85, and $77,369.86 of modeled "
-                    "funding. Those buffers mirror the reversal allowances for "
-                    "planning convenience but are cash allocations, not second "
-                    "expenses. Quarterly settlement cliffs, upfront acquisition "
-                    "payments, and disputed statements can require substantially "
-                    "more cash than this daily-average screen. Build a dated "
-                    "receipts-and-disbursements schedule before committing the "
-                    "operator to a minimum guarantee owed upstream."
-                ),
-                (
-                    "Maintain a rolling thirteen-week cash forecast with separate "
-                    "columns for unrestricted bank cash, intermediary-held cash, "
-                    "receivables, unearned advances, rights-owner payables, and "
-                    "contractor commitments. QuickBooks can hold the accounting "
-                    "ledger while a controlled spreadsheet carries contract-level "
-                    "settlement dates; reconcile both to bank statements every "
-                    "week. A $100,000 license advance does not create $100,000 "
-                    "of distributable profit when refresh obligations or "
-                    "recoupable royalties remain outstanding. Similarly, accrued "
-                    "royalties may be profitable without financing next Friday's "
-                    "contractor payments. Negotiate staged fixed fees at signed "
-                    "delivery milestones, minimum guarantees paid before the "
-                    "licensed selling season, and rights participation payable "
-                    "after collection where commercially achievable. Do not "
-                    "rewrite existing payout obligations through an internal "
-                    "forecast assumption. Model withholding taxes separately "
-                    "from contractual royalty deductions, including any treaty "
-                    "documentation and recoverability assessment relevant to "
-                    "cross-border collections. An unrecoverable withholding "
-                    "reduces economics; a recoverable amount can still extend "
-                    "the cash gap. Keep customs duty savings completely outside "
-                    "this treasury schedule because that cash belongs to the "
-                    "importer. Only the operator's earned license invoices and "
-                    "associated costs belong in the licensing cohort. Restrict "
-                    "bank-account changes to verified counterparties using an "
-                    "independent callback rather than an emailed instruction."
-                ),
-                (
-                    "Startup capital of $12,000 to $75,000 must finance both "
-                    "origination and the collection bridge, with first deals "
-                    "potentially taking six to 24 months. At $2,000 monthly "
-                    "predeal overhead, six months consumes $12,000 and 24 months "
-                    "$48,000 before acquisition spikes or rights purchases. "
-                    "At $15,000 monthly overhead, those amounts become $90,000 "
-                    "and $360,000, so the long-delay, high-burn combination "
-                    "exceeds the stated upper capital range even before "
-                    "working capital. Do not present all endpoints as jointly "
-                    "affordable. A six-month low-burn launch plus the "
-                    "Conservative bridge already requires $26,328.77, slightly "
-                    "above the minimum startup amount. Reduce committed overhead, "
-                    "obtain an earned milestone payment, or secure committed "
-                    "funding before accepting that path. For Base, a 30-day "
-                    "collection slip adds $20,085.62 to bridge needs without "
-                    "changing recognized profit if collectibility remains "
-                    "intact. Track disputed balances separately because an "
-                    "eventual price concession changes revenue as well as cash. "
-                    "Prepare a weekly concentration view showing the cash "
-                    "forecast with the largest licensee delayed. A profitable "
-                    "portfolio can still fail when one quarterly remittance "
-                    "finances nearly all payroll and the operator has "
-                    "distributed last month's unrestricted cash too early."
-                ),
-            ],
-            "table": {
-                "caption": "Collection-Delay, Payout-Lock and Liquidity Funding Matrix",
-                "headers": [
-                    "Cash mechanism and explicit modeling assumption",
-                    "Conservative cash requirement or operating treatment",
-                    "Base cash requirement or operating treatment",
-                    "Scaled cash requirement or operating treatment",
-                ],
-                "rows": [
-                    [
-                        "Collection interval followed by a distinct intermediary payout lock",
-                        "90 collection days plus 30 locked days equals 120 days",
-                        "75 collection days plus 15 locked days equals 90 days",
-                        "60 collection days plus ten locked days equals 70 days",
-                    ],
-                    [
-                        "Daily cash cost calculated from complete annual operating costs",
-                        "$37,500 divided by 365 produces $102.74 daily cash costs",
-                        "$244,375 divided by 365 produces $669.52 daily cash costs",
-                        "$320,000 divided by 365 produces $876.71 daily cash costs",
-                    ],
-                    [
-                        "Operating bridge uses unrounded daily costs and stated delays",
-                        "120 days of operating costs requires $12,328.77 bridge funding",
-                        "90 days of operating costs requires $60,256.85 bridge funding",
-                        "70 days of operating costs requires $61,369.86 bridge funding",
-                    ],
-                    [
-                        "Designated reversal liquidity buffer adds cash without another expense",
-                        "$2,000 additional liquidity produces $14,328.77 total modeled funding",
-                        "$10,000 additional liquidity produces $70,256.85 total modeled funding",
-                        "$16,000 additional liquidity produces $77,369.86 total modeled funding",
-                    ],
-                    [
-                        "Thirty additional collection days increase funding without immediate repricing",
-                        "Add $3,082.19 funding if collectibility and contractual pricing remain intact",
-                        "Add $20,085.62 funding if collectibility and contractual pricing remain intact",
-                        "Add $26,301.37 funding if collectibility and contractual pricing remain intact",
-                    ],
-                    [
-                        "Contractual cash controls replace assumptions before actual distribution decisions",
-                        "Verify both licensees' settlement dates before distributing owner cash",
-                        "Reconcile all ten agreements against weekly bank and intermediary balances",
-                        "Model sixteen settlement schedules and maintain second-employee payroll coverage",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Freeze the statement population",
-                    "action": "Export contract, invoice, royalty, adjustment, and settlement records for the same reporting cutoff.",
-                    "detail": "Retain source files and immutable identifiers; reconcile beginning balances before calculating current-period economics.",
-                },
-                {
-                    "step": 2,
-                    "title": "Rebuild earned consideration",
-                    "action": "Apply permitted-use pricing, minimum recoupment, documented credits, and supported reversal estimates by agreement.",
-                    "detail": "Keep underlying licensee sales separate from operator fees and prevent advances from appearing twice.",
-                },
-                {
-                    "step": 3,
-                    "title": "Schedule every cash obligation",
-                    "action": "Place contractor payments, rights participation, overhead, expected receipts, and lock releases into thirteen weekly columns.",
-                    "detail": "Use actual contractual dates where available and separately identify disputed or conditional receipts.",
-                },
-                {
-                    "step": 4,
-                    "title": "Set the distribution ceiling",
-                    "action": "Retain committed operating cash and designated reserves before calculating available owner distributions.",
-                    "detail": "Re-run the largest-licensee delay case and document the funded response before releasing surplus cash.",
-                },
-            ],
-        },
-        {
-            "heading": "4. Stress the Cohort and Price the Failure Modes",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Calculate acquisition efficiency at the cohort level before "
-                    "celebrating the headline net margin. Assuming every modeled "
-                    "agreement is newly acquired and all acquisition spending "
-                    "belongs to that cohort, Conservative CAC is $6,000 divided "
-                    "by two, or $3,000; Base is $35,000 divided by ten, "
-                    "or $3,500; Scaled is $45,000 divided by sixteen, or "
-                    "$2,812.50. Annual contribution before acquisition and "
-                    "overhead is $15,250, $30,000, and $39,375 per agreement. "
-                    "Dividing CAC by monthly contribution gives approximately "
-                    "2.36, 1.40, and 0.86 months of contribution-equivalent "
-                    "payback, but these are not elapsed cash payback periods. "
-                    "Origination may consume six to 24 months, and collection "
-                    "delays follow delivery. Include failed pitches, technical "
-                    "evaluations, and negotiation expense in CAC rather than "
-                    "assigning costs only to signed accounts. If renewals "
-                    "dominate the portfolio, separate new-customer CAC from "
-                    "retention costs instead of dividing by every active "
-                    "agreement. Annual owner profit per active agreement is "
-                    "$6,250, $18,062.50, and $30,000. Use these figures to "
-                    "prioritize reporting automation and renewal alerts, not "
-                    "to assume each account has identical profitability. One "
-                    "catalog client demanding weekly manual exports can consume "
-                    "the contribution generated by several clean annual licenses."
-                ),
-                (
-                    "Run sensitivity cases without changing the canonical "
-                    "baseline. A ten percent reduction in recognized revenue "
-                    "with operating costs held fixed reduces annual owner "
-                    "profit to $7,500, $138,125, and $400,000. This intentionally "
-                    "assumes no immediate participation savings, as may occur "
-                    "with fixed upstream minimums. A twenty percent contractor "
-                    "labor overrun instead reduces profit to $10,100, $166,625, "
-                    "and $462,000. Combining both shocks produces $5,100, "
-                    "$124,125, and $382,000. Keep collection stress separate "
-                    "until there is evidence of a concession or credit loss; "
-                    "adding 30 DSO days increases required liquidity by "
-                    "$3,082.19, $20,085.62, and $26,301.37 rather than "
-                    "automatically reducing earnings. For audit economics, "
-                    "a five percent royalty on $200,000 of substantiated "
-                    "omitted sales supports a $10,000 claim. If recovery "
-                    "probability is 80 percent and audit cost is $6,000, "
-                    "expected recovery less cost is $2,000 before collection "
-                    "delay and relationship damage. The risk fallback is "
-                    "a targeted records request before a broad audit. Do "
-                    "not book an unagreed audit claim as ordinary recurring "
-                    "revenue. Require documented access rights, a defined "
-                    "lookback period, and contractual cost-shifting thresholds "
-                    "before assuming the licensee will pay investigative expenses."
-                ),
-                (
-                    "Translate legal boundaries into observable operating checks "
-                    "rather than ceremonial contract language. Verify signed "
-                    "copyright transfers under 17 U.S.C. 204, patent assignment "
-                    "records under 35 U.S.C. 261, and the trademark quality "
-                    "control implications of 15 U.S.C. 1127. A trademark "
-                    "assignment also requires attention to associated goodwill "
-                    "under 15 U.S.C. 1060. Territory and field restrictions "
-                    "require competition analysis under 15 U.S.C. 1 rather "
-                    "than an assumption that ownership permits every restraint. "
-                    "For customs-related licenses, test whether royalty "
-                    "payments must be added to transaction value under "
-                    "19 U.S.C. 1401a(b)(1)(D); a workflow fee's label does "
-                    "not settle its customs treatment. These checks affect "
-                    "price, reserves, and whether delivery can proceed at all. "
-                    "Use automated obligation tracking to flag expiring rights, "
-                    "missed reports, inspection dates, and territory changes, "
-                    "but assign a named human to each exception. Before "
-                    "scaling, reproduce the Base waterfall from original "
-                    "contracts and bank records, demonstrate a funded delayed "
-                    "collection case, and show contractor capacity for the "
-                    "proposed reporting calendar. When title or permitted use "
-                    "fails verification, suspend the affected grant and offer "
-                    "a narrower documented package. More volume cannot repair "
-                    "rights that the operator never possessed."
-                ),
-            ],
-            "table": {
-                "caption": "Acquisition Economics and Explicit Downside Sensitivities",
-                "headers": [
-                    "Test condition and variables held constant",
-                    "Conservative result with a specific operating response",
-                    "Base result with a specific operating response",
-                    "Scaled result with a specific operating response",
-                ],
-                "rows": [
-                    [
-                        "All modeled agreements newly acquired using allocated acquisition spending",
-                        "$3,000 CAC per agreement; include failed pitches in acquisition records",
-                        "$3,500 CAC per agreement; separate prospecting from renewal servicing",
-                        "$2,812.50 CAC per agreement; verify channel efficiency persists at volume",
-                    ],
-                    [
-                        "Ten percent recognized revenue decline with all costs unchanged",
-                        "$7,500 owner profit remains; stop discretionary acquisition before cash tightens",
-                        "$138,125 owner profit remains; renegotiate fixed upstream minimums where possible",
-                        "$400,000 owner profit remains; protect reporting capacity for retained accounts",
-                    ],
-                    [
-                        "Twenty percent contractor delivery overrun without additional earned fees",
-                        "$10,100 owner profit remains; constrain custom packaging and manual remediation",
-                        "$166,625 owner profit remains; charge separately for permitted incremental refreshes",
-                        "$462,000 owner profit remains; batch repeatable tasks without weakening inspections",
-                    ],
-                    [
-                        "Combine ten percent revenue decline with twenty percent labor overrun",
-                        "$5,100 owner profit remains; retain cash before taking owner distributions",
-                        "$124,125 owner profit remains; prioritize collectible accounts and standard delivery",
-                        "$382,000 owner profit remains; preserve reserves against concentrated licensee exposure",
-                    ],
-                    [
-                        "Add thirty collection days while price and collectibility remain intact",
-                        "$3,082.19 extra funding required; confirm both counterparties' actual payment dates",
-                        "$20,085.62 extra funding required; fund delayed quarterly settlements before distributions",
-                        "$26,301.37 extra funding required; reserve liquidity before adding another cohort",
-                    ],
-                    [
-                        "Audit omitted sales using a documented recovery probability and cost",
-                        "$10,000 claim less risk and cost yields $2,000 expected recovery",
-                        "Apply the same $2,000 expected recovery test before commissioning audits",
-                        "Aggregate evidence carefully without assuming every licensee omitted equivalent sales",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Verify Rights, Economics, Cash and Capacity Before Expansion",
-                "body": (
-                    "Expansion requires reproducible evidence in four areas; "
-                    "a signed sales agreement alone does not establish a funded, "
-                    "deliverable licensing cohort."
-                ),
-                "items": [
-                    "Verify signed chain-of-title documents, permitted uses, territories, sublicensing authority, and scheduled trademark quality inspections.",
-                    "Reproduce the exact canonical revenue and profit totals, with each credit, reversal estimate, and rights participation linked to a contract.",
-                    "Fund the dated collection schedule and a 30-day delay case while excluding deferred advances from distributable cash.",
-                    "Confirm contractor hours, renewal ownership, reporting access, and customs evidence custody before adding agreements or promising exclusive rights.",
-                ],
-            },
-        },
-    ],
-    "pull_quote": "A royalty is only valuable when the rights are defensible, the deductions are bounded, and the cash arrives before the obligations fall due.",
-    "diagram_id": "diag-03",
-    "action_checklist": [
-        "Create a contract-level ledger separating licensee sales, gross billings, earned fees, recoupable advances, receivables, and unrestricted cash.",
-        "Reconcile the three annual waterfalls to $12,500, $180,625, and $480,000 owner profit without counting product sales or customs savings as revenue.",
-        "Document credit reason codes and reversal estimates, then designate cash buffers without recording duplicate expenses.",
-        "Build a thirteen-week cash forecast using actual settlement dates, intermediary lock releases, rights-owner payouts, and contractor commitments.",
-        "Run revenue, contractor-overrun, and additional-30-day collection stresses separately and together before setting owner distributions.",
-        "Verify title and permitted uses, establish royalty audit access, and document broker escrow plus a customs-counsel opinion for first-sale workflow licenses.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "19 CFR 152.103 — Transaction value",
-            "url": "https://www.ecfr.gov/current/title-19/section-152.103",
-            "relevance": "Governs transaction-value mechanics and valuation adjustments relevant to substantiated multi-tier import transactions.",
-        },
-        {
-            "title": "19 U.S.C. 1401a — Valuation of merchandise",
-            "url": "https://www.law.cornell.edu/uscode/text/19/1401a",
-            "relevance": "Section 1401a(b)(1)(D) addresses additions for qualifying royalties and license fees required as conditions of sale.",
-        },
-        {
-            "title": "17 U.S.C. 204 — Execution of transfers of copyright ownership",
-            "url": "https://www.law.cornell.edu/uscode/text/17/204",
-            "relevance": "Requires a signed writing for covered copyright ownership transfers, supporting catalog chain-of-title verification.",
-        },
-        {
-            "title": "35 U.S.C. 261 — Ownership; assignment",
-            "url": "https://www.law.cornell.edu/uscode/text/35/261",
-            "relevance": "Establishes patent assignment and recording rules relevant to authority to grant patent rights.",
-        },
-        {
-            "title": "15 U.S.C. 1127 — Construction and definitions; intent of chapter",
-            "url": "https://www.law.cornell.edu/uscode/text/15/1127",
-            "relevance": "Defines related-company control and abandonment concepts relevant to trademark licensing and actual quality oversight.",
-        },
-        {
-            "title": "15 U.S.C. 1060 — Assignment",
-            "url": "https://www.law.cornell.edu/uscode/text/15/1060",
-            "relevance": "Addresses trademark assignments with associated goodwill and restrictions affecting transfer validity.",
-        },
-        {
-            "title": "15 U.S.C. 1 — Trusts, etc., in restraint of trade illegal; penalty",
-            "url": "https://www.law.cornell.edu/uscode/text/15/1",
-            "relevance": "Provides the competition-law foundation for evaluating licensing restraints, including territorial and coordinated pricing arrangements.",
-        },
-    ],
-}
+CHAPTER_3 = {'id': 'Q3',
+ 'chapter_id': 'Q3',
+ 'chapter_number': 3,
+ 'question_number': 3,
+ 'slug': 'inventor-royalty-economics',
+ 'question_prompt': 'What can inventors actually earn from licensing, and how should I assess royalty '
+                    'expectations against manufacturing and other monetization options?',
+ 'kicker': 'Q3 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Understand Inventor Royalty Economics',
+ 'subtitle': "Royalty-percentage negotiation, licensing versus manufacturing, Stephen Key's product "
+             "earnings, Brian Walker's royalty story and practical patent monetization",
+ 'layout_template': 'financial_analysis',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Practitioners agree that licensing means renting your rights to a company that '
+                      'already owns manufacturing and distribution, then collecting royalties without '
+                      'running a business. The rate band is tight. UpCounsel cites 3 to 6% of gross sales. '
+                      'Stephen Key and Andrew Krauss see about 5% most often, seven or eight when CAD, '
+                      'testing, or tooling is done, and over 10% only for Disney-level brands. The street '
+                      "mechanics are cheap: a $25 Kinko's prototype produced a contract in three days and "
+                      '$100,000 in first-year royalties, a three-hour toy built from shop parts generated '
+                      'about $10 million, and Key files provisional applications for $65. They split on '
+                      'tactics. Sef Chang lets the company crunch its numbers before naming a percentage. '
+                      'J.D. Houvener walks in with written walk-away terms. Jeff Schell trades royalty '
+                      'points for licensee-funded enforcement.',
+ 'key_metrics': [{'label': 'Most Common Consumer-Product Royalty Rate',
+                  'metric': 'Most Common Consumer-Product Royalty Rate',
+                  'value': 'About 5%',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Key and Krauss call 5% the most common average they have seen across years '
+                             'of student licensing deals. They say it drops toward three for high-volume '
+                             'consumables and climbs to seven or eight when the inventor has done CAD, '
+                             'testing, or tooling.',
+                  'source': 'inventRightTV ([5pNsi_2H-J4 @ 00:04:38])'},
+                 {'label': 'Typical Patent Royalty Range',
+                  'metric': 'Typical Patent Royalty Range',
+                  'value': '3 to 6% of gross sales',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "UpCounsel's average range for patent royalty rates, which varies with "
+                             'industry, the uniqueness of the invention, and patent strength.',
+                  'source': 'UpCounsel ([mtxmo_OkhSw @ 00:00:30])'},
+                 {'label': 'Light Chaser Lifetime Royalties',
+                  'metric': 'Light Chaser Lifetime Royalties',
+                  'value': 'About $10 million, one third to the agent',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Brian Walker's three-hour, zero-cost toy prototype, licensed to SRM "
+                             'Entertainment. Walker estimates it sold seven to eight hundred million '
+                             'dollars at retail.',
+                  'source': 'inventRightTV ([WEVVJ111b8o @ 00:04:33])'},
+                 {'label': 'Spin Label Annual Minimum Guarantees',
+                  'metric': 'Spin Label Annual Minimum Guarantees',
+                  'value': '$250,000 to $750,000 per year',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Key's rotating label paid royalties off and on for roughly 20 years. Minimum "
+                             'guarantees ranged from a quarter million dollars in some years to $750,000 '
+                             'in others.',
+                  'source': 'inventRightTV ([Se-TzTVqhfY @ 00:02:18])'}],
+ 'sections': [{'heading': 'Section 1: The Practitioner Consensus',
+               'paragraphs': ['Every practitioner in this lane describes the same core trade: the inventor '
+                              'keeps the idea and rents the rights to a company that already owns '
+                              'manufacturing and distribution. Brian Fried has collected royalty checks '
+                              'for over 18 years. Fried first pushes an idea through a search, a '
+                              'patentability opinion, a prototype, and 3-D CAD. Then the intellectual '
+                              'property goes to a company that will manufacture it, sell it through '
+                              'internal or third-party sales reps, and pay a royalty [UnGdjQb467o @ '
+                              '00:00:59]. Patent attorney Jeff Schell frames the same deal as a permission '
+                              'grant in exchange for a fee or royalty. Schell calls it a win-win, because '
+                              'the licensee gets to sell the patented invention legally [cfPpWt8cw64 @ '
+                              '00:00:33]. J.D. Houvener explains why the model beats building a company '
+                              'for most inventors. Raising money, hiring employees, taking manufacturing '
+                              'risk, selling to strangers, and carrying HR paperwork is a ton of effort, '
+                              'and many inventors already have full-time jobs and children [2yLgmvphmBw @ '
+                              '00:03:23]. Stephen Key pushes the risk point hardest: there is no financial '
+                              "risk and you do not have to quit your day job. Key's wife Janice took a "
+                              'full-time job for the health insurance while Key learned to license, and '
+                              'the family moved from simple ideas to big ones that built a large revenue '
+                              'stream [hbfKyomYp6U @ 00:02:59].',
+                              'On the headline number, the speakers cluster tightly in the low single '
+                              'digits. UpCounsel puts typical patent royalty rates at 3 to 6% of gross '
+                              'sales. The rate swings with industry, the uniqueness of the invention, and '
+                              'the strength of the patent [mtxmo_OkhSw @ 00:00:30]. Stephen Key and Andrew '
+                              'Krauss have coached students for years. They peg the most common '
+                              'consumer-product rate at about 5% and drop it toward three for huge-volume '
+                              'consumables. The rate climbs to seven or eight when the inventor has '
+                              'already done CAD drawings, testing, a prototype, or even tooling. They also '
+                              'warn that over 10% is Disney territory, citing a secondhand report of a 20% '
+                              'rate on The Lion King at its peak [5pNsi_2H-J4 @ 00:05:09]. Sef Chang, '
+                              'interviewed by The Patent Professor, gives a generic range of one or two up '
+                              'to five percent. Chang acknowledges that some licensors land 14, 15, or 20, '
+                              'but says the companies themselves often do not know the right number until '
+                              'they do the math [bO09tLv7ysM @ 00:00:20]. Brian Fried specifies the base: '
+                              'the royalty is typically a percentage of the wholesale price the licensee '
+                              'charges the retail buyer. Fried is paid quarterly and gets sell-through '
+                              'reports showing units sold by store and by product variation [UnGdjQb467o @ '
+                              '00:01:58]. Double digits show up on the record only as outliers or '
+                              'big-brand deals. The practitioners never treat them as the opening position '
+                              'for an independent inventor.',
+                              'The bigger consensus is that the rate alone is a vanity number. Krauss '
+                              'argues that a half-percent royalty on a bazillion units can beat a fat rate '
+                              'on thin volume. Krauss adds that 5% on half a million units a year may be '
+                              "extremely generous. Key's formula has three inputs: volume, royalty rate, "
+                              'and price point, whether the product sells for $500, $19, or 99 cents. Key '
+                              'runs all three through a calculator before signing anything [5pNsi_2H-J4 @ '
+                              '00:07:09]. Exclusivity is the second lever everyone names. Schell ranks the '
+                              'payouts this way. Exclusive licenses usually return the highest royalties. '
+                              'Sole licenses sit in the middle, because the inventor keeps the right to '
+                              'use the invention. Non-exclusive deals pay less per licensee but let '
+                              'multiple payers stack [cfPpWt8cw64 @ 00:01:08]. Houvener calls the '
+                              'exclusive versus non-exclusive choice a huge price negotiation. Houvener '
+                              'also stresses that the license term is rarely the full twenty-year patent '
+                              'life, because both sides want to return to the table if the market takes '
+                              'off or stalls [ZbJhX8I0koA @ 00:04:12]. The third shared truth is patience. '
+                              'Key says money does not start at signing. The company must make the '
+                              'product, ship it, and get it on the shelf, and then distribution has to '
+                              'grow. Royalties really add up after a year, a year and a half, or two years '
+                              '[Se-TzTVqhfY @ 00:06:40]. Operators who need cash next quarter should keep '
+                              'a day job funding the pipeline.'],
+               'table': {'caption': 'Where the licensing practitioners line up on royalty economics',
+                         'headers': ['Consensus Point',
+                                     'What The Practitioners Report',
+                                     'Operator Takeaway',
+                                     'Expert Source'],
+                         'rows': [['Licensing means renting rights to an existing manufacturer and '
+                                   'distributor',
+                                   'Licensee manufactures, distributes through sales reps, and pays '
+                                   'quarterly royalties with sell-through reports',
+                                   'Target licensees that already own factories, reps, and retail buyer '
+                                   'relationships',
+                                   'Brian Fried - The Inventor Coach ([UnGdjQb467o @ 00:01:58])'],
+                                  ['Typical patent royalty band sits in low single digits',
+                                   'Patent royalty rates typically range between 3 and 6% of gross sales',
+                                   'Anchor expectations in the low single digits before the first pitch '
+                                   'call',
+                                   'UpCounsel ([mtxmo_OkhSw @ 00:00:30])'],
+                                  ['Five percent is the most common consumer-product royalty rate',
+                                   'Key and Krauss report about 5% as the average seen across years of '
+                                   'student deals',
+                                   'Treat 5% as the default and justify every point you ask above it',
+                                   'inventRightTV ([5pNsi_2H-J4 @ 00:04:38])'],
+                                  ['Finished product and packaging push the percentage higher',
+                                   'A bare concept forces heavy company investment, while shelf-ready work '
+                                   'raises the percentage',
+                                   'Finish packaging and production details yourself to argue for extra '
+                                   'royalty points',
+                                   'The Patent Professor ([bO09tLv7ysM @ 00:01:40])'],
+                                  ['Exclusivity level directly sets the size of the royalty',
+                                   'Exclusive pays highest, sole sits in the middle, non-exclusive pays '
+                                   'less per licensee',
+                                   'Price exclusivity as a premium you sell, never hand it over for free',
+                                   'Jeff Schell ([cfPpWt8cw64 @ 00:01:08])'],
+                                  ['Royalty cash arrives slowly after the contract is signed',
+                                   'Company must make, ship, and shelve the product, so royalties build '
+                                   'over one to two years',
+                                   'Keep your day job and budget for a long dead zone before checks',
+                                   'inventRightTV ([Se-TzTVqhfY @ 00:06:40])'],
+                                  ['Product complexity controls how fast royalty checks start rolling in',
+                                   'Walker saw royalties six or seven months after signing, but more '
+                                   'commonly a year or more',
+                                   'Fewer parts, molds, and tooling demands mean faster production and '
+                                   'faster checks',
+                                   'inventRightTV ([WEVVJ111b8o @ 00:12:56])']]}},
+              {'heading': 'Section 2: Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ["Key's street method is to spend almost nothing until a company says yes. "
+                              "For the Michael Jordan Wall Ball, Key made the prototype at Kinko's using a "
+                              '$15 Ohio Art backboard and a $10 poster, roughly $25 total. Key had a '
+                              'licensing agreement three days later, and the product earned about $100,000 '
+                              'in first-year royalties and sold for 10 years [gxeuCPaGeHY @ 00:04:08]. The '
+                              'Sweet Darts arrow needed no prototype and no intellectual property filing '
+                              "at all. It paid about $10,000 for one Valentine's season and never sold "
+                              'again [Se-TzTVqhfY @ 00:02:53]. Brian Walker built the original Light '
+                              'Chaser in three hours from parts already sitting in the shop. Walker '
+                              'assumed the $5,000 advance would be the only money ever seen. Instead the '
+                              'toy reached an estimated seven to eight hundred million dollars at retail '
+                              "across more than a hundred versions [WEVVJ111b8o @ 00:04:13]. Key's current "
+                              'cost stack is even lower. An AI prototype costs nothing, and 3D printing '
+                              'lets you Frankenstein a model together. Key uses AI to write a provisional '
+                              'patent application and file it at the USPTO for $65 [hM7gpPqIDoQ @ '
+                              '00:17:40]. The workhorse tool is the sell sheet, a one-page advertisement '
+                              'that sells the benefit. Key uses it to gauge company interest before any '
+                              'real money moves on prototypes or patents.',
+                              'In the negotiation room, Sef Chang refuses to name a percentage first. '
+                              'Chang asks only whether the company is interested. The company then calls '
+                              'manufacturers, gets quotes, and crunches its own profit. Next Chang asks '
+                              'for the cost rundown and moves the needle back and forth. If the percentage '
+                              'lands low, Chang negotiates for something else that compensates '
+                              '[bO09tLv7ysM @ 00:01:06]. Krauss names those other levers. If the company '
+                              'offers three but you wanted four, push the minimum guarantees higher. '
+                              'Require guaranteed sales figures with the rights coming back if they are '
+                              'missed, or have the company pay for your patents [5pNsi_2H-J4 @ 00:03:20]. '
+                              'Houvener tells inventors to walk in with two plans: the perfect deal and '
+                              'the walk-away terms, such as at least four percent royalty or an exclusive '
+                              'grant. Holding those terms in hand gives you posture and keeps you '
+                              'professional instead of emotional [ZbJhX8I0koA @ 00:02:26]. Schell offers a '
+                              'trade most rookies miss. Under an exclusive arrangement, accept slightly '
+                              'lower royalties in exchange for putting the expensive obligation to enforce '
+                              'the patent on the licensee [cfPpWt8cw64 @ 00:02:52]. Houvener also carves '
+                              'deals surgically. One option is licensing claims one through ten to one '
+                              'party and claims eleven through twenty to another. Another is splitting '
+                              'make and sell rights across Canada, the US, and Mexico.',
+                              "The unit math is simple and brutal. Key's chart starts with the number of "
+                              'stores the licensee is in. Assume each store sells one unit a week, because '
+                              'anything slower gets kicked to the curb. Then run the result at 3, 4, 5, '
+                              "and 6% across chains like Walmart, Target, Lowe's, and Home Depot "
+                              '[5pNsi_2H-J4 @ 00:02:17]. Krauss contrasts the do-it-yourself alternative. '
+                              'You could sell 5,000 to 20,000 units yourself at a 20% profit margin while '
+                              'working 60 to 80 hour weeks. Or a licensee could move half a million units '
+                              "a year while you do no work [5pNsi_2H-J4 @ 00:04:09]. At the top end, Key's "
+                              'rotating label paid royalties for over 15 years and made about $10 million. '
+                              "It ran on Nescafe, Jim Beam, and Lawry's, with sublicenses in Japan and "
+                              "Ireland [hM7gpPqIDoQ @ 00:13:06]. Walker's Light Chaser checks climbed from "
+                              '$75,000 to $180,000, $260,000, and $340,000 in the breakout year. Later '
+                              'checks reached $250,000 to $350,000 per quarter, but a third of roughly $10 '
+                              'million went to an agent [WEVVJ111b8o @ 00:05:41]. Splits cut the take too. '
+                              'The Wall Ball was a split royalty, with partner Russell Hicks taking half. '
+                              'Its final check, for 53 cents, was never cashed.'],
+               'table': {'caption': 'Street-level numbers practitioners report from real licensing deals',
+                         'headers': ['Mechanic Or Deal',
+                                     'Exact Figure Reported',
+                                     'How Operators Use It',
+                                     'Expert Source'],
+                         'rows': [['Michael Jordan Wall Ball cheap prototype and fast contract',
+                                   "About $25 Kinko's prototype, contract in three days, $100,000 "
+                                   'first-year royalties',
+                                   'Build ugly cheap prototypes that prove the concept and ship them fast',
+                                   'inventRightTV ([gxeuCPaGeHY @ 00:04:08])'],
+                                  ['Rotating spin label big-idea economics over two decades',
+                                   'About $250,000 per quarter, roughly $20,000 spent, six months of time, '
+                                   '100 rejections',
+                                   'Spend time rather than cash on big ideas and expect heavy rejection',
+                                   'inventRightTV ([gxeuCPaGeHY @ 00:06:14])'],
+                                  ['Minimum guarantees protect the downside on the spin label',
+                                   'Some years guarantees were $250,000, other years they reached $750,000',
+                                   'Negotiate guaranteed floors so non-performance still pays you or '
+                                   'returns rights',
+                                   'inventRightTV ([Se-TzTVqhfY @ 00:02:18])'],
+                                  ['Do-it-yourself provisional patent application filed with AI assistance',
+                                   'Key writes and files a provisional application at the USPTO for $65',
+                                   'Stake a cheap claim before pitching instead of paying for full patents',
+                                   'inventRightTV ([hM7gpPqIDoQ @ 00:17:40])'],
+                                  ['Light Chaser three-hour build generating eight-figure royalties',
+                                   'Three hours, zero parts cost, $5,000 advance, about $10 million, one '
+                                   'third to agent',
+                                   'Budget for agent cuts before celebrating gross royalty numbers on '
+                                   'paper',
+                                   'inventRightTV ([WEVVJ111b8o @ 00:04:33])'],
+                                  ['Written walk-away terms brought into the negotiation meeting',
+                                   'Example deal breaker of at least four percent royalty or an exclusive '
+                                   'grant',
+                                   'Write the perfect deal and the deal breakers before sitting down',
+                                   'J.D. Houvener / Bold Patents Law Firm ([ZbJhX8I0koA @ 00:02:45])'],
+                                  ['Seasonal novelty and plush licensing deals for small companies',
+                                   'Graduation plush and similar seasonal designs paid roughly $10,000 '
+                                   'each',
+                                   'Avoid seasonal categories when you need steady multi-year royalty '
+                                   'income',
+                                   'inventRightTV ([gxeuCPaGeHY @ 00:02:44])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'How the pros squeeze more out of every royalty deal',
+                           'body': 'These are moves the practitioners actually run at the table and before '
+                                   'it, so the rate, the guarantees, and the rights all tilt toward the '
+                                   'inventor.',
+                           'items': ['Never open with a percentage. Let the company get manufacturer '
+                                     'quotes and crunch its own profit, then move the needle from its '
+                                     'numbers [The Patent Professor — bO09tLv7ysM @ 00:00:38]',
+                                     'Interview the licensee about volume before signing. If the numbers '
+                                     'are small and nobody else is interested, grant a non-exclusive '
+                                     'instead of an exclusive [inventRightTV — 5pNsi_2H-J4 @ 00:07:53]',
+                                     'Under an exclusive deal, trade slightly lower royalties for making '
+                                     'the licensee carry the expensive job of enforcing the patent [Jeff '
+                                     'Schell — cfPpWt8cw64 @ 00:02:52]',
+                                     'Write ownership of future versions into the license, so a '
+                                     'manufacturer that improves your product during tooling cannot claim '
+                                     'version two [J.D. Houvener / Bold Patents Law Firm — 2yLgmvphmBw @ '
+                                     '00:05:03]']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Validate with a sell sheet before spending',
+                              'action': 'Build a one-page advertisement selling the benefit and send it to '
+                                        'target companies before any prototype or patent spend.',
+                              'detail': 'Gauge interest first, and build a prototype only when a company '
+                                        'wants proof of concept, because prototyping every idea burns too '
+                                        'much time and money [inventRightTV — INuH7fr5H40 @ 00:04:26]'},
+                             {'step': 2,
+                              'title': 'File a well-written provisional application',
+                              'action': 'Draft and file a provisional patent application that includes '
+                                        'manufacturing notes, workarounds, variations, materials, and good '
+                                        'drawings.',
+                              'detail': 'A provisional with enough detail to show how the product could be '
+                                        'made carries value with companies, and it costs far less than '
+                                        'filing full patents on every idea [inventRightTV — INuH7fr5H40 @ '
+                                        '00:07:33]'},
+                             {'step': 3,
+                              'title': 'Run the royalty math on the licensee',
+                              'action': 'Multiply projected annual units by price point by royalty rate, '
+                                        "and test 3% through 6% against the licensee's real store count.",
+                              'detail': 'Get a calculator out and model the units at that price and rate. '
+                                        'The numbers may reveal that the licensee lacks the volume to be '
+                                        'worth an exclusive [inventRightTV — 5pNsi_2H-J4 @ 00:07:23]'},
+                             {'step': 4,
+                              'title': 'Negotiate from a written walk-away list',
+                              'action': 'Enter the meeting with your perfect-deal terms and your deal '
+                                        'breakers written down. Then trade on minimum guarantees, term, '
+                                        'territory, and enforcement.',
+                              'detail': 'Having goals and walk-away terms in hand gives you posture and '
+                                        'keeps you professional and unemotional across the negotiation '
+                                        '[J.D. Houvener / Bold Patents Law Firm — ZbJhX8I0koA @ '
+                                        '00:02:26]'}]},
+              {'heading': 'Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The number everyone wants is the royalty rate, and the operators do not '
+                              'quote the same one. UpCounsel pins the average at 3 to 6% of gross sales, '
+                              'with the figure moving on industry, uniqueness of the invention and '
+                              'strength of the patent [mtxmo_OkhSw @ 00:00:30]. Sef Chang, interviewed on '
+                              'The Patent Professor, gives a lower generic band of two percent, maybe even '
+                              'one, up to five, while noting that some people have landed 14, 15 or 20 and '
+                              'warning that even the companies themselves do not really know the right '
+                              'number until they do the math [bO09tLv7ysM @ 00:00:20]. Stephen Key and '
+                              'Andrew Krauss at inventRightTV call about 5% the most common rate they see, '
+                              'drop high-volume consumables toward three, push it to seven or eight if you '
+                              'have done CAD drawings, testing, a prototype or even tooling, and say it is '
+                              'hard to get over 10 because Disney gets over 10 and you are not Disney '
+                              '[5pNsi_2H-J4 @ 00:05:24]. The base also differs: Brian Fried says his '
+                              'royalty is typically a percentage of the wholesale price the licensee '
+                              'charges the buyer, paid quarterly with sell-through reports by store and '
+                              'variation [UnGdjQb467o @ 00:01:58]. A quoted percentage means nothing until '
+                              'you pin whether it rides on gross sales or wholesale, and how much '
+                              'development you already absorbed for the company.',
+                              'Negotiating posture splits the camp. Sef Chang refuses to open with a '
+                              'number: he asks whether the company is interested, lets it contact '
+                              'manufacturers, pull quotes and compute its own profit, then demands the '
+                              'cost rundown and moves the needle back and forth until both sides are '
+                              'comfortable, trading for something else of value if the percentage lands '
+                              'low [bO09tLv7ysM @ 00:01:24]. J.D. Houvener of Bold Patents takes the '
+                              'opposite stance and walks in armed: a perfect-deal target plus hard '
+                              'walk-away terms such as at least four percent royalty or an exclusive '
+                              'grant, which he says gives you posture and keeps you professional and '
+                              'unemotional at the table [ZbJhX8I0koA @ 00:02:45]. Stephen Key and Andrew '
+                              'Krauss land in between, warning that the rate is only one lever; if the '
+                              'company says three and you want four, you can recover it through higher '
+                              'minimum guarantees, guaranteed sales figures that return the rights if '
+                              'missed, or having the licensee pay for your patents [5pNsi_2H-J4 @ '
+                              '00:03:20]. Jeff Schell adds a fourth trade the others do not price: under '
+                              'an exclusive arrangement, settle for slightly lower royalties if it moves '
+                              'the expensive obligation to enforce the patent onto the licensee '
+                              '[cfPpWt8cw64 @ 00:02:52]. Across all four, the percentage is currency to '
+                              'spend, not the scoreboard itself.',
+                              'Exclusivity and exit route are where the playbooks fork hardest. Jeff '
+                              'Schell ranks the grants cleanly: an exclusive license locks out everyone '
+                              'including the patent holder and usually pays the highest royalties, a sole '
+                              'license leaves you and one licensee in the market for a middle rate, and a '
+                              'non-exclusive license lets multiple companies pay you at less per licensee '
+                              '[cfPpWt8cw64 @ 00:01:08]. Sef Chang treats exclusivity as a walk-away '
+                              'issue: if he knows one company does a good job on one side of the market '
+                              'and another owns the other side, he will refuse an exclusive and leave '
+                              'rather than give it up [bO09tLv7ysM @ 00:02:51]. On building versus '
+                              'licensing, Andrew Krauss frames it as pure arithmetic, a 20% profit margin '
+                              'on 5,000 to 20,000 units while working 60 to 80 hour weeks against a '
+                              'licensee moving half a million units a year while you do no work '
+                              '[5pNsi_2H-J4 @ 00:04:09]. J.D. Houvener describes the third route, an '
+                              'outright sale, as freeing you from monitoring the licensee but warns the '
+                              'buyer may sit on or shelve the patent, so the product never ships and you '
+                              'may have negotiated away your own ability to iterate in that space '
+                              '[2yLgmvphmBw @ 00:07:18]. Choose the route by volume, by control, and by '
+                              'how much business you actually want to run.'],
+               'table': {'caption': 'Competing royalty playbooks, side by side',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Baseline royalty band to expect',
+                                   'UpCounsel: average rates run 3 to 6 percent of gross sales',
+                                   'Sef Chang: generic one to five percent, with outliers at 14, 15 and 20',
+                                   'UpCounsel ([mtxmo_OkhSw @ 00:00:30]); The Patent Professor '
+                                   '([bO09tLv7ysM @ 00:00:20])'],
+                                  ['What the royalty is calculated on',
+                                   'Brian Fried: a percentage of the wholesale price the licensee charges '
+                                   'the buyer, paid quarterly',
+                                   'Chartered Institute: a lump sum, a percentage cut of profits, or a '
+                                   'combination of both',
+                                   'Brian Fried - The Inventor Coach ([UnGdjQb467o @ 00:01:58]); Chartered '
+                                   'Institute of Patent Attorneys ([uTreJGUMqMs @ 00:00:00])'],
+                                  ['Who names the number first',
+                                   'Sef Chang: never demand a rate; let the company crunch manufacturer '
+                                   'quotes and profit first',
+                                   'J.D. Houvener: set goals and walk-away terms, like at least four '
+                                   'percent, before the meeting',
+                                   'The Patent Professor ([bO09tLv7ysM @ 00:00:38]); J.D. Houvener / Bold '
+                                   'Patents Law Firm ([ZbJhX8I0koA @ 00:02:45])'],
+                                  ['Response when the offered rate is low',
+                                   'Key and Krauss: trade the missing point for higher minimum guarantees '
+                                   'or paid patents',
+                                   'Jeff Schell: accept slightly lower royalties to push patent '
+                                   'enforcement onto the exclusive licensee',
+                                   'inventRightTV ([5pNsi_2H-J4 @ 00:03:20]); Jeff Schell ([cfPpWt8cw64 @ '
+                                   '00:02:52])'],
+                                  ['Granting exclusive versus non-exclusive rights',
+                                   'Jeff Schell: an exclusive grant usually returns the highest royalties '
+                                   'to the patent holder',
+                                   'Sef Chang walks away from exclusives; Key and Krauss go non-exclusive '
+                                   'when volume is thin',
+                                   'Jeff Schell ([cfPpWt8cw64 @ 00:01:08]); The Patent Professor '
+                                   '([bO09tLv7ysM @ 00:02:51]); inventRightTV ([5pNsi_2H-J4 @ 00:08:07])'],
+                                  ['License it or manufacture it yourself',
+                                   'Krauss: half a million licensed units with no work beats 20 percent '
+                                   'margin at 60 to 80 hour weeks',
+                                   'UpCounsel: competitive-minded inventors manufacture directly, harder '
+                                   'but potentially more rewarding financially',
+                                   'inventRightTV ([5pNsi_2H-J4 @ 00:04:09]); UpCounsel ([mtxmo_OkhSw @ '
+                                   '00:01:55])'],
+                                  ['License it or sell the patent outright',
+                                   'Innovent Law: assign and sell it outright like a car or home, with no '
+                                   'access afterward',
+                                   'Houvener: a sale ends monitoring, but the buyer may shelve it and '
+                                   'block your future iterations',
+                                   'Innovent Law ([boXHxU-4qd8 @ 00:01:01]); J.D. Houvener / Bold Patents '
+                                   'Law Firm ([2yLgmvphmBw @ 00:07:18])']]}},
+              {'heading': 'Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['Stephen Key is blunt that not every license pays. His novelty run produced '
+                              "Sweet Darts, a plastic suction-cup arrow that sold during one Valentine's "
+                              'season for about $10,000, plus back-to-school spinner pins, Cool Pals '
+                              'lunch-box ice packs and roughly 30 plush characters that each landed around '
+                              '$10,000 or less [gxeuCPaGeHY @ 00:00:36]. He says the Sweet Darts money '
+                              'never repeated and that seasonal deals felt too much like work, which is '
+                              'why he did not like that industry very much [Se-TzTVqhfY @ 00:03:14]. Even '
+                              'his winners carried haircuts: the Michael Jordan Wall Ball was a split '
+                              'royalty where his partner took half [5pNsi_2H-J4 @ 00:05:09]. Brian Walker '
+                              'on inventRightTV shows the other end of the curve. His light chaser, built '
+                              'in three hours from parts already in his shop, nearly disappeared after he '
+                              'licensed it to SRM Entertainment because it sat unexplained in little boxes '
+                              'on novelty shelves until it moved into Barnum & Bailey, Universal and '
+                              'Disney. He expected his $5,000 advance to be all the money he would ever '
+                              'see, yet it generated about $10 million in royalties, a third of which went '
+                              'to his agent [WEVVJ111b8o @ 00:04:33]. The economics check: price the '
+                              'season, the split and the agent cut before celebrating any headline royalty '
+                              'number, and do not write off a slow starter too early.',
+                              'Time is the silent cost line. Key says royalties do not start the minute '
+                              'you sign: the licensee has to make it, ship it and get it on the shelf, '
+                              'then you wait a couple of months to collect and longer for distribution to '
+                              'grow, so you are talking a year, a year and a half, or two years before '
+                              'checks really add up [Se-TzTVqhfY @ 00:06:40]. Brian Walker has seen '
+                              'licenses produce royalties in six or seven months but says a year or more '
+                              'is more common, and the drag scales with tooling: his light chaser line '
+                              'needed a roughly 15-cavity mold and about 30 components, while his six-part '
+                              'animating product can reach production far faster [WEVVJ111b8o @ 00:12:56]. '
+                              'Walker also burned his own protection, filing about six provisional patents '
+                              'and letting every one expire because he was too lazy to push them within '
+                              "the one-year window [WEVVJ111b8o @ 00:11:22]. Key's counter-discipline is "
+                              'to never pour serious money into one favorite idea, and he warns that '
+                              'choosing the wrong idea means years go by without income; if you honestly '
+                              'count up all the time spent, you are not saving money on a budget, you are '
+                              'losing it [hM7gpPqIDoQ @ 00:19:05]. Budget the calendar as hard as the '
+                              'cash.',
+                              'Most self-inflicted losses happen at the table or after the ink dries. '
+                              'Krauss says many students arrive after toploading a deal with demands like '
+                              '$100,000 upfront plus a 20% royalty, asks that are just not practical and '
+                              'that come from not knowing what the other side is doing [5pNsi_2H-J4 @ '
+                              '00:01:06]. J.D. Houvener warns newcomers who assume the license runs for '
+                              'the full twenty-year patent life; both sides want to return to the table '
+                              'after a commercially reasonable period, and since there are no patent '
+                              'police, the owner must hunt infringers and get an exclusive licensee '
+                              'contractually on the hook to help [ZbJhX8I0koA @ 00:06:10]. In a separate '
+                              'briefing he flags the version-two trap, where the manufacturer develops an '
+                              'improved variant during tooling or fabrication and tries to claim it unless '
+                              'the contract settles who owns what, alongside terminating if the licensee '
+                              'sits on the product [2yLgmvphmBw @ 00:05:03]. Key admits he dropped the '
+                              'ball himself after traveling for six months and coming home to find things '
+                              'with his licensees not quite right, and he insists on a recap email after '
+                              'every conversation and never going around the person you work with '
+                              '[hbfKyomYp6U @ 00:05:56]. A signed license is a business you still have to '
+                              'run.'],
+               'table': {'caption': 'Firsthand losses and the economics behind them',
+                         'headers': ['Failure Mode', 'What Happened', 'Economics Check', 'Expert Source'],
+                         'rows': [['Seasonal novelty products that never repeat',
+                                   "Sweet Darts sold one Valentine's season and then never sold again",
+                                   'About $10,000 total, and Key says it felt too much like work',
+                                   'inventRightTV ([Se-TzTVqhfY @ 00:03:14])'],
+                                  ['Slow retail start nearly kills a hit',
+                                   'Light chaser sat in boxes on novelty shelves with nobody buying it',
+                                   'Started from a $5,000 advance; later about $10 million, a third to the '
+                                   'agent',
+                                   'inventRightTV ([WEVVJ111b8o @ 00:05:25])'],
+                                  ['Royalty tail fades to almost nothing',
+                                   'Wall Ball sold for ten years after a strong opening year',
+                                   'First year over $100,000; the final check was for 53 cents',
+                                   'inventRightTV ([gxeuCPaGeHY @ 00:04:08])'],
+                                  ['Provisional patents allowed to lapse',
+                                   'Walker filed about six provisionals and let every one expire',
+                                   'One year to convert into a real patent or lose it forever',
+                                   'inventRightTV ([WEVVJ111b8o @ 00:11:37])'],
+                                  ['Toploading the first offer to a licensee',
+                                   'Newcomers demand $100,000 upfront plus a 20 percent royalty rate',
+                                   'Deals die and students show up after bad experiences needing '
+                                   're-education',
+                                   'inventRightTV ([5pNsi_2H-J4 @ 00:01:06])'],
+                                  ['Assuming someone else polices infringement',
+                                   'There are no patent police; the owner must find infringers proactively',
+                                   'Patent litigation gets very pricey, so tie the exclusive licensee into '
+                                   'enforcement',
+                                   'J.D. Houvener / Bold Patents Law Firm ([ZbJhX8I0koA @ 00:06:10]); '
+                                   'Innovent Law ([boXHxU-4qd8 @ 00:02:21])'],
+                                  ['Cold outreach that never reaches a decision maker',
+                                   'Email fatigue and automation make company responses almost impossible '
+                                   'to get today',
+                                   'Prototypes and a $65 provisional are easy; getting to companies is '
+                                   'hardest',
+                                   'inventRightTV ([hM7gpPqIDoQ @ 00:16:49])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Do Not Sign Until These Four Checks Clear',
+                           'body': 'Every item below comes from a loss, a stall or a dead deal the '
+                                   'practitioners lived through. Clear all four before accepting a royalty '
+                                   'offer.',
+                           'items': ['Run the volume math first: licensee store count times roughly one '
+                                     'sale a week per store, charted at 3%, 4%, 5% and 6%; if the volume '
+                                     'is not there, walk or give only a non-exclusive [inventRightTV — '
+                                     '5pNsi_2H-J4 @ 00:02:17].',
+                                     'Lock minimum guarantees and required sales figures so the rights '
+                                     'come back to you if the licensee does not perform [inventRightTV — '
+                                     '5pNsi_2H-J4 @ 00:03:37].',
+                                     'Write ownership of improvements and version two into the contract, '
+                                     'plus termination if the licensee sits on the product instead of '
+                                     'manufacturing it [J.D. Houvener / Bold Patents Law Firm — '
+                                     '2yLgmvphmBw @ 00:05:03].',
+                                     'Budget one to two years from signature before royalties really add '
+                                     'up, and keep your day job funding the gap [inventRightTV — '
+                                     'Se-TzTVqhfY @ 00:06:40].']}}],
+ 'pull_quote': '"Rejection is my middle name... if you don\'t have the stomach for rejection don\'t get in '
+               'this game." — Brian Walker on inventRightTV (WEVVJ111b8o @ 00:07:31).',
+ 'diagram_id': 'diag-03',
+ 'action_checklist': ['Pitch with a sketch, quick prototype or one-page sell sheet that costs basically '
+                      'nothing, and get a company to say yes or no before spending on patents or '
+                      'prototypes [inventRightTV — gxeuCPaGeHY @ 00:07:21].',
+                      'Ask whether the company is interested first and let it pull manufacturer quotes and '
+                      'calculate its profit before any percentage is named [The Patent Professor — '
+                      'bO09tLv7ysM @ 00:00:53].',
+                      'Build a royalty chart at 3%, 4%, 5% and 6% using how many stores the licensee is in '
+                      'and roughly one sale per store per week [inventRightTV — 5pNsi_2H-J4 @ 00:02:32].',
+                      'Write down your perfect-deal goals and your walk-away terms, such as a minimum '
+                      'royalty or exclusivity, before you sit at the table [J.D. Houvener / Bold Patents '
+                      'Law Firm — ZbJhX8I0koA @ 00:02:26].',
+                      'Negotiate territory, ownership of improvements and who carries patent enforcement '
+                      'as separate terms, not just the royalty rate [Jeff Schell — cfPpWt8cw64 @ '
+                      '00:02:17].',
+                      'After every licensee conversation, recap what was said in an email with next steps, '
+                      "and look up every contact's title on LinkedIn [inventRightTV — hbfKyomYp6U @ "
+                      '00:06:41].'],
+ 'statutory_citations': [{'title': 'inventRightTV — How Much Money Will You Make Licensing? (Royalties) '
+                                   '[00:04:52]',
+                          'url': 'https://www.youtube.com/watch?v=5pNsi_2H-J4&t=292s',
+                          'relevance': 'Primary practitioner testimony on average 5% royalties, '
+                                       'consumable, tooling and Disney rate tiers, and split royalties.'},
+                         {'title': 'inventRightTV — I Licensed My Ideas — Here’s How Much I Made! '
+                                   '[00:13:06]',
+                          'url': 'https://www.youtube.com/watch?v=hM7gpPqIDoQ&t=786s',
+                          'relevance': 'Primary practitioner testimony on a rotating-label license earning '
+                                       'about $10 million over 15-plus years versus $10,000 seasonal '
+                                       'deals.'},
+                         {'title': 'The Patent Professor — Licensing Your Product Idea: How to Negotiate '
+                                   'Your Royalty Percentage with Sef Chang [00:00:20]',
+                          'url': 'https://www.youtube.com/watch?v=bO09tLv7ysM&t=20s',
+                          'relevance': 'Primary practitioner testimony on royalty ranges and letting the '
+                                       'licensee calculate its margin before negotiating.'},
+                         {'title': 'J.D. Houvener / Bold Patents Law Firm — How to License a Patent '
+                                   '[00:02:45]',
+                          'url': 'https://www.youtube.com/watch?v=ZbJhX8I0koA&t=165s',
+                          'relevance': 'Primary practitioner testimony on walk-away terms, grant clauses, '
+                                       'term, territory and enforcement in license contracts.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'cfPpWt8cw64',
+                       'title': 'Patent Licensing 101 - Learn What Goes Into Monetizing Your Patented '
+                                'Ideas',
+                       'channel': 'Jeff Schell',
+                       'author': 'Jeff Schell',
+                       'text': 'Sometimes when you license a patented invention, particularly under an '
+                               'exclusive license arrangement, you may want to settle for slightly lower '
+                               'royalties in exchange for placing the obligation to enforce the patent on '
+                               'the licensee.',
+                       'tip': 'Sometimes when you license a patented invention, particularly under an '
+                              'exclusive license arrangement, you may want to settle for slightly lower '
+                              'royalties in exchange for placing the obligation to enforce the patent on '
+                              'the licensee.',
+                       'timestamp': 172,
+                       'timestamp_seconds': 172,
+                       'timestamp_label': '[00:02:52]',
+                       'url': 'https://www.youtube.com/watch?v=cfPpWt8cw64&t=172s',
+                       'markdown': '[00:02:52](https://www.youtube.com/watch?v=cfPpWt8cw64&t=172s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'mtxmo_OkhSw',
+                       'title': 'Patent Royalties  How Much Can Inventors Really Earn',
+                       'channel': 'UpCounsel',
+                       'author': 'UpCounsel',
+                       'text': 'On average, patent royalty rates typically range between 3 to 6% of gross '
+                               'sales.',
+                       'tip': 'On average, patent royalty rates typically range between 3 to 6% of gross '
+                              'sales.',
+                       'timestamp': 30,
+                       'timestamp_seconds': 30,
+                       'timestamp_label': '[00:00:30]',
+                       'url': 'https://www.youtube.com/watch?v=mtxmo_OkhSw&t=30s',
+                       'markdown': '[00:00:30](https://www.youtube.com/watch?v=mtxmo_OkhSw&t=30s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'bO09tLv7ysM',
+                       'title': 'Licensing Your Product Idea: How to Negotiate Your Royalty Percentage '
+                                'with Sef Chang',
+                       'channel': 'The Patent Professor',
+                       'author': 'The Patent Professor',
+                       'text': "When I approach companies I'm not demanding them for royalty percentage; I "
+                               'actually want them to know first, are you interested.',
+                       'tip': "When I approach companies I'm not demanding them for royalty percentage; I "
+                              'actually want them to know first, are you interested.',
+                       'timestamp': 38,
+                       'timestamp_seconds': 38,
+                       'timestamp_label': '[00:00:38]',
+                       'url': 'https://www.youtube.com/watch?v=bO09tLv7ysM&t=38s',
+                       'markdown': '[00:00:38](https://www.youtube.com/watch?v=bO09tLv7ysM&t=38s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'UnGdjQb467o',
+                       'title': 'Licensing to Earn royalties Vs  Manufacturing Your Invention Idea',
+                       'channel': 'Brian Fried - The Inventor Coach',
+                       'author': 'Brian Fried - The Inventor Coach',
+                       'text': "Typically, it's from a percentage of the wholesale cost of what they are "
+                               'selling it to the buyer for, and I get paid quarterly.',
+                       'tip': "Typically, it's from a percentage of the wholesale cost of what they are "
+                              'selling it to the buyer for, and I get paid quarterly.',
+                       'timestamp': 118,
+                       'timestamp_seconds': 118,
+                       'timestamp_label': '[00:01:58]',
+                       'url': 'https://www.youtube.com/watch?v=UnGdjQb467o&t=118s',
+                       'markdown': '[00:01:58](https://www.youtube.com/watch?v=UnGdjQb467o&t=118s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'WEVVJ111b8o',
+                       'title': 'How This Inventor Earned $10 Million In Royalties!',
+                       'channel': 'inventRightTV',
+                       'author': 'inventRightTV',
+                       'text': "I think overall it's generated about ten million in royalties, a third of "
+                               'which went to my agent.',
+                       'tip': "I think overall it's generated about ten million in royalties, a third of "
+                              'which went to my agent.',
+                       'timestamp': 273,
+                       'timestamp_seconds': 273,
+                       'timestamp_label': '[00:04:33]',
+                       'url': 'https://www.youtube.com/watch?v=WEVVJ111b8o&t=273s',
+                       'markdown': '[00:04:33](https://www.youtube.com/watch?v=WEVVJ111b8o&t=273s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'gxeuCPaGeHY',
+                       'title': 'How Much Money Stephen Key Made Licensing His Ideas',
+                       'channel': 'inventRightTV',
+                       'author': 'inventRightTV',
+                       'text': 'It produced millions of dollars for me; my checks quarterly were about '
+                               '$250,000 a quarter.',
+                       'tip': 'It produced millions of dollars for me; my checks quarterly were about '
+                              '$250,000 a quarter.',
+                       'timestamp': 374,
+                       'timestamp_seconds': 374,
+                       'timestamp_label': '[00:06:14]',
+                       'url': 'https://www.youtube.com/watch?v=gxeuCPaGeHY&t=374s',
+                       'markdown': '[00:06:14](https://www.youtube.com/watch?v=gxeuCPaGeHY&t=374s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '5pNsi_2H-J4',
+                       'title': 'How Much Money Will You Make Licensing? (Royalties)',
+                       'channel': 'inventRightTV',
+                       'author': 'inventRightTV',
+                       'text': "The average royalty rate that we have seen over the years, it's about 5%.",
+                       'tip': "The average royalty rate that we have seen over the years, it's about 5%.",
+                       'timestamp': 278,
+                       'timestamp_seconds': 278,
+                       'timestamp_label': '[00:04:38]',
+                       'url': 'https://www.youtube.com/watch?v=5pNsi_2H-J4&t=278s',
+                       'markdown': '[00:04:38](https://www.youtube.com/watch?v=5pNsi_2H-J4&t=278s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '5pNsi_2H-J4',
+                       'title': 'How Much Money Will You Make Licensing? (Royalties)',
+                       'channel': 'inventRightTV',
+                       'author': 'inventRightTV',
+                       'text': "I think the minimum guarantees is very very important because that's going "
+                               "to allow you that if they don't perform you get it back.",
+                       'tip': "I think the minimum guarantees is very very important because that's going "
+                              "to allow you that if they don't perform you get it back.",
+                       'timestamp': 217,
+                       'timestamp_seconds': 217,
+                       'timestamp_label': '[00:03:37]',
+                       'url': 'https://www.youtube.com/watch?v=5pNsi_2H-J4&t=217s',
+                       'markdown': '[00:03:37](https://www.youtube.com/watch?v=5pNsi_2H-J4&t=217s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'hM7gpPqIDoQ',
+                       'title': 'I Licensed My Ideas — Here’s How Much I Made!',
+                       'channel': 'inventRightTV',
+                       'author': 'inventRightTV',
+                       'text': 'Today, to get someone to respond to an email is almost impossible.',
+                       'tip': 'Today, to get someone to respond to an email is almost impossible.',
+                       'timestamp': 1009,
+                       'timestamp_seconds': 1009,
+                       'timestamp_label': '[00:16:49]',
+                       'url': 'https://www.youtube.com/watch?v=hM7gpPqIDoQ&t=1009s',
+                       'markdown': '[00:16:49](https://www.youtube.com/watch?v=hM7gpPqIDoQ&t=1009s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Se-TzTVqhfY',
+                       'title': 'From Ideas To Income : The Truth About Earning Royalties',
+                       'channel': 'inventRightTV',
+                       'author': 'inventRightTV',
+                       'text': 'They got to make it, they have to ship it, it has to go on the shelf, so '
+                               "you're talking a year, year and a half, two years until those royalties "
+                               'start to really add up.',
+                       'tip': 'They got to make it, they have to ship it, it has to go on the shelf, so '
+                              "you're talking a year, year and a half, two years until those royalties "
+                              'start to really add up.',
+                       'timestamp': 400,
+                       'timestamp_seconds': 400,
+                       'timestamp_label': '[00:06:40]',
+                       'url': 'https://www.youtube.com/watch?v=Se-TzTVqhfY&t=400s',
+                       'markdown': '[00:06:40](https://www.youtube.com/watch?v=Se-TzTVqhfY&t=400s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ykqpNKDKFEE',
+                       'title': 'Who is Stephen Key?',
+                       'channel': 'inventRightTV',
+                       'author': 'inventRightTV',
+                       'text': "I needed to test my idea really really fast and if it wasn't a great idea "
+                               'I needed to kick it to the curb as fast as I could and come up with '
+                               'another one.',
+                       'tip': "I needed to test my idea really really fast and if it wasn't a great idea I "
+                              'needed to kick it to the curb as fast as I could and come up with another '
+                              'one.',
+                       'timestamp': 206,
+                       'timestamp_seconds': 206,
+                       'timestamp_label': '[00:03:26]',
+                       'url': 'https://www.youtube.com/watch?v=ykqpNKDKFEE&t=206s',
+                       'markdown': '[00:03:26](https://www.youtube.com/watch?v=ykqpNKDKFEE&t=206s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'uTreJGUMqMs',
+                       'title': 'Turning ideas into profits - licensing your patents',
+                       'channel': 'Chartered Institute of Patent Attorneys',
+                       'author': 'Chartered Institute of Patent Attorneys',
+                       'text': "If you're going to secure licensing deals and royalty income you have to "
+                               'have the ownership of IP or you have nothing in that sense to sell.',
+                       'tip': "If you're going to secure licensing deals and royalty income you have to "
+                              'have the ownership of IP or you have nothing in that sense to sell.',
+                       'timestamp': 20,
+                       'timestamp_seconds': 20,
+                       'timestamp_label': '[00:00:20]',
+                       'url': 'https://www.youtube.com/watch?v=uTreJGUMqMs&t=20s',
+                       'markdown': '[00:00:20](https://www.youtube.com/watch?v=uTreJGUMqMs&t=20s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'boXHxU-4qd8',
+                       'title': 'Patent Monetizing Strategies Every Entrepreneur Should Know',
+                       'channel': 'Innovent Law',
+                       'author': 'Innovent Law',
+                       'text': 'One of the ways to monetize it is to go after people who are using your '
+                               'patent without your consent and get damages, but that is not the cheapest '
+                               'option as patent litigation can get very very pricey.',
+                       'tip': 'One of the ways to monetize it is to go after people who are using your '
+                              'patent without your consent and get damages, but that is not the cheapest '
+                              'option as patent litigation can get very very pricey.',
+                       'timestamp': 141,
+                       'timestamp_seconds': 141,
+                       'timestamp_label': '[00:02:21]',
+                       'url': 'https://www.youtube.com/watch?v=boXHxU-4qd8&t=141s',
+                       'markdown': '[00:02:21](https://www.youtube.com/watch?v=boXHxU-4qd8&t=141s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ZbJhX8I0koA',
+                       'title': 'How to License a Patent',
+                       'channel': 'J.D. Houvener / Bold Patents Law Firm',
+                       'author': 'J.D. Houvener / Bold Patents Law Firm',
+                       'text': 'These are the terms where you say deal breaker, I gotta get at least four '
+                               'percent royalty or I need this to be granted an exclusive term.',
+                       'tip': 'These are the terms where you say deal breaker, I gotta get at least four '
+                              'percent royalty or I need this to be granted an exclusive term.',
+                       'timestamp': 165,
+                       'timestamp_seconds': 165,
+                       'timestamp_label': '[00:02:45]',
+                       'url': 'https://www.youtube.com/watch?v=ZbJhX8I0koA&t=165s',
+                       'markdown': '[00:02:45](https://www.youtube.com/watch?v=ZbJhX8I0koA&t=165s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'hbfKyomYp6U',
+                       'title': 'The Licensing Lifestyle with Stephen Key',
+                       'channel': 'inventRightTV',
+                       'author': 'inventRightTV',
+                       'text': 'Do not drop the ball; it happened to me one time, I was traveling for six '
+                               "months around the country and sure enough when I got back things weren't "
+                               'quite right.',
+                       'tip': 'Do not drop the ball; it happened to me one time, I was traveling for six '
+                              "months around the country and sure enough when I got back things weren't "
+                              'quite right.',
+                       'timestamp': 356,
+                       'timestamp_seconds': 356,
+                       'timestamp_label': '[00:05:56]',
+                       'url': 'https://www.youtube.com/watch?v=hbfKyomYp6U&t=356s',
+                       'markdown': '[00:05:56](https://www.youtube.com/watch?v=hbfKyomYp6U&t=356s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'INuH7fr5H40',
+                       'title': 'How to License Your Ideas and Make Money (Your Honest Guide to Profitable '
+                                'Inventing)',
+                       'channel': 'inventRightTV',
+                       'author': 'inventRightTV',
+                       'text': "I'm really sad to tell you that big companies don't license very much; "
+                               "it's the mid-sized companies that do.",
+                       'tip': "I'm really sad to tell you that big companies don't license very much; it's "
+                              'the mid-sized companies that do.',
+                       'timestamp': 527,
+                       'timestamp_seconds': 527,
+                       'timestamp_label': '[00:08:47]',
+                       'url': 'https://www.youtube.com/watch?v=INuH7fr5H40&t=527s',
+                       'markdown': '[00:08:47](https://www.youtube.com/watch?v=INuH7fr5H40&t=527s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '2yLgmvphmBw',
+                       'title': 'How Inventors Monetize Patents Without Ever Making a Product?',
+                       'channel': 'J.D. Houvener / Bold Patents Law Firm',
+                       'author': 'J.D. Houvener / Bold Patents Law Firm',
+                       'text': "If you've never sold your product before, it's going to be hard to "
+                               "negotiate a higher percentage because there's no track record.",
+                       'tip': "If you've never sold your product before, it's going to be hard to "
+                              "negotiate a higher percentage because there's no track record.",
+                       'timestamp': 390,
+                       'timestamp_seconds': 390,
+                       'timestamp_label': '[00:06:30]',
+                       'url': 'https://www.youtube.com/watch?v=2yLgmvphmBw&t=390s',
+                       'markdown': '[00:06:30](https://www.youtube.com/watch?v=2yLgmvphmBw&t=390s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'}]}

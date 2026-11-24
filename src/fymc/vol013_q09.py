@@ -1,733 +1,852 @@
 from __future__ import annotations
 
-CHAPTER_9 = {
-    "id": "Q9",
-    "chapter_id": "Q9",
-    "chapter_number": 9,
-    "question_number": 9,
-    "slug": "contracts-statutory-guardrails-licensing-outreach-scripts",
-    "question_prompt": "Which federal/state statutes, licensing boundaries, contract clauses, and compliant outreach scripts govern intellectual property licensing?",
-    "kicker": "Q9 / THE BIG MONEY PLAYBOOKS",
-    "title": "Contracts, Statutory Guardrails, Licensing & Outreach Scripts",
-    "subtitle": "Patent Claim Schedules, Trademark Quality Controls, Copyright Grants, Dataset Permissions, Royalty Audits & CAN-SPAM Outreach",
-    "layout_template": "legal_compliance_notes",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #19, Intellectual Property Licensing, ranks #09 with a 88/100 "
-        "Money-to-Manpower Score. Its four mapped operator plays are patent field-of-use "
-        "licensing, brand licensing, catalog rights licensing, and permissioned dataset "
-        "licensing. Each monetizes documented rights through license fees and royalties, "
-        "never through licensees' underlying product sales. Annual owner net profit is "
-        "$12,500 Conservative, $180,625 Base, and $480,000 Scaled. This chapter turns "
-        "chain-of-title review, territorial restrictions, competition analysis, contract "
-        "drafting, and prospecting rules into a compact operating system. A 1 FT + 3 C "
-        "pod separates commercial ownership, specialist counsel, rights verification, "
-        "and royalty controls. Scale to 2 FT + 4 C only after reporting definitions, "
-        "renewal alerts, evidence retention, and exception handling work across the "
-        "four plays."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$50,000",
-            "context": "Annual license fees and royalties; excludes licensees' underlying product sales",
-            "note": "25% net margin; $12,500 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Base",
-            "value": "$425,000",
-            "context": "Annual license fees and royalties; excludes licensees' underlying product sales",
-            "note": "42.5% net margin; $180,625 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$800,000",
-            "context": "Annual license fees and royalties; excludes licensees' underlying product sales",
-            "note": "60% net margin; $480,000 annual owner net profit; 2 FT + 4 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Establish transferable rights before offering any of the four plays",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Build one rights register before building a prospect list. Candidate #19 "
-                    "has four mapped plays: patent field-of-use licensing, brand licensing, "
-                    "catalog rights licensing, and permissioned dataset licensing. Every "
-                    "offer must identify the actual owner, the instrument granting your "
-                    "authority, the asset schedule, and the restrictions surviving earlier "
-                    "transactions. For patents, collect executed inventor assignments, "
-                    "employment invention agreements, recorded transfers, maintenance status, "
-                    "and existing licenses. Under 35 U.S.C. § 261, assignments require a "
-                    "written instrument; timely recordation protects against specified later "
-                    "purchasers or mortgagees without notice. USPTO Assignment Center is "
-                    "evidence infrastructure, not a substitute for reading the instruments. "
-                    "Check joint ownership under 35 U.S.C. § 262 because, absent an agreement "
-                    "otherwise, a joint owner can exploit or license the patent without "
-                    "accounting to the others. For brands, connect registrations and common-law "
-                    "rights to the operating entity and the relevant goods or services. For "
-                    "catalogs, separate the underlying work from the recording, photograph, "
-                    "edition, or other embodiment. For datasets, trace collection, contributor "
-                    "permissions, supplier contracts, and restrictions on redistribution or "
-                    "model training. A seller's invoice proves a transaction, not ownership "
-                    "of every embedded right."
-                ),
-                (
-                    "Treat each play as a different permission architecture rather than "
-                    "reusing one universal license. Patent schedules should identify issued "
-                    "claims, application families, jurisdictions, expiration assumptions, and "
-                    "the licensed acts of making, using, selling, offering for sale, or "
-                    "importing. A pending application is not an issued exclusionary right. "
-                    "Brand licenses require enforceable quality standards, sample review, "
-                    "inspection rights, and documented corrective action; uncontrolled "
-                    "licensing can undermine trademark rights. Catalog licenses should "
-                    "enumerate reproduction, distribution, adaptation, public performance, "
-                    "and display rights under 17 U.S.C. § 106, along with media, languages, "
-                    "territories, and duration. A musical composition and its sound recording "
-                    "usually require separate rights analysis. Exclusive copyright transfers "
-                    "require a signed writing under 17 U.S.C. § 204, and statutory termination "
-                    "under §§ 203 and 304 can defeat assumptions about perpetual grants. "
-                    "Dataset contracts should distinguish protectable selection or arrangement "
-                    "from underlying facts, personal information, confidential know-how, and "
-                    "third-party materials. Download access does not establish permission to "
-                    "resell, sublicense, or train a model. Require an asset-specific clearance "
-                    "memo that explains exactly which rights support the proposed commercial "
-                    "use and which uses remain excluded."
-                ),
-                (
-                    "Keep the Base pod small by assigning accountable decisions rather than "
-                    "building a miniature law firm. The one full-time operator owns pricing, "
-                    "prospecting, negotiations, and the authoritative deal register. Contractor "
-                    "one is qualified IP counsel responsible for title exceptions, statutory "
-                    "interpretation, and negotiated drafting. Contractor two is a rights "
-                    "analyst who assembles instruments, verifies asset identifiers, and "
-                    "maintains permission evidence. Contractor three is a royalty accountant "
-                    "who designs reporting definitions, reconciles statements, and tests "
-                    "underpayments. These are roles within the 1 FT + 3 C constraint, not "
-                    "four additional departments. Airtable can hold the searchable rights "
-                    "register, while a restricted Google Drive or SharePoint repository "
-                    "holds signed instruments and source evidence. Give every document an "
-                    "asset identifier, version, effective date, owner, and review date. Store "
-                    "hashes of delivered catalogs or dataset manifests where versions matter. "
-                    "The operator may draft a commercial term sheet but must not promise "
-                    "exclusive rights while a prior grant remains unresolved. Maintain a "
-                    "short exception queue with an accountable reviewer and a proposed "
-                    "resolution. Stop only the affected asset or use; unrelated cleared "
-                    "inventory can continue through the pipeline without consuming the "
-                    "entire pod's capacity."
-                ),
-            ],
-            "table": {
-                "caption": "Rights Evidence Matrix for the Four Mapped Licensing Plays",
-                "headers": [
-                    "Asset or authority under review",
-                    "Evidence the pod must obtain",
-                    "Boundary the offer must preserve",
-                    "Owner and concrete release condition",
-                ],
-                "rows": [
-                    [
-                        "Patent field-of-use inventory offered to manufacturing prospects",
-                        "Executed inventor assignments, recorded transfers, and current claim schedules",
-                        "Only identified jurisdictions and supported licensed acts enter scope",
-                        "IP counsel resolves ownership breaks before commercial exclusivity commitments",
-                    ],
-                    [
-                        "Jointly owned patent families with multiple originating inventors",
-                        "Co-ownership agreements and existing licenses from every available custodian",
-                        "Section 262 default rights can undermine promised market exclusivity",
-                        "Rights analyst flags competing grants for counsel's written disposition",
-                    ],
-                    [
-                        "Brand licensing inventory spanning products and distribution channels",
-                        "Registration records, actual use evidence, and approved quality specifications",
-                        "Licensee receives identified marks for approved goods and channels",
-                        "Operator schedules sample inspections before branded products reach customers",
-                    ],
-                    [
-                        "Catalog licensing inventory containing recordings and underlying compositions",
-                        "Signed transfers, contributor releases, publisher permissions, and recording permissions",
-                        "Separate work rights from embodiment rights and statutory termination exposure",
-                        "Rights analyst clears each proposed media and territory combination",
-                    ],
-                    [
-                        "Permissioned dataset packages assembled from multiple commercial sources",
-                        "Supplier agreements, collection notices, permitted purposes, and provenance manifests",
-                        "Redistribution and training require rights beyond simple download access",
-                        "Counsel reviews source restrictions before any sample leaves custody",
-                    ],
-                    [
-                        "Confidential know-how bundled with a patent or dataset license",
-                        "Secrecy procedures, access records, employee agreements, and disclosure inventories",
-                        "Trade secret protection depends on continuing reasonable secrecy measures",
-                        "Operator restricts repository access and records every authorized recipient",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four checks before a rights-bearing offer leaves the pod",
-                "body": (
-                    "Run these checks against the proposed asset, territory, use, and "
-                    "counterparty rather than accepting a portfolio-level assurance."
-                ),
-                "items": [
-                    "Match the contracting entity to signed title instruments and obtain express sublicensing authority wherever an intermediary supplies the rights.",
-                    "Reconcile every promised exclusive field against prior grants, joint-owner rights, reserved uses, and existing distribution arrangements.",
-                    "Document the permitted dataset purposes or catalog rights, including training, adaptations, third-party components, and delivery versions.",
-                    "Assign counsel to material title or competition exceptions and preserve their disposition beside the final offer version.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Convert scope, payment, and enforcement into executable contract clauses",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Start drafting with a scope schedule that a royalty accountant can "
-                    "apply without interpreting a sales presentation. Identify licensed "
-                    "assets, permitted acts, fields of use, territory, channels, affiliates, "
-                    "sublicensing rights, duration, and reserved rights. Define whether "
-                    "exclusivity is absolute, channel-specific, or contingent on minimum "
-                    "performance, and specify the remedy when minimums are missed. A "
-                    "conversion to nonexclusive status can preserve revenue without forcing "
-                    "an immediate termination dispute. Put ownership of improvements, "
-                    "derivative works, annotations, fine-tuned models, and feedback in an "
-                    "express allocation rather than assuming that delivery resolves title. "
-                    "For data, distinguish source records, customer inputs, generated outputs, "
-                    "and usage telemetry. State permitted retention and deletion duties "
-                    "separately for production systems, backups, and legally retained "
-                    "records. Anti-circumvention language should target an identifiable "
-                    "commercial problem, such as routing licensed sales through an affiliate "
-                    "to evade royalties. Define covered transactions, duration, attribution, "
-                    "and remedies; avoid a vague ban on all contact with an entire industry. "
-                    "Do not confuse that negotiated covenant with technological-measure "
-                    "circumvention under 17 U.S.C. § 1201. Counsel should test restrictive "
-                    "terms against the governing state's restraint rules and applicable "
-                    "competition principles."
-                ),
-                (
-                    "Define the fee trigger before discussing the royalty percentage. An "
-                    "upfront access fee, an advance recoupable against royalties, an annual "
-                    "minimum, and an earned sales royalty create different obligations. "
-                    "Specify currency, taxes, withholding documentation, invoice timing, "
-                    "payment dates, interest where enforceable, and permitted deductions "
-                    "from the royalty base. Returns, discounts, freight, bundles, affiliate "
-                    "transfers, and bad debts need explicit treatment. Illustratively, a "
-                    "2% royalty on $1,000,000 of eligible licensee sales produces $20,000 "
-                    "of earned royalties, not $1,000,000 of operator revenue. If a $10,000 "
-                    "advance is fully creditable against those royalties, the remaining "
-                    "payment is $10,000, not another $20,000; recognition timing still depends "
-                    "on the performance obligations and applicable accounting policy. Keep "
-                    "this transaction example separate from the canonical annual scenarios. "
-                    "Conservative revenue is $50,000 with $37,500 of costs and $12,500 owner "
-                    "profit at 25%. Base revenue is $425,000 with $244,375 of costs and "
-                    "$180,625 owner profit at 42.5%. Scaled revenue is $800,000 with $320,000 "
-                    "of costs and $480,000 owner profit at 60%. Neither advances nor minimums "
-                    "justify double-counting earned royalties. The royalty accountant "
-                    "maintains separate cash, receivable, deferred-revenue, and earned-revenue "
-                    "records as applicable."
-                ),
-                (
-                    "Allocate dispute risk to the party that controls it, then make the "
-                    "remedy usable. Specify title and authority representations, known "
-                    "encumbrance disclosures, infringement-claim notification, defense "
-                    "control, settlement restrictions, and cooperation duties. Limit any "
-                    "indemnity by clearly defining covered claims and exclusions, including "
-                    "unauthorized modifications or combinations where appropriate. A "
-                    "liability cap needs a measurable base and lookback period; negotiate "
-                    "payment obligations, confidentiality breaches, misuse, and indemnities "
-                    "expressly rather than leaving conflicting exceptions across exhibits. "
-                    "Choose governing law, forum or arbitration rules, service mechanics, "
-                    "interim-relief rights, and cost allocation. The Federal Arbitration "
-                    "Act, 9 U.S.C. § 2, supports covered written arbitration agreements "
-                    "subject to applicable defenses; it does not cure an incoherent clause. "
-                    "Include cure periods, suspension rights, termination triggers, sell-off "
-                    "limits, post-termination reporting, and surviving audit obligations. "
-                    "For patent rights, separate compensation for pre-expiration activity "
-                    "from royalties on post-expiration patent use; hybrid know-how deals "
-                    "need deliberate allocation and counsel review. Track bankruptcy issues "
-                    "under 11 U.S.C. § 365(n), whose defined IP categories do not simply "
-                    "include trademarks. The operator routes unusual exceptions to counsel "
-                    "instead of improvising during a closing call, and the rights analyst "
-                    "records the final clause version."
-                ),
-            ],
-            "table": {
-                "caption": "Contract Clause Checklist With Executable Evidence and Failure Tests",
-                "headers": [
-                    "Clause family requiring explicit drafting",
-                    "Minimum executable contract language requirements",
-                    "Evidence retained by the assigned pod role",
-                    "Failure test before the operator signs",
-                ],
-                "rows": [
-                    [
-                        "Scope, exclusivity, territory, channel, and permitted licensee affiliates",
-                        "List assets, permitted acts, reserved uses, and exclusivity performance conditions",
-                        "Rights analyst attaches the approved asset schedule and prior-grant map",
-                        "Can an accountant classify a new affiliate transaction consistently",
-                    ],
-                    [
-                        "Fee trigger, royalty base, advances, minimums, and payment timing",
-                        "Define eligible sales, deductions, credits, exchange rates, and reporting deadlines",
-                        "Royalty accountant preserves worked examples and the recoupment ledger",
-                        "Does the advance reduce later payments without inflating earned revenue",
-                    ],
-                    [
-                        "Anti-circumvention restrictions addressing affiliate routing and concealed licensed transactions",
-                        "Identify covered transactions, attribution rules, duration, exceptions, and enforceable remedies",
-                        "Counsel records the commercial purpose and governing-state restriction analysis",
-                        "Could ordinary unrelated customer contact accidentally trigger the restriction",
-                    ],
-                    [
-                        "Liability cap, infringement indemnity, defense control, and settlement authority",
-                        "State the cap formula, carveouts, notice duties, and defense procedures",
-                        "Operator retains negotiated risk allocations and relevant insurance coverage details",
-                        "Do exhibit exceptions silently defeat the negotiated aggregate liability cap",
-                    ],
-                    [
-                        "Dispute resolution, termination, cure periods, and surviving contractual duties",
-                        "Choose forum, governing law, cure timing, sell-off limits, and audit survival",
-                        "Counsel reconciles the main agreement against every incorporated schedule",
-                        "Can the pod identify the proper forum and first deadline",
-                    ],
-                    [
-                        "IP ownership, dataset permissions, improvements, derivatives, and generated outputs",
-                        "Allocate each asset category and specify retention and permitted reuse",
-                        "Rights analyst preserves source permissions and signed derivative ownership instruments",
-                        "Does a supplier restriction conflict with promised downstream training rights",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Draft the accounting examples before negotiating the headline royalty",
-                "body": (
-                    "A compact pod wins leverage through repeatable definitions and "
-                    "verifiable evidence, not through longer agreements."
-                ),
-                "items": [
-                    "Attach three worked royalty examples covering a standard sale, a discounted bundle, and an affiliate transfer; make the agreed definitions control any arithmetic conflict.",
-                    "Tie brand sample approvals to a versioned specification and inspection record so quality control remains demonstrable after personnel change.",
-                    "For patent-plus-know-how packages, have counsel separate rights, consideration, and expiration mechanics rather than copying one perpetual royalty provision.",
-                    "Hash each delivered dataset manifest or catalog inventory and reference that version in the acceptance record, royalty schedule, and renewal notice.",
-                ],
-            },
-        },
-        {
-            "heading": "3. Apply territorial, sector, and audit rules without expanding the pod",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Build a jurisdiction matrix around actual activity, not merely the "
-                    "contract's governing-law sentence. Patent protection is territorial; "
-                    "a United States patent does not create worldwide exclusion rights. "
-                    "Trademark coverage varies by territory and goods, while copyright "
-                    "clearance may require collecting-society or other locally administered "
-                    "permissions for particular uses. Within the United States, dataset "
-                    "licensing triggers different state analyses depending on residency, "
-                    "coverage thresholds, processing purpose, and party roles. California "
-                    "Civil Code §§ 1798.100 and 1798.140 establish important notice, "
-                    "contracting, and definitional requirements for covered businesses and "
-                    "recipients. Calling a buyer a service provider cannot cure a transaction "
-                    "that actually permits independent commercial reuse. Virginia Code "
-                    "§§ 59.1-575 and 59.1-579 distinguish controllers and processors and "
-                    "require processor contracts where applicable. Illinois BIPA, 740 ILCS "
-                    "14/15, imposes specific duties for covered biometric collection and "
-                    "disclosure and prohibits covered private entities from selling, leasing, "
-                    "trading, or otherwise profiting from biometric identifiers or biometric "
-                    "information. Permission to collect therefore does not automatically "
-                    "create a licensable resale asset. The rights analyst records affected "
-                    "jurisdictions and intended uses; counsel resolves coverage, exemptions, "
-                    "and incompatible promises before the operator prices the transaction."
-                ),
-                (
-                    "Sector restrictions can invalidate an otherwise elegant dataset offer. "
-                    "HIPAA applies to covered entities, business associates, and protected "
-                    "health information within its scope, not to every health-related "
-                    "spreadsheet. Where applicable, use the de-identification pathways in "
-                    "45 CFR § 164.514 or analyze a permitted disclosure with the required "
-                    "instruments; a limited data set under § 164.514(e) still requires a "
-                    "data use agreement and is not unrestricted public inventory. Consumer "
-                    "reporting uses require separate Fair Credit Reporting Act analysis, "
-                    "including permissible purposes under 15 U.S.C. § 1681b. Public "
-                    "availability does not establish suitability for employment or credit "
-                    "screening. For government-funded inventions or deliverables, inspect "
-                    "award terms, retained government rights, and applicable FAR or DFARS "
-                    "clauses before promising exclusive commercial control. Export-controlled "
-                    "technical data requires a separate classification and access analysis "
-                    "before foreign-person disclosure. Competition review runs across all "
-                    "four plays: Sherman Act §§ 1 and 2 remain relevant to market allocation, "
-                    "anticompetitive tying, coordinated pricing, and exclusionary arrangements. "
-                    "A license does not immunize restraints, but a limited field-of-use "
-                    "grant is not automatically unlawful. Counsel evaluates market context, "
-                    "the actual restraint, and plausible effects rather than treating all "
-                    "exclusivity as either forbidden or harmless."
-                ),
-                (
-                    "Make royalty reporting reproducible before the first invoice. Require "
-                    "period, asset identifier, licensee entity, territory, channel, units, "
-                    "gross sales, allowed deductions, royalty rate, credits, and amount due "
-                    "in a stable CSV schema. Define how zero-sales periods are reported. "
-                    "The royalty accountant reconciles the statement to supporting ledgers "
-                    "and selected invoices, while the operator follows material exceptions "
-                    "instead of inspecting every row. Contract for record retention, audit "
-                    "frequency, notice, independent auditor access, confidentiality, "
-                    "underpayment remedies, and an agreed cost-shifting threshold. A "
-                    "negotiated 5% underpayment threshold is a contract choice, not a "
-                    "statutory entitlement. For brand deals, add quality-control evidence; "
-                    "for catalogs, reconcile usage logs; for patents, validate covered "
-                    "products and fields; for datasets, check authorized recipients and "
-                    "permitted-purpose attestations without collecting unnecessary personal "
-                    "records. Use Airtable automations for reporting deadlines and renewal "
-                    "alerts, and reconcile invoice statuses in QuickBooks Online or Xero. "
-                    "The Base pod remains 1 FT + 3 C. At Scaled, 2 FT + 4 C adds operational "
-                    "capacity without changing the $800,000 revenue basis or $480,000 owner "
-                    "profit target. Automation should surface missing statements and "
-                    "contradictions; it must never silently convert disputed usage into "
-                    "accepted earned revenue."
-                ),
-            ],
-            "table": {
-                "caption": "Territorial, Sector, and Royalty-Control Exception Matrix",
-                "headers": [
-                    "Jurisdiction or transaction risk requiring review",
-                    "Primary rule or operational constraint to apply",
-                    "Evidence and control assigned to the pod",
-                    "Concrete condition requiring an offer revision",
-                ],
-                "rows": [
-                    [
-                        "California personal information licensed for a buyer's independent purposes",
-                        "Civil Code sections 1798.100 and 1798.140 govern relevant recipient distinctions",
-                        "Counsel maps recipient role while analyst preserves notices and permissions",
-                        "Independent reuse contradicts the proposed service-provider designation and restrictions",
-                    ],
-                    [
-                        "Virginia personal data processed for a covered controller",
-                        "Code section 59.1-579 requires applicable controller and processor contract terms",
-                        "Rights analyst inventories instructions, subprocessors, deletion terms, and assistance duties",
-                        "Buyer purposes exceed documented instructions and require revised role analysis",
-                    ],
-                    [
-                        "Illinois biometric identifiers proposed as monetizable training inventory",
-                        "BIPA section 15 includes collection requirements and covered monetization prohibitions",
-                        "Counsel classifies the information and tests applicable statutory coverage",
-                        "Proposed licensing profit depends on covered biometric identifiers or information",
-                    ],
-                    [
-                        "Health or screening datasets offered for regulated downstream decisions",
-                        "HIPAA disclosure rules and FCRA permissible purposes require separate analyses",
-                        "Counsel documents applicable sector status and analyst preserves supporting instruments",
-                        "Buyer proposes patient identification or screening outside supported permitted uses",
-                    ],
-                    [
-                        "Exclusive licensing terms restricting competitors, territories, or downstream prices",
-                        "Sherman Act sections 1 and 2 require context-specific competition review",
-                        "Counsel records market context, restraint purpose, and proposed narrower alternatives",
-                        "Term coordinates competitors or creates unsupported exclusion beyond licensed rights",
-                    ],
-                    [
-                        "Licensee royalty statements showing unexplained deductions or affiliate transfers",
-                        "Contract definitions and audit rights govern inspection and underpayment recovery",
-                        "Royalty accountant samples invoices and reconciles credits against the ledger",
-                        "Reported deductions lack contractual support or evidence of actual entitlement",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Freeze the rights and use specification",
-                    "action": "Record the asset version, recipient entities, territories, channels, and requested downstream uses.",
-                    "detail": "The rights analyst links title instruments and source permissions; the operator confirms that the specification matches the priced offer.",
-                },
-                {
-                    "step": 2,
-                    "title": "Resolve statutory and contract exceptions",
-                    "action": "Have counsel classify ownership, privacy, sector, competition, and territorial issues material to that specification.",
-                    "detail": "Record the disposition, required clause changes, and excluded uses; unresolved assets remain outside the signed schedule.",
-                },
-                {
-                    "step": 3,
-                    "title": "Test the reporting and payment mechanics",
-                    "action": "Run the accountant's standard-sale, bundle, advance-credit, and affiliate-transfer examples through the proposed royalty definitions.",
-                    "detail": "Reconcile earned fees, payment credits, deductions, and invoice timing without treating licensee product sales as operator revenue.",
-                },
-                {
-                    "step": 4,
-                    "title": "Activate the signed obligation register",
-                    "action": "Load reporting dates, quality inspections, audit windows, renewal notices, and termination duties into the deal register.",
-                    "detail": "The operator owns exceptions; the accountant owns statement reconciliation; the analyst maintains asset and permission versions.",
-                },
-            ],
-        },
-        {
-            "heading": "4. Use precise outreach and discovery scripts that never overstate rights",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Run outbound email as a documented commercial process under CAN-SPAM, "
-                    "15 U.S.C. § 7704. Business-to-business email is not categorically "
-                    "exempt. Use accurate routing information, a truthful subject, clear "
-                    "commercial identification where required, a valid physical postal "
-                    "address, and a working opt-out method. Keep that method operational "
-                    "for at least thirty days after transmission and honor qualifying "
-                    "opt-outs within ten business days. Do not charge for removal or "
-                    "require unnecessary information. Before using the following exact "
-                    "body, append the operator's actual postal address and functioning "
-                    "unsubscribe mechanism: 'Subject: Commercial licensing inquiry for "
-                    "your product team. This is a commercial licensing inquiry. We "
-                    "represent a documented portfolio available for defined commercial "
-                    "uses. May I send a nonconfidential summary showing the assets, "
-                    "territories, permitted uses, and proposed fee structure? A discussion "
-                    "does not authorize use or imply exclusivity. If this is outside your "
-                    "remit, a referral to the licensing owner would help. Reply stop to "
-                    "end these messages.' Use only when representation authority exists "
-                    "and reply-based removal is monitored. HubSpot or Pipedrive should "
-                    "store source, outreach basis, date, asset interest, and suppression "
-                    "status. Never infer permission to receive automated calls from a "
-                    "publicly displayed business email address."
-                ),
-                (
-                    "Use a discovery sequence that produces a draftable scope, not vague "
-                    "enthusiasm. Open with: 'Before we discuss rates, which legal entity "
-                    "would license the rights, where would it operate, and what would "
-                    "customers receive?' For patents, ask: 'Which products and manufacturing "
-                    "steps need coverage, and which countries involve making, selling, or "
-                    "importing?' For brands, ask: 'Which marks, goods, factories, channels, "
-                    "and sample-review process would you accept?' For catalogs, ask: "
-                    "'Which works, media, territories, languages, edits, and release dates "
-                    "are planned, and who clears separately controlled rights?' For "
-                    "datasets, ask: 'Will access support internal analytics, redistribution, "
-                    "model training, or individual-level decisions, and which affiliates "
-                    "or vendors will receive records?' Close with: 'Who can provide "
-                    "quarterly usage reports, approve an audit provision, and confirm "
-                    "the payment entity?' The operator records answers directly against "
-                    "the rights schedule rather than accepting a generic procurement "
-                    "description. Do not send confidential samples until the disclosure "
-                    "purpose, recipients, security controls, and applicable confidentiality "
-                    "terms are settled. An NDA protects specified disclosures; it does "
-                    "not repair missing title or grant downstream exploitation rights. "
-                    "Where a sample can reveal personal information or trade secrets, "
-                    "prefer synthetic examples or a cleared descriptive schema."
-                ),
-                (
-                    "Respond to overbroad requests without manufacturing authority: 'We can "
-                    "quote the documented rights in the attached schedule. Worldwide "
-                    "exclusivity, sublicensing, and training rights require separate "
-                    "confirmation; they are not included in this discussion.' For audit "
-                    "resistance, say: 'We can narrow inspection to records relevant to "
-                    "the licensed activity, protect confidential material, and use an "
-                    "independent accountant. We still need a reproducible royalty base "
-                    "and a remedy for material underpayment.' For an opt-out, reply: "
-                    "'Your address has been removed from our marketing outreach. We "
-                    "will retain only the suppression information needed to prevent "
-                    "further marketing messages.' Keep required contract administration "
-                    "separate from promotional follow-up. Before adding calls or texts, "
-                    "review 47 U.S.C. § 227 and 47 CFR § 64.1200 against the number "
-                    "type, technology, message purpose, applicable consent requirements, "
-                    "and federal or state restrictions. Do not assume a business "
-                    "relationship authorizes prerecorded marketing or that manual "
-                    "dialing eliminates every restriction. The full-time operator owns "
-                    "outbound accuracy; counsel reviews new channels, the analyst "
-                    "controls claim substantiation, and the accountant validates quoted "
-                    "economics. Keep the 6–24 month first-deal horizon visible: disciplined "
-                    "qualification protects the $12,000–$75,000 startup capital range "
-                    "better than unsupported promises intended to accelerate a signature."
-                ),
-            ],
-            "table": {
-                "caption": "Outreach and Discovery Scripts With Required Evidence and Stop Conditions",
-                "headers": [
-                    "Message or discovery situation requiring discipline",
-                    "Verbatim sentence the operator can use",
-                    "Required evidence before using the sentence",
-                    "Follow-through assigned within the existing pod",
-                ],
-                "rows": [
-                    [
-                        "Initial commercial introduction using a cleared portfolio summary",
-                        "May I send a nonconfidential summary of the documented licensing rights?",
-                        "Written representation authority and a cleared nonconfidential portfolio summary",
-                        "Operator appends actual postal address and working opt-out instructions",
-                    ],
-                    [
-                        "Patent prospect requesting broad protection across international product lines",
-                        "Which countries involve making, selling, importing, or using the covered products?",
-                        "Patent family schedule with jurisdiction and current status evidence",
-                        "Rights analyst maps requested activities for counsel's scope review",
-                    ],
-                    [
-                        "Brand prospect requesting immediate launch without product sample review",
-                        "Which factories and products will participate in the agreed quality-review process?",
-                        "Approved quality specifications and practical inspection and correction procedures",
-                        "Operator schedules review milestones before licensed branded production begins",
-                    ],
-                    [
-                        "Catalog buyer requesting adaptations and multiple distribution media",
-                        "Which works, edits, languages, territories, and distribution media require permission?",
-                        "Work-level rights inventory separating underlying works from their embodiments",
-                        "Rights analyst identifies separately controlled rights and missing permissions",
-                    ],
-                    [
-                        "Dataset buyer seeking training and onward distribution rights",
-                        "Will recipients train models, redistribute records, or make individual-level decisions?",
-                        "Source permissions supporting the specific requested downstream processing purposes",
-                        "Counsel resolves incompatible purposes before operator sends any binding offer",
-                    ],
-                    [
-                        "Recipient requesting removal from future commercial licensing messages",
-                        "Your address has been removed from our marketing outreach.",
-                        "Suppression change completed across active sequences and relevant sending systems",
-                        "Operator verifies suppression and limits retention to necessary removal records",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": "License only the rights you can prove, price only the uses you can measure, and collect only the fees your contract actually earns.",
-    "diagram_id": "diag-05",
-    "action_checklist": [
-        "Assign the one full-time operator and three contractors to commercial ownership, IP counsel, rights verification, and royalty accounting without creating additional standing roles.",
-        "Build four asset schedules covering patent field-of-use, brand, catalog, and permissioned dataset licensing, each linked to title instruments and prior grants.",
-        "Resolve territory, permitted-use, privacy, sector, and competition exceptions before promising exclusivity, sublicensing, training rights, or unrestricted redistribution.",
-        "Attach worked payment examples and negotiate scope, fee triggers, anti-circumvention, liability caps, dispute resolution, ownership, and surviving audit rights.",
-        "Activate reporting, quality-control, renewal, and notice reminders while reconciling the exact $50,000, $425,000, and $800,000 annual operator revenue cases.",
-        "Configure accurate commercial email identification, the actual postal address, monitored opt-outs, suppression records, and the four play-specific discovery scripts before outreach.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "35 U.S.C. § 261 — Ownership and assignment",
-            "url": "https://www.law.cornell.edu/uscode/text/35/261",
-            "relevance": "Requires written patent assignments and establishes recordation rules relevant to protection against specified later purchasers or mortgagees.",
-        },
-        {
-            "title": "35 U.S.C. § 262 — Joint owners",
-            "url": "https://www.law.cornell.edu/uscode/text/35/262",
-            "relevance": "Supplies default joint-owner exploitation rights that can defeat unsupported promises of patent exclusivity.",
-        },
-        {
-            "title": "15 U.S.C. § 1055 — Use by related companies",
-            "url": "https://www.law.cornell.edu/uscode/text/15/1055",
-            "relevance": "Addresses qualifying related-company trademark use; together with section 1127, supports attention to control over the nature and quality of licensed goods or services.",
-        },
-        {
-            "title": "15 U.S.C. § 1127 — Trademark definitions",
-            "url": "https://www.law.cornell.edu/uscode/text/15/1127",
-            "relevance": "Defines related company and abandonment, informing brand-license quality controls and monitoring procedures.",
-        },
-        {
-            "title": "17 U.S.C. § 106 — Exclusive rights in copyrighted works",
-            "url": "https://www.law.cornell.edu/uscode/text/17/106",
-            "relevance": "Identifies the distinct rights that catalog schedules must allocate by work, medium, territory, and proposed use.",
-        },
-        {
-            "title": "17 U.S.C. § 204 — Execution of transfers of copyright ownership",
-            "url": "https://www.law.cornell.edu/uscode/text/17/204",
-            "relevance": "Requires a signed writing for covered copyright ownership transfers, including exclusive licenses.",
-        },
-        {
-            "title": "17 U.S.C. § 203 — Termination of transfers and licenses",
-            "url": "https://www.law.cornell.edu/uscode/text/17/203",
-            "relevance": "Creates statutory termination rights for qualifying author grants, requiring catalog duration and chain-of-title review.",
-        },
-        {
-            "title": "17 U.S.C. § 304 — Duration and termination provisions for specified copyrights",
-            "url": "https://www.law.cornell.edu/uscode/text/17/304",
-            "relevance": "Adds termination analysis for qualifying older works and grants within covered statutory periods.",
-        },
-        {
-            "title": "17 U.S.C. § 1201 — Circumvention of copyright protection systems",
-            "url": "https://www.law.cornell.edu/uscode/text/17/1201",
-            "relevance": "Addresses technological protection measures separately from negotiated commercial anti-circumvention covenants.",
-        },
-        {
-            "title": "18 U.S.C. § 1839 — Trade secret definitions",
-            "url": "https://www.law.cornell.edu/uscode/text/18/1839",
-            "relevance": "Connects trade secret status to reasonable secrecy measures and independent economic value from secrecy.",
-        },
-        {
-            "title": "15 U.S.C. § 1 — Agreements in restraint of trade",
-            "url": "https://www.law.cornell.edu/uscode/text/15/1",
-            "relevance": "Requires competition analysis of licensing restraints, including potentially anticompetitive coordination and market allocation.",
-        },
-        {
-            "title": "15 U.S.C. § 2 — Monopolization",
-            "url": "https://www.law.cornell.edu/uscode/text/15/2",
-            "relevance": "Informs review of exclusionary licensing conduct in its actual market context.",
-        },
-        {
-            "title": "California Civil Code § 1798.100 — Consumer information duties",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1798.100.",
-            "relevance": "Establishes covered notice, purpose, security, and recipient-contract duties relevant to personal-information licensing.",
-        },
-        {
-            "title": "California Civil Code § 1798.140 — Privacy definitions",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1798.140.",
-            "relevance": "Defines business, service provider, contractor, sale, sharing, and other terms essential to dataset recipient classification.",
-        },
-        {
-            "title": "Virginia Code § 59.1-575 — Consumer data protection definitions",
-            "url": "https://law.lis.virginia.gov/vacode/title59.1/chapter53/section59.1-575/",
-            "relevance": "Defines controller, processor, personal data, and related concepts used to classify dataset transactions.",
-        },
-        {
-            "title": "Virginia Code § 59.1-579 — Processor responsibilities",
-            "url": "https://law.lis.virginia.gov/vacode/title59.1/chapter53/section59.1-579/",
-            "relevance": "Establishes applicable controller-processor contract requirements and assistance duties.",
-        },
-        {
-            "title": "740 ILCS 14/15 — Biometric information retention, collection, disclosure, and destruction",
-            "url": "https://www.ilga.gov/legislation/ilcs/documents/074000140K15.htm",
-            "relevance": "Sets covered biometric duties and prohibits specified sale, lease, trade, and other profiting from protected biometric material.",
-        },
-        {
-            "title": "45 CFR § 164.514 — Other requirements relating to uses and disclosures",
-            "url": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-E/section-164.514",
-            "relevance": "Provides HIPAA de-identification standards and limited-data-set conditions relevant to health dataset permissions.",
-        },
-        {
-            "title": "15 U.S.C. § 1681b — Permissible purposes of consumer reports",
-            "url": "https://www.law.cornell.edu/uscode/text/15/1681b",
-            "relevance": "Restricts permissible furnishing and use of covered consumer reports, including screening-related dataset applications.",
-        },
-        {
-            "title": "9 U.S.C. § 2 — Validity and enforcement of arbitration agreements",
-            "url": "https://www.law.cornell.edu/uscode/text/9/2",
-            "relevance": "Governs covered written arbitration provisions subject to applicable legal defenses and exceptions.",
-        },
-        {
-            "title": "11 U.S.C. § 365(n) — Intellectual property licensee rights",
-            "url": "https://www.law.cornell.edu/uscode/text/11/365",
-            "relevance": "Provides specified elections for licensees of defined intellectual property when a debtor licensor rejects an executory contract.",
-        },
-        {
-            "title": "11 U.S.C. § 101(35A) — Intellectual property definition",
-            "url": "https://www.law.cornell.edu/uscode/text/11/101",
-            "relevance": "Defines the IP categories relevant to section 365(n); trademarks are not expressly included in that definition.",
-        },
-        {
-            "title": "FAR 52.227-11 — Patent Rights: Ownership by the Contractor",
-            "url": "https://www.acquisition.gov/far/52.227-11",
-            "relevance": "Illustrates award-specific government rights and contractor duties requiring review before exclusive licensing of subject inventions.",
-        },
-        {
-            "title": "15 U.S.C. § 7704 — Commercial electronic mail requirements",
-            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
-            "relevance": "Establishes commercial email requirements involving headers, subject lines, identification, postal addresses, opt-outs, and suppression timing.",
-        },
-        {
-            "title": "47 U.S.C. § 227 — Restrictions on telephone equipment use",
-            "url": "https://www.law.cornell.edu/uscode/text/47/227",
-            "relevance": "Requires channel-specific analysis before prospecting through covered calls, prerecorded messages, or texts.",
-        },
-        {
-            "title": "47 CFR § 64.1200 — Delivery restrictions",
-            "url": "https://www.ecfr.gov/current/title-47/chapter-I/subchapter-B/part-64/subpart-L/section-64.1200",
-            "relevance": "Supplies detailed federal telephone solicitation and consent rules relevant to proposed outreach technology and recipient numbers.",
-        },
-    ],
-}
+CHAPTER_9 = {'id': 'Q9',
+ 'chapter_id': 'Q9',
+ 'chapter_number': 9,
+ 'question_number': 9,
+ 'slug': 'clear-permissions-and-address-infringement',
+ 'question_prompt': 'How do I distinguish permitted use from infringement, obtain image permissions and '
+                    'understand the options for enforcing IP rights?',
+ 'kicker': 'Q9 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Clear Permissions and Address Infringement',
+ 'subtitle': 'Patent infringement, defenses and design-arounds; unauthorized sellers, compulsory '
+             'licensing, photography ownership, image licenses, registration and fair use',
+ 'layout_template': 'tool_resource_directory',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Photographers, IP litigators and patent analysts converge on one rule: without '
+                      'written permission or a license there is no right to use, and only the claims '
+                      "define a patent. Matthew Anderson says photographers keep copyright in '90 some "
+                      "percent' of client jobs. freeCodeCamp and DesignLab route users to CC0, Pixabay, "
+                      "Unsplash and CCSearch. Barbara Aboagye's ScienceDirect 'get rights and content' "
+                      'flow cleared a journal figure at a zero-fee quote. The ASMP speaker at B&H '
+                      'registers about 1,500 images for $35 with roughly six-week turnaround, because '
+                      'registering before infringement unlocks statutory damages of $750 to $150,000 per '
+                      'work, a range Visme repeats. Torys LLP warns that platforms remove listings but '
+                      'rarely do more, which turns cross-border enforcement into whack-a-mole. LawShelf '
+                      'puts willful patent infringement at up to 3x damages. Speakers split on how far '
+                      'fair use can be trusted versus simply creating original content.',
+ 'key_metrics': [{'label': 'Statutory damages per registered work',
+                  'metric': 'Statutory damages per registered work',
+                  'value': '$750 minimum, up to $150,000 per work',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Penalty range Visme cites for infringing a work registered with the US '
+                             'Copyright Office; the B&H ASMP speaker gives the same $750 to $150,000 '
+                             'per-infringement range.',
+                  'source': 'Visme ([ShCyD9TYhLY @ 00:00:18])'},
+                 {'label': 'Batch copyright registration cost and turnaround',
+                  'metric': 'Batch copyright registration cost and turnaround',
+                  'value': 'About 1,500 images for $35; about 6 weeks, or about $700 to expedite',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Registration economics from the ASMP speaker: fill out the form, pay, and '
+                             'send a deposit, which can be 600-pixel JPEGs.',
+                  'source': 'B&H Photo Video Pro Audio ([74bQUodJbWY @ 01:16:43])'},
+                 {'label': 'Share of client jobs where photographer keeps copyright',
+                  'metric': 'Share of client jobs where photographer keeps copyright',
+                  'value': "'90 some percent' of cases",
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Anderson's estimate of how often the photographer, not the paying client, "
+                             'retains copyright; clients cannot pass images to third parties, contests or '
+                             'editorials.',
+                  'source': 'Matthew Anderson ([manKMR61ho0 @ 00:02:57])'},
+                 {'label': 'Willful patent infringement multiplier',
+                  'metric': 'Willful patent infringement multiplier',
+                  'value': 'Up to 3x damages',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "LawShelf's remedies breakdown: at least a reasonable royalty "
+                             '(Georgia-Pacific factors) or lost profits, enhanced up to 3x for '
+                             "willfulness, with attorney's fees in exceptional cases.",
+                  'source': 'LawShelf ([WtxlYb996kI @ 00:14:33])'}],
+ 'sections': [{'heading': 'Section 1: The Practitioner Consensus',
+               'paragraphs': ['Across the photo-licensing and image-reuse camp, the baseline is identical: '
+                              'nothing found online is free by default. freeCodeCamp Concepts states every '
+                              "image starts at 'all rights reserved' and lists only three lawful ways in: "
+                              'written permission, a purchased license, or narrow, transformative fair use '
+                              'such as commentary, review or parody [grui-CD6Uck @ 00:00:18]. Visme '
+                              'hammers the same point, telling creators to stop copy-pasting from Google '
+                              "Images into projects because 'permission is the key word here' [ShCyD9TYhLY "
+                              '@ 00:01:33]. Matthew Anderson frames his master test as a single question, '
+                              'whether there is clear written permission from the original photographer. '
+                              "He calls the belief that anything on social media is usable '100 wrong' and "
+                              'adds that a missing watermark does not mean free [manKMR61ho0 @ 00:06:31]. '
+                              'On the commissioning side, Anderson says that unless a contract explicitly '
+                              'transfers copyright, the paying client does not own the images. The client '
+                              'holds a license for social, website, blog and promotional use and cannot '
+                              'hand the files to other companies, even companies willing to pay '
+                              '[-267ABEXf8o @ 00:00:41]. The same logic covers subjects inside a frame: '
+                              'owning the product in a photo confers no rights in the photo itself. '
+                              'Coca-Cola cannot use a kitchen shot that shows its can, and Delta needs '
+                              'permission for an image featuring its faucet.',
+                              'On the patent side, every speaker who walks through an infringement '
+                              'analysis lands on the same rule: only the claims matter. Dylan Adams of '
+                              'Patents Demystified says protection is defined by the claims, not the '
+                              'drawings or description. The comparison runs element by element against an '
+                              'actual product, and the plaintiff must prove every element of at least one '
+                              'claim [9hTMXJtONtM @ 00:07:59]. CIONCA IP demonstrates this with building '
+                              'blocks. A claim where two of three elements match and one part is swapped '
+                              '(a bearing in place of a gear) is not infringed. A claim missing one of '
+                              'four elements is not infringed. A claim with every element present is '
+                              'infringed, and one infringed claim means the patent is infringed '
+                              '[kRlS4inO95k @ 00:05:25]. Patent Insanity builds its whole design-around '
+                              'method on the same foundation, telling engineering teams to analyse the '
+                              'claims only and map every limitation of each claim onto their own product '
+                              '[Jwz-iMwUtCU @ 00:01:17]. Patent Attorney Worldwide reduces it to a thesis '
+                              "that claim quality decides everything: 'A badly written claim can make an "
+                              "amazing invention totally worthless' [D-Am1gpuzaw @ 00:04:56]. The "
+                              'prohibited acts are consistent across these speakers: making, using, '
+                              "selling and importing, with encouraging someone else's infringement "
+                              'creating liability too.',
+                              'The third point of agreement is that rights only pay off when they are set '
+                              'up for enforcement before trouble starts. Torys LLP opens its '
+                              'unauthorized-seller playbook by mapping where you hold rights, where the '
+                              'infringing activity happens and who the infringer is, because IP rights are '
+                              'jurisdictional. A Canadian patent can still be asserted against a foreign '
+                              'vendor that is selling into Canada [ijF0IyvjXXg @ 00:00:36]. Adams agrees '
+                              'that protection is territorial and expressly reaches importing [9hTMXJtONtM '
+                              "@ 00:06:55]. In copyright, the ASMP speaker at B&H is blunt: 'you must "
+                              "register before an infringement to have the full protection of copyright.' "
+                              'Registration is required before suing in federal court, and it unlocks '
+                              'statutory damages, attorney fees and real payment leverage when chasing an '
+                              'infringer [74bQUodJbWY @ 01:19:44]. Derek Fahey makes the same case. '
+                              'Copyright exists the moment a work is fixed, but registration is what opens '
+                              'access to statutory, enhanced damages. He also warns that a design patent '
+                              'must be filed within one year of first U.S. disclosure, or the rights are '
+                              'lost [nLSthuXQCL4 @ 00:01:10]. The shared message for operators is that '
+                              'unregistered, unmapped or late-filed rights leave an owner chasing '
+                              'infringers with almost no leverage, however strong the underlying work or '
+                              'invention is.'],
+               'table': {'caption': 'Consensus rules every operator should lock in before using or '
+                                    'enforcing IP',
+                         'headers': ['Consensus Principle',
+                                     'What Practitioners Say',
+                                     'Operator Implication',
+                                     'Expert Source'],
+                         'rows': [['Default image status is all rights reserved',
+                                   'Every image starts locked; lawful use needs written permission, a '
+                                   'purchased license, or fair use',
+                                   'Treat every unlabeled online image as unusable until a license route '
+                                   'is documented',
+                                   'freeCodeCamp Concepts ([grui-CD6Uck @ 00:00:18])'],
+                                  ['Paying client does not own commissioned photos',
+                                   'Without an explicit written transfer, the client only licenses social, '
+                                   'website, blog and promotional use',
+                                   'Write the copyright transfer or exact usage scope into the contract '
+                                   'before the shoot',
+                                   'Matthew Anderson ([-267ABEXf8o @ 00:00:41])'],
+                                  ['Social media posts and unwatermarked images are not free',
+                                   "Anderson calls 'anything on social media is usable' 100 wrong; no "
+                                   'watermark changes nothing',
+                                   'Get clear written permission from the original photographer for every '
+                                   'reposted image',
+                                   'Matthew Anderson ([manKMR61ho0 @ 00:06:31])'],
+                                  ['Permission is the key word for copyrighted photos',
+                                   'Copy-pasting from Google Images risks a hefty fine or, even worse, a '
+                                   'lawsuit',
+                                   'Replace ad-hoc image grabs with licensed, Creative Commons, public '
+                                   'domain or self-made assets',
+                                   'Visme ([ShCyD9TYhLY @ 00:01:33])'],
+                                  ['Only patent claims define the protected territory',
+                                   'Drawings and description do not count; compare the actual product '
+                                   'element by element',
+                                   'Run every infringement or clearance check against the issued claims, '
+                                   'never the specification',
+                                   'Patents Demystified ([9hTMXJtONtM @ 00:07:59])'],
+                                  ['All elements of one claim must be present',
+                                   'A claim missing one element is not infringed; one fully matched claim '
+                                   'infringes the patent',
+                                   'Find a single claim where every element maps before sending any demand '
+                                   'letter',
+                                   'CIONCA IP ([kRlS4inO95k @ 00:06:11])'],
+                                  ['IP rights are jurisdictional and must be mapped',
+                                   'First map where rights exist, where the infringement happens and who '
+                                   'the infringer is',
+                                   'Build a rights-versus-activity map for each country before targeting '
+                                   'any foreign seller',
+                                   'Torys LLP ([ijF0IyvjXXg @ 00:00:36])']]}},
+              {'heading': 'Section 2: Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['To clear a figure from a research paper, Barbara Aboagye walks through a '
+                              'concrete workflow. Grab the DOI or title and Google it, then on '
+                              "ScienceDirect click 'get rights and content' [SK5CqQ61CYI @ 00:00:41]. From "
+                              'there she selects the reuse type (journal, magazine or thesis), selects '
+                              'academic and confirms the publisher. In her example, Cement and Concrete '
+                              'Research routes to Elsevier. She specifies a figure, the number of figures, '
+                              'electronic format, not author and not translating. She then picks a '
+                              'currency to reveal the fee, which shows as free, paid or special case. Her '
+                              'quote came back at zero, though it is flagged as an estimate that may '
+                              'change [SK5CqQ61CYI @ 00:03:00]. She finishes by entering a reference '
+                              'number, identifying the figure, entering her name and accepting the terms, '
+                              'then printing the license and submitting it to the journal. For zero-fee '
+                              'sourcing, freeCodeCamp Concepts points to search-engine license filters, '
+                              'Pixabay and Unsplash, and notes that public domain and CC0 works carry no '
+                              "restrictions [grui-CD6Uck @ 00:01:30]. DesignLab UW-Madison calls CC0 'our "
+                              "best friend' because commercial use is allowed without permission, and "
+                              'sends users to CCSearch filters. DesignLab also warns that Creative Commons '
+                              'licenses combine Attribution, Non-commercial, Non-derivative and Share '
+                              'Alike terms, so read the full combination before publishing [mGWJAAFhtRk @ '
+                              '00:01:00].',
+                              'The ASMP speaker at B&H lays out the registration routine: fill out the '
+                              'form, pay and send a deposit, and deposits can be 600-pixel JPEGs '
+                              '[74bQUodJbWY @ 01:16:43]. Separate published from unpublished work, lean '
+                              'toward treating work as published, and register before delivering to '
+                              'clients. There is a 3-month window after publication [74bQUodJbWY @ '
+                              '01:20:24]. The numbers quoted are roughly 1,500 images for $35 and about 6 '
+                              "weeks of turnaround, or about $700 to expedite. The same speaker's "
+                              'monitoring and proof stack includes the free PLUS Registry, metadata '
+                              'practice via dpBestflow, TinEye, Google Images, PicScout, PhotoShelter and '
+                              'DMCA takedown letters modeled on Plagiarism Today. The payoff is the '
+                              'damages range. Visme puts infringement of a registered work at a minimum of '
+                              '$750 and up to $150,000 per work [ShCyD9TYhLY @ 00:00:18], which matches '
+                              'the $750-to-$150,000-per-infringement figure from the B&H speaker. Anderson '
+                              "prices the infringer's downside at 'hundreds if not thousands… tens of "
+                              "thousands.' He stresses that taking the image down afterward does not cure "
+                              'the infringement, and that getting defensive or ignoring the claim '
+                              'backfires [manKMR61ho0 @ 00:11:29]. He prices his own licenses by scope, '
+                              'comparing a 15-employee software license with an enterprise one, and a '
+                              'roughly $1 personal song purchase with a national TV ad.',
+                              'Against marketplace sellers, Torys LLP says platforms will usually claim '
+                              'they are not the seller. On notice, they either forward the complaint to '
+                              "the vendor or remove the listing under their terms, but are 'unlikely to do "
+                              "much more' [ijF0IyvjXXg @ 00:01:20]. Trademark claims move faster than "
+                              'patent claims because the platform is arguably advertising and proof is '
+                              'often just the registration. To unmask the real seller, start with the '
+                              'platform itself, then use corporate searches, domain name lookups or an '
+                              'investigator [ijF0IyvjXXg @ 00:05:39]. For US patent litigation, LawShelf '
+                              'maps the sequence. After TC Heartland (2017), venue is limited to the state '
+                              'of incorporation, or to where acts of infringement occurred plus a regular '
+                              'and established place of business. Next come claim charts setting each '
+                              'element against the evidence, then Markman hearings, up to 10 depositions '
+                              'per party, a jury trial and a Federal Circuit appeal [WtxlYb996kI @ '
+                              '00:06:01]. Remedies start at a reasonable royalty under the Georgia-Pacific '
+                              'factors or lost profits, run up to 3x for willful infringement, and add '
+                              "attorney's fees in exceptional cases. On defense, Patent Attorney Worldwide "
+                              'says the strongest move is invalidity through a prior-art validity search '
+                              "covering papers, old products or 'even a YouTube video' [D-Am1gpuzaw @ "
+                              '00:03:41].'],
+               'table': {'caption': 'Street-level tools, workflows and numbers for clearing and enforcing '
+                                    'IP',
+                         'headers': ['Mechanic or Tool',
+                                     'Exact Steps or Numbers',
+                                     'How Operators Use It',
+                                     'Expert Source'],
+                         'rows': [["ScienceDirect 'get rights and content' permission request",
+                                   'DOI or title, reuse type, academic, figure count, electronic format, '
+                                   'currency fee quote',
+                                   'Clear journal figures, then print the license for the journal '
+                                   'submission',
+                                   'Barbara “Financial Tidbitter” Aboagye ([SK5CqQ61CYI @ 00:01:03])'],
+                                  ['Batch copyright registration with a JPEG deposit',
+                                   'About 1,500 images for $35, roughly 6 weeks, about $700 to expedite',
+                                   'Register batches before client delivery to lock in statutory damages '
+                                   'and fee recovery',
+                                   'B&H Photo Video Pro Audio ([74bQUodJbWY @ 01:16:43])'],
+                                  ['Statutory damages range for registered works',
+                                   '$750 minimum, up to $150,000 for each registered work infringed',
+                                   'Use the range as payment leverage when demanding license fees from '
+                                   'infringers',
+                                   'Visme ([ShCyD9TYhLY @ 00:00:38])'],
+                                  ['Free-source license filters and CC0 databases',
+                                   'Search-engine license filters, Pixabay, Unsplash, CCSearch and '
+                                   'DesignLab databases',
+                                   'Pull commercial-safe visuals with zero permission requests when the '
+                                   'work is CC0',
+                                   'DesignLab UW-Madison ([mGWJAAFhtRk @ 00:01:19])'],
+                                  ['Image monitoring and registry stack',
+                                   'Free PLUS Registry, TinEye, Google Images, PicScout, PhotoShelter, '
+                                   'dpBestflow metadata',
+                                   'Track where your images appear online and back up DMCA takedown '
+                                   'letters',
+                                   'B&H Photo Video Pro Audio ([74bQUodJbWY @ 00:38:48])'],
+                                  ['Platform notice against an unauthorized online seller',
+                                   'Notice gets the listing removed or forwarded; a trademark registration '
+                                   'is often enough proof',
+                                   'Lead with trademark claims, then unmask the seller through platform, '
+                                   'corporate and domain searches',
+                                   'Torys LLP ([ijF0IyvjXXg @ 00:05:39])'],
+                                  ['Patent damages ladder in US litigation',
+                                   'Reasonable royalty via Georgia-Pacific or lost profits; up to 3x for '
+                                   'willful infringement',
+                                   'Size the claim and push willfulness evidence, such as evidence of '
+                                   'copying, during discovery',
+                                   'LawShelf ([WtxlYb996kI @ 00:14:33])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Moves the practitioners use to turn rights into leverage',
+                           'body': 'Small timing and scoping decisions decide whether an owner collects or '
+                                   'walks away empty-handed.',
+                           'items': ['Register before you deliver files to a client, because registration '
+                                     'has to come before the infringement to unlock full protection, '
+                                     'statutory damages and attorney fees [B&H Photo Video Pro Audio — '
+                                     '74bQUodJbWY @ 01:19:44]',
+                                     'If you are caught using an image, pulling it down does not cure the '
+                                     'infringement; do not get defensive or ignore the claim, since costs '
+                                     'can run into the tens of thousands [Matthew Anderson — manKMR61ho0 @ '
+                                     '00:11:29]',
+                                     'For music, cap any clip at 10 to 15 seconds and never use the whole '
+                                     'song; the better play is to skip copyrighted songs and use '
+                                     'royalty-free sound [DesignLab UW-Madison — mGWJAAFhtRk @ 00:02:58]',
+                                     'When designing around a patent, clear every independent claim, '
+                                     'including method claims, since patents usually carry at least three; '
+                                     'clearing them all also covers the dependent claims [Patent Insanity '
+                                     '— Jwz-iMwUtCU @ 00:07:47]']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Map rights, territory and target',
+                              'action': 'List where you hold rights, where the infringing activity '
+                                        'happens, and who the true seller is.',
+                              'detail': 'Treat IP as jurisdictional, assert local rights against foreign '
+                                        'vendors selling into your market, and identify the seller through '
+                                        'the platform, corporate searches, domain lookups or an '
+                                        'investigator [Torys LLP — ijF0IyvjXXg @ 00:00:36].'},
+                             {'step': 2,
+                              'title': 'Classify the asset and pick a license route',
+                              'action': 'Decide whether the use is commercial, non-commercial or fair use, '
+                                        'then choose permission, a paid license, CC or public domain.',
+                              'detail': 'Monetized social media, blogs, brochures and newsletters count as '
+                                        'commercial use, while classrooms and nonprofits count as '
+                                        'non-commercial; fair use is unclear and ultimately decided in '
+                                        'court [Visme — ShCyD9TYhLY @ 00:04:27].'},
+                             {'step': 3,
+                              'title': 'Request and document permission',
+                              'action': "Run the publisher's rights request, confirm the fee quote, and "
+                                        'keep the issued license on file.',
+                              'detail': "Use ScienceDirect's 'get rights and content', specify the figure, "
+                                        'format and reuse type, accept the terms, then print the license '
+                                        'and submit it to the journal [Barbara “Financial Tidbitter” '
+                                        'Aboagye — SK5CqQ61CYI @ 00:04:52].'},
+                             {'step': 4,
+                              'title': 'Register, monitor and enforce',
+                              'action': 'Register work in batches, monitor where it appears with '
+                                        'reverse-image tools, and send DMCA letters or license demands.',
+                              'detail': 'Registration is required before suing in federal court and '
+                                        'unlocks statutory damages, attorney fees and payment leverage; '
+                                        'about 1,500 images can be registered for $35 [B&H Photo Video Pro '
+                                        'Audio — 74bQUodJbWY @ 01:12:41].'}]},
+              {'heading': 'Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['On stopping an unauthorized seller, the practitioners split between the '
+                              'platform lever and the courtroom lever. Torys LLP works the notice route: a '
+                              'platform served with a complaint may forward it to the vendor or pull the '
+                              'listing, but it is “unlikely to do much more,” and trademark claims move '
+                              'faster than patent claims because the platform is “arguably advertising” '
+                              'and proof is often just the registration [ijF0IyvjXXg @ 00:05:39]. LawShelf '
+                              'maps the heavy alternative: federal court or the ITC, venue limited after '
+                              'TC Heartland (2017), claim charts, a Markman hearing, up to 10 depositions '
+                              'per party, a jury trial and a Federal Circuit appeal that can take years, '
+                              'by which point the technology may be outdated [WtxlYb996kI @ 00:07:35]. '
+                              'CIONCA IP frames the endgame as a fork rather than a shutdown: once a '
+                              'single claim reads on the product, the owner can recover damages or '
+                              'negotiate a license carrying a royalty fee [kRlS4inO95k @ 00:06:11]. The '
+                              'Alliance for Patient Access pushes the licensing branch hardest, arguing '
+                              'that voluntary licensing, where patent holders partner with other companies '
+                              'and share manufacturing expertise, beats regulator-forced compulsory '
+                              'licensing that lets copies in before the patent expires [5RtieTL1OqM @ '
+                              '00:01:55]. The operator choice is speed and low cost on the platform side '
+                              'versus leverage and years of exposure in court.',
+                              'Accused infringers get conflicting advice on where to fight. Patent '
+                              'Attorney Worldwide calls invalidity the strongest move, running a validity '
+                              'search for prior art that can be papers, old products, or “even a YouTube '
+                              'video” [D-Am1gpuzaw @ 00:03:41]. LawShelf adds the price of that route: '
+                              'non-infringement is proven by a preponderance, but invalidity demands clear '
+                              'and convincing evidence, and claim construction strategy flips depending on '
+                              'the fight, with the patentee pushing narrow constructions when validity is '
+                              'at risk and the accused infringer pushing broad ones [WtxlYb996kI @ '
+                              '00:12:05]. Patent Insanity skips the courtroom and teaches designing '
+                              'around: read only the claims, drop an unnecessary limitation, or substitute '
+                              'something else, but warns that if the substitute performs the same function '
+                              '“you may have a problem,” and that courts may differ on equivalence, so '
+                              '“proceed cautiously” [Jwz-iMwUtCU @ 00:04:53]. Sinorbit Academy shows why '
+                              'that warning bites across borders: the UK line ran from literalism through '
+                              'Catnik, where 6 to 8 degrees off vertical still infringed, to Kirin-Amgen '
+                              'rejecting a doctrine of equivalence, then Actavis v Lilly (2017) bringing a '
+                              'two-stage test that needs yes/yes/no answers, while revocation stays open '
+                              'to any person without standing as the “knockout blow” [-uT7bPngmNc @ '
+                              '00:54:16].',
+                              'On copyright clearance, the split is between leaning on fair use and '
+                              'refusing to touch it. freeCodeCamp Concepts lists fair use as one of three '
+                              'lawful routes alongside written permission and a purchased license, limited '
+                              'to transformative uses such as commentary, review, or parody [grui-CD6Uck @ '
+                              '00:00:18]. Visme stretches it to educational, research, or personal use '
+                              'like a phone background or an office presentation, then hedges that it is '
+                              "“still not 100% clear what is fair use and what isn't and ultimately can "
+                              'only be decided in the courtroom,” and that profiting combined with bad '
+                              'faith is likely not fair use [ShCyD9TYhLY @ 00:05:17]. DesignLab UW-Madison '
+                              'draws a hard line on music, capping a Taylor Swift clip at 10 to 15 seconds '
+                              'and saying it is best to avoid copyrighted songs altogether, steering '
+                              'creators instead to CC0, “our best friend,” and royalty-free sound '
+                              '[mGWJAAFhtRk @ 00:03:17]. The B&H Photo Video ASMP speaker kills the '
+                              'percentage shortcut outright: there is no safe percentage, and fair use is '
+                              'a defense you can only claim after actually infringing on a work '
+                              "[74bQUodJbWY @ 00:20:18]. Visme's closing play is the zero-risk alternative "
+                              'that sidesteps the entire argument: create your own content.'],
+               'table': {'caption': 'Competing playbooks for enforcement, defense, and clearance',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Stopping an unauthorized online seller fast',
+                                   'Serve platform notice; trademark claims move fastest on registration '
+                                   'proof',
+                                   'File federal suit with claim charts, Markman hearing, depositions, '
+                                   'jury trial',
+                                   'Torys LLP ([ijF0IyvjXXg @ 00:05:39]); LawShelf ([WtxlYb996kI @ '
+                                   '00:02:36])'],
+                                  ['Monetizing a proven patent infringement against a product',
+                                   'Recover damages once any single claim reads on the product',
+                                   'Negotiate a license with a royalty fee instead of litigating',
+                                   'CIONCA IP ([kRlS4inO95k @ 00:06:11])'],
+                                  ['Sharing patented technology with other manufacturers abroad',
+                                   'Voluntary licensing partnerships that share manufacturing expertise '
+                                   'and know-how',
+                                   'Regulator-forced compulsory licensing that lets copies in before '
+                                   'patent expiry',
+                                   'Alliance for Patient Access ([5RtieTL1OqM @ 00:01:55])'],
+                                  ['Best defense when accused of patent infringement',
+                                   'Attack validity with a prior art search, even YouTube videos',
+                                   'Argue non-infringement at the lower preponderance burden of proof',
+                                   'Patent Attorney Worldwide ([D-Am1gpuzaw @ 00:03:41]); LawShelf '
+                                   '([WtxlYb996kI @ 00:12:05])'],
+                                  ['Handling equivalence exposure when designing around a claim',
+                                   'Eliminate an unnecessary limitation so nothing performs that claimed '
+                                   'function',
+                                   'Replace the element, accepting risk if it performs the same function',
+                                   'Patent Insanity ([Jwz-iMwUtCU @ 00:02:20])'],
+                                  ['Using third-party images, clips, and music in content',
+                                   'Rely on limited, transformative fair use for commentary, review, '
+                                   'parody',
+                                   'Avoid fair use entirely; use CC0, free stock, or own content',
+                                   'freeCodeCamp Concepts ([grui-CD6Uck @ 00:00:18]); Visme ([ShCyD9TYhLY '
+                                   '@ 00:06:10])'],
+                                  ['Protecting a decorative design such as a wallpaper pattern',
+                                   'Design patent: no copying proof needed, but file within one year',
+                                   'Copyright: exists on fixation, register later to unlock statutory '
+                                   'damages',
+                                   'Derek Fahey, Esq. ([nLSthuXQCL4 @ 00:01:27])']]}},
+              {'heading': 'Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The enforcement traps start with jurisdiction and resale. Torys LLP warns '
+                              'that a foreign vendor with no Canadian presence is hard to enforce against, '
+                              'and that knocking one listing down usually just pushes the seller to '
+                              'another platform: “it can become a bit of a game of whack-a-mole to try to '
+                              'stop a foreign vendor” [ijF0IyvjXXg @ 00:02:09]. The same team flags two '
+                              'dead ends that burn budget: exhaustion means the first authorized sale ends '
+                              "the patentee's control unless limits were “clearly and unambiguously "
+                              'expressed” to the purchaser, and reselling genuine trademarked gray goods '
+                              'is not infringement at all, so only counterfeits support passing off and '
+                              'depreciation of goodwill claims [ijF0IyvjXXg @ 00:04:08]. LawShelf adds the '
+                              'remedy trap for non-practicing owners: non-competitors and NPEs are '
+                              'generally denied injunctions, leaving a reasonable royalty under the '
+                              'Georgia-Pacific factors or lost profits, with up to 3x damages reserved for '
+                              "willful infringement and attorney's fees only in exceptional cases "
+                              '[WtxlYb996kI @ 00:14:33]. Patents Demystified (Dylan Adams) closes another '
+                              'hole that sinks software claims: server-side features create '
+                              '“discoverability issues,” and the plaintiff still has to prove every '
+                              'element of at least one claim against the actual product, so a hunch about '
+                              'hidden code does not get a case off the ground [9hTMXJtONtM @ 00:08:42].',
+                              'Timing kills more claims than bad facts. Derek Fahey, Esq. warns that a '
+                              'design patent must be filed within one year of first U.S. disclosure or the '
+                              'rights are lost, while copyright exists on fixation but only registration '
+                              'opens statutory, “enhanced” damages [nLSthuXQCL4 @ 00:00:33]. The B&H Photo '
+                              'Video ASMP speaker makes the sequencing explicit: “you must register before '
+                              'an infringement to have the full protection of copyright,” with a 3-month '
+                              'window after publication, registration required before suing in federal '
+                              'court, and statutory damages plus attorney fees acting as payment leverage '
+                              '[74bQUodJbWY @ 01:19:44]. The economics check is lopsided in the '
+                              "registrant's favor: roughly 1,500 images for $35, deposits as 600-pixel "
+                              'JPEGs, about 6 weeks turnaround or about $700 to expedite, set against '
+                              'damages of $750 to $150,000 per infringement. Visme runs the same numbers '
+                              'from the user side, warning that a copy and paste “that took you 15 '
+                              'seconds” can end up “costing you your paycheck Mortgage business or worse,” '
+                              'at minimum $750 and up to $150,000 per registered work [ShCyD9TYhLY @ '
+                              '00:00:38]. Sinorbit Academy notes the UK twist: intention is irrelevant to '
+                              'liability under Proctor v Bennis, but objective innocence can limit damages '
+                              'under s.62, and s.69 lets damages reach back to publication [-uT7bPngmNc @ '
+                              '00:09:16].',
+                              'The image-licensing failures are mostly ownership myths. Matthew Anderson '
+                              'states the default bluntly: “unless it has been explicitly written in a '
+                              'contract or agreement that copyright ownership has been transferred to you '
+                              'by default you do not own the images,” so a client licensed for social, '
+                              'website, and blog use cannot hand files to another company even if that '
+                              'company would pay [-267ABEXf8o @ 00:00:41]. In Photo Licensing 101 he lists '
+                              'the myths that trigger claims: “anything on social media is usable” is “100 '
+                              'wrong,” no watermark does not mean free, the brand in the frame gets no '
+                              'rights, and taking an image down afterward does not cure the infringement, '
+                              'with costs running hundreds if not thousands to tens of thousands, so never '
+                              'get defensive or ignore the claim [manKMR61ho0 @ 00:11:29]. Visme adds that '
+                              'an Instagram photo is not public domain and that embedding a tweet on a '
+                              'website or using it in ads risks trouble, even though retweeting to your '
+                              'own feed is fine [ShCyD9TYhLY @ 00:05:53]. On the permission side, Barbara '
+                              '“Financial Tidbitter” Aboagye shows the Elsevier fee quote came back at '
+                              'zero but is only an estimate that may change, so the printed license, not '
+                              'the quote, is what goes to the journal [SK5CqQ61CYI @ 00:03:00].'],
+               'table': {'caption': 'Firsthand traps, mechanisms, and the operator check for each',
+                         'headers': ['Trap', 'Mechanism Reported', 'Operator Check', 'Expert Source'],
+                         'rows': [['Whack-a-mole against foreign platform sellers with no local presence',
+                                   'Seller relaunches on another platform after each takedown notice lands',
+                                   'Map rights, infringing activity, and the true seller before sending '
+                                   'notices',
+                                   'Torys LLP ([ijF0IyvjXXg @ 00:02:09])'],
+                                  ['Chasing resellers of genuine branded or patented goods',
+                                   'Exhaustion and gray goods rules mean genuine resale is not '
+                                   'infringement',
+                                   'Express any resale limits clearly and unambiguously in the terms of '
+                                   'sale',
+                                   'Torys LLP ([ijF0IyvjXXg @ 00:02:44])'],
+                                  ['Missing the design patent filing window after launch',
+                                   'Rights are lost one year after first U.S. disclosure of the design',
+                                   'Calendar the one-year deadline from the first public disclosure date',
+                                   'Derek Fahey, Esq. ([nLSthuXQCL4 @ 00:00:33])'],
+                                  ['Registering copyright only after the infringement has happened',
+                                   'Late registration forfeits statutory damages, attorney fees, and '
+                                   'payment leverage',
+                                   'Register before client delivery; batch roughly 1,500 images for $35',
+                                   'B&H Photo Video Pro Audio ([74bQUodJbWY @ 01:12:41])'],
+                                  ['Assuming the paying client owns commissioned photos outright',
+                                   'Without written transfer, the photographer keeps copyright in most '
+                                   'cases',
+                                   'Check for clear written permission from the original photographer '
+                                   'first',
+                                   'Matthew Anderson ([manKMR61ho0 @ 00:02:57])'],
+                                  ['Taking an infringing image down and ignoring the claim letter',
+                                   'Removal does not cure infringement; costs can reach tens of thousands',
+                                   'Respond promptly rather than ignoring the claim or getting defensive',
+                                   'Matthew Anderson ([manKMR61ho0 @ 00:11:29])'],
+                                  ['Designing around a claim with a functional substitute part',
+                                   'A replaced element performing the same function may still be '
+                                   'equivalent',
+                                   'Clear every independent claim, including method claims, before launch',
+                                   'Patent Insanity ([Jwz-iMwUtCU @ 00:05:14])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Four checks before you enforce or publish',
+                           'body': 'Every item below is a pitfall the practitioners hit or watched clients '
+                                   'hit. Clear all four before sending a notice, launching a '
+                                   'design-around, or publishing third-party imagery.',
+                           'items': ['Confirm the true seller through the platform, corporate searches, '
+                                     'domain name lookups, or an investigator before filing anything '
+                                     '[Torys LLP — ijF0IyvjXXg @ 00:06:35].',
+                                     'Clear every independent claim, including method claims, since '
+                                     'patents usually carry at least three independent claims [Patent '
+                                     'Insanity — Jwz-iMwUtCU @ 00:07:47].',
+                                     'Register images before delivering to clients and inside the 3-month '
+                                     'window after publication [B&H Photo Video Pro Audio — 74bQUodJbWY @ '
+                                     '01:20:24].',
+                                     'Hold clear written permission or a purchased license before using '
+                                     'any image; a missing watermark does not mean free [Matthew Anderson '
+                                     '— manKMR61ho0 @ 00:10:02].']}}],
+ 'pull_quote': '“A badly written claim can make an amazing invention totally worthless.” — Patent Attorney '
+               'Worldwide (D-Am1gpuzaw @ 00:04:56).',
+ 'diagram_id': 'diag-05',
+ 'action_checklist': ['Map where you hold rights, where the infringing activity occurs, and who the '
+                      'infringer is before sending any notice [Torys LLP — ijF0IyvjXXg @ 00:00:36].',
+                      'Lead platform complaints with trademark registrations, since platforms act faster '
+                      'when their liability is clear [Torys LLP — ijF0IyvjXXg @ 00:05:39].',
+                      'Build claim charts that set each claim element against the evidence before '
+                      'litigating [LawShelf — WtxlYb996kI @ 00:02:36].',
+                      'When accused, run a validity search for prior art covering papers, old products, '
+                      'and YouTube videos [Patent Attorney Worldwide — D-Am1gpuzaw @ 00:04:11].',
+                      'Request reuse rights through the ScienceDirect “get rights and content” flow, then '
+                      'print the license and submit it to the journal [Barbara “Financial Tidbitter” '
+                      'Aboagye — SK5CqQ61CYI @ 00:04:52].',
+                      'Filter for CC0 and Creative Commons images with CCSearch and give attribution '
+                      'verbally or on the page [DesignLab UW-Madison — mGWJAAFhtRk @ 00:01:19].'],
+ 'statutory_citations': [{'title': 'Torys LLP — Ask an IP litigator: #5 - How do I stop an unauthorized '
+                                   'seller? [00:05:39]',
+                          'url': 'https://www.youtube.com/watch?v=ijF0IyvjXXg&t=339s',
+                          'relevance': 'Primary practitioner testimony on platform takedowns, trademark '
+                                       'versus patent leverage, and whack-a-mole enforcement.'},
+                         {'title': 'LawShelf — Patent Infringement Litigation: Module 5 of 5 [00:14:33]',
+                          'url': 'https://www.youtube.com/watch?v=WtxlYb996kI&t=873s',
+                          'relevance': 'Primary practitioner testimony on royalty and lost-profit '
+                                       'remedies, NPE injunction denials, and willful damages.'},
+                         {'title': 'B&H Photo Video Pro Audio — Registration Counts: How to Copyright Your '
+                                   'Images [01:12:41]',
+                          'url': 'https://www.youtube.com/watch?v=74bQUodJbWY&t=4361s',
+                          'relevance': 'Primary practitioner testimony on registration timing, statutory '
+                                       'damages, attorney fees, and registration costs.'},
+                         {'title': 'Matthew Anderson — Photo Licensing 101 - The Basics Explained '
+                                   '[00:11:29]',
+                          'url': 'https://www.youtube.com/watch?v=manKMR61ho0&t=689s',
+                          'relevance': 'Primary practitioner testimony on client ownership myths and the '
+                                       'cost of image infringement claims.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'ijF0IyvjXXg',
+                       'title': 'Ask an IP litigator: #5 - How do I stop an unauthorized seller?',
+                       'channel': 'Torys LLP',
+                       'author': 'Torys LLP',
+                       'text': "You have to keep in mind that there's probably another platform that the "
+                               'seller can use to promote your product, and unfortunately it can become a '
+                               'bit of a game of whack-a-mole to try to stop a foreign vendor.',
+                       'tip': "You have to keep in mind that there's probably another platform that the "
+                              'seller can use to promote your product, and unfortunately it can become a '
+                              'bit of a game of whack-a-mole to try to stop a foreign vendor.',
+                       'timestamp': 129,
+                       'timestamp_seconds': 129,
+                       'timestamp_label': '[00:02:09]',
+                       'url': 'https://www.youtube.com/watch?v=ijF0IyvjXXg&t=129s',
+                       'markdown': '[00:02:09](https://www.youtube.com/watch?v=ijF0IyvjXXg&t=129s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ijF0IyvjXXg',
+                       'title': 'Ask an IP litigator: #5 - How do I stop an unauthorized seller?',
+                       'channel': 'Torys LLP',
+                       'author': 'Torys LLP',
+                       'text': 'Well, it sounds like the platform is usually the best source for '
+                               'determining who the true seller is.',
+                       'tip': 'Well, it sounds like the platform is usually the best source for '
+                              'determining who the true seller is.',
+                       'timestamp': 381,
+                       'timestamp_seconds': 381,
+                       'timestamp_label': '[00:06:21]',
+                       'url': 'https://www.youtube.com/watch?v=ijF0IyvjXXg&t=381s',
+                       'markdown': '[00:06:21](https://www.youtube.com/watch?v=ijF0IyvjXXg&t=381s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'WtxlYb996kI',
+                       'title': 'Patent Infringement Litigation: Module 5 of 5',
+                       'channel': 'LawShelf',
+                       'author': 'LawShelf',
+                       'text': 'Willful infringement allows up to three times damages, and exceptional '
+                               "cases allow attorney's fees.",
+                       'tip': 'Willful infringement allows up to three times damages, and exceptional '
+                              "cases allow attorney's fees.",
+                       'timestamp': 873,
+                       'timestamp_seconds': 873,
+                       'timestamp_label': '[00:14:33]',
+                       'url': 'https://www.youtube.com/watch?v=WtxlYb996kI&t=873s',
+                       'markdown': '[00:14:33](https://www.youtube.com/watch?v=WtxlYb996kI&t=873s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'nLSthuXQCL4',
+                       'title': 'What is the difference between design patent infringement and Copyright '
+                                'infringement?',
+                       'channel': 'Derek Fahey, Esq.',
+                       'author': 'Derek Fahey, Esq.',
+                       'text': 'A design patent must be filed within one year of first U.S. disclosure or '
+                               'the rights are lost.',
+                       'tip': 'A design patent must be filed within one year of first U.S. disclosure or '
+                              'the rights are lost.',
+                       'timestamp': 33,
+                       'timestamp_seconds': 33,
+                       'timestamp_label': '[00:00:33]',
+                       'url': 'https://www.youtube.com/watch?v=nLSthuXQCL4&t=33s',
+                       'markdown': '[00:00:33](https://www.youtube.com/watch?v=nLSthuXQCL4&t=33s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'D-Am1gpuzaw',
+                       'title': 'Patent Infringement Explained: Types, Lawsuits & Legal Remedies (Complete '
+                                'Guide)',
+                       'channel': 'Patent Attorney Worldwide',
+                       'author': 'Patent Attorney Worldwide',
+                       'text': 'A badly written claim can make an amazing invention totally worthless.',
+                       'tip': 'A badly written claim can make an amazing invention totally worthless.',
+                       'timestamp': 296,
+                       'timestamp_seconds': 296,
+                       'timestamp_label': '[00:04:56]',
+                       'url': 'https://www.youtube.com/watch?v=D-Am1gpuzaw&t=296s',
+                       'markdown': '[00:04:56](https://www.youtube.com/watch?v=D-Am1gpuzaw&t=296s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '-uT7bPngmNc',
+                       'title': 'TOPIC 18    Patent Infringement and Defences - Intellectual Property Law '
+                                '- UoL',
+                       'channel': 'Sinorbit Academy',
+                       'author': 'Sinorbit Academy',
+                       'text': 'Displaying the product at an exhibition, for instance, has been held to '
+                               'count as an offer to dispose.',
+                       'tip': 'Displaying the product at an exhibition, for instance, has been held to '
+                              'count as an offer to dispose.',
+                       'timestamp': 909,
+                       'timestamp_seconds': 909,
+                       'timestamp_label': '[00:15:09]',
+                       'url': 'https://www.youtube.com/watch?v=-uT7bPngmNc&t=909s',
+                       'markdown': '[00:15:09](https://www.youtube.com/watch?v=-uT7bPngmNc&t=909s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Jwz-iMwUtCU',
+                       'title': 'Designing Around Patents - How to avoid patent infringement',
+                       'channel': 'Patent Insanity',
+                       'author': 'Patent Insanity',
+                       'text': 'Courts may differ on equivalence, so proceed cautiously.',
+                       'tip': 'Courts may differ on equivalence, so proceed cautiously.',
+                       'timestamp': 293,
+                       'timestamp_seconds': 293,
+                       'timestamp_label': '[00:04:53]',
+                       'url': 'https://www.youtube.com/watch?v=Jwz-iMwUtCU&t=293s',
+                       'markdown': '[00:04:53](https://www.youtube.com/watch?v=Jwz-iMwUtCU&t=293s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'kRlS4inO95k',
+                       'title': 'Patent Infringement - Visually and Simply Explained',
+                       'channel': 'CIONCA IP',
+                       'author': 'CIONCA IP',
+                       'text': 'Because not all the elements of the patented claim are found in the '
+                               'accused product, this claim is not infringed by this product.',
+                       'tip': 'Because not all the elements of the patented claim are found in the accused '
+                              'product, this claim is not infringed by this product.',
+                       'timestamp': 234,
+                       'timestamp_seconds': 234,
+                       'timestamp_label': '[00:03:54]',
+                       'url': 'https://www.youtube.com/watch?v=kRlS4inO95k&t=234s',
+                       'markdown': '[00:03:54](https://www.youtube.com/watch?v=kRlS4inO95k&t=234s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '5RtieTL1OqM',
+                       'title': 'Understanding Compulsory Licensing',
+                       'channel': 'Alliance for Patient Access',
+                       'author': 'Alliance for Patient Access',
+                       'text': 'Voluntary licensing lets patent holders partner with other companies and '
+                               'share their manufacturing expertise.',
+                       'tip': 'Voluntary licensing lets patent holders partner with other companies and '
+                              'share their manufacturing expertise.',
+                       'timestamp': 115,
+                       'timestamp_seconds': 115,
+                       'timestamp_label': '[00:01:55]',
+                       'url': 'https://www.youtube.com/watch?v=5RtieTL1OqM&t=115s',
+                       'markdown': '[00:01:55](https://www.youtube.com/watch?v=5RtieTL1OqM&t=115s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '9hTMXJtONtM',
+                       'title': 'Mastering Patentability And Infringement Concepts Made EASY',
+                       'channel': 'Patents Demystified',
+                       'author': 'Patents Demystified',
+                       'text': 'One important thing to understand about infringement is a patent cannot '
+                               "infringe on somebody else's patent.",
+                       'tip': 'One important thing to understand about infringement is a patent cannot '
+                              "infringe on somebody else's patent.",
+                       'timestamp': 429,
+                       'timestamp_seconds': 429,
+                       'timestamp_label': '[00:07:09]',
+                       'url': 'https://www.youtube.com/watch?v=9hTMXJtONtM&t=429s',
+                       'markdown': '[00:07:09](https://www.youtube.com/watch?v=9hTMXJtONtM&t=429s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '-267ABEXf8o',
+                       'title': 'Do You Own the Photos? - Photography Copyright/Licensing Simplified & '
+                                'Explained!',
+                       'channel': 'Matthew Anderson',
+                       'author': 'Matthew Anderson',
+                       'text': 'Well, unless it has been explicitly written in a contract or agreement '
+                               'that copyright ownership has been transferred to you, by default you do '
+                               'not own the images.',
+                       'tip': 'Well, unless it has been explicitly written in a contract or agreement that '
+                              'copyright ownership has been transferred to you, by default you do not own '
+                              'the images.',
+                       'timestamp': 41,
+                       'timestamp_seconds': 41,
+                       'timestamp_label': '[00:00:41]',
+                       'url': 'https://www.youtube.com/watch?v=-267ABEXf8o&t=41s',
+                       'markdown': '[00:00:41](https://www.youtube.com/watch?v=-267ABEXf8o&t=41s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'grui-CD6Uck',
+                       'title': 'What are the different types of image licenses and how do they work?',
+                       'channel': 'freeCodeCamp Concepts',
+                       'author': 'freeCodeCamp Concepts',
+                       'text': 'You can use an image lawfully with written permission, a purchased '
+                               'license, or limited and transformative fair use.',
+                       'tip': 'You can use an image lawfully with written permission, a purchased license, '
+                              'or limited and transformative fair use.',
+                       'timestamp': 18,
+                       'timestamp_seconds': 18,
+                       'timestamp_label': '[00:00:18]',
+                       'url': 'https://www.youtube.com/watch?v=grui-CD6Uck&t=18s',
+                       'markdown': '[00:00:18](https://www.youtube.com/watch?v=grui-CD6Uck&t=18s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'mGWJAAFhtRk',
+                       'title': 'Copyright and Fair Use for Images, Videos, and Audio - Basics',
+                       'channel': 'DesignLab UW-Madison',
+                       'author': 'DesignLab UW-Madison',
+                       'text': 'The music industry is typically much stricter on Fair Use, so it is best '
+                               'to avoid using copyrighted songs altogether.',
+                       'tip': 'The music industry is typically much stricter on Fair Use, so it is best to '
+                              'avoid using copyrighted songs altogether.',
+                       'timestamp': 197,
+                       'timestamp_seconds': 197,
+                       'timestamp_label': '[00:03:17]',
+                       'url': 'https://www.youtube.com/watch?v=mGWJAAFhtRk&t=197s',
+                       'markdown': '[00:03:17](https://www.youtube.com/watch?v=mGWJAAFhtRk&t=197s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'manKMR61ho0',
+                       'title': 'Photo Licensing 101 - The Basics Explained',
+                       'channel': 'Matthew Anderson',
+                       'author': 'Matthew Anderson',
+                       'text': "Photography is our livelihood, we just can't pay our bills with photo "
+                               'credit or exposure bucks.',
+                       'tip': "Photography is our livelihood, we just can't pay our bills with photo "
+                              'credit or exposure bucks.',
+                       'timestamp': 443,
+                       'timestamp_seconds': 443,
+                       'timestamp_label': '[00:07:23]',
+                       'url': 'https://www.youtube.com/watch?v=manKMR61ho0&t=443s',
+                       'markdown': '[00:07:23](https://www.youtube.com/watch?v=manKMR61ho0&t=443s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'SK5CqQ61CYI',
+                       'title': 'How to Request Copyright Permission to Reuse an Image | Can You Use '
+                                'Images From Research Papers?',
+                       'channel': 'Barbara “Financial Tidbitter” Aboagye',
+                       'author': 'Barbara “Financial Tidbitter” Aboagye',
+                       'text': 'The fee shown is an estimate and may change, and in this example the quote '
+                               'came back as zero.',
+                       'tip': 'The fee shown is an estimate and may change, and in this example the quote '
+                              'came back as zero.',
+                       'timestamp': 180,
+                       'timestamp_seconds': 180,
+                       'timestamp_label': '[00:03:00]',
+                       'url': 'https://www.youtube.com/watch?v=SK5CqQ61CYI&t=180s',
+                       'markdown': '[00:03:00](https://www.youtube.com/watch?v=SK5CqQ61CYI&t=180s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '74bQUodJbWY',
+                       'title': 'Registration Counts: How to Copyright Your Images',
+                       'channel': 'B&H Photo Video Pro Audio',
+                       'author': 'B&H Photo Video Pro Audio',
+                       'text': 'You must register before an infringement to have the full protection of '
+                               'copyright.',
+                       'tip': 'You must register before an infringement to have the full protection of '
+                              'copyright.',
+                       'timestamp': 4784,
+                       'timestamp_seconds': 4784,
+                       'timestamp_label': '[01:19:44]',
+                       'url': 'https://www.youtube.com/watch?v=74bQUodJbWY&t=4784s',
+                       'markdown': '[01:19:44](https://www.youtube.com/watch?v=74bQUodJbWY&t=4784s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '74bQUodJbWY',
+                       'title': 'Registration Counts: How to Copyright Your Images',
+                       'channel': 'B&H Photo Video Pro Audio',
+                       'author': 'B&H Photo Video Pro Audio',
+                       'text': 'Because fair use is really a defense of infringement, that means that you '
+                               "can't claim fair use without actually infringing on a work.",
+                       'tip': 'Because fair use is really a defense of infringement, that means that you '
+                              "can't claim fair use without actually infringing on a work.",
+                       'timestamp': 1012,
+                       'timestamp_seconds': 1012,
+                       'timestamp_label': '[00:16:52]',
+                       'url': 'https://www.youtube.com/watch?v=74bQUodJbWY&t=1012s',
+                       'markdown': '[00:16:52](https://www.youtube.com/watch?v=74bQUodJbWY&t=1012s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ShCyD9TYhLY',
+                       'title': 'How to LEGALLY Use a Copyrighted Photo',
+                       'channel': 'Visme',
+                       'author': 'Visme',
+                       'text': "Copyright infringement shouldn't be shrugged off.",
+                       'tip': "Copyright infringement shouldn't be shrugged off.",
+                       'timestamp': 370,
+                       'timestamp_seconds': 370,
+                       'timestamp_label': '[00:06:10]',
+                       'url': 'https://www.youtube.com/watch?v=ShCyD9TYhLY&t=370s',
+                       'markdown': '[00:06:10](https://www.youtube.com/watch?v=ShCyD9TYhLY&t=370s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'}]}

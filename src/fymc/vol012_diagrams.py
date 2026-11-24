@@ -1,743 +1,573 @@
-from __future__ import annotations
+"""Volume 012: Equipment Brokerage. Diagram data grounded in practitioner testimony."""
 
-VOLUME_012_SUBTITLE = (
-    "The Complete Playbook for Equipment Brokerage: "
-    "$100,000–$800,000 USD in Annual Broker Commissions, "
-    "Built Around a 1 FT + 3 C Four-Person Pod"
+from typing import Any, Dict, List
+
+VOLUME_012_SUBTITLE: str = (
+    "Consign the Iron, Price on Condition, Measure the Wear, Clear the Lien, "
+    "and Broker the Money Behind the Seller"
 )
 
-VOLUME_012_POSITIONING_ALTERNATIVES = [
-    {
-        "title": "The Lien-Clear Heavy Equipment Broker",
-        "subtitle": (
-            "Broker construction equipment and fleet assets through documented "
-            "ownership, secured-party releases, independent inspection, and escrow."
-        ),
-        "audience": (
-            "Construction equipment specialists and fleet operators building "
-            "an asset-light commission business without purchasing inventory."
-        ),
-        "research_basis": (
-            "UCC 9-315 addresses continuing security interests after disposition; "
-            "UCC 9-513 addresses termination statements. A filing search alone "
-            "does not establish clear ownership or release a creditor's interest. "
-            "California Vehicle Code section 11700 supplies a concrete vehicle "
-            "dealer licensing example; apply vehicle rules only after classifying "
-            "the asset and activity under the relevant state's law."
-        ),
-        "sources": [
-            "https://www.law.cornell.edu/ucc/9/9-315",
-            "https://www.law.cornell.edu/ucc/9/9-513",
-            (
-                "https://leginfo.legislature.ca.gov/faces/"
-                "codes_displaySection.xhtml?lawCode=VEH&sectionNum=11700."
+
+def build_volume_012_diagrams_data() -> List[Dict[str, Any]]:
+    """Return the eight structured diagram dicts for Volume 012."""
+    return [
+        {
+            "diagram_id": "diag-01-consignment-broker-workflow",
+            "chapter_number": 1,
+            "title": "The Consignment Broker Workflow",
+            "subtitle": "Never own the iron; earn 5% to 12% on someone else's machine",
+            "chart_type": "process_flow",
+            "stages": [
+                {
+                    "step": "01",
+                    "label": "Call the seller for the story",
+                    "value": "Step 1",
+                    "detail": (
+                        "Find out why the machine is on the market, whether a fire, "
+                        "worn-out iron, or a job that ran out, before money moves."
+                    ),
+                },
+                {
+                    "step": "02",
+                    "label": "Price on condition, not seller hope",
+                    "value": "Step 2",
+                    "detail": (
+                        "Overpriced units die because people do not pay more than "
+                        "something is worth."
+                    ),
+                },
+                {
+                    "step": "03",
+                    "label": "Publish sharp photos and full descriptions",
+                    "value": "Step 3",
+                    "detail": (
+                        "Weak photos and thin descriptions cut leads, offers, and "
+                        "final price."
+                    ),
+                },
+                {
+                    "step": "04",
+                    "label": "Push one listing to several channels",
+                    "value": "Step 4",
+                    "detail": (
+                        "Dealer software sends a single listing out to multiple "
+                        "sales channels at once."
+                    ),
+                },
+                {
+                    "step": "05",
+                    "label": "Screen buyers and close remotely",
+                    "value": "Step 5",
+                    "detail": (
+                        "Shield the seller from tire kickers and call only when a "
+                        "buyer is serious; the Academy teaches selling over 50% of "
+                        "equipment sight unseen."
+                    ),
+                },
+            ],
+            "caption": (
+                "Retail commissions run $2,700 to $4,500 per sale, and the average "
+                "consignor brings 3.5 machines, so one client can feed retail, "
+                "wholesale, and auction revenue."
             ),
-        ],
-        "validation_status": (
-            "Source-informed editorial positioning; not market-tested."
-        ),
-    },
+            "assumptions_note": (
+                "Sequence assembled from separate practitioner tips; the speakers did "
+                "not publish it as one ordered workflow. Commission band of 5% to 12% "
+                "per Equipment Broker Academy. Sellers also report machines sitting "
+                "105 days to six months."
+            ),
+            "note": (
+                "Sources - Noah Graff (Swarfcast), Charles Petrov (Equipment Broker "
+                "Academy), Duncan (ResaleWeekly), Pav Jam, Machinery Manager, and a "
+                "Boom & Bucket seller account."
+            ),
+        },
+        {
+            "diagram_id": "diag-02-finance-broker-deal-funnel",
+            "chapter_number": 6,
+            "title": "From Equipment Package to Broker Paycheck",
+            "subtitle": "Source behind the seller, match the file to a lender",
+            "chart_type": "funnel",
+            "stages": [
+                {
+                    "label": "Heavy iron package sourced through a vendor",
+                    "value": 350000,
+                    "display": "$350,000",
+                    "conversion": "Sourced via equipment vendors, CPAs, and bankers",
+                    "detail": (
+                        "Caterpillar excavator package for an excavation contractor."
+                    ),
+                },
+                {
+                    "label": "First-deal excavator financed",
+                    "value": 180000,
+                    "display": "$180,000",
+                    "conversion": "Closed in 60 days",
+                    "detail": (
+                        "Michael Chen, a student with zero finance background, "
+                        "arranged financing without lending his own money."
+                    ),
+                },
+                {
+                    "label": "Credit-app-only ceiling",
+                    "value": 75000,
+                    "display": "Up to $75,000",
+                    "conversion": (
+                        "Above it, request the last three years of tax returns or "
+                        "audited financials"
+                    ),
+                    "detail": (
+                        "Signed proposal plus one monthly payment as a performance "
+                        "deposit before any credit app goes to a lender."
+                    ),
+                },
+                {
+                    "label": "Broker spread on the $350,000 package",
+                    "value": 17500,
+                    "display": "$14,000 to $17,500",
+                    "conversion": "Standard 4% to 5% broker spread",
+                    "detail": "One approval on the excavator package.",
+                },
+                {
+                    "label": "First-deal commission",
+                    "value": 4200,
+                    "display": "$4,200",
+                    "conversion": "Academy range of $2,000 to $5,000 per funded deal",
+                    "detail": "Earned on the $180,000 excavator.",
+                },
+            ],
+            "caption": (
+                "Commission claims run wide, from $2,000 to $5,000 per funded deal up "
+                "to Jermane Cheathem's claim of 20 points on a $100,000 deal."
+            ),
+            "assumptions_note": (
+                "Stages mix two separate practitioner examples ($350,000 and $180,000 "
+                "excavators) plus the credit-app ceiling; they are not one tracked "
+                "deal. Application-only ceilings reported from $75,000 to $350,000; "
+                "credit floors from 580 to 650."
+            ),
+            "note": (
+                "Sources - Equipment Finance Academy, Buzz Glover "
+                "(BizLoanConsultants.com), and Jermane Cheathem."
+            ),
+        },
+        {
+            "diagram_id": "diag-03-cascadia-auction-win-waterfall",
+            "chapter_number": 3,
+            "title": "Winning Below the Comps",
+            "subtitle": "A 2023 Cascadia bought online at Ritchie Bros.",
+            "chart_type": "waterfall",
+            "bars": [
+                {
+                    "label": "Bid Agent valuation (top)",
+                    "value": 87000,
+                    "display": "$87,000",
+                    "kind": "total",
+                },
+                {
+                    "label": "Gap to $85k comp",
+                    "value": 2000,
+                    "display": "-$2,000",
+                    "kind": "deduction",
+                },
+                {
+                    "label": "Gap to $82k comp",
+                    "value": 3000,
+                    "display": "-$3,000",
+                    "kind": "deduction",
+                },
+                {
+                    "label": "Gap to $81k comp",
+                    "value": 1000,
+                    "display": "-$1,000",
+                    "kind": "deduction",
+                },
+                {
+                    "label": "Discount below lowest comp",
+                    "value": 5000,
+                    "display": "-$5,000",
+                    "kind": "deduction",
+                },
+                {
+                    "label": "Hammer price won",
+                    "value": 76000,
+                    "display": "$76,000",
+                    "kind": "result",
+                },
+            ],
+            "caption": (
+                "The 572,000 km unit closed at $76,000 against comps of $85k, $82k, "
+                "and $81k, while a favored 361k-km unit ran to $102k and was "
+                "abandoned."
+            ),
+            "assumptions_note": (
+                "Bid Agent valued the unit at $86k to $87k; the top of that range is "
+                "the starting bar. Bar gaps are arithmetic between reported figures. "
+                "Buyer's premiums of 12-19%, a 10% auction fee plus 13% HST, and a "
+                "3-4% card surcharge sit outside this hammer comparison."
+            ),
+            "note": (
+                "Source - Ronin of ET Transport, using the Bid Agent Chrome "
+                "extension and a $500,000 Ritchie credit line; the buyer claimed "
+                "'$10,000' made."
+            ),
+        },
+        {
+            "diagram_id": "diag-04-used-equipment-price-points",
+            "chapter_number": 2,
+            "title": "Reading Used-Equipment Price Points",
+            "subtitle": "Reported auction swings, stalls, and prep spend",
+            "chart_type": "horizontal_bars",
+            "unit": "Dollars as quoted (Steiger figure in Canadian dollars)",
+            "bars": [
+                {
+                    "label": "John Deere S780 average, 1-4 yr",
+                    "min": 317789,
+                    "max": 346900,
+                    "typical": 317789,
+                    "display": "$346,900 to $317,789 (-8.4%)",
+                },
+                {
+                    "label": "8360R stalled bid to hammer",
+                    "min": 159000,
+                    "max": 169500,
+                    "typical": 169500,
+                    "display": "Stalled near $159,000-$160,000; closed $169,500",
+                },
+                {
+                    "label": "Case IH Steiger 645 Quadtrac sale",
+                    "min": 710000,
+                    "max": 710000,
+                    "typical": 710000,
+                    "display": "710,000 Canadian at 781 hours",
+                },
+                {
+                    "label": "Farm Journal tracked model, average to high",
+                    "min": 15147,
+                    "max": 36000,
+                    "typical": 15147,
+                    "display": "$15,147 average; $36,000 high",
+                },
+                {
+                    "label": "Cab interior refresh spend",
+                    "min": 7,
+                    "max": 200,
+                    "typical": 200,
+                    "display": "$7 rattle can vs. roughly $200 interior kit",
+                },
+            ],
+            "caption": (
+                "Supply drives the read: five-year-old high-horse tractor listings "
+                "fell 79%, and auctions rose 19.5% while 1-3 year old units sold "
+                "fell 19.9%."
+            ),
+            "assumptions_note": (
+                "Each bar is a separate practitioner-reported figure, not a common "
+                "index. A stalled bid is not a ceiling; documented work orders and "
+                "warranty history add value buyers pay for."
+            ),
+            "note": (
+                "Sources - Machinery Pete, Farm Journal, RealAgriculture, Luke "
+                "Fritshaw of Ritchie Bros., and Patrick Shivers."
+            ),
+        },
+        {
+            "diagram_id": "diag-05-lien-and-fraud-gates",
+            "chapter_number": 5,
+            "title": "Lien and Fraud Gates Before the Iron Moves",
+            "subtitle": "Prove the machine is not already pledged, then prove the money",
+            "chart_type": "decision_tree",
+            "nodes": [
+                {
+                    "gate": "G1",
+                    "question": (
+                        "Does a Secretary of State UCC search on the debtor's exact "
+                        "legal name come back clean?"
+                    ),
+                    "pass_next": "G2",
+                    "fail_action": (
+                        "Order the $15 Texas plain copy to read the collateral "
+                        "description; have the dealer pay the lender directly, as in "
+                        "$8,000 to the lender and $2,000 to the seller on $10,000."
+                    ),
+                },
+                {
+                    "gate": "G2",
+                    "question": (
+                        "Does a separate search under the secured party's name clear "
+                        "blanket liens?"
+                    ),
+                    "pass_next": "G3",
+                    "fail_action": (
+                        "Never clear collateral on a UCC-3 termination alone; verify "
+                        "the underlying debt is satisfied."
+                    ),
+                },
+                {
+                    "gate": "G3",
+                    "question": (
+                        "Does the hull, motor, trailer, or machine carry a readable "
+                        "serial, HIN, or VIN?"
+                    ),
+                    "pass_next": "G4",
+                    "fail_action": "Walk away; it could be stolen product.",
+                },
+                {
+                    "gate": "G4",
+                    "question": (
+                        "Is payment a verified wire, with no cashier's check and no "
+                        "stand-in collector for an out-of-state buyer?"
+                    ),
+                    "pass_next": "Release the machine",
+                    "fail_action": (
+                        "Stop the release; verify any changed wiring instructions by "
+                        "calling a number already held, never one from the email."
+                    ),
+                },
+            ],
+            "caption": (
+                "A buyer who takes a liened machine can lose it to the original "
+                "lender; a misspelled debtor name can hide a million-dollar lien."
+            ),
+            "assumptions_note": (
+                "UCC filings generally stay active for five years. New York search "
+                "fee is $25 by credit card; copies require check or money order. "
+                "Gate order assembled from separate practitioner rules."
+            ),
+            "note": (
+                "Sources - Garden Shop Pro, NerdWallet Small Business, CSC, "
+                "OnWaterTVAustralia, Boom & Bucket, Living in Fort Myers, and "
+                "jesseleblancatlanta."
+            ),
+        },
+        {
+            "diagram_id": "diag-06-imaging-and-power-broker-hub",
+            "chapter_number": 11,
+            "title": "Imaging and Data-Center Equipment Broker Hub",
+            "subtitle": "Buy as the facility exits, prove identity, resell whole or as parts",
+            "chart_type": "org_architecture",
+            "center": {
+                "role": "Imaging and power equipment broker",
+                "headcount": "Not reported by practitioners",
+                "focus": (
+                    "Prove technical identity with tube scan seconds, software "
+                    "licenses, nameplates, battery date codes, and acceptance test "
+                    "reports."
+                ),
+            },
+            "spokes": [
+                {
+                    "role": "Exiting hospital or clinic seller",
+                    "type": "Supply source",
+                    "kpi": (
+                        "Year, make, model, tube age, licensed software, and gantry "
+                        "photos front, back, and side before pricing"
+                    ),
+                },
+                {
+                    "role": "Reconditioning partner",
+                    "type": "Value add",
+                    "kpi": (
+                        "40 to 50% below new with a one-year all-inclusive warranty "
+                        "baseline; ISO 13485 certified"
+                    ),
+                },
+                {
+                    "role": "Data-center decommissioning specialist",
+                    "type": "Teardown and resale",
+                    "kpi": (
+                        "$12,000 paid to owner, room cleared in 10 days; generator "
+                        "load bank tested before resale"
+                    ),
+                },
+                {
+                    "role": "Buyer of refurbished system",
+                    "type": "Demand",
+                    "kpi": "$335,000 six-year MRI cost-of-ownership savings",
+                },
+            ],
+            "caption": (
+                "Block Imaging says new can cost up to twice the price of used or "
+                "refurbished; Reclaim Atlas recovered removal cost through generator "
+                "and UPS resale."
+            ),
+            "assumptions_note": (
+                "MRI savings combine a 210 purchase gap (805 OEM vs. 595 MXR) with "
+                "post-warranty service at $85,000 instead of $110,000 per year. "
+                "Oak Ridge teardown covered a 225 kVA UPS and a 180 kW standby "
+                "generator."
+            ),
+            "note": (
+                "Sources - MXR Imaging, Block Imaging, Reclaim Atlas, Probo Medical "
+                "UK, and Keentel Engineering."
+            ),
+        },
+        {
+            "diagram_id": "diag-07-undercarriage-wear-thresholds",
+            "chapter_number": 4,
+            "title": "Undercarriage Wear Thresholds",
+            "subtitle": "Measure component by component, never accept a seller's percentage",
+            "chart_type": "stacked_comparison",
+            "total_range": "31% measured wear to a 60% pin and bush turn point",
+            "buckets": [
+                {
+                    "label": "Measured Komatsu wear at 4,700 hours",
+                    "low": 31,
+                    "high": 31,
+                    "notes": "1,010 of 3,200 points on a 2010 Komatsu excavator.",
+                },
+                {
+                    "label": "Price as needing undercarriage soon",
+                    "low": 40,
+                    "high": 50,
+                    "notes": "Wear accelerates past this band; not half its life left.",
+                },
+                {
+                    "label": "Pin and bush turn trigger",
+                    "low": 60,
+                    "high": 60,
+                    "notes": "Turn at 7,000 hours or 60% wear on the rails.",
+                },
+                {
+                    "label": "Remaining life on scored Komatsu",
+                    "low": 69,
+                    "high": 69,
+                    "notes": "Likely original undercarriage.",
+                },
+            ],
+            "caption": (
+                "Undercarriage replacement runs 12,000 to upwards of 70 grand, so "
+                "pumped-tight tracks, cut links, and welded adjusters get checked "
+                "before bidding."
+            ),
+            "assumptions_note": (
+                "Percentages are wear unless labeled remaining. Oil samples cost "
+                "less than 10 dollars typical, less than 20 on the high side, with "
+                "24 to 48 hour turnaround; Carter recommends sampling every 250 hours."
+            ),
+            "note": (
+                "Sources - C&C Equipment, Hunter Valley Tracks, Volvo Construction "
+                "Equipment - North America, Shelly Eckert of Chevron via "
+                "EquipmentWorld, and Carter Machinery."
+            ),
+        },
+        {
+            "diagram_id": "diag-08-adjacent-models-roadmap",
+            "chapter_number": 12,
+            "title": "Adjacent Equipment Plays Roadmap",
+            "subtitle": "Buy or broker what the market mislabeled; own the buyer network",
+            "chart_type": "timeline_roadmap",
+            "weeks": [
+                {
+                    "week": "Week 1",
+                    "title": "Source surplus iron",
+                    "deliverable": (
+                        "Bid list with demil codes read first; DEMIL A and Q transfer "
+                        "intact, and some Code H dozer fixes start with a $10 filter."
+                    ),
+                    "gate": (
+                        "Data plate matched to the DLA catalog; milky fluids, pin "
+                        "bosses, and grouser height checked."
+                    ),
+                },
+                {
+                    "week": "Week 2",
+                    "title": "Source salvage units",
+                    "deliverable": (
+                        "Underwater units bought from insurers and salvagedsale.com; "
+                        "one flood machine has run about 2,000 hours since."
+                    ),
+                    "gate": "Burned machines skipped entirely.",
+                },
+                {
+                    "week": "Week 3",
+                    "title": "Structure the auction or consignment",
+                    "deliverable": (
+                        "6% seller fee plus 10% buyer premium, $3,200 on a $20K "
+                        "machine; seller proceeds never touch the operating account."
+                    ),
+                    "gate": (
+                        "No net guarantee without reserves; $620K in comps produced "
+                        "a $375K sale and a $150K hit."
+                    ),
+                },
+                {
+                    "week": "Week 4",
+                    "title": "Exit through export or parts",
+                    "deliverable": (
+                        "Excavators shipped only on 50/50 terms; a $1,500 F-150 "
+                        "parted out for $4,000."
+                    ),
+                    "gate": "Verified buyer and purchase order locked; galamsey buyers refused.",
+                },
+            ],
+            "caption": (
+                "Plain Finance reports $500K in year three from its auction house; "
+                "Jermane Cheathem reports $50M+ in brokered equipment deals."
+            ),
+            "assumptions_note": (
+                "Week grouping is an organizing sequence; practitioners did not "
+                "report weekly timing. F-150 operating profit of about $1,400 is net "
+                "of $150 tow, $600 labor, and $350 other costs."
+            ),
+            "note": (
+                "Sources - EquipmentWorld, Vantor Surplus, Plain Finance, CapitalCode, "
+                "SwiftBridge Trading LLP, and Jermane Cheathem."
+            ),
+        },
+    ]
+
+
+VOLUME_012_POSITIONING_ALTERNATIVES: List[Dict[str, Any]] = [
     {
-        "title": "The Evidence-First CNC Matchmaker",
-        "subtitle": (
-            "Turn machine specifications, service records, and independent "
-            "inspection into qualified industrial buyer matches."
-        ),
-        "audience": (
-            "Machine-tool sales specialists serving manufacturers that need "
-            "verified CNC capacity, relocation planning, and disciplined acceptance."
-        ),
+        "title": "Iron You Never Own",
+        "subtitle": "Consignment brokering, auction discipline, and three revenue lines per seller",
+        "audience": "Operators starting a home-office used-equipment brokerage",
         "research_basis": (
-            "UCC 2-313 connects express warranties to qualifying factual "
-            "affirmations, descriptions, and samples. UCC 2-316 governs warranty "
-            "exclusions and modifications. Build a seller-approved evidence "
-            "packet, identify the contracting seller, and distinguish verified "
-            "measurements from seller statements; broker status does not turn "
-            "every listing statement into a harmless opinion."
+            "5% to 12% commission band, $2,700 to $4,500 retail commissions, 3.5 "
+            "units per consignor, and a Cascadia won at $76,000 against $81k-$85k "
+            "comps."
         ),
         "sources": [
-            "https://www.law.cornell.edu/ucc/2/2-313",
-            "https://www.law.cornell.edu/ucc/2/2-316",
-            "https://www.law.cornell.edu/ucc/2/2-312",
+            "https://www.youtube.com/watch?v=_c4_PRT-_rE&t=42s",
+            "https://www.youtube.com/watch?v=C4UjO7bAqGI&t=188s",
+            "https://www.youtube.com/watch?v=wzN9KKrhTBo&t=2587s",
+            "https://www.youtube.com/watch?v=3oDXLUOs8DU&t=388s",
         ],
-        "validation_status": (
-            "Source-informed editorial positioning; not market-tested."
-        ),
+        "validation_status": "Grounded strictly in Vol. 012 YouTube practitioner transcripts.",
     },
     {
-        "title": "The Export-Ready Industrial Equipment Desk",
-        "subtitle": (
-            "Build documented equipment matches around classification, "
-            "destination, end-user review, and controlled settlement."
-        ),
-        "audience": (
-            "Experienced industrial brokers adding selected cross-border "
-            "transactions to an established domestic equipment practice."
-        ),
+        "title": "Measure It, Search It, Then Bid",
+        "subtitle": "Hour meters, undercarriage scores, oil samples, and UCC searches before money moves",
+        "audience": "Buyers, wholesalers, and brokers vetting used heavy iron",
         "research_basis": (
-            "15 CFR Part 734 establishes EAR scope; Part 738 addresses the "
-            "Commerce Control List and Country Chart. Parts 744 and 746 add "
-            "end-user, end-use, and destination restrictions. Classify the "
-            "specific machine and transaction rather than assuming that used "
-            "equipment or an EAR99 classification permits every shipment."
+            "Missing hour-meter digits, a 31 percent worn Komatsu, oil samples under "
+            "10 dollars with 24 to 48 hour turnaround, and secured-party searches "
+            "that surface hidden blanket liens."
         ),
         "sources": [
-            "https://www.ecfr.gov/current/title-15/subtitle-B/chapter-VII/subchapter-C/part-734",
-            "https://www.ecfr.gov/current/title-15/subtitle-B/chapter-VII/subchapter-C/part-738",
-            "https://www.ecfr.gov/current/title-15/subtitle-B/chapter-VII/subchapter-C/part-744",
-            "https://www.ecfr.gov/current/title-15/subtitle-B/chapter-VII/subchapter-C/part-746",
+            "https://www.youtube.com/watch?v=vxI956OLj9E&t=201s",
+            "https://www.youtube.com/watch?v=Hif9qgd9EEI&t=665s",
+            "https://www.youtube.com/watch?v=QYimn88ydQI&t=307s",
+            "https://www.youtube.com/watch?v=F-yeb_XOivY&t=209s",
         ],
-        "validation_status": (
-            "Source-informed editorial positioning; not market-tested."
+        "validation_status": "Grounded strictly in Vol. 012 YouTube practitioner transcripts.",
+    },
+    {
+        "title": "Broker the Money and the Exit",
+        "subtitle": "Equipment finance spreads, reconditioned imaging, and two-sided auction fees",
+        "audience": "Brokers adding finance, specialty equipment, or auction lines",
+        "research_basis": (
+            "4% to 5% spreads paying $14,000 to $17,500 on a $350,000 package, "
+            "performance deposits of one monthly payment, reconditioned imaging at "
+            "40 to 50% below new, and $3,200 auction-house take on a $20K machine."
         ),
+        "sources": [
+            "https://www.youtube.com/watch?v=uzLIopNJDJY&t=84s",
+            "https://www.youtube.com/watch?v=kOdpTliR_HM&t=573s",
+            "https://www.youtube.com/watch?v=Nw9qRw-Y6TE&t=413s",
+            "https://www.youtube.com/watch?v=9kP-CdkchRk&t=177s",
+        ],
+        "validation_status": "Grounded strictly in Vol. 012 YouTube practitioner transcripts.",
     },
 ]
-
-
-def build_volume_012_diagrams_data() -> list[dict]:
-    specs = [
-        (
-            "diag-01-equipment-mandate-to-commission",
-            "process_flow",
-            "From Seller Mandate to Earned Commission",
-            "Five documented handoffs keep equipment principal outside broker revenue.",
-            1,
-            "operating_framework",
-            (
-                "The operator acts as a broker, not an inventory owner. Contract "
-                "terms define commission entitlement, settlement instructions, "
-                "inspection scope, and each party's responsibilities. Stage "
-                "numbers indicate sequence rather than money or conversion."
-            ),
-            (
-                "Use one transaction identifier across the mandate, serial-number "
-                "evidence, lien work, buyer acceptance, and escrow statement. "
-                "Recognize only the earned broker commission; never classify "
-                "equipment purchase funds as operating revenue."
-            ),
-            [
-                (
-                    "Authorize the mandate",
-                    "Verify seller identity, authority, asset, and commission terms",
-                    1.0,
-                    (
-                        "Obtain a signed seller mandate naming the legal owner, "
-                        "machine serial number or VIN, asking price, commission "
-                        "formula, term, and authority to advertise. Independently "
-                        "verify the signer's authority before distributing inventory."
-                    ),
-                ),
-                (
-                    "Build the evidence packet",
-                    "Inspect condition and separate measurements from seller claims",
-                    2.0,
-                    (
-                        "Collect service history, hour-meter evidence, ownership "
-                        "documents, and an independent inspection. For CNC assets, "
-                        "record controller version, spindle condition, tooling "
-                        "inclusions, power requirements, and loading constraints."
-                    ),
-                ),
-                (
-                    "Resolve ownership and liens",
-                    "Document creditor payoff and asset-specific release mechanics",
-                    3.0,
-                    (
-                        "Search under the correct debtor identity and jurisdiction; "
-                        "check certificate-of-title records where applicable. Under "
-                        "UCC 9-315, a security interest can survive sale. Obtain "
-                        "secured-party authorization and the required release "
-                        "documents rather than treating a search result as clearance."
-                    ),
-                ),
-                (
-                    "Match and contract the buyer",
-                    "Confirm purchasing authority, acceptance terms, and funded capacity",
-                    4.0,
-                    (
-                        "Use Airtable inventory fields and HubSpot buyer alerts "
-                        "to match capacity, location, budget, and timing. Document "
-                        "inspection acceptance, seller representations, rigging "
-                        "responsibility, delivery terms, and the commission trigger."
-                    ),
-                ),
-                (
-                    "Settle and reconcile",
-                    "Release funds against agreed evidence and book commissions only",
-                    5.0,
-                    (
-                        "Use an independent escrow provider appropriate to the "
-                        "transaction. Verify changed wire instructions through a "
-                        "previously verified phone number. Reconcile buyer funds, "
-                        "creditor payoff, seller proceeds, broker commission, and "
-                        "delivery evidence to the signed settlement statement."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-02-annual-equipment-opportunity-funnel",
-            "funnel",
-            "A Nested Annual Funnel to $450,000",
-            "Follow equipment opportunities through five increasingly qualified cohorts.",
-            6,
-            "illustrative_model",
-            (
-                "Illustrative annual Base-Case planning cohort, not observed "
-                "conversion data. Every count represents equipment opportunities "
-                "from the same original 500-record cohort, deduplicated by owner "
-                "and asset identifier. Assume 30 settled transactions, each at "
-                "$250,000 equipment value and a 6% broker commission."
-            ),
-            (
-                "500 × 40% × 50% × 50% × 60% = 30 settlements. "
-                "30 × $15,000 = $450,000 recognized broker revenue. "
-                "The corresponding $7,500,000 equipment transaction value belongs "
-                "outside revenue. The 6% overall conversion is a planning assumption."
-            ),
-            [
-                (
-                    "Screened seller opportunities",
-                    "500 distinct equipment opportunities enter the annual cohort",
-                    500.0,
-                    (
-                        "Record owner identity, asset identifier, equipment class, "
-                        "location, and disposition timing. Remove duplicate "
-                        "listings before calculating any conversion rate."
-                    ),
-                ),
-                (
-                    "Signed broker mandates",
-                    "200 opportunities retain documented seller authority and pricing",
-                    200.0,
-                    (
-                        "Convert 40% of the original cohort into signed mandates "
-                        "with commission terms, evidence access, and a plausible "
-                        "asking price; retain rejected reasons in the CRM."
-                    ),
-                ),
-                (
-                    "Qualified buyer matches",
-                    "100 mandated opportunities secure credible buyer engagement",
-                    100.0,
-                    (
-                        "Convert 50% of mandated opportunities into buyer-matched "
-                        "assets. Require named purchasing authority, suitable "
-                        "capacity requirements, and a credible funding path; "
-                        "email opens do not qualify."
-                    ),
-                ),
-                (
-                    "Diligence-ready transactions",
-                    "50 matched opportunities reach documented diligence readiness",
-                    50.0,
-                    (
-                        "Convert 50% of buyer-matched opportunities after "
-                        "inspection scheduling, ownership review, negotiated "
-                        "commercial terms, and a documented settlement route."
-                    ),
-                ),
-                (
-                    "Settled commission events",
-                    "30 transactions generate fifteen thousand dollars each",
-                    30.0,
-                    (
-                        "Convert 60% of diligence-ready opportunities into "
-                        "settlements satisfying the contractual commission "
-                        "trigger. Retain failed inspection, lien, funding, and "
-                        "timing outcomes rather than deleting lost opportunities."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-03-base-case-commission-waterfall",
-            "waterfall",
-            "$450,000 Commissions to $157,500 Owner Net",
-            "Six bars reconcile the canonical Base-Case 35.0% net margin.",
-            3,
-            "illustrative_model",
-            (
-                "Annual USD. Opening revenue and closing owner net are total "
-                "bars; the four intervening values are negative expense movements. "
-                "Expense allocations illustrate a reconciliation, not supplied "
-                "scorecard line items. Contractor fees and deal-variable costs "
-                "are separate from the recurring operating-overhead budget."
-            ),
-            (
-                "$450,000 − $120,000 − $72,000 − $48,000 − $52,500 "
-                "= $157,500; $157,500 / $450,000 = 35.0%. Recurring "
-                "overhead is $4,000 monthly, within the canonical $2,500–$14,000 "
-                "monthly range; total annual expenses also include variable "
-                "deal costs. Equipment principal never enters this bridge."
-            ),
-            [
-                (
-                    "Gross broker commissions",
-                    "$450,000 annual revenue from earned broker commissions",
-                    450000.0,
-                    (
-                        "Opening total: 30 illustrative settlements at $15,000 "
-                        "commission each. Do not add the $7,500,000 underlying "
-                        "equipment value, escrow deposits, or creditor payoffs "
-                        "to this revenue figure."
-                    ),
-                ),
-                (
-                    "Contractor execution",
-                    "Subtract $120,000 for contracted delivery and transaction support",
-                    -120000.0,
-                    (
-                        "Budget contractor sourcing, coordination, and routine "
-                        "inspection labor across the three-contractor Base pod. "
-                        "Resulting balance: $330,000. Contractor status must follow "
-                        "actual working arrangements rather than the seat label."
-                    ),
-                ),
-                (
-                    "External deal services",
-                    "Subtract $72,000 for incremental specialist and closing services",
-                    -72000.0,
-                    (
-                        "Budget outside diagnostics, equipment-specific specialist "
-                        "reports, title work, and deal travel borne by the broker. "
-                        "Exclude labor already counted in contractor execution "
-                        "and transport paid directly by buyers. Balance: $258,000."
-                    ),
-                ),
-                (
-                    "Recurring operating overhead",
-                    "Subtract $48,000 for twelve months of operating infrastructure",
-                    -48000.0,
-                    (
-                        "Allocate $4,000 monthly to CRM, inventory matching, "
-                        "buyer alerts, insurance, bookkeeping, and communications. "
-                        "This is the recurring overhead component, not the total "
-                        "monthly equivalent of every expense. Balance: $210,000."
-                    ),
-                ),
-                (
-                    "Acquisition and settlement friction",
-                    "Subtract $52,500 for acquisition, settlement fees, and losses",
-                    -52500.0,
-                    (
-                        "Illustratively allocate $30,000 to buyer and seller "
-                        "acquisition, $12,000 to broker-borne settlement charges, "
-                        "and $10,500 to realized claim or collection losses. "
-                        "Count each expense once. Resulting balance: $157,500."
-                    ),
-                ),
-                (
-                    "Annual owner net profit",
-                    "$157,500 owner net equals thirty-five percent of revenue",
-                    157500.0,
-                    (
-                        "Closing total, not an additional upward movement. "
-                        "Preserve the canonical owner-net definition: no extra "
-                        "owner salary or personal tax adjustment is introduced. "
-                        "Conservative remains $100,000 × 25% = $25,000; "
-                        "Scaled remains $800,000 × 45% = $360,000."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-04-equipment-subniche-commission-yields",
-            "horizontal_bars",
-            "Compare Commission Yield, Not Equipment Value",
-            "Five illustrative sub-niche yields use the same $100,000 sale denominator.",
-            2,
-            "illustrative_model",
-            (
-                "Numeric values are commission percentages, not dollars, net "
-                "margins, or published market averages. Each bar assumes a "
-                "$100,000 equipment sale solely to isolate yield. Actual "
-                "commission schedules depend on mandate scope and negotiation; "
-                "these bars do not replace canonical annual scenarios."
-            ),
-            (
-                "At a common $100,000 sale value, an 8% commission earns $8,000 "
-                "and a 3% commission earns $3,000. Compare inspection effort, "
-                "sales-cycle length, claim exposure, and collection reliability "
-                "before choosing a niche. Escrow protects settlement mechanics; "
-                "it does not establish equipment condition."
-            ),
-            [
-                (
-                    "Specialized industrial equipment",
-                    "8% illustrative yield earns eight thousand dollars",
-                    8.0,
-                    (
-                        "Assume a scarce, specification-sensitive asset with a "
-                        "narrow buyer pool. Verify utilities, controls, guarding, "
-                        "and removal scope; higher assumed commission yield can "
-                        "be consumed by specialist diligence and slow matching."
-                    ),
-                ),
-                (
-                    "CNC machine tools",
-                    "6% illustrative yield earns six thousand dollars",
-                    6.0,
-                    (
-                        "Require serial-specific configuration, controller and "
-                        "spindle evidence, service records, and independent "
-                        "condition review. This 6% assumption also supports the "
-                        "separate Base funnel's $250,000 average equipment sale."
-                    ),
-                ),
-                (
-                    "Heavy construction equipment",
-                    "5% illustrative yield earns five thousand dollars",
-                    5.0,
-                    (
-                        "Check hour-meter consistency, hydraulic condition, "
-                        "undercarriage wear, attachment ownership, and lien "
-                        "exposure. Document inspection limits where equipment "
-                        "cannot be tested under working load."
-                    ),
-                ),
-                (
-                    "Warehouse and material-handling assets",
-                    "4% illustrative yield earns four thousand dollars",
-                    4.0,
-                    (
-                        "Verify rated capacity, mast configuration, battery "
-                        "condition, charger inclusion, and service evidence. "
-                        "Separate broker compensation from freight and loading "
-                        "charges paid directly to service providers."
-                    ),
-                ),
-                (
-                    "Commercial fleet vehicles",
-                    "3% illustrative yield earns three thousand dollars",
-                    3.0,
-                    (
-                        "Check VIN, certificate of title, recorded lienholder, "
-                        "mileage evidence, and state dealer or broker licensing "
-                        "requirements. Reject payment from an unrelated party "
-                        "until identity and transaction purpose are resolved."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-05-equipment-statutory-risk-preflight",
-            "decision_tree",
-            "Four Checks Before Advertising or Releasing Funds",
-            "Each unresolved branch has a specific stop condition and corrective action.",
-            5,
-            "operating_framework",
-            (
-                "Four ordered decision nodes; numeric values indicate check "
-                "sequence. Apply the relevant state's enacted UCC and licensing "
-                "rules. Cornell UCC text is a reference model, not a substitute "
-                "for identifying the controlling state enactment."
-            ),
-            (
-                "Pass each check with retained evidence. Missing license coverage "
-                "halts regulated activity; unresolved ownership halts settlement; "
-                "unsupported condition claims halt publication; unresolved export "
-                "restrictions halt the affected transaction or shipment."
-            ),
-            [
-                (
-                    "Activity and licensing",
-                    "Proceed only after classifying asset, jurisdiction, and brokerage activity",
-                    1.0,
-                    (
-                        "Determine whether the activity requires a dealer, "
-                        "vehicle broker, auction, or other state authorization. "
-                        "California Vehicle Code section 11700 is a vehicle "
-                        "dealer example, not a universal CNC licensing rule. "
-                        "If required coverage is absent, stop that activity "
-                        "until the required authorization is effective."
-                    ),
-                ),
-                (
-                    "Ownership and lien release",
-                    "Proceed only with verified ownership and executable creditor releases",
-                    2.0,
-                    (
-                        "Apply UCC 9-315 and the applicable title regime. Obtain "
-                        "a payoff statement and asset-specific release or sale "
-                        "authorization from the secured party. Use an authorized "
-                        "UCC-3 amendment or termination under UCC 9-513 as "
-                        "appropriate; do not terminate a broader facility merely "
-                        "because one machine is being sold."
-                    ),
-                ),
-                (
-                    "Condition and warranties",
-                    "Proceed only with supportable descriptions and explicit contract allocation",
-                    3.0,
-                    (
-                        "Review seller descriptions, inspection findings, and "
-                        "contract language against applicable UCC 2-312, 2-313, "
-                        "and 2-316. Identify the seller and the broker's authority. "
-                        "Pause unsupported claims; a general as-is statement "
-                        "does not automatically erase an express warranty."
-                    ),
-                ),
-                (
-                    "Export and payment integrity",
-                    "Proceed only after resolving classification, counterparties, and settlement risks",
-                    4.0,
-                    (
-                        "For export transactions, determine EAR scope under "
-                        "15 CFR Part 734, classification and destination controls "
-                        "under Part 738, and restrictions under Parts 744 and "
-                        "746; also assess applicable OFAC sanctions under "
-                        "31 CFR Chapter V. Resolve required authorizations "
-                        "before shipment and independently verify escrow and "
-                        "wire instructions before releasing funds."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-06-four-seat-equipment-brokerage-pod",
-            "org_architecture",
-            "Four Base Seats; Six People at Scale",
-            "One full-time owner and three contractors divide commercial and evidence work.",
-            11,
-            "operating_framework",
-            (
-                "Each numeric value represents one person in the four-person "
-                "Conservative and Base pod: 1 FT + 3 C. Contractor seats represent "
-                "assigned responsibilities, not necessarily full-time workloads. "
-                "Scaled expands to 2 FT + 4 C by adding one full-time commercial "
-                "operator and one contractor inspection specialist."
-            ),
-            (
-                "Conservative: $100,000 revenue and $25,000 owner net with "
-                "1 FT + 3 C. Base: $450,000 revenue and $157,500 owner net "
-                "with the same four people. Scaled: $800,000 revenue and "
-                "$360,000 owner net with 2 FT + 4 C. The upper revenue "
-                "scenario uses six people, not the four-person Base pod."
-            ),
-            [
-                (
-                    "Owner and commercial lead",
-                    "One full-time seat owns mandates, pricing, and broker revenue",
-                    1.0,
-                    (
-                        "Own seller qualification, buyer negotiation, signed "
-                        "mandates, and commission collection. Review exceptions "
-                        "without personally controlling every evidence source. "
-                        "At scale, add a second full-time commercial operator "
-                        "to split seller development and buyer conversion."
-                    ),
-                ),
-                (
-                    "Technical inspection specialist",
-                    "One contractor seat owns independent equipment condition evidence",
-                    1.0,
-                    (
-                        "Produce serial-specific inspection reports, photograph "
-                        "defects, document test limitations, and estimate repair "
-                        "scope separately from sale pricing. Add a second "
-                        "contractor inspection specialist at scale to expand "
-                        "equipment coverage and reduce scheduling bottlenecks."
-                    ),
-                ),
-                (
-                    "Inventory and buyer research analyst",
-                    "One contractor seat owns inventory matching and buyer alerts",
-                    1.0,
-                    (
-                        "Normalize Airtable inventory records, deduplicate owner "
-                        "and asset identities, maintain HubSpot buyer segments, "
-                        "and route relevant alerts. Measure qualified matches "
-                        "and buyer replies rather than counting raw messages."
-                    ),
-                ),
-                (
-                    "Transaction coordinator",
-                    "One contractor seat owns documents and independent settlement reconciliation",
-                    1.0,
-                    (
-                        "Track lien searches, creditor documents, signatures, "
-                        "inspection acceptance, and escrow statements. Require "
-                        "separate verification of changed payment instructions; "
-                        "the person entering a new bank destination must not "
-                        "be its sole verifier."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-07-startup-capital-allocation",
-            "stacked_comparison",
-            "A $60,000 Asset-Light Startup Allocation",
-            "Four cash buckets fit inside the canonical $10,000–$75,000 startup range.",
-            4,
-            "illustrative_model",
-            (
-                "Numeric values are USD allocations totaling $60,000. This is "
-                "one illustrative capitalization plan, not a prescribed minimum. "
-                "Cash reserves are not immediate expenses; spending enters the "
-                "appropriate operating category when incurred. Do not add these "
-                "allocations again to the annual expense waterfall."
-            ),
-            (
-                "$36,000 + $8,000 + $10,000 + $6,000 = $60,000. "
-                "The $36,000 recurring-overhead reserve covers nine months at "
-                "$4,000 monthly before revenue, matching the upper end of the "
-                "canonical two-to-nine-month first-deal window. Other spending "
-                "uses the remaining buckets and must be paced separately."
-            ),
-            [
-                (
-                    "Recurring-overhead reserve",
-                    "$36,000 reserved for nine months of recurring operations",
-                    36000.0,
-                    (
-                        "Hold this cash against the Base overhead assumption "
-                        "of $4,000 monthly. It excludes owner household spending "
-                        "and variable closing costs. Track actual runway weekly "
-                        "because late commissions can arrive after bills fall due."
-                    ),
-                ),
-                (
-                    "Field verification capacity",
-                    "$8,000 allocated to early inspections and ownership evidence",
-                    8000.0,
-                    (
-                        "Fund initial specialist inspections, title and filing "
-                        "searches, equipment photography, and necessary site "
-                        "visits. Require asset-specific scopes and stop spending "
-                        "when a seller cannot establish authority or access."
-                    ),
-                ),
-                (
-                    "Seller and buyer acquisition",
-                    "$10,000 allocated to targeted sourcing and qualified outreach",
-                    10000.0,
-                    (
-                        "Support focused trade-directory research, targeted "
-                        "seller outreach, buyer qualification, and selected "
-                        "industry visits. Release spending in small batches "
-                        "against mandate and buyer-match evidence rather than "
-                        "committing the full budget to broad advertising."
-                    ),
-                ),
-                (
-                    "Systems and transaction setup",
-                    "$6,000 allocated to equipment records and settlement readiness",
-                    6000.0,
-                    (
-                        "Configure Airtable asset records, HubSpot workflows, "
-                        "document templates, e-signature, and secure file access. "
-                        "Establish escrow-provider verification and bookkeeping "
-                        "categories. Purchase no equipment inventory and advance "
-                        "no buyer purchase principal from this allocation."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-08-thirty-day-equipment-brokerage-sprint",
-            "timeline_roadmap",
-            "Thirty Days to a Documented Brokerage Pipeline",
-            "Four weekly milestones build readiness; the first deal can take two to nine months.",
-            12,
-            "operating_framework",
-            (
-                "Numeric values are milestone end days: 7, 14, 21, and 30. "
-                "Activity counts are sprint targets, not observed outcomes. "
-                "A first-month settlement is not assumed, and the annual "
-                "Base funnel is not compressed into this 30-day schedule."
-            ),
-            (
-                "Finish the sprint with a narrow equipment thesis, auditable "
-                "asset records, qualified buyer conversations, and a rehearsed "
-                "settlement process. Preserve cash for the canonical two-to-nine-"
-                "month first-deal window instead of funding the business from "
-                "an assumed first-month commission."
-            ),
-            [
-                (
-                    "Days 1-7",
-                    "Select one niche and establish operating and evidence requirements",
-                    7.0,
-                    (
-                        "Choose a specific equipment class and geography. "
-                        "Complete a licensing activity matrix, seller mandate "
-                        "template, inspection checklist, and $60,000 cash plan. "
-                        "Assign the four Base seats and create Airtable fields "
-                        "for serial number, owner, condition, liens, and price."
-                    ),
-                ),
-                (
-                    "Days 8-14",
-                    "Build twenty screened records and pursue five documented mandates",
-                    14.0,
-                    (
-                        "Target 20 distinct seller opportunities and five "
-                        "signed mandates with verified authority and evidence "
-                        "access. Establish independent inspection coverage and "
-                        "a lien-search workflow. Keep unsigned opportunities "
-                        "separate from inventory authorized for advertising."
-                    ),
-                ),
-                (
-                    "Days 15-21",
-                    "Qualify ten buyer conversations and test three asset matches",
-                    21.0,
-                    (
-                        "Target ten conversations with identified purchasing "
-                        "decision-makers and three asset-specific matches. "
-                        "Record capacity, budget, location, and purchase timing. "
-                        "Test HubSpot buyer alerts against relevant inventory "
-                        "and retain explicit reasons for rejected matches."
-                    ),
-                ),
-                (
-                    "Days 22-30",
-                    "Rehearse settlement and publish a cash-aware pipeline review",
-                    30.0,
-                    (
-                        "Walk one candidate transaction through inspection "
-                        "acceptance, creditor payoff, release documents, escrow "
-                        "instructions, and commission reconciliation. Use a "
-                        "simulation if no transaction is ready. Review cohort "
-                        "counts, blocked evidence, cash runway, and the next "
-                        "month's seller and buyer follow-up commitments."
-                    ),
-                ),
-            ],
-        ),
-    ]
-
-    return [
-        dict(
-            diagram_id=identifier,
-            chart_type=kind,
-            title=title,
-            subtitle=subtitle,
-            chapter_number=chapter,
-            epistemic_tag=tag,
-            assumptions_note=note,
-            caption=caption,
-            stages=[
-                dict(
-                    label=label,
-                    value=value,
-                    numeric_value=float(number),
-                    detail=detail,
-                )
-                for label, value, number, detail in stages
-            ],
-        )
-        for (
-            identifier,
-            kind,
-            title,
-            subtitle,
-            chapter,
-            tag,
-            note,
-            caption,
-            stages,
-        ) in specs
-    ]

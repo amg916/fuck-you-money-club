@@ -1,745 +1,823 @@
 from __future__ import annotations
 
-CHAPTER_10 = {
-    "id": "Q10",
-    "chapter_id": "Q10",
-    "chapter_number": 10,
-    "question_number": 10,
-    "slug": "automation-ai-leverage-scalable-distribution-flywheels",
-    "question_prompt": "How does a 2 FT + 3 C (5 people) million-dollar lead generation team automate 70%+ of repetitive research, qualification, fulfillment, and traffic/deal acquisition while keeping human-in-the-loop QA?",
-    "kicker": "Q10 / THE BIG MONEY PLAYBOOKS",
-    "title": "Automation, AI Leverage & Scalable Distribution Flywheels",
-    "subtitle": "Python Event Pipelines, Evidence-Bound ABM, Salesforce Attribution, Calendly Routing, and Consent-First Distribution Under CAN-SPAM, TCPA, and Lifeline Rules",
-    "layout_template": "case_study_walkthrough",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #21, Million-Dollar Lead Generation, holds Rank #18 with an "
-        "86/100 Money-to-Manpower Score across 30 mapped plays. This chapter turns "
-        "that opportunity into an evidence-bound operating system: Python workers "
-        "collect account signals, language models structure research, Salesforce "
-        "preserves attribution, and scheduling webhooks close the delivery loop. "
-        "The Conservative, Base, and Scaled cases produce $30,000, $202,500, and "
-        "$480,000 annual owner net profit, respectively, from operator retainers "
-        "and qualified-opportunity fees rather than client contract values. A "
-        "2 FT + 3 C team targets more than 70% net repetitive-work reduction "
-        "while retaining human decisions over outreach, disputed attribution, "
-        "and regulated referrals. Three mapped plays expose the architecture's "
-        "hardest evidence, eligibility, and recovery problems."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$150,000",
-            "context": "Annual operator retainers and qualified-opportunity fees; excludes client contract values",
-            "note": "20% net margin; $30,000 annual owner net profit; 2 FT + 3 C",
-        },
-        {
-            "label": "Base",
-            "value": "$675,000",
-            "context": "Annual operator retainers and qualified-opportunity fees; excludes client contract values",
-            "note": "30.0% net margin; $202,500 annual owner net profit; 2 FT + 3 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$1,200,000",
-            "context": "Annual operator retainers and qualified-opportunity fees; excludes client contract values",
-            "note": "40% net margin; $480,000 annual owner net profit; 3 FT + 4 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Build an evidence pipeline before buying more enrichment",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Organize the five-person team around decisions rather than applications. "
-                    "The first full-time operator owns account strategy, client definitions, "
-                    "and opportunity acceptance; the second owns integrations, observability, "
-                    "and recovery. Three contractors cover evidence research, editorial "
-                    "review, and campaign operations within explicit access boundaries. "
-                    "Create one event envelope containing tenant_id, account_id, event_id, "
-                    "source_url, observed_at, collected_at, permission_basis, schema_version, "
-                    "and payload_hash. Python workers can use urllib.request for authorized "
-                    "HTTP retrieval, hashlib for fingerprints, and sqlite3 for a single-host "
-                    "pilot ledger. Store timestamps in UTC and retain source excerpts "
-                    "sufficient to reproduce each conclusion. Use customer-approved Salesforce "
-                    "or HubSpot APIs for writes; never let an enrichment vendor become "
-                    "the authoritative account identity. Resolve legal entities and domains "
-                    "before requesting contact records, because subsidiaries, franchises, "
-                    "and acquired brands frequently share technology but buy independently. "
-                    "Treat retrieved pages as untrusted data, not instructions to the "
-                    "language model. Strip executable markup, limit response sizes, and "
-                    "pass only the excerpt needed for extraction. The model returns "
-                    "structured claims and evidence references; it receives no credentials "
-                    "and cannot authorize outreach, change billing, or browse arbitrary "
-                    "addresses supplied inside a page."
-                ),
-                (
-                    "Measure automation against a fixed workload, including work that "
-                    "moves downstream. An illustrative batch of 100 account packets "
-                    "takes 1,000 minutes manually. Automated collection, normalization, "
-                    "deduplication, and first-pass qualification remove 800 minutes; "
-                    "retained decisions consume 200 minutes, additional QA consumes "
-                    "60, and exception recovery consumes 20. The resulting 280 "
-                    "human minutes represent a 72% net reduction, not an 80% "
-                    "claim that hides review. Budget each automated run at $0.06 "
-                    "for retrieval, $0.08 for licensed enrichment, $0.03 for model "
-                    "inference, and $0.02 for queueing and storage: $0.19 before "
-                    "labor. One hundred runs cost $19; a $2 retry allowance "
-                    "and 280 minutes at an illustrative $45 hourly loaded labor "
-                    "rate bring the batch to $231, or $2.31 per packet. "
-                    "These are planning assumptions rather than vendor quotations. "
-                    "Instrument actual token usage, cache hits, failures, and reviewer "
-                    "minutes separately. A packet that requires three corrections is "
-                    "not a successful automated output. Evaluate a fixed weekly "
-                    "sample against source truth and track accepted packets per "
-                    "paid reviewer hour. Keep the target conditional on unchanged "
-                    "quality and contact-permission standards."
-                ),
-                (
-                    "Make every side effect recoverable. For incoming webhooks, implement "
-                    "the provider's documented signature scheme using hmac where "
-                    "applicable, reject stale timestamps, and persist the verified "
-                    "envelope before acknowledging receipt. A unique constraint on "
-                    "tenant_id and event_id prevents ordinary replay from creating "
-                    "duplicate work. Run network requests outside database transactions "
-                    "and use a transactional outbox to record pending CRM writes. "
-                    "Persist the external record identifier after success; after "
-                    "a timeout, reconcile by the deterministic external key before "
-                    "retrying. Retry transient failures with bounded exponential "
-                    "backoff and jitter, honor Retry-After, and move exhausted "
-                    "jobs to an exception queue. Schema failures, revoked access, "
-                    "and absent permission require investigation rather than repeated "
-                    "execution. Prevent server-side request abuse by rejecting "
-                    "loopback, private, and link-local destinations and rechecking "
-                    "redirect targets. Keep secrets outside event payloads and "
-                    "redact personal contact details from ordinary logs. At pilot "
-                    "scale, one SQLite writer and short transactions are manageable; "
-                    "move to a managed transactional store before distributed "
-                    "workers introduce lock contention. Test restore procedures, "
-                    "not merely backups. A reviewer must be able to reopen "
-                    "the original evidence and resume one failed account without "
-                    "replaying an entire campaign."
-                ),
-            ],
-            "table": {
-                "caption": "Six recoverable stages in the account-to-opportunity event pipeline",
-                "headers": [
-                    "Pipeline stage and accountable operating owner",
-                    "Durable input and concrete transformation performed",
-                    "Human decision retained before consequential use",
-                    "Recovery path and measured operating evidence",
-                ],
-                "rows": [
-                    [
-                        "Research contractor collects authorized commercial account evidence weekly",
-                        "Python fingerprints source excerpts and timestamps every observation",
-                        "Reviewer resolves ambiguous entity ownership before contact enrichment",
-                        "Replay stored source identifiers after bounded retrieval retries",
-                    ],
-                    [
-                        "Integration owner normalizes domains and customer account identifiers",
-                        "Entity rules separate parent companies from buying subsidiaries",
-                        "Account strategist confirms disputed procurement boundaries with clients",
-                        "Merge reversals preserve aliases and original source lineage",
-                    ],
-                    [
-                        "Research contractor supervises model extraction of buying signals",
-                        "Structured responses link every material claim to excerpts",
-                        "Reviewer rejects unsupported budgets and invented renewal dates",
-                        "Malformed responses enter manual extraction without automatic publication",
-                    ],
-                    [
-                        "Campaign contractor prepares permission-aware contact eligibility records",
-                        "Suppression checks join channel permissions and revocation timestamps",
-                        "Reviewer resolves permission conflicts before any first contact",
-                        "Unavailable authoritative checks stop affected outbound delivery immediately",
-                    ],
-                    [
-                        "Integration owner publishes idempotent Salesforce account evidence updates",
-                        "Transactional outbox associates each write with deterministic keys",
-                        "Client owner decides disputed source credit and opportunity acceptance",
-                        "Reconcile remote identifiers before retrying ambiguous write outcomes",
-                    ],
-                    [
-                        "Campaign contractor maintains scheduling and attendance event reconciliation",
-                        "Calendly identifiers join meeting creation cancellation and attendance",
-                        "Account strategist approves exceptions involving sensitive attendee context",
-                        "Manual scheduling preserves original attribution and permission records",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Make evidence cheaper without making judgment disposable",
-                "body": "The strongest savings come from reducing repeated work and disputed outputs, not from removing the reviewer who understands the buying committee.",
-                "items": [
-                    "Cache entity-level research before purchasing person-level enrichment; five contacts at one account should share one verified technology packet.",
-                    "Maintain a small adversarial evaluation set containing subsidiaries, abandoned scripts, rescheduled meetings, and revoked contacts; rerun it after every prompt change.",
-                    "Send reviewers evidence differences rather than full dossiers, while preserving one-click access to the complete source history.",
-                    "Record reviewer rejection reasons as structured labels; fix the highest-volume upstream defect before adding another model or enrichment subscription.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Convert three mapped plays into bounded signal services",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "For saas_technographic_churn_pixel_scraping, collect permitted public "
-                    "HTML and licensed DNS history for Salesforce, HubSpot, "
-                    "Marketo, Segment, and NetSuite indicators. Python's standard "
-                    "library does not provide a general TXT/CNAME resolver, so "
-                    "use an authorized DNS-over-HTTPS JSON endpoint through "
-                    "urllib.request or a contracted passive-DNS API. Weekly "
-                    "sampling identifies an observation interval, not the exact "
-                    "installation or removal day. Store last_seen_present and "
-                    "first_seen_absent; never fabricate precision between them. "
-                    "Scripts may disappear because of tag-manager changes, "
-                    "regional rendering, or site redesigns rather than vendor "
-                    "churn. Require a second observation and an independent "
-                    "job posting or migration announcement before promoting "
-                    "the account. A Month 10–11 renewal hypothesis is useful "
-                    "only when the contract anniversary has supporting evidence; "
-                    "installation dates alone do not establish annual terms. "
-                    "Illustratively, 1,000 domains across four weekly snapshots "
-                    "produce 4,000 runs at $0.19, or $760 monthly. If "
-                    "40 accounts change and reviewers spend six minutes "
-                    "each at $45 hourly, review adds $180. Eight validated "
-                    "migration signals therefore cost $117.50 each before "
-                    "selling costs. When active collection fails, combine "
-                    "licensed passive DNS with dated job-posting mentions, "
-                    "then retain human confirmation before routing."
-                ),
-                (
-                    "For mvno_lifeline_acp_telecom_subsidy_aggregation, distinguish a "
-                    "lead-generation service from operating a carrier or claiming "
-                    "subscriber support. ACP ended in 2024; its historical "
-                    "benefits cannot fund this model. Lifeline support depends "
-                    "on eligible telecommunications carrier status, qualifying "
-                    "subscribers, applicable service rules, and valid claims. "
-                    "The familiar federal broadband support ceiling of $9.25 "
-                    "and additional Tribal support of up to $25 are "
-                    "conditional program amounts, not universal margins; state "
-                    "benefits require separate program analysis. A purported "
-                    "$2–$4 wholesale network cost omits support, taxes, "
-                    "devices, usage variability, fraud losses, and administration. "
-                    "Never advertise unlimited free service unless the carrier's "
-                    "actual approved offer supports every material claim. "
-                    "Keep household eligibility documents in the ETC's "
-                    "authorized systems rather than the agency CRM. As "
-                    "an illustrative service contract, 2,000 carrier-accepted "
-                    "enrollments at $12 each generate $24,000 operator "
-                    "revenue, not the carrier's reimbursements. A 10% "
-                    "contractual reversal reserve leaves $21,600 before "
-                    "delivery costs. Day-20 SMS or IVR reminders may "
-                    "support engagement where permitted, but delivery alone "
-                    "does not establish qualifying usage. Apply the "
-                    "relevant non-usage notice and cure process; claw "
-                    "back agent commissions only under documented contract "
-                    "terms and verified eligibility or usage failures."
-                ),
-                (
-                    "For tcpa_litigator_scrub_honeypot_arbitrage, implement an optional "
-                    "docket-risk overlay, not a permission engine and not "
-                    "a deceptive collection device. Use authorized public "
-                    "court access or licensed feeds, respect access terms, "
-                    "and avoid publishing accusations about matched individuals. "
-                    "Common names, reassigned numbers, and stale addresses "
-                    "make identity matching unreliable. A match cannot "
-                    "establish wrongdoing, while a clean result cannot "
-                    "authorize contact. The operative checks remain the "
-                    "channel's required permission, applicable National Do "
-                    "Not Call restrictions, company-specific suppression, "
-                    "revocations, and dialing or messaging rules under "
-                    "47 U.S.C. § 227 and 47 CFR § 64.1200. "
-                    "Choose a conservative operating policy that requires "
-                    "documented consent for automated promotional calls "
-                    "and texts; have the channel specialist resolve "
-                    "the exact statutory standard before launch. "
-                    "Illustratively, 10,000 screenings sold at $0.08 "
-                    "produce $800 operator revenue. Licensed checks "
-                    "at $0.03 cost $300; five reviewer hours "
-                    "at $45 cost $225, leaving $275 before "
-                    "other expenses. This contribution is not owner "
-                    "net profit. If docket enrichment fails or "
-                    "identity remains ambiguous, disable that enrichment "
-                    "and require independently verified consent plus "
-                    "authoritative suppression checks. Never weaken "
-                    "suppression to preserve screening throughput."
-                ),
-            ],
-            "table": {
-                "caption": "Mapped-play evidence controls, illustrative unit economics, and fallback decisions",
-                "headers": [
-                    "Mapped play component and deliverable boundary",
-                    "Evidence required before routing or recognition",
-                    "Illustrative unit calculation with denominator preserved",
-                    "Failure fallback that preserves operating standards",
-                ],
-                "rows": [
-                    [
-                        "Technographic observation service detects candidate enterprise vendor changes",
-                        "Dated script evidence pairs with licensed DNS observations",
-                        "Four thousand monthly runs multiply by nineteen cents",
-                        "Use passive history when permitted active retrieval fails",
-                    ],
-                    [
-                        "Technographic qualification service validates actual migration buying signals",
-                        "Independent job postings corroborate repeated observed technology changes",
-                        "Nine hundred forty dollars divided by eight signals",
-                        "Retain observation intervals instead of inventing exact dates",
-                    ],
-                    [
-                        "Telecom acquisition service delivers carrier-accepted eligible enrollment referrals",
-                        "ETC acceptance records establish each contractually payable enrollment",
-                        "Two thousand accepted enrollments multiply by twelve dollars",
-                        "Pause acquisition when carrier eligibility verification becomes unavailable",
-                    ],
-                    [
-                        "Telecom retention service reconciles permitted reminders and reversals",
-                        "Carrier usage records support contract-specific commission reversal decisions",
-                        "Twenty-four thousand dollars less ten percent reversal reserve",
-                        "Apply required notice procedures before treating non-usage as final",
-                    ],
-                    [
-                        "Outbound screening service checks permission and authoritative suppressions",
-                        "Current permission records join relevant channel-specific suppression sources",
-                        "Ten thousand paid screenings multiply by eight cents",
-                        "Stop affected contact when authoritative suppression checks fail",
-                    ],
-                    [
-                        "Optional docket overlay flags identity questions for review",
-                        "Licensed case records require independent identity corroboration first",
-                        "Eight hundred revenue less three hundred checks and two hundred twenty-five review",
-                        "Disable uncertain enrichment without relaxing verified permission requirements",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four pre-flight checks before any consequential output",
-                "body": "Automation may prepare a recommendation; a named reviewer must verify the evidence and operating boundary before the system acts on people or revenue.",
-                "items": [
-                    "Confirm each technographic claim includes two dated observations, an independent corroborating source, and an explicit uncertainty interval.",
-                    "Confirm telecom materials use the ETC's actual service terms, omit ACP funding, and route eligibility evidence through authorized carrier systems.",
-                    "Confirm outbound eligibility uses current channel permission, authoritative suppression checks, and propagated revocations regardless of docket results.",
-                    "Confirm the client accepted the opportunity definition, source-credit rules, duplicate window, fee trigger, and contractual reversal process.",
-                ],
-            },
-        },
-        {
-            "heading": "3. Connect qualification, attribution, scheduling, and distribution",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Define a qualified opportunity as a contract object "
-                    "before teaching a model to recognize one. Required "
-                    "fields should include the accepted account, relevant "
-                    "buying role, evidenced business problem, mutually "
-                    "agreed next step, and client acceptance status. "
-                    "A calendar booking alone does not establish "
-                    "procurement authority, budget, or a payable opportunity. "
-                    "Keep raw source events immutable and derive "
-                    "first-touch, opportunity-sourcing, and influence views "
-                    "separately. Use Salesforce external identifiers and "
-                    "campaign membership, or equivalent HubSpot properties, "
-                    "to connect accepted evidence to the CRM "
-                    "opportunity without overwriting an existing owner. "
-                    "Record the attribution policy version on each "
-                    "fee-bearing event. Calendly webhooks should map "
-                    "creation, cancellation, and rescheduling to one "
-                    "meeting lineage; duplicate notifications must not "
-                    "produce multiple fees. Before displaying availability, "
-                    "check time zones, routing ownership, minimum "
-                    "notice, and contact eligibility. After the meeting, "
-                    "the client confirms attendance and qualification "
-                    "through a structured form. If the CRM "
-                    "is unavailable, hold proposed changes in the "
-                    "outbox and send an internal exception task, "
-                    "not an untracked spreadsheet invoice. Freeze "
-                    "disputed fees until the account owner resolves "
-                    "the evidence under the signed attribution "
-                    "rules. A transparent event ledger makes "
-                    "this resolution faster than competing dashboard screenshots."
-                ),
-                (
-                    "Build programmatic distribution from approved account problems, "
-                    "not mass-generated claims. Publish useful migration "
-                    "checklists, procurement timelines, and benchmark pages "
-                    "only when a subject-matter reviewer can substantiate "
-                    "the content. Avoid customer-identifying examples without "
-                    "permission and remove thin pages rather than "
-                    "inflating the index. The loop is straightforward: "
-                    "aggregate recurring questions from accepted opportunities, "
-                    "produce an approved asset, distribute through "
-                    "search and customer-authorized channels, capture an "
-                    "explicit request, and return conversion evidence "
-                    "to the topic backlog. Illustratively, 20 pages "
-                    "at $150 production cost require $3,000. "
-                    "If they collectively attract 2,000 relevant "
-                    "visits, convert 3% into 60 requests, "
-                    "and yield six client-accepted opportunities, "
-                    "content cost is $500 per accepted "
-                    "opportunity before maintenance and sales labor. "
-                    "Treat these rates as hypotheses until "
-                    "cohorts mature. A voluntary shareable procurement "
-                    "worksheet can create a second loop: "
-                    "100 recipients sharing at 15%, with "
-                    "two new visitors each and 20% "
-                    "request conversion, generate six additional "
-                    "requests, not six qualified opportunities. "
-                    "Use referral parameters that identify the "
-                    "asset rather than exposing personal identities. "
-                    "Measure incremental outcomes against a comparable "
-                    "holdout instead of crediting every later "
-                    "deal to the last downloaded document."
-                ),
-                (
-                    "For outbound distribution, let automation select "
-                    "reviewable account cohorts and draft evidence-linked "
-                    "messages, while humans approve targeting rules "
-                    "and consequential claims. Use truthful sender "
-                    "identity and subject lines, a valid "
-                    "postal address, and a working opt-out "
-                    "mechanism for commercial email under "
-                    "15 U.S.C. § 7704. Honor opt-outs "
-                    "within ten business days and propagate "
-                    "them immediately operationally rather than "
-                    "waiting for the statutory ceiling. "
-                    "Do not confuse email rules with "
-                    "permission for automated promotional texts "
-                    "or calls. Store channel-specific eligibility "
-                    "and enforce suppression again at send "
-                    "time, because approval yesterday cannot "
-                    "override revocation today. Start with "
-                    "small client-approved batches, review replies, "
-                    "and stop when complaints or delivery "
-                    "failures exceed the campaign's documented "
-                    "threshold. Feed genuine objections into "
-                    "qualification rules, not into tactics "
-                    "for bypassing recipient preferences. For "
-                    "covered California businesses, evaluate "
-                    "CCPA sale or sharing obligations "
-                    "and applicable opt-out signals before "
-                    "transferring contact data between clients "
-                    "or advertising systems. When a "
-                    "permission or suppression dependency fails, "
-                    "pause the affected channel while "
-                    "research and approved content work "
-                    "continue. That separation preserves "
-                    "useful throughput without turning "
-                    "a vendor outage into unauthorized distribution."
-                ),
-            ],
-            "table": {
-                "caption": "Six distribution and attribution loops with distinct acceptance events",
-                "headers": [
-                    "Growth loop and source event definition",
-                    "Concrete conversion arithmetic and operator interpretation",
-                    "Human review retained at consequential transition",
-                    "Stop condition and recoverable fallback path",
-                ],
-                "rows": [
-                    [
-                        "Programmatic migration guides attract relevant enterprise buying teams",
-                        "Two thousand visits produce sixty requests at three percent",
-                        "Subject specialist verifies claims before pages become public",
-                        "Withdraw inaccurate pages and correct affected downstream assets",
-                    ],
-                    [
-                        "Approved procurement worksheet supports voluntary recipient-led distribution",
-                        "Fifteen shares generate thirty visits and six requests",
-                        "Editor removes identifying account details before enabling sharing",
-                        "Disable public sharing when confidential customer context appears",
-                    ],
-                    [
-                        "Evidence-linked outbound messages invite a specific buying conversation",
-                        "Measure accepted opportunities against delivered eligible account cohorts",
-                        "Campaign owner approves targeting and material message claims",
-                        "Pause affected channel whenever suppression verification becomes unavailable",
-                    ],
-                    [
-                        "Scheduling workflow converts requests into routed meeting lineages",
-                        "Count one rescheduled meeting lineage rather than repeated bookings",
-                        "Account owner resolves territory conflicts before external confirmation",
-                        "Offer manual scheduling while preserving source and permission",
-                    ],
-                    [
-                        "Client acceptance workflow establishes the payable opportunity event",
-                        "Forty-five accepted opportunities at three thousand produce 135000 dollars",
-                        "Client representative confirms the signed opportunity acceptance criteria",
-                        "Hold disputed fees outside invoices until evidence resolution",
-                    ],
-                    [
-                        "Outcome feedback improves future account and content selection",
-                        "Compare mature cohort yields against contemporaneous matched holdouts",
-                        "Strategist approves rule changes after reviewing false positives",
-                        "Restore prior rule version when acceptance quality deteriorates",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Register the evidence and permission envelope",
-                    "action": "Persist the account identity, source excerpts, channel eligibility, and deterministic event key before enrichment.",
-                    "detail": "Reject cross-tenant references, unapproved retrieval destinations, missing source timestamps, and events whose permission basis cannot be evaluated.",
-                },
-                {
-                    "step": 2,
-                    "title": "Extract, corroborate, and review the proposed action",
-                    "action": "Run schema-constrained extraction, join corroborating sources, and send material claims to the assigned reviewer.",
-                    "detail": "Record the reviewer, evidence version, decision, and rejection reason; a numeric model score cannot replace factual support.",
-                },
-                {
-                    "step": 3,
-                    "title": "Write once and route the meeting safely",
-                    "action": "Publish approved CRM changes through the outbox, recheck suppression, and create or update the meeting lineage.",
-                    "detail": "Reconcile remote identifiers after ambiguous timeouts and preserve cancellation or rescheduling history instead of creating duplicate fee events.",
-                },
-                {
-                    "step": 4,
-                    "title": "Reconcile acceptance, costs, and learning",
-                    "action": "Obtain client acceptance, apply contract fee rules, and attach actual run costs and reviewer minutes to the cohort.",
-                    "detail": "Resolve attribution disputes before invoicing and update extraction or targeting rules only after reviewing mature accepted-outcome evidence.",
-                },
-            ],
-        },
-        {
-            "heading": "4. Scale only the loops that reconcile to owner profit",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Keep the scorecard fixed while testing "
-                    "different delivery methods. The Conservative "
-                    "case recognizes $150,000 annual operator "
-                    "revenue, incurs $120,000 total expenses, "
-                    "and leaves $30,000 owner net "
-                    "profit at 20% margin with "
-                    "2 FT + 3 C. "
-                    "An illustrative bridge is five "
-                    "clients paying $2,000 monthly for "
-                    "$120,000 annual retainers, plus ten "
-                    "accepted opportunities at $3,000 for "
-                    "$30,000. The Base case recognizes "
-                    "$675,000, incurs $472,500, and "
-                    "leaves $202,500 at 30.0% with "
-                    "the same staffing count: nine "
-                    "clients paying $5,000 monthly produce "
-                    "$540,000, while 45 accepted opportunities "
-                    "at $3,000 produce $135,000. "
-                    "The Scaled case recognizes $1,200,000, "
-                    "incurs $720,000, and leaves "
-                    "$480,000 at 40% with "
-                    "3 FT + 4 C: "
-                    "12 clients paying $6,250 "
-                    "monthly produce $900,000, plus "
-                    "100 accepted opportunities at "
-                    "$3,000 produce $300,000. These "
-                    "bridges illustrate the canonical totals "
-                    "rather than establish market prices. "
-                    "A client's million-dollar contract "
-                    "is underlying client business, "
-                    "not agency revenue. Likewise, "
-                    "telecom reimbursements and screened "
-                    "prospects never become operator "
-                    "revenue merely because a dashboard "
-                    "can count them. Recognize "
-                    "only earned contractual service fees "
-                    "using a consistently applied accounting policy."
-                ),
-                (
-                    "Translate annual profit targets into "
-                    "capacity and cash constraints "
-                    "before expanding acquisition. Canonical "
-                    "total expenses average $10,000, "
-                    "$39,375, and $60,000 monthly "
-                    "across the three cases. "
-                    "The stated $4,000–$20,000 monthly "
-                    "opex range therefore cannot "
-                    "serve as an all-in expense "
-                    "ceiling for Base or "
-                    "Scaled; document which overhead "
-                    "categories it covers and "
-                    "reconcile payroll, contractors, acquisition, "
-                    "and delivery separately. At "
-                    "the Conservative level, validate "
-                    "whether the five-person configuration "
-                    "fits actual compensation and "
-                    "contractor hours; do not "
-                    "quietly erase labor to "
-                    "preserve margin. With startup "
-                    "capital of $15,000–$100,000 "
-                    "and first-deal timing of "
-                    "3–12 months, a fully "
-                    "staffed launch may exhaust "
-                    "cash before collections. Stage "
-                    "commitments around signed retainers "
-                    "and funded delivery capacity. "
-                    "The 100-packet model requires "
-                    "4.67 human hours, so "
-                    "a 1,000-packet month requires "
-                    "about 46.7 hours before "
-                    "selling, account management, and "
-                    "client meetings. At $2.31 "
-                    "per packet, that workload "
-                    "costs $2,310 under the "
-                    "illustrative assumptions. If only "
-                    "ten packets become accepted "
-                    "opportunities, processing cost alone "
-                    "is $231 per acceptance. "
-                    "Track collections and reversals "
-                    "alongside this conversion denominator."
-                ),
-                (
-                    "Scale through repeatable evidence quality, "
-                    "not unrestricted sending volume. "
-                    "Maintain a weekly operating "
-                    "review covering accepted opportunities, "
-                    "net repetitive-work reduction, reviewer "
-                    "minutes, cost per acceptance, "
-                    "collection lag, and customer "
-                    "concentration. Set internal thresholds "
-                    "before deployment: for example, "
-                    "pause automatic routing after "
-                    "three unsupported material claims "
-                    "in a 50-packet audit, "
-                    "or whenever one customer "
-                    "exceeds 30% of recognized "
-                    "revenue without an explicit "
-                    "concentration plan. Those thresholds "
-                    "are management choices, not "
-                    "statutory standards. Version prompts, "
-                    "schemas, qualification rules, and "
-                    "attribution policies together so "
-                    "the team can reproduce "
-                    "an earlier decision. Before "
-                    "raising throughput, simulate a "
-                    "CRM outage, duplicate webhook, "
-                    "stale permission record, fabricated "
-                    "model citation, and disputed "
-                    "meeting fee. Require the "
-                    "operator on duty to "
-                    "recover each case from "
-                    "written instructions. Preserve a "
-                    "manual queue for valuable "
-                    "accounts when enrichment fails; "
-                    "stop consequential actions when "
-                    "permission fails. Add the "
-                    "third full-time operator and "
-                    "fourth contractor only when "
-                    "recurring workload, collection quality, "
-                    "and the $720,000 Scaled "
-                    "expense envelope support them. "
-                    "The durable distribution loop "
-                    "turns verified outcomes into "
-                    "better targeting, useful content, "
-                    "and renewals, while retaining "
-                    "accountable people at every "
-                    "decision that can create "
-                    "a fee or contact someone."
-                ),
-            ],
-            "table": {
-                "caption": "Canonical scorecard reconciliation and explicit operating capacity checks",
-                "headers": [
-                    "Scenario or control with operating scope",
-                    "Revenue or throughput arithmetic used consistently",
-                    "Expense and profit boundary preserved explicitly",
-                    "Required management response before expanding capacity",
-                ],
-                "rows": [
-                    [
-                        "Conservative delivery configuration uses two full-time and three contractors",
-                        "120000 dollars retainers plus 30000 dollars accepted-opportunity fees",
-                        "150000 revenue minus 120000 expenses equals 30000 owner profit",
-                        "Validate actual role compensation within the complete expense envelope",
-                    ],
-                    [
-                        "Base delivery configuration retains two full-time and three contractors",
-                        "540000 dollars retainers plus 135000 dollars accepted-opportunity fees",
-                        "675000 revenue minus 472500 expenses equals 202500 owner profit",
-                        "Protect acceptance quality while increasing client and opportunity throughput",
-                    ],
-                    [
-                        "Scaled delivery configuration uses three full-time and four contractors",
-                        "900000 dollars retainers plus 300000 dollars accepted-opportunity fees",
-                        "1200000 revenue minus 720000 expenses equals 480000 owner profit",
-                        "Fund additional staffing from recurring collected service contribution",
-                    ],
-                    [
-                        "Automated packet batch measures actual net human-work reduction",
-                        "One thousand baseline minutes become 280 retained human minutes",
-                        "Nineteen dollars runs plus two retries plus 210 labor",
-                        "Count reviewer corrections and exceptions inside the automation denominator",
-                    ],
-                    [
-                        "Monthly packet capacity excludes selling and account-management workloads",
-                        "One thousand packets require approximately 46.7 human processing hours",
-                        "2310 dollars processing divided by ten accepted opportunities",
-                        "Budget separate capacity for client meetings and attribution disputes",
-                    ],
-                    [
-                        "Concentration review protects against dependency on one large customer",
-                        "Thirty percent recognized-revenue share triggers internal concentration review",
-                        "Client contract values remain excluded from operator revenue totals",
-                        "Document replacement pipeline and cash exposure before further dependence",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": "Automate the evidence trail and the repeatable work; keep people accountable for permission, promises, and payable outcomes.",
-    "diagram_id": "diag-02",
-    "action_checklist": [
-        "Define the tenant-scoped event envelope, deterministic external keys, transactional outbox, and exception ownership before connecting production CRM writes.",
-        "Benchmark 100 account packets against a fixed manual baseline and include review, rework, and recovery when calculating the 70%+ reduction target.",
-        "Implement the three mapped-play services with interval-based technographic claims, ETC-controlled eligibility, and permission-first outbound screening.",
-        "Version the client opportunity definition, attribution policy, duplicate window, scheduling lineage, fee trigger, and reversal process in one operating record.",
-        "Launch one approved content loop and one permission-checked outbound cohort, then measure mature accepted opportunities rather than bookings or downloads.",
-        "Reconcile annual revenue, total expenses, owner profit, staffing, and cash collections to the exact Conservative, Base, and Scaled scorecard before adding capacity.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "15 U.S.C. § 7704 — Requirements for transmission of commercial electronic mail",
-            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
-            "relevance": "Establishes commercial-email requirements concerning sender information, subject lines, postal identification, opt-out mechanisms, and timely processing of opt-out requests.",
-        },
-        {
-            "title": "47 U.S.C. § 227 — Restrictions on use of telephone equipment",
-            "url": "https://www.law.cornell.edu/uscode/text/47/227",
-            "relevance": "Provides the statutory foundation for telephone solicitation and specified automated or prerecorded contact restrictions; docket matching does not supply permission.",
-        },
-        {
-            "title": "47 CFR § 64.1200 — Delivery restrictions",
-            "url": "https://www.ecfr.gov/current/title-47/section-64.1200",
-            "relevance": "Defines detailed calling and messaging restrictions, relevant consent standards, do-not-call procedures, and revocation obligations that channel-specific eligibility checks must evaluate.",
-        },
-        {
-            "title": "47 CFR § 54.403 — Lifeline support amount",
-            "url": "https://www.ecfr.gov/current/title-47/section-54.403",
-            "relevance": "Governs applicable federal Lifeline support amounts and enhanced Tribal support; these conditional carrier program amounts must not be booked as agency service revenue.",
-        },
-        {
-            "title": "47 CFR § 54.405 — Carrier obligation to offer Lifeline",
-            "url": "https://www.ecfr.gov/current/title-47/section-54.405",
-            "relevance": "Addresses carrier duties and subscriber de-enrollment procedures, including applicable non-usage notice requirements that engagement reminders cannot replace.",
-        },
-        {
-            "title": "47 CFR § 54.407 — Reimbursement for offering Lifeline",
-            "url": "https://www.ecfr.gov/current/title-47/section-54.407",
-            "relevance": "Connects carrier reimbursement to eligible subscribers and applicable usage conditions; reminder delivery alone is insufficient evidence for a support claim.",
-        },
-        {
-            "title": "47 CFR § 54.410 — Subscriber eligibility determination and certification",
-            "url": "https://www.ecfr.gov/current/title-47/section-54.410",
-            "relevance": "Establishes eligibility verification and certification requirements that remain within the authorized carrier enrollment process rather than an agency's model-generated qualification.",
-        },
-        {
-            "title": "California Civil Code § 1798.120 — Consumer right to opt out of sale or sharing",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=1798.120.&lawCode=CIV",
-            "relevance": "Requires covered businesses to evaluate sale or sharing opt-out rights when transferring personal information through advertising, enrichment, and lead-distribution arrangements.",
-        },
-    ],
-}
+CHAPTER_10 = {'id': 'Q10',
+ 'chapter_id': 'Q10',
+ 'chapter_number': 10,
+ 'question_number': 10,
+ 'slug': 'legal-lead-acquisition-intake-retainers',
+ 'question_prompt': 'How do law firms improve lead acquisition and intake, and what do the consulting '
+                    'sources teach about packaging ongoing client engagements?',
+ 'kicker': 'Q10 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Legal Lead Acquisition, Intake, and Retainer Engagements',
+ 'subtitle': 'Mass-tort lead quality and fraud controls, client communication, intake scripts, Google '
+             'Local Services Ads, Meta content and advertising, ideal legal clients, and consulting '
+             'retainer packages and agreements',
+ 'layout_template': 'expert_commentary',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Law-firm lead operators converge on three rules: answer in seconds, verify every '
+                      'signed case, and buy exclusivity over volume. Loudr Media caps callbacks at five '
+                      'minutes, while Local Service Ads operators answer within 30 seconds using AI '
+                      'pickup. On Meta, Andrew Stickel pulled mass tort leads at $40.55 and SMB Team '
+                      'benchmarks $42 CPL across 4,600+ leads, with retargeting and AI avatar video '
+                      'cutting costs further. Katherine Hoffmann warns that frauds always answer the '
+                      'phone, so post-retainer QC and viability scoring decide real case cost, with Depo '
+                      'cases hard to land under $10,000. Awais rejects shared $50 to $150 leads in favor '
+                      'of exclusive live transfers. On retainers, Dan Lok opens with a one-year term, '
+                      'Consulting Success sets the minimum at time-to-results, and Ana Leiman prices at 10 '
+                      'to 20% of annual value.',
+ 'key_metrics': [{'label': 'Facebook Mass Tort Cost Per Lead',
+                  'metric': 'Facebook Mass Tort Cost Per Lead',
+                  'value': '$40.55 per lead across 77 leads, reaching 67,000 people',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Facebook lead ads for a Stuart, Florida client targeting military audiences; '
+                             "roughly half converted for about '$80 a case', a figure Stickel admits is "
+                             'unverified',
+                  'source': 'Lawyer Marketing and AI with Andrew Stickel ([aAMJ5QeSrvU @ 00:02:03])'},
+                 {'label': 'Meta Law Firm Blended Cost Per Lead',
+                  'metric': 'Meta Law Firm Blended Cost Per Lead',
+                  'value': '$42 CPL across 4,600+ leads; personal injury at $64',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "SMB Team's overall benchmark across law firm Meta campaigns, with 40 leads "
+                             'producing 20 signed clients cited as a 50% conversion example',
+                  'source': 'SMB Team ([WZ82yYgND3M @ 00:27:56])'},
+                 {'label': 'Depo Tort Case Acquisition Floor',
+                  'metric': 'Depo Tort Case Acquisition Floor',
+                  'value': 'Hard to get under $10,000 per case or more than 1 to 3 cases a week',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Ingestion-rate benchmark from secondary QC; a firm asking for 30 Depo cases '
+                             "at $5,000 is told 'not going to happen'",
+                  'source': 'IMG ([dxqvZPB25eo @ 00:06:32])'},
+                 {'label': 'Speed-to-Lead Ceiling',
+                  'metric': 'Speed-to-Lead Ceiling',
+                  'value': '60 seconds ideal, five minutes maximum',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Loudr Media's house rule for calling new legal leads, against bad intake "
+                             'teams that take 5 to 15 minutes',
+                  'source': 'Loudr Media ([TJJfmZiIGW4 @ 00:01:34])'}],
+ 'sections': [{'heading': 'Section 1: The Practitioner Consensus',
+               'paragraphs': ['Every operator who touches law-firm intake lands on the same law: the lead '
+                              'decays in minutes, and whoever answers first wins the case. Loudr Media '
+                              "frames unconverted leads as ad budget poured into a 'bucket with holes,' "
+                              'notes that bad intake teams take 5 to 15 minutes to call back, and sets the '
+                              "house rule at 60 seconds ideal and 'five minutes max' [TJJfmZiIGW4 @ "
+                              '00:01:34]. Ryan Samson of Accelerate Marketing pushes the bar lower still, '
+                              'claiming clients doubled booked calls by cutting response time from minutes '
+                              'to seconds, with an AI voice-and-text layer that answers Local Service Ads '
+                              'and Google Business Profile leads in under 30 seconds, after hours included '
+                              '[EJ36tZtFe4A @ 00:02:38]. The Local Service Ads channel runs the same play '
+                              'live: humans get 15 seconds to pick up, then AI takes the call, and the '
+                              'speaker claims you cannot rank in the top three without that coverage '
+                              '[I1FMlqBfPQc @ 00:04:56]. SMB Team lands the identical verdict from the '
+                              'Meta side, mapping the path as ad, then form, then follow-up, and warning '
+                              "that slow callbacks lose cases: 'The ad gets the click and the follow-up "
+                              "gets the client' [WZ82yYgND3M @ 00:11:52]. The ad spend buys attention; the "
+                              'response clock decides whether it becomes a signed case.',
+                              'The second consensus is that a cheap lead that never becomes a viable '
+                              'signed case is the most expensive line in the budget. Katherine Hoffmann of '
+                              'Smart Reviews says the TV-and-radio era ran about 30% fallout, but today a '
+                              "lead that answers the phone proves nothing, because 'the frauds will always "
+                              "answer,' and problems often surface only 2 to 3 months later [dxqvZPB25eo @ "
+                              '00:10:01]. Zero Risk Cases builds its pitch around the same threat: all '
+                              "lead generation is in-house, no cold calls, and a proprietary 'Scammer "
+                              "Scrub' screens every inbound and outbound lead against serial TCPA "
+                              "plaintiffs and 'lawsuit mill' litigators, updating in real time from court "
+                              'documents and the National Do Not Call list [bK2Wu8cOcRU @ 00:01:33]. The '
+                              "agency backs it with replacement 'no questions asked' when a case misses "
+                              'criteria or medical records contradict intake, against competitors who '
+                              'allow returns for only 3 to 7 days [z8D3CYz8Rxs @ 00:00:36]. Awais of Law '
+                              'Firm ROI reaches the same conclusion from the buyer side: shared leads at '
+                              '$50 to $150 get blasted to roughly 10 firms, so only exclusive live '
+                              'transfers are worth paying for, citing 4 leads for $2,000 that closed 2 '
+                              'clients at $5,000 each for a 10x return [gFY3JFigbao @ 00:52:39]. '
+                              'Exclusivity, verification, and replacement terms are what the money buys.',
+                              'On the engagement side, the consulting operators agree that the retainer is '
+                              'the cure for revenue whiplash, and that it must be priced on value rather '
+                              "than hours. Consulting Success calls retainers the fix for the 'feast or "
+                              "famine' cycle, puts the market range at $2,000 to $50,000 a month with "
+                              '$5,000 to $25,000 typical, and insists on landing one premium client at '
+                              '$15,000 before chasing ten at $1,500 [78Np-tdJDW4 @ 00:03:11]. Dan Lok '
+                              'anchors high on purpose, claiming six figures a year for an hour a month of '
+                              'advising and pricing $10,000 a month as $120,000 a year or $100,000 paid '
+                              "upfront, pitched as '2 months free' [GyZuNsAtjIU @ 00:03:06]. Ana Leiman, "
+                              'drawing on 17 years on both buyer and seller sides, says scope-based work '
+                              'is the first thing a client cuts, so Leiman filters prospects through six '
+                              'criteria and only proceeds when at least five are met: a recurring problem, '
+                              'measurable value, work inside your moat, an outcome owner, capacity to pay, '
+                              'and trust already earned [ngCxldTE3UI @ 00:06:36]. eForms adds the '
+                              "structural baseline: a retainer reserves the contractor's time, it comes as "
+                              'pay-for-work or pay-for-access, and more than a third of digital marketing '
+                              'agencies already run on them [KhY7TkJppys @ 00:01:02].'],
+               'table': {'caption': 'Where Legal Lead and Retainer Operators Agree',
+                         'headers': ['Consensus Point',
+                                     'What the Practitioner Does',
+                                     'Why It Pays',
+                                     'Expert Source'],
+                         'rows': [['Call every new legal lead inside five minutes',
+                                   'Calls within 60 seconds ideally, with five minutes as the hard ceiling',
+                                   'Slow intake turns paid ad budget into a bucket with holes',
+                                   'Loudr Media ([TJJfmZiIGW4 @ 00:01:34])'],
+                                  ['Cover every inbound call around the clock',
+                                   'Humans get 15 seconds, then AI answers so every call connects within '
+                                   '30 seconds',
+                                   'Speaker claims top-three LSA ranking requires that answer coverage',
+                                   'Local Service Ads ([I1FMlqBfPQc @ 00:04:56])'],
+                                  ['Response speed drives booked consultations directly',
+                                   'AI voice and text answer LSA and GBP leads after hours',
+                                   'Clients doubled booked calls cutting response from minutes to seconds',
+                                   'Local Service Ads ([EJ36tZtFe4A @ 00:02:38])'],
+                                  ['A ringing phone proves nothing about legitimacy',
+                                   'Runs secondary QC with background checks, database searches, and '
+                                   'facility calls',
+                                   'Frauds always answer, and problems surface two to three months later',
+                                   'IMG ([dxqvZPB25eo @ 00:10:01])'],
+                                  ['Scrub litigious claimants before the firm pays',
+                                   'Scammer Scrub screens leads against serial TCPA plaintiffs and lawsuit '
+                                   'mill litigators',
+                                   'Real-time updates from court documents and the National Do Not Call '
+                                   'list',
+                                   'Zero Risk Cases Client Acquisition Agency ([bK2Wu8cOcRU @ 00:01:33])'],
+                                  ['Buy exclusive transfers and skip shared leads',
+                                   'Avoids $50 to $150 shared leads resold to about ten competing firms',
+                                   'Four exclusive transfers at $2,000 closed two $5,000 clients for 10x',
+                                   'Law Firm ROI with Awais ([gFY3JFigbao @ 00:52:39])'],
+                                  ['Recurring retainers end the feast or famine cycle',
+                                   'Lands one premium client at $15,000 monthly before ten at $1,500',
+                                   'Typical retainers run $5,000 to $25,000 a month with steadier cash '
+                                   'flow',
+                                   'Consulting Success ([78Np-tdJDW4 @ 00:03:11])']]}},
+              {'heading': 'Section 2: Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['On Meta, the numbers are specific. Andrew Stickel ran Facebook lead ads for '
+                              'a Stuart, Florida client on the 3M earplug tort in May 2019 and pulled 77 '
+                              'leads at $40.55 apiece while reaching 67,000 people, with roughly half '
+                              "converting for about '$80 a case,' a figure Stickel admits is unverified "
+                              '[aAMJ5QeSrvU @ 00:02:03]. The ad sets split by branch: Army spent $863 for '
+                              '20 leads at $43.19, Veterans $449 for 17 at $26, Navy $520 for 14 at $37, '
+                              'and Veterans plus interest expansion $305 for 10 at $30.59, geo-targeted to '
+                              "Miami plus 50 miles along Florida's east coast. Creative carried branch "
+                              'logos and called out the demographic in the first three words; the best '
+                              "Army ad pulled 8 leads at $35 [aAMJ5QeSrvU @ 00:05:27]. SMB Team's larger "
+                              'book backs creative over targeting: creative drove 47% of lift versus 9% '
+                              'for targeting, and retargeting ran $34 CPL against $55 cold, or $40 against '
+                              '$78 in personal injury [WZ82yYgND3M @ 00:16:06]. Their AI avatar ads, built '
+                              'in HeyGen and ElevenLabs from two headshots and an audio sample, produced '
+                              '425+ leads at $39 CPL versus $64 for image ads, with personal injury at '
+                              '$108 versus $200+ [WZ82yYgND3M @ 00:19:05].',
+                              'On Google, the Local Service Ads operators reverse-engineer spend from case '
+                              "value: on a $3,000 case, paying $300 to $1,000 per signed case is 'still a "
+                              "3x ROI,' and cost per lead and cost per acquisition get tracked over time "
+                              '[I1FMlqBfPQc @ 00:02:15]. Ryan of Accelerated Marketing says LSA cases cost '
+                              'about half what other ad units cost because firms pay only for qualified '
+                              "calls, and Ryan disputes '10 and up to 50' of calls, getting that share of "
+                              'spend back in roughly a month and a half [abdd1rgCZ90 @ 00:01:11]. The '
+                              'setup runs through an MCC account with message leads on, 24/7 coverage for '
+                              "personal injury, a backup call service because 'google only gets paid when "
+                              "you answer,' a daily disposition sheet tagging missed and abandoned calls, "
+                              'and CallRail as mandatory tracking. Awais of Law Firm ROI splits paid '
+                              'budgets 30% Meta for awareness and retargeting and 70% Google to capture '
+                              'the 2 to 3% of the market ready to buy, and sets the floor at 3 to 4 times '
+                              'CPA, so a $2,000 CPA needs $8,000, possibly $6,000 [gFY3JFigbao @ '
+                              '00:18:15]. SMB Team caps personal injury cold Meta campaigns at 5,000 a '
+                              'month in mid-size markets, non-PI at 2,500 to 3,000, and retargeting alone '
+                              'at 500 to 600 [WZ82yYgND3M @ 00:51:10].',
+                              'Intake is where the case is won or lost, and the operators script it '
+                              "tightly. Loudr Media's framework runs five beats: warm rapport, empathy "
+                              'about what happened, next steps, clarity about the process, and commitment, '
+                              'meaning the retainer or a concrete follow-up before the call ends; they '
+                              'sign clients even if untreated and treat hanging up on untreated callers as '
+                              'a warning sign [TJJfmZiIGW4 @ 00:03:41]. Unsigned leads go into 30 days of '
+                              "'rule of threes' follow-up, three touches a day across call, text, and "
+                              "email, worked by a dedicated, commissioned team treated 'like salesmen, not "
+                              "receptionists.' Zero Risk Cases signs claimants to the attorney's criteria, "
+                              'collects a digital retainer plus permission to forward it, and routes '
+                              'wet-signature documents to a third-party notary who returns ID photos and '
+                              "the notarized originals [bK2Wu8cOcRU @ 00:02:17]. Hoffmann's Smart Reviews "
+                              'then runs secondary QC after retainer, criteria check, and HIPAA are '
+                              'signed: background check, internal database search for dual representation '
+                              'and duplicate claims, a facility call to confirm treatment on medical '
+                              'torts, and a viability score of nonviable, potentially viable, or confirmed '
+                              '[dxqvZPB25eo @ 00:02:21]. After signing, Amy Goggins of Mass Tort Institute '
+                              'sends an update letter, written by Goggins and signed off by an attorney, '
+                              'every 6 months so no client goes longer without contact [0VBYF3XIGBE @ '
+                              '00:00:53].'],
+               'table': {'caption': 'Street-Level Numbers, Tools, and Run Rules for Legal Lead Engines',
+                         'headers': ['Lever',
+                                     'Exact Number or Tool',
+                                     'How Operators Run It',
+                                     'Expert Source'],
+                         'rows': [['Facebook lead ads on a military mass tort',
+                                   '77 leads at $40.55 each, reaching 67,000 people',
+                                   'Ad sets split by Army, Navy, and Veterans with branch logos',
+                                   'Lawyer Marketing and AI with Andrew Stickel ([aAMJ5QeSrvU @ '
+                                   '00:02:03])'],
+                                  ['Meta retargeting versus cold prospecting audiences',
+                                   '$34 versus $55 CPL overall; $40 versus $78 in personal injury',
+                                   'Retargeting runs about 39% cheaper than cold traffic for law firms',
+                                   'SMB Team ([WZ82yYgND3M @ 00:07:08])'],
+                                  ['AI avatar video ads for law firm offers',
+                                   '425+ leads at $39 CPL versus $64 for image ads',
+                                   'Built in HeyGen and ElevenLabs from two headshots and an audio sample',
+                                   'SMB Team ([WZ82yYgND3M @ 00:19:05])'],
+                                  ['Reverse-engineered Local Service Ads case spend',
+                                   '$300 to $1,000 per case on a $3,000 case value',
+                                   'Track cost per lead and cost per acquisition over time',
+                                   'Local Service Ads ([I1FMlqBfPQc @ 00:02:15])'],
+                                  ['LSA call disputes and spend recovery',
+                                   "'10 and up to 50' calls disputed, refunded in roughly 1.5 months",
+                                   'CallRail tracking plus a daily disposition sheet tagging missed calls',
+                                   'Local Service Ads ([abdd1rgCZ90 @ 00:01:11])'],
+                                  ['Minimum paid media budget floor',
+                                   '3 to 4 times CPA, so a $2,000 CPA needs $8,000',
+                                   'Split 30% Meta awareness and retargeting, 70% Google intent capture',
+                                   'Law Firm ROI with Awais ([gFY3JFigbao @ 00:18:15])'],
+                                  ['High-ticket consulting retainer pricing ladder',
+                                   '$10,000 monthly, or $100,000 upfront pitched as two months free',
+                                   'Open with a one-year term, then downsell to six then three months',
+                                   'Dan Lok ([GyZuNsAtjIU @ 00:03:06])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Edges the Operators Actually Use',
+                           'body': 'Four moves that cut cost per signed case or lift retainer pricing, '
+                                   'straight from the operators running them.',
+                           'items': ['Build interest stacks in Facebook Audience Insights by keeping only '
+                                     'interests where 70 to 80% of related page likes are military, then '
+                                     'layer Fort Benning, USAA, Veterans Affairs, Veterans United Network, '
+                                     'and We Are The Mighty [Lawyer Marketing and AI with Andrew Stickel — '
+                                     'aAMJ5QeSrvU @ 00:10:46]',
+                                     "Dispute unqualified LSA calls every cycle; Ryan disputes '10 and up "
+                                     "to 50' of calls and recovers that spend in about a month and a half, "
+                                     'while a backup call service keeps answer rates up because Google '
+                                     'only gets paid when you answer [Local Service Ads — abdd1rgCZ90 @ '
+                                     '00:01:11]',
+                                     'Demand a viability score with the reason on every signed file so '
+                                     'nonviable cases get released on ingestion and the marketer can shut '
+                                     'down the source producing them [IMG — dxqvZPB25eo @ 00:03:43]',
+                                     'Price retainers at 10 to 20% of the value created over the next 12 '
+                                     'months, never show hours, and recommend one option, changing scope '
+                                     'rather than price [Ana Leiman — ngCxldTE3UI @ 00:05:08]']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Hit conversion benchmarks before buying traffic',
+                              'action': 'Work one primary pillar until 50% of inquiries book planning '
+                                        'sessions and 80% of sessions sign.',
+                              'detail': 'Ali Katz holds paid traffic back until those benchmarks hold at '
+                                        '$4,000 to $6,000 fees, then runs ads to a lead magnet, then a '
+                                        'webinar, then retargeting, because paid ads should amplify what '
+                                        'already works [New Law Business Model — mDqUwOQyPnc @ 00:24:38]'},
+                             {'step': 2,
+                              'title': 'Fund paid media off CPA math',
+                              'action': 'Set budget at 3 to 4 times target CPA and split 30% Meta, 70% '
+                                        'Google.',
+                              'detail': 'Awais sizes a $2,000 CPA at an $8,000 budget, possibly $6,000, '
+                                        'with Meta for awareness and retargeting and Google for the 2 to '
+                                        '3% ready to buy; LSA operators cap case cost at $300 to $1,000 on '
+                                        'a $3,000 case [Law Firm ROI with Awais — gFY3JFigbao @ 00:18:15]'},
+                             {'step': 3,
+                              'title': 'Answer in seconds and script for the signature',
+                              'action': 'Call within 60 seconds and run rapport, empathy, next steps, '
+                                        'clarity, and commitment.',
+                              'detail': 'Loudr Media closes every call on a retainer or concrete '
+                                        'follow-up, signs untreated callers, runs 30 days of three daily '
+                                        'touches across call, text, and email, and pays a commissioned '
+                                        'intake team [Loudr Media — TJJfmZiIGW4 @ 00:03:41]'},
+                             {'step': 4,
+                              'title': 'QC every signed file and feed it back to the source',
+                              'action': 'Run secondary QC after retainer, criteria, and HIPAA are signed, '
+                                        'then score viability.',
+                              'detail': 'Smart Reviews runs background checks, dual-representation and '
+                                        'duplicate searches, and facility treatment calls, then tags each '
+                                        'case nonviable, potentially viable, or confirmed so marketers '
+                                        'kill bad sources in real time [IMG — dxqvZPB25eo @ 00:03:43]'}]},
+              {'title': 'Section 3: Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The first fork is whether to buy signed cases or build the machine '
+                              'yourself, and the camps split hard. Zero Risk Cases sells signed mass tort '
+                              'cases nationwide. It promises to replace any case that misses criteria "no '
+                              'questions asked" and knocks competitors who allow returns for only 3 to 7 '
+                              'days [z8D3CYz8Rxs @ 00:00:36]. Its pitch is that all lead generation stays '
+                              'internal, no cold calls are made, and outbound dials go only to people who '
+                              'asked for them [bK2Wu8cOcRU @ 00:00:46]. Katherine Hoffmann of Smart '
+                              'Reviews pushes back on trusting surface signals. A lead answering the phone '
+                              'no longer proves legitimacy, firm feedback is "dangerous," and problems '
+                              'surface two to three months later. So she runs secondary QC after the '
+                              'retainer is signed: background checks, dual-representation searches and '
+                              'facility calls [dxqvZPB25eo @ 00:10:17]. Awais of Law Firm ROI goes further '
+                              'on the generic lead market. He says 95% of lead generators run cold email '
+                              'off Instantly, Apollo and ZoomInfo, and sell shared leads for $50 to $150 '
+                              'to roughly ten firms. In his view only exclusive live transfers are worth '
+                              'buying. His example: 4 leads for $2,000, two of them closed at $5,000 each, '
+                              'a 10x return [gFY3JFigbao @ 00:52:39]. Buyers who follow this camp demand '
+                              'replacement terms and run their own downstream QC instead of taking the '
+                              "vendor's word.",
+                              'On when to turn on paid traffic, the practitioners run opposite playbooks. '
+                              'Andrew Stickel goes straight to Facebook lead ads. His Stuart, Florida 3M '
+                              'earplug campaign pulled 77 leads at $40.55 across 67,000 people, and about '
+                              'half converted for roughly "$80 a case", a figure he admits he never '
+                              'verified [aAMJ5QeSrvU @ 00:01:20]. SMB Team also leads with Meta. It '
+                              'reports 4,600+ leads at a $42 CPL (personal injury at $64), with '
+                              'retargeting beating cold traffic $34 to $55 [WZ82yYgND3M @ 00:07:08]. Ali '
+                              'Katz of New Law Business Model flips the order. Paid traffic is "like '
+                              'pouring gasoline on a fire," so it comes last, only after 50% of inquiries '
+                              'become planning sessions and 80% of sessions become $4,000 to $6,000 '
+                              'clients [mDqUwOQyPnc @ 00:24:38]. Awais splits the difference with 30% on '
+                              'Meta and 70% on Google. Meta handles awareness and retargeting, while '
+                              'Google captures the 2 to 3% of the market ready to buy. He also insists on '
+                              'a budget of at least three to four times CPA, so a $2,000 CPA means roughly '
+                              'an $8,000 budget [gFY3JFigbao @ 00:17:09]. In practice, Stickel and SMB '
+                              'Team test cheap leads fast and optimize from live numbers. Katz refuses to '
+                              'amplify any conversion process that has not hit its benchmarks.',
+                              'Retainer structure is where the consulting voices split most sharply. Dan '
+                              'Lok always opens at a one-year term and never at three months. If the '
+                              'client balks, he downsells to six months and then three. He prices $10,000 '
+                              'a month, or $100,000 paid upfront as "2 months free." He then adds a '
+                              'percentage of revenue for B2B clients or advisory equity for software '
+                              'companies [GyZuNsAtjIU @ 00:01:13]. Consulting Success rejects the fixed '
+                              'opener. The minimum term should equal the time needed to show results, for '
+                              "example six months, because today's results reflect work done 60 to 120 "
+                              'days ago. Price should be tied to outcomes, not hour blocks that become '
+                              '"use it or lose it" [78Np-tdJDW4 @ 00:12:12]. Ana Leiman prices at 10 to '
+                              '20% of the value created over the next twelve months. She never shows hours '
+                              'and recommends one option. Commissions can never be the safety net; the '
+                              'base fee must cover margin [ngCxldTE3UI @ 00:05:08]. eForms frames the '
+                              'split as pay-for-work versus pay-for-access. Pay-for-work suits newer '
+                              'contractors. Pay-for-access suits experienced ones, who reserve their time '
+                              'for the client and may have to turn down other work [KhY7TkJppys @ '
+                              '00:02:22]. Lok stacks upside on top of the fee. Leiman protects the base '
+                              'and changes scope, never price.'],
+               'table': {'caption': 'Side-by-side playbook contrasts on lead sourcing, paid traffic, '
+                                    'intake, and retainer design',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Buying cases from outside vendors versus exclusive transfers',
+                                   'Buy signed mass tort cases with no-questions-asked replacement and a '
+                                   'medical-record backstop',
+                                   'Only exclusive live transfers pay; shared $50 to $150 leads go to '
+                                   'about ten firms',
+                                   'Zero Risk Cases Client Acquisition Agency ([z8D3CYz8Rxs @ 00:00:36]); '
+                                   'Law Firm ROI with Awais ([gFY3JFigbao @ 00:52:39])'],
+                                  ['When to switch on paid traffic for the firm',
+                                   'Run Facebook lead ads immediately; Stickel hit $40.55 per lead across '
+                                   '77 leads',
+                                   'Wait until 50% inquiry-to-session and 80% session-to-client benchmarks '
+                                   'are hit first',
+                                   'Lawyer Marketing and AI with Andrew Stickel ([aAMJ5QeSrvU @ '
+                                   '00:02:03]); New Law Business Model ([mDqUwOQyPnc @ 00:24:38])'],
+                                  ['Who answers the phone when new leads call in',
+                                   'Dedicated commissioned human closers treated like salesmen, offshore '
+                                   'only if they sound American',
+                                   'Humans get 15 seconds, then an AI agent answers every call within 30 '
+                                   'seconds',
+                                   'Loudr Media ([TJJfmZiIGW4 @ 00:07:21]); Local Service Ads '
+                                   '([I1FMlqBfPQc @ 00:04:56])'],
+                                  ['Lead capture destination for paid campaigns and local search',
+                                   'In-platform Meta lead forms with conditional logic to filter out spam '
+                                   'submissions',
+                                   'Fast-loading landing pages plus an updated Google Business Profile '
+                                   'inside the service radius',
+                                   'SMB Team ([WZ82yYgND3M @ 00:45:15]); Local Service Ads ([EJ36tZtFe4A @ '
+                                   '00:01:43])'],
+                                  ['Opening term length for a consulting retainer offer',
+                                   'Always open at one year, then downsell to six and three months',
+                                   'Minimum term equals the time needed to show results, for example six '
+                                   'months',
+                                   'Dan Lok ([GyZuNsAtjIU @ 00:01:13]); Consulting Success ([78Np-tdJDW4 @ '
+                                   '00:12:12])'],
+                                  ['How to set the monthly retainer price point',
+                                   '$10,000 monthly or $100,000 upfront, plus revenue percentage or '
+                                   'advisory equity on top',
+                                   'Charge 10 to 20% of annual value created; commissions never replace '
+                                   'base margin',
+                                   'Dan Lok ([GyZuNsAtjIU @ 00:03:06]); Ana Leiman ([ngCxldTE3UI @ '
+                                   '00:05:08])'],
+                                  ['Budget split between Meta social and Google search',
+                                   '30% Meta for awareness and retargeting, 70% Google for ready-to-buy '
+                                   'searchers',
+                                   'Meta-first lead ads where retargeting CPL runs $34 versus $55 for cold',
+                                   'Law Firm ROI with Awais ([gFY3JFigbao @ 00:17:09]); SMB Team '
+                                   '([WZ82yYgND3M @ 00:07:08])']]}},
+              {'title': 'Section 4: Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The fraud trap hits hardest in mass torts. Hoffmann\'s line is blunt: "the '
+                              'frauds will always answer." She reports that Reddit groups circulate clean '
+                              'marketing links to farm claims. Feedback therefore has to be real-time, not '
+                              'the two-to-three-month lag firms typically deliver [dxqvZPB25eo @ '
+                              '00:10:01]. Her fix is a viability score on every ingested case. A case is '
+                              'scored nonviable (with the reason, so firms can release it on ingestion), '
+                              'potentially viable, or confirmed, which counts as a bonus. The score lets '
+                              'marketers shut down any source that produces nonviables [dxqvZPB25eo @ '
+                              '00:03:43]. Zero Risk Cases attacks the same problem upstream with Scammer '
+                              'Scrub. It screens every inbound and outbound lead against serial TCPA '
+                              'plaintiffs and lawsuit-mill litigators, updating in real time from court '
+                              'documents and the National Do Not Call list. Wet-signature documents are '
+                              'then notarized by a third-party notary who returns ID photos [bK2Wu8cOcRU @ '
+                              '00:01:33]. The economics check is volume. Hoffmann says a marketer '
+                              'producing 1,000 NEC cases a week "doesn\'t make any sense." Depo cases '
+                              'rarely come in under $10,000 or faster than one to three a week. A firm '
+                              'demanding 30 Depo cases at $5,000 is told it is "not going to happen" '
+                              '[dxqvZPB25eo @ 00:06:32]. Juvenile abuse confirmation now drags 12 to 14 '
+                              'weeks.',
+                              'The second trap is leakage between the ad and the signature. Loudr Media '
+                              'calls unconverted leads ad budget poured into a "bucket with holes." Bad '
+                              "intake takes 5 to 15 minutes to call a lead back. Loudr's target is 60 "
+                              'seconds, with five minutes as the maximum. Hanging up on an untreated '
+                              'caller is a warning sign, because the script signs them anyway. The '
+                              'follow-up runs 30 days, using a rule of threes: three touches a day across '
+                              'call, text and email. One client signed only after two weeks [TJJfmZiIGW4 @ '
+                              '00:01:21]. Ryan of Accelerated Marketing warns that "google only gets paid '
+                              'when you answer." LSA firms therefore need a backup call service, 24/7 '
+                              'coverage for personal injury, and a daily disposition sheet that tags '
+                              'missed and abandoned calls [abdd1rgCZ90 @ 00:01:44]. The money check sits '
+                              'in disputes. Anywhere from 10 to 50 of the calls get disputed, and that '
+                              'share of spend comes back in about a month and a half [abdd1rgCZ90 @ '
+                              '00:01:11]. SMB Team sees the same choke point on Meta. The path is ad, then '
+                              'form, then follow-up, and slow callbacks lose cases. Criminal and PI '
+                              'retargeting windows must stay short rather than running 90 to 120 days '
+                              '[WZ82yYgND3M @ 00:11:52].',
+                              'The last traps are wasted spend and broken promises. Ali Katz watched '
+                              'lawyers burn tens of thousands of dollars on agencies that over-promise. '
+                              'Her conclusion from her own practice: "I didn\'t have a marketing problem." '
+                              'The real fault was clarity and conversion [mDqUwOQyPnc @ 00:07:41]. Awais '
+                              'reports that his own YouTube channel has produced one client since about '
+                              'March. He calls LinkedIn an "AI spam" bragging machine that is not worth it '
+                              'for law firms. He also calls agencies that sell GEO/AEO as a separate '
+                              'service a scam [gFY3JFigbao @ 00:41:55]. On the retainer side, Leiman lists '
+                              'the killers: dividing the project fee by three, scope creep, becoming '
+                              '"furniture," and leaning on commissions. Her rule is "be on the retainer, '
+                              'but not on the payroll" [ngCxldTE3UI @ 00:12:28]. After the signature, Amy '
+                              'Goggins of Mass Tort Institute names the classic mistake: feeding clients '
+                              'inaccurate information to relieve pressure. Her two golden rules are never '
+                              'to give an exact settlement or trial timeline and never to give even an '
+                              'estimate of value. She backs them with an update letter at least every six '
+                              'months, signed off by an attorney [0VBYF3XIGBE @ 00:02:05]. Leiman ranks '
+                              'weak boundaries as the biggest problem of all.'],
+               'table': {'caption': 'Firsthand traps with the economics check or fix each practitioner '
+                                    'applies',
+                         'headers': ['Failure Mode',
+                                     'What Happened or Warning',
+                                     'Economics Check or Fix',
+                                     'Expert Source'],
+                         'rows': [['Trusting that answered phones mean legitimate mass tort claimants',
+                                   'Frauds always answer, and firm feedback surfaces problems two to three '
+                                   'months later',
+                                   'Run secondary QC with viability scores and shut down nonviable sources '
+                                   'fast',
+                                   'IMG ([dxqvZPB25eo @ 00:10:01]); IMG ([dxqvZPB25eo @ 00:03:43])'],
+                                  ['Ordering case volumes the tort cannot realistically produce',
+                                   'NEC marketers claiming 1,000 cases weekly; firms demanding 30 Depo '
+                                   'cases at $5,000',
+                                   'Depo runs above $10,000 per case at only one to three weekly',
+                                   'IMG ([dxqvZPB25eo @ 00:06:32]); IMG ([dxqvZPB25eo @ 00:07:04])'],
+                                  ['Slow intake callbacks leaking paid leads out of the bucket',
+                                   'Bad intake teams take 5 to 15 minutes to call back new leads',
+                                   'Call within 60 seconds, five minutes max, then 30 days of follow-up',
+                                   'Loudr Media ([TJJfmZiIGW4 @ 00:01:34]); Loudr Media ([TJJfmZiIGW4 @ '
+                                   '00:05:37])'],
+                                  ['Missed Local Service Ads calls killing ranking and wasting spend',
+                                   'Google only gets paid when you answer, so unanswered calls sink '
+                                   'performance',
+                                   'Backup call service, 24/7 PI coverage, and dispute unqualified calls '
+                                   'for refunds',
+                                   'Local Service Ads ([abdd1rgCZ90 @ 00:01:44]); Local Service Ads '
+                                   '([abdd1rgCZ90 @ 00:01:11])'],
+                                  ['Buying shared leads from cold-email lead generation shops',
+                                   '95% run cold email and charge $200 to $1,000 infrastructure fees '
+                                   'upfront',
+                                   'Shared $50 to $150 leads hit ten firms; buy only exclusive live '
+                                   'transfers',
+                                   'Law Firm ROI with Awais ([gFY3JFigbao @ 00:46:31]); Law Firm ROI with '
+                                   'Awais ([gFY3JFigbao @ 00:50:59])'],
+                                  ['Giving signed clients settlement timelines or case value estimates',
+                                   'Inaccurate information given to relieve pressure is one of the biggest '
+                                   'mistakes',
+                                   'Never estimate value or timeline; send attorney-signed update letters '
+                                   'every six months',
+                                   'Mass Tort Institute ([0VBYF3XIGBE @ 00:02:05]); Mass Tort Institute '
+                                   '([0VBYF3XIGBE @ 00:00:53])'],
+                                  ['Retainer sliding into underpriced, scope-creeping furniture status',
+                                   'Dividing the project fee by three and leaning on commissions for '
+                                   'margin',
+                                   'Price retainers higher per hour than projects and renew every three to '
+                                   'six months',
+                                   'Ana Leiman ([ngCxldTE3UI @ 00:11:57]); Consulting Success '
+                                   '([78Np-tdJDW4 @ 00:17:54])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Hold Spend Until These Four Checks Pass',
+                           'body': 'Every gate below comes straight from a loss, leak, or fraud pattern '
+                                   'the practitioners hit firsthand. Each one targets a failure that burns '
+                                   'ad budget or case inventory before anyone notices.',
+                           'items': ['Do not count a mass tort case as inventory until secondary QC clears '
+                                     'it: background check, internal database search for dual '
+                                     'representation and known frauds, and a facility call confirming '
+                                     'treatment [IMG — dxqvZPB25eo @ 00:00:37].',
+                                     'Do not scale LSA spend while calls go unanswered. Route overflow to '
+                                     'a backup call service and tag every missed and abandoned call on a '
+                                     'daily disposition sheet [Local Service Ads — abdd1rgCZ90 @ '
+                                     '00:03:00].',
+                                     'Do not turn on paid traffic until 50% of inquiries book planning '
+                                     'sessions and 80% of sessions become clients at $4,000 to $6,000 [New '
+                                     'Law Business Model — mDqUwOQyPnc @ 00:24:38].',
+                                     'Do not sign a retainer unless the client meets at least 5 of the 6 '
+                                     'criteria (recurring problem, measurable value, inside your moat, '
+                                     'outcome owner, capacity to pay, trust earned) and the base fee '
+                                     'covers margin without commissions [Ana Leiman — ngCxldTE3UI @ '
+                                     '00:06:36].']}}],
+ 'pull_quote': '"The frauds will always answer." Katherine Hoffmann, attributed to IMG (dxqvZPB25eo @ '
+               '00:10:01).',
+ 'diagram_id': 'diag-02',
+ 'action_checklist': ['Call every new lead within 60 seconds, five minutes max. Then run 30 days of '
+                      'rule-of-threes follow-up: three touches a day across call, text, and email [Loudr '
+                      'Media — TJJfmZiIGW4 @ 00:01:34].',
+                      'Give human intake 15 seconds to pick up, then let an AI agent answer so every call '
+                      'is caught within 30 seconds. Train the agent on transcribed recorded calls with 3 '
+                      'to 7 personal injury questions [Local Service Ads — I1FMlqBfPQc @ 00:07:23].',
+                      'Install CallRail call tracking, tag missed and abandoned calls on a daily '
+                      'disposition sheet, and dispute unqualified LSA calls to recover that share of spend '
+                      '[Local Service Ads — abdd1rgCZ90 @ 00:04:58].',
+                      'Score every ingested mass tort case as nonviable, potentially viable, or confirmed, '
+                      'and shut down any source producing nonviables [IMG — dxqvZPB25eo @ 00:02:21].',
+                      'Use in-platform Meta lead forms with conditional logic to cut spam, and keep '
+                      'criminal and PI retargeting windows short instead of 90 to 120 days [SMB Team — '
+                      'WZ82yYgND3M @ 00:41:58].',
+                      'Set the paid budget at three to four times your CPA; a $2,000 CPA means about an '
+                      '$8,000 budget, possibly $6,000 [Law Firm ROI with Awais — gFY3JFigbao @ 00:18:15].'],
+ 'statutory_citations': [{'title': 'IMG — The Truth About Lead Quality in Mass Tort Marketing | Interview '
+                                   'with Katherine Hoffmann [00:10:01]',
+                          'url': 'https://www.youtube.com/watch?v=dxqvZPB25eo&t=601s',
+                          'relevance': 'Primary practitioner testimony on mass tort lead fraud, secondary '
+                                       'QC, viability scoring, and realistic case ingestion rates.'},
+                         {'title': 'Loudr Media — The HIDDEN Intake Script Attorneys Don’t Want YOU To '
+                                   'Know [00:01:34]',
+                          'url': 'https://www.youtube.com/watch?v=TJJfmZiIGW4&t=94s',
+                          'relevance': 'Primary practitioner testimony on speed to lead, the five-step '
+                                       'intake script, and commissioned intake teams.'},
+                         {'title': 'Zero Risk Cases Client Acquisition Agency — Mass Tort Compliance '
+                                   'Program-End Fake Leads and Lead Fraud [00:01:33]',
+                          'url': 'https://www.youtube.com/watch?v=bK2Wu8cOcRU&t=93s',
+                          'relevance': 'Primary practitioner testimony on serial TCPA plaintiff scrubbing, '
+                                       'digital retainers, and third-party notarization.'},
+                         {'title': 'Ana Leiman — How to Move your High-ticket Consulting Clients Onto '
+                                   'Retainers [00:05:08]',
+                          'url': 'https://www.youtube.com/watch?v=ngCxldTE3UI&t=308s',
+                          'relevance': 'Primary practitioner testimony on value-based retainer pricing, '
+                                       'client qualification criteria, and retainer traps.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': '0VBYF3XIGBE',
+                       'title': 'Communication with Mass Tort Clients',
+                       'channel': 'Mass Tort Institute',
+                       'author': 'Mass Tort Institute',
+                       'text': 'Never give an exact timeline for a settlement or a trial, and never give '
+                               'even an estimate of what a case is worth.',
+                       'tip': 'Never give an exact timeline for a settlement or a trial, and never give '
+                              'even an estimate of what a case is worth.',
+                       'timestamp': 105,
+                       'timestamp_seconds': 105,
+                       'timestamp_label': '[00:01:45]',
+                       'url': 'https://www.youtube.com/watch?v=0VBYF3XIGBE&t=105s',
+                       'markdown': '[00:01:45](https://www.youtube.com/watch?v=0VBYF3XIGBE&t=105s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'z8D3CYz8Rxs',
+                       'title': 'Mass Tort Cases-Signed Mass Tort Cases-Call 855-943-8736',
+                       'channel': 'Zero Risk Cases Client Acquisition Agency',
+                       'author': 'Zero Risk Cases Client Acquisition Agency',
+                       'text': 'Dynamic re-engagement can increase conversion by 15 to 30 percent.',
+                       'tip': 'Dynamic re-engagement can increase conversion by 15 to 30 percent.',
+                       'timestamp': 74,
+                       'timestamp_seconds': 74,
+                       'timestamp_label': '[00:01:14]',
+                       'url': 'https://www.youtube.com/watch?v=z8D3CYz8Rxs&t=74s',
+                       'markdown': '[00:01:14](https://www.youtube.com/watch?v=z8D3CYz8Rxs&t=74s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'bK2Wu8cOcRU',
+                       'title': 'Mass Tort Compliance Program-End Fake Leads and Lead Fraud',
+                       'channel': 'Zero Risk Cases Client Acquisition Agency',
+                       'author': 'Zero Risk Cases Client Acquisition Agency',
+                       'text': 'Our software identifies serial TCPA plaintiffs and serial litigators while '
+                               'scrubbing lists and helps us maintain TCPA compliance.',
+                       'tip': 'Our software identifies serial TCPA plaintiffs and serial litigators while '
+                              'scrubbing lists and helps us maintain TCPA compliance.',
+                       'timestamp': 93,
+                       'timestamp_seconds': 93,
+                       'timestamp_label': '[00:01:33]',
+                       'url': 'https://www.youtube.com/watch?v=bK2Wu8cOcRU&t=93s',
+                       'markdown': '[00:01:33](https://www.youtube.com/watch?v=bK2Wu8cOcRU&t=93s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'dxqvZPB25eo',
+                       'title': 'The Truth About Lead Quality in Mass Tort Marketing | Interview with '
+                                'Katherine Hoffmann',
+                       'channel': 'IMG',
+                       'author': 'IMG',
+                       'text': 'The frauds will always answer.',
+                       'tip': 'The frauds will always answer.',
+                       'timestamp': 601,
+                       'timestamp_seconds': 601,
+                       'timestamp_label': '[00:10:01]',
+                       'url': 'https://www.youtube.com/watch?v=dxqvZPB25eo&t=601s',
+                       'markdown': '[00:10:01](https://www.youtube.com/watch?v=dxqvZPB25eo&t=601s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'aAMJ5QeSrvU',
+                       'title': 'How to Generate Mass Tort Leads for $40 a Piece! [Step by Step Guide]',
+                       'channel': 'Lawyer Marketing and AI with Andrew Stickel',
+                       'author': 'Lawyer Marketing and AI with Andrew Stickel',
+                       'text': 'We generated 77 leads at $40.55 per lead, reaching 67,000 people.',
+                       'tip': 'We generated 77 leads at $40.55 per lead, reaching 67,000 people.',
+                       'timestamp': 123,
+                       'timestamp_seconds': 123,
+                       'timestamp_label': '[00:02:03]',
+                       'url': 'https://www.youtube.com/watch?v=aAMJ5QeSrvU&t=123s',
+                       'markdown': '[00:02:03](https://www.youtube.com/watch?v=aAMJ5QeSrvU&t=123s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'TJJfmZiIGW4',
+                       'title': 'The HIDDEN Intake Script Attorneys Don’t Want YOU To Know',
+                       'channel': 'Loudr Media',
+                       'author': 'Loudr Media',
+                       'text': 'Our rule of thumb is five minutes max.',
+                       'tip': 'Our rule of thumb is five minutes max.',
+                       'timestamp': 94,
+                       'timestamp_seconds': 94,
+                       'timestamp_label': '[00:01:34]',
+                       'url': 'https://www.youtube.com/watch?v=TJJfmZiIGW4&t=94s',
+                       'markdown': '[00:01:34](https://www.youtube.com/watch?v=TJJfmZiIGW4&t=94s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'TJJfmZiIGW4',
+                       'title': 'The HIDDEN Intake Script Attorneys Don’t Want YOU To Know',
+                       'channel': 'Loudr Media',
+                       'author': 'Loudr Media',
+                       'text': 'Treat them like salesmen, not receptionists.',
+                       'tip': 'Treat them like salesmen, not receptionists.',
+                       'timestamp': 441,
+                       'timestamp_seconds': 441,
+                       'timestamp_label': '[00:07:21]',
+                       'url': 'https://www.youtube.com/watch?v=TJJfmZiIGW4&t=441s',
+                       'markdown': '[00:07:21](https://www.youtube.com/watch?v=TJJfmZiIGW4&t=441s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'GyZuNsAtjIU',
+                       'title': 'How to Package and Sell High Ticket Consulting Retainer Fees? S1E17',
+                       'channel': 'Dan Lok',
+                       'author': 'Dan Lok',
+                       'text': '$10,000 a month is $120,000 a year, or $100,000 paid upfront, which is two '
+                               'months free.',
+                       'tip': '$10,000 a month is $120,000 a year, or $100,000 paid upfront, which is two '
+                              'months free.',
+                       'timestamp': 186,
+                       'timestamp_seconds': 186,
+                       'timestamp_label': '[00:03:06]',
+                       'url': 'https://www.youtube.com/watch?v=GyZuNsAtjIU&t=186s',
+                       'markdown': '[00:03:06](https://www.youtube.com/watch?v=GyZuNsAtjIU&t=186s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '78Np-tdJDW4',
+                       'title': 'How to Build a High-Ticket Consulting Retainer That Scales',
+                       'channel': 'Consulting Success',
+                       'author': 'Consulting Success',
+                       'text': 'Launching with one client at $15,000 a month beats having ten clients at '
+                               '$1,500.',
+                       'tip': 'Launching with one client at $15,000 a month beats having ten clients at '
+                              '$1,500.',
+                       'timestamp': 191,
+                       'timestamp_seconds': 191,
+                       'timestamp_label': '[00:03:11]',
+                       'url': 'https://www.youtube.com/watch?v=78Np-tdJDW4&t=191s',
+                       'markdown': '[00:03:11](https://www.youtube.com/watch?v=78Np-tdJDW4&t=191s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'KhY7TkJppys',
+                       'title': 'Everything You Need to Know About Retainer Agreements',
+                       'channel': 'eForms',
+                       'author': 'eForms',
+                       'text': 'There are two types of retainers: pay-for-work and pay-for-access.',
+                       'tip': 'There are two types of retainers: pay-for-work and pay-for-access.',
+                       'timestamp': 62,
+                       'timestamp_seconds': 62,
+                       'timestamp_label': '[00:01:02]',
+                       'url': 'https://www.youtube.com/watch?v=KhY7TkJppys&t=62s',
+                       'markdown': '[00:01:02](https://www.youtube.com/watch?v=KhY7TkJppys&t=62s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ngCxldTE3UI',
+                       'title': 'How to Move your High-ticket Consulting Clients Onto Retainers',
+                       'channel': 'Ana Leiman',
+                       'author': 'Ana Leiman',
+                       'text': 'Work out the value that you create for them over the year, take 10 or 20% '
+                               "of that, that's your price.",
+                       'tip': 'Work out the value that you create for them over the year, take 10 or 20% '
+                              "of that, that's your price.",
+                       'timestamp': 308,
+                       'timestamp_seconds': 308,
+                       'timestamp_label': '[00:05:08]',
+                       'url': 'https://www.youtube.com/watch?v=ngCxldTE3UI&t=308s',
+                       'markdown': '[00:05:08](https://www.youtube.com/watch?v=ngCxldTE3UI&t=308s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ngCxldTE3UI',
+                       'title': 'How to Move your High-ticket Consulting Clients Onto Retainers',
+                       'channel': 'Ana Leiman',
+                       'author': 'Ana Leiman',
+                       'text': 'Be on the retainer, but not on the payroll.',
+                       'tip': 'Be on the retainer, but not on the payroll.',
+                       'timestamp': 748,
+                       'timestamp_seconds': 748,
+                       'timestamp_label': '[00:12:28]',
+                       'url': 'https://www.youtube.com/watch?v=ngCxldTE3UI&t=748s',
+                       'markdown': '[00:12:28](https://www.youtube.com/watch?v=ngCxldTE3UI&t=748s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'I1FMlqBfPQc',
+                       'title': "How to Boost Your Law Firm's Lead Generation",
+                       'channel': 'Local Service Ads',
+                       'author': 'Local Service Ads',
+                       'text': 'For a $3,000 case, paying $300 to $1,000 per case is still a 3x ROI.',
+                       'tip': 'For a $3,000 case, paying $300 to $1,000 per case is still a 3x ROI.',
+                       'timestamp': 135,
+                       'timestamp_seconds': 135,
+                       'timestamp_label': '[00:02:15]',
+                       'url': 'https://www.youtube.com/watch?v=I1FMlqBfPQc&t=135s',
+                       'markdown': '[00:02:15](https://www.youtube.com/watch?v=I1FMlqBfPQc&t=135s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'abdd1rgCZ90',
+                       'title': 'Law Firm Marketing: BEST Lead Generation Machine 2023',
+                       'channel': 'Local Service Ads',
+                       'author': 'Local Service Ads',
+                       'text': 'Use a backup call service, because Google only gets paid when you answer.',
+                       'tip': 'Use a backup call service, because Google only gets paid when you answer.',
+                       'timestamp': 104,
+                       'timestamp_seconds': 104,
+                       'timestamp_label': '[00:01:44]',
+                       'url': 'https://www.youtube.com/watch?v=abdd1rgCZ90&t=104s',
+                       'markdown': '[00:01:44](https://www.youtube.com/watch?v=abdd1rgCZ90&t=104s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'gFY3JFigbao',
+                       'title': 'Lead Generation for Lawyers',
+                       'channel': 'Law Firm ROI with Awais',
+                       'author': 'Law Firm ROI with Awais',
+                       'text': 'Only exclusive live transfers are worth it: four leads for $2,000, two '
+                               'closed at $5,000 each, is a 10x return.',
+                       'tip': 'Only exclusive live transfers are worth it: four leads for $2,000, two '
+                              'closed at $5,000 each, is a 10x return.',
+                       'timestamp': 3159,
+                       'timestamp_seconds': 3159,
+                       'timestamp_label': '[00:52:39]',
+                       'url': 'https://www.youtube.com/watch?v=gFY3JFigbao&t=3159s',
+                       'markdown': '[00:52:39](https://www.youtube.com/watch?v=gFY3JFigbao&t=3159s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'EJ36tZtFe4A',
+                       'title': 'Lawyers: Master Lead Generation in 4 Minutes',
+                       'channel': 'Local Service Ads',
+                       'author': 'Local Service Ads',
+                       'text': 'The faster you respond, the higher your conversion rate and the better '
+                               'your ranking potential.',
+                       'tip': 'The faster you respond, the higher your conversion rate and the better your '
+                              'ranking potential.',
+                       'timestamp': 139,
+                       'timestamp_seconds': 139,
+                       'timestamp_label': '[00:02:19]',
+                       'url': 'https://www.youtube.com/watch?v=EJ36tZtFe4A&t=139s',
+                       'markdown': '[00:02:19](https://www.youtube.com/watch?v=EJ36tZtFe4A&t=139s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'mDqUwOQyPnc',
+                       'title': 'How Do Lawyers Find Their Ideal Clients? Lead Generation Playbook',
+                       'channel': 'New Law Business Model',
+                       'author': 'New Law Business Model',
+                       'text': 'Paid traffic is like pouring gasoline on a fire.',
+                       'tip': 'Paid traffic is like pouring gasoline on a fire.',
+                       'timestamp': 1424,
+                       'timestamp_seconds': 1424,
+                       'timestamp_label': '[00:23:44]',
+                       'url': 'https://www.youtube.com/watch?v=mDqUwOQyPnc&t=1424s',
+                       'markdown': '[00:23:44](https://www.youtube.com/watch?v=mDqUwOQyPnc&t=1424s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'WZ82yYgND3M',
+                       'title': 'How to Use Meta Ads to Get More Law Firm Leads',
+                       'channel': 'SMB Team',
+                       'author': 'SMB Team',
+                       'text': 'The ad gets the click and the follow-up gets the client.',
+                       'tip': 'The ad gets the click and the follow-up gets the client.',
+                       'timestamp': 712,
+                       'timestamp_seconds': 712,
+                       'timestamp_label': '[00:11:52]',
+                       'url': 'https://www.youtube.com/watch?v=WZ82yYgND3M&t=712s',
+                       'markdown': '[00:11:52](https://www.youtube.com/watch?v=WZ82yYgND3M&t=712s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'}]}

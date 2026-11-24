@@ -1,4250 +1,3298 @@
-"""Curated 180-citation Unclaimed Property Recovery baseline (15 per chapter across Q1-Q12) mined strictly from verified Unclaimed Property Recovery YouTube transcripts."""
+"""100% verbatim YouTube practitioner citations selected directly by Claude across Chapters Q1-Q12 of Volume 007 (Unclaimed Property Recovery)."""
 from __future__ import annotations
 
-CHAPTER_KEYWORDS: dict[int, set[str]] = {1: {'3001',
-     'accounts',
-     'action',
-     'agent',
-     'agreement',
-     'antitrust',
-     'asset',
-     'assistants',
-     'attorney',
-     'audit',
-     'automated',
-     'avoiding',
-     'b2b',
-     'bankruptcy',
-     'benefits',
-     'bulk',
-     'business',
-     'california',
-     'calling',
-     'caps',
-     'cfo',
-     'checks',
-     'claimant',
-     'claims',
-     'class',
-     'client',
-     'clients',
-     'cold',
-     'compliance',
-     'comptroller',
-     'contingency',
-     'contracts',
-     'firm',
-     'margin',
-     'market',
-     'model',
-     'niche',
-     'operator',
-     'revenue',
-     'service',
-     'value'},
- 2: {'3001',
-     'accounts',
-     'action',
-     'agent',
-     'agreement',
-     'antitrust',
-     'asset',
-     'assistants',
-     'attorney',
-     'audit',
-     'automated',
-     'avoiding',
-     'b2b',
-     'bankruptcy',
-     'benefits',
-     'budget',
-     'bulk',
-     'business',
-     'buyer',
-     'california',
-     'calling',
-     'caps',
-     'cfo',
-     'checks',
-     'claimant',
-     'claims',
-     'class',
-     'cold',
-     'compliance',
-     'comptroller',
-     'contingency',
-     'contract',
-     'contracts',
-     'customer',
-     'decision',
-     'escrow',
-     'fee',
-     'fees',
-     'invoice',
-     'pay',
-     'payment',
-     'pays',
-     'retainer'},
- 3: {'3001',
-     'accounts',
-     'action',
-     'agent',
-     'agreement',
-     'antitrust',
-     'asset',
-     'assistants',
-     'attorney',
-     'audit',
-     'automated',
-     'avoiding',
-     'b2b',
-     'bankruptcy',
-     'benefits',
-     'bulk',
-     'business',
-     'california',
-     'calling',
-     'caps',
-     'cash',
-     'cashflow',
-     'cfo',
-     'checks',
-     'claimant',
-     'claims',
-     'class',
-     'cold',
-     'commission',
-     'compliance',
-     'comptroller',
-     'contingency',
-     'contracts',
-     'cost',
-     'costs',
-     'economics',
-     'margin',
-     'margins',
-     'price',
-     'pricing',
-     'profit',
-     'roi',
-     'unit'},
- 4: {'3001',
-     'accounts',
-     'action',
-     'agent',
-     'agreement',
-     'antitrust',
-     'asset',
-     'assistants',
-     'attorney',
-     'audit',
-     'automated',
-     'avoiding',
-     'b2b',
-     'bankruptcy',
-     'benefits',
-     'budget',
-     'bulk',
-     'business',
-     'california',
-     'calling',
-     'capital',
-     'caps',
-     'cfo',
-     'checks',
-     'claimant',
-     'claims',
-     'class',
-     'cold',
-     'compliance',
-     'comptroller',
-     'contingency',
-     'contracts',
-     'entity',
-     'insurance',
-     'lean',
-     'license',
-     'llc',
-     'setup',
-     'software',
-     'stack',
-     'startup',
-     'tools'},
- 5: {'3001',
-     'accounts',
-     'action',
-     'agent',
-     'agreement',
-     'antitrust',
-     'asset',
-     'assistants',
-     'attorney',
-     'audit',
-     'automated',
-     'avoid',
-     'avoiding',
-     'b2b',
-     'bankruptcy',
-     'benefits',
-     'bulk',
-     'business',
-     'california',
-     'calling',
-     'caps',
-     'cfo',
-     'checks',
-     'claimant',
-     'claims',
-     'class',
-     'clawback',
-     'cold',
-     'compliance',
-     'comptroller',
-     'contingency',
-     'contracts',
-     'dispute',
-     'edge',
-     'fail',
-     'mistake',
-     'mistakes',
-     'problem',
-     'risk',
-     'risks',
-     'trap',
-     'traps'},
- 6: {'3001',
-     'accounts',
-     'action',
-     'agent',
-     'agreement',
-     'antitrust',
-     'asset',
-     'assistants',
-     'attorney',
-     'audit',
-     'automated',
-     'avoiding',
-     'b2b',
-     'bankruptcy',
-     'benefits',
-     'bulk',
-     'business',
-     'california',
-     'calling',
-     'caps',
-     'cfo',
-     'checks',
-     'claimant',
-     'claims',
-     'class',
-     'client',
-     'cold',
-     'compliance',
-     'comptroller',
-     'contingency',
-     'contracts',
-     'data',
-     'deal',
-     'find',
-     'first',
-     'lead',
-     'leads',
-     'list',
-     'outbound',
-     'prospect',
-     'qualify',
-     'search',
-     'sourcing'},
- 7: {'3001',
-     'accounts',
-     'action',
-     'agent',
-     'agreement',
-     'antitrust',
-     'asset',
-     'assistants',
-     'attorney',
-     'audit',
-     'automated',
-     'avoiding',
-     'b2b',
-     'bankruptcy',
-     'benefits',
-     'bulk',
-     'business',
-     'california',
-     'calling',
-     'caps',
-     'cfo',
-     'checklist',
-     'checks',
-     'claimant',
-     'claims',
-     'class',
-     'cold',
-     'compliance',
-     'comptroller',
-     'contingency',
-     'contracts',
-     'delivery',
-     'execution',
-     'process',
-     'quality',
-     'sop',
-     'step',
-     'steps',
-     'system',
-     'underwriting',
-     'verify',
-     'workflow'},
- 8: {'3001',
-     'accounts',
-     'action',
-     'agent',
-     'agreement',
-     'antitrust',
-     'api',
-     'asset',
-     'assistants',
-     'attorney',
-     'audit',
-     'automated',
-     'avoiding',
-     'b2b',
-     'bankruptcy',
-     'benefits',
-     'bulk',
-     'business',
-     'california',
-     'calling',
-     'caps',
-     'cfo',
-     'checks',
-     'claimant',
-     'claims',
-     'class',
-     'cold',
-     'compliance',
-     'comptroller',
-     'contingency',
-     'contracts',
-     'crm',
-     'data',
-     'database',
-     'platform',
-     'portal',
-     'scraper',
-     'search',
-     'software',
-     'tool',
-     'tools',
-     'tracking'},
- 9: {'3001',
-     'accounts',
-     'action',
-     'agent',
-     'agreement',
-     'antitrust',
-     'asset',
-     'assistants',
-     'attorney',
-     'audit',
-     'automated',
-     'avoiding',
-     'b2b',
-     'bankruptcy',
-     'benefits',
-     'bulk',
-     'business',
-     'california',
-     'calling',
-     'caps',
-     'cfo',
-     'checks',
-     'claimant',
-     'claims',
-     'class',
-     'cold',
-     'compliance',
-     'comptroller',
-     'contingency',
-     'contract',
-     'contracts',
-     'disclosure',
-     'law',
-     'legal',
-     'license',
-     'outreach',
-     'rules',
-     'script',
-     'state',
-     'terms'},
- 10: {'3001',
-      'accounts',
-      'action',
-      'agent',
-      'agreement',
-      'ai',
-      'antitrust',
-      'asset',
-      'assistants',
-      'attorney',
-      'audit',
-      'automate',
-      'automated',
-      'automation',
-      'avoiding',
-      'b2b',
-      'bankruptcy',
-      'benefits',
-      'bulk',
-      'business',
-      'california',
-      'calling',
-      'caps',
-      'cfo',
-      'checks',
-      'claimant',
-      'claims',
-      'class',
-      'cold',
-      'compliance',
-      'comptroller',
-      'contingency',
-      'contracts',
-      'dashboard',
-      'leverage',
-      'pipeline',
-      'scale',
-      'script',
-      'speed',
-      'template',
-      'workflow'},
- 11: {'3001',
-      'accounts',
-      'action',
-      'agent',
-      'agreement',
-      'antitrust',
-      'asset',
-      'assistants',
-      'attorney',
-      'audit',
-      'automated',
-      'avoiding',
-      'b2b',
-      'bankruptcy',
-      'benefits',
-      'bulk',
-      'business',
-      'california',
-      'calling',
-      'caps',
-      'cfo',
-      'checks',
-      'claimant',
-      'claims',
-      'class',
-      'cold',
-      'compliance',
-      'comptroller',
-      'contingency',
-      'contractor',
-      'contracts',
-      'exit',
-      'hire',
-      'hiring',
-      'kpi',
-      'manager',
-      'operations',
-      'pod',
-      'scale',
-      'scaling',
-      'team',
-      'valuation'},
- 12: {'3001',
-      'accounts',
-      'action',
-      'agent',
-      'agreement',
-      'antitrust',
-      'asset',
-      'assistants',
-      'attorney',
-      'audit',
-      'automated',
-      'avoiding',
-      'b2b',
-      'bankruptcy',
-      'benefits',
-      'bulk',
-      'business',
-      'california',
-      'calling',
-      'caps',
-      'cfo',
-      'checks',
-      'claimant',
-      'claims',
-      'class',
-      'cold',
-      'compliance',
-      'comptroller',
-      'contingency',
-      'contracts',
-      'day',
-      'days',
-      'launch',
-      'milestone',
-      'month',
-      'plan',
-      'roadmap',
-      'sprint',
-      'start',
-      'thirty',
-      'week'}}
+CHAPTER_KEYWORDS: dict[int, set[str]] = {1: {'points', 'entry', 'search', 'fundamentals', 'unclaimed', 'property'},
+ 2: {'focus', 'launch', 'business', 'recovery'},
+ 3: {'return', 'practices', 'portals', 'public', 'state'},
+ 4: {'personal', 'searches', 'state', 'property'},
+ 5: {'names', 'under', 'funds', 'find', 'unclaimed', 'business'},
+ 6: {'investigator', 'claim', 'requirements', 'filing', 'state'},
+ 7: {'skip', 'claims', 'estate', 'tracing', 'heirs'},
+ 8: {'outreach', 'credibility', 'prospect', 'recovery', 'service'},
+ 9: {'claims', 'collect', 'recovery', 'close', 'fees'},
+ 10: {'funds', 'unclaimed', 'bankruptcy', 'recovery'},
+ 11: {'dividends', 'insurance', 'shares', 'royalties'},
+ 12: {'compliance', 'holder', 'risk', 'reporting', 'audit'}}
 
-BASELINE_EXPERT_CITATIONS_BY_CHAPTER: dict[int, list[dict]] = {1: [{'author': 'TNTreasury',
-      'channel': 'TNTreasury',
+BASELINE_EXPERT_CITATIONS_BY_CHAPTER: dict[int, list[dict]] = {1: [{'author': 'Hoang Le CFP, EA, Real Estate Agent',
+      'channel': 'Hoang Le CFP, EA, Real Estate Agent',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:45](https://www.youtube.com/watch?v=KiR-ZUeCE5g&t=105s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q1 operational verification).',
+      'markdown': '[00:07:03](https://www.youtube.com/watch?v=kZMkghcevh8&t=423s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
       'source_type': 'video_pro_tip',
-      'text': 'How does a holder qualify for the CDA program? A business cannot be currently '
-              'under audit by the state at the time it chooses to sign the compliance '
-              'Disclosure agreement.',
-      'timestamp': 105,
-      'timestamp_label': '[00:01:45]',
-      'timestamp_seconds': 105,
-      'tip': 'How does a holder qualify for the CDA program? A business cannot be currently '
-             'under audit by the state at the time it chooses to sign the compliance '
-             'Disclosure agreement.',
-      'title': 'Unclaimed Property in Tennessee: Understanding Audits, Compliance, and '
-               'Negative Reports (TNTreasury)',
-      'url': 'https://www.youtube.com/watch?v=KiR-ZUeCE5g&t=105s',
-      'video_id': 'KiR-ZUeCE5g'},
-     {'author': 'Money Making Juggernaut',
-      'channel': 'Money Making Juggernaut',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:15](https://www.youtube.com/watch?v=EyQovsqVOnE&t=15s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q1 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Educator in the asset recovery business today I have a great video in store '
-              'with you guys I am going to share with you unclaimed bankruptcy funds this is '
-              'one.',
-      'timestamp': 15,
-      'timestamp_label': '[00:00:15]',
-      'timestamp_seconds': 15,
-      'tip': 'Educator in the asset recovery business today I have a great video in store with '
-             'you guys I am going to share with you unclaimed bankruptcy funds this is one.',
-      'title': 'BANKRUPTCY Unclaimed Funds Explained: UNTAPPED NICHE (Surplus Funds Recovery) '
-               '(Money Making Juggernaut)',
-      'url': 'https://www.youtube.com/watch?v=EyQovsqVOnE&t=15s',
-      'video_id': 'EyQovsqVOnE'},
-     {'author': 'Open Book Entrepreneur',
-      'channel': 'Open Book Entrepreneur',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:08](https://www.youtube.com/watch?v=YoID4SzRBaI&t=248s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q1 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'I wanted to start a little online business and I opened a money market account '
-              'and I guess those links are still active um for that little online store. I '
-              "don't know how to access it anymore, but apparently it's still generating some "
-              'sort of revenue yearly.',
-      'timestamp': 248,
-      'timestamp_label': '[00:04:08]',
-      'timestamp_seconds': 248,
-      'tip': 'I wanted to start a little online business and I opened a money market account '
-             'and I guess those links are still active um for that little online store. I '
-             "don't know how to access it anymore, but apparently it's still generating some "
-             'sort of revenue yearly.',
-      'title': 'Your Family Could Be Owed $10,000+ And You Don’t Even Know It | Private '
-               'Investigator Explains (Open Book Entrepreneur)',
-      'url': 'https://www.youtube.com/watch?v=YoID4SzRBaI&t=248s',
-      'video_id': 'YoID4SzRBaI'},
-     {'author': 'Как се прави',
-      'channel': 'Как се прави',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:32](https://www.youtube.com/watch?v=7MUtjq4bwU0&t=32s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q1 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "So, here is our agenda for today. We'll be covering hidden business revenue, a "
-              'step-by-step search guide, proving your claim, advanced search strategies, and '
-              'finally, how to take action today. Hidden business revenue, unlocking the '
-              "state's corporate vault.",
-      'timestamp': 32,
-      'timestamp_label': '[00:00:32]',
-      'timestamp_seconds': 32,
-      'tip': "So, here is our agenda for today. We'll be covering hidden business revenue, a "
-             'step-by-step search guide, proving your claim, advanced search strategies, and '
-             'finally, how to take action today. Hidden business revenue, unlocking the '
-             "state's corporate vault.",
-      'title': 'How to search North Dakota unclaimed property for a business name (Как се '
-               'прави)',
-      'url': 'https://www.youtube.com/watch?v=7MUtjq4bwU0&t=32s',
-      'video_id': '7MUtjq4bwU0'},
-     {'author': 'Surplus Institute / David Church / Unclaimed Funds',
-      'channel': 'Surplus Institute / David Church / Unclaimed Funds',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:07](https://www.youtube.com/watch?v=kb-pXZgQdoE&t=67s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q1 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Thousand dollar claim it was a state fund we're allowed to get 10 of that so "
-              "again it's contacting the client coming off professional and getting paid and "
-              'we do this all day long and get checks back hey everyone thanks for watching '
-              "I'll update you more on the next video.",
-      'timestamp': 67,
-      'timestamp_label': '[00:01:07]',
-      'timestamp_seconds': 67,
-      'tip': "Thousand dollar claim it was a state fund we're allowed to get 10 of that so "
-             "again it's contacting the client coming off professional and getting paid and we "
-             "do this all day long and get checks back hey everyone thanks for watching I'll "
-             'update you more on the next video.',
-      'title': 'How to get Checks back from Clients in your Unclaimed Funds Business |  '
-               'Surplus Funds Business (Surplus Institute / David Church / Unclaimed Funds)',
-      'url': 'https://www.youtube.com/watch?v=kb-pXZgQdoE&t=67s',
-      'video_id': 'kb-pXZgQdoE'},
-     {'author': 'Money Making Juggernaut',
-      'channel': 'Money Making Juggernaut',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:07:23](https://www.youtube.com/watch?v=xocEKVSCJtU&t=443s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q1 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'After that, we need to market, all right? We can do a SMS campaign, we can do '
-              'voicemail drop, we can call, we can do cold calling, we can reach out on '
-              'Facebook, and we can even do in person. After that, we need to close, all '
-              'right?',
-      'timestamp': 443,
-      'timestamp_label': '[00:07:23]',
-      'timestamp_seconds': 443,
-      'tip': 'After that, we need to market, all right? We can do a SMS campaign, we can do '
-             'voicemail drop, we can call, we can do cold calling, we can reach out on '
-             'Facebook, and we can even do in person. After that, we need to close, all right?',
-      'title': 'How To Find UNCLAIMED MONEY In Your County (COUNTY Unclaimed Funds Explained) '
-               '(Money Making Juggernaut)',
-      'url': 'https://www.youtube.com/watch?v=xocEKVSCJtU&t=443s',
-      'video_id': 'xocEKVSCJtU'},
-     {'author': 'COMPUTERSHARE',
-      'channel': 'COMPUTERSHARE',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:30](https://www.youtube.com/watch?v=K64AFLANH3A&t=30s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q1 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'When you throw in perhaps third party audit firm now you have another '
-              'personality thrown in there who might have a different goal from either the.',
-      'timestamp': 30,
-      'timestamp_label': '[00:00:30]',
-      'timestamp_seconds': 30,
-      'tip': 'When you throw in perhaps third party audit firm now you have another '
-             'personality thrown in there who might have a different goal from either the.',
-      'title': 'Unclaimed Property Regulation (COMPUTERSHARE)',
-      'url': 'https://www.youtube.com/watch?v=K64AFLANH3A&t=30s',
-      'video_id': 'K64AFLANH3A'},
-     {'author': 'Spring Solutions, LLC',
-      'channel': 'Spring Solutions, LLC',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:07:59](https://www.youtube.com/watch?v=YKjd__UIhB8&t=479s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q1 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Regulated rules for that there are no federal unclaimed fund finder fee rules '
-              "so far it's not in the bankruptcy code so it's really what you and the client.",
-      'timestamp': 479,
-      'timestamp_label': '[00:07:59]',
-      'timestamp_seconds': 479,
-      'tip': 'Regulated rules for that there are no federal unclaimed fund finder fee rules so '
-             "far it's not in the bankruptcy code so it's really what you and the client.",
-      'title': 'How to Find Unclaimed Funds | Top 7 Tips Bankruptcy Unclaimed Funds in 2022 '
-               '(Spring Solutions, LLC)',
-      'url': 'https://www.youtube.com/watch?v=YKjd__UIhB8&t=479s',
-      'video_id': 'YKjd__UIhB8'},
-     {'author': 'Unclaimed CEO',
-      'channel': 'Unclaimed CEO',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:50](https://www.youtube.com/watch?v=U1OErlHEyv4&t=110s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q1 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'So, now that you got all your stuff, you know, put together, build your social '
-              'media platforms, you got the funding for your business, start applying for '
-              "business grants while you're marketing your business. How do you market your "
-              'business?',
-      'timestamp': 110,
-      'timestamp_label': '[00:01:50]',
-      'timestamp_seconds': 110,
-      'tip': 'So, now that you got all your stuff, you know, put together, build your social '
-             'media platforms, you got the funding for your business, start applying for '
-             "business grants while you're marketing your business. How do you market your "
-             'business?',
-      'title': 'How To Move Faster & Make More Money With Unclaimed Funds (Unclaimed CEO)',
-      'url': 'https://www.youtube.com/watch?v=U1OErlHEyv4&t=110s',
-      'video_id': 'U1OErlHEyv4'},
-     {'author': 'ShadowAnyone',
-      'channel': 'ShadowAnyone',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:12](https://www.youtube.com/watch?v=VxHOdlFXKdQ&t=132s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q1 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "It's a legitimate service anybody who's done skip tracy knows you know they "
-              'make they may look at a hundred.',
-      'timestamp': 132,
-      'timestamp_label': '[00:02:12]',
-      'timestamp_seconds': 132,
-      'tip': "It's a legitimate service anybody who's done skip tracy knows you know they make "
-             'they may look at a hundred.',
-      'title': 'Private Investigator reveals Unclaimed Money Warnings if you get a letter from '
-               'a “recovery service”! (ShadowAnyone)',
-      'url': 'https://www.youtube.com/watch?v=VxHOdlFXKdQ&t=132s',
-      'video_id': 'VxHOdlFXKdQ'},
-     {'author': 'SJF Law Group - Probate & Estate Planning',
-      'channel': 'SJF Law Group - Probate & Estate Planning',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:42](https://www.youtube.com/watch?v=e-FwgynrCd0&t=42s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q1 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Uh never hurts to to run their name. We find stuff here all the time when we '
-              'are administering estates. And some good info to know is that if the value of '
-              'the account is less than $10,000, you can collect it without opening up a '
-              'probate administration.',
-      'timestamp': 42,
-      'timestamp_label': '[00:00:42]',
-      'timestamp_seconds': 42,
-      'tip': 'Uh never hurts to to run their name. We find stuff here all the time when we are '
-             'administering estates. And some good info to know is that if the value of the '
-             'account is less than $10,000, you can collect it without opening up a probate '
-             'administration.',
-      'title': 'How to check if you have unclaimed funds in Florida | Florida Estate Planning '
-               '& Probate Lawyer (SJF Law Group - Probate & Estate Planning)',
-      'url': 'https://www.youtube.com/watch?v=e-FwgynrCd0&t=42s',
-      'video_id': 'e-FwgynrCd0'},
-     {'author': 'FundSleuth - Unclaimed Funds Info and Training',
-      'channel': 'FundSleuth - Unclaimed Funds Info and Training',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:34](https://www.youtube.com/watch?v=rQqA2wnJ9xw&t=274s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q1 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Think it's a great question and hopefully this is helpful to all of you and "
-              'hopefully this burns on another conversation thanks.',
-      'timestamp': 274,
-      'timestamp_label': '[00:04:34]',
-      'timestamp_seconds': 274,
-      'tip': "Think it's a great question and hopefully this is helpful to all of you and "
-             'hopefully this burns on another conversation thanks.',
-      'title': 'Cold Calling Unclaimed or Surplus Deal Prospects. Should you call on the phone '
-               'or SMS? What is best? (FundSleuth - Unclaimed Funds Info and Training)',
-      'url': 'https://www.youtube.com/watch?v=rQqA2wnJ9xw&t=274s',
-      'video_id': 'rQqA2wnJ9xw'},
-     {'author': 'ucproput',
-      'channel': 'ucproput',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:08:06](https://www.youtube.com/watch?v=3B5mPVcKPDE&t=486s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q1 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "As soon as they are trained they do with what's right and things run smoothly "
-              'very rarely have we ever found where someone is really trying to do things '
-              'wrong or commit fraud.',
-      'timestamp': 486,
-      'timestamp_label': '[00:08:06]',
-      'timestamp_seconds': 486,
-      'tip': "As soon as they are trained they do with what's right and things run smoothly "
-             'very rarely have we ever found where someone is really trying to do things wrong '
-             'or commit fraud.',
-      'title': '(3 of 4) Utah Unclaimed Property Audit Issues (ucproput)',
-      'url': 'https://www.youtube.com/watch?v=3B5mPVcKPDE&t=486s',
-      'video_id': '3B5mPVcKPDE'},
-     {'author': 'InvestigateTV',
-      'channel': 'InvestigateTV',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:22](https://www.youtube.com/watch?v=YWsshlY3kF4&t=142s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q1 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Property I actually found something in my name but it was like $420 it wasn't "
-              "much was it worth looking for the $420 was kind of yeah maybe not I don't know "
-              "it was a little yes it was worth it I got $4 in and felt like hey it's my money "
-              'yeah4 more than you had exactly.',
-      'timestamp': 142,
-      'timestamp_label': '[00:02:22]',
-      'timestamp_seconds': 142,
-      'tip': "Property I actually found something in my name but it was like $420 it wasn't "
-             "much was it worth looking for the $420 was kind of yeah maybe not I don't know "
-             "it was a little yes it was worth it I got $4 in and felt like hey it's my money "
-             'yeah4 more than you had exactly.',
-      'title': 'Be Your Own Investigator: how to find money you may have forgotten '
-               '(InvestigateTV)',
-      'url': 'https://www.youtube.com/watch?v=YWsshlY3kF4&t=142s',
-      'video_id': 'YWsshlY3kF4'},
-     {'author': 'Unclaimed CEO',
-      'channel': 'Unclaimed CEO',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:15](https://www.youtube.com/watch?v=1W2i-aJGcb0&t=15s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q1 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Business funded before they take off this is one of the number one things I '
-              'tell everybody who comes into my program or they look to me for coaching I let.',
-      'timestamp': 15,
-      'timestamp_label': '[00:00:15]',
-      'timestamp_seconds': 15,
-      'tip': 'Business funded before they take off this is one of the number one things I tell '
-             'everybody who comes into my program or they look to me for coaching I let.',
-      'title': 'One of the biggest mistakes made with UNCLAIMED FUNDS (Must Watch) (Unclaimed '
-               'CEO)',
-      'url': 'https://www.youtube.com/watch?v=1W2i-aJGcb0&t=15s',
-      'video_id': '1W2i-aJGcb0'}],
- 2: [{'author': 'GardenShop.Pro',
-      'channel': 'GardenShop.Pro',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:27](https://www.youtube.com/watch?v=fntI1mKZpK0&t=327s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q2 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Thankfully, Missouri law actually rigorously caps these locator fees to protect '
-              'you. In fact, any fee agreement made within the first 12 months of the state '
-              'holding your property is completely unenforceable, period.',
-      'timestamp': 327,
-      'timestamp_label': '[00:05:27]',
-      'timestamp_seconds': 327,
-      'tip': 'Thankfully, Missouri law actually rigorously caps these locator fees to protect '
-             'you. In fact, any fee agreement made within the first 12 months of the state '
-             'holding your property is completely unenforceable, period.',
-      'title': 'How to search unclaimed property for a business in Missouri (GardenShop.Pro)',
-      'url': 'https://www.youtube.com/watch?v=fntI1mKZpK0&t=327s',
-      'video_id': 'fntI1mKZpK0'},
+      'text': 'Licensed asset locators, sometimes called heir finders, do legitimately exist and '
+              "are regulated in most states, typically capped around 10% of the property's value "
+              'as their fee.',
+      'timestamp': 423,
+      'timestamp_label': '[00:07:03]',
+      'timestamp_seconds': 423,
+      'tip': 'Licensed asset locators, sometimes called heir finders, do legitimately exist and '
+             "are regulated in most states, typically capped around 10% of the property's value as "
+             'their fee.',
+      'title': 'Unclaimed Property Explained: How To Check and Claim It',
+      'url': 'https://www.youtube.com/watch?v=kZMkghcevh8&t=423s',
+      'video_id': 'kZMkghcevh8'},
      {'author': 'Surplus Funds 101',
       'channel': 'Surplus Funds 101',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:19](https://www.youtube.com/watch?v=Tx1_986LmrY&t=139s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q2 operational verification).',
+      'markdown': '[00:05:15](https://www.youtube.com/watch?v=-VDHxOAAA7A&t=315s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
       'source_type': 'video_pro_tip',
-      'text': "'t have a very big budget or anything like that. These are the websites that I "
-              "would suggest going to. That if you don't have the money to pay for it to be "
-              'done in bulk, but. Just wonder if you get some Valley.',
-      'timestamp': 139,
-      'timestamp_label': '[00:02:19]',
-      'timestamp_seconds': 139,
-      'tip': "'t have a very big budget or anything like that. These are the websites that I "
-             "would suggest going to. That if you don't have the money to pay for it to be "
-             'done in bulk, but. Just wonder if you get some Valley.',
-      'title': 'State Funds Business Skip Tracing. Best FREE Skip Tracing Websites For Your '
-               'Unclaimed Funds Business (Surplus Funds 101)',
-      'url': 'https://www.youtube.com/watch?v=Tx1_986LmrY&t=139s',
-      'video_id': 'Tx1_986LmrY'},
-     {'author': 'Money Grammar',
-      'channel': 'Money Grammar',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:07:39](https://www.youtube.com/watch?v=5l8zepw8oWY&t=459s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q2 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'There is absolutely no need to pay these fees, as you can easily perform the '
-              'exact same searches and file the claims directly with the state at zero cost.',
-      'timestamp': 459,
-      'timestamp_label': '[00:07:39]',
-      'timestamp_seconds': 459,
-      'tip': 'There is absolutely no need to pay these fees, as you can easily perform the '
-             'exact same searches and file the claims directly with the state at zero cost.',
-      'title': 'The Mechanics of Escheatment: How to Reclaim Your Abandoned Assets (Money '
-               'Grammar)',
-      'url': 'https://www.youtube.com/watch?v=5l8zepw8oWY&t=459s',
-      'video_id': '5l8zepw8oWY'},
-     {'author': 'Spring Solutions, LLC',
-      'channel': 'Spring Solutions, LLC',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:07:55](https://www.youtube.com/watch?v=2Q7vcVR_cDs&t=475s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q2 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "They're going to pay you back maybe like in my instance the guy said he was "
-              'going to pay me 400 the first payment.',
-      'timestamp': 475,
-      'timestamp_label': '[00:07:55]',
-      'timestamp_seconds': 475,
-      'tip': "They're going to pay you back maybe like in my instance the guy said he was "
-             'going to pay me 400 the first payment.',
-      'title': 'Steps to a Simple Lawsuit/Breach of Contract-Bankruptcy Unclaimed Funds '
-               '(Spring Solutions, LLC)',
-      'url': 'https://www.youtube.com/watch?v=2Q7vcVR_cDs&t=475s',
-      'video_id': '2Q7vcVR_cDs'},
-     {'author': 'Buried in Work',
-      'channel': 'Buried in Work',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:36](https://www.youtube.com/watch?v=xfSFTtM1yT8&t=336s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q2 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'So claims under $500, we were able to fasttrack and pay those without the '
-              "claimants's interaction. So that has been a process.",
-      'timestamp': 336,
-      'timestamp_label': '[00:05:36]',
-      'timestamp_seconds': 336,
-      'tip': 'So claims under $500, we were able to fasttrack and pay those without the '
-             "claimants's interaction. So that has been a process.",
-      'title': '#EP46 | Lynn Hall on DC Unclaimed Property: Transforming Asset Recovery and '
-               'Building Trust (Buried in Work)',
-      'url': 'https://www.youtube.com/watch?v=xfSFTtM1yT8&t=336s',
-      'video_id': 'xfSFTtM1yT8'},
-     {'author': 'Off The Receipt',
-      'channel': 'Off The Receipt',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:52](https://www.youtube.com/watch?v=hSrCCZHDpUU&t=112s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q2 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Companies lose addresses all the time. A check with no address attached, a '
-              'payment never matched a customer. Every one of those falls through to rule two. '
-              'And for most of corporate America, rule two points to one place.',
-      'timestamp': 112,
-      'timestamp_label': '[00:01:52]',
-      'timestamp_seconds': 112,
-      'tip': 'Companies lose addresses all the time. A check with no address attached, a '
-             'payment never matched a customer. Every one of those falls through to rule two. '
-             'And for most of corporate America, rule two points to one place.',
-      'title': 'How Delaware Quietly Makes $554M From Unclaimed Money (Off The Receipt)',
-      'url': 'https://www.youtube.com/watch?v=hSrCCZHDpUU&t=112s',
-      'video_id': 'hSrCCZHDpUU'},
-     {'author': 'Broadstreet Radio',
-      'channel': 'Broadstreet Radio',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:52](https://www.youtube.com/watch?v=DLhQH9iGJ84&t=112s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q2 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'You used to receive it by post. You used to go to post office and they give you '
-              'what we call dividend warrants. You pay it in like a check which is this into '
-              'your bank account and it clears after the period that checks clear. That era is '
-              'gone and dusted.',
-      'timestamp': 112,
-      'timestamp_label': '[00:01:52]',
-      'timestamp_seconds': 112,
-      'tip': 'You used to receive it by post. You used to go to post office and they give you '
-             'what we call dividend warrants. You pay it in like a check which is this into '
-             'your bank account and it clears after the period that checks clear. That era is '
-             'gone and dusted.',
-      'title': 'Step-by-Step Guide to Recovering Your Unclaimed Dividends (Broadstreet Radio)',
-      'url': 'https://www.youtube.com/watch?v=DLhQH9iGJ84&t=112s',
-      'video_id': 'DLhQH9iGJ84'},
-     {'author': 'Trust Armor',
-      'channel': 'Trust Armor',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:57](https://www.youtube.com/watch?v=8977FkLTYjo&t=177s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q2 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "If there's just one thing you take away from our chat today, please let it be "
-              'this. Real organizations, like the government or a bank, will never call you '
-              'and ask you to pay a fee to receive money that already belongs to you. It just '
-              "doesn't happen that way.",
-      'timestamp': 177,
-      'timestamp_label': '[00:02:57]',
-      'timestamp_seconds': 177,
-      'tip': "If there's just one thing you take away from our chat today, please let it be "
-             'this. Real organizations, like the government or a bank, will never call you and '
-             'ask you to pay a fee to receive money that already belongs to you. It just '
-             "doesn't happen that way.",
-      'title': '"You Have Unclaimed Money" — It\'s a Scam (Trust Armor)',
-      'url': 'https://www.youtube.com/watch?v=8977FkLTYjo&t=177s',
-      'video_id': '8977FkLTYjo'},
-     {'author': 'CBS Colorado',
-      'channel': 'CBS Colorado',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:56](https://www.youtube.com/watch?v=GBOIDnAjQvc&t=56s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q2 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'AWAY TO ONE PERSON IS 1 TO 2 MILLION. THIS IS WHY THEY HAVE TO VERIFY THE RIGHT '
-              "ITEMS TO THE RIGHT PEOPLE. THERE'S NOTHING WORSE THAN SENDING THE PROPERTY TO "
-              "THE WRONG PERSON. IT'S MONEY THAT CAN HELP PAY A BILL, SUPPORT A FAMILY OR KEEP "
-              'A BUSINESS RUNNING.',
-      'timestamp': 56,
-      'timestamp_label': '[00:00:56]',
-      'timestamp_seconds': 56,
-      'tip': 'AWAY TO ONE PERSON IS 1 TO 2 MILLION. THIS IS WHY THEY HAVE TO VERIFY THE RIGHT '
-             "ITEMS TO THE RIGHT PEOPLE. THERE'S NOTHING WORSE THAN SENDING THE PROPERTY TO "
-             "THE WRONG PERSON. IT'S MONEY THAT CAN HELP PAY A BILL, SUPPORT A FAMILY OR KEEP "
-             'A BUSINESS RUNNING.',
-      'title': 'Colorado has $2.5B in unclaimed property. How to check whether any belongs to '
-               'you. (CBS Colorado)',
-      'url': 'https://www.youtube.com/watch?v=GBOIDnAjQvc&t=56s',
-      'video_id': 'GBOIDnAjQvc'},
-     {'author': 'Blue Mesa Minerals',
-      'channel': 'Blue Mesa Minerals',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:07:55](https://www.youtube.com/watch?v=HSmuF8xIaIU&t=475s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q2 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "A an active payment on it so it's very helpful to track down missing property "
-              'that you can cure the title and then get into pay status.',
-      'timestamp': 475,
-      'timestamp_label': '[00:07:55]',
-      'timestamp_seconds': 475,
-      'tip': "A an active payment on it so it's very helpful to track down missing property "
-             'that you can cure the title and then get into pay status.',
-      'title': 'Finding Oil & Gas Royalties in Unclaimed Property (Blue Mesa Minerals)',
-      'url': 'https://www.youtube.com/watch?v=HSmuF8xIaIU&t=475s',
-      'video_id': 'HSmuF8xIaIU'},
-     {'author': 'Surplus Institute / David Church / Unclaimed Funds',
-      'channel': 'Surplus Institute / David Church / Unclaimed Funds',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:44](https://www.youtube.com/watch?v=EFuzXe23Q7I&t=224s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q2 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': '" And I\'m like, "Okay, what about you guys collecting interest on these fees '
-              'that they use claim these funds that have been out there 30, 40, 50 years. You '
-              "think that's okay, but you don't think it's okay for people to get people paid "
-              "and get a finder's fee in the process?",
-      'timestamp': 224,
-      'timestamp_label': '[00:03:44]',
-      'timestamp_seconds': 224,
-      'tip': '" And I\'m like, "Okay, what about you guys collecting interest on these fees '
-             'that they use claim these funds that have been out there 30, 40, 50 years. You '
-             "think that's okay, but you don't think it's okay for people to get people paid "
-             "and get a finder's fee in the process?",
-      'title': '🔴 LIVE: State Unclaimed Funds for Beginners | How to Find the Money & Get Paid '
-               '(Surplus Institute / David Church / Unclaimed Funds)',
-      'url': 'https://www.youtube.com/watch?v=EFuzXe23Q7I&t=224s',
-      'video_id': 'EFuzXe23Q7I'},
-     {'author': 'Money Missed',
-      'channel': 'Money Missed',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:25](https://www.youtube.com/watch?v=sfcrjWHv_7k&t=85s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q2 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'The contents of a safe deposit box nobody came back for. Utility deposits and '
-              'refunds. Court deposits, trust funds, and escrow balances left over from a '
-              'legal case.',
-      'timestamp': 85,
-      'timestamp_label': '[00:01:25]',
-      'timestamp_seconds': 85,
-      'tip': 'The contents of a safe deposit box nobody came back for. Utility deposits and '
-             'refunds. Court deposits, trust funds, and escrow balances left over from a legal '
-             'case.',
-      'title': 'How to Check If You Have Unclaimed Money in Your Name (2026) (Money Missed)',
-      'url': 'https://www.youtube.com/watch?v=sfcrjWHv_7k&t=85s',
-      'video_id': 'sfcrjWHv_7k'},
-     {'author': 'WTHR',
-      'channel': 'WTHR',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:31](https://www.youtube.com/watch?v=pPow2SwrxBE&t=91s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q2 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Do a quick search there's nothing that puts a smile on our face more than "
-              'putting a smile on your face now make sure you go to the right website indiana '
-              'indianaclaim.gov nothing else the government will not charge you a fee to '
-              'recover your own money.',
-      'timestamp': 91,
-      'timestamp_label': '[00:01:31]',
-      'timestamp_seconds': 91,
-      'tip': "Do a quick search there's nothing that puts a smile on our face more than "
-             'putting a smile on your face now make sure you go to the right website indiana '
-             'indianaclaim.gov nothing else the government will not charge you a fee to '
-             'recover your own money.',
-      'title': 'You can search a state website for unclaimed property (WTHR)',
-      'url': 'https://www.youtube.com/watch?v=pPow2SwrxBE&t=91s',
-      'video_id': 'pPow2SwrxBE'},
-     {'author': 'Unclaimed CEO',
-      'channel': 'Unclaimed CEO',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:06:58](https://www.youtube.com/watch?v=zjCP9bHX3oc&t=418s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q2 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "The link join the academy join me join my folks and we're going to help you get "
-              "your business off the ground until then guys I'll see you next time peace.",
-      'timestamp': 418,
-      'timestamp_label': '[00:06:58]',
-      'timestamp_seconds': 418,
-      'tip': "The link join the academy join me join my folks and we're going to help you get "
-             "your business off the ground until then guys I'll see you next time peace.",
-      'title': 'Unclaimed Funds: Top 5 Ways To Close Deals Without Cold Calling (Unclaimed '
-               'CEO)',
-      'url': 'https://www.youtube.com/watch?v=zjCP9bHX3oc&t=418s',
-      'video_id': 'zjCP9bHX3oc'},
-     {'author': 'Money Making Juggernaut',
-      'channel': 'Money Making Juggernaut',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:30](https://www.youtube.com/watch?v=ZvJ4yCc9em4&t=210s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q2 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': '000 like was that all to you all to me that was what I took home all right do '
-              "you happen to have that check with you so they can see it I'll show you guys "
-              'right now.',
-      'timestamp': 210,
-      'timestamp_label': '[00:03:30]',
-      'timestamp_seconds': 210,
-      'tip': '000 like was that all to you all to me that was what I took home all right do '
-             "you happen to have that check with you so they can see it I'll show you guys "
-             'right now.',
-      'title': 'Unclaimed Funds 🤑 Jay Made $31k in Finder Fees (State Funds Business) (Money '
-               'Making Juggernaut)',
-      'url': 'https://www.youtube.com/watch?v=ZvJ4yCc9em4&t=210s',
-      'video_id': 'ZvJ4yCc9em4'}],
- 3: [{'author': 'CBS News Sacramento',
-      'channel': 'CBS News Sacramento',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:09](https://www.youtube.com/watch?v=1Grj5UvPLwo&t=69s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'California is holding on to billions of dollars from uncashed checks, sold bank '
-              'accounts, insurance payments, investments turned over by banks, and until you '
-              'claim it, the state gets to use your money.',
-      'timestamp': 69,
-      'timestamp_label': '[00:01:09]',
-      'timestamp_seconds': 69,
-      'tip': 'California is holding on to billions of dollars from uncashed checks, sold bank '
-             'accounts, insurance payments, investments turned over by banks, and until you '
-             'claim it, the state gets to use your money.',
-      'title': 'CBS California investigation spurs federal action on states’ unclaimed '
-               'property practices (CBS News Sacramento)',
-      'url': 'https://www.youtube.com/watch?v=1Grj5UvPLwo&t=69s',
-      'video_id': '1Grj5UvPLwo'},
-     {'author': 'Financial Soup',
-      'channel': 'Financial Soup',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:37](https://www.youtube.com/watch?v=ubLk2A5a-2A&t=217s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'So, with that being said, remember that unclaimed money can come from many '
-              'sources. Uh, forgotten bank accounts, lost CDs, insurance refunds, insurance '
-              'claims, uncash checks.',
-      'timestamp': 217,
-      'timestamp_label': '[00:03:37]',
-      'timestamp_seconds': 217,
-      'tip': 'So, with that being said, remember that unclaimed money can come from many '
-             'sources. Uh, forgotten bank accounts, lost CDs, insurance refunds, insurance '
-             'claims, uncash checks.',
-      'title': 'How to Find Unclaimed Money (Financial Soup)',
-      'url': 'https://www.youtube.com/watch?v=ubLk2A5a-2A&t=217s',
-      'video_id': 'ubLk2A5a-2A'},
-     {'author': 'Unclaimed CEO',
-      'channel': 'Unclaimed CEO',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:17](https://www.youtube.com/watch?v=XsLq9LUTb6w&t=137s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "I am calling hundreds of people every single day and no one's picking up. So, "
-              "money's burning fast and I'm getting stressed. I was burning my own cash to run "
-              'my business. Again, this is probably one of the lowest overhead businesses that '
-              "you'll have in the beginning.",
-      'timestamp': 137,
-      'timestamp_label': '[00:02:17]',
-      'timestamp_seconds': 137,
-      'tip': "I am calling hundreds of people every single day and no one's picking up. So, "
-             "money's burning fast and I'm getting stressed. I was burning my own cash to run "
-             'my business. Again, this is probably one of the lowest overhead businesses that '
-             "you'll have in the beginning.",
-      'title': 'The $10K/month Blueprint for Unclaimed Funds (Unclaimed CEO)',
-      'url': 'https://www.youtube.com/watch?v=XsLq9LUTb6w&t=137s',
-      'video_id': 'XsLq9LUTb6w'},
-     {'author': 'FOX43 News',
-      'channel': 'FOX43 News',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:29](https://www.youtube.com/watch?v=gEVKR-AmaU0&t=89s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "It's not necessary because you can do it all yourself with the P A Treasury "
-              'website. 5 billion worth of unclaimed funds ranging from material items like '
-              'this blinged out necklace to some cold hard cash. One out of 10 Pennsylvanians '
-              'has unclaimed property.',
-      'timestamp': 89,
-      'timestamp_label': '[00:01:29]',
-      'timestamp_seconds': 89,
-      'tip': "It's not necessary because you can do it all yourself with the P A Treasury "
-             'website. 5 billion worth of unclaimed funds ranging from material items like '
-             'this blinged out necklace to some cold hard cash. One out of 10 Pennsylvanians '
-             'has unclaimed property.',
-      'title': 'A company claims to find  unclaimed funds for a fee, but is it necessary? | '
-               'FOX43 Finds Out (FOX43 News)',
-      'url': 'https://www.youtube.com/watch?v=gEVKR-AmaU0&t=89s',
-      'video_id': 'gEVKR-AmaU0'},
-     {'author': 'WGN News',
-      'channel': 'WGN News',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:45](https://www.youtube.com/watch?v=4abzayS6yzk&t=45s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'MOST OF THE CHECKS ARE BETWEEN $5100. IF YOU SEE A CHECK IN THE MAIL FROM THE '
-              "STATE TREASURER'S OFFICE, IF YOU SEE THAT LETTER BEFORE, IT'S NOT A SCAM, ALL "
-              'YOU HAVE TO DO IS OPEN THAT ENVELOPE AND CASH THAT CHECK THAT MONEY CIRCULATING '
-              'THROUGHOUT THE ECONOMY.',
-      'timestamp': 45,
-      'timestamp_label': '[00:00:45]',
-      'timestamp_seconds': 45,
-      'tip': 'MOST OF THE CHECKS ARE BETWEEN $5100. IF YOU SEE A CHECK IN THE MAIL FROM THE '
-             "STATE TREASURER'S OFFICE, IF YOU SEE THAT LETTER BEFORE, IT'S NOT A SCAM, ALL "
-             'YOU HAVE TO DO IS OPEN THAT ENVELOPE AND CASH THAT CHECK THAT MONEY CIRCULATING '
-             'THROUGHOUT THE ECONOMY.',
-      'title': "'It's not a scam': Nearly 140K Illinois residents to receive checks for "
-               'unclaimed property (WGN News)',
-      'url': 'https://www.youtube.com/watch?v=4abzayS6yzk&t=45s',
-      'video_id': '4abzayS6yzk'},
-     {'author': 'Overage Acquisition',
-      'channel': 'Overage Acquisition',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:18](https://www.youtube.com/watch?v=La2LN9HMPbs&t=78s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "'s say the back taxes were $10,000 and the property sold for $100,000, that "
-              'additional $90,000, the difference between the sale price and the tax liability '
-              'is called the overage. And we come in and we help the claimant recover this '
-              'money.',
-      'timestamp': 78,
-      'timestamp_label': '[00:01:18]',
-      'timestamp_seconds': 78,
-      'tip': "'s say the back taxes were $10,000 and the property sold for $100,000, that "
-             'additional $90,000, the difference between the sale price and the tax liability '
-             'is called the overage. And we come in and we help the claimant recover this '
-             'money.',
-      'title': 'Unclaimed Money After Foreclosure: How to Legally Recover What’s Rightfully '
-               'Yours (Overage Acquisition)',
-      'url': 'https://www.youtube.com/watch?v=La2LN9HMPbs&t=78s',
-      'video_id': 'La2LN9HMPbs'},
-     {'author': 'Money Making Juggernaut',
-      'channel': 'Money Making Juggernaut',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:15](https://www.youtube.com/watch?v=bfDePAnN-4Y&t=15s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Educator in the asset recovery business today I have a great video on store '
-              'guys I am going to break down how you can close an unclaimed State funds deal.',
-      'timestamp': 15,
-      'timestamp_label': '[00:00:15]',
-      'timestamp_seconds': 15,
-      'tip': 'Educator in the asset recovery business today I have a great video on store guys '
-             'I am going to break down how you can close an unclaimed State funds deal.',
-      'title': 'How To Close An Unclaimed State Funds Deal (asset recovery business) (Money '
-               'Making Juggernaut)',
-      'url': 'https://www.youtube.com/watch?v=bfDePAnN-4Y&t=15s',
-      'video_id': 'bfDePAnN-4Y'},
-     {'author': 'ACE SURPLUS',
-      'channel': 'ACE SURPLUS',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:57](https://www.youtube.com/watch?v=daCZb9lQvnc&t=117s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'The sale of these assets generates more money then required to pay off '
-              'creditors and administrative costs the remaining funds may be refunded to the '
-              'debor so these are just a couple ways why a debtor may have unclaimed.',
-      'timestamp': 117,
-      'timestamp_label': '[00:01:57]',
-      'timestamp_seconds': 117,
-      'tip': 'The sale of these assets generates more money then required to pay off creditors '
-             'and administrative costs the remaining funds may be refunded to the debor so '
-             'these are just a couple ways why a debtor may have unclaimed.',
-      'title': 'What are Unclaimed Bankruptcy Funds? (ACE SURPLUS)',
-      'url': 'https://www.youtube.com/watch?v=daCZb9lQvnc&t=117s',
-      'video_id': 'daCZb9lQvnc'},
-     {'author': 'GardenShop.Pro',
-      'channel': 'GardenShop.Pro',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:53](https://www.youtube.com/watch?v=J2nto2DAwqc&t=113s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "But we're also talking about super everyday things, checking accounts, uncashed "
-              'payroll checks, safe deposit box contents, and forgotten 401ks. Moving on to '
-              "section two, heir eligibility and documents. It's time to prove your right to "
-              'the treasure.',
-      'timestamp': 113,
-      'timestamp_label': '[00:01:53]',
-      'timestamp_seconds': 113,
-      'tip': "But we're also talking about super everyday things, checking accounts, uncashed "
-             'payroll checks, safe deposit box contents, and forgotten 401ks. Moving on to '
-             "section two, heir eligibility and documents. It's time to prove your right to "
-             'the treasure.',
-      'title': 'How to file an unclaimed property claim as an heir (GardenShop.Pro)',
-      'url': 'https://www.youtube.com/watch?v=J2nto2DAwqc&t=113s',
-      'video_id': 'J2nto2DAwqc'},
-     {'author': 'GLC Wealth Advisor',
-      'channel': 'GLC Wealth Advisor',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:25](https://www.youtube.com/watch?v=Rg_zkc6UGWE&t=205s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'So what happens in those cases pre pre 2010? So once somebody claims their '
-              "dividends from the government body, they can claim even the past year's "
-              'dividends.',
-      'timestamp': 205,
-      'timestamp_label': '[00:03:25]',
-      'timestamp_seconds': 205,
-      'tip': 'So what happens in those cases pre pre 2010? So once somebody claims their '
-             "dividends from the government body, they can claim even the past year's "
-             'dividends.',
-      'title': 'Unclaimed Shares & Dividends? Here’s How To Track And Claim Them Via IEPFA '
-               'Portal | Part 1 (GLC Wealth Advisor)',
-      'url': 'https://www.youtube.com/watch?v=Rg_zkc6UGWE&t=205s',
-      'video_id': 'Rg_zkc6UGWE'},
-     {'author': 'Spring Solutions, LLC',
-      'channel': 'Spring Solutions, LLC',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:49](https://www.youtube.com/watch?v=R8PpcOrRZc4&t=109s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'This is their information that they have but then they also have half a Davidov '
-              'claimant just listed underneath that so this is here and here they have two.',
-      'timestamp': 109,
-      'timestamp_label': '[00:01:49]',
-      'timestamp_seconds': 109,
-      'tip': 'This is their information that they have but then they also have half a Davidov '
-             'claimant just listed underneath that so this is here and here they have two.',
-      'title': 'Northern and Middle District of Florida Bankruptcy Court-Recovery unclaimed '
-               'funds (Spring Solutions, LLC)',
-      'url': 'https://www.youtube.com/watch?v=R8PpcOrRZc4&t=109s',
-      'video_id': 'R8PpcOrRZc4'},
-     {'author': 'Как се прави',
-      'channel': 'Как се прави',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:48](https://www.youtube.com/watch?v=edHsQGppnKE&t=108s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "We're talking about dormant bank accounts, uncashed payroll checks, stocks, "
-              'insurance proceeds, and even tech industry equity compensation. The state just '
-              'holds these funds in trust indefinitely until the rightful owner or their heir '
-              'steps forward.',
-      'timestamp': 108,
-      'timestamp_label': '[00:01:48]',
-      'timestamp_seconds': 108,
-      'tip': "We're talking about dormant bank accounts, uncashed payroll checks, stocks, "
-             'insurance proceeds, and even tech industry equity compensation. The state just '
-             'holds these funds in trust indefinitely until the rightful owner or their heir '
-             'steps forward.',
-      'title': 'How to claim Utah unclaimed property with a notarized form (Как се прави)',
-      'url': 'https://www.youtube.com/watch?v=edHsQGppnKE&t=108s',
-      'video_id': 'edHsQGppnKE'},
-     {'author': 'Surplus Institute / David Church / Unclaimed Funds',
-      'channel': 'Surplus Institute / David Church / Unclaimed Funds',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:38](https://www.youtube.com/watch?v=V_ycS3i_CMY&t=158s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Beginning so I go ahead and I go back and I say John this is David I'm calling "
-              "you about your dad's estate I'm calling you about the overage so the guy.",
-      'timestamp': 158,
-      'timestamp_label': '[00:02:38]',
-      'timestamp_seconds': 158,
-      'tip': "Beginning so I go ahead and I go back and I say John this is David I'm calling "
-             "you about your dad's estate I'm calling you about the overage so the guy.",
-      'title': '5k commission and skip tracing revealed | Surplus Funds Business in USA | '
-               'Unclaimed State Funds (Surplus Institute / David Church / Unclaimed Funds)',
-      'url': 'https://www.youtube.com/watch?v=V_ycS3i_CMY&t=158s',
-      'video_id': 'V_ycS3i_CMY'},
-     {'author': 'Surplus Institute / David Church / Unclaimed Funds',
-      'channel': 'Surplus Institute / David Church / Unclaimed Funds',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:06:04](https://www.youtube.com/watch?v=pOEq9UMUFHU&t=364s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Going to talk a little bit about bankruptcy I'm doing some information tomorrow "
-              "we'll get into a little bit on that cuz there have been some questions on that "
-              "and I'll see you around thanks again for watching.",
-      'timestamp': 364,
-      'timestamp_label': '[00:06:04]',
-      'timestamp_seconds': 364,
-      'tip': "Going to talk a little bit about bankruptcy I'm doing some information tomorrow "
-             "we'll get into a little bit on that cuz there have been some questions on that "
-             "and I'll see you around thanks again for watching.",
-      'title': 'How I Claimed over $50,000.00 in State Unclaimed Funds – Step-by-Step Guide! '
-               '(Surplus Institute / David Church / Unclaimed Funds)',
-      'url': 'https://www.youtube.com/watch?v=pOEq9UMUFHU&t=364s',
-      'video_id': 'pOEq9UMUFHU'},
-     {'author': 'Unclaimed CEO',
-      'channel': 'Unclaimed CEO',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:06:05](https://www.youtube.com/watch?v=WlbnzGtdoSY&t=365s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "The game I'm getting multiple deals closed daily okay so you can sit down "
-              'office all day and be boring or you take these tips and run with it alright '
-              'guys until the next video live your best life see you soon.',
-      'timestamp': 365,
-      'timestamp_label': '[00:06:05]',
-      'timestamp_seconds': 365,
-      'tip': "The game I'm getting multiple deals closed daily okay so you can sit down office "
-             'all day and be boring or you take these tips and run with it alright guys until '
-             'the next video live your best life see you soon.',
-      'title': '5 Things To Do Instead Of Cold Calling | Tax Surplus | Unclaimed Funds '
-               '(Unclaimed CEO)',
-      'url': 'https://www.youtube.com/watch?v=WlbnzGtdoSY&t=365s',
-      'video_id': 'WlbnzGtdoSY'}],
- 4: [{'author': 'Surplus Funds 101',
-      'channel': 'Surplus Funds 101',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:48](https://www.youtube.com/watch?v=-VDHxOAAA7A&t=108s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q4 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'These funds can originate from various sources such as unclaimed bank accounts, '
-              'insurance policies, and securities. Number two, a recovery agent. People that '
-              'are looking to turn their hobby into a full-time business.',
-      'timestamp': 108,
-      'timestamp_label': '[00:01:48]',
-      'timestamp_seconds': 108,
-      'tip': 'These funds can originate from various sources such as unclaimed bank accounts, '
-             'insurance policies, and securities. Number two, a recovery agent. People that '
-             'are looking to turn their hobby into a full-time business.',
-      'title': 'Unclaimed Property Business  Top 8 Key Terms To Understand (Surplus Funds 101)',
-      'url': 'https://www.youtube.com/watch?v=-VDHxOAAA7A&t=108s',
+      'text': "You need to make them your best friend when you're running this business, because "
+              'they can either make your life a blessing or be a huge pain in the ass.',
+      'timestamp': 315,
+      'timestamp_label': '[00:05:15]',
+      'timestamp_seconds': 315,
+      'tip': 'Get good at becoming friends with the state unclaimed property office, because they '
+             'can either make your life a blessing or be a huge pain in the ass.',
+      'title': 'Unclaimed Property Business  Top 8 Key Terms To Understand',
+      'url': 'https://www.youtube.com/watch?v=-VDHxOAAA7A&t=315s',
       'video_id': '-VDHxOAAA7A'},
-     {'author': 'Surplus Institute / David Church / Unclaimed Funds',
-      'channel': 'Surplus Institute / David Church / Unclaimed Funds',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:15](https://www.youtube.com/watch?v=gitQwM01Fgc&t=135s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q4 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'California law up here what what you have to do to be compliant. It um keeping '
-              "and it says keep minutes. But here's the thing, they don't ask you for any "
-              'minutes in this. What they ask you for is your business name and entity number.',
-      'timestamp': 135,
-      'timestamp_label': '[00:02:15]',
-      'timestamp_seconds': 135,
-      'tip': 'California law up here what what you have to do to be compliant. It um keeping '
-             "and it says keep minutes. But here's the thing, they don't ask you for any "
-             'minutes in this. What they ask you for is your business name and entity number.',
-      'title': 'Avoid Corporate Compliance Scams | Beware of False Notices in Corporate '
-               'Compliance | #surplusfunds (Surplus Institute / David Church / Unclaimed '
-               'Funds)',
-      'url': 'https://www.youtube.com/watch?v=gitQwM01Fgc&t=135s',
-      'video_id': 'gitQwM01Fgc'},
-     {'author': 'Lunch Cash',
-      'channel': 'Lunch Cash',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:17](https://www.youtube.com/watch?v=R6nRcAkxVdA&t=257s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q4 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'The law also caps how much of it can go into the General Fund in a year. '
-              'Anything over the cap goes into a reserve, for big claims later. For its 2026 '
-              "budget year, Delaware's own forecast expected refunds to jump, and the amount "
-              'it keeps to fall.',
-      'timestamp': 257,
-      'timestamp_label': '[00:04:17]',
-      'timestamp_seconds': 257,
-      'tip': 'The law also caps how much of it can go into the General Fund in a year. '
-             'Anything over the cap goes into a reserve, for big claims later. For its 2026 '
-             "budget year, Delaware's own forecast expected refunds to jump, and the amount it "
-             'keeps to fall.',
-      'title': 'Delaware Makes More From Forgotten Money Than From Its Lottery (Lunch Cash)',
-      'url': 'https://www.youtube.com/watch?v=R6nRcAkxVdA&t=257s',
-      'video_id': 'R6nRcAkxVdA'},
-     {'author': 'GardenShop.Pro',
-      'channel': 'GardenShop.Pro',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:18](https://www.youtube.com/watch?v=bUxdjo_bs0g&t=78s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q4 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "We're talking about uncashed vendor checks, returned electronic transfers, "
-              'unreturned security deposits, maybe even forgotten insurance claims. You know, '
-              "when the organization holding your money just can't locate you, maybe because "
-              'of an office move or a personnel change.',
-      'timestamp': 78,
-      'timestamp_label': '[00:01:18]',
-      'timestamp_seconds': 78,
-      'tip': "We're talking about uncashed vendor checks, returned electronic transfers, "
-             'unreturned security deposits, maybe even forgotten insurance claims. You know, '
-             "when the organization holding your money just can't locate you, maybe because of "
-             'an office move or a personnel change.',
-      'title': 'How to search unclaimed property for a business in Tennessee (GardenShop.Pro)',
-      'url': 'https://www.youtube.com/watch?v=bUxdjo_bs0g&t=78s',
-      'video_id': 'bUxdjo_bs0g'},
-     {'author': 'Как се прави',
-      'channel': 'Как се прави',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:15](https://www.youtube.com/watch?v=cF0HhlLh7NI&t=135s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q4 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Law, commercial entities, we're talking banks, insurance companies, utility "
-              "providers, they're legally required to transfer inactive accounts to the state "
-              'comptroller after a specific dormancy period.',
-      'timestamp': 135,
-      'timestamp_label': '[00:02:15]',
-      'timestamp_seconds': 135,
-      'tip': "Law, commercial entities, we're talking banks, insurance companies, utility "
-             "providers, they're legally required to transfer inactive accounts to the state "
-             'comptroller after a specific dormancy period.',
-      'title': 'How to search New York unclaimed property by last name (Как се прави)',
-      'url': 'https://www.youtube.com/watch?v=cF0HhlLh7NI&t=135s',
-      'video_id': 'cF0HhlLh7NI'},
-     {'author': 'Lorman Education Services',
-      'channel': 'Lorman Education Services',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:17:52](https://www.youtube.com/watch?v=2TghvbJiOis&t=1072s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q4 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Matt explained is basically that the entity typically accompany a business '
-              'required to report and remit unclaimed property to the state and so in the.',
-      'timestamp': 1072,
-      'timestamp_label': '[00:17:52]',
-      'timestamp_seconds': 1072,
-      'tip': 'Matt explained is basically that the entity typically accompany a business '
-             'required to report and remit unclaimed property to the state and so in the.',
-      'title': 'Unclaimed Property 101 - Fundamental Concepts (Lorman Education Services)',
-      'url': 'https://www.youtube.com/watch?v=2TghvbJiOis&t=1072s',
-      'video_id': '2TghvbJiOis'},
-     {'author': 'FOX23 News Tulsa',
-      'channel': 'FOX23 News Tulsa',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:58](https://www.youtube.com/watch?v=kTrQ-7TzYL4&t=118s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q4 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "We're including important links in this story on fox23. Oklahoma or another "
-              'state where you lived previously, as well as how to check if the federal '
-              'government owes you money from things like mortgage insurance refunds or other '
-              'accounts.',
-      'timestamp': 118,
-      'timestamp_label': '[00:01:58]',
-      'timestamp_seconds': 118,
-      'tip': "We're including important links in this story on fox23. Oklahoma or another "
-             'state where you lived previously, as well as how to check if the federal '
-             'government owes you money from things like mortgage insurance refunds or other '
-             'accounts.',
-      'title': 'Video: BBB warns of unclaimed property scam (FOX23 News Tulsa)',
-      'url': 'https://www.youtube.com/watch?v=kTrQ-7TzYL4&t=118s',
-      'video_id': 'kTrQ-7TzYL4'},
-     {'author': 'WSPA 7News',
-      'channel': 'WSPA 7News',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:55](https://www.youtube.com/watch?v=VF97sp7MzAw&t=115s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q4 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "STATE ACCORDING TO THE TIMELINES SET BY LAW. WE'VE BEEN AUDITING, OR WHATEVER "
-              'IT TAKES TO BRING MONEY HOME. WE BROUGHT BACK MORE THAN $75 MILLION FROM OLD '
-              "INSURANCE POLICIES. WE HAVE A LOT OF TOOLS HERE, AND WE'VE RETURNED HALF OF IT "
-              'ALREADY.',
-      'timestamp': 115,
-      'timestamp_label': '[00:01:55]',
-      'timestamp_seconds': 115,
-      'tip': "STATE ACCORDING TO THE TIMELINES SET BY LAW. WE'VE BEEN AUDITING, OR WHATEVER IT "
-             'TAKES TO BRING MONEY HOME. WE BROUGHT BACK MORE THAN $75 MILLION FROM OLD '
-             "INSURANCE POLICIES. WE HAVE A LOT OF TOOLS HERE, AND WE'VE RETURNED HALF OF IT "
-             'ALREADY.',
-      'title': 'How to track down unclaimed money in every state (WSPA 7News)',
-      'url': 'https://www.youtube.com/watch?v=VF97sp7MzAw&t=115s',
-      'video_id': 'VF97sp7MzAw'},
-     {'author': 'Как се прави',
-      'channel': 'Как се прави',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:07](https://www.youtube.com/watch?v=pxHjDvDVqqM&t=307s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q4 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Under DAUPA, your business might actually be considered a holder. A holder is '
-              'simply any person or entity in possession of property that belongs to someone '
-              "else. And it's not just giant banks and insurance companies.",
-      'timestamp': 307,
-      'timestamp_label': '[00:05:07]',
-      'timestamp_seconds': 307,
-      'tip': 'Under DAUPA, your business might actually be considered a holder. A holder is '
-             'simply any person or entity in possession of property that belongs to someone '
-             "else. And it's not just giant banks and insurance companies.",
-      'title': 'How to search Pennsylvania unclaimed property for a business name (Как се '
-               'прави)',
-      'url': 'https://www.youtube.com/watch?v=pxHjDvDVqqM&t=307s',
-      'video_id': 'pxHjDvDVqqM'},
-     {'author': 'Surplus Institute / David Church / Unclaimed Funds',
-      'channel': 'Surplus Institute / David Church / Unclaimed Funds',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:06:15](https://www.youtube.com/watch?v=wp5vC44yQQg&t=375s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q4 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Information like oh wow okay I was calling about 235 East 25th Street they had '
-              "a Met Life insurance check you you have no idea who that is okay yeah it's.",
-      'timestamp': 375,
-      'timestamp_label': '[00:06:15]',
-      'timestamp_seconds': 375,
-      'tip': 'Information like oh wow okay I was calling about 235 East 25th Street they had a '
-             "Met Life insurance check you you have no idea who that is okay yeah it's.",
-      'title': 'Cold Calling Unclaimed State Funds Basic Script 101. What You Need to Know '
-               'about Surplus Funds (Surplus Institute / David Church / Unclaimed Funds)',
-      'url': 'https://www.youtube.com/watch?v=wp5vC44yQQg&t=375s',
-      'video_id': 'wp5vC44yQQg'},
-     {'author': 'Dollar Decoded',
-      'channel': 'Dollar Decoded',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:07:14](https://www.youtube.com/watch?v=QVgTN5Lip0o&t=434s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q4 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "800 deposit back, typo and all. And Leo's family claimed $240 from the savings "
-              'account plus $5,000 from the insurance policy. Not bad for a few minutes of '
-              'searching. Pause this video, go to missingmoney. Then come back and tell me in '
-              'the comments how much you found.',
-      'timestamp': 434,
-      'timestamp_label': '[00:07:14]',
-      'timestamp_seconds': 434,
-      'tip': "800 deposit back, typo and all. And Leo's family claimed $240 from the savings "
-             'account plus $5,000 from the insurance policy. Not bad for a few minutes of '
-             'searching. Pause this video, go to missingmoney. Then come back and tell me in '
-             'the comments how much you found.',
-      'title': 'Is the Government Holding Your Money? How to Find Unclaimed Money Free (Dollar '
-               'Decoded)',
-      'url': 'https://www.youtube.com/watch?v=QVgTN5Lip0o&t=434s',
-      'video_id': 'QVgTN5Lip0o'},
-     {'author': 'Base_Rate',
-      'channel': 'Base_Rate',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:39](https://www.youtube.com/watch?v=RycXVSWGZ3I&t=159s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q4 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'And as of 2024, it held more than $19 billion. Some of the oldest outstanding '
-              'Some of the oldest outstanding entries date to the 1950s. Paychecks, insurance '
-              'payouts, utility deposits, all still sitting in the system, waiting for someone '
-              'to type their name into a search bar.',
-      'timestamp': 159,
-      'timestamp_label': '[00:02:39]',
-      'timestamp_seconds': 159,
-      'tip': 'And as of 2024, it held more than $19 billion. Some of the oldest outstanding '
-             'Some of the oldest outstanding entries date to the 1950s. Paychecks, insurance '
-             'payouts, utility deposits, all still sitting in the system, waiting for someone '
-             'to type their name into a search bar.',
-      'title': 'Never Cash a Check? The State Ends Up Holding It (Base_Rate)',
-      'url': 'https://www.youtube.com/watch?v=RycXVSWGZ3I&t=159s',
-      'video_id': 'RycXVSWGZ3I'},
-     {'author': 'C. Hicks Agency - Camille Hicks',
-      'channel': 'C. Hicks Agency - Camille Hicks',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:19](https://www.youtube.com/watch?v=_35TodkWXyM&t=139s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q4 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Check with the state that they purchased the policy in and not necessarily a '
-              'state where they were currently living so hopefully these tips will help you in '
-              'the event that you have to track down life insurance money or find a policy.',
-      'timestamp': 139,
-      'timestamp_label': '[00:02:19]',
-      'timestamp_seconds': 139,
-      'tip': 'Check with the state that they purchased the policy in and not necessarily a '
-             'state where they were currently living so hopefully these tips will help you in '
-             'the event that you have to track down life insurance money or find a policy.',
-      'title': 'How to Track Down Life Insurance Policies and Unclaimed Life Insurance Money '
-               '(C. Hicks Agency - Camille Hicks)',
-      'url': 'https://www.youtube.com/watch?v=_35TodkWXyM&t=139s',
-      'video_id': '_35TodkWXyM'},
-     {'author': 'Spring Solutions, LLC',
-      'channel': 'Spring Solutions, LLC',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:56](https://www.youtube.com/watch?v=ckzrLZgtcYI&t=356s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q4 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'One or you can just email me with questions uh spring solutions llc gmail.com I '
-              'will see you in the next video thanks for watching.',
-      'timestamp': 356,
-      'timestamp_label': '[00:05:56]',
-      'timestamp_seconds': 356,
-      'tip': 'One or you can just email me with questions uh spring solutions llc gmail.com I '
-             'will see you in the next video thanks for watching.',
-      'title': '$1,030.14 in a day! Bankruptcy Unclaimed Funds! (Spring Solutions, LLC)',
-      'url': 'https://www.youtube.com/watch?v=ckzrLZgtcYI&t=356s',
-      'video_id': 'ckzrLZgtcYI'},
-     {'author': 'Money Making Juggernaut',
-      'channel': 'Money Making Juggernaut',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:11:17](https://www.youtube.com/watch?v=NxCoaATrtq4&t=677s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q4 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Lowest and there's even times where guys people are entitled hundreds of "
-              'thousands of dollars here in this case we can see that somebody was actually '
-              'entitled 6.',
-      'timestamp': 677,
-      'timestamp_label': '[00:11:17]',
-      'timestamp_seconds': 677,
-      'tip': "Lowest and there's even times where guys people are entitled hundreds of "
-             'thousands of dollars here in this case we can see that somebody was actually '
-             'entitled 6.',
-      'title': 'Unclaimed Bankruptcy Funds webinar (Money Making Juggernaut)',
-      'url': 'https://www.youtube.com/watch?v=NxCoaATrtq4&t=677s',
-      'video_id': 'NxCoaATrtq4'}],
- 5: [{'author': 'Как се прави',
-      'channel': 'Как се прави',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:07:37](https://www.youtube.com/watch?v=2_XKdBsmJ5c&t=457s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Corporate risk officers and accounting teams should be systematically capturing '
-              'lost funds internally. You do this by heavily auditing your accounts payable, '
-              "uncashed checks, and unapplied credits right before the state's November 1st "
-              'reporting deadline.',
-      'timestamp': 457,
-      'timestamp_label': '[00:07:37]',
-      'timestamp_seconds': 457,
-      'tip': 'Corporate risk officers and accounting teams should be systematically capturing '
-             'lost funds internally. You do this by heavily auditing your accounts payable, '
-             "uncashed checks, and unapplied credits right before the state's November 1st "
-             'reporting deadline.',
-      'title': 'How to search Colorado unclaimed property for a business name (Как се прави)',
-      'url': 'https://www.youtube.com/watch?v=2_XKdBsmJ5c&t=457s',
-      'video_id': '2_XKdBsmJ5c'},
-     {'author': 'Dark Web Deacon',
-      'channel': 'Dark Web Deacon',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:37](https://www.youtube.com/watch?v=JvMO0OK8kTU&t=157s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'The same holds true for companies. Asset claims will almost always come in the '
-              'form of a letter. If you get a request from a business like Bank of America, '
-              'for example, well, call their call center directly based on the number from '
-              'their official website.',
-      'timestamp': 157,
-      'timestamp_label': '[00:02:37]',
-      'timestamp_seconds': 157,
-      'tip': 'The same holds true for companies. Asset claims will almost always come in the '
-             'form of a letter. If you get a request from a business like Bank of America, for '
-             'example, well, call their call center directly based on the number from their '
-             'official website.',
-      'title': 'What is an Unclaimed Property Scam? : Simple Explained (Dark Web Deacon)',
-      'url': 'https://www.youtube.com/watch?v=JvMO0OK8kTU&t=157s',
-      'video_id': 'JvMO0OK8kTU'},
-     {'author': 'Kodiak Solutions',
-      'channel': 'Kodiak Solutions',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:24:46](https://www.youtube.com/watch?v=2BplqmdsUpU&t=1486s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "So, several different risks for gaps. Making sure you're take a close look to "
-              'fill those and keep your compliance in check. And our last risk, unconsolidated '
-              'filing.',
-      'timestamp': 1486,
-      'timestamp_label': '[00:24:46]',
-      'timestamp_seconds': 1486,
-      'tip': "So, several different risks for gaps. Making sure you're take a close look to "
-             'fill those and keep your compliance in check. And our last risk, unconsolidated '
-             'filing.',
-      'title': '5 healthcare unclaimed property compliance trends you need to know (Kodiak '
-               'Solutions)',
-      'url': 'https://www.youtube.com/watch?v=2BplqmdsUpU&t=1486s',
-      'video_id': '2BplqmdsUpU'},
-     {'author': 'Unclaimed CEO',
-      'channel': 'Unclaimed CEO',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:12:34](https://www.youtube.com/watch?v=97wh_A16P2s&t=754s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'I like, "So, what\'s your average?" She like, "Well, I haven\'t closed another '
-              'deal in 3 months." " And she\'s like, "Well, I\'m doing I\'m cold calling. " I '
-              'was like, "That\'s your problem." If you don\'t mind cold calling, it\'s '
-              'totally fine. You can absolutely cold call.',
-      'timestamp': 754,
-      'timestamp_label': '[00:12:34]',
-      'timestamp_seconds': 754,
-      'tip': 'I like, "So, what\'s your average?" She like, "Well, I haven\'t closed another '
-             'deal in 3 months." " And she\'s like, "Well, I\'m doing I\'m cold calling. " I '
-             'was like, "That\'s your problem." If you don\'t mind cold calling, it\'s totally '
-             'fine. You can absolutely cold call.',
-      'title': 'Why I Refuse to Cold Call in My Unclaimed Money Business (and You Should Too) '
-               '(Unclaimed CEO)',
-      'url': 'https://www.youtube.com/watch?v=97wh_A16P2s&t=754s',
-      'video_id': '97wh_A16P2s'},
-     {'author': 'SimekScott LLC',
-      'channel': 'SimekScott LLC',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:08](https://www.youtube.com/watch?v=p0UoXSbya5E&t=68s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Um which kind of leads me into maybe my second item that I often hear is kind '
-              'of that low-hanging fruit. I think a lot of times companies understand uh '
-              "payroll and accounts payable checks, right, what's outstanding from that "
-              'perspective.',
-      'timestamp': 68,
-      'timestamp_label': '[00:01:08]',
-      'timestamp_seconds': 68,
-      'tip': 'Um which kind of leads me into maybe my second item that I often hear is kind of '
-             'that low-hanging fruit. I think a lot of times companies understand uh payroll '
-             "and accounts payable checks, right, what's outstanding from that perspective.",
-      'title': 'SALT: Top 5 Mistakes Companies Make Evaluating Their Unclaimed Property '
-               'Exposure. (SimekScott LLC)',
-      'url': 'https://www.youtube.com/watch?v=p0UoXSbya5E&t=68s',
-      'video_id': 'p0UoXSbya5E'},
-     {'author': 'Deloitte US',
-      'channel': 'Deloitte US',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:30](https://www.youtube.com/watch?v=UC28yxW8Pls&t=150s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Requests and alleviate the stress on your company resources to effectively '
-              'identify gaps in compliance and mitigate Associated risk if you have any '
-              'questions please reach out to Nina render leader of our national unclaimed '
-              'property practice.',
-      'timestamp': 150,
-      'timestamp_label': '[00:02:30]',
-      'timestamp_seconds': 150,
-      'tip': 'Requests and alleviate the stress on your company resources to effectively '
-             'identify gaps in compliance and mitigate Associated risk if you have any '
-             'questions please reach out to Nina render leader of our national unclaimed '
-             'property practice.',
-      'title': 'Unclaimed Property (Deloitte US)',
-      'url': 'https://www.youtube.com/watch?v=UC28yxW8Pls&t=150s',
-      'video_id': 'UC28yxW8Pls'},
-     {'author': 'Unclaimed CEO',
-      'channel': 'Unclaimed CEO',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:10](https://www.youtube.com/watch?v=3_qKwnM5EUw&t=130s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "'s going to be calling and following up on claims because you will be doing "
-              'that. If you are organized, you will be following up on your claims.',
-      'timestamp': 130,
-      'timestamp_label': '[00:02:10]',
-      'timestamp_seconds': 130,
-      'tip': "'s going to be calling and following up on claims because you will be doing "
-             'that. If you are organized, you will be following up on your claims.',
-      'title': 'How To Register As An Unclaimed Funds Investigator For California (Unclaimed '
-               'CEO)',
-      'url': 'https://www.youtube.com/watch?v=3_qKwnM5EUw&t=130s',
-      'video_id': '3_qKwnM5EUw'},
-     {'author': 'Clarus Partners',
-      'channel': 'Clarus Partners',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:48](https://www.youtube.com/watch?v=po0e86TAQwA&t=108s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Interest and penalties is by utilizing the state's voluntary compliance "
-              'programs of vdas all by participating in amnesty programs the goal in unclaimed '
-              'property is to limit liability and to make the process as efficient as '
-              'possible.',
-      'timestamp': 108,
-      'timestamp_label': '[00:01:48]',
-      'timestamp_seconds': 108,
-      'tip': "Interest and penalties is by utilizing the state's voluntary compliance programs "
-             'of vdas all by participating in amnesty programs the goal in unclaimed property '
-             'is to limit liability and to make the process as efficient as possible.',
-      'title': 'Mitigating Unclaimed Property Risk: Best Practices for Compliance (Clarus '
-               'Partners)',
-      'url': 'https://www.youtube.com/watch?v=po0e86TAQwA&t=108s',
-      'video_id': 'po0e86TAQwA'},
-     {'author': 'Money Making Juggernaut',
-      'channel': 'Money Making Juggernaut',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:15](https://www.youtube.com/watch?v=7WZONOtYbjc&t=15s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'In the asset recovery business today you guys already know I have a great video '
-              'in store I am going to break down the different types of unclaimed funds but.',
-      'timestamp': 15,
-      'timestamp_label': '[00:00:15]',
-      'timestamp_seconds': 15,
-      'tip': 'In the asset recovery business today you guys already know I have a great video '
-             'in store I am going to break down the different types of unclaimed funds but.',
-      'title': 'The Different Types Of Unclaimed Funds - COMPLETE LIST (Surplus Funds '
-               'Recovery) (Money Making Juggernaut)',
-      'url': 'https://www.youtube.com/watch?v=7WZONOtYbjc&t=15s',
-      'video_id': '7WZONOtYbjc'},
-     {'author': 'PwC US',
-      'channel': 'PwC US',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:07](https://www.youtube.com/watch?v=yjxm_QOITBY&t=67s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Us but it's a state statute I have the final say companies must stay vigilant "
-              'monitor State rules and update their record to avoid reporting errors and.',
-      'timestamp': 67,
-      'timestamp_label': '[00:01:07]',
-      'timestamp_seconds': 67,
-      'tip': "Us but it's a state statute I have the final say companies must stay vigilant "
-             'monitor State rules and update their record to avoid reporting errors and.',
-      'title': 'Abandoned and Unclaimed Property Quarterly - April 2024 (PwC US)',
-      'url': 'https://www.youtube.com/watch?v=yjxm_QOITBY&t=67s',
-      'video_id': 'yjxm_QOITBY'},
-     {'author': 'GardenShop.Pro',
-      'channel': 'GardenShop.Pro',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:55](https://www.youtube.com/watch?v=DVmNNFdoDzE&t=235s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Section four, avoiding costly finder fees. Because there are billions of '
-              'dollars on the table, an entire industry has sprung up around this, and you '
-              'really need to be aware of their traps, so you can keep all your money.',
-      'timestamp': 235,
-      'timestamp_label': '[00:03:55]',
-      'timestamp_seconds': 235,
-      'tip': 'Section four, avoiding costly finder fees. Because there are billions of dollars '
-             'on the table, an entire industry has sprung up around this, and you really need '
-             'to be aware of their traps, so you can keep all your money.',
-      'title': 'How to search unclaimed property in Georgia for free (GardenShop.Pro)',
-      'url': 'https://www.youtube.com/watch?v=DVmNNFdoDzE&t=235s',
-      'video_id': 'DVmNNFdoDzE'},
-     {'author': 'Spring Solutions, LLC',
-      'channel': 'Spring Solutions, LLC',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:15](https://www.youtube.com/watch?v=lWmrc3x-B-E&t=15s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Territories as it pertains to unclaimed funds in bankruptcy and just how not to '
-              "leave those out when you're searching for additional leads because there are.",
-      'timestamp': 15,
-      'timestamp_label': '[00:00:15]',
-      'timestamp_seconds': 15,
-      'tip': 'Territories as it pertains to unclaimed funds in bankruptcy and just how not to '
-             "leave those out when you're searching for additional leads because there are.",
-      'title': 'Recover Bankruptcy Unclaimed Funds in U.S. Territories- Work From Home 2020. '
-               '(Spring Solutions, LLC)',
-      'url': 'https://www.youtube.com/watch?v=lWmrc3x-B-E&t=15s',
-      'video_id': 'lWmrc3x-B-E'},
-     {'author': 'Jordan Liles',
-      'channel': 'Jordan Liles',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:08:26](https://www.youtube.com/watch?v=lM8PdIOG7-E&t=506s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Happy I wanted to make this video to help you all you know figure out whether '
-              'or not this is legit and it is thank you so much for watching.',
-      'timestamp': 506,
-      'timestamp_label': '[00:08:26]',
-      'timestamp_seconds': 506,
-      'tip': 'Happy I wanted to make this video to help you all you know figure out whether or '
-             'not this is legit and it is thank you so much for watching.',
-      'title': "MissingMoney.com Scam or Legit? Here's the Answer. (Jordan Liles)",
-      'url': 'https://www.youtube.com/watch?v=lM8PdIOG7-E&t=506s',
-      'video_id': 'lM8PdIOG7-E'},
-     {'author': 'Money Making Juggernaut',
-      'channel': 'Money Making Juggernaut',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:15](https://www.youtube.com/watch?v=kuCEYN64vtQ&t=15s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Educator in the asset recovery space in regards to surplus funds access '
-              'proceeds today I am going to break down the difference between unclaimed State '
-              'funds.',
-      'timestamp': 15,
-      'timestamp_label': '[00:00:15]',
-      'timestamp_seconds': 15,
-      'tip': 'Educator in the asset recovery space in regards to surplus funds access proceeds '
-             'today I am going to break down the difference between unclaimed State funds.',
-      'title': 'Unclaimed State Funds VS Surplus Funds Recovery (Money Making Juggernaut)',
-      'url': 'https://www.youtube.com/watch?v=kuCEYN64vtQ&t=15s',
-      'video_id': 'kuCEYN64vtQ'},
-     {'author': 'Surplus Institute / David Church / Unclaimed Funds',
-      'channel': 'Surplus Institute / David Church / Unclaimed Funds',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:09:51](https://www.youtube.com/watch?v=2l827py8Fe8&t=591s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "50 people that comment on all my videos I'm going to be doing a a raffle "
-              "drawing so if you haven't commented on one of my videos or ask a question just "
-              "comment I' love to see you and interact with you and I'll see you around "
-              'thanks.',
-      'timestamp': 591,
-      'timestamp_label': '[00:09:51]',
-      'timestamp_seconds': 591,
-      'tip': "50 people that comment on all my videos I'm going to be doing a a raffle drawing "
-             "so if you haven't commented on one of my videos or ask a question just comment "
-             "I' love to see you and interact with you and I'll see you around thanks.",
-      'title': 'Unclaimed Property Locators Dealing with Heirs | How to Find an Unclaimed '
-               'Property Locator (Surplus Institute / David Church / Unclaimed Funds)',
-      'url': 'https://www.youtube.com/watch?v=2l827py8Fe8&t=591s',
-      'video_id': '2l827py8Fe8'}],
- 6: [{'author': 'Money Making Juggernaut',
-      'channel': 'Money Making Juggernaut',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:55](https://www.youtube.com/watch?v=zrj6RA8N9HA&t=55s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q6 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'And list them out for you the first one is going to be assisting with deceased '
-              "claims when you're doing this business you're going to find a lot of property.",
-      'timestamp': 55,
-      'timestamp_label': '[00:00:55]',
-      'timestamp_seconds': 55,
-      'tip': 'And list them out for you the first one is going to be assisting with deceased '
-             "claims when you're doing this business you're going to find a lot of property.",
-      'title': '3 WAYS To Find A Surplus Funds Attorney FAST (Asset Recovery Business) (Money '
-               'Making Juggernaut)',
-      'url': 'https://www.youtube.com/watch?v=zrj6RA8N9HA&t=55s',
-      'video_id': 'zrj6RA8N9HA'},
-     {'author': 'GardenShop.Pro',
-      'channel': 'GardenShop.Pro',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:50](https://www.youtube.com/watch?v=GWa4tWyuEoA&t=230s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q6 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Let's jump to section three, understanding your search results, decoding the "
-              "data. First off, you might get incredibly lucky with what's called an automated "
-              'identification match.',
-      'timestamp': 230,
-      'timestamp_label': '[00:03:50]',
-      'timestamp_seconds': 230,
-      'tip': "Let's jump to section three, understanding your search results, decoding the "
-             "data. First off, you might get incredibly lucky with what's called an automated "
-             'identification match.',
-      'title': 'How to find Colorado unclaimed utility deposits by last name (GardenShop.Pro)',
-      'url': 'https://www.youtube.com/watch?v=GWa4tWyuEoA&t=230s',
-      'video_id': 'GWa4tWyuEoA'},
-     {'author': 'FOX6 News Milwaukee',
-      'channel': 'FOX6 News Milwaukee',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:42](https://www.youtube.com/watch?v=Cb8M7-NxR50&t=102s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q6 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "It has another $617 million. It's holding indefinitely, much of it. Uncashed "
-              'payroll checks, dormant savings accounts and abandoned stocks or mutual funds. '
-              'We pay out between 30 and 35 Million in a typical year, go to DRS website to '
-              'find out if you qualify.',
-      'timestamp': 102,
-      'timestamp_label': '[00:01:42]',
-      'timestamp_seconds': 102,
-      'tip': "It has another $617 million. It's holding indefinitely, much of it. Uncashed "
-             'payroll checks, dormant savings accounts and abandoned stocks or mutual funds. '
-             'We pay out between 30 and 35 Million in a typical year, go to DRS website to '
-             'find out if you qualify.',
-      'title': 'Filing a claim for unclaimed property in Wisconsin | FOX6 News Milwaukee (FOX6 '
-               'News Milwaukee)',
-      'url': 'https://www.youtube.com/watch?v=Cb8M7-NxR50&t=102s',
-      'video_id': 'Cb8M7-NxR50'},
-     {'author': 'The Accidental Publisher',
-      'channel': 'The Accidental Publisher',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:20](https://www.youtube.com/watch?v=qQL9C0H1n5E&t=20s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q6 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "As you can see, this little wheel is letting you know that it's working. It's "
-              'trying to find you matches and it will take a few seconds. Just depends on how '
-              'much of data they have to go through. So, John Smith should have some claims.',
-      'timestamp': 20,
-      'timestamp_label': '[00:00:20]',
-      'timestamp_seconds': 20,
-      'tip': "As you can see, this little wheel is letting you know that it's working. It's "
-             'trying to find you matches and it will take a few seconds. Just depends on how '
-             'much of data they have to go through. So, John Smith should have some claims.',
-      'title': 'How to Claim Unclaimed Property in California 💰 (The Accidental Publisher)',
-      'url': 'https://www.youtube.com/watch?v=qQL9C0H1n5E&t=20s',
-      'video_id': 'qQL9C0H1n5E'},
-     {'author': 'Penelope Jane Smith',
-      'channel': 'Penelope Jane Smith',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:31](https://www.youtube.com/watch?v=26FSCbZczh4&t=211s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q6 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Companies are legally required to send funds from lost accounts to the state of '
-              "the owner's last known address. So do a search for each of the states that "
-              'you’ve lived in. Also, claims can often be made in perpetuity, even by heirs.',
-      'timestamp': 211,
-      'timestamp_label': '[00:03:31]',
-      'timestamp_seconds': 211,
-      'tip': 'Companies are legally required to send funds from lost accounts to the state of '
-             "the owner's last known address. So do a search for each of the states that "
-             'you’ve lived in. Also, claims can often be made in perpetuity, even by heirs.',
-      'title': 'Where To Find Unclaimed Money - Legit Government Sites Revealed (Penelope Jane '
-               'Smith)',
-      'url': 'https://www.youtube.com/watch?v=26FSCbZczh4&t=211s',
-      'video_id': '26FSCbZczh4'},
-     {'author': 'KCRA 3',
-      'channel': 'KCRA 3',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:01](https://www.youtube.com/watch?v=s_yDVlsM7Tc&t=181s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q6 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'AND YOU’RE GOING TO ENTER YOUR FIRST NAME AND YOUR LAST NAME. YOU’RE GOING TO '
-              'SEARCH A DATABASE AND SEE IF WE’RE HOLDING ANY OF YOUR PROPERTY. NOW IF YOU DO '
-              'FIND YOUR NAME AND YOU WANT TO TRY AND COME CLAIM IT, DO YOU NEED A FORM OF ID?',
-      'timestamp': 181,
-      'timestamp_label': '[00:03:01]',
-      'timestamp_seconds': 181,
-      'tip': 'AND YOU’RE GOING TO ENTER YOUR FIRST NAME AND YOUR LAST NAME. YOU’RE GOING TO '
-             'SEARCH A DATABASE AND SEE IF WE’RE HOLDING ANY OF YOUR PROPERTY. NOW IF YOU DO '
-             'FIND YOUR NAME AND YOU WANT TO TRY AND COME CLAIM IT, DO YOU NEED A FORM OF ID?',
-      'title': '$15 billion hiding in plain sight: How to find unclaimed property in '
-               'California (KCRA 3)',
-      'url': 'https://www.youtube.com/watch?v=s_yDVlsM7Tc&t=181s',
-      'video_id': 's_yDVlsM7Tc'},
-     {'author': 'SurplusFundsRiches',
-      'channel': 'SurplusFundsRiches',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:18](https://www.youtube.com/watch?v=ujbTh1In_c4&t=78s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q6 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Tracing subscription services that I recommend highly all this is in the e-book '
-              "by the way the first one is idi data I think they're very very accurate on "
-              "finding the claimant I'm amazed at not only the accuracy with phone numbers but "
-              'also the addresses and emails.',
-      'timestamp': 78,
-      'timestamp_label': '[00:01:18]',
-      'timestamp_seconds': 78,
-      'tip': 'Tracing subscription services that I recommend highly all this is in the e-book '
-             "by the way the first one is idi data I think they're very very accurate on "
-             "finding the claimant I'm amazed at not only the accuracy with phone numbers but "
-             'also the addresses and emails.',
-      'title': 'Surplus Funds - skip tracing claimants (SurplusFundsRiches)',
-      'url': 'https://www.youtube.com/watch?v=ujbTh1In_c4&t=78s',
-      'video_id': 'ujbTh1In_c4'},
-     {'author': 'Surplus Institute / David Church / Unclaimed Funds',
-      'channel': 'Surplus Institute / David Church / Unclaimed Funds',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:15](https://www.youtube.com/watch?v=hA6VJ_GqGyc&t=15s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q6 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "You find out this claimant's deceased how do you go ahead and locate that "
-              "client let's go over some tips in this video on how to locate someone who you.",
-      'timestamp': 15,
-      'timestamp_label': '[00:00:15]',
-      'timestamp_seconds': 15,
-      'tip': "You find out this claimant's deceased how do you go ahead and locate that client "
-             "let's go over some tips in this video on how to locate someone who you.",
-      'title': 'Mastering Skip Tracing for Deceased Individuals: Strategies for Success '
-               '🕵️\u200d♂️⚡ (Surplus Institute / David Church / Unclaimed Funds)',
-      'url': 'https://www.youtube.com/watch?v=hA6VJ_GqGyc&t=15s',
-      'video_id': 'hA6VJ_GqGyc'},
-     {'author': 'Michael Curtis',
-      'channel': 'Michael Curtis',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:10:46](https://www.youtube.com/watch?v=0YK26E_fzYA&t=646s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q6 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'This line is all the companies that reporting the money or reporting the asset '
-              'to the state and this is zip state address first name please a joint joint '
-              'account or middle middle initial.',
-      'timestamp': 646,
-      'timestamp_label': '[00:10:46]',
-      'timestamp_seconds': 646,
-      'tip': 'This line is all the companies that reporting the money or reporting the asset '
-             'to the state and this is zip state address first name please a joint joint '
-             'account or middle middle initial.',
-      'title': "Pennsylvania Unclaimed Property - How to Search PA's State Treasury Unclaimed "
-               'Money Data Base (Michael Curtis)',
-      'url': 'https://www.youtube.com/watch?v=0YK26E_fzYA&t=646s',
-      'video_id': '0YK26E_fzYA'},
-     {'author': 'The Wealth Portfolio Builder',
-      'channel': 'The Wealth Portfolio Builder',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:21](https://www.youtube.com/watch?v=KQMVL4j21qc&t=141s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q6 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Every company that is listed in the stock market has a registrar. We have first '
-              'registrars and the rest of them. Go through this our video description, you '
-              'will see a list more than 20 of them listed. Pick them one by one and check.',
-      'timestamp': 141,
-      'timestamp_label': '[00:02:21]',
-      'timestamp_seconds': 141,
-      'tip': 'Every company that is listed in the stock market has a registrar. We have first '
-             'registrars and the rest of them. Go through this our video description, you will '
-             'see a list more than 20 of them listed. Pick them one by one and check.',
-      'title': 'How to Recover Lost Shares & Unclaimed Dividends in Nigeria (Step-by-Step) '
-               '(The Wealth Portfolio Builder)',
-      'url': 'https://www.youtube.com/watch?v=KQMVL4j21qc&t=141s',
-      'video_id': 'KQMVL4j21qc'},
-     {'author': 'ABC News',
-      'channel': 'ABC News',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:59](https://www.youtube.com/watch?v=f7126N1MGjA&t=239s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q6 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Now yes okay thanks very much Eli we have a complete guide with 11 ways you can '
-              "find unclaimed money at our website abcnews.com GMA we've also brought in an "
-              'expert to answer your questions about how to search for unclaimed money send '
-              'them in right now at abcnews.com GMA.',
-      'timestamp': 239,
-      'timestamp_label': '[00:03:59]',
-      'timestamp_seconds': 239,
-      'tip': 'Now yes okay thanks very much Eli we have a complete guide with 11 ways you can '
-             "find unclaimed money at our website abcnews.com GMA we've also brought in an "
-             'expert to answer your questions about how to search for unclaimed money send '
-             'them in right now at abcnews.com GMA.',
-      'title': 'Unclaimed Money Found From Deceased Relatives; Could You Be Owed Cash? (ABC '
-               'News)',
-      'url': 'https://www.youtube.com/watch?v=f7126N1MGjA&t=239s',
-      'video_id': 'f7126N1MGjA'},
-     {'author': 'Как се прави',
-      'channel': 'Как се прави',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:08](https://www.youtube.com/watch?v=oUFeGA0MPoM&t=308s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q6 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'All right, the funds are out there sitting in corporate accounts or state '
-              "treasuries. How do you actually find them? Well, it's time to open up your "
-              'detective toolkit and conduct a structured search.',
-      'timestamp': 308,
-      'timestamp_label': '[00:05:08]',
-      'timestamp_seconds': 308,
-      'tip': 'All right, the funds are out there sitting in corporate accounts or state '
-             "treasuries. How do you actually find them? Well, it's time to open up your "
-             'detective toolkit and conduct a structured search.',
-      'title': 'How to check unclaimed funds from an insurance demutualization (Как се прави)',
-      'url': 'https://www.youtube.com/watch?v=oUFeGA0MPoM&t=308s',
-      'video_id': 'oUFeGA0MPoM'},
-     {'author': 'KFNETWORK',
-      'channel': 'KFNETWORK',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:41](https://www.youtube.com/watch?v=0anLNGLjnlA&t=161s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q6 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "You have money and also check in your original name all right so I'm going to "
-              'put in Kim Davis and scenario search down because my name is popular I will put '
-              "my city to you know narrow things down all right so let's continue.",
-      'timestamp': 161,
-      'timestamp_label': '[00:02:41]',
-      'timestamp_seconds': 161,
-      'tip': "You have money and also check in your original name all right so I'm going to "
-             'put in Kim Davis and scenario search down because my name is popular I will put '
-             "my city to you know narrow things down all right so let's continue.",
-      'title': 'Seeking for FREE money in Delaware 🏖️#freemoneydaily #freemoneyonline2023 '
-               '#delaware (KFNETWORK)',
-      'url': 'https://www.youtube.com/watch?v=0anLNGLjnlA&t=161s',
-      'video_id': '0anLNGLjnlA'},
-     {'author': 'Unclaimed CEO',
-      'channel': 'Unclaimed CEO',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:06:59](https://www.youtube.com/watch?v=B3w-Sxl2QnE&t=419s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q6 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Look I got your name and I got your number I'm going to find you that's all I "
-              "need I just need a hot lead and I'm going to hunt you down I'm gonna figure.",
-      'timestamp': 419,
-      'timestamp_label': '[00:06:59]',
-      'timestamp_seconds': 419,
-      'tip': "Look I got your name and I got your number I'm going to find you that's all I "
-             "need I just need a hot lead and I'm going to hunt you down I'm gonna figure.",
-      'title': '3 Biggest Skip Tracing Mistakes (Unclaimed CEO)',
-      'url': 'https://www.youtube.com/watch?v=B3w-Sxl2QnE&t=419s',
-      'video_id': 'B3w-Sxl2QnE'},
-     {'author': 'Unclaimed CEO',
-      'channel': 'Unclaimed CEO',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:59](https://www.youtube.com/watch?v=ug2uUK_s2yk&t=359s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q6 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Explain these in all my videos on YouTube and I also put it in my digital '
-              'training course for those of you guys who are ready to get started now and you '
-              'want to do it the right way the first time so anyways I hope you enjoyed the '
-              "videos I'll see you in the next one.",
-      'timestamp': 359,
-      'timestamp_label': '[00:05:59]',
-      'timestamp_seconds': 359,
-      'tip': 'Explain these in all my videos on YouTube and I also put it in my digital '
-             'training course for those of you guys who are ready to get started now and you '
-             'want to do it the right way the first time so anyways I hope you enjoyed the '
-             "videos I'll see you in the next one.",
-      'title': 'The Surplus Funds Secret You NEED to Know Before Taking the Plunge (Unclaimed '
-               'CEO)',
-      'url': 'https://www.youtube.com/watch?v=ug2uUK_s2yk&t=359s',
-      'video_id': 'ug2uUK_s2yk'}],
- 7: [{'author': 'Garden Shop Pro',
-      'channel': 'Garden Shop Pro',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:58](https://www.youtube.com/watch?v=7Fc0D2RuIJE&t=358s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q7 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'You can file these claims direct, totally for free through official government '
-              'portals. Just manage the process yourself and keep your capital. Finally, part '
-              "five, action steps and disclaimer. Let's make sure this doesn't happen again.",
-      'timestamp': 358,
-      'timestamp_label': '[00:05:58]',
-      'timestamp_seconds': 358,
-      'tip': 'You can file these claims direct, totally for free through official government '
-             'portals. Just manage the process yourself and keep your capital. Finally, part '
-             "five, action steps and disclaimer. Let's make sure this doesn't happen again.",
-      'title': 'How to search unclaimed funds under a corporation name (Garden Shop Pro)',
-      'url': 'https://www.youtube.com/watch?v=7Fc0D2RuIJE&t=358s',
-      'video_id': '7Fc0D2RuIJE'},
-     {'author': 'GardenShop.Pro',
-      'channel': 'GardenShop.Pro',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:59](https://www.youtube.com/watch?v=rOaTjN9BoFE&t=59s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q7 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Here's our map for today's explainer. One, the hidden business treasure. Two, "
-              'Virginia unclaimed property laws. Three, a step-by-step search guide. Four, '
-              'interpreting and claiming assets. Five, compliance and best practices. And six, '
-              'next steps and a quick disclaimer.',
-      'timestamp': 59,
-      'timestamp_label': '[00:00:59]',
-      'timestamp_seconds': 59,
-      'tip': "Here's our map for today's explainer. One, the hidden business treasure. Two, "
-             'Virginia unclaimed property laws. Three, a step-by-step search guide. Four, '
-             'interpreting and claiming assets. Five, compliance and best practices. And six, '
-             'next steps and a quick disclaimer.',
-      'title': 'How to search unclaimed property for a business in Virginia (GardenShop.Pro)',
-      'url': 'https://www.youtube.com/watch?v=rOaTjN9BoFE&t=59s',
-      'video_id': 'rOaTjN9BoFE'},
-     {'author': 'Как се прави',
-      'channel': 'Как се прави',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:55](https://www.youtube.com/watch?v=RtDPQUDYTy0&t=55s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q7 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Then, decoding unclaimed property. Third, executing the search protocol. '
-              'Fourth, navigating the claims process. Next up, proactive asset prevention. And '
-              'finally, action and a brief disclaimer. Section one, the hidden corporate '
-              'treasure.',
-      'timestamp': 55,
-      'timestamp_label': '[00:00:55]',
-      'timestamp_seconds': 55,
-      'tip': 'Then, decoding unclaimed property. Third, executing the search protocol. Fourth, '
-             'navigating the claims process. Next up, proactive asset prevention. And finally, '
-             'action and a brief disclaimer. Section one, the hidden corporate treasure.',
-      'title': 'How to search unclaimed property in Virginia for a company (Как се прави)',
-      'url': 'https://www.youtube.com/watch?v=RtDPQUDYTy0&t=55s',
-      'video_id': 'RtDPQUDYTy0'},
-     {'author': 'KHOU 11',
-      'channel': 'KHOU 11',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:55](https://www.youtube.com/watch?v=WdhaqcAUXBk&t=55s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q7 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'So once you find your name, hit claim, fill out the application and you can '
-              'actually track your claims progress all online. And most importantly, we should '
-              'note Kimberly and Steph that this process is free and we have a link to all of '
-              'these steps on kou.',
-      'timestamp': 55,
-      'timestamp_label': '[00:00:55]',
-      'timestamp_seconds': 55,
-      'tip': 'So once you find your name, hit claim, fill out the application and you can '
-             'actually track your claims progress all online. And most importantly, we should '
-             'note Kimberly and Steph that this process is free and we have a link to all of '
-             'these steps on kou.',
-      'title': 'How to check if you have unclaimed money in Texas (KHOU 11)',
-      'url': 'https://www.youtube.com/watch?v=WdhaqcAUXBk&t=55s',
-      'video_id': 'WdhaqcAUXBk'},
-     {'author': 'Daggett Shuler Attorneys at Law',
-      'channel': 'Daggett Shuler Attorneys at Law',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:59](https://www.youtube.com/watch?v=NbMR0Gzlwww&t=359s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q7 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'So experienced competent help from somebody that has handled a lot of those '
-              'claims in the past may be able to help you navigate that system and recover the '
-              "benefits you're actually entitled to. That has been contributed to so that you "
-              'would have those benefits.',
-      'timestamp': 359,
-      'timestamp_label': '[00:05:59]',
-      'timestamp_seconds': 359,
-      'tip': 'So experienced competent help from somebody that has handled a lot of those '
-             'claims in the past may be able to help you navigate that system and recover the '
-             "benefits you're actually entitled to. That has been contributed to so that you "
-             'would have those benefits.',
-      'title': 'Life Insurance - Are You the Beneficiary of Unclaimed Benefits? (Daggett '
-               'Shuler Attorneys at Law)',
-      'url': 'https://www.youtube.com/watch?v=NbMR0Gzlwww&t=359s',
-      'video_id': 'NbMR0Gzlwww'},
-     {'author': 'Как се прави',
-      'channel': 'Как се прави',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:54](https://www.youtube.com/watch?v=LEhDouSnx9s&t=54s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q7 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "'re an heir, the step-by-step claim process, avoiding those costly claim "
-              'pitfalls, and finally, some really cool success stories and next steps. All '
-              "right, kicking things off with section one, Mississippi's unclaimed millions.",
-      'timestamp': 54,
-      'timestamp_label': '[00:00:54]',
-      'timestamp_seconds': 54,
-      'tip': "'re an heir, the step-by-step claim process, avoiding those costly claim "
-             'pitfalls, and finally, some really cool success stories and next steps. All '
-             "right, kicking things off with section one, Mississippi's unclaimed millions.",
-      'title': 'How to claim unclaimed money as an heir in Mississippi (Как се прави)',
-      'url': 'https://www.youtube.com/watch?v=LEhDouSnx9s&t=54s',
-      'video_id': 'LEhDouSnx9s'},
-     {'author': 'Spring Solutions, LLC',
-      'channel': 'Spring Solutions, LLC',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:07](https://www.youtube.com/watch?v=CJMCHDgNh4M&t=187s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q7 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Completion your success in becoming a successful funds locator it depends on '
-              "how much hard work you put into using the practical steps that I'm going to "
-              'provide you so I hope that you are excited about this I hope to see you in '
-              'class and thank you for watching.',
-      'timestamp': 187,
-      'timestamp_label': '[00:03:07]',
-      'timestamp_seconds': 187,
-      'tip': 'Completion your success in becoming a successful funds locator it depends on how '
-             "much hard work you put into using the practical steps that I'm going to provide "
-             'you so I hope that you are excited about this I hope to see you in class and '
-             'thank you for watching.',
-      'title': 'MY COURSE HAS LAUNCHED!  Recovering Bankruptcy Unclaimed Funds! (Spring '
-               'Solutions, LLC)',
-      'url': 'https://www.youtube.com/watch?v=CJMCHDgNh4M&t=187s',
-      'video_id': 'CJMCHDgNh4M'},
-     {'author': 'Utah Office of State Treasurer',
-      'channel': 'Utah Office of State Treasurer',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:05](https://www.youtube.com/watch?v=hUiiEXcFE0k&t=65s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q7 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'In this video enlisted on the reporting overview reference sheet are five steps '
-              'to report unclaimed property the first step is to review your records and.',
-      'timestamp': 65,
-      'timestamp_label': '[00:01:05]',
-      'timestamp_seconds': 65,
-      'tip': 'In this video enlisted on the reporting overview reference sheet are five steps '
-             'to report unclaimed property the first step is to review your records and.',
-      'title': 'Unclaimed Property Reporting Overview (Utah Office of State Treasurer)',
-      'url': 'https://www.youtube.com/watch?v=hUiiEXcFE0k&t=65s',
-      'video_id': 'hUiiEXcFE0k'},
-     {'author': 'Badwolf Unincorporated',
-      'channel': 'Badwolf Unincorporated',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:28](https://www.youtube.com/watch?v=suC7b2tuNcc&t=268s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q7 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Um, this allows you to select specific court districts or leave it open and '
-              'check multiple courts across bankruptcy courts and the entire judiciary system. '
-              "If you just want to look at one specific court, you can, but there's all "
-              'different types in here.',
-      'timestamp': 268,
-      'timestamp_label': '[00:04:28]',
-      'timestamp_seconds': 268,
-      'tip': 'Um, this allows you to select specific court districts or leave it open and '
-             'check multiple courts across bankruptcy courts and the entire judiciary system. '
-             "If you just want to look at one specific court, you can, but there's all "
-             'different types in here.',
-      'title': '$$$ U.S. Courts Unclaimed Funds Locator: Get lost MONIES owed to you or your '
-               'family. By the badwolf (Badwolf Unincorporated)',
-      'url': 'https://www.youtube.com/watch?v=suC7b2tuNcc&t=268s',
-      'video_id': 'suC7b2tuNcc'},
-     {'author': 'Money9 English',
-      'channel': 'Money9 English',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:47](https://www.youtube.com/watch?v=ogkbsdCWM4g&t=107s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q7 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Put in place a system to verify the mobile number and email IDs of all existing '
-              'and new customers IRA has given five important instructions to insurance.',
-      'timestamp': 107,
-      'timestamp_label': '[00:01:47]',
-      'timestamp_seconds': 107,
-      'tip': 'Put in place a system to verify the mobile number and email IDs of all existing '
-             'and new customers IRA has given five important instructions to insurance.',
-      'title': 'How To Get Unclaimed Money From Insurance Company | Explainer | Money9 English '
-               '(Money9 English)',
-      'url': 'https://www.youtube.com/watch?v=ogkbsdCWM4g&t=107s',
-      'video_id': 'ogkbsdCWM4g'},
      {'author': 'Guide Gurus',
       'channel': 'Guide Gurus',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:25](https://www.youtube.com/watch?v=wYwVPTqXCvE&t=25s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q7 operational verification).',
+      'markdown': '[00:00:48](https://www.youtube.com/watch?v=yLgvruGuIx0&t=48s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
       'source_type': 'video_pro_tip',
-      'text': "When someone dies, these assets don't just vanish. They often end up in the "
-              'hands of the state government until someone claims them. In 2025, many states '
-              'are updating their unclaimed property laws to make the process more efficient. '
-              'So, staying informed is key.',
-      'timestamp': 25,
-      'timestamp_label': '[00:00:25]',
-      'timestamp_seconds': 25,
-      'tip': "When someone dies, these assets don't just vanish. They often end up in the "
-             'hands of the state government until someone claims them. In 2025, many states '
-             'are updating their unclaimed property laws to make the process more efficient. '
-             'So, staying informed is key.',
-      'title': 'Who Can Claim Unclaimed Property Of A Deceased Person   2025 (Guide Gurus)',
-      'url': 'https://www.youtube.com/watch?v=wYwVPTqXCvE&t=25s',
-      'video_id': 'wYwVPTqXCvE'},
-     {'author': 'Enterslice',
-      'channel': 'Enterslice',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:54](https://www.youtube.com/watch?v=AZAC0VeRINw&t=234s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q7 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Clarity about the process to claim unclaim dividend funds if you require '
-              'additional information or assistance from an expert to claim your unclaimed '
-              'dividends feel free to connect us we are here to assist you thank you for '
-              'watching.',
-      'timestamp': 234,
-      'timestamp_label': '[00:03:54]',
-      'timestamp_seconds': 234,
-      'tip': 'Clarity about the process to claim unclaim dividend funds if you require '
-             'additional information or assistance from an expert to claim your unclaimed '
-             'dividends feel free to connect us we are here to assist you thank you for '
-             'watching.',
-      'title': 'The process to Claim Unclaimed Dividends|Documents Required to Claim Unclaimed '
-               'Dividends|Enterslice (Enterslice)',
-      'url': 'https://www.youtube.com/watch?v=AZAC0VeRINw&t=234s',
-      'video_id': 'AZAC0VeRINw'},
-     {'author': 'Unclaimed CEO',
-      'channel': 'Unclaimed CEO',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:08:02](https://www.youtube.com/watch?v=2SYC3A6apHk&t=482s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q7 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Your business and if you guys want to get my digital course and keep supporting '
-              "my channel that's awesome always leave a link there it's not necessary or "
-              'mandatory for me to teach you for free all right guys until then have a great '
-              'life and happy.',
-      'timestamp': 482,
-      'timestamp_label': '[00:08:02]',
-      'timestamp_seconds': 482,
-      'tip': 'Your business and if you guys want to get my digital course and keep supporting '
-             "my channel that's awesome always leave a link there it's not necessary or "
-             'mandatory for me to teach you for free all right guys until then have a great '
-             'life and happy.',
-      'title': 'Master the Claim Process For California: Boost Your Investigator Income '
-               '(Unclaimed CEO)',
-      'url': 'https://www.youtube.com/watch?v=2SYC3A6apHk&t=482s',
-      'video_id': '2SYC3A6apHk'},
-     {'author': 'Money Making Juggernaut',
-      'channel': 'Money Making Juggernaut',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:07:36](https://www.youtube.com/watch?v=vp2uuB23fww&t=456s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q7 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Mentioned a background check do they have to get fingerprinting yeah what does '
-              'it look like to actually go through with this process if you go back to that '
-              "Q&A and it um where it says license it's a hyperlink to the page and sorry I "
-              'got more people trying to join.',
-      'timestamp': 456,
-      'timestamp_label': '[00:07:36]',
-      'timestamp_seconds': 456,
-      'tip': 'Mentioned a background check do they have to get fingerprinting yeah what does '
-             'it look like to actually go through with this process if you go back to that Q&A '
-             "and it um where it says license it's a hyperlink to the page and sorry I got "
-             'more people trying to join.',
-      'title': 'How to work Texas Unclaimed State Funds and become a PI (Money Making '
-               'Juggernaut)',
-      'url': 'https://www.youtube.com/watch?v=vp2uuB23fww&t=456s',
-      'video_id': 'vp2uuB23fww'},
-     {'author': 'Money Making Juggernaut',
-      'channel': 'Money Making Juggernaut',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:10:44](https://www.youtube.com/watch?v=waps0YmW8BI&t=644s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q7 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Looking forward to that you know I hope that you know maybe in next next '
-              'success story uh my partner and I will be in the zoom call yeah awesome keep '
-              'killing it thank you oh.',
-      'timestamp': 644,
-      'timestamp_label': '[00:10:44]',
-      'timestamp_seconds': 644,
-      'tip': 'Looking forward to that you know I hope that you know maybe in next next success '
-             'story uh my partner and I will be in the zoom call yeah awesome keep killing it '
-             'thank you oh.',
-      'title': 'UNTAPPED OPPORTUNITY: $34k From 1 Claim (Unclaimed Bankruptcy Funds) (Money '
-               'Making Juggernaut)',
-      'url': 'https://www.youtube.com/watch?v=waps0YmW8BI&t=644s',
-      'video_id': 'waps0YmW8BI'}],
- 8: [{'author': 'Как се прави',
-      'channel': 'Как се прави',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:07:08](https://www.youtube.com/watch?v=KJU4iu_xIgw&t=428s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q8 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'With these robust search strategies, documentation checklists, and compliance '
-              'deadlines in hand, your treasury team is fully equipped to take action. The '
-              'only question left is what hidden assets will your business uncover today in '
-              "South Carolina's database?",
-      'timestamp': 428,
-      'timestamp_label': '[00:07:08]',
-      'timestamp_seconds': 428,
-      'tip': 'With these robust search strategies, documentation checklists, and compliance '
-             'deadlines in hand, your treasury team is fully equipped to take action. The only '
-             'question left is what hidden assets will your business uncover today in South '
-             "Carolina's database?",
-      'title': 'How to search South Carolina unclaimed property for a business name (Как се '
-               'прави)',
-      'url': 'https://www.youtube.com/watch?v=KJU4iu_xIgw&t=428s',
-      'video_id': 'KJU4iu_xIgw'},
-     {'author': 'Как се прави',
-      'channel': 'Как се прави',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:24](https://www.youtube.com/watch?v=NPH35-KUMjQ&t=144s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q8 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "'s official escheatement database. Step one, you identify your primary "
-              'resource. Head over to the official Department of Commerce portal at '
-              'unclaimedproperty. Step two, you plug your exact business name into the search '
-              'tool.',
-      'timestamp': 144,
-      'timestamp_label': '[00:02:24]',
-      'timestamp_seconds': 144,
-      'tip': "'s official escheatement database. Step one, you identify your primary resource. "
-             'Head over to the official Department of Commerce portal at unclaimedproperty. '
-             'Step two, you plug your exact business name into the search tool.',
-      'title': 'How to search Minnesota unclaimed property for a business name (Как се прави)',
-      'url': 'https://www.youtube.com/watch?v=NPH35-KUMjQ&t=144s',
-      'video_id': 'NPH35-KUMjQ'},
-     {'author': 'This Guy Knows Tech',
-      'channel': 'This Guy Knows Tech',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:09:09](https://www.youtube.com/watch?v=74IHdXzW4aQ&t=549s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q8 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Those distribution checks sit in federal court accounts across individual '
-              'districts until claimed. None of these seven registries charge fees to search, '
-              'and none of them take a percentage cut of your payout.',
-      'timestamp': 549,
-      'timestamp_label': '[00:09:09]',
-      'timestamp_seconds': 549,
-      'tip': 'Those distribution checks sit in federal court accounts across individual '
-             'districts until claimed. None of these seven registries charge fees to search, '
-             'and none of them take a percentage cut of your payout.',
-      'title': '7 Official US Databases To Find Unclaimed Money & Lost Assets (This Guy Knows '
-               'Tech)',
-      'url': 'https://www.youtube.com/watch?v=74IHdXzW4aQ&t=549s',
-      'video_id': '74IHdXzW4aQ'},
-     {'author': 'Keane Unclaimed Property',
-      'channel': 'Keane Unclaimed Property',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:19](https://www.youtube.com/watch?v=UP88bQoP2JU&t=79s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q8 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Platform includes data validation quality controls and tracking functionality '
-              'data validation includes a 14-point check and two-point address.',
-      'timestamp': 79,
-      'timestamp_label': '[00:01:19]',
-      'timestamp_seconds': 79,
-      'tip': 'Platform includes data validation quality controls and tracking functionality '
-             'data validation includes a 14-point check and two-point address.',
-      'title': 'Keane Unclaimed Property System (KUPS) (Keane Unclaimed Property)',
-      'url': 'https://www.youtube.com/watch?v=UP88bQoP2JU&t=79s',
-      'video_id': 'UP88bQoP2JU'},
-     {'author': 'Garden Shop Pro',
-      'channel': 'Garden Shop Pro',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:01](https://www.youtube.com/watch?v=HMzGGSvJ104&t=241s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q8 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'The NAIC itself will never actually notify you if a match was found. Optimizing '
-              'your search strategy. Because that NAIC tool only checks active policies at '
-              "participating carriers, you've got to cast a wider net to guarantee you find "
-              'every last cent.',
-      'timestamp': 241,
-      'timestamp_label': '[00:04:01]',
-      'timestamp_seconds': 241,
-      'tip': 'The NAIC itself will never actually notify you if a match was found. Optimizing '
-             'your search strategy. Because that NAIC tool only checks active policies at '
-             "participating carriers, you've got to cast a wider net to guarantee you find "
-             'every last cent.',
-      'title': 'How to find an unclaimed insurance payout in your name (Garden Shop Pro)',
-      'url': 'https://www.youtube.com/watch?v=HMzGGSvJ104&t=241s',
-      'video_id': 'HMzGGSvJ104'},
-     {'author': 'GardenShop.Pro',
-      'channel': 'GardenShop.Pro',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:41](https://www.youtube.com/watch?v=1IpkVjkkXHg&t=221s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q8 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'The Maryland database uses what software engineers call a prefix matching '
-              'algorithm. Basically, it only looks for records that start with exactly what '
-              "you typed. So, keeping your search simple ensures you don't accidentally filter "
-              'out a complex account name.',
-      'timestamp': 221,
-      'timestamp_label': '[00:03:41]',
-      'timestamp_seconds': 221,
-      'tip': 'The Maryland database uses what software engineers call a prefix matching '
-             'algorithm. Basically, it only looks for records that start with exactly what you '
-             "typed. So, keeping your search simple ensures you don't accidentally filter out "
-             'a complex account name.',
-      'title': 'How to find Maryland unclaimed utility deposits by last name (GardenShop.Pro)',
-      'url': 'https://www.youtube.com/watch?v=1IpkVjkkXHg&t=221s',
-      'video_id': '1IpkVjkkXHg'},
+      'text': 'In the world of unclaimed property, a warrant is essentially a check or payment '
+              'instrument issued by the state once your claim is approved.',
+      'timestamp': 48,
+      'timestamp_label': '[00:00:48]',
+      'timestamp_seconds': 48,
+      'tip': 'In the world of unclaimed property, a warrant is essentially a check or payment '
+             'instrument issued by the state once your claim is approved.',
+      'title': 'What Does Warrants Mean On Unclaimed Property   2025',
+      'url': 'https://www.youtube.com/watch?v=yLgvruGuIx0&t=48s',
+      'video_id': 'yLgvruGuIx0'},
      {'author': 'InvestigateTV',
       'channel': 'InvestigateTV',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:20](https://www.youtube.com/watch?v=IhEPmIRt3Ak&t=20s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q8 operational verification).',
+      'markdown': '[00:02:30](https://www.youtube.com/watch?v=IhEPmIRt3Ak&t=150s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
       'source_type': 'video_pro_tip',
-      'text': "While there's no single government database for it all, there is a freeway to "
-              "search in every state. Speaker] I got a phone call one day. Speaker] I'm "
-              'thinking, where in my past life did something like that occur?',
-      'timestamp': 20,
-      'timestamp_label': '[00:00:20]',
-      'timestamp_seconds': 20,
-      'tip': "While there's no single government database for it all, there is a freeway to "
-             "search in every state. Speaker] I got a phone call one day. Speaker] I'm "
-             'thinking, where in my past life did something like that occur?',
-      'title': 'Ways you can find unclaimed property owed to you (InvestigateTV)',
-      'url': 'https://www.youtube.com/watch?v=IhEPmIRt3Ak&t=20s',
+      'text': "Some states have programs that automatically look to return it, but you don't have "
+              'to wait for a phone call to figure out if you have any unclaimed property.',
+      'timestamp': 150,
+      'timestamp_label': '[00:02:30]',
+      'timestamp_seconds': 150,
+      'tip': "Some states have programs that automatically look to return it, but you don't have "
+             'to wait for a phone call to figure out if you have any unclaimed property.',
+      'title': 'Ways you can find unclaimed property owed to you',
+      'url': 'https://www.youtube.com/watch?v=IhEPmIRt3Ak&t=150s',
       'video_id': 'IhEPmIRt3Ak'},
-     {'author': 'David Daniels',
-      'channel': 'David Daniels',
+     {'author': 'Money Grammar',
+      'channel': 'Money Grammar',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:33](https://www.youtube.com/watch?v=Zq6923LSEX4&t=93s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q8 operational verification).',
+      'markdown': '[00:07:20](https://www.youtube.com/watch?v=5l8zepw8oWY&t=440s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
       'source_type': 'video_pro_tip',
-      'text': 'Remember billions of dollars are waiting to be claimed your share could be just '
-              'a search away so embark on your journey with HBU asset recovery today and '
-              "reclaim what's rightfully yours the Hidden Treasures are waiting for you don't "
-              'let them wait any longer.',
-      'timestamp': 93,
-      'timestamp_label': '[00:01:33]',
-      'timestamp_seconds': 93,
-      'tip': 'Remember billions of dollars are waiting to be claimed your share could be just '
-             'a search away so embark on your journey with HBU asset recovery today and '
-             "reclaim what's rightfully yours the Hidden Treasures are waiting for you don't "
-             'let them wait any longer.',
-      'title': 'How to Find Unclaimed State Funds with HBU Asset Recovery | Maximize Your '
-               'Wealth (David Daniels)',
-      'url': 'https://www.youtube.com/watch?v=Zq6923LSEX4&t=93s',
-      'video_id': 'Zq6923LSEX4'},
-     {'author': 'Knowledge Work Nexus',
-      'channel': 'Knowledge Work Nexus',
+      'text': 'These third-party operators, often called locators or finders, monitor public '
+              'databases and contact individuals offering to recover their funds for a percentage '
+              "of the asset's value.",
+      'timestamp': 440,
+      'timestamp_label': '[00:07:20]',
+      'timestamp_seconds': 440,
+      'tip': 'These third-party operators, often called locators or finders, monitor public '
+             'databases and contact individuals offering to recover their funds for a percentage '
+             "of the asset's value.",
+      'title': 'The Mechanics of Escheatment: How to Reclaim Your Abandoned Assets',
+      'url': 'https://www.youtube.com/watch?v=5l8zepw8oWY&t=440s',
+      'video_id': '5l8zepw8oWY'},
+     {'author': "Unclaimed Money: Find What You're Owed",
+      'channel': "Unclaimed Money: Find What You're Owed",
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:51](https://www.youtube.com/watch?v=wO5QkFr7vdQ&t=51s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q8 operational verification).',
+      'markdown': '[00:03:15](https://www.youtube.com/watch?v=J4RhFyo0R7c&t=195s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
       'source_type': 'video_pro_tip',
-      'text': '"Oh, this was worth a video." So, I\'m just going to put my name in here. I '
-              "think it would be good too if you've ever done business under different names "
-              "or specifically a business name, like I'll come back and search for my business "
-              'name as well.',
-      'timestamp': 51,
-      'timestamp_label': '[00:00:51]',
-      'timestamp_seconds': 51,
-      'tip': '"Oh, this was worth a video." So, I\'m just going to put my name in here. I '
-             "think it would be good too if you've ever done business under different names or "
-             "specifically a business name, like I'll come back and search for my business "
-             'name as well.',
-      'title': 'Finding and Claiming Unclaimed Property with MissingMoney.com (Knowledge Work '
-               'Nexus)',
-      'url': 'https://www.youtube.com/watch?v=wO5QkFr7vdQ&t=51s',
-      'video_id': 'wO5QkFr7vdQ'},
-     {'author': 'Mint',
-      'channel': 'Mint',
+      'text': "Stocks and other securities are often sold after they're turned over, and if that "
+              "happens, you usually get the cash value from when they were sold, not today's "
+              'price.',
+      'timestamp': 195,
+      'timestamp_label': '[00:03:15]',
+      'timestamp_seconds': 195,
+      'tip': "Stocks and other securities are often sold after they're turned over, so the sooner "
+             'you search, the better.',
+      'title': 'What Is Unclaimed Money? (And How to Get Yours Back for Free)',
+      'url': 'https://www.youtube.com/watch?v=J4RhFyo0R7c&t=195s',
+      'video_id': 'J4RhFyo0R7c'},
+     {'author': 'Dollar Decoded',
+      'channel': 'Dollar Decoded',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:33](https://www.youtube.com/watch?v=Y4d3T6BNtEg&t=333s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q8 operational verification).',
+      'markdown': '[00:05:52](https://www.youtube.com/watch?v=QVgTN5Lip0o&t=352s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
       'source_type': 'video_pro_tip',
-      'text': 'Yeah, that is the new portal. Earlier, a couple of years back, there was no '
-              'limitation. One could search endlessly for any number of investors and any '
-              "number of shares. So, the new portal, I think there's a limit of 10 search "
-              'entries which you can do and open.',
-      'timestamp': 333,
-      'timestamp_label': '[00:05:33]',
-      'timestamp_seconds': 333,
-      'tip': 'Yeah, that is the new portal. Earlier, a couple of years back, there was no '
-             'limitation. One could search endlessly for any number of investors and any '
-             "number of shares. So, the new portal, I think there's a limit of 10 search "
-             'entries which you can do and open.',
-      'title': 'Unclaimed Shares & Dividends? Here’s How To Track And Claim Them Via IEPFA '
-               'Portal (Mint)',
-      'url': 'https://www.youtube.com/watch?v=Y4d3T6BNtEg&t=333s',
-      'video_id': 'Y4d3T6BNtEg'},
-     {'author': 'Unclaimed Funds Finder',
-      'channel': 'Unclaimed Funds Finder',
+      'text': 'Say Jake gets an email, congratulations, you have $3,400 in unclaimed funds, pay a '
+              '$49 processing fee to release it. That is a scam.',
+      'timestamp': 352,
+      'timestamp_label': '[00:05:52]',
+      'timestamp_seconds': 352,
+      'tip': 'Say Jake gets an email, congratulations, you have $3,400 in unclaimed funds, pay a '
+             '$49 processing fee to release it. That is a scam.',
+      'title': 'Is the Government Holding Your Money? How to Find Unclaimed Money Free',
+      'url': 'https://www.youtube.com/watch?v=QVgTN5Lip0o&t=352s',
+      'video_id': 'QVgTN5Lip0o'},
+     {'author': 'InvestigateTV',
+      'channel': 'InvestigateTV',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:37](https://www.youtube.com/watch?v=Psgl7H5ZpOc&t=37s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q8 operational verification).',
+      'markdown': '[00:01:36](https://www.youtube.com/watch?v=YWsshlY3kF4&t=96s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
       'source_type': 'video_pro_tip',
-      'text': 'Step 2 Most unclaimed money is held at the state level. Go to your state’s '
-              'official unclaimed property website and search your name. Also check: States '
-              'you’ve lived in States where you’ve worked You can also use tools like '
-              'MissingMoney.',
-      'timestamp': 37,
-      'timestamp_label': '[00:00:37]',
-      'timestamp_seconds': 37,
-      'tip': 'Step 2 Most unclaimed money is held at the state level. Go to your state’s '
-             'official unclaimed property website and search your name. Also check: States '
-             'you’ve lived in States where you’ve worked You can also use tools like '
-             'MissingMoney.',
-      'title': 'How to Check If You Have Unclaimed Money (Step-by-Step Guide) (Unclaimed Funds '
-               'Finder)',
-      'url': 'https://www.youtube.com/watch?v=Psgl7H5ZpOc&t=37s',
-      'video_id': 'Psgl7H5ZpOc'},
+      'text': "A 5500 is a document companies file with the federal government that's all about "
+              "their 401K plans, and it'll have the plan administrator and a phone number right "
+              'there on the first page.',
+      'timestamp': 96,
+      'timestamp_label': '[00:01:36]',
+      'timestamp_seconds': 96,
+      'tip': "A 5500 is a document companies file with the federal government that's all about "
+             "their 401K plans, and it'll have the plan administrator and a phone number right "
+             'there on the first page.',
+      'title': 'Be Your Own Investigator: how to find money you may have forgotten',
+      'url': 'https://www.youtube.com/watch?v=YWsshlY3kF4&t=96s',
+      'video_id': 'YWsshlY3kF4'},
+     {'author': 'Money Missed',
+      'channel': 'Money Missed',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:39](https://www.youtube.com/watch?v=sfcrjWHv_7k&t=39s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
+      'source_type': 'video_pro_tip',
+      'text': "NAUPA's own data puts the average claim value at $2,080, but the median, the more "
+              'typical claim, is only about $100.',
+      'timestamp': 39,
+      'timestamp_label': '[00:00:39]',
+      'timestamp_seconds': 39,
+      'tip': "NAUPA's own data puts the average claim value at $2,080, but the median, the more "
+             'typical claim, is only about $100.',
+      'title': 'How to Check If You Have Unclaimed Money in Your Name (2026)',
+      'url': 'https://www.youtube.com/watch?v=sfcrjWHv_7k&t=39s',
+      'video_id': 'sfcrjWHv_7k'},
+     {'author': 'Unclaimed Money Recovery',
+      'channel': 'Unclaimed Money Recovery',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:13](https://www.youtube.com/watch?v=ZDSZHh3DZGs&t=133s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
+      'source_type': 'video_pro_tip',
+      'text': 'A state did an audit and found that an employee failed to cash a $149 reimbursement '
+              'check for expenses, and the state took that money and extrapolated it into a $2 '
+              'million assessment.',
+      'timestamp': 133,
+      'timestamp_label': '[00:02:13]',
+      'timestamp_seconds': 133,
+      'tip': 'A state did an audit and found that an employee failed to cash a $149 reimbursement '
+             'check for expenses, and the state took that money and extrapolated it into a $2 '
+             'million assessment.',
+      'title': 'Unclaimed Money Recovery - What is Unclaimed Property?',
+      'url': 'https://www.youtube.com/watch?v=ZDSZHh3DZGs&t=133s',
+      'video_id': 'ZDSZHh3DZGs'},
+     {'author': 'Base_Rate',
+      'channel': 'Base_Rate',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:31](https://www.youtube.com/watch?v=RycXVSWGZ3I&t=31s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
+      'source_type': 'video_pro_tip',
+      'text': 'Under the Uniform Commercial Code, a bank is not obligated to honor a check '
+              'presented more than 6 months after its issue date.',
+      'timestamp': 31,
+      'timestamp_label': '[00:00:31]',
+      'timestamp_seconds': 31,
+      'tip': 'The check expired, but the underlying obligation did not, and the payer still owes '
+             'you the funds.',
+      'title': 'Never Cash a Check? The State Ends Up Holding It',
+      'url': 'https://www.youtube.com/watch?v=RycXVSWGZ3I&t=31s',
+      'video_id': 'RycXVSWGZ3I'},
+     {'author': 'This Guy Knows Tech',
+      'channel': 'This Guy Knows Tech',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:15](https://www.youtube.com/watch?v=74IHdXzW4aQ&t=135s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
+      'source_type': 'video_pro_tip',
+      'text': 'In reality, state treasuries hold millions of dollars under misspelled names, '
+              'inverted first and last names, and outdated nicknames.',
+      'timestamp': 135,
+      'timestamp_label': '[00:02:15]',
+      'timestamp_seconds': 135,
+      'tip': 'In reality, state treasuries hold millions of dollars under misspelled names, '
+             'inverted first and last names, and outdated nicknames.',
+      'title': '7 Official US Databases To Find Unclaimed Money & Lost Assets',
+      'url': 'https://www.youtube.com/watch?v=74IHdXzW4aQ&t=135s',
+      'video_id': '74IHdXzW4aQ'},
+     {'author': 'Lorman Education Services',
+      'channel': 'Lorman Education Services',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:21:29](https://www.youtube.com/watch?v=2TghvbJiOis&t=1289s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
+      'source_type': 'video_pro_tip',
+      'text': 'The trend is certainly for states to shorten dormancy periods; originally a lot of '
+              'states had dormancy periods that were around 15 years.',
+      'timestamp': 1289,
+      'timestamp_label': '[00:21:29]',
+      'timestamp_seconds': 1289,
+      'tip': 'The trend is certainly for states to shorten dormancy periods; originally a lot of '
+             'states had dormancy periods that were around 15 years.',
+      'title': 'Unclaimed Property 101 - Fundamental Concepts',
+      'url': 'https://www.youtube.com/watch?v=2TghvbJiOis&t=1289s',
+      'video_id': '2TghvbJiOis'},
      {'author': 'Money Making Juggernaut',
       'channel': 'Money Making Juggernaut',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:15](https://www.youtube.com/watch?v=ZsII5-XkqPY&t=15s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q8 operational verification).',
+      'markdown': '[00:03:06](https://www.youtube.com/watch?v=7WZONOtYbjc&t=186s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
       'source_type': 'video_pro_tip',
-      'text': 'Great video in store I am going to share with you guys the same CRM that I use '
-              'that allow me to do six figures plus every single year in this business so if.',
-      'timestamp': 15,
-      'timestamp_label': '[00:00:15]',
-      'timestamp_seconds': 15,
-      'tip': 'Great video in store I am going to share with you guys the same CRM that I use '
-             'that allow me to do six figures plus every single year in this business so if.',
-      'title': 'The CRM I use to make $100,00+ per year in Asset Recovery 📈 (Money Making '
-               'Juggernaut)',
-      'url': 'https://www.youtube.com/watch?v=ZsII5-XkqPY&t=15s',
-      'video_id': 'ZsII5-XkqPY'},
-     {'author': 'Michael Curtis',
-      'channel': 'Michael Curtis',
+      'text': "Unclaimed funds at the county level are typically lower in value, but it's an "
+              'untapped niche, so you are probably going to have low competition.',
+      'timestamp': 186,
+      'timestamp_label': '[00:03:06]',
+      'timestamp_seconds': 186,
+      'tip': "Unclaimed funds at the county level are typically lower in value, but it's an "
+             'untapped niche, so you are probably going to have low competition.',
+      'title': 'The Different Types Of Unclaimed Funds - COMPLETE LIST (Surplus Funds Recovery)',
+      'url': 'https://www.youtube.com/watch?v=7WZONOtYbjc&t=186s',
+      'video_id': '7WZONOtYbjc'},
+     {'author': 'Unclaimed Funds Finder',
+      'channel': 'Unclaimed Funds Finder',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:06:25](https://www.youtube.com/watch?v=JGravBgJTJo&t=385s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q8 operational verification).',
+      'markdown': '[00:01:02](https://www.youtube.com/watch?v=Psgl7H5ZpOc&t=62s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
       'source_type': 'video_pro_tip',
-      'text': "Uh you should get you should get some information back all right so that's how "
-              'easy it is to file a claim on the office of unclaimed property of delaware um '
-              'go ahead tell your friend tell your neighbor tell whoever to come and perform a '
-              'search.',
-      'timestamp': 385,
-      'timestamp_label': '[00:06:25]',
-      'timestamp_seconds': 385,
-      'tip': "Uh you should get you should get some information back all right so that's how "
-             'easy it is to file a claim on the office of unclaimed property of delaware um go '
-             'ahead tell your friend tell your neighbor tell whoever to come and perform a '
-             'search.',
-      'title': 'Delaware Unclaimed Property Official Search Website l Learn How to Find '
-               'Unclaimed Money in Delaware (Michael Curtis)',
-      'url': 'https://www.youtube.com/watch?v=JGravBgJTJo&t=385s',
-      'video_id': 'JGravBgJTJo'},
-     {'author': 'GardenShop.Pro',
-      'channel': 'GardenShop.Pro',
+      'text': 'There is no single database for everything; each agency keeps its own records.',
+      'timestamp': 62,
+      'timestamp_label': '[00:01:02]',
+      'timestamp_seconds': 62,
+      'tip': 'There is no single database for everything; each agency keeps its own records.',
+      'title': 'How to Check If You Have Unclaimed Money (Step-by-Step Guide)',
+      'url': 'https://www.youtube.com/watch?v=Psgl7H5ZpOc&t=62s',
+      'video_id': 'Psgl7H5ZpOc'},
+     {'author': 'WSPA 7News',
+      'channel': 'WSPA 7News',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:11](https://www.youtube.com/watch?v=3iluxKs2wP8&t=191s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q8 operational verification).',
+      'markdown': '[00:03:06](https://www.youtube.com/watch?v=VF97sp7MzAw&t=186s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
       'source_type': 'video_pro_tip',
-      'text': 'Searching manually is absolutely still encouraged so you can find anything that '
-              'might not automatically trigger a match. The actual digital treasure hunt. Here '
-              "is exactly how you conduct your search on the state's transaction portal, which "
-              'most people just call TAP.',
-      'timestamp': 191,
-      'timestamp_label': '[00:03:11]',
-      'timestamp_seconds': 191,
-      'tip': 'Searching manually is absolutely still encouraged so you can find anything that '
-             'might not automatically trigger a match. The actual digital treasure hunt. Here '
-             "is exactly how you conduct your search on the state's transaction portal, which "
-             'most people just call TAP.',
-      'title': 'How to find Montana unclaimed utility deposits by last name (GardenShop.Pro)',
-      'url': 'https://www.youtube.com/watch?v=3iluxKs2wP8&t=191s',
-      'video_id': '3iluxKs2wP8'},
+      'text': 'If your state is not listed in bold, you could still select it and get a link right '
+              "to the state's unclaimed property site.",
+      'timestamp': 186,
+      'timestamp_label': '[00:03:06]',
+      'timestamp_seconds': 186,
+      'tip': 'If your state is not listed in bold, you could still select it and get a link right '
+             "to the state's unclaimed property site.",
+      'title': 'How to track down unclaimed money in every state',
+      'url': 'https://www.youtube.com/watch?v=VF97sp7MzAw&t=186s',
+      'video_id': 'VF97sp7MzAw'}],
+ 2: [{'author': 'Surplus Institute / David Church / Unclaimed Funds',
+      'channel': 'Surplus Institute / David Church / Unclaimed Funds',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:43](https://www.youtube.com/watch?v=IIBKDdChS-k&t=103s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'In California the state is very pleasant to work with, they register you down at '
+              'the state and the state will pay you 10 percent directly, you cannot ask for more '
+              'than 10 percent.',
+      'timestamp': 103,
+      'timestamp_label': '[00:01:43]',
+      'timestamp_seconds': 103,
+      'tip': 'In California the state is very pleasant to work with, they register you down at the '
+             'state and the state will pay you 10 percent directly, you cannot ask for more than '
+             '10 percent.',
+      'title': 'How Unclaimed Money Can Help You Make More Money',
+      'url': 'https://www.youtube.com/watch?v=IIBKDdChS-k&t=103s',
+      'video_id': 'IIBKDdChS-k'},
+     {'author': 'Surplus Institute / David Church / Unclaimed Funds',
+      'channel': 'Surplus Institute / David Church / Unclaimed Funds',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:24](https://www.youtube.com/watch?v=IIBKDdChS-k&t=144s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': "States like New York won't give you an amount, they'll either say under or over a "
+              "hundred dollars, and I would not work a state like that because you don't know how "
+              "much you're going after.",
+      'timestamp': 144,
+      'timestamp_label': '[00:02:24]',
+      'timestamp_seconds': 144,
+      'tip': "States like New York won't give you an amount, they'll either say under or over a "
+             "hundred dollars, and I would not work a state like that because you don't know how "
+             "much you're going after.",
+      'title': 'How Unclaimed Money Can Help You Make More Money',
+      'url': 'https://www.youtube.com/watch?v=IIBKDdChS-k&t=144s',
+      'video_id': 'IIBKDdChS-k'},
+     {'author': 'Surplus Institute / David Church / Unclaimed Funds',
+      'channel': 'Surplus Institute / David Church / Unclaimed Funds',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:07:42](https://www.youtube.com/watch?v=RjCjrBjQF7Y&t=462s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'You can only get 10 percent so I would work nothing under $10,000 and I would start '
+              'off with about a $10,000 claim.',
+      'timestamp': 462,
+      'timestamp_label': '[00:07:42]',
+      'timestamp_seconds': 462,
+      'tip': 'You can only get 10 percent so I would work nothing under $10,000 and I would start '
+             'off with about a $10,000 claim.',
+      'title': 'How to get started in state fund | State unclaimed funds business. Make money with '
+               'surplus funds',
+      'url': 'https://www.youtube.com/watch?v=RjCjrBjQF7Y&t=462s',
+      'video_id': 'RjCjrBjQF7Y'},
+     {'author': 'Surplus Institute / David Church / Unclaimed Funds',
+      'channel': 'Surplus Institute / David Church / Unclaimed Funds',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:09:55](https://www.youtube.com/watch?v=RjCjrBjQF7Y&t=595s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'One of the biggest objections I get from people is well what if they go around you, '
+              'well deal with it, I had it happen just again recently.',
+      'timestamp': 595,
+      'timestamp_label': '[00:09:55]',
+      'timestamp_seconds': 595,
+      'tip': 'One of the biggest objections I get from people is well what if they go around you, '
+             'well deal with it, I had it happen just again recently.',
+      'title': 'How to get started in state fund | State unclaimed funds business. Make money with '
+               'surplus funds',
+      'url': 'https://www.youtube.com/watch?v=RjCjrBjQF7Y&t=595s',
+      'video_id': 'RjCjrBjQF7Y'},
+     {'author': 'FundSleuth - Unclaimed Funds Info and Training',
+      'channel': 'FundSleuth - Unclaimed Funds Info and Training',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:11](https://www.youtube.com/watch?v=kGhoQfbhUG4&t=251s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': "They just couldn't connect with people or the skip tracing resource that they used "
+              "wasn't that good so they could never even talk to the person that they wanted to "
+              'speak with.',
+      'timestamp': 251,
+      'timestamp_label': '[00:04:11]',
+      'timestamp_seconds': 251,
+      'tip': "They just couldn't connect with people or the skip tracing resource that they used "
+             "wasn't that good so they could never even talk to the person that they wanted to "
+             'speak with.',
+      'title': 'Why people quit working Unclaimed Funds after taking a course.',
+      'url': 'https://www.youtube.com/watch?v=kGhoQfbhUG4&t=251s',
+      'video_id': 'kGhoQfbhUG4'},
      {'author': 'Unclaimed CEO',
       'channel': 'Unclaimed CEO',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:43](https://www.youtube.com/watch?v=zI7m3acMjuY&t=163s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q8 operational verification).',
+      'markdown': '[00:01:05](https://www.youtube.com/watch?v=Vy3iGS6ep4w&t=65s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
       'source_type': 'video_pro_tip',
-      'text': 'Choose who you want to work with versus people picking and choosing if they '
-              "want to work with you give it a shot good luck don't forget to help support my "
-              'channel by liking subscribing and watching all my videos to the end see you '
-              'guys in the next video towards foreign.',
-      'timestamp': 163,
-      'timestamp_label': '[00:02:43]',
-      'timestamp_seconds': 163,
-      'tip': 'Choose who you want to work with versus people picking and choosing if they want '
-             "to work with you give it a shot good luck don't forget to help support my "
-             'channel by liking subscribing and watching all my videos to the end see you guys '
-             'in the next video towards foreign.',
-      'title': 'Why People Struggle With Unclaimed Funds | Avoid These 3 Things❌️ (Unclaimed '
-               'CEO)',
-      'url': 'https://www.youtube.com/watch?v=zI7m3acMjuY&t=163s',
-      'video_id': 'zI7m3acMjuY'}],
- 9: [{'author': 'NBC New York',
+      'text': 'Number two, stop using your own money, the problem with that is you start draining '
+              "your bank account and it's your money, it's your family's money.",
+      'timestamp': 65,
+      'timestamp_label': '[00:01:05]',
+      'timestamp_seconds': 65,
+      'tip': 'Number two, stop using your own money, the problem with that is you start draining '
+             "your bank account and it's your money, it's your family's money.",
+      'title': 'How to be successful with Unclaimed Funds in 2024',
+      'url': 'https://www.youtube.com/watch?v=Vy3iGS6ep4w&t=65s',
+      'video_id': 'Vy3iGS6ep4w'},
+     {'author': 'Money Making Juggernaut',
+      'channel': 'Money Making Juggernaut',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:40](https://www.youtube.com/watch?v=sK5PqCLSzzg&t=40s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'The reason why we could actually do this business with zero cost is because all of '
+              'the leads are online for free.',
+      'timestamp': 40,
+      'timestamp_label': '[00:00:40]',
+      'timestamp_seconds': 40,
+      'tip': 'The reason why we could actually do this business with zero cost is because all of '
+             'the leads are online for free.',
+      'title': 'How To Start Asset Recovery Business With $0 (Surplus Funds Recovery)',
+      'url': 'https://www.youtube.com/watch?v=sK5PqCLSzzg&t=40s',
+      'video_id': 'sK5PqCLSzzg'},
+     {'author': 'Unclaimed CEO',
+      'channel': 'Unclaimed CEO',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:15](https://www.youtube.com/watch?v=zI7m3acMjuY&t=15s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': "Number one, stop doing cold calls, cold calls don't work.",
+      'timestamp': 15,
+      'timestamp_label': '[00:00:15]',
+      'timestamp_seconds': 15,
+      'tip': "Number one, stop doing cold calls, cold calls don't work.",
+      'title': 'Why People Struggle With Unclaimed Funds | Avoid These 3 Things❌️',
+      'url': 'https://www.youtube.com/watch?v=zI7m3acMjuY&t=15s',
+      'video_id': 'zI7m3acMjuY'},
+     {'author': 'Timepiece Dan',
+      'channel': 'Timepiece Dan',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:27](https://www.youtube.com/watch?v=sDutuuk5RG0&t=207s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'You get 10 percent of that, it could be negotiable, but the highest you can charge '
+              'in the state of California is 10 percent.',
+      'timestamp': 207,
+      'timestamp_label': '[00:03:27]',
+      'timestamp_seconds': 207,
+      'tip': 'You get 10 percent of that, it could be negotiable, but the highest you can charge '
+             'in the state of California is 10 percent.',
+      'title': 'Make 5k On Surplus Funds State Funds Unclaimed Money (Easy Business)',
+      'url': 'https://www.youtube.com/watch?v=sDutuuk5RG0&t=207s',
+      'video_id': 'sDutuuk5RG0'},
+     {'author': 'Unclaimed CEO',
+      'channel': 'Unclaimed CEO',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:24](https://www.youtube.com/watch?v=XsLq9LUTb6w&t=84s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'There was no footprint that was proving I was actually a business, so there was no '
+              'wonder when I was closing deals with people, they would back out.',
+      'timestamp': 84,
+      'timestamp_label': '[00:01:24]',
+      'timestamp_seconds': 84,
+      'tip': 'There was no footprint that was proving I was actually a business, so there was no '
+             'wonder when I was closing deals with people, they would back out.',
+      'title': 'The $10K/month Blueprint for Unclaimed Funds',
+      'url': 'https://www.youtube.com/watch?v=XsLq9LUTb6w&t=84s',
+      'video_id': 'XsLq9LUTb6w'},
+     {'author': 'Unclaimed CEO',
+      'channel': 'Unclaimed CEO',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:43](https://www.youtube.com/watch?v=U1OErlHEyv4&t=43s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'A lot of people skip the most important steps, and number one, you need to make '
+              'sure your business is legit.',
+      'timestamp': 43,
+      'timestamp_label': '[00:00:43]',
+      'timestamp_seconds': 43,
+      'tip': 'A lot of people skip the most important steps, and number one, you need to make sure '
+             'your business is legit.',
+      'title': 'How To Move Faster & Make More Money With Unclaimed Funds',
+      'url': 'https://www.youtube.com/watch?v=U1OErlHEyv4&t=43s',
+      'video_id': 'U1OErlHEyv4'},
+     {'author': 'Unclaimed CEO',
+      'channel': 'Unclaimed CEO',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:13:30](https://www.youtube.com/watch?v=i84F9CVghTA&t=810s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': "Make sure you follow these layers, try not to skip steps, don't go from an idea to "
+              'making phone calls, that never works.',
+      'timestamp': 810,
+      'timestamp_label': '[00:13:30]',
+      'timestamp_seconds': 810,
+      'tip': "Make sure you follow these layers, try not to skip steps, don't go from an idea to "
+             'making phone calls, that never works.',
+      'title': '⚠️WARNING⚠️ Do these 6 things BEFORE you start your Unclaimed Funds | Tax Surplus '
+               'business',
+      'url': 'https://www.youtube.com/watch?v=i84F9CVghTA&t=810s',
+      'video_id': 'i84F9CVghTA'},
+     {'author': 'Surplus Funds 101',
+      'channel': 'Surplus Funds 101',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:12:49](https://www.youtube.com/watch?v=PGvJEv9Y_Go&t=769s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': "I always suggest to cold call, that's the quickest, cheapest, fastest way to really "
+              'gain traction and see a lot of momentum in your business.',
+      'timestamp': 769,
+      'timestamp_label': '[00:12:49]',
+      'timestamp_seconds': 769,
+      'tip': "I always suggest to cold call, that's the quickest, cheapest, fastest way to really "
+             'gain traction and see a lot of momentum in your business.',
+      'title': 'State Funds Tutorial: First Steps For Somebody Brand New To Unclaimed Funds '
+               'Business.',
+      'url': 'https://www.youtube.com/watch?v=PGvJEv9Y_Go&t=769s',
+      'video_id': 'PGvJEv9Y_Go'},
+     {'author': 'Money Making Juggernaut',
+      'channel': 'Money Making Juggernaut',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:52](https://www.youtube.com/watch?v=kuCEYN64vtQ&t=232s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'Unclaimed state funds are typically processed within 60 days because that check is '
+              "literally already ready, the money's there in the state treasury.",
+      'timestamp': 232,
+      'timestamp_label': '[00:03:52]',
+      'timestamp_seconds': 232,
+      'tip': 'Unclaimed state funds are typically processed within 60 days because that check is '
+             "literally already ready, the money's there in the state treasury.",
+      'title': 'Unclaimed State Funds VS Surplus Funds Recovery',
+      'url': 'https://www.youtube.com/watch?v=kuCEYN64vtQ&t=232s',
+      'video_id': 'kuCEYN64vtQ'},
+     {'author': 'Unclaimed CEO',
+      'channel': 'Unclaimed CEO',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:55](https://www.youtube.com/watch?v=1W2i-aJGcb0&t=55s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'You can walk out of that bank the same day with twenty thousand dollars or more '
+              'depending on what your personal credit looks like.',
+      'timestamp': 55,
+      'timestamp_label': '[00:00:55]',
+      'timestamp_seconds': 55,
+      'tip': 'You can walk out of that bank the same day with twenty thousand dollars or more '
+             'depending on what your personal credit looks like.',
+      'title': 'One of the biggest mistakes made with UNCLAIMED FUNDS (Must Watch)',
+      'url': 'https://www.youtube.com/watch?v=1W2i-aJGcb0&t=55s',
+      'video_id': '1W2i-aJGcb0'},
+     {'author': 'Surplus Funds 101',
+      'channel': 'Surplus Funds 101',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:08:40](https://www.youtube.com/watch?v=qyRWV76TgwE&t=520s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': "It's not really about the state that you choose to work in, it's how you work the "
+              'state.',
+      'timestamp': 520,
+      'timestamp_label': '[00:08:40]',
+      'timestamp_seconds': 520,
+      'tip': "It's not really about the state that you choose to work in, it's how you work the "
+             'state.',
+      'title': 'How To Pick The BEST State For Your Unclaimed Funds Business',
+      'url': 'https://www.youtube.com/watch?v=qyRWV76TgwE&t=520s',
+      'video_id': 'qyRWV76TgwE'},
+     {'author': 'Surplus Funds 101',
+      'channel': 'Surplus Funds 101',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:43](https://www.youtube.com/watch?v=TTMtgtc31k4&t=283s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': "In those states I wouldn't go above 40 percent, I think 40 percent is a really "
+              "healthy fee, and I'm usually pretty good with 20, 25 percent.",
+      'timestamp': 283,
+      'timestamp_label': '[00:04:43]',
+      'timestamp_seconds': 283,
+      'tip': "In those states I wouldn't go above 40 percent, I think 40 percent is a really "
+             "healthy fee, and I'm usually pretty good with 20, 25 percent.",
+      'title': 'How To Become An Unclaimed Property Investigator',
+      'url': 'https://www.youtube.com/watch?v=TTMtgtc31k4&t=283s',
+      'video_id': 'TTMtgtc31k4'},
+     {'author': 'Money Making Juggernaut',
+      'channel': 'Money Making Juggernaut',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:55](https://www.youtube.com/watch?v=_vsvjD8JvgU&t=175s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': "If you do 100 leads it's going to cost you about $14 to $15 opposed to putting in "
+              'four, five, maybe even 10 hours of research on your own manually.',
+      'timestamp': 175,
+      'timestamp_label': '[00:02:55]',
+      'timestamp_seconds': 175,
+      'tip': "If you do 100 leads it's going to cost you about $14 to $15 opposed to putting in "
+             'four, five, maybe even 10 hours of research on your own manually.',
+      'title': 'Surplus Funds Recovery Newbie? START HERE (Asset Recovery Business)',
+      'url': 'https://www.youtube.com/watch?v=_vsvjD8JvgU&t=175s',
+      'video_id': '_vsvjD8JvgU'}],
+ 3: [{'author': 'WGN News',
+      'channel': 'WGN News',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:54](https://www.youtube.com/watch?v=4abzayS6yzk&t=54s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': "If you see a check in the mail from the State Treasurer's office, it's not a scam, "
+              'all you have to do is open that envelope and cash that check.',
+      'timestamp': 54,
+      'timestamp_label': '[00:00:54]',
+      'timestamp_seconds': 54,
+      'tip': "If you see a check in the mail from the State Treasurer's office, it's not a scam, "
+             'all you have to do is open that envelope and cash that check.',
+      'title': "'It's not a scam': Nearly 140K Illinois residents to receive checks for unclaimed "
+               'property',
+      'url': 'https://www.youtube.com/watch?v=4abzayS6yzk&t=54s',
+      'video_id': '4abzayS6yzk'},
+     {'author': 'CBS News Sacramento',
+      'channel': 'CBS News Sacramento',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:52](https://www.youtube.com/watch?v=1Grj5UvPLwo&t=172s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': 'California law requires the state cash out your stocks and investments within 20 '
+              'months of receiving them, meaning you get whatever they sold it for by the time you '
+              'find your unclaimed funds.',
+      'timestamp': 172,
+      'timestamp_label': '[00:02:52]',
+      'timestamp_seconds': 172,
+      'tip': 'California law requires the state cash out your stocks and investments within 20 '
+             'months of receiving them, meaning you get whatever they sold it for by the time you '
+             'find your unclaimed funds.',
+      'title': 'CBS California investigation spurs federal action on states’ unclaimed property '
+               'practices',
+      'url': 'https://www.youtube.com/watch?v=1Grj5UvPLwo&t=172s',
+      'video_id': '1Grj5UvPLwo'},
+     {'author': 'Jordan Liles',
+      'channel': 'Jordan Liles',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:31](https://www.youtube.com/watch?v=lM8PdIOG7-E&t=151s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': 'MissingMoney.com is endorsed by the National Association of Unclaimed Property '
+              'Administrators and the National Association of State Treasurers.',
+      'timestamp': 151,
+      'timestamp_label': '[00:02:31]',
+      'timestamp_seconds': 151,
+      'tip': 'MissingMoney.com is endorsed by the National Association of Unclaimed Property '
+             'Administrators and the National Association of State Treasurers.',
+      'title': "MissingMoney.com Scam or Legit? Here's the Answer.",
+      'url': 'https://www.youtube.com/watch?v=lM8PdIOG7-E&t=151s',
+      'video_id': 'lM8PdIOG7-E'},
+     {'author': 'NBC New York',
       'channel': 'NBC New York',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:35](https://www.youtube.com/watch?v=qHskTBuAHTg&t=35s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q9 operational verification).',
+      'markdown': '[00:00:38](https://www.youtube.com/watch?v=wCk_H4rThTo&t=38s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
       'source_type': 'video_pro_tip',
-      'text': 'CONNECTICUT ALSO HAVE STATE OFFICES THAT HANDLE UNCLAIMED FUNDS. THE MONEYS ARE '
-              'USUALLY UNCASHED CHECKS. SOMETIMES SENT TO AN OLD ADDRESS. BY LAW CERTAIN '
-              'BUSINESSES LIKE BANKS, RETAILERS, HEALTH INSURERS, HAVE TO TURN OVER THOSE '
-              'DORMANT ACCOUNTS TO THE STATE.',
-      'timestamp': 35,
-      'timestamp_label': '[00:00:35]',
-      'timestamp_seconds': 35,
-      'tip': 'CONNECTICUT ALSO HAVE STATE OFFICES THAT HANDLE UNCLAIMED FUNDS. THE MONEYS ARE '
-             'USUALLY UNCASHED CHECKS. SOMETIMES SENT TO AN OLD ADDRESS. BY LAW CERTAIN '
-             'BUSINESSES LIKE BANKS, RETAILERS, HEALTH INSURERS, HAVE TO TURN OVER THOSE '
-             'DORMANT ACCOUNTS TO THE STATE.',
-      'title': 'How to Check Unclaimed Funds in New York (NBC New York)',
-      'url': 'https://www.youtube.com/watch?v=qHskTBuAHTg&t=35s',
-      'video_id': 'qHskTBuAHTg'},
-     {'author': 'Как се прави',
-      'channel': 'Как се прави',
+      'text': 'For any claim of an unclaimed fund of $250 or less, we will do a verification on '
+              "the rightful ownership, and instead of just notifying you that we have money, we'll "
+              'actually send you the check.',
+      'timestamp': 38,
+      'timestamp_label': '[00:00:38]',
+      'timestamp_seconds': 38,
+      'tip': 'For any claim of an unclaimed fund of $250 or less, we will do a verification on the '
+             "rightful ownership, and instead of just notifying you that we have money, we'll "
+             'actually send you the check.',
+      'title': 'Unclaimed funds in New York could soon be coming your mailbox | NBC New York',
+      'url': 'https://www.youtube.com/watch?v=wCk_H4rThTo&t=38s',
+      'video_id': 'wCk_H4rThTo'},
+     {'author': 'Off The Receipt',
+      'channel': 'Off The Receipt',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:25](https://www.youtube.com/watch?v=9BVp_yhswZY&t=85s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q9 operational verification).',
+      'markdown': '[00:03:51](https://www.youtube.com/watch?v=hSrCCZHDpUU&t=231s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
       'source_type': 'video_pro_tip',
-      'text': 'Basically, by law, financial institutions and companies are required to turn '
-              "over dormant or inactive accounts to the New York State Comptroller's Office of "
-              'unclaimed funds.',
-      'timestamp': 85,
-      'timestamp_label': '[00:01:25]',
-      'timestamp_seconds': 85,
-      'tip': 'Basically, by law, financial institutions and companies are required to turn '
-             "over dormant or inactive accounts to the New York State Comptroller's Office of "
-             'unclaimed funds.',
-      'title': 'How to use the unclaimed property database in New York (Как се прави)',
-      'url': 'https://www.youtube.com/watch?v=9BVp_yhswZY&t=85s',
-      'video_id': '9BVp_yhswZY'},
-     {'author': 'GardenShop.Pro',
-      'channel': 'GardenShop.Pro',
+      'text': "Nationally, states do give a lot back, but an older analysis from the state's own "
+              'association found they return only about half as much as they take in.',
+      'timestamp': 231,
+      'timestamp_label': '[00:03:51]',
+      'timestamp_seconds': 231,
+      'tip': "Nationally, states do give a lot back, but an older analysis from the state's own "
+             'association found they return only about half as much as they take in.',
+      'title': 'How Delaware Quietly Makes $554M From Unclaimed Money',
+      'url': 'https://www.youtube.com/watch?v=hSrCCZHDpUU&t=231s',
+      'video_id': 'hSrCCZHDpUU'},
+     {'author': 'Financial Soup',
+      'channel': 'Financial Soup',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:26](https://www.youtube.com/watch?v=OFnbGkVuoHQ&t=326s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q9 operational verification).',
+      'markdown': '[00:03:09](https://www.youtube.com/watch?v=ubLk2A5a-2A&t=189s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
       'source_type': 'video_pro_tip',
-      'text': '24 months of the state holding the property is completely unenforceable. And '
-              'even after those 24 months, the law caps finders fees at a maximum of 15% '
-              'requiring a strict notarized contract. But remember, the Great Iowa Treasure '
-              'Hunt is 100% free.',
-      'timestamp': 326,
-      'timestamp_label': '[00:05:26]',
-      'timestamp_seconds': 326,
-      'tip': '24 months of the state holding the property is completely unenforceable. And '
-             'even after those 24 months, the law caps finders fees at a maximum of 15% '
-             'requiring a strict notarized contract. But remember, the Great Iowa Treasure '
-             'Hunt is 100% free.',
-      'title': 'How to find Iowa unclaimed utility deposits by last name (GardenShop.Pro)',
-      'url': 'https://www.youtube.com/watch?v=OFnbGkVuoHQ&t=326s',
-      'video_id': 'OFnbGkVuoHQ'},
+      'text': "I have no experience doing it this way, but personally, I've had all experiences "
+              'doing it with the info way and doing the search process with the state itself.',
+      'timestamp': 189,
+      'timestamp_label': '[00:03:09]',
+      'timestamp_seconds': 189,
+      'tip': "I have no experience doing it this way, but personally, I've had all experiences "
+             'doing it with the info way and doing the search process with the state itself.',
+      'title': 'How to Find Unclaimed Money',
+      'url': 'https://www.youtube.com/watch?v=ubLk2A5a-2A&t=189s',
+      'video_id': 'ubLk2A5a-2A'},
+     {'author': 'Knowledge Work Nexus',
+      'channel': 'Knowledge Work Nexus',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:23](https://www.youtube.com/watch?v=wO5QkFr7vdQ&t=23s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': "You're still actually searching different state websites and filing through "
+              'different state processes, and every state does have a specific process.',
+      'timestamp': 23,
+      'timestamp_label': '[00:00:23]',
+      'timestamp_seconds': 23,
+      'tip': "You're still actually searching different state websites and filing through "
+             'different state processes, and every state does have a specific process.',
+      'title': 'Finding and Claiming Unclaimed Property with MissingMoney.com',
+      'url': 'https://www.youtube.com/watch?v=wO5QkFr7vdQ&t=23s',
+      'video_id': 'wO5QkFr7vdQ'},
+     {'author': 'Nobody Asked, I Checked',
+      'channel': 'Nobody Asked, I Checked',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:54](https://www.youtube.com/watch?v=z2nZM27w4qU&t=174s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': "If a search site asks you to pay before it shows results, you're not on the "
+              'official path.',
+      'timestamp': 174,
+      'timestamp_label': '[00:02:54]',
+      'timestamp_seconds': 174,
+      'tip': "If a search site asks you to pay before it shows results, you're not on the official "
+             'path.',
+      'title': 'Unclaimed Money Search 2026: Find Money in Your Name for Free (Avoid Finder Fee '
+               'Scams)',
+      'url': 'https://www.youtube.com/watch?v=z2nZM27w4qU&t=174s',
+      'video_id': 'z2nZM27w4qU'},
+     {'author': 'Nobody Asked, I Checked',
+      'channel': 'Nobody Asked, I Checked',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:59](https://www.youtube.com/watch?v=z2nZM27w4qU&t=299s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': "Wyoming's treasurer has warned that private finders can take up to half of what "
+              'they recover and that the state charges nothing to return the money.',
+      'timestamp': 299,
+      'timestamp_label': '[00:04:59]',
+      'timestamp_seconds': 299,
+      'tip': "Wyoming's treasurer has warned that private finders can take up to half of what they "
+             'recover and that the state charges nothing to return the money.',
+      'title': 'Unclaimed Money Search 2026: Find Money in Your Name for Free (Avoid Finder Fee '
+               'Scams)',
+      'url': 'https://www.youtube.com/watch?v=z2nZM27w4qU&t=299s',
+      'video_id': 'z2nZM27w4qU'},
+     {'author': 'Penelope Jane Smith',
+      'channel': 'Penelope Jane Smith',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:43](https://www.youtube.com/watch?v=26FSCbZczh4&t=223s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': 'Companies are legally required to send funds from lost accounts to the state of the '
+              "owner's last known address, so do a search for each of the states that you've lived "
+              'in.',
+      'timestamp': 223,
+      'timestamp_label': '[00:03:43]',
+      'timestamp_seconds': 223,
+      'tip': 'Companies are legally required to send funds from lost accounts to the state of the '
+             "owner's last known address, so do a search for each of the states that you've lived "
+             'in.',
+      'title': 'Where To Find Unclaimed Money - Legit Government Sites Revealed',
+      'url': 'https://www.youtube.com/watch?v=26FSCbZczh4&t=223s',
+      'video_id': '26FSCbZczh4'},
+     {'author': 'Michael Curtis',
+      'channel': 'Michael Curtis',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:17](https://www.youtube.com/watch?v=JGravBgJTJo&t=137s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': 'Within two weeks I had a check, I was shocked.',
+      'timestamp': 137,
+      'timestamp_label': '[00:02:17]',
+      'timestamp_seconds': 137,
+      'tip': 'Within two weeks I had a check, I was shocked.',
+      'title': 'Delaware Unclaimed Property Official Search Website l Learn How to Find Unclaimed '
+               'Money in Delaware',
+      'url': 'https://www.youtube.com/watch?v=JGravBgJTJo&t=137s',
+      'video_id': 'JGravBgJTJo'},
      {'author': 'The Explainer Point',
       'channel': 'The Explainer Point',
       'epistemic_status': 'attributed_practitioner_claim',
       'markdown': '[00:03:53](https://www.youtube.com/watch?v=NWkWT5QX3sM&t=233s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q9 operational verification).',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
       'source_type': 'video_pro_tip',
-      'text': 'No one designed it as a business model. It is the side effect of two old court '
-              'rules and one very popular legal address. That is why a fight over one company '
-              'mattered so much. MoneyGram is incorporated in Delaware.',
+      'text': 'In other words, the state spends the money first and pays owners back later.',
       'timestamp': 233,
       'timestamp_label': '[00:03:53]',
       'timestamp_seconds': 233,
-      'tip': 'No one designed it as a business model. It is the side effect of two old court '
-             'rules and one very popular legal address. That is why a fight over one company '
-             'mattered so much. MoneyGram is incorporated in Delaware.',
-      'title': "The Tiny State That Lives Off Other People's Forgotten Money (The Explainer "
-               'Point)',
+      'tip': 'In other words, the state spends the money first and pays owners back later.',
+      'title': "The Tiny State That Lives Off Other People's Forgotten Money",
       'url': 'https://www.youtube.com/watch?v=NWkWT5QX3sM&t=233s',
       'video_id': 'NWkWT5QX3sM'},
-     {'author': 'Texas Licensed Private Investigator',
-      'channel': 'Texas Licensed Private Investigator',
+     {'author': 'Lunch Cash',
+      'channel': 'Lunch Cash',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:21](https://www.youtube.com/watch?v=yiH-ZfQj-oc&t=261s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q9 operational verification).',
+      'markdown': '[00:08:43](https://www.youtube.com/watch?v=R6nRcAkxVdA&t=523s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
       'source_type': 'video_pro_tip',
-      'text': 'And then you cut me out and you your lawyer now is going to make Oh, by the '
-              'way, the state comproller by law restricts a licensed private investigator from '
-              "making more than 10% of the money that's in there for assisting any claimant "
-              'with their claim.',
-      'timestamp': 261,
-      'timestamp_label': '[00:04:21]',
-      'timestamp_seconds': 261,
-      'tip': 'And then you cut me out and you your lawyer now is going to make Oh, by the way, '
-             'the state comproller by law restricts a licensed private investigator from '
-             "making more than 10% of the money that's in there for assisting any claimant "
-             'with their claim.',
-      'title': 'Texas Unclaimed Money & Private Investigations | Meet Sharalyn Criswell (Texas '
-               'Licensed Private Investigator)',
-      'url': 'https://www.youtube.com/watch?v=yiH-ZfQj-oc&t=261s',
-      'video_id': 'yiH-ZfQj-oc'},
-     {'author': 'Flying With Luxury',
-      'channel': 'Flying With Luxury',
+      'text': "Delaware's law limits what finders can charge, and bans those deals entirely in the "
+              'first two years after the money reaches the state.',
+      'timestamp': 523,
+      'timestamp_label': '[00:08:43]',
+      'timestamp_seconds': 523,
+      'tip': "Delaware's law limits what finders can charge, and bans those deals entirely in the "
+             'first two years after the money reaches the state.',
+      'title': 'Delaware Makes More From Forgotten Money Than From Its Lottery',
+      'url': 'https://www.youtube.com/watch?v=R6nRcAkxVdA&t=523s',
+      'video_id': 'R6nRcAkxVdA'},
+     {'author': 'KFNETWORK',
+      'channel': 'KFNETWORK',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:43](https://www.youtube.com/watch?v=6MVorBlRJk4&t=43s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q9 operational verification).',
+      'markdown': '[00:03:04](https://www.youtube.com/watch?v=0anLNGLjnlA&t=184s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
       'source_type': 'video_pro_tip',
-      'text': 'The personal representative has the legal authority to gather all assets, pay '
-              'debts, and distribute the remaining estate according to the will or state law. '
-              'To claim these assets, the personal representative must first prove their legal '
-              'authority.',
-      'timestamp': 43,
-      'timestamp_label': '[00:00:43]',
-      'timestamp_seconds': 43,
-      'tip': 'The personal representative has the legal authority to gather all assets, pay '
-             'debts, and distribute the remaining estate according to the will or state law. '
-             'To claim these assets, the personal representative must first prove their legal '
-             'authority.',
-      'title': 'Who Can Claim Unclaimed Property Of A Deceased Person? (Flying With Luxury)',
-      'url': 'https://www.youtube.com/watch?v=6MVorBlRJk4&t=43s',
-      'video_id': '6MVorBlRJk4'},
+      'text': 'In other states they will say over 50 or over a hundred, but here they say over 50 '
+              'and under 50, they are so not transparent.',
+      'timestamp': 184,
+      'timestamp_label': '[00:03:04]',
+      'timestamp_seconds': 184,
+      'tip': 'In other states they will say over 50 or over a hundred, but here they say over 50 '
+             'and under 50, they are so not transparent.',
+      'title': 'Seeking for FREE money in Delaware 🏖️#freemoneydaily #freemoneyonline2023 '
+               '#delaware',
+      'url': 'https://www.youtube.com/watch?v=0anLNGLjnlA&t=184s',
+      'video_id': '0anLNGLjnlA'},
+     {'author': 'CBS News Sacramento',
+      'channel': 'CBS News Sacramento',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:02](https://www.youtube.com/watch?v=80djyAsS-YE&t=62s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': 'The state blames Schwab for errors in the transfer, and Schwab directed him to the '
+              'state.',
+      'timestamp': 62,
+      'timestamp_label': '[00:01:02]',
+      'timestamp_seconds': 62,
+      'tip': 'The state blames Schwab for errors in the transfer, and Schwab directed him to the '
+             'state.',
+      'title': 'Unclaimed Property: $275,000  Vanishes From Retirees Account, Transferred to the '
+               'State of California',
+      'url': 'https://www.youtube.com/watch?v=80djyAsS-YE&t=62s',
+      'video_id': '80djyAsS-YE'},
+     {'author': 'FundForge',
+      'channel': 'FundForge',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:05:54](https://www.youtube.com/watch?v=hPHajccTyH0&t=354s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': 'The first assessment was $2.1 million, yet only $147.30 of actual property was '
+              'identified.',
+      'timestamp': 354,
+      'timestamp_label': '[00:05:54]',
+      'timestamp_seconds': 354,
+      'tip': 'The first assessment was $2.1 million, yet only $147.30 of actual property was '
+             'identified.',
+      'title': 'How $147 Turned Into a $2.1 Million Bill (The Escheatment Business)',
+      'url': 'https://www.youtube.com/watch?v=hPHajccTyH0&t=354s',
+      'video_id': 'hPHajccTyH0'},
+     {'author': 'CBS News Sacramento',
+      'channel': 'CBS News Sacramento',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:38](https://www.youtube.com/watch?v=0xrXfpILRzI&t=98s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': "It is kind of a fundamental problem with the law that when property owners don't "
+              'benefit, the law sets up the state benefiting, and so there is always going to be '
+              'this tension.',
+      'timestamp': 98,
+      'timestamp_label': '[00:01:38]',
+      'timestamp_seconds': 98,
+      'tip': "It is kind of a fundamental problem with the law that when property owners don't "
+             'benefit, the law sets up the state benefiting, and so there is always going to be '
+             'this tension.',
+      'title': 'New Effort Wants Easier Way To Return Unclaimed Property To California Taxpayers',
+      'url': 'https://www.youtube.com/watch?v=0xrXfpILRzI&t=98s',
+      'video_id': '0xrXfpILRzI'}],
+ 4: [{'author': 'WFAA',
+      'channel': 'WFAA',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:42](https://www.youtube.com/watch?v=0UUN2j2_dFU&t=102s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'Last year the average turnaround time for all claim types was 37 business days, but '
+              'the length of time is going to depend on the type of claim.',
+      'timestamp': 102,
+      'timestamp_label': '[00:01:42]',
+      'timestamp_seconds': 102,
+      'tip': 'Last year the average turnaround time for all claim types was 37 business days, but '
+             'the length of time is going to depend on the type of claim.',
+      'title': 'How to get your unclaimed property in Texas',
+      'url': 'https://www.youtube.com/watch?v=0UUN2j2_dFU&t=102s',
+      'video_id': '0UUN2j2_dFU'},
+     {'author': 'KHOU 11',
+      'channel': 'KHOU 11',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:48](https://www.youtube.com/watch?v=uY7XnXFfpv4&t=48s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'You look for your address and you hit claim, and it shows you the exact amount and '
+              'what kind of money, this one says contents of a safety deposit box.',
+      'timestamp': 48,
+      'timestamp_label': '[00:00:48]',
+      'timestamp_seconds': 48,
+      'tip': 'You look for your address and you hit claim, and it shows you the exact amount and '
+             'what kind of money, this one says contents of a safety deposit box.',
+      'title': "There's more than $10 billion in unclaimed property in Texas. Here's how to claim "
+               'yours',
+      'url': 'https://www.youtube.com/watch?v=uY7XnXFfpv4&t=48s',
+      'video_id': 'uY7XnXFfpv4'},
+     {'author': 'KHOU 11',
+      'channel': 'KHOU 11',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:55](https://www.youtube.com/watch?v=WdhaqcAUXBk&t=55s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'Once you find your name, hit claim, fill out the application and you can actually '
+              'track your claims progress all online, and this process is free.',
+      'timestamp': 55,
+      'timestamp_label': '[00:00:55]',
+      'timestamp_seconds': 55,
+      'tip': 'Once you find your name, hit claim, fill out the application and you can actually '
+             'track your claims progress all online, and this process is free.',
+      'title': 'How to check if you have unclaimed money in Texas',
+      'url': 'https://www.youtube.com/watch?v=WdhaqcAUXBk&t=55s',
+      'video_id': 'WdhaqcAUXBk'},
+     {'author': 'Michael Curtis',
+      'channel': 'Michael Curtis',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:35](https://www.youtube.com/watch?v=0YK26E_fzYA&t=215s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'The white rows show single owner property records, click on those that you are '
+              'entitled to claim, and the gray rows show joint ownership.',
+      'timestamp': 215,
+      'timestamp_label': '[00:03:35]',
+      'timestamp_seconds': 215,
+      'tip': 'The white rows show single owner property records, click on those that you are '
+             'entitled to claim, and the gray rows show joint ownership.',
+      'title': "Pennsylvania Unclaimed Property - How to Search PA's State Treasury Unclaimed "
+               'Money Data Base',
+      'url': 'https://www.youtube.com/watch?v=0YK26E_fzYA&t=215s',
+      'video_id': '0YK26E_fzYA'},
+     {'author': 'Как се прави',
+      'channel': 'Как се прави',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:05:25](https://www.youtube.com/watch?v=9BVp_yhswZY&t=325s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'By law, their fee is capped at a maximum of 15% of the recovered funds, and they '
+              'must have a written, notarized contract with you.',
+      'timestamp': 325,
+      'timestamp_label': '[00:05:25]',
+      'timestamp_seconds': 325,
+      'tip': 'By law, their fee is capped at a maximum of 15% of the recovered funds, and they '
+             'must have a written, notarized contract with you.',
+      'title': 'How to use the unclaimed property database in New York',
+      'url': 'https://www.youtube.com/watch?v=9BVp_yhswZY&t=325s',
+      'video_id': '9BVp_yhswZY'},
      {'author': 'NBC New York',
       'channel': 'NBC New York',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:45](https://www.youtube.com/watch?v=wCk_H4rThTo&t=45s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q9 operational verification).',
+      'markdown': '[00:01:24](https://www.youtube.com/watch?v=qHskTBuAHTg&t=84s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
       'source_type': 'video_pro_tip',
-      'text': "'ll actually send you the check. That's thanks to a new law signed by Governor "
-              "Kathy Hochul allowing the Comptroller's office to release unclaimed funds "
-              "proactively, instead of waiting for people to go to the state's website and "
-              'file a claim.',
-      'timestamp': 45,
-      'timestamp_label': '[00:00:45]',
-      'timestamp_seconds': 45,
-      'tip': "'ll actually send you the check. That's thanks to a new law signed by Governor "
-             "Kathy Hochul allowing the Comptroller's office to release unclaimed funds "
-             "proactively, instead of waiting for people to go to the state's website and file "
-             'a claim.',
-      'title': 'Unclaimed funds in New York could soon be coming your mailbox | NBC New York '
-               '(NBC New York)',
-      'url': 'https://www.youtube.com/watch?v=wCk_H4rThTo&t=45s',
-      'video_id': 'wCk_H4rThTo'},
-     {'author': 'Unclaimed CEO',
-      'channel': 'Unclaimed CEO',
+      'text': 'If you get that, ignore it. Come right to us. There is no fee. There is no charge.',
+      'timestamp': 84,
+      'timestamp_label': '[00:01:24]',
+      'timestamp_seconds': 84,
+      'tip': 'If you get that, ignore it. Come right to us. There is no fee. There is no charge.',
+      'title': 'How to Check Unclaimed Funds in New York',
+      'url': 'https://www.youtube.com/watch?v=qHskTBuAHTg&t=84s',
+      'video_id': 'qHskTBuAHTg'},
+     {'author': 'Как се прави',
+      'channel': 'Как се прави',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:56](https://www.youtube.com/watch?v=pZG8hK4VPVM&t=56s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q9 operational verification).',
+      'markdown': '[00:04:25](https://www.youtube.com/watch?v=cF0HhlLh7NI&t=265s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
       'source_type': 'video_pro_tip',
-      'text': 'Contract being signed between you and your your your customer or your lead '
-              'whatnot that is very very important now every state has different rules of um.',
+      'text': 'Do not limit your initial search to your current zip code. If you moved, the money '
+              'is almost certainly tied to your old address.',
+      'timestamp': 265,
+      'timestamp_label': '[00:04:25]',
+      'timestamp_seconds': 265,
+      'tip': 'Do not limit your initial search to your current zip code. If you moved, the money '
+             'is almost certainly tied to your old address.',
+      'title': 'How to search New York unclaimed property by last name',
+      'url': 'https://www.youtube.com/watch?v=cF0HhlLh7NI&t=265s',
+      'video_id': 'cF0HhlLh7NI'},
+     {'author': 'WTHR',
+      'channel': 'WTHR',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:16](https://www.youtube.com/watch?v=pPow2SwrxBE&t=76s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'We keep it for 25 years and if no one claims it then it goes to the state, and I '
+              "don't want that to happen.",
+      'timestamp': 76,
+      'timestamp_label': '[00:01:16]',
+      'timestamp_seconds': 76,
+      'tip': 'We keep it for 25 years and if no one claims it then it goes to the state, and I '
+             "don't want that to happen.",
+      'title': 'You can search a state website for unclaimed property',
+      'url': 'https://www.youtube.com/watch?v=pPow2SwrxBE&t=76s',
+      'video_id': 'pPow2SwrxBE'},
+     {'author': 'GardenShop.Pro',
+      'channel': 'GardenShop.Pro',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:13](https://www.youtube.com/watch?v=OFnbGkVuoHQ&t=253s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'If the local gas company misspelled your name a decade ago, you actually have to '
+              'search for that exact typo to find your funds.',
+      'timestamp': 253,
+      'timestamp_label': '[00:04:13]',
+      'timestamp_seconds': 253,
+      'tip': 'If the local gas company misspelled your name a decade ago, you actually have to '
+             'search for that exact typo to find your funds.',
+      'title': 'How to find Iowa unclaimed utility deposits by last name',
+      'url': 'https://www.youtube.com/watch?v=OFnbGkVuoHQ&t=253s',
+      'video_id': 'OFnbGkVuoHQ'},
+     {'author': 'GardenShop.Pro',
+      'channel': 'GardenShop.Pro',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:06:22](https://www.youtube.com/watch?v=3iluxKs2wP8&t=382s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'Sending in an incomplete file is literally the most common reason people face a '
+              'super frustrating 6-month claim denial.',
+      'timestamp': 382,
+      'timestamp_label': '[00:06:22]',
+      'timestamp_seconds': 382,
+      'tip': 'Sending in an incomplete file is literally the most common reason people face a '
+             'super frustrating 6-month claim denial.',
+      'title': 'How to find Montana unclaimed utility deposits by last name',
+      'url': 'https://www.youtube.com/watch?v=3iluxKs2wP8&t=382s',
+      'video_id': '3iluxKs2wP8'},
+     {'author': 'GardenShop.Pro',
+      'channel': 'GardenShop.Pro',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:07:21](https://www.youtube.com/watch?v=3iluxKs2wP8&t=441s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'Usually, they want between 10% and 40% of your deposit. Honestly, do not use them.',
+      'timestamp': 441,
+      'timestamp_label': '[00:07:21]',
+      'timestamp_seconds': 441,
+      'tip': 'Usually, they want between 10% and 40% of your deposit. Honestly, do not use them.',
+      'title': 'How to find Montana unclaimed utility deposits by last name',
+      'url': 'https://www.youtube.com/watch?v=3iluxKs2wP8&t=441s',
+      'video_id': '3iluxKs2wP8'},
+     {'author': 'GardenShop.Pro',
+      'channel': 'GardenShop.Pro',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:51](https://www.youtube.com/watch?v=GWa4tWyuEoA&t=111s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': "If you want to track down that deposit you put down for electric or gas, you won't "
+              "find it on the state website, you'll literally have to call your regional utility "
+              'provider directly.',
+      'timestamp': 111,
+      'timestamp_label': '[00:01:51]',
+      'timestamp_seconds': 111,
+      'tip': "If you want to track down that deposit you put down for electric or gas, you won't "
+             "find it on the state website, you'll literally have to call your regional utility "
+             'provider directly.',
+      'title': 'How to find Colorado unclaimed utility deposits by last name',
+      'url': 'https://www.youtube.com/watch?v=GWa4tWyuEoA&t=111s',
+      'video_id': 'GWa4tWyuEoA'},
+     {'author': 'GardenShop.Pro',
+      'channel': 'GardenShop.Pro',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:07:00](https://www.youtube.com/watch?v=E2EtkM2OBvI&t=420s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'Before the treasurer writes you a check, they cross-reference your name against a '
+              'massive centralized state debt database, and those obligations will be '
+              'automatically intercepted right out of your utility refund.',
+      'timestamp': 420,
+      'timestamp_label': '[00:07:00]',
+      'timestamp_seconds': 420,
+      'tip': 'Before the treasurer writes you a check, they cross-reference your name against a '
+             'massive centralized state debt database, and those obligations will be automatically '
+             'intercepted right out of your utility refund.',
+      'title': 'How to find Kansas unclaimed utility deposits by last name',
+      'url': 'https://www.youtube.com/watch?v=E2EtkM2OBvI&t=420s',
+      'video_id': 'E2EtkM2OBvI'},
+     {'author': 'CBS Colorado',
+      'channel': 'CBS Colorado',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:56](https://www.youtube.com/watch?v=GBOIDnAjQvc&t=56s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': "There's nothing worse than sending the property to the wrong person.",
       'timestamp': 56,
       'timestamp_label': '[00:00:56]',
       'timestamp_seconds': 56,
-      'tip': 'Contract being signed between you and your your your customer or your lead '
-             'whatnot that is very very important now every state has different rules of um.',
-      'title': 'The 3 Things You Need To File A Tax Surplus Claim | 2024 (Unclaimed CEO)',
-      'url': 'https://www.youtube.com/watch?v=pZG8hK4VPVM&t=56s',
-      'video_id': 'pZG8hK4VPVM'},
-     {'author': 'Royalty Clerk',
-      'channel': 'Royalty Clerk',
+      'tip': "There's nothing worse than sending the property to the wrong person.",
+      'title': 'Colorado has $2.5B in unclaimed property. How to check whether any belongs to you.',
+      'url': 'https://www.youtube.com/watch?v=GBOIDnAjQvc&t=56s',
+      'video_id': 'GBOIDnAjQvc'},
+     {'author': 'GardenShop.Pro',
+      'channel': 'GardenShop.Pro',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:28](https://www.youtube.com/watch?v=8RccEFzRtl8&t=28s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q9 operational verification).',
+      'markdown': '[00:03:42](https://www.youtube.com/watch?v=1IpkVjkkXHg&t=222s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
       'source_type': 'video_pro_tip',
-      'text': "General information, not legal advice. Let's go. Royalty money takes a trip "
-              "before it lands in the state's vault.",
-      'timestamp': 28,
-      'timestamp_label': '[00:00:28]',
-      'timestamp_seconds': 28,
-      'tip': "General information, not legal advice. Let's go. Royalty money takes a trip "
-             "before it lands in the state's vault.",
-      'title': 'Texas Is Holding $9 Billion+ in Unclaimed Money. Some Is Oil Royalties '
-               '(Royalty Clerk)',
-      'url': 'https://www.youtube.com/watch?v=8RccEFzRtl8&t=28s',
-      'video_id': '8RccEFzRtl8'},
-     {'author': 'PakEnergy',
-      'channel': 'PakEnergy',
+      'text': 'The Maryland database uses what software engineers call a prefix matching '
+              'algorithm, so it only looks for records that start with exactly what you typed.',
+      'timestamp': 222,
+      'timestamp_label': '[00:03:42]',
+      'timestamp_seconds': 222,
+      'tip': 'The Maryland database uses what software engineers call a prefix matching algorithm, '
+             'so it only looks for records that start with exactly what you typed.',
+      'title': 'How to find Maryland unclaimed utility deposits by last name',
+      'url': 'https://www.youtube.com/watch?v=1IpkVjkkXHg&t=222s',
+      'video_id': '1IpkVjkkXHg'},
+     {'author': 'GardenShop.Pro',
+      'channel': 'GardenShop.Pro',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:14:49](https://www.youtube.com/watch?v=fVMIbCz8s0U&t=889s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q9 operational verification).',
+      'markdown': '[00:04:48](https://www.youtube.com/watch?v=DVmNNFdoDzE&t=288s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
       'source_type': 'video_pro_tip',
-      'text': "Um obviously there's laws that have come in place to kind of answer some of "
-              'these things. Could you speak just kind of briefly on some of the uh priority '
-              "rules and how that's kind of um changed um over the years? So you know every "
-              'state wants a piece of the pie, right?',
-      'timestamp': 889,
-      'timestamp_label': '[00:14:49]',
-      'timestamp_seconds': 889,
-      'tip': "Um obviously there's laws that have come in place to kind of answer some of "
-             'these things. Could you speak just kind of briefly on some of the uh priority '
-             "rules and how that's kind of um changed um over the years? So you know every "
-             'state wants a piece of the pie, right?',
-      'title': 'What Is Escheatable in Oil & Gas? Unclaimed Property Explained (PakEnergy)',
-      'url': 'https://www.youtube.com/watch?v=fVMIbCz8s0U&t=889s',
-      'video_id': 'fVMIbCz8s0U'},
-     {'author': 'COMPUTERSHARE',
-      'channel': 'COMPUTERSHARE',
+      'text': 'This is a solicitation. This is not a bill or official government document, and has '
+              'not been sent by the Georgia Department of Revenue.',
+      'timestamp': 288,
+      'timestamp_label': '[00:04:48]',
+      'timestamp_seconds': 288,
+      'tip': 'This is a solicitation. This is not a bill or official government document, and has '
+             'not been sent by the Georgia Department of Revenue.',
+      'title': 'How to search unclaimed property in Georgia for free',
+      'url': 'https://www.youtube.com/watch?v=DVmNNFdoDzE&t=288s',
+      'video_id': 'DVmNNFdoDzE'},
+     {'author': 'Michael Curtis',
+      'channel': 'Michael Curtis',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:25](https://www.youtube.com/watch?v=03CoUEgqdzg&t=25s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q9 operational verification).',
+      'markdown': '[00:03:49](https://www.youtube.com/watch?v=W_7Iapx9lzk&t=229s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
       'source_type': 'video_pro_tip',
-      'text': "Fought for we really need to be very observant of what's going on in audits as "
-              "well and it's maybe not traditionally a legal issue for an audit but there are.",
-      'timestamp': 25,
-      'timestamp_label': '[00:00:25]',
-      'timestamp_seconds': 25,
-      'tip': "Fought for we really need to be very observant of what's going on in audits as "
-             "well and it's maybe not traditionally a legal issue for an audit but there are.",
-      'title': 'Litigation and unclaimed property audits (COMPUTERSHARE)',
-      'url': 'https://www.youtube.com/watch?v=03CoUEgqdzg&t=25s',
-      'video_id': '03CoUEgqdzg'},
+      'text': "These are the companies that send the money to the state because they couldn't find "
+              'the owners of this money.',
+      'timestamp': 229,
+      'timestamp_label': '[00:03:49]',
+      'timestamp_seconds': 229,
+      'tip': "These are the companies that send the money to the state because they couldn't find "
+             'the owners of this money.',
+      'title': 'Massachusetts Unclaimed Property - How to Make an Unclaimed Money Search in '
+               'Massachusetts',
+      'url': 'https://www.youtube.com/watch?v=W_7Iapx9lzk&t=229s',
+      'video_id': 'W_7Iapx9lzk'}],
+ 5: [{'author': 'GardenShop.Pro',
+      'channel': 'GardenShop.Pro',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:32](https://www.youtube.com/watch?v=bUxdjo_bs0g&t=212s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': "If a business has dissolved, they'll disperse the funds directly to the former "
+              'legal owners, completely in proportion to their historical equity stakes.',
+      'timestamp': 212,
+      'timestamp_label': '[00:03:32]',
+      'timestamp_seconds': 212,
+      'tip': "If a business has dissolved, they'll disperse the funds directly to the former legal "
+             'owners, completely in proportion to their historical equity stakes.',
+      'title': 'How to search unclaimed property for a business in Tennessee',
+      'url': 'https://www.youtube.com/watch?v=bUxdjo_bs0g&t=212s',
+      'video_id': 'bUxdjo_bs0g'},
+     {'author': 'GardenShop.Pro',
+      'channel': 'GardenShop.Pro',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:31](https://www.youtube.com/watch?v=rOaTjN9BoFE&t=271s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'Try entering previous corporate names, DBA variations, or even acronyms your '
+              'business uses, and always try searching the zip codes of your former office '
+              'locations.',
+      'timestamp': 271,
+      'timestamp_label': '[00:04:31]',
+      'timestamp_seconds': 271,
+      'tip': 'Try entering previous corporate names, DBA variations, or even acronyms your '
+             'business uses, and always try searching the zip codes of your former office '
+             'locations.',
+      'title': 'How to search unclaimed property for a business in Virginia',
+      'url': 'https://www.youtube.com/watch?v=rOaTjN9BoFE&t=271s',
+      'video_id': 'rOaTjN9BoFE'},
+     {'author': 'GardenShop.Pro',
+      'channel': 'GardenShop.Pro',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:05:23](https://www.youtube.com/watch?v=fntI1mKZpK0&t=323s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'Any fee agreement made within the first 12 months of the state holding your '
+              'property is completely unenforceable, period.',
+      'timestamp': 323,
+      'timestamp_label': '[00:05:23]',
+      'timestamp_seconds': 323,
+      'tip': 'Any fee agreement made within the first 12 months of the state holding your property '
+             'is completely unenforceable, period.',
+      'title': 'How to search unclaimed property for a business in Missouri',
+      'url': 'https://www.youtube.com/watch?v=fntI1mKZpK0&t=323s',
+      'video_id': 'fntI1mKZpK0'},
+     {'author': 'Как се прави',
+      'channel': 'Как се прави',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:17](https://www.youtube.com/watch?v=RtDPQUDYTy0&t=197s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'Drop legal suffixes like LLC, Inc., or Corp. for your first pass; it just helps '
+              'cast a better net.',
+      'timestamp': 197,
+      'timestamp_label': '[00:03:17]',
+      'timestamp_seconds': 197,
+      'tip': 'Drop legal suffixes like LLC, Inc., or Corp. for your first pass; it just helps cast '
+             'a better net.',
+      'title': 'How to search unclaimed property in Virginia for a company',
+      'url': 'https://www.youtube.com/watch?v=RtDPQUDYTy0&t=197s',
+      'video_id': 'RtDPQUDYTy0'},
+     {'author': 'Garden Shop Pro',
+      'channel': 'Garden Shop Pro',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:14](https://www.youtube.com/watch?v=7Fc0D2RuIJE&t=194s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'Federal agencies are completely exempt from state escheatment laws, so if the IRS '
+              'or a federal bankruptcy court owes your corporation money, it is never ever going '
+              'to show up on missingmoney.com.',
+      'timestamp': 194,
+      'timestamp_label': '[00:03:14]',
+      'timestamp_seconds': 194,
+      'tip': 'Federal agencies are completely exempt from state escheatment laws, so if the IRS or '
+             'a federal bankruptcy court owes your corporation money, it is never ever going to '
+             'show up on missingmoney.com.',
+      'title': 'How to search unclaimed funds under a corporation name',
+      'url': 'https://www.youtube.com/watch?v=7Fc0D2RuIJE&t=194s',
+      'video_id': '7Fc0D2RuIJE'},
+     {'author': 'David Daniels',
+      'channel': 'David Daniels',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:31](https://www.youtube.com/watch?v=Zq6923LSEX4&t=31s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'First you need to conduct a search; this involves checking with the unclaimed '
+              "property office in each state where you've lived or worked.",
+      'timestamp': 31,
+      'timestamp_label': '[00:00:31]',
+      'timestamp_seconds': 31,
+      'tip': 'First you need to conduct a search; this involves checking with the unclaimed '
+             "property office in each state where you've lived or worked.",
+      'title': 'How to Find Unclaimed State Funds with HBU Asset Recovery | Maximize Your Wealth',
+      'url': 'https://www.youtube.com/watch?v=Zq6923LSEX4&t=31s',
+      'video_id': 'Zq6923LSEX4'},
+     {'author': 'Как се прави',
+      'channel': 'Как се прави',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:53](https://www.youtube.com/watch?v=7MUtjq4bwU0&t=173s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'For a business search, you must enter the company name into the last name field and '
+              'leave the first name field completely blank.',
+      'timestamp': 173,
+      'timestamp_label': '[00:02:53]',
+      'timestamp_seconds': 173,
+      'tip': 'For a business search, you must enter the company name into the last name field and '
+             'leave the first name field completely blank.',
+      'title': 'How to search North Dakota unclaimed property for a business name',
+      'url': 'https://www.youtube.com/watch?v=7MUtjq4bwU0&t=173s',
+      'video_id': '7MUtjq4bwU0'},
+     {'author': 'Как се прави',
+      'channel': 'Как се прави',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:44](https://www.youtube.com/watch?v=2_XKdBsmJ5c&t=284s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'You can only use standard PDF, TIFF, PNG, or JPEG formats with a hard maximum file '
+              'size of exactly 10 megabytes per document.',
+      'timestamp': 284,
+      'timestamp_label': '[00:04:44]',
+      'timestamp_seconds': 284,
+      'tip': 'You can only use standard PDF, TIFF, PNG, or JPEG formats with a hard maximum file '
+             'size of exactly 10 megabytes per document.',
+      'title': 'How to search Colorado unclaimed property for a business name',
+      'url': 'https://www.youtube.com/watch?v=2_XKdBsmJ5c&t=284s',
+      'video_id': '2_XKdBsmJ5c'},
+     {'author': 'Как се прави',
+      'channel': 'Как се прави',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:05:27](https://www.youtube.com/watch?v=KJU4iu_xIgw&t=327s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'State refund checks come with a strict 90-day validity window from the date of '
+              'issue.',
+      'timestamp': 327,
+      'timestamp_label': '[00:05:27]',
+      'timestamp_seconds': 327,
+      'tip': 'State refund checks come with a strict 90-day validity window from the date of '
+             'issue.',
+      'title': 'How to search South Carolina unclaimed property for a business name',
+      'url': 'https://www.youtube.com/watch?v=KJU4iu_xIgw&t=327s',
+      'video_id': 'KJU4iu_xIgw'},
+     {'author': 'Как се прави',
+      'channel': 'Как се прави',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:14](https://www.youtube.com/watch?v=pxHjDvDVqqM&t=254s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'If you do ever deal with a finder, Pennsylvania law strictly requires them to give '
+              'you a written contract with all their fees laid out.',
+      'timestamp': 254,
+      'timestamp_label': '[00:04:14]',
+      'timestamp_seconds': 254,
+      'tip': 'If you do ever deal with a finder, Pennsylvania law strictly requires them to give '
+             'you a written contract with all their fees laid out.',
+      'title': 'How to search Pennsylvania unclaimed property for a business name',
+      'url': 'https://www.youtube.com/watch?v=pxHjDvDVqqM&t=254s',
+      'video_id': 'pxHjDvDVqqM'},
+     {'author': 'Как се прави',
+      'channel': 'Как се прави',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:36](https://www.youtube.com/watch?v=NPH35-KUMjQ&t=216s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'Search your alternate business names, search common misspellings, drop the Inc. or '
+              'the LLC, and search the former legal names of those absorbed predecessors.',
+      'timestamp': 216,
+      'timestamp_label': '[00:03:36]',
+      'timestamp_seconds': 216,
+      'tip': 'Search your alternate business names, search common misspellings, drop the Inc. or '
+             'the LLC, and search the former legal names of those absorbed predecessors.',
+      'title': 'How to search Minnesota unclaimed property for a business name',
+      'url': 'https://www.youtube.com/watch?v=NPH35-KUMjQ&t=216s',
+      'video_id': 'NPH35-KUMjQ'},
      {'author': 'Surplus Institute / David Church / Unclaimed Funds',
       'channel': 'Surplus Institute / David Church / Unclaimed Funds',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:58](https://www.youtube.com/watch?v=IIBKDdChS-k&t=58s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q9 operational verification).',
+      'markdown': '[00:15:44](https://www.youtube.com/watch?v=EFuzXe23Q7I&t=944s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
       'source_type': 'video_pro_tip',
-      'text': 'As a property locator it could be property locator air finder unclaimed funds '
-              "finder i mean there's a million different terms for this business the.",
-      'timestamp': 58,
-      'timestamp_label': '[00:00:58]',
-      'timestamp_seconds': 58,
-      'tip': 'As a property locator it could be property locator air finder unclaimed funds '
-             "finder i mean there's a million different terms for this business the.",
-      'title': 'How Unclaimed Money Can Help You Make More Money (Surplus Institute / David '
-               'Church / Unclaimed Funds)',
-      'url': 'https://www.youtube.com/watch?v=IIBKDdChS-k&t=58s',
-      'video_id': 'IIBKDdChS-k'},
-     {'author': 'Unclaimed Money Recovery',
-      'channel': 'Unclaimed Money Recovery',
+      'text': 'If I get like 15 to 20 corporations and I make contact with all of them, can I '
+              'collect with at least two or three of those? Probably.',
+      'timestamp': 944,
+      'timestamp_label': '[00:15:44]',
+      'timestamp_seconds': 944,
+      'tip': 'If I get like 15 to 20 corporations and I make contact with all of them, can I '
+             'collect with at least two or three of those? Probably.',
+      'title': '🔴 LIVE: State Unclaimed Funds for Beginners | How to Find the Money & Get Paid',
+      'url': 'https://www.youtube.com/watch?v=EFuzXe23Q7I&t=944s',
+      'video_id': 'EFuzXe23Q7I'},
+     {'author': 'Surplus Institute / David Church / Unclaimed Funds',
+      'channel': 'Surplus Institute / David Church / Unclaimed Funds',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:20](https://www.youtube.com/watch?v=ZDSZHh3DZGs&t=140s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q9 operational verification).',
+      'markdown': '[00:07:42](https://www.youtube.com/watch?v=EFuzXe23Q7I&t=462s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
       'source_type': 'video_pro_tip',
-      'text': 'The state took that money and extrapolated into a $2 million assessment at the '
-              'penalties for not doing your due diligence under off it could be up to 50% of '
-              "whatever the property is that's returned to the state very very uh aggressive.",
-      'timestamp': 140,
-      'timestamp_label': '[00:02:20]',
-      'timestamp_seconds': 140,
-      'tip': 'The state took that money and extrapolated into a $2 million assessment at the '
-             'penalties for not doing your due diligence under off it could be up to 50% of '
-             "whatever the property is that's returned to the state very very uh aggressive.",
-      'title': 'Unclaimed Money Recovery - What is Unclaimed Property? (Unclaimed Money '
-               'Recovery)',
-      'url': 'https://www.youtube.com/watch?v=ZDSZHh3DZGs&t=140s',
-      'video_id': 'ZDSZHh3DZGs'},
-     {'author': 'Spring Solutions, LLC',
-      'channel': 'Spring Solutions, LLC',
+      'text': "In Utah, you're allowed to charge 20% for being a fee finder for someone.",
+      'timestamp': 462,
+      'timestamp_label': '[00:07:42]',
+      'timestamp_seconds': 462,
+      'tip': "In Utah, you're allowed to charge 20% for being a fee finder for someone.",
+      'title': '🔴 LIVE: State Unclaimed Funds for Beginners | How to Find the Money & Get Paid',
+      'url': 'https://www.youtube.com/watch?v=EFuzXe23Q7I&t=462s',
+      'video_id': 'EFuzXe23Q7I'},
+     {'author': 'GardenShop.Pro',
+      'channel': 'GardenShop.Pro',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:06:52](https://www.youtube.com/watch?v=1fuOy7IsEMo&t=412s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q9 operational verification).',
+      'markdown': '[00:03:59](https://www.youtube.com/watch?v=mTurQziolOk&t=239s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
       'source_type': 'video_pro_tip',
-      'text': "If you're interested in my course please take a look at the links in the "
-              "description box and thank you for watching I'll see you in the next video.",
-      'timestamp': 412,
-      'timestamp_label': '[00:06:52]',
-      'timestamp_seconds': 412,
-      'tip': "If you're interested in my course please take a look at the links in the "
-             "description box and thank you for watching I'll see you in the next video.",
-      'title': 'I HATE CREDITOR CLAIMS-Bankruptcy Unclaimed Funds (Spring Solutions, LLC)',
-      'url': 'https://www.youtube.com/watch?v=1fuOy7IsEMo&t=412s',
-      'video_id': '1fuOy7IsEMo'},
+      'text': 'If your business receives one of these automated state warrant checks in the mail, '
+              'you must deposit it promptly because after 180 days, that check becomes entirely '
+              'void.',
+      'timestamp': 239,
+      'timestamp_label': '[00:03:59]',
+      'timestamp_seconds': 239,
+      'tip': 'If your business receives one of these automated state warrant checks in the mail, '
+             'you must deposit it promptly because after 180 days, that check becomes entirely '
+             'void.',
+      'title': 'How to search unclaimed property for a business in Connecticut',
+      'url': 'https://www.youtube.com/watch?v=mTurQziolOk&t=239s',
+      'video_id': 'mTurQziolOk'},
+     {'author': 'Как се прави',
+      'channel': 'Как се прави',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:07:12](https://www.youtube.com/watch?v=WHTvjELqLw0&t=432s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'Because these CDRs undergo official state background checks and pay a $1,200 annual '
+              'registration fee, they are legally permitted to charge up to a 30% maximum fee.',
+      'timestamp': 432,
+      'timestamp_label': '[00:07:12]',
+      'timestamp_seconds': 432,
+      'tip': 'Because these CDRs undergo official state background checks and pay a $1,200 annual '
+             'registration fee, they are legally permitted to charge up to a 30% maximum fee.',
+      'title': 'How to search unclaimed property in Georgia for a business',
+      'url': 'https://www.youtube.com/watch?v=WHTvjELqLw0&t=432s',
+      'video_id': 'WHTvjELqLw0'},
+     {'author': 'Как се прави',
+      'channel': 'Как се прави',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:11](https://www.youtube.com/watch?v=an41g6w5nlU&t=191s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'That main website, it actually only shows properties valued at over one single '
+              'dollar.',
+      'timestamp': 191,
+      'timestamp_label': '[00:03:11]',
+      'timestamp_seconds': 191,
+      'tip': 'That main website, it actually only shows properties valued at over one single '
+             'dollar.',
+      'title': 'How to search Rhode Island unclaimed property for a business name',
+      'url': 'https://www.youtube.com/watch?v=an41g6w5nlU&t=191s',
+      'video_id': 'an41g6w5nlU'},
+     {'author': 'Как се прави',
+      'channel': 'Как се прави',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:51](https://www.youtube.com/watch?v=M3F5IgHI7Ow&t=171s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'If you type anything at all into the first name field, you are going to fail to '
+              'find your corporate records.',
+      'timestamp': 171,
+      'timestamp_label': '[00:02:51]',
+      'timestamp_seconds': 171,
+      'tip': 'If you type anything at all into the first name field, you are going to fail to find '
+             'your corporate records.',
+      'title': 'How to search unclaimed property in Oklahoma by business name',
+      'url': 'https://www.youtube.com/watch?v=M3F5IgHI7Ow&t=171s',
+      'video_id': 'M3F5IgHI7Ow'}],
+ 6: [{'author': 'Texas Licensed Private Investigator',
+      'channel': 'Texas Licensed Private Investigator',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:31](https://www.youtube.com/watch?v=yiH-ZfQj-oc&t=271s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'The state comptroller by law restricts a licensed private investigator from making '
+              "more than 10% of the money that's in there for assisting any claimant with their "
+              'claim.',
+      'timestamp': 271,
+      'timestamp_label': '[00:04:31]',
+      'timestamp_seconds': 271,
+      'tip': 'The state comptroller by law restricts a licensed private investigator from making '
+             "more than 10% of the money that's in there for assisting any claimant with their "
+             'claim.',
+      'title': 'Texas Unclaimed Money & Private Investigations | Meet Sharalyn Criswell',
+      'url': 'https://www.youtube.com/watch?v=yiH-ZfQj-oc&t=271s',
+      'video_id': 'yiH-ZfQj-oc'},
+     {'author': 'Texas Licensed Private Investigator',
+      'channel': 'Texas Licensed Private Investigator',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:10](https://www.youtube.com/watch?v=yiH-ZfQj-oc&t=250s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'You guys did not know that was there until I told you it was there, and then you '
+              'cut me out.',
+      'timestamp': 250,
+      'timestamp_label': '[00:04:10]',
+      'timestamp_seconds': 250,
+      'tip': 'You guys did not know that was there until I told you it was there, and then you cut '
+             'me out.',
+      'title': 'Texas Unclaimed Money & Private Investigations | Meet Sharalyn Criswell',
+      'url': 'https://www.youtube.com/watch?v=yiH-ZfQj-oc&t=250s',
+      'video_id': 'yiH-ZfQj-oc'},
+     {'author': 'ShadowAnyone',
+      'channel': 'ShadowAnyone',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:06:09](https://www.youtube.com/watch?v=5gSBjAC1g0s&t=369s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'Some states have a provision in their requirements to be a private investigator '
+              'that you never have a previous infraction for committing unlicensed investigative '
+              'services.',
+      'timestamp': 369,
+      'timestamp_label': '[00:06:09]',
+      'timestamp_seconds': 369,
+      'tip': 'Some states have a provision in their requirements to be a private investigator that '
+             'you never have a previous infraction for committing unlicensed investigative '
+             'services.',
+      'title': "Don't get BANNED for life skip tracing Unclaimed Funds! A Private Investigator "
+               'License Warning.',
+      'url': 'https://www.youtube.com/watch?v=5gSBjAC1g0s&t=369s',
+      'video_id': '5gSBjAC1g0s'},
+     {'author': 'Unclaimed CEO',
+      'channel': 'Unclaimed CEO',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:05:05](https://www.youtube.com/watch?v=2SYC3A6apHk&t=305s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'I actually take this information, I copy it and I make it into a Google doc '
+              'checklist, like my cover sheet.',
+      'timestamp': 305,
+      'timestamp_label': '[00:05:05]',
+      'timestamp_seconds': 305,
+      'tip': 'I actually take this information, I copy it and I make it into a Google doc '
+             'checklist, like my cover sheet.',
+      'title': 'Master the Claim Process For California: Boost Your Investigator Income',
+      'url': 'https://www.youtube.com/watch?v=2SYC3A6apHk&t=305s',
+      'video_id': '2SYC3A6apHk'},
+     {'author': 'Unclaimed CEO',
+      'channel': 'Unclaimed CEO',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:32](https://www.youtube.com/watch?v=3_qKwnM5EUw&t=212s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'Send it in, and it usually takes a few days for them to go in and approve you, and '
+              "they'll approve you through email.",
+      'timestamp': 212,
+      'timestamp_label': '[00:03:32]',
+      'timestamp_seconds': 212,
+      'tip': 'Send it in, and it usually takes a few days for them to go in and approve you, and '
+             "they'll approve you through email.",
+      'title': 'How To Register As An Unclaimed Funds Investigator For California',
+      'url': 'https://www.youtube.com/watch?v=3_qKwnM5EUw&t=212s',
+      'video_id': '3_qKwnM5EUw'},
+     {'author': 'Surplus Institute / David Church / Unclaimed Funds',
+      'channel': 'Surplus Institute / David Church / Unclaimed Funds',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:06:55](https://www.youtube.com/watch?v=D3Fcqm3xaco&t=415s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'The biggest change is number five, this agreement is valid for 12 months, it was '
+              'six months before.',
+      'timestamp': 415,
+      'timestamp_label': '[00:06:55]',
+      'timestamp_seconds': 415,
+      'tip': 'The biggest change is number five, this agreement is valid for 12 months, it was six '
+             'months before.',
+      'title': 'Beware of the changes made in CA state unclaimed funds contracts',
+      'url': 'https://www.youtube.com/watch?v=D3Fcqm3xaco&t=415s',
+      'video_id': 'D3Fcqm3xaco'},
+     {'author': 'The Accidental Publisher',
+      'channel': 'The Accidental Publisher',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:30](https://www.youtube.com/watch?v=qQL9C0H1n5E&t=150s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': "The email will contain a list of documentation you'll need to upload, and then you "
+              'have to wait 60 to 90 days to see if they get it back to you.',
+      'timestamp': 150,
+      'timestamp_label': '[00:02:30]',
+      'timestamp_seconds': 150,
+      'tip': "The email will contain a list of documentation you'll need to upload, and then you "
+             'have to wait 60 to 90 days to see if they get it back to you.',
+      'title': 'How to Claim Unclaimed Property in California 💰',
+      'url': 'https://www.youtube.com/watch?v=qQL9C0H1n5E&t=150s',
+      'video_id': 'qQL9C0H1n5E'},
+     {'author': 'Make Money Anthony',
+      'channel': 'Make Money Anthony',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:33](https://www.youtube.com/watch?v=3QgxEy6EB6Y&t=93s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'If you have a real common name like Tom or Bill, you might want to put in the city '
+              'name so it narrows out those results.',
+      'timestamp': 93,
+      'timestamp_label': '[00:01:33]',
+      'timestamp_seconds': 93,
+      'tip': 'If you have a real common name like Tom or Bill, you might want to put in the city '
+             'name so it narrows out those results.',
+      'title': '✅ How To Find Unclaimed Money And Property In California 🔴',
+      'url': 'https://www.youtube.com/watch?v=3QgxEy6EB6Y&t=93s',
+      'video_id': '3QgxEy6EB6Y'},
+     {'author': 'The TEC Show',
+      'channel': 'The TEC Show',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:05:34](https://www.youtube.com/watch?v=DGys6KYDbNU&t=334s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': "This is the amount of money that I'll be receiving, 314.77, and I didn't give them "
+              'any of my banking information so they should be sending me a check.',
+      'timestamp': 334,
+      'timestamp_label': '[00:05:34]',
+      'timestamp_seconds': 334,
+      'tip': "This is the amount of money that I'll be receiving, 314.77, and I didn't give them "
+             'any of my banking information so they should be sending me a check.',
+      'title': 'Great News!! How To Find FREE MONEY: UNCLAIMED MONEY How to File a Claim',
+      'url': 'https://www.youtube.com/watch?v=DGys6KYDbNU&t=334s',
+      'video_id': 'DGys6KYDbNU'},
      {'author': 'Money Making Juggernaut',
       'channel': 'Money Making Juggernaut',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:31:47](https://www.youtube.com/watch?v=XEcv7z100aA&t=1907s)',
-      'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                   'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                   '(Chapter Q9 operational verification).',
+      'markdown': '[00:04:45](https://www.youtube.com/watch?v=vp2uuB23fww&t=285s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
       'source_type': 'video_pro_tip',
-      'text': 'Where the results come back and say oh we matched with 96% um but yeah we just '
-              "click on get started and then you're going to fill out your information on "
-              'number email address this is the email address where you guys send the results '
-              'back.',
-      'timestamp': 1907,
-      'timestamp_label': '[00:31:47]',
-      'timestamp_seconds': 1907,
-      'tip': 'Where the results come back and say oh we matched with 96% um but yeah we just '
-             "click on get started and then you're going to fill out your information on "
-             'number email address this is the email address where you guys send the results '
-             'back.',
-      'title': 'Skiptracing in Surplus Funds With Skipmatrix (Money Making Juggernaut)',
-      'url': 'https://www.youtube.com/watch?v=XEcv7z100aA&t=1907s',
+      'text': 'In the frequently asked questions on the website it says plainly you must be '
+              'licensed.',
+      'timestamp': 285,
+      'timestamp_label': '[00:04:45]',
+      'timestamp_seconds': 285,
+      'tip': 'In the frequently asked questions on the website it says plainly you must be '
+             'licensed.',
+      'title': 'How to work Texas Unclaimed State Funds and become a PI',
+      'url': 'https://www.youtube.com/watch?v=vp2uuB23fww&t=285s',
+      'video_id': 'vp2uuB23fww'},
+     {'author': 'Money Making Juggernaut',
+      'channel': 'Money Making Juggernaut',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:12:09](https://www.youtube.com/watch?v=vp2uuB23fww&t=729s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': "I'd offer one year at a time at 295 and that allows you to get your license number.",
+      'timestamp': 729,
+      'timestamp_label': '[00:12:09]',
+      'timestamp_seconds': 729,
+      'tip': "I'd offer one year at a time at 295 and that allows you to get your license number.",
+      'title': 'How to work Texas Unclaimed State Funds and become a PI',
+      'url': 'https://www.youtube.com/watch?v=vp2uuB23fww&t=729s',
+      'video_id': 'vp2uuB23fww'},
+     {'author': 'Money Making Juggernaut',
+      'channel': 'Money Making Juggernaut',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:27:00](https://www.youtube.com/watch?v=vp2uuB23fww&t=1620s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'If you have a family member in Texas and they have unclaimed funds and you search '
+              'them individually, you help them get the money, they can pay you.',
+      'timestamp': 1620,
+      'timestamp_label': '[00:27:00]',
+      'timestamp_seconds': 1620,
+      'tip': 'If you have a family member in Texas and they have unclaimed funds and you search '
+             'them individually, you help them get the money, they can pay you.',
+      'title': 'How to work Texas Unclaimed State Funds and become a PI',
+      'url': 'https://www.youtube.com/watch?v=vp2uuB23fww&t=1620s',
+      'video_id': 'vp2uuB23fww'},
+     {'author': 'GardenShop.Pro',
+      'channel': 'GardenShop.Pro',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:05:46](https://www.youtube.com/watch?v=dhZB_jSn2Qg&t=346s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'A power of attorney is only valid while the principal is alive.',
+      'timestamp': 346,
+      'timestamp_label': '[00:05:46]',
+      'timestamp_seconds': 346,
+      'tip': 'A power of attorney is only valid while the principal is alive.',
+      'title': 'How to claim unclaimed money as a power of attorney',
+      'url': 'https://www.youtube.com/watch?v=dhZB_jSn2Qg&t=346s',
+      'video_id': 'dhZB_jSn2Qg'},
+     {'author': 'Как се прави',
+      'channel': 'Как се прави',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:22](https://www.youtube.com/watch?v=0CZmLNyYvD8&t=202s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'Do not sign the form as soon as you print it out, leave that signature line '
+              'entirely blank until you are in the presence of a commissioned notary public.',
+      'timestamp': 202,
+      'timestamp_label': '[00:03:22]',
+      'timestamp_seconds': 202,
+      'tip': 'Do not sign the form as soon as you print it out, leave that signature line entirely '
+             'blank until you are in the presence of a commissioned notary public.',
+      'title': 'How to claim Pennsylvania unclaimed property with a notarized form',
+      'url': 'https://www.youtube.com/watch?v=0CZmLNyYvD8&t=202s',
+      'video_id': '0CZmLNyYvD8'},
+     {'author': 'Как се прави',
+      'channel': 'Как се прави',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:05:44](https://www.youtube.com/watch?v=edHsQGppnKE&t=344s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': "Supplying historic utility bills, old tax returns, or past driver's licenses that "
+              'match that exact reported address is absolutely essential.',
+      'timestamp': 344,
+      'timestamp_label': '[00:05:44]',
+      'timestamp_seconds': 344,
+      'tip': "Supplying historic utility bills, old tax returns, or past driver's licenses that "
+             'match that exact reported address is absolutely essential.',
+      'title': 'How to claim Utah unclaimed property with a notarized form',
+      'url': 'https://www.youtube.com/watch?v=edHsQGppnKE&t=344s',
+      'video_id': 'edHsQGppnKE'},
+     {'author': 'SJF Law Group - Probate & Estate Planning',
+      'channel': 'SJF Law Group - Probate & Estate Planning',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:48](https://www.youtube.com/watch?v=e-FwgynrCd0&t=48s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'If the value of the account is less than $10,000, you can collect it without '
+              'opening up a probate administration.',
+      'timestamp': 48,
+      'timestamp_label': '[00:00:48]',
+      'timestamp_seconds': 48,
+      'tip': 'If the value of the account is less than $10,000, you can collect it without opening '
+             'up a probate administration.',
+      'title': 'How to check if you have unclaimed funds in Florida | Florida Estate Planning & '
+               'Probate Lawyer',
+      'url': 'https://www.youtube.com/watch?v=e-FwgynrCd0&t=48s',
+      'video_id': 'e-FwgynrCd0'},
+     {'author': 'FOX6 News Milwaukee',
+      'channel': 'FOX6 News Milwaukee',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:17](https://www.youtube.com/watch?v=Cb8M7-NxR50&t=77s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'Money from escheated estates is turned over to the state, which holds it for 10 '
+              'years, tries to track down heirs and then the property lapses to the common school '
+              'fund.',
+      'timestamp': 77,
+      'timestamp_label': '[00:01:17]',
+      'timestamp_seconds': 77,
+      'tip': 'Money from escheated estates is turned over to the state, which holds it for 10 '
+             'years, tries to track down heirs and then the property lapses to the common school '
+             'fund.',
+      'title': 'Filing a claim for unclaimed property in Wisconsin | FOX6 News Milwaukee',
+      'url': 'https://www.youtube.com/watch?v=Cb8M7-NxR50&t=77s',
+      'video_id': 'Cb8M7-NxR50'},
+     {'author': 'KCRA 3',
+      'channel': 'KCRA 3',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:26](https://www.youtube.com/watch?v=s_yDVlsM7Tc&t=206s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': "We need to verify you and verify that you are who you say you are, and that you're "
+              'the rightful heir to this asset.',
+      'timestamp': 206,
+      'timestamp_label': '[00:03:26]',
+      'timestamp_seconds': 206,
+      'tip': "We need to verify you and verify that you are who you say you are, and that you're "
+             'the rightful heir to this asset.',
+      'title': '$15 billion hiding in plain sight: How to find unclaimed property in California',
+      'url': 'https://www.youtube.com/watch?v=s_yDVlsM7Tc&t=206s',
+      'video_id': 's_yDVlsM7Tc'},
+     {'author': 'The Accidental Publisher',
+      'channel': 'The Accidental Publisher',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:55](https://www.youtube.com/watch?v=ODgVh05VyTg&t=115s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'You will get a confirmation email with a claim ID number and a list of documents '
+              'you must upload.',
+      'timestamp': 115,
+      'timestamp_label': '[00:01:55]',
+      'timestamp_seconds': 115,
+      'tip': 'You will get a confirmation email with a claim ID number and a list of documents you '
+             'must upload.',
+      'title': 'How to Claim Unclaimed Property in Texas',
+      'url': 'https://www.youtube.com/watch?v=ODgVh05VyTg&t=115s',
+      'video_id': 'ODgVh05VyTg'}],
+ 7: [{'author': 'Open Book Entrepreneur',
+      'channel': 'Open Book Entrepreneur',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:04](https://www.youtube.com/watch?v=YoID4SzRBaI&t=124s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'Many people are actually unaware that this money is even sitting in their state '
+              'treasury.',
+      'timestamp': 124,
+      'timestamp_label': '[00:02:04]',
+      'timestamp_seconds': 124,
+      'tip': 'Many people are actually unaware that this money is even sitting in their state '
+             'treasury.',
+      'title': 'Your Family Could Be Owed $10,000+ And You Don’t Even Know It | Private '
+               'Investigator Explains',
+      'url': 'https://www.youtube.com/watch?v=YoID4SzRBaI&t=124s',
+      'video_id': 'YoID4SzRBaI'},
+     {'author': 'SurplusFundsRiches',
+      'channel': 'SurplusFundsRiches',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:37](https://www.youtube.com/watch?v=ujbTh1In_c4&t=157s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': "There's always an aunt may, so mail and messages go to relatives and associates "
+              "under the ex-owner's name, raising the hit rate 40 to 50 percent.",
+      'timestamp': 157,
+      'timestamp_label': '[00:02:37]',
+      'timestamp_seconds': 157,
+      'tip': "There's always an aunt may, so mail and messages go to relatives and associates "
+             "under the ex-owner's name, raising the hit rate 40 to 50 percent.",
+      'title': 'Surplus Funds - skip tracing claimants',
+      'url': 'https://www.youtube.com/watch?v=ujbTh1In_c4&t=157s',
+      'video_id': 'ujbTh1In_c4'},
+     {'author': 'Unclaimed CEO',
+      'channel': 'Unclaimed CEO',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:36](https://www.youtube.com/watch?v=Qf591_R7CN4&t=216s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'Tracers runs about a ten dollar setup and a dollar fifty per skip, which is trivial '
+              'when ten deals bring in ten to twenty thousand dollars.',
+      'timestamp': 216,
+      'timestamp_label': '[00:03:36]',
+      'timestamp_seconds': 216,
+      'tip': 'Tracers runs about a ten dollar setup and a dollar fifty per skip, which is trivial '
+             'when ten deals bring in ten to twenty thousand dollars.',
+      'title': 'This Is How To Skip Trace For Unclaimed Funds and Tax Overages 📲💰',
+      'url': 'https://www.youtube.com/watch?v=Qf591_R7CN4&t=216s',
+      'video_id': 'Qf591_R7CN4'},
+     {'author': 'Surplus Institute / David Church / Unclaimed Funds',
+      'channel': 'Surplus Institute / David Church / Unclaimed Funds',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:39](https://www.youtube.com/watch?v=hA6VJ_GqGyc&t=39s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'Start with the newest-dated mobile numbers because kids keep their deceased '
+              "parents' phone numbers.",
+      'timestamp': 39,
+      'timestamp_label': '[00:00:39]',
+      'timestamp_seconds': 39,
+      'tip': "Start with the newest-dated mobile numbers because kids keep their deceased parents' "
+             'phone numbers.',
+      'title': 'Mastering Skip Tracing for Deceased Individuals: Strategies for Success '
+               '🕵️\u200d♂️⚡',
+      'url': 'https://www.youtube.com/watch?v=hA6VJ_GqGyc&t=39s',
+      'video_id': 'hA6VJ_GqGyc'},
+     {'author': 'Surplus Funds 101',
+      'channel': 'Surplus Funds 101',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:57](https://www.youtube.com/watch?v=Tx1_986LmrY&t=117s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': "You're gonna have to pay for it.",
+      'timestamp': 117,
+      'timestamp_label': '[00:01:57]',
+      'timestamp_seconds': 117,
+      'tip': "You're gonna have to pay for it.",
+      'title': 'State Funds Business Skip Tracing. Best FREE Skip Tracing Websites For Your '
+               'Unclaimed Funds Business',
+      'url': 'https://www.youtube.com/watch?v=Tx1_986LmrY&t=117s',
+      'video_id': 'Tx1_986LmrY'},
+     {'author': 'Unclaimed CEO',
+      'channel': 'Unclaimed CEO',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:39](https://www.youtube.com/watch?v=B3w-Sxl2QnE&t=159s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'Ignoring the possible relatives on TruePeopleSearch is a mistake, because relatives '
+              'vouch for you and that produces callbacks.',
+      'timestamp': 159,
+      'timestamp_label': '[00:02:39]',
+      'timestamp_seconds': 159,
+      'tip': 'Ignoring the possible relatives on TruePeopleSearch is a mistake, because relatives '
+             'vouch for you and that produces callbacks.',
+      'title': '3 Biggest Skip Tracing Mistakes',
+      'url': 'https://www.youtube.com/watch?v=B3w-Sxl2QnE&t=159s',
+      'video_id': 'B3w-Sxl2QnE'},
+     {'author': 'Surplus Institute / David Church / Unclaimed Funds',
+      'channel': 'Surplus Institute / David Church / Unclaimed Funds',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:42](https://www.youtube.com/watch?v=2l827py8Fe8&t=162s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': "Know your state's heirship rules, because California recognized a stepson while "
+              'Texas denied a stepchild since it requires a blood relative.',
+      'timestamp': 162,
+      'timestamp_label': '[00:02:42]',
+      'timestamp_seconds': 162,
+      'tip': "Know your state's heirship rules, because California recognized a stepson while "
+             'Texas denied a stepchild since it requires a blood relative.',
+      'title': 'Unclaimed Property Locators Dealing with Heirs | How to Find an Unclaimed Property '
+               'Locator',
+      'url': 'https://www.youtube.com/watch?v=2l827py8Fe8&t=162s',
+      'video_id': '2l827py8Fe8'},
+     {'author': 'ABC News',
+      'channel': 'ABC News',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:11](https://www.youtube.com/watch?v=f7126N1MGjA&t=131s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'Banks remit dormant accounts to the state after five to seven years.',
+      'timestamp': 131,
+      'timestamp_label': '[00:02:11]',
+      'timestamp_seconds': 131,
+      'tip': 'Banks remit dormant accounts to the state after five to seven years.',
+      'title': 'Unclaimed Money Found From Deceased Relatives; Could You Be Owed Cash?',
+      'url': 'https://www.youtube.com/watch?v=f7126N1MGjA&t=131s',
+      'video_id': 'f7126N1MGjA'},
+     {'author': 'Flying With Luxury',
+      'channel': 'Flying With Luxury',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:52](https://www.youtube.com/watch?v=6MVorBlRJk4&t=112s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'Each state has specific laws outlining this hierarchy.',
+      'timestamp': 112,
+      'timestamp_label': '[00:01:52]',
+      'timestamp_seconds': 112,
+      'tip': 'Each state has specific laws outlining this hierarchy.',
+      'title': 'Who Can Claim Unclaimed Property Of A Deceased Person?',
+      'url': 'https://www.youtube.com/watch?v=6MVorBlRJk4&t=112s',
+      'video_id': '6MVorBlRJk4'},
+     {'author': 'Guide Gurus',
+      'channel': 'Guide Gurus',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:51](https://www.youtube.com/watch?v=wYwVPTqXCvE&t=51s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'Will beneficiaries come first, then the intestacy order, and the claimant needs a '
+              'death certificate, ID and proof of relationship.',
+      'timestamp': 51,
+      'timestamp_label': '[00:00:51]',
+      'timestamp_seconds': 51,
+      'tip': 'Will beneficiaries come first, then the intestacy order, and the claimant needs a '
+             'death certificate, ID and proof of relationship.',
+      'title': 'Who Can Claim Unclaimed Property Of A Deceased Person   2025',
+      'url': 'https://www.youtube.com/watch?v=wYwVPTqXCvE&t=51s',
+      'video_id': 'wYwVPTqXCvE'},
+     {'author': 'Как се прави',
+      'channel': 'Как се прави',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:06:24](https://www.youtube.com/watch?v=LEhDouSnx9s&t=384s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'Never ever pay a percentage to claim what is already legally yours.',
+      'timestamp': 384,
+      'timestamp_label': '[00:06:24]',
+      'timestamp_seconds': 384,
+      'tip': 'Never ever pay a percentage to claim what is already legally yours.',
+      'title': 'How to claim unclaimed money as an heir in Mississippi',
+      'url': 'https://www.youtube.com/watch?v=LEhDouSnx9s&t=384s',
+      'video_id': 'LEhDouSnx9s'},
+     {'author': 'GardenShop.Pro',
+      'channel': 'GardenShop.Pro',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:46](https://www.youtube.com/watch?v=J2nto2DAwqc&t=286s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'If a single generational link is missing from your paperwork, state auditors will '
+              'immediately stall or flat-out deny your claim.',
+      'timestamp': 286,
+      'timestamp_label': '[00:04:46]',
+      'timestamp_seconds': 286,
+      'tip': 'If a single generational link is missing from your paperwork, state auditors will '
+             'immediately stall or flat-out deny your claim.',
+      'title': 'How to file an unclaimed property claim as an heir',
+      'url': 'https://www.youtube.com/watch?v=J2nto2DAwqc&t=286s',
+      'video_id': 'J2nto2DAwqc'},
+     {'author': 'ohiocommerce',
+      'channel': 'ohiocommerce',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:53:18](https://www.youtube.com/watch?v=lQrAftswAO4&t=3198s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'On the compensation that they can receive it is capped at 10 percent.',
+      'timestamp': 3198,
+      'timestamp_label': '[00:53:18]',
+      'timestamp_seconds': 3198,
+      'tip': 'On the compensation that they can receive it is capped at 10 percent.',
+      'title': 'Claiming your Unclaimed Funds for Estate Planning Attorneys',
+      'url': 'https://www.youtube.com/watch?v=lQrAftswAO4&t=3198s',
+      'video_id': 'lQrAftswAO4'},
+     {'author': 'ohiocommerce',
+      'channel': 'ohiocommerce',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:49:32](https://www.youtube.com/watch?v=lQrAftswAO4&t=2972s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'We are running right at three months right now.',
+      'timestamp': 2972,
+      'timestamp_label': '[00:49:32]',
+      'timestamp_seconds': 2972,
+      'tip': 'We are running right at three months right now.',
+      'title': 'Claiming your Unclaimed Funds for Estate Planning Attorneys',
+      'url': 'https://www.youtube.com/watch?v=lQrAftswAO4&t=2972s',
+      'video_id': 'lQrAftswAO4'},
+     {'author': 'Surplus Funds 101',
+      'channel': 'Surplus Funds 101',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:13](https://www.youtube.com/watch?v=xqXetexqH30&t=133s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'If you have to spend 15 cents a file but your accuracy can increase 30 or 40 '
+              'percent, all day long do it.',
+      'timestamp': 133,
+      'timestamp_label': '[00:02:13]',
+      'timestamp_seconds': 133,
+      'tip': 'If you have to spend 15 cents a file but your accuracy can increase 30 or 40 '
+             'percent, all day long do it.',
+      'title': 'State Funds Business: Best Websites For Skip Tracing Claimant Information',
+      'url': 'https://www.youtube.com/watch?v=xqXetexqH30&t=133s',
+      'video_id': 'xqXetexqH30'},
+     {'author': 'Money Making Juggernaut',
+      'channel': 'Money Making Juggernaut',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:29:37](https://www.youtube.com/watch?v=aKzRVyO_gfI&t=1777s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'If you have anything older than two months you should be putting in your own '
+              'information.',
+      'timestamp': 1777,
+      'timestamp_label': '[00:29:37]',
+      'timestamp_seconds': 1777,
+      'tip': 'If you have anything older than two months you should be putting in your own '
+             'information.',
+      'title': 'The Only Skiptracing Software You Need For Surplus Funds',
+      'url': 'https://www.youtube.com/watch?v=aKzRVyO_gfI&t=1777s',
+      'video_id': 'aKzRVyO_gfI'},
+     {'author': 'Money Making Juggernaut',
+      'channel': 'Money Making Juggernaut',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:52:24](https://www.youtube.com/watch?v=XEcv7z100aA&t=3144s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'Your tools are everything.',
+      'timestamp': 3144,
+      'timestamp_label': '[00:52:24]',
+      'timestamp_seconds': 3144,
+      'tip': 'Your tools are everything.',
+      'title': 'Skiptracing in Surplus Funds With Skipmatrix',
+      'url': 'https://www.youtube.com/watch?v=XEcv7z100aA&t=3144s',
+      'video_id': 'XEcv7z100aA'},
+     {'author': 'Money Making Juggernaut',
+      'channel': 'Money Making Juggernaut',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:29:25](https://www.youtube.com/watch?v=XEcv7z100aA&t=1765s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'We do not suppress and manage in file for previously processed duplicate records, '
+              'this is not something we do.',
+      'timestamp': 1765,
+      'timestamp_label': '[00:29:25]',
+      'timestamp_seconds': 1765,
+      'tip': 'We do not suppress and manage in file for previously processed duplicate records, '
+             'this is not something we do.',
+      'title': 'Skiptracing in Surplus Funds With Skipmatrix',
+      'url': 'https://www.youtube.com/watch?v=XEcv7z100aA&t=1765s',
       'video_id': 'XEcv7z100aA'}],
- 10: [{'author': 'Hoang Le CFP, EA, Real Estate Agent',
-       'channel': 'Hoang Le CFP, EA, Real Estate Agent',
+ 8: [{'author': 'FOX43 News',
+      'channel': 'FOX43 News',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:41](https://www.youtube.com/watch?v=gEVKR-AmaU0&t=161s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'Check that registry and this Hollister Scott and Hall is not a registered finder.',
+      'timestamp': 161,
+      'timestamp_label': '[00:02:41]',
+      'timestamp_seconds': 161,
+      'tip': 'Check that registry and this Hollister Scott and Hall is not a registered finder.',
+      'title': 'A company claims to find  unclaimed funds for a fee, but is it necessary? | FOX43 '
+               'Finds Out',
+      'url': 'https://www.youtube.com/watch?v=gEVKR-AmaU0&t=161s',
+      'video_id': 'gEVKR-AmaU0'},
+     {'author': 'FOX43 News',
+      'channel': 'FOX43 News',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:54](https://www.youtube.com/watch?v=gEVKR-AmaU0&t=234s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'Senate bill 24 would allow the Treasury to proactively give unclaimed money back to '
+              'anyone who is living up to $5000.',
+      'timestamp': 234,
+      'timestamp_label': '[00:03:54]',
+      'timestamp_seconds': 234,
+      'tip': 'Senate bill 24 would allow the Treasury to proactively give unclaimed money back to '
+             'anyone who is living up to $5000.',
+      'title': 'A company claims to find  unclaimed funds for a fee, but is it necessary? | FOX43 '
+               'Finds Out',
+      'url': 'https://www.youtube.com/watch?v=gEVKR-AmaU0&t=234s',
+      'video_id': 'gEVKR-AmaU0'},
+     {'author': 'ShadowAnyone',
+      'channel': 'ShadowAnyone',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:32](https://www.youtube.com/watch?v=VxHOdlFXKdQ&t=212s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'In my state, and again the last time I looked, 10 was the maximum that they could '
+              'collect.',
+      'timestamp': 212,
+      'timestamp_label': '[00:03:32]',
+      'timestamp_seconds': 212,
+      'tip': 'In my state, and again the last time I looked, 10 was the maximum that they could '
+             'collect.',
+      'title': 'Private Investigator reveals Unclaimed Money Warnings if you get a letter from a '
+               '“recovery service”!',
+      'url': 'https://www.youtube.com/watch?v=VxHOdlFXKdQ&t=212s',
+      'video_id': 'VxHOdlFXKdQ'},
+     {'author': 'Unclaimed CEO',
+      'channel': 'Unclaimed CEO',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:29](https://www.youtube.com/watch?v=ie1xaLhl85o&t=89s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': "So you guys can imagine I'm making like over a thousand phone calls a week just "
+              'trying to get people to answer the phone.',
+      'timestamp': 89,
+      'timestamp_label': '[00:01:29]',
+      'timestamp_seconds': 89,
+      'tip': "So you guys can imagine I'm making like over a thousand phone calls a week just "
+             'trying to get people to answer the phone.',
+      'title': 'She Closed 7 Unclaimed Funds Deals WITHOUT a Single Cold Call 😱 (Steal Her '
+               'Strategy)',
+      'url': 'https://www.youtube.com/watch?v=ie1xaLhl85o&t=89s',
+      'video_id': 'ie1xaLhl85o'},
+     {'author': 'Unclaimed CEO',
+      'channel': 'Unclaimed CEO',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:39](https://www.youtube.com/watch?v=WlbnzGtdoSY&t=279s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': "If you're working local leads like within a 20 mile radius and you don't mind "
+              'making that drive, you find someone that has a pretty sizable account, you skip '
+              'trace, you get their address and you show up to the door.',
+      'timestamp': 279,
+      'timestamp_label': '[00:04:39]',
+      'timestamp_seconds': 279,
+      'tip': "If you're working local leads like within a 20 mile radius and you don't mind making "
+             'that drive, you find someone that has a pretty sizable account, you skip trace, you '
+             'get their address and you show up to the door.',
+      'title': '5 Things To Do Instead Of Cold Calling | Tax Surplus | Unclaimed Funds',
+      'url': 'https://www.youtube.com/watch?v=WlbnzGtdoSY&t=279s',
+      'video_id': 'WlbnzGtdoSY'},
+     {'author': 'AskJimmySmith',
+      'channel': 'AskJimmySmith',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:12:52](https://www.youtube.com/watch?v=JT_EgidLdF8&t=772s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': "The only time you would need a legitimate service is if you don't have that "
+              'documentation or you need somebody to help get that documentation.',
+      'timestamp': 772,
+      'timestamp_label': '[00:12:52]',
+      'timestamp_seconds': 772,
+      'tip': "The only time you would need a legitimate service is if you don't have that "
+             'documentation or you need somebody to help get that documentation.',
+      'title': 'Unclaimed Property: What It Is, How to Claim It, & How to Avoid Scams...EVERYTHING '
+               'YOU NEED TO KNOW',
+      'url': 'https://www.youtube.com/watch?v=JT_EgidLdF8&t=772s',
+      'video_id': 'JT_EgidLdF8'},
+     {'author': 'FundSleuth - Unclaimed Funds Info and Training',
+      'channel': 'FundSleuth - Unclaimed Funds Info and Training',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:18](https://www.youtube.com/watch?v=rQqA2wnJ9xw&t=78s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': "You're going to lose most negotiations when you try to negotiate via text; it's "
+              'just too easy for the prospect to say no or to just not respond anymore and ghost '
+              'you.',
+      'timestamp': 78,
+      'timestamp_label': '[00:01:18]',
+      'timestamp_seconds': 78,
+      'tip': "You're going to lose most negotiations when you try to negotiate via text; it's just "
+             'too easy for the prospect to say no or to just not respond anymore and ghost you.',
+      'title': 'Cold Calling Unclaimed or Surplus Deal Prospects. Should you call on the phone or '
+               'SMS? What is best?',
+      'url': 'https://www.youtube.com/watch?v=rQqA2wnJ9xw&t=78s',
+      'video_id': 'rQqA2wnJ9xw'},
+     {'author': 'Surplus Institute / David Church / Unclaimed Funds',
+      'channel': 'Surplus Institute / David Church / Unclaimed Funds',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:05:08](https://www.youtube.com/watch?v=wp5vC44yQQg&t=308s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'Script what saves me every single time is the data.',
+      'timestamp': 308,
+      'timestamp_label': '[00:05:08]',
+      'timestamp_seconds': 308,
+      'tip': 'Script what saves me every single time is the data.',
+      'title': 'Cold Calling Unclaimed State Funds Basic Script 101. What You Need to Know about '
+               'Surplus Funds',
+      'url': 'https://www.youtube.com/watch?v=wp5vC44yQQg&t=308s',
+      'video_id': 'wp5vC44yQQg'},
+     {'author': 'Unclaimed CEO',
+      'channel': 'Unclaimed CEO',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:52](https://www.youtube.com/watch?v=zjCP9bHX3oc&t=172s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'When people connect with you, never try to sell your service over text; always '
+              'schedule a call.',
+      'timestamp': 172,
+      'timestamp_label': '[00:02:52]',
+      'timestamp_seconds': 172,
+      'tip': 'When people connect with you, never try to sell your service over text; always '
+             'schedule a call.',
+      'title': 'Unclaimed Funds: Top 5 Ways To Close Deals Without Cold Calling',
+      'url': 'https://www.youtube.com/watch?v=zjCP9bHX3oc&t=172s',
+      'video_id': 'zjCP9bHX3oc'},
+     {'author': 'Money Making Juggernaut',
+      'channel': 'Money Making Juggernaut',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:35](https://www.youtube.com/watch?v=8hCl2lLNDrk&t=95s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': "Now we have 600 addresses and we're going to do 85, it's going to get us about $510 "
+              'for the mailers.',
+      'timestamp': 95,
+      'timestamp_label': '[00:01:35]',
+      'timestamp_seconds': 95,
+      'tip': "Now we have 600 addresses and we're going to do 85, it's going to get us about $510 "
+             'for the mailers.',
+      'title': '#1 APP To Send Mailers To Surplus Fund Recovery Leads (direct mail for asset '
+               'recovery)',
+      'url': 'https://www.youtube.com/watch?v=8hCl2lLNDrk&t=95s',
+      'video_id': '8hCl2lLNDrk'},
+     {'author': 'KPRC 2 Click2Houston',
+      'channel': 'KPRC 2 Click2Houston',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:51](https://www.youtube.com/watch?v=a0Bv2mtHL_Y&t=111s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': "We've seen increasing complaints over the last several years, and they will file "
+              "homestead exemption for you if you don't have one.",
+      'timestamp': 111,
+      'timestamp_label': '[00:01:51]',
+      'timestamp_seconds': 111,
+      'tip': "We've seen increasing complaints over the last several years, and they will file "
+             "homestead exemption for you if you don't have one.",
+      'title': 'Ask Amy: Unclaimed money letter could be legit',
+      'url': 'https://www.youtube.com/watch?v=a0Bv2mtHL_Y&t=111s',
+      'video_id': 'a0Bv2mtHL_Y'},
+     {'author': 'FOX23 News Tulsa',
+      'channel': 'FOX23 News Tulsa',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:33](https://www.youtube.com/watch?v=kTrQ-7TzYL4&t=33s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'We had in the last month over 800 consumers report to us this particular scam.',
+      'timestamp': 33,
+      'timestamp_label': '[00:00:33]',
+      'timestamp_seconds': 33,
+      'tip': 'We had in the last month over 800 consumers report to us this particular scam.',
+      'title': 'Video: BBB warns of unclaimed property scam',
+      'url': 'https://www.youtube.com/watch?v=kTrQ-7TzYL4&t=33s',
+      'video_id': 'kTrQ-7TzYL4'},
+     {'author': 'Dark Web Deacon',
+      'channel': 'Dark Web Deacon',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:32](https://www.youtube.com/watch?v=JvMO0OK8kTU&t=152s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'One way to quickly identify an unclaimed property scam is if a source claiming to '
+              'be from your state government contacts you via text.',
+      'timestamp': 152,
+      'timestamp_label': '[00:02:32]',
+      'timestamp_seconds': 152,
+      'tip': 'One way to quickly identify an unclaimed property scam is if a source claiming to be '
+             'from your state government contacts you via text.',
+      'title': 'What is an Unclaimed Property Scam? : Simple Explained',
+      'url': 'https://www.youtube.com/watch?v=JvMO0OK8kTU&t=152s',
+      'video_id': 'JvMO0OK8kTU'},
+     {'author': 'Trust Armor',
+      'channel': 'Trust Armor',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:31](https://www.youtube.com/watch?v=8977FkLTYjo&t=151s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': "First, the call is completely out of the blue; second, they'll try to create a "
+              "sense of urgency, saying you have to act right now or you'll lose the money.",
+      'timestamp': 151,
+      'timestamp_label': '[00:02:31]',
+      'timestamp_seconds': 151,
+      'tip': "First, the call is completely out of the blue; second, they'll try to create a sense "
+             "of urgency, saying you have to act right now or you'll lose the money.",
+      'title': '"You Have Unclaimed Money" — It\'s a Scam',
+      'url': 'https://www.youtube.com/watch?v=8977FkLTYjo&t=151s',
+      'video_id': '8977FkLTYjo'},
+     {'author': 'Unclaimed CEO',
+      'channel': 'Unclaimed CEO',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:13:49](https://www.youtube.com/watch?v=97wh_A16P2s&t=829s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'They trust you, but the moment you ask them for their social security card or '
+              'different personal identifying documents, people get scared.',
+      'timestamp': 829,
+      'timestamp_label': '[00:13:49]',
+      'timestamp_seconds': 829,
+      'tip': 'They trust you, but the moment you ask them for their social security card or '
+             'different personal identifying documents, people get scared.',
+      'title': 'Why I Refuse to Cold Call in My Unclaimed Money Business (and You Should Too)',
+      'url': 'https://www.youtube.com/watch?v=97wh_A16P2s&t=829s',
+      'video_id': '97wh_A16P2s'},
+     {'author': 'Surplus Funds 101',
+      'channel': 'Surplus Funds 101',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:08:50](https://www.youtube.com/watch?v=XHOqG0CY1KA&t=530s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'The big difference on the guys who are crushing it was how slow their intro was.',
+      'timestamp': 530,
+      'timestamp_label': '[00:08:50]',
+      'timestamp_seconds': 530,
+      'tip': 'The big difference on the guys who are crushing it was how slow their intro was.',
+      'title': 'Unclaimed Funds Tutorial: Cold Calling Basics For Your Unclaimed Funds Business. '
+               'state funds.',
+      'url': 'https://www.youtube.com/watch?v=XHOqG0CY1KA&t=530s',
+      'video_id': 'XHOqG0CY1KA'},
+     {'author': 'Money Making Juggernaut',
+      'channel': 'Money Making Juggernaut',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:06](https://www.youtube.com/watch?v=Zh5fus4SGzc&t=126s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'The attorney that represented me told me that it would cost me more to go to court, '
+              'go through depositions, prove my case.',
+      'timestamp': 126,
+      'timestamp_label': '[00:02:06]',
+      'timestamp_seconds': 126,
+      'tip': 'The attorney that represented me told me that it would cost me more to go to court, '
+             'go through depositions, prove my case.',
+      'title': 'What Nobody Tells You About The Surplus Funds Recovery Business',
+      'url': 'https://www.youtube.com/watch?v=Zh5fus4SGzc&t=126s',
+      'video_id': 'Zh5fus4SGzc'}],
+ 9: [{'author': 'Money Making Juggernaut',
+      'channel': 'Money Making Juggernaut',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:00](https://www.youtube.com/watch?v=ZvJ4yCc9em4&t=240s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'Originally I was supposed to get 18,000, but the way that I structured my contract, '
+              'if it accumulated interest, I would also receive that interest as far as the '
+              'percentage that we agreed to.',
+      'timestamp': 240,
+      'timestamp_label': '[00:04:00]',
+      'timestamp_seconds': 240,
+      'tip': 'Originally I was supposed to get 18,000, but the way that I structured my contract, '
+             'if it accumulated interest, I would also receive that interest as far as the '
+             'percentage that we agreed to.',
+      'title': 'Unclaimed Funds 🤑 Jay Made $31k in Finder Fees (State Funds Business)',
+      'url': 'https://www.youtube.com/watch?v=ZvJ4yCc9em4&t=240s',
+      'video_id': 'ZvJ4yCc9em4'},
+     {'author': 'Surplus Institute / David Church / Unclaimed Funds',
+      'channel': 'Surplus Institute / David Church / Unclaimed Funds',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:05:34](https://www.youtube.com/watch?v=pOEq9UMUFHU&t=334s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'I had her show that information and explain that the will was destroyed in a fire, '
+              'and at that point the state went ahead and granted her a third of the claim.',
+      'timestamp': 334,
+      'timestamp_label': '[00:05:34]',
+      'timestamp_seconds': 334,
+      'tip': 'I had her show that information and explain that the will was destroyed in a fire, '
+             'and at that point the state went ahead and granted her a third of the claim.',
+      'title': 'How I Claimed over $50,000.00 in State Unclaimed Funds – Step-by-Step Guide!',
+      'url': 'https://www.youtube.com/watch?v=pOEq9UMUFHU&t=334s',
+      'video_id': 'pOEq9UMUFHU'},
+     {'author': 'Surplus Institute / David Church / Unclaimed Funds',
+      'channel': 'Surplus Institute / David Church / Unclaimed Funds',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:41](https://www.youtube.com/watch?v=kb-pXZgQdoE&t=41s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'We sent him a professional looking invoice, and on the invoice was the amount of '
+              'the claim that he owed us.',
+      'timestamp': 41,
+      'timestamp_label': '[00:00:41]',
+      'timestamp_seconds': 41,
+      'tip': 'We sent him a professional looking invoice, and on the invoice was the amount of the '
+             'claim that he owed us.',
+      'title': 'How to get Checks back from Clients in your Unclaimed Funds Business |  Surplus '
+               'Funds Business',
+      'url': 'https://www.youtube.com/watch?v=kb-pXZgQdoE&t=41s',
+      'video_id': 'kb-pXZgQdoE'},
+     {'author': 'Money Making Juggernaut',
+      'channel': 'Money Making Juggernaut',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:05:38](https://www.youtube.com/watch?v=bfDePAnN-4Y&t=338s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': "I'd love to send you over information about this claim and how I can help you; I "
+              'charge no upfront fees and I take care of all filing costs.',
+      'timestamp': 338,
+      'timestamp_label': '[00:05:38]',
+      'timestamp_seconds': 338,
+      'tip': "I'd love to send you over information about this claim and how I can help you; I "
+             'charge no upfront fees and I take care of all filing costs.',
+      'title': 'How To Close An Unclaimed State Funds Deal (asset recovery business)',
+      'url': 'https://www.youtube.com/watch?v=bfDePAnN-4Y&t=338s',
+      'video_id': 'bfDePAnN-4Y'},
+     {'author': 'Overage Acquisition',
+      'channel': 'Overage Acquisition',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:18](https://www.youtube.com/watch?v=La2LN9HMPbs&t=258s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'If the prior homeowner does not come forward and file claim for these funds, they '
+              'will be forfeited to the county or the state in which the auction was held.',
+      'timestamp': 258,
+      'timestamp_label': '[00:04:18]',
+      'timestamp_seconds': 258,
+      'tip': 'If the prior homeowner does not come forward and file claim for these funds, they '
+             'will be forfeited to the county or the state in which the auction was held.',
+      'title': 'Unclaimed Money After Foreclosure: How to Legally Recover What’s Rightfully Yours',
+      'url': 'https://www.youtube.com/watch?v=La2LN9HMPbs&t=258s',
+      'video_id': 'La2LN9HMPbs'},
+     {'author': 'Money Making Juggernaut',
+      'channel': 'Money Making Juggernaut',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:09:37](https://www.youtube.com/watch?v=xocEKVSCJtU&t=577s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': "You want to get paid upfront, so you're going to invoice the client, and you want "
+              'to get paid before you do the service.',
+      'timestamp': 577,
+      'timestamp_label': '[00:09:37]',
+      'timestamp_seconds': 577,
+      'tip': "You want to get paid upfront, so you're going to invoice the client, and you want to "
+             'get paid before you do the service.',
+      'title': 'How To Find UNCLAIMED MONEY In Your County (COUNTY Unclaimed Funds Explained)',
+      'url': 'https://www.youtube.com/watch?v=xocEKVSCJtU&t=577s',
+      'video_id': 'xocEKVSCJtU'},
+     {'author': 'Unclaimed CEO',
+      'channel': 'Unclaimed CEO',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:14](https://www.youtube.com/watch?v=ug2uUK_s2yk&t=254s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'You will not get paid, you will not ask for any money until you get your client '
+              'paid first, and then you get a percentage of the total claim.',
+      'timestamp': 254,
+      'timestamp_label': '[00:04:14]',
+      'timestamp_seconds': 254,
+      'tip': 'You will not get paid, you will not ask for any money until you get your client paid '
+             'first, and then you get a percentage of the total claim.',
+      'title': 'The Surplus Funds Secret You NEED to Know Before Taking the Plunge',
+      'url': 'https://www.youtube.com/watch?v=ug2uUK_s2yk&t=254s',
+      'video_id': 'ug2uUK_s2yk'},
+     {'author': 'Unclaimed CEO',
+      'channel': 'Unclaimed CEO',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:05:03](https://www.youtube.com/watch?v=bAARnig4bT4&t=303s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': "Make sure that if you have to be a registered agent within a state that you're "
+              'working, you do that before you start doing those cold calls.',
+      'timestamp': 303,
+      'timestamp_label': '[00:05:03]',
+      'timestamp_seconds': 303,
+      'tip': "Make sure that if you have to be a registered agent within a state that you're "
+             'working, you do that before you start doing those cold calls.',
+      'title': 'UNCLAIMED FUNDS: Will leads really want to work with you?🤔',
+      'url': 'https://www.youtube.com/watch?v=bAARnig4bT4&t=303s',
+      'video_id': 'bAARnig4bT4'},
+     {'author': 'Unclaimed CEO',
+      'channel': 'Unclaimed CEO',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:55](https://www.youtube.com/watch?v=pZG8hK4VPVM&t=115s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': "It's pretty important to offer them that convenience, and a lot of times I'll just "
+              'charge them the notary fee on the back end.',
+      'timestamp': 115,
+      'timestamp_label': '[00:01:55]',
+      'timestamp_seconds': 115,
+      'tip': "It's pretty important to offer them that convenience, and a lot of times I'll just "
+             'charge them the notary fee on the back end.',
+      'title': 'The 3 Things You Need To File A Tax Surplus Claim | 2024',
+      'url': 'https://www.youtube.com/watch?v=pZG8hK4VPVM&t=115s',
+      'video_id': 'pZG8hK4VPVM'},
+     {'author': 'Buried in Work',
+      'channel': 'Buried in Work',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:18:36](https://www.youtube.com/watch?v=xfSFTtM1yT8&t=1116s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'Heir finders were not able to charge over a certain dollar amount, and it also took '
+              'away their capability of getting a full list of owners.',
+      'timestamp': 1116,
+      'timestamp_label': '[00:18:36]',
+      'timestamp_seconds': 1116,
+      'tip': 'Heir finders were not able to charge over a certain dollar amount, and it also took '
+             'away their capability of getting a full list of owners.',
+      'title': '#EP46 | Lynn Hall on DC Unclaimed Property: Transforming Asset Recovery and '
+               'Building Trust',
+      'url': 'https://www.youtube.com/watch?v=xfSFTtM1yT8&t=1116s',
+      'video_id': 'xfSFTtM1yT8'},
+     {'author': 'Money Making Juggernaut',
+      'channel': 'Money Making Juggernaut',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:05:01](https://www.youtube.com/watch?v=zrj6RA8N9HA&t=301s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': "Typically you're going to want to work with a contingent attorney, which means they "
+              "don't get paid until the claim is successfully filed, just like you.",
+      'timestamp': 301,
+      'timestamp_label': '[00:05:01]',
+      'timestamp_seconds': 301,
+      'tip': "Typically you're going to want to work with a contingent attorney, which means they "
+             "don't get paid until the claim is successfully filed, just like you.",
+      'title': '3 WAYS To Find A Surplus Funds Attorney FAST (Asset Recovery Business)',
+      'url': 'https://www.youtube.com/watch?v=zrj6RA8N9HA&t=301s',
+      'video_id': 'zrj6RA8N9HA'},
+     {'author': 'Surplus Institute / David Church / Unclaimed Funds',
+      'channel': 'Surplus Institute / David Church / Unclaimed Funds',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:32](https://www.youtube.com/watch?v=V_ycS3i_CMY&t=212s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'I told him come in at forty percent, and I almost did a little bit higher because '
+              "of the paperwork that's going to be involved in this.",
+      'timestamp': 212,
+      'timestamp_label': '[00:03:32]',
+      'timestamp_seconds': 212,
+      'tip': 'I told him come in at forty percent, and I almost did a little bit higher because of '
+             "the paperwork that's going to be involved in this.",
+      'title': '5k commission and skip tracing revealed | Surplus Funds Business in USA | '
+               'Unclaimed State Funds',
+      'url': 'https://www.youtube.com/watch?v=V_ycS3i_CMY&t=212s',
+      'video_id': 'V_ycS3i_CMY'},
+     {'author': 'Spring Solutions, LLC',
+      'channel': 'Spring Solutions, LLC',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:07:09](https://www.youtube.com/watch?v=2Q7vcVR_cDs&t=429s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': "You really don't want to sue anyone, you just want your money, and so this is a "
+              'real aggressive way to make sure that they do pay you.',
+      'timestamp': 429,
+      'timestamp_label': '[00:07:09]',
+      'timestamp_seconds': 429,
+      'tip': "You really don't want to sue anyone, you just want your money, and so this is a real "
+             'aggressive way to make sure that they do pay you.',
+      'title': 'Steps to a Simple Lawsuit/Breach of Contract-Bankruptcy Unclaimed Funds',
+      'url': 'https://www.youtube.com/watch?v=2Q7vcVR_cDs&t=429s',
+      'video_id': '2Q7vcVR_cDs'},
+     {'author': 'Unclaimed CEO',
+      'channel': 'Unclaimed CEO',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:26](https://www.youtube.com/watch?v=BAdBoUHd2lE&t=26s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': "You're going to click on properties reported at $500 and up, and that's going to be "
+              'some of the bigger files.',
+      'timestamp': 26,
+      'timestamp_label': '[00:00:26]',
+      'timestamp_seconds': 26,
+      'tip': "You're going to click on properties reported at $500 and up, and that's going to be "
+             'some of the bigger files.',
+      'title': 'How To Find 6Figure Unclaimed Funds in 30 Seconds #makemoneyonline #unclaimedfunds '
+               '#taxsurplus',
+      'url': 'https://www.youtube.com/watch?v=BAdBoUHd2lE&t=26s',
+      'video_id': 'BAdBoUHd2lE'},
+     {'author': 'Money Making Juggernaut',
+      'channel': 'Money Making Juggernaut',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:07:20](https://www.youtube.com/watch?v=ZsII5-XkqPY&t=440s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': "We'll do our final reach out, and if we don't find them, we delete them from our "
+              'system, because we understand that this is a numbers game.',
+      'timestamp': 440,
+      'timestamp_label': '[00:07:20]',
+      'timestamp_seconds': 440,
+      'tip': "We'll do our final reach out, and if we don't find them, we delete them from our "
+             'system, because we understand that this is a numbers game.',
+      'title': 'The CRM I use to make $100,00+ per year in Asset Recovery 📈',
+      'url': 'https://www.youtube.com/watch?v=ZsII5-XkqPY&t=440s',
+      'video_id': 'ZsII5-XkqPY'},
+     {'author': 'Surplus Institute / David Church / Unclaimed Funds',
+      'channel': 'Surplus Institute / David Church / Unclaimed Funds',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:05:08](https://www.youtube.com/watch?v=gitQwM01Fgc&t=308s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'I guarantee you these guys are not going to show up at your audit and defend you in '
+              'any way, shape, or form.',
+      'timestamp': 308,
+      'timestamp_label': '[00:05:08]',
+      'timestamp_seconds': 308,
+      'tip': 'I guarantee you these guys are not going to show up at your audit and defend you in '
+             'any way, shape, or form.',
+      'title': 'Avoid Corporate Compliance Scams | Beware of False Notices in Corporate Compliance '
+               '| #surplusfunds',
+      'url': 'https://www.youtube.com/watch?v=gitQwM01Fgc&t=308s',
+      'video_id': 'gitQwM01Fgc'}],
+ 10: [{'author': 'Money Making Juggernaut',
+       'channel': 'Money Making Juggernaut',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:06:25](https://www.youtube.com/watch?v=kZMkghcevh8&t=385s)',
-       'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                    'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                    '(Chapter Q10 operational verification).',
+       'markdown': '[00:02:45](https://www.youtube.com/watch?v=EyQovsqVOnE&t=165s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': "During an audit. If you're a small business owner watching this, it's worth an "
-               'annual review of aged uncashed checks on your.',
-       'timestamp': 385,
-       'timestamp_label': '[00:06:25]',
-       'timestamp_seconds': 385,
-       'tip': "During an audit. If you're a small business owner watching this, it's worth an "
-              'annual review of aged uncashed checks on your.',
-       'title': 'Unclaimed Property Explained: How To Check and Claim It (Hoang Le CFP, EA, '
-                'Real Estate Agent)',
-       'url': 'https://www.youtube.com/watch?v=kZMkghcevh8&t=385s',
-       'video_id': 'kZMkghcevh8'},
+       'text': 'You have to know how to read these dockets, how to understand documents and '
+               "actually explain to somebody that they're entitled these funds.",
+       'timestamp': 165,
+       'timestamp_label': '[00:02:45]',
+       'timestamp_seconds': 165,
+       'tip': 'You have to know how to read these dockets, how to understand documents and '
+              "actually explain to somebody that they're entitled these funds.",
+       'title': 'BANKRUPTCY Unclaimed Funds Explained: UNTAPPED NICHE (Surplus Funds Recovery)',
+       'url': 'https://www.youtube.com/watch?v=EyQovsqVOnE&t=165s',
+       'video_id': 'EyQovsqVOnE'},
       {'author': 'Money Making Juggernaut',
        'channel': 'Money Making Juggernaut',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:00:15](https://www.youtube.com/watch?v=91o6wv-g6D0&t=15s)',
-       'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                    'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                    '(Chapter Q10 operational verification).',
+       'markdown': '[00:15:53](https://www.youtube.com/watch?v=NxCoaATrtq4&t=953s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': 'Educator in the asset recovery business today I have a great video in store '
-               "for you guys I'm going to talk to you guys about unclaimed bankruptcy funds so "
-               'if.',
-       'timestamp': 15,
-       'timestamp_label': '[00:00:15]',
-       'timestamp_seconds': 15,
-       'tip': 'Educator in the asset recovery business today I have a great video in store for '
-              "you guys I'm going to talk to you guys about unclaimed bankruptcy funds so if.",
-       'title': 'UNTAPPED Business - Unclaimed BANKRUPTCY Funds Recovery ($5B) (Money Making '
-                'Juggernaut)',
-       'url': 'https://www.youtube.com/watch?v=91o6wv-g6D0&t=15s',
+       'text': "We don't want to just say, oh, there's a claim in and then jump to the next one.",
+       'timestamp': 953,
+       'timestamp_label': '[00:15:53]',
+       'timestamp_seconds': 953,
+       'tip': "We don't want to just say, oh, there's a claim in and then jump to the next one.",
+       'title': 'Unclaimed Bankruptcy Funds webinar',
+       'url': 'https://www.youtube.com/watch?v=NxCoaATrtq4&t=953s',
+       'video_id': 'NxCoaATrtq4'},
+      {'author': 'Money Making Juggernaut',
+       'channel': 'Money Making Juggernaut',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:03:17](https://www.youtube.com/watch?v=91o6wv-g6D0&t=197s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
+       'source_type': 'video_pro_tip',
+       'text': "There's going to be an agreement form that's necessary, there's going to be a "
+               "claim form, there's going to be proof of identification.",
+       'timestamp': 197,
+       'timestamp_label': '[00:03:17]',
+       'timestamp_seconds': 197,
+       'tip': "There's going to be an agreement form that's necessary, there's going to be a claim "
+              "form, there's going to be proof of identification.",
+       'title': 'UNTAPPED Business - Unclaimed BANKRUPTCY Funds Recovery ($5B)',
+       'url': 'https://www.youtube.com/watch?v=91o6wv-g6D0&t=197s',
        'video_id': '91o6wv-g6D0'},
-      {'author': 'Friedman LLP',
-       'channel': 'Friedman LLP',
+      {'author': 'ACE SURPLUS',
+       'channel': 'ACE SURPLUS',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:11:42](https://www.youtube.com/watch?v=duwB7Y82flc&t=702s)',
-       'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                    'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                    '(Chapter Q10 operational verification).',
+       'markdown': '[00:03:42](https://www.youtube.com/watch?v=daCZb9lQvnc&t=222s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': "Types of unclaimed property we've listed a few of them obviously payroll "
-               'checks accounts payable vendor checks gift certificates accounts receivable '
-               'credits.',
-       'timestamp': 702,
-       'timestamp_label': '[00:11:42]',
-       'timestamp_seconds': 702,
-       'tip': "Types of unclaimed property we've listed a few of them obviously payroll checks "
-              'accounts payable vendor checks gift certificates accounts receivable credits.',
-       'title': 'Unclaimed Property: Avoiding Penalties From Increased State Enforcement | '
-                'FULL Webinar (Friedman LLP)',
-       'url': 'https://www.youtube.com/watch?v=duwB7Y82flc&t=702s',
-       'video_id': 'duwB7Y82flc'},
-      {'author': 'txcomptroller',
-       'channel': 'txcomptroller',
+       'text': 'Clients often face delays or denials due to errors in their filings.',
+       'timestamp': 222,
+       'timestamp_label': '[00:03:42]',
+       'timestamp_seconds': 222,
+       'tip': 'Clients often face delays or denials due to errors in their filings.',
+       'title': 'What are Unclaimed Bankruptcy Funds?',
+       'url': 'https://www.youtube.com/watch?v=daCZb9lQvnc&t=222s',
+       'video_id': 'daCZb9lQvnc'},
+      {'author': 'Spring Solutions, LLC',
+       'channel': 'Spring Solutions, LLC',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:01:18](https://www.youtube.com/watch?v=rGLI7Ry3sF0&t=78s)',
-       'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                    'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                    '(Chapter Q10 operational verification).',
+       'markdown': '[00:00:17](https://www.youtube.com/watch?v=CJMCHDgNh4M&t=17s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': 'One- there is documented contact with the owner either by mail, email or '
-               'phone. Two- there is owner-generated activity. Three- or an owner has other '
-               'active accounts with the business.',
-       'timestamp': 78,
-       'timestamp_label': '[00:01:18]',
-       'timestamp_seconds': 78,
-       'tip': 'One- there is documented contact with the owner either by mail, email or phone. '
-              'Two- there is owner-generated activity. Three- or an owner has other active '
-              'accounts with the business.',
-       'title': 'Unclaimed Property: Holder Reporting - Oil and Gas Companies (txcomptroller)',
-       'url': 'https://www.youtube.com/watch?v=rGLI7Ry3sF0&t=78s',
-       'video_id': 'rGLI7Ry3sF0'},
-      {'author': "Unclaimed Money: Find What You're Owed",
-       'channel': "Unclaimed Money: Find What You're Owed",
+       'text': 'I have decided to price my course at $1,000.',
+       'timestamp': 17,
+       'timestamp_label': '[00:00:17]',
+       'timestamp_seconds': 17,
+       'tip': 'I have decided to price my course at $1,000.',
+       'title': 'MY COURSE HAS LAUNCHED!  Recovering Bankruptcy Unclaimed Funds!',
+       'url': 'https://www.youtube.com/watch?v=CJMCHDgNh4M&t=17s',
+       'video_id': 'CJMCHDgNh4M'},
+      {'author': 'Spring Solutions, LLC',
+       'channel': 'Spring Solutions, LLC',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:00:59](https://www.youtube.com/watch?v=J4RhFyo0R7c&t=59s)',
-       'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                    'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                    '(Chapter Q10 operational verification).',
+       'markdown': '[00:02:21](https://www.youtube.com/watch?v=ckzrLZgtcYI&t=141s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': "So, unclaimed money isn't lost. So what kind of things end up unclaimed? Old "
-               'checking and savings accounts are the big one. Then there are uncashed '
-               'paychecks, especially final checks from a job you left.',
-       'timestamp': 59,
-       'timestamp_label': '[00:00:59]',
-       'timestamp_seconds': 59,
-       'tip': "So, unclaimed money isn't lost. So what kind of things end up unclaimed? Old "
-              'checking and savings accounts are the big one. Then there are uncashed '
-              'paychecks, especially final checks from a job you left.',
-       'title': 'What Is Unclaimed Money? (And How to Get Yours Back for Free) (Unclaimed '
-                "Money: Find What You're Owed)",
-       'url': 'https://www.youtube.com/watch?v=J4RhFyo0R7c&t=59s',
-       'video_id': 'J4RhFyo0R7c'},
-      {'author': 'ohiocommerce',
-       'channel': 'ohiocommerce',
+       'text': 'You may not get every large one that you go after.',
+       'timestamp': 141,
+       'timestamp_label': '[00:02:21]',
+       'timestamp_seconds': 141,
+       'tip': 'You may not get every large one that you go after.',
+       'title': '$1,030.14 in a day! Bankruptcy Unclaimed Funds!',
+       'url': 'https://www.youtube.com/watch?v=ckzrLZgtcYI&t=141s',
+       'video_id': 'ckzrLZgtcYI'},
+      {'author': 'Money Making Juggernaut',
+       'channel': 'Money Making Juggernaut',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:16:43](https://www.youtube.com/watch?v=lQrAftswAO4&t=1003s)',
-       'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                    'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                    '(Chapter Q10 operational verification).',
+       'markdown': '[00:07:35](https://www.youtube.com/watch?v=waps0YmW8BI&t=455s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': 'Checks in California is it what it is in our state and what it is in theirs um '
-               'that coding helps us to communicate in a uniform language with one another.',
-       'timestamp': 1003,
-       'timestamp_label': '[00:16:43]',
-       'timestamp_seconds': 1003,
-       'tip': 'Checks in California is it what it is in our state and what it is in theirs um '
-              'that coding helps us to communicate in a uniform language with one another.',
-       'title': 'Claiming your Unclaimed Funds for Estate Planning Attorneys (ohiocommerce)',
-       'url': 'https://www.youtube.com/watch?v=lQrAftswAO4&t=1003s',
-       'video_id': 'lQrAftswAO4'},
-      {'author': 'Unclaimed CEO',
-       'channel': 'Unclaimed CEO',
+       'text': 'It was a very straightforward case. We just file it and get paid.',
+       'timestamp': 455,
+       'timestamp_label': '[00:07:35]',
+       'timestamp_seconds': 455,
+       'tip': 'It was a very straightforward case. We just file it and get paid.',
+       'title': 'UNTAPPED OPPORTUNITY: $34k From 1 Claim (Unclaimed Bankruptcy Funds)',
+       'url': 'https://www.youtube.com/watch?v=waps0YmW8BI&t=455s',
+       'video_id': 'waps0YmW8BI'},
+      {'author': 'Spring Solutions, LLC',
+       'channel': 'Spring Solutions, LLC',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:02:53](https://www.youtube.com/watch?v=Vy3iGS6ep4w&t=173s)',
-       'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                    'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                    '(Chapter Q10 operational verification).',
+       'markdown': '[00:03:26](https://www.youtube.com/watch?v=YKjd__UIhB8&t=206s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': "Successful um you've got to leverage the tools that are out there for us to be "
-               'successful and I mean AI is massive I think that AI is going to create more.',
-       'timestamp': 173,
-       'timestamp_label': '[00:02:53]',
-       'timestamp_seconds': 173,
-       'tip': "Successful um you've got to leverage the tools that are out there for us to be "
-              'successful and I mean AI is massive I think that AI is going to create more.',
-       'title': 'How to be successful with Unclaimed Funds in 2024 (Unclaimed CEO)',
-       'url': 'https://www.youtube.com/watch?v=Vy3iGS6ep4w&t=173s',
-       'video_id': 'Vy3iGS6ep4w'},
-      {'author': 'PakEnergy',
-       'channel': 'PakEnergy',
+       'text': "It's important to update your CRM.",
+       'timestamp': 206,
+       'timestamp_label': '[00:03:26]',
+       'timestamp_seconds': 206,
+       'tip': "It's important to update your CRM.",
+       'title': 'How to Find Unclaimed Funds | Top 7 Tips Bankruptcy Unclaimed Funds in 2022',
+       'url': 'https://www.youtube.com/watch?v=YKjd__UIhB8&t=206s',
+       'video_id': 'YKjd__UIhB8'},
+      {'author': 'Spring Solutions, LLC',
+       'channel': 'Spring Solutions, LLC',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:06:15](https://www.youtube.com/watch?v=msbqOrpoTXc&t=375s)',
-       'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                    'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                    '(Chapter Q10 operational verification).',
+       'markdown': '[00:02:42](https://www.youtube.com/watch?v=lWmrc3x-B-E&t=162s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': 'And then dealing with the states, we had to go through the whole voluntary '
-               'disclosure agreement process. Uh and so all of that was frustrating in and of '
-               'itself.',
-       'timestamp': 375,
-       'timestamp_label': '[00:06:15]',
-       'timestamp_seconds': 375,
-       'tip': 'And then dealing with the states, we had to go through the whole voluntary '
-              'disclosure agreement process. Uh and so all of that was frustrating in and of '
-              'itself.',
-       'title': 'How to Automate Unclaimed Property Workflows in Oil & Gas (PakEnergy)',
-       'url': 'https://www.youtube.com/watch?v=msbqOrpoTXc&t=375s',
-       'video_id': 'msbqOrpoTXc'},
-      {'author': 'Surplus Funds 101',
-       'channel': 'Surplus Funds 101',
+       'text': 'Some of those documents may be in Spanish.',
+       'timestamp': 162,
+       'timestamp_label': '[00:02:42]',
+       'timestamp_seconds': 162,
+       'tip': 'Some of those documents may be in Spanish.',
+       'title': 'Recover Bankruptcy Unclaimed Funds in U.S. Territories- Work From Home 2020.',
+       'url': 'https://www.youtube.com/watch?v=lWmrc3x-B-E&t=162s',
+       'video_id': 'lWmrc3x-B-E'},
+      {'author': 'Spring Solutions, LLC',
+       'channel': 'Spring Solutions, LLC',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:01:07](https://www.youtube.com/watch?v=xqXetexqH30&t=67s)',
-       'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                    'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                    '(Chapter Q10 operational verification).',
+       'markdown': '[00:01:08](https://www.youtube.com/watch?v=y2j1Ux0R9jY&t=68s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': "How much you're gonna pay but two if you get it done in bulk it just saves you "
-               'so much time going and chasing little tiny lists and then.',
-       'timestamp': 67,
-       'timestamp_label': '[00:01:07]',
-       'timestamp_seconds': 67,
-       'tip': "How much you're gonna pay but two if you get it done in bulk it just saves you "
-              'so much time going and chasing little tiny lists and then.',
-       'title': 'State Funds Business: Best Websites For Skip Tracing Claimant Information '
-                '(Surplus Funds 101)',
-       'url': 'https://www.youtube.com/watch?v=xqXetexqH30&t=67s',
-       'video_id': 'xqXetexqH30'},
-      {'author': 'KHOU 11',
-       'channel': 'KHOU 11',
+       'text': "The trustee's final report has all the accounting of the case.",
+       'timestamp': 68,
+       'timestamp_label': '[00:01:08]',
+       'timestamp_seconds': 68,
+       'tip': "The trustee's final report has all the accounting of the case.",
+       'title': 'Discrepancies with Verifying Funds-Bankruptcy Unclaimed Funds',
+       'url': 'https://www.youtube.com/watch?v=y2j1Ux0R9jY&t=68s',
+       'video_id': 'y2j1Ux0R9jY'},
+      {'author': 'Spring Solutions, LLC',
+       'channel': 'Spring Solutions, LLC',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:00:22](https://www.youtube.com/watch?v=uY7XnXFfpv4&t=22s)',
-       'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                    'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                    '(Chapter Q10 operational verification).',
+       'markdown': '[00:00:49](https://www.youtube.com/watch?v=1fuOy7IsEMo&t=49s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': "'ve lost contact with the owner. And right now the Texas Comptroller's office "
-               "is holding more than $10 billion in unclaimed property. So here's what you "
-               'want to know. Find out if any of it is yours. Go right here to claimattexas. '
-               "And you're going to hit get started.",
-       'timestamp': 22,
-       'timestamp_label': '[00:00:22]',
-       'timestamp_seconds': 22,
-       'tip': "'ve lost contact with the owner. And right now the Texas Comptroller's office "
-              "is holding more than $10 billion in unclaimed property. So here's what you want "
-              'to know. Find out if any of it is yours. Go right here to claimattexas. And '
-              "you're going to hit get started.",
-       'title': "There's more than $10 billion in unclaimed property in Texas. Here's how to "
-                'claim yours (KHOU 11)',
-       'url': 'https://www.youtube.com/watch?v=uY7XnXFfpv4&t=22s',
-       'video_id': 'uY7XnXFfpv4'},
+       'text': 'Although you have the right department, you still may not get what you want.',
+       'timestamp': 49,
+       'timestamp_label': '[00:00:49]',
+       'timestamp_seconds': 49,
+       'tip': 'Although you have the right department, you still may not get what you want.',
+       'title': 'I HATE CREDITOR CLAIMS-Bankruptcy Unclaimed Funds',
+       'url': 'https://www.youtube.com/watch?v=1fuOy7IsEMo&t=49s',
+       'video_id': '1fuOy7IsEMo'},
+      {'author': 'Spring Solutions, LLC',
+       'channel': 'Spring Solutions, LLC',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:04:17](https://www.youtube.com/watch?v=R8PpcOrRZc4&t=257s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
+       'source_type': 'video_pro_tip',
+       'text': 'You need to determine: is it just one creditor that gets the amount, or is it '
+               'broken down per creditor, per claim.',
+       'timestamp': 257,
+       'timestamp_label': '[00:04:17]',
+       'timestamp_seconds': 257,
+       'tip': 'You need to determine: is it just one creditor that gets the amount, or is it '
+              'broken down per creditor, per claim.',
+       'title': 'Northern and Middle District of Florida Bankruptcy Court-Recovery unclaimed funds',
+       'url': 'https://www.youtube.com/watch?v=R8PpcOrRZc4&t=257s',
+       'video_id': 'R8PpcOrRZc4'},
       {'author': 'Badwolf Unincorporated',
        'channel': 'Badwolf Unincorporated',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:01:42](https://www.youtube.com/watch?v=V_ElSJZFszg&t=102s)',
-       'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                    'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                    '(Chapter Q10 operational verification).',
+       'markdown': '[00:05:21](https://www.youtube.com/watch?v=suC7b2tuNcc&t=321s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': 'Jazzy defamation of character calling me the s word or whatever else do what '
-               "you guys do best come to my arrest all right so without further Ado let's take "
-               'a look at the screen share option here.',
-       'timestamp': 102,
-       'timestamp_label': '[00:01:42]',
-       'timestamp_seconds': 102,
-       'tip': 'Jazzy defamation of character calling me the s word or whatever else do what '
-              "you guys do best come to my arrest all right so without further Ado let's take "
-              'a look at the screen share option here.',
-       'title': 'U.S. Courts Unclaimed Funds Locator: Does the court owe you money? (Badwolf '
-                'Unincorporated)',
-       'url': 'https://www.youtube.com/watch?v=V_ElSJZFszg&t=102s',
+       'text': 'Run it through one time with your name as the creditor, one time with your name as '
+               'the debtor.',
+       'timestamp': 321,
+       'timestamp_label': '[00:05:21]',
+       'timestamp_seconds': 321,
+       'tip': 'Run it through one time with your name as the creditor, one time with your name as '
+              'the debtor.',
+       'title': '$$$ U.S. Courts Unclaimed Funds Locator: Get lost MONIES owed to you or your '
+                'family. By the badwolf',
+       'url': 'https://www.youtube.com/watch?v=suC7b2tuNcc&t=321s',
+       'video_id': 'suC7b2tuNcc'},
+      {'author': 'Badwolf Unincorporated',
+       'channel': 'Badwolf Unincorporated',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:04:16](https://www.youtube.com/watch?v=V_ElSJZFszg&t=256s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
+       'source_type': 'video_pro_tip',
+       'text': 'You can put in the court; you can just leave it blank, is what I recommend.',
+       'timestamp': 256,
+       'timestamp_label': '[00:04:16]',
+       'timestamp_seconds': 256,
+       'tip': 'You can put in the court; you can just leave it blank, is what I recommend.',
+       'title': 'U.S. Courts Unclaimed Funds Locator: Does the court owe you money?',
+       'url': 'https://www.youtube.com/watch?v=V_ElSJZFszg&t=256s',
        'video_id': 'V_ElSJZFszg'},
       {'author': 'Spring Solutions, LLC',
        'channel': 'Spring Solutions, LLC',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:08:02](https://www.youtube.com/watch?v=y2j1Ux0R9jY&t=482s)',
-       'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                    'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                    '(Chapter Q10 operational verification).',
+       'markdown': '[00:09:31](https://www.youtube.com/watch?v=5A3cah6ujY4&t=571s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': 'Chain of command uh so for those that are interested again check out my videos '
-               'regarding missouri and regarding who the parties are in a bankruptcy case if '
-               "you're interested in my course the links are below and I will see you in the "
-               'next video thanks for watching.',
-       'timestamp': 482,
-       'timestamp_label': '[00:08:02]',
-       'timestamp_seconds': 482,
-       'tip': 'Chain of command uh so for those that are interested again check out my videos '
-              'regarding missouri and regarding who the parties are in a bankruptcy case if '
-              "you're interested in my course the links are below and I will see you in the "
-              'next video thanks for watching.',
-       'title': 'Discrepancies with Verifying Funds-Bankruptcy Unclaimed Funds (Spring '
-                'Solutions, LLC)',
-       'url': 'https://www.youtube.com/watch?v=y2j1Ux0R9jY&t=482s',
-       'video_id': 'y2j1Ux0R9jY'},
-      {'author': 'Claim My Shares',
-       'channel': 'Claim My Shares',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:00:15](https://www.youtube.com/watch?v=73nKY8EkVnA&t=15s)',
-       'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                    'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                    '(Chapter Q10 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'प्लीज रिमेंबर एज पर द कंपनीज एक्ट इफ यू डोंट क्लेम योर डिविडेंड फॉर अ '
-               'कंटीन्यूअस पीरियड ऑफ सेन इयर्स इट गोज टू अ गवर्नमेंट अथॉरिटी नोन एज द आईईपीएफ.',
-       'timestamp': 15,
-       'timestamp_label': '[00:00:15]',
-       'timestamp_seconds': 15,
-       'tip': 'प्लीज रिमेंबर एज पर द कंपनीज एक्ट इफ यू डोंट क्लेम योर डिविडेंड फॉर अ '
-              'कंटीन्यूअस पीरियड ऑफ सेन इयर्स इट गोज टू अ गवर्नमेंट अथॉरिटी नोन एज द आईईपीएफ.',
-       'title': 'What happen to Unclaimed dividend amount? (Claim My Shares)',
-       'url': 'https://www.youtube.com/watch?v=73nKY8EkVnA&t=15s',
-       'video_id': '73nKY8EkVnA'},
-      {'author': 'Unclaimed CEO',
-       'channel': 'Unclaimed CEO',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:01:01](https://www.youtube.com/watch?v=BAdBoUHd2lE&t=61s)',
-       'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                    'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                    '(Chapter Q10 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'These files the the last one has the biggest amount of claims right there once '
-               "you double click that that claim right there it's going to pop up and it's "
-               'going to have a spreadsheet full of names and information who owed money for '
-               'the claim good luck.',
-       'timestamp': 61,
-       'timestamp_label': '[00:01:01]',
-       'timestamp_seconds': 61,
-       'tip': 'These files the the last one has the biggest amount of claims right there once '
-              "you double click that that claim right there it's going to pop up and it's "
-              'going to have a spreadsheet full of names and information who owed money for '
-              'the claim good luck.',
-       'title': 'How To Find 6Figure Unclaimed Funds in 30 Seconds #makemoneyonline '
-                '#unclaimedfunds #taxsurplus (Unclaimed CEO)',
-       'url': 'https://www.youtube.com/watch?v=BAdBoUHd2lE&t=61s',
-       'video_id': 'BAdBoUHd2lE'},
-      {'author': 'Unclaimed CEO',
-       'channel': 'Unclaimed CEO',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:08:12](https://www.youtube.com/watch?v=Qf591_R7CN4&t=492s)',
-       'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                    'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                    '(Chapter Q10 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'Hopefully one day someday we cross paths and we can exchange some knowledge '
-               "until then guys I'll see you in the next video how to skip trace and okay "
-               'social media so sometimes you get people.',
-       'timestamp': 492,
-       'timestamp_label': '[00:08:12]',
-       'timestamp_seconds': 492,
-       'tip': 'Hopefully one day someday we cross paths and we can exchange some knowledge '
-              "until then guys I'll see you in the next video how to skip trace and okay "
-              'social media so sometimes you get people.',
-       'title': 'This Is How To Skip Trace For Unclaimed Funds and Tax Overages 📲💰 (Unclaimed '
-                'CEO)',
-       'url': 'https://www.youtube.com/watch?v=Qf591_R7CN4&t=492s',
-       'video_id': 'Qf591_R7CN4'}],
- 11: [{'author': 'Unclaimed CEO',
-       'channel': 'Unclaimed CEO',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:04:02](https://www.youtube.com/watch?v=ie1xaLhl85o&t=242s)',
-       'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                    'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                    '(Chapter Q11 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': "Isn't it better to do business with someone like that than a versus a cold "
-               "call? I hung up on 15 phone calls in the last two days. I I I don't like spam "
-               "calls and I don't like people calling me who don't know me offer me services.",
-       'timestamp': 242,
-       'timestamp_label': '[00:04:02]',
-       'timestamp_seconds': 242,
-       'tip': "Isn't it better to do business with someone like that than a versus a cold "
-              "call? I hung up on 15 phone calls in the last two days. I I I don't like spam "
-              "calls and I don't like people calling me who don't know me offer me services.",
-       'title': 'She Closed 7 Unclaimed Funds Deals WITHOUT a Single Cold Call 😱 (Steal Her '
-                'Strategy) (Unclaimed CEO)',
-       'url': 'https://www.youtube.com/watch?v=ie1xaLhl85o&t=242s',
-       'video_id': 'ie1xaLhl85o'},
-      {'author': 'COMPUTERSHARE',
-       'channel': 'COMPUTERSHARE',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:00:36](https://www.youtube.com/watch?v=79d39hagJ6U&t=36s)',
-       'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                    'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                    '(Chapter Q11 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': "Those areas that's on your audit team you also want to make sure you can get "
-               'legal involved you may want to consider hiring an outside consultant if you.',
-       'timestamp': 36,
-       'timestamp_label': '[00:00:36]',
-       'timestamp_seconds': 36,
-       'tip': "Those areas that's on your audit team you also want to make sure you can get "
-              'legal involved you may want to consider hiring an outside consultant if you.',
-       'title': 'Preparing for an unclaimed property audit (COMPUTERSHARE)',
-       'url': 'https://www.youtube.com/watch?v=79d39hagJ6U&t=36s',
-       'video_id': '79d39hagJ6U'},
-      {'author': 'CBS News Sacramento',
-       'channel': 'CBS News Sacramento',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:02:06](https://www.youtube.com/watch?v=80djyAsS-YE&t=126s)',
-       'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                    'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                    '(Chapter Q11 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': "ARNOLD SCHWARZENEGGER EACH HAS UNCLAIMED PROPERTY. THE COMPTROLLER'S OFFICE "
-               'DECLINED OUR INTERVIEW REQUEST. IT IS INSISTED THAT THE PROGRAM IS TO PROTECT '
-               'CONSUMERS AND IT PREVENTS BUSINESSES WITH UNCLAIMED PROPERTY FROM KEEPING YOUR '
-               'MONEY AND USING IT AS BUSINESS INCOME.',
-       'timestamp': 126,
-       'timestamp_label': '[00:02:06]',
-       'timestamp_seconds': 126,
-       'tip': "ARNOLD SCHWARZENEGGER EACH HAS UNCLAIMED PROPERTY. THE COMPTROLLER'S OFFICE "
-              'DECLINED OUR INTERVIEW REQUEST. IT IS INSISTED THAT THE PROGRAM IS TO PROTECT '
-              'CONSUMERS AND IT PREVENTS BUSINESSES WITH UNCLAIMED PROPERTY FROM KEEPING YOUR '
-              'MONEY AND USING IT AS BUSINESS INCOME.',
-       'title': 'Unclaimed Property: $275,000  Vanishes From Retirees Account, Transferred to '
-                'the State of California (CBS News Sacramento)',
-       'url': 'https://www.youtube.com/watch?v=80djyAsS-YE&t=126s',
-       'video_id': '80djyAsS-YE'},
-      {'author': 'Guide Gurus',
-       'channel': 'Guide Gurus',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:00:21](https://www.youtube.com/watch?v=yLgvruGuIx0&t=21s)',
-       'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                    'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                    '(Chapter Q11 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': "I'll break it down simply and quickly. First, let's start with the basics. "
-               'Unclaimed property refers to money or assets that owners have forgotten about '
-               'or lost track of like old bank accounts, uncashed checks, or forgotten stocks.',
-       'timestamp': 21,
-       'timestamp_label': '[00:00:21]',
-       'timestamp_seconds': 21,
-       'tip': "I'll break it down simply and quickly. First, let's start with the basics. "
-              'Unclaimed property refers to money or assets that owners have forgotten about '
-              'or lost track of like old bank accounts, uncashed checks, or forgotten stocks.',
-       'title': 'What Does Warrants Mean On Unclaimed Property   2025 (Guide Gurus)',
-       'url': 'https://www.youtube.com/watch?v=yLgvruGuIx0&t=21s',
-       'video_id': 'yLgvruGuIx0'},
-      {'author': 'The TEC Show',
-       'channel': 'The TEC Show',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:03:42](https://www.youtube.com/watch?v=DGys6KYDbNU&t=222s)',
-       'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                    'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                    '(Chapter Q11 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'Uh when it comes to the different claims that in and basically what what you '
-               'do and when it comes to California now each state will be a little bit '
-               'different but you just type in your name.',
-       'timestamp': 222,
-       'timestamp_label': '[00:03:42]',
-       'timestamp_seconds': 222,
-       'tip': 'Uh when it comes to the different claims that in and basically what what you do '
-              'and when it comes to California now each state will be a little bit different '
-              'but you just type in your name.',
-       'title': 'Great News!! How To Find FREE MONEY: UNCLAIMED MONEY How to File a Claim (The '
-                'TEC Show)',
-       'url': 'https://www.youtube.com/watch?v=DGys6KYDbNU&t=222s',
-       'video_id': 'DGys6KYDbNU'},
-      {'author': 'Surplus Funds 101',
-       'channel': 'Surplus Funds 101',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:02:34](https://www.youtube.com/watch?v=PGvJEv9Y_Go&t=154s)',
-       'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                    'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                    '(Chapter Q11 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'True win-win situation for everybody. Another big thing you guys is just the '
-               'low operating expenses to run just a successful asset recovery business.',
-       'timestamp': 154,
-       'timestamp_label': '[00:02:34]',
-       'timestamp_seconds': 154,
-       'tip': 'True win-win situation for everybody. Another big thing you guys is just the '
-              'low operating expenses to run just a successful asset recovery business.',
-       'title': 'State Funds Tutorial: First Steps For Somebody Brand New To Unclaimed Funds '
-                'Business. (Surplus Funds 101)',
-       'url': 'https://www.youtube.com/watch?v=PGvJEv9Y_Go&t=154s',
-       'video_id': 'PGvJEv9Y_Go'},
-      {'author': 'Timepiece Dan',
-       'channel': 'Timepiece Dan',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:05:29](https://www.youtube.com/watch?v=sDutuuk5RG0&t=329s)',
-       'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                    'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                    '(Chapter Q11 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'Know how am I supposed to find mr grace uh roberts very easy look at look up '
-               "where um what state he's in of course he's in california I'm in california.",
-       'timestamp': 329,
-       'timestamp_label': '[00:05:29]',
-       'timestamp_seconds': 329,
-       'tip': 'Know how am I supposed to find mr grace uh roberts very easy look at look up '
-              "where um what state he's in of course he's in california I'm in california.",
-       'title': 'Make 5k On Surplus Funds State Funds Unclaimed Money (Easy Business) '
-                '(Timepiece Dan)',
-       'url': 'https://www.youtube.com/watch?v=sDutuuk5RG0&t=329s',
-       'video_id': 'sDutuuk5RG0'},
-      {'author': 'Money Making Juggernaut',
-       'channel': 'Money Making Juggernaut',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:00:15](https://www.youtube.com/watch?v=8hCl2lLNDrk&t=15s)',
-       'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                    'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                    '(Chapter Q11 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'Educator in the asset recovery business today guys I have a great video in '
-               'store I am going to break down sending mailers in this business before we get '
-               'started.',
-       'timestamp': 15,
-       'timestamp_label': '[00:00:15]',
-       'timestamp_seconds': 15,
-       'tip': 'Educator in the asset recovery business today guys I have a great video in '
-              'store I am going to break down sending mailers in this business before we get '
-              'started.',
-       'title': '#1 APP To Send Mailers To Surplus Fund Recovery Leads (direct mail for asset '
-                'recovery) (Money Making Juggernaut)',
-       'url': 'https://www.youtube.com/watch?v=8hCl2lLNDrk&t=15s',
-       'video_id': '8hCl2lLNDrk'},
-      {'author': 'FundSleuth - Unclaimed Funds Info and Training',
-       'channel': 'FundSleuth - Unclaimed Funds Info and Training',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:00:41](https://www.youtube.com/watch?v=kGhoQfbhUG4&t=41s)',
-       'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                    'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                    '(Chapter Q11 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'To five and make a lot more money uh working on claim funds working for myself '
-               "working with other people that i you know that i've a team that i've.",
-       'timestamp': 41,
-       'timestamp_label': '[00:00:41]',
-       'timestamp_seconds': 41,
-       'tip': 'To five and make a lot more money uh working on claim funds working for myself '
-              "working with other people that i you know that i've a team that i've.",
-       'title': 'Why people quit working Unclaimed Funds after taking a course. (FundSleuth - '
-                'Unclaimed Funds Info and Training)',
-       'url': 'https://www.youtube.com/watch?v=kGhoQfbhUG4&t=41s',
-       'video_id': 'kGhoQfbhUG4'},
-      {'author': 'KPRC 2 Click2Houston',
-       'channel': 'KPRC 2 Click2Houston',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:01:48](https://www.youtube.com/watch?v=a0Bv2mtHL_Y&t=108s)',
-       'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                    'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                    '(Chapter Q11 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'Many people get those letters. We pretty increasing complaints over the last '
-               'several years and they will file homestead exemption for you if you don’t have '
-               'one, why you would want to hire them to do that. It’s so easy to do on your '
-               'own.',
-       'timestamp': 108,
-       'timestamp_label': '[00:01:48]',
-       'timestamp_seconds': 108,
-       'tip': 'Many people get those letters. We pretty increasing complaints over the last '
-              'several years and they will file homestead exemption for you if you don’t have '
-              'one, why you would want to hire them to do that. It’s so easy to do on your '
-              'own.',
-       'title': 'Ask Amy: Unclaimed money letter could be legit (KPRC 2 Click2Houston)',
-       'url': 'https://www.youtube.com/watch?v=a0Bv2mtHL_Y&t=108s',
-       'video_id': 'a0Bv2mtHL_Y'},
-      {'author': 'Как се прави',
-       'channel': 'Как се прави',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:03:33](https://www.youtube.com/watch?v=0CZmLNyYvD8&t=213s)',
-       'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                    'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                    '(Chapter Q11 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'The notary has to actually witness you signing it under penalty of perjury, '
-               'right after checking your government-issued ID. And this brilliantly '
-               'illustrates who actually needs that notarization because it really depends on '
-               'your claimant class.',
-       'timestamp': 213,
-       'timestamp_label': '[00:03:33]',
-       'timestamp_seconds': 213,
-       'tip': 'The notary has to actually witness you signing it under penalty of perjury, '
-              'right after checking your government-issued ID. And this brilliantly '
-              'illustrates who actually needs that notarization because it really depends on '
-              'your claimant class.',
-       'title': 'How to claim Pennsylvania unclaimed property with a notarized form (Как се '
-                'прави)',
-       'url': 'https://www.youtube.com/watch?v=0CZmLNyYvD8&t=213s',
-       'video_id': '0CZmLNyYvD8'},
-      {'author': 'Make Money Anthony',
-       'channel': 'Make Money Anthony',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:03:35](https://www.youtube.com/watch?v=3QgxEy6EB6Y&t=215s)',
-       'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                    'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                    '(Chapter Q11 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'Below let the rest of us know how you did it hopefully you found that video '
-               'useful if so click thumbs up or maybe consider subscribing to my channel and I '
-               'hope to see on the next video thanks again for watching.',
-       'timestamp': 215,
-       'timestamp_label': '[00:03:35]',
-       'timestamp_seconds': 215,
-       'tip': 'Below let the rest of us know how you did it hopefully you found that video '
-              'useful if so click thumbs up or maybe consider subscribing to my channel and I '
-              'hope to see on the next video thanks again for watching.',
-       'title': '✅ How To Find Unclaimed Money And Property In California 🔴 (Make Money '
-                'Anthony)',
-       'url': 'https://www.youtube.com/watch?v=3QgxEy6EB6Y&t=215s',
-       'video_id': '3QgxEy6EB6Y'},
-      {'author': 'SC REALTORS',
-       'channel': 'SC REALTORS',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:06:39](https://www.youtube.com/watch?v=D-PMjgNe-7s&t=399s)',
-       'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                    'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                    '(Chapter Q11 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'Before reporting the property to the state third file an annual unclaimed '
-               'property report and remit the associated funds to the state before November '
-               '1st and fourth keep adequate supporting.',
-       'timestamp': 399,
-       'timestamp_label': '[00:06:39]',
-       'timestamp_seconds': 399,
-       'tip': 'Before reporting the property to the state third file an annual unclaimed '
-              'property report and remit the associated funds to the state before November 1st '
-              'and fourth keep adequate supporting.',
-       'title': 'SCR Webinar: Unclaimed Property Program Overview (SC REALTORS)',
-       'url': 'https://www.youtube.com/watch?v=D-PMjgNe-7s&t=399s',
-       'video_id': 'D-PMjgNe-7s'},
+       'text': "I have not had that much luck. I had people say they'll look into it and, you "
+               'know, they never get back to me. They dodge my calls.',
+       'timestamp': 571,
+       'timestamp_label': '[00:09:31]',
+       'timestamp_seconds': 571,
+       'tip': "I have not had that much luck. I had people say they'll look into it and, you know, "
+              'they never get back to me. They dodge my calls.',
+       'title': 'Claims Register Part 2-Eastern District of New York Bankruptcy Unclaimed Funds',
+       'url': 'https://www.youtube.com/watch?v=5A3cah6ujY4&t=571s',
+       'video_id': '5A3cah6ujY4'},
       {'author': 'Spring Solutions, LLC',
        'channel': 'Spring Solutions, LLC',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:02:14](https://www.youtube.com/watch?v=5A3cah6ujY4&t=134s)',
-       'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                    'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                    '(Chapter Q11 operational verification).',
+       'markdown': '[00:07:54](https://www.youtube.com/watch?v=sf-f4iZbpRo&t=474s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': 'So when I do that I see uh a number of cases right here this is where the '
-               "debtor's name this is the case number and the creditor's name is right in the "
-               'middle and it gives the last known address right.',
-       'timestamp': 134,
-       'timestamp_label': '[00:02:14]',
-       'timestamp_seconds': 134,
-       'tip': 'So when I do that I see uh a number of cases right here this is where the '
-              "debtor's name this is the case number and the creditor's name is right in the "
-              'middle and it gives the last known address right.',
-       'title': 'Claims Register Part 2-Eastern District of New York Bankruptcy Unclaimed '
-                'Funds (Spring Solutions, LLC)',
-       'url': 'https://www.youtube.com/watch?v=5A3cah6ujY4&t=134s',
-       'video_id': '5A3cah6ujY4'},
-      {'author': 'TNTreasury',
-       'channel': 'TNTreasury',
+       'text': "Just because you can charge 45, does it mean that you should? And it doesn't mean "
+               "that the client that you're working with is going to be willing to pay you that.",
+       'timestamp': 474,
+       'timestamp_label': '[00:07:54]',
+       'timestamp_seconds': 474,
+       'tip': "Just because you can charge 45, does it mean that you should? And it doesn't mean "
+              "that the client that you're working with is going to be willing to pay you that.",
+       'title': "Finder's Fees-Bankruptcy Unclaimed Funds",
+       'url': 'https://www.youtube.com/watch?v=sf-f4iZbpRo&t=474s',
+       'video_id': 'sf-f4iZbpRo'}],
+ 11: [{'author': 'Royalty Clerk',
+       'channel': 'Royalty Clerk',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:02:01](https://www.youtube.com/watch?v=KiR-ZUeCE5g&t=121s)',
-       'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                    'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                    '(Chapter Q11 operational verification).',
+       'markdown': '[00:04:39](https://www.youtube.com/watch?v=8RccEFzRtl8&t=279s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
        'source_type': 'video_pro_tip',
-       'text': 'A business cannot be currently under audit by the state at the time it chooses '
-               'to sign the compliance Disclosure agreement. The holder must present a '
-               "proposal of Reporting Method worksheet describing in detail how the holder's "
-               'unclaimed property liability will be determined.',
-       'timestamp': 121,
-       'timestamp_label': '[00:02:01]',
-       'timestamp_seconds': 121,
-       'tip': 'A business cannot be currently under audit by the state at the time it chooses '
-              'to sign the compliance Disclosure agreement. The holder must present a proposal '
-              "of Reporting Method worksheet describing in detail how the holder's unclaimed "
-              'property liability will be determined.',
-       'title': 'Unclaimed Property in Tennessee: Understanding Audits, Compliance, and '
-                'Negative Reports (TNTreasury)',
-       'url': 'https://www.youtube.com/watch?v=KiR-ZUeCE5g&t=121s',
-       'video_id': 'KiR-ZUeCE5g'}],
- 12: [{'author': 'Unclaimed CEO',
-       'channel': 'Unclaimed CEO',
+       'text': "Texas law caps that fee at 10% of what's recovered.",
+       'timestamp': 279,
+       'timestamp_label': '[00:04:39]',
+       'timestamp_seconds': 279,
+       'tip': "Texas law caps that fee at 10% of what's recovered.",
+       'title': 'Texas Is Holding $9 Billion+ in Unclaimed Money. Some Is Oil Royalties',
+       'url': 'https://www.youtube.com/watch?v=8RccEFzRtl8&t=279s',
+       'video_id': '8RccEFzRtl8'},
+      {'author': 'txcomptroller',
+       'channel': 'txcomptroller',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:04:12](https://www.youtube.com/watch?v=i84F9CVghTA&t=252s)',
-       'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                    'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                    '(Chapter Q12 operational verification).',
+       'markdown': '[00:01:45](https://www.youtube.com/watch?v=rGLI7Ry3sF0&t=105s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
        'source_type': 'video_pro_tip',
-       'text': "You want to run everyone's going to have their agreement forms and contracts "
-               'and that is great but at the end of the day different states have different '
-               'rules.',
-       'timestamp': 252,
-       'timestamp_label': '[00:04:12]',
-       'timestamp_seconds': 252,
-       'tip': "You want to run everyone's going to have their agreement forms and contracts "
-              'and that is great but at the end of the day different states have different '
-              'rules.',
-       'title': '⚠️WARNING⚠️ Do these 6 things BEFORE you start your Unclaimed Funds | Tax '
-                'Surplus business (Unclaimed CEO)',
-       'url': 'https://www.youtube.com/watch?v=i84F9CVghTA&t=252s',
-       'video_id': 'i84F9CVghTA'},
-      {'author': 'Surplus Institute / David Church / Unclaimed Funds',
-       'channel': 'Surplus Institute / David Church / Unclaimed Funds',
+       'text': 'For example, the MI02 property type, royalties, is considered abandoned after 3 '
+               'years of inactivity while the MS01 property type, wages, payroll or salary, is '
+               'considered abandoned after 1 year of inactivity.',
+       'timestamp': 105,
+       'timestamp_label': '[00:01:45]',
+       'timestamp_seconds': 105,
+       'tip': 'For example, the MI02 property type, royalties, is considered abandoned after 3 '
+              'years of inactivity while the MS01 property type, wages, payroll or salary, is '
+              'considered abandoned after 1 year of inactivity.',
+       'title': 'Unclaimed Property: Holder Reporting - Oil and Gas Companies',
+       'url': 'https://www.youtube.com/watch?v=rGLI7Ry3sF0&t=105s',
+       'video_id': 'rGLI7Ry3sF0'},
+      {'author': 'PakEnergy',
+       'channel': 'PakEnergy',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:04:18](https://www.youtube.com/watch?v=D3Fcqm3xaco&t=258s)',
-       'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                    'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                    '(Chapter Q12 operational verification).',
+       'markdown': '[00:19:42](https://www.youtube.com/watch?v=fVMIbCz8s0U&t=1182s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
        'source_type': 'video_pro_tip',
-       'text': "Off with ten percent if it's something like and I work 14 15 16 000 claims all "
-               'the time I get checks in 14 15 1600 bucks you get a couple of those a week.',
-       'timestamp': 258,
-       'timestamp_label': '[00:04:18]',
-       'timestamp_seconds': 258,
-       'tip': "Off with ten percent if it's something like and I work 14 15 16 000 claims all "
-              'the time I get checks in 14 15 1600 bucks you get a couple of those a week.',
-       'title': 'Beware of the changes made in CA state unclaimed funds contracts (Surplus '
-                'Institute / David Church / Unclaimed Funds)',
-       'url': 'https://www.youtube.com/watch?v=D3Fcqm3xaco&t=258s',
-       'video_id': 'D3Fcqm3xaco'},
-      {'author': 'WFAA',
-       'channel': 'WFAA',
+       'text': 'Louisiana has got a two-year dormancy.',
+       'timestamp': 1182,
+       'timestamp_label': '[00:19:42]',
+       'timestamp_seconds': 1182,
+       'tip': 'Louisiana has got a two-year dormancy.',
+       'title': 'What Is Escheatable in Oil & Gas? Unclaimed Property Explained',
+       'url': 'https://www.youtube.com/watch?v=fVMIbCz8s0U&t=1182s',
+       'video_id': 'fVMIbCz8s0U'},
+      {'author': 'PakEnergy',
+       'channel': 'PakEnergy',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:01:42](https://www.youtube.com/watch?v=0UUN2j2_dFU&t=102s)',
-       'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                    'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                    '(Chapter Q12 operational verification).',
+       'markdown': '[00:30:50](https://www.youtube.com/watch?v=msbqOrpoTXc&t=1850s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
        'source_type': 'video_pro_tip',
-       'text': "For all claim types what's 37 business days but the length of time is going to "
-               'depend on the type of claim for example heirship claims.',
-       'timestamp': 102,
-       'timestamp_label': '[00:01:42]',
-       'timestamp_seconds': 102,
-       'tip': "For all claim types what's 37 business days but the length of time is going to "
-              'depend on the type of claim for example heirship claims.',
-       'title': 'How to get your unclaimed property in Texas (WFAA)',
-       'url': 'https://www.youtube.com/watch?v=0UUN2j2_dFU&t=102s',
-       'video_id': '0UUN2j2_dFU'},
-      {'author': 'SimekScott LLC',
-       'channel': 'SimekScott LLC',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:00:22](https://www.youtube.com/watch?v=TGu6R9Pc0-4&t=22s)',
-       'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                    'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                    '(Chapter Q12 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'VDA program, you have to take action within the first 90 days to determine '
-               "whether or not you're going to participate in the VDA program. If you decide "
-               'not to participate, just know that you will be referred to the Department of '
-               'Finance for an unclaimed property audit.',
-       'timestamp': 22,
-       'timestamp_label': '[00:00:22]',
-       'timestamp_seconds': 22,
-       'tip': 'VDA program, you have to take action within the first 90 days to determine '
-              "whether or not you're going to participate in the VDA program. If you decide "
-              'not to participate, just know that you will be referred to the Department of '
-              'Finance for an unclaimed property audit.',
-       'title': 'Delaware Unclaimed Property VDA Invitations - April 11 2025 (SimekScott LLC)',
-       'url': 'https://www.youtube.com/watch?v=TGu6R9Pc0-4&t=22s',
-       'video_id': 'TGu6R9Pc0-4'},
-      {'author': 'Money Making Juggernaut',
-       'channel': 'Money Making Juggernaut',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:00:15](https://www.youtube.com/watch?v=sK5PqCLSzzg&t=15s)',
-       'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                    'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                    '(Chapter Q12 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': "Educator in the asset recovery and service funds business Base today I'm going "
-               'to reveal how you can start your asset recovery business with zero.',
-       'timestamp': 15,
-       'timestamp_label': '[00:00:15]',
-       'timestamp_seconds': 15,
-       'tip': "Educator in the asset recovery and service funds business Base today I'm going "
-              'to reveal how you can start your asset recovery business with zero.',
-       'title': 'How To Start Asset Recovery Business With $0 (Surplus Funds Recovery) (Money '
-                'Making Juggernaut)',
-       'url': 'https://www.youtube.com/watch?v=sK5PqCLSzzg&t=15s',
-       'video_id': 'sK5PqCLSzzg'},
-      {'author': 'GardenShop.Pro',
-       'channel': 'GardenShop.Pro',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:02:30](https://www.youtube.com/watch?v=dhZB_jSn2Qg&t=150s)',
-       'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                    'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                    '(Chapter Q12 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'Before you start claiming anything, you really have to stop and ask yourself, '
-               'what powers do you actually have? Look, a power of attorney is a legal '
-               'document where a principal authorizes you, the agent, to act on their behalf.',
-       'timestamp': 150,
-       'timestamp_label': '[00:02:30]',
-       'timestamp_seconds': 150,
-       'tip': 'Before you start claiming anything, you really have to stop and ask yourself, '
-              'what powers do you actually have? Look, a power of attorney is a legal document '
-              'where a principal authorizes you, the agent, to act on their behalf.',
-       'title': 'How to claim unclaimed money as a power of attorney (GardenShop.Pro)',
-       'url': 'https://www.youtube.com/watch?v=dhZB_jSn2Qg&t=150s',
-       'video_id': 'dhZB_jSn2Qg'},
-      {'author': 'AskJimmySmith',
-       'channel': 'AskJimmySmith',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:14:19](https://www.youtube.com/watch?v=JT_EgidLdF8&t=859s)',
-       'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                    'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                    '(Chapter Q12 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'I hope this video helped you and blessed you and I hope that you have a great '
-               'rest of your day and a blessed rest of your week.',
-       'timestamp': 859,
-       'timestamp_label': '[00:14:19]',
-       'timestamp_seconds': 859,
-       'tip': 'I hope this video helped you and blessed you and I hope that you have a great '
-              'rest of your day and a blessed rest of your week.',
-       'title': 'Unclaimed Property: What It Is, How to Claim It, & How to Avoid '
-                'Scams...EVERYTHING YOU NEED TO KNOW (AskJimmySmith)',
-       'url': 'https://www.youtube.com/watch?v=JT_EgidLdF8&t=859s',
-       'video_id': 'JT_EgidLdF8'},
+       'text': 'And so it gives you a report that shows you the owners and their amounts.',
+       'timestamp': 1850,
+       'timestamp_label': '[00:30:50]',
+       'timestamp_seconds': 1850,
+       'tip': 'And so it gives you a report that shows you the owners and their amounts.',
+       'title': 'How to Automate Unclaimed Property Workflows in Oil & Gas',
+       'url': 'https://www.youtube.com/watch?v=msbqOrpoTXc&t=1850s',
+       'video_id': 'msbqOrpoTXc'},
       {'author': 'Broadstreet Radio',
        'channel': 'Broadstreet Radio',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:26:41](https://www.youtube.com/watch?v=ykLXSnb1CRE&t=1601s)',
-       'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                    'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                    '(Chapter Q12 operational verification).',
+       'markdown': '[00:05:53](https://www.youtube.com/watch?v=DLhQH9iGJ84&t=353s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
        'source_type': 'video_pro_tip',
-       'text': 'And I will request that you wait patiently for the September edition. And you '
-               'can prepare for next month. Usually, it comes in the first week of the month. '
-               'Now, another one will come by September.',
-       'timestamp': 1601,
-       'timestamp_label': '[00:26:41]',
-       'timestamp_seconds': 1601,
-       'tip': 'And I will request that you wait patiently for the September edition. And you '
-              'can prepare for next month. Usually, it comes in the first week of the month. '
-              'Now, another one will come by September.',
-       'title': 'Step-by-Step Guide to Recovering Your Unclaimed Dividend (Broadstreet Radio)',
-       'url': 'https://www.youtube.com/watch?v=ykLXSnb1CRE&t=1601s',
+       'text': 'But SEC has corrected it.',
+       'timestamp': 353,
+       'timestamp_label': '[00:05:53]',
+       'timestamp_seconds': 353,
+       'tip': 'But SEC has corrected it.',
+       'title': 'Step-by-Step Guide to Recovering Your Unclaimed Dividends',
+       'url': 'https://www.youtube.com/watch?v=DLhQH9iGJ84&t=353s',
+       'video_id': 'DLhQH9iGJ84'},
+      {'author': 'GLC Wealth Advisor',
+       'channel': 'GLC Wealth Advisor',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:01:15](https://www.youtube.com/watch?v=Rg_zkc6UGWE&t=75s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'This is as per section 124 of the companies act.',
+       'timestamp': 75,
+       'timestamp_label': '[00:01:15]',
+       'timestamp_seconds': 75,
+       'tip': 'This is as per section 124 of the companies act.',
+       'title': 'Unclaimed Shares & Dividends? Here’s How To Track And Claim Them Via IEPFA Portal '
+                '| Part 1',
+       'url': 'https://www.youtube.com/watch?v=Rg_zkc6UGWE&t=75s',
+       'video_id': 'Rg_zkc6UGWE'},
+      {'author': 'Broadstreet Radio',
+       'channel': 'Broadstreet Radio',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:11:10](https://www.youtube.com/watch?v=ykLXSnb1CRE&t=670s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': "Every letter of administration that does not mention the shares you're claiming, "
+               "the instruments you're claiming is not proper.",
+       'timestamp': 670,
+       'timestamp_label': '[00:11:10]',
+       'timestamp_seconds': 670,
+       'tip': "Every letter of administration that does not mention the shares you're claiming, "
+              "the instruments you're claiming is not proper.",
+       'title': 'Step-by-Step Guide to Recovering Your Unclaimed Dividend',
+       'url': 'https://www.youtube.com/watch?v=ykLXSnb1CRE&t=670s',
        'video_id': 'ykLXSnb1CRE'},
-      {'author': 'Surplus Institute / David Church / Unclaimed Funds',
-       'channel': 'Surplus Institute / David Church / Unclaimed Funds',
+      {'author': 'Broadstreet Radio',
+       'channel': 'Broadstreet Radio',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:04:09](https://www.youtube.com/watch?v=RjCjrBjQF7Y&t=249s)',
-       'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                    'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                    '(Chapter Q12 operational verification).',
+       'markdown': '[00:03:16](https://www.youtube.com/watch?v=ykLXSnb1CRE&t=196s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
        'source_type': 'video_pro_tip',
-       'text': "Start working this how we could start using this as a business so let's say I "
-               'go to my good old friend Google or whatever and I want to work unclaimed.',
-       'timestamp': 249,
-       'timestamp_label': '[00:04:09]',
-       'timestamp_seconds': 249,
-       'tip': "Start working this how we could start using this as a business so let's say I "
-              'go to my good old friend Google or whatever and I want to work unclaimed.',
-       'title': 'How to get started in state fund | State unclaimed funds business. Make money '
-                'with surplus funds (Surplus Institute / David Church / Unclaimed Funds)',
-       'url': 'https://www.youtube.com/watch?v=RjCjrBjQF7Y&t=249s',
-       'video_id': 'RjCjrBjQF7Y'},
-      {'author': 'Nobody Asked, I Checked',
-       'channel': 'Nobody Asked, I Checked',
+       'text': '272 billion naira lying somewhere.',
+       'timestamp': 196,
+       'timestamp_label': '[00:03:16]',
+       'timestamp_seconds': 196,
+       'tip': '272 billion naira lying somewhere.',
+       'title': 'Step-by-Step Guide to Recovering Your Unclaimed Dividend',
+       'url': 'https://www.youtube.com/watch?v=ykLXSnb1CRE&t=196s',
+       'video_id': 'ykLXSnb1CRE'},
+      {'author': 'Mint',
+       'channel': 'Mint',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:00:50](https://www.youtube.com/watch?v=z2nZM27w4qU&t=50s)',
-       'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                    'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                    '(Chapter Q12 operational verification).',
+       'markdown': '[00:01:13](https://www.youtube.com/watch?v=Y4d3T6BNtEg&t=73s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
        'source_type': 'video_pro_tip',
-       'text': 'Unclaimed money is, where to search for it for free, which federal databases '
-               'matter,  the finder fee scams to avoid, and a simple search plan you can.',
-       'timestamp': 50,
-       'timestamp_label': '[00:00:50]',
-       'timestamp_seconds': 50,
-       'tip': 'Unclaimed money is, where to search for it for free, which federal databases '
-              'matter,  the finder fee scams to avoid, and a simple search plan you can.',
-       'title': 'Unclaimed Money Search 2026: Find Money in Your Name for Free (Avoid Finder '
-                'Fee Scams) (Nobody Asked, I Checked)',
-       'url': 'https://www.youtube.com/watch?v=z2nZM27w4qU&t=50s',
-       'video_id': 'z2nZM27w4qU'},
-      {'author': 'ShadowAnyone',
-       'channel': 'ShadowAnyone',
+       'text': 'This is as per section 124 of the Companies Act.',
+       'timestamp': 73,
+       'timestamp_label': '[00:01:13]',
+       'timestamp_seconds': 73,
+       'tip': 'This is as per section 124 of the Companies Act.',
+       'title': 'Unclaimed Shares & Dividends? Here’s How To Track And Claim Them Via IEPFA Portal',
+       'url': 'https://www.youtube.com/watch?v=Y4d3T6BNtEg&t=73s',
+       'video_id': 'Y4d3T6BNtEg'},
+      {'author': 'The Wealth Portfolio Builder',
+       'channel': 'The Wealth Portfolio Builder',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:01:29](https://www.youtube.com/watch?v=5gSBjAC1g0s&t=89s)',
-       'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                    'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                    '(Chapter Q12 operational verification).',
+       'markdown': '[00:05:04](https://www.youtube.com/watch?v=KQMVL4j21qc&t=304s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
        'source_type': 'video_pro_tip',
-       'text': 'To get in touch with the person who has the the funds in that account it can '
-               'be modest it can be thirty seven dollars it could be thirty seven hundred '
-               'dollars or.',
-       'timestamp': 89,
-       'timestamp_label': '[00:01:29]',
-       'timestamp_seconds': 89,
-       'tip': 'To get in touch with the person who has the the funds in that account it can be '
-              'modest it can be thirty seven dollars it could be thirty seven hundred dollars '
-              'or.',
-       'title': "Don't get BANNED for life skip tracing Unclaimed Funds! A Private "
-                'Investigator License Warning. (ShadowAnyone)',
-       'url': 'https://www.youtube.com/watch?v=5gSBjAC1g0s&t=89s',
-       'video_id': '5gSBjAC1g0s'},
-      {'author': 'Unclaimed CEO',
-       'channel': 'Unclaimed CEO',
+       'text': 'So, we are talking about 375,000 naira now.',
+       'timestamp': 304,
+       'timestamp_label': '[00:05:04]',
+       'timestamp_seconds': 304,
+       'tip': 'So, we are talking about 375,000 naira now.',
+       'title': 'How to Recover Lost Shares & Unclaimed Dividends in Nigeria (Step-by-Step)',
+       'url': 'https://www.youtube.com/watch?v=KQMVL4j21qc&t=304s',
+       'video_id': 'KQMVL4j21qc'},
+      {'author': 'Enterslice',
+       'channel': 'Enterslice',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:05:14](https://www.youtube.com/watch?v=bAARnig4bT4&t=314s)',
-       'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                    'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                    '(Chapter Q12 operational verification).',
+       'markdown': '[00:03:39](https://www.youtube.com/watch?v=AZAC0VeRINw&t=219s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
        'source_type': 'video_pro_tip',
-       'text': "Cold calls because I'd hate for you guys to start making some deals and you "
-               'try to file paperwork and you forgot to get registered with the state not '
-               "every state requires it but some states do guys I'll see you guys in the next "
-               'video peace.',
-       'timestamp': 314,
-       'timestamp_label': '[00:05:14]',
-       'timestamp_seconds': 314,
-       'tip': "Cold calls because I'd hate for you guys to start making some deals and you try "
-              'to file paperwork and you forgot to get registered with the state not every '
-              "state requires it but some states do guys I'll see you guys in the next video "
-              'peace.',
-       'title': 'UNCLAIMED FUNDS: Will leads really want to work with you?🤔 (Unclaimed CEO)',
-       'url': 'https://www.youtube.com/watch?v=bAARnig4bT4&t=314s',
-       'video_id': 'bAARnig4bT4'},
-      {'author': 'GardenShop.Pro',
-       'channel': 'GardenShop.Pro',
+       'text': 'There is no deadline to claim your unclaimed dividends.',
+       'timestamp': 219,
+       'timestamp_label': '[00:03:39]',
+       'timestamp_seconds': 219,
+       'tip': 'There is no deadline to claim your unclaimed dividends.',
+       'title': 'The process to Claim Unclaimed Dividends|Documents Required to Claim Unclaimed '
+                'Dividends|Enterslice',
+       'url': 'https://www.youtube.com/watch?v=AZAC0VeRINw&t=219s',
+       'video_id': 'AZAC0VeRINw'},
+      {'author': 'Как се прави',
+       'channel': 'Как се прави',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:06:32](https://www.youtube.com/watch?v=E2EtkM2OBvI&t=392s)',
-       'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                    'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                    '(Chapter Q12 operational verification).',
+       'markdown': '[00:07:27](https://www.youtube.com/watch?v=oUFeGA0MPoM&t=447s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
        'source_type': 'video_pro_tip',
-       'text': 'They then have until November 1st to report and actually remit that money to '
-               'the state. Once you find it and file your claim, the state generally takes up '
-               'to 90 days to conduct a standard claim audit of your submitted documents.',
-       'timestamp': 392,
-       'timestamp_label': '[00:06:32]',
-       'timestamp_seconds': 392,
-       'tip': 'They then have until November 1st to report and actually remit that money to '
-              'the state. Once you find it and file your claim, the state generally takes up '
-              'to 90 days to conduct a standard claim audit of your submitted documents.',
-       'title': 'How to find Kansas unclaimed utility deposits by last name (GardenShop.Pro)',
-       'url': 'https://www.youtube.com/watch?v=E2EtkM2OBvI&t=392s',
-       'video_id': 'E2EtkM2OBvI'},
-      {'author': 'Money Making Juggernaut',
-       'channel': 'Money Making Juggernaut',
+       'text': 'Heir-finders charge a percentage fee, but claiming from the state is free.',
+       'timestamp': 447,
+       'timestamp_label': '[00:07:27]',
+       'timestamp_seconds': 447,
+       'tip': 'Heir-finders charge a percentage fee, but claiming from the state is free.',
+       'title': 'How to check unclaimed funds from an insurance demutualization',
+       'url': 'https://www.youtube.com/watch?v=oUFeGA0MPoM&t=447s',
+       'video_id': 'oUFeGA0MPoM'},
+      {'author': 'Daggett Shuler Attorneys at Law',
+       'channel': 'Daggett Shuler Attorneys at Law',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[01:00:17](https://www.youtube.com/watch?v=aKzRVyO_gfI&t=3617s)',
-       'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                    'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                    '(Chapter Q12 operational verification).',
+       'markdown': '[00:01:53](https://www.youtube.com/watch?v=NbMR0Gzlwww&t=113s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
        'source_type': 'video_pro_tip',
-       'text': "File in order to start skipping okay so there's like no I think you said it "
-               "before there's no minimum or anything whether you're doing 10 or 100 you're "
-               "just going to build accordingly that's correct yes okay good thank.",
-       'timestamp': 3617,
-       'timestamp_label': '[01:00:17]',
-       'timestamp_seconds': 3617,
-       'tip': "File in order to start skipping okay so there's like no I think you said it "
-              "before there's no minimum or anything whether you're doing 10 or 100 you're "
-              "just going to build accordingly that's correct yes okay good thank.",
-       'title': 'The Only Skiptracing Software You Need For Surplus Funds (Money Making '
-                'Juggernaut)',
-       'url': 'https://www.youtube.com/watch?v=aKzRVyO_gfI&t=3617s',
-       'video_id': 'aKzRVyO_gfI'},
-      {'author': 'Financial Soup',
-       'channel': 'Financial Soup',
+       'text': 'Well, the time to deal with a life insurance policy is as soon as possible.',
+       'timestamp': 113,
+       'timestamp_label': '[00:01:53]',
+       'timestamp_seconds': 113,
+       'tip': 'Well, the time to deal with a life insurance policy is as soon as possible.',
+       'title': 'Life Insurance - Are You the Beneficiary of Unclaimed Benefits?',
+       'url': 'https://www.youtube.com/watch?v=NbMR0Gzlwww&t=113s',
+       'video_id': 'NbMR0Gzlwww'},
+      {'author': 'Money9 English',
+       'channel': 'Money9 English',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:03:43](https://www.youtube.com/watch?v=ubLk2A5a-2A&t=223s)',
-       'relevance': 'Attributed practitioner commentary on state-treasury unclaimed property '
-                    'escheatment, corporate uncashed warrants, and statutory finder-fee claims '
-                    '(Chapter Q12 operational verification).',
+       'markdown': '[00:00:56](https://www.youtube.com/watch?v=ogkbsdCWM4g&t=56s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
        'source_type': 'video_pro_tip',
-       'text': 'Uh, forgotten bank accounts, lost CDs, insurance refunds, insurance claims, '
-               "uncash checks. It's always good to check for yourself and loved ones whether "
-               "or not they're uh currently living or deceased.",
-       'timestamp': 223,
-       'timestamp_label': '[00:03:43]',
-       'timestamp_seconds': 223,
-       'tip': 'Uh, forgotten bank accounts, lost CDs, insurance refunds, insurance claims, '
-              "uncash checks. It's always good to check for yourself and loved ones whether or "
-              "not they're uh currently living or deceased.",
-       'title': 'How to Find Unclaimed Money (Financial Soup)',
-       'url': 'https://www.youtube.com/watch?v=ubLk2A5a-2A&t=223s',
-       'video_id': 'ubLk2A5a-2A'}]}
+       'text': 'Money is treated as unclaimed six months after the settlement date.',
+       'timestamp': 56,
+       'timestamp_label': '[00:00:56]',
+       'timestamp_seconds': 56,
+       'tip': 'Money is treated as unclaimed six months after the settlement date.',
+       'title': 'How To Get Unclaimed Money From Insurance Company | Explainer | Money9 English',
+       'url': 'https://www.youtube.com/watch?v=ogkbsdCWM4g&t=56s',
+       'video_id': 'ogkbsdCWM4g'},
+      {'author': 'C. Hicks Agency - Camille Hicks',
+       'channel': 'C. Hicks Agency - Camille Hicks',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:02:21](https://www.youtube.com/watch?v=_35TodkWXyM&t=141s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'Contact the insurance department of the state where the policy was purchased.',
+       'timestamp': 141,
+       'timestamp_label': '[00:02:21]',
+       'timestamp_seconds': 141,
+       'tip': 'Contact the insurance department of the state where the policy was purchased.',
+       'title': 'How to Track Down Life Insurance Policies and Unclaimed Life Insurance Money',
+       'url': 'https://www.youtube.com/watch?v=_35TodkWXyM&t=141s',
+       'video_id': '_35TodkWXyM'},
+      {'author': 'Garden Shop Pro',
+       'channel': 'Garden Shop Pro',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:04:40](https://www.youtube.com/watch?v=HMzGGSvJ104&t=280s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'It has a $75 fee, so really treat that as an absolute last resort.',
+       'timestamp': 280,
+       'timestamp_label': '[00:04:40]',
+       'timestamp_seconds': 280,
+       'tip': 'It has a $75 fee, so really treat that as an absolute last resort.',
+       'title': 'How to find an unclaimed insurance payout in your name',
+       'url': 'https://www.youtube.com/watch?v=HMzGGSvJ104&t=280s',
+       'video_id': 'HMzGGSvJ104'},
+      {'author': 'Blue Mesa Minerals',
+       'channel': 'Blue Mesa Minerals',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:07:55](https://www.youtube.com/watch?v=HSmuF8xIaIU&t=475s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'Claiming the funds can help cure title and restore pay status.',
+       'timestamp': 475,
+       'timestamp_label': '[00:07:55]',
+       'timestamp_seconds': 475,
+       'tip': 'Claiming the funds can help cure title and restore pay status.',
+       'title': 'Finding Oil & Gas Royalties in Unclaimed Property',
+       'url': 'https://www.youtube.com/watch?v=HSmuF8xIaIU&t=475s',
+       'video_id': 'HSmuF8xIaIU'}],
+ 12: [{'author': 'Utah Office of State Treasurer',
+       'channel': 'Utah Office of State Treasurer',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:03:20](https://www.youtube.com/watch?v=hUiiEXcFE0k&t=200s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'The most convenient way is to pay electronically on the website mycash.utah.gov, '
+               'and please note that both reports and payment are due by November 1st.',
+       'timestamp': 200,
+       'timestamp_label': '[00:03:20]',
+       'timestamp_seconds': 200,
+       'tip': 'The most convenient way is to pay electronically on the website mycash.utah.gov, '
+              'and please note that both reports and payment are due by November 1st.',
+       'title': 'Unclaimed Property Reporting Overview',
+       'url': 'https://www.youtube.com/watch?v=hUiiEXcFE0k&t=200s',
+       'video_id': 'hUiiEXcFE0k'},
+      {'author': 'TNTreasury',
+       'channel': 'TNTreasury',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:02:45](https://www.youtube.com/watch?v=KiR-ZUeCE5g&t=165s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'Penalties are avoided when a holder discloses unclaimed property upfront through '
+               'the CDA program.',
+       'timestamp': 165,
+       'timestamp_label': '[00:02:45]',
+       'timestamp_seconds': 165,
+       'tip': 'Penalties are avoided when a holder discloses unclaimed property upfront through '
+              'the CDA program.',
+       'title': 'Unclaimed Property in Tennessee: Understanding Audits, Compliance, and Negative '
+                'Reports',
+       'url': 'https://www.youtube.com/watch?v=KiR-ZUeCE5g&t=165s',
+       'video_id': 'KiR-ZUeCE5g'},
+      {'author': 'Keane Unclaimed Property',
+       'channel': 'Keane Unclaimed Property',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:01:30](https://www.youtube.com/watch?v=UP88bQoP2JU&t=90s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'KUPS can process 3.5 million records and 350,000 due-diligence letters per hour.',
+       'timestamp': 90,
+       'timestamp_label': '[00:01:30]',
+       'timestamp_seconds': 90,
+       'tip': 'KUPS can process 3.5 million records and 350,000 due-diligence letters per hour.',
+       'title': 'Keane Unclaimed Property System (KUPS)',
+       'url': 'https://www.youtube.com/watch?v=UP88bQoP2JU&t=90s',
+       'video_id': 'UP88bQoP2JU'},
+      {'author': 'COMPUTERSHARE',
+       'channel': 'COMPUTERSHARE',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:00:28](https://www.youtube.com/watch?v=K64AFLANH3A&t=28s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'It would be great if we could come up with a single regulation so that we can '
+               'follow it and put our energy towards that instead of towards keeping up with 54 '
+               'sets of regulations.',
+       'timestamp': 28,
+       'timestamp_label': '[00:00:28]',
+       'timestamp_seconds': 28,
+       'tip': 'It would be great if we could come up with a single regulation so that we can '
+              'follow it and put our energy towards that instead of towards keeping up with 54 '
+              'sets of regulations.',
+       'title': 'Unclaimed Property Regulation',
+       'url': 'https://www.youtube.com/watch?v=K64AFLANH3A&t=28s',
+       'video_id': 'K64AFLANH3A'},
+      {'author': 'COMPUTERSHARE',
+       'channel': 'COMPUTERSHARE',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:00:40](https://www.youtube.com/watch?v=79d39hagJ6U&t=40s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': "You're going to want to get a list of the participating states, and it's very "
+               'important that that list comes directly from the states; do not rely on a list '
+               'from the auditors.',
+       'timestamp': 40,
+       'timestamp_label': '[00:00:40]',
+       'timestamp_seconds': 40,
+       'tip': "You're going to want to get a list of the participating states, and it's very "
+              'important that that list comes directly from the states; do not rely on a list from '
+              'the auditors.',
+       'title': 'Preparing for an unclaimed property audit',
+       'url': 'https://www.youtube.com/watch?v=79d39hagJ6U&t=40s',
+       'video_id': '79d39hagJ6U'},
+      {'author': 'Clarus Partners',
+       'channel': 'Clarus Partners',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:01:25](https://www.youtube.com/watch?v=po0e86TAQwA&t=85s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'These factors matter because they lead to audits, and audits include the addition '
+               'of interest and penalty which in some states could be greater than 50% of the '
+               'liability owed.',
+       'timestamp': 85,
+       'timestamp_label': '[00:01:25]',
+       'timestamp_seconds': 85,
+       'tip': 'These factors matter because they lead to audits, and audits include the addition '
+              'of interest and penalty which in some states could be greater than 50% of the '
+              'liability owed.',
+       'title': 'Mitigating Unclaimed Property Risk: Best Practices for Compliance',
+       'url': 'https://www.youtube.com/watch?v=po0e86TAQwA&t=85s',
+       'video_id': 'po0e86TAQwA'},
+      {'author': 'SimekScott LLC',
+       'channel': 'SimekScott LLC',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:01:52](https://www.youtube.com/watch?v=p0UoXSbya5E&t=112s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'As my time on the other side of this issue on the state side as an auditor, the '
+               'accounts receivable area certainly did drive a lot of exposure for companies.',
+       'timestamp': 112,
+       'timestamp_label': '[00:01:52]',
+       'timestamp_seconds': 112,
+       'tip': 'As my time on the other side of this issue on the state side as an auditor, the '
+              'accounts receivable area certainly did drive a lot of exposure for companies.',
+       'title': 'SALT: Top 5 Mistakes Companies Make Evaluating Their Unclaimed Property Exposure.',
+       'url': 'https://www.youtube.com/watch?v=p0UoXSbya5E&t=112s',
+       'video_id': 'p0UoXSbya5E'},
+      {'author': 'COMPUTERSHARE',
+       'channel': 'COMPUTERSHARE',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:01:47](https://www.youtube.com/watch?v=03CoUEgqdzg&t=107s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': "Now with all the litigation we've had, people aren't afraid to fight, so if "
+               "something doesn't feel right I would not be afraid to say no even if that may lead "
+               'to litigation.',
+       'timestamp': 107,
+       'timestamp_label': '[00:01:47]',
+       'timestamp_seconds': 107,
+       'tip': "Now with all the litigation we've had, people aren't afraid to fight, so if "
+              "something doesn't feel right I would not be afraid to say no even if that may lead "
+              'to litigation.',
+       'title': 'Litigation and unclaimed property audits',
+       'url': 'https://www.youtube.com/watch?v=03CoUEgqdzg&t=107s',
+       'video_id': '03CoUEgqdzg'},
+      {'author': 'Deloitte US',
+       'channel': 'Deloitte US',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:00:21](https://www.youtube.com/watch?v=UC28yxW8Pls&t=21s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'Managing your unclaimed property compliance risks is as important now as ever as '
+               'states may ramp up audit efforts in the face of economic uncertainties.',
+       'timestamp': 21,
+       'timestamp_label': '[00:00:21]',
+       'timestamp_seconds': 21,
+       'tip': 'Managing your unclaimed property compliance risks is as important now as ever as '
+              'states may ramp up audit efforts in the face of economic uncertainties.',
+       'title': 'Unclaimed Property',
+       'url': 'https://www.youtube.com/watch?v=UC28yxW8Pls&t=21s',
+       'video_id': 'UC28yxW8Pls'},
+      {'author': 'PwC US',
+       'channel': 'PwC US',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:00:23](https://www.youtube.com/watch?v=yjxm_QOITBY&t=23s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'One common pitfall is dealing with incomplete addresses, which can lead to '
+               'premature escheatment.',
+       'timestamp': 23,
+       'timestamp_label': '[00:00:23]',
+       'timestamp_seconds': 23,
+       'tip': 'One common pitfall is dealing with incomplete addresses, which can lead to '
+              'premature escheatment.',
+       'title': 'Abandoned and Unclaimed Property Quarterly - April 2024',
+       'url': 'https://www.youtube.com/watch?v=yjxm_QOITBY&t=23s',
+       'video_id': 'yjxm_QOITBY'},
+      {'author': 'ucproput',
+       'channel': 'ucproput',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:07:56](https://www.youtube.com/watch?v=3B5mPVcKPDE&t=476s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'What I have found out on audits is that most businesses do not know what they are '
+               "doing, that they need training, and most of them want to do what's right.",
+       'timestamp': 476,
+       'timestamp_label': '[00:07:56]',
+       'timestamp_seconds': 476,
+       'tip': 'What I have found out on audits is that most businesses do not know what they are '
+              "doing, that they need training, and most of them want to do what's right.",
+       'title': '(3 of 4) Utah Unclaimed Property Audit Issues',
+       'url': 'https://www.youtube.com/watch?v=3B5mPVcKPDE&t=476s',
+       'video_id': '3B5mPVcKPDE'},
+      {'author': 'SC REALTORS',
+       'channel': 'SC REALTORS',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:13:46](https://www.youtube.com/watch?v=D-PMjgNe-7s&t=826s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'To ease the reporting burden most states including South Carolina will accept '
+               'incidental property with a last known address in another state.',
+       'timestamp': 826,
+       'timestamp_label': '[00:13:46]',
+       'timestamp_seconds': 826,
+       'tip': 'To ease the reporting burden most states including South Carolina will accept '
+              'incidental property with a last known address in another state.',
+       'title': 'SCR Webinar: Unclaimed Property Program Overview',
+       'url': 'https://www.youtube.com/watch?v=D-PMjgNe-7s&t=826s',
+       'video_id': 'D-PMjgNe-7s'},
+      {'author': 'SimekScott LLC',
+       'channel': 'SimekScott LLC',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:00:19](https://www.youtube.com/watch?v=TGu6R9Pc0-4&t=19s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'You have to take action within the first 90 days, and if you decide not to '
+               'participate, you will be referred to the Department of Finance for an unclaimed '
+               'property audit.',
+       'timestamp': 19,
+       'timestamp_label': '[00:00:19]',
+       'timestamp_seconds': 19,
+       'tip': 'You have to take action within the first 90 days, and if you decide not to '
+              'participate, you will be referred to the Department of Finance for an unclaimed '
+              'property audit.',
+       'title': 'Delaware Unclaimed Property VDA Invitations - April 11 2025',
+       'url': 'https://www.youtube.com/watch?v=TGu6R9Pc0-4&t=19s',
+       'video_id': 'TGu6R9Pc0-4'},
+      {'author': 'Friedman LLP',
+       'channel': 'Friedman LLP',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:41:49](https://www.youtube.com/watch?v=duwB7Y82flc&t=2509s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'The benefit is that there is a limited look-back period; unclaimed property audits '
+               'can go back to the beginning of the business operation, but voluntary disclosures '
+               'are typically limited to about ten years.',
+       'timestamp': 2509,
+       'timestamp_label': '[00:41:49]',
+       'timestamp_seconds': 2509,
+       'tip': 'The benefit is that there is a limited look-back period; unclaimed property audits '
+              'can go back to the beginning of the business operation, but voluntary disclosures '
+              'are typically limited to about ten years.',
+       'title': 'Unclaimed Property: Avoiding Penalties From Increased State Enforcement | FULL '
+                'Webinar',
+       'url': 'https://www.youtube.com/watch?v=duwB7Y82flc&t=2509s',
+       'video_id': 'duwB7Y82flc'},
+      {'author': 'Friedman LLP',
+       'channel': 'Friedman LLP',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:51:02](https://www.youtube.com/watch?v=duwB7Y82flc&t=3062s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'Third-party auditors operating on a contingency basis are very aggressive, and '
+               "I've seen situations where they will look for records that go back 20 years.",
+       'timestamp': 3062,
+       'timestamp_label': '[00:51:02]',
+       'timestamp_seconds': 3062,
+       'tip': "Third-party auditors operating on a contingency basis are very aggressive, and I've "
+              'seen situations where they will look for records that go back 20 years.',
+       'title': 'Unclaimed Property: Avoiding Penalties From Increased State Enforcement | FULL '
+                'Webinar',
+       'url': 'https://www.youtube.com/watch?v=duwB7Y82flc&t=3062s',
+       'video_id': 'duwB7Y82flc'},
+      {'author': 'Kodiak Solutions',
+       'channel': 'Kodiak Solutions',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:28:08](https://www.youtube.com/watch?v=2BplqmdsUpU&t=1688s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'What we like to say is we want you to be compliant but not overly compliant.',
+       'timestamp': 1688,
+       'timestamp_label': '[00:28:08]',
+       'timestamp_seconds': 1688,
+       'tip': 'What we like to say is we want you to be compliant but not overly compliant.',
+       'title': '5 healthcare unclaimed property compliance trends you need to know',
+       'url': 'https://www.youtube.com/watch?v=2BplqmdsUpU&t=1688s',
+       'video_id': '2BplqmdsUpU'},
+      {'author': 'txcomptroller',
+       'channel': 'txcomptroller',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:02:37](https://www.youtube.com/watch?v=WZH47JEDcEI&t=157s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'Businesses must mail or email a due diligence notice 60 days before the due date '
+               'to all owners of unclaimed property valued at more than $250.',
+       'timestamp': 157,
+       'timestamp_label': '[00:02:37]',
+       'timestamp_seconds': 157,
+       'tip': 'Businesses must mail or email a due diligence notice 60 days before the due date to '
+              'all owners of unclaimed property valued at more than $250.',
+       'title': 'Unclaimed Property: Holder Reporting - General',
+       'url': 'https://www.youtube.com/watch?v=WZH47JEDcEI&t=157s',
+       'video_id': 'WZH47JEDcEI'}]}

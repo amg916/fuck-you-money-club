@@ -1,642 +1,876 @@
 from __future__ import annotations
 
-CHAPTER_11 = {
-    "id": "Q11",
-    "chapter_id": "Q11",
-    "chapter_number": 11,
-    "question_number": 11,
-    "slug": "pod-architecture-contractor-kpis-exit-valuation",
-    "question_prompt": "How do you structure a lean 1 FT + 3 C (4 people) -> 2 FT + 4 C (6 people) pod, enforce weekly scorecards, and build transferable books that command a premium exit multiple (or durable cash cow)?",
-    "kicker": "Q11 / THE BIG MONEY PLAYBOOKS",
-    "title": "Pod Architecture, Contractor KPIs & Exit Valuation",
-    "subtitle": "Four-to-Six-Person B2B Pods, HubSpot Acceptance Ledgers, Contractor QA SLAs, CAN-SPAM Controls, and Written IP Transfers Under 17 U.S.C. Section 204(a)",
-    "layout_template": "action_checklist",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #18, Commercial Lead Generation, holds Rank #05 with an 89/100 "
-        "Money-to-Manpower Score across 54 mapped plays. Build the business around "
-        "accepted demand, documented delivery, and transferable customer relationships, "
-        "not inbox counts. The Conservative case produces $20,000 annual owner net "
-        "profit on $100,000 revenue; Base produces $127,500 on $425,000; Scaled "
-        "produces $300,000 on $750,000. Retainers and accepted-lead fees constitute "
-        "revenue; client-funded advertising pass-through does not. This chapter assigns "
-        "every delivery responsibility within the 1 FT + 3 C starting pod and "
-        "2 FT + 4 C scaled pod, connects weekly quality evidence to contractor "
-        "payments, and separates owner earnings from buyer-normalized earnings. "
-        "Concentration limits, signed IP assignments, cohort accounting, and tested "
-        "founder absence make either an exit or continued ownership credible."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$100,000",
-            "context": "Annual retainers and accepted-lead fees; excludes client-funded advertising pass-through",
-            "note": "20% net margin; $20,000 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Base",
-            "value": "$425,000",
-            "context": "Annual retainers and accepted-lead fees; excludes client-funded advertising pass-through",
-            "note": "30.0% net margin; $127,500 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$750,000",
-            "context": "Annual retainers and accepted-lead fees; excludes client-funded advertising pass-through",
-            "note": "40% net margin; $300,000 annual owner net profit; 2 FT + 4 C (6 people)",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Assign accountable seats before adding inboxes or clients",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Start Candidate #18 with one full-time owner and three contractors, "
-                    "not four interchangeable outreach generalists. The owner holds sales, "
-                    "pricing, customer acceptance definitions, collections, and final account "
-                    "accountability. Contractor one owns account research, contact provenance, "
-                    "deduplication, and suppression matching. Contractor two owns authenticated "
-                    "sending infrastructure, sequence deployment, mailbox monitoring, and "
-                    "technical incident recovery. Contractor three owns reply triage, "
-                    "qualification evidence, appointment confirmation, and CRM disposition. "
-                    "Each responsibility needs a primary owner, a documented backup, and an "
-                    "observable completion artifact. In the four-person pod, backups provide "
-                    "limited continuity rather than another full production shift. Maintain "
-                    "Candidate #18's 54 mapped plays in one responsibility register, "
-                    "preserving their existing identifiers and assigning exactly one "
-                    "accountable seat per play. Add fields for required inputs, completion "
-                    "evidence, service deadline, exception owner, and recovery instructions. "
-                    "Do not invent fifty-four new initiatives or run every play "
-                    "simultaneously. Activate only the subset needed for the current offer "
-                    "and channel, while retaining ownership for dormant plays. A HubSpot "
-                    "pipeline, a Google Workspace evidence folder, and a password manager "
-                    "can support this structure without hiring a separate operations "
-                    "manager. Separate client workspaces and access permissions from the start."
-                ),
-                (
-                    "Contractor statements of work should purchase defined outcomes and "
-                    "service availability rather than disguise employment through invoices. "
-                    "An illustrative Base monthly schedule pays research $1,800, delivery "
-                    "infrastructure $2,200, and qualification $1,500, totaling $5,500 monthly "
-                    "or $66,000 annually before separately budgeted incentives. These are "
-                    "planning assumptions, not required market rates or the entire expense "
-                    "base. Specify accepted account batches, monitored mailbox capacity, "
-                    "qualified reply coverage, and rework responsibility against each fee. "
-                    "Require research corrections within two business days, urgent "
-                    "suppression propagation within one business day, and reply routing "
-                    "within four covered business hours. Define coverage hours explicitly; "
-                    "a small pod cannot silently promise continuous service. Pay agreed "
-                    "base invoices on time and attach any variable reward to audited "
-                    "accepted outcomes, not sends or raw appointments. Investigate whether "
-                    "federal common-law employment factors and applicable state tests permit "
-                    "each arrangement; California Labor Code section 2775 can impose an "
-                    "ABC test subject to statutory exceptions. A contractor label does "
-                    "not settle classification. Preserve genuine control over work methods "
-                    "where appropriate, and use employment when the actual relationship "
-                    "requires it. The fee schedule must also identify which tools the "
-                    "business purchases directly and which contractor costs are included."
-                ),
-                (
-                    "At Scaled, add one full-time client operations lead and one "
-                    "contractor dedicated to independent QA and routing audits. The owner "
-                    "retains commercial strategy and major renewals; the new employee owns "
-                    "routine customer reviews, capacity planning, collections follow-through, "
-                    "and incident coordination. Research, infrastructure, and qualification "
-                    "remain distinct contractor seats, while the fourth contractor samples "
-                    "their outputs without approving their own production. This produces "
-                    "exactly two full-time people plus four contractors, not a hidden "
-                    "seventh account manager. Hire against sustained workload and projected "
-                    "contribution, not a single unusually large order. For four consecutive "
-                    "weeks, record minutes spent on accepted outcomes, rework, customer "
-                    "meetings, and exceptions; reserve twenty percent of scheduled delivery "
-                    "capacity for variability. As an illustrative capacity test, eighteen "
-                    "clients requiring three weekly account-service hours consume fifty-four "
-                    "hours before prospecting production. That load cannot fit inside a "
-                    "single forty-hour seat and requires narrower service scope, redistributed "
-                    "work, or fewer clients. Maintain tested playbooks for domain loss, "
-                    "calendar failure, absent contractors, and disputed qualification. "
-                    "Each active mapped play should survive a planned five-business-day "
-                    "absence of its primary operator before further client volume is "
-                    "added. Measure continuity with completed artifacts, not assurances."
-                ),
-            ],
-            "table": {
-                "caption": "Four-to-Six-Person Seat Ownership and Contractor Delivery Matrix",
-                "headers": [
-                    "Accountable seat and deployment",
-                    "Defined production responsibility",
-                    "Acceptance evidence and service expectation",
-                    "Compensation and continuity mechanism",
-                ],
-                "rows": [
-                    [
-                        "Owner occupies the sole full-time starting pod seat",
-                        "Own pricing, signed scopes, renewals, collections, and account concentration",
-                        "Approve documented qualification rules before any client campaign begins",
-                        "Owner earnings follow actual expenses, rather than booked appointment counts",
-                    ],
-                    [
-                        "Research contractor remains present in both pod configurations",
-                        "Build account batches with provenance, deduplication, and suppression checks",
-                        "Correct rejected records within two business days after documented notice",
-                        "Illustrative $1,800 monthly scope includes defined batch volumes and rework",
-                    ],
-                    [
-                        "Infrastructure contractor remains present in both pod configurations",
-                        "Manage authentication, provider permissions, deployment, monitoring, and incident recovery",
-                        "Document SPF, DKIM, DMARC, and provider health before deployment",
-                        "Illustrative $2,200 monthly scope specifies monitored capacity and incident coverage",
-                    ],
-                    [
-                        "Qualification contractor remains present in both pod configurations",
-                        "Triage replies, verify criteria, confirm meetings, and update dispositions",
-                        "Route qualified replies within four explicitly covered business hours",
-                        "Illustrative $1,500 monthly scope separates coverage fees from earned incentives",
-                    ],
-                    [
-                        "Client operations employee becomes the second full-time scaled seat",
-                        "Own routine reviews, capacity allocation, collections follow-through, and escalations",
-                        "Publish weekly customer scorecards with unresolved exceptions and named owners",
-                        "Budget loaded employment cost before expanding contracted customer service commitments",
-                    ],
-                    [
-                        "Independent QA contractor becomes the fourth scaled contractor seat",
-                        "Audit qualification samples, routing accuracy, suppression evidence, and credit decisions",
-                        "Inspect every dispute plus a documented random production sample",
-                        "Use a fixed audit scope without rewarding inflated acceptance totals",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Make small-pod coverage survive real operating friction",
-                "body": "Use evidence and controlled scope to replace the extra management layer that this pod cannot afford.",
-                "items": [
-                    "Keep a client-owned calendar recovery link beside each routing rule, and test reassignment when the normal appointment owner is absent.",
-                    "Attach the current qualification rubric to the contractor work queue; version changes prospectively so yesterday's accepted work is not regraded opportunistically.",
-                    "Separate sending administration from suppression exports through least-privilege access, while keeping emergency stop authority available to the owner and designated backup.",
-                    "Run a monthly backup drill on one active mapped play: another seat must complete the task using only the stored runbook and authorized credentials.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Pay for accepted demand and run one weekly evidence review",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Define the commercial acceptance event before calculating any KPI. "
-                    "For a qualified appointment, require the agreed company segment, "
-                    "geography, role or purchasing influence, relevant business need, and "
-                    "an explicit meeting commitment. State whether the purchased unit is "
-                    "a booked meeting, a held meeting, or a qualified connected call; "
-                    "these are different products and cannot share an ambiguous fee "
-                    "trigger. A call-routing agreement should specify minimum connection "
-                    "conditions, duplicate lookback, excluded callers, and evidence retained. "
-                    "Store timestamps and qualification fields in HubSpot or Salesforce, "
-                    "linking each event to campaign, customer, contractor, and source "
-                    "cohort. Record an appointment identifier that persists through "
-                    "rescheduling so one prospect does not become three billed outcomes. "
-                    "Give customers a defined evidence-based review period, such as five "
-                    "business days, with escalation for substantive disputes. Silence should "
-                    "count as acceptance only when the signed agreement expressly provides "
-                    "that mechanism. Keep rejected, credited, and disputed events visible "
-                    "rather than deleting them to improve conversion reports. For every "
-                    "rejection, distinguish targeting failure, false qualification, duplicate "
-                    "delivery, customer scheduling failure, and prospect withdrawal. Those "
-                    "causes drive different remedies and prevent contractors from absorbing "
-                    "losses they did not cause."
-                ),
-                (
-                    "Run a thirty-minute weekly review using a frozen reporting window "
-                    "and a small set of reproducible ratios. Acceptance rate equals "
-                    "accepted submissions divided by submissions whose review period has "
-                    "closed; hold rate equals held meetings divided by meetings whose "
-                    "scheduled time has passed. Report unresolved submissions separately "
-                    "rather than counting them as successes. Add credited fees divided "
-                    "by originally billed outcome fees, median routing latency, reply "
-                    "coverage attainment, and customer-level contribution after direct labor "
-                    "and attributable tools. Inspect positive replies and qualified outcomes "
-                    "by domain and source cohort, while treating open rates as diagnostic "
-                    "noise rather than a payment basis. Initial internal targets might "
-                    "be at least eighty-five percent acceptance, seventy-five percent held "
-                    "meetings, no more than five percent credited outcome fees, and "
-                    "ninety-five percent routing within the contracted service window. "
-                    "These are explicit starting assumptions to recalibrate against "
-                    "segment economics, not universal industry benchmarks. Any suppression "
-                    "failure receives immediate investigation even when aggregate KPIs "
-                    "look healthy. Close the meeting with one named owner and one "
-                    "deadline for each exception. Avoid twenty competing dashboard tiles "
-                    "that leave nobody accountable for the customer experience."
-                ),
-                (
-                    "Design incentives so good qualification pays more than calendar "
-                    "stuffing. An illustrative contractor bonus pays $15 for each "
-                    "incremental accepted held meeting above the agreed baseline, provided "
-                    "the sampled qualification audit meets its threshold and the "
-                    "contractor-controlled routing SLA is satisfied. Forty eligible meetings "
-                    "produce a $600 bonus; include that cost in the campaign's "
-                    "contribution calculation before offering the arrangement. Do not "
-                    "retroactively change earned compensation because a customer pays late; "
-                    "define any collection-dependent component prospectively in the agreement. "
-                    "Audit every customer dispute plus ten randomly selected submissions "
-                    "per active contractor weekly, or all submissions when volume is "
-                    "smaller. The owner performs this check in the starting pod; the "
-                    "independent QA contractor performs it at Scaled. Preserve the sample "
-                    "selection method to deter cherry-picking. Multi-inbox infrastructure "
-                    "must respect provider terms, accurate sender identity, applicable "
-                    "opt-out duties, and recipient preferences; extra domains are not "
-                    "permission to evade blocks. CAN-SPAM, 15 U.S.C. section 7704, "
-                    "applies to commercial email including B2B messages. Phone workflows "
-                    "require separate assessment under 47 U.S.C. section 227 and "
-                    "47 CFR section 64.1200; a business label alone does not "
-                    "resolve technology, number-type, or consent requirements."
-                ),
-            ],
-            "table": {
-                "caption": "Weekly Acceptance, Contractor Quality, and Routing Scorecard",
-                "headers": [
-                    "Metric with explicit measurement population",
-                    "Calculation and evidence required",
-                    "Initial operating target or treatment",
-                    "Named response when performance breaks",
-                ],
-                "rows": [
-                    [
-                        "Acceptance rate for submissions with completed customer review windows",
-                        "Divide accepted submissions by all submissions with closed review periods",
-                        "Start at eighty-five percent, then recalibrate against segment economics",
-                        "Qualification owner samples rejection reasons before changing targeting or scripts",
-                    ],
-                    [
-                        "Held meeting rate for appointments whose scheduled time has passed",
-                        "Divide completed meetings by scheduled meetings within the matured cohort",
-                        "Start at seventy-five percent with reschedules tracked under persistent identifiers",
-                        "Qualification owner tests reminders and isolates customer calendar failures",
-                    ],
-                    [
-                        "Credit rate for outcome fees originally billed during each cohort",
-                        "Divide credited outcome fees by original billed outcome fee dollars",
-                        "Investigate levels above five percent without deleting disputed event history",
-                        "Owner separates qualification defects from customer-caused exceptions before issuing remedies",
-                    ],
-                    [
-                        "Routing service attainment during explicitly contracted business coverage hours",
-                        "Divide timely qualified-reply assignments by all assignments requiring covered-hour routing",
-                        "Target ninety-five percent within the agreed four-business-hour response window",
-                        "Infrastructure owner repairs routing while qualification owner clears stranded replies",
-                    ],
-                    [
-                        "Direct contribution per customer after attributable delivery resource costs",
-                        "Subtract allocated delivery labor, incentives, and attributable tools from revenue",
-                        "Require positive contribution and a documented path toward scenario margins",
-                        "Owner reprices scope or reduces costly exceptions before renewing service",
-                    ],
-                    [
-                        "Suppression integrity across every active sending and routing workflow",
-                        "Compare opt-out timestamps against subsequent sends and routing eligibility",
-                        "Treat every confirmed post-suppression error as an incident requiring investigation",
-                        "Infrastructure owner pauses affected workflows and records verified corrective evidence",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Freeze the weekly evidence window",
-                    "action": "Export matured submissions, scheduled meetings, credits, routing events, and contractor coverage records.",
-                    "detail": "Use one timezone, persistent event identifiers, and a dated export so later edits cannot silently change the reviewed denominator.",
-                },
-                {
-                    "step": 2,
-                    "title": "Audit before rewarding production",
-                    "action": "Review every dispute and the documented random sample against the signed qualification rubric.",
-                    "detail": "Record defect category, evidence link, responsible seat, and whether the event qualifies for the pre-agreed incentive.",
-                },
-                {
-                    "step": 3,
-                    "title": "Resolve one accountable action per exception",
-                    "action": "Run the thirty-minute review and assign corrections with specific deadlines.",
-                    "detail": "Stop affected sending immediately for suppression failures; do not wait for the next reporting cycle to contain an active incident.",
-                },
-                {
-                    "step": 4,
-                    "title": "Close compensation and update the play register",
-                    "action": "Approve earned fees, record rework obligations, and revise the affected mapped play's runbook.",
-                    "detail": "Retain the original scorecard, payment calculation, corrective evidence, and revised runbook version in the customer operating record.",
-                },
-            ],
-        },
-        {
-            "heading": "3. Reconcile accrual earnings and cap transferable-book concentration",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Reconcile every operating plan to the canonical scenarios before "
-                    "discussing growth. Conservative revenue of $100,000 less $80,000 "
-                    "of expenses produces $20,000 owner net profit at twenty percent. "
-                    "Base revenue of $425,000 less $297,500 produces $127,500 "
-                    "at thirty percent. Scaled revenue of $750,000 less $450,000 "
-                    "produces $300,000 at forty percent. Those totals describe retainers "
-                    "and accepted-lead fees, excluding client-funded advertising pass-through; "
-                    "they do not describe customer pipeline value, merchant sales, or "
-                    "prospective deal size. An illustrative Base bridge uses five "
-                    "customers paying $5,000 monthly retainers, producing $300,000, "
-                    "plus 500 accepted outcomes billed at $250, producing $125,000. "
-                    "This assumes full-year retention and separate contractual deliverables "
-                    "for the retainer and outcome fee. Allocate one hundred accepted "
-                    "outcomes to each customer and annual revenue becomes $85,000 "
-                    "per customer, or twenty percent each. Monthly recognized revenue "
-                    "averages $35,416.67 but cash receipts can differ materially. "
-                    "The $66,000 illustrative contractor base fees belong inside "
-                    "the $297,500 Base expense envelope, leaving $231,500 for "
-                    "all remaining costs and adjustments. Do not treat that remainder "
-                    "as another profit pool. Document actual payroll, tools, acquisition, "
-                    "insurance, refunds, and overhead against it."
-                ),
-                (
-                    "Close the books monthly on a consistent accrual basis, with "
-                    "customer contracts defining service periods and acceptance evidence "
-                    "supporting earned fees. Advance retainer cash becomes deferred revenue "
-                    "until the contracted service is delivered; an annual prepayment is "
-                    "not automatically current-month earnings. Accrue contractor work already "
-                    "performed even when an invoice arrives next month, and estimate "
-                    "credits using documented disputes and cohort experience. Use QuickBooks "
-                    "Online or Xero customer dimensions, supported by a CRM event "
-                    "ledger, to reconcile invoices, recognized revenue, credits, cash, and "
-                    "receivables. Track advertising funds in separate clearing records "
-                    "consistent with the contractual principal-agent arrangement; never "
-                    "inflate the canonical operator revenue with customer media spend. "
-                    "Build monthly acquisition cohorts showing first service date, opening "
-                    "recurring fees, expansion, contraction, churn, accepted outcomes, and "
-                    "direct delivery cost. Net revenue retention measures retained recurring "
-                    "fees plus expansion minus contraction and churn against the same "
-                    "opening customer cohort; disclose whether variable outcome fees are "
-                    "included. Report fixed-retainer retention separately when variable "
-                    "volumes obscure stability. Reconcile aged receivables to customer "
-                    "disputes, since apparently profitable delivery can consume cash when "
-                    "acceptance remains unresolved. A buyer should trace any reported "
-                    "cohort total back to individual events and signed scopes."
-                ),
-                (
-                    "Set a maximum twenty-five percent exposure to any customer group, "
-                    "referral counterparty, or material delivery counterparty, measured against "
-                    "the relevant denominator. Combine affiliates under common control; "
-                    "five invoices to one corporate parent do not create diversification. "
-                    "For customers, measure trailing-twelve-month recognized revenue and "
-                    "forward ninety-day contracted revenue separately. For referral partners, "
-                    "measure the revenue of accounts they control or can withdraw. "
-                    "For nonexclusive delivery vendors, measure critical production capacity "
-                    "and document substitute availability. During startup, a single first "
-                    "customer necessarily breaches the customer cap; label that exposure "
-                    "openly and avoid claiming the transferable-book standard has been "
-                    "met. Stop expanding that account until diversification restores the "
-                    "limit, unless consciously accepting a documented temporary exception. "
-                    "Prefer twenty percent as the operating target so a neighboring "
-                    "account's churn does not immediately create a breach. Where a "
-                    "core CRM or mailbox provider cannot practically meet the "
-                    "counterparty limit, report the exception and test export, restoration, "
-                    "and alternate-provider migration. Splitting mailboxes into multiple "
-                    "tenants at the same provider does not diversify that dependency. "
-                    "Concentration is a transferable earnings issue: losing one account "
-                    "must not destroy the pod's ability to cover its fixed obligations."
-                ),
-            ],
-            "table": {
-                "caption": "Canonical Scenario Reconciliation and Transferable-Book Accounting Controls",
-                "headers": [
-                    "Scenario or book-quality control",
-                    "Required economic reconciliation or measurement",
-                    "Evidence retained for independent review",
-                    "Operator consequence and escalation rule",
-                ],
-                "rows": [
-                    [
-                        "Conservative scenario retains the exact one-employee and three-contractor staffing constraint",
-                        "$100,000 revenue minus $80,000 expenses equals $20,000 annual owner profit",
-                        "Reconcile customer invoices, earned service periods, expenses, and bank receipts",
-                        "Preserve twenty percent net margin without counting customer advertising funds",
-                    ],
-                    [
-                        "Base scenario retains the exact one-employee and three-contractor staffing constraint",
-                        "$425,000 revenue minus $297,500 expenses equals $127,500 annual owner profit",
-                        "Maintain the retainer ledger and accepted-outcome evidence supporting billed fees",
-                        "Preserve thirty percent net margin after contractor bonuses and credits",
-                    ],
-                    [
-                        "Scaled scenario contains exactly two full-time employees and four contractors",
-                        "$750,000 revenue minus $450,000 expenses equals $300,000 annual owner profit",
-                        "Include loaded employment costs and independent QA within recorded expenses",
-                        "Preserve forty percent net margin rather than assuming scale removes costs",
-                    ],
-                    [
-                        "Customer concentration combines all entities sharing a controlling customer parent",
-                        "Cap each group at twenty-five percent across historical and forward revenue",
-                        "Retain signed scopes, parent relationships, renewal dates, and revenue calculations",
-                        "Target twenty percent and restrict expansion while material breaches remain",
-                    ],
-                    [
-                        "Referral and delivery concentration measures the exposure that can disappear",
-                        "Cap controllable dependency at twenty-five percent of revenue or critical capacity",
-                        "Document partner-controlled accounts, replacement capacity, and tested provider migration evidence",
-                        "Disclose unavoidable platform exceptions instead of manufacturing diversification through tenant counts",
-                    ],
-                    [
-                        "Monthly accrual close preserves earned revenue and customer cohort comparability",
-                        "Reconcile deferred revenue, earned fees, accrued delivery costs, and estimated credits",
-                        "Keep dated CRM extracts linked to accounting entries and supporting contracts",
-                        "Resolve disputed receivables before presenting earnings as dependable distributable cash",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Verify the book before expanding service or opening diligence",
-                "body": "These four checks establish whether the pod's reported earnings can survive operational and buyer scrutiny.",
-                "items": [
-                    "Recalculate all three canonical revenue-minus-expense bridges and confirm that customer-funded advertising never enters the operator revenue numerator.",
-                    "Verify that every active mapped play has an accountable seat, an authorized backup, measurable acceptance evidence, and a tested recovery instruction.",
-                    "Recompute customer-group and referral exposure against the twenty-five percent cap, then disclose startup breaches and unavoidable platform dependencies with dated remediation plans.",
-                    "Trace a sample of accepted outcomes through signed criteria, CRM evidence, accrual entries, credits, contractor compensation, and actual customer receipts.",
-                ],
-            },
-        },
-        {
-            "heading": "4. Transfer enforceable assets and value the earnings a buyer can keep",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Build the transfer package while operating, not after receiving an "
-                    "offer. Under 17 U.S.C. section 204(a), a copyright ownership "
-                    "transfer generally requires a writing signed by the owner or "
-                    "their authorized agent. Obtain signed assignments for custom scripts, "
-                    "copy, documentation, and other transferable work; identify excluded "
-                    "pre-existing materials and the licenses needed to use them. Do "
-                    "not assume contractor payment creates ownership or that every "
-                    "commissioned asset qualifies as work made for hire. Separately "
-                    "inventory domains, telephone numbers, trademarks without decorative "
-                    "symbols, CRM configurations, customer contracts, and licensed data. "
-                    "A copyright assignment does not override data-provider restrictions, "
-                    "privacy duties, or a customer's contractual limits. Review assignment "
-                    "and change-of-control clauses before promising contract transferability. "
-                    "Use business-controlled administrative accounts with named individual "
-                    "access, recovery procedures, and audit logs; never make a buyer "
-                    "dependent on a departing contractor's personal mailbox. For customer "
-                    "and prospect records, document permitted uses, retention schedules, "
-                    "suppression obligations, and any transaction-related transfer conditions. "
-                    "For covered California businesses, evaluate sale, sharing, and service "
-                    "provider obligations under the California Consumer Privacy Act, "
-                    "including Civil Code sections 1798.100 and 1798.120. B2B "
-                    "contact information is not categorically outside that framework."
-                ),
-                (
-                    "Price the business using a clearly named earnings measure rather "
-                    "than multiplying revenue because the service uses automation. For "
-                    "illustration only, evaluate a small owner-operated book at two "
-                    "to three times normalized seller discretionary earnings, and a "
-                    "genuinely manager-run operation at three to four-and-a-half times "
-                    "normalized EBITDA. These are underwriting sensitivities, not observed "
-                    "transaction comparables or promised bids. Smaller, concentrated, "
-                    "project-heavy books can warrant less; verified retention, clean rights, "
-                    "and low founder dependence may support stronger pricing. Canonical "
-                    "owner net profit is not automatically either valuation denominator. "
-                    "If a reconciliation establishes that Base's $127,500 equals "
-                    "normalized seller discretionary earnings, the illustrative enterprise "
-                    "value range is $255,000 to $382,500. If that same "
-                    "profit excludes compensation for necessary owner work, an assumed "
-                    "$90,000 replacement cost leaves $37,500 before other "
-                    "normalization adjustments. Likewise, Scaled's $300,000 less an "
-                    "assumed $110,000 replacement cost leaves $190,000; if "
-                    "this reconciles to normalized EBITDA, the illustrative range becomes "
-                    "$570,000 to $855,000. Deduct replacement cost only once "
-                    "and only when it is absent from recorded expenses. Neither "
-                    "exercise changes the canonical scenario profits or establishes a "
-                    "market clearing price."
-                ),
-                (
-                    "Separate headline enterprise value from cash delivered to the "
-                    "seller. In an illustrative $700,000 transaction, twenty percent "
-                    "contingent consideration leaves $560,000 payable before closing "
-                    "adjustments; debt repayment, working-capital adjustments, fees, taxes, "
-                    "and any escrow further change immediate proceeds. Specify whether "
-                    "an earnout measures retained collected revenue, gross contribution, "
-                    "or another auditable outcome, and define customer attribution and "
-                    "buyer operating obligations. A vague earnout can transfer pricing "
-                    "and staffing risk back to the seller after control has "
-                    "changed. Assemble twenty-four months of monthly statements when "
-                    "available, with younger books showing their complete operating "
-                    "history rather than fabricated longevity. Include cohort exports, "
-                    "customer concentration, rights assignments, contractor agreements, "
-                    "incident history, and a reconciliation from reported profit to "
-                    "the proposed earnings denominator. Test a two-week founder absence "
-                    "at Scaled, measuring service attainment, accepted outcomes, collections, "
-                    "and renewal progress. If the operation fails that test, improve "
-                    "delegation before claiming manager-run economics. For a durable "
-                    "cash cow, use the same controls but distribute only cash "
-                    "remaining after taxes, reserves, and working-capital needs. Candidate "
-                    "#18's 54 mapped plays create value through repeatable ownership "
-                    "and evidence, not through the size of the documentation folder."
-                ),
-            ],
-            "table": {
-                "caption": "Buyer Diligence, Earnings Normalization, and Illustrative Valuation Sensitivities",
-                "headers": [
-                    "Asset or valuation decision",
-                    "Required supporting evidence and treatment",
-                    "Illustrative underwriting result or operating test",
-                    "Failure mode that reduces transferable value",
-                ],
-                "rows": [
-                    [
-                        "Contractor-created scripts, copy, documentation, and other copyrightable operating assets",
-                        "Retain signed written assignments and identify separately licensed pre-existing materials",
-                        "Check title continuity under 17 U.S.C. section 204(a) before transfer",
-                        "Invoices alone leave ownership contested and create post-closing operating dependencies",
-                    ],
-                    [
-                        "Customer contracts, prospect records, domains, telephone numbers, and licensed data",
-                        "Review assignment rights, provider restrictions, permitted uses, and required notices",
-                        "Demonstrate authorized export and restoration without departing contractors' personal accounts",
-                        "An asset inventory without transferable rights exaggerates what the buyer receives",
-                    ],
-                    [
-                        "Base owner-operated valuation using reconciled normalized seller discretionary earnings",
-                        "Use $127,500 only after reconciling the chosen earnings definition",
-                        "Illustrative two-to-three-times sensitivity produces enterprise value of $255,000 to $382,500",
-                        "Unfunded owner replacement work makes the book less passive than presented",
-                    ],
-                    [
-                        "Scaled manager-run valuation using reconciled normalized EBITDA after replacement labor",
-                        "Subtract assumed $110,000 replacement cost only when absent from expenses",
-                        "Illustrative $190,000 denominator at three-to-four-and-a-half times produces $570,000 to $855,000",
-                        "Double-counted addbacks or omitted management costs overstate sustainable buyer earnings",
-                    ],
-                    [
-                        "Closing proceeds differ from headline enterprise value and contingent consideration",
-                        "Model debt, working capital, escrow, transaction fees, taxes, and earnout terms",
-                        "$700,000 headline less twenty percent contingency leaves $560,000 before adjustments",
-                        "Collection disputes and buyer-controlled earnout measures can defer or reduce proceeds",
-                    ],
-                    [
-                        "Founder independence supports either a sale or continued cash distributions",
-                        "Run a two-week absence with delegated renewals, routing, collections, and exceptions",
-                        "Maintain contracted service attainment while preserving reserves and working-capital coverage",
-                        "Recurring founder rescues reveal that documented processes are not operationally transferable",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": "A transferable lead-generation book sells the earnings a replacement team can keep, not the activity a founder can produce.",
-    "diagram_id": "diag-06",
-    "action_checklist": [
-        "Assign all 54 existing mapped plays to the four-person starting pod, with one accountable seat, evidence artifact, backup, and recovery instruction per play.",
-        "Execute contractor scopes covering deliverables, coverage hours, correction deadlines, classification review, compensation triggers, confidentiality, and signed ownership transfers.",
-        "Publish one weekly scorecard for matured acceptance, held meetings, credits, routing attainment, contribution, and suppression integrity, retaining reproducible denominators.",
-        "Close monthly accrual books and reconcile $100,000 / $20,000, $425,000 / $127,500, and $750,000 / $300,000 revenue / owner-profit cases without advertising pass-through.",
-        "Measure customer-group and counterparty concentration against the twenty-five percent cap, targeting twenty percent where practical and documenting unavoidable dependency exceptions.",
-        "Build the transfer evidence room, reconcile owner profit to the selected buyer earnings measure, and complete the scaled pod's two-week founder-absence test before presenting manager-run value.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "17 U.S.C. section 204(a) — Execution of transfers of copyright ownership",
-            "url": "https://www.law.cornell.edu/uscode/text/17/204",
-            "relevance": "Supports signed written copyright assignments for transferable contractor-created scripts, copy, and operating documentation.",
-        },
-        {
-            "title": "15 U.S.C. section 7704 — Requirements for transmission of commercial electronic mail",
-            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
-            "relevance": "Establishes commercial email requirements addressing sender information, subject lines, opt-out mechanisms, and honoring opt-out requests.",
-        },
-        {
-            "title": "47 U.S.C. section 227 — Restrictions on use of telephone equipment",
-            "url": "https://www.law.cornell.edu/uscode/text/47/227",
-            "relevance": "Requires channel-specific assessment of telephone outreach, including the technology used, destination number, and applicable consent requirements.",
-        },
-        {
-            "title": "47 CFR section 64.1200 — Delivery restrictions",
-            "url": "https://www.ecfr.gov/current/title-47/section-64.1200",
-            "relevance": "Provides implementing rules relevant to calling campaigns, prerecorded or artificial voice communications, and applicable do-not-call procedures.",
-        },
-        {
-            "title": "26 U.S.C. section 3121(d) — Definition of employee",
-            "url": "https://www.law.cornell.edu/uscode/text/26/3121",
-            "relevance": "Includes the common-law employee standard relevant to federal employment-tax classification; contractor invoicing does not determine status.",
-        },
-        {
-            "title": "California Labor Code section 2775 — Employee and independent contractor classification",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=2775.&lawCode=LAB",
-            "relevance": "Sets the California ABC classification framework for covered work, subject to statutory exceptions and other applicable provisions.",
-        },
-        {
-            "title": "California Civil Code section 1798.100 — General duties of covered businesses",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=1798.100.&lawCode=CIV",
-            "relevance": "Addresses collection disclosures, purpose limitations, retention considerations, and contractual requirements for covered personal-information handling.",
-        },
-        {
-            "title": "California Civil Code section 1798.120 — Right to opt out of sale or sharing",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=1798.120.&lawCode=CIV",
-            "relevance": "Supports evaluating sale and sharing opt-out obligations when covered lead-generation workflows use or transfer personal information.",
-        },
-    ],
-}
+CHAPTER_11 = {'id': 'Q11',
+ 'chapter_id': 'Q11',
+ 'chapter_number': 11,
+ 'question_number': 11,
+ 'slug': 'tcpa-one-to-one-consent-lead-capture-workflows',
+ 'question_prompt': 'How do the recorded workshops discuss TCPA consent and regulatory risk, and how do '
+                    'the demonstrations capture and document consent?',
+ 'kicker': 'Q11 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'TCPA Consent Workshops and Lead-Capture Workflows',
+ 'subtitle': 'Recorded FCC one-to-one rule discussions, TrustedForm certificates, LeadCapture.io forms and '
+             'tagging, opt-in data and Do Not Call explanations, revocation webinars, and B2B texting '
+             'analysis',
+ 'layout_template': 'chapter_opener',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Practitioners from Troutman Amin, LeadCaptureIO, Seasalt AI, Lead Generation World '
+                      'and the agent floor agree that one-to-one consent rewired lead capture: each seller '
+                      'must be named and individually selected, regulated technology such as autodialers, '
+                      'AI voice, voice drops and automated SMS needs that consent, and the caller must '
+                      'hold the TrustedForm or Jornaya record before dialing. Street mechanics are '
+                      'concrete: one checkbox per brand, CTA text matched word for word, 20-30px '
+                      "checkboxes, a hidden 'XX trusted form cert URL' field, confirmed/unconfirmed "
+                      'tagging, and four-to-five-year retention. Reported numbers: $500-$2,000 fines per '
+                      'text or call, a projected 10-20% conversion loss, and a 1-3% conversion drop traded '
+                      'for a 10-20% contact-rate lift. Disagreement is sharp: Troutman treated the rule as '
+                      'live January 27, 2025, LeadCaptureIO and Kyle Banks reported it shot down, and '
+                      'DatatoLeads argues even manual dialing is technically exposed.',
+ 'key_metrics': [{'label': 'Fine Per Text or Call Violation',
+                  'metric': 'Fine Per Text or Call Violation',
+                  'value': '$500 to $2,000 per text or call',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Amy Chan's stated exposure for each regulated text or call placed without "
+                             'valid one-to-one consent.',
+                  'source': 'Seasalt AI ([KBFaRW7QmVQ @ 00:14:15])'},
+                 {'label': 'Projected Conversion Loss From One-to-One Forms',
+                  'metric': 'Projected Conversion Loss From One-to-One Forms',
+                  'value': '10%, 15%, 20% or more',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Expected drop in form conversion depending on implementation, pushing up '
+                             'CPLs and hurting ROI.',
+                  'source': 'LeadCaptureIO ([Zrihem0vYcU @ 00:02:10])'},
+                 {'label': 'Checkbox Intent-Filter Trade-Off',
+                  'metric': 'Checkbox Intent-Filter Trade-Off',
+                  'value': '1-3% conversion drop for a 10-20% contact-rate lift',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "John's guidance from the top 10% of LeadCapture users on treating consent "
+                             'checkboxes as an intent filter.',
+                  'source': 'LeadCaptureIO ([Hd19AToxex4 @ 00:07:03])'},
+                 {'label': 'Revocation Honoring Deadline',
+                  'metric': 'Revocation Honoring Deadline',
+                  'value': '10 business days, or sooner if practicable',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Replaces the old window of up to 30 days; if a revocation can be honored in '
+                             '24 hours it must be.',
+                  'source': 'Lead Generation World ([OgyCXKzIJM4 @ 00:23:57])'}],
+ 'sections': [{'section_number': 1,
+               'title': 'The Practitioner Consensus',
+               'paragraphs': ['The loudest agreement across every workshop is that blanket partner-list '
+                              'consent is dead and each seller must be named and chosen individually. Eric '
+                              "Troutman calls the one-to-one shift 'the biggest change in the history of "
+                              "the lead generation world' and defines the seller as the ultimate good or "
+                              'service provider, with the consumer selecting each one on its own '
+                              '[Fjcrwp9W5gk @ 00:14:21]. On the Lead Generation World panel, Troutman put '
+                              "it plainly: the consumer now has to opt in to hear from 'one and only one "
+                              "seller,' a sharp break from consent lists that can name 5,000 partners "
+                              'while the data is supposedly sold to only five to seven buyers [6VtW3u8e6WE '
+                              '@ 00:05:39]. Lauro Herrera, a final expense telephone agent since 2011, '
+                              'translated that to the agent desk: if you run your own leads, your name and '
+                              'the specific products and services you offer must sit on the consent form, '
+                              'and it has to be very specific [tRO0J70WjKA @ 00:04:16]. Leadbase reached '
+                              'the same mechanic from the funnel side, saying you must disclose who your '
+                              'client is on the landing page before anybody opts in, which means a '
+                              'lead-gen brand has to state its client right on that form [4k3C9lrziIY @ '
+                              '00:01:31].',
+                              'Practitioners also agree on what the rule actually touches: regulated '
+                              'technology, not the telephone itself. Amy Chan of Seasalt AI listed '
+                              'automated SMS, recorded voice, IVR, voice drop and AI voice as the '
+                              'regulated set, and said each one has to be named explicitly inside the '
+                              'consent language instead of being implied or buried [KBFaRW7QmVQ @ '
+                              '00:19:18]. Troutman told the Lead Generation World audience flatly that the '
+                              "ruling 'does not apply to callers who are not using Auto dialers or "
+                              "pre-recorded voices,' which is why true manual dialing survives as the "
+                              'fallback channel for anyone without one-to-one consent on file [6VtW3u8e6WE '
+                              '@ 00:08:33]. On the Troutman Amin webinar, Troutman pointed operators who '
+                              'still need dialing volume toward human-selection tools such as Safe Select '
+                              'and Drips Initiate as the working alternative to autodialers once '
+                              'one-to-one consent is missing from a record [Fjcrwp9W5gk @ 00:31:16]. The '
+                              'consequence for anyone holding a database is blunt. Troutman told the '
+                              "Seasalt audience that existing leads are 'toast' for regulated technology "
+                              'and can only be worked through manual contact from the effective date '
+                              'forward, so aged files lose their automated value overnight and every SMS '
+                              'drip, voice drop and AI agent pointed at them goes dark [KBFaRW7QmVQ @ '
+                              '00:25:56].',
+                              'The third point of agreement is that consent is worthless unless the caller '
+                              'physically holds the proof. Troutman told Lead Generation World that the '
+                              "FCC now says the caller 'cannot rely on the third party to hold on to the "
+                              "consent record' and must take possession of it before the call is placed, "
+                              "which in Troutman's reading means claiming TrustedForm or Jornaya "
+                              "certificates [6VtW3u8e6WE @ 00:25:30]. LeadCaptureIO's webclass set the "
+                              "retention floor at four years to match the statute of limitations, 'ideally "
+                              "longer for added protection,' and said the records must be stored and "
+                              "retained securely [Zrihem0vYcU @ 00:19:42]. The same channel's TrustedForm "
+                              'walkthrough stressed that lead buyers and clients may demand a digital '
+                              'certificate generated with each lead, and that the certificate can be '
+                              'stored for years, which is the point when a lead files suit three years '
+                              'later [WXqAR94YqtU @ 00:02:00]. Founder John then framed the whole stack as '
+                              'a sales weapon rather than overhead: buyers in mortgage, insurance, debt, '
+                              "tax, home services and legal 'want compliant leads and they'll pay more for "
+                              "those leads,' because a consumer who clicks the box is signaling intent, "
+                              'which cuts refunds and lifts contact rates [Hd19AToxex4 @ 00:02:02].'],
+               'table': {'caption': 'Where the TCPA practitioners line up on one-to-one consent '
+                                    'fundamentals',
+                         'headers': ['Consensus Point',
+                                     'What the Practitioners Say',
+                                     'Operator Implication',
+                                     'Expert Source'],
+                         'rows': [['Name each seller one at a time on the form',
+                                   'Consumer opts in to one and only one seller, meaning the actual good '
+                                   'or service provider',
+                                   'Partner lists of thousands of names behind a link no longer produce '
+                                   'usable consent',
+                                   'Lead Generation World ([6VtW3u8e6WE @ 00:05:39])'],
+                                  ['Separate unchecked checkbox for every single vendor',
+                                   'Specific consent language, an explicit checkbox per vendor, no '
+                                   'pre-checked boxes, no hyperlink hiding',
+                                   'Every brand on the form needs its own box the consumer actually clicks',
+                                   'Seasalt AI ([KBFaRW7QmVQ @ 00:21:24])'],
+                                  ['Regulated technology is what triggers the rule',
+                                   'Automated SMS, recorded voice, IVR, voice drop and AI voice must each '
+                                   'be named explicitly',
+                                   'Name every automated channel you plan to run inside the consent text '
+                                   'before launch',
+                                   'Seasalt AI ([KBFaRW7QmVQ @ 00:19:18])'],
+                                  ['Caller must possess the consent record before dialing',
+                                   'Caller cannot rely on a third party and must take possession before '
+                                   'the call is placed',
+                                   'Claim TrustedForm or Jornaya certificates rather than trusting the '
+                                   'seller to hold them',
+                                   'Lead Generation World ([6VtW3u8e6WE @ 00:25:30])'],
+                                  ['DNC stays a separate obligation on top of consent',
+                                   'Maintain an internal list, scrub the national registry, and check the '
+                                   '11 state lists',
+                                   'One-to-one consent capture runs alongside the internal and registry '
+                                   'scrubbing routine, not instead of it',
+                                   'Seasalt AI ([KBFaRW7QmVQ @ 00:22:47])'],
+                                  ['Liability runs through the whole lead chain',
+                                   'Brand exposed most, caller second, then brokers, publishers, platforms '
+                                   'and middleware',
+                                   'Nobody in the lead flow can assume someone downstream absorbs all of '
+                                   'the risk',
+                                   'Troutman Amin, LLP ([Fjcrwp9W5gk @ 00:10:03])'],
+                                  ['Retain consent records for at least four years',
+                                   'Keep records securely for at least four years, ideally longer for '
+                                   'added protection',
+                                   'Storage window should outlast the statute of limitations on every lead '
+                                   'captured',
+                                   'LeadCaptureIO ([Zrihem0vYcU @ 00:19:42])']]}},
+              {'section_number': 2,
+               'title': 'Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['The form build is where the money is won or lost. LeadCaptureIO founder '
+                              'John attaches the consent block to whatever step holds the phone field, '
+                              'swaps the bracket placeholders so they match the button CTA word for word, '
+                              "such as 'get my rate,' and strips automated-technology or SMS language that "
+                              'does not apply to the campaign [4hypirM3lEg @ 00:09:13]. On styling, the '
+                              'same team tested a 35px checkbox against the common 5px default and said 20 '
+                              "to 30px 'will convert higher,' with consent positioned above or below the "
+                              'button and bold text flagged as worth testing [FQR1fK6va5I @ 00:01:37]. '
+                              'Their webclass stacked the rest of the conversion kit: a real-person photo, '
+                              'checkboxes two to three times larger for mobile, horizontal layout, '
+                              "incentive or 'remember to check' copy whose legality must be checked, an "
+                              'explanation of what happens next, and a select-all option [Zrihem0vYcU @ '
+                              '00:17:36]. The Contact Center Compliance masterclass panel set the copy '
+                              "floor: the words 'by clicking,' the seller's name plus agents acting on its "
+                              "behalf, 'marketing' or 'promotional,' texts, the word 'automatic,' "
+                              'prerecorded voice, the specific products covered, and a statement that '
+                              'consent is not a condition of purchase, with an alternate path actually '
+                              'offered [_EAk_fw9kZk @ 00:36:24].',
+                              'Proof of consent gets wired in through ActiveProspect TrustedForm. '
+                              "LeadCaptureIO's setup walkthrough has operators open an ActiveProspect "
+                              'account, which offers a free plan, copy the JavaScript snippet, and paste '
+                              'it under Publish, Install custom code into the head section rather than the '
+                              'body, on the form only and not the landing page, with the comments removed '
+                              'before saving [WXqAR94YqtU @ 00:03:40]. The next move is where people slip: '
+                              'add a hidden hard-coded field with a blank value on the contact step, name '
+                              "it anything, but set the label to exactly 'XX trusted form cert URL,' then "
+                              'push a test lead from a live page and confirm the certificate link under '
+                              "Lead details [WXqAR94YqtU @ 00:05:24]. On delivery, John's platform tags a "
+                              "lead 'confirmed' when at least one brand box is checked and 'unconfirmed' "
+                              'otherwise, shows per-company status, and posts the consent field by webhook '
+                              'into GoHighLevel, LeadByte, LeadProsper and Lead Media [4hypirM3lEg @ '
+                              '00:16:34]. In the competitive-advantage session, John said to flip the '
+                              'TrustedForm switch under Lead Delivery and create an ActiveProspect account '
+                              'to claim and retain certificates, calling session replay, timestamp, IP and '
+                              "metadata 'the closest thing to a digital body cam for consent collection' "
+                              '[Hd19AToxex4 @ 00:11:43].',
+                              'For multi-buyer sellers who cannot hard-code one brand per form, dynamic '
+                              "consent is the workaround being built. LeadCaptureIO's flow pings state or "
+                              'ZIP to the distribution tool, gets back JSON carrying buyer name, price and '
+                              'ID, inserts those names into the consent text, and falls back to default '
+                              'copy when no buyer is returned for that geography; the team hit roughly 50 '
+                              'edge cases getting it to work [Zrihem0vYcU @ 00:15:56]. Troutman described '
+                              'pre-pinging, credited to Travis Crowy, as the mechanism that keeps the '
+                              'auction alive, and noted bidders may also receive the data as a non-consent '
+                              'trigger lead [6VtW3u8e6WE @ 00:15:09]. Leadbase solves it at the funnel '
+                              'layer instead: a LeadHook quiz embedded on an Unbounce page auto-redirects '
+                              'each respondent to a client page based on answers such as policies over '
+                              '500k, universal life or men over 65, then passes URL parameters into the '
+                              'CRM or LeadProsper and round-robins leads across clients [4k3C9lrziIY @ '
+                              '00:03:56]. At the opposite end of the market, DatatoLeads still sells raw '
+                              'volume: a white label of 1 million leads for $2,500, which Brian pegged at '
+                              'one quarter of one penny each, resold at 1 cent apiece to yield $7,500 '
+                              '[DrbAXLpA1wI @ 00:29:14].'],
+               'table': {'caption': 'Exact tools, settings and numbers the practitioners run in one-to-one '
+                                    'lead capture',
+                         'headers': ['Mechanic or Tool',
+                                     'Exact Setting or Number',
+                                     'How Practitioners Use It',
+                                     'Expert Source'],
+                         'rows': [['TrustedForm hidden certificate field on the contact step',
+                                   'Hidden hard-coded field, blank value, label set exactly to XX trusted '
+                                   'form cert URL',
+                                   'Certificate link appears under Lead details after a live test lead is '
+                                   'submitted',
+                                   'LeadCaptureIO ([WXqAR94YqtU @ 00:05:24])'],
+                                  ['Consent checkbox sizing and placement',
+                                   '35px tested, 5px common, 20 to 30px said to convert higher',
+                                   'Test larger boxes and bold text placed above or below the submit '
+                                   'button',
+                                   'LeadCaptureIO ([FQR1fK6va5I @ 00:01:37])'],
+                                  ['Checkboxes treated as an intent filter',
+                                   'Accept a 1 to 3 percent conversion drop for a 10 to 20 percent '
+                                   'contact-rate lift',
+                                   'Pitch the higher contact rate to buyers who pay more for compliant '
+                                   'leads',
+                                   'LeadCaptureIO ([Hd19AToxex4 @ 00:07:03])'],
+                                  ['Confirmed or unconfirmed consent tagging',
+                                   'Confirmed when at least one brand box is checked, otherwise '
+                                   'unconfirmed, with per-company status',
+                                   'Status flows into CRM webhooks plus email and text lead notifications',
+                                   'LeadCaptureIO ([4hypirM3lEg @ 00:16:34])'],
+                                  ['Tamper-proof consent record storage',
+                                   'Five years of storage including user agent and IP on every lead',
+                                   'Keeps the consent record available across the full litigation window',
+                                   'LeadCaptureIO ([Zrihem0vYcU @ 00:20:39])'],
+                                  ['Human-selection calling tools for scale',
+                                   'Safe Select, Drips Initiate and Convoso Call Catalyst named as '
+                                   'ATDS-stripped options',
+                                   'Call at volume without autodialer capacity when one-to-one consent is '
+                                   'missing',
+                                   'Seasalt AI ([KBFaRW7QmVQ @ 00:43:39])'],
+                                  ['Re-consent campaign for the existing CRM',
+                                   'Email or SMS pointing to a landing page that collects fresh one-to-one '
+                                   'consent',
+                                   'Compliant one-to-one consent then never expires until the consumer '
+                                   'opts out',
+                                   'Seasalt AI ([KBFaRW7QmVQ @ 00:45:32])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'What the Operators Actually Do Differently',
+                           'body': 'Moves practitioners describe making on their own desks and forms once '
+                                   'one-to-one consent hit their lead flow.',
+                           'items': ['Lauro Herrera moved the agency to a single carrier after concluding '
+                                     "a lead from broker B can only be used to sell broker B's carriers "
+                                     '[Lauro Herrera — tRO0J70WjKA @ 00:10:01].',
+                                     'Troutman expects sellers displayed on pre-pinged forms to be ordered '
+                                     'by bid, and warned that a select-all button risks being treated as a '
+                                     'dark pattern [Lead Generation World — 6VtW3u8e6WE @ 00:17:15].',
+                                     'When writing revocation clarification texts, keep persuasion out, '
+                                     "test the wording and track opt-out rates, because 'an extra 1%' "
+                                     'matters [Troutman Amin, LLP — 9KGQa-Oon7o @ 00:40:40].',
+                                     "Never ship a disclosure that is 'light gray against an ashen "
+                                     "background'; the masterclass panel treats low-contrast consent copy "
+                                     'as a losing design [Contact Center Compliance — _EAk_fw9kZk @ '
+                                     '00:53:09].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Draft the one-to-one disclosure',
+                              'action': 'Start from the free Troutman Amin 15 template, name each seller, '
+                                        'and do not trust vendor drafts blindly.',
+                              'detail': 'Troutman says the free Troutman Amin 15 template covers '
+                                        'one-to-one naming [Troutman Amin, LLP — Fjcrwp9W5gk @ 00:16:24]; '
+                                        'of roughly 10 vendor versions shown at LGW, only about 2 passed '
+                                        '[Seasalt AI — KBFaRW7QmVQ @ 00:33:10].'},
+                             {'step': 2,
+                              'title': 'Build the consent block on the phone step',
+                              'action': 'Add one checkbox per brand, match the bracket CTA to the button '
+                                        'text, and place the block below the button.',
+                              'detail': 'John requires a checkbox for each brand, offers select-all and '
+                                        'horizontal or vertical layout, and prefers placement underneath '
+                                        "the 'get my rate' button [LeadCaptureIO — 4hypirM3lEg @ "
+                                        '00:10:05].'},
+                             {'step': 3,
+                              'title': 'Install TrustedForm certification',
+                              'action': 'Paste the ActiveProspect snippet into the form head, add the '
+                                        'hidden cert field, and send a test lead.',
+                              'detail': 'Paste into the head section, not the body, on the form only, '
+                                        'remove comments, then add the hidden field labeled exactly XX '
+                                        'trusted form cert URL [LeadCaptureIO — WXqAR94YqtU @ 00:03:40].'},
+                             {'step': 4,
+                              'title': 'Route, tag, retain and re-consent',
+                              'action': 'Push consent data by webhook, tag confirmed leads, store records, '
+                                        'and re-consent the old CRM by email or SMS.',
+                              'detail': 'Old CRM contacts get an email or SMS to a landing page collecting '
+                                        'new consent, and compliant one-to-one consent never expires until '
+                                        'opt-out [Seasalt AI — KBFaRW7QmVQ @ 00:45:32].'}]},
+              {'heading': 'Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The sharpest split is whether one-to-one consent is even live law. Eric '
+                              'Troutman, speaking on the Seasalt AI panel, told operators to treat the '
+                              'rule as live on January 27 despite the IMC challenge and the '
+                              'executive-order stay talk. He noted the FCC sat 2-2, so a stay needed three '
+                              'of four votes [KBFaRW7QmVQ @ 00:32:39]. The Lead Generation World '
+                              'regulatory briefing called January 27, 2025 the implementation deadline: '
+                              '"We\'re off to the races" [OgyCXKzIJM4 @ 00:39:19]. John at LeadCaptureIO, '
+                              'coaching the top 10% of his lead sellers, flatly states that the late 2024 '
+                              'to early 2025 one-to-one ruling "got shot down." He still pushes named '
+                              'follow-up companies, per-brand checkboxes and dynamic consent, because '
+                              'buyers want compliant leads and will pay more for them [Hd19AToxex4 @ '
+                              '00:07:46]. Kyle Banks goes furthest. He tells his B2B cold-texting audience '
+                              'that IMC v. FCC in 2025 vacated the one-to-one rule outright, and that '
+                              'Supreme Court rulings in June 2024 and June 2025 cut deference to the FCC '
+                              '[VnnBAIAnf54 @ 00:24:29]. The split is about posture, not paperwork. The '
+                              'Troutman camp builds every form as if the rule binds. The LeadCaptureIO '
+                              'camp sells the same mechanics as a margin play. Banks leans on a model '
+                              'built on no autodialer, curated lists and publicly listed business lines '
+                              'only.',
+                              'The second fault line is what counts as safe manual outreach. Troutman told '
+                              'the Seasalt AI audience that manual calls to valid '
+                              'prior-express-written-consent leads stay legal, even to DNC numbers. For '
+                              'operators who need scale, he pointed to ATDS-stripped tools such as Safe '
+                              'Select, Drips Initiate and Convoso Call Catalyst [KBFaRW7QmVQ @ 00:44:25]. '
+                              'On Lead Generation World he flagged the catch. The NCLC and 28 state '
+                              'attorneys general argue that prior express invitation or permission already '
+                              'demands one-to-one consent, and a win for them means retroactive exposure '
+                              'with a four-year lookback [6VtW3u8e6WE @ 00:10:08]. Brian at DatatoLeads '
+                              'takes the bleakest read. He says even manual dialing "technically" breaks '
+                              'the rule and that "door knocking is illegal." He lists TV, air, social, '
+                              'direct mail and email as the remaining channels and tells buyers not to '
+                              'send text messages [DrbAXLpA1wI @ 00:11:47]. Kyle Banks argues the opposite '
+                              'for B2B texting. If numbers come from a list rather than a random or '
+                              'sequential generator, there is no autodialer. He adds that courts from 2022 '
+                              'to 2024 rejected shuffling, mere capacity and send-order generation as '
+                              "autodialer triggers [VnnBAIAnf54 @ 00:13:44]. Troutman's capacity test cuts "
+                              'the other way outside the Third Circuit: he says preview dial is likely an '
+                              'ATDS and RingCentral is unvetted.',
+                              "Form architecture splits the room as well. LeadCaptureIO's compliant-form "
+                              'build pairs per-company checkboxes with an optional select-all. It also '
+                              'includes a CTA matching the button text, e-sign language, contact methods '
+                              'and a privacy link [Zrihem0vYcU @ 00:12:28]. Troutman, on Lead Generation '
+                              'World, allowed individual checkboxes for four to ten sellers but warned '
+                              'that a select-all button reads as a dark pattern [6VtW3u8e6WE @ 00:17:54]. '
+                              'On pre-checked brands, he told the Troutman Amin webinar that pre-selecting '
+                              "with a deselect option is his firm's position, yet he advises against doing "
+                              'it. His reasoning: "you can get away with a lot more if the consumer is '
+                              'still selecting" [Fjcrwp9W5gk @ 00:46:12]. Leadbase runs a looser playbook. '
+                              'Its LeadHook quizzes on Unbounce auto-redirect to client pages. The speaker '
+                              'admits some quizzes name the client only on the thank-you page, not the '
+                              'quiz page, while insisting the rule "isn\'t going to destroy your funnel" '
+                              '[4k3C9lrziIY @ 00:02:39]. Name insertion is the other branch. LeadCaptureIO '
+                              'says the industry is moving to one form per client with manually entered '
+                              'names. Its dynamic-consent path instead pings state or ZIP to the '
+                              'distribution tool and returns buyer names in JSON, a build that surfaced '
+                              'about 50 edge cases.'],
+               'table': {'caption': 'Side-by-side playbooks where named practitioners split on the '
+                                    'one-to-one rule',
+                         'headers': ['Dispute',
+                                     'Playbook A',
+                                     'Playbook B',
+                                     'What Operators Do With It',
+                                     'Expert Source'],
+                         'rows': [['Whether one-to-one consent is live and binding law',
+                                   'Troutman says treat the rule as live January 27 and build every form '
+                                   'to it',
+                                   'LeadCaptureIO says the ruling got shot down; Kyle Banks says IMC v. '
+                                   'FCC vacated it',
+                                   'LeadCaptureIO still sells per-brand checkboxes as a premium '
+                                   'compliant-lead margin play',
+                                   'Seasalt AI ([KBFaRW7QmVQ @ 00:32:39]); LeadCaptureIO ([Hd19AToxex4 @ '
+                                   '00:07:46]); Kyle Banks ([VnnBAIAnf54 @ 00:24:29])'],
+                                  ['Whether manual dialing survives the new rule',
+                                   'Troutman says manual calls to valid written-consent leads stay legal, '
+                                   'even to DNC numbers',
+                                   'DatatoLeads says even manual dialing technically breaks the rule and '
+                                   'door knocking is illegal',
+                                   'Troutman routes scale calling through Safe Select, Drips Initiate or '
+                                   'Convoso Call Catalyst',
+                                   'Seasalt AI ([KBFaRW7QmVQ @ 00:44:25]); DatatoLeads - B2B and B2C '
+                                   'Wholesale Data and Leads ([DrbAXLpA1wI @ 00:11:47])'],
+                                  ['Whether outbound text messaging is still safe',
+                                   'Lead Generation World says texts are generally okay federally today, '
+                                   'but use human select',
+                                   'DatatoLeads says the biggest thing is do not send text messages at all',
+                                   'Kyle Banks texts only publicly listed business lines with no '
+                                   'autodialer and won in court',
+                                   'Lead Generation World ([OgyCXKzIJM4 @ 00:21:26]); DatatoLeads - B2B '
+                                   'and B2C Wholesale Data and Leads ([DrbAXLpA1wI @ 00:24:18]); Kyle '
+                                   'Banks ([VnnBAIAnf54 @ 00:34:21])'],
+                                  ['Whether a select-all checkbox belongs on the form',
+                                   'LeadCaptureIO ships an optional select-all beside the per-company '
+                                   'consent checkboxes',
+                                   'Troutman warns that a select-all button reads as a dark pattern',
+                                   'Troutman allows individual checkboxes for roughly four to ten named '
+                                   'sellers',
+                                   'LeadCaptureIO ([Zrihem0vYcU @ 00:12:28]); Lead Generation World '
+                                   '([6VtW3u8e6WE @ 00:17:54])'],
+                                  ['How exposed small operators and individuals really are',
+                                   'Troutman says the brand, caller, brokers, publishers, platforms and '
+                                   'individuals are all exposed',
+                                   'DatatoLeads says individual operators are not on the radar; big call '
+                                   'centers are',
+                                   'Lauro Herrera says every caller he pursued as a pro se litigator '
+                                   'settled with him',
+                                   'Troutman Amin, LLP ([Fjcrwp9W5gk @ 00:10:03]); DatatoLeads - B2B and '
+                                   'B2C Wholesale Data and Leads ([DrbAXLpA1wI @ 00:21:06]); Lauro Herrera '
+                                   '([tRO0J70WjKA @ 00:14:31])'],
+                                  ['How buyer names get inserted into consent language',
+                                   'Manual names on one form per client, which LeadCaptureIO says is where '
+                                   'the industry is moving',
+                                   'Dynamic consent pings state or ZIP and returns buyer name, price and '
+                                   'ID in JSON',
+                                   "LeadCaptureIO's team hit about 50 edge cases while building the "
+                                   'dynamic path',
+                                   'LeadCaptureIO ([Zrihem0vYcU @ 00:15:29]); LeadCaptureIO ([Zrihem0vYcU '
+                                   '@ 00:15:56])'],
+                                  ['Where the consent block sits and how it is styled',
+                                   'John at LeadCaptureIO prefers consent underneath the get my rate '
+                                   'button',
+                                   'The same platform lets operators place it above the button and test '
+                                   'bold text',
+                                   'Checkboxes at 20 to 30px will convert higher than the common 5px, per '
+                                   'LeadCaptureIO',
+                                   'LeadCaptureIO ([4hypirM3lEg @ 00:11:31]); LeadCaptureIO ([FQR1fK6va5I '
+                                   '@ 00:01:37])']]}},
+              {'heading': 'Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The economics check starts with who eats the judgment. Troutman told the '
+                              'Seasalt AI audience that the risk sits on lead buyers, with indemnity '
+                              'flowing from sellers. He added that one lead-gen firm was already closing '
+                              'because of the rule [KBFaRW7QmVQ @ 00:33:39]. On the Troutman Amin webinar '
+                              'he laid out the exposure chain: the brand most, the caller second, then '
+                              'brokers, publishers, platforms and middleware. Individuals can be '
+                              'personally liable, and he reported TCPA class actions up 40% from the prior '
+                              'year [Fjcrwp9W5gk @ 00:25:52]. Lauro Herrera shows the same math from the '
+                              'plaintiff side. He is a final expense agent turned pro se TCPA and DNC '
+                              'litigator. He collected $8,000 within 48 hours in 2022 and six figures '
+                              'across five undisputed settlements in 2024. He quotes DNC violations at up '
+                              'to $50,000 each, against $500 to $1,500 per TCPA violation [tRO0J70WjKA @ '
+                              '00:13:43]. DatatoLeads counters that individual operators are "not on the '
+                              'radar." In its view, the real exposure scales with a call center running '
+                              "1,000 agents at 200 calls each [1zvwOs0qmmg @ 00:02:01]. Herrera's record "
+                              'cuts against that comfort: every one of his targets settled with him. '
+                              "Seasalt AI's Amy Chan pegs fines at $500 to $2,000 per text or call.",
+                              'Most form failures are drafting and plumbing errors, not strategy. Troutman '
+                              'said courts already found the lowerbills.com flow unenforceable. Of roughly '
+                              'ten vendor drafts shown at LGW, only about two passed his review '
+                              '[KBFaRW7QmVQ @ 00:33:10]. The Contact Center Compliance masterclass '
+                              'catalogued older losses. Three 2020 cases died because the form lacked the '
+                              'words "by clicking." Others failed over a Subway flow, a "this is correct '
+                              'continue" button, arrows pulling the eye away, and a cluttered checkbox '
+                              'page. Troutman begged operators not to ship disclosures "light gray against '
+                              'an ashen background" [_EAk_fw9kZk @ 00:54:02]. The certificate plumbing '
+                              "breaks just as easily. LeadCaptureIO's TrustedForm walkthrough says the "
+                              "script goes in the form's head section, not the body. The hidden field "
+                              'label must read exactly "XX trusted form cert URL," whatever the field '
+                              'itself is named [WXqAR94YqtU @ 00:05:24]. John adds that many sellers '
+                              'forget his fifth tactic: storing and passing the exact consent text and '
+                              'tagging leads [Hd19AToxex4 @ 00:12:22]. LeadCaptureIO also budgets 10 to '
+                              '20% or more in conversion loss from the new layout. That loss pushes CPLs '
+                              'up and squeezes ROI before a single call is placed.',
+                              'The quiet killers are back-office. On the Troutman Amin revocation panel, '
+                              'the window to honor a revocation dropped from a reasonable time, often '
+                              'treated as about 30 days, to 10 business days. A STOP on any channel, even '
+                              'to a password reset or fraud alert, can revoke all TCPA-regulated contact '
+                              '[9KGQa-Oon7o @ 00:23:37]. Drips CEO AC warned against the lazy fix: a '
+                              'blanket confirm reply that treats everything else as a global opt-out will '
+                              '"destroy lists." John Henson flagged that a confirmation text sent outside '
+                              'the 5-minute window is arguably sent without consent [9KGQa-Oon7o @ '
+                              "00:20:52]. Lauro Herrera's CRM trap is timing. Inquiry consent lasts 90 "
+                              'days, and text automation must stop at day 90. From day 91, only manual '
+                              'calls are allowed, after scrubbing national and state DNC lists '
+                              '[tRO0J70WjKA @ 00:07:16]. He also moved his agency to a single carrier, '
+                              "because a broker's lead can only sell that broker's carriers. Contact "
+                              'Center Compliance panelists called it "death" to use presumed consent to '
+                              'pitch refi offers to a servicing portfolio. They demanded a consent flag on '
+                              'every number in the system of record [_EAk_fw9kZk @ 00:26:11]. Drips '
+                              'counted 5.6 million unique ways it removed people from campaigns, and the '
+                              'panel noted that 5 to 7% of people misspell their opt-out.'],
+               'table': {'caption': 'Firsthand failure modes and the economics practitioners attached to '
+                                    'them',
+                         'headers': ['Failure Mode',
+                                     'What Went Wrong',
+                                     'Cost or Consequence',
+                                     'Practitioner Fix',
+                                     'Expert Source'],
+                         'rows': [['Leaning on old CRM leads after January 27',
+                                   'Contacts collected without one-to-one consent are toast for regulated '
+                                   'technology',
+                                   'A CRM of 2,000 contacts drops to manual-contact-only for dialers and '
+                                   'texts',
+                                   'Re-consent by email or SMS to a landing page before automated outreach',
+                                   'Seasalt AI ([KBFaRW7QmVQ @ 00:25:56])'],
+                                  ['Trusting consent language drafted by lead vendors',
+                                   'Roughly two of about ten vendor versions shown at LGW passed '
+                                   "Troutman's review",
+                                   'Risk lands on the buyer while indemnity has to flow back from sellers',
+                                   'Build from the free Troutman Amin 15 template instead of vendor drafts',
+                                   'Seasalt AI ([KBFaRW7QmVQ @ 00:33:10])'],
+                                  ['Calling a reassigned mobile number believed to be consented',
+                                   'A different person answers the number the caller thought belonged to '
+                                   'the lead',
+                                   'There is no one call safe harbor; the FCC expects the caller to know',
+                                   'Run a wireless reassigned-number check before the first dial',
+                                   'Contact Center Compliance ([_EAk_fw9kZk @ 00:34:11])'],
+                                  ["Selling unnamed carriers off a broker's consented lead",
+                                   "Consent from broker B only covers selling broker B's named carriers",
+                                   'Agents lose the old model of reselling leads to any final expense '
+                                   'agent',
+                                   'Herrera consolidated his agency onto a single carrier to stay inside '
+                                   'consent',
+                                   'Lauro Herrera ([tRO0J70WjKA @ 00:10:01])'],
+                                  ['Overcorrecting on revocation with blanket global opt-outs',
+                                   'Sending a generic confirm reply and treating every other response as '
+                                   'opt-out',
+                                   'AC says this destroys lists; 5 to 7% of people misspell opt-outs '
+                                   'anyway',
+                                   'NLP sorting of replies into explicits, opt-outs, closeouts and wrong '
+                                   'numbers',
+                                   'Troutman Amin, LLP ([9KGQa-Oon7o @ 00:20:52])'],
+                                  ['Re-dialing a saved data list months after buying it',
+                                   'Saved lists stay accessible forever without rebuying the same leads',
+                                   'Numbers may have changed if the list is about eight months old',
+                                   'Filter out records with no cell phone in the mobile field before '
+                                   'saving',
+                                   'DatatoLeads - B2B and B2C Wholesale Data and Leads ([1zvwOs0qmmg @ '
+                                   '00:00:21])'],
+                                  ['Rebuilding forms around per-company checkboxes and longer language',
+                                   'Expected conversion loss of 10, 15, 20% or more depending on '
+                                   'implementation',
+                                   'Cost per lead rises and ROI drops for lead generators',
+                                   'Real-person photo, checkboxes 2-3x larger, horizontal layout, '
+                                   'select-all and next-step text',
+                                   'LeadCaptureIO ([Zrihem0vYcU @ 00:02:10])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Stop-the-line checks before any regulated-technology outreach',
+                           'body': 'Four checks pulled from the losses, warnings and courtroom outcomes '
+                                   'the speakers reported firsthand. Clear them before a dialer, voice '
+                                   'drop or text platform touches a lead.',
+                           'items': ['Take possession of the consent record before the call is placed, '
+                                     'because the caller cannot rely on the third party to hold it; '
+                                     'Troutman reads this as claiming the TrustedForm or Jornaya '
+                                     'certificate [Lead Generation World — 6VtW3u8e6WE @ 00:25:30].',
+                                     'Audit dialers by capacity, not by how much a human clicks: outside '
+                                     'PA, DE and NJ, Troutman says preview dial is likely an ATDS [Seasalt '
+                                     'AI — KBFaRW7QmVQ @ 00:50:43].',
+                                     'Honor every revocation as soon as practicable, within 10 business '
+                                     'days at most; if you can do it in 24 hours, you have to do it in 24 '
+                                     'hours [Lead Generation World — OgyCXKzIJM4 @ 00:24:16].',
+                                     'Kill text automation at day 90 on inquiry leads, and from day 91 '
+                                     'call only manually after scrubbing the national and state DNC lists '
+                                     '[Lauro Herrera — tRO0J70WjKA @ 00:13:21].']}}],
+ 'pull_quote': '"Long term you can get around design issues but you can\'t get around legal issues." — '
+               'attributed to Contact Center Compliance (_EAk_fw9kZk @ 00:56:26).',
+ 'diagram_id': 'diag-06',
+ 'action_checklist': ['Add the TCPA consent block to whichever form step holds the phone field, with one '
+                      'checkbox per named brand [LeadCaptureIO — FQR1fK6va5I @ 00:00:00].',
+                      'Match bracket placeholders to the exact button CTA, such as get my rate, and strip '
+                      'automated-technology or SMS language that does not apply [LeadCaptureIO — '
+                      '4hypirM3lEg @ 00:09:13].',
+                      'Paste the TrustedForm script into the form head, not the body, and set the hidden '
+                      'field label to exactly XX trusted form cert URL [LeadCaptureIO — WXqAR94YqtU @ '
+                      '00:05:24].',
+                      'Write disclosures with by clicking, the seller name, marketing, texts, automatic, '
+                      'prerecorded voice, the products, and a not-a-condition-of-purchase statement '
+                      '[Contact Center Compliance — _EAk_fw9kZk @ 00:36:24].',
+                      'Re-consent old CRM contacts by email or SMS to a landing page, since compliant 1:1 '
+                      'consent never expires until opt-out [Seasalt AI — KBFaRW7QmVQ @ 00:45:32].',
+                      'Retain consent records securely for at least 4 years, ideally longer, with IP and '
+                      'user agent captured [LeadCaptureIO — Zrihem0vYcU @ 00:19:42].'],
+ 'statutory_citations': [{'title': 'Seasalt AI — (UPDATE 1/21/2025) New One-to-One Consent Rules: TCPA '
+                                   'Compliance w/ TCPAWorld Troutman & Seasalt.ai [00:32:39]',
+                          'url': 'https://www.youtube.com/watch?v=KBFaRW7QmVQ&t=1959s',
+                          'relevance': 'Primary practitioner testimony on treating the one-to-one rule as '
+                                       'live and on buyer-side risk allocation.'},
+                         {'title': 'Lead Generation World — IMPORTANT: TCPA/FCC Breakdown of New '
+                                   'Regulations with Eric Troutman [00:25:30]',
+                          'url': 'https://www.youtube.com/watch?v=6VtW3u8e6WE&t=1530s',
+                          'relevance': 'Primary practitioner testimony on callers taking possession of '
+                                       'consent records before dialing.'},
+                         {'title': 'Troutman Amin, LLP — HERE IT IS! THAT MASSIVE TCPA FCC REVOCATION RULE '
+                                   'WEBINAR YOU ALL NEED TO SEE! (Sorry we sold out!) [00:23:37]',
+                          'url': 'https://www.youtube.com/watch?v=9KGQa-Oon7o&t=1417s',
+                          'relevance': 'Primary practitioner testimony on the 10 business day revocation '
+                                       'window and opt-out handling.'},
+                         {'title': 'Contact Center Compliance — TCPA Marketing Consent Masterclass Series '
+                                   'Part 1 [00:36:24]',
+                          'url': 'https://www.youtube.com/watch?v=_EAk_fw9kZk&t=2184s',
+                          'relevance': 'Primary practitioner testimony on required disclosure elements and '
+                                       'failed consent forms.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'KBFaRW7QmVQ',
+                       'title': '(UPDATE 1/21/2025) New One-to-One Consent Rules: TCPA Compliance w/ '
+                                'TCPAWorld Troutman & Seasalt.ai',
+                       'channel': 'Seasalt AI',
+                       'author': 'Seasalt AI',
+                       'text': "Remember if you're a lead buyer the risk is on you.",
+                       'tip': "Remember if you're a lead buyer the risk is on you.",
+                       'timestamp': 2019,
+                       'timestamp_seconds': 2019,
+                       'timestamp_label': '[00:33:39]',
+                       'url': 'https://www.youtube.com/watch?v=KBFaRW7QmVQ&t=2019s',
+                       'markdown': '[00:33:39](https://www.youtube.com/watch?v=KBFaRW7QmVQ&t=2019s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'KBFaRW7QmVQ',
+                       'title': '(UPDATE 1/21/2025) New One-to-One Consent Rules: TCPA Compliance w/ '
+                                'TCPAWorld Troutman & Seasalt.ai',
+                       'channel': 'Seasalt AI',
+                       'author': 'Seasalt AI',
+                       'text': 'The fine is $500 to $2,000 per text or call violation.',
+                       'tip': 'The fine is $500 to $2,000 per text or call violation.',
+                       'timestamp': 855,
+                       'timestamp_seconds': 855,
+                       'timestamp_label': '[00:14:15]',
+                       'url': 'https://www.youtube.com/watch?v=KBFaRW7QmVQ&t=855s',
+                       'markdown': '[00:14:15](https://www.youtube.com/watch?v=KBFaRW7QmVQ&t=855s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'WXqAR94YqtU',
+                       'title': 'How to Setup ActiveProspect TrustedForm With Your LeadForm to Certify '
+                                'Your Lead’s Consent',
+                       'channel': 'LeadCaptureIO',
+                       'author': 'LeadCaptureIO',
+                       'text': "Again, it doesn't matter what you name the field but the field label must "
+                               'be XX trusted form cert exactly like this.',
+                       'tip': "Again, it doesn't matter what you name the field but the field label must "
+                              'be XX trusted form cert exactly like this.',
+                       'timestamp': 324,
+                       'timestamp_seconds': 324,
+                       'timestamp_label': '[00:05:24]',
+                       'url': 'https://www.youtube.com/watch?v=WXqAR94YqtU&t=324s',
+                       'markdown': '[00:05:24](https://www.youtube.com/watch?v=WXqAR94YqtU&t=324s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Zrihem0vYcU',
+                       'title': '[Webclass] FCC’s New TCPA 1-on-1 Consent Rules Are Here —Easiest Way to '
+                                'Capture Leads Compliantly',
+                       'channel': 'LeadCaptureIO',
+                       'author': 'LeadCaptureIO',
+                       'text': 'You also need to store and retain the records securely and you need to '
+                               'keep the records for at least 4 years, ideally longer for added '
+                               'protection.',
+                       'tip': 'You also need to store and retain the records securely and you need to keep '
+                              'the records for at least 4 years, ideally longer for added protection.',
+                       'timestamp': 1182,
+                       'timestamp_seconds': 1182,
+                       'timestamp_label': '[00:19:42]',
+                       'url': 'https://www.youtube.com/watch?v=Zrihem0vYcU&t=1182s',
+                       'markdown': '[00:19:42](https://www.youtube.com/watch?v=Zrihem0vYcU&t=1182s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'FQR1fK6va5I',
+                       'title': 'How to capture TCPA one-to-one consent in your lead capture forms',
+                       'channel': 'LeadCaptureIO',
+                       'author': 'LeadCaptureIO',
+                       'text': "So when it comes to TCPA 1:1 consent you're going to need to add it to "
+                               'wherever your form has a phone field.',
+                       'tip': "So when it comes to TCPA 1:1 consent you're going to need to add it to "
+                              'wherever your form has a phone field.',
+                       'timestamp': 0,
+                       'timestamp_seconds': 0,
+                       'timestamp_label': '[00:00:00]',
+                       'url': 'https://www.youtube.com/watch?v=FQR1fK6va5I&t=0s',
+                       'markdown': '[00:00:00](https://www.youtube.com/watch?v=FQR1fK6va5I&t=0s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Fjcrwp9W5gk',
+                       'title': "MUST WATCH!: “THE COUNTRY'S LEADING TCPA ATTORNEY” speaks on FCC "
+                                'One-to-One Rule!!!!! FREE WEBINAR.',
+                       'channel': 'Troutman Amin, LLP',
+                       'author': 'Troutman Amin, LLP',
+                       'text': 'My lead buyer clients are not buying leads come November at the latest '
+                               'unless they comply with the new rule.',
+                       'tip': 'My lead buyer clients are not buying leads come November at the latest '
+                              'unless they comply with the new rule.',
+                       'timestamp': 1724,
+                       'timestamp_seconds': 1724,
+                       'timestamp_label': '[00:28:44]',
+                       'url': 'https://www.youtube.com/watch?v=Fjcrwp9W5gk&t=1724s',
+                       'markdown': '[00:28:44](https://www.youtube.com/watch?v=Fjcrwp9W5gk&t=1724s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '4hypirM3lEg',
+                       'title': 'TCPA 1:1 Consent Made Simple With LeadCapture.io TCPA Templates, Tagging, '
+                                'and Compliance Workflow',
+                       'channel': 'LeadCaptureIO',
+                       'author': 'LeadCaptureIO',
+                       'text': 'Someone actually needs to check a box for each brand.',
+                       'tip': 'Someone actually needs to check a box for each brand.',
+                       'timestamp': 588,
+                       'timestamp_seconds': 588,
+                       'timestamp_label': '[00:09:48]',
+                       'url': 'https://www.youtube.com/watch?v=4hypirM3lEg&t=588s',
+                       'markdown': '[00:09:48](https://www.youtube.com/watch?v=4hypirM3lEg&t=588s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'DrbAXLpA1wI',
+                       'title': 'What is a Lead? TCPA Consent Guide to Opt in Leads - FCC Telemarketing '
+                                'Laws & Do Not Call List Rule',
+                       'channel': 'DatatoLeads - B2B and B2C Wholesale Data and Leads',
+                       'author': 'DatatoLeads - B2B and B2C Wholesale Data and Leads',
+                       'text': "You're breaking that rule technically, and I'll put it this way, door "
+                               'knocking is illegal.',
+                       'tip': "You're breaking that rule technically, and I'll put it this way, door "
+                              'knocking is illegal.',
+                       'timestamp': 707,
+                       'timestamp_seconds': 707,
+                       'timestamp_label': '[00:11:47]',
+                       'url': 'https://www.youtube.com/watch?v=DrbAXLpA1wI&t=707s',
+                       'markdown': '[00:11:47](https://www.youtube.com/watch?v=DrbAXLpA1wI&t=707s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Hd19AToxex4',
+                       'title': 'Why Lead Sellers Shouldn’t Fear TCPA Compliance (It’s a Competitive '
+                                'Advantage)',
+                       'channel': 'LeadCaptureIO',
+                       'author': 'LeadCaptureIO',
+                       'text': 'The whole idea is this, that the lead is willing to click the little box '
+                               "before they hit submit, then they're going to be more likely to pick up "
+                               'the phone.',
+                       'tip': 'The whole idea is this, that the lead is willing to click the little box '
+                              "before they hit submit, then they're going to be more likely to pick up the "
+                              'phone.',
+                       'timestamp': 382,
+                       'timestamp_seconds': 382,
+                       'timestamp_label': '[00:06:22]',
+                       'url': 'https://www.youtube.com/watch?v=Hd19AToxex4&t=382s',
+                       'markdown': '[00:06:22](https://www.youtube.com/watch?v=Hd19AToxex4&t=382s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '6VtW3u8e6WE',
+                       'title': 'IMPORTANT: TCPA/FCC Breakdown of New Regulations with Eric Troutman',
+                       'channel': 'Lead Generation World',
+                       'author': 'Lead Generation World',
+                       'text': 'The caller cannot rely on the third party to hold on to the consent record '
+                               'for it; the caller has to take possession of the consent record before '
+                               'that call is placed.',
+                       'tip': 'The caller cannot rely on the third party to hold on to the consent record '
+                              'for it; the caller has to take possession of the consent record before that '
+                              'call is placed.',
+                       'timestamp': 1530,
+                       'timestamp_seconds': 1530,
+                       'timestamp_label': '[00:25:30]',
+                       'url': 'https://www.youtube.com/watch?v=6VtW3u8e6WE&t=1530s',
+                       'markdown': '[00:25:30](https://www.youtube.com/watch?v=6VtW3u8e6WE&t=1530s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'OgyCXKzIJM4',
+                       'title': 'CHANGES TO TCPA REGULATIONS:  EVERYTHING YOU NEED TO KNOW',
+                       'channel': 'Lead Generation World',
+                       'author': 'Lead Generation World',
+                       'text': 'Today the FCC confirmed that you no longer have up to 30 days, you only '
+                               'have 10 business days potentially to honor a revocation; however you have '
+                               'to honor that revocation as soon as practicable.',
+                       'tip': 'Today the FCC confirmed that you no longer have up to 30 days, you only '
+                              'have 10 business days potentially to honor a revocation; however you have '
+                              'to honor that revocation as soon as practicable.',
+                       'timestamp': 1437,
+                       'timestamp_seconds': 1437,
+                       'timestamp_label': '[00:23:57]',
+                       'url': 'https://www.youtube.com/watch?v=OgyCXKzIJM4&t=1437s',
+                       'markdown': '[00:23:57](https://www.youtube.com/watch?v=OgyCXKzIJM4&t=1437s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '9KGQa-Oon7o',
+                       'title': 'HERE IT IS! THAT MASSIVE TCPA FCC REVOCATION RULE WEBINAR YOU ALL NEED TO '
+                                'SEE! (Sorry we sold out!)',
+                       'channel': 'Troutman Amin, LLP',
+                       'author': 'Troutman Amin, LLP',
+                       'text': 'Because to me the trick here is stop opt-outs before they start.',
+                       'tip': 'Because to me the trick here is stop opt-outs before they start.',
+                       'timestamp': 2711,
+                       'timestamp_seconds': 2711,
+                       'timestamp_label': '[00:45:11]',
+                       'url': 'https://www.youtube.com/watch?v=9KGQa-Oon7o&t=2711s',
+                       'markdown': '[00:45:11](https://www.youtube.com/watch?v=9KGQa-Oon7o&t=2711s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'tRO0J70WjKA',
+                       'title': 'Breaking Down #TCPA 1-to-1 Consent: Handling Leads Safely January '
+                                '27,2025!📲🤯🔥✅🇺🇸',
+                       'channel': 'Lauro Herrera',
+                       'author': 'Lauro Herrera',
+                       'text': 'Because that consent only lasts 90 days.',
+                       'tip': 'Because that consent only lasts 90 days.',
+                       'timestamp': 436,
+                       'timestamp_seconds': 436,
+                       'timestamp_label': '[00:07:16]',
+                       'url': 'https://www.youtube.com/watch?v=tRO0J70WjKA&t=436s',
+                       'markdown': '[00:07:16](https://www.youtube.com/watch?v=tRO0J70WjKA&t=436s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '4k3C9lrziIY',
+                       'title': "This Is The End Of Lead Gen. New FCC's 1-to-1 Consent Rule Will Kill Your "
+                                'Agency',
+                       'channel': 'Leadbase',
+                       'author': 'Leadbase',
+                       'text': "So basically what's happening is you need to disclose who your client is "
+                               'on the landing page before somebody opts in.',
+                       'tip': "So basically what's happening is you need to disclose who your client is on "
+                              'the landing page before somebody opts in.',
+                       'timestamp': 91,
+                       'timestamp_seconds': 91,
+                       'timestamp_label': '[00:01:31]',
+                       'url': 'https://www.youtube.com/watch?v=4k3C9lrziIY&t=91s',
+                       'markdown': '[00:01:31](https://www.youtube.com/watch?v=4k3C9lrziIY&t=91s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '_EAk_fw9kZk',
+                       'title': 'TCPA Marketing Consent Masterclass Series Part 1',
+                       'channel': 'Contact Center Compliance',
+                       'author': 'Contact Center Compliance',
+                       'text': "There is no one call safe harbor; if you think you're calling John Smith "
+                               'on a mobile phone and Jane Doe answers, the FCC expects you to know.',
+                       'tip': "There is no one call safe harbor; if you think you're calling John Smith on "
+                              'a mobile phone and Jane Doe answers, the FCC expects you to know.',
+                       'timestamp': 2051,
+                       'timestamp_seconds': 2051,
+                       'timestamp_label': '[00:34:11]',
+                       'url': 'https://www.youtube.com/watch?v=_EAk_fw9kZk&t=2051s',
+                       'markdown': '[00:34:11](https://www.youtube.com/watch?v=_EAk_fw9kZk&t=2051s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '1zvwOs0qmmg',
+                       'title': 'What is a Lead? TCPA Consent Guide to Opt in Leads - FCC Telemarketing '
+                                'Laws & Do Not Call List Rule',
+                       'channel': 'DatatoLeads - B2B and B2C Wholesale Data and Leads',
+                       'author': 'DatatoLeads - B2B and B2C Wholesale Data and Leads',
+                       'text': "Nothing's really changed, because this is what's changed in my opinion: "
+                               'there used to be a lot of loopholes.',
+                       'tip': "Nothing's really changed, because this is what's changed in my opinion: "
+                              'there used to be a lot of loopholes.',
+                       'timestamp': 141,
+                       'timestamp_seconds': 141,
+                       'timestamp_label': '[00:02:21]',
+                       'url': 'https://www.youtube.com/watch?v=1zvwOs0qmmg&t=141s',
+                       'markdown': '[00:02:21](https://www.youtube.com/watch?v=1zvwOs0qmmg&t=141s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'VnnBAIAnf54',
+                       'title': 'Is B2B Cold Texting Legal? Every Law & Court Case Explained (1991–2026)',
+                       'channel': 'Kyle Banks',
+                       'author': 'Kyle Banks',
+                       'text': 'So, if your numbers came from a list rather than a generator, you do not '
+                               'have an auto dialer, to put it simple.',
+                       'tip': 'So, if your numbers came from a list rather than a generator, you do not '
+                              'have an auto dialer, to put it simple.',
+                       'timestamp': 824,
+                       'timestamp_seconds': 824,
+                       'timestamp_label': '[00:13:44]',
+                       'url': 'https://www.youtube.com/watch?v=VnnBAIAnf54&t=824s',
+                       'markdown': '[00:13:44](https://www.youtube.com/watch?v=VnnBAIAnf54&t=824s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'}]}

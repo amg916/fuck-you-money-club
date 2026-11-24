@@ -1,712 +1,818 @@
 from __future__ import annotations
 
-CHAPTER_4 = {
-    "id": "Q4",
-    "chapter_id": "Q4",
-    "chapter_number": 4,
-    "question_number": 4,
-    "slug": "startup-capital-lean-infrastructure-pre-flight-stack",
-    "question_prompt": "How do you allocate startup capital ($12,000–$75,000 USD) and configure a lean, low-opex ($2,000–$12,000 USD/mo) production stack without wasting cash on bloated overhead?",
-    "kicker": "Q4 / THE BIG MONEY PLAYBOOKS",
-    "title": "Startup Capital, Lean Infrastructure & Pre-Flight Stack",
-    "subtitle": "Reserve-First Funding, Twelve Lean Infrastructure Layers, Chain-of-Title Controls, and Auditable Patent, Brand, Catalog, and Dataset Royalties",
-    "layout_template": "comparison_table",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #19, Intellectual Property Licensing, ranks #09 with a 88/100 "
-        "Money-to-Manpower Score. Allocate 60% of startup capital to working reserves, "
-        "then purchase title certainty, buyer evidence, and royalty controls before "
-        "adding overhead. This chapter maps four operator plays: patent field-of-use "
-        "licensing, brand minimum-guarantee licensing, dataset subscription licensing, "
-        "and copyright_phash_reverse_image_statutory_settlement. Each uses staged "
-        "spending, explicit rights boundaries, and a fallback when evidence fails. "
-        "Canonical annual owner profits remain $12,500 Conservative, $180,625 Base, "
-        "and $480,000 Scaled; licensees' product sales never become operator revenue. "
-        "A twelve-layer stack supports reporting, renewal alerts, and obligation "
-        "tracking while entity, banking, insurance, and evidence checks keep a "
-        "six-to-twenty-four-month sales cycle from exhausting cash."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$50,000",
-            "context": "Annual license fees and royalties; excludes licensee product sales",
-            "note": "25% net margin; $12,500 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Base",
-            "value": "$425,000",
-            "context": "Annual license fees and royalties; excludes licensee product sales",
-            "note": "42.5% net margin; $180,625 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$800,000",
-            "context": "Annual license fees and royalties; excludes licensee product sales",
-            "note": "60% net margin; $480,000 annual owner net profit; 2 FT + 4 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Protect the reserve before buying the platform",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Allocate capital against the expected delay to signed, collectible "
-                    "licenses, not against the apparent size of the intellectual property "
-                    "portfolio. The prescribed startup range is $12,000 to $75,000, "
-                    "while the first deal can take six to twenty-four months. Hold "
-                    "60% in a separately tracked working-capital reserve: $15,000 at "
-                    "the lean entry point, $75,000 at a $125,000 midpoint, and "
-                    "$150,000 at the upper end. Commit the remaining 40% through "
-                    "small purchase orders for rights diligence, contracting, demand "
-                    "validation, infrastructure, formation, and insurance. These are "
-                    "spending ceilings, not instructions to exhaust each envelope. "
-                    "At $2,000 monthly burn, the smallest reserve buys only 7.5 "
-                    "months before collections; it cannot support a twenty-four-month "
-                    "wait. At $5,000 monthly burn, the midpoint reserve buys fifteen "
-                    "months; at $15,000 monthly burn, the upper reserve buys ten. "
-                    "Extend runway through narrower rights packages, deferred "
-                    "nonessential purchases, paid pilots, or additional committed "
-                    "capital before taking obligations that outlast available cash. "
-                    "Keep customer advances and royalties payable separately visible "
-                    "because restricted or contractually owed money does not enlarge "
-                    "the operator's freely spendable reserve. Forecast collections "
-                    "weekly and refresh a thirteen-week cash schedule every Friday."
-                ),
-                (
-                    "The budget matrix uses the same allocation percentages at every "
-                    "capital level so procurement decisions remain comparable. A "
-                    "patent-heavy portfolio may need more title review than a small "
-                    "owned-image catalog; move funds between deployment envelopes "
-                    "without reducing the reserve below 50%. Buy an initial counsel "
-                    "scope that answers specific questions: who owns the asset, who "
-                    "can license it, which fields and territories are available, and "
-                    "what prior grants constrain exclusivity. Do not purchase an "
-                    "expensive patent valuation merely to decorate a pitch deck. "
-                    "Require a buyer interview and a plausible permitted-use package "
-                    "before commissioning extensive claim mapping. For catalogs and "
-                    "datasets, sample provenance records before paying to ingest "
-                    "every item. Release the contracting envelope after the first "
-                    "qualified buyer confirms a use case and purchasing authority. "
-                    "Release the infrastructure envelope against a tested reporting "
-                    "workflow rather than vendor demonstrations. Insurance budgets "
-                    "are allowances, not insurer quotations; obtain actual terms "
-                    "before accepting indemnities. Startup cash classifications also "
-                    "differ from accounting treatment: an acquisition, prepaid premium, "
-                    "and current professional expense may land differently in the "
-                    "books. Have the bookkeeper map each payment to its proper "
-                    "account instead of treating all deployment as recurring overhead."
-                ),
-                (
-                    "Reconcile operating ambition to the canonical scorecard before "
-                    "adding staff. Conservative revenue of $50,000 less $37,500 of "
-                    "total annual costs leaves $12,500, exactly 25%. Base revenue "
-                    "of $425,000 less $244,375 leaves $180,625, exactly 42.5%. "
-                    "Scaled revenue of $800,000 less $320,000 leaves $480,000, "
-                    "exactly 60%. A common $2,000 monthly fixed operating floor "
-                    "uses $24,000 annually, leaving cost allowances of $13,500, "
-                    "$220,375, and $296,000 respectively for everything outside "
-                    "that floor. Those residuals must cover the applicable contractor, "
-                    "delivery, audit, collection, and other expenses rather than "
-                    "being presented as additional profit. Conversely, a $15,000 "
-                    "monthly fixed stack costs $180,000 annually and cannot fit "
-                    "the Conservative case. Team counts mean one full-time operator "
-                    "plus three contractors in Conservative and Base, then two "
-                    "full-time people plus four contractors in Scaled; they do not "
-                    "imply six salaried employees. Keep contractor hours variable "
-                    "until contracted receipts justify recurring commitments. Reserve "
-                    "funding itself is neither revenue nor an expense. Avoid counting "
-                    "a prepaid annual subscription again when cash leaves the reserve; "
-                    "maintain separate cash and accrual views with a single underlying "
-                    "transaction ledger."
-                ),
-            ],
-            "table": {
-                "caption": "Reserve-First Capital Envelopes Across Three Startup Funding Levels",
-                "headers": [
-                    "Capital envelope",
-                    "$25,000 deployment",
-                    "$125,000 deployment",
-                    "$250,000 deployment",
-                ],
-                "rows": [
-                    [
-                        "Working-capital reserve protected from discretionary procurement commitments",
-                        "$15,000 retained cash; 60% protects collection delays",
-                        "$75,000 retained cash; 60% protects collection delays",
-                        "$150,000 retained cash; 60% protects collection delays",
-                    ],
-                    [
-                        "Rights diligence covering ownership and prior licensing restrictions",
-                        "$2,500 ceiling; inspect one tightly bounded asset package",
-                        "$12,500 ceiling; inspect prioritized portfolios before expansion",
-                        "$25,000 ceiling; commission targeted specialist title reviews",
-                    ],
-                    [
-                        "Contract drafting tied to actual buyer requirements",
-                        "$2,000 ceiling; customize one negotiated license template",
-                        "$10,000 ceiling; develop territory and reporting schedules",
-                        "$20,000 ceiling; negotiate differentiated rights package templates",
-                    ],
-                    [
-                        "Demand validation using paid pilots and buyer interviews",
-                        "$2,000 ceiling; test one specific buyer segment",
-                        "$10,000 ceiling; validate several tightly defined segments",
-                        "$20,000 ceiling; expand only demonstrated acquisition channels",
-                    ],
-                    [
-                        "Infrastructure implementation with controlled migration and recovery",
-                        "$1,500 ceiling; configure existing open-source workflow components",
-                        "$7,500 ceiling; automate reporting and reconciliation exceptions",
-                        "$15,000 ceiling; harden integrations and recovery procedures",
-                    ],
-                    [
-                        "Entity formation and banking setup with ownership documentation",
-                        "$1,000 ceiling; fund filings and bookkeeping setup",
-                        "$5,000 ceiling; address multi-owner agreements and registrations",
-                        "$10,000 ceiling; address justified structural complexity only",
-                    ],
-                    [
-                        "Insurance placement allowance subject to actual underwriting terms",
-                        "$1,000 ceiling; obtain quotations before promising indemnities",
-                        "$5,000 ceiling; match coverage to negotiated exposure",
-                        "$10,000 ceiling; evaluate exclusions and defense-cost treatment",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "2. Configure twelve layers without twelve enterprise subscriptions",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "The infrastructure matrix names twelve functional layers, not "
-                    "twelve mandatory paid subscriptions. Its exact dollar figures "
-                    "are planning inputs for the named tiers, excluding tax, domain "
-                    "registration, equipment, hosting, and implementation labor; "
-                    "confirm current regional checkout terms before purchasing. Google "
-                    "Workspace Business Starter is budgeted at $7 per user monthly "
-                    "on an annual commitment, Bitwarden Teams at $4 per user monthly "
-                    "billed annually, and Amazon S3 Standard at $0.023 per gigabyte "
-                    "monthly for the first storage tier in US East, Northern Virginia. "
-                    "For two users and 100 gigabytes, those components total $24.30 "
-                    "monthly before request, retrieval, transfer, and other charges. "
-                    "That small subtotal is not the business's monthly operating "
-                    "cost; counsel, bookkeeping, insurance, hosting, and contractor "
-                    "support dominate the $2,000 to $12,000 envelope. Free software "
-                    "does not supply free administration. Prefer a single managed "
-                    "workspace and a minimal deployment over maintaining several "
-                    "servers simply to avoid a small subscription. Keep customer "
-                    "source files out of issue comments and email attachments. "
-                    "Record each vendor's data location, administrator, renewal "
-                    "date, export format, and offboarding procedure in the same "
-                    "obligation register used for customer licenses."
-                ),
-                (
-                    "Build around an immutable agreement identifier that links "
-                    "the signed instrument, asset manifest, permitted uses, rate "
-                    "schedule, reporting period, invoice, and collection record. "
-                    "PostgreSQL can hold normalized royalty lines while Paperless-ngx "
-                    "indexes executed documents and supporting title records. Use "
-                    "DocuSeal Community for signatures only after testing signer "
-                    "identity evidence, timestamps, completion records, and exports "
-                    "against the transaction's requirements. An electronic signature "
-                    "tool does not establish that the signatory actually controls "
-                    "the rights. Use Python decimal arithmetic for monetary "
-                    "calculations, explicit currency codes, and stored exchange-rate "
-                    "sources; binary floating-point totals invite avoidable "
-                    "reconciliation differences. Preserve original licensee reports "
-                    "and calculate adjustments in separate versioned records. A "
-                    "changed rate should create a dated amendment, not overwrite "
-                    "history. For a 3% royalty on $120,000 of contract-defined "
-                    "eligible sales, record $3,600 before applying any separately "
-                    "documented credits or offsets. Reject duplicate report periods "
-                    "and quarantine reports containing unexplained negative quantities. "
-                    "Notify the operator thirty, sixty, and ninety days before "
-                    "renewal or notice deadlines, with a second person receiving "
-                    "unresolved exceptions. Automation should surface contractual "
-                    "obligations; it should never silently expand permitted uses "
-                    "or waive a reporting breach."
-                ),
-                (
-                    "Security expenditure should follow the value of the evidence "
-                    "and the harm of an erroneous license. Require multifactor "
-                    "authentication for email, storage, signatures, banking, and "
-                    "administrator access; use individual accounts rather than a "
-                    "shared founder password. Separate read-only contractor access "
-                    "from authority to change rates or bank details. GitHub Free "
-                    "can track schema and calculation changes in private repositories, "
-                    "but raw customer datasets and privileged correspondence belong "
-                    "in controlled storage rather than source control. S3 versioning "
-                    "and carefully configured Object Lock can preserve selected "
-                    "evidence, although retention settings require deliberate cost "
-                    "and deletion planning. Maintain an independent backup and "
-                    "perform a quarterly restore into an isolated location. A "
-                    "successful backup job is insufficient evidence that records "
-                    "are recoverable. Make one test agreement traverse intake, "
-                    "signature, obligation creation, report import, calculation, "
-                    "invoice export, and archive before onboarding a paying buyer. "
-                    "Have a contractor follow the written recovery procedure "
-                    "without the founder's assistance. Stop purchasing features "
-                    "when the critical path works; add integrations only when "
-                    "measured error reduction or labor savings exceed their total "
-                    "cost. Keep the manual spreadsheet fallback operational so "
-                    "an integration outage does not suspend invoicing or contractual "
-                    "notice delivery."
-                ),
-            ],
-            "table": {
-                "caption": "Twelve-Layer Named-Vendor Stack With Explicit Planning Tiers and Lean Substitutes",
-                "headers": [
-                    "Infrastructure layer",
-                    "Named tier and price basis",
-                    "Production role and control",
-                    "Cheaper or simpler operating alternative",
-                ],
-                "rows": [
-                    [
-                        "One: business identity and controlled customer correspondence",
-                        "Google Workspace Business Starter; $7/user/month with annual commitment",
-                        "Separate business email, calendar deadlines, and administrator identities",
-                        "Use one paid operator seat; give contractors controlled exports",
-                    ],
-                    [
-                        "Two: shared credentials and contractor access lifecycle",
-                        "Bitwarden Teams; $4/user/month equivalent, billed on annual terms",
-                        "Share credentials through collections and revoke departing contractors",
-                        "Bitwarden Free costs $0; maintain separate individual accounts",
-                    ],
-                    [
-                        "Three: domain protection and basic network perimeter",
-                        "Cloudflare Free plan; $0 subscription, domain registration separate",
-                        "Manage DNS and standard protections for public licensing pages",
-                        "Use registrar-included DNS when no public application exists",
-                    ],
-                    [
-                        "Four: prospect qualification and buyer follow-up records",
-                        "Zoho CRM Free edition; $0 for up to three users",
-                        "Track buyer authority, intended use, and next commercial action",
-                        "LibreOffice Calc costs $0; protect a structured prospect register",
-                    ],
-                    [
-                        "Five: document preparation and portable pricing schedules",
-                        "LibreOffice Community software; $0 license fee for local installation",
-                        "Draft asset schedules and export reviewable contract attachments",
-                        "Reuse existing workspace documents instead of installing another editor",
-                    ],
-                    [
-                        "Six: electronic execution and completed agreement exports",
-                        "DocuSeal Community self-hosted edition; $0 software license fee",
-                        "Capture signature evidence and archive completed agreement packages",
-                        "Use signed PDF exchange with documented identity checks",
-                    ],
-                    [
-                        "Seven: searchable title evidence and agreement indexing",
-                        "Paperless-ngx open-source edition; $0 software license fee",
-                        "Index assignments, releases, registrations, and executed customer agreements",
-                        "Use encrypted folders with a maintained evidence index",
-                    ],
-                    [
-                        "Eight: structured royalty ledger and obligation database",
-                        "PostgreSQL Community distribution; $0 software license fee",
-                        "Store rates, territories, reporting periods, and reconciliation exceptions",
-                        "Use Python SQLite locally for a single-operator deployment",
-                    ],
-                    [
-                        "Nine: report transformation and scheduled obligation checks",
-                        "Python CPython distribution; $0 software license fee",
-                        "Validate reports using decimal arithmetic and explicit currencies",
-                        "Use reviewed spreadsheet formulas until report volume justifies automation",
-                    ],
-                    [
-                        "Ten: versioned evidence storage and recovery source",
-                        "Amazon S3 Standard US East; $0.023/GB-month first 50 TB",
-                        "Preserve originals with versioning; budget requests and transfer separately",
-                        "Use existing encrypted storage plus an independent offline backup",
-                    ],
-                    [
-                        "Eleven: calculation change control and implementation history",
-                        "GitHub Free organization tier; $0 base subscription charge",
-                        "Version schemas and tests without uploading customer source records",
-                        "Use local Git with encrypted independent repository backups",
-                    ],
-                    [
-                        "Twelve: bookkeeping exports and invoice reconciliation records",
-                        "GnuCash desktop distribution; $0 software license fee",
-                        "Record receivables and reconcile invoices against bank collections",
-                        "Use the accountant's existing ledger through controlled monthly exports",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Buy evidence and recoverability before dashboard polish",
-                "body": (
-                    "The best early infrastructure investment makes a disputed rate, "
-                    "missing assignment, or failed restore visible before cash is committed."
-                ),
-                "items": [
-                    "Request one sample royalty report during negotiations and price the ingestion work before accepting the reporting format.",
-                    "Attach a versioned asset manifest to each grant so later catalog additions cannot silently enlarge an existing license.",
-                    "Export completed signature evidence immediately; do not depend on an active subscription to retrieve executed agreements.",
-                    "Maintain a separate recoupment ledger for minimum guarantees so prepaid royalties cannot be invoiced twice.",
-                ],
-            },
-        },
-        {
-            "heading": "3. Fund four rights-specific plays with explicit downside limits",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Treat the four mapped plays as distinct underwriting paths, "
-                    "not interchangeable inventory. Patent field-of-use licensing "
-                    "starts with an executed assignment chain, maintenance status, "
-                    "claim relevance, and a carefully bounded field and territory. "
-                    "An illustrative $25,000 access license less $8,000 of title "
-                    "and technical diligence and $4,000 of contracting contributes "
-                    "$13,000 before shared overhead; it is not a replacement for "
-                    "the canonical profit cases. If claim coverage or buyer demand "
-                    "fails, stop that patent package and offer separately identified "
-                    "know-how only where the operator actually controls it. Brand "
-                    "minimum-guarantee licensing requires product-category boundaries, "
-                    "quality specifications, specimen review, and a functioning "
-                    "inspection process. At 5% of $600,000 eligible licensee sales, "
-                    "earned royalties equal $30,000. A $20,000 recoupable guarantee "
-                    "therefore leaves $10,000 beyond the guarantee, not $50,000 "
-                    "of combined revenue. If projected sell-through does not support "
-                    "the guarantee, reduce the territory or offer a short paid pilot "
-                    "rather than accepting broad exclusivity for an uneconomic "
-                    "advance. Review patent term limitations and competitive "
-                    "restrictions with specialist counsel before drafting long-lived "
-                    "royalty obligations. An attractive royalty percentage cannot "
-                    "repair a grant the licensor lacked authority to make."
-                ),
-                (
-                    "Dataset subscription licensing turns provenance and permitted "
-                    "processing into the product. Four customers paying $12,000 "
-                    "annually produce $48,000 of illustrative subscription revenue; "
-                    "if curation costs $8,000 and delivery costs $4,000, contribution "
-                    "before shared overhead is $36,000. Define whether the license "
-                    "permits internal analytics, redistribution, model training, "
-                    "derived outputs, or only a specified evaluation. Keep personal "
-                    "information outside the initial package unless collection "
-                    "authority and the proposed processing have been established. "
-                    "Facts alone do not become exclusively owned copyright merely "
-                    "because they were assembled into a file; distinguish protectable "
-                    "selection or arrangement, contractual access restrictions, and "
-                    "third-party rights. If provenance fails, remove affected records "
-                    "or substitute a demonstrably authorized corpus rather than "
-                    "promising rights the operator cannot substantiate. Catalog "
-                    "licensing similarly requires asset-level grants and releases, "
-                    "including separate analysis of musical compositions and sound "
-                    "recordings. Price the support burden: four quarterly reports "
-                    "from four customers create sixteen report reviews per year; "
-                    "at ninety minutes each, budget twenty-four review hours before "
-                    "exception handling. This modest workload is a better reason "
-                    "to retain a spreadsheet fallback than to commission a custom "
-                    "portal before customer demand is established."
-                ),
-                (
-                    "The required copyright_phash_reverse_image_statutory_settlement "
-                    "play belongs to TRACK_2 and starts with authorized monitoring "
-                    "for a represented rights holder, not automated accusations. "
-                    "Perceptual image hashes and audio fingerprints identify "
-                    "candidates; similarity does not establish infringement, "
-                    "ownership, or statutory-damages eligibility. In an illustrative "
-                    "monthly batch, 1,000 machine matches might yield forty human "
-                    "reviews at fifteen minutes each, or ten hours. At $75 per "
-                    "hour, review costs $750; two additional counsel hours at "
-                    "$350 add $700, for $1,450 before acquisition and storage. "
-                    "Budget zero settlement receipts until an executed resolution "
-                    "and the applicable recognition requirements support revenue. "
-                    "Counsel checks assignments, existing licenses, public-domain "
-                    "status, exceptions including fair use, registration timing, "
-                    "and standing before any communication asserting liability. "
-                    "Under 17 U.S.C. 412, registration timing can foreclose "
-                    "statutory damages and attorney fees even where a claim "
-                    "otherwise exists. Withdraw unsupported demands and retain "
-                    "matching only for authorized monitoring and voluntary licensing. "
-                    "Preserve original files, retrieval dates, source locations, "
-                    "and review decisions; a hash score alone is inadequate "
-                    "evidence. Route claimant receipts and operator compensation "
-                    "separately, recognizing only amounts the operator earns under "
-                    "the representation agreement and the applicable accounting treatment."
-                ),
-            ],
-            "table": {
-                "caption": "Rights-Package Underwriting, Revenue Boundaries, and Failure Fallbacks",
-                "headers": [
-                    "Package or scenario",
-                    "Evidence and unit economics",
-                    "Recognition or operating boundary",
-                    "Failure response and spending limit",
-                ],
-                "rows": [
-                    [
-                        "Patent field-of-use licensing with a bounded technical grant",
-                        "$25,000 fee less $12,000 direct costs leaves $13,000 contribution",
-                        "Confirm assignment chain, relevant claims, territory, and remaining term",
-                        "Stop unsupported patent offers; separately validate any know-how package",
-                    ],
-                    [
-                        "Brand licensing with recoupable guarantees and quality controls",
-                        "5% of $600,000 eligible sales produces $30,000 earned royalties",
-                        "$20,000 guarantee offsets earnings; remaining incremental royalty equals $10,000",
-                        "Narrow territory or pilot duration when sell-through evidence disappoints",
-                    ],
-                    [
-                        "Dataset subscription licensing with explicit downstream processing permissions",
-                        "Four $12,000 subscriptions less $12,000 direct costs contribute $36,000",
-                        "Separate protectable expression, access contracts, and third-party rights",
-                        "Remove unsupported records or replace the corpus before delivery",
-                    ],
-                    [
-                        "copyright_phash_reverse_image_statutory_settlement: authorized monitoring followed by reviewed evidence",
-                        "Ten review hours plus two counsel hours cost $1,450",
-                        "No damages multiplier substitutes for ownership and eligibility analysis",
-                        "Withdraw unsupported demands; retain authorized monitoring and voluntary licensing",
-                    ],
-                    [
-                        "Conservative canonical bridge using earned access fees only",
-                        "Two $25,000 earned fees equal $50,000 annual operator revenue",
-                        "$37,500 total annual costs leave $12,500 owner net profit",
-                        "Do not add illustrative play contributions to canonical profits",
-                    ],
-                    [
-                        "Base and Scaled bridges using separate fees and royalties",
-                        "Base: $125,000 fees plus $300,000 royalties equals $425,000 revenue",
-                        "Scaled: $200,000 fees plus $600,000 royalties equals $800,000 revenue",
-                        "At 3%, underlying $10 million and $20 million sales stay excluded",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "4. Verify the entity, money path, and first live report",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Create a clean boundary between the operator, represented "
-                    "rights holders, and licensees before sending the first invoice. "
-                    "Form the appropriate entity, obtain an EIN directly from "
-                    "the IRS, document ownership and signing authority, and open "
-                    "a business deposit account using the bank's required identity "
-                    "and formation records. Keep personal spending outside that "
-                    "account and reconcile activity monthly. If the operator "
-                    "licenses assets it owns, document the transfer into the "
-                    "contracting entity; if it acts for another owner, maintain "
-                    "an executed agency or representation agreement defining "
-                    "negotiation authority, collection authority, compensation, and "
-                    "termination. A deposit account title cannot cure a broken "
-                    "copyright assignment. Verify wire instructions through an "
-                    "independently established contact channel, especially after "
-                    "an emailed change request. Check current federal and state "
-                    "filing requirements for the actual entity type and ownership "
-                    "rather than copying a stale formation checklist. Royalty "
-                    "payments to foreign persons can require withholding and "
-                    "documentation analysis before payment. Obtain appropriate "
-                    "tax forms and route cross-border structures to the accountant "
-                    "before quoting a net payment amount. Maintain a rights-holder "
-                    "payable ledger whenever collections include money owed "
-                    "to someone else."
-                ),
-                (
-                    "Insurance selection follows contract exposure rather than "
-                    "a generic small-business shopping list. Ask a broker to "
-                    "compare professional liability, media liability, cyber "
-                    "coverage, and general liability against the actual activities "
-                    "and license forms. Examine intellectual-property exclusions, "
-                    "territorial limits, defense-cost treatment, retention amounts, "
-                    "and whether claims-made coverage needs continuity or a "
-                    "reporting extension. A policy described as media coverage "
-                    "may still exclude patent claims. Do not promise an uncapped "
-                    "infringement indemnity because a buyer's template requests "
-                    "one. Align warranties with documented rights, negotiate "
-                    "appropriate remedies, and allocate review funds before "
-                    "accepting unusually broad downstream use. Title diligence "
-                    "should distinguish ownership from freedom to operate: a "
-                    "patent owner can still encounter another party's blocking "
-                    "rights, and a photograph's copyright does not automatically "
-                    "supply publicity or trademark permissions. Under 15 U.S.C. "
-                    "1055, controlled use by related companies is relevant "
-                    "to trademark ownership and use; operational quality control "
-                    "must therefore survive beyond signature. Under 15 U.S.C. "
-                    "1, restrictive licensing terms warrant competition review "
-                    "where they restrain trade. These issues become concrete "
-                    "contract schedules, inspection duties, and escalation "
-                    "assignments rather than decorative policy statements."
-                ),
-                (
-                    "Pre-launch readiness is demonstrated through artifacts, "
-                    "not a meeting where everyone declares confidence. Assemble "
-                    "one complete deal folder containing the title chain, "
-                    "asset manifest, permitted-use schedule, pricing definition, "
-                    "executed agreement, insurance analysis, and collection "
-                    "instructions. Reperform the first royalty calculation "
-                    "independently from the source report. For the Base bridge, "
-                    "five separate $25,000 earned access fees provide $125,000 "
-                    "and 3% of $10 million in eligible licensee sales provides "
-                    "$300,000; together they equal $425,000. For Scaled, eight "
-                    "such fees provide $200,000 and 3% of $20 million provides "
-                    "$600,000; together they equal $800,000. These bridges "
-                    "assume access fees are separately earned and royalties "
-                    "are incremental, rather than recoupable advances counted "
-                    "twice. Recognition timing still follows the actual "
-                    "performance obligations and accounting policy. Test a "
-                    "late report, a disputed deduction, a currency conversion, "
-                    "and a termination notice through the workflow. Require "
-                    "a named owner and response deadline for each exception. "
-                    "Launch only the rights package that passes these checks; "
-                    "leave uncertain assets outside the schedule. Review "
-                    "reserve coverage, receivable aging, and upcoming notice "
-                    "deadlines weekly during the first quarter of operation."
-                ),
-            ],
-            "table": {
-                "caption": "Pre-Flight Evidence Matrix for Entity, Rights, Cash, and Recovery",
-                "headers": [
-                    "Verification area",
-                    "Required evidence before first delivery",
-                    "Accountable operating role",
-                    "Failure response before proceeding",
-                ],
-                "rows": [
-                    [
-                        "Entity existence and authority to execute customer agreements",
-                        "Formation records, EIN confirmation, and documented authorized signer",
-                        "Founder coordinates records with formation counsel and bank",
-                        "Correct contracting identity before issuing the execution copy",
-                    ],
-                    [
-                        "Asset ownership and authority to grant the proposed rights",
-                        "Signed assignments or representation agreement plus prior-grant review",
-                        "Rights specialist assembles evidence; counsel resolves material gaps",
-                        "Exclude affected assets until the grant becomes supportable",
-                    ],
-                    [
-                        "Collection instructions and separation of rights-holder payment obligations",
-                        "Verified bank details and separate rights-holder payable ledger",
-                        "Bookkeeper reconciles receipts; founder verifies changed payment instructions",
-                        "Hold changed transfers pending independent callback and reconciliation",
-                    ],
-                    [
-                        "Insurance response to actual contract warranties and indemnities",
-                        "Policy wording, broker comparison, exclusions, and negotiated liability schedule",
-                        "Founder and broker map coverage against counsel-reviewed contracts",
-                        "Narrow exposure or obtain suitable coverage before acceptance",
-                    ],
-                    [
-                        "Royalty computation and treatment of recoupable minimum guarantees",
-                        "Source report, independent recomputation, and agreement-specific recoupment schedule",
-                        "Royalty analyst prepares calculation; independent reviewer signs reconciliation",
-                        "Quarantine exceptions and issue only reconciled billing amounts",
-                    ],
-                    [
-                        "Recovery readiness and continuity of contractual notice delivery",
-                        "Restored sample deal and successfully tested deadline notifications",
-                        "Technical contractor demonstrates recovery to the responsible operator",
-                        "Use controlled manual records until recovery defects are corrected",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four checks before assets or invoices leave the business",
-                "body": (
-                    "Each check produces retained evidence and a named exception owner. "
-                    "Passing one asset package does not authorize unrelated rights."
-                ),
-                "items": [
-                    "Verify the signed title chain or representation authority against every asset, territory, field, and proposed sublicense permission.",
-                    "Reconcile the cash forecast to a reserve of at least 50% of initial capital before accepting discretionary startup commitments.",
-                    "Recompute one invoice independently, including guarantee recoupment, deductions, currency treatment, and rights-holder payables.",
-                    "Restore the executed deal folder and test renewal notices, contractor access removal, and independently verified bank instructions.",
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Open the reserve and spending register",
-                    "action": "Assign 60% of startup capital to working reserves and approve scoped deployment envelopes.",
-                    "detail": "Record committed cash separately from paid cash and model collections under six-, twelve-, and twenty-four-month delays.",
-                },
-                {
-                    "step": 2,
-                    "title": "Package only documented rights",
-                    "action": "Build the title chain, asset manifest, permitted-use schedule, and buyer-specific commercial offer.",
-                    "detail": "Remove unsupported assets and route patent, trademark, copyright, and dataset limitations to the appropriate specialist.",
-                },
-                {
-                    "step": 3,
-                    "title": "Run the agreement through the lean stack",
-                    "action": "Execute a test document, import a sample report, calculate royalties, and export an invoice.",
-                    "detail": "Test duplicate periods, negative adjustments, guarantee recoupment, reporting exceptions, and thirty-, sixty-, and ninety-day reminders.",
-                },
-                {
-                    "step": 4,
-                    "title": "Release the verified package and monitor cash",
-                    "action": "Confirm execution authority, verified collection details, appropriate coverage, and a successful evidence restore.",
-                    "detail": "Review receivable aging and runway weekly; expand tools or contractor hours only against documented workload and collectible contracts.",
-                },
-            ],
-        },
-    ],
-    "pull_quote": "Preserve the reserve, prove the rights, and automate only the royalty obligations you can independently reconcile.",
-    "diagram_id": "diag-07",
-    "action_checklist": [
-        "Allocate 60% of initial capital to a tracked working reserve and model runway against the six-to-twenty-four-month first-deal window.",
-        "Obtain scoped title and contract reviews before funding portfolio expansion or promising exclusivity.",
-        "Verify current vendor checkout terms and deploy only the twelve-layer functions needed for the first real agreement.",
-        "Separate licensee product sales, operator fees, recoupable advances, and rights-holder payables in the ledger.",
-        "Complete ownership, entity, banking, insurance, and independent royalty-recalculation checks for the first rights package.",
-        "Test evidence restoration and renewal notifications, then review cash coverage and receivable aging every week.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "17 U.S.C. 106 — Exclusive rights in copyrighted works",
-            "url": "https://www.law.cornell.edu/uscode/text/17/106",
-            "relevance": "Define the specific reproduction, distribution, adaptation, performance, or display rights being licensed rather than granting an ambiguous asset label.",
-        },
-        {
-            "title": "17 U.S.C. 107 — Limitations on exclusive rights: Fair use",
-            "url": "https://www.law.cornell.edu/uscode/text/17/107",
-            "relevance": "Require contextual human and counsel review of suspected uses before treating perceptual similarity as a basis for an infringement demand.",
-        },
-        {
-            "title": "17 U.S.C. 204 — Execution of transfers of copyright ownership",
-            "url": "https://www.law.cornell.edu/uscode/text/17/204",
-            "relevance": "Verify signed written instruments for transfers of copyright ownership, including exclusive grants, subject to the statute's terms.",
-        },
-        {
-            "title": "17 U.S.C. 412 — Registration as prerequisite to certain remedies",
-            "url": "https://www.law.cornell.edu/uscode/text/17/412",
-            "relevance": "Review registration and infringement timing before assessing eligibility for statutory damages or attorney fees.",
-        },
-        {
-            "title": "17 U.S.C. 504 — Remedies for infringement: Damages and profits",
-            "url": "https://www.law.cornell.edu/uscode/text/17/504",
-            "relevance": "Distinguish actual damages and profits from statutory-damages remedies; do not forecast automated settlements from match counts.",
-        },
-        {
-            "title": "35 U.S.C. 261 — Ownership; assignment",
-            "url": "https://www.law.cornell.edu/uscode/text/35/261",
-            "relevance": "Inspect written patent assignments and recording issues when verifying the licensor's chain of title and authority.",
-        },
-        {
-            "title": "15 U.S.C. 1055 — Use by related companies affecting validity and registration",
-            "url": "https://www.law.cornell.edu/uscode/text/15/1055",
-            "relevance": "Support brand-license quality-control procedures and examine how controlled use affects trademark ownership and registration.",
-        },
-        {
-            "title": "15 U.S.C. 1 — Trusts and restraints of trade",
-            "url": "https://www.law.cornell.edu/uscode/text/15/1",
-            "relevance": "Review licensing restrictions, exclusivity, and coordinated commercial terms for competition-law implications before execution.",
-        },
-        {
-            "title": "15 U.S.C. 7001 — General rule of validity for electronic records and signatures",
-            "url": "https://www.law.cornell.edu/uscode/text/15/7001",
-            "relevance": "Configure electronic execution and record retention around applicable signature validity and reproducibility requirements without confusing signature evidence with ownership.",
-        },
-    ],
-}
+CHAPTER_4 = {'id': 'Q4',
+ 'chapter_id': 'Q4',
+ 'chapter_number': 4,
+ 'question_number': 4,
+ 'slug': 'find-licensees-and-pitch-the-product',
+ 'question_prompt': 'How do I find receptive companies, present my product idea and turn outreach into a '
+                    'licensing deal?',
+ 'kicker': 'Q4 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Find Licensees and Pitch the Product',
+ 'subtitle': 'Potential-licensee lists, open-innovation companies, company requirements, product pitches, '
+             'unanswered outreach and AI-assisted commercialization',
+ 'layout_template': 'comparison_matrix',
+ 'reading_time_minutes': 15,
+ 'executive_summary': "Stephen Key, Andrew Krauss, Gateway's outreach team and Mark Reyland converge on "
+                      'one model: build a fit-checked list of 20 to 30 licensees, reach them through '
+                      'permission-based LinkedIn, email and phone outreach rather than portals, and arrive '
+                      'with a filed provisional, a works-like prototype and a one-sentence benefit. The '
+                      'numbers are concrete: ten connections per company, five companies in 30 minutes, '
+                      'follow-ups every five days with success at six to seven touches, provisionals near '
+                      '$60 to $65, and royalties of 5 to 8 percent on wholesale, with Reyland citing an 8 '
+                      'percent average. Disagreements are real: Krauss says many companies still hold at 5 '
+                      'percent, Key skips NDAs once a provisional is filed while Reyland asks companies to '
+                      "sign the inventor's own, and phone has dropped from first to last even as Chad "
+                      'insists on picking up the phone.',
+ 'key_metrics': [{'label': 'Companies Contacted Per Deal',
+                  'metric': 'Companies Contacted Per Deal',
+                  'value': '20 to 30 companies',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Stephen Key's estimate of how many companies an inventor may need to reach "
+                             'before one signs a deal; most inventors never reach that count.',
+                  'source': 'inventRightTV ([IMLF0c7wOQI @ 00:00:51])'},
+                 {'label': 'Follow-Ups Before Success',
+                  'metric': 'Follow-Ups Before Success',
+                  'value': '6 to 7 follow-ups, spaced every 5 days',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Key's follow-up data: 48 percent of people never follow up, 25 percent "
+                             'follow up twice, and success arrives at six to seven touches.',
+                  'source': 'inventRightTV ([1w_iTE7ZNso @ 00:27:54])'},
+                 {'label': 'Touches To Reach 52 Companies',
+                  'metric': 'Touches To Reach 52 Companies',
+                  'value': '500 to 1,000 touches',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Dana, Gateway outreach manager, on the raw volume of calls, emails and '
+                             'messages needed to actually reach 52 companies.',
+                  'source': 'inventRightTV ([LO-vI8icz70 @ 00:30:34])'},
+                 {'label': 'Average Royalty Rate',
+                  'metric': 'Average Royalty Rate',
+                  'value': '8 percent average; most deals near 6 percent; ceiling 10 percent',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Mark Reyland citing the National Royalty Guide average and the range of '
+                             'deals done, with As Seen On TV deals near 2.5 percent.',
+                  'source': 'Mark Reyland ([71FE9YR_9no @ 00:32:03])'}],
+ 'sections': [{'heading': 'Section 1: The Practitioner Consensus',
+               'paragraphs': ['Every operator on this roster treats licensing as a volume game run through '
+                              'relationships, not a lottery ticket mailed to a portal. Stephen Key states '
+                              'flatly that you might need to reach 20 to 30 companies before one does a '
+                              'deal, and that most inventors never bother to do that [IMLF0c7wOQI @ '
+                              '00:00:51]. The hit list should hold at least 20 companies; Key calls a list '
+                              'of five "not great" and builds the list by walking the Walmart aisle where '
+                              'the product belongs, asking the manager, photographing packaging, and '
+                              'harvesting 800 numbers [mljygoL-peE @ 00:01:06]. Mark Reyland runs the same '
+                              'shelf harvest, photographing the maker information printed on package '
+                              'backs, loading it into a spreadsheet, and then shopping the product through '
+                              "each company's own submission process [71FE9YR_9no @ 00:22:52]. The Gateway "
+                              'outreach team puts hard numbers on the grind: Dana reports that reaching 52 '
+                              'companies took 500 to 1,000 touches, and Chad says he contacted over 200 '
+                              'companies before licensing anything, iterating on every round of feedback '
+                              "[LO-vI8icz70 @ 00:30:34]. Chad's warning cuts the other way too: blasting "
+                              '"37 emails to who?" is wasted motion unless every message lands on a '
+                              'decision-maker. The baseline expectation is months of disciplined outreach, '
+                              'not a single lucky pitch.',
+                              'Practitioners agree that the cold portal is dead weight and that '
+                              'permission-based relationships close deals. Key reports hearing from '
+                              "companies that they don't really license ideas from the portal, endorses "
+                              'only Oxo and Hasbro Spark, and warns never to pay a portal [IMLF0c7wOQI @ '
+                              '00:07:35]. Portals, in Key\'s words, are "for people that are just starting '
+                              'out," so even when a company runs one, the move is LinkedIn with a strong '
+                              'profile and a short script asking whether the company participates in open '
+                              'innovation, which is explicitly "asking for permission" [biVTpLl2T5U @ '
+                              '00:01:48]. Permission is leverage: per the Licensing Playbook crew, it buys '
+                              'the right to follow up for six months, while an unsolicited send earns '
+                              '"maybe twice" [LO-vI8icz70 @ 00:16:40]. Thirty contacts means thirty '
+                              'relationships, and companies usually take the third or fourth idea from an '
+                              'inventor they already trust. Key also stresses that the old FedEx-next-day '
+                              'approach is finished; email overload and automation mean "it is who you '
+                              'know today" [LWNWc2dynPI @ 00:15:31]. The shared filter for who deserves '
+                              'those relationships is fit: Key prefers companies with an '
+                              'outside-submission department and walks away when a mega-company demands an '
+                              'issued patent, because the game is speed to market rather than protection.',
+                              'The third pillar of agreement is skin in the game before the pitch: a filed '
+                              'provisional, a works-like prototype, and a benefit you can say in one '
+                              'breath. Gateway\'s Dana Nolles says the team needs to see "that your '
+                              'product does what you\'re saying it does," and a duct-taped or glued '
+                              'works-like prototype is enough, while an issued patent and even a sell '
+                              'sheet are not required to apply [p3ODWhpvt3E @ 00:02:07]. Key files a '
+                              'provisional before approaching companies, $65 in the start-to-finish '
+                              "walkthrough, and writes it around why the idea wasn't done before, packed "
+                              'with variations and workarounds [LWNWc2dynPI @ 00:05:30]. Reyland lands in '
+                              'the same place from a different angle: under 20 percent of retail products '
+                              'carry any patent protection, so file a provisional right before approaching '
+                              'companies and go back to the drawing board if no license arrives within 12 '
+                              'months [71FE9YR_9no @ 00:01:46]. On messaging, Key calls the ability to '
+                              'describe the benefit in one sentence one of the most important things you '
+                              'can do today, and builds every pitch around that single USP [KOR6yXD1nTQ @ '
+                              '00:05:17]. The idea itself, Key estimates, is only five to ten percent of '
+                              'the process.'],
+               'table': {'caption': 'Where the licensing practitioners line up on finding and approaching '
+                                    'licensees',
+                         'headers': ['Consensus Principle',
+                                     'Operator Practice',
+                                     'Reported Rationale',
+                                     'Expert Source'],
+                         'rows': [['Build a hit list of at least twenty fit-checked companies',
+                                   'Walk the Walmart aisle, photograph packaging, collect 800 numbers, ask '
+                                   'the manager',
+                                   'A list of five is not great; volume raises the odds',
+                                   'inventRightTV ([mljygoL-peE @ 00:01:06])'],
+                                  ['Skip paid submission portals and work relationships instead',
+                                   'Use LinkedIn, 800 numbers, trade shows and email to ask permission '
+                                   'first',
+                                   "Companies told Key they don't really license ideas from portals",
+                                   'inventRightTV ([IMLF0c7wOQI @ 00:07:35])'],
+                                  ['Ask permission before sending any sell sheet or video',
+                                   'Script asks whether the company participates in open innovation or '
+                                   'redirects',
+                                   'Permission buys six months of follow-ups versus maybe twice '
+                                   'unsolicited',
+                                   'inventRightTV ([LO-vI8icz70 @ 00:16:40])'],
+                                  ['Show a works-like prototype that proves the core function',
+                                   'Duct-taped or glued builds are acceptable; it need not look final',
+                                   'Gateway needs proof the product does what the inventor claims',
+                                   'inventRightTV ([p3ODWhpvt3E @ 00:06:22])'],
+                                  ['File a provisional patent application instead of waiting on issuance',
+                                   'Write it as a selling tool covering manufacturing, materials and '
+                                   'workarounds',
+                                   "It convinces the company you know what you're doing",
+                                   'inventRightTV ([G2JXLQrTZXI @ 00:14:46])'],
+                                  ['Lead every pitch with one sentence of benefit',
+                                   'Dictate every feature into ChatGPT and request ten candidate USP lines',
+                                   'The one-line benefit statement is the core of every pitch',
+                                   'inventRightTV ([KOR6yXD1nTQ @ 00:05:17])'],
+                                  ['Vet licensee culture before spending any outreach time on it',
+                                   'Search the company name with complaints and lawsuits, then move on',
+                                   'Wrong companies waste tens of thousands and leave a worthless plaque',
+                                   'inventRightTV ([MvycxV2ib_8 @ 00:01:17])']]}},
+              {'heading': 'Section 2: Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ["The outreach engine starts on LinkedIn. Key's current channel order is "
+                              'LinkedIn first, direct email second using addresses found through Email '
+                              'Hunter or Apollo, and phone last, a full reversal from the days when phone '
+                              'led [1w_iTE7ZNso @ 00:08:39]. The mechanical play: connect with about ten '
+                              'people per company with no message attached, covering five companies in 30 '
+                              "minutes; one member's fast-food outreach drew roughly 90 percent responses "
+                              'within two hours [1w_iTE7ZNso @ 00:20:54]. The profile itself needs a '
+                              'smiling photo and a simple innovation-themed banner rather than the '
+                              'product, because companies check it first, and outreach should hit at least '
+                              'five people per company across marketing, sales and new product '
+                              'development, stopping once one answers [aFZpyTUvtlY @ 00:00:54]. The '
+                              'message runs two to three lines: IP status, what the product is, and its '
+                              'benefit, followed by an offer of a sell sheet or one-minute video and a '
+                              'request for a referral to the right person. Once interest lands, move off '
+                              'LinkedIn to Zoom, Skype or phone, test the audio, keep dogs and kids out of '
+                              'the room, and prepare for five questions on IP, prior art, prototype, '
+                              'pricing and costs [biVTpLl2T5U @ 00:04:35].',
+                              'Follow-up cadence is where the street numbers get specific. Key cites data '
+                              'that 48 percent of people never follow up and 25 percent follow up only '
+                              'twice, while success arrives at six to seven follow-ups spaced five days '
+                              'apart, not "a couple weeks," and logged in a tracking chart [1w_iTE7ZNso @ '
+                              '00:27:54]. Krauss adds a cleaner nudge: forward the original email rather '
+                              'than asking "did you get my email" [1w_iTE7ZNso @ 00:31:03]. The Licensing '
+                              'Playbook crew benchmarks two to three follow-ups on average and six to '
+                              'eight as the ceiling, after which you find another contact at the same '
+                              'company and reference the prior one. Dana\'s "triple threat" fires '
+                              'voicemail, LinkedIn and email inside 15 minutes, and Chad calls with the '
+                              'email open on screen because in 90 percent of cases the contact has already '
+                              'seen it [LO-vI8icz70 @ 00:14:47]. When a contact goes dark, Key uses the '
+                              '"I" word, "I\'m concerned... is everything okay," framing the note around '
+                              'the person rather than the product, and reports a reply "almost every '
+                              'single time," usually opening with "I\'m so sorry" [LO-vI8icz70 @ '
+                              '00:04:54]. Krauss\'s own blunt variant, "just give me a yes or no," pulled '
+                              'an answer within a minute.',
+                              'The collateral and cost stack is cheap by design. Key paid $800 for a first '
+                              'sell sheet in Modesto; now Key voice-dictates every feature into ChatGPT '
+                              'Pro, asks for ten USPs, and tailors them by audience and length, while '
+                              'Krauss prefers Claude, and paid tiers run about $20 [KOR6yXD1nTQ @ '
+                              '00:25:39]. Krauss wants a sell sheet readable in six seconds, with a '
+                              'competitive-analysis second page and 3D renderings, never a 25-page '
+                              'PowerPoint [1w_iTE7ZNso @ 00:40:40]. A provisional runs about $60 to $65, '
+                              'Smart IP software $99, and the target is under a year to test interest '
+                              '[IMLF0c7wOQI @ 00:25:39]. On the back end, Key pegs royalties at 5 to 8 '
+                              'percent, usually on wholesale against roughly a 20 percent company margin. '
+                              "Reyland's numbers put the National Royalty Guide average at 8 percent, cap "
+                              'personal deals at 10 percent, and place most deals near 6 percent and As '
+                              'Seen On TV deals near 2.5 percent. The performance guarantee math uses Home '
+                              'Depot: 700 stores at 1.5 units a week is about 1,100 a week, with the '
+                              "minimum set at 60 to 70 percent of that, backed by a store manager's "
+                              'movement report [71FE9YR_9no @ 00:32:03].'],
+               'table': {'caption': 'Street-level numbers and tools for reaching and pitching licensees',
+                         'headers': ['Mechanic',
+                                     'Exact Number or Tool',
+                                     'How Operators Use It',
+                                     'Expert Source'],
+                         'rows': [['LinkedIn connection sprint across several target companies',
+                                   'About 10 people per company, 5 companies in 30 minutes',
+                                   'Connect without a message, then pitch whoever accepts and responds',
+                                   'inventRightTV ([1w_iTE7ZNso @ 00:20:54])'],
+                                  ['Follow-up cadence after the first outreach message',
+                                   'Every 5 days; success arrives at 6 to 7 follow-ups',
+                                   'Track each touch in a chart and forward the original email',
+                                   'inventRightTV ([1w_iTE7ZNso @ 00:27:54])'],
+                                  ['Triple-threat touch when a contact goes quiet',
+                                   'Voicemail, LinkedIn and email all fired inside 15 minutes',
+                                   'Switch channels and call with the email open on screen',
+                                   'inventRightTV ([LO-vI8icz70 @ 00:14:47])'],
+                                  ['Provisional patent filing before approaching any company',
+                                   '$65 self-filed or roughly $199 through filing programs',
+                                   "Include variations and workarounds, written around why it wasn't done",
+                                   'inventRightTV ([LWNWc2dynPI @ 00:08:11])'],
+                                  ['Royalty range quoted for consumer product licenses',
+                                   '5 to 8 percent, usually calculated on the wholesale price',
+                                   'Consumables run slightly lower and depend heavily on unit volume',
+                                   'inventRightTV ([IMLF0c7wOQI @ 00:35:03])'],
+                                  ['Performance guarantee built from real store movement',
+                                   '700 stores x 1.5 units weekly, minimum at 60-70 percent',
+                                   "Back the floor number with a store manager's movement report",
+                                   'Mark Reyland ([71FE9YR_9no @ 00:28:11])'],
+                                  ['Gateway done-for-you submission and outreach service',
+                                   '$6,000 fee with 10 companies guaranteed to respond',
+                                   'Requires a works-like prototype; may take 25 to 30 outreaches',
+                                   'inventRightTV ([p3ODWhpvt3E @ 00:16:31])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Outreach Moves That Pull Replies',
+                           'body': 'Small mechanical edges the inventRightTV crew uses to get past silence '
+                                   'and into a productive first call.',
+                           'items': ['Connect with about ten people per company with no note attached; '
+                                     'five companies fit inside a 30-minute session [inventRightTV — '
+                                     '1w_iTE7ZNso @ 00:20:54]',
+                                     'Ask for an NDA only when they ask for IP or a prototype; Key calls '
+                                     "it an easy ask so the clock doesn't start on your IP [inventRightTV "
+                                     '— 1w_iTE7ZNso @ 00:48:53]',
+                                     'When a contact goes dark, lead with concern for them, not your '
+                                     'product: "I\'m concerned... is everything okay" [inventRightTV — '
+                                     'LO-vI8icz70 @ 00:04:54]',
+                                     'On the first call ask how they see the product being implemented; '
+                                     'their retailer bragging feeds your minimum guarantee math later '
+                                     '[inventRightTV — zdIFauqdSt8 @ 00:18:45]']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Build the Hit List',
+                              'action': 'Assemble 20 to 30 fit-checked companies in a Google Sheet before '
+                                        'any outreach.',
+                              'detail': 'Use ChatGPT to surface candidate companies, spend 15 to 20 '
+                                        'minutes researching each one, and log contacts and notes in the '
+                                        'sheet [inventRightTV — LO-vI8icz70 @ 00:46:40].'},
+                             {'step': 2,
+                              'title': 'Lock Skin in the Game',
+                              'action': 'File a provisional and build a works-like prototype before the '
+                                        'first pitch.',
+                              'detail': 'Key files the provisional for $65, written around why the idea '
+                                        "wasn't done, and prototypes with paper, 3D printing or a free AI "
+                                        'render [inventRightTV — LWNWc2dynPI @ 00:05:30].'},
+                             {'step': 3,
+                              'title': 'Run Permission Outreach',
+                              'action': 'Send a short LinkedIn script asking whether the company '
+                                        'participates in open innovation.',
+                              'detail': 'State name and location, ask about open innovation or request a '
+                                        'redirect, and skip links, selling and billion-dollar claims '
+                                        '[inventRightTV — biVTpLl2T5U @ 00:02:19].'},
+                             {'step': 4,
+                              'title': 'Work the First Call',
+                              'action': 'Prepare for the five standard questions and listen more than you '
+                                        'sell.',
+                              'detail': 'Expect questions on patent, prototype, royalty, cost and sales; '
+                                        "stay flexible on royalty, don't try to close, and send a "
+                                        'thank-you recap email afterward [inventRightTV — zdIFauqdSt8 @ '
+                                        '00:08:59].'}]},
+              {'section_number': 3,
+               'heading': 'Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The sharpest split among these operators is over the front door. Stephen '
+                              'Key tells operators to ignore the submit button and work LinkedIn even when '
+                              'a portal exists, calling portals a channel “for people that are just '
+                              'starting out” [biVTpLl2T5U @ 00:01:48]. Pressed on portals, Key goes '
+                              "further: companies have said they don't really license ideas from portals, "
+                              'only Oxo and Hasbro Spark earn an endorsement, and any portal that charges '
+                              'a fee gets a hard no [IMLF0c7wOQI @ 00:07:35]. Elsewhere Key flips the '
+                              'filter, telling operators to favor companies that already run a department '
+                              'for outside submissions, because a company without a process forces you to '
+                              'educate them and moves slowly [MvycxV2ib_8 @ 00:01:49]. Mark Reyland sits '
+                              'on the opposite side of the portal debate entirely: photograph the maker '
+                              'information on package backs, load it into a spreadsheet, and then follow '
+                              "each company's own submission process rather than going around it "
+                              "[71FE9YR_9no @ 00:22:52]. The bridge follows from Key's own script of "
+                              '“asking for permission”: open with a person on LinkedIn, ask whether the '
+                              'company participates in open innovation, and route materials through '
+                              'whatever intake the company already runs.',
+                              'Protection posture is the second fault line. Key personally skips the NDA '
+                              'once a provisional is on file and warns that demanding a company sign your '
+                              'paper can make them “hang up” [biVTpLl2T5U @ 00:08:30]. Key and Krauss time '
+                              'the ask instead: request one only when the company asks for IP or a '
+                              "prototype, so “the clock doesn't start on your intellectual property” "
+                              '[1w_iTE7ZNso @ 00:49:09]. Mark Reyland runs the opposite play: have an '
+                              'attorney draft your own NDA once, because enforcement varies state by '
+                              'state, never download a template, and ask each company to sign yours, while '
+                              'accepting that a refusal does not make them crooked and that every NDA must '
+                              'expire [71FE9YR_9no @ 00:14:21]. The patent split runs just as deep. Key '
+                              'treats a mega-company demanding an issued patent as a signal to move on, '
+                              'since the game is “speed to market” [MvycxV2ib_8 @ 00:02:38], and Reyland '
+                              'backs the logic with numbers: under 20 percent of retail products carry any '
+                              'patent protection, and a roughly $12,000 utility patent buys a less than '
+                              '50/50 shot. For the operator, that means a $60-to-$65 provisional filed as '
+                              'a selling tool is the shared floor, while the NDA posture is the live '
+                              "choice between Key's speed and Reyland's paper.",
+                              'Numbers diverge once the conversation turns to money and cadence. Key pegs '
+                              'royalties at 5 to 8 percent with consumables slightly lower, while Krauss '
+                              'pushes back that many companies still hold at 5 percent [IMLF0c7wOQI @ '
+                              '00:44:55]. Reyland quotes an 8 percent average from the National Royalty '
+                              'Guide, yet most Reyland deals land near 6 percent, the ceiling is 10, and '
+                              'As Seen On TV deals sit near 2.5 percent [71FE9YR_9no @ 00:32:03]. On the '
+                              'first call, though, Key and Krauss say never name a rate at all: claim '
+                              'flexibility and turn the question back by asking what their last licensing '
+                              'agreement looked like [zdIFauqdSt8 @ 00:12:49]. Channel order splits too. '
+                              'Key now ranks LinkedIn first, email second and phone dead last after four '
+                              "months of personal pitching, but Chad's counter is blunt: “Pick up the "
+                              'phone and call them,” because in 90 percent of cases the contact has '
+                              'already seen the email, and Dana stacks voicemail, LinkedIn and email '
+                              'inside 15 minutes [LO-vI8icz70 @ 00:13:39]. Follow-up math also conflicts: '
+                              "Key's rule is every five days until the sixth or seventh touch, while Chad "
+                              'and Dana report two to three follow-ups on average and six to eight at most '
+                              'before switching to a new contact.'],
+               'table': {'caption': 'Side-by-side playbooks where the licensing practitioners split on how '
+                                    'to reach and pitch licensees',
+                         'headers': ['Decision Point',
+                                     'Playbook A',
+                                     'Playbook B',
+                                     'Operator Read',
+                                     'Expert Source'],
+                         'rows': [['Whether to submit through company portals at all',
+                                   'Key skips the submit button and works LinkedIn, calling portals a '
+                                   'beginner channel',
+                                   "Reyland photographs package backs and follows each company's own "
+                                   'submission process',
+                                   'Open with a person, then route materials through the existing intake '
+                                   'department',
+                                   'inventRightTV ([biVTpLl2T5U @ 00:01:48]); Mark Reyland ([71FE9YR_9no @ '
+                                   '00:22:52])'],
+                                  ['Who signs the NDA and when to ask',
+                                   'Key skips NDAs after the PPA and asks only when IP or prototype is '
+                                   'requested',
+                                   'Reyland has an attorney draft one NDA and asks each company to sign it',
+                                   'Demanding your own paper early can make a company hang up the call',
+                                   'inventRightTV ([1w_iTE7ZNso @ 00:48:53]); Mark Reyland ([71FE9YR_9no @ '
+                                   '00:14:21])'],
+                                  ['How much patent you need before pitching companies',
+                                   'Key pitches on a provisional and walks away from mega-companies '
+                                   'demanding a patent',
+                                   'Patent Attorney Worldwide builds monetization around granted patents '
+                                   'pitched to CEOs',
+                                   "Key's camp treats speed to market as the game, not protection",
+                                   'inventRightTV ([MvycxV2ib_8 @ 00:02:22]); Patent Attorney Worldwide '
+                                   '([B-E0dIbeMfg @ 00:00:58])'],
+                                  ['Royalty anchor to expect in the deal',
+                                   'Key cites 5 to 8 percent while Krauss says many companies hold at 5',
+                                   'Reyland cites an 8 percent guide average, most deals near 6, max 10',
+                                   'On the first call, name no rate and say you are flexible',
+                                   'inventRightTV ([IMLF0c7wOQI @ 00:44:55]); Mark Reyland ([71FE9YR_9no @ '
+                                   '00:32:03])'],
+                                  ['Which outreach channel comes first for contact',
+                                   'Key ranks LinkedIn first, direct email second, and the phone dead last',
+                                   'Chad says pick up the phone because 90 percent already saw the email',
+                                   "Dana's triple threat hits voicemail, LinkedIn and email within 15 "
+                                   'minutes',
+                                   'inventRightTV ([1w_iTE7ZNso @ 00:08:39]); inventRightTV ([LO-vI8icz70 '
+                                   '@ 00:13:39])'],
+                                  ['Whether to record Zoom pitch meetings with companies',
+                                   'Krauss originally told inventors not to record their Zoom pitch calls',
+                                   'Andrew later retracted that advice and pointed to one-party versus '
+                                   'two-party consent states',
+                                   'Check which consent rule applies before hitting record on any call',
+                                   'inventRightTV ([1w_iTE7ZNso @ 00:57:27]); inventRightTV ([zdIFauqdSt8 '
+                                   '@ 00:53:45])'],
+                                  ['Paying a middleman to reach licensees for you',
+                                   'Patent Attorney Worldwide pitches a 9,999-rupee platform against 15 to '
+                                   '30 percent broker commissions',
+                                   'Key reports $10,000 to $12,000 spent on licensing agents with zero '
+                                   'results',
+                                   'Gateway charges $6,000 and only accepts clients at 99.9 percent '
+                                   'confidence',
+                                   'Patent Attorney Worldwide ([B-E0dIbeMfg @ 00:03:32]); inventRightTV '
+                                   '([IMLF0c7wOQI @ 00:51:11])']]}},
+              {'section_number': 4,
+               'heading': 'Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The costliest mistakes are cash spent before a single company says yes. Key '
+                              'reports $10,000 to $12,000 spent on licensing agents with zero results, one '
+                              'request for a trade-show booth success that turned up none, and a $10,000 '
+                              'patent followed by another $10,000 for changes [IMLF0c7wOQI @ 00:51:11]. '
+                              'Calling the wrong companies, Key warns, burns “tens of thousands of '
+                              'dollars” and leaves a worthless patent as a “plaque on the wall” '
+                              "[MvycxV2ib_8 @ 00:00:07]. Key's closing fix in that warning is to learn the "
+                              "language of licensing and be patient. Gateway's Dana Nolles and Key put a "
+                              'hard number on the manufacture-first trap: making product earns no royalty '
+                              'bump unless roughly 300,000 units moved that year, so spending $100,000 to '
+                              'sell units first is not worth it, and buyers want new products anyway '
+                              '[p3ODWhpvt3E @ 00:07:02]. Even Gateway, at $6,000, only accepts clients '
+                              'when 99.9 percent confident and claims a 100 percent success rate or money '
+                              'back. The base rate is brutal on every channel. Key says most patents never '
+                              'make a dime, and the Patent Attorney Worldwide pitch puts the figure at '
+                              'about 95 percent of patents that “never ever make a single rupee” '
+                              '[B-E0dIbeMfg @ 00:00:13].',
+                              'Inside the room, most deals die from behavior. Key and Krauss say a failed '
+                              "first meeting means “the deal's done,” so the move is to stop selling, "
+                              'listen and ask questions, because 80 percent of closable deals die when the '
+                              "inventor doesn't know what they are doing [zdIFauqdSt8 @ 00:16:46]. The "
+                              'classic overreach is raising royalty rates, minimum guarantees or deal '
+                              'structure after a single call; Key says companies “are going to run,” and '
+                              "that a licensing agreement should be requested only after they say “we're "
+                              'interested” [biVTpLl2T5U @ 00:12:35]. Overselling and market-share math are '
+                              'the next traps: capture-10-percent-of-the-market claims are a red flag, as '
+                              'is waving other suitors around instead of citing an NDA, and Key separately '
+                              'bars “billion dollar” claims and links from the opening message. Sloppy '
+                              'automation kills outreach before any meeting: the panel warns that '
+                              "copy-paste scripts can land a competitor's name in the message, and the "
+                              'hosts push full customization over Mailchimp-style blasts [LO-vI8icz70 @ '
+                              '00:52:58]. Unsolicited sends backfire too: a CEO once got angry at a sell '
+                              'sheet nobody asked for, so permission still comes first [1w_iTE7ZNso @ '
+                              '01:07:09].',
+                              'Before signing, run the unit math the way these operators do. Reyland sets '
+                              'the performance guarantee from store velocity: 700 Home Depot stores at 1.5 '
+                              'units a week is roughly 1,100 a week, the minimum lands at 60 to 70 percent '
+                              "of that, and a store manager's movement report supplies the real figure "
+                              '[71FE9YR_9no @ 00:28:11]. Reyland also wants upfront money because shelf '
+                              'time can stretch to about 1.5 years, and refuses to ever assign the patent, '
+                              "since the licensing contract already works as a pseudo assignment. Key's "
+                              'retail test is the companion check: one sale a week across 20,000 stores is '
+                              "20,000 units a week, and knowing the category's $10 to $20 price band tells "
+                              "you the licensee's profit and justifies a bigger royalty [G2JXLQrTZXI @ "
+                              '00:29:45]. Royalties usually ride on wholesale against roughly a 20 percent '
+                              'company margin, and Key flags two structural leaks: Pepsi pays only a '
+                              'one-time fee, so license to its supplier, and a $10 million software deal '
+                              'missed a $5 million sublicense share [IMLF0c7wOQI @ 00:56:37]. Price is the '
+                              'final gate: Key and Krauss call it the number one reason products get '
+                              'kicked out [1w_iTE7ZNso @ 00:50:47].'],
+               'table': {'caption': 'Firsthand traps reported by the practitioners and the economics check '
+                                    'that catches each one',
+                         'headers': ['Failure Mode',
+                                     'What Actually Happened',
+                                     'Economics Check',
+                                     'Expert Source'],
+                         'rows': [['Paying licensing agents to shop the idea for you',
+                                   'Key reports $10,000 to $12,000 spent on licensing agents with zero '
+                                   'results',
+                                   'Spend the money on a $60 provisional and your own outreach hours',
+                                   'inventRightTV ([IMLF0c7wOQI @ 00:51:11])'],
+                                  ['Manufacturing and selling units before pitching any licensee',
+                                   'Spending $100,000 to sell units first is not worth it to buyers',
+                                   'No royalty bump unless roughly 300,000 units sold that same year',
+                                   'inventRightTV ([p3ODWhpvt3E @ 00:08:17])'],
+                                  ['Leaving manufacturing for the licensee to figure out alone',
+                                   'Key warns that if they solve manufacturing, they own part of it',
+                                   'Hire a LinkedIn ex-employee under NDA with work-for-hire language '
+                                   'first',
+                                   'inventRightTV ([G2JXLQrTZXI @ 00:19:38])'],
+                                  ['Assigning the patent as part of the licensing deal',
+                                   'Reyland says there is never a reason to assign during licensing',
+                                   'Ownership only moves through a registered USPTO assignment, so license '
+                                   'by vertical',
+                                   'Mark Reyland ([71FE9YR_9no @ 00:41:57])'],
+                                  ['Escalating royalty and guarantee demands after the first call',
+                                   'Raising rates, minimum guarantees or structure early means companies '
+                                   'are going to run',
+                                   'Ask for the agreement only after they say they are interested',
+                                   'inventRightTV ([biVTpLl2T5U @ 00:12:35])'],
+                                  ['Trusting AI licensing answers and pitch copy without checking',
+                                   "Key guarantees some of the information isn't correct and the AI "
+                                   'flatters you',
+                                   'Use a Claude MD file or master prompt and verify terms independently',
+                                   'inventRightTV ([KOR6yXD1nTQ @ 00:42:12])'],
+                                  ['Underestimating outreach volume needed to reach real decision-makers',
+                                   'Dana needed 500 to 1,000 touches to reach 52 companies',
+                                   'Eight trial hires failed on volume, so calendar about 20 calls a month',
+                                   'inventRightTV ([LO-vI8icz70 @ 00:30:34])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Clear These Four Checks Before the First Pitch Goes Out',
+                           'body': 'Every item below comes from a trap the practitioners hit or watched '
+                                   'students hit; skip one and the first meeting, where the deal is '
+                                   'decided, starts with the licensee holding the leverage.',
+                           'items': ['Vet every target first: search the company name plus “complaints” '
+                                     'and lawsuits, and move on if there is no outside-submission process '
+                                     'or the NDA is heavily one-sided [inventRightTV — MvycxV2ib_8 @ '
+                                     '00:01:17].',
+                                     'Have a works-like prototype within reach plus a backup demo video, '
+                                     'because prototypes break and a cheap “frankenstein” version proves '
+                                     'function [inventRightTV — biVTpLl2T5U @ 00:09:53].',
+                                     'Know your manufacturing cost and comparable price points before the '
+                                     'call, since price is the number one reason products get kicked out '
+                                     '[inventRightTV — 1w_iTE7ZNso @ 00:50:47].',
+                                     'File the provisional right before approaching companies and go back '
+                                     'to the drawing board if no license lands within 12 months [Mark '
+                                     'Reyland — 71FE9YR_9no @ 00:14:21].']}}],
+ 'pull_quote': "“80% of the deals you could have closed will die because you don't know what the hell "
+               "you're doing.” — inventRightTV (zdIFauqdSt8 @ 00:16:46).",
+ 'diagram_id': 'diag-07',
+ 'action_checklist': ['Build a hit list of at least 20 companies from your Walmart aisle, package 800 '
+                      'numbers and trade-show exhibitor lists, then contact about 10 first and refine '
+                      '(inventRightTV, mljygoL-peE @ 00:01:06).',
+                      'Connect with about 10 people per company on LinkedIn with no message, covering 5 '
+                      'companies in 30 minutes (inventRightTV, 1w_iTE7ZNso @ 00:20:54).',
+                      'Send a two-sentence pitch stating IP status, the product and the benefit, then '
+                      'offer a sell sheet or one-minute video and ask for a referral (inventRightTV, '
+                      '1w_iTE7ZNso @ 00:26:10).',
+                      'Dictate every feature into an AI tool, ask for 10 one-sentence benefit statements, '
+                      'and tailor the winner to each audience (inventRightTV, KOR6yXD1nTQ @ 00:05:17).',
+                      "When a contact goes quiet, use the “I'm concerned, is everything okay” message and "
+                      'switch channels to voicemail, LinkedIn and email (inventRightTV, LO-vI8icz70 @ '
+                      '00:04:20).',
+                      'After every meeting, send a thank-you recap email as a paper trail and let time '
+                      'tick before replying to gain leverage (inventRightTV, zdIFauqdSt8 @ 00:31:37).'],
+ 'statutory_citations': [{'title': 'inventRightTV — Pitching an Idea? Learn the RIGHT Way to Land a '
+                                   'Licensing Deal! [00:08:59]',
+                          'url': 'https://www.youtube.com/watch?v=zdIFauqdSt8&t=539s',
+                          'relevance': 'Primary practitioner testimony on the five questions licensees ask '
+                                       'in the first meeting and how to answer each without killing the '
+                                       'deal.'},
+                         {'title': 'inventRightTV — How to Get Open Innovation Companies to Respond '
+                                   '(Licensing Playbook) [00:17:13]',
+                          'url': 'https://www.youtube.com/watch?v=LO-vI8icz70&t=1033s',
+                          'relevance': 'Primary practitioner testimony on anti-ghosting scripts, follow-up '
+                                       'benchmarks and outreach volume needed to reach licensees.'},
+                         {'title': 'Mark Reyland — Licensing A Retail Product by Mark Reyland [00:32:03]',
+                          'url': 'https://www.youtube.com/watch?v=71FE9YR_9no&t=1923s',
+                          'relevance': 'Primary practitioner testimony on royalty benchmarks, performance '
+                                       'guarantees and why a patent should never be assigned in a '
+                                       'license.'},
+                         {'title': 'inventRightTV — 12 Tips for Successful Product Licensing! [00:27:54]',
+                          'url': 'https://www.youtube.com/watch?v=1w_iTE7ZNso&t=1674s',
+                          'relevance': 'Primary practitioner testimony on follow-up statistics, channel '
+                                       'order and the short pitch format that gets licensee responses.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'G2JXLQrTZXI',
+                       'title': '7 strategies to get a great licensing deal!',
+                       'channel': 'inventRightTV',
+                       'author': 'inventRightTV',
+                       'text': "that gives me leverage to know what profit they're going to make that "
+                               'allows me to make a very convincing argument why they should pay me a '
+                               'bigger royalty.',
+                       'tip': "that gives me leverage to know what profit they're going to make that "
+                              'allows me to make a very convincing argument why they should pay me a '
+                              'bigger royalty.',
+                       'timestamp': 1785,
+                       'timestamp_seconds': 1785,
+                       'timestamp_label': '[00:29:45]',
+                       'url': 'https://www.youtube.com/watch?v=G2JXLQrTZXI&t=1785s',
+                       'markdown': '[00:29:45](https://www.youtube.com/watch?v=G2JXLQrTZXI&t=1785s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '1w_iTE7ZNso',
+                       'title': '12 Tips for Successful Product Licensing!',
+                       'channel': 'inventRightTV',
+                       'author': 'inventRightTV',
+                       'text': "in two sentences I'm giving my IP status what my product is and what the "
+                               'benefit is.',
+                       'tip': "in two sentences I'm giving my IP status what my product is and what the "
+                              'benefit is.',
+                       'timestamp': 1570,
+                       'timestamp_seconds': 1570,
+                       'timestamp_label': '[00:26:10]',
+                       'url': 'https://www.youtube.com/watch?v=1w_iTE7ZNso&t=1570s',
+                       'markdown': '[00:26:10](https://www.youtube.com/watch?v=1w_iTE7ZNso&t=1570s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'p3ODWhpvt3E',
+                       'title': 'The #1 Thing Companies Want Before Buying Your Idea',
+                       'channel': 'inventRightTV',
+                       'author': 'inventRightTV',
+                       'text': "We need to see that your product does what you're saying it does.",
+                       'tip': "We need to see that your product does what you're saying it does.",
+                       'timestamp': 127,
+                       'timestamp_seconds': 127,
+                       'timestamp_label': '[00:02:07]',
+                       'url': 'https://www.youtube.com/watch?v=p3ODWhpvt3E&t=127s',
+                       'markdown': '[00:02:07](https://www.youtube.com/watch?v=p3ODWhpvt3E&t=127s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'IMLF0c7wOQI',
+                       'title': 'How to license your product ideas',
+                       'channel': 'inventRightTV',
+                       'author': 'inventRightTV',
+                       'text': 'you might need to reach out to 20 30 companies one does deal most '
+                               "inventors don't bother to do that.",
+                       'tip': 'you might need to reach out to 20 30 companies one does deal most inventors '
+                              "don't bother to do that.",
+                       'timestamp': 51,
+                       'timestamp_seconds': 51,
+                       'timestamp_label': '[00:00:51]',
+                       'url': 'https://www.youtube.com/watch?v=IMLF0c7wOQI&t=51s',
+                       'markdown': '[00:00:51](https://www.youtube.com/watch?v=IMLF0c7wOQI&t=51s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'aFZpyTUvtlY',
+                       'title': 'How to Pitch Your Product to Companies For a Licensing Deal',
+                       'channel': 'inventRightTV',
+                       'author': 'inventRightTV',
+                       'text': "What you're doing is being a professional by following up.",
+                       'tip': "What you're doing is being a professional by following up.",
+                       'timestamp': 437,
+                       'timestamp_seconds': 437,
+                       'timestamp_label': '[00:07:17]',
+                       'url': 'https://www.youtube.com/watch?v=aFZpyTUvtlY&t=437s',
+                       'markdown': '[00:07:17](https://www.youtube.com/watch?v=aFZpyTUvtlY&t=437s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'mljygoL-peE',
+                       'title': 'Making Your Hit List of Potential Licensees',
+                       'channel': 'inventRightTV',
+                       'author': 'inventRightTV',
+                       'text': "there's no Gatekeepers there's no one there to tell you no.",
+                       'tip': "there's no Gatekeepers there's no one there to tell you no.",
+                       'timestamp': 145,
+                       'timestamp_seconds': 145,
+                       'timestamp_label': '[00:02:25]',
+                       'url': 'https://www.youtube.com/watch?v=mljygoL-peE&t=145s',
+                       'markdown': '[00:02:25](https://www.youtube.com/watch?v=mljygoL-peE&t=145s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'LWNWc2dynPI',
+                       'title': 'How I License an Invention From Start to Finish',
+                       'channel': 'inventRightTV',
+                       'author': 'inventRightTV',
+                       'text': 'It is who you know today.',
+                       'tip': 'It is who you know today.',
+                       'timestamp': 931,
+                       'timestamp_seconds': 931,
+                       'timestamp_label': '[00:15:31]',
+                       'url': 'https://www.youtube.com/watch?v=LWNWc2dynPI&t=931s',
+                       'markdown': '[00:15:31](https://www.youtube.com/watch?v=LWNWc2dynPI&t=931s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'biVTpLl2T5U',
+                       'title': 'How to Land the Licensing Deal of Your Dreams',
+                       'channel': 'inventRightTV',
+                       'author': 'inventRightTV',
+                       'text': 'really simple to do you want to get off linkedin do a zoom skype or '
+                               'telephone call and get to know each other.',
+                       'tip': 'really simple to do you want to get off linkedin do a zoom skype or '
+                              'telephone call and get to know each other.',
+                       'timestamp': 347,
+                       'timestamp_seconds': 347,
+                       'timestamp_label': '[00:05:47]',
+                       'url': 'https://www.youtube.com/watch?v=biVTpLl2T5U&t=347s',
+                       'markdown': '[00:05:47](https://www.youtube.com/watch?v=biVTpLl2T5U&t=347s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'LO-vI8icz70',
+                       'title': 'How to Get Open Innovation Companies to Respond (Licensing Playbook)',
+                       'channel': 'inventRightTV',
+                       'author': 'inventRightTV',
+                       'text': "But when you reach out to them that way, you're really saying to them, I'm "
+                               'concerned about you, not my product.',
+                       'tip': "But when you reach out to them that way, you're really saying to them, I'm "
+                              'concerned about you, not my product.',
+                       'timestamp': 294,
+                       'timestamp_seconds': 294,
+                       'timestamp_label': '[00:04:54]',
+                       'url': 'https://www.youtube.com/watch?v=LO-vI8icz70&t=294s',
+                       'markdown': '[00:04:54](https://www.youtube.com/watch?v=LO-vI8icz70&t=294s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'zdIFauqdSt8',
+                       'title': 'Pitching an Idea? Learn the RIGHT Way to Land a Licensing Deal!',
+                       'channel': 'inventRightTV',
+                       'author': 'inventRightTV',
+                       'text': "the second most powerful thing is letting time tick a little bit it's hard "
+                               "to do I know it is but it's powerful.",
+                       'tip': "the second most powerful thing is letting time tick a little bit it's hard "
+                              "to do I know it is but it's powerful.",
+                       'timestamp': 2327,
+                       'timestamp_seconds': 2327,
+                       'timestamp_label': '[00:38:47]',
+                       'url': 'https://www.youtube.com/watch?v=zdIFauqdSt8&t=2327s',
+                       'markdown': '[00:38:47](https://www.youtube.com/watch?v=zdIFauqdSt8&t=2327s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'zdIFauqdSt8',
+                       'title': 'Pitching an Idea? Learn the RIGHT Way to Land a Licensing Deal!',
+                       'channel': 'inventRightTV',
+                       'author': 'inventRightTV',
+                       'text': "80% of the deals you could have closed will die because you don't know "
+                               "what the hell you're doing.",
+                       'tip': "80% of the deals you could have closed will die because you don't know what "
+                              "the hell you're doing.",
+                       'timestamp': 1006,
+                       'timestamp_seconds': 1006,
+                       'timestamp_label': '[00:16:46]',
+                       'url': 'https://www.youtube.com/watch?v=zdIFauqdSt8&t=1006s',
+                       'markdown': '[00:16:46](https://www.youtube.com/watch?v=zdIFauqdSt8&t=1006s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '_aiJZ1WKmfc',
+                       'title': 'The Game-Changing Power of Open Innovation',
+                       'channel': 'inventRightTV',
+                       'author': 'inventRightTV',
+                       'text': "people don't have the time the money the skill or even the desire to start "
+                               "a business so there is an alternative and it's called licensing.",
+                       'tip': "people don't have the time the money the skill or even the desire to start "
+                              "a business so there is an alternative and it's called licensing.",
+                       'timestamp': 93,
+                       'timestamp_seconds': 93,
+                       'timestamp_label': '[00:01:33]',
+                       'url': 'https://www.youtube.com/watch?v=_aiJZ1WKmfc&t=93s',
+                       'markdown': '[00:01:33](https://www.youtube.com/watch?v=_aiJZ1WKmfc&t=93s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'MvycxV2ib_8',
+                       'title': 'Finding Companies That Embrace Open Innovation and Inventors',
+                       'channel': 'inventRightTV',
+                       'author': 'inventRightTV',
+                       'text': 'find the companies are already set up for you that already have a '
+                               'department that handles outside submissions.',
+                       'tip': 'find the companies are already set up for you that already have a '
+                              'department that handles outside submissions.',
+                       'timestamp': 109,
+                       'timestamp_seconds': 109,
+                       'timestamp_label': '[00:01:49]',
+                       'url': 'https://www.youtube.com/watch?v=MvycxV2ib_8&t=109s',
+                       'markdown': '[00:01:49](https://www.youtube.com/watch?v=MvycxV2ib_8&t=109s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '71FE9YR_9no',
+                       'title': 'Licensing A Retail Product by Mark Reyland',
+                       'channel': 'Mark Reyland',
+                       'author': 'Mark Reyland',
+                       'text': 'there is no reason to ever assign a patent as part of a licensing process '
+                               'none because the licensing contract is a pseudo assignment.',
+                       'tip': 'there is no reason to ever assign a patent as part of a licensing process '
+                              'none because the licensing contract is a pseudo assignment.',
+                       'timestamp': 2517,
+                       'timestamp_seconds': 2517,
+                       'timestamp_label': '[00:41:57]',
+                       'url': 'https://www.youtube.com/watch?v=71FE9YR_9no&t=2517s',
+                       'markdown': '[00:41:57](https://www.youtube.com/watch?v=71FE9YR_9no&t=2517s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '71FE9YR_9no',
+                       'title': 'Licensing A Retail Product by Mark Reyland',
+                       'channel': 'Mark Reyland',
+                       'author': 'Mark Reyland',
+                       'text': 'and the average royalty across the board is eight points eight percent '
+                               "that's the average.",
+                       'tip': 'and the average royalty across the board is eight points eight percent '
+                              "that's the average.",
+                       'timestamp': 1923,
+                       'timestamp_seconds': 1923,
+                       'timestamp_label': '[00:32:03]',
+                       'url': 'https://www.youtube.com/watch?v=71FE9YR_9no&t=1923s',
+                       'markdown': '[00:32:03](https://www.youtube.com/watch?v=71FE9YR_9no&t=1923s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'KOR6yXD1nTQ',
+                       'title': 'How AI Can Help You Get a Licensing Deal',
+                       'channel': 'inventRightTV',
+                       'author': 'inventRightTV',
+                       'text': 'I think one of the most important things you can do today is be able to '
+                               'describe the benefit of your idea in one sentence.',
+                       'tip': 'I think one of the most important things you can do today is be able to '
+                              'describe the benefit of your idea in one sentence.',
+                       'timestamp': 317,
+                       'timestamp_seconds': 317,
+                       'timestamp_label': '[00:05:17]',
+                       'url': 'https://www.youtube.com/watch?v=KOR6yXD1nTQ&t=317s',
+                       'markdown': '[00:05:17](https://www.youtube.com/watch?v=KOR6yXD1nTQ&t=317s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'B-E0dIbeMfg',
+                       'title': 'How to Make Money with Your Patent (Licensing or Selling) | AI-Powered '
+                                'Patent Commercialization',
+                       'channel': 'Patent Attorney Worldwide',
+                       'author': 'Patent Attorney Worldwide',
+                       'text': 'The right people simply never even knew they existed.',
+                       'tip': 'The right people simply never even knew they existed.',
+                       'timestamp': 89,
+                       'timestamp_seconds': 89,
+                       'timestamp_label': '[00:01:29]',
+                       'url': 'https://www.youtube.com/watch?v=B-E0dIbeMfg&t=89s',
+                       'markdown': '[00:01:29](https://www.youtube.com/watch?v=B-E0dIbeMfg&t=89s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'jJvwXeinKSk',
+                       'title': 'Inventor Stephen Key Inventright offers advice on how to license your '
+                                'invention ideas',
+                       'channel': 'ideasuploaded',
+                       'author': 'ideasuploaded',
+                       'text': 'and I showed them a little drawing and they loved it and they said can you '
+                               'make this a 3D.',
+                       'tip': 'and I showed them a little drawing and they loved it and they said can you '
+                              'make this a 3D.',
+                       'timestamp': 172,
+                       'timestamp_seconds': 172,
+                       'timestamp_label': '[00:02:52]',
+                       'url': 'https://www.youtube.com/watch?v=jJvwXeinKSk&t=172s',
+                       'markdown': '[00:02:52](https://www.youtube.com/watch?v=jJvwXeinKSk&t=172s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'}]}

@@ -1,740 +1,437 @@
-from __future__ import annotations
+"""Volume 011 diagram data: High-Ticket Brokerage."""
 
-VOLUME_011_SUBTITLE = (
-    "The Complete Playbook for $100,000–$1,000,000 USD in Annual Retained "
-    "Commissions: A 1 FT + 3 C (4-Person) Core Pod, Scaling to Six"
+from typing import Dict, List
+
+VOLUME_011_SUBTITLE: str = (
+    "Commission-only closer seats, Main Street and double Lehman fee ladders, "
+    "state-by-state M&A broker exemptions, license-state maps, genuine NCNDAs, "
+    "60/40 yacht splits and scrubbed jet specs, sub-60-word off-market outreach, "
+    "SDE and EBITDA multiples, specialist-lane pricing, and seller notes with "
+    "offset rights that protect closing certainty"
 )
 
-VOLUME_011_POSITIONING_ALTERNATIVES = [
+
+def build_volume_011_diagrams_data() -> List[Dict]:
+    """Return the eight structured diagram dicts for Volume 011."""
+    return [
+        {
+            "diagram_id": "diag-01-closer-seat-to-repeatable-close",
+            "chapter_number": 1,
+            "title": "From Vetted Seat to Repeatable High-Ticket Close",
+            "subtitle": "Commission-only closing on $3K-$25K offers over Zoom",
+            "caption": (
+                "Closers vet the owner first, win the seat with high-volume "
+                "outreach, screen applications for cash on hand, run pain-first "
+                "discovery, and judge results weekly against a 30-40% close-rate floor."
+            ),
+            "assumptions_note": (
+                "Sequence assembled from practitioner operator gates and pro-tips. "
+                "Figures are attributed claims, including Cosper's 10% closer, 5% "
+                "setter, and 15% self-set split with refund clawbacks."
+            ),
+            "note": (
+                "Sources include Colby Lyman, Frankie Isaac, Hudson Cosper, "
+                "Scale Like ZK, Daniel Coutts, and Daniel Botero."
+            ),
+            "chart_type": "process_flow",
+            "stages": [
+                {
+                    "step": "01",
+                    "label": "Vet the Owner and Offer",
+                    "value": "Step 1",
+                    "detail": (
+                        "Ask how many reps there are, what reps make, and how long the "
+                        "program has run, and request case studies (Colby Lyman). Treat "
+                        "fewer than 20 calls a week as a flag (Frankie Isaac). Reject "
+                        "pay-to-apply roles, tickets under 2K, and '10K guaranteed' "
+                        "pitches (Hudson Cosper)."
+                    ),
+                },
+                {
+                    "step": "02",
+                    "label": "Win the Seat With Outreach",
+                    "value": "Step 2",
+                    "detail": (
+                        "Run 100 DMs a day and 60-second Looms. Isaac's student Lucas "
+                        "landed nine interviews from 30 Looms, and another student, "
+                        "Adam, earned $9K in month one."
+                    ),
+                },
+                {
+                    "step": "03",
+                    "label": "Screen Cash on Hand",
+                    "value": "Step 3",
+                    "detail": (
+                        "Ask about cash on hand in the application. A '$500' answer "
+                        "means cancel the call or offer a low-ticket downsell instead "
+                        "of burning a closer slot (Scale Like ZK)."
+                    ),
+                },
+                {
+                    "step": "04",
+                    "label": "Run Pain-First Discovery",
+                    "value": "Step 4",
+                    "detail": (
+                        "Run 30-45 minute diagnostic calls before any pitch. Probe each "
+                        "objection with what, why, and how, because every objection is "
+                        "a smokescreen (Daniel Coutts)."
+                    ),
+                },
+                {
+                    "step": "05",
+                    "label": "Close and Track Weekly KPIs",
+                    "value": "Step 5",
+                    "detail": (
+                        "Hold a 30-40% close-rate minimum against a 70-80% target on "
+                        "5-10 calls a day (Hudson Cosper). Check KPIs weekly, because "
+                        "a bad show rate alone can turn $50K into $5K (Scale Like ZK)."
+                    ),
+                },
+            ],
+        },
+        {
+            "diagram_id": "diag-02-yacht-commission-funnel",
+            "chapter_number": 6,
+            "title": "From Yacht Sale Price to Broker Take-Home",
+            "subtitle": "Tiered schedule, co-broker split, and house split",
+            "caption": (
+                "A $30M yacht carries a potential $1.75M commission on the tiered "
+                "schedule. Co-broker and house splits then cut what a single working "
+                "broker keeps."
+            ),
+            "assumptions_note": (
+                "Each stage restates a separate practitioner example rather than "
+                "one continuous deal. The $1M commission is the Yacht Broker "
+                "Masterclass illustration, and the 60/40 split applies under most "
+                "circumstances."
+            ),
+            "note": (
+                "Schedule and $30M example from a Northrop & Johnson broker on "
+                "Yachts For Sale. Split and take-home figures from Yacht Broker "
+                "Masterclass."
+            ),
+            "chart_type": "funnel",
+            "stages": [
+                {
+                    "label": "Brokerage Yacht Sale Price",
+                    "value": 30000000,
+                    "display": "$30M",
+                    "conversion": "Starting sale price",
+                    "detail": "Yacht Sale Price used in the Yachts For Sale example.",
+                },
+                {
+                    "label": "Potential Tiered Commission",
+                    "value": 1750000,
+                    "display": "$1.75M",
+                    "conversion": "10% first $10M, 5% next $10M, 2.5% per $10M after",
+                    "detail": "Standard brokerage-yacht schedule quoted by a Northrop & Johnson broker.",
+                },
+                {
+                    "label": "Illustrative Commission Pool",
+                    "value": 1000000,
+                    "display": "$1M",
+                    "conversion": "Shared between buyer and seller brokers",
+                    "detail": "Commission pool used in the Yacht Broker Masterclass split example.",
+                },
+                {
+                    "label": "Buyer-Side Broker Keep",
+                    "value": 300000,
+                    "display": "$300K",
+                    "conversion": "60% buyer side, then a 50/50 house split",
+                    "detail": "The seller-side broker on the same 50/50 house split keeps $200,000.",
+                },
+                {
+                    "label": "Junior Broker Net",
+                    "value": 80000,
+                    "display": "$80K",
+                    "conversion": "Junior on a 20% house split",
+                    "detail": "What a junior on a 20% house split nets off a $1M commission.",
+                },
+            ],
+        },
+        {
+            "diagram_id": "diag-03-state-m-and-a-relief-gap",
+            "chapter_number": 3,
+            "title": "The State-Level M&A Broker Relief Gap",
+            "subtitle": "The federal exemption did not preempt the states",
+            "caption": (
+                "23 states adopted M&A-specific relief and Washington's private-"
+                "placement route adds one more. 26 states plus DC still lack relief, "
+                "so unregistered fees can become uncollectible."
+            ),
+            "assumptions_note": (
+                "The starting count is the 50 states plus DC. Coverage counts follow "
+                "the IBBA BEEF advocacy tally. Adoption came by rule, order, or law."
+            ),
+            "note": (
+                "Tally from the International Business Brokers Association panel, "
+                "which also cites a Nevada broker who spent about $500K in legal fees."
+            ),
+            "chart_type": "waterfall",
+            "bars": [
+                {"label": "States Plus DC", "value": 51, "display": "51", "kind": "total"},
+                {"label": "M&A-Specific State Relief", "value": 23, "display": "-23", "kind": "deduction"},
+                {"label": "Washington Private-Placement Route", "value": 1, "display": "-1", "kind": "deduction"},
+                {"label": "Jurisdictions Still Lacking Relief", "value": 27, "display": "27", "kind": "total"},
+                {"label": "District of Columbia", "value": 1, "display": "-1", "kind": "deduction"},
+                {"label": "States Without Relief", "value": 26, "display": "26", "kind": "result"},
+            ],
+        },
+        {
+            "diagram_id": "diag-04-success-fee-ladders",
+            "chapter_number": 2,
+            "title": "Success-Fee Ranges by Intermediary Type",
+            "subtitle": "Main Street percentages versus sliding ladders on larger deals",
+            "caption": (
+                "Main Street brokers charge 10-15% with nothing upfront. M&A advisors "
+                "slide from 10% down to 2% on the double Lehman, and digital "
+                "marketplaces taper by deal size."
+            ),
+            "assumptions_note": (
+                "The typical value is the practitioner's stated example or a stated "
+                "middle tier, not an average. Ladders apply each rate to a portion "
+                "of the price."
+            ),
+            "note": (
+                "Sources are American Business Intermediaries, CompassPointCapital "
+                "(Nate Grant), Business Broker Crowd Call, Colin Matcha, and "
+                "Business Solution."
+            ),
+            "chart_type": "horizontal_bars",
+            "unit": "% of purchase price",
+            "bars": [
+                {"label": "Main Street Business Broker", "min": 10, "max": 15, "typical": 12, "display": "10-15% (12% with $20K minimum)"},
+                {"label": "M&A Advisor Double Lehman", "min": 2, "max": 10, "typical": 6, "display": "10/8/6/4/2% by million"},
+                {"label": "Larger Main Street Deal Ladder", "min": 6, "max": 10, "typical": 8, "display": "10/9/8/7/6% ladder"},
+                {"label": "Quiet Light Digital Ladder", "min": 9, "max": 10, "typical": 10, "display": "10% first $1M, 9% next $500K"},
+                {"label": "Empire Flippers Tiered Fee", "min": 2.5, "max": 15, "typical": 8, "display": "15% / 8% / 2.5%, $7K minimum"},
+            ],
+        },
+        {
+            "diagram_id": "diag-05-ncnda-signing-gates",
+            "chapter_number": 5,
+            "title": "Four Gates Before Signing an NCNDA",
+            "subtitle": "An NDA stops talking, while non-circumvention stops the deal without you",
+            "caption": (
+                "Kill fake ICC paper, confirm real non-circumvention coverage, execute "
+                "before disclosure, and strike buried non-competes or commission "
+                "liability."
+            ),
+            "assumptions_note": (
+                "Gate order follows practitioner operator gates. Term guidance of 2 to "
+                "5 years is an IXH TRADING Academy range, and Cangem Global calls 3 "
+                "years a hard bet."
+            ),
+            "note": (
+                "Sources are Cangem Global Corporation, IXH TRADING Academy, Trade "
+                "Base Hub, Dr. Chad Michael Altieri, David C Barnett, and Rafael Ludwig."
+            ),
+            "chart_type": "decision_tree",
+            "nodes": [
+                {
+                    "gate": "G1",
+                    "question": "Does the paper avoid citing ICC 400, 500, or 600 rules and avoid the IMFPA label?",
+                    "pass_next": "G2",
+                    "fail_action": "Treat it as fake and refuse to sign. ICC 769E is the only genuine ICC NCNDA.",
+                },
+                {
+                    "gate": "G2",
+                    "question": "Is it a real non-circumvention instrument covering affiliates, survival period, and remedy?",
+                    "pass_next": "G3",
+                    "fail_action": "Send it back, because a plain NDA only stops talking.",
+                },
+                {
+                    "gate": "G3",
+                    "question": "Have authorized signatories executed it and completed KYC with government photo ID?",
+                    "pass_next": "G4",
+                    "fail_action": "Share zero protected names, prices, or shipping details until they have.",
+                },
+                {
+                    "gate": "G4",
+                    "question": "Is the term reasonable, with no buried non-compete, buyer commission liability, or advance-fee demand?",
+                    "pass_next": "Sign and proceed to disclosure",
+                    "fail_action": "Cross out the clause, or walk away from any advance-fee request.",
+                },
+            ],
+        },
+        {
+            "diagram_id": "diag-06-specialist-lane-architecture",
+            "chapter_number": 11,
+            "title": "Price the Paper, Not the Pitch",
+            "subtitle": "Four specialist lanes and the benchmark each one runs on",
+            "caption": (
+                "Specialist brokers anchor each lane to a hard benchmark. Examples "
+                "include close rates and fee ladders for digital businesses, rent "
+                "multiples for towers, power agreements for land, and IRS risk for "
+                "credits."
+            ),
+            "assumptions_note": (
+                "Headcount was not reported by practitioners. Benchmarks are attributed "
+                "claims, and the tower multiple is a starting point rather than a "
+                "calculator."
+            ),
+            "note": (
+                "Sources are The Digital Merchant, Colin Matcha, Tower Genius, Reed "
+                "Smith LLP, and Andrew Dubinsky."
+            ),
+            "chart_type": "org_architecture",
+            "center": {
+                "role": "Specialist Market Broker",
+                "headcount": "Not reported",
+                "focus": "Underwrite documents and benchmarks before the pitch",
+            },
+            "spokes": [
+                {
+                    "role": "Digital Business Lane",
+                    "type": "Seller-side online-business brokerage",
+                    "kpi": "FE International closes 94% of listings; underwrite on at least six months of numbers",
+                },
+                {
+                    "role": "Cell Tower Lane",
+                    "type": "Lease buyout and easement sales",
+                    "kpi": "16-17x annual rent with a right of first refusal, 17-18x without",
+                },
+                {
+                    "role": "Powered Land Lane",
+                    "type": "Data center site selection",
+                    "kpi": "Signed power agreement, dated load ramp, and an off ramp before any premium",
+                },
+                {
+                    "role": "Tax Credit Transfer Lane",
+                    "type": "Section 6418 credit transfers",
+                    "kpi": "About 1 in 20,000 invalidation odds, with the buyer carrying the risk",
+                },
+            ],
+        },
+        {
+            "diagram_id": "diag-07-supervision-cadence",
+            "chapter_number": 4,
+            "title": "Supervision and Recordkeeping Cadence",
+            "subtitle": "Inspection cycles and record buckets in years",
+            "caption": (
+                "OSJs are inspected annually, while branches run on three-year cycles. "
+                "Records sit in six-year and three-year buckets, with two years kept "
+                "easily accessible."
+            ),
+            "assumptions_note": (
+                "Year counts are the practitioner-cited cycles and record buckets. "
+                "Rule 1017 separately triggers at 25% of assets or ownership control, "
+                "filed at least 30 days before the change."
+            ),
+            "note": (
+                "Sources are The Finance Lab on OSJ inspections and Rule 1017, and "
+                "Business Broker Crowd Call on licensing context."
+            ),
+            "chart_type": "stacked_comparison",
+            "total_range": "1 to 6 years",
+            "buckets": [
+                {"label": "OSJ Inspection Cycle", "low": 1, "high": 1, "notes": "Mandatory annual inspections once a branch manager gives final new-account approval"},
+                {"label": "Branch Inspection Cycle", "low": 3, "high": 3, "notes": "Three-year cycle for non-OSJ branches"},
+                {"label": "Long Record Bucket", "low": 6, "high": 6, "notes": "Six-year retention bucket, first two years easily accessible"},
+                {"label": "Short Record Bucket", "low": 3, "high": 3, "notes": "Three-year retention bucket, first two years easily accessible"},
+            ],
+        },
+        {
+            "diagram_id": "diag-08-closing-certainty-roadmap",
+            "chapter_number": 12,
+            "title": "Building Closing Certainty Before the Buyer Arrives",
+            "subtitle": "Clean books, honest disclosure, binding exclusivity, and protected seller money",
+            "caption": (
+                "Closing certainty starts with tax returns that tie to P&Ls and an "
+                "honest CIM. It continues with 60-to-90-day exclusivity and a seller "
+                "note carrying offset rights, all run fast enough to beat deal fatigue."
+            ),
+            "assumptions_note": (
+                "The four-week sequence is an organizing frame, not a practitioner "
+                "timeline. The reported target close is 3 to 6 months, with fatigue "
+                "at 4 to 6 months."
+            ),
+            "note": (
+                "Sources are Charles Weatherly, iGOTHAM, Patrick O'Connell, Quiet "
+                "Light Brokerage, My SBA Loan Pro Podcast (Jake Parsley), and Amped "
+                "Success (Mark Sims)."
+            ),
+            "chart_type": "timeline_roadmap",
+            "weeks": [
+                {
+                    "week": "Week 1",
+                    "title": "Tie the Books",
+                    "deliverable": "Three years of tax returns tied to the P&L line by line, with unreceipted add-backs stripped",
+                    "gate": "No listing goes out until every add-back has a receipt",
+                },
+                {
+                    "week": "Week 2",
+                    "title": "Disclose and Draft the CIM",
+                    "deliverable": "Settled suits, state tax matters, and change-of-control leases disclosed in an honest CIM",
+                    "gate": "No hidden weakness that would surface at week six as broken trust",
+                },
+                {
+                    "week": "Week 3",
+                    "title": "Lock the LOI",
+                    "deliverable": "LOI or IOI covering price, terms, and 60 to 90 days of binding exclusivity",
+                    "gate": "Reject 100% seller-financed full-price LOIs unless it is a partner buyout",
+                },
+                {
+                    "week": "Week 4",
+                    "title": "Protect the Close",
+                    "deliverable": "Seller note with an offset right and a data-request turnaround inside the month",
+                    "gate": "Keep part of the seller's money in the buyer's pocket instead of escrow",
+                },
+            ],
+        },
+    ]
+
+
+VOLUME_011_POSITIONING_ALTERNATIVES: List[Dict] = [
     {
-        "title": "The Control-Sale Mandate Desk",
-        "subtitle": (
-            "Build exclusive owner-exit mandates, qualify controlling buyers, "
-            "and earn retained commissions on completed private-company sales."
-        ),
-        "audience": (
-            "Experienced sector operators and transaction advisers serving "
-            "privately held businesses with identifiable strategic buyers."
-        ),
+        "title": "The Commission Closer",
+        "subtitle": "Vet the seat, close at 30-40% or better, and lock the fee in writing",
+        "audience": "Remote high-ticket closers, setters, and jet or yacht brokers who live on commission",
         "research_basis": (
-            "15 U.S.C. 78o(b)(13) provides a conditional federal registration "
-            "exemption for qualifying M&A brokers, not a universal permission "
-            "to arrange securities transactions. Scope each engagement against "
-            "eligible-company requirements, buyer control and active management, "
-            "prohibited activities, disqualifications, and applicable state rules. "
-            "The exemption does not remove securities antifraud duties. Exclusive "
-            "mandates should define commission triggers, excluded buyers, tail "
-            "periods, disclosure responsibilities, and settlement instructions."
+            "Hudson Cosper's 10% closer, 5% setter, and 15% self-set split. Scale "
+            "Like ZK's weekly funnel from about 170 visitors to one buyer. The "
+            "Ultimate Jet Guide rule that no specs go out before a signed pay "
+            "agreement."
         ),
         "sources": [
-            "https://www.law.cornell.edu/uscode/text/15/78o",
-            "https://www.ecfr.gov/current/title-17/section-240.10b-5",
+            "https://www.youtube.com/watch?v=4HgyBCSnkLE&t=445s",
+            "https://www.youtube.com/watch?v=uBQvqV_-nz0&t=69s",
+            "https://www.youtube.com/watch?v=1ILeO7AapJM&t=344s",
         ],
-        "validation_status": (
-            "Source-informed editorial positioning; not market-tested."
-        ),
+        "validation_status": "Grounded strictly in Vol. 011 YouTube practitioner transcripts.",
     },
     {
-        "title": "The Verified Equipment Transaction Desk",
-        "subtitle": (
-            "Match specialist machinery buyers with documented sellers, "
-            "resolve liens, and close asset-only transactions through escrow."
-        ),
-        "audience": (
-            "Industrial equipment specialists with inspection expertise, "
-            "repeat buyer relationships, and access to independent settlement providers."
-        ),
+        "title": "The Main Street-to-M&A Intermediary",
+        "subtitle": "Fee ladders, exemption maps, and valuations built on cash flow",
+        "audience": "Business brokers and M&A advisors moving between Main Street and lower-middle-market deals",
         "research_basis": (
-            "UCC 9-315 explains when a security interest continues after an "
-            "asset disposition; UCC 9-513 addresses termination statements. "
-            "The operating edge is a verified equipment schedule, inspection "
-            "record, seller authority, lien search, and secured-party release "
-            "package. Apply the governing state's enacted UCC provisions and "
-            "any asset-specific title or dealer rules. A sale invoice alone "
-            "does not establish that secured interests have been discharged."
+            "The roughly 20% nationwide broker success rate. The double Lehman "
+            "10/8/6/4/2 ladder. IBBA's tally of 24 states with M&A broker relief. "
+            "Shep Campbell's 2-3.5x SDE working range."
         ),
         "sources": [
-            "https://www.law.cornell.edu/ucc/9/9-315",
-            "https://www.law.cornell.edu/ucc/9/9-513",
+            "https://www.youtube.com/watch?v=LRGkOAsiUdQ&t=246s",
+            "https://www.youtube.com/watch?v=bjJIoxsFNY8&t=93s",
+            "https://www.youtube.com/watch?v=7mV4t9a4PvE&t=433s",
+            "https://www.youtube.com/watch?v=ggUaT-lHV0A&t=253s",
         ],
-        "validation_status": (
-            "Source-informed editorial positioning; not market-tested."
-        ),
+        "validation_status": "Grounded strictly in Vol. 011 YouTube practitioner transcripts.",
     },
     {
-        "title": "The Licensed Business-Opportunity Specialist",
-        "subtitle": (
-            "Operate a narrow California business-sale desk with documented "
-            "agency authority, verified buyer capacity, and independent escrow."
-        ),
-        "audience": (
-            "California real estate brokers and properly supervised teams "
-            "specializing in business opportunities within a defined industry."
-        ),
+        "title": "The Luxury and Specialist Asset Broker",
+        "subtitle": "Yacht splits, genuine NCNDAs, and benchmark-first specialist deals",
+        "audience": "Yacht, aircraft, commodity, and infrastructure intermediaries working relationship-driven deals",
         "research_basis": (
-            "California Business and Professions Code sections 10130 and "
-            "10131 establish licensing requirements and include specified "
-            "business-opportunity brokerage activities. Section 10145 addresses "
-            "handling money belonging to others. These provisions support a "
-            "license-led operating model; they do not establish buyer demand "
-            "or clear a securities transaction under federal or state law. "
-            "Classify the actual transaction before accepting the mandate."
+            "The 10% / 5% / 2.5% tiered yacht schedule and 60/40 co-broker split. "
+            "Cangem Global's finding that ICC 769E is the only genuine ICC NCNDA. "
+            "Tower Genius's 16-18x annual rent buyout benchmark."
         ),
         "sources": [
-            (
-                "https://leginfo.legislature.ca.gov/faces/"
-                "codes_displaySection.xhtml?lawCode=BPC&sectionNum=10130."
-            ),
-            (
-                "https://leginfo.legislature.ca.gov/faces/"
-                "codes_displaySection.xhtml?lawCode=BPC&sectionNum=10131."
-            ),
-            (
-                "https://leginfo.legislature.ca.gov/faces/"
-                "codes_displaySection.xhtml?lawCode=BPC&sectionNum=10145."
-            ),
+            "https://www.youtube.com/watch?v=FpmvbD9-7yc&t=318s",
+            "https://www.youtube.com/watch?v=_Shd1I2mefI&t=384s",
+            "https://www.youtube.com/watch?v=HldBP9R47Bg&t=256s",
+            "https://www.youtube.com/watch?v=V2LGinURueI&t=63s",
         ],
-        "validation_status": (
-            "Source-informed editorial positioning; not market-tested."
-        ),
+        "validation_status": "Grounded strictly in Vol. 011 YouTube practitioner transcripts.",
     },
 ]
-
-
-def build_volume_011_diagrams_data() -> list[dict]:
-    specs = [
-        (
-            "diag-01-exclusive-mandate-to-settlement",
-            "process_flow",
-            "Earn the Commission Through Five Controlled Handoffs",
-            "Exclusive authority, verified counterparties, and documented settlement.",
-            1,
-            "operating_framework",
-            (
-                "Applies to specialist asset and private-company transactions "
-                "after jurisdiction and license review. Annual revenue means "
-                "retained transaction commissions, never underlying asset value, "
-                "buyer deposits, or escrow principal. First-deal timing is "
-                "3–12 months; the workflow is not a one-month closing forecast."
-            ),
-            (
-                "Each handoff requires a named owner and a complete evidence "
-                "packet. Automation moves records and reminders; accountable "
-                "people verify authority, representations, and closing conditions."
-            ),
-            [
-                (
-                    "Classify and mandate",
-                    "Execute scoped exclusive authority before marketing the asset.",
-                    1.0,
-                    (
-                        "The principal confirms transaction form, operating "
-                        "jurisdictions, license requirements, seller authority, "
-                        "commission basis, exclusivity, excluded buyers, and "
-                        "tail provisions. Reject unsupported ownership claims "
-                        "before signing an engagement."
-                    ),
-                ),
-                (
-                    "Build the evidence room",
-                    "Reconcile seller claims against indexed supporting records.",
-                    2.0,
-                    (
-                        "The document contractor assembles ownership records, "
-                        "operating statements, material contracts, asset lists, "
-                        "and lien information in SharePoint. Restrict access "
-                        "by role and record every material correction."
-                    ),
-                ),
-                (
-                    "Match and qualify",
-                    "Introduce authorized buyers with verified capacity and fit.",
-                    3.0,
-                    (
-                        "Use HubSpot sector tags and Airtable buyer criteria "
-                        "to shortlist counterparties. Confirm decision authority, "
-                        "funding evidence, acquisition criteria, and confidentiality "
-                        "terms before releasing sensitive seller materials."
-                    ),
-                ),
-                (
-                    "Negotiate and diligence",
-                    "Track signed terms, exceptions, and unresolved closing conditions.",
-                    4.0,
-                    (
-                        "The principal leads commercial negotiations while "
-                        "independent counsel handles transaction documents. Track "
-                        "LOI terms, diligence exceptions, lender dependencies, "
-                        "secured-party releases, and deadlines in a milestone register."
-                    ),
-                ),
-                (
-                    "Settle and reconcile",
-                    "Release the earned commission through documented settlement instructions.",
-                    5.0,
-                    (
-                        "An independent escrow provider handles transaction "
-                        "funds. Verify changed payment instructions through a "
-                        "known telephone contact, reconcile the closing statement, "
-                        "and record only the operator's retained commission."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-02-annual-mandate-conversion-funnel",
-            "funnel",
-            "Ten Closings From One Tracked Annual Cohort",
-            "A mature pipeline illustration supporting $550,000 in retained commissions.",
-            6,
-            "illustrative_model",
-            (
-                "The five stages are nested counts from the same 200-owner "
-                "cohort, observed across its complete sales cycle. They are "
-                "planning assumptions, not measured conversion benchmarks. "
-                "Ten completed transactions at $55,000 retained commission "
-                "each produce the canonical $550,000 Base-Case annual revenue. "
-                "A steady-state annual pipeline can contain overlapping cohorts."
-            ),
-            (
-                "Stage conversions are 50%, 40%, 50%, and 50%; overall "
-                "owner-to-close conversion is 5%. Deduplicate seller mandates "
-                "rather than counting multiple buyer conversations as separate deals."
-            ),
-            [
-                (
-                    "Relevant owner accounts",
-                    "200 screened owners with a documented transaction thesis.",
-                    200.0,
-                    (
-                        "Research owners inside one specialist sector and "
-                        "record a plausible sale trigger, asset profile, "
-                        "decision-maker, and permitted contact channel. Purchased "
-                        "contact volume alone does not qualify an account."
-                    ),
-                ),
-                (
-                    "Qualified seller discussions",
-                    "100 owners confirm authority, motivation, timing, and fit.",
-                    100.0,
-                    (
-                        "Fifty percent of the screened cohort completes a "
-                        "substantive discussion. Capture valuation expectations, "
-                        "records availability, ownership structure, and willingness "
-                        "to disclose defects before offering representation."
-                    ),
-                ),
-                (
-                    "Executed exclusive mandates",
-                    "40 sellers execute scoped mandates with workable fee terms.",
-                    40.0,
-                    (
-                        "Forty percent of qualified discussions becomes an "
-                        "exclusive engagement. Record fee triggers, buyer exclusions, "
-                        "conflicts, termination rights, and tail dates; an unsigned "
-                        "proposal remains outside the mandate count."
-                    ),
-                ),
-                (
-                    "Signed transaction LOIs",
-                    "20 mandated sellers reach documented preliminary transaction terms.",
-                    20.0,
-                    (
-                        "Half the executed mandates reaches a signed LOI "
-                        "with a qualified buyer. Count each seller mandate "
-                        "once, even if a replacement buyer later signs another "
-                        "LOI after the first transaction fails."
-                    ),
-                ),
-                (
-                    "Completed commission events",
-                    "10 closings earn $55,000 each in retained commissions.",
-                    10.0,
-                    (
-                        "Half the LOI-stage mandates closes. An illustrative "
-                        "$1,100,000 asset price at a 5% retained commission "
-                        "produces $55,000; the resulting $11,000,000 aggregate "
-                        "asset value is excluded from operator revenue."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-03-base-case-commission-waterfall",
-            "waterfall",
-            "$550,000 Revenue to $206,250 Owner Net",
-            "Four expense deductions reconcile exactly to the 37.5% Base-Case margin.",
-            3,
-            "illustrative_model",
-            (
-                "USD annually. Opening revenue and closing profit are absolute "
-                "total bars; the four intervening bars are signed deductions. "
-                "The expense allocation is editorial, while scenario totals "
-                "are canonical. Conservative: $100,000 revenue, 25% margin, "
-                "$25,000 owner net, 1 FT + 3 C. Base: $550,000 revenue, "
-                "37.5% margin, $206,250 owner net, 1 FT + 3 C. Scaled: "
-                "$1,000,000 revenue, 50% margin, $500,000 owner net, 2 FT + 4 C."
-            ),
-            (
-                "$550,000 - $150,000 - $108,000 - $60,000 - $25,750 "
-                "= $206,250. Total expenses are $343,750, or 62.5% of "
-                "retained commissions. Owner net is modeled before personal "
-                "income taxes; owner draws are not a second expense."
-            ),
-            [
-                (
-                    "Retained commission revenue",
-                    "$550,000 earned from ten completed commission events.",
-                    550000.0,
-                    (
-                        "Opening total equals ten closings multiplied by "
-                        "$55,000 retained commission. Outside-broker shares "
-                        "are excluded before this revenue basis is measured; "
-                        "escrow principal and asset purchase prices never enter it."
-                    ),
-                ),
-                (
-                    "Deal-specific delivery costs",
-                    "Deduct $150,000 for externally purchased transaction support.",
-                    -150000.0,
-                    (
-                        "Budget $15,000 per closing-equivalent for specialist "
-                        "inspection, transaction support, travel, and diligence. "
-                        "The annual allocation includes work on failed deals. "
-                        "Vendors are purchased services, not additional pod seats."
-                    ),
-                ),
-                (
-                    "Three contractor seats",
-                    "Deduct $108,000 across three defined contractor scopes.",
-                    -108000.0,
-                    (
-                        "Allocate $36,000 annually to each core contractor "
-                        "scope: research, documents, and transaction coordination. "
-                        "These are budgeted service scopes rather than three "
-                        "full-time employee salaries; classification follows actual work arrangements."
-                    ),
-                ),
-                (
-                    "Core operating overhead",
-                    "Deduct $60,000 for systems, prospecting, and administration.",
-                    -60000.0,
-                    (
-                        "Allocate $5,000 monthly to CRM, secure document "
-                        "storage, sector data, prospecting, bookkeeping, and "
-                        "administration. Combined with $9,000 monthly contractor "
-                        "spend, recurring modeled overhead is $14,000 monthly."
-                    ),
-                ),
-                (
-                    "Insurance and dispute expense",
-                    "Deduct $25,750 for coverage and modeled dispute costs.",
-                    -25750.0,
-                    (
-                        "Include transaction-services coverage, deductibles, and "
-                        "dispute-resolution costs as annual modeled expenses. "
-                        "This line is not an escrow balance or a cash "
-                        "reserve transfer. Avoid duplicating deal-specific delivery costs."
-                    ),
-                ),
-                (
-                    "Annual owner net profit",
-                    "$206,250 remains after all four modeled expense categories.",
-                    206250.0,
-                    (
-                        "Closing total equals $550,000 multiplied by 37.5%. "
-                        "The full-time principal receives the residual owner "
-                        "economics; no separate principal salary is deducted "
-                        "in this illustrative owner-operated expense bridge."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-04-specialist-retained-fee-yields",
-            "horizontal_bars",
-            "Compare Retained Fees, Not Asset Prices",
-            "Five independent commission illustrations per $1,000,000 of closed asset value.",
-            2,
-            "illustrative_model",
-            (
-                "Numeric bars show retained commission dollars on a common "
-                "$1,000,000 underlying transaction denominator. Rates are "
-                "negotiated planning assumptions, not published market averages "
-                "or promised yields. Bars are alternatives, not components "
-                "of the Base-Case revenue model. All examples assume no "
-                "outside-broker share and no separately modeled settlement charge."
-            ),
-            (
-                "Choose a niche using accessible mandates, required licenses, "
-                "diligence workload, and closing probability. A higher fee rate "
-                "can still produce weaker annual economics if transactions stall."
-            ),
-            [
-                (
-                    "Operating-business asset sale",
-                    "$50,000 retained at an illustrative five-percent fee.",
-                    50000.0,
-                    (
-                        "A negotiated 5% commission on a $1,000,000 asset "
-                        "sale yields $50,000. Validate business-opportunity "
-                        "licensing where applicable; use independent escrow "
-                        "and resolve purchase-price allocation before settlement."
-                    ),
-                ),
-                (
-                    "Private-company control sale",
-                    "$30,000 retained at an illustrative three-percent fee.",
-                    30000.0,
-                    (
-                        "A negotiated 3% commission on a $1,000,000 control "
-                        "transaction yields $30,000. Document securities "
-                        "registration or exemption analysis, buyer control, "
-                        "active management, and settlement without broker custody."
-                    ),
-                ),
-                (
-                    "Industrial real property",
-                    "$25,000 retained at an illustrative two-and-a-half-percent fee.",
-                    25000.0,
-                    (
-                        "A negotiated 2.5% commission on a $1,000,000 property "
-                        "sale yields $25,000. Perform brokerage through the "
-                        "required licensed structure and route proceeds through "
-                        "the designated title or escrow closing provider."
-                    ),
-                ),
-                (
-                    "Specialist production equipment",
-                    "$20,000 retained at an illustrative two-percent fee.",
-                    20000.0,
-                    (
-                        "A negotiated 2% commission on a $1,000,000 equipment "
-                        "package yields $20,000. Match serial numbers to "
-                        "inspection reports, search applicable lien records, "
-                        "and obtain secured-party releases tied to settlement."
-                    ),
-                ),
-                (
-                    "Commercial aircraft asset",
-                    "$15,000 retained at an illustrative one-and-a-half-percent fee.",
-                    15000.0,
-                    (
-                        "A negotiated 1.5% commission on a $1,000,000 aircraft "
-                        "sale yields $15,000. Use aviation-specific title and "
-                        "escrow expertise, verify recorded interests and "
-                        "maintenance records, and resolve applicable registration requirements."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-05-statutory-and-settlement-decision-tree",
-            "decision_tree",
-            "Four Checks Before a Mandate Becomes Executable",
-            "Each unresolved branch returns the transaction for correction or rejection.",
-            5,
-            "operating_framework",
-            (
-                "Stage numbers identify sequential decision nodes, not risk "
-                "scores. At each node, a documented pass advances to the "
-                "next check; an unresolved result stops the affected activity. "
-                "Apply current law to the transaction's actual jurisdictions "
-                "and structure. An NCNDA cannot substitute for a required license."
-            ),
-            (
-                "Record the evidence, reviewer, date, and resulting action "
-                "for every node. Recheck after a switch from an asset sale "
-                "to an equity sale, a new buyer, or changed payment instructions."
-            ),
-            [
-                (
-                    "Asset and license classification",
-                    "Proceed only after identifying the asset and required authority.",
-                    1.0,
-                    (
-                        "Identify asset versus securities transfers and every "
-                        "relevant jurisdiction. California BPC 10130 and 10131 "
-                        "cover specified real-property and business-opportunity "
-                        "brokerage activities. If required authority is absent, "
-                        "stop brokerage activity until an appropriate structure exists."
-                    ),
-                ),
-                (
-                    "Securities route and exclusions",
-                    "Proceed only with a documented registration or exemption route.",
-                    2.0,
-                    (
-                        "For securities transactions, test 15 U.S.C. "
-                        "78o(b)(13), including current eligible-company limits, "
-                        "buyer control, active management, prohibited activities, "
-                        "and disqualifications. Required dual-representation "
-                        "disclosure and written consent must be documented. "
-                        "An asset-only conclusion requires its own recorded basis."
-                    ),
-                ),
-                (
-                    "Authority, claims, and title",
-                    "Proceed only with supported representations and releasable interests.",
-                    3.0,
-                    (
-                        "Verify signatory authority, agency disclosures, conflicts, "
-                        "and evidence behind material claims. For securities, "
-                        "17 CFR 240.10b-5 addresses deceptive statements and "
-                        "omissions. For secured assets, apply enacted UCC "
-                        "9-315 and 9-513. Scope NCNDA introductions, exclusions, "
-                        "duration, and remedies without treating the document as automatic protection."
-                    ),
-                ),
-                (
-                    "Funds and release instructions",
-                    "Proceed only through verified settlement and permitted funds handling.",
-                    4.0,
-                    (
-                        "Use independent escrow and known-contact callbacks "
-                        "for payment changes. The M&A exemption under "
-                        "15 U.S.C. 78o(b)(13) excludes specified custody "
-                        "activities. California BPC 10145 governs covered "
-                        "broker trust-money handling. If release instructions "
-                        "conflict, freeze disbursement and obtain corrected instructions."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-06-four-person-core-pod",
-            "org_architecture",
-            "One Principal, Three Bounded Contractor Scopes",
-            "The Base pod has four people; the Scaled pod expands to six.",
-            11,
-            "operating_framework",
-            (
-                "Each stage represents one core person: 1 FT + 3 C. "
-                "Conservative and Base retain this four-person structure; "
-                "Scaled uses 2 FT + 4 C by adding one full-time execution "
-                "lead and one contractor for buyer research. Contractor "
-                "status depends on actual working conditions and applicable law."
-            ),
-            (
-                "The principal owns mandates, negotiations, and commercial "
-                "decisions. Automation handles matching suggestions, milestone "
-                "alerts, and document completeness checks, never substantive "
-                "verification or unattended movement of client funds."
-            ),
-            [
-                (
-                    "Principal and mandate owner",
-                    "One full-time operator owns representation and commercial decisions.",
-                    1.0,
-                    (
-                        "Qualify sellers, confirm the permitted brokerage "
-                        "scope, sign engagements, negotiate commercial terms, "
-                        "and resolve conflicts. Maintain the cash forecast "
-                        "and capacity plan. Scaled adds a full-time execution "
-                        "lead rather than silently overloading this seat."
-                    ),
-                ),
-                (
-                    "Buyer and seller researcher",
-                    "One contractor maintains evidence-backed prospect and buyer records.",
-                    1.0,
-                    (
-                        "Maintain HubSpot records, Airtable matching criteria, "
-                        "ownership research, buyer capacity evidence, and "
-                        "suppression lists. The Base allocation is $36,000 "
-                        "annually for the defined scope. Scaled adds another "
-                        "research contractor to increase qualified coverage."
-                    ),
-                ),
-                (
-                    "Document and diligence coordinator",
-                    "One contractor keeps the evidence room complete and controlled.",
-                    1.0,
-                    (
-                        "Maintain SharePoint permissions, document indexes, "
-                        "version history, request lists, and discrepancy logs. "
-                        "Escalate contradictory seller statements rather than "
-                        "editing them into consistency. The Base allocation "
-                        "is $36,000 annually for this service scope."
-                    ),
-                ),
-                (
-                    "Transaction milestone coordinator",
-                    "One contractor tracks dependencies through independent escrow settlement.",
-                    1.0,
-                    (
-                        "Maintain deadlines, counsel requests, inspection "
-                        "dependencies, secured-party releases, and closing "
-                        "checklists. Prepare reconciliations without controlling "
-                        "client funds. The Base allocation is $36,000 annually; "
-                        "counsel and escrow providers remain external vendors."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-07-startup-capital-allocation",
-            "stacked_comparison",
-            "A $60,000 Launch Budget Inside the Canonical Range",
-            "Four distinct buckets within the $15,000–$100,000 USD startup envelope.",
-            4,
-            "illustrative_model",
-            (
-                "Numeric values are USD capital allocations totaling $60,000; "
-                "they are not four expense deductions from the annual scorecard. "
-                "The startup range is $15,000–$100,000, monthly operating "
-                "expense range is $3,000–$18,000, and first-deal timing is "
-                "3–12 months. Cash reserved for runway is not itself an expense."
-            ),
-            (
-                "$12,000 + $8,000 + $15,000 + $25,000 = $60,000. "
-                "The $25,000 runway bucket covers about 8.3 months at "
-                "$3,000 monthly, but only 1.8 months at the modeled "
-                "$14,000 Base recurring burn. Do not deploy Base spending "
-                "before the cash plan can support delayed closings."
-            ),
-            [
-                (
-                    "Authority and engagement setup",
-                    "$12,000 establishes the scoped operating and contracting structure.",
-                    12000.0,
-                    (
-                        "Fund jurisdiction-specific license analysis, required "
-                        "applications, engagement drafting, agency disclosures, "
-                        "insurance setup, and escrow-provider onboarding. Confirm "
-                        "actual requirements before allocating money to promotion "
-                        "for a service the operator cannot yet perform."
-                    ),
-                ),
-                (
-                    "Data room and operating systems",
-                    "$8,000 establishes secure records and repeatable transaction workflows.",
-                    8000.0,
-                    (
-                        "Configure HubSpot, Airtable, SharePoint, access controls, "
-                        "backup procedures, templates, and electronic signatures. "
-                        "Separate initial setup from recurring subscriptions; "
-                        "each paid invoice belongs once in the cash ledger "
-                        "and receives appropriate accounting treatment."
-                    ),
-                ),
-                (
-                    "Sector research and mandate acquisition",
-                    "$15,000 funds a bounded specialist-market acquisition program.",
-                    15000.0,
-                    (
-                        "Purchase targeted sector data, conduct owner "
-                        "research, prepare evidence-led outreach, and attend "
-                        "selected industry meetings. Release spend in measured "
-                        "batches based on qualified discussions and signed "
-                        "mandates rather than raw contact counts."
-                    ),
-                ),
-                (
-                    "Uncommitted operating runway",
-                    "$25,000 remains available for lean operations and closing delays.",
-                    25000.0,
-                    (
-                        "Keep this bucket liquid and separate from client "
-                        "funds. Twelve months at the $3,000 monthly floor "
-                        "requires $36,000 before additional deal costs; this "
-                        "allocation therefore requires lower deployment, added "
-                        "capital, or an explicit pause plan for a prolonged delay."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-08-first-thirty-days-roadmap",
-            "timeline_roadmap",
-            "Thirty Days to a Documented Brokerage Operating System",
-            "Build executable mandates and pipeline evidence, not an invented first-month close.",
-            12,
-            "operating_framework",
-            (
-                "Numeric values are cumulative milestone days: 7, 14, 21, "
-                "and 30. Work begins only within an authorized service "
-                "scope. Licensing, seller readiness, and diligence can extend "
-                "the schedule. The canonical first-deal window remains "
-                "3–12 months; these milestones do not forecast commission receipts."
-            ),
-            (
-                "End the sprint with an auditable mandate process, qualified "
-                "counterparty records, a tested document workflow, and a "
-                "cash plan that survives missed closing dates."
-            ),
-            [
-                (
-                    "Days 1-7",
-                    "Define the niche, permitted activities, and cash constraints.",
-                    7.0,
-                    (
-                        "Select one asset category and operating jurisdiction; "
-                        "document license and securities analysis, excluded "
-                        "activities, escrow arrangements, and a 13-week cash "
-                        "forecast. Complete the four statutory and risk checks "
-                        "before launching brokerage outreach."
-                    ),
-                ),
-                (
-                    "Days 8-14",
-                    "Install the mandate packet and controlled evidence workflow.",
-                    14.0,
-                    (
-                        "Prepare the exclusive engagement, scoped NCNDA, "
-                        "agency disclosures, seller questionnaire, buyer "
-                        "qualification checklist, and document index. Configure "
-                        "HubSpot stages and SharePoint access, then test "
-                        "a sample record without real client funds."
-                    ),
-                ),
-                (
-                    "Days 15-21",
-                    "Run a bounded owner-research and buyer-matching pilot.",
-                    21.0,
-                    (
-                        "Research 25 relevant owners and 15 plausible "
-                        "buyers as activity targets, not conversion promises. "
-                        "Log authority, sector fit, acquisition criteria, "
-                        "contact permissions, and evidence gaps. Review "
-                        "qualified conversations before expanding outreach spend."
-                    ),
-                ),
-                (
-                    "Days 22-30",
-                    "Audit the pilot and rehearse a failed-closing response.",
-                    30.0,
-                    (
-                        "Review actual mandate progress, reconcile the cash "
-                        "ledger, and test document retrieval, milestone alerts, "
-                        "payment-change callbacks, and a canceled transaction. "
-                        "Assign remediation owners and revise the next "
-                        "30-day work plan using observed conversion evidence."
-                    ),
-                ),
-            ],
-        ),
-    ]
-    return [
-        dict(
-            diagram_id=identifier,
-            chart_type=kind,
-            title=title,
-            subtitle=subtitle,
-            chapter_number=chapter,
-            epistemic_tag=tag,
-            assumptions_note=note,
-            caption=caption,
-            stages=[
-                dict(
-                    label=label,
-                    value=value,
-                    numeric_value=float(number),
-                    detail=detail,
-                )
-                for label, value, number, detail in stages
-            ],
-        )
-        for identifier, kind, title, subtitle, chapter, tag, note, caption, stages
-        in specs
-    ]

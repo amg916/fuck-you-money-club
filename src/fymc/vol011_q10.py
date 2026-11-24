@@ -1,630 +1,823 @@
 from __future__ import annotations
 
-CHAPTER_10 = {
-    "id": "Q10",
-    "chapter_id": "Q10",
-    "chapter_number": 10,
-    "question_number": 10,
-    "slug": "automation-ai-leverage-scalable-distribution-flywheels",
-    "question_prompt": "How does a 1 FT + 3 C (4 people) high-ticket brokerage team automate 70%+ of repetitive research, qualification, fulfillment, and traffic/deal acquisition while keeping human-in-the-loop QA?",
-    "kicker": "Q10 / THE BIG MONEY PLAYBOOKS",
-    "title": "Automation, AI Leverage & Scalable Distribution Flywheels",
-    "subtitle": "Python Event Workers, Evidence-Linked Buyer Matching, IRC Section 6418 Transfers, State Credit Placement, and Escrow-Controlled Distribution",
-    "layout_template": "case_study_walkthrough",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #26, High-Ticket Brokerage, ranks #10 with an 88/100 Money-to-Manpower "
-        "Score across 21 mapped plays. Its automation advantage is disciplined coordination, "
-        "not autonomous negotiation: Python workers collect evidence, rank buyer fit, maintain "
-        "document checklists, and surface stalled milestones while people control representations "
-        "and settlement. This chapter develops two tax-credit placement plays without treating "
-        "credit face value, buyer wires, or asset consideration as brokerage revenue. Canonical "
-        "annual owner profits are $25,000 Conservative, $206,250 Base, and $500,000 Scaled. "
-        "A measured workload model targets 74% net repetitive-work reduction after review. "
-        "Evidence-linked outreach and partner referrals compound distribution, while direct "
-        "transfer rules, state eligibility checks, escrow instructions, and recoverable event "
-        "processing prevent faster software from multiplying expensive closing errors."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$100,000",
-            "context": "Annual retained transaction commissions; underlying asset values excluded",
-            "note": "25% net margin; $25,000 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Base",
-            "value": "$550,000",
-            "context": "Annual retained transaction commissions; underlying asset values excluded",
-            "note": "37.5% net margin; $206,250 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$1,000,000",
-            "context": "Annual retained transaction commissions; underlying asset values excluded",
-            "note": "50% net margin; $500,000 annual owner net profit; 2 FT + 4 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Build an evidence ledger before automating buyer introductions",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Start with one exclusive mandate, one asset category, and a written commission "
-                    "schedule. Candidate #26 covers 21 mapped plays, but a four-person team should "
-                    "not launch 21 intake systems simultaneously. The full-time principal owns "
-                    "mandates, consequential representations, negotiations, and release decisions; "
-                    "three contractors cover research, document operations, and buyer development. "
-                    "Contractors are fractional capacity, not three additional full-time salaries. "
-                    "Use HubSpot or Pipedrive for relationship state and a separate evidence ledger "
-                    "for source documents, permissions, provenance, and review decisions. Give every "
-                    "mandate, legal entity, asset, document version, and introduction an immutable "
-                    "identifier. A signed NCNDA can support confidentiality and anti-circumvention "
-                    "obligations, but it cannot establish a brokerage license, repair defective "
-                    "agency disclosure, or replace an enforceable fee agreement. Before ingestion, "
-                    "the principal records the asset-specific licensing analysis and permitted "
-                    "activities. Securities-related M&A requires attention to Exchange Act Section "
-                    "15(a), any applicable Section 15(b)(13) exemption conditions, and state rules. "
-                    "Real estate and other regulated assets need separate treatment. Automate "
-                    "routing only after these classifications exist, because the same introductory "
-                    "email can represent a different regulated activity when the underlying asset "
-                    "changes. Reject incomplete mandate records rather than letting the model "
-                    "invent missing authority."
-                ),
-                (
-                    "Implement the intake path as signed webhook, durable event record, Python "
-                    "worker, validation result, review task, and CRM update. Python's hmac and "
-                    "hashlib can verify a provider's documented signature scheme; time validates "
-                    "timestamp tolerance, while json parses an explicitly limited request body. "
-                    "Persist a unique provider event identifier before acknowledging receipt. A "
-                    "small single-worker installation can use sqlite3 transactions and a unique "
-                    "constraint for deduplication; distributed workers need a datastore supporting "
-                    "their concurrency requirements. Do not claim exactly-once delivery: instead, "
-                    "make state transitions idempotent and reconcile uncertain external writes. "
-                    "urllib.request can call public APIs with timeouts, and decimal.Decimal should "
-                    "handle commission arithmetic. Save source URLs, retrieval timestamps, content "
-                    "hashes, and access permissions alongside extracted facts. An LLM receives "
-                    "redacted documents as evidence, never instructions from embedded text. Its "
-                    "structured response contains extracted fields, supporting page references, "
-                    "and explicit missing-field flags. Ordinary Python validators enforce types, "
-                    "allowed statuses, date order, and amount bounds before any CRM write. Missing "
-                    "evidence creates a review task rather than a fabricated answer. Keep secrets "
-                    "outside records and prompts, and scope each service account to the minimum "
-                    "objects its worker must touch."
-                ),
-                (
-                    "Buyer matching should begin with deterministic eligibility filters, followed "
-                    "by a transparent ranking model. Filter jurisdiction, asset type, check size, "
-                    "closing window, mandate restrictions, and verified acquisition authority before "
-                    "scoring strategic fit. An illustrative score assigns 35 points to documented "
-                    "investment criteria, 25 to available capital evidence, 20 to timing, and 20 "
-                    "to relevant execution history. These weights are operating assumptions, not "
-                    "predictions of closing probability. The LLM summarizes why a candidate fits "
-                    "and cites the buyer profile fields; it does not certify funds or infer tax "
-                    "capacity from wealth signals. Require a human to approve the first external "
-                    "introduction and every material change to deal claims. Preserve the approved "
-                    "teaser hash so later outreach cannot silently acquire stronger assertions. "
-                    "A referral loop starts only after a successful introduction or completed "
-                    "milestone, with permission to request another relevant buyer or seller. "
-                    "Measure qualified responses and completed diligence, not scraped addresses. "
-                    "Track rejected matches by reason and update filters weekly, keeping the "
-                    "original rejection evidence. If ranking quality deteriorates, disable the "
-                    "ranking layer and return to a saved, manually reviewed shortlist while "
-                    "retaining the same mandate and introduction records."
-                ),
-            ],
-            "table": {
-                "caption": "Evidence-first architecture for exclusive mandates and controlled introductions",
-                "headers": [
-                    "Operating component",
-                    "Concrete implementation",
-                    "Human decision boundary",
-                    "Recovery and audit evidence",
-                ],
-                "rows": [
-                    [
-                        "Mandate intake establishes authority before any external representation",
-                        "HubSpot stores signed scope and immutable mandate identifiers",
-                        "Principal verifies agency position and asset-specific license requirements",
-                        "Missing authority freezes introductions while retaining submitted evidence",
-                    ],
-                    [
-                        "Webhook receiver records authenticated events before downstream processing",
-                        "Python verifies signatures and persists unique provider identifiers",
-                        "Operator investigates repeated authentication failures before restoring traffic",
-                        "Duplicate deliveries return receipts without repeating business transitions",
-                    ],
-                    [
-                        "Evidence extraction preserves document provenance and permission boundaries",
-                        "Python hashes source files and stores page-linked extracted fields",
-                        "Reviewer resolves missing facts and conflicting seller statements",
-                        "Rejected extraction remains traceable to its original source",
-                    ],
-                    [
-                        "Buyer eligibility filters precede optional model-assisted match ranking",
-                        "Rules compare jurisdiction, check size, timing, and acquisition authority",
-                        "Principal approves introductions using verified buyer profile evidence",
-                        "Ranking failures revert to previously reviewed eligible shortlists",
-                    ],
-                    [
-                        "Teaser distribution uses versioned claims and restricted recipients",
-                        "CRM records approved document hashes against each introduction",
-                        "Reviewer authorizes material claim changes before external delivery",
-                        "Withdrawal notices identify affected recipients and superseded versions",
-                    ],
-                    [
-                        "Referral capture expands distribution without exposing confidential mandates",
-                        "Permissioned partner forms route introductions into existing evidence records",
-                        "Principal reviews referral compensation and applicable licensing restrictions",
-                        "Disputed introductions preserve timestamps, agreements, and correspondence history",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Protect the introduction trail before increasing volume",
-                "body": (
-                    "The durable asset is a verified relationship graph linked to mandates, "
-                    "permissions, and fee evidence, not a large contact export."
-                ),
-                "items": [
-                    "Log pre-existing buyer relationships before signing exclusivity, and resolve carve-outs in the fee agreement before introductions begin.",
-                    "Version every teaser and record exactly which recipient received each version; corrected claims need a recipient-level withdrawal trail.",
-                    "Use buyer rejection reasons to improve eligibility filters instead of asking the model to generate more persuasive unsupported claims.",
-                    "Keep counsel, escrow, and tax diligence channels attached to the mandate identifier so a contractor handoff does not erase closing context.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Automate credit origination without inventing transferability or inventory profits",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "For transferable_tax_credit_brokerage_syndication, assemble an origination watchlist "
-                    "from federal DOE and EPA project resources, actual ISO or utility "
-                    "interconnection queues, state film offices, and historic-preservation registries. "
-                    "DOE and EPA are discovery sources, not a universal interconnection queue or "
-                    "proof that a project generated transferable credits. Use published downloads "
-                    "and permitted APIs before scraping; cache responses, respect access terms, "
-                    "and stop collection when permission or source integrity is doubtful. Resolve "
-                    "project companies through documented ownership relationships rather than fuzzy "
-                    "names alone. A queue position, film announcement, or historic designation "
-                    "creates a lead, not a saleable credit. The worker should extract project "
-                    "status, location, owner, program, evidence date, and the next verification "
-                    "question. A researcher then confirms whether the relevant taxpayer generated "
-                    "an eligible credit, whether certification or registration is complete, and "
-                    "whether a buyer can use it. Federal Section 6418 and state transfer programs "
-                    "belong in separate rule sets. Record the governing tax year and program "
-                    "version because eligibility, caps, deadlines, and administrative practices "
-                    "change. Until these checks pass, the system labels the opportunity as "
-                    "origination research and suppresses executable buyer offers."
-                ),
-                (
-                    "The advertised sourcing band of $0.82 to $0.88 and placement band of $0.92 "
-                    "to $0.96 per credit dollar requires careful transaction design. On $1,000,000 "
-                    "face value, those bands imply $820,000 to $880,000 of seller-side pricing "
-                    "and $920,000 to $960,000 of buyer-side pricing, with a theoretical $40,000 "
-                    "to $140,000 gross difference before expenses. That difference is neither "
-                    "automatically earned nor automatically brokerage revenue. Under Section 6418, "
-                    "an eligible taxpayer transfers credits directly to an unrelated buyer for "
-                    "cash; a transferee cannot subsequently transfer the purchased credit. Therefore, "
-                    "do not implement a federal buy-and-resell chain. Structure a direct transfer "
-                    "with simultaneous escrow disbursements and an expressly disclosed commission "
-                    "that the parties accept. A $30,000 retained commission is $30,000 revenue, "
-                    "regardless of credit face value or wires passing through independent escrow. "
-                    "Require buyer funding before release and never warehouse unhedged credits "
-                    "on the operator's balance sheet. Where the mandate requires non-cancelable "
-                    "tax-credit insurance, inspect the bound policy, exclusions, limits, insured "
-                    "parties, and cancellation provisions before scheduling settlement. If suitable "
-                    "coverage or direct-transfer mechanics are unavailable, suspend the transaction; "
-                    "insurance does not itself validate eligibility."
-                ),
-                (
-                    "For state_film_historic_brownfield_tax_credit_brokerage, build a jurisdiction-specific "
-                    "placement checklist instead of copying the federal workflow. Georgia film "
-                    "credits, Louisiana motion-picture credits, state historic rehabilitation "
-                    "credits, and brownfield incentives can have different certification, assignment, "
-                    "taxpayer, carryforward, notification, and transfer-frequency requirements. Federal "
-                    "historic rehabilitation credits do not become outright transferable merely "
-                    "because a state program permits assignments. The matching worker asks for "
-                    "the certified amount, credit year, usable tax type, permitted transferee, "
-                    "remaining life, prior assignments, and required agency acknowledgments. "
-                    "A designated tax specialist verifies those answers against current primary "
-                    "authority and the actual certificate before the principal authorizes a "
-                    "term sheet. Illustratively, placing $500,000 face value at $0.90 produces "
-                    "$450,000 of buyer consideration; a separately contracted 3% fee on face "
-                    "value yields $15,000 operator revenue, not $450,000. Escrow instructions "
-                    "must identify who pays that fee and avoid counting it twice. If certification, "
-                    "buyer usability, or assignment restrictions fail diligence, suspend settlement "
-                    "under the agreed contingencies and rematch only verified eligible credits. "
-                    "Do not guarantee tax savings. Keep this state placement funnel distinct "
-                    "from federal transfers so one successful closing cannot incorrectly train "
-                    "the matching rules for another jurisdiction."
-                ),
-            ],
-            "table": {
-                "caption": "Tax-credit origination, direct-transfer controls, and fee-only economics",
-                "headers": [
-                    "Workflow and evidence",
-                    "Illustrative unit economics",
-                    "Required verification",
-                    "Risk fallback",
-                ],
-                "rows": [
-                    [
-                        "Federal project discovery combines DOE resources with utility queues",
-                        "One million credit dollars remain prospective until generation verification",
-                        "Researcher confirms taxpayer ownership and eligible credit generation evidence",
-                        "Unverified project signals stay research leads without executable offers",
-                    ],
-                    [
-                        "Federal direct transfer replaces an impermissible intermediary resale chain",
-                        "Thirty thousand dollars retained commission becomes recognized operator revenue",
-                        "Specialist checks unrelated buyer status and transfer election requirements",
-                        "Conflicting transfer structure pauses settlement until documents are corrected",
-                    ],
-                    [
-                        "Quoted discount bands describe proposed pricing rather than earned commissions",
-                        "One million face implies forty to one hundred forty thousand difference",
-                        "Principal reconciles disclosed compensation against final signed settlement instructions",
-                        "Unagreed spread economics are excluded from revenue and forecasts",
-                    ],
-                    [
-                        "Buyer-funded escrow coordinates direct transfer and concurrent fee disbursement",
-                        "Buyer consideration never enters the brokerage commission revenue total",
-                        "Independent escrow confirms cleared funds and authenticated release instructions",
-                        "Missing funds or required insurance prevents any settlement release",
-                    ],
-                    [
-                        "State film credit placement uses certified jurisdiction-specific transfer evidence",
-                        "Five hundred thousand face at three percent earns fifteen thousand",
-                        "Tax specialist verifies buyer usability and required agency notifications",
-                        "Failed eligibility suspends settlement and permits only verified rematching",
-                    ],
-                    [
-                        "Historic and brownfield placements require separate state program rulebooks",
-                        "Quoted fee basis follows signed terms rather than assumed discounts",
-                        "Reviewer distinguishes state assignments from federal historic credit restrictions",
-                        "Unresolved transferability removes the credit from active buyer circulation",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four pre-flight checks before any credit closing",
-                "body": (
-                    "Automation may prepare the package, but the named reviewer must record "
-                    "evidence for each condition before the principal authorizes release."
-                ),
-                "items": [
-                    "Verify seller authority, applicable brokerage permissions, agency disclosures, executed mandate, and the exact commission payer and calculation basis.",
-                    "Verify the certified or supported credit amount, governing program, tax year, buyer eligibility, transfer restrictions, and required registration or agency records.",
-                    "Verify independent escrow instructions, buyer funding, direct-transfer structure where required, and out-of-band confirmation of every wiring change.",
-                    "Verify required bound insurance terms, unresolved diligence exceptions, final document versions, and a documented suspension path if any condition fails.",
-                ],
-            },
-        },
-        {
-            "heading": "3. Connect document checklists, closing milestones, and permissioned growth loops",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Build fulfillment around a finite-state machine rather than a collection of "
-                    "calendar reminders. Useful states include mandate signed, buyer screened, "
-                    "teaser approved, diligence opened, conditions outstanding, settlement ready, "
-                    "closed, and suspended. Each transition requires specified evidence, a responsible "
-                    "person, and a permitted actor. The document worker compares an asset-specific "
-                    "checklist with actual file versions, flags missing signatures and stale "
-                    "certificates, and drafts a precise deficiency request. It cannot decide "
-                    "that a missing condition is commercially immaterial. DocuSign completion "
-                    "events can populate signature evidence, but a completed envelope does not "
-                    "prove every closing condition has been satisfied. Track deadline origin, "
-                    "timezone, responsible counterparty, escalation date, and supporting clause. "
-                    "When a deadline changes, retain both versions and the authorizing communication. "
-                    "Escrow providers remain responsible for their contracted custody and release "
-                    "functions; the brokerage tracks status without treating a webhook as "
-                    "authority to move money. Verify changed bank instructions through an "
-                    "established contact using an independently sourced number. A suspicious "
-                    "change freezes settlement communications until resolved. During an outage, "
-                    "the operations contractor exports the last approved checklist and runs "
-                    "a manual exception log that is reconciled before automated transitions resume."
-                ),
-                (
-                    "Distribution should reuse verified knowledge without publishing confidential "
-                    "inventory. Build programmatic pages around specific acquisition criteria, "
-                    "jurisdictions, process timelines, and evidence requirements, with human-reviewed "
-                    "source links and an update date. Do not auto-publish seller identities, "
-                    "buyer tax positions, unsupported returns, or confidential transaction examples. "
-                    "A practical loop starts with a useful buyer checklist, captures permission "
-                    "for a narrowly defined update, asks for acquisition criteria, and returns "
-                    "a reviewed relevant opportunity. After a successful milestone, request "
-                    "a permissioned introduction to one comparable counterparty. This is a "
-                    "referral mechanism, not an assumption of viral growth. For outbound email, "
-                    "apply CAN-SPAM requirements including accurate headers, truthful subject "
-                    "lines, required sender information, and working opt-out processing. Maintain "
-                    "one suppression ledger across contractors and delivery vendors; honor "
-                    "opt-outs within the statutory deadline and preferably immediately. Automated "
-                    "calls and texts require their own channel-specific review rather than "
-                    "borrowing email rules. Illustratively, 200 eligible emails producing 20 "
-                    "replies, eight qualified conversations, and two diligence starts demonstrate "
-                    "routing yield, not two future closings. Inspect rejection reasons and "
-                    "complaints before increasing volume, and stop a sequence when a recipient's "
-                    "eligibility or permission changes."
-                ),
-                (
-                    "Treat every integration failure as a recoverable business event. Retry "
-                    "transient network errors with bounded exponential backoff and jitter, honor "
-                    "provider rate-limit instructions, and move persistent failures to an "
-                    "exception queue with an owner and deadline. Never retry wire instructions "
-                    "or client-facing messages blindly after a timeout: first determine whether "
-                    "the original action succeeded. Store the intended operation, external "
-                    "object identifier, request hash, attempt count, and reconciliation result. "
-                    "A malformed model response should trigger deterministic extraction or "
-                    "manual review, not an increasingly permissive prompt. Repeated model "
-                    "disagreement on credit amounts, parties, or restrictions disables that "
-                    "workflow until the underlying cause is understood. Keep a small evaluation "
-                    "set of previously reviewed documents, including amended certificates, "
-                    "duplicate projects, conflicting signatures, and adversarial embedded "
-                    "instructions. Re-run it before changing prompts, parsers, or model versions. "
-                    "Measure field accuracy separately from narrative fluency and sample "
-                    "low-confidence and high-value cases more heavily. Log who corrected each "
-                    "field and why. The principal receives a daily exception digest showing "
-                    "blocked closings, aged diligence, changed instructions, and overdue "
-                    "reviews, while contractors receive only the tasks and documents needed "
-                    "for their assigned responsibilities."
-                ),
-            ],
-            "table": {
-                "caption": "Milestone integrity, distribution loops, and exception recovery",
-                "headers": [
-                    "Automation event",
-                    "Permitted machine output",
-                    "Consequential human review",
-                    "Failure recovery procedure",
-                ],
-                "rows": [
-                    [
-                        "Executed mandate initiates the asset-specific diligence checklist workflow",
-                        "Worker creates required document tasks with named accountable owners",
-                        "Principal confirms scope and exceptions against the signed engagement",
-                        "Missing scope returns the matter to mandate clarification status",
-                    ],
-                    [
-                        "New certificate version changes recorded amount or expiration evidence",
-                        "Parser proposes field updates with source pages and differences",
-                        "Tax specialist verifies material changes before buyer documents update",
-                        "Conflicting versions suspend circulation until authoritative evidence is established",
-                    ],
-                    [
-                        "Escrow status message reports progress toward the scheduled closing",
-                        "Tracker records status without issuing payment or release instructions",
-                        "Principal confirms conditions with the appointed independent escrow contact",
-                        "Suspicious instruction changes trigger an immediate settlement communication freeze",
-                    ],
-                    [
-                        "Public educational page captures a permissioned buyer criteria submission",
-                        "CRM routes jurisdiction and check-size preferences into eligibility filters",
-                        "Reviewer checks published claims and excludes confidential mandate information",
-                        "Stale source material removes affected pages from active promotion",
-                    ],
-                    [
-                        "Outbound sequence receives an opt-out or eligibility change event",
-                        "Suppression ledger stops pending messages across every connected sender",
-                        "Operator investigates complaints and conflicting recipient permission records",
-                        "Vendor synchronization failure pauses sending until suppression reconciliation completes",
-                    ],
-                    [
-                        "External timeout leaves message delivery or object creation uncertain",
-                        "Worker records pending reconciliation rather than repeating consequential actions",
-                        "Operations contractor checks external receipts before authorizing another attempt",
-                        "Unresolved delivery state enters an owned manual exception queue",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Register and authenticate the event",
-                    "action": "Verify the provider signature and persist the unique event identifier.",
-                    "detail": "Reject invalid requests, enforce payload limits, and acknowledge only after durable intake recording.",
-                },
-                {
-                    "step": 2,
-                    "title": "Extract and validate the proposed change",
-                    "action": "Run deterministic checks around evidence-linked model extraction.",
-                    "detail": "Compare source versions, required fields, amount bounds, and permitted state transitions before preparing an update.",
-                },
-                {
-                    "step": 3,
-                    "title": "Route consequential decisions to the named reviewer",
-                    "action": "Present proposed claims, introductions, or closing changes with supporting evidence.",
-                    "detail": "Record reviewer identity, decision, document hashes, and exceptions; never let embedded document instructions change workflow authority.",
-                },
-                {
-                    "step": 4,
-                    "title": "Execute once logically and reconcile outcomes",
-                    "action": "Apply the approved update with an idempotency record and inspect external receipts.",
-                    "detail": "Resolve uncertain writes before retrying, preserve the audit trail, and export outstanding exceptions for manual continuation during outages.",
-                },
-            ],
-        },
-        {
-            "heading": "4. Prove the 70% threshold and scale retained commissions, not transaction volume",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Measure automation against a fixed, observed basket of repetitive work. "
-                    "The illustrative weekly baseline below contains 1,000 manual minutes "
-                    "across research, qualification, document checking, milestone tracking, "
-                    "distribution preparation, and reconciliation. Automation displaces 850 "
-                    "minutes but adds 110 minutes of review, leaving 150 minutes of untouched "
-                    "manual work plus 110 review minutes. Net reduction is therefore "
-                    "(1,000 minus 260) divided by 1,000, or 74%. This is a testable workload "
-                    "target, not a claim that software conducts 74% of negotiation or "
-                    "professional judgment. Include correction time, failed runs, duplicate "
-                    "cleanup, and contractor supervision in the measured remainder. Establish "
-                    "the baseline with a representative sample before deployment and use "
-                    "the same task definitions afterward. If the weekly basket changes "
-                    "materially, publish separate old-basket and new-basket results rather "
-                    "than declaring an artificial improvement. Sample all consequential "
-                    "outputs for human authorization and use risk-weighted checks on "
-                    "routine extraction. A rising correction rate consumes the apparent "
-                    "savings immediately. Pause the weakest workflow when net reduction "
-                    "falls below the target, retain the working automations, and restore "
-                    "the manual procedure until the defective rule or source is repaired."
-                ),
-                (
-                    "Price each automated run explicitly before choosing a model or orchestration "
-                    "vendor. Assume, solely for budgeting, 4,000 input tokens at $2 per "
-                    "million and 1,000 output tokens at $8 per million: model cost is "
-                    "$0.008 plus $0.008, or $0.016. Add $0.004 for allocated execution "
-                    "and storage to obtain $0.020 per successful machine attempt. These "
-                    "are illustrative rates, not a quoted vendor tariff. With a 10% "
-                    "expected additional-attempt allowance, machine cost averages $0.022 "
-                    "per completed run. Two minutes of reviewer time at $60 per hour "
-                    "adds $2.00, producing $2.022 per reviewed run, or $202.20 for "
-                    "100 runs. That review-heavy example is separate from the weekly "
-                    "workload basket and should not be substituted into it without "
-                    "matching task counts. Track actual token usage, retries, storage, "
-                    "delivery charges, and review minutes by mandate. Reserve expensive "
-                    "reasoning for conflicting evidence; ordinary date comparisons, fee "
-                    "calculations, and completeness checks belong in deterministic code. "
-                    "Set per-mandate spend alerts and maximum retry counts. If model "
-                    "service disappears, continue matching from verified structured fields "
-                    "and issue manually reviewed deficiency requests rather than interrupting "
-                    "an otherwise valid closing."
-                ),
-                (
-                    "Reconcile every growth forecast to retained transaction commissions. "
-                    "The Conservative case is $100,000 revenue less $75,000 total costs, "
-                    "yielding $25,000 owner profit at 25% with 1 FT + 3 C. "
-                    "The Base case is $550,000 revenue less $343,750 total costs, "
-                    "yielding $206,250 at 37.5% with the same team. The Scaled case "
-                    "is $1,000,000 revenue less $500,000 total costs, yielding $500,000 "
-                    "at 50% with 2 FT + 4 C. Illustrative fee-equivalent bridges "
-                    "are four closings at $25,000, eleven at $50,000, and twenty "
-                    "at $50,000 respectively; actual mandates can produce a different "
-                    "mix with identical annual retained revenue. Do not add these "
-                    "examples to the canonical totals. The $3,000 to $18,000 monthly "
-                    "opex planning range is not a substitute for each scenario's "
-                    "complete annual cost budget, which must include variable delivery "
-                    "and contractor costs. Startup capital remains $15,000 to $100,000 "
-                    "and first-deal timing remains 3 to 12 months. Maintain a "
-                    "rolling cash forecast that excludes unsigned commissions and "
-                    "models delayed or failed closings. Add personnel only when "
-                    "review queues and executable mandates justify capacity, not "
-                    "because the top of the funnel looks busy."
-                ),
-            ],
-            "table": {
-                "caption": "Illustrative 1,000-minute weekly basket yielding 74% net repetitive-work reduction",
-                "headers": [
-                    "Measured repetitive work",
-                    "Baseline and machine displacement",
-                    "Required review allocation",
-                    "Net labor remaining and safeguard",
-                ],
-                "rows": [
-                    [
-                        "Research collects permitted project sources and resolves entity records",
-                        "Baseline 250 minutes; machine displacement removes 230 manual minutes",
-                        "Thirty review minutes verify source integrity and entity identity",
-                        "Fifty minutes remain after review; unsupported records stay quarantined",
-                    ],
-                    [
-                        "Qualification compares documented buyer criteria against eligible mandate attributes",
-                        "Baseline 200 minutes; machine displacement removes 170 manual minutes",
-                        "Twenty-five review minutes resolve eligibility conflicts before buyer introduction",
-                        "Fifty-five minutes remain after review; principal authorizes consequential introductions",
-                    ],
-                    [
-                        "Document checking compares current evidence with asset-specific checklist requirements",
-                        "Baseline 200 minutes; machine displacement removes 180 manual minutes",
-                        "Twenty-five review minutes inspect material amounts and missing signatures",
-                        "Forty-five minutes remain after review; unresolved conditions block progression",
-                    ],
-                    [
-                        "Milestone tracking monitors deadlines and prepares accountable exception reminders",
-                        "Baseline 150 minutes; machine displacement removes 140 manual minutes",
-                        "Ten review minutes confirm changed deadlines and responsible counterparties",
-                        "Twenty minutes remain after review; disputed dates require confirmation",
-                    ],
-                    [
-                        "Distribution preparation assembles approved content for permissioned eligible recipients",
-                        "Baseline 100 minutes; machine displacement removes 90 manual minutes",
-                        "Ten review minutes inspect claims and recipient suppression synchronization",
-                        "Twenty minutes remain after review; uncertain permissions stop delivery",
-                    ],
-                    [
-                        "Reconciliation checks external receipts and resolves uncertain workflow states",
-                        "Baseline 100 minutes; machine displacement removes 40 manual minutes",
-                        "Ten review minutes inspect exceptions beyond ordinary reconciliation work",
-                        "Seventy minutes remain after review; uncertain writes require investigation",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": "Automate the evidence trail and the next task, never the authority to promise or release funds.",
-    "diagram_id": "diag-02",
-    "action_checklist": [
-        "Create one exclusive-mandate evidence ledger with immutable entity identifiers, signed fee terms, licensing classifications, and versioned introduction records.",
-        "Deploy an authenticated, durable, idempotent webhook path and test duplicate events, signature failures, timeouts, and manual recovery before external use.",
-        "Separate federal direct-transfer rules from state credit placement rules, and require evidence-backed eligibility before matching executable opportunities.",
-        "Configure human authorization for material claims, first introductions, changed deadlines, settlement instructions, and every consequential document exception.",
-        "Run the fixed 1,000-minute workload experiment, record corrections and review time, and verify the net reduction rather than counting generated outputs.",
-        "Reconcile retained commissions, run costs, contractor capacity, failed-closing exposure, and cash timing to the three canonical annual profit scenarios.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "26 U.S.C. § 6418 — Transfer of certain credits",
-            "url": "https://www.law.cornell.edu/uscode/text/26/6418",
-            "relevance": (
-                "Establishes eligible credit transfers, unrelated-party and cash requirements, "
-                "and the prohibition on a transferee subsequently transferring the purchased credit."
-            ),
-        },
-        {
-            "title": "26 CFR § 1.6418-2 — Rules for making transfer elections",
-            "url": "https://www.ecfr.gov/current/title-26/section-1.6418-2",
-            "relevance": (
-                "Supports the federal direct-transfer checklist, including election procedures, "
-                "transfer documentation, and related reporting mechanics."
-            ),
-        },
-        {
-            "title": "26 CFR § 1.6418-4 — Additional information and registration",
-            "url": "https://www.ecfr.gov/current/title-26/section-1.6418-4",
-            "relevance": (
-                "Provides pre-filing registration requirements; a registration number alone "
-                "does not establish substantive credit eligibility."
-            ),
-        },
-        {
-            "title": "26 U.S.C. § 47 — Rehabilitation credit",
-            "url": "https://www.law.cornell.edu/uscode/text/26/47",
-            "relevance": (
-                "Identifies the federal rehabilitation credit that must be distinguished "
-                "from separately transferable state historic rehabilitation incentives."
-            ),
-        },
-        {
-            "title": "15 U.S.C. § 78o — Registration and regulation of brokers and dealers",
-            "url": "https://www.law.cornell.edu/uscode/text/15/78o",
-            "relevance": (
-                "Section 15(a) establishes broker registration requirements; Section 15(b)(13) "
-                "contains a conditional M&A broker exemption rather than a universal exemption "
-                "for transaction introductions."
-            ),
-        },
-        {
-            "title": "15 U.S.C. § 7704 — Requirements for transmission of messages",
-            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
-            "relevance": (
-                "Governs commercial email practices including header accuracy, subject lines, "
-                "sender information, opt-out mechanisms, and timely suppression."
-            ),
-        },
-    ],
-}
+CHAPTER_10 = {'id': 'Q10',
+ 'chapter_id': 'Q10',
+ 'chapter_number': 10,
+ 'question_number': 10,
+ 'slug': 'vol011-q10-business-valuation-earnings-multiples-deal-structure',
+ 'question_prompt': 'Which earnings measure and multiple should I use to evaluate a business, and how do '
+                    'SaaS characteristics and financing terms affect the proposed transaction?',
+ 'kicker': 'Q10 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Business Valuation: Earnings, Multiples, and Deal Structure',
+ 'subtitle': 'SDE, EBIT, EBITDA, add-backs, net profit versus cash flow, e-commerce valuations, SaaS '
+             'valuation levers and exit planning, SBA financing, seller notes, earnouts, and rollovers',
+ 'layout_template': 'expert_commentary',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Brokers, lower-middle-market advisors, SaaS specialists and a valuation professor '
+                      'converge on one formula: normalized earnings times a risk-adjusted multiple. Under '
+                      "roughly $500K-$1M of earnings, buyers price Seller's Discretionary Earnings (SDE) "
+                      'at about 2-4x; above that, adjusted EBITDA takes over and multiples climb with '
+                      'size, from 3-5x at $500K-$1M EBITDA to 6-10x at $5-10M and 12x-plus above $10M. '
+                      'Owner dependence, customer concentration, trend, recurring revenue and clean books '
+                      'move the multiple. Lenders cap price through SBA 7(a) rules: tax returns as source '
+                      'of truth, 10% buyer injection, DSCR floors of 1.25 versus a stated 1.5 lender '
+                      'appetite. Sharp splits remain on personal add-backs such as vehicles and phones, on '
+                      'juicing trailing earnings before a sale, and on whether headline price or cash at '
+                      'closing defines the real deal.',
+ 'key_metrics': [{'label': 'Main Street SDE Multiple Range',
+                  'metric': 'Main Street SDE Multiple Range',
+                  'value': '2-3.5x SDE',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Shep Campbell's working range for owner-operated businesses, set from comps "
+                             'and industry datasets; EBITDA multiples run higher because of lower owner '
+                             'risk.',
+                  'source': 'Deal Street - Small to Lower Middle Market M&A ([ggUaT-lHV0A @ 00:04:13])'},
+                 {'label': 'Lower-Middle-Market EBITDA Multiple at $1-3M EBITDA',
+                  'metric': 'Lower-Middle-Market EBITDA Multiple at $1-3M EBITDA',
+                  'value': 'Historically 4-7x, lately 5-8x, revised to 5-9x',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Arthur Petropoulos's band for companies bought by PE platforms and search "
+                             'funds, including independent and fundless sponsors.',
+                  'source': 'Arthur Petropoulos ([D58oCe_7BBM @ 00:04:36])'},
+                 {'label': 'SBA 7(a) Minimum DSCR',
+                  'metric': 'SBA 7(a) Minimum DSCR',
+                  'value': '1.25 (previously 1.2), effective Oct 1, 2026',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Floor for acquisition loans; projections no longer count toward DSCR and '
+                             '$3M-plus deals require an independent QoE report.',
+                  'source': 'Deal Street - Small to Lower Middle Market M&A ([a5Z--B3Uhrg @ 00:03:08])'},
+                 {'label': 'Add-Back Leverage at a 4x Multiple',
+                  'metric': 'Add-Back Leverage at a 4x Multiple',
+                  'value': '$50K add-back = $200K of price',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "David Newell's illustration of how a single disputed add-back swings SaaS "
+                             'sale price when SDE is multiplied at 4x.',
+                  'source': 'Quiet Light Brokerage ([oJsHo5vaDus @ 00:12:36])'}],
+ 'sections': [{'heading': 'Section 1: The Practitioner Consensus',
+               'paragraphs': ['Main Street brokers and lower-middle-market advisors start from the same '
+                              'arithmetic: normalized earnings times a multiple, with risk deciding where '
+                              'the multiple lands. Shep Campbell of Deal Street, who values businesses '
+                              'every week, frames value as earnings, multiple and risk, and insists buyers '
+                              'purchase cash flow rather than revenue, warning that a $5M break-even '
+                              'company can be worth less than a profitable $1M one [ggUaT-lHV0A @ '
+                              '00:01:08]. Campbell puts it bluntly: cash flow services debt and pays the '
+                              'owner [ggUaT-lHV0A @ 00:01:34]. Quiet Light Brokerage repeats the formula '
+                              "for online sellers, stating that a business's value is based on a multiple "
+                              'of its earnings and that buyers treat SDE as their baseline for estimating '
+                              'return on investment [R4jvbLHhCBg @ 00:00:26]. Ryan C. Winter reduces it to '
+                              'earnings times multiple, $300K at 3x for roughly $900K [tPnDBaB9oPU @ '
+                              '00:01:02], and warns operators off revenue rules of thumb entirely '
+                              '[tPnDBaB9oPU @ 00:03:58]. Campbell backs that warning with a scar: a '
+                              'listing priced at 3x revenue, $15M on $5M of sales and roughly 10x cash '
+                              'flow, never sold [ggUaT-lHV0A @ 00:09:04]. Price conversations therefore '
+                              'open on documented profit, never on top-line volume, years in business, '
+                              "debts the seller owes or the seller's retirement number.",
+                              'Practitioners also agree on which earnings number to multiply, and the '
+                              'switch turns on whether the buyer is buying a job or a managed company. '
+                              'Keira Hamilton notes that SDE and EBITDA both add back interest, taxes, '
+                              'depreciation, amortization, one-time items and discretionary spending, '
+                              'while SDE alone also adds back owner salary [1dJeO4qEAhU @ 00:00:20]. Peter '
+                              "Nola labels SDE 'return to a working owner,' its New Zealand name "
+                              "[RoGz5NZF96I @ 00:00:38], and calls EBITDA 'managed profit' calculated "
+                              'after owner pay [RoGz5NZF96I @ 00:01:39], the standard in M&A for medium, '
+                              'large and capital-intensive firms [RoGz5NZF96I @ 00:03:16]. David C Barnett '
+                              'draws the line near $500K: SDE for owner-operated firms below it at about '
+                              '2-2.2x and lower for service firms, EBITDA above it [Va5USDqv3-A @ '
+                              '00:03:34], and EBIT or EBITDA minus capex for capital-intensive operators '
+                              'like trucking [Va5USDqv3-A @ 00:04:46]. Brett Cenkus places the salary '
+                              "add-back mainly around $1-2M deals, where buyers 'buy themselves a job,' "
+                              'while at roughly $20M management is retained and no salary comes back '
+                              '[y4u_MuL4xhw @ 00:05:11]. The size cutoff floats from adviser to adviser, '
+                              "but the logic holds: once a paid manager runs the business, the owner's "
+                              'paycheck stops counting as discretionary earnings and the buyer prices a '
+                              'managed cash stream.',
+                              'On what moves the multiple, the risk lists line up almost item for item. '
+                              'Campbell names owner dependence, customer concentration around 30-40%, '
+                              'recurring revenue, trend, clean books, industry and size, and warns that '
+                              "'the more a business depends on the owner at listing time, the more it will "
+                              "depend on the owner at closing time' [ggUaT-lHV0A @ 00:06:46]. Winter's "
+                              'list is nearly identical, flagging a single client at 50% of revenue as a '
+                              'red flag alongside owner dependence, trend, clean books and team '
+                              '[tPnDBaB9oPU @ 00:02:49]. Arthur Petropoulos explains why bigger companies '
+                              'earn bigger multiples: less key-person risk and a broader buyer pool, a '
+                              "dynamic labeled 'EBITDA expansion' that drives roll-ups, summed up as 'same "
+                              "work, different deals' [brFD1fFAYhQ @ 00:01:12]. On the SaaS side, David "
+                              'Newell of Quiet Light, who has sold 75-plus businesses including Drip, '
+                              'names key-man risk as mistake number one: document the code, hand it to a '
+                              'trusted developer or CTO, and step out quickly, the way Rob Walling brought '
+                              'in Derek as CTO and left the code after about six months [oJsHo5vaDus @ '
+                              '00:04:39]. Every one of these levers is about transferability. A buyer pays '
+                              'up for earnings that survive the seller walking out the door, and discounts '
+                              'every dollar that leaves with the founder.'],
+               'table': {'caption': 'Where practitioners line up on earnings, multiples and risk',
+                         'headers': ['Consensus Point',
+                                     'What Practitioners Teach',
+                                     'Operator Implication',
+                                     'Expert Source'],
+                         'rows': [['Buyers buy cash flow, never top-line revenue',
+                                   'Value rests on earnings, multiple and risk; a $5M break-even firm can '
+                                   'trail a profitable $1M one',
+                                   'Lead every pricing conversation with documented, normalized profit '
+                                   'figures',
+                                   'Deal Street - Small to Lower Middle Market M&A ([ggUaT-lHV0A @ '
+                                   '00:01:08])'],
+                                  ['Value equals normalized earnings times a multiple',
+                                   '$300K of earnings at 3x lands at roughly $900K of value',
+                                   'Ignore revenue rules of thumb when setting any asking price',
+                                   'Ryan C. Winter, Business Broker ([tPnDBaB9oPU @ 00:01:02])'],
+                                  ['SDE adds owner salary on top of EBITDA add-backs',
+                                   'Both add back interest, taxes, depreciation, amortization, one-time '
+                                   'and discretionary items; SDE adds salary',
+                                   'Use SDE for owner-run firms and EBITDA for managed ones',
+                                   'Keira Hamilton ([1dJeO4qEAhU @ 00:00:20])'],
+                                  ['The earnings metric switches with size and capital intensity',
+                                   'SDE under roughly $500K, EBITDA above, EBITDA minus capex for '
+                                   'trucking-type firms',
+                                   'Match the earnings measure to the buyer universe before quoting '
+                                   'multiples',
+                                   'David C Barnett Small Business and Deal Making SMB ([Va5USDqv3-A @ '
+                                   '00:03:34])'],
+                                  ['The salary add-back fades as companies scale up',
+                                   'Buyers at $1-2M buy themselves a job; at roughly $20M management stays '
+                                   'on',
+                                   'Stop adding back owner pay once a paid manager is required',
+                                   'Brett Cenkus ([y4u_MuL4xhw @ 00:05:11])'],
+                                  ['Owner dependence is the top multiple killer',
+                                   'Dependence on the owner at listing time carries straight through to '
+                                   'closing time',
+                                   'Build a team and documented systems before going to market',
+                                   'Deal Street - Small to Lower Middle Market M&A ([ggUaT-lHV0A @ '
+                                   '00:06:46])'],
+                                  ['Size earns multiple expansion across the market',
+                                   'Larger EBITDA brings less key-person risk and a broader buyer pool, '
+                                   'fueling roll-ups',
+                                   'Grow or combine earnings to climb into a higher multiple band',
+                                   'Arthur Petropoulos ([brFD1fFAYhQ @ 00:01:12])']]}},
+              {'heading': 'Section 2: Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ["The SDE build follows a repeatable sequence. Quiet Light's method strips "
+                              'non-cash expenses like amortization and depreciation plus taxes and '
+                              "interest, then owner benefits such as salary and home office, 'because how "
+                              "much you pay yourself is entirely up to you,' then true one-time expenses "
+                              'like building an app, then situational adjustments [R4jvbLHhCBg @ '
+                              '00:01:14]. Nate Lind starts at the top line: gross sales minus chargebacks '
+                              'and refunds, COGS, SG&A and non-operating income such as PPP or EIDL money '
+                              'and lawsuit settlements [yaZZzBKh86I @ 00:01:39]. Lind then allows '
+                              'depreciation, interest and amortization, one-time website retrofits, the '
+                              '2021 freight-cost delta and recruiter fees as add-backs [yaZZzBKh86I @ '
+                              '00:04:01]. Tyler Jeffcoat of Seller Accountant runs trailing-twelve-month '
+                              'SDE off an accrual-basis P&L, walking $1M in sales, $340K gross profit and '
+                              "$100K operating profit to $185K of SDE [jkHzL8ya984 @ 00:06:26]. Jeffcoat's "
+                              'filter: unused rent, owner salary and a VA come back; core tools like a '
+                              "Skubana ERP and core contractors stay in, because 'you win every ad back "
+                              "battle that you don't have to have' [jkHzL8ya984 @ 00:05:06]. Brent Freeman "
+                              'of the CBB Group shows the stack on a real P&L: $924K plus $15K interest, '
+                              '$40K depreciation and $210K owner comp yields $1.189M of SDE [pzqh4R8Hppk @ '
+                              '00:04:53].',
+                              'With normalized earnings locked in, the multiple grid is remarkably well '
+                              'mapped. Campbell runs Main Street SDE at 2-3.5x off comps and industry '
+                              'datasets, stacking $150K net, $100K owner pay and $50K add-backs into $300K '
+                              'of SDE that lands near $825K at about 2.75x, while nudging the multiple to '
+                              '3.25x adds $150K [ggUaT-lHV0A @ 00:05:06]. Keira Hamilton quotes a typical '
+                              '3-5x, with $500K of SDE at 4x producing $2M [1dJeO4qEAhU @ 00:01:28]. '
+                              'Petropoulos, whose Hillview Partners serves $1M-$20M EBITDA companies, maps '
+                              'the institutional ladder: $500K-$1M of EBITDA at 3-5x, $1-3M revised up to '
+                              '5-9x, $3-5M at 6-9x with many $3M companies trading at 7-8x, $5-10M at '
+                              '6-10x, and above $10M at 12x, with 15x and 20x printed in frothy markets '
+                              '[D58oCe_7BBM @ 00:04:07]. The arbitrage math explains PE appetite: buy ten '
+                              '$1M-EBITDA companies at 6x for $60M, then sell the combined $10M of EBITDA '
+                              'at 10x for $100M [D58oCe_7BBM @ 00:08:00]. Newell values sub-$1M-ARR SaaS '
+                              'on SDE at 3-5x, so a $500K-ARR product throwing off $200K of profit prices '
+                              'at $600K-$1M [oJsHo5vaDus @ 00:10:22]. With the median near 4x [oJsHo5vaDus '
+                              '@ 00:13:41], every $50K of add-backs is worth $200K of price, which is why '
+                              'the add-back fight matters so much [oJsHo5vaDus @ 00:12:36].',
+                              "The financing desk then decides whether the price survives. Deal Street's "
+                              'financing breakdown sets SBA 7(a) loans at up to $5M covering as much as '
+                              '90% of goodwill, a buyer injection of at least 10% that cannot be borrowed '
+                              '[a5Z--B3Uhrg @ 00:02:23], a 1.25 minimum DSCR as of October 1, 2026, no '
+                              'projections counted toward DSCR, and an independent QoE on deals of '
+                              '$3M-plus [a5Z--B3Uhrg @ 00:03:08]. Campbell defines DSCR as cash flow plus '
+                              'owner salary divided by annual debt service, warning that if the price is '
+                              "so high that cash flow can't comfortably support the debt, the deal won't "
+                              "get financed [ggUaT-lHV0A @ 00:12:46]. Freeman's live structure: $3M price, "
+                              '15% or $450K down, a $2.55M SBA loan over 10 years at 8.5% for $31,616 a '
+                              'month, producing 2.25:1 coverage with $150K of owner comp and 1.92:1 on a '
+                              'modified basis that charges a 20% return on the down payment, $7,500 a '
+                              'month [pzqh4R8Hppk @ 00:12:28]. Seller notes fill the gap at 10-20% of '
+                              'price over 3-7 years, often amortized over 10-plus years with a 3-5 year '
+                              "balloon [a5Z--B3Uhrg @ 00:05:13]; a note funding the buyer's down payment "
+                              "sits on full standby for the SBA loan's life [a5Z--B3Uhrg @ 00:06:31] and "
+                              'can cover at most half that injection [a5Z--B3Uhrg @ 00:07:20].'],
+               'table': {'caption': 'Street numbers for building earnings, setting multiples and financing '
+                                    'the deal',
+                         'headers': ['Mechanic', 'Exact Numbers Stated', 'Execution Note', 'Expert Source'],
+                         'rows': [['Owner-operator SDE build and Main Street multiple',
+                                   '$150K net + $100K owner pay + $50K add-backs = $300K SDE at 2-3.5x',
+                                   'Moving the multiple from 2.75x to 3.25x adds $150K of price',
+                                   'Deal Street - Small to Lower Middle Market M&A ([ggUaT-lHV0A @ '
+                                   '00:05:06])'],
+                                  ['E-commerce trailing-twelve-month SDE on accrual books',
+                                   '$1M sales, $100K operating profit, $185K SDE, 2-4x with deals north of '
+                                   '4x',
+                                   'Leave core tools and core contractors in; add back a VA and unused '
+                                   'rent',
+                                   'Seller Accountant ([jkHzL8ya984 @ 00:06:26])'],
+                                  ['Lower-middle-market EBITDA ladder by company size',
+                                   '$500K-$1M at 3-5x, $1-3M at 5-9x, $5-10M at 6-10x, above $10M at 12x',
+                                   'Many $3M EBITDA companies trade at 7-8x in practice',
+                                   'Arthur Petropoulos ([D58oCe_7BBM @ 00:04:07])'],
+                                  ['Sub-$1M ARR SaaS priced on SDE multiples',
+                                   '$500K ARR with $200K profit at 3-5x equals $600K-$1M of value',
+                                   'A $50K add-back difference at 4x moves price by $200K',
+                                   'Quiet Light Brokerage ([oJsHo5vaDus @ 00:10:22])'],
+                                  ['SBA 7(a) guardrails for acquisition loans',
+                                   'Up to $5M, 90% of goodwill, 10% unborrowed injection, 1.25 DSCR '
+                                   'minimum',
+                                   'Projections no longer count toward DSCR; $3M-plus deals need an '
+                                   'independent QoE',
+                                   'Deal Street - Small to Lower Middle Market M&A ([a5Z--B3Uhrg @ '
+                                   '00:02:23])'],
+                                  ['Debt service coverage on a $3M acquisition',
+                                   '$2.55M SBA loan at 8.5% over 10 years, $31,616 monthly, 2.25:1 DSCR',
+                                   'Modified DSCR charging 20% on the $450K down payment drops to 1.92:1',
+                                   'Brent Freeman  - The CBB Group ([pzqh4R8Hppk @ 00:12:28])'],
+                                  ['Seller note sizing and amortization structure',
+                                   '10-20% of price over 3-7 years, or 10-plus year amortization with 3-5 '
+                                   'year balloon',
+                                   'Notes funding the down payment go on full standby for the SBA term',
+                                   'Deal Street - Small to Lower Middle Market M&A ([a5Z--B3Uhrg @ '
+                                   '00:05:13])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Add-back and structure moves the brokers actually run',
+                           'body': 'Small, documented adjustments compound through the multiple, and deal '
+                                   'structure decides what the seller actually banks.',
+                           'items': ['Apply a confirmed hosting cut retroactively: dropping from $8K to '
+                                     '$4K a month credits $4K x 10 months, or $40K, to trailing earnings, '
+                                     'and a one-time $10-15K website overhaul can be added back [Quiet '
+                                     'Light Brokerage — oJsHo5vaDus @ 00:48:11].',
+                                     'Pull PPP or EIDL money and lawsuit settlements out as non-operating '
+                                     'income, then add back recruiter fees and the 2021 freight-cost delta '
+                                     'as one-time items [Nate Lind - Business Broker and Beyond — '
+                                     'yaZZzBKh86I @ 00:01:39].',
+                                     'Shop lenders to the add-back schedule: SBA lenders vary in whether '
+                                     'owner salary and depreciation come back in full, in part or not at '
+                                     'all, so match the lender to the add-backs [Keira Hamilton — '
+                                     '1dJeO4qEAhU @ 00:02:40].',
+                                     'Use the seller-note trick of the trade: amortize over 10-plus years '
+                                     'with a balloon at year 3-5 that usually gets refinanced [Deal Street '
+                                     '- Small to Lower Middle Market M&A — a5Z--B3Uhrg @ 00:05:13].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Rebuild trailing earnings',
+                              'action': 'Reconstruct trailing-twelve-month earnings on an accrual-basis '
+                                        'P&L before touching add-backs.',
+                              'detail': 'Start from gross sales, subtract chargebacks, refunds, COGS and '
+                                        'SG&A, and strip non-operating income such as PPP/EIDL money and '
+                                        'lawsuit settlements [Nate Lind - Business Broker and Beyond — '
+                                        'yaZZzBKh86I @ 00:01:39]; run the result on TTM accrual books '
+                                        '[Seller Accountant — jkHzL8ya984 @ 00:06:26].'},
+                             {'step': 2,
+                              'title': 'Layer defensible add-backs',
+                              'action': 'Add back non-cash items, owner benefits, true one-time spend and '
+                                        'situational adjustments only where documented.',
+                              'detail': 'Follow the four-step SDE sequence of non-cash items, owner '
+                                        'benefits, one-time expenses and situational adjustments [Quiet '
+                                        'Light Brokerage — R4jvbLHhCBg @ 00:01:14]; expect lenders to '
+                                        'reject meals, travel, car and entertainment and accept medical '
+                                        'insurance only if documented [Brent Freeman  - The CBB Group — '
+                                        'pzqh4R8Hppk @ 00:05:58].'},
+                             {'step': 3,
+                              'title': 'Pick the earnings measure and multiple band',
+                              'action': 'Choose SDE, EBITDA or EBITDA minus capex by size and capital '
+                                        'intensity, then place the business in its band.',
+                              'detail': 'Use SDE below roughly $500K and EBITDA above it, with EBITDA '
+                                        'minus capex for trucking-type firms [David C Barnett Small '
+                                        'Business and Deal Making SMB — Va5USDqv3-A @ 00:03:34]; place '
+                                        'EBITDA companies on the 3-5x to 12x size ladder [Arthur '
+                                        'Petropoulos — D58oCe_7BBM @ 00:04:07].'},
+                             {'step': 4,
+                              'title': 'Stress-test price against the lender',
+                              'action': 'Run DSCR on the proposed SBA structure before the number goes to '
+                                        'market.',
+                              'detail': 'Compute DSCR as cash flow plus owner salary over annual debt '
+                                        'service against the 1.25 minimum [Deal Street - Small to Lower '
+                                        'Middle Market M&A — ggUaT-lHV0A @ 00:11:50]; model the full '
+                                        'structure the way Freeman did, a $3M price at 2.25:1 standard and '
+                                        '1.92:1 modified coverage [Brent Freeman  - The CBB Group — '
+                                        'pzqh4R8Hppk @ 00:12:28].'}]},
+              {'heading': 'Section 3: Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The add-back fight is where brokers split hardest, and the split moves real '
+                              'dollars. Shep Campbell at Deal Street adds back W-2 owner salary and '
+                              "payroll taxes plus life insurance and family members' phones, vehicles and "
+                              "health plans, yet refuses to add back the owner's personal vehicle, phone "
+                              'or health insurance [ggUaT-lHV0A @ 00:02:25]. Ryan C. Winter runs the '
+                              'opposite playbook: salary, interest, taxes, depreciation, one-time items '
+                              'and the personal vehicle, phone and travel all go back in, and Winter '
+                              'reports SDE often lands 40 to 50 percent above tax-return profit '
+                              '[tPnDBaB9oPU @ 00:01:56]. Brent Freeman of the CBB Group says that inflated '
+                              'number dies at the bank, because lenders treat tax returns as the source of '
+                              'truth and refuse meals, travel, car and entertainment add-backs, accepting '
+                              'medical insurance only when documented [pzqh4R8Hppk @ 00:05:58]. Nate Lind '
+                              'splits the difference: travel, meals, personal auto and phone are generally '
+                              'accepted, but SBA lenders rule on them case by case [yaZZzBKh86I @ '
+                              '00:03:14]. The operator read: the aggressive schedule wins the listing '
+                              'conversation, the conservative schedule wins the financing conversation, so '
+                              'build both versions before quoting a seller any number at all.',
+                              'Practitioners also disagree on where SDE stops and EBITDA starts, and on '
+                              'which multiple belongs to each. David C Barnett uses SDE for owner-operated '
+                              'firms under roughly $500K at about 2 to 2.2 times, lower for service firms, '
+                              'switches to EBITDA above $500K, and moves capital-intensive operators like '
+                              'trucking to EBIT or EBITDA minus capex [Va5USDqv3-A @ 00:03:34]. Brent '
+                              'Freeman puts the switch at about $1M and above, noting the EBITDA multiple '
+                              'is always higher [pzqh4R8Hppk @ 00:11:00]. Brett Cenkus ties the '
+                              'owner-salary add-back to the $1 to 2M band, where buyers buy themselves a '
+                              'job, and drops it near $20M because management stays on [y4u_MuL4xhw @ '
+                              '00:05:11]. SaaS breaks the pattern entirely: David Newell at Quiet Light '
+                              'values sub-$1M ARR deals on SDE, but over $1M ARR private equity and '
+                              'strategic buyers price on revenue and will accept thin EBITDA if the '
+                              'founder is out of the code, churn stays under 4 percent a month, and growth '
+                              'runs 30 to 50 percent a year [oJsHo5vaDus @ 00:08:13]. Pick the earnings '
+                              'metric first, because it decides which multiple band a seller is even '
+                              'allowed to argue for, and which buyer pool will show up to the table.',
+                              'Financing thresholds and pre-sale earnings tuning are the third fault line. '
+                              'Deal Street states the SBA 7(a) minimum DSCR moved from 1.2 to 1.25, with '
+                              'projections no longer allowed toward the ratio [a5Z--B3Uhrg @ 00:03:35]. '
+                              'Brent Freeman says lenders want at least 1.5 in this interest rate '
+                              'environment, and runs a modified DSCR that credits the buyer a 20 percent '
+                              'return on the down payment, $7,500 a month, which drags a 2.25:1 deal down '
+                              'to 1.92:1 [pzqh4R8Hppk @ 00:12:28]. On juicing the trailing twelve months, '
+                              'the 2025 Quiet Light panel split live: Tom is very anti, while John '
+                              'Hanstock says it depends, arguing that switching AWS to reserved pricing '
+                              'and showing three months of savings can justify applying them across the '
+                              'trailing 12 months [In6A5W0WFdY @ 00:34:26]. David Newell goes further, '
+                              'applying a hosting cut from $8K to $4K a month retroactively, $4K times 10 '
+                              'months, for a $40K adjustment, and treating a one-time $10 to 15K website '
+                              'overhaul as an add-back [oJsHo5vaDus @ 00:48:11]. The split playbook: '
+                              'underwrite to the 1.5 cushion and clean books when the deal needs bank '
+                              'money, and save retroactive savings adjustments for the buyer who can '
+                              "actually pay for them without a lender's sign-off."],
+               'table': {'caption': 'Contested valuation calls: two playbooks side by side',
+                         'headers': ['Contested Question', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [["Should the owner's personal perks count as add-backs?",
+                                   'Campbell refuses personal vehicle, phone and health insurance but adds '
+                                   'life insurance and family plans',
+                                   'Winter adds back personal vehicle, phone and travel, lifting SDE 40 to '
+                                   '50 percent over tax profit',
+                                   'Deal Street - Small to Lower Middle Market M&A ([ggUaT-lHV0A @ '
+                                   '00:02:25]); Ryan C. Winter, Business Broker ([tPnDBaB9oPU @ '
+                                   '00:01:56])'],
+                                  ['How much add-back tolerance does the lender give?',
+                                   'Freeman: lenders disallow meals, travel, car and entertainment; '
+                                   'medical only if documented',
+                                   'Lind: travel, meals, auto and phone generally accepted, but SBA '
+                                   'lenders decide case by case',
+                                   'Brent Freeman  - The CBB Group ([pzqh4R8Hppk @ 00:05:58]); Nate Lind - '
+                                   'Business Broker and Beyond ([yaZZzBKh86I @ 00:03:14])'],
+                                  ['What debt service coverage ratio clears the bank?',
+                                   'Deal Street: SBA minimum DSCR is 1.25, up from 1.2, with projections '
+                                   'disallowed',
+                                   'Freeman: lenders want at least 1.5 now; modified DSCR credits 20 '
+                                   'percent down-payment return',
+                                   'Deal Street - Small to Lower Middle Market M&A ([a5Z--B3Uhrg @ '
+                                   '00:03:35]); Brent Freeman  - The CBB Group ([pzqh4R8Hppk @ 00:12:28])'],
+                                  ['Where does SDE give way to EBITDA pricing?',
+                                   'Barnett switches to EBITDA above roughly $500K and uses EBITDA minus '
+                                   'capex for trucking',
+                                   'Freeman switches at about $1M and up, where the EBITDA multiple is '
+                                   'always higher',
+                                   'David C Barnett Small Business and Deal Making SMB ([Va5USDqv3-A @ '
+                                   '00:03:34]); Brent Freeman  - The CBB Group ([pzqh4R8Hppk @ 00:11:00])'],
+                                  ['Should SaaS be priced on profit or on revenue?',
+                                   'Newell: under $1M ARR is SDE-based at 3 to 5 times, median about 4 '
+                                   'times',
+                                   'Over $1M ARR goes revenue-based; niche high-retention SaaS quoted at 3 '
+                                   'to 5 times revenue',
+                                   'Quiet Light Brokerage ([oJsHo5vaDus @ 00:08:13]); Quiet Light '
+                                   'Brokerage ([In6A5W0WFdY @ 00:29:51])'],
+                                  ['Is it fair to juice trailing earnings before listing?',
+                                   'Tom on the 2025 Quiet Light panel is very anti any juicing of earnings',
+                                   'Hanstock says it depends: three months of AWS reserved savings can be '
+                                   'applied to TTM',
+                                   'Quiet Light Brokerage ([In6A5W0WFdY @ 00:33:55]); Quiet Light '
+                                   'Brokerage ([In6A5W0WFdY @ 00:34:26])'],
+                                  ['What counts as a cheap EBITDA multiple to buy?',
+                                   'The PE and LBO rule of thumb calls anything under 6 times EBITDA cheap',
+                                   'Damodaran uses the 20th percentile or first quartile, recalculated '
+                                   'every single year instead',
+                                   'Aswath Damodaran ([xI-KTlxfNDU @ 00:03:55]); Aswath Damodaran '
+                                   '([xI-KTlxfNDU @ 00:05:03])']]}},
+              {'heading': 'Section 4: Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The most expensive failures start at the listing price. Shep Campbell at '
+                              'Deal Street once listed a business at 3 times revenue, $15M on $5M of '
+                              'revenue, roughly 10 times cash flow, and it never sold; the same broker '
+                              'names selling into a downturn as mistake number two and warns that '
+                              'add-back-everything schedules raise red flags with buyers [ggUaT-lHV0A @ '
+                              '00:09:04]. Ryan C. Winter bans revenue rules of thumb outright and treats '
+                              'one client at 50 percent of revenue as a red flag that drags the multiple '
+                              'down [tPnDBaB9oPU @ 00:03:58]. Aswath Damodaran shows why cheap-looking '
+                              'multiples trap buyers: the private equity rule that under 6 times EBITDA is '
+                              'cheap would have flagged about 10,000 of roughly 40,000 global companies in '
+                              '2013 and half of all companies in 2009, so the fix is the 20th percentile '
+                              'or first quartile recalculated each year [xI-KTlxfNDU @ 00:04:12]. '
+                              "Damodaran's Ryder System case, at 2.91 times, looked cheap but carried the "
+                              'oldest fleet in the sector and would need debt to replace it [xI-KTlxfNDU @ '
+                              '00:11:07]. The economics check is mismatch-hunting: a low multiple sitting '
+                              'on old assets, high taxes or heavy reinvestment needs is usually priced '
+                              'correctly, not a bargain waiting for a sharp buyer.',
+                              'The second cluster of losses happens between handshake and funding. Brent '
+                              'Freeman warns that a broker ends up selling the transaction three times, to '
+                              'the buyer, the lender and the appraiser, and that lenders underwrite off '
+                              'tax returns, so add-backs that cannot survive that review die at the bank; '
+                              "Freeman's protection is a clawback through seller-note forgiveness if "
+                              'add-backs prove false [pzqh4R8Hppk @ 00:07:41]. Deal Street adds the hard '
+                              "SBA mechanics: a seller note funding the buyer's down payment goes on full "
+                              'standby, with no payments or interest for the life of the SBA loan, and the '
+                              'SBA will not finance earnouts at all [a5Z--B3Uhrg @ 00:06:31]. Keira '
+                              'Hamilton reports SBA lenders vary on whether owner salary and depreciation '
+                              'get added back in full, in part or not at all, so the lender has to match '
+                              "the add-back schedule [1dJeO4qEAhU @ 00:02:40]. Deal Street's two-offer "
+                              'comparison is the economics check: Offer A at $1.2M cash, a $500K note and '
+                              'a $500K earnout loses to Offer B at $1.7M cash and a $200K note, which puts '
+                              "$500K more in the seller's pocket on day one [a5Z--B3Uhrg @ 00:13:04]. "
+                              'Price the structure, not the headline.',
+                              'SaaS and concentration traps destroy value quietly. David Newell at Quiet '
+                              'Light ranks key-man risk as mistake number one, calls lifetime plans '
+                              'suicidal after one surfaced within 24 hours of due diligence, and lists '
+                              'heavy discounting and halting development for more than 3 to 6 months as '
+                              'value destroyers; the timing fix is to avoid selling exhausted or '
+                              'mid-rebuild and aim for about six months after a major release [oJsHo5vaDus '
+                              '@ 00:39:54]. On the 2025 Quiet Light panel, Tom walked away from a '
+                              "custom-data contract worth about half a team member's salary because "
+                              'one-off revenue is not worth anything to buyers, and flags COGS at 20 '
+                              'percent as a possible misclassification signal against a target near 5 '
+                              "percent [In6A5W0WFdY @ 00:17:52]. David C Barnett's concentration case, 60 "
+                              'percent of revenue from four clients, gets handled with seller notes '
+                              'subject to offset rather than a blunt price cut [Va5USDqv3-A @ 00:13:35]. '
+                              'Brett Cenkus goes harder: a business living on two customers may be '
+                              'unsellable or sold only at a discount [y4u_MuL4xhw @ 00:10:18]. Clean these '
+                              'up before listing, because diligence finds them anyway.'],
+               'table': {'caption': 'Firsthand traps and the economics check that catches each one',
+                         'headers': ['Trap',
+                                     'What Practitioners Reported',
+                                     'Economics Check',
+                                     'Expert Source'],
+                         'rows': [['Listing the business on a revenue multiple',
+                                   'Listed at 3 times revenue, $15M on $5M, roughly 10 times cash flow, '
+                                   'and never sold',
+                                   'Price off cash flow; Main Street SDE multiples quoted at 2 to 3.5 '
+                                   'times',
+                                   'Deal Street - Small to Lower Middle Market M&A ([ggUaT-lHV0A @ '
+                                   '00:09:04])'],
+                                  ['Fighting for weak add-backs in diligence',
+                                   'Core tools like Skubana and core contractors are not add-backs; a VA '
+                                   'and unused rent are',
+                                   "You win every add back battle that you don't have to have",
+                                   'Seller Accountant ([jkHzL8ya984 @ 00:05:06])'],
+                                  ['Add-backs that collapse at the lender',
+                                   'Lenders use tax returns as the source of truth and refuse meals, '
+                                   'travel, car, entertainment',
+                                   'Claw back through seller-note forgiveness if add-backs later prove '
+                                   'false',
+                                   'Brent Freeman  - The CBB Group ([pzqh4R8Hppk @ 00:07:41])'],
+                                  ['Falling for the bigger headline offer',
+                                   'Offer A: $1.2M cash, $500K note, $500K earnout versus Offer B: $1.7M '
+                                   'cash, $200K note',
+                                   "Offer B puts $500K more in the seller's pocket on day one",
+                                   'Deal Street - Small to Lower Middle Market M&A ([a5Z--B3Uhrg @ '
+                                   '00:13:04])'],
+                                  ['Counting earnout dollars at full face value',
+                                   'The SBA will not finance earnouts; a contingent seller note is the '
+                                   'workaround',
+                                   'Value every earnout dollar at a steep discount to cash at closing',
+                                   'Deal Street - Small to Lower Middle Market M&A ([a5Z--B3Uhrg @ '
+                                   '00:11:09])'],
+                                  ['Lifetime plans and key-man risk in SaaS',
+                                   'A lifetime plan surfaced within 24 hours of due diligence; called '
+                                   'suicidal for value',
+                                   'Get the founder out of the code and halt no development beyond 3 to 6 '
+                                   'months',
+                                   'Quiet Light Brokerage ([oJsHo5vaDus @ 00:39:54])'],
+                                  ['Buying a cheap multiple that is a value trap',
+                                   "Ryder System at 2.91 times looked cheap but had the sector's oldest "
+                                   'fleet',
+                                   'Check tax rate, reinvestment, return on capital and asset age for a '
+                                   'mismatch',
+                                   'Aswath Damodaran ([xI-KTlxfNDU @ 00:11:07])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Four checks before a number goes in front of a seller or buyer',
+                           'body': 'Each gate below comes from a loss, a dead listing or a diligence '
+                                   'blowup the practitioners reported. Clear all four before quoting price '
+                                   'or signing a structure.',
+                           'items': ['Refuse to list on a revenue multiple; a 3 times revenue listing at '
+                                     'roughly 10 times cash flow never sold [Deal Street - Small to Lower '
+                                     'Middle Market M&A — ggUaT-lHV0A @ 00:09:04].',
+                                     "Run DSCR at the lender's current floor, at least 1.5 in this rate "
+                                     'environment, and again with a 20 percent down-payment return before '
+                                     'listing [Brent Freeman  - The CBB Group — pzqh4R8Hppk @ 00:12:28].',
+                                     'Match the SBA lender to the add-back schedule, since lenders differ '
+                                     'on owner salary and depreciation in full, in part or not at all '
+                                     '[Keira Hamilton — 1dJeO4qEAhU @ 00:02:40].',
+                                     'Kill lifetime plans, heavy discounting and founder dependence in the '
+                                     'code before diligence opens, because they surface within 24 hours '
+                                     '[Quiet Light Brokerage — oJsHo5vaDus @ 00:39:54].']}}],
+ 'pull_quote': '"Do not fall in love with the headline price." Deal Street - Small to Lower Middle Market '
+               'M&A (a5Z--B3Uhrg @ 00:15:02).',
+ 'diagram_id': 'diag-02',
+ 'action_checklist': ['Build SDE from trailing-twelve-month figures on an accrual-basis P&L, not '
+                      'cash-basis books [Seller Accountant — jkHzL8ya984 @ 00:06:26].',
+                      'Strip non-operating income such as PPP and EIDL money and lawsuit settlements '
+                      'before adding anything back [Nate Lind - Business Broker and Beyond — yaZZzBKh86I @ '
+                      '00:01:39].',
+                      'Pull comparables matched on industry, geography and revenue range from '
+                      'bizbuysell.com, then add real estate and equipment and subtract assumed liabilities '
+                      '[Brett Cenkus — y4u_MuL4xhw @ 00:06:24].',
+                      'Cross-check the SDE multiple against EBITDA net of a fair wage: $150K SDE at 2 '
+                      'times can equal 5 to 6 times EBITDA [David C Barnett Small Business and Deal Making '
+                      'SMB — Va5USDqv3-A @ 00:09:56].',
+                      'Structure seller notes at 10 to 20 percent of price, amortized over 10-plus years '
+                      'with a 3 to 5 year balloon, backed by credit check, personal guarantee and security '
+                      'interest [Deal Street - Small to Lower Middle Market M&A — a5Z--B3Uhrg @ 00:05:13].',
+                      'Map the EBITDA band to its buyer pool and multiple, $1 to 3M at 5 to 9 times, and '
+                      'pitch PE platforms and search funds accordingly [Arthur Petropoulos — D58oCe_7BBM @ '
+                      '00:04:36].'],
+ 'statutory_citations': [{'title': 'Deal Street - Small to Lower Middle Market M&A — How Business Sales '
+                                   'Get Financed (Cash, SBA Loans, Seller Notes, Earnouts & Rollovers) '
+                                   '[00:13:04]',
+                          'url': 'https://www.youtube.com/watch?v=a5Z--B3Uhrg&t=784s',
+                          'relevance': 'Primary practitioner testimony on comparing cash-at-close, seller '
+                                       'notes and earnouts across competing offers.'},
+                         {'title': 'Brent Freeman  - The CBB Group — Net Profit is not Cash Flow - EBITDA '
+                                   'or SDE!  Buying a Business and SBA. [00:12:28]',
+                          'url': 'https://www.youtube.com/watch?v=pzqh4R8Hppk&t=748s',
+                          'relevance': 'Primary practitioner testimony on SBA deal math, DSCR thresholds '
+                                       'and modified DSCR.'},
+                         {'title': 'Deal Street - Small to Lower Middle Market M&A — How Much Is My '
+                                   'Business Really Worth? (How Buyers, Lenders & Brokers Value Small '
+                                   'Businesses) [00:09:04]',
+                          'url': 'https://www.youtube.com/watch?v=ggUaT-lHV0A&t=544s',
+                          'relevance': 'Primary practitioner testimony on owner pricing myths and a '
+                                       'revenue-multiple listing that never sold.'},
+                         {'title': 'Quiet Light Brokerage — 3 Big Levers to Maximize SaaS Business '
+                                   'Valuation with David Newell [00:39:54]',
+                          'url': 'https://www.youtube.com/watch?v=oJsHo5vaDus&t=2394s',
+                          'relevance': 'Primary practitioner testimony on SaaS value destroyers surfaced '
+                                       'in due diligence.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'ggUaT-lHV0A',
+                       'title': 'How Much Is My Business Really Worth? (How Buyers, Lenders & Brokers '
+                                'Value Small Businesses)',
+                       'channel': 'Deal Street - Small to Lower Middle Market M&A',
+                       'author': 'Deal Street - Small to Lower Middle Market M&A',
+                       'text': 'Value rests on earnings, multiple and risk, and buyers buy cash flow, not '
+                               'revenue.',
+                       'tip': 'Value rests on earnings, multiple and risk, and buyers buy cash flow, not '
+                              'revenue.',
+                       'timestamp': 68,
+                       'timestamp_seconds': 68,
+                       'timestamp_label': '[00:01:08]',
+                       'url': 'https://www.youtube.com/watch?v=ggUaT-lHV0A&t=68s',
+                       'markdown': '[00:01:08](https://www.youtube.com/watch?v=ggUaT-lHV0A&t=68s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'oJsHo5vaDus',
+                       'title': '3 Big Levers to Maximize SaaS Business Valuation with David Newell',
+                       'channel': 'Quiet Light Brokerage',
+                       'author': 'Quiet Light Brokerage',
+                       'text': 'Lifetime plans are suicidal for a SaaS valuation, and one surfaced within '
+                               '24 hours of due diligence.',
+                       'tip': 'Lifetime plans are suicidal for a SaaS valuation, and one surfaced within '
+                              '24 hours of due diligence.',
+                       'timestamp': 2394,
+                       'timestamp_seconds': 2394,
+                       'timestamp_label': '[00:39:54]',
+                       'url': 'https://www.youtube.com/watch?v=oJsHo5vaDus&t=2394s',
+                       'markdown': '[00:39:54](https://www.youtube.com/watch?v=oJsHo5vaDus&t=2394s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'jkHzL8ya984',
+                       'title': 'Valuing Your E-Commerce Business: SDE, Add-backs, and Multiples',
+                       'channel': 'Seller Accountant',
+                       'author': 'Seller Accountant',
+                       'text': "You win every add back battle that you don't have to have.",
+                       'tip': "You win every add back battle that you don't have to have.",
+                       'timestamp': 306,
+                       'timestamp_seconds': 306,
+                       'timestamp_label': '[00:05:06]',
+                       'url': 'https://www.youtube.com/watch?v=jkHzL8ya984&t=306s',
+                       'markdown': '[00:05:06](https://www.youtube.com/watch?v=jkHzL8ya984&t=306s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'brFD1fFAYhQ',
+                       'title': 'EBITDA Multiples and Valuation Ranges: How Companies are Valued',
+                       'channel': 'Arthur Petropoulos',
+                       'author': 'Arthur Petropoulos',
+                       'text': 'Companies with $400K to $1M of EBITDA trade at 4 to 6 times, and $1 to 2M '
+                               'of EBITDA trades at 5 to 8 times.',
+                       'tip': 'Companies with $400K to $1M of EBITDA trade at 4 to 6 times, and $1 to 2M '
+                              'of EBITDA trades at 5 to 8 times.',
+                       'timestamp': 199,
+                       'timestamp_seconds': 199,
+                       'timestamp_label': '[00:03:19]',
+                       'url': 'https://www.youtube.com/watch?v=brFD1fFAYhQ&t=199s',
+                       'markdown': '[00:03:19](https://www.youtube.com/watch?v=brFD1fFAYhQ&t=199s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '1dJeO4qEAhU',
+                       'title': "What is Seller's Discretionary Earnings (SDE)? And Why Does it Matter?",
+                       'channel': 'Keira Hamilton',
+                       'author': 'Keira Hamilton',
+                       'text': 'SBA lenders vary on whether they add back owner salary and depreciation in '
+                               'full, in part or not at all, so match the lender to the add-backs.',
+                       'tip': 'SBA lenders vary on whether they add back owner salary and depreciation in '
+                              'full, in part or not at all, so match the lender to the add-backs.',
+                       'timestamp': 160,
+                       'timestamp_seconds': 160,
+                       'timestamp_label': '[00:02:40]',
+                       'url': 'https://www.youtube.com/watch?v=1dJeO4qEAhU&t=160s',
+                       'markdown': '[00:02:40](https://www.youtube.com/watch?v=1dJeO4qEAhU&t=160s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Va5USDqv3-A',
+                       'title': 'What Number Do I Multiply? SDE, EBIT, EBITDA?',
+                       'channel': 'David C Barnett Small Business and Deal Making SMB',
+                       'author': 'David C Barnett Small Business and Deal Making SMB',
+                       'text': 'Valuation is not like engineering; the methods are a toolkit.',
+                       'tip': 'Valuation is not like engineering; the methods are a toolkit.',
+                       'timestamp': 84,
+                       'timestamp_seconds': 84,
+                       'timestamp_label': '[00:01:24]',
+                       'url': 'https://www.youtube.com/watch?v=Va5USDqv3-A&t=84s',
+                       'markdown': '[00:01:24](https://www.youtube.com/watch?v=Va5USDqv3-A&t=84s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'RoGz5NZF96I',
+                       'title': 'SDE v EBITDA.  Essential for Accurate Business Valuation.',
+                       'channel': 'Peter Nola',
+                       'author': 'Peter Nola',
+                       'text': 'A bakery with $100K of profit, a $50K owner salary and a $10K car produces '
+                               '$160K of SDE.',
+                       'tip': 'A bakery with $100K of profit, a $50K owner salary and a $10K car produces '
+                              '$160K of SDE.',
+                       'timestamp': 76,
+                       'timestamp_seconds': 76,
+                       'timestamp_label': '[00:01:16]',
+                       'url': 'https://www.youtube.com/watch?v=RoGz5NZF96I&t=76s',
+                       'markdown': '[00:01:16](https://www.youtube.com/watch?v=RoGz5NZF96I&t=76s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'pzqh4R8Hppk',
+                       'title': 'Net Profit is not Cash Flow - EBITDA or SDE!  Buying a Business and SBA.',
+                       'channel': 'Brent Freeman  - The CBB Group',
+                       'author': 'Brent Freeman  - The CBB Group',
+                       'text': 'Lenders use tax returns as the source of truth, and you end up selling the '
+                               'transaction three times.',
+                       'tip': 'Lenders use tax returns as the source of truth, and you end up selling the '
+                              'transaction three times.',
+                       'timestamp': 358,
+                       'timestamp_seconds': 358,
+                       'timestamp_label': '[00:05:58]',
+                       'url': 'https://www.youtube.com/watch?v=pzqh4R8Hppk&t=358s',
+                       'markdown': '[00:05:58](https://www.youtube.com/watch?v=pzqh4R8Hppk&t=358s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'tPnDBaB9oPU',
+                       'title': 'How to Value a Business: SDE, Multiples & Add-Backs',
+                       'channel': 'Ryan C. Winter, Business Broker',
+                       'author': 'Ryan C. Winter, Business Broker',
+                       'text': 'Do not use revenue rules of thumb to value a business.',
+                       'tip': 'Do not use revenue rules of thumb to value a business.',
+                       'timestamp': 238,
+                       'timestamp_seconds': 238,
+                       'timestamp_label': '[00:03:58]',
+                       'url': 'https://www.youtube.com/watch?v=tPnDBaB9oPU&t=238s',
+                       'markdown': '[00:03:58](https://www.youtube.com/watch?v=tPnDBaB9oPU&t=238s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'yaZZzBKh86I',
+                       'title': "Business Valuation - Part 5 - How to Calculate Seller's Discretionary "
+                                'Earnings',
+                       'channel': 'Nate Lind - Business Broker and Beyond',
+                       'author': 'Nate Lind - Business Broker and Beyond',
+                       'text': 'Travel, meals, personal auto and phone are generally accepted add-backs, '
+                               'but SBA lenders treat them case by case.',
+                       'tip': 'Travel, meals, personal auto and phone are generally accepted add-backs, '
+                              'but SBA lenders treat them case by case.',
+                       'timestamp': 194,
+                       'timestamp_seconds': 194,
+                       'timestamp_label': '[00:03:14]',
+                       'url': 'https://www.youtube.com/watch?v=yaZZzBKh86I&t=194s',
+                       'markdown': '[00:03:14](https://www.youtube.com/watch?v=yaZZzBKh86I&t=194s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'xI-KTlxfNDU',
+                       'title': 'Session 16: Other Earnings Multiples',
+                       'channel': 'Aswath Damodaran',
+                       'author': 'Aswath Damodaran',
+                       'text': "Again, what you're looking for is a mismatch.",
+                       'tip': "Again, what you're looking for is a mismatch.",
+                       'timestamp': 605,
+                       'timestamp_seconds': 605,
+                       'timestamp_label': '[00:10:05]',
+                       'url': 'https://www.youtube.com/watch?v=xI-KTlxfNDU&t=605s',
+                       'markdown': '[00:10:05](https://www.youtube.com/watch?v=xI-KTlxfNDU&t=605s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'R4jvbLHhCBg',
+                       'title': 'What Is Seller’s Discretionary Earnings or SDE (and How to Calculate It)',
+                       'channel': 'Quiet Light Brokerage',
+                       'author': 'Quiet Light Brokerage',
+                       'text': "You see, your business's value is based on a multiple of your earnings.",
+                       'tip': "You see, your business's value is based on a multiple of your earnings.",
+                       'timestamp': 26,
+                       'timestamp_seconds': 26,
+                       'timestamp_label': '[00:00:26]',
+                       'url': 'https://www.youtube.com/watch?v=R4jvbLHhCBg&t=26s',
+                       'markdown': '[00:00:26](https://www.youtube.com/watch?v=R4jvbLHhCBg&t=26s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'D58oCe_7BBM',
+                       'title': 'The EBITDA Multiple Valuation Spectrum all Acquirers Use',
+                       'channel': 'Arthur Petropoulos',
+                       'author': 'Arthur Petropoulos',
+                       'text': 'That is the magic words for enhancing value.',
+                       'tip': 'That is the magic words for enhancing value.',
+                       'timestamp': 816,
+                       'timestamp_seconds': 816,
+                       'timestamp_label': '[00:13:36]',
+                       'url': 'https://www.youtube.com/watch?v=D58oCe_7BBM&t=816s',
+                       'markdown': '[00:13:36](https://www.youtube.com/watch?v=D58oCe_7BBM&t=816s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'y4u_MuL4xhw',
+                       'title': 'How To Value a Business for Sale (Mergers and Acquisitions)',
+                       'channel': 'Brett Cenkus',
+                       'author': 'Brett Cenkus',
+                       'text': 'At this market level comparable transaction analysis reigned supreme over '
+                               'DCF and public comparables.',
+                       'tip': 'At this market level comparable transaction analysis reigned supreme over '
+                              'DCF and public comparables.',
+                       'timestamp': 106,
+                       'timestamp_seconds': 106,
+                       'timestamp_label': '[00:01:46]',
+                       'url': 'https://www.youtube.com/watch?v=y4u_MuL4xhw&t=106s',
+                       'markdown': '[00:01:46](https://www.youtube.com/watch?v=y4u_MuL4xhw&t=106s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'a5Z--B3Uhrg',
+                       'title': 'How Business Sales Get Financed (Cash, SBA Loans, Seller Notes, Earnouts '
+                                '& Rollovers)',
+                       'channel': 'Deal Street - Small to Lower Middle Market M&A',
+                       'author': 'Deal Street - Small to Lower Middle Market M&A',
+                       'text': 'A seller note is a loan.',
+                       'tip': 'A seller note is a loan.',
+                       'timestamp': 487,
+                       'timestamp_seconds': 487,
+                       'timestamp_label': '[00:08:07]',
+                       'url': 'https://www.youtube.com/watch?v=a5Z--B3Uhrg&t=487s',
+                       'markdown': '[00:08:07](https://www.youtube.com/watch?v=a5Z--B3Uhrg&t=487s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'a5Z--B3Uhrg',
+                       'title': 'How Business Sales Get Financed (Cash, SBA Loans, Seller Notes, Earnouts '
+                                '& Rollovers)',
+                       'channel': 'Deal Street - Small to Lower Middle Market M&A',
+                       'author': 'Deal Street - Small to Lower Middle Market M&A',
+                       'text': 'Do not fall in love with the headline price.',
+                       'tip': 'Do not fall in love with the headline price.',
+                       'timestamp': 902,
+                       'timestamp_seconds': 902,
+                       'timestamp_label': '[00:15:02]',
+                       'url': 'https://www.youtube.com/watch?v=a5Z--B3Uhrg&t=902s',
+                       'markdown': '[00:15:02](https://www.youtube.com/watch?v=a5Z--B3Uhrg&t=902s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'In6A5W0WFdY',
+                       'title': 'The State of SaaS in 2025: Multiples, Growth Strategies, Valuations, & '
+                                'Exit Planning',
+                       'channel': 'Quiet Light Brokerage',
+                       'author': 'Quiet Light Brokerage',
+                       'text': 'One-off custom revenue is not worth anything to buyers, so a contract '
+                               "worth about half a team member's salary was dropped.",
+                       'tip': 'One-off custom revenue is not worth anything to buyers, so a contract worth '
+                              "about half a team member's salary was dropped.",
+                       'timestamp': 1072,
+                       'timestamp_seconds': 1072,
+                       'timestamp_label': '[00:17:52]',
+                       'url': 'https://www.youtube.com/watch?v=In6A5W0WFdY&t=1072s',
+                       'markdown': '[00:17:52](https://www.youtube.com/watch?v=In6A5W0WFdY&t=1072s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'}]}

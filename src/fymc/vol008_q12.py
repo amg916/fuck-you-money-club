@@ -1,704 +1,799 @@
 from __future__ import annotations
 
-CHAPTER_12 = {
-    "id": "Q12",
-    "chapter_id": "Q12",
-    "chapter_number": 12,
-    "question_number": 12,
-    "slug": "first-30-day-launch-sprint-kill-fix-scale-gates",
-    "question_prompt": "What is the exact Day-1-to-Day-30 execution schedule for launching commercial lead generation, and what quantitative thresholds govern Kill, Fix, or Scale decisions at Day 30/60/90?",
-    "kicker": "Q12 / THE BIG MONEY PLAYBOOKS",
-    "title": "The First 30-Day Launch Sprint & Kill / Fix / Scale Gates",
-    "subtitle": "A Four-Person Launch Pod Using HubSpot, Google Workspace, Qualified-Appointment Routing, CAN-SPAM Controls, and Cash-Bounded Cohort Decisions",
-    "layout_template": "thirty_day_plan",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #18, Commercial Lead Generation, holds Rank #05 with an 89/100 "
-        "Money-to-Manpower Score and 54 mapped plays. This sprint turns that opportunity "
-        "into a four-person operating system: one full-time owner plus three contractors "
-        "cover targeting, inbox operations, and qualification. Days 1–7 establish the "
-        "offer and evidence controls; Days 8–14 test outreach; Days 15–21 validate "
-        "appointments and client acceptance; Days 22–30 reconcile cash and select Kill, "
-        "Fix, or Scale. The canonical annual owner-profit cases are $20,000 Conservative, "
-        "$127,500 Base, and $300,000 Scaled, excluding client-funded advertising pass-through "
-        "from operator revenue. A $5,000 first-month cash-burn ceiling, explicit sample "
-        "requirements, and separate acquisition and delivery scoreboards prevent early "
-        "activity from masquerading as a repeatable business."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$100,000",
-            "context": "Annual retainer and accepted-lead revenue; advertising pass-through excluded",
-            "note": "20% net margin; $20,000 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Base",
-            "value": "$425,000",
-            "context": "Annual retainer and accepted-lead revenue; advertising pass-through excluded",
-            "note": "30.0% net margin; $127,500 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$750,000",
-            "context": "Annual retainer and accepted-lead revenue; advertising pass-through excluded",
-            "note": "40% net margin; $300,000 annual owner net profit; 2 FT + 4 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Days 1–7: Bound the Offer, Assign the Pod, and Instrument Every Handoff",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Start with one commercial buyer, one territory, and one acceptance "
-                    "definition, rather than launching a general appointment agency. A "
-                    "workable initial segment is regional commercial HVAC contractors "
-                    "selling maintenance agreements to facilities managers at multi-site "
-                    "businesses. Define an accepted appointment as a held conversation "
-                    "with an eligible decision-maker, inside the contracted territory, "
-                    "with a documented service requirement and an agreed next step. "
-                    "A calendar booking alone earns no accepted-appointment fee. On "
-                    "Day 1, the owner writes the exclusions, duplicate lookback, dispute "
-                    "window, and replacement treatment into a two-page pilot scope. "
-                    "Candidate #18 has 54 mapped operator plays; use a proposed sprint "
-                    "allocation of 12 offer-and-control slots, 14 acquisition slots, "
-                    "16 delivery slots, and 12 reporting-and-retention slots. These "
-                    "allocations organize the supplied total, rather than assert titles "
-                    "for an unavailable play inventory. Link each actual play identifier "
-                    "to a deliverable before declaring coverage. Keep all 54 visible, "
-                    "but activate only the dependencies needed for the first pilot. "
-                    "The owner alone changes pricing and acceptance rules, preventing "
-                    "contractors from quietly selling different promises to different "
-                    "prospects during the same measurement cohort."
-                ),
-                (
-                    "Assign the four-person pod by failure domain. The full-time owner "
-                    "handles discovery, proposals, client acceptance disputes, and cash. "
-                    "The research contractor owns account selection and source provenance; "
-                    "the infrastructure contractor owns Google Workspace configuration, "
-                    "HubSpot fields, and suppression synchronization; the qualification "
-                    "contractor owns callbacks, appointment evidence, and disposition "
-                    "coding. Contractors receive bounded assignments, not an assumption "
-                    "of full-time availability. For the initial month, reserve 30 research "
-                    "hours at $25, 20 infrastructure hours at $40, and 30 qualification "
-                    "hours at $25, totaling $2,300. Reserve $650 for inboxes, domains, "
-                    "CRM, and scheduling; $450 for data and verification; $300 for "
-                    "telephone routing; $300 for targeted professional review; and "
-                    "$1,000 contingency. The resulting $5,000 cash ceiling excludes "
-                    "owner living costs and contains no client advertising advance. "
-                    "Set cumulative spending limits of $1,500, $2,750, $3,875, and "
-                    "$5,000 at Days 7, 14, 21, and 30. Record owner hours separately "
-                    "so apparently inexpensive delivery cannot conceal an overloaded "
-                    "founder. Release contingency only against a named defect, written "
-                    "estimate, and measurable completion criterion; buying another "
-                    "database is not a repair plan by itself."
-                ),
-                (
-                    "Build the evidence model before importing contacts. HubSpot needs "
-                    "account ID, contact source, collection date, geography, campaign "
-                    "cohort, suppression status, permission evidence where required, "
-                    "appointment outcome, client disposition, and fee eligibility. "
-                    "Google Workspace sender domains need correctly published SPF and "
-                    "DKIM records plus DMARC reporting and alignment checks. Use "
-                    "clearly identified business domains, never misleading lookalikes. "
-                    "Separate agency-acquisition records from client-delivery records "
-                    "because their denominators answer different questions. An agency "
-                    "sales meeting cannot become a delivered client lead. Commercial "
-                    "email under 15 U.S.C. § 7704 requires accurate routing information, "
-                    "nondeceptive subjects, applicable identification, a valid postal "
-                    "address, and a working opt-out; process opt-outs immediately "
-                    "operationally, within the statutory outside deadline. Telephone "
-                    "review must address 47 U.S.C. § 227, 47 CFR § 64.1200, and "
-                    "applicable state restrictions based on destination, technology, "
-                    "and message purpose. A business title does not establish that "
-                    "a number is a business landline. Configure Twilio initially for "
-                    "inbound routing and permitted manual callbacks, with recording "
-                    "disabled until applicable notice and permission requirements are "
-                    "resolved. Run synthetic records through every route before a "
-                    "real prospect enters the system."
-                ),
-            ],
-            "table": {
-                "caption": "Days 1–7: Four-Person Pod Deliverables and Evidence Requirements",
-                "headers": [
-                    "Execution day and accountable operator",
-                    "Required deliverable before advancing",
-                    "Recorded evidence and quantitative check",
-                    "Failure response within the cash ceiling",
-                ],
-                "rows": [
-                    [
-                        "Day 1: owner selects one commercial segment",
-                        "Signed-off pilot scope defines territory and accepted appointments",
-                        "One buyer profile includes five explicit exclusion conditions",
-                        "Remove adjacent segments before buying any additional records",
-                    ],
-                    [
-                        "Day 2: research contractor builds account universe",
-                        "Fifty seed accounts include source and selection rationale",
-                        "Owner audits ten accounts against every targeting condition",
-                        "Replace weak sources before expanding the account universe",
-                    ],
-                    [
-                        "Day 3: infrastructure contractor configures sender identity",
-                        "Business inboxes publish SPF, DKIM, and DMARC records",
-                        "Authentication headers pass tests across three recipient providers",
-                        "Pause external sending until identity defects are repaired",
-                    ],
-                    [
-                        "Day 4: owner and infrastructure contractor define records",
-                        "HubSpot pipelines separate agency acquisition from client delivery",
-                        "Ten synthetic records preserve source and suppression status",
-                        "Repair field mappings before importing any prospect contacts",
-                    ],
-                    [
-                        "Day 5: qualification contractor tests appointment handling",
-                        "Calendly booking and Twilio routing reach assigned operators",
-                        "Ten test events produce ten correct CRM dispositions",
-                        "Disable broken routing paths and retain manual ownership",
-                    ],
-                    [
-                        "Day 6: owner reviews outreach and pilot terms",
-                        "Messages identify sender, purpose, postal address, and opt-out",
-                        "Every proposed channel has documented jurisdiction-specific operating requirements",
-                        "Remove unsupported channels instead of assuming business exemption",
-                    ],
-                    [
-                        "Day 7: entire pod rehearses complete workflow",
-                        "Suppression, booking, rejection, and billing simulations finish successfully",
-                        "Cumulative cash spending remains at or below $1,500",
-                        "Carry unresolved defects into repair backlog without prospect exposure",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four Pre-Flight Checks Before Any Prospect Contact",
-                "body": (
-                    "The owner records evidence for each check. A failed check blocks "
-                    "the affected workflow, not unrelated preparation."
-                ),
-                "items": [
-                    "Verify SPF and DKIM results, DMARC alignment, truthful sender identity, and working reply handling using messages delivered to controlled test accounts.",
-                    "Run one synthetic opt-out through every inbox, CRM list, and telephone queue; confirm suppression propagates before another contact attempt can be scheduled.",
-                    "Execute ten synthetic bookings and callbacks; require ten correct account matches, assigned owners, timestamps, and disposition records.",
-                    "Approve the acceptance rubric, dispute clock, fee trigger, contractor access permissions, and $5,000 first-month spending ceiling in one versioned launch record.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Days 8–14: Test Acquisition Without Mistaking Inbox Activity for Demand",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Use Days 8–14 to test whether the selected buyer recognizes "
-                    "the problem and will discuss a paid pilot. Prepare 150 verified "
-                    "agency-acquisition contacts, divided into two 75-contact cells "
-                    "with comparable account size and territory. These are prospects "
-                    "for the agency, not leads delivered to a client. Change only "
-                    "the offer framing between cells: maintenance-pipeline visibility "
-                    "versus qualified facilities conversations, for example. Keep "
-                    "sender identity, contact selection, timing, and follow-up rules "
-                    "otherwise stable. Begin with a small manually reviewed batch "
-                    "and increase only after authentication, reply handling, and "
-                    "suppression work correctly. Multiple inboxes provide legitimate "
-                    "ownership and continuity; they do not justify multiplying volume "
-                    "to escape provider limits. Follow provider terms and stop rather "
-                    "than rotate domains after enforcement. Avoid artificial warm-up "
-                    "networks and engagement exchanges. Each message should reference "
-                    "a verifiable commercial circumstance, not invented familiarity "
-                    "or fabricated customer results. End the week with actual "
-                    "conversations, recorded objections, and a corrected offer. "
-                    "A weak first cell is a research result, not permission to "
-                    "purchase thousands of similar addresses before understanding "
-                    "why the selected buyers ignored it."
-                ),
-                (
-                    "Define measurement rules before comparing variants. Unique delivered "
-                    "contacts equal attempted unique contacts minus hard bounces; count "
-                    "a person once per cohort despite follow-ups. Positive replies "
-                    "express relevant interest or request a substantive commercial "
-                    "discussion; automated replies, referrals without engagement, and "
-                    "polite refusals do not qualify. Mature each contact for seven "
-                    "calendar days after first delivery before using reply results "
-                    "in a checkpoint. Report booked, held, and qualified-held meetings "
-                    "separately. A qualified-held agency meeting requires the buyer "
-                    "profile, a relevant demand problem, and a concrete next step. "
-                    "For client delivery, maintain a separate accepted-submission "
-                    "rate and held-to-booked rate, with exclusions fixed in advance. "
-                    "Investigate any spam complaint immediately and pause the affected "
-                    "source or message while investigating; provider enforcement "
-                    "requires an immediate stop. Pause a source when hard bounces "
-                    "exceed 2% across at least 100 attempts, or when three hard "
-                    "bounces appear in any smaller launch batch. These are internal "
-                    "risk controls, not provider safe harbors. Do not optimize open "
-                    "rates: image blocking and automated fetching make them poor "
-                    "evidence of buyer demand or message quality."
-                ),
-                (
-                    "Make the paid pilot commercially simple enough to sell and "
-                    "operationally narrow enough to fulfill. An illustrative offer "
-                    "is a $1,500 service retainer for a defined pilot period plus "
-                    "$100 for each accepted held appointment, with an initial cap "
-                    "of ten billable appointments. Specify what the retainer buys, "
-                    "how duplicate contacts are treated, and when disputed submissions "
-                    "must receive evidence-backed decisions. Cash collected upfront "
-                    "remains distinct from revenue earned as services are performed. "
-                    "Use Stripe or ACH invoices with clear service descriptions "
-                    "and keep the client's advertising account and funding separate. "
-                    "Never book the client's advertising spend, resulting sales, "
-                    "or contract value as agency fee revenue. During discovery, "
-                    "ask who can accept appointments, what calendar capacity exists, "
-                    "and how quickly the client will return dispositions. A client "
-                    "with no available salesperson can destroy a sound campaign "
-                    "through missed calls. Candidate #18's first-deal range is "
-                    "1–4 months, so a Day 14 launch should produce tested mechanics "
-                    "and credible buying signals rather than an invented contract. "
-                    "If nobody buys, continue only within the approved test budget "
-                    "and repair a specific commercial hypothesis."
-                ),
-            ],
-            "table": {
-                "caption": "Days 8–14: Controlled Agency-Acquisition Tests and Commercial Proof",
-                "headers": [
-                    "Execution day and accountable operator",
-                    "Acquisition experiment or commercial task",
-                    "Required evidence and measurement boundary",
-                    "Repair action when evidence falls short",
-                ],
-                "rows": [
-                    [
-                        "Day 8: research contractor completes first test cohort",
-                        "Prepare two matched cells of seventy-five verified contacts",
-                        "Every record has source, territory, and exclusion review",
-                        "Remove uncertain matches before assigning contacts to variants",
-                    ],
-                    [
-                        "Day 9: owner approves initial controlled outreach",
-                        "Send a manually reviewed subset through authenticated inboxes",
-                        "Replies and opt-outs reach their assigned queues correctly",
-                        "Suspend affected inboxes when routing or suppression fails",
-                    ],
-                    [
-                        "Day 10: infrastructure contractor audits delivery evidence",
-                        "Compare attempted contacts, hard bounces, and provider responses",
-                        "Apply source pause at specified hard-bounce trigger levels",
-                        "Correct source quality rather than replacing sender domains",
-                    ],
-                    [
-                        "Day 11: owner handles first substantive buyer conversations",
-                        "Record demand problem, buying role, timing, and objections",
-                        "Separate relevant commercial interest from automated reply activity",
-                        "Rewrite one offer element around the dominant objection",
-                    ],
-                    [
-                        "Day 12: qualification contractor exercises permitted callback workflow",
-                        "Route requested callbacks and verify available meeting capacity",
-                        "Every callback records request evidence and final disposition",
-                        "Remove unsupported dialing methods and repair scheduling ownership",
-                    ],
-                    [
-                        "Day 13: owner presents bounded paid pilot",
-                        "Issue service scope with retainer and acceptance-based pricing",
-                        "Proposal identifies fee trigger, dispute clock, and appointment cap",
-                        "Resolve ambiguous acceptance terms before collecting pilot payment",
-                    ],
-                    [
-                        "Day 14: owner freezes first weekly experiment report",
-                        "Report preliminary cells without declaring immature contacts failures",
-                        "Cumulative cash spending remains at or below $2,750",
-                        "Select one repair hypothesis and preserve original cohort records",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Four Tactics That Protect a Small Appointment Pod",
-                "body": (
-                    "Experienced operators protect attribution and calendar capacity "
-                    "before optimizing message volume."
-                ),
-                "items": [
-                    "Keep a reason-coded rejection library with redacted evidence; review the five most frequent rejection reasons before purchasing another contact batch.",
-                    "Reserve two client-approved calendar blocks before promising appointment delivery; unavailable salespeople create avoidable rejection and churn.",
-                    "Preserve the original source and cohort fields when contacts move between inbox owners; reassignment must never reset suppression or attribution.",
-                    "Measure qualified-held meetings per owner hour alongside reply rate; an apparently successful campaign can still consume the entire four-person pod.",
-                ],
-            },
-        },
-        {
-            "heading": "3. Days 15–21: Prove Acceptance, Reconcile Unit Costs, and Remove Manual Breakpoints",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Days 15–21 move from message testing to operational proof. "
-                    "If a pilot has sold, onboard exactly one client before "
-                    "replicating the workflow. Capture service territory, excluded "
-                    "accounts, incumbent relationships, buyer roles, calendar capacity, "
-                    "and the designated acceptance contact. Configure a client-specific "
-                    "HubSpot pipeline and routing destination without copying unrestricted "
-                    "access across accounts. Give contractors only the records required "
-                    "for their assignments. Submit each appointment with evidence of "
-                    "fit, the prospect's expressed requirement, meeting attendance, "
-                    "and the agreed next step. Require client disposition within "
-                    "three business days under the pilot agreement, but do not "
-                    "silently convert delayed responses into accepted fees. Escalate "
-                    "late decisions to the owner and exclude unresolved submissions "
-                    "from mature acceptance-rate calculations. Report their count "
-                    "and age separately so delays remain visible. If no client "
-                    "has bought, use clearly labeled synthetic delivery records "
-                    "to test mechanics and continue agency acquisition. Synthetic "
-                    "records never enter market-performance numerators. This branch "
-                    "preserves useful progress without manufacturing acceptance "
-                    "evidence, spending on speculative client campaigns, or making "
-                    "Day 21 revenue appear mandatory despite the stated first-deal "
-                    "time range."
-                ),
-                (
-                    "Calculate delivery contribution using earned service revenue, not "
-                    "calendar activity or bank deposits alone. Suppose one completed "
-                    "pilot earns its $1,500 retainer and ten accepted-appointment "
-                    "fees of $100, producing $2,500 revenue. Direct contractor "
-                    "delivery costs of $900, attributable data and software of "
-                    "$250, and telephone charges of $100 leave $1,250 contribution, "
-                    "or 50%, before shared overhead and owner economics. A rejected "
-                    "appointment earns no acceptance fee; a replacement consumes "
-                    "capacity and its actual cost stays in the ledger. Allocate "
-                    "shared subscriptions once using a documented rule, avoiding "
-                    "double counting between acquisition and delivery. Track agency "
-                    "customer acquisition cost separately as acquisition spending "
-                    "divided by newly paying clients, while recording owner sales "
-                    "hours alongside it. With no paying clients, report spending "
-                    "and zero wins rather than a fabricated ratio. For a first "
-                    "client, divide acquisition cost by observed monthly contribution "
-                    "only when that contribution exists and is reasonably repeatable. "
-                    "A single pilot cannot establish lifetime value. This distinction "
-                    "prevents a high retainer deposit from disguising expensive "
-                    "fulfillment, repeated replacements, and an owner who must "
-                    "personally rescue every appointment."
-                ),
-                (
-                    "Reconcile the operating model to the canonical scorecard before "
-                    "discussing expansion. Conservative revenue of $100,000 could comprise "
-                    "two $3,000 monthly retainers for twelve months, yielding $72,000, "
-                    "plus 280 accepted appointments at $100, yielding $28,000. "
-                    "The 20% net margin leaves $20,000 annual owner profit and "
-                    "$80,000 total modeled costs with 1 FT + 3 C. Base "
-                    "revenue of $425,000 could comprise five $5,000 monthly retainers, "
-                    "yielding $300,000, plus 1,250 accepted appointments at $100, "
-                    "yielding $125,000. At 30.0%, owner profit is $127,500 and "
-                    "modeled costs are $297,500 with the same pod. Scaled revenue "
-                    "of $750,000 could comprise ten $5,000 monthly retainers, "
-                    "yielding $600,000, plus 1,500 accepted appointments at $100, "
-                    "yielding $150,000. At 40%, owner profit is $300,000 and "
-                    "modeled costs are $450,000 with 2 FT + 4 C. "
-                    "These are illustrative fee compositions of exact annual "
-                    "targets, not first-month forecasts. Base delivery implies "
-                    "roughly 104 accepted appointments monthly across five clients; "
-                    "prove staffing capacity before selling that load. Different "
-                    "retainer scopes explain why appointment volume alone cannot "
-                    "predict total revenue or profit."
-                ),
-            ],
-            "table": {
-                "caption": "Days 15–21: Client Delivery, Rejection Forensics, and Contribution Accounting",
-                "headers": [
-                    "Execution day and accountable operator",
-                    "Delivery milestone or evidence-building alternative",
-                    "Required quality or accounting verification",
-                    "Failure response before adding more workload",
-                ],
-                "rows": [
-                    [
-                        "Day 15: owner opens one signed pilot",
-                        "Capture territory, exclusions, calendar capacity, and acceptance contact",
-                        "Without a buyer, label all delivery rehearsals synthetic",
-                        "Continue agency acquisition without purchasing speculative client traffic",
-                    ],
-                    [
-                        "Day 16: research contractor validates client targeting",
-                        "Review first client account batch against contractual exclusions",
-                        "Owner checks ten records for fit and duplicates",
-                        "Correct list logic before making any client-branded contact",
-                    ],
-                    [
-                        "Day 17: qualification contractor verifies appointment evidence",
-                        "Attach attendance, buyer role, requirement, and next-step records",
-                        "Each submitted appointment has all required acceptance evidence",
-                        "Return incomplete submissions for repair before requesting fees",
-                    ],
-                    [
-                        "Day 18: infrastructure contractor automates disposition reporting",
-                        "Route acceptance decisions into client-specific reporting and billing",
-                        "Unresolved submissions display count, owner, and elapsed age",
-                        "Replace brittle automation with a documented manual queue",
-                    ],
-                    [
-                        "Day 19: owner reviews rejection reasons with client",
-                        "Separate targeting errors from missed calls and scope changes",
-                        "Every rejection receives evidence and one accountable repair owner",
-                        "Correct underlying cause before offering repeated free replacements",
-                    ],
-                    [
-                        "Day 20: owner reconciles earned revenue and contribution",
-                        "Match service delivery, accepted fees, credits, and direct costs",
-                        "Pilot economics exclude advertising pass-through and unearned deposits",
-                        "Reprice or narrow delivery when contribution remains structurally weak",
-                    ],
-                    [
-                        "Day 21: entire pod reviews capacity and cash",
-                        "Document owner hours, contractor hours, and unresolved service defects",
-                        "Cumulative cash spending remains at or below $3,875",
-                        "Stop adding workload when unresolved defects consume reserved capacity",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Freeze the eligible delivery cohort",
-                    "action": "Export submitted appointments with immutable account and cohort identifiers.",
-                    "detail": "Include submission dates, held status, acceptance evidence, and the three-business-day disposition deadline.",
-                },
-                {
-                    "step": 2,
-                    "title": "Resolve disposition without changing definitions",
-                    "action": "Obtain accepted, rejected, or unresolved status from the designated client contact.",
-                    "detail": "Retain rejection reasons and unresolved age; never infer acceptance solely from silence or calendar attendance.",
-                },
-                {
-                    "step": 3,
-                    "title": "Reconcile fees and actual delivery costs",
-                    "action": "Match eligible fees to invoice lines and attribute contractor, data, software, and telephone costs.",
-                    "detail": "Record credits and replacements explicitly; keep client advertising and unearned deposits outside earned operator revenue.",
-                },
-                {
-                    "step": 4,
-                    "title": "Publish the repair and capacity decision",
-                    "action": "Issue a weekly report containing acceptance, held rate, contribution, owner hours, and corrective assignments.",
-                    "detail": "Authorize the next bounded batch only after the owner confirms cash headroom and available fulfillment capacity.",
-                },
-            ],
-        },
-        {
-            "heading": "4. Days 22–30 and Beyond: Apply Sample-Aware Kill, Fix, or Scale Decisions",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Use the final nine days to close evidence gaps rather "
-                    "than maximize send counts. Day 22 audits targeting and "
-                    "suppression; Day 23 starts the last acquisition contacts "
-                    "eligible to mature by Day 30. Day 24 reviews proposals "
-                    "and objections; Day 25 reconciles client dispositions; "
-                    "Day 26 locks cost attribution; Day 27 reviews contractor "
-                    "capacity; Day 28 tests reporting recovery; Day 29 freezes "
-                    "the checkpoint packet; Day 30 records the decision. "
-                    "For agency acquisition, the cumulative mature sample floors "
-                    "are 300 unique delivered contacts at Day 30, 600 at "
-                    "Day 60, and 1,000 at Day 90. Require positive replies "
-                    "of at least 2% and qualified-held meetings of at least "
-                    "1% at each checkpoint. The corresponding minimum counts "
-                    "are six and three, twelve and six, then twenty and "
-                    "ten. Preserve source and variant cuts because cumulative "
-                    "averages can hide deteriorating recent performance. Contacts "
-                    "still within seven days of first delivery remain pending. "
-                    "An underpowered cohort receives Fix or a bounded extension, "
-                    "not a declaration that the market has failed. Missing "
-                    "revenue at Day 30 alone does not justify killing an "
-                    "opportunity whose first deal can require four months."
-                ),
-                (
-                    "Scale requires delivery proof as well as acquisition response. "
-                    "At Days 30, 60, and 90, require at least 10, "
-                    "20, and 30 resolved client submissions respectively, acceptance "
-                    "of at least 80%, and held-to-booked performance of at "
-                    "least 70% across at least 10, 20, and 30 due "
-                    "bookings. Due bookings exclude future meetings; resolved "
-                    "submissions exclude pending client decisions. Require delivery "
-                    "contribution of at least 40%, 45%, and 50%, respectively, "
-                    "using actual earned revenue and attributable costs. Commercial "
-                    "proof rises from one paying pilot and $1,500 cumulative "
-                    "collected service fees, to one renewing or extending client "
-                    "and $3,000 collected, to two active paying clients and "
-                    "$6,000 collected. Collections exclude advertising funds and "
-                    "refundable security deposits. At Day 90, require the oldest "
-                    "eligible client to renew or extend; if no client has "
-                    "reached a decision date, retention remains unproven. Keep "
-                    "all acquisition, delivery, cash, and capacity conditions "
-                    "conjunctive: passing one does not offset failing another. "
-                    "Day 30 Scale therefore means a controlled next test, "
-                    "not an automatic staff expansion. Increase approved contact "
-                    "volume or client capacity by no more than 25% per "
-                    "two-week cycle, changing only one dimension."
-                ),
-                (
-                    "Kill the affected channel immediately for a material permission "
-                    "failure, ignored opt-outs, or provider enforcement; preserve "
-                    "evidence and investigate before any restart. Stop discretionary "
-                    "spending when its ceiling is reached. For commercial viability, "
-                    "Day 60 Kill applies when two sequential repaired tests, "
-                    "each with at least 300 mature delivered contacts, produce "
-                    "zero positive replies. Day 90 Kill applies when two "
-                    "completed delivery repair cycles still leave contribution "
-                    "below 20% on at least 30 resolved submissions, or when "
-                    "at least ten qualified-held agency meetings and five "
-                    "written proposals produce zero collected service fees. "
-                    "These are internal stop rules for this offer and segment, "
-                    "not universal market verdicts. All other misses enter "
-                    "Fix with one owner, one hypothesis, and a fourteen-day "
-                    "deadline. Authorize no more than $2,500 additional gross "
-                    "cash spending per extension, without automatic renewal; "
-                    "cumulative ceilings become $10,000 at Day 60 and $15,000 "
-                    "at Day 90 if both monthly extensions are approved. "
-                    "Require committed cash for remaining obligations before "
-                    "authorizing each extension. Reserve 20% of pod capacity "
-                    "for defects and client response. Expand beyond 1 FT "
-                    "+ 3 C only after measured workload supports the "
-                    "canonical Scaled configuration of 2 FT + 4 C."
-                ),
-            ],
-            "table": {
-                "caption": "Days 22–30 Execution Closeout and Quantitative Day 30/60/90 Decisions",
-                "headers": [
-                    "Day or checkpoint and accountable operator",
-                    "Required execution or Scale evidence",
-                    "Fix condition and bounded repair response",
-                    "Kill condition or spending stop trigger",
-                ],
-                "rows": [
-                    [
-                        "Day 22: research contractor audits active targeting",
-                        "Recheck source provenance, territory fit, and suppression synchronization",
-                        "Repair any mismatched records before the next contact batch",
-                        "Stop affected outreach immediately for ignored opt-out instructions",
-                    ],
-                    [
-                        "Day 23: owner closes checkpoint acquisition intake",
-                        "Start final contacts that can mature by Day 30",
-                        "Label later contacts pending rather than counting premature failures",
-                        "Stop source purchasing when approved cash headroom is exhausted",
-                    ],
-                    [
-                        "Day 24: owner reviews discovery and proposals",
-                        "Attach buyer problem, commercial next step, and proposal status",
-                        "Repair one dominant objection with a revised bounded offer",
-                        "Stop unsupported claims or offers the pod cannot fulfill",
-                    ],
-                    [
-                        "Day 25: qualification contractor closes disposition gaps",
-                        "Chase overdue decisions and verify held appointment evidence",
-                        "Keep unresolved submissions visible outside mature acceptance denominators",
-                        "Stop billing disputed appointments until contractual eligibility is resolved",
-                    ],
-                    [
-                        "Day 26: owner freezes cohort cost attribution",
-                        "Reconcile earned fees, actual costs, credits, and deposits",
-                        "Correct misallocated expenses before calculating pilot contribution margins",
-                        "Stop discretionary commitments that exceed remaining approved cash",
-                    ],
-                    [
-                        "Day 27: owner reviews four-person pod capacity",
-                        "Document committed hours with twenty percent reserved for defects",
-                        "Reduce intake when scheduled work consumes the repair reserve",
-                        "Stop promising appointments beyond verified client calendar capacity",
-                    ],
-                    [
-                        "Day 28: infrastructure contractor tests reporting recovery",
-                        "Restore exports and replay synthetic routing without duplicate fees",
-                        "Repair broken event handling before relying on automated reports",
-                        "Disable automation that loses suppression or exposes client records",
-                    ],
-                    [
-                        "Day 29: owner freezes decision packet evidence",
-                        "Include mature cohorts, collections, delivery outcomes, costs, and capacity",
-                        "List missing samples explicitly and propose one bounded extension",
-                        "Reject unsupported Scale claims based on bookings or deposits",
-                    ],
-                    [
-                        "Day 30: owner signs next operating decision",
-                        "Publish Kill, Fix, or Scale with named accountable owners",
-                        "Authorize fourteen-day repairs only against specific measurable hypotheses",
-                        "Stop further discretionary spending at the $5,000 initial ceiling",
-                    ],
-                    [
-                        "Day 30 checkpoint: every Scale condition must pass",
-                        "Require 300 mature contacts, six positives, three qualified-held meetings; one paid pilot, $1,500 collected; ten resolved submissions, 80% acceptance, ten due bookings, 70% held, 40% contribution",
-                        "Fix any missing sample or missed threshold within fourteen days and at most $2,500 newly authorized spending",
-                        "Kill affected channels for material control failures; stop unapproved spending, but do not kill solely for zero early sales",
-                    ],
-                    [
-                        "Day 60 checkpoint: every Scale condition must pass",
-                        "Require 600 mature contacts, twelve positives, six qualified-held meetings; one renewal or extension, $3,000 collected; twenty resolved submissions, 80% acceptance, twenty due bookings, 70% held, 45% contribution",
-                        "Repair response, acceptance, or renewal weakness; cumulative authorized gross spending cannot exceed $10,000 through Day 60",
-                        "Kill the offer-segment test after two repaired 300-contact mature cohorts yield zero positive replies across both cohorts",
-                    ],
-                    [
-                        "Day 90 checkpoint: every Scale condition must pass",
-                        "Require 1,000 mature contacts, twenty positives, ten qualified-held meetings; two active paying clients, $6,000 collected, oldest eligible client renewed; thirty resolved submissions, 80% acceptance, thirty due bookings, 70% held, 50% contribution",
-                        "Fix any remaining miss without automatic extension; cumulative authorized gross spending cannot exceed $15,000 through Day 90",
-                        "Kill below 20% contribution after two completed repairs and thirty resolved submissions, or zero collected fees after ten qualified-held meetings and five proposals",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": "Scale accepted outcomes that survive cost reconciliation, not inbox activity that survives a screenshot.",
-    "diagram_id": "diag-08",
-    "action_checklist": [
-        "Assign all 54 mapped plays to the proposed 12/14/16/12 workstream register, linking actual play identifiers without claiming unverified coverage.",
-        "Name the owner and three contractors, reserve their hours, and approve the $5,000 initial ceiling with cumulative weekly spending limits.",
-        "Configure authenticated sender identity, synchronized suppression, separate acquisition and delivery pipelines, and ten successful synthetic routing tests.",
-        "Run matched acquisition cohorts with seven-day maturation, explicit positive-reply definitions, and separate booked, held, and qualified-held meeting counts.",
-        "Use a signed acceptance rubric to reconcile pilot fees, unresolved submissions, replacements, direct costs, owner hours, and client collections.",
-        "Publish Day 30/60/90 decision packets using every sample, quality, contribution, collection, renewal, capacity, and cash condition before expanding workload.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "15 U.S.C. § 7704 — Requirements for transmission of messages",
-            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
-            "relevance": (
-                "Governs commercial-email header accuracy, subject lines, applicable "
-                "identification, postal-address disclosure, opt-out mechanisms, and "
-                "honoring opt-out requests within ten business days."
-            ),
-        },
-        {
-            "title": "47 U.S.C. § 227 — Restrictions on use of telephone equipment",
-            "url": "https://www.law.cornell.edu/uscode/text/47/227",
-            "relevance": (
-                "Requires channel-specific review of automated and prerecorded calling, "
-                "destination numbers, and applicable permission requirements before "
-                "introducing outbound telephone workflows."
-            ),
-        },
-        {
-            "title": "47 CFR § 64.1200 — Delivery restrictions",
-            "url": "https://www.ecfr.gov/current/title-47/chapter-I/subchapter-B/part-64/subpart-L/section-64.1200",
-            "relevance": (
-                "Provides operative federal telephone-solicitation, consent, identification, "
-                "and do-not-call rules whose applicability must be assessed for the "
-                "actual calling method, recipient, and message."
-            ),
-        },
-        {
-            "title": "California Civil Code § 1798.100 — General duties of businesses collecting personal information",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=1798.100.&lawCode=CIV",
-            "relevance": (
-                "For covered businesses, supports concrete collection-notice, purpose "
-                "limitation, retention, security, and recipient-contract requirements; "
-                "business-contact records require an applicability assessment rather "
-                "than a blanket exclusion."
-            ),
-        },
-        {
-            "title": "California Penal Code § 632 — Confidential communications",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=632.&lawCode=PEN",
-            "relevance": (
-                "Restricts recording confidential communications without the required "
-                "consent of all parties, making recording settings and jurisdictional "
-                "review necessary before retaining appointment-call audio."
-            ),
-        },
-    ],
-}
+CHAPTER_12 = {'id': 'Q12',
+ 'chapter_id': 'Q12',
+ 'chapter_number': 12,
+ 'question_number': 12,
+ 'slug': 'lead-distribution-call-routing-follow-up',
+ 'question_prompt': 'How do operators configure lead distribution and call routing, address lead quality, '
+                    'and connect captured inquiries to automated follow-up?',
+ 'kicker': 'Q12 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Lead Distribution, Call Routing, and Follow-Up',
+ 'subtitle': 'boberdoo ping-post operations, Lead Prosper buyer integrations, API specifications, source '
+             'management and notifications, Callvane tracking, B2B lead quality, and GoHighLevel AI '
+             'workflows',
+ 'layout_template': 'action_worksheet_summary',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Operators running lead and call distribution converge on one machine: capture the '
+                      'lead, route it in seconds to the buyer or tenant who pays most, and follow up '
+                      'before a competitor does. boberdoo.com walks through ping post, where a '
+                      'partial-data ping collects bids from every eligible buyer, a margin is carved out, '
+                      'and the full lead posts to the winner, with 15-second ping and 30-second post '
+                      'timeouts. Local SEO Made Easy prices pay-per-call at $100 per call and qualifies '
+                      'calls by duration thresholds such as 90 seconds, while Jason Grossman fires a voice '
+                      'AI callback within 60 seconds and runs a three-step SMS sequence. Lead Prosper '
+                      'shows the field-mapping grind behind every buyer integration. Disagreement centers '
+                      'on rev-share inside ping post, all-at-once ring modes, and whether to add ad '
+                      'platforms before fixing LTV.',
+ 'key_metrics': [{'label': 'Pay-Per-Call Price',
+                  'metric': 'Pay-Per-Call Price',
+                  'value': '$100 per call',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Pay-per-call model the host runs alongside rank-and-rent tenants paying $500 '
+                             'or $1,000 per month.',
+                  'source': 'Local SEO Made Easy ([Bu_9XhXpDSs @ 00:02:33])'},
+                 {'label': 'Ping/Post Timeout Windows',
+                  'metric': 'Ping/Post Timeout Windows',
+                  'value': '15 seconds ping / 30 seconds post',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Example source timeouts; any buyer whose server lags past the window is '
+                             'excluded from the auction.',
+                  'source': 'boberdoo.com ([DSbDVWpyXUI @ 00:15:43])'},
+                 {'label': 'Voice AI Speed-To-Lead',
+                  'metric': 'Voice AI Speed-To-Lead',
+                  'value': 'Within 60 seconds',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Voice AI agent 'Alex' calls every new sign-up inside the GoHighLevel "
+                             'follow-up sequence.',
+                  'source': 'Jason Grossman ([Ot93upK_YX4 @ 00:52:38])'},
+                 {'label': 'Buyer Refund Cap',
+                  'metric': 'Buyer Refund Cap',
+                  'value': '15% over the past 30 days',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Example cap on a buyer's lead returns so refund requests cannot exceed a set "
+                             'share of purchases.',
+                  'source': 'boberdoo.com ([DSbDVWpyXUI @ 00:22:43])'}],
+ 'sections': [{'heading': 'Section 1: The Practitioner Consensus',
+               'paragraphs': ['Every operator teaching distribution builds around the same engine: get the '
+                              'lead or the call in front of the buyer who pays the most, and do it in '
+                              'seconds. boberdoo.com describes ping post as a two-stage auction where the '
+                              'ping goes out without personal info to all eligible buyers simultaneously, '
+                              "bids get compared, and the full lead posts to the winner or winners 'in a "
+                              "matter of seconds' [o5v8ME_4M_M @ 00:00:38]. Lead Prosper drills the same "
+                              'rule into every buyer setup: the ping carries only partial, case-specific '
+                              "data such as zip code or city and never contains the lead's personal "
+                              'information [gX0fjRlg1lg @ 00:00:16]. Local SEO Made Easy runs identical '
+                              'logic for phone traffic inside Callvane, sketching a chain where the '
+                              'customer (A) calls through the host (B) and gets forwarded to the business '
+                              'owner (C) [Bu_9XhXpDSs @ 00:05:28]. The host then layers on a real-time '
+                              'bidding example where bids of 50, 40, 60, 52 and 62 come in and buyer five '
+                              'takes the call inside a 10-to-20-second window [Bu_9XhXpDSs @ 01:12:03]. '
+                              'The shared baseline is simple: strip the ping to the minimum, put a hard '
+                              'clock on the decision, and hand the lead or caller to the top bidder when '
+                              'that clock runs out.',
+                              'The second point of agreement is that follow-up speed decides who gets '
+                              'paid. Opsynx AI builds its entire local-business pitch on the claim that '
+                              'most consumers pick the first business that responds, framing getting found '
+                              'as only the beginning of the job [-uqaX9Doo6s @ 00:00:37]. Jason Grossman '
+                              'operationalizes that inside GoHighLevel: the moment someone signs up, a '
+                              'voice AI agent named Alex calls them within 60 seconds, and a VA follows '
+                              'with a manual call later in the sequence [Ot93upK_YX4 @ 00:52:38]. Grossman '
+                              "is blunt about channel preference, saying 'I'm a huge fan of phone calls "
+                              "and SMS,' and builds the rest of the follow-up around text and voice rather "
+                              'than inbox-only nurture [Ot93upK_YX4 @ 00:40:13]. On the distribution side, '
+                              'the same impatience shows up as hard server timeouts. boberdoo.com sets '
+                              'example windows of 15 seconds for the ping and 30 seconds for the post, and '
+                              'any buyer whose server lags past that window is simply excluded from the '
+                              'auction instead of holding up the sale [DSbDVWpyXUI @ 00:15:43]. Whether '
+                              "the slow party is a buyer's API or a prospect deciding which business to "
+                              'call back, the operators agree the money goes to whoever answers first, so '
+                              'they automate the first touch and staff humans behind it.',
+                              'Before any of that routing pays, the practitioners insist on three '
+                              'prerequisites: volume, filters and compliance data. Jason Grossman states '
+                              'flatly that you cannot have quality without quantity, which is why their '
+                              'system chases lead flow first and refinement second [Ot93upK_YX4 @ '
+                              "00:03:35]. MoreMozi's advisor hammers the same point from the agency side. "
+                              'A B2B lead gen shop wants higher-seniority, higher-salary leads and is '
+                              "eyeing new platforms, and the advisor's first warning is to keep Meta "
+                              "running and 'don't stop the flow' while anything new gets tested "
+                              '[94mDeuLH24c @ 00:00:55]. Once volume exists, boberdoo.com calls filter '
+                              'sets the most important part of the entire distribution system, with daily, '
+                              'weekly and monthly caps plus delivery schedules configured on each buyer so '
+                              'traffic lands only where and when a partner has agreed to take it '
+                              '[Dktb23hf-d8 @ 00:00:42]. Compliance is treated as plumbing rather than an '
+                              "afterthought: Lead Prosper's LeadsPedia buyer setup requires either a "
+                              'jornaya_lead_id or a trusted_form field in the payload [_1N3fncM-Ss @ '
+                              '00:00:41]. Skip volume and the auction has nothing to sell. Skip filter '
+                              'sets and buyers get flooded past their caps. Skip the compliance token and '
+                              "the buyer's spec is never satisfied, so the integration cannot go live at "
+                              'all.'],
+               'table': {'caption': 'Where the lead and call distribution operators agree',
+                         'headers': ['Consensus Point',
+                                     'What The Practitioner Does',
+                                     'Why It Matters To Operators',
+                                     'Expert Source'],
+                         'rows': [['Ping goes out with no personal data',
+                                   'Ping all eligible buyers simultaneously without personal info, then '
+                                   'post to the winner',
+                                   'Buyers price the lead on partial data before the full record moves',
+                                   'boberdoo.com ([o5v8ME_4M_M @ 00:00:38])'],
+                                  ['Ping limited to case-specific fields only',
+                                   'Send only partial details such as zip code or city on every ping',
+                                   "The lead's personal information never reaches buyers who lose the bid",
+                                   'Lead Prosper ([gX0fjRlg1lg @ 00:00:16])'],
+                                  ['Hard timeouts on every buyer server',
+                                   'Example windows of 15 seconds for the ping and 30 seconds for the post',
+                                   'Lagging buyer servers get excluded instead of stalling the whole '
+                                   'auction',
+                                   'boberdoo.com ([DSbDVWpyXUI @ 00:15:43])'],
+                                  ['Filter sets drive all distribution decisions',
+                                   'Daily, weekly and monthly caps plus schedules configured on each buyer '
+                                   'filter set',
+                                   'The vendor calls filter sets the most important part of the system',
+                                   'boberdoo.com ([Dktb23hf-d8 @ 00:00:42])'],
+                                  ['Calls route on the same logic as leads',
+                                   'Calls route on the logic that handles over 750,000 leads per day',
+                                   'One routing brain covers both form leads and inbound phone traffic',
+                                   'boberdoo.com ([Dktb23hf-d8 @ 00:01:53])'],
+                                  ['Instant automated contact after every sign-up',
+                                   'Voice AI agent Alex calls each new sign-up within 60 seconds',
+                                   'First touch is automated so human VAs and setters handle later '
+                                   'follow-up',
+                                   'Jason Grossman ([Ot93upK_YX4 @ 00:52:38])'],
+                                  ['Never cut the channel that already produces leads',
+                                   'Keep Meta running while testing LinkedIn, Twitter or cold outreach for '
+                                   'better leads',
+                                   "Advisor warns 'don't stop the flow' while chasing higher lead quality",
+                                   'MoreMozi ([94mDeuLH24c @ 00:00:55])']]}},
+              {'heading': 'Section 2: Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['boberdoo.com teaches the money side of ping post as margin carving. Two '
+                              'numbers decide whether an auction is worth running: what buyers bid and '
+                              'what the operator keeps. With Return Best Price switched on, the system '
+                              'pings the lead out, gathers the bid, carves out a profit margin and passes '
+                              'the balance back to the seller as the represented bid [DSbDVWpyXUI @ '
+                              '00:16:42]. Static margins are straight subtraction: a $10 buyer bid minus a '
+                              '$2 margin becomes an $8 bid back to the seller, and a $3 margin turns it '
+                              'into $7 [DSbDVWpyXUI @ 00:28:02]. Dynamic buyers get a matrix instead, with '
+                              '10% margin on bids from $0 to $10, 15% from $10 to $25 and 25% above that, '
+                              'plus optional bid floors [DSbDVWpyXUI @ 00:34:06]. A max-best-price ceiling '
+                              'catches fat-finger bids, because a $1,000 typo at a 10% margin would '
+                              'otherwise pass a $900 bid back to the seller [yCAVYNpSdZI @ 00:17:35]. '
+                              'Every one of these settings sits on the source or buyer record, which means '
+                              'the margin is locked in before the first ping fires rather than negotiated '
+                              "lead by lead. The operator's job is choosing the margin structure that fits "
+                              'each buyer, static for flat-priced buyers and the matrix for dynamic '
+                              'bidders.',
+                              "Lead Prosper's buyer-setup walkthroughs show the field-level grind behind "
+                              'every one of those bids. For a LeadsPedia buyer, lp_campaign_id and '
+                              'lp_campaign_key ride on both the ping and the post, and lp_test=1 goes into '
+                              'the payload during testing and comes out before launch [_1N3fncM-Ss @ '
+                              '00:00:21]. A boberdoo buyer uses the same URL for ping and post, '
+                              'distinguished only by the Mode field, with Key and API_action required, '
+                              'Return_Best_Price=1 set for dynamic pricing and TYPE=34 in the example '
+                              'payload [Ma1kH51odZ0 @ 00:00:55]. Phonexa buyers need a promise token '
+                              'echoed from the ping response into the post with '
+                              '{{lp_ping_response:promise}} [Pzlk50aGkUg @ 00:01:23]. Inside Lead '
+                              "Prosper's own builder, the ping response is set to status=ACCEPTED with the "
+                              'real-time price toggle on, and the bid path points at /bids/payout so the '
+                              "system extracts the buyer's price from the response [gX0fjRlg1lg @ "
+                              '00:02:53]. None of these field names are interchangeable; each buyer '
+                              'platform has its own vocabulary for the same job. The pattern across '
+                              'platforms is the same: echo an ID or token from the ping into the post, '
+                              'parse the price from a known response path, and keep test flags in place '
+                              'until the buyer confirms the round trip works.',
+                              'Local SEO Made Easy puts hard numbers on the call side of distribution. The '
+                              'host runs two models: pay-per-call at $100 per call and rank-and-rent '
+                              'tenants paying $500 or $1,000 a month [Bu_9XhXpDSs @ 00:02:33]. When '
+                              'pricing the plumbing, they break down Ringba at 5 cents per minute '
+                              'incoming, 3 cents outgoing and 1 cent for recording, so a single 3-minute '
+                              'call costs 27 cents before any platform fees are counted [Bu_9XhXpDSs @ '
+                              '00:15:53]. That per-minute math is the benchmark the host holds every '
+                              'routing tool against. Inside Callvane, every buyer gets a ring strategy: '
+                              'ring in order, split traffic 70/30, take turns between buyers, or ring '
+                              'every buyer at once [Bu_9XhXpDSs @ 00:35:21]. Network mode turns the '
+                              'operator into a broker. Hartley & Sons pays $100 for a call that runs past '
+                              '120 seconds, a second buyer pays $95, and the publisher who generated the '
+                              'call is paid $70, so the operator keeps the spread on every qualified '
+                              'connection [Bu_9XhXpDSs @ 00:59:31]. The working model is identical to ping '
+                              'post: price each buyer separately, set a duration threshold that defines a '
+                              'billable call, choose how traffic is divided among buyers, and live on the '
+                              'difference between what buyers pay and what sources cost.'],
+               'table': {'caption': 'Exact settings, prices and spreads taught by the operators',
+                         'headers': ['Mechanic Or Tool',
+                                     'Exact Setting Or Number',
+                                     'Operator Use',
+                                     'Expert Source'],
+                         'rows': [['boberdoo static margin on buyer bids',
+                                   '$10 buyer bid minus $2 margin yields an $8 represented bid',
+                                   'Fixed profit carved from every bid before passing the balance back',
+                                   'boberdoo.com ([DSbDVWpyXUI @ 00:28:02])'],
+                                  ['boberdoo dynamic margin matrix for bidders',
+                                   '10% on $0-10, 15% on $10-25, 25% on bids above that',
+                                   'Margin scales with bid size, and bid floors are also available',
+                                   'boberdoo.com ([DSbDVWpyXUI @ 00:34:06])'],
+                                  ['Max-best-price ceiling against typo bids',
+                                   'A $1,000 typo bid at a 10% margin would pass back $900',
+                                   'Caps runaway buyer bids before they reach the seller response',
+                                   'boberdoo.com ([yCAVYNpSdZI @ 00:17:35])'],
+                                  ['Buyer refund cap inside the platform',
+                                   "Cap a buyer's refunds at 15% over the past 30 days",
+                                   'Stops return requests from eating the margin on already sold leads',
+                                   'boberdoo.com ([DSbDVWpyXUI @ 00:22:43])'],
+                                  ['Callvane per-buyer call qualification threshold',
+                                   'Mr. Roofer pays $50 once a routed call passes 90 seconds',
+                                   'Per-buyer duration rules decide which calls become billable revenue',
+                                   'Local SEO Made Easy ([Bu_9XhXpDSs @ 00:29:48])'],
+                                  ['Ringba per-minute telecom cost benchmark',
+                                   'Incoming 5 cents, outgoing 3 cents, recording 1 cent; 3-minute call '
+                                   'costs 27 cents',
+                                   'Benchmark for per-call telecom cost when comparing routing tools',
+                                   'Local SEO Made Easy ([Bu_9XhXpDSs @ 00:15:53])'],
+                                  ['Callvane network-mode buyer and publisher spread',
+                                   'Hartley & Sons pays $100 at 120 seconds; publisher payout is $70',
+                                   "The gap between buyer price and publisher payout is the operator's "
+                                   'profit',
+                                   'Local SEO Made Easy ([Bu_9XhXpDSs @ 00:59:31])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Integration Tricks That Save A Buyer Launch',
+                           'body': 'Small settings in the payload builder and the source record decide '
+                                   'whether a buyer integration bids cleanly or silently breaks.',
+                           'items': ['Set the payload type (form or JSON) before making any edits, because '
+                                     'switching it after editing resets the builder [Lead Prosper — '
+                                     'gX0fjRlg1lg @ 00:01:33].',
+                                     'Strip lp_action test out of the payload builder before going live, '
+                                     'or the buyer keeps treating real leads as tests [Lead Prosper — '
+                                     'gX0fjRlg1lg @ 00:05:22].',
+                                     'On Phonexa posts most fields are optional, so confirm with the buyer '
+                                     'exactly which fields they want before launch [Lead Prosper — '
+                                     'Pzlk50aGkUg @ 00:01:37].',
+                                     "Use 'yes but sold non-exclusively' so a rejected lead gets re-sold "
+                                     'to the next buyer as long as price stays above cost [boberdoo.com — '
+                                     'DSbDVWpyXUI @ 00:17:26].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Map the buyer spec and build the ping',
+                              'action': 'Pull field names, formats and ping/post requirements from the '
+                                        "buyer's API specs, then hardcode the campaign credentials.",
+                              'detail': "Start from the spec sheet's field name, type/format, ping or post "
+                                        'requirement and description; fields can be mapped, such as '
+                                        'incident_date to accident_date [Lead Prosper — gX0fjRlg1lg @ '
+                                        '00:00:16]. Hardcode lp_campaign_id, lp_supplier_id and lp_key, '
+                                        'and add lp_action test while testing [Lead Prosper — gX0fjRlg1lg '
+                                        '@ 00:01:48].'},
+                             {'step': 2,
+                              'title': 'Parse the bid and gate the post',
+                              'action': 'Map the ping response, set a minimum bid rule, then wire the post '
+                                        'to echo the ping ID.',
+                              'detail': 'Set the ping response to status=ACCEPTED, turn on real-time price '
+                                        'and point the bid path at /bids/payout, with an optional '
+                                        'send-post-if rule such as bid of $20 or more [Lead Prosper — '
+                                        'gX0fjRlg1lg @ 00:03:25]. Use a separate post URL and pass '
+                                        'lp_ping_id via {{lp_ping_response:ping_id}} [Lead Prosper — '
+                                        'gX0fjRlg1lg @ 00:04:07].'},
+                             {'step': 3,
+                              'title': 'Lock margins, timeouts and refund caps',
+                              'action': 'Configure source timeouts, buyer margins, refund caps and '
+                                        'auto-rebilling before traffic flows.',
+                              'detail': 'Set example timeouts of 15 seconds ping and 30 seconds post so '
+                                        'lagging buyers drop out [boberdoo.com — DSbDVWpyXUI @ 00:15:43]. '
+                                        'Cap refunds at 15% over 30 days [boberdoo.com — DSbDVWpyXUI @ '
+                                        '00:22:43] and rebill $500 through Authorize.net CIM whenever a '
+                                        'balance falls below $80 [boberdoo.com — DSbDVWpyXUI @ 00:24:28].'},
+                             {'step': 4,
+                              'title': 'Fire the follow-up sequence',
+                              'action': 'Trigger an instant voice AI call, then run the short SMS sequence '
+                                        'with booking reminders.',
+                              'detail': 'Have voice AI agent Alex call each new sign-up within 60 seconds '
+                                        '[Jason Grossman — Ot93upK_YX4 @ 00:52:38]. Send SMS on Day 0 (add '
+                                        'to calendar), Day 1 (join the mastermind) and Day 3 (book a '
+                                        "strategy call), 'only three in a row,' with reminders 24 hours "
+                                        'and 1 hour before [Jason Grossman — Ot93upK_YX4 @ 00:42:04].'}]},
+              {'heading': 'Section 3: Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['Routing splits operators into two camps: race-to-answer and race-to-bid. '
+                              'The Callvane demo on Local SEO Made Easy pushes calls through a ring tree '
+                              'with four modes: in order, a 70/30 split, take turns, and all at once '
+                              '[Bu_9XhXpDSs @ 00:35:21]. When a viewer pushed back that all-at-once '
+                              'ringing is bad because of callbacks, the host shut it down flat: there is '
+                              'no call-back system, so the mode stays on the menu [Bu_9XhXpDSs @ '
+                              '00:45:10]. boberdoo.com runs the opposite logic on leads. The ping goes out '
+                              'stripped of personal information to every eligible buyer simultaneously, '
+                              'the bids are compared, and the post lands with the winner or winners in a '
+                              'matter of seconds [o5v8ME_4M_M @ 00:00:38]. Callvane bolts the same auction '
+                              'idea onto calls: in its real-time bidding example, buyers bid 50, 40, 60, '
+                              '52 and 62, and buyer B5 takes the call at 62 inside a 10 to 20 second '
+                              'window [Bu_9XhXpDSs @ 01:12:03]. The split is not about software brand; it '
+                              'is about what buyers compete on. Ring trees reward whoever picks up, splits '
+                              'and rotations spread volume across tenants, and auctions reward the highest '
+                              'bid that clears filters. Match the mode to how each buyer actually pays you '
+                              'before wiring a single number or posting a single lead.',
+                              'Pricing is where the sharpest disagreements live. boberdoo.com teaches '
+                              'static margin as plain subtraction: a buyer bidding $10 with a $2 margin '
+                              'shows the seller an $8 bid, and a $3 margin drops the represented bid to $7 '
+                              '[DSbDVWpyXUI @ 00:28:02]. For dynamic buyers the lead price sits at $0 and '
+                              'a margin matrix takes over, 10% on bids from $0 to $10, 15% from $10 to '
+                              '$25, and 25% above that, with bid floors available on top [DSbDVWpyXUI @ '
+                              '00:34:06]. The same team draws a hard line on revenue share: if you are '
+                              'going to run rev-sharing models, they recommend not running them in a ping '
+                              'post fashion [yCAVYNpSdZI @ 00:25:13]. The Callvane camp sells the opposite '
+                              'flexibility to tenants: fixed rent, per qualified call, rent plus call, or '
+                              'per booked job, with a sample rent of $300 [Bu_9XhXpDSs @ 00:23:26]. Under '
+                              'rent plus call, the tenant pays the base and still owes on every qualified '
+                              'call, so the operator earns on both the listing and the call volume. The '
+                              'ping post seller only ever sees a carved bid in real time; the '
+                              'rank-and-rent tenant sees a fixed bill plus metered calls. Choose based on '
+                              'whether you want margin on every auction or predictable rent with call fees '
+                              'stacked on top of it.',
+                              'Follow-up splits between automation-first stacks and people with AI bolted '
+                              'on. Opsynx AI sells the speed argument: getting found is only the '
+                              'beginning, because most consumers pick the first business that responds, so '
+                              'its system funnels website chat, SMS, email, Google Business chat and '
+                              'Facebook and Instagram DMs into one unified inbox [-uqaX9Doo6s @ 00:00:37]. '
+                              'Jason Grossman refuses to let software carry the load alone. A voice AI '
+                              'agent named Alex calls a new sign-up within 60 seconds, a VA named Chona '
+                              'makes a manual call two days after the event, and the team then pushes 200 '
+                              'to 400 manual SMS a day with Closebot switched off [Ot93upK_YX4 @ '
+                              "00:52:38]. Grossman's rule is blunt: you add AI to the people, staffed as "
+                              'three setters, one each for SMS, phone and DM [Ot93upK_YX4 @ 01:12:54]. The '
+                              'quality debate splits the same way. Grossman argues you cannot have quality '
+                              'without quantity. MoreMozi faces a B2B client buried in low-salary Meta '
+                              'leads, propped up by an R1 R2 sales process that qualifies for ten minutes, '
+                              'and tells them not to jump platforms yet: you might just be fine and only '
+                              'need to tweak the LTV, then consider LinkedIn or cold outreach [94mDeuLH24c '
+                              '@ 00:02:29].'],
+               'table': {'caption': 'Side-by-side playbooks where practitioners take different routing, '
+                                    'pricing and follow-up approaches',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['How calls or leads reach buyers',
+                                   'Ring tree in order, 70/30 split, take turns, or all at once',
+                                   'Ping all eligible buyers simultaneously without personal info, post to '
+                                   'the winner',
+                                   'Local SEO Made Easy ([Bu_9XhXpDSs @ 00:35:21]); boberdoo.com '
+                                   '([o5v8ME_4M_M @ 00:00:38])'],
+                                  ['Breaking ties between equal buyers',
+                                   'Take turns or a weighted 70/30 split across call buyers',
+                                   'Priority first, then round-robin between buyers with equal standing',
+                                   'Local SEO Made Easy ([Bu_9XhXpDSs @ 00:35:21]); boberdoo.com '
+                                   '([DSbDVWpyXUI @ 00:29:47])'],
+                                  ['Core monetization model for call operators',
+                                   'Pay-per-call at $100 for every qualified call delivered',
+                                   'Rank-and-rent the asset at $500 or $1,000 per month',
+                                   'Local SEO Made Easy ([Bu_9XhXpDSs @ 00:02:33]); Local SEO Made Easy '
+                                   '([Bu_9XhXpDSs @ 00:02:51])'],
+                                  ['Carving margin out of buyer bids',
+                                   'Static margin: $10 bid minus $2 margin shows an $8 bid',
+                                   'Dynamic matrix: 10% to $10, 15% to $25, 25% above',
+                                   'boberdoo.com ([DSbDVWpyXUI @ 00:28:02]); boberdoo.com ([DSbDVWpyXUI @ '
+                                   '00:34:06])'],
+                                  ['Percentage or revenue-share payouts to publishers',
+                                   'boberdoo recommends rev-share models never run in ping post fashion',
+                                   'Callvane network mode supports a percentage payout such as 70%',
+                                   'boberdoo.com ([yCAVYNpSdZI @ 00:25:13]); Local SEO Made Easy '
+                                   '([Bu_9XhXpDSs @ 01:04:37])'],
+                                  ['Who handles the first response to a lead',
+                                   'Unified inbox automation because the first responder usually wins the '
+                                   'consumer',
+                                   'Voice AI in 60 seconds, then human VAs and manual SMS',
+                                   'Opsynx AI ([-uqaX9Doo6s @ 00:00:37]); Jason Grossman ([Ot93upK_YX4 @ '
+                                   '00:52:38])'],
+                                  ['Fixing weak lead quality before scaling spend',
+                                   'Grossman: you cannot have quality without first building lead quantity',
+                                   'MoreMozi: tweak LTV first, then consider a new platform like LinkedIn',
+                                   'Jason Grossman ([Ot93upK_YX4 @ 00:03:35]); MoreMozi ([94mDeuLH24c @ '
+                                   '00:02:29])']]}},
+              {'heading': 'Section 4: Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['Proof is the first leak. In the Callvane demo, the host walks through a '
+                              'buyer showing 50 calls against only 40 recordings, the exact mismatch that '
+                              'turns a pay-per-call invoice into an argument [Bu_9XhXpDSs @ 00:11:08]. '
+                              'Duration rules decide what bills: in the network example Hartley & Sons '
+                              'pays $100 for calls that reach 120 seconds, and a 47-second call is flagged '
+                              'as not billable [Bu_9XhXpDSs @ 01:03:07]. Callvane supports disputes, but '
+                              'the cleaner play is setting the qualifier per buyer up front, such as 90 '
+                              'seconds at $40. On the lead side, boberdoo.com returns a response on every '
+                              'single post so sellers know exactly what happened to each lead, which they '
+                              'say reduces discrepancies [DSbDVWpyXUI @ 00:05:27]. Refunds are the next '
+                              'drain. boberdoo says its roughly 150 clients handle refunds about a hundred '
+                              'different ways, and the fix they built is a cap, for example refunds capped '
+                              'at 15% over the past 30 days, with CSV bulk approval for the rest '
+                              '[yCAVYNpSdZI @ 00:22:50]. Lead QC closes the front door: junk like 555-1212 '
+                              'gets held with an error returned, so you are not responsible to buy the '
+                              'lead. Every one of these is a billing fight you either automate away or eat '
+                              'by hand.',
+                              'Integration breakage kills revenue silently. Lead Prosper warns that '
+                              'switching the payload type after editing resets the builder, so set form or '
+                              'JSON before touching a single field [gX0fjRlg1lg @ 00:01:33]. On LeadsPedia '
+                              'buyers, lp_test=1 goes in for testing and must come out before go-live, and '
+                              "the same rule applies to lp_action test on Lead Prosper's own buyer setup "
+                              '[_1N3fncM-Ss @ 00:00:21]. Phonexa posts carry their own trap: most fields '
+                              'are optional on the post, so you confirm with the buyer exactly which '
+                              'fields they need before sending live traffic [Pzlk50aGkUg @ 00:01:37]. '
+                              'Field names are case-sensitive, so copy and paste them instead of retyping. '
+                              'On the auction side, boberdoo.com built a max best price ceiling for one '
+                              'reason: a buyer who fat-fingers a $1,000 bid at a 10% margin would pass '
+                              '$900 back to the seller as the represented bid [DSbDVWpyXUI @ 00:17:44]. '
+                              'Slow buyers get cut by timeouts, such as 15 seconds on the ping and 30 on '
+                              'the post, so lagging buyers are excluded from the auction. boberdoo adds '
+                              'that a buyer not returning a bid typically has something wrong with its '
+                              'server, and dynamic buyers that return nothing get a $0 fallback price.',
+                              'Unit economics punish anyone who skips the math. The Callvane host prices '
+                              'Ringba at a $150 monthly minimum plus per-number fees, then meters 5 cents '
+                              'a minute incoming, 3 cents outgoing and 1 cent recording, so a single '
+                              'three-minute call costs 27 cents [Bu_9XhXpDSs @ 00:15:53]. LeadSmart now '
+                              'demands a website before issuing numbers, unused numbers expire the next '
+                              "month, and Callvane's receive-only SMS numbers at $0.10 a month are not "
+                              '10DLC-registered. boberdoo.com is equally blunt that its DNC list is '
+                              'internal only and not tied to state or federal lists [DSbDVWpyXUI @ '
+                              '00:47:23]. Jason Grossman says 80% of GoHighLevel users are not getting '
+                              'results because it is not set up properly; it is a beast that needs one '
+                              'tech person to build it and a VA team to manage it, on top of the 97 USD '
+                              'monthly fee [Ot93upK_YX4 @ 00:35:44]. Scaling spend has its own trap. '
+                              "MoreMozi's client hit diminishing returns pushing more budget through Meta, "
+                              'so the advisor ran the math the other way: lift customer value from 3K to '
+                              '10K or 12K and 3:1 becomes 12:1, and even if returns slide from 3:1 to 2:1, '
+                              "the 12:1 still lands at 9:1 [94mDeuLH24c @ 00:02:11]. The advisor's other "
+                              "warning is direct: don't turn off Meta, don't stop the flow."],
+               'table': {'caption': 'Firsthand failure modes, the mechanism behind each, and the '
+                                    'countermeasure practitioners built',
+                         'headers': ['Failure Mode',
+                                     'What Happens',
+                                     'Countermeasure Taught',
+                                     'Expert Source'],
+                         'rows': [['Calls billed without matching recordings',
+                                   'Buyer shows 50 calls but only 40 recordings exist as proof',
+                                   'Track and record every call through the platform and use disputes',
+                                   'Local SEO Made Easy ([Bu_9XhXpDSs @ 00:11:08])'],
+                                  ['Short calls slipping past the qualifier',
+                                   'A 47-second call against a 120-second rule is not billable',
+                                   'Set duration and price per buyer, such as 90 seconds at $40',
+                                   'Local SEO Made Easy ([Bu_9XhXpDSs @ 01:03:07])'],
+                                  ['Buyers returning leads without any limit',
+                                   'Around 150 clients handle refunds about a hundred different ways',
+                                   'Cap refunds at 15% over the past 30 days, bulk approve via CSV',
+                                   'boberdoo.com ([yCAVYNpSdZI @ 00:22:50])'],
+                                  ['Typo bids passed back to the seller',
+                                   'A $1,000 typo bid at 10% margin represents $900 to the seller',
+                                   'Set a max best price ceiling on every dynamic buyer',
+                                   'boberdoo.com ([DSbDVWpyXUI @ 00:17:44])'],
+                                  ['Test flags left in the live payload',
+                                   'lp_test=1 or lp_action test keeps the buyer in testing mode',
+                                   'Remove test fields from the payload builder before you go live',
+                                   'Lead Prosper ([_1N3fncM-Ss @ 00:00:21]); Lead Prosper ([gX0fjRlg1lg @ '
+                                   '00:05:22])'],
+                                  ['Dead or slow buyer servers stalling auctions',
+                                   'A buyer not returning a bid typically has a server problem',
+                                   'Run 15-second ping and 30-second post timeouts with $0 fallback',
+                                   'boberdoo.com ([DSbDVWpyXUI @ 00:33:30]); boberdoo.com ([DSbDVWpyXUI @ '
+                                   '00:15:43])'],
+                                  ['Number and SMS supply rules changing underneath you',
+                                   'LeadSmart requires a website first and unused numbers expire next '
+                                   'month',
+                                   'Spread across networks; note receive-only SMS numbers are not '
+                                   '10DLC-registered',
+                                   'Local SEO Made Easy ([Bu_9XhXpDSs @ 00:17:25]); Local SEO Made Easy '
+                                   '([Bu_9XhXpDSs @ 00:50:46])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Four checks before any buyer, call or lead goes live',
+                           'body': 'Every one of these gates comes from a leak a practitioner hit or built '
+                                   'a fix for. Run all four before routing paid traffic.',
+                           'items': ["Do not bill or pay a call until it clears the buyer's duration "
+                                     'qualifier; the 47-second call in the network example never bills '
+                                     '[Local SEO Made Easy — Bu_9XhXpDSs @ 01:03:07].',
+                                     'Set a max best price ceiling on every dynamic buyer so a $1,000 typo '
+                                     'bid cannot pass $900 back to a seller [boberdoo.com — DSbDVWpyXUI @ '
+                                     '00:17:44].',
+                                     'Strip lp_action test from the payload builder before go-live, then '
+                                     'copy all to the buyer [Lead Prosper — gX0fjRlg1lg @ 00:05:22].',
+                                     'Cap buyer refunds, for example at 15% over the past 30 days, before '
+                                     'the first invoice goes out [boberdoo.com — yCAVYNpSdZI @ '
+                                     '00:22:50].']}}],
+ 'pull_quote': "'Don't stay on just one limited network.' — Local SEO Made Easy (Bu_9XhXpDSs @ 00:41:13).",
+ 'diagram_id': 'diag-08',
+ 'action_checklist': ['Strip every non-required field from the ping and send it with the Mode field on the '
+                      'same URL as the post [Lead Prosper — Ma1kH51odZ0 @ 00:00:23].',
+                      'Set the payload type to form or JSON before editing any field, because switching '
+                      'later resets the builder [Lead Prosper — gX0fjRlg1lg @ 00:01:33].',
+                      "Build each buyer's filter set with daily, weekly and monthly caps plus delivery "
+                      'schedules [boberdoo.com — Dktb23hf-d8 @ 00:00:42].',
+                      'Use update default values so every new source is created as not active until you '
+                      'switch it on [boberdoo.com — SxFdDGaaQiM @ 00:00:38].',
+                      'Build a ring tree across LeadSmart, Leads Magician and CallScaler instead of '
+                      'relying on one network [Local SEO Made Easy — Bu_9XhXpDSs @ 00:39:53].',
+                      'Have voice AI call every new sign-up within 60 seconds, then layer manual VA calls '
+                      'and SMS behind it [Jason Grossman — Ot93upK_YX4 @ 00:52:38].'],
+ 'statutory_citations': [{'title': 'boberdoo.com — boberdoo.com Overview Demo With Ping Post | Lead '
+                                   'Software [00:22:43]',
+                          'url': 'https://www.youtube.com/watch?v=DSbDVWpyXUI&t=1363s',
+                          'relevance': 'Primary practitioner testimony on refund caps, max best price '
+                                       'ceilings, margin matrices and buyer timeouts in ping post '
+                                       'distribution.'},
+                         {'title': 'Local SEO Made Easy — Callvane Full Demo | Call Tracking, Routing, '
+                                   'Recordings & More [00:35:21]',
+                          'url': 'https://www.youtube.com/watch?v=Bu_9XhXpDSs&t=2121s',
+                          'relevance': 'Primary practitioner testimony on ring tree modes, call '
+                                       'qualification durations, per-minute call costs and network '
+                                       'payouts.'},
+                         {'title': 'Lead Prosper — Lead Prosper Ping Post Buyer Setup [00:05:22]',
+                          'url': 'https://www.youtube.com/watch?v=gX0fjRlg1lg&t=322s',
+                          'relevance': 'Primary practitioner testimony on ping post buyer field mapping, '
+                                       'payload builder traps and go-live testing.'},
+                         {'title': 'Jason Grossman — Create an AI Powered Lead Generation Machine Using '
+                                   'GoHighLevel! [00:52:38]',
+                          'url': 'https://www.youtube.com/watch?v=Ot93upK_YX4&t=3158s',
+                          'relevance': 'Primary practitioner testimony on speed-to-lead follow-up '
+                                       'combining voice AI, VAs and manual SMS.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': '94mDeuLH24c',
+                       'title': 'Helping a B2B Lead Gen Agency Improve Lead Quality',
+                       'channel': 'MoreMozi',
+                       'author': 'MoreMozi',
+                       'text': 'Because you might just be fine and just need to like tweak the LTV.',
+                       'tip': 'Because you might just be fine and just need to like tweak the LTV.',
+                       'timestamp': 149,
+                       'timestamp_seconds': 149,
+                       'timestamp_label': '[00:02:29]',
+                       'url': 'https://www.youtube.com/watch?v=94mDeuLH24c&t=149s',
+                       'markdown': '[00:02:29](https://www.youtube.com/watch?v=94mDeuLH24c&t=149s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Bu_9XhXpDSs',
+                       'title': 'Callvane Full Demo | Call Tracking, Routing, Recordings & More',
+                       'channel': 'Local SEO Made Easy',
+                       'author': 'Local SEO Made Easy',
+                       'text': "Don't stay on just one limited network.",
+                       'tip': "Don't stay on just one limited network.",
+                       'timestamp': 2473,
+                       'timestamp_seconds': 2473,
+                       'timestamp_label': '[00:41:13]',
+                       'url': 'https://www.youtube.com/watch?v=Bu_9XhXpDSs&t=2473s',
+                       'markdown': '[00:41:13](https://www.youtube.com/watch?v=Bu_9XhXpDSs&t=2473s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'o5v8ME_4M_M',
+                       'title': 'How To Ping Post Basics | boberdoo Lead Distribution Software',
+                       'channel': 'boberdoo.com',
+                       'author': 'boberdoo.com',
+                       'text': 'The ping goes out without personal information to all eligible buyers '
+                               'simultaneously, the bids are compared, and the lead is posted to the '
+                               'winner in a matter of seconds.',
+                       'tip': 'The ping goes out without personal information to all eligible buyers '
+                              'simultaneously, the bids are compared, and the lead is posted to the winner '
+                              'in a matter of seconds.',
+                       'timestamp': 38,
+                       'timestamp_seconds': 38,
+                       'timestamp_label': '[00:00:38]',
+                       'url': 'https://www.youtube.com/watch?v=o5v8ME_4M_M&t=38s',
+                       'markdown': '[00:00:38](https://www.youtube.com/watch?v=o5v8ME_4M_M&t=38s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'yCAVYNpSdZI',
+                       'title': 'Ping Post Lead Distribution | boberdoo Ping Post Software',
+                       'channel': 'boberdoo.com',
+                       'author': 'boberdoo.com',
+                       'text': 'So in this case, you can cap their refunds, say at 15% over the past 30 '
+                               'days.',
+                       'tip': 'So in this case, you can cap their refunds, say at 15% over the past 30 '
+                              'days.',
+                       'timestamp': 1370,
+                       'timestamp_seconds': 1370,
+                       'timestamp_label': '[00:22:50]',
+                       'url': 'https://www.youtube.com/watch?v=yCAVYNpSdZI&t=1370s',
+                       'markdown': '[00:22:50](https://www.youtube.com/watch?v=yCAVYNpSdZI&t=1370s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'yCAVYNpSdZI',
+                       'title': 'Ping Post Lead Distribution | boberdoo Ping Post Software',
+                       'channel': 'boberdoo.com',
+                       'author': 'boberdoo.com',
+                       'text': "So if you're going to do rev sharing models, I would recommend it not "
+                               'being in a ping post fashion.',
+                       'tip': "So if you're going to do rev sharing models, I would recommend it not being "
+                              'in a ping post fashion.',
+                       'timestamp': 1513,
+                       'timestamp_seconds': 1513,
+                       'timestamp_label': '[00:25:13]',
+                       'url': 'https://www.youtube.com/watch?v=yCAVYNpSdZI&t=1513s',
+                       'markdown': '[00:25:13](https://www.youtube.com/watch?v=yCAVYNpSdZI&t=1513s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '_1N3fncM-Ss',
+                       'title': 'LeadsPedia Ping Post Buyer Setup',
+                       'channel': 'Lead Prosper',
+                       'author': 'Lead Prosper',
+                       'text': 'Set lp_test to 1 for testing on both the ping and the post, and remove it '
+                               'before going live.',
+                       'tip': 'Set lp_test to 1 for testing on both the ping and the post, and remove it '
+                              'before going live.',
+                       'timestamp': 21,
+                       'timestamp_seconds': 21,
+                       'timestamp_label': '[00:00:21]',
+                       'url': 'https://www.youtube.com/watch?v=_1N3fncM-Ss&t=21s',
+                       'markdown': '[00:00:21](https://www.youtube.com/watch?v=_1N3fncM-Ss&t=21s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Ma1kH51odZ0',
+                       'title': 'Boberdoo Ping Post Buyer Setup',
+                       'channel': 'Lead Prosper',
+                       'author': 'Lead Prosper',
+                       'text': 'Strip the fields that are not required out of the ping payload.',
+                       'tip': 'Strip the fields that are not required out of the ping payload.',
+                       'timestamp': 23,
+                       'timestamp_seconds': 23,
+                       'timestamp_label': '[00:00:23]',
+                       'url': 'https://www.youtube.com/watch?v=Ma1kH51odZ0&t=23s',
+                       'markdown': '[00:00:23](https://www.youtube.com/watch?v=Ma1kH51odZ0&t=23s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'CLgSYIHZ_GY',
+                       'title': 'How To Ping Post Specifications | boberdoo Ping Post Software',
+                       'channel': 'boberdoo.com',
+                       'author': 'boberdoo.com',
+                       'text': 'The lead ID is sent on the post only, echoing the lead ID returned on the '
+                               'ping.',
+                       'tip': 'The lead ID is sent on the post only, echoing the lead ID returned on the '
+                              'ping.',
+                       'timestamp': 39,
+                       'timestamp_seconds': 39,
+                       'timestamp_label': '[00:00:39]',
+                       'url': 'https://www.youtube.com/watch?v=CLgSYIHZ_GY&t=39s',
+                       'markdown': '[00:00:39](https://www.youtube.com/watch?v=CLgSYIHZ_GY&t=39s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'P79C92BNJHs',
+                       'title': 'How To Ping Post Specifications | boberdoo Ping/Post Software',
+                       'channel': 'boberdoo.com',
+                       'author': 'boberdoo.com',
+                       'text': 'Send the specifications to your partners as text or as a PDF.',
+                       'tip': 'Send the specifications to your partners as text or as a PDF.',
+                       'timestamp': 127,
+                       'timestamp_seconds': 127,
+                       'timestamp_label': '[00:02:07]',
+                       'url': 'https://www.youtube.com/watch?v=P79C92BNJHs&t=127s',
+                       'markdown': '[00:02:07](https://www.youtube.com/watch?v=P79C92BNJHs&t=127s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Pzlk50aGkUg',
+                       'title': 'Phonexa Ping Post Buyer Set Up',
+                       'channel': 'Lead Prosper',
+                       'author': 'Lead Prosper',
+                       'text': 'Most fields are optional on the post, so confirm with the buyer which '
+                               'fields they need.',
+                       'tip': 'Most fields are optional on the post, so confirm with the buyer which '
+                              'fields they need.',
+                       'timestamp': 97,
+                       'timestamp_seconds': 97,
+                       'timestamp_label': '[00:01:37]',
+                       'url': 'https://www.youtube.com/watch?v=Pzlk50aGkUg&t=97s',
+                       'markdown': '[00:01:37](https://www.youtube.com/watch?v=Pzlk50aGkUg&t=97s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Dktb23hf-d8',
+                       'title': 'Demo Part 3 Distributing Leads | boberdoo Lead Distribution Software',
+                       'channel': 'boberdoo.com',
+                       'author': 'boberdoo.com',
+                       'text': 'Filter sets are the most important part of the system, with daily, weekly '
+                               'and monthly caps and schedules.',
+                       'tip': 'Filter sets are the most important part of the system, with daily, weekly '
+                              'and monthly caps and schedules.',
+                       'timestamp': 42,
+                       'timestamp_seconds': 42,
+                       'timestamp_label': '[00:00:42]',
+                       'url': 'https://www.youtube.com/watch?v=Dktb23hf-d8&t=42s',
+                       'markdown': '[00:00:42](https://www.youtube.com/watch?v=Dktb23hf-d8&t=42s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'DSbDVWpyXUI',
+                       'title': 'boberdoo.com Overview Demo With Ping Post | Lead Software',
+                       'channel': 'boberdoo.com',
+                       'author': 'boberdoo.com',
+                       'text': "You'll notice that zero is the price for the lead cost and the reason is "
+                               "because we're not paying a flat fee per lead but rather we're going to bid "
+                               'per ping.',
+                       'tip': "You'll notice that zero is the price for the lead cost and the reason is "
+                              "because we're not paying a flat fee per lead but rather we're going to bid "
+                              'per ping.',
+                       'timestamp': 884,
+                       'timestamp_seconds': 884,
+                       'timestamp_label': '[00:14:44]',
+                       'url': 'https://www.youtube.com/watch?v=DSbDVWpyXUI&t=884s',
+                       'markdown': '[00:14:44](https://www.youtube.com/watch?v=DSbDVWpyXUI&t=884s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'DSbDVWpyXUI',
+                       'title': 'boberdoo.com Overview Demo With Ping Post | Lead Software',
+                       'channel': 'boberdoo.com',
+                       'author': 'boberdoo.com',
+                       'text': "Typically if they are not returning a bid that means there's something "
+                               'wrong with their server.',
+                       'tip': "Typically if they are not returning a bid that means there's something "
+                              'wrong with their server.',
+                       'timestamp': 2010,
+                       'timestamp_seconds': 2010,
+                       'timestamp_label': '[00:33:30]',
+                       'url': 'https://www.youtube.com/watch?v=DSbDVWpyXUI&t=2010s',
+                       'markdown': '[00:33:30](https://www.youtube.com/watch?v=DSbDVWpyXUI&t=2010s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'gX0fjRlg1lg',
+                       'title': 'Lead Prosper Ping Post Buyer Setup',
+                       'channel': 'Lead Prosper',
+                       'author': 'Lead Prosper',
+                       'text': 'Be sure to remove lp_action test from your payload builder before you go '
+                               'live.',
+                       'tip': 'Be sure to remove lp_action test from your payload builder before you go '
+                              'live.',
+                       'timestamp': 322,
+                       'timestamp_seconds': 322,
+                       'timestamp_label': '[00:05:22]',
+                       'url': 'https://www.youtube.com/watch?v=gX0fjRlg1lg&t=322s',
+                       'markdown': '[00:05:22](https://www.youtube.com/watch?v=gX0fjRlg1lg&t=322s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'SxFdDGaaQiM',
+                       'title': 'How To Manage Sources Part 1 | boberdoo Lead Distribution System',
+                       'channel': 'boberdoo.com',
+                       'author': 'boberdoo.com',
+                       'text': 'So for example each new source will now be set up as not active.',
+                       'tip': 'So for example each new source will now be set up as not active.',
+                       'timestamp': 38,
+                       'timestamp_seconds': 38,
+                       'timestamp_label': '[00:00:38]',
+                       'url': 'https://www.youtube.com/watch?v=SxFdDGaaQiM&t=38s',
+                       'markdown': '[00:00:38](https://www.youtube.com/watch?v=SxFdDGaaQiM&t=38s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'mGQoVCLseTU',
+                       'title': 'How To Notification Manager | boberdoo Lead Distribution System',
+                       'channel': 'boberdoo.com',
+                       'author': 'boberdoo.com',
+                       'text': 'Set up the notification delay which is the number of hours after which the '
+                               'email is actually sent out.',
+                       'tip': 'Set up the notification delay which is the number of hours after which the '
+                              'email is actually sent out.',
+                       'timestamp': 72,
+                       'timestamp_seconds': 72,
+                       'timestamp_label': '[00:01:12]',
+                       'url': 'https://www.youtube.com/watch?v=mGQoVCLseTU&t=72s',
+                       'markdown': '[00:01:12](https://www.youtube.com/watch?v=mGQoVCLseTU&t=72s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '-uqaX9Doo6s',
+                       'title': 'Opsynx AI | AI Lead Generation, Appointment Setting & Growth Systems',
+                       'channel': 'Opsynx AI',
+                       'author': 'Opsynx AI',
+                       'text': 'But getting found is only the beginning.',
+                       'tip': 'But getting found is only the beginning.',
+                       'timestamp': 37,
+                       'timestamp_seconds': 37,
+                       'timestamp_label': '[00:00:37]',
+                       'url': 'https://www.youtube.com/watch?v=-uqaX9Doo6s&t=37s',
+                       'markdown': '[00:00:37](https://www.youtube.com/watch?v=-uqaX9Doo6s&t=37s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Ot93upK_YX4',
+                       'title': 'Create an AI Powered Lead Generation Machine Using GoHighLevel!',
+                       'channel': 'Jason Grossman',
+                       'author': 'Jason Grossman',
+                       'text': 'You add AI to the people.',
+                       'tip': 'You add AI to the people.',
+                       'timestamp': 4374,
+                       'timestamp_seconds': 4374,
+                       'timestamp_label': '[01:12:54]',
+                       'url': 'https://www.youtube.com/watch?v=Ot93upK_YX4&t=4374s',
+                       'markdown': '[01:12:54](https://www.youtube.com/watch?v=Ot93upK_YX4&t=4374s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'}]}

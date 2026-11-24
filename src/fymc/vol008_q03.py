@@ -1,770 +1,801 @@
 from __future__ import annotations
 
-CHAPTER_3 = {
-    "id": "Q3",
-    "chapter_id": "Q3",
-    "chapter_number": 3,
-    "question_number": 3,
-    "slug": "unit-economics-margin-waterfall-working-capital-float",
-    "question_prompt": "What are the real unit economics, gross-to-net margin deductions, scrub/reversal reserves, and working-capital float requirements for commercial lead generation?",
-    "kicker": "Q3 / THE BIG MONEY PLAYBOOKS",
-    "title": "Unit Economics, Margin Waterfall & Working-Capital Float",
-    "subtitle": "Accepted-Lead Cohorts, CRM Reversal Ledgers, Contractor CAC, DSO Locks, and TCPA-Aware Cash Forecasting",
-    "layout_template": "financial_breakdown",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #18, Commercial Lead Generation, ranks #05 with an 89/100 "
-        "Money-to-Manpower Score and 54 mapped plays. The business sells retainers "
-        "and accepted-lead fees, not client advertising volume. Canonical annual "
-        "owner profit is $20,000 Conservative, $127,500 Base, and $300,000 Scaled, "
-        "on recognized revenue of $100,000, $425,000, and $750,000 respectively. "
-        "This chapter reconciles those outcomes through explicit scrub allowances, "
-        "contractor labor, acquisition costs, infrastructure, and collection expenses. "
-        "Six mapped plays expose different rejection, legal, and funding risks; "
-        "none receives free revenue simply because its trigger data is inexpensive. "
-        "Cohort acceptance rules, contractual reversal deadlines, and a thirteen-week "
-        "cash forecast determine whether reported margin becomes spendable cash. "
-        "Client-funded media remains outside operator revenue throughout."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$100,000",
-            "context": "Annual recognized retainers and accepted-lead fees; advertising pass-through excluded",
-            "note": "20% net margin; $20,000 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Base",
-            "value": "$425,000",
-            "context": "Annual recognized retainers and accepted-lead fees; advertising pass-through excluded",
-            "note": "30.0% net margin; $127,500 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$750,000",
-            "context": "Annual recognized retainers and accepted-lead fees; advertising pass-through excluded",
-            "note": "40% net margin; $300,000 annual owner net profit; 2 FT + 4 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Reconcile billed leads to the canonical owner-profit waterfall",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Build the ledger around a client-month cohort, not an inbox, "
-                    "campaign, or advertising account. Every delivered record needs "
-                    "a prospect identifier, trigger timestamp, delivery timestamp, "
-                    "contract version, price, acceptance decision, and eventual cash "
-                    "receipt. In HubSpot or Salesforce, distinguish delivered, "
-                    "provisionally accepted, contractually earned, credited, and "
-                    "collected states; a booked meeting alone proves none of the "
-                    "later states. The Base illustration comprises ten full-year "
-                    "equivalent clients paying $2,500 monthly retainers, producing "
-                    "$300,000, plus 1,280 provisional lead units priced at $125, "
-                    "producing $160,000 before credits. Rejecting or reversing 280 "
-                    "units removes $35,000, leaving 1,000 accepted units and "
-                    "$425,000 recognized operator revenue. The resulting 21.875% "
-                    "lead-unit rejection rate differs from the 7.61% gross-billing "
-                    "allowance because retainers occupy most billings. These are "
-                    "illustrative contract mechanics constructed to reconcile the "
-                    "scorecard, not historical conversion observations. Advertising "
-                    "paid by clients directly to Google or LinkedIn never enters "
-                    "this waterfall. Where the agency advances advertising money "
-                    "as an agent, track the reimbursement receivable and vendor "
-                    "payable separately rather than inflating service sales. Earned "
-                    "retainers also require actual service delivery; a prepaid "
-                    "invoice is cash before it is necessarily revenue."
-                ),
-                (
-                    "Apply the same construction to the other cases without "
-                    "changing their canonical totals. Conservative combines $60,000 "
-                    "in earned retainers with 500 provisional units at $100; "
-                    "100 rejected units remove $10,000 from $110,000 billings, "
-                    "leaving $100,000 revenue. Scaled combines $540,000 in earned "
-                    "retainers with 1,800 provisional units at $150; 400 rejected "
-                    "units remove $60,000 from $810,000 billings, leaving $750,000 "
-                    "revenue. The table then deducts every modeled operating cost "
-                    "once. Contractor delivery includes research, verification, "
-                    "appointment setting, routing review, and quality checks. "
-                    "Acquisition expense belongs to winning agency clients, not "
-                    "the client's media budget. Data costs buy prospect inputs; "
-                    "software covers CRM, permitted enrichment infrastructure, "
-                    "mailboxes, and monitoring. Gross contribution after delivery, "
-                    "data, and software is $54,000, $262,500, and $490,000 "
-                    "respectively. It is not owner profit because selling, "
-                    "management, collections, and overhead remain unpaid. Treat "
-                    "the expense allocation as an explicit planning assumption: "
-                    "the supplied scorecard fixes revenue, final margin, profit, "
-                    "and staffing, but does not supply an audited cost ledger. "
-                    "Replace individual allocations with actual invoices while "
-                    "preserving a visible reconciliation rather than silently "
-                    "changing the benchmark. Keep overhead and delivery categories "
-                    "mutually exclusive so payroll cannot disappear between them."
-                ),
-                (
-                    "The canonical teams are one full-time person plus three "
-                    "contractors for Conservative and Base, then two full-time "
-                    "people plus four contractors for Scaled. Contractor counts "
-                    "describe relationships, not six full-time salaries. The "
-                    "Conservative $32,000 delivery budget therefore requires "
-                    "fractional assignments and founder execution, while Base "
-                    "supports $110,000 of purchased delivery capacity. In Scaled, "
-                    "the $75,000 overhead allocation includes an illustrative "
-                    "$60,000 loaded non-owner employee cost and $15,000 of "
-                    "administration; test that assumption against the actual hiring "
-                    "market. Modeled owner profit is the residual available to "
-                    "the owner after the listed expenses, not a second salary "
-                    "added on top. No separate market-rate founder replacement "
-                    "salary or owner-level tax calculation is embedded here. "
-                    "That distinction matters when comparing an owner-operated "
-                    "practice with an absentee investment. Reconcile the twelve "
-                    "monthly cohort totals to the annual income statement and "
-                    "then reconcile collections to bank deposits. At Base, "
-                    "$127,500 divided by $425,000 yields exactly 30.0%; booking "
-                    "client advertising as revenue would change that denominator "
-                    "without creating earnings. Chargebacks already represented "
-                    "in the $35,000 allowance must not reappear as a second "
-                    "expense when the credit memo settles. Record any excess "
-                    "loss separately and revise the cohort estimate."
-                ),
-            ],
-            "table": {
-                "caption": "Annual Cohort Waterfall: Illustrative Allocations Reconciled to Canonical Scorecard Totals",
-                "headers": [
-                    "Waterfall line and treatment",
-                    "Conservative annual case",
-                    "Base annual case",
-                    "Scaled annual case",
-                ],
-                "rows": [
-                    [
-                        "Gross service billings before contractual lead-quality credit adjustments",
-                        "$110,000 combines earned retainers and provisional lead charges.",
-                        "$460,000 combines earned retainers and provisional lead charges.",
-                        "$810,000 combines earned retainers and provisional lead charges.",
-                    ],
-                    [
-                        "Subtract scrub credits and reversals against provisional billings",
-                        "$10,000 removes one hundred rejected units priced at $100.",
-                        "$35,000 removes two hundred eighty units priced at $125.",
-                        "$60,000 removes four hundred rejected units priced at $150.",
-                    ],
-                    [
-                        "Recognized service revenue excludes client advertising pass-through amounts",
-                        "$100,000 remains after credits against provisional service billings.",
-                        "$425,000 remains after credits against provisional service billings.",
-                        "$750,000 remains after credits against provisional service billings.",
-                    ],
-                    [
-                        "Subtract contractor delivery labor purchased for client fulfillment",
-                        "$32,000 funds fractional research, setting, routing, and verification.",
-                        "$110,000 funds expanded research, setting, routing, and verification.",
-                        "$180,000 funds larger research, setting, routing, and verification.",
-                    ],
-                    [
-                        "Subtract data purchases and permitted upstream enrichment usage",
-                        "$8,000 purchases prospect inputs and permitted verification capacity.",
-                        "$30,000 purchases prospect inputs and permitted verification capacity.",
-                        "$45,000 purchases prospect inputs and permitted verification capacity.",
-                    ],
-                    [
-                        "Subtract delivery software, mailboxes, CRM, and monitoring infrastructure",
-                        "$6,000 supports limited mailbox, CRM, and monitoring infrastructure.",
-                        "$22,500 supports larger mailbox, CRM, and monitoring infrastructure.",
-                        "$35,000 supports scaled mailbox, CRM, and monitoring infrastructure.",
-                    ],
-                    [
-                        "Gross contribution follows delivery labor, data, and software",
-                        "$54,000 equals 54.00% of recognized annual service revenue.",
-                        "$262,500 equals approximately 61.76% of recognized service revenue.",
-                        "$490,000 equals approximately 65.33% of recognized service revenue.",
-                    ],
-                    [
-                        "Subtract agency customer acquisition rather than client advertising",
-                        "$18,000 acquires six customers at $3,000 fully loaded CAC.",
-                        "$60,000 acquires twelve customers at $5,000 fully loaded CAC.",
-                        "$90,000 acquires eighteen customers at $5,000 fully loaded CAC.",
-                    ],
-                    [
-                        "Subtract administration, insurance, and applicable non-owner employee costs",
-                        "$12,000 supports administration and insurance alongside owner management.",
-                        "$50,000 supports administration and insurance alongside owner management.",
-                        "$75,000 includes $60,000 loaded employee cost plus administration.",
-                    ],
-                    [
-                        "Subtract payment fees, financing charges, and collection operations",
-                        "$4,000 covers payment costs and collection support assumptions.",
-                        "$25,000 covers payment costs and collection support assumptions.",
-                        "$25,000 covers payment costs and collection support assumptions.",
-                    ],
-                    [
-                        "Total operating deductions exclude already deducted billing credits",
-                        "$80,000 totals six expense categories after revenue recognition.",
-                        "$297,500 totals six expense categories after revenue recognition.",
-                        "$450,000 totals six expense categories after revenue recognition.",
-                    ],
-                    [
-                        "Canonical annual owner profit remains after operating deductions",
-                        "$20,000 equals 20% margin with one full-time, three contractors.",
-                        "$127,500 equals 30.0% margin with one full-time, three contractors.",
-                        "$300,000 equals 40% margin with two full-time, four contractors.",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Make the acceptance ledger harder to dispute than the invoice",
-                "body": (
-                    "Experienced operators preserve the commercial evidence at delivery "
-                    "and separate pricing mistakes from fulfillment defects."
-                ),
-                "items": [
-                    "Attach the prospect identifier, agreed qualification fields, routing timestamp, and contract version to each $125 Base lead before invoicing.",
-                    "Measure credits by acquisition week and rejection reason; do not let a client's delayed sales follow-up masquerade as invalid contact data.",
-                    "Use idempotent CRM delivery keys so a webhook retry cannot create a second charge or a duplicate-lead reversal.",
-                    "Price exclusive territory and short response windows separately; compare accepted contribution per contractor hour rather than raw records exported.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Price six trigger plays without mistaking cheap inputs for earned fees",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "For newly_registered_domain_trigger_arbitrage, treat ICANN CZDS "
-                    "zone differences as first-seen domain signals, not proof that "
-                    "every domain was registered that day. CZDS coverage and access "
-                    "terms vary, and .us RDAP disclosure depends on the applicable "
-                    "registry policy; do not assume universally unredacted personal "
-                    "records. Cross-match business tokens with Secretary of State "
-                    "LLC filings, then verify the business mailing address rather "
-                    "than treating a registered agent as the operating location. "
-                    "Over 72 hours, perform bounded DNS and HTTP checks for "
-                    "missing sitemap.xml, SPF, and DMARC. Zero Google indexed "
-                    "pages requires an actual permitted search observation and "
-                    "still does not prove technical failure. An illustrative batch "
-                    "costs $300 for research and probing plus 100 diagnostic "
-                    "mailers at $1.50, totaling $450. Six accepted appointments "
-                    "at $150 yield $900 revenue and $450 contribution before "
-                    "selling and overhead; three appointments merely recover "
-                    "delivery cost. For municipal_code_violation_trigger_arbitrage, "
-                    "budget $600 for scheduled portal exports and human checks "
-                    "across 200 docket events. Eight exclusive accepted referrals "
-                    "at $150 yield $1,200 and $600 contribution. Duplicate cases, "
-                    "cured violations, and contractor licensing mismatches require "
-                    "credits. Both plays should identify outreach as private "
-                    "commercial assistance, never government enforcement or a "
-                    "mandatory registration notice."
-                ),
-                (
-                    "The amazon_asin_hijack_brand_protection_trigger play needs "
-                    "permitted marketplace observations and seller-identity review, "
-                    "not an assumption that an unfamiliar seller infringes a "
-                    "brand's rights. Monitor Amazon, Walmart, and eBay offers "
-                    "through authorized interfaces or appropriately permitted "
-                    "access, recording timestamp, seller, price, and product "
-                    "identity. A $5,000 monthly monitoring retainer sits within "
-                    "the mapped $2,500–$7,500 range. Illustrative monthly delivery "
-                    "of $500 data, $900 analyst review, and $300 tooling leaves "
-                    "$3,300 contribution before acquisition and overhead. A "
-                    "$6,600 client CAC therefore takes two contribution months "
-                    "to recover only if collection and retention hold. Revenue-loss "
-                    "dossiers must distinguish observed price gaps from estimated "
-                    "lost sales. Unilateral MAP policies, substantiated material "
-                    "differences, and lot serialization are alternatives to false "
-                    "IP complaints; federal and state antitrust treatment still "
-                    "depends on conduct. For free_tier_api_waterfall_multiplexing, "
-                    "forty adapters receiving 500 permitted monthly calls each "
-                    "provide 20,000 calls, not automatically 20,000 complete "
-                    "records. With 30,000 requested enrichments and 60% valid "
-                    "Postgres cache hits, 12,000 records remain; two calls per "
-                    "miss require 24,000 calls. At $0.02 per additional call, "
-                    "the shortfall costs $80 before support and engineering. "
-                    "Rights to cache, combine, and resell outputs must survive "
-                    "the pricing calculation."
-                ),
-                (
-                    "Treat erisa_self_funded_specialty_drug_importation_arbitrage "
-                    "as a constrained employer-benefits lead hypothesis, not "
-                    "an executable drug-import margin promise. The mapped "
-                    "$6,000–$15,000 monthly domestic list prices and $800–$2,200 "
-                    "foreign quotes do not establish net employer savings, "
-                    "equivalent authorization, or a lawful supply channel. ERISA "
-                    "does not displace FDA import restrictions. Section 804 "
-                    "programs have specific authorization requirements and "
-                    "exclude biological products; a licensed foreign pharmacy "
-                    "alone does not authorize direct employee importation. "
-                    "At a verified $80,000 annual savings base, a 25–35% "
-                    "fee would arithmetically equal $20,000–$28,000, but book "
-                    "none until a lawful service, enforceable fee agreement, "
-                    "and earned milestone exist. Route employer introductions "
-                    "to independent TPAs and transparent PBMs for domestic "
-                    "benefit optimization, eligible manufacturer assistance, "
-                    "and bridge-fill continuity; review ERISA duties and "
-                    "applicable remuneration restrictions. For "
-                    "agency_ad_spend_card_multiplier_rebate_cycling, $100,000 "
-                    "monthly genuine client media spend at 2% rewards generates "
-                    "$2,000 before a $500 client rebate share, $300 processing, "
-                    "and $1,000 financing, leaving $200. The $100,000 is "
-                    "not service revenue. Extra funding cost can erase the "
-                    "entire benefit. Client-direct billing or prefunded approved "
-                    "terms is the fallback, and these optional rewards are "
-                    "excluded from the canonical service-revenue cases."
-                ),
-            ],
-            "table": {
-                "caption": "Six Mapped Plays: Sellable Unit, Contribution Arithmetic, and Failure Fallback",
-                "headers": [
-                    "Mapped play identifier and sellable scope",
-                    "Illustrative unit economics before shared overhead",
-                    "Evidence required before recognizing the fee",
-                    "Specific downside fallback and operating boundary",
-                ],
-                "rows": [
-                    [
-                        "newly_registered_domain_trigger_arbitrage sells accepted technical-diagnostic appointments to business clients.",
-                        "Six appointments at $150 less $450 delivery yields $450.",
-                        "Preserve lawful trigger provenance, actual diagnostics, and qualified appointment acceptance.",
-                        "Use permitted CZDS files and business-address checks instead of aggressive WHOIS scraping.",
-                    ],
-                    [
-                        "municipal_code_violation_trigger_arbitrage sells verified exclusive remediation introductions to qualified providers.",
-                        "Eight referrals at $150 less $600 verification yields $600.",
-                        "Confirm docket freshness, unresolved condition, jurisdiction, exclusivity, and provider eligibility.",
-                        "Use scheduled bulk exports and private assistance notices; review attorney solicitation restrictions.",
-                    ],
-                    [
-                        "amazon_asin_hijack_brand_protection_trigger sells documented marketplace monitoring and substantiated brand-protection services.",
-                        "$5,000 monthly retainer less $1,700 delivery yields $3,300.",
-                        "Retain permitted observations and distinguish suspicious sellers from proven infringement.",
-                        "Use lawful unilateral policies, material-difference evidence, and serialization instead of false complaints.",
-                    ],
-                    [
-                        "free_tier_api_waterfall_multiplexing sells licensed enrichment subscriptions within $99–$499 monthly packages.",
-                        "Twenty subscribers at $199 yield $3,980 before actual delivery costs.",
-                        "Verify upstream resale rights, cache freshness, hit rates, and completed-record quality.",
-                        "Maintain forty interchangeable adapters; use permitted public-web and DNS/MX extraction without quota circumvention.",
-                    ],
-                    [
-                        "erisa_self_funded_specialty_drug_importation_arbitrage is restricted to independently lawful benefits-service referral economics.",
-                        "$80,000 verified annual savings times 25–35% implies $20,000–$28,000 conditionally.",
-                        "Require lawful service scope, validated savings, applicable disclosures, and earned contractual milestones.",
-                        "Prioritize domestic TPA/PBM optimization and eligible assistance; exclude unauthorized drug-import execution.",
-                    ],
-                    [
-                        "agency_ad_spend_card_multiplier_rebate_cycling uses genuine authorized media payments under permitted reward terms.",
-                        "$2,000 rewards less $1,800 combined deductions leaves only $200.",
-                        "Document issuer eligibility, client allocation, settlement dates, and actual financing costs.",
-                        "Switch to client-direct billing or prefunding when rewards cannot cover funding exposure.",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "3. Fund the DSO and payout-lock gap before increasing delivery",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Profit does not fund payroll until customers pay and "
-                    "processors release usable cash. Define DSO here as days "
-                    "from earned-service invoicing to customer payment; define "
-                    "payout lock separately as days between that payment and "
-                    "unrestricted bank availability. If your accounting DSO "
-                    "already measures final bank receipt, adding the lock "
-                    "again would overstate the gap. For an intentionally "
-                    "conservative steady-state screen, assume all annual "
-                    "operating deductions are cash costs spread evenly over "
-                    "365 days, paid before the corresponding collections. "
-                    "Conservative uses 30 DSO plus seven lock days; Base "
-                    "uses 45 plus fourteen; Scaled uses 60 plus twenty-one. "
-                    "Dividing $80,000, $297,500, and $450,000 by 365 "
-                    "produces daily burn of approximately $219.18, $815.07, "
-                    "and $1,232.88. Multiplying by the respective 37, 59, "
-                    "and 81 days produces funding screens of $8,110, "
-                    "$48,089, and $99,863. These figures are not additional "
-                    "income-statement expenses or exact balance-sheet working "
-                    "capital. They estimate liquidity tied up during the "
-                    "cash-conversion delay. Retainer prepayments, vendor terms, "
-                    "noncash expenses, actual processor reserves, and weekly "
-                    "payroll timing belong in the detailed forecast. A "
-                    "processor holding a percentage reserve needs its own "
-                    "cash line rather than an invented extra DSO assumption."
-                ),
-                (
-                    "The stated $5,000–$40,000 startup capital range can launch "
-                    "a smaller operation but cannot automatically finance "
-                    "the modeled Base or Scaled collection gap. Adding "
-                    "fourteen days of cash-cost contingency raises the "
-                    "screens to approximately $11,178, $59,500, and $117,123. "
-                    "Those figures explain why a profitable agency can "
-                    "stall when it adds clients with long payment terms. "
-                    "The supplied $2,000–$12,000 monthly opex range should "
-                    "be treated as an early operating-footprint indicator, "
-                    "not a cap on the all-in annual scenario deductions: "
-                    "Base expenses average $24,791.67 monthly once delivery, "
-                    "acquisition, and all other modeled costs are included. "
-                    "Require monthly retainers in advance where commercially "
-                    "feasible, set a fixed lead-dispute window, and release "
-                    "contractor batches against funded service periods. In "
-                    "the Base illustration, ten prepaid $2,500 retainers "
-                    "bring in $25,000 monthly before the acceptance-based "
-                    "lead component settles. Model that timing explicitly "
-                    "rather than subtracting an entire year's retainers "
-                    "from the float estimate. Deposits remain obligations "
-                    "until earned and may be refundable under the contract. "
-                    "Never finance one client's refundable advertising balance "
-                    "with another client's money. Segregate the ledger and "
-                    "cash controls needed to honor each client's obligations."
-                ),
-                (
-                    "Build the thirteen-week cash forecast from dated "
-                    "transactions: opening unrestricted cash, retainer receipts, "
-                    "accepted-lead receipts, contractor runs, subscriptions, "
-                    "refunds, tax payments, and financing settlements. Keep "
-                    "accounting credit allowances separate from restricted "
-                    "processor cash and discretionary liquidity buffers. "
-                    "The Base $35,000 annual scrub allowance averages "
-                    "$2,916.67 monthly, but it reduces provisional revenue; "
-                    "it is not automatically another $2,916.67 monthly "
-                    "cash expense. Only a collected charge later refunded "
-                    "creates that refund outflow. Estimate refund timing "
-                    "from mature cohorts and use a clearly labeled "
-                    "contingency for immature cohorts, rather than claiming "
-                    "statistical precision from a handful of records. For "
-                    "client advertising advances, add the full unreimbursed "
-                    "principal to the forecast even though it is outside "
-                    "recognized service revenue. A $100,000 advance outstanding "
-                    "for thirty days at 12% annual simple interest costs "
-                    "about $986.30 using 365 days, before issuer fees; "
-                    "the $1,000 reward example is a rounded planning input. "
-                    "Pause new advances when reimbursement timing deteriorates. "
-                    "Approved prefunding or direct client billing removes "
-                    "that exposure more reliably than chasing a larger "
-                    "card limit. Reconcile forecast deposits to bank "
-                    "availability, not the processor dashboard's headline "
-                    "balance, before authorizing the next delivery cycle."
-                ),
-            ],
-            "table": {
-                "caption": "Working-Capital Screens: Cash-Cost Timing Rather Than Additional Profit Deductions",
-                "headers": [
-                    "Funding assumption or cash-control calculation",
-                    "Conservative cash requirement",
-                    "Base cash requirement",
-                    "Scaled cash requirement",
-                ],
-                "rows": [
-                    [
-                        "Annual cash-cost proxy uses the reconciled operating deductions",
-                        "$80,000 annual proxy averages approximately $219.18 each calendar day.",
-                        "$297,500 annual proxy averages approximately $815.07 each calendar day.",
-                        "$450,000 annual proxy averages approximately $1,232.88 each calendar day.",
-                    ],
-                    [
-                        "Illustrative DSO excludes the separately modeled payout restriction",
-                        "Thirty collection days precede seven additional payout-lock days.",
-                        "Forty-five collection days precede fourteen additional payout-lock days.",
-                        "Sixty collection days precede twenty-one additional payout-lock days.",
-                    ],
-                    [
-                        "Combined delay multiplies the unrounded daily cash-cost proxy",
-                        "Thirty-seven total days require approximately $8,110 of liquidity.",
-                        "Fifty-nine total days require approximately $48,089 of liquidity.",
-                        "Eighty-one total days require approximately $99,863 of liquidity.",
-                    ],
-                    [
-                        "Fourteen-day contingency covers a further short collection interruption",
-                        "Add approximately $3,068 beyond the initial funding screen.",
-                        "Add approximately $11,411 beyond the initial funding screen.",
-                        "Add approximately $17,260 beyond the initial funding screen.",
-                    ],
-                    [
-                        "Total screening liquidity combines delay funding and contingency",
-                        "Approximately $11,178 funds fifty-one modeled cash-cost days altogether.",
-                        "Exactly $59,500 funds seventy-three modeled cash-cost days altogether.",
-                        "Approximately $117,123 funds ninety-five modeled cash-cost days altogether.",
-                    ],
-                    [
-                        "Separate advertising principal exposure never becomes operator service revenue",
-                        "Prefer client-direct payment rather than extending advertising principal.",
-                        "Add actual unreimbursed advances separately to forecast cash needs.",
-                        "Require documented prefunding or separately sized authorized financing.",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Freeze the cohort and acceptance contract",
-                    "action": "Export delivery records with timestamps, agreed prices, acceptance states, and credit deadlines.",
-                    "detail": "Deduplicate by client and prospect identifier; preserve the qualification evidence used for each billed unit.",
-                },
-                {
-                    "step": 2,
-                    "title": "Post revenue and cost without double counting",
-                    "action": "Reconcile provisional charges, scrub credits, earned retainers, and the six expense categories.",
-                    "detail": "Keep client advertising reimbursements outside service revenue and distinguish credit memos from cash refunds.",
-                },
-                {
-                    "step": 3,
-                    "title": "Date every expected cash movement",
-                    "action": "Populate thirteen weekly columns with bank-available collections and actual payment dates.",
-                    "detail": "Include processor restrictions, refundable deposits, contractor runs, financing principal, and interest separately.",
-                },
-                {
-                    "step": 4,
-                    "title": "Fund the stressed trough before expanding",
-                    "action": "Compare minimum weekly unrestricted cash against the chosen contingency and documented financing capacity.",
-                    "detail": "Shorten terms, obtain client prefunding, or reduce new delivery commitments when the forecast crosses the minimum.",
-                },
-            ],
-        },
-        {
-            "heading": "4. Stress acceptance, CAC, churn, and lawful operating capacity",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Stress one variable at a time before combining shocks. "
-                    "A 25% increase in the modeled annual acquisition "
-                    "budgets costs another $4,500 Conservative, $15,000 "
-                    "Base, and $22,500 Scaled, reducing annual owner "
-                    "profit to $15,500, $112,500, and $277,500 if "
-                    "revenue and other costs remain fixed. An additional "
-                    "five percentage points of rejection applies to "
-                    "provisional lead billings, not total service revenue. "
-                    "Against $50,000, $160,000, and $270,000 of such "
-                    "billings, the incremental credits are $2,500, "
-                    "$8,000, and $13,500. Owner profit becomes $17,500, "
-                    "$119,500, and $286,500, while recognized revenue "
-                    "also declines by those amounts. With both shocks, "
-                    "profit becomes $13,000, $104,500, and $264,000. "
-                    "These are downside sensitivities, not replacements "
-                    "for the canonical scorecard. A fifteen-day "
-                    "collection delay instead consumes approximately "
-                    "$3,288, $12,226, and $18,493 of additional "
-                    "liquidity before any incremental interest expense. "
-                    "Do not subtract that principal from profit. If "
-                    "the delay requires borrowing, calculate the interest "
-                    "on the actual drawn amount and duration and "
-                    "then add that expense. The distinction between "
-                    "cash tied up and cash permanently lost is "
-                    "the central operating discipline in this chapter."
-                ),
-                (
-                    "Measure agency CAC using closed, paying client cohorts, "
-                    "including founder sales time at an explicit internal "
-                    "rate when evaluating repeatability. The modeled cash "
-                    "budgets of $18,000 for six wins, $60,000 for "
-                    "twelve, and $90,000 for eighteen imply $3,000, "
-                    "$5,000, and $5,000 cash CAC. Those annual wins "
-                    "are not automatically concurrent full-year accounts; "
-                    "replacement clients and late-year starts explain "
-                    "why Base uses ten annual equivalents. Its monthly "
-                    "contribution per equivalent account is $262,500 "
-                    "divided by ten and twelve, or $2,187.50. "
-                    "A $5,000 CAC therefore has an illustrative "
-                    "2.29-month contribution payback before collection "
-                    "delay, overhead, and financing. Avoid presenting "
-                    "that figure as lifetime value without retention "
-                    "evidence. Losing one Base account's $30,000 "
-                    "annual retainer while avoiding $8,000 of associated "
-                    "delivery cost reduces profit by $22,000 to "
-                    "$105,500; any lost lead fees require an "
-                    "additional adjustment. Track contribution by client, "
-                    "vertical, trigger, and contractor hour. A cheap "
-                    "data source that produces disputed appointments "
-                    "can destroy margin despite attractive cost per "
-                    "record. Pause the offending segment, preserve "
-                    "the profitable cohorts, and renegotiate qualification "
-                    "criteria before buying more traffic or adding "
-                    "mailboxes."
-                ),
-                (
-                    "Operational capacity also depends on lawful contact "
-                    "and defensible evidence. CAN-SPAM, 15 U.S.C. "
-                    "7704, applies to commercial email, including "
-                    "business outreach: use accurate headers, appropriate "
-                    "advertising identification, a valid postal address, "
-                    "and a functioning opt-out, and honor opt-outs "
-                    "within ten business days. Centralize suppression "
-                    "across every outbound inbox and subcontractor; "
-                    "additional domains must not become a way "
-                    "to resume contact with someone who opted "
-                    "out. For calls and texts, evaluate the "
-                    "technology, number type, purpose, and applicable "
-                    "consent requirements under 47 U.S.C. 227 "
-                    "and 47 CFR 64.1200, plus relevant state "
-                    "rules. B2B targeting is not a universal "
-                    "exception, particularly when business contacts "
-                    "use mobile numbers. Where California privacy "
-                    "law applies, assess notice, deletion, opt-out, "
-                    "and service-provider versus sale or sharing "
-                    "obligations before reselling enriched records. "
-                    "Store source rights and contact-permission evidence "
-                    "beside the lead, with retention tied to "
-                    "documented needs. CRM automation should stop "
-                    "disallowed routing and produce auditable exception "
-                    "queues, not merely increase throughput. Finally, "
-                    "refresh the weekly forecast whenever a major "
-                    "client changes acceptance terms, a data vendor "
-                    "removes resale rights, or a payment processor "
-                    "extends a reserve. Each event changes the "
-                    "sellable unit, the cost to fulfill it, "
-                    "or the date cash becomes usable."
-                ),
-            ],
-            "table": {
-                "caption": "Sensitivity Matrix: Downside Changes Kept Separate From Canonical Profit Cases",
-                "headers": [
-                    "Isolated stress and explicit calculation boundary",
-                    "Conservative downside result",
-                    "Base downside result",
-                    "Scaled downside result",
-                ],
-                "rows": [
-                    [
-                        "Acquisition expense increases twenty-five percent without changing revenue",
-                        "Additional $4,500 expense leaves $15,500 annual owner profit.",
-                        "Additional $15,000 expense leaves $112,500 annual owner profit.",
-                        "Additional $22,500 expense leaves $277,500 annual owner profit.",
-                    ],
-                    [
-                        "Rejections increase five percentage points against provisional lead charges",
-                        "Additional $2,500 credits leave $17,500 annual owner profit.",
-                        "Additional $8,000 credits leave $119,500 annual owner profit.",
-                        "Additional $13,500 credits leave $286,500 annual owner profit.",
-                    ],
-                    [
-                        "Combine the acquisition and rejection shocks without other changes",
-                        "Combined $7,000 deterioration leaves $13,000 annual owner profit.",
-                        "Combined $23,000 deterioration leaves $104,500 annual owner profit.",
-                        "Combined $36,000 deterioration leaves $264,000 annual owner profit.",
-                    ],
-                    [
-                        "Collection timing extends fifteen days before incremental borrowing costs",
-                        "Approximately $3,288 additional liquidity supports the unchanged cash-cost rate.",
-                        "Approximately $12,226 additional liquidity supports the unchanged cash-cost rate.",
-                        "Approximately $18,493 additional liquidity supports the unchanged cash-cost rate.",
-                    ],
-                    [
-                        "Delivery contractor prices rise ten percent without productivity improvement",
-                        "Additional $3,200 expense leaves $16,800 annual owner profit.",
-                        "Additional $11,000 expense leaves $116,500 annual owner profit.",
-                        "Additional $18,000 expense leaves $282,000 annual owner profit.",
-                    ],
-                    [
-                        "Recover five percentage points of provisional lead charges through quality",
-                        "Recovered $2,500 credits raise profit to $22,500 before improvement costs.",
-                        "Recovered $8,000 credits raise profit to $135,500 before improvement costs.",
-                        "Recovered $13,500 credits raise profit to $313,500 before improvement costs.",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Verify four conditions before committing the next cohort",
-                "body": (
-                    "Expansion follows a reconciled sellable unit and funded cash "
-                    "schedule, not an attractive count of exported prospects."
-                ),
-                "items": [
-                    "Verify the contract defines qualification, duplicate lookback, exclusivity, no-show treatment, dispute evidence, and the final reversal deadline.",
-                    "Verify source and resale rights, applicable contact permissions, centralized suppression, and contractor access before activating routing or outbound sequences.",
-                    "Verify the stressed thirteen-week forecast funds contractor payments, potential refunds, processor restrictions, and any separately authorized media advances.",
-                    "Verify the proposed cohort remains contribution-positive after measured rejection, actual CAC, paid enrichment fallback, and realistic labor capacity.",
-                ],
-            },
-        },
-    ],
-    "pull_quote": "A lead earns its margin when acceptance survives scrutiny and cash arrives before the next delivery bill.",
-    "diagram_id": "diag-03",
-    "action_checklist": [
-        "Create a client-month ledger linking every provisional lead charge to qualification evidence, acceptance, credit decisions, and bank-available collection.",
-        "Reconcile $100,000, $425,000, and $750,000 recognized revenue to $20,000, $127,500, and $300,000 owner profit without including advertising pass-through.",
-        "Price all six mapped plays using accepted contribution, permitted source rights, actual labor, and an explicit downside fallback.",
-        "Build a thirteen-week cash forecast separating DSO, payout restrictions, refundable deposits, credit allowances, and advertising principal advances.",
-        "Run acquisition, rejection, contractor-price, and collection-delay sensitivities independently before combining the downside assumptions.",
-        "Confirm contact rules, suppression propagation, contract reversal deadlines, and funded delivery capacity before adding clients or outbound infrastructure.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "15 U.S.C. 7704 — Requirements for transmission of messages",
-            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
-            "relevance": (
-                "Commercial email requirements affect message construction, sender "
-                "identification, postal addresses, opt-out processing, and shared "
-                "suppression across agency inboxes."
-            ),
-        },
-        {
-            "title": "47 U.S.C. 227 — Restrictions on use of telephone equipment",
-            "url": "https://www.law.cornell.edu/uscode/text/47/227",
-            "relevance": (
-                "Calling and texting economics must reflect applicable restrictions "
-                "based on technology, destination, purpose, and consent rather "
-                "than assuming every B2B contact is exempt."
-            ),
-        },
-        {
-            "title": "47 CFR 64.1200 — Delivery restrictions",
-            "url": "https://www.ecfr.gov/current/title-47/section-64.1200",
-            "relevance": (
-                "Operational calling rules inform consent evidence, do-not-call "
-                "procedures, suppression propagation, and routing controls."
-            ),
-        },
-        {
-            "title": "California Civil Code 1798.100 — Consumer information duties",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=1798.100.&lawCode=CIV",
-            "relevance": (
-                "Where applicable, collection notices, purpose limitations, retention "
-                "practices, and contractual controls affect lead sourcing and "
-                "enrichment delivery."
-            ),
-        },
-        {
-            "title": "California Civil Code 1798.120 — Sale or sharing opt-out",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=1798.120.&lawCode=CIV",
-            "relevance": (
-                "Covered lead-sale and sharing activities require an operational "
-                "method to honor applicable consumer opt-out rights."
-            ),
-        },
-        {
-            "title": "21 U.S.C. 381 — Imports and exports",
-            "url": "https://www.law.cornell.edu/uscode/text/21/381",
-            "relevance": (
-                "Foreign pharmacy licensing and employer plan status do not "
-                "independently establish permission to import prescription products."
-            ),
-        },
-        {
-            "title": "21 U.S.C. 384 — Importation of prescription drugs",
-            "url": "https://www.law.cornell.edu/uscode/text/21/384",
-            "relevance": (
-                "Section 804 importation authority has specific conditions and "
-                "product exclusions, including biological products, limiting "
-                "the mapped international sourcing hypothesis."
-            ),
-        },
-        {
-            "title": "29 U.S.C. 1104 — Fiduciary duties",
-            "url": "https://www.law.cornell.edu/uscode/text/29/1104",
-            "relevance": (
-                "Employer plan arrangements require attention to fiduciary duties, "
-                "prudent service-provider selection, and plan economics rather "
-                "than headline savings alone."
-            ),
-        },
-        {
-            "title": "15 U.S.C. 1 — Restraints of trade",
-            "url": "https://www.law.cornell.edu/uscode/text/15/1",
-            "relevance": (
-                "Marketplace monitoring and MAP-related services must distinguish "
-                "lawful unilateral conduct from agreements or coordination "
-                "that raise antitrust concerns."
-            ),
-        },
-    ],
-}
+CHAPTER_3 = {'id': 'Q3',
+ 'chapter_id': 'Q3',
+ 'chapter_number': 3,
+ 'question_number': 3,
+ 'slug': 'build-prospect-lists-linkedin-maps-apollo',
+ 'question_prompt': 'How do operators find prospects and turn searches, directories, and databases into '
+                    'usable outreach lists?',
+ 'kicker': 'Q3 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Build Prospect Lists from LinkedIn, Maps, and Apollo',
+ 'subtitle': 'Sales Navigator targeting and exports, Google Maps extraction, Apollo email lists, Apify, '
+             'Evaboot, SmartProspect, and alternatives to conventional lead databases',
+ 'layout_template': 'financial_analysis',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Practitioners agree the big databases are crowded and incomplete: Apollo and Sales '
+                      'Navigator miss hotel, farm, and wholesale buyers, so operators stack LinkedIn pulls '
+                      'with Google Maps scrapes run city by city or zip code by zip code. Precision beats '
+                      'volume, with Alex Vacca favoring 50 matched prospects over 500 random names and '
+                      'Evaboot finding at least 20% of Sales Navigator results off-criteria. The mechanics '
+                      "are cheap: Apify's Google Maps Scraper at about $4 per thousand places, "
+                      'cookie-based Apify scrapers replacing PhantomBuster, and Evaboot at $9 per 100 '
+                      'credits. Email coverage is the choke point, from a 2% Philippines match rate to '
+                      "Prospeo's test showing 73% accuracy on verified Apollo leads. Disagreements center "
+                      "on change-job filters, Apollo's built-in intent data, and whether AI "
+                      'personalization still earns replies.',
+ 'key_metrics': [{'label': 'Apollo verified-email accuracy in a live campaign',
+                  'metric': 'Apollo verified-email accuracy in a live campaign',
+                  'value': '73% measured versus 91% claimed; over 270 of 1,000 verified emails bounced',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Prospeo ran 1,000 verified Apollo leads through a campaign and compared '
+                             "delivered accuracy against Apollo's advertised rate.",
+                  'source': 'Prospeo ([QnSW0B2oztg @ 00:09:46])'},
+                 {'label': 'Sales Navigator leads that miss the search criteria',
+                  'metric': 'Sales Navigator leads that miss the search criteria',
+                  'value': 'At least 20%',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Evaboot's match-filter column flags leads with the wrong company size, "
+                             'tenure, or title, such as an intern returned in a head-of-sales search.',
+                  'source': 'JB - Evaboot ([rryPKFY2BRI @ 00:05:44])'},
+                 {'label': 'LinkedIn email match rate for Philippine targets',
+                  'metric': 'LinkedIn email match rate for Philippine targets',
+                  'value': '2% on a 2,000-person audience; 20-25% is the stated healthy benchmark',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Most Philippine buyers use Gmail rather than business domains, so '
+                             'name-plus-company email guessing via ICPS collapsed for a fireworks client.',
+                  'source': 'Lead Gen PH ([i-oQ5e48OF8 @ 00:06:57])'},
+                 {'label': 'Google Maps scrape yield across five New Jersey cities',
+                  'metric': 'Google Maps scrape yield across five New Jersey cities',
+                  'value': '887 unique leads (816 companies pulled in about three minutes)',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Heating-company search run city by city through the Lead Academy Google My '
+                             'Business scraper, versus 92 rows from Edison alone on the free extension.',
+                  'source': 'Georgey Tishin ([p1rfyeLoS2s @ 00:06:19])'}],
+ 'sections': [{'heading': '1. The Practitioner Consensus',
+               'paragraphs': ['The operators who build lists for a living agree on one uncomfortable '
+                              'truth: the big databases are crowded and incomplete. Lead Gen PH warns that '
+                              'Apollo can work, but so many other senders pull from it that more creative '
+                              'sourcing produces fresher contacts with fewer competitors hitting the same '
+                              'inbox [i-oQ5e48OF8 @ 00:00:29]. Will Butler goes further, calling Apollo, '
+                              'ZoomInfo and Sales Navigator outdated tools built for software buyers, and '
+                              "showing that a commercial solar installer's real targets are not on Sales "
+                              'Navigator or Apollo at all [FJ2CA-mGueY @ 00:00:32]. Eric of Growth Engine '
+                              'X hits the same wall with wholesale clients: the hotel managers who buy '
+                              'vacuums rarely keep LinkedIn profiles, which makes list building the '
+                              'hardest part of every onboarding [BRZJjgou7ic @ 00:01:25]. The shared fix '
+                              'is a two-source stack. Teams grab whatever LinkedIn coverage exists first, '
+                              'then scrape Google Maps to fill the gaps, with Growth Engine X running '
+                              'hotel, motel, spa, resort and casino keywords across every zip code in the '
+                              'United States to build a repository that LinkedIn-only competitors are not '
+                              'working from [BRZJjgou7ic @ 00:02:05]. The shared operating logic is that '
+                              'fresher, less-contacted prospects produce better results than the same '
+                              'database export everyone else is already mailing.',
+                              'Every practitioner also agrees that precision beats volume. Alex Vacca puts '
+                              'a number on it: 50 well-matched prospects get better results than 500 '
+                              'random names, so start with small, tightly targeted pulls and only then '
+                              'scale [Ouq5ayjDmmI @ 00:09:03]. Marcus Chan builds deliberately niched '
+                              'saved searches that hold fewer leads each, then disqualifies hard, '
+                              'reporting that over half the prospects the team reviews miss the size or '
+                              'trigger bar and never enter a sequence [HL8AeTPufLU @ 00:21:51]. Jed Marley '
+                              'of Sell Better starts with a saved persona covering function, seniority set '
+                              'to director and VP, and geography, so every later filter only returns ideal '
+                              'buyers inside the territory [3Y7sW7ob3hY @ 00:01:29]. The reason precision '
+                              'must be enforced rather than trusted comes from JB at Evaboot: at least 20% '
+                              'of Sales Navigator leads do not actually match the search criteria, with an '
+                              'intern showing up inside a head-of-sales search [rryPKFY2BRI @ 00:05:44]. '
+                              'Chan sees the same decay at the contact level and re-verifies that each '
+                              'prospect still works at the listed company, because the record is sometimes '
+                              'simply wrong. The consensus routine is filter tight, eyeball the actual '
+                              'profiles, cut anyone outside the ICP, and adjust settings until a sample '
+                              'looks right.',
+                              'The third point of agreement: a name is not an email, and coverage is where '
+                              'lists die. Lead Gen PH explains that LinkedIn never hands over the address; '
+                              'tools guess it from first name, last name and company, and a healthy match '
+                              'rate is 20 to 25%, sometimes 50%, while their Metro Manila test of 343 rows '
+                              "returned only 7% [i-oQ5e48OF8 @ 00:13:51]. Evaboot's JB sets expectations "
+                              'at 40 to 90% email discovery depending on industry, with startup employees '
+                              'easy to find and construction workers hard because they share less '
+                              'information online [rryPKFY2BRI @ 00:03:10]. Even verified data leaks: '
+                              'Prospeo ran 1,000 verified Apollo leads and measured 73% email accuracy '
+                              "against Apollo's claimed 91%, meaning over 270 addresses bounced "
+                              '[QnSW0B2oztg @ 00:09:46]. Will Butler treats every Google Maps pull the '
+                              'same way, saying the output is not 100% clean and needs enrichment, which '
+                              'the team runs through Clay to find emails and phone numbers before sending '
+                              '[FJ2CA-mGueY @ 00:10:13]. So every serious operator budgets a verification '
+                              'or enrichment pass between scrape and send, and nobody trusts a raw export '
+                              'to land in an inbox regardless of which source produced it.'],
+               'table': {'caption': 'Where list-building practitioners agree',
+                         'headers': ['Consensus Point',
+                                     'What Practitioners Do',
+                                     'Why It Matters',
+                                     'Expert Source'],
+                         'rows': [['Big databases are crowded and heavily over-mailed',
+                                   'Source from creative channels beyond Apollo exports to reach fresher '
+                                   'prospects',
+                                   'Fewer competing senders in the inbox produces noticeably better '
+                                   'response results',
+                                   'Lead Gen PH ([i-oQ5e48OF8 @ 00:00:29])'],
+                                  ['Non-SaaS buyers are missing from LinkedIn data',
+                                   'Scrape Google Maps by keyword across every US zip code to fill gaps',
+                                   'Hotel and wholesale buyers rarely keep LinkedIn profiles, so coverage '
+                                   'collapses otherwise',
+                                   'Smartlead ([BRZJjgou7ic @ 00:02:05])'],
+                                  ['Off-database verticals still generate real lead volume',
+                                   'Pull farms, vineyards and cold storage through the Apify Google Maps '
+                                   'Scraper',
+                                   'One live solar outreach workspace produced 347 new leads over 120 days',
+                                   'Will Butler ([FJ2CA-mGueY @ 00:01:05])'],
+                                  ['Small targeted lists beat big random lists',
+                                   'Start with 100 to 200 results, filter to decision makers, then scale',
+                                   'Fifty well-matched prospects get better results than five hundred '
+                                   'random names',
+                                   'Alex Vacca ([Ouq5ayjDmmI @ 00:09:03])'],
+                                  ['Search results must be audited rather than trusted blindly',
+                                   'Use match-filter and no-match-reason columns to cut off-target rows '
+                                   'before outreach',
+                                   'At least 20% of Sales Navigator leads miss the stated search criteria',
+                                   'JB - Evaboot ([rryPKFY2BRI @ 00:05:44])'],
+                                  ['A saved persona anchors every LinkedIn search',
+                                   'Save function, director and VP seniority, and geography as one '
+                                   'reusable persona',
+                                   'Every later filter then returns only ideal prospects inside your own '
+                                   'territory',
+                                   'Sell Better ([3Y7sW7ob3hY @ 00:01:29])'],
+                                  ['Most surfaced prospects should be discarded after review',
+                                   'View, research, and only sequence prospects meeting size and trigger '
+                                   'thresholds',
+                                   'Over half of reviewed prospects fail the parameters and never get '
+                                   'sequenced',
+                                   'Marcus Chan ([HL8AeTPufLU @ 00:21:51])']]}},
+              {'heading': '2. Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['On LinkedIn, the mechanics start with Sales Navigator, which Luke Weiler '
+                              'prices at one month free then $100 a month and Lead Gen PH says community '
+                              'partners can get down to roughly $30. Build the search, aim for an audience '
+                              'near 2,000, and respect the hard ceiling: only 2,500 come out per '
+                              'extraction, so split big searches by geography, scraping Metro Manila first '
+                              'and excluding it on the next pass [i-oQ5e48OF8 @ 00:03:13]. Weiler skips '
+                              'PhantomBuster entirely: sign up for Apify, open the LinkedIn Sales '
+                              'Navigator Scraper actor, export LinkedIn homepage cookies as JSON with the '
+                              'free Cookie Editor extension, paste them in with the search URL, and set '
+                              'minimum and maximum wait durations to avoid tripping spam flags '
+                              '[zR0U-wv3Bh8 @ 00:02:16]. Weiler reports pulling 1,400 results in under ten '
+                              'minutes, the same data PhantomBuster would deliver for $100 [zR0U-wv3Bh8 @ '
+                              '00:05:31]. The paid alternative is Evaboot, which adds an export button '
+                              'inside Sales Navigator and charges $9 per 100 credits, one credit per lead '
+                              'plus one per email found, so 100 credits buys 50 leads with emails '
+                              '[rryPKFY2BRI @ 00:08:16]. Its file also strips emojis and all-caps names '
+                              'and flags off-target rows before outreach.',
+                              'Google Maps is scraped city by city, never state by state. Georgey Tishin '
+                              "explains that searching 'HVAC in New Jersey' versus walking specific towns "
+                              'like Edison is the difference between roughly 500 and 5,000 results, '
+                              'because Google will not display every company for a broad query '
+                              '[p1rfyeLoS2s @ 00:00:53]. The free route is the Instant Data Scraper '
+                              'extension with a three-to-five-second delay on the next button, but it bugs '
+                              "out and Edison alone returned only 92 rows, so Tishin's paid route feeds a "
+                              'city-list file into a Discord export command that pulled 816 companies in '
+                              "about three minutes [p1rfyeLoS2s @ 00:05:29]. Lead Gen PH prefers Apify's "
+                              'Google Maps Scraper at about $4 per thousand places and, after testing the '
+                              'add-ons, turns on only company contact enrichment, which visits each listed '
+                              'website and harvests the emails Google Maps does not show [i-oQ5e48OF8 @ '
+                              '00:10:23]. Alex Vacca then filters the raw dataset: has a website or no '
+                              'website depending on the offer, 50-plus reviews as a sign of an established '
+                              'business that can afford you, four stars or above, and category cleanup to '
+                              'remove irrelevant results [Ouq5ayjDmmI @ 00:06:22]. Maps rows carry company '
+                              'names but usually no first name, so copy has to be written for the '
+                              'business.',
+                              "Apollo gets filtered harder than most users bother. Prospeo's walkthrough "
+                              'notes that niche verticals like fintech return nothing in the industry '
+                              'filter but surface under company keyword search, pairs that with 51-to-200 '
+                              'headcount over the unreliable revenue and funding fields, and sticks to '
+                              'verified emails and mobile numbers only [QnSW0B2oztg @ 00:02:39]. For '
+                              "volume without the bill, Kirke Männik says Apollo's API change killed "
+                              'external scrapers, so they run an Apify Apollo lead scraper with the search '
+                              'URL and Cookie Editor JSON, waits of 5 to 15 seconds, and a fresh account '
+                              'whenever the 48-hour trial expires [2OJzjgoV9mo @ 00:00:33]. Marcus Chan '
+                              'layers triggers on top of any list: under one year in the current company, '
+                              'posted on LinkedIn, and a Growth Insights check where 35% sales job-opening '
+                              'growth plus a ChatGPT prompt pulling quota attainment, 23.6% at one '
+                              'account, becomes the opening point of view [HL8AeTPufLU @ 00:11:07]. At '
+                              'scale, Growth Engine X skips paid model endpoints and tells Claude Code or '
+                              'Codex to spawn sub-agents on cheaper models, Sonnet or 5.4 mini or nano, to '
+                              'ICP-score the entire scraped database inside existing usage [BRZJjgou7ic @ '
+                              '00:03:15].'],
+               'table': {'caption': 'Street-level list-building tools, setups, and stated numbers',
+                         'headers': ['Tool / Route',
+                                     'Exact Setup',
+                                     'Price / Numbers Stated',
+                                     'Expert Source'],
+                         'rows': [['Sales Navigator search pulls with ICPS email guessing',
+                                   'Target roughly 2,000 audience, split by geography when results exceed '
+                                   'the cap',
+                                   '2,500 max per pull; about $30 monthly via partners versus $100',
+                                   'Lead Gen PH ([i-oQ5e48OF8 @ 00:03:13])'],
+                                  ['Apify LinkedIn Sales Navigator Scraper replacing PhantomBuster',
+                                   'Cookie Editor JSON from LinkedIn homepage plus search URL and wait '
+                                   'durations',
+                                   'Free $5 usage credit; 1,400 results scraped in under ten minutes',
+                                   'Luke Weiler ([zR0U-wv3Bh8 @ 00:05:31])'],
+                                  ['Evaboot Chrome extension inside Sales Navigator interface',
+                                   'One-click export with email finding, data cleaning, and match-filter '
+                                   'flags',
+                                   '$9 per 100 credits; one credit per lead, one per email found',
+                                   'JB - Evaboot ([rryPKFY2BRI @ 00:08:16])'],
+                                  ['Apify Google Maps Scraper with contact enrichment',
+                                   'Search term plus location, only the company contact enrichment add-on '
+                                   'enabled',
+                                   'About $4 per thousand scraped places, cheaper than Sales Navigator '
+                                   'plus ICPS',
+                                   'Lead Gen PH ([i-oQ5e48OF8 @ 00:09:29])'],
+                                  ['Lead Academy Google My Business scraper via Discord',
+                                   'City-list file for a state run through the Discord export search '
+                                   'command',
+                                   '$99 monthly; 887 unique leads pulled across five New Jersey cities',
+                                   'Georgey Tishin ([p1rfyeLoS2s @ 00:06:19])'],
+                                  ['Apify Apollo lead scraper on rotating free trials',
+                                   'Apollo search URL, Cookie Editor JSON, waits set between 5 and 15 '
+                                   'seconds',
+                                   '48-hour free trial, repeated by creating a new account each time',
+                                   'Kirke Männik ([2OJzjgoV9mo @ 00:00:33])'],
+                                  ['US Business Tracker standalone Windows desktop application',
+                                   'Launch the EXE, enter your own SerpApi key, run US-only searches',
+                                   'Up to 100 leads per search; lifetime license for one PC',
+                                   'Denyfr Software ([N_mWpddWHYs @ 00:01:13])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Small Settings That Change List Yield',
+                           'body': 'Four practitioner moves that squeeze more qualified rows out of the '
+                                   'same tools without adding spend.',
+                           'items': ["Search 'heating' instead of 'HVAC' on the Google Maps scraper; "
+                                     'Tishin finds the broader term returns more results [Georgey Tishin — '
+                                     'p1rfyeLoS2s @ 00:05:00]',
+                                     'Build saved searches filtered to people you have not viewed or '
+                                     'messaged; once a prospect is viewed it drops off, so the list '
+                                     'self-clears every week [Marcus Chan — HL8AeTPufLU @ 00:07:24]',
+                                     'Turn an account list into decision makers: save companies to an '
+                                     'account list, run a lead search on that list, add CEO in current job '
+                                     'title, then export with emails [JB - Evaboot — rryPKFY2BRI @ '
+                                     '00:09:31]',
+                                     'Source intent yourself by checking LinkedIn company pages for roles '
+                                     "unfilled for over two months instead of leaning on Apollo's "
+                                     'buying-intent topics [Prospeo — QnSW0B2oztg @ 00:04:10]']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Lock the persona and saved searches',
+                              'action': 'Save function, seniority, and geography as a persona, then build '
+                                        'narrow saved searches with trigger filters.',
+                              'detail': 'Set director and VP seniority plus territory in a persona [Sell '
+                                        'Better — 3Y7sW7ob3hY @ 00:01:29], then build niched saved '
+                                        'searches using under-one-year tenure and posted-on-LinkedIn '
+                                        'filters [Marcus Chan — HL8AeTPufLU @ 00:05:33].'},
+                             {'step': 2,
+                              'title': 'Pull LinkedIn-covered contacts and find emails',
+                              'action': 'Export each search under the 2,500 cap and run email finding on '
+                                        'every row.',
+                              'detail': 'Split searches by geography to stay under the 2,500-per-pull '
+                                        'limit [Lead Gen PH — i-oQ5e48OF8 @ 00:03:13], and budget Evaboot '
+                                        'credits at one per lead plus one per email found [JB - Evaboot — '
+                                        'rryPKFY2BRI @ 00:08:16].'},
+                             {'step': 3,
+                              'title': 'Fill the gaps with Google Maps',
+                              'action': 'Scrape every keyword across every zip code or city, with website '
+                                        'contact enrichment switched on.',
+                              'detail': 'Run category keywords across every US zip code and exclude '
+                                        'companies already found [Smartlead — BRZJjgou7ic @ 00:02:05], '
+                                        'enabling only the company contact enrichment add-on in Apify '
+                                        '[Lead Gen PH — i-oQ5e48OF8 @ 00:10:23].'},
+                             {'step': 4,
+                              'title': 'Filter, score, and load weekly',
+                              'action': 'Filter raw rows, ICP-score with cheap sub-agents, and add '
+                                        'qualified prospects to sequences on a fixed weekly block.',
+                              'detail': 'Filter for website, 50-plus reviews, and four stars [Alex Vacca — '
+                                        'Ouq5ayjDmmI @ 00:06:22], ICP-score with Sonnet or mini sub-agents '
+                                        '[Smartlead — BRZJjgou7ic @ 00:03:15], and refresh saved searches '
+                                        'every Monday [Marcus Chan — HL8AeTPufLU @ 00:26:03].'}]},
+              {'heading': 'Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The first fault line is whether to rent a shared database or mine fresher '
+                              'ground. Cleverly runs the database play straight: sign up for Apollo, '
+                              'filter for something like project managers at companies with 200 to 1,000 '
+                              'employees, click to reveal emails, select all and export, and because '
+                              'Apollo doubles as a sending tool, that is the recommendation [VXChXeJuEhI @ '
+                              '00:00:56]. Lead Gen PH concedes Apollo can work but warns that plenty of '
+                              'other senders are pulling the same records, so the more creative the '
+                              'source, the fresher the leads, the fewer people contacting them and the '
+                              'better the replies [i-oQ5e48OF8 @ 00:00:43]. Will Butler goes harder, '
+                              'calling Apollo, ZoomInfo and Sales Navigator outdated and incomplete '
+                              'outside the software and SaaS space they were built for; commercial solar '
+                              'buyers, from vineyards to cold storage facilities, simply are not in those '
+                              'tools, so Butler scrapes Google Maps through Apify instead and points to '
+                              'one live workspace that generated 347 new leads over 120 days [FJ2CA-mGueY '
+                              '@ 00:00:16]. Eric on the Smartlead show splits the difference: everyone '
+                              'else is grabbing LinkedIn data, so the team searches every US zip code for '
+                              'keywords like hotel, motel, spa, resort and casino, building a second '
+                              'repository that fills the gaps LinkedIn leaves [BRZJjgou7ic @ 00:02:22].',
+                              'Signal selection splits the LinkedIn camp. Jed Marley of Sell Better builds '
+                              'a persona, then layers changed jobs in the last 90 days, arguing new '
+                              'leaders want immediate impact and should be hit as early as their first '
+                              'month while they are still in information-gathering mode [3Y7sW7ob3hY @ '
+                              '00:03:23]. Marcus Chan finds that same changed-jobs filter hit or miss, '
+                              'sometimes flat wrong, and swaps in years in current company set to less '
+                              'than one year, preferring someone around 11 months in who has seen the lay '
+                              'of the land over someone two months in who is still overwhelmed '
+                              '[HL8AeTPufLU @ 00:04:56]. Intent data draws the same split. Marley uses the '
+                              'Sales Navigator intent feature to cut a thousand-lead list down to the '
+                              'warmest leads [3Y7sW7ob3hY @ 00:13:57], while the Prospeo presenter says '
+                              "they do not rely much on Apollo's buying intent filter and instead source "
+                              'intent by checking LinkedIn company pages for roles left unfilled for over '
+                              'two months [QnSW0B2oztg @ 00:04:10]. Chan builds intent from growth '
+                              'insights, flagging a 35% rise in sales job openings, then runs a custom '
+                              'ChatGPT prompt that pulls quota attainment and strategic priorities into '
+                              'trigger notes before anyone enters the sequence [HL8AeTPufLU @ 00:11:07].',
+                              'The cost debate runs from zero-dollar hacks to paid convenience, and every '
+                              'practitioner prices their own time differently. Mac Creator Workflow sells '
+                              'the free route: Instant Data Scraper on a Google Maps search pulls names, '
+                              'ratings and websites in under three seconds, then ChatGPT cleans the mess '
+                              'and writes a free-video-audit cold email [kRxM5oUoNno @ 00:00:58]. Georgey '
+                              'Tishin uses the same extension but calls it the inconvenient way, since it '
+                              'bugs out and Edison, New Jersey returned only 92 results, meaning hours of '
+                              'city-by-city manual scraping; the paid Lead Academy scraper at $99 a month '
+                              'returned 816 companies in one run and 887 unique leads across five New '
+                              'Jersey cities [p1rfyeLoS2s @ 00:03:50]. On Sales Navigator, Luke Weiler '
+                              'replaces a $100 PhantomBuster habit with a free Apify actor fed by Cookie '
+                              'Editor, while Evaboot charges $9 per 100 credits and argues the payoff is '
+                              'cleaned data and match flags [zR0U-wv3Bh8 @ 00:06:12]. Copy philosophy '
+                              'splits too: Eric at Smartlead says the AI personalization edge has faded '
+                              'and the test is blunt, if another customer could use the same AI prompt, '
+                              'skip it, leaning on segmentation because the list is the message '
+                              '[BRZJjgou7ic @ 00:04:31].'],
+               'table': {'caption': 'Competing list-building playbooks, side by side',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Shared contact database versus scraped fresh sources',
+                                   'Apollo search, reveal emails, select all, export, then send inside '
+                                   'Apollo itself',
+                                   'Scrape Google Maps or zip-code keyword grids to reach buyers databases '
+                                   'miss',
+                                   'Cleverly | #1 B2B Lead Generation Agency ([VXChXeJuEhI @ 00:00:56]); '
+                                   'Will Butler ([FJ2CA-mGueY @ 00:00:16])'],
+                                  ['Which LinkedIn timing trigger deserves the most trust',
+                                   'Changed jobs in last 90 days, contacted during their first month in '
+                                   'role',
+                                   'Less than one year in company, ideally near 11 months, since '
+                                   'changed-jobs is hit or miss',
+                                   'Sell Better ([3Y7sW7ob3hY @ 00:03:09]); Marcus Chan ([HL8AeTPufLU @ '
+                                   '00:04:56])'],
+                                  ['Platform intent filters versus self-sourced intent signals',
+                                   'Sales Navigator intent feature narrows a thousand leads down to the '
+                                   'warmest',
+                                   'Skip Apollo intent; check LinkedIn company pages for roles unfilled '
+                                   'over two months',
+                                   'Sell Better ([3Y7sW7ob3hY @ 00:13:57]); Prospeo ([QnSW0B2oztg @ '
+                                   '00:04:10])'],
+                                  ['Free Google Maps extraction versus paid automated scrapers',
+                                   'Instant Data Scraper pulls names, ratings and websites in under three '
+                                   'seconds for free',
+                                   'Lead Academy scraper at $99 monthly returned 816 companies while free '
+                                   'crawling took hours',
+                                   'Mac Creator Workflow ([kRxM5oUoNno @ 00:00:58]); Georgey Tishin '
+                                   '([p1rfyeLoS2s @ 00:03:50])'],
+                                  ['Sales Navigator export tool and its cost model',
+                                   'Free Apify actor with Cookie Editor cookies replaces a $100 '
+                                   'PhantomBuster spend',
+                                   'Evaboot at $9 per 100 credits adds cleaning, match flags and verified '
+                                   'emails',
+                                   'Luke Weiler ([zR0U-wv3Bh8 @ 00:06:12]); JB - Evaboot ([rryPKFY2BRI @ '
+                                   '00:08:16])'],
+                                  ['Ownership model for Google Maps scraping software',
+                                   'Pay-as-you-go Apify credits at roughly $4 per thousand scraped places',
+                                   'One-time lifetime desktop license using your own SerpApi key with no '
+                                   'monthly fees',
+                                   'Lead Gen PH ([i-oQ5e48OF8 @ 00:09:29]); Denyfr Software ([N_mWpddWHYs '
+                                   '@ 00:01:33])'],
+                                  ['AI-researched personalization versus segmentation-driven cold copy',
+                                   "ChatGPT research prompts feed trigger notes into each prospect's "
+                                   'sequence task',
+                                   'Lean on list segmentation and drop any AI prompt another customer '
+                                   'could reuse',
+                                   'Marcus Chan ([HL8AeTPufLU @ 00:13:14]); Smartlead ([BRZJjgou7ic @ '
+                                   '00:04:31])']]}},
+              {'heading': 'Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The most expensive trap is assuming a big audience equals a big list. Lead '
+                              'Gen PH built a 2,000-person Sales Navigator audience of event managers for '
+                              'a Philippine fireworks client, ran it through ICPS, and got a 2% email '
+                              'match rate; a later 343-row test hit only 7% against the 20 to 25%, '
+                              'sometimes 50%, they want to see [i-oQ5e48OF8 @ 00:07:09]. The cause was '
+                              'structural: most of those buyers use Gmail rather than a '
+                              'firstname-at-company domain, so email-guessing tools stall, and the fix was '
+                              "Apify's Google Maps scraper with only the company contact enrichment add-on "
+                              'switched on, at roughly $4 per thousand places [i-oQ5e48OF8 @ 00:09:29]. '
+                              "Evaboot's JB sets expectations at 40 to 90% discovery depending on "
+                              'industry, with startup employees easy to find and construction firms hard '
+                              'because they share less online [rryPKFY2BRI @ 00:03:28]. Will Butler hits '
+                              'the mirror problem on Maps: a solar run cost 13 cents, but one contact came '
+                              'back with a phone number and no email, forcing a Clay enrichment pass, and '
+                              'the data is not 100% clean [FJ2CA-mGueY @ 00:09:53]. Lead Gen PH also flags '
+                              'that Maps exports lack first names, so copy has to be written without them.',
+                              'Verified rarely means verified. The Prospeo presenter ran 1,000 Apollo '
+                              'leads marked verified and measured 73% email accuracy, over 270 bounces, '
+                              "against Apollo's claimed 275 million contacts and 91% accuracy, then reran "
+                              'the identical ICP, filters and messaging on Prospect.io data and reports '
+                              '98% accuracy with almost zero bounces, a head-to-head run on the Prospeo '
+                              "channel's own product [QnSW0B2oztg @ 00:09:46]. Evaboot's JB says maybe at "
+                              'least 20% of Sales Navigator search results do not match the search '
+                              'criteria, showing a head-of-sales search returning an intern, which is why '
+                              'the export carries match-filter and no-match-reason columns [rryPKFY2BRI @ '
+                              '00:05:44]. Marcus Chan verifies every profile is still at the listed '
+                              'company because records are sometimes out of date, and reports that over '
+                              'half the time prospects fail the parameters, such as having fewer than 25 '
+                              'AEs, and get skipped rather than sequenced [HL8AeTPufLU @ 00:21:51]. Lead '
+                              'Gen PH adds a hard ceiling: Sales Navigator sources at most 2,500 leads per '
+                              'pull, so larger audiences must be sliced by geography, for example Metro '
+                              'Manila first and then excluded on the next pass [i-oQ5e48OF8 @ 00:03:13]. '
+                              'Skipping these checks, JB warns, burns time, energy and focus on leads '
+                              'outside the target.',
+                              'Tooling fragility is the third trap. Kirke Männik opens by noting Apollo '
+                              'changed its API and put external scrapers out of business, then routes '
+                              'around it with an Apify Apollo lead scraper fed by Cookie Editor cookies, '
+                              'five-to-15-second waits, and fresh accounts every time the 48-hour trial '
+                              'lapses [2OJzjgoV9mo @ 00:00:33]. Alex Vacca warns that platforms block '
+                              'aggressive scraping, that only public profiles can be pulled, and that '
+                              'actor quality varies, so check reviews, usage and pricing for two minutes '
+                              'and start with small runs before scaling [Ouq5ayjDmmI @ 00:11:55]. Luke '
+                              'Weiler treats the minimum and maximum wait settings as protection against '
+                              'mass-scraping spam flags, and still watched a 50-lead test crawl for '
+                              'minutes after a prior 1,400-lead pull finished in under ten minutes '
+                              '[zR0U-wv3Bh8 @ 00:03:26]. Process decay kills lists too: Marcus Chan says '
+                              'the common mistake is treating Sales Navigator as a one-time event or a '
+                              'phone book, and the team instead reviews saved searches every Monday, with '
+                              'Chan blocking a minimum of eight hours a week for cold outbound as an AE '
+                              '[HL8AeTPufLU @ 00:25:48]. Searching names and hoping for the best, in '
+                              "Chan's words, is not prospecting but busy work."],
+               'table': {'caption': 'Firsthand failure modes and the checks practitioners used',
+                         'headers': ['Failure Mode', 'What Happened', 'Fix or Check', 'Expert Source'],
+                         'rows': [['Email match rate collapse in Gmail-heavy markets',
+                                   'A 2,000-person Sales Navigator audience in the Philippines returned '
+                                   'only 2% emails',
+                                   'Switch to Apify Google Maps with the company contact enrichment add-on '
+                                   'enabled',
+                                   'Lead Gen PH ([i-oQ5e48OF8 @ 00:07:09])'],
+                                  ['Verified Apollo emails bouncing at real campaign scale',
+                                   '1,000 verified Apollo leads showed 73% accuracy and over 270 bounced '
+                                   'emails',
+                                   'Rerun the same ICP on another data source; the Prospect.io test showed '
+                                   '98%',
+                                   'Prospeo ([QnSW0B2oztg @ 00:09:46])'],
+                                  ['Sales Navigator results landing outside the search criteria',
+                                   'Maybe at least 20% mismatch, including an intern returned for head of '
+                                   'sales',
+                                   'Use match-filter and no-match-reason columns to drop off-target leads '
+                                   'before outreach',
+                                   'JB - Evaboot ([rryPKFY2BRI @ 00:05:44])'],
+                                  ['Broad state-level Google Maps queries hiding most businesses',
+                                   'Searching HVAC across all of New Jersey surfaces far fewer listings',
+                                   'Query city by city; the gap is roughly 500 versus 5,000 results',
+                                   'Georgey Tishin ([p1rfyeLoS2s @ 00:00:53])'],
+                                  ['Aggressive scraping triggering temporary platform request blocks',
+                                   'Platforms temporarily block requests when too much data is pulled too '
+                                   'fast',
+                                   'Start with smaller runs, set wait durations, then scale up gradually '
+                                   'afterward',
+                                   'Alex Vacca ([Ouq5ayjDmmI @ 00:11:55]); Luke Weiler ([zR0U-wv3Bh8 @ '
+                                   '00:03:26])'],
+                                  ['Scraper dependency on a vendor API that can change',
+                                   'Apollo changed its API and put external scrapers out of business '
+                                   'overnight',
+                                   'Use a cookie-based Apify scraper that does not require an API at all',
+                                   'Kirke Männik ([2OJzjgoV9mo @ 00:00:00])'],
+                                  ['Target buyers who simply do not live on LinkedIn',
+                                   'Hotel managers and purchasing staff often lack LinkedIn profiles '
+                                   'entirely',
+                                   'Scrape every US zip code by keyword, then exclude known hotels in '
+                                   'Disco Like',
+                                   'Smartlead ([BRZJjgou7ic @ 00:01:39])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Four checks before a list touches a sending inbox',
+                           'body': 'Each gate comes from a loss, bounce, or dead end a practitioner hit '
+                                   'firsthand. Clear all four before loading a list into a sequence.',
+                           'items': ['Do not scale a LinkedIn-sourced list until a test pull clears a 20 '
+                                     'to 25% email match rate; the Philippines runs sat at 2% and 7% [Lead '
+                                     'Gen PH — i-oQ5e48OF8 @ 00:13:51].',
+                                     'Do not trust a verified label alone; 1,000 verified Apollo leads '
+                                     'still produced only 73% email accuracy [Prospeo — QnSW0B2oztg @ '
+                                     '00:09:46].',
+                                     'Do not sequence a Sales Navigator export without checking match '
+                                     'flags; maybe at least 20% miss the search criteria [JB - Evaboot — '
+                                     'rryPKFY2BRI @ 00:05:44].',
+                                     'Do not open with a full-volume scrape; start with 100 or 200 results '
+                                     'to test, then scale once the run works [Alex Vacca — Ouq5ayjDmmI @ '
+                                     '00:05:55].']}}],
+ 'pull_quote': '"A massive database of bad data isn\'t an advantage. It\'s a liability." attributed to '
+               'Prospeo (QnSW0B2oztg @ 00:10:17).',
+ 'diagram_id': 'diag-03',
+ 'action_checklist': ['Create a Sales Navigator persona with function, seniority and geography, then layer '
+                      'every search on top of it [Sell Better — 3Y7sW7ob3hY @ 00:01:29].',
+                      'Keep each Sales Navigator pull under the 2,500-lead cap by slicing geography, '
+                      'aiming for roughly 2,000 per batch [Lead Gen PH — i-oQ5e48OF8 @ 00:03:13].',
+                      'Run the Compass Google Maps scraper in Apify, start with 100 to 200 results, then '
+                      'filter for has-website, 50+ reviews and four stars or above [Alex Vacca — '
+                      'Ouq5ayjDmmI @ 00:06:22].',
+                      'Query Google Maps city by city instead of state-wide, and keep review counts and '
+                      'ratings as copy variables [Georgey Tishin — p1rfyeLoS2s @ 00:00:53].',
+                      'Pre-qualify every Sales Navigator lead by confirming the current company, checking '
+                      'growth insights job openings, and logging trigger notes on the sequence task '
+                      '[Marcus Chan — HL8AeTPufLU @ 00:16:06].',
+                      'Revisit a good-conversations lead list every two weeks for job changes and use a '
+                      'previous-company-to-current-company subject line [Sell Better — 3Y7sW7ob3hY @ '
+                      '00:07:04].'],
+ 'statutory_citations': [{'title': 'Lead Gen PH — How to Source B2B Leads for Cold Email [Google Maps & '
+                                   'LinkedIn] [00:07:09]',
+                          'url': 'https://www.youtube.com/watch?v=i-oQ5e48OF8&t=429s',
+                          'relevance': 'Primary practitioner testimony on a 2% Sales Navigator match rate '
+                                       'and the pivot to Google Maps scraping.'},
+                         {'title': 'Prospeo — How to Use Apollo.io (2026) – Full B2B Lead Generation '
+                                   'Tutorial [00:09:46]',
+                          'url': 'https://www.youtube.com/watch?v=QnSW0B2oztg&t=586s',
+                          'relevance': 'Primary practitioner testimony on verified Apollo emails measuring '
+                                       '73% accuracy in a 1,000-lead campaign.'},
+                         {'title': 'Marcus Chan — UPDATED 2026: LinkedIn Sales Navigator Lead Gen with AI '
+                                   '& Apollo (Step-by-Step) [00:04:56]',
+                          'url': 'https://www.youtube.com/watch?v=HL8AeTPufLU&t=296s',
+                          'relevance': 'Primary practitioner testimony on why the changed-jobs filter is '
+                                       'hit or miss and tenure works better.'},
+                         {'title': 'JB - Evaboot — How To Scrape Data From LinkedIn Sales Navigator ? - '
+                                   'Evaboot LinkedIn Sales Navigator Scraper Demo [00:05:44]',
+                          'url': 'https://www.youtube.com/watch?v=rryPKFY2BRI&t=344s',
+                          'relevance': 'Primary practitioner testimony on Sales Navigator results that '
+                                       'fail the search criteria.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'BRZJjgou7ic',
+                       'title': 'The BEST Way to Build Lead Lists for Cold Email in 2026 | Cold To Close : '
+                                'Episode 1',
+                       'channel': 'Smartlead',
+                       'author': 'Smartlead',
+                       'text': 'The good rule of thumb is if another one of our customers were able to use '
+                               "this AI prompt, we probably shouldn't use it.",
+                       'tip': 'The good rule of thumb is if another one of our customers were able to use '
+                              "this AI prompt, we probably shouldn't use it.",
+                       'timestamp': 271,
+                       'timestamp_seconds': 271,
+                       'timestamp_label': '[00:04:31]',
+                       'url': 'https://www.youtube.com/watch?v=BRZJjgou7ic&t=271s',
+                       'markdown': '[00:04:31](https://www.youtube.com/watch?v=BRZJjgou7ic&t=271s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '3Y7sW7ob3hY',
+                       'title': 'How to Use LinkedIn Sales Navigator For Lead Generation (2025 Update)',
+                       'channel': 'Sell Better',
+                       'author': 'Sell Better',
+                       'text': 'Go over to activities and shared experiences, and select change jobs in '
+                               'the last 90 days.',
+                       'tip': 'Go over to activities and shared experiences, and select change jobs in the '
+                              'last 90 days.',
+                       'timestamp': 189,
+                       'timestamp_seconds': 189,
+                       'timestamp_label': '[00:03:09]',
+                       'url': 'https://www.youtube.com/watch?v=3Y7sW7ob3hY&t=189s',
+                       'markdown': '[00:03:09](https://www.youtube.com/watch?v=3Y7sW7ob3hY&t=189s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'i-oQ5e48OF8',
+                       'title': 'How to Source B2B Leads for Cold Email [Google Maps & LinkedIn]',
+                       'channel': 'Lead Gen PH',
+                       'author': 'Lead Gen PH',
+                       'text': 'We actually got a really low match rate, so see this 2% match rate.',
+                       'tip': 'We actually got a really low match rate, so see this 2% match rate.',
+                       'timestamp': 417,
+                       'timestamp_seconds': 417,
+                       'timestamp_label': '[00:06:57]',
+                       'url': 'https://www.youtube.com/watch?v=i-oQ5e48OF8&t=417s',
+                       'markdown': '[00:06:57](https://www.youtube.com/watch?v=i-oQ5e48OF8&t=417s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'bAri9HF705I',
+                       'title': 'How to Scrape LinkedIn Sales Navigator? Sales Navigator Scraper (Guide)',
+                       'channel': 'LeadLoft',
+                       'author': 'LeadLoft',
+                       'text': "There's bounce shield which can verify emails that are unverifiable or "
+                               'catch all emails.',
+                       'tip': "There's bounce shield which can verify emails that are unverifiable or "
+                              'catch all emails.',
+                       'timestamp': 106,
+                       'timestamp_seconds': 106,
+                       'timestamp_label': '[00:01:46]',
+                       'url': 'https://www.youtube.com/watch?v=bAri9HF705I&t=106s',
+                       'markdown': '[00:01:46](https://www.youtube.com/watch?v=bAri9HF705I&t=106s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'kRxM5oUoNno',
+                       'title': 'How to Scrape 1,000+ B2B Leads for FREE (Google Maps + AI Hack)',
+                       'channel': 'Mac Creator Workflow',
+                       'author': 'Mac Creator Workflow',
+                       'text': 'In less than 3 seconds, the tool extracts every single business name, '
+                               'rating, and website URL, and packages it into a downloadable spreadsheet.',
+                       'tip': 'In less than 3 seconds, the tool extracts every single business name, '
+                              'rating, and website URL, and packages it into a downloadable spreadsheet.',
+                       'timestamp': 58,
+                       'timestamp_seconds': 58,
+                       'timestamp_label': '[00:00:58]',
+                       'url': 'https://www.youtube.com/watch?v=kRxM5oUoNno&t=58s',
+                       'markdown': '[00:00:58](https://www.youtube.com/watch?v=kRxM5oUoNno&t=58s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'VXChXeJuEhI',
+                       'title': 'How To Use Apollo IO and LinkedIn Sales Navigator To Build Emails Lists',
+                       'channel': 'Cleverly | #1 B2B Lead Generation Agency',
+                       'author': 'Cleverly | #1 B2B Lead Generation Agency',
+                       'text': "Fortunately Apollo is also a sending tool, that's why I recommend it.",
+                       'tip': "Fortunately Apollo is also a sending tool, that's why I recommend it.",
+                       'timestamp': 56,
+                       'timestamp_seconds': 56,
+                       'timestamp_label': '[00:00:56]',
+                       'url': 'https://www.youtube.com/watch?v=VXChXeJuEhI&t=56s',
+                       'markdown': '[00:00:56](https://www.youtube.com/watch?v=VXChXeJuEhI&t=56s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'p1rfyeLoS2s',
+                       'title': 'How To Scrape UNLIMITED Local Business Leads Using Google Maps for FREE.',
+                       'channel': 'Georgey Tishin',
+                       'author': 'Georgey Tishin',
+                       'text': 'The difference between doing it this way and just doing HVAC in New Jersey '
+                               'is literally the difference between getting like 500 results or like 5,000 '
+                               'results.',
+                       'tip': 'The difference between doing it this way and just doing HVAC in New Jersey '
+                              'is literally the difference between getting like 500 results or like 5,000 '
+                              'results.',
+                       'timestamp': 53,
+                       'timestamp_seconds': 53,
+                       'timestamp_label': '[00:00:53]',
+                       'url': 'https://www.youtube.com/watch?v=p1rfyeLoS2s&t=53s',
+                       'markdown': '[00:00:53](https://www.youtube.com/watch?v=p1rfyeLoS2s&t=53s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'HL8AeTPufLU',
+                       'title': 'UPDATED 2026: LinkedIn Sales Navigator Lead Gen with AI & Apollo '
+                                '(Step-by-Step)',
+                       'channel': 'Marcus Chan',
+                       'author': 'Marcus Chan',
+                       'text': 'One of the other ones that some people like to choose is change jobs, and '
+                               'this I have found personally can be a little hit or miss.',
+                       'tip': 'One of the other ones that some people like to choose is change jobs, and '
+                              'this I have found personally can be a little hit or miss.',
+                       'timestamp': 296,
+                       'timestamp_seconds': 296,
+                       'timestamp_label': '[00:04:56]',
+                       'url': 'https://www.youtube.com/watch?v=HL8AeTPufLU&t=296s',
+                       'markdown': '[00:04:56](https://www.youtube.com/watch?v=HL8AeTPufLU&t=296s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '2OJzjgoV9mo',
+                       'title': 'How to scrape unlimited Apollo leads for free (2 mins)',
+                       'channel': 'Kirke Männik',
+                       'author': 'Kirke Männik',
+                       'text': 'Just last week Apollo changed their API putting all of the external '
+                               'scrapers out of business.',
+                       'tip': 'Just last week Apollo changed their API putting all of the external '
+                              'scrapers out of business.',
+                       'timestamp': 0,
+                       'timestamp_seconds': 0,
+                       'timestamp_label': '[00:00:00]',
+                       'url': 'https://www.youtube.com/watch?v=2OJzjgoV9mo&t=0s',
+                       'markdown': '[00:00:00](https://www.youtube.com/watch?v=2OJzjgoV9mo&t=0s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'zR0U-wv3Bh8',
+                       'title': 'How to scrape LinkedIn Sales Navigator without using PhantomBuster (2024)',
+                       'channel': 'Luke Weiler',
+                       'author': 'Luke Weiler',
+                       'text': 'This is the same exact style, the same exact data I would get if I spent '
+                               '$100 scraping leads on Phantom Buster, except on this you can literally do '
+                               'it for free.',
+                       'tip': 'This is the same exact style, the same exact data I would get if I spent '
+                              '$100 scraping leads on Phantom Buster, except on this you can literally do '
+                              'it for free.',
+                       'timestamp': 372,
+                       'timestamp_seconds': 372,
+                       'timestamp_label': '[00:06:12]',
+                       'url': 'https://www.youtube.com/watch?v=zR0U-wv3Bh8&t=372s',
+                       'markdown': '[00:06:12](https://www.youtube.com/watch?v=zR0U-wv3Bh8&t=372s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Ouq5ayjDmmI',
+                       'title': 'Apify Tutorial | How to Scrape Leads 2026',
+                       'channel': 'Alex Vacca',
+                       'author': 'Alex Vacca',
+                       'text': '50 well-matched prospects will get better results than 500 random names.',
+                       'tip': '50 well-matched prospects will get better results than 500 random names.',
+                       'timestamp': 543,
+                       'timestamp_seconds': 543,
+                       'timestamp_label': '[00:09:03]',
+                       'url': 'https://www.youtube.com/watch?v=Ouq5ayjDmmI&t=543s',
+                       'markdown': '[00:09:03](https://www.youtube.com/watch?v=Ouq5ayjDmmI&t=543s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'N_mWpddWHYs',
+                       'title': 'How to Scrape B2B Leads from Google Maps in the US (No Monthly '
+                                'Subscriptions!) | US BusinessTracker',
+                       'channel': 'Denyfr Software',
+                       'author': 'Denyfr Software',
+                       'text': 'Enjoy a lifetime software license for one PC, local database storage, and '
+                               'free updates, with no monthly software subscription fees.',
+                       'tip': 'Enjoy a lifetime software license for one PC, local database storage, and '
+                              'free updates, with no monthly software subscription fees.',
+                       'timestamp': 93,
+                       'timestamp_seconds': 93,
+                       'timestamp_label': '[00:01:33]',
+                       'url': 'https://www.youtube.com/watch?v=N_mWpddWHYs&t=93s',
+                       'markdown': '[00:01:33](https://www.youtube.com/watch?v=N_mWpddWHYs&t=93s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'rryPKFY2BRI',
+                       'title': 'How To Scrape Data From LinkedIn Sales Navigator ? - Evaboot LinkedIn '
+                                'Sales Navigator Scraper Demo',
+                       'channel': 'JB - Evaboot',
+                       'author': 'JB - Evaboot',
+                       'text': "Maybe at least 20% of your Sales Navigator leads on your searches don't "
+                               'match your search criteria.',
+                       'tip': "Maybe at least 20% of your Sales Navigator leads on your searches don't "
+                              'match your search criteria.',
+                       'timestamp': 344,
+                       'timestamp_seconds': 344,
+                       'timestamp_label': '[00:05:44]',
+                       'url': 'https://www.youtube.com/watch?v=rryPKFY2BRI&t=344s',
+                       'markdown': '[00:05:44](https://www.youtube.com/watch?v=rryPKFY2BRI&t=344s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'FJ2CA-mGueY',
+                       'title': 'Apollo & ZoomInfo Are Missing These B2B Leads (Here’s How to Find Them)',
+                       'channel': 'Will Butler',
+                       'author': 'Will Butler',
+                       'text': "This isn't clean 100%, it's going to need some enrichment, but it's a good "
+                               "way to at least get together a list of who you're looking to go after.",
+                       'tip': "This isn't clean 100%, it's going to need some enrichment, but it's a good "
+                              "way to at least get together a list of who you're looking to go after.",
+                       'timestamp': 613,
+                       'timestamp_seconds': 613,
+                       'timestamp_label': '[00:10:13]',
+                       'url': 'https://www.youtube.com/watch?v=FJ2CA-mGueY&t=613s',
+                       'markdown': '[00:10:13](https://www.youtube.com/watch?v=FJ2CA-mGueY&t=613s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'QnSW0B2oztg',
+                       'title': 'How to Use Apollo.io (2026) – Full B2B Lead Generation Tutorial',
+                       'channel': 'Prospeo',
+                       'author': 'Prospeo',
+                       'text': 'In a recent campaign we ran using 1,000 verified leads from Apollo, we '
+                               'only saw an email accuracy rate of 73%.',
+                       'tip': 'In a recent campaign we ran using 1,000 verified leads from Apollo, we only '
+                              'saw an email accuracy rate of 73%.',
+                       'timestamp': 586,
+                       'timestamp_seconds': 586,
+                       'timestamp_label': '[00:09:46]',
+                       'url': 'https://www.youtube.com/watch?v=QnSW0B2oztg&t=586s',
+                       'markdown': '[00:09:46](https://www.youtube.com/watch?v=QnSW0B2oztg&t=586s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'QlUWH6dlwC4',
+                       'title': 'Smartlead SmartProspect Explained: How to Find Leads for Cold Outreach',
+                       'channel': 'NimbleGTM',
+                       'author': 'NimbleGTM',
+                       'text': "I'll just select the emails and then it would consume the credits, and it "
+                               'would find the contact details.',
+                       'tip': "I'll just select the emails and then it would consume the credits, and it "
+                              'would find the contact details.',
+                       'timestamp': 128,
+                       'timestamp_seconds': 128,
+                       'timestamp_label': '[00:02:08]',
+                       'url': 'https://www.youtube.com/watch?v=QlUWH6dlwC4&t=128s',
+                       'markdown': '[00:02:08](https://www.youtube.com/watch?v=QlUWH6dlwC4&t=128s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'}]}

@@ -1,858 +1,898 @@
 from __future__ import annotations
 
-CHAPTER_12 = {
-    "id": "Q12",
-    "chapter_id": "Q12",
-    "chapter_number": 12,
-    "question_number": 12,
-    "slug": "first-30-day-launch-sprint-kill-fix-scale",
-    "question_prompt": "What is the exact Day-1-to-Day-30 execution schedule for launching unclaimed property recovery, and what quantitative thresholds govern Kill, Fix, or Scale decisions at Day 30/60/90?",
-    "kicker": "Q12 / THE BIG MONEY PLAYBOOKS",
-    "title": "The First 30-Day Launch Sprint & Kill / Fix / Scale Gates",
-    "subtitle": "A Three-Person Treasury-Claim Sprint: Finder Restrictions, Corporate Warrant Evidence, Controlled Cash Burn, and Cohort-Based Expansion",
-    "layout_template": "thirty_day_plan",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #5, Unclaimed Property Recovery, holds Rank #04 with an "
-        "89/100 Money-to-Manpower Score. This sprint operationalizes its 12 mapped "
-        "plays through a one-full-time, two-contractor pod, concentrating on "
-        "state-treasury property, corporate uncashed warrants, and lawful finder-fee "
-        "engagements. Days 1–30 establish jurisdiction rules, audit identity matches, "
-        "test transparent outreach, and submit evidence-complete claims. Day 30/60/90 "
-        "decisions use explicit denominators, filing defects, acquisition costs, and "
-        "cash reserves rather than premature collection promises. Canonical annual "
-        "owner profits are $15,000 Conservative, $95,625 Base, and $225,000 Scaled; "
-        "recognized service fees, never recovered client principal, fund those "
-        "outcomes. With first deals typically taking 3–12 months, the initial "
-        "success condition is a defensible operating system and qualified cohort, "
-        "not an artificial first-month revenue target."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$60,000",
-            "context": "Annual recognized service fees; client property excluded",
-            "note": "25% net margin; $15,000 annual owner net profit; 1 FT + 2 C",
-        },
-        {
-            "label": "Base",
-            "value": "$255,000",
-            "context": "Annual recognized service fees; client property excluded",
-            "note": "37.5% net margin; $95,625 annual owner net profit; 1 FT + 2 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$450,000",
-            "context": "Annual recognized service fees; client property excluded",
-            "note": "50% net margin; $225,000 annual owner net profit; 2 FT + 3 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Days 1–7: Bound the Jurisdiction, Assign the Pod, and Protect the Runway",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Start with one state, one property class, and one claimant "
-                    "type: existing corporations seeking cash already held by a "
-                    "state treasury. Corporate uncashed warrants still payable "
-                    "by an issuing agency belong in a separate workflow until "
-                    "custody and the applicable recovery rules are established. "
-                    "The supplied mapping count is twelve; the following are "
-                    "sprint workstream labels, not asserted source-taxonomy names. "
-                    "P01 covers treasury inventory; P02 covers issuer-held warrants; "
-                    "P03 covers corporate claimant authority; P04 covers historical "
-                    "address evidence; P05 covers identity matching; P06 covers "
-                    "finder eligibility and fee rules; P07 covers owner outreach; "
-                    "P08 covers engagement execution; P09 covers evidence assembly; "
-                    "P10 covers claim submission; P11 covers status tracking; and "
-                    "P12 covers fee collection and reconciliation. Assign every "
-                    "record one primary play and explicit supporting plays. The "
-                    "full-time founder owns P06–P08 and P12, the research contractor "
-                    "owns P01–P05, and the claims contractor owns P09–P11. The "
-                    "founder retains final identity and submission decisions. "
-                    "Contractors receive narrow case access rather than a complete "
-                    "customer export. This partition makes all twelve plays "
-                    "observable without pretending a three-person pod can launch "
-                    "twelve markets simultaneously. Freeze additional jurisdictions "
-                    "until the first cohort clears its documented review."
-                ),
-                (
-                    "On Days 1 and 2, build a rules register from the treasury's "
-                    "official claim instructions and current statutes. California "
-                    "Code of Civil Procedure §1582 addresses recovery agreements, "
-                    "including restricted contracting periods and a ten-percent "
-                    "compensation ceiling; Texas Property Code §74.507 separately "
-                    "governs recovery-assistance agreements and its own restrictions. "
-                    "Do not transplant one state's contract into another. Record "
-                    "the controlling section, retrieval date, restricted-period "
-                    "trigger, permitted fee calculation, required agreement terms, "
-                    "and any applicable registration requirement. Treat a missing "
-                    "custody date as a blocked engagement, not permission to infer "
-                    "that a waiting period expired. Ask the treasury to clarify "
-                    "ambiguous procedures without transmitting unnecessary identity "
-                    "documents. On Day 3, configure a case register in Airtable or "
-                    "a local SQLite database and a separately permissioned document "
-                    "repository in Google Workspace. Store treasury identifiers, "
-                    "evidence references, and status events in the register; keep "
-                    "tax identifiers and document images out of outreach exports. "
-                    "Enable multifactor authentication, individual accounts, access "
-                    "logging, and encrypted backups. Document retention and deletion "
-                    "rules for rejected prospects before importing records. By "
-                    "Day 4, a second person must reproduce five property-to-owner "
-                    "matches from the saved evidence alone."
-                ),
-                (
-                    "Set the first-month cash-burn ceiling at $3,500: $1,500 for "
-                    "formation and jurisdiction-specific contract review, $750 for "
-                    "secure systems and records, $1,000 for contractors, and $250 "
-                    "for outreach. At an illustrative $50 hourly rate, the "
-                    "contractor allowance buys twenty combined hours, not twenty "
-                    "hours each. The founder supplies the remaining operating "
-                    "capacity without a first-month draw; personal living expenses "
-                    "require a separate reserve. Budget $2,500 for each of Months "
-                    "2 and 3, making the ninety-day ceiling $8,500. A $32,500 "
-                    "starting balance leaves $24,000 after that ceiling and funds "
-                    "another nine months at $2,500 with $1,500 remaining. This "
-                    "fits the canonical $5,000–$35,000 startup range while "
-                    "acknowledging the 3–12-month first-deal interval. A $5,000 "
-                    "launch cannot support the same schedule without reduced "
-                    "spending or additional committed funds. Log commitments when "
-                    "ordered, not only when invoices clear. On Days 5–7, approve "
-                    "one agreement, one direct-claim disclosure, one evidence "
-                    "checklist, and the first twenty-record audit. No acquisition "
-                    "spending expands while the remaining runway falls below "
-                    "six months of the current maintenance budget. The "
-                    "$1,500–$8,000 monthly operating range describes planning "
-                    "capacity, not permission to exhaust available cash."
-                ),
-            ],
-            "table": {
-                "caption": "Week One Daily Deliverables Across the Twelve-Play Operating Map",
-                "headers": [
-                    "Day and accountable operator",
-                    "Execution across mapped operating plays",
-                    "Required artifact before work advances",
-                    "Quantitative control and failure response",
-                ],
-                "rows": [
-                    [
-                        "Day 1: founder defines the initial jurisdiction boundary",
-                        "P01 and P06 separate treasury custody from issuer custody",
-                        "One state, property class, claimant type, and rules register",
-                        "Reject additional markets until this boundary has documented ownership",
-                    ],
-                    [
-                        "Day 2: founder validates contract restrictions with retained reviewer",
-                        "P06 and P08 translate statutes into executable engagement requirements",
-                        "Dated fee, waiting-period, registration, and agreement requirements with citations",
-                        "Block every engagement missing a verified eligibility trigger date",
-                    ],
-                    [
-                        "Day 3: founder provisions restricted systems for both contractors",
-                        "P05 and P11 establish evidence references and status history",
-                        "Individual accounts, encrypted repository, backup procedure, and access register",
-                        "Require multifactor authentication for every account holding claimant evidence",
-                    ],
-                    [
-                        "Day 4: research contractor prepares five independently reviewable matches",
-                        "P03 through P05 connect corporate authority and historical addresses",
-                        "Five evidence chains linking property identifiers to specific corporations",
-                        "Second reviewer reproduces all five matches before broader importing",
-                    ],
-                    [
-                        "Day 5: founder finalizes transparent owner communications and agreements",
-                        "P07 and P08 explain direct claiming and priced assistance",
-                        "Approved letter, call script, engagement agreement, and disclosure record",
-                        "Every template states owners may claim directly without assistance",
-                    ],
-                    [
-                        "Day 6: claims contractor builds the first evidence checklist",
-                        "P09 and P10 distinguish required documents from optional research",
-                        "Treasury-specific checklist with submission method and document custody rules",
-                        "Zero submissions proceed with unverified signing authority or identities",
-                    ],
-                    [
-                        "Day 7: founder audits records and confirms remaining runway",
-                        "P01 through P12 receive owners, statuses, and measurable outputs",
-                        "Twenty-record audit, committed-spend ledger, and written week-two priorities",
-                        "Release outreach only after at least nineteen correct audit matches",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four Pre-Flight Checks Before Contacting an Owner",
-                "body": (
-                    "An attractive property amount does not override an unresolved "
-                    "identity, custody, contracting, or cash-control defect."
-                ),
-                "items": [
-                    (
-                        "Verify the property's present custodian and identifier; "
-                        "do not describe an issuer-held warrant as treasury-held property."
-                    ),
-                    (
-                        "Document the applicable fee ceiling, restricted contracting "
-                        "period, agreement requirements, and registration position "
-                        "before offering paid recovery."
-                    ),
-                    (
-                        "Require two independent identity links, verified corporate "
-                        "authority, and a second-person review of ambiguous matches."
-                    ),
-                    (
-                        "Confirm the $3,500 first-month ceiling, six-month maintenance "
-                        "reserve, direct-claim disclosure, and restricted document access."
-                    ),
-                ],
-            },
-        },
-        {
-            "heading": "2. Days 8–14: Build a Measurable Cohort and Earn Permission to Proceed",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Days 8–10 turn the initial sample into a hundred-record "
-                    "research cohort. Count unique property-owner pairs, not search "
-                    "results, duplicate treasury pages, or multiple contacts at "
-                    "the same corporation. Preserve the source URL, retrieval "
-                    "date, displayed amount category, holder name, and property "
-                    "identifier. A treasury's amount band is not a verified "
-                    "recoverable balance. Use record matching to propose candidates, "
-                    "then validate names against Secretary of State records and "
-                    "addresses against dated business documents. A shared name "
-                    "alone never establishes ownership. For mergers, require a "
-                    "documented chain from the named owner to the current entity; "
-                    "for dissolved corporations, determine who can lawfully act "
-                    "before offering assistance. Keep issuer-held warrants in a "
-                    "separate queue with the issuer's replacement or reissuance "
-                    "procedure. Target sixty records with sufficient identity, "
-                    "authority, timing, and estimated fee evidence to support "
-                    "contact. That is a workload target, not a reason to relax "
-                    "eligibility. Independently sample twenty matches and require "
-                    "nineteen correct results before outreach. Also review every "
-                    "high-value or ambiguous match. The small audit supports a "
-                    "controlled pilot; it does not establish a precise population "
-                    "error rate or authorize unattended claims."
-                ),
-                (
-                    "On Days 11–14, contact the first twenty eligible owners "
-                    "through individualized business letters or manually placed "
-                    "calls, then expand toward forty by Day 21. Each message "
-                    "identifies the recovery business, describes the property "
-                    "without exposing sensitive identifiers, states that the owner "
-                    "can claim directly through the treasury without hiring the "
-                    "service, and explains the proposed fee basis. Never imply "
-                    "government affiliation, exclusive access, or a deadline "
-                    "unsupported by the custodian. Give the owner the official "
-                    "treasury website and an independently verifiable callback "
-                    "route. For commercial email, apply 15 U.S.C. §7704 requirements "
-                    "where applicable, including accurate routing information, "
-                    "required identification, postal address, and effective opt-out "
-                    "handling. Do not introduce automated calls or texts without "
-                    "evaluating 47 CFR §64.1200 and applicable state requirements. "
-                    "Record delivered contacts, replies, two-way discussions, "
-                    "declines, and signed engagements separately. An unanswered "
-                    "message is not a conversation, and a returned envelope is "
-                    "not a delivered contact. Cap this pilot at two unanswered "
-                    "contact attempts per owner and suppress further outreach "
-                    "immediately after an objection. Customer distrust is measured "
-                    "through stated concerns, not dismissed as a sales objection."
-                ),
-                (
-                    "Use the first ten two-way discussions to test whether the "
-                    "service solves a real administrative burden. Ask who controls "
-                    "historical records, whether the corporation has already filed, "
-                    "and which employee can authorize representation. Offer document "
-                    "assembly and status tracking rather than selling public search "
-                    "results as proprietary discoveries. A qualified mandate requires "
-                    "a valid agreement, a verified signer, lawful timing, a "
-                    "defensible ownership chain, and a fee estimate supported by "
-                    "available information. Exclude speculative amount bands from "
-                    "the mandate fee total until better evidence arrives. Model "
-                    "a $30,000 recovery at a lawful ten-percent fee as $3,000 "
-                    "of potential service revenue, not $30,000 of revenue. The "
-                    "illustration is usable only where that fee and agreement "
-                    "are permitted. Reserve $1,000 per eventual collected recovery "
-                    "for direct acquisition and handling, including allocated "
-                    "effort on unsuccessful files: $350 acquisition and $650 "
-                    "delivery. Those are underwriting assumptions to replace with "
-                    "cohort costs, not measured launch results. At a verified "
-                    "$10,000 recovery, the same fee produces only $1,000 and "
-                    "cannot carry that cost structure. Route such cases to "
-                    "direct claiming or redesign the workflow before accepting "
-                    "them. Do not hide weak unit economics behind a large "
-                    "aggregate property balance."
-                ),
-            ],
-            "table": {
-                "caption": "Week Two Research, Owner Verification, and Transparent Outreach Schedule",
-                "headers": [
-                    "Day and measurable work package",
-                    "Mapped plays and specific execution",
-                    "Evidence retained in the case register",
-                    "Decision rule protecting the pilot cohort",
-                ],
-                "rows": [
-                    [
-                        "Day 8: research contractor deduplicates the hundred-record candidate cohort",
-                        "P01 and P02 distinguish treasury records from issuer obligations",
-                        "Source links, retrieval dates, property identifiers, and custody classifications",
-                        "One property-owner pair counts once regardless of repeated search appearances",
-                    ],
-                    [
-                        "Day 9: research contractor assembles corporate ownership evidence chains",
-                        "P03 and P04 connect legal entities with historical addresses",
-                        "Registry extracts, dated address evidence, and merger documents where applicable",
-                        "Exclude unsupported successor claims until documentary continuity is established",
-                    ],
-                    [
-                        "Day 10: founder audits twenty independently selected identity matches",
-                        "P05 and P06 test identity precision and contracting eligibility",
-                        "Audit worksheet recording correct matches, errors, and restriction dates",
-                        "Require nineteen correct matches and resolve every discovered material error",
-                    ],
-                    [
-                        "Day 11: founder contacts the first ten eligible owners",
-                        "P07 uses transparent letters or individualized manual business calls",
-                        "Contact copy, delivery status, direct-claim disclosure, and callback route",
-                        "Count delivered contacts separately from attempted messages and returned mail",
-                    ],
-                    [
-                        "Day 12: founder records discussions and classifies trust objections",
-                        "P07 and P08 explain priced assistance without implying government affiliation",
-                        "Conversation notes covering authority, prior filings, workload, and objections",
-                        "Immediately suppress owners who request no further business contact",
-                    ],
-                    [
-                        "Day 13: claims contractor tests two prospective evidence packages",
-                        "P09 identifies missing documents before anyone promises submission readiness",
-                        "Per-case document checklist with responsible signer and outstanding evidence",
-                        "Do not execute an engagement with unresolved statutory contracting restrictions",
-                    ],
-                    [
-                        "Day 14: founder reviews twenty delivered contacts and acquisition spending",
-                        "P07 and P12 connect outreach effort with potential fee economics",
-                        "Weekly funnel, time ledger, direct costs, and estimated lawful fees",
-                        "Stop low-value segments when projected fees cannot support delivery costs",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Four Tactics That Reduce False Matches and Owner Distrust",
-                "body": (
-                    "Experienced recovery operators sell documented execution, "
-                    "not secrecy around publicly accessible property searches."
-                ),
-                "items": [
-                    (
-                        "Preserve historical holder and address details before "
-                        "refreshing a treasury search; current registry addresses "
-                        "alone often cannot explain an old corporate warrant."
-                    ),
-                    (
-                        "Ask the corporate controller about existing claims before "
-                        "building a packet, preventing duplicate submissions and "
-                        "avoidable disputes over who performed the recovery work."
-                    ),
-                    (
-                        "Send the official treasury claim route with the first "
-                        "substantive message; an owner who independently verifies "
-                        "the property becomes a better-qualified prospect."
-                    ),
-                    (
-                        "Batch document requests by signer and entity, but retain "
-                        "separate property identifiers, fee calculations, and status "
-                        "histories for every claim."
-                    ),
-                ],
-            },
-        },
-        {
-            "heading": "3. Days 15–21: Submit Evidence-Complete Claims and Reconcile the Fee Engine",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Days 15–17 convert signed mandates into reviewable claim "
-                    "packets. The claims contractor checks the treasury's current "
-                    "instructions against the corporation's legal name, taxpayer "
-                    "identifier where required, historical address, signer authority, "
-                    "and property identifiers. Obtain sensitive documents through "
-                    "the restricted repository rather than ordinary email "
-                    "attachments. California Civil Code §1798.81.5 supplies a "
-                    "concrete reasonable-security requirement where applicable; "
-                    "apply access minimization across the entire workflow rather "
-                    "than treating security as a state-specific afterthought. "
-                    "E-signature software such as DocuSign can record execution "
-                    "evidence, but it does not make an ineligible agreement "
-                    "valid or replace a treasury's notarization requirement. The "
-                    "founder independently reviews identity and authority before "
-                    "submission. Track four distinct events: internal packet "
-                    "completion, submission receipt, custodian confirmation of "
-                    "intake, and claim determination. In this chapter, an "
-                    "accepted packet means the custodian has acknowledged intake "
-                    "without a currently identified missing item; it does not "
-                    "mean the claim is approved. If the agency offers only an "
-                    "automated receipt, retain that narrower status and do not "
-                    "inflate the accepted-packet count. A submission queue can "
-                    "be automated; authority to attest facts cannot be delegated "
-                    "to an unreviewed matching rule."
-                ),
-                (
-                    "On Days 18–19, establish status tracking without overwhelming "
-                    "the treasury or the pod. Record the agency's published "
-                    "processing guidance and assign the next inquiry from that "
-                    "guidance, not an invented seven-day escalation cycle. Store "
-                    "each request for additional evidence with its exact wording, "
-                    "received date, owner, and response deadline. Separate owner "
-                    "delay, agency delay, and operator defect because each "
-                    "requires a different remedy. An incorrect identifier or "
-                    "missing required authority document is an operator defect; "
-                    "a queue awaiting agency review is not. Aim for at most "
-                    "one material operator defect among the first ten submitted "
-                    "packets, while reporting the actual count whenever fewer "
-                    "than ten exist. Freeze related submissions immediately "
-                    "after an identity or unauthorized-signature error, regardless "
-                    "of the aggregate rate. The founder reviews a daily exception "
-                    "queue capped at five active document-chasing cases. Contractors "
-                    "work from explicit tasks and time allowances, not open-ended "
-                    "instructions to investigate everything. By Day 21, target "
-                    "forty delivered contacts, ten substantive discussions, four "
-                    "qualified mandates, and two accepted packets. These are "
-                    "pilot thresholds rather than revenue predictions. If agency "
-                    "acknowledgments are unavailable, retain the evidence-complete "
-                    "submissions and classify that part of the expansion decision "
-                    "as pending."
-                ),
-                (
-                    "Days 20–21 also reconcile the economic model to the canonical "
-                    "scorecard. At the illustrative $3,000 earned fee, twenty "
-                    "annual completed recoveries generate $60,000 Conservative "
-                    "revenue; eighty-five generate $255,000 Base revenue; and "
-                    "150 generate $450,000 Scaled revenue. The associated client "
-                    "property totals would be $600,000, $2,550,000, and $4,500,000 "
-                    "at a uniform ten-percent fee, but none belongs in operator "
-                    "revenue. With $1,000 direct cost per collected recovery, "
-                    "direct costs are $20,000, $85,000, and $150,000. Other "
-                    "annual operating costs of $25,000, $74,375, and $75,000 "
-                    "produce total expenses of $45,000, $159,375, and $225,000. "
-                    "Subtracting those expenses yields exactly $15,000, $95,625, "
-                    "and $225,000 owner net profit, or 25%, 37.5%, and 50%. "
-                    "This allocation illustrates the supplied totals; it is not "
-                    "an independently established staffing-cost forecast. Conservative "
-                    "and Base retain one full-time operator plus two contractors; "
-                    "Scaled requires two full-time operators plus three contractors. "
-                    "Do not represent the five-person outcome as achievable by "
-                    "the launch pod automatically. Track earned fees, invoices, "
-                    "and cash receipts separately under the adopted accounting "
-                    "policy. A signed contingency agreement or treasury receipt "
-                    "does not itself establish earned revenue, and client "
-                    "principal must never subsidize the operator's runway."
-                ),
-            ],
-            "table": {
-                "caption": "Week Three Claim Delivery, Exception Handling, and Canonical Revenue Reconciliation",
-                "headers": [
-                    "Day and accountable execution owner",
-                    "Mapped plays and required operating action",
-                    "Deliverable retained for independent case review",
-                    "Failure condition and immediate operator response",
-                ],
-                "rows": [
-                    [
-                        "Day 15: claims contractor assembles the first signed-mandate packets",
-                        "P08 and P09 connect executed agreements with required evidence",
-                        "Signer authority, property identifiers, required documents, and execution records",
-                        "Return incomplete packets to evidence collection rather than submitting guesses",
-                    ],
-                    [
-                        "Day 16: founder independently reviews identity and representation authority",
-                        "P05 and P09 challenge ambiguous names and corporate succession",
-                        "Second-person review log explaining each accepted identity evidence chain",
-                        "Stop affected files immediately after identity or signer-authority defects",
-                    ],
-                    [
-                        "Day 17: authorized submitter files through approved treasury channels",
-                        "P10 follows custodian instructions without automated factual attestations",
-                        "Submission copy, timestamp, receipt, and submitting representative's documented authority",
-                        "An automated receipt proves delivery rather than substantive claim acceptance",
-                    ],
-                    [
-                        "Day 18: claims contractor creates agency-specific status follow-up dates",
-                        "P11 uses published processing guidance and received evidence requests",
-                        "Status history with next inquiry date and responsible case owner",
-                        "Do not classify ordinary agency queue time as operator failure",
-                    ],
-                    [
-                        "Day 19: founder resolves material exceptions and measures handling time",
-                        "P09 and P11 distinguish owner delays from preventable packet defects",
-                        "Exception register with cause, correction, deadline, and incremental labor",
-                        "Cap active document-chasing files at five within the launch pod",
-                    ],
-                    [
-                        "Day 20: founder reconciles modeled fees with the canonical scorecard",
-                        "P12 excludes client principal and separates earned fees from cash",
-                        "Three-case worksheet reconciling exact revenue, expense, profit, and staffing",
-                        "Reject any model treating gross recovered property as operator revenue",
-                    ],
-                    [
-                        "Day 21: founder reviews the forty-contact pilot cohort",
-                        "P07 through P11 connect discussions, mandates, submissions, and acknowledgments",
-                        "Forty-contact funnel targeting ten discussions, four mandates, two accepted packets",
-                        "Classify missing agency acknowledgments as pending rather than inventing acceptance",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Verify the property and authority chain",
-                    "action": (
-                        "Link the official property record to the claimant and "
-                        "the claimant to an authorized signer."
-                    ),
-                    "detail": (
-                        "Retain independent identity evidence, custody classification, "
-                        "restriction dates, and a second-person review before engagement."
-                    ),
-                },
-                {
-                    "step": 2,
-                    "title": "Execute a permitted and transparent engagement",
-                    "action": (
-                        "Explain direct claiming and execute the jurisdiction-specific "
-                        "agreement only when its timing and terms are permitted."
-                    ),
-                    "detail": (
-                        "Record the fee basis, applicable ceiling, signing evidence, "
-                        "scope, and approved payment route without requesting control "
-                        "of the owner's treasury credentials."
-                    ),
-                },
-                {
-                    "step": 3,
-                    "title": "Submit the reviewed evidence packet",
-                    "action": (
-                        "Complete the custodian checklist and submit through the "
-                        "authorized channel with documented factual review."
-                    ),
-                    "detail": (
-                        "Preserve the packet and receipt; distinguish submission, "
-                        "acknowledged intake, approval, and payment as separate events."
-                    ),
-                },
-                {
-                    "step": 4,
-                    "title": "Reconcile the outcome and earned service fee",
-                    "action": (
-                        "Confirm the owner's recovery, establish that contractual "
-                        "performance conditions are satisfied, and invoice appropriately."
-                    ),
-                    "detail": (
-                        "Keep client principal outside operating cash, reconcile "
-                        "earned revenue separately from collection, and charge failed-file "
-                        "effort to the originating acquisition cohort."
-                    ),
-                },
-            ],
-        },
-        {
-            "heading": "4. Days 22–30 and Beyond: Apply Kill, Fix, or Scale Decisions to Mature Evidence",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Days 22–30 close the pilot's evidence gaps instead of "
-                    "manufacturing a launch victory. Day 22 reconciles duplicates "
-                    "and contact delivery; Day 23 closes outstanding owner-document "
-                    "requests; Day 24 rechecks contracting restrictions; Day 25 "
-                    "audits packet defects; Day 26 updates the cash forecast; "
-                    "Day 27 evaluates fee sensitivity; Day 28 independently "
-                    "reviews the cohort; Day 29 drafts the decision memo; and "
-                    "Day 30 records Kill, Fix, or Scale by segment. Use "
-                    "cumulative delivered unique-owner contacts as the mandate "
-                    "conversion denominator: forty at Day 30, eighty at Day "
-                    "60, and 120 at Day 90. Do not count repeated follow-ups "
-                    "as additional prospects. Target at least 10% qualified "
-                    "mandate conversion, producing four, eight, and twelve "
-                    "mandates respectively. Target two, four, and six accepted "
-                    "packets at those checkpoints. Underfilled samples default "
-                    "to Fix or continued observation, never a claimed statistical "
-                    "victory. Report matching precision on independent twenty-record "
-                    "audits separately from outreach conversion. Count all "
-                    "identity or authority incidents explicitly, even after "
-                    "correction. The decision memo must name the owner, evidence, "
-                    "spend authorization, and next review date for each "
-                    "continuing workstream so contractors do not interpret "
-                    "silence as permission to expand."
-                ),
-                (
-                    "Kill means stop the defective segment or acquisition method, "
-                    "not abandon valid customer obligations. Any confirmed "
-                    "unauthorized filing, knowingly false ownership assertion, or "
-                    "prohibited fee arrangement stops affected activity immediately. "
-                    "Commercial Kill requires both adequate observation and "
-                    "persistently weak economics: below 5% qualified conversion "
-                    "at the checkpoint's contact denominator, plus projected "
-                    "fees below 1.5 times fully loaded direct cost. At Day "
-                    "30 this is a provisional segment stop; retest only after "
-                    "a documented change. At Days 60 and 90, require a "
-                    "completed fourteen-day corrective experiment before treating "
-                    "the same commercial result as persistent. Fix covers "
-                    "conversion from 5% to below 10%, incomplete sample sizes, "
-                    "document bottlenecks, and unsettled agency acknowledgments. "
-                    "Change one variable per experiment, such as claimant type, "
-                    "evidence request sequence, or the explanation of paid "
-                    "assistance. Scale requires every listed quality, economics, "
-                    "runway, and capacity condition; good sales cannot offset "
-                    "bad identity controls. Increase new-contact volume by at "
-                    "most 25% after Day 30 and 50% after later checkpoints, "
-                    "subject to contractor hours. These increments authorize "
-                    "controlled prospecting only. They do not authorize hiring "
-                    "the five-person Scaled team or treating pending fees "
-                    "as spendable money."
-                ),
-                (
-                    "Day 60 and Day 90 reviews must distinguish collection "
-                    "latency from business failure. With a canonical 3–12-month "
-                    "first-deal interval, zero receipts at ninety days alone "
-                    "does not justify Kill. Compare each pending claim with "
-                    "its custodian's published guidance, outstanding evidence, "
-                    "and documented queue position where available. For provisional "
-                    "expansion, require estimated lawful fees at least twice "
-                    "modeled fully loaded direct costs and at least 1.5 "
-                    "times those costs after a 25% fee reduction. The "
-                    "$3,000 fee and $1,000 cost illustration passes both "
-                    "tests, but observed failed-file effort can overturn it. "
-                    "Recalculate costs using actual hours and prospect acquisition "
-                    "spending, including work on unsuccessful cases. Retain "
-                    "six months of maintenance cash after every new commitment. "
-                    "Before permanent staffing expansion, require three collected "
-                    "recoveries, actual cohort contribution of at least 50% "
-                    "of earned fees after direct costs, and twelve weeks "
-                    "of measured capacity data. Three outcomes provide an "
-                    "initial calibration, not mature loss-rate evidence. If "
-                    "collections remain pending, continue the capped pilot only "
-                    "while runway and case evidence support it. Recognize "
-                    "revenue only when earned under the adopted policy; "
-                    "reconcile invoices and receipts separately. The correct "
-                    "Day 90 decision can be a disciplined Fix with viable "
-                    "claims, bounded spending, and no revenue yet."
-                ),
-            ],
-            "table": {
-                "caption": "Final Nine-Day Closeout and Quantitative Day 30/60/90 Decision Matrix",
-                "headers": [
-                    "Checkpoint and decision under review",
-                    "Required evidence or quantitative operating threshold",
-                    "Authorized action within the staffing constraint",
-                    "Cash, quality, or interpretation safeguard",
-                ],
-                "rows": [
-                    [
-                        "Day 22: founder reconciles the unique-owner outreach denominator",
-                        "Deduplicate recipients and verify forty genuinely delivered initial contacts",
-                        "Correct the cohort register before calculating any mandate conversion",
-                        "Repeated follow-ups and returned letters never inflate delivered-contact counts",
-                    ],
-                    [
-                        "Day 23: claims contractor closes outstanding owner-document requests",
-                        "Assign every missing item a responsible signer and response date",
-                        "Prioritize five active evidence-chasing files within allocated contractor hours",
-                        "Do not purchase additional research without a specific evidentiary purpose",
-                    ],
-                    [
-                        "Day 24: founder rechecks agreements against current restriction evidence",
-                        "Confirm each mandate's custody dates, fee calculation, and signing authority",
-                        "Suspend affected engagements until any identified restriction is resolved",
-                        "An attractive property value never overrides prohibited agreement timing",
-                    ],
-                    [
-                        "Day 25: founder reviews packet quality and material defect counts",
-                        "Report actual submitted packets, material errors, and corrected evidence",
-                        "Repair recurring checklist defects before releasing additional similar submissions",
-                        "Any identity or authority incident stops related submissions immediately",
-                    ],
-                    [
-                        "Day 26: founder refreshes committed spending and maintenance runway",
-                        "Keep first-month commitments within $3,500 and ninety-day spending within $8,500",
-                        "Remove discretionary purchases when remaining maintenance runway approaches six months",
-                        "Include unpaid commitments rather than relying exclusively on bank balances",
-                    ],
-                    [
-                        "Day 27: founder challenges fee assumptions with downside sensitivity",
-                        "Require modeled fees at least twice fully loaded direct costs",
-                        "Reprice permitted services or stop segments failing the economic test",
-                        "After a twenty-five-percent fee reduction, retain at least 1.5-times coverage",
-                    ],
-                    [
-                        "Day 28: second reviewer independently challenges the complete cohort",
-                        "Check twenty matches plus every high-value or ambiguous identity chain",
-                        "Correct records and reassess affected mandates before expansion discussions",
-                        "Nineteen correct sampled matches support only a bounded pilot expansion",
-                    ],
-                    [
-                        "Day 29: founder drafts the segment-level operating decision memo",
-                        "Attach contact denominators, conversion, packet status, costs, and available cash",
-                        "Assign one corrective experiment or bounded expansion to each segment",
-                        "Every continuing activity receives an accountable owner and review date",
-                    ],
-                    [
-                        "Day 30: founder records and communicates the final pilot decision",
-                        "Apply the checkpoint criteria below without counting pending principal",
-                        "Issue written contractor priorities and the next month's spending ceiling",
-                        "Continue valid customer work even when prospect acquisition is stopped",
-                    ],
-                    [
-                        "Day 30 Kill: provisionally stop the defective acquisition segment",
-                        "Below two mandates from forty contacts and fee coverage below 1.5-times",
-                        "Stop new segment outreach while completing existing legitimate customer obligations",
-                        "Rights violations stop immediately regardless of sample size or conversion",
-                    ],
-                    [
-                        "Day 30 Fix: preserve cash while testing one bottleneck",
-                        "Two or three mandates from forty contacts, or incomplete evidence",
-                        "Run one fourteen-day experiment without increasing the existing spending ceiling",
-                        "Fewer than forty delivered contacts cannot establish commercial segment failure",
-                    ],
-                    [
-                        "Day 30 Scale: authorize only a bounded prospecting increase",
-                        "Four mandates, two accepted packets, nineteen correct audit matches, economic pass",
-                        "Increase new-contact volume by at most twenty-five percent within capacity",
-                        "Require zero unresolved critical defects and six months maintenance runway",
-                    ],
-                    [
-                        "Day 60 Kill: stop persistent weakness after a corrective test",
-                        "Below four mandates from eighty contacts and fee coverage below 1.5-times",
-                        "Stop new acquisition after documenting the completed fourteen-day corrective experiment",
-                        "Do not classify missing collections alone as failure within normal latency",
-                    ],
-                    [
-                        "Day 60 Fix: repair conversion, evidence, or agency acknowledgment gaps",
-                        "Four through seven mandates from eighty contacts, or unmet quality conditions",
-                        "Continue one controlled experiment and prioritize complete customer evidence packets",
-                        "Stay within the $2,500 second-month budget and current contractor capacity",
-                    ],
-                    [
-                        "Day 60 Scale: expand the passing cohort within measured capacity",
-                        "Eight mandates, four accepted packets, nineteen correct audit matches, economic pass",
-                        "Increase new-contact volume by at most fifty percent without automatic hiring",
-                        "Maintain six months runway and no unresolved identity or authority incidents",
-                    ],
-                    [
-                        "Day 90 Kill: retire a repeatedly uneconomic acquisition segment",
-                        "Below six mandates from 120 contacts and fee coverage below 1.5-times",
-                        "Stop new segment spending after a documented corrective experiment failed",
-                        "Preserve valid customer delivery and distinguish agency delay from operator defects",
-                    ],
-                    [
-                        "Day 90 Fix: maintain a viable but incompletely proven cohort",
-                        "Six through eleven mandates from 120 contacts, or collections still uncalibrated",
-                        "Continue capped delivery and targeted corrections rather than permanent staffing expansion",
-                        "Zero receipts alone do not defeat the three-to-twelve-month first-deal assumption",
-                    ],
-                    [
-                        "Day 90 Scale: expand prospecting only when every condition passes",
-                        "Twelve mandates, six accepted packets, nineteen correct audit matches, economic pass",
-                        "Increase new-contact volume by at most fifty percent within measured capacity",
-                        "Permanent staffing additionally requires three collections and fifty-percent cohort contribution",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": (
-        "Scale verified ownership, earned fees, and repeatable evidence—not the "
-        "face value of property you do not own."
-    ),
-    "diagram_id": "diag-08",
-    "action_checklist": [
-        (
-            "Assign P01–P12 to the founder and two contractors, then freeze the "
-            "pilot to one state, one property class, and one claimant type."
-        ),
-        (
-            "Complete the jurisdiction rules register, direct-claim disclosure, "
-            "restricted repository, and twenty-record identity audit before outreach."
-        ),
-        (
-            "Approve the $3,500 first-month and $8,500 ninety-day cash ceilings; "
-            "record committed spending and preserve six months of maintenance runway."
-        ),
-        (
-            "Build a hundred-record research cohort and measure forty delivered "
-            "unique-owner contacts, ten discussions, four mandates, and two accepted "
-            "packets by the first checkpoint."
-        ),
-        (
-            "Reconcile the $60,000, $255,000, and $450,000 annual service-fee cases "
-            "to exact owner profits of $15,000, $95,625, and $225,000 without "
-            "including client principal."
-        ),
-        (
-            "Issue written Day 30/60/90 segment decisions using contact denominators, "
-            "identity quality, fee coverage, packet status, capacity, and runway; "
-            "require collected-outcome evidence before permanent staffing expansion."
-        ),
-    ],
-    "statutory_citations": [
-        {
-            "title": "California Code of Civil Procedure §1582",
-            "url": (
-                "https://leginfo.legislature.ca.gov/faces/"
-                "codes_displaySection.xhtml?lawCode=CCP&sectionNum=1582."
-            ),
-            "relevance": (
-                "Controls agreements to locate, deliver, recover, or assist in "
-                "recovering covered unclaimed property, including restricted "
-                "contracting periods, compensation limits, and agreement requirements."
-            ),
-        },
-        {
-            "title": "Texas Property Code §74.507",
-            "url": (
-                "https://statutes.capitol.texas.gov/"
-                "Docs/PR/htm/PR.74.htm#74.507"
-            ),
-            "relevance": (
-                "Governs agreements for assistance recovering reported property; "
-                "use its current fee, timing, and agreement provisions when "
-                "designing a Texas recovery engagement."
-            ),
-        },
-        {
-            "title": "California Civil Code §1798.81.5",
-            "url": (
-                "https://leginfo.legislature.ca.gov/faces/"
-                "codes_displaySection.xhtml?lawCode=CIV&sectionNum=1798.81.5"
-            ),
-            "relevance": (
-                "Requires reasonable security procedures and practices for covered "
-                "personal information and addresses safeguards in applicable "
-                "third-party contractual disclosures."
-            ),
-        },
-        {
-            "title": "15 U.S.C. §7704 — Commercial Electronic Mail Requirements",
-            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
-            "relevance": (
-                "Provides requirements for covered commercial email, including "
-                "header accuracy, deceptive subject lines, identification, postal "
-                "address information, and opt-out mechanisms and handling."
-            ),
-        },
-        {
-            "title": "47 CFR §64.1200 — Restrictions on Telemarketing and Telephone Solicitation",
-            "url": (
-                "https://www.ecfr.gov/current/title-47/chapter-I/"
-                "subchapter-B/part-64/subpart-L/section-64.1200"
-            ),
-            "relevance": (
-                "Supplies federal restrictions relevant to covered calls, texts, "
-                "telephone solicitations, automated dialing, and prerecorded or "
-                "artificial-voice outreach; evaluate the actual channel before use."
-            ),
-        },
-    ],
-}
+CHAPTER_12 = {'id': 'Q12',
+ 'chapter_id': 'Q12',
+ 'chapter_number': 12,
+ 'question_number': 12,
+ 'slug': 'vol007-q12-holder-reporting-compliance-audit-risk',
+ 'question_prompt': 'How do holders manage reporting obligations, compliance exposure, and audit risks in '
+                    'the programs and industries covered?',
+ 'kicker': 'Q12 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Holder Reporting, Compliance, and Audit Risk',
+ 'subtitle': 'Texas and Utah reporting, Tennessee negative reports, KUPS reporting technology, '
+             'exposure-assessment mistakes, audit preparation and litigation, Delaware VDA invitations, '
+             'enforcement penalties, and healthcare trends',
+ 'layout_template': 'action_worksheet_summary',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'State examiners in Utah, Tennessee, South Carolina and Texas agree with advisors at '
+                      'SimekScott, Friedman, Kodiak and Clarus on what triggers audits: non-filing, '
+                      'missing industry property types, and M&A. They also agree that receivable credit '
+                      'balances are where the real exposure hides. The mechanics run on hard numbers. '
+                      'Tennessee penalizes willful failure at $1,000 a day up to $25,000 plus 25 percent '
+                      'of the property value. South Carolina requires letters on items of $50 or more, '
+                      'sent no more than 120 days before filing. Texas sets a $250 notice floor and a July '
+                      '1 deadline. Delaware gives VDA invitees 90 days before referring them to audit. '
+                      'Voluntary disclosure cuts the look-back to about ten years and waives penalties. '
+                      'The split is about posture: examiners say most holders just need training, while '
+                      'attorney Jennifer Borden urges holders to fight auditor overreach, even into '
+                      'litigation.',
+ 'key_metrics': [{'label': 'Tennessee willful failure penalty',
+                  'metric': 'Tennessee willful failure penalty',
+                  'value': '$1,000 per day up to $25,000, plus 25% of the property value',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Penalty for willful failure to meet holder duties. Negligent failure runs '
+                             '$200 per day with a $5,000 maximum.',
+                  'source': 'TNTreasury ([KiR-ZUeCE5g @ 00:02:45])'},
+                 {'label': 'Holder non-filing rate estimated by states',
+                  'metric': 'Holder non-filing rate estimated by states',
+                  'value': '65% to 90% of companies that should file are not filing',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Tom Quarry's framing of why states are pushing enforcement and hiring "
+                             'contingency-fee auditors.',
+                  'source': 'Friedman LLP ([duwB7Y82flc @ 00:02:38])'},
+                 {'label': 'State claim rate on remitted property',
+                  'metric': 'State claim rate on remitted property',
+                  'value': 'Roughly 5% to 10% claimed; 90% to 95% kept by states',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Kodiak's explanation for why states treat unclaimed property as a revenue "
+                             'generator and are stepping up enforcement.',
+                  'source': 'Kodiak Solutions ([2BplqmdsUpU @ 00:11:04])'},
+                 {'label': 'KUPS processing throughput',
+                  'metric': 'KUPS processing throughput',
+                  'value': '3.5 million records and 350,000 due diligence letters per hour',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Keane's stated platform capacity, with a 14-point data validation check and "
+                             'two-point USPS address verification.',
+                  'source': 'Keane Unclaimed Property ([UP88bQoP2JU @ 00:01:30])'}],
+ 'sections': [{'heading': '1. The Practitioner Consensus',
+               'paragraphs': ['State examiners and private advisors name the same three audit triggers. '
+                              'Clarus Partners starts with failure to file by a company with no filing '
+                              'history. Next come incomplete filings that leave out a property type '
+                              'endemic to the industry: a manufacturer that remits payables and payroll '
+                              'but skips receivables, an oil and gas company with no royalties, a retailer '
+                              'that files without gift cards [po0e86TAQwA @ 00:00:20]. The auditor in the '
+                              'ucproput Utah and Idaho audit-issues session describes the same flags from '
+                              'the state side of the table. Not reporting raises a red flag. Omitted '
+                              'property raises a red flag. A merger or reorg raises a red flag because '
+                              'records usually get lost [3B5mPVcKPDE @ 00:08:16]. TNTreasury adds '
+                              'whistleblower complaints, randomly selected samples, and multi-state audits '
+                              "to the list [KiR-ZUeCE5g @ 00:00:21]. Kodiak's Melinda Hyde draws on the "
+                              "firm's roughly 250 healthcare assessments and describes states mining their "
+                              'own databases. A holder that filed three years ago and then went quiet gets '
+                              'an inquiry asking whether it dissolved or was acquired. An unbroken filing '
+                              'history therefore works as a defense in its own right [2BplqmdsUpU @ '
+                              '00:19:39]. The same examiner adds a reality check on intent: most '
+                              'businesses simply do not know what they are doing, need training, and run '
+                              'smoothly once shown how. Outright fraud is very rare.',
+                              'The second point of agreement is that the money that sinks companies is not '
+                              'in the check register. Lori, the unclaimed property principal at '
+                              'SimekScott, says clients treat payroll and accounts payable checks as the '
+                              'low-hanging fruit but miss how large accounts receivable credits can be '
+                              '[p0UoXSbya5E @ 00:01:18]. Managing principal Matt Bauer previously worked '
+                              'the state side as an auditor. Bauer says receivables drove a lot of '
+                              'exposure and caught controllers and CFOs off guard, because their teams '
+                              'chase debits and ignore customers sitting in a credit balance. The ucproput '
+                              'auditor puts it bluntly: companies get paid way too much, park the '
+                              'overpayment in receivables, and let it sit there. After three years it has '
+                              'to go to the state [3B5mPVcKPDE @ 00:00:45]. In healthcare, Melinda Hyde of '
+                              'Kodiak calls active patient-account credit balances one of the largest '
+                              'sources of unclaimed property. No uncashed check is involved, and the state '
+                              'does not care whether a refund was ever processed [2BplqmdsUpU @ 00:20:36]. '
+                              "Friedman's Alan Goldenberg and Tom Quarry warn that holders who sweep these "
+                              'credits into income get whipsawed. The tax is already paid, there is no '
+                              'statute of limitations, and there is no amended-return refund. The full '
+                              'amount is still owed to the state when an auditor finds it [duwB7Y82flc @ '
+                              '00:15:54].',
+                              'Third, every source that addresses past-due liability points the same way: '
+                              'disclose before you are found. Tennessee runs a Compliance Disclosure '
+                              'Agreement for holders not currently under audit. The holder submits a '
+                              'Reporting Method worksheet and its current written procedures, then comes '
+                              'into compliance within a set period. It avoids both the audit and the '
+                              'penalty fees, and the division never physically reviews its records '
+                              "[KiR-ZUeCE5g @ 00:01:55]. South Carolina's Daniel Hanley describes the same "
+                              "lever: the treasurer's voluntary disclosure program accepts past-due "
+                              'property without assessing interest or penalties [D-PMjgNe-7s @ 00:18:20]. '
+                              "Friedman's Alan Goldenberg spells out the trade. An audit can reach back to "
+                              'the beginning of the business, while voluntary disclosure typically caps '
+                              'the look-back at about ten years and waives penalties. Some states also '
+                              'waive the due diligence requirement, provided the holder follows it going '
+                              'forward [duwB7Y82flc @ 00:41:49]. Clarus Partners puts the stakes in '
+                              'percentages: audit interest and penalty can exceed 50 percent of the '
+                              'liability owed in some states. It names VDAs and amnesty programs as the '
+                              'way to waive them [po0e86TAQwA @ 00:01:40]. Underneath all of it sits one '
+                              'shared prerequisite: written procedures. Tennessee requires them for entry, '
+                              'and Friedman notes that some states will not admit a holder to voluntary '
+                              'disclosure without an unclaimed property manual in place.'],
+               'table': {'caption': 'Where examiners and advisors line up on holder audit risk',
+                         'headers': ['Consensus Point',
+                                     'What Practitioners Report',
+                                     'Operator Takeaway',
+                                     'Expert Source'],
+                         'rows': [['No filing history invites an audit',
+                                   'A company that has never filed unclaimed property reports is the first '
+                                   'risk factor states screen for',
+                                   'Start a filing history now and keep it unbroken every single year',
+                                   'Clarus Partners ([po0e86TAQwA @ 00:00:20])'],
+                                  ['Missing industry property types are red flags',
+                                   'Remitting payables and payroll while skipping receivables, royalties, '
+                                   'or gift cards signals an incomplete report',
+                                   'Benchmark your filed property types against what your industry '
+                                   'normally generates',
+                                   'Clarus Partners ([po0e86TAQwA @ 00:00:36])'],
+                                  ['Receivable credits are the hidden exposure',
+                                   'A former state auditor says receivable credits caught controllers and '
+                                   'CFOs off guard because teams chase debits',
+                                   'Age every customer credit balance and test it against dormancy before '
+                                   'year end',
+                                   'SimekScott LLC ([p0UoXSbya5E @ 00:01:52])'],
+                                  ['Acquirers inherit historical liability',
+                                   'Unclaimed property is not covered by the catch-all tax provision and '
+                                   'must be carved out specifically',
+                                   'Name unclaimed property and responsible periods explicitly in every '
+                                   'purchase agreement',
+                                   'SimekScott LLC ([p0UoXSbya5E @ 00:04:14])'],
+                                  ['Reporting gaps generate state inquiries',
+                                   'States flag holders who filed once and then went silent, asking '
+                                   'whether they dissolved or were acquired',
+                                   'File every year so you can pull a consecutive history the moment a '
+                                   'notice lands',
+                                   'Kodiak Solutions ([2BplqmdsUpU @ 00:19:39])'],
+                                  ['Upfront disclosure avoids penalties',
+                                   'Penalties are avoided when a holder discloses through the Compliance '
+                                   'Disclosure Agreement before any audit starts',
+                                   'Enter voluntary disclosure before an audit notice arrives, because '
+                                   'eligibility ends once you are under audit',
+                                   'TNTreasury ([KiR-ZUeCE5g @ 00:02:45])'],
+                                  ['Find non-compliance before the auditors do',
+                                   'You do not know what you do not know, so an internal review should '
+                                   'precede the audit',
+                                   'Run a self-review starting with corporate structure, incorporation '
+                                   'states, and acquisitions',
+                                   'COMPUTERSHARE ([79d39hagJ6U @ 00:01:12])']]}},
+              {'heading': '2. Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['The annual cycle follows the same five steps everywhere, but the dates and '
+                              "thresholds are set state by state. Utah's State Treasurer walks holders "
+                              'through review, due diligence, report preparation, NAUPA-format filing, and '
+                              'payment. Most property goes dormant at three years and payroll at one. Due '
+                              'diligence letters go out between May 1 and September 1, and the report and '
+                              'payment are both due by November 1 [hUiiEXcFE0k @ 00:01:48]. Texas runs '
+                              'earlier. Reports and payments are due July 1, and due diligence notices go '
+                              'out by mail or email 60 days before the due date, but only for property '
+                              "valued above $250 [WZH47JEDcEI @ 00:02:37]. South Carolina's Daniel Hanley "
+                              'sets the letter floor at $50 and allows letters no more than 120 days '
+                              'before filing. In the worked example, an October 15 filing means letters '
+                              'can go out no earlier than June 17. With the recommended 30-day response '
+                              'window, September 15 is the latest send date [D-PMjgNe-7s @ 00:11:40]. '
+                              "Friedman's Alan Goldenberg puts the general window at 60 to 120 days before "
+                              'the reporting date and lays out the deadlines. Most states use November 1, '
+                              'Maryland uses October 31, and a few use May 1. California and Puerto Rico '
+                              'use a two-step process in which a preliminary report comes six or seven '
+                              'months before the final one [duwB7Y82flc @ 00:33:41].',
+                              "The filing format is fixed: states take the NAUPA electronic layout. Utah's "
+                              'treasurer points holders to two third-party vendors, HRS Pro and UP '
+                              'Exchange. Small filers can instead key in owners manually on the state '
+                              'portal [hUiiEXcFE0k @ 00:02:43]. Texas opens its free manual online tool to '
+                              'reports with 30 properties or less. It warns that property codes determine '
+                              'the abandonment period, so choosing the right code is the most '
+                              'consequential data-entry decision in the report [WZH47JEDcEI @ 00:02:57]. '
+                              'South Carolina refuses paper, CD, or USB and requires encrypted or '
+                              'password-protected electronic files. It describes UP Exchange and HRS Pro '
+                              'as free: sign up, download the NAUPA-formatted Excel template, build the '
+                              'report, and upload it [D-PMjgNe-7s @ 00:15:18]. At enterprise scale, '
+                              "Keane's pitch for KUPS is throughput. The platform runs a 14-point data "
+                              'validation check and two-point USPS address verification. It processes 3.5 '
+                              'million records and 350,000 due diligence letters per hour inside one '
+                              'repository that holds historical data [UP88bQoP2JU @ 00:01:30]. Deloitte '
+                              'runs the same job through its Intella platform. It uses proprietary '
+                              'workflows to calculate dormancy and exposure and lets payees respond '
+                              'electronically to raise response rates. Kodiak pitches a Turbo Tax model '
+                              'for unclaimed property and claims its exemption finds often more than cover '
+                              'the total cost of compliance.',
+                              "The penalty schedule is the number that gets executives' attention. "
+                              'Tennessee charges $200 per day, up to $5,000, for negligent failure to '
+                              'report, deliver, or remit. Willful failure costs $1,000 per day, up to '
+                              '$25,000, plus 25 percent of the property value [KiR-ZUeCE5g @ 00:02:45]. In '
+                              'South Carolina, penalties for a holder that simply refuses to report range '
+                              'from 25 percent of the property value to a $10,000 fine. However, a written '
+                              'extension request filed before November 1 waives late penalties and '
+                              'interest if the report arrives before the extension expires [D-PMjgNe-7s @ '
+                              "00:18:36]. Delaware's VDA invitations come with a hard clock. Matt Bauer of "
+                              'SimekScott says a recipient must decide within the first 90 days, and '
+                              'declining means referral to the Department of Finance for an audit '
+                              '[TGu6R9Pc0-4 @ 00:00:19]. The audit math is where the real damage happens. '
+                              "Friedman's Tom Quarry describes contingency-fee auditors paid a percentage "
+                              "of what they find, look-backs of 15 to 20 years, and Delaware's estimation "
+                              'fraction. The auditor takes the error rate from years with records and '
+                              'applies it to revenue from years without them. Alan Goldenberg warns that '
+                              "this inflates the liability, because today's larger business gets projected "
+                              'onto its smaller past [duwB7Y82flc @ 00:29:42]. Kodiak adds that '
+                              'auto-assessed interest of 10 to 12 percent a year can push penalty and '
+                              'interest past the original principal.'],
+               'table': {'caption': 'Hard numbers holders work to, by mechanic',
+                         'headers': ['Mechanic',
+                                     'Exact Number or Rule',
+                                     'How Operators Use It',
+                                     'Expert Source'],
+                         'rows': [['Utah annual reporting calendar',
+                                   'Three-year dormancy, one-year payroll, letters May 1 to September 1, '
+                                   'report and pay by November 1',
+                                   'Schedule the letter run backward so the report and payment both clear '
+                                   'November 1',
+                                   'Utah Office of State Treasurer ([hUiiEXcFE0k @ 00:03:20])'],
+                                  ['Texas due diligence threshold',
+                                   'Mail or email notice 60 days before the July 1 due date for property '
+                                   'valued above $250',
+                                   'Skip notices on items of $250 or less and calendar the 60-day mark '
+                                   'from July 1',
+                                   'txcomptroller ([WZH47JEDcEI @ 00:02:37])'],
+                                  ['South Carolina letter window',
+                                   'Written notice on property of $50 or more, sent no more than 120 days '
+                                   'before filing',
+                                   'Send at least 30 days before filing so owners have the full response '
+                                   'window',
+                                   'SC REALTORS ([D-PMjgNe-7s @ 00:10:30])'],
+                                  ['Incidental out-of-state property',
+                                   'Fewer than 10 accounts totaling less than $1,000 accepted for owners '
+                                   'in other states',
+                                   'Fold tiny out-of-state balances into the home report after checking '
+                                   'the reciprocity matrix',
+                                   'SC REALTORS ([D-PMjgNe-7s @ 00:14:04])'],
+                                  ['Enterprise processing capacity',
+                                   '3.5 million records and 350,000 due diligence letters per hour with '
+                                   '14-point validation',
+                                   'Outsource high-volume filings to platforms with USPS address '
+                                   'verification built in',
+                                   'Keane Unclaimed Property ([UP88bQoP2JU @ 00:01:30])'],
+                                  ['Tennessee penalty ladder',
+                                   'Negligent $200 per day to $5,000; willful $1,000 per day to $25,000 '
+                                   'plus 25 percent',
+                                   'Price the cost of staying silent against the cost of a Compliance '
+                                   'Disclosure Agreement',
+                                   'TNTreasury ([KiR-ZUeCE5g @ 00:02:45])'],
+                                  ['Delaware VDA invitation clock',
+                                   'Decide within 90 days of the invitation or be referred to the '
+                                   'Department of Finance for audit',
+                                   'Review the Secretary of State sample work plan immediately to judge '
+                                   'whether staff can handle the project',
+                                   'SimekScott LLC ([TGu6R9Pc0-4 @ 00:00:19])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Moves the advisors use to shrink the bill',
+                           'body': 'Four tactics practitioners use to control audit scope, push back on '
+                                   'auditor interpretations, and avoid over-reporting.',
+                           'items': ["Get the list of participating states directly from each state's "
+                                     "notification. Pam Wentz warns that the auditor's list may include "
+                                     'every state the firm contracts with, not just the states that '
+                                     'actually signed on [COMPUTERSHARE — 79d39hagJ6U @ 00:00:40].',
+                                     'Learn the statutes, regulations, and actual state practice before '
+                                     'the auditor asks. Jennifer Borden says auditor interpretations often '
+                                     'do not line up with what the statutes require, and holders are no '
+                                     'longer afraid to say no, even if it leads to litigation '
+                                     '[COMPUTERSHARE — 03CoUEgqdzg @ 00:01:47].',
+                                     'Hunt for exemptions before remitting. Kodiak counts about 100 '
+                                     'healthcare exemption opportunities, including recoupment, '
+                                     'business-to-business, and de minimis, and aims to be compliant but '
+                                     'not overly compliant [Kodiak Solutions — 2BplqmdsUpU @ 00:28:08].',
+                                     'When calling a state about where to send property, give a scenario '
+                                     'instead of a yes-or-no question. States sometimes agree to send '
+                                     'property where the owner is most likely to look, but scale the '
+                                     'effort to the amount: a $75 check does not justify the work a '
+                                     '$75,000 check does [ucproput — 3B5mPVcKPDE @ 00:11:13].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Map the entity footprint',
+                              'action': 'Start the internal review with corporate structure, incorporation '
+                                        'states, operating entities, and acquisition history.',
+                              'detail': 'Pam Wentz calls corporate structure the single factor with the '
+                                        'greatest effect on liability and the key to limiting an audit '
+                                        '[COMPUTERSHARE — 79d39hagJ6U @ 00:01:28]. Melinda Hyde adds that '
+                                        'you should pull the org chart to capture physician practices, '
+                                        'urgent care, surgery centers, imaging, and health plans [Kodiak '
+                                        'Solutions — 2BplqmdsUpU @ 00:23:41].'},
+                             {'step': 2,
+                              'title': 'Scrub the ledgers',
+                              'action': 'Review the general ledger, trial balances, voided check register, '
+                                        'aged receivable credits, and ERP tolerance write-off settings.',
+                              'detail': 'Matt Bauer flags ERPs set to write off differences within $10, '
+                                        'which can quietly build into unclaimed credits [SimekScott LLC — '
+                                        'p0UoXSbya5E @ 00:02:40]. Friedman reviews voided checks picked up '
+                                        'into miscellaneous income, which typically become reportable '
+                                        'within three to five years [Friedman LLP — duwB7Y82flc @ '
+                                        '00:27:10].'},
+                             {'step': 3,
+                              'title': 'Run due diligence inside the window',
+                              'action': "Send owner letters inside the state's window, give owners a "
+                                        '30-day response deadline, and document any owner activity that '
+                                        'stops the dormancy clock.',
+                              'detail': 'South Carolina requires letters no more than 120 days before '
+                                        'filing and recommends allowing at least 30 days for a response '
+                                        '[SC REALTORS — D-PMjgNe-7s @ 00:11:40]. A signed W-9 or a '
+                                        'change-of-address notice counts as proof of owner awareness, '
+                                        'while automatic drafts and interest postings do not [ucproput — '
+                                        '3B5mPVcKPDE @ 00:06:07].'},
+                             {'step': 4,
+                              'title': 'File, pay, and archive',
+                              'action': 'Submit a NAUPA-format report with the correct property codes, '
+                                        'make one payment per report, and retain the records.',
+                              'detail': 'Texas requires electronic submission, payment by July 1, and '
+                                        'retention of unclaimed property records for 10 years for later '
+                                        'claims or audits [txcomptroller — WZH47JEDcEI @ 00:04:25].'}]},
+              {'heading': 'Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The sharpest split in holder defense is whether to fold early or fight. '
+                              'Jennifer Borden, an attorney with Wharton Consulting Group speaking on '
+                              'COMPUTERSHARE, argues the era of holders acquiescing to whatever states and '
+                              "auditors demanded is over: with litigation now on the books, 'people aren't "
+                              "afraid to fight,' and if an auditor position does not feel right, Borden "
+                              'would say no even if that leads to litigation [03CoUEgqdzg @ 00:01:47]. The '
+                              'opposite playbook is the voluntary on-ramp. Friedman LLP pitches voluntary '
+                              'disclosure as the escape hatch: a look-back typically limited to about ten '
+                              'years, waived penalties, and in some states a waived due diligence '
+                              'requirement, versus an audit that can reach back to the beginning of the '
+                              'business [duwB7Y82flc @ 00:41:49]. Tennessee sells the same trade through '
+                              'its Compliance Disclosure Agreement, where the holder submits a proposal of '
+                              'Reporting Method worksheet and the division never physically reviews the '
+                              "company's unclaimed property records [KiR-ZUeCE5g @ 00:02:20]. The view "
+                              'from the Utah audit desk undercuts the adversarial framing entirely: that '
+                              'auditor reports most businesses simply do not know what they are doing, '
+                              "want to do what's right, and run smoothly as soon as they are trained, with "
+                              'real fraud very rarely found [3B5mPVcKPDE @ 00:07:56]. The choice is '
+                              'litigated finality versus a negotiated, capped exposure window.',
+                              'Practitioners split on how much a holder can lean on reciprocity to '
+                              'shortcut multi-state filing. The ucproput Utah and Idaho presenters frame '
+                              'reciprocity as a holder benefit, with Utah forwarding property to all 50 '
+                              'states plus Puerto Rico and moving over 1 million dollars to other states '
+                              'in one calendar year, yet they flag the catch that a state lacking '
+                              'priority, Idaho included, cannot indemnify the holder for funds turned over '
+                              'to it [3B5mPVcKPDE @ 00:04:01]. Friedman LLP is blunter: clients routinely '
+                              'ask to lump everything into one state report and clear the books in a '
+                              'single shot, and for the most part states do not allow it, with voluntary '
+                              'disclosure clients who try to dump everything into their state of '
+                              'incorporation finding it often does not work [duwB7Y82flc @ 00:35:52]. '
+                              'South Carolina auditor Daniel Hanley stakes out the narrow middle ground of '
+                              'incidental property, fewer than 10 accounts totaling less than $1,000, '
+                              'which most states including South Carolina will accept with an out-of-state '
+                              'address [D-PMjgNe-7s @ 00:13:46]. Kodiak Solutions shows what ignoring the '
+                              'split looks like: a three-hospital Indianapolis-area system reporting every '
+                              'vendor check and patient refund to Indiana when reports are likely due to '
+                              'dozens of states [2BplqmdsUpU @ 00:16:36]. On this point the practitioners '
+                              'treat reciprocity as a small-balance convenience, not a filing strategy.',
+                              'The deepest philosophical split is over how much to report at all. Kodiak '
+                              'Solutions vice president Jason tells healthcare holders the goal is to be '
+                              "'compliant but not overly compliant,' pointing to about 100 healthcare "
+                              'exemption opportunities, including an exemption where a payer that never '
+                              'recoups its payment leaves the provider owing neither a refund nor a '
+                              'report, plus business-to-business and de minimis exemptions that often more '
+                              'than cover the total costs of compliance [2BplqmdsUpU @ 00:28:08]. South '
+                              "Carolina's program pushes the opposite direction: all property must be "
+                              'reported regardless of amount, and reported accounts cannot be reduced by '
+                              'fees or service charges unless the act specifically allows it [D-PMjgNe-7s '
+                              '@ 00:16:31]. Idaho sits in between as the only state exempting property '
+                              'valued at $50 or less, yet holders who skip reporting must keep those '
+                              'balances on their records indefinitely because the owner may claim at any '
+                              'time, so the ucproput presenter calls reporting anyway advantageous '
+                              '[3B5mPVcKPDE @ 00:01:23]. The same tension shows up in negative reporting. '
+                              'Tennessee says negative reports are not required but positions a voluntary '
+                              'negative report, filed only through ReportItTN after due diligence turns up '
+                              'nothing, as one way holders can avoid an audit [KiR-ZUeCE5g @ 00:00:45], '
+                              'while South Carolina generally skips negative reporting except after an '
+                              'approved extension.'],
+               'table': {'caption': 'Competing holder playbooks reported side by side by practitioners',
+                         'headers': ['Decision Point For The Holder',
+                                     'Playbook A As Taught',
+                                     'Playbook B As Taught',
+                                     'Expert Source'],
+                         'rows': [['Audit posture when auditor positions look wrong',
+                                   'Refuse positions that do not match statutes, even if that leads to '
+                                   'litigation',
+                                   'Enter a voluntary disclosure for a roughly ten-year look-back and '
+                                   'waived penalties',
+                                   'COMPUTERSHARE ([03CoUEgqdzg @ 00:01:47]); Friedman LLP ([duwB7Y82flc @ '
+                                   '00:41:49])'],
+                                  ['How to handle property owed to other states',
+                                   'Rely on Utah reciprocity, which forwards property to all 50 states '
+                                   'plus Puerto Rico',
+                                   'File each priority state separately because most states reject one '
+                                   'lumped report',
+                                   'ucproput ([3B5mPVcKPDE @ 00:04:20]); Friedman LLP ([duwB7Y82flc @ '
+                                   '00:35:52])'],
+                                  ['How aggressively to shrink the reportable balance',
+                                   'Harvest statutory exemptions to stay compliant but not overly '
+                                   'compliant',
+                                   'Report all property regardless of amount with no unauthorized fee '
+                                   'reductions',
+                                   'Kodiak Solutions ([2BplqmdsUpU @ 00:28:08]); SC REALTORS ([D-PMjgNe-7s '
+                                   '@ 00:16:31])'],
+                                  ['When and above what value to send due diligence',
+                                   'South Carolina: written notice for $50 or more, no more than 120 days '
+                                   'before filing',
+                                   'Texas: mail or email notice 60 days before the due date for property '
+                                   'over $250',
+                                   'SC REALTORS ([D-PMjgNe-7s @ 00:10:30]); txcomptroller ([WZH47JEDcEI @ '
+                                   '00:02:37])'],
+                                  ['Who builds and maintains the annual holder report',
+                                   'Outsource to a consultant tracking 54 sets of regulations or a '
+                                   'platform processing 3.5 million records per hour',
+                                   'Small filers key reports manually online; Texas allows manual entry '
+                                   'for 30 properties or less',
+                                   'COMPUTERSHARE ([K64AFLANH3A @ 00:00:49]); Keane Unclaimed Property '
+                                   '([UP88bQoP2JU @ 00:01:30]); txcomptroller ([WZH47JEDcEI @ 00:02:57])'],
+                                  ['How much money states actually keep each year',
+                                   'Friedman measures a breakage rate close to sixty percent of fiscal '
+                                   '2015 collections',
+                                   'Kodiak puts state claim rates at only around 5 to 10 percent on '
+                                   'average',
+                                   'Friedman LLP ([duwB7Y82flc @ 00:03:24]); Kodiak Solutions '
+                                   '([2BplqmdsUpU @ 00:11:04])'],
+                                  ['Where to send property with an ambiguous owner address',
+                                   'Apply sourcing priority rules strictly because each state statute has '
+                                   'the final say',
+                                   'Call the state with scenario context and ask where the owner most '
+                                   'likely looks',
+                                   'PwC US ([yjxm_QOITBY @ 00:00:57]); ucproput ([3B5mPVcKPDE @ '
+                                   '00:10:40])']]}},
+              {'heading': 'Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The most expensive firsthand misses are property types holders never think '
+                              "to look for. SimekScott's Matt Bauer, drawing on time on the state side as "
+                              'an auditor, reports that accounts receivable credits drove a lot of '
+                              'exposure and caught controllers and CFOs off guard because receivables '
+                              'teams spend their time chasing debits, not customers sitting in a credit '
+                              'balance [p0UoXSbya5E @ 00:01:52]. Bauer adds the tolerance trap: an ERP set '
+                              'to write off transactions within a $10 differential, positive or negative, '
+                              'can quietly generate unclaimed property as credits written off outpace '
+                              'debits for a customer [p0UoXSbya5E @ 00:02:40]. Kodiak Solutions executive '
+                              'director Melinda Hyde sees the healthcare version, where one of the largest '
+                              'sources of property never touches accounts payable at all: active patient '
+                              'credit balances where no refund was ever processed, which the state treats '
+                              'as property the holder is holding that is not theirs [2BplqmdsUpU @ '
+                              '00:20:36]. The Friedman LLP presenters describe walking into major '
+                              'companies fifteen years ago that claimed they had none because they took it '
+                              'into income, then lay out the whipsaw: tax was already paid on that income, '
+                              'the funds still must be remitted on audit, and there is no way to amend the '
+                              'return for a refund [duwB7Y82flc @ 00:15:54].',
+                              'Once an audit lands, the record-retention gap becomes the loss engine. '
+                              'Friedman LLP reports contingency-fee auditors looking for records that go '
+                              'back 20 years, a five-year dormancy period plus fifteen years of look-back, '
+                              'and when records are gone the holder falls into an estimation fraction '
+                              'built from known years and applied to earlier revenue [duwB7Y82flc @ '
+                              "00:51:02]. Because businesses grow year over year, applying today's ratios "
+                              'to twenty years ago can produce a large liability that voluntary disclosure '
+                              'would have avoided. Kodiak Solutions confirms state audits generally reach '
+                              'back 15 years, far beyond most retention policies, with contingency-fee '
+                              'auditors incentivized to look underneath every nook and cranny [2BplqmdsUpU '
+                              '@ 00:12:17]. Pam Wentz on COMPUTERSHARE warns these are not typical audits: '
+                              'they last longer, the auditors do not play by typical rules, and the '
+                              'participating-state list must come directly from the states, because an '
+                              'auditor list may include every state it has a contract with rather than the '
+                              'ones that signed on [79d39hagJ6U @ 00:00:40]. Jennifer Borden adds that in '
+                              'the last couple of years auditor interpretations have not always lined up '
+                              'with what statutes actually require, so holders must know the statutes, '
+                              'regulations, and state practice before the exam starts [03CoUEgqdzg @ '
+                              '00:01:01].',
+                              'The penalty math punishes delay. Tennessee sets negligent failure to '
+                              'report, deliver, or remit at $200 per day capped at $5,000, and willful '
+                              'failure at $1,000 per day up to $25,000 plus 25% of the value of the '
+                              'property the holder had a duty to report [KiR-ZUeCE5g @ 00:02:45]. Kodiak '
+                              'Solutions reports states increasingly auto-assess penalties plus 10% to 12% '
+                              'annual interest on past-due amounts, and that penalty and interest often '
+                              'grow larger than the original principal value of the property [2BplqmdsUpU '
+                              '@ 00:12:50]. M&A is the second blind spot. Clarus Partners warns that stock '
+                              'acquisitions, or asset transactions where liability was retained, create '
+                              "successor liability reaching back to the target's date of incorporation, "
+                              'and that these issues are generally missed in merger and acquisition due '
+                              "diligence [po0e86TAQwA @ 00:01:08]. SimekScott's principals add that a "
+                              'catch-all tax provision does not cover it; unclaimed property has to be '
+                              'specifically carved out in the purchase agreement, even asset deals can '
+                              'carry receivables with embedded property, and because VDAs and audits can '
+                              'take more than a year just to gather records, there is never enough time in '
+                              'deal diligence to size the real exposure [p0UoXSbya5E @ 00:04:30].'],
+               'table': {'caption': 'Firsthand failure modes and their economic hit as reported by '
+                                    'practitioners',
+                         'headers': ['Failure Mode Observed In The Field',
+                                     'What Went Wrong Firsthand',
+                                     'Economic Hit Or Operational Bottleneck',
+                                     'Expert Source'],
+                         'rows': [['Accounts receivable credit balances never reviewed',
+                                   'Receivables teams chase debits and ignore customers sitting in credit '
+                                   'balances',
+                                   'Drove a lot of audit exposure and blindsided controllers and CFOs',
+                                   'SimekScott LLC ([p0UoXSbya5E @ 00:01:52])'],
+                                  ['ERP tolerance write-off policy left unchecked',
+                                   'System auto-writes off transactions within a $10 differential either '
+                                   'direction',
+                                   'Credits written off beyond debits accumulate into unreported unclaimed '
+                                   'property',
+                                   'SimekScott LLC ([p0UoXSbya5E @ 00:02:40])'],
+                                  ['Stale checks and credits taken into income',
+                                   'Major companies claimed zero property because stale items went to '
+                                   'income',
+                                   'Tax already paid, funds still remitted on audit, no amended return '
+                                   'refund',
+                                   'Friedman LLP ([duwB7Y82flc @ 00:16:15])'],
+                                  ['Every property reported to one home state',
+                                   'Three-hospital system sent every vendor check and patient refund to '
+                                   'Indiana',
+                                   'Reports were likely due to dozens of states across 54 jurisdictions',
+                                   'Kodiak Solutions ([2BplqmdsUpU @ 00:16:36])'],
+                                  ['Filing history with gaps between annual reports',
+                                   'Holder filed once, then went silent for three years running',
+                                   'State database flags possible dissolution or acquisition and generates '
+                                   'audit notices',
+                                   'Kodiak Solutions ([2BplqmdsUpU @ 00:19:39])'],
+                                  ['Payroll outsourced to a third-party administrator',
+                                   'Holder assumes the administrator files and remits uncashed payroll '
+                                   'checks',
+                                   'Holder stays responsible unless it confirms the third party actually '
+                                   'remits',
+                                   'Friedman LLP ([duwB7Y82flc @ 00:31:01])'],
+                                  ['Reissued checks treated as brand new items',
+                                   'Holder ages a reissued check from the reissue date instead of original',
+                                   'Dormancy runs from the original issue date, so reports land late',
+                                   'SC REALTORS ([D-PMjgNe-7s @ 00:08:06])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Stop Points Before Exposure Compounds',
+                           'body': 'Each of these checks comes straight from a practitioner who watched '
+                                   'holders lose money, time, or leverage by skipping it.',
+                           'items': ['When an audit notice arrives, pull the participating-state list from '
+                                     "the states' own notifications and never from the auditor, whose list "
+                                     'may include every state it has a contract with [COMPUTERSHARE — '
+                                     '79d39hagJ6U @ 00:00:40].',
+                                     'Before any acquisition closes, loop in counsel with an escheatment '
+                                     'specialty and delineate in the purchase agreement who is responsible '
+                                     'for unclaimed property and for what periods [SimekScott LLC — '
+                                     'p0UoXSbya5E @ 00:04:59].',
+                                     'Review the voided check register and stop sweeping voided or stale '
+                                     'items into miscellaneous income, because those items become '
+                                     'unclaimed property within three to five years [Friedman LLP — '
+                                     'duwB7Y82flc @ 00:27:10].',
+                                     'If a Delaware VDA invitation arrives, decide within the first 90 '
+                                     'days, because declining means referral to the Department of Finance '
+                                     'for an unclaimed property audit [SimekScott LLC — TGu6R9Pc0-4 @ '
+                                     '00:00:19].']}}],
+ 'pull_quote': '"If you fail to plan you can plan to fail... I want to know any issues before the auditors '
+               'do." — Jennifer Borden, COMPUTERSHARE (03CoUEgqdzg @ 00:00:42).',
+ 'diagram_id': 'diag-08',
+ 'action_checklist': ['Test your existing internal controls and make sure staff know what to review across '
+                      'payroll accounts, accounts receivable, accounts payable, and bank reconciliations '
+                      '[ucproput — 3B5mPVcKPDE @ 00:00:25].',
+                      "Send due diligence letters to each owner's last known address, or by email where "
+                      'the owner consented, between May 1st and September 1st for Utah filings [Utah '
+                      'Office of State Treasurer — hUiiEXcFE0k @ 00:01:31].',
+                      'Build the report in the NAUPA format using free holder software such as UP Exchange '
+                      'or HRS Pro, then upload directly or attach it to an email [SC REALTORS — '
+                      'D-PMjgNe-7s @ 00:15:18].',
+                      'Pull an org chart and confirm every entity, including physician practices, urgent '
+                      'care, surgery centers, imaging, and health plans, plus every disbursement account, '
+                      'is captured in the review [Kodiak Solutions — 2BplqmdsUpU @ 00:24:01].',
+                      'Run an internal review before any audit starts, beginning with corporate structure, '
+                      'incorporation states, and mergers or acquisitions that drive liability '
+                      '[COMPUTERSHARE — 79d39hagJ6U @ 00:01:12].',
+                      'If past-due property exists and no audit is underway, apply for the Tennessee CDA '
+                      'with a proposal of Reporting Method worksheet and current written procedures '
+                      '[TNTreasury — KiR-ZUeCE5g @ 00:01:55].'],
+ 'statutory_citations': [{'title': 'Friedman LLP — Unclaimed Property: Avoiding Penalties From Increased '
+                                   'State Enforcement | FULL Webinar [00:41:49]',
+                          'url': 'https://www.youtube.com/watch?v=duwB7Y82flc&t=2509s',
+                          'relevance': 'Primary practitioner testimony on voluntary disclosure look-back '
+                                       'limits, estimation fractions, and contingency-fee audit exposure.'},
+                         {'title': 'TNTreasury — Unclaimed Property in Tennessee: Understanding Audits, '
+                                   'Compliance, and Negative Reports [00:02:45]',
+                          'url': 'https://www.youtube.com/watch?v=KiR-ZUeCE5g&t=165s',
+                          'relevance': 'Primary practitioner testimony on CDA penalty avoidance and '
+                                       'negligent versus willful penalty schedules.'},
+                         {'title': 'SimekScott LLC — SALT: Top 5 Mistakes Companies Make Evaluating Their '
+                                   'Unclaimed Property Exposure. [00:01:52]',
+                          'url': 'https://www.youtube.com/watch?v=p0UoXSbya5E&t=112s',
+                          'relevance': 'Primary practitioner testimony on accounts receivable credits, '
+                                       'tolerance write-offs, and M&A carve-outs from a former state '
+                                       'auditor.'},
+                         {'title': 'ucproput — (3 of 4) Utah Unclaimed Property Audit Issues [00:07:35]',
+                          'url': 'https://www.youtube.com/watch?v=3B5mPVcKPDE&t=455s',
+                          'relevance': 'Primary practitioner testimony on audit triggers, reciprocity '
+                                       'indemnification limits, and record retention from the state audit '
+                                       'side.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'hUiiEXcFE0k',
+                       'title': 'Unclaimed Property Reporting Overview',
+                       'channel': 'Utah Office of State Treasurer',
+                       'author': 'Utah Office of State Treasurer',
+                       'text': 'The most convenient way is to pay electronically on the website '
+                               'mycash.utah.gov, and please note that both reports and payment are due by '
+                               'November 1st.',
+                       'tip': 'The most convenient way is to pay electronically on the website '
+                              'mycash.utah.gov, and please note that both reports and payment are due by '
+                              'November 1st.',
+                       'timestamp': 200,
+                       'timestamp_seconds': 200,
+                       'timestamp_label': '[00:03:20]',
+                       'url': 'https://www.youtube.com/watch?v=hUiiEXcFE0k&t=200s',
+                       'markdown': '[00:03:20](https://www.youtube.com/watch?v=hUiiEXcFE0k&t=200s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'KiR-ZUeCE5g',
+                       'title': 'Unclaimed Property in Tennessee: Understanding Audits, Compliance, and '
+                                'Negative Reports',
+                       'channel': 'TNTreasury',
+                       'author': 'TNTreasury',
+                       'text': 'Penalties are avoided when a holder discloses unclaimed property upfront '
+                               'through the CDA program.',
+                       'tip': 'Penalties are avoided when a holder discloses unclaimed property upfront '
+                              'through the CDA program.',
+                       'timestamp': 165,
+                       'timestamp_seconds': 165,
+                       'timestamp_label': '[00:02:45]',
+                       'url': 'https://www.youtube.com/watch?v=KiR-ZUeCE5g&t=165s',
+                       'markdown': '[00:02:45](https://www.youtube.com/watch?v=KiR-ZUeCE5g&t=165s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'UP88bQoP2JU',
+                       'title': 'Keane Unclaimed Property System (KUPS)',
+                       'channel': 'Keane Unclaimed Property',
+                       'author': 'Keane Unclaimed Property',
+                       'text': 'KUPS can process 3.5 million records and 350,000 due-diligence letters per '
+                               'hour.',
+                       'tip': 'KUPS can process 3.5 million records and 350,000 due-diligence letters per '
+                              'hour.',
+                       'timestamp': 90,
+                       'timestamp_seconds': 90,
+                       'timestamp_label': '[00:01:30]',
+                       'url': 'https://www.youtube.com/watch?v=UP88bQoP2JU&t=90s',
+                       'markdown': '[00:01:30](https://www.youtube.com/watch?v=UP88bQoP2JU&t=90s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'K64AFLANH3A',
+                       'title': 'Unclaimed Property Regulation',
+                       'channel': 'COMPUTERSHARE',
+                       'author': 'COMPUTERSHARE',
+                       'text': 'It would be great if we could come up with a single regulation so that we '
+                               'can follow it and put our energy towards that instead of towards keeping '
+                               'up with 54 sets of regulations.',
+                       'tip': 'It would be great if we could come up with a single regulation so that we '
+                              'can follow it and put our energy towards that instead of towards keeping up '
+                              'with 54 sets of regulations.',
+                       'timestamp': 28,
+                       'timestamp_seconds': 28,
+                       'timestamp_label': '[00:00:28]',
+                       'url': 'https://www.youtube.com/watch?v=K64AFLANH3A&t=28s',
+                       'markdown': '[00:00:28](https://www.youtube.com/watch?v=K64AFLANH3A&t=28s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '79d39hagJ6U',
+                       'title': 'Preparing for an unclaimed property audit',
+                       'channel': 'COMPUTERSHARE',
+                       'author': 'COMPUTERSHARE',
+                       'text': "You're going to want to get a list of the participating states, and it's "
+                               'very important that that list comes directly from the states; do not rely '
+                               'on a list from the auditors.',
+                       'tip': "You're going to want to get a list of the participating states, and it's "
+                              'very important that that list comes directly from the states; do not rely '
+                              'on a list from the auditors.',
+                       'timestamp': 40,
+                       'timestamp_seconds': 40,
+                       'timestamp_label': '[00:00:40]',
+                       'url': 'https://www.youtube.com/watch?v=79d39hagJ6U&t=40s',
+                       'markdown': '[00:00:40](https://www.youtube.com/watch?v=79d39hagJ6U&t=40s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'po0e86TAQwA',
+                       'title': 'Mitigating Unclaimed Property Risk: Best Practices for Compliance',
+                       'channel': 'Clarus Partners',
+                       'author': 'Clarus Partners',
+                       'text': 'These factors matter because they lead to audits, and audits include the '
+                               'addition of interest and penalty which in some states could be greater '
+                               'than 50% of the liability owed.',
+                       'tip': 'These factors matter because they lead to audits, and audits include the '
+                              'addition of interest and penalty which in some states could be greater than '
+                              '50% of the liability owed.',
+                       'timestamp': 85,
+                       'timestamp_seconds': 85,
+                       'timestamp_label': '[00:01:25]',
+                       'url': 'https://www.youtube.com/watch?v=po0e86TAQwA&t=85s',
+                       'markdown': '[00:01:25](https://www.youtube.com/watch?v=po0e86TAQwA&t=85s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'p0UoXSbya5E',
+                       'title': 'SALT: Top 5 Mistakes Companies Make Evaluating Their Unclaimed Property '
+                                'Exposure.',
+                       'channel': 'SimekScott LLC',
+                       'author': 'SimekScott LLC',
+                       'text': 'As my time on the other side of this issue on the state side as an '
+                               'auditor, the accounts receivable area certainly did drive a lot of '
+                               'exposure for companies.',
+                       'tip': 'As my time on the other side of this issue on the state side as an auditor, '
+                              'the accounts receivable area certainly did drive a lot of exposure for '
+                              'companies.',
+                       'timestamp': 112,
+                       'timestamp_seconds': 112,
+                       'timestamp_label': '[00:01:52]',
+                       'url': 'https://www.youtube.com/watch?v=p0UoXSbya5E&t=112s',
+                       'markdown': '[00:01:52](https://www.youtube.com/watch?v=p0UoXSbya5E&t=112s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '03CoUEgqdzg',
+                       'title': 'Litigation and unclaimed property audits',
+                       'channel': 'COMPUTERSHARE',
+                       'author': 'COMPUTERSHARE',
+                       'text': "Now with all the litigation we've had, people aren't afraid to fight, so "
+                               "if something doesn't feel right I would not be afraid to say no even if "
+                               'that may lead to litigation.',
+                       'tip': "Now with all the litigation we've had, people aren't afraid to fight, so if "
+                              "something doesn't feel right I would not be afraid to say no even if that "
+                              'may lead to litigation.',
+                       'timestamp': 107,
+                       'timestamp_seconds': 107,
+                       'timestamp_label': '[00:01:47]',
+                       'url': 'https://www.youtube.com/watch?v=03CoUEgqdzg&t=107s',
+                       'markdown': '[00:01:47](https://www.youtube.com/watch?v=03CoUEgqdzg&t=107s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'UC28yxW8Pls',
+                       'title': 'Unclaimed Property',
+                       'channel': 'Deloitte US',
+                       'author': 'Deloitte US',
+                       'text': 'Managing your unclaimed property compliance risks is as important now as '
+                               'ever as states may ramp up audit efforts in the face of economic '
+                               'uncertainties.',
+                       'tip': 'Managing your unclaimed property compliance risks is as important now as '
+                              'ever as states may ramp up audit efforts in the face of economic '
+                              'uncertainties.',
+                       'timestamp': 21,
+                       'timestamp_seconds': 21,
+                       'timestamp_label': '[00:00:21]',
+                       'url': 'https://www.youtube.com/watch?v=UC28yxW8Pls&t=21s',
+                       'markdown': '[00:00:21](https://www.youtube.com/watch?v=UC28yxW8Pls&t=21s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'yjxm_QOITBY',
+                       'title': 'Abandoned and Unclaimed Property Quarterly - April 2024',
+                       'channel': 'PwC US',
+                       'author': 'PwC US',
+                       'text': 'One common pitfall is dealing with incomplete addresses, which can lead to '
+                               'premature escheatment.',
+                       'tip': 'One common pitfall is dealing with incomplete addresses, which can lead to '
+                              'premature escheatment.',
+                       'timestamp': 23,
+                       'timestamp_seconds': 23,
+                       'timestamp_label': '[00:00:23]',
+                       'url': 'https://www.youtube.com/watch?v=yjxm_QOITBY&t=23s',
+                       'markdown': '[00:00:23](https://www.youtube.com/watch?v=yjxm_QOITBY&t=23s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '3B5mPVcKPDE',
+                       'title': '(3 of 4) Utah Unclaimed Property Audit Issues',
+                       'channel': 'ucproput',
+                       'author': 'ucproput',
+                       'text': 'What I have found out on audits is that most businesses do not know what '
+                               'they are doing, that they need training, and most of them want to do '
+                               "what's right.",
+                       'tip': 'What I have found out on audits is that most businesses do not know what '
+                              "they are doing, that they need training, and most of them want to do what's "
+                              'right.',
+                       'timestamp': 476,
+                       'timestamp_seconds': 476,
+                       'timestamp_label': '[00:07:56]',
+                       'url': 'https://www.youtube.com/watch?v=3B5mPVcKPDE&t=476s',
+                       'markdown': '[00:07:56](https://www.youtube.com/watch?v=3B5mPVcKPDE&t=476s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'D-PMjgNe-7s',
+                       'title': 'SCR Webinar: Unclaimed Property Program Overview',
+                       'channel': 'SC REALTORS',
+                       'author': 'SC REALTORS',
+                       'text': 'To ease the reporting burden most states including South Carolina will '
+                               'accept incidental property with a last known address in another state.',
+                       'tip': 'To ease the reporting burden most states including South Carolina will '
+                              'accept incidental property with a last known address in another state.',
+                       'timestamp': 826,
+                       'timestamp_seconds': 826,
+                       'timestamp_label': '[00:13:46]',
+                       'url': 'https://www.youtube.com/watch?v=D-PMjgNe-7s&t=826s',
+                       'markdown': '[00:13:46](https://www.youtube.com/watch?v=D-PMjgNe-7s&t=826s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'TGu6R9Pc0-4',
+                       'title': 'Delaware Unclaimed Property VDA Invitations - April 11 2025',
+                       'channel': 'SimekScott LLC',
+                       'author': 'SimekScott LLC',
+                       'text': 'You have to take action within the first 90 days, and if you decide not to '
+                               'participate, you will be referred to the Department of Finance for an '
+                               'unclaimed property audit.',
+                       'tip': 'You have to take action within the first 90 days, and if you decide not to '
+                              'participate, you will be referred to the Department of Finance for an '
+                              'unclaimed property audit.',
+                       'timestamp': 19,
+                       'timestamp_seconds': 19,
+                       'timestamp_label': '[00:00:19]',
+                       'url': 'https://www.youtube.com/watch?v=TGu6R9Pc0-4&t=19s',
+                       'markdown': '[00:00:19](https://www.youtube.com/watch?v=TGu6R9Pc0-4&t=19s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'duwB7Y82flc',
+                       'title': 'Unclaimed Property: Avoiding Penalties From Increased State Enforcement | '
+                                'FULL Webinar',
+                       'channel': 'Friedman LLP',
+                       'author': 'Friedman LLP',
+                       'text': 'The benefit is that there is a limited look-back period; unclaimed '
+                               'property audits can go back to the beginning of the business operation, '
+                               'but voluntary disclosures are typically limited to about ten years.',
+                       'tip': 'The benefit is that there is a limited look-back period; unclaimed property '
+                              'audits can go back to the beginning of the business operation, but '
+                              'voluntary disclosures are typically limited to about ten years.',
+                       'timestamp': 2509,
+                       'timestamp_seconds': 2509,
+                       'timestamp_label': '[00:41:49]',
+                       'url': 'https://www.youtube.com/watch?v=duwB7Y82flc&t=2509s',
+                       'markdown': '[00:41:49](https://www.youtube.com/watch?v=duwB7Y82flc&t=2509s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'duwB7Y82flc',
+                       'title': 'Unclaimed Property: Avoiding Penalties From Increased State Enforcement | '
+                                'FULL Webinar',
+                       'channel': 'Friedman LLP',
+                       'author': 'Friedman LLP',
+                       'text': 'Third-party auditors operating on a contingency basis are very aggressive, '
+                               "and I've seen situations where they will look for records that go back 20 "
+                               'years.',
+                       'tip': 'Third-party auditors operating on a contingency basis are very aggressive, '
+                              "and I've seen situations where they will look for records that go back 20 "
+                              'years.',
+                       'timestamp': 3062,
+                       'timestamp_seconds': 3062,
+                       'timestamp_label': '[00:51:02]',
+                       'url': 'https://www.youtube.com/watch?v=duwB7Y82flc&t=3062s',
+                       'markdown': '[00:51:02](https://www.youtube.com/watch?v=duwB7Y82flc&t=3062s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '2BplqmdsUpU',
+                       'title': '5 healthcare unclaimed property compliance trends you need to know',
+                       'channel': 'Kodiak Solutions',
+                       'author': 'Kodiak Solutions',
+                       'text': 'What we like to say is we want you to be compliant but not overly '
+                               'compliant.',
+                       'tip': 'What we like to say is we want you to be compliant but not overly '
+                              'compliant.',
+                       'timestamp': 1688,
+                       'timestamp_seconds': 1688,
+                       'timestamp_label': '[00:28:08]',
+                       'url': 'https://www.youtube.com/watch?v=2BplqmdsUpU&t=1688s',
+                       'markdown': '[00:28:08](https://www.youtube.com/watch?v=2BplqmdsUpU&t=1688s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'WZH47JEDcEI',
+                       'title': 'Unclaimed Property: Holder Reporting - General',
+                       'channel': 'txcomptroller',
+                       'author': 'txcomptroller',
+                       'text': 'Businesses must mail or email a due diligence notice 60 days before the '
+                               'due date to all owners of unclaimed property valued at more than $250.',
+                       'tip': 'Businesses must mail or email a due diligence notice 60 days before the due '
+                              'date to all owners of unclaimed property valued at more than $250.',
+                       'timestamp': 157,
+                       'timestamp_seconds': 157,
+                       'timestamp_label': '[00:02:37]',
+                       'url': 'https://www.youtube.com/watch?v=WZH47JEDcEI&t=157s',
+                       'markdown': '[00:02:37](https://www.youtube.com/watch?v=WZH47JEDcEI&t=157s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'}]}

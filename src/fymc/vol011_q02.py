@@ -1,676 +1,884 @@
 from __future__ import annotations
 
-CHAPTER_2 = {
-    "id": "Q2",
-    "chapter_id": "Q2",
-    "chapter_number": 2,
-    "question_number": 2,
-    "slug": "who-pays-why-they-pay-and-how-payment-clears",
-    "question_prompt": "Who writes the check in high-ticket brokerage, what acute financial or statutory pain forces them to pay, and how do funds clear cleanly without circumvention or non-payment?",
-    "kicker": "Q2 / THE BIG MONEY PLAYBOOKS",
-    "title": "Who Pays, Why They Pay & How the Payment Rail Works",
-    "subtitle": "Exclusive Mandates, Verified Escrow Authority, UCC Article 4A Wires, M&A Exemptions, and Commission Protection",
-    "layout_template": "executive_summary",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #26, High-Ticket Brokerage, ranks #10 with an 88/100 Money-to-Manpower "
-        "Score across a volume containing 21 mapped plays. The payer buys transaction certainty: "
-        "qualified counterparties, documented authority, defensible diligence, and a closing sequence "
-        "that releases an earned commission. This chapter separates purchase consideration from "
-        "retained brokerage revenue, compares eight payment arrangements, and turns exclusive "
-        "mandates into executable disbursement instructions. Canonical annual owner profit is "
-        "$25,000 Conservative, $206,250 Base, and $500,000 Scaled, supported by retained commissions "
-        "of $100,000, $550,000, and $1,000,000 respectively. Public Telegram signals and voluntary "
-        "access-easement assignments become useful only when they reach a creditworthy principal, "
-        "a lawful engagement, and independently verified settlement authority."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$100,000",
-            "context": "Annual retained transaction commissions; underlying asset values excluded",
-            "note": "25% net margin; $25,000 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Base",
-            "value": "$550,000",
-            "context": "Annual retained transaction commissions; underlying asset values excluded",
-            "note": "37.5% net margin; $206,250 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$1,000,000",
-            "context": "Annual retained transaction commissions; underlying asset values excluded",
-            "note": "50% net margin; $500,000 annual owner net profit; 2 FT + 4 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Identify the payer, the economic wound, and the person authorized to bind them",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "The check normally comes from the principal named in the engagement, not from "
-                    "whoever appears most enthusiastic on the introductory call. A business owner "
-                    "may authorize a sell-side success fee, while their controller merely schedules "
-                    "payment and their lender controls whether sale proceeds can be released. A "
-                    "buyer may retain a specialist to source an aircraft, equipment fleet, or "
-                    "acquisition target, but an investment committee can still withhold purchase "
-                    "authority. Map four distinct roles before distributing identifiable inventory: "
-                    "economic beneficiary, contracting entity, authorized signer, and settlement "
-                    "instructor. Request the entity's exact legal name, formation jurisdiction, "
-                    "signatory capacity, and documentary authority appropriate to its structure. "
-                    "An LLC manager's signature does not establish that every required member "
-                    "consent exists. The acute pain is usually measurable: debt maturity, idle "
-                    "equipment expense, succession pressure, lost expansion capacity, or a narrow "
-                    "acquisition window. Statutory duties can constrain the transaction, but they "
-                    "rarely compel a principal to hire this particular broker. Sell the removal of "
-                    "a documented bottleneck rather than claiming a mandatory brokerage expense. "
-                    "Ask what happens if nothing closes within ninety days, who bears that cost, "
-                    "and which existing budget can fund the engagement without relying on a "
-                    "future capital raise."
-                ),
-                (
-                    "Translate that pain into a fee decision with a comparison the principal can "
-                    "defend internally. An equipment owner carrying $18,000 monthly storage, "
-                    "insurance, and financing expense loses $54,000 over three additional months; "
-                    "a $40,000 commission can be rational if credible execution materially shortens "
-                    "that delay. Those amounts illustrate buyer psychology, not a forecast of "
-                    "broker revenue. An acquisition sponsor instead evaluates proprietary access, "
-                    "management continuity, and the expense of pursuing an unfinanceable target. "
-                    "Ask for a written acquisition mandate, evidence of available equity, and "
-                    "the lender's remaining conditions; a lender introduction is not committed "
-                    "funding. A seller concerned about confidentiality may value a staged data "
-                    "room more than a larger prospect list. Use DocuSign for engagement execution "
-                    "and a permissioned Microsoft SharePoint room for controlled disclosures, "
-                    "while keeping permission history and exportable evidence. Explain exactly "
-                    "which events earn a fee: introduction, signed purchase agreement, completed "
-                    "transfer, or collected consideration. Most closing-based mandates should "
-                    "tie the success component to an objectively documented closing event. "
-                    "If deferred consideration, seller notes, or earnouts enter the price, define "
-                    "whether the commission accrues immediately or follows actual receipts. "
-                    "Silence creates a fee dispute precisely when the seller's liquidity is "
-                    "most constrained."
-                ),
-                (
-                    "Classify the asset and transaction structure before promising the service. "
-                    "Negotiating California real-property sales or certain business opportunities "
-                    "can implicate California Business and Professions Code section 10131; "
-                    "section 10137 restricts compensation to unlicensed persons for licensed "
-                    "activities. A securities transaction requires a separate analysis under "
-                    "15 U.S.C. section 78o. Its subsection (b)(13) provides a conditional federal "
-                    "registration exemption for qualifying M&A brokers, not a universal exemption "
-                    "for introductions or success fees. Test the eligible privately held company "
-                    "definition, buyer control and active management, prohibited activities, and "
-                    "applicable state requirements against the actual deal. Handling transaction "
-                    "funds is incompatible with that exemption's custody restriction. If the "
-                    "structure changes from an asset purchase to an equity purchase, repeat the "
-                    "analysis rather than recycling the original scope memo. Dual representation "
-                    "also requires the disclosures and consent applicable to the transaction; "
-                    "an exclusive mandate does not neutralize a conflict. Assign local counsel "
-                    "or a properly licensed partner before substantive regulated work starts. "
-                    "When the brokerage cannot lawfully perform the proposed activity, change "
-                    "the assignment to genuinely permitted work or decline it. A referral label "
-                    "does not repair unlawful conduct or make an otherwise prohibited commission "
-                    "share collectible."
-                ),
-            ],
-            "table": {
-                "caption": "Payer Psychology, Contracting Authority, and Collectible Budget Matrix",
-                "headers": [
-                    "Principal and acute operating pressure",
-                    "Economic reason to authorize the fee",
-                    "Authority and budget evidence to obtain",
-                    "Collection failure and practical protective response",
-                ],
-                "rows": [
-                    [
-                        "Owner selling an operating company before succession becomes disruptive",
-                        "Preserve enterprise value while reducing management distraction during negotiations",
-                        "Executed entity mandate plus transaction-specific board or member authorization",
-                        "Require settlement acknowledgment because a controller cannot release lender collateral",
-                    ],
-                    [
-                        "Acquisition sponsor seeking a narrowly defined operating company platform",
-                        "Purchase qualified access rather than another generic target spreadsheet",
-                        "Investment mandate, equity evidence, and remaining acquisition financing conditions",
-                        "Separate sourcing fees from success fees and identify both obligors",
-                    ],
-                    [
-                        "Equipment owner facing recurring storage costs and approaching debt maturity",
-                        "Convert idle machinery into proceeds before carrying costs consume equity",
-                        "Ownership schedule, lien payoff information, and authorized disposition signature",
-                        "Verify sale proceeds cover liens before assuming commission availability",
-                    ],
-                    [
-                        "Specialist asset buyer needing delivery within a constrained operating window",
-                        "Avoid inspection failures, unavailable inventory, and expensive replacement delays",
-                        "Purchasing authority, inspection budget, and independently confirmed funding source",
-                        "Make acceptance criteria explicit before the buyer can reject delivery",
-                    ],
-                    [
-                        "Landowner seeking documented voluntary access for an otherwise constrained parcel",
-                        "Improve lawful usability through negotiated rights supported by title evidence",
-                        "Recorded ownership, title exceptions, survey scope, and engagement spending limit",
-                        "Use diligence contingencies when geometry conflicts with recorded access rights",
-                    ],
-                    [
-                        "Court-supervised seller operating under transaction-specific sale and distribution orders",
-                        "Complete an authorized disposition with documented creditor and estate treatment",
-                        "Applicable court orders, approved engagement terms, and estate payment authority",
-                        "Condition payment expectations on required compensation authorization and available proceeds",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Protect the introduction before it becomes an untracked negotiation",
-                "body": (
-                    "Veteran brokers make fee collection a documented transaction dependency, "
-                    "not a confrontation scheduled after the buyer and seller become friendly."
-                ),
-                "items": [
-                    "Obtain a dated excluded-counterparty schedule when signing exclusivity; reconcile it against prior CRM introductions before releasing identifiable targets.",
-                    "Ask the settlement professional who can amend the disbursement statement and require the agreed change procedure to cover brokerage payment instructions.",
-                    "Give each qualified introduction a stable deal identifier and retain the permission, introduction email, and recipient acknowledgment together.",
-                    "Request a preliminary seller proceeds waterfall before expensive diligence; a persuasive seller can still have no equity available after secured payoffs.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Select the settlement arrangement and trace every dollar to its proper recipient",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Payment design starts with a sources-and-uses schedule, not an invoice template. "
-                    "Identify buyer equity, lender advances, deposits already held, secured "
-                    "payoffs, taxes, transaction expenses, seller proceeds, and the brokerage "
-                    "amount. Keep purchase consideration outside the broker's operating account. "
-                    "For an illustrative $2,000,000 sale, a 3% gross commission is $60,000. If "
-                    "$10,000 belongs to an eligible outside co-broker under a lawful written "
-                    "split, the operator retains $50,000; neither the $2,000,000 asset price nor "
-                    "the outside broker's share belongs in this scorecard's revenue. Have the "
-                    "settlement professional display each recipient separately where permitted, "
-                    "rather than sending the entire fee through an improvised trust arrangement. "
-                    "The principal's engagement creates the payment obligation, while escrow "
-                    "instructions specify how an authorized settlement agent will perform "
-                    "disbursement. Obtain that agent's acceptance; merely copying an agent on "
-                    "an email does not bind them. Confirm whether cleared funds, recording, "
-                    "delivery, lender authorization, or another event must occur before release. "
-                    "If lien payoffs leave insufficient seller proceeds, require an agreed "
-                    "funding solution before closing preparations continue. A signed success-fee "
-                    "contract is a claim against its obligor, not a senior lien on every "
-                    "dollar in the settlement account."
-                ),
-                (
-                    "Compare eight arrangements without pretending they are eight equivalent bank "
-                    "networks. Wire and ACH are transfer mechanisms; escrow, retainers, statutory "
-                    "disbursement, platform checkout, factoring, and milestone holds change "
-                    "custody, collection timing, authority, or credit allocation. Domestic wires "
-                    "usually suit large closing payments, but bank cutoffs and fraud controls "
-                    "still matter. UCC section 4A-202 addresses authorized and certain verified "
-                    "payment orders; the governing state's enacted version and account agreement "
-                    "determine its application. Authenticate beneficiary details using a "
-                    "previously established telephone number, not contact information supplied "
-                    "in a last-minute amendment. ACH can suit agreed smaller service payments, "
-                    "but availability, return rights, authorization requirements, and limits "
-                    "depend on the entry type and banking arrangement. Do not equate a pending "
-                    "credit with a completed closing. A card-funded checkout adds processor "
-                    "acceptance rules, chargeback exposure, transaction caps, and reserve risk. "
-                    "Escrow adds conditional custody rather than eliminating those underlying "
-                    "transfer risks. Specify whose bank confirms receipt and who decides that "
-                    "the contractual release condition has occurred. For cross-border deals, "
-                    "obtain the receiving bank's routing requirements, currency charges, and "
-                    "screening requirements before setting the closing timetable. A late "
-                    "beneficiary substitution should pause payment until independently "
-                    "authenticated, even when everyone else is ready."
-                ),
-                (
-                    "Retainers can fund real preparation work, but their treatment must match the "
-                    "engagement and asset-specific rules. A $10,000 advance credited against a "
-                    "$60,000 closing commission leaves $50,000 to collect at closing; it does "
-                    "not produce $70,000 of lifetime fee revenue. Specify when the advance is "
-                    "earned, whether any portion is refundable, and where it must be held. "
-                    "California Business and Professions Code section 10145 governs handling "
-                    "of trust funds received by a real estate broker; avoiding unnecessary "
-                    "custody simplifies operations but does not erase duties when funds are "
-                    "actually received. A milestone hold should identify a measurable release "
-                    "event, a deadline, and a dispute mechanism. Do not make an earned closing "
-                    "commission depend accidentally on an unrelated post-closing warranty "
-                    "claim. Factoring only becomes meaningful when an eligible receivable "
-                    "exists: selling an uncertain future success fee is different from "
-                    "discounting an accepted invoice. Compare advance rate, reserve, recourse, "
-                    "assignment restrictions, and the payer's acknowledgment before using it. "
-                    "Where payment follows a statutory or court-supervised process, verify "
-                    "the actual authorization instead of treating a sale order as automatic "
-                    "permission to pay every professional. The settlement design should "
-                    "survive one absent signer, one disputed adjustment, and one failed "
-                    "funding source without losing the audit trail."
-                ),
-            ],
-            "table": {
-                "caption": "Eight Payment and Settlement Arrangements: Mechanics, Economics, and Failure Fallbacks",
-                "headers": [
-                    "Arrangement and appropriate brokerage use",
-                    "Authority and release mechanics to document",
-                    "Concrete unit economics and revenue treatment",
-                    "Principal failure mode and operational fallback",
-                ],
-                "rows": [
-                    [
-                        "Wire transfer for an earned high-value commission at closing",
-                        "Verified payer instruction sends funds to independently authenticated beneficiary details",
-                        "A $50,000 retained commission remains separate from asset purchase consideration",
-                        "Pause changed instructions and verify through a previously established callback",
-                    ],
-                    [
-                        "Independent escrow for conditional custody before asset transfer completion",
-                        "Accepted escrow instructions identify conditions, recipients, disputes, and release authority",
-                        "Illustrative $60,000 gross fee splits into $50,000 retained plus $10,000 outside",
-                        "Resolve inconsistent instructions before funding instead of relying on introductions",
-                    ],
-                    [
-                        "ACH transfer for agreed smaller fees with sufficient collection lead time",
-                        "Document payment authorization, bank limits, settlement timing, and applicable return exposure",
-                        "A $5,000 collected advance offsets the eventual commission when contractually credited",
-                        "Use an agreed verified wire when timing cannot tolerate return uncertainty",
-                    ],
-                    [
-                        "Retainer advance supporting a defined and lawfully structured engagement",
-                        "Specify earning events, refund terms, custody treatment, and success-fee crediting",
-                        "$10,000 credited against $60,000 leaves $50,000 due at closing",
-                        "Separate unearned amounts and return them when governing terms require",
-                    ],
-                    [
-                        "Statutory disbursement through an applicable court-supervised transaction payment process",
-                        "Verify professional employment, compensation authority, and transaction-specific distribution instructions",
-                        "An authorized $40,000 fee remains subject to available distributable proceeds",
-                        "Obtain required compensation authorization rather than assuming sale approval suffices",
-                    ],
-                    [
-                        "Platform checkout for permitted service charges within processor transaction limits",
-                        "Processor terms and payer authorization govern acceptance, reserves, and disputes",
-                        "Illustrative 3% processing on $10,000 creates $300 collection expense",
-                        "Use a permitted bank payment when processor rules exclude brokerage activity",
-                    ],
-                    [
-                        "Factoring of an eligible earned and assignable brokerage receivable",
-                        "Factor verifies the invoice, debtor acknowledgment, assignment rights, and recourse",
-                        "$50,000 face at 90% advance yields $45,000 before fees and reserve",
-                        "Decline costly recourse when the underlying fee remains substantively disputed",
-                    ],
-                    [
-                        "Milestone holds for expressly deferred portions of an earned fee",
-                        "Written release events allocate verification authority and establish dispute procedures",
-                        "$50,000 fee with 20% held releases $40,000 initially and $10,000 later",
-                        "Use objective evidence and deadlines instead of discretionary satisfaction language",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Establish the fee obligor and lawful scope",
-                    "action": "Execute the engagement with the correct entity and verified authorized signer.",
-                    "detail": (
-                        "Record asset classification, required licensing or exemption analysis, "
-                        "fee basis, exclusions, crediting terms, and the event that earns payment."
-                    ),
-                },
-                {
-                    "step": 2,
-                    "title": "Build the preliminary closing waterfall",
-                    "action": "Reconcile buyer funds, lender funds, secured payoffs, fees, and seller proceeds.",
-                    "detail": (
-                        "Separate asset consideration from gross commission, outside broker shares, "
-                        "and retained operator revenue; resolve any funding deficit before release."
-                    ),
-                },
-                {
-                    "step": 3,
-                    "title": "Authenticate settlement instructions",
-                    "action": "Obtain settlement-agent acceptance and verify beneficiary details independently.",
-                    "detail": (
-                        "Use a known callback number, record the verifier and timestamp, and repeat "
-                        "authentication after any change to beneficiary or payment instructions."
-                    ),
-                },
-                {
-                    "step": 4,
-                    "title": "Close, reconcile, and preserve evidence",
-                    "action": "Match the final settlement statement to bank receipts and the earned fee.",
-                    "detail": (
-                        "Retain release evidence, split calculations, credited advances, and unpaid "
-                        "balances; update the operating ledger without recording purchase consideration."
-                    ),
-                },
-            ],
-        },
-        {
-            "heading": "3. Make fee protection enforceable and screen the actual commission debtor",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "An exclusive mandate and an NCNDA solve different problems. Exclusivity defines "
-                    "the broker's assignment and the circumstances in which another route to a "
-                    "transaction still earns compensation. A nondisclosure and noncircumvention "
-                    "agreement restricts specified information uses and defined bypass conduct; "
-                    "it does not automatically establish agency, licensing, or an unlimited "
-                    "commission entitlement. Name the protected parties and transaction class, "
-                    "record the introduction date, address already-known relationships, and "
-                    "state a commercially defensible duration. The fee agreement should also "
-                    "cover affiliate purchasers, changes in deal structure, and a carefully "
-                    "bounded post-termination tail. Require the broker to deliver the protected "
-                    "counterparty list within a stated period after termination. Avoid sweeping "
-                    "language claiming every future transaction between large corporate groups. "
-                    "Maintain an evidence chain consisting of the executed mandate, introduction "
-                    "record, substantive engagement history, and transaction correspondence. "
-                    "Airtable can index those records, but signed documents and original messages "
-                    "should remain exportable outside the application. Route settlement "
-                    "instructions early enough for the payer and agent to resolve objections "
-                    "before signing the purchase agreement. If a counterparty refuses the fee "
-                    "clause, stop identifiable introductions until commercial terms are settled. "
-                    "Continuing to perform while hoping that gratitude will substitute for a "
-                    "contract converts a controllable risk into unsecured collection work."
-                ),
-                (
-                    "Credit screening targets the entity that owes the commission, not merely the "
-                    "person with the strongest biography. Retrieve formation and status records "
-                    "from the relevant secretary of state, inspect authority documents, and "
-                    "compare the contracting name with the proposed remitter and beneficiary. "
-                    "Review litigation through PACER where relevant and search applicable UCC "
-                    "records through the correct filing office. A UCC search does not establish "
-                    "asset title or reveal every lien; real property, aircraft, vessels, and "
-                    "other specialized assets require their own records and release evidence. "
-                    "Ask for the seller's preliminary payoff statements and the buyer's "
-                    "transaction-specific funding evidence through consented channels. A bank "
-                    "letter may be stale, conditional, or unrelated to the entity signing "
-                    "the purchase agreement. Verify its provenance directly where authorized. "
-                    "Escalate mismatched entities, unexplained third-party remitters, resistance "
-                    "to ownership disclosure, and pressure to change payment details. Separate "
-                    "fraud indicators from ordinary confidentiality concerns by offering a "
-                    "restricted review channel. For a thinly capitalized acquisition vehicle, "
-                    "negotiate a funded escrow contribution, credit support from a suitable "
-                    "affiliate, or an appropriately documented guarantee when commercially "
-                    "available. If none is acceptable, price the risk explicitly or decline "
-                    "the mandate. No amount of CRM automation makes an empty obligor solvent."
-                ),
-                (
-                    "Model the canonical cases using retained commissions only. Conservative can "
-                    "be illustrated by two $2,000,000 closings at 3%, each less a $10,000 "
-                    "eligible outside broker share: two times $50,000 equals $100,000 revenue. "
-                    "At 25% net margin, annual operating costs are $75,000 and owner net profit "
-                    "is $25,000. Base can use five $5,000,000 closings at 2.5%, each less "
-                    "$15,000 outside, producing five times $110,000, or $550,000 retained "
-                    "revenue. Costs of $343,750 leave $206,250 profit at 37.5%. Scaled can use "
-                    "eight $6,000,000 closings at 2.5%, each less $25,000 outside, producing "
-                    "$1,000,000 retained revenue; $500,000 costs leave $500,000 profit at 50%. "
-                    "These illustrative deal mixes reconcile the scorecard rather than predict "
-                    "asset prices or closing frequency. Conservative and Base each use one "
-                    "full-time operator plus three contractors; Scaled uses two full-time "
-                    "operators plus four contractors. Do not add the outside shares again "
-                    "inside those annual costs. Internal contractor costs remain operating "
-                    "expenses unless specifically treated as an already-excluded split. "
-                    "The stated $3,000–$18,000 monthly operating range is not the full annual "
-                    "cost budget for every scale case. Maintain a complete cost bridge and "
-                    "a cash reserve for the stated three-to-twelve-month first-deal window; "
-                    "earned profit and immediately spendable cash are different measurements."
-                ),
-            ],
-            "table": {
-                "caption": "Fee Protection and Counterparty Credit Evidence Matrix",
-                "headers": [
-                    "Exposure requiring a specific control",
-                    "Evidence the operator must actually preserve",
-                    "Contract or workflow response before disclosure",
-                    "Failure response when the evidence contradicts expectations",
-                ],
-                "rows": [
-                    [
-                        "Principal introduces an affiliate to avoid the named transaction fee",
-                        "Original introduction records plus relevant affiliate ownership and transaction correspondence",
-                        "Define covered affiliate transactions within a bounded and lawful engagement",
-                        "Preserve evidence and pursue contractual remedies rather than obstructing closing",
-                    ],
-                    [
-                        "Seller claims the buyer relationship predates the brokerage assignment",
-                        "Signed exclusion schedule and dated history of substantive prior contact",
-                        "Reconcile preexisting relationships before issuing the first identifiable target list",
-                        "Apply the agreed exclusion instead of asserting unsupported blanket protection",
-                    ],
-                    [
-                        "Acquisition vehicle has no assets beyond an uncertain financing commitment",
-                        "Verified capitalization evidence and transaction-specific conditions attached to funding",
-                        "Negotiate funded fee support or suitable documented affiliate credit support",
-                        "Decline unsecured exposure when the proposed obligor cannot support payment",
-                    ],
-                    [
-                        "Secured debt consumes the seller equity expected to fund commissions",
-                        "Current payoff statements and a reconciled preliminary closing proceeds waterfall",
-                        "Identify an additional funding source before committing expensive diligence effort",
-                        "Pause execution when no authorized party accepts the payment deficit",
-                    ],
-                    [
-                        "Last-minute payment instructions substitute an unrelated beneficiary bank account",
-                        "Previously verified beneficiary records and independently logged callback authentication",
-                        "Require authenticated change handling through the accepted settlement instruction process",
-                        "Stop the transfer and investigate before any replacement instructions operate",
-                    ],
-                    [
-                        "Closing fee remains subject to disputed post-closing performance adjustments",
-                        "Executed consideration definition and milestone-specific evidence of fee earning events",
-                        "Separate earned closing compensation from expressly contingent future payment components",
-                        "Collect undisputed amounts while following the documented dispute resolution process",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Verify four conditions before releasing a named counterparty",
-                "body": (
-                    "Advance only when the engagement, authority, evidence, and settlement path "
-                    "support the specific transaction rather than a generic brokerage template."
-                ),
-                "items": [
-                    "Confirm the asset and transaction structure fit documented licensing authority or an applicable exemption, including relevant state requirements.",
-                    "Verify the fee obligor, authorized signer, actual funding source, and preliminary net proceeds available after senior claims.",
-                    "Execute the fee agreement and applicable confidentiality protections, including exclusions, affiliate treatment, introduction records, and a bounded tail.",
-                    "Obtain an executable settlement plan with accepted payment instructions, independent beneficiary verification, and explicit treatment of splits and advances.",
-                ],
-            },
-        },
-        {
-            "heading": "4. Convert public signals and voluntary access work into collectible mandates",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "The play telegram_channel_signal_scraping turns permitted public broadcasts "
-                    "into research leads, not a license to harvest private communities. Monitor "
-                    "public Telegram channels, public OTC broadcasts, wholesale distress feeds, "
-                    "and openly accessible niche message streams through access methods allowed "
-                    "by the service and channel context. Extract asset category, geography, "
-                    "stated urgency, source timestamp, and the publisher's advertised contact "
-                    "route. Deduplicate repeated listings before an operator checks authority "
-                    "and relevance. An illustrative month with 200 messages might yield "
-                    "40 distinct triggers, 10 verified opportunities, four discovery calls, "
-                    "and one signed mandate. At $800 combined monitoring and review cost, "
-                    "that is $80 per verified opportunity and $800 per mandate, not $800 "
-                    "per closing. If one in five comparable mandates eventually closes with "
-                    "$50,000 retained commission, the modeled acquisition cost is $4,000 "
-                    "per close before execution costs and elapsed-time effects. These "
-                    "assumptions do not alter the canonical annual scenarios. Reject "
-                    "member-list scraping, unsolicited bulk messaging, private-room access "
-                    "bypasses, and unsupported seller claims. The fallback is passive, "
-                    "read-only listening to permitted public broadcasts plus inbound capture "
-                    "through an official Bot API utility bot. The bot receives authorized "
-                    "interactions and permitted updates; it does not gain unrestricted "
-                    "access to arbitrary channels or their members."
-                ),
-                (
-                    "The play gis_landlocked_parcel_easement_assemblage combines QGIS parcel "
-                    "geometry with recorded deeds, easements, title exceptions, and survey "
-                    "evidence to identify voluntary access solutions. A narrow strip visible "
-                    "on a county map does not prove either ownership accuracy or the absence "
-                    "of existing legal access. Check recorded rights, possible unrecorded "
-                    "claims, physical access, lender consent, local subdivision requirements, "
-                    "and the route's engineering feasibility before pricing an assignment. "
-                    "Do not obstruct existing access or manufacture pressure against a "
-                    "neighbor. An illustrative buyer-authorized search screens 20 parcels; "
-                    "four warrant title review at $750 each, and one needs a $2,000 survey "
-                    "scope, creating $5,000 of diligence expense. If an appropriately "
-                    "licensed brokerage earns a $30,000 commission on a completed voluntary "
-                    "assemblage and pays an eligible outside broker $5,000, retained revenue "
-                    "is $25,000 before internal costs. Client-paid survey reimbursements "
-                    "and the land's purchase price are not additional retained commissions "
-                    "in this model. Option consideration belongs to a separately documented "
-                    "principal investment, not an invented brokerage fee. Disclose principal "
-                    "interests and separate their economics. If title or engineering "
-                    "defeats the route, exercise negotiated diligence contingencies and "
-                    "offer survey-backed voluntary access services within the operator's "
-                    "lawful scope. Do not recognize the hoped-for commission merely because "
-                    "the map looked persuasive."
-                ),
-                (
-                    "Join both plays to one collection workflow with separate evidence standards. "
-                    "A Telegram source can establish that someone advertised inventory; it "
-                    "cannot establish title, agency, funding, or the truth of a distress "
-                    "claim. A GIS overlay can establish a screening hypothesis; it cannot "
-                    "substitute for a title determination or surveyed boundary. Store the "
-                    "source record, verification result, payer identity, engagement version, "
-                    "and settlement status under one deal identifier. Use matching automation "
-                    "to propose qualified buyers, milestone tracking to surface overdue "
-                    "conditions, and document checklists to identify missing releases. Keep "
-                    "human review for representation claims, fee disputes, authority changes, "
-                    "and altered bank instructions. Review the pipeline weekly by next "
-                    "collectible event rather than by optimistic purchase price. Ten "
-                    "$5,000,000 opportunities are not $50,000,000 of brokerage revenue, and "
-                    "ten unsigned mandates are not ten probable closing fees. Track verified "
-                    "mandates, expected retained commission, documented contingencies, cash "
-                    "already collected, and estimated completion month separately. Use "
-                    "probability-weighted pipeline figures for capacity planning only, "
-                    "never as earned revenue. After closing, compare actual retained fees "
-                    "and operator hours with the acquisition hypothesis. Archive failed "
-                    "deals with a specific cause such as financing withdrawal, title defect, "
-                    "or misrepresentation. That feedback improves screening without turning "
-                    "unverified public signals into assertions repeated to the next buyer."
-                ),
-            ],
-            "table": {
-                "caption": "Mapped-Play Unit Economics and Evidence-to-Payment Conversion Matrix",
-                "headers": [
-                    "Play stage and legitimate operating input",
-                    "Illustrative unit math with explicit accounting boundary",
-                    "Evidence required before the next commercial step",
-                    "Risk fallback that preserves a lawful operating path",
-                ],
-                "rows": [
-                    [
-                        "telegram_channel_signal_scraping begins with permitted public broadcast monitoring and deduplication",
-                        "Two hundred messages yield forty distinct triggers before human verification",
-                        "Preserve source timestamp, public accessibility, publisher identity, and advertised contact",
-                        "Restrict monitoring to passive permitted broadcasts when broader access fails",
-                    ],
-                    [
-                        "Telegram verification converts observable public signals into qualified discovery conversations",
-                        "Forty triggers yield ten verified opportunities and four discovery calls",
-                        "Confirm seller authority, asset existence, principal identity, and outreach permission",
-                        "Reject unsupported listings instead of forwarding urgency claims to buyers",
-                    ],
-                    [
-                        "Official Bot API utility captures prospects through voluntary inbound interactions",
-                        "$800 monthly research cost divided by one mandate equals $800",
-                        "Retain inbound request, declared requirements, permitted follow-up channel, and engagement",
-                        "Use authorized bot interactions without collecting or messaging channel member lists",
-                    ],
-                    [
-                        "gis_landlocked_parcel_easement_assemblage screens mapped parcels for voluntary access opportunities",
-                        "Twenty screened parcels produce four title reviews costing $3,000 total",
-                        "Compare recorded ownership, easement documents, title exceptions, and route constraints",
-                        "Discard geometric hypotheses contradicted by recorded rights or ownership evidence",
-                    ],
-                    [
-                        "Survey-backed voluntary assemblage proceeds only after relevant access diligence succeeds",
-                        "$3,000 title review plus $2,000 survey scope totals $5,000 diligence",
-                        "Obtain survey findings, owner participation, lender requirements, and executable contingencies",
-                        "Exercise diligence contingencies and offer authorized voluntary access services instead",
-                    ],
-                    [
-                        "Completed licensed brokerage assignment collects its expressly agreed transaction compensation",
-                        "$30,000 gross commission less $5,000 outside share retains $25,000",
-                        "Match completed transfer, accepted disbursement statement, split agreement, and receipt",
-                        "Keep principal option returns and client reimbursements outside retained commissions",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": "A protected introduction becomes a business only when a verified obligor and an executable settlement instruction turn it into collected commission.",
-    "diagram_id": "diag-04",
-    "action_checklist": [
-        "Identify the contracting principal, authorized signer, economic beneficiary, and settlement instructor for each active mandate.",
-        "Document asset-specific licensing and transaction-structure requirements before introductions, negotiations, or commission-sharing commitments.",
-        "Execute exclusivity and fee terms with defined earning events, excluded counterparties, affiliate treatment, credited advances, and a bounded tail.",
-        "Reconcile the closing waterfall so secured payoffs, outside broker shares, retained commissions, and seller proceeds have separate documented amounts.",
-        "Authenticate settlement-agent authority and beneficiary instructions through established independent channels before funding or any payment change.",
-        "Track both mapped plays by verified opportunity cost, lawful mandate conversion, collected retained commission, and documented failed-closing causes.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "15 U.S.C. § 78o(a)(1), (b)(13) — Broker registration and the conditional M&A broker exemption",
-            "url": "https://www.law.cornell.edu/uscode/text/15/78o",
-            "relevance": (
-                "Classify securities-related brokerage activity and test every condition of the "
-                "M&A exemption, including eligible company, control, active management, and "
-                "prohibited custody requirements; assess state obligations separately."
-            ),
-        },
-        {
-            "title": "California Business and Professions Code § 10131 — Activities constituting real estate brokerage",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=10131.&lawCode=BPC",
-            "relevance": (
-                "Determine whether real-property or business-opportunity services require a "
-                "California real estate broker license before undertaking the engagement."
-            ),
-        },
-        {
-            "title": "California Business and Professions Code § 10137 — Compensation for licensed activities",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=10137.&lawCode=BPC",
-            "relevance": (
-                "Check the eligibility and required payment relationships of outside brokers "
-                "and referral participants before executing or paying a commission split."
-            ),
-        },
-        {
-            "title": "California Business and Professions Code § 10145 — Broker trust-fund handling",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=10145.&lawCode=BPC",
-            "relevance": (
-                "Apply the required handling and segregation rules when a real estate broker "
-                "receives funds belonging to others rather than treating them as operating cash."
-            ),
-        },
-        {
-            "title": "UCC § 4A-202 — Authorized and verified payment orders",
-            "url": "https://www.law.cornell.edu/ucc/4A/4A-202",
-            "relevance": (
-                "Understand payment-order authorization and agreed security procedures; consult "
-                "the governing state's enacted text and bank agreement for an actual transfer."
-            ),
-        },
-        {
-            "title": "11 U.S.C. § 327 — Employment of professional persons",
-            "url": "https://www.law.cornell.edu/uscode/text/11/327",
-            "relevance": (
-                "For bankruptcy engagements subject to this provision, verify required court "
-                "authorization and applicable eligibility conditions before providing estate services."
-            ),
-        },
-        {
-            "title": "11 U.S.C. § 330 — Compensation of officers and professional persons",
-            "url": "https://www.law.cornell.edu/uscode/text/11/330",
-            "relevance": (
-                "Distinguish transaction approval from the applicable process for awarding "
-                "professional compensation and reimbursing qualifying expenses in bankruptcy."
-            ),
-        },
-    ],
-}
+CHAPTER_2 = {'id': 'Q2',
+ 'chapter_id': 'Q2',
+ 'chapter_number': 2,
+ 'question_number': 2,
+ 'slug': 'choosing-your-role-business-broker-ma-advisor-investment-banker',
+ 'question_prompt': 'Which intermediary role fits the business and transaction, and how do buy-side work, '
+                    'sell-side work, advisory fees, and professional memberships differ?',
+ 'kicker': 'Q2 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Choosing Your Role: Business Broker, M&A Advisor, or Investment Banker',
+ 'subtitle': 'Main Street versus lower-middle-market transactions, exit planners, buy-side and sell-side '
+             'responsibilities, acquisition decisions, intermediary fees, and IBBA versus M&A Source '
+             'memberships',
+ 'layout_template': 'executive_summary',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Practitioners split the intermediary ladder by deal size and buyer pool. Main '
+                      'Street business brokers sell owner-operated companies, mostly under $1 million in '
+                      'SDE or under $2 million to $5 million in value, to individual buyers through web '
+                      'listings, real-estate-style licensing and 10% to 15% success fees with nothing '
+                      'upfront. M&A advisors take over from roughly $5 million in value or $1 million-plus '
+                      'EBITDA, running structured auctions to private equity and strategic buyers, '
+                      'charging $5,000 to $25,000 upfront plus double Lehman success fees of 10-8-6-4-2. '
+                      'Investment bankers enter near $100 million with monthly retainers and $1 million to '
+                      '$2 million minimum success fees. Brokers lean on listing volume against a roughly '
+                      '20% national close rate, while hybrid operators like Trent Lee and Michael '
+                      'Wildeveld import M&A-grade underwriting, CRM automation and proprietary buyer '
+                      'databases into Main Street deals.',
+ 'key_metrics': [{'label': 'Business broker nationwide success rate',
+                  'metric': 'Business broker nationwide success rate',
+                  'value': 'About 20%',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Gary Weinmann's figure for businesses that actually sell through a broker, "
+                             'which drives the list-as-many-as-possible broker model.',
+                  'source': 'American Business Intermediaries ([LRGkOAsiUdQ @ 00:04:06])'},
+                 {'label': 'Double Lehman M&A success fee',
+                  'metric': 'Double Lehman M&A success fee',
+                  'value': '10% / 8% / 6% / 4% / 2% of purchase price by million',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Nate Grant calls double Lehman the industry-standard M&A advisor success '
+                             'fee, simplified into fewer steps on larger deals.',
+                  'source': 'CompassPointCapital ([bjJIoxsFNY8 @ 00:01:33])'},
+                 {'label': 'M&A advisor upfront fee',
+                  'metric': 'M&A advisor upfront fee',
+                  'value': '$15,000 to $25,000',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Francis Walsh's range for rarely published M&A upfront fees, generally "
+                             'deducted from the success fee but not refunded if no sale.',
+                  'source': 'The Digital Merchant ([NTugAc75tOg @ 00:04:28])'},
+                 {'label': 'Private equity interest floor',
+                  'metric': 'Private equity interest floor',
+                  'value': 'Under $3 million to $5 million EBITDA, most PE groups not interested',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Michael Wildeveld's warning that auction-only M&A advisors cannot sell "
+                             'companies below this EBITDA band to private equity.',
+                  'source': 'Exit On Your Terms ([Dx_mEuS7ipk @ 00:03:26])'}],
+ 'sections': [{'number': 1,
+               'heading': 'The Practitioner Consensus',
+               'paragraphs': ['Every practitioner who drew the map drew it by deal size first, then by '
+                              'buyer type. Michael Wildeveld of Exit On Your Terms, who started as a '
+                              'business broker before going hybrid, places the Main Street broker on '
+                              "owner-operated restaurants, salons and convenience stores where seller's "
+                              'discretionary income runs up to $500,000 to $700,000 and usually stays '
+                              'under $1 million, typically closed as an asset sale rather than a stock '
+                              'purchase [Dx_mEuS7ipk @ 00:00:49]. Nate Grant of CompassPoint sets the same '
+                              'floor: a couple hundred thousand up to half a million in earnings, on '
+                              'roughly $1 million in revenue, is where business brokers are best suited to '
+                              'sell [2KA0GQ8fBkc @ 00:00:20]. RareBrain draws the broker ceiling at $5 '
+                              'million in business value and opens the M&A advisor lane from a $5 million '
+                              'transaction size up to about $150 million [ntmKBtSOxhU @ 00:01:06]. Justin '
+                              'Goodbread runs the identical price-tag test: under $5 million points to a '
+                              'broker, $5 million to $30 million points to an M&A advisor, and above $30 '
+                              'million the seller may still use an M&A advisor or bring in an investment '
+                              'banker depending on circumstances [gDql0VQct6A @ 00:14:19]. The operator '
+                              'takeaway is blunt: the size band you can credibly serve decides which title '
+                              'you should be wearing, because the client pool, the fee model and the buyer '
+                              'universe all follow directly from it.',
+                              'Buyer pool is the second hard line, and the speakers agree on it almost '
+                              'word for word. Gary Weinmann of American Business Intermediaries says '
+                              'sell-side M&A advisors typically market only to public companies, large '
+                              'private companies and private equity firms and rarely market to an '
+                              'individual buyer, while business brokers typically only market to '
+                              "individuals [LRGkOAsiUdQ @ 00:03:22]. Ryan C. Winter lists the broker's "
+                              'buyer mix as first-time owners, career changers, employees, competitors and '
+                              'private investors, versus an M&A advisor who takes fewer engagements, goes '
+                              'deeper on financial analysis and reaches private equity groups and '
+                              'corporate buyers directly through a formal bid process that puts them in '
+                              'competition [If4qHRijbWg @ 00:00:18]. Gill Agency adds that M&A advisors '
+                              'carry relationships with strategic buyers, private equity firms, family '
+                              'offices and holding companies, and that the yardstick flips from SDE on the '
+                              'broker side to EBITDA on the M&A side [UdqBDl4moqs @ 00:00:46]. Wildeveld '
+                              'supplies the sharpest warning for anyone positioning as an M&A advisor: '
+                              'below roughly $3 million to $5 million in EBITDA most private equity groups '
+                              'are not interested, so an advisor whose only playbook is the structured '
+                              'auction cannot create a market where none exists [Dx_mEuS7ipk @ 00:03:26]. '
+                              'Pick the role by the buyers you can actually reach, not by the title that '
+                              'sounds bigger.',
+                              'Licensing and skill floors complete the baseline. Wildeveld counts '
+                              'real-estate licensing for business brokers in roughly 17 to 20 states, '
+                              'naming California, Nevada, Arizona, Hawaii and Florida, while M&A advisors '
+                              'may carry real-estate broker licenses or FINRA registration under SEC '
+                              'regulation, and investment bankers are certainly FINRA-licensed with a far '
+                              'heavier expense structure [Dx_mEuS7ipk @ 00:07:13]. Goodbread flags the '
+                              'gray area in between: depending on transaction structure, many lower middle '
+                              'market advisors are not required to be licensed at all, so an M&A advisor '
+                              'answering no to the license question is not automatically operating out of '
+                              'bounds [gDql0VQct6A @ 00:08:17]. Trent Lee describes the actual broker job '
+                              'as reading financials like a quasi-CPA, carrying enough legal background to '
+                              'fill in templated contracts, and handling marketing, negotiation and sales, '
+                              'which is exactly why nobody walks into it straight out of college '
+                              "[svRg7_BrwXY @ 00:02:08]. Lee's entry rule is just as hard: do not even "
+                              'think about the industry until you have that baseline experience plus 12 to '
+                              '18 months of runway to go with no income, still support your family, and '
+                              'avoid getting desperate enough to do anything stupid along the way '
+                              '[svRg7_BrwXY @ 00:16:30]. Every rung on this ladder rewards the operator '
+                              'who shows up licensed, credentialed and capitalized before the first '
+                              'listing appointment ever lands on the calendar.'],
+               'table': {'caption': 'Role ladder by size band and buyer pool as stated by practitioners',
+                         'headers': ['Role',
+                                     'Size Band Stated',
+                                     'Buyer Pool or Operating Note',
+                                     'Expert Source'],
+                         'rows': [['Main Street business broker selling owner-operated companies',
+                                   'Owner SDE up to $500,000 to $700,000, usually under $1 million',
+                                   'Mom-and-pop buyers of restaurants, salons and convenience stores, '
+                                   'mostly via asset sales',
+                                   'Exit On Your Terms ([Dx_mEuS7ipk @ 00:00:49])'],
+                                  ['Solo business broker running a web-based listing model',
+                                   'Small companies where buyers are overwhelmingly individual purchasers',
+                                   'Seven to ten listings minimum, one-page flyers and fill-in-the-blanks '
+                                   'web templates',
+                                   'CompassPointCapital ([2KA0GQ8fBkc @ 00:00:56])'],
+                                  ['Lower middle market M&A advisor overlapping with brokers',
+                                   'Roughly $1 million to $5 million EBITDA at the overlapping low end',
+                                   'Private equity add-ons, strategic corporates, wealthy families and '
+                                   'local investor groups',
+                                   'Exit On Your Terms ([Dx_mEuS7ipk @ 00:01:59])'],
+                                  ['M&A advisor priced by transaction size and commission percentage',
+                                   'About $5 million up to roughly $150 million transaction size',
+                                   'Expect about 10% at the $5 million level falling to 2% to 3% at $100 '
+                                   'million',
+                                   'RareBrain ([ntmKBtSOxhU @ 00:01:25])'],
+                                  ['M&A advisor defined by revenue rather than earnings',
+                                   'Companies generating $5 million to $50 million or even higher in '
+                                   'revenue',
+                                   'Strategic buyers, private equity firms, family offices and holding '
+                                   'companies',
+                                   'Gill Agency ([UdqBDl4moqs @ 00:00:32])'],
+                                  ['Investment banker serving the largest and most complex deals',
+                                   'Typically $100 million or greater, some dropping to the $50 million '
+                                   'range',
+                                   'Fairness opinions, public offerings and broader financial services '
+                                   'beyond deal matching',
+                                   'Justin Goodbread ([gDql0VQct6A @ 00:12:40])'],
+                                  ['Main Street transaction versus M&A transaction framing in Canada',
+                                   'Main Street purchase price often falls below the $2 million mark',
+                                   'Entrepreneurial individual or group buyers versus strategic or '
+                                   'synergistic purchasers',
+                                   'Pacific Mergers and Acquisitions Inc. ([KZt-Qc2TpU4 @ 00:00:33])']]}},
+              {'number': 2,
+               'heading': 'Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['Fee architecture is where the three roles separate in hard cash. Nate Grant '
+                              'of CompassPoint calls 10% at close the standard broker fee on companies '
+                              'priced under $1 million, with no upfront money because most states regulate '
+                              'brokerage through the department of real estate, which bars upfront charges '
+                              'unless the broker delivers something beyond normal listing services, such '
+                              'as an executed marketing plan or a valuation from an accredited appraiser '
+                              "[bjJIoxsFNY8 @ 00:00:19]. Grant's M&A tier adds an upfront fee and a double "
+                              'Lehman success fee, 10% of the first million, 8% of the second, 6% of the '
+                              'third, then 4% and 2% on the remainder, with contingent notes and earnouts '
+                              'on bigger deals reopening the fight over what gets paid and when '
+                              '[bjJIoxsFNY8 @ 00:01:33]. Wildeveld defends M&A retainers and monthly work '
+                              'fees as infrastructure coverage for offices, payroll and industry '
+                              'subscriptions that run $15,000 to $25,000 apiece and over $100,000 a year '
+                              'for the firm [Dx_mEuS7ipk @ 00:05:49]. Francis Walsh of The Digital '
+                              'Merchant prices those rarely published M&A upfront fees at $15,000 to '
+                              '$25,000, usually deducted from the success fee at closing but never '
+                              'refunded if the business fails to sell [NTugAc75tOg @ 00:04:28]. The broker '
+                              'eats the timing risk on contingency; the advisor bills part of that risk to '
+                              'the client up front.',
+                              'Marketing mechanics follow the same fault line. Gary Weinmann says most '
+                              'business brokers list on web sites, wait for the inbound call and deploy '
+                              'little or no outbound marketing, against a nationwide broker success rate '
+                              'of about 20%, which is why the winning broker model is to list as many '
+                              'businesses as possible [LRGkOAsiUdQ @ 00:04:06]. Grant supplies the '
+                              'capacity math behind that volume: a solo broker typically needs seven to '
+                              'ten listings at a minimum to make a living, leaving little time per client '
+                              'and pushing marketing toward one-page flyers or fill-in-the-blanks '
+                              "templates on the web [2KA0GQ8fBkc @ 00:00:39]. Wildeveld's counter-model "
+                              'for deals under about $3 million in EBITDA is proprietary reach: a '
+                              '40,000-person database of individual buyers and a 4,000-person family '
+                              'office database that sit completely off the M&A and investment-banking '
+                              'radar [Dx_mEuS7ipk @ 00:09:21]. Luke Fox, formerly in private equity, lays '
+                              'out the sell-side auction the M&A tier runs instead: define the process, '
+                              'attach an early value, select a buyer universe, collect non-disclosure '
+                              'agreements, send a polished information memorandum, open a data room, then '
+                              'pull first-round bids before narrowing the field [7ABdy0hf9u8 @ 00:02:49]. '
+                              'Each model is a different machine, and the operator has to staff, finance '
+                              'and feed whichever one gets chosen.',
+                              'Trent Lee, who has closed more than 600 transactions mostly on Main Street, '
+                              'built a niche by importing M&A-grade pitch decks, valuation, systems, CRM, '
+                              'outreach, automation and AI into small deals [svRg7_BrwXY @ 00:06:08]. '
+                              'Before a listing goes live, Lee builds a personal credit memo, runs DSCR '
+                              "and factors in the buyer's livable wage, backed by certification as a "
+                              'business appraiser and SBA-underwriting training, so the price and the deal '
+                              "structure survive a lender and not just the seller's retirement number "
+                              '[svRg7_BrwXY @ 00:08:53]. Buyer screening is just as hard-nosed: an '
+                              'unsigned inquiry from a throwaway Hotmail address gets judged on sight, and '
+                              'callers are tested on whether they know recast, EBITDA versus SDE, '
+                              'add-backs and DSCR before they earn real attention [svRg7_BrwXY @ '
+                              '00:13:48]. Winter hands sellers the mirror-image filter for vetting any '
+                              'intermediary: a price quoted before anyone has seen the returns is a sales '
+                              'pitch, not a valuation, so ask how the firm will value the business, how it '
+                              'will find and screen buyers, and how often it will report [If4qHRijbWg @ '
+                              '00:01:59]. For a new operator, those two checklists are effectively the job '
+                              'description of a credible intermediary, whether the business card says '
+                              'broker, M&A advisor or something grander.'],
+               'table': {'caption': 'Fee schedules, retainers and membership tools quoted by practitioners',
+                         'headers': ['Mechanic',
+                                     'Stated Number or Tool',
+                                     'How Operators Use It',
+                                     'Expert Source'],
+                         'rows': [['Main Street broker success fee on small companies',
+                                   '10% at close only, no upfront fee under $1 million',
+                                   'Real-estate regulation blocks upfront fees except for extra '
+                                   'deliverables like appraisals',
+                                   'CompassPointCapital ([bjJIoxsFNY8 @ 00:00:19])'],
+                                  ['Double Lehman success fee for M&A advisors',
+                                   '10% first million, 8% second, 6% third, then 4% and 2%',
+                                   'Industry standard success fee, simplified into fewer steps on larger '
+                                   'M&A deals',
+                                   'CompassPointCapital ([bjJIoxsFNY8 @ 00:01:33])'],
+                                  ['Classic Lehman versus double Lehman on mid-size transactions',
+                                   '5-4-3 originally, now 10-9-8, averaging 4% to 5% on $20 million',
+                                   'Advisors justify the take because a year of work can go unpaid',
+                                   'RareBrain ([ntmKBtSOxhU @ 00:02:06])'],
+                                  ['Hybrid broker contingency fee with nothing paid upfront',
+                                   'Success fee at closing within a broad 8% to 15% range',
+                                   'Brings M&A-level analysis to Main Street without charging a retainer',
+                                   'Ryan C. Winter, Business Broker ([If4qHRijbWg @ 00:02:16])'],
+                                  ['Investment banker retainer and minimum success fee economics',
+                                   '$5,000 to $10,000 monthly retainer, $1 million to $2 million minimum',
+                                   'Large banks only make sense once the deal can absorb seven-figure '
+                                   'minimums',
+                                   'CompassPointCapital ([bjJIoxsFNY8 @ 00:02:11])'],
+                                  ['M&A Source membership bundled with Vertical IQ industry research',
+                                   'About $600 membership versus $1,100 a year for Vertical IQ alone',
+                                   'IBBA members request the joint membership discount of $50 to $100',
+                                   'Business Broker Crowd Call ([LFYHvuRB96I @ 00:00:25])'],
+                                  ['M&A Source conference deal market for relationship building',
+                                   'Usually about 40 private equity firms hunting platforms and add-ons',
+                                   'Brokers moving upmarket build PE and family office relationships there',
+                                   'Business Broker Crowd Call ([LFYHvuRB96I @ 00:02:19])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Edges the Volume Players Actually Use',
+                           'body': 'Practitioner-tested moves for squeezing more margin, credibility and '
+                                   'deal flow out of whichever intermediary role you run.',
+                           'items': ['Run buy-side representation without the search grind: send buyers '
+                                     'through a free education community, make them find their own deal, '
+                                     'then step in to represent them through the transaction and aim to '
+                                     'save them more on price than the fee charged [Beau Eckstein, '
+                                     'Business Ownership Coach — svRg7_BrwXY @ 00:25:17].',
+                                     'Show sellers the tax-hiding math at the first meeting: $100,000 of '
+                                     'unreported income or buried personal expenses at a 28% bracket saves '
+                                     '$28,000 in tax but costs $350,000 in value at a three-and-a-half '
+                                     'multiple [Beau Eckstein, Business Ownership Coach — svRg7_BrwXY @ '
+                                     '00:32:39].',
+                                     'If you must charge a broker upfront fee in a real-estate-regulated '
+                                     'state, tie it to a deliverable beyond normal listing services, such '
+                                     'as an executed marketing plan or a valuation from an accredited '
+                                     'appraiser [CompassPointCapital — bjJIoxsFNY8 @ 00:00:37].',
+                                     'On buy-side mandates, aggressively disqualify the universe of '
+                                     'distractions by defining exactly what the client is not looking for, '
+                                     'then plant seeds with sellers who will only sell when they are ready '
+                                     '[Objective, Investment Banking & Valuation — Ru1cmBnC5Rc @ '
+                                     '00:01:18].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Size the deal and pick the lane',
+                              'action': 'Run the price-tag test and the buyer-type test before choosing '
+                                        'which title to operate under.',
+                              'detail': 'Over $100 million in sales price points to an investment banker, '
+                                        'while an individual mom-and-pop buyer not using corporate money '
+                                        'points to a broker and buying syndicates, hedge funds or '
+                                        'international buyers point to M&A advisors or investment bankers '
+                                        '[Justin Goodbread — gDql0VQct6A @ 00:14:47].'},
+                             {'step': 2,
+                              'title': 'Lock the license and the credentials',
+                              'action': 'Secure the state license your lane requires and add valuation '
+                                        'credentials before the first listing.',
+                              'detail': 'Licensed states such as California, Nevada, Arizona, Hawaii and '
+                                        'Florida require broker-side licensing [Exit On Your Terms — '
+                                        'Dx_mEuS7ipk @ 00:07:13], and Trent Lee got certified as a '
+                                        'business appraiser and trained as an SBA underwriter before '
+                                        'selling a first business [Beau Eckstein, Business Ownership Coach '
+                                        '— svRg7_BrwXY @ 00:08:37].'},
+                             {'step': 3,
+                              'title': 'Pre-underwrite every listing',
+                              'action': "Build the lender's view of the deal before the business goes to "
+                                        'market.',
+                              'detail': "Draft your own credit memo, run DSCR and factor in the buyer's "
+                                        'livable wage, then align price with deal structure so the listing '
+                                        "is actually marketable rather than priced to the seller's "
+                                        'retirement wish [Beau Eckstein, Business Ownership Coach — '
+                                        'svRg7_BrwXY @ 00:08:53].'},
+                             {'step': 4,
+                              'title': 'Publish the fee waterfall and build the buyer channel',
+                              'action': 'Set a tiered success fee and pair it with proprietary buyer '
+                                        'lists, not just inbound web listings.',
+                              'detail': 'Run 10% of the first million, 8% of the second and 6% of the '
+                                        'third on a waterfall that steps down with deal size [Exit On Your '
+                                        'Terms — Dx_mEuS7ipk @ 00:05:08], and feed listings into owned '
+                                        'databases of individual buyers and family offices [Exit On Your '
+                                        'Terms — Dx_mEuS7ipk @ 00:09:21].'}]},
+              {'heading': 'Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The size lines that decide which seat you occupy do not match from desk to '
+                              'desk. RareBrain [ntmKBtSOxhU @ 00:00:47] puts business brokers on '
+                              'transactions under $5 million in business value at ten to twelve percent '
+                              'commissions, and hands everything from $5 million to roughly $150 million '
+                              'to M&A advisors. The Digital Merchant [NTugAc75tOg @ 00:00:50] draws the '
+                              'broker ceiling much lower, at deals worth less than $2 million, with M&A '
+                              'advisors working seven, eight, and nine figure sales, while admitting some '
+                              'brokerages run well past $2 million and some advisors take smaller deals. '
+                              'Gill Agency [UdqBDl4moqs @ 00:00:18] measures on revenue instead of price: '
+                              'brokers handle Main Street companies at $5 million in revenue or lower, and '
+                              'M&A advisors take $5 million to $50 million or higher. Justin Goodbread '
+                              '[gDql0VQct6A @ 00:15:18], who otherwise sorts the three players by '
+                              'transaction size, flags the overlap directly: a seller in the five, six, or '
+                              'seven million dollar range who thinks the deal is simple may still need an '
+                              'M&A firm, so the size of the business should not dictate the hire. The '
+                              'working takeaway is that no two practitioners publish the same cutoff, so '
+                              'buyer type and complexity settle the borderline cases.',
+                              'Fee math is where the desks split hardest, and it shapes how each role gets '
+                              'paid. CompassPointCapital [bjJIoxsFNY8 @ 00:01:33] calls the double Lehman '
+                              'the industry standard for M&A advisors: 10 percent of the first million, 8 '
+                              'of the second, 6 of the third, then 4 and 2 on the remainder. RareBrain '
+                              '[ntmKBtSOxhU @ 00:02:06] teaches a different double Lehman, 10 percent of '
+                              'the first million, 9 of the second, 8 of the third, averaging out to '
+                              'roughly four to five percent on a $20 million deal. The Digital Merchant '
+                              '[NTugAc75tOg @ 00:03:56] describes broker schedules starting far higher, an '
+                              'illustrative 15 percent on the first million, 10 on the second, and 7 after '
+                              'that. The upfront-fee question splits the same way. Ryan C. Winter '
+                              '[If4qHRijbWg @ 00:02:16] charges a pure success fee at closing, nothing '
+                              'upfront, landing between 8 and 15 percent depending on deal size, while '
+                              'CompassPointCapital says the M&A tier earns its upfront fee because custom '
+                              'marketing plans, mailings, calls, and travel put more cost into executing '
+                              'the plan. RareBrain counters the sticker shock directly: an M&A advisor can '
+                              'work a year of their life for free with no guarantee. Choose a role and you '
+                              'are choosing which of these schedules your clients will accept.',
+                              'The sharpest split is over how much selling a broker actually does and '
+                              'whether buy-side work pays. American Business Intermediaries [LRGkOAsiUdQ @ '
+                              '00:04:06] describes brokers listing many businesses on websites and waiting '
+                              'for the inbound call, deploying very little outbound marketing. The Vant '
+                              'Group [fAVVcCIVQeE @ 00:00:53] calls that picture a misconception, '
+                              'rejecting the broker who puts two pages together, posts them on a website, '
+                              'and does minimum work, and claims to rival investment bankers by bringing '
+                              'white glove treatment to Main Street. Exit On Your Terms [Dx_mEuS7ipk @ '
+                              '00:09:07] says that below roughly $3 million in EBITDA buyers must be '
+                              'reached directly, which is why it keeps a 40,000-person individual buyer '
+                              'database and 4,000 family offices that sit completely off the radar of M&A '
+                              'advisors and investment bankers. On the buy side, Trent Lee, interviewed on '
+                              "Beau Eckstein's channel [svRg7_BrwXY @ 00:25:00], says representing buyers "
+                              'to go find a business is not worth it without a central MLS, so buyers in a '
+                              'free school community source their own deal, then pay for representation '
+                              'because the listing broker hardly ever co-ops. The operator choice is '
+                              'whether your role waits, markets, or builds a buyer list before the first '
+                              'listing ever goes live.'],
+               'table': {'caption': 'Side-by-side playbooks where practitioners split on size, fees, '
+                                    'licensing, and go-to-market',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Where the business broker ceiling actually sits',
+                                   'Brokers work transactions under $5 million in business value and '
+                                   'charge ten to twelve percent commissions.',
+                                   'Brokers typically work deals under $2 million while M&A advisors '
+                                   'handle seven, eight, and nine figure sales.',
+                                   'RareBrain ([ntmKBtSOxhU @ 00:00:47]); The Digital Merchant '
+                                   '([NTugAc75tOg @ 00:00:50])'],
+                                  ['Which earnings yardstick defines the lane you work',
+                                   "Brokers look at cash flow or seller's discretionary earnings, while "
+                                   'M&A advisors work with EBITDA.',
+                                   'Main Street means entrepreneurial rather than strategic or synergistic '
+                                   'buyers, though an M&A deal can run as low as a few hundred thousand '
+                                   'dollars.',
+                                   'Gill Agency ([UdqBDl4moqs @ 00:00:46]); Pacific Mergers and '
+                                   'Acquisitions Inc. ([KZt-Qc2TpU4 @ 00:01:07])'],
+                                  ['Which double Lehman schedule you quote to sellers',
+                                   '10 percent of the first million, 8 of the second, 6 of the third, then '
+                                   '4 and 2 on the remainder.',
+                                   '10 percent of the first million, 9 of the second, 8 of the third, '
+                                   'averaging four to five percent on $20 million.',
+                                   'CompassPointCapital ([bjJIoxsFNY8 @ 00:01:33]); RareBrain '
+                                   '([ntmKBtSOxhU @ 00:02:06])'],
+                                  ['Whether you charge anything before the deal closes',
+                                   'Success fee only, paid at closing with nothing upfront, varying '
+                                   'between 8 and 15 percent by deal size.',
+                                   'Upfront retainer, valuation, or work fee of maybe $5,000 to $15,000, '
+                                   'sometimes plus a monthly fee credited back at close.',
+                                   'Ryan C. Winter, Business Broker ([If4qHRijbWg @ 00:02:16]); Exit On '
+                                   'Your Terms ([Dx_mEuS7ipk @ 00:05:21])'],
+                                  ['How licensing applies to the title you choose',
+                                   'In Florida, with narrow exceptions, anyone paid to negotiate a '
+                                   'business sale needs an active real estate license.',
+                                   'Many lower middle market advisors are not required to be licensed, and '
+                                   'much of it remains gray area subject to interpretation.',
+                                   'Ryan C. Winter, Business Broker ([If4qHRijbWg @ 00:01:09]); Justin '
+                                   'Goodbread ([gDql0VQct6A @ 00:08:17])'],
+                                  ['How much outbound selling a broker actually does',
+                                   'List many businesses on websites, wait for the inbound call, and '
+                                   'deploy very little outbound marketing effort.',
+                                   'Apply M&A professionalism to Main Street deals: pitch decks, '
+                                   'valuation, systems, CRM, outreach, automation, and AI.',
+                                   'American Business Intermediaries ([LRGkOAsiUdQ @ 00:04:06]); Beau '
+                                   'Eckstein, Business Ownership Coach ([svRg7_BrwXY @ 00:06:08])'],
+                                  ['Run a structured auction or build a marketplace',
+                                   'Lincoln International runs competitive auctions that push prices '
+                                   'higher, with the trade-off of a slower sale.',
+                                   'Below roughly $3 to $5 million in EBITDA, create a marketplace through '
+                                   'ads, internal network, and industry resources.',
+                                   'The Digital Merchant ([NTugAc75tOg @ 00:12:37]); Exit On Your Terms '
+                                   '([Dx_mEuS7ipk @ 00:03:40])']]}},
+              {'heading': 'Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The most expensive mistake Exit On Your Terms [Dx_mEuS7ipk @ 00:06:16] '
+                              "reports is a seller too small for the advisor's marketplace paying upfront "
+                              'fees anyway, because the advisor still benefits from those fees and may '
+                              'take the client while not being geared to deliver the outcome; from the mid '
+                              'market up to investment banks that can mean $150,000 to $250,000 plus just '
+                              'to get going. The same firm warns that shops used only to structured '
+                              'auctions fail companies under $3 million to $5 million in EBITDA because '
+                              'most private equity groups will not be interested, and that putting a '
+                              'category A business in front of a category C advisor is shooting yourself '
+                              'in the foot. The Digital Merchant [NTugAc75tOg @ 00:04:45] flags the '
+                              'sibling trap: an M&A upfront fee in the $15,000 to $25,000 range that is '
+                              'not refundable if the business never sells, unlike the no-win, no-fee '
+                              'broker arrangement. CompassPointCapital [bjJIoxsFNY8 @ 00:02:11] puts '
+                              'investment-banker retainers at $5,000 to $10,000 a month with success-fee '
+                              'minimums of $1 million to $2 million at large banks. Justin Goodbread '
+                              '[gDql0VQct6A @ 00:04:00] notes even brokers sometimes charge an upfront fee '
+                              'when the seller has a mess that needs positioning.',
+                              'The broker economics check is brutal. American Business Intermediaries '
+                              '[LRGkOAsiUdQ @ 00:04:28] puts the nationwide success rate for selling '
+                              'through a business broker at about 20 percent, which is why the surviving '
+                              'model is to list as many businesses as possible because many will not sell. '
+                              'Trent Lee [svRg7_BrwXY @ 00:07:02], with over 600 transactions closed, '
+                              'blames two parties for the unsold pile: the broker who mispriced the '
+                              'listing so it fails basic market multiples and DSCR, and the seller who '
+                              'built a business dependent on the owner. Trent Lee [svRg7_BrwXY @ 00:30:32] '
+                              'estimates about 50 percent of listings will not qualify for an SBA loan, '
+                              'and the number one reason is sellers being dishonest on their tax returns; '
+                              'the math is that $100,000 of unreported income or stuffed personal expenses '
+                              'at a 28 percent bracket saves $28,000 in tax but costs $350,000 in '
+                              'valuation at a three and a half multiple. CompassPointCapital [2KA0GQ8fBkc '
+                              '@ 00:00:39] adds the capacity constraint: a solo broker needs seven to ten '
+                              'listings at a minimum to make a living, which leaves little time on each '
+                              'client and pushes marketing toward one-page flyers and fill-in-the-blanks '
+                              'templates. Price it wrong or carry dirty books and the listing joins the '
+                              'unsold majority.',
+                              'The ramp into the role itself is a failure point. Trent Lee [svRg7_BrwXY @ '
+                              '00:16:30] tells would-be brokers not to enter until they have basic '
+                              'experience plus 12 to 18 months of runway to go with no income without '
+                              'getting desperate, and says a 24-year-old lacks the credibility to guide a '
+                              '65-year-old putting an entire retirement on the sale; Trent Lee got '
+                              'certified in business appraisal and trained as an SBA underwriter before '
+                              'the first deal. Luke Fox [7ABdy0hf9u8 @ 00:04:58] reports sell-side work '
+                              'running 100-plus hour weeks under time pressure with lawyers and '
+                              'stakeholders scrutinizing every step, and says bids must be screened for '
+                              'whether the bidder can actually complete or will fall over at the last '
+                              'minute because they cannot raise the money. On the buy side, POTOMAC M&A '
+                              '[-mNiPaYyDro @ 00:09:34] recounts Jennifer, a SaaS founder who bought a '
+                              'competitor 70 percent of her size, expected the legacy customers to '
+                              'migrate, and instead ended up running two separate businesses with a '
+                              'culture clash, a living dumpster fire that ate a couple of years of '
+                              'management time. Objective, Investment Banking & Valuation [Ru1cmBnC5Rc @ '
+                              '00:00:51] backs the warning: companies that acquire for the sake of '
+                              'acquiring are not successful.'],
+               'table': {'caption': 'Firsthand traps, the numbers behind them, and the countermoves '
+                                    'practitioners use',
+                         'headers': ['Trap',
+                                     'Firsthand Evidence',
+                                     'Practitioner Countermove',
+                                     'Expert Source'],
+                         'rows': [['Paying upfront fees to a mismatched advisor',
+                                   'Mid market through investment banks can run $150,000 to $250,000 plus '
+                                   'just to get going for a $2 million or $10 million company.',
+                                   'Match the intermediary to deal size, complexity, and likely buyer '
+                                   'before any check is written.',
+                                   'Exit On Your Terms ([Dx_mEuS7ipk @ 00:06:27])'],
+                                  ['Joining the unsold majority of broker listings',
+                                   'Selling a business through a business broker succeeds about 20 percent '
+                                   'of the time nationwide.',
+                                   'Evaluate the broker before engaging, since most brokers enter the '
+                                   'industry with little or no M&A experience.',
+                                   'American Business Intermediaries ([LRGkOAsiUdQ @ 00:04:28])'],
+                                  ['Hidden income on seller tax returns',
+                                   '$100,000 hidden at a 28 percent bracket saves $28,000 in tax but costs '
+                                   '$350,000 at a three and a half multiple.',
+                                   'Use seller notes, the right deal structure, or earnouts outside the '
+                                   'SBA when returns cannot support a loan.',
+                                   'Beau Eckstein, Business Ownership Coach ([svRg7_BrwXY @ 00:32:39])'],
+                                  ['Owners who are the entire workforce',
+                                   'Five brothers, no employees, $1.5 million top line, four of five '
+                                   'burned out, and little sellable business left.',
+                                   'Back into the cost of replacing owners at fair market wages, take a '
+                                   'very small down payment, and earn out the rest.',
+                                   'Beau Eckstein, Business Ownership Coach ([svRg7_BrwXY @ 00:29:08])'],
+                                  ['A price quoted before anyone sees returns',
+                                   'A number pitched before the returns are reviewed is a sales pitch, not '
+                                   'a valuation.',
+                                   'Ask how they will value the business, how they will find and screen '
+                                   'buyers, and how often they report.',
+                                   'Ryan C. Winter, Business Broker ([If4qHRijbWg @ 00:01:59])'],
+                                  ['Telling sellers what they want to hear',
+                                   'A seller wants $10 million for a business worth four and expects the '
+                                   'broker to hide the warts.',
+                                   'Deliver the bad news up front and find what is broken that needs '
+                                   'improvement before going to market.',
+                                   'The Vant Group ([fAVVcCIVQeE @ 00:00:21])'],
+                                  ['Buying for excitement instead of strategy',
+                                   'A competitor acquisition left a SaaS founder running two separate '
+                                   'businesses with a culture clash and years of cleanup.',
+                                   'Define exactly what the buyer is not looking for and aggressively '
+                                   'disqualify the universe of distractions.',
+                                   'POTOMAC M&A ([-mNiPaYyDro @ 00:08:28]); Objective, Investment Banking '
+                                   '& Valuation ([Ru1cmBnC5Rc @ 00:01:18])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Four Checks Before You Sign an Engagement or Take a Listing',
+                           'body': 'Each check traces to a failure a practitioner watched happen '
+                                   'firsthand; clear all four before the engagement letter goes out.',
+                           'items': ['Confirm the company fits the buyer pool you can reach: under $3 '
+                                     'million to $5 million in EBITDA most private equity groups will not '
+                                     'be interested, so a structured auction alone will not sell it [Exit '
+                                     'On Your Terms — Dx_mEuS7ipk @ 00:03:26].',
+                                     "Build your own credit memo, run DSCR, and factor in the buyer's "
+                                     'livable wage before the listing goes to market [Beau Eckstein, '
+                                     'Business Ownership Coach — svRg7_BrwXY @ 00:08:53].',
+                                     'Never quote a price before you have seen the returns, because that '
+                                     'is a sales pitch, not a valuation [Ryan C. Winter, Business Broker — '
+                                     'If4qHRijbWg @ 00:01:59].',
+                                     'Screen every bid for whether the buyer can actually complete, has '
+                                     'the backing and the experience, or will fall over at the last minute '
+                                     '[Luke Fox — 7ABdy0hf9u8 @ 00:04:32].']}}],
+ 'pull_quote': '"If you fit into category A, you don\'t want to go into category B and certainly not '
+               "category C and vice versa because the parties aren't going to be equipped, you're shooting "
+               'yourself in the foot without realizing it." — Exit On Your Terms (Dx_mEuS7ipk @ 00:10:20).',
+ 'diagram_id': 'diag-04',
+ 'action_checklist': ['Pick your lane by who buys, not by title: individuals not using corporate money '
+                      'point to a broker, while buying syndicates, hedge funds, and international buyers '
+                      'point to M&A advisors or investment bankers [Justin Goodbread — gDql0VQct6A @ '
+                      '00:15:02].',
+                      'Publish a waterfall success fee such as 10 percent of the first million, 8 percent '
+                      'of the second, and 6 percent of the third, stepping down with deal size [Exit On '
+                      'Your Terms — Dx_mEuS7ipk @ 00:05:08].',
+                      'Check whether your state requires a real estate license to be paid for negotiating '
+                      'a business sale, and expect sellers to look your name up before they sign [Ryan C. '
+                      'Winter, Business Broker — If4qHRijbWg @ 00:01:09].',
+                      'Hold IBBA for Main Street work and add M&A Source as a joint membership: roughly '
+                      '600 dollars that includes Vertical IQ, which runs 1,100 a year on its own, plus a '
+                      'deal market with about 40 private equity firms [Business Broker Crowd Call — '
+                      'LFYHvuRB96I @ 00:00:25] [Business Broker Crowd Call — LFYHvuRB96I @ 00:02:19].',
+                      'Get certified in business appraisal and learn SBA underwriting before your first '
+                      'listing so every engagement is priced to market multiples and DSCR [Beau Eckstein, '
+                      'Business Ownership Coach — svRg7_BrwXY @ 00:08:37].',
+                      'Vet inbound buyers on lingo and paperwork: recast, EBITDA versus SDE, add-backs, '
+                      'DSCR, proof of funds, a pre-qualification letter, a buy box, and a buyer box [Beau '
+                      'Eckstein, Business Ownership Coach — svRg7_BrwXY @ 00:14:02].'],
+ 'statutory_citations': [{'title': 'Exit On Your Terms — Business Broker vs M&A Advisor vs Investment '
+                                   'Banker: Which Advisor Do You Actually Need? [00:06:16]',
+                          'url': 'https://www.youtube.com/watch?v=Dx_mEuS7ipk&t=376s',
+                          'relevance': 'Primary practitioner testimony on upfront-fee risk when a seller '
+                                       'hires an advisor geared to a larger marketplace.'},
+                         {'title': 'CompassPointCapital — What do brokers and M&A advisors charge for '
+                                   'fees? [00:01:33]',
+                          'url': 'https://www.youtube.com/watch?v=bjJIoxsFNY8&t=93s',
+                          'relevance': 'Primary practitioner testimony on the double Lehman success fee '
+                                       'and upfront-fee rules by intermediary tier.'},
+                         {'title': 'Beau Eckstein, Business Ownership Coach — Business Broker Insider: Buy '
+                                   'Side & Sell Side Secrets #TrentLee [00:32:39]',
+                          'url': 'https://www.youtube.com/watch?v=svRg7_BrwXY&t=1959s',
+                          'relevance': 'Primary practitioner testimony on how hidden income on tax returns '
+                                       'destroys valuation and SBA eligibility.'},
+                         {'title': 'RareBrain — Differences between Business Brokers, M&A Advisors, '
+                                   'Investment Bankers & Exit Planners (EP2) [00:02:06]',
+                          'url': 'https://www.youtube.com/watch?v=ntmKBtSOxhU&t=126s',
+                          'relevance': 'Primary practitioner testimony on the Lehman and double Lehman '
+                                       'formulas and M&A advisor risk.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'Dx_mEuS7ipk',
+                       'title': 'Business Broker vs M&A Advisor vs Investment Banker: Which Advisor Do You '
+                                'Actually Need?',
+                       'channel': 'Exit On Your Terms',
+                       'author': 'Exit On Your Terms',
+                       'text': "If you fit into category A, you don't want to go into category B and "
+                               "certainly not category C and vice versa because the parties aren't going "
+                               "to be equipped, you're shooting yourself in the foot without realizing it.",
+                       'tip': "If you fit into category A, you don't want to go into category B and "
+                              "certainly not category C and vice versa because the parties aren't going to "
+                              "be equipped, you're shooting yourself in the foot without realizing it.",
+                       'timestamp': 620,
+                       'timestamp_seconds': 620,
+                       'timestamp_label': '[00:10:20]',
+                       'url': 'https://www.youtube.com/watch?v=Dx_mEuS7ipk&t=620s',
+                       'markdown': '[00:10:20](https://www.youtube.com/watch?v=Dx_mEuS7ipk&t=620s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '2KA0GQ8fBkc',
+                       'title': 'What is a Business Broker vs. M&A Advisor?',
+                       'channel': 'CompassPointCapital',
+                       'author': 'CompassPointCapital',
+                       'text': 'Business brokers generally work on their own, they typically need to make '
+                               'a living, they need seven to ten listings at a minimum, which means that '
+                               "they don't have a lot of time on each client.",
+                       'tip': 'Business brokers generally work on their own, they typically need to make a '
+                              'living, they need seven to ten listings at a minimum, which means that they '
+                              "don't have a lot of time on each client.",
+                       'timestamp': 39,
+                       'timestamp_seconds': 39,
+                       'timestamp_label': '[00:00:39]',
+                       'url': 'https://www.youtube.com/watch?v=2KA0GQ8fBkc&t=39s',
+                       'markdown': '[00:00:39](https://www.youtube.com/watch?v=2KA0GQ8fBkc&t=39s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ntmKBtSOxhU',
+                       'title': 'Differences between Business Brokers, M&A Advisors, Investment Bankers & '
+                                'Exit Planners (EP2)',
+                       'channel': 'RareBrain',
+                       'author': 'RareBrain',
+                       'text': 'Keep in mind that my M&A peers take a lot of risk, essentially as an M&A '
+                               'advisor you could work a year of your life for free with no guarantee.',
+                       'tip': 'Keep in mind that my M&A peers take a lot of risk, essentially as an M&A '
+                              'advisor you could work a year of your life for free with no guarantee.',
+                       'timestamp': 140,
+                       'timestamp_seconds': 140,
+                       'timestamp_label': '[00:02:20]',
+                       'url': 'https://www.youtube.com/watch?v=ntmKBtSOxhU&t=140s',
+                       'markdown': '[00:02:20](https://www.youtube.com/watch?v=ntmKBtSOxhU&t=140s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'LRGkOAsiUdQ',
+                       'title': 'Difference Between an Investment Banker, M&A Advisor, & Business Broker',
+                       'channel': 'American Business Intermediaries',
+                       'author': 'American Business Intermediaries',
+                       'text': 'The success rate for selling a business through a business broker is about '
+                               '20% nationwide, therefore the successful business model for the business '
+                               'broker is to list as many businesses as possible because many will not '
+                               'sell.',
+                       'tip': 'The success rate for selling a business through a business broker is about '
+                              '20% nationwide, therefore the successful business model for the business '
+                              'broker is to list as many businesses as possible because many will not '
+                              'sell.',
+                       'timestamp': 268,
+                       'timestamp_seconds': 268,
+                       'timestamp_label': '[00:04:28]',
+                       'url': 'https://www.youtube.com/watch?v=LRGkOAsiUdQ&t=268s',
+                       'markdown': '[00:04:28](https://www.youtube.com/watch?v=LRGkOAsiUdQ&t=268s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'NTugAc75tOg',
+                       'title': 'M&A Advisor vs Business Broker: Which One Should You Use to Sell Your '
+                                'Business?',
+                       'channel': 'The Digital Merchant',
+                       'author': 'The Digital Merchant',
+                       'text': 'One thing you will see with M&A advisors that you might not see with '
+                               'business brokers is an upfront fee, and you can probably expect it to be '
+                               'anywhere in the range of $15 to $25,000.',
+                       'tip': 'One thing you will see with M&A advisors that you might not see with '
+                              'business brokers is an upfront fee, and you can probably expect it to be '
+                              'anywhere in the range of $15 to $25,000.',
+                       'timestamp': 268,
+                       'timestamp_seconds': 268,
+                       'timestamp_label': '[00:04:28]',
+                       'url': 'https://www.youtube.com/watch?v=NTugAc75tOg&t=268s',
+                       'markdown': '[00:04:28](https://www.youtube.com/watch?v=NTugAc75tOg&t=268s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'If4qHRijbWg',
+                       'title': 'Business Broker vs. M&A Advisor: Which Do You Need to Sell Your Business?',
+                       'channel': 'Ryan C. Winter, Business Broker',
+                       'author': 'Ryan C. Winter, Business Broker',
+                       'text': 'One warning sign, whatever the title, a price quoted before anyone has '
+                               'seen your returns is a sales pitch, not a valuation.',
+                       'tip': 'One warning sign, whatever the title, a price quoted before anyone has seen '
+                              'your returns is a sales pitch, not a valuation.',
+                       'timestamp': 119,
+                       'timestamp_seconds': 119,
+                       'timestamp_label': '[00:01:59]',
+                       'url': 'https://www.youtube.com/watch?v=If4qHRijbWg&t=119s',
+                       'markdown': '[00:01:59](https://www.youtube.com/watch?v=If4qHRijbWg&t=119s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'fAVVcCIVQeE',
+                       'title': 'Business Brokers Vs M&A Advisors | The Vant Group',
+                       'channel': 'The Vant Group',
+                       'author': 'The Vant Group',
+                       'text': "We don't operate that way, we rival investment bankers, we take what they "
+                               'do best and we bring it down to the Main Street.',
+                       'tip': "We don't operate that way, we rival investment bankers, we take what they "
+                              'do best and we bring it down to the Main Street.',
+                       'timestamp': 53,
+                       'timestamp_seconds': 53,
+                       'timestamp_label': '[00:00:53]',
+                       'url': 'https://www.youtube.com/watch?v=fAVVcCIVQeE&t=53s',
+                       'markdown': '[00:00:53](https://www.youtube.com/watch?v=fAVVcCIVQeE&t=53s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'bjJIoxsFNY8',
+                       'title': 'What do brokers and M&A advisors charge for fees?',
+                       'channel': 'CompassPointCapital',
+                       'author': 'CompassPointCapital',
+                       'text': 'The double Lehman is 10% of the first million, 8% of the second million, '
+                               '6% of the third, four and then two for the remainder, and that is the '
+                               'purchase price.',
+                       'tip': 'The double Lehman is 10% of the first million, 8% of the second million, 6% '
+                              'of the third, four and then two for the remainder, and that is the purchase '
+                              'price.',
+                       'timestamp': 93,
+                       'timestamp_seconds': 93,
+                       'timestamp_label': '[00:01:33]',
+                       'url': 'https://www.youtube.com/watch?v=bjJIoxsFNY8&t=93s',
+                       'markdown': '[00:01:33](https://www.youtube.com/watch?v=bjJIoxsFNY8&t=93s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'gDql0VQct6A',
+                       'title': 'The Business Broker, M&A Advisor, or Investment Banker',
+                       'channel': 'Justin Goodbread',
+                       'author': 'Justin Goodbread',
+                       'text': "If you're on that borderline area in that five, six, seven million dollar "
+                               "range but you think you're simple, you still may need to hire an M&A "
+                               "advisor firm, so don't let the size of the business dictate that.",
+                       'tip': "If you're on that borderline area in that five, six, seven million dollar "
+                              "range but you think you're simple, you still may need to hire an M&A "
+                              "advisor firm, so don't let the size of the business dictate that.",
+                       'timestamp': 918,
+                       'timestamp_seconds': 918,
+                       'timestamp_label': '[00:15:18]',
+                       'url': 'https://www.youtube.com/watch?v=gDql0VQct6A&t=918s',
+                       'markdown': '[00:15:18](https://www.youtube.com/watch?v=gDql0VQct6A&t=918s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'LFYHvuRB96I',
+                       'title': 'Unlocking Value: M&A Source vs  IBBA Memberships for Business Brokers',
+                       'channel': 'Business Broker Crowd Call',
+                       'author': 'Business Broker Crowd Call',
+                       'text': "At M&A Source conferences there's a deal market where there's usually "
+                               'about 40 private equity firms that are all looking either for platform '
+                               'companies or add-ons to existing platforms.',
+                       'tip': "At M&A Source conferences there's a deal market where there's usually about "
+                              '40 private equity firms that are all looking either for platform companies '
+                              'or add-ons to existing platforms.',
+                       'timestamp': 139,
+                       'timestamp_seconds': 139,
+                       'timestamp_label': '[00:02:19]',
+                       'url': 'https://www.youtube.com/watch?v=LFYHvuRB96I&t=139s',
+                       'markdown': '[00:02:19](https://www.youtube.com/watch?v=LFYHvuRB96I&t=139s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '-mNiPaYyDro',
+                       'title': 'Buy-Side M&A 101: Should You Do an Acquisition? | Buy-Side Masterclass '
+                                'Moment',
+                       'channel': 'POTOMAC M&A',
+                       'author': 'POTOMAC M&A',
+                       'text': 'What I am going to tell you throughout the course of this series is that '
+                               'there are far more bad reasons to do an acquisition than there are good.',
+                       'tip': 'What I am going to tell you throughout the course of this series is that '
+                              'there are far more bad reasons to do an acquisition than there are good.',
+                       'timestamp': 340,
+                       'timestamp_seconds': 340,
+                       'timestamp_label': '[00:05:40]',
+                       'url': 'https://www.youtube.com/watch?v=-mNiPaYyDro&t=340s',
+                       'markdown': '[00:05:40](https://www.youtube.com/watch?v=-mNiPaYyDro&t=340s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'svRg7_BrwXY',
+                       'title': 'Business Broker Insider: Buy Side & Sell Side Secrets #TrentLee',
+                       'channel': 'Beau Eckstein, Business Ownership Coach',
+                       'author': 'Beau Eckstein, Business Ownership Coach',
+                       'text': 'If that business was sold for a three and a half multiple, that $28,000 '
+                               'they saved on taxes cost them $350,000 in valuation.',
+                       'tip': 'If that business was sold for a three and a half multiple, that $28,000 '
+                              'they saved on taxes cost them $350,000 in valuation.',
+                       'timestamp': 1959,
+                       'timestamp_seconds': 1959,
+                       'timestamp_label': '[00:32:39]',
+                       'url': 'https://www.youtube.com/watch?v=svRg7_BrwXY&t=1959s',
+                       'markdown': '[00:32:39](https://www.youtube.com/watch?v=svRg7_BrwXY&t=1959s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'svRg7_BrwXY',
+                       'title': 'Business Broker Insider: Buy Side & Sell Side Secrets #TrentLee',
+                       'channel': 'Beau Eckstein, Business Ownership Coach',
+                       'author': 'Beau Eckstein, Business Ownership Coach',
+                       'text': "For sure right now it's not worth trying to represent buyers to go out and "
+                               'find a business, so I have the buyers go out and find their own deal '
+                               "because that's the biggest time suck.",
+                       'tip': "For sure right now it's not worth trying to represent buyers to go out and "
+                              'find a business, so I have the buyers go out and find their own deal '
+                              "because that's the biggest time suck.",
+                       'timestamp': 1500,
+                       'timestamp_seconds': 1500,
+                       'timestamp_label': '[00:25:00]',
+                       'url': 'https://www.youtube.com/watch?v=svRg7_BrwXY&t=1500s',
+                       'markdown': '[00:25:00](https://www.youtube.com/watch?v=svRg7_BrwXY&t=1500s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '7ABdy0hf9u8',
+                       'title': "Buy Side vs Sell Side | What's the difference when you work on mergers "
+                                'and acquisitions (M&A)?',
+                       'channel': 'Luke Fox',
+                       'author': 'Luke Fox',
+                       'text': "Working on the sell side you're going to analyze those bids to determine "
+                               "what's the odds that this person can complete on the transaction, do they "
+                               'have the backing, do they have the experience.',
+                       'tip': "Working on the sell side you're going to analyze those bids to determine "
+                              "what's the odds that this person can complete on the transaction, do they "
+                              'have the backing, do they have the experience.',
+                       'timestamp': 272,
+                       'timestamp_seconds': 272,
+                       'timestamp_label': '[00:04:32]',
+                       'url': 'https://www.youtube.com/watch?v=7ABdy0hf9u8&t=272s',
+                       'markdown': '[00:04:32](https://www.youtube.com/watch?v=7ABdy0hf9u8&t=272s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Ru1cmBnC5Rc',
+                       'title': 'Buy-Side M&A Advisory',
+                       'channel': 'Objective, Investment Banking & Valuation',
+                       'author': 'Objective, Investment Banking & Valuation',
+                       'text': 'Most companies that just want to make acquisitions for the sake of making '
+                               'acquisitions are not successful.',
+                       'tip': 'Most companies that just want to make acquisitions for the sake of making '
+                              'acquisitions are not successful.',
+                       'timestamp': 51,
+                       'timestamp_seconds': 51,
+                       'timestamp_label': '[00:00:51]',
+                       'url': 'https://www.youtube.com/watch?v=Ru1cmBnC5Rc&t=51s',
+                       'markdown': '[00:00:51](https://www.youtube.com/watch?v=Ru1cmBnC5Rc&t=51s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'UdqBDl4moqs',
+                       'title': 'What Is The Difference Between A Business Broker And An M&A Advisor',
+                       'channel': 'Gill Agency',
+                       'author': 'Gill Agency',
+                       'text': 'M&A advisors also have a relationship with strategic buyers, private '
+                               'equity firms, family offices, and holding companies, and business brokers '
+                               'will look for cash flow of the business or SDE.',
+                       'tip': 'M&A advisors also have a relationship with strategic buyers, private equity '
+                              'firms, family offices, and holding companies, and business brokers will '
+                              'look for cash flow of the business or SDE.',
+                       'timestamp': 46,
+                       'timestamp_seconds': 46,
+                       'timestamp_label': '[00:00:46]',
+                       'url': 'https://www.youtube.com/watch?v=UdqBDl4moqs&t=46s',
+                       'markdown': '[00:00:46](https://www.youtube.com/watch?v=UdqBDl4moqs&t=46s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'KZt-Qc2TpU4',
+                       'title': 'Main Street or M&A',
+                       'channel': 'Pacific Mergers and Acquisitions Inc.',
+                       'author': 'Pacific Mergers and Acquisitions Inc.',
+                       'text': 'A Main Street transaction could certainly be in the multi-million dollar '
+                               'range as well, and conversely an M&A transaction could be relatively small '
+                               'and as low as a few hundred thousand dollars.',
+                       'tip': 'A Main Street transaction could certainly be in the multi-million dollar '
+                              'range as well, and conversely an M&A transaction could be relatively small '
+                              'and as low as a few hundred thousand dollars.',
+                       'timestamp': 67,
+                       'timestamp_seconds': 67,
+                       'timestamp_label': '[00:01:07]',
+                       'url': 'https://www.youtube.com/watch?v=KZt-Qc2TpU4&t=67s',
+                       'markdown': '[00:01:07](https://www.youtube.com/watch?v=KZt-Qc2TpU4&t=67s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'}]}

@@ -1,470 +1,470 @@
 {
   "workbook_id": "wb-009-million-dollar-lead-generation",
   "volume_id": "vol-009-million-dollar-lead-generation",
-  "title": "Million-Dollar Lead Generation — Operator Companion Workbook",
-  "subtitle": "6 Printable Operator Worksheets for Enterprise Deal Underwriting, ABM Signal Orchestration, Qualified-Opportunity Economics, Outreach Controls, Delivery Automation, and Small-Team Launch Readiness",
+  "title": "Million-Dollar Lead Generation — Practitioner Testimony Operator Workbook",
+  "subtitle": "Field worksheets for defining the buyer by the pain you fix, building the account-based operating system, running warm enterprise plays, wiring signal-led outbound, publishing executive thought leadership, and sourcing proprietary M&A deal flow",
   "worksheets": [
     {
       "worksheet_id": "ws-01",
       "number": 1,
-      "title": "Opportunity, Vertical Underwriting & Counterparty Qualification",
-      "purpose": "Select an enterprise demand-generation niche where observable buying signals, reachable decision makers, and client delivery capacity support repeatable opportunity creation. Separate prospective client contract values from agency revenue, and document the evidence required before accepting an account into the operating pipeline.",
-      "chapter_ref": "Q1, Q2, Q6",
+      "title": "Buyer Definition and the ABM Operating System",
+      "purpose": "Define the buyer by the pain you fix, cut the market down to accounts with active, budgeted, urgent pain, and decide whether a joint sales-and-marketing ABM operating system fits your deal size before spending on campaigns, lists, or advertising.",
+      "chapter_ref": "Q1-Q2",
       "instructions": [
-        "Choose one vertical and one buying problem before purchasing data. Document the expected enterprise procurement sequence, incumbent alternatives, security review requirements, and reasons an economic buyer would authorize a discovery meeting during the next two quarters.",
-        "Underwrite the client as carefully as the target account. Review delivery references, existing pipeline, available account executives, cash collection history, and authority to sign your services agreement. Reject assignments whose promised outcomes exceed the client's fulfillment capacity.",
-        "Build a small evidence-backed account universe rather than buying an indiscriminate contact list. For every proposed account, capture source date, buying trigger, relevant role, geographic restrictions, and exclusions arising from existing customer relationships or active opportunities.",
-        "Define a qualified opportunity through observable acceptance criteria that both parties can inspect. Specify buyer involvement, problem fit, realistic purchasing process, required meeting evidence, and duplicate treatment before quoting any opportunity-based fee to the client.",
-        "Score commercial attractiveness and execution friction separately. Use the completed evidence record to choose a narrow pilot, establish client concentration limits, and assign an accountable owner for every unresolved underwriting question before outreach begins."
+        "Start from the problem and the outcome, never from the product or a job title, and write every answer in the buyer's own words.",
+        "Apply company-level filters before persona work, then score open deals so the scorecard actually disqualifies pipeline instead of validating it.",
+        "Keep lists small and segmented: hold segments to manageable sizes, contact more than one person per account, and cap daily sends per box.",
+        "Test ABM fit against contract value, CFO sign-off, and list length, and walk away when any walk-away condition applies.",
+        "Review progress weekly at the account level with sales and marketing together, and diagnose every stall as either a distribution or a content problem."
       ],
       "fields": [
         {
-          "name": "Vertical thesis and enterprise buying problem",
+          "name": "problem_statement",
           "type": "textarea",
-          "prompt": "Describe the chosen vertical, expensive operating problem, enterprise purchase category, and observable trigger. Explain why the target buyer would consider a meeting without relying on unsupported savings claims or generic personalization.",
-          "example": "Target industrial manufacturers with 2,000–15,000 employees replacing fragmented maintenance software. A new plant acquisition or published modernization program supplies the trigger. The client sells deployments worth approximately $1,000,000; our agency earns retainers and accepted-opportunity fees, never the client's implementation contract value."
+          "prompt": "Write the core problem your offer fixes in the buyer's own language, not as a product feature or job title. Name the measurable burden, such as tools juggled or hours lost each month, and state who carries it daily.",
+          "example": "A social-reporting SaaS stopped targeting a job title and redefined its buyer as someone 'juggling 10 tools… 20 hours a month.' The product did not change; the definition of who needed it did. That shift produced a reported 32% conversion lift and a 20% shorter sales cycle [OGONJO Workbooks — ZSqgCrydlAo @ 00:04:50]."
         },
         {
-          "name": "Client identity, authority, and payment capacity",
+          "name": "five_whys_chain",
           "type": "textarea",
-          "prompt": "Identify the contracting entity, authorized signer, billing contact, payment method, and evidence of operating capacity. Record how you verified authority and what collection protection applies before the delivery pod starts work.",
-          "example": "Northstar Maintenance Software LLC signs through its authorized chief operating officer. Finance confirms the purchase order and an ACH mandate. Two reference calls validate completed enterprise implementations. The agreement requires the first $7,500 retainer before account research and pauses new delivery after documented payment default."
+          "prompt": "Run the Five Whys on your problem statement. Ask 'why does that matter?' five times in sequence, record each answer on its own line, and stop only when you reach the emotional reason the buyer will finally act.",
+          "example": "Why 1: the team juggles 10 tools. Why 2: reports take 20 hours a month. Why 3: those hours come out of client work. Why 4: deadlines slip. Why 5: the manager looks unprepared in front of leadership. That last answer is the emotional trigger to build messaging on [OGONJO Workbooks — ZSqgCrydlAo @ 00:08:35]."
         },
         {
-          "name": "Account universe and exclusion boundaries",
+          "name": "company_level_icp_filter",
           "type": "textarea",
-          "prompt": "Specify account size, industry, location, technology context, and exclusion rules. Quantify the reachable universe after removing existing customers, active opportunities, prohibited territories, and accounts without a defensible reason for contact.",
-          "example": "Begin with 240 manufacturers identified through company filings and licensed firmographic data. Remove 35 existing customers, 25 active client opportunities, and 20 out-of-territory accounts. The remaining 160 accounts form the research universe; the first pilot uses 40 accounts with dated modernization evidence."
+          "prompt": "List the company-level filters that must be true before any persona work begins. Include the pain signal, budget evidence, and urgency marker for each filter, and explain why you are not jumping straight into personas or titles.",
+          "example": "Myk Pono warns that 'very often companies just jump in to create personas and an ideal customer profile, and I think it's wrong' [Myk Pono — Y1u-ngsyH60 @ 00:00:47]. Filter first: active pain, budget, urgency. Only accounts passing all three move to persona mapping. Note that revenue data is unreliable for companies that do not publish it [Hunter — 35H3HVb8ymw @ 00:28:02]."
         },
         {
-          "name": "Buying committee and access hypothesis",
+          "name": "icp_scorecard_criteria",
           "type": "textarea",
-          "prompt": "Map the operational sponsor, economic buyer, technical reviewer, procurement contact, and likely blocker. State which roles must participate initially and which introductions the client must secure after accepting an opportunity.",
-          "example": "The maintenance director owns the operating problem, the chief operating officer controls program funding, and enterprise IT reviews integrations. Procurement enters after technical fit. An initial meeting requires the director or a delegated program owner; the client account executive must secure executive sponsorship within 30 days."
+          "prompt": "Define 5 to 7 scorecard criteria for your ICP, assign each a point value, and set the cutoff score. Then run the scorecard against every open deal and record what percentage falls below the cutoff and gets disqualified.",
+          "example": "Score 5 to 7 criteria and expect to disqualify 20 to 30% of open deals. If the scorecard cuts nothing, it is validating pipeline rather than filtering it. A strong ICP shows roughly a three-times win-rate gap between high and low scorers, so check both bands against closed outcomes [OGONJO Workbooks — 4S63IHiDhTk @ 00:07:53]."
         },
         {
-          "name": "Signal provenance and freshness standard",
+          "name": "list_size_and_segmentation",
           "type": "textarea",
-          "prompt": "Record each trigger's source, observation date, account match, permitted use, and expiration rule. Distinguish verified company events from inferred intent, and identify evidence that would invalidate the proposed outreach hypothesis.",
-          "example": "A manufacturer announced a plant acquisition 18 days ago on its investor-relations website. Store the URL, publication date, and relevant excerpt in HubSpot. Refresh the trigger after 30 days. Treat third-party topic interest as directional research, not proof that a named person requested contact."
+          "prompt": "State your total target list size and how you will split it. Name the one or two levers used to segment, the size of each segment, and the daily sending cap per box you will enforce from day one.",
+          "example": "Never push one message to a 10,000-lead list. Split it into 10 segments of 1,000 using one or two levers and keep each sending box at 50 or fewer per day [Hunter — 35H3HVb8ymw @ 00:48:20]. Lists of 100 leads or fewer more than double replies across 31M outreach emails [Hunter — 35H3HVb8ymw @ 00:09:28]."
         },
         {
-          "name": "Qualified-opportunity acceptance definition",
+          "name": "multi_contact_plan",
           "type": "textarea",
-          "prompt": "Write the minimum evidence for an accepted opportunity, including account eligibility, participant role, confirmed problem, meeting attendance, and next step. Identify conditions that create research leads but do not earn opportunity fees.",
-          "example": "An accepted opportunity requires an eligible account, an attended 30-minute discovery meeting with a maintenance program owner, a documented modernization problem, and agreement to a technical follow-up. A calendar booking alone earns no fee. A student researcher, vendor solicitation, or unrelated inquiry fails qualification."
+          "prompt": "For each target company, list every person you will email, their role, and the personalized element in each message body. Explain how editing templates and body-level personalization will differ between contacts at the same target account.",
+          "example": "Email more than one person per target company: outreach data shows almost +50% replies, and editing templates plus body personalization adds about another +50% [Hunter — 35H3HVb8ymw @ 00:10:21]. Timing also matters, since only 2-8% of a market is actively looking at any time, so hiring and funding signals guide who gets contacted first [Hunter — 35H3HVb8ymw @ 00:29:38]."
         },
         {
-          "name": "Client fulfillment and sales capacity",
+          "name": "route_to_market",
           "type": "textarea",
-          "prompt": "Measure the client's ability to respond, conduct discovery, supply technical support, and fulfill resulting contracts. Set maximum weekly introductions and response deadlines so your delivery does not overwhelm the client's available selling resources.",
-          "example": "The client assigns two account executives and one solutions engineer. Together they can handle four new discovery meetings weekly and two technical workshops. The response commitment is one business day. Reduce introductions when more than six accepted opportunities lack a documented next action."
+          "prompt": "Choose your route to market: sales-led, marketing-led, or a federal notice-and-teaming path. Justify the choice with your customer lifetime value and deal size, and note any partner rates or gap-analysis scores that must be settled first.",
+          "example": "Prairie Founders Club draws the sales-led versus marketing-led line at $10K LTV. On the federal path, prime a bid only when the requirements gap analysis averages 4, and talk rates before signing the teaming agreement, because a partner charging $200 against your $100 breaks the bid [Neil McDonnell — d_oQ5UhlC0k @ 00:24:39]."
         },
         {
-          "name": "Sales-cycle and procurement friction map",
-          "type": "textarea",
-          "prompt": "Estimate the sequence and duration of discovery, technical validation, security review, procurement, and contracting. Separate the agency's first client-sale timeline from the client's downstream enterprise buying cycle and resulting cash receipts.",
-          "example": "Plan 3–12 months to win the agency's first client. For that client's prospects, model 30 days of discovery, 60 days of technical validation, and another 90–180 days for procurement. Agency fees follow contracted service and acceptance milestones, rather than waiting for the enterprise deployment to close."
+          "name": "abm_fit_gate",
+          "type": "text",
+          "prompt": "Record your average contract value, whether CFO sign-off is required, and your planned account count. State plainly whether the program clears the ABM entry floor or whether self-service, low-ticket economics make ABM overkill for your business.",
+          "example": "An account requiring CFO sign-off clears the roughly $20,000 ACV floor [AdConversion — FPPnVM3_KPk @ 00:18:13]. Walk away if ACV sits below 30K, the team chases MQLs, the list is 1,000 accounts, or leadership expects $1M in 30 days [Fullfunnel io — glV72-awJAU @ 01:17:37]. Self-service credit-card SaaS where users just sign up and swipe a card may find ABM overkill."
         },
         {
-          "name": "Concentration and counterparty exposure",
+          "name": "abm_sequence_and_air_cover",
           "type": "textarea",
-          "prompt": "Calculate revenue exposure by client, vertical, and payment status. State a practical concentration threshold, explain temporary launch exceptions, and define the action required when one counterparty becomes essential to payroll coverage.",
-          "example": "At the Base case, six equally productive clients each generate $112,500 annually, representing 16.67% of $675,000 revenue. Set a mature-book limit of 25% per client. During the one-client launch, maintain a separate cash runway and prospect pipeline rather than describing concentration as diversified."
+          "prompt": "Map your ABM operating sequence from ICP through messaging, a Dream 100, personalization, and sales outbound. Name the paid and organic air cover running underneath, and describe how pre-SDR campaigns are timed before the first rep touch lands.",
+          "example": "Fire pre-SDR campaigns 2 days to 2 weeks before outreach; at one CPG client this lifted connect rates, meetings and target account pipeline [LinkedIn for Marketing — Co22pd-mVlk @ 01:00:37]. Do not run demo ads at accounts that do not know who you are [AdConversion — FPPnVM3_KPk @ 00:01:12]. Answer the top 10 sales objections with targeted ads [AdConversion — FPPnVM3_KPk @ 00:06:48]."
         },
         {
-          "name": "Underwriting decision and pilot boundary",
+          "name": "weekly_account_review",
           "type": "textarea",
-          "prompt": "Summarize the decision, supporting evidence, unresolved conditions, pilot scope, and accountable owner. Include the canonical candidate score without treating its aggregate ranking as evidence that a particular client or account will perform.",
-          "example": "Proceed with a 40-account pilot after signer verification and CRM exclusion matching. Candidate #21 carries an 86/100 Money-to-Manpower Score and pipeline rank #18 of 29. Its component scores are 24 revenue, 21 margin, 16 team efficiency, 9 startup accessibility, and 12 automation."
+          "prompt": "Describe the weekly account-level meeting where sales and marketing review progress together. List who attends, which metrics you review, and the red flags that trigger a diagnosis of distribution problems versus content problems before the pilot stalls.",
+          "example": "Treat sales saying 'not sure' at two months as a red flag. Diagnose no impressions as a distribution problem and no engagement as a content problem [AdConversion — LbEgZ7SpArs @ 00:08:08]. Never ask for a budget increase to rescue a weak pilot, because that 'puts the gun in front of your head' [Fullfunnel io — glV72-awJAU @ 01:23:19]."
         }
       ],
-      "completion_gate": "The commercial lead signs a dated underwriting record containing verified client authority, 40 evidence-backed pilot accounts, written opportunity acceptance criteria, delivery capacity, and named owners for every unresolved condition; excluded accounts cannot enter outreach."
+      "completion_gate": "Complete only when the problem statement survives the Five Whys, the scorecard disqualifies 20 to 30% of open deals with roughly a three-times win-rate gap, no segment exceeds 1,000 leads, each sending box stays at 50 or fewer per day, and ACV clears the ABM floor."
     },
     {
       "worksheet_id": "ws-02",
       "number": 2,
-      "title": "Unit Economics, Scrub Reserve & Working-Capital Float Calculator",
-      "purpose": "Translate retainers and qualified-opportunity fees into reconciled operator economics. Model rejected submissions, cash reserves, collection delays, and staffing without counting client contract values as agency revenue. Test whether available startup capital can support the actual sales cycle and delivery commitments.",
-      "chapter_ref": "Q3, Q4",
+      "title": "Enterprise Account Plays and Signal-Led Outbound",
+      "purpose": "Size enterprise plays to deal value and rep capacity, run warm gifting and one-to-one experiences with tracked follow-up, and build a signal-led outbound engine in Clay where timing beats targeting and targeting beats copy.",
+      "chapter_ref": "Q3-Q4",
       "instructions": [
-        "Enter the three canonical annual scenarios before building a monthly forecast. Preserve their exact revenue, owner profit, margin, and staffing figures. Treat the illustrated client counts and fee combinations as operating bridges, not additional canonical assumptions.",
-        "Separate submitted opportunities, accepted opportunities, invoiced fees, recognized revenue, and collected cash. Calculate scrub rates on submitted records and document the accounting treatment of rejected submissions, service credits, advance retainers, and temporary cash reserves.",
-        "Assign every annual operating cost to one category and reconcile the total to the scenario margin. Include employee costs, contractor delivery, acquisition, software, data, administration, and rework without deducting an internal reserve allocation as another expense.",
-        "Build a collection calendar that reflects actual contract terms. Model advance retainers separately from opportunity invoices, calculate average receivables, and identify the lowest projected cash balance before committing to additional payroll or annual software contracts.",
-        "Stress the plan for delayed client acquisition, a rejected opportunity batch, and loss of the largest client. Where funding is insufficient, reduce fixed commitments or secure documented funding rather than assuming enterprise deals close earlier."
+        "Confirm the deal-size floor and rep capacity before choosing any account, gift, or executive experience.",
+        "Warm every account or confirm intent before a gift ships, and tie each send to automated follow-up and a BDR cadence.",
+        "Pick narrow timing signals with a specific role, event, and window rather than static wide-net lists.",
+        "Build the enrichment waterfall with run conditions, an LLM relevance filter, and clear routing destinations for every qualified lead.",
+        "Protect credits and keys: test small, confirm every spend, and never scale an untested update."
       ],
       "fields": [
         {
-          "name": "Conservative scenario revenue bridge",
-          "type": "textarea",
-          "prompt": "Reconstruct Conservative annual operator revenue from a specific retainer and accepted-opportunity mix. Reconcile costs, owner profit, margin, and team composition while keeping downstream enterprise contract values outside the agency revenue calculation.",
-          "example": "Three clients paying $3,500 monthly generate $126,000 annual retainers. Another 24 accepted opportunities at $1,000 produce $24,000. Total revenue is $150,000; annual costs are $120,000, leaving $30,000 owner net profit at 20% margin. The canonical team is 2 FT + 3 C."
+          "name": "deal_size_floor",
+          "type": "text",
+          "prompt": "Write the minimum annual deal value that justifies an enterprise account play in your business. Explain how that floor carries the cost of gifting, direct mail, and one-to-one experiences, and which accounts fall below it today.",
+          "example": "Practitioners set the floor anywhere from roughly $10K a year to deals of 50,000-100,000 or more. You do not need a robust ABM platform to start, nor 60, 80 or 100,000 a year in software [Growth Business Templates — aDOxVzIz_Hk @ 00:08:42]. Spread your risk and run ABM on three accounts first [Growth Manifesto Podcast — Vdq5ROPgQzw @ 00:19:28]."
         },
         {
-          "name": "Base scenario revenue bridge",
-          "type": "textarea",
-          "prompt": "Construct a Base annual revenue bridge with client count, monthly retainer, accepted-opportunity volume, and fee. Show the annual and monthly averages, then reconcile owner profit and the required canonical staffing configuration.",
-          "example": "Six clients at $7,500 monthly produce $540,000 retainers. Ninety accepted opportunities at $1,500 add $135,000. Annual revenue totals $675,000, averaging $56,250 monthly. Costs of $472,500 leave $202,500 owner net profit at 30.0% margin with 2 FT + 3 C."
+          "name": "rep_capacity_list_sizing",
+          "type": "text",
+          "prompt": "Calculate how many target accounts your sales team can genuinely work. Record accounts per rep, the share selected for enterprise plays, and the total list size, treating rep capacity rather than marketing ambition as the deciding factor.",
+          "example": "Snowflake's Casey Patterson targets 10 of a rep's 100 accounts. The sales team is the bottleneck and the deciding factor on account count [Exit Five — uWRminjpXsE @ 00:40:10]. For one-to-one executive experiences, build the list at 2-3x the desired contact count, since 11 of 30 contacts became meetings [Steve Armenti — Mv1ZTzPcy5A @ 00:07:56]."
         },
         {
-          "name": "Scaled small-team revenue bridge",
+          "name": "warm_signal_before_gift",
           "type": "textarea",
-          "prompt": "Build the Scaled revenue bridge without increasing the canonical seven-person team. Explain the client and opportunity volumes supporting annual revenue, and reconcile all-in costs and owner profit to the required net margin.",
-          "example": "Eight clients paying $10,000 monthly generate $960,000 retainers. Another 120 accepted opportunities at $2,000 add $240,000. Revenue reaches $1,200,000; costs total $720,000, leaving $480,000 owner net profit at 40% margin. Staffing is 3 FT + 4 C, totaling seven people."
+          "prompt": "For every account slated to receive a gift or direct mail, record the warming touch or confirmed intent signal that came first. Accounts with no prior engagement or intent evidence must be pulled from the send list before anything ships.",
+          "example": "No gift goes to a cold account as the first touch; warm the account or confirm intent first [B2B Fusion — 4kdiiYL17XU @ 00:23:20]. Rocket SaaS is blunt: 'I wouldn't do a cold direct mail campaign' [Rocket SaaS — 5XU6PUsdwEM @ 00:40:07]. Armenti adds that experience recipients 'aren't like hand-raisers,' so the research has to earn attention."
         },
         {
-          "name": "Base expense allocation and capacity assumptions",
+          "name": "five_to_nine_research",
           "type": "textarea",
-          "prompt": "Allocate the Base annual expense ceiling across named operating categories. Specify contractor availability and employee assumptions, and identify any market wage or delivery constraint that would make the canonical margin unattainable locally.",
-          "example": "Allocate $168,000 to loaded employee costs, $120,000 to three fractional contractors, $36,000 to software, $48,000 to data, $24,500 to administration and insurance, $48,000 to acquisition, and $28,000 to delivery rework. Total costs equal $472,500; validate local compensation before hiring against this illustration."
+          "prompt": "Research each priority buyer's 'five to nine,' meaning what they care about outside work. Record the source of that insight, the gift or experience matched to it, and any seasonal or practical risk that could spoil the send.",
+          "example": "Gift to the buyer's passions outside work, not to the job title [B2B Fusion — 4kdiiYL17XU @ 00:20:55]. Armenti's agent-researched, human-validated offers included a private chef, a yoga retreat and golf [Steve Armenti — Mv1ZTzPcy5A @ 00:07:56]. Check practical risks too: 'you shouldn't send chocolate in the summer' [AI Marketers Guild — v0lXcZYhFXc @ 00:42:06]."
         },
         {
-          "name": "Submission scrub and accepted-fee yield",
+          "name": "send_and_follow_up_trigger",
           "type": "textarea",
-          "prompt": "Calculate submitted volume, rejected volume, accepted volume, scrub percentage, and earned opportunity fees. Distinguish pre-acceptance defects from post-recognition credits so the same rejected opportunity cannot reduce revenue twice in the model.",
-          "example": "Submit 100 opportunities during the Base year and reject 10 for duplicates or missing qualification evidence. The 10% scrub leaves 90 accepted opportunities earning $135,000. The rejected submissions represent $15,000 of unearned potential fees, not recognized revenue and not an additional expense."
+          "prompt": "Document exactly how the offer is sent and what follows it. Name the sending inbox, the automated marketing follow-up, and the BDR cadence steps tied to ship, deliver, and landing-page visit events for every recipient on the list.",
+          "example": "Send manually from the rep's or an executive's own inbox, not a sequencer; Armenti's opens and engagement ran above 50% [Steve Armenti — Mv1ZTzPcy5A @ 00:08:16]. Wrike's locked acrylic candy box triggered BDR outreach on ship, deliver and visit events, and at least 41% clicked to learn more [AI Marketers Guild — v0lXcZYhFXc @ 00:28:14]."
         },
         {
-          "name": "Defect cash reserve and credit treatment",
+          "name": "phone_list_scoring",
           "type": "textarea",
-          "prompt": "Set an internal cash reserve for disputed fees and remedial delivery. Explain whether each reserve movement affects cash availability, recognized revenue, or operating expense, and state how actual credits change the forecast.",
-          "example": "Earmark 10% of the Base year's $135,000 accepted-opportunity fees, or $13,500, as an internal cash reserve. This transfer does not reduce the $202,500 canonical profit. If a $1,500 credit becomes valid, record its actual treatment and publish a separate revised forecast rather than hiding the variance."
+          "prompt": "Describe how you will score and prioritize your phone list before dialing. Record the starting list size, the scoring method, the conversation rate before and after scoring, and how anyone who answered once gets moved into a priority callback bucket.",
+          "example": "Ronen Pessar re-scored a 2,245-number list with Phone Ready Leads, now TitanX, and conversations rose from 1.6% (1 per 60 dials) to 39.6% (21 from 53 dials) [Ronen Pessar — dpDcjwreO8o @ 00:08:10]. Anyone who answered once goes into a priority callback bucket, where 20-40% convert [Ronen Pessar — dpDcjwreO8o @ 00:09:06]."
         },
         {
-          "name": "Receivables float and collection timing",
+          "name": "signal_trigger_definition",
           "type": "textarea",
-          "prompt": "Specify retainer collection dates, opportunity invoice terms, expected payment delay, and average receivables. Separate earned service revenue from advance cash receipts, and identify which cash balances remain unavailable for owner distributions.",
-          "example": "Collect $45,000 of monthly Base retainers in advance and recognize them as services are delivered. Average monthly opportunity fees are $11,250. At 45-day collection timing, using a 30-day planning month, opportunity receivables average $16,875. Retain additional cash for payroll, taxes, and disputed invoices."
+          "prompt": "Define the narrow timing signal that will trigger outreach, including the exact role, event, and time window. Explain why it beats a static wide-net list and whether the signal is overused by competitors already targeting the same accounts.",
+          "example": "One client targeting US companies with 50-500 employees switched from a static list to 'hired head of data in last 90 days' and replies moved from about 1% to 11% with the same offer [Hlib Storchak — Iy92NakD7e4 @ 00:08:25]. Wide-net lists of 10,000+ contacts stall at 2-4% while spearhead campaigns hit 15-25% [Hlib Storchak — Iy92NakD7e4 @ 00:02:00]."
         },
         {
-          "name": "Startup capital and pre-revenue runway",
+          "name": "clay_enrichment_waterfall",
           "type": "textarea",
-          "prompt": "Choose a startup funding amount within the supplied range, itemize initial commitments, and calculate runway without client receipts. Compare that runway with the 3–12 month first-deal window and identify the financing shortfall explicitly.",
-          "example": "Start with $75,000, within the $15,000–$100,000 capital range. Spend $25,000 on setup and retain $50,000 cash. At $12,500 monthly pre-revenue burn, runway is four months. Twelve months would require $175,000 including setup, leaving a $100,000 shortfall against this funding plan."
+          "prompt": "Map your Clay enrichment build step by step: tiered dream accounts, signal tables, the LLM relevance filter, the email and mobile waterfall providers in order, and the destination each qualified lead routes to after enrichment completes.",
+          "example": "One email provider found 5 of 10 CEO emails; the full waterfall found 9 or 10 of 10 [GTM Partner — NCH5pSCJcCU @ 00:06:28]. Set run conditions so 'if it finds the emails with this provider then it's not going to run the rest' [James Praise #realjaymes — S9IhjTPQRTA @ 00:05:42]. Route results to Slack, Smartlead, Instantly or HeyReach."
         },
         {
-          "name": "Operating range and mature cash buffer",
+          "name": "archetype_reason_timestamp",
           "type": "textarea",
-          "prompt": "Compare the supplied monthly operating range with each scenario's implied all-in costs. Do not force mature payroll into an incompatible startup budget; document staged staffing and the cash buffer required at the selected run rate.",
-          "example": "The supplied monthly opex range is $4,000–$20,000, but Base all-in costs average $39,375 and Scaled costs average $60,000. Treat this as a planning mismatch requiring staged commitments. A three-month Base cost buffer is $118,125, already exceeding the $100,000 upper startup-capital figure."
+          "prompt": "For each lead entering outreach, record its archetype, the reason it qualifies, and the timestamp of the triggering signal. Set the archetype threshold that must be reached before outreach fires, and describe how irrelevant signal articles are filtered out.",
+          "example": "'If a lead doesn't have an archetype, plus a reason, plus a time stamp, it doesn't get touched' [Blue Pencil — 5CV9o_tOrgg @ 00:05:41]. Run an LLM relevant-or-not checkbox and a why-relevant briefing on every Clay Signals article before it reaches an AE Slack channel, because these plays carry heavy noise [GTM Partner — NCH5pSCJcCU @ 00:03:23]."
         },
         {
-          "name": "Concentration stress and break-even sensitivity",
+          "name": "credit_and_safety_controls",
           "type": "textarea",
-          "prompt": "Remove the largest client's revenue while initially holding costs constant. Calculate remaining profit and margin, then identify specific reducible commitments and the time required to restore the planned earnings level.",
-          "example": "Losing one equal Base client removes $112,500 annual revenue. With costs initially unchanged at $472,500, revenue falls to $562,500 and profit to $90,000, a 16% margin. Recovering the original profit requires replacing that revenue or reducing actual costs, not merely reallocating the cash reserve."
+          "prompt": "List the controls protecting your enrichment budget and data security. Note how every credit spend gets confirmed, how many records you test before scaling an update, where tone and banned words are configured, and how API keys stay hidden.",
+          "example": "Confirm every credit spend through the Apollo MCP and never run an untested update at scale [ColdIQ — lSM-6GschOc @ 00:25:44]. Fill the Apollo AI Context Center with tone and banned words, the setting operators most often forget [ColdIQ — lSM-6GschOc @ 00:13:32]. Keep API keys off screen when recording or sharing workflows [Cold Outbound Clips — _l5HU1yQjdM @ 00:01:26]."
         }
       ],
-      "completion_gate": "The operator and finance owner reconcile all three canonical scenarios, document scrub and reserve treatments, and approve a dated cash forecast showing funding sources for committed spending through the next client-acquisition milestone."
+      "completion_gate": "Complete only when every target account has a warming touch logged, the list is sized to rep capacity, every send has a ship, deliver, and visit-triggered BDR cadence, every lead carries an archetype, reason, and timestamp, and every credit-spending update has passed a small test."
     },
     {
       "worksheet_id": "ws-03",
       "number": 3,
-      "title": "Execution, Opportunity Ledger & Technical QA Pre-Flight",
-      "purpose": "Create an auditable delivery path from source evidence to client acceptance and payment. Establish identifiers, ownership rules, attribution records, technical checks, and dispute procedures that prevent duplicate billing, unsupported qualification, lost handoffs, and accidental exposure of one client's account data to another.",
-      "chapter_ref": "Q7, Q8",
+      "title": "Thought Leadership, Podcast Business Development, and Proprietary M&A Sourcing",
+      "purpose": "Extract the principal's point of view live, publish it consistently so content pre-sells deals, open executive doors through podcast invitations, and build a verified, scored outbound machine for proprietary M&A deal flow that replaces Rolodex and referral dependence.",
+      "chapter_ref": "Q5-Q6",
       "instructions": [
-        "Map the workflow before configuring integrations. Give each stage an entry condition, required evidence, accountable owner, and permitted next state. Prevent a booked meeting from automatically becoming an accepted opportunity or a billable ledger entry.",
-        "Configure stable identifiers and client boundaries across the CRM, scheduling system, evidence store, and billing export. Test duplicates and existing opportunities using the client's actual suppression snapshot before importing the first production account batch.",
-        "Write the attribution policy into the services schedule and mirror it in the ledger. Record first qualifying touch, pre-existing opportunity status, acceptance evidence, and exceptions so later disputes can be resolved from records rather than recollection.",
-        "Perform a complete synthetic journey using records controlled by the delivery team. Validate permissions, message rendering, calendar time zones, rescheduling, cancellation, event retries, fee eligibility, and the exact evidence attached to the client's acceptance request.",
-        "Reconcile CRM acceptance counts, invoice lines, credits, and cash receipts before each billing run. Assign unresolved differences to named owners, retain an exception log, and block duplicate or unsupported fee lines while continuing valid delivery."
+        "Extract the executive's point of view on a live call before any post goes out under their name.",
+        "Hold a steady publishing cadence for six months and report qualified leads and revenue, not likes.",
+        "Apply hard kill rules to thought leader ads and vet every paid podcast slot before money moves.",
+        "Define acquisition criteria, verify every lead, re-verify catch-alls, and cut low-scoring targets before a single email is sent.",
+        "Route every reply through an intent screen and a CRM before it ever reaches the closer."
       ],
       "fields": [
         {
-          "name": "Execution stages and state transitions",
+          "name": "executive_pov_extraction",
           "type": "textarea",
-          "prompt": "Define the ordered operational states from account research through collection. Identify evidence required for each transition, and specify which state changes require human review instead of automatic promotion by an integration.",
-          "example": "Use Researched, Eligible, Contacted, Engaged, Booked, Attended, Submitted, Accepted, Invoiced, and Collected states. An attendance record moves Booked to Attended; a qualification packet moves Attended to Submitted. Only recorded client acceptance permits Accepted status. Calendar events cannot create invoice lines without that acceptance."
+          "prompt": "Schedule and document the live extraction session with your principal. Record the date, length, and cadence of each session, the strongest point of view captured, and the proprietary data or customer conversation that backs it up.",
+          "example": "Run a 45-minute extraction every six weeks, and never publish under the executive's name until insights are pulled on a live call; anything else is guessing [Social-Hire.com — VesCkYBJkFA @ 00:01:04]. Concurate gets on a call 'every week to hear what's coming up in a customer conversation' [Concurate — 3_gHjeAdeNE @ 00:01:03]."
         },
         {
-          "name": "Stable identifiers and client isolation",
+          "name": "idea_mining_sources",
           "type": "textarea",
-          "prompt": "Specify identifiers for clients, accounts, contacts, meetings, opportunities, and invoices. Explain how access controls and matching rules prevent cross-client exposure or duplicate fees when names, domains, or meeting times change.",
-          "example": "Assign client_id C006, account_id A0142, and opportunity_id O006-0142-01. Use the CRM object ID as the durable contact reference rather than an email address alone. Separate client workspaces and permissions. A rescheduled meeting retains its opportunity ID and cannot create a second billable opportunity."
+          "prompt": "List where your post ideas come from each week. Record the comment threads you mine, the strategic comments you leave before posting, your daily connection-request target, and which proprietary data supports each point of view you publish.",
+          "example": "Comments produce 3x more ideas than brainstorming, and proprietary data should back each POV [ZenPilot — -zNdXXrY9lU @ 00:33:17]. Strategic comments likely earn more exposure than your own posts, paired with 10 connection requests a day [Impactable - B2B LinkedIn Ads Agency — s0wOPmHvpWM @ 00:14:20]. Less than 2% of LinkedIn members post at all [Executive Resume Writers — Vi-DPWAY1C0 @ 00:01:36]."
         },
         {
-          "name": "Source evidence and qualification packet",
-          "type": "textarea",
-          "prompt": "List the evidence attached to each submitted opportunity, including trigger provenance, participant role, attendance, confirmed problem, and agreed next action. Limit captured personal information to what delivery and dispute resolution actually require.",
-          "example": "Opportunity O006-0142-01 includes the dated acquisition announcement, participant job title, meeting attendance confirmation, structured discovery notes, and a technical workshop date. Store restricted notes in the client workspace. Do not attach unrelated personal profiles or a full meeting recording when concise evidence is sufficient."
+          "name": "publishing_cadence",
+          "type": "text",
+          "prompt": "Set your publishing cadence for the next six months. State posts per week, lead magnets per week, and the minimum consistency you will hold, explaining how you will avoid short bursts of activity followed by long silences.",
+          "example": "Operators run four posts weekly and two lead magnets per client per week. Justin Row says it is 'way better for you to post once or twice a week consistently for 6 months' than to go crazy for three or four weeks and drop off the map [Impactable - B2B LinkedIn Ads Agency — s0wOPmHvpWM @ 00:13:43]."
         },
         {
-          "name": "Attribution window and pre-existing pipeline",
+          "name": "dm_ladder",
           "type": "textarea",
-          "prompt": "Write the attribution window, baseline pipeline check, duplicate hierarchy, and exception process. Distinguish contractual fee attribution from claims about causal impact on client revenue or influence across the entire buying committee.",
-          "example": "The contract attributes eligible opportunities submitted within 90 days of the agency's documented qualifying touch. Exclude opportunities already active in the client's kickoff snapshot. For overlapping sources, use the signed exception schedule. This rule determines the $1,500 fee; it does not establish that the agency caused the client's entire sale."
+          "prompt": "Write the direct-message ladder that follows engagement with your content. Draft each of the three to five messages, state the trigger that starts the sequence, and describe how you move a warm prospect toward a booked call.",
+          "example": "Run three-to-five-message DM ladders off content engagement, and remember 'you nurture enough relationships and conversions happen' [ZenPilot — -zNdXXrY9lU @ 00:22:52]. Prospects exposed to thought leadership before booking arrive 60 or 70% sold at the first sales call [Impactable - B2B LinkedIn Ads Agency — s0wOPmHvpWM @ 00:07:22], so the ladder should invite conversation, not pitch."
         },
         {
-          "name": "Acceptance deadline and dispute packet",
-          "type": "textarea",
-          "prompt": "Define the client's review period, valid rejection reasons, required rejection evidence, and escalation owner. State whether silence has contractual effect and how disputed records are withheld from billing during investigation.",
-          "example": "Give the client five business days to accept or reject a complete submission. Require a reason code and supporting CRM record for duplicates. Silence leaves the submission pending under this contract. Escalate overdue reviews to the sales operations lead; disputed opportunities remain outside the accepted-fee invoice batch."
+          "name": "thought_leader_ad_kill_rule",
+          "type": "text",
+          "prompt": "Define the click-through and landing-page thresholds that keep a thought leader ad running. Record current CTR, the share of social actions that become landing-page clicks, and the exact rule you apply to kill underperforming ads each week.",
+          "example": "Adam Holmgren reports thought leader ads at 13% or more CTR versus about 1% for image ads, credited with 300+ customers in 15 months [Adam Holmgren — eFSMGI_UK38 @ 00:00:14]. Kill any ad under 10% CTR or where landing-page clicks fall below 10% of social actions [Adam Holmgren — eFSMGI_UK38 @ 00:11:39]."
         },
         {
-          "name": "Opportunity and invoice ledger columns",
+          "name": "results_reporting",
           "type": "textarea",
-          "prompt": "Specify the minimum ledger columns connecting operational events with financial records. Include immutable references, amounts, dates, status, credits, and cash application so a reviewer can reconstruct one opportunity without searching unrelated systems.",
-          "example": "Record client ID, opportunity ID, submitted date, accepted date, fee amount, invoice ID, invoice date, due date, credit reference, payment date, and applied cash. O006-0142-01 earns $1,500 on acceptance, appears once on invoice I006-004, and closes only when its payment allocation is recorded."
+          "prompt": "Choose the business metrics you will report before raising cadence or budget. List net-new ICP engagement, qualified leads, clients, and recurring revenue tied to content, and explain why likes and impressions alone will not justify more spend.",
+          "example": "Report net-new ICP engagement, qualified leads and MRR, not likes [ZenPilot — -zNdXXrY9lU @ 00:15:15]. Garret Caudle's best founder POV post earned 64,000 impressions and 623 likes, but the number that mattered was 10+ qualified leads, 3 clients and over $20k MRR [ZenPilot — -zNdXXrY9lU @ 00:17:16]. ZenPilot adds that the CEO should not manage their own LinkedIn account."
         },
         {
-          "name": "Scheduling and handoff quality checks",
+          "name": "podcast_trojan_horse",
           "type": "textarea",
-          "prompt": "Describe calendar ownership, time-zone handling, invite content, reminder behavior, cancellation rules, and client handoff requirements. Include checks that distinguish actual attendance from accepted invitations or automated calendar responses.",
-          "example": "Calendly routes the meeting to the assigned account executive and displays the buyer's local time zone. The invitation states the discussion topic and includes cancellation links. A controlled test checks daylight-saving behavior. The account executive confirms attendance manually; an accepted invitation does not satisfy the attended-meeting requirement."
+          "prompt": "Design your podcast-led business development play. List the ICP executives you will invite, how you will find them through conference credentials or attendee lists, who receives the pitch, and how each paid slot gets vetted before money moves.",
+          "example": "Podcast invites to ICP executives draw 25 to 45% responses versus 1 to 3% for cold email [Dylan Conroy — yja0j6pWgP0 @ 00:20:04]. Use conference press credentials and Vendelux attendee lists, and pitch comms or PR people instead of the executive [Dylan Conroy — ttPyddAq19E @ 00:20:41]. Vet paid slots with the STAGE score and a 30-day posting check."
         },
         {
-          "name": "Idempotency, retries, and event ordering",
+          "name": "acquisition_criteria_and_list",
           "type": "textarea",
-          "prompt": "Define event identifiers, deduplication storage, retry limits, and rules for late or out-of-order updates. Explain how the system handles a cancellation arriving after booking and prevents repeated webhook delivery from creating extra fees.",
-          "example": "Persist each provider event ID before processing its effects. A repeated meeting-created webhook returns the existing result. Retry transient failures three times, then send the record to a review queue. A later cancellation changes meeting status but never deletes the audit history or silently reverses an accepted invoice."
+          "prompt": "Write your acquisition criteria or total addressable market definition for proprietary deal sourcing. Record sector, size, and geography filters, the raw lead count pulled, the verified sendable count after catch-all re-verification, and the AI score cutoff applied.",
+          "example": "Do not launch on raw counts: Nico Holloman's 6,000-lead pull shrank to 1,324 sendable leads after verification and re-verifying catch-alls [Nico Holloman | Hologram Agency — PauebGoMxEw @ 00:09:52]. 'Anyone who's under a five out of 10 gets automatically cut from the list' [Nico Holloman | Hologram Agency — PauebGoMxEw @ 00:08:17]."
         },
         {
-          "name": "Pre-flight test cases and expected results",
+          "name": "outreach_angle_and_inbox",
           "type": "textarea",
-          "prompt": "List representative test cases with expected outcomes and evidence locations. Cover successful delivery, suppression, duplicates, cancellations, access isolation, and billing errors before connecting production lists or sending messages to external recipients.",
-          "example": "Run 12 controlled cases: four valid journeys, two suppressed contacts, two duplicates, one cancellation, one failed handoff, one cross-client access attempt, and one repeated invoice export. Expect four eligible submissions, zero suppressed sends, zero duplicate fees, and denied cross-client access. Store results beside the configuration version."
+          "prompt": "Draft your outbound angle for owners and the inbox you will target. Name the hook, such as a past closed deal or market interest, the first-line personalization, the compliance footer, and whether generic company inboxes beat named executive addresses.",
+          "example": "Peakstone's Schmidt Electric to MC Corp deal anchored a campaign the agency never held, booking $15M, $25M and $30M companies within seven days at around 1% replies [Ephraim Austin — esA2m5IlLT8 @ 00:01:39]. For blue-collar targets, email the generic inquiry inbox [Willem — Gi8lgR2IK40 @ 00:03:39]. Add an opt-out and signature under CAN-SPAM."
         },
         {
-          "name": "Monthly reconciliation and correction ownership",
+          "name": "reply_screen_and_crm",
           "type": "textarea",
-          "prompt": "Describe the reconciliation between accepted opportunities, invoice lines, credits, and receipts. Assign correction owners and deadlines, and require an explanatory record for differences rather than editing historical totals to force agreement.",
-          "example": "April contains eight accepted opportunities at $1,500, totaling $12,000. The draft export contains nine fee lines, or $13,500. Finance removes the duplicate line before issuance and records the integration defect. Retainers reconcile separately to $45,000; cash receipts follow payment timing rather than the acceptance count."
+          "prompt": "Describe how replies are screened and tracked before reaching the closer. Name the CRM holding every opportunity, the behavioral triggers that create sales tasks, and the email or short screener call used to confirm real intent to sell.",
+          "example": "Screen every reply for real intent to sell, by email or a hired 10-minute screener call, before it reaches the closer [Willem — Gi8lgR2IK40 @ 00:10:10]. No CRM, no campaign: one CRM-less client turned 400+ opportunities into zero closings [Exxcelerate — TE99yv49oy4 @ 00:25:56]. Repeat visits to a sell-a-business page should fire sales tasks automatically."
         }
       ],
-      "completion_gate": "The delivery lead records passing results for all 12 controlled cases, verifies client isolation and duplicate prevention, and demonstrates a complete source-to-payment audit trail without sending production outreach or issuing unsupported invoices."
+      "completion_gate": "Complete only when every published insight comes from a live extraction call, thought leader ads clear 10% CTR with landing-page clicks at 10% of social actions, every M&A target scores 5 or above after verification, and a CRM is live before the first send."
     },
     {
       "worksheet_id": "ws-04",
       "number": 4,
-      "title": "Statutory, Licensing, Contract & Outreach Audit",
-      "purpose": "Translate jurisdiction, communication channel, data provenance, and compensation structure into concrete operating requirements. Identify when ordinary enterprise marketing crosses into regulated referral activity, establish enforceable contract boundaries, and maintain evidence that outreach and data handling follow the rules applicable to each campaign.",
-      "chapter_ref": "Q5, Q9",
+      "title": "Deal Process Control and Solar Appointment Flow",
+      "purpose": "Turn an M&A opportunity into a controlled competitive process with protected LOI terms, verified fees and tested earnout math, then apply the same discipline to solar lead flow so every appointment is exclusive, qualified and likely to show.",
+      "chapter_ref": "Q7-Q8",
       "instructions": [
-        "Inventory recipient locations, channels, data sources, and the actual service being promoted. Evaluate requirements for each combination rather than assuming a business email address, public profile, or enterprise buyer removes all privacy and outreach obligations.",
-        "Document the relevant statutory provisions and operational controls together. Identify the responsible reviewer, evidence retained, refresh date, and conditions that stop a campaign. Resolve uncertain channel or sector classifications before paying for production distribution.",
-        "Review the compensation model independently from the message content. A fixed retainer, accepted-meeting fee, percentage commission, and transaction-contingent payment can receive different treatment, particularly in healthcare, settlement services, securities, and federal procurement.",
-        "Make the services agreement match the operating ledger. Specify qualification, attribution, acceptance, rejection evidence, credits, payment timing, data responsibilities, confidentiality, and termination exports so neither party must invent commercial rules after a disputed introduction.",
-        "Test suppression, rights requests, incident escalation, and vendor access using controlled records. Retain proof of the tests and unresolved findings. A written policy is insufficient when the sending platform or contractor workflow bypasses its requirements."
+        "Start with the buyer funnel and hold every stage to written bid instructions and buyer-only deadlines, even when only one serious buyer remains at the table.",
+        "Lock escrow, R&W insurance, caps and baskets into the LOI before accepting exclusivity, a no-shop clause or a notice duty that ends your competitive leverage.",
+        "Run a worked fee calculation and answer the four earnout questions in writing before any adviser engagement letter or earnout clause is signed.",
+        "Rebuild your solar acquisition math from cost per lead to cost per customer, and reject any vendor that cannot state fall-off percentages and lead exclusivity.",
+        "Complete the site-visit checklist on every commercial lead and the show-rate plan on every residential booking before you scale spend or add lead sources."
       ],
       "fields": [
         {
-          "name": "Jurisdiction and channel applicability register",
+          "name": "buyer_funnel_targets",
           "type": "textarea",
-          "prompt": "List sender and recipient locations, intended channels, recipient categories, and promoted services. Explain the method used to determine applicable rules and identify campaign combinations that require additional review before any contact.",
-          "example": "The initial campaign uses email to United States manufacturing employees and excludes SMS, automated voice, personal mobile numbers, and European recipients. Record state locations where available. A proposed United Kingdom expansion receives a separate PECR and UK GDPR review before records enter the sending segment."
+          "prompt": "Write the sell-side funnel targets for your next mandate: how many buyers you will contact, how many signed NDAs you expect, how many IOIs, approved bidders and final bids, and the four-to-eight-month calendar you will hold every stage against.",
+          "example": "Distribute to 35 PE firms plus 8 strategics, aiming for 30-50 signed NDAs. Treat 10 IOIs from 50 NDAs as a really good day [POTOMAC M&A — 8jBQ3jZnNvY @ 00:39:45]. Cut to 5 approved bidders, then 3 final bids, with one winner by month seven. Every stage gets written bid instructions and a buyer-only deadline, never a seller deadline."
         },
         {
-          "name": "Commercial email requirements and suppression",
+          "name": "single_buyer_process",
           "type": "textarea",
-          "prompt": "Translate commercial email requirements into message, sender, address, and opt-out controls. Identify the applicable statute, the operational deadline, and how suppression propagates across client campaigns, vendors, and future list imports.",
-          "example": "Apply 15 U.S.C. § 7704 and 16 CFR Part 316: use accurate headers, nondeceptive subjects, required advertising identification, a valid postal address, and a clear opt-out. Honor requests within 10 business days; operationally suppress immediately. Test that later imports cannot reactivate the same opted-out address."
+          "prompt": "Describe how you will run the process if only one serious buyer shows up. List the bid instructions, iterative stages and deadlines you will keep identical to a multi-buyer auction so the buyer cannot read a thin field from your behavior.",
+          "example": "One strategic acquirer remains after round one. Keep the same bid template, the same first-round and final-round stages and a Friday deadline, because sophisticated buyers read the field from how you act, not from what you say [POTOMAC M&A — f7d2hP31YB8 @ 00:06:09]. Leverage factors such as their time pressure get gathered over dinner first [POTOMAC M&A — f7d2hP31YB8 @ 00:12:43]."
         },
         {
-          "name": "Telephone, text, and recording restrictions",
+          "name": "loi_protection_terms",
           "type": "textarea",
-          "prompt": "Identify any calling, texting, prerecorded content, automated dialing, or recording planned for the campaign. Document applicable consent and do-not-call requirements, relevant state overlays, and proof required before enabling each channel.",
-          "example": "Keep automated telemarketing calls and texts disabled until 47 U.S.C. § 227, 47 CFR § 64.1200, and applicable state requirements are evaluated for the specific technology and recipients. Maintain required consent evidence. Evaluate California Penal Code § 632 before recording confidential conversations involving California participants."
+          "prompt": "List the LOI terms you will require before signing or countersigning: escrow amount, R&W insurance, indemnity caps and baskets. Note which exclusivity, no-shop and notice clauses you will accept only after those terms are locked in writing for this deal.",
+          "example": "LOI draft holds a 10% escrow for 18 months, R&W insurance paid by the buyer, a cap at 10% of price and a 0.5% basket. Exclusivity runs 60 days only after those lines are written in, because exclusivity, a no-shop clause and a notice duty end the competition that was the leverage [POTOMAC M&A — 8jBQ3jZnNvY @ 01:01:56]."
         },
         {
-          "name": "Privacy roles, notices, and individual rights",
+          "name": "earnout_four_questions",
           "type": "textarea",
-          "prompt": "Determine whether the agency and client act as controllers, processors, businesses, service providers, or another defined role. Identify applicable thresholds, notices, rights handling, and contractual restrictions rather than assuming business contacts are categorically exempt.",
-          "example": "For covered California activity, assess Civil Code §§ 1798.100–1798.199.100, including notice and applicable rights duties; business-contact data is not categorically outside the statute. For EU expansion, document GDPR Articles 6, 14, and 21 analysis. A claimed legitimate interest does not automatically authorize every outreach channel."
+          "prompt": "If an earnout is on the table, answer the four questions in writing: what is measured, who influences performance, how it is verified and when it is paid. Then value the conditional amount separately from cash at closing.",
+          "example": "Measured: gross profit of the acquired division, not EBITDA after buyer overhead. Influence: the seller keeps pricing authority for 24 months. Verified: audited accounts with a seller review right. Paid: within 90 days of each year end. The EUR 2M conditional amount is valued apart from cash today [Saverio Canepa — ZlseQf6dS1g @ 00:02:43]."
         },
         {
-          "name": "Data sourcing and broker status assessment",
+          "name": "adviser_fee_calculation",
           "type": "textarea",
-          "prompt": "Document where contact data originates, contractual use rights, refresh methods, and whether the business sells personal information outside a direct relationship. Assess registration and deletion duties where the actual business model triggers them.",
-          "example": "The agency licenses 800 business-contact records for a named campaign and records permitted uses and deletion terms. Before offering standalone contact files to other buyers, assess California Civil Code §§ 1798.99.80–1798.99.89 and current implementing requirements. Do not assume that calling the product research removes data-broker obligations."
+          "prompt": "Build a worked fee calculation for every adviser you are considering. Cover the triggering event, the fee base (enterprise value or equity), any retainer and whether it is credited, fees due on a failed deal and the tail period.",
+          "example": "Adviser A and Adviser B both quote 2%. On a EUR 10M EV, EUR 8M equity deal, the gap reaches EUR 60K, EUR 160K versus EUR 220K: EUR 40K from the EV fee base and EUR 20K from an uncredited retainer [Saverio Canepa — kIcxjlHfa74 @ 00:01:46]. Both tails run 12 months."
         },
         {
-          "name": "Healthcare, property, and securities fee restrictions",
-          "type": "textarea",
-          "prompt": "Screen the promoted service and payment trigger for sector-specific referral restrictions. Identify any transaction-linked compensation, licensing question, or covered service that requires restructuring or specialist review before accepting the engagement.",
-          "example": "Exclude healthcare-program referrals pending review under 42 U.S.C. § 1320a-7b(b), settlement-service referrals under 12 U.S.C. § 2607, and securities introductions implicating 15 U.S.C. § 78o(a). A $2,000 fee labeled marketing can still create a substantive issue when payment depends on a regulated referral."
+          "name": "sourcing_lane_choice",
+          "type": "text",
+          "prompt": "State whether this acquisition will be sourced through a banker-run auction or through proprietary, relationship-driven origination, and name the lawyers, accountants or other referral sources you will cultivate to hear about owners before a banker's book exists.",
+          "example": "Proprietary lane. Cultivate four estate lawyers and two regional accounting partners who know when clients are about to sell and tip off before the deal reaches a banker [Mink Learning with Steve Balaban, CFA — iTj-KQOCZhY @ 00:00:42]. Avoid banker-shopped flow, since overpaying means you have just paid the seller for the value creation [POTOMAC M&A — RLr8PdCZ6U0 @ 00:41:11]."
         },
         {
-          "name": "Federal procurement contingent-fee screening",
+          "name": "solar_lead_economics",
           "type": "textarea",
-          "prompt": "Identify campaigns involving federal contract opportunities and compensation tied to awards. Review relevant contract clauses and exceptions, and distinguish ordinary enterprise demand generation from conduct involving procurement influence or restricted payments.",
-          "example": "A prospect requests 2% of any resulting federal software award. Review FAR Subpart 3.4 and FAR 52.203-5, including the facts supporting any bona fide employee or established commercial selling agency exception. Do not launch the award-linked arrangement merely because the client proposes calling it a lead fee."
+          "prompt": "Write your current solar customer acquisition math: cost to generate one lead, leads needed per sale, resulting cost per customer, and whether your leads are exclusive or shared with direct competitors. Compare it with the cost of an exclusive, pre-qualified flow.",
+          "example": "Bought leads cost about $200 each and take five to ten to produce one sale, landing at $1,000 to $2,000 per customer, often resold to direct competitors [David Sugrue — vmJD-cz6rdc @ 00:00:54]. Cold calling converts 1% to appointments, and ten appointments make one commercial sale [Phaibion Royal — rhgUISy29oc @ 00:01:20]. Target: exclusive Meta flow under $20 per lead."
         },
         {
-          "name": "Services agreement and fee schedule",
+          "name": "residential_meta_launch",
           "type": "textarea",
-          "prompt": "Draft the commercial clauses controlling scope, retainer earning, opportunity acceptance, attribution, credits, payment deadlines, and termination. Ensure the written terms match the CRM workflow and avoid promising client sales outcomes outside your control.",
-          "example": "Schedule A states a $7,500 monthly retainer and $1,500 per accepted opportunity, payable within 30 days of invoice. It incorporates qualification criteria, the 90-day attribution window, five-business-day review, and evidence-based rejection. Client contract values are excluded from agency fees; termination requires an agreed data export and retention schedule."
+          "prompt": "Plan the residential Meta launch sequence: how many days of warm-up content go on the page first, what share is video, the cost-per-lead ceiling you will hold, your instant callback method and the ad-copy claims you will keep out.",
+          "example": "Publish seven days of page content, about 70% video, before spend [Nazir Yakubu — FGU8xAz-R1U @ 00:04:37]. Hold cost per lead under $20, with an AI agent calling back instantly. Ad copy leads with the state's rising energy costs and lower bills, never '$0 down', which triggers a special ad category [Leadbase — mb1j52sTZX0 @ 00:04:31]."
         },
         {
-          "name": "Security, retention, and incident ownership",
+          "name": "show_rate_plan",
           "type": "textarea",
-          "prompt": "Specify access roles, authentication, encryption, retention, vendor restrictions, and incident escalation. Connect retention periods to operational or contractual needs, while preserving minimal suppression information needed to avoid contacting people who opted out.",
-          "example": "Require multifactor authentication for HubSpot and Google Workspace, restrict exports to two named administrators, and review contractor access monthly. Delete rejected research records after 90 days under the documented schedule, subject to holds. Retain minimal suppression identifiers with restricted access so later imports do not restart outreach."
+          "prompt": "Describe how you will protect appointment show rates after booking: the retargeting creative shown only to booked prospects, the daily retargeting budget, how confirmations and reschedules are handled, and the priority callback rule for anyone who answered once.",
+          "example": "Film three short homeowner interviews on install day and run them only to people who just booked, with spend around $20, pushing show rates toward 60% [Nazir Yakubu — FGU8xAz-R1U @ 00:07:09]. AI agents confirm and reschedule. Anyone who picked up once enters a priority callback bucket, where 20-40% convert [Ronen Pessar — dpDcjwreO8o @ 00:09:06]."
         },
         {
-          "name": "Audit findings and remediation evidence",
+          "name": "commercial_site_visit_gate",
           "type": "textarea",
-          "prompt": "Record each finding, affected campaign, severity, accountable owner, target date, and verification evidence. Specify which defects prevent sending or payment, and close findings only after an observed test confirms the required control works.",
-          "example": "Finding P-03 shows that a contractor CSV import bypasses suppression matching. Pause that import path and assign the CRM administrator a two-day repair deadline. Retest 20 controlled records, including five suppressed addresses. Close the finding only when all five remain excluded and the result is attached."
+          "prompt": "Write the qualification checklist a commercial solar lead must pass before you book a site visit or buy it from a vendor, including competing installer status, supply details, system size and the vendor answers you require before signing.",
+          "example": "Prospect confirms no other installer has a DNO submission in flight, states phase supply and a rough system size before any trip is booked [Roman Love — oZ_jg6mmZEE @ 00:05:39]. Any lead vendor must state fall-off percentages, lead exclusivity and how its strategy differs from everyone else [Solar Boss — E_z3wa2X4Pw @ 00:04:32]. Fresh leads get a phone call first."
         }
       ],
-      "completion_gate": "The responsible reviewer records the applicable channel and sector requirements, the client signs matching commercial terms, and controlled tests verify suppression and access restrictions. Unresolved regulated-fee questions remain outside the active campaign."
+      "completion_gate": "Worksheet 4 is complete when the funnel targets, LOI protections, earnout answers and adviser fee math are written for the live deal, and the solar plan shows a cost-per-lead ceiling, a show-rate tactic and a commercial site-visit checklist with every item answered."
     },
     {
       "worksheet_id": "ws-05",
       "number": 5,
-      "title": "Automation, Outbound Growth & Risk Fallback Tracker",
-      "purpose": "Automate account qualification, CRM attribution, and scheduling without automating unsupported claims or disputed fee decisions. Connect account signals to bounded experiments, measurable funnel improvement, and tested manual fallbacks so a small delivery team can expand capacity while preserving evidence quality and client trust.",
-      "chapter_ref": "Q6, Q10",
+      "title": "Property Opportunity Screens and Legal Intake Controls",
+      "purpose": "Screen land, roofs and liens for the value that sits below the surface, then build legal lead acquisition around speed to lead, verified case inventory, honest cost benchmarks and retainers that only close with qualified clients.",
+      "chapter_ref": "Q9-Q10",
       "instructions": [
-        "Draw the automation path from approved data sources to account scoring, outreach, replies, scheduling, qualification, and billing. Mark every point where a machine inference must remain provisional until supported by evidence or reviewed by an accountable person.",
-        "Start with the three canonical leverage points: account qualification, CRM attribution, and meeting scheduling. Measure minutes saved and errors introduced for each automation before expanding it to additional clients, channels, or more sensitive data categories.",
-        "Design outbound experiments around a specific account hypothesis and useful message. Change one meaningful variable at a time, preserve comparison cohorts, and judge performance using accepted opportunities and downstream quality rather than email opens alone.",
-        "Set service-health thresholds that protect recipients and delivery quality. Investigate bounces, complaints, permission failures, and unusual acceptance changes. Do not respond to a broken or restricted channel by disguising identity or bypassing provider controls.",
-        "Rehearse manual fallback for data-provider failure, CRM outage, calendar errors, and staff absence. Specify who can pause sends, how pending work is preserved, and how recovered systems reconcile events without duplicating meetings or opportunity fees."
+        "Price power before acreage: record voltage, megawatt letters, zoning and re-use demand before pitching any parcel as data-center land to an end user.",
+        "On every flat-roof hail claim, clean the surface, mark test squares, rule out look-alikes and bring the manufacturer rep out before any core is taken.",
+        "Run a UCC search on yourself and on the seller, and read every security agreement for all-assets language, before an acquisition or financing moves forward.",
+        "Set intake speed rules and secondary QC so no mass tort case counts as inventory until it clears background, database and facility treatment checks.",
+        "Judge every legal campaign against stated cost benchmarks, and sign retainers only with clients who meet at least 5 of the 6 qualification criteria."
       ],
       "fields": [
         {
-          "name": "Automation architecture and system ownership",
+          "name": "powered_land_screen",
           "type": "textarea",
-          "prompt": "Map the systems used for account research, CRM records, outreach, scheduling, and billing export. Assign an owner to each integration and explain which system is authoritative for qualification, acceptance, suppression, and payment status.",
-          "example": "Use licensed data and company websites for research, HubSpot for account and opportunity state, a permitted business-email platform for outreach, and Calendly for scheduling. Finance controls invoice issuance. The CRM administrator owns integrations; HubSpot acceptance records, not calendar bookings, authorize opportunity-fee export."
+          "prompt": "For each parcel you plan to pitch as data-center land, record the nearest transmission line voltage, any utility megawatt letter, zoning status and expected rezoning time, and whether you can show a realistic and deliverable path to energization.",
+          "example": "Parcel 7 sits beside a 230 kV line, the stated minimum, with 500 kV better [Saunders Real Estate — j0rQ27ZfIcU @ 00:11:32]. The utility megawatt letter is requested. Zoning is agricultural, so rezoning could take 3 to 6 months [LandApp by LandGate — UqoyFfPDAmA @ 00:02:04]. Adjacent solar alone is not counted as power."
         },
         {
-          "name": "Account qualification scoring and explainability",
-          "type": "textarea",
-          "prompt": "Define account-level scoring inputs, weights, minimum evidence, and exclusion overrides. Require a readable reason for each score and prevent weak inferred signals from overriding contractual exclusions or explicit recipient preferences.",
-          "example": "Score firmographic fit at 40 points, a verified modernization trigger at 35, and identified relevant roles at 25. Research accounts scoring at least 75. An existing active opportunity or suppression match overrides the score. Record the source behind each component so reviewers can challenge stale or mismatched evidence."
+          "name": "reuse_demand_check",
+          "type": "text",
+          "prompt": "Name the market where the site or building sits and state the evidence of data-center re-use demand there. Note the obsolescence risk if the facility cannot be repurposed and the qualification odds you are assuming for this parcel.",
+          "example": "Richmond, Virginia shows re-use demand; the remote alternate site does not, so it is dropped [Industrial Real Estate Show — jak1MCZd_UQ @ 00:11:46]. Assume only about 1% of candidate land is conducive [Industrial Real Estate Show — jak1MCZd_UQ @ 00:24:12], and remember a data center costs four times as much to build and is not meant to be repurposed."
         },
         {
-          "name": "AI-assisted research and message review",
+          "name": "land_price_negotiation",
           "type": "textarea",
-          "prompt": "Describe permitted machine assistance, source requirements, human review, and data minimization. Specify how unsupported claims, mistaken identities, sensitive inferences, and invented buying intent are detected before generated text reaches a recipient.",
-          "example": "A language model drafts a 90-word message from approved company facts and the client positioning brief. A researcher checks every factual sentence against its source. Reject invented budget claims and statements that a named person visited a website. Send only reviewed drafts through the normal suppression-controlled workflow."
+          "prompt": "Write your landowner negotiation position: the farmland value per acre, the data-center value per acre you will anchor to, why you will refuse the first offer, and how land's share of total development cost supports a higher ask.",
+          "example": "Farmland trades at a couple thousand dollars per acre, while qualifying data-center land can command about $1M per acre [Industrial Real Estate Show — jak1MCZd_UQ @ 00:23:06]. Land is 6% of the overall development deal, so moving from $100k to $150k per acre barely registers; the first offer is declined [Saunders Real Estate — j0rQ27ZfIcU @ 00:36:22]."
         },
         {
-          "name": "Outbound cohort and experiment design",
+          "name": "hail_inspection_kit",
           "type": "textarea",
-          "prompt": "Define the experiment hypothesis, account cohorts, message difference, observation period, and success metric. Keep contact pressure controlled, and identify confounders that would make apparent performance differences unsuitable for broad deployment.",
-          "example": "Split 80 eligible accounts into two matched groups of 40. Variant A leads with acquisition integration; Variant B leads with maintenance visibility. Use the same offer and role coverage for 21 days. Compare positive replies and accepted opportunities, while acknowledging that small counts provide limited statistical precision."
+          "prompt": "List the inspection kit and sequence for a flat-roof hail claim: surface cleaning, magnification, test squares, coring or cutting the membrane, and who must be on the roof before any core is taken or patched for the carrier.",
+          "example": "Clean aging PVC with Windex or solvent so the carrier cannot call it deterioration [Jansen/Adjusters International — oAK4wMoYcMA @ 00:18:52]. Carry a $9.99 magnifying glass to read divot color. Mark 10x10 test squares. Bring the manufacturer rep before coring, and use a licensed roofer for a warrantied patch [Jansen/Adjusters International — oAK4wMoYcMA @ 00:08:16]."
         },
         {
-          "name": "Funnel math and accepted-opportunity target",
+          "name": "hail_evidence_log",
           "type": "textarea",
-          "prompt": "Translate account coverage into delivered contacts, positive replies, held meetings, submissions, and accepted opportunities. Use consistent denominators and connect the resulting annual accepted volume to the Base fee model rather than client contract values.",
-          "example": "Across six clients, contact 1,200 distinct eligible people annually. At 20% positive replies, obtain 240 conversations; 50% meeting conversion yields 120 held meetings. Submit 100 qualified records and accept 90 after scrub. Those 90 accepted opportunities generate $135,000 at the Base $1,500 fee."
+          "prompt": "Record the evidence for each test square: hit count, divot color under magnification, facing color on the ISO, cracked ISO or split backing found when cored, and any marks ruled out as bird droppings or other look-alikes before being logged as hail.",
+          "example": "Square B: about 20 circled hits, the count that got one flat roof bought [Jansen/Adjusters International — oAK4wMoYcMA @ 00:27:18]. Divots read black like tar, so newer; ISO facing is not yellow or orange [Jansen/Adjusters International — oAK4wMoYcMA @ 00:13:18]. Core shows cracked ISO. Two TPO marks were bird droppings and excluded [Digital Roofing Innovations — GciwM0T3IPE @ 00:04:58]."
         },
         {
-          "name": "Sender health and recipient protection thresholds",
+          "name": "ucc_lien_search",
           "type": "textarea",
-          "prompt": "Set monitoring thresholds for bounce rates, complaints, opt-outs, and authentication failures. Explain the investigation and pause procedure, including how small sample sizes and provider-specific requirements affect decisions about continuing a campaign.",
-          "example": "Verify SPF, DKIM, and DMARC alignment before sending. Pause a batch when hard bounces exceed 2% or any complaint suggests a sourcing defect; investigate even one complaint in a small pilot. These are internal thresholds, not provider entitlements. Repair sourcing and permissions instead of cycling identities."
+          "prompt": "Before any acquisition or financing, document the UCC search you ran on yourself and on the seller, every security agreement reviewed for all-assets language, and how existing liens could block the financing you are planning to close.",
+          "example": "UCC search run on our entity and the seller before the LOI [BizNick — 22cx7DJjhTY @ 00:22:54]. The seller's equipment lender holds a filing backed by a signed security agreement with all-assets language, so the lien is public notice that blocks new financing until released. Remember a UCC-1 financing statement does not create a security interest [BizNick — 22cx7DJjhTY @ 00:16:09]."
         },
         {
-          "name": "CRM attribution automation and reconciliation",
+          "name": "speed_to_lead_intake",
           "type": "textarea",
-          "prompt": "Describe how touch events, baseline exclusions, attribution windows, and acceptance decisions populate CRM records. Specify exception handling and the checks that prevent automatic attribution from becoming unsupported billing or exaggerated revenue influence claims.",
-          "example": "A workflow stamps the first qualifying touch and checks the 90-day attribution window against the kickoff pipeline snapshot. Conflicting source records enter a review queue. The automation proposes attribution but cannot mark client acceptance. Weekly reconciliation compares accepted opportunity IDs with exported fee lines and flags unmatched records."
+          "prompt": "Set your legal intake speed and coverage rules: the maximum seconds or minutes to call a new lead, who answers overflow, how missed and abandoned calls are tagged daily, and how intake staff are coached to sell rather than receive.",
+          "example": "Web leads get a call within 60 seconds, five minutes maximum [Loudr Media — TJJfmZiIGW4 @ 00:01:34]. LSA calls ring through AI pickup inside 30 seconds, with overflow to a backup call service and every missed call tagged on a daily disposition sheet [Local Service Ads — abdd1rgCZ90 @ 00:03:00]. Intake staff are treated like salesmen, not receptionists."
         },
         {
-          "name": "Scheduling leverage and human capacity",
+          "name": "mass_tort_qc",
           "type": "textarea",
-          "prompt": "Estimate scheduling workload before and after automation, including exceptions and no-shows. Translate time saved into available delivery capacity, and identify the human judgment that must remain outside calendar routing and reminder automation.",
-          "example": "At 120 held meetings annually, manual scheduling averaging 20 minutes consumes 40 hours. Automated routing plus five minutes of exception handling per meeting consumes 10 hours, freeing 30 hours. Staff still verify role fit and attendance; automated reminders do not establish qualification or justify an opportunity fee."
+          "prompt": "Define the secondary QC every signed mass tort case must clear before it counts as inventory: background check, internal database search for dual representation and known frauds, facility call confirming treatment, and the viability score with reason required on each file.",
+          "example": "No case is inventory until background check, dual-representation and known-fraud search, and a facility treatment call clear [IMG — dxqvZPB25eo @ 00:00:37]. Every file carries a viability score and reason so nonviable cases release on ingestion and the source is shut down [IMG — dxqvZPB25eo @ 00:03:43]. Frauds always answer, so a quick pickup proves nothing."
         },
         {
-          "name": "Outage fallback and restart reconciliation",
+          "name": "legal_cpl_benchmarks",
           "type": "textarea",
-          "prompt": "Define the manual process for unavailable CRM, scheduling, data, or sending systems. Identify pause authority, temporary records, access restrictions, and the reconciliation steps required before restarting automation after service restoration.",
-          "example": "If HubSpot is unavailable, pause new outreach and fee exports. The delivery lead tracks existing meeting changes in an access-restricted worksheet using durable opportunity IDs. After recovery, compare timestamps and event IDs before replaying updates. Resume only after pending cancellations and suppression changes have synchronized."
+          "prompt": "Write the cost benchmarks you will judge each legal campaign against: blended Meta cost per lead, practice-area cost per lead, signed-case conversion, realistic weekly case volume and the per-case floor for hard torts, plus lead exclusivity terms.",
+          "example": "Blended Meta benchmark is $42 CPL across 4,600+ leads, with personal injury at $64 [SMB Team — WZ82yYgND3M @ 00:27:56]. Depo cases are hard to land under $10,000 or above 1 to 3 a week, so a 30-case order at $5,000 is refused [IMG — dxqvZPB25eo @ 00:06:32]. Only exclusive live transfers are bought, never shared leads."
         },
         {
-          "name": "Growth flywheel and dependency risk",
+          "name": "retainer_qualification",
           "type": "textarea",
-          "prompt": "Explain how validated delivery evidence improves targeting, positioning, referrals, and retention. List vendor and client dependencies, assign fallback owners, and prevent case-study production from exposing confidential client pipeline or implying unverified closed revenue.",
-          "example": "Each month, summarize accepted-opportunity reasons and rejection patterns to improve the next account cohort. Request client permission before publishing a case study showing 15 accepted opportunities. Report client sales outcomes only when verified and authorized. Maintain portable CRM exports and an alternate licensed data source to reduce dependency."
+          "prompt": "Score the prospective retainer client against the six criteria: recurring problem, measurable value, inside your moat, outcome owner, capacity to pay and trust earned. Then set the fee as a share of 12-month value, the minimum term and the single recommended option.",
+          "example": "Client meets 5 of 6 criteria; trust is still being earned, which is the floor [Ana Leiman — ngCxldTE3UI @ 00:06:36]. Value over 12 months is $400K, so the fee lands at 10 to 20%, shown without hours, with one recommended option [Ana Leiman — ngCxldTE3UI @ 00:05:08]. The term opens at one year; paying upfront earns two months free."
         }
       ],
-      "completion_gate": "The automation owner demonstrates qualification scoring, attribution review, scheduling, immediate suppression, and a successful outage recovery using controlled records. The growth lead approves one bounded experiment with defined denominators and documented pause criteria."
+      "completion_gate": "Worksheet 5 is complete when every pitched parcel shows voltage, zoning and re-use evidence, every hail claim has a test-square evidence log, UCC searches are on file, and the legal intake plan states speed rules, secondary QC, cost benchmarks and a scored retainer client."
     },
     {
       "worksheet_id": "ws-06",
       "number": 6,
-      "title": "30-Day Launch Sprint, Pod KPI Scorecard & Exit-Readiness Ledger",
-      "purpose": "Turn the operating design into a funded 30-day launch plan with clear responsibilities, evidence-based milestones, and explicit stop decisions. Track the small team's delivery quality and financial health while organizing transferable contracts, clean records, and documented processes for eventual ownership transition.",
-      "chapter_ref": "Q11, Q12",
+      "title": "Attribution Discipline and Commercial Guardrails",
+      "purpose": "Commit to one attribution model matched to the real sales cycle, automate the CRM data that feeds it, and package lead generation into risk-shared, recurring deals that stay inside non-circumvention, filing and FINRA trip-wires.",
+      "chapter_ref": "Q11-Q12",
       "instructions": [
-        "Treat the first 30 days as a readiness and learning sprint, not a substitute for the stated 3–12 month first-deal timeline. Set milestones around validated accounts, contract terms, controlled tests, and qualified client conversations rather than assumed collections.",
-        "Assign every deliverable to one accountable person and identify supporting contractors. Preserve the canonical team structure when describing steady-state scenarios, but stage launch commitments according to available cash and verified demand rather than hiring everyone immediately.",
-        "Use one weekly scorecard combining leading indicators, accepted-opportunity quality, collections, cash runway, and client concentration. Define each denominator and source system so the pod cannot improve an apparent metric by changing its interpretation between reviews.",
-        "Maintain a decision log for changes to niche, pricing, targeting, staffing, and automation. Record the evidence behind each change and its expected cash impact. Separate deviations from the forecast from revisions to the immutable canonical scenario reference.",
-        "Build transfer readiness while operating, not after receiving an acquisition inquiry. Keep signed agreements, reconciled financials, access inventories, documented procedures, and client permissions organized, while restricting confidential information until a legitimate transaction process authorizes disclosure."
+        "Pick one attribution model, match its influence window to your real sales cycle, and stay consistent rather than hiding inside blended CAC numbers.",
+        "Automate campaign membership and audit lifecycle workflows so no rep touches attribution data and no non-deal signup fires as a customer conversion.",
+        "Run the weekly pipeline hygiene report and test every AI agent on a small batch before full automation or any proposal leaves the building.",
+        "Write the hybrid pricing terms, resale split and credit rules into the contract before pitching, and protect every introduction with non-circumvention language.",
+        "Map each finance-sector campaign against retail communication thresholds, Form D timing, pre-ODD limits and Reg BI rules before a single message goes out."
       ],
       "fields": [
         {
-          "name": "Days 1–7 underwriting and commercial foundation",
+          "name": "attribution_model_choice",
           "type": "textarea",
-          "prompt": "Specify first-week deliverables, owners, spending limits, and evidence required for completion. Focus on selecting the vertical, validating the offer, preparing contract terms, and reconciling the cash plan before configuring extensive automation.",
-          "example": "The commercial lead completes five client-discovery interviews and selects manufacturing modernization. The delivery lead researches 40 pilot accounts. Finance reconciles the $75,000 funding plan and limits week-one commitments to $5,000 within the $25,000 setup budget. Completion requires an evidence-backed offer and reviewed services schedule."
+          "prompt": "Name the attribution model you will commit to and justify it against your real sales cycle length. State the influence window you will set, how it matches that cycle, and what share of revenue a short ad-platform click window would miss.",
+          "example": "With an 84-day average cycle, a 30-day click window captures only 5-15% of revenue [GrowthSpree - AI Native B2B Marketing Agency — fdPFLXFJlwo @ 00:00:18]. So the model is even distribution in Salesforce with a 180-day influence window matched to the cycle. Last touch only fits hyper-fast cycles near nine days [Chris Walker — wkcuqfylydw @ 00:01:29]."
         },
         {
-          "name": "Days 8–14 data, systems, and controlled tests",
+          "name": "utm_campaign_automation",
           "type": "textarea",
-          "prompt": "List second-week system configuration and verification work, including access roles, suppression, identifiers, attribution, scheduling, and billing exports. Require observable test results rather than treating installed software or purchased data as completed operational capability.",
-          "example": "Configure the HubSpot stages, client access boundaries, Calendly routing, and acceptance ledger. Run the 12 controlled pre-flight cases and repair every fee-duplication or suppression defect. Import only the 40 researched pilot accounts after exclusion matching. Keep production outreach disabled until the operational and channel checks are complete."
+          "prompt": "Describe how campaign membership will be captured without any rep touching it: where the campaign ID lives in each UTM, which hidden form field stores it, which automated flow creates the campaign member record, and who audits it monthly.",
+          "example": "Every UTM carries the Salesforce campaign ID, captured in a hidden 'SF campaign' form field, and a Flow creates the campaign member automatically [SalesLabX — JkmlKUCHcmA @ 00:56:16]. Marketing owns this, because campaign membership should be automated, not dependent on anyone adding members manually [SalesLabX — JkmlKUCHcmA @ 00:18:25]. Marketing ops audits mismatches monthly."
         },
         {
-          "name": "Days 15–21 bounded client-acquisition experiment",
+          "name": "lifecycle_workflow_audit",
           "type": "textarea",
-          "prompt": "Define the third-week acquisition experiment, target counterparties, contact limits, measurement period, and review owner. Distinguish selling the agency service from performing outbound work for an unsigned client or claiming a downstream enterprise deal.",
-          "example": "Approach 20 carefully selected software vendors that serve the chosen manufacturing segment, using the approved email controls. Target four substantive sales conversations as a learning objective. Present the $7,500 retainer and $1,500 accepted-opportunity structure. Do not launch client-branded campaigns before a signed agreement and required funding."
+          "prompt": "List every HubSpot workflow that can set lifecycle stage to Customer and confirm each requires a real closed deal. Note which non-deal signups were firing false customer conversions into branded or retargeting campaigns and how you stopped them.",
+          "example": "Workflow 'Product signup to Customer' auto-moved an IT signup to Customer, firing false conversions in branded and retargeting campaigns [Cole Furrh | B2B SaaS PPC Pro — WOpqbZNyqNE @ 00:03:29]. It now requires a closed deal; Opportunity remains the first stage with a value attached to the lead [Cole Furrh | B2B SaaS PPC Pro — WOpqbZNyqNE @ 00:02:40]. Two workflows passed."
         },
         {
-          "name": "Days 22–30 review and next-month decision",
+          "name": "multi_touch_scope",
           "type": "textarea",
-          "prompt": "Set the final-week review agenda, continuation criteria, budget decision, and unresolved evidence requirements. Explain how the operator proceeds if the sprint produces learning and qualified conversations but no signed client or collected revenue.",
-          "example": "Review interview evidence, contact quality, reply reasons, test results, and actual cash spending. If no client has signed, preserve the 3–12 month acquisition assumption and authorize only the next funded experiment. Continue with the niche when buyers validate the problem; revise positioning when objections consistently reject the proposed value."
+          "prompt": "Scope your multi-touch model: the number of baseline channels, the workflows and fields required, how data accrues forward and gets backfilled, and how you will prove that revenue rolls up to exactly 100 percent for the board.",
+          "example": "HubSpot Pro build with 12 baseline channels, 7 workflows and 80-some fields, accruing forward with manual backfill of the last two quarters [Value-First — NZUqq5BtQuU @ 00:14:17]. The board gets non-squishy numbers that total 100 percent [Value-First — NZUqq5BtQuU @ 00:10:58]. If 90 percent shows organic during event spend, the missing channel is found first."
         },
         {
-          "name": "Pod roles and staged staffing commitments",
+          "name": "pipeline_hygiene_report",
           "type": "textarea",
-          "prompt": "Assign commercial, research, operations, quality, and finance responsibilities across employees and contractors. Document fractional availability, backup coverage, and the revenue or cash milestones required before increasing fixed commitments toward the canonical team.",
-          "example": "At Base steady state, two full-time roles cover commercial leadership and delivery operations. Three fractional contractors cover research, CRM automation, and finance support. During launch, use limited contracted hours until funding supports recurring commitments. The Scaled structure adds one full-time client lead and one contractor, reaching seven people."
+          "prompt": "Design the weekly pipeline hygiene report: which opportunities it flags, how they are grouped, which deal sizes trigger a challenge, and the closed-won share of pipeline you will treat as healthy versus a sign opportunities open too late.",
+          "example": "Monday exception report lists opportunities with no contact roles, grouped by rep, and any $60k-$100k deal carrying a single contact gets challenged [SalesLabX — JkmlKUCHcmA @ 00:28:18]. Healthy closed-won share of pipeline sits near 30%; at 51% or 70-80%, opportunities are being opened too late [SalesLabX — JkmlKUCHcmA @ 00:21:55]. Reps fix flags by Wednesday."
         },
         {
-          "name": "Weekly pod KPI definitions and evidence",
+          "name": "ai_outreach_guardrails",
           "type": "textarea",
-          "prompt": "Define the weekly metrics, denominators, owners, and source records. Include delivery quality, client response speed, overdue reviews, collection performance, and cash runway so volume metrics cannot hide rejection problems or deteriorating liquidity.",
-          "example": "Track eligible accounts researched, positive replies per delivered contact, held meetings per scheduled meeting, accepted opportunities per submission, overdue acceptance reviews, and collected cash per due invoice dollar. Finance reports runway from unrestricted cash and forecast net burn; the delivery lead reports rejection reasons by client every Friday."
+          "prompt": "Set the guardrails for AI-drafted outreach and proposals: email length, the test batch size before full automation, the facts every proposal must check against a quoted source line, and the promises the agent is never allowed to make.",
+          "example": "n8n agent emails stay at 4-7 sentences and run on 8 test leads before full automation [AI Automation Official — bQPaiBg-cWs @ 00:01:20]. No agent-drafted proposal ships until site counts, entities and dates match a quoted source line, and the agent never promises discounts or dates [Ambilio — oWWC4Sj-SjA @ 00:06:57]. A human reviewer signs off each proposal."
         },
         {
-          "name": "Monthly financial scorecard and variance bridge",
+          "name": "hybrid_pricing_terms",
           "type": "textarea",
-          "prompt": "Compare actual revenue, costs, owner profit, and collections with the chosen scenario run rate. Separate timing differences from structural shortfalls and explain each material variance using ledger evidence rather than changing the reference scenario.",
-          "example": "The Base monthly average is $56,250 revenue, $39,375 costs, and $16,875 owner net profit. A month with $45,000 retainers and eight accepted opportunities produces $57,000 revenue. At $39,375 costs, profit is $17,625, or $750 above the reference; cash may differ because fees collect later."
+          "prompt": "Write the hybrid lead-gen deal you will offer: base retainer versus full retainer, who funds ad spend, who owns the ad account and pixel, the paid-result definition, the resale split on unqualified leads, and credit pricing and expiry.",
+          "example": "Retainer drops from $5K to $2K a month; the client funds ad spend and pays more only per delivered appointment [Rafael Hernandez ⚡️ — XPcFTfp7i8E @ 00:05:05]. The contract names ad and pixel ownership, defines a paid appointment, sets the fifty-fifty resale split and prices credits with a 90-day expiry [Rafael Hernandez ⚡️ — XPcFTfp7i8E @ 00:05:42]."
         },
         {
-          "name": "Stop, repair, and expansion decision log",
-          "type": "textarea",
-          "prompt": "Write specific conditions for pausing outreach, repairing delivery, changing the offer, or adding capacity. Include decision authority and cash consequences, and distinguish a failed experiment from evidence that the entire business model cannot work.",
-          "example": "Pause a client's new submissions if two consecutive batches exceed 20% rejection and investigate qualification drift. Freeze hiring when forecast cash falls below eight weeks of committed spending. Expand account coverage only after acceptance quality stabilizes and the client confirms sales capacity. Record each decision with an owner and review date."
+          "name": "performance_vs_flat",
+          "type": "text",
+          "prompt": "Decide whether this client gets performance pay, a flat fee or a hybrid. Explain how the retainer level changes with performance pay and which retention rate you need across your book before the business earns a real exit multiple.",
+          "example": "Hybrid. Performance deals usually come coupled with an abnormally lower retainer, so clients that barely produce get dropped rather than carried [Daniel Fazio Highlights — bQCztTB4VbQ @ 00:04:19]. Recurring $200-a-month maintenance plans replace one-off builds, and the target is 80 percent plus yearly retention for a six-plus multiple [Alex Hormozi — O1As2zxy0es @ 00:10:50]."
         },
         {
-          "name": "Transferable operating assets and rights ledger",
+          "name": "introduction_protection",
           "type": "textarea",
-          "prompt": "Inventory contracts, process documents, domains, system configurations, data rights, and staff knowledge that a successor would need. Identify assignment restrictions, client permissions, and vendor limitations before describing the business as readily transferable.",
-          "example": "Maintain signed client agreements, renewal dates, assignment clauses, domain ownership records, CRM configuration exports, and documented qualification procedures. Flag two data licenses requiring vendor permission before transfer. Store contractor confidentiality and intellectual-property terms with each engagement. A buyer receives only information authorized for the transaction's current stage."
+          "prompt": "Describe how you will protect capital introductions and allocations: the non-circumvention clause covering each introduction, the in-person meeting rule before a large allocation is accepted, and how trust and risk understanding are built before money moves.",
+          "example": "Every introduction is locked with a signed non-circumvention clause before names are shared. No large allocation is accepted until the investor meets the manager in person; a 10 million dollar check that skipped the handshake redeemed after one bad month inside seven months [Centimillionaire Strategies — N8Z0FPf2yLw @ 00:08:33]. Capital moves because trust is built [Centimillionaire Strategies — N8Z0FPf2yLw @ 00:02:22]."
         },
         {
-          "name": "Exit-readiness financial and customer evidence",
+          "name": "regulatory_tripwires",
           "type": "textarea",
-          "prompt": "Define the financial, operational, and customer evidence needed for a credible ownership-transition review. Separate canonical owner profit from any buyer-specific earnings measure, and identify unresolved adjustments without inventing a valuation multiple or sale price.",
-          "example": "Organize 12 months of reconciled revenue, accepted-fee ledgers, credits, bank collections, churn, concentration, and contractor costs. Present $202,500 as the canonical Base owner net profit, not automatically EBITDA. Document owner duties and replacement-cost assumptions separately. Support retention claims with renewals and client correspondence rather than projected pipeline value."
+          "prompt": "List the regulatory trip-wires on your finance-sector campaigns: the retail communication threshold that triggers principal pre-approval, the Form D and blue sky filing deadline and date of first sale, pre-ODD content limits, and Reg BI rules on contests and quotas.",
+          "example": "Any piece reaching more than 25 retail investors in 30 calendar days goes to principal pre-approval [Financial Regulation Courses — CmOezPFI5ew @ 00:00:28]. Form D plus blue skies file within 15 days of close, with first sale dated to countersigned subscriptions [All Things SPVs — F1OsgcF_bhg @ 00:09:49]. Pre-ODD emails carry no performance figures or security names. Sales contests are banned."
         }
       ],
-      "completion_gate": "The operator closes the 30-day sprint with documented test results, actual spending, client-acquisition evidence, a funded next-month plan, named pod responsibilities, and an organized operating ledger. Any uncompleted milestone retains an owner, dependency, and review date."
+      "completion_gate": "Worksheet 6 is complete when one attribution model and influence window are committed in writing, campaign membership and lifecycle workflows are automated and audited, AI guardrails are tested on a small batch, and every commercial deal and finance-sector campaign clears its pricing, protection and regulatory trip-wires."
     }
   ]
 }

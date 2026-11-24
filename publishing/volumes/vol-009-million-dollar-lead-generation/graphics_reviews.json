@@ -29,14 +29,14 @@
     "08_phone_tablet_mockup",
     "09_series_collection_mockup",
     "10_social_promo_pack",
-    "diag-01-enterprise-opportunity-workflow",
-    "diag-02-nested-enterprise-account-cohort",
-    "diag-03-base-revenue-to-owner-net",
-    "diag-04-qualified-opportunity-fee-yields",
-    "diag-05-preflight-statutory-risk-decisions",
-    "diag-06-five-to-seven-person-pod",
-    "diag-07-startup-capital-allocation",
-    "diag-08-thirty-day-launch-sprint"
+    "diag-01-problem-led-buyer-definition",
+    "diag-02-competitive-deal-funnel",
+    "diag-03-enterprise-play-yield",
+    "diag-04-abm-performance-markers",
+    "diag-05-thought-leadership-gates",
+    "diag-06-crm-attribution-architecture",
+    "diag-07-signal-reply-rate-comparison",
+    "diag-08-commercial-guardrail-roadmap"
   ],
   "cover_graphic_ids": [
     "cover_front",
@@ -54,14 +54,14 @@
     "10_social_promo_pack"
   ],
   "diagram_graphic_ids": [
-    "diag-01-enterprise-opportunity-workflow",
-    "diag-02-nested-enterprise-account-cohort",
-    "diag-03-base-revenue-to-owner-net",
-    "diag-04-qualified-opportunity-fee-yields",
-    "diag-05-preflight-statutory-risk-decisions",
-    "diag-06-five-to-seven-person-pod",
-    "diag-07-startup-capital-allocation",
-    "diag-08-thirty-day-launch-sprint"
+    "diag-01-problem-led-buyer-definition",
+    "diag-02-competitive-deal-funnel",
+    "diag-03-enterprise-play-yield",
+    "diag-04-abm-performance-markers",
+    "diag-05-thought-leadership-gates",
+    "diag-06-crm-attribution-architecture",
+    "diag-07-signal-reply-rate-comparison",
+    "diag-08-commercial-guardrail-roadmap"
   ],
   "allowed_statuses": [
     "approved",
@@ -486,11 +486,11 @@
         "reviewed_at": null
       }
     },
-    "diag-01-enterprise-opportunity-workflow": {
+    "diag-01-problem-led-buyer-definition": {
       "concept_a": {
-        "graphic_id": "diag-01-enterprise-opportunity-workflow",
+        "graphic_id": "diag-01-problem-led-buyer-definition",
         "graphic_type": "diagram",
-        "label": "From Account Signal to Earned Operator Revenue",
+        "label": "Define the Buyer by the Pain You Fix",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -498,9 +498,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-01-enterprise-opportunity-workflow",
+        "graphic_id": "diag-01-problem-led-buyer-definition",
         "graphic_type": "diagram",
-        "label": "From Account Signal to Earned Operator Revenue",
+        "label": "Define the Buyer by the Pain You Fix",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -508,9 +508,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-01-enterprise-opportunity-workflow",
+        "graphic_id": "diag-01-problem-led-buyer-definition",
         "graphic_type": "diagram",
-        "label": "From Account Signal to Earned Operator Revenue",
+        "label": "Define the Buyer by the Pain You Fix",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -518,11 +518,11 @@
         "reviewed_at": null
       }
     },
-    "diag-02-nested-enterprise-account-cohort": {
+    "diag-02-competitive-deal-funnel": {
       "concept_a": {
-        "graphic_id": "diag-02-nested-enterprise-account-cohort",
+        "graphic_id": "diag-02-competitive-deal-funnel",
         "graphic_type": "diagram",
-        "label": "A Single Cohort, Five Observable Outcomes",
+        "label": "From Signed NDAs to One Winning Buyer",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -530,9 +530,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-02-nested-enterprise-account-cohort",
+        "graphic_id": "diag-02-competitive-deal-funnel",
         "graphic_type": "diagram",
-        "label": "A Single Cohort, Five Observable Outcomes",
+        "label": "From Signed NDAs to One Winning Buyer",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -540,9 +540,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-02-nested-enterprise-account-cohort",
+        "graphic_id": "diag-02-competitive-deal-funnel",
         "graphic_type": "diagram",
-        "label": "A Single Cohort, Five Observable Outcomes",
+        "label": "From Signed NDAs to One Winning Buyer",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -550,11 +550,11 @@
         "reviewed_at": null
       }
     },
-    "diag-03-base-revenue-to-owner-net": {
+    "diag-03-enterprise-play-yield": {
       "concept_a": {
-        "graphic_id": "diag-03-base-revenue-to-owner-net",
+        "graphic_id": "diag-03-enterprise-play-yield",
         "graphic_type": "diagram",
-        "label": "The $675,000 Base Revenue-to-Net Bridge",
+        "label": "Two Enterprise Plays, Measured to the Result",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -562,9 +562,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-03-base-revenue-to-owner-net",
+        "graphic_id": "diag-03-enterprise-play-yield",
         "graphic_type": "diagram",
-        "label": "The $675,000 Base Revenue-to-Net Bridge",
+        "label": "Two Enterprise Plays, Measured to the Result",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -572,9 +572,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-03-base-revenue-to-owner-net",
+        "graphic_id": "diag-03-enterprise-play-yield",
         "graphic_type": "diagram",
-        "label": "The $675,000 Base Revenue-to-Net Bridge",
+        "label": "Two Enterprise Plays, Measured to the Result",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -582,11 +582,11 @@
         "reviewed_at": null
       }
     },
-    "diag-04-qualified-opportunity-fee-yields": {
+    "diag-04-abm-performance-markers": {
       "concept_a": {
-        "graphic_id": "diag-04-qualified-opportunity-fee-yields",
+        "graphic_id": "diag-04-abm-performance-markers",
         "graphic_type": "diagram",
-        "label": "Compare Contracted Fee Yield, Not Client Deal Size",
+        "label": "ABM Performance Markers Practitioners Report",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -594,9 +594,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-04-qualified-opportunity-fee-yields",
+        "graphic_id": "diag-04-abm-performance-markers",
         "graphic_type": "diagram",
-        "label": "Compare Contracted Fee Yield, Not Client Deal Size",
+        "label": "ABM Performance Markers Practitioners Report",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -604,9 +604,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-04-qualified-opportunity-fee-yields",
+        "graphic_id": "diag-04-abm-performance-markers",
         "graphic_type": "diagram",
-        "label": "Compare Contracted Fee Yield, Not Client Deal Size",
+        "label": "ABM Performance Markers Practitioners Report",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -614,11 +614,11 @@
         "reviewed_at": null
       }
     },
-    "diag-05-preflight-statutory-risk-decisions": {
+    "diag-05-thought-leadership-gates": {
       "concept_a": {
-        "graphic_id": "diag-05-preflight-statutory-risk-decisions",
+        "graphic_id": "diag-05-thought-leadership-gates",
         "graphic_type": "diagram",
-        "label": "Four Pre-Flight Decisions Before Outreach",
+        "label": "Four Gates Before Thought Leadership Gets Budget",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -626,9 +626,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-05-preflight-statutory-risk-decisions",
+        "graphic_id": "diag-05-thought-leadership-gates",
         "graphic_type": "diagram",
-        "label": "Four Pre-Flight Decisions Before Outreach",
+        "label": "Four Gates Before Thought Leadership Gets Budget",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -636,9 +636,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-05-preflight-statutory-risk-decisions",
+        "graphic_id": "diag-05-thought-leadership-gates",
         "graphic_type": "diagram",
-        "label": "Four Pre-Flight Decisions Before Outreach",
+        "label": "Four Gates Before Thought Leadership Gets Budget",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -646,11 +646,11 @@
         "reviewed_at": null
       }
     },
-    "diag-06-five-to-seven-person-pod": {
+    "diag-06-crm-attribution-architecture": {
       "concept_a": {
-        "graphic_id": "diag-06-five-to-seven-person-pod",
+        "graphic_id": "diag-06-crm-attribution-architecture",
         "graphic_type": "diagram",
-        "label": "The Five-Person Core and Seven-Person Expansion",
+        "label": "One Model, Automated Membership, Checked Outputs",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -658,9 +658,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-06-five-to-seven-person-pod",
+        "graphic_id": "diag-06-crm-attribution-architecture",
         "graphic_type": "diagram",
-        "label": "The Five-Person Core and Seven-Person Expansion",
+        "label": "One Model, Automated Membership, Checked Outputs",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -668,9 +668,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-06-five-to-seven-person-pod",
+        "graphic_id": "diag-06-crm-attribution-architecture",
         "graphic_type": "diagram",
-        "label": "The Five-Person Core and Seven-Person Expansion",
+        "label": "One Model, Automated Membership, Checked Outputs",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -678,11 +678,11 @@
         "reviewed_at": null
       }
     },
-    "diag-07-startup-capital-allocation": {
+    "diag-07-signal-reply-rate-comparison": {
       "concept_a": {
-        "graphic_id": "diag-07-startup-capital-allocation",
+        "graphic_id": "diag-07-signal-reply-rate-comparison",
         "graphic_type": "diagram",
-        "label": "Allocate Startup Cash Before Expanding Delivery",
+        "label": "Timing Beats Targeting, Targeting Beats Copy",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -690,9 +690,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-07-startup-capital-allocation",
+        "graphic_id": "diag-07-signal-reply-rate-comparison",
         "graphic_type": "diagram",
-        "label": "Allocate Startup Cash Before Expanding Delivery",
+        "label": "Timing Beats Targeting, Targeting Beats Copy",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -700,9 +700,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-07-startup-capital-allocation",
+        "graphic_id": "diag-07-signal-reply-rate-comparison",
         "graphic_type": "diagram",
-        "label": "Allocate Startup Cash Before Expanding Delivery",
+        "label": "Timing Beats Targeting, Targeting Beats Copy",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -710,11 +710,11 @@
         "reviewed_at": null
       }
     },
-    "diag-08-thirty-day-launch-sprint": {
+    "diag-08-commercial-guardrail-roadmap": {
       "concept_a": {
-        "graphic_id": "diag-08-thirty-day-launch-sprint",
+        "graphic_id": "diag-08-commercial-guardrail-roadmap",
         "graphic_type": "diagram",
-        "label": "Thirty Days to an Instrumented Pilot",
+        "label": "Contract the Model, Then Clear the Trip-Wires",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -722,9 +722,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-08-thirty-day-launch-sprint",
+        "graphic_id": "diag-08-commercial-guardrail-roadmap",
         "graphic_type": "diagram",
-        "label": "Thirty Days to an Instrumented Pilot",
+        "label": "Contract the Model, Then Clear the Trip-Wires",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -732,9 +732,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-08-thirty-day-launch-sprint",
+        "graphic_id": "diag-08-commercial-guardrail-roadmap",
         "graphic_type": "diagram",
-        "label": "Thirty Days to an Instrumented Pilot",
+        "label": "Contract the Model, Then Clear the Trip-Wires",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -743,5 +743,5 @@
       }
     }
   },
-  "updated_at": "2026-11-23T22:48:00Z"
+  "updated_at": "2026-11-24T19:54:29Z"
 }

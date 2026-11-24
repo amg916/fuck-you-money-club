@@ -1,1156 +1,882 @@
 from __future__ import annotations
 
-CHAPTER_7 = {
-    "id": "Q7",
-    "chapter_id": "Q7",
-    "chapter_number": 7,
-    "question_number": 7,
-    "slug": "high-ticket-brokerage-operating-process-production-blueprint-90-day-cohort",
-    "question_prompt": "How does an operator execute high-ticket brokerage end-to-end from intake to reconciled cash, backed by an auditable technical/ledger blueprint and a worked 90-day cohort walk?",
-    "kicker": "Q7 / THE BIG MONEY PLAYBOOKS",
-    "title": "The Complete Operating Process, Production Blueprint & 90-Day Cohort Walk",
-    "subtitle": "Exclusive Mandates, SEC EDGAR Triggers, Powered-Land Options, Independent Escrow, and a Transaction-Safe SQLite Commission Ledger",
-    "layout_template": "research_exhibit",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #26, High-Ticket Brokerage, ranks #10 with an 88/100 "
-        "Money-to-Manpower Score across 21 mapped plays. This chapter turns "
-        "specialist transaction services into a controlled operating sequence: "
-        "source, qualify, verify authority, secure an exclusive mandate, match "
-        "buyers, supervise independent escrow, and reconcile retained commissions. "
-        "A six-module SQLite reference implements serialized writes, immutable "
-        "events, balanced journal records, and replay-safe commands. The worked "
-        "90-day cohort separates inherited opportunities from new leads and "
-        "reconciles $137,500 earned commissions to the $550,000 Base annual "
-        "revenue run rate. Annual owner net profit remains $25,000 Conservative, "
-        "$206,250 Base, and $500,000 Scaled. SEC-trigger outreach and powered-land "
-        "screening receive explicit unit economics, evidence requirements, and "
-        "failure fallbacks; neither asset consideration nor option principal "
-        "becomes brokerage revenue."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$100,000",
-            "context": "Annual retained transaction commissions; underlying asset values excluded",
-            "note": "25% net margin; $25,000 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Base",
-            "value": "$550,000",
-            "context": "Annual retained transaction commissions; underlying asset values excluded",
-            "note": "37.5% net margin; $206,250 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$1,000,000",
-            "context": "Annual retained transaction commissions; underlying asset values excluded",
-            "note": "50% net margin; $500,000 annual owner net profit; 2 FT + 4 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Move Each Mandate from Verified Authority to Earned Commission",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Start with one asset class, one buyer population, and one "
-                    "defensible mandate rather than advertising universal deal access. "
-                    "Assign a permanent mandate identifier before collecting documents, "
-                    "then record the seller entity, authorized signer, beneficial "
-                    "ownership evidence, asset description, jurisdiction, expected "
-                    "consideration, fee basis, and existing intermediary claims. "
-                    "The Base operating unit is a $27,500 retained commission; "
-                    "twenty completed units produce $550,000 annual operator revenue. "
-                    "A $2,750,000 asset transaction charging one percent illustrates "
-                    "that unit, but the asset consideration never enters revenue. "
-                    "If a cooperating broker receives $7,500 from a $35,000 "
-                    "contractual commission, this model records the $27,500 retained "
-                    "portion and documents the settlement allocation separately. "
-                    "Have the accounting reviewer confirm the presentation against "
-                    "the actual contractual role. The owner handles qualification, "
-                    "pricing, negotiation, and closing accountability; three contractors "
-                    "cover research, document coordination, and specialist review. "
-                    "Contractors receive bounded work orders and evidence access, "
-                    "not authority to bind clients or redirect settlement proceeds. "
-                    "Reject an intake that cannot identify who owns the asset "
-                    "or who may appoint the intermediary. A signed introduction "
-                    "agreement cannot repair missing authority, and an attractive "
-                    "asking price cannot substitute for transferable title."
-                ),
-                (
-                    "Classify the transaction before circulating a teaser. An asset "
-                    "sale, a securities transfer, and a real-property conveyance "
-                    "can require different registrations, disclosures, and compensation "
-                    "arrangements even when the same company owns everything. "
-                    "For qualifying private-company control transactions, examine "
-                    "15 U.S.C. 78o(b)(13), including buyer control and active "
-                    "management, eligible-company size, disqualifications, and excluded "
-                    "activities. Its federal M&A broker exemption does not erase "
-                    "state requirements, permit custody of transaction funds, or "
-                    "cover every minority investment introduction. In California, "
-                    "Business and Professions Code section 10131 reaches specified "
-                    "real-estate and business-opportunity brokerage activities; section "
-                    "10137 restricts payments for licensed acts to unlicensed "
-                    "persons. Record the actual license or exemption analysis "
-                    "for the particular role, not a generic company label. "
-                    "Then execute an exclusive mandate defining scope, term, "
-                    "fee trigger, retained share, named exclusions, reporting duties, "
-                    "termination, and a carefully bounded tail. Use an NCNDA "
-                    "to define protected introductions and permitted disclosures, "
-                    "with dated introduction evidence and clear exceptions for "
-                    "existing relationships. It cannot create licensing authority "
-                    "or ensure collection by itself. Route ownership conflicts, "
-                    "duplicate mandates, and uncertain fee entitlement to specialist "
-                    "review before spending buyer credibility on the opportunity."
-                ),
-                (
-                    "Run buyer matching as controlled disclosure, not indiscriminate "
-                    "distribution. Share a redacted teaser first, verify buying "
-                    "authority and plausible funding, execute the required confidentiality "
-                    "documents, and only then release a permissioned diligence "
-                    "package through ShareFile, Box, or an equivalent controlled "
-                    "repository. Record each version, recipient, download permission, "
-                    "and material correction. Require the seller to distinguish "
-                    "documented facts from forecasts, especially adjusted earnings, "
-                    "customer concentration, title restrictions, and infrastructure claims. "
-                    "A letter of intent starts diligence; it does not earn "
-                    "the success commission unless the contract expressly creates "
-                    "a different, separately reviewed entitlement. Select an independent "
-                    "escrow or closing professional appropriate to the asset "
-                    "and jurisdiction. Verify settlement instructions by calling "
-                    "a previously established number, never the number supplied "
-                    "inside a last-minute wire-change message. The broker tracks "
-                    "conditions and fee allocation without receiving buyer principal. "
-                    "At closing, compare the signed settlement statement, contractual "
-                    "earning trigger, retained commission calculation, and escrow "
-                    "disbursement advice. Record earned revenue and a receivable "
-                    "only after the entitlement is established. Clear that "
-                    "receivable only against settled bank evidence, preserving "
-                    "the distinction between an executed transaction, an issued "
-                    "invoice, a promised wire, and cash actually received."
-                ),
-            ],
-            "table": {
-                "caption": "Mandate-to-Cash Operating Matrix: Evidence, Ownership, and Stop Conditions",
-                "headers": [
-                    "Operating checkpoint and accountable work owner",
-                    "Evidence required before the next transition",
-                    "Commercial control and measurable operating unit",
-                    "Failure response preserving client and operator assets",
-                ],
-                "rows": [
-                    [
-                        "Owner opens a narrowly defined seller intake",
-                        "Entity records, signer authority, asset description, and jurisdiction",
-                        "One canonical mandate identifier prevents duplicate opportunity counting",
-                        "Pause outreach when ownership or appointment authority conflicts",
-                    ],
-                    [
-                        "Specialist reviewer classifies the proposed transaction role",
-                        "Asset-specific license analysis and documented federal exemption conditions",
-                        "Budget review before committing expensive buyer-facing diligence hours",
-                        "Refer restricted activity to an appropriately authorized intermediary",
-                    ],
-                    [
-                        "Owner executes exclusive mandate and introduction protections",
-                        "Signed fee schedule, exclusions, term, tail, and agency disclosures",
-                        "Model only the commission retained after settlement allocations",
-                        "Resolve overlapping mandates before sharing identifiable buyer information",
-                    ],
-                    [
-                        "Research contractor builds a qualified buyer shortlist",
-                        "Buyer authority, funding evidence, confidentiality terms, and introduction log",
-                        "Track qualified conversations rather than purchased contact counts",
-                        "Restrict the data room when funding evidence deteriorates",
-                    ],
-                    [
-                        "Closing coordinator supervises independent escrow milestone completion",
-                        "Executed documents, verified instructions, conditions checklist, and settlement allocation",
-                        "Keep buyer principal outside the operator bank account",
-                        "Suspend instruction changes until independently authenticated parties confirm",
-                    ],
-                    [
-                        "Owner and bookkeeper reconcile the earned commission",
-                        "Closing statement, fee entitlement review, invoice, and settled bank record",
-                        "A $27,500 retained fee becomes one Base revenue unit",
-                        "Hold collection exceptions outside automated cash-recognition transitions",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four Verifications Before Identifiable Buyer Outreach",
-                "body": (
-                    "A promising introduction becomes an actionable mandate only "
-                    "when these four evidence packets are complete."
-                ),
-                "items": [
-                    "Verify seller ownership and signer authority against current records; resolve competing mandates before naming the asset.",
-                    "Document the asset-specific license, registration, or exemption basis and any state-law conditions governing the actual intermediary role.",
-                    "Execute agency disclosures, exclusive mandate, retained-fee allocation, and a named introduction protocol with bounded NCNDA protections.",
-                    "Appoint an appropriate independent closing professional and authenticate settlement contacts through previously established channels.",
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Create and classify the mandate",
-                    "action": "Assign a canonical source key and verify the transaction category.",
-                    "detail": "Capture authority evidence, jurisdiction, retained-fee cents, screening inputs, and the reviewer responsible for role classification.",
-                },
-                {
-                    "step": 2,
-                    "title": "Qualify and contract the opportunity",
-                    "action": "Confirm buyer fit and execute the exclusive mandate before identifiable circulation.",
-                    "detail": "Preserve the signed fee trigger, introduction exclusions, agency disclosures, and document-access instructions under the mandate identifier.",
-                },
-                {
-                    "step": 3,
-                    "title": "Coordinate diligence and independent closing",
-                    "action": "Track conditions without taking custody of client principal.",
-                    "detail": "Require source-linked diligence findings, authenticated settlement instructions, and a closing statement identifying the retained commission.",
-                },
-                {
-                    "step": 4,
-                    "title": "Recognize, collect, and reconcile",
-                    "action": "Post earned commission separately from settled cash receipt.",
-                    "detail": "Match an independently imported bank reference, reject duplicate use, and investigate every remaining receivable or unmatched bank observation.",
-                },
-            ],
-        },
-        {
-            "heading": "2. Convert SEC and Powered-Land Signals into Evidence-Backed Mandates",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Implement sec_edgar_8k_vendor_trigger_arbitrage as a research queue, "
-                    "not a claim that a filing proves seller intent. "
-                    "Monitor SEC EDGAR current-filings feeds and submissions JSON, "
-                    "deduplicating by accession number and extracting Form 8-K "
-                    "Items 5.02, 1.01, and 2.01 plus Form D filings. "
-                    "Executive departures can expose succession needs; material "
-                    "agreements can identify strategic buyers; completed acquisitions "
-                    "can suggest follow-on divestitures. Form D reports an "
-                    "exempt offering, not an SEC endorsement or proof that "
-                    "the stated offering amount was collected. Separate total "
-                    "offering amount from reported sales and read amendments "
-                    "before drafting outreach. Target a reviewed message within "
-                    "sixty minutes of detection during staffed hours; filing "
-                    "latency and feed delays remain outside that promise. "
-                    "For planning, screen 200 filings monthly, identify twenty "
-                    "relevant companies, secure four substantive conversations, and "
-                    "develop one mandate. At a hypothetical twenty-percent eventual "
-                    "close rate, that mandate contributes $5,500 expected retained "
-                    "commission before acquisition cost and timing effects. These "
-                    "are test assumptions, not additional scorecard revenue. Preserve "
-                    "the accession, source excerpt, timestamp, reviewer decision, "
-                    "and business-specific outreach rationale so a second operator "
-                    "can explain exactly why the company entered the pipeline."
-                ),
-                (
-                    "Use a shared token bucket capped at five requests "
-                    "per second across all SEC workers, identify the application "
-                    "with a descriptive User-Agent and contact address, cache "
-                    "responses, and honor access errors with backoff. During "
-                    "outages, mirror available SEC nightly bulk ZIP archives "
-                    "for historical lookbacks, including submissions.zip where suitable, "
-                    "and use daily indexes plus archived filings for document "
-                    "coverage the bulk dataset does not provide. Historical "
-                    "replay must never generate fresh-looking duplicate outreach. "
-                    "Create an outreach task keyed by accession, company, "
-                    "and play; require a human to confirm relevance before "
-                    "sending. Allocate, illustratively, $600 research labor, $150 "
-                    "data handling, and $250 specialist review to the monthly "
-                    "experiment: $1,000 divided by one expected mandate equals "
-                    "$1,000 acquisition cost, while five such mandates per "
-                    "expected closing imply $5,000 acquisition cost per closing. "
-                    "If the assumed conversion fails, narrow the event taxonomy "
-                    "rather than increasing message volume blindly. Apply CAN-SPAM "
-                    "requirements under 15 U.S.C. 7704 to commercial email, "
-                    "including accurate routing information and a functioning opt-out. "
-                    "Do not sell securities introductions merely because the "
-                    "research originated in EDGAR; compensation and transaction "
-                    "structure still determine the applicable intermediary requirements."
-                ),
-                (
-                    "Implement ferc_grid_interconnection_queue_land_speculation through a separately "
-                    "tracked site thesis. Overlay public ISO or RTO queue "
-                    "records with county parcels, zoning, flood exposure, access "
-                    "rights, substation locations, and utility correspondence using "
-                    "QGIS and dated source layers. A generation interconnection "
-                    "queue entry does not establish deliverable load service "
-                    "for a data center, and distance to a substation "
-                    "does not establish capacity. Require utility-specific service "
-                    "studies, upgrade allocation, easements, milestones, and a credible "
-                    "schedule before representing power availability. An illustrative "
-                    "screen examines forty parcels, advances eight desktop candidates, "
-                    "and commissions two $2,000 specialist reviews plus $1,000 "
-                    "mapping work: $5,000 total research expenditure. A client "
-                    "might separately risk a $10,000 contingent option deposit "
-                    "on one site; that principal never becomes brokerage "
-                    "revenue. The brokerage can target one $27,500 retained "
-                    "commission if the contingent transaction closes, but must "
-                    "carry the full $5,000 research loss if both sites "
-                    "fail. For the option-flipping variant, isolate proprietary "
-                    "option gains from this commission-only scorecard. Let "
-                    "contingent options lapse or reposition land for independently "
-                    "viable uses when service cannot be substantiated, without "
-                    "describing speculative queue proximity as secured power."
-                ),
-            ],
-            "table": {
-                "caption": "Mapped Play Execution Matrix: Signal Quality, Unit Economics, and Failure Fallbacks",
-                "headers": [
-                    "Mapped play and specific execution component",
-                    "Concrete source evidence and review procedure",
-                    "Illustrative unit economics outside automatic revenue recognition",
-                    "Fallback when the original thesis breaks",
-                ],
-                "rows": [
-                    [
-                        "sec_edgar_8k_vendor_trigger_arbitrage: parse Form 8-K event items",
-                        "Accession-linked Items 5.02, 1.01, and 2.01 receive human interpretation",
-                        "Two hundred screened filings yield twenty relevant companies monthly",
-                        "Suppress weak signals rather than manufacturing seller intent",
-                    ],
-                    [
-                        "sec_edgar_8k_vendor_trigger_arbitrage: distinguish Form D offering facts",
-                        "Read reported sales, offering amounts, amendments, and issuer identity",
-                        "Four substantive conversations target one qualified mandate monthly",
-                        "Remove capital-availability claims unsupported by the actual filing",
-                    ],
-                    [
-                        "sec_edgar_8k_vendor_trigger_arbitrage: operate resilient historical ingestion",
-                        "Shared five-request-per-second bucket, cached responses, and dated archive manifests",
-                        "A $1,000 monthly experiment implies $5,000 acquisition cost per expected closing",
-                        "Mirror available nightly bulk ZIP archives and replay without duplicate outreach",
-                    ],
-                    [
-                        "ferc_grid_interconnection_queue_land_speculation: screen parcels against public infrastructure",
-                        "QGIS joins queue records, county parcels, zoning, and substation layers",
-                        "Forty parcels narrow to eight candidates and two specialist reviews",
-                        "Discard sites whose access or permitted use fails independently",
-                    ],
-                    [
-                        "ferc_grid_interconnection_queue_land_speculation: validate contingent site control",
-                        "Utility correspondence distinguishes generation queues from actual load-service requirements",
-                        "Two $2,000 reviews plus $1,000 mapping create $5,000 exposure",
-                        "Let contingent options lapse when service evidence fails",
-                    ],
-                    [
-                        "ferc_grid_interconnection_queue_land_speculation: separate brokerage from principal speculation",
-                        "Client option documents identify deposit owner, expiry, and transfer restrictions",
-                        "A $10,000 client deposit remains separate from $27,500 retained commission",
-                        "Reposition only for independently viable uses without secured-power claims",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Four Veteran Tactics That Protect the Retained Fee",
-                "body": (
-                    "Speed matters only when the source, introduction rights, "
-                    "and settlement economics survive independent scrutiny."
-                ),
-                "items": [
-                    "Put accession numbers and exact filing excerpts into research tasks; never let an automated summary invent the commercial trigger.",
-                    "Attach named-buyer introduction receipts to the mandate record before negotiations broaden, preserving evidence for tail-period fee disputes.",
-                    "Ask the utility whether the request concerns load service or generation interconnection before paying for detailed powered-land marketing.",
-                    "Confirm the retained commission allocation with the closing professional before signature week, then reconcile the final statement against that allocation.",
-                ],
-            },
-        },
-        {
-            "heading": "3. Build a Six-Module Ledger with Serialized State Changes and Replay-Safe Posting",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Use the reference below as a small, explicit execution "
-                    "core rather than pretending a CRM is an accounting "
-                    "system. Concatenate the six code cells, in displayed "
-                    "order, into broker_ledger.py and run it with Python "
-                    "3.9 or later; the final module executes an isolated "
-                    "self-test. The code uses only the standard library "
-                    "and creates its test database inside a temporary directory. "
-                    "Production deployment initializes a local SQLite database "
-                    "once, then gives every worker its own connection. "
-                    "BEGIN IMMEDIATE serializes write transactions before reads "
-                    "that decide state changes; the version check rejects "
-                    "stale commands instead of overwriting intervening work. "
-                    "A unique command key plus a canonical request digest "
-                    "makes identical replays return the original result and "
-                    "rejects altered replays. Unique bank references prevent "
-                    "one settlement from paying two invoices. This concurrency "
-                    "model requires a supported local filesystem, not a "
-                    "shared network drive, and all application writers must "
-                    "use these functions. Database administrators remain trusted. "
-                    "Run schema changes through one controlled migration process, "
-                    "restrict database file permissions, and keep encrypted backups. "
-                    "SQLite locking protects ledger transitions; it does not "
-                    "authenticate an escrow officer or validate a seller's "
-                    "representations without the documented human verification process."
-                ),
-                (
-                    "The six modules intentionally separate intake, evidence-based "
-                    "workflow, bank observations, and accounting presentation. Screening "
-                    "points prioritize work but never establish licensing eligibility "
-                    "or asset quality. Intake stores the retained fee in "
-                    "integer cents and refuses a reused source key carrying "
-                    "different facts. Every successful transition appends an immutable "
-                    "event and advances the mandate version within the same "
-                    "transaction. Closing posts a debit to commission receivables "
-                    "and a credit to retained-commission revenue; payment posts "
-                    "cash against that receivable only after an independently "
-                    "imported settled bank observation matches the exact amount. "
-                    "Each journal record contains equal debit and credit "
-                    "amounts by construction, avoiding a temporary half-posted entry. "
-                    "The reconciliation view shows receivables, cash movement, "
-                    "earned commission, expense, bank movement, unmatched observations, "
-                    "and the signed ledger balance. Expense posting uses "
-                    "the same atomic event and unique bank-reference discipline. "
-                    "Evidence strings should identify immutable document versions "
-                    "or content hashes, not mutable shared-folder labels. Their "
-                    "presence proves that a reviewer supplied a reference, "
-                    "not that software independently verified the underlying "
-                    "document. Keep that responsibility assigned to a named "
-                    "reviewer in the surrounding task system and preserve "
-                    "the review history with the referenced evidence packet."
-                ),
-                (
-                    "Keep the supported scope narrow enough to test completely. "
-                    "This reference handles fixed retained fees, full settled "
-                    "receipts, and cash-paid operating expenses; it rejects "
-                    "partial receipts and does not implement refunds, taxes, "
-                    "foreign exchange, fee amendments, or accounting reversals. "
-                    "Route those exceptions to a reviewed extension with "
-                    "new journal events rather than editing posted records. "
-                    "The ledger contains operator cash only, never escrow "
-                    "principal. Bank observations must come from a separately "
-                    "authenticated statement import; granting a user access to "
-                    "that importer is a distinct permission from approving "
-                    "a closing. The included test proves concurrent identical "
-                    "closing commands produce one event, altered replays fail, "
-                    "a bank reference cannot fund duplicate expenses, and "
-                    "ledger totals remain balanced. It also checks that "
-                    "failed posting rolls back its event. Lock contention "
-                    "can still produce a timeout; callers retry the exact "
-                    "same command key after bounded backoff, without changing "
-                    "its payload. No function sends outreach or initiates "
-                    "a transfer, so the transaction boundary contains no "
-                    "external side effect. If those capabilities are added, "
-                    "introduce a transactional outbox and recipient-side deduplication; "
-                    "do not claim that a committed database row alone "
-                    "makes an external email or wire execute exactly once."
-                ),
-            ],
-            "table": {
-                "caption": "6-Module Production Engineering / SQLite Ledger & Idempotent Workflow Reference Table",
-                "headers": [
-                    "Module and concrete responsibility within the reference",
-                    "Copy-pasteable Python source appended in displayed order",
-                    "Atomicity rule and explicit concurrency protection mechanism",
-                    "Verification result and bounded production operating scope",
-                ],
-                "rows": [
-                    [
-                        "Module 1: initialize constrained tables and immutable accounting records",
-                        r'''import hashlib
-import json
-import sqlite3
-import tempfile
-from concurrent.futures import ThreadPoolExecutor
-from contextlib import contextmanager
-from pathlib import Path
-
-SCHEMA = """
-CREATE TABLE IF NOT EXISTS mandates (
-    id INTEGER PRIMARY KEY,
-    source_key TEXT NOT NULL UNIQUE,
-    intake_hash TEXT NOT NULL,
-    retained_fee_cents INTEGER NOT NULL
-        CHECK(typeof(retained_fee_cents) = 'integer'
-              AND retained_fee_cents > 0),
-    score INTEGER NOT NULL CHECK(score BETWEEN 0 AND 100),
-    state TEXT NOT NULL DEFAULT 'NEW'
-        CHECK(state IN (
-            'NEW', 'QUALIFIED', 'VERIFIED', 'MANDATED',
-            'ESCROW', 'CLOSED', 'PAID', 'LOST'
-        )),
-    version INTEGER NOT NULL DEFAULT 0 CHECK(version >= 0)
-);
-CREATE TABLE IF NOT EXISTS events (
-    command_key TEXT PRIMARY KEY NOT NULL,
-    mandate_id INTEGER REFERENCES mandates(id),
-    request_hash TEXT NOT NULL,
-    event_type TEXT NOT NULL,
-    evidence_json TEXT NOT NULL,
-    created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
-);
-CREATE TABLE IF NOT EXISTS bank_observations (
-    bank_ref TEXT PRIMARY KEY NOT NULL,
-    amount_cents INTEGER NOT NULL
-        CHECK(typeof(amount_cents) = 'integer' AND amount_cents != 0),
-    settled_on TEXT NOT NULL,
-    source_digest TEXT NOT NULL
-);
-CREATE TABLE IF NOT EXISTS journal (
-    id INTEGER PRIMARY KEY,
-    command_key TEXT NOT NULL UNIQUE
-        REFERENCES events(command_key),
-    debit_account TEXT NOT NULL
-        CHECK(debit_account IN ('AR', 'CASH', 'REVENUE', 'EXPENSE')),
-    credit_account TEXT NOT NULL
-        CHECK(credit_account IN ('AR', 'CASH', 'REVENUE', 'EXPENSE')),
-    amount_cents INTEGER NOT NULL
-        CHECK(typeof(amount_cents) = 'integer' AND amount_cents > 0),
-    bank_ref TEXT UNIQUE REFERENCES bank_observations(bank_ref),
-    CHECK(debit_account != credit_account)
-);
-CREATE TRIGGER IF NOT EXISTS events_no_update
-BEFORE UPDATE ON events BEGIN
-    SELECT RAISE(ABORT, 'events are immutable');
-END;
-CREATE TRIGGER IF NOT EXISTS events_no_delete
-BEFORE DELETE ON events BEGIN
-    SELECT RAISE(ABORT, 'events are immutable');
-END;
-CREATE TRIGGER IF NOT EXISTS journal_no_update
-BEFORE UPDATE ON journal BEGIN
-    SELECT RAISE(ABORT, 'journal is immutable');
-END;
-CREATE TRIGGER IF NOT EXISTS journal_no_delete
-BEFORE DELETE ON journal BEGIN
-    SELECT RAISE(ABORT, 'journal is immutable');
-END;
-CREATE TRIGGER IF NOT EXISTS bank_no_update
-BEFORE UPDATE ON bank_observations BEGIN
-    SELECT RAISE(ABORT, 'bank observations are immutable');
-END;
-CREATE TRIGGER IF NOT EXISTS bank_no_delete
-BEFORE DELETE ON bank_observations BEGIN
-    SELECT RAISE(ABORT, 'bank observations are immutable');
-END;
-CREATE TRIGGER IF NOT EXISTS mandate_terms_fixed
-BEFORE UPDATE OF source_key, intake_hash, retained_fee_cents, score
-ON mandates BEGIN
-    SELECT RAISE(ABORT, 'intake terms require a reviewed extension');
-END;
-"""
-
-def connect(path):
-    db = sqlite3.connect(str(path), timeout=30, isolation_level=None)
-    db.row_factory = sqlite3.Row
-    db.execute("PRAGMA foreign_keys = ON")
-    db.execute("PRAGMA busy_timeout = 30000")
-    db.execute("PRAGMA synchronous = FULL")
-    return db
-
-def initialize(db):
-    db.execute("PRAGMA journal_mode = WAL")
-    db.executescript(SCHEMA)
-''',
-                        "Primary keys, unique references, and paired amounts constrain durable records",
-                        "Initialize once on local storage before starting independent worker connections",
-                    ],
-                    [
-                        "Module 2: canonicalize intake and calculate deterministic screening scores",
-                        r'''def canonical(value):
-    return json.dumps(value, sort_keys=True, separators=(",", ":"))
-
-def digest(value):
-    return hashlib.sha256(canonical(value).encode("utf-8")).hexdigest()
-
-def require_text(value):
-    if not isinstance(value, str) or not value.strip():
-        raise ValueError("a nonempty evidence reference is required")
-    return value
-
-@contextmanager
-def transaction(db):
-    db.execute("BEGIN IMMEDIATE")
-    try:
-        yield
-        db.commit()
-    except BaseException:
-        db.rollback()
-        raise
-
-def intake(db, source_key, retained_fee_cents, signals):
-    require_text(source_key)
-    if type(retained_fee_cents) is not int or retained_fee_cents <= 0:
-        raise ValueError("retained fee must be positive integer cents")
-    weights = {
-        "authority_packet": 30,
-        "buyer_fit": 25,
-        "transferability_packet": 25,
-        "fee_acceptance": 20,
-    }
-    if set(signals) != set(weights):
-        raise ValueError("provide the four defined screening inputs")
-    if any(type(value) is not bool for value in signals.values()):
-        raise ValueError("screening inputs must be boolean")
-    score = sum(weight for key, weight in weights.items() if signals[key])
-    payload = {
-        "source_key": source_key,
-        "fee": retained_fee_cents,
-        "signals": signals,
-    }
-    request_hash = digest(payload)
-    with transaction(db):
-        old = db.execute(
-            "SELECT id, intake_hash FROM mandates WHERE source_key = ?",
-            (source_key,),
-        ).fetchone()
-        if old:
-            if old["intake_hash"] != request_hash:
-                raise ValueError("source key reused with different intake facts")
-            return old["id"]
-        cursor = db.execute(
-            """INSERT INTO mandates
-               (source_key, intake_hash, retained_fee_cents, score)
-               VALUES (?, ?, ?, ?)""",
-            (source_key, request_hash, retained_fee_cents, score),
-        )
-        mandate_id = cursor.lastrowid
-        db.execute(
-            """INSERT INTO events
-               (command_key, mandate_id, request_hash, event_type, evidence_json)
-               VALUES (?, ?, ?, 'INTAKE', ?)""",
-            ("intake:" + source_key, mandate_id, request_hash, canonical(payload)),
-        )
-        return mandate_id
-''',
-                        "Acquire the write lock before checking source-key reuse or inserting intake",
-                        "Repeated identical intake returns its original identifier without duplicating work",
-                    ],
-                    [
-                        "Module 3: advance verified workflow and atomically post commission events",
-                        r'''TRANSITIONS = {
-    "NEW": {"QUALIFIED", "LOST"},
-    "QUALIFIED": {"VERIFIED", "LOST"},
-    "VERIFIED": {"MANDATED", "LOST"},
-    "MANDATED": {"ESCROW", "LOST"},
-    "ESCROW": {"CLOSED", "LOST"},
-    "CLOSED": {"PAID"},
-    "PAID": set(),
-    "LOST": set(),
-}
-REQUIRED = {
-    "QUALIFIED": ("screening_review",),
-    "VERIFIED": ("owner_authority", "asset_role_review", "agency_review"),
-    "MANDATED": ("exclusive_mandate", "retained_fee_review"),
-    "ESCROW": ("escrow_engagement", "instruction_callback"),
-    "CLOSED": ("closing_statement", "earned_fee_review"),
-    "PAID": ("bank_ref", "collection_review"),
-    "LOST": ("loss_reason",),
-}
-
-def replay(db, command_key, request_hash):
-    row = db.execute(
-        "SELECT request_hash FROM events WHERE command_key = ?",
-        (command_key,),
-    ).fetchone()
-    if row and row["request_hash"] != request_hash:
-        raise ValueError("command key reused with a different request")
-    return row is not None
-
-def advance(db, mandate_id, expected_version, target, command_key, evidence):
-    require_text(command_key)
-    if command_key.startswith("intake:"):
-        raise ValueError("reserved command namespace")
-    if target not in REQUIRED:
-        raise ValueError("unsupported target state")
-    for name in REQUIRED[target]:
-        require_text(evidence.get(name))
-    request = {
-        "operation": "advance",
-        "mandate_id": mandate_id,
-        "expected_version": expected_version,
-        "target": target,
-        "evidence": evidence,
-    }
-    request_hash = digest(request)
-    with transaction(db):
-        if replay(db, command_key, request_hash):
-            return command_key
-        row = db.execute(
-            "SELECT * FROM mandates WHERE id = ?", (mandate_id,)
-        ).fetchone()
-        if row is None:
-            raise ValueError("mandate does not exist")
-        if row["version"] != expected_version:
-            raise ValueError("stale mandate version")
-        if target not in TRANSITIONS[row["state"]]:
-            raise ValueError("transition is not permitted")
-        if target == "QUALIFIED" and row["score"] < 70:
-            raise ValueError("screening score requires further work")
-        bank_ref = None
-        if target == "PAID":
-            bank_ref = evidence["bank_ref"]
-            bank = db.execute(
-                "SELECT amount_cents FROM bank_observations WHERE bank_ref = ?",
-                (bank_ref,),
-            ).fetchone()
-            if bank is None or bank["amount_cents"] != row["retained_fee_cents"]:
-                raise ValueError("full settled receipt must match retained fee")
-        db.execute(
-            """INSERT INTO events
-               (command_key, mandate_id, request_hash, event_type, evidence_json)
-               VALUES (?, ?, ?, ?, ?)""",
-            (command_key, mandate_id, request_hash, target, canonical(evidence)),
-        )
-        if target in {"CLOSED", "PAID"}:
-            debit, credit = (
-                ("AR", "REVENUE") if target == "CLOSED" else ("CASH", "AR")
-            )
-            db.execute(
-                """INSERT INTO journal
-                   (command_key, debit_account, credit_account,
-                    amount_cents, bank_ref)
-                   VALUES (?, ?, ?, ?, ?)""",
-                (command_key, debit, credit, row["retained_fee_cents"], bank_ref),
-            )
-        changed = db.execute(
-            """UPDATE mandates SET state = ?, version = version + 1
-               WHERE id = ? AND version = ?""",
-            (target, mandate_id, expected_version),
-        ).rowcount
-        if changed != 1:
-            raise RuntimeError("version update failed")
-        return command_key
-''',
-                        "Event, journal posting, and version advance commit together under one write lock",
-                        "Evidence references support review while full bank matching prevents premature receipt posting",
-                    ],
-                    [
-                        "Module 4: import settled bank observations and post matched cash expenses",
-                        r'''def import_bank(db, bank_ref, amount_cents, settled_on, source_digest):
-    require_text(bank_ref)
-    require_text(settled_on)
-    require_text(source_digest)
-    if type(amount_cents) is not int or amount_cents == 0:
-        raise ValueError("bank amount must be nonzero integer cents")
-    values = (bank_ref, amount_cents, settled_on, source_digest)
-    with transaction(db):
-        old = db.execute(
-            """SELECT bank_ref, amount_cents, settled_on, source_digest
-               FROM bank_observations WHERE bank_ref = ?""",
-            (bank_ref,),
-        ).fetchone()
-        if old:
-            if tuple(old) != values:
-                raise ValueError("bank reference reused with different evidence")
-            return bank_ref
-        db.execute(
-            "INSERT INTO bank_observations VALUES (?, ?, ?, ?)", values
-        )
-        return bank_ref
-
-def post_expense(db, command_key, amount_cents, bank_ref, evidence_ref):
-    require_text(command_key)
-    require_text(bank_ref)
-    require_text(evidence_ref)
-    if command_key.startswith("intake:"):
-        raise ValueError("reserved command namespace")
-    if type(amount_cents) is not int or amount_cents <= 0:
-        raise ValueError("expense must be positive integer cents")
-    request = {
-        "operation": "expense",
-        "amount_cents": amount_cents,
-        "bank_ref": bank_ref,
-        "evidence_ref": evidence_ref,
-    }
-    request_hash = digest(request)
-    with transaction(db):
-        if replay(db, command_key, request_hash):
-            return command_key
-        bank = db.execute(
-            "SELECT amount_cents FROM bank_observations WHERE bank_ref = ?",
-            (bank_ref,),
-        ).fetchone()
-        if bank is None or bank["amount_cents"] != -amount_cents:
-            raise ValueError("expense requires matching settled bank debit")
-        db.execute(
-            """INSERT INTO events
-               (command_key, request_hash, event_type, evidence_json)
-               VALUES (?, ?, 'EXPENSE', ?)""",
-            (command_key, request_hash, canonical(request)),
-        )
-        db.execute(
-            """INSERT INTO journal
-               (command_key, debit_account, credit_account,
-                amount_cents, bank_ref)
-               VALUES (?, 'EXPENSE', 'CASH', ?, ?)""",
-            (command_key, amount_cents, bank_ref),
-        )
-        return command_key
-''',
-                        "Unique bank references and atomic rollback reject duplicate receipt or expense allocation",
-                        "Importer permissions remain separate from closing review and source-document permissions",
-                    ],
-                    [
-                        "Module 5: expose balanced ledger lines and bank reconciliation totals",
-                        r'''VIEWS = """
-CREATE VIEW IF NOT EXISTS ledger_lines AS
-SELECT command_key, debit_account AS account, amount_cents AS signed_cents
-FROM journal
-UNION ALL
-SELECT command_key, credit_account AS account, -amount_cents AS signed_cents
-FROM journal;
-
-CREATE VIEW IF NOT EXISTS reconciliation AS
-SELECT
-    COALESCE(SUM(CASE WHEN account = 'CASH'
-        THEN signed_cents ELSE 0 END), 0) AS book_cash_movement_cents,
-    COALESCE(SUM(CASE WHEN account = 'AR'
-        THEN signed_cents ELSE 0 END), 0) AS receivable_cents,
-    COALESCE(SUM(CASE WHEN account = 'REVENUE'
-        THEN -signed_cents ELSE 0 END), 0) AS retained_revenue_cents,
-    COALESCE(SUM(CASE WHEN account = 'EXPENSE'
-        THEN signed_cents ELSE 0 END), 0) AS expense_cents,
-    COALESCE(SUM(signed_cents), 0) AS signed_balance_cents,
-    (SELECT COALESCE(SUM(amount_cents), 0)
-        FROM bank_observations) AS bank_movement_cents,
-    (SELECT COUNT(*) FROM bank_observations AS b
-        LEFT JOIN journal AS j ON j.bank_ref = b.bank_ref
-        WHERE j.id IS NULL) AS unmatched_bank_count
-FROM ledger_lines;
-"""
-
-def install_views(db):
-    db.executescript(VIEWS)
-
-def reconcile(db):
-    result = dict(db.execute("SELECT * FROM reconciliation").fetchone())
-    result["earned_profit_cents"] = (
-        result["retained_revenue_cents"] - result["expense_cents"]
-    )
-    result["cash_difference_cents"] = (
-        result["bank_movement_cents"] - result["book_cash_movement_cents"]
-    )
-    return result
-''',
-                        "Each journal record contributes equal opposite lines without separate partial inserts",
-                        "Compare scoped statement movement with book movement before adding external opening cash",
-                    ],
-                    [
-                        "Module 6: test replay safety, concurrent posting, rollback, and reconciliation",
-                        r'''def self_test():
-    with tempfile.TemporaryDirectory() as directory:
-        path = Path(directory) / "broker.sqlite3"
-        db = connect(path)
-        initialize(db)
-        install_views(db)
-        signals = {
-            "authority_packet": True,
-            "buyer_fit": True,
-            "transferability_packet": True,
-            "fee_acceptance": True,
-        }
-        mandate_id = intake(db, "seller:asset:001", 2750000, signals)
-        assert intake(db, "seller:asset:001", 2750000, signals) == mandate_id
-        route = [
-            ("QUALIFIED", {"screening_review": "review:001"}),
-            ("VERIFIED", {
-                "owner_authority": "document:authority:001",
-                "asset_role_review": "review:role:001",
-                "agency_review": "review:agency:001",
-            }),
-            ("MANDATED", {
-                "exclusive_mandate": "document:mandate:001",
-                "retained_fee_review": "review:fee:001",
-            }),
-            ("ESCROW", {
-                "escrow_engagement": "document:escrow:001",
-                "instruction_callback": "review:callback:001",
-            }),
-        ]
-        for version, (target, evidence) in enumerate(route):
-            advance(db, mandate_id, version, target, "route:" + target, evidence)
-
-        closing = {
-            "closing_statement": "document:closing:001",
-            "earned_fee_review": "review:earned:001",
-        }
-
-        def concurrent_close(_):
-            worker = connect(path)
-            try:
-                return advance(
-                    worker, mandate_id, 4, "CLOSED", "close:001", closing
-                )
-            finally:
-                worker.close()
-
-        with ThreadPoolExecutor(max_workers=4) as pool:
-            results = list(pool.map(concurrent_close, range(8)))
-        assert results == ["close:001"] * 8
-        assert db.execute(
-            "SELECT COUNT(*) FROM journal WHERE command_key = 'close:001'"
-        ).fetchone()[0] == 1
-
-        try:
-            advance(
-                db, mandate_id, 4, "CLOSED", "close:001",
-                dict(closing, earned_fee_review="review:changed"),
-            )
-        except ValueError:
-            pass
-        else:
-            raise AssertionError("altered replay was accepted")
-
-        import_bank(db, "bank:receipt:001", 2750000, "2030-01-20", "sha256:receipt")
-        receipt = {
-            "bank_ref": "bank:receipt:001",
-            "collection_review": "review:collection:001",
-        }
-        advance(db, mandate_id, 5, "PAID", "receipt:001", receipt)
-        advance(db, mandate_id, 5, "PAID", "receipt:001", receipt)
-
-        import_bank(db, "bank:expense:001", -10000, "2030-01-21", "sha256:expense")
-        post_expense(db, "expense:001", 10000, "bank:expense:001", "invoice:001")
-        post_expense(db, "expense:001", 10000, "bank:expense:001", "invoice:001")
-        try:
-            post_expense(db, "expense:002", 10000, "bank:expense:001", "invoice:002")
-        except sqlite3.IntegrityError:
-            pass
-        else:
-            raise AssertionError("bank reference was allocated twice")
-        assert db.execute(
-            "SELECT COUNT(*) FROM events WHERE command_key = 'expense:002'"
-        ).fetchone()[0] == 0
-
-        totals = reconcile(db)
-        assert totals["retained_revenue_cents"] == 2750000
-        assert totals["receivable_cents"] == 0
-        assert totals["expense_cents"] == 10000
-        assert totals["earned_profit_cents"] == 2740000
-        assert totals["book_cash_movement_cents"] == 2740000
-        assert totals["signed_balance_cents"] == 0
-        assert totals["cash_difference_cents"] == 0
-        assert totals["unmatched_bank_count"] == 0
-        assert db.execute("PRAGMA foreign_key_check").fetchall() == []
-        assert db.execute("PRAGMA integrity_check").fetchone()[0] == "ok"
-        db.close()
-    return "Reference checks passed"
-
-if __name__ == "__main__":
-    print(self_test())
-''',
-                        "Concurrent workers replay one command while uniqueness rejects a second bank allocation",
-                        "Self-test is provided for execution; no execution result is asserted here",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "4. Walk the 90-Day Cohorts and Reconcile Earned Profit to Cash",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Treat this as a stabilized operating-quarter illustration, not "
-                    "a cold-start promise. Time to first deal remains three "
-                    "to twelve months, so the walk begins with eight "
-                    "inherited late-stage opportunities, no opening commission receivable, "
-                    "and $100,000 operator cash. Five inherited opportunities close "
-                    "during the quarter at $27,500 retained commission each; "
-                    "two fail and one remains active. New intake forms "
-                    "three distinct twenty-lead cohorts, one per month. Each "
-                    "cohort loses eight unsuitable records during screening, places "
-                    "six into nurture, and qualifies six. Of those six, "
-                    "three execute mandates and three remain in diligence. "
-                    "None of these new mandates closes inside the illustrated "
-                    "quarter. Across sixty new leads, that produces twenty-four "
-                    "scrubs, eighteen nurture records, nine diligence records, "
-                    "and nine signed mandates. Keep screening scrubs separate "
-                    "from failed late-stage closings: they imply different "
-                    "problems and consume different amounts of specialist work. "
-                    "The ending active inventory is thirty-seven records, comprising "
-                    "thirty-six new-cohort records plus the one inherited survivor. "
-                    "Do not annualize nine new mandates into guaranteed completions. "
-                    "Future quarters require sufficient conversion, new sourcing, "
-                    "and replenishment to replace the inherited closing inventory "
-                    "rather than repeatedly spending the same opening pipeline."
-                ),
-                (
-                    "The quarterly revenue bridge is five closings multiplied "
-                    "by $27,500, producing $137,500 earned retained commissions. "
-                    "Annualizing that operating pace gives exactly $550,000, "
-                    "the Base scorecard revenue. Total quarterly operating cost "
-                    "is $85,937.50: $12,000 monthly fixed overhead plus "
-                    "$49,937.50 quarterly variable delivery, contractor, and closing "
-                    "costs. The fixed component sits inside the stated "
-                    "$3,000 to $18,000 monthly operating-overhead range; total "
-                    "recognized operating costs are higher because the scorecard "
-                    "also absorbs variable delivery expense. Allocate the quarter "
-                    "as $28,645.83, $28,645.83, and $28,645.84 to avoid "
-                    "rounding drift. Costs associated with failed opportunities "
-                    "are included, not quietly removed from margin. Earned "
-                    "quarterly owner profit is therefore $51,562.50, or "
-                    "37.5 percent, reconciling to $206,250 annually. Owner "
-                    "distributions do not create additional operating expense "
-                    "inside this illustration. For comparison, the Conservative "
-                    "case remains $100,000 revenue less $75,000 costs, yielding "
-                    "$25,000 owner profit; Scaled remains $1,000,000 revenue "
-                    "less $500,000 costs, yielding $500,000 owner profit. "
-                    "The respective staffing assumptions stay one full-time "
-                    "operator plus three contractors for Conservative and Base, "
-                    "and two full-time operators plus four contractors for Scaled."
-                ),
-                (
-                    "Cash collection intentionally trails earned revenue. Month 1 "
-                    "closes one inherited deal but receives no commission "
-                    "cash. Month 2 closes two and collects $55,000: "
-                    "the Month 1 invoice and one Month 2 invoice. "
-                    "Month 3 closes two and collects $55,000: the "
-                    "remaining Month 2 invoice and one Month 3 invoice. "
-                    "The final Month 3 invoice remains a $27,500 "
-                    "receivable scheduled for Month 4, subject to actual "
-                    "collection. Quarterly receipts total $110,000, so cash "
-                    "increases only $24,062.50 after $85,937.50 costs, ending "
-                    "at $124,062.50. The difference from $51,562.50 earned "
-                    "profit is exactly the $27,500 receivable increase. "
-                    "All expenses are paid in the month recognized, "
-                    "with no opening payables, debt service, taxes, capital "
-                    "purchases, or owner withdrawals in this limited bridge. "
-                    "Do not multiply this working-capital build by four "
-                    "and describe the result as annual owner profit. "
-                    "If collection slips another month, preserve the receivable "
-                    "and reduce the cash forecast instead of manufacturing "
-                    "a receipt. Review aging, escrow evidence, and fee "
-                    "disputes weekly. At the illustrated $28,645.83 monthly "
-                    "cash-cost pace, $100,000 covers roughly 3.49 months "
-                    "without receipts, making failed closings and delayed "
-                    "collections immediate capacity decisions rather than cosmetic dashboard exceptions."
-                ),
-            ],
-            "table": {
-                "caption": "Worked 90-Day Cohort Walk",
-                "headers": [
-                    "Month and separate pipeline or cash movement",
-                    "Deal cohorts, screening losses, and closing evidence",
-                    "Earned revenue, cash receipts, and recognized operating costs",
-                    "Ending inventory, receivables, and cumulative cash reconciliation",
-                ],
-                "rows": [
-                    [
-                        "Month 1 pipeline: inherited inventory and fresh twenty-lead cohort",
-                        "Eight inherited opportunities become one closing, one loss, and six survivors",
-                        "Fresh cohort: eight scrubs, six nurture, three diligence, three mandates",
-                        "Eighteen active records remain: six inherited and twelve new",
-                    ],
-                    [
-                        "Month 1 cash: first commission earned but still awaiting collection",
-                        "One inherited closing earns a $27,500 retained commission receivable",
-                        "$27,500 revenue; $0 receipts; $28,645.83 paid operating costs",
-                        "$27,500 receivable; cumulative cash change -$28,645.83; ending cash $71,354.17",
-                    ],
-                    [
-                        "Month 2 pipeline: second fresh cohort and two inherited closings",
-                        "Six inherited opportunities become two closings, one loss, three survivors",
-                        "Second cohort repeats eight scrubs, six nurture, three diligence, three mandates",
-                        "Twenty-seven active records remain: three inherited and twenty-four new",
-                    ],
-                    [
-                        "Month 2 cash: collect first invoice and one current invoice",
-                        "Two inherited closings earn $55,000; two settled invoices collect $55,000",
-                        "$55,000 revenue; $55,000 receipts; $28,645.83 paid operating costs",
-                        "$27,500 receivable; cumulative cash change -$2,291.66; ending cash $97,708.34",
-                    ],
-                    [
-                        "Month 3 pipeline: third fresh cohort and two final illustrated closings",
-                        "Three inherited opportunities become two closings and one continuing survivor",
-                        "Quarter totals: sixty fresh leads, twenty-four scrubs, nine new mandates",
-                        "Thirty-seven active records remain: one inherited and thirty-six new",
-                    ],
-                    [
-                        "Month 3 cash: preserve final unpaid invoice in receivables",
-                        "Collect remaining Month 2 invoice and one Month 3 invoice",
-                        "$55,000 revenue; $55,000 receipts; $28,645.84 paid operating costs",
-                        "$27,500 receivable; cumulative cash change $24,062.50; ending cash $124,062.50",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": "A deal becomes operator income only when the retained fee is earned, the evidence survives review, and the cash reconciles.",
-    "diagram_id": "diag-01",
-    "action_checklist": [
-        "Create one canonical mandate record containing seller authority, asset category, jurisdiction, retained-fee cents, and the named transaction-role reviewer.",
-        "Execute the exclusive mandate, agency disclosures, introduction protections, and independent escrow engagement before identifiable buyer circulation.",
-        "Configure accession-level EDGAR deduplication, a shared five-request-per-second limiter, and historical archive replay that cannot resend old outreach.",
-        "Require utility-specific service evidence for powered-land claims and keep option deposits, proprietary gains, and asset consideration outside commission revenue.",
-        "Assemble the six reference modules, execute their self-test locally, and restrict production writers to the serialized intake, transition, bank-import, and expense functions.",
-        "Reconcile the quarter to $137,500 earned revenue, $85,937.50 operating costs, $51,562.50 profit, $110,000 receipts, and $27,500 ending receivables.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "15 U.S.C. 78o(b)(13) — Federal M&A Broker Registration Exemption",
-            "url": "https://www.law.cornell.edu/uscode/text/15/78o",
-            "relevance": (
-                "Evaluate eligible private-company control transactions, active "
-                "management, excluded activities, disqualifications, and the "
-                "prohibition on custody of transaction funds or securities."
-            ),
-        },
-        {
-            "title": "17 CFR 249.308 — Form 8-K Current Reports",
-            "url": "https://www.ecfr.gov/current/title-17/section-249.308",
-            "relevance": (
-                "Anchor event-driven research in the actual Form 8-K filing "
-                "and item disclosures rather than an unverified commercial alert."
-            ),
-        },
-        {
-            "title": "17 CFR 230.503 — Filing of Notice of Sales",
-            "url": "https://www.ecfr.gov/current/title-17/section-230.503",
-            "relevance": (
-                "Understand Form D notice and amendment requirements when "
-                "interpreting exempt-offering activity and reported sales."
-            ),
-        },
-        {
-            "title": "15 U.S.C. 7704 — Requirements for Commercial Electronic Mail",
-            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
-            "relevance": (
-                "Apply accurate routing, identification, opt-out, and related "
-                "commercial-email requirements to SEC-trigger outreach."
-            ),
-        },
-        {
-            "title": "California Business and Professions Code 10131 — Broker Activities",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=10131.",
-            "relevance": (
-                "Classify compensated real-property and business-opportunity "
-                "activities before selecting the intermediary and mandate structure."
-            ),
-        },
-        {
-            "title": "California Business and Professions Code 10137 — Compensation Restrictions",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=10137.",
-            "relevance": (
-                "Check who may perform compensated licensed acts and receive "
-                "brokerage compensation before allocating referral or cooperating fees."
-            ),
-        },
-        {
-            "title": "California Business and Professions Code 10145 — Trust Fund Handling",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=10145.",
-            "relevance": (
-                "Determine handling obligations when a real-estate broker "
-                "receives funds belonging to others; this operating design "
-                "keeps transaction principal with an appropriate independent closer."
-            ),
-        },
-        {
-            "title": "18 CFR 35.28 — Transmission Services and Interconnection Framework",
-            "url": "https://www.ecfr.gov/current/title-18/section-35.28",
-            "relevance": (
-                "Place public interconnection information within the governing "
-                "tariff framework while separately verifying site-specific "
-                "load service, upgrade obligations, and utility requirements."
-            ),
-        },
-    ],
-}
+CHAPTER_7 = {'id': 'Q7',
+ 'chapter_id': 'Q7',
+ 'chapter_number': 7,
+ 'question_number': 7,
+ 'slug': 'protecting-commissions-collecting-at-closing',
+ 'question_prompt': 'How do I explain and protect my commission, address buyer-agent compensation, and '
+                    'handle disbursement and closing wires without overlooking fraud risks?',
+ 'kicker': 'Q7 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Protecting Commissions and Collecting at Closing',
+ 'subtitle': 'Aircraft and yacht fees, jet-broker commission agreements and markups, circumvention risks, '
+             'buyer-broker agreements, seller-paid compensation disputes, escrow instructions, and '
+             'wire-fraud prevention',
+ 'layout_template': 'thirty_day_roadmap',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Jet, yacht, commodity and real estate closers agree on one rule: lock the fee in '
+                      'writing before the deal gets exposed. That means a listing, an off-market '
+                      'exclusive, a one-page commission agreement naming the buyer, or a non-circumvention '
+                      'clause. Then strip tail and serial numbers so nobody can go around you, and treat '
+                      'closing-day wires as the main point of loss. The numbers are blunt. Aircraft fees '
+                      'run 1% to 10%. A 10% yacht commission nets the working broker about 2.5% after '
+                      'splits. Charter margins swing from 5% to 30% per trip, and a clean disbursement '
+                      'form pays in 24 hours. The disagreements center on the spread. Jet brokers teach '
+                      'net-price and intermediary resale structures, while MarginCallMedia calls the '
+                      'undisclosed markup a conflict that drains clients and squeezes operators. '
+                      'Residential agents instead fund buyer-paid fees through rate credits and seller '
+                      'concessions.',
+ 'key_metrics': [{'label': 'Net Yacht Broker Take After Splits',
+                  'metric': 'Net Yacht Broker Take After Splits',
+                  'value': '10% gross commission nets about 2.5% of sale price per working broker',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'The 10% is split 5% buyer side and 5% seller side, then the employing '
+                             'licensed broker takes 50% of each side',
+                  'source': 'Yacht Experts LLC - Brokerage &  Extended Warranty ([NUVwWnSq3A0 @ '
+                            '00:01:59])'},
+                 {'label': 'Charter Broker Cut Per Trip',
+                  'metric': 'Charter Broker Cut Per Trip',
+                  'value': '5% to 30% of total trip cost',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Charter brokers earn high percentages on lower-value frequent flights, '
+                             'versus a closing-paid commission on aircraft sales',
+                  'source': 'MarginCallMedia ([PWGk1rSbFhA @ 00:01:25])'},
+                 {'label': 'Commission Payout Speed After Clean Form',
+                  'metric': 'Commission Payout Speed After Clean Form',
+                  'value': 'Direct deposit within 24 hours on regular business days',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Applies when every agent-side field and the funding entity's wire amount, "
+                             'bank name and contact details are filled out correctly',
+                  'source': 'Equity Real Estate ([mVFdzEqW2M4 @ 00:01:21])'},
+                 {'label': 'Wire Fraud Reversal Window',
+                  'metric': 'Wire Fraud Reversal Window',
+                  'value': 'Usually within 72 hours via the FBI fraud kill chain',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Victims file with IC3 first and need good contacts at both the sending and '
+                             'receiving banks to reverse certain wires',
+                  'source': 'Family Split Strategy ([DZe5D7_TCDA @ 00:10:24])'}],
+ 'sections': [{'heading': 'Section 1: The Practitioner Consensus',
+               'paragraphs': ['Every closer in this group starts from the same rule: no signature, no '
+                              'specs. The Ultimate Jet Guide host says the single most important thing is '
+                              'having something in writing that spells out how you get paid before you '
+                              'start sending specs. When two end users deal through you, you need a signed '
+                              'piece of paper from at least one of them committing to your fee '
+                              '[1ILeO7AapJM @ 00:05:44]. Sam Cutting runs the commodity version of the '
+                              'same play. Source the seller and get a commission or partnership agreement '
+                              'giving you permission to sell and promote. If you hold the buyer, get the '
+                              'buyer to sign a commission agreement instead. The broker who actually '
+                              'connects buyer and seller collects far more often than the broker who '
+                              'introduced a broker to a broker [QguZjBADFoA @ 00:01:04]. The Pryderi '
+                              'Podcast treats the paper as protection for a real asset. Introductions to '
+                              'family offices, billionaires and ready buyers take months or years to '
+                              'build, and a non-circumvention clause makes going around the middleman a '
+                              'contractual violation exposed to damages [rnUvOWiFpDQ @ 00:01:35]. Cutting '
+                              'adds a hard filter on top of the paperwork. When an NCNDA lands with 14 '
+                              'intermediaries attached, that deal is never going to close, so get out of '
+                              'any chain with more than two entities [QguZjBADFoA @ 00:00:22].',
+                              'The second point of agreement is that commission is a percentage of price, '
+                              'so asset size drives the check more than the rate does. Alex Bengoechea '
+                              'quotes aircraft brokers at 1% to 10% and walks the math. A 2006 Hawker 850 '
+                              'XB at $5 million and 1.5% pays $75,000. A 1978 Cessna 414 at $500,000 and '
+                              '5% pays $25,000. A 1946 Aranca Champ at $50,000 and 10% pays only $5,000 '
+                              '[Uhqo4raDQ0k @ 00:00:38]. The headline rate also never lands whole. '
+                              'Christopher of Yacht Experts says yacht deals typically carry 10%, split 5% '
+                              "to the buyer's broker and 5% to the seller's broker. The employing licensed "
+                              'broker then takes 50% of each side, so the working broker nets about 2.5% '
+                              'of the sale price [NUVwWnSq3A0 @ 00:01:38]. Yacht Zero describes the same '
+                              '10% being carved between the listing broker, the person bringing the buyer, '
+                              'and the brokerage houses they are employed by [oEXYo1_yeOU @ 00:00:28]. '
+                              'MarginCallMedia separates the two aviation money streams. Aircraft sales '
+                              'brokers earn a predictable commission paid at closing on low-frequency, '
+                              'high-value deals. Charter brokers take anywhere from 5% to 30% per trip on '
+                              'smaller, frequent bookings [PWGk1rSbFhA @ 00:01:09].',
+                              'The last consensus point is that the commission is only real once the wire '
+                              'clears, and closing day is where money gets lost. Hauseit calls double- and '
+                              'triple-confirming wire details the single most important takeaway, because '
+                              "an email account at the attorney's firm can be compromised. Call the "
+                              'office, ideally reaching someone you met, read the account and routing '
+                              'numbers aloud, and match them before sending, since a wire fraud victim has '
+                              'little remedy [KrsoinTC_10 @ 00:00:00]. Family Split Strategy explains how '
+                              'the attack works. Hackers get into the weakest inbox on the CC chain, such '
+                              'as a small realtor, inspector or insurer working off home Wi-Fi. They '
+                              'register a look-alike title domain, build a matching website in an hour or '
+                              'two, and email fake wiring instructions [DZe5D7_TCDA @ 00:06:22]. The same '
+                              'speaker applies the defense to brokers directly: a title company should '
+                              'send a test transaction before sending off a commission to a realtor '
+                              "[DZe5D7_TCDA @ 00:12:44]. Lauren of Title's Not Borin' adds the structural "
+                              'constraint. Escrow is a neutral third party that can only act on mutually '
+                              'agreed instruction, and any contract amendment has to reach escrow in '
+                              'writing within three days of acceptance [IK3LgAFr-QQ @ 00:02:05].'],
+               'table': {'caption': 'Where closers across jets, yachts, commodities and real estate line '
+                                    'up on protecting the fee',
+                         'headers': ['Consensus Point',
+                                     'What Practitioners Do',
+                                     'Why It Protects The Fee',
+                                     'Expert Source'],
+                         'rows': [['Paper before specs on every aircraft deal',
+                                   'Get a signed fee commitment from buyer or seller before sending '
+                                   'detailed specs',
+                                   'Written terms decide who pays before either party can cut you out',
+                                   'The Ultimate Jet Guide ([1ILeO7AapJM @ 00:05:44])'],
+                                  ['Sign whichever side you actually control first',
+                                   'Seller signs a commission or partnership agreement, or buyer signs '
+                                   'commission agreement',
+                                   'Having either principal signed makes collection far more likely than '
+                                   'chain introductions',
+                                   'Sam Cutting - Red Flags Verification ([QguZjBADFoA @ 00:01:04])'],
+                                  ['Non-circumvention clauses guard years of relationship building',
+                                   'Bar introduced parties from going directly around the broker to the '
+                                   'client',
+                                   'Going around the broker becomes a contractual violation exposed to '
+                                   'damages',
+                                   'Pryderi Podcast ([rnUvOWiFpDQ @ 00:01:35])'],
+                                  ['Headline yacht rate shrinks fast after brokerage splits',
+                                   '10% splits into two 5% sides, then employing brokers take half',
+                                   'Working broker nets roughly 2.5% of the sale price per side',
+                                   'Yacht Experts LLC - Brokerage &  Extended Warranty ([NUVwWnSq3A0 @ '
+                                   '00:01:59])'],
+                                  ['Aircraft size moves the paycheck more than the percentage',
+                                   'A $5 million jet at 1.5% pays $75,000 to the broker',
+                                   'Higher percentages on cheap pistons still produce much smaller checks',
+                                   'Alex Bengoechea ([Uhqo4raDQ0k @ 00:00:38])'],
+                                  ['Verify every wire by phone using independently sourced numbers',
+                                   "Call the attorney's office and read account and routing numbers aloud",
+                                   'Compromised email can redirect funds with little remedy once sent',
+                                   'Hauseit ([KrsoinTC_10 @ 00:00:00])'],
+                                  ['Test wires apply to commission payouts, not only buyer deposits',
+                                   'Title company sends a small test before releasing realtor commission',
+                                   'Confirms the receiving account is genuine before the full amount moves',
+                                   'Family Split Strategy ([DZe5D7_TCDA @ 00:12:44])']]}},
+              {'heading': 'Section 2: Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['The Ultimate Jet Guide host lays out the off-market capture sequence step '
+                              'by step. If the owner will not sign a normal listing, ask for an exclusive '
+                              'limited to off-market activity for 30, 60 or 90 days, or even a week. In '
+                              'exchange, promise not to publish on Controller, or agree to remove the tail '
+                              'number from everything [1ILeO7AapJM @ 00:00:58]. If the owner only says '
+                              'bring me a buyer, scrub the tail and serial numbers from every photo, '
+                              'including cockpit shots. Avoid sending maintenance reports unless you trust '
+                              'the broker, and send only a spec sheet with times and upgrades. Anyone who '
+                              "can identify the plane can call the seller and say let's not pay the broker "
+                              '[1ILeO7AapJM @ 00:01:38]. Get the seller to agree verbally to a number such '
+                              'as 6% or 4% early. When a buyer bites, send a one-page commission agreement '
+                              'naming that buyer and the amount, payable only if that specific deal goes '
+                              'through. Once it is signed, the floodgates open and the buyer can get '
+                              'anything [1ILeO7AapJM @ 00:03:13]. Alex Bengoechea notes why starting on '
+                              'smaller aircraft is easier. Jets and turboprops demand JetNet or Amstat, '
+                              'professional pictures and Controller ads, none of them cheap, plus a solid '
+                              'track record [Uhqo4raDQ0k @ 00:01:20].',
+                              'When neither side will pay, the jet playbook shifts to the spread. The '
+                              'Ultimate Jet Guide host first asks the buyer to cover the fee. If the buyer '
+                              'refuses, he asks the seller for a net number, say $2 million, and keeps '
+                              'anything above it [1ILeO7AapJM @ 00:04:13]. The transparent route writes '
+                              'that split into the agreement, but if pre-buy squawks force a $100,000 '
+                              'price cut, the broker earns nothing. The alternative uses an intermediary '
+                              'company that contracts the aircraft at $2 million and offers it to the '
+                              'buyer at $2.1 million with the commission included. The broker pockets the '
+                              '$100,000 difference, and each side chooses whether to proceed [1ILeO7AapJM '
+                              '@ 00:05:04]. MarginCallMedia maps three charter pay models. The operator '
+                              'cut is kicked back out of wholesale profit. The transparent fee appears as '
+                              'separate line items. The undisclosed markup, which it calls the most '
+                              'prevalent method, buys wholesale and resells at whatever the market '
+                              'tolerates, and sub-brokering stacks margin at every hop [PWGk1rSbFhA @ '
+                              "00:01:42]. Sam Cutting's control play is to take payment yourself: collect "
+                              'from the buyer, pay the seller and keep the exact commission you set. Do '
+                              'this only after full due diligence on the seller, ideally including a '
+                              'face-to-face factory visit [QguZjBADFoA @ 00:01:45].',
+                              'Splits with outside parties get negotiated down to an exact figure. The '
+                              'Ultimate Jet Guide host asks every broker, pilot or management company '
+                              'early how they are getting paid. When one says whatever you think, he '
+                              'forces a number. If they demand $50,000 out of a $50,000 commission, he '
+                              'counters at $10,000 for just bringing the guy, or $25,000 for getting the '
+                              'deal across the line [1ILeO7AapJM @ 00:07:46]. In residential, Brandon '
+                              'Mulrenin and his lender guest show how to fund a buyer-paid fee on a '
+                              '$460,000 purchase. Raising the rate from 6.125% to 6.625% yields a 1% '
+                              'credit, about $4,300, and lifts the payment from $2,725 to $2,867 '
+                              '[5YNeLidiqqU @ 00:05:44]. The other route writes the price at $473,800 with '
+                              'a $13,800 seller concession. The payment rises only $81, a 170-month or '
+                              '14-year break-even. The buyer agent fee counts as a customary fee outside '
+                              'the 3% concession limit, but it has to be in the offer before the appraisal '
+                              'is ordered [5YNeLidiqqU @ 00:11:38]. Think Real Estate reports that well '
+                              'over 90% of sellers still agree to pay a buyer broker when asked in the '
+                              "offer. The average buyer's agent commission sits at 2.37%, down from 2.45% "
+                              '[wBbi84Xi1Bc @ 00:01:32].'],
+               'table': {'caption': 'Fee capture structures, exact numbers and execution details taught by '
+                                    'the closers',
+                         'headers': ['Mechanic',
+                                     'Exact Numbers / Tool',
+                                     'Execution Detail',
+                                     'Expert Source'],
+                         'rows': [['Off-market exclusive for owners refusing a full listing',
+                                   '30, 60 or 90 days, or even one week',
+                                   'No Controller publication, or tail number removed from everything '
+                                   'shared',
+                                   'The Ultimate Jet Guide ([1ILeO7AapJM @ 00:00:58])'],
+                                  ['One-page deal-specific commission agreement sent when buyer engages',
+                                   'Typical verbal ask of 6% or 4% first',
+                                   'Names the buyer and amount, payable only on that specific deal',
+                                   'The Ultimate Jet Guide ([1ILeO7AapJM @ 00:03:13])'],
+                                  ['Intermediary resale spread when nobody agrees to pay',
+                                   'Contract at $2 million, resell at $2.1 million',
+                                   'Broker keeps the $100,000 difference, protected from pre-buy price '
+                                   'cuts',
+                                   'The Ultimate Jet Guide ([1ILeO7AapJM @ 00:05:04])'],
+                                  ['Charter compensation through operator cut, transparent fee or markup',
+                                   'Charter broker cut ranges from 5% to 30% per trip',
+                                   'Undisclosed markup is the most prevalent model, layered further by '
+                                   'sub-brokering',
+                                   'MarginCallMedia ([PWGk1rSbFhA @ 00:02:17])'],
+                                  ['Rate buy-up credit used to fund a buyer-paid agent fee',
+                                   '6.125% to 6.625% yields 1% credit, about $4,300',
+                                   'Monthly payment moves from $2,725 to $2,867 for the buyer',
+                                   'Brandon Mulrenin ([5YNeLidiqqU @ 00:05:44])'],
+                                  ['Purchase price gross-up paired with a matching seller concession',
+                                   '$460,000 becomes $473,800 with a $13,800 concession',
+                                   '$81 more per month, 14-year break-even, must precede the appraisal '
+                                   'order',
+                                   'Brandon Mulrenin ([5YNeLidiqqU @ 00:11:38])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'How Closers Keep The Fee Intact From Intro To Disbursement',
+                           'body': 'Field-tested moves for anonymizing assets, pinning co-brokers to a '
+                                   'number, and getting the commission wire out the door clean.',
+                           'items': ['Before any aircraft package goes out, check the cockpit photos for a '
+                                     'visible tail number, because that is where it leaks most often [The '
+                                     'Ultimate Jet Guide — 1ILeO7AapJM @ 00:01:38]',
+                                     "Never accept 'just whatever you think' from a co-broker. Force an "
+                                     'exact figure and counter based on the work done, such as $10,000 for '
+                                     'an intro or $25,000 for closing work [The Ultimate Jet Guide — '
+                                     '1ILeO7AapJM @ 00:08:01]',
+                                     'Coach the title attorney or escrow company to list the exact wire '
+                                     "amount, their bank's name and their contact information on the "
+                                     'disbursement form, so a failed transfer can be traced fast [Equity '
+                                     'Real Estate — mVFdzEqW2M4 @ 00:00:51]',
+                                     'Put the concession and buyer agent fee into the offer itself, '
+                                     'because the appraiser receives the purchase agreement and adding '
+                                     'concessions after the appraisal comes back is too late [Brandon '
+                                     'Mulrenin — 5YNeLidiqqU @ 00:13:45]']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Lock The Fee Before Exposure',
+                              'action': 'Secure a listing, off-market exclusive, or verbal fee agreement '
+                                        'before any identifying details leave your hands.',
+                              'detail': 'Ask the owner for a short exclusive limited to off-market '
+                                        'activity, then confirm a commission number such as 6% or 4% '
+                                        'verbally before pitching any buyer [The Ultimate Jet Guide — '
+                                        '1ILeO7AapJM @ 00:02:49]'},
+                             {'step': 2,
+                              'title': 'Anonymize And Paper The Specific Buyer',
+                              'action': 'Send only a scrubbed spec sheet, then convert interest into a '
+                                        'signed one-page commission agreement naming the buyer.',
+                              'detail': 'Strip tail and serial numbers from photos and reports, and if the '
+                                        "buyer's side is the one you control, get the buyer to sign a "
+                                        'commission agreement instead [Sam Cutting - Red Flags '
+                                        'Verification — QguZjBADFoA @ 00:01:25]'},
+                             {'step': 3,
+                              'title': 'Settle Every Split In Writing',
+                              'action': 'Ask each outside broker, pilot or management company how they are '
+                                        'getting paid, and agree on an exact dollar figure.',
+                              'detail': 'Have the conversation early and do not let them control it; split '
+                                        '50/50 only when they are actually doing the work to get the deal '
+                                        'across the line [The Ultimate Jet Guide — 1ILeO7AapJM @ '
+                                        '00:06:29]'},
+                             {'step': 4,
+                              'title': 'Run The Disbursement And Wire Check',
+                              'action': 'Complete every field on the commission disbursement form and '
+                                        "confirm the funding entity's side a day or two before closing.",
+                              'detail': 'Verify wire details by phone using a number you found yourself, '
+                                        'and require a test transaction before the commission wire is '
+                                        'released [Family Split Strategy — DZe5D7_TCDA @ 00:12:44]'}]},
+              {'heading': 'Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The sharpest split is whether a broker should get paid from a signed '
+                              'commission line or from a spread. The Ultimate Jet Guide treats the spread '
+                              'as a fallback. If the seller refuses to pay and the buyer refuses too, you '
+                              'ask the seller for their number and take anything above $2 million. You '
+                              'then either write that into the agreement transparently, or run it through '
+                              'an intermediary company that puts the aircraft under contract at $2 million '
+                              'and presents it to the buyer at $2.1 million including commission '
+                              '[1ILeO7AapJM @ 00:04:13] [1ILeO7AapJM @ 00:05:04]. Sam Cutting goes further '
+                              "for freelance brokers: add the fee on top of the seller's price, or take "
+                              'payment yourself, pay the seller, and control the deal after face-to-face '
+                              'due diligence at the factory [QguZjBADFoA @ 00:01:45]. MarginCallMedia '
+                              'attacks exactly that model from the charter side. It calls the undisclosed '
+                              'markup the dominant compensation method and a blind premium that clients '
+                              'can neither verify nor negotiate, and says fee-only consultancies passing '
+                              "the operator's wholesale price through with zero markup are fracturing the "
+                              'industry [PWGk1rSbFhA @ 00:02:17]. The practical decision is whether your '
+                              'buyer will ask for two distinct numbers, because a broker who deflects that '
+                              'question gets read as hiding a spread.',
+                              'Practitioners also split on how much weight a non-circumvention agreement '
+                              'can carry. Pryderi Podcast frames it as extremely valuable. Leads and '
+                              'relationships built up over months or years are worth real money, and an '
+                              'NCNDA makes going around the introducer a contractual violation that can '
+                              'expose the circumventing party to damages [rnUvOWiFpDQ @ 00:01:35]. Sam '
+                              'Cutting is blunter about enforcement. If you lack the money to take someone '
+                              'to court, and the other side is likely in another country, it is going to '
+                              'be difficult. Some attorneys may take a case on a no-win, no-fee basis, but '
+                              'only if you hold irrefutable evidence that you were cut out and the NCNDA '
+                              "was breached [QguZjBADFoA @ 00:02:07]. Cutting's real defense is structural "
+                              'rather than legal: get out of any situation with more than two entities. '
+                              'The Ultimate Jet Guide runs a third playbook built on information control '
+                              "instead of paper. When the seller won't sign a listing, strip tail and "
+                              'serial numbers from photos, cockpit shots, and spec sheets, and hold back '
+                              'maintenance reports. Then convert the deal to a one-page commission '
+                              'agreement naming the specific buyer before the floodgates open [1ILeO7AapJM '
+                              '@ 00:01:24] [1ILeO7AapJM @ 00:03:13]. Even Pryderi concedes the agreement '
+                              'is not always necessary.',
+                              'On the size of the commission itself, the yacht and real estate camps pull '
+                              'in opposite directions. Christopher of Yacht Experts calls the typical 10% '
+                              'yacht fee part of an entrenched and inefficient model. The fee splits 5% '
+                              'per side, then employing licensed brokers take 50% of each side, so the '
+                              'working broker nets 2.5% while the employing broker adds very little if any '
+                              "value. Christopher's response was to form a licensed employing brokerage in "
+                              'Florida to run a more reasonable commission structure [NUVwWnSq3A0 @ '
+                              '00:01:59]. Yacht Zero accepts the 10% and argues that the only thing more '
+                              'expensive than agreeing to it is not paying it, because unsold yachts lose '
+                              "value as every similar sale drops the price. Yacht Zero's leverage play is "
+                              'to make the listing broker carry professional photos, dockage, and boat '
+                              'show costs [oEXYo1_yeOU @ 00:00:10]. In residential, Think Real Estate '
+                              'reports that well over 90% of sellers still pay a buyer broker commission '
+                              "when the offer asks for it. The average buyer's agent fee slid only from "
+                              '2.45% to 2.37%, about an $800 discount on a $1 million sale [wBbi84Xi1Bc @ '
+                              '00:01:32]. Brandon Mulrenin agrees that sellers will still pay the vast '
+                              'majority of buyer agent commissions, and builds loan-structure workarounds '
+                              'only for the rare deal where the seller pays nothing [5YNeLidiqqU @ '
+                              '00:15:26].'],
+               'table': {'caption': 'Competing playbooks for locking in and sizing the commission before '
+                                    'closing',
+                         'headers': ['Decision Point',
+                                     'Playbook A',
+                                     'Counter-Position Or Alternative Playbook',
+                                     'Expert Source'],
+                         'rows': [['Seller refuses a full public listing agreement',
+                                   'Offer an off-market exclusive listing for one week up to 90 days, kept '
+                                   'off Controller with the tail number removed',
+                                   'If the seller still says just bring me a buyer, send a one-page '
+                                   'commission agreement naming that specific buyer',
+                                   'The Ultimate Jet Guide ([1ILeO7AapJM @ 00:00:58])'],
+                                  ['Neither buyer nor seller will pay commission',
+                                   "Get the seller's net number and take the spread above it, either "
+                                   'transparently or through an intermediary company',
+                                   'Undisclosed spread is a blind premium; clients should demand operator '
+                                   'price and broker pay as two distinct numbers',
+                                   'The Ultimate Jet Guide ([1ILeO7AapJM @ 00:05:04]); MarginCallMedia '
+                                   '([PWGk1rSbFhA @ 00:04:49])'],
+                                  ['Defending against circumvention after the introduction',
+                                   'An NCNDA makes going around the introducer a contractual violation '
+                                   'that exposes the other side to damages',
+                                   'Court enforcement is difficult without money or across countries, so '
+                                   'sign the seller or buyer directly instead',
+                                   'Pryderi Podcast ([rnUvOWiFpDQ @ 00:01:35]); Sam Cutting - Red Flags '
+                                   'Verification ([QguZjBADFoA @ 00:02:07])'],
+                                  ['Whether the standard 10% yacht fee is justified',
+                                   'The 10% is bloated because employing brokers skim 50% per side, so run '
+                                   'your own employing brokerage',
+                                   'Pay the 10% but force the broker to fund photos, dockage, and boat '
+                                   'show costs as skin in the game',
+                                   'Yacht Experts LLC - Brokerage &  Extended Warranty ([X9M7tNL-n6c @ '
+                                   '00:01:38]); Yacht Zero ([oEXYo1_yeOU @ 00:01:05])'],
+                                  ['Who funds the residential buyer agent commission',
+                                   'Well over 90% of sellers still pay when asked in the offer, averaging '
+                                   '2.37% after the new rules',
+                                   'If the seller pays nothing, roll 3% into a higher price as a seller '
+                                   'concession or take a lender credit',
+                                   'Think Real Estate ([wBbi84Xi1Bc @ 00:01:14]); Brandon Mulrenin '
+                                   '([5YNeLidiqqU @ 00:12:00])'],
+                                  ['Paying a referring broker, pilot, or management company',
+                                   'Ask early how they are getting paid and force an exact dollar figure '
+                                   'instead of whatever you think',
+                                   'A broker who only introduced a broker to the direct broker has poor '
+                                   'odds of ever getting paid',
+                                   'The Ultimate Jet Guide ([1ILeO7AapJM @ 00:06:29]); Sam Cutting - Red '
+                                   'Flags Verification ([QguZjBADFoA @ 00:02:30])'],
+                                  ['Justifying the buyer side fee to the client',
+                                   'Commission is no longer assumed and must be explained, positioned, and '
+                                   'justified through a consultative, repeatable process',
+                                   'The signed buyer broker agreement forces the money conversations that '
+                                   'buyers and agents should have had all along',
+                                   'SMART Talk for Real Estate Agents ([7viJGpG_ju4 @ 00:02:40]); Think '
+                                   'Real Estate ([wBbi84Xi1Bc @ 00:02:15])']]}},
+              {'heading': 'Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The most expensive failure The Ultimate Jet Guide describes is the '
+                              'transparent spread that evaporates in pre-buy. If you stand to make a '
+                              "hundred grand above the seller's $2 million and squawks force a "
+                              'hundred-grand price reduction, you get paid nothing [1ILeO7AapJM @ '
+                              '00:04:39]. The same speaker warns against letting a referring broker or '
+                              'pilot take control of the conversation. When someone asks for 50 grand and '
+                              'there is only 50 grand of commission in the deal, you pin them to an exact '
+                              'number. You then negotiate toward 10 grand if they only brought the buyer, '
+                              'or 25 if they are helping get the deal across the line [1ILeO7AapJM @ '
+                              '00:07:46]. Sam Cutting describes the chain-length trap in terms of payout '
+                              'odds. The broker who introduced a broker to the broker who is direct to the '
+                              'buyer or seller has slim chances of getting paid, while the one who '
+                              'connects buyer and seller directly fares far better [QguZjBADFoA @ '
+                              '00:02:30]. MarginCallMedia shows the downstream cost of sub-brokering. '
+                              'Every layer quietly takes its own margin, and squeezed operators respond by '
+                              'trimming crew rest, hiring less experienced pilots, or delaying crucial '
+                              'maintenance [PWGk1rSbFhA @ 00:02:50]. Every extra hand in the chain shrinks '
+                              'the check and raises the odds that it never clears.',
+                              'At closing, the commission and the down payment both ride on wires, and '
+                              'Family Split Strategy describes how they get stolen. Hackers break into the '
+                              'weakest inbox in the email chain, often a small realtor, inspector, or '
+                              'insurance office working on home Wi-Fi or in a coffee shop. They read who '
+                              'the title company and buyer are, register a lookalike domain, and build a '
+                              'matching website in an hour or two. Then they email fake wiring '
+                              'instructions complete with logos and a phone number that rings to the '
+                              'scammer [DZe5D7_TCDA @ 00:04:08] [DZe5D7_TCDA @ 00:06:22]. The fix they '
+                              'teach costs close to zero. Send a test wire of $1 to $1,000 and confirm '
+                              'receipt by walking into the real office or calling a number you looked up '
+                              'yourself. Then send the full balance to the same unchanged account. Title '
+                              'companies should run the same test before they release a commission to a '
+                              'realtor [DZe5D7_TCDA @ 00:12:30]. Hauseit adds a verbal check: call the '
+                              'attorney you have actually met and read the account and routing numbers '
+                              'aloud. Once a fraudulent wire lands, there is not much you can do to remedy '
+                              'it [KrsoinTC_10 @ 00:01:37]. The recovery window Family Split describes is '
+                              'narrow: file with IC3 and push the financial fraud kill chain, usually '
+                              'within 72 hours.',
+                              'Slower failures come from paperwork and logistics rather than theft. Equity '
+                              'Real Estate warns that any missing or wrong field on the commission '
+                              'disbursement and wire instructions form can hold up the check. The agent '
+                              'fills in every field, especially the email addresses. The agent then '
+                              'coaches the title or escrow side to list the exact wire amount, their bank '
+                              'name, and contact information, and touches base a day or two before closing '
+                              'so the commission lands by direct deposit within 24 hours [mVFdzEqW2M4 @ '
+                              '00:01:06]. Giuseppe Battaglioli has seen buyers hit daily wire limits at '
+                              'banks with no local branch. One client had to drive to Kansas to get a '
+                              "cashier's check before closing [YtS2MXC9Bps @ 00:01:07]. Lauren's escrow "
+                              'rule is just as rigid. As the neutral third party, escrow acts only on '
+                              'mutually agreed instructions, so contract changes must reach escrow as '
+                              'written amendments within three days of acceptance [IK3LgAFr-QQ @ '
+                              "00:02:05]. Steve, the lender on Brandon Mulrenin's episode, hit the timing "
+                              'trap on a live loan. The appraisal came back exactly at contract price, '
+                              'which killed a late request to raise the price and add concessions '
+                              '[5YNeLidiqqU @ 00:15:11]. That is why any commission-funding concession has '
+                              'to be written into the original offer.'],
+               'table': {'caption': 'Firsthand traps that delay, shrink, or wipe out the commission at '
+                                    'closing',
+                         'headers': ['Trap',
+                                     'Firsthand Failure Or Loss',
+                                     'Economics Check Or Counter-Move',
+                                     'Expert Source'],
+                         'rows': [['Pre-buy squawks collapse a fixed spread',
+                                   'A planned hundred-grand spread disappears when squawks force a '
+                                   'hundred-grand price reduction, so the broker gets paid nothing',
+                                   'Prefer a signed commission line, and treat the spread as a last-resort '
+                                   'structure when neither side will pay',
+                                   'The Ultimate Jet Guide ([1ILeO7AapJM @ 00:04:39])'],
+                                  ['Referral party demands the entire commission pool',
+                                   'A broker or pilot asks for 50 grand when there is only 50 grand of '
+                                   'commission in the deal',
+                                   'Force an exact number, then counter at 10 grand for an introduction or '
+                                   '25 for shared work',
+                                   'The Ultimate Jet Guide ([1ILeO7AapJM @ 00:08:01])'],
+                                  ['Daisy-chained NCNDA with too many intermediaries',
+                                   'An NCNDA arriving with 14 intermediaries rings alarm bells because '
+                                   'that deal is never going to close',
+                                   'Get out of any situation with more than two entities, and sign either '
+                                   'the buyer or the seller',
+                                   'Sam Cutting - Red Flags Verification ([QguZjBADFoA @ 00:00:22])'],
+                                  ['Spoofed wiring instructions from a lookalike domain',
+                                   'A buyer wires a full down payment to a hacker posing as the title '
+                                   'officer on a cloned domain',
+                                   'Send a $1 to $1,000 test wire, verify through an independently sourced '
+                                   'number, then send the balance',
+                                   'Family Split Strategy ([DZe5D7_TCDA @ 00:07:23]); Hauseit '
+                                   '([KrsoinTC_10 @ 00:00:00])'],
+                                  ['Incomplete commission disbursement and wire form',
+                                   'Any missing or wrong field holds up the commission while processing '
+                                   'sorts out the issue',
+                                   'Fill every field, coach the title side on wire amount and bank, and '
+                                   'expect payout within 24 hours',
+                                   'Equity Real Estate ([mVFdzEqW2M4 @ 00:01:35])'],
+                                  ['Daily wire limits and banks without local branches',
+                                   'Buyers could not wire the correct amount, and one drove to Kansas for '
+                                   "a cashier's check",
+                                   'Confirm wire capacity with the bank days before closing, and confirm '
+                                   "the title company's preferred payment method",
+                                   'Giuseppe Battaglioli ([YtS2MXC9Bps @ 00:01:07])'],
+                                  ['Seller concession cap and appraisal timing squeeze',
+                                   'Buyers needing the full 3% seller concession for closing costs leave '
+                                   'the buyer agent short of their own 3%',
+                                   'The commission counts as a customary fee outside the cap; rolling in '
+                                   '$13,800 costs $81 a month, with a 14-year break-even',
+                                   'Brandon Mulrenin ([5YNeLidiqqU @ 00:09:18]); Brandon Mulrenin '
+                                   '([5YNeLidiqqU @ 00:18:14])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Hold Specs And Money Until These Four Checks Clear',
+                           'body': 'Each check below comes from a loss, a dead deal, or a delayed payout '
+                                   'that practitioners reported firsthand. If any check fails, stop '
+                                   'sending identifying details and stop releasing funds.',
+                           'items': ['No signed agreement saying how you get paid means no tail numbers, '
+                                     'serial numbers, or maintenance reports go out; send only a scrubbed '
+                                     'spec sheet [The Ultimate Jet Guide — 1ILeO7AapJM @ 00:05:44].',
+                                     'If more than two entities sit between you and the principal, or an '
+                                     'NCNDA arrives with 14 intermediaries, walk away instead of chasing '
+                                     'the fee [Sam Cutting - Red Flags Verification — QguZjBADFoA @ '
+                                     '00:00:42].',
+                                     'No full wire goes out until a small test wire is confirmed through a '
+                                     'phone number you looked up yourself or in person at the office, '
+                                     'never a number taken from the email [Family Split Strategy — '
+                                     'DZe5D7_TCDA @ 00:09:23].',
+                                     'No closing date is treated as locked until both sides of the '
+                                     'disbursement form are complete and the funding entity has been '
+                                     'contacted a day or two ahead [Equity Real Estate — mVFdzEqW2M4 @ '
+                                     '00:01:21].']}}],
+ 'pull_quote': '"Again, the most important thing is that you have something in writing that says how '
+               'you\'re going to get paid before you start sending specs." Attributed to The Ultimate Jet '
+               'Guide (1ILeO7AapJM @ 00:05:44).',
+ 'diagram_id': 'diag-01',
+ 'action_checklist': ['When you ask a seller about an off-market sale, also ask whether they will pay a '
+                      'commission and get the percentage agreed verbally, such as 6% or 4%. Then send a '
+                      'one-page agreement naming the buyer [The Ultimate Jet Guide — 1ILeO7AapJM @ '
+                      '00:02:49].',
+                      'Ask every broker, pilot, or management company in the deal how they are getting '
+                      'paid, and refuse to move forward until they give an exact dollar amount [The '
+                      'Ultimate Jet Guide — 1ILeO7AapJM @ 00:06:29].',
+                      "On charter deals, show the operator's wholesale cost and your advisory fee as "
+                      "separate line items so a client's two-number question cannot sink your credibility "
+                      '[MarginCallMedia — PWGk1rSbFhA @ 00:01:59].',
+                      'Settle buyer agent compensation and seller concessions in the original offer, '
+                      'before the appraisal is ordered. If the buyer is short on cash, use a lender '
+                      'credit, such as moving from 6.125% to 6.625% for a 1% credit [Brandon Mulrenin — '
+                      '5YNeLidiqqU @ 00:05:26].',
+                      'Tell every buyer and seller to send a small test wire, confirm receipt by phone or '
+                      'walk-in at the real office, and then wire the full balance to the same unchanged '
+                      'account [Family Split Strategy — DZe5D7_TCDA @ 00:08:35].',
+                      'Fill out every field on your side of the commission disbursement and wire '
+                      'instructions form. Coach the title or escrow side to add the exact wire amount, '
+                      'bank name, and contact information [Equity Real Estate — mVFdzEqW2M4 @ 00:00:51].'],
+ 'statutory_citations': [{'title': 'The Ultimate Jet Guide — Commission Agreements & Getting Paid for Jet '
+                                   'Brokers [00:03:13]',
+                          'url': 'https://www.youtube.com/watch?v=1ILeO7AapJM&t=193s',
+                          'relevance': 'Primary practitioner testimony on one-page buyer-specific '
+                                       'commission agreements, spread structures, and splitting fees with '
+                                       'referring brokers.'},
+                         {'title': 'Family Split Strategy — Wire Transfer Escrow Fraud - Preventing, '
+                                   'Detecting, Recovering [00:12:30]',
+                          'url': 'https://www.youtube.com/watch?v=DZe5D7_TCDA&t=750s',
+                          'relevance': 'Primary practitioner testimony on test-wire defense before '
+                                       'releasing commissions and closing funds, plus IC3 and kill-chain '
+                                       'recovery.'},
+                         {'title': 'Sam Cutting - Red Flags Verification — Don’t Get Circumvented '
+                                   '(Cheated) [00:01:45]',
+                          'url': 'https://www.youtube.com/watch?v=QguZjBADFoA&t=105s',
+                          'relevance': 'Primary practitioner testimony on avoiding circumvention through '
+                                       'signed agreements, taking payment, and limiting intermediaries.'},
+                         {'title': 'Equity Real Estate — How to Fill Out the Commission Disbursement & '
+                                   'Wire Instructions Form Correctly [00:01:06]',
+                          'url': 'https://www.youtube.com/watch?v=mVFdzEqW2M4&t=66s',
+                          'relevance': 'Primary practitioner testimony on completing disbursement forms so '
+                                       'the commission arrives by direct deposit within 24 hours.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'Uhqo4raDQ0k',
+                       'title': 'How Much Does An Aircraft Broker Make?',
+                       'channel': 'Alex Bengoechea',
+                       'author': 'Alex Bengoechea',
+                       'text': 'If a 2006 Hawker 850 XB is sold for 5 million, a 1.5 percent commission '
+                               'will earn the broker 75,000.',
+                       'tip': 'If a 2006 Hawker 850 XB is sold for 5 million, a 1.5 percent commission '
+                              'will earn the broker 75,000.',
+                       'timestamp': 38,
+                       'timestamp_seconds': 38,
+                       'timestamp_label': '[00:00:38]',
+                       'url': 'https://www.youtube.com/watch?v=Uhqo4raDQ0k&t=38s',
+                       'markdown': '[00:00:38](https://www.youtube.com/watch?v=Uhqo4raDQ0k&t=38s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'NUVwWnSq3A0',
+                       'title': 'Why Are Yacht Brokerage Commissions So High?',
+                       'channel': 'Yacht Experts LLC - Brokerage &  Extended Warranty',
+                       'author': 'Yacht Experts LLC - Brokerage &  Extended Warranty',
+                       'text': "So the buyer's broker and the seller's broker typically net 2.5% "
+                               'commission of the sale price for all of their considerable hard work and '
+                               'skill on behalf of the client.',
+                       'tip': "So the buyer's broker and the seller's broker typically net 2.5% commission "
+                              'of the sale price for all of their considerable hard work and skill on '
+                              'behalf of the client.',
+                       'timestamp': 119,
+                       'timestamp_seconds': 119,
+                       'timestamp_label': '[00:01:59]',
+                       'url': 'https://www.youtube.com/watch?v=NUVwWnSq3A0&t=119s',
+                       'markdown': '[00:01:59](https://www.youtube.com/watch?v=NUVwWnSq3A0&t=119s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '1ILeO7AapJM',
+                       'title': 'Commission Agreements & Getting Paid for Jet Brokers',
+                       'channel': 'The Ultimate Jet Guide',
+                       'author': 'The Ultimate Jet Guide',
+                       'text': 'Again, the most important thing is that you have something in writing that '
+                               "says how you're going to get paid before you start sending specs.",
+                       'tip': 'Again, the most important thing is that you have something in writing that '
+                              "says how you're going to get paid before you start sending specs.",
+                       'timestamp': 344,
+                       'timestamp_seconds': 344,
+                       'timestamp_label': '[00:05:44]',
+                       'url': 'https://www.youtube.com/watch?v=1ILeO7AapJM&t=344s',
+                       'markdown': '[00:05:44](https://www.youtube.com/watch?v=1ILeO7AapJM&t=344s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '1ILeO7AapJM',
+                       'title': 'Commission Agreements & Getting Paid for Jet Brokers',
+                       'channel': 'The Ultimate Jet Guide',
+                       'author': 'The Ultimate Jet Guide',
+                       'text': "If it goes into pre-buy, then there's squawks and they have to reduce the "
+                               'price by a hundred grand, and now you get paid nothing.',
+                       'tip': "If it goes into pre-buy, then there's squawks and they have to reduce the "
+                              'price by a hundred grand, and now you get paid nothing.',
+                       'timestamp': 279,
+                       'timestamp_seconds': 279,
+                       'timestamp_label': '[00:04:39]',
+                       'url': 'https://www.youtube.com/watch?v=1ILeO7AapJM&t=279s',
+                       'markdown': '[00:04:39](https://www.youtube.com/watch?v=1ILeO7AapJM&t=279s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'PWGk1rSbFhA',
+                       'title': 'How Private Jet Brokers Actually Make Money | Hidden Commissions '
+                                'Explained',
+                       'channel': 'MarginCallMedia',
+                       'author': 'MarginCallMedia',
+                       'text': 'What is the operator being paid for this flight, and what are you being '
+                               'paid.',
+                       'tip': 'What is the operator being paid for this flight, and what are you being '
+                              'paid.',
+                       'timestamp': 289,
+                       'timestamp_seconds': 289,
+                       'timestamp_label': '[00:04:49]',
+                       'url': 'https://www.youtube.com/watch?v=PWGk1rSbFhA&t=289s',
+                       'markdown': '[00:04:49](https://www.youtube.com/watch?v=PWGk1rSbFhA&t=289s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'mVFdzEqW2M4',
+                       'title': 'How to Fill Out the Commission Disbursement & Wire Instructions Form '
+                                'Correctly',
+                       'channel': 'Equity Real Estate',
+                       'author': 'Equity Real Estate',
+                       'text': 'Remember every single field on this form needs to be filled out correctly; '
+                               "if something's missing or wrong it could hold up your commission.",
+                       'tip': 'Remember every single field on this form needs to be filled out correctly; '
+                              "if something's missing or wrong it could hold up your commission.",
+                       'timestamp': 95,
+                       'timestamp_seconds': 95,
+                       'timestamp_label': '[00:01:35]',
+                       'url': 'https://www.youtube.com/watch?v=mVFdzEqW2M4&t=95s',
+                       'markdown': '[00:01:35](https://www.youtube.com/watch?v=mVFdzEqW2M4&t=95s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'YtS2MXC9Bps',
+                       'title': 'Planning To Wire Funds To Closing?  Watch This First',
+                       'channel': 'Giuseppe Battaglioli',
+                       'author': 'Giuseppe Battaglioli',
+                       'text': "They ran into last-minute issues where they couldn't wire the correct "
+                               'amounts; they were limited on a daily amount of how much they could wire.',
+                       'tip': "They ran into last-minute issues where they couldn't wire the correct "
+                              'amounts; they were limited on a daily amount of how much they could wire.',
+                       'timestamp': 67,
+                       'timestamp_seconds': 67,
+                       'timestamp_label': '[00:01:07]',
+                       'url': 'https://www.youtube.com/watch?v=YtS2MXC9Bps&t=67s',
+                       'markdown': '[00:01:07](https://www.youtube.com/watch?v=YtS2MXC9Bps&t=67s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'IK3LgAFr-QQ',
+                       'title': 'The Deposit and Escrow Instructions',
+                       'channel': "Title's Not Borin' with Lauren",
+                       'author': "Title's Not Borin' with Lauren",
+                       'text': 'If there are any changes to the contract in the future it is important '
+                               'that we get those amendments in writing; as the neutral third party we can '
+                               'only act upon mutually agreed instruction.',
+                       'tip': 'If there are any changes to the contract in the future it is important that '
+                              'we get those amendments in writing; as the neutral third party we can only '
+                              'act upon mutually agreed instruction.',
+                       'timestamp': 125,
+                       'timestamp_seconds': 125,
+                       'timestamp_label': '[00:02:05]',
+                       'url': 'https://www.youtube.com/watch?v=IK3LgAFr-QQ&t=125s',
+                       'markdown': '[00:02:05](https://www.youtube.com/watch?v=IK3LgAFr-QQ&t=125s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'DZe5D7_TCDA',
+                       'title': 'Wire Transfer Escrow Fraud - Preventing, Detecting, Recovering',
+                       'channel': 'Family Split Strategy',
+                       'author': 'Family Split Strategy',
+                       'text': "If you're a title company, before you send off a payoff to a lien holder "
+                               'or a commission to a realtor, send a test transaction and make sure they '
+                               'received it.',
+                       'tip': "If you're a title company, before you send off a payoff to a lien holder or "
+                              'a commission to a realtor, send a test transaction and make sure they '
+                              'received it.',
+                       'timestamp': 750,
+                       'timestamp_seconds': 750,
+                       'timestamp_label': '[00:12:30]',
+                       'url': 'https://www.youtube.com/watch?v=DZe5D7_TCDA&t=750s',
+                       'markdown': '[00:12:30](https://www.youtube.com/watch?v=DZe5D7_TCDA&t=750s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'DZe5D7_TCDA',
+                       'title': 'Wire Transfer Escrow Fraud - Preventing, Detecting, Recovering',
+                       'channel': 'Family Split Strategy',
+                       'author': 'Family Split Strategy',
+                       'text': "Make sure when you're contacting the title company you don't call a phone "
+                               'number from the email.',
+                       'tip': "Make sure when you're contacting the title company you don't call a phone "
+                              'number from the email.',
+                       'timestamp': 533,
+                       'timestamp_seconds': 533,
+                       'timestamp_label': '[00:08:53]',
+                       'url': 'https://www.youtube.com/watch?v=DZe5D7_TCDA&t=533s',
+                       'markdown': '[00:08:53](https://www.youtube.com/watch?v=DZe5D7_TCDA&t=533s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'KrsoinTC_10',
+                       'title': 'How to Wire Money for Closing',
+                       'channel': 'Hauseit',
+                       'author': 'Hauseit',
+                       'text': 'Call them, ideally speak with them on the phone, and read out the numbers '
+                               "aloud, the account and the routing numbers, to make sure it's the same.",
+                       'tip': 'Call them, ideally speak with them on the phone, and read out the numbers '
+                              "aloud, the account and the routing numbers, to make sure it's the same.",
+                       'timestamp': 97,
+                       'timestamp_seconds': 97,
+                       'timestamp_label': '[00:01:37]',
+                       'url': 'https://www.youtube.com/watch?v=KrsoinTC_10&t=97s',
+                       'markdown': '[00:01:37](https://www.youtube.com/watch?v=KrsoinTC_10&t=97s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'QguZjBADFoA',
+                       'title': 'Don’t Get Circumvented (Cheated)',
+                       'channel': 'Sam Cutting - Red Flags Verification',
+                       'author': 'Sam Cutting - Red Flags Verification',
+                       'text': 'You pay the seller and control the deal; be sure to run full due diligence '
+                               'on the seller beforehand.',
+                       'tip': 'You pay the seller and control the deal; be sure to run full due diligence '
+                              'on the seller beforehand.',
+                       'timestamp': 105,
+                       'timestamp_seconds': 105,
+                       'timestamp_label': '[00:01:45]',
+                       'url': 'https://www.youtube.com/watch?v=QguZjBADFoA&t=105s',
+                       'markdown': '[00:01:45](https://www.youtube.com/watch?v=QguZjBADFoA&t=105s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'QguZjBADFoA',
+                       'title': 'Don’t Get Circumvented (Cheated)',
+                       'channel': 'Sam Cutting - Red Flags Verification',
+                       'author': 'Sam Cutting - Red Flags Verification',
+                       'text': 'When you are sent an NCNDA and there are 14 intermediaries, alarm bells '
+                               "should be ringing; that's never going to close.",
+                       'tip': 'When you are sent an NCNDA and there are 14 intermediaries, alarm bells '
+                              "should be ringing; that's never going to close.",
+                       'timestamp': 22,
+                       'timestamp_seconds': 22,
+                       'timestamp_label': '[00:00:22]',
+                       'url': 'https://www.youtube.com/watch?v=QguZjBADFoA&t=22s',
+                       'markdown': '[00:00:22](https://www.youtube.com/watch?v=QguZjBADFoA&t=22s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'wBbi84Xi1Bc',
+                       'title': 'What Buyers and Sellers Need to Know About the Buyer Broker Agreement in '
+                                '2025',
+                       'channel': 'Think Real Estate',
+                       'author': 'Think Real Estate',
+                       'text': "Most recent data shows that the average buyer's agent commission is 2.37%, "
+                               "and that's down from the 2.45% a year earlier before the new rules were "
+                               'unveiled.',
+                       'tip': "Most recent data shows that the average buyer's agent commission is 2.37%, "
+                              "and that's down from the 2.45% a year earlier before the new rules were "
+                              'unveiled.',
+                       'timestamp': 92,
+                       'timestamp_seconds': 92,
+                       'timestamp_label': '[00:01:32]',
+                       'url': 'https://www.youtube.com/watch?v=wBbi84Xi1Bc&t=92s',
+                       'markdown': '[00:01:32](https://www.youtube.com/watch?v=wBbi84Xi1Bc&t=92s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '5YNeLidiqqU',
+                       'title': "Realtors: Do this if the seller won't pay a buyer agent commission",
+                       'channel': 'Brandon Mulrenin',
+                       'author': 'Brandon Mulrenin',
+                       'text': 'The appraisal is already back, it appraised exactly at the purchase price, '
+                               "so that's really important to get that done up front as much as you can.",
+                       'tip': 'The appraisal is already back, it appraised exactly at the purchase price, '
+                              "so that's really important to get that done up front as much as you can.",
+                       'timestamp': 911,
+                       'timestamp_seconds': 911,
+                       'timestamp_label': '[00:15:11]',
+                       'url': 'https://www.youtube.com/watch?v=5YNeLidiqqU&t=911s',
+                       'markdown': '[00:15:11](https://www.youtube.com/watch?v=5YNeLidiqqU&t=911s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '7viJGpG_ju4',
+                       'title': 'The Truth About Buyer Agent Commissions in 2026 ( New Rules Explained )',
+                       'channel': 'SMART Talk for Real Estate Agents',
+                       'author': 'SMART Talk for Real Estate Agents',
+                       'text': 'Commission is no longer assumed; it has to be explained, positioned, and '
+                               'justified in a way that makes sense to the client.',
+                       'tip': 'Commission is no longer assumed; it has to be explained, positioned, and '
+                              'justified in a way that makes sense to the client.',
+                       'timestamp': 160,
+                       'timestamp_seconds': 160,
+                       'timestamp_label': '[00:02:40]',
+                       'url': 'https://www.youtube.com/watch?v=7viJGpG_ju4&t=160s',
+                       'markdown': '[00:02:40](https://www.youtube.com/watch?v=7viJGpG_ju4&t=160s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'oEXYo1_yeOU',
+                       'title': 'Negotiating 10% Commission With Your Yacht Broker',
+                       'channel': 'Yacht Zero',
+                       'author': 'Yacht Zero',
+                       'text': 'A yacht broker that is to cover dockage is not going to give you an '
+                               'inflated or unrealistic sale price simply to secure the listing.',
+                       'tip': 'A yacht broker that is to cover dockage is not going to give you an '
+                              'inflated or unrealistic sale price simply to secure the listing.',
+                       'timestamp': 84,
+                       'timestamp_seconds': 84,
+                       'timestamp_label': '[00:01:24]',
+                       'url': 'https://www.youtube.com/watch?v=oEXYo1_yeOU&t=84s',
+                       'markdown': '[00:01:24](https://www.youtube.com/watch?v=oEXYo1_yeOU&t=84s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'X9M7tNL-n6c',
+                       'title': 'Why Are Yacht Brokerage Commissions So High?',
+                       'channel': 'Yacht Experts LLC - Brokerage &  Extended Warranty',
+                       'author': 'Yacht Experts LLC - Brokerage &  Extended Warranty',
+                       'text': 'I always say the easy part of selling a boat is getting it under contract; '
+                               'getting to closing is where the real skill comes in.',
+                       'tip': 'I always say the easy part of selling a boat is getting it under contract; '
+                              'getting to closing is where the real skill comes in.',
+                       'timestamp': 79,
+                       'timestamp_seconds': 79,
+                       'timestamp_label': '[00:01:19]',
+                       'url': 'https://www.youtube.com/watch?v=X9M7tNL-n6c&t=79s',
+                       'markdown': '[00:01:19](https://www.youtube.com/watch?v=X9M7tNL-n6c&t=79s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'rnUvOWiFpDQ',
+                       'title': 'NON CIRCUMVENTION AGREEMENTS!',
+                       'channel': 'Pryderi Podcast',
+                       'author': 'Pryderi Podcast',
+                       'text': "You cannot go directly around me and talk to that person, otherwise it's a "
+                               'contractual violation and you could be subject to damages.',
+                       'tip': "You cannot go directly around me and talk to that person, otherwise it's a "
+                              'contractual violation and you could be subject to damages.',
+                       'timestamp': 95,
+                       'timestamp_seconds': 95,
+                       'timestamp_label': '[00:01:35]',
+                       'url': 'https://www.youtube.com/watch?v=rnUvOWiFpDQ&t=95s',
+                       'markdown': '[00:01:35](https://www.youtube.com/watch?v=rnUvOWiFpDQ&t=95s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'}]}

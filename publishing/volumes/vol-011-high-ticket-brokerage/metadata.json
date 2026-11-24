@@ -8,49 +8,49 @@
       "BROKERAGE"
     ],
     "deck": [
-      "LOCK EXCLUSIVITY. QUALIFY BUYERS.",
-      "CLEAR ESCROW CLEANLY."
+      "COMMISSION SPLITS, CLOSE RATES, FEE LADDERS, AND BUYER SCREENS TESTED ON LIVE DEALS",
+      "LICENSED BROKERAGES, OFF-MARKET PIPELINES, AND PROTECTED CLOSINGS BUILT FROM THE GROUND UP"
     ],
-    "lead": "Specialist Lower-Middle-Market, Digital Asset, Easement & Luxury Transaction Brokerage for Lean 4-Person Deal Desks",
-    "summary": "Structure enforceable exclusive mandates, verify licensing boundaries, screen institutional buyers, and settle commissions directly from escrow.",
+    "lead": "From $3K-$25K coaching offers closed over Zoom to double Lehman M&A mandates, yacht and aircraft listings, and tax-credit transfers, practitioners show how intermediaries source, protect, value, and collect on high-ticket deals.",
+    "summary": "All 12 chapters synthesize 192 verbatim YouTube practitioner testimonies, each claim carrying timestamped inline attribution to its source video. Together they cover the path from remote commission closing and intermediary role selection through registration, NDAs, valuation, specialist markets, and certainty at closing.",
     "chapters": [
-      "Business model & revenue boundaries",
-      "Decision-makers & payment rails",
-      "Unit economics & margin waterfall",
-      "Startup capital & lean stack",
-      "Beginner traps & failure modes",
-      "Sourcing & first deals",
-      "End-to-end operating blueprint",
-      "Public records, APIs & tooling",
-      "Contracts, statutes & scripts",
-      "Automation & distribution loops",
-      "Small-team pod & exit valuation",
-      "First 30-day launch sprint"
+      "High-Ticket Sales: From First Offer to Repeatable Closings",
+      "Choosing Your Role: Business Broker, M&A Advisor, or Investment Banker",
+      "Broker-Dealer Registration and M&A Exemptions",
+      "Licensing, Supervision, and Brokerage Controls",
+      "NDAs and Non-Circumvention Agreements",
+      "Yacht and Aircraft Brokerage: Entry, Sourcing, and Economics",
+      "Protecting Commissions and Collecting at Closing",
+      "Building and Running a Brokerage",
+      "Off-Market Outreach and Deal-Pipeline Management",
+      "Business Valuation: Earnings, Multiples, and Deal Structure",
+      "Specialist Markets: Digital Businesses, Infrastructure, and Tax Credits",
+      "From Deal Presentation to Diligence and Closing Certainty"
     ],
     "flow": [
       [
-        "SOURCE",
-        "Mine high-intent deal triggers"
+        "CHOOSE THE LANE",
+        "Match deal size to buyer pool: Main Street brokers sell owner-operated companies to individuals, M&A advisors run auctions above roughly $5M in value, and bankers enter near $100M."
       ],
       [
-        "UNDERWRITE",
-        "Screen margin, float & rules"
+        "REGISTER AND LICENSE",
+        "Clear broker-dealer registration or M&A exemptions, along with licensing and supervision controls, before taking mandates."
       ],
       [
-        "ENGAGE",
-        "Execute mandate or pre-sell"
+        "SOURCE OFF-MARKET",
+        "Run high-volume outreach such as 100 DMs a day and 60-second Looms, and track every lead in a managed deal pipeline."
       ],
       [
-        "DELIVER",
-        "Run standardized SOP & ledger"
+        "PROTECT AND QUALIFY",
+        "Sign NDAs and non-circumvention agreements, then screen buyers for cash on hand, backing, and the experience to actually complete."
       ],
       [
-        "VERIFY",
-        "Audit quality, scrubs & statutes"
+        "VALUE AND STRUCTURE",
+        "Never quote a price before seeing the returns: build the credit memo, run DSCR, and apply earnings multiples to the deal structure."
       ],
       [
-        "COMPOUND",
-        "Reconcile cash & scale pod"
+        "CLOSE AND COLLECT",
+        "Carry the deal from presentation through diligence to closing certainty, and collect success fees and commissions at closing."
       ]
     ]
   },
@@ -58,10 +58,10 @@
   "book_series": "THE BIG MONEY PLAYBOOKS",
   "tagline": "Big Money. Small Teams. No Bullshit.",
   "title": "HIGH-TICKET BROKERAGE",
-  "subtitle": "The Complete Playbook for $100,000–$1,000,000 USD in Annual Retained Commissions: A 1 FT + 3 C (4-Person) Core Pod, Scaling to Six",
+  "subtitle": "Commission-only closer seats, Main Street and double Lehman fee ladders, state-by-state M&A broker exemptions, license-state maps, genuine NCNDAs, 60/40 yacht splits and scrubbed jet specs, sub-60-word off-market outreach, SDE and EBITDA multiples, specialist-lane pricing, and seller notes with offset rights that protect closing certainty",
   "chapter_count": 12,
-  "total_word_count": 76835,
-  "expert_youtube_link_count": 180,
+  "total_word_count": 74009,
+  "expert_youtube_link_count": 209,
   "min_expert_youtube_links_required": 150,
   "target_expert_youtube_links": "150-200+",
   "min_expert_youtube_links_per_chapter": 12,
@@ -76,5 +76,5 @@
   "publication_status": "approved_master",
   "public_deploy_approved": false,
   "paid_sales_approved": false,
-  "updated_at": "2026-11-23T22:48:01Z"
+  "updated_at": "2026-11-24T19:54:29Z"
 }

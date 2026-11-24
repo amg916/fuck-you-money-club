@@ -1,702 +1,876 @@
 from __future__ import annotations
 
-CHAPTER_2 = {
-    "id": "Q2",
-    "chapter_id": "Q2",
-    "chapter_number": 2,
-    "question_number": 2,
-    "slug": "who-pays-why-they-pay-payment-rail",
-    "question_prompt": "Who writes the check in unclaimed property recovery, what acute financial or statutory pain forces them to pay, and how do funds clear cleanly without circumvention or non-payment?",
-    "kicker": "Q2 / THE BIG MONEY PLAYBOOKS",
-    "title": "Who Pays, Why They Pay & How the Payment Rail Works",
-    "subtitle": "Treasury Claims, Corporate Warrants, Finder-Fee Limits, Verified Payees, and Owner-First Settlement",
-    "layout_template": "executive_summary",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #5, Unclaimed Property Recovery, holds Rank #04 with an 89/100 "
-        "Money-to-Manpower Score. Across the volume's 12 mapped plays, this chapter "
-        "isolates payer authority, lawful fee attachment, and collected cash, with "
-        "specific treatment of distressed_asset_recovery and "
-        "wotc_hourly_payroll_tax_credit_contingency_engine. Owners buy evidence assembly "
-        "and administrative execution, not privileged access to treasury money. The "
-        "state generally returns owner assets; the customer pays the recovery service "
-        "under an enforceable agreement. Annual owner profit is $15,000 Conservative, "
-        "$95,625 Base, and $225,000 Scaled, derived from recognized service fees rather "
-        "than recovered principal. Build around verified decision-makers, jurisdiction-specific "
-        "fee restrictions, direct-claim disclosure, owner-first disbursement, and a "
-        "collection method established before expensive claim work begins."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$60,000",
-            "context": "Annual recognized service fees; client assets excluded",
-            "note": "25% net margin; $15,000 annual owner net profit; 1 FT + 2 C",
-        },
-        {
-            "label": "Base",
-            "value": "$255,000",
-            "context": "Annual recognized service fees; client assets excluded",
-            "note": "37.5% net margin; $95,625 annual owner net profit; 1 FT + 2 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$450,000",
-            "context": "Annual recognized service fees; client assets excluded",
-            "note": "50% net margin; $225,000 annual owner net profit; 2 FT + 3 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Identify the owner, the economic buyer, and the person authorized to pay",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "The treasury is normally the asset custodian, not the buyer of your "
-                    "service. A named owner, authorized estate representative, or corporate "
-                    "successor hires the recovery firm and owes its permitted fee. Separate "
-                    "three roles before quoting: entitlement to the property, authority to "
-                    "sign the service agreement, and authority to release payment. A corporate "
-                    "controller may sponsor a claim while treasury controls incoming funds "
-                    "and accounts payable controls your invoice. An estate beneficiary may "
-                    "want speed but lack authority to bind the estate. Request the actual "
-                    "delegation, letters of appointment, or corporate signing policy rather "
-                    "than accepting an impressive title. No statute generally forces an "
-                    "owner to hire a finder. The acute pain is an unreconciled receivable, "
-                    "an estate that cannot close cleanly, missing merger evidence, or staff "
-                    "time diverted from higher-value work. State explicitly that the owner "
-                    "can claim directly through the state's official process without hiring "
-                    "your firm. Then sell a defined evidence package, submission support, "
-                    "and status tracking. A $40,000 corporate claim at an otherwise permitted "
-                    "10% fee produces $4,000 of service revenue, not $40,000. The remaining "
-                    "$36,000 belongs economically to the owner after that fee."
-                ),
-                (
-                    "Decision-maker psychology changes the sales process more than the size "
-                    "of the public listing. Individuals first ask whether the letter is a "
-                    "scam; corporate staff ask whether the asset really belongs to their "
-                    "entity; fiduciaries ask whether the expenditure can be supported in "
-                    "their accounting. Lead with an independently verifiable property record, "
-                    "the official agency contact, and a plain explanation of your separate "
-                    "business. Never request banking credentials to prove ownership. For a "
-                    "corporate uncashed warrant, determine whether the issuing agency can "
-                    "still reissue the warrant or whether custody has transferred to the "
-                    "state. The correct route changes the evidence, payee, and payment clock. "
-                    "Ask the controller to identify the general-ledger account, vendor-onboarding "
-                    "requirements, purchase-order threshold, and invoice approver before work "
-                    "starts. Ask an estate representative how recovery expenses are approved "
-                    "and whether distributions are already scheduled. Do not manufacture urgency "
-                    "from a nonexistent expiration date. Real urgency comes from a documented "
-                    "estate hearing, dissolution timetable, expiring supporting records, or a "
-                    "customer's reporting deadline. Put that date beside the agency's actual "
-                    "processing estimate, not beside a salesperson's promised settlement date. "
-                    "A trustworthy explanation of delay often converts better than a larger "
-                    "headline recovery estimate."
-                ),
-                (
-                    "Screen willingness and ability to pay separately from entitlement. A "
-                    "valid owner can still be insolvent, disorganized, or determined to avoid "
-                    "the fee. Check entity status through the relevant Secretary of State, "
-                    "review authorized bankruptcy records through PACER when indicated, and "
-                    "obtain the customer's vendor-payment instructions directly. Public records "
-                    "are leads, not a complete credit opinion. Bankruptcy can change who "
-                    "controls an asset; pause owner-directed collection until counsel resolves "
-                    "estate ownership and representative authority. For ordinary corporate "
-                    "customers, confirm whether accounts payable will accept a contingent "
-                    "invoice supported by the treasury remittance advice. A purchase order "
-                    "documents internal purchasing authority but does not redirect treasury "
-                    "funds or override a finder statute. For individuals, agree on the invoice "
-                    "trigger and a lawful payment method without conditioning assistance on "
-                    "surrender of the entire recovery. Estimate collection exposure before "
-                    "buying records: a $1,000 expected fee with $250 acquisition cost, $200 "
-                    "document labor, and a 20% noncollection assumption leaves only $350 "
-                    "before general overhead. If the economics fail, decline the engagement "
-                    "or offer a lawful, clearly scoped alternative. Do not solve weak "
-                    "underwriting by taking control of a claimant's identity or account."
-                ),
-            ],
-            "table": {
-                "caption": "Twelve Payer Situations: Ownership, Purchasing Authority, and Collection Evidence",
-                "headers": [
-                    "Owner and buyer situation",
-                    "Economic reason to purchase recovery assistance",
-                    "Authority evidence required before substantial work",
-                    "Payment arrangement and practical fallback",
-                ],
-                "rows": [
-                    [
-                        "Living individual claiming funds under their recorded name",
-                        "Old addresses and fragmented records create avoidable administrative effort",
-                        "Identity and address linkage satisfying the custodial agency's requirements",
-                        "Owner receives proceeds directly and pays the separately documented fee",
-                    ],
-                    [
-                        "Individual whose recorded name changed after the original payment",
-                        "Name discontinuity prevents a straightforward automated ownership match",
-                        "Agency-accepted name-change evidence connecting current and historical identities",
-                        "Resolve identity evidence first; decline speculative duplicate ownership claims",
-                    ],
-                    [
-                        "Personal representative recovering property for an open probate estate",
-                        "Unrecovered property complicates estate accounting and planned beneficiary distributions",
-                        "Current appointment documents and any required estate expenditure authorization",
-                        "Invoice the authorized estate account after documented receipt of proceeds",
-                    ],
-                    [
-                        "Heir seeking recovery before representative authority has been established",
-                        "Family records suggest entitlement but succession evidence remains incomplete",
-                        "Agency-recognized succession procedure or appointment established before substantive filing",
-                        "Refer contested succession questions to counsel rather than purchasing signatures",
-                    ],
-                    [
-                        "Corporate controller handling legacy checks for an active company",
-                        "Small stranded balances consume scarce reconciliation and accounting capacity",
-                        "Entity identity, signing delegation, and accounts payable onboarding confirmation",
-                        "Match the fee invoice to the company's treasury receipt reference",
-                    ],
-                    [
-                        "Corporate successor recovering assets recorded under a predecessor entity",
-                        "Merger history obscures the chain connecting owner and current claimant",
-                        "Merger certificates and transaction documents establishing ownership of these assets",
-                        "Obtain successor payment authority; escalate ambiguous asset transfers to counsel",
-                    ],
-                    [
-                        "Dissolved company's authorized representative pursuing a surviving asset",
-                        "Closing the entity left a recoverable balance outside final accounting",
-                        "Applicable winding-up authority and evidence identifying the lawful asset recipient",
-                        "Resolve distribution authority before proposing any fee or proceeds routing",
-                    ],
-                    [
-                        "Trustee recovering property titled in the name of a trust",
-                        "Trust administration requires consolidating fragmented assets and historical payments",
-                        "Current trustee authority and agency-required evidence of trust ownership",
-                        "Invoice the authorized trust payer rather than an individual beneficiary",
-                    ],
-                    [
-                        "Business treasury team reconciling an uncashed government warrant",
-                        "A stale payment remains unresolved between issuer and custodial treasury",
-                        "Issuer confirmation of payment status and authorized corporate claimant evidence",
-                        "Use issuer reissue procedures unless custody already transferred to state",
-                    ],
-                    [
-                        "Nonprofit finance director pursuing legacy donations or vendor refunds",
-                        "Restricted staff capacity makes older receivables persist across reporting periods",
-                        "Entity continuity, delegated signing authority, and documented expense approval",
-                        "Use normal vendor onboarding and preserve restricted-fund accounting distinctions",
-                    ],
-                    [
-                        "Bankruptcy trustee evaluating property attributable to a debtor estate",
-                        "Additional estate assets may support distributions under bankruptcy administration",
-                        "Trustee authority and any required professional retention or compensation orders",
-                        "Use counsel-directed engagement and payment terms appropriate to the proceeding",
-                    ],
-                    [
-                        "Multi-entity finance team consolidating claims across affiliated operating companies",
-                        "Centralized staff face repeated filings with different legal asset owners",
-                        "Separate ownership and engagement authority established for each claiming entity",
-                        "Allocate invoices by entity; never net unrelated owners' recovered proceeds",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Sell the evidence burden, not secret access",
-                "body": (
-                    "Experienced operators reduce distrust by separating public discovery, "
-                    "documented ownership, and the paid administrative deliverable."
-                ),
-                "items": [
-                    "Show the official treasury record and direct-claim route before requesting a signed engagement; log the disclosure with the agreement version.",
-                    "Ask corporate treasury and accounts payable to name their respective contacts during onboarding, because receipt authority and invoice authority often differ.",
-                    "For corporate warrants, obtain the issuer's custody or reissue status before spending money reconstructing a state claim that cannot yet be filed.",
-                    "Bundle verified historical addresses and merger evidence into a reusable customer-controlled dossier, but obtain separate authority for every legal claimant.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Select a payment rail that preserves owner control and supports collection",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Design two distinct money movements: custodian to lawful owner, then "
-                    "customer to recovery firm. The default should be direct state payment "
-                    "to the owner, followed by an invoice tied to the engagement's permitted "
-                    "earning event. Some jurisdictions provide a specific process for paying "
-                    "an authorized representative or allocating a permitted fee; use it only "
-                    "when the agency's rules and accepted documents support that exact route. "
-                    "Never assume a power of attorney creates an assignment, grants unlimited "
-                    "endorsement authority, or obligates a treasury to split a check. Record "
-                    "the claim identifier, approved amount, actual receipt date, invoice "
-                    "identifier, and fee calculation as separate fields. A claim marked "
-                    "approved is not collected cash, and a check mailed to an old address "
-                    "is not evidence that the owner received usable funds. Define the "
-                    "contractual payment trigger around verifiable receipt or another lawful, "
-                    "clearly specified event. If the agency pays by paper check, document "
-                    "deposit and settlement through an appropriate customer confirmation, not "
-                    "unrestricted account access. Preserve a narrow remittance extract rather "
-                    "than the owner's entire bank statement. That separation keeps client "
-                    "principal out of the firm's operating account and makes disputed "
-                    "calculations easier to resolve."
-                ),
-                (
-                    "Choose the customer-to-firm rail by ticket size, payer type, reversibility, "
-                    "and administrative friction. ACH usually suits a business invoice, but "
-                    "a debit requires valid authorization and applicable network and account "
-                    "rules; an ACH credit initiated by the customer avoids storing debit "
-                    "instructions. Consumer preauthorized electronic transfers introduce specific "
-                    "requirements under 12 CFR 1005.10, including authorization and stop-payment "
-                    "rights where applicable. A card checkout through Stripe can simplify "
-                    "small invoices but adds processing charges and dispute exposure. Verify "
-                    "processor acceptance of the actual business model before using it. Fedwire "
-                    "is useful for larger business payments, although bank cutoffs, account "
-                    "verification, sanctions screening, and fraud procedures still matter. "
-                    "Do not describe any rail as eliminating all recovery or litigation risk. "
-                    "An independent escrow arrangement can coordinate an authorized settlement, "
-                    "but ordinary treasury claims rarely require an operator-controlled escrow "
-                    "account. Have the custodian confirm whether the proposed destination is "
-                    "permitted before promising escrow-based fee protection. For changed wire "
-                    "instructions, call a previously verified number and require independent "
-                    "internal review. Email alone is insufficient evidence of a new beneficiary "
-                    "account, even when the sender appears to be the established controller."
-                ),
-                (
-                    "Retainers, factoring, and milestone holds are commercial structures rather "
-                    "than interchangeable bank networks. A retainer collected by ACH is still "
-                    "subject to the rules governing the underlying recovery agreement, including "
-                    "any restriction on advance compensation. Calling a recovery charge a "
-                    "research deposit does not remove a statutory fee ceiling. Milestones may "
-                    "support permitted fixed-scope document work, but they cannot turn a "
-                    "prohibited early fee into a lawful one. Factoring transfers or finances "
-                    "an eligible operator receivable; it does not create ownership of the "
-                    "customer's treasury claim. A factor will examine invoice validity, "
-                    "assignment terms, debtor credit, disputes, and recourse. On a $4,000 "
-                    "earned invoice, an illustrative 3% financing charge costs $120 before "
-                    "other contractual charges; that expense reduces contribution rather than "
-                    "increasing recovery revenue. Escrow has its own administrative costs and "
-                    "release conditions, so reserve it for permitted cases where the "
-                    "coordination benefit exceeds those costs. Establish a fallback before "
-                    "submission: if the agency rejects split disbursement, the owner receives "
-                    "the full award and pays through the agreed invoice rail. Do not reroute "
-                    "proceeds through an employee, nominee, unrelated affiliate, or newly "
-                    "opened account merely to preserve your expected fee."
-                ),
-            ],
-            "table": {
-                "caption": "Eight Payment and Settlement Structures Compared Without Confusing Fees and Principal",
-                "headers": [
-                    "Rail or commercial structure",
-                    "Appropriate payer and authorized use",
-                    "Settlement evidence and principal failure mode",
-                    "Fee protection and operational fallback",
-                ],
-                "rows": [
-                    [
-                        "Bank wire for a documented earned service invoice",
-                        "Corporate treasury pays a larger invoice from its verified account",
-                        "Match bank confirmation and invoice reference; changed instructions invite fraud",
-                        "Verify beneficiary details independently; retain customer-initiated ACH as alternative",
-                    ],
-                    [
-                        "Independent escrow for a specifically permitted coordinated settlement",
-                        "Authorized parties fund an arrangement accepted by the relevant custodian",
-                        "Written release conditions control payment; ownership disputes can freeze release",
-                        "Use qualified independent administration; revert to direct owner payment when rejected",
-                    ],
-                    [
-                        "ACH credit or properly authorized ACH debit collection",
-                        "Customer pays the service fee through supported bank transfer procedures",
-                        "Reconcile posted transactions and returns; authorization defects create collection exposure",
-                        "Prefer customer initiation where practical; document separate debit authority when used",
-                    ],
-                    [
-                        "Retainer supporting a lawfully chargeable defined service scope",
-                        "Customer prepays only when applicable recovery and professional rules permit",
-                        "Separate earned work from refundable balances; relabeling fees defeats protections",
-                        "Apply statutory aggregate limits; use contingent billing where advance charges fail",
-                    ],
-                    [
-                        "Statutory disbursement through an expressly supported agency payment process",
-                        "Custodian follows the specific jurisdiction's accepted representative or allocation procedure",
-                        "Agency remittance establishes amounts; rejected documentation prevents proposed fee routing",
-                        "Confirm current agency acceptance; preserve direct owner payment as default fallback",
-                    ],
-                    [
-                        "Platform checkout for a processor-approved recovery service invoice",
-                        "Individual or business customer pays an earned fee by supported method",
-                        "Processor settlement and dispute records matter; chargebacks can reverse proceeds",
-                        "Document scope and delivery; offer bank transfer without inventing surcharge rights",
-                    ],
-                    [
-                        "Factoring of an eligible earned operator fee receivable",
-                        "Factor purchases or advances against the firm's documented customer invoice",
-                        "Advance statements show financing deductions; debtor disputes can trigger recourse",
-                        "Review assignment restrictions and total cost; retain collection capacity without factoring",
-                    ],
-                    [
-                        "Milestone holds within a permitted staged service arrangement",
-                        "Customer releases lawful service payments against objectively completed deliverables",
-                        "Written acceptance supports billing; premature milestones can violate compensation restrictions",
-                        "Tie stages to permitted work; never hold owner proceeds as leverage",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Map both money movements",
-                    "action": "Document custodian-to-owner payment separately from customer-to-firm payment.",
-                    "detail": "Record the lawful payee, approved destination, permitted earning event, invoice approver, and fallback rail before submitting the claim.",
-                },
-                {
-                    "step": 2,
-                    "title": "Verify payment instructions",
-                    "action": "Confirm customer and beneficiary details through an established independent channel.",
-                    "detail": "Use a previously verified telephone number for changes; do not rely on reply email or request the customer's banking password.",
-                },
-                {
-                    "step": 3,
-                    "title": "Invoice against the agreed evidence",
-                    "action": "Calculate the fee from the actual eligible recovery and attach the required support.",
-                    "detail": "Match remittance evidence to the claim and contract; apply statutory limits, exclusions, and any agreed adjustment before requesting payment.",
-                },
-                {
-                    "step": 4,
-                    "title": "Close only after reconciliation",
-                    "action": "Match the received fee to bank or processor settlement and update exceptions.",
-                    "detail": "Track reversals, refunds, partial receipts, and outstanding balances separately; never mark a case collected solely because the state approved it.",
-                },
-            ],
-        },
-        {
-            "heading": "3. Protect the fee through enforceable scope, verified identity, and disciplined collections",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Fee protection begins with a jurisdiction worksheet, not an aggressive "
-                    "noncircumvention paragraph. Identify the custody program, applicable finder "
-                    "registration, permitted contracting date, compensation ceiling, required "
-                    "disclosures, and any assignment restrictions before presenting terms. "
-                    "California Code of Civil Procedure section 1582 regulates recovery "
-                    "agreements, including timing and compensation; its 10% ceiling cannot "
-                    "be bypassed by splitting an invoice into discovery and administration "
-                    "charges. Texas Property Code section 74.507 supplies its own agreement "
-                    "requirements and compensation limitation. Apply the actual provision to "
-                    "the relevant property and transaction rather than copying a national "
-                    "contract template. Keep the official statutory text and agency instructions "
-                    "with a dated review record. If the applicable waiting period has not "
-                    "elapsed, do not secure a prohibited agreement now and simply postpone "
-                    "the invoice. Where registration is required, confirm that the firm and "
-                    "the individual performing regulated activity satisfy the relevant rules. "
-                    "The contract should identify the property or covered portfolio precisely "
-                    "enough to distinguish your assignment from unrelated assets. Define the "
-                    "fee base, treatment of partial payments, expenses, termination, and "
-                    "evidence of receipt. Avoid claiming perpetual rights over every future "
-                    "recovery an owner may discover independently."
-                ),
-                (
-                    "Circumvention usually starts as an evidence problem: the customer believes "
-                    "the firm only copied a free listing, while the firm believes it built "
-                    "a complete entitlement package. Record the contracted deliverables and "
-                    "their delivery dates. Use DocuSign or Adobe Acrobat Sign to preserve "
-                    "signed terms and delivery records, but remember that an electronic "
-                    "signature does not cure an unlawful agreement. Give the customer a "
-                    "claim-specific progress log and copies of documents they are entitled "
-                    "to receive. A narrowly drafted fee obligation may remain payable when "
-                    "the owner receives the covered property directly, if local law and "
-                    "the agreement support that result. It should not penalize the owner's "
-                    "statutory right to claim without a finder. Distinguish a genuine refusal "
-                    "to pay an earned invoice from a dispute about identity, scope, "
-                    "calculation, or prohibited charges. Send a calculation with the initial "
-                    "invoice, a concise reminder after the agreed due date, and a written "
-                    "resolution proposal before escalating. Have counsel assess collection "
-                    "options and applicable consumer rules where relevant. Do not threaten "
-                    "criminal action, impersonate the treasury, or assert a lien that the "
-                    "firm does not possess. Clear documentation protects margin better than "
-                    "pressure tactics that create another dispute."
-                ),
-                (
-                    "Identity quality determines whether the payment rail can work at all. "
-                    "A name match is an intake signal, not proof of ownership. Match "
-                    "historical addresses, entity identifiers, predecessor relationships, and "
-                    "claim-specific documentation against the agency's requirements. Resolve "
-                    "same-name conflicts before sending sensitive documents or quoting a "
-                    "recovery as certain. Collect only what the filing requires, use "
-                    "restricted-access storage, and keep identity evidence out of ordinary "
-                    "CRM notes. Airtable can track case status, while a separately controlled "
-                    "document repository holds sensitive attachments; assess the actual "
-                    "configuration rather than assuming a product name supplies security. "
-                    "Define retention periods around agency requirements, contractual evidence, "
-                    "and applicable privacy duties. Limit contractors to the cases and "
-                    "documents needed for assigned work. A counterparty credit review should "
-                    "also identify suspicious payment changes, third-party payment requests, "
-                    "and attempts to redirect an estate payment into a beneficiary's personal "
-                    "account without authority. Escalate ownership conflicts and suspected "
-                    "fraud instead of improving the paperwork around a questionable story. "
-                    "When the verified recovery is too small to cover document costs, "
-                    "provide the official direct-claim route and close the opportunity. "
-                    "Rejecting a low-value or mismatched claim preserves both customer "
-                    "trust and the team's available filing capacity."
-                ),
-            ],
-            "table": {
-                "caption": "Six Fee-Protection Controls Linking Legal Eligibility to Collectible Revenue",
-                "headers": [
-                    "Control and triggering circumstance",
-                    "Evidence retained in the case record",
-                    "Failure mode that blocks reliable collection",
-                    "Required operating response before continuing work",
-                ],
-                "rows": [
-                    [
-                        "Jurisdiction review before offering any recovery fee agreement",
-                        "Current statute, agency instructions, registration status, and dated eligibility review",
-                        "Contract signed during restricted period or above applicable compensation ceiling",
-                        "Wait or decline; revise terms without disguising prohibited recovery charges",
-                    ],
-                    [
-                        "Ownership verification before quoting a confidently recoverable amount",
-                        "Historical address links and agency-accepted identity or entity succession documents",
-                        "Same-name record creates false entitlement and exposes another person's information",
-                        "Resolve the mismatch before filing or transmitting sensitive claim documents",
-                    ],
-                    [
-                        "Purchasing authority review before substantial unreimbursed case preparation",
-                        "Signing delegation, estate authority, or other evidence supporting customer commitment",
-                        "Enthusiastic contact cannot bind the owner or authorize payment",
-                        "Obtain the proper representative's engagement and confirm invoice routing instructions",
-                    ],
-                    [
-                        "Fee calculation review when the custodian approves partial recovery",
-                        "Contract version, eligible principal, actual remittance, and permitted expense treatment",
-                        "Invoice assumes listed value instead of the actual eligible recovery",
-                        "Recalculate using supported amounts and explain all adjustments before billing",
-                    ],
-                    [
-                        "Credit and collectibility review before accepting a large portfolio",
-                        "Entity checks, relevant insolvency records, payment references, and onboarding confirmation",
-                        "Valid claims generate invoices against a payer unable to satisfy obligations",
-                        "Limit exposure, seek lawful security, or decline uneconomic unsecured work",
-                    ],
-                    [
-                        "Collection escalation review after an earned invoice remains unpaid",
-                        "Delivery log, receipt evidence, reminders, and documented customer dispute history",
-                        "Pressure tactics convert a manageable dispute into costly counterclaims",
-                        "Offer documented resolution and use counsel-reviewed recovery procedures when justified",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four pre-flight checks before a claim becomes an engagement",
-                "body": (
-                    "Proceed only when the owner, agreement, receiving account, and "
-                    "collection economics are supported by actual case evidence."
-                ),
-                "items": [
-                    "Confirm the claimant's identity and chain of entitlement, including estate, trust, merger, or winding-up authority where the named owner differs.",
-                    "Verify finder registration, contracting eligibility dates, aggregate fee limits, and direct-claim disclosures under the specific custody program.",
-                    "Confirm the custodian's accepted payee and destination; independently verify any escrow, representative payment, or changed bank instructions.",
-                    "Approve the case's expected fee, unreimbursed document costs, payer credit exposure, invoice trigger, and practical fallback if split payment is unavailable.",
-                ],
-            },
-        },
-        {
-            "heading": "4. Reconcile the mapped plays to fee revenue, owner profit, and working capital",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Treat distressed_asset_recovery as the operating family, not permission "
-                    "to apply one state's finder contract to every stranded asset. State "
-                    "unclaimed funds, tax-sale overages, dormant judgments, government surplus "
-                    "lots, and distressed micro-businesses have different ownership, filing, "
-                    "licensing, and valuation requirements. For this volume, the clean "
-                    "starting lane is documented treasury property and corporate uncashed "
-                    "warrants. Illustratively, $2,550,000 of eligible client recoveries at "
-                    "a permitted 10% fee produces the Base case's $255,000 annual service "
-                    "revenue. This is an equivalent-volume illustration, not a universal "
-                    "legal rate or forecast of approval. At an 8% realized rate, the "
-                    "same fee target requires $3,187,500 of eligible recoveries. A rejected "
-                    "claim produces no contingent fee, while a partial recovery shrinks "
-                    "the invoice base. Diversify across researched multi-state programs and "
-                    "dockets rather than concentrating every submission in one agency "
-                    "queue. Use attorney-backed filing partnerships where required, with "
-                    "properly structured compensation instead of informal sharing of "
-                    "professional fees. If an adjacent asset requires acquisition capital, "
-                    "litigation, or licensed representation beyond the firm's capability, "
-                    "refer or decline it. Do not present an acquisition spread as recovery "
-                    "service revenue inside this volume's canonical scorecard."
-                ),
-                (
-                    "The adjacent play wotc_hourly_payroll_tax_credit_contingency_engine serves "
-                    "an employer, not a treasury-property claimant. Its WOTC component "
-                    "requires employer-authorized screening and timely certification procedures "
-                    "under 26 U.S.C. 51, including the generally applicable 28-day submission "
-                    "rule for Form 8850. Verify authorization for the worker's hire date; "
-                    "the statutory termination provision must be checked for any post-2025 "
-                    "extension rather than assumed away. Illustratively, ten eligible hires "
-                    "producing $2,400 each generate $24,000 of employer credits, not operator "
-                    "revenue. A hypothetical 15% outcome-linked charge would equal $3,600 "
-                    "only where the service and fee arrangement are permitted. Section 41 "
-                    "research credits require a separate factual analysis of qualified "
-                    "activities and expenditures, plus coordination of overlapping wage "
-                    "benefits; payroll volume alone proves neither eligibility nor credit "
-                    "size. A substantiated $40,000 research credit and a permissible 10% "
-                    "service fee would produce $4,000 of operator revenue. Evaluate "
-                    "applicable professional restrictions, including 31 CFR 10.27 where "
-                    "relevant, before offering contingent pricing. Exclude unsupported claims "
-                    "and fall back to compliant fixed-fee payroll or research-documentation "
-                    "services under independent tax review. Keep these adjacent examples "
-                    "outside the unclaimed-property revenue bridge unless a separately "
-                    "approved operating model explicitly includes them."
-                ),
-                (
-                    "The canonical scenarios are service-fee economics: Conservative revenue "
-                    "of $60,000 less $45,000 of implied annual costs yields $15,000 "
-                    "owner profit at 25%; Base revenue of $255,000 less $159,375 "
-                    "yields $95,625 at 37.5%; Scaled revenue of $450,000 less "
-                    "$225,000 yields $225,000 at 50%. Staffing remains 1 FT plus "
-                    "2 contractors in Conservative and Base, then 2 FT plus "
-                    "3 contractors at Scaled. Do not assume contractor counts describe "
-                    "full-time utilization. At a $3,000 average recognized fee, the "
-                    "revenue targets require 20, 85, and 150 equivalent completed "
-                    "fee events annually. Recognition still follows the firm's applicable "
-                    "accounting policy; approval status alone does not establish earned "
-                    "revenue or collection. Maintain separate dashboards for expected "
-                    "recoveries, earned fees, receivables, and cleared cash. The stated "
-                    "$1,500 to $8,000 monthly operating range is not a substitute "
-                    "for the scenarios' complete annual cost budgets. Startup capital "
-                    "of $5,000 to $35,000 must bridge a possible three-to-twelve-month "
-                    "first-deal interval. Automate record matching and status tracking, "
-                    "then measure exception labor and days from owner receipt to "
-                    "fee collection. If cash lags, reduce acquisition spending before "
-                    "borrowing against speculative claims. Scale verified cases, not "
-                    "the nominal dollars displayed in public property listings."
-                ),
-            ],
-            "table": {
-                "caption": "Six Economic Bridges: Canonical Fee Scenarios and Bounded Adjacent-Play Illustrations",
-                "headers": [
-                    "Scenario or mapped operating play",
-                    "Client asset or benefit calculation",
-                    "Recognized operator economics and staffing treatment",
-                    "Risk fallback and interpretation boundary",
-                ],
-                "rows": [
-                    [
-                        "Conservative canonical annual recovery service fee scenario",
-                        "$600,000 eligible recoveries at illustrative 10% produce $60,000 service fees",
-                        "$45,000 implied costs leave $15,000 profit; 25%; 1 FT plus 2 C",
-                        "Prioritize verified cases; illustrative recovery volume is not a statutory rate",
-                    ],
-                    [
-                        "Base canonical annual recovery service fee scenario",
-                        "$2,550,000 eligible recoveries at illustrative 10% produce $255,000 service fees",
-                        "$159,375 implied costs leave $95,625 profit; 37.5%; 1 FT plus 2 C",
-                        "Separate principal from fees and monitor customer payment delays after recovery",
-                    ],
-                    [
-                        "Scaled canonical annual small-team recovery service fee scenario",
-                        "$4,500,000 eligible recoveries at illustrative 10% produce $450,000 service fees",
-                        "$225,000 implied costs leave $225,000 profit; 50%; 2 FT plus 3 C",
-                        "Add exception capacity before accepting portfolios that overwhelm identity verification",
-                    ],
-                    [
-                        "distressed_asset_recovery fee-rate sensitivity within the treasury recovery lane",
-                        "$3,187,500 eligible recoveries at illustrative 8% produce $255,000 service fees",
-                        "Base fee target stays constant while required client recovery volume increases",
-                        "Diversify researched jurisdictions and use attorney-backed filing partnerships where required",
-                    ],
-                    [
-                        "wotc_hourly_payroll_tax_credit_contingency_engine employer credit illustration for authorized eligible hires",
-                        "Ten qualifying hires times $2,400 equals $24,000 in employer credits",
-                        "Illustrative permitted 15% charge produces $3,600; excludes the canonical recovery bridge",
-                        "Verify hire-date authorization and certification; substitute compliant fixed-fee documentation when appropriate",
-                    ],
-                    [
-                        "Separate Section 41 research-credit illustration under the same adjacent play",
-                        "$40,000 substantiated employer research credit remains distinct from operator compensation",
-                        "Illustrative permitted 10% charge produces $4,000; independently substantiate qualified research",
-                        "Exclude unsupported activities and coordinate wages under independent professional tax review",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": (
-        "The owner recovers the asset; the operator earns the fee by proving "
-        "authority, completing the work, and collecting through a permitted rail."
-    ),
-    "diagram_id": "diag-04",
-    "action_checklist": [
-        "Build a claimant authority worksheet identifying the legal owner, authorized signer, treasury recipient, invoice approver, and evidence supporting each role.",
-        "Create a jurisdiction-specific fee worksheet covering registration, waiting periods, compensation limits, required disclosures, and the official direct-claim route.",
-        "Select owner-first disbursement and document the separate service-fee rail, invoice trigger, verification procedure, and fallback when split payment is rejected.",
-        "Establish claim-specific document controls, signed scope records, sensitive-file access restrictions, and independently verified payment-change procedures.",
-        "Reconcile the pipeline to $60,000, $255,000, and $450,000 of annual service fees without counting client principal or adjacent employer tax benefits as revenue.",
-        "Track case acquisition cost, exception labor, owner receipt dates, fee aging, reversals, and cleared cash before increasing contractor capacity or portfolio intake.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "California Code of Civil Procedure section 1582",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=1582.&lawCode=CCP",
-            "relevance": (
-                "Controls covered unclaimed-property recovery agreements, including "
-                "contracting restrictions and the compensation ceiling; review the "
-                "actual transaction before using any fee or payment arrangement."
-            ),
-        },
-        {
-            "title": "Texas Property Code section 74.507",
-            "url": "https://statutes.capitol.texas.gov/Docs/PR/htm/PR.74.htm#74.507",
-            "relevance": (
-                "Sets requirements for covered agreements to assist in recovering "
-                "reported property, including compensation limits and agreement terms."
-            ),
-        },
-        {
-            "title": "12 CFR 1005.10 — Preauthorized transfers",
-            "url": "https://www.ecfr.gov/current/title-12/chapter-X/part-1005/section-1005.10",
-            "relevance": (
-                "Provides authorization and stop-payment requirements for covered "
-                "preauthorized electronic transfers involving consumer accounts; "
-                "distinguish these from business-account payment arrangements."
-            ),
-        },
-        {
-            "title": "26 U.S.C. 51 — Work opportunity credit",
-            "url": "https://www.law.cornell.edu/uscode/text/26/51",
-            "relevance": (
-                "Governs qualifying employer credits, certification procedures, "
-                "and the termination provision that must be checked against the "
-                "worker's actual hire date."
-            ),
-        },
-        {
-            "title": "26 U.S.C. 41 — Credit for increasing research activities",
-            "url": "https://www.law.cornell.edu/uscode/text/26/41",
-            "relevance": (
-                "Defines the research-credit framework and qualified research "
-                "requirements; a separate substantiation process is necessary "
-                "before presenting employer benefits or related service economics."
-            ),
-        },
-        {
-            "title": "31 CFR 10.27 — Fees",
-            "url": "https://www.ecfr.gov/current/title-31/subtitle-A/part-10/subpart-B/section-10.27",
-            "relevance": (
-                "Addresses fees and contingent-fee restrictions for covered "
-                "practitioner activity; assess applicability, exceptions, and "
-                "controlling authority before adopting tax-related outcome pricing."
-            ),
-        },
-        {
-            "title": "11 U.S.C. 541 — Property of the estate",
-            "url": "https://www.law.cornell.edu/uscode/text/11/541",
-            "relevance": (
-                "Supports the ownership review when unclaimed property may belong "
-                "to a bankruptcy estate rather than remain under the debtor's "
-                "unrestricted payment and engagement authority."
-            ),
-        },
-    ],
-}
+CHAPTER_2 = {'id': 'Q2',
+ 'chapter_id': 'Q2',
+ 'chapter_number': 2,
+ 'question_number': 2,
+ 'slug': 'launch-and-focus-the-recovery-business',
+ 'question_prompt': 'How do practitioners choose a state and recovery niche, prepare their business, and '
+                    'address the mistakes that stall beginners?',
+ 'kicker': 'Q2 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Launch and Focus the Recovery Business',
+ 'subtitle': 'State funds versus surplus funds, investigator roles, state selection, startup funding, '
+             'beginner workflows, income examples, and reasons operators struggle or quit',
+ 'layout_template': 'executive_summary',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'State unclaimed funds operators agree the pool is enormous, estimated at 49 to '
+                      '80-plus billion depending on the speaker, and that registration is usually a light '
+                      'lift of ID, paperwork, and sometimes a background check. The consensus launch order '
+                      "is: read the state's fee cap and claim-package rules, pick one niche and one or two "
+                      'states, set up a visible business footprint, and prospect daily with follow-up. '
+                      'Street mechanics center on downloading or buying state lists, filtering for big '
+                      'claims, with David Church refusing anything under 10,000 dollars at a 10% cap, skip '
+                      'tracing for free or roughly 14 to 15 dollars per 100 leads, loaded-opener scripts, '
+                      'and notarized agreements. The sharpest split is outreach: Wilkerson and Church lean '
+                      'on cold calls and follow-up, while Joe Green largely rejects cold calling and skip '
+                      'tracing for inbound social-media lead flow.',
+ 'key_metrics': [{'label': 'Locator Payout at a 10% State Cap',
+                  'metric': 'Locator Payout at a 10% State Cap',
+                  'value': '20,000 dollar claim pays 2,000 to the locator and 18,000 to the client',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'David Church describes California paying the registered locator its 10% '
+                             'directly so there is no collecting from the client.',
+                  'source': 'Surplus Institute / David Church / Unclaimed Funds ([IIBKDdChS-k @ '
+                            '00:01:43])'},
+                 {'label': 'Minimum Claim Size Worth Working',
+                  'metric': 'Minimum Claim Size Worth Working',
+                  'value': 'Nothing under 10,000 dollars; start with a roughly 10,000 dollar claim',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Church's filter for states capped at 10%, aimed at getting the first person "
+                             'paid on a small but worthwhile claim.',
+                  'source': 'Surplus Institute / David Church / Unclaimed Funds ([RjCjrBjQF7Y @ '
+                            '00:07:42])'},
+                 {'label': 'Sales Closed on Later Contacts',
+                  'metric': 'Sales Closed on Later Contacts',
+                  'value': '80% of sales made on the 5th to 12th contact; 48% of salespeople never follow '
+                           'up',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "David Wilkerson's sales statistics for beating competition in saturated "
+                             'states through follow-up volume.',
+                  'source': 'Surplus Funds 101 ([qyRWV76TgwE @ 00:07:19])'},
+                 {'label': 'Batch Skip Tracing Cost',
+                  'metric': 'Batch Skip Tracing Cost',
+                  'value': 'About 14 to 15 dollars per 100 leads',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Eric Richardson's promo-code price for a batch skip service versus four to "
+                             'ten hours of manual research.',
+                  'source': 'Money Making Juggernaut ([_vsvjD8JvgU @ 00:02:55])'}],
+ 'sections': [{'section_number': 1,
+               'heading': 'The Practitioner Consensus: A Deep Market, an Easy Door, and a Narrow Lane',
+               'paragraphs': ['Every operator here starts from the same premise: the money is real, it is '
+                              'massive, and it is not running out. David Church of Surplus Institute pegs '
+                              'the national pool at roughly 100 billion dollars, split about evenly '
+                              'between state unclaimed funds and mortgage and tax overages, then pulls a '
+                              'February 2023 figure showing states alone holding 70 billion, and tells '
+                              'anyone claiming the money is not there that they are lying [RjCjrBjQF7Y @ '
+                              '00:00:00] [RjCjrBjQF7Y @ 00:01:21]. David Wilkerson of Surplus Funds 101 '
+                              'puts state-level holdings above 80 billion and argues that volume is '
+                              'exactly what turns this into a predictable long-term career, because you '
+                              'will never run out of accounts to recover [PGvJEv9Y_Go @ 00:01:28]. Eric '
+                              'Richardson of Money Making Juggernaut defines the asset class cleanly: '
+                              'state funds are dormant savings accounts, uncashed checks, unclaimed '
+                              'insurance payouts, utility overpayments, PayPal balances, and death '
+                              'benefits that holders cannot keep and must turn over to the state '
+                              'treasurer, while surplus funds are foreclosure overages held at the county '
+                              'level [kuCEYN64vtQ @ 00:00:25]. The working consensus is that state funds '
+                              'are the simpler pitch, because the claimant already understands a forgotten '
+                              'bank account, and the operators who stay in the game treat that simplicity '
+                              'as their entry point rather than their ceiling.',
+                              'The second point of agreement is that registration is easy and reading the '
+                              'state rules is mandatory. Timepiece Dan says becoming a state investigator '
+                              'means sending in your ID and answering a couple of questions, that anyone '
+                              'can become one, and that he believes the check exists mainly for tax '
+                              'purposes and to confirm who you are [sDutuuk5RG0 @ 00:02:06]. Wilkerson '
+                              'says most states do not require a license at all, only registration, and '
+                              'usually charge nothing; he tells newcomers to use the unclaimed.org map, '
+                              'click into a state, and line out three things before dialing anyone: what '
+                              'registration requires, how leads are obtained, and the exact claim package '
+                              'instructions, sometimes published as an investigator handbook [PGvJEv9Y_Go '
+                              '@ 00:10:47]. Church runs the same drill live on the Mississippi treasury '
+                              'site, scrolling past the claim buttons to the FAQ, where he confirms the '
+                              'state works with claim finders at a maximum 10% fee before deciding it is '
+                              'workable [RjCjrBjQF7Y @ 00:05:22]. Richardson frames the identical '
+                              'checkpoint for any market: before you pull a lead, know whether the state '
+                              'has stipulations on how you file a claim, how much you can charge, and any '
+                              'time duration, and understand that you do not have to live in the state you '
+                              'work [_vsvjD8JvgU @ 00:01:57].',
+                              'The third consensus is that the people who wash out treat this as a lottery '
+                              'ticket, not a business. Joe Green of Unclaimed CEO says the worst advice he '
+                              'got starting out was to just register and get going; with no website and no '
+                              'Google business footprint, claimants researched him and backed out of '
+                              'closed deals [XsLq9LUTb6w @ 00:01:05]. Green ties the backouts to trust: '
+                              'these people are not finding you, you are finding them, and they are '
+                              "handing over personal information. Green's six-step launch order starts by "
+                              'forcing beginners to pick one category, state funds or tax overages, '
+                              'because the filing process and the way you find people differ between them '
+                              '[i84F9CVghTA @ 00:01:03]. Wilkerson pushes the same narrowing even harder: '
+                              'one niche, then only one or two states, because the process is identical '
+                              "everywhere but each state's claim package quirks will stretch your mental "
+                              'bandwidth thin [PGvJEv9Y_Go @ 00:04:19]. Church closes the loop on '
+                              'discipline, saying you may grind four to seven straight days with nothing '
+                              'before the yeses and call-me-back-tomorrows start, and that consistency is '
+                              'what eventually turns the light on [IIBKDdChS-k @ 00:04:52]. Across all '
+                              'four, the baseline is the same: register, choose a lane, set a daily '
+                              'prospecting rhythm, and expect the first real results only after sustained '
+                              'volume.'],
+               'table': {'caption': 'Baseline prerequisites multiple state funds operators agree on before '
+                                    'the first dial',
+                         'headers': ['Consensus Point',
+                                     'What Practitioners Say',
+                                     'Operator Takeaway',
+                                     'Expert Source'],
+                         'rows': [['Market depth and longevity of supply',
+                                   'Roughly 100 billion nationally, about half sitting in state unclaimed '
+                                   'funds',
+                                   'The supply of accounts will not run dry for focused operators',
+                                   'Surplus Institute / David Church / Unclaimed Funds ([RjCjrBjQF7Y @ '
+                                   '00:00:00])'],
+                                  ['Low registration barrier for new investigators',
+                                   'Send your ID, answer a couple of questions, and you are registered',
+                                   'Treat registration as a quick administrative step, not a roadblock',
+                                   'Timepiece Dan ([sDutuuk5RG0 @ 00:02:06])'],
+                                  ['Research the state before calling anyone',
+                                   'Confirm registration rules, lead access, and exact claim package '
+                                   'instructions first',
+                                   'Line out these three items for your chosen state before dialing',
+                                   'Surplus Funds 101 ([PGvJEv9Y_Go @ 00:10:47])'],
+                                  ['Know the commission cap you are working under',
+                                   'Most workable states sit inside a 10 to 20 percent fee range',
+                                   'Know your ceiling per claim before you value any single lead',
+                                   'Surplus Funds 101 ([qyRWV76TgwE @ 00:10:34])'],
+                                  ['Pick one category before making phone calls',
+                                   'Choose state funds or tax overages because filing and finding differ',
+                                   'Different filing processes punish beginners who chase both at once',
+                                   'Unclaimed CEO ([i84F9CVghTA @ 00:01:03])'],
+                                  ['Build a verifiable business footprint early',
+                                   'No website or Google business profile caused closed deals to back out',
+                                   'Claimants research you, so a visible footprint protects signed deals',
+                                   'Unclaimed CEO ([XsLq9LUTb6w @ 00:01:24])'],
+                                  ['Consistency through the dead early stretch',
+                                   'Expect four to seven straight days of nothing before yeses arrive',
+                                   'Commit to daily volume and follow-up before judging the market',
+                                   'Surplus Institute / David Church / Unclaimed Funds ([IIBKDdChS-k @ '
+                                   '00:04:52])']]}},
+              {'section_number': 2,
+               'heading': 'Exact Street Mechanics, Tools & Numbers: Lists, Skip Tracing, Scripts, and the '
+                          'Claim Package',
+               'paragraphs': ["Lead sourcing differs sharply by state. Church downloads California's "
+                              '500-and-up investigator file, opens the third file because it holds the '
+                              'highest claims, and warns that Mac Numbers choked on the data so he had to '
+                              'buy and download Excel [RjCjrBjQF7Y @ 00:11:33]. Timepiece Dan scrolls the '
+                              'same California list live, counting close to 400,000 lines in just one of '
+                              'four files, and runs the math: a 30,000 dollar royalty claim at the 10% '
+                              'ceiling pays 3,000 [sDutuuk5RG0 @ 00:03:27]. Richardson says many states do '
+                              'not hand lists out free, quoting 25 dollars in Arkansas and 10 dollars in '
+                              'Massachusetts, and notes some states only offer an online portal where you '
+                              'run direct searches name by name [kuCEYN64vtQ @ 00:03:00]. When a state '
+                              'stays quiet, Church calls and asks for the list, and if the clerk asks why, '
+                              'he skips the heir-finder pitch and says it is public information, he is '
+                              'doing research, and he understands 70 billion sits unclaimed nationwide. '
+                              'States that refuse, he says, you simply cannot work [RjCjrBjQF7Y @ '
+                              '00:07:29].',
+                              'Contact mechanics run from free to cheap, and every operator here builds '
+                              "them in the same order. Richardson's budget route is free TruePeopleSearch, "
+                              'with BeenVerified and Intelius as alternatives, while his volume shortcut '
+                              'is a batch skip tracing service where his promo code brings the cost to '
+                              'about 14 to 15 dollars per 100 leads, versus four, five, or even ten hours '
+                              'of manual research [_vsvjD8JvgU @ 00:02:55]. Timepiece Dan skips paid tools '
+                              'entirely and Googles the first name, last name, address, city, and state '
+                              'straight off the California list until numbers pop up, calling it the free '
+                              'way with no marketing spend [sDutuuk5RG0 @ 00:06:14]. The opener matters as '
+                              'much as the number. Church skips small talk; he loads the first line with '
+                              "the claimant's name, a former address, and the bank holding the dormant "
+                              'account, then says he is a licensed locator with the state and asks '
+                              'permission to retrieve the funds, a move he says stumbles the claimant into '
+                              'remembering the account [IIBKDdChS-k @ 00:03:17]. Wilkerson treats delivery '
+                              'as theatrics, telling operators to read the script multiple times and then '
+                              'walk around the house rehearsing it, because how you react when someone '
+                              'says hello or hangs up matters almost more than the words themselves '
+                              '[PGvJEv9Y_Go @ 00:13:30].',
+                              'Closing the file is where state mechanics diverge most. Church says '
+                              "California pays the locator's 10% directly, so a 20,000 dollar check "
+                              'becomes 2,000 for him and 18,000 for the client, with no collecting from '
+                              'the client [IIBKDdChS-k @ 00:01:43]. California also hands you its own two '
+                              'contracts, one notarized, and the package goes straight to the state, while '
+                              'other states make you assemble the contracts and information yourself, file '
+                              'with the state, and then collect your fee from the client after they are '
+                              "paid [IIBKDdChS-k @ 00:03:55]. Wilkerson's rule of thumb is that most "
+                              'states require any claim agreement to be notarized once the account tops '
+                              '1,000 dollars, some require it regardless, and nine times out of ten you '
+                              'will not get paid without it [PGvJEv9Y_Go @ 00:15:44]. He sends the '
+                              'agreement and supporting documents to a notary near the claimant, who '
+                              'packages everything for the state, which he calls the most efficient way to '
+                              'run a transaction start to finish. Speed then depends on the treasury: '
+                              'Richardson says state funds typically process within 60 days because the '
+                              'check is literally already sitting in the State Treasury, unlike surplus '
+                              'funds that must clear a county legal review before payout [kuCEYN64vtQ @ '
+                              '00:03:52].'],
+               'table': {'caption': 'Exact numbers, tools, and pricing rules operators use to run state '
+                                    'funds claims',
+                         'headers': ['Mechanic',
+                                     'Exact Number or Tool',
+                                     'How Operators Use It',
+                                     'Expert Source'],
+                         'rows': [['Fee cap payout math in California',
+                                   '10% cap: 20,000 check pays 2,000 locator and 18,000 client',
+                                   'State cuts both checks directly, so there is no collecting from the '
+                                   'client',
+                                   'Surplus Institute / David Church / Unclaimed Funds ([IIBKDdChS-k @ '
+                                   '00:01:43])'],
+                                  ['Minimum claim filter at a 10% cap',
+                                   'Work nothing under 10,000 dollars when the fee is capped at 10%',
+                                   'Start with a roughly 10,000 dollar claim to land the first payday',
+                                   'Surplus Institute / David Church / Unclaimed Funds ([RjCjrBjQF7Y @ '
+                                   '00:07:42])'],
+                                  ['California investigator list download',
+                                   '500-and-up download where the third file holds the highest claims',
+                                   'Open it in Excel because Mac Numbers struggles with the data volume',
+                                   'Surplus Institute / David Church / Unclaimed Funds ([RjCjrBjQF7Y @ '
+                                   '00:11:33])'],
+                                  ['Paying for state lead lists',
+                                   'Arkansas charges 25 dollars and Massachusetts charges 10 dollars for '
+                                   'lists',
+                                   'Budget for list fees where the state does not publish data for free',
+                                   'Money Making Juggernaut ([kuCEYN64vtQ @ 00:03:00])'],
+                                  ['Batch skip tracing on a budget',
+                                   'About 14 to 15 dollars per 100 leads with the promo code',
+                                   'Replaces four to ten hours of manual research on the same leads',
+                                   'Money Making Juggernaut ([_vsvjD8JvgU @ 00:02:55])'],
+                                  ['Pricing in states with no commission cap',
+                                   'Contingency fees range 10 to 40 percent; never go above 40',
+                                   'Wilkerson usually settles at 20 to 25 percent to avoid looking sketchy',
+                                   'Surplus Funds 101 ([TTMtgtc31k4 @ 00:04:43])'],
+                                  ['Funding startup costs without personal cash',
+                                   '0% business credit card for 12 to 18 months with 1% minimum payment',
+                                   'Cover website, license, and software without draining savings or '
+                                   'personal credit',
+                                   'Unclaimed CEO ([i84F9CVghTA @ 00:06:13])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Small Edges That Separate Paid Operators from List Collectors',
+                           'body': 'These are the specific moves working operators use to get more '
+                                   'contacts, more dollars per file, and access to states others write '
+                                   'off.',
+                           'items': ['Call on Saturdays and Sundays because contact rates run high, and '
+                                     'cap the daily prospecting block at about a three-hour window, which '
+                                     "Wilkerson treats as most people's mental limit for cold calling "
+                                     '[Surplus Funds 101 — PGvJEv9Y_Go @ 00:05:58].',
+                                     'Run every surplus funds client through the state unclaimed property '
+                                     'search as well; Richardson pulled 12,000 dollars more from the state '
+                                     'treasury for one foreclosure client who had a forgotten savings '
+                                     'account [Money Making Juggernaut — kuCEYN64vtQ @ 00:04:56].',
+                                     'In states like New York that only report claims as under or over 100 '
+                                     'dollars, Church says if you work them at all, target Roth IRAs and '
+                                     'IRA accounts because those carry the higher payouts [Surplus '
+                                     'Institute / David Church / Unclaimed Funds — IIBKDdChS-k @ '
+                                     '00:02:24].',
+                                     'For Florida, where you must work under a licensed party, Church is '
+                                     'partnering with his tax overage lawyer on a 50/50 fee split and '
+                                     'plans to push it toward 70/30 by feeding three or four claims a week '
+                                     '[Surplus Institute / David Church / Unclaimed Funds — RjCjrBjQF7Y @ '
+                                     '00:14:54].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Register and Map the State Rules',
+                              'action': 'Pick one state, register as an investigator, and document '
+                                        'registration, lead access, and claim package instructions.',
+                              'detail': 'Use the unclaimed.org map to reach the state site, confirm '
+                                        'whether a license or only registration is required, how leads are '
+                                        'delivered, and the exact claim package the state expects; call '
+                                        'the state if anything is unclear [Surplus Funds 101 — PGvJEv9Y_Go '
+                                        '@ 00:10:47].'},
+                             {'step': 2,
+                              'title': 'Pull and Filter the List',
+                              'action': 'Download or request the state list and filter for claims large '
+                                        "enough to justify the work at the state's cap.",
+                              'detail': 'At a 10% cap, Church works nothing under 10,000 dollars and '
+                                        'starts with a roughly 10,000 dollar claim; if no list is posted, '
+                                        'he calls and asks for it as public information for research '
+                                        '[Surplus Institute / David Church / Unclaimed Funds — RjCjrBjQF7Y '
+                                        '@ 00:07:42].'},
+                             {'step': 3,
+                              'title': 'Skip Trace and Open the Call',
+                              'action': 'Batch skip trace the filtered leads and open each call with the '
+                                        "claimant's name, former address, and holder.",
+                              'detail': "Richardson's batch service runs about 14 to 15 dollars per 100 "
+                                        'leads versus hours of manual research [Money Making Juggernaut — '
+                                        "_vsvjD8JvgU @ 00:02:55]; Church's opener names the person, the "
+                                        'address, and the dormant account, then asks permission to help '
+                                        'retrieve the funds [Surplus Institute / David Church / Unclaimed '
+                                        'Funds — IIBKDdChS-k @ 00:03:17].'},
+                             {'step': 4,
+                              'title': 'Paper, Notarize, and File the Claim Package',
+                              'action': "Fill out the state's agreement exactly as instructed, get it "
+                                        'notarized near the claimant, and submit the full package.',
+                              'detail': 'Wilkerson sends the agreement and supporting documents to a '
+                                        'notary close to the claimant, who notarizes, packages everything, '
+                                        'and usually ships it to the state, which he calls the most '
+                                        'efficient way to run a transaction start to finish [Surplus Funds '
+                                        '101 — PGvJEv9Y_Go @ 00:17:08].'}]},
+              {'heading': 'Section 3: Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The loudest split is how the first conversation happens. Joe Green of '
+                              'Unclaimed CEO tells beginners to stop cold calling entirely, arguing nobody '
+                              'trusts a stranger delivering unbelievable news, and he labels skip tracing '
+                              'a waste of time while he closes deals with people who come to him through '
+                              'what he calls his Honeypot method [zI7m3acMjuY @ 00:00:15]. His build: '
+                              'drive people to a website or landing page form, research whoever submits, '
+                              'and even work small amounts pro bono in exchange for referrals, which he '
+                              'says flooded his inbox with brothers, sisters, parents and coworkers asking '
+                              'him to check for money [XsLq9LUTb6w @ 00:04:00]. David Wilkerson of Surplus '
+                              'Funds 101 runs the opposite playbook: skip trace the state data and cold '
+                              'call, which he calls the quickest, cheapest, fastest way to gain traction, '
+                              'inside a three-hour daily prospecting window [PGvJEv9Y_Go @ 00:12:49]. '
+                              'David Church of Surplus Institute backs the outbound route with a direct '
+                              'opener that names the person, a former address and the dormant Bank of '
+                              'America account before he pitches himself as a licensed locator asking '
+                              'permission to retrieve the funds [IIBKDdChS-k @ 00:03:17]. Green concedes '
+                              'cold calling works for some, but says the other 98 percent with jobs and '
+                              'kids cannot dial six to eight hours a day.',
+                              'Practitioners also split on what has to exist before the first dial. Joe '
+                              'Green treats funding as step one: file with the IRS and the state, open a '
+                              'business bank account, and ask for a 0 percent business credit card running '
+                              '12 to 18 months, which he says carries 1 percent monthly minimums, can be '
+                              'pulled as a cash advance to pay yourself, and does not touch personal '
+                              'credit [i84F9CVghTA @ 00:06:13]. He also insists on a credibility '
+                              'footprint, because early prospects who researched him and found no website '
+                              'or Google business listing backed out of deals he had already closed '
+                              '[XsLq9LUTb6w @ 00:01:24]. David Wilkerson pushes the reverse mindset: kill '
+                              'the everything-has-to-be-perfect thinking, spend only on what produces '
+                              'revenue, and remember that his own first couple of deals closed before he '
+                              'even owned business cards [PGvJEv9Y_Go @ 00:05:27]. Eric Richardson of '
+                              'Money Making Juggernaut goes further and runs the full cycle for zero '
+                              'dollars with free county lists, free people-search skip tracing, his free '
+                              'call scenarios and self-typed service agreements, admitting the free route '
+                              'is inefficient and that you trade money for intelligence and time '
+                              '[sK5PqCLSzzg @ 00:03:56]. The real choice is whether credibility '
+                              'infrastructure and a funded runway come first, or raw dial volume on a '
+                              'shoestring.',
+                              'State selection is the third fault line. David Church calls California '
+                              'pleasant because the state registers you and cuts your 10 percent check '
+                              'directly, so a $20,000 claim nets him $2,000 without chasing the client, '
+                              'though payouts can take six months or longer [IIBKDdChS-k @ 00:01:43]. He '
+                              'avoids working Florida solo because of its investigator requirement, but '
+                              'his tax-overage lawyer offered a 50/50 fee split to work Florida state '
+                              'funds under the attorney, and Church plans to push that toward 70/30 by '
+                              'feeding three or four claims a week [RjCjrBjQF7Y @ 00:15:11]. Timepiece Dan '
+                              'pitches California lists as the easy entry, scrolling past $12,000, $20,000 '
+                              'and $30,000 accounts and pricing a $30,000 claim at a $3,000 fee, noting '
+                              'the fee is negotiable up to the 10 percent ceiling [sDutuuk5RG0 @ '
+                              '00:03:27]. Wilkerson walked away from California over its minimum six-month '
+                              'turnaround, ranks payout speed and bulk-lead access above fee size, points '
+                              'to Wisconsin and Michigan as faster payers, and leans toward 20 percent cap '
+                              'states because most states sit in the 10 to 20 percent band [qyRWV76TgwE @ '
+                              "00:09:16]. Same state, opposite verdicts: one operator's easy entry is "
+                              "another's dead capital."],
+               'table': {'caption': 'Competing playbooks on contact method, capital, fees, payout speed '
+                                    'and focus',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['First contact with the claimant',
+                                   'Skip trace the state list and cold call daily; Wilkerson calls it the '
+                                   'quickest, cheapest, fastest path to traction',
+                                   'Honeypot inbound: post about the business two to three times daily and '
+                                   'let prospects submit a landing page form',
+                                   'Surplus Funds 101 ([PGvJEv9Y_Go @ 00:12:49]); Unclaimed CEO '
+                                   '([zI7m3acMjuY @ 00:00:15]); Unclaimed CEO ([U1OErlHEyv4 @ 00:02:07])'],
+                                  ['Skip tracing spend',
+                                   'Batch skip trace through SkipMatrix at roughly $14 to $15 per 100 '
+                                   'leads instead of hours of manual research',
+                                   'Green calls skip tracing a waste of time; Timepiece Dan just Googles '
+                                   'name, address and city for free numbers',
+                                   'Money Making Juggernaut ([_vsvjD8JvgU @ 00:02:55]); Unclaimed CEO '
+                                   '([zI7m3acMjuY @ 00:00:32]); Timepiece Dan ([sDutuuk5RG0 @ 00:06:14])'],
+                                  ['Startup capital before launch',
+                                   'Fund first: open a business account and walk out with a 0 percent card '
+                                   'worth $20,000 or more the same day',
+                                   'Start at $0 with free county lists and free tools, or with a couple '
+                                   'hundred dollars per Wilkerson',
+                                   'Unclaimed CEO ([1W2i-aJGcb0 @ 00:00:55]); Money Making Juggernaut '
+                                   '([sK5PqCLSzzg @ 00:00:40]); Surplus Funds 101 ([PGvJEv9Y_Go @ '
+                                   '00:03:25])'],
+                                  ['Fee level charged to the claimant',
+                                   'Stay at the 10 percent cap; Texas finders must be licensed and cap '
+                                   'fees at 10 percent including all expenses',
+                                   'In no-cap states Wilkerson usually charges 20 to 25 percent and never '
+                                   'goes above 40 percent',
+                                   'Surplus Institute / David Church / Unclaimed Funds ([RjCjrBjQF7Y @ '
+                                   '00:14:22]); Surplus Funds 101 ([TTMtgtc31k4 @ 00:04:43])'],
+                                  ['Expected payout speed on state claims',
+                                   'California runs a minimum six-month turnaround, so Wilkerson left for '
+                                   'faster payers like Wisconsin and Michigan',
+                                   'Richardson says state funds typically process within 60 days because '
+                                   'the check is already ready',
+                                   'Surplus Funds 101 ([qyRWV76TgwE @ 00:09:16]); Money Making Juggernaut '
+                                   '([kuCEYN64vtQ @ 00:03:52])'],
+                                  ['Niche focus for a beginner',
+                                   'Pick one category, state funds or tax overages, and only one or two '
+                                   'states to protect mental bandwidth',
+                                   'Run both: Richardson searches surplus clients in state databases and '
+                                   'recovered an extra $12,000 savings account',
+                                   'Unclaimed CEO ([i84F9CVghTA @ 00:00:48]); Surplus Funds 101 '
+                                   '([PGvJEv9Y_Go @ 00:04:04]); Money Making Juggernaut ([kuCEYN64vtQ @ '
+                                   '00:04:56])'],
+                                  ['Operating model as volume grows',
+                                   'Hobbyist hands signed deals to a course back-end that keeps 60 percent '
+                                   'and pays you 40',
+                                   'CEO model: hire a team for skip tracing, phone calls and '
+                                   'documentation, then step back',
+                                   'FundSleuth - Unclaimed Funds Info and Training ([kGhoQfbhUG4 @ '
+                                   '00:01:44]); Unclaimed CEO ([i84F9CVghTA @ 00:12:48])']]}},
+              {'heading': 'Section 4: Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The most common failure the practitioners report is quitting before the '
+                              'pipeline matures. Joe Green says he has watched excited starters turn into '
+                              'a ghost town within two months because the business was more work than they '
+                              'expected and they never figured it out [Vy3iGS6ep4w @ 00:00:37]. David '
+                              'Wilkerson hears the same story from people who called their list one time, '
+                              "had one conversation, got no deal and wanted out; his rule is that today's "
+                              'work pays about three months down the road, so newcomers should lock in a '
+                              'six-month time frame [PGvJEv9Y_Go @ 00:09:12]. He also names state-hopping '
+                              'as a top killer: a beginner skip traces Florida leads, watches a guru pitch '
+                              'Utah, abandons the Florida pipeline, and eats the lost time, money and '
+                              'revenue [qyRWV76TgwE @ 00:04:08]. FundSleuth traces the quitting to a '
+                              'skills gap, reporting that course graduates who are excellent researchers '
+                              'get discouraged because their skip tracing source could not reach anyone or '
+                              'because they never learned to sell, since most courses do not coach the '
+                              'sales side, and even the hobbyist route of handing signed deals to a '
+                              'back-end partner demands research, skip tracing and closing skills '
+                              '[kGhoQfbhUG4 @ 00:04:11].',
+                              'The second trap is bleeding personal money and credibility at the same '
+                              'time. Green says he burned his own cash and personal credit cards, slowed '
+                              'down the more he spent, and dialed hundreds of people a day from an '
+                              'unfamiliar out-of-area number while nobody picked up and those who did hung '
+                              'up mid-script [XsLq9LUTb6w @ 00:01:51]. He warns that pushing personal '
+                              'cards past 30 percent utilization drags your credit score down while you '
+                              'drain family money meant for bills [Vy3iGS6ep4w @ 00:01:22]. David Church '
+                              'faces a different leak: claimants who go around you and file directly after '
+                              'your call, which he says happens all the time and which he shrugs off '
+                              'because missing his weekly deal count matters far more than one lost '
+                              'claimant [RjCjrBjQF7Y @ 00:09:55]. Wilkerson reports an internal leak, '
+                              'admitting that early on he subconsciously pushed deals away, including a '
+                              'claimant owed $50,000, because he did not feel he deserved to work a '
+                              'transaction that size [qyRWV76TgwE @ 00:05:20]. Each of these failures '
+                              'kills signed agreements rather than leads: the money is sitting on the '
+                              'list, but no ring, no trust or no nerve means no deal.',
+                              "The economics checks are blunt. Under California's 10 percent cap, Church's "
+                              '$20,000 claim pays him $2,000 and the client $18,000, but one probate file '
+                              'took about eight months; New York only discloses whether an account is '
+                              'under or over $100, and Florida demands two years under a licensed '
+                              'investigator with fees capped at $1,000, so he refuses to work either state '
+                              'blind [IIBKDdChS-k @ 00:02:37]. His floor follows from the cap: nothing '
+                              'under $10,000, with a first claim sized around that mark [RjCjrBjQF7Y @ '
+                              '00:07:42]. Eric Richardson adds that state lists are not always free, '
+                              'quoting $25 in Arkansas and $10 in Massachusetts, and he expects state '
+                              'claims to process within 60 days because the money already sits in the '
+                              'treasury, a timeline that collides with the multi-month California waits '
+                              "Church and Wilkerson describe [kuCEYN64vtQ @ 00:02:47]. Joe Green's volume "
+                              'check: if ten calls a day yields one pickup and doubling to twenty still '
+                              'yields one, more dialing is wasted energy, and you only learn that by '
+                              'tracking the ratio for two to three weeks instead of guessing [i84F9CVghTA '
+                              '@ 00:10:08].'],
+               'table': {'caption': 'Firsthand traps and the countermoves practitioners used',
+                         'headers': ['Failure Mode',
+                                     'Firsthand Account',
+                                     'Economics Check / Countermove',
+                                     'Expert Source'],
+                         'rows': [['No business footprint online',
+                                   "Green's closed deals backed out after prospects researched him and "
+                                   'found no proof he was a business',
+                                   'Build a website, Google business profile, LinkedIn and Facebook fan '
+                                   'page one piece at a time',
+                                   'Unclaimed CEO ([XsLq9LUTb6w @ 00:01:24]); Unclaimed CEO ([i84F9CVghTA '
+                                   '@ 00:10:54])'],
+                                  ['Out-of-area caller ID and pure cold dialing',
+                                   'Hundreds of daily calls from an unrecognized area code, almost no '
+                                   'pickups, hang-ups during the script',
+                                   'Green stacks letters, social media messages and emails on each '
+                                   'skip-traced prospect instead of telemarketing',
+                                   'Unclaimed CEO ([XsLq9LUTb6w @ 00:05:13])'],
+                                  ['Giving up after one touch',
+                                   '48 percent of salespeople never follow up while 80 percent of sales '
+                                   'close on the fifth to twelfth contact',
+                                   'Wilkerson makes three to five calls per prospect and beats over half '
+                                   'his competition by default',
+                                   'Surplus Funds 101 ([qyRWV76TgwE @ 00:07:00]); Surplus Funds 101 '
+                                   '([qyRWV76TgwE @ 00:08:00])'],
+                                  ['Claimant signs interest away to a predator',
+                                   'A Florida owner quitclaimed to a company for $10,000 on a claim Church '
+                                   'pegs near $200,000',
+                                   'The company let the property go to foreclosure and collected because '
+                                   'whoever is on title gets the money',
+                                   'Surplus Institute / David Church / Unclaimed Funds ([RjCjrBjQF7Y @ '
+                                   '00:06:23])'],
+                                  ['Using a generic course contract',
+                                   'California requires its own state agreement form, so a course template '
+                                   'may not hold up there',
+                                   "Pull the state's claim instructions or investigator handbook and use "
+                                   'exactly what the state outlines',
+                                   'Unclaimed CEO ([i84F9CVghTA @ 00:04:23]); Surplus Funds 101 '
+                                   '([PGvJEv9Y_Go @ 00:11:19])'],
+                                  ['Skipping the notary step',
+                                   'Most states require notarized agreements on accounts over $1,000, and '
+                                   'nine times out of ten you will not get paid without it',
+                                   'Send the agreement to a notary near the claimant, a UPS store or a '
+                                   'local bank',
+                                   'Surplus Funds 101 ([PGvJEv9Y_Go @ 00:15:55])'],
+                                  ['Choking on the state data file',
+                                   "Church's Mac would not open the California list in Numbers, so he had "
+                                   'to buy Excel',
+                                   'Budget for Excel and open the third California file first because it '
+                                   'holds the highest claims',
+                                   'Surplus Institute / David Church / Unclaimed Funds ([RjCjrBjQF7Y @ '
+                                   '00:11:17])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Clear These Four Gates Before Scaling Dial Volume',
+                           'body': 'Each gate comes straight from a pipeline the practitioners watched '
+                                   'break; clear all four before buying more data or adding callers.',
+                           'items': ["Do not dial until you have pulled the state's registration "
+                                     'requirements, fee cap, agreement form and claim-package '
+                                     'instructions, and call the state office if anything is unclear '
+                                     '[Surplus Funds 101 — PGvJEv9Y_Go @ 00:11:19].',
+                                     'Commit to three to five follow-up calls per prospect, because most '
+                                     'competitors never make a second call [Surplus Funds 101 — '
+                                     'qyRWV76TgwE @ 00:08:00].',
+                                     'Track calls-to-pickups for two to three weeks before doubling '
+                                     'volume, so you do not cut the channel that actually works [Unclaimed '
+                                     'CEO — i84F9CVghTA @ 00:09:25].',
+                                     'Skip claims you cannot size: avoid states that only report under or '
+                                     'over $100 unless chasing IRA or Roth accounts, and hold a $10,000 '
+                                     'floor under a 10 percent cap [Surplus Institute / David Church / '
+                                     'Unclaimed Funds — IIBKDdChS-k @ 00:02:24].']}}],
+ 'pull_quote': '"It\'s not really about the state that you choose to work in, it\'s how you work the '
+               'state." — Surplus Funds 101 (qyRWV76TgwE @ 00:08:40).',
+ 'diagram_id': 'diag-04',
+ 'action_checklist': ['Pick one category, state funds or tax overages, and work only one or two states '
+                      'until deals flow [Unclaimed CEO — i84F9CVghTA @ 00:00:48].',
+                      'Call the state unclaimed property office, ask for its list, and if asked why, say '
+                      'it is public information you are researching [Surplus Institute / David Church / '
+                      'Unclaimed Funds — RjCjrBjQF7Y @ 00:07:29].',
+                      'Register or license exactly as the state requires, including Texas licensing '
+                      'through the Department of Public Safety Private Security Bureau with fees capped at '
+                      '10 percent including expenses [Surplus Institute / David Church / Unclaimed Funds — '
+                      'RjCjrBjQF7Y @ 00:14:22].',
+                      'Batch skip trace the list through a low-cost service at roughly $14 to $15 per 100 '
+                      'leads instead of hours of manual research [Money Making Juggernaut — _vsvjD8JvgU @ '
+                      '00:02:55].',
+                      "Open every call with the claimant's name, a former address and the specific dormant "
+                      'account, then ask permission to retrieve the funds [Surplus Institute / David '
+                      'Church / Unclaimed Funds — IIBKDdChS-k @ 00:03:17].',
+                      'Get the signed agreement notarized near the claimant and package it with supporting '
+                      'documents exactly as the state instructs [Surplus Funds 101 — PGvJEv9Y_Go @ '
+                      '00:15:55].'],
+ 'statutory_citations': [{'title': 'Surplus Funds 101 — State Funds Tutorial: First Steps For Somebody '
+                                   'Brand New To Unclaimed Funds Business. [00:11:19]',
+                          'url': 'https://www.youtube.com/watch?v=PGvJEv9Y_Go&t=679s',
+                          'relevance': 'Primary practitioner testimony on state registration, lead access '
+                                       "and following the state's claim-package instructions exactly."},
+                         {'title': 'Surplus Institute / David Church / Unclaimed Funds — How Unclaimed '
+                                   'Money Can Help You Make More Money [00:01:43]',
+                          'url': 'https://www.youtube.com/watch?v=IIBKDdChS-k&t=103s',
+                          'relevance': "Primary practitioner testimony on California's direct 10 percent "
+                                       'payout, payout delays and states to avoid.'},
+                         {'title': 'Surplus Funds 101 — How To Pick The BEST State For Your Unclaimed '
+                                   'Funds Business [00:09:16]',
+                          'url': 'https://www.youtube.com/watch?v=qyRWV76TgwE&t=556s',
+                          'relevance': 'Primary practitioner testimony on ranking states by payout speed, '
+                                       'bulk-lead access and fee cap.'},
+                         {'title': 'Unclaimed CEO — ⚠️WARNING⚠️ Do these 6 things BEFORE you start your '
+                                   'Unclaimed Funds | Tax Surplus business [00:06:13]',
+                          'url': 'https://www.youtube.com/watch?v=i84F9CVghTA&t=373s',
+                          'relevance': 'Primary practitioner testimony on funding a recovery business with '
+                                       '0 percent business credit before dialing.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'IIBKDdChS-k',
+                       'title': 'How Unclaimed Money Can Help You Make More Money',
+                       'channel': 'Surplus Institute / David Church / Unclaimed Funds',
+                       'author': 'Surplus Institute / David Church / Unclaimed Funds',
+                       'text': 'In California the state is very pleasant to work with, they register you '
+                               'down at the state and the state will pay you 10 percent directly, you '
+                               'cannot ask for more than 10 percent.',
+                       'tip': 'In California the state is very pleasant to work with, they register you '
+                              'down at the state and the state will pay you 10 percent directly, you '
+                              'cannot ask for more than 10 percent.',
+                       'timestamp': 103,
+                       'timestamp_seconds': 103,
+                       'timestamp_label': '[00:01:43]',
+                       'url': 'https://www.youtube.com/watch?v=IIBKDdChS-k&t=103s',
+                       'markdown': '[00:01:43](https://www.youtube.com/watch?v=IIBKDdChS-k&t=103s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'IIBKDdChS-k',
+                       'title': 'How Unclaimed Money Can Help You Make More Money',
+                       'channel': 'Surplus Institute / David Church / Unclaimed Funds',
+                       'author': 'Surplus Institute / David Church / Unclaimed Funds',
+                       'text': "States like New York won't give you an amount, they'll either say under or "
+                               'over a hundred dollars, and I would not work a state like that because you '
+                               "don't know how much you're going after.",
+                       'tip': "States like New York won't give you an amount, they'll either say under or "
+                              'over a hundred dollars, and I would not work a state like that because you '
+                              "don't know how much you're going after.",
+                       'timestamp': 144,
+                       'timestamp_seconds': 144,
+                       'timestamp_label': '[00:02:24]',
+                       'url': 'https://www.youtube.com/watch?v=IIBKDdChS-k&t=144s',
+                       'markdown': '[00:02:24](https://www.youtube.com/watch?v=IIBKDdChS-k&t=144s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'RjCjrBjQF7Y',
+                       'title': 'How to get started in state fund | State unclaimed funds business. Make '
+                                'money with surplus funds',
+                       'channel': 'Surplus Institute / David Church / Unclaimed Funds',
+                       'author': 'Surplus Institute / David Church / Unclaimed Funds',
+                       'text': 'You can only get 10 percent so I would work nothing under $10,000 and I '
+                               'would start off with about a $10,000 claim.',
+                       'tip': 'You can only get 10 percent so I would work nothing under $10,000 and I '
+                              'would start off with about a $10,000 claim.',
+                       'timestamp': 462,
+                       'timestamp_seconds': 462,
+                       'timestamp_label': '[00:07:42]',
+                       'url': 'https://www.youtube.com/watch?v=RjCjrBjQF7Y&t=462s',
+                       'markdown': '[00:07:42](https://www.youtube.com/watch?v=RjCjrBjQF7Y&t=462s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'RjCjrBjQF7Y',
+                       'title': 'How to get started in state fund | State unclaimed funds business. Make '
+                                'money with surplus funds',
+                       'channel': 'Surplus Institute / David Church / Unclaimed Funds',
+                       'author': 'Surplus Institute / David Church / Unclaimed Funds',
+                       'text': 'One of the biggest objections I get from people is well what if they go '
+                               'around you, well deal with it, I had it happen just again recently.',
+                       'tip': 'One of the biggest objections I get from people is well what if they go '
+                              'around you, well deal with it, I had it happen just again recently.',
+                       'timestamp': 595,
+                       'timestamp_seconds': 595,
+                       'timestamp_label': '[00:09:55]',
+                       'url': 'https://www.youtube.com/watch?v=RjCjrBjQF7Y&t=595s',
+                       'markdown': '[00:09:55](https://www.youtube.com/watch?v=RjCjrBjQF7Y&t=595s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'kGhoQfbhUG4',
+                       'title': 'Why people quit working Unclaimed Funds after taking a course.',
+                       'channel': 'FundSleuth - Unclaimed Funds Info and Training',
+                       'author': 'FundSleuth - Unclaimed Funds Info and Training',
+                       'text': "They just couldn't connect with people or the skip tracing resource that "
+                               "they used wasn't that good so they could never even talk to the person "
+                               'that they wanted to speak with.',
+                       'tip': "They just couldn't connect with people or the skip tracing resource that "
+                              "they used wasn't that good so they could never even talk to the person that "
+                              'they wanted to speak with.',
+                       'timestamp': 251,
+                       'timestamp_seconds': 251,
+                       'timestamp_label': '[00:04:11]',
+                       'url': 'https://www.youtube.com/watch?v=kGhoQfbhUG4&t=251s',
+                       'markdown': '[00:04:11](https://www.youtube.com/watch?v=kGhoQfbhUG4&t=251s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Vy3iGS6ep4w',
+                       'title': 'How to be successful with Unclaimed Funds in 2024',
+                       'channel': 'Unclaimed CEO',
+                       'author': 'Unclaimed CEO',
+                       'text': 'Number two, stop using your own money, the problem with that is you start '
+                               "draining your bank account and it's your money, it's your family's money.",
+                       'tip': 'Number two, stop using your own money, the problem with that is you start '
+                              "draining your bank account and it's your money, it's your family's money.",
+                       'timestamp': 65,
+                       'timestamp_seconds': 65,
+                       'timestamp_label': '[00:01:05]',
+                       'url': 'https://www.youtube.com/watch?v=Vy3iGS6ep4w&t=65s',
+                       'markdown': '[00:01:05](https://www.youtube.com/watch?v=Vy3iGS6ep4w&t=65s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'sK5PqCLSzzg',
+                       'title': 'How To Start Asset Recovery Business With $0 (Surplus Funds Recovery)',
+                       'channel': 'Money Making Juggernaut',
+                       'author': 'Money Making Juggernaut',
+                       'text': 'The reason why we could actually do this business with zero cost is '
+                               'because all of the leads are online for free.',
+                       'tip': 'The reason why we could actually do this business with zero cost is because '
+                              'all of the leads are online for free.',
+                       'timestamp': 40,
+                       'timestamp_seconds': 40,
+                       'timestamp_label': '[00:00:40]',
+                       'url': 'https://www.youtube.com/watch?v=sK5PqCLSzzg&t=40s',
+                       'markdown': '[00:00:40](https://www.youtube.com/watch?v=sK5PqCLSzzg&t=40s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'zI7m3acMjuY',
+                       'title': 'Why People Struggle With Unclaimed Funds | Avoid These 3 Things❌️',
+                       'channel': 'Unclaimed CEO',
+                       'author': 'Unclaimed CEO',
+                       'text': "Number one, stop doing cold calls, cold calls don't work.",
+                       'tip': "Number one, stop doing cold calls, cold calls don't work.",
+                       'timestamp': 15,
+                       'timestamp_seconds': 15,
+                       'timestamp_label': '[00:00:15]',
+                       'url': 'https://www.youtube.com/watch?v=zI7m3acMjuY&t=15s',
+                       'markdown': '[00:00:15](https://www.youtube.com/watch?v=zI7m3acMjuY&t=15s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'sDutuuk5RG0',
+                       'title': 'Make 5k On Surplus Funds State Funds Unclaimed Money (Easy Business)',
+                       'channel': 'Timepiece Dan',
+                       'author': 'Timepiece Dan',
+                       'text': 'You get 10 percent of that, it could be negotiable, but the highest you '
+                               'can charge in the state of California is 10 percent.',
+                       'tip': 'You get 10 percent of that, it could be negotiable, but the highest you can '
+                              'charge in the state of California is 10 percent.',
+                       'timestamp': 207,
+                       'timestamp_seconds': 207,
+                       'timestamp_label': '[00:03:27]',
+                       'url': 'https://www.youtube.com/watch?v=sDutuuk5RG0&t=207s',
+                       'markdown': '[00:03:27](https://www.youtube.com/watch?v=sDutuuk5RG0&t=207s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'XsLq9LUTb6w',
+                       'title': 'The $10K/month Blueprint for Unclaimed Funds',
+                       'channel': 'Unclaimed CEO',
+                       'author': 'Unclaimed CEO',
+                       'text': 'There was no footprint that was proving I was actually a business, so '
+                               'there was no wonder when I was closing deals with people, they would back '
+                               'out.',
+                       'tip': 'There was no footprint that was proving I was actually a business, so there '
+                              'was no wonder when I was closing deals with people, they would back out.',
+                       'timestamp': 84,
+                       'timestamp_seconds': 84,
+                       'timestamp_label': '[00:01:24]',
+                       'url': 'https://www.youtube.com/watch?v=XsLq9LUTb6w&t=84s',
+                       'markdown': '[00:01:24](https://www.youtube.com/watch?v=XsLq9LUTb6w&t=84s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'U1OErlHEyv4',
+                       'title': 'How To Move Faster & Make More Money With Unclaimed Funds',
+                       'channel': 'Unclaimed CEO',
+                       'author': 'Unclaimed CEO',
+                       'text': 'A lot of people skip the most important steps, and number one, you need to '
+                               'make sure your business is legit.',
+                       'tip': 'A lot of people skip the most important steps, and number one, you need to '
+                              'make sure your business is legit.',
+                       'timestamp': 43,
+                       'timestamp_seconds': 43,
+                       'timestamp_label': '[00:00:43]',
+                       'url': 'https://www.youtube.com/watch?v=U1OErlHEyv4&t=43s',
+                       'markdown': '[00:00:43](https://www.youtube.com/watch?v=U1OErlHEyv4&t=43s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'i84F9CVghTA',
+                       'title': '⚠️WARNING⚠️ Do these 6 things BEFORE you start your Unclaimed Funds | Tax '
+                                'Surplus business',
+                       'channel': 'Unclaimed CEO',
+                       'author': 'Unclaimed CEO',
+                       'text': "Make sure you follow these layers, try not to skip steps, don't go from an "
+                               'idea to making phone calls, that never works.',
+                       'tip': "Make sure you follow these layers, try not to skip steps, don't go from an "
+                              'idea to making phone calls, that never works.',
+                       'timestamp': 810,
+                       'timestamp_seconds': 810,
+                       'timestamp_label': '[00:13:30]',
+                       'url': 'https://www.youtube.com/watch?v=i84F9CVghTA&t=810s',
+                       'markdown': '[00:13:30](https://www.youtube.com/watch?v=i84F9CVghTA&t=810s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'PGvJEv9Y_Go',
+                       'title': 'State Funds Tutorial: First Steps For Somebody Brand New To Unclaimed '
+                                'Funds Business.',
+                       'channel': 'Surplus Funds 101',
+                       'author': 'Surplus Funds 101',
+                       'text': "I always suggest to cold call, that's the quickest, cheapest, fastest way "
+                               'to really gain traction and see a lot of momentum in your business.',
+                       'tip': "I always suggest to cold call, that's the quickest, cheapest, fastest way "
+                              'to really gain traction and see a lot of momentum in your business.',
+                       'timestamp': 769,
+                       'timestamp_seconds': 769,
+                       'timestamp_label': '[00:12:49]',
+                       'url': 'https://www.youtube.com/watch?v=PGvJEv9Y_Go&t=769s',
+                       'markdown': '[00:12:49](https://www.youtube.com/watch?v=PGvJEv9Y_Go&t=769s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'kuCEYN64vtQ',
+                       'title': 'Unclaimed State Funds VS Surplus Funds Recovery',
+                       'channel': 'Money Making Juggernaut',
+                       'author': 'Money Making Juggernaut',
+                       'text': 'Unclaimed state funds are typically processed within 60 days because that '
+                               "check is literally already ready, the money's there in the state treasury.",
+                       'tip': 'Unclaimed state funds are typically processed within 60 days because that '
+                              "check is literally already ready, the money's there in the state treasury.",
+                       'timestamp': 232,
+                       'timestamp_seconds': 232,
+                       'timestamp_label': '[00:03:52]',
+                       'url': 'https://www.youtube.com/watch?v=kuCEYN64vtQ&t=232s',
+                       'markdown': '[00:03:52](https://www.youtube.com/watch?v=kuCEYN64vtQ&t=232s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '1W2i-aJGcb0',
+                       'title': 'One of the biggest mistakes made with UNCLAIMED FUNDS (Must Watch)',
+                       'channel': 'Unclaimed CEO',
+                       'author': 'Unclaimed CEO',
+                       'text': 'You can walk out of that bank the same day with twenty thousand dollars or '
+                               'more depending on what your personal credit looks like.',
+                       'tip': 'You can walk out of that bank the same day with twenty thousand dollars or '
+                              'more depending on what your personal credit looks like.',
+                       'timestamp': 55,
+                       'timestamp_seconds': 55,
+                       'timestamp_label': '[00:00:55]',
+                       'url': 'https://www.youtube.com/watch?v=1W2i-aJGcb0&t=55s',
+                       'markdown': '[00:00:55](https://www.youtube.com/watch?v=1W2i-aJGcb0&t=55s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'qyRWV76TgwE',
+                       'title': 'How To Pick The BEST State For Your Unclaimed Funds Business',
+                       'channel': 'Surplus Funds 101',
+                       'author': 'Surplus Funds 101',
+                       'text': "It's not really about the state that you choose to work in, it's how you "
+                               'work the state.',
+                       'tip': "It's not really about the state that you choose to work in, it's how you "
+                              'work the state.',
+                       'timestamp': 520,
+                       'timestamp_seconds': 520,
+                       'timestamp_label': '[00:08:40]',
+                       'url': 'https://www.youtube.com/watch?v=qyRWV76TgwE&t=520s',
+                       'markdown': '[00:08:40](https://www.youtube.com/watch?v=qyRWV76TgwE&t=520s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'TTMtgtc31k4',
+                       'title': 'How To Become An Unclaimed Property Investigator',
+                       'channel': 'Surplus Funds 101',
+                       'author': 'Surplus Funds 101',
+                       'text': "In those states I wouldn't go above 40 percent, I think 40 percent is a "
+                               "really healthy fee, and I'm usually pretty good with 20, 25 percent.",
+                       'tip': "In those states I wouldn't go above 40 percent, I think 40 percent is a "
+                              "really healthy fee, and I'm usually pretty good with 20, 25 percent.",
+                       'timestamp': 283,
+                       'timestamp_seconds': 283,
+                       'timestamp_label': '[00:04:43]',
+                       'url': 'https://www.youtube.com/watch?v=TTMtgtc31k4&t=283s',
+                       'markdown': '[00:04:43](https://www.youtube.com/watch?v=TTMtgtc31k4&t=283s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '_vsvjD8JvgU',
+                       'title': 'Surplus Funds Recovery Newbie? START HERE (Asset Recovery Business)',
+                       'channel': 'Money Making Juggernaut',
+                       'author': 'Money Making Juggernaut',
+                       'text': "If you do 100 leads it's going to cost you about $14 to $15 opposed to "
+                               'putting in four, five, maybe even 10 hours of research on your own '
+                               'manually.',
+                       'tip': "If you do 100 leads it's going to cost you about $14 to $15 opposed to "
+                              'putting in four, five, maybe even 10 hours of research on your own '
+                              'manually.',
+                       'timestamp': 175,
+                       'timestamp_seconds': 175,
+                       'timestamp_label': '[00:02:55]',
+                       'url': 'https://www.youtube.com/watch?v=_vsvjD8JvgU&t=175s',
+                       'markdown': '[00:02:55](https://www.youtube.com/watch?v=_vsvjD8JvgU&t=175s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'}]}

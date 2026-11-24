@@ -9,49 +9,49 @@
       "GENERATION"
     ],
     "deck": [
-      "ENRICH THE TRIGGER. VERIFY CONSENT.",
-      "ROUTE EXCLUSIVE DEMAND."
+      "PAY-PER-LEAD, PAY-PER-APPOINTMENT AND RETAINER MATH TESTED AGAINST A 2X TO 3X BUYER ROAS FLOOR",
+      "OWNED LEAD ASSETS BUILT ON ONE NICHE, CLEAN LISTS, WARMED INBOXES AND ONE-TO-FIVE-MINUTE SPEED-TO-LEAD"
     ],
-    "lead": "Signal-Triggered B2B Outbound, Rank-and-Rent Pay-Per-Call Routing, Ping-Post Ledgers & Scaling a $750k/yr 4-Person Desk",
-    "summary": "Combine public-filing triggers, multi-domain deliverability hygiene, and seller-specific consent verification to monetize qualified B2B demand.",
+    "lead": "Operators who left retainers show how to generate commercial leads at $18 to $50, resell them at 1.5x to 3x, and keep buyers reordering by clearing a 2x to 3x return and reaching every lead within minutes.",
+    "summary": "All 12 chapters synthesize 192 verbatim YouTube practitioner testimonies, each claim carrying timestamped inline attribution to the operator who said it. The chapters run from agency pricing models and campaign economics through list building, cold email infrastructure, local search assets, TCPA consent capture, and lead distribution and follow-up.",
     "chapters": [
-      "Business model & revenue boundaries",
-      "Decision-makers & payment rails",
-      "Unit economics & margin waterfall",
-      "Startup capital & lean stack",
-      "Beginner traps & failure modes",
-      "Sourcing & first deals",
-      "End-to-end operating blueprint",
-      "Public records, APIs & tooling",
-      "Contracts, statutes & scripts",
-      "Automation & distribution loops",
-      "Small-team pod & exit valuation",
-      "First 30-day launch sprint"
+      "Lead Agency Models, Pricing, and Scale",
+      "Commercial Campaign Economics and Industry Workflows",
+      "Build Prospect Lists from LinkedIn, Maps, and Apollo",
+      "Clay Enrichment and Outbound Workflows",
+      "Email Infrastructure and Deliverability",
+      "Run Cold Email Campaigns with Smartlead and AI",
+      "LinkedIn Outreach and Appointment-Setting Systems",
+      "Cold Email Agency Launch and Compliance",
+      "Google Maps, Business Profiles, and Local Services Ads",
+      "Rank-and-Rent Assets and Roofing Lead Generation",
+      "TCPA Consent Workshops and Lead-Capture Workflows",
+      "Lead Distribution, Call Routing, and Follow-Up"
     ],
     "flow": [
       [
-        "SOURCE",
-        "Mine high-intent deal triggers"
+        "NICHE",
+        "Pick one vertical, one brand and one channel where a customer is worth thousands, and confirm each lead is worth $100 or more before copying a blueprint."
       ],
       [
-        "UNDERWRITE",
-        "Screen margin, float & rules"
+        "PRICE",
+        "Work every lead price backward from a 2x to 3x buyer ROAS, resell at 1.5x to 3x generated cost, and never sell a lead below what it costs to generate."
       ],
       [
-        "ENGAGE",
-        "Execute mandate or pre-sell"
+        "TARGET",
+        "Build prospect lists from LinkedIn, Maps and Apollo, enrich them in Clay, and time outreach to signals such as renewal windows or executives new to the seat."
+      ],
+      [
+        "SEND",
+        "Start outbound on about 20 inboxes at 20 sends per day, roughly 400 emails daily through Smartlead, for one to two booked calls a day, and avoid cheap scraped lists."
+      ],
+      [
+        "SIGNAL",
+        "Fire ad-platform conversions only on qualified answers or sold leads, posting them back server-side through the Conversions API instead of thank-you page views."
       ],
       [
         "DELIVER",
-        "Run standardized SOP & ledger"
-      ],
-      [
-        "VERIFY",
-        "Audit quality, scrubs & statutes"
-      ],
-      [
-        "COMPOUND",
-        "Reconcile cash & scale pod"
+        "Touch every lead within 1 to 5 minutes using round-robin assignment, auto-call transfer and AI SMS, then require prepayment and cap credits at 10% or less of delivery."
       ]
     ]
   },
@@ -59,10 +59,10 @@
   "book_series": "THE BIG MONEY PLAYBOOKS",
   "tagline": "Big Money. Small Teams. No Bullshit.",
   "title": "COMMERCIAL LEAD GENERATION",
-  "subtitle": "The Complete Playbook for Commercial Lead Generation: $100,000–$750,000 USD Annually, Starting with a 1 FT + 3 C (4 People) Pod",
+  "subtitle": "Own the Asset, Price Backward from Buyer ROAS, and Touch Every Lead in Minutes - Pay-Per-Lead Arbitrage, Waterfall-Verified Lists, Protected Sending Fleets, One-to-One Consent and Ping-Post Routing from the Operators Who Run Them",
   "chapter_count": 12,
-  "total_word_count": 77918,
-  "expert_youtube_link_count": 180,
+  "total_word_count": 71995,
+  "expert_youtube_link_count": 208,
   "min_expert_youtube_links_required": 150,
   "target_expert_youtube_links": "150-200+",
   "min_expert_youtube_links_per_chapter": 12,
@@ -77,5 +77,5 @@
   "publication_status": "approved_master",
   "public_deploy_approved": false,
   "paid_sales_approved": false,
-  "updated_at": "2026-11-23T22:48:00Z"
+  "updated_at": "2026-11-24T19:54:29Z"
 }

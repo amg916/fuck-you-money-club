@@ -1,676 +1,806 @@
 from __future__ import annotations
 
-CHAPTER_10 = {
-    "id": "Q10",
-    "chapter_id": "Q10",
-    "chapter_number": 10,
-    "question_number": 10,
-    "slug": "automation-ai-leverage-scalable-distribution-flywheels",
-    "question_prompt": "How does a 1 FT + 3 C (4 people) equipment brokerage team automate 70%+ of repetitive research, qualification, fulfillment, and traffic/deal acquisition while keeping human-in-the-loop QA?",
-    "kicker": "Q10 / THE BIG MONEY PLAYBOOKS",
-    "title": "Automation, AI Leverage & Scalable Distribution Flywheels",
-    "subtitle": "Python Inventory Matching, Verified Buyer Alerts, UCC Lien Releases, Escrow Evidence, and Seven Small-Pod Distribution Plays",
-    "layout_template": "case_study_walkthrough",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #11, Equipment Brokerage, holds Rank #16 with an 86/100 "
-        "Money-to-Manpower Score. This chapter operationalizes seven mapped plays: "
-        "inventory intake, equipment research, inventory matching, buyer alerts, "
-        "buyer qualification, settlement orchestration, and distribution recycling. "
-        "A 1 FT + 3 C pod uses Python workers, authenticated webhooks, structured "
-        "LLM extraction, and evidence-linked review queues to target 70%+ less "
-        "repetitive labor without delegating equipment representations or payment "
-        "decisions. Conservative, Base, and Scaled annual owner profits remain "
-        "$25,000, $157,500, and $360,000 respectively; revenue means broker commissions, "
-        "never equipment transaction value. The design connects inspected machines "
-        "to qualified buyers, measures automation after rework, and turns verified "
-        "availability into permissioned distribution rather than unreliable listing volume."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$100,000",
-            "context": "Annual broker commissions; equipment transaction value excluded",
-            "note": "25% net margin; $25,000 annual owner profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Base",
-            "value": "$450,000",
-            "context": "Annual broker commissions; equipment transaction value excluded",
-            "note": "35.0% net margin; $157,500 annual owner profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$800,000",
-            "context": "Annual broker commissions; equipment transaction value excluded",
-            "note": "45% net margin; $360,000 annual owner profit; 2 FT + 4 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Wire seven operator plays into one evidence-backed work queue",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Build the brokerage around one equipment record, not seven disconnected "
-                    "software subscriptions. For Candidate #11, use seven mapped execution plays: "
-                    "inventory intake, equipment research, inventory matching, buyer alerts, buyer "
-                    "qualification, settlement orchestration, and distribution recycling. These are "
-                    "operating lanes for the chapter, not seven separate businesses. The full-time "
-                    "broker owns seller mandates, consequential representations, commercial terms, "
-                    "and settlement authorization. Contractor one handles equipment inspection and "
-                    "technical evidence; contractor two handles records, lien-search coordination, "
-                    "and settlement documents; contractor three handles CRM hygiene, distribution, "
-                    "and automation maintenance. Contractor hours remain scheduled capacity, not "
-                    "unlimited availability. Assign every machine a stable internal identifier, "
-                    "seller identifier, serial evidence reference, jurisdiction, availability "
-                    "timestamp, commission agreement reference, and designated reviewer. In "
-                    "HubSpot or Pipedrive, expose those fields rather than burying them in "
-                    "notes. Maintain separate states for seller assertions, inspected facts, "
-                    "buyer requirements, and authorized publication. A listing cannot inherit "
-                    "inspection status merely because the same model appeared previously. "
-                    "The operational objective is to move evidence once, reuse it responsibly, "
-                    "and reserve scarce broker attention for discrepancies, negotiations, and "
-                    "decisions that create liability. Start with one equipment category and "
-                    "one repeatable seller channel before expanding the taxonomy."
-                ),
-                (
-                    "Use a small Python service behind an HTTPS endpoint to receive seller "
-                    "submissions, CRM changes, inspection uploads, and escrow status notifications. "
-                    "Verify each provider's documented signature against the raw request body, "
-                    "check timestamp freshness where supported, and reject oversized payloads "
-                    "before parsing. Persist the event and its provider event identifier before "
-                    "acknowledging receipt; a worker then processes the durable queue. A SQLite "
-                    "database can support a single-host pilot when transactions, backups, and "
-                    "writer contention are managed explicitly. Store event identifiers under a "
-                    "unique constraint and maintain an outbox for pending external actions. "
-                    "Python's hashlib, hmac, json, sqlite3, urllib.request, and logging cover "
-                    "the essential mechanics without a sprawling integration layer. Keep "
-                    "credentials in deployment-managed secret storage, never listing records "
-                    "or model prompts. The worker validates a versioned payload, updates "
-                    "allowed fields, and records the original evidence reference alongside "
-                    "every derived value. A repeated webhook must not create another buyer "
-                    "alert or another settlement instruction. Treat documents as untrusted "
-                    "data: text inside a seller PDF cannot change system instructions, "
-                    "request credentials, or authorize outbound actions. Log identifiers "
-                    "and outcomes while restricting access to sensitive attachments."
-                ),
-                (
-                    "Measure automation against observed manual effort rather than counting "
-                    "tasks that happen to touch software. Sample two weeks of comparable "
-                    "intake, research, matching, alert preparation, qualification administration, "
-                    "document assembly, and distribution work. Record active minutes, waiting "
-                    "time, correction time, and exceptions separately. An illustrative weekly "
-                    "baseline of 1,000 repetitive-work minutes can support a 70% target if "
-                    "automation removes 780 minutes but introduces only 80 minutes of review "
-                    "and repair: net savings equal 700 minutes. The remaining 300 minutes "
-                    "still require people. Inspections, negotiations, disputed ownership, and "
-                    "payment authorization sit outside that repetitive-work denominator and "
-                    "remain visible in the complete capacity plan. Report both the scoped "
-                    "automation rate and total team hours so the result cannot conceal "
-                    "work shifted to contractors. Set a daily exception budget and pause "
-                    "new seller onboarding when aged cases exceed available reviewer time. "
-                    "A 1 FT + 3 C pod should prefer forty complete, current records over "
-                    "four hundred ambiguous listings. Track time-to-first-qualified-match, "
-                    "evidence completeness, duplicate suppression, and human correction rate "
-                    "alongside commissions collected. Establish the baseline before promising "
-                    "throughput improvements to sellers or buying additional automation capacity."
-                ),
-            ],
-            "table": {
-                "caption": "Seven Equipment Brokerage Plays, Automation Boundaries, and Pod Ownership",
-                "headers": [
-                    "Mapped operator play and source material",
-                    "Automated work with explicit evidence linkage",
-                    "Named human responsibility and decision boundary",
-                    "Completion evidence retained in the equipment record",
-                ],
-                "rows": [
-                    [
-                        "Play one: inventory intake from authorized seller submissions",
-                        "Normalize manufacturer, model, serial evidence, location, and availability",
-                        "Records contractor resolves identity conflicts before record activation",
-                        "Seller mandate and source attachments share stable identifiers",
-                    ],
-                    [
-                        "Play two: equipment research from manuals and inspection records",
-                        "Extract specifications while preserving document page references throughout",
-                        "Inspection contractor distinguishes measured condition from seller assertions",
-                        "Reviewed specification sheet identifies evidence age and limitations",
-                    ],
-                    [
-                        "Play three: inventory matching against explicit buyer requirements",
-                        "Apply hard constraints before ranking compatible equipment candidates",
-                        "Broker reviews substitutions affecting application suitability or economics",
-                        "Match explanation lists accepted constraints and unresolved differences",
-                    ],
-                    [
-                        "Play four: buyer alerts from reviewed available inventory",
-                        "Generate permissioned alerts using approved facts and templates",
-                        "Distribution contractor monitors suppression, freshness, and delivery exceptions",
-                        "Recipient history records template version and equipment snapshot",
-                    ],
-                    [
-                        "Play five: buyer qualification from direct prospect responses",
-                        "Collect budget, application, timing, authority, and logistics requirements",
-                        "Broker confirms purchase authority and credible settlement readiness",
-                        "Qualification record links answers to dated buyer communications",
-                    ],
-                    [
-                        "Play six: settlement orchestration from agreed transaction documents",
-                        "Assemble checklists and reconcile milestones without moving funds",
-                        "Broker authorizes instructions after independent document and identity review",
-                        "Escrow confirmation and release evidence close each checklist",
-                    ],
-                    [
-                        "Play seven: distribution recycling from verified market interactions",
-                        "Refresh category pages and aggregate permissioned referral signals",
-                        "Distribution contractor removes stale claims and restricted customer details",
-                        "Published assets retain review dates and source permissions",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Automate the clerical burden, preserve the machine-specific judgment",
-                "body": (
-                    "Experienced brokers make evidence reusable without treating similar "
-                    "machines as interchangeable or seller statements as inspection results."
-                ),
-                "items": [
-                    "Request a continuous serial-plate-to-machine video when remote identity evidence is weak; retain the original file rather than a compressed messaging preview.",
-                    "Store CNC control generation and installed options separately from machine model because retrofit history can change buyer compatibility materially.",
-                    "Save heavy-equipment attachment interfaces as structured fields; bucket, coupler, hydraulic flow, and auxiliary circuit mismatches destroy otherwise attractive matches.",
-                    "Expire seller availability before launching buyer alerts and reconfirm material facts after any price, location, ownership, or condition change.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Make inventory matching and buyer alerts explainable, bounded, and cheap",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Use deterministic matching before asking an LLM to explain anything. "
-                    "For CNC equipment, hard filters can include travel envelope, spindle "
-                    "interface, electrical supply, control generation, installed axis capability, "
-                    "and buyer floor-loading limits. For excavators, include operating weight, "
-                    "transport dimensions, attachment compatibility, hours evidence, and geographic "
-                    "delivery constraints. Fleet records need vehicle-specific title, registration, "
-                    "and odometer handling where applicable; an industrial asset record is "
-                    "not a substitute. Represent absent evidence with a dedicated missing-data "
-                    "state and route it to a reviewer instead of inventing a value. Normalize "
-                    "units explicitly, preserving the original measurement and conversion "
-                    "method. A machine described as three-phase must not automatically match "
-                    "every three-phase installation. After hard constraints pass, an "
-                    "illustrative score can weight application fit at 40%, delivered-cost "
-                    "fit at 25%, inspection evidence at 20%, and timing at 15%. These "
-                    "weights are tuning assumptions, not the candidate's 86/100 scorecard. "
-                    "Return the components with each recommendation. Keep transport estimates "
-                    "separate from machine price, label their quote dates, and require "
-                    "refreshing when route, dimensions, permits, or loading arrangements "
-                    "change. Test every release against previously rejected near-matches."
-                ),
-                (
-                    "Give the LLM a narrow extraction and drafting role. Send selected "
-                    "inspection text or seller-authorized specifications with field definitions, "
-                    "allowed units, evidence identifiers, and an explicit requirement to "
-                    "leave unsupported attributes unpopulated. Validate returned JSON against "
-                    "an allowlist of keys and expected Python types; reject extra fields, "
-                    "impossible ranges, contradictory units, and uncited condition claims. "
-                    "Schema-conforming output can still be wrong, so compare high-consequence "
-                    "fields with source evidence and require technical review before "
-                    "publication. Never provide bank instructions, complete identity packets, "
-                    "or unrestricted CRM exports merely to improve a description. An "
-                    "illustrative extraction run using 2,000 input tokens at $1.50 per "
-                    "million and 500 output tokens at $6.00 per million costs $0.006 "
-                    "in model usage. Add an assumed $0.004 for metered processing and "
-                    "storage to obtain $0.010 per run before fixed costs and labor. "
-                    "At 3,000 runs, that variable budget is $30; assumed monthly hosting "
-                    "of $20 and monitoring of $25 bring the narrow pipeline subtotal "
-                    "to $75. Verify actual vendor rates and include retries, failed "
-                    "runs, review labor, CRM subscriptions, inspection, and acquisition "
-                    "costs in the operating ledger."
-                ),
-                (
-                    "Buyer alerts should render approved facts, not generate fresh "
-                    "representations at send time. Store a reviewed equipment snapshot, "
-                    "template version, audience segment, suppression status, and availability "
-                    "expiry. The broker can authorize a narrowly defined campaign class "
-                    "once, such as domestic CNC matches containing only reviewed specifications "
-                    "and an invitation to inspect. A changed warranty, export destination, "
-                    "payment request, or unsupported performance statement requires transaction-specific "
-                    "review. Before each send, recheck availability and recipient suppression; "
-                    "a queued message is not permission to ignore later changes. Apply "
-                    "frequency caps and deduplicate by recipient, equipment identifier, and "
-                    "material version. Use Postmark or Amazon SES delivery events to "
-                    "separate bounces from substantive responses, without treating opens "
-                    "as proof of buying intent. Commercial email must satisfy applicable "
-                    "15 U.S.C. 7704 requirements, including accurate routing information, "
-                    "a nondeceptive subject, required identification, a valid postal address, "
-                    "and a working opt-out process. Honor opt-outs within the statutory "
-                    "period and suppress immediately operationally. An alert should explain "
-                    "why the machine matches, disclose consequential evidence gaps, and "
-                    "offer a direct path to a broker. Measure qualified replies and "
-                    "inspection bookings rather than celebrating message volume."
-                ),
-            ],
-            "table": {
-                "caption": "Inventory Matching Controls and Illustrative Automation Cost Drivers",
-                "headers": [
-                    "Equipment or processing decision under test",
-                    "Deterministic rule applied before model interpretation",
-                    "Human review trigger and immediate response",
-                    "Evidence or cost measure recorded for audit",
-                ],
-                "rows": [
-                    [
-                        "CNC electrical compatibility for a buyer facility",
-                        "Compare voltage, phase, frequency, and documented transformer requirements",
-                        "Inspection contractor resolves incompatible or incomplete electrical evidence",
-                        "Retain plate image and buyer facility specification references",
-                    ],
-                    [
-                        "Excavator attachment fit for a specified application",
-                        "Compare coupler dimensions, hydraulic flow, pressure, and circuits",
-                        "Inspection contractor verifies seller claims before compatibility publication",
-                        "Store measured dimensions and attachment documentation with timestamps",
-                    ],
-                    [
-                        "Delivered equipment cost against buyer purchase budget",
-                        "Separate asking price, transport estimate, rigging, and applicable charges",
-                        "Broker refreshes expired transport assumptions before commercial negotiation",
-                        "Preserve route assumptions and dated carrier quote references",
-                    ],
-                    [
-                        "LLM extraction using explicitly assumed token pricing",
-                        "Compute input and output usage from metered responses",
-                        "Automation contractor investigates repeated validation failures before resuming",
-                        "Record $0.006 model usage per illustrative successful extraction",
-                    ],
-                    [
-                        "Processing and storage allocation for each automated run",
-                        "Add assumed $0.004 infrastructure usage to model charges",
-                        "Broker reviews retry amplification against monthly spending limits",
-                        "Record $0.010 variable cost before fixed expenses and labor",
-                    ],
-                    [
-                        "Buyer alert release from reviewed available inventory",
-                        "Check freshness, audience authorization, suppression, and recipient frequency",
-                        "Broker reviews changed claims before revised messages leave",
-                        "Retain approved snapshot and delivery event correlation identifiers",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Capture and authenticate the source event",
-                    "action": "Verify the webhook and persist its original evidence references.",
-                    "detail": (
-                        "Reject invalid signatures and duplicate provider identifiers; "
-                        "acknowledge only after durable event storage succeeds."
-                    ),
-                },
-                {
-                    "step": 2,
-                    "title": "Extract, normalize, and validate the equipment record",
-                    "action": "Run bounded extraction followed by deterministic field checks.",
-                    "detail": (
-                        "Preserve original units, attach source references, and send "
-                        "identity or condition conflicts to the responsible contractor."
-                    ),
-                },
-                {
-                    "step": 3,
-                    "title": "Match inventory and review consequential claims",
-                    "action": "Apply hard buyer constraints before generating explanations.",
-                    "detail": (
-                        "Use approved facts only; the broker reviews substitutions, "
-                        "changed warranties, export issues, and commercial commitments."
-                    ),
-                },
-                {
-                    "step": 4,
-                    "title": "Dispatch, reconcile, and measure the resulting work",
-                    "action": "Recheck availability and suppression before releasing approved alerts.",
-                    "detail": (
-                        "Record provider identifiers, qualified responses, retry costs, "
-                        "review minutes, and actual next steps in the deal record."
-                    ),
-                },
-            ],
-        },
-        {
-            "heading": "3. Keep title, condition, export, and settlement decisions with accountable people",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Automated document assembly is useful precisely because title and lien "
-                    "decisions require disciplined human attention. Collect the seller's legal "
-                    "identity, authority to sell, acquisition documents, equipment identifiers, "
-                    "and any lender payoff correspondence. A UCC-1 search result is neither "
-                    "a title certificate nor a machine-specific clearance. Search strategy "
-                    "depends on debtor identity, organizational status, debtor location, "
-                    "relevant jurisdictions, and collateral descriptions; serial-only searches "
-                    "can miss blanket liens. Under UCC 9-315, a security interest generally "
-                    "continues in collateral after disposition unless an applicable exception "
-                    "or secured-party authorization applies. The records contractor coordinates "
-                    "appropriate searches and checks whether payoff documents actually "
-                    "authorize release of the identified collateral. A blanket filing may "
-                    "remain in place even when a particular machine receives an authorized "
-                    "partial release. UCC 9-513 addresses termination statements, but a filed "
-                    "termination is not the only possible release mechanism and should "
-                    "not be demanded mechanically for every asset sale. Use the applicable "
-                    "state enactment and transaction-specific documentation. The broker verifies "
-                    "the release path with the lender or qualified transaction professional "
-                    "before representing the equipment as clear. Keep lender contact "
-                    "verification independent of seller-provided payment instructions."
-                ),
-                (
-                    "Condition language deserves the same restraint as lien language. A "
-                    "seller's statement that a spindle was rebuilt is a claim until "
-                    "the service record, scope, date, and machine identity support it. "
-                    "The inspection contractor records what was observed, which tests "
-                    "were performed, operating conditions, measurement tools, and inaccessible "
-                    "components. Photographs cannot establish every load-bearing or internal "
-                    "condition. UCC 2-313 explains how factual affirmations, descriptions, "
-                    "and samples can create express warranties when they become part "
-                    "of the bargain; casually generated promises can therefore change "
-                    "the transaction. UCC 2-316 governs exclusions and modifications, "
-                    "subject to its requirements and applicable law. The broker checks "
-                    "that published descriptions, inspection limitations, negotiated terms, "
-                    "and signed documents agree instead of relying on a generic footer. "
-                    "For export transactions, record destination, purchaser, consignee, "
-                    "end user, end use, and relevant technical characteristics. Determine "
-                    "whether the item is subject to the EAR under 15 CFR 734.3 "
-                    "and assess applicable restrictions, including 15 CFR 736.2. An "
-                    "ECCN candidate or screening result is research input, not automatic "
-                    "clearance. Obtain qualified review when classification, end-use concerns, "
-                    "sanctions exposure, or license requirements remain unresolved."
-                ),
-                (
-                    "Settlement automation should assemble evidence and reconcile milestones, "
-                    "not possess unrestricted authority to redirect funds. Use an appropriate "
-                    "escrow provider whose terms, permitted transaction types, identity "
-                    "requirements, and release conditions fit the deal. The broker coordinates "
-                    "funding confirmation, inspection acceptance, lien-release evidence, "
-                    "loading responsibility, delivery milestones, and commission disbursement "
-                    "under the parties' written instructions. Client equipment funds never "
-                    "become brokerage revenue merely because an automation dashboard displays "
-                    "them. Any changed bank instruction triggers an independent callback "
-                    "to a previously verified contact and a fresh review of the "
-                    "provider's authenticated portal. If a webhook claims that funds "
-                    "arrived, confirm the actual provider status before scheduling an "
-                    "irreversible release. Failure handling must distinguish harmless retries "
-                    "from ambiguous external actions. A timed-out email submission needs "
-                    "provider-status reconciliation before resending; a timed-out payment "
-                    "instruction must never be blindly replayed. Route exhausted retries "
-                    "to a failed-event queue with an owner, evidence snapshot, and "
-                    "next action. During an outage, use a controlled manual checklist "
-                    "and reconcile every manual action before restarting workers. Test "
-                    "duplicate delivery, forged signatures, stale availability, and conflicting "
-                    "release documents in a sandbox before increasing live volume."
-                ),
-            ],
-            "table": {
-                "caption": "Equipment Transaction Failure Modes, Primary Rules, and Recovery Ownership",
-                "headers": [
-                    "Failure mode or transaction evidence conflict",
-                    "Concrete rule governing the operating response",
-                    "Accountable human action before consequential release",
-                    "Recovery record retained for subsequent reconciliation",
-                ],
-                "rows": [
-                    [
-                        "Serial search misses lender blanket collateral language",
-                        "UCC 9-315 requires evaluating continuing security interests",
-                        "Records contractor obtains appropriately scoped searches and release evidence",
-                        "Broker retains lender authorization linked to identified collateral",
-                    ],
-                    [
-                        "Seller requests termination despite an ongoing credit facility",
-                        "UCC 9-513 addresses termination requirements in specified circumstances",
-                        "Broker confirms whether authorized partial release resolves this sale",
-                        "Retain signed release scope and independently verified lender contact",
-                    ],
-                    [
-                        "Generated description promises unverified production tolerances to buyers",
-                        "UCC 2-313 can attach consequences to factual affirmations",
-                        "Inspection contractor validates measurements before broker approves description",
-                        "Retain test conditions and the exact approved publication version",
-                    ],
-                    [
-                        "Export buyer changes consignee after initial screening review",
-                        "15 CFR 736.2 requires evaluating applicable general prohibitions",
-                        "Broker pauses shipment coordination pending refreshed destination and party review",
-                        "Archive revised party information and documented restriction analysis",
-                    ],
-                    [
-                        "Escrow email introduces changed beneficiary bank account details",
-                        "Written settlement instructions control authorized disbursement and release conditions",
-                        "Broker independently verifies changes through previously established contact channels",
-                        "Retain callback evidence and authenticated provider confirmation references",
-                    ],
-                    [
-                        "External action times out after provider possibly accepts request",
-                        "Reconcile ambiguous side effects before repeating consequential actions",
-                        "Automation contractor queries provider status and escalates unresolved outcomes",
-                        "Store correlation identifiers and manually reconciled event disposition",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four pre-flight checks before consequential transaction actions",
-                "body": (
-                    "Routine processing may continue automatically; publication, shipment "
-                    "coordination, and settlement instructions must respect these evidence boundaries."
-                ),
-                "items": [
-                    "Identity and authority: confirm the seller entity, authorized signer, machine identity, and applicable dealer licensing requirements before accepting a mandate.",
-                    "Claims and condition: reconcile inspected facts, remaining defects, warranty wording, and published specifications before releasing buyer-facing representations.",
-                    "Liens and export: confirm the documented collateral-release path and resolve applicable destination, party, end-use, and classification questions before shipment coordination.",
-                    "Settlement and recovery: verify escrow status and changed instructions independently, identify the action owner, and confirm a documented reversal or recovery procedure.",
-                ],
-            },
-        },
-        {
-            "heading": "4. Compound verified inventory into distribution without outrunning the scorecard",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Programmatic distribution starts with buyer-useful taxonomy, not thousands "
-                    "of thin pages. Publish reviewed category pages for specific applications, "
-                    "such as compact excavators with compatible attachments or CNC turning "
-                    "centers with documented control options. Include current availability, "
-                    "inspection scope, transport considerations, and a dated specification "
-                    "summary. Never expose serial photographs, ownership documents, customer "
-                    "identities, or exact storage locations without appropriate authorization. "
-                    "When a machine sells, mark it sold and retain only useful, "
-                    "permitted reference content; do not pretend it remains available "
-                    "to collect leads. Google Search Console can reveal which applications "
-                    "attract qualified inquiries, while CRM records show whether those "
-                    "inquiries become inspection bookings. Feed confirmed buyer requirements "
-                    "back into seller sourcing, creating a loop from search demand "
-                    "to inventory selection to better matches. Use MachineryTrader, "
-                    "Machinio, and category-specific marketplaces only through authorized "
-                    "accounts and permitted publishing or data-access methods. Do not "
-                    "copy competing listings into an inventory database or imply "
-                    "representation without a seller mandate. Track inventory freshness "
-                    "and substantive page usefulness before expanding page count. The "
-                    "distribution contractor reviews changed facts; the broker approves "
-                    "new performance claims and commercial promises."
-                ),
-                (
-                    "The referral loop should make a useful artifact easy to share "
-                    "without turning customer data into public content. Give a qualified "
-                    "buyer a reviewed shortlist comparing application fit, evidence age, "
-                    "delivered-cost assumptions, and open inspection questions. Provide an "
-                    "explicitly shareable version that omits confidential prices, identities, "
-                    "and transaction documents. Invite the buyer to introduce another "
-                    "authorized purchaser or seller, but do not automatically enroll "
-                    "forwarded recipients into campaigns. Capture direct requests and "
-                    "preferences when those recipients contact the brokerage. For outbound "
-                    "acquisition, target a narrow, documented business segment with a "
-                    "relevant equipment thesis and an immediate opt-out path; avoid "
-                    "bulk scraping and indiscriminate sequences. A substantive response "
-                    "creates a qualification task, not an automatic deal forecast. "
-                    "Track source, equipment category, first qualified conversation, "
-                    "inspection, signed agreement, settlement, and collected commission "
-                    "using stable identifiers. Count each opportunity once when several "
-                    "channels assist the same transaction. Compare outreach labor and "
-                    "channel spend with collected contribution after attributable delivery "
-                    "costs. Permissioned referrals, fresh inventory pages, and responsive "
-                    "buyer alerts reinforce each other only when the underlying "
-                    "equipment records remain accurate. Pause weak channels rather than "
-                    "compensating with more automated messages."
-                ),
-                (
-                    "Keep the economic model anchored to broker commissions. Conservative "
-                    "revenue is $100,000 at a 25% net margin, producing $25,000 "
-                    "annual owner profit with 1 FT + 3 C. Base revenue is "
-                    "$450,000 at 35.0%, producing $157,500 with the same four-person "
-                    "pod. Scaled revenue is $800,000 at 45%, producing $360,000 "
-                    "with 2 FT + 4 C, six people rather than four. The "
-                    "corresponding total expense envelopes are $75,000, $292,500, and "
-                    "$440,000. As illustrative commission arithmetic, twenty closings "
-                    "averaging $5,000 reconcile to Conservative revenue, thirty averaging "
-                    "$15,000 reconcile to Base, and forty averaging $20,000 reconcile "
-                    "to Scaled. These combinations are workload examples, not historical "
-                    "conversion evidence; underlying equipment values are excluded. The "
-                    "$10,000–$75,000 startup range and $2,500–$14,000 monthly operating "
-                    "range are planning inputs, not substitutes for complete annual "
-                    "scenario expenses. Map contractor costs, channel spend, inspections, "
-                    "insurance, software, and other expenses without double counting. "
-                    "Allow for a 2–9 month first-deal horizon and lumpy collections. "
-                    "Reconcile commissions to contracts and actual settlement records "
-                    "weekly. Scale only when review capacity, cash runway, and "
-                    "measured exception rates support additional inventory."
-                ),
-            ],
-            "table": {
-                "caption": "Distribution Loops and Canonical Commission-Only Scenario Reconciliation",
-                "headers": [
-                    "Distribution loop or canonical operating scenario",
-                    "Specific input and repeatable operating mechanism",
-                    "Success measure with explicit economic boundary",
-                    "Capacity constraint and practical corrective action",
-                ],
-                "rows": [
-                    [
-                        "Programmatic category pages built from authorized current inventory",
-                        "Publish reviewed specifications and dated availability for specific applications",
-                        "Measure qualified inquiries rather than raw page impressions",
-                        "Distribution contractor retires stale facts before adding more pages",
-                    ],
-                    [
-                        "Permissioned shortlist referrals between relevant equipment market participants",
-                        "Offer shareable comparisons stripped of confidential transaction information",
-                        "Attribute introductions to qualified conversations and collected commissions",
-                        "Broker reviews disclosure scope before reusable artifacts circulate",
-                    ],
-                    [
-                        "Narrow outbound campaigns informed by verified buyer demand",
-                        "Connect relevant business applications with reviewed available equipment",
-                        "Measure inspection bookings after suppression and duplicate filtering",
-                        "Pause campaigns when exception volume exceeds reviewer capacity",
-                    ],
-                    [
-                        "Conservative case using the canonical four-person operating pod",
-                        "$100,000 commissions less $75,000 total annual scenario expenses",
-                        "$25,000 annual owner profit at 25% net margin",
-                        "Maintain 1 FT + 3 C with scheduled contractor coverage",
-                    ],
-                    [
-                        "Base case using the canonical four-person operating pod",
-                        "$450,000 commissions less $292,500 total annual scenario expenses",
-                        "$157,500 annual owner profit at 35.0% net margin",
-                        "Retain 1 FT + 3 C while controlling review backlog",
-                    ],
-                    [
-                        "Scaled case requiring the canonical six-person operating team",
-                        "$800,000 commissions less $440,000 total annual scenario expenses",
-                        "$360,000 annual owner profit at 45% net margin",
-                        "Expand to 2 FT + 4 C before exceeding capacity",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": (
-        "Automate the movement of verified evidence, not the judgment that turns a machine into a defensible transaction."
-    ),
-    "diagram_id": "diag-02",
-    "action_checklist": [
-        "Assign the seven mapped plays to the broker and three contractors, with explicit coverage hours and exception ownership.",
-        "Create versioned equipment records linking seller authority, serial evidence, inspected facts, availability, buyer requirements, and commission agreements.",
-        "Deploy authenticated webhook intake, durable event storage, idempotent processing, and an outbox with provider-status reconciliation.",
-        "Benchmark 1,000 representative repetitive-work minutes and count review plus repair time before claiming a 70% automation result.",
-        "Pilot constraint-based inventory matching and permissioned buyer alerts with reviewed facts, freshness checks, suppression, and bounded model spending.",
-        "Reconcile collected commissions and complete scenario expenses weekly while testing lien, export, settlement, and outage recovery procedures.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "UCC 9-315 — Secured Party's Rights on Disposition of Collateral and in Proceeds",
-            "url": "https://www.law.cornell.edu/ucc/9/9-315",
-            "relevance": (
-                "Explains continuation of security interests after disposition and "
-                "relevant exceptions; apply the governing state's enactment when "
-                "documenting equipment collateral releases."
-            ),
-        },
-        {
-            "title": "UCC 9-513 — Termination Statement",
-            "url": "https://www.law.cornell.edu/ucc/9/9-513",
-            "relevance": (
-                "Defines termination-statement requirements in specified circumstances; "
-                "distinguish complete termination from an authorized release of "
-                "particular equipment under the applicable state enactment."
-            ),
-        },
-        {
-            "title": "UCC 2-313 — Express Warranties by Affirmation, Promise, Description, Sample",
-            "url": "https://www.law.cornell.edu/ucc/2/2-313",
-            "relevance": (
-                "Supports review of seller-authorized descriptions, condition claims, "
-                "and factual promises that may become part of the bargain under "
-                "the governing state's sales law."
-            ),
-        },
-        {
-            "title": "UCC 2-316 — Exclusion or Modification of Warranties",
-            "url": "https://www.law.cornell.edu/ucc/2/2-316",
-            "relevance": (
-                "Identifies requirements and limitations relevant to equipment "
-                "warranty exclusions; align negotiated terms with the applicable "
-                "state enactment and actual representations."
-            ),
-        },
-        {
-            "title": "15 U.S.C. 7704 — Other Protections for Users of Commercial Electronic Mail",
-            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
-            "relevance": (
-                "Governs commercial email routing information, subject lines, "
-                "identification, postal addresses, opt-out mechanisms, and "
-                "suppression obligations for buyer-alert and outbound programs."
-            ),
-        },
-        {
-            "title": "15 CFR 734.3 — Items Subject to the EAR",
-            "url": "https://www.ecfr.gov/current/title-15/subtitle-B/chapter-VII/subchapter-C/part-734/section-734.3",
-            "relevance": (
-                "Provides the scope analysis for determining whether equipment "
-                "and related items fall under the Export Administration Regulations."
-            ),
-        },
-        {
-            "title": "15 CFR 736.2 — General Prohibitions and Determination of Applicability",
-            "url": "https://www.ecfr.gov/current/title-15/subtitle-B/chapter-VII/subchapter-C/part-736/section-736.2",
-            "relevance": (
-                "Structures review of applicable export restrictions before "
-                "coordinating shipment, including transaction facts that cannot "
-                "be resolved by a model-generated classification alone."
-            ),
-        },
-    ],
-}
+CHAPTER_10 = {'id': 'Q10',
+ 'chapter_id': 'Q10',
+ 'chapter_number': 10,
+ 'question_number': 10,
+ 'slug': 'cnc-machines-shop-economics-used-purchases',
+ 'question_prompt': 'How do I understand CNC equipment applications and production economics before '
+                    'evaluating a used machine or a machine-shop opportunity?',
+ 'kicker': 'Q10 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'CNC Machines, Shop Economics, and Used Purchases',
+ 'subtitle': 'Swiss machining, mills and lathes, five-axis gear production, factory tours, China–America '
+             'cost comparisons, powered-machine checks, and a used-machine import certificate case',
+ 'layout_template': 'expert_commentary',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Practitioners from garage starts to high-volume bar-automatic shops agree that a '
+                      'CNC machine is worth only the paid hours it runs. Money Machines prices a new Haas '
+                      'SD10 at about $65,000 versus $27-30K used and models $96K to $160K in yearly '
+                      'revenue at $80 per machine-hour, warning those figures are revenue, not profit. '
+                      'Subi Industries, CoxManufacturing Company, and MICHAEL WANG converge on setup '
+                      'reduction and long runs as the margin lever. TITANS of CNC Machining demands a '
+                      'machine payment survivable for six months with zero customers, while '
+                      'MachineshopLaunchpad maps a garage launch on a $288.55-a-month Tormach PCNC 440 '
+                      "feeding Xometry jobs. Contend Capital's used-equipment rules: inspect only under "
+                      'power, interrogate rigging markups, and never buy a dark machine. The split: TITANS '
+                      'went big with an investor and four machines; MachineshopLaunchpad warns against '
+                      'over-leverage.',
+ 'key_metrics': [{'label': 'Haas SD10 Lathe New vs Used Price',
+                  'metric': 'Haas SD10 Lathe New vs Used Price',
+                  'value': 'About $65,000 new; about $27-30K used',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Entry price benchmark for a 6,000 RPM, 15 hp, 12-station-turret CNC lathe '
+                             'used to frame machine-hour economics',
+                  'source': 'Money Machines ([Q00deIDcQRw @ 00:00:15])'},
+                 {'label': 'US and Western Machine-Hour Rate (2026)',
+                  'metric': 'US and Western Machine-Hour Rate (2026)',
+                  'value': '$50-100 per machine-hour; $80/hr yields $96K / $128K / $160K at 1,200 / 1,600 '
+                           '/ 2,000 productive hours',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Annual revenue scenarios for one lathe, explicitly labeled revenue and not '
+                             'profit',
+                  'source': 'Money Machines ([Q00deIDcQRw @ 00:03:14])'},
+                 {'label': 'Machine Payment Survival Rule',
+                  'metric': 'Machine Payment Survival Rule',
+                  'value': 'Cover the machine payment for 6 months with zero customers',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Rule of thumb for sizing financed equipment so the shop survives losing '
+                             'every customer',
+                  'source': 'TITANS of CNC MACHINING ([bqSGI0L8zm0 @ 00:16:50])'},
+                 {'label': 'Remote Under-Power Inspection Coverage',
+                  'metric': 'Remote Under-Power Inspection Coverage',
+                  'value': 'FaceTime video or third-party tech gets you 90% there; can save a $2K trip',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Used-machine vetting by a 9-year machinist turned used-equipment salesman, '
+                             'who still recommends an in-person visit',
+                  'source': 'Contend Capital ([rLDoLaoEZ-A @ 00:03:33])'}],
+ 'sections': [{'heading': 'Section 1: The Practitioner Consensus',
+               'paragraphs': ['Every operator who talks money lands on the same point: the machine is not '
+                              'the asset, the hours it sells are. Money Machines frames a CNC lathe '
+                              "business as selling 'a component that solves a customer's manufacturing "
+                              "problem' [Q00deIDcQRw @ 00:01:08], names machine time and utilization as "
+                              "the real asset [Q00deIDcQRw @ 00:02:05], and puts it bluntly: 'A CNC lathe "
+                              "without orders is an expensive piece of industrial furniture' [Q00deIDcQRw "
+                              '@ 00:05:08]. Subi Industries reaches the same conclusion from the Chinese '
+                              'side. Once machinists spun off their own shops on used machines from the '
+                              '2000s onward, clustering spread the know-how and expertise stopped '
+                              "commanding a premium [iZJI5Y5wLUo @ 00:03:42]. The result: 'When everyone "
+                              "owns a machine, the real shortage isn't equipment anymore' [iZJI5Y5wLUo @ "
+                              '00:14:37], and owners take loss-making cash work just to keep spindles '
+                              'turning, feeding a race to the bottom [iZJI5Y5wLUo @ 00:18:37]. TITANS of '
+                              'CNC Machining supplies the counterweight: orders come from people, because '
+                              "'industry is all about relationships' [bqSGI0L8zm0 @ 00:08:53]. The "
+                              'operator takeaway is consistent across all three: price the order book '
+                              'before the iron, because an idle spindle drains cash whether it was bought '
+                              'new, used, or financed, and a fleet without a customer pipeline is dead '
+                              'weight on the floor.',
+                              'The second point of agreement is that setups, not spindle speed, decide '
+                              'margin. CoxManufacturing Company runs about 100 bar automatics on three '
+                              'shifts Monday through Friday plus some weekends, and stacks many operations '
+                              'into one setup because it eliminates handling and potential error '
+                              '[t9zRrkzjFbA @ 00:02:52]; its six-spindle machines are the cost-effective '
+                              'play for high-volume, low-complexity parts [t9zRrkzjFbA @ 00:03:12]. Subi '
+                              'Industries, describing Chinese shops that bill a few dollars an hour, '
+                              'explains why a rate that low can still pay: a long run amortizes the setup '
+                              '[iZJI5Y5wLUo @ 00:09:20], while frequent changeovers eat the profit '
+                              "[iZJI5Y5wLUo @ 00:10:38]. MICHAEL WANG puts machining time at 'the largest "
+                              "component, accounting for 30-50%' of cost and pushes single-setup, "
+                              'multi-face machining as a design lever [M5DbDgTFVeY @ 00:07:12]. TITANS of '
+                              'CNC Machining turns the same logic into a quoting weapon, contrasting a job '
+                              'run in 6 operations against one run in 2 [bqSGI0L8zm0 @ 00:23:30]. Across '
+                              'volume screw-machine work, Chinese contract shops, and a garage start, the '
+                              'playbook is identical: consolidate operations, chase long runs, and treat '
+                              'every changeover as unpaid time. Setup hours that never get billed are the '
+                              'leak every one of these operators plugs first.',
+                              'The third consensus is lean capitalization and respect for old iron. TITANS '
+                              'of CNC Machining tells new owners to keep the day job [bqSGI0L8zm0 @ '
+                              "00:17:22] and sets a hard affordability test: 'if you lost everyone you "
+                              "could still make that machine payment for 6 months without a problem' "
+                              '[bqSGI0L8zm0 @ 00:16:50]. MachineshopLaunchpad warns against over-leverage '
+                              "while disclosing that the speaker's own machine runs $1,726 a month over 32 "
+                              'months [BoQ7bHu0IZE @ 00:01:24], and the roadmap then scales to $50-100K '
+                              'machines once Xometry work is flowing [BoQ7bHu0IZE @ 00:13:24]. Subi '
+                              'Industries shows what happens when that discipline breaks at scale: shops '
+                              'financed machines in the 2020 boom [iZJI5Y5wLUo @ 00:12:28], then demand '
+                              'collapsed while the payments kept coming [iZJI5Y5wLUo @ 00:14:01]. On the '
+                              'equipment side, age alone does not disqualify a machine. MS Milling CNC '
+                              "still runs a Matsura bought in 1994 and says old machines 'hold great "
+                              "tolerance' [BCaYAmw5wQs @ 00:00:16], and the shop keeps three matching "
+                              '400mm Kiwas side by side for operators [BCaYAmw5wQs @ 00:02:31]. The shared '
+                              'rule: size the payment to survive six months of silence, start on the '
+                              'smallest machine that does the work, and judge iron by the tolerance it '
+                              'still holds rather than its build year.'],
+               'table': {'caption': 'Where the practitioners line up on CNC shop fundamentals',
+                         'headers': ['Consensus Point',
+                                     'What the Practitioners Report',
+                                     'Operator Implication',
+                                     'Expert Source'],
+                         'rows': [['Machine time is the real asset',
+                                   'Revenue comes from productive machine-hours sold, not from owning the '
+                                   'lathe itself',
+                                   'Book orders before buying; an idle lathe is expensive industrial '
+                                   'furniture',
+                                   'Money Machines ([Q00deIDcQRw @ 00:02:05])'],
+                                  ['Equipment is no longer the scarce input',
+                                   'Machinists spun off shops on used machines, so expertise lost its '
+                                   'premium',
+                                   'Compete on relationships, niche, and delivery rather than simply '
+                                   'owning machines',
+                                   'Subi Industries ([iZJI5Y5wLUo @ 00:03:42])'],
+                                  ['One setup beats many setups every time',
+                                   'Many operations in a single setup eliminate handling and potential '
+                                   'error',
+                                   'Route parts to collapse operations and cut handling between separate '
+                                   'machines',
+                                   'CoxManufacturing Company ([t9zRrkzjFbA @ 00:02:52])'],
+                                  ['Long runs carry cheap shop rates',
+                                   'A long run amortizes setup while frequent changeovers eat the profit',
+                                   'Quote short, high-changeover work with the full setup cost loaded in',
+                                   'Subi Industries ([iZJI5Y5wLUo @ 00:09:20])'],
+                                  ['Machine payment must survive zero customers',
+                                   'Rule of thumb: cover the machine payment for six months with no '
+                                   'customers',
+                                   'Size the financing to that reserve, not to an optimistic order '
+                                   'forecast',
+                                   'TITANS of CNC MACHINING ([bqSGI0L8zm0 @ 00:16:50])'],
+                                  ['Old machines can still hold tolerance',
+                                   'A Matsura bought in 1994 still runs, and old machines hold great '
+                                   'tolerance',
+                                   'Evaluate used iron on demonstrated accuracy, not on its build year '
+                                   'alone',
+                                   'MS Milling CNC ([BCaYAmw5wQs @ 00:00:16])'],
+                                  ['Relationships generate the order book',
+                                   'Industry is all about relationships, so credibility at your current '
+                                   'job matters',
+                                   'Treat your present employer, coworkers, and tool reps as the first '
+                                   'sales channel',
+                                   'TITANS of CNC MACHINING ([bqSGI0L8zm0 @ 00:08:53])']]}},
+              {'heading': 'Section 2: Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['Money Machines lays out the cleanest unit math. A new Haas SD10 runs about '
+                              '$65,000 and used units trade around $27-30K [Q00deIDcQRw @ 00:00:15], for a '
+                              'lathe with 6,000 RPM, 15 hp, and a 12-station turret. US and Western shop '
+                              'rates for 2026 sit at $50-100 per machine-hour [Q00deIDcQRw @ 00:03:14]. At '
+                              '$80 an hour, 1,200 productive hours yields $96K a year, 1,600 hours yields '
+                              "$128K, and 2,000 hours yields $160K, yet the speaker stresses 'those "
+                              "numbers are revenue scenarios, not profit' [Q00deIDcQRw @ 00:03:54]. "
+                              'Against that revenue sit material, tools, coolant, operators, setup, rent, '
+                              'inspection, financing, and downtime. A supplier-published automation case '
+                              'adds 3 extra hours per night and more than $60K in first-year profit, '
+                              'explicitly flagged as not universal [Q00deIDcQRw @ 00:04:33]. TITANS of CNC '
+                              'Machining attacks the setup line hardest: bill an NRE charge and engineer '
+                              'setups down from 30 hours to 4 [bqSGI0L8zm0 @ 00:22:17], because efficiency '
+                              'matters more than whether the shop charges $75 or $100 an hour. MICHAEL '
+                              'WANG lists depreciation at 20-40% of the cost stack and machining time at '
+                              '30-50% [M5DbDgTFVeY @ 00:07:12], so the two largest cost buckets are the '
+                              'machine itself and the time it spends cutting.',
+                              'On used purchases, Contend Capital brings in Anthony Sero, nine years as a '
+                              'machinist and programmer and nine more in sales, 90% of it used equipment '
+                              '[rLDoLaoEZ-A @ 00:00:47]. The money leaks in fees: thousands go to rigging, '
+                              "prep, and inspection [rLDoLaoEZ-A @ 00:01:28]. Sero's markup example is a "
+                              'machine at $10K loaded where the dealer bills the buyer $11.5K, then has '
+                              'the uninsured seller fork-load it; if it arrives damaged, liability is '
+                              "'muddy' [rLDoLaoEZ-A @ 00:02:08]. Buyers should demand maintenance history, "
+                              'material cut, and hours, ask whether the dealer has actually seen the '
+                              'machine, and ask whether a second dealer sits in the chain, because '
+                              "'there's no value in a secret' [rLDoLaoEZ-A @ 00:02:53]. The hard rule is "
+                              'to see it under power; a third-party tech or a FaceTime video gets you 90% '
+                              'there and can save a $2K trip, though an in-person visit still matters '
+                              '[rLDoLaoEZ-A @ 00:03:33]. Sellers hear the mirror image: never unplug, '
+                              'because a $50K repo machine collapses in value once it is off power '
+                              '[rLDoLaoEZ-A @ 00:04:33]. For used-machinery imports into India, SARK '
+                              'Engineers & COnsultants treats the physical nameplate serial as primary '
+                              'over PO and packing references [Qiyq7yhmD2o @ 00:02:57] and insists a 2005 '
+                              'build and 2026 retrofit be stated separately [Qiyq7yhmD2o @ 00:02:17].',
+                              'MachineshopLaunchpad prices a zero-experience garage start line by line. '
+                              'The machine is a Tormach PCNC 440, chosen for weight, power, and tooling '
+                              'cost, at $288.55 a month, half price for six months through Geneva Capital '
+                              'with code HALF2025, which the speaker says is not sponsored; approval ran '
+                              'on a W2 plus pay stubs [BoQ7bHu0IZE @ 00:01:24]. The kit: a 120V outlet, '
+                              'saw, machine skates, gauge blocks, a roughly $70 Vevor vise instead of '
+                              'Tormach vises that cracked at $300-400, a 12x8x2 granite plate because 6x6 '
+                              "is 'almost unusable,' a $95 indicator kit, a $189.99 quiet compressor, and "
+                              'a heater [BoQ7bHu0IZE @ 00:03:02]. Fusion 360 costs $85 a month; skip the '
+                              '$1,300 tool kit, since a $45 .177 drill runs about $6 at MSC and HSS '
+                              'tooling totals $100-300 [BoQ7bHu0IZE @ 00:09:21]. Revenue starts on '
+                              'Xometry: pass a test part, link the bank, and log payouts like $2,786.18 '
+                              "and $656.75; the premium group 'requires you to do 15 jobs with a score of "
+                              "above 85%,' with the speaker at 89 [BoQ7bHu0IZE @ 00:14:56]. TITANS of CNC "
+                              'Machining sets the quality floor: calipers, micrometers, and a gauge block '
+                              'set first, a CMM only in year three, plus a self-built quality manual '
+                              '[bqSGI0L8zm0 @ 00:16:04].'],
+               'table': {'caption': 'Hard numbers the practitioners quote for buying, pricing, and running '
+                                    'CNC equipment',
+                         'headers': ['Line Item',
+                                     'Figure Stated',
+                                     'How the Operator Uses It',
+                                     'Expert Source'],
+                         'rows': [['New versus used Haas SD10 lathe',
+                                   'About $65,000 new; used units around $27-30K',
+                                   'Benchmark used offers against the new price before negotiating any '
+                                   'deal',
+                                   'Money Machines ([Q00deIDcQRw @ 00:00:15])'],
+                                  ['Machine-hour revenue at $80 per hour',
+                                   '1,200 / 1,600 / 2,000 hours equals $96K / $128K / $160K',
+                                   'Treat as revenue scenarios only, then subtract every listed cost line',
+                                   'Money Machines ([Q00deIDcQRw @ 00:03:35])'],
+                                  ['Setup reduction backed by NRE charges',
+                                   'Setup time cut from 30 hours down to 4 hours',
+                                   'Bill engineering up front and drive repeat setups down hard',
+                                   'TITANS of CNC MACHINING ([bqSGI0L8zm0 @ 00:22:17])'],
+                                  ['Used-machine rigging markup by dealers',
+                                   'Machine $10K loaded; dealer bills the buyer $11.5K total',
+                                   'Ask who loads, who insures, and who carries damage liability',
+                                   'Contend Capital ([rLDoLaoEZ-A @ 00:02:08])'],
+                                  ['Remote inspection with the machine under power',
+                                   'FaceTime gets you 90% there and saves a $2K trip',
+                                   'Screen remotely first, then still visit in person to confirm',
+                                   'Contend Capital ([rLDoLaoEZ-A @ 00:03:33])'],
+                                  ['Garage starter machine monthly financing',
+                                   'Tormach PCNC 440 at $288.55 per month, half price six months',
+                                   'Qualify with a W2 plus pay stubs and avoid over-leverage',
+                                   'MachineshopLaunchpad ([BoQ7bHu0IZE @ 00:01:24])'],
+                                  ['Supplier credit for tooling and gauging',
+                                   'Western Tool $50K credit line; 30/60/90 terms on $20K comparator',
+                                   'Negotiate supplier terms to bridge slow 30-to-90-day customer payments',
+                                   'TITANS of CNC MACHINING ([bqSGI0L8zm0 @ 00:32:51])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Street-Level Edges From the Shop Floor',
+                           'body': 'Small moves the practitioners use to protect cash, find buyers, and '
+                                   'keep tooling from walking out the door.',
+                           'items': ['Ask customers to supply material, run an accountant and payroll '
+                                     'service from day one, pay taxes as you go, and expect 30-to-90-day '
+                                     'terms paid 30-45 days late [TITANS of CNC MACHINING — bqSGI0L8zm0 @ '
+                                     '00:31:00]',
+                                     'Work tool reps as referral sources and search LinkedIn for buyers; '
+                                     'landing SpaceX took 6 months of letters, chocolates, and flowers '
+                                     '[TITANS of CNC MACHINING — bqSGI0L8zm0 @ 00:26:31]',
+                                     'Sellers keep the machine under power through the sale; a repo '
+                                     'machine with a $50K market value collapses once it goes dark '
+                                     '[Contend Capital — rLDoLaoEZ-A @ 00:04:33]',
+                                     'Lock tooling behind a vending machine: JLCCNC uses facial '
+                                     'recognition to guard tens of thousands of dollars of tooling '
+                                     '[Strange Parts — YuSApjBn_zY @ 00:15:45], and MS Milling CNC stocks '
+                                     'reorderable tooling the same way [MS Milling CNC — BCaYAmw5wQs @ '
+                                     '00:03:42]']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Model the Machine-Hour Math',
+                              'action': 'Build revenue at $50-100 per hour across 1,200-2,000 productive '
+                                        'hours, then subtract every cost line.',
+                              'detail': 'Run $80/hr scenarios of $96K, $128K, and $160K, then deduct '
+                                        'material, tools, coolant, operators, setup, rent, inspection, '
+                                        'financing, and downtime, because these are revenue scenarios, not '
+                                        'profit [Money Machines — Q00deIDcQRw @ 00:03:54].'},
+                             {'step': 2,
+                              'title': 'Stress-Test the Payment',
+                              'action': 'Size financing so the machine payment survives six months with '
+                                        'zero customers.',
+                              'detail': 'Apply the six-month no-customer rule and keep the day job while '
+                                        'ramping [TITANS of CNC MACHINING — bqSGI0L8zm0 @ 00:16:50]; avoid '
+                                        'over-leverage, using a W2 plus pay stubs to qualify on an entry '
+                                        'machine like the $288.55-a-month PCNC 440 [MachineshopLaunchpad — '
+                                        'BoQ7bHu0IZE @ 00:01:24].'},
+                             {'step': 3,
+                              'title': 'Vet the Used Machine Under Power',
+                              'action': 'Interrogate history and the dealer chain, then inspect the '
+                                        'machine running before paying.',
+                              'detail': 'Demand maintenance history, material cut, and hours, confirm the '
+                                        'dealer has seen the machine and is not brokering through a second '
+                                        'dealer, and inspect under power via third-party tech or FaceTime '
+                                        'before an in-person visit [Contend Capital — rLDoLaoEZ-A @ '
+                                        '00:03:33].'},
+                             {'step': 4,
+                              'title': 'Load the First Paying Jobs',
+                              'action': 'Pass the Xometry test part, link payouts, and build a scorecard '
+                                        'above 85%.',
+                              'detail': 'Complete 15 jobs scoring above 85% to reach the Xometry premium '
+                                        'group [MachineshopLaunchpad — BoQ7bHu0IZE @ 00:14:56]; chase a '
+                                        'first real check the way TITANS did with $14,000 for paintball '
+                                        'parts in Feb 2005 [TITANS of CNC MACHINING — bqSGI0L8zm0 @ '
+                                        '00:13:30].'}]},
+              {'title': 'Section 3: Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The sharpest split is how big to swing on day one. TITANS of CNC MACHINING '
+                              'says a garage start with one machine is possible, then admits the host did '
+                              'the opposite: investor Jeff Weaver, four machines, 25 customers, sleeping '
+                              'in the shop, and a first check of $14,000 for paintball parts in February '
+                              '2005 [bqSGI0L8zm0 @ 00:12:33]. The brake on that aggression is a payment '
+                              'test: if every customer vanished, the shop should still cover the machine '
+                              'note for six months without a problem [bqSGI0L8zm0 @ 00:16:50]. '
+                              'MachineshopLaunchpad runs the lean version, picking a Tormach PCNC 440 for '
+                              'weight, power and tooling cost, warning against over-leverage, and putting '
+                              "numbers on it: the host's own machine runs $1,726 a month over 32 months, "
+                              'while the 440 sits at $288.55 a month, half price for six months through '
+                              'Geneva Capital [BoQ7bHu0IZE @ 00:01:24]. Contend Capital adds a third lane: '
+                              'startups without a two-year history can still get financed, with the lender '
+                              'steering buyers toward dealers [rLDoLaoEZ-A @ 00:05:26]. Both shop builders '
+                              'converge on keeping the day job while the garage machine proves itself, but '
+                              'they part ways on whether outside money and multiple spindles belong in the '
+                              'opening move or only after the first jobs clear.',
+                              'On pricing, the practitioners disagree about which number actually matters. '
+                              'Money Machines anchors on market rate, quoting $50 to $100 per machine-hour '
+                              'across US and Western markets for 2026 [Q00deIDcQRw @ 00:03:14]. TITANS of '
+                              'CNC MACHINING argues the hourly figure is the wrong lever: a shop billing '
+                              '$75 that runs six operations can beat one billing $100 that runs two, and '
+                              'an upfront NRE charge can cut setup from 30 hours to 4 [bqSGI0L8zm0 @ '
+                              '00:22:53]. Subi Industries shows the extreme end, where Chinese shops '
+                              'reportedly bill a few dollars an hour with barely any profit, and explains '
+                              'that a low price is survivable only on a long run that amortizes setup, '
+                              'while frequent changeovers eat the margin [iZJI5Y5wLUo @ 00:09:20]. '
+                              'CoxManufacturing Company lands on the volume side, calling six-spindle '
+                              'machines the cost-effective option for high-volume, low-complexity parts '
+                              'and running about 100 bar automatics on three shifts [t9zRrkzjFbA @ '
+                              '00:03:12]. The operator takeaway is that rate shopping and setup '
+                              'engineering are competing playbooks: low or mid-market rates only hold when '
+                              'run length, operations per setup, and spindle count are engineered around '
+                              'the part rather than around the hourly sticker printed on the quote.',
+                              'Automation and axis count split the room too, and each argument maps '
+                              'directly onto what a buyer should actually pay for in a used machine. '
+                              'TITANS of CNC MACHINING tells new owners to become experts in machining and '
+                              'push every toolpath to its highest level before buying automation '
+                              '[bqSGI0L8zm0 @ 00:03:45]. On the shop floor, Strange Parts found JLCCNC '
+                              'running 75 machines where simple 3-axis units handle 80% of jobs, with only '
+                              'one 5-axis machine on site and a robot arm still under test rather than in '
+                              "production [YuSApjBn_zY @ 00:00:15]. That collides with the TITANS host's "
+                              'verdict at Tongtai, a builder holding in-house spindles within 3 microns, '
+                              'that three-axis machines are almost obsolete and that engineers must learn '
+                              'manufacturing to design cost-effectively [C2UEluRNT-M @ 00:06:34]. MICHAEL '
+                              'WANG splits the difference, calling 3-axis the value workhorse and placing '
+                              '3+2, 4-axis and then 5-axis at the high end of the price and capability '
+                              'ladder [M5DbDgTFVeY @ 00:03:26]. For anyone brokering iron, that split '
+                              'matters: a used 3-axis machine still lands in the bucket most floors fill '
+                              'first, while 5-axis capacity sells on single-setup capability rather than '
+                              'on spindle count alone.'],
+               'table': {'caption': 'Competing playbooks practitioners run on scale, pricing, automation, '
+                                    'axis count, quality systems and machine age',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['How big to start on day one',
+                                   'Investor money, four machines, 25 customers, owner sleeping in the '
+                                   'shop',
+                                   'One Tormach PCNC 440, avoid over-leverage, keep the monthly note small',
+                                   'TITANS of CNC MACHINING ([bqSGI0L8zm0 @ 00:12:33]); '
+                                   'MachineshopLaunchpad ([BoQ7bHu0IZE @ 00:01:24])'],
+                                  ['Which pricing lever wins the job',
+                                   'Bill $50 to $100 per machine-hour in US and Western markets',
+                                   'Win on efficiency: $75 running six operations beats $100 running two',
+                                   'Money Machines ([Q00deIDcQRw @ 00:03:14]); TITANS of CNC MACHINING '
+                                   '([bqSGI0L8zm0 @ 00:22:53])'],
+                                  ['How low rates stay alive at all',
+                                   'Few-dollar Chinese hourly rates survive only on long runs amortizing '
+                                   'setup',
+                                   'Six-spindle bar automatics are the cost-effective route for '
+                                   'high-volume, low-complexity parts',
+                                   'Subi Industries ([iZJI5Y5wLUo @ 00:09:20]); CoxManufacturing Company '
+                                   '([t9zRrkzjFbA @ 00:03:12])'],
+                                  ['When to spend money on automation',
+                                   'Master machining and every toolpath before spending money on '
+                                   'automation',
+                                   'Supplier case: automation added three nightly hours and $60K-plus '
+                                   'first-year profit, flagged not universal',
+                                   'TITANS of CNC MACHINING ([bqSGI0L8zm0 @ 00:03:45]); Money Machines '
+                                   '([Q00deIDcQRw @ 00:04:33])'],
+                                  ['Whether three-axis machines still earn',
+                                   'Simple 3-axis machines run 80% of JLCCNC jobs across 75 machines',
+                                   'Tongtai visit host calls three-axis almost obsolete for modern '
+                                   'cost-effective engineering',
+                                   'Strange Parts ([YuSApjBn_zY @ 00:00:15]); TITANS of CNC MACHINING '
+                                   '([C2UEluRNT-M @ 00:06:34])'],
+                                  ['How much inspection system you need',
+                                   'Calipers, micrometers and gauge blocks first; CMM in year three; '
+                                   'AS9100 optional',
+                                   'Overseas inspector, photo dossier, independent CE review and signed '
+                                   'certificate for imports',
+                                   'TITANS of CNC MACHINING ([bqSGI0L8zm0 @ 00:16:04]); SARK Engineers & '
+                                   'COnsultants ([Qiyq7yhmD2o @ 00:01:30])'],
+                                  ['Whether old iron is still worth buying',
+                                   'Matsura bought in 1994 still holds great tolerance on castings work',
+                                   '2005 rotor grinder refit in 2026 rated for 10 years of residual life',
+                                   'MS Milling CNC ([BCaYAmw5wQs @ 00:00:16]); SARK Engineers & '
+                                   'COnsultants ([Qiyq7yhmD2o @ 00:05:09])']]}},
+              {'title': 'Section 4: Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['Contend Capital opens with the hardest rule in used iron: do not buy a '
+                              'machine that is not under power, because market value does not apply to a '
+                              'machine sitting in a dark warehouse corner [rLDoLaoEZ-A @ 00:00:00]. The '
+                              'same trap hits sellers: in a repo, a $50K market value collapses once the '
+                              'machine is off power, so never unplug it before the sale [rLDoLaoEZ-A @ '
+                              '00:04:33]. Guest Anthony Sero, nine years as a machinist and programmer and '
+                              'nine in sales that ran about 90% used equipment, shows where fees hide: a '
+                              'machine priced at $10K loaded is billed to the buyer at $11.5K, then the '
+                              'dealer has the uninsured seller fork-load it, and if it arrives damaged the '
+                              'liability is muddy [rLDoLaoEZ-A @ 00:02:08]. SARK Engineers & COnsultants '
+                              'document the paperwork version on a 2005 European rotor grinder refit in '
+                              "2026: writing 'Built in 2026' misleads customs, the two dates must be "
+                              'stated separately, and the physical nameplate serial outranks PO, project '
+                              'and packing references [Qiyq7yhmD2o @ 00:02:17]. Each trap turns a '
+                              'clean-looking deal into a loss before the machine ever cuts its first chip '
+                              'on your floor.',
+                              'The economics traps start with confusing revenue and profit. Money Machines '
+                              'runs an $80-an-hour SD10 through 1,200, 1,600 and 2,000 productive hours '
+                              'for $96K, $128K and $160K, then warns that those numbers are revenue '
+                              'scenarios, not profit [Q00deIDcQRw @ 00:03:54]. The cost stack it lists '
+                              'runs material, tools, coolant, operators, setup, rent, inspection, '
+                              'financing and downtime, and its bluntest line is that a CNC lathe without '
+                              'orders is an expensive piece of industrial furniture [Q00deIDcQRw @ '
+                              '00:05:08]. Subi Industries shows the leverage version at scale: shops '
+                              'financed machines in the 2020 boom, demand collapsed, and the payments kept '
+                              'coming, pushing owners to accept loss-making cash work just to avoid idle '
+                              'spindles, which becomes a race to the bottom [iZJI5Y5wLUo @ 00:14:01]. '
+                              'TITANS of CNC MACHINING names the same failure from the bidding side, '
+                              'warning that underbidding or scrap can literally put a shop out of '
+                              'business, and that customers stretch from 30 to 90-day terms and still pay '
+                              '30 to 45 days late [bqSGI0L8zm0 @ 00:24:39]. Price the job on true cost, '
+                              'carry cash for the lag, and size the note to survive empty months, as the '
+                              'TITANS six-month payment rule demands.',
+                              'Shop-floor failures are smaller per incident but compound fast across a '
+                              'year of jobs. TITANS of CNC MACHINING watched a Haas VF-11 at 15,000 RPM '
+                              'stall on a half-inch pipe tap, forcing a switch to threadmilling; the '
+                              'lesson drawn is to match the machine to the material before buying it '
+                              '[bqSGI0L8zm0 @ 00:14:36]. Strange Parts saw at JLCCNC that sandblasting '
+                              'changes part dimensions, a trap when blasting comes after the tolerance is '
+                              'cut, while hand polishing stays a manual step [YuSApjBn_zY @ 00:19:38]. '
+                              'MachineshopLaunchpad flags cheap-kit traps: Tormach vises that cracked and '
+                              'cost $300 to $400 versus a roughly $70 Vevor vise, and a 6x6 granite plate '
+                              'that is almost unusable next to a 12x8x2, plus a $189.99 quiet compressor '
+                              'and a heater for the garage [BoQ7bHu0IZE @ 00:03:02]. Money Machines adds '
+                              'the risks behind the revenue math: no guaranteed customers, skills gaps, '
+                              'and hazards from chips and fluids [Q00deIDcQRw @ 00:05:45]. Each of these '
+                              'is cheap to avoid upfront and expensive to discover mid-job, which is why '
+                              'the practitioners teach them as checks before money moves rather than as '
+                              'lessons paid for after scrap and missed ship dates.'],
+               'table': {'caption': 'Firsthand failure modes with the economics check each practitioner '
+                                    'attaches to it',
+                         'headers': ['Failure Mode',
+                                     'What Happened or Was Measured',
+                                     'Economics Check',
+                                     'Expert Source'],
+                         'rows': [['Buying a dead machine sight unseen',
+                                   'Machine sitting unpowered in a dark warehouse corner carries no market '
+                                   'value',
+                                   'Demand to see it cutting under power before any deposit moves',
+                                   'Contend Capital ([rLDoLaoEZ-A @ 00:00:00])'],
+                                  ['Seller unplugs a repo machine early',
+                                   'A $50K market value collapses once the repo machine goes off power',
+                                   'Keep the machine powered and demonstrable until the moment it ships',
+                                   'Contend Capital ([rLDoLaoEZ-A @ 00:04:33])'],
+                                  ['Hidden rigging markup and muddy liability',
+                                   '$10K loaded machine billed at $11.5K, then an uninsured seller '
+                                   'fork-loads it',
+                                   'Ask who rigs, who insures, and whether a second dealer is brokering',
+                                   'Contend Capital ([rLDoLaoEZ-A @ 00:02:08])'],
+                                  ['Wrong build date on an import',
+                                   "Writing 'Built in 2026' on a 2005 machine misleads customs at import",
+                                   'State build and retrofit dates separately; the physical nameplate '
+                                   'serial is primary',
+                                   'SARK Engineers & COnsultants ([Qiyq7yhmD2o @ 00:02:17])'],
+                                  ['Treating revenue scenarios as real profit',
+                                   '$96K to $160K at $80 an hour are revenue scenarios, not profit',
+                                   'Subtract material, tools, coolant, operators, setup, rent, inspection, '
+                                   'financing and downtime',
+                                   'Money Machines ([Q00deIDcQRw @ 00:03:54])'],
+                                  ['Financing machines into a demand boom',
+                                   'Shops financed machines in 2020, demand collapsed, and payments kept '
+                                   'coming due',
+                                   'Refuse loss-making cash work that starts a race to the bottom',
+                                   'Subi Industries ([iZJI5Y5wLUo @ 00:14:01])'],
+                                  ['Underbidding jobs or eating scrap',
+                                   'Underbidding or scrap can literally put a shop out of business',
+                                   'Charge NRE, cut setup hours, and price on efficiency instead of rate',
+                                   'TITANS of CNC MACHINING ([bqSGI0L8zm0 @ 00:24:39])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Four checks before money moves on a CNC machine',
+                           'body': 'Every gate below comes from a loss, near-miss or hard rule a '
+                                   'practitioner reported on camera. Clear all four before signing a '
+                                   'purchase, a note, or an import declaration.',
+                           'items': ['Do not wire money on a machine you have not seen running under '
+                                     'power; a third-party tech or FaceTime video gets you 90% there and '
+                                     'can save a $2K trip, but still visit in person [Contend Capital — '
+                                     'rLDoLaoEZ-A @ 00:03:33].',
+                                     'Run the six-month test: if you lost every customer, you should still '
+                                     'make the machine payment for 6 months without a problem [TITANS of '
+                                     'CNC MACHINING — bqSGI0L8zm0 @ 00:16:50].',
+                                     'Net every hourly revenue scenario against material, tools, coolant, '
+                                     'operators, setup, rent, inspection, financing and downtime before '
+                                     'calling it profit [Money Machines — Q00deIDcQRw @ 00:04:15].',
+                                     'On imported used iron, keep build and retrofit dates separate and '
+                                     'anchor machine identity to the physical nameplate serial over PO and '
+                                     'packing references [SARK Engineers & COnsultants — Qiyq7yhmD2o @ '
+                                     '00:02:57].']}}],
+ 'pull_quote': '"A CNC lathe without orders is an expensive piece of industrial furniture." — attributed '
+               'to Money Machines (Q00deIDcQRw @ 00:05:08).',
+ 'diagram_id': 'diag-02',
+ 'action_checklist': ['Before bidding on a used machine, ask for maintenance history, material cut and '
+                      'hours, whether the dealer has seen it, and whether a second dealer is brokering it '
+                      '[Contend Capital — rLDoLaoEZ-A @ 00:02:53].',
+                      'Hire an accountant and a payroll service from day one and pay taxes as you go '
+                      '[TITANS of CNC MACHINING — bqSGI0L8zm0 @ 00:30:09].',
+                      'Negotiate supplier credit and 30/60/90 terms on big tooling buys, the way Western '
+                      'Tool extended a $50K credit line and a $20K comparator was termed out [TITANS of '
+                      'CNC MACHINING — bqSGI0L8zm0 @ 00:32:51].',
+                      'Form the LLC and EIN through LegalZoom, then open a business bank account before '
+                      'taking paid work [MachineshopLaunchpad — BoQ7bHu0IZE @ 00:12:31].',
+                      'Pass the Xometry test part, link the bank for payouts, and build toward the premium '
+                      "group's 15 jobs scored above 85% [MachineshopLaunchpad — BoQ7bHu0IZE @ 00:14:56].",
+                      'Work tooling reps as referral sources for new customers, then run LinkedIn buyer '
+                      'searches [TITANS of CNC MACHINING — bqSGI0L8zm0 @ 00:25:29].'],
+ 'statutory_citations': [{'title': "Contend Capital — Don't Buy a Used CNC Machine Until You Watch This "
+                                   '[00:00:00]',
+                          'url': 'https://www.youtube.com/watch?v=rLDoLaoEZ-A&t=0s',
+                          'relevance': 'Primary practitioner testimony on under-power inspection, rigging '
+                                       'markups, repo value collapse and used-machine financing.'},
+                         {'title': 'TITANS of CNC MACHINING — TOP 10 | Build Your OWN Thriving CNC Machine '
+                                   'Shop [00:16:50]',
+                          'url': 'https://www.youtube.com/watch?v=bqSGI0L8zm0&t=1010s',
+                          'relevance': 'Primary practitioner testimony on the six-month machine payment '
+                                       'rule, efficiency pricing, underbidding risk and cash flow terms.'},
+                         {'title': 'Money Machines — The Money Behind a CNC Lathe Machine [00:03:54]',
+                          'url': 'https://www.youtube.com/watch?v=Q00deIDcQRw&t=234s',
+                          'relevance': 'Primary practitioner testimony on machine-hour rates, revenue '
+                                       'versus profit, and the full CNC lathe cost stack.'},
+                         {'title': 'Subi Industries — Why CNC Machining Is So Cheap in China — But So '
+                                   'Expensive in America [00:14:01]',
+                          'url': 'https://www.youtube.com/watch?v=iZJI5Y5wLUo&t=841s',
+                          'relevance': 'Primary practitioner testimony on financed-machine busts, setup '
+                                       'amortization and race-to-the-bottom pricing.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'TwUdZJ1n_ps',
+                       'title': 'Inside The Heavy Duty CNC Machining & Forging Plant. Modern Heavy '
+                                'Machinery & Equipment In Working',
+                       'channel': 'YouCanDo TV',
+                       'author': 'YouCanDo TV',
+                       'text': 'A valve that fails the leak test goes back for disassembly.',
+                       'tip': 'A valve that fails the leak test goes back for disassembly.',
+                       'timestamp': 2417,
+                       'timestamp_seconds': 2417,
+                       'timestamp_label': '[00:40:17]',
+                       'url': 'https://www.youtube.com/watch?v=TwUdZJ1n_ps&t=2417s',
+                       'markdown': '[00:40:17](https://www.youtube.com/watch?v=TwUdZJ1n_ps&t=2417s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'BCaYAmw5wQs',
+                       'title': 'CNC Machine Shop Tour - 80k Square Feet of Manufacturing - Superior '
+                                'Technology, Inc',
+                       'channel': 'MS Milling CNC',
+                       'author': 'MS Milling CNC',
+                       'text': 'The Matsura was bought in 1994, and these old machines hold great '
+                               'tolerance.',
+                       'tip': 'The Matsura was bought in 1994, and these old machines hold great '
+                              'tolerance.',
+                       'timestamp': 16,
+                       'timestamp_seconds': 16,
+                       'timestamp_label': '[00:00:16]',
+                       'url': 'https://www.youtube.com/watch?v=BCaYAmw5wQs&t=16s',
+                       'markdown': '[00:00:16](https://www.youtube.com/watch?v=BCaYAmw5wQs&t=16s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 't9zRrkzjFbA',
+                       'title': 'Cox Manufacturing Virtual Shop Tour: Exploring CNC Swiss and Screw '
+                                'Machined Products & Services',
+                       'channel': 'CoxManufacturing Company',
+                       'author': 'CoxManufacturing Company',
+                       'text': 'Six-spindle machines are the cost-effective option for high-volume, '
+                               'low-complexity parts.',
+                       'tip': 'Six-spindle machines are the cost-effective option for high-volume, '
+                              'low-complexity parts.',
+                       'timestamp': 192,
+                       'timestamp_seconds': 192,
+                       'timestamp_label': '[00:03:12]',
+                       'url': 'https://www.youtube.com/watch?v=t9zRrkzjFbA&t=192s',
+                       'markdown': '[00:03:12](https://www.youtube.com/watch?v=t9zRrkzjFbA&t=192s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Q00deIDcQRw',
+                       'title': 'The Money Behind a CNC Lathe Machine',
+                       'channel': 'Money Machines',
+                       'author': 'Money Machines',
+                       'text': 'A CNC lathe without orders is an expensive piece of industrial furniture.',
+                       'tip': 'A CNC lathe without orders is an expensive piece of industrial furniture.',
+                       'timestamp': 308,
+                       'timestamp_seconds': 308,
+                       'timestamp_label': '[00:05:08]',
+                       'url': 'https://www.youtube.com/watch?v=Q00deIDcQRw&t=308s',
+                       'markdown': '[00:05:08](https://www.youtube.com/watch?v=Q00deIDcQRw&t=308s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'h9RutWf9kWM',
+                       'title': 'China CNC Machine And Tool Expo 2026 Walkthrough | +100 Suppliers and '
+                                'Factory Newest Products',
+                       'channel': 'China Expo And Sourcing with Abed',
+                       'author': 'China Expo And Sourcing with Abed',
+                       'text': 'Bright Tooth makes shrink-fit and hydraulic toolholders as an OEM for '
+                               'world brands and exports to Europe and the US.',
+                       'tip': 'Bright Tooth makes shrink-fit and hydraulic toolholders as an OEM for world '
+                              'brands and exports to Europe and the US.',
+                       'timestamp': 4253,
+                       'timestamp_seconds': 4253,
+                       'timestamp_label': '[01:10:53]',
+                       'url': 'https://www.youtube.com/watch?v=h9RutWf9kWM&t=4253s',
+                       'markdown': '[01:10:53](https://www.youtube.com/watch?v=h9RutWf9kWM&t=4253s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'iZJI5Y5wLUo',
+                       'title': 'Why CNC Machining Is So Cheap in China — But So Expensive in America',
+                       'channel': 'Subi Industries',
+                       'author': 'Subi Industries',
+                       'text': "For a CNC shop, a low price isn't always fatal.",
+                       'tip': "For a CNC shop, a low price isn't always fatal.",
+                       'timestamp': 599,
+                       'timestamp_seconds': 599,
+                       'timestamp_label': '[00:09:59]',
+                       'url': 'https://www.youtube.com/watch?v=iZJI5Y5wLUo&t=599s',
+                       'markdown': '[00:09:59](https://www.youtube.com/watch?v=iZJI5Y5wLUo&t=599s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'iZJI5Y5wLUo',
+                       'title': 'Why CNC Machining Is So Cheap in China — But So Expensive in America',
+                       'channel': 'Subi Industries',
+                       'author': 'Subi Industries',
+                       'text': "When everyone owns a machine, the real shortage isn't equipment anymore.",
+                       'tip': "When everyone owns a machine, the real shortage isn't equipment anymore.",
+                       'timestamp': 877,
+                       'timestamp_seconds': 877,
+                       'timestamp_label': '[00:14:37]',
+                       'url': 'https://www.youtube.com/watch?v=iZJI5Y5wLUo&t=877s',
+                       'markdown': '[00:14:37](https://www.youtube.com/watch?v=iZJI5Y5wLUo&t=877s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'IyxOJ_r0HP4',
+                       'title': 'World’s Largest Manufacturer Runs 600 CNC Machines',
+                       'channel': 'TITANS of CNC MACHINING',
+                       'author': 'TITANS of CNC MACHINING',
+                       'text': 'Superalloy runs more than 600 YCM machines, and some of them are 20 years '
+                               'old.',
+                       'tip': 'Superalloy runs more than 600 YCM machines, and some of them are 20 years '
+                              'old.',
+                       'timestamp': 183,
+                       'timestamp_seconds': 183,
+                       'timestamp_label': '[00:03:03]',
+                       'url': 'https://www.youtube.com/watch?v=IyxOJ_r0HP4&t=183s',
+                       'markdown': '[00:03:03](https://www.youtube.com/watch?v=IyxOJ_r0HP4&t=183s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'aJhOAz2q35Q',
+                       'title': 'How Heavy Duty CNC Machines Make Huge Gears. High-performance 5-axis '
+                                'Machining Center',
+                       'channel': 'YouCanDo TV',
+                       'author': 'YouCanDo TV',
+                       'text': 'The gear is split into four segments, and that segmented approach costs '
+                               'more.',
+                       'tip': 'The gear is split into four segments, and that segmented approach costs '
+                              'more.',
+                       'timestamp': 1004,
+                       'timestamp_seconds': 1004,
+                       'timestamp_label': '[00:16:44]',
+                       'url': 'https://www.youtube.com/watch?v=aJhOAz2q35Q&t=1004s',
+                       'markdown': '[00:16:44](https://www.youtube.com/watch?v=aJhOAz2q35Q&t=1004s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'YuSApjBn_zY',
+                       'title': 'Inside a Chinese CNC Factory',
+                       'channel': 'Strange Parts',
+                       'author': 'Strange Parts',
+                       'text': 'Sandblasting changes the dimensions of the part.',
+                       'tip': 'Sandblasting changes the dimensions of the part.',
+                       'timestamp': 1178,
+                       'timestamp_seconds': 1178,
+                       'timestamp_label': '[00:19:38]',
+                       'url': 'https://www.youtube.com/watch?v=YuSApjBn_zY&t=1178s',
+                       'markdown': '[00:19:38](https://www.youtube.com/watch?v=YuSApjBn_zY&t=1178s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'bqSGI0L8zm0',
+                       'title': 'TOP 10 | Build Your OWN Thriving CNC Machine Shop',
+                       'channel': 'TITANS of CNC MACHINING',
+                       'author': 'TITANS of CNC MACHINING',
+                       'text': 'A good rule of thumb is if you lost all your customers, if you lost '
+                               'everyone, you could still make that machine payment for 6 months without a '
+                               'problem.',
+                       'tip': 'A good rule of thumb is if you lost all your customers, if you lost '
+                              'everyone, you could still make that machine payment for 6 months without a '
+                              'problem.',
+                       'timestamp': 1010,
+                       'timestamp_seconds': 1010,
+                       'timestamp_label': '[00:16:50]',
+                       'url': 'https://www.youtube.com/watch?v=bqSGI0L8zm0&t=1010s',
+                       'markdown': '[00:16:50](https://www.youtube.com/watch?v=bqSGI0L8zm0&t=1010s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'C2UEluRNT-M',
+                       'title': 'TONGTAI: The Fastest Super CNC Machines I’ve Ever Seen',
+                       'channel': 'TITANS of CNC MACHINING',
+                       'author': 'TITANS of CNC MACHINING',
+                       'text': 'The main tolerance for all the people in Tongtai is to get down to three '
+                               'micron level.',
+                       'tip': 'The main tolerance for all the people in Tongtai is to get down to three '
+                              'micron level.',
+                       'timestamp': 343,
+                       'timestamp_seconds': 343,
+                       'timestamp_label': '[00:05:43]',
+                       'url': 'https://www.youtube.com/watch?v=C2UEluRNT-M&t=343s',
+                       'markdown': '[00:05:43](https://www.youtube.com/watch?v=C2UEluRNT-M&t=343s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'rLDoLaoEZ-A',
+                       'title': "Don't Buy a Used CNC Machine Until You Watch This",
+                       'channel': 'Contend Capital',
+                       'author': 'Contend Capital',
+                       'text': "Do not buy a machine that's not under power; market value does not apply "
+                               'to a machine in a dark little warehouse sitting in a corner.',
+                       'tip': "Do not buy a machine that's not under power; market value does not apply to "
+                              'a machine in a dark little warehouse sitting in a corner.',
+                       'timestamp': 0,
+                       'timestamp_seconds': 0,
+                       'timestamp_label': '[00:00:00]',
+                       'url': 'https://www.youtube.com/watch?v=rLDoLaoEZ-A&t=0s',
+                       'markdown': '[00:00:00](https://www.youtube.com/watch?v=rLDoLaoEZ-A&t=0s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Qiyq7yhmD2o',
+                       'title': 'Chartered Engineer Certificate | Used Machinery Import | CEC Case Study: '
+                                '2005 Machine, 2026 Retrofit',
+                       'channel': 'SARK Engineers & COnsultants',
+                       'author': 'SARK Engineers & COnsultants',
+                       'text': 'The inspection report recorded an expected residual life of 10 years.',
+                       'tip': 'The inspection report recorded an expected residual life of 10 years.',
+                       'timestamp': 309,
+                       'timestamp_seconds': 309,
+                       'timestamp_label': '[00:05:09]',
+                       'url': 'https://www.youtube.com/watch?v=Qiyq7yhmD2o&t=309s',
+                       'markdown': '[00:05:09](https://www.youtube.com/watch?v=Qiyq7yhmD2o&t=309s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'M5DbDgTFVeY',
+                       'title': 'CNC Machining Explained: How Precision Parts Are Made',
+                       'channel': 'MICHAEL WANG',
+                       'author': 'MICHAEL WANG',
+                       'text': 'Machining time is the largest component, accounting for 30 to 50%.',
+                       'tip': 'Machining time is the largest component, accounting for 30 to 50%.',
+                       'timestamp': 432,
+                       'timestamp_seconds': 432,
+                       'timestamp_label': '[00:07:12]',
+                       'url': 'https://www.youtube.com/watch?v=M5DbDgTFVeY&t=432s',
+                       'markdown': '[00:07:12](https://www.youtube.com/watch?v=M5DbDgTFVeY&t=432s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ufN_5j5epkw',
+                       'title': 'How CNC Machines Manufacture PARFECT Aircraft Parts ✈️ | Inside a '
+                                '$Million Aerospace Factory',
+                       'channel': 'IndustrialX',
+                       'author': 'IndustrialX',
+                       'text': 'Titanium parts demand carefully controlled cutting because the material is '
+                               'strong and difficult to machine.',
+                       'tip': 'Titanium parts demand carefully controlled cutting because the material is '
+                              'strong and difficult to machine.',
+                       'timestamp': 190,
+                       'timestamp_seconds': 190,
+                       'timestamp_label': '[00:03:10]',
+                       'url': 'https://www.youtube.com/watch?v=ufN_5j5epkw&t=190s',
+                       'markdown': '[00:03:10](https://www.youtube.com/watch?v=ufN_5j5epkw&t=190s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'BoQ7bHu0IZE',
+                       'title': 'Starting A Machine Shop In 2025: Zero Experience Guide',
+                       'channel': 'MachineshopLaunchpad',
+                       'author': 'MachineshopLaunchpad',
+                       'text': 'The premium group requires you to do 15 jobs with a score of above 85%.',
+                       'tip': 'The premium group requires you to do 15 jobs with a score of above 85%.',
+                       'timestamp': 896,
+                       'timestamp_seconds': 896,
+                       'timestamp_label': '[00:14:56]',
+                       'url': 'https://www.youtube.com/watch?v=BoQ7bHu0IZE&t=896s',
+                       'markdown': '[00:14:56](https://www.youtube.com/watch?v=BoQ7bHu0IZE&t=896s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'}]}

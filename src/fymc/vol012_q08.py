@@ -1,751 +1,848 @@
 from __future__ import annotations
 
-CHAPTER_8 = {
-    "id": "Q8",
-    "chapter_id": "Q8",
-    "chapter_number": 8,
-    "question_number": 8,
-    "slug": "public-records-apis-data-pipelines-operator-tooling",
-    "question_prompt": "Which exact public registries, government databases, commercial APIs, enrichment waterfalls, and diagnostic tools give a small equipment brokerage desk an unfair information edge?",
-    "kicker": "Q8 / THE BIG MONEY PLAYBOOKS",
-    "title": "Public Records, APIs, Data Pipelines & Operator Tooling",
-    "subtitle": "State UCC Searches, Fleet Identity APIs, OEM Diagnostics, Inventory Matching, and Evidence-Controlled Escrow Settlement",
-    "layout_template": "resource_directory",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #11, Equipment Brokerage, ranks #16 with an 86/100 Money-to-Manpower "
-        "Score. Its information advantage comes from connecting asset identity, seller "
-        "authority, buyer demand, and settlement evidence before competitors connect "
-        "the same records. This chapter maps seven operating plays: construction "
-        "sourcing, CNC sourcing, fleet sourcing, liquidation sourcing, buyer matching, "
-        "lien-clearance coordination, and escrow/export coordination. A 1 FT + 3 C "
-        "pod uses official registries for authority, licensed commercial feeds for "
-        "discovery, and field diagnostics for condition. Conservative, Base, and "
-        "Scaled annual owner profits remain $25,000, $157,500, and $360,000. "
-        "Recognized revenue is broker commissions only, never equipment transaction "
-        "value. The directory and workflow below turn fragmented records into "
-        "timestamped evidence without treating a search result as ownership proof."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$100,000",
-            "context": "Annual broker commission revenue; equipment transaction value excluded",
-            "note": "25% net margin; $25,000 annual owner profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Base",
-            "value": "$450,000",
-            "context": "Annual broker commission revenue; equipment transaction value excluded",
-            "note": "35.0% net margin; $157,500 annual owner profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$800,000",
-            "context": "Annual broker commission revenue; equipment transaction value excluded",
-            "note": "45% net margin; $360,000 annual owner profit; 2 FT + 4 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Build an eighteen-source directory around seven executable plays",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Build the directory around decisions, not around the number of records "
-                    "collected. This chapter uses seven operational mappings for Candidate "
-                    "#11: P1 construction-equipment sourcing, P2 CNC sourcing, P3 fleet "
-                    "sourcing, P4 liquidation sourcing, P5 buyer matching, P6 lien-clearance "
-                    "coordination, and P7 escrow/export coordination. These are workflow "
-                    "labels, not seven additive revenue forecasts. P1 through P4 create "
-                    "qualified inventory; P5 converts inventory into buyer conversations; "
-                    "P6 and P7 make a transaction executable. Each listing needs an asset "
-                    "identifier, seller entity, physical location, asking basis, source "
-                    "permission, capture time, and next verification action. A machine "
-                    "without a photographed serial plate stays in discovery status. A "
-                    "fleet truck with a valid VIN still needs ownership and condition "
-                    "evidence. Give the full-time broker responsibility for negotiation "
-                    "and commercial decisions. Assign three contractors to research and "
-                    "data operations, independent inspection, and transaction coordination. "
-                    "Specialist legal, export, or title work can be purchased within the "
-                    "operating budget; it does not become an invisible permanent team. "
-                    "The directory below deliberately combines free discovery, paid "
-                    "evidence, and permissioned diagnostics because no single database "
-                    "covers identity, encumbrances, condition, and settlement authority."
-                ),
-                (
-                    "Separate access cost from evidence cost before purchasing subscriptions. "
-                    "A free state entity lookup may confirm an exact registered name, "
-                    "while a certified UCC search requires a filing-office fee. A commercial "
-                    "auction page may reveal a machine, while historical sold results "
-                    "require registration, a subscription, or a negotiated license. The "
-                    "directory identifies these cost tiers instead of inventing universal "
-                    "prices for state services or changing vendor packages. Record the "
-                    "actual checkout price or signed quotation in the source register "
-                    "before spending. Likewise, refresh latency has two clocks: when the "
-                    "publisher changes its record and when the brokerage fetches it. A "
-                    "nightly fetch does not make a monthly publisher update current. Store "
-                    "published_at when available, fetched_at always, and an explicit "
-                    "publication-cadence note when the publisher does not promise one. "
-                    "For authenticated APIs, inspect the account documentation and response "
-                    "headers for current quotas. Honor Retry-After, use exponential backoff "
-                    "with jitter, cache stable lookups, and stop retrying authentication "
-                    "failures. For portals without a licensed machine interface, assign "
-                    "a human task rather than inventing an endpoint or bypassing access "
-                    "controls. A fallback must preserve evidentiary quality, not merely "
-                    "produce another convenient screen."
-                ),
-                (
-                    "Start official searches with the seller's legal identity and asset "
-                    "jurisdiction. UCC Article 9 generally ties perfection rules to debtor "
-                    "location, subject to important exceptions, including certificate-of-title "
-                    "goods and fixtures. Under UCC sections 9-301 and 9-307, a registered "
-                    "organization's formation jurisdiction often matters more than the yard "
-                    "where its loader sits. Search the appropriate filing office, investigate "
-                    "prior entity names and transfers, and retrieve the underlying filing "
-                    "images. UCC section 9-506 makes debtor-name accuracy consequential; "
-                    "a fuzzy commercial search cannot replace the filing office's standard "
-                    "search logic. A clean search is one evidence component, not a "
-                    "certificate of ownership or a universal absence-of-liens finding. "
-                    "For titled fleet assets, add the applicable motor-vehicle title "
-                    "process and title-lien evidence. For installed industrial machinery, "
-                    "consider fixture records and the site's real-property facts. State "
-                    "dealer licensing must be evaluated against the actual activities, "
-                    "vehicle categories, and jurisdictions involved. Do not extrapolate "
-                    "a heavy-equipment practice into a motor-vehicle brokerage exemption. "
-                    "The transaction coordinator should attach the jurisdiction rationale "
-                    "to the deal packet so the inspector, broker, and escrow provider "
-                    "work from the same identified asset and seller."
-                ),
-            ],
-            "table": {
-                "caption": "Eighteen Named Sources: Access, Cost Tier, Refresh Discipline, and Evidence-Preserving Fallbacks",
-                "headers": [
-                    "Named source and decision supported",
-                    "Exact access method and entry point",
-                    "Cost tier and purchasing boundary",
-                    "Refresh latency and desk polling policy",
-                    "Rate-limit and permission hygiene",
-                    "Fallback source and evidence limitation",
-                ],
-                "rows": [
-                    [
-                        "Delaware Division of Corporations entity search supports seller identity resolution",
-                        "Use the official entity-name search linked from corp.delaware.gov",
-                        "Basic entity search is free; certificates and advanced information incur fees",
-                        "Query during onboarding; recheck entity status before settlement authorization",
-                        "Use interactive searches; obtain permission before automating portal access",
-                        "Request formation documents and official certificates from the seller directly",
-                    ],
-                    [
-                        "New York Department of State UCC search supports debtor filing discovery",
-                        "Open the UCC public inquiry service through dos.ny.gov",
-                        "Public inquiry is free; certified searches and document services carry fees",
-                        "Search during qualification; repeat near funding with filing-office cutoff recorded",
-                        "Follow portal terms; purchase official searches instead of scraping restricted results",
-                        "Order filing-office searches through a qualified commercial search provider",
-                    ],
-                    [
-                        "County recorder indexes support fixture and real-property encumbrance investigation",
-                        "Use the official recorder portal for the identified property county",
-                        "Index viewing may be free; recorded images and certification may cost",
-                        "Recording and indexing lag varies; record the office's stated coverage date",
-                        "Respect county search limits; request clerk assistance for difficult indexing",
-                        "Commission a local recorded-document search tied to the property description",
-                    ],
-                    [
-                        "NMVTIS approved consumer providers support eligible vehicle title-history investigation",
-                        "Select a provider from vehiclehistory.bja.ojp.gov and submit the vehicle VIN",
-                        "Consumer reports are paid; approved providers set their own prices",
-                        "Order during qualification; source reporting delays remain distinct from report time",
-                        "Use provider-authorized access only; consumer access does not imply API rights",
-                        "Obtain current state title records and lienholder confirmation through authorized channels",
-                    ],
-                    [
-                        "NHTSA vPIC VIN Decoder supports fleet vehicle specification normalization",
-                        "GET vpic.nhtsa.dot.gov/api/vehicles/DecodeVinValues/{VIN}?format=json through the documented API",
-                        "Public VIN decoding is free; local integration still consumes operating time",
-                        "Decode once per VIN; refresh when identity evidence or decoder output changes",
-                        "Cache responses and use documented batch methods within current service guidance",
-                        "Compare OEM build records and photographed certification labels with decoded attributes",
-                    ],
-                    [
-                        "NHTSA recalls database supports model-level fleet safety campaign discovery",
-                        "GET api.nhtsa.gov/recalls/recallsByVehicle using make, model, and modelYear parameters",
-                        "Public recall queries are free; repair verification requires separate evidence",
-                        "Check during qualification and before release; campaign publication timing varies",
-                        "Cache vehicle-model queries and reduce polling after throttling or service errors",
-                        "Use OEM VIN recall lookup and dealer repair-completion documentation",
-                    ],
-                    [
-                        "FMCSA SAFER Company Snapshot supports carrier identity and fleet context",
-                        "Search safer.fmcsa.dot.gov by USDOT number or carrier legal name",
-                        "Public snapshots are free; they do not establish vehicle ownership",
-                        "Capture displayed update dates; carrier-submitted fleet information can lag operations",
-                        "Use interactive lookup unless an authorized machine-access arrangement explicitly applies",
-                        "Compare FMCSA registration evidence with seller records and actual fleet schedules",
-                    ],
-                    [
-                        "FMCSA QCMobile API supports structured carrier identity enrichment",
-                        "Request an API key and use documented endpoints at mobile.fmcsa.dot.gov/QCDevsite",
-                        "Government API access is free subject to registration and service terms",
-                        "Refresh active carrier candidates weekly; preserve response and source update dates",
-                        "Keep keys server-side; follow current quotas and back off on throttling",
-                        "Use SAFER snapshots and direct carrier documentation during API service interruptions",
-                    ],
-                    [
-                        "SAM.gov Contract Opportunities API supports demand and procurement-event monitoring",
-                        "Use api.sam.gov/opportunities/v2/search with an authorized api_key and date filters",
-                        "Public opportunity API access is free; registration and key management apply",
-                        "Poll relevant searches daily; attachments and notices may change independently",
-                        "Respect account-specific request limits; paginate and reuse incremental date windows",
-                        "Review the official SAM.gov notice and attachments through the public interface",
-                    ],
-                    [
-                        "USAspending API supports historical equipment purchasing and agency-demand analysis",
-                        "POST documented search requests to api.usaspending.gov/api/v2/search/spending_by_award/",
-                        "Public API access is free; cleaning award descriptions requires analyst time",
-                        "Refresh research monthly; agency submissions and corrections control underlying timeliness",
-                        "Paginate bounded queries and cache results rather than repeating broad searches",
-                        "Compare agency award documents and SAM.gov records before inferring current demand",
-                    ],
-                    [
-                        "GSA Auctions official listings support federal surplus equipment sourcing",
-                        "Review listings and sale documents directly through gsaauctions.gov",
-                        "Browsing is free; deposits, purchase terms, and removal expenses vary",
-                        "Review active categories daily; inspect amendments again before bidding decisions",
-                        "Use offered alerts and interactive access unless machine collection is authorized",
-                        "Contact the listed custodian and inspect the asset under sale procedures",
-                    ],
-                    [
-                        "GovDeals marketplace supports municipal and institutional equipment liquidation sourcing",
-                        "Use govdeals.com category searches, account alerts, and individual auction documents",
-                        "Browsing is free; premiums, taxes, and buyer obligations follow each listing",
-                        "Review alerts daily; closing changes and seller amendments need manual confirmation",
-                        "Use supported alerts or licensed feeds; avoid unauthorized bulk extraction",
-                        "Ask the public seller for asset records and permitted inspection access",
-                    ],
-                    [
-                        "Ritchie Bros. results support equipment sale comparisons and liquidation context",
-                        "Use rbauction.com account services and currently offered auction-results products",
-                        "Account features vary; enhanced historical intelligence may require paid access",
-                        "Refresh comparisons weekly; results appear after processing and may be revised",
-                        "Export only through permitted features or a separately licensed data arrangement",
-                        "Obtain documented comparable sales from sellers, auctioneers, and permitted archives",
-                    ],
-                    [
-                        "MachineryTrader listings support CNC and heavy-equipment asking-price discovery",
-                        "Use machinerytrader.com searches and seller-authorized inventory exports where available",
-                        "Public browsing is free; advertising and commercial data arrangements are separate",
-                        "Review saved categories daily; listing persistence does not establish current availability",
-                        "Use authorized exports and contacts; do not assume a public inventory API",
-                        "Call the selling dealer and request dated specifications and availability confirmation",
-                    ],
-                    [
-                        "Cat SIS 2.0 supports serial-specific service and configuration research",
-                        "Access sis2.cat.com through authorized Caterpillar account and subscription arrangements",
-                        "Service information access is subscription-based or governed by dealer arrangements",
-                        "Check per inspection; service-document revisions differ from machine operating history",
-                        "Use assigned credentials within license terms; never share dealer-only access",
-                        "Request authorized dealer documentation and an independent technician's inspection report",
-                    ],
-                    [
-                        "Trade.gov Consolidated Screening List supports initial restricted-party screening",
-                        "Use the CSL API through developer.trade.gov under current authentication documentation",
-                        "Public screening access is free; integration and review create internal costs",
-                        "Screen at onboarding and settlement; record each underlying list's update timestamp",
-                        "Follow documented quotas; cache list versions but rescreen changed parties",
-                        "Check the underlying agency lists directly and resolve candidate name matches",
-                    ],
-                    [
-                        "BIS Commerce Country Chart supports export licensing analysis by destination",
-                        "Read 15 CFR part 738 supplement 1 through ecfr.gov",
-                        "Official regulatory text is free; specialist classification work is separately purchased",
-                        "Check the current text for each export decision and after regulatory changes",
-                        "Retrieve official documents conservatively; do not treat chart access as automated authorization",
-                        "Use BIS guidance and documented classification work alongside end-use restrictions",
-                    ],
-                    [
-                        "OFAC Sanctions List Service supports current sanctions-data verification",
-                        "Download published list files and metadata through ofac.treasury.gov/sanctions-list-service",
-                        "Official downloads are free; commercial matching platforms charge separate subscriptions",
-                        "Check published updates daily and rescreen all transaction parties before release",
-                        "Use supported downloads, preserve versions, and avoid repetitive unchanged full-file requests",
-                        "Use OFAC official search and program materials to investigate potential matches",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Four ways experienced equipment desks improve signal quality",
-                "body": "Spend research time on records that change price, authority, removal feasibility, or the ability to settle.",
-                "items": [
-                    "Ask for one continuous walkaround showing the serial plate, hour meter, cold start, and machine surroundings; then compare the identifiers with the inspector's independent capture.",
-                    "Read auction removal clauses before valuing a CNC bargain; rigging access, loading responsibility, and power-disconnection costs can eliminate the buyer's apparent discount.",
-                    "Search debtor names using the relevant filing office's rules, then investigate prior names and transfers separately; a seller's trading name is a discovery clue rather than the search foundation.",
-                    "Keep sold-price evidence separate from asking-price evidence, recording buyer premiums and included attachments so a cheap bare machine does not distort a fully equipped comparison.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Turn scattered records into a permissioned enrichment waterfall",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Use a four-layer enrichment waterfall: seller identity, asset identity, "
-                    "market context, and transaction evidence. The research contractor "
-                    "first establishes the seller's legal name, formation jurisdiction, "
-                    "business contact channel, and authority claim. Next, normalize the "
-                    "asset through serial photographs, OEM documents, and VIN decoding "
-                    "where applicable. Only then spend on commercial comparables, paid "
-                    "reports, or field inspection. This order prevents a convincing "
-                    "auction description from attracting expensive diligence before the "
-                    "desk knows who can sell the machine. Every enrichment field should "
-                    "carry source_id, source_record_id, observed_at, evidence_url, and "
-                    "verification_state. Keep reported engine hours separate from "
-                    "technician-observed hours, and keep both separate from inferred "
-                    "usage. Never overwrite a conflicting value simply because the "
-                    "new feed arrived later. Route conflicts into a review queue with "
-                    "both values and their supporting files. Minimize personal contact "
-                    "data; prefer seller-provided business channels and documented "
-                    "permission for buyer alerts. If email outreach is commercial, "
-                    "apply 15 U.S.C. section 7704 requirements, including accurate "
-                    "headers, required identification, a valid postal address, and "
-                    "working opt-out handling. A purchased contact record does not "
-                    "supply missing transaction authority or permission for unrestricted outreach."
-                ),
-                (
-                    "A small desk can implement the core pipeline with Python's urllib.request, "
-                    "json, csv, sqlite3, hashlib, and logging modules. Use an operating-system "
-                    "scheduler for ingestion and SQLite for normalized records, while "
-                    "storing large inspection files in access-controlled project storage. "
-                    "Maintain tables for sources, sellers, assets, observations, buyer "
-                    "requirements, matches, deals, and evidence references. Deduplicate "
-                    "with normalized manufacturer plus serial identifier, but retain "
-                    "manufacturer-specific punctuation rules and original text. Serial "
-                    "numbers are not globally unique, and an OCR substitution can "
-                    "merge two unrelated machines. For titled vehicles, a validated "
-                    "VIN provides a stronger matching key, yet disputed VIN evidence "
-                    "still requires physical review. Hash downloaded evidence to detect "
-                    "later changes; a hash proves consistency with the stored file, "
-                    "not that the file's contents are truthful. Use idempotent ingestion "
-                    "keys based on source and record identity so a repeated job "
-                    "updates an observation rather than creating another lead. Save "
-                    "raw responses when licensing permits, redact credentials from "
-                    "logs, and record schema versions. A failed parser should preserve "
-                    "the previous verified record and create an alert, rather than "
-                    "silently clearing a machine's specifications or sale status."
-                ),
-                (
-                    "Buyer matching should begin with hard constraints, not an opaque "
-                    "similarity score. For P1, filter operating weight, attachment "
-                    "interface, emissions requirements, location, and transport envelope. "
-                    "For P2, filter controller, travels, spindle capability, power, "
-                    "tooling, and rigging access. For P3, filter VIN-supported model "
-                    "attributes, axle configuration, title eligibility, and maintenance "
-                    "requirements. P4 contributes availability and sale deadlines; P6 "
-                    "and P7 contribute unresolved transaction restrictions. Mark a "
-                    "candidate as review-required when critical fields lack verified "
-                    "evidence instead of presenting a high-confidence recommendation. "
-                    "Send the broker a short ranked queue showing which requirements "
-                    "passed, which evidence is stale, and which commercial question "
-                    "must be answered next. Buyer alerts should reference the dated "
-                    "inventory record and distinguish seller statements from inspection "
-                    "findings. Set operating service targets: daily discovery review, "
-                    "weekly buyer-requirement confirmation for active searches, and "
-                    "same-day escalation of identifier or payment conflicts. These "
-                    "are desk targets rather than promises about publisher freshness. "
-                    "Limit the active queue to what the four-person pod can inspect "
-                    "and advance. An automation system that generates fifty speculative "
-                    "matches while hiding three settlement blockers makes the broker "
-                    "busier without improving completed commission revenue."
-                ),
-            ],
-            "table": {
-                "caption": "Six-Stage Enrichment Waterfall With Explicit Stops and Fallback Evidence",
-                "headers": [
-                    "Enrichment stage and accountable operator",
-                    "Required evidence and acceptance rule",
-                    "Failure condition and immediate containment",
-                    "Fallback action and retained audit evidence",
-                ],
-                "rows": [
-                    [
-                        "Research contractor resolves seller identity before inventory enrichment spending",
-                        "Exact entity name matches formation record and seller-provided business documents",
-                        "Conflicting entity names suspend paid enrichment and trigger seller clarification",
-                        "Obtain official entity extracts and preserve the signed authority explanation",
-                    ],
-                    [
-                        "Inspection contractor establishes physical identity before condition conclusions circulate",
-                        "Serial plate photographs match invoices, machine configuration, and inspection notes",
-                        "Altered plates or inconsistent identifiers remove the asset from buyer alerts",
-                        "Request OEM assistance and independently recapture identifiers at the machine",
-                    ],
-                    [
-                        "Research contractor normalizes specifications before buyer matching begins automatically",
-                        "Verified units, controller details, attachments, and transport dimensions populate structured fields",
-                        "Conflicting measurements remain separate observations rather than silently replacing records",
-                        "Use manufacturer documentation and inspector measurements with dated evidence references",
-                    ],
-                    [
-                        "Broker reviews market comparisons before recommending a pricing range",
-                        "Comparable transactions distinguish sold amounts, premiums, attachments, condition, and dates",
-                        "Asking prices presented as completed sales trigger comparison-set correction",
-                        "Document dealer confirmations and explain each adjustment to the comparison basis",
-                    ],
-                    [
-                        "Transaction coordinator assembles encumbrance evidence before settlement instructions are finalized",
-                        "Jurisdiction rationale, filing images, payoff terms, and asset descriptions align",
-                        "Unresolved collateral scope or creditor authority stops release preparation immediately",
-                        "Obtain creditor clarification through independently verified channels and retain responses",
-                    ],
-                    [
-                        "Broker authorizes buyer alerts after restrictions and freshness checks pass",
-                        "Buyer requirements match verified specifications and current seller availability confirmation",
-                        "Stale availability or unresolved identity conflicts suppress the automated alert",
-                        "Confirm directly with seller and buyer before issuing a corrected opportunity",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Register the source and collection permission",
-                    "action": "Record source owner, access method, cost tier, permitted reuse, and current quota guidance.",
-                    "detail": "The research contractor stores the documentation reference and assigns a manual fallback before scheduling collection.",
-                },
-                {
-                    "step": 2,
-                    "title": "Capture identity and immutable observations",
-                    "action": "Create seller and asset records, retain original identifiers, and attach timestamped evidence.",
-                    "detail": "Deduplicate through source identity and verified asset keys; preserve contradictory observations for human resolution.",
-                },
-                {
-                    "step": 3,
-                    "title": "Validate constraints and assign exceptions",
-                    "action": "Run specification, freshness, authority, and buyer-fit checks before drafting any alert.",
-                    "detail": "Send identity issues to inspection, authority issues to transaction coordination, and commercial choices to the broker.",
-                },
-                {
-                    "step": 4,
-                    "title": "Release the reviewed output and measure conversion",
-                    "action": "Publish only the broker-reviewed match or transaction packet and log the evidence versions used.",
-                    "detail": "Track qualified introductions, inspections, signed engagements, settled commissions, and exception-resolution time rather than raw scraped records.",
-                },
-            ],
-        },
-        {
-            "heading": "3. Diagnose defects, forged evidence, and settlement blockers before money moves",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Digital records narrow inspection questions; they do not replace a "
-                    "qualified technician standing beside the asset. For construction "
-                    "equipment, request cold-start evidence, fluid sampling where useful, "
-                    "hydraulic performance checks, undercarriage measurements, and operating "
-                    "history appropriate to the machine. Cat Electronic Technician "
-                    "and comparable OEM diagnostic systems require legitimate tooling, "
-                    "licenses, and competent interpretation. An absence of active "
-                    "faults does not prove an engine has never been overheated or "
-                    "that codes were never cleared. For CNC assets, match the controller "
-                    "and option configuration to the advertised capability, inspect "
-                    "alarm history, and commission suitable spindle, geometry, or "
-                    "test-cut checks. Renishaw QC20 ballbar testing can help characterize "
-                    "certain motion errors when performed and interpreted correctly; "
-                    "it is not a complete machine acceptance test. Controller backups "
-                    "may contain the seller's programs or customer information, so "
-                    "collect only authorized diagnostic evidence and restrict access. "
-                    "For fleet vehicles, reconcile odometer, ECU, service, and title "
-                    "records without assuming any one channel is immune to error. "
-                    "The inspection contractor should report observed condition, test "
-                    "limitations, and unresolved discrepancies separately so the broker "
-                    "can price the actual risk instead of selling a diagnostic screenshot."
-                ),
-                (
-                    "Fraud controls should test the relationship between seller, asset, "
-                    "creditor, and receiving account. A polished invoice and a real "
-                    "serial number can still describe equipment the sender cannot "
-                    "convey. Obtain authority evidence from the entity that owns or "
-                    "controls the asset, confirm physical access independently, and "
-                    "verify material payment instructions through a previously established "
-                    "contact channel. Do not use a telephone number supplied only "
-                    "in the message announcing a bank change. For P6, inspect "
-                    "collateral descriptions, amendments, assignments, continuations, "
-                    "and terminations; a UCC-1 is a notice filing, not a machine-specific "
-                    "payoff statement. A blanket lien may cover the offered equipment "
-                    "even when its serial number never appears in the filing. "
-                    "Obtain a payoff or release arrangement that identifies the "
-                    "relevant secured party, asset scope, amount, validity period, "
-                    "and required release action. UCC section 9-513 addresses termination "
-                    "statements, but a partial collateral release and a title-lien "
-                    "release may require different instruments. An escrow provider "
-                    "should follow documented disbursement conditions, including direct "
-                    "creditor payment when agreed, without the brokerage claiming that "
-                    "escrow alone validates ownership, eliminates defects, or resolves "
-                    "every competing property claim."
-                ),
-                (
-                    "For P7, screen more than the buyer's display name. Capture legal "
-                    "entities, relevant owners, intermediaries, destination, consignee, "
-                    "end user, and intended use to the extent necessary for the "
-                    "transaction's risk and applicable rules. The Consolidated Screening "
-                    "List is a discovery aid; a possible match requires review against "
-                    "the underlying authority. OFAC restrictions can also apply through "
-                    "ownership rules even where the transaction party is not named "
-                    "on a downloaded list. For equipment subject to the Export "
-                    "Administration Regulations, establish classification and evaluate "
-                    "destination, end-use, end-user, and other applicable restrictions. "
-                    "The Commerce Country Chart alone does not settle the question. "
-                    "Do not assign EAR99 merely because a used machine appears "
-                    "ordinary or because a seller has exported similar equipment "
-                    "before. Advanced CNC capability, incorporated technology, and "
-                    "specific end uses can change the analysis. The transaction "
-                    "coordinator gathers facts and specialist determinations; the "
-                    "broker does not improvise licensing conclusions. Recheck parties "
-                    "and destination facts before release, and retain the evidence "
-                    "required by the applicable recordkeeping rules. If the transaction "
-                    "changes after screening, reopen the affected review rather than "
-                    "reusing a clearance attached to different parties or routing."
-                ),
-            ],
-            "table": {
-                "caption": "Six Forensic Checks Connecting Diagnostic Tools to Transaction Decisions",
-                "headers": [
-                    "Tool or evidence channel and purpose",
-                    "Concrete test performed before buyer reliance",
-                    "Failure interpretation and commercial consequence",
-                    "Independent corroboration required before proceeding",
-                ],
-                "rows": [
-                    [
-                        "OEM electronic diagnostics support construction-machine fault and configuration review",
-                        "Authorized technician records module identifiers, operating data, and available fault history",
-                        "Cleared histories or module mismatches require investigation rather than automatic rejection",
-                        "Compare service invoices, physical condition, fluid results, and observed operating behavior",
-                    ],
-                    [
-                        "Renishaw QC20 ballbar supports selected CNC motion-performance investigation",
-                        "Qualified technician runs suitable tests and documents setup and environmental conditions",
-                        "Measured deviations require interpretation before promising tolerances or estimating repair costs",
-                        "Combine geometry findings with spindle checks and an application-relevant test cut",
-                    ],
-                    [
-                        "NHTSA and OEM recall channels support fleet safety-campaign verification",
-                        "Identify applicable campaigns and request VIN-specific completion evidence where available",
-                        "Model-level recall presence does not establish whether this vehicle was repaired",
-                        "Obtain dealer completion records and reconcile them with the inspected VIN",
-                    ],
-                    [
-                        "Evidence hashes and metadata support document consistency and change detection",
-                        "Compare stored files with later versions and investigate unexpected document replacement",
-                        "Matching hashes establish file consistency but cannot authenticate the original claims",
-                        "Confirm material statements with issuing parties through independently established contact channels",
-                    ],
-                    [
-                        "Official UCC images and creditor callbacks support secured-interest resolution",
-                        "Review collateral scope and confirm payoff instructions with the authorized creditor",
-                        "Blanket coverage or unresolved assignments prevent unsupported clean-title representations",
-                        "Retain creditor-approved release instruments and settlement conditions tied to the asset",
-                    ],
-                    [
-                        "CSL and OFAC data support restricted-party and ownership-risk investigation",
-                        "Review name matches, ownership facts, destination changes, and identified transaction intermediaries",
-                        "Possible matches suspend affected execution until the applicable restrictions are resolved",
-                        "Preserve underlying agency evidence and documented specialist analysis when required",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four pre-flight checks before settlement instructions leave the desk",
-                "body": "The broker verifies these conditions against the actual asset and current transaction, not against an earlier version of the deal.",
-                "items": [
-                    "Identity: match photographed identifiers, seller authority, physical possession facts, and the purchase documents; resolve every material mismatch before presenting the packet as complete.",
-                    "Condition: deliver the independent inspection findings, known defects, agreed warranties, and acceptance procedure; keep seller assertions visibly separate from technician observations.",
-                    "Encumbrances: confirm the relevant jurisdictions, creditor authority, payoff validity, asset-specific release scope, and the escrow provider's documented disbursement conditions.",
-                    "Destination and funds: refresh applicable party screening, confirm export determinations, verify receiving instructions through an independent channel, and record who may authorize release.",
-                ],
-            },
-        },
-        {
-            "heading": "4. Run the tooling as a four-person commission desk, not a data company",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Tie tooling economics to the canonical commission scorecard. Conservative "
-                    "revenue is $100,000 with a 25% net margin, producing $25,000 "
-                    "annual owner profit and implying $75,000 of total annual costs. "
-                    "Base revenue is $450,000 with a 35.0% margin, producing $157,500 "
-                    "owner profit and $292,500 of total annual costs. Scaled revenue "
-                    "is $800,000 with a 45% margin, producing $360,000 owner profit "
-                    "and $440,000 of total annual costs. Conservative and Base both "
-                    "use 1 FT + 3 C; Scaled uses 2 FT + 4 C. "
-                    "For an illustrative unit bridge, assume an average earned commission "
-                    "of $10,000 per completed deal. The three revenue cases then "
-                    "require 10, 45, and 80 completed deals annually. This assumption "
-                    "explains workload without changing the scorecard or asserting a "
-                    "market-standard commission. A different fee mix changes the number "
-                    "of closings, not the canonical revenue target. Equipment purchase "
-                    "prices, escrow principal, taxes, freight reimbursements, and creditor "
-                    "payoffs must not inflate commission revenue. Maintain a separate "
-                    "transaction-value field for operating analysis. The broker's fee "
-                    "ledger should reconcile earned commissions, invoiced commissions, "
-                    "cash received, reversals, and the applicable contractual earning "
-                    "event so a large machine movement cannot masquerade as brokerage income."
-                ),
-                (
-                    "Treat the stated $2,500–$14,000 monthly operating-expense range as "
-                    "a planning constraint, not a substitute for the annual cost "
-                    "reconciliation. Multiplying that range by twelve gives $30,000–$168,000, "
-                    "which does not by itself explain all costs implied by the "
-                    "Base and Scaled profit cases. Separate recurring overhead from "
-                    "deal-linked contractor work, inspection spending, travel, referral "
-                    "fees, and other modeled costs; verify the actual allocation "
-                    "rather than asserting that the monthly range includes every "
-                    "expense. The $10,000–$75,000 startup-capital range must also support "
-                    "the stated two-to-nine-month time to first deal. At the low "
-                    "end, $10,000 divided by $2,500 monthly overhead gives only "
-                    "four months before startup purchases or deal costs, so nine "
-                    "months of runway requires additional capital, lower burn, or "
-                    "earlier receipts. Buy data in stages: official free discovery "
-                    "first, paid evidence for qualified assets second, and recurring "
-                    "commercial intelligence only after it improves actual decisions. "
-                    "Measure cost per verified asset, cost per qualified buyer "
-                    "introduction, inspection-to-contract conversion, and commission "
-                    "cash cycle. Do not justify a subscription with the dollar "
-                    "value of machines viewed. The relevant benefit is incremental "
-                    "commission contribution after the additional work and direct costs."
-                ),
-                (
-                    "Run a weekly operating review that fits the pod's capacity. The "
-                    "research contractor reports source failures, stale inventory, and "
-                    "unresolved identifier conflicts; the inspector reports scheduled "
-                    "visits and material condition exceptions; the transaction coordinator "
-                    "reports creditor, title, export, and escrow dependencies. The "
-                    "broker selects the next actions with the greatest expected "
-                    "commission contribution and clearest evidence path. Keep P1 "
-                    "through P4 in one sourcing queue, P5 in a buyer-introduction "
-                    "queue, and P6 through P7 in a settlement-exception queue. "
-                    "Each asset can occupy several workflows without becoming several "
-                    "revenue opportunities. Instrument ingestion with run identifiers, "
-                    "HTTP status counts, parser failures, oldest verified observation, "
-                    "and alert-delivery results. Test saved public-response fixtures "
-                    "after parser changes, and use synthetic seller and payment "
-                    "records for workflow tests rather than publishing real deal "
-                    "files to external services. Back up the database and evidence "
-                    "index, then rehearse restoration on a separate authorized "
-                    "workspace. At Scaled volume, add the second full-time operator "
-                    "to the demonstrated bottleneck rather than expanding every "
-                    "function simultaneously. The objective remains a small desk "
-                    "that converts trustworthy information into completed commissions, "
-                    "not a sprawling warehouse of unreviewed records and unowned exceptions."
-                ),
-            ],
-            "table": {
-                "caption": "Six Operating Controls Linking Tool Spend, Pod Capacity, and Canonical Commission Economics",
-                "headers": [
-                    "Operating control and accountable role",
-                    "Measurement and explicit calculation basis",
-                    "Intervention when evidence or economics deteriorate",
-                    "Connection to the seven mapped plays",
-                ],
-                "rows": [
-                    [
-                        "Broker maintains a separate commission-only revenue and cash reconciliation",
-                        "Conservative costs equal $100,000 revenue less $25,000 annual owner profit",
-                        "Exclude equipment principal and investigate differences between earned fees and receipts",
-                        "All seven plays support one recognized commission stream without duplicate attribution",
-                    ],
-                    [
-                        "Broker reviews Base-case workload against the existing four-person operating pod",
-                        "Base costs equal $450,000 revenue less $157,500 annual owner profit",
-                        "Reduce low-conversion inventory research before adding recurring subscriptions or broad prospecting",
-                        "Prioritize sourcing plays P1 through P4 using verified buyer demand",
-                    ],
-                    [
-                        "Broker assigns Scaled hiring against the measured operating bottleneck",
-                        "Scaled costs equal $800,000 revenue less $360,000 annual owner profit",
-                        "Add capacity within the canonical two-full-time and four-contractor team structure",
-                        "Protect buyer matching and settlement throughput across plays P5 through P7",
-                    ],
-                    [
-                        "Research contractor reports freshness and collection failures by source",
-                        "Measure observation age separately from the publisher's underlying record update date",
-                        "Suppress stale availability alerts and switch to documented manual verification",
-                        "Keep sourcing and buyer matching from recycling sold or misidentified equipment",
-                    ],
-                    [
-                        "Inspection contractor reports evidence completeness and reinspection causes weekly",
-                        "Track verified identifiers, unresolved condition questions, travel expense, and contract conversion",
-                        "Stop repeating inspections caused by missing serial photographs or weak seller authority",
-                        "Improve qualification quality before P1 through P4 inventory reaches P5 buyers",
-                    ],
-                    [
-                        "Transaction coordinator reports settlement dependencies and cash-cycle delays weekly",
-                        "Track creditor response time, release completeness, title steps, and escrow exceptions",
-                        "Escalate expiring payoff terms and changed payment instructions before scheduled funding",
-                        "Resolve P6 lien work and P7 settlement requirements before recognizing completed outcomes",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": "The winning equipment desk collects fewer unsupported claims and closes more deals with evidence that survives inspection, lien review, and settlement.",
-    "diagram_id": "diag-04",
-    "action_checklist": [
-        "Create the eighteen-source register with access permission, actual purchasing terms, publisher timing, desk refresh targets, quota guidance, and a named manual fallback.",
-        "Assign the broker and three contractors to the seven mapped plays, with explicit ownership of research, inspection, transaction coordination, and commercial decisions.",
-        "Implement provenance-preserving seller, asset, observation, buyer-requirement, and deal records; retain conflicting identifiers instead of overwriting them.",
-        "Configure inventory matching around verified hard constraints and suppress buyer alerts for stale availability, disputed identity, or unresolved transaction restrictions.",
-        "Build one settlement evidence packet containing seller authority, inspection findings, jurisdiction rationale, creditor releases, verified payment instructions, and applicable export determinations.",
-        "Reconcile commission-only revenue to all three canonical profit cases and review data spending, conversion, exception age, and cash-cycle performance every week.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "UCC § 9-301 — Law Governing Perfection and Priority of Security Interests",
-            "url": "https://www.law.cornell.edu/ucc/9/9-301",
-            "relevance": "Provides the general debtor-location framework and important exceptions; apply the relevant state's enacted text when selecting filing jurisdictions.",
-        },
-        {
-            "title": "UCC § 9-307 — Location of Debtor",
-            "url": "https://www.law.cornell.edu/ucc/9/9-307",
-            "relevance": "Supports debtor-location analysis, including the formation-state rule for registered organizations organized under state law.",
-        },
-        {
-            "title": "UCC § 9-506 — Effect of Errors or Omissions",
-            "url": "https://www.law.cornell.edu/ucc/9/9-506",
-            "relevance": "Explains the significance of debtor-name errors and the filing office's standard search logic when evaluating financing statements.",
-        },
-        {
-            "title": "UCC § 9-513 — Termination Statement",
-            "url": "https://www.law.cornell.edu/ucc/9/9-513",
-            "relevance": "Addresses termination statements and their effect; distinguish termination of a financing statement from a partial collateral release or vehicle title-lien release.",
-        },
-        {
-            "title": "15 U.S.C. § 7704 — Requirements for Transmission of Messages",
-            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
-            "relevance": "Establishes concrete requirements for commercial email, including header accuracy, required identification, postal address, and opt-out handling.",
-        },
-        {
-            "title": "15 CFR § 734.3 — Items Subject to the EAR",
-            "url": "https://www.ecfr.gov/current/title-15/subtitle-B/chapter-VII/subchapter-C/part-734/section-734.3",
-            "relevance": "Frames the initial determination of whether equipment or related items fall within the Export Administration Regulations.",
-        },
-        {
-            "title": "15 CFR § 736.2 — General Prohibitions",
-            "url": "https://www.ecfr.gov/current/title-15/subtitle-B/chapter-VII/subchapter-C/part-736/section-736.2",
-            "relevance": "Connects export decisions to applicable classification, destination, end-use, end-user, and other restrictions rather than a screening-list result alone.",
-        },
-        {
-            "title": "15 CFR Part 738, Supplement No. 1 — Commerce Country Chart",
-            "url": "https://www.ecfr.gov/current/title-15/subtitle-B/chapter-VII/subchapter-C/part-738",
-            "relevance": "Provides the country chart used with classification and reasons for control; additional restrictions and licensing provisions still require separate analysis.",
-        },
-        {
-            "title": "31 CFR § 501.601 — Records and Recordkeeping Requirements",
-            "url": "https://www.ecfr.gov/current/title-31/subtitle-B/chapter-V/part-501/subpart-C/section-501.601",
-            "relevance": "Provides OFAC recordkeeping requirements for covered transactions; retain applicable transaction evidence under the current rule.",
-        },
-    ],
-}
+CHAPTER_8 = {'id': 'Q8',
+ 'chapter_id': 'Q8',
+ 'chapter_number': 8,
+ 'question_number': 8,
+ 'slug': 'heavy-haul-planning-and-fleet-control',
+ 'question_prompt': 'How do I plan equipment transport and track the vehicles, machines, maintenance, and '
+                    'job costs involved in contractor operations?',
+ 'kicker': 'Q8 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Heavy-Haul Planning and Fleet Control',
+ 'subtitle': 'Oversize freight quotes, trailer selection, heavy-haul progression, freight-broker startup, '
+             'personal conveyance, truck maintenance, fleet software, and job-site cost tracking',
+ 'layout_template': 'legal_compliance_callout',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Heavy-haul operators and fleet controllers agree on one rule: price and plan from '
+                      'the piece, not the load board. Scott Woods of Freight Profits bids heavy haul as '
+                      'the truck rate plus permits, pilot cars, police, and power assistance. Woods quotes '
+                      '$25 to $30 a mile on a 1,600-mile CAT 777 superload, chase cars at $1.65 a mile, '
+                      'and permit waits running from three weeks to four months. Trinity Logistics sets '
+                      'the trigger points at 75 feet, 8 feet 6 inches, 13 feet 6 inches, and 80,000 '
+                      'pounds, with permits required state by state. On fleet control, CFO Yvette Aubin '
+                      'ranks a missing preventive maintenance program as the top equipment risk and says '
+                      'only 20 percent of contractors run work order systems. Practitioners split on '
+                      'software platforms, broker check-call habits, and whether to own equipment, rent '
+                      'it, or lease to own.',
+ 'key_metrics': [{'label': 'Superload All-In Bid Rate',
+                  'metric': 'Superload All-In Bid Rate',
+                  'value': '$25 to $30 per mile on a 1,600-mile run, roughly a $50,000 move',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Woods' bid range for a 250,000-lb, 125-ft CAT 777 move from Phoenix to the "
+                             'Port of Seattle that took 10 days, covering permits, police, pilots, truck '
+                             'margin, and broker margin',
+                  'source': 'Freight Profits ([qHs0sXdzamw @ 00:14:07])'},
+                 {'label': 'Chase Car Pilot Rate Card',
+                  'metric': 'Chase Car Pilot Rate Card',
+                  'value': '$1.65/mile, $85 overnight, $250/day no-go plus hotel, about $600 day rate '
+                           'under 300 miles',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Breakdown of charges Woods uses when bidding escort costs; pole cars run '
+                             '$1.85 to $2.00 a mile with a higher day rate',
+                  'source': 'Freight Profits ([qHs0sXdzamw @ 00:09:06])'},
+                 {'label': 'Superload Permit Lead Time',
+                  'metric': 'Superload Permit Lead Time',
+                  'value': '3 weeks for the Washington permit; up to 4 months for 500,000-lb pieces on '
+                           '30-axle trailers',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Woods' warning to brokers who book a superload assuming next-day pickup; "
+                             'larger pieces trigger route surveys',
+                  'source': 'Freight Profits ([qHs0sXdzamw @ 00:15:56])'},
+                 {'label': 'Contractor Work Order System Adoption',
+                  'metric': 'Contractor Work Order System Adoption',
+                  'value': 'Only 20% of contractors use a work order system',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Aubin cites polls from the CFMA heavy construction committee and calls a '
+                             'work order system the low-hanging fruit for lagging fleets',
+                  'source': 'Beiing Human ([sNcACw9iXI0 @ 00:20:33])'}],
+ 'sections': [{'heading': 'Section 1: The Practitioner Consensus',
+               'paragraphs': ['Scott Woods of Freight Profits opens every heavy-haul bid the same way: get '
+                              'the exact dimensions and weight of the piece, then let those numbers '
+                              'dictate the trailer before any rate is spoken [qHs0sXdzamw @ 00:04:13]. '
+                              'Woods draws a hard line between oversize and heavy haul. A 105-inch-wide '
+                              'piece on a flatbed may need nothing more than a permit and can be priced '
+                              'close to a standard flatbed or step-deck run. True heavy haul is priced as '
+                              'the truck rate plus plus plus, where each plus is permits, pilot cars, '
+                              'police, or power assistance with a bucket truck running alongside to raise '
+                              'the lines [qHs0sXdzamw @ 00:05:27]. Trinity Logistics frames the trigger '
+                              'points the same way. Anything over 75 feet long, 8 feet 6 inches wide, 13 '
+                              'feet 6 inches tall, or 80,000 pounds including truck, trailer, and cargo '
+                              'crosses the federal guideline, and every state layers its own limits on top '
+                              '[oQI9qiLLIwA @ 00:00:34]. Both treat the permit as mandatory. Trinity '
+                              'states that any load exceeding legal size or weight must be permitted in '
+                              'each state it travels through, with the exact route written onto the permit '
+                              'and significant fines for breaking its conditions [oQI9qiLLIwA @ 00:02:36]. '
+                              'Woods adds that the brokers who skip this homework are the ones calling for '
+                              'help after the truck is already rolling and the load is already losing '
+                              'money.',
+                              'Practitioners agree the equipment and the driver have to be matched to the '
+                              'piece, not to whatever truck happens to be posted on a load board. '
+                              'HeavyHaul HQ walks a Trail King spec as a checklist. A flip neck extends '
+                              'swing clearance and pushes more trailer weight onto the truck. A flip axle '
+                              'puts three axles on the ground when scaling. A pony motor kit powers the '
+                              'trailer hydraulics without truck wet lines [W5IGVlejm0s @ 00:01:58]. The '
+                              'same channel notes that a 55-ton trailer runs a 54.5-inch axle spread while '
+                              'a 60-ton unit runs a 60-inch spread, which can earn more allowed weight '
+                              'depending on the state [W5IGVlejm0s @ 00:05:09]. Over the Road, through ATS '
+                              'heavy haul operations manager Shelby, lays out the human side of the same '
+                              'rule. Drivers start as 7-axle operators on three-axle and 3+1 trailers, '
+                              'handling pieces up to 15 feet 6 inches wide, 14 feet 11 inches tall, or 120 '
+                              'feet on an expandable, and up to 80,000 pounds of piece weight [xRwL0v4jyOs '
+                              '@ 00:01:31]. Moving to multi-axle typically takes one to two years, plus a '
+                              'doubles and triples endorsement, specific classes, multiple multi-axle '
+                              'loads, and a claim-free record [xRwL0v4jyOs @ 00:02:20]. Matching axle '
+                              'count and operator class to the piece is the first control on every move.',
+                              'On the fleet side, practitioners agree that preventive maintenance and a '
+                              'work order system come before anything else. Yvette Aubin, CFO of Ebsary '
+                              "Foundation and chair of CFMA's National Heavy Construction Committee, ranks "
+                              'the lack of a preventive and predictive maintenance program as the top '
+                              "financial risk of owning heavy equipment. Next on Aubin's list is an "
+                              'underutilized fleet that keeps burning taxes, interest, registration, and '
+                              'insurance while it sits, followed by equipment rates that never make it '
+                              "back to the bidding department [sNcACw9iXI0 @ 00:07:20]. Aubin's first "
+                              'corrective step for any contractor lagging peers is to install a work order '
+                              'system and then focus it on preventive and predictive work [sNcACw9iXI0 @ '
+                              '00:20:16]. Equipment & Contracting gives owners the same instruction: build '
+                              'a schedule off mileage, time, engine hours, and fuel consumed, with a task '
+                              'checklist per machine, an operator system for logging inspections and '
+                              'complaints, and periodic staff meetings on fleet status [HIhx8sY-aac @ '
+                              '00:01:42]. Simply Fleet pitches the same workflow in software. Preventive '
+                              'maintenance is triggered by mileage, engine hours, or time. Inspections run '
+                              'on mobile, photo issue reports become work orders, and service history '
+                              'stays tied to each asset [z_9T-5cJEc0 @ 00:00:34]. The logic underneath is '
+                              'simple. Downtime on a machine becomes downtime on the job, and downtime on '
+                              'the job drives schedule and profitability.'],
+               'table': {'caption': 'Where heavy-haul and fleet practitioners line up',
+                         'headers': ['Consensus Point',
+                                     'What Practitioners Do',
+                                     'Why It Matters On The Move',
+                                     'Expert Source'],
+                         'rows': [['Bid from the piece specs before quoting',
+                                   'Pull exact dimensions and weight, then choose trailer and axle count',
+                                   'The trailer choice drives permits, escorts, fuel burn, and the final '
+                                   'rate',
+                                   'Freight Profits ([qHs0sXdzamw @ 00:04:13])'],
+                                  ['Price heavy haul as truck rate plus fixed costs',
+                                   'Stack permits, pilot cars, police, and power assistance on top of the '
+                                   'truck',
+                                   'Every added plus raises the total and sits outside the truck rate',
+                                   'Freight Profits ([qHs0sXdzamw @ 00:05:27])'],
+                                  ['Know the federal legal baseline cold',
+                                   'Check against 75 ft, 8 ft 6 in wide, 13 ft 6 in tall, and 80,000 lbs',
+                                   'Exceeding any single limit means a permit in every state traveled',
+                                   'Trinity Logistics ([oQI9qiLLIwA @ 00:00:34])'],
+                                  ['Spec heavy-haul trailer options at the factory',
+                                   'Order flip necks, flip axles, pony motors, tire inflation, and flip '
+                                   'ramps',
+                                   'Factory-installed flip ramps beat buying aftermarket parts later on',
+                                   'HeavyHaul HQ ([W5IGVlejm0s @ 00:04:22])'],
+                                  ['Climb the axle classes one step at a time',
+                                   'Start at 7-axle, move to multi-axle, then the Schnabel class',
+                                   'Moving from seven to multi-axle typically takes one to two years with '
+                                   'clean safety',
+                                   'Over the Road ([xRwL0v4jyOs @ 00:02:05])'],
+                                  ['Run preventive maintenance instead of reactive repairs',
+                                   'Track the share of work orders that are preventive and predictive',
+                                   'At 25 percent preventive, 75 percent of work orders are breakdowns or '
+                                   'major repairs',
+                                   'Beiing Human ([sNcACw9iXI0 @ 00:13:15])'],
+                                  ['Schedule service off actual usage, not the calendar alone',
+                                   'Trigger trucks on mileage and excavators on engine hours in one system',
+                                   'Mixed fleets across job sites stay in a single maintenance workflow',
+                                   'Simply Fleet ([z_9T-5cJEc0 @ 00:00:50])']]}},
+              {'heading': 'Section 2: Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['Woods prices superloads by walking the move state by state. The reference '
+                              'job was a CAT 777 off-road rock truck, roughly 145,000 pounds, 18 feet '
+                              'wide, and 16 feet tall. It called for a 13-axle setup on an 80-ton Trail '
+                              'King, run by Henderson Heavy Haul out of Grand Junction, Colorado '
+                              '[qHs0sXdzamw @ 00:04:13]. Loaded, the rig ran 125 feet long and 250,000 '
+                              'pounds, which made it a superload. Arizona required permits, pilot cars, '
+                              'and four state police on a night move that started at 10 p.m. Trinity '
+                              'Logistics confirms that extra-wide loads can trigger law enforcement '
+                              'escorts in some states, with their time usually paid by the hauling company '
+                              '[oQI9qiLLIwA @ 00:01:46]. Woods itemizes pilot pricing. The chase car bills '
+                              '$1.65 a mile, $85 per overnight, $250 a day plus hotel on a no-go, and a '
+                              'day rate near $600 when it moves under 300 miles. The pole car runs $1.85 '
+                              'to $2 a mile with a higher day rate because pole cars are harder to find '
+                              '[qHs0sXdzamw @ 00:09:06]. Nevada bans weekend travel, so arriving Friday '
+                              'meant three no-go days at $250 each, about $1,000 with hotels, while the '
+                              'pilots played keno. The Kenworth W990 pulling the load gets only about 1.8 '
+                              'miles per gallon on the crawls [qHs0sXdzamw @ 00:10:19].',
+                              'The second layer of the bid is routing and time. Woods warns that PC Miler '
+                              'or Rand McNally might show 863 miles, but the state issues the route, and '
+                              'that route can come back at 1,700 miles [qHs0sXdzamw @ 00:18:13]. The '
+                              'carrier is also pricing the empty leg. On the 777 move, the 13-axle had to '
+                              'deadhead about 1,200 miles to Gillette, Wyoming, because little big freight '
+                              'comes out of Seattle, and a carrier doing the job right bakes that leg into '
+                              'the number. That puts the move at $25 to $30 a mile on a 1,600-mile run, '
+                              'roughly a $50,000 job [qHs0sXdzamw @ 00:14:07]. Permit timing breaks pickup '
+                              'promises. The Washington permit took three weeks, and 500,000-pound pieces '
+                              'on 30-axle trailers can wait four months for route surveys [qHs0sXdzamw @ '
+                              '00:15:56]. Trinity Logistics puts permit fees anywhere from $15 to over $70 '
+                              'depending on the state and size. Some states charge application fees that '
+                              'drop or disappear once a frequent mover sets up an account, and states '
+                              'offer one-time, multiple-move, and annual permits for similar hauls '
+                              '[oQI9qiLLIwA @ 00:02:36]. Woods also tells brokers to stay out of rigging '
+                              'entirely unless they know cranes. Woods has watched people lose $25,000 to '
+                              '$30,000 after bidding rigging into a job without a clue.',
+                              'Fleet control runs on meter readings, logs, and allocation rules. In '
+                              'Onsite, a JCB is added as a meter-reading-based asset and tagged owned or '
+                              'rented, with the supplier named. The operator logs a start reading of 233 '
+                              'and a stop reading of 245, recording 12 hours of use, then enters 12 liters '
+                              'of diesel through save and add fuel and shares a PDF report with the team '
+                              '[djeL371Rgio @ 00:00:42]. The Profitable Contractor splits shared machines '
+                              "by the field log. Daily-rate rentals divide by each job's recorded "
+                              'equipment days, and hourly rentals divide by recorded hours. Off-rent is '
+                              "the confirmed billing stop, not the crew's last day of use [jLx7fLatA3A @ "
+                              "00:03:08]. The channel's worked example budgets $8,000 for materials, "
+                              '$1,000 for rental, and $3,000 for subcontracting. At $200 a day, ten rental '
+                              'days cost $2,000, materials creep to $8,400, and job gross profit drops '
+                              "$1,400. Aubin's company runs HCSS Equipment 360 telematics. When a backhoe "
+                              'threw three error codes for fuel and pressure loss, the team opened a '
+                              'ticket and sent a mechanic out before the machine failed [sNcACw9iXI0 @ '
+                              '00:16:49]. HCSS HeavyJob users describe replacing pen-and-paper timecards '
+                              'with iPad entry, where every job preloads its equipment and employees so '
+                              'foremen push a button instead of writing [Cbg13em0UgE @ 00:01:12].'],
+               'table': {'caption': 'Street numbers that go into a heavy-haul bid and fleet cost record',
+                         'headers': ['Cost Line',
+                                     'Stated Number',
+                                     'How It Hits The Bid Or Job',
+                                     'Expert Source'],
+                         'rows': [['Chase car pilot escort',
+                                   '$1.65 per mile, $85 overnight, $250 per day no-go plus hotel',
+                                   'Day rate climbs to about $600 when the move runs under 300 miles',
+                                   'Freight Profits ([qHs0sXdzamw @ 00:09:06])'],
+                                  ['Pole car pilot escort',
+                                   '$1.85 to $2.00 per mile with a higher day rate',
+                                   'Pole cars are harder to find, so overnights and no-gos cost more',
+                                   'Freight Profits ([qHs0sXdzamw @ 00:09:27])'],
+                                  ['Nevada weekend travel hold',
+                                   'Three no-go days at $250 per day for pilots',
+                                   'About $1,000 including hotels while the truck and pilots sit idle',
+                                   'Freight Profits ([qHs0sXdzamw @ 00:10:40])'],
+                                  ['Superload all-in line-haul rate',
+                                   '$25 to $30 per mile across a 1,600-mile run',
+                                   'Roughly a $50,000 move covering permits, police, truck margin, and '
+                                   'broker margin',
+                                   'Freight Profits ([qHs0sXdzamw @ 00:14:07])'],
+                                  ['State oversize permit fees',
+                                   'As little as $15 to over $70 per permit',
+                                   'Frequent movers can open accounts that reduce or drop application fees',
+                                   'Trinity Logistics ([oQI9qiLLIwA @ 00:02:36])'],
+                                  ['Shared equipment rental allocation',
+                                   '$200 per day example; ten days cost $2,000 against a $1,000 allowance',
+                                   'Split each bill by recorded days or hours per job number',
+                                   'The Profitable Contractor ([jLx7fLatA3A @ 00:06:07])'],
+                                  ['Broker authority and setup costs',
+                                   '$300 MC filing fee, bond just under $900 a year, startup around $2,600',
+                                   'Legal setup then runs about $190 a month before load boards',
+                                   'Matt Krause ([QBNPafDHXLE @ 00:03:03])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Moves that keep a heavy-haul bid and fleet ledger from bleeding',
+                           'body': 'Operators who have run superloads and heavy fleets point to small, '
+                                   'specific habits that protect the margin before the truck or machine '
+                                   'ever moves.',
+                           'items': ['Ask the carrier where the trailer goes after delivery. On the 777 '
+                                     'job the 13-axle deadheaded about 1,200 miles from Seattle to '
+                                     'Gillette, Wyoming, and that empty leg is already inside the rate '
+                                     '[Freight Profits — qHs0sXdzamw @ 00:15:17].',
+                                     'Order flip ramps with the trailer instead of buying them through '
+                                     'aftermarket parts later, and always run non-ethanol gas in the pony '
+                                     'motor [HeavyHaul HQ — W5IGVlejm0s @ 00:04:36].',
+                                     'Record the off-rent confirmation number or vendor acknowledgement '
+                                     "separately from the crew's last day of use, because idle equipment "
+                                     'on site keeps accruing charges [The Profitable Contractor — '
+                                     'jLx7fLatA3A @ 00:02:50].',
+                                     'Rent a crane for two to three months on a lease-to-own basis before '
+                                     'committing to buy, so the machine proves it does what the job needs '
+                                     '[Beiing Human — sNcACw9iXI0 @ 00:10:11].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Spec the piece and the trailer',
+                              'action': 'Collect exact dimensions and weight, check them against the legal '
+                                        'baseline, and pick the trailer and axle count.',
+                              'detail': 'Woods derives the trailer from the piece, such as a 145,000-lb, '
+                                        '18-ft-wide CAT 777 going onto a 13-axle setup [Freight Profits — '
+                                        'qHs0sXdzamw @ 00:04:13], and Trinity Logistics stresses knowing '
+                                        'exact dimensions to determine permits and support services '
+                                        '[Trinity Logistics — oQI9qiLLIwA @ 00:00:58].'},
+                             {'step': 2,
+                              'title': 'Build the plus stack',
+                              'action': 'Price permits, pilot cars, police, and power assistance as fixed '
+                                        'costs on top of the truck rate.',
+                              'detail': "Woods' Arizona leg needed permits, two pilot cars plus a pole "
+                                        'car, and four state police on a night move, all checked before '
+                                        'the quote went out [Freight Profits — qHs0sXdzamw @ 00:08:47].'},
+                             {'step': 3,
+                              'title': 'Lock route, permit timing, and travel windows',
+                              'action': 'Use the state-issued route mileage, add weekend bans and '
+                                        'deadhead, and set pickup dates around permit lead time.',
+                              'detail': "Woods' state route ran 1,700 miles against 863 on the mileage "
+                                        'software [Freight Profits — qHs0sXdzamw @ 00:18:13], and the '
+                                        'Washington superload permit alone took three weeks [Freight '
+                                        'Profits — qHs0sXdzamw @ 00:15:56].'},
+                             {'step': 4,
+                              'title': 'Close the loop in fleet records',
+                              'action': 'Log meter readings and fuel per asset, split shared equipment by '
+                                        'recorded use, and review every job weekly against budget.',
+                              'detail': 'The Profitable Contractor runs a weekly table of job number, cost '
+                                        'category, budget, commitments, invoices, credits, and missing '
+                                        'paperwork [The Profitable Contractor — jLx7fLatA3A @ 00:05:06], '
+                                        "and Aubin's first fix for any lagging fleet is a work order "
+                                        'system focused on preventive work [Beiing Human — sNcACw9iXI0 @ '
+                                        '00:20:16].'}]},
+              {'heading': 'Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['Scott Woods of Freight Profits runs heavy-haul brokerage on trust, not '
+                              'surveillance. Woods refuses the 9 a.m. check-call routine, lets crews run '
+                              'sun up to sun down, accepts a text, and when a location is needed calls the '
+                              'trucking company owner directly, mocking rookie brokers who demand '
+                              'mile-marker updates across Interstate 80 [qHs0sXdzamw @ 00:07:16]. The '
+                              'filter sits upstream: hand the load only to a carrier already trusted, with '
+                              'the rate and the requirements spelled out. Matt Krause plays the opposite '
+                              'tempo, answering every call and email within one minute, sending rate '
+                              'confirmations fast, leaning on automatic invoicing and shipment trackers, '
+                              'and eventually outsourcing all operations to spend 100% of the day hunting '
+                              'shippers [QBNPafDHXLE @ 00:10:16]. Krause pegs the industry-average margin '
+                              'around 15%, with strong relationships pushing 20 to 25%. The two also split '
+                              'on how a newcomer enters. Krause says a broker with zero experience can '
+                              'launch for roughly $2,600 in startup costs and win by going deep in one '
+                              'niche, naming heavy machinery and flatbed as examples [QBNPafDHXLE @ '
+                              '00:05:14]. Woods warns that everybody wants oversized and heavy-haul '
+                              'freight without knowing equipment, trailers, or fixed costs, and insists on '
+                              'a mentor who has actually moved loads before anyone bids this lane '
+                              '[qHs0sXdzamw @ 00:16:32].',
+                              'Yvette Aubin, CFO of Ebsary Foundation Company, comes down hard on '
+                              'ownership. The firm is not heavy on renting; the only rentals are '
+                              'lease-to-own trials, such as renting a crane for two to three months to '
+                              'confirm it performs before buying, and the purchase math leans on '
+                              'depreciation benefits plus a century-old pride in owning iron [sNcACw9iXI0 '
+                              "@ 00:10:11]. Aubin's counterweight is utilization: owned equipment sitting "
+                              'idle still burns taxes, interest if financed, registration fees, and '
+                              'insurance, so an underutilized fleet bleeds money [sNcACw9iXI0 @ 00:08:04]. '
+                              'Equipment & Contracting argues the other way on light units, saying there '
+                              'is no need to buy a work truck big enough to tow items rarely moved because '
+                              'a larger truck can be leased for the occasional super heavy load, while '
+                              'warning that leases punish operators who clock heavy miles or run jobs that '
+                              'are hard on a vehicle [Xv99UO78lCE @ 00:02:05]. The Profitable Contractor '
+                              'flags the rental trap from the cost side: the agreement controls minimum '
+                              'periods, weekend charges, and the event that stops billing, idle machines '
+                              "on site can keep accruing, and the crew's last day of use is not the same "
+                              'as off-rent confirmation [jLx7fLatA3A @ 00:02:32]. Each rental record '
+                              'carries the job number, start date, and return date.',
+                              'Software choice splits by what the fleet actually needs on a daily basis. '
+                              'Simply Fleet pitches a maintenance-first stack for mixed fleets, where a '
+                              'truck follows mileage-based service while an excavator follows engine '
+                              'hours, and steers buyers wanting a broad construction ecosystem to Tenna or '
+                              'HCSS and buyers needing only general maintenance management to MaintainX or '
+                              'Limble [z_9T-5cJEc0 @ 00:02:37]. Aubin runs HCSS Equipment 360 and rates '
+                              'its telematics boxes as intuitive: one backhoe threw three error codes '
+                              'pointing to fuel loss and pressure loss, a ticket went in, and a mechanic '
+                              'went out while the machine was still running [sNcACw9iXI0 @ 00:16:49]. '
+                              'Onsite takes a manual-entry route instead, logging start and stop meter '
+                              'readings or clock-based hours, diesel litres, and a photo per record, then '
+                              'exporting a PDF to share with the team [djeL371Rgio @ 00:01:06]. Trailer '
+                              'specs carry their own trade-offs worth weighing. HeavyHaul HQ notes '
+                              "Hendrickson's Pro Max tire inflation can push air into or out of a tire, "
+                              'while Meritor parts are sometimes easier to find on the road [W5IGVlejm0s @ '
+                              '00:03:24]. The same walkaround contrasts a 55-ton trailer with a 54.5-inch '
+                              'axle spread against a 60-ton unit at 60 inches that can sometimes scale '
+                              'more weight depending on the state.'],
+               'table': {'caption': 'Competing heavy-haul and fleet-control playbooks, side by side',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['How tightly to track heavy-haul carriers while loads move',
+                                   "Skip 9 a.m. check calls; text or call the carrier's owner",
+                                   'Answer every call and email within one minute and automate tracking',
+                                   'Freight Profits ([qHs0sXdzamw @ 00:07:16]); Matt Krause ([QBNPafDHXLE '
+                                   '@ 00:10:16])'],
+                                  ['How a new broker should break into oversized and heavy freight',
+                                   'Go deep in one niche such as heavy machinery or flatbed',
+                                   'Find a mentor who has actually moved loads before bidding heavy haul',
+                                   'Matt Krause ([QBNPafDHXLE @ 00:05:14]); Freight Profits ([qHs0sXdzamw '
+                                   '@ 00:16:32])'],
+                                  ['Whether to own heavy iron or rent and lease it',
+                                   'Buy outright; rent cranes only as two-to-three-month lease-to-own '
+                                   'trials',
+                                   'Skip oversized trucks for rare hauls and lease a larger one instead',
+                                   'Beiing Human ([sNcACw9iXI0 @ 00:10:11]); Equipment & Contracting '
+                                   '([Xv99UO78lCE @ 00:02:05])'],
+                                  ['Which fleet software stack anchors maintenance and equipment data',
+                                   'Simply Fleet links PM by mileage, engine hours, inspections, and work '
+                                   'orders',
+                                   'HCSS Equipment 360 telematics boxes flag predictive error codes on '
+                                   'running machines',
+                                   'Simply Fleet ([z_9T-5cJEc0 @ 00:02:37]); Beiing Human ([sNcACw9iXI0 @ '
+                                   '00:16:49])'],
+                                  ['How field crews capture equipment hours, fuel, and time data',
+                                   'HeavyJob iPad timecards preload jobs, equipment, and employees for '
+                                   'push-button entry',
+                                   'Onsite logs start and stop meter readings, photos, and diesel litres '
+                                   'per machine',
+                                   'HCSS Software ([Cbg13em0UgE @ 00:01:12]); Onsite Construction '
+                                   'Management Software ([djeL371Rgio @ 00:01:06])'],
+                                  ['Which tire inflation system to spec on a heavy-haul trailer',
+                                   'Hendrickson Pro Max lets air into or out of each tire',
+                                   'Meritor components are sometimes easier to find when broken down on '
+                                   'the road',
+                                   'HeavyHaul HQ ([W5IGVlejm0s @ 00:03:24])'],
+                                  ['Whether personal conveyance should stay uncapped for off-duty truck '
+                                   'moves',
+                                   'FMCSA rejected earlier cap petitions and sets no time or mileage limit',
+                                   'CVSA keeps pushing a two-hour cap, and carriers may ban PC outright',
+                                   'thatDOTcop ([zKmff6X7cQA @ 00:06:45]); thatDOTcop ([zKmff6X7cQA @ '
+                                   '00:08:14])']]}},
+              {'heading': 'Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ["The costliest heavy-haul mistakes in Scott Woods's files are bidding "
+                              'errors. One broker bid a load without knowing pilot cars were required, '
+                              'lost about five grand on the move, and watched the truck hold the load '
+                              'hostage [qHs0sXdzamw @ 00:03:03]. Former students who folded crane rigging '
+                              'into the job without understanding it lost $25,000 to $30,000 on a single '
+                              'load. Timing breaks naive bids too: the Washington permit on the Cat 777 '
+                              'move took three weeks, superloads can wait three weeks to a month, and '
+                              '500,000-pound moves on 30-axle trailers can sit four months while states '
+                              'run route surveys [qHs0sXdzamw @ 00:15:56]. Mileage lies on the bid sheet, '
+                              'because PC Miler may show 863 miles while the state-issued route runs 1,700 '
+                              '[qHs0sXdzamw @ 00:18:13]. Weekend curfews add dead cost on multi-state '
+                              'runs: Nevada bars weekend travel, so pilot cars sat Friday through Sunday '
+                              'at $250 a day plus hotels, roughly another $1,000 for doing nothing. The '
+                              "truck's 1,200-mile deadhead to Gillette, Wyoming, also lands in the rate "
+                              'whether the broker sees it or not. Trinity Logistics adds the enforcement '
+                              'edge: exact routes must be specified on each state permit, and missing a '
+                              'permit or breaking its conditions can bring significant fines [oQI9qiLLIwA '
+                              '@ 00:03:10].',
+                              'On the fleet side, Yvette Aubin names the missing preventive and predictive '
+                              'maintenance program as the top financial risk, because it forces a reactive '
+                              'shop that likely spends more. The diagnostic is blunt: if only 25% of 100 '
+                              'annual work orders are preventive or predictive, 75% are breakdowns, major '
+                              'repairs, or surprises [sNcACw9iXI0 @ 00:13:15]. Aubin also reports from '
+                              'CFMA heavy construction committee polls that only 20% of contractors run a '
+                              'work order system, calling it low-hanging fruit [sNcACw9iXI0 @ 00:20:33], '
+                              'and warns that buying seven significant pieces without fleet in the room, '
+                              'and without enough mechanics, turns the program reactive. Equipment & '
+                              'Contracting puts the field version plainly: nobody wants the key crane '
+                              'dying halfway through the job, and neglected routine maintenance ends in '
+                              'expensive repairs or outright replacement [HIhx8sY-aac @ 00:01:42]. The '
+                              'Profitable Contractor shows how quietly rentals and material creep bleed a '
+                              'job. In its illustration, a $200-a-day rental budgeted for five days runs '
+                              'ten, costing $2,000 against a $1,000 allowance; with materials creeping '
+                              'from $8,000 to $8,400, the job lands at $13,400 against a $12,000 budget '
+                              'and gross profit drops $1,400 [jLx7fLatA3A @ 00:06:30]. Charging a shared '
+                              "machine's whole bill to one job distorts every project involved, so split "
+                              'it by logged days or hours.',
+                              'Fleet control also breaks at the driver seat. thatDOTcop inspected a driver '
+                              'who logged 30 to 35 miles of personal conveyance to buy a sandwich at a '
+                              'spot closer to the next pickup; on paper it looked personal, but PC cannot '
+                              'be used to advance the load [zKmff6X7cQA @ 00:04:02]. The driver had no '
+                              'idea, and it became a teaching moment rather than a citation. Inspectors '
+                              'audit PC through GPS, distances, and timestamps in the eRODS view, and '
+                              'abuse can be written up as hours-of-service violations under falsified '
+                              'logs, triggering deeper inspections or out-of-service orders [zKmff6X7cQA @ '
+                              '00:10:28]. Carriers can legally limit or ban PC outright, and driving to '
+                              'maintenance, a truck wash, or back to the company yard after unloading does '
+                              'not qualify. On the load itself, Trinity Logistics warns that overloading '
+                              'degrades steering, braking, and speed control, while poor positioning and a '
+                              'top-heavy profile raise rollover risk and loose cargo can fall into traffic '
+                              '[oQI9qiLLIwA @ 00:01:13]. Equipment failures strand rigs far from help: '
+                              'FMCSA Registration dot com flags corroded battery terminals in temperature '
+                              'extremes, worn suspensions on heavy loads, and clogged air filters that cut '
+                              'fuel economy [6q-JpVNYBwE @ 00:01:29]. Every one of these costs compounds '
+                              'on a heavy-haul tractor that Woods clocked at roughly 1.8 miles per '
+                              'gallon.'],
+               'table': {'caption': 'Firsthand heavy-haul and fleet failures with the economics check that '
+                                    'prevents them',
+                         'headers': ['Failure Mode',
+                                     'Firsthand Cost Or Consequence',
+                                     'Economics Check Before Committing',
+                                     'Expert Source'],
+                         'rows': [['Bidding an oversize load without checking pilot car requirements',
+                                   'Broker lost about five grand and the truck held the load hostage',
+                                   'Price truck rate plus permits, pilot cars, police, and power '
+                                   'assistance',
+                                   'Freight Profits ([qHs0sXdzamw @ 00:03:03])'],
+                                  ['Folding crane rigging into the bid without real rigging knowledge',
+                                   'Former students lost $25,000 to $30,000 on a single load',
+                                   'Stay away from rigging entirely unless someone on the deal knows it',
+                                   'Freight Profits ([qHs0sXdzamw @ 00:16:48])'],
+                                  ['Promising next-day pickup on a superload still awaiting state permits',
+                                   'Washington permit took three weeks; 500,000-pound moves waited four '
+                                   'months',
+                                   'Build permit lead time and route surveys into the booking timeline',
+                                   'Freight Profits ([qHs0sXdzamw @ 00:15:56])'],
+                                  ['Quoting software mileage instead of the state-issued oversize route',
+                                   'PC Miler showed 863 miles while the state route reached 1,700',
+                                   'Wait for the permit route before locking the per-mile rate',
+                                   'Freight Profits ([qHs0sXdzamw @ 00:18:13])'],
+                                  ['Running a reactive fleet with few preventive or predictive work orders',
+                                   'Only 25% preventive work orders means 75% are breakdowns or repairs',
+                                   'Track preventive and predictive share of all work orders every year',
+                                   'Beiing Human ([sNcACw9iXI0 @ 00:13:15])'],
+                                  ['Leaving a rental on site after the crew stops using it',
+                                   'Ten rental days at $200 cost $2,000 against a $1,000 allowance',
+                                   "Record off-rent confirmation separately from the crew's last day of "
+                                   'use',
+                                   'The Profitable Contractor ([jLx7fLatA3A @ 00:06:30])'],
+                                  ['Logging personal conveyance that moves the truck toward the next '
+                                   'pickup',
+                                   'Inspector flagged 30 to 35 miles of PC as advancing the load',
+                                   'Annotate every PC move and always pick the nearest safe spot',
+                                   'thatDOTcop ([zKmff6X7cQA @ 00:04:02])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Four Stops Before Booking Or Dispatching Heavy Iron',
+                           'body': 'Each gate below comes straight from a loss, delay, or enforcement hit '
+                                   'the practitioners lived through. Clear all four before a rate goes out '
+                                   'or a truck rolls.',
+                           'items': ['Do not quote a heavy-haul or superload move until permit cost, pilot '
+                                     'cars, police escorts, and weekend curfews are priced in; the Nevada '
+                                     'weekend sit alone added about $1,000 in pilot car costs [Freight '
+                                     'Profits — qHs0sXdzamw @ 00:10:40].',
+                                     'Hold the per-mile rate until the state-issued route is in hand, '
+                                     'because an 863-mile PC Miler run can become 1,700 miles on permit '
+                                     '[Freight Profits — qHs0sXdzamw @ 00:18:13].',
+                                     'Confirm a work order system is live and fleet has a seat before '
+                                     'adding units; buying seven significant pieces without enough '
+                                     'mechanics turns the program reactive [Beiing Human — sNcACw9iXI0 @ '
+                                     '00:25:21].',
+                                     "Verify the carrier's PC policy and annotate every PC move with "
+                                     'reason, start, and stop time, since inspectors audit GPS, distances, '
+                                     'and timestamps [thatDOTcop — zKmff6X7cQA @ 00:09:05].']}}],
+ 'pull_quote': '"When you\'re bidding this it\'s going to be the truck rate plus plus or even plus plus '
+               'plus; those pluses mean permits, pilot cars, police, power assistance." — Freight Profits '
+               '(qHs0sXdzamw @ 00:05:27).',
+ 'diagram_id': 'diag-04',
+ 'action_checklist': ['Get exact dimensions and weight before choosing a trailer; the 145,000-pound, '
+                      '18-foot-wide, 16-foot-tall Cat 777 called for a 13-axle setup [Freight Profits — '
+                      'qHs0sXdzamw @ 00:04:13].',
+                      'Screen every load against the federal baseline of 75 ft length, 8 ft 6 in width, 13 '
+                      'ft 6 in height, and 80,000 lbs, and pull a permit in each state traveled when any '
+                      'limit is exceeded [Trinity Logistics — oQI9qiLLIwA @ 00:00:34].',
+                      'Price pilot cars line by line: chase car at $1.65 a mile, $85 overnight, $250 per '
+                      'no-go day plus hotel, about $600 day rate under 300 miles, and pole cars at $1.85 '
+                      'to $2 a mile [Freight Profits — qHs0sXdzamw @ 00:09:06].',
+                      'Set preventive maintenance by mileage, engine hours, or time so trucks and '
+                      'excavators run on their own triggers inside one system [Simply Fleet — z_9T-5cJEc0 '
+                      '@ 00:00:34].',
+                      'Require the job number on every purchase order and on all delivery, rental, and '
+                      'subcontractor paperwork before the weekly cost review [The Profitable Contractor — '
+                      'jLx7fLatA3A @ 00:07:13].',
+                      'Assign and release equipment against projects so inventory flips between available '
+                      'and in use with the job-site address attached [JobBadger | Field Crew Scheduling '
+                      'Software — HYAVjNrf5t4 @ 00:00:43].'],
+ 'statutory_citations': [{'title': 'Freight Profits — Freight Quotes For Heavy Haul & Oversize Loads '
+                                   '[00:05:27]',
+                          'url': 'https://www.youtube.com/watch?v=qHs0sXdzamw&t=327s',
+                          'relevance': 'Primary practitioner testimony on building heavy-haul bids as '
+                                       'truck rate plus permits, pilot cars, police, and power '
+                                       'assistance.'},
+                         {'title': 'Beiing Human — Fleet Strategy for Contractors: Preventive Maintenance, '
+                                   'KPIs & CFO Insights (Yvette Aubin) [00:13:15]',
+                          'url': 'https://www.youtube.com/watch?v=sNcACw9iXI0&t=795s',
+                          'relevance': 'Primary practitioner testimony on preventive versus reactive work '
+                                       'order share as the core fleet KPI.'},
+                         {'title': 'thatDOTcop — FMCSA Personal Conveyance Rules EXPLAINED! (What Truckers '
+                                   'MUST Know!) [00:05:07]',
+                          'url': 'https://www.youtube.com/watch?v=zKmff6X7cQA&t=307s',
+                          'relevance': 'Primary practitioner testimony on personal conveyance danger zones '
+                                       'and how inspectors catch misuse.'},
+                         {'title': 'Trinity Logistics — Oversize Load Regulations: What You Need to Know '
+                                   '[00:02:36]',
+                          'url': 'https://www.youtube.com/watch?v=oQI9qiLLIwA&t=156s',
+                          'relevance': 'Primary practitioner testimony on state-by-state oversize permits, '
+                                       'fees, and account setups for frequent movers.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'zKmff6X7cQA',
+                       'title': 'FMCSA Personal Conveyance Rules EXPLAINED! (What Truckers MUST Know!)',
+                       'channel': 'thatDOTcop',
+                       'author': 'thatDOTcop',
+                       'text': "I told him that's very sketchy grounds because you can't use PC to further "
+                               'the load.',
+                       'tip': "I told him that's very sketchy grounds because you can't use PC to further "
+                              'the load.',
+                       'timestamp': 257,
+                       'timestamp_seconds': 257,
+                       'timestamp_label': '[00:04:17]',
+                       'url': 'https://www.youtube.com/watch?v=zKmff6X7cQA&t=257s',
+                       'markdown': '[00:04:17](https://www.youtube.com/watch?v=zKmff6X7cQA&t=257s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'qHs0sXdzamw',
+                       'title': 'Freight Quotes For Heavy Haul & Oversize Loads',
+                       'channel': 'Freight Profits',
+                       'author': 'Freight Profits',
+                       'text': 'I just literally had a guy who bid a load, he ran the load and basically '
+                               "he didn't know he had to have pilot cars, he lost about five grand on that "
+                               'load.',
+                       'tip': 'I just literally had a guy who bid a load, he ran the load and basically he '
+                              "didn't know he had to have pilot cars, he lost about five grand on that "
+                              'load.',
+                       'timestamp': 169,
+                       'timestamp_seconds': 169,
+                       'timestamp_label': '[00:02:49]',
+                       'url': 'https://www.youtube.com/watch?v=qHs0sXdzamw&t=169s',
+                       'markdown': '[00:02:49](https://www.youtube.com/watch?v=qHs0sXdzamw&t=169s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'qHs0sXdzamw',
+                       'title': 'Freight Quotes For Heavy Haul & Oversize Loads',
+                       'channel': 'Freight Profits',
+                       'author': 'Freight Profits',
+                       'text': 'That permit in Washington took three weeks, and if they designate it a '
+                               'super load you could be waiting three weeks to a month.',
+                       'tip': 'That permit in Washington took three weeks, and if they designate it a '
+                              'super load you could be waiting three weeks to a month.',
+                       'timestamp': 956,
+                       'timestamp_seconds': 956,
+                       'timestamp_label': '[00:15:56]',
+                       'url': 'https://www.youtube.com/watch?v=qHs0sXdzamw&t=956s',
+                       'markdown': '[00:15:56](https://www.youtube.com/watch?v=qHs0sXdzamw&t=956s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'W5IGVlejm0s',
+                       'title': 'Choosing the Best: Heavy Haul Trailer Options Explained',
+                       'channel': 'HeavyHaul HQ',
+                       'author': 'HeavyHaul HQ',
+                       'text': 'One of the biggest sleeper features for heavy haul or regular trucking is '
+                               'tire inflation system.',
+                       'tip': 'One of the biggest sleeper features for heavy haul or regular trucking is '
+                              'tire inflation system.',
+                       'timestamp': 204,
+                       'timestamp_seconds': 204,
+                       'timestamp_label': '[00:03:24]',
+                       'url': 'https://www.youtube.com/watch?v=W5IGVlejm0s&t=204s',
+                       'markdown': '[00:03:24](https://www.youtube.com/watch?v=W5IGVlejm0s&t=204s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'oQI9qiLLIwA',
+                       'title': 'Oversize Load Regulations: What You Need to Know',
+                       'channel': 'Trinity Logistics',
+                       'author': 'Trinity Logistics',
+                       'text': 'Permit fees can range to as little as $15 or over $70, depending on the '
+                               'state and size of the load.',
+                       'tip': 'Permit fees can range to as little as $15 or over $70, depending on the '
+                              'state and size of the load.',
+                       'timestamp': 156,
+                       'timestamp_seconds': 156,
+                       'timestamp_label': '[00:02:36]',
+                       'url': 'https://www.youtube.com/watch?v=oQI9qiLLIwA&t=156s',
+                       'markdown': '[00:02:36](https://www.youtube.com/watch?v=oQI9qiLLIwA&t=156s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'xRwL0v4jyOs',
+                       'title': 'How to Move Up to Heavy Haul Trucking',
+                       'channel': 'Over the Road',
+                       'author': 'Over the Road',
+                       'text': 'Patience and persistence is key as it is typically 1 to two years to move '
+                               'from seven to multiaxle.',
+                       'tip': 'Patience and persistence is key as it is typically 1 to two years to move '
+                              'from seven to multiaxle.',
+                       'timestamp': 140,
+                       'timestamp_seconds': 140,
+                       'timestamp_label': '[00:02:20]',
+                       'url': 'https://www.youtube.com/watch?v=xRwL0v4jyOs&t=140s',
+                       'markdown': '[00:02:20](https://www.youtube.com/watch?v=xRwL0v4jyOs&t=140s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'z_9T-5cJEc0',
+                       'title': '5 Best Construction Fleet Management Software for Mixed Fleets in 2026 '
+                                '#constructionequipment',
+                       'channel': 'Simply Fleet',
+                       'author': 'Simply Fleet',
+                       'text': 'Set preventive maintenance by mileage, engine hours, or time.',
+                       'tip': 'Set preventive maintenance by mileage, engine hours, or time.',
+                       'timestamp': 34,
+                       'timestamp_seconds': 34,
+                       'timestamp_label': '[00:00:34]',
+                       'url': 'https://www.youtube.com/watch?v=z_9T-5cJEc0&t=34s',
+                       'markdown': '[00:00:34](https://www.youtube.com/watch?v=z_9T-5cJEc0&t=34s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'sNcACw9iXI0',
+                       'title': 'Fleet Strategy for Contractors: Preventive Maintenance, KPIs & CFO '
+                                'Insights (Yvette Aubin)',
+                       'channel': 'Beiing Human',
+                       'author': 'Beiing Human',
+                       'text': 'If I have 100 work orders for the year, and only 25% of them are '
+                               "preventative predictive maintenance, that means that I'm having 75% of the "
+                               'work orders be either breakdowns or major repairs.',
+                       'tip': 'If I have 100 work orders for the year, and only 25% of them are '
+                              "preventative predictive maintenance, that means that I'm having 75% of the "
+                              'work orders be either breakdowns or major repairs.',
+                       'timestamp': 795,
+                       'timestamp_seconds': 795,
+                       'timestamp_label': '[00:13:15]',
+                       'url': 'https://www.youtube.com/watch?v=sNcACw9iXI0&t=795s',
+                       'markdown': '[00:13:15](https://www.youtube.com/watch?v=sNcACw9iXI0&t=795s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'sNcACw9iXI0',
+                       'title': 'Fleet Strategy for Contractors: Preventive Maintenance, KPIs & CFO '
+                                'Insights (Yvette Aubin)',
+                       'channel': 'Beiing Human',
+                       'author': 'Beiing Human',
+                       'text': "Only 20% of contractors are using the work order system, so that's low "
+                               'hanging fruit.',
+                       'tip': "Only 20% of contractors are using the work order system, so that's low "
+                              'hanging fruit.',
+                       'timestamp': 1233,
+                       'timestamp_seconds': 1233,
+                       'timestamp_label': '[00:20:33]',
+                       'url': 'https://www.youtube.com/watch?v=sNcACw9iXI0&t=1233s',
+                       'markdown': '[00:20:33](https://www.youtube.com/watch?v=sNcACw9iXI0&t=1233s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'vMpMiRzIO2E',
+                       'title': 'Farm and Fleet Trailers | Construction & Contractor Trailers',
+                       'channel': 'Stellar Industries',
+                       'author': 'Stellar Industries',
+                       'text': 'You can pull them at 55, 60 miles an hour to the next field, and that is '
+                               'incredibly more productive than getting pulled down the road at 18 miles '
+                               'an hour behind a combine.',
+                       'tip': 'You can pull them at 55, 60 miles an hour to the next field, and that is '
+                              'incredibly more productive than getting pulled down the road at 18 miles an '
+                              'hour behind a combine.',
+                       'timestamp': 70,
+                       'timestamp_seconds': 70,
+                       'timestamp_label': '[00:01:10]',
+                       'url': 'https://www.youtube.com/watch?v=vMpMiRzIO2E&t=70s',
+                       'markdown': '[00:01:10](https://www.youtube.com/watch?v=vMpMiRzIO2E&t=70s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '6q-JpVNYBwE',
+                       'title': 'Semi-Truck Maintenance Tips Every Driver Should Know',
+                       'channel': 'FMCSA REGISTRATION dot com',
+                       'author': 'FMCSA REGISTRATION dot com',
+                       'text': 'For those who haul heavy loads, pay special attention to the suspension '
+                               'system.',
+                       'tip': 'For those who haul heavy loads, pay special attention to the suspension '
+                              'system.',
+                       'timestamp': 89,
+                       'timestamp_seconds': 89,
+                       'timestamp_label': '[00:01:29]',
+                       'url': 'https://www.youtube.com/watch?v=6q-JpVNYBwE&t=89s',
+                       'markdown': '[00:01:29](https://www.youtube.com/watch?v=6q-JpVNYBwE&t=89s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'djeL371Rgio',
+                       'title': 'How to Manage Construction Equipment in Onsite | Complete Equipment '
+                                'Tracking Tutorial',
+                       'channel': 'Onsite Construction Management Software',
+                       'author': 'Onsite Construction Management Software',
+                       'text': 'Now you can click on save or save and add fuel to record the diesel '
+                               'consumption.',
+                       'tip': 'Now you can click on save or save and add fuel to record the diesel '
+                              'consumption.',
+                       'timestamp': 66,
+                       'timestamp_seconds': 66,
+                       'timestamp_label': '[00:01:06]',
+                       'url': 'https://www.youtube.com/watch?v=djeL371Rgio&t=66s',
+                       'markdown': '[00:01:06](https://www.youtube.com/watch?v=djeL371Rgio&t=66s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'jLx7fLatA3A',
+                       'title': 'How to Track Material, Equipment & Subcontractor Costs by Job',
+                       'channel': 'The Profitable Contractor',
+                       'author': 'The Profitable Contractor',
+                       'text': 'Equipment sitting idle on site can still accrue charges.',
+                       'tip': 'Equipment sitting idle on site can still accrue charges.',
+                       'timestamp': 152,
+                       'timestamp_seconds': 152,
+                       'timestamp_label': '[00:02:32]',
+                       'url': 'https://www.youtube.com/watch?v=jLx7fLatA3A&t=152s',
+                       'markdown': '[00:02:32](https://www.youtube.com/watch?v=jLx7fLatA3A&t=152s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'HIhx8sY-aac',
+                       'title': 'Fleet Management Guide for Heavy Construction Equipment and Trucks',
+                       'channel': 'Equipment & Contracting',
+                       'author': 'Equipment & Contracting',
+                       'text': "Believe me, you don't want your key crane dying when you're halfway "
+                               'through the job.',
+                       'tip': "Believe me, you don't want your key crane dying when you're halfway through "
+                              'the job.',
+                       'timestamp': 102,
+                       'timestamp_seconds': 102,
+                       'timestamp_label': '[00:01:42]',
+                       'url': 'https://www.youtube.com/watch?v=HIhx8sY-aac&t=102s',
+                       'markdown': '[00:01:42](https://www.youtube.com/watch?v=HIhx8sY-aac&t=102s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Cbg13em0UgE',
+                       'title': 'HeavyJob Case Study | Companies Describe Their Favorite HeavyJob Features',
+                       'channel': 'HCSS Software',
+                       'author': 'HCSS Software',
+                       'text': 'I would say the time keeping is where we saw the biggest bang for the buck '
+                               'in the last few years.',
+                       'tip': 'I would say the time keeping is where we saw the biggest bang for the buck '
+                              'in the last few years.',
+                       'timestamp': 46,
+                       'timestamp_seconds': 46,
+                       'timestamp_label': '[00:00:46]',
+                       'url': 'https://www.youtube.com/watch?v=Cbg13em0UgE&t=46s',
+                       'markdown': '[00:00:46](https://www.youtube.com/watch?v=Cbg13em0UgE&t=46s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Xv99UO78lCE',
+                       'title': 'Building the Ultimate Work Truck | A Guide for Contractors and Equipment '
+                                'Suppliers',
+                       'channel': 'Equipment & Contracting',
+                       'author': 'Equipment & Contracting',
+                       'text': "It's not necessary to buy a work truck large enough to tow items that you "
+                               'rarely have to transport; in the event you have a super heavy load you can '
+                               'always lease a larger truck.',
+                       'tip': "It's not necessary to buy a work truck large enough to tow items that you "
+                              'rarely have to transport; in the event you have a super heavy load you can '
+                              'always lease a larger truck.',
+                       'timestamp': 125,
+                       'timestamp_seconds': 125,
+                       'timestamp_label': '[00:02:05]',
+                       'url': 'https://www.youtube.com/watch?v=Xv99UO78lCE&t=125s',
+                       'markdown': '[00:02:05](https://www.youtube.com/watch?v=Xv99UO78lCE&t=125s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'HYAVjNrf5t4',
+                       'title': 'Projects & Inventory in JobBadger | Track Equipment and Materials by Job '
+                                'Site',
+                       'channel': 'JobBadger | Field Crew Scheduling Software',
+                       'author': 'JobBadger | Field Crew Scheduling Software',
+                       'text': 'Once we assign the equipment to this job, we can see that in inventory '
+                               'this changes from available to in use and you can see the address where '
+                               'that is located.',
+                       'tip': 'Once we assign the equipment to this job, we can see that in inventory this '
+                              'changes from available to in use and you can see the address where that is '
+                              'located.',
+                       'timestamp': 43,
+                       'timestamp_seconds': 43,
+                       'timestamp_label': '[00:00:43]',
+                       'url': 'https://www.youtube.com/watch?v=HYAVjNrf5t4&t=43s',
+                       'markdown': '[00:00:43](https://www.youtube.com/watch?v=HYAVjNrf5t4&t=43s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'QBNPafDHXLE',
+                       'title': '6 Steps to Become a Freight Broker in 2026 (No Experience Needed)',
+                       'channel': 'Matt Krause',
+                       'author': 'Matt Krause',
+                       'text': 'As a new broker your margins are your bread and butter, especially on '
+                               'small loads; the industry average is around 15%.',
+                       'tip': 'As a new broker your margins are your bread and butter, especially on small '
+                              'loads; the industry average is around 15%.',
+                       'timestamp': 577,
+                       'timestamp_seconds': 577,
+                       'timestamp_label': '[00:09:37]',
+                       'url': 'https://www.youtube.com/watch?v=QBNPafDHXLE&t=577s',
+                       'markdown': '[00:09:37](https://www.youtube.com/watch?v=QBNPafDHXLE&t=577s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'}]}

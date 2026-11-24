@@ -1,469 +1,803 @@
 from __future__ import annotations
 
-CHAPTER_1 = {
-    "id": "Q1",
-    "chapter_id": "Q1",
-    "chapter_number": 1,
-    "question_number": 1,
-    "slug": "what-exactly-is-high-ticket-brokerage",
-    "question_prompt": "What exactly is high-ticket brokerage, how is real operator revenue recognized vs underlying asset/client GMV, and what separates durable small-team moats from fragile beginner hype?",
-    "kicker": "Q1 / THE BIG MONEY PLAYBOOKS",
-    "title": "What Exactly Is High-Ticket Brokerage?",
-    "subtitle": "Exclusive Mandates, Asset-Specific Licensing, NCNDA Enforcement, Escrow Waterfalls, and Retained Commission Economics",
-    "layout_template": "opportunity_overview",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "High-ticket brokerage converts verified access, transaction judgment, and closing execution into retained commissions, not ownership of the assets changing hands. Candidate #26 holds Rank #10 among 29 opportunities with an 88/100 Money-to-Manpower Score and 21 mapped plays. Its durable version combines narrow specialization, exclusive mandates, qualified counterparties, documented agency, and independent settlement. Annual owner net profit is $25,000 Conservative, $206,250 Base, and $500,000 Scaled, against retained commission revenue of $100,000, $550,000, and $1,000,000. This chapter separates repeatable small-team brokerage from speculative introductions, then examines the additional capital, licensing, professional duties, and investor restrictions surrounding Arizona ABS ownership, litigation-finance docket transactions, and solar tax-equity partnerships."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$100,000",
-            "context": "Annual retained transaction commissions; underlying asset values excluded",
-            "note": "25% net margin; $25,000 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Base",
-            "value": "$550,000",
-            "context": "Annual retained transaction commissions; underlying asset values excluded",
-            "note": "37.5% net margin; $206,250 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$1,000,000",
-            "context": "Annual retained transaction commissions; underlying asset values excluded",
-            "note": "50% net margin; $500,000 annual owner net profit; 2 FT + 4 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Sell Transaction Certainty, Not Access to Expensive Listings",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "High-ticket brokerage is an agency business in which an operator originates, qualifies, structures, and helps close transactions involving expensive assets or enterprises. The operator earns a contractually defined commission for an authorized service; the seller retains the asset until transfer, and the buyer supplies the purchase consideration. A $10 million acquisition therefore does not create $10 million of broker revenue. If the engagement produces a $200,000 commission and another intermediary is contractually entitled to $50,000, the scorecard counts $150,000 of retained transaction commissions. Ownership investing, lending principal, customer deposits, escrow balances, and recoverable expense advances sit outside that revenue boundary. Even a prominent listing is not inventory unless the operator actually owns it. The practical product is a defensible path from a verified seller to a capable buyer through diligence and settlement. That requires knowing who can sell, what is being transferred, which representations can be supported, and precisely when compensation becomes earned. A narrow operator can outperform a larger generalist by resolving one expensive uncertainty repeatedly: aircraft maintenance exposure, equipment liens, transferable customer contracts, or the financing conditions that prevent an acquisition from closing. These are operating capabilities, not merely a larger contact list."
-                ),
-                (
-                    "Start with a written mandate identifying the principal, asset perimeter, exclusivity, term, termination rights, fee basis, payment trigger, and any protected-buyer tail. Specify whether the fee applies to cash at closing, assumed debt, seller notes, earnouts, or working-capital adjustments; enterprise value and cash proceeds are different denominators. A staged earnout generally needs a staged commission mechanism rather than an unsupported assumption that every contingent dollar has already been earned. Use an NDA for information protection and, when commercially appropriate, a narrowly drafted NCNDA for named introductions and non-circumvention obligations. Neither document creates a brokerage license, cures an unlawful fee, or binds a buyer that never signed it. Maintain an introduction register with legal entity names, timestamps, acknowledgment, and prior-contact exceptions. Give a seller a defined list of protected parties when an engagement ends instead of asserting ownership over an entire industry. Establish agency and conflicts before sharing buyer identities, especially when both sides might pay. A fee dispute often begins with a perfectly real transaction and a poorly defined entitlement. The durable operator makes compensation inspectable before making the opportunity widely visible and keeps a signed amendment trail whenever the transaction structure changes."
-                ),
-                (
-                    "The five archetypes below share a transaction process but not a universal permission set. A real-estate license does not authorize securities placement, an equipment mandate does not authorize aircraft registration advice, and an Arizona law-firm ownership license does not authorize every nationwide referral arrangement. Business sales may involve assets, securities, real property, or several together. Evaluate the federal M&A broker exemption in 15 U.S.C. § 78o(b)(13) against the actual transaction and intermediary conduct; it is conditional and does not erase state requirements. A durable moat combines a source of exclusive mandates, a permissioned buyer database, specialized diligence templates, and a record of accurate closing estimates. A fragile beginner operation buys contact lists, republishes public listings, and treats unsigned expressions of interest as pipeline. Platforms such as BizBuySell, Axial, Controller, and LoopNet help discover counterparties, but platform access is neither an exclusive relationship nor proof of buying capacity. Protect the business by measuring verified mandates, buyer funding evidence, diligence completion, and realized retained fees. Decline transactions whose economics depend on hiding a lien, bypassing a required license, or pretending an introduction provides control over the underlying asset. Reputation compounds only when the evidence survives inspection."
-                ),
-            ],
-            "table": {
-                "caption": "Five Operator Archetypes: Mandate, Compensation, and Defensible Specialization",
-                "headers": [
-                    "Operator archetype and practical transaction boundary",
-                    "Mandate and retained compensation design",
-                    "Durable small-team operating advantage",
-                    "Failure trigger and immediate operating response",
-                ],
-                "rows": [
-                    [
-                        "Lower-middle-market business sale intermediary serving owner-operated company exits",
-                        "Exclusive seller engagement with explicitly defined closing commission denominator",
-                        "Axial relationships plus repeatable quality-of-earnings and buyer qualification workflows",
-                        "Securities exemption fails; use registered intermediaries or stop covered activity",
-                    ],
-                    [
-                        "Industrial equipment specialist transferring identifiable machinery rather than operating companies",
-                        "Negotiated percentage commission retained after documented outside broker entitlements",
-                        "Machinio discovery paired with serial-number history and independent inspections",
-                        "Unreleased security interest appears; obtain payoff and release before settlement",
-                    ],
-                    [
-                        "Aircraft and yacht specialist coordinating inspection-heavy movable asset transfers",
-                        "Written commission schedule covering deposits, cancellations, and final delivery conditions",
-                        "Controller or YachtWorld sourcing plus technical inspection and title expertise",
-                        "Material inspection discrepancy emerges; renegotiate transparently or terminate under contract",
-                    ],
-                    [
-                        "Commercial property intermediary handling licensed real-estate agency and transaction execution",
-                        "State-authorized agency agreement with disclosed cooperating broker compensation arrangements",
-                        "LoopNet prospecting complemented by tenant diligence and local financing relationships",
-                        "Licensure or agency defect appears; suspend activity and resolve authority",
-                    ],
-                    [
-                        "Special situations arranger coordinating regulated professional or investment transaction services",
-                        "Separately authorized intermediary compensation distinct from legal fees and investment principal",
-                        "Licensed partners, restricted data rooms, and transaction-specific legal structuring knowledge",
-                        "Unlawful fee sharing or placement emerges; halt solicitation and restructure",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Build Evidence That Survives the Closing Table",
-                "body": "Experienced brokers protect the fee by removing ambiguity before distributing the opportunity.",
-                "items": [
-                    "Attach a sample fee calculation to every mandate, including assumed debt, seller notes, earnouts, and cooperating broker deductions.",
-                    "Require written acknowledgment of named introductions; record preexisting buyer relationships before relying on a protected-buyer tail.",
-                    "Ask the proposed escrow provider to review the commission instruction early, then reconcile the final instruction against the signed engagement.",
-                    "Maintain a redacted proof-of-close file containing mandate authority, diligence exceptions, fee entitlement, and settlement evidence for future referrals.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Reconcile Retained Commissions to Owner Profit and Cash Survival",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "The canonical cases measure retained transaction commissions, not asset throughput. Conservative revenue is $100,000, with $75,000 of operating costs and $25,000 of annual owner net profit at a 25% margin. Base revenue is $550,000, with $343,750 of costs and $206,250 of profit at 37.5%. Scaled revenue is $1,000,000, with $500,000 of costs and $500,000 of profit at 50%. Conservative and Base each use one full-time operator plus three contractors; Scaled uses two full-time staff plus four contractors, six people in total. These are annual scenario identities, not monthly salary promises. Illustratively, four closings retaining $25,000 each produce Conservative revenue; eleven retaining $50,000 produce Base; ten retaining $100,000 produce Scaled. Those deal counts illustrate the supplied totals rather than establish market conversion rates. At a hypothetical 2% retained yield, the same revenues correspond to $5 million, $27.5 million, and $50 million of asset consideration. None of that consideration becomes brokerage revenue. Larger transactions can improve revenue per employee, but they also concentrate exposure to one financing failure, diligence defect, or seller withdrawal. Maintain the distinction in every sales dashboard, lender presentation, and investor discussion."
-                ),
-                (
-                    "Build a deal ledger that separates signed opportunity, conditional fee entitlement, earned commission, receivable, collected cash, and later reversal. For the scorecard, retained revenue excludes the underlying purchase price and amounts owed to outside intermediaries. Financial-statement gross-versus-net presentation still requires a principal-agent assessment; the scorecard convention does not settle that accounting question. Recognition follows the engagement's enforceable earning conditions and the applicable accounting policy, not a CRM stage or an optimistic closing date. A refundable advance remains a liability while refundable, and an unearned deposit cannot fund an owner distribution merely because it reached a bank account. Where an advance ultimately offsets the same commission, count the earned commission once. Separate stand-alone consulting fees from these canonical scenarios rather than quietly increasing brokerage revenue. Require a commission statement showing the contractual fee, outside entitlements, retained amount, collection timing, and any refund or contingent-payment exposure. Reconcile it to the signed closing statement and bank receipt. Record subsequent cancellations, contractual clawbacks, or fee concessions against the affected deal so management can distinguish weak pricing from failed collections. This discipline prevents an apparently healthy pipeline from concealing an insolvent cash position."
-                ),
-                (
-                    "Startup capital of $15,000–$100,000 and monthly operating expense of $3,000–$18,000 describe entry resources and baseline running costs, not an automatic reconciliation to every annual scenario expense. The scenario cost totals also need transaction-dependent contractor compensation, acquisition spending, insurance, diligence, travel, and professional support. Avoid counting outside fee entitlements twice when they have already been excluded from retained revenue. Time to first deal is 3–12 months, so liquidity must be tested against the slow end. At $8,000 monthly fixed burn, nine months without a closing consumes $72,000 before exceptional diligence costs. A $15,000 launch budget therefore requires a substantially leaner operating plan or another committed funding source. Model expected receipts separately: eight qualified mandates multiplied by a hypothetical 25% close probability and $50,000 retained fee produces $100,000 of probability-weighted pipeline, not earned revenue or spendable cash. Stress two closings slipping a quarter and the largest buyer losing financing. Keep contractor scopes milestone-based, obtain principal authorization for reimbursable expenses, and avoid paying all acquisition costs before verifying authority. Scale only after realized fee yield, collection lag, and failed-deal costs are observable across completed transactions."
-                ),
-            ],
-            "table": {
-                "caption": "Canonical Annual Economics and the Cash-to-Revenue Reconciliation",
-                "headers": [
-                    "Scenario or transaction accounting checkpoint",
-                    "Retained revenue calculation and excluded amounts",
-                    "Cost, margin, and owner profit treatment",
-                    "Staffing or evidence required for reconciliation",
-                ],
-                "rows": [
-                    [
-                        "Conservative annual case using four illustrative completed transactions",
-                        "$100,000 retained revenue equals four closings retaining $25,000 each",
-                        "$75,000 annual costs leave $25,000 owner profit at 25%",
-                        "One full-time operator and three contractors support verified completed mandates",
-                    ],
-                    [
-                        "Base annual case using eleven illustrative completed transactions",
-                        "$550,000 retained revenue equals eleven closings retaining $50,000 each",
-                        "$343,750 annual costs leave $206,250 owner profit at 37.5%",
-                        "One full-time operator and three contractors require disciplined milestone allocation",
-                    ],
-                    [
-                        "Scaled annual case using ten illustrative completed transactions",
-                        "$1,000,000 retained revenue equals ten closings retaining $100,000 each",
-                        "$500,000 annual costs leave $500,000 owner profit at 50%",
-                        "Two full-time staff and four contractors total six operating people",
-                    ],
-                    [
-                        "Outside intermediary entitlement deducted from the scorecard revenue boundary",
-                        "$200,000 contractual commission less $50,000 outside entitlement retains $150,000",
-                        "Do not deduct that same entitlement again within operating expenses",
-                        "Signed fee allocation and settlement instruction establish each party's entitlement",
-                    ],
-                    [
-                        "Refundable advance received before contractual commission earning conditions occur",
-                        "$20,000 refundable cash remains outside earned commission until conditions resolve",
-                        "Maintain liability accounting and preserve capacity to return refundable amounts",
-                        "Engagement terms and bank reconciliation distinguish deposits from earned receipts",
-                    ],
-                    [
-                        "Probability-weighted pipeline used solely for planning future cash requirements",
-                        "Eight mandates times 25% times $50,000 produces $100,000 planning value",
-                        "No recognized profit arises merely from estimating successful future closings",
-                        "Document assumptions and compare forecasts against actual settlement dates monthly",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "3. Compare Sub-Verticals Without Confusing Brokerage with Regulated Ownership",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "The 21 mapped plays are a research universe, not interchangeable permissions or revenue streams. Three especially complex TRACK_1 plays require separate treatment. In arizona_abs_mass_tort_cocounsel, Arizona ABS ownership can permit approved nonlawyer economic participation in a licensed law firm. Arizona Supreme Court Rule 31.1(c) and ACJA § 7-209 establish the relevant authorization framework; Arizona removed its own ER 5.4 restriction, not the ABA model rule nationwide. Ownership approval does not authorize purchasing clients or distributing legal fees through an ordinary brokerage entity. Licensed attorneys must control legal judgment, supervise substantive intake, verify primary documents, and satisfy applicable solicitation, conflict, confidentiality, and co-counsel requirements. Institutional assault, juvenile detention, clergy, boarding-school, medical, and rideshare claims require jurisdiction-specific limitation and revival analysis. Catastrophic injury claims demand the same evidentiary discipline. The cited $50,000–$400,000-plus fee opportunities are case-specific hypotheses, not scheduled payments. Illustratively, a $1 million recovery at a 35% contingency generates $350,000 of gross legal fees; a permitted 40% co-counsel allocation would be $140,000 before expenses and firm costs. Neither figure belongs automatically in brokerage revenue. In restrictive states, consider a properly structured MSO with permissible service compensation, never disguised fee sharing. Blend suitable single-event cases with longer dockets without compromising client interests or promising settlement speed."
-                ),
-                (
-                    "In litigation_finance_mass_tort_docket_securitization, the proposed 1,000–25,000-client scale at $1,200–$2,500 acquisition cost implies $1.2 million–$62.5 million before verification, legal work, and financing charges. That is institutional capital deployment, not the chapter's small-team startup budget. A 1,000-client example at $1,800 acquisition plus $200 verification per client requires $2 million. A proposed 2.5x–4x transfer price implies $5 million–$8 million, but only an enforceable, transferable economic interest can support such a transaction; plaintiffs and confidential files are not freely tradable inventory. Offloading 50% of the $2 million cost basis raises $1 million of funding, not brokerage revenue. A hypothetical permitted 1% arranging fee would be $10,000 only if the intermediary can lawfully earn it. PFAS, AFFF, Paraquat, NEC, rideshare, and device matters require separate causation, eligibility, and limitation analysis. Neither 35–40% contingency assumptions nor an MDL's existence establish recovery or a funder's entitlement. The frequently cited $6.50 HIPAA electronic-copy option is not a universal HITECH third-party records tariff; test request scope under 45 CFR § 164.524 and current rules. Diversify across 6–10 genuinely different exposures where feasible. Pay vendors only for contractually lawful, verified deliverables; EMR verification does not legalize paid referrals. Use staged funding and early partial risk transfer only when compatible with client duties, confidentiality, and funding restrictions."
-                ),
-                (
-                    "In solar_tax_equity_depreciation_strip_syndication, arrange genuine commercial-solar equity ownership rather than advertise depreciation as a detachable product. Partnership-flip economics allocate supported tax items and cash flows among real owners under an independently reviewed agreement. Section 704(b) allocation requirements, Section 7701(o) economic substance where applicable, Section 168 depreciation rules, and Sections 48 or 48E credit eligibility each address different questions. Section 50 recapture can change the economics after closing. Confirm current construction, placed-in-service, ownership, and other statutory conditions instead of copying a historical project model. A hypothetical $10 million project capitalized with $4 million of tax-equity investment does not produce $4 million of broker revenue. A lawfully payable 1.5% fee on that investment would produce $60,000 before outside entitlements and operating costs. Transaction-based compensation for selling partnership interests raises broker-dealer issues under 15 U.S.C. § 78o(a); calling it consulting does not change the underlying activity. Suspend solicitation and closing when authority or substance fails, then use appropriately licensed intermediaries and independently reviewed genuine ownership. The comparison matrix distinguishes negotiated brokerage economics from marketplace access and investment capital. Its percentage and fixed-fee descriptions are contractual structures, not asserted platform tariffs. Select a vertical by evidence quality and executable permissions, not by its largest advertised asset value."
-                ),
-            ],
-            "table": {
-                "caption": "Eighteen Sub-Verticals: Named Discovery Rails, Fee Structures, Moats, and Failure Triggers",
-                "headers": [
-                    "Sub-vertical and named discovery or diligence rail",
-                    "Negotiated operator fee structure and revenue boundary",
-                    "Defensible specialist advantage beyond public listing access",
-                    "Clawback or closing failure trigger with practical fallback",
-                ],
-                "rows": [
-                    [
-                        "Owner-operated business acquisitions sourced through BizBuySell and Axial relationships",
-                        "Negotiated success commission on expressly defined acquisition consideration actually covered",
-                        "Normalized earnings review and buyer funding verification before seller introductions",
-                        "Financing contingency fails; preserve confidentiality and reactivate previously qualified buyers",
-                    ],
-                    [
-                        "SaaS company transfers discovered through Acquire.com and founder referral networks",
-                        "Contractual closing commission excludes software revenue belonging to the acquired company",
-                        "Stripe reconciliation, customer concentration analysis, and transferable intellectual property evidence",
-                        "Code ownership defect emerges; secure assignments before releasing closing funds",
-                    ],
-                    [
-                        "Ecommerce business acquisitions researched through Flippa and seller-authorized Shopify exports",
-                        "Negotiated acquisition commission excludes merchant sales and inventory purchase principal",
-                        "Amazon account restrictions and contribution-margin reconciliation separate durable earnings from promotion",
-                        "Platform transfer restrictions block closing; restructure only with documented platform permission",
-                    ],
-                    [
-                        "Commercial investment property opportunities researched through LoopNet and Crexi listings",
-                        "Licensed agency commission follows engagement terms and cooperating broker allocation",
-                        "Lease abstraction, tenant estoppels, and lender-ready property operating statements",
-                        "Title exception or tenant discrepancy appears; obtain cure before funding",
-                    ],
-                    [
-                        "Private aircraft transactions sourced through Controller and specialist owner relationships",
-                        "Negotiated brokerage commission excludes aircraft price and refundable buyer deposit",
-                        "Maintenance-log analysis, independent prebuy coordination, and FAA record investigation",
-                        "Undisclosed damage or lien appears; pause escrow pending documented resolution",
-                    ],
-                    [
-                        "Large yacht transactions researched through YachtWorld and specialist vessel networks",
-                        "Negotiated commission subject to mandate, survey provisions, and broker sharing",
-                        "Survey coordination, ownership verification, and documented delivery jurisdiction planning",
-                        "Survey reveals structural defects; invoke negotiated repair or termination provisions",
-                    ],
-                    [
-                        "Heavy construction equipment sales sourced through MachineryTrader and fleet relationships",
-                        "Negotiated percentage or fixed closing commission excludes equipment purchase principal",
-                        "Serial-number verification, utilization evidence, and coordinated UCC lien release",
-                        "Inspection contradicts advertised condition; disclose findings and reprice or withdraw",
-                    ],
-                    [
-                        "Industrial production machinery transfers researched through Machinio and factory networks",
-                        "Contractual success fee defines treatment of dismantling and installation costs",
-                        "Independent operating demonstrations and rigging plans reduce expensive relocation uncertainty",
-                        "Removal logistics become uneconomic; obtain revised quotes before binding delivery commitments",
-                    ],
-                    [
-                        "Commercial truck fleet disposals researched through TruckPaper and fleet managers",
-                        "Negotiated per-unit or percentage commission applies only to completed transfers",
-                        "VIN-level title, maintenance, emissions, and lien reconciliation across entire fleets",
-                        "Title mismatch blocks a unit; segregate disputed vehicles from clean closings",
-                    ],
-                    [
-                        "Agricultural equipment brokerage researched through TractorHouse and regional dealer relationships",
-                        "Negotiated transaction commission excludes financed principal and customer trade-in equity",
-                        "Seasonal buyer matching supported by service records and inspection scheduling",
-                        "Harvest timing or credit failure delays demand; maintain alternate qualified buyers",
-                    ],
-                    [
-                        "Dental practice transfers researched through ADA Practice Transitions and local networks",
-                        "Permitted acquisition commission is distinct from payment for patient referrals",
-                        "Provider ownership analysis, lease assignment planning, and patient-record continuity diligence",
-                        "Ownership restriction or payer issue emerges; resolve structure before solicitation continues",
-                    ],
-                    [
-                        "Veterinary practice acquisitions researched through VetPartners and established practice advisers",
-                        "Negotiated transaction commission reflects permitted asset or enterprise sale services",
-                        "Associate retention planning, facility diligence, and verified practice-level operating earnings",
-                        "Key clinician departure changes economics; renegotiate retention and purchase assumptions",
-                    ],
-                    [
-                        "Hotel property acquisitions researched through Ten-X and hospitality owner relationships",
-                        "Licensed property commission excludes hotel operating receipts and acquisition financing",
-                        "Franchise transfer diligence and property improvement plan cost verification",
-                        "Franchisor conditions destroy returns; revise underwriting before waiving financing protections",
-                    ],
-                    [
-                        "Marina acquisitions researched through Crexi and waterfront property owner networks",
-                        "Negotiated licensed brokerage compensation separates property interests from business consideration",
-                        "Submerged-land rights, environmental records, and slip-income verification support defensible valuation",
-                        "Permit transfer or environmental issue fails; require resolution before settlement",
-                    ],
-                    [
-                        "Premium domain transactions researched through Sedo and independently verified registrars",
-                        "Negotiated commission excludes domain purchase funds held by independent escrow",
-                        "Registrar control verification and documented ownership history reduce transfer fraud",
-                        "Ownership dispute or transfer lock appears; stop release until resolved",
-                    ],
-                    [
-                        "Arizona ABS case collaboration using Arizona court records and Clio workflows",
-                        "Approved firm economics and lawful co-counsel allocations are not ordinary brokerage commissions",
-                        "Attorney-led evidence verification and properly licensed ownership support legitimate execution",
-                        "Referral or ownership structure fails; stop intake channel and correct arrangements",
-                    ],
-                    [
-                        "Litigation-finance diligence using PACER and permissioned Litify matter management records",
-                        "Lawful arranging fees remain separate from funding principal and legal recoveries",
-                        "Verified eligibility, funding covenants, and controlled confidential information support diligence",
-                        "Case eligibility or transfer rights fail; reject tranche and preserve records",
-                    ],
-                    [
-                        "Commercial solar equity opportunities researched through EnergyBin and NREL project resources",
-                        "Authorized placement compensation excludes equity principal and allocated project tax benefits",
-                        "Independent production underwriting and reviewed partnership allocations support genuine ownership",
-                        "Tax qualification or securities authority fails; suspend solicitation and restructure",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "4. Operate a Permissioned Closing System That a Small Team Can Audit",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Build the operating system around a deal identifier that persists from first contact through settlement. In HubSpot or Pipedrive, separate seller authority, buyer qualification, diligence, definitive documents, financing, and closing readiness into evidence-backed fields. Store signed mandates and introduction acknowledgments in a controlled document repository; use DocuSign for execution and a permissioned data room such as Firmex for sensitive diligence. Buyer-seller matching can rank fit using asset size, geography, financing limits, acquisition history, and stated exclusions. It must not invent purchasing capacity or distribute confidential material automatically. Deal milestone tracking should identify the responsible person, due date, dependency, and source document. Document checklists should vary by asset: aircraft logs differ from UCC searches, and clinical records require substantially tighter handling than equipment specifications. Restrict access by role and transaction, expire external links, and log downloads where supported. Keep medical records outside general sales tools unless the environment and agreements are appropriate for that information. Automation reduces administrative delay, but the operator remains responsible for claims sent to counterparties. A fabricated maintenance summary or unsupported earnings adjustment can create a misrepresentation claim even when generated by software rather than typed manually."
-                ),
-                (
-                    "Before marketing, verify the seller's identity and authority through entity records, governing documents, and direct contact using independently obtained details. For financed equipment, inspect UCC records and obtain payoff information; a clean search alone does not prove ownership or eliminate every competing interest. UCC § 9-315 generally preserves a security interest after disposition unless an authorization or other applicable rule changes the result. For aircraft, inspect FAA records and obtain specialist title work appropriate to the transaction. For property, use licensed title and escrow providers under the applicable jurisdiction's rules. The broker should not become an improvised escrow holder. Route buyer principal to the authorized settlement provider, maintain separation from operating cash, and verify changed wire instructions through a known callback channel. Independently confirm the recipient institution and beneficiary against executed documents. A forwarded email from a familiar name is insufficient. At closing, match asset identity, consideration, lien releases, signatures, commission entitlement, and disbursement instructions. If any mismatch survives, pause funding rather than promise to repair it afterward. The cost of one delayed closing is usually smaller than the damage from distributing disputed funds or releasing an asset without effective payment."
-                ),
-                (
-                    "Run a weekly pipeline review around evidence decay rather than optimistic stage labels. Reconfirm buyer funding after material price changes, refresh seller authority after ownership changes, and revisit regulatory classification when an asset sale becomes an equity sale. Track days from mandate to qualified offer, offer to definitive agreement, and agreement to collected commission. Measure failed-deal spending separately from completed-deal costs, and record whether failures arose from controllable diligence omissions or external financing conditions. The principal operator owns relationship judgment and negotiations; contractors provide scoped legal, technical, valuation, or administrative work within their qualifications. The Scaled case adds a second full-time person only when handoffs and recordkeeping are repeatable, not simply because the pipeline looks large. After settlement, issue a reconciliation packet, document unresolved contingent payments, restrict former buyer access, and schedule any contractual follow-up. Review insurance coverage for the actual activities performed, including professional liability and cyber exposure where relevant. The six-person model works when specialists solve defined problems rather than attend every call. Durable high-ticket brokerage is a compact evidence system with trusted counterparties and enforceable compensation, not an unlimited promise to connect anyone who claims to have money."
-                ),
-            ],
-            "table": {
-                "caption": "Closing Evidence Matrix: Authority, Ownership, Agency, Funds, and Fee Entitlement",
-                "headers": [
-                    "Control area requiring transaction-specific verification",
-                    "Primary evidence retained within the deal record",
-                    "Named tool or authority supporting the work",
-                    "Stop condition and specific corrective action",
-                ],
-                "rows": [
-                    [
-                        "Principal identity and authority to market the identified asset",
-                        "Entity records, ownership evidence, and signed authorization from empowered representatives",
-                        "Secretary of State records paired with independently verified principal contact",
-                        "Authority cannot be established; stop marketing until documented authorization exists",
-                    ],
-                    [
-                        "Intermediary permissions and accurate characterization of the proposed transaction",
-                        "License records, exemption analysis, and documented agency and conflict disclosures",
-                        "SEC registration resources and applicable state professional licensing databases",
-                        "Required authority is absent; engage authorized professionals before covered activity",
-                    ],
-                    [
-                        "Asset identity and release of relevant competing ownership claims",
-                        "Serial numbers, title evidence, searches, payoff letters, and release instructions",
-                        "State UCC filing offices or FAA aircraft records as applicable",
-                        "Ownership or lien mismatch persists; suspend transfer pending documented cure",
-                    ],
-                    [
-                        "Buyer capacity and satisfaction of material financing conditions",
-                        "Verified funding evidence, lender conditions, and current authorized buyer contacts",
-                        "Permissioned data room with direct confirmation from independently verified sources",
-                        "Funding evidence expires or conflicts; refresh qualification before seller reliance",
-                    ],
-                    [
-                        "Independent custody and authenticated settlement instructions for purchase funds",
-                        "Executed escrow instructions, verified beneficiary details, and recorded callback confirmation",
-                        "Authorized escrow provider using its approved transaction verification procedures",
-                        "Wire change lacks independent authentication; withhold transfer and investigate discrepancy",
-                    ],
-                    [
-                        "Commission entitlement and retained revenue reconciliation after completed settlement",
-                        "Signed engagement, allocation agreements, closing statement, and matching bank receipt",
-                        "Deal ledger linked to accounting records and final settlement evidence",
-                        "Fee amount differs from entitlement; resolve discrepancy before owner distribution",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four Pre-Flight Checks Before Distribution or Funding",
-                "body": "Each check requires a named owner and retained evidence, not an unchecked CRM assertion.",
-                "items": [
-                    "Verify asset-specific authority, licensing, agency disclosures, and any securities exemption against the actual proposed structure before solicitation.",
-                    "Verify seller control, primary-document accuracy, material liens, and permitted disclosure before releasing a buyer-facing memorandum.",
-                    "Verify compensation legality, commission denominator, outside entitlements, cancellation rights, and contingent-payment treatment before relying on projected fees.",
-                    "Verify buyer capacity, independent escrow authority, authenticated wire instructions, and the final disbursement waterfall before funds move.",
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Classify the mandate and establish authority",
-                    "action": "Identify the asset, principal, jurisdictions, transaction form, and permitted intermediary role.",
-                    "detail": "Obtain a signed engagement only after checking required permissions, agency disclosures, exclusivity, and the exact commission denominator.",
-                },
-                {
-                    "step": 2,
-                    "title": "Build a verified and permissioned transaction file",
-                    "action": "Collect ownership evidence, material operating records, lien information, and a source-backed opportunity memorandum.",
-                    "detail": "Apply asset-specific checklists, record unresolved exceptions, and restrict access before introducing independently qualified counterparties.",
-                },
-                {
-                    "step": 3,
-                    "title": "Coordinate diligence and independently controlled settlement",
-                    "action": "Assign milestone owners, resolve material exceptions, and align financing with executed closing instructions.",
-                    "detail": "Keep customer principal outside operating accounts and authenticate settlement changes through independently verified communication channels.",
-                },
-                {
-                    "step": 4,
-                    "title": "Reconcile retained commissions and close the evidence loop",
-                    "action": "Match earned fee entitlement, outside allocations, settlement statements, and received cash.",
-                    "detail": "Record contingent obligations, calculate realized deal costs, restrict stale access, and update forecast assumptions using actual closing results.",
-                },
-            ],
-        },
-    ],
-    "pull_quote": "The asset price attracts attention; verified authority, executable terms, and collected retained commissions build the brokerage.",
-    "diagram_id": "diag-01",
-    "action_checklist": [
-        "Select one asset-specific niche and document the licenses, exemptions, agency duties, and client-fund restrictions that apply to its actual transaction structure.",
-        "Draft an exclusive mandate with an illustrated commission calculation, named introduction procedure, bounded protection period, and explicit contingent-payment treatment.",
-        "Build a buyer qualification record using independently verified identity, acquisition criteria, funding capacity, and authorized decision makers.",
-        "Reproduce the $100,000, $550,000, and $1,000,000 retained revenue cases with their exact costs, margins, staffing, and annual owner profit totals.",
-        "Implement permissioned diligence checklists, an introduction register, milestone ownership, and independently authenticated escrow instructions.",
-        "Review the three specialized TRACK_1 structures separately; exclude legal fees, litigation funding principal, solar investment capital, and tax allocations from ordinary brokerage revenue.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "15 U.S.C. § 78o(a) — Broker and Dealer Registration",
-            "url": "https://www.law.cornell.edu/uscode/text/15/78o",
-            "relevance": "Evaluate registration requirements before receiving transaction-based compensation for securities transactions, including investment partnership interests.",
-        },
-        {
-            "title": "15 U.S.C. § 78o(b)(13) — Conditional M&A Broker Exemption",
-            "url": "https://www.law.cornell.edu/uscode/text/15/78o",
-            "relevance": "Test eligible privately held company transactions and intermediary conduct against the exemption's conditions and exclusions; separately assess state requirements.",
-        },
-        {
-            "title": "Arizona Supreme Court Rule 31.1(c) and ACJA § 7-209 — Alternative Business Structures",
-            "url": "https://www.azcourts.gov/Licensing-Regulation/Alternative-Business-Structure",
-            "relevance": "The Arizona judiciary's ABS program provides the governing rule and code materials for licensed entities with approved nonlawyer economic interests or decision-making authority.",
-        },
-        {
-            "title": "45 CFR § 164.524(c)(4) — Fees for Individual Access to Health Information",
-            "url": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-E/section-164.524",
-            "relevance": "Determine permissible fees for covered access requests; do not budget every third-party litigation record acquisition at a universal $6.50 price.",
-        },
-        {
-            "title": "26 U.S.C. § 704(b) — Partnership Allocations",
-            "url": "https://www.law.cornell.edu/uscode/text/26/704",
-            "relevance": "Review whether partnership allocations have substantial economic effect or must instead follow the partners' interests in the partnership.",
-        },
-        {
-            "title": "26 U.S.C. § 7701(o) — Economic Substance Doctrine",
-            "url": "https://www.law.cornell.edu/uscode/text/26/7701",
-            "relevance": "Where the doctrine is relevant, evaluate meaningful economic change and substantial non-tax purpose rather than treating depreciation as a detached saleable item.",
-        },
-        {
-            "title": "26 U.S.C. § 168 — Depreciation Rules",
-            "url": "https://www.law.cornell.edu/uscode/text/26/168",
-            "relevance": "Verify property classification, eligibility, timing, and applicable depreciation treatment for genuine project owners rather than assuming a historical tax model remains current.",
-        },
-        {
-            "title": "26 U.S.C. § 48E — Clean Electricity Investment Credit",
-            "url": "https://www.law.cornell.edu/uscode/text/26/48E",
-            "relevance": "Evaluate current project eligibility and applicable statutory conditions before representing clean-electricity investment tax benefits to prospective owners.",
-        },
-        {
-            "title": "26 U.S.C. § 50 — Investment Credit Recapture and Related Rules",
-            "url": "https://www.law.cornell.edu/uscode/text/26/50",
-            "relevance": "Model recapture exposure and ownership changes that can affect investment-credit economics after a solar project transaction closes.",
-        },
-        {
-            "title": "UCC § 9-315 — Secured Party Rights on Disposition of Collateral",
-            "url": "https://www.law.cornell.edu/ucc/9/9-315",
-            "relevance": "Use the applicable state's enacted Article 9 to determine whether security interests continue after a sale and what release or authorization is required.",
-        },
-        {
-            "title": "14 CFR Part 49 — Recording Aircraft Titles and Security Documents",
-            "url": "https://www.ecfr.gov/current/title-14/chapter-I/subchapter-C/part-49",
-            "relevance": "Coordinate recording and examination of relevant aircraft conveyances and security instruments rather than relying solely on marketplace listing representations.",
-        },
-    ],
-}
+CHAPTER_1 = {'id': 'Q1',
+ 'chapter_id': 'Q1',
+ 'chapter_number': 1,
+ 'question_number': 1,
+ 'slug': 'high-ticket-sales-first-offer-to-repeatable-closings',
+ 'question_prompt': 'How do I enter high-ticket commission sales, find an offer to sell, and build a '
+                    'repeatable prospecting, follow-up, and closing process?',
+ 'kicker': 'Q1 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'High-Ticket Sales: From First Offer to Repeatable Closings',
+ 'subtitle': 'Remote closing roles, coaching-sales frameworks, offer outreach, low-ticket buyer follow-up, '
+             'business-broker success steps, and real estate sales-production case studies',
+ 'layout_template': 'opportunity_overview',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'High-ticket sales means closing $3K-$25K coaching, course, and service offers over '
+                      "Zoom for commission, with no base pay. Greyson's Daily, Asher Shaw, and Hudson "
+                      'Cosper converge on the split: setters at roughly 5-7% of cash collected, closers at '
+                      '10-15%, self-setters at 15%, and affiliates at 30-45%. The street math is '
+                      'consistent: 5-10 calls a day, 30-45 minute diagnostic calls, and a 30-40% close '
+                      'rate as the bar. Daniel Botero and Daniel Coutts teach pain-first discovery before '
+                      'any pitch. Landing a seat is itself a sales process, run on 100 DMs a day and '
+                      '60-second Looms. The fault lines: Paul Vu says skill beats the offer, while Frankie '
+                      'Isaac and Colby Lyman say to vet the offer hard. Lyman caps realistic income near '
+                      '$30-40K a month and calls closing a glorified job, which Cosper dismisses as cope.',
+ 'key_metrics': [{'label': 'Standard Commission Split',
+                  'metric': 'Standard Commission Split',
+                  'value': '10% closer / 5% setter / 15% self-set',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Cosper's baseline pay structure for a good offer, with refunds triggering "
+                             'clawbacks on commission already paid.',
+                  'source': 'Hudson Cosper ([4HgyBCSnkLE @ 00:07:25])'},
+                 {'label': 'Weekly Funnel to One Buyer',
+                  'metric': 'Weekly Funnel to One Buyer',
+                  'value': '~170 visitors -> 8-9 applications -> 5 bookings -> 3-4 calls -> 1 buyer',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "ZK's reverse-engineered weekly math at a 20-25% page-to-application rate and "
+                             'about a one-in-three close rate.',
+                  'source': 'Scale Like ZK ([uBQvqV_-nz0 @ 00:01:09])'},
+                 {'label': 'Closer Close-Rate Bar',
+                  'metric': 'Closer Close-Rate Bar',
+                  'value': '30-40% minimum, 70-80% target',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Cosper's acceptable floor versus the target close rate for closers taking "
+                             '5-10 calls a day.',
+                  'source': 'Hudson Cosper ([4HgyBCSnkLE @ 00:15:12])'},
+                 {'label': 'Loom-to-Interview Conversion',
+                  'metric': 'Loom-to-Interview Conversion',
+                  'value': '9 interviews from 30 Looms',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Isaac's student Lucas landed nine interviews from 30 Looms; another student, "
+                             'Adam, earned $9K in month one.',
+                  'source': 'Frankie Isaac ([_ZU2OAxnSMI @ 00:25:32])'}],
+ 'sections': [{'title': 'Section 1: The Practitioner Consensus',
+               'paragraphs': ['Every practitioner describes the same base model. A founder sells a '
+                              "$3K-$25K transformation, and because buyers, as Greyson's Daily puts it, "
+                              "'usually need to talk to someone first,' the company contracts out setters "
+                              "and closers instead of selling through a checkout page. Greyson's Daily "
+                              'traces the setter/closer split to Aaron Ross at Salesforce and Daniel '
+                              "Locke's 2016 'high ticket closer' rebrand. They then lay out the pay: "
+                              'setters run a 5-10 minute call qualifying fit and finances for about 5% of '
+                              'cash collected, and closers run a roughly hour-long call on pains and goals '
+                              'for about 10% [t49Ab42PNxE @ 00:01:44]. Asher Shaw widens the ranges: '
+                              'setters get 5-7% plus bonuses for booked calls and revenue, and closers get '
+                              "10-15%. At 15%, a $20K real-estate coaching close pays $3,000, and Shaw's "
+                              'closers take 4-6 calls a day [aFs-x6HJabU @ 00:04:00]. Hudson Cosper '
+                              'standardizes the split at 10% for closers, 5% for setters, and 15% for '
+                              'self-setters, with refunds triggering clawbacks. Cosper adds that neither '
+                              'seat needs a license or an LLC [4HgyBCSnkLE @ 00:07:25]. Andy Elliott '
+                              'pushes the top end to 10%-30% commissions, which turns a $20K deal into '
+                              '$6K. At the low end, 10% of a $25K ticket is $2,500 per call [AYjsFZOlEK8 @ '
+                              '00:08:00]. The definition holds across all four: a human conversation is '
+                              'the product, and the commission is the paycheck.',
+                              'Practitioners agree that the seat matters before the script. Hudson '
+                              "Cosper's minimum is a $3K ticket, ideally $5-10K, sold only to warm inbound "
+                              'leads and never outbound. Cosper also wants testimonials and a manager who '
+                              'actually reviews calls. The red flags are pay-to-apply, murky commission, '
+                              "tickets under $2K, and '10K guaranteed' promises [4HgyBCSnkLE @ 00:08:04]. "
+                              'Frankie Isaac runs the same filter from the hiring side. Tickets of $5-20K '
+                              'at 10% pay $500-$2.5K per close, and reps should demand proof of the '
+                              'numbers. Fewer than 20 calls a week is a flag. Financing through Affirm, '
+                              "Klarna, or Splitit is 'essential.' Evasive answers, unrealistic ramp-ups, "
+                              'and high closer turnover are disqualifiers [_ZU2OAxnSMI @ 00:08:14]. '
+                              "Isaac's warning case is the '10K a month OTE' seat that closed a single "
+                              '$3.5K deal in three months [_ZU2OAxnSMI @ 00:06:28]. Colby Lyman tells reps '
+                              'to interview the owner back: ask how many reps they run, what those reps '
+                              'make, and how long the program has existed, and ask for case studies and '
+                              "testimonials. Lyman's reasoning is that when ads or YouTube posting stall, "
+                              "the leads stop and the rep's income goes with them. Influencers who skip "
+                              'fulfillment also make the rep look like the scammer [IlInXj9aPFg @ '
+                              '00:03:13]. All three end at the same rule: research the offer before taking '
+                              'a single call.',
+                              "Nobody credible sells this as passive. Greyson's Daily calls it 'the most "
+                              "active income ever': no base pay, no time freedom, and you are not a "
+                              'business owner. A $10K first month happens, but most people make $3-5K, and '
+                              'the average is AUD $2-3K [t49Ab42PNxE @ 00:05:13]. Paul Vu started at 12 '
+                              "calls a day and ran 2-3x the dial volume of peers. Vu argues that 'anything "
+                              "that you're missing in terms of skill set needs to be made up for with work "
+                              "ethic and volume' [LeKXSFb84sA @ 00:01:22]. Hudson Cosper's guest Alazar "
+                              'shows the upside of the same math: 10-12 calls booked and 6-8 taken in '
+                              'about four hours. On a $5K program at 10%, three closes is $1,500 a day. '
+                              'Even so, Cosper prescribes 8-10 hour days for beginners and advises working '
+                              'a job and saving money first [Wb6IlK5noKw @ 00:05:40]. Colby Lyman confirms '
+                              'the grind at the top: 8-10 hours a day while making $20-30K a month, with '
+                              "no PTO and no guarantees. In Lyman's words, 'You eat what you kill' "
+                              "[IlInXj9aPFg @ 00:04:23]. Cosper's own ramp timeline is month one for "
+                              'learning, months two and three for first money, and months four through six '
+                              'at $10K. Cosper also reports that 60-80% of new reps quit somewhere in '
+                              'weeks four through eight.'],
+               'table': {'caption': 'Where the practitioners line up on roles, pay, and seat quality',
+                         'headers': ['Consensus Point',
+                                     'What Practitioners Report',
+                                     'Operator Implication',
+                                     'Expert Source'],
+                         'rows': [['Setters qualify leads and closers convert them',
+                                   'Setter runs a 5-10 minute call qualifying fit and finances',
+                                   'Expect about 5% of cash collected while in the setter seat',
+                                   "Greyson's Daily ([t49Ab42PNxE @ 00:01:21])"],
+                                  ['Closer commission clusters around ten percent of cash',
+                                   '10% for closers, 5% for setters, 15% when self-setting',
+                                   'A $5K close pays roughly $500, and refunds trigger clawbacks',
+                                   'Hudson Cosper ([4HgyBCSnkLE @ 00:07:25])'],
+                                  ['Closers work warm inbound leads, not cold prospects',
+                                   "Leads come from the founder's brand and are handled over Zoom",
+                                   'Reject seats that expect closers to generate their own cold leads',
+                                   'Andy Elliott ([AYjsFZOlEK8 @ 00:05:10])'],
+                                  ['Interview the offer owner before you accept',
+                                   'Ask about rep count, rep earnings, program age, and case studies',
+                                   "Lead flow dies when the owner's ads or posting stall out",
+                                   'Colby Lyman ([IlInXj9aPFg @ 00:03:13])'],
+                                  ['Call volume and financing signal a healthy offer',
+                                   'Under 20 calls a week is a flag; financing is essential',
+                                   'Demand proof of the numbers before committing your calendar',
+                                   'Frankie Isaac ([_ZU2OAxnSMI @ 00:08:56])'],
+                                  ['Early on, volume has to cover missing skill',
+                                   "Started at 12 calls a day and ran 2-3x peers' dial volume",
+                                   'Plan for long, heavy days long before any time freedom shows up',
+                                   'Paul Vu ([LeKXSFb84sA @ 00:01:05])'],
+                                  ['Commission-only pay with no base and no passive income',
+                                   'Most first months land at $3-5K, and $10K is rare',
+                                   'Treat $10K month-one stories as exceptions, not as your planning '
+                                   'benchmark',
+                                   "Greyson's Daily ([t49Ab42PNxE @ 00:05:35])"]]}},
+              {'title': 'Section 2: Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['On the call itself, the shared rule is to diagnose before you pitch. Hudson '
+                              "Cosper's 'doctor method' spends 25-30 of 45 minutes on diagnosis, and "
+                              'Cosper bans fake deadlines, robotic reading, and over-explaining '
+                              '[4HgyBCSnkLE @ 00:21:53]. Daniel Botero uses six stages: rapport, agenda, '
+                              'discovery, recap, pitch, and objections. Botero does 10-15 minutes of '
+                              'LinkedIn research before dialing and spends 20-30 minutes of a one-hour '
+                              'call on discovery, with the prospect talking about 75% of the time. '
+                              "Botero's warning is never to skip the pain: 'stab the knife and twist it' "
+                              '[r2vbi9gCm-o @ 00:08:04]. Daniel Coutts runs a longer chain. Coutts frames '
+                              "the call, extracts a 'tangible outcome' goal, and establishes the time gap. "
+                              'Then Coutts prehandles limiting beliefs (time, money, having been scammed, '
+                              'the wife, the parent), treats every objection as a smokescreen, and probes '
+                              "with what, why, and how while acting 'really dumb' [RHobLxb_gLQ @ "
+                              "00:15:24]. Both state the price flat. Coutts says 'investment is 6k' and "
+                              'closes for paid in full, weighing it against one to three years of staying '
+                              "the same. Botero says 'It's $5,000' confidently, then backs it with "
+                              'opportunity cost: a $100K salary is $8,300 a month, so landing a job two '
+                              'months faster is worth $16,000 against the $5,000 fee [r2vbi9gCm-o @ '
+                              '00:12:32].',
+                              "Landing the seat runs on the same mechanics. Frankie Isaac's reframe is "
+                              'that you are the product and the offer owner is the prospect. That means '
+                              'skipping free Facebook groups and job boards, finding owners on YouTube and '
+                              "Instagram by spotting CTAs, VSLs, and testimonials, and never DMing 'are "
+                              "you hiring?' [_ZU2OAxnSMI @ 00:04:06]. Isaac's Loom runs 60 seconds and "
+                              'covers hook, track record, character, and CTA. The interview gets treated '
+                              "as a sales call and closes on 'anything...make you hesitant?' Hudson "
+                              "Cosper's version is a three-line DM plus a 60-second Loom, followed by "
+                              "follow-up. Cosper's student Zach sent about 100 messages, got 4 offers, and "
+                              'made $8K in 30 days [4HgyBCSnkLE @ 00:08:57]. The Closer ID pushes raw '
+                              'volume. They sent 480 messages in their first week and say 20 messages take '
+                              'about 10 minutes, so 100 a day is achievable for anyone. They block social '
+                              'apps with Opal and generate 100-1,000 Instagram keywords once, using '
+                              'ChatGPT with Whisper Flow dictation [sh92NTG_jgs @ 00:03:10]. The opener is '
+                              "deliberately unpersonalized: 'Yo, boss. I think it's so sick what you're "
+                              "doing. Do you have your own coaching or course?' Only after the coach "
+                              'replies does the closer reference one of their reels and ask whether they '
+                              'need a high-ticket closer [sh92NTG_jgs @ 00:07:34].',
+                              'Upstream, Scale Like ZK works the weekly math backwards. One buyer a week '
+                              'at about a one-in-three close rate needs 3-4 calls. That takes 5 bookings '
+                              'and 8-9 applications, which comes to roughly 170 page visitors at their '
+                              '20-25% page-to-application rate, against 5% generally [uBQvqV_-nz0 @ '
+                              "00:01:09]. ZK's application states a 'multi four-figure' investment level "
+                              'and asks about cash on hand. A $500 answer means cancelling the call or '
+                              'offering a low-ticket downsell. Speed to lead is measured in minutes. KPIs '
+                              'get checked weekly, because a bad show rate alone can turn $50K into $5K '
+                              '[uBQvqV_-nz0 @ 00:13:44]. Hernan Vazquez benchmarks low-ticket ascension at '
+                              'about 10% of buyers reaching a call, or 7-10 calls per 100 buyers. From '
+                              'there Vazquez runs a 2-3 email consumption sequence, then one to two weeks '
+                              'of testimonial and case-study emails. Daisy-chained webinar and VSL '
+                              'campaigns follow, and finally a daily broadcast with a book-a-call link. '
+                              'Vazquez reports leads converting after 2-3 years on the list [PeOr6rOEN2Q @ '
+                              '00:05:35]. Brandon Mulrenin, working real-estate listings, reports that '
+                              'only 10-15% of first calls set an appointment, while 85-90% of deals come '
+                              'from follow-up. That is why Mulrenin has the prospect author both the next '
+                              'time to talk and the reason for it [phMoT_2rYN4 @ 00:13:51].'],
+               'table': {'caption': 'Daily numbers, scripts, and tools the practitioners actually run',
+                         'headers': ['Mechanic',
+                                     'Exact Numbers or Script',
+                                     'Execution Note',
+                                     'Expert Source'],
+                         'rows': [['Daily closer call load and close rate',
+                                   '6-12 calls a day at about a 40% close rate',
+                                   '20 closes on $5K tickets at 10% pays about $10K',
+                                   'Hudson Cosper ([4HgyBCSnkLE @ 00:13:14])'],
+                                  ['Setter daily activity and reporting cadence',
+                                   '200 dials plus an end-of-day report by midnight ET',
+                                   'Setters expect 3-5 booked calls daily and $3-5K in month one',
+                                   'Hudson Cosper ([4HgyBCSnkLE @ 00:14:46])'],
+                                  ['Discovery time allocation on the call',
+                                   '20-30 minutes of a one-hour call, with the prospect talking 75%',
+                                   'Recap their pain with their own numbers before pitching anything',
+                                   'Daniel Botero ([r2vbi9gCm-o @ 00:08:04])'],
+                                  ['Objection triage by category before handling',
+                                   'Money, belief, or logistics; 90%+ say money, but it is belief',
+                                   'Treat a stated money objection as a belief problem underneath',
+                                   'Daniel Botero ([r2vbi9gCm-o @ 00:13:48])'],
+                                  ['Outreach volume for landing an offer',
+                                   '100 messages a day; 20 messages take about ten minutes',
+                                   'Skip personalization on the first message and chase replies only',
+                                   'The Closer ID ([sh92NTG_jgs @ 00:03:10])'],
+                                  ['Pre-call sequence to protect the show rate',
+                                   'Second video, first 30 days, objections, matched testimonial, and '
+                                   'questions',
+                                   'Send reminders that ask the prospect to actively confirm attendance',
+                                   'Scale Like ZK ([uBQvqV_-nz0 @ 00:09:49])'],
+                                  ['Set-to-met stack before a listing appointment',
+                                   'Selfie video, calendar invite, morning agenda, confirmation call, '
+                                   'Crumbl cookies',
+                                   'Crumbl delivers about 45 minutes after the booking call ends',
+                                   'Brandon Mulrenin ([phMoT_2rYN4 @ 00:30:55])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Small moves the operators swear by',
+                           'body': 'These are low-effort tactics the practitioners use to lift close, '
+                                   'show, and ascension rates without adding more lead flow.',
+                           'items': ["Probe every objection with what, why, and how, and 'act like really "
+                                     "dumb' instead of answering it head-on, because every objection is a "
+                                     'smokescreen [Daniel Coutts — RHobLxb_gLQ @ 00:15:24].',
+                                     "Ask about cash on hand in the application. A '$500' answer means you "
+                                     'cancel the call or offer a low-ticket downsell instead of burning a '
+                                     'closer slot [Scale Like ZK — uBQvqV_-nz0 @ 00:07:41].',
+                                     "Put the book-a-call invite on the thank-you page, 'where the most "
+                                     "excitement happens,' to pull low-ticket buyers into the high-ticket "
+                                     'step [Hernan Vazquez — PeOr6rOEN2Q @ 00:04:04].',
+                                     'Ask early what procurement pushes on, what the approval threshold '
+                                     "is, and which concessions are tradeable: 'You don't react, you "
+                                     "prepare' [Nick Dadamio — zmqAbj7T7F8 @ 00:04:10]."]},
+               'sop_steps': [{'step': 1,
+                              'title': 'Vet the seat',
+                              'action': 'Screen each offer on ticket size, call volume, financing, and '
+                                        'owner track record before accepting it.',
+                              'detail': 'Target $5-20K tickets at 10%, flag any offer with under 20 calls '
+                                        'a week, and treat Affirm, Klarna, or Splitit financing as '
+                                        'essential [Frankie Isaac — _ZU2OAxnSMI @ 00:08:14]. Walk from '
+                                        "pay-to-apply, murky commission, or '10K guaranteed' seats [Hudson "
+                                        'Cosper — 4HgyBCSnkLE @ 00:08:04].'},
+                             {'step': 2,
+                              'title': 'Run outreach at volume',
+                              'action': 'Send 100 unpersonalized openers a day to coaches found by '
+                                        'keyword, then follow up with a DM plus Loom.',
+                              'detail': "Use 'Do you have your own coaching or course?' as the opener and "
+                                        'mine the following lists of coaches you find [The Closer ID — '
+                                        'sh92NTG_jgs @ 00:07:34]. Follow with a three-line DM and a '
+                                        '60-second Loom; Zach turned about 100 messages into 4 offers '
+                                        '[Hudson Cosper — 4HgyBCSnkLE @ 00:08:57].'},
+                             {'step': 3,
+                              'title': 'Diagnose before pitching',
+                              'action': 'Spend the first 25-30 minutes on pain, desired outcome, and the '
+                                        'time gap before presenting anything.',
+                              'detail': 'Research the prospect for 10-15 minutes beforehand, let them talk '
+                                        '75% of the time, and never skip the pain [Daniel Botero — '
+                                        'r2vbi9gCm-o @ 00:08:04]. Diagnosis should take 25-30 of the '
+                                        "call's 45 minutes [Hudson Cosper — 4HgyBCSnkLE @ 00:21:53]."},
+                             {'step': 4,
+                              'title': 'State price, close, and lock follow-up',
+                              'action': 'Say the price flat, close for paid in full, and have the prospect '
+                                        'set the next contact if they stall.',
+                              'detail': "Say 'investment is 6k,' close for PIF, and weigh the fee against "
+                                        '1-3 years of staying the same [Daniel Coutts — RHobLxb_gLQ @ '
+                                        '00:21:04]. When a prospect stalls, have them author the next time '
+                                        'to talk and the reason, since 85-90% of deals come from follow-up '
+                                        '[Brandon Mulrenin — phMoT_2rYN4 @ 00:22:09].'}]},
+              {'heading': 'Section 3: Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ["The loudest split is over how many hours this pays for. Hudson Cosper's "
+                              'guest Alazar describes waking at 11:20, closing on a 30 to 40 minute call, '
+                              'and moving the remaining three or four calls to times they prefer. The host '
+                              'claims a six-month stretch of three to four hours a day at roughly 150k a '
+                              'month [Wb6IlK5noKw @ 00:02:25] [Wb6IlK5noKw @ 00:06:20]. Paul Vu attacks '
+                              "exactly that pitch. They reject gurus who sell 'two hours a day' for "
+                              "'$20,000 a month' and report starting at 12 calls a day, running two to "
+                              'three times the dial volume of peers [LeKXSFb84sA @ 00:00:51]. Colby Lyman '
+                              'puts the real load at 8 to 10 hours a day while making 20 to 30k a month '
+                              "[IlInXj9aPFg @ 00:08:02]. Greyson's Daily calls it 'the most active income "
+                              "ever,' with no base pay and no time freedom because the closer is not the "
+                              'business owner [t49Ab42PNxE @ 00:05:13]. Even inside the Cosper camp, '
+                              'beginners are told to put in 8 to 10 hours a day, so the short day comes '
+                              "late, not at entry. Vu's resolution is that the seat delivers financial and "
+                              'location freedom early, with closers in Asia or South America getting 5 to '
+                              '10x buying power [LeKXSFb84sA @ 00:02:26].',
+                              'The second fault line is whether the offer or the operator drives income. '
+                              'Paul Vu says gurus have the order backwards: skill comes first, then the '
+                              'offer. Vu reports turning down roles advertising 20 to 50k and even '
+                              '$100k-month OTE [LeKXSFb84sA @ 00:05:28] [LeKXSFb84sA @ 00:06:22]. Hudson '
+                              "Cosper's camp goes further and dismisses another creator's claim that high "
+                              "ticket sales is a 'glorified 9 to 5' dependent on the offer, calling it "
+                              "'cope' [Wb6IlK5noKw @ 00:00:46]. Colby Lyman lands on the other side of "
+                              "both. To Lyman, being a closer is 'a glorified job,' and income 'all leads "
+                              "back to making sure you're doing research to get on the right offer' "
+                              '[IlInXj9aPFg @ 00:10:07] [IlInXj9aPFg @ 00:04:11]. Influencers who skip '
+                              "fulfillment, get canceled, or stop running ads take the rep's pipeline with "
+                              'them. Frankie Isaac splits the difference by turning vetting into a '
+                              'checklist. Tickets of 5 to 20k at 10% pay 500 to 2.5k per close, the '
+                              'numbers must be proven, and fewer than 20 calls a week is a flag '
+                              '[_ZU2OAxnSMI @ 00:08:14]. Isaac also takes the sting out of a bad pick: one '
+                              "bad offer doesn't mean sales doesn't work, it just means you need a better "
+                              'seat [_ZU2OAxnSMI @ 00:23:29].',
+                              'Practitioners split just as sharply on how to land a seat and where leads '
+                              'come from. The Closer ID pushes raw volume: 100 messages a day is '
+                              'achievable for anyone, and 20 messages take about 10 minutes. When a '
+                              "participant defended 30 a day 'for quality,' the host answered 'You're "
+                              "overthinking it' and advised skipping personalization on the first message "
+                              '[sh92NTG_jgs @ 00:04:07] [sh92NTG_jgs @ 00:10:20]. Frankie Isaac argues for '
+                              'a different route. Isaac reports that every 20k-plus-a-month offer came '
+                              'from network because referrals look low risk, and warns that a Loom showing '
+                              '30-plus views has gone unwatched [_ZU2OAxnSMI @ 00:04:48] [_ZU2OAxnSMI @ '
+                              "00:13:20]. Hudson Cosper's middle path is a three-line DM, a 60-second "
+                              'Loom, and follow-up. A student named Zach sent about 100 messages, got 4 '
+                              'offers, and made 8K in 30 days [4HgyBCSnkLE @ 00:08:57]. On the client '
+                              'side, Cosper wants warm inbound leads only and never outbound [4HgyBCSnkLE '
+                              "@ 00:05:56]. Brandon Mulrenin calls real estate 'a direct outbound sales "
+                              "business.' Mulrenin's team runs a double dial, voicemail, video text, and "
+                              'social follow, all within five minutes [phMoT_2rYN4 @ 00:05:58] '
+                              "[phMoT_2rYN4 @ 00:12:38]. Mulrenin's volume math is equally blunt: if you "
+                              'want to sell 50 houses, you need 50 contacts per day [phMoT_2rYN4 @ '
+                              '00:19:37].'],
+               'table': {'caption': 'Practitioner Fault Lines: Side-by-Side Playbooks',
+                         'headers': ['Fault Line', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Time freedom versus grind during the first year',
+                                   "Cosper's host claims a six-month stretch at three to four hours daily "
+                                   'near 150k monthly',
+                                   'Vu started at 12 calls daily while Lyman reports 8 to 10 hour days at '
+                                   '20 to 30k',
+                                   'Hudson Cosper ([Wb6IlK5noKw @ 00:06:20]); Paul Vu ([LeKXSFb84sA @ '
+                                   '00:01:05]); Colby Lyman ([IlInXj9aPFg @ 00:08:02])'],
+                                  ['Whether skill or the offer drives income',
+                                   'Vu says skill comes first and the offer second, turning down roles '
+                                   'with 20 to 50k OTE',
+                                   'Lyman says everything leads back to researching your way onto the '
+                                   'right offer',
+                                   'Paul Vu ([LeKXSFb84sA @ 00:05:28]); Colby Lyman ([IlInXj9aPFg @ '
+                                   '00:04:11])'],
+                                  ['How a new closer lands the first seat',
+                                   'Send 100 unpersonalized DMs daily; 5,000 outreach messages will not '
+                                   'miss an offer',
+                                   'Every 20k-plus monthly offer Isaac saw came from network because '
+                                   'referrals look low risk',
+                                   'The Closer ID ([sh92NTG_jgs @ 00:11:10]); Frankie Isaac ([_ZU2OAxnSMI '
+                                   '@ 00:04:48])'],
+                                  ['Where client leads should come from in the first place',
+                                   "Cosper and Elliott want warm inbound leads from the founder's brand "
+                                   'and never outbound',
+                                   'Mulrenin and Ferguson run direct outbound: dials, door letters, cards, '
+                                   'pay-per-click, a numbers game',
+                                   'Hudson Cosper ([4HgyBCSnkLE @ 00:05:56]); Andy Elliott ([AYjsFZOlEK8 @ '
+                                   '00:05:10]); Brandon Mulrenin ([phMoT_2rYN4 @ 00:05:58]); Cole Ferguson '
+                                   '([FpH555COYJI @ 00:04:48])'],
+                                  ["Funnel architecture feeding the closer's calendar",
+                                   'ZK runs one page, one video, one application with no webinar or '
+                                   'nurture sequence',
+                                   'Vazquez ascends low-ticket buyers through thank-you pages, '
+                                   'daisy-chained webinars, VSLs and daily broadcasts',
+                                   'Scale Like ZK ([uBQvqV_-nz0 @ 00:05:00]); Hernan Vazquez ([PeOr6rOEN2Q '
+                                   '@ 00:09:06])'],
+                                  ['What an objection actually means on the call',
+                                   'Coutts says a correct process yields no objections and every objection '
+                                   'is a smokescreen',
+                                   'Botero says 90%-plus say money but it is really belief; Mulrenin '
+                                   'blames closing in the wrong place',
+                                   'Daniel Coutts ([RHobLxb_gLQ @ 00:12:32]); Daniel Botero ([r2vbi9gCm-o '
+                                   '@ 00:13:48]); Brandon Mulrenin ([phMoT_2rYN4 @ 00:35:39])'],
+                                  ['Commission ceiling and which role captures the most',
+                                   'Lyman caps closer income near $30 to 40k monthly while closing about '
+                                   '60%',
+                                   'Elliott cites 10 to 30% commissions; Shaw says affiliates take 30 to '
+                                   '45% for less work',
+                                   'Colby Lyman ([IlInXj9aPFg @ 00:06:19]); Andy Elliott ([AYjsFZOlEK8 @ '
+                                   '00:08:00]); Asher Shaw ([aFs-x6HJabU @ 00:05:58])']]}},
+              {'heading': 'Section 4: Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ["The most expensive failure on record is Cole Ferguson's broker launch. "
+                              'Ferguson lost about $80,000 in year one with zero deals before closing 14 '
+                              'in year two. In hindsight, they would have charged down-payment and '
+                              'valuation fees and raised a first-year minimum commission of $10,000 '
+                              '[FpH555COYJI @ 00:00:35] [FpH555COYJI @ 00:06:52]. Their fix is blunt: save '
+                              "about 50 grand and don't start part-time [FpH555COYJI @ 00:01:32]. On the "
+                              "closer side, the trap is the advertised OTE. Frankie Isaac describes '10K a "
+                              "month OTE' offers that closed one 3.5K deal in three months. Isaac lists "
+                              'evasive answers, unrealistic ramp-up, and high closer turnover as red flags '
+                              "[_ZU2OAxnSMI @ 00:06:28] [_ZU2OAxnSMI @ 00:11:58]. Greyson's Daily warns "
+                              "that a 150k OTE listing on Seek depends entirely on the company's "
+                              'marketing. Most people make 3 to 5k in month one, the average sits around '
+                              'AUD 2 to 3k, and placement programs deserve suspicion [t49Ab42PNxE @ '
+                              '00:04:04] [t49Ab42PNxE @ 00:05:35]. Hudson Cosper adds that refunds lead to '
+                              "clawbacks. Cosper's red flags are pay-to-apply roles, murky commission, "
+                              "tickets under 2K, and any '10K guaranteed' promise [4HgyBCSnkLE @ 00:07:50] "
+                              '[4HgyBCSnkLE @ 00:08:04]. Each of these traps shows up only after the '
+                              'operator has already committed weeks to the seat.',
+                              "The second cluster of failures sits outside the closer's control, right up "
+                              'until it lands on their income. Colby Lyman reports influencers who skip '
+                              'fulfillment, which makes the rep look like the scammer. Lyman also '
+                              'describes owners whose ads or YouTube posting stall so the leads stop, and '
+                              'the plain risk that an influencer gets canceled and the job disappears '
+                              '[IlInXj9aPFg @ 00:01:28] [IlInXj9aPFg @ 00:03:48]. Scale Like ZK measures '
+                              'the damage in rates. A bad show rate alone can turn $50K into $5K, intent '
+                              'is perishable, and a slow invite becomes one of 40 to 60 notifications '
+                              '[uBQvqV_-nz0 @ 00:13:44] [uBQvqV_-nz0 @ 00:09:18]. ZK also warns against '
+                              'fully automating the process or handing leads to an AI chatbot, because '
+                              "real setters and SDRs are required [uBQvqV_-nz0 @ 00:14:39]. Nick Dadamio's "
+                              'failure mode is the buying committee. Without a champion, a deal decays '
+                              "into 45 days of 'maybe' follow-ups because the buyer cannot sell you "
+                              'internally [zmqAbj7T7F8 @ 00:01:19]. Brandon Mulrenin has coached '
+                              "6,000-plus agents and names 'happy ears' and lead stuffing as the follow-up "
+                              'killers. Mulrenin insists the prospect author the next time to talk and the '
+                              'reason [phMoT_2rYN4 @ 00:22:09]. With 85 to 90% of deals coming from '
+                              'follow-up, dropping that thread forfeits most of the pipeline [phMoT_2rYN4 '
+                              '@ 00:13:51].',
+                              'The last set of traps is behavioral. Hudson Cosper puts the dropout window '
+                              "at weeks 4 to 8, with about 60 to 80% quitting. Cosper's ramp is learning "
+                              'in month one, first money in months two and three, and 10K by months four '
+                              'to six [4HgyBCSnkLE @ 00:18:15] [4HgyBCSnkLE @ 00:13:57]. Cosper also bans '
+                              'fake deadlines, robotic reading, and over-explaining [4HgyBCSnkLE @ '
+                              '00:10:54]. That echoes Daniel Coutts, who insists the 16-step call is a '
+                              'framework, not a script read word by word [RHobLxb_gLQ @ 00:00:52]. Daniel '
+                              "Botero's warning is about skipping pain in discovery. Botero cites a "
+                              'Google/Meta recruiter who struggled without rapport [r2vbi9gCm-o @ '
+                              '00:02:28]. The prescription is 10 to 15 minutes of LinkedIn research before '
+                              'the call, then 20 to 30 minutes of discovery in which the prospect talks '
+                              'about 75% of the time [r2vbi9gCm-o @ 00:04:30]. Colby Lyman supplies the '
+                              'burnout check. At 8 to 10 hours a day, slipping on follow-ups and objection '
+                              'handling gets you fired, and settling at 8 to 10k a month is its own trap '
+                              '[IlInXj9aPFg @ 00:09:19] [IlInXj9aPFg @ 00:10:45]. The common thread is '
+                              'that discipline on the call and in the follow-up decays first, long before '
+                              'the offer or the market gives out.'],
+               'table': {'caption': 'Firsthand Traps and the Economics Behind Them',
+                         'headers': ['Trap',
+                                     'What Happened or Was Measured',
+                                     'Economics Check',
+                                     'Expert Source'],
+                         'rows': [['Launching a brokerage without a cash runway',
+                                   'About $80,000 lost in year one with zero closed deals before 14 deals '
+                                   'in year two',
+                                   'Save about 50 grand, never start part-time, and charge down-payment '
+                                   'and valuation fees',
+                                   'Cole Ferguson ([FpH555COYJI @ 00:00:35])'],
+                                  ['Trusting an advertised OTE number on a closing role',
+                                   "A '10K a month OTE' offer closed one 3.5K deal in three months",
+                                   'Most first months land at 3 to 5k, averaging AUD 2 to 3k',
+                                   "Frankie Isaac ([_ZU2OAxnSMI @ 00:06:28]); Greyson's Daily "
+                                   '([t49Ab42PNxE @ 00:05:35])'],
+                                  ['Junk offers and refunds hitting commission already earned',
+                                   "Pay-to-apply roles, murky commission, sub-2K tickets and '10K "
+                                   "guaranteed' promises keep appearing",
+                                   'Refunds lead to clawbacks, so require a 3K minimum and ideally 5 to '
+                                   '10K',
+                                   'Hudson Cosper ([4HgyBCSnkLE @ 00:07:50])'],
+                                  ['Show-rate and speed-to-lead leakage between application and call',
+                                   'A bad show rate alone can turn $50K of revenue into $5K',
+                                   'Contact within minutes or become one of 40 to 60 notifications; track '
+                                   'KPIs weekly',
+                                   'Scale Like ZK ([uBQvqV_-nz0 @ 00:13:44])'],
+                                  ["Deals stalling inside the buyer's internal committee",
+                                   "Without a champion, deals sink into 45 days of 'maybe' follow-ups",
+                                   'Map who loves it, who resists, who can kill it quietly, then build a '
+                                   'mutual action plan',
+                                   'Nick Dadamio ([zmqAbj7T7F8 @ 00:01:19])'],
+                                  ['Lead flow dying because the founder stops delivering',
+                                   'Influencers skip fulfillment, get canceled, or let ads and YouTube '
+                                   'posting stall',
+                                   'Interview the owner back on rep count, rep income, program age and '
+                                   'case studies',
+                                   'Colby Lyman ([IlInXj9aPFg @ 00:01:28])'],
+                                  ['Low-ticket buyers never ascending to the high-ticket call',
+                                   'A healthy offer moves about 10% of buyers onward, leaving 90% on the '
+                                   'table',
+                                   'Run consumption and next-step email sequences; calling every buyer '
+                                   'lifts uptake about tenfold',
+                                   'Hernan Vazquez ([PeOr6rOEN2Q @ 00:05:35])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Clear These Four Checks Before You Commit Your Calendar',
+                           'body': 'Each gate comes from a loss, a firing, or a dead pipeline that '
+                                   'practitioners reported firsthand. Fail any one and the seat or the '
+                                   'funnel is leaking money before the first call.',
+                           'items': ['Interview the owner back before taking the seat: ask how many reps '
+                                     'they have, what reps make, how long the program has run, and for '
+                                     'case studies and testimonials [Colby Lyman — IlInXj9aPFg @ '
+                                     '00:03:13].',
+                                     'Demand proof of the numbers and treat a calendar with fewer than 20 '
+                                     'calls a week as a flag unless there is a clear exception [Frankie '
+                                     'Isaac — _ZU2OAxnSMI @ 00:08:56].',
+                                     'Reject pay-to-apply roles, murky commission, tickets under 2K, and '
+                                     "any '10K guaranteed' pitch, and price refund clawbacks into your "
+                                     'expectations [Hudson Cosper — 4HgyBCSnkLE @ 00:08:04].',
+                                     'Check KPIs weekly, not monthly, and diagnose by which rate dropped, '
+                                     'because a bad show rate alone can turn $50K into $5K [Scale Like ZK '
+                                     '— uBQvqV_-nz0 @ 00:13:44].']}}],
+ 'pull_quote': '"Because one bad offer doesn\'t mean that sales doesn\'t work, it just means that you need '
+               'a better seat." — Frankie Isaac (_ZU2OAxnSMI @ 00:23:29).',
+ 'diagram_id': 'diag-01',
+ 'action_checklist': ["Block social apps, then send 100 outreach messages a day with the opener 'Do you "
+                      "have your own coaching or course?' and skip personalization on the first message "
+                      '[The Closer ID — sh92NTG_jgs @ 00:07:34].',
+                      'Vet every offer for a 3K minimum ticket, ideally 5 to 10K, warm inbound leads, '
+                      'testimonials, and a manager who reviews your calls [Hudson Cosper — 4HgyBCSnkLE @ '
+                      '00:05:56].',
+                      'Give discovery 20 to 30 minutes of a one-hour call and let the prospect talk about '
+                      '75% of the time, without skipping the pain [Daniel Botero — r2vbi9gCm-o @ '
+                      '00:08:04].',
+                      "State the 'multi four-figure' investment level on the application, ask about cash "
+                      "on hand, and cancel or downsell a '$500' answer [Scale Like ZK — uBQvqV_-nz0 @ "
+                      '00:07:41].',
+                      'End every follow-up touch by having the prospect author the next time to talk and '
+                      'the reason, and avoid happy ears and lead stuffing [Brandon Mulrenin — phMoT_2rYN4 '
+                      '@ 00:22:09].',
+                      'Run the first 30 days as week one learning the product, week two dialing no-shows, '
+                      'and week three getting calls reviewed for discovery depth [Frankie Isaac — '
+                      '_ZU2OAxnSMI @ 00:22:24].'],
+ 'statutory_citations': [{'title': 'Hudson Cosper — everything you need to know about high ticket sales '
+                                   '[00:07:25]',
+                          'url': 'https://www.youtube.com/watch?v=4HgyBCSnkLE&t=445s',
+                          'relevance': 'Primary practitioner testimony on commission splits, offer red '
+                                       'flags, clawbacks, and quit rates.'},
+                         {'title': 'Frankie Isaac — How to Land Your First High-Ticket Sales Offer in 2026 '
+                                   '(Speed Run Edition) [00:08:14]',
+                          'url': 'https://www.youtube.com/watch?v=_ZU2OAxnSMI&t=494s',
+                          'relevance': 'Primary practitioner testimony on offer vetting, inflated OTE, and '
+                                       'the first 30 days in a seat.'},
+                         {'title': "Colby Lyman — high ticket sales is a scam… here's the truth [00:03:13]",
+                          'url': 'https://www.youtube.com/watch?v=IlInXj9aPFg&t=193s',
+                          'relevance': 'Primary practitioner testimony on bad owners, lead stalls, income '
+                                       'ceilings, and burnout.'},
+                         {'title': 'Scale Like ZK — How To Get High Ticket Buyers Every Week [00:01:09]',
+                          'url': 'https://www.youtube.com/watch?v=uBQvqV_-nz0&t=69s',
+                          'relevance': 'Primary practitioner testimony on weekly funnel math, show-rate '
+                                       'leakage, and KPI diagnostics.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 't49Ab42PNxE',
+                       'title': 'High Ticket Sales, Explained Honestly by Someone Doing It',
+                       'channel': "Greyson's Daily",
+                       'author': "Greyson's Daily",
+                       'text': 'They usually need to talk to someone first.',
+                       'tip': 'They usually need to talk to someone first.',
+                       'timestamp': 43,
+                       'timestamp_seconds': 43,
+                       'timestamp_label': '[00:00:43]',
+                       'url': 'https://www.youtube.com/watch?v=t49Ab42PNxE&t=43s',
+                       'markdown': '[00:00:43](https://www.youtube.com/watch?v=t49Ab42PNxE&t=43s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Wb6IlK5noKw',
+                       'title': 'how I got rich with high ticket sales after trying every other business '
+                                'model',
+                       'channel': 'Hudson Cosper',
+                       'author': 'Hudson Cosper',
+                       'text': 'Also, 66% of millionaires started in sales.',
+                       'tip': 'Also, 66% of millionaires started in sales.',
+                       'timestamp': 313,
+                       'timestamp_seconds': 313,
+                       'timestamp_label': '[00:05:13]',
+                       'url': 'https://www.youtube.com/watch?v=Wb6IlK5noKw&t=313s',
+                       'markdown': '[00:05:13](https://www.youtube.com/watch?v=Wb6IlK5noKw&t=313s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'aFs-x6HJabU',
+                       'title': 'High Ticket Sales Explained For Beginners',
+                       'channel': 'Asher Shaw',
+                       'author': 'Asher Shaw',
+                       'text': 'Affiliates earn 30 to 45 percent, and 45 percent of 20K is $9,000, so they '
+                               'do less work but they make more money.',
+                       'tip': 'Affiliates earn 30 to 45 percent, and 45 percent of 20K is $9,000, so they '
+                              'do less work but they make more money.',
+                       'timestamp': 358,
+                       'timestamp_seconds': 358,
+                       'timestamp_label': '[00:05:58]',
+                       'url': 'https://www.youtube.com/watch?v=aFs-x6HJabU&t=358s',
+                       'markdown': '[00:05:58](https://www.youtube.com/watch?v=aFs-x6HJabU&t=358s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'RHobLxb_gLQ',
+                       'title': 'The Framework That Changed Everything for Me in High Ticket Sales',
+                       'channel': 'Daniel Coutts',
+                       'author': 'Daniel Coutts',
+                       'text': 'You should get no objections in the sales process if you do everything '
+                               'correctly.',
+                       'tip': 'You should get no objections in the sales process if you do everything '
+                              'correctly.',
+                       'timestamp': 752,
+                       'timestamp_seconds': 752,
+                       'timestamp_label': '[00:12:32]',
+                       'url': 'https://www.youtube.com/watch?v=RHobLxb_gLQ&t=752s',
+                       'markdown': '[00:12:32](https://www.youtube.com/watch?v=RHobLxb_gLQ&t=752s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '4HgyBCSnkLE',
+                       'title': 'everything you need to know about high ticket sales',
+                       'channel': 'Hudson Cosper',
+                       'author': 'Hudson Cosper',
+                       'text': 'But setters typically make 5% of cash collected on deals they book.',
+                       'tip': 'But setters typically make 5% of cash collected on deals they book.',
+                       'timestamp': 780,
+                       'timestamp_seconds': 780,
+                       'timestamp_label': '[00:13:00]',
+                       'url': 'https://www.youtube.com/watch?v=4HgyBCSnkLE&t=780s',
+                       'markdown': '[00:13:00](https://www.youtube.com/watch?v=4HgyBCSnkLE&t=780s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'r2vbi9gCm-o',
+                       'title': 'The High-Ticket Sales Framework Every Career Coach Needs',
+                       'channel': 'Daniel Botero',
+                       'author': 'Daniel Botero',
+                       'text': 'Usually, we want that to be closer to 10%.',
+                       'tip': 'Usually, we want that to be closer to 10%.',
+                       'timestamp': 571,
+                       'timestamp_seconds': 571,
+                       'timestamp_label': '[00:09:31]',
+                       'url': 'https://www.youtube.com/watch?v=r2vbi9gCm-o&t=571s',
+                       'markdown': '[00:09:31](https://www.youtube.com/watch?v=r2vbi9gCm-o&t=571s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'FpH555COYJI',
+                       'title': 'How to be successful as a business broker in 4 steps',
+                       'channel': 'Cole Ferguson',
+                       'author': 'Cole Ferguson',
+                       'text': 'Lost about $80,000 in year one with zero deals, then closed 14 deals in '
+                               'year two.',
+                       'tip': 'Lost about $80,000 in year one with zero deals, then closed 14 deals in '
+                              'year two.',
+                       'timestamp': 35,
+                       'timestamp_seconds': 35,
+                       'timestamp_label': '[00:00:35]',
+                       'url': 'https://www.youtube.com/watch?v=FpH555COYJI&t=35s',
+                       'markdown': '[00:00:35](https://www.youtube.com/watch?v=FpH555COYJI&t=35s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'phMoT_2rYN4',
+                       'title': 'How to sell 50 houses a year (even as a new realtor)',
+                       'channel': 'Brandon Mulrenin',
+                       'author': 'Brandon Mulrenin',
+                       'text': 'So, if you want to sell 50 houses, you need to have 50 contacts per day.',
+                       'tip': 'So, if you want to sell 50 houses, you need to have 50 contacts per day.',
+                       'timestamp': 1177,
+                       'timestamp_seconds': 1177,
+                       'timestamp_label': '[00:19:37]',
+                       'url': 'https://www.youtube.com/watch?v=phMoT_2rYN4&t=1177s',
+                       'markdown': '[00:19:37](https://www.youtube.com/watch?v=phMoT_2rYN4&t=1177s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'phMoT_2rYN4',
+                       'title': 'How to sell 50 houses a year (even as a new realtor)',
+                       'channel': 'Brandon Mulrenin',
+                       'author': 'Brandon Mulrenin',
+                       'text': "And so I always challenge agents, if you are getting think it overs, it's "
+                               "because you're closing in the wrong place.",
+                       'tip': "And so I always challenge agents, if you are getting think it overs, it's "
+                              "because you're closing in the wrong place.",
+                       'timestamp': 2139,
+                       'timestamp_seconds': 2139,
+                       'timestamp_label': '[00:35:39]',
+                       'url': 'https://www.youtube.com/watch?v=phMoT_2rYN4&t=2139s',
+                       'markdown': '[00:35:39](https://www.youtube.com/watch?v=phMoT_2rYN4&t=2139s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'uBQvqV_-nz0',
+                       'title': 'How To Get High Ticket Buyers Every Week',
+                       'channel': 'Scale Like ZK',
+                       'author': 'Scale Like ZK',
+                       'text': 'So, yeah, 170 of the right people a week produces a high-ticket buyer.',
+                       'tip': 'So, yeah, 170 of the right people a week produces a high-ticket buyer.',
+                       'timestamp': 121,
+                       'timestamp_seconds': 121,
+                       'timestamp_label': '[00:02:01]',
+                       'url': 'https://www.youtube.com/watch?v=uBQvqV_-nz0&t=121s',
+                       'markdown': '[00:02:01](https://www.youtube.com/watch?v=uBQvqV_-nz0&t=121s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'zmqAbj7T7F8',
+                       'title': 'High Ticket Sales Process & Closing Strategy',
+                       'channel': 'Nick Dadamio',
+                       'author': 'Nick Dadamio',
+                       'text': "They fall apart because the buyer can't sell you internally.",
+                       'tip': "They fall apart because the buyer can't sell you internally.",
+                       'timestamp': 0,
+                       'timestamp_seconds': 0,
+                       'timestamp_label': '[00:00:00]',
+                       'url': 'https://www.youtube.com/watch?v=zmqAbj7T7F8&t=0s',
+                       'markdown': '[00:00:00](https://www.youtube.com/watch?v=zmqAbj7T7F8&t=0s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'PeOr6rOEN2Q',
+                       'title': 'How To Turn Low Ticket Buyers Into High Ticket Clients (My Follow-Up '
+                                'Sequences)',
+                       'channel': 'Hernan Vazquez',
+                       'author': 'Hernan Vazquez',
+                       'text': "So here's what I like to do and the riches are in the follow up.",
+                       'tip': "So here's what I like to do and the riches are in the follow up.",
+                       'timestamp': 371,
+                       'timestamp_seconds': 371,
+                       'timestamp_label': '[00:06:11]',
+                       'url': 'https://www.youtube.com/watch?v=PeOr6rOEN2Q&t=371s',
+                       'markdown': '[00:06:11](https://www.youtube.com/watch?v=PeOr6rOEN2Q&t=371s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'sh92NTG_jgs',
+                       'title': 'How High Ticket Closers Find Offers Fast (Live Demo)',
+                       'channel': 'The Closer ID',
+                       'author': 'The Closer ID',
+                       'text': 'And you will not do 5,000 outreach messages without landing an offer.',
+                       'tip': 'And you will not do 5,000 outreach messages without landing an offer.',
+                       'timestamp': 670,
+                       'timestamp_seconds': 670,
+                       'timestamp_label': '[00:11:10]',
+                       'url': 'https://www.youtube.com/watch?v=sh92NTG_jgs&t=670s',
+                       'markdown': '[00:11:10](https://www.youtube.com/watch?v=sh92NTG_jgs&t=670s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '_ZU2OAxnSMI',
+                       'title': 'How to Land Your First High-Ticket Sales Offer in 2026 (Speed Run '
+                                'Edition)',
+                       'channel': 'Frankie Isaac',
+                       'author': 'Frankie Isaac',
+                       'text': "Because one bad offer doesn't mean that sales doesn't work, it just means "
+                               'that you need a better seat.',
+                       'tip': "Because one bad offer doesn't mean that sales doesn't work, it just means "
+                              'that you need a better seat.',
+                       'timestamp': 1409,
+                       'timestamp_seconds': 1409,
+                       'timestamp_label': '[00:23:29]',
+                       'url': 'https://www.youtube.com/watch?v=_ZU2OAxnSMI&t=1409s',
+                       'markdown': '[00:23:29](https://www.youtube.com/watch?v=_ZU2OAxnSMI&t=1409s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'LeKXSFb84sA',
+                       'title': 'Seriously, Please Watch This Before You Start High Ticket Sales',
+                       'channel': 'Paul Vu',
+                       'author': 'Paul Vu',
+                       'text': "But when you're first getting started, anything that you're missing in "
+                               'terms of skill set needs to be made up for with work ethic and volume.',
+                       'tip': "But when you're first getting started, anything that you're missing in "
+                              'terms of skill set needs to be made up for with work ethic and volume.',
+                       'timestamp': 82,
+                       'timestamp_seconds': 82,
+                       'timestamp_label': '[00:01:22]',
+                       'url': 'https://www.youtube.com/watch?v=LeKXSFb84sA&t=82s',
+                       'markdown': '[00:01:22](https://www.youtube.com/watch?v=LeKXSFb84sA&t=82s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'AYjsFZOlEK8',
+                       'title': "The TRUTH About High Ticket Sales (And Why You're Broke)",
+                       'channel': 'Andy Elliott',
+                       'author': 'Andy Elliott',
+                       'text': "If they did it and they can show me how to do it, I'll pay you because "
+                               'people trade money for results.',
+                       'tip': "If they did it and they can show me how to do it, I'll pay you because "
+                              'people trade money for results.',
+                       'timestamp': 454,
+                       'timestamp_seconds': 454,
+                       'timestamp_label': '[00:07:34]',
+                       'url': 'https://www.youtube.com/watch?v=AYjsFZOlEK8&t=454s',
+                       'markdown': '[00:07:34](https://www.youtube.com/watch?v=AYjsFZOlEK8&t=454s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'IlInXj9aPFg',
+                       'title': 'high ticket sales is a scam… here’s the truth',
+                       'channel': 'Colby Lyman',
+                       'author': 'Colby Lyman',
+                       'text': "That's why it all leads back to making sure you're doing research to get "
+                               'on the right offer.',
+                       'tip': "That's why it all leads back to making sure you're doing research to get on "
+                              'the right offer.',
+                       'timestamp': 251,
+                       'timestamp_seconds': 251,
+                       'timestamp_label': '[00:04:11]',
+                       'url': 'https://www.youtube.com/watch?v=IlInXj9aPFg&t=251s',
+                       'markdown': '[00:04:11](https://www.youtube.com/watch?v=IlInXj9aPFg&t=251s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'}]}

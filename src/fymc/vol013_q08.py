@@ -1,786 +1,833 @@
 from __future__ import annotations
 
-CHAPTER_8 = {
-    "id": "Q8",
-    "chapter_id": "Q8",
-    "chapter_number": 8,
-    "question_number": 8,
-    "slug": "public-records-apis-data-pipelines-operator-tooling",
-    "question_prompt": "Which exact public registries, government databases, commercial APIs, enrichment waterfalls, and diagnostic tools give a small intellectual property licensing desk an unfair information edge?",
-    "kicker": "Q8 / THE BIG MONEY PLAYBOOKS",
-    "title": "Public Records, APIs, Data Pipelines & Operator Tooling",
-    "subtitle": "USPTO Assignment Records, Copyright Catalogs, SEC Exhibits, Music Identifiers, Dataset Provenance, and Auditable Royalty Pipelines",
-    "layout_template": "resource_directory",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #19, Intellectual Property Licensing, ranks #09 with a "
-        "88/100 Money-to-Manpower Score. This directory maps four operator plays: "
-        "patent licensing, brand licensing, catalog licensing, and dataset licensing. "
-        "The edge comes from reconciling public evidence with executed rights "
-        "documents, then converting contract obligations into reproducible royalty "
-        "calculations. A 1 FT + 3 C pod can run the Conservative and Base cases; "
-        "the Scaled case requires 2 FT + 4 C. Annual owner net profit is "
-        "$12,500, $180,625, and $480,000 respectively. Recognized operator revenue "
-        "consists of license fees and royalties, never licensees' underlying sales. "
-        "Use this stack to identify rights owners, expose evidence gaps, validate "
-        "reporting, and protect minimum guarantees without building an oversized desk."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$50,000",
-            "context": "Annual license-fee and royalty revenue; excludes licensee product sales",
-            "note": "25% net margin; $12,500 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Base",
-            "value": "$425,000",
-            "context": "Annual license-fee and royalty revenue; excludes licensee product sales",
-            "note": "42.5% net margin; $180,625 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$800,000",
-            "context": "Annual license-fee and royalty revenue; excludes licensee product sales",
-            "note": "60% net margin; $480,000 annual owner net profit; 2 FT + 4 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Build an eighteen-source directory around four distinct rights plays",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Organize the directory around four operator plays, not four "
-                    "undifferentiated prospect lists. Patent licensing starts with "
-                    "publication numbers, issued claims, ownership instruments, "
-                    "prosecution history, maintenance status, and territorial family "
-                    "members. Brand licensing starts with the exact mark, goods and "
-                    "services, owner entity, live registration status, and proposed "
-                    "quality-control mechanism. Catalog licensing separates musical "
-                    "compositions, sound recordings, photographs, footage, and text "
-                    "because identical titles can conceal different rights holders. "
-                    "Dataset licensing starts with collection provenance, source "
-                    "permissions, personal-data exposure, permitted transformations, "
-                    "and redistribution scope. Assign every lead a play before "
-                    "buying enrichment. The directory below names eighteen working "
-                    "sources and describes access rather than assuming that every "
-                    "portal offers an unrestricted API. Cost categories distinguish "
-                    "free searches from paid documents, subscriptions, and negotiated "
-                    "contracts; they are procurement categories, not current price "
-                    "quotes. Latency describes the source's practical evidence "
-                    "boundary rather than promising a service level. Record the "
-                    "observed update timestamp during onboarding. The full-time "
-                    "operator owns source selection, while three contractors cover "
-                    "rights research, pipeline engineering, and royalty accounting. "
-                    "Specialist counsel can occupy the rights-research allocation "
-                    "when interpretation requires it. Contractor seats describe "
-                    "capacity, not three additional full-time salaries. Reserve "
-                    "specialist hours for disputed links, not routine identifier copying."
-                ),
-                (
-                    "Public records reveal evidence, not a complete permission "
-                    "graph. USPTO assignment recordation is especially useful for "
-                    "locating conveyance documents and discovering owner-name "
-                    "changes, but recording an instrument does not establish its "
-                    "validity or legal effect under 37 CFR 3.54. Read the instrument "
-                    "and reconcile schedules, signatures, effective dates, exclusions, "
-                    "and subsequent transfers. Under 35 U.S.C. 261, patent "
-                    "assignments require a written instrument, and recordation "
-                    "timing can affect priority against later purchasers or "
-                    "mortgagees. A patent family hit therefore cannot substitute "
-                    "for a chain-of-title packet. For marks, use TSDR to inspect "
-                    "the prosecution file and registration history, then verify "
-                    "that the proposed license covers the actual goods, territory, "
-                    "channels, and quality controls. For copyrighted catalogs, "
-                    "registration and recordation searches help identify claimants "
-                    "and transactions, but omissions, older records, pseudonyms, "
-                    "and unrecorded transfers prevent a clean search from proving "
-                    "exclusive ownership. Section 204 of Title 17 generally "
-                    "requires a signed writing for transfers of copyright "
-                    "ownership. Treat a registry result as a dated observation "
-                    "linked to a document, never as a universal green light. "
-                    "Escalate contradictory instruments before issuing a term "
-                    "sheet that represents exclusivity or sublicensing authority."
-                ),
-                (
-                    "Treat access policy as part of source engineering. Start "
-                    "each connector with the provider's current documentation, "
-                    "account entitlement, permitted retention rules, and published "
-                    "request limits. A browser search interface is not permission "
-                    "to scrape its internal endpoints. Prefer official downloads "
-                    "for bulk analysis, documented APIs for incremental refreshes, "
-                    "and saved manual extracts when no supported machine interface "
-                    "exists. The SEC requires fair-access behavior; identify the "
-                    "client and remain below its published maximum rather than "
-                    "using every available request slot. Other services may impose "
-                    "account-specific quotas, so store limits as configuration "
-                    "rather than hard-coded folklore. Honor Retry-After, back off "
-                    "with jitter, cache unchanged documents, and halt on repeated "
-                    "authorization failures. Record collection time separately "
-                    "from filing time, publication time, and the source's last "
-                    "update. An overnight pipeline cannot eliminate a registry's "
-                    "publication delay. When access fails, preserve the last "
-                    "successful snapshot, mark its age, and route a targeted "
-                    "manual check instead of silently presenting old evidence as "
-                    "fresh. This design lets the four-person pod maintain a "
-                    "narrow, useful evidence system without funding a universal "
-                    "web crawler or depending on fragile screen automation. "
-                    "Review connector health before each material rights decision."
-                ),
-            ],
-            "table": {
-                "caption": "Eighteen Named Sources: Access, Cost, Refresh Limits, and Evidence Fallbacks",
-                "headers": [
-                    "Named source and licensing use",
-                    "Exact supported access starting point",
-                    "Cost tier and refresh boundary",
-                    "Rate-limit and collection hygiene",
-                    "Fallback evidence and interpretation limit",
-                ],
-                "rows": [
-                    [
-                        "USPTO Patent Public Search for claim and publication discovery",
-                        "Open ppubs.uspto.gov/pubwebapp/ and search publication identifiers or classification fields",
-                        "Public searching is free; publication events determine document availability",
-                        "Use interactive searches; use official bulk products for large collections",
-                        "Retrieve published documents through Patent Center; claims still require interpretation",
-                    ],
-                    [
-                        "USPTO Patent Center for application history and prosecution documents",
-                        "Open patentcenter.uspto.gov and retrieve publicly accessible application records",
-                        "Public records are free; event posting can lag underlying correspondence",
-                        "Respect document-access restrictions; do not automate unsupported internal endpoints",
-                        "Cross-check published patent documents and obtain authorized applicant records",
-                    ],
-                    [
-                        "USPTO Assignment Center for recorded patent and trademark conveyances",
-                        "Start at assignmentcenter.uspto.gov and follow the public assignment search",
-                        "Public searching is free; recordation and indexing create timing gaps",
-                        "Search exact identifiers and entity variants; cache retrieved conveyance references",
-                        "Request executed instruments and schedules directly from the proposed licensor",
-                    ],
-                    [
-                        "USPTO Trademark Search for marks, owners, and goods descriptions",
-                        "Open tmsearch.uspto.gov and search word marks, owners, or registration numbers",
-                        "Public searching is free; status reflects the searchable registry snapshot",
-                        "Use supported searches; avoid extracting undocumented browser service calls",
-                        "Use TSDR documents and direct ownership evidence for material conflicts",
-                    ],
-                    [
-                        "USPTO TSDR for trademark status and documentary case history",
-                        "Open tsdr.uspto.gov using the serial number or registration number",
-                        "Public document access is free; case events post after processing",
-                        "Cache case documents; verify current API entitlement before programmatic retrieval",
-                        "Compare Trademark Search entries with the underlying dated office documents",
-                    ],
-                    [
-                        "USPTO Open Data Portal for documented patent data products",
-                        "Open data.uspto.gov and select documented APIs or available bulk datasets",
-                        "Public products generally have free access; release cadence varies by product",
-                        "Use required accounts and keys; configure each product's published quotas",
-                        "Use official bulk releases or targeted Patent Center document retrieval",
-                    ],
-                    [
-                        "EPO Espacenet and Open Patent Services for international families",
-                        "Use worldwide.espacenet.com interactively or developers.epo.org for OPS registration",
-                        "Espacenet is free; OPS has usage tiers and product-specific update timing",
-                        "Authenticate OPS requests; honor fair-use thresholds and response throttling",
-                        "Confirm enforceable national rights through the relevant national patent office",
-                    ],
-                    [
-                        "WIPO PATENTSCOPE for PCT applications and international search documents",
-                        "Open patentscope.wipo.int and search publication numbers, applicants, or classifications",
-                        "Public searching is free; publication schedules and national collections differ",
-                        "Use supported exports; do not assume unrestricted public API availability",
-                        "Check national registers because PCT publication does not establish national grant",
-                    ],
-                    [
-                        "WIPO Global Brand Database for cross-border trademark discovery",
-                        "Open branddb.wipo.int and search marks, holders, or image similarities",
-                        "Public searching is free; participating collection updates have differing delays",
-                        "Use permitted interactive workflows and observe export or session restrictions",
-                        "Verify status and scope against each relevant national trademark register",
-                    ],
-                    [
-                        "U.S. Copyright Office public records systems for catalog claims",
-                        "Start at copyright.gov/public-records/ and select the applicable records system",
-                        "Public searches are free; certified searches and copies may incur fees",
-                        "Follow collection-specific access rules; distinguish older records from current coverage",
-                        "Obtain signed transfers, creator agreements, and recordation documents from counterparties",
-                    ],
-                    [
-                        "SEC EDGAR for disclosed licenses, royalty terms, and counterparties",
-                        "Use sec.gov/edgar/search/ and documented data.sec.gov submissions or companyfacts endpoints",
-                        "Public access is free; accepted filings appear before every downstream index refreshes",
-                        "Send identifying User-Agent details; stay below the published ten requests per second",
-                        "Read actual filing exhibits; redactions and disclosure thresholds limit completeness",
-                    ],
-                    [
-                        "Delaware Division of Corporations entity search for legal-name resolution",
-                        "Follow corp.delaware.gov links to the official entity-name search service",
-                        "Basic name searching is free; status certificates and detailed reports cost extra",
-                        "Use supported searches; order certificates rather than repeatedly polling results",
-                        "Obtain formation documents and check the entity's actual jurisdiction directly",
-                    ],
-                    [
-                        "The MLC Public Work Search for composition matching",
-                        "Open portal.themlc.com/search and search works, writers, publishers, or identifiers",
-                        "Public searching is free; registrations and matching updates create timing differences",
-                        "Use permitted searches and available exports; seek permission before bulk collection",
-                        "Reconcile publisher schedules and other repertoire sources; entries are not blanket licenses",
-                    ],
-                    [
-                        "ASCAP and BMI Songview for performing-rights repertoire cross-checks",
-                        "Enter Songview through the official ASCAP or BMI repertoire-search pages",
-                        "Public searching is free; participating repertoire updates do not cover every right",
-                        "Respect portal terms and session controls; avoid unsupported bulk extraction",
-                        "Obtain publisher confirmations for synchronization, mechanical, and disputed ownership questions",
-                    ],
-                    [
-                        "MusicBrainz Web Service for recording and release identifier enrichment",
-                        "Use musicbrainz.org/doc/MusicBrainz_API and documented /ws/2/ lookup endpoints",
-                        "Public API access has usage conditions; commercial arrangements may require separate terms",
-                        "Identify the application and observe the documented one-request-per-second public limit",
-                        "Use licensed dumps where permitted; identifiers never establish recording ownership",
-                    ],
-                    [
-                        "OpenAlex API for scholarly provenance and associated dataset discovery",
-                        "Use docs.openalex.org for current authentication, API endpoints, and snapshot guidance",
-                        "Free and paid access options depend on current plans and usage budgets",
-                        "Configure current key requirements and quotas; cache identifiers and use permitted snapshots",
-                        "Verify original repository licenses and source publications before offering dataset rights",
-                    ],
-                    [
-                        "People Data Labs Company Enrichment API for business-entity matching",
-                        "Use docs.peopledatalabs.com and the documented company enrichment endpoint",
-                        "Metered API plans and contracted tiers apply; profile recency varies by record",
-                        "Keep API keys server-side and enforce spend ceilings before fallback requests",
-                        "Confirm domains and legal names through official filings and company-owned pages",
-                    ],
-                    [
-                        "Hunter Domain Search and Email Verifier for business-contact routing",
-                        "Use hunter.io/api-documentation for authenticated domain search and verification endpoints",
-                        "Limited free allowances and paid credit plans apply; verification is point-in-time",
-                        "Budget domain searches separately from verification and honor plan-specific throttles",
-                        "Use official licensing inboxes; email deliverability does not establish purchasing authority",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "2. Resolve owners before spending on commercial enrichment",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Create an entity-resolution waterfall that spends money only "
-                    "after public evidence establishes a plausible transaction. "
-                    "First normalize asset identifiers: publication and application "
-                    "numbers for patents, serial and registration numbers for "
-                    "marks, ISWC for compositions, ISRC for recordings, and "
-                    "versioned repository identifiers for datasets. Preserve raw "
-                    "values alongside normalized values so punctuation cleanup "
-                    "cannot conceal a mistaken match. Second resolve the "
-                    "contracting entity using jurisdiction, formation identifier "
-                    "where available, prior names, acquisition history, and "
-                    "official domain. Third attach documentary ownership evidence "
-                    "and identify the missing link. Fourth enrich the company, "
-                    "then locate a relevant licensing or business-development "
-                    "contact. People Data Labs can help distinguish businesses "
-                    "with similar names; Hunter can help route a message to a "
-                    "business mailbox. Neither service proves title, authority, "
-                    "or willingness to license. Require a confidence explanation "
-                    "such as matching registration number plus recorded transfer, "
-                    "not an opaque score alone. Merge records only when the "
-                    "identifier evidence supports the merge. A shared postal "
-                    "address, outside lawyer, distributor, or corporate parent "
-                    "is a relationship signal, not proof that two legal entities "
-                    "are interchangeable. This ordering avoids enriching hundreds "
-                    "of irrelevant subsidiaries before the desk knows which entity "
-                    "can actually sign."
-                ),
-                (
-                    "Give each play a different evidence packet and commercial "
-                    "question. The patent packet contains the claim set, family "
-                    "map, assignment chain, prosecution events, and a technically "
-                    "supported use hypothesis; keyword overlap is insufficient. "
-                    "The brand packet contains registration documents, actual "
-                    "market use, licensed categories, territory, channel restrictions, "
-                    "and a workable product-review process. The catalog packet "
-                    "distinguishes composition from master rights, identifies "
-                    "writers and performers where relevant, and records ownership "
-                    "shares, territory, media, term, and any required third-party "
-                    "permissions. Songview and The MLC help reconcile composition "
-                    "metadata, but neither replaces a synchronization license or "
-                    "a master-use agreement. The dataset packet records every "
-                    "upstream source, collection date, source terms, version, "
-                    "redistribution permission, attribution requirement, and "
-                    "deletion dependency. Public availability does not itself "
-                    "authorize commercial redistribution. Under 17 U.S.C. 102(b), "
-                    "copyright does not extend to ideas, procedures, systems, or "
-                    "methods; a claimed dataset right therefore needs a precise "
-                    "basis rather than a sweeping assertion that all facts are "
-                    "owned. Contract restrictions and other applicable rights "
-                    "must be analyzed separately. Write the proposed grant in "
-                    "plain operational terms before pricing it, because enrichment "
-                    "cannot repair an incoherent description of the asset or "
-                    "the permitted use."
-                ),
-                (
-                    "Operate the waterfall through a weekly exception queue. "
-                    "The full-time operator selects commercially credible targets "
-                    "and owns counterpart communications. The rights contractor "
-                    "resolves ownership gaps and flags questions requiring "
-                    "specialist interpretation. The engineering contractor maintains "
-                    "connectors, matching rules, and freshness reports. The royalty "
-                    "contractor checks whether the contemplated reporting fields "
-                    "can support the proposed fee structure. Batch ordinary "
-                    "research, but give exclusive-rights conflicts and contradictory "
-                    "transfers immediate attention. Store enrichment cost per "
-                    "qualified rights packet, not merely cost per email address. "
-                    "A cheap contact record becomes expensive when the desk "
-                    "spends two hours approaching the wrong owner. Use a "
-                    "stop-loss rule: after the agreed research budget is consumed, "
-                    "record the unresolved issue and request documents directly "
-                    "rather than purchasing another nearly identical profile. "
-                    "Maintain a suppression list for contacts who decline "
-                    "outreach and for invalid addresses. For commercial email, "
-                    "implement the sender identification, truthful routing, postal "
-                    "address, and opt-out requirements that apply under 15 U.S.C. "
-                    "7704. Keep outreach permission and asset-licensing permission "
-                    "as separate records. A responsive executive may lack signing "
-                    "authority; a verified mailbox establishes neither authority "
-                    "nor ownership. Measure the queue by resolved blockers and "
-                    "qualified conversations, not raw enrichment volume."
-                ),
-            ],
-            "table": {
-                "caption": "Six-Step Evidence-First Enrichment Waterfall for the Four-Person Pod",
-                "headers": [
-                    "Waterfall stage and responsible seat",
-                    "Required inputs and practical matching rule",
-                    "Release condition and stored evidence",
-                    "Stop condition and next useful action",
-                ],
-                "rows": [
-                    [
-                        "Full-time operator defines one play and the intended commercial grant",
-                        "Record asset category, target territory, use case, and likely buyer segment",
-                        "Proceed when the proposed use can be described without ambiguous rights labels",
-                        "Pause broad prospecting when the commercial grant remains internally contradictory",
-                    ],
-                    [
-                        "Rights contractor resolves asset identifiers against relevant official records",
-                        "Match exact registration or publication identifiers before comparing names and titles",
-                        "Save source documents, retrieval dates, raw identifiers, and normalization decisions",
-                        "Separate lookalike works or assets instead of forcing a convenient merge",
-                    ],
-                    [
-                        "Rights contractor assembles title evidence and identifies any missing transfer",
-                        "Compare signed instruments, asset schedules, exclusions, and effective transaction dates",
-                        "Document a supported ownership path and explicitly bounded unresolved questions",
-                        "Request missing instruments directly before representing exclusive or sublicensable rights",
-                    ],
-                    [
-                        "Engineering contractor resolves the legal entity before commercial API enrichment",
-                        "Compare official names, jurisdictions, domains, and documented predecessor entity relationships",
-                        "Retain match reasons and vendor response versions for later correction",
-                        "Reject parent-subsidiary substitution when the contracting entity is not established",
-                    ],
-                    [
-                        "Full-time operator enriches relevant business contacts within a fixed budget",
-                        "Use company domains and licensing roles before purchasing individual contact details",
-                        "Store contact provenance, verification date, outreach status, and suppression preferences",
-                        "Use the official licensing inbox when commercial profiles conflict or expire",
-                    ],
-                    [
-                        "Royalty contractor tests reporting feasibility before economic terms become final",
-                        "Map proposed royalty definitions to fields the licensee can actually export",
-                        "Approve the evidence packet for negotiation with a reproducible reporting specification",
-                        "Redesign reporting terms when deductions or territories cannot be independently reconciled",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Spend on missing evidence, not redundant profiles",
-                "body": (
-                    "Experienced licensing desks use enrichment to shorten a "
-                    "specific decision, not to decorate an incomplete rights file."
-                ),
-                "items": [
-                    "Search predecessor names and assignment schedules before assuming that the current registry owner is the complete contracting story.",
-                    "For music, retain both ISWC and ISRC where relevant; matching a song title never clears both composition and recording rights.",
-                    "Read EDGAR license exhibits for audit windows, deduction definitions, and minimum-guarantee mechanics, while treating redacted schedules as evidence gaps.",
-                    "Ask dataset suppliers for one versioned provenance manifest and one worked downstream-use example before buying a broad commercial data subscription.",
-                ],
-            },
-        },
-        {
-            "heading": "3. Build a reproducible evidence pipeline with visible exceptions",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Use a small evidence architecture with explicit lineage. "
-                    "SQLite is sufficient for an initial desk if one controlled "
-                    "writer handles imports; PostgreSQL becomes useful when "
-                    "concurrent work and access separation justify the operational "
-                    "burden. Store entities, assets, source observations, ownership "
-                    "assertions, contracts, reporting periods, and exceptions as "
-                    "separate tables. An ownership assertion must reference "
-                    "evidence, scope, and effective dates; it must not overwrite "
-                    "the raw registry observation. Keep original PDFs, CSVs, and "
-                    "JSON responses in versioned object storage with access "
-                    "controls and retention aligned to source permissions. "
-                    "Calculate SHA-256 digests using Python's hashlib, but "
-                    "remember that a digest detects later changes rather than "
-                    "proving that the original claim was true. Use deterministic "
-                    "record keys and ingestion identifiers so rerunning a job "
-                    "does not duplicate licenses or obligations. Separate "
-                    "retrieved_at, source_updated_at, effective_from, and "
-                    "effective_to timestamps. Preserve currency, units, timezone, "
-                    "and source precision rather than normalizing them away "
-                    "without a trace. Every dashboard assertion should resolve "
-                    "to the underlying observation and document. This structure "
-                    "makes a rights dispute or royalty challenge answerable "
-                    "through evidence, instead of requiring the operator to "
-                    "reconstruct months of decisions from email threads. "
-                    "Keep correction history append-only where source permissions allow."
-                ),
-                (
-                    "Build connectors as short, testable adapters. Python's "
-                    "urllib.request, csv, json, sqlite3, decimal, and unittest "
-                    "can support a lean first implementation without third-party "
-                    "dependencies. Configure credentials outside source files, "
-                    "redact them from logs, and separate read access from "
-                    "administrative permissions. A connector should emit a "
-                    "source identifier, retrieval timestamp, response digest, "
-                    "schema version, and explicit success or failure state. "
-                    "Validate required fields before loading transformed tables. "
-                    "A provider returning an HTML login page with a successful "
-                    "HTTP status must fail content validation rather than enter "
-                    "the warehouse as usable data. Handle pagination with saved "
-                    "checkpoints and deduplicate on stable identifiers. Use "
-                    "conditional requests where supported, bounded retries for "
-                    "transient failures, and immediate escalation for revoked "
-                    "credentials. Diagnose HTTP behavior with curl or Postman "
-                    "against authorized endpoints, inspect certificates with "
-                    "OpenSSL, and use SQL EXPLAIN when queries slow down. "
-                    "For document comparisons, use difflib on extracted text "
-                    "and retain the original page reference. OCR output is a "
-                    "search aid, not the governing contract text. A single "
-                    "misread decimal or omitted exception can reverse an "
-                    "obligation, so verify extracted rates and deadlines against "
-                    "the signed document before activating calculations or alerts."
-                ),
-                (
-                    "Define refresh cadence by decision risk rather than by "
-                    "the availability of a scheduler. Recheck title and status "
-                    "before an offer, signature, renewal, or material expansion "
-                    "of territory; monitor active assets at a cadence matched "
-                    "to the relevant source and contract. Refresh royalty "
-                    "reporting when a statement arrives, then reconcile it "
-                    "against the agreed delivery deadline. Store renewal, "
-                    "notice, cure, audit, and minimum-guarantee dates as "
-                    "structured obligations with named owners and separate "
-                    "reminder offsets. Calendar reminders alone cannot "
-                    "distinguish an expiring license from an auto-renewal "
-                    "requiring timely cancellation. The engineering contractor "
-                    "runs daily connector health checks, while the operator "
-                    "reviews only changes that alter a decision or require "
-                    "action. Test against frozen sample records: renamed "
-                    "owners, split territories, duplicate statement uploads, "
-                    "missing pages, refunded sales, and expired API keys. "
-                    "Track source age, parse failures, unmatched identifiers, "
-                    "and unresolved obligations on one exception board. "
-                    "Require each exception to carry an owner, next action, "
-                    "and due date. If a source disappears, the desk should "
-                    "know which conclusions depend on it and which manual "
-                    "checks preserve deal continuity. This dependency map is "
-                    "more valuable than another dashboard showing total "
-                    "records collected without any indication of decision readiness."
-                ),
-            ],
-            "table": {
-                "caption": "Six Pipeline Diagnostics That Prevent Silent Rights and Reporting Errors",
-                "headers": [
-                    "Failure signature and likely consequence",
-                    "Named diagnostic tool and practical test",
-                    "Evidence retained for reproducible investigation",
-                    "Pod owner and recovery procedure",
-                ],
-                "rows": [
-                    [
-                        "Successful HTTP response contains a login page instead of expected records",
-                        "Use curl headers and Python content validation before accepting the payload",
-                        "Retain redacted headers, content type, response digest, and retrieval timestamp",
-                        "Engineering contractor repairs authentication and reruns only the affected checkpoint",
-                    ],
-                    [
-                        "Source schema changes silently remove an ownership or territory field",
-                        "Run unittest fixtures against required keys and representative transformed records",
-                        "Save schema versions and a minimal permitted sample demonstrating the difference",
-                        "Engineering contractor quarantines the import while rights research checks material changes",
-                    ],
-                    [
-                        "Entity matching joins a parent corporation to a subsidiary's asset",
-                        "Run SQL conflict queries across jurisdictions, entity identifiers, and assignment references",
-                        "Retain competing matches and the exact evidence used for each relationship",
-                        "Rights contractor splits the records and requests the correct contracting instrument",
-                    ],
-                    [
-                        "Repeated statement imports inflate the reported license-fee or royalty total",
-                        "Compare file hashes and unique contract-period-version keys before posting entries",
-                        "Keep upload manifests, deduplication decisions, and superseded statement version references",
-                        "Royalty contractor reverses duplicate postings through a visible correction record",
-                    ],
-                    [
-                        "OCR converts a contractual rate or deadline into an incorrect value",
-                        "Compare difflib output with the signed PDF page and extraction coordinates",
-                        "Retain page references and the human-confirmed rate or obligation field",
-                        "Rights contractor confirms meaning before engineering enables the resulting calculation",
-                    ],
-                    [
-                        "A healthy scheduler repeatedly serves evidence older than the decision allows",
-                        "Query source timestamps separately from retrieval timestamps and connector run status",
-                        "Store freshness thresholds, last material source update, and affected contract identifiers",
-                        "Full-time operator orders targeted manual checks before relying on stale evidence",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Register the source and its permitted use",
-                    "action": "Record official access documentation, account scope, retention terms, quotas, and fallback procedure.",
-                    "detail": "Assign one connector owner and distinguish public observations from private counterparty documents.",
-                },
-                {
-                    "step": 2,
-                    "title": "Capture a reproducible evidence snapshot",
-                    "action": "Save the authorized response or document with timestamps, identifiers, version information, and a SHA-256 digest.",
-                    "detail": "Preserve the original representation and record any extraction or normalization applied afterward.",
-                },
-                {
-                    "step": 3,
-                    "title": "Validate the decision-bearing fields",
-                    "action": "Test identifiers, title links, territorial scope, rates, reporting periods, and date interpretations.",
-                    "detail": "Route contradictions to the rights or royalty contractor instead of silently choosing a convenient value.",
-                },
-                {
-                    "step": 4,
-                    "title": "Publish bounded conclusions and schedule rechecks",
-                    "action": "Attach evidence links, freshness limits, obligation owners, and next-action dates to the operator view.",
-                    "detail": "Recheck material rights before signature and preserve an audit trail of later corrections.",
-                },
-            ],
-        },
-        {
-            "heading": "4. Reconcile royalty evidence to the scorecard without counting licensee sales",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "The pipeline earns its keep when it converts a signed "
-                    "definition into a repeatable statement calculation. Suppose "
-                    "a brand agreement pays five percent of defined net sales, "
-                    "and an accepted annual report shows $2,000,000 of eligible "
-                    "sales after contractually permitted deductions. The computed "
-                    "royalty is $100,000, not $2,000,000 of operator revenue. "
-                    "If that same annual period carries a $60,000 recoupable "
-                    "minimum guarantee already paid and credited against those "
-                    "royalties, the remaining royalty balance is $40,000; "
-                    "adding the guarantee again would overstate the economics. "
-                    "Actual recognition timing follows the agreement and the "
-                    "applicable accounting treatment, so store earned amounts, "
-                    "invoiced amounts, cash receipts, and guarantee credits "
-                    "separately. Apply equivalent discipline to patent royalties "
-                    "per covered unit, catalog fees per permitted exploitation, "
-                    "and dataset subscriptions by authorized delivery or usage "
-                    "tier. A perpetual license, a refundable advance, and an "
-                    "annual access fee do not automatically share the same "
-                    "recognition pattern. Use Decimal arithmetic, explicit "
-                    "currency codes, contract-specific rounding, and documented "
-                    "exchange-rate conventions. The royalty contractor owns "
-                    "the calculation specification; the engineer implements "
-                    "it; the operator approves commercial exceptions. Keep "
-                    "every override attributable and reversible without deleting "
-                    "the original statement or its calculation inputs."
-                ),
-                (
-                    "Reconcile three layers: the licensee's operational ledger, "
-                    "the contractual royalty base, and the desk's recognized "
-                    "revenue. Obtain only the records authorized by reporting "
-                    "and audit provisions, using customer-approved exports "
-                    "rather than assuming access to storefront or accounting "
-                    "systems. Shopify order exports, Stripe balance and "
-                    "transaction reports, and QuickBooks Online ledger extracts "
-                    "can support different reconciliation tasks, but payment "
-                    "settlements are not automatically the royalty base. "
-                    "Taxes, shipping, refunds, bundles, intercompany transfers, "
-                    "foreign exchange, and channel timing require the actual "
-                    "contract definition. Match sampled transactions to SKU "
-                    "mappings and permitted territories, then trace totals "
-                    "to the submitted statement. For catalog licenses, test "
-                    "the reported media and exploitation period; for datasets, "
-                    "test delivery versions, authorized seats, and any "
-                    "contractually measurable usage. Investigate underreporting "
-                    "through documented exceptions and the agreed audit "
-                    "process, not covert access to licensee systems. Preserve "
-                    "the contractual notice period and record-retention window "
-                    "so a valid discrepancy does not become an unusable "
-                    "claim through delay. Where terms affect exclusivity, "
-                    "territorial allocation, tying, or competitor coordination, "
-                    "review the actual arrangement against applicable competition "
-                    "rules, including 15 U.S.C. 1. Ownership of an asset "
-                    "does not remove the need to evaluate the surrounding "
-                    "commercial restrictions."
-                ),
-                (
-                    "Keep the chapter's economics anchored to Candidate #19. "
-                    "Conservative recognized revenue is $50,000 at a twenty-five "
-                    "percent net margin, producing $12,500 annual owner net "
-                    "profit and $37,500 of total implied costs. Base revenue "
-                    "is $425,000 at forty-two and one-half percent, producing "
-                    "$180,625 profit and $244,375 of implied costs. Scaled "
-                    "revenue is $800,000 at sixty percent, producing $480,000 "
-                    "profit and $320,000 of implied costs. These are the "
-                    "three canonical cases, not outputs of the illustrative "
-                    "brand agreement above. Conservative and Base retain "
-                    "one full-time operator plus three contractors; Scaled "
-                    "uses two full-time operators plus four contractors. "
-                    "Startup capital of $12,000 to $75,000 and monthly "
-                    "operating outlays of $2,000 to $12,000 describe planning "
-                    "ranges, not a complete reconciliation of every annual "
-                    "scenario cost. Do not force those ranges to replace "
-                    "the implied total expense figures. With six to "
-                    "twenty-four months to a first deal, buy expensive "
-                    "commercial coverage only when qualified opportunities "
-                    "justify it. Review connector maintenance hours, "
-                    "enrichment spend, statement rework, and rights-exception "
-                    "backlog monthly. Add capacity when verified obligations "
-                    "and deal throughput demand it, rather than treating "
-                    "automation as a reason to multiply unqualified targets "
-                    "or subscribe to every available database."
-                ),
-            ],
-            "table": {
-                "caption": "Canonical Economics and Contract-Level Reconciliation Controls",
-                "headers": [
-                    "Case or control being evaluated",
-                    "Recognized revenue or contractual calculation",
-                    "Profit, cost, or evidence reconciliation",
-                    "Staffing and specific operator response",
-                ],
-                "rows": [
-                    [
-                        "Conservative canonical case for Candidate #19 intellectual property licensing",
-                        "Annual recognized license fees and royalties total exactly $50,000",
-                        "At 25% margin, owner profit is $12,500 and implied costs are $37,500",
-                        "Use 1 FT + 3 C and prioritize free evidence sources",
-                    ],
-                    [
-                        "Base canonical case for Candidate #19 intellectual property licensing",
-                        "Annual recognized license fees and royalties total exactly $425,000",
-                        "At 42.5% margin, owner profit is $180,625 and implied costs are $244,375",
-                        "Use 1 FT + 3 C with targeted commercial data subscriptions",
-                    ],
-                    [
-                        "Scaled canonical case for Candidate #19 intellectual property licensing",
-                        "Annual recognized license fees and royalties total exactly $800,000",
-                        "At 60% margin, owner profit is $480,000 and implied costs are $320,000",
-                        "Use 2 FT + 4 C with separated review and production duties",
-                    ],
-                    [
-                        "Illustrative brand royalty calculation remains separate from canonical scenario totals",
-                        "Five percent of $2,000,000 eligible sales produces $100,000 earned royalties",
-                        "A $60,000 paid recoupable guarantee leaves $40,000 due for that period",
-                        "Royalty contractor separates earned royalties, guarantee credits, invoices, and cash receipts",
-                    ],
-                    [
-                        "Licensee transaction testing verifies contractual deductions and covered commercial activity",
-                        "Recalculate the royalty base from authorized exports using the signed definition",
-                        "Trace refunds, taxes, bundles, territory mappings, and exchange-rate adjustments individually",
-                        "Engineering contractor supplies reproducible tests while the royalty contractor resolves exceptions",
-                    ],
-                    [
-                        "Renewal and audit tracking protect actionable contractual rights over time",
-                        "Store notice deadlines, reporting due dates, guarantee periods, and audit windows",
-                        "Link each alert to signed clauses and the relevant evidence snapshot",
-                        "Full-time operator assigns action owners and documents timely counterparty communications",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Verify four conditions before activating a licensing workflow",
-                "body": (
-                    "The desk should be able to demonstrate rights scope, "
-                    "permitted data access, calculation integrity, and operational ownership."
-                ),
-                "items": [
-                    "Verify the contracting entity's title chain, relevant territory, permitted uses, sublicensing authority, and any conflicting exclusive grant.",
-                    "Verify each connector's authorized access method, current account entitlement, retention permissions, request limits, and working fallback.",
-                    "Verify a sample royalty statement against signed definitions, guarantee credits, authorized deductions, and the separation of licensee sales from operator revenue.",
-                    "Verify renewal notices, reporting deadlines, audit windows, and quality-control duties have named owners within the stated staffing case.",
-                ],
-            },
-        },
-    ],
-    "pull_quote": "A licensing desk's information edge is the shortest auditable path from a public clue to a payable contractual right.",
-    "diagram_id": "diag-04",
-    "action_checklist": [
-        "Create four evidence-packet templates for patent, brand, catalog, and dataset licensing, each with asset identifiers and a precise proposed grant.",
-        "Register the eighteen directory sources with current access documentation, cost category, observed latency, configured quotas, and a tested fallback.",
-        "Implement the public-records-first enrichment waterfall and cap commercial API spend per qualified rights packet.",
-        "Build a versioned evidence store with document digests, separate source and retrieval timestamps, and explicit ownership assertions.",
-        "Test one authorized royalty statement end to end, including deductions, currency, minimum-guarantee credits, duplicate imports, and recognized revenue separation.",
-        "Assign renewal, audit, reporting, and connector exceptions across the 1 FT + 3 C pod, expanding only to the canonical 2 FT + 4 C Scaled structure when justified.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "35 U.S.C. 261 — Ownership; assignment",
-            "url": "https://www.law.cornell.edu/uscode/text/35/261",
-            "relevance": "Supports written patent-assignment evidence and analysis of recordation timing against later purchasers or mortgagees.",
-        },
-        {
-            "title": "37 CFR 3.54 — Effect of recording",
-            "url": "https://www.ecfr.gov/current/title-37/chapter-I/subchapter-A/part-3/section-3.54",
-            "relevance": "Establishes that USPTO recordation does not determine an instrument's validity or its effect on title.",
-        },
-        {
-            "title": "15 U.S.C. 1060 — Assignment of marks",
-            "url": "https://www.law.cornell.edu/uscode/text/15/1060",
-            "relevance": "Informs trademark-transfer review, including the associated goodwill and the restrictions applicable to certain applications.",
-        },
-        {
-            "title": "15 U.S.C. 1055 — Use by related companies",
-            "url": "https://www.law.cornell.edu/uscode/text/15/1055",
-            "relevance": "Provides statutory context for controlled related-company use when designing a brand-license quality-control process.",
-        },
-        {
-            "title": "17 U.S.C. 204 — Execution of transfers of copyright ownership",
-            "url": "https://www.law.cornell.edu/uscode/text/17/204",
-            "relevance": "Supports obtaining signed transfer instruments rather than treating catalog identifiers or public entries as sufficient title evidence.",
-        },
-        {
-            "title": "17 U.S.C. 205 — Recordation of transfers and other documents",
-            "url": "https://www.law.cornell.edu/uscode/text/17/205",
-            "relevance": "Frames copyright recordation review and the conditions affecting constructive notice and priority between conflicting transfers.",
-        },
-        {
-            "title": "17 U.S.C. 102 — Subject matter of copyright",
-            "url": "https://www.law.cornell.edu/uscode/text/17/102",
-            "relevance": "Requires precision about protected expression and the exclusion of ideas, procedures, systems, and methods when describing dataset rights.",
-        },
-        {
-            "title": "15 U.S.C. 7704 — Requirements for transmission of messages",
-            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
-            "relevance": "Supports concrete commercial-email controls for sender identification, truthful routing, postal addresses, and opt-out handling.",
-        },
-        {
-            "title": "15 U.S.C. 1 — Trusts and related restraints of trade",
-            "url": "https://www.law.cornell.edu/uscode/text/15/1",
-            "relevance": "Provides a primary competition-law reference when evaluating licensing restrictions and coordination between competitors.",
-        },
-    ],
-}
+CHAPTER_8 = {'id': 'Q8',
+ 'chapter_id': 'Q8',
+ 'chapter_number': 8,
+ 'question_number': 8,
+ 'slug': 'value-and-monetize-patent-portfolios',
+ 'question_prompt': 'How do I evaluate a patent portfolio and choose among licensing, brokered sales and '
+                    'NPE monetization?',
+ 'kicker': 'Q8 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Value and Monetize Patent Portfolios',
+ 'subtitle': 'IP holding companies, unused assets, valuation, monetization costs, portfolio readiness, '
+             'patent brokers, seller motivations, NPEs, Fractus, Arm and Qualcomm',
+ 'layout_template': 'legal_compliance_callout',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Operators who buy, broker, fund, and assert patents converge on one rule: a patent '
+                      'with no evidence of use and no enforcement threat does not sell and does not '
+                      'license. Funders pass on 19 of every 20 portfolios, brokers accept one or two '
+                      'percent of intake, and money flows to claim-charted, multi-family portfolios '
+                      'backing cases with at least $100M in damages. The street numbers are blunt. US '
+                      'litigation runs $12-20M at full rates. The starting proceeds split is 50/30/20 '
+                      'between owner, funder, and law firm. Broker commissions run 10-30%, and sales take '
+                      "6-18 months. Qualcomm's 3-5% per-phone royalty and Arm's $2.61B royalty line show "
+                      'the upside. Practitioners split on whether NPEs are essential leverage or a '
+                      "value-draining middleman, and on whether a falling buyer's market still rewards "
+                      'selling over licensing.',
+ 'key_metrics': [{'label': 'Litigation Funder Portfolio Rejection Rate',
+                  'metric': 'Litigation Funder Portfolio Rejection Rate',
+                  'value': '19 of every 20 portfolios passed on',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Funders screen damages, venue, marking, prior licenses, grant interests, and '
+                             'market size, and examine technical merits last.',
+                  'source': 'IPWatchdog, Inc. ([pyi_x9MFGjs @ 00:23:42])'},
+                 {'label': 'Starting Funded-Case Proceeds Split',
+                  'metric': 'Starting Funded-Case Proceeds Split',
+                  'value': '50% patent owner / 30% funder / 20% law firm',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'This is the opening split for a funded patent case. The panel stressed that '
+                             'each case is very different.',
+                  'source': 'IPWatchdog, Inc. ([pyi_x9MFGjs @ 00:07:24])'},
+                 {'label': 'Patent Broker Commission Range',
+                  'metric': 'Patent Broker Commission Range',
+                  'value': '10-30% of the sale price',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Typical broker compensation on a patent sale. Most transactions take 6 to 18 '
+                             'months to complete.',
+                  'source': 'UpCounsel ([xRRc9i7j5A8 @ 00:04:11])'},
+                 {'label': 'Broker Intake Acceptance Rate',
+                  'metric': 'Broker Intake Acceptance Rate',
+                  'value': '4-5 portfolios offered daily; accepted 1-2% of the time',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Tangible IP's intake volume against the share of portfolios it actually "
+                             'agrees to broker.',
+                  'source': 'Clause 8 ([t98CwzofUz0 @ 00:32:03])'}],
+ 'sections': [{'heading': 'Section 1: The Practitioner Consensus',
+               'paragraphs': ['Every operator who touches money in this market starts from the same '
+                              'premise: a patent is worth what its owner can credibly enforce. Fractus '
+                              'co-founder Carles Puente pivoted from manufacturing millions of antennas to '
+                              'research and licensing. Puente puts it flatly: without enforcing the '
+                              'rights, patents have no value. For Fractus as an SME, that enforcement had '
+                              'to happen in the US, and it was painful and difficult [fAwWxzitmUk @ '
+                              '00:03:48]. Silicon Valley Business School host David Smith is even blunter: '
+                              'companies usually do not pay patent licenses until they are forced to, so '
+                              'licensing is driven by litigation [hOFtwRua-qc @ 00:05:16]. The '
+                              'Transpacific IP guest on IPWatchdog describes the same reality from the '
+                              'owner side. Their firm runs carrot licensing, but the carrot only works '
+                              'when backed by a heavy stick [qZqv5lEPPQc @ 00:00:25]. Louis Carbonneau of '
+                              'Tangible IP has brokered more than 4,500 patents, and they turn this into a '
+                              'sales law: if there is no evidence that anyone is practicing the patents, '
+                              'they can predict with 100% certainty that the portfolio will not sell '
+                              '[t98CwzofUz0 @ 00:34:27]. The operator takeaway is that the asset is '
+                              'evidence of use plus a believable enforcement path. The certificate itself '
+                              'is just paperwork.',
+                              'The second point of agreement is that the overwhelming majority of granted '
+                              'patents are dead inventory. Berkeley Law & Technology Group cites the '
+                              'figure that roughly 90% of patents never generate revenue, because '
+                              'inventors patent ideas and never commercialize them [oRUwDt8nD5k @ '
+                              '00:00:00]. Anders Arison of Parallel North IP, a former head of patent '
+                              'acquisitions at Nokia, narrows it further. Over 1 million patents are '
+                              'granted every year, yet only about 5% are monetized, held back by gaps in '
+                              'awareness, funding, and expertise [_bueYwQ3iHE @ 00:10:00]. Silicon Valley '
+                              'Business School frames the same waste as a placement problem: so many '
+                              'patents sit unused because they are essentially in the wrong hands, while '
+                              'the channels to market are held by a few large corporations [vPziFABPW9w @ '
+                              '00:01:35]. The people who actually write checks confirm how narrow the '
+                              'funnel is. The IPWatchdog funding panel reports that funders pass on 19 of '
+                              'every 20 portfolios. They check damages, venue, marking, prior licenses, '
+                              'grant interests, and market size before they ever look at technical merits '
+                              '[pyi_x9MFGjs @ 00:23:42]. For an operator, the default outcome for any '
+                              'portfolio is rejection. The job is to prove the asset belongs in the small '
+                              'slice that actually moves.',
+                              'Practitioners also agree that a single patent rarely carries a campaign. '
+                              'Depth, coverage, and honest internal triage come first. The funding panel '
+                              'moderated by Brad Close warns that one newly issued patent means a '
+                              'portfolio is not ready. The panel urges owners to file multiple families '
+                              'and aim for three to six independent assets [pyi_x9MFGjs @ 00:32:09]. The '
+                              'host of the Transpacific IP conversation goes further, estimating that a '
+                              'portfolio of 10 good patents requires at least 100. The guest adds that a '
+                              'few patents only work in support of an operating company [qZqv5lEPPQc @ '
+                              '00:25:01]. Inside an operating company, Dean Keebler of Samtec runs every '
+                              "patent through three tests. Does it cover our product or a competitor's? "
+                              'Will it survive litigation? Will a third party think it survives? If not, '
+                              'Keebler questions its value [1UEOTCZ_qYA @ 00:04:56]. Useless Money adds '
+                              'the commercial filter that separates paper from cash flow: legal protection '
+                              'and commercial demand are two different things, and no universal royalty '
+                              'rate applies to every patent, brand, or software product [xkXjle5Spjw @ '
+                              '00:05:23]. The baseline prerequisite is a portfolio deep enough to survive '
+                              'invalidity attacks and mapped to real products before anyone spends a '
+                              'dollar on outreach.'],
+               'table': {'caption': 'Where operators, brokers, and funders agree on what makes a patent '
+                                    'portfolio monetizable',
+                         'headers': ['Consensus Point',
+                                     'What the Practitioner Reported',
+                                     'Operator Implication',
+                                     'Expert Source'],
+                         'rows': [['Enforcement is what creates patent value',
+                                   'Without enforcing the rights, patents have no value; US enforcement '
+                                   'was painful for an SME',
+                                   'Secure a credible enforcement path before pitching any prospective '
+                                   'licensee',
+                                   'IP Europe ([fAwWxzitmUk @ 00:03:48])'],
+                                  ['Licensing revenue is driven by litigation pressure',
+                                   'Companies usually do not pay patent licenses until they are forced to '
+                                   'pay',
+                                   'Treat carrot licensing as dependent on a visible, funded heavy stick',
+                                   'SVBS ~ Silicon Valley Business School ([hOFtwRua-qc @ 00:05:16])'],
+                                  ['Evidence of use decides whether a portfolio sells',
+                                   'With no evidence anyone practices the patents, the broker predicts '
+                                   'with 100% certainty there will be no sale',
+                                   'Build claim charts against real products before any buyer outreach '
+                                   'begins',
+                                   'Clause 8 ([t98CwzofUz0 @ 00:34:27])'],
+                                  ['Most granted patents never earn a dollar',
+                                   'Only about 5% of over 1 million annual grants actually get monetized',
+                                   'Assume rejection by default and prove why your asset is different',
+                                   'International Trade Council ([_bueYwQ3iHE @ 00:10:00])'],
+                                  ['Funders reject nearly every portfolio they see',
+                                   'Funders pass on 19 of every 20 portfolios and examine technical merits '
+                                   'last',
+                                   'Clear the damages, venue, marking, and prior-license gates before '
+                                   'arguing technical merits',
+                                   'IPWatchdog, Inc. ([pyi_x9MFGjs @ 00:23:42])'],
+                                  ['Portfolio depth beats a single strong patent',
+                                   'Ten good patents require at least 100; a few patents only support an '
+                                   'operating company',
+                                   'Keep filing in related space until several patents survive vetting',
+                                   'IPWatchdog, Inc. ([qZqv5lEPPQc @ 00:25:01])'],
+                                  ['Commercial demand is separate from legal protection',
+                                   'Legal protection and commercial demand are two different things for '
+                                   'any IP holder',
+                                   'Validate paying demand separately from validity before valuing the '
+                                   'portfolio',
+                                   'Useless Money ([xkXjle5Spjw @ 00:05:23])']]}},
+              {'heading': 'Section 2: Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['The cost of an enforcement campaign is where most owners get sticker shock. '
+                              'On the IPWatchdog economics panel moderated by Brad Close, a US case at '
+                              'full rates runs $12-20M. Litigation finance is non-recourse, so investors '
+                              'lose their capital on a loss. Firms defer 40-50% of their fees, which drops '
+                              'a $12M case to about $6M, while the funder still covers $2-3M in hard costs '
+                              "[pyi_x9MFGjs @ 00:05:41]. The same panel's starting split is 50% to the "
+                              'patent owner, 30% to the funder, and 20% to the law firm, and funding is '
+                              'reserved for damages of at least $100M. Louis Carbonneau prices a suit '
+                              'against Samsung or Apple at $3-5M and says plaintiffs win roughly one in '
+                              'three or one in four times, so plaintiffs must choose cases very '
+                              'selectively [t98CwzofUz0 @ 00:56:03]. Defending the asset costs real money '
+                              'too. The Transpacific IP conversation puts a PTAB defense at $300K to about '
+                              '$1M [qZqv5lEPPQc @ 00:46:07]. David Smith prices an IPR at about $250,000 '
+                              'and expert time at $356-478 per hour, based on more than 35,000 cases '
+                              '[hOFtwRua-qc @ 00:07:16]. The operator math is simple: unless the damages '
+                              'pool dwarfs a multi-million-dollar spend, no funder or contingency firm '
+                              'will carry the case.',
+                              'Selling or brokering runs on its own price list and calendar. UpCounsel '
+                              'reports that most brokers work on a commission of 10 to 30% of the sale '
+                              'price, and that most transactions take 6 to 18 months. The deal moves from '
+                              'a sales package to redacted outreach to a purchase agreement with '
+                              'independent legal review [xRRc9i7j5A8 @ 00:04:11]. Anders Arison quantifies '
+                              'the glut. Asking prices total about $44B against roughly $12-13B actually '
+                              'sold. Brokers represented about 70% of patents and 87% of packages, and it '
+                              "is now a buyer's market with falling prices [_bueYwQ3iHE @ 00:16:24]. Louis "
+                              "Carbonneau's vetting order mirrors a funder's: assertion potential using "
+                              'litigation-grade claim charts, then validity including priority and section '
+                              '101, then likely targets, then damages. The blunt rule is that $1 million '
+                              'in damages against $5 million to litigate does not sell [t98CwzofUz0 @ '
+                              '00:35:13]. J.D. Houvener, who claims about 500 patents over 10 years, says '
+                              'hiring a broker is better if you can afford it. A broker takes the '
+                              'emotionally invested inventor out of the talks, and buyers lower their '
+                              'guard with a professional across the table [a7AlJrwA2Jo @ 00:01:15]. Price, '
+                              'timing, and representation are set in the broker agreement before the first '
+                              'buyer call. UpCounsel says that agreement covers exclusivity, compensation, '
+                              'and duration.',
+                              'The royalty structures that pay at scale are surprisingly simple. The '
+                              'Strategy Breakdown reports that Qualcomm collects 3 to 5% of the wholesale '
+                              'price of nearly every phone. Qualcomm refuses pass-through: chipmakers '
+                              'license the IP just to build the chip, and OEMs pay a separate device-level '
+                              'royalty on the full wholesale price. Its licensing arm, QTL, is about 20% '
+                              'of revenue but 60% of profits [uNc4jO7TeCo @ 00:05:14]. Kingacademic UK '
+                              "describes Arm's two-layer model: an upfront license fee opens access, and a "
+                              'royalty is paid on each shipped product. In FY2026 that produced royalty '
+                              'revenue of $2.61B, up 21%, and license and other revenue of $2.31B, up 25% '
+                              '[aRUsXPICxpY @ 00:01:23]. Useless Money breaks down InterDigital: about '
+                              '$834M of 2025 revenue and $461M of operating income. A July 2025 Samsung '
+                              'arbitration result of $1.05B covers January 2023 to December 2030, which '
+                              'the company equated to roughly $131M in recurring revenue per year '
+                              '[xkXjle5Spjw @ 00:06:53]. For inventors feeding an NPE, David Smith insists '
+                              'on gross revenue-sharing over profit-sharing, because it is difficult to '
+                              'argue about the definition of revenue. Smith cites a case where $1M was '
+                              'billed for photocopies. Under an 80/20 split, a $1M license pays the '
+                              'inventor $200,000 [hOFtwRua-qc @ 00:18:09]. Lock down the royalty base '
+                              'before negotiating anything else.'],
+               'table': {'caption': 'Hard numbers practitioners quoted for enforcing, selling, and '
+                                    'licensing patents',
+                         'headers': ['Line Item', 'Figure Stated', 'How Operators Use It', 'Expert Source'],
+                         'rows': [['Full-rate US patent litigation budget',
+                                   '$12-20M per case at full rates',
+                                   "Size damages so the case justifies a funder's capital at risk",
+                                   'IPWatchdog, Inc. ([pyi_x9MFGjs @ 00:03:44])'],
+                                  ['Starting litigation-finance proceeds split',
+                                   '50% owner, 30% funder, 20% law firm; each case differs',
+                                   "Model the owner's net recovery before accepting a funded contingency "
+                                   'structure',
+                                   'IPWatchdog, Inc. ([pyi_x9MFGjs @ 00:07:24])'],
+                                  ['Suit against Samsung or Apple',
+                                   '$3-5M to litigate; plaintiffs win about 1 in 3 or 1 in 4',
+                                   'Choose defendants selectively because plaintiffs lose more often than '
+                                   'they win',
+                                   'Clause 8 ([t98CwzofUz0 @ 00:56:03])'],
+                                  ['Expert witness hourly rates',
+                                   '$356 review, $448 deposition, $478 trial per hour across 35,000+ cases',
+                                   'Reserve budget for experts because their credibility often decides the '
+                                   'case',
+                                   'SVBS ~ Silicon Valley Business School ([hOFtwRua-qc @ 00:07:16])'],
+                                  ['Patent broker commission and sale timeline',
+                                   '10-30% of sale price; 6-18 months to close',
+                                   'Plan cash needs around a sale cycle that can last up to eighteen '
+                                   'months',
+                                   'UpCounsel ([xRRc9i7j5A8 @ 00:04:11])'],
+                                  ['Qualcomm handset royalty rate',
+                                   '3-5% of the wholesale price of nearly every phone sold',
+                                   'Collect at both the chip and device levels by refusing pass-through '
+                                   'licensing',
+                                   'The Strategy Breakdown ([uNc4jO7TeCo @ 00:00:14])'],
+                                  ['Prior-art search and IDS spend',
+                                   'About three grand for a search and $180 for IDSs',
+                                   'Buy the search up front, then turn results into mini landscapes',
+                                   'IPWatchdog, Inc. ([1UEOTCZ_qYA @ 00:43:45])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Leverage Moves the Deal-Makers Actually Use',
+                           'body': 'These are timing, channel, and partner-selection edges taught by '
+                                   'brokers, in-house IP heads, and NPE veterans who close patent deals '
+                                   'for a living.',
+                           'items': ['Time outreach to land before target companies close their budgets, '
+                                     'and limit contact to the entities that specifically matter for your '
+                                     'case [International Trade Council — _bueYwQ3iHE @ 00:27:44]',
+                                     'Never contact suspected infringers yourself, because that can '
+                                     "undermine the patent's value and complicate negotiations. Let the "
+                                     'broker handle those sensitive communications [UpCounsel — '
+                                     'xRRc9i7j5A8 @ 00:02:43]',
+                                     'Use design patents as a fast weapon. Design-patent TROs are obtained '
+                                     "at CES, and Ridge Wallet's Amazon takedowns during a 2-week window "
+                                     'earn several hundred thousand dollars [IPWatchdog, Inc. — '
+                                     '1UEOTCZ_qYA @ 00:33:57]',
+                                     'When picking an NPE partner, find one that is under the radar and '
+                                     'not reporting to Wall Street. Public NPEs under quarterly pressure '
+                                     'have sold a license worth more than $20M for $10M [SVBS ~ Silicon '
+                                     'Valley Business School — hOFtwRua-qc @ 00:15:33]']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Audit and Map the Portfolio',
+                              'action': 'Build a patent taxonomy tying every asset to products, segment '
+                                        'revenue, and growth curves, then flag non-core assets.',
+                              'detail': 'Carl Marsh maps patents to product, segment revenue, and growth '
+                                        'curves, and favors patents in segments the owner has exited, '
+                                        'where there is no boomerang effect [IPWatchdog, Inc. — '
+                                        '1UEOTCZ_qYA @ 00:06:23]. Target pivoted or discontinued products, '
+                                        'unlicensed technology, and inactive marks, and drop assets whose '
+                                        'maintenance cost earns no revenue [Patent pc — Tv_OWgYldPw @ '
+                                        '00:01:01].'},
+                             {'step': 2,
+                              'title': 'Vet Like a Funder Before Anyone Else Does',
+                              'action': 'Run assertion, validity, target, and damages checks in that order '
+                                        'using litigation-grade claim charts.',
+                              'detail': 'Carbonneau vets assertion potential with litigation-grade claim '
+                                        'charts first, then validity including priority and section 101, '
+                                        'then likely targets, then damages [Clause 8 — t98CwzofUz0 @ '
+                                        '00:35:13]. Funders gate on damages, venue, marking, prior '
+                                        'licenses, grant interests, and market size before technical '
+                                        'merits [IPWatchdog, Inc. — pyi_x9MFGjs @ 00:23:42].'},
+                             {'step': 3,
+                              'title': 'Package and Run Targeted Outreach',
+                              'action': 'Turn the vetted portfolio into a tailored value proposition and '
+                                        'marketing package, then approach a short list of buyers.',
+                              'detail': 'Parallel North IP moves from technical review to market review, '
+                                        'landscape, environment, network, value proposition, and tailored '
+                                        'package before any outreach [International Trade Council — '
+                                        '_bueYwQ3iHE @ 00:37:49]. Brokers prepare a sales package, run '
+                                        'redacted outreach, and close with a purchase agreement under '
+                                        'independent legal review [UpCounsel — xRRc9i7j5A8 @ 00:02:11].'},
+                             {'step': 4,
+                              'title': 'Pick the Route, Close, and Record the Transfer',
+                              'action': 'Choose a lump-sum sale, a licensing campaign, or a hybrid revenue '
+                                        'share. Then transfer the full family and record the assignment.',
+                              'detail': 'A lump-sum sale is low complexity with a lower return. A '
+                                        'licensing campaign needs high investment and litigation for a '
+                                        "high return. A hybrid takes a cut of the buyer's licensing "
+                                        'revenue. Transfer the whole family to avoid a messy split across '
+                                        'jurisdictions [International Trade Council — _bueYwQ3iHE @ '
+                                        '00:30:14]. Record the transfer with the USPTO via forms and fees '
+                                        'so both parties get confirmation [Berkeley Law & Technology Group '
+                                        '— oRUwDt8nD5k @ 00:03:01].'}]},
+              {'heading': 'Section 3: Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['Sell the asset or keep the stream is the first fork, and the operators '
+                              "split on it. UpCounsel frames an outright sale as 'a one-time payment with "
+                              'no future responsibilities, but also no control over how the technology is '
+                              "used' [xRRc9i7j5A8 @ 00:03:38], while Berkeley Law & Technology Group "
+                              "pushes sellers to check licensing first, arguing a patent 'is likely to "
+                              "have a high value if it has significant licensing potential' [oRUwDt8nD5k @ "
+                              "00:01:00]. Parallel North IP's Anders Arison lays out three routes with "
+                              'clear trade-offs: a lump-sum sale is low complexity and low investment with '
+                              'a lower return; a licensing campaign demands high investment plus '
+                              'litigation and pays a high return; and a hybrid hands the asset to a buyer '
+                              "in exchange for a cut of that buyer's licensing revenue [_bueYwQ3iHE @ "
+                              '00:30:14]. Useless Money adds the long-game perspective: royalty, fixed '
+                              'fee, upfront-plus-royalty, and milestone structures keep income flowing, '
+                              "while an outright sale surrenders future income and control, and 'there is "
+                              'no universal royalty rate that applies to every patent, brand, or software '
+                              "product' [xkXjle5Spjw @ 00:03:24]. The operator read: cash today buys "
+                              'certainty and speed; licensing buys upside but drags the owner into '
+                              'funding, time, and enforcement risk.',
+                              'Whether to put a broker between the patent and the buyer draws mixed '
+                              "verdicts. J.D. Houvener says flatly, 'I would say hiring a broker is better "
+                              "if you can afford it,' and wants one with consumer-goods background in the "
+                              'specific technology who can reach decision makers; the payoff is removing '
+                              "the emotionally invested inventor so buyers 'have their guard down' "
+                              '[a7AlJrwA2Jo @ 00:00:41]. SVBS backs the leverage logic: lone inventors use '
+                              'brokers because of the power imbalance against corporate buyers, and '
+                              'VC-backed startups out of runway do better through a broker than selling '
+                              'direct [vPziFABPW9w @ 00:04:41]. UpCounsel prices that leverage at '
+                              "commissions 'typically ranging from 10 to 30% of the sale price' with deals "
+                              'taking 6 to 18 months [xRRc9i7j5A8 @ 00:04:11]. The counterweight comes '
+                              'from inside the trade. Louis Carbonneau of Tangible IP, who has brokered '
+                              'more than 4,500 patents, gets four or five portfolios a day and says yes '
+                              "'maybe one or two% of the time,' rejects the 'crazy inventor' profile, and "
+                              "tells would-be brokers to 'run away' because 'you eat what you kill' "
+                              '[t98CwzofUz0 @ 00:32:03]. Translation: a broker is a filter as much as a '
+                              'sales arm, and most sellers never clear the filter.',
+                              'The sharpest split is over handing patents to assertion players. Fractus '
+                              "co-founder Dr. Carles Puente, who pivoted from manufacturing 'millions and "
+                              "millions' of antennas into research and licensing, argues 'without "
+                              "enforcing the rights, patents have no value' and treats patent assertion "
+                              'entities as essential for SMEs that lack the means and know-how to enforce '
+                              '[fAwWxzitmUk @ 00:03:48]. SVBS host David Smith counters with the NPE bill: '
+                              "the NPE takes a 'huge chunk' of proceeds, peace agreements can put target "
+                              'companies off-limits, and public NPEs under quarterly pressure have dumped '
+                              'a license worth more than $20M for $10M, so the advice is to find one '
+                              "'under the radar and not reporting to Wall Street' [hOFtwRua-qc @ "
+                              '00:10:54]. Corporate sellers draw the opposite line: SVBS reports they sell '
+                              "in stealth and 'refuse to sell to enforcement-based buyers as they don't "
+                              "want to feed their adversaries' [vPziFABPW9w @ 00:05:41]. LG Energy "
+                              "Solution's Kyle Valisillo takes a middle road, running a patent pool "
+                              "through a separate vehicle so LG avoids looking 'litigious' and keeps "
+                              'cross-licensing with Panasonic open [pyi_x9MFGjs @ 00:11:30]. Pick the '
+                              'route by who you are: an SME needs a stick, a brand-sensitive operator '
+                              'needs distance from it.'],
+               'table': {'caption': 'Competing monetization playbooks and the practitioners behind each '
+                                    'side',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Exit structure: sell the asset outright or keep royalties',
+                                   'Lump-sum sale delivers low complexity, low investment, a lower return, '
+                                   'and no future control',
+                                   'Licensing campaign demands high investment plus litigation but returns '
+                                   'a high recurring payoff',
+                                   'International Trade Council ([_bueYwQ3iHE @ 00:30:14]); UpCounsel '
+                                   '([xRRc9i7j5A8 @ 00:03:38])'],
+                                  ['Broker in the middle versus direct sale to corporate buyers',
+                                   'Hire a broker if affordable; inventor leaves the room and buyers lower '
+                                   'their guard',
+                                   'Broker commissions typically run 10 to 30% of price and deals take 6 '
+                                   'to 18 months',
+                                   'J.D. Houvener / Bold Patents Law Firm ([a7AlJrwA2Jo @ 00:00:41]); '
+                                   'UpCounsel ([xRRc9i7j5A8 @ 00:04:11])'],
+                                  ['Assertion entities as partners: essential ally or expensive cost '
+                                   'center',
+                                   'Puente: patent assertion entities are essential for SMEs lacking means '
+                                   'and enforcement know-how',
+                                   'Smith: NPEs take a huge chunk and public NPEs fire-sell licenses near '
+                                   'quarter end',
+                                   'IP Europe ([fAwWxzitmUk @ 00:03:48]); SVBS ~ Silicon Valley Business '
+                                   'School ([hOFtwRua-qc @ 00:10:54])'],
+                                  ['Portfolio size needed for a credible licensing or assertion campaign',
+                                   'TP guest: five, 10 or more good patents in the related space, all '
+                                   'checked against prior art',
+                                   'Host: 10 good patents requires at least 100 filed; LG panel targets 3 '
+                                   'to 6 independent assets',
+                                   'IPWatchdog, Inc. ([qZqv5lEPPQc @ 00:24:22]); IPWatchdog, Inc. '
+                                   '([pyi_x9MFGjs @ 00:33:51])'],
+                                  ['PTAB survival odds used to underwrite the deal and pricing',
+                                   'TP guest: about 65% instituted, about 65% of those lose claims, '
+                                   'roughly 50% overall',
+                                   'Host: 80 to 85% die at final decision; funder panel cites a 75 to 80% '
+                                   'kill rate',
+                                   'IPWatchdog, Inc. ([qZqv5lEPPQc @ 00:22:45]); IPWatchdog, Inc. '
+                                   '([pyi_x9MFGjs @ 00:08:47])'],
+                                  ['Valuation method: model the cash flows or treat it as alchemy',
+                                   'Polle values IP with DCF plus real options, never book value, and '
+                                   'separates value from price',
+                                   "Dean Keebler calls valuation 'like alchemy' because regional sales "
+                                   'never prove patent causation',
+                                   'EUIPO ([IZLXSII8AZ8 @ 00:15:15]); IPWatchdog, Inc. ([1UEOTCZ_qYA @ '
+                                   '00:09:50])'],
+                                  ['Revenue-share structure when handing patents to an NPE partner',
+                                   'Gross revenue share: an 80/20 split on a $1M license pays the inventor '
+                                   '$200,000',
+                                   'Profit share invites cost disputes; one case saw $1M billed for '
+                                   'photocopies alone',
+                                   'SVBS ~ Silicon Valley Business School ([hOFtwRua-qc @ 00:18:09]); SVBS '
+                                   '~ Silicon Valley Business School ([hOFtwRua-qc @ 00:17:32])']]}},
+              {'heading': 'Section 4: Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The first trap is underwriting a campaign without the war chest. The '
+                              "IPWatchdog funder panel puts a US case at full rates at '12 to $20 "
+                              "million,' and even when firms defer 40 to 50 percent of fees, the funder "
+                              'still eats $2 to 3 million in hard costs [pyi_x9MFGjs @ 00:03:44]. Funders '
+                              'pass on 19 of every 20 portfolios, screen damages, venue, marking and prior '
+                              'licenses before technical merit, and want at least $100 million in damages '
+                              'before writing a check [pyi_x9MFGjs @ 00:23:42]. Louis Carbonneau runs the '
+                              'same math at the brokerage level: $1 million in damages against $5 million '
+                              'to litigate does not sell, and suing Samsung or Apple runs $3 to 5 million '
+                              'with plaintiffs winning roughly 1 in 3 or 1 in 4 times [t98CwzofUz0 @ '
+                              '00:35:13]. SVBS stacks more cost on top: an IPR at about $250,000, expert '
+                              'witnesses at $356 to $478 an hour and often several million per case, plus '
+                              'fee-shifting exposure where losing can mean paying more than $10 million '
+                              '[hOFtwRua-qc @ 00:07:52]. The economics check is blunt: if provable damages '
+                              'cannot carry the litigation bill, funders walk and buyers do not bid.',
+                              'The second cluster of failures is self-inflicted at the market stage. '
+                              "Carbonneau can 'predict with 100% certainty' that a portfolio with no "
+                              'evidence of use will not sell, and Tangible IP declines portfolios that '
+                              'have been shopped so widely they are burned [t98CwzofUz0 @ 00:34:27]. '
+                              'Parallel North IP sees the same burn: contacting companies too early means '
+                              'no response when you come back on a second approach, so outreach should be '
+                              'limited to the entities that matter for the case and timed before budgets '
+                              'close [_bueYwQ3iHE @ 00:46:06]. UpCounsel warns owners against handling '
+                              "sensitive outreach themselves, because 'this approach could undermine the "
+                              "patent's value and complicate negotiations,' and the broker should handle "
+                              'those communications [xRRc9i7j5A8 @ 00:02:43]. Thin inventory kills deals '
+                              "too: the IPWatchdog economics panel says one newly issued patent means 'not "
+                              "ready,' pushes multiple families, and warns teardown tests can exceed "
+                              "$13,000 just to prove a single redundant claim limitation, because 'reverse "
+                              "engineering can be a huge cost on a portfolio' [pyi_x9MFGjs @ 00:32:09]. "
+                              'Each of these mistakes is cheap to make and expensive to undo: a burned '
+                              'list, a tipped-off target, or a one-patent pitch rarely gets a second '
+                              'hearing.',
+                              'The third trap is treating licensing revenue as steady. Useless Money flags '
+                              "that InterDigital's headline numbers included catch-up revenue from deals "
+                              'like the $1.05 billion Samsung arbitration, so the stream is not even and '
+                              'recurring, and warns about customer concentration and the gap between '
+                              'recognized revenue and cash received [xkXjle5Spjw @ 00:07:40]. Kingacademic '
+                              "UK makes the same point for Arm's royalty flywheel: 'Customers must keep "
+                              "choosing ARM over alternatives,' and 'a lost design can reduce royalties "
+                              "for years' [aRUsXPICxpY @ 00:01:56]. The Strategy Breakdown shows how fast "
+                              'a toll road can stall: Apple stopped paying Qualcomm in 2017 and shifted to '
+                              'Intel, while Taiwan, Korea and the EU stacked billions in fines and Huawei '
+                              'withheld royalties before Apple settled on the first day of trial '
+                              '[uNc4jO7TeCo @ 00:07:14]. Inside large companies the enemy is often '
+                              'in-house: Carbonneau found Microsoft business units territorial, blocking '
+                              'sales and licenses mainly to avoid embarrassment if a buyer succeeded where '
+                              "they failed, and pre-litigation licenses hit the unit's P&L while post-suit "
+                              'settlements came from corporate funds [t98CwzofUz0 @ 00:16:20]. Stress-test '
+                              'any royalty model against concentration, catch-up lumps, design losses, and '
+                              'internal vetoes before banking on it.'],
+               'table': {'caption': 'Firsthand failure modes, the numbers behind them, and the operator '
+                                    'check',
+                         'headers': ['Failure Mode',
+                                     'What Practitioners Reported',
+                                     'Operator Check',
+                                     'Expert Source'],
+                         'rows': [['Funded case drifting toward a mere cross-license settlement',
+                                   'Funder panel warns a funded case cannot end in a mere cross-license',
+                                   'Steer settlement toward cash that covers the funder and law firm '
+                                   'splits',
+                                   'IPWatchdog, Inc. ([pyi_x9MFGjs @ 00:19:40])'],
+                                  ['Litigation finance aimed at a global head-to-head competitor',
+                                   'Panel states global competitor suits are bad litigation finance '
+                                   'investments',
+                                   'Keep funded targets away from global competitor fights and '
+                                   'geopolitical tangles',
+                                   'IPWatchdog, Inc. ([pyi_x9MFGjs @ 00:19:56])'],
+                                  ['Profit-share deal with an NPE bleeding on disputed costs',
+                                   'Since the 2012 reforms costs get disputed; one case billed $1M for '
+                                   'photocopies',
+                                   'Negotiate gross revenue sharing because revenue is hard to argue about',
+                                   'SVBS ~ Silicon Valley Business School ([hOFtwRua-qc @ 00:17:32])'],
+                                  ['Thin examination leaves issued patents exposed to invalidity '
+                                   'challenges',
+                                   'Examiners spend about 2.5 hours searching, so issued patents are 90% '
+                                   'likely invalidated',
+                                   'Pay for a prior-art search, keep continuations open, and file a PCT',
+                                   'Clause 8 ([t98CwzofUz0 @ 00:46:26])'],
+                                  ['Partial family transfer that leaves foreign assets behind',
+                                   'Deals can turn really messy when assets in other jurisdictions are not '
+                                   'transferred',
+                                   'Transfer the whole patent family across every jurisdiction in one deal',
+                                   'International Trade Council ([_bueYwQ3iHE @ 00:59:03])'],
+                                  ['Listing the patent on unreliable online sales platforms',
+                                   'Some online patent platforms are unreliable and may be used by '
+                                   'fraudsters',
+                                   'Target industry firms, angel investors and VCs directly with a '
+                                   'prepared package',
+                                   'Berkeley Law & Technology Group ([oRUwDt8nD5k @ 00:01:59])'],
+                                  ['Pricing a portfolio off pre-2013 gold rush comparables',
+                                   'A portfolio sold in 2012 would now draw no offer or 10 to 20% of price',
+                                   "Price for today's buyer's market where asking prices far exceed actual "
+                                   'sales',
+                                   'Clause 8 ([t98CwzofUz0 @ 00:28:08])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Four kill switches before you spend a dollar on monetization',
+                           'body': 'Each gate comes straight from deals that practitioners watched die. '
+                                   'Fail one and the portfolio goes back for rework or gets pruned.',
+                           'items': ['No evidence of use, no deal: without a claim chart showing someone '
+                                     'practicing the patent, the portfolio will not sell [Clause 8 — '
+                                     't98CwzofUz0 @ 00:34:27].',
+                                     'Clear the funder screen first: damages, venue, marking, prior '
+                                     'licenses and grant interests are checked before technical merit, and '
+                                     '19 of 20 portfolios get passed [IPWatchdog, Inc. — pyi_x9MFGjs @ '
+                                     '00:23:42].',
+                                     'Hold outreach until the package is ready: contacting companies too '
+                                     'early risks no response on a second approach [International Trade '
+                                     'Council — _bueYwQ3iHE @ 00:46:06].',
+                                     'Map patents to live revenue before asserting: Dow plastics was about '
+                                     '20% of revenue yet its patents were unassertable, so Carl Marsh '
+                                     'de-invested [IPWatchdog, Inc. — 1UEOTCZ_qYA @ 00:07:14].']}}],
+ 'pull_quote': "'If there's no evidence of use that anyone is practicing these patents, I can always "
+               "predict with 100% certainty that they will not sell.' Louis Carbonneau, Clause 8 "
+               '(t98CwzofUz0 @ 00:34:27).',
+ 'diagram_id': 'diag-04',
+ 'action_checklist': ['Run an IP audit for pivoted, discontinued or non-core assets, and drop patents that '
+                      'carry maintenance cost with no revenue so the money moves to new filings (Patent '
+                      'pc, Tv_OWgYldPw @ 00:01:22).',
+                      'Build a patent taxonomy that maps every patent to product, segment revenue and '
+                      'growth curves before choosing what to monetize (IPWatchdog, Inc., 1UEOTCZ_qYA @ '
+                      '00:06:23).',
+                      'Vet in order: assertion potential with litigation-grade claim charts, validity '
+                      'including priority and 101, likely targets, then damages (Clause 8, t98CwzofUz0 @ '
+                      '00:35:13).',
+                      'Use claim charts as evidence of use and limit outreach to the entities that matter '
+                      'for the case, timed before budgets close (International Trade Council, _bueYwQ3iHE '
+                      '@ 00:34:17).',
+                      'Prepare a sales package, run redacted outreach, and close on a purchase agreement '
+                      'with independent legal review (UpCounsel, xRRc9i7j5A8 @ 00:02:11).',
+                      'Record the assignment with the USPTO through its forms and fees so both parties '
+                      'receive confirmation of the transfer (Berkeley Law & Technology Group, oRUwDt8nD5k '
+                      '@ 00:03:01).'],
+ 'statutory_citations': [{'title': 'IPWatchdog, Inc. — Patent Monetization Economics: What It Costs to '
+                                   'Turn Patents into Revenue [00:23:42]',
+                          'url': 'https://www.youtube.com/watch?v=pyi_x9MFGjs&t=1422s',
+                          'relevance': 'Primary practitioner testimony on funder screening gates, 19-of-20 '
+                                       'pass rate, and litigation cost splits.'},
+                         {'title': 'Clause 8 — Louis Carbonneau on Brokering Patents After the Patent Gold '
+                                   'Rush [00:35:13]',
+                          'url': 'https://www.youtube.com/watch?v=t98CwzofUz0&t=2113s',
+                          'relevance': 'Primary practitioner testimony on broker vetting order, burned '
+                                       'portfolios, and damages-versus-cost math.'},
+                         {'title': 'International Trade Council — WEBINAR: How to Successfully Monetize a '
+                                   'Patent: Fundamentals of Patent Monetization [00:30:14]',
+                          'url': 'https://www.youtube.com/watch?v=_bueYwQ3iHE&t=1814s',
+                          'relevance': 'Primary practitioner testimony on sale, licensing campaign, and '
+                                       'hybrid monetization routes.'},
+                         {'title': 'SVBS ~ Silicon Valley Business School — Monetizing Patents Through '
+                                   "NPE's [00:18:09]",
+                          'url': 'https://www.youtube.com/watch?v=hOFtwRua-qc&t=1089s',
+                          'relevance': 'Primary practitioner testimony on NPE revenue-share versus '
+                                       'profit-share economics and NPE downsides.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'xkXjle5Spjw',
+                       'title': 'The Economics of Owning an IP Holding Company',
+                       'channel': 'Useless Money',
+                       'author': 'Useless Money',
+                       'text': 'There is no universal royalty rate that applies to every patent, brand, or '
+                               'software product.',
+                       'tip': 'There is no universal royalty rate that applies to every patent, brand, or '
+                              'software product.',
+                       'timestamp': 204,
+                       'timestamp_seconds': 204,
+                       'timestamp_label': '[00:03:24]',
+                       'url': 'https://www.youtube.com/watch?v=xkXjle5Spjw&t=204s',
+                       'markdown': '[00:03:24](https://www.youtube.com/watch?v=xkXjle5Spjw&t=204s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'fAwWxzitmUk',
+                       'title': 'Patents and patent licensing as a business model? Fractus co-founder Dr. '
+                                'Carles Puente explains how',
+                       'channel': 'IP Europe',
+                       'author': 'IP Europe',
+                       'text': 'This is the real issue, and without enforcing the rights, patents have no '
+                               'value.',
+                       'tip': 'This is the real issue, and without enforcing the rights, patents have no '
+                              'value.',
+                       'timestamp': 228,
+                       'timestamp_seconds': 228,
+                       'timestamp_label': '[00:03:48]',
+                       'url': 'https://www.youtube.com/watch?v=fAwWxzitmUk&t=228s',
+                       'markdown': '[00:03:48](https://www.youtube.com/watch?v=fAwWxzitmUk&t=228s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'qZqv5lEPPQc',
+                       'title': 'Patent Monetization: Doing Business as an NPE',
+                       'channel': 'IPWatchdog, Inc.',
+                       'author': 'IPWatchdog, Inc.',
+                       'text': 'Ideally you need to have five, 10 or more patents in the related space '
+                               'that all are good, all infringement, all check out on their prior art '
+                               'searches.',
+                       'tip': 'Ideally you need to have five, 10 or more patents in the related space that '
+                              'all are good, all infringement, all check out on their prior art searches.',
+                       'timestamp': 1462,
+                       'timestamp_seconds': 1462,
+                       'timestamp_label': '[00:24:22]',
+                       'url': 'https://www.youtube.com/watch?v=qZqv5lEPPQc&t=1462s',
+                       'markdown': '[00:24:22](https://www.youtube.com/watch?v=qZqv5lEPPQc&t=1462s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'xRRc9i7j5A8',
+                       'title': 'How Patent Brokers Help You Turn Intellectual Property Into Profit',
+                       'channel': 'UpCounsel',
+                       'author': 'UpCounsel',
+                       'text': 'Most brokers work on commission, typically ranging from 10 to 30% of the '
+                               'sale price.',
+                       'tip': 'Most brokers work on commission, typically ranging from 10 to 30% of the '
+                              'sale price.',
+                       'timestamp': 251,
+                       'timestamp_seconds': 251,
+                       'timestamp_label': '[00:04:11]',
+                       'url': 'https://www.youtube.com/watch?v=xRRc9i7j5A8&t=251s',
+                       'markdown': '[00:04:11](https://www.youtube.com/watch?v=xRRc9i7j5A8&t=251s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'IZLXSII8AZ8',
+                       'title': 'IP valuation – The art of making money with your Intellectual Property',
+                       'channel': 'EUIPO',
+                       'author': 'EUIPO',
+                       'text': 'In doing so, I never work with book value.',
+                       'tip': 'In doing so, I never work with book value.',
+                       'timestamp': 915,
+                       'timestamp_seconds': 915,
+                       'timestamp_label': '[00:15:15]',
+                       'url': 'https://www.youtube.com/watch?v=IZLXSII8AZ8&t=915s',
+                       'markdown': '[00:15:15](https://www.youtube.com/watch?v=IZLXSII8AZ8&t=915s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Tv_OWgYldPw',
+                       'title': 'How to Monetize Unused Intellectual Property and Patents',
+                       'channel': 'Patent pc',
+                       'author': 'Patent pc',
+                       'text': 'So you need to conduct an IP audit to identify underutilized assets.',
+                       'tip': 'So you need to conduct an IP audit to identify underutilized assets.',
+                       'timestamp': 40,
+                       'timestamp_seconds': 40,
+                       'timestamp_label': '[00:00:40]',
+                       'url': 'https://www.youtube.com/watch?v=Tv_OWgYldPw&t=40s',
+                       'markdown': '[00:00:40](https://www.youtube.com/watch?v=Tv_OWgYldPw&t=40s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'aRUsXPICxpY',
+                       'title': "Arm's Licensing & Royalty Business Model Explained",
+                       'channel': 'Kingacademic UK',
+                       'author': 'Kingacademic UK',
+                       'text': 'A lost design can reduce royalties for years.',
+                       'tip': 'A lost design can reduce royalties for years.',
+                       'timestamp': 116,
+                       'timestamp_seconds': 116,
+                       'timestamp_label': '[00:01:56]',
+                       'url': 'https://www.youtube.com/watch?v=aRUsXPICxpY&t=116s',
+                       'markdown': '[00:01:56](https://www.youtube.com/watch?v=aRUsXPICxpY&t=116s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'pyi_x9MFGjs',
+                       'title': 'Patent Monetization Economics: What It Costs to Turn Patents into Revenue',
+                       'channel': 'IPWatchdog, Inc.',
+                       'author': 'IPWatchdog, Inc.',
+                       'text': 'Global competitor suits are bad litigation finance investments.',
+                       'tip': 'Global competitor suits are bad litigation finance investments.',
+                       'timestamp': 1196,
+                       'timestamp_seconds': 1196,
+                       'timestamp_label': '[00:19:56]',
+                       'url': 'https://www.youtube.com/watch?v=pyi_x9MFGjs&t=1196s',
+                       'markdown': '[00:19:56](https://www.youtube.com/watch?v=pyi_x9MFGjs&t=1196s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '1UEOTCZ_qYA',
+                       'title': 'Is Your Patent Portfolio Ready to Make Money? Patent Monetization Reality '
+                                'Check',
+                       'channel': 'IPWatchdog, Inc.',
+                       'author': 'IPWatchdog, Inc.',
+                       'text': "That's the role of the consultant to come in and deliver bad news.",
+                       'tip': "That's the role of the consultant to come in and deliver bad news.",
+                       'timestamp': 1493,
+                       'timestamp_seconds': 1493,
+                       'timestamp_label': '[00:24:53]',
+                       'url': 'https://www.youtube.com/watch?v=1UEOTCZ_qYA&t=1493s',
+                       'markdown': '[00:24:53](https://www.youtube.com/watch?v=1UEOTCZ_qYA&t=1493s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'uNc4jO7TeCo',
+                       'title': 'IP Licensing Strategy: How Qualcomm Built the Most Powerful Patent Empire '
+                                'in Tech History',
+                       'channel': 'The Strategy Breakdown',
+                       'author': 'The Strategy Breakdown',
+                       'text': "They're effectively getting paid twice.",
+                       'tip': "They're effectively getting paid twice.",
+                       'timestamp': 402,
+                       'timestamp_seconds': 402,
+                       'timestamp_label': '[00:06:42]',
+                       'url': 'https://www.youtube.com/watch?v=uNc4jO7TeCo&t=402s',
+                       'markdown': '[00:06:42](https://www.youtube.com/watch?v=uNc4jO7TeCo&t=402s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '_bueYwQ3iHE',
+                       'title': 'WEBINAR: How to Successfully Monetize a Patent: Fundamentals of Patent '
+                                'Monetization',
+                       'channel': 'International Trade Council',
+                       'author': 'International Trade Council',
+                       'text': 'Yet while over 1 million patents are being granted every year, only 5% of '
+                               'them approximately are monetized.',
+                       'tip': 'Yet while over 1 million patents are being granted every year, only 5% of '
+                              'them approximately are monetized.',
+                       'timestamp': 600,
+                       'timestamp_seconds': 600,
+                       'timestamp_label': '[00:10:00]',
+                       'url': 'https://www.youtube.com/watch?v=_bueYwQ3iHE&t=600s',
+                       'markdown': '[00:10:00](https://www.youtube.com/watch?v=_bueYwQ3iHE&t=600s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'oRUwDt8nD5k',
+                       'title': 'How to Sell Your Patent: A Guide to Monetizing Your Invention',
+                       'channel': 'Berkeley Law & Technology Group',
+                       'author': 'Berkeley Law & Technology Group',
+                       'text': 'While online platforms exist for selling patents, be cautious as some are '
+                               'unreliable and may be used by fraudsters.',
+                       'tip': 'While online platforms exist for selling patents, be cautious as some are '
+                              'unreliable and may be used by fraudsters.',
+                       'timestamp': 119,
+                       'timestamp_seconds': 119,
+                       'timestamp_label': '[00:01:59]',
+                       'url': 'https://www.youtube.com/watch?v=oRUwDt8nD5k&t=119s',
+                       'markdown': '[00:01:59](https://www.youtube.com/watch?v=oRUwDt8nD5k&t=119s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'a7AlJrwA2Jo',
+                       'title': 'Should I Hire a Patent Broker?',
+                       'channel': 'J.D. Houvener / Bold Patents Law Firm',
+                       'author': 'J.D. Houvener / Bold Patents Law Firm',
+                       'text': 'I would say hiring a broker is better if you can afford it.',
+                       'tip': 'I would say hiring a broker is better if you can afford it.',
+                       'timestamp': 41,
+                       'timestamp_seconds': 41,
+                       'timestamp_label': '[00:00:41]',
+                       'url': 'https://www.youtube.com/watch?v=a7AlJrwA2Jo&t=41s',
+                       'markdown': '[00:00:41](https://www.youtube.com/watch?v=a7AlJrwA2Jo&t=41s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'vPziFABPW9w',
+                       'title': "Who's Selling Patents? Understanding the Motivations and Strategies "
+                                'Behind Patent Sales',
+                       'channel': 'SVBS ~ Silicon Valley Business School',
+                       'author': 'SVBS ~ Silicon Valley Business School',
+                       'text': 'Corporations also often refuse to sell to enforcement-based buyers as they '
+                               "don't want to feed their adversaries.",
+                       'tip': 'Corporations also often refuse to sell to enforcement-based buyers as they '
+                              "don't want to feed their adversaries.",
+                       'timestamp': 341,
+                       'timestamp_seconds': 341,
+                       'timestamp_label': '[00:05:41]',
+                       'url': 'https://www.youtube.com/watch?v=vPziFABPW9w&t=341s',
+                       'markdown': '[00:05:41](https://www.youtube.com/watch?v=vPziFABPW9w&t=341s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'hOFtwRua-qc',
+                       'title': "Monetizing Patents Through NPE's",
+                       'channel': 'SVBS ~ Silicon Valley Business School',
+                       'author': 'SVBS ~ Silicon Valley Business School',
+                       'text': 'These revenue sharing arrangements are much more appealing to patent '
+                               "holders than profit sharing deals because it's difficult to argue about "
+                               'the definition of revenue.',
+                       'tip': 'These revenue sharing arrangements are much more appealing to patent '
+                              "holders than profit sharing deals because it's difficult to argue about the "
+                              'definition of revenue.',
+                       'timestamp': 1089,
+                       'timestamp_seconds': 1089,
+                       'timestamp_label': '[00:18:09]',
+                       'url': 'https://www.youtube.com/watch?v=hOFtwRua-qc&t=1089s',
+                       'markdown': '[00:18:09](https://www.youtube.com/watch?v=hOFtwRua-qc&t=1089s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 't98CwzofUz0',
+                       'title': 'Louis Carbonneau on Brokering Patents After the Patent Gold Rush',
+                       'channel': 'Clause 8',
+                       'author': 'Clause 8',
+                       'text': "If there's no evidence of use that anyone is practicing these patents, I "
+                               'can always predict with 100% certainty that they will not sell.',
+                       'tip': "If there's no evidence of use that anyone is practicing these patents, I "
+                              'can always predict with 100% certainty that they will not sell.',
+                       'timestamp': 2067,
+                       'timestamp_seconds': 2067,
+                       'timestamp_label': '[00:34:27]',
+                       'url': 'https://www.youtube.com/watch?v=t98CwzofUz0&t=2067s',
+                       'markdown': '[00:34:27](https://www.youtube.com/watch?v=t98CwzofUz0&t=2067s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 't98CwzofUz0',
+                       'title': 'Louis Carbonneau on Brokering Patents After the Patent Gold Rush',
+                       'channel': 'Clause 8',
+                       'author': 'Clause 8',
+                       'text': "You basically eat what you kill, and it's not for the faint of heart.",
+                       'tip': "You basically eat what you kill, and it's not for the faint of heart.",
+                       'timestamp': 3731,
+                       'timestamp_seconds': 3731,
+                       'timestamp_label': '[01:02:11]',
+                       'url': 'https://www.youtube.com/watch?v=t98CwzofUz0&t=3731s',
+                       'markdown': '[01:02:11](https://www.youtube.com/watch?v=t98CwzofUz0&t=3731s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'}]}

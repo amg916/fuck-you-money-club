@@ -1,334 +1,335 @@
 {
   "diagrams": [
     {
-      "diagram_id": "diag-01-accepted-lead-workflow",
-      "chart_type": "process_flow",
-      "title": "Turn Eligible Accounts into Accepted Operator Revenue",
-      "subtitle": "Five operating stages connect account selection, outreach, qualification, routing, and recognized service fees.",
+      "diagram_id": "diag-01-pay-per-lead-arbitrage-loop",
       "chapter_number": 1,
-      "epistemic_tag": "operating_framework",
-      "assumptions_note": "Stage numbers indicate sequence, not conversion volume. Revenue means retainers and accepted-lead fees; client-funded advertising pass-through and the client's downstream sales remain excluded.",
-      "caption": "A lead becomes billable only under the agreed acceptance definition. Keep eligibility evidence, qualification fields, routing timestamps, and acceptance outcomes attached to the same CRM record.",
+      "title": "The Pay-Per-Lead Arbitrage Loop",
+      "subtitle": "One niche, one brand, one ad account, leads resold to buyers who already pay for them",
+      "chart_type": "process_flow",
       "stages": [
         {
-          "label": "Define the commercial target",
-          "value": "Specify territory, buyer role, and qualifying need.",
-          "numeric_value": 1.0,
-          "detail": "The founder records service territory, excluded accounts, buyer authority, minimum project fit, and duplicate rules before sourcing contacts or quoting accepted-lead fees."
+          "step": "01",
+          "label": "Pick One Niche Worth $100+ Per Lead",
+          "value": "Step 1",
+          "detail": "One niche, one brand, one ad account. My First Million warns operators below $100 per lead struggle to copy the blueprint."
         },
         {
-          "label": "Establish contact eligibility",
-          "value": "Check provenance, channel rules, and suppression status.",
-          "numeric_value": 2.0,
-          "detail": "Record source, collection date, permitted purpose, and channel-specific evidence. Reconcile CRM suppression with every sending inbox and calling queue before activation."
+          "step": "02",
+          "label": "Generate Leads at $18 to $50",
+          "value": "Step 2",
+          "detail": "Kelly Joseph's math at a $25 CPL turns $1k of spend into 40 leads. Media buying is the key skill in an arbitrage model (Billy Robinson)."
         },
         {
-          "label": "Run identifiable outreach",
-          "value": "Operate authenticated inboxes with truthful sender identity.",
-          "numeric_value": 3.0,
-          "detail": "Configure SPF, DKIM, and DMARC on authorized domains. Use Google Workspace or Microsoft 365 within provider limits; investigate complaints instead of rotating inboxes to bypass restrictions."
+          "step": "03",
+          "label": "Price Backward from 2x to 3x Buyer ROAS",
+          "value": "Step 3",
+          "detail": "Resell at 1.5x to 3x cost. Hunter Ceroy sets every price so the client clears a 2x to 3x return and reorders. Joseph sells the 40 leads at $60 each for $2,400 revenue and $1,400 profit."
         },
         {
-          "label": "Qualify and route",
-          "value": "Confirm need, fit, ownership, and appointment availability.",
-          "numeric_value": 4.0,
-          "detail": "Use HubSpot or Salesforce required fields and Calendly availability to verify the buyer's request, assign an account owner, and prevent duplicate appointment billing."
+          "step": "04",
+          "label": "Deliver with Speed-to-Lead Automation",
+          "value": "Step 4",
+          "detail": "AI SMS agents, three automated texts and two-minute call rules. Robinson demos the bot live and reports closing one in three against a $3,750 minimum order."
         },
         {
-          "label": "Accept, invoice, and learn",
-          "value": "Record acceptance evidence before recognizing lead fees.",
-          "numeric_value": 5.0,
-          "detail": "Apply the signed acceptance and dispute terms, invoice earned retainers and accepted units, and report rejection reasons by source. Feed poor-fit patterns back into targeting."
+          "step": "05",
+          "label": "Post Sold Leads Back Server-Side",
+          "value": "Step 5",
+          "detail": "Conversions API through Stape.io, which Joseph calls the moat. New buyers prepay, and delivery pauses when payment is 7 days late."
         }
-      ]
+      ],
+      "caption": "Operators who left retainers report monthly books of $221K to $400K built on owned leads resold at a markup to buyers who stay above a 2x to 3x ROAS.",
+      "assumptions_note": "The 5-step order is an editorial sequencing of steps the practitioners describe. All dollar figures are attributed practitioner claims, not audited results.",
+      "note": "Sources - Billy Robinson (NStq42nosUk, -_uHG2CwBjA), Kelly Joseph (muQkzU3fXJY), Hunter Ceroy (0Cfp-Fc0sag), My First Million (Poc5H6aVTlw)."
     },
     {
-      "diagram_id": "diag-02-annual-account-to-acceptance-funnel",
-      "chart_type": "funnel",
-      "title": "One Annual Cohort, Five Nested Conversion Stages",
-      "subtitle": "An illustrative 5,000-account cohort produces 60 client-accepted appointments without counting messages as separate prospects.",
+      "diagram_id": "diag-02-claude-code-smartlead-30-day-funnel",
       "chapter_number": 6,
-      "epistemic_tag": "illustrative_model",
-      "assumptions_note": "All stages count distinct accounts from one annual cohort; each later stage is a subset of the preceding stage. Count at most one accepted appointment per account. These are planning assumptions, not observed conversion benchmarks. Sixty accepted appointments at $1,000 produce $60,000; five annual client retainers at $73,000 produce $365,000; combined Base revenue is exactly $425,000.",
-      "caption": "Stage conversions are 40%, 10%, 40%, and 75%; total accepted yield is 1.2% of screened accounts. Retainers are a separate revenue component, not an additional prospect-conversion stage.",
+      "title": "A 30-Day Smartlead Campaign, Sent to Calls",
+      "subtitle": "Day-27 results of a Claude Code driven campaign with hand-written copy",
+      "chart_type": "funnel",
       "stages": [
         {
-          "label": "Eligible target accounts",
-          "value": "5,000 distinct accounts meet documented screening criteria.",
-          "numeric_value": 5000.0,
-          "detail": "Deduplicate company domains and legal entities, confirm commercial fit, and remove suppressed contacts before including an account in the annual eligible cohort."
+          "label": "Emails Sent",
+          "value": 15000,
+          "display": "~15,000",
+          "conversion": "100%",
+          "detail": "Smartlead campaign on an account running about a year."
         },
         {
-          "label": "Accounts reached",
-          "value": "2,000 accounts receive at least one eligible outreach.",
-          "numeric_value": 2000.0,
-          "detail": "Forty percent of screened accounts receive a delivered message through an eligible channel. Multiple contacts, inboxes, and follow-ups still count as one reached account."
+          "label": "Net-New Leads Reached",
+          "value": 8000,
+          "display": "~8,000",
+          "conversion": "~53% of sends",
+          "detail": "Fresh contacts rather than repeat touches on the same list."
         },
         {
-          "label": "Positive account responses",
-          "value": "200 accounts express interest in a relevant conversation.",
-          "numeric_value": 200.0,
-          "detail": "Ten percent of reached accounts provide a positive human response. Exclude automatic replies, unsubscribe requests, wrong-person referrals without interest, and duplicate threads."
+          "label": "Replies",
+          "value": 500,
+          "display": "~500",
+          "conversion": "~6.3% of leads",
+          "detail": "Copy written manually, not by AI, per the operator."
         },
         {
-          "label": "Held qualified appointments",
-          "value": "80 accounts complete conversations meeting the qualification rubric.",
-          "numeric_value": 80.0,
-          "detail": "Forty percent of positive accounts attend a conversation with verified territory, commercial need, and buyer role. Exclude cancellations, no-shows, and merely booked meetings."
+          "label": "Interested Replies",
+          "value": 250,
+          "display": "~250",
+          "conversion": "50% of replies",
+          "detail": "Half of all replies flagged as interested."
         },
         {
-          "label": "Client-accepted appointments",
-          "value": "60 accounts produce accepted units worth $60,000 annually.",
-          "numeric_value": 60.0,
-          "detail": "Clients accept seventy-five percent of held qualified appointments under written criteria. Bill $1,000 per accepted unit; track the twenty rejected units separately."
+          "label": "Calls",
+          "value": 57,
+          "display": "57",
+          "conversion": "~22.8% of interested",
+          "detail": "Below the 35% interested-to-booked floor Matt Harriman uses as an inbox-management audit line."
         }
-      ]
+      ],
+      "caption": "Roughly 15,000 sends produced 57 calls in under a month, with the operator crediting hand-written copy over AI-generated copy.",
+      "assumptions_note": "Stage counts are the operator's approximate figures. Conversion percentages are stage-to-stage arithmetic on those figures.",
+      "note": "Source - Smartlead (NWEL3WNYDhg @ 00:09:43). Booking floor from Matt Harriman (hm5isqC1d74 @ 00:06:18)."
     },
     {
-      "diagram_id": "diag-03-base-case-owner-net-waterfall",
-      "chart_type": "waterfall",
-      "title": "Reconcile $425,000 Revenue to $127,500 Owner Net",
-      "subtitle": "Six bars: recognized revenue, four operating-cost deductions, and a final 30.0% owner-net total.",
+      "diagram_id": "diag-03-verified-list-leakage-waterfall",
       "chapter_number": 3,
-      "epistemic_tag": "illustrative_model",
-      "assumptions_note": "Annual USD. The first and final bars are absolute totals; the four intervening bars are negative movements. The final bar is not another additive movement. Cost allocations are illustrative but reconcile exactly to the canonical Base scenario. The $57,500 combined software and administration budget averages $4,791.67 monthly, within the $2,000–$12,000 standing-opex range; variable delivery and acquisition costs are additional. Owner net is before personal income taxes and owner distributions; no separate founder salary is deducted in this allocation.",
-      "caption": "$425,000 − $150,000 − $90,000 − $24,000 − $33,500 = $127,500. Canonical annual scenarios remain Conservative $100,000 at 20% = $20,000; Base $425,000 at 30.0% = $127,500; Scaled $750,000 at 40% = $300,000. Conservative and Base use 1 FT + 3 C; Scaled uses 2 FT + 4 C.",
-      "stages": [
+      "title": "How a Verified List Leaks Before the First Send",
+      "subtitle": "1,000 verified Apollo leads checked against a live campaign and a match-flag review",
+      "chart_type": "waterfall",
+      "bars": [
         {
-          "label": "Recognized operator revenue",
-          "value": "Start with $425,000 in earned service revenue.",
-          "numeric_value": 425000.0,
-          "detail": "Recognize $365,000 of annual retainers plus $60,000 of accepted-appointment fees. Exclude client advertising pass-through, client contract value, and client sales proceeds."
+          "label": "Verified Apollo Leads",
+          "value": 1000,
+          "display": "1,000",
+          "kind": "total"
         },
         {
-          "label": "Delivery labor and fulfillment",
-          "value": "Deduct $150,000 for contracted service delivery capacity.",
-          "numeric_value": -150000.0,
-          "detail": "Budget the three contractor seats, appointment handling, quality review, and rework inside this delivery envelope. The remaining annual contribution becomes $275,000."
+          "label": "Invalid Share Implied by 91% Claim",
+          "value": 90,
+          "display": "-90",
+          "kind": "deduction"
         },
         {
-          "label": "Operator-funded acquisition",
-          "value": "Deduct $90,000 for operator-paid acquisition and sourcing.",
-          "numeric_value": -90000.0,
-          "detail": "Include direct prospect sourcing and operator-funded campaign acquisition expenses, not client-funded advertising pass-through. Do not duplicate standing software costs. The remaining contribution becomes $185,000."
+          "label": "Extra Bounces in the Live Run",
+          "value": 180,
+          "display": "-180",
+          "kind": "deduction"
         },
         {
-          "label": "Software and communications",
-          "value": "Deduct $24,000 for the standing operating stack.",
-          "numeric_value": -24000.0,
-          "detail": "Budget CRM, authorized mailboxes, telephony, scheduling, and reporting subscriptions at $2,000 monthly. Keep usage charges in one cost category. Remaining contribution is $161,000."
+          "label": "Measured Accurate Emails (73%)",
+          "value": 730,
+          "display": "730",
+          "kind": "total"
         },
         {
-          "label": "Administration and service overhead",
-          "value": "Deduct $33,500 for administration and operating overhead.",
-          "numeric_value": -33500.0,
-          "detail": "Cover bookkeeping, insurance, payment processing, contract review, and general business administration. This final expense deduction leaves exactly $127,500 of annual owner net."
+          "label": "Off-Criteria Rate at 20% (Evaboot)",
+          "value": 146,
+          "display": "-146",
+          "kind": "deduction"
         },
         {
-          "label": "Annual owner net total",
-          "value": "Finish with $127,500, exactly 30.0% of revenue.",
-          "numeric_value": 127500.0,
-          "detail": "Render this endpoint as an absolute total from zero. Annual modeled expenses total $297,500, or 70% of recognized operator revenue; the founder occupies the full-time seat."
+          "label": "Accurate and On-Criteria",
+          "value": 584,
+          "display": "584",
+          "kind": "result"
         }
-      ]
+      ],
+      "caption": "Prospeo measured 73% accuracy against Apollo's claimed 91%, and Evaboot flags at least 20% of Sales Navigator results as off-criteria.",
+      "assumptions_note": "The 90 and 180 split is arithmetic on Prospeo's 91% claimed versus 73% measured accuracy (over 270 bounced). Stacking Evaboot's at-least-20% rate on the 730 survivors combines two cited figures and is illustrative, not one reported run.",
+      "note": "Sources - Prospeo (QnSW0B2oztg @ 00:09:46), JB - Evaboot (rryPKFY2BRI @ 00:05:44)."
     },
     {
-      "diagram_id": "diag-04-subniche-accepted-appointment-yields",
-      "chart_type": "horizontal_bars",
-      "title": "Compare Accepted-Appointment Fee Hypotheses",
-      "subtitle": "Five commercial sub-niches use the same unit: operator service revenue per client-accepted appointment.",
+      "diagram_id": "diag-04-commercial-lead-and-appointment-price-bands",
       "chapter_number": 2,
-      "epistemic_tag": "illustrative_model",
-      "assumptions_note": "USD per accepted appointment, excluding retainers and advertising pass-through. Prices are deliberately illustrative quote hypotheses, not market averages or incremental revenue to add to the scorecard. Only the $1,000 hypothesis feeds the Base funnel. ACH and card describe collection methods; processing expenses belong in costs and do not change the gross-fee comparison.",
-      "caption": "Validate each fee against client gross contribution, close rate, attendance, and replacement burden. A $1,000 appointment at a 20% close rate implies $5,000 in appointment fees per won client before retainers and the client's own selling costs.",
-      "stages": [
+      "title": "What Commercial Leads and Appointments Cost",
+      "subtitle": "Reported price bands from insurance ads to qualified B2B meetings",
+      "chart_type": "horizontal_bars",
+      "unit": "USD per lead or per booked appointment",
+      "bars": [
         {
-          "label": "Commercial HVAC service",
-          "value": "$1,000 accepted appointment fee, collected through ACH invoicing.",
-          "numeric_value": 1000.0,
-          "detail": "Require an in-territory commercial site, relevant equipment scope, and an authorized facilities contact. Reject residential requests and emergency calls outside staffed coverage."
+          "label": "Exclusive Meta Home Insurance Lead",
+          "min": 8,
+          "max": 13,
+          "typical": 10.5,
+          "display": "$8-$13 (Nato Guajardo)"
         },
         {
-          "label": "Managed IT services",
-          "value": "$900 accepted appointment fee, collected through ACH invoicing.",
-          "numeric_value": 900.0,
-          "detail": "Verify employee or endpoint range, incumbent-provider context, and a business decision-maker. Reject consumer device support and accounts below the contracted service minimum."
+          "label": "Truck Insurance Google Ads Lead",
+          "min": 31,
+          "max": 40,
+          "typical": 35.5,
+          "display": "$31-$40, about $35-$36 at $10K spend (Max Conversion)"
         },
         {
-          "label": "Industrial equipment maintenance",
-          "value": "$800 accepted appointment fee, collected through ACH invoicing.",
-          "numeric_value": 800.0,
-          "detail": "Capture equipment category, site location, maintenance need, and purchasing responsibility. Reject unsupported equipment and work outside the client's field-service territory."
+          "label": "Margin Check on Sale vs Generation Cost",
+          "min": 30,
+          "max": 40,
+          "typical": 40,
+          "display": "$30 sale on a $40 lead = -$10 every lead (Rafael Hernandez)"
         },
         {
-          "label": "Contract logistics services",
-          "value": "$700 accepted appointment fee, collected through ACH invoicing.",
-          "numeric_value": 700.0,
-          "detail": "Confirm shipment frequency, lane coverage, cargo category, and commercial procurement ownership. Reject one-time consumer moves and lanes the client cannot economically serve."
+          "label": "Local-Business Booked Appointment",
+          "min": 150,
+          "max": 600,
+          "typical": 250,
+          "display": "$150-$600, $250 worked example (Smart Capital)"
         },
         {
-          "label": "Commercial cleaning contracts",
-          "value": "$600 accepted appointment fee, collected through card invoicing.",
-          "numeric_value": 600.0,
-          "detail": "Verify facility size, recurring service frequency, access requirements, and decision authority. Reject residential cleaning and sites below the client's minimum monthly contract."
+          "label": "Qualified B2B Appointment",
+          "min": 550,
+          "max": 1700,
+          "typical": 1125,
+          "display": "$550-$1,700 (Clutch Research via Smart Capital)"
         }
-      ]
+      ],
+      "caption": "Lead prices run from single digits on Meta to four figures for qualified B2B meetings, and every band has to clear the buyer's margin.",
+      "assumptions_note": "Typical values are the practitioner's stated point figure where one was given ($35-$36 truck insurance, $250 appointment example, $40 cost) and the range midpoint otherwise (Meta home insurance, Clutch B2B).",
+      "note": "Sources - Nato Guajardo (VSivqJQ89ow), Max Conversion (kPWKWbOFwUo @ 00:00:27), Rafael Hernandez (ngsR38BAFbc @ 00:06:33), Smart Capital (ozWkxUTBug4 @ 00:04:48)."
     },
     {
-      "diagram_id": "diag-05-channel-and-commercial-risk-decisions",
-      "chart_type": "decision_tree",
-      "title": "Four Pre-Flight Checks Before Contact or Routing",
-      "subtitle": "Each check has an explicit proceed condition and an explicit stop-and-repair branch.",
+      "diagram_id": "diag-05-cold-email-launch-gates",
       "chapter_number": 5,
-      "epistemic_tag": "operating_framework",
-      "assumptions_note": "Numeric values identify check order, not risk scores. Evaluate each channel separately and document why an unused channel is disabled. Federal rules are the starting point; applicable state privacy, calling, and recording requirements also depend on the parties, locations, technology, and campaign facts.",
-      "caption": "Proceed only when every applicable check has evidence. Missing permission, unresolved suppression, unsupported routing, or ambiguous acceptance criteria sends the affected activity back for repair.",
-      "stages": [
+      "title": "Four Gates Before a Cold Email Campaign Launches",
+      "subtitle": "Domain isolation, warmup, list hygiene and seed testing",
+      "chart_type": "decision_tree",
+      "nodes": [
         {
-          "label": "Commercial-email requirements",
-          "value": "Proceed with truthful identity and functioning opt-out handling.",
-          "numeric_value": 1.0,
-          "detail": "Apply 15 U.S.C. 7704: accurate header information, nondeceptive subjects, required advertising identification unless an exception applies, valid physical postal address, and a functioning opt-out. Honor opt-outs within ten business days; stop affected sends when suppression fails."
+          "gate": "G1",
+          "question": "Is cold volume running only on lookalike secondary domains redirected to the main site?",
+          "pass_next": "G2",
+          "fail_action": "Stop. A main-email automation cost Ethan Fleming a $2,000-a-month client, and a 10,000-email blast tanked a client's main sending."
         },
         {
-          "label": "Calling and recording requirements",
-          "value": "Proceed only after documenting the specific calling basis.",
-          "numeric_value": 2.0,
-          "detail": "Check 47 U.S.C. 227, 47 CFR 64.1200, applicable 16 CFR Part 310 duties, and state calling and recording rules. Distinguish live manual calls from automated or prerecorded activity and business numbers from personal wireless numbers. Disable unsupported dialing or recording."
+          "gate": "G2",
+          "question": "Are SPF, DKIM, DMARC and MX published and every inbox warmed 2 to 3 weeks?",
+          "pass_next": "G3",
+          "fail_action": "Keep warming. Smartlead keeps warmup running even after campaigns start."
         },
         {
-          "label": "Privacy and data handling",
-          "value": "Proceed with documented scope, purpose, and rights handling.",
-          "numeric_value": 3.0,
-          "detail": "Assess California Civil Code 1798.100, 1798.120, and 1798.140 where applicable, plus other relevant state rules. Document client and vendor roles, collection notices, retention, access controls, and rights-request ownership. Stop transfers that conflict with applicable sale or sharing choices."
+          "gate": "G3",
+          "question": "Is the list 20% or less catch-all addresses?",
+          "pass_next": "G4",
+          "fail_action": "Trim catch-alls. MailReach sees around 23% of catch-alls bounce when sent all at once."
         },
         {
-          "label": "Quality and commercial exposure",
-          "value": "Proceed with measurable acceptance and bounded delivery commitments.",
-          "numeric_value": 4.0,
-          "detail": "Sign territory, qualification, duplicate, acceptance, replacement, fee, and dispute terms. Test routing capacity and assign a suppression owner. Pause the affected campaign when rejection costs, acquisition costs, or churn erase its modeled contribution."
+          "gate": "G4",
+          "question": "Do seed tests to Gmail and Outlook accounts you control land in the inbox?",
+          "pass_next": "Launch with bounce auto-pause armed at 5%",
+          "fail_action": "Do not launch harder. Stop and diagnose, per Coldbot."
         }
-      ]
+      ],
+      "caption": "Practitioners treat authentication and warmup as prerequisites, then arm a 5% bounce auto-pause so a bad list cannot burn the fleet.",
+      "assumptions_note": "Gate order is an editorial sequence of the operator gates described. Coldbot stresses that passing them guarantees nothing about inbox placement.",
+      "note": "Sources - Ethan Fleming Marketing (TB1PQrXx5s8 @ 00:08:53), Smartlead (GZEdhosrYRc @ 00:10:11 and 00:14:23), Damien - MailReach (8EaKo_iAiPE @ 00:07:24), Coldbot (fM-ywBq8yoU @ 00:05:21)."
     },
     {
-      "diagram_id": "diag-06-four-to-six-person-pod",
-      "chart_type": "org_architecture",
-      "title": "Four Core Seats, Two Explicit Scale Additions",
-      "subtitle": "Conservative and Base: 1 FT + 3 C. Scaled: 2 FT + 4 C.",
+      "diagram_id": "diag-06-one-to-one-consent-architecture",
       "chapter_number": 11,
-      "epistemic_tag": "operating_framework",
-      "assumptions_note": "FT means full-time seat; C means contractor seat, not a full-time-equivalent assertion. Each numeric value represents one person. The first four seats form the baseline pod; the final two are scaled-only additions. Do not total all six seats as Base staffing or assume identical contractor hours.",
-      "caption": "The founder remains accountable for pricing and delivery economics. Automation supports consent tracking, CRM routing, and lead-quality reporting; named people still own exceptions and client acceptance.",
-      "stages": [
+      "title": "One-to-One Consent Architecture for Lead Buyers",
+      "subtitle": "Who holds the record, what gets captured, and how revocations are honored",
+      "chart_type": "org_architecture",
+      "center": {
+        "role": "Lead Buyer Placing the Call or Text",
+        "headcount": "One named seller per consent checkbox",
+        "focus": "Hold the TrustedForm or Jornaya certificate before dialing. If you're a lead buyer the risk is on you (Seasalt AI)."
+      },
+      "spokes": [
         {
-          "label": "Founder and commercial owner",
-          "value": "Core seat: one full-time owner leads commercial decisions.",
-          "numeric_value": 1.0,
-          "detail": "Own positioning, sales, contracts, client relationships, contribution review, and unresolved delivery issues. At scale, delegate routine account operations to the added full-time client-success lead."
+          "role": "Lead Capture Form",
+          "type": "Consent capture",
+          "kpi": "One checkbox per brand, 20-30px boxes, CTA text matched word for word. 1-3% conversion drop for a 10-20% contact-rate lift (LeadCaptureIO)."
         },
         {
-          "label": "Data and CRM operator",
-          "value": "Core seat: one contractor owns provenance and routing.",
-          "numeric_value": 1.0,
-          "detail": "Maintain account deduplication, source records, consent evidence where required, suppression propagation, access permissions, and HubSpot or Salesforce assignment rules."
+          "role": "Certificate Record Field",
+          "type": "Evidence retention",
+          "kpi": "Hidden field labeled 'XX trusted form cert' exactly. Records kept at least 4 years (LeadCaptureIO)."
         },
         {
-          "label": "Outbound infrastructure operator",
-          "value": "Core seat: one contractor owns authorized outreach operations.",
-          "numeric_value": 1.0,
-          "detail": "Maintain domain authentication, mailbox configuration, provider-limit adherence, message scheduling, bounce review, and complaint investigation. Escalate delivery problems without bypassing provider restrictions."
+          "role": "Dialer and Text Automation",
+          "type": "Regulated technology",
+          "kpi": "Audit by capacity, not clicks. Preview dial likely an ATDS outside PA, DE and NJ. Text automation ends at day 90 on inquiry leads."
         },
         {
-          "label": "Qualification and call-routing operator",
-          "value": "Core seat: one contractor verifies conversations and handoffs.",
-          "numeric_value": 1.0,
-          "detail": "Review replies, qualify commercial need, confirm calendars, route calls, and collect acceptance evidence. Track no-shows and rejection causes without billing merely booked appointments."
-        },
-        {
-          "label": "Client-success lead",
-          "value": "Scaled addition: one full-time employee owns account delivery.",
-          "numeric_value": 1.0,
-          "detail": "Join only in the six-person configuration. Own client reporting, renewal preparation, delivery commitments, acceptance disputes, and capacity planning across active accounts."
-        },
-        {
-          "label": "Quality and reporting analyst",
-          "value": "Scaled addition: one contractor owns independent quality review.",
-          "numeric_value": 1.0,
-          "detail": "Join only in the six-person configuration. Audit qualification records, reconcile accepted units to invoices, analyze acquisition cost, and identify sources creating excessive replacement work."
+          "role": "Revocation Desk",
+          "type": "Opt-out handling",
+          "kpi": "Honor within 10 business days, within 24 hours if practicable. Exposure of $500 to $2,000 per text or call violation."
         }
-      ]
+      ],
+      "caption": "Each seller must be named and individually selected, and the caller holds the consent record before regulated technology touches the lead.",
+      "assumptions_note": "Practitioners disagree on status. Troutman treated the rule as live January 27, 2025, while LeadCaptureIO and Kyle Banks reported it shot down.",
+      "note": "Sources - Lead Generation World (6VtW3u8e6WE @ 00:25:30, OgyCXKzIJM4 @ 00:24:16), Seasalt AI (KBFaRW7QmVQ), LeadCaptureIO (Hd19AToxex4, WXqAR94YqtU, Zrihem0vYcU), Lauro Herrera (tRO0J70WjKA @ 00:13:21)."
     },
     {
-      "diagram_id": "diag-07-startup-capital-allocation",
-      "chart_type": "stacked_comparison",
-      "title": "Allocate Startup Cash Before Expanding Volume",
-      "subtitle": "Four buckets form a $20,000 planning stack, with matched $5,000 lean and $40,000 expanded allocations.",
+      "diagram_id": "diag-07-email-coverage-by-enrichment-setup",
       "chapter_number": 4,
-      "epistemic_tag": "illustrative_model",
-      "assumptions_note": "Numeric values are the four segments of one $20,000 startup budget. The lean and expanded amounts in each stage use the same 30%, 20%, 30%, and 20% allocation weights and total $5,000 and $40,000 respectively. These are alternative cash plans, not three budgets to add together or scorecard revenue scenarios. Startup cash is not a recurring annual expense total.",
-      "caption": "Reserve deployment follows evidence, not inbox count. The $2,000–$12,000 monthly operating range requires a separate cash forecast, especially because the first deal may take one to four months.",
-      "stages": [
+      "title": "Email Coverage by Enrichment Setup",
+      "subtitle": "Single databases versus stacked Clay waterfalls",
+      "chart_type": "stacked_comparison",
+      "total_range": "40% to 90% of a list with a usable email, depending on setup",
+      "buckets": [
         {
-          "label": "Infrastructure and operating systems",
-          "value": "Plan $6,000; lean $1,500; expanded $12,000 for infrastructure.",
-          "numeric_value": 6000.0,
-          "detail": "Allocate thirty percent to CRM setup, authorized domains, authenticated mailboxes, scheduling, telephony configuration, and initial subscription cash. Record prepaid services separately from recurring monthly expense."
+          "label": "Apollo 'Valid' Emails That Verify",
+          "low": 40,
+          "high": 40,
+          "notes": "AJ Cassata sees only 40% of Apollo 'valids' verify on 5,000 leads. Mailing invalids burns inboxes and domains."
         },
         {
-          "label": "Data and qualification development",
-          "value": "Plan $4,000; lean $1,000; expanded $8,000 for qualification.",
-          "numeric_value": 4000.0,
-          "detail": "Allocate twenty percent to permitted data sourcing, account verification, qualification scripts, and small-sample quality review. Avoid buying broad lists before validating territory fit and contact eligibility."
+          "label": "Traditional Single Database",
+          "low": 40,
+          "high": 50,
+          "notes": "Coverage from one traditional database, per AJ Cassata."
         },
         {
-          "label": "Pilot delivery and acquisition",
-          "value": "Plan $6,000; lean $1,500; expanded $12,000 for pilots.",
-          "numeric_value": 6000.0,
-          "detail": "Allocate thirty percent to contractor pilot work and operator-funded acquisition tests. Measure held and accepted appointments rather than opens or raw booked meetings; stop cohorts with unaffordable rejection costs."
+          "label": "Stacked Clay Waterfall",
+          "low": 60,
+          "high": 80,
+          "notes": "Cheapest-first waterfall capped around four steps. Cassata deletes any provider charging over 10 credits per row."
         },
         {
-          "label": "Working-capital reserve",
-          "value": "Plan $4,000; lean $1,000; expanded $8,000 as reserve.",
-          "numeric_value": 4000.0,
-          "detail": "Retain twenty percent for collection delays, replacement work, and service continuity. The planning reserve covers two months at $2,000 monthly operating spend but only one-third of a month at $12,000."
+          "label": "11-Provider Waterfall with Validation",
+          "low": 90,
+          "high": 90,
+          "notes": "Matt Lucero finds 9 of 10 valid emails with Prospeo and LeadMagic moved to the front and validation between steps."
         }
-      ]
+      ],
+      "caption": "Stacking providers roughly doubles coverage over a single database, while depth of the waterfall remains a live disagreement.",
+      "assumptions_note": "Percentages measure different things (verification rate, coverage, hit rate) across different lists. Romain Osman skips the waterfall for Prospeo alone.",
+      "note": "Sources - AJ Cassata (6l8CThrSJEY @ 00:03:00, 12s-u4y1VF0 @ 00:04:38), Matt Lucero (jEkDgA8hPmo @ 00:25:01)."
     },
     {
-      "diagram_id": "diag-08-thirty-day-commercial-launch",
-      "chart_type": "timeline_roadmap",
-      "title": "Build a Measurable Commercial Service in Thirty Days",
-      "subtitle": "Four weekly milestones establish scope, infrastructure, pilot evidence, and a delivery-ready operating review.",
+      "diagram_id": "diag-08-ping-post-and-call-routing-roadmap",
       "chapter_number": 12,
-      "epistemic_tag": "operating_framework",
-      "assumptions_note": "Numeric values are elapsed-day endpoints: 7, 14, 21, and 30. This sprint builds operating capability; the canonical first-deal window remains one to four months. Pilot activity uses authorized resources and eligible contacts, with spend bounded by the selected $5,000–$40,000 startup cash plan.",
-      "caption": "Finish day thirty with documented evidence and a clear continue, repair, or stop decision for each pilot cohort. Do not manufacture accepted leads, booked revenue, or a signed client to satisfy the calendar.",
-      "stages": [
+      "title": "Four-Week Roadmap to Live Lead and Call Distribution",
+      "subtitle": "Payloads, testing, buyer guardrails and billable call rules",
+      "chart_type": "timeline_roadmap",
+      "weeks": [
         {
-          "label": "Days 1-7",
-          "value": "Choose one niche and write the acceptance contract.",
-          "numeric_value": 7.0,
-          "detail": "Select territory and buyer profile; interview prospective clients; define accepted-appointment criteria, duplicate rules, fees, and dispute handling. Produce a channel requirements checklist and a cash forecast through the four-month first-deal window."
+          "week": "Week 1",
+          "title": "Map Buyer Payloads",
+          "deliverable": "Payload type (form or JSON) set before any edit, required fields confirmed with each buyer, non-required fields stripped from the ping.",
+          "gate": "Payload type locked first, since switching it resets the builder (Lead Prosper)."
         },
         {
-          "label": "Days 8-14",
-          "value": "Configure systems and test every suppression and routing path.",
-          "numeric_value": 14.0,
-          "detail": "Authenticate authorized domains, configure CRM fields and least-privilege access, and connect scheduling and call routing. Use synthetic test records to verify opt-outs, duplicate handling, assignment failures, and evidence retention."
+          "week": "Week 2",
+          "title": "Test the Ping Post Auction",
+          "deliverable": "lp_test set to 1 on ping and post, with 15-second ping and 30-second post timeouts excluding lagging buyers (boberdoo.com).",
+          "gate": "lp_test and lp_action test removed before go-live."
         },
         {
-          "label": "Days 15-21",
-          "value": "Run a bounded pilot and inspect qualification evidence.",
-          "numeric_value": 21.0,
-          "detail": "Activate a small eligible account cohort with explicit spend and contact limits. Review delivered accounts, positive replies, held appointments, rejection causes, and contractor time daily; repair failures before increasing volume."
+          "week": "Week 3",
+          "title": "Set Buyer Guardrails",
+          "deliverable": "Max best price ceiling on every dynamic buyer, refund cap at 15% over the past 30 days, and 'yes but sold non-exclusively' resale above cost.",
+          "gate": "Refund cap in place before the first invoice goes out."
         },
         {
-          "label": "Days 22-30",
-          "value": "Review unit economics and prepare accountable client delivery.",
-          "numeric_value": 30.0,
-          "detail": "Reconcile cohort counts, accepted units, invoices when earned, and actual costs. Demonstrate the reporting pack, assign each exception owner, and pursue a retainer under the written scope without treating pipeline value as revenue."
+          "week": "Week 4",
+          "title": "Route Calls and Automate Follow-Up",
+          "deliverable": "Pay-per-call at $100 per call qualified by duration thresholds such as 90 seconds, plus a voice AI callback within 60 seconds and a three-step SMS sequence.",
+          "gate": "No call billed below the buyer's duration qualifier, as with the 47-second call."
         }
-      ]
+      ],
+      "caption": "Capture the lead, route it in seconds to the buyer who pays most, and follow up before a competitor does.",
+      "assumptions_note": "The week-by-week cadence is an editorial ordering of steps the practitioners describe, not a schedule any of them reported.",
+      "note": "Sources - boberdoo.com (DSbDVWpyXUI @ 00:15:43 and 00:17:44, yCAVYNpSdZI @ 00:22:50), Lead Prosper (gX0fjRlg1lg, _1N3fncM-Ss), Local SEO Made Easy (Bu_9XhXpDSs), Jason Grossman (Ot93upK_YX4 @ 00:52:38)."
     }
   ]
 }

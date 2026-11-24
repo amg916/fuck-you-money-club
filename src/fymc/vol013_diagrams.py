@@ -1,695 +1,567 @@
-from __future__ import annotations
+"""Volume 013 diagrams for Intellectual Property Licensing.
+
+Every figure, workflow and attribution below is drawn from named practitioner
+testimony collected for Chapters Q1-Q12.
+"""
+
+from typing import Any, Dict, List
 
 VOLUME_013_SUBTITLE: str = (
-    "The Complete Playbook for $50,000–$800,000 USD in Annual IP Licensing "
-    "Revenue: Launch with 1 FT + 3 C (4 People), Scale to 6 People"
+    "Keep Title, Rent the Rights: Perceived Ownership on a $65 Provisional, "
+    "5% Royalty Anchors, 20-30 Company Outreach, Half-Projection Minimum "
+    "Guarantees, Claim-Charted Portfolios, Audit Clauses and AI-Data Deletion Terms"
 )
 
-VOLUME_013_POSITIONING_ALTERNATIVES: list[dict] = [
+
+def build_volume_013_diagrams_data() -> List[Dict[str, Any]]:
+    """Return the eight structured diagram dicts for Volume 013."""
+    return [
+        {
+            "diagram_id": "diag-01-licensing-model-fork",
+            "chapter_number": 1,
+            "chart_type": "process_flow",
+            "title": "Make It, Sell It, or License It",
+            "subtitle": "The five-step fork practitioners walk before pitching a single licensee",
+            "caption": (
+                "Licensing wins the consensus for inventors who want the licensee's money, "
+                "staff and shelf space; inventRightTV contrasts an instant 20,000-store "
+                "footprint with at least $250,000 floated to venture alone."
+            ),
+            "assumptions_note": (
+                "Step order follows the operator gates cited for Chapter Q1. Royalty bands "
+                "are attributed claims (2 to 10% of wholesale per Patent Question, 3 to 5% "
+                "and up to 10% per Patent pc, 5 to 20% per UpCounsel) and vary by industry."
+            ),
+            "note": (
+                "Attributed to The Sourcing Gals, Patent Question, inventRightTV, UpCounsel, "
+                "Patent pc, Licensing Consulting Group, Kauffman FoundersSchool and "
+                "Michigan Engineering."
+            ),
+            "stages": [
+                {
+                    "step": "01",
+                    "label": "Lock a protectable element",
+                    "value": "Step 1",
+                    "detail": (
+                        "The Sourcing Gals refuse further deal conversations until the "
+                        "technology is protected."
+                    ),
+                },
+                {
+                    "step": "02",
+                    "label": "Weigh venturing against licensing",
+                    "value": "Step 2",
+                    "detail": (
+                        "Venturing meant floating at least $250,000 with retailers paying "
+                        "in 60 to 90 days (inventRightTV); Patent Question bars manufacturing "
+                        "without demand, margins, a sales channel and operating ability."
+                    ),
+                },
+                {
+                    "step": "03",
+                    "label": "Pitch as a product developer",
+                    "value": "Step 3",
+                    "detail": (
+                        "Polished brochures, formal letters and prototypes; brokers paid on "
+                        "commission only and vetted through the United Inventors Association "
+                        "and Better Business Bureau (UpCounsel)."
+                    ),
+                },
+                {
+                    "step": "04",
+                    "label": "Choose exclusivity and markets",
+                    "value": "Step 4",
+                    "detail": (
+                        "Pick an exclusive partner carefully or demand non-exclusive where "
+                        "you hold market power (Patent pc); license human and pet markets at "
+                        "once (Licensing Consulting Group)."
+                    ),
+                },
+                {
+                    "step": "05",
+                    "label": "Set minimums, then price",
+                    "value": "Step 5",
+                    "detail": (
+                        "No license without annual minimums (Michigan Engineering); price "
+                        "comes last and is capped by the licensee's next best alternative "
+                        "(Kauffman FoundersSchool)."
+                    ),
+                },
+            ],
+        },
+        {
+            "diagram_id": "diag-02-tech-transfer-odds-funnel",
+            "chapter_number": 6,
+            "chart_type": "funnel",
+            "title": "University Tech Transfer Odds Narrow Fast",
+            "subtitle": "From office economics to the rare million-dollar invention",
+            "caption": (
+                "Nelsen calls tech transfer a lottery where only a dozen US offices make "
+                "money at any time; Salk's director says two or three inventions drive "
+                "80-90% of revenue."
+            ),
+            "assumptions_note": (
+                "Each stage is a separately reported percentage with its own population "
+                "(offices, research dollars, or disclosed inventions). Stages are ordered "
+                "by size to show narrowing odds, not as one cohort passing through."
+            ),
+            "note": (
+                "Attributed to Columbia TechVentures (Herschwitz), the MIT Technology "
+                "Licensing Office (Millar-Nicholson) and OSU Center for Clinical and "
+                "Translational Science."
+            ),
+            "stages": [
+                {
+                    "label": "Offices losing money gross",
+                    "value": 84,
+                    "display": "84% of US university offices",
+                    "conversion": "Starting odds for a typical office",
+                    "detail": (
+                        "Herschwitz's figure, contrasted with Columbia sitting in the top "
+                        "2-3 earners for 20 years."
+                    ),
+                },
+                {
+                    "label": "Offices covering operating costs",
+                    "value": 14,
+                    "display": "14% of US offices",
+                    "conversion": "Few offices break even on operations",
+                    "detail": "Offices like the MIT TLO rarely cover their costs.",
+                },
+                {
+                    "label": "Licensing return per research $1",
+                    "value": 4,
+                    "display": "4 cents per $1 of research funding",
+                    "conversion": "$58B revenue across AUTM surveys, 1991 to 2022",
+                    "detail": (
+                        "Millar-Nicholson's math on 30 years of AUTM survey results "
+                        "against university research funding."
+                    ),
+                },
+                {
+                    "label": "Stanford disclosures reaching $1M",
+                    "value": 0.8,
+                    "display": "0.8% of disclosed inventions",
+                    "conversion": "Best-in-class benchmark",
+                    "detail": "Success defined as at least $1M in cumulative revenue.",
+                },
+                {
+                    "label": "Ohio State disclosures reaching $1M",
+                    "value": 0.1,
+                    "display": "0.1% of all inventions ever disclosed",
+                    "conversion": "The home-run tail",
+                    "detail": (
+                        "Provisionals go in before publication at $1,200-$1,500; "
+                        "non-provisionals cost $15-30K."
+                    ),
+                },
+            ],
+        },
+        {
+            "diagram_id": "diag-03-royalty-rate-ladder",
+            "chapter_number": 3,
+            "chart_type": "waterfall",
+            "title": "How an Inventor Royalty Rate Steps Down",
+            "subtitle": "From Disney-level brand rates to the high-volume consumable floor",
+            "caption": (
+                "Stephen Key and Andrew Krauss see about 5% most often, seven or eight when "
+                "CAD, testing or tooling is done, over 10% only for Disney-level brands, and "
+                "toward three for high-volume consumables."
+            ),
+            "assumptions_note": (
+                "Over 10% is plotted at 10 and seven-or-eight at 8; step sizes are the "
+                "differences between the rates Key and Krauss reported. UpCounsel's 3 to 6% "
+                "of gross sales sits inside the same band."
+            ),
+            "note": (
+                "Attributed to inventRightTV (Stephen Key and Andrew Krauss), with the 3 to "
+                "6% band from UpCounsel."
+            ),
+            "bars": [
+                {
+                    "label": "Disney-level brand rate",
+                    "value": 10,
+                    "display": "Over 10%",
+                    "kind": "total",
+                },
+                {
+                    "label": "No Disney-level brand pull",
+                    "value": -2,
+                    "display": "Down to 7-8%",
+                    "kind": "deduction",
+                },
+                {
+                    "label": "No CAD, testing or tooling",
+                    "value": -3,
+                    "display": "Down to about 5%",
+                    "kind": "deduction",
+                },
+                {
+                    "label": "Most common average rate",
+                    "value": 5,
+                    "display": "About 5%",
+                    "kind": "result",
+                },
+                {
+                    "label": "High-volume consumable",
+                    "value": -2,
+                    "display": "Drops toward 3%",
+                    "kind": "deduction",
+                },
+                {
+                    "label": "Consumable floor",
+                    "value": 3,
+                    "display": "About 3%",
+                    "kind": "result",
+                },
+            ],
+        },
+        {
+            "diagram_id": "diag-04-protection-cost-stack",
+            "chapter_number": 2,
+            "chart_type": "horizontal_bars",
+            "title": "What Protection Costs Before Licensing",
+            "subtitle": "From a $65 provisional to full attorney-drafted applications",
+            "unit": "USD",
+            "caption": (
+                "inventRightTV reports 99% of its students over 15 years licensed without a "
+                "patent, buying perceived ownership with a $65 micro entity provisional and "
+                "pushing the licensee to fund the non-provisional."
+            ),
+            "assumptions_note": (
+                "Single quoted fees are plotted with min, max and typical equal. For the "
+                "nonprovisional and attorney ranges no typical figure was given, so the "
+                "typical marker sits at the low end of the quoted range."
+            ),
+            "note": (
+                "Attributed to USPTOvideo for the fee tiers and attorney range, and "
+                "inventRightTV for the $65 micro entity rate (income under $150k a year)."
+            ),
+            "bars": [
+                {
+                    "label": "Provisional fee, micro entity",
+                    "min": 65,
+                    "max": 65,
+                    "typical": 65,
+                    "display": "$65",
+                },
+                {
+                    "label": "Provisional fee, middle tier",
+                    "min": 130,
+                    "max": 130,
+                    "typical": 130,
+                    "display": "$130",
+                },
+                {
+                    "label": "Provisional fee, top tier",
+                    "min": 325,
+                    "max": 325,
+                    "typical": 325,
+                    "display": "$325",
+                },
+                {
+                    "label": "Nonprovisional filing fees",
+                    "min": 400,
+                    "max": 2000,
+                    "typical": 400,
+                    "display": "$400 to $2,000",
+                },
+                {
+                    "label": "Attorney fees for an application",
+                    "min": 6000,
+                    "max": 18000,
+                    "typical": 6000,
+                    "display": "About $6,000 to $18,000",
+                },
+            ],
+        },
+        {
+            "diagram_id": "diag-05-license-clause-gates",
+            "chapter_number": 5,
+            "chart_type": "decision_tree",
+            "title": "Four Gates Before the Definitive License Closes",
+            "subtitle": "Scope, performance, indexation and reversion checks",
+            "caption": (
+                "Operators lock the commercial skeleton in a short term sheet, then fight "
+                "over scope, money and exit triggers; royalties typically land at 3 to 7% "
+                "with 5% as the anchor."
+            ),
+            "assumptions_note": (
+                "Term sheets are treated as non-binding except for exclusivity, no-shop and "
+                "confidentiality. Industry royalty bands run 0.1 to 25% per UpCounsel, so "
+                "the 5% anchor moves with category, leverage and market proof."
+            ),
+            "note": (
+                "Attributed to Ayers Law TV (Andrew M. Ayers), J.D. Houvener of Bold Patents "
+                "Law Firm, Bao Tran, BaxterIPAttorneys, a Boardgame Publisher and Licensing "
+                "Basics (Ryan Stewart)."
+            ),
+            "nodes": [
+                {
+                    "gate": "G1",
+                    "question": "Does the grant language state exclusive, sole or non-exclusive?",
+                    "pass_next": "G2",
+                    "fail_action": (
+                        "Rewrite the grant; discovering a non-exclusive license later leaves "
+                        "no way to stop a competitor."
+                    ),
+                },
+                {
+                    "gate": "G2",
+                    "question": "Does every exclusive grant carry a performance clause?",
+                    "pass_next": "G3",
+                    "fail_action": (
+                        "Add an explicit right to terminate on a missed milestone, separate "
+                        "from good-faith renegotiation."
+                    ),
+                },
+                {
+                    "gate": "G3",
+                    "question": "Is every per-unit or foreign-currency royalty indexed?",
+                    "pass_next": "G4",
+                    "fail_action": (
+                        "Provide for proper indexation, since a fixed foreign-currency "
+                        "royalty can lose badly."
+                    ),
+                },
+                {
+                    "gate": "G4",
+                    "question": (
+                        "Are reversion triggers written for bankruptcy, ceasing to operate "
+                        "and out-of-print status?"
+                    ),
+                    "pass_next": "Close the definitive license",
+                    "fail_action": "Hold the closing until automatic reversion triggers are in.",
+                },
+            ],
+        },
+        {
+            "diagram_id": "diag-06-sync-catalog-architecture",
+            "chapter_number": 11,
+            "chart_type": "org_architecture",
+            "title": "Who Takes a Cut of a Sync Placement",
+            "subtitle": "Routes from a compounding catalog to the buyer",
+            "caption": (
+                "Michael Elsner models a climb from roughly $2,000 in year one to "
+                "$75,000-$100,000 by year five as 20 songs a year multiply into stems, "
+                "instrumentals and edits."
+            ),
+            "assumptions_note": (
+                "Cut sizes are practitioner estimates and depend on the route chosen; "
+                "operators split on exclusivity and on pitching supervisors directly."
+            ),
+            "note": (
+                "Attributed to Elite Music Coaching (Michael Elsner), Randy McGravey Music, "
+                "ClintMusic and Majeston."
+            ),
+            "center": {
+                "role": "Catalog-building composer",
+                "headcount": "Solo creator writing 20 songs a year",
+                "focus": (
+                    "48 kHz, 24-bit WAVs, clean 8- or 16-bar edit points, sting outros, "
+                    "no samples, deep metadata"
+                ),
+            },
+            "spokes": [
+                {
+                    "role": "Licensing agency",
+                    "type": "Fee-split agent",
+                    "kpi": "Takes 25-50% of the sync fee",
+                },
+                {
+                    "role": "Music library",
+                    "type": "Catalog holder",
+                    "kpi": (
+                        "Most keep the fee and publishing; confirm a composer share of sync "
+                        "fees before signing"
+                    ),
+                },
+                {
+                    "role": "Major sub-publisher",
+                    "type": "Off-the-top distributor",
+                    "kpi": "About 25% off the top; $375 each to library and composer on $1,000",
+                },
+                {
+                    "role": "Music supervisor",
+                    "type": "Placement buyer",
+                    "kpi": "Searches mood tags; one library track drew 57 placements",
+                },
+            ],
+        },
+        {
+            "diagram_id": "diag-07-pitch-royalty-buckets",
+            "chapter_number": 4,
+            "chart_type": "stacked_comparison",
+            "title": "Royalty Rates Licensees Actually Offer",
+            "subtitle": "Where a pitched consumer product lands on wholesale",
+            "total_range": "2.5% to 10% of wholesale",
+            "caption": (
+                "Stephen Key estimates 20 to 30 companies per deal, with success at six to "
+                "seven follow-ups spaced every five days; the royalty a pitch lands depends "
+                "on the channel and the licensee."
+            ),
+            "assumptions_note": (
+                "Bucket edges are the rates named by Mark Reyland and Andrew Krauss; Reyland "
+                "cites the National Royalty Guide average. Single-point figures are plotted "
+                "with equal low and high."
+            ),
+            "note": "Attributed to Mark Reyland and inventRightTV (Andrew Krauss, Stephen Key).",
+            "buckets": [
+                {
+                    "label": "As Seen On TV deals",
+                    "low": 2.5,
+                    "high": 2.5,
+                    "notes": "Reyland puts these deals near 2.5 percent.",
+                },
+                {
+                    "label": "Companies holding firm",
+                    "low": 5,
+                    "high": 5,
+                    "notes": "Krauss says many companies still hold at 5 percent.",
+                },
+                {
+                    "label": "Most deals done",
+                    "low": 6,
+                    "high": 6,
+                    "notes": "Reyland reports most of his deals near 6 percent.",
+                },
+                {
+                    "label": "Guide average to ceiling",
+                    "low": 8,
+                    "high": 10,
+                    "notes": "8 percent National Royalty Guide average; 10 percent ceiling.",
+                },
+            ],
+        },
+        {
+            "diagram_id": "diag-08-ai-data-license-roadmap",
+            "chapter_number": 12,
+            "chart_type": "timeline_roadmap",
+            "title": "Licensing Operational Records to AI Labs",
+            "subtitle": "License copies, never the asset, and name every category",
+            "caption": (
+                "Jason Varner quotes $100K to $3M-plus payouts for anonymized operational "
+                "records, and micro1 reports two to three weeks from owner interest to a "
+                "completed license with payout around 60 days out."
+            ),
+            "assumptions_note": (
+                "Week labels sequence the reported steps; the only durations practitioners "
+                "gave are 2-3 weeks to completion and payout around 60 days out. Payouts "
+                "are driven by exclusivity."
+            ),
+            "note": (
+                "Attributed to Jason Varner, micro1, Archive Trove, OneHourProfessor and "
+                "Mayer Brown."
+            ),
+            "weeks": [
+                {
+                    "week": "Week 1",
+                    "title": "Inventory operational records",
+                    "deliverable": (
+                        "IT tickets first, since each holds a problem, an action and a fix, "
+                        "plus Slack exports"
+                    ),
+                    "gate": (
+                        "Pricing records treated as exposed even after names are removed"
+                    ),
+                },
+                {
+                    "week": "Week 2",
+                    "title": "Name every category in the contract",
+                    "deliverable": (
+                        "Records, outputs, embeddings and models named, with exclusivity "
+                        "decided against selling to multiple labs"
+                    ),
+                    "gate": (
+                        "Deletion clause reaches labels, caches, backups and checkpoints "
+                        "and decides the trained model's fate"
+                    ),
+                },
+                {
+                    "week": "Week 3",
+                    "title": "Close the license",
+                    "deliverable": (
+                        "Completed license inside the 2-3 week window micro1 reports"
+                    ),
+                    "gate": (
+                        "Retention, copies and models after termination settled before export"
+                    ),
+                },
+                {
+                    "week": "Week 4",
+                    "title": "Track payout and model access",
+                    "deliverable": "Payout expected around 60 days out",
+                    "gate": (
+                        "Diligence, regulator access and audit access locked for every "
+                        "model version"
+                    ),
+                },
+            ],
+        },
+    ]
+
+
+VOLUME_013_POSITIONING_ALTERNATIVES: List[Dict[str, Any]] = [
     {
-        "title": "The Patent Licensing Deal Desk",
+        "title": "Rent the Rights",
         "subtitle": (
-            "Convert documented patent rights into field-of-use licenses, "
-            "minimum guarantees, and auditable royalty schedules."
+            "Perceived ownership, a 5% royalty anchor and 20-30 company outreach for "
+            "inventors who license instead of manufacture"
         ),
-        "audience": (
-            "Patent owners and authorized licensing operators with documented "
-            "assignments, technical evidence, and access to prospective manufacturers."
-        ),
+        "audience": "Independent inventors and product developers weighing licensing against venturing",
         "research_basis": (
-            "35 U.S.C. 261 addresses patent ownership and assignments; "
-            "35 U.S.C. 154 defines patent rights and statutory term. "
-            "These provisions support an operating sequence that checks ownership, "
-            "remaining term, territory, and licensed claims before pricing rights. "
-            "They do not establish buyer demand or a commercially achievable royalty."
+            "inventRightTV's 99% of students licensing without a patent, $65 micro entity "
+            "provisionals, the 7/5/1 tiered royalty, Key and Krauss's 5% average, the "
+            "$250,000 venturing float, and the 20 to 30 companies a deal can take."
         ),
         "sources": [
-            "https://www.law.cornell.edu/uscode/text/35/261",
-            "https://www.law.cornell.edu/uscode/text/35/154",
+            "https://www.youtube.com/watch?v=CS31715RNQk&t=312s",
+            "https://www.youtube.com/watch?v=5pNsi_2H-J4&t=278s",
+            "https://www.youtube.com/watch?v=IMLF0c7wOQI&t=51s",
+            "https://www.youtube.com/watch?v=E5dH32uMqOY&t=305s",
         ],
-        "validation_status": (
-            "Source-informed editorial positioning; not market-tested."
-        ),
+        "validation_status": "Grounded strictly in Vol. 013 YouTube practitioner transcripts.",
     },
     {
-        "title": "The Brand Royalty Operating System",
+        "title": "Lease the Brand, Keep the Catalog",
         "subtitle": (
-            "Build controlled brand licenses with product approvals, minimum "
-            "guarantees, territory schedules, and reconciled royalty statements."
+            "Half-projection minimum guarantees, 8% to 12% brand royalties and compounding "
+            "sync catalogs"
         ),
-        "audience": (
-            "Trademark owners and authorized brand operators licensing defined "
-            "product categories to manufacturers with inspectable sales records."
-        ),
+        "audience": "Brand owners, licensees and creators licensing music, art and knowledge products",
         "research_basis": (
-            "15 U.S.C. 1055 addresses controlled use by related companies, "
-            "while 15 U.S.C. 1127 supplies relevant definitions. "
-            "16 CFR 436.1 supplies franchise definitions requiring a separate "
-            "classification check when brand rights accompany operating assistance "
-            "or control and required payments."
+            "Daymond John's 2% to 15% band with 8% to 12% typical, Stu Seltzer's rule of "
+            "guaranteeing half the licensee's own projection, Michael Elsner's year-five "
+            "$75,000-$100,000 catalog model, and Randy McGravey's 25% sub-publisher cut."
         ),
         "sources": [
-            "https://www.law.cornell.edu/uscode/text/15/1055",
-            "https://www.law.cornell.edu/uscode/text/15/1127",
-            "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-D/part-436/section-436.1",
+            "https://www.youtube.com/watch?v=knoob7eUS6Y&t=634s",
+            "https://www.youtube.com/watch?v=qx___lyJ5yQ&t=270s",
+            "https://www.youtube.com/watch?v=D6XhETdysBM&t=584s",
+            "https://www.youtube.com/watch?v=iF_Z6ikfzMo&t=671s",
         ],
-        "validation_status": (
-            "Source-informed editorial positioning; not market-tested."
-        ),
+        "validation_status": "Grounded strictly in Vol. 013 YouTube practitioner transcripts.",
     },
     {
-        "title": "The Catalog and Dataset Rights Desk",
+        "title": "Make Licensed IP Pay",
         "subtitle": (
-            "Package cleared catalogs and controlled datasets into permitted-use "
-            "licenses with renewal calendars and reproducible usage evidence."
+            "Claim-charted portfolios, royalty audits that recover 5 to 20 times their cost, "
+            "and AI-data deals with deletion clauses that hold"
         ),
-        "audience": (
-            "Catalog owners, publishers, and dataset operators with documented "
-            "provenance, contributor agreements, and enforceable access controls."
-        ),
+        "audience": "IP owners, licensing executives and companies monetizing portfolios, royalty streams and operational records",
         "research_basis": (
-            "17 U.S.C. 102 distinguishes protected expression from excluded "
-            "ideas and methods; 17 U.S.C. 103 limits compilation protection "
-            "to qualifying contributions rather than underlying material. "
-            "17 U.S.C. 204 addresses transfers of copyright ownership. "
-            "18 U.S.C. 1839 defines trade secrets, including reasonable secrecy "
-            "measures. Dataset licensing therefore requires a rights-specific "
-            "analysis rather than an assumption that every collected fact is owned."
+            "Funders passing on 19 of every 20 portfolios, up to 89% of audited licensees "
+            "underreporting, Julie Tate finding errors about 75% of the time, $100K to "
+            "$3M-plus AI-data payouts, and deletion clauses that must reach labels, caches, "
+            "backups and checkpoints."
         ),
         "sources": [
-            "https://www.law.cornell.edu/uscode/text/17/102",
-            "https://www.law.cornell.edu/uscode/text/17/103",
-            "https://www.law.cornell.edu/uscode/text/17/204",
-            "https://www.law.cornell.edu/uscode/text/18/1839",
+            "https://www.youtube.com/watch?v=pyi_x9MFGjs&t=1422s",
+            "https://www.youtube.com/watch?v=9Fku-QlhyHc&t=308s",
+            "https://www.youtube.com/watch?v=NrMiKZwGTD4&t=2756s",
+            "https://www.youtube.com/watch?v=nKuxu_x-s6o&t=104s",
+            "https://www.youtube.com/watch?v=y5YpFZxHpYE&t=137s",
         ],
-        "validation_status": (
-            "Source-informed editorial positioning; not market-tested."
-        ),
+        "validation_status": "Grounded strictly in Vol. 013 YouTube practitioner transcripts.",
     },
 ]
-
-
-def build_volume_013_diagrams_data() -> list[dict]:
-    specs = [
-        (
-            "diag-01-rights-to-royalties",
-            "process_flow",
-            "Turn Controlled Rights into Collectible Royalties",
-            "Five evidence-backed handoffs from asset intake to renewal.",
-            1,
-            "operating_framework",
-            (
-                "Stages show operating sequence, not elapsed months or conversion "
-                "rates. First-deal planning remains 4–14 months. Recognized revenue "
-                "consists of operator license fees and royalties, excluding "
-                "licensees' underlying product sales."
-            ),
-            (
-                "Every handoff produces an inspectable record; a signed license "
-                "does not replace usage evidence or a reconciled royalty statement."
-            ),
-            [
-                (
-                    "Establish ownership",
-                    "Signed rights dossier and exception register",
-                    1,
-                    (
-                        "Collect assignments, contributor agreements, registration "
-                        "records, encumbrances, and sublicensing authority. Apply "
-                        "35 U.S.C. 261 and 17 U.S.C. 204 to relevant transfers."
-                    ),
-                ),
-                (
-                    "Define licensed scope",
-                    "Asset schedule and permitted-use boundaries",
-                    2,
-                    (
-                        "Specify patent claims, brand categories, catalog assets, "
-                        "or dataset fields; record territory, term, exclusivity, "
-                        "derivative uses, and prohibited redistribution."
-                    ),
-                ),
-                (
-                    "Validate buyer economics",
-                    "Named buyer and measurable commercial use",
-                    3,
-                    (
-                        "Interview the licensee's product owner, identify a "
-                        "budget owner, and test whether the rights solve a "
-                        "specific product, distribution, or research constraint."
-                    ),
-                ),
-                (
-                    "Execute measurable terms",
-                    "Royalty schedule and enforceable reporting obligations",
-                    4,
-                    (
-                        "Document royalty base, permitted deductions, minimum "
-                        "guarantees, payment dates, audit access, cure periods, "
-                        "quality controls, and termination consequences."
-                    ),
-                ),
-                (
-                    "Reconcile and renew",
-                    "Matched usage, statements, invoices, and receipts",
-                    5,
-                    (
-                        "Join licensee reports to invoice records in SQLite; "
-                        "schedule renewal alerts and exception reviews. Investigate "
-                        "missing territories, unexplained deductions, and late reports."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-02-qualified-licensee-cohorts",
-            "funnel",
-            "A Nested Licensee Development Funnel",
-            "One 200-account cohort; five progressively narrower evidence states.",
-            6,
-            "illustrative_model",
-            (
-                "Illustrative account counts across a 6–24-month development "
-                "window, not a measured benchmark or a 30-day closing promise. "
-                "Every later cohort is a subset of the preceding cohort. "
-                "These counts do not derive the canonical annual revenue scenarios."
-            ),
-            (
-                "Sequential conversion is 40%, 40%, 37.5%, and 41.67%; "
-                "five executed licensees represent 2.5% of the original cohort."
-            ),
-            [
-                (
-                    "Screened accounts",
-                    "200 accounts with relevant commercial applications",
-                    200,
-                    (
-                        "Each account has an identified product category, "
-                        "operating territory, and plausible use for the controlled rights."
-                    ),
-                ),
-                (
-                    "Confirmed use cases",
-                    "80 accounts with documented buyer interest",
-                    80,
-                    (
-                        "Eighty of 200 accounts confirm a specific application "
-                        "and identify a contact responsible for evaluating the rights."
-                    ),
-                ),
-                (
-                    "Diligence participants",
-                    "32 accounts exchanging technical and rights evidence",
-                    32,
-                    (
-                        "Thirty-two of 80 accounts review the rights package "
-                        "and supply enough product information to assess licensing fit."
-                    ),
-                ),
-                (
-                    "Negotiated term sheets",
-                    "12 accounts negotiating scope and economics",
-                    12,
-                    (
-                        "Twelve of 32 accounts negotiate permitted uses, "
-                        "minimum guarantees, royalty bases, and reporting capabilities."
-                    ),
-                ),
-                (
-                    "Executed licensees",
-                    "5 accounts with signed reporting obligations",
-                    5,
-                    (
-                        "Five of 12 negotiating accounts execute agreements. "
-                        "Track invoicing, collection, and revenue recognition separately."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-03-base-case-profit-bridge",
-            "waterfall",
-            "The $425,000 Base-Case Profit Bridge",
-            "Four cost deductions reconcile to $180,625 owner net profit.",
-            3,
-            "illustrative_model",
-            (
-                "Annual USD. Opening and closing bars are absolute totals; "
-                "intermediate bars are signed deductions. The cost allocation "
-                "is illustrative, while revenue, profit, and margin are canonical. "
-                "This example assumes the operator controls sublicensed rights "
-                "and recognizes the associated fees gross; agency pass-through "
-                "receipts are excluded. Recurring personnel and administration "
-                "total $10,000 monthly; rights participation and transaction-specific "
-                "legal and audit expenses are additional variable costs."
-            ),
-            (
-                "$425,000 - $96,000 - $24,000 - $85,000 - $39,375 "
-                "= $180,625. Total modeled costs are $244,375; "
-                "$180,625 / $425,000 = 42.5%."
-            ),
-            [
-                (
-                    "Recognized license revenue",
-                    "$425,000 annual operator fees and royalties",
-                    425000,
-                    (
-                        "Opening total includes recognized license fees and "
-                        "royalties only, never the licensees' product-sales base."
-                    ),
-                ),
-                (
-                    "Personnel and delivery",
-                    "Deduct $96,000 for recurring pod work",
-                    -96000,
-                    (
-                        "Illustrative annual allowance for operator delivery "
-                        "and recurring contractor retainers; exclude distributions "
-                        "of the closing owner profit."
-                    ),
-                ),
-                (
-                    "Systems and administration",
-                    "Deduct $24,000 for recurring operating infrastructure",
-                    -24000,
-                    (
-                        "Fund reporting tools, insurance, bookkeeping, secure "
-                        "document storage, and administration without duplicating personnel costs."
-                    ),
-                ),
-                (
-                    "Rights-holder participation",
-                    "Deduct $85,000 in contractual rights payments",
-                    -85000,
-                    (
-                        "Illustrative 20% participation on recognized revenue "
-                        "under controlled sublicensing arrangements; replace this "
-                        "allocation when the actual rights structure differs."
-                    ),
-                ),
-                (
-                    "Deal-specific legal and audits",
-                    "Deduct $39,375 for variable specialist services",
-                    -39375,
-                    (
-                        "Expense transaction-specific drafting, rights investigation, "
-                        "and royalty examinations separately from recurring retainers; "
-                        "this bar is not an unspent cash reserve."
-                    ),
-                ),
-                (
-                    "Annual owner net profit",
-                    "$180,625 retained at 42.5% modeled margin",
-                    180625,
-                    (
-                        "Closing total equals revenue less all four modeled "
-                        "cost categories and matches the canonical Base-Case result."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-04-license-structure-yields",
-            "horizontal_bars",
-            "Compare Annual License Receipts by Rights Package",
-            "Five illustrative agreement-level yields, all expressed in USD.",
-            2,
-            "illustrative_model",
-            (
-                "Bars show hypothetical annual operator fees for one agreement, "
-                "not market royalty benchmarks, profit, or additive portfolio "
-                "revenue. Assume a full licensed year, earned fees, and collection "
-                "without withholding or payment charges. Minimum guarantees are "
-                "creditable against royalties rather than added to them."
-            ),
-            (
-                "Compare license economics on one annual fee basis; "
-                "the licensee's sales remain a royalty calculation input only."
-            ),
-            [
-                (
-                    "Patent field-of-use license",
-                    "$20,000 annual royalty from defined product sales",
-                    20000,
-                    (
-                        "Illustrative 2% royalty on $1,000,000 of contract-defined "
-                        "net product sales; recognize $20,000, not the sales base. "
-                        "Collect against quarterly statements."
-                    ),
-                ),
-                (
-                    "Brand category license",
-                    "$30,000 annual minimum exceeds calculated royalties",
-                    30000,
-                    (
-                        "Illustrative greater of a $30,000 minimum or 4% "
-                        "of $600,000 net sales. The $24,000 royalty is covered "
-                        "by the minimum, not added to it."
-                    ),
-                ),
-                (
-                    "Cleared catalog license",
-                    "$15,000 annual fee for scheduled catalog assets",
-                    15000,
-                    (
-                        "Illustrative 100 cleared assets at $150 each for "
-                        "one annual use scope; additional media or territories "
-                        "require a separately priced amendment."
-                    ),
-                ),
-                (
-                    "Controlled dataset license",
-                    "$25,000 annual fee for bounded dataset access",
-                    25000,
-                    (
-                        "Illustrative five business units at $5,000 annually "
-                        "with permitted-use and redistribution limits; access logs "
-                        "support scope reconciliation rather than ownership claims."
-                    ),
-                ),
-                (
-                    "Bundled technology package",
-                    "$50,000 annual fee across two licensed facilities",
-                    50000,
-                    (
-                        "Illustrative two facilities at $25,000 annually for "
-                        "scheduled patent and know-how rights; define included "
-                        "support so service effort does not consume the margin."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-05-preflight-rights-and-risk",
-            "decision_tree",
-            "Four Pre-Flight Decisions Before Commercial Commitment",
-            "Proceed on documented evidence; remediate the specific failed check.",
-            5,
-            "operating_framework",
-            (
-                "Numeric values identify ordered decision nodes, not risk "
-                "probabilities. Each node states its pass and remediation branches. "
-                "Apply statutes to the actual rights, transaction, and territory; "
-                "the checks are not interchangeable across asset classes."
-            ),
-            (
-                "Resolve title, scope, commercial restrictions, and evidence "
-                "access before promising an exclusive or unrestricted license."
-            ),
-            [
-                (
-                    "Can the operator grant these rights?",
-                    "Pass documented title; otherwise repair ownership evidence",
-                    1,
-                    (
-                        "Review assignments, liens, joint ownership, and sublicensing "
-                        "authority under 35 U.S.C. 261 or 17 U.S.C. 204 as "
-                        "applicable. If authority is supported, continue; otherwise "
-                        "obtain the missing grant or exclude the affected asset."
-                    ),
-                ),
-                (
-                    "Does the proposed use fit the rights?",
-                    "Pass supported scope; otherwise narrow the licensed grant",
-                    2,
-                    (
-                        "Check territory, duration, patent status, third-party "
-                        "material, and permitted data uses. Apply 17 U.S.C. "
-                        "102–103 to expression and compilations and 18 U.S.C. "
-                        "1839 to claimed trade secrets. Proceed only with supported scope."
-                    ),
-                ),
-                (
-                    "Are commercial restrictions defensible?",
-                    "Pass reviewed terms; otherwise revise restrictive provisions",
-                    3,
-                    (
-                        "Review exclusivity, tying, and resale restrictions under "
-                        "15 U.S.C. 1 without assuming exclusivity is inherently "
-                        "unlawful. For brand arrangements, assess 16 CFR 436.1 "
-                        "and applicable state franchise rules; resolve classification "
-                        "and required disclosures before execution."
-                    ),
-                ),
-                (
-                    "Can performance and misuse be detected?",
-                    "Pass inspectable controls; otherwise redesign monitoring terms",
-                    4,
-                    (
-                        "Require royalty records, audit access, retention periods, "
-                        "and enforceable remedies. For trademarks, document quality "
-                        "control relevant to 15 U.S.C. 1055 and 1127. "
-                        "If evidence cannot be inspected, revise terms or decline."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-06-four-to-six-person-pod",
-            "org_architecture",
-            "A Four-Person Core with Two Explicit Scale Seats",
-            "Base: 1 FT + 3 C. Scaled: 2 FT + 4 C.",
-            11,
-            "operating_framework",
-            (
-                "FT denotes a full-time seat; C denotes a contractor person, "
-                "not a full-time equivalent. Each node represents one person. "
-                "Conservative: $50,000 annual revenue, 25% margin, $12,500 "
-                "owner net, 1 FT + 3 C. Base: $425,000 annual revenue, "
-                "42.5% margin, $180,625 owner net, 1 FT + 3 C. "
-                "Scaled: $800,000 annual revenue, 60% margin, $480,000 "
-                "owner net, 2 FT + 4 C. Revenue excludes licensee product sales."
-            ),
-            (
-                "Seats one through four form the core pod; seats five "
-                "and six are additions for the Scaled Small-Team scenario."
-            ),
-            [
-                (
-                    "Licensing principal",
-                    "Core full-time seat owning commercial decisions",
-                    1,
-                    (
-                        "Own buyer development, pricing, rights strategy, and "
-                        "renewal negotiation. Resolve exceptions across the "
-                        "contractor workstreams and retain responsibility for commitments."
-                    ),
-                ),
-                (
-                    "IP transaction counsel",
-                    "Core contractor seat owning rights documentation",
-                    1,
-                    (
-                        "Review chain of title, draft scoped grants, assess "
-                        "statutory issues, and manage disputes. Separate recurring "
-                        "retainer work from separately billed transaction services."
-                    ),
-                ),
-                (
-                    "Royalty reporting specialist",
-                    "Core contractor seat owning statements and collections",
-                    1,
-                    (
-                        "Reconcile licensee reports, inspect deductions, issue "
-                        "invoices, and escalate missing receipts. Maintain auditable "
-                        "links between contract terms and reported royalty calculations."
-                    ),
-                ),
-                (
-                    "Technical rights analyst",
-                    "Core contractor seat owning asset-use evidence",
-                    1,
-                    (
-                        "Map claims, catalog provenance, dataset permissions, "
-                        "and licensee use evidence. Maintain the rights inventory "
-                        "and support counsel without making unsupported ownership assertions."
-                    ),
-                ),
-                (
-                    "Licensee success manager",
-                    "Scaled additional full-time seat owning account execution",
-                    1,
-                    (
-                        "Add at the six-person scenario to own onboarding, "
-                        "obligation tracking, renewal alerts, and routine account "
-                        "coordination while the principal concentrates on negotiations."
-                    ),
-                ),
-                (
-                    "Royalty audit examiner",
-                    "Scaled additional contractor seat owning exception examinations",
-                    1,
-                    (
-                        "Add targeted examinations of source sales records "
-                        "and usage logs; avoid auditing their own reporting work "
-                        "and route disputed findings through counsel."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-07-forty-thousand-startup-capital-buckets",
-            "stacked_comparison",
-            "Allocate a $40,000 Reference Startup Budget Across Four Buckets",
-            "Compare lean $12,000, reference $40,000, and expanded $75,000 plans.",
-            4,
-            "illustrative_model",
-            (
-                "Numeric values are USD allocations for the illustrative "
-                "$40,000 reference plan within the $12,000–$75,000 startup "
-                "capital range, not annual expenses or canonical revenue. "
-                "The same 35% / 25% / 20% / 20% split produces the lean "
-                "$12,000 and expanded $75,000 comparisons stated in the details. "
-                "Startup capital does not establish runway: recurring monthly "
-                "opex is $2,000–$12,000 and first-deal timing is 4–14 months."
-            ),
-            (
-                "Reference: $14,000 + $10,000 + $8,000 + $8,000 = $40,000. "
-                "Lean: $4,200 + $3,000 + $2,400 + $2,400 = $12,000. "
-                "Expanded: $26,250 + $18,750 + $15,000 + $15,000 = $75,000. "
-                "The reference liquidity bucket covers 0.8 months at $10,000 "
-                "recurring monthly opex, so separately fund the remaining "
-                "development period and variable costs."
-            ),
-            [
-                (
-                    "Rights diligence and contracting",
-                    "$14,000 reference plan allocation for defensible grants",
-                    14000,
-                    (
-                        "Allocate 35% to title investigation, asset schedules, "
-                        "and contract drafting: $4,200 in the lean $12,000 plan, "
-                        "$14,000 in the reference $40,000 plan, and $26,250 "
-                        "in the expanded $75,000 plan."
-                    ),
-                ),
-                (
-                    "Buyer validation and packaging",
-                    "$10,000 reference plan allocation for commercial evidence",
-                    10000,
-                    (
-                        "Allocate 25% to technical demonstrations, buyer interviews, "
-                        "and scoped licensing materials: $3,000 in the lean "
-                        "$12,000 plan, $10,000 in the reference $40,000 plan, "
-                        "and $18,750 in the expanded $75,000 plan."
-                    ),
-                ),
-                (
-                    "Reporting and obligation systems",
-                    "$8,000 reference plan allocation for inspectable operations",
-                    8000,
-                    (
-                        "Allocate 20% to report templates, controlled document "
-                        "storage, SQLite reconciliation, and renewal scheduling: "
-                        "$2,400 in the lean $12,000 plan, $8,000 in the reference "
-                        "$40,000 plan, and $15,000 in the expanded $75,000 plan."
-                    ),
-                ),
-                (
-                    "Uncommitted operating liquidity",
-                    "$8,000 reference plan allocation for cash continuity",
-                    8000,
-                    (
-                        "Hold 20% as cash rather than recording an immediate "
-                        "expense: $2,400 in the lean $12,000 plan, $8,000 in "
-                        "the reference $40,000 plan, and $15,000 in the expanded "
-                        "$75,000 plan. Do not treat this reserve as acquisition "
-                        "funding twice."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-08-thirty-day-evidence-sprint",
-            "timeline_roadmap",
-            "The First 30 Days Build Evidence, Not Assumed Royalty Income",
-            "Four weekly milestones prepare a disciplined licensing pipeline.",
-            12,
-            "operating_framework",
-            (
-                "Numeric values are milestone ending days. Deliverables are "
-                "30-day operating targets, not executed-license forecasts. "
-                "First-deal planning remains 4–14 months; the sprint does "
-                "not change the canonical revenue or staffing scenarios."
-            ),
-            (
-                "Finish the month with a rights dossier, tested use cases, "
-                "a draft term structure, and a working reporting rehearsal."
-            ),
-            [
-                (
-                    "Days 1-7",
-                    "Complete one asset dossier and rights-exception register",
-                    7,
-                    (
-                        "Inventory ownership documents, licensed territories, "
-                        "asset identifiers, and existing grants. Assign every "
-                        "unresolved title or permission question to counsel."
-                    ),
-                ),
-                (
-                    "Days 8-14",
-                    "Screen twenty accounts and seek five buyer interviews",
-                    14,
-                    (
-                        "Rank accounts by concrete use case and ability to "
-                        "report usage. Record actual interview outcomes; unanswered "
-                        "outreach does not count as validated demand."
-                    ),
-                ),
-                (
-                    "Days 15-21",
-                    "Draft one scoped offer and royalty calculation schedule",
-                    21,
-                    (
-                        "Define minimum guarantees, royalty deductions, permitted "
-                        "uses, audit rights, and quality controls. Run the four "
-                        "pre-flight checks before circulating commercial commitments."
-                    ),
-                ),
-                (
-                    "Days 22-30",
-                    "Rehearse reporting and establish the next development cycle",
-                    30,
-                    (
-                        "Load synthetic royalty records into SQLite, reconcile "
-                        "one sample invoice, and test renewal reminders. Review "
-                        "buyer evidence and cash runway before further spending."
-                    ),
-                ),
-            ],
-        ),
-    ]
-
-    return [
-        dict(
-            diagram_id=identifier,
-            chart_type=kind,
-            title=title,
-            subtitle=subtitle,
-            chapter_number=chapter,
-            epistemic_tag=tag,
-            assumptions_note=note,
-            caption=caption,
-            stages=[
-                dict(
-                    label=label,
-                    value=value,
-                    numeric_value=float(number),
-                    detail=detail,
-                )
-                for label, value, number, detail in stages
-            ],
-        )
-        for (
-            identifier,
-            kind,
-            title,
-            subtitle,
-            chapter,
-            tag,
-            note,
-            caption,
-            stages,
-        ) in specs
-    ]

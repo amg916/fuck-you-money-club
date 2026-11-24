@@ -1,2057 +1,886 @@
 from __future__ import annotations
 
-
 def build_volume_011_workbook() -> dict:
-    def field(name: str, input_type: str, prompt: str, example: str) -> dict:
-        return {"name": name, "type": input_type, "prompt": prompt, "example": example}
-
-    return {
-        "workbook_id": "wb-011-high-ticket-brokerage",
-        "volume_id": "vol-011-high-ticket-brokerage",
-        "title": "High-Ticket Brokerage — Operator Companion Workbook",
-        "subtitle": (
-            "6 Printable Operator Worksheets for Specialist Asset and M&A Brokerage: "
-            "Qualified Mandates, Retained-Commission Economics, Protected Introductions, "
-            "Escrow Execution, Controlled Automation, and Transferable Operating Records"
-        ),
-        "worksheets": [
-            {
-                "worksheet_id": "ws-01",
-                "number": 1,
-                "title": "Opportunity, Vertical Underwriting & Counterparty Qualification",
-                "purpose": (
-                    "Select a defensible brokerage vertical before spending scarce diligence "
-                    "hours. Establish asset ownership, seller authority, buyer capacity, "
-                    "commission collectability, and licensing dependencies using independently "
-                    "verifiable evidence. Convert attractive transaction values into a ranked "
-                    "mandate pipeline without treating client assets as operator revenue."
-                ),
-                "chapter_ref": "Q1, Q2, Q6",
-                "instructions": [
-                    (
-                        "Choose one asset category and one initial jurisdiction. Describe "
-                        "the typical seller, buyer, transaction structure, and closing "
-                        "mechanism. Separate equipment sales, business asset sales, and "
-                        "securities transactions because similar commercial introductions "
-                        "can trigger materially different operating requirements."
-                    ),
-                    (
-                        "Collect seller authority and asset evidence before sharing a "
-                        "named opportunity. Verify entity records, signing powers, ownership "
-                        "documents, debt schedules, and existing mandates. Record each "
-                        "source and retrieval date rather than accepting an intermediary's "
-                        "summary as sufficient proof."
-                    ),
-                    (
-                        "Qualify buyers against liquidity, financing conditions, decision "
-                        "authority, strategic fit, and realistic diligence capacity. Obtain "
-                        "permission for reference checks and verify proof of funds through "
-                        "an independently sourced contact; do not circulate bank statements "
-                        "through unrestricted email chains."
-                    ),
-                    (
-                        "Score opportunities on closability, retained commission, evidence "
-                        "quality, mandate protection, and execution burden. Assign explicit "
-                        "rejection conditions for disputed title, unexplained intermediary "
-                        "chains, unverifiable buyers, and demands to route client purchase "
-                        "money through the brokerage's operating account."
-                    ),
-                    (
-                        "Approve only opportunities with a documented route from mandate "
-                        "to disbursement. Preserve the original assumptions and evidence "
-                        "references so subsequent price changes, failed diligence, or "
-                        "financing delays can be traced to their effect on retained "
-                        "commission and available working capital."
-                    ),
-                ],
-                "fields": [
-                    field(
-                        "Vertical thesis and transaction boundary",
-                        "textarea",
-                        (
-                            "Define the exact asset class, geography, seller profile, buyer "
-                            "profile, transaction structure, and work excluded from the "
-                            "mandate. Explain why this niche supports repeatable qualification "
-                            "rather than opportunistic introductions across unrelated markets."
-                        ),
-                        (
-                            "Initial niche: California packaging-equipment packages priced "
-                            "between $2 million and $5 million, sold by operating manufacturers "
-                            "to strategic operators. Mandates cover identified machinery, not "
-                            "company shares or real estate. Any proposed whole-business "
-                            "transfer returns to asset-specific licensing review before "
-                            "marketing begins."
-                        ),
-                    ),
-                    field(
-                        "Seller identity and signing authority",
-                        "textarea",
-                        (
-                            "List the seller's legal entity, beneficial ownership evidence, "
-                            "authorized signatory, approval requirements, and verification "
-                            "sources. Identify the person responsible for resolving conflicting "
-                            "names, outdated registrations, or restrictions on an asset disposal."
-                        ),
-                        (
-                            "Illustrative seller Cedar Packaging LLC provides formation "
-                            "records, an ownership schedule, and a manager resolution "
-                            "authorizing Morgan Lee to sell the listed equipment. The operator "
-                            "checks the state registry and matches serial-number schedules "
-                            "to invoices. A missing member approval keeps the mandate unsigned."
-                        ),
-                    ),
-                    field(
-                        "Asset title and encumbrance evidence",
-                        "textarea",
-                        (
-                            "Document ownership, serial numbers or ownership interests, lien "
-                            "search coverage, leases, intellectual-property dependencies, and "
-                            "release requirements. Distinguish seller representations from "
-                            "independently obtained evidence and assign a resolution owner "
-                            "for every material discrepancy."
-                        ),
-                        (
-                            "The $4 million package contains 18 machines. Seventeen serial "
-                            "numbers match invoices; one invoice requires correction. A "
-                            "lender's blanket lien requires a payoff letter and authorized "
-                            "release covering the transferred equipment. The transaction "
-                            "coordinator tracks both exceptions before any closing date becomes firm."
-                        ),
-                    ),
-                    field(
-                        "Buyer capacity and decision map",
-                        "textarea",
-                        (
-                            "Record available equity, financing dependencies, investment "
-                            "authority, expected approval dates, and verification methods. "
-                            "Explain which evidence establishes capacity without assuming "
-                            "that a persuasive acquisition thesis or unsigned lender letter "
-                            "constitutes committed purchase funding."
-                        ),
-                        (
-                            "Buyer Northline Operations plans $1.5 million equity and "
-                            "$2.5 million equipment financing for a $4 million purchase. "
-                            "The bank confirms the equity balance through an authorized "
-                            "callback. The financing term sheet remains conditional on "
-                            "appraisal, and the investment committee meets in 12 days."
-                        ),
-                    ),
-                    field(
-                        "Mandate protection and fee entitlement",
-                        "textarea",
-                        (
-                            "Specify exclusivity duration, covered assets, commission basis, "
-                            "payment trigger, protected buyers, termination rights, and tail "
-                            "conditions. Identify competing mandates and explain how signed "
-                            "documents establish entitlement without relying solely on informal "
-                            "introductions or verbal assurances."
-                        ),
-                        (
-                            "The proposed mandate grants 120 days of exclusivity for "
-                            "scheduled equipment and a 5% fee on defined closing "
-                            "consideration. A six-month tail applies only to named buyers "
-                            "introduced during the term and listed within five business "
-                            "days after termination, subject to negotiated causation language."
-                        ),
-                    ),
-                    field(
-                        "Retained commission opportunity sizing",
-                        "textarea",
-                        (
-                            "Calculate transaction consideration, contractual commission, "
-                            "external referral or co-broker allocation, and retained operator "
-                            "commission. Show each multiplication and subtraction, then "
-                            "identify conditions that could change the fee independently "
-                            "of changes in headline asset value."
-                        ),
-                        (
-                            "Base illustration: $4,000,000 consideration multiplied by 5% "
-                            "produces a $200,000 contractual commission. A documented 45% "
-                            "co-broker allocation equals $90,000, leaving $110,000 retained "
-                            "operator revenue. Five equivalent completed deals produce "
-                            "$550,000 annual revenue; the $20 million asset total never "
-                            "enters the operator revenue line."
-                        ),
-                    ),
-                    field(
-                        "Closability score and rejection rules",
-                        "textarea",
-                        (
-                            "Assign weighted scores to title quality, buyer capacity, seller "
-                            "motivation, mandate strength, and execution complexity. State "
-                            "minimum acceptable scores and nonnegotiable rejection conditions "
-                            "so an unusually large commission cannot override a defective "
-                            "transaction foundation."
-                        ),
-                        (
-                            "Score out of 100: title 25, buyer capacity 25, seller "
-                            "readiness 20, mandate protection 20, and manageable execution "
-                            "10. Cedar scores 81, above the 75-point review threshold. "
-                            "However, unresolved signing authority remains a hard stop "
-                            "regardless of the numerical score or proposed commission."
-                        ),
-                    ),
-                    field(
-                        "Valuation evidence and representation limits",
-                        "textarea",
-                        (
-                            "Identify valuation sources, inspection scope, comparable-sale "
-                            "adjustments, and seller claims requiring support. Record who "
-                            "verified each material statement and distinguish indicative "
-                            "pricing from an appraisal or independently tested equipment "
-                            "performance representation in buyer-facing materials."
-                        ),
-                        (
-                            "Three documented equipment sales support a $3.6 million to "
-                            "$4.2 million range after age and tooling adjustments. The "
-                            "seller's claimed 92% utilization remains labeled seller-reported "
-                            "until maintenance logs and production records reconcile. The "
-                            "teaser omits unsupported savings estimates rather than converting "
-                            "them into brokerage assertions."
-                        ),
-                    ),
-                    field(
-                        "Diligence burden and external specialist budget",
-                        "textarea",
-                        (
-                            "Estimate operator hours, contractor hours, specialist fees, "
-                            "travel, inspection costs, and likely rework. Allocate each "
-                            "expense to the responsible party and identify written "
-                            "authorization needed before incurring costs beyond the "
-                            "brokerage's approved pursuit budget."
-                        ),
-                        (
-                            "Before mandate execution, the operator permits 12 internal "
-                            "hours and $1,800 of contractor research. The seller separately "
-                            "engages a $6,000 machinery inspector and pays that invoice "
-                            "directly. Brokerage-funded travel is capped at $1,200; additional "
-                            "travel requires a written budget revision rather than an "
-                            "assumed closing reimbursement."
-                        ),
-                    ),
-                    field(
-                        "Pursue, repair, or decline decision",
-                        "textarea",
-                        (
-                            "Write the current decision, supporting evidence, unresolved "
-                            "conditions, responsible owners, and next review date. Explain "
-                            "the precise change that would move a repaired opportunity "
-                            "into active execution or cause a previously approved "
-                            "opportunity to be declined."
-                        ),
-                        (
-                            "Decision: repair before launch. Morgan must deliver the "
-                            "member resolution and corrected machine invoice by day 6; "
-                            "the coordinator must obtain the lender's release requirements "
-                            "by day 8. Failure to verify authority ends pursuit. "
-                            "Resolution permits marketing only after the mandate and "
-                            "licensing assessment are complete."
-                        ),
-                    ),
-                ],
-                "completion_gate": (
-                    "The operator signs the opportunity record only after seller authority, "
-                    "buyer qualification standards, retained-fee math, mandate coverage, "
-                    "and the licensing route have evidence references. Unresolved title "
-                    "or authority defects prevent external marketing."
-                ),
-            },
-            {
-                "worksheet_id": "ws-02",
-                "number": 2,
-                "title": "Unit Economics, Defect Reserve & Working-Capital Float",
-                "purpose": (
-                    "Translate irregular closings into an explicit operating budget and "
-                    "cash survival plan. Reconcile the three canonical scenarios using "
-                    "retained commissions, distinguish fixed overhead from execution costs, "
-                    "and budget failed-deal exposure without counting client principal, "
-                    "unearned fees, or probability-weighted pipeline as available cash."
-                ),
-                "chapter_ref": "Q3, Q4",
-                "instructions": [
-                    (
-                        "Build the revenue bridge from completed transaction consideration "
-                        "to contractual commission, outside allocations, and retained "
-                        "commission. Use the retained amount as scorecard revenue. "
-                        "Maintain a separate accounting presentation review if contractual "
-                        "principal-versus-agent facts require different statutory financial reporting."
-                    ),
-                    (
-                        "Reproduce Conservative, Base, and Scaled revenue, margin, owner "
-                        "net profit, and staffing exactly before adding sensitivity "
-                        "analysis. Label every alternative as a sensitivity rather than "
-                        "silently replacing the canonical numbers with a more attractive "
-                        "pipeline forecast."
-                    ),
-                    (
-                        "Divide modeled expenses into fixed operating overhead, deal "
-                        "execution, and a management allowance for failed pursuits or "
-                        "defects. Explain whether each reserve is a budgeting allowance, "
-                        "segregated cash, or a recognized accounting liability; these "
-                        "categories are not interchangeable."
-                    ),
-                    (
-                        "Map monthly cash balances using actual opening liquidity, setup "
-                        "spending, payment dates, and collection timing. Keep escrow "
-                        "deposits and client purchase money outside available working "
-                        "capital. Stress a delayed first closing rather than smoothing "
-                        "annual commissions into fictional monthly receipts."
-                    ),
-                    (
-                        "Specify the spending reductions and funding decisions triggered "
-                        "by declining runway. Compare those actions with the expected "
-                        "three-to-twelve-month first-deal window, then document which "
-                        "costs can actually be stopped without breaching signed "
-                        "contractor agreements or damaging active transaction execution."
-                    ),
-                ],
-                "fields": [
-                    field(
-                        "Canonical Conservative scenario bridge",
-                        "textarea",
-                        (
-                            "Reconcile the Conservative scenario to its exact retained "
-                            "revenue, expense envelope, margin, owner net profit, and "
-                            "staffing. Provide a plausible completed-deal composition while "
-                            "keeping the underlying asset consideration outside recognized "
-                            "operator revenue."
-                        ),
-                        (
-                            "Two $2,000,000 equipment closings at 4% generate $80,000 "
-                            "commission each. Subtract $30,000 outside allocation per "
-                            "closing: retained revenue is $100,000 annually. Modeled "
-                            "expenses are $75,000, leaving $25,000 owner net profit "
-                            "and a 25% margin. Staffing remains 1 FT plus 3 contractors."
-                        ),
-                    ),
-                    field(
-                        "Canonical Base scenario bridge",
-                        "textarea",
-                        (
-                            "Reconcile the Base scenario using completed deals and retained "
-                            "commissions. Show the full expense ceiling, annual owner "
-                            "net profit, and margin calculation, preserving the canonical "
-                            "staffing rather than treating contractor counts as full-time "
-                            "salary equivalents."
-                        ),
-                        (
-                            "Five $4,000,000 closings at 5% generate $1,000,000 contractual "
-                            "commissions. Outside allocations total $450,000, leaving "
-                            "$550,000 retained revenue. Expenses of $343,750 leave "
-                            "$206,250 annual owner net profit: $206,250 divided by "
-                            "$550,000 equals 37.5%. Delivery uses 1 FT plus 3 "
-                            "engagement-based contractors."
-                        ),
-                    ),
-                    field(
-                        "Canonical Scaled scenario bridge",
-                        "textarea",
-                        (
-                            "Reconcile the Scaled Small-Team scenario to exact retained "
-                            "revenue, annual expenses, net margin, owner net profit, "
-                            "and six-person staffing. Identify the operational improvement "
-                            "supporting the higher margin without implying that increased "
-                            "asset volume automatically creates efficiency."
-                        ),
-                        (
-                            "Eight $5,000,000 closings at 4% generate $200,000 commission "
-                            "each. Subtract $75,000 outside allocation per closing, leaving "
-                            "$1,000,000 retained annual revenue. A $500,000 expense "
-                            "envelope leaves $500,000 owner net profit and 50% margin. "
-                            "Standardized execution supports 2 FT plus 4 contractors, "
-                            "six people total."
-                        ),
-                    ),
-                    field(
-                        "Fixed overhead and variable-cost allocation",
-                        "textarea",
-                        (
-                            "Allocate each canonical expense envelope between recurring "
-                            "monthly overhead and deal-related annual spending. State "
-                            "what overhead includes, prevent double-counting outside "
-                            "commission allocations, and distinguish recurring operating "
-                            "costs from startup purchases and owner distributions."
-                        ),
-                        (
-                            "Conservative overhead is $3,000 monthly, leaving $39,000 "
-                            "for annual deal costs. Base overhead is $12,000 monthly, "
-                            "leaving $199,750. Scaled overhead is $18,000 monthly, "
-                            "leaving $284,000. These reconcile to $75,000, $343,750, "
-                            "and $500,000 total expenses; outside commission allocations "
-                            "were already removed from scorecard revenue."
-                        ),
-                    ),
-                    field(
-                        "Scrub and defect reserve methodology",
-                        "textarea",
-                        (
-                            "Define eligible failed-pursuit costs, evidence defects, fee "
-                            "disputes, and rework categories. Calculate a planning "
-                            "allowance and explain how actual expenditures replace "
-                            "estimates without booking unsupported liabilities or deducting "
-                            "the same reserve twice from modeled profit."
-                        ),
-                        (
-                            "Base budgeting allocates 5% of $550,000 retained revenue, "
-                            "or $27,500, to failed-pursuit and defect costs. It sits "
-                            "inside the $199,750 variable envelope, leaving $172,250 "
-                            "for other execution costs. Canonical profit assumes full "
-                            "budget consumption; the accountant records actual expenses "
-                            "and separately evaluates any liability recognition."
-                        ),
-                    ),
-                    field(
-                        "Opening liquidity and first-closing runway",
-                        "textarea",
-                        (
-                            "Enter startup cash, one-time setup spending, unrestricted "
-                            "operating cash, monthly burn, and expected first collection "
-                            "date. Calculate runway without adding escrow balances, "
-                            "unsigned financing commitments, or expected commissions "
-                            "that have not reached their payment trigger."
-                        ),
-                        (
-                            "A $90,000 capitalization falls within the $15,000 to "
-                            "$100,000 startup range. After $18,000 setup spending, "
-                            "$72,000 remains. At $12,000 monthly overhead, fixed-cost "
-                            "runway is six months before additional deal spending. "
-                            "A $300,000 buyer deposit held by independent escrow "
-                            "contributes zero operating liquidity."
-                        ),
-                    ),
-                    field(
-                        "Monthly collection calendar and float stress",
-                        "textarea",
-                        (
-                            "Schedule expected receipts and cash outlays by month, "
-                            "including commission-payment delays after closing. Stress "
-                            "a later first collection and quantify the resulting "
-                            "funding gap separately from annual profitability or "
-                            "probability-weighted pipeline value."
-                        ),
-                        (
-                            "With $72,000 opening operating cash and $12,000 monthly "
-                            "fixed burn, month-end balances before deal spending are "
-                            "$60,000, $48,000, $36,000, $24,000, $12,000, and zero. "
-                            "A first collection delayed until month 9 requires another "
-                            "$36,000 for fixed costs alone, even if the eventual "
-                            "commission is $110,000."
-                        ),
-                    ),
-                    field(
-                        "Pipeline expectation versus collectible revenue",
-                        "textarea",
-                        (
-                            "Calculate probability-weighted pipeline value for capacity "
-                            "planning, then separate it from earned fees, receivables, "
-                            "and cash. Explain the evidence supporting probabilities "
-                            "and prevent multiple buyers pursuing one exclusive asset "
-                            "from being counted as multiple closings."
-                        ),
-                        (
-                            "Six distinct mandates each offer $110,000 retained fees "
-                            "at an assumed 30% close probability: weighted pipeline "
-                            "is $198,000. That is neither booked revenue nor cash. "
-                            "Three competing buyers for one mandate remain one "
-                            "potential closing, and the 30% assumption is revised "
-                            "using observed cohort outcomes."
-                        ),
-                    ),
-                    field(
-                        "Commission sensitivity and downside concentration",
-                        "textarea",
-                        (
-                            "Stress one fewer closing, a lower sale price, a larger "
-                            "outside allocation, and a payment dispute. Quantify "
-                            "the retained-fee impact and label whether each expense "
-                            "remains fixed, declines with activity, or increases "
-                            "because of remediation."
-                        ),
-                        (
-                            "Base sensitivity: four rather than five equivalent "
-                            "closings produces $440,000 retained revenue. Holding "
-                            "the $343,750 expense envelope constant leaves $96,250, "
-                            "approximately 21.88% margin. This is a downside test, "
-                            "not the canonical Base case. Any projected cost "
-                            "reduction requires a specific cancellable commitment "
-                            "and effective cancellation date."
-                        ),
-                    ),
-                    field(
-                        "Cash intervention thresholds and owner sign-off",
-                        "textarea",
-                        (
-                            "Set runway thresholds, spending authorities, minimum "
-                            "transaction-support reserves, and owner distribution "
-                            "conditions. Name the person responsible for intervention "
-                            "and specify the information needed before adding "
-                            "capital, reducing overhead, or accepting another "
-                            "cash-intensive mandate."
-                        ),
-                        (
-                            "At four months of fixed-cost runway, the operator "
-                            "freezes discretionary travel and reviews every software "
-                            "renewal. At three months, new pursuits require funded "
-                            "diligence budgets. Owner distributions stop below "
-                            "$36,000 unrestricted cash plus committed near-term "
-                            "deal costs; client funds remain unavailable under "
-                            "every intervention scenario."
-                        ),
-                    ),
-                ],
-                "completion_gate": (
-                    "All three scenario bridges reproduce canonical revenue, margin, "
-                    "owner net profit, and staffing. The operator approves a dated "
-                    "cash forecast, confirms outside allocations are deducted once, "
-                    "and documents a funded response to a nine-month first-collection delay."
-                ),
-            },
-            {
-                "worksheet_id": "ws-03",
-                "number": 3,
-                "title": "End-to-End Execution, Ledger & Technical QA Pre-Flight",
-                "purpose": (
-                    "Create an auditable execution path from signed mandate through "
-                    "commission collection. Link every milestone to evidence, an owner, "
-                    "and a stop condition. Reconcile escrow instructions, document "
-                    "versions, seller claims, and operator ledger entries before "
-                    "irreversible disclosures or closing-day disbursements occur."
-                ),
-                "chapter_ref": "Q7, Q8",
-                "instructions": [
-                    (
-                        "Assign one immutable deal identifier and use it across the "
-                        "CRM, data room, inspection reports, mandate, invoice, and "
-                        "ledger. Preserve separate entity and contact identifiers so "
-                        "a renamed buyer or replacement signatory does not break "
-                        "the transaction history."
-                    ),
-                    (
-                        "Define entry evidence and exit evidence for every stage, "
-                        "including qualification, mandate, controlled disclosure, offer, "
-                        "diligence, definitive documents, escrow, closing, and collection. "
-                        "A stage change must reflect verified work rather than "
-                        "an optimistic conversation or calendar placeholder."
-                    ),
-                    (
-                        "Establish document ownership and version control before "
-                        "collecting sensitive materials. Use restricted access, dated "
-                        "indexes, and material-change notifications. Remove obsolete "
-                        "buyer-facing documents from active folders while preserving "
-                        "an internal audit copy and the reason for replacement."
-                    ),
-                    (
-                        "Rehearse the closing money flow using the draft settlement "
-                        "statement. Independently verify escrow contacts and payment "
-                        "instructions, compare fee allocations with executed agreements, "
-                        "and require two-person confirmation of any late bank-detail "
-                        "change before transmitting instructions."
-                    ),
-                    (
-                        "Close the operator ledger only after settlement evidence "
-                        "and bank receipts reconcile. Distinguish earned commission, "
-                        "receivable, collection, outside allocation, and client "
-                        "principal. Preserve unresolved exceptions with owners and "
-                        "deadlines instead of marking the entire transaction complete "
-                        "because signatures were obtained."
-                    ),
-                ],
-                "fields": [
-                    field(
-                        "Deal identifier and evidence map",
-                        "textarea",
-                        (
-                            "Create the permanent deal identifier and map it to "
-                            "counterparty records, mandate versions, evidence folders, "
-                            "settlement records, and accounting references. Specify "
-                            "how duplicate opportunities are detected before they "
-                            "produce conflicting mandates or repeated outreach."
-                        ),
-                        (
-                            "Deal HTB-011-004 connects Cedar Packaging LLC, buyer "
-                            "Northline Operations, mandate M-004-v3, data-room index "
-                            "DR-004, and invoice INV-004. The CRM checks seller "
-                            "entity number plus asset serial-number set for duplicates. "
-                            "A second introducer is attached to this record rather "
-                            "than creating another revenue opportunity."
-                        ),
-                    ),
-                    field(
-                        "Milestone sequence and evidence requirements",
-                        "textarea",
-                        (
-                            "List transaction stages, accountable owners, required "
-                            "documents, target durations, and conditions preventing "
-                            "advancement. Separate commercial progress from evidence "
-                            "completion so an accepted indication of interest "
-                            "cannot conceal missing authority, funding, or "
-                            "licensing prerequisites."
-                        ),
-                        (
-                            "Stages are qualified, mandated, disclosed, offered, "
-                            "diligence, definitive, escrow-ready, closed, and collected. "
-                            "The coordinator owns evidence completeness; the operator "
-                            "owns commercial decisions. Escrow-ready requires signed "
-                            "sale documents, funding confirmation, lien-release "
-                            "instructions, and approved fee allocations. An accepted "
-                            "offer alone satisfies none of those closing requirements."
-                        ),
-                    ),
-                    field(
-                        "Data-room access and document integrity",
-                        "textarea",
-                        (
-                            "Define document classifications, authorized audiences, "
-                            "access expiration, download restrictions, and version "
-                            "approval. Identify the access log and process for "
-                            "revoking access when a buyer withdraws or a "
-                            "seller replaces a material disclosure document."
-                        ),
-                        (
-                            "SharePoint folders separate teaser materials, signed-NDA "
-                            "diligence, and restricted identity evidence. Buyer access "
-                            "expires after 30 days unless renewed. The coordinator "
-                            "replaces maintenance schedule v2 with v3, records the "
-                            "change, and alerts active reviewers. A withdrawn buyer's "
-                            "account is revoked that day and logged."
-                        ),
-                    ),
-                    field(
-                        "Representation and diligence exception register",
-                        "textarea",
-                        (
-                            "Track every material discrepancy between marketing "
-                            "claims, seller documents, inspection results, and "
-                            "contract representations. Record financial significance, "
-                            "evidence source, resolution owner, buyer notification, "
-                            "and whether the issue changes price, fee entitlement, "
-                            "or willingness to proceed."
-                        ),
-                        (
-                            "Inspection finds a machine overhaul is due sooner "
-                            "than the teaser stated. Estimated cost is $85,000. "
-                            "The operator suspends the old teaser, obtains the "
-                            "inspector's report, and records buyer acknowledgment "
-                            "of the correction. Any revised purchase price "
-                            "automatically triggers a fresh commission calculation "
-                            "before settlement drafting."
-                        ),
-                    ),
-                    field(
-                        "Escrow provider and instruction verification",
-                        "textarea",
-                        (
-                            "Record the escrow provider's legal identity, applicable "
-                            "authorization, independently sourced telephone number, "
-                            "authorized contacts, and instruction-change procedure. "
-                            "Explain how the team verifies wiring information "
-                            "without relying on the same message that "
-                            "introduced the payment request."
-                        ),
-                        (
-                            "The operator checks the selected escrow provider's "
-                            "registration where required and calls its published "
-                            "switchboard to establish the closing contact. A "
-                            "late email changing bank details triggers a hold "
-                            "and independent callback. The operator and coordinator "
-                            "document verification; neither uses the email's "
-                            "replacement telephone number."
-                        ),
-                    ),
-                    field(
-                        "Draft settlement statement and fee waterfall",
-                        "textarea",
-                        (
-                            "Reconcile purchase consideration, seller obligations, "
-                            "brokerage commission, outside allocations, and each "
-                            "recipient's payment instructions. Label the calculation "
-                            "as a client settlement rather than operator revenue, "
-                            "and identify omitted taxes or adjustments requiring "
-                            "separate transaction-specific calculation."
-                        ),
-                        (
-                            "Simplified closing statement: $4,000,000 consideration "
-                            "less $600,000 lender payoff and $200,000 total "
-                            "commission leaves $3,200,000 seller proceeds before "
-                            "separately determined taxes and adjustments. Escrow "
-                            "pays $90,000 to the co-broker and $110,000 to "
-                            "the operator. The $4 million purchase amount "
-                            "never becomes brokerage sales revenue."
-                        ),
-                    ),
-                    field(
-                        "Operator revenue and receivable ledger",
-                        "textarea",
-                        (
-                            "Specify the evidence supporting fee recognition, "
-                            "receivable creation, cash collection, and resolution "
-                            "of allocation differences. Explain the scorecard "
-                            "retained-revenue treatment while preserving a separate "
-                            "accountant-reviewed presentation for contracts whose "
-                            "accounting substance requires another gross-versus-net treatment."
-                        ),
-                        (
-                            "For this documented net-entitlement arrangement, the "
-                            "accountant confirms the $110,000 fee becomes earned "
-                            "at closing. The operator records a $110,000 "
-                            "receivable and retained commission, then clears "
-                            "the receivable on collection. The closing statement "
-                            "supports the separate $90,000 co-broker payment; "
-                            "client purchase principal stays outside operator revenue."
-                        ),
-                    ),
-                    field(
-                        "Technical calculations and export checks",
-                        "textarea",
-                        (
-                            "Define deterministic checks for fee calculations, "
-                            "required identifiers, currency precision, stage dates, "
-                            "duplicate invoices, and export totals. State the "
-                            "expected output for a known transaction so "
-                            "spreadsheet or CRM changes can be tested "
-                            "against a stable reference."
-                        ),
-                        (
-                            "Reference calculation uses Decimal-compatible currency "
-                            "precision: $4,000,000 times 0.05 equals $200,000; "
-                            "$200,000 times 0.45 equals $90,000; retained fee "
-                            "equals $110,000. The export rejects duplicate "
-                            "INV-004 entries, collection dates before invoice "
-                            "creation unless documented, and missing deal "
-                            "identifiers. Totals reconcile to the ledger."
-                        ),
-                    ),
-                    field(
-                        "Closing-day communication and incident response",
-                        "textarea",
-                        (
-                            "Assign closing-day roles, approved communication "
-                            "channels, escalation contacts, and pause conditions. "
-                            "Explain how a funding shortfall, document "
-                            "substitution, disputed instruction, or suspicious "
-                            "payment request is contained while preserving "
-                            "evidence and informing affected authorized participants."
-                        ),
-                        (
-                            "The operator leads commercial decisions; the "
-                            "coordinator reconciles documents; escrow controls "
-                            "funds under its instructions. A $250,000 funding "
-                            "shortfall pauses disbursement. The team records "
-                            "the discrepancy in the closing log and "
-                            "notifies authorized parties through established "
-                            "contacts rather than accepting an unverified "
-                            "same-day substitute lender."
-                        ),
-                    ),
-                    field(
-                        "Post-close reconciliation and archive",
-                        "textarea",
-                        (
-                            "List the final settlement evidence, collection "
-                            "confirmation, release documents, access changes, "
-                            "exception resolution, and retention schedule "
-                            "required to archive a deal. Identify open "
-                            "post-closing obligations that remain active "
-                            "after the brokerage receives its commission."
-                        ),
-                        (
-                            "Within five business days, the coordinator "
-                            "matches the $110,000 bank receipt to INV-004, "
-                            "archives signed closing documents, confirms "
-                            "lien-release follow-up, and removes buyer "
-                            "data-room access when no longer needed. "
-                            "An outstanding equipment handover certificate "
-                            "remains assigned to the seller with a "
-                            "specific completion date."
-                        ),
-                    ),
-                ],
-                "completion_gate": (
-                    "A second reviewer reproduces the fee waterfall, verifies the "
-                    "escrow contact independently, and confirms required closing "
-                    "documents and ledger references. Collection is marked complete "
-                    "only after bank evidence matches the operator's contractual entitlement."
-                ),
-            },
-            {
-                "worksheet_id": "ws-04",
-                "number": 4,
-                "title": "Statutory, Licensing, Contract & Outreach Compliance Audit",
-                "purpose": (
-                    "Determine which transaction-specific rules govern the proposed "
-                    "activities before accepting a mandate or launching outreach. "
-                    "Translate licensing, securities, agency, confidentiality, "
-                    "communications, lien, and fund-handling requirements into documented "
-                    "operating actions, with named specialists responsible for unresolved "
-                    "jurisdictional or structural questions."
-                ),
-                "chapter_ref": "Q5, Q9",
-                "instructions": [
-                    (
-                        "Classify the transaction by legal substance, not marketing "
-                        "label. Identify securities, real estate, business opportunities, "
-                        "equipment, and other regulated assets separately. Record "
-                        "every jurisdiction connected to the seller, buyer, asset, "
-                        "broker activity, and proposed closing."
-                    ),
-                    (
-                        "Have qualified transaction counsel resolve licensing and "
-                        "exemption questions before transaction-based compensation "
-                        "is promised. Preserve the analysis and factual assumptions. "
-                        "A federal exemption, confidentiality agreement, or "
-                        "anti-circumvention clause does not independently resolve "
-                        "state licensing or compensation restrictions."
-                    ),
-                    (
-                        "Review the mandate, agency disclosure, co-broker agreement, "
-                        "NCNDA, and sale documentation as a connected set. "
-                        "Resolve inconsistent parties, fee triggers, protected "
-                        "contacts, governing law, dispute provisions, and "
-                        "disclosure permissions before confidential information "
-                        "or buyer identities are released."
-                    ),
-                    (
-                        "Translate outreach requirements into channel-specific "
-                        "controls. Maintain sender identity, suppression records, "
-                        "permitted contact methods, and evidence supporting "
-                        "claims. Review email, telephone, automated messaging, "
-                        "and personal-data processing separately instead of "
-                        "assuming one channel's permission covers every channel."
-                    ),
-                    (
-                        "Document client-fund boundaries and the independent "
-                        "closing provider's responsibilities. Verify applicable "
-                        "trust-account, escrow, agency, and lien-release "
-                        "requirements. Escalate attempts to bypass licensing, "
-                        "hide principals, obscure fee recipients, or "
-                        "mischaracterize transaction consideration before further execution."
-                    ),
-                ],
-                "fields": [
-                    field(
-                        "Asset classification and jurisdiction inventory",
-                        "textarea",
-                        (
-                            "Identify the legal form of the sale and all "
-                            "relevant locations. List facts that could "
-                            "change the classification, including stock "
-                            "consideration, real-property interests, business "
-                            "goodwill, seller financing, or activities beyond "
-                            "a narrowly defined equipment introduction."
-                        ),
-                        (
-                            "The initial California mandate covers specified "
-                            "machinery only. A later proposal adds customer "
-                            "contracts, goodwill, and the operating business. "
-                            "The operator pauses that expanded scope "
-                            "because California Business and Professions "
-                            "Code sections 10130 and 10131 can govern "
-                            "licensed business-opportunity brokerage, not "
-                            "only real-property transactions."
-                        ),
-                    ),
-                    field(
-                        "Securities broker registration analysis",
-                        "textarea",
-                        (
-                            "Document whether the transaction involves "
-                            "securities and whether proposed activities "
-                            "require broker registration or satisfy a "
-                            "specific exemption. Identify the reviewing "
-                            "specialist, compensation structure, factual "
-                            "assumptions, and restrictions imposed on "
-                            "introductions, negotiation, financing, and custody."
-                        ),
-                        (
-                            "A proposed sale of company shares triggers "
-                            "review under 15 U.S.C. 78o(a) and "
-                            "78o(b)(13). The operator obtains a written "
-                            "assessment before quoting a success fee. "
-                            "Calling the work consulting does not "
-                            "change transaction-based compensation facts, "
-                            "and the assessment separately addresses "
-                            "applicable state broker requirements."
-                        ),
-                    ),
-                    field(
-                        "Federal M&A exemption factual checklist",
-                        "textarea",
-                        (
-                            "If relying on the federal M&A broker "
-                            "exemption, record company eligibility, size "
-                            "evidence, buyer control and active management, "
-                            "excluded activities, required disclosures, "
-                            "and state-law analysis. Test every "
-                            "condition rather than treating company "
-                            "size as sufficient."
-                        ),
-                        (
-                            "Under 15 U.S.C. 78o(b)(13), counsel checks "
-                            "private-company status and statutory EBITDA "
-                            "below $25 million or gross revenue below "
-                            "$250 million, subject to applicable "
-                            "adjustments. The checklist also addresses "
-                            "control, active management, custody, financing, "
-                            "shell-company restrictions, buyer-group formation, "
-                            "and written consent for dual representation."
-                        ),
-                    ),
-                    field(
-                        "License coverage and referral compensation",
-                        "textarea",
-                        (
-                            "List required individual and entity licenses, "
-                            "supervising relationships, permitted activities, "
-                            "renewal dates, and referral-payment restrictions. "
-                            "Specify how the operator verifies active "
-                            "status and avoids assuming another "
-                            "participant's license automatically authorizes "
-                            "the brokerage's own conduct."
-                        ),
-                        (
-                            "For a California business-opportunity mandate, "
-                            "counsel maps the contemplated activities "
-                            "to Business and Professions Code section "
-                            "10131 and checks proposed payments under "
-                            "section 10137. The operator verifies "
-                            "license records and written roles; an "
-                            "unlicensed introducer receives no promised "
-                            "transaction share pending that determination."
-                        ),
-                    ),
-                    field(
-                        "Agency, conflicts, and material disclosures",
-                        "textarea",
-                        (
-                            "State whom the brokerage represents, "
-                            "who pays each fee, and which "
-                            "relationships create conflicts. Identify "
-                            "required written disclosures and consents, "
-                            "plus material facts that must "
-                            "be communicated accurately throughout "
-                            "marketing, negotiation, and diligence."
-                        ),
-                        (
-                            "The seller pays the 5% commission, "
-                            "and a separate buyer adviser receives "
-                            "the negotiated outside allocation. The "
-                            "documents disclose those roles before "
-                            "buyer diligence. For a securities "
-                            "transaction, counsel also addresses "
-                            "17 CFR 240.10b-5; unsupported earnings "
-                            "claims are removed and material "
-                            "corrections are circulated."
-                        ),
-                    ),
-                    field(
-                        "Exclusive mandate and NCNDA drafting controls",
-                        "textarea",
-                        (
-                            "Define confidential information, permitted "
-                            "recipients, protected introductions, exclusions, "
-                            "duration, causation, fee entitlement, and "
-                            "remedies. Explain how the NCNDA "
-                            "supports a valid mandate without "
-                            "purporting to create a license "
-                            "or an unlimited claim over unrelated transactions."
-                        ),
-                        (
-                            "The NCNDA protects named buyer Northline "
-                            "for the scheduled equipment opportunity "
-                            "for 12 months. It excludes documented "
-                            "preexisting relationships and independently "
-                            "developed contacts. Fee recovery refers "
-                            "to the executed mandate and proven "
-                            "circumvention; it does not impose "
-                            "automatic ownership of every future "
-                            "deal involving either party."
-                        ),
-                    ),
-                    field(
-                        "Escrow, trust funds, and lien-release controls",
-                        "textarea",
-                        (
-                            "Identify who may receive deposits, "
-                            "which fund-handling rules apply, "
-                            "how funds remain segregated, "
-                            "and what authorizes release. "
-                            "Record lien-search and payoff "
-                            "requirements, distinguishing a contractual "
-                            "promise to clear title from "
-                            "evidence of authorized lien termination."
-                        ),
-                        (
-                            "The buyer sends its $300,000 deposit "
-                            "directly to the selected escrow "
-                            "provider, never the operator. Counsel "
-                            "reviews the adopted state versions "
-                            "of UCC sections 9-315 and 9-513: "
-                            "a sale does not automatically "
-                            "eliminate a security interest, "
-                            "and release documentation must "
-                            "match the secured party's authorization."
-                        ),
-                    ),
-                    field(
-                        "Email outreach and suppression evidence",
-                        "textarea",
-                        (
-                            "Document sender identification, subject-line "
-                            "accuracy, mailing address, opt-out "
-                            "mechanism, suppression timing, and "
-                            "vendor responsibilities for commercial "
-                            "email. State the statute "
-                            "reviewed and show how "
-                            "suppression survives list imports "
-                            "and changes in campaign tools."
-                        ),
-                        (
-                            "The email checklist implements 15 "
-                            "U.S.C. 7704 requirements, including "
-                            "accurate headers, nondeceptive subjects, "
-                            "a valid postal address, and "
-                            "a working opt-out honored within "
-                            "10 business days. HubSpot imports "
-                            "check a central suppression list; "
-                            "a contractor cannot reactivate "
-                            "an opted-out recipient by uploading "
-                            "a fresh spreadsheet."
-                        ),
-                    ),
-                    field(
-                        "Telephone, messaging, and personal-data review",
-                        "textarea",
-                        (
-                            "Assess calling methods, number "
-                            "types, prerecorded content, automated "
-                            "messaging, applicable consent and "
-                            "do-not-call requirements, and personal-data "
-                            "handling. Identify state-law "
-                            "overlays and applicable privacy "
-                            "duties before enabling technology "
-                            "that changes the outreach method."
-                        ),
-                        (
-                            "Launch uses manually reviewed business "
-                            "email while counsel assesses "
-                            "47 U.S.C. 227, 47 CFR "
-                            "64.1200, and state calling "
-                            "requirements for proposed telephone "
-                            "campaigns. The operator separately "
-                            "tests applicability of California "
-                            "Civil Code section 1798.100 "
-                            "and related provisions before "
-                            "expanding buyer-contact enrichment "
-                            "and personal-data sharing."
-                        ),
-                    ),
-                    field(
-                        "Dated issue log and specialist resolution",
-                        "textarea",
-                        (
-                            "Record each unresolved statutory "
-                            "or contractual issue, responsible "
-                            "specialist, requested evidence, "
-                            "deadline, and restricted activity. "
-                            "Specify what written conclusion "
-                            "and factual verification will "
-                            "allow work to resume "
-                            "without silently expanding the "
-                            "scope of an earlier assessment."
-                        ),
-                        (
-                            "Issue L-04 asks whether the "
-                            "revised transaction includes a "
-                            "business opportunity requiring "
-                            "California licensing. Counsel "
-                            "receives the asset schedule "
-                            "and draft sale structure "
-                            "on day 4. No expanded "
-                            "mandate or success-fee offer "
-                            "is issued until the "
-                            "written conclusion identifies "
-                            "the permitted operating structure."
-                        ),
-                    ),
-                ],
-                "completion_gate": (
-                    "Every applicable licensing and transaction-structure question has "
-                    "a dated specialist conclusion or a documented restriction on "
-                    "activity. Executed mandate terms, protected introductions, "
-                    "disclosures, outreach controls, and fund-handling instructions "
-                    "must agree before external execution proceeds."
-                ),
-            },
-            {
-                "worksheet_id": "ws-05",
-                "number": 5,
-                "title": "Automation Pipeline, Growth Flywheel & Risk Fallback Tracker",
-                "purpose": (
-                    "Automate repeatable matching, milestone reminders, and document "
-                    "checks while keeping commercial judgment and sensitive "
-                    "disclosures under human control. Build a measured referral "
-                    "and outbound engine that preserves source attribution, "
-                    "suppression history, evidence quality, and continuity when "
-                    "vendors, integrations, or key people fail."
-                ),
-                "chapter_ref": "Q6, Q10",
-                "instructions": [
-                    (
-                        "Define a minimal system of record before connecting "
-                        "tools. Assign ownership for companies, contacts, "
-                        "mandates, introductions, milestones, and fee allocations. "
-                        "Use stable identifiers and a documented field "
-                        "dictionary so integrations do not silently overwrite "
-                        "commercially important distinctions."
-                    ),
-                    (
-                        "Start matching with explicit buyer criteria and "
-                        "verified seller attributes. Record why each "
-                        "candidate appears and which constraints remain "
-                        "unverified. Treat algorithmic ranking as a "
-                        "research aid, not permission to disclose "
-                        "confidential identity or assert acquisition capacity."
-                    ),
-                    (
-                        "Automate reminders and completeness checks only "
-                        "after defining required evidence and exception "
-                        "owners. Use idempotent updates, error logs, "
-                        "and bounded retries. Prevent a successful "
-                        "automation run from being mistaken for "
-                        "a completed commercial or legal milestone."
-                    ),
-                    (
-                        "Build outbound cohorts around one credible "
-                        "vertical thesis and a permitted communication "
-                        "channel. Measure positive replies, qualified "
-                        "buyers, signed mandates, and completed closings "
-                        "separately. Exclude duplicates, suppressed contacts, "
-                        "and repeated buyer interest in the same "
-                        "asset from inflated conversion counts."
-                    ),
-                    (
-                        "Exercise fallback procedures for CRM downtime, "
-                        "incorrect matching, exposed documents, stale "
-                        "fee calculations, and unavailable contractors. "
-                        "Preserve a restricted manual working queue "
-                        "and evidence backups. Resume automation only "
-                        "after the underlying records and permissions "
-                        "have been reconciled."
-                    ),
-                ],
-                "fields": [
-                    field(
-                        "System-of-record architecture and ownership",
-                        "textarea",
-                        (
-                            "Choose the authoritative system "
-                            "for each record type "
-                            "and define synchronization "
-                            "direction, ownership, and "
-                            "conflict handling. Explain "
-                            "which financial and document "
-                            "facts must not be "
-                            "overwritten by marketing-tool "
-                            "imports or enrichment updates."
-                        ),
-                        (
-                            "HubSpot owns companies, contacts, "
-                            "and deal stages; SharePoint "
-                            "owns signed documents; the "
-                            "accounting ledger owns posted "
-                            "receivables and collections. "
-                            "Airtable holds a reviewed "
-                            "matching queue. Enrichment "
-                            "may suggest a telephone "
-                            "update but cannot alter "
-                            "signed fee terms, verified "
-                            "entity identity, or suppression status."
-                        ),
-                    ),
-                    field(
-                        "Buyer-seller matching rules and evidence",
-                        "textarea",
-                        (
-                            "Define mandatory matching "
-                            "constraints, preference weights, "
-                            "evidence freshness, and "
-                            "review ownership. Describe "
-                            "how the system handles "
-                            "missing or conflicting "
-                            "buyer criteria without "
-                            "inventing capacity or "
-                            "sending a confidential "
-                            "opportunity to an unsuitable recipient."
-                        ),
-                        (
-                            "Mandatory filters require packaging "
-                            "equipment interest, a "
-                            "$2 million to $5 "
-                            "million ticket range, "
-                            "and a named acquisition "
-                            "decision-maker. Geography adds "
-                            "20 ranking points and "
-                            "documented funding adds "
-                            "30. A missing funding "
-                            "verification creates a "
-                            "research task; it "
-                            "does not become an "
-                            "assumed positive match."
-                        ),
-                    ),
-                    field(
-                        "Milestone automation and idempotency",
-                        "textarea",
-                        (
-                            "Specify the trigger, "
-                            "required inputs, output "
-                            "record, duplicate-prevention "
-                            "key, retry limit, "
-                            "and failure owner "
-                            "for milestone automation. "
-                            "Explain how repeated "
-                            "webhooks avoid duplicate "
-                            "tasks, duplicate disclosures, "
-                            "or repeated invoices "
-                            "for the same closing."
-                        ),
-                        (
-                            "A signed mandate triggers "
-                            "one diligence checklist "
-                            "keyed by deal ID "
-                            "plus mandate version. "
-                            "Three repeated webhook "
-                            "deliveries update the "
-                            "same checklist rather "
-                            "than create three. "
-                            "After two failed "
-                            "attempts, the integration "
-                            "stops retrying and "
-                            "assigns the coordinator "
-                            "an exception with "
-                            "the original event payload."
-                        ),
-                    ),
-                    field(
-                        "Document checklist and extraction controls",
-                        "textarea",
-                        (
-                            "Define required documents, "
-                            "extracted fields, source "
-                            "citations, confidence handling, "
-                            "and human verification "
-                            "for automated review. "
-                            "Identify materials that "
-                            "cannot leave the "
-                            "approved environment and "
-                            "prevent extracted text "
-                            "from being treated "
-                            "as an executed contractual term."
-                        ),
-                        (
-                            "The checklist expects a "
-                            "signed mandate, authority "
-                            "resolution, asset schedule, "
-                            "and lien evidence. "
-                            "Extraction suggests the "
-                            "5% fee and 120-day "
-                            "term with page "
-                            "references, but the "
-                            "coordinator verifies both "
-                            "against signatures. Restricted "
-                            "identity documents are "
-                            "excluded from external "
-                            "processing and remain "
-                            "in the controlled repository."
-                        ),
-                    ),
-                    field(
-                        "Outbound cohort and conversion ledger",
-                        "textarea",
-                        (
-                            "Define the target "
-                            "cohort, qualification "
-                            "criteria, permitted "
-                            "channel, message "
-                            "hypothesis, and "
-                            "conversion denominators. "
-                            "Separate delivered "
-                            "contacts, positive "
-                            "responses, qualified "
-                            "meetings, signed "
-                            "mandates, and "
-                            "completed transactions "
-                            "so early activity "
-                            "does not masquerade "
-                            "as commission production."
-                        ),
-                        (
-                            "A pilot contacts 120 "
-                            "verified equipment owners "
-                            "through individually reviewed "
-                            "email. It produces "
-                            "18 positive replies, "
-                            "eight qualified meetings, "
-                            "and two signed "
-                            "mandates: 15%, 6.67%, "
-                            "and 1.67% of "
-                            "contacted owners. No "
-                            "closing occurs during "
-                            "the pilot, so "
-                            "recognized commission "
-                            "from this cohort "
-                            "remains zero."
-                        ),
-                    ),
-                    field(
-                        "Referral flywheel and attribution protection",
-                        "textarea",
-                        (
-                            "Map repeatable referral "
-                            "sources, introduction "
-                            "permissions, source "
-                            "attribution, compensation "
-                            "review, and feedback "
-                            "loops. Explain "
-                            "how the team "
-                            "recognizes useful "
-                            "introductions without "
-                            "promising prohibited "
-                            "fee sharing or "
-                            "disclosing confidential "
-                            "transaction outcomes "
-                            "to an unauthorized intermediary."
-                        ),
-                        (
-                            "Machinery inspectors, industry "
-                            "accountants, and equipment "
-                            "lenders receive a "
-                            "clear description of "
-                            "the target mandate. "
-                            "Each permitted introduction "
-                            "gets a source "
-                            "record and timestamp. "
-                            "Any proposed payment "
-                            "receives asset-specific "
-                            "review before commitment; "
-                            "a thank-you update "
-                            "confirms contact occurred "
-                            "without revealing price "
-                            "or buyer identity."
-                        ),
-                    ),
-                    field(
-                        "Suppression, duplicate, and privacy safeguards",
-                        "textarea",
-                        (
-                            "Define suppression "
-                            "precedence, duplicate "
-                            "matching, access "
-                            "roles, retention "
-                            "rules, and "
-                            "data-export restrictions. "
-                            "Describe how "
-                            "the pipeline "
-                            "handles a "
-                            "contact imported "
-                            "from multiple "
-                            "sources when "
-                            "one source "
-                            "contains an "
-                            "opt-out or "
-                            "a restricted-use designation."
-                        ),
-                        (
-                            "Email address and "
-                            "entity identifiers "
-                            "drive duplicate "
-                            "checks, with "
-                            "manual review "
-                            "for similar "
-                            "names. A "
-                            "suppression entry "
-                            "always overrides "
-                            "a newly "
-                            "purchased contact "
-                            "record. Researchers "
-                            "cannot export "
-                            "proof-of-funds documents, "
-                            "and campaign "
-                            "users see "
-                            "only the "
-                            "qualification status "
-                            "needed to "
-                            "perform their role."
-                        ),
-                    ),
-                    field(
-                        "Failure modes and manual fallback",
-                        "textarea",
-                        (
-                            "List likely "
-                            "integration, vendor, "
-                            "document-access, and "
-                            "staffing failures "
-                            "with detection "
-                            "signals and "
-                            "fallback owners. "
-                            "Specify the "
-                            "minimum restricted "
-                            "working record "
-                            "needed to "
-                            "continue safely "
-                            "without bypassing "
-                            "verification or "
-                            "releasing sensitive "
-                            "information through "
-                            "uncontrolled personal channels."
-                        ),
-                        (
-                            "If HubSpot is "
-                            "unavailable, the "
-                            "coordinator uses "
-                            "a restricted "
-                            "daily export "
-                            "containing deal "
-                            "IDs, owners, "
-                            "deadlines, and "
-                            "document references. "
-                            "No bulk "
-                            "outreach runs "
-                            "during the "
-                            "outage. Closing "
-                            "work continues "
-                            "through verified "
-                            "contacts, and "
-                            "manual changes "
-                            "are reconciled "
-                            "before automated "
-                            "stage updates resume."
-                        ),
-                    ),
-                    field(
-                        "Automation performance and economic value",
-                        "textarea",
-                        (
-                            "Measure time "
-                            "saved, review "
-                            "time added, "
-                            "error rates, "
-                            "tool costs, "
-                            "and delayed "
-                            "tasks. Calculate "
-                            "net operating "
-                            "value without "
-                            "assuming saved "
-                            "hours immediately "
-                            "become cash "
-                            "savings or "
-                            "that faster "
-                            "matching increases "
-                            "completed-deal revenue "
-                            "by itself."
-                        ),
-                        (
-                            "Document reminders save "
-                            "10 coordinator "
-                            "hours monthly "
-                            "at a "
-                            "$50 planning "
-                            "rate, creating "
-                            "$500 of "
-                            "capacity value. "
-                            "Review requires "
-                            "two hours, "
-                            "and software "
-                            "costs $150: "
-                            "net modeled "
-                            "capacity value "
-                            "is $250. "
-                            "Cash savings "
-                            "occur only "
-                            "if paid "
-                            "hours actually "
-                            "decline; no "
-                            "commission uplift "
-                            "is assumed."
-                        ),
-                    ),
-                    field(
-                        "Change control and recovery acceptance",
-                        "textarea",
-                        (
-                            "Define the "
-                            "test records, "
-                            "reviewer, release "
-                            "decision, rollback "
-                            "method, and "
-                            "post-change checks "
-                            "for an "
-                            "automation update. "
-                            "Identify changes "
-                            "requiring explicit "
-                            "operator confirmation, "
-                            "especially modifications "
-                            "to fee "
-                            "calculations, document "
-                            "sharing, or "
-                            "outward-facing communication."
-                        ),
-                        (
-                            "Before changing matching "
-                            "weights, the "
-                            "coordinator tests "
-                            "20 synthetic "
-                            "records including "
-                            "five suppressed "
-                            "contacts and "
-                            "three missing "
-                            "funding checks. "
-                            "The operator "
-                            "reviews results "
-                            "before enabling "
-                            "outreach. A "
-                            "versioned prior "
-                            "configuration supports "
-                            "rollback, and "
-                            "the first "
-                            "live batch "
-                            "is limited "
-                            "to ten "
-                            "reviewed recipients."
-                        ),
-                    ),
-                ],
-                "completion_gate": (
-                    "Matching, milestone tracking, and document checks pass a "
-                    "documented test set without unauthorized disclosure, duplicate "
-                    "tasks, or suppressed outreach. A named backup operator "
-                    "successfully executes the manual fallback and reconciles "
-                    "changes before normal automation resumes."
-                ),
-            },
-            {
-                "worksheet_id": "ws-06",
-                "number": 6,
-                "title": "30-Day Launch Sprint, Pod KPI Scorecard & Exit-Readiness Ledger",
-                "purpose": (
-                    "Launch a focused brokerage operation in 30 days without "
-                    "confusing setup progress with a completed deal. Assign "
-                    "pod responsibilities, measure evidence-backed pipeline "
-                    "movement, preserve canonical economics, and assemble "
-                    "records that make mandates, relationships, and "
-                    "operating knowledge transferable rather than founder-dependent."
-                ),
-                "chapter_ref": "Q11, Q12",
-                "instructions": [
-                    (
-                        "Sequence the first month around authority, economics, "
-                        "execution readiness, and controlled market contact. "
-                        "Treat the three-to-twelve-month first-deal window "
-                        "as the planning range. The sprint produces "
-                        "a qualified operating platform and pipeline, "
-                        "not an invented promise of immediate commission."
-                    ),
-                    (
-                        "Assign the initial one-full-time, three-contractor "
-                        "pod explicit responsibilities and spending limits. "
-                        "Distinguish recurring availability from deal-specific "
-                        "engagements. Maintain specialist access without "
-                        "assuming every contractor is continuously "
-                        "employed or available for simultaneous "
-                        "closing emergencies."
-                    ),
-                    (
-                        "Create a weekly scorecard with clear denominators, "
-                        "source records, owners, and review dates. "
-                        "Track mandate quality, stage age, retained "
-                        "fee exposure, defects, collections, and "
-                        "cash runway. Keep probability-weighted "
-                        "pipeline separate from canonical annual "
-                        "revenue and owner net profit."
-                    ),
-                    (
-                        "Test handoff quality before adding volume. "
-                        "Have a backup person reconstruct an "
-                        "active deal from its evidence record "
-                        "without relying on private messages "
-                        "or the founder's memory. Record "
-                        "missing permissions, undocumented promises, "
-                        "and relationship dependencies as specific "
-                        "transfer risks."
-                    ),
-                    (
-                        "Finish the sprint with a written continue, "
-                        "repair, or narrow decision. Compare actual "
-                        "spending and evidence quality with the "
-                        "approved plan. Authorize additional hiring "
-                        "only when workload, cash, and transferable "
-                        "execution capacity support it, not "
-                        "because headline transaction values appear large."
-                    ),
-                ],
-                "fields": [
-                    field(
-                        "Days 1–7: niche, authority, and setup",
-                        "textarea",
-                        (
-                            "Define first-week deliverables, "
-                            "owners, spending limits, "
-                            "and evidence of "
-                            "completion. Prioritize "
-                            "vertical selection, "
-                            "licensing analysis, "
-                            "mandate drafting, "
-                            "cash planning, "
-                            "and system access "
-                            "before investing "
-                            "in broad "
-                            "lead generation "
-                            "or public "
-                            "claims about "
-                            "transaction capability."
-                        ),
-                        (
-                            "By day 7, "
-                            "the operator "
-                            "selects packaging "
-                            "equipment, commissions "
-                            "the jurisdictional "
-                            "review, approves "
-                            "a mandate "
-                            "draft, and "
-                            "opens the "
-                            "restricted evidence "
-                            "repository. Setup "
-                            "spending is "
-                            "capped at "
-                            "$18,000 within "
-                            "the $90,000 "
-                            "capitalization plan. "
-                            "No external "
-                            "success-fee commitment "
-                            "precedes the "
-                            "required licensing determination."
-                        ),
-                    ),
-                    field(
-                        "Days 8–14: qualification and execution rehearsal",
-                        "textarea",
-                        (
-                            "Specify the "
-                            "second-week research "
-                            "cohort, qualification "
-                            "targets, test "
-                            "documents, and "
-                            "execution rehearsal. "
-                            "Record which "
-                            "activities can "
-                            "proceed while "
-                            "a transaction-specific "
-                            "question remains "
-                            "open and "
-                            "which activities "
-                            "must wait "
-                            "for documented "
-                            "resolution by "
-                            "the responsible specialist."
-                        ),
-                        (
-                            "The research contractor "
-                            "maps 40 "
-                            "equipment owners "
-                            "and 25 "
-                            "strategic buyers "
-                            "from permitted "
-                            "sources. The "
-                            "coordinator rehearses "
-                            "the $4 "
-                            "million closing "
-                            "waterfall using "
-                            "synthetic documents. "
-                            "Internal research "
-                            "continues while "
-                            "one structure "
-                            "question is "
-                            "open; named "
-                            "deal marketing "
-                            "waits for "
-                            "authority and "
-                            "licensing clearance."
-                        ),
-                    ),
-                    field(
-                        "Days 15–21: controlled outreach and mandate testing",
-                        "textarea",
-                        (
-                            "Define the "
-                            "initial outreach "
-                            "batch, review "
-                            "process, discovery "
-                            "questions, and "
-                            "mandate qualification "
-                            "standard. Separate "
-                            "activity targets "
-                            "from promised "
-                            "commercial results, "
-                            "and identify "
-                            "the evidence "
-                            "needed before "
-                            "a positive "
-                            "reply becomes "
-                            "a qualified "
-                            "seller opportunity."
-                        ),
-                        (
-                            "The operator reviews "
-                            "30 first-batch "
-                            "emails and "
-                            "runs discovery "
-                            "calls with "
-                            "responding owners. "
-                            "The working "
-                            "target is "
-                            "six substantive "
-                            "conversations, not "
-                            "six assumed "
-                            "mandates. A "
-                            "seller becomes "
-                            "qualified only "
-                            "after ownership, "
-                            "authority, price "
-                            "expectations, timing, "
-                            "and existing "
-                            "broker relationships "
-                            "are documented."
-                        ),
-                    ),
-                    field(
-                        "Days 22–30: evidence review and launch decision",
-                        "textarea",
-                        (
-                            "Specify final-week "
-                            "tests, budget "
-                            "reconciliation, pipeline "
-                            "review, and "
-                            "decision criteria. "
-                            "Identify deficiencies "
-                            "that require "
-                            "repair before "
-                            "additional outreach "
-                            "and define "
-                            "what a "
-                            "successful launch "
-                            "means when "
-                            "no transaction "
-                            "has yet "
-                            "closed or "
-                            "generated collectible commission."
-                        ),
-                        (
-                            "Day 30 review "
-                            "requires a "
-                            "working mandate "
-                            "process, tested "
-                            "escrow checklist, "
-                            "verified suppression "
-                            "handling, and "
-                            "a funded "
-                            "90-day work "
-                            "plan. One "
-                            "qualified mandate "
-                            "and zero "
-                            "closings can "
-                            "support continuation "
-                            "if evidence "
-                            "and runway "
-                            "are sound. "
-                            "Revenue remains "
-                            "zero until "
-                            "the contractual "
-                            "earning conditions "
-                            "are satisfied."
-                        ),
-                    ),
-                    field(
-                        "Initial pod roles and capacity commitments",
-                        "textarea",
-                        (
-                            "Assign responsibilities "
-                            "to the "
-                            "full-time operator "
-                            "and three "
-                            "contractors, including "
-                            "backup coverage, "
-                            "engagement terms, "
-                            "hour limits, "
-                            "and spending "
-                            "authority. Identify "
-                            "which specialist "
-                            "activities require "
-                            "separate engagement "
-                            "and prevent "
-                            "informal role "
-                            "assignments from "
-                            "implying professional authority."
-                        ),
-                        (
-                            "The initial pod "
-                            "is 1 "
-                            "FT operator "
-                            "plus 3 "
-                            "contractors: sourcing "
-                            "researcher, transaction "
-                            "coordinator, and "
-                            "specialist transaction "
-                            "counsel. Engagements "
-                            "set actual "
-                            "hours and "
-                            "availability. The "
-                            "coordinator maintains "
-                            "checklists but "
-                            "does not "
-                            "provide legal "
-                            "opinions; external "
-                            "escrow remains "
-                            "an independent "
-                            "provider rather "
-                            "than an "
-                            "additional pod employee."
-                        ),
-                    ),
-                    field(
-                        "Weekly KPI definitions and source records",
-                        "textarea",
-                        (
-                            "Define each "
-                            "metric's numerator, "
-                            "denominator, reporting "
-                            "period, source "
-                            "record, and "
-                            "owner. Include "
-                            "qualified mandates, "
-                            "stage aging, "
-                            "diligence defects, "
-                            "retained commissions, "
-                            "collection timing, "
-                            "and runway, "
-                            "while distinguishing "
-                            "leading activity "
-                            "measures from "
-                            "completed-deal financial outcomes."
-                        ),
-                        (
-                            "Friday reporting shows "
-                            "two qualified "
-                            "mandates from "
-                            "eight completed "
-                            "seller meetings: "
-                            "25% conversion. "
-                            "Median diligence "
-                            "age is "
-                            "19 days "
-                            "across three "
-                            "active records. "
-                            "Collected retained "
-                            "commission is "
-                            "zero. Cash "
-                            "runway uses "
-                            "unrestricted cash "
-                            "divided by "
-                            "forward monthly "
-                            "burn, with "
-                            "committed deal "
-                            "spending shown separately."
-                        ),
-                    ),
-                    field(
-                        "Canonical scorecard and scaling trigger",
-                        "textarea",
-                        (
-                            "Record the "
-                            "canonical candidate "
-                            "score, component "
-                            "scores, rank, "
-                            "scenario economics, "
-                            "and staffing "
-                            "transition. Define "
-                            "an evidence-based "
-                            "scaling trigger "
-                            "that preserves "
-                            "cash and "
-                            "service quality "
-                            "without treating "
-                            "the model "
-                            "score as "
-                            "proof of "
-                            "actual transaction performance."
-                        ),
-                        (
-                            "Candidate 26 ranks "
-                            "#11 of "
-                            "29 at "
-                            "88/100: revenue potential 24, margin potential 23, team efficiency 19, startup accessibility 11, and automation potential 11. Owner "
-                            "net targets "
-                            "remain $25,000, "
-                            "$206,250, and "
-                            "$500,000. Move "
-                            "from 1 "
-                            "FT plus "
-                            "3 contractors "
-                            "to 2 "
-                            "FT plus "
-                            "4 only "
-                            "after funded "
-                            "capacity planning."
-                        ),
-                    ),
-                    field(
-                        "Relationship concentration and founder-dependence test",
-                        "textarea",
-                        (
-                            "Measure dependence "
-                            "on individual "
-                            "sellers, buyers, "
-                            "referral sources, "
-                            "and the "
-                            "founder's personal "
-                            "knowledge. Identify "
-                            "transferable records, "
-                            "required relationship "
-                            "permissions, and "
-                            "backup access "
-                            "needed for "
-                            "another authorized "
-                            "person to "
-                            "continue a "
-                            "transaction without "
-                            "making undocumented promises."
-                        ),
-                        (
-                            "Three of five "
-                            "modeled Base "
-                            "closings originate "
-                            "from one "
-                            "referral source, "
-                            "representing $330,000 "
-                            "of $550,000 "
-                            "retained revenue, "
-                            "or 60%. "
-                            "The operator "
-                            "documents introductions "
-                            "and develops "
-                            "two additional "
-                            "source channels. "
-                            "A backup "
-                            "coordinator must "
-                            "reconstruct each "
-                            "active deal's "
-                            "next action "
-                            "from approved "
-                            "records alone."
-                        ),
-                    ),
-                    field(
-                        "Exit-readiness evidence and assignability ledger",
-                        "textarea",
-                        (
-                            "Inventory contracts, "
-                            "fee rights, "
-                            "licenses, operating "
-                            "procedures, financial "
-                            "records, data "
-                            "permissions, and "
-                            "relationship restrictions "
-                            "relevant to "
-                            "a future "
-                            "business transfer. "
-                            "Distinguish transferable "
-                            "assets from "
-                            "personal licenses, "
-                            "nonassignable mandates, "
-                            "and relationships "
-                            "requiring explicit counterparty consent."
-                        ),
-                        (
-                            "The exit ledger "
-                            "contains executed "
-                            "mandates, trailing "
-                            "collections, dispute "
-                            "history, contractor "
-                            "agreements, and "
-                            "documented procedures. "
-                            "Two mandates "
-                            "require seller "
-                            "consent to "
-                            "assignment; those "
-                            "fees are "
-                            "not presented "
-                            "as freely "
-                            "transferable. Personal "
-                            "licenses and "
-                            "restricted buyer "
-                            "data receive "
-                            "separate continuity "
-                            "plans before "
-                            "any prospective "
-                            "sale process."
-                        ),
-                    ),
-                    field(
-                        "Day-30 owner decision and next-quarter commitments",
-                        "textarea",
-                        (
-                            "Write the "
-                            "continue, repair, "
-                            "or narrow "
-                            "decision with "
-                            "evidence, funded "
-                            "commitments, accountable "
-                            "owners, and "
-                            "review dates. "
-                            "State the "
-                            "remaining obstacles "
-                            "to first "
-                            "collection and "
-                            "the conditions "
-                            "that would "
-                            "justify reducing "
-                            "scope rather "
-                            "than spending "
-                            "through an unresolved "
-                            "execution defect."
-                        ),
-                        (
-                            "Decision: continue narrowly "
-                            "in packaging "
-                            "equipment. After "
-                            "$18,000 setup "
-                            "and $12,000 "
-                            "first-month overhead, "
-                            "$60,000 remains "
-                            "before additional "
-                            "deal spending. "
-                            "The next "
-                            "90-day fixed "
-                            "budget is "
-                            "$36,000. The "
-                            "operator reviews "
-                            "mandate evidence "
-                            "weekly and "
-                            "reassesses funding "
-                            "before runway "
-                            "falls below "
-                            "three months."
-                        ),
-                    ),
-                ],
-                "completion_gate": (
-                    "The day-30 record contains a signed operating decision, "
-                    "reconciled spending, named pod responsibilities, evidence-backed "
-                    "KPIs, and a funded next-quarter plan. A backup person "
-                    "demonstrates deal reconstruction, and transfer restrictions "
-                    "are recorded without assuming automatic assignment of mandates or licenses."
-                ),
-            },
-        ],
-    }
+    return {'workbook_id': 'wb-011-high-ticket-brokerage',
+ 'volume_id': 'vol-011-high-ticket-brokerage',
+ 'title': 'High-Ticket Brokerage — Practitioner Testimony Operator Workbook',
+ 'subtitle': 'Worksheets for vetting commission seats, choosing your intermediary lane, staying inside '
+             'broker-dealer and licensing rules, and protecting deals with non-circumvention paper and '
+             'disciplined yacht and aircraft entry plans',
+ 'worksheets': [{'worksheet_id': 'ws-01',
+                 'number': 1,
+                 'title': 'Commission Seat Vetting and Intermediary Lane Selection',
+                 'purpose': 'Pressure-test a high-ticket closing seat before you commit your calendar to '
+                            'it, build the call and funnel math that produces repeatable closings, and '
+                            'choose the intermediary lane whose deal size, buyer pool, and fee structure '
+                            'match the companies you can actually source.',
+                 'chapter_ref': 'Q1-Q2',
+                 'instructions': ['Work through the fields in order, because the seat economics and owner '
+                                  'interview decide whether the remaining call, funnel, and outreach math '
+                                  'is worth building at all.',
+                                  'Use real numbers from the offer you are evaluating, not hoped-for '
+                                  'numbers, and write each dollar figure after clawbacks and splits are '
+                                  'applied.',
+                                  'Interview the offer owner back before accepting the seat, and record '
+                                  'every answer you received along with any question they dodged.',
+                                  'Check your funnel and close-rate figures weekly, not monthly, and '
+                                  'diagnose any drop by identifying exactly which rate fell.',
+                                  'Finish by choosing one intermediary lane and confirming that your fee '
+                                  "schedule and valuation rules match that lane's buyer pool."],
+                 'fields': [{'name': 'offer_commission_math',
+                             'type': 'text',
+                             'prompt': 'Record the exact ticket price of the offer you plan to close, the '
+                                       'commission percentage you will earn as setter, closer, '
+                                       'self-setter, or affiliate, and the dollar amount that lands in '
+                                       'your pocket per closed deal after any clawback risk.',
+                             'example': 'A $10K coaching offer paying the standard split: 10% closer, 5% '
+                                        'setter, 15% self-set [Hudson Cosper — 4HgyBCSnkLE @ 00:07:25]. As '
+                                        'a self-setter I earn $1,500 per deal, but refunds trigger '
+                                        'clawbacks on commission already paid. Compare affiliates at 30 to '
+                                        '45 percent, where 45 percent of 20K is $9,000 [Asher Shaw — '
+                                        'aFs-x6HJabU @ 00:05:58].'},
+                            {'name': 'owner_interview_questions',
+                             'type': 'textarea',
+                             'prompt': 'List the questions you will ask the offer owner before accepting '
+                                       'the seat, covering rep headcount, what current reps actually earn, '
+                                       'how long the program has run, and which case studies and '
+                                       'testimonials you will demand to see in writing.',
+                             'example': 'I asked: How many reps are on the team? What do reps make? How '
+                                        'long has this program run? Send me case studies and testimonials '
+                                        '[Colby Lyman — IlInXj9aPFg @ 00:03:13]. I also asked for proof of '
+                                        'the call numbers, since under 20 calls a week is a flag [Frankie '
+                                        'Isaac — _ZU2OAxnSMI @ 00:08:56].'},
+                            {'name': 'red_flag_screen',
+                             'type': 'textarea',
+                             'prompt': 'Screen the seat against the disqualifiers: pay-to-apply terms, '
+                                       'murky commission language, tickets under 2K, guaranteed-income '
+                                       'pitches, and thin calendars. Write each flag you found, the '
+                                       'evidence behind it, and whether it kills the seat outright or '
+                                       'simply needs clarification.',
+                             'example': "Seat A asked for a $297 application fee and promised '10K "
+                                        "guaranteed', so it is dead on two counts [Hudson Cosper — "
+                                        '4HgyBCSnkLE @ 00:08:04]. Seat B sells a $1,500 ticket, under the '
+                                        '2K floor. Seat C pays 10% in writing but books only 12 calls a '
+                                        'week, under 20 [Frankie Isaac — _ZU2OAxnSMI @ 00:08:56].'},
+                            {'name': 'daily_call_and_close_targets',
+                             'type': 'text',
+                             'prompt': 'Set your daily call volume, typical call length, and minimum '
+                                       'acceptable close rate. Then state the target close rate you are '
+                                       'working toward and the specific number of calls per week you need '
+                                       'to hit your monthly commission goal.',
+                             'example': 'I will take 6 calls a day, each a 30-45 minute diagnostic call. '
+                                        'My floor is a 30-40% close rate, and my target is the 70-80% '
+                                        'Cosper sets for closers on 5-10 calls a day [Hudson Cosper — '
+                                        '4HgyBCSnkLE @ 00:15:12]. At 30 calls a week and 35%, that is '
+                                        'about 10 closes weekly.'},
+                            {'name': 'funnel_reverse_math',
+                             'type': 'textarea',
+                             'prompt': 'Reverse-engineer your weekly funnel from one buyer backward. Write '
+                                       'the visitor count, page-to-application rate, applications, '
+                                       'bookings, calls held, and close rate you are assuming, and flag '
+                                       'which stage you will check first when weekly results drop. Note '
+                                       'why that stage matters most.',
+                             'example': "Using ZK's math: about 170 visitors, 8-9 applications at 20-25%, "
+                                        '5 bookings, 3-4 calls held, and 1 buyer at roughly one in three '
+                                        '[Scale Like ZK — uBQvqV_-nz0 @ 00:01:09]. I check KPIs weekly and '
+                                        'look at show rate first, because a bad show rate alone can turn '
+                                        '$50K into $5K [Scale Like ZK — uBQvqV_-nz0 @ 00:13:44].'},
+                            {'name': 'cash_on_hand_qualifier',
+                             'type': 'text',
+                             'prompt': 'Write the exact cash-on-hand question you will place on the '
+                                       'application, the dollar threshold that triggers a cancelled call, '
+                                       'and the low-ticket downsell you will offer instead so that '
+                                       'unqualified prospects never burn a closer slot. Include where the '
+                                       'book-a-call invite sits.',
+                             'example': 'Application question: How much cash do you have on hand to invest '
+                                        "right now? A '$500' answer means I cancel or offer the low-ticket "
+                                        'downsell rather than burn a closer slot [Scale Like ZK — '
+                                        'uBQvqV_-nz0 @ 00:07:41]. The book-a-call invite sits on the '
+                                        'thank-you page, where the most excitement happens [Hernan Vazquez '
+                                        '— PeOr6rOEN2Q @ 00:04:04].'},
+                            {'name': 'discovery_and_objection_script',
+                             'type': 'textarea',
+                             'prompt': 'Draft your pain-first discovery opening and the what, why, and how '
+                                       'probes you will use when an objection appears. Explain how your '
+                                       'process is designed so that objections rarely surface, and what '
+                                       'you do when one still does.',
+                             'example': "I open on pain before any pitch. If the prospect says 'I need to "
+                                        "think about it,' I act really dumb: What specifically? Why now? "
+                                        'How would you decide? Every objection is a smokescreen [Daniel '
+                                        'Coutts — RHobLxb_gLQ @ 00:15:24]. The goal is no objections if '
+                                        'discovery is done correctly [Daniel Coutts — RHobLxb_gLQ @ '
+                                        '00:12:32].'},
+                            {'name': 'seat_outreach_plan',
+                             'type': 'text',
+                             'prompt': 'Plan how you will land the seat itself as a sales process. Record '
+                                       'your daily DM count, Loom length, target number of Looms before '
+                                       'you review results, and the interview conversion you expect based '
+                                       'on documented student outcomes.',
+                             'example': 'I send 100 DMs a day to offer owners and attach a 60-second Loom '
+                                        'to every warm reply. I will review results after 30 Looms, '
+                                        "because Isaac's student Lucas landed nine interviews from 30, and "
+                                        'another student, Adam, earned $9K in month one [Frankie Isaac — '
+                                        '_ZU2OAxnSMI @ 00:25:32]. My benchmark: roughly 3 interviews per '
+                                        '10 Looms.'},
+                            {'name': 'intermediary_lane_choice',
+                             'type': 'textarea',
+                             'prompt': 'Choose your lane on the intermediary ladder: Main Street business '
+                                       'broker, M&A advisor, or investment banker. Record the deal size '
+                                       'band, typical buyer pool, fee structure, and why the companies you '
+                                       'can source actually fit that lane rather than the next one up.',
+                             'example': 'Main Street broker: owner-operated companies under $1 million in '
+                                        'SDE, sold to individual buyers through web listings at a 10% to '
+                                        '15% success fee with nothing upfront. My clients run $400K SDE, '
+                                        'under the $3 million to $5 million EBITDA band where most PE '
+                                        'groups show interest [Exit On Your Terms — Dx_mEuS7ipk @ '
+                                        '00:03:26], so auctions alone fail.'},
+                            {'name': 'fee_and_valuation_discipline',
+                             'type': 'textarea',
+                             'prompt': 'Write your fee schedule and the valuation rules you refuse to '
+                                       'break. Include any double Lehman math, upfront fee terms and what '
+                                       'they are tied to, and the documents you must review before quoting '
+                                       'any price to a seller.',
+                             'example': 'On a $4M sale, double Lehman pays 10% of the first million, then '
+                                        '8%, 6%, and 4%: $280,000 [CompassPointCapital — bjJIoxsFNY8 @ '
+                                        '00:01:33]. Any upfront fee is tied to a deliverable such as an '
+                                        "accredited appraiser's valuation [CompassPointCapital — "
+                                        'bjJIoxsFNY8 @ 00:00:37]. I never quote a price before seeing the '
+                                        'returns [Ryan C. Winter, Business Broker — If4qHRijbWg @ '
+                                        '00:01:59].'}],
+                 'completion_gate': 'Do not accept the seat or sign a mandate until every field is '
+                                    'complete, the owner interview has produced written proof of rep '
+                                    'earnings and call volume, no disqualifying red flag remains open, '
+                                    'your weekly funnel math reaches at least one buyer, and your chosen '
+                                    'lane matches the buyer pool your sourced companies can reach.'},
+                {'worksheet_id': 'ws-02',
+                 'number': 2,
+                 'title': 'Broker-Dealer Exposure, Licensing, and Supervision Controls',
+                 'purpose': 'Determine whether a deal places you inside broker-dealer law, qualify it '
+                            'under the M&A broker exemption where possible, map every state with '
+                            'jurisdiction, and set the licensing, supervision, recordkeeping, and reserve '
+                            'controls that keep your fees collectible.',
+                 'chapter_ref': 'Q3-Q4',
+                 'instructions': ['Start with the deal structure, because whether securities change hands '
+                                  'decides which of the remaining fields carry real legal weight.',
+                                  'Treat every state where a buyer, seller, or business sits as a possible '
+                                  'regulator, and fill the jurisdiction map before signing any engagement '
+                                  'letter.',
+                                  'Write the reasonable belief on buyer control into the engagement letter '
+                                  'first, then repeat it in the closing documents.',
+                                  'Route every dollar through a third-party escrow and record the escrow '
+                                  'details here so no one on the team takes custody of funds.',
+                                  'Review the licensing, supervision, and recordkeeping fields whenever '
+                                  'ownership changes, a new office opens, or a listing lands in a new '
+                                  'state.'],
+                 'fields': [{'name': 'securities_exposure_check',
+                             'type': 'textarea',
+                             'prompt': 'Describe the deal structure and decide whether securities change '
+                                       'hands. Note whether it is an asset sale, equity sale, F-reorg, '
+                                       'equity exchange, or earnout, and record which elements would put '
+                                       'you inside broker-dealer law whether you register or not.',
+                             'example': 'Seller wants a stock sale with an F-reorg, which is almost '
+                                        'certainly a securities transaction. I am proposing a '
+                                        'non-assignable earnout, which is usually not a security '
+                                        '[International Business Brokers Association — 7mV4t9a4PvE @ '
+                                        '00:40:53]. Because equity may still change hands, I am treating '
+                                        'this mandate as inside broker-dealer law and qualifying it under '
+                                        'the M&A exemption.'},
+                            {'name': 'target_eligibility',
+                             'type': 'text',
+                             'prompt': 'Confirm the target qualifies for the M&A broker exemption. Record '
+                                       'whether it is privately held, not a public or shell company, has '
+                                       'made no public offering, and, if Florida applies, whether it sits '
+                                       'under the size cap. Cite the evidence you reviewed.',
+                             'example': 'Target is a privately held distributor with no Exchange Act '
+                                        'registration or reports, no public offering, and no shell history '
+                                        '[ALC Lawcast: Finance in Focus — bfazVN-7QhQ @ 00:03:17]. The '
+                                        'seller is in Florida; cap check: prior fiscal year EBITDA of '
+                                        '$3.1M, under $25M, and revenue under $250M [ALC Lawcast: Finance '
+                                        'in Focus — rl3PWicoIaE @ 00:02:43].'},
+                            {'name': 'buyer_control_belief',
+                             'type': 'textarea',
+                             'prompt': 'Document your reasonable belief that the buyer will take control '
+                                       'and actively operate the business. State the ownership percentage '
+                                       'acquired, the presumption threshold that applies federally or in '
+                                       'Florida, and where this belief is written into your paperwork.',
+                             'example': 'Buyer acquires 60% of the equity, above both the 25% federal '
+                                        'presumption and the 20% Florida presumption [ALC Lawcast: Finance '
+                                        'in Focus — o-XOblDUBuI @ 00:02:38]. The reasonable belief on '
+                                        'control and operation is written into the engagement letter and '
+                                        'repeated in the closing documents [International Business Brokers '
+                                        'Association — 7mV4t9a4PvE @ 00:21:04]. No buyer groups are '
+                                        'involved.'},
+                            {'name': 'funds_and_escrow',
+                             'type': 'text',
+                             'prompt': 'Explain how every dollar in this deal will move from buyer to '
+                                       'seller without you taking custody. Name the third-party escrow, '
+                                       'list what triggers release, and note any wire limits or '
+                                       'verification steps that could delay closing day.',
+                             'example': 'All deposits and the purchase price go through a third-party '
+                                        'escrow agent; I never touch funds in a securities deal '
+                                        '[International Business Brokers Association — 7mV4t9a4PvE @ '
+                                        '00:21:44]. Release triggers on signed closing documents. My fee '
+                                        'is protected only because I qualify; unregistered fees, even '
+                                        'recouped expenses, become uncollectible [International Business '
+                                        'Brokers Association — 7mV4t9a4PvE @ 00:11:48].'},
+                            {'name': 'state_jurisdiction_map',
+                             'type': 'textarea',
+                             'prompt': 'Map every state where the buyer, seller, or business is located. '
+                                       'For each state, record whether M&A broker relief exists, whether a '
+                                       'real estate license or permit is required, and how you will cover '
+                                       'any gap before signing the engagement letter.',
+                             'example': 'Seller and business are in Nevada; buyer is in Texas. Each state '
+                                        'may have jurisdiction [International Business Brokers Association '
+                                        '— 7mV4t9a4PvE @ 00:33:49]. Nevada requires a business broker '
+                                        'permit on top of the real estate license [Business Broker Crowd '
+                                        'Call — Wj1uuYyuyQk @ 00:02:38]. Texas is non-licensed. Coverage: '
+                                        '24 states have M&A relief; 26 plus DC do not.'},
+                            {'name': 'license_state_check',
+                             'type': 'text',
+                             'prompt': 'Check the business location against the license-state list. Record '
+                                       'whether the state requires a real estate license, a business '
+                                       'broker permit, or securities registration, and what penalty you '
+                                       'would face for selling there without the right credential.',
+                             'example': 'Business is in Florida, one of the 17 license states, where Law '
+                                        '475 requires a valid real estate license [We Sell Construction '
+                                        'Businesses — JkYDV-Gr_qE @ 00:00:06]. Without it, I face '
+                                        'disgorged fees, rescinded deals, and unpaid commissions; one '
+                                        'unlicensed broker literally did not get paid [Business Broker '
+                                        'Crowd Call — 22hjuZT2usA @ 00:03:33].'},
+                            {'name': 'non_license_state_boundaries',
+                             'type': 'textarea',
+                             'prompt': 'If the deal sits in a non-license state, write the exact '
+                                       'boundaries you will hold: where your work stops, who handles the '
+                                       'lease assignment and any real estate, and which home-state '
+                                       'standard you will act under for protection.',
+                             'example': 'Texas deal: I sell personal property freely but stop at the '
+                                        'non-binding LOI and stay out of the lease assignment [Business '
+                                        'Broker Crowd Call — Py7d57O-Rxs @ 00:02:21]. A licensed agent '
+                                        'handles the real estate. I leave purchase agreement blanks alone, '
+                                        'and I act under my home-state license rules [Business Broker '
+                                        'Crowd Call — _4qKlVp4-8s @ 00:02:06].'},
+                            {'name': 'partner_licensee_plan',
+                             'type': 'text',
+                             'prompt': 'When a listing lands in a licensed state where you hold nothing, '
+                                       'name the local licensee you will partner with, whose name and '
+                                       'license number go on the paperwork, how fees split, and what '
+                                       'insurance covers the business sale.',
+                             'example': 'Florida listing, no Florida license: I partner with a local '
+                                        'licensee whose name and license number go on all paperwork while '
+                                        'I work in the background [Business Broker Crowd Call — '
+                                        'Wj1uuYyuyQk @ 00:01:41]. Because eXp Realty E&O does not cover '
+                                        'business sales, the partner sits at eXp Commercial with the '
+                                        'business broker addendum.'},
+                            {'name': 'supervision_structure',
+                             'type': 'textarea',
+                             'prompt': 'If you run or join a registered firm, describe the supervision '
+                                       'structure. Record who approves new accounts, whether any office '
+                                       'must operate as an OSJ, its inspection cycle, and which ownership '
+                                       'changes would trigger a continuing membership application.',
+                             'example': 'New-account approval stays with the principal, so our branch '
+                                        'manager does not create an OSJ with mandatory annual inspections; '
+                                        'branches run on three-year cycles [The Finance Lab — dKOzaPUjfHM '
+                                        '@ 00:07:12]. A 30% stake sale crosses the Rule 1017 trigger of '
+                                        '25%, so we file at least 30 days before the change [The Finance '
+                                        'Lab — dKOzaPUjfHM @ 00:09:44].'},
+                            {'name': 'records_and_reserves',
+                             'type': 'textarea',
+                             'prompt': 'Set your recordkeeping and reserve controls. Record your retention '
+                                       'buckets, which records stay easily accessible, how fast you can '
+                                       "produce records on a regulator's written demand, and how often you "
+                                       'reconcile cash suspense and compute reserves for customer credits.',
+                             'example': 'Records sit in six-year and three-year buckets, with the latest '
+                                        'two years easily accessible, because once the SEC drops a written '
+                                        'demand we have exactly 14 days to produce [CertFuel — MhYKFYS6gTI '
+                                        '@ 00:04:25]. Cash suspense is reconciled daily and large credit '
+                                        'balances go up the line before they are resolved [FINOP '
+                                        'Controller — -3SAUcV8ljM @ 00:09:03].'}],
+                 'completion_gate': 'Do not sign the mandate or market the business until the target is '
+                                    'confirmed private and non-shell, the buyer control belief is written '
+                                    'into the engagement letter, every state with jurisdiction is mapped '
+                                    'and covered by relief, a license, or a licensed partner, and all deal '
+                                    'money is routed through a named third-party escrow.'},
+                {'worksheet_id': 'ws-03',
+                 'number': 3,
+                 'title': 'Non-Circumvention Protection and Yacht and Aircraft Entry Economics',
+                 'purpose': 'Choose and verify the right protective instrument before any disclosure, '
+                            'screen counterparties and clauses for fakes and buried terms, then build an '
+                            'entry plan, commission model, pricing discipline, and closing safeguards for '
+                            'a yacht or aircraft brokerage seat.',
+                 'chapter_ref': 'Q5-Q6',
+                 'instructions': ['Complete the instrument, counterparty, and authenticity fields before '
+                                  'sharing any protected name, price, or shipping detail with anyone.',
+                                  'Reject any document citing ICC 400, 500, or 600 regulations, or calling '
+                                  'itself an ICC IMFPA, before reading further.',
+                                  'Read every draft line by line for buried non-competes and '
+                                  'commission-liability language, and record what you struck.',
+                                  'Run the commission math on a realistic target sale using the tiered '
+                                  'schedule, the co-broker split, and your house split.',
+                                  'Confirm every seat and closing safeguard in writing before you accept a '
+                                  'brokerage seat or take on an acquisition mandate.'],
+                 'fields': [{'name': 'nda_vs_ncnda',
+                             'type': 'text',
+                             'prompt': 'Decide which instrument this disclosure needs: a plain NDA that '
+                                       'only stops talking, or a non-circumvention agreement that stops '
+                                       'the deal closing without you. Explain the specific risk that drove '
+                                       'your choice and what each paper leaves uncovered.',
+                             'example': 'I am introducing a grain supplier to an importer, where nothing '
+                                        'gets signed and the broker gets cut out [IXH TRADING Academy — '
+                                        '5VMFuBur4kI @ 00:07:09]. An NDA only stops talking; I need a '
+                                        'clause stopping the deal closing without me [Attorney Nancy '
+                                        'Greene — FOUV15TeRLY @ 00:01:00]. So I require a true NCNDA '
+                                        'covering affiliates, survival period, and remedy.'},
+                            {'name': 'counterparty_identification',
+                             'type': 'textarea',
+                             'prompt': 'Identify every counterparty before any disclosure. Record the '
+                                       'authorized signatories, their government photo ID or KYC status, '
+                                       'the client information sheet, registration and bank references, '
+                                       'and how many intermediaries stand between you and the principal on '
+                                       'both the buy and sell sides.',
+                             'example': 'Seller signatory verified by government photo ID and a completed '
+                                        'client information sheet; no protected names, prices, or shipping '
+                                        'data go out until execution [Trade Base Hub — yrJW_zsMUXM @ '
+                                        '00:00:33]. Registration and bank references checked first [IXH '
+                                        'TRADING Academy — 5VMFuBur4kI @ 00:08:10]. Buy side shows two '
+                                        'mandates before the principal, which is my limit.'},
+                            {'name': 'icc_authenticity',
+                             'type': 'text',
+                             'prompt': 'Verify the paperwork is genuine before signing. Record the '
+                                       'publication number cited, whether it quotes ICC 400, 500, or 600 '
+                                       'regulations, whether it calls itself an IMFPA, and whether any '
+                                       'advance fee is requested to issue documents or guarantees.',
+                             'example': "The counterparty sent an 'ICC IMFPA' citing ICC 500 regulations. "
+                                        'There is no such thing as an ICC IMFPA, so it went in the garbage '
+                                        'bin [Cangem Global Corporation — HldBP9R47Bg @ 00:01:10]. I '
+                                        'replaced it with ICC publication 769E, the 27-page model '
+                                        'occasional intermediary contract bought from the ICC website and '
+                                        'reusable for any number of deals.'},
+                            {'name': 'defined_opportunity_and_term',
+                             'type': 'textarea',
+                             'prompt': 'Define the specific opportunity the agreement protects and the '
+                                       'substantive non-public information being shared. Set the term in '
+                                       'years, explain why it is reasonable for this sector, and confirm '
+                                       'the document is executed before any disclosure happens.',
+                             'example': "Opportunity: one named supplier's grain contract with one "
+                                        'importer, plus supplier pricing and shipping schedules. Term is '
+                                        'two years, the safe default within 2 to 5 years [IXH TRADING '
+                                        'Academy — 5VMFuBur4kI @ 00:02:58]. Even 3 years will be a hard '
+                                        'bet, and beyond that is daydreaming [Cangem Global Corporation — '
+                                        'HldBP9R47Bg @ 00:09:43]. Signed before disclosure.'},
+                            {'name': 'clause_review',
+                             'type': 'textarea',
+                             'prompt': 'Read the draft line by line for buried terms. Record any '
+                                       'non-compete, non-solicitation, or commission-liability language, '
+                                       'how broadly the restricted work is defined, what you crossed out, '
+                                       'and which governing law and dispute forum you selected and why.',
+                             'example': 'As buyer, I crossed out language making me liable for the '
+                                        "broker's commission, since that sits between seller and broker "
+                                        '[David C Barnett Small Business and Deal Making SMB — wHxYmcrcq4M '
+                                        '@ 00:07:36]. I also struck a two-year non-compete defined as '
+                                        'broadly as video production [Rafael Ludwig — WjchmVIKv5M @ '
+                                        '00:02:08]. Governing law left blank; ICC arbitration chosen.'},
+                            {'name': 'execution_and_remedy',
+                             'type': 'text',
+                             'prompt': 'Record how the agreement will be executed and enforced. Note the '
+                                       'e-signature platform, whether signing unlocks a data room, the '
+                                       'liquidated damages clause, the arbitration seat, and whether your '
+                                       'client is likely to be plaintiff or defendant.',
+                             'example': 'Confidentiality agreement goes out by DocuSign and auto-grants '
+                                        'data-room access on signing, as roughly 99% of CRE agreements now '
+                                        'do [Adventures in CRE — EL2eIKZ_OV8 @ 00:01:01]. A liquidated '
+                                        'damages clause sets the remedy. My seller client would be the '
+                                        'plaintiff in any breach, so I chose arbitration, the '
+                                        'plaintiff-friendly forum [Adventures in CRE — EL2eIKZ_OV8 @ '
+                                        '00:03:33].'},
+                            {'name': 'yacht_aircraft_entry_plan',
+                             'type': 'textarea',
+                             'prompt': 'Lay out your entry plan into yacht or aircraft brokerage. Record '
+                                       'the hub you will live in, the first yachting or aviation job you '
+                                       'will take, whether your state licenses brokers, and the captains '
+                                       'or managers you will farm for leads.',
+                             'example': 'I am moving to a Florida yacht hub, because to succeed you need '
+                                        'to live where there are yachts and yacht owners [Yacht Broker '
+                                        'Masterclass — -7bW4uN98Hc @ 00:00:00]. Florida is one of two '
+                                        'states licensing yacht brokers, so I will get licensed. I will '
+                                        'take any yachting job first and farm captains and managers weekly '
+                                        'for leads.'},
+                            {'name': 'commission_schedule_math',
+                             'type': 'textarea',
+                             'prompt': 'Work the commission math for a realistic target sale. Apply the '
+                                       'tiered yacht schedule or aircraft percentage, the co-broker split '
+                                       'between buyer and seller sides, and your house split, then write '
+                                       'the net dollars that actually reach you.',
+                             'example': 'A $30M yacht carries $1.75M: 10% on the first $10M, 5% on the '
+                                        'next $10M, 2.5% on the last $10M [Yachts For Sale — FpmvbD9-7yc @ '
+                                        '00:05:18]. Representing the buyer, I take 60%, or $1.05M [Yacht '
+                                        'Broker Masterclass — _Shd1I2mefI @ 00:06:24]. On a 50/50 house '
+                                        'split I keep $525,000.'},
+                            {'name': 'pricing_and_listing_discipline',
+                             'type': 'text',
+                             'prompt': 'Write the asking price strategy you will present to the owner. '
+                                       'Record the number you will ask, where you expect it to land, the '
+                                       'fantasy number you refuse to promise, and how you will move on '
+                                       'off-market aircraft offers.',
+                             'example': 'I advised asking 30 to land near 27 rather than win the listing '
+                                        'on 35 and watch it sit two years [Yachts For Sale — FpmvbD9-7yc @ '
+                                        '00:25:05]. On off-market aircraft I move early and treat the '
+                                        'first offer as one of the best before it becomes a stinky fish '
+                                        '[Own The Jet — i36Xg_tsVAY @ 00:15:19].'},
+                            {'name': 'seat_and_closing_safeguards',
+                             'type': 'textarea',
+                             'prompt': 'Before accepting a brokerage seat or acquisition mandate, record '
+                                       'whether base pay is a clawback advance, the escrow arrangement for '
+                                       'closing, the team you will assemble up front, and any deposit or '
+                                       'retainer you will collect on the buy side.',
+                             'example': 'Confirmed in writing: my base pay is a clawback advance recovered '
+                                        'from my first sale [Yacht Broker Masterclass — _Shd1I2mefI @ '
+                                        '00:03:06]. Every closing runs through escrow [Alex Bengoechea — '
+                                        'p6XXGAWrnB8 @ 00:21:23]. Jet acquisitions: aviation tax adviser, '
+                                        'finance, escrow agent, escrow agreement, and broker contract up '
+                                        'front, plus a retainer [Own The Jet — i36Xg_tsVAY @ 00:18:24].'}],
+                 'completion_gate': 'Do not disclose protected information, accept a brokerage seat, or '
+                                    'open a listing until a verified non-circumvention instrument with '
+                                    'identified signatories is executed, every fake ICC reference is '
+                                    'rejected, buried clauses are struck, your net commission is '
+                                    'calculated after all splits, and base pay, escrow, and retainer terms '
+                                    'are confirmed in writing.'},
+                {'worksheet_id': 'ws-04',
+                 'number': 4,
+                 'title': 'Commission Lock and Brokerage Build Plan',
+                 'purpose': 'Secure every fee in writing before a single identifier leaves your hands, '
+                            'harden closing-day wires against loss, and design a brokerage pricing, '
+                            'recruiting, and overhead model that survives thin margins, agent attrition, '
+                            'and long sale cycles.',
+                 'chapter_ref': 'Q7-Q8',
+                 'instructions': ['Complete every field with figures from a live or recently closed deal, '
+                                  'not a hypothetical one.',
+                                  'Release no tail numbers, serial numbers, or maintenance reports until '
+                                  'the fee-lock fields are signed and filed.',
+                                  'Treat closing-day wires as the main point of loss and confirm every '
+                                  'bank contact by an independent call.',
+                                  'Price your brokerage on value and ancillary revenue, never on the '
+                                  'cheapest split alone.',
+                                  'Revisit the recruiting, overhead, and seller-deposit fields every '
+                                  'quarter as agent count and deal volume change.'],
+                 'fields': [{'name': 'written_fee_lock',
+                             'type': 'textarea',
+                             'prompt': 'Before any aircraft, yacht, or business package leaves your hands, '
+                                       'write the exact document that locks your fee. Name the instrument, '
+                                       'the principal it binds, the percentage or flat figure, and the '
+                                       'moment payment triggers at closing, so nobody can argue later.',
+                             'example': "One-page commission agreement naming the buyer, because 'the most "
+                                        'important thing is that you have something in writing that says '
+                                        "how you're going to get paid before you start sending specs' [The "
+                                        'Ultimate Jet Guide — 1ILeO7AapJM @ 00:05:44]. On a 2006 Hawker '
+                                        '850 XB sold for $5M, 1.5% equals $75,000 [Alex Bengoechea — '
+                                        'Uhqo4raDQ0k @ 00:00:38].'},
+                            {'name': 'scrubbed_spec_sheet',
+                             'type': 'textarea',
+                             'prompt': 'List every identifier you will strip from the first package until '
+                                       'a signed fee agreement exists. Cover tail numbers, serial numbers, '
+                                       'maintenance reports, and cockpit photos, and state who checks each '
+                                       'image before anything is sent to a co-broker.',
+                             'example': 'Scrubbed spec sheet only: no tail number, no serial number, no '
+                                        'maintenance reports [The Ultimate Jet Guide — 1ILeO7AapJM @ '
+                                        '00:05:44]. Second reviewer zooms into every cockpit photo, '
+                                        'because a visible tail number there is where packages leak most '
+                                        'often [The Ultimate Jet Guide — 1ILeO7AapJM @ 00:01:38]. Full '
+                                        'logs release only after the commission agreement is countersigned '
+                                        'and filed.'},
+                            {'name': 'co_broker_fee_figure',
+                             'type': 'text',
+                             'prompt': 'Write the exact dollar figure you will counter with when a '
+                                       "co-broker offers 'whatever you think.' Separate an "
+                                       'introduction-only fee from a closing-work fee, and note what '
+                                       'happens to your fee if a pre-buy squawk cuts the price by a '
+                                       'hundred grand.',
+                             'example': 'Intro only: $10,000. Intro plus closing work: $25,000 [The '
+                                        'Ultimate Jet Guide — 1ILeO7AapJM @ 00:08:01]. Fixed figure, not a '
+                                        "spread, because 'if it goes into pre-buy, then there's squawks "
+                                        'and they have to reduce the price by a hundred grand, and now you '
+                                        "get paid nothing' [The Ultimate Jet Guide — 1ILeO7AapJM @ "
+                                        '00:04:39].'},
+                            {'name': 'chain_length_check',
+                             'type': 'textarea',
+                             'prompt': 'Map every entity standing between you and the actual principal on '
+                                       'this deal. Count the intermediaries, name each one, and decide in '
+                                       'writing whether the chain passes your walk-away rule before you '
+                                       'invest another hour chasing the fee.',
+                             'example': 'Chain: me, a mandate holder, a second broker, then the '
+                                        "principal's office. That is two entities between me and the "
+                                        'principal, the upper limit. An NCNDA that arrived listing 14 '
+                                        'intermediaries was declined the same day, per the walk-away rule '
+                                        '[Sam Cutting - Red Flags Verification — QguZjBADFoA @ 00:00:42]. '
+                                        'Principal contact verified by direct call before signing.'},
+                            {'name': 'wire_verification_protocol',
+                             'type': 'textarea',
+                             'prompt': 'Describe the exact wire-verification sequence for closing day. '
+                                       'Specify the test-wire amount, how you will confirm it, where the '
+                                       'phone number comes from, and what you will do within the first 72 '
+                                       'hours if funds are misdirected, and who owns each step.',
+                             'example': 'Send a small test wire first, confirm receipt through a number '
+                                        'looked up independently or in person at the office, never one '
+                                        'taken from the email [Family Split Strategy — DZe5D7_TCDA @ '
+                                        '00:09:23]. If funds are misdirected, file with IC3 and call '
+                                        'contacts at both banks, since reversal usually happens within 72 '
+                                        'hours [Family Split Strategy — DZe5D7_TCDA @ 00:10:24].'},
+                            {'name': 'disbursement_form_check',
+                             'type': 'textarea',
+                             'prompt': 'Audit the disbursement form two days before closing. List every '
+                                       "agent-side field, the funding entity's wire amount, bank name, and "
+                                       'contact details, and record who confirmed each item and when the '
+                                       'funding entity was last contacted. Note any daily wire limit.',
+                             'example': "Title attorney coached to list the wire amount, their bank's "
+                                        'name, and their contact information so a failed transfer can be '
+                                        'traced [Equity Real Estate — mVFdzEqW2M4 @ 00:00:51]. Funding '
+                                        'entity called 48 hours ahead; every field checked, because a '
+                                        'clean form pays by direct deposit within 24 hours [Equity Real '
+                                        "Estate — mVFdzEqW2M4 @ 00:01:21]. Buyer's daily wire cap "
+                                        'confirmed.'},
+                            {'name': 'brokerage_pricing_model',
+                             'type': 'textarea',
+                             'prompt': 'Choose the split and fee structure your brokerage will charge '
+                                       'agents. State the split, any cap, transaction fee, and servicing '
+                                       'fee, then estimate your margin and explain how the model survives '
+                                       'without relying on a flat fee alone.',
+                             'example': 'Start at 70/30 with a $500 transaction fee and a 2.25% servicing '
+                                        'fee, the structure Garth Ward rebuilt toward after a 90/10 split '
+                                        'with a $15K cap, while still running near 10% margins at '
+                                        'multi-office scale [Mike Sherrard — OFzI2gK-nps @ 00:33:14]. No '
+                                        '$500 flat-fee-only model, which Joe Mendoza calls a path to going '
+                                        'broke without ancillary revenue.'},
+                            {'name': 'recruiting_target_profile',
+                             'type': 'textarea',
+                             'prompt': 'Define the agent you will recruit first. Give the production band, '
+                                       'the custom presentation you will build for each appointment, the '
+                                       'retention evidence that justifies skipping new-licensee seminars '
+                                       'in favor of experienced producers, and the day-one event that '
+                                       'seeds your roster.',
+                             'example': 'Target $2-10M producers, the pivot Jim Remley made after 87% '
+                                        'attrition from new-agent seminars [Smart Agents — YKfvldXPHWw @ '
+                                        '00:08:38]. Each appointment gets a custom deck, treated like a '
+                                        'million-dollar listing [Mike Sherrard — OFzI2gK-nps @ 00:14:03]. '
+                                        'Seed event: a coffee-shop gathering, the format where Garth Ward '
+                                        'signed 10+ agents on day one.'},
+                            {'name': 'overhead_and_management',
+                             'type': 'textarea',
+                             'prompt': 'Set your overhead triggers. State the agent count at which you '
+                                       'will sign a long office lease, when a manager joins, and how every '
+                                       'advertisement, including social media posts, will display your '
+                                       'broker ID and license number.',
+                             'example': "No long lease before 30 to 40 agents, following Ward's 80 sq ft "
+                                        'broom-closet first office [Mike Sherrard — OFzI2gK-nps @ '
+                                        '00:10:07]. Manager hired early, since re-routing agents later '
+                                        'hurt culture [Mike Sherrard — OFzI2gK-nps @ 00:29:15]. Broker ID '
+                                        'and license number on every ad, no blind ads [Dee Kumar Real '
+                                        'Estate — V5gUCAcegsY @ 00:04:15].'},
+                            {'name': 'seller_deposit_terms',
+                             'type': 'textarea',
+                             'prompt': 'Write the commitment terms you will require from a business seller '
+                                       'before working the deal. Include the deposit amount, how it '
+                                       'credits toward the success fee, any performance guarantee, and the '
+                                       'follow-up cadence you will run with each serious buyer.',
+                             'example': '$15K to $20K seller deposit credited toward the success fee '
+                                        '[Business Broker Growth — 7jkOz9WXEh8 @ 00:43:36]. Refunded if no '
+                                        'solid LOI from a qualified buyer with access to capital arrives '
+                                        'within 90 days [Business Broker Growth — 7jkOz9WXEh8 @ 00:09:54]. '
+                                        'Fifteen-touch follow-up cadence; five deals carried at once on a '
+                                        'seven-month average sale cycle.'}],
+                 'completion_gate': 'Signed commission agreement on file, scrubbed spec sheet approved, '
+                                    'intermediary chain at two entities or fewer, test-wire protocol '
+                                    'rehearsed, disbursement form complete two days before closing, and '
+                                    'brokerage split, lease trigger, recruiting profile, and seller '
+                                    'deposit terms written down.'},
+                {'worksheet_id': 'ws-05',
+                 'number': 5,
+                 'title': 'Off-Market Pipeline and Valuation Worksheet',
+                 'purpose': 'Build a disciplined off-market outreach engine that reaches owners who '
+                            'already lean toward selling, qualify them by phone before any meeting, then '
+                            'price each business on normalized earnings, a defensible multiple, '
+                            'lender-ready coverage, and a closable structure.',
+                 'chapter_ref': 'Q9-Q10',
+                 'instructions': ['Build the list and sending infrastructure before writing a single line '
+                                  'of outreach copy.',
+                                  'Never ask an owner outright whether they want to sell; lead with a '
+                                  'guide, prospectus, or valuation.',
+                                  'Book no meeting until a caller has confirmed trailing-twelve-month '
+                                  'revenue and EBITDA.',
+                                  'Start every valuation from the tax return, since lenders treat returns '
+                                  'as the source of truth.',
+                                  "Run coverage and structure math before listing, not after a buyer's "
+                                  'lender pushes back.'],
+                 'fields': [{'name': 'target_list_build',
+                             'type': 'textarea',
+                             'prompt': 'Define the owner list you will build for off-market outreach. Name '
+                                       'the data source, the headcount filter, the scraping method and '
+                                       'cost per search, and how you will re-import the company list '
+                                       'before any sequence starts sending.',
+                             'example': 'Apollo search filtered by employee headcount in one service '
+                                        'niche, scraped through Export List at about $50 per search URL, '
+                                        'then the company list is re-imported into Apollo [Nick Abraham — '
+                                        "Wdk1N79_WyM @ 00:04:22]. The benchmark is Equity Front Capital's "
+                                        'campaign, which produced 142 meeting-ready leads [Nick Abraham — '
+                                        'Wdk1N79_WyM @ 00:00:43].'},
+                            {'name': 'sending_infrastructure',
+                             'type': 'textarea',
+                             'prompt': 'Describe your sending infrastructure. List the secondary domains '
+                                       'and inboxes, the platform you send from, the spare capacity you '
+                                       'will hold, and the bounce-rate signal that forces you to rotate a '
+                                       'mailbox out of the active pool.',
+                             'example': "Secondary inboxes only, sent through Smartlead, because 'never "
+                                        'send from your primary domain, because it ruins your '
+                                        "deliverability' [Nick Abraham — Wdk1N79_WyM @ 00:05:04]. Hold "
+                                        'about 50 percent spare inbox capacity and rotate out any mailbox '
+                                        'throwing high bounce rates [Wolf of Main Street — FZ98S2zrji0 @ '
+                                        '00:12:27]. No .edu or institutional domains.'},
+                            {'name': 'cold_email_copy',
+                             'type': 'textarea',
+                             'prompt': 'Draft the first cold email exactly as it will be sent. Keep it '
+                                       'plain text, count the words, and state the single yes-or-no '
+                                       'question you end on, plus the guide, prospectus, or valuation you '
+                                       'are offering instead of asking to buy.',
+                             'example': 'Plain text, 48 words, no links, no images, no name or firm in the '
+                                        'copy, ending with one question: would a short guide on what '
+                                        'businesses like yours sell for be useful? [Wolf of Main Street — '
+                                        'FZ98S2zrji0 @ 00:04:05]. Valuation offer saved for the follow-up, '
+                                        "the opener Nick Abraham favors, never 'are you looking to sell' "
+                                        '[Paul Macaluso — Cn4V6pWhbMk @ 00:02:44].'},
+                            {'name': 'seven_touch_sequence',
+                             'type': 'textarea',
+                             'prompt': 'Lay out your full multi-channel touch sequence by day. Specify '
+                                       'each email, call, social, and handwritten-letter touch, how each '
+                                       'references the one before, and what personal detail, such as the '
+                                       "receptionist's name, you will reuse on later touches.",
+                             'example': 'Seven touches: day 1 email, day 3 call, day 5 social, day 8 '
+                                        'email, day 12 handwritten letter, day 15 call, day 20 email. '
+                                        'Every touch references the previous one, and later touches use '
+                                        "the receptionist's name [Wolf of Main Street — FZ98S2zrji0 @ "
+                                        "00:03:35]. Cold owners stay on a long-term nurture, so 'no' "
+                                        "becomes 'not yet' [Paul Macaluso — Cn4V6pWhbMk @ 00:00:35]."},
+                            {'name': 'phone_qualification_gate',
+                             'type': 'textarea',
+                             'prompt': 'Write the qualification script your caller runs before any '
+                                       'calendar invite goes out. List the trailing-twelve-month revenue '
+                                       'and EBITDA questions, the minimum size you accept, and the Do Not '
+                                       'Call check completed on every number before dialing or texting.',
+                             'example': 'Caller asks for trailing-12-month revenue and EBITDA before '
+                                        "booking, because 'a lot of the people replying are very small "
+                                        "businesses' [Nick Abraham — Wdk1N79_WyM @ 00:07:45]. Every number "
+                                        'is checked against the Do Not Call list first, with no spam texts '
+                                        '[Brandon Thomas — vOB7Te243ew @ 00:03:52]. Expect one live owner '
+                                        'per five dials, as LoCasa reached about 5 of 28.'},
+                            {'name': 'pipeline_stage_definitions',
+                             'type': 'textarea',
+                             'prompt': 'Define every stage in your CRM pipeline from first touch to signed '
+                                       'engagement. For each stage, state the entry criterion, the '
+                                       'required document, the follow-up flag in days, and the diligence '
+                                       'items that must exist before a deal advances.',
+                             'example': 'Stages in HubSpot: Contacted, Qualified by phone, Confidentiality '
+                                        'Signed, Financials Received, Diligence. A 5-day follow-up flag '
+                                        'sits on every open record [Smart Agents — YKfvldXPHWw @ '
+                                        '00:27:56]. No deal moves past Diligence without 3 years of tax '
+                                        'returns, a customer-concentration check, and a '
+                                        'quality-of-earnings review of about $15K [Frankie Finance — '
+                                        '1PRKZu79Zg4 @ 00:16:31].'},
+                            {'name': 'earnings_basis_and_sde',
+                             'type': 'textarea',
+                             'prompt': "Rebuild the target's normalized earnings from the tax return "
+                                       'outward. Choose SDE or adjusted EBITDA based on size, list net '
+                                       'profit, owner salary, and each add-back line, and total the figure '
+                                       'a buyer will actually pay a multiple on.',
+                             'example': "Under roughly $500K-$1M of earnings, so SDE applies. Peter Nola's "
+                                        'bakery math: $100K of profit plus a $50K owner salary plus a $10K '
+                                        'car equals $160K of SDE [Peter Nola — RoGz5NZF96I @ 00:01:16]. '
+                                        'PPP money and a lawsuit settlement removed as non-operating '
+                                        'income; recruiter fees added back as one-time [Nate Lind - '
+                                        'Business Broker and Beyond — yaZZzBKh86I @ 00:01:39].'},
+                            {'name': 'multiple_selection',
+                             'type': 'text',
+                             'prompt': 'Select the multiple you will defend and justify it. Name the size '
+                                       'band, the comparable range, and how owner dependence, customer '
+                                       'concentration, trend, recurring revenue, and clean books push the '
+                                       'number up or down from the midpoint.',
+                             'example': 'Owner-operated, $160K SDE, so the working range is 2-3.5x SDE '
+                                        '[Deal Street - Small to Lower Middle Market M&A — ggUaT-lHV0A @ '
+                                        '00:04:13]. Clean books and a rising trend support 3x; heavy owner '
+                                        'dependence keeps it below 3.5x. Never listed on revenue, because '
+                                        "'buyers buy cash flow, not revenue' [Deal Street - Small to Lower "
+                                        'Middle Market M&A — ggUaT-lHV0A @ 00:01:08].'},
+                            {'name': 'dscr_and_lender_fit',
+                             'type': 'textarea',
+                             'prompt': 'Run debt service coverage before listing. State the SBA floor, the '
+                                       'lender appetite you are testing against, the buyer injection, how '
+                                       "you treat the buyer's livable wage, and which lender matches your "
+                                       'add-back schedule on salary and depreciation.',
+                             'example': 'DSCR run at 1.5, above the 1.25 SBA floor, and again with a 20 '
+                                        'percent down-payment return [Brent Freeman  - The CBB Group — '
+                                        'pzqh4R8Hppk @ 00:12:28]. Tax returns treated as the source of '
+                                        'truth. Lender chosen because it adds back owner salary in full, '
+                                        'since lenders vary on salary and depreciation [Keira Hamilton — '
+                                        '1dJeO4qEAhU @ 00:02:40].'},
+                            {'name': 'deal_structure_stack',
+                             'type': 'textarea',
+                             'prompt': 'Design the deal structure that bridges headline price and cash at '
+                                       'closing. Specify the SBA debt, buyer injection, seller note '
+                                       'amortization and balloon, any earnout, and how a rollover or '
+                                       'equity exchange changes the securities analysis.',
+                             'example': '10% buyer injection, SBA 7(a) debt for the balance, plus a seller '
+                                        'note amortized over 10-plus years with a balloon at year 3 to 5 '
+                                        'that usually gets refinanced [Deal Street - Small to Lower Middle '
+                                        'Market M&A — a5Z--B3Uhrg @ 00:05:13]. Any earnout kept '
+                                        'non-assignable; equity exchanges treated as securities '
+                                        'transactions [International Business Brokers Association — '
+                                        '7mV4t9a4PvE @ 00:40:53].'}],
+                 'completion_gate': 'Owner list scraped and re-imported, secondary inboxes warmed with '
+                                    'spare capacity, sub-60-word email approved, seven-touch sequence '
+                                    'scheduled, phone qualification script in use, pipeline stages '
+                                    'defined, normalized earnings tied to returns, multiple justified, '
+                                    'DSCR passing at 1.5, and deal structure drafted.'},
+                {'worksheet_id': 'ws-06',
+                 'number': 6,
+                 'title': 'Specialist Markets and Closing Certainty Worksheet',
+                 'purpose': 'Price digital businesses, tower leases, powered land, and transferred tax '
+                            'credits on the paper rather than the pitch, then carry any deal from honest '
+                            'presentation through binding exclusivity, protected post-closing claims, and '
+                            'a controlled timeline to funded close.',
+                 'chapter_ref': 'Q11-Q12',
+                 'instructions': ['Benchmark every specialist offer against a published fee ladder or '
+                                  'multiple before discussing price.',
+                                  'Demand actual figures over annualized ones and signed agreements over '
+                                  'promised ones.',
+                                  'Disclose known problems before listing, because a problem found at week '
+                                  'six lands as broken trust.',
+                                  'Judge competing offers on certainty of close after price, not on '
+                                  'headline number alone.',
+                                  "Keep part of the seller's money in your pocket and keep every milestone "
+                                  'moving inside the month.'],
+                 'fields': [{'name': 'digital_broker_selection',
+                             'type': 'textarea',
+                             'prompt': 'Compare the brokers or marketplaces you would use to sell or buy a '
+                                       "digital business. Record each one's commission ladder, minimum "
+                                       'fee, buyer fee, close rate, and how tightly it controls '
+                                       'confidential details in the teaser.',
+                             'example': 'Quiet Light: 10% of the first $1M plus 9% on the next $500,000, '
+                                        'so $145,000 on a $1.5M sale [Colin Matcha — l-9E6P1CSEc @ '
+                                        '00:08:09]. Empire Flippers: $7,000 minimum, then 15% up to about '
+                                        '$700,000 [Business Solution — zcYOmZ8cAGE @ 00:01:36]. FE '
+                                        'International: 94% of listings closed, buyer fee of $1,000 or '
+                                        'less.'},
+                            {'name': 'digital_underwriting_window',
+                             'type': 'textarea',
+                             'prompt': 'Set the minimum data window you will underwrite for an online '
+                                       'business. State how many months of actual revenue and profit you '
+                                       'require, which traffic pulls you request, and which code-level red '
+                                       'flags you search for first.',
+                             'example': 'Listing annualized on the last three months was rejected; six '
+                                        'months of actual figures plus targeted traffic pulls requested '
+                                        '[Colin Matcha — r4fmjknWB7o @ 00:06:30]. SaaS code reviewed for '
+                                        'lifetime plans, discounting, and founder dependence before '
+                                        "diligence opens, since 'lifetime plans are suicidal for a SaaS "
+                                        "valuation' and one surfaced within 24 hours [Quiet Light "
+                                        'Brokerage — oJsHo5vaDus @ 00:39:54].'},
+                            {'name': 'saas_off_market_sourcing',
+                             'type': 'textarea',
+                             'prompt': 'Describe how you will find SaaS or website deals before they reach '
+                                       'a public listing. Name the communities you will join, the exact '
+                                       'business type and budget you will announce, and the broker '
+                                       'newsletters you will brief.',
+                             'example': 'Post in SaaS Facebook groups and forums that I am buying, because '
+                                        'some owners who never considered selling say yes once asked '
+                                        '[Jaryd Krause - Buying Online Businesses — XbluQ7u-9nc @ '
+                                        "00:03:20]. Brief FE International's newsletter team with the "
+                                        'exact SaaS type and budget so only matching deals arrive [Jaryd '
+                                        'Krause - Buying Online Businesses — XbluQ7u-9nc @ 00:01:23].'},
+                            {'name': 'tower_lease_benchmark',
+                             'type': 'textarea',
+                             'prompt': 'Benchmark a cell tower lease buyout offer before anyone signs. '
+                                       'Record annual rent, whether a right of first refusal exists, the '
+                                       'resulting multiple, the easement versus lease structure, and how a '
+                                       'lender objection on title would be handled.',
+                             'example': 'Annual rent $24,000 with a right of first refusal, so a fair '
+                                        'offer lands near 16-17x, or $384,000 to $408,000 [Tower Genius — '
+                                        'V2LGinURueI @ 00:01:03]. Perpetual easement weighed for a bigger '
+                                        'upfront check [SiteBid Infrastructure — EsfznycDU6I @ 00:01:30]. '
+                                        'If the lender objects, structure it as a Master Lease so no '
+                                        'easement shows [Nexus Towers — YjzN5Uo5yf8 @ 00:01:35].'},
+                            {'name': 'powered_land_and_credits',
+                             'type': 'textarea',
+                             'prompt': 'Before paying a powered-land premium or buying a transferred tax '
+                                       'credit, list the documents you demand. Cover the power agreement, '
+                                       'dated load ramp, off ramp, and how you will verify a credit beyond '
+                                       'its IRS registration number.',
+                             'example': 'Powered land: signed power agreement, a dated load ramp, and an '
+                                        'off ramp if power or a moratorium blocks the build [Reed Smith '
+                                        'LLP — HXjpQWcZ6F8 @ 00:02:17]. Section 6418 credit: registration '
+                                        'number is not proof of validity, because the buyer bears the IRS '
+                                        'risk after transfer and must recover from the seller [Andrew '
+                                        'Dubinsky — h0qEAIoQ4Jo @ 00:08:50].'},
+                            {'name': 'books_to_returns_tie_out',
+                             'type': 'textarea',
+                             'prompt': "Tie the seller's last three years of tax returns to the P&L line "
+                                       'by line. List every mismatch, every add-back lacking a receipt, '
+                                       'and every disclosure item such as settled suits, state tax '
+                                       'matters, and change-of-control leases.',
+                             'example': 'Three years of returns tied to the P&L; two add-backs without '
+                                        'receipts stripped before going to market [CHARLES WEATHERLY — '
+                                        '55kqfOfgIZw @ 00:01:47]. A settled suit and a change-of-control '
+                                        'lease disclosed before listing, because a problem found at week '
+                                        'six lands as broken trust [Charles Weatherly — 55kqfOfgIZw @ '
+                                        '00:05:09]. Matching returns made a $450,000 educational product '
+                                        'SBA pre-qualified.'},
+                            {'name': 'cim_honesty_review',
+                             'type': 'textarea',
+                             'prompt': 'Outline your confidential information memorandum and flag every '
+                                       'weakness you will disclose openly. State how projections for new '
+                                       'product lines are handled, who drafts each section, and how '
+                                       'quickly you commit to answering buyer data requests once diligence '
+                                       'begins.',
+                             'example': 'CIM discloses customer concentration and owner dependence up '
+                                        "front, because 'hiding weaknesses only creates distrust' [iGOTHAM "
+                                        '— r1DSXPxZzu8 @ 00:00:48]. New product line priced through '
+                                        'structure, not hockey-stick projections [Amped Success - Matt '
+                                        'Uhler — uG64e1KV1S0 @ 00:37:45]. Data requests answered inside '
+                                        'the month, since stretching to three months turns buyers off '
+                                        '[Amped Success - Matt Uhler — uG64e1KV1S0 @ 00:09:26].'},
+                            {'name': 'loi_terms_and_exclusivity',
+                             'type': 'text',
+                             'prompt': 'Draft the key LOI terms you will accept or offer. Separate binding '
+                                       'from non-binding provisions, state the exclusivity window, and '
+                                       'explain how you will judge certainty of close rather than headline '
+                                       'price when comparing competing offers.',
+                             'example': 'Binding exclusivity of 60 to 90 days; price and terms non-binding '
+                                        '[My SBA Loan Pro Podcast — VaF6Cv0koYQ @ 00:11:21]. After price, '
+                                        "the deciding criterion is certainty of close, 'because anyone can "
+                                        "write a good offer' [Carter Morse & Goodrich — a71tQJb9UFE @ "
+                                        "00:00:02]. A 100% seller-financed 'full price' LOI was rejected, "
+                                        'since the seller keeps the risk without the money.'},
+                            {'name': 'post_close_protection',
+                             'type': 'textarea',
+                             'prompt': 'Choose how post-closing claims will be covered for this '
+                                       'transaction. State whether you use escrow, a seller-note set-off, '
+                                       'indemnity caps, or representation and warranty insurance, the '
+                                       'percentage held, the hold period, and the deal size triggering '
+                                       'each tool.',
+                             'example': 'Main Street deal of $1M: $800K SBA debt, $100K buyer cash, $100K '
+                                        'subordinated seller note with set-off rights instead of escrow, '
+                                        'which is market on Main Street [SMB Law Group LLP — LASFByP_8g4 @ '
+                                        '00:07:37]. On a $10M deal, a 10 to 20 percent indemnity cap holds '
+                                        '$1M to $2M for 12 to 18 months [HALO Talks — 76I0zKp5FM0 @ '
+                                        '00:15:14].'},
+                            {'name': 'closing_timeline_control',
+                             'type': 'textarea',
+                             'prompt': 'Build the closing calendar from signed LOI to funded close. Assign '
+                                       'week-by-week milestones, the person owning each, the point where '
+                                       'deal fatigue usually sets in, and the escalation you trigger when '
+                                       'any milestone slips past its date.',
+                             'example': 'Target close inside 3 to 6 months, with fatigue expected at '
+                                        'months 4 to 6 [Amped Success - Matt Uhler — uG64e1KV1S0 @ '
+                                        '00:16:06]. Weekly status call with lender, attorney, and escrow '
+                                        'agent; any slip over five business days escalates to principals '
+                                        "the same day, because 'simply put, time kills all deals' [M&A "
+                                        'Synergy AI — h3OE0enrIxg @ 00:01:58].'}],
+                 'completion_gate': 'Broker fee ladders compared, six months of actual digital figures in '
+                                    'hand, tower offer benchmarked at 16 to 18 times rent, power and '
+                                    'credit documents verified, returns tied to the P&L with receipts, '
+                                    'honest CIM approved, LOI exclusivity set, set-off or indemnity terms '
+                                    'agreed, and closing calendar owned week by week.'}]}
