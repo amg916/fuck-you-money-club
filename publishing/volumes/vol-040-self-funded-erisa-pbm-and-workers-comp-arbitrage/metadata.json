@@ -9,49 +9,49 @@
       "ARBITRAGE"
     ],
     "deck": [
-      "UNDERWRITE CLAIMS. AUDIT THE CONTRACT.",
-      "VERIFY NET EMPLOYER SAVINGS."
+      "BROKERS, TPAS AND STOP-LOSS CARRIERS TEST LEVEL-FUNDED QUOTES, SURPLUS SPLITS, LASERS AND RENEWAL LOSS RATIOS AGAINST FULLY INSURED PREMIUMS",
+      "THEY BUILD PBM CONTRACT FORENSICS, CAA COMPLIANCE FILINGS, RBP AND DPC PLAN REDESIGNS, AND WORKERS' COMP E-MOD, AUDIT AND RECOVERY PLAYBOOKS"
     ],
-    "lead": "Level-Funded ERISA Transitions, Pass-Through PBM Contract Audits, Reference-Based Pricing & Workers' Compensation Experience-Mod Reviews",
-    "summary": "Coordinate licensed benefits advisers, actuaries, and claims specialists to evaluate employer plan funding, PBM rebate terms, and NCCI experience-mod inputs. Price stop-loss gaps, runout liabilities, participant protections, and disclosed compensation before counting verified savings.",
+    "lead": "Twelve chapters of practitioner testimony map how employers escape double-digit fully insured renewals through level-funded and self-funded plans, interrogate stop-loss contracts, captives and PBM spread pricing, test reference-based pricing, direct contracting and broker commissions, and control CAA compliance, ERISA fiduciary exposure and workers' comp experience mods.",
+    "summary": "All 12 chapters synthesize 192 verbatim YouTube practitioner testimonies, with every claim carrying timestamped inline attribution to its source video. Benefits brokers, TPAs, stop-loss carriers and healthcare finance educators supply the street numbers, operator gates and pro-tips, and the chapters flag where they disagree on size cutoffs, surplus splits and underwriting thresholds.",
     "chapters": [
-      "Self-funded health, PBM & workers' comp service models",
-      "Employer fiduciaries, licensed brokers & TPA partners",
-      "Net savings, disclosed commissions & audit-fee economics",
-      "Secure claims intake & benefits-analysis startup stack",
-      "Stop-loss exclusions, lasers & runout liability traps",
-      "Renewal triggers & employer audit mandates",
-      "Level-funded ERISA transitions & actuarial underwriting",
-      "Pass-through PBM rebates & pharmacy contract reconciliation",
-      "Reference-based pricing & participant balance-bill support",
-      "NCCI E-Mod inputs, loss runs & correction procedures",
-      "Privacy controls, fiduciary review & lean specialist pods",
-      "First 30-day employer-benefits audit sprint"
+      "Fully Insured vs. Self-Funded vs. Level-Funded: The Funding Architecture",
+      "The Level-Funding Playbook: Quoting, Renewals, and Plan Redesign",
+      "Stop-Loss Insurance: Specific, Aggregate, and the Contract Traps",
+      "Medical Stop-Loss Captives: Pooling Risk Outside the Traditional Market",
+      "Pharmacy Benefit Managers: Following the Money",
+      "PBM Contract Forensics: Spread, Rebates, MAC Pricing, and Audits",
+      "Reference-Based Pricing and Direct Contracting",
+      "Brokers, Commissions, and the Broker of Record Letter",
+      "CAA Compliance: Gag Clauses, Disclosures, and Plan Filings",
+      "ERISA Fiduciary Litigation and TPA Claims Administration",
+      "Workers' Comp Experience Mods and Class Codes",
+      "Workers' Comp Cost Control, Audits, Liens, and Recovery"
     ],
     "flow": [
       [
-        "ENGAGE",
-        "Confirm employer authority & adviser licensing"
+        "DIAGNOSE",
+        "Run the loss-ratio math on the current renewal: a 120-employee group at a 60% loss ratio left roughly $560,000 of about $1.4 million in premium with the carrier"
       ],
       [
-        "SECURE",
-        "Collect authorized claims, contracts & loss runs"
+        "COLLECT",
+        "Gather the census with SIC and zip, every IHQ at 5 to 10 minutes per employee, and the quarterly wage and tax report, with the owner setting a hard Friday deadline"
       ],
       [
         "UNDERWRITE",
-        "Model funding, stop-loss & participant exposure"
+        "Price admin, specific and aggregate stop-loss and the claims fund, using Milliman Curve pharmacy underwriting and specific stop-loss of $10,000 to $20,000 with 125% aggregate"
       ],
       [
-        "AUDIT",
-        "Validate PBM rebates & experience-mod inputs"
+        "GATE",
+        "Get surplus-split and renewal language in writing, model a year-two laser to $200,000, and walk away from above-average claims, high ER use or a sale within one to two years"
       ],
       [
-        "IMPLEMENT",
-        "Coordinate approved plan changes & corrections"
+        "BIND & ENROLL",
+        "Confirm the 12-month contract and 12/18 or 12/24 runout, start enrollment 30 days before the effective date, and brief providers on the new ID card logo"
       ],
       [
-        "VERIFY",
-        "Reconcile net savings, fees & ongoing obligations"
+        "RENEW & REDESIGN",
+        "Reopen admin and stop-loss fees every year, test regional networks or RBP at $9 versus $25 access fees and DPC diverting about $40 PMPM, and convert broker commission to a visible fee"
       ]
     ]
   },
@@ -59,10 +59,10 @@
   "book_series": "THE BIG MONEY PLAYBOOKS",
   "tagline": "Big Money. Small Teams. No Bullshit.",
   "title": "SELF-FUNDED HEALTH, PBM & WORKERS' COMP ARBITRAGE",
-  "subtitle": "The Complete Playbook for Self-Funded Health, PBM & Workers' Comp Arbitrage: $120,000–$950,000 USD in Annual Retained Revenue with a 1 FT + 3 C Core Pod (4 People), Scaling to 6 People",
+  "subtitle": "Surplus Splits, Laser Counters, Captive Pools, PBM Spread Audits, Medicare-Plus Pricing, Broker Pay Disclosure, Gag-Clause Attestations, and Workers' Comp Mod and Lien Recovery",
   "chapter_count": 12,
-  "total_word_count": 79747,
-  "expert_youtube_link_count": 180,
+  "total_word_count": 74862,
+  "expert_youtube_link_count": 214,
   "min_expert_youtube_links_required": 150,
   "target_expert_youtube_links": "150-200+",
   "min_expert_youtube_links_per_chapter": 12,
@@ -77,5 +77,5 @@
   "publication_status": "approved_master",
   "public_deploy_approved": false,
   "paid_sales_approved": false,
-  "updated_at": "2026-11-23T22:48:03Z"
+  "updated_at": "2026-11-24T23:55:16Z"
 }

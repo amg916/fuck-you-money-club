@@ -1,714 +1,821 @@
 from __future__ import annotations
 
-CHAPTER_11 = {
-    "id": "Q11",
-    "chapter_id": "Q11",
-    "chapter_number": 11,
-    "question_number": 11,
-    "slug": "pod-architecture-contractor-kpis-and-exit-valuation",
-    "question_prompt": "How do you structure a lean 1 FT + 2 C (3 people) -> 2 FT + 3 C (5 people) pod, enforce weekly scorecards, and build transferable books that command a premium exit multiple (or durable cash cow)?",
-    "kicker": "Q11 / THE BIG MONEY PLAYBOOKS",
-    "title": "Pod Architecture, Contractor KPIs & Exit Valuation",
-    "subtitle": "Five-Seat Execution, Net-3/Net-5 ACH Cohorts, Rebate Attribution, Repayment Reserves & Transferable IP Under 17 U.S.C. Section 204(a)",
-    "layout_template": "action_checklist",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #41, Rank #10 of 43, scores 93/100 by concentrating execution "
-        "into a small pod rather than confusing purchase volume with earnings. "
-        "This chapter organizes 11 mapped plays into accountable buying-group, "
-        "commercial rebate, and treasury workstreams. Start with 1 FT + 2 C; "
-        "expand to 2 FT + 3 C only when cleared contribution funds the added "
-        "capacity. Formula v2.0 annual owner profits remain $20,000 Conservative, "
-        "$143,500 Base, and $360,000 Scaled. Weekly scorecards connect each "
-        "purchase commitment to warehouse acceptance, cleared ACH, card repayment, "
-        "and realized rewards. Transferable contracts, signed IP assignments, "
-        "cohort accounting, and tested owner absence support either a credible "
-        "sale process or a durable cash cow without capitalizing borrowed principal."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$250,000",
-            "context": "Annual gross scorecard basis; $87,500 retained contribution at 35%.",
-            "note": "8% gross-basis net margin; $20,000 annual owner net profit; 1 FT + 2 C; 22.86% retained net margin.",
-        },
-        {
-            "label": "Base",
-            "value": "$1,025,000",
-            "context": "Annual gross scorecard basis; $358,750 retained contribution at 35%.",
-            "note": "14.0% gross-basis net margin; $143,500 annual owner net profit; 1 FT + 2 C; 40.0% retained net margin.",
-        },
-        {
-            "label": "Scaled",
-            "value": "$1,800,000",
-            "context": "Annual gross scorecard basis; $630,000 retained contribution at 35%.",
-            "note": "20% gross-basis net margin; $360,000 annual owner net profit; 2 FT + 3 C; 57.14% retained net margin.",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Assign eleven plays to three seats before adding two more",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Use an eleven-play execution map to give Candidate #41 a "
-                    "manageable operating surface: P01 counterparty qualification, P02 "
-                    "pre-commit capture, P03 landed-cost procurement, P04 insured "
-                    "warehouse fulfillment, P05 ACH collection, P06 commercial-card "
-                    "offer routing, P07 Rakuten and TopCashback attribution, P08 "
-                    "Plastiq and Melio invoice economics, P09 statement-liability "
-                    "scheduling, P10 bank-bonus qualification, and P11 T-bill sweep "
-                    "reconciliation. This chapter-level map separates three economic "
-                    "models instead of presenting eleven independent profit centers. "
-                    "Buying-group fulfillment owns P01 through P05; commercial "
-                    "rebates own P06 through P08; treasury owns P09 through P11, "
-                    "with P09 acting as the shared repayment control. In the "
-                    "three-person pod, the full-time owner handles P01, procurement "
-                    "authorization, P06, P08, P09, and P10. A fulfillment contractor "
-                    "executes P02 through P04 within written purchase limits. A "
-                    "reconciliation contractor owns P05, P07, and P11 evidence. "
-                    "Neither contractor may both amend beneficiary instructions "
-                    "and release a payment. Give each play one accountable seat, "
-                    "one evidence folder, and one measurable completion condition. "
-                    "A confirmed purchase order is not a warehouse acceptance; "
-                    "an ACH notice is not cleared cash; a portal tracking event "
-                    "is not an earned rebate. These distinctions prevent a "
-                    "three-person team from approving its own missing evidence "
-                    "while calling the resulting dashboard automation."
-                ),
-                (
-                    "Design contractor engagements around bounded deliverables, "
-                    "documented acceptance, and genuine working arrangements rather "
-                    "than simply labeling permanent supervised labor as contracting. "
-                    "Worker status depends on applicable federal and state tests; "
-                    "29 U.S.C. section 203 supplies relevant federal employment "
-                    "definitions. An illustrative fulfillment engagement pays $35 "
-                    "per hour for eight weekly hours, with a negotiated weekly "
-                    "cap and separately authorized surge work. A reconciliation "
-                    "engagement pays $45 per hour for six weekly hours. At "
-                    "fifty-two weeks, those assumptions cost $14,560 and $14,040, "
-                    "or $28,600 combined before incremental coverage. They are "
-                    "planning inputs, not an assertion that every scenario needs "
-                    "that exact schedule. Require shipment evidence within one "
-                    "business day of carrier handoff, daily exception updates "
-                    "on active commitments, and a reconciled weekly package "
-                    "before the owner's funding review. Pay for accepted work "
-                    "and documented correction effort under the agreement; do "
-                    "not reward gross spending, opened accounts, or borrowed "
-                    "balances. A quality bonus can depend on complete evidence "
-                    "and independently checked accuracy, but should never "
-                    "encourage hiding a late payout. Maintain negotiated "
-                    "rework terms, escalation rights, confidentiality, access "
-                    "limits, and a named substitute. The owner remains accountable "
-                    "for liquidity even when collection work is delegated."
-                ),
-                (
-                    "Move to five people by adding a full-time operations lead "
-                    "and a third contractor for claims, returns, and rebate "
-                    "recovery. The owner then retains counterparties, capital "
-                    "allocation, issuer relationships, and final payment release; "
-                    "the operations lead supervises commitment capacity and "
-                    "exception resolution. The existing fulfillment and "
-                    "reconciliation contractors retain their original evidence "
-                    "boundaries. The fifth seat absorbs disputed parcels and "
-                    "aged portal claims without contaminating current purchasing "
-                    "decisions. Expand only after eight consecutive weekly "
-                    "closes meet service targets and a trailing contribution "
-                    "schedule covers incremental compensation after repayment "
-                    "reserves. Size the schedule to measured workload, not the "
-                    "appeal of the Scaled headline. At $20,000 Conservative "
-                    "owner profit, a permanent second employee can consume the "
-                    "entire result; at $143,500 Base, replacement management "
-                    "still changes distributable cash materially. Before hiring, "
-                    "run a two-week owner-absence exercise with limited purchasing "
-                    "authority and a designated payment signer. Record every "
-                    "intervention, inaccessible account, and relationship that "
-                    "requires the owner's personal identity. Contracts cannot "
-                    "make issuer underwriting portable. Company-owned procedures, "
-                    "documented counterparty contacts, and tested substitutes "
-                    "can nevertheless reduce dependence on one person. This "
-                    "is the practical foundation of both a durable distribution "
-                    "stream and an acquisition diligence package."
-                ),
-            ],
-            "table": {
-                "caption": "Eleven-Play Seat Ownership and Accepted Evidence Matrix",
-                "headers": [
-                    "Seat and play ownership",
-                    "Required accepted deliverable",
-                    "Compensation or capacity discipline",
-                    "Separation and escalation control",
-                ],
-                "rows": [
-                    [
-                        "Owner directs P01 qualification and P03 purchase authorization.",
-                        "Written counterparty limits accompany every approved purchasing cohort.",
-                        "Owner distributions follow cleared cash and reserved repayment obligations.",
-                        "Beneficiary changes require independent verification before payment release.",
-                    ],
-                    [
-                        "Fulfillment contractor executes P02 commitments and P04 shipments.",
-                        "Commitment identifiers link serial numbers, labels, and warehouse acceptance.",
-                        "Illustrative eight weekly hours at $35 require accepted evidence.",
-                        "Contractor cannot raise purchasing limits or release bank payments.",
-                    ],
-                    [
-                        "Reconciliation contractor owns P05 collections and P07 portal attribution.",
-                        "Cleared deposits reconcile to accepted units and rebate records.",
-                        "Illustrative six weekly hours at $45 include exception reporting.",
-                        "Unmatched receipts remain exceptions rather than forced ledger matches.",
-                    ],
-                    [
-                        "Owner routes P06 offers and P08 invoice payment economics.",
-                        "Eligibility screenshots accompany net fee and reward calculations.",
-                        "Reward estimates never authorize spending without positive standalone economics.",
-                        "Commercial eligibility must precede use of any payment rail.",
-                    ],
-                    [
-                        "Owner controls P09 liabilities and P10 bank bonus qualification.",
-                        "Dated repayment reserves accompany every proposed deposit allocation.",
-                        "Bonus targets cannot consume cash assigned to card repayment.",
-                        "Issuer restrictions and account ownership remain independently documented.",
-                    ],
-                    [
-                        "Reconciliation contractor prepares P11 sweep and maturity evidence.",
-                        "Treasury register identifies principal, interest, maturity, and settlement timing.",
-                        "Sweep preparation stays within the existing negotiated service budget.",
-                        "Owner releases transfers after confirming available repayment liquidity.",
-                    ],
-                    [
-                        "Scaled operations lead and claims contractor support all eleven plays.",
-                        "Daily capacity board separates current commitments from historical disputes.",
-                        "Incremental seats require measured contribution coverage after repayment reserves.",
-                        "Lead assigns work while owner retains final funding authority.",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Build the pod around evidence handoffs",
-                "body": "Small teams outperform larger purchasing desks when exceptions cannot disappear between seats.",
-                "items": [
-                    "Give every BuyForMeRetail, Pointsmaker, or MaxOutDeals commitment one immutable cohort ID that survives order splits, parcel claims, and partial ACH payments.",
-                    "Use business-account access roles where supported; never solve a staffing problem by sharing the owner's personal issuer credentials.",
-                    "Have the reconciler sample fulfillment evidence before paying a quality bonus, and have the owner sample reconciler matches before closing the week.",
-                    "Maintain a tested substitute for each contractor and a company-controlled export of procedures, without assuming merchant or issuer accounts can transfer.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Run a weekly scorecard that protects repayment before rewarding volume",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Close the operating scorecard every Friday using an agreed "
-                    "cutoff and a bank-derived cash balance. For P01 through "
-                    "P05, measure commitment acceptance, shipped units, warehouse "
-                    "acceptance age, collection age, contribution per completed "
-                    "cohort, and unrecovered shipping losses. Define the ACH "
-                    "clock from the counterparty's contractual payment trigger, "
-                    "not automatically from purchase date. Net-3 and Net-5 "
-                    "descriptions mean little without knowing whether acceptance, "
-                    "inspection, or another documented event starts the period. "
-                    "For P06 through P08, report eligible spend, pending "
-                    "tracking, confirmed rewards, cleared rewards, clawbacks, "
-                    "and payment fees separately. For P09 through P11, show "
-                    "each card due date, reserved repayment cash, earliest "
-                    "usable sweep proceeds, bonus qualification progress, and "
-                    "interest actually earned. Assign every exception an owner "
-                    "and next action date. Illustrative internal targets are "
-                    "at least 99% sampled evidence accuracy, at least 98% "
-                    "on-time shipping, and zero unreserved statement obligations "
-                    "inside the chosen repayment horizon. Use both counts "
-                    "and dollar weights so one expensive missing parcel "
-                    "cannot hide among many inexpensive successful orders. "
-                    "Review the oldest exception first, then the largest "
-                    "dollar exposure, then next week's planned commitments. "
-                    "The dashboard should make cancellation easier than "
-                    "rationalizing another purchase."
-                ),
-                (
-                    "Set a hard 25% maximum for each buying group's share "
-                    "of outstanding purchase cost, unpaid reimbursements, and "
-                    "trailing ninety-day realized buying-group contribution. "
-                    "Calculate these three denominators independently; passing "
-                    "one does not excuse failing another. Aggregate related "
-                    "entities and common payment dependencies rather than "
-                    "treating different brand names as diversification. Four "
-                    "equal independent counterparties are the arithmetic "
-                    "minimum for a 25% ceiling, while five or more provide "
-                    "useful operating room. A startup unable to qualify enough "
-                    "counterparties should defer that workstream, not silently "
-                    "relax the limit or manufacture tiny accounts. Apply "
-                    "the same ceiling to economically material rebate payers "
-                    "within the rebate book and commercial bank counterparties "
-                    "within the bank-deposit book; treat Treasury securities "
-                    "separately from deposit credit exposure and monitor their "
-                    "custody access. Card capacity needs its own issuer stress "
-                    "test because unused credit is revocable. Stress every "
-                    "buying-group cohort at ten and twenty business days "
-                    "beyond the contracted ACH trigger. Recalculate statement "
-                    "coverage after complete loss of the largest unpaid "
-                    "cohort and a seven-day sweep-access delay. Stop new "
-                    "commitments when the resulting unrestricted cash falls "
-                    "below scheduled repayments. Diversification does not "
-                    "replace a cash reserve, shipment insurance, or verified "
-                    "beneficiary instructions."
-                ),
-                (
-                    "Treat the advertised fifty-five-day float as a maximum "
-                    "planning hypothesis requiring the actual statement cycle, "
-                    "posting date, grace-period terms, and due date. A purchase "
-                    "near statement close can have substantially fewer days; "
-                    "interest-bearing balances can defeat the entire thesis. "
-                    "Illustratively, a $10,000 eligible B2B invoice earns "
-                    "$200 at a 2% reward rate but costs $290 at a "
-                    "2.9% processing fee, producing a $90 deficit before "
-                    "other costs. Even $10,000 earning an illustrative 4% "
-                    "annualized yield for thirty days generates only $32.88 "
-                    "on an actual/365 calculation. It cannot repair that "
-                    "deficit, and the payable principal remains $10,000. "
-                    "At an actually eligible 4% reward, the same invoice "
-                    "instead contributes $110 before yield, operating costs, "
-                    "and reversals. Verify current Plastiq or Melio charges, "
-                    "card-network permissions, transaction coding, and reward "
-                    "exclusions for the specific invoice; these figures are "
-                    "test inputs rather than quoted vendor pricing. Allow "
-                    "treasury allocation only from funds demonstrably surplus "
-                    "to stressed obligations. Never fund a qualifying bank "
-                    "balance with cash already promised to statement repayment. "
-                    "Return the scorecard to these unit calculations whenever "
-                    "a contractor proposes more throughput or a larger "
-                    "sweep balance."
-                ),
-            ],
-            "table": {
-                "caption": "Weekly KPI Definitions, Internal Targets, and Funding Responses",
-                "headers": [
-                    "Scorecard measure",
-                    "Exact measurement rule",
-                    "Internal operating target",
-                    "Required response when breached",
-                ],
-                "rows": [
-                    [
-                        "P02 through P04 evidence completeness and shipping punctuality.",
-                        "Count complete shipment packets against all shipments due that week.",
-                        "Maintain 99% sampled accuracy and 98% punctual shipment completion.",
-                        "Pause affected ordering and repair missing evidence before expansion.",
-                    ],
-                    [
-                        "P05 contractual collection age and cleared cash recovery.",
-                        "Measure business days from each documented contractual payment trigger.",
-                        "Collect within agreed Net-3 or Net-5 terms where contracted.",
-                        "Escalate overdue cohorts and remove expected receipts from liquidity.",
-                    ],
-                    [
-                        "P01 counterparty concentration across three independent exposure bases.",
-                        "Divide related-party exposure by each corresponding workstream total separately.",
-                        "Keep every counterparty at or below 25% throughout operations.",
-                        "Freeze additional exposure until genuine diversification restores every ratio.",
-                    ],
-                    [
-                        "P06 through P08 realized reward and fee spread.",
-                        "Subtract fees and reversals from attributable cleared reward amounts.",
-                        "Require positive transaction economics without speculative pending portal rewards.",
-                        "Disable losing routes and investigate changed eligibility or coding.",
-                    ],
-                    [
-                        "P09 stressed statement repayment coverage for every due date.",
-                        "Divide unrestricted available cash by obligations due within the horizon.",
-                        "Maintain at least 1.00 coverage after specified collection stresses.",
-                        "Stop commitments and retain cash instead of extending sweeps.",
-                    ],
-                    [
-                        "P10 and P11 treasury yield separated from principal movement.",
-                        "Recognize earned interest and qualified bonuses separately from transfers.",
-                        "Preserve repayment liquidity under a seven-day access interruption scenario.",
-                        "Shorten maturities and remove inaccessible funds from repayment coverage.",
-                    ],
-                    [
-                        "All-play exception age and independently checked work quality.",
-                        "Track oldest unresolved age alongside dollar-weighted error and loss.",
-                        "Assign every exception a responsible seat and next action date.",
-                        "Escalate repeated defects and revise the contractor acceptance specification.",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Verify four conditions before releasing the next cohort",
-                "body": "The owner records each verification against the proposed commitment, not against last month's dashboard.",
-                "items": [
-                    "Confirm written commitment, correct DE/NH/OR delivery instructions, current counterparty limits, and the actual state resale documentation required for the transaction.",
-                    "Verify card eligibility, payment-rail permissions, current fee schedules, and positive contribution without relying on an unconfirmed portal stack.",
-                    "Rebuild repayment coverage using delayed ACH, insured-loss deductibles, return shipping, and sweep settlement timing; exclude pending rewards from available cash.",
-                    "Verify beneficiary instructions independently, insured shipment limits and exclusions, and a separate reviewer for the evidence supporting payment release.",
-                ],
-            },
-        },
-        {
-            "heading": "3. Keep three economic books and one reconciled owner-profit bridge",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Maintain separate buying-group, rebate, and treasury subledgers "
-                    "under one general ledger. The buying-group cohort starts "
-                    "with a written commitment and records purchase cost, "
-                    "freight, insurance, acceptance, reimbursements, returns, and "
-                    "claim recoveries. Delivery to Delaware, New Hampshire, "
-                    "or Oregon does not automatically settle every sales-tax "
-                    "question; document seller sourcing, delivery, resale "
-                    "status where applicable, and any later taxable use. "
-                    "The rebate subledger records offer eligibility, attribution "
-                    "evidence, expected adjustments, confirmation, payment, and "
-                    "reversal. The treasury subledger records deposit principal, "
-                    "security cost, interest accrual, maturity proceeds, and "
-                    "bank bonuses after the applicable earning conditions. "
-                    "Card purchases create liabilities; paying those liabilities "
-                    "does not create a second expense. Bank transfers and "
-                    "returned Treasury principal create neither revenue nor "
-                    "margin. Prevent duplicate recognition when a purchase-linked "
-                    "rebate reduces merchandise cost and also appears in "
-                    "a portal export. Adopt an accountant-reviewed policy for "
-                    "purchase-price adjustments, promotional receipts, and "
-                    "contingent rewards. IRC section 6001 supports the recordkeeping "
-                    "requirement; sections 451 and 471 inform income timing "
-                    "and inventory treatment where applicable. Link any "
-                    "Form 1099-K under section 6050W to settlements, refunds, "
-                    "and adjustments rather than treating its gross total "
-                    "as a ready-made profit figure."
-                ),
-                (
-                    "Preserve Formula v2.0 exactly while explaining what its "
-                    "denominators mean. Conservative gross scorecard receipts "
-                    "of $250,000 produce $87,500 retained contribution at "
-                    "35%; $67,500 of subsequent costs leaves $20,000 owner "
-                    "profit. Base gross receipts of $1,025,000 produce "
-                    "$358,750 retained contribution; $215,250 of subsequent "
-                    "costs leaves $143,500. Scaled gross receipts of $1,800,000 "
-                    "produce $630,000 retained contribution; $270,000 of "
-                    "subsequent costs leaves $360,000. The corresponding gross "
-                    "margins are 8%, 14.0%, and 20%; retained margins "
-                    "are 22.86%, 40.0%, and 57.14%. These costs are "
-                    "the complete bridge after the scorecard's landed-merchandise "
-                    "deduction, not a claim that monthly fixed overhead "
-                    "equals those annual totals divided by twelve. Reconcile "
-                    "contractors, payroll, transaction fees, shipping treatment, "
-                    "returns, claims, software, and other operating costs "
-                    "without deducting anything twice. Treat 35% as the "
-                    "supplied planning assumption, not a promised spread on "
-                    "individual electronics purchases. It is also not an "
-                    "automatic ASC 606 principal-versus-agent conclusion. "
-                    "Actual gross or net presentation depends on contractual "
-                    "control and the applicable recognition policy. Retain "
-                    "a separate scorecard bridge so changing presentation "
-                    "cannot fabricate improved economics or turn client "
-                    "invoice principal into operator revenue."
-                ),
-                (
-                    "Close by purchase cohort and service month rather "
-                    "than by whichever bank feed imported first. A December "
-                    "shipment accepted in January needs the documented "
-                    "contractual recognition treatment, not an arbitrary "
-                    "year-end revenue push. An earned but unpaid wholesale "
-                    "receivable is distinct from cash; a pending portal "
-                    "tracking entry may not yet meet the adopted recognition "
-                    "criteria. Accrue known carrier losses, return costs, "
-                    "contractor services, and rebate reversals in the period "
-                    "supported by the evidence. Reconcile card statements "
-                    "to purchases and payments, then reconcile the statement "
-                    "liability to the due-date reserve. Reconcile each "
-                    "T-bill maturity into original principal and earned "
-                    "return, preserving acquisition discount and settlement "
-                    "records. Use QuickBooks Online or Xero for the "
-                    "general ledger if suitable, with versioned CSV exports "
-                    "and a cohort register that can be rebuilt without "
-                    "the owner's laptop. Restrict spreadsheet formula changes "
-                    "and maintain a change log. Monthly, have someone "
-                    "other than the preparer sample a completed cohort "
-                    "from commitment through cash and a failed cohort "
-                    "through final loss recognition. This negative sample "
-                    "is essential: a buyer needs evidence that bad "
-                    "transactions remain visible, not merely that successful "
-                    "ones produce attractive screenshots."
-                ),
-            ],
-            "table": {
-                "caption": "Accrual Evidence and Formula v2.0 Reconciliation Matrix",
-                "headers": [
-                    "Book or scenario",
-                    "Recognition and measurement discipline",
-                    "Required reconciliation evidence",
-                    "Operator interpretation and failure prevention",
-                ],
-                "rows": [
-                    [
-                        "Buying-group fulfillment book covering P01 through P05 cohorts.",
-                        "Apply documented control transfer and purchase-cost recognition policies consistently.",
-                        "Match commitments, supplier invoices, serial records, acceptance, and cleared reimbursements.",
-                        "Do not mistake shipment notices for completed settlement evidence.",
-                    ],
-                    [
-                        "Commercial rebate book covering P06 through P08 routing.",
-                        "Separate pending attribution, recognized entitlement, collected rewards, and reversals.",
-                        "Preserve offer terms, transaction coding, fee invoices, and payout exports.",
-                        "Prevent duplicate income when rewards already reduce merchandise cost.",
-                    ],
-                    [
-                        "Treasury book covering P09 through P11 liquidity controls.",
-                        "Separate payable balances, deposited principal, earned yield, and qualified bonuses.",
-                        "Match bank statements, maturity schedules, bonus conditions, and settlement records.",
-                        "Borrowed principal remains repayable even when invested temporarily elsewhere.",
-                    ],
-                    [
-                        "Conservative case preserves the supplied $250,000 gross scorecard basis.",
-                        "$87,500 retained contribution minus $67,500 subsequent costs equals $20,000.",
-                        "Retained contribution uses 35%; gross-basis net margin remains exactly 8%.",
-                        "Retained net margin rounds to 22.86%; staffing remains 1 FT + 2 C.",
-                    ],
-                    [
-                        "Base case preserves the supplied $1,025,000 gross scorecard basis.",
-                        "$358,750 retained contribution minus $215,250 subsequent costs equals $143,500.",
-                        "Retained contribution uses 35%; gross-basis net margin remains exactly 14.0%.",
-                        "Retained net margin equals 40.0%; staffing remains 1 FT + 2 C.",
-                    ],
-                    [
-                        "Scaled case preserves the supplied $1,800,000 gross scorecard basis.",
-                        "$630,000 retained contribution minus $270,000 subsequent costs equals $360,000.",
-                        "Retained contribution uses 35%; gross-basis net margin remains exactly 20%.",
-                        "Retained net margin rounds to 57.14%; staffing becomes 2 FT + 3 C.",
-                    ],
-                    [
-                        "Monthly close separates statutory books from the planning scorecard.",
-                        "Document presentation differences without changing the underlying realized economic result.",
-                        "Bridge inventory costs, operating expenses, accruals, and owner-profit calculations explicitly.",
-                        "Fixed monthly overhead cannot substitute for the complete expense bridge.",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Freeze the evidence window",
-                    "action": "Export bank, card, counterparty, portal, and treasury records using one cutoff.",
-                    "detail": "Preserve original files and record extraction times; assign late-arriving items to a visible subsequent-events list.",
-                },
-                {
-                    "step": 2,
-                    "title": "Reconcile three separate books",
-                    "action": "Match fulfillment, rebate, and treasury entries by cohort and obligation identifier.",
-                    "detail": "Keep partial ACH receipts, disputed parcels, unearned bonuses, and pending portal claims visible rather than forcing completion.",
-                },
-                {
-                    "step": 3,
-                    "title": "Rebuild profit and repayment bridges",
-                    "action": "Reconcile actual recognized results to the scorecard basis and the dated cash reserve.",
-                    "detail": "Show gross receipts, the 35% planning contribution bridge, subsequent costs, actual presentation differences, and every upcoming statement liability.",
-                },
-                {
-                    "step": 4,
-                    "title": "Review exceptions and authorize capacity",
-                    "action": "Have the owner review independent samples, concentration ratios, and stressed liquidity.",
-                    "detail": "Release only the next measured commitment allocation; retain a signed review record and a responsible seat for every unresolved exception.",
-                },
-            ],
-        },
-        {
-            "heading": "4. Sell transferable earnings rather than the owner's credit profile",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Prepare a transferable operating package before discussing "
-                    "multiples. Include twenty-four months of monthly statements "
-                    "when available, cohort contribution schedules, concentration "
-                    "history, issuer terms, claim experience, contractor "
-                    "agreements, software inventories, and documented access "
-                    "ownership. Where the operating history is shorter, "
-                    "provide the actual period and show the seasonality "
-                    "limitation explicitly. Obtain signed copyright assignments "
-                    "for contractor-created reconciler code, routing logic, "
-                    "dashboards, and written procedures. Under 17 U.S.C. "
-                    "section 204(a), a transfer of copyright ownership "
-                    "generally requires a signed writing by the owner "
-                    "or authorized agent. Do not assume payment alone "
-                    "transfers ownership or that every commissioned work "
-                    "qualifies as work made for hire. Separate preexisting "
-                    "contractor materials, licensed dependencies, company "
-                    "deliverables, and permitted reuse in the agreement. "
-                    "A buyer also needs reproducible deployment instructions "
-                    "and credential rotation procedures, not exported "
-                    "passwords. Inventory assignment restrictions for every "
-                    "buying-group relationship, portal arrangement, bank "
-                    "account, and commercial card. Identify which relationships "
-                    "require fresh underwriting or counterparty agreement "
-                    "after a transaction. Personal guarantees, individual "
-                    "promotional eligibility, and historical credit limits "
-                    "are not freely transferable company assets. Remove "
-                    "them from the continuity case until the buyer has "
-                    "documented replacement arrangements."
-                ),
-                (
-                    "Use valuation ranges as negotiated illustrations, not "
-                    "reported market comparables. A small owner-operated "
-                    "business might be screened at 2.0 to 3.0 times "
-                    "verified seller's discretionary earnings, while a "
-                    "genuinely manager-run operation might be tested at "
-                    "3.0 to 4.0 times normalized EBITDA. Neither range "
-                    "automatically fits this business, and nontransferable "
-                    "reward access or concentrated reimbursements can make "
-                    "an asset-only transaction more appropriate. Formula "
-                    "owner profit is not automatically either earnings "
-                    "measure. First reconcile owner compensation, recurring "
-                    "expenses, interest, taxes, depreciation, and supportable "
-                    "adjustments. If the Base $143,500 were independently "
-                    "verified as sustainable SDE, the illustrative 2.0 "
-                    "to 3.0 range would imply $287,000 to $430,500 "
-                    "before debt, cash, working-capital, and transaction "
-                    "adjustments. If a buyer instead needs $90,000 of "
-                    "fully loaded replacement management, and other "
-                    "normalization differences are zero, the illustrative "
-                    "manager-run earnings proxy becomes $53,500. At "
-                    "3.0 to 4.0 times, that supports only $160,500 "
-                    "to $214,000. Do not compare those headline "
-                    "multiples without their different denominators. A "
-                    "higher multiple on lower transferable earnings "
-                    "can produce a lower price. Underwrite the "
-                    "buyer-specific continuity case before optimizing "
-                    "the sales presentation."
-                ),
-                (
-                    "Structure diligence around what survives closing. A "
-                    "buyer should replay selected P01 through P11 "
-                    "cohorts, observe the weekly close, and run the "
-                    "operation without seller intervention before assigning "
-                    "value to automation. Define normalized working capital "
-                    "using the agreed inventory, receivable, payable, "
-                    "and reserve treatment. Specify whether outstanding "
-                    "card balances are debt-like items or operating "
-                    "payables within that agreement; never subtract "
-                    "the same balance twice. Deduct unrecovered parcel "
-                    "losses, rebate clawbacks, and unsupported receivables "
-                    "through the agreed mechanism rather than hiding "
-                    "them in an optimistic multiple. An earnout can "
-                    "reference collected contribution from specified "
-                    "transferred cohorts after agreed costs, with "
-                    "clear reporting and dispute rights; gross spending "
-                    "is a poor earnout measure. For a cash-cow "
-                    "alternative, retain quarterly owner distributions "
-                    "only after stressed repayment reserves, tax "
-                    "funding, claims reserves, and replacement labor "
-                    "are covered. Revalidate the 25% concentration "
-                    "ceilings and contractor substitution each quarter. "
-                    "The same discipline that improves transferability "
-                    "also reduces owner workload and prevents hidden "
-                    "capital calls. A premium outcome follows durable "
-                    "cleared earnings, resilient counterparties, and "
-                    "independent execution. It does not follow a "
-                    "large credit line, an attractive spreadsheet, "
-                    "or a temporary bank promotion."
-                ),
-            ],
-            "table": {
-                "caption": "Transferability Tests and Illustrative Buyer Valuation Adjustments",
-                "headers": [
-                    "Diligence asset or earnings basis",
-                    "Evidence a buyer should require",
-                    "Valuation treatment or illustrative calculation",
-                    "Specific reason to reduce confidence",
-                ],
-                "rows": [
-                    [
-                        "Company-owned reconciler code, routing logic, and operating documentation.",
-                        "Signed assignments identify deliverables, authors, licenses, and retained materials.",
-                        "Value reproducible execution rather than unsupported claims of proprietary automation.",
-                        "Missing assignments or personal repositories weaken continuity and ownership evidence.",
-                    ],
-                    [
-                        "Buying-group contracts and documented counterparty relationship continuity.",
-                        "Provide assignment terms, replacement contacts, acceptance history, and settlement records.",
-                        "Support maintainable earnings only where relationships can reasonably continue.",
-                        "Personal commitments or concentrated unpaid reimbursements reduce transferable earnings quality.",
-                    ],
-                    [
-                        "Commercial card, portal, and payment-rail eligibility after closing.",
-                        "Obtain buyer-specific underwriting plans and documented assignment or replacement requirements.",
-                        "Exclude benefits that depend exclusively on the seller's personal eligibility.",
-                        "Historical credit limits alone provide insufficient evidence of future capacity.",
-                    ],
-                    [
-                        "Base owner-operated SDE illustration after independent earnings normalization.",
-                        "Verify $143,500 sustainable SDE with every adjustment supported by records.",
-                        "Illustrative 2.0 to 3.0 times implies $287,000 to $430,500.",
-                        "Required replacement labor or expiring rewards can lower this denominator.",
-                    ],
-                    [
-                        "Base manager-run earnings illustration using explicit replacement labor assumptions.",
-                        "Subtract $90,000 fully loaded management from the illustrative $143,500 base.",
-                        "$53,500 at 3.0 to 4.0 times implies $160,500 to $214,000.",
-                        "Additional normalization differences would change these illustrative values further.",
-                    ],
-                    [
-                        "Closing working capital, statement liabilities, and disputed settlement balances.",
-                        "Agree classifications, normalized targets, reserve methods, and settlement adjustment procedures.",
-                        "Convert enterprise pricing into equity proceeds without double-counting card liabilities.",
-                        "Unsupported receivables and contingent claims can materially reduce closing proceeds.",
-                    ],
-                    [
-                        "Durable cash-cow operation supported by tested owner absence.",
-                        "Demonstrate independent weekly closes, substitute coverage, and reserved repayment liquidity.",
-                        "Distribute surplus only after obligations, reserves, and replacement labor funding.",
-                        "Recurring owner rescue work indicates earnings still depend on personal labor.",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": "A buyer pays for earnings that survive your departure, not for credit that disappears with your signature.",
-    "diagram_id": "diag-06",
-    "action_checklist": [
-        "Assign P01 through P11 to the three-person pod, document evidence handoffs, and reserve payment release for an independently reviewed owner decision.",
-        "Execute bounded contractor agreements with compensation caps, measurable QA acceptance, substitute coverage, confidentiality, and signed assignments for company deliverables.",
-        "Publish the weekly scorecard with separate fulfillment, rebate, and treasury results; enforce 25% counterparty ceilings and dated statement-liability coverage.",
-        "Stress Net-3/Net-5 receipts at ten and twenty business days late, remove the largest unpaid cohort, and delay sweep access seven days before approving new commitments.",
-        "Close monthly cohort books and reconcile the $20,000, $143,500, and $360,000 scenario profits without treating borrowed principal or duplicate reward entries as income.",
-        "Run an owner-absence test, inventory transfer restrictions, and calculate buyer-specific normalized earnings before selecting a sale process or quarterly cash distributions.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "17 U.S.C. section 204(a) — Execution of transfers of copyright ownership",
-            "url": "https://www.law.cornell.edu/uscode/text/17/204",
-            "relevance": "Obtain a signed writing transferring ownership of contractor-created software and documentation instead of assuming payment transfers copyright.",
-        },
-        {
-            "title": "17 U.S.C. section 101 — Definitions, including work made for hire",
-            "url": "https://www.law.cornell.edu/uscode/text/17/101",
-            "relevance": "Evaluate the statutory work-made-for-hire definition separately from a contractual assignment; commissioned contractor work does not automatically qualify.",
-        },
-        {
-            "title": "26 U.S.C. section 6001 — Notice or regulations requiring records, statements, and special returns",
-            "url": "https://www.law.cornell.edu/uscode/text/26/6001",
-            "relevance": "Preserve transaction-level records supporting merchandise costs, reward treatment, settlement adjustments, interest, bonuses, and reported income.",
-        },
-        {
-            "title": "26 U.S.C. section 451 — General rule for taxable year of inclusion",
-            "url": "https://www.law.cornell.edu/uscode/text/26/451",
-            "relevance": "Apply the relevant income-timing rules when reconciling earned reimbursements, conditional rewards, and year-end accruals.",
-        },
-        {
-            "title": "26 U.S.C. section 471 — General rule for inventories",
-            "url": "https://www.law.cornell.edu/uscode/text/26/471",
-            "relevance": "Document the applicable inventory method and any available statutory exception rather than automatically expensing all procurement when the card is charged.",
-        },
-        {
-            "title": "26 U.S.C. section 6050W — Returns relating to payment card and third party network transactions",
-            "url": "https://www.law.cornell.edu/uscode/text/26/6050W",
-            "relevance": "Reconcile applicable payment reporting to gross settlements, returns, adjustments, and ledger classifications without equating reported payments to profit.",
-        },
-        {
-            "title": "29 U.S.C. section 203 — Fair Labor Standards Act definitions",
-            "url": "https://www.law.cornell.edu/uscode/text/29/203",
-            "relevance": "Evaluate actual worker relationships under applicable employment rules; a contractor label and output-based agreement do not alone determine classification.",
-        },
-    ],
-}
+CHAPTER_11 = {'id': 'Q11',
+ 'chapter_id': 'Q11',
+ 'chapter_number': 11,
+ 'question_number': 11,
+ 'slug': 'capital-one-shopping-transfer-bonuses-point-currencies',
+ 'question_prompt': 'How do operators exploit Capital One Shopping bonuses and capture transfer bonuses '
+                    'and issuer offers across point currencies?',
+ 'kicker': 'Q11 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Capital One Shopping, Transfer Bonuses & Point Currencies',
+ 'subtitle': 'Capital One Shopping $80 bonus and hotel-stay strategies, CardPointers offer tracking, '
+             'Chase/Amex transfer and welcome bonuses, issuer rule changes, and Ultimate Rewards vs. '
+             'Membership Rewards partners',
+ 'layout_template': 'chapter_opener',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Capital One Shopping practitioners converge on one point: the default 0.5 to 2 '
+                      'percent portal rate is noise, and the money sits in targeted offers and the $80 '
+                      'referral bonus. Michael Martinez banked over $500 in three months by browsing a '
+                      'merchant, logging out, and returning a day later to offers like $45 back on $75 and '
+                      '$160 back on $200; Nate Bind collected $80 on a $1 Finish Line donation after a '
+                      '90-day wait. Payouts land only as gift cards, take one to three months, and '
+                      'tracking breaks if orders are edited or competing extensions run. On the points '
+                      'side, Mark Reese and AskSebby treat transfer partners as the high-value exit but '
+                      'only above a cents-per-point hurdle, while Ben Hedges shows promotional transfer '
+                      'bonuses, such as 80 percent to IHG, can flip weak partners into worthwhile ones.',
+ 'key_metrics': [{'label': 'Targeted GNC Offer Return',
+                  'metric': 'Targeted GNC Offer Return',
+                  'value': '$45 back on $75 spend (roughly 37 percent)',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Offer surfaced two to three days after browsing GNC, Vitamin Shop and Lucky '
+                             'Vitamin protein listings inside the portal and logging out',
+                  'source': 'Michael Martinez ([CDTjD80PdZk @ 00:09:30])'},
+                 {'label': 'Referral Bonus On Minimum Purchase',
+                  'metric': 'Referral Bonus On Minimum Purchase',
+                  'value': '$80 bonus on a $1 purchase',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'A November $1 Finish Line JD Foundation donation made with the extension '
+                             'activated produced an $80 credit on February 27',
+                  'source': 'Nate Bind ([1FoepUfDsnE @ 00:01:19])'},
+                 {'label': 'Transfer Partner Hurdle Rate',
+                  'metric': 'Transfer Partner Hurdle Rate',
+                  'value': '2 cents per point',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'A Christmas Eve Grand Hyatt Vail night at 35,000 points against a $773 '
+                             'all-in cash price worked out to 2.2 cents, clearing the hurdle',
+                  'source': 'AskSebby ([Uvyem-_QFhI @ 00:09:00])'},
+                 {'label': 'IHG Transfer Bonus Value Lift',
+                  'metric': 'IHG Transfer Bonus Value Lift',
+                  'value': '0.6 cents to 1.08 cents per Chase point',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'An 80 percent Chase-to-IHG transfer bonus running until December 3 applied '
+                             'to an average IHG point valuation',
+                  'source': 'Ben Hedges ([3sY2v2Stv7c @ 00:01:36])'}],
+ 'sections': [{'section_number': 1,
+               'heading': 'Section 1: The Practitioner Consensus',
+               'paragraphs': ['Every Capital One Shopping operator starts from the same baseline: the tool '
+                              'is a free browser extension and app, and nobody needs a Capital One card or '
+                              'bank account to use it [OxMh5dpHvJk @ 00:00:30]. Twin Finances draws a hard '
+                              'line between the shopping portal, which pays cash-back-style rewards to '
+                              'anyone, and Capital One Offers, which lives on cards like the Venture X and '
+                              'pays in points. Michael Martinez repeats that split and warns that '
+                              'confusing the two can leave hundreds of dollars on the table. The second '
+                              'point of agreement is where the money actually sits. Martinez pegs the '
+                              'default portal rate at half a percent to 2 percent on most stores, pretty '
+                              'darn close to nothing, and says the only part of the program they care '
+                              'about is the targeted for you layer, where they have seen 40, 70, even 80 '
+                              'percent back on a single purchase [CDTjD80PdZk @ 00:02:03]. Eli describes '
+                              'the same two tiers, small percentages at thousands of stores and 50 percent '
+                              "or more on targeted offers [L5V4-qjpKSw @ 00:00:51]. UpgradedPoints' Chris "
+                              'now opens the portal every single day because the offers have been '
+                              'absolutely bananas, including spend $100 on tickets get $100 back and 70 '
+                              'percent back on Klook [kiOoNZghrGk @ 00:00:43].',
+                              'The payout constraint is universal and nobody softens it: rewards come out '
+                              'as gift cards, not cash. Thrive Media flags gift card payouts only, with no '
+                              'route to PayPal or a bank account [PtqbX-LQUjE @ 00:02:19], and Eli repeats '
+                              'that the money cannot be withdrawn to a bank. Twin Finances says cash back '
+                              'takes about a month to arrive and the gift card menu shifts over time, so '
+                              'the list should be checked before committing spend [OxMh5dpHvJk @ '
+                              '00:00:59]. Operators who thrive on the program are the ones who already '
+                              "shop where the cards land. Martinez treats Home Depot and Lowe's gift cards "
+                              'as cash because they are in those stores once or twice a week during a '
+                              'renovation, while Chris is stacking a balance toward a large Marriott gift '
+                              'card that effectively pays for another trip [kiOoNZghrGk @ 00:02:02]. The '
+                              'second shared rule is tracking hygiene. Twin Finances gets the cleanest '
+                              'results in Chrome with no other extensions such as ad blockers installed, '
+                              'and Martinez builds an entire protection checklist around the fact that an '
+                              'untracked offer is real money gone [CDTjD80PdZk @ 00:11:36]. Bytes Media '
+                              'adds that people miss rewards simply because they did not route the '
+                              'purchase correctly through the app.',
+                              'On the points side, the consensus is that transferable bank currencies are '
+                              'the flexible asset and partner transfers are the ceiling. Mark Reese frames '
+                              'transfer partners as a hedge against devaluations, because one earned '
+                              'currency can convert into ten or more airline and hotel programs, and lists '
+                              'Amex Membership Rewards, Chase Ultimate Rewards, Citi ThankYou, Capital One '
+                              'Venture or Spark miles and Bilt as the programs that carry them '
+                              "[ae1WayyrwnE @ 00:01:28]. AskSebby calls Chase's floor comparably high, 1 "
+                              'cent as cash back, while calling transfers the most complicated exit and '
+                              'the one maximizers should use, naming Air Canada, Singapore, Virgin '
+                              'Atlantic and only Hyatt among hotels as the good partners [Uvyem-_QFhI @ '
+                              '00:05:38]. Both insist the decision is math, not loyalty. Reese tells '
+                              'operators to never transfer speculatively because transfers are not '
+                              'reversible, and AskSebby sets a hard 2 cents per point hurdle before any '
+                              'transfer earns the label of great redemption. Ben Hedges agrees that '
+                              'transfers usually move at one-to-one and that airline value tends to beat '
+                              'most hotels, which is why promotional transfer bonuses matter [3sY2v2Stv7c '
+                              "@ 00:01:00]. Leo's Travel Hacks counts 14 Chase partners against 21 at "
+                              'Amex, and notes the partner you actually fly may matter more than anything '
+                              'else [4RuPkU_XvWA @ 00:03:17].'],
+               'table': {'caption': 'Where Capital One Shopping and points practitioners agree',
+                         'headers': ['Consensus Point', 'What Practitioners Actually Do', 'Expert Source'],
+                         'rows': [['Portal access requires no Capital One card or bank account',
+                                   'Anyone installs the free extension and app; portal cash back runs '
+                                   'separately from card-linked Capital One Offers',
+                                   'Twin Finances ([OxMh5dpHvJk @ 00:00:30])'],
+                                  ['Default portal rates are thin and barely move the needle',
+                                   'Base earn runs half a percent to 2 percent, so operators hunt the '
+                                   'targeted for you offers instead',
+                                   'Michael Martinez ([CDTjD80PdZk @ 00:03:14])'],
+                                  ['Targeted offers are where the outsized returns actually show up',
+                                   'Spend $100 on tickets or a Hertz rental for $100 back, plus 70 percent '
+                                   'back on Klook',
+                                   'UpgradedPoints ([kiOoNZghrGk @ 00:00:43])'],
+                                  ['Payouts come only as store gift cards, never PayPal or bank cash',
+                                   'Redeem into retailers already in rotation; Walmart and eBay sit among '
+                                   'the listed gift card options',
+                                   'Thrive Media ([PtqbX-LQUjE @ 00:02:19])'],
+                                  ['The extension must show the offer activated before checkout or nothing '
+                                   'earns',
+                                   'Click the extension before paying and confirm the offer is lit up, '
+                                   'otherwise the purchase earns nothing',
+                                   'Eli ([L5V4-qjpKSw @ 00:03:27])'],
+                                  ['Bank point transfers only flow one direction and cannot be reversed',
+                                   'Points move out to airlines and hotels, never back, so itinerary '
+                                   'research always comes before transferring',
+                                   'Mark Reese ([ae1WayyrwnE @ 00:08:29])'],
+                                  ['A partner transfer must clear a cents-per-point hurdle to be worth '
+                                   'doing',
+                                   'Only transfer above 2 cents per point; the Grand Hyatt Vail ski night '
+                                   'priced out at 2.2 cents',
+                                   'AskSebby ([Uvyem-_QFhI @ 00:09:00])']]}},
+              {'section_number': 2,
+               'heading': 'Section 2: Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['The core trigger technique is the same across four operators: signal buying '
+                              'intent, walk away, and let the algorithm come to you. Martinez searches GNC '
+                              'inside the portal, then repeats it at Vitamin Shop and Lucky Vitamin, '
+                              'clicks into preworkout and whey protein listings, scrolls, logs out and '
+                              'checks email plus the for you feed over the next one to two days '
+                              '[CDTjD80PdZk @ 00:08:24]. Two or three days after the GNC run, a $45 back '
+                              'on $75 offer appeared, roughly 37 percent; a prior run produced $50 back on '
+                              '$50, skipped because Amazon was cheaper. Nate Bind runs a faster version: '
+                              'visit the target store first, browse for about five minutes, come back to '
+                              'Capital One and refresh, and a crazy cash back offer for those items often '
+                              "appears [ILSF_d9HX5I @ 00:02:59]. Eli's cart trick is the third variant, "
+                              'loading items into the cart and abandoning checkout, after which a better '
+                              'offer for that exact store often lands in the inbox within hours or a few '
+                              'days [L5V4-qjpKSw @ 00:03:09]. Twin Finances got a 90 percent Kes offer a '
+                              'day after casually browsing, $130 of goods returning about $120, without '
+                              'knowing why they were targeted [OxMh5dpHvJk @ 00:02:46]. Martinez is '
+                              'explicit that all of this is anecdotal; it simply keeps working for them.',
+                              'The $80 welcome bonus is the cleanest entry trade, and the operators lay '
+                              "out the exact terms. Eli's sequence: sign up only through a member's "
+                              'referral link, install the extension within seven days on a browser or '
+                              'phone where it has never been installed, give it full permissions, spend at '
+                              'least $10 through the portal within 30 days, and never uninstall or switch '
+                              "off permissions while waiting [L5V4-qjpKSw @ 00:01:59]. Nate Bind's version "
+                              'keeps the extension installed for at least 90 days with a verified email '
+                              'and one activated purchase, and pushes the minimum to $1: search donate on '
+                              'Finish Line, add the JD Foundation donation, confirm the extension is '
+                              'activated, and check out [1FoepUfDsnE @ 00:02:22]. Their November $1 '
+                              'purchase turned into an $80 credit on February 27, and they say every '
+                              'cash-out has needed only a real, non-virtual phone number, never ID. Nate '
+                              'Bind calls the 90-day wait the only real pain. Nate Bind also pitches a '
+                              "multi-account angle, referring their own spare laptops, kids' computers and "
+                              'phones under new emails and phone numbers [ILSF_d9HX5I @ 00:02:05], while '
+                              'Eli warns that if either side of a referral breaks the rules, such as an '
+                              'old account or a reinstalled extension, neither person gets paid '
+                              '[L5V4-qjpKSw @ 00:02:52].',
+                              "On transfers, the mechanics are portal clicks plus arithmetic. Reese's "
+                              'five-step flow is: open a free account with the partner and grab the member '
+                              'ID, log into the bank, open the transfer option, which Chase calls transfer '
+                              'to travel partners, Amex transfer points, Citi points transfer and Capital '
+                              'One convert rewards, pick the program and enter the ID and amount, then '
+                              'confirm [ae1WayyrwnE @ 00:03:17]. Value per point is cash price minus '
+                              'out-of-pocket taxes, divided by points, times 100; a $575 United flight at '
+                              '40,000 miles beats the same flight at 46,000 Chase points through the '
+                              'portal, while a $1,297 flight pricing at 145,000 miles goes the other way, '
+                              '104,000 points via Chase [ae1WayyrwnE @ 00:13:04]. Ben Hedges runs the '
+                              "bonus math: an 80 percent Chase-to-IHG bonus lifts IHG's roughly 0.6 cent "
+                              'value to 1.08 cents per Chase point, a 30 percent Amex-to-Virgin bonus '
+                              'turns a 1.5 cent valuation into 1.95 cents per transferred point, and '
+                              'Capital One posted 20 percent to Air France KLM [3sY2v2Stv7c @ 00:01:36]. '
+                              "Leo's Travel Hacks flags the fee and timing details: Amex charges $0.0006 "
+                              'per point, capped at $99, on transfers to Delta and JetBlue, and Chase '
+                              'transfers usually land by the next business day and no later than seven '
+                              '[4RuPkU_XvWA @ 00:05:09].'],
+               'table': {'caption': 'Street-level mechanics, tools and measured payouts',
+                         'headers': ['Mechanic or Tool', 'Exact Numbers and Execution', 'Expert Source'],
+                         'rows': [['Targeted offer trigger through browse-and-leave intent signaling',
+                                   'Search GNC, Vitamin Shop and Lucky Vitamin, click whey protein, log '
+                                   'out; $45 back on $75 appeared',
+                                   'Michael Martinez ([CDTjD80PdZk @ 00:09:30])'],
+                                  ['Referral bonus minimum purchase using a one-dollar charity donation',
+                                   'Finish Line JD Foundation $1 donation in November paid an $80 bonus on '
+                                   'February 27',
+                                   'Nate Bind ([1FoepUfDsnE @ 00:01:19])'],
+                                  ['Referral bonus terms on a fresh device and account',
+                                   'Install within seven days, spend $10 within 30 days, keep permissions '
+                                   'on, US only',
+                                   'Eli ([L5V4-qjpKSw @ 00:02:17])'],
+                                  ['Event ticket offer checked against a Rakuten fallback rate',
+                                   'First game tickets cost $266 and earned $100 back; second game only '
+                                   'got 6 percent on Rakuten',
+                                   'Michael Martinez ([CDTjD80PdZk @ 00:14:48])'],
+                                  ['Rental car offer booked direct while keeping loyalty earning intact',
+                                   'A $150 Hertz rental booked directly through the portal still earned '
+                                   'Hertz points plus $100 back',
+                                   'UpgradedPoints ([kiOoNZghrGk @ 00:00:59])'],
+                                  ['Transfer bonus math applied to a weak hotel currency',
+                                   'An 80 percent Chase-to-IHG bonus lifts roughly 0.6 cents per point to '
+                                   '1.08 cents',
+                                   'Ben Hedges ([3sY2v2Stv7c @ 00:01:36])'],
+                                  ['Card-linked offer management across a large card wallet',
+                                   'CardPointers extension auto-adds Amex, Chase, Bank of America and Citi '
+                                   'offers with no bank logins',
+                                   'Max Miles Points ([i4N6SEsh28c @ 00:04:02])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Operator Edges That Move The Payout',
+                           'body': 'Small habits separate the operators collecting $100-plus targeted '
+                                   'offers from the ones taking 1 percent and missing postings.',
+                           'items': ['Watch the inbox, not just the home screen: Martinez says emailed '
+                                     'targeted offers run even higher than the ones shown on the extension '
+                                     'home screen, and Eli says to switch the marketing emails on [Michael '
+                                     'Martinez — CDTjD80PdZk @ 00:03:42]',
+                                     'Run Capital One Shopping and Rakuten in two separate browsers so the '
+                                     "two extensions never compete and void each other's rewards [Michael "
+                                     'Martinez — CDTjD80PdZk @ 00:12:44]',
+                                     'Make a small test purchase at a store first to confirm tracking '
+                                     'works before attempting a large purchase there [Twin Finances — '
+                                     'OxMh5dpHvJk @ 00:03:36]',
+                                     'For transfer redemptions, AskSebby has used seats.aero alerts for '
+                                     'two years to catch ANA award space when it pops up or gets dumped '
+                                     'months at a time [AskSebby — Uvyem-_QFhI @ 00:07:45]']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Prime the targeted offer',
+                              'action': 'Browse the target merchant and similar merchants inside the '
+                                        'portal, click real products, then log out and wait.',
+                              'detail': 'Search the merchant plus two competitors, click into the items '
+                                        'you plan to buy, log out, then check email and the for you feed '
+                                        'for one to two days [Michael Martinez — CDTjD80PdZk @ 00:08:24]; '
+                                        "Nate Bind's faster variant is five minutes on the store site, "
+                                        'then a refresh in Capital One [Nate Bind — ILSF_d9HX5I @ '
+                                        '00:02:59].'},
+                             {'step': 2,
+                              'title': 'Lock evidence and isolate the browser',
+                              'action': 'Screenshot the offer with amount and expiration, then shop from '
+                                        'one browser on one device with competing extensions off.',
+                              'detail': 'Screenshot before activating, capturing the expiration date, the '
+                                        'current date and the amount; stay on one browser and one device '
+                                        'and disable Rakuten, Honey or any other shopping extension '
+                                        '[Michael Martinez — CDTjD80PdZk @ 00:11:49].'},
+                             {'step': 3,
+                              'title': 'Check out clean and never edit the order',
+                              'action': 'Confirm the extension reads activated, buy immediately without '
+                                        'new tabs, and leave the order untouched afterward.',
+                              'detail': 'If the extension shows red, spend nothing [Nate Bind — '
+                                        "1FoepUfDsnE @ 00:02:36]; Martinez's $200 back on $250 Lowe's "
+                                        'offer stalled after a rep switched the order from delivery to '
+                                        'in-store pickup [Michael Martinez — CDTjD80PdZk @ 00:17:44].'},
+                             {'step': 4,
+                              'title': 'Chase the posting and redeem',
+                              'action': 'Confirm the pending status, file a reward request if nothing '
+                                        'posts in 30 days, then redeem into a gift card you actually use.',
+                              'detail': 'Submit screenshots through the my rewards section if the offer '
+                                        'has not posted within 30 days [Michael Martinez — CDTjD80PdZk @ '
+                                        '00:13:11]; at redemption, grayed-out stores mean a minimum has '
+                                        'not been met yet [Twin Finances — OxMh5dpHvJk @ 00:03:25].'}]},
+              {'heading': 'Section 3: Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The first split is whether Capital One Shopping is a background utility or '
+                              'a hunting tool. Thrive Media pitches it as a set-it-and-forget-it extension '
+                              'that auto-tests coupon codes, flags cheaper retailers, and sends price-drop '
+                              "alerts, concluding that it won't make you rich but the rewards add up over "
+                              'time [PtqbX-LQUjE @ 00:01:46]. Bytes Media frames it the same way, calling '
+                              'it a nice passive way for frequent US online shoppers to save a bit on most '
+                              'purchases [L-fP6r8X7A0 @ 00:01:17]. Michael Martinez flatly rejects that '
+                              'model. He says the default portal rates run half a percent to 2% on most '
+                              'stores, which he calls pretty darn close to nothing, and that the only part '
+                              'of the program he cares about is the targeted-for-you layer, where he has '
+                              'seen 40, 70, even 80% back on a single purchase [CDTjD80PdZk @ 00:03:14]. '
+                              'Chris at UpgradedPoints sits on the aggressive end too, opening the portal '
+                              'every single day as part of his login routine even when he is not shopping, '
+                              'because the offers have been absolutely bananas: spend $100 on tickets and '
+                              'get $100 back, spend $100 on rental cars and get $100 back, and 70% back on '
+                              'Klook [kiOoNZghrGk @ 00:00:13]. The passive camp collects coupons; the '
+                              'active camp collects near-free merchandise.',
+                              'Practitioners agree targeted offers exist but disagree on how to summon '
+                              'them. Michael Martinez runs a deliberate intent-signaling routine: search '
+                              'the merchant inside the Capital One Shopping portal, click into GNC, '
+                              'Vitamin Shoppe, and Lucky Vitamin, browse pre-workout and whey protein, '
+                              'then log out and check email and the for-you page over the next one to two '
+                              'days. That run produced get $45 when you spend $75, and he admits the '
+                              'method is anecdotal and simply keeps working for him [CDTjD80PdZk @ '
+                              '00:08:43]. Nate Bind compresses it into a five-minute play: go to the '
+                              'target store first, look around, then come back to Capital One and refresh, '
+                              'and a lot of times a crazy cash back offer appears for the store and the '
+                              'items you viewed [ILSF_d9HX5I @ 00:02:59]. Eli teaches a cart-abandonment '
+                              'variant: load items, do not check out, walk away, and within hours or a few '
+                              'days a better offer for that exact store often lands in the inbox '
+                              '[L5V4-qjpKSw @ 00:03:09]. Twin Finances, by contrast, says the 90% back at '
+                              'Kes that turned roughly $130 of spend into $120 arrived with no trick at '
+                              'all, just browsing the site normally a day earlier, with no idea why the '
+                              'account got targeted [OxMh5dpHvJk @ 00:02:46].',
+                              'On the points side, the disagreement is about when to leave the bank '
+                              'portal. Mark Reese insists on pricing every trip two ways: in one example '
+                              'United wanted 40,000 miles for a $575 flight while the Chase portal wanted '
+                              '46,000 points, so he transfers; on a $1,297 flight United wanted 145,000 '
+                              'miles versus 104,000 points at the fixed 1.25 cents in the portal, so he '
+                              'books through Chase and skips the transfer entirely [ae1WayyrwnE @ '
+                              '00:13:36]. AskSebby sets a hard 2-cents-per-point hurdle rate for transfer '
+                              'partners and argues ANA economy via Virgin Atlantic is not worth the '
+                              'squeeze outside edge cases, while business at 52.5K and first at 72.5K from '
+                              'San Francisco clearly beat $7,771 and $19,415 round-trip retail fares '
+                              '[Uvyem-_QFhI @ 00:07:10]. Ben Hedges shows bonuses flipping the math: IHG '
+                              'points average about 0.6 cents, normally a weak Chase transfer, but an 80% '
+                              'bonus lifts the return to roughly 1.08 cents per Chase point, and more at '
+                              'high-end properties [3sY2v2Stv7c @ 00:01:36]. Michael Martinez draws a line '
+                              'on spending purely for rewards: with a points currency valued at 2 cents '
+                              'plus it maybe works, but for Capital One Shopping gift cards he does not '
+                              'recommend it [CDTjD80PdZk @ 00:19:32].'],
+               'table': {'caption': 'Competing playbooks for Capital One Shopping offers, portal pairing, '
+                                    'and point transfers',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Capital One Shopping operating posture overall',
+                                   'Passive set-it-and-forget-it extension for coupons, price comparisons, '
+                                   'and small rewards',
+                                   'Opportunistic hunting that activates only strong targeted offers and '
+                                   'ignores default rates',
+                                   'Thrive Media ([PtqbX-LQUjE @ 00:01:46]); Michael Martinez '
+                                   '([CDTjD80PdZk @ 00:05:50])'],
+                                  ['How to trigger a targeted offer',
+                                   'Browse merchant inside the portal, click products, log out, recheck '
+                                   'email for two days',
+                                   'Visit the store itself for five minutes, then return to Capital One '
+                                   'and refresh',
+                                   'Michael Martinez ([CDTjD80PdZk @ 00:09:30]); Nate Bind ([ILSF_d9HX5I @ '
+                                   '00:02:59])'],
+                                  ['Cart trick versus organic targeting luck',
+                                   'Load the cart, abandon checkout, and wait hours to days for an inbox '
+                                   'offer',
+                                   'Shop normally and let targeting land unprompted, like the 90% back at '
+                                   'Kes',
+                                   'Eli ([L5V4-qjpKSw @ 00:03:27]); Twin Finances ([OxMh5dpHvJk @ '
+                                   '00:02:46])'],
+                                  ['Which shopping portal gets everyday spend',
+                                   'Rakuten as the everyday primary driver earning cash, Amex points, or '
+                                   'Bilt points',
+                                   'Capital One Shopping reserved for big-ticket purchases backed by a '
+                                   'strong targeted offer',
+                                   'Michael Martinez ([CDTjD80PdZk @ 00:21:12]); Ben Hedges ([3sY2v2Stv7c '
+                                   '@ 00:08:02])'],
+                                  ['Where gift card rewards get redeemed',
+                                   "Funnel Home Depot and Lowe's gift cards straight into weekly "
+                                   'renovation purchases',
+                                   'Pool the balance into one large Marriott gift card that pays for '
+                                   'another trip',
+                                   'Michael Martinez ([CDTjD80PdZk @ 00:18:50]); UpgradedPoints '
+                                   '([kiOoNZghrGk @ 00:02:02])'],
+                                  ['Transfer to partner versus bank portal booking',
+                                   'Transfer when partner miles price below portal points, as 40K United '
+                                   'versus 46K Chase',
+                                   'Book through the bank portal when it needs fewer points, as 104K '
+                                   'versus 145K',
+                                   'Mark Reese ([ae1WayyrwnE @ 00:13:36]); AskSebby ([Uvyem-_QFhI @ '
+                                   '00:09:00])'],
+                                  ['Hotel channel after transferring hotel points',
+                                   'Book Marriott directly so elite status benefits like room upgrades '
+                                   'actually apply',
+                                   'Book through the Chase travel portal and usually forfeit any Marriott '
+                                   'status perks',
+                                   'Ben Hedges ([3sY2v2Stv7c @ 00:04:59])']]}},
+              {'heading': 'Section 4: Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The most expensive failure is an offer that never tracks. Michael Martinez '
+                              "did everything right on a spend $250, get $200 Lowe's offer: screenshotted "
+                              "it, activated it, checked out for shipping. Then a Lowe's rep called about "
+                              'delivery cost and switched the order to in-store pickup, altering the '
+                              'transaction; he is 99% sure that edit killed the reward, and the claim was '
+                              'still unresolved [CDTjD80PdZk @ 00:17:28]. His protection checklist came '
+                              'out of that pain: one browser on one device, no new tabs after activating, '
+                              'and shut off Rakuten, Honey, or any other shopping extension, because '
+                              'running two at once can void both rewards [CDTjD80PdZk @ 00:12:30]. Twin '
+                              'Finances reports the cleanest tracking in Chrome with no extensions such as '
+                              'an ad blocker installed, and recommends a small test purchase at a store '
+                              'before committing a big one [OxMh5dpHvJk @ 00:02:05]. Bytes Media adds that '
+                              'the mobile browser extension runs worse than desktop or the app, and that '
+                              'people lose rewards simply because they did not route the purchase '
+                              'correctly [L-fP6r8X7A0 @ 00:01:50]. Martinez still calls his own loss rare, '
+                              'the only pending offer he has watched fail to post, but he describes '
+                              'tracking across shopping portals as super inconsistent, which stings '
+                              'hardest on big purchases.',
+                              'The $80 sign-up bonus is where playbooks collide hardest. Eli spells out '
+                              'the order that matters: sign up through a referral link, install the '
+                              'extension within seven days on a computer or phone that never had it, spend '
+                              'at least $10 through Capital One Shopping within 30 days, and never '
+                              'uninstall or switch off permissions while waiting. An old account or '
+                              'reinstalled extension on either side means neither person gets paid, the '
+                              'deal is US only, and the terms live at sign-up govern [L5V4-qjpKSw @ '
+                              '00:02:52]. Nate Bind runs a $1 version instead: a JD Foundation donation at '
+                              'Finish Line bought in November with the extension active, $80 credited '
+                              'February 27, and cashed out on a real, non-virtual phone number with no ID '
+                              '[1FoepUfDsnE @ 00:01:19]. In an earlier video he goes further, suggesting '
+                              "spare laptops, kids' computers, and phones each get referred with new "
+                              'emails and new phone numbers so every purchase runs through a fresh '
+                              'self-referred account [ILSF_d9HX5I @ 00:02:05], the same old-account and '
+                              'reinstall pattern Eli says voids payouts for both sides. Michael Martinez '
+                              'gives the low-friction version: install, keep using it for 90 days, collect '
+                              'the $80, and move on [CDTjD80PdZk @ 00:21:26].',
+                              'On the points side, the traps are rule changes and irreversible clicks. Cal '
+                              'Barton reports that from October 1, Sapphire Preferred holders who applied '
+                              'before June 15 moved to a reduced Hyatt rate of three Hyatt points per four '
+                              'Chase points, so 100,000 Chase points become 75,000 Hyatt points, with Ink '
+                              'Business Preferred also affected and Sapphire Reserve keeping its 1:1 '
+                              "option; he also flags that Citi's Strata Premier offer now blocks anyone "
+                              "who ever held a Premier, burning one applicant's four-year wait "
+                              "[Zgd5WIoedks @ 00:09:13]. Leo's Travel Hacks warns that cancelling the last "
+                              'product linked to an Amex rewards account wipes all points right away, '
+                              'while Chase lets you move points to another Chase card before closing '
+                              '[4RuPkU_XvWA @ 00:07:37]. Joe Barreto watched an Amex Dell offer, 10% off '
+                              'up to $1,000, land on a different card than the new business card he '
+                              'wanted, and two representatives told him that once certain offers attach to '
+                              'one card they cannot be moved [YKkt6aTmI3c @ 00:08:17]. He plans to call '
+                              'back and argues operators should control which card earns the most. Mark '
+                              'Reese closes the loop: never transfer speculatively or out of airline '
+                              'habit, because transfers are not reversible [ae1WayyrwnE @ 00:15:26].'],
+               'table': {'caption': 'Firsthand failures, the money at stake, and the operator fix',
+                         'headers': ['Failure Mode',
+                                     'What Happened Firsthand',
+                                     'Economics Check Or Fix',
+                                     'Expert Source'],
+                         'rows': [['Editing an order after checkout completes',
+                                   "Lowe's rep switched delivery to in-store pickup, altering the "
+                                   '$250-for-$200 offer transaction',
+                                   'Never tweak orders after checkout; keep screenshots ready to dispute '
+                                   'the missing reward',
+                                   'Michael Martinez ([CDTjD80PdZk @ 00:17:44])'],
+                                  ['Competing shopping extensions running together',
+                                   'Rakuten or Honey alongside Capital One Shopping can void each other so '
+                                   'neither pays',
+                                   'Disable competitors or split Capital One and Rakuten into two separate '
+                                   'browsers',
+                                   'Michael Martinez ([CDTjD80PdZk @ 00:12:44])'],
+                                  ['Extension not activated at the checkout',
+                                   'Extension showing red instead of activated means the purchase earns '
+                                   'nothing at all',
+                                   'Confirm the offer is lit up before spending; otherwise do not spend '
+                                   'any money',
+                                   'Nate Bind ([1FoepUfDsnE @ 00:02:52]); Eli ([L5V4-qjpKSw @ 00:03:27])'],
+                                  ['Gift-card-only payout with long lag',
+                                   'Rewards arrive only as store gift cards after about a month, sometimes '
+                                   '90 days',
+                                   'Pick redemption stores you already shop; hotel offers pay only after '
+                                   'the stay',
+                                   'Twin Finances ([OxMh5dpHvJk @ 00:00:59]); Michael Martinez '
+                                   '([CDTjD80PdZk @ 00:19:45])'],
+                                  ['Booking status hotels through a bank portal',
+                                   'Marriott Gold booked via Chase travel portal at the W in DC, got the '
+                                   'worst room',
+                                   'Transfer points and book direct whenever elite status benefits are '
+                                   'part of the value',
+                                   'Ben Hedges ([3sY2v2Stv7c @ 00:05:12])'],
+                                  ['Card rental insurance claims dragging for months',
+                                   'One glass chip claim on a European rental took eight months and eight '
+                                   'rounds',
+                                   'Watch the October 1, 2024 Chase underwriter switch before dropping '
+                                   'paid primary coverage',
+                                   'Joe Barreto ([YKkt6aTmI3c @ 00:01:22])'],
+                                  ['Business card bonus clawback and overspend',
+                                   'Chase can take the 70,000 Hyatt bonus back if the account closes '
+                                   'within six months',
+                                   'Only chase $7,000 in three months with spend you would do anyway',
+                                   "Paul's Points ([iwdIgYSyL9s @ 00:01:03])"]]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Lock the Reward Before a Dollar Moves',
+                           'body': 'Every check below comes from a loss, a reversal, or a voided payout '
+                                   'that practitioners hit themselves. Clear all four before activating an '
+                                   'offer or moving points.',
+                           'items': ['Screenshot every targeted offer with the amount, expiration date, '
+                                     'and current date before activating, and file a reward request with '
+                                     'those screenshots if it has not posted within 30 days [Michael '
+                                     'Martinez — CDTjD80PdZk @ 00:12:03].',
+                                     'Read the offer terms for excluded items such as Apple products and '
+                                     'run a small test purchase at the store before the big one [Twin '
+                                     'Finances — OxMh5dpHvJk @ 00:03:13].',
+                                     'For the $80 bonus, sign up only through a referral link, install '
+                                     'within seven days on a device that never had the extension, spend '
+                                     '$10 within 30 days, and keep it installed, because a broken rule on '
+                                     'either side pays nobody [Eli — L5V4-qjpKSw @ 00:01:59].',
+                                     'Price the award in partner miles and in bank-portal points before '
+                                     'transferring anything, because transfers are not reversible [Mark '
+                                     'Reese — ae1WayyrwnE @ 00:15:26].']}}],
+ 'pull_quote': "It's not about loyalty to one tool. It's about running the numbers each time and just "
+               'taking the better deal. — attributed to Michael Martinez (CDTjD80PdZk @ 00:21:26).',
+ 'diagram_id': 'diag-06',
+ 'action_checklist': ['Signal buying intent before any big purchase: search the merchant inside Capital '
+                      'One Shopping, click into that store and similar stores, browse the exact products, '
+                      'log out, then check email and the for-you page over the next one to two days '
+                      '[Michael Martinez — CDTjD80PdZk @ 00:09:30].',
+                      'Turn on Capital One Shopping marketing emails, because the boring-sounding emails '
+                      'are where targeted offers like $50 back on $50 orders hide [Eli — L5V4-qjpKSw @ '
+                      '00:03:09].',
+                      'Shop in Chrome with no other extensions such as an ad blocker installed, then '
+                      'confirm the cash back shows under rewards with an expected payout date [Twin '
+                      'Finances — OxMh5dpHvJk @ 00:02:05].',
+                      'Run the quick check on every major purchase: Capital One Shopping home screen plus '
+                      "email first, Rakuten's current rate if no strong offer appears, and stack a rewards "
+                      'credit card on top either way [Michael Martinez — CDTjD80PdZk @ 00:06:20].',
+                      'Value every redemption by subtracting taxes and fees from the cash price, dividing '
+                      'by the points price, multiplying by 100, and comparing the result against the '
+                      "program's average value [Mark Reese — ae1WayyrwnE @ 00:10:35].",
+                      'Load every card into CardPointers and use its Chrome or Safari extension to '
+                      'auto-add American Express, Chase, Bank of America, and Citi offers without sharing '
+                      'bank logins [Max Miles Points — i4N6SEsh28c @ 00:03:49].'],
+ 'statutory_citations': [{'title': 'Michael Martinez — This Capital One Shopping Strategy Earned Me $500+ '
+                                   'Cash Back in 3 Months [00:11:36]',
+                          'url': 'https://www.youtube.com/watch?v=CDTjD80PdZk&t=696s',
+                          'relevance': 'Primary practitioner testimony on the targeted-offer protection '
+                                       "checklist and the unresolved $200 Lowe's tracking failure."},
+                         {'title': 'Mark Reese — Beginner’s Guide to Transfer Partners for BIG VALUE '
+                                   '(Amex, Chase, Citi, Capital One Credit Cards) [00:12:19]',
+                          'url': 'https://www.youtube.com/watch?v=ae1WayyrwnE&t=739s',
+                          'relevance': 'Primary practitioner testimony on deciding between transfer '
+                                       'partners and fixed-value bank portal bookings.'},
+                         {'title': 'Eli — How Is Nobody Talking About This? The $80 Capital One Shopping '
+                                   'Bonus, Explained [00:01:59]',
+                          'url': 'https://www.youtube.com/watch?v=L5V4-qjpKSw&t=119s',
+                          'relevance': 'Primary practitioner testimony on the $80 referral bonus sequence '
+                                       'and the rules that void payouts.'},
+                         {'title': 'Cal Barton — AMEX, Citi & Chase Are Changing the Credit Card Rules! '
+                                   '[00:09:13]',
+                          'url': 'https://www.youtube.com/watch?v=Zgd5WIoedks&t=553s',
+                          'relevance': 'Primary practitioner testimony on the reduced Sapphire Preferred '
+                                       'Hyatt transfer ratio and tightened bonus rules.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'ae1WayyrwnE',
+                       'title': 'Beginner’s Guide to Transfer Partners for BIG VALUE (Amex, Chase, Citi, '
+                                'Capital One Credit Cards)',
+                       'channel': 'Mark Reese',
+                       'author': 'Mark Reese',
+                       'text': 'Do not transfer points speculatively or just because you usually fly with '
+                               'airline XYZ, and be aware that transfers are not reversible.',
+                       'tip': 'Do not transfer points speculatively or just because you usually fly with '
+                              'airline XYZ, and be aware that transfers are not reversible.',
+                       'timestamp': 926,
+                       'timestamp_seconds': 926,
+                       'timestamp_label': '[00:15:26]',
+                       'url': 'https://www.youtube.com/watch?v=ae1WayyrwnE&t=926s',
+                       'markdown': '[00:15:26](https://www.youtube.com/watch?v=ae1WayyrwnE&t=926s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Uvyem-_QFhI',
+                       'title': 'The Ultimate Guide to Maximizing Chase Points 2025',
+                       'channel': 'AskSebby',
+                       'author': 'AskSebby',
+                       'text': '773 divided by 35K points is 2.2 cents per point, and my hurdle rate for '
+                               'transfer partners is 2 cents per point.',
+                       'tip': '773 divided by 35K points is 2.2 cents per point, and my hurdle rate for '
+                              'transfer partners is 2 cents per point.',
+                       'timestamp': 540,
+                       'timestamp_seconds': 540,
+                       'timestamp_label': '[00:09:00]',
+                       'url': 'https://www.youtube.com/watch?v=Uvyem-_QFhI&t=540s',
+                       'markdown': '[00:09:00](https://www.youtube.com/watch?v=Uvyem-_QFhI&t=540s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'OxMh5dpHvJk',
+                       'title': 'How to Use the Capital One Shopping Portal | Ultimate Guide',
+                       'channel': 'Twin Finances',
+                       'author': 'Twin Finances',
+                       'text': "I've had the best success doing this in Chrome and making sure I don't "
+                               'have any extensions installed like Ad Blocker or anything like that.',
+                       'tip': "I've had the best success doing this in Chrome and making sure I don't have "
+                              'any extensions installed like Ad Blocker or anything like that.',
+                       'timestamp': 125,
+                       'timestamp_seconds': 125,
+                       'timestamp_label': '[00:02:05]',
+                       'url': 'https://www.youtube.com/watch?v=OxMh5dpHvJk&t=125s',
+                       'markdown': '[00:02:05](https://www.youtube.com/watch?v=OxMh5dpHvJk&t=125s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ILSF_d9HX5I',
+                       'title': 'I Thought This Capital One Shopping Cashback Was Too Good To Be True',
+                       'channel': 'Nate Bind',
+                       'author': 'Nate Bind',
+                       'text': 'Go to that store first, look around for like 5 minutes, and then come back '
+                               "to Capital One and refresh, and a lot of times they'll give you some crazy "
+                               'cash back offer for that store.',
+                       'tip': 'Go to that store first, look around for like 5 minutes, and then come back '
+                              "to Capital One and refresh, and a lot of times they'll give you some crazy "
+                              'cash back offer for that store.',
+                       'timestamp': 179,
+                       'timestamp_seconds': 179,
+                       'timestamp_label': '[00:02:59]',
+                       'url': 'https://www.youtube.com/watch?v=ILSF_d9HX5I&t=179s',
+                       'markdown': '[00:02:59](https://www.youtube.com/watch?v=ILSF_d9HX5I&t=179s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '1FoepUfDsnE',
+                       'title': 'Spend $1, Get $80 Back?! Capital One Shopping Glitch (2026)',
+                       'channel': 'Nate Bind',
+                       'author': 'Nate Bind',
+                       'text': "Make sure that this is activated before you checkout; if it's not "
+                               "activated, it will be in red, so don't spend any money if it's not "
+                               'working.',
+                       'tip': "Make sure that this is activated before you checkout; if it's not "
+                              "activated, it will be in red, so don't spend any money if it's not working.",
+                       'timestamp': 156,
+                       'timestamp_seconds': 156,
+                       'timestamp_label': '[00:02:36]',
+                       'url': 'https://www.youtube.com/watch?v=1FoepUfDsnE&t=156s',
+                       'markdown': '[00:02:36](https://www.youtube.com/watch?v=1FoepUfDsnE&t=156s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'kiOoNZghrGk',
+                       'title': 'How Chris Uses Capital One Shopping to Earn Free Hotel Stays',
+                       'channel': 'UpgradedPoints',
+                       'author': 'UpgradedPoints',
+                       'text': "I've just been building up my balance, and I'm going to cash them out for "
+                               'a big Marriott gift card and stay that basically pays for another trip.',
+                       'tip': "I've just been building up my balance, and I'm going to cash them out for a "
+                              'big Marriott gift card and stay that basically pays for another trip.',
+                       'timestamp': 122,
+                       'timestamp_seconds': 122,
+                       'timestamp_label': '[00:02:02]',
+                       'url': 'https://www.youtube.com/watch?v=kiOoNZghrGk&t=122s',
+                       'markdown': '[00:02:02](https://www.youtube.com/watch?v=kiOoNZghrGk&t=122s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'PtqbX-LQUjE',
+                       'title': 'Capital One Shopping App Honest Review 2026 | Pros & Cons',
+                       'channel': 'Thrive Media',
+                       'author': 'Thrive Media',
+                       'text': 'Gift card payouts only: you cannot cash out your rewards directly to '
+                               'PayPal or bank accounts, only as store gift cards.',
+                       'tip': 'Gift card payouts only: you cannot cash out your rewards directly to PayPal '
+                              'or bank accounts, only as store gift cards.',
+                       'timestamp': 139,
+                       'timestamp_seconds': 139,
+                       'timestamp_label': '[00:02:19]',
+                       'url': 'https://www.youtube.com/watch?v=PtqbX-LQUjE&t=139s',
+                       'markdown': '[00:02:19](https://www.youtube.com/watch?v=PtqbX-LQUjE&t=139s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'CDTjD80PdZk',
+                       'title': 'This Capital One Shopping Strategy Earned Me $500+ Cash Back in 3 Months',
+                       'channel': 'Michael Martinez',
+                       'author': 'Michael Martinez',
+                       'text': "Make sure you aren't tweaking your orders after you check out, because if "
+                               'you do, you risk the transaction not counting.',
+                       'tip': "Make sure you aren't tweaking your orders after you check out, because if "
+                              'you do, you risk the transaction not counting.',
+                       'timestamp': 1078,
+                       'timestamp_seconds': 1078,
+                       'timestamp_label': '[00:17:58]',
+                       'url': 'https://www.youtube.com/watch?v=CDTjD80PdZk&t=1078s',
+                       'markdown': '[00:17:58](https://www.youtube.com/watch?v=CDTjD80PdZk&t=1078s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'CDTjD80PdZk',
+                       'title': 'This Capital One Shopping Strategy Earned Me $500+ Cash Back in 3 Months',
+                       'channel': 'Michael Martinez',
+                       'author': 'Michael Martinez',
+                       'text': 'If you have Rakuten or Honey or any other shopping extension, you want to '
+                               'turn them off before you start this process.',
+                       'tip': 'If you have Rakuten or Honey or any other shopping extension, you want to '
+                              'turn them off before you start this process.',
+                       'timestamp': 750,
+                       'timestamp_seconds': 750,
+                       'timestamp_label': '[00:12:30]',
+                       'url': 'https://www.youtube.com/watch?v=CDTjD80PdZk&t=750s',
+                       'markdown': '[00:12:30](https://www.youtube.com/watch?v=CDTjD80PdZk&t=750s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'L-fP6r8X7A0',
+                       'title': 'Capital One Shopping App Review 2026 | Pros and Cons – Honest & Unbiased',
+                       'channel': 'Bytes Media',
+                       'author': 'Bytes Media',
+                       'text': 'There are cases where people miss out on rewards because they did not '
+                               'route their purchase correctly through the app.',
+                       'tip': 'There are cases where people miss out on rewards because they did not route '
+                              'their purchase correctly through the app.',
+                       'timestamp': 110,
+                       'timestamp_seconds': 110,
+                       'timestamp_label': '[00:01:50]',
+                       'url': 'https://www.youtube.com/watch?v=L-fP6r8X7A0&t=110s',
+                       'markdown': '[00:01:50](https://www.youtube.com/watch?v=L-fP6r8X7A0&t=110s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'L5V4-qjpKSw',
+                       'title': 'How Is Nobody Talking About This? The $80 Capital One Shopping Bonus, '
+                                'Explained',
+                       'channel': 'Eli',
+                       'author': 'Eli',
+                       'text': 'If either side of the referral breaks the rules, an old account, a '
+                               'reinstalled extension, neither person gets paid.',
+                       'tip': 'If either side of the referral breaks the rules, an old account, a '
+                              'reinstalled extension, neither person gets paid.',
+                       'timestamp': 172,
+                       'timestamp_seconds': 172,
+                       'timestamp_label': '[00:02:52]',
+                       'url': 'https://www.youtube.com/watch?v=L5V4-qjpKSw&t=172s',
+                       'markdown': '[00:02:52](https://www.youtube.com/watch?v=L5V4-qjpKSw&t=172s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'i4N6SEsh28c',
+                       'title': 'Maximize Your Credit Card Rewards with CardPointers | Tutorial',
+                       'channel': 'Max Miles Points',
+                       'author': 'Max Miles Points',
+                       'text': 'When you have the Chrome or Safari CardPointers extension installed you '
+                               'can add all of your American Express, Chase, Bank of America and Citi '
+                               'offers automatically.',
+                       'tip': 'When you have the Chrome or Safari CardPointers extension installed you can '
+                              'add all of your American Express, Chase, Bank of America and Citi offers '
+                              'automatically.',
+                       'timestamp': 229,
+                       'timestamp_seconds': 229,
+                       'timestamp_label': '[00:03:49]',
+                       'url': 'https://www.youtube.com/watch?v=i4N6SEsh28c&t=229s',
+                       'markdown': '[00:03:49](https://www.youtube.com/watch?v=i4N6SEsh28c&t=229s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '3sY2v2Stv7c',
+                       'title': 'HUGE Transfer and Welcome BONUSES From Chase and Amex',
+                       'channel': 'Ben Hedges',
+                       'author': 'Ben Hedges',
+                       'text': "You normally don't get the benefit of Marriott status when you book "
+                               'through the Chase travel portal, and trust me, I found out the hard way.',
+                       'tip': "You normally don't get the benefit of Marriott status when you book through "
+                              'the Chase travel portal, and trust me, I found out the hard way.',
+                       'timestamp': 299,
+                       'timestamp_seconds': 299,
+                       'timestamp_label': '[00:04:59]',
+                       'url': 'https://www.youtube.com/watch?v=3sY2v2Stv7c&t=299s',
+                       'markdown': '[00:04:59](https://www.youtube.com/watch?v=3sY2v2Stv7c&t=299s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'iwdIgYSyL9s',
+                       'title': 'Chase Hyatt Business Card Bonus Rises to 70,000',
+                       'channel': "Paul's Points",
+                       'author': "Paul's Points",
+                       'text': 'Points can take 6 to 8 weeks to arrive, and Chase can take the bonus back '
+                               'if you close the account within 6 months.',
+                       'tip': 'Points can take 6 to 8 weeks to arrive, and Chase can take the bonus back '
+                              'if you close the account within 6 months.',
+                       'timestamp': 19,
+                       'timestamp_seconds': 19,
+                       'timestamp_label': '[00:00:19]',
+                       'url': 'https://www.youtube.com/watch?v=iwdIgYSyL9s&t=19s',
+                       'markdown': '[00:00:19](https://www.youtube.com/watch?v=iwdIgYSyL9s&t=19s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'YKkt6aTmI3c',
+                       'title': 'Major Chase Benefits Upgrade | Amex Offers Disappoint',
+                       'channel': 'Joe Barreto',
+                       'author': 'Joe Barreto',
+                       'text': "Once it's on one card on certain items, it can't be undone and added to "
+                               'the card of your preference.',
+                       'tip': "Once it's on one card on certain items, it can't be undone and added to the "
+                              'card of your preference.',
+                       'timestamp': 497,
+                       'timestamp_seconds': 497,
+                       'timestamp_label': '[00:08:17]',
+                       'url': 'https://www.youtube.com/watch?v=YKkt6aTmI3c&t=497s',
+                       'markdown': '[00:08:17](https://www.youtube.com/watch?v=YKkt6aTmI3c&t=497s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Zgd5WIoedks',
+                       'title': 'AMEX, Citi & Chase Are Changing the Credit Card Rules!',
+                       'channel': 'Cal Barton',
+                       'author': 'Cal Barton',
+                       'text': 'Starting October 1st, Sapphire Preferred customers who applied before June '
+                               '15th moved to the reduced Hyatt transfer rate.',
+                       'tip': 'Starting October 1st, Sapphire Preferred customers who applied before June '
+                              '15th moved to the reduced Hyatt transfer rate.',
+                       'timestamp': 553,
+                       'timestamp_seconds': 553,
+                       'timestamp_label': '[00:09:13]',
+                       'url': 'https://www.youtube.com/watch?v=Zgd5WIoedks&t=553s',
+                       'markdown': '[00:09:13](https://www.youtube.com/watch?v=Zgd5WIoedks&t=553s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '4RuPkU_XvWA',
+                       'title': 'Chase vs Amex 2026: Ultimate Rewards vs Membership Rewards — Partners, '
+                                'Ratios & Cards',
+                       'channel': "Leo's Travel Hacks",
+                       'author': "Leo's Travel Hacks",
+                       'text': 'If you cancel the last product linked to your rewards account, you lose '
+                               'all of your points right away.',
+                       'tip': 'If you cancel the last product linked to your rewards account, you lose all '
+                              'of your points right away.',
+                       'timestamp': 457,
+                       'timestamp_seconds': 457,
+                       'timestamp_label': '[00:07:37]',
+                       'url': 'https://www.youtube.com/watch?v=4RuPkU_XvWA&t=457s',
+                       'markdown': '[00:07:37](https://www.youtube.com/watch?v=4RuPkU_XvWA&t=457s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'}]}

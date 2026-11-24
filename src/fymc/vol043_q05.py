@@ -1,618 +1,860 @@
 from __future__ import annotations
 
-CHAPTER_5 = {
-    "id": "Q5",
-    "chapter_id": "Q5",
-    "chapter_number": 5,
-    "question_number": 5,
-    "slug": "beginner-traps-clawbacks-asymmetric-failure-modes",
-    "question_prompt": "What kills 80% of newcomers in live-event, super bowl & vip ticket brokering, and what forensic metrics detect margin leaks, regulatory landmines, or platform bans before they wipe out capital?",
-    "kicker": "Q5 / THE BIG MONEY PLAYBOOKS",
-    "title": "Beginner Traps, Clawbacks & Asymmetric Failure Modes",
-    "subtitle": "SkyBox Inventory Locks, Post-Event Settlement, Suite Rights, BOTS Act Boundaries & Cash-Backed Clawback Controls",
-    "layout_template": "expert_insights",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #43, ranked #02 of 43 with a 95/100 Money-to-Manpower Score, "
-        "rewards inventory control rather than speculative bravado. This chapter maps "
-        "12 operator plays across exchange resale, suite seat-splitting, tentpole hospitality, "
-        "and a separately ring-fenced commercial-card fulfillment rail. It dismantles "
-        "double-sales, phantom transfer rights, cancellation exposure, rewards-dependent "
-        "purchases, misleading gross spreads, and settlement mismatches. The canonical annual "
-        "owner profits are $26,400 Conservative, $191,900 Base, and $468,000 Scaled; each "
-        "requires costs and reserves to fit inside the retained contribution envelope. "
-        "Use acknowledgement latency, replacement exposure, event concentration, transfer "
-        "defects, and unrestricted cash coverage to stop losses before platform remedies "
-        "become account restrictions. The question's 80% framing is not an observed failure-rate estimate."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$220,000",
-            "context": "Annual gross activity basis; $88,000 retained contribution at 40%",
-            "note": (
-                "12% gross-basis net margin; 30% retained margin; "
-                "$26,400 annual owner net profit; 1 FT + 2 C"
-            ),
-        },
-        {
-            "label": "Base",
-            "value": "$1,010,000",
-            "context": "Annual gross activity basis; $404,000 retained contribution at 40%",
-            "note": (
-                "19.0% gross-basis net margin; 47.5% retained margin; "
-                "$191,900 annual owner net profit; 1 FT + 2 C"
-            ),
-        },
-        {
-            "label": "Scaled",
-            "value": "$1,800,000",
-            "context": "Annual gross activity basis; $720,000 retained contribution at 40%",
-            "note": (
-                "26% gross-basis net margin; 65% retained margin; "
-                "$468,000 annual owner net profit; 2 FT + 3 C"
-            ),
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Separate the Inventory Rails Before One Defect Infects Every Exchange",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "The first fatal shortcut is treating every event transaction as the same inventory business. "
-                    "Multi-exchange resale carries seat-level replacement exposure and marketplace-dependent payout timing; "
-                    "stadium suite seat-splitting adds indivisible acquisition commitments, occupancy limits, and food minimums; "
-                    "tentpole corporate hospitality adds hotel, transport, credential, and supplier cancellation mismatches. "
-                    "Keep three ledgers, three purchase ceilings, and three settlement calendars. This chapter's twelve-play "
-                    "map comprises exchange broadcasting, transfer-ready seat resale, NFL SSL playoff-option strips, NBA "
-                    "playoff-option strips, luxury-suite splitting, suite-anchor pre-sales, Super Bowl hospitality, World Cup "
-                    "hospitality, F1 hospitality, Masters hospitality, Final Four hospitality, and "
-                    "wholesale_buying_group_card_float_cycling. These are operating labels for this chapter, not assertions "
-                    "that an unspecified master catalog assigns matching identifiers. The last play belongs to TRACK_2 "
-                    "and remains operationally separate from ticket stock. For an illustrative $10,000 cash ceiling, "
-                    "allocate $4,000 to transferable seats, $2,000 to a cancellable suite option, and $4,000 to "
-                    "unrestricted reserves; reject a $12,000 suite purchase rather than counting future customer receipts "
-                    "as available capital. An SSL interest or playoff option is not automatically a transferable "
-                    "admission ticket. Verify exercise deadlines, additional purchase obligations, home-game contingencies, "
-                    "and permitted resale before assigning inventory value. If those rights cannot be documented, "
-                    "release the option or decline the purchase."
-                ),
-                (
-                    "The second shortcut is assuming a POS subscription makes simultaneous sales impossible. Configure "
-                    "SkyBox, Automatiq, or Logitix against the actual supported exchange connections, then test one "
-                    "controlled listing through hold, sale, deletion, transfer, and reversal states. StubHub, Vivid Seats, "
-                    "SeatGeek, and TickPick can have different acknowledgements and contractual remedies. Use a unique "
-                    "event, section, row, seat, and supplier reference as the inventory key; general-admission inventory "
-                    "needs an equally explicit quantity ledger. A sale must create a local reservation before further "
-                    "broadcasts, followed by confirmed removals elsewhere. Local locking cannot guarantee atomic execution "
-                    "across independent marketplaces. Set an internal warning at thirty seconds without acknowledgement "
-                    "and stop additional broadcasting after sixty seconds; these are operator thresholds, not vendor "
-                    "service promises. A $500 sale with a contractually applicable 200% penalty exposes $1,000 in "
-                    "penalty alone, potentially alongside separate replacement or refund obligations. Inspect the agreement "
-                    "before deciding which amounts stack. On an orphan listing, stop the affected inventory cohort, "
-                    "use permitted marketplace controls to remove exposure, and contact support with timestamps. Never "
-                    "create another account to continue selling around a restriction. Repeated rejected deletions, negative "
-                    "available quantities, or duplicate seat keys justify an immediate purchase freeze even when yesterday's "
-                    "profit report looks strong."
-                ),
-                (
-                    "Suite splitting fails when operators divide the lease price by capacity and call the remainder "
-                    "profit. Suppose a sixteen-seat suite costs $8,000, mandatory catering costs $1,200, and disclosed "
-                    "fulfillment expenses cost $400. At $800 per seat, fourteen sales generate $11,200. A 10% selling "
-                    "fee removes $1,120, leaving $480 after those direct costs, before central overhead and an event "
-                    "reserve. Sixteen sales generate $12,800 and $1,920 before that reserve; the two empty seats "
-                    "therefore destroy $1,440 of contribution, not merely their acquisition allocation. At twelve sales, "
-                    "the same package loses $960 before reserves. Confirm whether separate-seat resale is permitted, "
-                    "whether all buyers receive usable admission credentials, and whether parking, standing-room access, "
-                    "alcohol, or gratuities are included. An anchor buyer paying for eight seats reduces demand exposure "
-                    "only if the contract, collected payment, and refund terms support that conclusion. Their deposit "
-                    "is not free working capital while refundable. Establish a written markdown schedule with a minimum "
-                    "cash-recovery objective, not an emotional target price. When venue rules prohibit splitting, sell "
-                    "an authorized whole-suite package or withdraw. Never replace promised suite access with ordinary "
-                    "seats without a documented customer-approved change, and retain the original venue agreement alongside "
-                    "every derivative customer order."
-                ),
-            ],
-            "table": {
-                "caption": "Seven Inventory Traps and Seat-Level Circuit Breakers",
-                "headers": [
-                    "Failure mechanism and affected operating rail",
-                    "Illustrative unit exposure and economic consequence",
-                    "Early-warning measurement and internal intervention threshold",
-                    "Required containment action and permitted recovery path",
-                ],
-                "rows": [
-                    [
-                        "Exchange broadcasting continues while deletion acknowledgements remain missing",
-                        "One $500 sale can carry $1,000 contractual penalty exposure",
-                        "Warn after thirty seconds; halt broadcasting after sixty seconds",
-                        "Remove affected listings through supported controls and reconcile acknowledgements",
-                    ],
-                    [
-                        "Duplicate seat identifiers conceal competing supplier and marketplace commitments",
-                        "Two accepted orders compete for one transferable admission credential",
-                        "Any repeated event section row seat key stops allocation",
-                        "Reserve the verified credential and resolve the other obligation immediately",
-                    ],
-                    [
-                        "Transfer-ready resale relies on screenshots instead of accepted credentials",
-                        "A $700 purchase becomes unusable when the original barcode rotates",
-                        "Any credential lacking issuer-supported transfer evidence blocks customer delivery",
-                        "Obtain valid transfer or pursue documented supplier recovery immediately",
-                    ],
-                    [
-                        "NFL SSL playoff options are mistaken for unconditional tickets",
-                        "A $2,000 option plus $3,000 exercise costs $5,000",
-                        "Any undocumented exercise deadline or home-game contingency blocks purchasing",
-                        "Secure documented rights or decline before the exercise obligation begins",
-                    ],
-                    [
-                        "NBA playoff strips hide paid rounds that never occur",
-                        "A $4,000 strip refund may arrive after customer repayments",
-                        "Track contingent games and refund dates separately for every strip",
-                        "Reserve refund cash and market only contractually supported game inventory",
-                    ],
-                    [
-                        "Luxury-suite splitting ignores catering minimums and restricted resale rights",
-                        "Fourteen $800 seats leave $480 before reserves and overhead",
-                        "Require documented splitting permission and model twelve-seat downside losses",
-                        "Use authorized whole-suite resale when individual admission sales are prohibited",
-                    ],
-                    [
-                        "Suite-anchor pre-sales treat refundable deposits as unrestricted purchasing cash",
-                        "Eight $800 deposits create $6,400 of potential refund obligations",
-                        "Deduct refundable customer balances before calculating available purchasing capacity",
-                        "Segregate refund resources and obtain replacement demand before expanding commitments",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Protect the Inventory State Before Optimizing the Asking Price",
-                "body": (
-                    "Veteran operators preserve the evidence needed to unwind a broken transaction "
-                    "before allowing repricing software to expand its distribution."
-                ),
-                "items": [
-                    "Record reservation, outbound deletion, acknowledgement, transfer acceptance, and settlement timestamps separately; a single order timestamp conceals dangerous gaps.",
-                    "Keep general-admission pools distinct by delivery method and transfer deadline even when the venue labels every ticket identically.",
-                    "For suite splits, maintain a credential-to-guest roster and a separate entitlement list covering catering, parking, arrival windows, and host contact.",
-                    "After a connection interruption, reconcile live marketplace inventory against verified ownership before resuming automated price changes or adding stock.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Reconcile True Contribution and Fund the Days After the Event",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "The scorecard's gross activity basis is not a license to recognize underlying client spending "
-                    "as operator revenue. Apply its retained_share of 0.4 consistently: Conservative gross activity of "
-                    "$220,000 produces $88,000 retained contribution; Base $1,010,000 produces $404,000; Scaled $1,800,000 "
-                    "produces $720,000. The corresponding acquisition pass-through allocations are $132,000, $606,000, and "
-                    "$1,080,000. To reach annual owner profits of $26,400, $191,900, and $468,000, the remaining "
-                    "all-in cost envelopes must be $61,600, $212,100, and $252,000. Those envelopes must absorb "
-                    "exchange fees not already deducted, realized markdowns, expected event losses, contractors, software, "
-                    "cash-carrying costs, and other operating expenses. Retained margins are exactly 30%, 47.5%, and "
-                    "65%; gross-basis margins are 12%, 19.0%, and 26%. The forty-percent retention is a modeling "
-                    "assumption, while actual ASC 606 principal-versus-agent presentation depends on contractual control "
-                    "and performance obligations. Normalize exchange statements before comparison: when the imported payout "
-                    "already excludes a sell fee, restore that fee to the gross bridge or leave it excluded "
-                    "and avoid deducting it twice. Maintain one consistent bridge across channels. Refundable deposits "
-                    "remain obligations until the applicable performance is earned; loan principal, unused card limits, "
-                    "and supplier refunds are never fresh operating revenue."
-                ),
-                (
-                    "Tentpole bundles create correlated failure rather than diversified ticket demand. Consider ten Super "
-                    "Bowl hospitality packages billed at $4,000 each, with $24,000 of ticket and hospitality acquisition "
-                    "costs. The $16,000 retained spread equals the scorecard's forty-percent assumption. Deduct $3,000 "
-                    "of selling and payment fees, $2,000 of inventory markdown and defect allowance, $1,500 of "
-                    "cancellation and clawback reserve, $1,000 of fulfillment, $500 of funding cost, and $2,000 "
-                    "of allocated overhead. Expected owner contribution is $6,000, or 15% of billings, rather "
-                    "than $16,000. This transaction illustration is separate from the annual canonical cases. A World "
-                    "Cup venue change, F1 access restriction, Masters credential defect, or Final Four hotel cancellation "
-                    "can make the whole bundle unusable even when one component survives. Match each supplier's "
-                    "refund trigger to the customer promise; postponement is not necessarily cancellation. If two "
-                    "packages require $8,000 in immediate refunds while suppliers hold the $4,800 associated acquisition "
-                    "cash for sixty days, the timing gap alone can exhaust a small operator. Obtain expressly "
-                    "permitted inventory and written component substitutions. When a supplier cannot support the promised "
-                    "rights, remove that component before selling rather than relying on a refund dispute after arrival."
-                ),
-                (
-                    "Cash availability must be tested against the latest contractual settlement date, not the customer's "
-                    "purchase date. A $10,000 ticket position bought forty-five days before an event and paid "
-                    "seven days afterward immobilizes acquisition cash for fifty-two days; at an illustrative 18% annual "
-                    "carrying rate, simple funding cost is approximately $256.44. Postponement can extend that period "
-                    "without creating a fresh sale. Build a thirteen-week cash schedule with event dates, delivery "
-                    "deadlines, platform holds, card statements, supplier refunds, and customer repayment obligations. Define "
-                    "coverage as unrestricted cash plus documented committed liquidity divided by stressed thirty-day outflows; "
-                    "exclude unsettled marketplace receivables and refundable deposits from available resources. Use 1.5 "
-                    "times as an internal warning and 1.0 times as a purchase stop, adjusting upward when "
-                    "supplier recoveries are weak. Stress an individual event for full refunds, unrecoverable deposits, "
-                    "replacement costs, and contractual penalties without assuming every remedy necessarily stacks. Warn "
-                    "when one event's stressed cash demand exceeds 20% of unrestricted resources. Inventory markdowns "
-                    "are recognized once: either through lower realized sales or through an incremental reserve against "
-                    "the remaining stock, never both. Release reserves only when the relevant exposure actually expires, "
-                    "not merely because the event ended or a payout appeared."
-                ),
-            ],
-            "table": {
-                "caption": "Canonical Formula v2.0 Bridge and Event-Level Liquidity Tests",
-                "headers": [
-                    "Scenario or cash-risk measurement being reconciled",
-                    "Gross basis and retained contribution calculation",
-                    "Complete cost deduction or liquidity stress requirement",
-                    "Owner outcome or immediate operating response",
-                ],
-                "rows": [
-                    [
-                        "Conservative annual case uses one employee and two contractors",
-                        "$220,000 gross less $132,000 acquisition leaves $88,000 retained",
-                        "$61,600 covers all remaining costs and recognized loss allowances",
-                        "$26,400 owner profit equals 12% gross and 30% retained",
-                    ],
-                    [
-                        "Base annual case uses one employee and two contractors",
-                        "$1,010,000 gross less $606,000 acquisition leaves $404,000 retained",
-                        "$212,100 covers all remaining costs and recognized loss allowances",
-                        "$191,900 owner profit equals 19.0% gross and 47.5% retained",
-                    ],
-                    [
-                        "Scaled annual case uses two employees and three contractors",
-                        "$1,800,000 gross less $1,080,000 acquisition leaves $720,000 retained",
-                        "$252,000 covers all remaining costs and recognized loss allowances",
-                        "$468,000 owner profit equals 26% gross and 65% retained",
-                    ],
-                    [
-                        "Ten-package Super Bowl illustration includes an explicit loss reserve",
-                        "$40,000 package billings less $24,000 acquisition leaves $16,000",
-                        "$10,000 deductions include fees markdowns reserves fulfillment funding and overhead",
-                        "$6,000 expected contribution equals 15% of total package billings",
-                    ],
-                    [
-                        "Post-event payout timing creates measurable acquisition cash carrying expense",
-                        "$10,000 acquisition remains committed for fifty-two total calendar days",
-                        "At 18% annual simple interest the carrying cost approximates $256.44",
-                        "Deduct carrying cost and fund obligations before platform settlement arrives",
-                    ],
-                    [
-                        "Thirty-day liquidity coverage excludes deposits and unsettled platform balances",
-                        "$30,000 unrestricted resources divided by $25,000 stressed outflows equals 1.2",
-                        "Internal warning begins below 1.5 times stressed payment obligations",
-                        "Stop expansion and restore coverage before accepting additional commitments",
-                    ],
-                    [
-                        "Single-event concentration measures stressed cash demand rather than ticket count",
-                        "$8,000 stressed demand against $30,000 unrestricted resources equals 26.67%",
-                        "Internal concentration warning activates above twenty percent of unrestricted resources",
-                        "Reduce exposure or add documented liquidity before purchasing further inventory",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "3. Remove Ban Triggers, Rights Defects, and Refund Evidence Gaps",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Automation belongs in owned inventory management, not in defeating ticket-access controls. The BOTS "
-                    "Act, 15 U.S.C. §45c, prohibits covered circumvention of technological measures enforcing posted "
-                    "purchase limits or ticket-ordering rules, and addresses selling tickets obtained through prohibited "
-                    "circumvention when the statutory knowledge conditions apply. Reject queue bypass, CAPTCHA-solving arrangements "
-                    "used to defeat controls, coordinated identities designed to evade limits, and suppliers whose "
-                    "sourcing story depends on those methods. Require purchase records, acquisition authority, and a "
-                    "written supplier representation that matches the actual procurement process. Such records are evidence, "
-                    "not immunity from defective sourcing. Authorized POS synchronization, pricing analysis, invoice matching, "
-                    "and issuer-supported transfers serve different functions from access circumvention. State reseller obligations "
-                    "are separate: New York Arts and Cultural Affairs Law Article 25 includes licensing provisions "
-                    "at §25.13, with scope and exceptions that must be checked against the operator's activities. "
-                    "Maintain an obligation register by seller location, buyer market, and event jurisdiction instead "
-                    "of assuming one marketplace account resolves every requirement. A supplier refusal to identify "
-                    "the originating purchase or explain transferable rights blocks that lot. If suspicious stock "
-                    "already exists, stop distribution, preserve records, and pursue a documented return rather than "
-                    "laundering the inventory through another exchange."
-                ),
-                (
-                    "Mispriced offers create exposure before a ticket is delivered. The FTC's Rule on Unfair "
-                    "or Deceptive Fees, 16 CFR Part 464, requires covered live-event ticket offers to display "
-                    "the total price clearly and conspicuously, including mandatory charges subject to the rule's "
-                    "specified treatment of government charges, shipping, and optional additions. Display prominence matters; "
-                    "a small-print explanation does not repair a misleading headline. For an illustrative $500 seat "
-                    "with a mandatory $75 service charge, the advertised total is $575 before any properly "
-                    "excluded charge, not $500 followed by a surprise checkout addition. Capture the rendered "
-                    "listing and checkout whenever fee configuration changes, including mobile layouts and package upsells. "
-                    "State requirements can impose additional duties. Separately, distinguish admission from hospitality access: "
-                    "a restaurant booking near an F1 circuit is not paddock access, and a hotel room "
-                    "near Augusta is not a Masters credential. Super Bowl, World Cup, and Final Four "
-                    "packages need explicit component descriptions, delivery dates, transfer permissions, and refund mechanics. "
-                    "Do not imply official affiliation or guaranteed access unsupported by supplier rights. If a "
-                    "component becomes unavailable, obtain an accepted substitution or apply the governing refund obligation; "
-                    "a unilateral itinerary rewrite is a customer dispute waiting to mature."
-                ),
-                (
-                    "Chargebacks expose the gap between operational completion and provable performance. Keep the order, "
-                    "accepted terms, itemized entitlements, acquisition receipt, issuer-supported transfer trail, recipient acceptance, "
-                    "customer communications, and settlement statement under one order identifier. A screenshot of a barcode "
-                    "proves neither validity nor entry. Entry-scan evidence can help when legitimately available, but "
-                    "its absence must not be replaced with invented confirmation. Separate unauthorized-payment disputes from "
-                    "nonreceipt, cancellation, and package-quality disputes because the relevant evidence differs. Use the "
-                    "payment provider's permitted authentication and verification services; store only necessary payment references, "
-                    "not card security codes or exported full card numbers. Internally flag any unresolved delivery "
-                    "exception within twenty-four hours of the promised deadline and require immediate attention when "
-                    "an event is less than forty-eight hours away. Measure defects per hundred fulfilled orders "
-                    "and their dollar severity; one $15,000 corporate package can overwhelm apparently excellent seat-level "
-                    "percentages. Set an initial internal warning at one disputed order per hundred and tighten "
-                    "it below any applicable provider threshold. That warning is not a card-network standard. "
-                    "When an account is restricted, stop new exposure, preserve accessible records through authorized "
-                    "exports, resolve outstanding obligations, and use the platform's appeal process rather than alternate "
-                    "identities or concealed account ownership."
-                ),
-            ],
-            "table": {
-                "caption": "Seven Rights, Advertising, and Platform-Enforcement Failure Modes",
-                "headers": [
-                    "Prohibited shortcut or customer-facing defect pattern",
-                    "Evidence required before publishing or accepting payment",
-                    "Internal warning that demands an immediate decision",
-                    "Containment action that preserves legitimate recovery options",
-                ],
-                "rows": [
-                    [
-                        "Supplier procurement depends on defeating covered ticket purchase controls",
-                        "Original acquisition records and a coherent documented authorized sourcing process",
-                        "Any sourcing explanation involving bypassed queues or defeated purchase limits",
-                        "Reject the lot and preserve records supporting supplier recovery",
-                    ],
-                    [
-                        "Reseller activity expands without checking applicable state licensing provisions",
-                        "Activity-specific review of Article 25 and other applicable state rules",
-                        "Any new jurisdiction or sales model lacking documented obligation mapping",
-                        "Pause affected sales until required licensing and operating conditions exist",
-                    ],
-                    [
-                        "Mandatory seller charges appear only after a lower advertised price",
-                        "Rendered offer and checkout showing required total price prominence",
-                        "A $500 headline conceals a mandatory additional $75 charge",
-                        "Correct every affected channel before accepting further customer orders",
-                    ],
-                    [
-                        "F1 hospitality descriptions imply paddock access without transferable rights",
-                        "Supplier contract identifying exact credential areas and permitted recipients",
-                        "Any marketing entitlement exceeds the supplier's written access grant",
-                        "Remove unsupported claims or obtain genuine authorized replacement inventory",
-                    ],
-                    [
-                        "Masters packages combine nearby lodging with unsupported admission promises",
-                        "Separate lodging confirmation and documented rights for each admission credential",
-                        "Missing admission provenance despite a fully paid hotel reservation",
-                        "Withdraw the unsupported package and address existing customer obligations",
-                    ],
-                    [
-                        "World Cup package components carry inconsistent cancellation and refund triggers",
-                        "Component-level supplier terms matched against customer-facing repayment promises",
-                        "Customer refunds become due before supplier recoveries are contractually payable",
-                        "Reserve the timing gap and renegotiate mismatched supplier commitments",
-                    ],
-                    [
-                        "Final Four disputes lack evidence connecting credentials to accepted delivery",
-                        "Order-linked transfer acceptance records and accurately described package entitlements",
-                        "Any unresolved delivery exception within twenty-four hours of the deadline",
-                        "Assign immediate resolution ownership and preserve authentic dispute evidence",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four Pre-Flight Checks Before Cash Becomes Event Exposure",
-                "body": (
-                    "A failed check stops the affected purchase or listing; it does not authorize "
-                    "a workaround through another account, supplier identity, or payment route."
-                ),
-                "items": [
-                    "Verify acquisition provenance, applicable reseller obligations, transfer permissions, and the exact suite or hospitality entitlement against primary records.",
-                    "Test reservation and removal acknowledgements on every connected exchange; require zero unresolved duplicate seat keys before broadcasting.",
-                    "Approve a written contribution bridge including fees, markdowns, reserves, carrying costs, and the latest plausible settlement date.",
-                    "Confirm advertised total pricing, customer refund terms, supplier recovery timing, and cash coverage before accepting package deposits.",
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Freeze the affected exposure",
-                    "action": "Stop new purchases and broadcasts for the implicated event, supplier, or connection.",
-                    "detail": (
-                        "Retain existing customer-service access and capture live commitments; "
-                        "do not cancel unrelated orders merely to simplify reconciliation."
-                    ),
-                },
-                {
-                    "step": 2,
-                    "title": "Reconstruct the obligation chain",
-                    "action": "Join acquisition, listing, sale, transfer, refund, and settlement records by inventory identifier.",
-                    "detail": (
-                        "Identify the exact missing credential, unsupported entitlement, deletion failure, "
-                        "or payment obligation and preserve original timestamps."
-                    ),
-                },
-                {
-                    "step": 3,
-                    "title": "Fund and resolve the customer obligation",
-                    "action": "Use reserved resources for required refunds or authorized replacement fulfillment.",
-                    "detail": (
-                        "Calculate contractual remedies individually, avoid double-counting alternative remedies, "
-                        "and pursue supplier reimbursement on a separate recovery timeline."
-                    ),
-                },
-                {
-                    "step": 4,
-                    "title": "Reopen only the repaired operating path",
-                    "action": "Document root cause, test the correction, and verify available cash before restoring exposure.",
-                    "detail": (
-                        "Require clean inventory reconciliation and confirmed platform permissions; "
-                        "an account restriction remains binding during any appeal."
-                    ),
-                },
-            ],
-        },
-        {
-            "heading": "4. Ring-Fence Card Fulfillment and Run a Weekly Survival Drill",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "The mapped TRACK_2 play wholesale_buying_group_card_float_cycling is the Pre-Committed Buying-Group "
-                    "Fulfillment and Commercial Card Working-Capital Operator, not a method for funding speculative "
-                    "ticket inventory. Fulfill genuine, pre-committed merchandise purchase orders through BuyForMeRetail, "
-                    "Pointsmaker, or independently verified counterparties only after checking current program terms and "
-                    "actual counterparty identity. These names identify possible counterparties, not endorsements or assurances "
-                    "of present settlement performance. Use authorized commercial-card purchases and documented delivery to "
-                    "designated warehouses in Delaware, New Hampshire, or Oregon. On a $10,000 merchandise purchase, "
-                    "a contracted 3% spread produces $300. Eligible 2% cashback adds $200; eligible 4% rewards "
-                    "would add $400 instead. After $120 of freight, $80 of handling, and a $100 defect "
-                    "reserve, contribution is $200 in the 2% case or $400 in the 4% case, before "
-                    "overhead and funding costs. Without rewards, this example merely breaks even before those "
-                    "additional costs, making issuer eligibility decisive. Value bonuses at realizable value and exclude "
-                    "unearned, capped, or ineligible amounts. Use uncapped rewards only when current issuer terms "
-                    "expressly support them. This merchandise illustration is outside the Volume 043 annual ticket "
-                    "scorecard and must not be added to its canonical profits without a separately reconciled model."
-                ),
-                (
-                    "A warehouse address does not determine the transaction's entire tax treatment. Sourcing, possession, "
-                    "resale documentation, nexus, and downstream obligations matter even when delivery occurs in a "
-                    "state without a general sales tax. Preserve the purchase order, authorized card receipt, "
-                    "serial-number manifest where applicable, carrier acceptance, warehouse receipt, and counterparty acceptance. "
-                    "Specify whether Net-3 means business or calendar days and which acceptance event starts the "
-                    "clock. An illustrative order accepted on day eight with three-calendar-day settlement is payable "
-                    "on day eleven; if the card bill is due on day twenty-five, scheduled cushion is "
-                    "fourteen days, not sixty. Up to approximately sixty days can arise only with suitable "
-                    "products, purchase dates, and actual statement terms. Do not assume a grace period survives "
-                    "revolving balances. A seven-day acceptance dispute cuts that fourteen-day cushion in half. "
-                    "Warn on the first missed contractual settlement and stop new purchases immediately when an "
-                    "overdue receivable threatens the card reserve. Meet card obligations from reserved cash, recover "
-                    "or resell legitimately owned merchandise through permitted channels, and resume only after settlement "
-                    "reliability and issuer eligibility are confirmed. Circular purchases, fictitious sales, repeated limit "
-                    "evasion, and borrowing against customer ticket refunds are outside this operating model, regardless "
-                    "of the advertised rewards yield."
-                ),
-                (
-                    "Make the weekly review an obligation drill, not a revenue celebration. Export supported POS "
-                    "and marketplace reports into a controlled ledger and reconcile beginning inventory plus purchases "
-                    "minus fulfilled sales, authorized write-offs, and ending inventory. Track gross-to-retained contribution "
-                    "by channel, realized selling fees, reserve movements, unsold acquisition cost, delivery defects, "
-                    "acknowledgement latency, supplier ageing, and unrestricted cash coverage. A fee deduction moving "
-                    "from 10% to 13% on $50,000 of monthly sales removes $1,500 before any change "
-                    "in demand; investigate a one-percentage-point unexplained movement rather than waiting for month-end "
-                    "profit. Measure available-to-sell quantities against accepted orders daily, and more frequently around "
-                    "on-sales, playoff qualification, and event-week price shocks. Run three stress cases weekly: "
-                    "the largest event postpones, the largest supplier misses settlement, and the busiest exchange "
-                    "withholds its next payout. Combine correlated cases where the same event drives both exposures. "
-                    "Assign one owner to customer resolution and another person to verify inventory and cash "
-                    "when staffing permits; the Scaled team of two full-time staff and three contractors still "
-                    "requires explicit separation of purchase authority and reconciliation. Restore growth only after "
-                    "the ledger balances, required payments are funded, and the specific failure mechanism has "
-                    "been corrected with observable evidence."
-                ),
-            ],
-            "table": {
-                "caption": "TRACK_2 Isolation and Weekly Forensic Monitoring Matrix",
-                "headers": [
-                    "Operating check and distinct source of exposure",
-                    "Concrete unit economics or reconciliation test",
-                    "Internal intervention threshold and required supporting evidence",
-                    "Fallback that protects cash and legitimate counterparties",
-                ],
-                "rows": [
-                    [
-                        "Pre-committed merchandise fulfillment requires genuine independently verified purchase orders",
-                        "$10,000 merchandise cost and 3% contracted spread produce $300",
-                        "No purchase proceeds without documented quantity price acceptance and settlement",
-                        "Decline unsupported orders and preserve capital for existing obligations",
-                    ],
-                    [
-                        "Commercial-card rewards depend on current product and issuer eligibility",
-                        "Eligible 2% cashback adds $200 to a $10,000 purchase",
-                        "Exclude rewards whenever caps exclusions or realizability remain unresolved",
-                        "Reprice using zero rewards or decline the proposed merchandise purchase",
-                    ],
-                    [
-                        "Higher eligible rewards improve contribution without changing underlying delivery obligations",
-                        "Eligible 4% value adds $400 rather than the $200 case",
-                        "Require current written issuer terms before modeling any uncapped benefit",
-                        "Stop purchases when realized rewards diverge from documented eligibility",
-                    ],
-                    [
-                        "Warehouse delivery requires evidence beyond a favorable state tax label",
-                        "Freight handling and defect reserve total $300 in the illustration",
-                        "Missing carrier receipt warehouse acceptance or resale documentation blocks expansion",
-                        "Resolve possession and documentation before relying on settlement or tax assumptions",
-                    ],
-                    [
-                        "Net-3 collection must fit the actual commercial-card payment calendar",
-                        "Day-eleven collection against day-twenty-five payment provides fourteen days",
-                        "First missed contractual settlement triggers warning and exposure reassessment",
-                        "Pay cards from reserves and recover legitimately owned merchandise",
-                    ],
-                    [
-                        "Exchange fee leakage can consume contribution without changing sales volume",
-                        "Three additional fee points on $50,000 sales remove $1,500",
-                        "Investigate any unexplained one-percentage-point movement in realized selling costs",
-                        "Correct channel configuration and reprice only after reconciling statements",
-                    ],
-                    [
-                        "Weekly correlated stress testing covers event supplier and exchange failures",
-                        "Combine shared-event refunds with payout delays rather than isolated averages",
-                        "Any stressed cash deficit stops purchases despite positive booked contribution",
-                        "Fund existing obligations and reopen only after evidenced operating repair",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": (
-        "A ticket spread becomes profit only after the guest receives the promised access "
-        "and every remaining cash obligation is funded."
-    ),
-    "diagram_id": "diag-05",
-    "action_checklist": [
-        "Create separate exchange-resale, suite-splitting, hospitality, and TRACK_2 merchandise ledgers with distinct purchase ceilings and settlement calendars.",
-        "Test a complete reservation-to-deletion cycle across supported marketplace connections and stop broadcasting on unresolved inventory acknowledgements.",
-        "Reconcile $88,000, $404,000, and $720,000 retained contribution to the exact $26,400, $191,900, and $468,000 annual owner-profit cases.",
-        "Build a thirteen-week cash schedule that excludes refundable deposits from available resources and includes post-event holds, refunds, card dates, and supplier recoveries.",
-        "Audit acquisition provenance, BOTS Act boundaries, applicable state reseller duties, advertised total pricing, and every promised hospitality entitlement.",
-        "Run the largest-event, largest-supplier, and largest-exchange stress drill weekly; fund obligations and document repairs before restarting purchases.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "15 U.S.C. §45c — Unfair and deceptive acts and practices relating to circumvention of ticket purchasing rules",
-            "url": "https://www.law.cornell.edu/uscode/text/15/45c",
-            "relevance": (
-                "Defines covered ticket-control circumvention and related resale restrictions; "
-                "requires procurement controls distinct from authorized inventory synchronization."
-            ),
-        },
-        {
-            "title": "16 CFR Part 464 — Rule on Unfair or Deceptive Fees",
-            "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-D/part-464",
-            "relevance": (
-                "Sets total-price display and fee-representation requirements for covered live-event "
-                "ticket offers, including treatment of mandatory charges and permitted exclusions."
-            ),
-        },
-        {
-            "title": "New York Arts and Cultural Affairs Law §25.13 — Licensing of ticket resellers",
-            "url": "https://www.nysenate.gov/legislation/laws/ACA/25.13",
-            "relevance": (
-                "Provides New York ticket-reseller licensing provisions; map applicability, "
-                "exceptions, and required operating conditions to the actual selling activity."
-            ),
-        },
-        {
-            "title": "New York Arts and Cultural Affairs Law §25.07 — Ticket resale requirements",
-            "url": "https://www.nysenate.gov/legislation/laws/ACA/25.07",
-            "relevance": (
-                "Supplies additional New York ticket-sale and resale requirements, including "
-                "price-disclosure provisions that must be checked alongside federal offer rules."
-            ),
-        },
-    ],
-}
+CHAPTER_5 = {'id': 'Q5',
+ 'chapter_id': 'Q5',
+ 'chapter_number': 5,
+ 'question_number': 5,
+ 'slug': 'marquee-events-beyond-nfl-masters-tennis-ufc-coachella-college-finals',
+ 'question_prompt': "How do you access other marquee events whose ticketing systems differ from the NFL's?",
+ 'kicker': 'Q5 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Marquee Events Beyond the NFL: Masters, Tennis, UFC, Coachella and College Finals',
+ 'subtitle': 'Masters ballot vs. packages and the secondary-resale ban, Wimbledon debentures, US Open '
+             'ticket tiers, UFC On Location VIP and first-event buying tips, Coachella sell-outs, CFP '
+             'championship pricing, and championship ticket-stub collecting',
+ 'layout_template': 'case_study',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Practitioners covering the Masters, UFC, US Open, Wimbledon, Coachella and the CFP '
+                      'title game agree on one split. Augusta is an official-channel-only lockbox. '
+                      'Everything else runs on resale and premium hospitality. Stated Masters ballot odds '
+                      'range from under 1% (Sports Travel Tom) to 3-5% (Gameday Guides). The ballot allows '
+                      'one application per household inside a June 1-20 window. Brokers still rent '
+                      'tournament badges for up to four grand a day, even as Augusta voids tickets at the '
+                      'gate with RFID tracking. College final listings topped $3,000 in the nosebleeds, '
+                      'yet an IU economist says nine times out of ten prices fall near game time. UFC VIP '
+                      'buyers report three-minute entry, free food and fighter access. Those packages '
+                      "range from Prodigy Slots' break-even math to PowerBombClub's invite-only $80,000 "
+                      'Elite Plus pairs. Disagreements center on face value, when to buy, and whether '
+                      'expensive tennis seats are worth anything.',
+ 'key_metrics': [{'label': 'Masters ballot success odds',
+                  'metric': 'Masters ballot success odds',
+                  'value': 'Less than 1% chance of success',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Sports Travel Tom's stated odds of winning the Masters ballot, given the "
+                             'volume of applicants.',
+                  'source': 'Sports Travel Tom ([iKAz6YJRTXI @ 00:01:43])'},
+                 {'label': 'Wimbledon Center Court debenture price',
+                  'metric': 'Wimbledon Center Court debenture price',
+                  'value': 'More than $275,000 for 2026-2030, a 75% profit on previous prices',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'The cost of a five-year guaranteed Center Court seat package, which buyers '
+                             'now treat as a tradable asset.',
+                  'source': 'Firstpost ([R9QNsXzjvxU @ 00:02:22])'},
+                 {'label': 'CFP title game nosebleed floor price',
+                  'metric': 'CFP title game nosebleed floor price',
+                  'value': 'More than $3,000 starting price; up to $20,000 at the 50-yard line',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Resale listings across StubHub, Ticketmaster and SeatGeek for the IU vs '
+                             'Miami national championship.',
+                  'source': 'WTHR ([OSa-CK_qebs @ 00:00:01])'},
+                 {'label': 'UFC front-row VIP pair cost',
+                  'metric': 'UFC front-row VIP pair cost',
+                  'value': '46,747.22 Canadian (roughly $35,000 American) for two tickets',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Troydan's front-row cage-side VIP package, with weigh-in stage access and "
+                             'private transportation, at T-Mobile Arena.',
+                  'source': 'Troydan ([0jqhQFvHHcc @ 00:00:32])'}],
+ 'sections': [{'heading': 'Section 1: The Practitioner Consensus',
+               'paragraphs': ['Every operator who touched Augusta hits the same wall. The Masters runs on '
+                              'a ballot, not a general sale, and the club treats any ticket that did not '
+                              'come from its own channels as void. Sports Travel Tom calls it a ballot '
+                              'event: anyone who waits until early next year is already out of the '
+                              'picture. He also warns that even package tickets must come from Augusta '
+                              "itself or they are not valid [iKAz6YJRTXI @ 00:00:35]. 11Alive's Jennifer "
+                              "Bellamy pulled the club's own language. Augusta National is the only "
+                              'authorized seller, resale is strictly prohibited, and a ticket obtained '
+                              'from a third party by whatever means can get the holder excluded from '
+                              'attendance [QiKFtpmNUqo @ 00:00:51]. Joe Seaman of J Properties Group is an '
+                              'Augusta native and local realtor, and he kills the local-connection myth '
+                              'outright. Residents enter the same lottery as everyone else. '
+                              'Tournament-round inventory is mostly held by badge holders whose families '
+                              'have renewed for 40, 50, even 60 years [U3YMt8EJCrE @ 00:03:45]. Gameday '
+                              'Guides calls it the toughest ticket in sports, tougher than the Super Bowl '
+                              'or Wimbledon, and puts lottery acceptance at roughly 3 to 5 percent '
+                              '[LtTBm2wHjoE @ 00:00:00]. The shared baseline across all four is to '
+                              'register an account, apply every single year, and lock travel early, '
+                              'because hotels and homes fill fast once Masters week approaches.',
+                              'Outside Augusta, the consensus flips. Secondary markets are the main game, '
+                              "and listed prices are a seller's posture rather than a clearing price. WTHR "
+                              'covered the IU vs Miami national title game. Nosebleeds in section 351 sat '
+                              'at a little over $3,000 and club seats near $30,000, yet IU economist Kyle '
+                              'Anderson warned that anyone can ask any price, and few transactions may '
+                              "actually close at those numbers [5T8RLIaR8yg @ 00:01:20]. Anderson's "
+                              'follow-up was blunter: nine times out of ten, prices come down closer to '
+                              "the event. He said resellers are cashing in on fans' fear of committing to "
+                              'Miami without a ticket, and that most inventory on the major platforms is '
+                              'resale [OSa-CK_qebs @ 00:01:13]. BAG & TRAVEL saw the same decay at the US '
+                              'Open. Tickets get dumped back onto Ticketmaster mid-tournament once the '
+                              'players buyers wanted to see are knocked out. That netted them an $85 '
+                              'quarterfinal seat in the same section a friend paid $185 for [B2P9oIBqq5Q @ '
+                              '00:00:48]. Prodigy Slots names the supply-side reason that on-sale day '
+                              'still matters for UFC. As soon as tickets drop, people purchase in bulk to '
+                              'resell them, so anyone who misses release day ends up paying more in the '
+                              'long run [rYABa5xL6d0 @ 00:10:53]. Timing drives the final price as much as '
+                              'budget does.',
+                              'The third point of agreement is that the premium tier sells access and '
+                              'removes friction, not just a better seat. Prodigy Slots had attended '
+                              'roughly nine standard UFC events before buying the On Location VIP package '
+                              'for UFC 310. They judged it worth it: free food, free drinks, fighter '
+                              'meet-and-greets and good mid-level seats came to roughly the same spend as '
+                              'mid-level seats bought on release day [rYABa5xL6d0 @ 00:10:32]. The '
+                              "Wrestling Classic's Vancouver package bundled a fan Q&A, weigh-ins, fighter "
+                              'meetings, a suite serving strip loin steak and ravioli, title-belt photo '
+                              'ops and a post-fight octagon walk. One attendee with four or five events '
+                              'behind them called it the best experience they had had so far [oqJoU9yO2_c '
+                              "@ 00:11:30]. Troydan's front-row cage-side pair ran 46,747.22 Canadian, "
+                              'roughly $35,000 American. It put them on the weigh-in stage dead center, '
+                              'next to Joe Rogan and Dana White [0jqhQFvHHcc @ 00:07:15]. Firstpost '
+                              'describes the same logic at Wimbledon. Center Court debentures guarantee a '
+                              'reserved seat every day of the championships for five years, plus VIP '
+                              'lounges, special viewing rooms and private parking, and the 2026-2030 cycle '
+                              'trades above $275,000 [R9QNsXzjvxU @ 00:02:22]. Across UFC and tennis, '
+                              'buyers pay for certainty and proximity.'],
+               'table': {'caption': 'Where practitioners converge across marquee events beyond the NFL',
+                         'headers': ['Event',
+                                     'What Practitioners Agree On',
+                                     'Operator Takeaway',
+                                     'Expert Source'],
+                         'rows': [['Masters ballot access',
+                                   'Ballot-only event with no general sale and sub-1% stated odds',
+                                   'Register a free account before June 1 and enter every single year',
+                                   'Sports Travel Tom ([iKAz6YJRTXI @ 00:01:43])'],
+                                  ['Masters resale status',
+                                   'Augusta National is the only authorized seller and resale is strictly '
+                                   'prohibited',
+                                   'Tickets obtained through third parties risk exclusion from the '
+                                   'tournament grounds',
+                                   '11Alive ([QiKFtpmNUqo @ 00:00:51])'],
+                                  ['Masters tournament-round inventory',
+                                   'Long-time badge holders renewing for 40 to 60 years hold most seats',
+                                   'Practice rounds are the slightly easier entry point for first-time '
+                                   'patrons',
+                                   'J Properties Group ([U3YMt8EJCrE @ 00:03:45])'],
+                                  ['CFP title game listings',
+                                   'Listed resale prices run ahead of real transactions, with nosebleeds '
+                                   'above $3,000',
+                                   'Treat asking prices as posture and keep watching prices into game week',
+                                   'WTHR ([5T8RLIaR8yg @ 00:01:20])'],
+                                  ['UFC on-sale timing',
+                                   'Bulk buyers grab inventory on release day so they can resell it higher',
+                                   'Buy on the day tickets go on sale or expect to pay more later',
+                                   'Prodigy Slots ([rYABa5xL6d0 @ 00:10:53])'],
+                                  ['UFC VIP hospitality',
+                                   'On Location packages bundle Q&A, weigh-ins, suite food, fighter '
+                                   'meetings and octagon access',
+                                   'Premium buyers are purchasing access and perks rather than only a seat '
+                                   'location',
+                                   'The Wrestling Classic ([oqJoU9yO2_c @ 00:09:41])'],
+                                  ['Wimbledon debentures',
+                                   'Five-year Center Court seat guarantees now cost more than $275,000 '
+                                   'each',
+                                   'Debentures are the only exchangeable Wimbledon tickets and investors '
+                                   'resell them for profit',
+                                   'Firstpost ([R9QNsXzjvxU @ 00:02:42])']]}},
+              {'heading': 'Section 2: Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['Masters execution is a calendar drill. Sports Travel Tom lays out the 2027 '
+                              'cycle. The ballot opens June 1, 2026 and closes June 20, 2026, and timing '
+                              'inside the window does not matter because it is not first come, first '
+                              'served. A free account on the Masters site must exist before the window '
+                              'opens, and results arrive by email toward the end of July [iKAz6YJRTXI @ '
+                              '00:01:08]. His entry tactic is to request the two-ticket maximum for every '
+                              'day, since a winner is only offered one day. His 2026 benchmark is $125 '
+                              'each for the Monday and Tuesday practice rounds, $150 for Wednesday with '
+                              'the par 3, and $160 for tournament days [iKAz6YJRTXI @ 00:02:35]. Gameday '
+                              'Guides quotes face value lower for practice rounds and higher for '
+                              'tournament days: $75 to $115 for practice and $195 to $315 for tournament '
+                              'days. The channel adds that Augusta checks addresses to enforce one '
+                              'application per household, so roommates who both apply separately both get '
+                              'disqualified [LtTBm2wHjoE @ 00:01:03]. On the grey market, the same channel '
+                              'describes two products. Practice-round tickets are bought outright to keep, '
+                              'usually for two to three grand. Tournament badges are rented from a broker: '
+                              'you pick it up, use it and return it that evening, for up to four grand a '
+                              'day. Augusta is now voiding tickets at the gate with RFID tracking to catch '
+                              'brokers and permanently revoking lifetime badges, so resale buyers carry a '
+                              'real risk [LtTBm2wHjoE @ 00:01:43].',
+                              'Prodigy Slots mapped the UFC premium purchase path step by step. Go to the '
+                              'UFC homepage, open the menu, then the events tab, then the VIP experience '
+                              'page. Each card lists four tiers: Rising Star at the bottom, Challenger in '
+                              'the middle, and Champion with floor seats. The fourth tier, Elite, has no '
+                              'posted price and requires contacting an On Location representative directly '
+                              '[rYABa5xL6d0 @ 00:02:43]. After a confirmation-number email, the next '
+                              "contact comes on the morning of Friday's ceremonial weigh-ins: an email and "
+                              'a text giving location, time and entrance. Buyers then collect a lanyard '
+                              'and assigned seating near the stage. On fight night, a dedicated VIP door '
+                              'beside the main entrance got them to the lounge in about three minutes, '
+                              'compared with standing outside for over an hour at UFC 306 [rYABa5xL6d0 @ '
+                              '00:05:56]. PowerBombClub went a level higher with Elite Plus at roughly '
+                              '$80,000. They say it cannot be bought on the UFC website, requires a UFC '
+                              'invitation and is sold only in pairs. The package delivered weigh-in stage '
+                              "time, a cage-side prelim at Dana White's table and a main-event walkout "
+                              "[UTfE6DLqtLY @ 00:00:17]. Troydan's front-row tier required both attendees "
+                              'to pass a background check because the seats sat close to Donald Trump '
+                              '[0jqhQFvHHcc @ 00:00:53].',
+                              'Below the premium tier, practitioners work timing and seat geometry. '
+                              'MMALeaked paid $100 for a UFC Fight Night seat one section off the floor, '
+                              'close enough to watch walkouts. He paid about $470 after fees for the last '
+                              'section at UFC 299, where a metal pillar blocked his view and forced him '
+                              'onto the screen. He also flagged UFC 304 listed at $423, which lands above '
+                              '$500 after fees [2vauuB_YXFc @ 00:09:01]. His grey-hat play is to buy that '
+                              'cheap ticket, then walk into lower sections with a group as the arena fills '
+                              'toward the main card. Security checks tickets at the start, he says, but '
+                              'stops checking every ticket once people move in groups. He admits you will '
+                              'get kicked out if you are caught [2vauuB_YXFc @ 00:09:40]. In college '
+                              'football, WTHR reported that Anderson bought Peach Bowl tickets hours '
+                              'before kickoff. The station also saw Rose Bowl prices drop to less than '
+                              'half once the game entered its final 24 hours [OSa-CK_qebs @ 00:01:47]. At '
+                              'the US Open, BAG & TRAVEL buys one or two basic tickets before travel, such '
+                              'as a grounds pass plus an Arthur Ashe seat, then hunts resale during the '
+                              'event. Their catch: reselling through Ticketmaster required an American '
+                              'bank account, which locked UK buyers out of ever flipping a seat back '
+                              '[B2P9oIBqq5Q @ 00:04:10].'],
+               'table': {'caption': 'Street-level numbers and execution detail by play',
+                         'headers': ['Play', 'Exact Numbers', 'Execution Detail', 'Expert Source'],
+                         'rows': [['Masters ballot entry',
+                                   'Two tickets max per day; 2026 face $125, $125, $150, $160',
+                                   'Select every day because a winner is offered only one single day',
+                                   'Sports Travel Tom ([iKAz6YJRTXI @ 00:02:35])'],
+                                  ['Masters official packages',
+                                   '$4,000 to upwards of $10,000 including hotel, transfers and tickets',
+                                   'Use only official package operators, because tickets not issued by '
+                                   'Augusta are invalid',
+                                   'Sports Travel Tom ([iKAz6YJRTXI @ 00:04:58])'],
+                                  ['Masters broker badge rental',
+                                   'Practice tickets two to three grand; tournament badges up to four '
+                                   'grand daily',
+                                   'Pick up the badge, use it, then return it to the broker that evening',
+                                   'Gameday Guides ([LtTBm2wHjoE @ 00:01:43])'],
+                                  ['Masters secondary ceiling',
+                                   '$1,500 to $10,000 or more per ticket, with Sunday even higher',
+                                   'Resale value reflects demand for one of the most sought-after events '
+                                   'in the world',
+                                   'J Properties Group ([U3YMt8EJCrE @ 00:04:55])'],
+                                  ['UFC seat value comparison',
+                                   '$100 one section off the floor versus $470 for the last section at UFC '
+                                   '299',
+                                   'Fight Night cards deliver closer seats and visible walkouts for far '
+                                   'less money',
+                                   'MMALeaked ([2vauuB_YXFc @ 00:01:50])'],
+                                  ['UFC Elite Plus invite tier',
+                                   'Roughly $80,000, invitation only, sold strictly in pairs of two',
+                                   "Includes weigh-in stage time, a cage-side prelim at Dana White's "
+                                   'table, and a walkout',
+                                   'PowerBombClub ([UTfE6DLqtLY @ 00:00:17])'],
+                                  ['Coachella VIP fallback',
+                                   'VIP still listed at $1,399 per weekend after GA weekends one and two '
+                                   'sold out',
+                                   'VIP stayed open as the only fallback once GA and the four pack were '
+                                   'gone',
+                                   'Courtney Willis ([f5hPIW3U13c @ 00:00:32])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Edges the practitioners actually used',
+                           'body': 'Small procedural moves that change odds, cost or access at marquee '
+                                   'events.',
+                           'items': ['Request two tickets for every Masters day in the ballot, since a '
+                                     'winner is only offered one day anyway [Sports Travel Tom — '
+                                     'iKAz6YJRTXI @ 00:02:35]',
+                                     'Stay in Columbia, South Carolina at $100 to $200 a night instead of '
+                                     "Augusta's 5 to 10x markups, saving $300 to $800 per night, and book "
+                                     'as soon as lottery results drop in July [Gameday Guides — '
+                                     'LtTBm2wHjoE @ 00:06:02]',
+                                     'Use the free US Open fan week before the main draw for qualifying '
+                                     'matches and front seats at uncrowded practice courts with all the '
+                                     'top players [BAG & TRAVEL — B2P9oIBqq5Q @ 00:01:37]',
+                                     'When the Coachella queue crashes or restarts, open and close tabs, '
+                                     'switch to incognito mode and change Chrome profiles to push the '
+                                     'purchase through [Courtney Willis — f5hPIW3U13c @ 00:01:20]']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Lock the Masters ballot window',
+                              'action': 'Create a Masters account before June 1, then apply once per '
+                                        'household between June 1 and June 20.',
+                              'detail': 'Account creation is free, and entry timing inside the window does '
+                                        'not matter. If you are selected, payments open in late July '
+                                        '[Sports Travel Tom — iKAz6YJRTXI @ 00:01:28] [11Alive — '
+                                        'QiKFtpmNUqo @ 00:01:33]'},
+                             {'step': 2,
+                              'title': 'Read resale listings as asking prices',
+                              'action': 'Track listed prices into the final 24 hours instead of buying at '
+                                        'the first quote you see.',
+                              'detail': 'Nine times out of ten, prices come down close to the event. Rose '
+                                        'Bowl prices fell to less than half in the final 24 hours [WTHR — '
+                                        'OSa-CK_qebs @ 00:01:13]'},
+                             {'step': 3,
+                              'title': 'Price UFC VIP against on-sale seats',
+                              'action': 'Compare the VIP tier against mid-level seats bought on release '
+                                        'day, counting food and drinks.',
+                              'detail': 'Prodigy Slots spent roughly the same as on-sale mid-level seats '
+                                        'once free food, drinks and fighter access were counted [Prodigy '
+                                        'Slots — rYABa5xL6d0 @ 00:10:32]'},
+                             {'step': 4,
+                              'title': 'Confirm your exit before you buy',
+                              'action': 'Check the resale route and the gate risk before committing money '
+                                        'to a ticket.',
+                              'detail': 'Ticketmaster resale at the US Open required an American bank '
+                                        'account [BAG & TRAVEL — B2P9oIBqq5Q @ 00:04:10]. Augusta voids '
+                                        'broker tickets at the gate with RFID tracking [Gameday Guides — '
+                                        'LtTBm2wHjoE @ 00:01:59]'}]},
+              {'heading': 'Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The sharpest split on Augusta is whether the lottery is a long game or a '
+                              'pure coin flip. Sports Travel Tom pegs ballot odds at less than 1% and '
+                              'tells operators to just try year after year after year, because surely one '
+                              'year you will be successful; his alternative lane is the official golf '
+                              'travel package, bundling hotel, transfers and badges, at the cost of a lot '
+                              'more money [iKAz6YJRTXI @ 00:05:16]. Gameday Guides quotes a 3 to 5% '
+                              'acceptance rate but flatly rejects the persistence thesis: applying '
+                              'multiple years does not improve your odds, because each lottery is '
+                              'completely independent [LtTBm2wHjoE @ 00:01:25]. Gameday Guides also draws '
+                              'a hard line inside the resale lane itself. Practice-round tickets are '
+                              'bought outright as single-day tickets to keep, usually for two to three '
+                              'grand, while tournament days mean strictly renting a badge from a broker, '
+                              'picking it up, using it, and returning it that evening, at up to four grand '
+                              "a day [LtTBm2wHjoE @ 00:01:43]. J Properties Group's Joe Seaman, a lifelong "
+                              'Augusta resident, prices the same secondary market at $1,500 to $10,000 or '
+                              'more a ticket, with Sunday running even higher, and insists locals get no '
+                              'secret access whatsoever [U3YMt8EJCrE @ 00:04:55].',
+                              'Prodigy Slots argues for locking in on day one: as soon as UFC tickets go '
+                              'on sale, people buy them in bulk and resell them, so anyone who waits ends '
+                              'up paying more in the long run [rYABa5xL6d0 @ 00:10:53]. BAG & TRAVEL runs '
+                              'the inverse playbook at the US Open, telling buyers not to rush because '
+                              'strong seats resurface during the tournament when fans whose hoped-for '
+                              'players have been knocked out resell them through Ticketmaster; the speaker '
+                              'paid $85 for a quarterfinal ticket bought the night before, while a friend '
+                              'paid $185 for the same ticket in the same section [B2P9oIBqq5Q @ 00:00:48]. '
+                              "The speaker's hedge is to buy one or two basic tickets before going, such "
+                              "as a grounds pass plus an Arthur Ashe seat if needed. WTHR's coverage of "
+                              'the college football title game leans toward waiting: nine times out of ten '
+                              'prices come down as the event approaches, sellers post really high prices '
+                              'that mostly never sell, and resellers are cashing in on buyer fear of '
+                              'committing to Miami without a ticket [OSa-CK_qebs @ 00:01:13]. WTHR is '
+                              'blunt about the downside: commit to the flight and hotel without a seat and '
+                              'you may end up watching from a bar in Miami or outside Hard Rock Stadium '
+                              '[5T8RLIaR8yg @ 00:01:56].',
+                              'On UFC money, the practitioners split between paying up for hospitality and '
+                              "buying cheap and close. MMALeaked's first event was a Fight Night seat for "
+                              '$100, one section from the floor, close enough to watch fighters walk out, '
+                              'against roughly $470 after fees at stacked UFC 299 for a seat in the last '
+                              "section with one row behind [2vauuB_YXFc @ 00:01:50]. That buyer's verdict: "
+                              'a strong Fight Night card beats a nosebleed at a stacked numbered card. '
+                              'Prodigy Slots, after around nine events, argues the opposite end: the On '
+                              'Location VIP package costs more upfront but landed at roughly the same '
+                              'spend as mid-level seats bought on release day, once free food, free '
+                              'drinks, fighter access and good seats are counted [rYABa5xL6d0 @ 00:10:32]. '
+                              "At the ceiling, Troydan's front-row cage-side pair ran about $47,000 "
+                              'Canadian, roughly $35,000 American, packaged with stage access at the '
+                              'weigh-ins, private transportation and a post-fight octagon tour '
+                              '[0jqhQFvHHcc @ 00:00:32]. PowerBombClub describes a pricier tier: Elite '
+                              'Plus, which cannot be bought on the UFC website, requires a UFC invitation, '
+                              "sells only in pairs, and bundles a cage-side seat in Dana White's chair for "
+                              'a fight plus a main-event walkout [UTfE6DLqtLY @ 00:00:17].'],
+               'table': {'caption': 'Side-by-side playbooks where marquee-event practitioners take '
+                                    'opposite positions',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Whether repeated Masters lottery entries improve your odds',
+                                   'Sports Travel Tom: odds under 1%, but keep applying year after year '
+                                   'because surely one year you win',
+                                   'Gameday Guides: 3 to 5% acceptance, and each lottery is completely '
+                                   'independent so repeat years add nothing',
+                                   'Sports Travel Tom ([iKAz6YJRTXI @ 00:05:16]); Gameday Guides '
+                                   '([LtTBm2wHjoE @ 00:01:25])'],
+                                  ['What a winning Masters lottery ticket actually costs at face',
+                                   'Sports Travel Tom 2026 benchmark: $125 Monday and Tuesday, $150 '
+                                   'Wednesday with par 3, $160 tournament days',
+                                   'Gameday Guides: $75 to $115 for practice rounds, $195 to $315 for '
+                                   'tournament days at face value',
+                                   'Sports Travel Tom ([iKAz6YJRTXI @ 00:02:51]); Gameday Guides '
+                                   '([LtTBm2wHjoE @ 00:01:03])'],
+                                  ['How to guarantee Masters attendance without winning the lottery',
+                                   'Official golf travel package with hotel, transfers and tickets, priced '
+                                   'from $4,000 to upwards of $10,000',
+                                   'Broker route: keep a practice ticket for two to three grand, or rent a '
+                                   'tournament badge up to four grand daily',
+                                   'Sports Travel Tom ([iKAz6YJRTXI @ 00:04:58]); Gameday Guides '
+                                   '([LtTBm2wHjoE @ 00:01:43])'],
+                                  ['Wimbledon access: standard tickets versus Centre Court debentures',
+                                   'Standard route runs through ballots and queues stretching for hours, '
+                                   'with tickets usually costing several hundred',
+                                   'Debentures for 2026 to 2030 cost over $275,000, guarantee five years '
+                                   'of seats and are the only exchangeable tickets',
+                                   'Firstpost ([R9QNsXzjvxU @ 00:02:22])'],
+                                  ['When to buy tickets for a high-demand live event',
+                                   'Prodigy Slots: buy the day tickets go on sale before bulk buyers '
+                                   'resell them back at a markup',
+                                   'BAG & TRAVEL: wait for in-tournament Ticketmaster resale, paid $85 '
+                                   'where a friend paid $185 for the same ticket',
+                                   'Prodigy Slots ([rYABa5xL6d0 @ 00:10:53]); BAG & TRAVEL ([B2P9oIBqq5Q @ '
+                                   '00:00:48])'],
+                                  ['Whether UFC premium hospitality beats a cheap close seat',
+                                   'Prodigy Slots: VIP experience cost about the same as mid-level seats '
+                                   'once free food and drinks counted',
+                                   'MMALeaked: a $100 Fight Night seat one section from the floor beat a '
+                                   '$470 last-section numbered card',
+                                   'Prodigy Slots ([rYABa5xL6d0 @ 00:10:32]); MMALeaked ([2vauuB_YXFc @ '
+                                   '00:01:50])'],
+                                  ['Whether paid US Open stadium seats are worth the money',
+                                   'BAG & TRAVEL: paid $250 to sit on the Louis Armstrong baseline at '
+                                   'night and called it well worth it',
+                                   'Tennis Fights: refuses $244 entry, calls Arthur Ashe seats worthless, '
+                                   'and will only attend free qualifying',
+                                   'BAG & TRAVEL ([B2P9oIBqq5Q @ 00:02:57]); Tennis Fights ([vvND5YxS-Hg @ '
+                                   '00:01:04])']]}},
+              {'heading': 'Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ["Augusta is where resale exposure turns into a gate-level loss. 11Alive's "
+                              'Verify desk, citing the Masters website, reports Augusta National is the '
+                              'only authorized seller, resale of any Masters ticket is strictly '
+                              'prohibited, and a ticket obtained from a third party by whatever means can '
+                              'get the holder excluded from attendance [QiKFtpmNUqo @ 00:00:51]. Gameday '
+                              'Guides escalates the warning: Augusta is cracking down harder than ever, '
+                              'actively voiding tickets at the gate using RFID tracking to catch brokers '
+                              'and permanently revoking lifetime badges, so a resale buyer is taking a '
+                              'real risk [LtTBm2wHjoE @ 00:01:59]. Even with a valid badge, on-site '
+                              'conduct can end the day early. Gameday Guides reports people have been '
+                              'escorted off the property for carrying a cell phone during tournament '
+                              'rounds, even silenced in a pocket, and its fix is to leave the phone locked '
+                              'in the car [LtTBm2wHjoE @ 00:04:52]. The practitioners do not agree on the '
+                              'device rules, which is itself a trap: Gameday Guides says phones and '
+                              'cameras are allowed Monday through Wednesday, while Sports Travel Tom says '
+                              'you cannot take your mobile phone in at any time and that only a camera is '
+                              'permitted, on practice days [iKAz6YJRTXI @ 00:03:43].',
+                              'Outside Augusta, the losses come from bad price signals and broken '
+                              'checkouts. IU economist Kyle Anderson told WTHR that title-game tickets '
+                              'showing at over $3,000 in the nosebleeds and close to $30,000 in club seats '
+                              'are asks from resale groups, not transactions, warning that anyone can ask '
+                              'for any price but that does not make it the market price [5T8RLIaR8yg @ '
+                              '00:01:38]. The same WTHR coverage relays IU police warnings that scammers '
+                              'rush buyers, that a deal too good to be true probably is, and that buyers '
+                              'should use only verified sites and get proof of purchase [OSa-CK_qebs @ '
+                              '00:02:30]. Checkout itself is a failure point. Courtney Willis describes a '
+                              'Coachella purchase that turned into a nightmare of a crashing site, a '
+                              'restarting queue, closing and reopening tabs, switching to incognito mode '
+                              'and changing Chrome profiles; the speaker landed a GA ticket but walked '
+                              'away without the camping pass they wanted [f5hPIW3U13c @ 00:01:20]. Exit '
+                              'liquidity can also be blocked: BAG & TRAVEL reports that reselling US Open '
+                              'tickets back through Ticketmaster required an American bank account, so UK '
+                              'buyers could not resell, at least the last time the speaker went '
+                              '[B2P9oIBqq5Q @ 00:03:50].',
+                              "In the UFC lane, MMALeaked's worst seat was also the expensive one: at UFC "
+                              '299, paying about $300 more than the Fight Night ticket bought a view '
+                              'blocked by a big metal pillar, forcing the speaker to watch the screen '
+                              'almost the whole time, at which point you might as well watch at home '
+                              '[2vauuB_YXFc @ 00:04:26]. The same creator floats a grey-hat workaround, '
+                              'buying the cheapest ticket and walking into pricier lower sections with a '
+                              'group as the arena fills toward the main card, when security stops checking '
+                              'every ticket, noting the prelims leave many seats open and the arena only '
+                              'fills for the last five fights, while warning that you will get kicked out '
+                              'if caught [2vauuB_YXFc @ 00:07:19]. Troydan shows how the true trip cost '
+                              'escapes the headline ticket price: the round-trip flight alone ran $7,300 '
+                              'and was not covered by the person who paid for the seats [0jqhQFvHHcc @ '
+                              '00:01:21]. The collectors on thebombtickets flag the valuation trap on the '
+                              'back end: over the last two years it has been so difficult to recalibrate '
+                              'what things are worth because prices change so fast, and refusing to '
+                              'overpay means losing pieces; a price that looked too high can triple two '
+                              'years later [icH7RV48MeY @ 00:39:05].'],
+               'table': {'caption': 'Firsthand traps, losses and economics checks reported by '
+                                    'marquee-event practitioners',
+                         'headers': ['Trap',
+                                     'What Went Wrong Firsthand',
+                                     'Economics Check',
+                                     'Expert Source'],
+                         'rows': [['Buying a Masters ticket from any third party',
+                                   'A ticket obtained from a third party by whatever means can get the '
+                                   'holder excluded from the tournament',
+                                   'Augusta National is the only authorized seller and resale of any '
+                                   'Masters ticket is strictly prohibited',
+                                   '11Alive ([QiKFtpmNUqo @ 00:00:51])'],
+                                  ['Filing two Masters lottery applications from one address',
+                                   'Roommates who apply separately at the same address both get '
+                                   'disqualified because Augusta verifies addresses',
+                                   'Only one application per household counts, not one per person and not '
+                                   'one per email address',
+                                   'Gameday Guides ([LtTBm2wHjoE @ 00:01:03])'],
+                                  ['Booking Augusta lodging late for Masters week',
+                                   'A Holiday Inn charging 90 dollars in February jumps to 600 to 1,200 '
+                                   'dollars in April',
+                                   'Columbia, South Carolina hotels hold at 100 to 200 dollars, saving 300 '
+                                   'to 800 dollars per night',
+                                   'Gameday Guides ([LtTBm2wHjoE @ 00:06:02])'],
+                                  ['Treating listed title-game prices as the real market',
+                                   'Nosebleeds listed over $3,000 and club seats near $30,000 came mostly '
+                                   'from resale groups, not completed sales',
+                                   'Listings are asks only, so watch for few transactions and expect '
+                                   'possible drops closer to game time',
+                                   'WTHR ([5T8RLIaR8yg @ 00:01:38])'],
+                                  ['Paying a premium for a far seat at a stacked card',
+                                   'UFC 299 cost about $470 after fees for the last section, with a metal '
+                                   'pillar blocking the cage',
+                                   'A $100 Fight Night seat one section from the floor delivered walkouts '
+                                   'and a near-camera moment',
+                                   'MMALeaked ([2vauuB_YXFc @ 00:04:26])'],
+                                  ['Autograph signing fees spiking mid-process on rare tickets',
+                                   "A host's Magic Johnson ticket signing quote jumped from 250 dollars to "
+                                   'a thousand dollars per ticket',
+                                   'The host stopped sending multiple tickets, questioning how the higher '
+                                   'fee earns the signing company more money',
+                                   'thebombtickets ([icH7RV48MeY @ 00:25:43])'],
+                                  ['Getting knocked out of a festival checkout mid-purchase',
+                                   'Site crashes, queue restarts, incognito tabs and profile switches left '
+                                   'the buyer without a camping pass',
+                                   'GA weekends sold out while VIP was still available at $1,399, so '
+                                   'add-ons need buying in the first pass',
+                                   'Courtney Willis ([f5hPIW3U13c @ 00:01:20])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Four Checks Before Money Moves On A Marquee Ticket',
+                           'body': 'Each check below comes from a loss, ejection risk or blocked exit that '
+                                   'a practitioner reported firsthand at Augusta, college finals, UFC '
+                                   'cards or the US Open.',
+                           'items': ['Price in gate-level voiding before touching a resale Masters badge: '
+                                     'Augusta is using RFID tracking to catch brokers and permanently '
+                                     'revoking lifetime badges [Gameday Guides — LtTBm2wHjoE @ 00:01:59].',
+                                     'Run exactly one Masters lottery application per household address, '
+                                     'because duplicate applications from roommates get both disqualified '
+                                     '[Gameday Guides — LtTBm2wHjoE @ 00:01:03].',
+                                     'Treat championship listings as asks, refuse any seller who rushes '
+                                     'you, buy only on verified sites and keep proof of purchase [WTHR — '
+                                     'OSa-CK_qebs @ 00:02:30].',
+                                     'Check the sightline before paying a premium for a stacked UFC card, '
+                                     'since a $470 last-section seat put a metal pillar between the buyer '
+                                     'and the cage [MMALeaked — 2vauuB_YXFc @ 00:04:26].']}}],
+ 'pull_quote': '"So you know I can ask for any price for a ticket, but that doesn\'t mean that\'s actually '
+               'the market price." — IU economist Kyle Anderson, attributed to WTHR (5T8RLIaR8yg @ '
+               '00:01:38).',
+ 'diagram_id': 'diag-05',
+ 'action_checklist': ['Create a free account on the Masters website before the ballot window opens on June '
+                      '1, then apply any time before June 20; timing inside the window does not matter '
+                      '[Sports Travel Tom — iKAz6YJRTXI @ 00:01:43].',
+                      'Select the two-ticket maximum for every single day of the tournament, since a '
+                      'successful applicant is only offered one of those days [Sports Travel Tom — '
+                      'iKAz6YJRTXI @ 00:02:35].',
+                      'Book Augusta lodging the second lottery results drop in July, or base in Columbia, '
+                      'South Carolina at 100 to 200 dollars a night [Gameday Guides — LtTBm2wHjoE @ '
+                      '00:06:21].',
+                      'Buy UFC VIP access from the UFC homepage by selecting menu, then the events tab, '
+                      'then the VIP experience listing for the target event [Prodigy Slots — rYABa5xL6d0 @ '
+                      '00:01:49].',
+                      'Use the On Location premium package to unlock post-weigh-in fighter meetings tied '
+                      'to the fan Q&A that standard ticket holders do not get [The Wrestling Classic — '
+                      'oqJoU9yO2_c @ 00:09:41].',
+                      'Work the free US Open fan week during qualifying, where top players use uncrowded '
+                      'practice courts and early arrivals get front seats [BAG & TRAVEL — B2P9oIBqq5Q @ '
+                      '00:01:37].'],
+ 'statutory_citations': [{'title': 'Gameday Guides — How to Get Tickets To The Masters and Insider Tips '
+                                   'When You Get There [00:01:59]',
+                          'url': 'https://www.youtube.com/watch?v=LtTBm2wHjoE&t=119s',
+                          'relevance': 'Primary practitioner testimony on Masters badge rental pricing, '
+                                       'RFID voiding at the gate and lifetime badge revocation.'},
+                         {'title': "11Alive — Yes, it's true. You cannot buy or sell tickets for The "
+                                   'Masters on a secondary resale site [00:00:51]',
+                          'url': 'https://www.youtube.com/watch?v=QiKFtpmNUqo&t=51s',
+                          'relevance': 'Primary practitioner testimony on Augusta National as the only '
+                                       'authorized seller and exclusion risk for third-party tickets.'},
+                         {'title': "WTHR — Here's what it'll cost to go to CFP National Championship "
+                                   'between IU and Miami [00:01:13]',
+                          'url': 'https://www.youtube.com/watch?v=OSa-CK_qebs&t=73s',
+                          'relevance': 'Primary practitioner testimony on wait-for-the-drop timing, '
+                                       'reseller fear pricing and scam avoidance for college finals.'},
+                         {'title': 'MMALeaked — First UFC Event? Essential Tips for Buying Tickets! '
+                                   '[00:07:19]',
+                          'url': 'https://www.youtube.com/watch?v=2vauuB_YXFc&t=439s',
+                          'relevance': 'Primary practitioner testimony on UFC seat value, sightline traps '
+                                       'and the seat-hopping workaround with ejection risk.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'iKAz6YJRTXI',
+                       'title': 'How to Get Masters Tickets (2027 Guide: Ballot vs Packages)',
+                       'channel': 'Sports Travel Tom',
+                       'author': 'Sports Travel Tom',
+                       'text': 'Now, they say it is a less than 1% chance of being successful in The '
+                               'Masters ballot just because of the amount of people apply for tickets.',
+                       'tip': 'Now, they say it is a less than 1% chance of being successful in The '
+                              'Masters ballot just because of the amount of people apply for tickets.',
+                       'timestamp': 103,
+                       'timestamp_seconds': 103,
+                       'timestamp_label': '[00:01:43]',
+                       'url': 'https://www.youtube.com/watch?v=iKAz6YJRTXI&t=103s',
+                       'markdown': '[00:01:43](https://www.youtube.com/watch?v=iKAz6YJRTXI&t=103s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'iKAz6YJRTXI',
+                       'title': 'How to Get Masters Tickets (2027 Guide: Ballot vs Packages)',
+                       'channel': 'Sports Travel Tom',
+                       'author': 'Sports Travel Tom',
+                       'text': 'The prices are quite expensive, ranging from anything from $4,000 upwards '
+                               'of $10,000, but it secures your attendance at The Masters.',
+                       'tip': 'The prices are quite expensive, ranging from anything from $4,000 upwards '
+                              'of $10,000, but it secures your attendance at The Masters.',
+                       'timestamp': 298,
+                       'timestamp_seconds': 298,
+                       'timestamp_label': '[00:04:58]',
+                       'url': 'https://www.youtube.com/watch?v=iKAz6YJRTXI&t=298s',
+                       'markdown': '[00:04:58](https://www.youtube.com/watch?v=iKAz6YJRTXI&t=298s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'U3YMt8EJCrE',
+                       'title': "Masters Tickets Explained | Why They're Almost Impossible to Get!",
+                       'channel': 'J Properties Group',
+                       'author': 'J Properties Group',
+                       'text': 'Prices can range from anywhere from $1,500 to $10,000 or more a ticket, '
+                               'and in some cases, Sunday tickets can be even higher.',
+                       'tip': 'Prices can range from anywhere from $1,500 to $10,000 or more a ticket, and '
+                              'in some cases, Sunday tickets can be even higher.',
+                       'timestamp': 295,
+                       'timestamp_seconds': 295,
+                       'timestamp_label': '[00:04:55]',
+                       'url': 'https://www.youtube.com/watch?v=U3YMt8EJCrE&t=295s',
+                       'markdown': '[00:04:55](https://www.youtube.com/watch?v=U3YMt8EJCrE&t=295s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'QiKFtpmNUqo',
+                       'title': "Yes, it's true. You cannot buy or sell tickets for The Masters on a "
+                                'secondary resale site',
+                       'channel': '11Alive',
+                       'author': '11Alive',
+                       'text': 'It says if you have a ticket obtained by a third party by whatever means, '
+                               'you may be excluded from attendance to the tournament.',
+                       'tip': 'It says if you have a ticket obtained by a third party by whatever means, '
+                              'you may be excluded from attendance to the tournament.',
+                       'timestamp': 51,
+                       'timestamp_seconds': 51,
+                       'timestamp_label': '[00:00:51]',
+                       'url': 'https://www.youtube.com/watch?v=QiKFtpmNUqo&t=51s',
+                       'markdown': '[00:00:51](https://www.youtube.com/watch?v=QiKFtpmNUqo&t=51s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'LtTBm2wHjoE',
+                       'title': 'How to Get Tickets To The Masters and Insider Tips When You Get There',
+                       'channel': 'Gameday Guides',
+                       'author': 'Gameday Guides',
+                       'text': 'They are actively voiding tickets at the gate using RFID tracking to catch '
+                               'brokers and permanently revoking lifetime badges.',
+                       'tip': 'They are actively voiding tickets at the gate using RFID tracking to catch '
+                              'brokers and permanently revoking lifetime badges.',
+                       'timestamp': 119,
+                       'timestamp_seconds': 119,
+                       'timestamp_label': '[00:01:59]',
+                       'url': 'https://www.youtube.com/watch?v=LtTBm2wHjoE&t=119s',
+                       'markdown': '[00:01:59](https://www.youtube.com/watch?v=LtTBm2wHjoE&t=119s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'icH7RV48MeY',
+                       'title': 'World Series & NBA Finals Ticket Stubs - Ticket Stub Collecting w/ James '
+                                'Burzynski',
+                       'channel': 'thebombtickets',
+                       'author': 'thebombtickets',
+                       'text': "In the last two years it's been so difficult to recalibrate your kind of "
+                               'idea of what things are worth because they change so fast.',
+                       'tip': "In the last two years it's been so difficult to recalibrate your kind of "
+                              'idea of what things are worth because they change so fast.',
+                       'timestamp': 2345,
+                       'timestamp_seconds': 2345,
+                       'timestamp_label': '[00:39:05]',
+                       'url': 'https://www.youtube.com/watch?v=icH7RV48MeY&t=2345s',
+                       'markdown': '[00:39:05](https://www.youtube.com/watch?v=icH7RV48MeY&t=2345s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '5T8RLIaR8yg',
+                       'title': 'College football championship tickets will cost Hoosiers a pretty penny',
+                       'channel': 'WTHR',
+                       'author': 'WTHR',
+                       'text': "Those are just listed for sale, and that doesn't mean people are actually "
+                               'buying very many at that price.',
+                       'tip': "Those are just listed for sale, and that doesn't mean people are actually "
+                              'buying very many at that price.',
+                       'timestamp': 98,
+                       'timestamp_seconds': 98,
+                       'timestamp_label': '[00:01:38]',
+                       'url': 'https://www.youtube.com/watch?v=5T8RLIaR8yg&t=98s',
+                       'markdown': '[00:01:38](https://www.youtube.com/watch?v=5T8RLIaR8yg&t=98s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'OSa-CK_qebs',
+                       'title': "Here's what it'll cost to go to CFP National Championship between IU and "
+                                'Miami',
+                       'channel': 'WTHR',
+                       'author': 'WTHR',
+                       'text': '9 times out of 10, prices come down as you get closer to the event; '
+                               "sellers put up a really high price and most of them don't sell at those "
+                               'prices.',
+                       'tip': '9 times out of 10, prices come down as you get closer to the event; sellers '
+                              "put up a really high price and most of them don't sell at those prices.",
+                       'timestamp': 73,
+                       'timestamp_seconds': 73,
+                       'timestamp_label': '[00:01:13]',
+                       'url': 'https://www.youtube.com/watch?v=OSa-CK_qebs&t=73s',
+                       'markdown': '[00:01:13](https://www.youtube.com/watch?v=OSa-CK_qebs&t=73s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'OSa-CK_qebs',
+                       'title': "Here's what it'll cost to go to CFP National Championship between IU and "
+                                'Miami',
+                       'channel': 'WTHR',
+                       'author': 'WTHR',
+                       'text': 'Ticket scammers likely are going to be people that try to rush you, and '
+                               "make sure you're only buying from verified sites and get a proof of "
+                               'purchase.',
+                       'tip': 'Ticket scammers likely are going to be people that try to rush you, and '
+                              "make sure you're only buying from verified sites and get a proof of "
+                              'purchase.',
+                       'timestamp': 150,
+                       'timestamp_seconds': 150,
+                       'timestamp_label': '[00:02:30]',
+                       'url': 'https://www.youtube.com/watch?v=OSa-CK_qebs&t=150s',
+                       'markdown': '[00:02:30](https://www.youtube.com/watch?v=OSa-CK_qebs&t=150s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'rYABa5xL6d0',
+                       'title': 'Is the UFC VIP Experience worth it?',
+                       'channel': 'Prodigy Slots',
+                       'author': 'Prodigy Slots',
+                       'text': "As soon as they go on sale there's a tendency for people to purchase them "
+                               "in bulk and then resell them, so you're going to end up paying more in the "
+                               "long run if you don't purchase those tickets the day they go on sale.",
+                       'tip': "As soon as they go on sale there's a tendency for people to purchase them "
+                              "in bulk and then resell them, so you're going to end up paying more in the "
+                              "long run if you don't purchase those tickets the day they go on sale.",
+                       'timestamp': 653,
+                       'timestamp_seconds': 653,
+                       'timestamp_label': '[00:10:53]',
+                       'url': 'https://www.youtube.com/watch?v=rYABa5xL6d0&t=653s',
+                       'markdown': '[00:10:53](https://www.youtube.com/watch?v=rYABa5xL6d0&t=653s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '0jqhQFvHHcc',
+                       'title': 'I got $47,000 VIP Tickets to the UFC!',
+                       'channel': 'Troydan',
+                       'author': 'Troydan',
+                       'text': 'Two tickets for this event come to a total of about $47,000 Canadian, '
+                               'which is roughly $35,000 American.',
+                       'tip': 'Two tickets for this event come to a total of about $47,000 Canadian, which '
+                              'is roughly $35,000 American.',
+                       'timestamp': 32,
+                       'timestamp_seconds': 32,
+                       'timestamp_label': '[00:00:32]',
+                       'url': 'https://www.youtube.com/watch?v=0jqhQFvHHcc&t=32s',
+                       'markdown': '[00:00:32](https://www.youtube.com/watch?v=0jqhQFvHHcc&t=32s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'oqJoU9yO2_c',
+                       'title': 'UFC Fight Night: Vancouver Vlog - On Location VIP Experience',
+                       'channel': 'The Wrestling Classic',
+                       'author': 'The Wrestling Classic',
+                       'text': 'We stuck around after the fights because we had the VIP package with On '
+                               'Location that allowed us to go into the octagon with the blood on the mat '
+                               'to take some pictures.',
+                       'tip': 'We stuck around after the fights because we had the VIP package with On '
+                              'Location that allowed us to go into the octagon with the blood on the mat '
+                              'to take some pictures.',
+                       'timestamp': 1084,
+                       'timestamp_seconds': 1084,
+                       'timestamp_label': '[00:18:04]',
+                       'url': 'https://www.youtube.com/watch?v=oqJoU9yO2_c&t=1084s',
+                       'markdown': '[00:18:04](https://www.youtube.com/watch?v=oqJoU9yO2_c&t=1084s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '2vauuB_YXFc',
+                       'title': 'First UFC Event? Essential Tips for Buying Tickets!',
+                       'channel': 'MMALeaked',
+                       'author': 'MMALeaked',
+                       'text': "In the prelims there's so many seats open; it really doesn't start filling "
+                               'up until the main fights on the card.',
+                       'tip': "In the prelims there's so many seats open; it really doesn't start filling "
+                              'up until the main fights on the card.',
+                       'timestamp': 423,
+                       'timestamp_seconds': 423,
+                       'timestamp_label': '[00:07:03]',
+                       'url': 'https://www.youtube.com/watch?v=2vauuB_YXFc&t=423s',
+                       'markdown': '[00:07:03](https://www.youtube.com/watch?v=2vauuB_YXFc&t=423s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'UTfE6DLqtLY',
+                       'title': 'I got $80,000 VIP Tickets to the UFC!',
+                       'channel': 'PowerBombClub',
+                       'author': 'PowerBombClub',
+                       'text': 'You have to be invited by the UFC to purchase them; the specific ticket '
+                               'package is called Elite Plus, and they can only be sold in pairs of two.',
+                       'tip': 'You have to be invited by the UFC to purchase them; the specific ticket '
+                              'package is called Elite Plus, and they can only be sold in pairs of two.',
+                       'timestamp': 17,
+                       'timestamp_seconds': 17,
+                       'timestamp_label': '[00:00:17]',
+                       'url': 'https://www.youtube.com/watch?v=UTfE6DLqtLY&t=17s',
+                       'markdown': '[00:00:17](https://www.youtube.com/watch?v=UTfE6DLqtLY&t=17s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'f5hPIW3U13c',
+                       'title': 'Coachella 2027 Tickets Are Selling Out! Prices, Camping & More',
+                       'channel': 'Courtney Willis',
+                       'author': 'Courtney Willis',
+                       'text': 'Purchasing my ticket was such a nightmare with the site crashing, the '
+                               'queue restarting, having to open and close the tabs, switching to '
+                               'incognito mode, changing my Chrome profile.',
+                       'tip': 'Purchasing my ticket was such a nightmare with the site crashing, the queue '
+                              'restarting, having to open and close the tabs, switching to incognito mode, '
+                              'changing my Chrome profile.',
+                       'timestamp': 80,
+                       'timestamp_seconds': 80,
+                       'timestamp_label': '[00:01:20]',
+                       'url': 'https://www.youtube.com/watch?v=f5hPIW3U13c&t=80s',
+                       'markdown': '[00:01:20](https://www.youtube.com/watch?v=f5hPIW3U13c&t=80s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'B2P9oIBqq5Q',
+                       'title': 'What ticket should you buy for US Open? My experience',
+                       'channel': 'BAG & TRAVEL',
+                       'author': 'BAG & TRAVEL',
+                       'text': "Players that people were hoping to see aren't still in the tournament "
+                               'anymore, so they resell their tickets through Ticketmaster, and sometimes '
+                               'you can get some really good deals.',
+                       'tip': "Players that people were hoping to see aren't still in the tournament "
+                              'anymore, so they resell their tickets through Ticketmaster, and sometimes '
+                              'you can get some really good deals.',
+                       'timestamp': 48,
+                       'timestamp_seconds': 48,
+                       'timestamp_label': '[00:00:48]',
+                       'url': 'https://www.youtube.com/watch?v=B2P9oIBqq5Q&t=48s',
+                       'markdown': '[00:00:48](https://www.youtube.com/watch?v=B2P9oIBqq5Q&t=48s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'vvND5YxS-Hg',
+                       'title': 'US OPEN Tennis Tickets in New York are CRAZY',
+                       'channel': 'Tennis Fights',
+                       'author': 'Tennis Fights',
+                       'text': "I would never pay for a ticket to go to Arthur Stadium, it's worthless; "
+                               "you can't see anything no matter where you are in the court.",
+                       'tip': "I would never pay for a ticket to go to Arthur Stadium, it's worthless; you "
+                              "can't see anything no matter where you are in the court.",
+                       'timestamp': 64,
+                       'timestamp_seconds': 64,
+                       'timestamp_label': '[00:01:04]',
+                       'url': 'https://www.youtube.com/watch?v=vvND5YxS-Hg&t=64s',
+                       'markdown': '[00:01:04](https://www.youtube.com/watch?v=vvND5YxS-Hg&t=64s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'R9QNsXzjvxU',
+                       'title': 'Inside Wimbledon’s $275,000 Debenture Seats: The Profit-Making Machine | '
+                                'Vantage with Palki Sharma',
+                       'channel': 'Firstpost',
+                       'author': 'Firstpost',
+                       'text': 'Center Court debenture seats for 2026 to 2030 are already being sold, and '
+                               'the cost stands at more than $275,000.',
+                       'tip': 'Center Court debenture seats for 2026 to 2030 are already being sold, and '
+                              'the cost stands at more than $275,000.',
+                       'timestamp': 142,
+                       'timestamp_seconds': 142,
+                       'timestamp_label': '[00:02:22]',
+                       'url': 'https://www.youtube.com/watch?v=R9QNsXzjvxU&t=142s',
+                       'markdown': '[00:02:22](https://www.youtube.com/watch?v=R9QNsXzjvxU&t=142s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'}]}

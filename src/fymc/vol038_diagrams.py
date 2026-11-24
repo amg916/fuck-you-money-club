@@ -1,758 +1,605 @@
-from __future__ import annotations
+"""Volume 038 diagram data: Contingent Corporate Bill-Audit & Tax-Credit Recovery."""
 
-VOLUME_038_SUBTITLE = (
-    "The Complete Playbook for Contingent Corporate Bill-Audit & Tax-Credit "
-    "Recovery: $110,000-$900,000 USD in Annual Operator Revenue, "
-    "a 1 FT + 3 C (4 People) Core Pod, and a Six-Person Scaled Model"
+from typing import Dict, List
+
+VOLUME_038_SUBTITLE: str = (
+    "No Savings, No Fee: GSR Late-Package Refunds, Surcharge Rerating, Carrier "
+    "Contract Engineering, Utility and Expense Audits, Property Tax Appeals, Cost "
+    "Segregation and 179D, WOTC Capture, Shared-Savings Deals, and Reverse Audits"
 )
 
-VOLUME_038_POSITIONING_ALTERNATIVES = [
+
+def build_volume_038_diagrams_data() -> List[Dict]:
+    return [
+        {
+            "diagram_id": "diag-01-gsr-refund-recovery-workflow",
+            "chapter_number": 1,
+            "title": "Small-Parcel GSR Refund Recovery Workflow",
+            "subtitle": "From billing credentials to phone-escalated late-package refunds",
+            "chart_type": "process_flow",
+            "stages": [
+                {
+                    "step": "01",
+                    "label": "Billing Credential Handoff",
+                    "value": "Step 1",
+                    "detail": (
+                        "Take the shipper's online billing credentials; Refund Retriever "
+                        "compares its constant invoice and shipping monitoring to mint.com."
+                    ),
+                },
+                {
+                    "step": "02",
+                    "label": "Invoice Auto-Download",
+                    "value": "Step 2",
+                    "detail": (
+                        "Auto-download every FedEx and UPS invoice so no late package "
+                        "slips past, since the carriers never flag the refund themselves."
+                    ),
+                },
+                {
+                    "step": "03",
+                    "label": "40-44 Point Shipment Audit",
+                    "value": "Step 3",
+                    "detail": (
+                        "Audit 40 to 44 points per shipment and flag any package delivered "
+                        "even 60 seconds late; scan the original reason column for "
+                        "'systematic SVC fail' credits FedEx already refunded automatically."
+                    ),
+                },
+                {
+                    "step": "04",
+                    "label": "GSR Dispute Filing",
+                    "value": "Step 4",
+                    "detail": (
+                        "File inside the 15-day window and hold FedEx invoice payment until "
+                        "disputes are in, because an existing payment on file triggered "
+                        "automatic denial of every late-package claim."
+                    ),
+                },
+                {
+                    "step": "05",
+                    "label": "Denial Escalation Loop",
+                    "value": "Step 5",
+                    "detail": (
+                        "Resubmit denied claims and escalate to live phone agents; Refund "
+                        "Retriever's agents reversed all 5 FedEx auto-denials, recovering "
+                        "$98.42 on a $4,253.53 invoice (2.3%)."
+                    ),
+                },
+            ],
+            "caption": (
+                "FedEx and UPS guarantee time-definite delivery, and practitioners from "
+                "Refund Retriever, Empact Parcel, and Compete Consulting Group run the "
+                "same credential-to-escalation loop on contingency, from Cerasis's 30 "
+                "percent model to Refund Retriever's 50 percent starting split."
+            ),
+            "assumptions_note": (
+                "Fee terms vary by firm: Refund Retriever starts at 50% of savings and "
+                "negotiates down for higher-volume shippers, while Cerasis shows a $700 net "
+                "refund on $1,000 of savings at 30%. Step order follows the reported "
+                "workflow; the only reported clock is the 15-day late-package claim window."
+            ),
+            "note": (
+                "Attributed to Refund Retriever (P3sA9eO0D-k, JeLyjRF9HEk, 8Bw_30ivpb4, "
+                "vOX4irOA_Tk), Scarbrough Global (NKDaSW7CKiQ), Share a Refund "
+                "(eTB0fyueR5A, PheSsrwvW9c), and Cerasis, now part of GlobalTranz "
+                "(GnXmnbxCZ-A)."
+            ),
+        },
+        {
+            "diagram_id": "diag-02-property-tax-appeal-odds-funnel",
+            "chapter_number": 6,
+            "title": "Property Tax Appeal Odds-and-Leverage Funnel",
+            "subtitle": "Deadline discipline, win rates, and the value levers that move assessments",
+            "chart_type": "funnel",
+            "stages": [
+                {
+                    "label": "Timely Filing Gate",
+                    "value": 100,
+                    "display": "Index 100",
+                    "conversion": "Entry: on-time filings only",
+                    "detail": (
+                        "Miss the deadline by a single day and that year's assessment cannot "
+                        "be appealed (USA Senior Laws Guide); calendar every 30-day county "
+                        "change notice mid-appeal (Save Paulding)."
+                    ),
+                },
+                {
+                    "label": "Win or Partial Reduction Ceiling",
+                    "value": 60,
+                    "display": "60%",
+                    "conversion": "Up to 60% of homeowner appeals",
+                    "detail": (
+                        "Wins mostly go to owners who gather specific evidence and show up "
+                        "(USA Senior Laws Guide)."
+                    ),
+                },
+                {
+                    "label": "Win or Partial Reduction Floor",
+                    "value": 30,
+                    "display": "30%",
+                    "conversion": "At least 30% in most counties",
+                    "detail": (
+                        "Roy requests that the appraiser present first; in one Douglas County "
+                        "hearing the board cut land from $32,000 to $12,000 an acre "
+                        "(Save Paulding)."
+                    ),
+                },
+                {
+                    "label": "Cap-Rate Value Lever",
+                    "value": 20,
+                    "display": "~20% value per 1% cap-rate move",
+                    "conversion": "Income-approach swing on commercial assets",
+                    "detail": (
+                        "Wes Nichols flags owners who recently bought at very low cap rates "
+                        "as prime review targets for tax years 23 and 24 (Paramount Property "
+                        "Tax Appeal)."
+                    ),
+                },
+                {
+                    "label": "Hotel Intangible Strip Floor",
+                    "value": 15,
+                    "display": "15% to 20% off purchase price",
+                    "conversion": "Goodwill removed from newly acquired hotels",
+                    "detail": (
+                        "Assessors fail to strip intangible and goodwill value when they work "
+                        "the sale (Paramount Property Tax Appeal)."
+                    ),
+                },
+            ],
+            "caption": (
+                "A property tax appeal is a fight over assessed value, never the bill. "
+                "Contingency fees run 25% to 50% of savings; George Evers's 35% worked "
+                "example earns $84,000, and Eric Nelson reports a $900,000 reduction that "
+                "returned $12,900 more to the client."
+            ),
+            "assumptions_note": (
+                "Stage 1 is indexed to 100 for scale. Stages 2 and 3 are the reported "
+                "30%-60% homeowner win-or-partial band; stages 4 and 5 are commercial value "
+                "levers on a percent scale, not a share of filings. Big wins can invite "
+                "county counter-appeals: Save Paulding saw 6 of 18 same-day properties "
+                "taken to court."
+            ),
+            "note": (
+                "Attributed to USA Senior Laws Guide (LopTSxbolHY), Save Paulding "
+                "(oIIj8lWBYVY), Paramount Property Tax Appeal (fOMz56wkRgs, R_juWiwAZ-k), "
+                "Cross the River, Find the Treasure (7CfK4x3Fijc), and Eric Nelson "
+                "(APAYRO4lrsk)."
+            ),
+        },
+        {
+            "diagram_id": "diag-03-minimum-charge-discount-erosion",
+            "chapter_number": 3,
+            "title": "How Minimum Net Charges Erode Headline Discounts",
+            "subtitle": "Two worked carrier-contract examples, in discount percentage points",
+            "chart_type": "waterfall",
+            "bars": [
+                {
+                    "label": "Shipware Headline Discount",
+                    "value": 50,
+                    "display": "50% off",
+                    "kind": "total",
+                },
+                {
+                    "label": "$8.23 Minimum Net Charge Pin",
+                    "value": -12,
+                    "display": "-12 pts",
+                    "kind": "deduction",
+                },
+                {
+                    "label": "Shipware Effective Discount",
+                    "value": 38,
+                    "display": "38% effective",
+                    "kind": "result",
+                },
+                {
+                    "label": "LJM Grid Plus Tier Headline",
+                    "value": 35,
+                    "display": "35% (23% grid + 12% tier)",
+                    "kind": "total",
+                },
+                {
+                    "label": "LJM Minimum Floor Constraint",
+                    "value": -13,
+                    "display": "-13 pts",
+                    "kind": "deduction",
+                },
+                {
+                    "label": "LJM Constrained Discount",
+                    "value": 22,
+                    "display": "~22% effective",
+                    "kind": "result",
+                },
+            ],
+            "caption": (
+                "Keith Myers works a Zone 4, 10 lb package at $13.27: 50% off nets $6.64, "
+                "but the $8.23 minimum makes the effective discount 38%, and a 65% offer "
+                "would save nothing. LJM shows a stacked 23% grid plus 12% tier constrained "
+                "to about 22%, and tells shippers to maximize the grid portion."
+            ),
+            "assumptions_note": (
+                "Deduction bars are the point gap between each reported headline and "
+                "effective discount. Scarbrough Global reports 25-35% from full contract "
+                "engineering versus about 3% (range 1-5%) from audit alone, over 3-6 "
+                "negotiation rounds across 6-10 weeks per LJM."
+            ),
+            "note": (
+                "Attributed to Shipware (rjelY0C_iQg), LJM (56winzXYmPA), Scarbrough "
+                "Global (jEjymzbOEFQ), and Refund Retriever (JAnVvaSg0TA), which calls the "
+                "minimum net charge a basement floor under discounts."
+            ),
+        },
+        {
+            "diagram_id": "diag-04-carrier-size-threshold-ladder",
+            "chapter_number": 2,
+            "title": "Carrier Size Threshold Ladder",
+            "subtitle": "The inch lines where additional handling, oversize, and over-maximum fees start",
+            "chart_type": "horizontal_bars",
+            "unit": "inches",
+            "bars": [
+                {
+                    "label": "Additional Handling 30-Inch Trigger",
+                    "min": 30,
+                    "max": 30,
+                    "typical": 30,
+                    "display": "30 in",
+                },
+                {
+                    "label": "Additional Handling 48-Inch Trigger",
+                    "min": 48,
+                    "max": 48,
+                    "typical": 48,
+                    "display": "48 in",
+                },
+                {
+                    "label": "FedEx Length Limit to Variance",
+                    "min": 96,
+                    "max": 98,
+                    "typical": 97,
+                    "display": "96 in limit; 97 in product; 98 in negotiated variance",
+                },
+                {
+                    "label": "Oversize Length Plus Girth Line",
+                    "min": 130,
+                    "max": 130,
+                    "typical": 130,
+                    "display": "130 in length plus girth; 90 lb minimum billable weight",
+                },
+                {
+                    "label": "UPS Over-Maximum Line",
+                    "min": 165,
+                    "max": 165,
+                    "typical": 165,
+                    "display": "165 in length plus girth; $1,325 per package",
+                },
+            ],
+            "caption": (
+                "Invoices price on billable weight, the greater of scale and dimensional "
+                "weight, and surcharges now drive spend: Joe Wilkinson puts base rate in "
+                "the high 20s to 30 percent of total cost. Refund Retriever's Brian asks for "
+                "a 98-inch variance on a 97-inch product instead of only a discount."
+            ),
+            "assumptions_note": (
+                "Additional handling also triggers at 50 pounds; Refund Retriever pushes "
+                "that definition to 53 or 55 pounds. Glenn Gooding's 20x20x22 inch, 20 lb "
+                "box jumped 190% ($19.69 to $57.18, zone 5) under the UPS 8,640-cubic-inch "
+                "rule. DIM divisors in play run 139, 166, 194, and custom 250."
+            ),
+            "note": (
+                "Attributed to Refund Retriever (iizNycveRfc, TzPaNZCC4js, v9AT9Omrd5c), "
+                "iDrive Logistics (H64bWcLI0O8), S3 Stores (q9kvSNRcgfs), Amware "
+                "Fulfillment (d3jQIelSHJM), and Experidium (8-Sguow2LDM), whose rerate "
+                "surfaced 2.38% of audited spend."
+            ),
+        },
+        {
+            "diagram_id": "diag-05-indirect-expense-audit-gates",
+            "chapter_number": 5,
+            "title": "Telecom, Waste, and Vendor Audit Gate Check",
+            "subtitle": "Four gates before an indirect-expense engagement pays out",
+            "chart_type": "decision_tree",
+            "nodes": [
+                {
+                    "gate": "G1",
+                    "question": "Does the client spend at least $2,000 a month in one audited category?",
+                    "pass_next": "G2",
+                    "fail_action": (
+                        "Park the account; Zog Inc sets $2,000 a month in a category as the "
+                        "point where it is worth the conversation."
+                    ),
+                },
+                {
+                    "gate": "G2",
+                    "question": "Is a ledger baseline locked and an inflation cap in place before the term ends?",
+                    "pass_next": "G3",
+                    "fail_action": (
+                        "Talk to the current hauler and competing haulers before renewal; "
+                        "Barracuda B2B has seen rates jump as much as 25% at year end with "
+                        "no cap."
+                    ),
+                },
+                {
+                    "gate": "G3",
+                    "question": "Is every overfill or overage fee backed by driver photo proof?",
+                    "pass_next": "G4",
+                    "fail_action": (
+                        "Back-claim credits; Zog Inc reports Paige clawed back three years of "
+                        "credits on a $25-a-week overfill fee."
+                    ),
+                },
+                {
+                    "gate": "G4",
+                    "question": "Are disconnected telecom circuits fully dead, with USF taxes and exemptions checked line by line?",
+                    "pass_next": "Contingent savings report to the CFO",
+                    "fail_action": (
+                        "Kill half-disconnected circuits where the modem or NID still bills, "
+                        "per Macronet Services."
+                    ),
+                },
+            ],
+            "caption": (
+                "Schooley Mitchell practitioners claim 28% average savings since 1998, with "
+                "80 percent of recommendations requiring no supplier change. Street wins "
+                "include a 37% UPS cut on a $400K account by stripping the fuel surcharge "
+                "and about $370K in Auditel telecom credits."
+            ),
+            "assumptions_note": (
+                "Gate order follows a spend-first, then contract, then fee-proof, then "
+                "circuit sequence; practitioners split on DIY versus analyst-led work. "
+                "Watchdog Advisory reports $25M recovered plus $5M in future workers' comp "
+                "savings, with lookbacks of five to seven years."
+            ),
+            "note": (
+                "Attributed to Zog Inc (u-o74Ze2VNs), Barracuda B2B (vnkFP_2Jzng), "
+                "Macronet Services (QMubvpeApZk), RiverForest Connections (VvAP-sQig0I), "
+                "Auditel, Inc. Telecom Expense Management (gIcFGhjFIKI), and Watchdog "
+                "Advisory (Joo1fuo4HkY)."
+            ),
+        },
+        {
+            "diagram_id": "diag-06-mssp-shared-savings-architecture",
+            "chapter_number": 11,
+            "title": "MSSP Shared-Savings Architecture",
+            "subtitle": "Who the ACO answers to, and the number each party is measured on",
+            "chart_type": "org_architecture",
+            "center": {
+                "role": "Medicare Shared Savings Program ACO",
+                "headcount": "541 ACOs in MSSP (2019)",
+                "focus": (
+                    "Bill fee-for-service, clear the roughly 3% minimum savings corridor, "
+                    "and let quality set bonus size"
+                ),
+            },
+            "spokes": [
+                {
+                    "role": "Participating Physicians",
+                    "type": "Gainsharing partner",
+                    "kpi": "Split capped near 50%; metrics tiered at 85/90/95% (Fredrikson)",
+                },
+                {
+                    "role": "CMS",
+                    "type": "Benchmark owner",
+                    "kpi": "At 2.5% savings the ACO gets 20% and CMS keeps 80% (Reyann Davis)",
+                },
+                {
+                    "role": "Payer Input Validation",
+                    "type": "Clinical review",
+                    "kpi": "Third-party and payer figures validated before tiering any preferred network (Garrett Schmitt)",
+                },
+                {
+                    "role": "Convener Network",
+                    "type": "ACO organizer",
+                    "kpi": "About $171 per beneficiary dispersed vs about $95 local (Health Affairs)",
+                },
+            ],
+            "caption": (
+                "Contingent models get paid from measured results against a defensible "
+                "baseline. In MSSP that baseline is the benchmark, and Health Affairs warns "
+                "any benchmark can be gamed; Reyann Davis cites a one-time $250,000 upfront "
+                "payment as an ACO."
+            ),
+            "assumptions_note": (
+                "About 160 participants in 2018 generated savings and got no check because "
+                "of the minimum savings rate (COPE Health Solutions). Fredrikson's $100,000 "
+                "bonus at 90% on-time starts died at about 87%, which is why tiers beat "
+                "all-or-nothing triggers."
+            ),
+            "note": (
+                "Attributed to Nolan Feeny (lKGpIaNHgRw), Reyann Davis (EotsrYaUjUs), "
+                "Fredrikson (VMuMGmjYplc), Garrett Schmitt (UEDbkKJ-9Xk), Health Affairs "
+                "(Zzb5OKFwcbg), and COPE Health Solutions (PDcTn9Sq3mg)."
+            ),
+        },
+        {
+            "diagram_id": "diag-07-utility-audit-recovery-bands",
+            "chapter_number": 4,
+            "title": "Utility Bill Audit Recovery Bands",
+            "subtitle": "Hit rates, savings, error sizing, and fee share, in percent",
+            "chart_type": "stacked_comparison",
+            "total_range": (
+                "$150,000 to $450,000 from a 1% to 3% error on $5 million of spend over "
+                "three years (Daniel Burke)"
+            ),
+            "buckets": [
+                {
+                    "label": "Audit Recovery Hit Rate",
+                    "low": 30,
+                    "high": 80,
+                    "notes": (
+                        "Poteck Power recovers in about 30% of cases; Puleo Energy and Waste "
+                        "Consultants report errors or savings in about 80% of audits."
+                    ),
+                },
+                {
+                    "label": "Average Client Savings",
+                    "low": 10,
+                    "high": 20,
+                    "notes": "Vert Energy Group says 70% of clients save 10% to 20%.",
+                },
+                {
+                    "label": "Billing Error Rate Modeled",
+                    "low": 1,
+                    "high": 3,
+                    "notes": "Daniel Burke's illustration across multi-year commercial and industrial spend.",
+                },
+                {
+                    "label": "Contingency Fee Share",
+                    "low": 50,
+                    "high": 50,
+                    "notes": (
+                        "Puleo's NUR schedule: 50% of refunds received and 50% of realized "
+                        "savings for 24 months, 100% to the client from month 25."
+                    ),
+                },
+            ],
+            "caption": (
+                "Commercial utility invoices are routinely wrong, errors almost always favor "
+                "the utility, and the customer carries the burden before the lookback closes. "
+                "Vert Energy Group and UtilityBillAudits each cite a small-business rate-plan "
+                "misclassification worth $21,000."
+            ),
+            "assumptions_note": (
+                "Buckets mix rates on one percent scale and are not additive. Puleo reaches "
+                "back about 36 months, as far as the state allows; UtilityBillAudits cites a "
+                "30-month review. Oncor's demand ratchet equals 80% of the highest peak "
+                "across the current and previous 11 months."
+            ),
+            "note": (
+                "Attributed to Puleo Energy (a4dO2n1QfzQ), Vert Energy Group "
+                "(bQpXnGBfNJY), Daniel Burke (4pb6YRGZx4s), UtilityBillAudits "
+                "(5A8gPPLuUaY, V-4ioYMhiuo), and Oncor (yHlhF0nEJ14)."
+            ),
+        },
+        {
+            "diagram_id": "diag-08-reverse-audit-launch-roadmap",
+            "chapter_number": 12,
+            "title": "Reverse Audit Launch Roadmap",
+            "subtitle": "Run your own look-back, because the other side only hunts underpayments",
+            "chart_type": "timeline_roadmap",
+            "weeks": [
+                {
+                    "week": "Week 1",
+                    "title": "Engage a Fully Contingent Firm",
+                    "deliverable": "Signed engagement covering identification through check in hand",
+                    "gate": (
+                        "Firm does 100 percent of the work on a 100 percent contingent "
+                        "basis (PM Business Advisors)"
+                    ),
+                },
+                {
+                    "week": "Week 2",
+                    "title": "Set the Look-Back Window",
+                    "deliverable": (
+                        "Refund scope at 3 years in most states, 4 in some, and 7 to 10 years "
+                        "where an old audit stays open"
+                    ),
+                    "gate": (
+                        "Settle what is owed and build an audit trail for the entire audit "
+                        "period (Sales Tax Sisters)"
+                    ),
+                },
+                {
+                    "week": "Week 3",
+                    "title": "Reconcile CAM and Customs Files",
+                    "deliverable": (
+                        "Landlord general ledger, big-ticket invoices, and controllable-expense "
+                        "definitions; 7501 value matched to the commercial invoice and payments"
+                    ),
+                    "gate": (
+                        "Before a CAPE upload, add 80 days to each liquidation date, confirm a "
+                        "US ACH account in ACE, and confirm no drawback on any entry line (Flexport)"
+                    ),
+                },
+                {
+                    "week": "Week 4",
+                    "title": "Lock the Gains",
+                    "deliverable": (
+                        "Pre-purchase taxability check routed from purchasing to the tax team "
+                        "(Cherry Bekaert)"
+                    ),
+                    "gate": (
+                        "Any FedEx CSA renegotiation goes in writing with an exact-dollar "
+                        "revenue ask (Route Consultant)"
+                    ),
+                },
+            ],
+            "caption": (
+                "Sales tax, workers comp, customs, CAM, and FedEx contract operators run the "
+                "same play: find the overpayments the other side's audit never looks for. "
+                "SMP Consulting Group cites a $190,000 Kentucky workers comp recovery over "
+                "three years."
+            ),
+            "assumptions_note": (
+                "Week slots sequence the reported steps; no week-by-week durations were "
+                "reported. Reported clocks: 7 days to pick a MISO for the 1% early-accept "
+                "bonus ($10,000 on $1,000,000), 4 to 6 months ahead for unique "
+                "characteristics, and 4 to over 20 hours per CAM location (RE BackOffice)."
+            ),
+            "note": (
+                "Attributed to PM Business Advisors (ePf76grjr8U), Sales Tax Sisters "
+                "(LibBgjGxja4), Flexport (xtorVFI9g4c), Commercial Real Estate Escalations "
+                "Made Simple (CWHu33HRBVY), Cherry Bekaert (S7Qlojol4pE), Route Consultant "
+                "(-AnzYDP3LQw, 39UxCZgtvHU), Greg Walker (sM254iPKhSo), and RE BackOffice "
+                "(5wJlP07wwrM)."
+            ),
+        },
+    ]
+
+
+VOLUME_038_POSITIONING_ALTERNATIVES: List[Dict] = [
     {
-        "title": "The Corporate Overpayment Recovery Desk",
-        "subtitle": (
-            "Recover documented parcel, utility, waste, and telecom overpayments "
-            "through authorized invoice audits and contract-permitted "
-            "25%-50% recovery shares."
-        ),
-        "audience": (
-            "Procurement analysts and expense-audit operators serving "
-            "multi-location employers with recurring, reconcilable vendor bills."
-        ),
+        "title": "The Late-Package Money Machine",
+        "subtitle": "GSR Refunds, Surcharge Rerating, and Carrier Contract Engineering on Contingency",
+        "audience": "Ecommerce and B2B shippers, parcel auditors, and logistics finance leads",
         "research_basis": (
-            "Invoice-level evidence, written authority, and enforceable fee "
-            "terms support a repeatable recovery service. Electronic agreements "
-            "have a federal statutory framework under 15 U.S.C. 7001, but "
-            "signature validity does not establish refund eligibility. Carrier "
-            "service guarantees, contractual waivers, filing windows, utility "
-            "tariffs, and municipal refund procedures must be checked separately."
+            "Refund Retriever's 15-day GSR window and payment-on-file denial trap, "
+            "Shipware's 50%-to-38% minimum-charge math, Scarbrough Global's 25-35% "
+            "contract engineering versus about 3% audit savings, and Experidium's 2.38% "
+            "line-by-line rerate yield."
         ),
         "sources": [
-            "https://www.law.cornell.edu/uscode/text/15/7001",
-            "https://www.eia.gov/tools/faqs/faq.php?id=97&t=3",
+            "https://www.youtube.com/watch?v=JeLyjRF9HEk&t=66s",
+            "https://www.youtube.com/watch?v=8Bw_30ivpb4&t=48s",
+            "https://www.youtube.com/watch?v=rjelY0C_iQg&t=217s",
+            "https://www.youtube.com/watch?v=jEjymzbOEFQ&t=2719s",
+            "https://www.youtube.com/watch?v=8-Sguow2LDM&t=157s",
         ],
-        "validation_status": (
-            "Source-informed editorial positioning; not market-tested."
-        ),
+        "validation_status": "Grounded strictly in Vol. 038 YouTube practitioner transcripts.",
     },
     {
-        "title": "The Evidence-First Property Assessment Desk",
-        "subtitle": (
-            "Build assessment-appeal files from valuation evidence and pursue "
-            "licensed, deadline-controlled recovery engagements."
-        ),
-        "audience": (
-            "Property-tax consultants and commercial-property analysts with "
-            "jurisdiction-specific credentials and access to valuation records."
-        ),
+        "title": "No Savings, No Fee",
+        "subtitle": "Utility, Telecom, Waste, Workers' Comp, and Sales Tax Recovery for the CFO",
+        "audience": "CFOs, controllers, and contingency audit firm founders",
         "research_basis": (
-            "Texas Occupations Code Chapter 1152 establishes property-tax "
-            "consultant registration requirements and exemptions. Texas Tax "
-            "Code Sections 41.41 and 41.44 identify protest rights and filing "
-            "requirements. These authorities support a Texas-specific operating "
-            "design, not an assumption that other states use identical rules."
+            "Puleo Energy's 50% refund and 24-month savings split, Zog Inc's 37% cut on a "
+            "$400K UPS account, Watchdog Advisory's $25M recovered, and PM Business "
+            "Advisors' 100% contingent reverse audits reaching 7 to 10 years on open audits."
         ),
         "sources": [
-            "https://statutes.capitol.texas.gov/Docs/OC/htm/OC.1152.htm",
-            "https://statutes.capitol.texas.gov/Docs/TX/htm/TX.41.htm",
-            "https://www.tdlr.texas.gov/ptc/ptc.htm",
+            "https://www.youtube.com/watch?v=a4dO2n1QfzQ&t=357s",
+            "https://www.youtube.com/watch?v=u-o74Ze2VNs&t=203s",
+            "https://www.youtube.com/watch?v=Joo1fuo4HkY&t=40s",
+            "https://www.youtube.com/watch?v=ePf76grjr8U&t=92s",
         ],
-        "validation_status": (
-            "Source-informed editorial positioning; not market-tested."
-        ),
+        "validation_status": "Grounded strictly in Vol. 038 YouTube practitioner transcripts.",
     },
     {
-        "title": "The Employer Credit Documentation Desk",
-        "subtitle": (
-            "Connect ATS intake, Form 8850 timing, state certification, and "
-            "substantiated employer-credit files using separately scoped fees."
-        ),
-        "audience": (
-            "Employer-service operators working with qualified tax practitioners "
-            "and employers whose hiring records support credit eligibility."
-        ),
+        "title": "Found Money in the Tax Code",
+        "subtitle": "Property Tax Appeals, Cost Segregation, 179D, and WOTC Claims That Survive Review",
+        "audience": "Commercial property owners, A&E firms, high-turnover employers, and their CPAs",
         "research_basis": (
-            "26 U.S.C. 51(d)(13) establishes WOTC certification and prescreening "
-            "requirements, including the applicable 28-day submission deadline. "
-            "Section 51(c)(4) makes hire-date statutory authorization a separate "
-            "check. Treasury Circular 230, 31 CFR 10.27, requires a "
-            "matter-specific fee review; an expense-recovery percentage must "
-            "not automatically become a federal tax-credit fee."
+            "Paramount's 20% value swing per 1% cap-rate move, Engineered Tax Services' "
+            "$794K year-one write-off on a $2.5M basis, Cherry Bekaert's 179D rise from "
+            "$1.80 to $5 per square foot, WOTC.com's 20% fee paid only after the credit is "
+            "used, and the 28-day state agency filing wall."
         ),
         "sources": [
-            "https://www.law.cornell.edu/uscode/text/26/51",
-            "https://www.irs.gov/forms-pubs/about-form-8850",
-            "https://www.ecfr.gov/current/title-31/subtitle-A/part-10/section-10.27",
-            "https://www.law.cornell.edu/uscode/text/26/7216",
+            "https://www.youtube.com/watch?v=fOMz56wkRgs&t=30s",
+            "https://www.youtube.com/watch?v=qEFJIGNNOkw&t=733s",
+            "https://www.youtube.com/watch?v=JZ5NlVOVnnw&t=667s",
+            "https://www.youtube.com/watch?v=kuYWnLG5-A4&t=1056s",
+            "https://www.youtube.com/watch?v=ujWX1IZPyFc&t=322s",
         ],
-        "validation_status": (
-            "Source-informed editorial positioning; not market-tested."
-        ),
+        "validation_status": "Grounded strictly in Vol. 038 YouTube practitioner transcripts.",
     },
 ]
-
-
-def build_volume_038_diagrams_data() -> list[dict]:
-    specs = [
-        (
-            "diag-01-authorized-recovery-workflow",
-            "process_flow",
-            "From Signed Authority to Earned Recovery Fees",
-            "Five evidence-controlled stages for expense and tax-credit work",
-            1,
-            "operating_framework",
-            (
-                "Expense-recovery shares of 25%-50% apply only where permitted "
-                "and contractually agreed. Federal tax work receives a separate "
-                "scope and fee review. Client refunds, vendor bills, property "
-                "values, and tax credits are not operator revenue."
-            ),
-            (
-                "Preserve the original evidence before proposing corrections. "
-                "A refund request is neither an issued refund nor an earned fee."
-            ),
-            [
-                (
-                    "Authorize and preserve",
-                    "Signed authority plus immutable baseline",
-                    1.0,
-                    (
-                        "Obtain a signed Letter of Authorization and fee "
-                        "agreement before disclosing tariff or refund findings. "
-                        "Snapshot invoices, payment records, carrier contracts, "
-                        "meter identifiers, assessment notices, and relevant "
-                        "employment records with timestamps and file hashes."
-                    ),
-                ),
-                (
-                    "Extract and normalize",
-                    "One traceable ledger per client",
-                    2.0,
-                    (
-                        "Import FedEx and UPS EDI exports or permitted API "
-                        "records; use OCR for utility tariffs and cooling-tower "
-                        "meter evidence. Normalize account, invoice, service "
-                        "date, charge code, and payment status while retaining "
-                        "links to original documents."
-                    ),
-                ),
-                (
-                    "Validate entitlement",
-                    "Documented rule and recoverable amount",
-                    3.0,
-                    (
-                        "Check service-guarantee waivers, tariff effective "
-                        "dates, appeal deadlines, duplicate claims, and prior "
-                        "credits. For WOTC, verify statutory hire-date coverage, "
-                        "prescreening, certification timing, and substantiation "
-                        "before including a case in the recoverable pipeline."
-                    ),
-                ),
-                (
-                    "Submit through authorized channels",
-                    "Accepted submission with receipt evidence",
-                    4.0,
-                    (
-                        "Use carrier-supported claim routes, utility refund "
-                        "procedures, licensed property-tax representation, or "
-                        "state workforce agency channels as applicable. Store "
-                        "submission identifiers and response deadlines; route "
-                        "rejections to a documented exception queue."
-                    ),
-                ),
-                (
-                    "Reconcile and earn",
-                    "Verified benefit matched to contract",
-                    5.0,
-                    (
-                        "Match issued refunds or realized savings to bank, "
-                        "vendor-credit, or billing evidence. Recognize only "
-                        "earned operator fees under the contract. For 36-month "
-                        "shared-savings arrangements, reconcile each period "
-                        "against a volume-adjusted baseline rather than booking "
-                        "all future savings immediately."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-02-nested-annual-recovery-cohort",
-            "funnel",
-            "A Nested Cohort Behind the Base Revenue Target",
-            "250 screened prospects become 25 earned-and-collected engagements",
-            6,
-            "illustrative_model",
-            (
-                "Illustrative mature annual cohort, not measured conversion "
-                "performance or a first-month forecast. Every downstream group "
-                "is a subset of the preceding group. Twenty-five engagements "
-                "at $20,200 average annual earned operator fees reconcile to "
-                "$505,000 Base revenue; the average is a modeling input."
-            ),
-            (
-                "Stage conversions are 40.0%, 60.0%, 66.7%, and 62.5%; overall "
-                "conversion is 10.0%. Pending cases remain outside the final "
-                "earned-and-collected cohort."
-            ),
-            [
-                (
-                    "Screened corporate prospects",
-                    "250 organizations with auditable recurring spend",
-                    250.0,
-                    (
-                        "Identify organizations with accessible invoice "
-                        "history, a responsible account owner, and a plausible "
-                        "recovery lane. Exclude accounts already bound by "
-                        "conflicting recovery engagements before outreach."
-                    ),
-                ),
-                (
-                    "Authorized client engagements",
-                    "100 signed engagements from those prospects",
-                    100.0,
-                    (
-                        "Forty percent of screened prospects execute authority "
-                        "and scope documents and provide baseline records. "
-                        "A verbal expression of interest does not count "
-                        "as an authorized engagement."
-                    ),
-                ),
-                (
-                    "Evidence-qualified recovery cases",
-                    "60 engagements with documented eligible opportunities",
-                    60.0,
-                    (
-                        "Sixty percent of authorized engagements survive "
-                        "contract, deadline, statutory, and evidence checks. "
-                        "Remove duplicate recoveries, unsupported estimates, "
-                        "and claims barred by applicable waivers."
-                    ),
-                ),
-                (
-                    "Accepted recovery submissions",
-                    "40 engagements reach accepted filing channels",
-                    40.0,
-                    (
-                        "Two-thirds of qualified engagements obtain submission "
-                        "receipts or accepted processing records. Count client "
-                        "engagements consistently rather than inflating this "
-                        "stage with multiple invoices from one client."
-                    ),
-                ),
-                (
-                    "Earned and collected engagements",
-                    "25 engagements generate $505,000 operator revenue",
-                    25.0,
-                    (
-                        "Twenty-five engagements meet earning conditions and "
-                        "collection assumptions within the modeled year. "
-                        "$505,000 divided by 25 equals $20,200 per engagement; "
-                        "this is operator fee revenue, not client recovery "
-                        "principal or total underlying vendor expenditure."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-03-base-owner-profit-waterfall",
-            "waterfall",
-            "Base Revenue to $217,150 Owner Profit",
-            "$505,000 less $287,850 modeled expenses equals a 43.0% net margin",
-            3,
-            "illustrative_model",
-            (
-                "Formula v2.0 Base revenue, margin, and owner profit are "
-                "canonical. The four expense allocations are illustrative "
-                "because the supplied scorecard does not itemize costs. "
-                "First and last bars are totals; the intervening bars are "
-                "negative changes. Gross means gross operator fee revenue, "
-                "not gross client refund receipts."
-            ),
-            (
-                "Reconciliation: $505,000 - $145,000 - $40,850 - $60,000 "
-                "- $42,000 = $217,150; $217,150 / $505,000 = 43.0%. "
-                "Conservative remains $110,000 at 30% = $33,000; Scaled "
-                "remains $900,000 at 56% = $504,000."
-            ),
-            [
-                (
-                    "Earned operator fee revenue",
-                    "$505,000 annual Base revenue",
-                    505000.0,
-                    (
-                        "Include earned contingency shares, earned portions "
-                        "of 36-month shared-savings agreements, and completed "
-                        "WOTC processing fees. Apply ASC 606 principal-agent "
-                        "analysis to the actual arrangement; client benefits "
-                        "are never automatically operator billings."
-                    ),
-                ),
-                (
-                    "Pod delivery labor",
-                    "Subtract $145,000 allocated annual labor",
-                    -145000.0,
-                    (
-                        "Illustratively allocate $145,000 to employee "
-                        "compensation and contractor delivery across the "
-                        "1 FT plus 3 C pod. The resulting owner-profit figure "
-                        "is the residual after this modeled labor charge, "
-                        "not a separate estimate of owner compensation."
-                    ),
-                ),
-                (
-                    "Variable case execution",
-                    "Subtract $40,850 case-linked operating costs",
-                    -40850.0,
-                    (
-                        "Illustratively allocate case-specific records, "
-                        "permitted filing charges, incremental extraction "
-                        "services, and recovery processing costs here. "
-                        "Exclude contractor labor already charged to the "
-                        "preceding bar to prevent double counting."
-                    ),
-                ),
-                (
-                    "Commercial and administrative overhead",
-                    "Subtract $60,000 annual commercial overhead",
-                    -60000.0,
-                    (
-                        "Illustratively allocate acquisition, insurance, "
-                        "bookkeeping, and general administration to a "
-                        "$5,000 monthly fixed-cost budget. Track acquisition "
-                        "cost per signed engagement rather than per "
-                        "unqualified lead."
-                    ),
-                ),
-                (
-                    "Platform and secure operations",
-                    "Subtract $42,000 annual platform overhead",
-                    -42000.0,
-                    (
-                        "Illustratively allocate $3,500 monthly to OCR, "
-                        "permitted integrations, secure storage, access "
-                        "management, and monitoring. Combined fixed overhead "
-                        "is $8,500 monthly, within the stated $1,500-$9,500 "
-                        "range; this allocation excludes the delivery and "
-                        "variable costs shown separately."
-                    ),
-                ),
-                (
-                    "Annual owner net profit",
-                    "$217,150 retained annual operating residual",
-                    217150.0,
-                    (
-                        "The endpoint is a total, not another additive "
-                        "movement. Total modeled expenses are $287,850, "
-                        "leaving exactly 43.0% of Base operator revenue. "
-                        "Owner-level personal taxes and distribution timing "
-                        "are outside this supplied scenario."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-04-recovery-lane-fee-yields",
-            "horizontal_bars",
-            "Five Recovery Lanes and Their Operator Fee Math",
-            "Illustrative contract yields, not measured niche performance",
-            2,
-            "illustrative_model",
-            (
-                "The first four bars each assume $100,000 of independently "
-                "verified, realized client recovery and a permitted expense "
-                "contingency rate. The fifth assumes 120 completed WOTC "
-                "administrative packages at a fixed $250 fee. Denominators "
-                "differ deliberately; bars are fee-dollar examples, not a "
-                "ranking of expected return or a Base revenue decomposition."
-            ),
-            (
-                "Parcel $50,000; utility $35,000; waste and telecom $30,000; "
-                "property assessment $25,000; WOTC processing $30,000. "
-                "Client recoveries and tax-credit amounts remain outside "
-                "operator revenue."
-            ),
-            [
-                (
-                    "Parcel service and billing recoveries",
-                    "$100,000 realized recovery multiplied by 50%",
-                    50000.0,
-                    (
-                        "Earn $50,000 only where the signed agreement supports "
-                        "a 50% share and the carrier accepts the underlying "
-                        "claim. Check FedEx or UPS guarantee availability, "
-                        "waivers, eligible services, submission windows, and "
-                        "API terms before automation."
-                    ),
-                ),
-                (
-                    "Commercial utility tariff recoveries",
-                    "$100,000 realized recovery multiplied by 35%",
-                    35000.0,
-                    (
-                        "Earn $35,000 on documented recoveries from applicable "
-                        "rate classifications, meter errors, or eligible "
-                        "sewer deductions. Match cooling-tower meter evidence "
-                        "to local rules and distinguish slow refund issuance "
-                        "from an approved adjustment."
-                    ),
-                ),
-                (
-                    "Waste and telecom billing recoveries",
-                    "$100,000 realized recovery multiplied by 30%",
-                    30000.0,
-                    (
-                        "Earn $30,000 from supported duplicate charges, "
-                        "disconnected services, or contractual rate errors. "
-                        "Separate refunded historical charges from future "
-                        "savings, and prevent the same correction from "
-                        "generating two overlapping fee claims."
-                    ),
-                ),
-                (
-                    "Property assessment recoveries",
-                    "$100,000 realized recovery multiplied by 25%",
-                    25000.0,
-                    (
-                        "Earn $25,000 only under a permitted engagement "
-                        "handled by appropriately credentialed personnel. "
-                        "Track protest and payment deadlines independently; "
-                        "a reduced assessment does not itself establish "
-                        "a received cash refund."
-                    ),
-                ),
-                (
-                    "WOTC administrative processing",
-                    "120 completed packages multiplied by $250",
-                    30000.0,
-                    (
-                        "Earn $30,000 from separately scoped administrative "
-                        "deliverables, not a percentage of federal tax "
-                        "credits. Verify hire-date statutory coverage and "
-                        "Form 8850 timing. Fixed pricing does not remove "
-                        "practitioner, privacy, or substantiation requirements."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-05-statutory-and-contract-preflight",
-            "decision_tree",
-            "Four Checks Before a Recovery Submission",
-            "Each failed check routes to remediation or a declined claim",
-            5,
-            "operating_framework",
-            (
-                "Apply every relevant branch to the engagement; branches "
-                "describe operating checks, not a probability model. "
-                "Federal tax fee rules, state representation rules, and "
-                "private carrier terms address different obligations."
-            ),
-            (
-                "Submit only after authority, contractual eligibility, "
-                "tax scope, and jurisdictional credentials are resolved. "
-                "Preserve the evidence supporting each decision."
-            ),
-            [
-                (
-                    "Authority and permitted information use",
-                    "Proceed with documented authority and valid access",
-                    1.0,
-                    (
-                        "Require signed authority, baseline invoice snapshots, "
-                        "and least-privilege access. Where tax-return preparer "
-                        "information rules apply, evaluate 26 U.S.C. 7216 and "
-                        "26 CFR 301.7216-3; a generic Letter of Authorization "
-                        "does not replace any required disclosure or use "
-                        "consent. Otherwise obtain missing permissions first."
-                    ),
-                ),
-                (
-                    "Carrier and vendor recovery entitlement",
-                    "Proceed only for eligible timely claims",
-                    2.0,
-                    (
-                        "Inspect actual carrier guarantee waivers, service "
-                        "exclusions, filing deadlines, prior credits, and "
-                        "authorized API use. For utilities, retain the "
-                        "controlling tariff and effective date. If entitlement "
-                        "fails, remove the claim rather than bypassing a "
-                        "carrier restriction or manufacturing a billing error."
-                    ),
-                ),
-                (
-                    "Federal tax scope and substantiation",
-                    "Proceed with supported eligibility and permitted fees",
-                    3.0,
-                    (
-                        "Have a qualified practitioner assess 31 CFR 10.27 "
-                        "as applicable to the specific service, including "
-                        "exceptions and relevant judicial limitations. "
-                        "For WOTC, verify 26 U.S.C. 51(c)(4) hire-date coverage "
-                        "and 51(d)(13) certification requirements; where "
-                        "prescreening applies, complete it by the offer date "
-                        "and submit within 28 days after work begins."
-                    ),
-                ),
-                (
-                    "State credentials and appeal calendar",
-                    "Proceed through properly credentialed representation",
-                    4.0,
-                    (
-                        "Check state property-tax consultant rules, permissible "
-                        "fee terms, and local appeal procedures. In Texas, "
-                        "review Occupations Code Chapter 1152 and Tax Code "
-                        "41.44, including applicable exceptions and actual "
-                        "notice dates. If credentials or deadlines fail, "
-                        "refer appropriately or decline the affected matter."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-06-core-and-scaled-pod",
-            "org_architecture",
-            "Four Core Seats, Six at Scaled Throughput",
-            "Base 1 FT + 3 C; Scaled 2 FT + 4 C",
-            11,
-            "operating_framework",
-            (
-                "Numeric values show the four Base seats, one per role. "
-                "The Scaled model adds one full-time operations seat and "
-                "one contract audit seat. Contractor counts describe people, "
-                "not full-time equivalents or unlimited specialist capacity."
-            ),
-            (
-                "Conservative and Base use four people; Scaled uses six. "
-                "Credential-sensitive work stays with personnel qualified "
-                "for that jurisdiction and service."
-            ),
-            [
-                (
-                    "Owner and client operations",
-                    "Base one FT; Scaled two FT",
-                    1.0,
-                    (
-                        "The owner controls sales, authority documents, "
-                        "pricing, cash collection, and client reporting. "
-                        "At Scaled volume, add a full-time operations lead "
-                        "for queue ownership and reconciliation; retain "
-                        "separate review of fee calculations and receipts."
-                    ),
-                ),
-                (
-                    "Parcel and invoice audit delivery",
-                    "Base one contractor; Scaled two contractors",
-                    1.0,
-                    (
-                        "Audit analysts reconcile EDI and permitted API "
-                        "records, preserve invoice lineage, test duplicates, "
-                        "and prepare supported claims. The second Scaled "
-                        "analyst increases throughput without sharing "
-                        "client credentials or bypassing rate limits."
-                    ),
-                ),
-                (
-                    "Utility and property specialist",
-                    "One contractor in both operating scenarios",
-                    1.0,
-                    (
-                        "A vetted specialist owns tariff interpretation, "
-                        "meter evidence, and property-assessment analysis "
-                        "within their demonstrated qualifications. Accept "
-                        "representation work only where this seat holds "
-                        "required credentials; otherwise narrow that "
-                        "engagement rather than inventing coverage."
-                    ),
-                ),
-                (
-                    "Tax-credit documentation specialist",
-                    "One contractor in both operating scenarios",
-                    1.0,
-                    (
-                        "A qualified specialist controls WOTC prescreening "
-                        "timing, state certification evidence, secure records, "
-                        "and coordination with the employer's tax preparer. "
-                        "Separate administrative processing from tax-return "
-                        "services and maintain the required fee review."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-07-startup-capital-allocation",
-            "stacked_comparison",
-            "Four Buckets Inside the Startup Capital Range",
-            "$6,000 lean launch; $20,000 reference launch; $35,000 expanded launch",
-            4,
-            "illustrative_model",
-            (
-                "Numeric values represent the $20,000 reference launch. "
-                "The same 30%, 25%, 25%, and 20% allocations produce the "
-                "$6,000 and $35,000 endpoints. Startup allocations are "
-                "illustrative, exclude client recovery principal, and "
-                "do not establish that every jurisdiction or software "
-                "contract fits the lean budget."
-            ),
-            (
-                "Lean allocations total $1,800 + $1,500 + $1,500 + $1,200 "
-                "= $6,000. Reference allocations total $20,000. Expanded "
-                "allocations total $10,500 + $8,750 + $8,750 + $7,000 "
-                "= $35,000."
-            ),
-            [
-                (
-                    "Secure tooling and integrations",
-                    "$6,000 reference; $1,800 lean; $10,500 expanded",
-                    6000.0,
-                    (
-                        "Allocate 30% to initial OCR configuration, encrypted "
-                        "document storage, password management, access "
-                        "controls, and permitted carrier integrations. "
-                        "Prefer supported exports before paying to automate "
-                        "an unvalidated claim lane."
-                    ),
-                ),
-                (
-                    "Credentials and engagement design",
-                    "$5,000 reference; $1,500 lean; $8,750 expanded",
-                    5000.0,
-                    (
-                        "Allocate 25% to required registrations, initial "
-                        "professional review, engagement documents, "
-                        "insurance setup, and jurisdiction-specific scope "
-                        "design. If local requirements exceed this bucket, "
-                        "reduce launch geography or increase funded capital."
-                    ),
-                ),
-                (
-                    "Prospecting and pilot onboarding",
-                    "$5,000 reference; $1,500 lean; $8,750 expanded",
-                    5000.0,
-                    (
-                        "Allocate 25% to targeted account research, direct "
-                        "outreach, client intake, and initial evidence "
-                        "normalization. Measure signed, document-ready "
-                        "engagements rather than purchased contact volume "
-                        "or unverified recovery estimates."
-                    ),
-                ),
-                (
-                    "Liquidity and collection buffer",
-                    "$4,000 reference; $1,200 lean; $7,000 expanded",
-                    4000.0,
-                    (
-                        "Allocate 20% to delayed collections and operating "
-                        "variance. The reference $4,000 covers about "
-                        "2.7 months at $1,500 monthly overhead or 0.4 months "
-                        "at $9,500; it does not fund the full pod or "
-                        "automatically cover the 1-4 month first-deal window."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-08-thirty-day-launch-sprint",
-            "timeline_roadmap",
-            "A Thirty-Day Evidence-to-Submission Sprint",
-            "Build an authorized pilot before expanding claim volume",
-            12,
-            "operating_framework",
-            (
-                "Milestones are operator-controlled launch deliverables, "
-                "not promised refund dates. The canonical time to first "
-                "deal is 1-4 months; municipal refunds, assessment appeals, "
-                "and tax-credit certification can take longer than this "
-                "sprint."
-            ),
-            (
-                "Finish the month with traceable pilot evidence, tested "
-                "fee math, and a documented submission or a specific "
-                "remediation plan; do not substitute projected recoveries "
-                "for collected revenue."
-            ),
-            [
-                (
-                    "Days 1-7",
-                    "Define one lane and secure the workspace",
-                    7.0,
-                    (
-                        "Choose one customer profile and recovery lane. "
-                        "Review applicable contract terms, tax-service scope, "
-                        "or state credentials; prepare authority and fee "
-                        "documents. Configure encrypted storage, individual "
-                        "accounts, access logging, and a deadline register."
-                    ),
-                ),
-                (
-                    "Days 8-14",
-                    "Secure a pilot and preserve baseline evidence",
-                    14.0,
-                    (
-                        "Conduct targeted outreach and seek one authorized "
-                        "pilot. After signature, obtain invoice and payment "
-                        "records and preserve their original versions. "
-                        "If no pilot signs, continue acquisition and test "
-                        "the workflow with synthetic records without "
-                        "claiming client access or recoveries."
-                    ),
-                ),
-                (
-                    "Days 15-21",
-                    "Validate exceptions and calculate the fee basis",
-                    21.0,
-                    (
-                        "Reconcile extracted records against source "
-                        "documents, remove duplicates, test eligibility, "
-                        "and calculate supported claim amounts. Review "
-                        "waivers, tariff periods, credentials, or WOTC "
-                        "timing as applicable. Have a second qualified "
-                        "reviewer inspect material exceptions."
-                    ),
-                ),
-                (
-                    "Days 22-30",
-                    "Submit supported claims and establish reconciliation",
-                    30.0,
-                    (
-                        "Submit only authorized, eligible pilot matters and "
-                        "store acceptance receipts. If evidence remains "
-                        "incomplete, issue a dated remediation list instead. "
-                        "Build refund-to-invoice matching, aging reports, "
-                        "shared-savings baseline checks, and a fee ledger "
-                        "that separates pending value from earned revenue."
-                    ),
-                ),
-            ],
-        ),
-    ]
-    return [
-        dict(
-            diagram_id=identifier,
-            chart_type=kind,
-            title=title,
-            subtitle=subtitle,
-            chapter_number=chapter,
-            epistemic_tag=tag,
-            assumptions_note=note,
-            caption=caption,
-            stages=[
-                dict(
-                    label=label,
-                    value=value,
-                    numeric_value=float(number),
-                    detail=detail,
-                )
-                for label, value, number, detail in stages
-            ],
-        )
-        for (
-            identifier,
-            kind,
-            title,
-            subtitle,
-            chapter,
-            tag,
-            note,
-            caption,
-            stages,
-        ) in specs
-    ]

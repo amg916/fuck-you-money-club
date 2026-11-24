@@ -1,679 +1,868 @@
 from __future__ import annotations
 
-CHAPTER_2 = {
-    "id": "Q2",
-    "chapter_id": "Q2",
-    "chapter_number": 2,
-    "question_number": 2,
-    "slug": "who-pays-and-how-self-funded-health-pbm-workers-comp-funds-clear",
-    "question_prompt": "Who writes the check in self-funded health, pbm & workers' comp arbitrage, what acute financial or statutory pain forces them to pay, and how do funds clear cleanly without circumvention or non-payment?",
-    "kicker": "Q2 / THE BIG MONEY PLAYBOOKS",
-    "title": "Who Pays, Why They Pay & How the Payment Rail Works",
-    "subtitle": "Employer Treasury, ERISA Section 408(b)(2), PBM Rebate Ledgers, Stop-Loss Commissions and NCCI Premium-Refund Settlement",
-    "layout_template": "executive_summary",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #40, Self-Funded Health, PBM & Workers' Comp Arbitrage, ranks "
-        "#08 of 42 with a 93/100 Money-to-Manpower Score. Its 11 mapped plays "
-        "monetize employer purchasing friction, benefit-contract opacity, and documented "
-        "premium errors through retained advisory fees, disclosed commissions, and "
-        "earned recovery splits. The economic buyer is usually the employer CFO; "
-        "the payment authority may instead sit with treasury, a plan fiduciary, "
-        "or a carrier commission department. This chapter separates those authorities, "
-        "compares eight payment arrangements, and makes collection depend on evidence "
-        "rather than introductions. Canonical annual owner profit is $38,400 "
-        "Conservative, $240,750 Base, and $551,000 Scaled. Employer claim funds, "
-        "insurance premiums, rebate principal, and recovered premium remain outside "
-        "operator revenue; only the contracted, retained fee enters the scorecard."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$120,000",
-            "context": "Annual retained advisory, commission and recovery-fee revenue",
-            "note": "32% net margin; $38,400 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Base",
-            "value": "$535,000",
-            "context": "Annual retained advisory, commission and recovery-fee revenue",
-            "note": "45.0% net margin; $240,750 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$950,000",
-            "context": "Annual retained advisory, commission and recovery-fee revenue",
-            "note": "58% net margin; $551,000 annual owner net profit; 2 FT + 4 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Identify the economic buyer, the authorized payer and the loss they cannot ignore",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Sell first to the person accountable for the expense, then identify "
-                    "the person legally authorized to release money. At a mid-market employer, "
-                    "the CFO usually owns the health-benefit and workers' compensation budget; "
-                    "human resources owns employee disruption; treasury controls ACH enrollment; "
-                    "and the plan committee may control decisions involving plan assets. These "
-                    "roles overlap, but they are not interchangeable. A benefits director can "
-                    "sponsor an audit without authority to bind the company, direct a trust "
-                    "distribution, or replace a producer. Obtain the contracting entity's legal "
-                    "name, signatory authority, purchase-order requirements, invoice destination, and "
-                    "bank-verification procedure before accepting sensitive records. Ask whether fees "
-                    "will come from corporate operating cash or a plan account. ERISA fiduciary "
-                    "duties under 29 U.S.C. 1104 and prohibited-transaction rules under "
-                    "29 U.S.C. 1106 make that distinction operationally important. Employer "
-                    "business expenses cannot simply be routed through plan assets because "
-                    "cash is available there. The immediate buying trigger is usually an "
-                    "unbudgeted renewal increase, an opaque pharmacy reconciliation, a disputed "
-                    "premium audit, or a stop-loss exclusion. Translate each trigger into an "
-                    "approved expense category and a documented payment obligation, not a "
-                    "promise that savings will eventually finance everything."
-                ),
-                (
-                    "Organize the 11 mapped plays into buying problems rather than presenting "
-                    "eleven unrelated services. Self-funded feasibility, captive participation, specific "
-                    "stop-loss design, aggregate protection, and TPA fee review address renewal "
-                    "volatility. PBM spread repricing and rebate recovery address opaque pharmacy "
-                    "economics. Reference-based pricing support addresses provider-payment execution. "
-                    "Form 5500 renewal targeting creates qualified opportunities rather than "
-                    "independent client revenue. Historical workers' compensation recovery and separately "
-                    "authorized broker-of-record renewal work address premium leakage and future "
-                    "placement. For a 500-employee account, an illustrative $12 PEPM advisory "
-                    "agreement produces $6,000 monthly and $72,000 annually, not the employer's "
-                    "multimillion-dollar claim spend. A $2 reduction across 20,000 comparable "
-                    "prescriptions suggests $40,000 of potential purchasing improvement, but it "
-                    "does not establish collected rebates or earned contingent fees. The CFO "
-                    "wants defensible cash impact; human resources wants continuity; procurement "
-                    "wants contractual accountability. Show all three a baseline, implementation "
-                    "cost, owner, and fallback. If a stop-loss laser removes the expected "
-                    "advantage, retain the existing structure while renegotiating specific terms. "
-                    "If pharmacy repricing lacks usable claim-level records, sell a bounded "
-                    "data-and-contract review instead of projecting recovery. One client can buy "
-                    "several workstreams, but overlapping work must not create duplicate charges "
-                    "or duplicate savings claims."
-                ),
-                (
-                    "Screen willingness and ability to pay separately. An employer can be "
-                    "profitable yet refuse an invoice because procurement never onboarded the "
-                    "supplier; another can approve the work while lacking liquidity at settlement. "
-                    "Review public bankruptcy records through PACER, secretary-of-state entity status, "
-                    "available trade references, and financial statements supplied with permission. "
-                    "For larger contingent exposures, inspect current liquidity, debt restrictions, "
-                    "related-party dependencies, and whether a parent actually guarantees payment. "
-                    "An entity search does not establish solvency, and a UCC filing is "
-                    "a financing signal rather than proof of distress. Request a named "
-                    "accounts-payable contact and a sample remittance process before kickoff. "
-                    "Use a modest corporate-funded retainer for research-heavy engagements, shorter "
-                    "billing intervals for thinly capitalized employers, and a documented stop-work "
-                    "right for delinquent advisory invoices. Never suspend participant claims "
-                    "administration or hold health records hostage to collect a consulting fee. "
-                    "For commission income, screen the carrier or intermediary separately: confirm "
-                    "appointment, commission schedule, producer-of-record status, cancellation treatment, "
-                    "and statement timing. A solvent employer does not cure an uncollectible "
-                    "commission promise from an unauthorized introducer. Record the actual obligor "
-                    "for every revenue line so treasury can pursue the right counterparty."
-                ),
-            ],
-            "table": {
-                "caption": "Eleven Mapped Workstreams, Economic Buyers and Collectible Fee Boundaries",
-                "headers": [
-                    "Mapped workstream and concrete operating scope",
-                    "Buyer pain and authorized payment source",
-                    "Illustrative unit economics and revenue boundary",
-                    "Failure response and practical collection protection",
-                ],
-                "rows": [
-                    [
-                        "Self-funded transition feasibility using comparable renewal assumptions",
-                        "Employer CFO funds an approved corporate advisory engagement",
-                        "Five hundred employees at twelve dollars generate six thousand monthly",
-                        "Retain incumbent funding when credible alternatives exceed risk tolerance",
-                    ],
-                    [
-                        "Captive stop-loss participation and contractual collateral review",
-                        "Employer treasury evaluates collateral alongside expected operating savings",
-                        "Ten thousand advisory dollars exclude all captive collateral contributions",
-                        "Decline entry when assessments overwhelm documented liquidity capacity",
-                    ],
-                    [
-                        "Specific stop-loss attachment and individual laser negotiation",
-                        "Employer risk leadership purchases protection against individual shock claims",
-                        "Two thousand retained commission dollars exclude carrier premium receipts",
-                        "Requote exclusions or preserve current terms before binding coverage",
-                    ],
-                    [
-                        "Aggregate stop-loss attachment and reimbursement timing analysis",
-                        "Employer CFO addresses aggregate volatility and reimbursement delays",
-                        "Three thousand project dollars exclude aggregate reimbursement proceeds",
-                        "Model cash exposure when advances require unmet contractual conditions",
-                    ],
-                    [
-                        "TPA administration repricing and service-level contract review",
-                        "Benefits leadership sponsors work while corporate treasury pays invoices",
-                        "One dollar across five hundred employees saves six thousand annually",
-                        "Preserve essential services when lower fees remove necessary functions",
-                    ],
-                    [
-                        "PBM spread repricing against matched pharmacy claim characteristics",
-                        "Employer procurement challenges opaque ingredient and dispensing economics",
-                        "Two dollars across twenty thousand prescriptions suggests forty thousand savings",
-                        "Discard comparisons lacking equivalent products, timing and reimbursement definitions",
-                    ],
-                    [
-                        "PBM rebate reconciliation and contract-defined recovery support",
-                        "Authorized employer or plan representative pursues earned unpaid rebates",
-                        "Twenty percent of fifty thousand recovered earns ten thousand",
-                        "Exclude disputed amounts until ownership and settlement are documented",
-                    ],
-                    [
-                        "Reference-based pricing implementation and balance-bill defense coordination",
-                        "Benefits leadership funds provider-dispute handling and participant support",
-                        "Four thousand advisory dollars exclude provider settlements and defense reserves",
-                        "Retain contracted networks when defense arrangements cannot support participants",
-                    ],
-                    [
-                        "Form 5500 renewal targeting and qualified employer outreach",
-                        "Operator funds prospect research before employer engagement exists",
-                        "Two hundred researched filings create leads rather than booked revenue",
-                        "Verify current arrangements because historical filings can mislead outreach",
-                    ],
-                    [
-                        "workers_comp_ncci_emod_retroactive_recovery audits defensible historical premium errors",
-                        "Employer finance pursues carrier refunds for documented premium overpayments",
-                        "Thirty-five percent of two hundred thousand earns seventy thousand",
-                        "Withdraw unsupported claims and disclose potential additional premium exposure",
-                    ],
-                    [
-                        "Separately authorized workers' compensation broker-of-record renewal placement",
-                        "Employer risk leadership appoints a properly licensed producer separately",
-                        "Five thousand retained commission dollars exclude the policy premium",
-                        "Confirm carrier recognition before treating appointment as commission eligibility",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Get the payer architecture before the analytics",
-                "body": (
-                    "Experienced operators settle entity identity, fee ownership and "
-                    "evidence access before investing in a recovery thesis."
-                ),
-                "items": [
-                    "Ask treasury to process a small first advisory invoice before the renewal crunch; this exposes vendor-onboarding problems while the engagement is still inexpensive.",
-                    "Use Form 5500 Schedules A and C only where applicable, then verify current contracts; filing omissions and reporting exemptions make a missing vendor entry inconclusive.",
-                    "Match NADAC observations by product, effective date and unit before comparing pharmacy economics; ingredient acquisition benchmarks do not represent complete PBM contract cost.",
-                    "Obtain dated carrier loss runs and the matching bureau worksheet together; a reserve movement outside the applicable valuation rules cannot support an automatic historical refund.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Select the payment arrangement without taking custody of employer money",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Treat payment method, payment condition, and custody as separate design "
-                    "choices. Wire and ACH move money; retainers and milestone holds define "
-                    "when it becomes payable; escrow appoints a custodian; factoring changes "
-                    "who purchases a receivable. Statutory disbursement is a constrained distribution "
-                    "process, not a universal payment network. Platform checkout is an interface "
-                    "over card or bank rails. The comparison below therefore evaluates eight "
-                    "commercial arrangements without pretending they provide identical protections. "
-                    "Default to corporate ACH for recurring advisory invoices and independently "
-                    "verified wire instructions for unusually large settlements. ACH authorization "
-                    "must identify the account holder, amount or calculation method, timing, "
-                    "and revocation procedure. Confirm business-account rules and bank deadlines "
-                    "rather than importing consumer protections into a corporate contract. Neither "
-                    "a screenshot nor a pending bank entry proves final collection. Reconcile "
-                    "the bank posting, invoice, and remittance reference, and handle returns "
-                    "or reversals under the actual bank agreement. For wires, verify changed "
-                    "instructions through an established telephone number, never the number "
-                    "included in the change request. A compromised email can redirect an "
-                    "otherwise legitimate payment faster than a contract clause can recover it. "
-                    "Keep initiation and bank-detail approval with different authorized people."
-                ),
-                (
-                    "Keep claim funding and premium payments outside the advisory operating "
-                    "account. Employers fund the TPA or insurer under their existing agreements; "
-                    "carriers pay recognized producer commissions under appointment terms; PBMs "
-                    "remit rebates to the contractually entitled recipient; and carriers return "
-                    "premium overpayments to the insured or other entitled payee. The operator "
-                    "then invoices its earned fee against the documented event. A direction-to-pay "
-                    "letter can simplify administration only when the payer accepts it and "
-                    "the arrangement respects ownership, licensing, and applicable asset restrictions. "
-                    "It does not automatically assign funds or make the carrier responsible "
-                    "for the employer's consulting debt. For a $100,000 accepted premium "
-                    "refund at a 35% contingency, the employer receives $100,000 and owes "
-                    "$35,000 under the engagement; the operator does not book $100,000 "
-                    "and later expense $65,000. If a permitted independent escrow handles "
-                    "both distributions, require written release conditions, verified beneficiary "
-                    "details, segregated records, and a dispute mechanism. Do not call an "
-                    "ordinary operating account escrow. Where a recovery belongs to a plan "
-                    "or includes participant interests, establish ownership and permissible expense "
-                    "allocation before distribution. Employer convenience alone cannot convert plan "
-                    "money into unrestricted corporate cash."
-                ),
-                (
-                    "Build the recurring payment schedule around observable work and the "
-                    "contingent schedule around observable collection. A $6,000 monthly advisory "
-                    "fee can be billed in advance against a defined service period, with "
-                    "termination and any unused-fee treatment stated explicitly. That billing "
-                    "timing does not itself determine revenue recognition. A recovery fee "
-                    "should distinguish cash refunds, applied credits, disputed credits, and "
-                    "future renewal reductions. If a carrier applies a $40,000 credit "
-                    "against a payable premium installment and the contract treats realized "
-                    "credits as recovery, a 35% fee equals $14,000 once the credit "
-                    "is actually applied and evidenced. A proposed worksheet adjustment alone "
-                    "does not trigger that result. Use milestone holds for a contested "
-                    "portion while releasing undisputed compensation; define the reviewer, evidence "
-                    "deadline, and escalation path. Factoring should be a last-mile liquidity "
-                    "decision for an assignable, earned receivable, not a device for financing "
-                    "speculative savings. A 3% purchase discount on a $20,000 invoice "
-                    "costs $600 before other charges; recourse can leave collection risk "
-                    "with the operator. Platform checkout suits small corporate retainers, "
-                    "but processor fees, card disputes, and transaction limits can make "
-                    "it unsuitable for large contingent settlements."
-                ),
-            ],
-            "table": {
-                "caption": "Eight Payment and Settlement Arrangements Compared by Authority, Evidence and Failure Mode",
-                "headers": [
-                    "Payment arrangement and suitable operating use",
-                    "Authority and custody requirements before payment",
-                    "Evidence required to reconcile earned compensation",
-                    "Principal failure mode and specific protection",
-                ],
-                "rows": [
-                    [
-                        "Bank wire for large earned recovery-fee settlements",
-                        "Authorized corporate signer instructs its verified banking institution",
-                        "Match received bank posting with invoice and remittance reference",
-                        "Verify beneficiary changes through an independently established telephone channel",
-                    ],
-                    [
-                        "Independent escrow for disputed multi-party settlement distributions",
-                        "Qualified custodian follows signed ownership and release instructions",
-                        "Retain escrow ledger, release approval and beneficiary payment confirmations",
-                        "Reject operator commingling and require a defined dispute procedure",
-                    ],
-                    [
-                        "Business ACH for recurring employer advisory invoices",
-                        "Authorized account holder executes the bank-compatible debit permission",
-                        "Reconcile enrollment count, service period, invoice and bank settlement",
-                        "Monitor returns and stop unauthorized repeated debit attempts promptly",
-                    ],
-                    [
-                        "Corporate retainer for bounded discovery and contract analysis",
-                        "Employer signs scope, payment timing and unused-fee treatment",
-                        "Track service delivery separately from advance cash collection",
-                        "Prevent scope expansion with explicit deliverables and change authorization",
-                    ],
-                    [
-                        "Statutory disbursement where an actual governing distribution rule applies",
-                        "Identify governing authority, entitled payee and required distributing fiduciary",
-                        "Preserve governing order or rule plus the distribution accounting",
-                        "Never invent an automatic statutory lien for consulting compensation",
-                    ],
-                    [
-                        "Platform checkout for smaller corporate-funded engagement payments",
-                        "Authorized buyer uses processor-supported card or bank credentials",
-                        "Link processor settlement reports to invoices and transaction charges",
-                        "Price processing costs and document services against payment disputes",
-                    ],
-                    [
-                        "Receivable factoring after an assignable fee becomes earned",
-                        "Confirm assignment permissions, debtor notice and existing lender restrictions",
-                        "Retain purchase agreement, discount schedule and debtor acknowledgment",
-                        "Stress-test recourse exposure and exclude speculative recovery claims",
-                    ],
-                    [
-                        "Milestone holds for objectively disputed portions of compensation",
-                        "Contract names evidence reviewer and release decision authority",
-                        "Document completed milestones, accepted amounts and remaining disputed items",
-                        "Release undisputed fees while enforcing defined review deadlines",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Identify the obligor and lawful source",
-                    "action": "Record the contracting entity, signatory, payer account category and fee owner.",
-                    "detail": "Separate employer operating cash, plan assets, carrier commission obligations and client-owned recoveries before choosing a payment arrangement.",
-                },
-                {
-                    "step": 2,
-                    "title": "Define the earned event and evidence",
-                    "action": "Attach an invoice schedule and a recovery definition with worked examples.",
-                    "detail": "Specify treatment of applied credits, reversals, preexisting disputes, duplicate recoveries and renewal savings that have not yet materialized.",
-                },
-                {
-                    "step": 3,
-                    "title": "Verify the payment instructions independently",
-                    "action": "Complete vendor onboarding and confirm beneficiary details through a trusted channel.",
-                    "detail": "Use separate personnel for bank-detail changes and payment release; avoid placing health information in banking references.",
-                },
-                {
-                    "step": 4,
-                    "title": "Reconcile collection and close the ledger",
-                    "action": "Match the settlement evidence, client invoice and collected operator fee.",
-                    "detail": "Track returns, commission chargebacks and disputed amounts separately, then issue a concise reconciliation to the authorized client contact.",
-                },
-            ],
-        },
-        {
-            "heading": "3. Protect the fee with evidence, scoped authority and defensible recovery math",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "The play workers_comp_ncci_emod_retroactive_recovery begins with a signed "
-                    "historical-audit scope, not a blanket claim that every high experience "
-                    "modifier is wrong. Audit three to four historical policy years only "
-                    "where carrier, state, and rating-bureau correction rules permit. Compare "
-                    "actual job duties with applicable classifications, reconcile payroll to "
-                    "audited exposures, test eligible overtime adjustments, and check officer "
-                    "exclusions or limits against the governing state rules and policy "
-                    "elections. Reconcile NCCI experience-rating worksheets, or the applicable "
-                    "independent bureau's equivalent, to accurate carrier loss reports and "
-                    "valuation dates. An open reserve is not an error merely because "
-                    "the ultimate claim later costs less. Build an issue register showing "
-                    "policy, disputed item, governing rule, source document, proposed correction, "
-                    "and possible adverse adjustment. A documented $200,000 collected premium "
-                    "overpayment at 35% produces a $70,000 operator fee and leaves "
-                    "$130,000 with the employer before any separately agreed expenses. "
-                    "The permitted commercial range here is a negotiated 30%–40%, subject "
-                    "to the actual engagement and applicable state requirements. Withdraw "
-                    "unsupported claims, disclose additional premium exposure, use the bureau's "
-                    "documented dispute process for defensible items, and improve prospective "
-                    "payroll and claims reporting when historical correction is unavailable."
-                ),
-                (
-                    "Protect payment by defining attribution narrowly enough to survive a "
-                    "real dispute. Attach the initial issue register and identify preexisting "
-                    "carrier disputes so the operator cannot claim credit for someone "
-                    "else's completed work. State whether the fee applies to cash, "
-                    "realized premium credits, or both; describe netting for offsetting "
-                    "additional premiums arising from the same accepted correction. For "
-                    "example, a $60,000 refund accompanied by a related $10,000 "
-                    "additional premium produces a $50,000 net recovery and a "
-                    "$17,500 fee at 35% if that is the agreed basis. "
-                    "Give the client a reporting duty for carrier correspondence and "
-                    "settlements, reasonable access to supporting statements, and a limited "
-                    "post-termination tail covering identified work already delivered. Avoid "
-                    "a perpetual claim over every future premium reduction. A targeted "
-                    "noncircumvention clause should preserve payment for documented work "
-                    "without preventing the employer from speaking to its carrier. "
-                    "Separate recovery authority from broker-of-record authority: obtaining "
-                    "records does not appoint a producer, and a renewal appointment "
-                    "does not create historical contingency rights. When the client "
-                    "disputes attribution, collect the undisputed portion and use the "
-                    "agreed review process rather than interfering with coverage or "
-                    "threatening essential benefits operations."
-                ),
-                (
-                    "Licensing and disclosure determine whether an otherwise attractive fee "
-                    "can be retained. Verify active state Life and Health authority "
-                    "for applicable benefits sales and Property and Casualty authority "
-                    "for workers' compensation placement, including entity licenses, appointments, "
-                    "and nonresident requirements where relevant. Determine separately whether "
-                    "specific administration functions require TPA authority; a consulting "
-                    "label does not change the activity performed. Texas Insurance "
-                    "Code Sections 4001.051 and 4151.051 illustrate separate agent "
-                    "and administrator frameworks, subject to their definitions and "
-                    "exceptions. For covered group-health brokerage or consulting arrangements "
-                    "expecting at least $1,000 in direct or indirect compensation, "
-                    "apply ERISA Section 408(b)(2)(B), codified at 29 U.S.C. "
-                    "1108(b)(2)(B), including required advance disclosures and applicable "
-                    "update obligations. Explain commissions, overrides, referral payments, "
-                    "and termination-related compensation in the actual arrangement. Disclosure "
-                    "does not replace the requirement that compensation be reasonable. "
-                    "Before receiving protected health information as a business associate, "
-                    "execute the required agreement and implement role-based access. "
-                    "For PBM records, confirm audit rights and applicable gag-clause "
-                    "restrictions rather than assuming a broker appointment unlocks "
-                    "every field. Keep stop-loss run-out terms, reference-based pricing "
-                    "defense arrangements, and carrier reimbursement conditions visible "
-                    "because collection economics deteriorate when promised implementation "
-                    "cannot actually be delivered."
-                ),
-            ],
-            "table": {
-                "caption": "Fee Protection Through Scope, Attribution, Licensing and Recovery Evidence",
-                "headers": [
-                    "Protection mechanism and the risk addressed",
-                    "Contract detail needed for enforceable administration",
-                    "Evidence package retained in the engagement record",
-                    "Fallback when the proposed recovery fails",
-                ],
-                "rows": [
-                    [
-                        "Historical audit scope prevents unsupported multi-year recovery promises",
-                        "Identify policy years and applicable correction-window limitations expressly",
-                        "Retain policy forms, audits, payroll records and bureau requirements",
-                        "Restrict work to eligible periods and improve prospective reporting",
-                    ],
-                    [
-                        "Net recovery definition prevents disputes over offsetting premium assessments",
-                        "Define related offsets, collected refunds and actually applied credits",
-                        "Match corrected carrier statements with payment or credit evidence",
-                        "Recalculate fees when accepted corrections also increase premium liability",
-                    ],
-                    [
-                        "Issue register establishes attribution before carrier negotiations begin",
-                        "Exclude documented preexisting disputes unless additional work is authorized",
-                        "Timestamp findings, source documents and client acknowledgment of scope",
-                        "Submit disputed attribution to the designated independent review process",
-                    ],
-                    [
-                        "Limited collection tail protects completed work after engagement termination",
-                        "Name covered findings, duration and client settlement-reporting duties",
-                        "Preserve delivered findings and subsequent matching carrier settlement notices",
-                        "Release unrelated future savings from the operator's fee claim",
-                    ],
-                    [
-                        "Separate renewal appointment protects brokerage authority and commission eligibility",
-                        "Use distinct placement authorization and disclosed compensation terms",
-                        "Retain licenses, appointments and carrier recognition of producer status",
-                        "Continue authorized audit work without claiming unauthorized placement commissions",
-                    ],
-                    [
-                        "Information access controls preserve lawful records handling and auditability",
-                        "Specify permitted purposes, business-associate duties and subcontractor restrictions",
-                        "Keep access logs, executed agreements and documented deletion schedules",
-                        "Use minimized records or stop analysis when authority is insufficient",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four checks before accepting the engagement",
-                "body": (
-                    "Complete these checks before promising recovery amounts, binding "
-                    "placement work or initiating client-account payment instructions."
-                ),
-                "items": [
-                    "Verify the correct legal entity signed, treasury accepted the billing process, and any plan-funded expense has documented fiduciary review and a permissible allocation.",
-                    "Verify relevant producer and entity licenses, carrier appointments and any required administrator authority; complete applicable direct and indirect compensation disclosures.",
-                    "Verify historical correction eligibility, actual-duty evidence, carrier loss reports and valuation dates; quantify potential adverse premium adjustments alongside proposed refunds.",
-                    "Verify the signed fee basis, realized-credit treatment, attribution register, records permissions and independent bank-detail confirmation before presenting settlement instructions.",
-                ],
-            },
-        },
-        {
-            "heading": "4. Reconcile the retained-fee ledger to all three canonical operating cases",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Use the scorecard's annual revenue totals as retained operator "
-                    "revenue, even though the scenario metadata calls them gross "
-                    "revenue. They are not gross employer billings, claim disbursements, "
-                    "premium volume, or rebate principal. Under the stated retained-share "
-                    "basis, amounts belonging to other parties remain outside the "
-                    "operator's revenue bridge. Apply ASC 606 principal-versus-agent analysis "
-                    "to the actual contracts rather than assuming every commission "
-                    "or pass-through arrangement has identical accounting. The following "
-                    "unit bridges are illustrative compositions of the supplied totals, "
-                    "not additional scorecard outputs. Conservative uses 1,000 average "
-                    "billed employees at $8 PEPM for twelve months, producing "
-                    "$96,000, plus $12,000 retained commissions and $12,000 "
-                    "recovery fees from $40,000 recovered at 30%. Total "
-                    "revenue is exactly $120,000. At 32% net margin, "
-                    "owner net profit is $38,400 and total modeled costs "
-                    "are $81,600. Staffing remains 1 FT + 3 C. "
-                    "Count only billable employee months actually covered by the "
-                    "agreement; dependents are not additional employees unless the "
-                    "contract explicitly uses another billing unit. A partial-year "
-                    "launch cannot claim twelve months of PEPM revenue merely "
-                    "because the signed client census reaches the illustrative "
-                    "year-end headcount. Reconcile monthly census changes before invoicing."
-                ),
-                (
-                    "Base uses 2,500 average billed employees at $12 PEPM "
-                    "for twelve months, producing $360,000, plus $105,000 "
-                    "retained commissions and $70,000 recovery fees from $200,000 "
-                    "recovered at 35%. Total revenue is $535,000; the "
-                    "45.0% margin produces $240,750 owner net profit and "
-                    "$294,250 total modeled costs with 1 FT + 3 C. "
-                    "Scaled uses 4,000 average billed employees at $15 PEPM "
-                    "for twelve months, producing $720,000, plus $125,000 "
-                    "retained commissions and $105,000 recovery fees from $300,000 "
-                    "recovered at 35%. Total revenue is $950,000; the "
-                    "58% margin produces $551,000 owner net profit and "
-                    "$399,000 total modeled costs with 2 FT + 4 C. "
-                    "These bridges assume the fees and commissions are separately "
-                    "earned, disclosed where required, and not contractually offset "
-                    "against each other. If an advisory agreement credits commissions "
-                    "against PEPM fees, subtract that credit instead of counting "
-                    "both amounts. The rising margins are canonical scenario assumptions, "
-                    "not results established by these unit examples. Validate delivery "
-                    "capacity, contractor expense, acquisition cost, insurance, software, "
-                    "and collection losses against the full cost envelope. Do "
-                    "not treat the narrower monthly overhead range as the "
-                    "entire annual expense model."
-                ),
-                (
-                    "Run a settlement ledger beside the revenue ledger because "
-                    "earned fees and available cash diverge. Each recovery entry "
-                    "should identify the client, policy period, accepted correction, "
-                    "gross refund, related offset, realized credit, contingency rate, "
-                    "invoice date, due date, and collected fee. Each commission "
-                    "entry needs carrier statement references, applicable revenue-sharing "
-                    "deductions, cancellation exposure, and any client fee credit. "
-                    "For recurring advisory work, tie invoices to the agreed "
-                    "employee-month census and service period. A 30-day payment "
-                    "delay on $60,000 of valid invoices creates a $60,000 "
-                    "working-capital gap without automatically changing recognized revenue; "
-                    "a $6,000 unrecoverable balance reduces economic profit unless "
-                    "already included in the cost assumptions. Maintain an aging "
-                    "review that separates administrative delays, disputed scope, "
-                    "counterparty distress, and confirmed bank returns. Escalate "
-                    "administrative delays to accounts payable, scope disputes to "
-                    "the named reviewer, and deteriorating credit to revised "
-                    "terms for future work. Keep recovered employer money "
-                    "out of operator cash forecasts except for the earned "
-                    "retained fee. Close each month by reconciling contracts, "
-                    "source statements, invoices, bank receipts, and outstanding "
-                    "disputes. This discipline makes the small-team model "
-                    "collectible without turning the advisory business into an "
-                    "unlicensed custodian or an involuntary lender."
-                ),
-            ],
-            "table": {
-                "caption": "Formula v2.0 Retained-Revenue Bridges and Monthly Settlement Controls",
-                "headers": [
-                    "Scenario or ledger control being reconciled",
-                    "Revenue bridge or required settlement evidence",
-                    "Profit, cost or cash consequence measured",
-                    "Operator action that prevents overstatement or leakage",
-                ],
-                "rows": [
-                    [
-                        "Conservative annual case with one employee and three contractors",
-                        "$96,000 advisory plus $12,000 commissions plus $12,000 recovery fees",
-                        "$120,000 revenue less $81,600 costs yields $38,400 profit",
-                        "Reconcile billable employee months and exclude recovered client principal",
-                    ],
-                    [
-                        "Base annual case with one employee and three contractors",
-                        "$360,000 advisory plus $105,000 commissions plus $70,000 recovery fees",
-                        "$535,000 revenue less $294,250 costs yields $240,750 profit",
-                        "Subtract contractual commission credits before finalizing advisory revenue totals",
-                    ],
-                    [
-                        "Scaled annual case with two employees and four contractors",
-                        "$720,000 advisory plus $125,000 commissions plus $105,000 recovery fees",
-                        "$950,000 revenue less $399,000 costs yields $551,000 profit",
-                        "Validate service capacity against the complete modeled cost envelope",
-                    ],
-                    [
-                        "Historical recovery settlement reconciled at the individual policy level",
-                        "Accepted correction, carrier statement and actual refund establish collection",
-                        "$200,000 collected at thirty-five percent earns $70,000 operator compensation",
-                        "Record client principal separately from the retained contingency fee",
-                    ],
-                    [
-                        "Commission statement review before recognizing the retained operator amount",
-                        "Carrier statements identify sharing deductions, cancellation exposure and adjustments",
-                        "Retained compensation excludes amounts owed to other authorized producers",
-                        "Match statement changes with contractual recognition and chargeback treatment",
-                    ],
-                    [
-                        "Receivable aging review separates profitability from immediate cash availability",
-                        "Compare invoice due dates with bank receipts and disputes",
-                        "$60,000 delayed invoices create an equivalent temporary funding requirement",
-                        "Fund operator working capital without borrowing client settlement proceeds",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": "The employer's recovered dollar is not your revenue; your revenue is the earned, documented fee you are entitled to retain.",
-    "diagram_id": "diag-04",
-    "action_checklist": [
-        "Map the employer CFO, benefits sponsor, fiduciary decision-maker, treasury signer and actual fee obligor before issuing the engagement agreement.",
-        "Complete applicable producer, entity, appointment and administrator checks, then disclose direct and indirect compensation for covered arrangements.",
-        "Build a three-to-four-year workers' compensation issue register only within applicable correction rules, including adverse-adjustment exposure and source evidence.",
-        "Define collected cash, realized credits, related offsets, attribution exclusions and a limited collection tail in the signed contingency schedule.",
-        "Choose the payment arrangement, verify beneficiary instructions independently and keep claim funds, premiums and recovery principal outside operator accounts.",
-        "Reconcile monthly retained revenue and collections to the $120,000, $535,000 and $950,000 canonical cases without duplicating commissions or client-owned proceeds.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "29 U.S.C. 1104 — ERISA fiduciary duties",
-            "url": "https://www.law.cornell.edu/uscode/text/29/1104",
-            "relevance": "Governs fiduciary prudence, loyalty and reasonable plan-administration expenses when evaluating services and uses of plan assets.",
-        },
-        {
-            "title": "29 U.S.C. 1106 — ERISA prohibited transactions",
-            "url": "https://www.law.cornell.edu/uscode/text/29/1106",
-            "relevance": "Identifies prohibited party-in-interest transactions and fiduciary self-dealing that must be considered before directing plan money or compensation.",
-        },
-        {
-            "title": "29 U.S.C. 1108(b)(2)(B) — Group health brokerage and consulting compensation",
-            "url": "https://www.law.cornell.edu/uscode/text/29/1108",
-            "relevance": "Sets disclosure conditions for covered brokerage and consulting arrangements expecting at least $1,000 in direct or indirect compensation, alongside the reasonable-services exemption.",
-        },
-        {
-            "title": "29 U.S.C. 1185m — Transparency in plan and insurance coverage",
-            "url": "https://www.law.cornell.edu/uscode/text/29/1185m",
-            "relevance": "Addresses prohibited contractual restrictions on specified cost, quality and claims information and associated compliance attestations.",
-        },
-        {
-            "title": "45 CFR 164.504(e) — Business associate contracts",
-            "url": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-C/part-164/subpart-E/section-164.504",
-            "relevance": "Defines required contractual safeguards and permitted-use boundaries when a business associate handles protected health information.",
-        },
-        {
-            "title": "Texas Insurance Code Section 4001.051 — Acts constituting acting as agent",
-            "url": "https://statutes.capitol.texas.gov/Docs/IN/htm/IN.4001.htm#4001.051",
-            "relevance": "Provides a concrete state-law activity test relevant to insurance solicitation, procurement and other agent functions rather than relying on job titles.",
-        },
-        {
-            "title": "Texas Insurance Code Section 4151.051 — Administrator certificate required",
-            "url": "https://statutes.capitol.texas.gov/Docs/IN/htm/IN.4151.htm#4151.051",
-            "relevance": "Illustrates the separate authorization framework for administrator activities, read with the chapter's definitions and exceptions.",
-        },
-    ],
-}
+CHAPTER_2 = {'id': 'Q2',
+ 'chapter_id': 'Q2',
+ 'chapter_number': 2,
+ 'question_number': 2,
+ 'slug': 'level-funding-playbook-quoting-renewals-plan-redesign',
+ 'question_prompt': 'How does a broker or employer prepare, quote, and defend a level-funded case at '
+                    'renewal, and which plan redesign levers (direct primary care, cost navigation) '
+                    'actually cut spend?',
+ 'kicker': 'Q2 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'The Level-Funding Playbook: Quoting, Renewals, and Plan Redesign',
+ 'subtitle': 'First-case preparation, broker step-by-step questions, long-term fully insured vs. '
+             'level-funded planning, common pitfalls, renewal review checklists, small-business benefit '
+             'options, direct primary care, and exposing who profits from rising premiums',
+ 'layout_template': 'executive_summary',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Level-funding operators from Security Health Plan, American Trust Administrators, '
+                      'BeneSmart and Benefit Experts converge on one model: fixed monthly payments split '
+                      'across administration, stop-loss and a pre-funded claims account the employer owns, '
+                      'with unused dollars refunded after run-out. They agree it fits healthy, stable '
+                      'groups that can commit to a full 12-month contract and want the upside a fully '
+                      'insured carrier keeps. Street mechanics are concrete: IHQs at 5 to 10 minutes per '
+                      'employee, quarterly wage filings, census with SIC and zip, Milliman Curve pharmacy '
+                      'underwriting, SHP specific stop-loss of $10,000 to $20,000 with 125% aggregate, and '
+                      'a 66% refund rate. Plan redesign levers include regional networks or RBP at $9 '
+                      'versus $25 access fees and DPC diverting about $40 PMPM. Practitioners split on '
+                      'surplus splits, IHQ thresholds and which carriers quote the smallest groups.',
+ 'key_metrics': [{'label': 'SHP Refund Rate on Unused Claim Dollars',
+                  'metric': 'SHP Refund Rate on Unused Claim Dollars',
+                  'value': '66% of unused claim dollars after the run-out period',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Security Health Plan's current refund opportunity on the claims pre-funding "
+                             'bucket once run-out closes, inside a stated 60 to 100% market range.',
+                  'source': 'Security Health Plan ([8FR_2qIAL34 @ 00:15:46])'},
+                 {'label': 'Level-Funded Program Growth',
+                  'metric': 'Level-Funded Program Growth',
+                  'value': 'About 800% growth in the last decade',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "ATA's sizing of level-funded adoption, against about 25M Americans in fully "
+                             'insured plans versus about 150M in level-funded and self-funded structures.',
+                  'source': 'American Trust Administrators | Level Funding ([QBs9tuVEIhw @ 00:01:49])'},
+                 {'label': 'Fully Insured to Level-Funded Premium Savings',
+                  'metric': 'Fully Insured to Level-Funded Premium Savings',
+                  'value': '45% annual premium savings',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "BeneSmart's Rich reports companies this year moving from fully insured to "
+                             'level funded and saving 45% annually on premiums.',
+                  'source': 'BeneSmart - A Modern Approach to Benefits ([UOjbo9Dprhw @ 00:04:53])'},
+                 {'label': 'IHQ Completion Time per Employee',
+                  'metric': 'IHQ Completion Time per Employee',
+                  'value': '5 to 10 minutes from each employee',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "ATA's time budget for individual health questionnaires, the core "
+                             'underwriting document for a level-funded quote.',
+                  'source': 'American Trust Administrators | Level Funding ([ise8qdroICE @ 00:02:28])'}],
+ 'sections': [{'heading': 'Section 1: The Practitioner Consensus',
+               'paragraphs': ['Every operator who covered the mechanics describes level funding the same '
+                              'way: a self-funded plan dressed in fully insured clothing. Security Health '
+                              'Plan\'s Garrett Johnson and Erin Long frame it as "a hybrid of a '
+                              'traditional fully insured plan and a self-insured plan," built from three '
+                              'monthly cost layers (administration, specific and aggregate stop-loss, and '
+                              'maximum claims pre-funding) with unused claim dollars refunded after '
+                              'run-out [8FR_2qIAL34 @ 00:02:19]. American Trust Administrators lays out '
+                              'the identical skeleton: a claims account, an admin bucket covering TPA, '
+                              'broker, PPO access and RBP repricer, and stop-loss, paid in level monthly '
+                              'installments with a true-up at year end, where "the claims account is the '
+                              'employer\'s money" [QBs9tuVEIhw @ 00:04:16]. BeneSmart\'s Rich strips it '
+                              'down further, calling it "simply a self-funded plan that is fully funded," '
+                              'assembled from four parts (TPA, network, PBM and stop-loss) and stressing '
+                              'that "your costs will not vary throughout the year" [UOjbo9Dprhw @ '
+                              '00:08:13]. Benefit Experts pitches the same trade to small-business owners: '
+                              'steady monthly costs with a refund available if claims run low, a refund '
+                              'they tag as "Possible, not promised" [-KHMJD6TdmM @ 00:00:37]. The shared '
+                              'operating premise is ownership. The employer funds its own claims bucket, '
+                              'keeps what it does not spend, and caps the downside with stop-loss instead '
+                              'of renting coverage from a carrier that keeps every surplus dollar.',
+                              'The practitioners agree just as hard on who should stay out of level '
+                              'funding. Tom Stein, CEO of the family-owned ATA, says "level funding is not '
+                              'for groups that have above average claims experiences," and he flags high '
+                              'ER utilizers, owners selling within one to two years, and seasonal or '
+                              'layoff-prone workforces as bad bets, because "level funding is a long-term '
+                              'solution" [dgpkKOJBv_s @ 00:01:22]. Security Health Plan\'s sweet spot '
+                              'matches: healthy ACA, grandfathered or transitional groups, or smaller '
+                              'large groups using level funding as a stepping stone to full self-funding, '
+                              'typically 10 to 100 enrolled employees excluding family members '
+                              "[8FR_2qIAL34 @ 00:03:58]. ATA's broker-question video names the only two "
+                              'legitimate disqualifiers as too many claims or an inability to commit to a '
+                              '12-month contract [ise8qdroICE @ 00:01:42]. The farm-analogy episode adds '
+                              'the time-horizon test: "you need to know that you\'re going to be in '
+                              'business for the next 12 months before level funding, which is a '
+                              'self-funded program, starts to make sense" [8scqEaAolto @ 00:02:16]. The '
+                              'consensus filter is three questions asked before any quote gets pulled: is '
+                              'the group healthy, will it be around and intact for at least a full '
+                              'contract year, and does the owner actually want to keep the upside rather '
+                              'than hand it to a carrier.',
+                              'The renewal is the trigger every speaker builds around. ATA aims its pitch '
+                              'at employers with 5 to 100 employees staring at a 20% fully insured '
+                              'increase, opening with one question, "Have we looked at level funded?", and '
+                              'noting the product has "been around for three and a half decades" while '
+                              'many brokers skip it "simply because it\'s a lot more work for them" '
+                              '[ise8qdroICE @ 00:00:59]. BeneSmart reports fully insured carriers raising '
+                              'rates 10 to 15% and says 45% of employers in the 5 to 200 life space have '
+                              'already left for level funded or self-funded plans [UOjbo9Dprhw @ '
+                              '00:05:10]. Jennifer Shafer of JS Benefits Group refuses to treat the '
+                              'carrier\'s number as final: "we don\'t believe your employee benefit '
+                              'strategy should simply be about accepting the renewal your insurance '
+                              'carrier gives you," and she reviews plan design, claims, population and '
+                              "funding options instead [6P2sMVFtCtk @ 00:00:37]. ATA's verdict on the "
+                              'fully insured side is blunt: "All of the upside is retained by the '
+                              'insurance provider, the carrier" [8scqEaAolto @ 00:01:44]. The operator '
+                              'takeaway is consistent across the room. A big renewal is the opening to '
+                              "re-market into level funding, and ATA's instruction for a broker who will "
+                              'not run those numbers is to go find another broker.'],
+               'table': {'caption': 'Level-Funding Consensus Points Operators Agree On Before Quoting a '
+                                    'Renewal',
+                         'headers': ['Consensus Point',
+                                     'What Practitioners Report',
+                                     'Operator Implication',
+                                     'Expert Source'],
+                         'rows': [['Hybrid structure with three monthly cost layers',
+                                   'Administration, specific and aggregate stop-loss, and maximum claims '
+                                   'pre-funding in one fixed payment',
+                                   'Quote and explain every bid as these three buckets, not as one premium',
+                                   'Security Health Plan ([8FR_2qIAL34 @ 00:02:19])'],
+                                  ['Claims account belongs to the employer',
+                                   'Level monthly payments with a true-up at year end; claims money is the '
+                                   "employer's own",
+                                   'Sell ownership of the surplus as the core value against fully insured',
+                                   'American Trust Administrators | Level Funding ([QBs9tuVEIhw @ '
+                                   '00:04:16])'],
+                                  ['Costs stay flat across the plan year',
+                                   'Self-funded plan that is fully funded, built from TPA, network, PBM '
+                                   'and stop-loss components',
+                                   'Pitch budget certainty to CFOs who fear self-funded cash calls',
+                                   'BeneSmart - A Modern Approach to Benefits ([UOjbo9Dprhw @ 00:08:13])'],
+                                  ['Healthy groups only, never above average claims',
+                                   'High ER use, owners selling in one to two years, seasonal or '
+                                   'layoff-prone groups are bad fits',
+                                   'Screen claims history and exit plans before spending underwriting time',
+                                   'American Trust Administrators | Level Funding ([dgpkKOJBv_s @ '
+                                   '00:01:22])'],
+                                  ['Twelve-month commitment is the entry ticket',
+                                   'Too many claims or inability to commit to a 12-month contract are the '
+                                   'only real disqualifiers',
+                                   'Confirm the owner will stay in business and in contract a full year',
+                                   'American Trust Administrators | Level Funding ([ise8qdroICE @ '
+                                   '00:01:42])'],
+                                  ['Fully insured renewals are the re-marketing trigger',
+                                   'Carriers raising rates 10 to 15%; 45% of 5 to 200 life employers '
+                                   'already moved',
+                                   'Use every large renewal as the moment to run level-funded quotes side '
+                                   'by side',
+                                   'BeneSmart - A Modern Approach to Benefits ([UOjbo9Dprhw @ 00:05:10])'],
+                                  ["Never just accept the carrier's renewal number",
+                                   'Review plan design, claims and costs, employee population, and funding '
+                                   'options at every renewal',
+                                   'Run a full benefits review instead of rubber-stamping the carrier '
+                                   'increase',
+                                   'JS Benefits Group ([6P2sMVFtCtk @ 00:00:37])']]}},
+              {'heading': 'Section 2: Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['Quoting starts with paperwork, and every underwriter on the panel wants the '
+                              "same packet. ATA's first-case checklist is the quarterly wage and tax "
+                              'report, enrollment forms and IHQs collected under a boss-set Friday '
+                              'deadline, plus census, SIC code and zip code, all routed through a general '
+                              'agent out to carriers, TPAs, pricers and MGUs [E2z3UzEl2Ds @ 00:01:14]. '
+                              'ATA\'s broker video budgets IHQs at "5 to 10 minutes from each one of your '
+                              'employees" and uses the quarterly wage filing to validate who actually '
+                              'belongs on the plan [ise8qdroICE @ 00:02:28]. Security Health Plan '
+                              "underwrites with Milliman's Curve pharmacy tool, which requires a full "
+                              'member census, layers on medical applications that Erin Long admits are a '
+                              '"tough pill to swallow," and pulls 24 months of claims experience where it '
+                              "exists [8FR_2qIAL34 @ 00:14:19]. BeneSmart's Rich works the larger end of "
+                              'the market: he submits the current carrier invoice, renewals, MLRs and '
+                              'high-cost claimant reports, and reserves IHQs for groups under 25 '
+                              '[UOjbo9Dprhw @ 00:16:20]. ATA\'s rule for the whole process is that "level '
+                              'funding rewards honesty and it punishes shortcuts," and that clean '
+                              'submissions for underwriting produce better plans and better renewals long '
+                              'term, so shaded or incomplete IHQs come back to bite the broker at the very '
+                              'first renewal.',
+                              'Pricing turns on stop-loss and on how the surplus gets split. Security '
+                              'Health Plan quotes specific stop-loss between $10,000 and $20,000 and '
+                              'aggregate at 120 to 125%; its own specific limit steps by contract count, '
+                              'with $10,000 for 10 to 25 contracts, $15,000 for 26 to 50, and $20,000 for '
+                              '51 to 100, while aggregate stays fixed at 125 [8FR_2qIAL34 @ 00:19:02]. '
+                              "SHP's worked refund example pre-funds $120,000 of claims, spends $95,000, "
+                              'and returns $15,000 to $25,000 depending on a 60 to 100% refund rate; its '
+                              'current rate is 66% of unused claim dollars after run-out. ATA pushes '
+                              'brokers to ask "What\'s my surplus?" and to target 100% retention over '
+                              "time, stair-stepping toward it if needed [ise8qdroICE @ 00:05:09]. ATA's "
+                              'time-horizon matrix ties the split to tenure: a 50% surplus split, which it '
+                              'calls sharecropping, may fit a 1-year to 18-month horizon, while 2 to '
+                              '3-plus years calls for 100% [8scqEaAolto @ 00:04:50]. On the carrier side, '
+                              'BeneSmart lists minimums of Cigna 25, UHC 5 and BCBS/Anthem 10, says Aetna '
+                              'will level fund down to two lives in certain markets, counts roughly 15 '
+                              'unbundled TPA partners, and treats admin and stop-loss fees as negotiable '
+                              'every year [UOjbo9Dprhw @ 00:12:35].',
+                              'Plan redesign is where the renewal savings get manufactured. Security '
+                              'Health Plan runs level funding on a fixed SPD with 12 preset designs per '
+                              'network, while true self-funded designs flex within ERISA and ACA rules '
+                              "[8FR_2qIAL34 @ 00:18:24]. ATA's network play is to question whether a group "
+                              'even needs a national network like Cigna or Aetna: a tight regional network '
+                              'or RBP tends to carry "better discounts" and lower access fees, $9 a month '
+                              'against $25, and a knee surgery at $22,500 locally versus $25,000 '
+                              'nationally adds up to tens of thousands of dollars a year on a 50-life '
+                              'group, at the cost of fewer hospitals [ise8qdroICE @ 00:04:18]. BeneSmart '
+                              'stacks steerage, direct contracts, RBP and DPC on top of the funding '
+                              'change, and uses the savings to push zero or disappearing deductibles '
+                              "[UOjbo9Dprhw @ 00:06:35]. Milliman actuary Fritz Busch, on Hint Health's "
+                              'panel, puts a number on the DPC lever: against an $85 fee, diverted claims '
+                              'are worth about $40 PMPM and avoided services about $25, covering roughly '
+                              '80% of the fee before quality and health-improvement value are counted, and '
+                              'he calls DPC a slam dunk for high-cost groups [5ztwBEIpJjs @ 00:19:47]. '
+                              'Busch also tells operators not to build a pro forma straight off those '
+                              'study figures, so the DPC math belongs in the pitch as directional '
+                              'support.'],
+               'table': {'caption': 'Level-Funding Quoting, Stop-Loss and Redesign Numbers Used on Live '
+                                    'Cases',
+                         'headers': ['Mechanic',
+                                     'Exact Numbers or Inputs',
+                                     'How Operators Use It',
+                                     'Expert Source'],
+                         'rows': [['Submission packet for a first case',
+                                   'Quarterly wage and tax report, IHQs, census, SIC code and zip code',
+                                   'Route the full packet through a GA to carriers, TPAs, pricers and MGUs',
+                                   'American Trust Administrators | Level Funding ([E2z3UzEl2Ds @ '
+                                   '00:03:04])'],
+                                  ['Pharmacy and medical underwriting inputs',
+                                   'Milliman Curve on a full member census, medical applications, 24 '
+                                   'months of claims',
+                                   'Collect a complete census up front so pharmacy scoring can run',
+                                   'Security Health Plan ([8FR_2qIAL34 @ 00:14:19])'],
+                                  ['Larger-group underwriting without IHQs',
+                                   'Carrier invoice, renewals, MLRs and high-cost claimants; IHQs only '
+                                   'under 25',
+                                   'Skip questionnaires on 25-plus groups and submit carrier experience '
+                                   'instead',
+                                   'BeneSmart - A Modern Approach to Benefits ([UOjbo9Dprhw @ 00:15:03])'],
+                                  ['Specific stop-loss by contract count',
+                                   '10 to 25 contracts at $10,000; 26 to 50 at $15,000; 51 to 100 at '
+                                   '$20,000; aggregate 125',
+                                   'Check where the group lands on the contract ladder before comparing '
+                                   'bids',
+                                   'Security Health Plan ([8FR_2qIAL34 @ 00:19:02])'],
+                                  ['Refund math on unused claims',
+                                   '$120,000 pre-funded, $95,000 used, $15,000 to $25,000 back at 60 to '
+                                   '100%',
+                                   'Show owners the surplus refund in dollars, not only as a percentage',
+                                   'Security Health Plan ([8FR_2qIAL34 @ 00:08:16])'],
+                                  ['Carrier minimum group sizes',
+                                   'Cigna 25, UHC 5, BCBS/Anthem 10, Aetna down to two in certain markets',
+                                   'Match micro groups to carriers that will actually level fund them',
+                                   'BeneSmart - A Modern Approach to Benefits ([UOjbo9Dprhw @ 00:12:35])'],
+                                  ['Regional network or RBP swap',
+                                   'Access fee $9 versus $25 monthly; knee surgery $22,500 versus $25,000',
+                                   'Trade fewer hospitals for deeper discounts on 50-life groups',
+                                   'American Trust Administrators | Level Funding ([ise8qdroICE @ '
+                                   '00:04:18])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'How Level-Funding Operators Get Clean Quotes and Better Renewals',
+                           'body': 'The operators who close level-funded cases run the paperwork like a '
+                                   'deadline-driven project, set expectations on speed early, and treat '
+                                   'every fee layer as negotiable at each renewal.',
+                           'items': ['Have the owner set a hard Friday deadline for enrollment forms and '
+                                     'IHQs so the packet goes out complete instead of trickling in '
+                                     '[American Trust Administrators | Level Funding — E2z3UzEl2Ds @ '
+                                     '00:01:14]',
+                                     'Share the bad news early and do not oversell speed; ATA warns level '
+                                     'funding "is not as fast as fully insured" [American Trust '
+                                     'Administrators | Level Funding — E2z3UzEl2Ds @ 00:03:20]',
+                                     'Ask the owner "How long do you expect to be in business?" and set '
+                                     'the surplus split to that horizon [American Trust Administrators | '
+                                     'Level Funding — 8scqEaAolto @ 00:05:56]',
+                                     'Reopen admin and stop-loss fees every year, since both are '
+                                     'negotiable annually [BeneSmart - A Modern Approach to Benefits — '
+                                     'UOjbo9Dprhw @ 00:05:47]']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Qualify the Group',
+                              'action': 'Screen claims history, ER usage, exit plans and workforce '
+                                        'stability before quoting.',
+                              'detail': 'Drop groups with high ER use, owners selling within one to two '
+                                        'years, and seasonal or layoff-prone workforces, and confirm a '
+                                        'full 12-month commitment [American Trust Administrators | Level '
+                                        'Funding — dgpkKOJBv_s @ 00:01:55]'},
+                             {'step': 2,
+                              'title': 'Assemble the Submission Packet',
+                              'action': 'Collect quarterly wage and tax report, IHQs, census, SIC code and '
+                                        'zip code.',
+                              'detail': 'Budget 5 to 10 minutes per employee for IHQs, use the wage filing '
+                                        'to validate plan membership, and route the packet through a GA to '
+                                        'carriers, TPAs, pricers and MGUs [American Trust Administrators | '
+                                        'Level Funding — E2z3UzEl2Ds @ 00:03:04]'},
+                             {'step': 3,
+                              'title': 'Compare Stop-Loss and Surplus Terms',
+                              'action': 'Line up specific and aggregate stop-loss, refund rate, and '
+                                        'surplus retention side by side.',
+                              'detail': 'Benchmark specific stop-loss at $10,000 to $20,000 by contract '
+                                        "count, aggregate at 125, and refund rate against SHP's 66% before "
+                                        'presenting bids [Security Health Plan — 8FR_2qIAL34 @ 00:19:02]'},
+                             {'step': 4,
+                              'title': 'Redesign Network and Plan',
+                              'action': 'Test a regional network or RBP and layer steerage, direct '
+                                        'contracts and DPC.',
+                              'detail': 'Price the regional network at a $9 versus $25 access fee and '
+                                        'local versus national procedure costs, accepting fewer hospitals '
+                                        'for deeper discounts [American Trust Administrators | Level '
+                                        'Funding — ise8qdroICE @ 00:04:03]'}]},
+              {'section_number': 3,
+               'heading': 'Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['Surplus splits draw the sharpest line between carrier and TPA playbooks. '
+                              'Security Health Plan frames the refund as a dial: on $120,000 pre-funded '
+                              'with $95,000 used, the $25,000 left over returns $15,000 to $25,000 at a 60 '
+                              'to 100 percent refund rate, and SHP itself currently pays back 66 percent '
+                              'of unused claim dollars at the end of the run-out period [8FR_2qIAL34 @ '
+                              '00:08:16] [8FR_2qIAL34 @ 00:15:46]. American Trust Administrators treats '
+                              'anything short of full retention as a negotiating target. Their broker '
+                              'script tells employers they are entitled to their claims data and should '
+                              'aim for 100 percent surplus retention over time, with stair-stepping toward '
+                              "that number acceptable [ise8qdroICE @ 00:05:09]. The same firm's farm "
+                              'analogy brands a 50 percent split as sharecropping, since unused crop '
+                              'should stay in your own granary, yet it concedes that a 50 percent surplus '
+                              'can fit an owner with a one-year to 18-month horizon, while two to three '
+                              'years or more should command the full 100 percent [8scqEaAolto @ 00:04:12]. '
+                              'The operator read is blunt: the refund percentage is a contract term to '
+                              'match against how long the owner expects to stay in business, and it '
+                              'belongs on the table at every quote and every renewal rather than accepted '
+                              'as a fixed feature of the product.',
+                              'Practitioners split on how heavy the underwriting file should be. American '
+                              'Trust Administrators makes individual health questionnaires non-negotiable, '
+                              'budgeting five to ten minutes per employee and pairing them with quarterly '
+                              'wage and tax filings that validate who actually belongs on the plan '
+                              '[ise8qdroICE @ 00:02:28]. Their pitfalls video adds that IHQs are how the '
+                              'plan gets priced to the reality of that group. Rich at BeneSmart runs a '
+                              'lighter file built on the carrier invoice, renewals, MLRs and high-cost '
+                              'claimant reports, reserving IHQs for groups under 25 [UOjbo9Dprhw @ '
+                              '00:16:20]. Security Health Plan sits between the two: it pulls Milliman '
+                              'curve pharmacy data off a full member census, uses 24 months of claims '
+                              'experience where it exists, and still requires medical applications that '
+                              'the team admits are a tough pill to swallow [8FR_2qIAL34 @ 00:14:19]. '
+                              'Carrier floors diverge as well. Rich lists Cigna at 25, UHC at 5 and BCBS '
+                              'or Anthem at 10, and says Aetna will level fund all the way down to two in '
+                              'certain markets, while SHP writes 10 to 100 enrolled employees, excluding '
+                              'family members [UOjbo9Dprhw @ 00:12:35]. The practical consequence: the '
+                              'same census can be quotable at one carrier and dead at another, which is '
+                              'why ATA routes submissions through a GA to carriers, TPAs, pricers and '
+                              'MGUs.',
+                              'The ladder from fully insured to self-funded is contested too. Security '
+                              'Health Plan pitches level funding to healthy ACA, grandfathered or '
+                              'transitional groups, and to smaller large groups as a stepping stone to '
+                              'self-funding [8FR_2qIAL34 @ 00:03:58]. American Trust Administrators sizes '
+                              'level funding at 5 to 250 lives and self-funding at 125 lives and up '
+                              'depending on CFO sophistication, flags a $500,000 cash call on a 250-life '
+                              'self-funded group, and says flatly not to self-fund below 100 lives '
+                              '[QBs9tuVEIhw @ 00:08:36]. Other operators never lead with level funding at '
+                              'all. Benefit Experts lays four options side by side: a small group plan '
+                              'where the business sets its premium share, a level-funded plan for '
+                              'relatively healthy teams whose refund is possible, not promised, an HRA '
+                              'with a fixed monthly allowance, and payroll-deducted voluntary benefits '
+                              "that can cost the company nothing [-KHMJD6TdmM @ 00:00:37]. Gusto's "
+                              'self-serve flow recommends small-group, level-funded and health-allowance '
+                              'plans by location and headcount and claims small group prices are set by '
+                              "law and don't vary by broker, while on the level-funded side ATA warns that "
+                              'brokers dodge the product because it is more work and tells owners to find '
+                              'another broker if theirs refuses to look [z_Qpt9fQLWg @ 00:01:03]. Benefit '
+                              'Experts starts every engagement with budget and people before showing a '
+                              'single option.'],
+               'table': {'caption': 'Side-by-side playbooks: where level-funding practitioners take '
+                                    'opposite positions',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Surplus retention target on unused claim dollars',
+                                   'SHP refunds 66 percent of unused claim dollars after the run-out '
+                                   'period',
+                                   'ATA pushes employers toward 100 percent retention, stair-stepping '
+                                   'toward it acceptable',
+                                   'Security Health Plan ([8FR_2qIAL34 @ 00:15:46]); American Trust '
+                                   'Administrators | Level Funding ([ise8qdroICE @ 00:05:09])'],
+                                  ['Whether a 50 percent surplus split is acceptable',
+                                   'Long-horizon owners: a 50 percent split is sharecropping, demand 100 '
+                                   'percent',
+                                   'Owners with a one-year to 18-month horizon: 50 percent may fit',
+                                   'American Trust Administrators | Level Funding ([8scqEaAolto @ '
+                                   '00:04:12])'],
+                                  ['Depth of the underwriting file before quoting',
+                                   'ATA requires IHQs from every employee plus quarterly wage and tax '
+                                   'filings',
+                                   'BeneSmart uses invoice, renewals, MLRs, high-cost claimants; IHQs only '
+                                   'under 25',
+                                   'BeneSmart - A Modern Approach to Benefits ([UOjbo9Dprhw @ 00:16:20])'],
+                                  ['Network choice once the group is level-funded',
+                                   'National Cigna or Aetna network with broad access and a $25 monthly '
+                                   'fee',
+                                   'Tight regional network or RBP at $9 monthly, better discounts, fewer '
+                                   'hospitals',
+                                   'American Trust Administrators | Level Funding ([ise8qdroICE @ '
+                                   '00:04:03])'],
+                                  ['Plan design flexibility under each funding structure',
+                                   'Level-funded at SHP: fixed SPD with 12 preset designs per network',
+                                   'Self-funded: flexible designs within ERISA and ACA rules, stop-loss '
+                                   'bought separately',
+                                   'Security Health Plan ([8FR_2qIAL34 @ 00:18:24])'],
+                                  ['When to graduate from level funding to self-funding',
+                                   'ATA: self-fund at 125 or more lives depending on CFO sophistication, '
+                                   'never below 100',
+                                   'SHP: smaller large groups use level funding as a stepping stone to '
+                                   'self-funding',
+                                   'American Trust Administrators | Level Funding ([QBs9tuVEIhw @ '
+                                   '00:08:36]); Security Health Plan ([8FR_2qIAL34 @ 00:03:58])'],
+                                  ['Entry product for a small employer pricing benefits',
+                                   'Gusto quotes small-group, level-funded and allowance plans; '
+                                   'small-group prices set by law',
+                                   'Benefit Experts shows small group, level funded, HRA and voluntary '
+                                   'benefits side by side',
+                                   'Gusto ([z_Qpt9fQLWg @ 00:01:03]); Benefit Experts ([-KHMJD6TdmM @ '
+                                   '00:00:58])']]}},
+              {'section_number': 4,
+               'heading': 'Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The most expensive trap is leaving early. American Trust Administrators '
+                              'states it is not a good idea to leave a level-funded plan early, because '
+                              'stop-loss will not honor a broken contract [TKRoJd6Glxw @ 00:01:20]. Tom '
+                              'Stein frames it as a 12-month contract that no group should terminate off '
+                              'of, and screens out owners planning to sell within one to two years plus '
+                              "seasonal or layoff-prone workforces [dgpkKOJBv_s @ 00:03:35]. ATA's "
+                              'long-term comparison sets the bar plainly: you need to know you will be in '
+                              'business for the next 12 months before level funding starts to make sense '
+                              '[8scqEaAolto @ 00:02:16]. Runout is the second shock. Contracts are '
+                              'expressed as 12/18 or 12/24, and under a 12/24 a group that runs well in '
+                              'year one still has that money sitting in accounts for an additional 12 '
+                              "months; ATA's example is a $115,000 surplus that does not reach the "
+                              'employer until a year later [TKRoJd6Glxw @ 00:05:38]. The same video notes '
+                              'savings sit outside the benefit trust and can fund something like a work '
+                              'truck, which makes the delay real money an owner is waiting on. Show the '
+                              'runout math before signature or the owner will expect a refund check at '
+                              'month thirteen.',
+                              'Late claims and admin drag are the operational bottlenecks. ATA reports an '
+                              'MRI billed four years after the fact that turned into a negotiation, and '
+                              'says that conversation happens a couple of times a year across its book of '
+                              'business [TKRoJd6Glxw @ 00:02:39]. The same firm lists the paperwork load '
+                              'that comes with the plan: 1095-Bs, PCORI and an annual 5500. Speed is the '
+                              'other trap. ATA opens its first-case walkthrough by admitting this is not '
+                              'as fast as fully insured and warns brokers not to oversell speed to the '
+                              'client [E2z3UzEl2Ds @ 00:04:11]. Rich at BeneSmart wants enrollment done 30 '
+                              'days before the start date and reports seeing it squeezed to seven days, '
+                              'then describes the post-launch mess: providers confused by the logo on the '
+                              'new ID card, fixable through education [UOjbo9Dprhw @ 00:10:38]. Design '
+                              "freedom is also narrower: Security Health Plan's level-funded groups choose "
+                              'from 12 preset designs per network under a fixed SPD, while self-funded '
+                              'employers get flexible designs within ERISA and ACA rules [8FR_2qIAL34 @ '
+                              '00:18:24]. Budget the calendar for paperwork, provider education and a '
+                              "30-day enrollment window before quoting an effective date. ATA's rule for "
+                              'every surprise on the case is to share the bad news early.',
+                              'Underwriting dishonesty and bad-risk groups blow up the economics fastest. '
+                              'Tom Stein is direct that level funding is not for groups with above-average '
+                              'claims experience and flags high ER use as a disqualifier [dgpkKOJBv_s @ '
+                              "00:01:22]. ATA's case-prep rule is that level funding rewards honesty and "
+                              'punishes shortcuts, or in harder terms, rewards the honest and punishes the '
+                              'liars; clean submissions produce better plans and better renewals long term '
+                              '[E2z3UzEl2Ds @ 00:02:31]. The vendor-side numbers need the same scrutiny. '
+                              'In the Hint Health panel, Milliman actuary Fritz Busch prices an $85 DPC '
+                              'fee against roughly $40 PMPM in diverted claims and $25 in avoided claims, '
+                              'about $68 in total, leaving a $17 gap that quality value closes to '
+                              'break-even, and explicitly warns against building a pro forma from those '
+                              'figures [5ztwBEIpJjs @ 00:20:18]. Dave Chase adds the broker-side check: '
+                              'Health Rosetta found up to 17 undisclosed revenue streams the employer '
+                              "didn't know about, and the fix starts with getting access to claims data, "
+                              'by demand letter if needed [nrL0pYx-hQo @ 00:22:04]. Clint Flanigan of '
+                              "Nextera separately warns about commission-paid brokers. Tom Stein's last "
+                              "check is behavioral: if the client doesn't know it is their money, part of "
+                              'the value of level funding is taken away.'],
+               'table': {'caption': 'Firsthand level-funding failure modes and the countermoves '
+                                    'practitioners report',
+                         'headers': ['Failure Mode',
+                                     'Mechanism Reported',
+                                     'Practitioner Countermove',
+                                     'Expert Source'],
+                         'rows': [['Group exits the plan before the contract ends',
+                                   'Stop-loss will not honor a broken 12-month contract when the group '
+                                   'leaves early',
+                                   'Confirm the owner expects to stay in business for the next 12 months',
+                                   'American Trust Administrators | Level Funding ([TKRoJd6Glxw @ '
+                                   '00:01:20])'],
+                                  ['Surplus arrives a full year after a strong plan year',
+                                   'Under 12/24 runout a $115,000 surplus is not paid out until a year '
+                                   'later',
+                                   'Explain the 12/18 or 12/24 runout and surplus timing before the client '
+                                   'signs',
+                                   'American Trust Administrators | Level Funding ([TKRoJd6Glxw @ '
+                                   '00:05:38])'],
+                                  ['Claims billed long after the plan year closes',
+                                   'An MRI billed four years later became a negotiation, a couple times a '
+                                   'year',
+                                   'Expect late-bill negotiations as a recurring event across the book of '
+                                   'business',
+                                   'American Trust Administrators | Level Funding ([TKRoJd6Glxw @ '
+                                   '00:02:39])'],
+                                  ['Administrative filing load the employer did not plan for',
+                                   'Level-funded plans carry 1095-B forms, PCORI and an annual 5500 filing',
+                                   'Walk the client through the 1095-B, PCORI and 5500 load before launch',
+                                   'American Trust Administrators | Level Funding ([TKRoJd6Glxw @ '
+                                   '00:03:45])'],
+                                  ['Rushed enrollment and provider confusion at go-live',
+                                   'Enrollment squeezed to seven days; providers confused by the logo on '
+                                   'ID cards',
+                                   'Enroll 30 days before the start date and educate providers on the new '
+                                   'card',
+                                   'BeneSmart - A Modern Approach to Benefits ([UOjbo9Dprhw @ 00:10:38])'],
+                                  ['Dirty or dishonest underwriting submission sent to market',
+                                   'Level funding rewards honesty and punishes shortcuts, so bad data '
+                                   'hurts renewals',
+                                   'Share the bad news early; clean submissions produce better plans and '
+                                   'renewals',
+                                   'American Trust Administrators | Level Funding ([E2z3UzEl2Ds @ '
+                                   '00:03:20])'],
+                                  ['Hidden broker compensation draining the plan budget',
+                                   'Health Rosetta found up to 17 undisclosed revenue streams the employer '
+                                   'never knew about',
+                                   'Get access to claims data, using demand letters, then verify contracts '
+                                   'with data',
+                                   'Benefit Whisperer ([nrL0pYx-hQo @ 00:22:04])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Kill-or-Proceed Checks Before Any Level-Funded Quote Goes Out',
+                           'body': 'These four gates come straight from the pitfalls ATA, BeneSmart and '
+                                   'Security Health Plan report seeing on live cases. Fail one and the '
+                                   'case either gets priced wrong, terminates off contract, or launches '
+                                   'into provider confusion.',
+                           'items': ['Walk away if the group runs above-average claims, shows high ER use, '
+                                     'or the owner plans to sell within one to two years [American Trust '
+                                     'Administrators | Level Funding — dgpkKOJBv_s @ 00:01:22].',
+                                     'Do not bind until the client accepts the 12-month contract and the '
+                                     '12/18 or 12/24 runout that delays surplus [American Trust '
+                                     'Administrators | Level Funding — TKRoJd6Glxw @ 00:05:52].',
+                                     'Hold submission until every IHQ and the quarterly wage and tax '
+                                     'report are collected, with the boss setting a Friday deadline '
+                                     '[American Trust Administrators | Level Funding — E2z3UzEl2Ds @ '
+                                     '00:01:14].',
+                                     'Start enrollment 30 days before the effective date and brief '
+                                     'providers on the new ID card logo [BeneSmart - A Modern Approach to '
+                                     'Benefits — UOjbo9Dprhw @ 00:09:35].']}}],
+ 'pull_quote': '“Level funding rewards the honest and it punishes the liars.” — American Trust '
+               'Administrators | Level Funding (E2z3UzEl2Ds @ 00:02:31)',
+ 'diagram_id': 'diag-04',
+ 'action_checklist': ['When a 5 to 100 employee group faces a +20 percent fully insured renewal, open with '
+                      'the question: have we looked at level funded? [American Trust Administrators | '
+                      'Level Funding — ise8qdroICE @ 00:00:39].',
+                      'Pull the carrier invoice, renewals, MLRs and high-cost claimant reports before '
+                      'quoting, and collect IHQs for groups under 25 [BeneSmart - A Modern Approach to '
+                      'Benefits — UOjbo9Dprhw @ 00:15:03].',
+                      'Price a tight regional network or RBP against the national network, using the $9 '
+                      'versus $25 monthly access fee and the $22,500 versus $25,000 knee surgery spread '
+                      '[American Trust Administrators | Level Funding — ise8qdroICE @ 00:04:03].',
+                      'Renegotiate admin and stop-loss fees every year, then layer steerage, direct '
+                      'contracts, RBP and DPC on top [BeneSmart - A Modern Approach to Benefits — '
+                      'UOjbo9Dprhw @ 00:05:47].',
+                      'Get access to the claims data, by demand letter if needed, and steer members to '
+                      'high performers at $0 cost [Benefit Whisperer — nrL0pYx-hQo @ 00:19:02].',
+                      'Ask the owner how long they expect to be in business and match the surplus split: '
+                      '50 percent for one year to 18 months, 100 percent for two to three years or more '
+                      '[American Trust Administrators | Level Funding — 8scqEaAolto @ 00:05:56].'],
+ 'statutory_citations': [{'title': 'American Trust Administrators | Level Funding — Biggest Pitfalls of '
+                                   'Level-Funded Health Plans (And How to Avoid Them) [00:01:05]',
+                          'url': 'https://www.youtube.com/watch?v=TKRoJd6Glxw&t=65s',
+                          'relevance': 'Primary practitioner testimony on early exit, runout periods, late '
+                                       'bills, filings and IHQ pricing.'},
+                         {'title': 'American Trust Administrators | Level Funding — How to Prepare Your '
+                                   'First Level Funded Case [00:02:31]',
+                          'url': 'https://www.youtube.com/watch?v=E2z3UzEl2Ds&t=151s',
+                          'relevance': 'Primary practitioner testimony on clean underwriting submissions, '
+                                       'honesty and not overselling speed.'},
+                         {'title': 'Security Health Plan — Webinar: Level-Funded Health Plans: A Smart '
+                                   'Choice for Employers [00:15:46]',
+                          'url': 'https://www.youtube.com/watch?v=8FR_2qIAL34&t=946s',
+                          'relevance': 'Primary practitioner testimony on carrier refund percentages, '
+                                       'stop-loss tiers and preset plan designs.'},
+                         {'title': 'American Trust Administrators | Level Funding — Fully Insured vs '
+                                   'Level-Funded: Which Is Better Long-Term for Small Businesses? '
+                                   '[00:08:36]',
+                          'url': 'https://www.youtube.com/watch?v=QBs9tuVEIhw&t=516s',
+                          'relevance': 'Primary practitioner testimony on group-size thresholds for level '
+                                       'funding versus self-funding.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': '8FR_2qIAL34',
+                       'title': 'Webinar: Level-Funded Health Plans: A Smart Choice for Employers',
+                       'channel': 'Security Health Plan',
+                       'author': 'Security Health Plan',
+                       'text': 'Right now the refund opportunity is 66% of those unused claim dollars at '
+                               'the end of the run out period.',
+                       'tip': 'Right now the refund opportunity is 66% of those unused claim dollars at '
+                              'the end of the run out period.',
+                       'timestamp': 946,
+                       'timestamp_seconds': 946,
+                       'timestamp_label': '[00:15:46]',
+                       'url': 'https://www.youtube.com/watch?v=8FR_2qIAL34&t=946s',
+                       'markdown': '[00:15:46](https://www.youtube.com/watch?v=8FR_2qIAL34&t=946s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ise8qdroICE',
+                       'title': 'Why buy Level-Funded Health Plans (Broker Step-by-Step questions + value '
+                                'explained vs fully insured)',
+                       'channel': 'American Trust Administrators | Level Funding',
+                       'author': 'American Trust Administrators | Level Funding',
+                       'text': 'If your broker refuses to look, find another broker.',
+                       'tip': 'If your broker refuses to look, find another broker.',
+                       'timestamp': 350,
+                       'timestamp_seconds': 350,
+                       'timestamp_label': '[00:05:50]',
+                       'url': 'https://www.youtube.com/watch?v=ise8qdroICE&t=350s',
+                       'markdown': '[00:05:50](https://www.youtube.com/watch?v=ise8qdroICE&t=350s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '6P2sMVFtCtk',
+                       'title': 'Your Health Insurance Renewal Is Coming  5 Things Employers Should Review '
+                                '1080p caption',
+                       'channel': 'JS Benefits Group',
+                       'author': 'JS Benefits Group',
+                       'text': "At JS Benefits Group, we don't believe your employee benefit strategy "
+                               'should simply be about accepting the renewal your insurance carrier gives '
+                               'you.',
+                       'tip': "At JS Benefits Group, we don't believe your employee benefit strategy "
+                              'should simply be about accepting the renewal your insurance carrier gives '
+                              'you.',
+                       'timestamp': 37,
+                       'timestamp_seconds': 37,
+                       'timestamp_label': '[00:00:37]',
+                       'url': 'https://www.youtube.com/watch?v=6P2sMVFtCtk&t=37s',
+                       'markdown': '[00:00:37](https://www.youtube.com/watch?v=6P2sMVFtCtk&t=37s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'z_Qpt9fQLWg',
+                       'title': 'How to Set Up Health Insurance & Employee Benefits in Gusto',
+                       'channel': 'Gusto',
+                       'author': 'Gusto',
+                       'text': 'Keep in mind, the total cost will be based on how many people enroll in '
+                               'coverage.',
+                       'tip': 'Keep in mind, the total cost will be based on how many people enroll in '
+                              'coverage.',
+                       'timestamp': 87,
+                       'timestamp_seconds': 87,
+                       'timestamp_label': '[00:01:27]',
+                       'url': 'https://www.youtube.com/watch?v=z_Qpt9fQLWg&t=87s',
+                       'markdown': '[00:01:27](https://www.youtube.com/watch?v=z_Qpt9fQLWg&t=87s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'nrL0pYx-hQo',
+                       'title': 'Dave Chase, CEO of Health Rosetta, Exposes the $5 Trillion Healthcare '
+                                'Scam Employers are Funding',
+                       'channel': 'Benefit Whisperer',
+                       'author': 'Benefit Whisperer',
+                       'text': 'The same company that would reject an expense report that was missing a '
+                               '$76 restaurant receipt would pay sight unseen a six-figure medical bill.',
+                       'tip': 'The same company that would reject an expense report that was missing a $76 '
+                              'restaurant receipt would pay sight unseen a six-figure medical bill.',
+                       'timestamp': 1475,
+                       'timestamp_seconds': 1475,
+                       'timestamp_label': '[00:24:35]',
+                       'url': 'https://www.youtube.com/watch?v=nrL0pYx-hQo&t=1475s',
+                       'markdown': '[00:24:35](https://www.youtube.com/watch?v=nrL0pYx-hQo&t=1475s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '5ztwBEIpJjs',
+                       'title': 'Direct Primary Care & Employee Benefits: Cutting Costs, Boosting Value, '
+                                'and Enhancing Care',
+                       'channel': 'Hint Health',
+                       'author': 'Hint Health',
+                       'text': 'You can see the diverted claims is worth about $40 PMPM, avoided services '
+                               'about 25.',
+                       'tip': 'You can see the diverted claims is worth about $40 PMPM, avoided services '
+                              'about 25.',
+                       'timestamp': 1187,
+                       'timestamp_seconds': 1187,
+                       'timestamp_label': '[00:19:47]',
+                       'url': 'https://www.youtube.com/watch?v=5ztwBEIpJjs&t=1187s',
+                       'markdown': '[00:19:47](https://www.youtube.com/watch?v=5ztwBEIpJjs&t=1187s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'DrOopjZtatU',
+                       'title': 'Why Direct Primary Care Is The Only Way Forward | The Physician Burnout '
+                                'Crisis',
+                       'channel': 'Self-Funded',
+                       'author': 'Self-Funded',
+                       'text': 'The idea with direct primary care was to make it so inexpensive that it '
+                               'would be crazy to insure it.',
+                       'tip': 'The idea with direct primary care was to make it so inexpensive that it '
+                              'would be crazy to insure it.',
+                       'timestamp': 2480,
+                       'timestamp_seconds': 2480,
+                       'timestamp_label': '[00:41:20]',
+                       'url': 'https://www.youtube.com/watch?v=DrOopjZtatU&t=2480s',
+                       'markdown': '[00:41:20](https://www.youtube.com/watch?v=DrOopjZtatU&t=2480s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'xXX6dBL4p3A',
+                       'title': 'Outfox Health - 3x3x3 Challenge With Beth Ann Lopez',
+                       'channel': 'BenefitsAlly | Home of the 3x3x3 Challenge',
+                       'author': 'BenefitsAlly | Home of the 3x3x3 Challenge',
+                       'text': "At one hospital, the MRI costs $3,200. Three miles away, it's $680, "
+                               'one-fifth of the price.',
+                       'tip': "At one hospital, the MRI costs $3,200. Three miles away, it's $680, "
+                              'one-fifth of the price.',
+                       'timestamp': 15,
+                       'timestamp_seconds': 15,
+                       'timestamp_label': '[00:00:15]',
+                       'url': 'https://www.youtube.com/watch?v=xXX6dBL4p3A&t=15s',
+                       'markdown': '[00:00:15](https://www.youtube.com/watch?v=xXX6dBL4p3A&t=15s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'dgpkKOJBv_s',
+                       'title': 'Why Level-Funded Health Plans Are Better for Small Businesses (Level '
+                                'Funding 101)',
+                       'channel': 'American Trust Administrators | Level Funding',
+                       'author': 'American Trust Administrators | Level Funding',
+                       'text': 'This is a 12-month contract; you do not want to have one of your groups '
+                               'terminate off contract.',
+                       'tip': 'This is a 12-month contract; you do not want to have one of your groups '
+                              'terminate off contract.',
+                       'timestamp': 215,
+                       'timestamp_seconds': 215,
+                       'timestamp_label': '[00:03:35]',
+                       'url': 'https://www.youtube.com/watch?v=dgpkKOJBv_s&t=215s',
+                       'markdown': '[00:03:35](https://www.youtube.com/watch?v=dgpkKOJBv_s&t=215s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '8scqEaAolto',
+                       'title': 'Fully Insured vs Level-Funded: Which Is Better Long-Term for Small '
+                                'Businesses?',
+                       'channel': 'American Trust Administrators | Level Funding',
+                       'author': 'American Trust Administrators | Level Funding',
+                       'text': "It is always better if you're looking long-term to own your own fields and "
+                               'own your own yields.',
+                       'tip': "It is always better if you're looking long-term to own your own fields and "
+                              'own your own yields.',
+                       'timestamp': 272,
+                       'timestamp_seconds': 272,
+                       'timestamp_label': '[00:04:32]',
+                       'url': 'https://www.youtube.com/watch?v=8scqEaAolto&t=272s',
+                       'markdown': '[00:04:32](https://www.youtube.com/watch?v=8scqEaAolto&t=272s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'E2z3UzEl2Ds',
+                       'title': 'How to Prepare Your First Level Funded Case',
+                       'channel': 'American Trust Administrators | Level Funding',
+                       'author': 'American Trust Administrators | Level Funding',
+                       'text': 'Level funding rewards the honest and it punishes the liars.',
+                       'tip': 'Level funding rewards the honest and it punishes the liars.',
+                       'timestamp': 151,
+                       'timestamp_seconds': 151,
+                       'timestamp_label': '[00:02:31]',
+                       'url': 'https://www.youtube.com/watch?v=E2z3UzEl2Ds&t=151s',
+                       'markdown': '[00:02:31](https://www.youtube.com/watch?v=E2z3UzEl2Ds&t=151s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'QBs9tuVEIhw',
+                       'title': 'Fully Insured vs Level-Funded: Which Is Better Long-Term for Small '
+                                'Businesses?',
+                       'channel': 'American Trust Administrators | Level Funding',
+                       'author': 'American Trust Administrators | Level Funding',
+                       'text': "With level funding, you don't have those cash calls.",
+                       'tip': "With level funding, you don't have those cash calls.",
+                       'timestamp': 433,
+                       'timestamp_seconds': 433,
+                       'timestamp_label': '[00:07:13]',
+                       'url': 'https://www.youtube.com/watch?v=QBs9tuVEIhw&t=433s',
+                       'markdown': '[00:07:13](https://www.youtube.com/watch?v=QBs9tuVEIhw&t=433s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'TKRoJd6Glxw',
+                       'title': 'Biggest Pitfalls of Level-Funded Health Plans (And How to Avoid Them)',
+                       'channel': 'American Trust Administrators | Level Funding',
+                       'author': 'American Trust Administrators | Level Funding',
+                       'text': 'If you have a 12/24 and you run well for the first year, that money is '
+                               'still in their accounts for an additional 12 months.',
+                       'tip': 'If you have a 12/24 and you run well for the first year, that money is '
+                              'still in their accounts for an additional 12 months.',
+                       'timestamp': 126,
+                       'timestamp_seconds': 126,
+                       'timestamp_label': '[00:02:06]',
+                       'url': 'https://www.youtube.com/watch?v=TKRoJd6Glxw&t=126s',
+                       'markdown': '[00:02:06](https://www.youtube.com/watch?v=TKRoJd6Glxw&t=126s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'TKRoJd6Glxw',
+                       'title': 'Biggest Pitfalls of Level-Funded Health Plans (And How to Avoid Them)',
+                       'channel': 'American Trust Administrators | Level Funding',
+                       'author': 'American Trust Administrators | Level Funding',
+                       'text': 'This is a conversation that happens from time to time in our book of '
+                               'business, across our book, a couple times a year.',
+                       'tip': 'This is a conversation that happens from time to time in our book of '
+                              'business, across our book, a couple times a year.',
+                       'timestamp': 159,
+                       'timestamp_seconds': 159,
+                       'timestamp_label': '[00:02:39]',
+                       'url': 'https://www.youtube.com/watch?v=TKRoJd6Glxw&t=159s',
+                       'markdown': '[00:02:39](https://www.youtube.com/watch?v=TKRoJd6Glxw&t=159s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'UOjbo9Dprhw',
+                       'title': 'Unlocking Savings with Level Funded Health Insurance | Purchasing '
+                                'Strategies for HR, CFOs, and CEOs',
+                       'channel': 'BeneSmart - A Modern Approach to Benefits',
+                       'author': 'BeneSmart - A Modern Approach to Benefits',
+                       'text': "I've seen companies even this year alone move from a fully insured plan to "
+                               'a level funded plan and save 45% annually on their premiums.',
+                       'tip': "I've seen companies even this year alone move from a fully insured plan to "
+                              'a level funded plan and save 45% annually on their premiums.',
+                       'timestamp': 293,
+                       'timestamp_seconds': 293,
+                       'timestamp_label': '[00:04:53]',
+                       'url': 'https://www.youtube.com/watch?v=UOjbo9Dprhw&t=293s',
+                       'markdown': '[00:04:53](https://www.youtube.com/watch?v=UOjbo9Dprhw&t=293s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'FI23jkq84YQ',
+                       'title': 'Healthcare’s New Frontier | The Future of Employee Benefits',
+                       'channel': 'Maxwell Health',
+                       'author': 'Maxwell Health',
+                       'text': 'Brokers simply upload census data and Maxwell lets them see how all of '
+                               'these options compare using real-time data.',
+                       'tip': 'Brokers simply upload census data and Maxwell lets them see how all of '
+                              'these options compare using real-time data.',
+                       'timestamp': 368,
+                       'timestamp_seconds': 368,
+                       'timestamp_label': '[00:06:08]',
+                       'url': 'https://www.youtube.com/watch?v=FI23jkq84YQ&t=368s',
+                       'markdown': '[00:06:08](https://www.youtube.com/watch?v=FI23jkq84YQ&t=368s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '-KHMJD6TdmM',
+                       'title': 'Can Your Small Business Afford Employee Benefits? 4 Options | Benefit '
+                                'Experts',
+                       'channel': 'Benefit Experts',
+                       'author': 'Benefit Experts',
+                       'text': 'Possible, not promised.',
+                       'tip': 'Possible, not promised.',
+                       'timestamp': 37,
+                       'timestamp_seconds': 37,
+                       'timestamp_label': '[00:00:37]',
+                       'url': 'https://www.youtube.com/watch?v=-KHMJD6TdmM&t=37s',
+                       'markdown': '[00:00:37](https://www.youtube.com/watch?v=-KHMJD6TdmM&t=37s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'E2z3UzEl2Ds',
+                       'title': 'How to Prepare Your First Level Funded Case',
+                       'channel': 'American Trust Administrators | Level Funding',
+                       'author': 'American Trust Administrators | Level Funding',
+                       'text': 'Share the bad news early.',
+                       'tip': 'Share the bad news early.',
+                       'timestamp': 200,
+                       'timestamp_seconds': 200,
+                       'timestamp_label': '[00:03:20]',
+                       'url': 'https://www.youtube.com/watch?v=E2z3UzEl2Ds&t=200s',
+                       'markdown': '[00:03:20](https://www.youtube.com/watch?v=E2z3UzEl2Ds&t=200s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'}]}

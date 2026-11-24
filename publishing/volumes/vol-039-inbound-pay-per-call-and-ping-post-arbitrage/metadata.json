@@ -9,49 +9,49 @@
       "ARBITRAGE"
     ],
     "deck": [
-      "VERIFY CALLER INTENT. QUALIFY THE BUYER.",
-      "ROUTE CONSENTED DEMAND."
+      "HOW 192 PRACTITIONERS BUY TRAFFIC, ROUTE LIVE CALLS THROUGH RTB RING TREES, AND RESELL THEM AT A SPREAD",
+      "TRACKING NUMBERS, IVR PRE-QUALIFICATION, TCPA CONSENT, BUYER NETWORKS, AND THE UNIT ECONOMICS OF SCALING"
     ],
-    "lead": "Ringba RTB Call Trees, Contracted Buffer Transfers & Insurance and Legal Call Auctions with Traceable Seller-Specific Consent",
-    "summary": "Match genuine inbound callers to approved buyers through documented qualification, consent capture, and RTB routing. Treat 90-second buffers as buyer-specific billing terms, not guaranteed payouts, and reconcile accepted calls after duplicates, scrubs, disputes, and acquisition costs.",
+    "lead": "Learn how working operators price, route, and resell live inbound calls, from a $50 call that nets a $15 margin and a 40% broker markup to ring trees with minimum-revenue floors and an 8-second billing buffer.",
+    "summary": "All 12 chapters synthesize 192 verbatim YouTube practitioner testimonies on inbound pay-per-call and RTB ping-post arbitrage, from platform setup and IVR design to TCPA compliance, verticals, network building, and unit economics. Every claim, metric, pro-tip, and quote carries timestamped inline attribution to its source video.",
     "chapters": [
-      "Inbound pay-per-call vs RTB ping-post models",
-      "Insurance buyers, legal intake desks & payout terms",
-      "Accepted-call yield, media cost & net spread math",
-      "Ringba tracking numbers, call trees & startup budgets",
-      "Duplicate calls, artificial duration & scrub losses",
-      "High-intent inbound sourcing & approved traffic channels",
-      "RTB pings, buyer filters & exclusive call routing",
-      "90-second buffers, warm transfers & caller experience",
-      "One-to-one consent evidence & current calling rules",
-      "Recording permissions, data minimization & dispute logs",
-      "Lean routing pods & buyer concentration controls",
-      "First 30-day qualified-call launch sprint"
+      "Pay-Per-Call Fundamentals: The Model, the Vocabulary, and Choosing Your Lane",
+      "Platform Setup and Real-Time Bidding for Calls",
+      "IVR Design and Call Flows That Pre-Qualify Callers",
+      "Routing Optimization and Call Attribution",
+      "Ping-Post Lead and Call Distribution",
+      "TCPA One-to-One Consent and Lead-Gen Compliance",
+      "Generating Inbound Calls with Google and Meta Ads",
+      "Home-Services Call Verticals",
+      "The Insurance Buyer Side: Inbound Calls and Live Transfers",
+      "Mass Tort Mechanics and TCPA Litigation Exposure",
+      "Building the Network: Buyers, Publishers, and Negotiation",
+      "Unit Economics, Call Quality, and Scaling Case Studies"
     ],
     "flow": [
       [
-        "CONTRACT",
-        "Approve buyers, traffic sources & billing criteria"
+        "CHOOSE THE LANE",
+        "Weigh pay-per-call against pay-per-lead and affiliate networks against direct clients, then read every line of the offer: minimum call length, buyer hours, hold period, and who owns the buyer."
       ],
       [
-        "ATTRACT",
-        "Source genuine high-intent inbound callers"
+        "MODEL THE SPREAD",
+        "Price the gap between traffic cost and call payout with at least a 40% markup, and model the worst-case paid ratio before you spend."
       ],
       [
-        "QUALIFY",
-        "Verify caller needs, geography & consent evidence"
+        "OWN THE TRACKING",
+        "Assign unique tracking numbers per publisher and put your own number in front of the network's so you can verify every call and catch skimming."
       ],
       [
-        "AUCTION",
-        "Ping eligible buyers with minimized call data"
+        "BUILD THE RING TREE",
+        "Set eligibility filters on geo, hours, caps, and concurrency, add a minimum-revenue floor with static fallback targets, and prefer SIP when the buyer accepts it."
       ],
       [
-        "TRANSFER",
-        "Route accepted calls without padding duration"
+        "PAD AND TEST",
+        "Add an 8-second latency buffer over the buyer's billable duration and run real test calls that confirm tracking, routing, answer, timing, and recording end to end."
       ],
       [
-        "RECONCILE",
-        "Audit buffers, scrubs, disputes & net payouts"
+        "LAUNCH AND PROTECT",
+        "Send paid traffic only after testing, keep publisher IDs and your margin hidden from buyers, and capture consent records to limit TCPA exposure."
       ]
     ]
   },
@@ -59,10 +59,10 @@
   "book_series": "THE BIG MONEY PLAYBOOKS",
   "tagline": "Big Money. Small Teams. No Bullshit.",
   "title": "INBOUND PAY-PER-CALL & RTB PING-POST ARBITRAGE",
-  "subtitle": "The Complete Playbook for Inbound Pay-Per-Call & RTB Ping-Post Arbitrage: $200,000–$1,500,000 USD in Annual Gross Settlements, Starting with a 1 FT + 2 C (3 People) Pod",
+  "subtitle": "Own the Tracking Layer, Gate Every Caller with IVR, Bid in Milliseconds, Prove One-to-One Consent, and Broker the Spread from Network Offers to Direct Buyers Who Pay Up Front",
   "chapter_count": 12,
-  "total_word_count": 78338,
-  "expert_youtube_link_count": 180,
+  "total_word_count": 72306,
+  "expert_youtube_link_count": 211,
   "min_expert_youtube_links_required": 150,
   "target_expert_youtube_links": "150-200+",
   "min_expert_youtube_links_per_chapter": 12,
@@ -77,5 +77,5 @@
   "publication_status": "approved_master",
   "public_deploy_approved": false,
   "paid_sales_approved": false,
-  "updated_at": "2026-11-23T22:48:03Z"
+  "updated_at": "2026-11-24T23:55:16Z"
 }

@@ -1,698 +1,889 @@
 from __future__ import annotations
 
-CHAPTER_8 = {
-    "id": "Q8",
-    "chapter_id": "Q8",
-    "chapter_number": 8,
-    "question_number": 8,
-    "slug": "public-records-apis-data-pipelines-operator-tooling",
-    "question_prompt": "Which exact public registries, government databases, commercial APIs, enrichment waterfalls, and diagnostic tools give a small live-event, super bowl & vip ticket brokering desk an unfair information edge?",
-    "kicker": "Q8 / THE BIG MONEY PLAYBOOKS",
-    "title": "Public Records, APIs, Data Pipelines & Operator Tooling",
-    "subtitle": "SkyBox, Automatiq, Logitix, Ticketmaster Discovery, UCC Searches, BOTS Act Controls, and Event-Level Settlement Intelligence",
-    "layout_template": "resource_directory",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #43, Live-Event, Super Bowl & VIP Ticket Brokering, ranks #02 of 43 "
-        "with a 95/100 Money-to-Manpower Score. This chapter maps 12 operator plays "
-        "to a source-controlled research and execution stack: entity verification, "
-        "business-credit diligence, sponsor sourcing, suite rights, event discovery, "
-        "playoff strips, repricing, exchange synchronization, transfer verification, "
-        "hospitality assembly, disruption monitoring, and settlement reconciliation. "
-        "Sixteen named directory entries distinguish public intelligence from "
-        "contracted inventory access. Canonical annual owner profits are $26,400 "
-        "Conservative, $191,900 Base, and $468,000 Scaled. The edge comes from "
-        "verified rights, faster inventory locks, and cash-aware pricing, not "
-        "circumventing ticket queues. Every source carries access, freshness, "
-        "cost, and fallback instructions; every sale must survive fees, slippage, "
-        "refund exposure, and delayed payout."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$220,000",
-            "context": "Annual gross planning basis; $88,000 retained contribution at 40%",
-            "note": "12% gross-basis net margin; 30% retained margin; $26,400 owner profit; 1 FT + 2 C",
-        },
-        {
-            "label": "Base",
-            "value": "$1,010,000",
-            "context": "Annual gross planning basis; $404,000 retained contribution at 40%",
-            "note": "19.0% gross-basis net margin; 47.5% retained margin; $191,900 owner profit; 1 FT + 2 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$1,800,000",
-            "context": "Annual gross planning basis; $720,000 retained contribution at 40%",
-            "note": "26% gross-basis net margin; 65% retained margin; $468,000 owner profit; 2 FT + 3 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Establish counterparties, transferable rights, and disruption intelligence",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Build the research record around the legal counterparty, the event, and the "
-                    "specific transferable entitlement, rather than around an attractive asking "
-                    "price. A New York entity search can establish a filing name and recorded "
-                    "status; it cannot establish that the company owns twenty Super Bowl "
-                    "tickets. Match the seller's contract name, invoice name, payment beneficiary, "
-                    "and authorized signer before requesting inventory evidence. Search ticket "
-                    "reseller licensing separately, because corporate existence and permission "
-                    "to conduct a regulated resale business answer different questions. Use "
-                    "UCC records to investigate disclosed collateral claims when purchasing "
-                    "inventory from a financially stressed counterparty, but do not treat a "
-                    "search result as a complete priority opinion or proof of clean title. "
-                    "A filing can be amended, continued, terminated, or indexed under a "
-                    "different debtor name. Save the search terms, jurisdiction, retrieval "
-                    "time, document identifier, and resulting follow-up request. These records "
-                    "support three mapped plays: counterparty verification, sponsor-allotment "
-                    "sourcing, and suite-rights diligence. For sponsor sourcing, public company "
-                    "filings identify organizations worth approaching, not transferable ticket "
-                    "allocations. Obtain affirmative allocation evidence from the seller and "
-                    "confirm transfer restrictions with the issuing organization before committing "
-                    "cash or broadcasting any seats."
-                ),
-                (
-                    "The working-capital mapping is "
-                    "aged_shelf_corp_tradeline_credit_stacking, covering aged shelf-corp "
-                    "reinstatement, primary tradelines, and promotional business credit. Compare "
-                    "a reinstated entity with an existing operating business using actual "
-                    "revenue, beneficial ownership, debts, cash generation, and lender "
-                    "eligibility. Entity age is not operating history; reinstatement does not "
-                    "create sales, erase liabilities, or establish repayment capacity. A "
-                    "genuine primary tradeline represents the applicant's own documented "
-                    "credit relationship, not a purchased appearance of borrowing performance. "
-                    "Request written facility terms, promotional expiration dates, purchase "
-                    "eligibility, cash-advance exclusions, guarantees, and post-promotion rates. "
-                    "Illustratively, financing $20,000 for ninety days at promotional zero "
-                    "interest with a 3% eligible transaction fee costs $600; a simple-interest "
-                    "18% annual facility costs about $888 over ninety days on a 365-day "
-                    "basis, before its other charges. Neither comparison works if the "
-                    "ticket acquisition is excluded from the promotion or settlement arrives "
-                    "after repayment is due. Stress a second ninety-day delay and an "
-                    "event refund before choosing the facility. Halt applications when "
-                    "disclosures cannot be substantiated, correct the record, and use a "
-                    "transparent term facility or reduce financed spending. Keep application "
-                    "documents separate from public-source research, with access limited to "
-                    "the people actually underwriting and administering the debt."
-                ),
-                (
-                    "Disruption monitoring is another mapped play, but its output is a "
-                    "cash-exposure alert rather than an automated assertion that an event "
-                    "has been canceled. National Weather Service alerts can identify a "
-                    "stadium's forecast zone; only the organizer or venue establishes the "
-                    "event's operational status and applicable remedy. FAA restrictions "
-                    "can affect a hospitality package's charter component without changing "
-                    "the underlying match or concert. Link each alert to affected "
-                    "inventory, outstanding customer promises, supplier cancellation "
-                    "deadlines, and the next decision time. For a $12,000 package containing "
-                    "$7,000 of admission inventory, $2,000 of hotel commitments, and "
-                    "$1,000 of transport commitments, the initial $2,000 spread can disappear "
-                    "if the hotel remains payable after the event moves. Obtain separate "
-                    "supplier remedies rather than assuming the admission refund covers "
-                    "the package. The first eight directory entries below establish "
-                    "identity, licensing, encumbrance, litigation, and disruption evidence. "
-                    "Their freshness statements describe retrieval limits, not guaranteed "
-                    "government publication schedules. Recheck transaction-critical records "
-                    "at commitment and again when circumstances change. Where a portal "
-                    "fails, record the outage and substitute direct confirmation or a "
-                    "certified search; never silently reuse a stale result as current "
-                    "verification. Keep the buyer-facing event status synchronized with "
-                    "the organizer's latest documented announcement."
-                ),
-            ],
-            "table": {
-                "caption": "Directory Entries 01-08: Official Counterparty and Disruption Sources",
-                "headers": [
-                    "Named source and decision it supports",
-                    "Exact access method and cost basis",
-                    "Refresh behavior and request rate hygiene",
-                    "Fallback evidence and binding interpretation limits",
-                ],
-                "rows": [
-                    [
-                        "01. New York Department of State entity inquiry for seller identity",
-                        "Search legal names at https://apps.dos.ny.gov/publicInquiry/; public searches are free, while ordered documents carry published fees.",
-                        "Query at onboarding and commitment; publication follows filing processing, and interactive restrictions prohibit assuming bulk access.",
-                        "Order certified records through the department; recorded entity status never proves ticket ownership or operating history.",
-                    ],
-                    [
-                        "02. New York ticket reseller licensing information and verification route",
-                        "Start at https://dos.ny.gov/ticket-reseller; use the department's linked license search or request verification, with free public guidance.",
-                        "Recheck license status before applicable transactions; save the retrieval date because processing can lag an application.",
-                        "Ask the licensing division for written verification; an application receipt does not establish an issued license.",
-                    ],
-                    [
-                        "03. New York UCC public inquiry for disclosed debtor encumbrances",
-                        "Use https://dos.ny.gov/uniform-commercial-code and its linked public inquiry; obtain certified searches at published state fees.",
-                        "Search exact debtor names and relevant jurisdictions; filing-office indexing latency means results need dated scope statements.",
-                        "Commission a certified jurisdictional search and obtain release evidence; a clean search alone does not establish priority.",
-                    ],
-                    [
-                        "04. SEC EDGAR filings for public sponsor and counterparty research",
-                        "Use https://www.sec.gov/edgar/search/ or https://data.sec.gov/submissions/CIK##########.json with a zero-padded CIK; public access is free.",
-                        "Identify the requesting organization, cache responses, and stay below SEC's published ten requests per second ceiling.",
-                        "Read issuer investor-relations filings when access fails; sponsorship references require direct confirmation of actual ticket allocations.",
-                    ],
-                    [
-                        "05. SAM.gov exclusion records for relevant federal-counterparty diligence",
-                        "Search exclusions at https://sam.gov; public search is free, while API use follows account and key requirements.",
-                        "Check during onboarding when federal procurement exposure matters; use published API limits rather than unbounded name scraping.",
-                        "Resolve identity matches against official exclusion details; absence from exclusions is not a general commercial credit assessment.",
-                    ],
-                    [
-                        "06. PACER federal court records for material counterparty disputes",
-                        "Search https://pacer.uscourts.gov with a registered account; standard document access generally costs $0.10 per page, subject to exceptions.",
-                        "Docket updates follow court entries; narrow searches and review PACER's document caps, exemptions, and billing rules.",
-                        "Request relevant documents from the court clerk; filings contain allegations and require outcome and identity verification.",
-                    ],
-                    [
-                        "07. National Weather Service alerts for venue disruption exposure",
-                        "Request https://api.weather.gov/alerts/active?point=LAT,LON using venue coordinates and an identifying User-Agent; public API access is free.",
-                        "Use conditional requests, cache results, and honor throttling responses; alert timestamps govern freshness, not polling frequency alone.",
-                        "Consult https://www.weather.gov and official venue announcements; a weather warning does not itself cancel an event.",
-                    ],
-                    [
-                        "08. FAA temporary flight restrictions for hospitality transport exposure",
-                        "Read current notices at https://tfr.faa.gov; public browsing is free and each notice identifies its effective interval.",
-                        "Check during planning and before transport confirmation; avoid high-frequency scraping and preserve effective times with timezone.",
-                        "Require the charter operator's operational confirmation; a restriction map cannot replace dispatch or pilot flight planning.",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Treat public evidence as a lead, then buy verified rights",
-                "body": "A small desk gains speed by asking the decisive follow-up question before competitors price an unsupported promise.",
-                "items": [
-                    "For sponsor allotments, request the issuer's allocation document and transfer conditions before paying a deposit; a sponsorship announcement is only a prospecting signal.",
-                    "For suite splitting, ask whether individual-seat resale, catering access, and mobile transfers are expressly permitted; document the suite holder's answer against the venue agreement.",
-                    "For promotional credit, calculate repayment from the event's stressed payout date rather than its scheduled performance date, and reserve the full payoff amount.",
-                    "For weather-sensitive hospitality, store hotel and transport cancellation cutoffs alongside admission refund terms so one moved event produces a complete exposure report.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Acquire authorized feeds and assemble a rights-aware commercial waterfall",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Event discovery and playoff-option strips are two separate mapped plays. "
-                    "Ticketmaster Discovery supplies event identifiers, venue information, "
-                    "dates, and public sales links; it does not grant purchasing privileges "
-                    "or prove available resale inventory. Normalize the organizer identifier, "
-                    "league, season, venue, local start time, UTC start time, and event "
-                    "status before comparing listings. A playoff placeholder requires "
-                    "conditional opponent, home-game sequence, and occurrence fields, because "
-                    "a valid ticket entitlement can still depend on a game being played. "
-                    "For an illustrative strip costing $1,200, model each contingent game "
-                    "and the contractual treatment of unplayed games before allocating "
-                    "cost across saleable inventory. If two played games sell for $900 "
-                    "each, $180 of exchange fees, $120 of markdown exposure, $90 of "
-                    "event reserves, and $30 of funding cost leave $180 after the "
-                    "$1,200 acquisition. That calculation assumes no additional refund "
-                    "credit and must change when the actual strip agreement differs. "
-                    "Use a manual league schedule and issuer statement as the fallback "
-                    "when a feed cannot identify the precise entitlement. No event "
-                    "discovery endpoint authorizes bypassing a queue, defeating a purchase "
-                    "limit, or obtaining tickets through automated security-measure "
-                    "circumvention. Keep discovery credentials operationally separate "
-                    "from approved purchasing and inventory accounts."
-                ),
-                (
-                    "Multi-exchange synchronization, repricing, and transfer verification are "
-                    "three more mapped plays. Select SkyBox, Automatiq, or Logitix around "
-                    "the specific contracted inventory and fulfillment workflow, not an "
-                    "assumption that every product exposes identical APIs. Obtain the "
-                    "vendor's current documentation, exchange coverage, credentials, "
-                    "webhook semantics, polling allowances, and support escalation route "
-                    "before writing an adapter. Verify actual connections to StubHub, "
-                    "Vivid Seats, SeatGeek, and TickPick individually. A vendor's supported "
-                    "marketplace list is not proof that the desk's account can list, "
-                    "hold, transfer, or receive settlement there. Keep credentials in "
-                    "an operating-system credential store and redact access tokens from "
-                    "HTTP logs. Use exponential backoff with jitter, honor Retry-After, "
-                    "and quarantine repeated authorization failures instead of retrying "
-                    "indefinitely. Repricing must use completed sales or clearly labeled "
-                    "asking-price observations, with acquisition cost, remaining quantity, "
-                    "sell fees, and time to event attached. An API outage should "
-                    "freeze aggressive price changes and restrict new sales to channels "
-                    "with confirmed inventory control. A transfer receipt should establish "
-                    "the recipient and issuer status without copying live admission "
-                    "credentials into analytics. Vendor latency and settlement timing "
-                    "are measured properties of the contracted account, not promises "
-                    "inferred from a marketing page."
-                ),
-                (
-                    "Hospitality assembly is the eleventh mapping when combined with the "
-                    "ten previously introduced workflows. Source Super Bowl, World Cup, "
-                    "F1, Masters, and Final Four components through each event's current "
-                    "official program or a seller with documented rights; provider "
-                    "appointments and resale terms change between editions. A public "
-                    "package page supplies a lead and inclusions, not permission to "
-                    "rebundle admission with rooms, transport, or sponsor benefits. "
-                    "Build the corporate-buyer enrichment waterfall from the buyer's "
-                    "own website and staff directory, then a contracted business-contact "
-                    "provider, then an email-verification service. Stop at the minimum "
-                    "business contact needed for a relevant offer. For example, "
-                    "researching forty target firms at two minutes each consumes "
-                    "eighty minutes; applying a $0.20 verification assumption to "
-                    "twenty selected addresses adds $4, not a justification for "
-                    "indiscriminate harvesting. Actual subscription charges belong "
-                    "in the acquisition budget. Follow applicable commercial-email "
-                    "identification and opt-out requirements, preserve suppression "
-                    "records, and never recycle an opted-out address through another "
-                    "provider. The second eight directory entries separate public "
-                    "discovery, permissioned execution, official package verification, "
-                    "and contact enrichment. When access is unavailable, use an "
-                    "authorized portal export or direct account-manager confirmation "
-                    "rather than guessing private endpoints or scraping around "
-                    "authentication controls."
-                ),
-            ],
-            "table": {
-                "caption": "Directory Entries 09-16: Discovery, Inventory Execution, Hospitality, and Enrichment",
-                "headers": [
-                    "Named source and decision it supports",
-                    "Exact access method and cost basis",
-                    "Refresh behavior and request rate hygiene",
-                    "Fallback evidence and binding interpretation limits",
-                ],
-                "rows": [
-                    [
-                        "09. Ticketmaster Discovery API for canonical public event metadata",
-                        "Register at https://developer.ticketmaster.com; call /discovery/v2/events.json on api.ticketmaster.com with an approved key and its assigned access tier.",
-                        "Read current dashboard quotas, cache event records, and inspect response status; public event metadata is not live resale availability.",
-                        "Use the official event page and venue schedule; confirm actual seat rights through the seller's authorized inventory record.",
-                    ],
-                    [
-                        "10. Ticketmaster Partner interfaces for explicitly contracted transactional access",
-                        "Request partner eligibility through Ticketmaster's developer or commercial contact; credentials, permitted methods, and commercial pricing depend on agreement.",
-                        "Use only documented account permissions and endpoint limits; measure transaction response time separately from event metadata refresh.",
-                        "Use the approved account portal or representative; Discovery credentials do not authorize transactional partner operations.",
-                    ],
-                    [
-                        "11. SeatGeek developer access for account-permitted event intelligence",
-                        "Consult https://platform.seatgeek.com for current onboarding; use documented API methods only when credentials are issued, with current commercial terms.",
-                        "Read the assigned quota and cache identifiers; validate product availability instead of assuming historical public access remains available.",
-                        "Use public event pages or contracted POS coverage; developer event access does not automatically enable seller fulfillment.",
-                    ],
-                    [
-                        "12. SkyBox inventory management for approved multi-exchange seller operations",
-                        "Open a broker account through https://skybox.vividseats.com; obtain current integration documentation and a written schedule of account charges.",
-                        "Test actual exchange connections and acknowledgment delays; API quotas and event delivery behavior come from account documentation.",
-                        "Use authorized inventory exports and vendor support; restrict affected sales until holds and quantity changes are confirmed.",
-                    ],
-                    [
-                        "13. Automatiq contracted tooling for pricing and marketplace execution",
-                        "Contact https://automatiq.com for product access, supported integrations, and a written quote; use only issued integration credentials.",
-                        "Measure feed and execution timestamps independently; obey contract quotas and avoid interpreting pricing suggestions as executable bids.",
-                        "Revert to approved POS controls and manual pricing floors; verify each marketplace's live state before reopening exposure.",
-                    ],
-                    [
-                        "14. Logitix contracted services for inventory and distribution management",
-                        "Request account scope and integration specifications through https://logitix.com; pricing and available interfaces are commercially negotiated.",
-                        "Record supported update intervals and acknowledgment semantics; reconcile webhook or export delivery against actual marketplace state.",
-                        "Use the authorized client portal and support team; never infer barcode-transfer capability from distribution access alone.",
-                    ],
-                    [
-                        "15. Official hospitality portals for edition-specific package and rights verification",
-                        "Start with nfl.com, fifa.com, formula1.com, masters.com, or ncaa.com and follow official hospitality links; browsing is free and packages are priced separately.",
-                        "Check the correct event edition and dated terms; public pages update irregularly and provide no assumed redistribution API.",
-                        "Obtain the appointed provider's written inclusions and resale permission; third-party package descriptions cannot establish official authorization.",
-                    ],
-                    [
-                        "16. Company websites, Apollo, Hunter, and ZeroBounce business-contact waterfall",
-                        "Research company directories first, then use apollo.io, hunter.io, or zerobounce.net under current free allowances or paid credit plans.",
-                        "Refresh before a targeted campaign, honor each API quota, and apply the same suppression list across every enrichment stage.",
-                        "Use the company's published business inquiry channel; address verification does not establish interest, authority, or permission for unrestricted outreach.",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "3. Turn source records into synchronized inventory and auditable decisions",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "A small desk can implement the control plane with Python's sqlite3, "
-                    "urllib.request, json, datetime, logging, and unittest modules, "
-                    "plus authorized vendor interfaces. Keep separate tables for sources, "
-                    "events, counterparties, entitlements, inventory units, marketplace "
-                    "listings, orders, transfers, and settlements. Every imported fact "
-                    "needs a source identifier, retrieval timestamp, effective timestamp "
-                    "when available, and confidence category such as issuer-confirmed "
-                    "or seller-asserted. Store money as integer minor units with an "
-                    "explicit currency, and convert foreign currency using the rate "
-                    "actually applied to the transaction when reconciling cash. Preserve "
-                    "event timezone names through zoneinfo rather than fixed offsets. "
-                    "A rescheduled evening kickoff can cross a UTC date boundary "
-                    "without becoming a different entitlement. For suite splitting, "
-                    "create a parent suite contract and child saleable seats, then "
-                    "attach shared catering, parking, and access obligations to the "
-                    "parent. For hospitality, represent each admission, lodging, and "
-                    "transport component separately so an unavailable component does "
-                    "not disappear inside one package label. Retain raw permitted "
-                    "payloads with hashes and redact personal information from "
-                    "diagnostic copies. This structure makes an operator's correction "
-                    "traceable without pretending that an external seller assertion "
-                    "was independently verified by the pipeline."
-                ),
-                (
-                    "Real-time auto-holds require a local reservation transaction plus "
-                    "confirmed external action; a local database lock cannot lock "
-                    "four independent exchanges. Use BEGIN IMMEDIATE in SQLite for "
-                    "the local quantity transition, assign an idempotency key to "
-                    "the order event, and publish durable outbound tasks after "
-                    "the transaction commits. Request holds or quantity reductions "
-                    "on every connected venue, then record acknowledgments and "
-                    "unresolved exposure. If an exchange offers no compatible "
-                    "hold semantics, use its permitted delisting mechanism and "
-                    "a more conservative allocation policy. Process duplicate "
-                    "webhooks without subtracting inventory twice, and reject "
-                    "out-of-order status regressions. Test the dangerous case "
-                    "where two exchanges sell the last pair during an "
-                    "acknowledgment delay. A $1,000 order exposed to a contractual "
-                    "replacement charge measured at 200% could create a "
-                    "$2,000 charge; do not assume every marketplace uses "
-                    "that schedule or that it replaces all other liabilities. "
-                    "The fallback is immediate channel restriction, documented "
-                    "support escalation, and fulfillment under the actual "
-                    "seller agreement. Track pending hold age, remaining "
-                    "cross-channel quantity, and replacement-cost exposure "
-                    "on one dashboard. Never report inventory as synchronized "
-                    "merely because the outbound request returned successfully "
-                    "before the marketplace confirmed its resulting state."
-                ),
-                (
-                    "Settlement reconciliation is the twelfth mapped play and the "
-                    "point where information becomes usable owner economics. Match "
-                    "each order to its inventory acquisition allocation, exchange "
-                    "fee statement, transfer evidence, event status, expected payout "
-                    "date, bank receipt, and subsequent adjustment. Do not classify "
-                    "a platform receivable as available cash or treat the event "
-                    "date as the settlement date. Use an exception queue for "
-                    "missing transfers, fee discrepancies, partial payouts, refunds, "
-                    "foreign-exchange differences, and aged receivables. Python "
-                    "unittest fixtures should replay duplicate orders, canceled "
-                    "games, postponed events, failed transfers, amended fees, "
-                    "and payouts arriving after a financing deadline. Use "
-                    "curl only for authorized endpoint diagnostics, inspecting "
-                    "status codes and headers without exposing secrets in "
-                    "shared terminal history. Browser developer tools can "
-                    "diagnose the desk's own permitted portal session, but "
-                    "visible network traffic does not grant additional API "
-                    "rights. A daily control report should show yesterday's "
-                    "gross sales, normalized fees, acquired inventory cost, "
-                    "remaining refundable obligations, and bank-cleared cash. "
-                    "Reconcile aggregate quantities as well as dollars: "
-                    "twenty purchased suite seats cannot support twenty-two "
-                    "fulfilled seat promises. Close an exception only after "
-                    "the underlying source or settlement evidence changes, "
-                    "not after someone suppresses the alert."
-                ),
-            ],
-            "table": {
-                "caption": "Seven Diagnostic Controls That Convert Feeds into Enforceable Inventory State",
-                "headers": [
-                    "Control and exact diagnostic execution method",
-                    "Evidence retained for the operating record",
-                    "Failure threshold and immediate operator action",
-                    "Recovery test before restoring normal activity",
-                ],
-                "rows": [
-                    [
-                        "Canonical event matching with issuer identifiers and timezone-aware comparisons",
-                        "Keep source identifiers, venue, local time, UTC time, and every documented reschedule relationship.",
-                        "Quarantine records when teams, venue, or occurrence conditions conflict; do not merge by similar title.",
-                        "Verify issuer evidence and replay affected listings before restoring automatic event matching.",
-                    ],
-                    [
-                        "SQLite quantity reservation using transactional updates and durable outbound tasks",
-                        "Retain original quantity, reserved quantity, order identifier, idempotency key, and task creation timestamp.",
-                        "Reject negative available quantities and duplicate reservations; restrict channels whose external state remains unconfirmed.",
-                        "Replay concurrent last-seat orders and prove that local inventory cannot be reserved twice.",
-                    ],
-                    [
-                        "Cross-exchange acknowledgment monitoring against contracted hold and delisting semantics",
-                        "Record every request, acknowledgment, remaining listed quantity, and vendor-specific external listing identifier.",
-                        "Escalate missed internal response targets and remove exposed listings through each authorized fallback channel.",
-                        "Confirm external quantities directly before declaring the inventory safe for renewed broadcasting.",
-                    ],
-                    [
-                        "Python unittest replay of duplicated and out-of-order fulfillment notifications",
-                        "Save sanitized fixtures, expected state transitions, test output, and adapter version for each incident.",
-                        "Stop automated fulfillment when a replay changes settled orders or subtracts the same inventory twice.",
-                        "Pass duplicate, reversal, cancellation, and delayed acknowledgment fixtures before enabling the repaired adapter.",
-                    ],
-                    [
-                        "Authorized HTTP diagnostics with urllib.request or carefully redacted curl output",
-                        "Capture status codes, correlation identifiers, response timing, and quota headers without access credentials.",
-                        "Honor throttling and authorization failures; do not rotate identities to bypass endpoint restrictions.",
-                        "Verify permitted credentials and complete a low-volume read before restoring scheduled integration requests.",
-                    ],
-                    [
-                        "Issuer transfer verification separated from analytics and public package descriptions",
-                        "Retain permitted transfer identifiers, recipient confirmation, issuer status, and deadline evidence with restricted access.",
-                        "Pause delivery promises when recipient acceptance or issuer status conflicts with the seller's assertion.",
-                        "Confirm fulfillment through the authorized issuer workflow without exposing live admission credentials.",
-                    ],
-                    [
-                        "Bank-to-order reconciliation with integer money and explicit adjustment categories",
-                        "Link settlement batches, fee statements, bank transactions, reserve movements, and later clawback adjustments.",
-                        "Open exceptions for missing cash, duplicated fees, aged receivables, or unexplained inventory cost differences.",
-                        "Clear the exception only when supporting records reconcile both cash amounts and fulfilled quantities.",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four checks before an event book becomes saleable",
-                "body": "These checks apply to the particular inventory and contracted channels, not merely to the desk's general vendor subscriptions.",
-                "items": [
-                    "Verify acquisition authority, exact seat or suite entitlement, transfer restrictions, event edition, and the seller's applicable license status.",
-                    "Verify every enabled exchange connection using authorized test facilities or non-saleable test records; demonstrate duplicate handling and confirmed quantity reduction.",
-                    "Verify the displayed customer total includes mandatory fees when required, and preserve the component-level basis for hospitality inclusions and optional charges.",
-                    "Verify stressed cash availability through the latest expected payout date, including replacement exposure, supplier deadlines, event reserves, and facility repayment.",
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Register the source and its permission boundary",
-                    "action": "Create a source record before importing its first event or counterparty.",
-                    "detail": "Record the access agreement, cost basis, credentials owner, permitted fields, quota, refresh target, and authorized fallback contact.",
-                },
-                {
-                    "step": 2,
-                    "title": "Normalize rights before publishing quantities",
-                    "action": "Link each inventory unit to verified event and entitlement records.",
-                    "detail": "Resolve suite splitting, conditional games, transfer deadlines, and package components before calculating saleable inventory.",
-                },
-                {
-                    "step": 3,
-                    "title": "Exercise failure paths before scaling distribution",
-                    "action": "Replay duplicate sales, delayed acknowledgments, and a postponement against sanitized fixtures.",
-                    "detail": "Require zero duplicate reservations, traceable unresolved external exposure, and a usable manual restriction procedure.",
-                },
-                {
-                    "step": 4,
-                    "title": "Close the event through actual cash evidence",
-                    "action": "Match final platform statements and bank receipts to every fulfilled order.",
-                    "detail": "Release reserves only against the applicable remaining claim exposure; preserve subsequent adjustments rather than rewriting prior transactions.",
-                },
-            ],
-        },
-        {
-            "heading": "4. Price the three business models and reconcile the canonical profit bridge",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Keep three economic books because the same apparent spread can "
-                    "carry radically different cash risk. Multi-exchange resale typically "
-                    "ties acquisition cash to individual tickets and seller-account "
-                    "settlement rules. An illustrative $10,000 sales cohort with "
-                    "$6,000 acquisition cost, $900 exchange sell fees, $400 "
-                    "unsold or markdown slippage, $200 cancellation reserve, "
-                    "and $100 funding cost leaves $2,400 before allocated "
-                    "desk overhead. Suite splitting concentrates capital in one "
-                    "contract and often commits catering before every seat "
-                    "sells. Twenty seats at $750 produce $15,000; deducting "
-                    "$9,000 suite acquisition, $750 selling costs, $1,500 "
-                    "unsold-seat slippage, $500 event reserve, and $250 "
-                    "funding cost leaves $3,000 before shared overhead. "
-                    "Tentpole hospitality adds supplier deposits and customer "
-                    "remedy obligations: $30,000 billings minus $18,000 "
-                    "component acquisition, $1,500 selling costs, $2,000 "
-                    "markdown exposure, $1,500 cancellation reserve, and "
-                    "$500 funding cost leaves $6,500 before shared "
-                    "overhead. These are separate unit illustrations, not "
-                    "replacements for the canonical annual scenarios. For "
-                    "each, record the days between acquisition payment "
-                    "and bank-cleared proceeds, including post-event "
-                    "delays. Reserve deductions express conservative "
-                    "planning exposure; subsequent releases and actual "
-                    "claims must be reconciled without charging the "
-                    "same loss twice."
-                ),
-                (
-                    "Formula v2.0 fixes the annual gross planning bases at "
-                    "$220,000, $1,010,000, and $1,800,000. Applying the "
-                    "40% retained share produces $88,000, $404,000, and "
-                    "$720,000 of retained contribution after acquisition "
-                    "cost. The associated acquisition allocations are "
-                    "$132,000, $606,000, and $1,080,000. Subsequent "
-                    "deductions must total $61,600, $212,100, and "
-                    "$252,000 to deliver owner profits of $26,400, "
-                    "$191,900, and $468,000. Those profits equal "
-                    "12%, 19.0%, and 26% of gross basis, or "
-                    "30%, 47.5%, and 65% of retained contribution. "
-                    "For a fully reconciling illustrative Base bridge, "
-                    "allocate $80,800 to exchange and selling fees, "
-                    "$30,300 to unsold or markdown slippage, $15,150 "
-                    "to postponement and cancellation reserves, and "
-                    "$85,850 to remaining labor, tooling, funding, "
-                    "and operating expenses. The allocations are "
-                    "planning choices; only the scenario totals "
-                    "are canonical. If a vendor reports a payout "
-                    "already net of selling fees, reconstruct its "
-                    "gross comparable amount or retain an explicit "
-                    "net presentation, then deduct the fee exactly "
-                    "once. The scorecard's retained-share convention "
-                    "does not by itself decide ASC 606 "
-                    "principal-versus-agent presentation. Document "
-                    "that assessment by arrangement, and never "
-                    "label customer spending, underlying package "
-                    "value, or borrowed principal as additional "
-                    "recognized operator revenue."
-                ),
-                (
-                    "Working capital must follow the event calendar rather than "
-                    "annual profitability. The stated $10,000-$50,000 startup "
-                    "range and $1,800-$11,000 monthly operating range do "
-                    "not mean $50,000 can prepay every Base-case "
-                    "acquisition at once. At $606,000 annual acquisition "
-                    "cost, uniform purchasing averages about $1,660 "
-                    "per day; a ninety-day purchase-to-payout interval "
-                    "would tie up roughly $149,400 before reserves "
-                    "under that simplified steady-state assumption. "
-                    "Tentpole concentration can make the peak worse. "
-                    "Reduce prepaid inventory, negotiate lawful supplier "
-                    "terms, accelerate permitted customer deposits, or "
-                    "obtain a transparent facility before expanding. "
-                    "Customer deposits still carry fulfillment and "
-                    "refund obligations and are not automatically "
-                    "earned revenue. Preserve the canonical teams: "
-                    "one full-time operator plus two contractors "
-                    "for Conservative and Base, and two full-time "
-                    "operators plus three contractors for Scaled. "
-                    "Assign one person to cash exceptions and "
-                    "another available reviewer to unresolved rights "
-                    "or quantity conflicts. Monitor contribution "
-                    "per event, peak cash committed, reserve "
-                    "coverage, and days past expected payout "
-                    "weekly. If a new tool saves three "
-                    "hours monthly at an internal $50 "
-                    "hourly value but costs $300, its "
-                    "$150 labor benefit does not justify "
-                    "the subscription without measurable loss "
-                    "reduction or additional profitable capacity. "
-                    "Renew tools against observed operating "
-                    "results, not the number of available "
-                    "integrations."
-                ),
-            ],
-            "table": {
-                "caption": "Six Economic and Operating Checks: Exact Annual Totals and Separate Capital Profiles",
-                "headers": [
-                    "Scenario or business model being tested",
-                    "Revenue basis and acquisition treatment applied",
-                    "Deductions, owner result, and staffing interpretation",
-                    "Capital timing control and practical risk fallback",
-                ],
-                "rows": [
-                    [
-                        "Conservative canonical annual scenario for the initial small desk",
-                        "$220,000 gross basis less $132,000 acquisition leaves $88,000 retained contribution at the required 40% share.",
-                        "$61,600 subsequent deductions leave $26,400 owner profit; 12% gross margin, 30% retained margin; 1 FT plus 2 C.",
-                        "Concentrate on verified smaller inventory lots; cap exposure at cash available through stressed post-event payout dates.",
-                    ],
-                    [
-                        "Base canonical annual scenario with the same core staffing",
-                        "$1,010,000 gross basis less $606,000 acquisition leaves $404,000 retained contribution at the required 40% share.",
-                        "$212,100 subsequent deductions leave $191,900 owner profit; 19.0% gross margin, 47.5% retained margin; 1 FT plus 2 C.",
-                        "Schedule purchases against actual cash conversion; arrange funding before peak event exposure exceeds liquid resources.",
-                    ],
-                    [
-                        "Scaled canonical annual scenario with five total team members",
-                        "$1,800,000 gross basis less $1,080,000 acquisition leaves $720,000 retained contribution at the required 40% share.",
-                        "$252,000 subsequent deductions leave $468,000 owner profit; 26% gross margin, 65% retained margin; 2 FT plus 3 C.",
-                        "Separate execution and reconciliation responsibilities; reduce channel breadth when unresolved inventory or settlement exceptions accumulate.",
-                    ],
-                    [
-                        "Multi-exchange ticket resale through SkyBox, Automatiq, or Logitix",
-                        "Model ticket-level sales separately from acquisition cost; normalize platform payouts when fees were already withheld.",
-                        "Deduct exchange fees, inventory slippage, event reserves, funding costs, and allocated desk overhead before owner profit.",
-                        "Hold cash through contractual payout and claim periods; restrict unsynchronized channels before accepting additional sale exposure.",
-                    ],
-                    [
-                        "Stadium luxury-suite seat splitting under documented contractual permission",
-                        "Allocate the parent suite contract across permitted saleable seats while retaining shared catering and access obligations.",
-                        "Charge unsold seats and package commitments to the event; do not spread failed inventory into unrelated profitable events.",
-                        "Track suite payment deadlines and permitted customer deposits; offer whole-suite placement when individual-seat sell-through deteriorates.",
-                    ],
-                    [
-                        "Tentpole corporate hospitality across Super Bowl, World Cup, F1, Masters, and Final Four",
-                        "Separate admission, lodging, transport, and service components; determine recognition from actual control and contractual performance.",
-                        "Deduct supplier cancellation exposure, selling costs, markdowns, reserves, funding costs, and support overhead before owner profit.",
-                        "Match customer remedies to supplier commitments; shrink optional components when deposits or transfer rights cannot be secured.",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": "An information edge earns money only when verified rights, synchronized inventory, and bank-cleared cash tell the same story.",
-    "diagram_id": "diag-04",
-    "action_checklist": [
-        "Create the sixteen-entry source register with access permissions, cost basis, refresh targets, rate limits, and named fallback evidence.",
-        "Verify entity identity, applicable reseller licensing, transfer authority, and exact suite or hospitality rights before funding inventory.",
-        "Implement canonical event and entitlement records with timezone-aware dates, integer money, provenance, and restricted transfer evidence.",
-        "Test duplicate orders and cross-exchange acknowledgment failures across every enabled StubHub, Vivid Seats, SeatGeek, and TickPick connection.",
-        "Reconcile all three annual cases through the 40% retained-share bridge, deducting fees and losses once and tracking financing separately from revenue.",
-        "Run a ninety-day payout-delay stress test, correct unsupported credit disclosures, and reduce purchases or secure transparent funding before expanding.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "15 U.S.C. § 45c — Better Online Ticket Sales Act",
-            "url": "https://www.law.cornell.edu/uscode/text/15/45c",
-            "relevance": "Prohibits specified circumvention of ticket issuer security measures and associated ticket sales; discovery and inventory automation must remain within authorized access.",
-        },
-        {
-            "title": "16 CFR § 464.2 — Unfair or Deceptive Fees",
-            "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-D/part-464/section-464.2",
-            "relevance": "Requires covered live-event ticket offers to present the total price including mandatory charges, subject to the rule's specified exclusions and disclosure requirements.",
-        },
-        {
-            "title": "N.Y. Arts and Cultural Affairs Law § 25.13 — Licensing of Ticket Resellers",
-            "url": "https://www.law.cornell.edu/nyctap/NYACTLAW/25.13",
-            "relevance": "Provides the New York ticket-reseller licensing framework; evaluate applicability and exceptions and verify issued status separately from corporate registration.",
-        },
-        {
-            "title": "N.Y. Arts and Cultural Affairs Law § 25.07 — Ticket Sales",
-            "url": "https://www.law.cornell.edu/nyctap/NYACTLAW/25.07",
-            "relevance": "Establishes ticket-sale requirements including applicable total-cost disclosures; preserve the offered customer total and fee treatment in listing records.",
-        },
-        {
-            "title": "15 U.S.C. § 7704 — Requirements for Transmission of Commercial Electronic Mail",
-            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
-            "relevance": "Governs commercial email identification, message content, and opt-out handling; apply shared suppression records throughout the business-contact enrichment waterfall.",
-        },
-        {
-            "title": "UCC § 9-503 — Name of Debtor and Secured Party",
-            "url": "https://www.law.cornell.edu/ucc/9/9-503",
-            "relevance": "Explains debtor-name requirements relevant to reliable UCC research; use the applicable state's enacted text and filing-office search logic for the actual jurisdiction.",
-        },
-    ],
-}
+CHAPTER_8 = {'id': 'Q8',
+ 'chapter_id': 'Q8',
+ 'chapter_number': 8,
+ 'question_number': 8,
+ 'slug': 'ticketmaster-delivery-transfers-and-refunds',
+ 'question_prompt': 'How do you choose a resale platform and deliver, transfer and troubleshoot '
+                    'Ticketmaster tickets, including refunds?',
+ 'kicker': 'Q8 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Ticketmaster Delivery, Transfers and Refunds',
+ 'subtitle': 'Ticketmaster vs. StubHub vs. SeatGeek, legitimacy checks for resale sites, SafeTix rotating '
+             'barcodes, Apple Wallet adds and transfers, barcode fixes, phone-to-phone transfers, and '
+             'refund policies for cancelled and postponed events',
+ 'layout_template': 'legal_compliance_callout',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Ticketmaster is the custody layer: Nexustech, Patchwave and thumbsuprun all treat '
+                      'the account, not Apple Wallet, as the real ticket, and even StubHub-bought BTS '
+                      'seats arrive as Ticketmaster transfers. The street flow is My Events, Transfer, '
+                      'select seats, OTP check, recipient email or phone, then the buyer clicks accept and '
+                      "the sender's barcodes die. Numbers that matter: SafeTix codes rotate every 15 "
+                      'seconds, barcodes surface 24 to 48 hours out, transfer deadlines typically sit at '
+                      "72 hours, and Ticketmaster's refund plan offered up to 150% concert cash, 60-day "
+                      'postponement triggers and 30-day processing. Practitioners split on whether Apple '
+                      'Wallet sharing can move a ticket at all, on website versus app for bulk sends, and '
+                      'on refunds: direct Ticketmaster buyers got cash for postponed shows while StubHub '
+                      'offered vouchers and Vivid Seats called sales final.',
+ 'key_metrics': [{'label': 'SafeTix Barcode Rotation Interval',
+                  'metric': 'SafeTix Barcode Rotation Interval',
+                  'value': 'Dynamic code changes every 15 seconds',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Security measure rolled out after cloning and fraud complaints, including '
+                             'the Bad Bunny entry failure where buyers got a full refund plus 20% '
+                             'compensation.',
+                  'source': 'Paso a paso ([EwQdnuSrWAo @ 00:00:18])'},
+                 {'label': 'Barcode Release Window',
+                  'metric': 'Barcode Release Window',
+                  'value': '24 to 48 hours before the event',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Barcodes for some events are withheld until close to the date to prevent '
+                             'ticket fraud; My Events shows a notice when this applies.',
+                  'source': 'Helpful Solutions ([hNlTOy1daSA @ 00:00:19])'},
+                 {'label': 'Typical Transfer Deadline',
+                  'metric': 'Typical Transfer Deadline',
+                  'value': '72 hours before the event starts',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Many events now set transfer cutoffs, and dynamically priced tickets may '
+                             'carry transfer restrictions aimed at scalping.',
+                  'source': 'Gadget Tune ([8yXxF_U1uek @ 00:01:13])'},
+                 {'label': 'Concert Cash Credit Ceiling',
+                  'metric': 'Concert Cash Credit Ceiling',
+                  'value': 'Up to 150% of the ticket price',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Offered as an alternative to a cash refund on cancelled events under '
+                             "Ticketmaster's revised refund program; unclear whether fees were included.",
+                  'source': 'thumbsuprun ([s9mNdqH694I @ 00:03:09])'}],
+ 'sections': [{'heading': '1. The Practitioner Consensus',
+               'paragraphs': ['The first rule every transfer operator repeats is that the ticket lives '
+                              'inside Ticketmaster, not on the phone. Nexustech states it flatly: you '
+                              'cannot transfer a ticket from Apple Wallet directly, because Wallet only '
+                              'stores a copy and the real ticket always sits in the Ticketmaster account, '
+                              'so any send happens inside the app or on ticketmaster.com [lBLVmAx5wkQ @ '
+                              '00:00:21]. Patchwave Tutorials gives the same order to anyone trying to '
+                              'load a pass just to pass it along: bypass Apple Wallet entirely and hit the '
+                              'built-in transfer button to move the ticket to an email address or '
+                              'Ticketmaster account [Wqb02oxLDJ0 @ 00:01:17]. Rez at thumbsuprun applies '
+                              "the rule to secondary-market inventory. A viewer's BTS seats were bought on "
+                              'StubHub, yet the tickets themselves were transferred out of Ticketmaster '
+                              'and housed there, so that is where the search has to start [MP1aH4hgG70 @ '
+                              '00:00:39]. The operational read is simple: the marketplace that took the '
+                              'money is not the system that controls the barcode. Whoever holds the '
+                              'Ticketmaster account holds the seat, and every delivery, re-send, wallet '
+                              'load and gate scan runs through that login. Brokers who treat a wallet '
+                              'pass, a screenshot or a forwarded email as the asset are working with a '
+                              'copy that the scanner may never honor.',
+                              'On the send itself, the practitioners walk the same rails. Sarah at The '
+                              'Savvy Professor lays out the ground rules: sender and receiver both need a '
+                              'Ticketmaster account, a receiver without one must create it, there is no '
+                              'limit on how many tickets can be transferred, and once a transfer succeeds '
+                              'the sender can no longer use those tickets, though a received ticket can '
+                              'still be retransferred [kC2NXuA1XV4 @ 00:00:21]. Fixed Formulas runs the '
+                              'identical path in 2026: My Account, upcoming events under My Tickets, open '
+                              'the ticket, hit Transfer, choose which ticket if several are held for the '
+                              'same event, then enter first name, last name, email and an optional message '
+                              'before confirming; the recipient clicks Accept Ticket from an email or '
+                              "phone link and the ticket lands in the recipient's account [f7BuIdB0-6I @ "
+                              '00:02:17]. Rez at thumbsuprun spells out what happens on the back end once '
+                              "the buyer says yes. The sender's status flips from pending to complete, the "
+                              "tickets disappear from the sender's account, and the old barcodes are "
+                              'invalid even if they were saved to a wallet or issued as hard stock; only '
+                              'the newly transferred barcodes are valid [MP1aH4hgG70 @ 00:04:01]. That '
+                              'acceptance click is the real moment of delivery, and every source treats it '
+                              'as the point where custody changes hands for good.',
+                              'The refund side has its own consensus, and it centers on who actually sold '
+                              'the seat. Rez at thumbsuprun ranks the fan guarantee or refund policy as '
+                              'the number one thing any resale site must show: resale platforms generally '
+                              'own none of the inventory, they earn on service charges, and a real '
+                              'guarantee either finds replacement tickets to get the buyer in or pays a '
+                              '100% money-back refund; if no fan guarantee, buyer guarantee or refund '
+                              'policy can be found, Rez says to stay away completely [sIgspwKXj_0 @ '
+                              '00:02:12]. WCPO 9 shows why the seller of record matters when shows move. '
+                              'Nikki Agee paid $648 for four Elton John tickets through Vivid Seats, and '
+                              'any refund had to come back through the person who transferred the tickets, '
+                              'while Kelly and Tom Rally were offered only StubHub vouchers on $800 of Foo '
+                              'Fighters seats; meanwhile Ticketmaster, after outrage from fans and '
+                              'lawmakers, was refunding both cancelled and postponed shows bought directly '
+                              '[VBj60jqiycw @ 00:01:24]. GigaBits, after two weeks of side-by-side '
+                              'testing, still calls Ticketmaster strict and slow on refunds [7KU-5HUqmzA @ '
+                              '00:02:58] but essential for official releases and guaranteed legitimacy '
+                              '[7KU-5HUqmzA @ 00:03:39]. WCPO frames direct Ticketmaster purchase as the '
+                              'good-news side of every postponement story.'],
+               'table': {'caption': 'Where Ticketmaster delivery and refund practitioners line up',
+                         'headers': ['Consensus Point',
+                                     'What Practitioners Report',
+                                     'Why It Matters To Operators',
+                                     'Expert Source'],
+                         'rows': [['Ticketmaster account holds the real ticket, not the wallet',
+                                   'Apple Wallet only stores a copy; transfers must happen inside the '
+                                   'Ticketmaster app or website',
+                                   'Never treat a wallet pass or screenshot as transferable inventory',
+                                   'Nexustech ([lBLVmAx5wkQ @ 00:00:21])'],
+                                  ['Resale marketplace purchases still settle through Ticketmaster '
+                                   'transfers',
+                                   'StubHub-bought BTS tickets were transferred out of and housed inside '
+                                   'Ticketmaster',
+                                   'Start every delivery search in the Ticketmaster account, not the '
+                                   'marketplace',
+                                   'thumbsuprun ([MP1aH4hgG70 @ 00:00:39])'],
+                                  ['Both parties need Ticketmaster accounts to complete any transfer',
+                                   'Receiver without an account must create one; no limit on ticket count',
+                                   'Tell buyers to set up an account before the send goes out',
+                                   'The Savvy Professor ([kC2NXuA1XV4 @ 00:00:21])'],
+                                  ["Recipient acceptance kills the sender's barcodes for good",
+                                   'Once accepted, old wallet and hard stock barcodes are invalid; only '
+                                   'new ones work',
+                                   'Seller cannot reuse the seats after the recipient accepts the transfer',
+                                   'thumbsuprun ([MP1aH4hgG70 @ 00:04:01])'],
+                                  ['Dynamic barcodes defeat screenshots and copies at the entry gate',
+                                   'Wallet tickets refresh every few seconds; entry scanners reject '
+                                   'screenshots or copies',
+                                   'Only a live rotating barcode tied to the account gets a buyer inside',
+                                   'Nexustech ([lBLVmAx5wkQ @ 00:02:13])'],
+                                  ['Fan guarantee is the number one resale site requirement',
+                                   'Guarantee means replacement tickets or a 100% money-back refund if '
+                                   'entry fails',
+                                   'Without a posted guarantee, the advice is to not buy at all',
+                                   'thumbsuprun ([sIgspwKXj_0 @ 00:01:32])'],
+                                  ['Direct Ticketmaster buyers fared better on postponed show refunds',
+                                   'Ticketmaster refunded cancelled and postponed shows; Vivid Seats and '
+                                   'StubHub withheld cash on postponements',
+                                   'Seller of record decides whether postponed-show cash ever comes back',
+                                   'WCPO 9 ([VBj60jqiycw @ 00:01:24])']]}},
+              {'heading': '2. Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['The send flow has a few levers that matter to anyone moving volume. '
+                              'Poolarity works from the Ticketmaster website on a phone instead of the app '
+                              'because the site allows multi-select, letting several tickets go to one '
+                              'email in a single pass rather than one by one; the same demo confirms a '
+                              'pair can be split, sending one seat to a buyer and routing the other '
+                              'separately [IENQeieAOCo @ 00:01:29]. Expect a security gate before anything '
+                              'moves. Fixed Formulas shows Ticketmaster firing an OTP to the registered '
+                              'email address and phone number, which must be entered and confirmed before '
+                              'the recipient screen appears [f7BuIdB0-6I @ 00:01:09]. Gadget Tune lists '
+                              "the recipient's email address or phone number as the target and warns that "
+                              'a simple typo sends the tickets to the wrong person, so the address gets '
+                              'verified and the recipient gets a heads-up to watch for the notification '
+                              "and accept promptly [8yXxF_U1uek @ 00:02:06]. After the send, Poolarity's "
+                              'screen states the transfer can be cancelled at any time as long as the '
+                              'recipient has not accepted, and the ticket list keeps a permanent history '
+                              'with a pending or accepted status, so nothing sits in limbo [IENQeieAOCo @ '
+                              "00:02:42]. That pending window is the seller's only undo button.",
+                              'Rez at thumbsuprun adds the eligibility screen and the confirmation '
+                              'workaround. Not every event shows the transfer feature: either the delivery '
+                              'delay has not been lifted so tickets cannot be accessed yet, or the ticket '
+                              'type is ineligible, with hard stock and will call tickets generally blocked '
+                              'and will call usually picked up at the event itself [MP1aH4hgG70 @ '
+                              '00:01:35]. Sarah at The Savvy Professor gives the visual tell: if the '
+                              'transfer button is gray, the tickets cannot be moved [kC2NXuA1XV4 @ '
+                              '00:01:21]. When the button is live, the phone flow lets a seller pick a '
+                              'saved contact to save taps, or enter the name, email address or phone '
+                              'number manually, and then the transfer simply completes with no '
+                              'confirmation step. The catch, per Rez, is that a computer transfer triggers '
+                              'an email confirmation showing the address typed in, while a mobile transfer '
+                              'sends none and the confirmation page shows only first and last name '
+                              "[MP1aH4hgG70 @ 00:04:15]. The fix: type the recipient's full name in the "
+                              'First Name line, paste the email address into the Last Name line, paste it '
+                              'again in the email or mobile field, and hit transfer; the confirmation '
+                              'screen then displays the address in the last-name slot, which confirmed the '
+                              "intended inbox in Rez's own demo [MP1aH4hgG70 @ 00:04:41].",
+                              "The refund math comes from Rez's breakdown of how Ticketmaster rewrote its "
+                              'policy as events collapsed. The old policy refunded cancelled, postponed or '
+                              'rescheduled events within seven to ten business days, with minimal '
+                              'exceptions for US Open and MLB tickets [s9mNdqH694I @ 00:00:38]. In late '
+                              'March or early April Ticketmaster quietly narrowed refunds to cancelled '
+                              'events only, then on April 17 launched a program that kept cash refunds for '
+                              'cancellations but added the option of up to 150% of the ticket price as '
+                              'concert cash credit, with Rez noting it was unclear whether fees were '
+                              'included [s9mNdqH694I @ 00:03:09]. Postponed events with a rescheduled date '
+                              'could request a refund in a May 1 to May 30 selection window, and the April '
+                              '24 update added any postponed event without a new date set within 60 days '
+                              'of postponement [s9mNdqH694I @ 00:05:16]. Refunds take 30 days to process, '
+                              'Rez reads the design as cash-flow management through batching, and doing '
+                              'nothing simply keeps the tickets live. Buying into an event that was '
+                              "already postponed generally does not qualify. Rez's own take is that the "
+                              'credit can be worth it as near-free future tickets if the cash can stay '
+                              'tied up for a year or two. Resale buyers hit a different wall: Kelly and '
+                              'Tom Rally were offered only StubHub vouchers for $800 of Foo Fighters '
+                              'tickets [VBj60jqiycw @ 00:01:08].'],
+               'table': {'caption': 'Delivery, wallet and refund numbers practitioners actually quote',
+                         'headers': ['Mechanic or Tool',
+                                     'Exact Number or Setting',
+                                     'How Practitioners Use It',
+                                     'Expert Source'],
+                         'rows': [['SafeTix rotating barcode built against cloning and fraud',
+                                   'Dynamic code changes every 15 seconds on the digital ticket',
+                                   'Show it original size, moving, on an undamaged charged screen without '
+                                   'anti-spy protector',
+                                   'Paso a paso ([EwQdnuSrWAo @ 00:00:18])'],
+                                  ['Barcode release timing for events withheld against fraud',
+                                   'Barcodes typically appear 24 to 48 hours before the event',
+                                   'Check My Events for a notice that the barcode unlocks closer to date',
+                                   'Helpful Solutions ([hNlTOy1daSA @ 00:00:19])'],
+                                  ['Event-level transfer deadline set by many current events',
+                                   'Cutoff typically lands 72 hours before the event starts',
+                                   'If the deadline passed, contact Ticketmaster customer service for '
+                                   'emergency transfer assistance',
+                                   'Gadget Tune ([8yXxF_U1uek @ 00:01:13])'],
+                                  ['Apple Wallet pass that refuses to load from the app',
+                                   'Log in through Safari instead of the app, then tap Add to Apple Wallet',
+                                   'Treat Safari login as the most effective first fix before updating '
+                                   'software',
+                                   'Patchwave Tutorials ([Wqb02oxLDJ0 @ 00:00:00])'],
+                                  ['Wallet error triggers that block adding tickets to Apple Wallet',
+                                   'iOS older than 16.4, will call, print at home, phone-rep sales, VIP or '
+                                   'premium tickets',
+                                   'Update the app or iOS, otherwise enter with the rotating barcode in '
+                                   'the Ticketmaster app',
+                                   'The Savvy Professor ([zH4ITvC9voc @ 00:01:43])'],
+                                  ['Concert cash credit offered instead of a cash refund',
+                                   'Up to 150% of the price paid for the tickets',
+                                   'Take the credit when cash can stay tied up for future ticket buying',
+                                   'thumbsuprun ([s9mNdqH694I @ 00:03:09])'],
+                                  ['Postponed event refund trigger under the updated Ticketmaster plan',
+                                   'No rescheduled date within 60 days of postponement qualifies for '
+                                   'refund',
+                                   'Make the refund or credit selection inside the Ticketmaster account '
+                                   'once the window opens',
+                                   'thumbsuprun ([s9mNdqH694I @ 00:05:16])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Delivery Desk Pro-Tips',
+                           'body': 'Small moves practitioners use to send faster, confirm delivery and '
+                                   'keep postponed inventory working.',
+                           'items': ['Run bulk sends from the Ticketmaster website on your phone, not the '
+                                     'app: the site multi-selects several tickets to one email instead of '
+                                     'sending them one at a time [Poolarity - Life Hacks — IENQeieAOCo @ '
+                                     '00:00:00].',
+                                     "On mobile transfers, paste the recipient's email into the Last Name "
+                                     'field so the confirmation screen shows exactly which address '
+                                     'received the seats, since mobile sends no confirmation email '
+                                     '[thumbsuprun — MP1aH4hgG70 @ 00:04:41].',
+                                     'When a pass refuses to load into Apple Wallet, log in to '
+                                     'Ticketmaster through Safari on the iPhone instead of the app and tap '
+                                     'Add to Apple Wallet from there [Patchwave Tutorials — Wqb02oxLDJ0 @ '
+                                     '00:00:00].',
+                                     'Postponed-show inventory keeps working: barcodes are tied to the '
+                                     'event manifest, not the date, so old barcodes scan at the '
+                                     'rescheduled show even before a new date is set [thumbsuprun — '
+                                     'MP1aH4hgG70 @ 00:05:39].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Confirm the seats can move',
+                              'action': 'Open My Events, select the event and check whether the transfer '
+                                        'button is live.',
+                              'detail': 'A gray transfer button means the tickets cannot be transferred '
+                                        '[The Savvy Professor — kC2NXuA1XV4 @ 00:01:21]; a missing '
+                                        'transfer feature usually means the delivery delay has not been '
+                                        'lifted or the tickets are hard stock or will call [thumbsuprun — '
+                                        'MP1aH4hgG70 @ 00:01:35].'},
+                             {'step': 2,
+                              'title': 'Authenticate and pick only the sold seats',
+                              'action': 'Tap Transfer, enter the OTP and select the individual seats going '
+                                        'to this buyer.',
+                              'detail': 'Ticketmaster sends an OTP to the registered email address and '
+                                        'phone number before the recipient screen opens, and a single '
+                                        'ticket can be picked when several are held for one event [Fixed '
+                                        'Formulas — f7BuIdB0-6I @ 00:01:09].'},
+                             {'step': 3,
+                              'title': 'Lock the recipient address',
+                              'action': 'Put the full name in First Name, paste the email into Last Name '
+                                        'and the email field, then message the buyer.',
+                              'detail': 'The last-name paste exposes the exact address on the confirmation '
+                                        'screen [thumbsuprun — MP1aH4hgG70 @ 00:04:41]; a typo sends '
+                                        'tickets to the wrong person, so tell the recipient to watch for '
+                                        'the notification and accept promptly [Gadget Tune — 8yXxF_U1uek @ '
+                                        '00:02:06].'},
+                             {'step': 4,
+                              'title': 'Track acceptance until complete',
+                              'action': 'Watch the pending status and cancel or resend before acceptance '
+                                        'if anything is wrong.',
+                              'detail': 'A transfer can be cancelled any time before the recipient accepts '
+                                        'and the history shows pending or accepted [Poolarity - Life Hacks '
+                                        '— IENQeieAOCo @ 00:02:42]; once accepted the status reads '
+                                        "complete and the sender's old barcodes are invalid [thumbsuprun — "
+                                        'MP1aH4hgG70 @ 00:04:01].'}]},
+              {'heading': 'Section 3: Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The sharpest split on delivery is where the transfer actually originates. '
+                              'Poolarity - Life Hacks runs transfers from the Ticketmaster mobile website '
+                              'rather than the app, because the site allows multi-select and pushes '
+                              'several SafeTix to one email in a single pass instead of one by one in the '
+                              'app [IENQeieAOCo @ 00:00:00]. Gadget Tune pitches a second lane entirely: '
+                              'open Apple Wallet, tap the three-dot share button, and fire the ticket out '
+                              'by AirDrop, Messages, or email, with the recipient accepting inside their '
+                              'own Ticketmaster account, and calls that the quick option for nearby '
+                              'contacts [8yXxF_U1uek @ 00:00:56]. Nexustech flatly contradicts that '
+                              'playbook, stating you cannot transfer a ticket from Apple Wallet directly '
+                              'because the wallet only stores a copy and the real ticket always lives '
+                              'inside Ticketmaster [lBLVmAx5wkQ @ 00:00:21]. Patchwave Tutorials lands on '
+                              'the same side, telling anyone loading a pass just to forward it to skip '
+                              'Apple Wallet entirely and use the built-in transfer button inside the app '
+                              'or website [Wqb02oxLDJ0 @ 00:01:17]. The operator read: three of the four '
+                              'route every transfer through the Ticketmaster account itself, so any '
+                              'wallet-share lane should be tested on a live order before a buyer is '
+                              'promised delivery that way.',
+                              'Refund reliability splits the room depending on whether a speaker judges '
+                              'calm-weather service or crisis behavior. GigaBits, after two weeks testing '
+                              'all three platforms, rates Ticketmaster refunds strict and slow, StubHub '
+                              'helpful but inconsistent depending on the seller, and SeatGeek surprisingly '
+                              'responsive [7KU-5HUqmzA @ 00:02:58]. thumbsuprun calls the resale fan '
+                              'guarantee the number one filter, because a real guarantee either sources '
+                              'replacement tickets or pays a 100% money-back refund if the tickets fail to '
+                              'get you in [sIgspwKXj_0 @ 00:01:32]. WCPO 9 reported the inverse during '
+                              'mass postponements: after outrage from fans and lawmakers, buyers who '
+                              'purchased directly from Ticketmaster got refunds for both cancelled and '
+                              'postponed shows, while neither Vivid Seats nor StubHub paid cash on '
+                              'postponed concerts [VBj60jqiycw @ 00:01:24]. The same report shows StubHub '
+                              'offering a couple holding 800 dollars of Foo Fighters tickets only '
+                              'vouchers, with its president explaining that in normal times the '
+                              'marketplace fronts buyer refunds before recouping them from the seller '
+                              '[VBj60jqiycw @ 00:01:08]. Net read: the resale guarantee thumbsuprun leans '
+                              'on is funded by seller recoupment, and that recoupment is exactly what '
+                              'stalled when events froze, so tickets bought direct from Ticketmaster held '
+                              'the stronger refund position in a wave event.',
+                              'On postponed shows, the playbooks diverge between holding, crediting, and '
+                              "fighting. thumbsuprun's hold case is that any postponed and rescheduled "
+                              'event keeps the original barcodes valid, even before a new date is set, '
+                              'because the barcode manifest is tied to the event rather than the calendar '
+                              "date [MP1aH4hgG70 @ 00:05:39]. The channel's Ticketmaster refund breakdown "
+                              'adds a credit lane: skip the cash and take up to 150 percent concert cash '
+                              'credit, framed as basically a free event ticket down the road, with the '
+                              'catch that your cash stays tied up [s9mNdqH694I @ 00:03:09]. WGRZ-TV '
+                              'profiled the fight lane: Tate Helms bought eight Rolling Stones tickets, '
+                              "was stonewalled under Vivid's all-sales-final postponement terms, and still "
+                              "recovered 1,577 dollars, with the station's advice being to send strongly "
+                              'worded emails, be loud, and demand the refund [YksJO2KDmnk @ 00:02:16]. Yet '
+                              'a WGRZ anchor reported a refund for a concert from the previous summer that '
+                              'simply came back without any strongly worded email, only a few weeks before '
+                              'the broadcast [YksJO2KDmnk @ 00:03:00]. Escalation worked for one buyer and '
+                              'patience worked for another, and thumbsuprun says there is nothing wrong '
+                              'with either the refund or the credit, as long as the choice matches how '
+                              'urgently the cash is needed.'],
+               'table': {'caption': 'Competing transfer, wallet and refund playbooks taught by the '
+                                    'practitioners',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Where to start a multi-ticket transfer run',
+                                   'Ticketmaster website on the phone with multi-select pushes several '
+                                   'SafeTix to one email in one pass',
+                                   'App transfer flow goes seat by seat but lets you pick a saved contact '
+                                   'to save taps',
+                                   'Poolarity - Life Hacks ([IENQeieAOCo @ 00:00:00]); thumbsuprun '
+                                   '([MP1aH4hgG70 @ 00:02:42])'],
+                                  ['Apple Wallet as a delivery lane for buyers',
+                                   'Share from the Wallet three-dot menu by AirDrop, Messages or email, '
+                                   'recipient accepts in Ticketmaster',
+                                   'Wallet holds only a copy, so every transfer must run through the '
+                                   'Ticketmaster app or website',
+                                   'Gadget Tune ([8yXxF_U1uek @ 00:00:56]); Nexustech ([lBLVmAx5wkQ @ '
+                                   '00:00:21])'],
+                                  ['Which platform handles refunds and support best',
+                                   'Ticketmaster rated strict and slow, StubHub helpful but inconsistent '
+                                   'depending on the seller',
+                                   'SeatGeek rated surprisingly responsive and fastest at solving issues '
+                                   'after two weeks of testing',
+                                   'GigaBits ([7KU-5HUqmzA @ 00:02:58]); GigaBits ([7KU-5HUqmzA @ '
+                                   '00:03:20])'],
+                                  ['Resale guarantee versus mass-postponement reality',
+                                   'Fan guarantee promises replacement tickets or a full 100% money-back '
+                                   'refund on entry failure',
+                                   'During postponements StubHub offered only vouchers and neither StubHub '
+                                   'nor Vivid Seats paid cash',
+                                   'thumbsuprun ([sIgspwKXj_0 @ 00:01:32]); WCPO 9 ([VBj60jqiycw @ '
+                                   '00:01:24])'],
+                                  ['Postponed show with tickets already in the account',
+                                   'Hold the tickets because original barcodes stay valid for the '
+                                   'rescheduled date automatically',
+                                   'Request a refund once no rescheduled date is set within 60 days of the '
+                                   'postponement',
+                                   'thumbsuprun ([MP1aH4hgG70 @ 00:05:39]); thumbsuprun ([s9mNdqH694I @ '
+                                   '00:05:01])'],
+                                  ['Cash refund versus Ticketmaster account credit choice',
+                                   'Take the cash refund and accept roughly 30 days of batched processing '
+                                   'time',
+                                   'Take up to 150 percent concert cash credit and accept that the cash '
+                                   'stays tied up',
+                                   'thumbsuprun ([s9mNdqH694I @ 00:03:09]); thumbsuprun ([s9mNdqH694I @ '
+                                   '00:05:31])'],
+                                  ['Escalation on a stonewalled resale refund request',
+                                   'Send strongly worded emails, be loud and demand it, as Tate Helms '
+                                   'recovered 1,577 dollars',
+                                   "Wait it out, as one WGRZ anchor's refund simply came back without any "
+                                   'email at all',
+                                   'WGRZ-TV ([YksJO2KDmnk @ 00:02:16]); WGRZ-TV ([YksJO2KDmnk @ '
+                                   '00:03:00])']]}},
+              {'heading': 'Section 4: Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['Delivery mistakes start at the recipient field. Gadget Tune warns that a '
+                              "simple typo in the recipient's email address or phone number can send your "
+                              'tickets to the wrong person, and tells senders to let the recipient know '
+                              'tickets are coming so the notification gets accepted promptly [8yXxF_U1uek '
+                              '@ 00:01:50]. thumbsuprun flagged a quieter trap: a transfer sent from the '
+                              'mobile app fires with no confirmation and no email receipt, and the '
+                              'completion screen shows only first and last name, so the sender cannot see '
+                              'which address was actually used [MP1aH4hgG70 @ 00:04:15]. The same Ticket '
+                              'Tip Thursday episode explains a missing transfer button: either the '
+                              'delivery delay has not been lifted yet, or the ticket type, such as hard '
+                              'stock or will call, is simply not eligible for transfer [MP1aH4hgG70 @ '
+                              '00:01:35]. Poolarity - Life Hacks supplies the recovery lever: an '
+                              'unaccepted transfer stays in the list as pending with full history, and it '
+                              'can be cancelled at any time as long as the recipient has not accepted '
+                              '[IENQeieAOCo @ 00:02:29]. The economics check is blunt: until the other '
+                              'side clicks accept, the seller still controls the seats, and once they '
+                              "accept, the sender's status flips from pending to complete and the seats "
+                              'are gone.',
+                              'Gate-day failures cluster around the barcode itself. Helpful Solutions '
+                              'points out that barcodes for some events do not appear until 24 to 48 hours '
+                              'before the event, held back on purpose to prevent ticket fraud, so an empty '
+                              'wallet days out should be checked against the event notice before anyone '
+                              "panics [hNlTOy1daSA @ 00:00:19]. The Savvy Professor's error list doubles "
+                              'as a resale red-flag sheet: a ticket bought from someone else who did not '
+                              'transfer it properly, will call or print-at-home chosen at checkout, a '
+                              'phone order through a sales rep, VIP or premium tickets, and non-refundable '
+                              'add-ons can all block Apple Wallet [zH4ITvC9voc @ 00:02:02]. Patchwave '
+                              'Tutorials adds device-side blockers: an active VPN or iCloud private relay '
+                              'can break the Apple Wallet handshake, the iPhone region must match the '
+                              'purchase country, and a phone with no passcode or Face ID gets new passes '
+                              'rejected [Wqb02oxLDJ0 @ 00:00:43]. Nexustech closes the screenshot '
+                              'loophole: Wallet tickets carry dynamic barcodes that refresh every few '
+                              'seconds, so screenshots or copies get rejected by entry scanners '
+                              '[lBLVmAx5wkQ @ 00:02:13]. Each of these produces the same delivery-day '
+                              'outcome: a ticket that exists in the account but cannot be added, '
+                              'displayed, or scanned when the buyer reaches the gate.',
+                              'Cash-flow traps dominate the refund side. thumbsuprun walked through '
+                              'Ticketmaster quietly switching in late March or early April to refunds for '
+                              'canceled events only, leaving postponed, suspended, and on-hold shows '
+                              'stranded while nobody had a new date [s9mNdqH694I @ 00:01:07]. Even under '
+                              'the revised plan, undated postponed shows only qualified once 60 days '
+                              'passed without a rescheduled date, refunds were quoted at 30 days to '
+                              'process, and buying into an already-postponed event generally did not '
+                              "qualify, a structure the channel read as built to manage Ticketmaster's "
+                              'cash flow [s9mNdqH694I @ 00:05:31]. WCPO 9 showed the resale-chain dead '
+                              'end: Nikki Agee paid 648 dollars for four Elton John tickets through Vivid '
+                              'Seats and was told any refund had to come from the person who transferred '
+                              'the tickets, meaning the tickets would go back to the original owner '
+                              "[VBj60jqiycw @ 00:00:20]. WGRZ-TV's Better Business Bureau source, Tom "
+                              'Bartholomy, warned that the terms and conditions are where the landmines '
+                              'sit and reported never seeing a time limit on how long a postponement can '
+                              'run [YksJO2KDmnk @ 00:01:42]. Stack those together and the economics check '
+                              'is plain: on resale inventory with no-refund postponement terms, buyer cash '
+                              'can sit frozen indefinitely, while even direct Ticketmaster refunds ride a '
+                              'batched 30-day processing clock.'],
+               'table': {'caption': 'Firsthand transfer, wallet and refund failures with the fix each '
+                                    'practitioner used',
+                         'headers': ['Failure Mode',
+                                     'What Went Wrong',
+                                     'Fix Or Economic Check',
+                                     'Expert Source'],
+                         'rows': [['Typo in the recipient email or phone number',
+                                   'A single wrong character sends the tickets to the wrong person '
+                                   'entirely',
+                                   'Verify recipient details before initiating and tell the recipient to '
+                                   'watch for the notification',
+                                   'Gadget Tune ([8yXxF_U1uek @ 00:01:50])'],
+                                  ['Mobile transfer fires with no email confirmation',
+                                   'Completion screen shows only first and last name, never the address '
+                                   'actually used',
+                                   'Put the full name in First Name and paste the email into Last Name to '
+                                   'display it',
+                                   'thumbsuprun ([MP1aH4hgG70 @ 00:04:28])'],
+                                  ['Transfer button greyed out or missing on the order',
+                                   'Delivery delay not lifted yet, or hard stock and will call tickets are '
+                                   'ineligible',
+                                   'Check the event page for transferability before promising delivery to '
+                                   'any buyer',
+                                   'thumbsuprun ([MP1aH4hgG70 @ 00:01:35]); The Savvy Professor '
+                                   '([kC2NXuA1XV4 @ 00:01:21])'],
+                                  ['Transfer deadline missed close to showtime',
+                                   'Many events set deadlines typically 72 hours before start, and dynamic '
+                                   'pricing can restrict transfers',
+                                   'Contact Ticketmaster customer service immediately for emergency '
+                                   'transfer assistance',
+                                   'Gadget Tune ([8yXxF_U1uek @ 00:01:13]); Gadget Tune ([8yXxF_U1uek @ '
+                                   '00:02:24])'],
+                                  ['Apple Wallet refuses to add the pass',
+                                   'VPN or private relay, region mismatch, no passcode, or iOS older than '
+                                   '16.4 blocks the add',
+                                   'Log in through Safari and add from there, then update iOS and the '
+                                   'Ticketmaster app',
+                                   'Patchwave Tutorials ([Wqb02oxLDJ0 @ 00:00:00]); The Savvy Professor '
+                                   '([zH4ITvC9voc @ 00:01:43])'],
+                                  ['Scanner rejects the ticket at the entrance gate',
+                                   'Screenshots of dynamic codes, resized barcodes, anti-spy protectors, '
+                                   'damaged screens or low battery',
+                                   'Present the live moving barcode at original size on a charged, '
+                                   'undamaged, unprotected screen',
+                                   'Nexustech ([lBLVmAx5wkQ @ 00:02:13]); Paso a paso ([EwQdnuSrWAo @ '
+                                   '00:01:15])'],
+                                  ['Resale refund dead end on a postponed concert',
+                                   'Vivid buyer told refunds must come from the original transferor, and '
+                                   'terms say all sales final',
+                                   'Buy direct from Ticketmaster, which offered refunds on both cancelled '
+                                   'and postponed shows',
+                                   'WCPO 9 ([VBj60jqiycw @ 00:00:20]); WGRZ-TV ([YksJO2KDmnk @ '
+                                   '00:01:25])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Four Kill Switches Before Any Ticket Changes Hands',
+                           'body': 'Each gate below comes from a transfer, wallet or refund failure the '
+                                   'practitioners hit firsthand; clear all four before a buyer is told the '
+                                   'tickets are on the way.',
+                           'items': ['Do not promise delivery until the transfer button is live on the '
+                                     'order, since an unlifted delivery delay or hard stock and will call '
+                                     'tickets block transfers [thumbsuprun — MP1aH4hgG70 @ 00:01:35].',
+                                     'On mobile, confirm the recipient address by pasting the email into '
+                                     'the Last Name field before hitting transfer, because no confirmation '
+                                     'email is sent [thumbsuprun — MP1aH4hgG70 @ 00:04:28].',
+                                     'Never deliver screenshots or Apple Wallet copies; dynamic barcodes '
+                                     'refresh every few seconds and entry scanners reject copies, so move '
+                                     'tickets only through Ticketmaster [Nexustech — lBLVmAx5wkQ @ '
+                                     '00:02:13].',
+                                     'Before buying into a postponed event, assume no refund lane: '
+                                     'purchases into an already-postponed event generally do not qualify '
+                                     'for the Ticketmaster refund program [thumbsuprun — s9mNdqH694I @ '
+                                     '00:07:24].']}}],
+ 'pull_quote': '"Only shop at places where you\'re getting a full 100 percent guarantee for your '
+               'tickets... without this do not buy tickets." — thumbsuprun (sIgspwKXj_0 @ 00:02:25).',
+ 'diagram_id': 'diag-04',
+ 'action_checklist': ['Run multi-ticket transfers from the Ticketmaster website with multi-select to push '
+                      'several tickets to one email instead of sending them one by one in the app '
+                      '[Poolarity - Life Hacks — IENQeieAOCo @ 00:00:00].',
+                      'Clear the OTP authentication sent to your registered email and phone number, then '
+                      "enter the recipient's first name, last name and email before confirming the "
+                      'transfer [Fixed Formulas — f7BuIdB0-6I @ 00:01:09].',
+                      'On mobile transfers, paste the recipient email into the Last Name field so the '
+                      'confirmation screen displays the exact address the tickets went to [thumbsuprun — '
+                      'MP1aH4hgG70 @ 00:04:28].',
+                      'Watch the transfer history for pending status and cancel any transfer the recipient '
+                      'has not yet accepted if the deal falls through [Poolarity - Life Hacks — '
+                      'IENQeieAOCo @ 00:02:29].',
+                      'When a barcode is missing from the wallet, check whether it unlocks 24 to 48 hours '
+                      'out, then remove and re-add the ticket, update the apps, and test on another device '
+                      '[Helpful Solutions — hNlTOy1daSA @ 00:01:26].',
+                      'On postponed events, choose between the cash refund and up to 150 percent concert '
+                      'cash credit inside the selection window, and push stonewalled resale refunds with '
+                      'strongly worded emails [thumbsuprun — s9mNdqH694I @ 00:03:09] [WGRZ-TV — '
+                      'YksJO2KDmnk @ 00:02:16].'],
+ 'statutory_citations': [{'title': 'thumbsuprun — HOW TO TRANSFER TICKETS ON TICKETMASTER TO ANOTHER PHONE '
+                                   '| TICKET TIP THURSDAY [00:05:39]',
+                          'url': 'https://www.youtube.com/watch?v=MP1aH4hgG70&t=339s',
+                          'relevance': 'Primary practitioner testimony on transfer mechanics, the '
+                                       'no-confirmation mobile trap, and barcodes staying valid for '
+                                       'postponed events.'},
+                         {'title': 'thumbsuprun — TICKETMASTER REFUND POLICY UPDATE FOR CANCELLED AND '
+                                   'POSTPONED EVENTS | TICKET REFUND PLAN [00:05:01]',
+                          'url': 'https://www.youtube.com/watch?v=s9mNdqH694I&t=301s',
+                          'relevance': 'Primary practitioner testimony on the 60-day postponement rule, '
+                                       '30-day refund processing, and the 150 percent credit option.'},
+                         {'title': 'WCPO 9 — Struggle for concert ticket refunds [00:01:24]',
+                          'url': 'https://www.youtube.com/watch?v=VBj60jqiycw&t=84s',
+                          'relevance': 'Primary practitioner testimony on direct Ticketmaster refunds '
+                                       'versus StubHub and Vivid Seats refusing cash on postponed '
+                                       'concerts.'},
+                         {'title': 'Nexustech — How To Transfer Ticketmaster Tickets from Apple Wallet to '
+                                   'Someone Else [2026 GUIDE] [00:00:21]',
+                          'url': 'https://www.youtube.com/watch?v=lBLVmAx5wkQ&t=21s',
+                          'relevance': 'Primary practitioner testimony on Apple Wallet holding only a copy '
+                                       'and dynamic barcodes defeating screenshots.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': '7KU-5HUqmzA',
+                       'title': 'Ticketmaster vs StubHub vs SeatGeek (2025) – What Ticket Seller Do We '
+                                'Need in 2026?',
+                       'channel': 'GigaBits',
+                       'author': 'GigaBits',
+                       'text': 'Ticket Master is the most reliable for official mobile entry, and on '
+                               'refunds and customer support Ticket Master is strict and slow.',
+                       'tip': 'Ticket Master is the most reliable for official mobile entry, and on '
+                              'refunds and customer support Ticket Master is strict and slow.',
+                       'timestamp': 178,
+                       'timestamp_seconds': 178,
+                       'timestamp_label': '[00:02:58]',
+                       'url': 'https://www.youtube.com/watch?v=7KU-5HUqmzA&t=178s',
+                       'markdown': '[00:02:58](https://www.youtube.com/watch?v=7KU-5HUqmzA&t=178s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'sIgspwKXj_0',
+                       'title': 'THE 5 THINGS ANY TICKET RESALE WEBSITE NEEDS TO HAVE | ARE THEY LEGIT?',
+                       'channel': 'thumbsuprun',
+                       'author': 'thumbsuprun',
+                       'text': 'If they do not get you in, they will either make sure they get replacement '
+                               'tickets to get you into that event regardless or they will give you a 100% '
+                               'money-back guarantee on your tickets.',
+                       'tip': 'If they do not get you in, they will either make sure they get replacement '
+                              'tickets to get you into that event regardless or they will give you a 100% '
+                              'money-back guarantee on your tickets.',
+                       'timestamp': 92,
+                       'timestamp_seconds': 92,
+                       'timestamp_label': '[00:01:32]',
+                       'url': 'https://www.youtube.com/watch?v=sIgspwKXj_0&t=92s',
+                       'markdown': '[00:01:32](https://www.youtube.com/watch?v=sIgspwKXj_0&t=92s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'IENQeieAOCo',
+                       'title': 'TicketMaster SafeTix Transfer Tickets | How To Demo',
+                       'channel': 'Poolarity - Life Hacks',
+                       'author': 'Poolarity - Life Hacks',
+                       'text': "I'm preferring the website over the app because the website actually "
+                               'allows me to do multi select so I could transfer multiple tickets to one '
+                               'email versus one by one in the app.',
+                       'tip': "I'm preferring the website over the app because the website actually allows "
+                              'me to do multi select so I could transfer multiple tickets to one email '
+                              'versus one by one in the app.',
+                       'timestamp': 0,
+                       'timestamp_seconds': 0,
+                       'timestamp_label': '[00:00:00]',
+                       'url': 'https://www.youtube.com/watch?v=IENQeieAOCo&t=0s',
+                       'markdown': '[00:00:00](https://www.youtube.com/watch?v=IENQeieAOCo&t=0s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'EwQdnuSrWAo',
+                       'title': '¿Cómo usar SafeTix de Ticketmaster? Tutorial paso a paso',
+                       'channel': 'Paso a paso',
+                       'author': 'Paso a paso',
+                       'text': 'It features a dynamic code that changes every 15 seconds.',
+                       'tip': 'It features a dynamic code that changes every 15 seconds.',
+                       'timestamp': 18,
+                       'timestamp_seconds': 18,
+                       'timestamp_label': '[00:00:18]',
+                       'url': 'https://www.youtube.com/watch?v=EwQdnuSrWAo&t=18s',
+                       'markdown': '[00:00:18](https://www.youtube.com/watch?v=EwQdnuSrWAo&t=18s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'EwQdnuSrWAo',
+                       'title': '¿Cómo usar SafeTix de Ticketmaster? Tutorial paso a paso',
+                       'channel': 'Paso a paso',
+                       'author': 'Paso a paso',
+                       'text': 'Present the dynamic barcode of your digital ticket in its original size. '
+                               'Do not make it larger or smaller.',
+                       'tip': 'Present the dynamic barcode of your digital ticket in its original size. Do '
+                              'not make it larger or smaller.',
+                       'timestamp': 75,
+                       'timestamp_seconds': 75,
+                       'timestamp_label': '[00:01:15]',
+                       'url': 'https://www.youtube.com/watch?v=EwQdnuSrWAo&t=75s',
+                       'markdown': '[00:01:15](https://www.youtube.com/watch?v=EwQdnuSrWAo&t=75s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'lBLVmAx5wkQ',
+                       'title': 'How To Transfer Ticketmaster Tickets from Apple Wallet to Someone Else '
+                                '[2026 GUIDE]',
+                       'channel': 'Nexustech',
+                       'author': 'Nexustech',
+                       'text': 'You cannot transfer a ticket from Apple Wallet directly. Apple Wallet only '
+                               'stores a copy of the ticket.',
+                       'tip': 'You cannot transfer a ticket from Apple Wallet directly. Apple Wallet only '
+                              'stores a copy of the ticket.',
+                       'timestamp': 21,
+                       'timestamp_seconds': 21,
+                       'timestamp_label': '[00:00:21]',
+                       'url': 'https://www.youtube.com/watch?v=lBLVmAx5wkQ&t=21s',
+                       'markdown': '[00:00:21](https://www.youtube.com/watch?v=lBLVmAx5wkQ&t=21s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '8yXxF_U1uek',
+                       'title': 'How to Transfer Ticketmaster Tickets from Apple Wallet – Step By Step '
+                                'Guide',
+                       'channel': 'Gadget Tune',
+                       'author': 'Gadget Tune',
+                       'text': 'Many events now have specific transfer deadlines, typically 72 hours '
+                               'before the event starts.',
+                       'tip': 'Many events now have specific transfer deadlines, typically 72 hours before '
+                              'the event starts.',
+                       'timestamp': 73,
+                       'timestamp_seconds': 73,
+                       'timestamp_label': '[00:01:13]',
+                       'url': 'https://www.youtube.com/watch?v=8yXxF_U1uek&t=73s',
+                       'markdown': '[00:01:13](https://www.youtube.com/watch?v=8yXxF_U1uek&t=73s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'hNlTOy1daSA',
+                       'title': 'How To Fix Ticketmaster Barcode Not Showing In Wallet (Easy Solutions To '
+                                'Troubleshoot The Issue)',
+                       'channel': 'Helpful Solutions',
+                       'author': 'Helpful Solutions',
+                       'text': 'The barcodes are typically made available 24 to 48 hours before the event '
+                               'to prevent ticket fraud.',
+                       'tip': 'The barcodes are typically made available 24 to 48 hours before the event '
+                              'to prevent ticket fraud.',
+                       'timestamp': 19,
+                       'timestamp_seconds': 19,
+                       'timestamp_label': '[00:00:19]',
+                       'url': 'https://www.youtube.com/watch?v=hNlTOy1daSA&t=19s',
+                       'markdown': '[00:00:19](https://www.youtube.com/watch?v=hNlTOy1daSA&t=19s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Wqb02oxLDJ0',
+                       'title': 'How to Fix Unable to Add Pass to Apple Wallet from Ticketmaster – iPhone '
+                                'Setup & Fix Guide',
+                       'channel': 'Patchwave Tutorials',
+                       'author': 'Patchwave Tutorials',
+                       'text': 'Disable any active VPN or Apple private relay in your iCloud settings as '
+                               'security proxies frequently block Apple Wallet API handshakes.',
+                       'tip': 'Disable any active VPN or Apple private relay in your iCloud settings as '
+                              'security proxies frequently block Apple Wallet API handshakes.',
+                       'timestamp': 43,
+                       'timestamp_seconds': 43,
+                       'timestamp_label': '[00:00:43]',
+                       'url': 'https://www.youtube.com/watch?v=Wqb02oxLDJ0&t=43s',
+                       'markdown': '[00:00:43](https://www.youtube.com/watch?v=Wqb02oxLDJ0&t=43s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'f7BuIdB0-6I',
+                       'title': 'How to Transfer Tickets on Ticketmaster [2026] UPDATED',
+                       'channel': 'Fixed Formulas',
+                       'author': 'Fixed Formulas',
+                       'text': 'After clicking on the transfer option, you will have to first of all '
+                               'authenticate your account, so on your registered email address and your '
+                               'phone number they are going to send an OTP.',
+                       'tip': 'After clicking on the transfer option, you will have to first of all '
+                              'authenticate your account, so on your registered email address and your '
+                              'phone number they are going to send an OTP.',
+                       'timestamp': 69,
+                       'timestamp_seconds': 69,
+                       'timestamp_label': '[00:01:09]',
+                       'url': 'https://www.youtube.com/watch?v=f7BuIdB0-6I&t=69s',
+                       'markdown': '[00:01:09](https://www.youtube.com/watch?v=f7BuIdB0-6I&t=69s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'kC2NXuA1XV4',
+                       'title': 'How to Transfer Tickets on Ticketmaster (What is a Ticket Transfer?)',
+                       'channel': 'The Savvy Professor',
+                       'author': 'The Savvy Professor',
+                       'text': "Once you've viewed that the details of the ticket are accurate click on "
+                               "transfer, however if the transfer button is gray you can't transfer them.",
+                       'tip': "Once you've viewed that the details of the ticket are accurate click on "
+                              "transfer, however if the transfer button is gray you can't transfer them.",
+                       'timestamp': 81,
+                       'timestamp_seconds': 81,
+                       'timestamp_label': '[00:01:21]',
+                       'url': 'https://www.youtube.com/watch?v=kC2NXuA1XV4&t=81s',
+                       'markdown': '[00:01:21](https://www.youtube.com/watch?v=kC2NXuA1XV4&t=81s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'zH4ITvC9voc',
+                       'title': 'How to Save Ticketmaster Tickets to Apple Wallet (How Do I Add Tickets to '
+                                'a Digital Wallet?)',
+                       'channel': 'The Savvy Professor',
+                       'author': 'The Savvy Professor',
+                       'text': "You bought your ticket from someone else and they didn't transfer it "
+                               'properly, or you selected will call or print at home during checkout.',
+                       'tip': "You bought your ticket from someone else and they didn't transfer it "
+                              'properly, or you selected will call or print at home during checkout.',
+                       'timestamp': 122,
+                       'timestamp_seconds': 122,
+                       'timestamp_label': '[00:02:02]',
+                       'url': 'https://www.youtube.com/watch?v=zH4ITvC9voc&t=122s',
+                       'markdown': '[00:02:02](https://www.youtube.com/watch?v=zH4ITvC9voc&t=122s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Mkuhus1taO4',
+                       'title': 'How To Use Digital Tickets On Ticketmaster',
+                       'channel': 'Guide Nation',
+                       'author': 'Guide Nation',
+                       'text': "You can either click on view ticket and then here you'll see a digital "
+                               'version of your ticket, so at the gate the scanner person can actually '
+                               'scan this barcode so that you can be allowed into the event.',
+                       'tip': "You can either click on view ticket and then here you'll see a digital "
+                              'version of your ticket, so at the gate the scanner person can actually scan '
+                              'this barcode so that you can be allowed into the event.',
+                       'timestamp': 36,
+                       'timestamp_seconds': 36,
+                       'timestamp_label': '[00:00:36]',
+                       'url': 'https://www.youtube.com/watch?v=Mkuhus1taO4&t=36s',
+                       'markdown': '[00:00:36](https://www.youtube.com/watch?v=Mkuhus1taO4&t=36s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'MP1aH4hgG70',
+                       'title': 'HOW TO TRANSFER TICKETS ON TICKETMASTER TO ANOTHER PHONE | TICKET TIP '
+                                'THURSDAY',
+                       'channel': 'thumbsuprun',
+                       'author': 'thumbsuprun',
+                       'text': 'Any tickets you bought where an event has been postponed and rescheduled '
+                               "to a new date, even if the date hasn't yet been set, the old barcodes will "
+                               'always work for the new event.',
+                       'tip': 'Any tickets you bought where an event has been postponed and rescheduled to '
+                              "a new date, even if the date hasn't yet been set, the old barcodes will "
+                              'always work for the new event.',
+                       'timestamp': 339,
+                       'timestamp_seconds': 339,
+                       'timestamp_label': '[00:05:39]',
+                       'url': 'https://www.youtube.com/watch?v=MP1aH4hgG70&t=339s',
+                       'markdown': '[00:05:39](https://www.youtube.com/watch?v=MP1aH4hgG70&t=339s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 's9mNdqH694I',
+                       'title': 'TICKETMASTER REFUND POLICY UPDATE FOR CANCELLED AND POSTPONED EVENTS | '
+                                'TICKET REFUND PLAN',
+                       'channel': 'thumbsuprun',
+                       'author': 'thumbsuprun',
+                       'text': 'You can go ahead and get up to a hundred and fifty percent concert cash '
+                               'credit back on your account.',
+                       'tip': 'You can go ahead and get up to a hundred and fifty percent concert cash '
+                              'credit back on your account.',
+                       'timestamp': 189,
+                       'timestamp_seconds': 189,
+                       'timestamp_label': '[00:03:09]',
+                       'url': 'https://www.youtube.com/watch?v=s9mNdqH694I&t=189s',
+                       'markdown': '[00:03:09](https://www.youtube.com/watch?v=s9mNdqH694I&t=189s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 's9mNdqH694I',
+                       'title': 'TICKETMASTER REFUND POLICY UPDATE FOR CANCELLED AND POSTPONED EVENTS | '
+                                'TICKET REFUND PLAN',
+                       'channel': 'thumbsuprun',
+                       'author': 'thumbsuprun',
+                       'text': 'Any postponed events that do not have a rescheduled date set within 60 '
+                               'days of when it was postponed, these will also now qualify for a refund.',
+                       'tip': 'Any postponed events that do not have a rescheduled date set within 60 days '
+                              'of when it was postponed, these will also now qualify for a refund.',
+                       'timestamp': 301,
+                       'timestamp_seconds': 301,
+                       'timestamp_label': '[00:05:01]',
+                       'url': 'https://www.youtube.com/watch?v=s9mNdqH694I&t=301s',
+                       'markdown': '[00:05:01](https://www.youtube.com/watch?v=s9mNdqH694I&t=301s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'VBj60jqiycw',
+                       'title': 'Struggle for concert ticket refunds',
+                       'channel': 'WCPO 9',
+                       'author': 'WCPO 9',
+                       'text': 'If you purchase directly from Ticketmaster, after outrage from fans and '
+                               'lawmakers Ticketmaster is now offering refunds for both cancelled and '
+                               'postponed shows.',
+                       'tip': 'If you purchase directly from Ticketmaster, after outrage from fans and '
+                              'lawmakers Ticketmaster is now offering refunds for both cancelled and '
+                              'postponed shows.',
+                       'timestamp': 84,
+                       'timestamp_seconds': 84,
+                       'timestamp_label': '[00:01:24]',
+                       'url': 'https://www.youtube.com/watch?v=VBj60jqiycw&t=84s',
+                       'markdown': '[00:01:24](https://www.youtube.com/watch?v=VBj60jqiycw&t=84s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'YksJO2KDmnk',
+                       'title': 'Wednesday Town Hall: Can you get a refund on canceled or postponed '
+                                'concert tickets?',
+                       'channel': 'WGRZ-TV',
+                       'author': 'WGRZ-TV',
+                       'text': 'Tate was able to get his 1577 dollars back, and the best advice is send '
+                               'strongly worded emails, be loud about it and demand that refund.',
+                       'tip': 'Tate was able to get his 1577 dollars back, and the best advice is send '
+                              'strongly worded emails, be loud about it and demand that refund.',
+                       'timestamp': 136,
+                       'timestamp_seconds': 136,
+                       'timestamp_label': '[00:02:16]',
+                       'url': 'https://www.youtube.com/watch?v=YksJO2KDmnk&t=136s',
+                       'markdown': '[00:02:16](https://www.youtube.com/watch?v=YksJO2KDmnk&t=136s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'}]}

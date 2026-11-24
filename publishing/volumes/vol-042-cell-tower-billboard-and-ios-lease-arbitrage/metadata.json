@@ -9,49 +9,49 @@
       "ARBITRAGE"
     ],
     "deck": [
-      "VERIFY SITE RIGHTS. CLEAR THE PERMITS.",
-      "UNDERWRITE LONG-TERM LEASE SPREADS."
+      "CELL LEASE BUYOUT MULTIPLES, ROFR PENALTIES AND CARRIER RISK, TESTED SITE BY SITE",
+      "BILLBOARD COMPANIES, IOS AND TRUCK PARKING YARDS, AND GROUND RENT BUILT FROM THE DIRT"
     ],
-    "lead": "Rooftop and Tower Easement Buyouts, Highway Digital-Billboard Permitting & Industrial Outdoor Storage Master-Lease Operations",
-    "summary": "Screen site demand, title, zoning, and assignment rights before committing to tower easements, digital-sign locations, or IOS master leases. Underwrite tenant credit, permit conditions, environmental exposure, and restoration obligations against realistic rent spreads and buyout terms.",
+    "lead": "Practitioners show how a cell site rent stream that typically sells for 16 to 17.5 times annual rent can swing by hundreds of thousands of dollars on right of first refusal, escalator, easement and carrier fine print.",
+    "summary": "All 12 chapters synthesize 192 verbatim YouTube practitioner testimonies on cell tower leases, billboards and industrial outdoor storage. Every claim, metric and quote carries timestamped inline attribution to the practitioner channel and video it came from.",
     "chapters": [
-      "Tower easements, billboard sites & IOS lease models",
-      "Landowners, carriers, sign operators & storage tenants",
-      "Rent spreads, escalators & easement buyout valuation",
-      "Site diligence costs, deposits & working-capital reserves",
-      "Permit denials, tenant exits & environmental liability traps",
-      "Rooftop portfolios, highway corridors & IOS demand sourcing",
-      "Perpetual easement scope, title & lender consent",
-      "Digital-sign permits, spacing & illumination restrictions",
-      "IOS zoning, drainage, access & master-lease permissions",
-      "Assignment clauses, subleases & restoration obligations",
-      "Site-management pods & tenant concentration limits",
-      "First 30-day site-underwriting launch sprint"
+      "Cell Tower Lease Buyouts: What They Are and What They're Worth",
+      "Perpetual Easements, ROFR and Cell Lease Fine Print",
+      "Negotiating the Cell Tower Lease",
+      "Renting the Dirt: Ground Rent from Cell Sites, Billboards and Yards",
+      "The Economics of Owning a Cell Tower",
+      "The Billboard Moat: Regulation, Permits and Who Owns What",
+      "Starting and Building a Billboard Company",
+      "Billboard Unit Economics: The Full Accounting",
+      "Selling the Face: Billboard Ad Sales and New Formats",
+      "Industrial Outdoor Storage: The Asset Class and the Market",
+      "Building and Running IOS and Truck Parking Yards",
+      "Under the Lease: Cell Site Technology and Battery Storage Sites"
     ],
     "flow": [
       [
-        "SOURCE",
-        "Match rooftops, sign corridors & IOS parcels to demand"
+        "IDENTIFY TENANTS",
+        "Name every carrier on the site from meter labels, equipment cabinets and building permits, flag Dish exposure, and walk away from single-tenant sites."
       ],
       [
-        "SCREEN",
-        "Review title, zoning, access & environmental risks"
+        "READ THE FINE PRINT",
+        "Check the lease for right of first refusal, confidentiality, consent-to-assign, defined premises and owner relocation rights before soliciting any offer."
       ],
       [
-        "UNDERWRITE",
-        "Model tenant credit, rent spreads & buyout terms"
+        "VERIFY TITLE",
+        "Pull title and confirm rent is still flowing, because even a paid attorney-title review can miss a previously sold easement."
       ],
       [
-        "PERMIT",
-        "Secure required approvals before binding commitments"
+        "MODEL THE RISK",
+        "Price the stream as a multiple of annual rent, compare buyer discount rates of 8 to 12% against owner-side 4 to 6%, and stress-test rent stopping in year five to eight."
       ],
       [
-        "CONTRACT",
-        "Document easements, assignments & sublease rights"
+        "SHOP COMPETITIVELY",
+        "Demand written letters of intent and sample easement documents from every buyer, since a handful of money sources sit behind roughly 20 buyout brands and clawbacks surface only on paper."
       ],
       [
-        "MANAGE",
-        "Reconcile rents, compliance & restoration reserves"
+        "NEGOTIATE AND CLOSE",
+        "Push for revenue share, escalators of at least 3% and ROFR removal, keep renewals short, and split the lump sum across December and January to spread the tax."
       ]
     ]
   },
@@ -59,10 +59,10 @@
   "book_series": "THE BIG MONEY PLAYBOOKS",
   "tagline": "Big Money. Small Teams. No Bullshit.",
   "title": "CELL-TOWER, DIGITAL-BILLBOARD & IOS LEASE ARBITRAGE",
-  "subtitle": "The Complete Playbook for Cell-Tower, Digital-Billboard & IOS Lease Arbitrage: $120,000–$950,000 USD in Annual Operator Revenue, Starting with a 1 FT + 3 C Pod (4 People); Six People at Scale",
+  "subtitle": "Sell the rent stream at 16 to 19 times or strike the ROFR and make buyers bid, buy the billboard permit instead of the steel and underwrite at 85% fill, and lease gravel yards, truck stalls and substation-adjacent acres on day-one yield",
   "chapter_count": 12,
-  "total_word_count": 80222,
-  "expert_youtube_link_count": 180,
+  "total_word_count": 73569,
+  "expert_youtube_link_count": 209,
   "min_expert_youtube_links_required": 150,
   "target_expert_youtube_links": "150-200+",
   "min_expert_youtube_links_per_chapter": 12,
@@ -77,5 +77,5 @@
   "publication_status": "approved_master",
   "public_deploy_approved": false,
   "paid_sales_approved": false,
-  "updated_at": "2026-11-23T22:48:03Z"
+  "updated_at": "2026-11-24T23:55:17Z"
 }

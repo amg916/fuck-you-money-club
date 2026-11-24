@@ -9,49 +9,49 @@
       "ARBITRAGE"
     ],
     "deck": [
-      "FULFILL CONFIRMED WHOLESALE BUYING-GROUP ORDERS",
-      "STACK ELIGIBLE COMMERCIAL CARD & PORTAL REBATES"
+      "BUY HOUSEHOLD-CAPPED RETAIL UNITS ON REWARDS CARDS, SHIP TO GROUP WAREHOUSES, AND HARVEST POINTS, MINIMUM SPEND AND STATUS ON NEAR-BREAK-EVEN 2-5% SPREADS",
+      "LOCK A BUYER, EXIT OR REPAYMENT PLAN BEFORE THE SWIPE, STACK 0% INTRO CARDS, AND NEVER FLOAT MORE THAN THE CASH IN YOUR BANK ACCOUNT"
     ],
-    "lead": "Turn documented tax-exempt wholesale buying-group commitments into margin through eligible uncapped 2%–4% commercial-card and shopping-portal rebates, targeting up to 55 days of treasury float under qualifying terms.",
-    "summary": "Validate BuyForMeRetail/Pointsmaker commitments and current warehouse instructions before routing purchases to DE/NH/OR addresses, confirming applicable sales-tax treatment and Rakuten/TopCashback eligibility before counting stacked rebates. Use Plastiq/Melio only for permitted B2B payments where card acceptance, fees and issuer terms support the float, then optimize bank/T-bill sweep velocity around cleared proceeds, bonus requirements and payment deadlines.",
+    "lead": "Practitioners run buying groups, gift card resale and the interest-free card float as a points engine: they buy capped items on their own cards for thin 2-5% spreads, line up a buyer at an agreed rate before every swipe, and never float more than their bank balance.",
+    "summary": "All 12 chapters synthesize 192 verbatim YouTube practitioner testimonies, and every claim carries timestamped inline attribution to its creator and video. Coverage runs from buying-group mechanics, gift card liquidation and float economics through approvals, account shutdowns, issuer card stacks, portal stacking and premium fee math.",
     "chapters": [
-      "Q1 — Buying-Group Arbitrage: The Profit Engine",
-      "Q2 — Buyer Demand, Commitments & Counterparty Quality",
-      "Q3 — Net Spread After Fees, Freight & Reversals",
-      "Q4 — Commercial Cards, Limits & Statement Timing",
-      "Q5 — Tax Documentation & DE/NH/OR Routing",
-      "Q6 — BuyForMeRetail/Pointsmaker Commitment Execution",
-      "Q7 — Rakuten/TopCashback Eligibility & Rebate Stacking",
-      "Q8 — Warehouse Receipt, Acceptance & Settlement",
-      "Q9 — Plastiq/Melio B2B Float Economics",
-      "Q10 — Bank Bonuses, T-Bill Sweeps & Cash Velocity",
-      "Q11 — Scaling Volume Without Breaking Liquidity",
-      "Q12 — Reconciliation, Clawbacks & Treasury Exit Rules"
+      "Buying Groups: Mechanics, Platforms & Order Survival",
+      "Gift Card Resale, Manufactured Spend & Credit-to-Cash Liquidation",
+      "The Float: Bank Economics, Interest-Free Leverage & Business Credit Structure",
+      "Approvals, Limit Increases & Credit Cycling",
+      "Amex Financial Reviews & Account Shutdowns",
+      "Capital One Spark & Venture X Business",
+      "Net-60 Float & High-Spend Charge Cards",
+      "The Chase Ink Stack",
+      "Amex Business Gold: Bonus & 4x Engine",
+      "Rakuten & Portal Stacking",
+      "Capital One Shopping, Transfer Bonuses & Point Currencies",
+      "Wallet Strategy & Premium Fee Math"
     ],
     "flow": [
       [
-        "VERIFY",
-        "Confirm buyer reliability, written commitments, permitted sourcing, warehouse instructions and applicable tax documentation."
+        "SEASON",
+        "Season bank relationships for 30 to 60 days, space 0% intro cards six months apart, and target long 0% windows before scaling spend"
       ],
       [
-        "UNDERWRITE",
-        "Calculate net margin after fulfillment costs, payment fees and financing costs; treat unconfirmed rebates and bonuses as contingent."
+        "RESERVE",
+        "Commit to the deal before researching it, since reservations hold only 12 to 24 hours, then match the exact SKU and log every order in a spreadsheet"
       ],
       [
-        "PURCHASE",
-        "Activate an eligible portal offer, retain tracking evidence and pay with a qualifying commercial card within approved limits."
+        "CHECKOUT",
+        "Keep orders between $500 and $1,000, split carts, pay through PayPal, Apple Pay or Shop Pay, and rotate backup addresses and names"
       ],
       [
-        "FULFILL",
-        "Route committed goods to the approved warehouse, meet delivery deadlines and document receipt, acceptance and payout eligibility."
+        "SHIP",
+        "Ship only to addresses the group posts, ignore Discord DMs from 'admins', and never resubmit failed orders or return unsold items"
       ],
       [
-        "MANAGE FLOAT",
-        "Match settlement dates to actual card due dates; use permitted Plastiq/Melio payments only when fees and terms preserve positive economics."
+        "LIQUIDATE",
+        "Confirm a buyer at an agreed rate before buying promo gift cards, send $100 through any new route first, and weigh 5-6% liquidator fees against 2-3% invoice routes"
       ],
       [
-        "SWEEP & RECONCILE",
-        "Reserve repayment cash, sweep only suitable surplus into banks or maturity-matched T-bills, and reconcile payouts, rebates, bonuses and reversals."
+        "REPAY",
+        "Collect the ACH reimbursement, clear charge cards every 30 days so interest never accrues, and report sales at or above the 1099-K total under the matching EIN"
       ]
     ]
   },
@@ -59,10 +59,10 @@
   "book_series": "THE BIG MONEY PLAYBOOKS",
   "tagline": "Big Money. Small Teams. No Bullshit.",
   "title": "BUYING GROUP, COMMERCIAL CARD-FLOAT & REBATE ARBITRAGE",
-  "subtitle": "The Complete Playbook for Buying Group, Commercial Card-Float & Rebate Arbitrage — $250,000–$1,800,000 USD Annual Gross Activity, Built from a 1 FT + 2 C (3 People) Pod",
+  "subtitle": "Buying-group spreads of 2-5 percent turned into points, $500-$1,000 orders that survive cancellation, liquidation fees of 5-6 percent netted against rewards, 0% intro stacks spaced six months apart, Plum 60-day float vs. the 1.5 percent early-pay discount, Spark and Ink flat-rate engines, Amex financial-review survival, and portal stacks that only pay when every statement is cleared in full",
   "chapter_count": 12,
-  "total_word_count": 82223,
-  "expert_youtube_link_count": 180,
+  "total_word_count": 73077,
+  "expert_youtube_link_count": 208,
   "min_expert_youtube_links_required": 150,
   "target_expert_youtube_links": "150-200+",
   "min_expert_youtube_links_per_chapter": 12,
@@ -77,5 +77,5 @@
   "publication_status": "approved_master",
   "public_deploy_approved": false,
   "paid_sales_approved": false,
-  "updated_at": "2026-11-23T22:48:03Z"
+  "updated_at": "2026-11-24T23:55:16Z"
 }

@@ -1,709 +1,790 @@
 from __future__ import annotations
 
-CHAPTER_5 = {
-    "id": "Q5",
-    "chapter_id": "Q5",
-    "chapter_number": 5,
-    "question_number": 5,
-    "slug": "beginner-traps-clawbacks-and-asymmetric-failure-modes",
-    "question_prompt": "What kills 80% of newcomers in inbound pay-per-call & rtb ping-post arbitrage, and what forensic metrics detect margin leaks, regulatory landmines, or platform bans before they wipe out capital?",
-    "kicker": "Q5 / THE BIG MONEY PLAYBOOKS",
-    "title": "Beginner Traps, Clawbacks & Asymmetric Failure Modes",
-    "subtitle": "Ringba and Retreaver Settlement Forensics, TCPA Consent Boundaries, CMS TPMO Controls, and Legitimate GBP Supply",
-    "layout_template": "expert_insights",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #39, ranked #01 of 42 with a 95/100 Money-to-Manpower Score, "
-        "wins through collectible call spreads rather than impressive routing dashboards. "
-        "Across its 14 mapped plays, the recurring failure is buying traffic before proving "
-        "buyer acceptance, lawful acquisition, and cash settlement. This chapter dissects "
-        "duration scrubs, duplicate auctions, CPC shocks, consent defects, Medicare transfers, "
-        "legal referrals, and fabricated location networks. Canonical annual owner profits "
-        "are $30,000 Conservative, $199,750 Base, and $480,000 Scaled; gross settlements "
-        "are not retained operator revenue. The local-map play receives explicit unit "
-        "economics and a real-premises fallback. Treat the question's 80% as a rhetorical "
-        "risk framing, not a measured failure rate. Operate with evidence-linked reserves, "
-        "source-level limits, and tested circuit-breakers."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$200,000",
-            "context": "Annual gross billable call settlements; $110,000 retained at 55%.",
-            "note": "15% gross-basis net margin; 27.27% retained margin; $30,000 annual owner profit; 1 FT + 2 C.",
-        },
-        {
-            "label": "Base",
-            "value": "$850,000",
-            "context": "Annual gross billable call settlements; $467,500 retained at 55%.",
-            "note": "23.5% gross-basis net margin; 42.73% retained margin; $199,750 annual owner profit; 1 FT + 2 C.",
-        },
-        {
-            "label": "Scaled",
-            "value": "$1,500,000",
-            "context": "Annual gross billable call settlements; $825,000 retained at 55%.",
-            "note": "32% gross-basis net margin; 58.18% retained margin; $480,000 annual owner profit; 2 FT + 3 C.",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Reconcile collectible revenue before increasing traffic",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "The first fatal trap is treating a Ringba conversion as cash. A ping "
-                    "response is a conditional bid, a connected call is a delivery event, "
-                    "and a buyer-approved invoice is still a receivable. Maintain separate "
-                    "timestamps and amounts for bid, post, connection, qualification, acceptance, "
-                    "invoice, cash receipt, and reversal. Store the buyer's qualification "
-                    "version alongside each call; otherwise a changed duration rule silently "
-                    "rewrites yesterday's economics. The canonical Conservative case starts "
-                    "with $200,000 gross settlements, subtracts $90,000 publisher and click-to-call "
-                    "acquisition costs, retains $110,000, and subtracts $80,000 remaining costs "
-                    "to produce $30,000 owner profit. Base uses $850,000 minus $382,500, then "
-                    "minus $267,750, producing $199,750. Scaled uses $1,500,000 minus $675,000, "
-                    "then minus $345,000, producing $480,000. Those remaining costs include "
-                    "labor and operating burdens beyond the acquisition pool; monthly opex "
-                    "guidance is not a replacement for this annual bridge. The corresponding "
-                    "retained margins are 27.27%, 42.73%, and 58.18%. Use the supplied 55% "
-                    "ASC 606 net-contribution presentation for this scorecard, while documenting "
-                    "the actual principal-versus-agent conclusion separately. Neither a client's "
-                    "service invoice nor an insurance premium belongs in exchange revenue. "
-                    "An apparent improvement caused by moving acquisition costs below the "
-                    "spread line is presentation drift, not operating progress."
-                ),
-                (
-                    "The second trap is underwriting duration while ignoring acceptance "
-                    "probability. Suppose 100 acquired calls cost $3,600, 70 reach the contractual "
-                    "buyer-connected threshold, and the buyer pays $80 per accepted call. "
-                    "Nominal settlements equal $5,600. If ten qualifying calls are rejected "
-                    "for documented duplicates or service-area defects, collectible settlements "
-                    "fall to $4,800. Add $180 telephony and $120 tracking allocation, and "
-                    "contribution becomes $900 before remaining overhead. That illustrative "
-                    "cohort does not replace the canonical annual scenarios. Calculate "
-                    "break-even accepted calls as $3,900 divided by $80, rounded upward "
-                    "to 49; a dashboard showing 70 duration conversions conceals the true "
-                    "cushion. Hidden charges include both telephone legs, forwarded minutes, "
-                    "recording storage, number rental, unsuccessful transfer attempts, premium "
-                    "routing features, and disputed-call review labor. Require itemized vendor "
-                    "exports rather than applying one guessed cost per connection. For each "
-                    "source, compare matured collectible contribution with its acquisition "
-                    "invoice using the same service dates. A favorable current-week return "
-                    "can merely reflect buyer scrubs arriving next week. Freeze source "
-                    "expansion when mature acceptance falls five percentage points below "
-                    "its trailing baseline or contribution turns negative across two "
-                    "consecutive reconciled cohorts. Investigate before buying a larger "
-                    "sample with unrestricted cash."
-                ),
-                (
-                    "The third trap is funding publishers faster than buyers fund you. "
-                    "Net-7 wording is useful only after money clears; a signed insertion "
-                    "order does not establish collectability. An illustrative source spending "
-                    "$300 daily consumes $2,100 before seven days of buyer receipts, while "
-                    "a fourteen-day payment slip requires another $4,200. Size operating "
-                    "cash against the longest credible delay, contractual reversal window, "
-                    "and disputed balance, not just this week's invoices. Keep an explicit "
-                    "reserve ledger with buyer, cohort, reason, expected release date, and "
-                    "supporting evidence. A temporary 15% reserve on $10,000 of provisional "
-                    "settlements withholds $1,500 of distributable cash; it is not automatically "
-                    "an expense or an additional haircut to canonical profits. Recognize "
-                    "actual adjustments consistently and avoid counting the same reversal "
-                    "twice. Contractually bound eligible rejection reasons, dispute deadlines, "
-                    "evidence delivery, payment timing, and any offset rights before traffic "
-                    "starts. A buyer seeking unlimited retroactive discretion is selling "
-                    "you an unsecured option on your cash. Initially cap any unproven "
-                    "buyer at an illustrative $2,000 unsettled exposure, and stop additional "
-                    "delivery after a missed contractual payment date until treasury reviews "
-                    "the exception. Verify bank-detail changes independently using established "
-                    "contacts; settlement fraud can erase an otherwise profitable month."
-                ),
-            ],
-            "table": {
-                "caption": "Settlement Leakage Matrix with Illustrative Starting Circuit-Breakers",
-                "headers": [
-                    "Failure mechanism and economic exposure",
-                    "Evidence captured for every affected cohort",
-                    "Initial warning threshold requiring operator attention",
-                    "Containment action before additional cash leaves",
-                ],
-                "rows": [
-                    [
-                        "Provisional routing conversions masquerade as collectible buyer settlements.",
-                        "Join call identifiers to acceptance files and cleared receipts.",
-                        "Unmatched accepted value exceeds two percent of matured settlements.",
-                        "Suspend expansion and reconcile every unmatched buyer line.",
-                    ],
-                    [
-                        "Publisher invoices include calls rejected under contracted duplicate rules.",
-                        "Retain keyed caller tokens and buyer duplicate-window definitions.",
-                        "Duplicate rejection exceeds five percent across fifty matured calls.",
-                        "Cap that source and challenge unsupported duplicate assertions.",
-                    ],
-                    [
-                        "Telephone legs and unsuccessful transfers consume unpriced routing expense.",
-                        "Export carrier leg minutes with linked routing attempt identifiers.",
-                        "Actual telephony cost exceeds modeled cost by twenty percent.",
-                        "Remove redundant hops and update acquisition bid ceilings.",
-                    ],
-                    [
-                        "Retroactive buyer scrubs reverse previously distributed operator cash.",
-                        "Preserve dated acceptance versions and written reversal evidence.",
-                        "Any reversal arrives outside the agreed dispute window.",
-                        "Dispute promptly and retain the contested cash reserve.",
-                    ],
-                    [
-                        "Publisher prepayment outpaces cleared buyer settlement collections materially.",
-                        "Track daily source payments against actual buyer receipt dates.",
-                        "Unproven buyer exposure reaches the initial two-thousand-dollar ceiling.",
-                        "Pause incremental delivery until receipts restore exposure headroom.",
-                    ],
-                    [
-                        "Buyer payment instructions change through compromised email conversations.",
-                        "Record independent callback verification using previously established contacts.",
-                        "Any beneficiary change lacks independent treasury verification evidence.",
-                        "Hold the transfer without changing existing beneficiary records.",
-                    ],
-                    [
-                        "Acquisition costs disappear through inconsistent gross-versus-retained revenue presentation.",
-                        "Maintain the canonical annual bridge and account mapping.",
-                        "Any acquisition dollar appears in two separate expense pools.",
-                        "Correct ledger mapping before distributing reported owner profit.",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Trade on mature cohorts, not attractive routing screenshots",
-                "body": "These controls keep buyer discretion and delayed defects from becoming invisible leverage.",
-                "items": [
-                    "Obtain buyer acceptance exports before negotiating higher publisher caps; compare at least fifty matured calls with their original qualification versions.",
-                    "Price each route using accepted revenue per acquired call after carrier-leg costs, rather than the highest displayed bid.",
-                    "Keep a reproducible dispute bundle containing call ID, event chronology, eligibility fields, contract version, and lawfully retained evidence.",
-                    "Negotiate a bounded rejection window and explicit offset rights; preserve a cash reserve until the relevant cohort clears that window.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Instrument the auction where duration, retries, and CPC destroy spread",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "The fourth trap is letting the auction optimize a misleading "
-                    "headline bid. A $100 buyer accepting 60% of delivered eligible "
-                    "calls yields $60 expected gross revenue per delivery, while an "
-                    "$85 buyer accepting 90% yields $76.50. Compare equivalent traffic "
-                    "and mature cohorts before attributing that difference to buyer "
-                    "quality. In Ringba or Retreaver, configure routing to respect "
-                    "geography, hours, service category, capacity, duplication limits, and "
-                    "the buyer's actual billable clock. A 90–120-second buffer describes "
-                    "a contract, not permission to keep callers trapped in an IVR. "
-                    "Measure time to buyer answer separately from time after buyer "
-                    "connection; hold music and exchange announcements may not qualify. "
-                    "An illustrative 110-second exchange recording with 35 seconds of "
-                    "pre-answer routing contains only 75 connected seconds, failing a "
-                    "90-second buyer rule. Keep the carrier answer event, bridge event, "
-                    "disconnect cause, and buyer receipt together. When duration-qualified "
-                    "calls systematically fail acceptance, inspect that clock boundary "
-                    "before blaming source quality. Never manufacture silence, loops, "
-                    "or coached conversations to stretch calls past the threshold. "
-                    "Those tactics convert a routing defect into deliberate billing "
-                    "abuse and give buyers a reason to terminate every related "
-                    "publisher relationship, not merely reject one call."
-                ),
-                (
-                    "The fifth trap is allowing retries to create multiple commitments "
-                    "for one human caller. Assign a stable internal call identifier "
-                    "and an idempotency key for each permitted post. A timed-out "
-                    "HTTP response does not prove the buyer rejected delivery; reconcile "
-                    "acknowledgment before sending another billable post. Respect bid "
-                    "expiration, reserve capacity only as the contract allows, and "
-                    "prevent stale responses from winning after the caller disconnects. "
-                    "Track ping latency, post acknowledgment latency, abandoned calls, "
-                    "buyer answer delay, and multiple winning commitments independently. "
-                    "Start with an illustrative 800-millisecond routing budget where "
-                    "contracts and observed infrastructure support it, rather than "
-                    "asserting a universal vendor service level. Alert when the "
-                    "95th-percentile ping latency exceeds the configured route budget "
-                    "for five minutes; open the circuit after repeated transport "
-                    "failures and use a contracted alternate with available capacity. "
-                    "If no eligible buyer remains, end or redirect the journey "
-                    "honestly instead of repeatedly auctioning an abandoned call. "
-                    "Authenticate incoming disposition callbacks, validate timestamps, "
-                    "and reject duplicate event identifiers. A forged paid-conversion "
-                    "callback can inflate ad bidding even if it never changes "
-                    "the accounting ledger. Keep qualification and collection events "
-                    "distinct in server-to-server postbacks so acquisition models "
-                    "cannot learn from reversals labeled as successful sales."
-                ),
-                (
-                    "The sixth trap is scaling paid search using a blended account "
-                    "average. At $12 CPC and a 25% click-to-call rate, acquisition "
-                    "cost is $48 per call. With 70% acceptance and an $80 payout, "
-                    "expected gross revenue is $56 per acquired call. After $3 "
-                    "variable telephony and tracking expense, only $5 remains before "
-                    "other costs. A CPC increase to $14 makes acquisition cost "
-                    "$56 and contribution negative $3. Under those assumptions, "
-                    "break-even CPC is 25% multiplied by $53, or $13.25. Build "
-                    "bid ceilings by keyword, device, hour, geography, and buyer "
-                    "availability; do not let profitable emergency plumbing subsidize "
-                    "unqualified insurance calls inside one blended conversion goal. "
-                    "Pause the illustrative cohort when CPC exceeds its ceiling "
-                    "or matured acceptance drops below its modeled requirement. "
-                    "The seventh trap is hiding weak quality with brand impersonation, "
-                    "cloaked pages, fabricated reviews, or replacement accounts after "
-                    "suspension. Preserve advertiser identity, destination consistency, "
-                    "and truthful service coverage. When an account is restricted, "
-                    "stop affected spend, retain the notice, correct the documented "
-                    "cause, and use the platform's appeal process. Account cycling "
-                    "does not restore trustworthy supply. Keep organic landing "
-                    "pages available as a legitimate acquisition alternative, "
-                    "but never treat them as a route around a buyer's "
-                    "source restrictions."
-                ),
-            ],
-            "table": {
-                "caption": "RTB Routing and Acquisition Diagnostics with Source-Level Stop Conditions",
-                "headers": [
-                    "Auction or acquisition trap requiring isolation",
-                    "Event evidence required for accurate diagnosis",
-                    "Illustrative warning condition for initial deployment",
-                    "Fallback preserving caller experience and economics",
-                ],
-                "rows": [
-                    [
-                        "Highest headline bid hides weak matured buyer acceptance.",
-                        "Compare eligible delivery counts with mature accepted settlement amounts.",
-                        "Expected accepted payout trails another eligible route materially.",
-                        "Route equivalent traffic toward stronger risk-adjusted collectible contribution.",
-                    ],
-                    [
-                        "Exchange duration incorrectly substitutes for buyer-connected billable duration.",
-                        "Capture carrier answer time and actual buyer bridge time.",
-                        "Clock discrepancies exceed five seconds across sampled disputed calls.",
-                        "Correct duration accounting and dispute only contract-supported qualifications.",
-                    ],
-                    [
-                        "Timeout retries produce duplicate winning posts for callers.",
-                        "Link each post acknowledgment to stable idempotency keys.",
-                        "Any caller receives multiple incompatible winning delivery commitments.",
-                        "Stop retries and reconcile the original buyer acknowledgment.",
-                    ],
-                    [
-                        "Stale bids remain eligible after buyer capacity disappears.",
-                        "Store bid expiry and capacity observations beside selection events.",
-                        "Any winning selection uses an already expired bid.",
-                        "Discard stale bids and select another eligible contracted route.",
-                    ],
-                    [
-                        "Callback forgery teaches acquisition systems that defects convert.",
-                        "Validate authenticated callbacks against original accepted event identifiers.",
-                        "Any conversion callback fails authentication or replay validation.",
-                        "Quarantine the event and suppress its advertising postback.",
-                    ],
-                    [
-                        "Search auction inflation eliminates thin accepted-call contribution immediately.",
-                        "Calculate keyword CPC against mature acceptance and call rates.",
-                        "Illustrative twelve-dollar CPC rises above thirteen dollars twenty-five cents.",
-                        "Reduce bids or pause the affected keyword cohort.",
-                    ],
-                    [
-                        "Deceptive identities and review manipulation trigger linked account restrictions.",
-                        "Archive advertiser identities and genuine customer review request workflows.",
-                        "Any listing or advertisement misrepresents the actual service provider.",
-                        "Remove the misrepresentation and use documented platform remediation.",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Freeze the defective cohort",
-                    "action": "Disable only the implicated source, buyer route, or postback stream.",
-                    "detail": "Preserve active callers' valid routes and record the stop timestamp, exposure, and responsible operator.",
-                },
-                {
-                    "step": 2,
-                    "title": "Reconstruct the complete event chain",
-                    "action": "Join acquisition, ping, post, bridge, disposition, invoice, and receipt records.",
-                    "detail": "Compare the signed qualification version with carrier events and buyer acceptance evidence before assigning fault.",
-                },
-                {
-                    "step": 3,
-                    "title": "Repair one measurable failure",
-                    "action": "Correct the clock, callback validation, source eligibility, or bid ceiling responsible.",
-                    "detail": "Exercise synthetic callbacks and internal test calls without submitting fabricated billable traffic to buyers.",
-                },
-                {
-                    "step": 4,
-                    "title": "Restart under a bounded exposure cap",
-                    "action": "Release a small real cohort with written buyer eligibility and monitored settlement.",
-                    "detail": "Restore normal caps only after acceptance reconciles and the required payment milestone clears.",
-                },
-            ],
-        },
-        {
-            "heading": "3. Separate lawful inbound demand from consent and referral liabilities",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "The eighth trap is believing a consent certificate makes every "
-                    "subsequent call lawful. TrustedForm and Jornaya can preserve "
-                    "evidence about a web interaction; neither substitutes for the "
-                    "actual disclosure, consumer action, named recipient, permitted "
-                    "purpose, and applicable calling technology. Distinguish a consumer's "
-                    "direct inbound call from a later outbound callback, prerecorded "
-                    "message, or marketing text. TCPA obligations under 47 U.S.C. "
-                    "§ 227 and 47 CFR § 64.1200 depend on that conduct. "
-                    "The FCC's attempted general one-to-one lead-generation consent "
-                    "rule was vacated in Insurance Marketing Coalition v. FCC "
-                    "in January 2025; do not describe it as a universally "
-                    "effective federal requirement. Use recipient-specific permission "
-                    "as a conservative operating control and satisfy independently "
-                    "applicable requirements, including CMS rules when relevant. "
-                    "Preserve the rendered disclosure version, timestamp, source URL, "
-                    "recipient identity, and evidence reference before any restricted "
-                    "follow-up. Apply federal and state do-not-call requirements to "
-                    "covered outbound activity, with internal suppression and revocation "
-                    "handling. A litigator-risk list is neither permission to call "
-                    "everyone else nor a substitute for a suppression system. "
-                    "Pause affected follow-up immediately when required evidence is "
-                    "missing; never reconstruct a consent event after the fact "
-                    "or purchase a certificate detached from the actual consumer "
-                    "journey."
-                ),
-                (
-                    "The ninth trap is treating Medicare traffic as generic insurance "
-                    "inventory. CMS TPMO obligations operate independently of a call "
-                    "exchange's buffer length. Under 42 CFR §§ 422.2274 and "
-                    "423.2274, build controls around applicable marketing, sales, and "
-                    "enrollment call recording and the rules governing personal "
-                    "beneficiary information shared with another TPMO. The recipient-specific "
-                    "written-consent requirements for covered TPMO sharing cannot "
-                    "be satisfied merely by pointing to a generic certificate. "
-                    "Map each entity receiving beneficiary information, the permitted "
-                    "purpose, and the exact disclosure shown. Separately, the "
-                    "48-hour Scope of Appointment requirement in 42 CFR "
-                    "§§ 422.2264 and 423.2264 concerns scheduled personal marketing "
-                    "appointments, subject to specified exceptions; it is not "
-                    "a universal rule requiring every inbound caller to wait "
-                    "48 hours. Configure the workflow according to the actual "
-                    "appointment and exception, preserving supporting facts. State "
-                    "recording laws remain relevant, including California Penal "
-                    "Code § 632 for confidential communications. Provide the "
-                    "required notice and obtain applicable permission before "
-                    "recording, then enforce the governing retention schedule "
-                    "and access restrictions. If recording or lawful transfer "
-                    "requirements cannot be satisfied, stop that route instead "
-                    "of switching off controls to preserve conversion volume. "
-                    "AI summaries may assist review but cannot replace "
-                    "required original evidence."
-                ),
-                (
-                    "The tenth trap is confusing paid legal advertising with "
-                    "unrestricted sale of prospective clients. State rules distinguish "
-                    "advertising, lawyer referral services, solicitation, runners, "
-                    "and sharing legal fees. California Business and Professions "
-                    "Code §§ 6152 and 6155 illustrate why the entity's "
-                    "actual conduct matters more than calling an invoice "
-                    "'marketing.' Obtain a state-specific permitted structure "
-                    "before routing legal traffic, prohibit promises about "
-                    "case value, and avoid compensation calculated from the "
-                    "lawyer's recovery unless the structure is expressly "
-                    "permitted. A fixed per-call price alone does not "
-                    "settle classification. The eleventh trap is exposing "
-                    "sensitive caller details through transcripts, auction "
-                    "payloads, and analytics logs. Minimize ping fields "
-                    "to contracted eligibility facts; restrict transcript "
-                    "access, encrypt retained evidence, and keep authentication "
-                    "secrets out of call metadata. Do not assume hashing "
-                    "a telephone number makes the record anonymous. "
-                    "Treat AI disposition as a review aid: manually "
-                    "audit an initial twenty calls per source and "
-                    "sample disputed outcomes thereafter. Flag any model "
-                    "that labels vulnerability, urgency, or legal merit "
-                    "without reliable evidence. A single verified unlawful "
-                    "disclosure, missing required consent, or fabricated "
-                    "lead is sufficient to suspend the implicated "
-                    "workflow. Statistical tolerance belongs in quality "
-                    "optimization, not permission to repeat a known "
-                    "prohibited practice."
-                ),
-            ],
-            "table": {
-                "caption": "Conduct-Specific Regulatory Boundaries and Evidence Requirements",
-                "headers": [
-                    "Activity creating the specific operating exposure",
-                    "Primary authority or evidence boundary involved",
-                    "Verification required before the activity proceeds",
-                    "Circuit-breaker when required evidence is absent",
-                ],
-                "rows": [
-                    [
-                        "Outbound marketing follow-up uses technology triggering TCPA restrictions.",
-                        "47 U.S.C. § 227 and implementing FCC calling rules.",
-                        "Match actual technology and message purpose to required permission.",
-                        "Suppress restricted follow-up until valid supporting evidence exists.",
-                    ],
-                    [
-                        "Lead certificate omits the actual recipient and disclosure.",
-                        "Certificate evidence must match the real consumer interaction.",
-                        "Retrieve rendered language and verify recipient-specific operating permission.",
-                        "Reject detached certificates and halt the affected follow-up.",
-                    ],
-                    [
-                        "Covered outbound solicitation reaches internally suppressed consumer numbers.",
-                        "47 CFR § 64.1200 includes applicable suppression obligations.",
-                        "Check relevant suppression records before initiating covered outreach.",
-                        "Block the attempt and repair suppression synchronization immediately.",
-                    ],
-                    [
-                        "Medicare beneficiary information passes between separate TPMO entities.",
-                        "42 CFR §§ 422.2274 and 423.2274 govern covered sharing.",
-                        "Verify required written permission identifies each permitted receiving TPMO.",
-                        "Prevent covered information transfer until valid permission exists.",
-                    ],
-                    [
-                        "Scheduled Medicare marketing appointment lacks timely documented scope.",
-                        "42 CFR §§ 422.2264 and 423.2264 define appointment rules.",
-                        "Document the appointment timing or applicable specified exception.",
-                        "Reschedule the appointment when required conditions remain unmet.",
-                    ],
-                    [
-                        "Confidential caller conversations are recorded without applicable permission.",
-                        "California Penal Code § 632 addresses confidential communications.",
-                        "Apply relevant jurisdictional recording requirements before capture begins.",
-                        "Stop recording or discontinue routes requiring unavailable lawful evidence.",
-                    ],
-                    [
-                        "Legal lead compensation crosses into prohibited referral conduct.",
-                        "California Business and Professions Code §§ 6152 and 6155.",
-                        "Review actual solicitation conduct and applicable referral-service structure.",
-                        "Disable implicated legal routes until the structure is corrected.",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four pre-flight checks before releasing a new source",
-                "body": "These are launch conditions for the implicated activity, not substitutes for evaluating its actual legal requirements.",
-                "items": [
-                    "Verify the source journey, required permissions, disclosure version, and evidence retrieval using a real authorized test interaction.",
-                    "Verify buyer geography, hours, duplicate window, connected-duration clock, rejection reasons, and settlement timing in the executed commercial terms.",
-                    "Verify recording notices, applicable permission, restricted evidence access, and vertical-specific Medicare or legal-routing requirements.",
-                    "Verify source-level spend caps, unsettled buyer exposure, stop controls, and an eligible fallback without unrestricted resale of caller information.",
-                ],
-            },
-        },
-        {
-            "heading": "4. Build legitimate local supply and survive correlated shutdowns",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "The twelfth trap is manufacturing local-map inventory that "
-                    "cannot survive verification. The mapped play "
-                    "google_maps_gbp_lead_gen_network is Multi-Location Google Business "
-                    "Profile (GBP) Local-Pack Grid Arbitrage — TRACK_2. Its "
-                    "durable version partners with real, licensed tradespeople "
-                    "in tier-2/3 metros, uses legitimate physical shops or "
-                    "yards, and monetizes genuine excess service capacity. "
-                    "The business owner must authorize profile management; "
-                    "the operator is not entitled to create duplicate "
-                    "business identities because a buyer wants another "
-                    "postal code. Google eligibility and address-display "
-                    "rules still apply: a service-area business should "
-                    "hide its address when required, and an unmanned "
-                    "yard is not automatically an eligible customer-facing "
-                    "location. Require premises, equipment, business records, "
-                    "and authorized access capable of supporting live "
-                    "video verification. Wire a tracking number controlled "
-                    "by or explicitly authorized for the actual business, "
-                    "preserve accurate business contact details, and test "
-                    "routing during published hours. Never use rented "
-                    "mailboxes, borrowed licenses, fabricated signage, "
-                    "purchased reviews, or selective positive-review requests. "
-                    "Send neutral review requests to genuine customers "
-                    "without incentives. Pair every legitimate listing "
-                    "with truthful organic city rank-and-rent pages "
-                    "identifying the actual provider and service area; "
-                    "those pages provide diversification, not permission "
-                    "to fabricate physical presence."
-                ),
-                (
-                    "An illustrative local cohort generates 120 calls monthly, "
-                    "of which 80 satisfy contracted geography, service type, "
-                    "and connected-duration rules. At $75 per accepted "
-                    "call, gross settlements equal $6,000. Assume $2,700 "
-                    "for partner acquisition participation and attributable "
-                    "promotion, leaving $3,300 retained contribution at "
-                    "the canonical 55% share. Subtract $450 tracking "
-                    "and telephony, $600 content and profile operations, "
-                    "and $300 quality review to leave $1,950 "
-                    "before other company overhead and owner-level "
-                    "items. This is a play-level sensitivity example, "
-                    "not a fourth annual scorecard. If acceptance "
-                    "drops to 60 calls while those monthly costs "
-                    "remain fixed, settlements fall to $4,500 "
-                    "and residual contribution becomes $450. If "
-                    "only 50 calls qualify, $3,750 settlements "
-                    "leave negative $300 against $4,050 costs. "
-                    "Break-even therefore requires 54 accepted "
-                    "calls at $75. Record whether partner payments "
-                    "are fixed, per accepted call, or percentage-based; "
-                    "the sensitivity changes materially with that "
-                    "contract. Cap publisher traffic until net-7 "
-                    "buyer collectability is verified. If a profile "
-                    "cannot be supported by a real partner's "
-                    "eligible physical operation, do not launch "
-                    "it. Use the paired organic city pages "
-                    "and direct legitimate partner relationships "
-                    "while rebuilding qualified supply."
-                ),
-                (
-                    "The thirteenth trap is assuming diversification because "
-                    "a dashboard lists many buyers and publishers. "
-                    "Several buyers can share one payment parent, "
-                    "and several publishers can depend on the "
-                    "same advertising account or location network. "
-                    "Group exposure by beneficial operating counterparty "
-                    "where established, acquisition platform, vertical, "
-                    "carrier, and evidence provider. Begin with "
-                    "illustrative concentration alerts at 35% of "
-                    "mature retained contribution from one buyer "
-                    "group and 50% from one acquisition platform. "
-                    "These alerts trigger contingency work, not "
-                    "automatic shutdown of a profitable account. "
-                    "The fourteenth trap is replacing staffing "
-                    "discipline with unattended automation. The "
-                    "canonical Base team is 1 FT + 2 C; "
-                    "Scaled is 2 FT + 3 C, five people "
-                    "total. Assign one accountable owner for "
-                    "treasury and disputes, one routing operator, "
-                    "and explicit contractor coverage for source "
-                    "quality and specialist review. Automated "
-                    "circuit-breakers should stop incremental exposure "
-                    "without destroying evidence or disconnecting "
-                    "valid live calls unnecessarily. Run a "
-                    "weekly tabletop covering buyer nonpayment, "
-                    "carrier failure, missing consent evidence, "
-                    "and GBP suspension. Preserve incident "
-                    "chronology and use documented appeals "
-                    "rather than replacement identities. Expand "
-                    "only after the fallback has been "
-                    "exercised and the previous cohort's "
-                    "collections demonstrate that growth is "
-                    "funded by real operating cash."
-                ),
-            ],
-            "table": {
-                "caption": "Legitimate GBP Supply, Unit Economics, and Correlated-Failure Controls",
-                "headers": [
-                    "Local-supply failure or correlated operating exposure",
-                    "Specific proof required before allocating capital",
-                    "Illustrative threshold or nonnegotiable launch condition",
-                    "Practical fallback preserving legitimate customer acquisition",
-                ],
-                "rows": [
-                    [
-                        "Fabricated local premises expose every linked business profile.",
-                        "Obtain authorized partner records and genuine premises verification evidence.",
-                        "Every proposed listing must satisfy actual business eligibility.",
-                        "Use truthful organic city pages without inventing locations.",
-                    ],
-                    [
-                        "Tracking numbers route customers away from the represented business.",
-                        "Document business authorization and test published-hours call routing.",
-                        "Any unauthorized diversion blocks release of the tracking configuration.",
-                        "Restore the genuine business contact route while investigating.",
-                    ],
-                    [
-                        "Purchased or selectively solicited reviews undermine profile integrity.",
-                        "Keep neutral request templates and genuine customer interaction records.",
-                        "Any fabricated review request triggers immediate workflow suspension.",
-                        "Resume neutral requests only for authentic customer experiences.",
-                    ],
-                    [
-                        "Fixed partner costs magnify a local acceptance decline.",
-                        "Reconcile accepted calls against the stated fixed-cost contract.",
-                        "Illustrative cohort needs fifty-four accepted calls to break even.",
-                        "Reduce fixed commitments or pause economically defective expansion.",
-                    ],
-                    [
-                        "Multiple buyer brands conceal one concentrated settlement counterparty.",
-                        "Group established payment relationships and consolidated unsettled balances.",
-                        "One buyer group exceeds thirty-five percent of mature contribution.",
-                        "Develop eligible alternate buyers before raising source exposure.",
-                    ],
-                    [
-                        "One acquisition platform supports apparently diversified publisher relationships.",
-                        "Map publisher dependencies using authorized contractual source information.",
-                        "One platform exceeds fifty percent of mature retained contribution.",
-                        "Strengthen legitimate organic pages and independent partner referral channels.",
-                    ],
-                    [
-                        "Unattended automation continues spending during a material operating incident.",
-                        "Test source stops and retain named incident response ownership.",
-                        "Any critical stop control fails its scheduled exercise.",
-                        "Keep affected expansion disabled until the control works.",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": "A call is inventory until acceptance, a receivable until collection, and profit only after every reversible dollar is accounted for.",
-    "diagram_id": "diag-05",
-    "action_checklist": [
-        "Build a call-level settlement bridge linking acquisition cost, buyer-connected duration, acceptance, invoice, cash receipt, and reversals.",
-        "Reproduce the $30,000, $199,750, and $480,000 annual owner-profit cases without double-counting acquisition costs or confusing gross settlements with retained revenue.",
-        "Set source-specific CPC ceilings, authenticated disposition callbacks, idempotent posts, buyer exposure caps, and tested stop controls.",
-        "Separate inbound demand from restricted follow-up and verify applicable TCPA, CMS TPMO, recording, and legal-referral requirements for each route.",
-        "Launch google_maps_gbp_lead_gen_network only through eligible real partner premises, authorized tracking, genuine reviews, and paired truthful organic city pages.",
-        "Run a weekly incident exercise and release additional traffic only after mature acceptance and the required buyer collection milestone reconcile.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "47 U.S.C. § 227 — Restrictions on use of telephone equipment",
-            "url": "https://www.law.cornell.edu/uscode/text/47/227",
-            "relevance": "Classify actual outbound calling and messaging conduct before determining applicable TCPA restrictions and permission requirements.",
-        },
-        {
-            "title": "47 CFR § 64.1200 — Delivery restrictions",
-            "url": "https://www.ecfr.gov/current/title-47/section-64.1200",
-            "relevance": "Implement applicable calling, do-not-call, internal suppression, and consent controls; account for judicial decisions affecting particular provisions.",
-        },
-        {
-            "title": "42 CFR § 422.2274 — Agent, broker, and other third-party requirements",
-            "url": "https://www.ecfr.gov/current/title-42/section-422.2274",
-            "relevance": "Evaluate Medicare Advantage TPMO recording responsibilities and recipient-specific permission for covered beneficiary-information sharing.",
-        },
-        {
-            "title": "42 CFR § 423.2274 — Agent, broker, and other third-party requirements",
-            "url": "https://www.ecfr.gov/current/title-42/section-423.2274",
-            "relevance": "Apply corresponding Part D TPMO requirements rather than treating prescription-drug-plan calls as generic lead inventory.",
-        },
-        {
-            "title": "42 CFR § 422.2264 — Beneficiary contact",
-            "url": "https://www.ecfr.gov/current/title-42/section-422.2264",
-            "relevance": "Determine Medicare Advantage contact restrictions, Scope of Appointment timing, and applicable exceptions for scheduled personal marketing appointments.",
-        },
-        {
-            "title": "42 CFR § 423.2264 — Beneficiary contact",
-            "url": "https://www.ecfr.gov/current/title-42/section-423.2264",
-            "relevance": "Apply Part D beneficiary-contact and appointment requirements to the actual consumer journey.",
-        },
-        {
-            "title": "California Penal Code § 632 — Confidential communications",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=PEN&sectionNum=632.",
-            "relevance": "Evaluate applicable permission requirements before recording confidential communications involving California callers.",
-        },
-        {
-            "title": "California Business and Professions Code § 6152 — Runners and cappers",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=6152.",
-            "relevance": "Screen legal-call acquisition arrangements for prohibited solicitation conduct instead of relying on marketing labels.",
-        },
-        {
-            "title": "California Business and Professions Code § 6155 — Lawyer referral services",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=6155.",
-            "relevance": "Determine whether the actual legal-routing operation falls within lawyer referral-service requirements.",
-        },
-    ],
-}
+CHAPTER_5 = {'id': 'Q5',
+ 'chapter_id': 'Q5',
+ 'chapter_number': 5,
+ 'question_number': 5,
+ 'slug': 'ping-post-lead-and-call-distribution',
+ 'question_prompt': 'How does ping-post work for leads and calls, and how do I configure it in lead '
+                    'distribution software?',
+ 'kicker': 'Q5 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Ping-Post Lead and Call Distribution',
+ 'subtitle': 'Ping-post definitions, partial-data pings and buyer bids, ping-post for calls, boberdoo '
+             'demos and webinars, ping-post lead type specs, buyer API setup via Lead Prosper, and selling '
+             'calls through boberdoo',
+ 'layout_template': 'case_study',
+ 'reading_time_minutes': 15,
+ 'executive_summary': "boberdoo's Scott Hoffman, Brett and the Lead Prosper team describe ping post as an "
+                      'exclusionary auction: a non-contact ping is fired simultaneously to every buyer '
+                      'with an active account, funds and a matching filter set, the best bid minus your '
+                      'margin goes back to the seller, and the PII post only lands after the buyer returns '
+                      'success. Street numbers recur: $10 bid minus $2 margin returns $8; variable margin '
+                      'tiers of 10-50%; 15s/30s or 20s/60s ping/post timeouts; a 15% refund cap over 30 '
+                      "days; call minutes at 10 cents down to 6 cents. Operators split on 'yes' versus "
+                      "'yes but sold non-exclusively' fallback and on exclusive versus shared scenarios, "
+                      'and the call desk warns that a $50 duration-gated buyer can lose on earnings per '
+                      'call to a $30 no-duration buyer.',
+ 'key_metrics': [{'label': 'Static Ping Post Margin Math',
+                  'metric': 'Static Ping Post Margin Math',
+                  'value': '$10 bid - $2 margin = $8 offer returned to the seller',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Fixed-dollar margin carved off a static buyer bid before the price offer is '
+                             'passed back to the lead seller; a $3 margin drops the bid to $7.',
+                  'source': 'boberdoo.com ([yCAVYNpSdZI @ 00:28:04])'},
+                 {'label': 'Typical Ping/Post Timeout Windows',
+                  'metric': 'Typical Ping/Post Timeout Windows',
+                  'value': '15 seconds on the ping, 30 seconds on the post',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Typical windows quoted for ping post sources; lagging buyers are excluded so '
+                             'the seller always gets a bid back.',
+                  'source': 'boberdoo.com ([yCAVYNpSdZI @ 00:15:39])'},
+                 {'label': 'Buyer Refund Cap',
+                  'metric': 'Buyer Refund Cap',
+                  'value': '15% of leads over a 30-day window',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Refund limit set on buyer accounts to stop a buyer from refunding 90 of 100 '
+                             'leads.',
+                  'source': 'boberdoo.com ([yCAVYNpSdZI @ 00:22:50])'},
+                 {'label': 'Call Routing Minute Pricing',
+                  'metric': 'Call Routing Minute Pricing',
+                  'value': '10 cents down to 6 cents per minute, both legs; first block 30,000 minutes, '
+                           'blocks never expire',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Per-minute pricing for routed calls covering both legs of the call, sold in '
+                             'non-expiring minute blocks.',
+                  'source': 'boberdoo.com ([I3MdV-IDLRk @ 00:49:12])'}],
+ 'sections': [{'title': 'Section 1: The Practitioner Consensus - Exclusionary Auctions, Success-Gated '
+                        'Responses and One Rulebook for Leads and Calls',
+               'paragraphs': ['Every boberdoo trainer frames ping post the same way: a lead seller fires '
+                              'partial, non-contact data at buyers so they can bid before ever seeing a '
+                              'name or phone number [vNu0tV99Lnw @ 00:00:00]. The basics walkthrough '
+                              'reduces it to three moves - ping the lead without personal information to '
+                              'all eligible buyers at the same time, compare the bids, and post to the '
+                              "winner or winners 'in a matter of seconds' - running fully automated across "
+                              "'thousands of pings a day' [o5v8ME_4M_M @ 00:00:38]. The engine is pitched "
+                              'as handling both inbound and outbound ping post. The trainers hammer that '
+                              "the fire is simultaneous, not a waterfall: 'we fire that out to the same "
+                              "time to every possible matching buyer' [lpWTQpnduYo @ 00:38:29]. The "
+                              'selection logic is exclusionary rather than additive. The system first '
+                              'strips out inactive accounts, accounts without funds, and accounts without '
+                              'a matching filter set, and only then sorts whoever survives by best revenue '
+                              '[BvWILZyxIIA @ 00:00:46]. That ordering is the whole consensus in one '
+                              'sentence: a buyer who has not funded, has no live filter set, or is '
+                              'switched off simply does not exist to the auction. Everything else in the '
+                              'stack is built on that filter.',
+                              'The second point of agreement is that nothing goes back to the seller until '
+                              'the buyer has actually taken the lead. boberdoo only returns a response to '
+                              "a lead seller 'once we receive the success response from the buyer' "
+                              "[BvWILZyxIIA @ 00:01:22]. The 'What Is Ping Post?' explainer spells out "
+                              "why: processing is sequential, the system 'waits for that success response "
+                              "before returning the Matched response to your vendor,' and any break in "
+                              'that chain produces post rejects [vNu0tV99Lnw @ 00:05:06]. The ping carries '
+                              'the bid-relevant fields - incident dates for legal, income for health, ZIP '
+                              'and age - while name, address, phone and email ride the post. The trainers '
+                              'treat post rejects as the enemy, not a cost of doing business. Their line '
+                              "is blunt: 'you never want to have post rejects,' and a duplicate is the "
+                              'only valid reason to throw one, because on a reject the buyer still got the '
+                              'full lead posted to them without being charged for it [EKrBDZYFq2A @ '
+                              '00:34:50]. Underneath all of this sits a discipline the overview demo '
+                              'repeats: every submitted lead gets a response - matched, unmatched or error '
+                              '- which reduces seller-versus-buyer discrepancies on every single post '
+                              '[yCAVYNpSdZI @ 00:05:28].',
+                              'Calls are treated as the same machine with a dial tone attached. Scott '
+                              "Hoffman's pitch is that web leads and calls run through the same business "
+                              'rules, routing and billing [d1FxjZ5ukI4 @ 00:01:00], and the demand logic '
+                              "is simple: buyers like calls because of a 'virtually 100% contact rate,' "
+                              "and that contact rate plus higher closing is why calls 'typically go for "
+                              "more money than what the corresponding web lead will' [d1FxjZ5ukI4 @ "
+                              '00:01:37]. On the call side the ping post runs in three steps - ping, a '
+                              "post that expects a 'success' response, then the call to the terminating "
+                              'Twilio number - on a different API action from the data-lead flow '
+                              '[CSGuZ-Sping @ 00:02:19]. Whatever the channel, the baseline prerequisites '
+                              'never change: an active account, available funds and a filter set, which '
+                              "the demo calls 'the most important page in the whole system because these "
+                              'are those custom business rules that Define exactly what the lead buyer can '
+                              "purchase' [I3MdV-IDLRk @ 00:22:50]. Matching priority defaults to five, and "
+                              'buyers on the same priority rotate round robin, so priority is the '
+                              "tiebreaker rather than the main sort. Hoffman's strategic framing is that "
+                              'calls add a revenue stream so the business is not pigeon-holed into one '
+                              'method.'],
+               'table': {'caption': 'Where the practitioners agree: the non-negotiable mechanics of a ping '
+                                    'post desk',
+                         'headers': ['Consensus Point',
+                                     'What The Practitioners Say',
+                                     'Operator Takeaway',
+                                     'Expert Source'],
+                         'rows': [['Exclusionary routing comes before any bid sorting',
+                                   'Inactive, unfunded and unmatched-filter accounts are removed before '
+                                   'sorting by best revenue',
+                                   'An unfunded buyer never sees your ping, regardless of bid size',
+                                   'boberdoo.com ([BvWILZyxIIA @ 00:00:46])'],
+                                  ['Pings fire simultaneously to every matching buyer',
+                                   'Pings go out at the same time to every possible matching buyer',
+                                   'Bids are compared in parallel, then the lead posts within seconds',
+                                   'boberdoo.com ([lpWTQpnduYo @ 00:38:29])'],
+                                  ['Seller response is gated on buyer success',
+                                   'Matched only returns to the vendor after the buyer sends success',
+                                   'Any break in the sequential chain shows up as post rejects',
+                                   'boberdoo.com ([vNu0tV99Lnw @ 00:05:06])'],
+                                  ['Post rejects are treated as toxic to the desk',
+                                   'Duplicates are the only valid post-reject reason; avoid rejects '
+                                   'entirely',
+                                   'Rejecting buyers still received the full lead without being charged',
+                                   'boberdoo.com ([EKrBDZYFq2A @ 00:34:50])'],
+                                  ['The filter set is the core of the system',
+                                   'Filter set is the most important page, defining exactly what buyers '
+                                   'purchase',
+                                   'Build buyer business rules here before a single ping goes live',
+                                   'boberdoo.com ([I3MdV-IDLRk @ 00:22:50])'],
+                                  ['Calls command a premium over web leads',
+                                   'Near 100% contact rate makes calls sell above the corresponding web '
+                                   'lead',
+                                   'Run the same rules, routing and billing for calls and leads',
+                                   'boberdoo.com ([d1FxjZ5ukI4 @ 00:01:17])'],
+                                  ['The ping carries no contact data at all',
+                                   'Ping fields vary by vertical; name, address, phone and email ride the '
+                                   'post',
+                                   'Let buyers request extra ping fields or have vendors set defaults',
+                                   'boberdoo.com ([vNu0tV99Lnw @ 00:02:38])']]}},
+              {'title': 'Section 2: Exact Street Mechanics, Tools & Numbers - Vendor Kits, Margin Carves, '
+                        'Timeouts and Call Economics',
+               'paragraphs': ["Wiring a seller takes three items: the posting specs, the vendor's unique "
+                              'API key and their unique SRC [IG4BgI8XMPA @ 00:05:14]. The SRC is the main '
+                              'tracking variable and is never passed to buyers, so there is no need to '
+                              'mask it; static vendors get a flat lead cost such as $5 that feeds profit '
+                              'reports, while dynamic vendors sit at lead cost 0 with return best price '
+                              "switched on [lpWTQpnduYo @ 00:02:41]. The ping post spec adds 'four extra "
+                              "fields that need to be passed which aren't used with straight posts': key, "
+                              "api action with the static value 'ping post lead', mode set to ping or "
+                              "post, and lead id, which goes on the post only and echoes the ping's ID "
+                              '[P79C92BNJHs @ 00:00:41]. A test lead parameter covers integration testing, '
+                              'and the XML posting URL is mandatory for the match-with-partner hashes '
+                              "features. Lead Prosper's buyer-side build mirrors it exactly: POST with a "
+                              'JSON payload to one URL, Mode distinguishing ping from post, '
+                              'Return_Best_Price=1 for a dynamic vendor, success mapped to '
+                              '/response/status = Matched, the live bid read from /response/price, and the '
+                              'post pulling Lead_ID from {{lp_ping_response:/response/lead_id}} - because '
+                              "price was set on the ping, 'there's no need to set it on the POST' "
+                              '[Ma1kH51odZ0 @ 00:02:24].',
+                              'The money is made in the margin carve. On a static buyer the math is flat: '
+                              "a $15 buyer minus a $2 margin replies to the vendor 'matched with a price "
+                              "offer of $13' [W03nRhCi63A @ 00:11:08], and the Acme Insurance Agent "
+                              'example runs Illinois at $10 minus $2 for an $8 bid and Wisconsin at $15 '
+                              'minus $3 for $12. Dynamic wholesalers sit at price 0 with a custom delivery '
+                              'and a variable matrix - 30% on bids up to $10, 40% on $10.01-20, 50% above '
+                              '$20 - and the lead log proves it out: lead 9 came in at $25, the 50% margin '
+                              "offered $12.50 back against a rival's $12, and 'it sold for 25' "
+                              '[IG4BgI8XMPA @ 00:25:49]. A second layer sits on the vendor: a premium '
+                              'vendor margin adds or subtracts a dollar, turning an $8 offer into $9 or '
+                              '$7, and adding money back is how operators win top-quality vendors '
+                              '[EKrBDZYFq2A @ 00:13:09]. The ceiling matters as much as the floor. Max '
+                              "best price offer exists because 'Maybe you put a lead buyer in to purchase "
+                              "leads at $1,000 and carving out a 10% profit margin' - a typo that would "
+                              'otherwise pass straight through to the seller [yCAVYNpSdZI @ 00:17:57].',
+                              'Clock and billing settings decide whether the auction actually clears. The '
+                              "recommended default is '20 on the Ping 60 on the post,' though 'many cases "
+                              "vendors will require shorter timeouts' [W03nRhCi63A @ 00:29:02]; at the "
+                              'cutoff the system drops lagging buyers and returns the best bid it holds, '
+                              'so the seller always gets an answer. On calls, a ping locks the buyer, with '
+                              'the lock defaulting to 300 seconds and adjustable per client. Duration is '
+                              'read in minutes, and clients have typed 120 thinking it meant seconds, '
+                              "'when in return it was returning 120 minute duration' [CSGuZ-Sping @ "
+                              '00:17:10]. Local numbers are cheaper both monthly and per minute, so the '
+                              'pro move is ordering local numbers for ping post call vendors. The call '
+                              'desk ranks buyers by earnings per call - revenue divided by attempts - so a '
+                              '$50 buyer with a one-minute minimum converting 50 of 100 calls nets $25, '
+                              'and a $30 buyer with no duration wins [CSGuZ-Sping @ 00:33:26]. Hard costs '
+                              'are posted openly: call routing runs 10 cents down to 6 cents per minute '
+                              'covering both legs, the first block is 30,000 minutes and blocks never '
+                              'expire, while web distribution starts at $575 per month for up to 1,500 '
+                              'leads per day [I3MdV-IDLRk @ 00:49:12].'],
+               'table': {'caption': 'Street settings and numbers the trainers configure live on the desk',
+                         'headers': ['Setting Or Mechanic',
+                                     'Exact Number Or Value',
+                                     'How Operators Use It',
+                                     'Expert Source'],
+                         'rows': [['Static fixed-dollar margin on a buyer',
+                                   '$10 bid minus $2 margin returns $8 to the seller',
+                                   'Raise to a $3 margin and the bid drops to $7',
+                                   'boberdoo.com ([yCAVYNpSdZI @ 00:28:24])'],
+                                  ['Variable margin matrix on a dynamic buyer',
+                                   '30% up to $10, 40% on $10.01-20, 50% above $20',
+                                   'Dynamic buyer price stays at 0 so the matrix carves each live bid',
+                                   'boberdoo.com ([W03nRhCi63A @ 00:17:24])'],
+                                  ['Ping and post timeout windows',
+                                   '15 seconds on the ping and 30 seconds on the post typical',
+                                   'Lagging buyers are excluded so the seller always receives a bid',
+                                   'boberdoo.com ([yCAVYNpSdZI @ 00:15:39])'],
+                                  ['Buyer refund percentage cap',
+                                   '15% refund limit measured over a 30-day window',
+                                   'Stops a buyer from refunding 90 out of 100 delivered leads',
+                                   'boberdoo.com ([yCAVYNpSdZI @ 00:22:50])'],
+                                  ['Automated buyer rebilling trigger',
+                                   'Authorize.net CIM rebills $500 when the balance falls below $50',
+                                   'Keeps buyer balances funded so they stay eligible to bid on pings',
+                                   'boberdoo.com ([I3MdV-IDLRk @ 00:21:20])'],
+                                  ['Call routing minute pricing',
+                                   '10 cents down to 6 cents per minute covering both call legs',
+                                   'First block is 30,000 minutes and purchased blocks never expire',
+                                   'boberdoo.com ([I3MdV-IDLRk @ 00:49:12])'],
+                                  ['Call minimum duration on the filter set',
+                                   '0.3-minute call cleared a 0.17 minimum; a 0.32-minute call failed 1.25',
+                                   'Enter duration in minutes, never seconds, on every call buyer',
+                                   'boberdoo.com ([CSGuZ-Sping @ 00:14:17])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Desk-level moves the boberdoo trainers flag on live builds',
+                           'body': 'Small configuration choices the trainers single out for cutting cost, '
+                                   'catching broken pings and testing bids without torching volume.',
+                           'items': ['Order local numbers when dealing with a ping post call vendor, '
+                                     'because they are cheaper on both the monthly and the per-minute cost '
+                                     '[boberdoo.com — CSGuZ-Sping @ 00:06:49]',
+                                     'Treat Show Lead Log as your best friend on the leads page: read it '
+                                     "bottom-up to see raw buyer responses and run down 'price is missing' "
+                                     'errors [boberdoo.com — EKrBDZYFq2A @ 00:27:08]',
+                                     'Use JavaScript number display to hide the phone number when no buyer '
+                                     'is available, such as at 1 a.m., and let the phone duplicity check '
+                                     'route repeat callers back to the original buyer [boberdoo.com — '
+                                     'I3MdV-IDLRk @ 00:12:24]',
+                                     'Run bid experiments in quarantine on a specific percentage of pings '
+                                     "'so as not to cannibalize all of the traffic', with significance "
+                                     'reporting on the results [boberdoo.com — BvWILZyxIIA @ 00:15:16]']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Build the dynamic vendor kit',
+                              'action': 'Create the vendor account and SRC, set lead cost to 0, and switch '
+                                        "return best price to 'yes'.",
+                              'detail': "Dynamic vendors run at lead cost 0 with 'allow using return best "
+                                        "price parameter' set to yes or 'yes but sold non exclusively'; "
+                                        "Brett recommends sending it to 'yes' first, then hand over specs, "
+                                        'API key and SRC [boberdoo.com — lpWTQpnduYo @ 00:04:03]'},
+                             {'step': 2,
+                              'title': 'Configure buyer filter sets and margins',
+                              'action': 'Give static buyers a fixed-dollar margin and dynamic wholesalers '
+                                        'a 0 price with a percentage matrix.',
+                              'detail': 'Static buyer example runs Illinois at $10 minus $2 for $8 and '
+                                        'Wisconsin at $15 minus $3 for $12, while the dynamic buyer sits '
+                                        'at price 0 with tiered percentage margins on a custom delivery '
+                                        '[boberdoo.com — W03nRhCi63A @ 00:15:00]'},
+                             {'step': 3,
+                              'title': 'Set timeouts and the max offer ceiling',
+                              'action': 'Keep the ping timeout shorter than the post timeout and cap the '
+                                        'best-price offer.',
+                              'detail': 'The ping timeout is shorter so buyer bids can be collected first, '
+                                        'and the maximum best-price offer caps the bid, for example at '
+                                        '$45, when margin plus bid would exceed the value you set '
+                                        '[boberdoo.com — YLw0lKsOayk @ 00:11:18]'},
+                             {'step': 4,
+                              'title': 'Ramp on one geo and audit the ratios',
+                              'action': 'Launch on one small geo with a low daily cap, run for a few days, '
+                                        'then check pings against posts.',
+                              'detail': "Run it for a few days because 'one success does not equal a "
+                                        "campaign that is live and troubleshooted', and question any "
+                                        'vendor showing 10,000 pings against 5 posts [boberdoo.com — '
+                                        'CSGuZ-Sping @ 00:29:22]'}]},
+              {'heading': 'Section 3: Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The sharpest split on the boberdoo bench is what happens when the top '
+                              "bidder post-rejects. Under plain 'Yes,' the deal runs one-to-one: the "
+                              'system calculates the best bid among buyers, passes it to the seller, and '
+                              'if that buyer rejects the post the seller gets a reject [yCAVYNpSdZI @ '
+                              "00:16:56]. 'Yes but sold non-exclusively' keeps the lead alive by retrying "
+                              'the next bidder, and the presenters frame that risk differently. One '
+                              'walkthrough shotguns a ping to 10 buyers, collects three bids of $12, $10 '
+                              "and $8 at a 10% margin, warns that the fallback means 'you could in theory "
+                              "end up with a lead selling at a loss,' and closes with 'I would recommend "
+                              "sending it to yes first' [EKrBDZYFq2A @ 00:23:24]. The Scott-and-Brett "
+                              'session describes the same fallback as retrying only buyers whose offer '
+                              'exceeds the $13 cost, so the lead is never sold below what was paid for it '
+                              '[IG4BgI8XMPA @ 00:12:17]. The overview demo reconciles the two readings: '
+                              'the fall-through targets the next buyer priced above cost while ignoring '
+                              'margin [yCAVYNpSdZI @ 00:17:17]. For an operator, that means the '
+                              'non-exclusive fallback protects the principal, not the spread, and the '
+                              "conservative starting point the presenters name is plain 'Yes.'",
+                              'Margin design has no single house formula; every presenter builds a '
+                              'different ladder. One webinar runs a dynamic wholesaler at price 0 with a '
+                              'variable margin of 30% on bids up to $10, 40% on $10.01 to $20, and 50% '
+                              'above $20 [W03nRhCi63A @ 00:17:24]. The March 2015 session advises '
+                              'percentage margins for dynamic buyers and shows a gentler matrix of 10% on '
+                              '$0 to $10, 20% on $10.01 to $25, and a 30% default [lpWTQpnduYo @ '
+                              '00:06:22]. Another session stacks four tiers at 15%, 20%, 25% and a 30% '
+                              'default, then layers a second margin at the vendor level: the buyer filter '
+                              'set turns a $10 bid into $8, a premium vendor adjustment of plus $1 pushes '
+                              'the offer to $9 and minus $1 drops it to $7, and adding money back is the '
+                              'move for winning top-quality vendors [EKrBDZYFq2A @ 00:13:09]. The overview '
+                              'demo runs yet another curve, 10% on $0 to $10, 15% on $10 to $25 and 25% '
+                              'above $25, and frames the per-seller plus or minus $1 as a way to reward '
+                              'high quality or high volume lead sellers [DSbDVWpyXUI @ 00:19:22]. The '
+                              'constant across sessions is structure: static buyers usually get a fixed '
+                              'dollar margin, while percentage ladders are the recommended tool for '
+                              'dynamic buyers.',
+                              'Exclusive versus shared gets settled by arithmetic, not doctrine. The '
+                              'scenarios engine compares one exclusive buyer against the sum of '
+                              'non-exclusive buyers and picks the higher total: sell it twice at $12 and '
+                              "'you're going to make 24 compared to 20' [W03nRhCi63A @ 00:31:46]. The same "
+                              'contrarian ranking shows up on calls. A dynamic call buyer has duration '
+                              'ignored and gets the call on best price, but earnings per call, revenue '
+                              'divided by attempts, can flip the obvious winner: a $50 buyer demanding a '
+                              '1-minute duration who converts only 50 of 100 calls yields $25, so a $30 '
+                              'buyer with no duration requirement takes the traffic [CSGuZ-Sping @ '
+                              '00:33:26]. The calls webinar also gives the dynamic buyer defaults for that '
+                              'setup: minimum duration 0 and no ring timeout. Revenue sharing draws an '
+                              'outright split between sessions. The general demo pays vendors on all '
+                              'leads, sold leads only, revenue splits or revenue buckets, and shows a 25% '
+                              'vendor revenue share inside ROI tracking, with UTM fields added through '
+                              'custom reports [I3MdV-IDLRk @ 00:54:35]. The overview presenter refuses to '
+                              "mix the two models: 'if you're going to do rev sharing models, I would "
+                              "recommend it not being in a ping post fashion' [yCAVYNpSdZI @ 00:25:13]."],
+               'table': {'caption': 'Competing ping-post playbooks taught side by side by the boberdoo and '
+                                    'Lead Prosper presenters',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Post-reject fallback setting on a dynamic vendor source',
+                                   "'Yes' runs one-to-one; a top-bidder reject sends the seller a reject",
+                                   "'Yes but sold non-exclusively' retries the next bidder above cost, "
+                                   'ignoring margin',
+                                   'boberdoo.com ([EKrBDZYFq2A @ 00:23:24]); boberdoo.com ([yCAVYNpSdZI @ '
+                                   '00:17:17])'],
+                                  ['Ping and post timeout windows for buyer auctions',
+                                   '20 seconds on the ping and 60 on the post when sellers do not specify',
+                                   'Typical 15-second ping and 30-second post, with lagging buyers '
+                                   'excluded from the auction',
+                                   'boberdoo.com ([W03nRhCi63A @ 00:29:02]); boberdoo.com ([yCAVYNpSdZI @ '
+                                   '00:15:39])'],
+                                  ['Variable margin ladder applied to dynamic wholesale buyers',
+                                   '30% up to $10, 40% from $10.01 to $20, 50% above $20',
+                                   '10% on $0 to $10, 20% on $10.01 to $25, 30% default tier',
+                                   'boberdoo.com ([W03nRhCi63A @ 00:17:24]); boberdoo.com ([lpWTQpnduYo @ '
+                                   '00:12:57])'],
+                                  ['Exclusive sale versus shared sale on the same lead',
+                                   'One exclusive buyer at $20 wins only when shared totals fall short',
+                                   'Two shared sales at $12 each produce $24, beating the $20 exclusive',
+                                   'boberdoo.com ([IG4BgI8XMPA @ 00:31:19])'],
+                                  ['Static price ping post versus dynamic bid pricing per lead',
+                                   'Static-price ping post only checks coverage and sells at the fixed '
+                                   'filter-set price',
+                                   'Dynamic pricing is called more common, with payouts like $1, $10 or '
+                                   '$7.36',
+                                   'boberdoo.com ([o5v8ME_4M_M @ 00:01:28]); boberdoo.com ([EKrBDZYFq2A @ '
+                                   '00:08:00])'],
+                                  ['TrustedForm or Jornaya token placement across ping and post',
+                                   'Some companies send the token on the ping because buyers want it early',
+                                   'Others hold it for the post; masked values are offered as an option',
+                                   'boberdoo.com ([vNu0tV99Lnw @ 00:03:05])'],
+                                  ['Call buyer type ranked by earnings per call attempt',
+                                   '$50 buyer with 1-minute duration converting 50 of 100 calls yields $25',
+                                   '$30 buyer with no duration requirement wins on revenue divided by '
+                                   'attempts',
+                                   'boberdoo.com ([CSGuZ-Sping @ 00:33:26])']]}},
+              {'heading': 'Section 4: Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ["Post rejects are the leak the presenters attack hardest. 'You never want to "
+                              "have post rejects,' one webinar states, adding that a duplicate is the only "
+                              "valid reason to reject a post, and that otherwise the buyer 'got the full "
+                              "lead posted to them but they're not charged for it' [EKrBDZYFq2A @ "
+                              "00:34:50]. The 'What Is Ping Post?' explainer lists the causes operators "
+                              'actually hit: vendors sending additional fields that cause the filter set '
+                              "to exclude, which it calls 'very common,' plus duplicates, outside "
+                              'lead-scoring and DNC checks, and errors from a missing lead ID or '
+                              'misconfiguration [vNu0tV99Lnw @ 00:07:35]. Because processing is sequential '
+                              "and the system waits for the buyer's success response before returning "
+                              'Matched to the vendor, any break in that chain lands as a reject. The '
+                              'volume check is blunt: 10,000 pings against 5 posts means it is time to '
+                              "question the vendor [EKrBDZYFq2A @ 00:32:42]. The overview demo's ping-post "
+                              'reports show outgoing pings versus accepted for both lead sellers and '
+                              'partners, which is where that ratio surfaces [DSbDVWpyXUI @ 00:40:20]. For '
+                              'the forensic pass, the show lead log, which the same webinar calls your '
+                              'best friend on the leads page, exposes the raw buyer responses behind each '
+                              'ping.',
+                              'Call campaigns break in ways web leads never do. The calls webinar reports '
+                              'clients typing 120 into a filter set or response field thinking it meant '
+                              'seconds, when the system read it as a 120-minute duration, because duration '
+                              'defaults to minutes and support can handle the correction through a ticket '
+                              'or chat [CSGuZ-Sping @ 00:17:10]. Cadence kills call campaigns too: the '
+                              'data has to be submitted before the call comes in, and the ramp-up rule is '
+                              "one small geo, a low daily cap and a few days of testing, because 'one "
+                              "success does not equal a campaign that is live and troubleshooted' "
+                              '[CSGuZ-Sping @ 00:29:22]. The cautionary tale is a single 99999 test zip '
+                              "that produced '30 calls promised day one' complaints [CSGuZ-Sping @ "
+                              '00:31:03]. Billing buffers bite on the general demo as well: on a 60-second '
+                              'buffer a 59-second call is declined, and the JavaScript number display '
+                              'exists to hide the phone number when no buyer is available, such as at 1 '
+                              'a.m. [I3MdV-IDLRk @ 00:26:48]. Repeat callers get routed back to the '
+                              'original buyer through a phone duplicity check, and the internal Do Not '
+                              "Call list 'is not hooked up with any state or federal databases.'",
+                              'The money traps sit with buyers, not traffic. Without a refund-percentage '
+                              'limit a buyer can refund 90% of leads, which is why the general demo builds '
+                              'the guard in, alongside commission calculated on gross margin [I3MdV-IDLRk '
+                              '@ 00:19:21]. The overview presenter names capping a refund limit as a '
+                              'personal favorite, with an example of 15% over 30 days, warning that a '
+                              'buyer could otherwise refund 90 of 100 leads [yCAVYNpSdZI @ 00:22:50]. '
+                              "Typos are the second bleed: 'Maybe you put a lead buyer in to purchase "
+                              "leads at $1,000 and carving out a 10% profit margin,' which is exactly what "
+                              'the max best price offer ceiling is built to stop [yCAVYNpSdZI @ 00:17:57]. '
+                              'Credit risk runs upstream too: the general demo warns that unpaid bills '
+                              'from one large client can sink call-tracking firms [I3MdV-IDLRk @ '
+                              '00:52:52]. Funding is the operational gate. Buyers need an active account, '
+                              'available funds and a filter set before they match, and the authorize.net '
+                              'CIM example rebills $500 the moment the balance falls below $50. Source '
+                              'pricing gets the same discipline, with paid search set at $20 against $10 '
+                              'for display, and about 30 source switches control each source.'],
+               'table': {'caption': 'Firsthand failure modes and the checks the presenters attach to each '
+                                    'one',
+                         'headers': ['Failure Mode',
+                                     'What Happened Or Was Warned',
+                                     'Operator Check Taught',
+                                     'Expert Source'],
+                         'rows': [['Seconds-versus-minutes confusion in call duration fields',
+                                   'Clients entered 120 thinking seconds; the system returned a 120-minute '
+                                   'duration',
+                                   'Remember duration defaults to minutes; support corrects it through '
+                                   'ticket or chat',
+                                   'boberdoo.com ([CSGuZ-Sping @ 00:17:10])'],
+                                  ['Launching a call campaign off a single test zip',
+                                   "One 99999 test zip led to '30 calls promised day one' complaints",
+                                   'Start with one small geo, a low daily cap, and days of testing',
+                                   'boberdoo.com ([CSGuZ-Sping @ 00:31:03])'],
+                                  ['Uncapped buyer refunds draining sold lead revenue',
+                                   'A buyer could refund 90 of 100 leads without any refund limit',
+                                   'Cap refunds, for example at 15% over a 30-day window',
+                                   'boberdoo.com ([DSbDVWpyXUI @ 00:23:05])'],
+                                  ['Fat-finger buyer price pushing outsized offers to vendors',
+                                   'A buyer entered at $1,000 with a 10% margin carved out',
+                                   'Set the maximum best price offer ceiling, for example capping at $45',
+                                   'boberdoo.com ([yCAVYNpSdZI @ 00:17:57]); boberdoo.com ([YLw0lKsOayk @ '
+                                   '00:11:18])'],
+                                  ['Ping volume that never converts into real posts',
+                                   'A vendor sending 10,000 pings while only 5 posts ever arrive',
+                                   'Question the vendor and filter the leads page down to pings only',
+                                   'boberdoo.com ([EKrBDZYFq2A @ 00:32:42])'],
+                                  ['Partner hash matching failing on shared lead sales',
+                                   'No industry standard for passed fields, so mismatched field names '
+                                   'break matching',
+                                   'Agree on fields up front and use the XML post method for hashes',
+                                   'boberdoo.com ([W03nRhCi63A @ 00:36:20]); boberdoo.com ([W03nRhCi63A @ '
+                                   '00:38:12])'],
+                                  ['Email delivery choking on hosting provider sending limits',
+                                   'GoDaddy SMTP carries daily limits, and email-open tracking is not '
+                                   'exact science',
+                                   'Supply your own SMTP; most people opt for a third-party service such '
+                                   'as srid',
+                                   'boberdoo.com ([lpWTQpnduYo @ 00:32:55])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Four Checks Before Live Ping-Post Traffic',
+                           'body': 'Each gate below comes straight from a loss, complaint, or warning the '
+                                   'boberdoo presenters reported on lead and call auctions [boberdoo.com — '
+                                   'EKrBDZYFq2A @ 00:34:50].',
+                           'items': ['Verify every call duration field is entered in minutes, after '
+                                     'clients typed 120 believing it meant seconds and got a 120-minute '
+                                     'duration [boberdoo.com — CSGuZ-Sping @ 00:17:10].',
+                                     'Hold new call campaigns at one small geo and a low daily cap for a '
+                                     'few days, because one success does not equal a live, troubleshooted '
+                                     'campaign [boberdoo.com — CSGuZ-Sping @ 00:29:22].',
+                                     "Start every dynamic source on 'Yes' before enabling 'yes but sold "
+                                     "non-exclusively,' since the fallback can sell a lead at a loss "
+                                     '[boberdoo.com — EKrBDZYFq2A @ 00:23:24].',
+                                     'Install a refund cap such as 15% over 30 days before onboarding '
+                                     'buyers who could otherwise refund 90 of 100 leads [boberdoo.com — '
+                                     'yCAVYNpSdZI @ 00:22:50].']}}],
+ 'pull_quote': "'One success does not equal a campaign that is live and troubleshooted.' — boberdoo.com "
+               '(CSGuZ-Sping @ 00:29:22).',
+ 'diagram_id': 'diag-05',
+ 'action_checklist': ['Hand each vendor three items before the first ping: the ping post specs, their '
+                      'unique API key, and their unique SRC [boberdoo.com — IG4BgI8XMPA @ 00:05:14].',
+                      'Set dynamic vendor sources to a lead cost of 0 and enable the return best price '
+                      "parameter on 'Yes' or 'yes but sold non exclusively' [boberdoo.com — lpWTQpnduYo @ "
+                      '00:04:03].',
+                      'Run 20 seconds on the ping and 60 on the post unless the vendor requires shorter '
+                      'timeouts [boberdoo.com — W03nRhCi63A @ 00:29:02].',
+                      'On a Lead Prosper buyer setup, send POST JSON with Mode=ping, Return_Best_Price=1 '
+                      'for dynamic vendors, and map /response/status to Matched and /response/price as the '
+                      'real-time price [Lead Prosper — Ma1kH51odZ0 @ 00:01:13].',
+                      'Turn on scenarios so the system compares one exclusive buyer against the sum of '
+                      'non-exclusive buyers and picks the higher total [boberdoo.com — yCAVYNpSdZI @ '
+                      '00:14:59].',
+                      'Watch closes daily: raise bids when nothing closes all day, and pause accounts when '
+                      'the phones go down [boberdoo.com — lpWTQpnduYo @ 00:22:07].'],
+ 'statutory_citations': [{'title': 'boberdoo.com — boberdoo Ping Post Webinar | Ping Post Software Experts '
+                                   '[00:23:24]',
+                          'url': 'https://www.youtube.com/watch?v=EKrBDZYFq2A&t=1404s',
+                          'relevance': "Primary practitioner testimony on choosing 'Yes' over "
+                                       'non-exclusive fallback and eliminating post rejects.'},
+                         {'title': 'boberdoo.com — Ping Post For Calls Webinar [00:29:22]',
+                          'url': 'https://www.youtube.com/watch?v=CSGuZ-Sping&t=1762s',
+                          'relevance': 'Primary practitioner testimony on call campaign ramp-up, duration '
+                                       'units, and earnings-per-call buyer ranking.'},
+                         {'title': 'boberdoo.com — Ping Post Lead Distribution | boberdoo Ping Post '
+                                   'Software [00:16:56]',
+                          'url': 'https://www.youtube.com/watch?v=yCAVYNpSdZI&t=1016s',
+                          'relevance': 'Primary practitioner testimony on return best price modes, refund '
+                                       'caps, typo ceilings, and rev-share limits.'},
+                         {'title': 'boberdoo.com — Ping Post Webinar | boberdoo Ping Options Software '
+                                   '[00:12:17]',
+                          'url': 'https://www.youtube.com/watch?v=IG4BgI8XMPA&t=737s',
+                          'relevance': 'Primary practitioner testimony on non-exclusive resale fallback, '
+                                       'margin math, and lead log diagnostics.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'I3MdV-IDLRk',
+                       'title': 'Lead Distribution Software Demo With Call Routing by boberdoo',
+                       'channel': 'boberdoo.com',
+                       'author': 'boberdoo.com',
+                       'text': 'Matching priority, everything defaults to a five and clients on the same '
+                               'priority just go into a round robin.',
+                       'tip': 'Matching priority, everything defaults to a five and clients on the same '
+                              'priority just go into a round robin.',
+                       'timestamp': 1448,
+                       'timestamp_seconds': 1448,
+                       'timestamp_label': '[00:24:08]',
+                       'url': 'https://www.youtube.com/watch?v=I3MdV-IDLRk&t=1448s',
+                       'markdown': '[00:24:08](https://www.youtube.com/watch?v=I3MdV-IDLRk&t=1448s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'YLw0lKsOayk',
+                       'title': 'Ping Post Webinar 11/12/13 | boberdoo Ping/Post System',
+                       'channel': 'boberdoo.com',
+                       'author': 'boberdoo.com',
+                       'text': "If I'm a seller and I ping your system, if I don't get a response back in "
+                               '20 seconds, the system is automatically going to return back just a '
+                               'generic unmatched.',
+                       'tip': "If I'm a seller and I ping your system, if I don't get a response back in "
+                              '20 seconds, the system is automatically going to return back just a generic '
+                              'unmatched.',
+                       'timestamp': 591,
+                       'timestamp_seconds': 591,
+                       'timestamp_label': '[00:09:51]',
+                       'url': 'https://www.youtube.com/watch?v=YLw0lKsOayk&t=591s',
+                       'markdown': '[00:09:51](https://www.youtube.com/watch?v=YLw0lKsOayk&t=591s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'CSGuZ-Sping',
+                       'title': 'Ping Post For Calls Webinar',
+                       'channel': 'boberdoo.com',
+                       'author': 'boberdoo.com',
+                       'text': 'Run it for a few days; one success does not equal a campaign that is live '
+                               'and troubleshooted.',
+                       'tip': 'Run it for a few days; one success does not equal a campaign that is live '
+                              'and troubleshooted.',
+                       'timestamp': 1762,
+                       'timestamp_seconds': 1762,
+                       'timestamp_label': '[00:29:22]',
+                       'url': 'https://www.youtube.com/watch?v=CSGuZ-Sping&t=1762s',
+                       'markdown': '[00:29:22](https://www.youtube.com/watch?v=CSGuZ-Sping&t=1762s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'd1FxjZ5ukI4',
+                       'title': 'How To Sell Calls | boberdoo Call Routing Software',
+                       'channel': 'boberdoo.com',
+                       'author': 'boberdoo.com',
+                       'text': "Lead buyers like calls because it's virtually 100% contact rate; the more "
+                               'people they talk to, the more they close.',
+                       'tip': "Lead buyers like calls because it's virtually 100% contact rate; the more "
+                              'people they talk to, the more they close.',
+                       'timestamp': 77,
+                       'timestamp_seconds': 77,
+                       'timestamp_label': '[00:01:17]',
+                       'url': 'https://www.youtube.com/watch?v=d1FxjZ5ukI4&t=77s',
+                       'markdown': '[00:01:17](https://www.youtube.com/watch?v=d1FxjZ5ukI4&t=77s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'W03nRhCi63A',
+                       'title': 'Ping Post Webinar | boberdoo Ping Post Software',
+                       'channel': 'boberdoo.com',
+                       'author': 'boberdoo.com',
+                       'text': "Sell it twice at $12, you're going to make 24 compared to 20, and that's "
+                               'what the scenarios does.',
+                       'tip': "Sell it twice at $12, you're going to make 24 compared to 20, and that's "
+                              'what the scenarios does.',
+                       'timestamp': 1906,
+                       'timestamp_seconds': 1906,
+                       'timestamp_label': '[00:31:46]',
+                       'url': 'https://www.youtube.com/watch?v=W03nRhCi63A&t=1906s',
+                       'markdown': '[00:31:46](https://www.youtube.com/watch?v=W03nRhCi63A&t=1906s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'lpWTQpnduYo',
+                       'title': 'Ping Post Webinar 3/2015 | boberdoo Ping Post Software',
+                       'channel': 'boberdoo.com',
+                       'author': 'boberdoo.com',
+                       'text': 'It is then up to the vendor if they accept that $8 offer to then send the '
+                               'post through.',
+                       'tip': 'It is then up to the vendor if they accept that $8 offer to then send the '
+                              'post through.',
+                       'timestamp': 343,
+                       'timestamp_seconds': 343,
+                       'timestamp_label': '[00:05:43]',
+                       'url': 'https://www.youtube.com/watch?v=lpWTQpnduYo&t=343s',
+                       'markdown': '[00:05:43](https://www.youtube.com/watch?v=lpWTQpnduYo&t=343s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'vNu0tV99Lnw',
+                       'title': 'What Is Ping Post?',
+                       'channel': 'boberdoo.com',
+                       'author': 'boberdoo.com',
+                       'text': "They sent additional fields that cause the filter set to exclude; that's "
+                               'very common.',
+                       'tip': "They sent additional fields that cause the filter set to exclude; that's "
+                              'very common.',
+                       'timestamp': 455,
+                       'timestamp_seconds': 455,
+                       'timestamp_label': '[00:07:35]',
+                       'url': 'https://www.youtube.com/watch?v=vNu0tV99Lnw&t=455s',
+                       'markdown': '[00:07:35](https://www.youtube.com/watch?v=vNu0tV99Lnw&t=455s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'EKrBDZYFq2A',
+                       'title': 'boberdoo Ping Post Webinar | Ping Post Software Experts',
+                       'channel': 'boberdoo.com',
+                       'author': 'boberdoo.com',
+                       'text': 'You could in theory end up with a lead selling at a loss.',
+                       'tip': 'You could in theory end up with a lead selling at a loss.',
+                       'timestamp': 1368,
+                       'timestamp_seconds': 1368,
+                       'timestamp_label': '[00:22:48]',
+                       'url': 'https://www.youtube.com/watch?v=EKrBDZYFq2A&t=1368s',
+                       'markdown': '[00:22:48](https://www.youtube.com/watch?v=EKrBDZYFq2A&t=1368s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'EKrBDZYFq2A',
+                       'title': 'boberdoo Ping Post Webinar | Ping Post Software Experts',
+                       'channel': 'boberdoo.com',
+                       'author': 'boberdoo.com',
+                       'text': 'You never want to have post rejects.',
+                       'tip': 'You never want to have post rejects.',
+                       'timestamp': 2090,
+                       'timestamp_seconds': 2090,
+                       'timestamp_label': '[00:34:50]',
+                       'url': 'https://www.youtube.com/watch?v=EKrBDZYFq2A&t=2090s',
+                       'markdown': '[00:34:50](https://www.youtube.com/watch?v=EKrBDZYFq2A&t=2090s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'BvWILZyxIIA',
+                       'title': 'boberdoo Demo',
+                       'channel': 'boberdoo.com',
+                       'author': 'boberdoo.com',
+                       'text': 'Each experiment can be set up in quarantine with a specific percentage of '
+                               'pings so as not to cannibalize all of the traffic.',
+                       'tip': 'Each experiment can be set up in quarantine with a specific percentage of '
+                              'pings so as not to cannibalize all of the traffic.',
+                       'timestamp': 916,
+                       'timestamp_seconds': 916,
+                       'timestamp_label': '[00:15:16]',
+                       'url': 'https://www.youtube.com/watch?v=BvWILZyxIIA&t=916s',
+                       'markdown': '[00:15:16](https://www.youtube.com/watch?v=BvWILZyxIIA&t=916s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Ma1kH51odZ0',
+                       'title': 'Boberdoo Ping Post Buyer Setup',
+                       'channel': 'Lead Prosper',
+                       'author': 'Lead Prosper',
+                       'text': 'The next field, Mode, is very important.',
+                       'tip': 'The next field, Mode, is very important.',
+                       'timestamp': 55,
+                       'timestamp_seconds': 55,
+                       'timestamp_label': '[00:00:55]',
+                       'url': 'https://www.youtube.com/watch?v=Ma1kH51odZ0&t=55s',
+                       'markdown': '[00:00:55](https://www.youtube.com/watch?v=Ma1kH51odZ0&t=55s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'P79C92BNJHs',
+                       'title': 'How To Ping Post Specifications | boberdoo Ping/Post Software',
+                       'channel': 'boberdoo.com',
+                       'author': 'boberdoo.com',
+                       'text': "Finally there's lead id which shouldn't be sent on the ping, only on the "
+                               'post.',
+                       'tip': "Finally there's lead id which shouldn't be sent on the ping, only on the "
+                              'post.',
+                       'timestamp': 77,
+                       'timestamp_seconds': 77,
+                       'timestamp_label': '[00:01:17]',
+                       'url': 'https://www.youtube.com/watch?v=P79C92BNJHs&t=77s',
+                       'markdown': '[00:01:17](https://www.youtube.com/watch?v=P79C92BNJHs&t=77s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'yCAVYNpSdZI',
+                       'title': 'Ping Post Lead Distribution | boberdoo Ping Post Software',
+                       'channel': 'boberdoo.com',
+                       'author': 'boberdoo.com',
+                       'text': "So if you're going to do rev sharing models, I would recommend it not "
+                               'being in a ping post fashion.',
+                       'tip': "So if you're going to do rev sharing models, I would recommend it not being "
+                              'in a ping post fashion.',
+                       'timestamp': 1513,
+                       'timestamp_seconds': 1513,
+                       'timestamp_label': '[00:25:13]',
+                       'url': 'https://www.youtube.com/watch?v=yCAVYNpSdZI&t=1513s',
+                       'markdown': '[00:25:13](https://www.youtube.com/watch?v=yCAVYNpSdZI&t=1513s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'CLgSYIHZ_GY',
+                       'title': 'How To Ping Post Specifications | boberdoo Ping Post Software',
+                       'channel': 'boberdoo.com',
+                       'author': 'boberdoo.com',
+                       'text': 'Lead ID is sent on the post only, echoing the ID returned in the '
+                               'successful ping response so the post matches its ping.',
+                       'tip': 'Lead ID is sent on the post only, echoing the ID returned in the successful '
+                              'ping response so the post matches its ping.',
+                       'timestamp': 75,
+                       'timestamp_seconds': 75,
+                       'timestamp_label': '[00:01:15]',
+                       'url': 'https://www.youtube.com/watch?v=CLgSYIHZ_GY&t=75s',
+                       'markdown': '[00:01:15](https://www.youtube.com/watch?v=CLgSYIHZ_GY&t=75s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'o5v8ME_4M_M',
+                       'title': 'How To Ping Post Basics | boberdoo Lead Distribution Software',
+                       'channel': 'boberdoo.com',
+                       'author': 'boberdoo.com',
+                       'text': 'To sell shared leads, raise partners-per-lead in the source, select yes '
+                               'but sold non exclusively, and set buyer exclusivity to none.',
+                       'tip': 'To sell shared leads, raise partners-per-lead in the source, select yes but '
+                              'sold non exclusively, and set buyer exclusivity to none.',
+                       'timestamp': 54,
+                       'timestamp_seconds': 54,
+                       'timestamp_label': '[00:00:54]',
+                       'url': 'https://www.youtube.com/watch?v=o5v8ME_4M_M&t=54s',
+                       'markdown': '[00:00:54](https://www.youtube.com/watch?v=o5v8ME_4M_M&t=54s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'DSbDVWpyXUI',
+                       'title': 'boberdoo.com Overview Demo With Ping Post | Lead Software',
+                       'channel': 'boberdoo.com',
+                       'author': 'boberdoo.com',
+                       'text': 'The vendor premium margin lets you reward high quality or high volume lead '
+                               'sellers.',
+                       'tip': 'The vendor premium margin lets you reward high quality or high volume lead '
+                              'sellers.',
+                       'timestamp': 1162,
+                       'timestamp_seconds': 1162,
+                       'timestamp_label': '[00:19:22]',
+                       'url': 'https://www.youtube.com/watch?v=DSbDVWpyXUI&t=1162s',
+                       'markdown': '[00:19:22](https://www.youtube.com/watch?v=DSbDVWpyXUI&t=1162s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'IG4BgI8XMPA',
+                       'title': 'Ping Post Webinar | boberdoo Ping Options Software',
+                       'channel': 'boberdoo.com',
+                       'author': 'boberdoo.com',
+                       'text': 'We look at the two offers from this account, 25 after the margin was set '
+                               'to 50 percent, we offered 12.50 back to the vendor compared to this '
+                               'particular account that offered 15 and after margin was only 12.',
+                       'tip': 'We look at the two offers from this account, 25 after the margin was set to '
+                              '50 percent, we offered 12.50 back to the vendor compared to this particular '
+                              'account that offered 15 and after margin was only 12.',
+                       'timestamp': 1528,
+                       'timestamp_seconds': 1528,
+                       'timestamp_label': '[00:25:28]',
+                       'url': 'https://www.youtube.com/watch?v=IG4BgI8XMPA&t=1528s',
+                       'markdown': '[00:25:28](https://www.youtube.com/watch?v=IG4BgI8XMPA&t=1528s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'}]}

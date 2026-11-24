@@ -1,684 +1,834 @@
 from __future__ import annotations
 
-CHAPTER_1 = {
-    "id": "Q1",
-    "chapter_id": "Q1",
-    "chapter_number": 1,
-    "question_number": 1,
-    "slug": "cell-tower-digital-billboard-ios-lease-arbitrage",
-    "question_prompt": "What exactly is cell-tower, digital-billboard & ios lease arbitrage, how is real operator revenue recognized vs underlying asset/client GMV, and what separates durable small-team moats from fragile beginner hype?",
-    "kicker": "Q1 / THE BIG MONEY PLAYBOOKS",
-    "title": "What Exactly Is Cell-Tower, Digital-Billboard & IOS Lease Arbitrage?",
-    "subtitle": "Telecom Easement Spreads, 23 U.S.C. § 131 Billboard Controls, Lender SNDAs, and NNN Fleet-Yard Lease Economics",
-    "layout_template": "opportunity_overview",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #42, ranked #11 of 42 with a 91/100 Money-to-Manpower Score, converts "
-        "fragmented infrastructure rights into transferable, collectible cash flows. Its 11 mapped "
-        "plays connect telecom easement acquisitions, digital-billboard rights, IOS master leases, "
-        "consent packaging, and permission-based prospect routing. The operator earns net buyout "
-        "spreads, permit assignment fees, and retained yard lease spreads—not institutional purchase "
-        "principal, advertiser spending, or tenant fleet value. Formula v2.0 produces annual owner "
-        "profit of $33,600 Conservative, $214,000 Base, and $494,000 Scaled. Durable advantages "
-        "come from parcel intelligence, enforceable assignment language, lender recognition, "
-        "environmental diligence, and disciplined collections. Start with conditional control, "
-        "prove the permitted use and buyer economics, and fund irreversible obligations only "
-        "after the rights and operating costs reconcile."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$120,000",
-            "context": "Annual scorecard revenue from net spreads and earned fees",
-            "note": "28% margin; $33,600 owner profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Base",
-            "value": "$535,000",
-            "context": "Annual scorecard revenue from net spreads and earned fees",
-            "note": "40.0% margin; $214,000 owner profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$950,000",
-            "context": "Annual scorecard revenue from net spreads and earned fees",
-            "note": "52% margin; $494,000 owner profit; 2 FT + 4 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Buy conditional control of rights, not a story about land",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Cell-tower, digital-billboard, and Industrial Outdoor Storage lease arbitrage "
-                    "is the business of controlling a narrowly defined property right, improving "
-                    "its transferability or utilization, and retaining the resulting spread. A "
-                    "telecom operator may acquire a landowner's rent stream through a recorded "
-                    "easement and sell that interest to a qualified infrastructure buyer. A "
-                    "billboard operator may assemble a ground lease, site approvals, and transferable "
-                    "permit rights, then assign the package without building a sign. An IOS "
-                    "operator leases a suitable yard and sublets authorized spaces to fleets or "
-                    "equipment users. These transactions share a workflow, not identical economics "
-                    "or accounting. A perpetual easement does not make a tenant's lease perpetual; "
-                    "termination rights, equipment removal, access, and renewal options still "
-                    "govern collectible income. A billboard permit does not establish ownership "
-                    "of the supporting structure or authority for digital conversion. An empty "
-                    "industrial parcel does not establish permission for overnight truck parking. "
-                    "The product is therefore a documented bundle of use, access, income, and "
-                    "transfer rights. Before pricing that bundle, identify exactly who owns each "
-                    "right, whose consent is needed, which obligations survive assignment, and "
-                    "what happens when the paying tenant disappears. The strongest small-team "
-                    "operator removes these uncertainties before competing for capital."
-                ),
-                (
-                    "The principal mapped play, dot_digital_billboard_and_ios_master_lease_flip, "
-                    "combines two separate underwriting tracks rather than treating a sign location "
-                    "and a truck yard as interchangeable inventory. For a billboard, obtain a "
-                    "conditional site option only after testing Highway Beautification Act coverage, "
-                    "state DOT spacing and digital-operation rules, and municipal sign zoning. "
-                    "For IOS, screen three- to ten-acre sites for heavy-axle access, authorized "
-                    "storage, drainage, and explicit subletting rights. Suppose ground rent is "
-                    "$5,000 monthly and supported NNN subrent is $11,000: the 2.2x ratio creates "
-                    "$72,000 annual contractual spread before vacancy and retained site costs. "
-                    "At 90% collection and $12,000 of retained annual costs, contribution falls "
-                    "to $46,800. A 2.0x–2.8x target is useful only when signed demand and actual "
-                    "usable area support it. Likewise, $24,000 annual telecom rent multiplied by "
-                    "16x–22x produces a $384,000–$528,000 valuation sensitivity, not an executable "
-                    "bid. Buyers price net income, tenant termination exposure, remaining term, "
-                    "access, and title. If conditions fail, exercise negotiated termination rights "
-                    "before expiry, avoid unfunded construction commitments, and retain only "
-                    "independently viable permitted operations. Pursue a consented alternative "
-                    "use or buyer without carrying the advertised multiple into the replacement "
-                    "underwriting."
-                ),
-                (
-                    "Use 11 mapped operating applications to organize the chapter's pipeline: "
-                    "the combined billboard-and-IOS control play; high_velocity_dm_outbound_systems; "
-                    "tower-rent easement acquisition; rooftop telecom-right acquisition; telecom "
-                    "renewal cleanup; billboard option origination; permit-ready assignment; "
-                    "fleet-yard master leasing; equipment-storage subletting; lender SNDA packaging; "
-                    "and gated-yard billing optimization. The last nine are descriptive workflow "
-                    "applications, not additional supplied play identifiers or eleven independent "
-                    "revenue streams. Several improve the same transaction and must not generate "
-                    "duplicate revenue entries. Five commercial archetypes emerge: telecom "
-                    "principal, rooftop specialist, billboard-rights assembler, IOS spread operator, "
-                    "and contracted diligence coordinator. The coordinator sells defined work; "
-                    "the principal bears acquisition or lease obligations. A person negotiating "
-                    "another owner's lease for compensation may need a state brokerage license "
-                    "even when the compensation is called an assignment fee. California Business "
-                    "and Professions Code § 10131 illustrates the activity-based analysis; ownership "
-                    "of an option should not be treated as a universal exemption. Written engagement "
-                    "scope, actual principal status, and local requirements determine the correct "
-                    "structure. Start with one archetype and one county cluster. That constraint "
-                    "makes title patterns, tenant behavior, permit reviewers, and contractor "
-                    "pricing reusable instead of forcing a small team to relearn a different "
-                    "market on every deal."
-                ),
-            ],
-            "table": {
-                "caption": "Five Operator Archetypes: Controlled Rights, Earned Economics, and Failure Exposure",
-                "headers": [
-                    "Operator archetype and controlled property interest",
-                    "Specific sourcing and diligence tool stack",
-                    "Fee structure and retained economic interest",
-                    "Durable advantage and principal failure exposure",
-                ],
-                "rows": [
-                    [
-                        "Telecom easement principal acquiring documented landowner rental interests",
-                        "FCC ASR, county recorder documents, and title commitment exceptions",
-                        "Buyer proceeds less acquired interest basis determine transaction spread",
-                        "Transferable access rights create value; tenant termination destroys duration",
-                    ],
-                    [
-                        "Rooftop telecom specialist controlling expressly described roof equipment rights",
-                        "FCC ULS, building plans, structural reports, and executed leases",
-                        "Retained acquisition spread excludes building value and carrier equipment",
-                        "Roof replacement allocation protects margin; relocation disputes delay exits",
-                    ],
-                    [
-                        "Billboard rights assembler holding conditional ground lease assignment rights",
-                        "State DOT permit systems, municipal zoning maps, and Geopath",
-                        "Earned assignment consideration follows effective transfer of specified rights",
-                        "Scarce permitted locations matter; digital conversion restrictions erase assumptions",
-                    ],
-                    [
-                        "IOS master lessee controlling authorized fleet and equipment storage",
-                        "QGIS, FEMA flood maps, environmental reports, and access logs",
-                        "Collected subrent less ground obligations measures retained lease spread",
-                        "Reliable heavy-vehicle access compounds demand; drainage liabilities consume spread",
-                    ],
-                    [
-                        "Contracted diligence coordinator delivering specified infrastructure documentation packages",
-                        "County records, lender correspondence, DocuSign, and indexed closing folders",
-                        "Agreed service fees follow completed contractual deliverables and acceptance",
-                        "Repeatable documentation earns trust; regulated negotiation exceeds permitted scope",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Improve the right before negotiating the headline price",
-                "body": (
-                    "The repeatable edge is a cleaner transfer package and a narrower downside, "
-                    "not a larger advertised purchase multiple."
-                ),
-                "items": [
-                    "Request the tenant's current rent ledger and every amendment before applying a multiple; reconcile escalators, abatements, and termination notices to deposits.",
-                    "Overlay state DOT sign locations with parcel boundaries before owner outreach; a highway-visible parcel can still fail spacing or controlled-route requirements.",
-                    "Price IOS capacity from a turning template and fire-lane layout rather than gross acreage; dead corners and drainage strips cannot pay rent.",
-                    "Send the lender a marked site exhibit, proposed priority treatment, and draft recognition terms together; fragmented requests prolong SNDA negotiations.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Separate gross cash movement from retained operator revenue",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Formula v2.0 uses a normalized operator revenue basis: net easement buyout "
-                    "flip spreads, billboard permit assignment fees, and retained NNN IOS "
-                    "master-lease spreads. Its gross revenue label refers to that aggregate "
-                    "operator basis, not all cash passing through escrow or a rent collection "
-                    "account. Consider an illustrative easement acquired for $360,000 and "
-                    "transferred for $420,000. The scorecard records $60,000 of spread, not "
-                    "$420,000 of operator revenue; if closing costs are $8,000, transaction "
-                    "contribution becomes $52,000 before overhead. A $40,000 assignment fee "
-                    "earned upon effective transfer is distinct from a buyer's separate "
-                    "$300,000 construction budget. For an IOS yard collecting $11,000 monthly "
-                    "against $5,000 ground rent, the normalized annual spread is $72,000 "
-                    "before other retained costs. Tenant cargo value, fleet value, advertiser "
-                    "sales, and institutional purchase principal never enter this scorecard. "
-                    "Maintain separate fields for gross receipts, pass-through obligations, "
-                    "normalized retained revenue, and expenses. That bridge prevents a pitch "
-                    "deck from adding the same rent stream as both transaction proceeds and "
-                    "ongoing revenue after it has been sold. Record deposits separately until "
-                    "their contractual treatment is established; cash in the bank alone does "
-                    "not establish earned revenue."
-                ),
-                (
-                    "Do not turn the normalized scorecard into an automatic statutory reporting "
-                    "policy. ASC 606 principal-versus-agent analysis concerns control of specified "
-                    "goods or services and can require gross or net presentation for qualifying "
-                    "service arrangements. A principal's IOS lease and sublease accounting "
-                    "generally falls under ASC 842, while a property-interest disposition may "
-                    "require other guidance, including ASC 610-20 where applicable. Accordingly, "
-                    "a principal master lessee can report sublease income separately from head "
-                    "lease expense even though this playbook measures the retained spread. "
-                    "Where a service arrangement genuinely uses a retained_share, calculate "
-                    "recognized agency revenue from the supported retained amount rather than "
-                    "the customer's entire payment. No universal retained_share percentage is "
-                    "supplied here. Obtain a transaction-specific accounting memo and reconcile "
-                    "its presentation to the normalized operating model. A conditional permit "
-                    "assignment can remain unearned while agency acceptance or contractual "
-                    "transfer conditions are outstanding. Refund provisions, holdbacks, seller "
-                    "indemnities, and unresolved performance obligations also affect timing "
-                    "and measurement. An executed purchase agreement is therefore pipeline "
-                    "evidence, not permission to recognize the anticipated spread immediately. "
-                    "Match each ledger entry to the controlling contract, effective transfer "
-                    "date, settlement statement, and any continuing obligation before publishing "
-                    "monthly results to a buyer or lender."
-                ),
-                (
-                    "The three annual cases reconcile exactly to the canonical scorecard. "
-                    "Conservative revenue of $120,000 less $86,400 of modeled expenses yields "
-                    "$33,600 owner profit at 28%. Base revenue of $535,000 less $321,000 "
-                    "yields $214,000 at 40.0%. Scaled revenue of $950,000 less $456,000 "
-                    "yields $494,000 at 52%. These are annual operating cases, not quotations "
-                    "for a particular property's rent or promised deal production. The "
-                    "Conservative and Base teams each contain one full-time operator plus "
-                    "three contractors; Scaled uses two full-time operators plus four "
-                    "contractors, six people total. Contractor counts do not imply full-time "
-                    "capacity. The stated $2,000–$12,000 monthly operating range covers "
-                    "$24,000–$144,000 annually and cannot by itself explain every case's "
-                    "total expense load; transaction work, variable delivery, and staffing "
-                    "must occupy the remaining cost categories without double counting "
-                    "ground rent already netted from spreads. Startup capital of "
-                    "$12,000–$60,000 supports options, diligence, and working reserves, "
-                    "not unrestricted purchases of six-figure easements. Use buyer-funded "
-                    "closings or separately committed acquisition capital when required. "
-                    "With first deals taking two to six months, schedule option deadlines, "
-                    "deposits, vendor invoices, and expected closings weekly rather than "
-                    "assuming annual profit is immediately spendable cash."
-                ),
-            ],
-            "table": {
-                "caption": "Formula v2.0 Annual Reconciliation on the Normalized Operator Revenue Basis",
-                "headers": [
-                    "Canonical operating case and annual revenue",
-                    "Expense reconciliation and annual owner profit",
-                    "Staffing configuration and practical capacity constraint",
-                    "Revenue boundary and cash planning requirement",
-                ],
-                "rows": [
-                    [
-                        "Conservative case records $120,000 from retained spreads and fees",
-                        "$86,400 expenses leave $33,600 owner profit at 28% margin",
-                        "One full-time operator plus three contractors require selective mandates",
-                        "Exclude acquisition principal; reserve cash for delayed first closings",
-                    ],
-                    [
-                        "Base case records $535,000 from retained spreads and fees",
-                        "$321,000 expenses leave $214,000 owner profit at 40.0% margin",
-                        "One full-time operator plus three contractors need standardized packages",
-                        "Reconcile collections and holdbacks before treating spreads as spendable",
-                    ],
-                    [
-                        "Scaled case records $950,000 from retained spreads and fees",
-                        "$456,000 expenses leave $494,000 owner profit at 52% margin",
-                        "Two full-time operators plus four contractors total six people",
-                        "Separate recurring yard contribution from irregular rights assignment closings",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Define the economic unit",
-                    "action": "Open one deal record for each separately controlled property interest.",
-                    "detail": (
-                        "Identify the owner, parcel, counterparty, contract, rights being transferred, "
-                        "gross cash movement, and costs already netted from the scorecard basis."
-                    ),
-                },
-                {
-                    "step": 2,
-                    "title": "Establish recognition and transfer evidence",
-                    "action": "Map the transaction to its applicable accounting treatment and effective date.",
-                    "detail": (
-                        "Attach the service acceptance, assignment consent, lease commencement "
-                        "evidence, or recorded transfer and settlement statement as applicable."
-                    ),
-                },
-                {
-                    "step": 3,
-                    "title": "Bridge retained revenue to owner profit",
-                    "action": "Reconcile normalized spreads with ledger presentation and expense categories.",
-                    "detail": (
-                        "Show principal separately, prevent duplicate ground-rent deductions, "
-                        "and distinguish project costs from recurring overhead and holdbacks."
-                    ),
-                },
-                {
-                    "step": 4,
-                    "title": "Test cash survival before commitment",
-                    "action": "Stress the next thirteen weeks for delayed closing and lower collections.",
-                    "detail": (
-                        "Track refundable deposits, nonrefundable option costs, lender deadlines, "
-                        "contractor invoices, and the last date to terminate each conditional agreement."
-                    ),
-                },
-            ],
-        },
-        {
-            "heading": "3. Choose a sub-vertical where information becomes enforceable advantage",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Build the sourcing system around verifiable parcel events rather than a "
-                    "purchased list labeled motivated owners. FCC Antenna Structure Registration "
-                    "records identify registered structures, not every rooftop installation, "
-                    "tenant contract, or rent amount. FCC Universal Licensing System records "
-                    "add radio-license context but do not substitute for lease diligence. "
-                    "County assessor and recorder sources connect parcels to ownership and "
-                    "recorded encumbrances; QGIS joins those layers with state DOT annual "
-                    "average daily traffic counts and municipal zoning polygons. AADT supports "
-                    "road exposure analysis, not an assumption about billboard impressions or "
-                    "lease demand. Geopath can inform out-of-home audience evaluation where "
-                    "applicable, while actual sign permits establish the regulated location. "
-                    "For IOS, FEMA flood mapping, turning geometry, industrial neighbors, "
-                    "and nearby freight generators narrow the search before a broker tour. "
-                    "Use Crexi and LoopNet as listing and contact channels, not proof that "
-                    "an advertised outdoor-storage use is authorized. Save the source date, "
-                    "document link, parcel identifier, and unresolved question for every "
-                    "attribute. The moat is an evidence trail that shortens buyer diligence "
-                    "and catches contradictions early. A larger unverified spreadsheet merely "
-                    "increases the number of bad options that a small team can accidentally "
-                    "fund."
-                ),
-                (
-                    "The second named play, high_velocity_dm_outbound_systems, should route "
-                    "explicit interest into a qualified conversation rather than manufacture "
-                    "volume through unsolicited mass messaging. Publish a concrete landowner "
-                    "screening offer, such as a checklist for evaluating an existing tower "
-                    "rent stream, and configure supported Instagram or Facebook comment-to-message "
-                    "workflows through Meta tools or Manychat. Require a user-initiated comment, "
-                    "eligible reaction, or inbound message before dispatch, respecting each "
-                    "platform's supported triggers and messaging windows. Send external links "
-                    "only after the prospect replies. An illustrative funnel of 100 hand "
-                    "raisers, 40 replies, ten document-qualified owners, and two paid diligence "
-                    "engagements produces $3,000 at $1,500 per engagement. If software and "
-                    "review labor total $900, contribution is $2,100 before shared overhead "
-                    "and any refund. These fees require genuine deliverables and an appropriate "
-                    "licensed or otherwise permitted scope; they are not extra revenue "
-                    "automatically attached to every principal transaction. PeerFloodError "
-                    "or similar restrictions are stop signals, not invitations to rotate "
-                    "accounts or disguise traffic. If triggers are unsupported or replies "
-                    "stop, pause automated dispatch and continue only with user-requested "
-                    "contact. Deduplicate prospects across inboxes, preserve opt-outs, and "
-                    "avoid counting both a credited diligence fee and its replacement "
-                    "closing fee as incremental income."
-                ),
-                (
-                    "The comparison matrix separates fifteen sourcing and execution lanes so "
-                    "operators can match contract risk to team capability. Its fee mechanisms "
-                    "describe transaction structures, not advertised prices from the named "
-                    "platforms. Platforms supply records, listings, audience tools, payments, "
-                    "or access hardware; none establishes that a particular deal is available "
-                    "or that a buyer will accept its rights. Prefer lanes where the evidence "
-                    "can be standardized: existing rent streams with complete amendments, "
-                    "already permitted signs with documented transfer procedures, or yards "
-                    "with established authorized use and measurable tenant demand. Avoid "
-                    "stacking speculative rezoning, new utility service, environmental "
-                    "remediation, and uncommitted tenants in one beginner transaction. "
-                    "Model a failed close separately from a slow close: the former may "
-                    "lose an option payment, while the latter can consume months of "
-                    "rent and contractor attention. Every fee letter should identify "
-                    "delivery, acceptance, refund triggers, and what happens if a government "
-                    "agency or lender refuses consent. Every recurring spread model should "
-                    "identify vacancy, collection loss, maintenance responsibility, and "
-                    "restoration exposure. Expand into an adjacent lane only after the "
-                    "current lane has a repeatable document package, a measured conversion "
-                    "rate, and a tested cancellation path that does not depend on finding "
-                    "another optimistic buyer."
-                ),
-            ],
-            "table": {
-                "caption": "Fifteen Sub-Verticals Compared by Named Tools, Fee Mechanics, Moats, and Failure Triggers",
-                "headers": [
-                    "Sub-vertical and real named platform or source",
-                    "Specific fee structure or retained spread mechanism",
-                    "Defensible operating moat and repeatable evidence package",
-                    "Clawback exposure, failure trigger, and practical fallback",
-                ],
-                "rows": [
-                    [
-                        "Existing tower rent acquisitions using FCC ASR and county records",
-                        "Retain resale proceeds above purchased easement basis and transaction costs",
-                        "Reconciled rent histories and complete amendments reduce buyer diligence friction",
-                        "Tenant termination lowers bids; cancel conditional purchase before deposit forfeiture",
-                    ],
-                    [
-                        "Rooftop telecom rights using FCC ULS and municipal building records",
-                        "Earn negotiated acquisition spread after enforceable rooftop interest transfer closes",
-                        "Document structural access, relocation allocation, and roof replacement responsibilities clearly",
-                        "Building redevelopment conflicts impair rights; obtain relocation terms or withdraw",
-                    ],
-                    [
-                        "Telecom renewal cleanup using DocuSign and indexed lease document rooms",
-                        "Charge defined document coordination fees where contracted scope permits compensation",
-                        "Track renewal windows, escalator calculations, and missing signatures consistently across sites",
-                        "Unaccepted deliverables delay payment; correct omissions within contracted cure periods",
-                    ],
-                    [
-                        "Telecom lender recognition packages using county recorder and lender portals",
-                        "Earn milestone service fees for expressly contracted consent coordination work",
-                        "Provide lender-ready exhibits showing priority, access, and successor recognition requirements",
-                        "Lender refusal blocks durable transfer; renegotiate conditions or terminate acquisition",
-                    ],
-                    [
-                        "New highway sign options using state DOT maps and QGIS",
-                        "Receive assignment consideration only after contractual transfer conditions are satisfied",
-                        "Pre-screen route control, spacing, visibility, and local digital operation rules",
-                        "Spacing conflicts defeat permitting; exercise option termination before construction obligations",
-                    ],
-                    [
-                        "Existing billboard permit assignments using state DOT systems and Geopath",
-                        "Retain earned transfer fee excluding buyer construction and advertiser expenditures",
-                        "Reconcile permit holder, structure ownership, ground rights, and transfer procedure",
-                        "Agency rejects transfer application; follow negotiated refund and cancellation provisions",
-                    ],
-                    [
-                        "Static-to-digital sign conversions using municipal permit portals and Geopath",
-                        "Earn conditional development-right assignment fee after specified conversion approvals",
-                        "Document brightness limits, operating hours, utility capacity, and conversion eligibility",
-                        "Digital conversion denial removes premium; retain only viable authorized static use",
-                    ],
-                    [
-                        "Urban wall-sign rights using municipal zoning GIS and building records",
-                        "Collect authorized site-right assignment consideration under the negotiated transfer agreement",
-                        "Secure facade access, maintenance allocation, and enforceable owner transfer consent",
-                        "Historic district restrictions prevent installation; terminate conditional rights without construction",
-                    ],
-                    [
-                        "Fleet drop-yard master leases sourced through Crexi and LoopNet",
-                        "Retain collected NNN subrent above ground rent and retained expenses",
-                        "Verify turning geometry, pavement capacity, tenant demand, and continuous truck access",
-                        "Vacancy or axle restrictions break spread; enforce negotiated exit or resize",
-                    ],
-                    [
-                        "Equipment storage subleases using LoopNet listings and QGIS parcel layouts",
-                        "Charge contracted area rent while passing through expressly allocated site costs",
-                        "Separate usable storage area from setbacks, drainage corridors, and circulation lanes",
-                        "Unauthorized repair activity violates use; enforce permitted storage scope promptly",
-                    ],
-                    [
-                        "Port-adjacent container yards using port maps and FEMA flood layers",
-                        "Retain authorized storage lease spread after rent and site operating obligations",
-                        "Validate stacking limits, access routes, flood exposure, and actual drayage demand",
-                        "Flooding or stacking restrictions remove capacity; reduce exposure before committing rent",
-                    ],
-                    [
-                        "Seasonal trailer overflow yards using local fleet outreach and Stripe",
-                        "Bill defined seasonal spaces with contracted minimums and clear deposit treatment",
-                        "Match lease flexibility to fleet peaks instead of assuming continuous occupancy",
-                        "Peak demand disappears early; use matched lease terms and committed minimums",
-                    ],
-                    [
-                        "Gated yard billing optimization using DoorKing, RFID credentials, and QuickBooks",
-                        "Recover contracted access charges while preserving separate rent and deposit ledgers",
-                        "Reconcile active vehicles, authorized spaces, invoices, and revoked credentials weekly",
-                        "Billing disputes or gate outages interrupt collections; retain staffed exception procedures",
-                    ],
-                    [
-                        "Environmental screen coordination using EPA ECHO and FEMA flood maps",
-                        "Charge agreed coordination fees without substituting database searches for professional assessment",
-                        "Escalate historical industrial uses and drainage concerns before master lease execution",
-                        "Recognized environmental conditions change exposure; obtain further assessment or terminate",
-                    ],
-                    [
-                        "Permission-based owner acquisition using Meta messaging tools and Manychat triggers",
-                        "Earn contracted diligence fees or eventual spreads without duplicate funnel attribution",
-                        "Require user initiation, reply-based links, documented scope, and cross-inbox deduplication",
-                        "Unsupported triggers or account restrictions stop dispatch; continue only requested contact",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "4. Make transferability, environmental diligence, and cash control the moat",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Durability begins with documents that survive a change in owner, lender, "
-                    "or operator. Order a title commitment and survey appropriate to the "
-                    "interest being acquired; read exceptions for prior easements, access "
-                    "limitations, mortgages, and conflicting rights. A subordination, "
-                    "non-disturbance, and attornment agreement addresses priority and successor "
-                    "recognition, but its actual wording determines protection. Do not assume "
-                    "a generic SNDA preserves every renewal option, assignment right, or "
-                    "prepaid rent arrangement after foreclosure. Obtain lender consent where "
-                    "required and reconcile it with the ground lease, recorded instrument, "
-                    "and proposed buyer documents. Telecom tenants may hold rights of first "
-                    "refusal or restrictions affecting rent assignments. Billboard permits "
-                    "may require agency processing rather than simple private assignment. "
-                    "IOS landlords may allow subletting but prohibit assignment of the "
-                    "master lease, or retain recapture rights that undermine an exit. "
-                    "Use a responsibility matrix showing owner, tenant, lender, agency, "
-                    "and buyer signatures separately. If one indispensable party remains "
-                    "uncommitted, the transaction is still conditional. Negotiate diligence "
-                    "extensions and termination mechanics before paying meaningful "
-                    "nonrefundable consideration. The objective is not a large folder; "
-                    "it is a coherent chain of rights whose economic assumptions remain "
-                    "true when counterparties exercise their contractual remedies."
-                ),
-                (
-                    "For IOS, order a Phase I environmental site assessment from a qualified "
-                    "environmental professional before executing an unconditional master "
-                    "lease. EPA's All Appropriate Inquiries framework in 40 CFR Part 312 "
-                    "recognizes ASTM E1527-21 for qualifying assessments, but an assessment "
-                    "alone does not establish a liability defense or erase lease indemnities. "
-                    "Timing, purchaser or tenant status, historical operations, and continuing "
-                    "obligations matter. If the report identifies recognized environmental "
-                    "conditions, determine whether further investigation and a different "
-                    "risk allocation are required before proceeding. Examine stormwater "
-                    "separately: industrial activity, exposed materials, maintenance work, "
-                    "and discharges can affect NPDES obligations under 40 CFR 122.26 "
-                    "and applicable state programs. A yard advertised as storage-only "
-                    "can change character when tenants begin fueling, washing, or repairing "
-                    "vehicles. Translate the approved use into lease restrictions, site "
-                    "rules, inspection routines, and incident reporting. Confirm heavy-axle "
-                    "zoning, legal ingress, emergency access, drainage capacity, and "
-                    "pavement condition with the appropriate reviewers and specialists. "
-                    "NNN language allocates specified costs; it does not prevent a "
-                    "landlord, regulator, or injured party from pursuing the operator "
-                    "where applicable. Decline a site when unresolved exposure exceeds "
-                    "the contractual exit rights and available capital rather than "
-                    "hiding it inside a larger revenue forecast."
-                ),
-                (
-                    "Operate the portfolio through a weekly exception queue, not constant "
-                    "manual surveillance of every parcel. Automation can refresh permitted "
-                    "public records, flag option deadlines, assemble lender packets, and "
-                    "reconcile RFID access with contracted vehicle counts. Human review "
-                    "remains necessary for changed use, title exceptions, environmental "
-                    "findings, disputed invoices, and amendments affecting transferability. "
-                    "Assign one accountable owner to each exception and stop a transaction "
-                    "from advancing when its core economic assumption lacks evidence. "
-                    "At the Base team size, the full-time operator should own sourcing "
-                    "judgment, negotiations, and capital allocation while contracted title, "
-                    "engineering, environmental, and accounting work is scoped by actual "
-                    "need; three contractors need not represent every specialty simultaneously. "
-                    "Measure qualified parcels, conditional controls, consent completion, "
-                    "earned spreads, collection loss, and cash tied up per live deal. "
-                    "A beginner dashboard centered on acreage, gross purchase price, or "
-                    "total tenant billings rewards activity without profitability. Stress "
-                    "each recurring site for lower occupancy and each flip for a longer "
-                    "closing period or lower buyer bid. Expand only when the surviving "
-                    "economics fit the canonical expense envelope and the team can "
-                    "service exceptions without improvisation. Durable small-team "
-                    "advantage is repeatable evidence, disciplined contracts, and collected "
-                    "retained income—not merely controlling more land."
-                ),
-            ],
-            "table": {
-                "caption": "Four Pre-Commitment Control Packages That Protect Transferability and Retained Income",
-                "headers": [
-                    "Control package and accountable operating workstream",
-                    "Required documentary evidence before irreversible commitment",
-                    "Economic assumption being tested against actual rights",
-                    "Failure response preserving capital and operating flexibility",
-                ],
-                "rows": [
-                    [
-                        "Title and lender recognition package coordinated with qualified property counsel",
-                        "Current title commitment, survey exhibits, mortgage review, and required consents",
-                        "Buyer receives enforceable access and income rights despite successor ownership",
-                        "Extend conditional diligence or terminate before nonrefundable consideration becomes due",
-                    ],
-                    [
-                        "Billboard permitting package coordinated with state DOT and municipal reviewers",
-                        "Route classification, spacing analysis, local use authorization, and transfer procedure",
-                        "Proposed installation and digital operation remain lawful at the actual location",
-                        "Abandon denied installation or retain independently viable authorized existing operation",
-                    ],
-                    [
-                        "IOS environmental and physical use package coordinated with specialist reviewers",
-                        "Phase I report, drainage findings, heavy-axle confirmation, and access layout",
-                        "Usable capacity and retained obligations support the modeled recurring spread",
-                        "Require further investigation, revise risk allocation, or exit conditional control",
-                    ],
-                    [
-                        "Revenue and cash bridge maintained by operator and accounting support",
-                        "Executed contracts, settlement statements, collection records, expense mapping, and holdbacks",
-                        "Normalized retained revenue reconciles without counting principal or duplicate costs",
-                        "Defer unsupported recognition and preserve reserves until contractual uncertainty resolves",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Verify these four conditions before committing nonrefundable capital",
-                "body": (
-                    "Document the evidence and the responsible reviewer for each condition; "
-                    "a broker description or optimistic buyer conversation cannot substitute."
-                ),
-                "items": [
-                    "Confirm ownership, title priority, assignment and subletting rights, and required lender recognition against the actual executed documents.",
-                    "Confirm billboard route controls, state spacing rules, digital-operation authority, and local zoning for the proposed installation rather than a neighboring sign.",
-                    "Complete IOS environmental screening, heavy-axle use confirmation, drainage review, and a usable-capacity layout before an unconditional master lease.",
-                    "Reconcile normalized retained revenue, applicable accounting presentation, committed funding, and contractual termination dates under delayed-close and vacancy stresses.",
-                ],
-            },
-        },
-    ],
-    "pull_quote": "The spread belongs to the operator only when the rights transfer, the obligations reconcile, and the cash survives the downside.",
-    "diagram_id": "diag-01",
-    "action_checklist": [
-        "Select one county cluster and one archetype, then create a parcel register joining ownership, rights, permits, lease terms, and evidence dates.",
-        "Build conditional control documents with explicit permitted use, assignment, subletting, diligence access, consent requirements, and executable termination mechanics.",
-        "Underwrite telecom exits from collectible net cash flow and remaining tenant obligations; test 16x–22x only as a valuation sensitivity.",
-        "Price IOS spaces from usable geometry and verified demand, then stress collections and retained costs before relying on a 2.0x–2.8x subrent ratio.",
-        "Create a ledger bridge separating gross receipts, acquisition principal, retained spreads, earned fees, holdbacks, and expenses against all three canonical cases.",
-        "Configure user-initiated prospect routing and a weekly exception queue covering lender consents, permit transfers, environmental findings, access credentials, and cash deadlines.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "23 U.S.C. § 131 — Control of outdoor advertising",
-            "url": "https://www.law.cornell.edu/uscode/text/23/131",
-            "relevance": (
-                "Establishes the federal outdoor-advertising control framework for covered "
-                "highways; state implementation and local sign rules determine site-specific requirements."
-            ),
-        },
-        {
-            "title": "23 CFR Part 750, Subpart G — Outdoor Advertising Control",
-            "url": "https://www.ecfr.gov/current/title-23/chapter-I/subchapter-H/part-750/subpart-G",
-            "relevance": (
-                "Provides federal regulations governing state outdoor-advertising control "
-                "programs, supporting route and permit diligence before billboard site control."
-            ),
-        },
-        {
-            "title": "California Business and Professions Code § 10131 — Real estate broker activities",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=10131.",
-            "relevance": (
-                "Defines covered brokerage activities involving compensation and property "
-                "transactions; distinguish actual principal dealings from negotiating for another."
-            ),
-        },
-        {
-            "title": "40 CFR Part 312 — Standards and Practices for All Appropriate Inquiries",
-            "url": "https://www.ecfr.gov/current/title-40/chapter-I/subchapter-J/part-312",
-            "relevance": (
-                "Sets the federal inquiry framework relevant to environmental diligence "
-                "and qualifying liability protections, including recognized assessment standards."
-            ),
-        },
-        {
-            "title": "42 U.S.C. § 9607 — CERCLA liability",
-            "url": "https://www.law.cornell.edu/uscode/text/42/9607",
-            "relevance": (
-                "Defines environmental liability categories and relevant protection provisions; "
-                "an IOS lease indemnity does not by itself determine statutory exposure."
-            ),
-        },
-        {
-            "title": "40 CFR § 122.26 — Storm water discharges",
-            "url": "https://www.ecfr.gov/current/title-40/chapter-I/subchapter-D/part-122/section-122.26",
-            "relevance": (
-                "Provides federal stormwater permitting rules relevant to industrial "
-                "activities and discharges; evaluate actual yard operations and state implementation."
-            ),
-        },
-        {
-            "title": "47 CFR § 17.4 — Antenna structure registration",
-            "url": "https://www.ecfr.gov/current/title-47/chapter-I/subchapter-A/part-17/subpart-A/section-17.4",
-            "relevance": (
-                "Defines antenna structure registration requirements and limits the inference "
-                "that can be drawn from FCC ASR sourcing records."
-            ),
-        },
-    ],
-}
+CHAPTER_1 = {'id': 'Q1',
+ 'chapter_id': 'Q1',
+ 'chapter_number': 1,
+ 'question_number': 1,
+ 'slug': 'cell-tower-lease-buyouts-what-they-are-and-what-theyre-worth',
+ 'question_prompt': 'What is a cell tower lease buyout, what is it actually worth, and how do I tell the '
+                    'buyout companies apart before I take a lump sum?',
+ 'kicker': 'Q1 / THE BIG MONEY PLAYBOOKS',
+ 'title': "Cell Tower Lease Buyouts: What They Are and What They're Worth",
+ 'subtitle': 'Lump-sum offers for rent streams, average buyout values and calculators, ranking buyout '
+             'companies (TowerPoint, Airwave, Nexus), Dish lease rejections, Starlink risk, and landowner '
+             'testimonials',
+ 'layout_template': 'opportunity_overview',
+ 'reading_time_minutes': 15,
+ 'executive_summary': "Practitioners agree a cell tower lease buyout sells the landlord's rent stream "
+                      'through a lease assignment and easement, not the land, and that it is priced as a '
+                      'multiple of annual rent. Tower Genius pegs average deals at 16 to 17.5 times, '
+                      'rising to 19 times for clean leases with 3% annual escalators, revenue share, and '
+                      'no right of first refusal; Acquisition Insider sees aggregator offers between 8 and '
+                      '15 times and 18 times for competitively shopped multi-carrier leases. Tower Genius '
+                      'warns that ROFR, confidentiality, and consent language crush bidding, and that a '
+                      'handful of money sources sit behind roughly 20 buyout brands. Buyers discount at 8 '
+                      'to 12% and model termination risk, highlighted by Dish halting rent on about 25,000 '
+                      'sites. Practitioners split on timing: sell now and transfer obsolescence risk, or '
+                      'wait to renegotiate at renewal.',
+ 'key_metrics': [{'label': 'Average Buyout Multiple of Annual Rent',
+                  'metric': 'Average Buyout Multiple of Annual Rent',
+                  'value': 'Roughly 16 to 17.5 times annual cell site rent',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Steve Casella's rule of thumb for an average lease buyout, with the exact "
+                             'figure driven by the language in the lease agreement.',
+                  'source': 'Tower Genius ([pSGbaA0AbTo @ 00:00:32])'},
+                 {'label': 'Aggregator Offer Range vs Shopped Multiple',
+                  'metric': 'Aggregator Offer Range vs Shopped Multiple',
+                  'value': '8 to 15 times (aggregator offers); about 18 times (competitively shopped '
+                           'multi-carrier lease)',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Acquisition Insider citing Steel in the Air's 2026 rule of thumb, noting a "
+                             'right of first refusal drives value down.',
+                  'source': 'Acquisition Insider ([MtWLazzJb9Y @ 00:02:09])'},
+                 {'label': 'Buyer vs Owner Discount Rates',
+                  'metric': 'Buyer vs Owner Discount Rates',
+                  'value': '8 to 12% (aggregators) vs 4 to 6% (owner-side valuations)',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'At 8%, an $18,000-a-year lease with a 3% escalator and 25 years of term is '
+                             'worth about $250,000, or 14 times rent.',
+                  'source': 'Acquisition Insider ([MtWLazzJb9Y @ 00:02:26])'},
+                 {'label': 'Right of First Refusal Price Penalty',
+                  'metric': 'Right of First Refusal Price Penalty',
+                  'value': 'About $200,000 less on a $2,223,000 rooftop buyout',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Casella's three-carrier urban rooftop example at $117,000 annual rent times "
+                             '19; ROFRs in those leases would have pushed the deal under $2 million.',
+                  'source': 'Tower Genius ([pSGbaA0AbTo @ 00:07:14])'}],
+ 'sections': [{'heading': 'Section 1: The Practitioner Consensus',
+               'paragraphs': ['Every practitioner who touches this market describes the same product: a '
+                              "cell tower lease buyout is the purchase of the landlord's interest in an "
+                              'existing wireless lease income stream and its future rent payments, not the '
+                              'dirt and not the steel. Steve Casella of Tower Genius lays out the '
+                              'structure: the owner sells an easement, the lease is assigned to the buyer, '
+                              'and the buyer gains the right to collect future rent and renegotiate at '
+                              'renewal, in exchange for a lump sum or installments [pE5ehBu0C4s @ '
+                              '00:00:58]. The land under the tower or the building under the rooftop site '
+                              'typically stays with the owner unless the deal is structured as a fee '
+                              'simple sale, and the buyers are tower management companies, REITs, and '
+                              'boutique hedge funds that specialize in digital infrastructure [pE5ehBu0C4s '
+                              '@ 00:01:33]. Acquisition Insider frames it bluntly: you are buying the '
+                              "landowner's rent check, usually a thousand to two thousand dollars a month, "
+                              'not the carrier rent on top, with Steel in the Air pegging the average '
+                              'ground lease at about $1,300 a month [MtWLazzJb9Y @ 00:01:13]. The Allworth '
+                              'Financial caller confirmed the same split: on 17 acres, only the easement '
+                              'in a corner of the property was for sale, not the plot [L5rvTFM0pVg @ '
+                              '00:04:31].',
+                              'Pricing is quoted the same way across camps: as a multiple of annual rent, '
+                              "with lease language pushing the multiple up or down. Casella's rule of "
+                              'thumb for an average deal is roughly 16 to 17.5 times annual cell site '
+                              'rent, with the exact figure driven by what the lease agreement says '
+                              '[pSGbaA0AbTo @ 00:00:32]. Acquisition Insider puts aggregator offers '
+                              "clustering between 8 and 15 times, cites Steel in the Air's 2026 rule of "
+                              'thumb of about 18 times for a competitively shopped multi-carrier lease, '
+                              'and states flatly that a right of first refusal drives value down '
+                              '[MtWLazzJb9Y @ 00:02:09]. Tower Genius goes further on the ROFR: Casella '
+                              'says he heard an executive from one of the three big tower companies call '
+                              'the provision a baseball bat used to beat down landlords, and warns that '
+                              'confidentiality and consent-to-assign language is purposely left in leases '
+                              'to kill any bidding environment [wpxdOZZukBY @ 00:04:41]. The shared '
+                              'conclusion is that the owner walks into these calls outgunned. Casella says '
+                              'landlords are at a complete disadvantage against the Goliaths of wireless, '
+                              'who are certainly not going to tell them what they should be doing, and '
+                              'that buyers want these streams as cheaply as possible precisely because '
+                              'they are valuable [kPzYR4RlrCM @ 00:03:39].',
+                              'The third point of agreement is that the buyer field is far narrower and '
+                              'more institutional than the stack of letters suggests. Casella estimates '
+                              'about 20 lease buyout companies are active, but only a handful of actual '
+                              'money sources stand behind them, so an owner can think a bid is competitive '
+                              'while the same company is bidding against itself [MteawsLjdZY @ 00:01:00]. '
+                              'In a longer breakdown he describes a Midwest hedge fund that funds several '
+                              'buyout firms, meaning a landlord who solicits offers from companies A '
+                              'through D may pick curtain number two and discover all four sit under the '
+                              'same octopus [wpxdOZZukBY @ 00:12:37]. Acquisition Insider documents the '
+                              'institutional weight: Radius Global, parent of AP Wireless, was taken '
+                              'private in 2023 by EQT and a Canadian pension fund for about $3 billion '
+                              'with roughly 9,700 leases, while Landmark Dividend, the company that cold '
+                              "calls farmers, is owned by Digital Bridge with Abu Dhabi's sovereign fund "
+                              'holding 40% [MtWLazzJb9Y @ 00:01:29]. As for why buyers chase an asset some '
+                              "call obsolete, Casella's answer is musical chairs: buyers package the "
+                              'leases and sell them to a Wall Street hedge fund that sells them again, and '
+                              "the landlord's goal is to transfer the risk before the music stops "
+                              '[SQKWpJzLCTs @ 00:04:54].'],
+               'table': {'caption': 'Where the practitioners line up on what a buyout is and how it gets '
+                                    'priced',
+                         'headers': ['Consensus Point',
+                                     'What the Practitioner Reported',
+                                     'Operator Takeaway',
+                                     'Expert Source'],
+                         'rows': [['The asset sold is the lease income stream, not the land',
+                                   'Owner assigns the lease and grants an easement for a lump sum or '
+                                   'installments; land stays unless fee simple',
+                                   'Negotiate the easement and assignment terms as hard as the headline '
+                                   'price',
+                                   'Tower Genius ([pE5ehBu0C4s @ 00:01:51])'],
+                                  ["Buyers are purchasing the landowner's ground rent check only",
+                                   'Typical ground rent runs one to two thousand dollars a month, '
+                                   'averaging about $1,300',
+                                   'Carrier rent above the ground lease flows to the tower company without '
+                                   'revenue share',
+                                   'Acquisition Insider ([MtWLazzJb9Y @ 00:01:13])'],
+                                  ['Deals are priced as a multiple of annual rent',
+                                   'Average buyout lands around 16 to 17.5 times annual rent depending on '
+                                   'lease language',
+                                   'Know your annual rent and lease terms before reading any offer letter',
+                                   'Tower Genius ([pSGbaA0AbTo @ 00:00:32])'],
+                                  ['Right of first refusal language depresses the price',
+                                   'A big tower company executive called the ROFR a baseball bat to beat '
+                                   'down landlords',
+                                   'Strip or neutralize ROFR, confidentiality, and consent language before '
+                                   'shopping the lease',
+                                   'Tower Genius ([wpxdOZZukBY @ 00:04:41])'],
+                                  ['Many buyout brands draw from a few money sources',
+                                   'Roughly 20 buyout companies operate but only a handful of actual '
+                                   'funding sources stand behind them',
+                                   'Four bids can be one buyer bidding against itself with no way to tell',
+                                   'Tower Genius ([MteawsLjdZY @ 00:01:00])'],
+                                  ['The tenant can walk away and stop paying rent',
+                                   'Caller with 26 years left noted the carrier can tear the tower down '
+                                   'with no penalty',
+                                   'Termination risk is the core reason owners sell and buyers discount',
+                                   'Allworth Financial ([L5rvTFM0pVg @ 00:02:36])'],
+                                  ['The buyer side is institutional money in a rural disguise',
+                                   'EQT and a Canadian pension took Radius Global private for about $3 '
+                                   'billion with roughly 9,700 leases',
+                                   'Expect counterparties that price your rent check like bond traders',
+                                   'Acquisition Insider ([MtWLazzJb9Y @ 00:01:29])']]}},
+              {'heading': 'Section 2: Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['Tower Genius teaches valuation as rent times a multiple, then shows how '
+                              "each lease term moves the multiplier. Casella's baseline is a tower paying "
+                              '$1,500 a month, $18,000 a year, with a 10% escalator every five years, a '
+                              'right of first refusal, two tenants, and 30 years left: $18,000 times 17.5 '
+                              'equals $315,000 [pSGbaA0AbTo @ 00:02:07]. Raise rent to $2,500 a month, '
+                              'swap to a 3% annual escalator, strip the ROFR, keep two tenants with a '
+                              '10-year expiry, and the multiplier climbs to 19 on $30,000 of annual rent, '
+                              'roughly $570,000. Add $750 a month in collocation revenue share and the '
+                              '$39,000 base times 19 produces $741,000, which he ties to a client site in '
+                              'Utah [pSGbaA0AbTo @ 00:04:13]. His urban rooftop example stacks Verizon at '
+                              "$3,800, AT&T at $3,200, and T-Mobile at $2,750 a month, leaves Dish's "
+                              '$1,500 out as toxic, and lands at $117,000 times 19, or $2,223,000, adding '
+                              'that ROFRs in those leases would have cost about $200,000 [pSGbaA0AbTo @ '
+                              '00:07:14]. Separately he warns that buyers treat Dish as toxic and will not '
+                              'touch it with a ten-foot pole [X75LHgvP1U8 @ 00:01:20].',
+                              "Acquisition Insider runs the same asset from the buyer's spreadsheet. "
+                              'Aggregators price with discount rates of 8 to 12%, while owner-side '
+                              'valuations use 4 to 6%; a lease paying $18,000 a year with a 3% escalator '
+                              'and 25 years of term, discounted at 8%, is worth about $250,000, or 14 '
+                              'times, and only an assumption of perpetuity gets you to 20 times '
+                              '[MtWLazzJb9Y @ 00:02:26]. In the illustrative deal, Max buys a Crown Castle '
+                              'ground lease at $1,500 a month with two national carriers on the structure, '
+                              'pays 14 times or $252,000, and closes at $260,000 all in after title, '
+                              'survey, and recording. Year one nets about $17,500, a 6.7% yield growing 3% '
+                              'annually, and if the tenant stays the full term Max collects roughly '
+                              '$650,000 over 25 years for a low to mid 7% unlevered return [MtWLazzJb9Y @ '
+                              '00:03:11]. Sourcing is off-market: the FCC antenna structure registry gives '
+                              'the tower, county records give the owner, a direct offer follows, and small '
+                              "buyers should get on landowner-side consultants' buyer lists [MtWLazzJb9Y @ "
+                              "00:06:07]. Allworth Financial's host guessed buyers bake in an 8 to 10% or "
+                              'higher internal rate of return for the tower-pull risk [L5rvTFM0pVg @ '
+                              '00:03:36].',
+                              'On the sell side, the street work starts with knowing exactly who is '
+                              'paying. Casella says pay stubs that only read collocator A, B, C are not '
+                              'enough; owners should read the electrical meters, look for carrier labels '
+                              'on equipment cabinets and Sharpie marks on the meter bank, or file a FOIA '
+                              'request with the building department to see whether Dish pulled electrical '
+                              'permits [X75LHgvP1U8 @ 00:02:04]. Pricing pressure comes next. The Allworth '
+                              'Financial caller, collecting $11,000 a year with 2% bumps and 26 years '
+                              'left, had a third-party lump-sum offer of $170,000, a five-year payout at '
+                              '$190,000, and a ten-year payout at $225,000, while the current lessee '
+                              "offered about $140,000 [L5rvTFM0pVg @ 00:01:00]. The hosts' instruction was "
+                              'to push for the $190,000 already requested and split the payment, half in '
+                              'December and half in January, to spread the tax hit over two calendar years '
+                              '[L5rvTFM0pVg @ 00:06:46]. Airwave Advisors clients describe the competitive '
+                              'version: their advisor, Nick, pulled in more than eight interested buyers, '
+                              'threw one out immediately, pared the field to two, and ran an auction-style '
+                              'process that closed with a professional outfit the sellers had never heard '
+                              'of [ZhCVLpLy4-o @ 00:01:24].'],
+               'table': {'caption': 'Worked buyout math as stated by the practitioners',
+                         'headers': ['Deal Scenario', 'Inputs Stated', 'Resulting Number', 'Expert Source'],
+                         'rows': [['Average tower lease carrying a right of first refusal',
+                                   '$1,500 a month, 10% escalator every five years, two tenants, 30 years '
+                                   'left',
+                                   '$18,000 annual rent times 17.5 equals $315,000',
+                                   'Tower Genius ([pSGbaA0AbTo @ 00:02:07])'],
+                                  ['Clean tower lease with no right of first refusal',
+                                   '$2,500 a month, 3% annual escalator, anchor plus collocator, 10 years '
+                                   'left',
+                                   '$30,000 annual rent times 19 equals about $570,000',
+                                   'Tower Genius ([pSGbaA0AbTo @ 00:03:19])'],
+                                  ['Clean tower lease plus collocation revenue share in Utah',
+                                   '$2,500 base rent plus $750 a month revenue share, 3% escalator, no '
+                                   'ROFR',
+                                   '$39,000 annual rent times 19 equals $741,000',
+                                   'Tower Genius ([pSGbaA0AbTo @ 00:04:13])'],
+                                  ['Urban rooftop with three paying carriers and Dish excluded',
+                                   'Verizon $3,800, AT&T $3,200, T-Mobile $2,750 monthly; Dish $1,500 left '
+                                   'out as toxic',
+                                   '$117,000 times 19 equals $2,223,000; about $200,000 less with ROFRs',
+                                   'Tower Genius ([pSGbaA0AbTo @ 00:07:14])'],
+                                  ['Max buys a two-carrier Crown Castle ground lease',
+                                   '$1,500 a month, 3% escalator, about 25 years of term including '
+                                   'renewals',
+                                   '14 times, $260,000 all in, 6.7% year-one yield, about $650,000 over '
+                                   'term',
+                                   'Acquisition Insider ([MtWLazzJb9Y @ 00:03:11])'],
+                                  ['Buyer pays 15 times for a Dish-only 5G site in 2023',
+                                   '$1,200 a month, $14,400 a year, single tenant, $222,000 all in',
+                                   'Rent stops after 30 months with only about $36,000 collected',
+                                   'Acquisition Insider ([MtWLazzJb9Y @ 00:04:10])'],
+                                  ['Rural landowner weighing three payout structures from a third-party '
+                                   'buyer',
+                                   '$11,000 a year, 2% annual increases, 26 years left, ROFR in the lease',
+                                   '$170,000 lump sum, $190,000 over five years, $225,000 over ten; lessee '
+                                   'offered $140,000',
+                                   'Allworth Financial ([L5rvTFM0pVg @ 00:01:00])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Moves that push the multiple from average to top dollar',
+                           'body': 'The practitioners keep returning to a short list of levers: name every '
+                                   'paying carrier, clean the lease before you shop it, watch the renewal '
+                                   'calendar, and engineer the payout timing.',
+                           'items': ['Do not hand buyers pay stubs that only say collocator A, B, C; '
+                                     'identify each sub-tenant by name because buyout companies want to '
+                                     'rule out risky carriers like Dish before wiring money [Tower Genius '
+                                     '— X75LHgvP1U8 @ 00:01:36]',
+                                     'Negotiate collocation revenue share, demand an annual escalator of '
+                                     'at least 3%, get the ROFR eliminated, and watch the confidentiality '
+                                     'language, since those terms moved the example from $315,000 to '
+                                     '$741,000 [Tower Genius — pSGbaA0AbTo @ 00:04:34]',
+                                     'Be wary of offers that land right before a lease renewal; buyers '
+                                     'love an undervalued lease on the eve of renewal because the bigger '
+                                     'spread is their arbitrage play [Tower Genius — wpxdOZZukBY @ '
+                                     '00:03:34]',
+                                     'Push the buyer on price and split the lump sum, half in December and '
+                                     'half in January, to spread the tax over two calendar years [Allworth '
+                                     'Financial — L5rvTFM0pVg @ 00:06:46]']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Source the site and the owner off-market',
+                              'action': 'Pull towers from the FCC antenna structure registry, match owners '
+                                        'in county records, and make a direct offer.',
+                              'detail': 'Acquisition Insider says most rent streams trade off-market and a '
+                                        'small buyer competes the same way aggregators do, while also '
+                                        'getting on the buyer lists of landowner-side consultants who shop '
+                                        'leases to multiple bidders [Acquisition Insider — MtWLazzJb9Y @ '
+                                        '00:06:07]'},
+                             {'step': 2,
+                              'title': 'Read the full lease and every amendment',
+                              'action': 'Confirm who the tenant really is, the termination rights, the '
+                                        'remaining term, and the escalator.',
+                              'detail': 'Those four terms drive the multiple before any wire goes out '
+                                        '[Acquisition Insider — MtWLazzJb9Y @ 00:06:24]; Casella adds that '
+                                        'ROFR, confidentiality, and consent-to-assign language must be '
+                                        'found before the lease is shopped [Tower Genius — wpxdOZZukBY @ '
+                                        '00:05:12]'},
+                             {'step': 3,
+                              'title': 'Verify every carrier physically on the structure',
+                              'action': 'Walk the compound, identify each paying carrier, and walk away '
+                                        'from single-tenant sites.',
+                              'detail': 'Get an estoppel certificate and reconcile it to 24 months of bank '
+                                        'statements [Acquisition Insider — MtWLazzJb9Y @ 00:06:38]; '
+                                        "Casella's field method is reading electrical meters, cabinet "
+                                        'labels, and permit records pulled through a FOIA request [Tower '
+                                        'Genius — X75LHgvP1U8 @ 00:02:20]'},
+                             {'step': 4,
+                              'title': 'Run title, zoning, and the termination stress test',
+                              'action': 'Search title for mortgages and rights of first refusal, check '
+                                        'zoning, and model rent stopping in years five to eight.',
+                              'detail': 'Confirm zoning stops the tower company from moving next door, and '
+                                        'if one site cannot survive the rent stopping in year five to '
+                                        'eight, buy several or pass [Acquisition Insider — MtWLazzJb9Y @ '
+                                        '00:06:38]'}]},
+              {'heading': 'Section 3: Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The single biggest split is the multiple itself. Steve at Tower Genius '
+                              'quotes an average buyout of roughly 16 to 17.5 times annual rent, worked '
+                              'through a $1,500-a-month tower at 17.5x for $315,000, and pushes clean '
+                              'leases with a 3% annual escalator, no right of first refusal and a '
+                              'co-locator to a 19x multiplier [pSGbaA0AbTo @ 00:03:19]. Acquisition '
+                              'Insider prices the same paper from the buy side: aggregator offers commonly '
+                              'cluster between 8 and 15 times, aggregators discount at 8 to 12% while '
+                              'owner-side valuations use 4 to 6%, and an $18,000-a-year lease with a 3% '
+                              'escalator and 25 years of term discounted at 8% is worth about $250,000, or '
+                              '14 times [MtWLazzJb9Y @ 00:02:09] [MtWLazzJb9Y @ 00:02:26]. Their 20x '
+                              'perpetuity number is flagged as something nobody should assume. The '
+                              "Allworth Financial hosts land closer to the buyer's math: a caller with "
+                              'about $11,000 a year, a 2% bump and 26 years left was offered $170,000 '
+                              'cash, $190,000 over five years or $225,000 over ten, and the host guessed '
+                              'an eight to 10% internal rate of return baked in for the investor because '
+                              'of the risk of the tower being pulled [L5rvTFM0pVg @ 00:03:14]. Read side '
+                              'by side, the gap between 14x and 19x is the entire negotiation.',
+                              'The second fault line is how the deal gets shopped. Tower Genius argues '
+                              'that a do-it-yourself auction is rigged by structure: a landlord can pull '
+                              'four or five offers from companies in different states and literally be '
+                              'holding four offers from the same money source, which Steve calls not a '
+                              'fair bidding situation [P2LhXcxO5KE @ 00:01:07]. Airwave Advisors clients '
+                              'describe the counter-playbook run by an advisor who controls the process: '
+                              'after two prospective buyers had extracted piles of financials, Nick took '
+                              'over the paperwork, surfaced more than eight interested buyers, threw one '
+                              'out immediately and pared the field to two outfits in an auction-type '
+                              'situation [ZhCVLpLy4-o @ 00:01:04]. TowerPoint pitches the opposite route, '
+                              'selling straight to the capital provider for an immediate lump sum, a '
+                              'complimentary site valuation, and a relationship framed as a long-term '
+                              'partner before, during and after the transaction [JX38qocLKEg @ 00:01:01]. '
+                              'Acquisition Insider sits on the buyer side of the same fence and treats '
+                              'owner-side consultants as a deal-flow channel, telling small buyers that '
+                              'most rent streams trade off market and that they should get on those '
+                              "consultants' buyer lists because those advisors shop leases to multiple "
+                              'bidders [MtWLazzJb9Y @ 00:06:07]. The consultant who protects the seller is '
+                              'the same pipe the buyer wants into.',
+                              'The third split is whether to sell at all, and when. Tower Genius gives two '
+                              'different answers depending on the lease. On dense urban rooftops Steve '
+                              'calls the market a game of musical chairs, predicting that carriers will '
+                              'swap $6,000-to-$7,000-a-month rooftops for 10 or 20 small cells and that '
+                              'buyers are packaging these leases to resell to hedge funds on Wall Street, '
+                              'so the landlord should transfer the risk and be sitting in a chair when the '
+                              'music stops [SQKWpJzLCTs @ 00:04:34]. Yet in the buyout-company walkthrough '
+                              'Steve warns that buyers love to grab an undervalued lease right before '
+                              'renewal for the arbitrage spread, and that some owners should skip the sale '
+                              'and wait a couple of years to renegotiate [wpxdOZZukBY @ 00:03:34]. The '
+                              'Allworth Financial host said flatly they would sell a 26-year tower stream '
+                              'threatened by Starlink, since 26 years is a long time in technology, but '
+                              'would push on price and split the proceeds over two calendar years '
+                              "[L5rvTFM0pVg @ 00:02:51]. Acquisition Insider frames the buyer's side of "
+                              'that bet: multi-carrier sites bought at an 8% discount rate with the '
+                              'termination case modeled return a quiet 6 to 7% that escalates for decades, '
+                              'an asset EQT, Digital Bridge and sovereign wealth funds price like bond '
+                              'traders [MtWLazzJb9Y @ 00:06:53].'],
+               'table': {'caption': 'Competing playbooks on price, process, structure and timing of a cell '
+                                    'tower lease buyout',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['What multiple of annual rent is fair',
+                                   'Average buyout runs 16 to 17.5 times rent, and clean leases with 3% '
+                                   'escalators reach 19 times',
+                                   'Aggregator offers commonly cluster between 8 and 15 times, with about '
+                                   '18 times for competitively shopped multi-carrier leases',
+                                   'Tower Genius ([pSGbaA0AbTo @ 00:03:19]); Acquisition Insider '
+                                   '([MtWLazzJb9Y @ 00:02:09])'],
+                                  ['Discount rate applied to the rent stream',
+                                   'Owner-side valuations discount the future rent at 4 to 6% and land '
+                                   'higher',
+                                   'Aggregators use 8 to 12%, and the radio host guessed 8 to 10% IRR '
+                                   'baked in for the investor',
+                                   'Acquisition Insider ([MtWLazzJb9Y @ 00:02:26]); Allworth Financial '
+                                   '([L5rvTFM0pVg @ 00:03:14])'],
+                                  ['Who runs the bidding process for the landlord',
+                                   'Use an unbiased advocate because a handful of money sources fund most '
+                                   'of the 20 or so buyers',
+                                   'Advisor pulled more than eight interested buyers and ran an auction '
+                                   'down to two finalists',
+                                   'Tower Genius ([MteawsLjdZY @ 00:01:00]); Airwave Advisors '
+                                   '([ZhCVLpLy4-o @ 00:01:04])'],
+                                  ['Selling directly to the capital provider',
+                                   'TowerPoint offers an immediate lump sum, a complimentary site '
+                                   'valuation and a long-term partnership after closing',
+                                   'Nexus Towers rep showed the owner a graph and his team handled every '
+                                   'complicated piece through closing',
+                                   'TowerPoint ([JX38qocLKEg @ 00:01:20]); Nexus Towers ([vM7__l_6wgE @ '
+                                   '00:01:20])'],
+                                  ['Easement-only sale versus selling the steel',
+                                   'You assign the lease and grant an easement; land and building stay '
+                                   'yours unless it is fee simple',
+                                   'Bidders offered a 50-50 revenue share, but the advisor sold the whole '
+                                   'tower steel and all for nearly $100,000 more',
+                                   'Tower Genius ([pE5ehBu0C4s @ 00:01:51]); Airwave Advisors '
+                                   '([POVBhyyB9Jc @ 00:01:21])'],
+                                  ['Lump sum versus installment payout',
+                                   'Caller was offered $170,000 lump sum, $190,000 over five years or '
+                                   '$225,000 over ten years',
+                                   'Host said push the price, take cash, and split it half December and '
+                                   'half January for taxes',
+                                   'Allworth Financial ([L5rvTFM0pVg @ 00:06:46])'],
+                                  ['Sell now or hold for renewal',
+                                   'Right now is a great time to sell because the market is probably not '
+                                   'going any higher',
+                                   'Maybe it does not make sense to sell; wait a couple of years and '
+                                   'renegotiate the lease',
+                                   'Tower Genius ([pSGbaA0AbTo @ 00:06:59]); Tower Genius ([wpxdOZZukBY @ '
+                                   '00:10:01])']]}},
+              {'heading': 'Section 4: Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The headline failure is a tenant that walks. Acquisition Insider builds the '
+                              'case from real numbers: a buyer pays 15 times in 2023 for a ground lease '
+                              'whose only tenant is Dish, $1,200 a month on a new 5G site, $222,000 all '
+                              'in; the excused letter lands in October 2025, rent stops by year end after '
+                              'about $36,000 collected, and by June 2026 Dish is in bankruptcy and the '
+                              'buyer holds a claim in line with everyone else Dish walked away from, plus '
+                              'an easement under a dark tower worth very little [MtWLazzJb9Y @ 00:04:32]. '
+                              'Even the clean two-carrier example breaks if the lease terminates in year '
+                              'eight, returning about $160,000 against $260,000 invested. That is why the '
+                              'pros haircut single-carrier sites. Tower Genius was already treating Dish '
+                              'as toxic to the buyout industry in 2024, saying nobody wanted to touch it '
+                              'with a 10-foot pole and that buyers demand the sub-tenant names so they do '
+                              'not get caught holding the bag [X75LHgvP1U8 @ 00:01:00]; Steve even '
+                              'stripped the Dish rent out of a $117,000 rooftop valuation [pSGbaA0AbTo @ '
+                              '00:06:34]. The Allworth Financial caller named the same exposure from the '
+                              "seller's chair: the carrier can tear the tower down any time and quit "
+                              'paying with no penalty [L5rvTFM0pVg @ 00:02:36].',
+                              'The second trap is paper the landlord signed years earlier. Steve at Tower '
+                              'Genius recounts an executive from one of the three big tower companies '
+                              'saying on a call that the right of first refusal is like a baseball bat '
+                              'used to beat down cell tower landlords; the clause forces the owner to '
+                              'share any bona fide offer with the tenant or land in default, and when '
+                              'owners negotiate it out, crafty attorneys slip in confidentiality or '
+                              'consent-to-assign language that does the same damage [wpxdOZZukBY @ '
+                              '00:04:41]. On the worked three-carrier rooftop deal, the presence of those '
+                              'clauses would have cost roughly $200,000, dropping a $2,223,000 sale under '
+                              '$2 million [pSGbaA0AbTo @ 00:07:14]. Acquisition Insider confirms from the '
+                              'buy side that a right of first refusal drives value down even inside an 18x '
+                              'competitively shopped market [MtWLazzJb9Y @ 00:02:09]. The Allworth '
+                              'Financial caller was living it: their lease carried a first right of '
+                              'refusal, and the company that already owned the lease came in at roughly '
+                              '$140,000 against the $170,000 lump sum from an outside buyer [L5rvTFM0pVg @ '
+                              "00:06:23]. In practice the incumbent's low number is the first number most "
+                              'landlords ever hear, and the clause is what keeps it from being tested.',
+                              'The third failure mode is process, not price, and it bites before any '
+                              'multiple is discussed. The Airwave Advisors client who had held a '
+                              'communication site since 1995 found that what buyers promised at the start '
+                              'was not what it ended up being in the offer, after two prospects had pulled '
+                              'extensive financials and documents in a cumbersome back-and-forth '
+                              '[ZhCVLpLy4-o @ 00:00:00]. The Nexus Towers client, a third-generation real '
+                              'estate owner, kept killing calls two minutes in because a high-powered '
+                              'buyer seemed to want the most and give the least, and nobody explained what '
+                              'was being received upfront versus given up [vM7__l_6wgE @ 00:00:14]. Tower '
+                              'Genius warns of a sharper version: some self-described landlord consulting '
+                              'firms advertise lease-rate and buyout advice, then try to acquire the lease '
+                              "for themselves once the owner calls, wolves in sheep's clothing with a "
+                              'built-in conflict of interest [wpxdOZZukBY @ 00:15:00]. Steve also '
+                              'dismisses online buyout calculators: no slick spreadsheet substitutes for '
+                              "checking how the site fits a tower company's grid or carrier network, what "
+                              'the easement will say, and whether a 1031 exchange can be completed '
+                              '[xfquYQeRi_Q @ 00:00:33]. A clean number on a spreadsheet, or a friendly '
+                              'consultant, can still hide a bad easement and a buyer on the other side.'],
+               'table': {'caption': 'Firsthand failure modes and the economics check practitioners ran on '
+                                    'each',
+                         'headers': ['Failure Mode', 'What Happened', 'Economics Check', 'Expert Source'],
+                         'rows': [['Single-tenant Dish site bought at a premium',
+                                   'Buyer paid 15 times in 2023 for a Dish-only lease and rent stopped '
+                                   'after 30 months',
+                                   'About $36,000 collected against $222,000 all in, then a bankruptcy '
+                                   'claim in line',
+                                   'Acquisition Insider ([MtWLazzJb9Y @ 00:04:32])'],
+                                  ['Early termination on a clean multi-carrier lease',
+                                   'Carrier leases almost always let the tenant terminate on notice, and '
+                                   'merger churn arrives years later',
+                                   'A year-eight termination returns about $160,000 on $260,000 invested '
+                                   'under an empty compound',
+                                   'Acquisition Insider ([MtWLazzJb9Y @ 00:03:52])'],
+                                  ['Right of first refusal left in the lease',
+                                   'Tower executive called the right of first refusal a baseball bat to '
+                                   'beat down landlords',
+                                   'Those clauses cost about $200,000 on a $2,223,000 three-carrier '
+                                   'rooftop sale',
+                                   'Tower Genius ([pSGbaA0AbTo @ 00:07:14])'],
+                                  ['Mortgage lender refuses the SNDA document',
+                                   'Bank declines to sign a subordination non-disturbance agreement with '
+                                   'the tower buyer',
+                                   'Can hold the buyout up for months or kill an entire commercial '
+                                   'property sale',
+                                   'Tower Genius ([wpxdOZZukBY @ 00:07:42])'],
+                                  ['Unknown sub-tenants on the tower',
+                                   'Owner only sees stubs labeled collocator A, B, C with no carrier names',
+                                   'Buyers want names to rule out Dish; read meters, cabinet labels and '
+                                   'pull permits',
+                                   'Tower Genius ([X75LHgvP1U8 @ 00:01:50])'],
+                                  ['Bad CPA advice on the 1031 exchange',
+                                   'CPA told a Wisconsin landlord they had to buy another cell tower with '
+                                   'the proceeds',
+                                   'Nothing was for sale locally, so the exchange plan stalled without '
+                                   'proper guidance',
+                                   'Tower Genius ([wpxdOZZukBY @ 00:08:53])'],
+                                  ['Bidding against one funding octopus',
+                                   'Four offers from four firms all funded by the same Midwest hedge fund',
+                                   'Landlord literally bidding against themselves with no way of knowing '
+                                   'it',
+                                   'Tower Genius ([wpxdOZZukBY @ 00:12:37])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Four checks before any buyout lump sum is signed or wired',
+                           'body': 'These are the exact pitfalls practitioners watched blow up real deals; '
+                                   'a site that fails any one of them gets repriced or passed.',
+                           'items': ['Identify every carrier physically on the tower and walk away from '
+                                     'single-tenant sites [Acquisition Insider — MtWLazzJb9Y @ 00:06:24].',
+                                     'Confirm sub-tenant names from electrical meter labels, equipment '
+                                     'cabinets and building department permits before pricing, because '
+                                     'Dish exposure is toxic to buyers [Tower Genius — X75LHgvP1U8 @ '
+                                     '00:02:04].',
+                                     'Read the lease for right of first refusal, confidentiality and '
+                                     'consent-to-assign language before soliciting offers, or a signed '
+                                     'letter of intent can put the landlord in default [Tower Genius — '
+                                     'wpxdOZZukBY @ 00:05:12].',
+                                     'Model the rent stopping in year five to eight; if one site cannot '
+                                     'survive that, buy several or pass [Acquisition Insider — MtWLazzJb9Y '
+                                     '@ 00:06:38].']}}],
+ 'pull_quote': '"I actually heard an executive from one of the three big tower companies say that the '
+               'right of first refusal provision is like a baseball bat that we used to beat down the cell '
+               'tower landlords." — Tower Genius (wpxdOZZukBY @ 00:04:41).',
+ 'diagram_id': 'diag-01',
+ 'action_checklist': ['Pull the full lease and every amendment and confirm who the tenant really is, the '
+                      'termination rights, the remaining term and the escalator, because those four drive '
+                      'the multiple [Acquisition Insider — MtWLazzJb9Y @ 00:06:24].',
+                      'Price the stream yourself: annual rent plus collocation revenue share times 17.5 '
+                      'with a right of first refusal in the lease, or 19 on a clean lease, as on the '
+                      '$741,000 Utah site [Tower Genius — pSGbaA0AbTo @ 00:04:13].',
+                      'Identify every paying carrier by reading electrical meters and cabinet labels and '
+                      'pulling electrical permits from the building department, filing a FOIA request if '
+                      'needed [Tower Genius — X75LHgvP1U8 @ 00:02:04].',
+                      'Ask the mortgage lender up front whether it will sign a subordination '
+                      'non-disturbance agreement with the buyer [Tower Genius — wpxdOZZukBY @ 00:07:42].',
+                      'Run a competitive process that surfaces more than eight buyers, cuts the bad actors '
+                      'and pares the field to two finalists [Airwave Advisors — ZhCVLpLy4-o @ 00:01:24].',
+                      'Push the first lump-sum offer higher and split the proceeds half in December and '
+                      'half in January to spread the tax over two years [Allworth Financial — L5rvTFM0pVg '
+                      '@ 00:06:46].'],
+ 'statutory_citations': [{'title': 'Acquisition Insider — How to Acquire a Cell Tower Lease (25,000 Towers '
+                                   "Stopped Paying Rent. Here's the Math.) [00:02:09]",
+                          'url': 'https://www.youtube.com/watch?v=MtWLazzJb9Y&t=129s',
+                          'relevance': 'Primary practitioner testimony on aggregator multiples, discount '
+                                       'rates, single-carrier termination risk and the Dish failure case.'},
+                         {'title': "Tower Genius — What's the Average Cell Tower Lease Buyout Worth? "
+                                   '[00:02:07]',
+                          'url': 'https://www.youtube.com/watch?v=pSGbaA0AbTo&t=127s',
+                          'relevance': 'Primary practitioner testimony on the 17.5x and 19x rent '
+                                       'multipliers and the $200,000 cost of a right of first refusal.'},
+                         {'title': 'Tower Genius — Who Are the Best Cell Tower Lease Buyout Companies? '
+                                   '[00:04:41]',
+                          'url': 'https://www.youtube.com/watch?v=wpxdOZZukBY&t=281s',
+                          'relevance': 'Primary practitioner testimony on right of first refusal leverage, '
+                                       'SNDA holdups, shared funding sources and conflicted consultants.'},
+                         {'title': 'Allworth Financial — Should You Sell Your Cell Tower Lease? Evaluating '
+                                   "Buyouts, Risks, and Starlink's Impact [00:03:14]",
+                          'url': 'https://www.youtube.com/watch?v=L5rvTFM0pVg&t=194s',
+                          'relevance': 'Primary practitioner testimony on a live lump-sum versus '
+                                       'installment offer, buyer IRR and two-year tax splitting.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'kPzYR4RlrCM',
+                       'title': 'Cell Tower Buyout Leases',
+                       'channel': 'Tower Genius',
+                       'author': 'Tower Genius',
+                       'text': "The sharks are circling, don't become their next meal, and this holds "
+                               'especially true to lease buyout because these transactions are valuable.',
+                       'tip': "The sharks are circling, don't become their next meal, and this holds "
+                              'especially true to lease buyout because these transactions are valuable.',
+                       'timestamp': 202,
+                       'timestamp_seconds': 202,
+                       'timestamp_label': '[00:03:22]',
+                       'url': 'https://www.youtube.com/watch?v=kPzYR4RlrCM&t=202s',
+                       'markdown': '[00:03:22](https://www.youtube.com/watch?v=kPzYR4RlrCM&t=202s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'pE5ehBu0C4s',
+                       'title': 'What is a Cell Tower Lease Buyout?',
+                       'channel': 'Tower Genius',
+                       'author': 'Tower Genius',
+                       'text': "You're not selling your building unless it's like a fee simple sale; "
+                               'property ownership does not change hands, you are assigning the interest.',
+                       'tip': "You're not selling your building unless it's like a fee simple sale; "
+                              'property ownership does not change hands, you are assigning the interest.',
+                       'timestamp': 111,
+                       'timestamp_seconds': 111,
+                       'timestamp_label': '[00:01:51]',
+                       'url': 'https://www.youtube.com/watch?v=pE5ehBu0C4s&t=111s',
+                       'markdown': '[00:01:51](https://www.youtube.com/watch?v=pE5ehBu0C4s&t=111s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'pSGbaA0AbTo',
+                       'title': "What's the Average Cell Tower Lease Buyout Worth?",
+                       'channel': 'Tower Genius',
+                       'author': 'Tower Genius',
+                       'text': 'Take the annual cell phone tower rent, 18,000, multiply it by 17 and a '
+                               "half and you'll get a number of 315,000, and that's if you have a right of "
+                               'first refusal or other limiting language in there.',
+                       'tip': 'Take the annual cell phone tower rent, 18,000, multiply it by 17 and a half '
+                              "and you'll get a number of 315,000, and that's if you have a right of first "
+                              'refusal or other limiting language in there.',
+                       'timestamp': 127,
+                       'timestamp_seconds': 127,
+                       'timestamp_label': '[00:02:07]',
+                       'url': 'https://www.youtube.com/watch?v=pSGbaA0AbTo&t=127s',
+                       'markdown': '[00:02:07](https://www.youtube.com/watch?v=pSGbaA0AbTo&t=127s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'MtWLazzJb9Y',
+                       'title': 'How to Acquire a Cell Tower Lease (25,000 Towers Stopped Paying Rent. '
+                                "Here's the Math.)",
+                       'channel': 'Acquisition Insider',
+                       'author': 'Acquisition Insider',
+                       'text': 'Buyouts are priced as a multiple of annual rent, and aggregator offers '
+                               'commonly cluster between 8 and 15 times.',
+                       'tip': 'Buyouts are priced as a multiple of annual rent, and aggregator offers '
+                              'commonly cluster between 8 and 15 times.',
+                       'timestamp': 129,
+                       'timestamp_seconds': 129,
+                       'timestamp_label': '[00:02:09]',
+                       'url': 'https://www.youtube.com/watch?v=MtWLazzJb9Y&t=129s',
+                       'markdown': '[00:02:09](https://www.youtube.com/watch?v=MtWLazzJb9Y&t=129s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'vM7__l_6wgE',
+                       'title': 'Why This Property Owner Chose Nexus Towers for His Cell Tower Lease '
+                                'Buyout',
+                       'channel': 'Nexus Towers',
+                       'author': 'Nexus Towers',
+                       'text': "I always thought that I have what we call real dollars and I'm getting "
+                               'pennies in exchange.',
+                       'tip': "I always thought that I have what we call real dollars and I'm getting "
+                              'pennies in exchange.',
+                       'timestamp': 46,
+                       'timestamp_seconds': 46,
+                       'timestamp_label': '[00:00:46]',
+                       'url': 'https://www.youtube.com/watch?v=vM7__l_6wgE&t=46s',
+                       'markdown': '[00:00:46](https://www.youtube.com/watch?v=vM7__l_6wgE&t=46s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'xfquYQeRi_Q',
+                       'title': 'HOW TO USE A CELL TOWER LEASE BUYOUT CALCULATOR',
+                       'channel': 'Tower Genius',
+                       'author': 'Tower Genius',
+                       'text': 'There is no such thing as a cell tower lease buyout calculator that can '
+                               'substitute and replace good old common sense.',
+                       'tip': 'There is no such thing as a cell tower lease buyout calculator that can '
+                              'substitute and replace good old common sense.',
+                       'timestamp': 17,
+                       'timestamp_seconds': 17,
+                       'timestamp_label': '[00:00:17]',
+                       'url': 'https://www.youtube.com/watch?v=xfquYQeRi_Q&t=17s',
+                       'markdown': '[00:00:17](https://www.youtube.com/watch?v=xfquYQeRi_Q&t=17s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'P2LhXcxO5KE',
+                       'title': 'Who are the best CELL TOWER LEASE BUYOUT COMPANIES?',
+                       'channel': 'Tower Genius',
+                       'author': 'Tower Genius',
+                       'text': 'You literally could have four offers from the same money source with four '
+                               'different companies in different locations, different states, and you have '
+                               'no idea.',
+                       'tip': 'You literally could have four offers from the same money source with four '
+                              'different companies in different locations, different states, and you have '
+                              'no idea.',
+                       'timestamp': 67,
+                       'timestamp_seconds': 67,
+                       'timestamp_label': '[00:01:07]',
+                       'url': 'https://www.youtube.com/watch?v=P2LhXcxO5KE&t=67s',
+                       'markdown': '[00:01:07](https://www.youtube.com/watch?v=P2LhXcxO5KE&t=67s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'L5rvTFM0pVg',
+                       'title': 'Should You Sell Your Cell Tower Lease? Evaluating Buyouts, Risks, and '
+                                "Starlink's Impact",
+                       'channel': 'Allworth Financial',
+                       'author': 'Allworth Financial',
+                       'text': "My guess is there's probably eight or nine or 10% internal rate of return "
+                               "that's calculated for the investor, if not more, because of the risk of "
+                               'them pulling that tower.',
+                       'tip': "My guess is there's probably eight or nine or 10% internal rate of return "
+                              "that's calculated for the investor, if not more, because of the risk of "
+                              'them pulling that tower.',
+                       'timestamp': 194,
+                       'timestamp_seconds': 194,
+                       'timestamp_label': '[00:03:14]',
+                       'url': 'https://www.youtube.com/watch?v=L5rvTFM0pVg&t=194s',
+                       'markdown': '[00:03:14](https://www.youtube.com/watch?v=L5rvTFM0pVg&t=194s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'wpxdOZZukBY',
+                       'title': 'Who Are the Best Cell Tower Lease Buyout Companies?',
+                       'channel': 'Tower Genius',
+                       'author': 'Tower Genius',
+                       'text': 'I actually heard an executive from one of the three big tower companies '
+                               'say that the right of first refusal provision is like a baseball bat that '
+                               'we used to beat down the cell tower landlords.',
+                       'tip': 'I actually heard an executive from one of the three big tower companies say '
+                              'that the right of first refusal provision is like a baseball bat that we '
+                              'used to beat down the cell tower landlords.',
+                       'timestamp': 281,
+                       'timestamp_seconds': 281,
+                       'timestamp_label': '[00:04:41]',
+                       'url': 'https://www.youtube.com/watch?v=wpxdOZZukBY&t=281s',
+                       'markdown': '[00:04:41](https://www.youtube.com/watch?v=wpxdOZZukBY&t=281s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ZhCVLpLy4-o',
+                       'title': 'Cell Tower Lease Buyout Testimonial | Airwave Advisors',
+                       'channel': 'Airwave Advisors',
+                       'author': 'Airwave Advisors',
+                       'text': 'Nick made it into sort of an auction type situation; he pared it down to '
+                               'two different outfits.',
+                       'tip': 'Nick made it into sort of an auction type situation; he pared it down to '
+                              'two different outfits.',
+                       'timestamp': 84,
+                       'timestamp_seconds': 84,
+                       'timestamp_label': '[00:01:24]',
+                       'url': 'https://www.youtube.com/watch?v=ZhCVLpLy4-o&t=84s',
+                       'markdown': '[00:01:24](https://www.youtube.com/watch?v=ZhCVLpLy4-o&t=84s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'POVBhyyB9Jc',
+                       'title': 'Cell Tower Lease Buyout Testimonial | Airwave Advisors',
+                       'channel': 'Airwave Advisors',
+                       'author': 'Airwave Advisors',
+                       'text': 'That eliminated my liability, and I was able to sell it for almost a '
+                               'hundred thousand dollars more than the other two firms that were offering '
+                               'me pricing.',
+                       'tip': 'That eliminated my liability, and I was able to sell it for almost a '
+                              'hundred thousand dollars more than the other two firms that were offering '
+                              'me pricing.',
+                       'timestamp': 81,
+                       'timestamp_seconds': 81,
+                       'timestamp_label': '[00:01:21]',
+                       'url': 'https://www.youtube.com/watch?v=POVBhyyB9Jc&t=81s',
+                       'markdown': '[00:01:21](https://www.youtube.com/watch?v=POVBhyyB9Jc&t=81s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'X75LHgvP1U8',
+                       'title': 'Important Cell Tower Lease Buyout Tip for 2024',
+                       'channel': 'Tower Genius',
+                       'author': 'Tower Genius',
+                       'text': "Dish is, let's just say, toxic to the buyout industry right now, and "
+                               'nobody wants to touch them with a 10-foot pole.',
+                       'tip': "Dish is, let's just say, toxic to the buyout industry right now, and nobody "
+                              'wants to touch them with a 10-foot pole.',
+                       'timestamp': 60,
+                       'timestamp_seconds': 60,
+                       'timestamp_label': '[00:01:00]',
+                       'url': 'https://www.youtube.com/watch?v=X75LHgvP1U8&t=60s',
+                       'markdown': '[00:01:00](https://www.youtube.com/watch?v=X75LHgvP1U8&t=60s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'MteawsLjdZY',
+                       'title': "Why Aren't All Cell Tower Lease Buyout Companies Equal?",
+                       'channel': 'Tower Genius',
+                       'author': 'Tower Genius',
+                       'text': 'With the advice and the guidance that we had provided to her, she obtained '
+                               'an additional seven hundred thousand dollars on the sale of that rental '
+                               'stream.',
+                       'tip': 'With the advice and the guidance that we had provided to her, she obtained '
+                              'an additional seven hundred thousand dollars on the sale of that rental '
+                              'stream.',
+                       'timestamp': 151,
+                       'timestamp_seconds': 151,
+                       'timestamp_label': '[00:02:31]',
+                       'url': 'https://www.youtube.com/watch?v=MteawsLjdZY&t=151s',
+                       'markdown': '[00:02:31](https://www.youtube.com/watch?v=MteawsLjdZY&t=151s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'JX38qocLKEg',
+                       'title': 'Cell Tower Lease Buyout',
+                       'channel': 'TowerPoint',
+                       'author': 'TowerPoint',
+                       'text': 'By converting your rental income into a large cash payment you can enjoy '
+                               'benefits including paying off debt, funding capital improvement and '
+                               'eliminating the risk of site decommissioning and rent reduction.',
+                       'tip': 'By converting your rental income into a large cash payment you can enjoy '
+                              'benefits including paying off debt, funding capital improvement and '
+                              'eliminating the risk of site decommissioning and rent reduction.',
+                       'timestamp': 41,
+                       'timestamp_seconds': 41,
+                       'timestamp_label': '[00:00:41]',
+                       'url': 'https://www.youtube.com/watch?v=JX38qocLKEg&t=41s',
+                       'markdown': '[00:00:41](https://www.youtube.com/watch?v=JX38qocLKEg&t=41s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'YW6JaW_qjAE',
+                       'title': 'SELLING A CELL TOWER LEASE IN 2024? WHATS MY CELL TOWER LEASE EASEMENT OR '
+                                'LEASE BUYOUT REALLY WORTH?',
+                       'channel': 'Tower Genius',
+                       'author': 'Tower Genius',
+                       'text': 'We can analyze them and give you and your attorney feedback to make sure '
+                               "that you're not leaving money on the table and that you're protected from "
+                               'many of the loopholes that are inserted into these contracts.',
+                       'tip': 'We can analyze them and give you and your attorney feedback to make sure '
+                              "that you're not leaving money on the table and that you're protected from "
+                              'many of the loopholes that are inserted into these contracts.',
+                       'timestamp': 55,
+                       'timestamp_seconds': 55,
+                       'timestamp_label': '[00:00:55]',
+                       'url': 'https://www.youtube.com/watch?v=YW6JaW_qjAE&t=55s',
+                       'markdown': '[00:00:55](https://www.youtube.com/watch?v=YW6JaW_qjAE&t=55s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'SQKWpJzLCTs',
+                       'title': 'Cell Tower Lease Buyout Offers? If Cell Towers Might Become Obsolete Why '
+                                'Do I Get Offers To Sell?',
+                       'channel': 'Tower Genius',
+                       'author': 'Tower Genius',
+                       'text': "They're going to package it off and they're going to sell it to some hedge "
+                               "fund on Wall Street who's going to sell it and going to sell that again.",
+                       'tip': "They're going to package it off and they're going to sell it to some hedge "
+                              "fund on Wall Street who's going to sell it and going to sell that again.",
+                       'timestamp': 294,
+                       'timestamp_seconds': 294,
+                       'timestamp_label': '[00:04:54]',
+                       'url': 'https://www.youtube.com/watch?v=SQKWpJzLCTs&t=294s',
+                       'markdown': '[00:04:54](https://www.youtube.com/watch?v=SQKWpJzLCTs&t=294s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'}]}

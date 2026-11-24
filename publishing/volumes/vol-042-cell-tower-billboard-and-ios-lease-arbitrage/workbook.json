@@ -1,470 +1,470 @@
 {
   "workbook_id": "wb-042-cell-tower-billboard-and-ios-lease-arbitrage",
   "volume_id": "vol-042-cell-tower-billboard-and-ios-lease-arbitrage",
-  "title": "Cell-Tower, Digital-Billboard & IOS Lease Arbitrage — Operator Companion Workbook",
-  "subtitle": "6 Printable Operator Worksheets for Telecom Easement Buyouts, DOT Billboard Permit Assignments, and NNN Industrial Outdoor Storage Master-Lease Spreads: Underwriting, Capital, Execution, Statutory Controls, Automation, and Small-Team Launch",
+  "title": "Cell-Tower, Digital-Billboard & IOS Lease Arbitrage — Practitioner Testimony Operator Workbook",
+  "subtitle": "Pricing Cell Site Buyouts, Policing Lease Fine Print, Negotiating Ground Rent, and Underwriting Tower and Billboard Permits Before Any Money Changes Hands",
   "worksheets": [
     {
       "worksheet_id": "ws-01",
       "number": 1,
-      "title": "Arbitrage Deal / Counterparty Underwriting & Spread Qualification",
-      "purpose": "Separate transferable property rights from attractive parcel stories. Underwrite the owner, lender, infrastructure tenant, permit authority, and eventual buyer before spending diligence capital. Establish a documented spread that survives assignment restrictions, title priority, termination rights, operating costs, and realistic execution timing.",
-      "chapter_ref": "Q1, Q2, Q6",
+      "title": "Cell Site Buyout Valuation and Fine-Print Audit",
+      "purpose": "Price a cell site rent stream the way buyers do, then audit the lease language that moves the multiple, so every buyout offer is measured against documented multiples, named sub-tenants, termination risk, and fine print before any letter of intent is signed.",
+      "chapter_ref": "Q1-Q2",
       "instructions": [
-        "Create one opportunity record for each distinct legal interest, not merely each street address. Attach the parcel identifier, record owner, proposed instrument, existing leases, and responsible reviewer before comparing telecom, billboard, and outdoor-storage opportunities.",
-        "Request evidence directly from the party responsible for it. Obtain rent history from the owner, consent requirements from the documents, permit status from the authority, and buyer criteria from an identified acquisition representative with documented authority.",
-        "Calculate proceeds after acquiring the specific right and paying transaction charges, then test the spread against delay and counterparty failure. Treat quoted acquisition multiples as hypotheses until a buyer prices the actual lease and title package.",
-        "Score title, land use, access, tenant credit, environmental exposure, and transferability separately. A strong aggregate score cannot compensate for a prohibited use, missing lender protection, or an owner who cannot convey the interest offered.",
-        "Choose advance, renegotiate, or archive using written thresholds and dated evidence. Assign each unresolved issue an owner, spending limit, and resolution date so an inexpensive option does not become an uncontrolled obligation through inattention."
+        "Gather the full lease, every amendment, twelve months of rent statements, and every buyout offer letter before filling in a single field.",
+        "Physically verify sub-tenants on site through meter labels, equipment cabinets, and building department permits rather than relying on pay stubs.",
+        "Run every dollar figure at three multiples, aggregator low, average, and clean-lease high, and keep the math visible on the page.",
+        "Do not sign or return any letter of intent until the right of first refusal, confidentiality, and consent-to-assign review is finished.",
+        "Demand written letters of intent and sample easement documents from every buyer, and log each one against its likely money source."
       ],
       "fields": [
         {
-          "name": "Legal interest and parcel identity",
-          "type": "textarea",
-          "prompt": "Identify the county parcel, legal owner, asset lane, and exact interest being acquired. Explain how the proposed instrument differs from buying the entire property or the infrastructure installed upon it.",
-          "example": "Opportunity TX-TWR-014 concerns a defined telecom easement on parcel 145-22-018, owned by Cedar Yard Holdings LLC. The proposal covers rent collection, access, and utility rights described in Exhibit A; it does not purchase the underlying warehouse or the carrier's antenna equipment."
+          "name": "current_annual_rent_and_multiple",
+          "type": "text",
+          "prompt": "Record the exact annual cell site rent your lease pays today, then multiply it by the low, average, and clean-lease multiples practitioners quote. Show all three dollar results side by side so you know the realistic ceiling and floor before any buyer calls.",
+          "example": "Annual rent is $18,000. At 17.5 times that equals $315,000, the figure Casella attaches to a lease carrying a right of first refusal or other limiting language [Tower Genius — pSGbaA0AbTo @ 00:02:07]. At 19 times with 3% escalators, revenue share, and no ROFR, the same stream reaches $342,000. Aggregator offers at 8 to 15 times would land between $144,000 and $270,000."
         },
         {
-          "name": "Owner authority and counterparty verification",
+          "name": "discount_rate_present_value",
           "type": "textarea",
-          "prompt": "Document entity existence, authorized signatories, ownership evidence, payment destinations, and the relationship between the negotiating party and recorded owner. Specify an independent verification step before accepting instructions that move money.",
-          "example": "The recorded owner matches the deed and current state entity record. Obtain the operating agreement and a member resolution authorizing the easement sale. Verify the escrow beneficiary by calling the title company's previously verified number; an emailed bank change alone never changes payment instructions."
+          "prompt": "Write down the discount rate each buyer is implicitly using and compare it with an owner-side rate. Estimate the present value of your remaining term with escalators, then state the gap in dollars between that value and the highest written offer.",
+          "example": "Aggregators discount at 8 to 12 percent while owner-side valuations run 4 to 6 percent. At 8 percent, an $18,000-a-year lease with a 3% escalator and 25 years of term is worth about $250,000, or 14 times rent [Acquisition Insider — MtWLazzJb9Y @ 00:02:26]. My written high offer is $230,000, so the documented gap is roughly $20,000 before any owner-rate adjustment."
         },
         {
-          "name": "Telecom income durability and multiple",
+          "name": "subtenant_identification",
           "type": "textarea",
-          "prompt": "Record collectible annual rent, escalators, remaining term, renewal options, termination provisions, and existing assignments. Translate the proposed purchase and resale prices into multiples of current collectible rent rather than advertised future rent.",
-          "example": "Collected rent is $24,000 annually with a documented 3% annual escalator. A $360,000 acquisition equals 15 times current rent; a $400,000 resale equals 16.67 times. The marketed 16–22 times buyer range is only a screening reference; termination rights can materially reduce the actual bid."
+          "prompt": "List every carrier physically on the tower or rooftop by name, not as collocator A, B, or C. Note how you confirmed each one, such as meter labels, cabinets, or permits, and flag any tenant buyers treat as risky.",
+          "example": "Pay stubs list only collocator A, B, and C, which buyers reject because they want to rule out carriers like Dish before wiring money [Tower Genius — X75LHgvP1U8 @ 00:01:36]. Meter labels show AT&T and T-Mobile; a cabinet sticker and a building department permit confirm the third occupant is Dish. Flag: toxic exposure, expect a discounted bid or walkaway."
         },
         {
-          "name": "Billboard permit and ground-right linkage",
+          "name": "rofr_confidentiality_consent",
           "type": "textarea",
-          "prompt": "Link the sign permit, ground lease, access rights, electrical service, and digital-conversion authorization. Identify which documents permit assignment and which require a separate written decision from the issuing authority or landowner.",
-          "example": "BB-009 has a ground-lease option but no issued digital permit. The $20,000 target assignment fee remains contingent on state DOT transfer acceptance, municipal digital-display authorization, and landlord consent. A permitted static sign nearby does not establish this parcel's digital eligibility or spacing compliance."
+          "prompt": "Quote the exact right of first refusal, confidentiality, and consent-to-assign clauses from your lease. For each, explain how it could suppress bidding or put you in default if you signed a letter of intent without clearing it first.",
+          "example": "Section 14 grants the tenant a right of first refusal. One Tower Genius client shopping a ROFR-encumbered lease to about six top easement buyers drew only three bids [Tower Genius — 5MqJqF4hVEQ @ 00:01:28]. Section 22 confidentiality bars disclosing rent, so signing a letter of intent before clearing it could trigger default and kill the sale [Tower Genius — wpxdOZZukBY @ 00:05:12]."
         },
         {
-          "name": "IOS usable capacity and tenant demand",
-          "type": "textarea",
-          "prompt": "Measure usable outdoor-storage area after setbacks, drainage, turning radii, emergency access, and restricted surfaces. Support occupancy assumptions with named fleet demand and independently documented access and heavy-vehicle operating requirements.",
-          "example": "A six-acre parcel yields 100 usable fleet spaces after drainage and turning areas. At $550 per occupied space monthly, full billing is $55,000. The master rent is $35,000 monthly. Two fleet prospects request 70 spaces collectively, leaving 30 spaces uncommitted rather than automatically occupied."
+          "name": "rofr_price_penalty",
+          "type": "text",
+          "prompt": "Estimate the dollar penalty a right of first refusal imposes on your specific buyout by comparing a clean-lease multiple against your encumbered multiple. Record both totals and the difference so the cost of leaving the clause in place is explicit.",
+          "example": "Casella's three-carrier urban rooftop paid $117,000 a year; at 19 times the buyout reached $2,223,000, and ROFRs would have cut about $200,000, pushing it under $2 million [Tower Genius — pSGbaA0AbTo @ 00:07:14]. Separately, a retiring owner who struck the ROFR was offered over $200,000 above their best offer [Tower Genius — H0Q5FZ_5RWA @ 00:04:14]. Both figures set my strike-the-clause priority."
         },
         {
-          "name": "Lender priority and tenant continuity",
+          "name": "money_source_map",
           "type": "textarea",
-          "prompt": "Identify mortgages, existing assignments of rents, superior leases, and foreclosure exposure. Describe the lender instrument required to preserve the acquired right or tenancy and identify who can approve its final language.",
-          "example": "The mortgage predates the proposed yard master lease. Request a lender-executed subordination, nondisturbance, and attornment agreement covering permitted subtenants and notice rights. The owner's promise to seek consent is insufficient. Defer lease commencement until the agreed lender protection is executed and any required recording is completed."
+          "prompt": "Map every buyout company that has contacted you to the money source behind it, as far as you can determine. Note duplicate offers that may trace to one funder and record which buyers supplied written letters of intent and sample easement documents.",
+          "example": "Four mailers arrived from different buyout companies, yet a handful of money sources sit behind roughly 20 brands, so four offers may share one funder [Tower Genius — P2LhXcxO5KE @ 00:01:07]. I demanded written letters of intent and sample easements; five buyers narrowed to two, and a four-month clawback surfaced only on paper [James Furlo | Furlo Capital — bk4EnTlbPdA @ 00:18:34]."
         },
         {
-          "name": "Buyer capacity and executable exit",
+          "name": "sell_or_hold_timing",
           "type": "textarea",
-          "prompt": "Describe the proposed buyer's acquisition mandate, evidence of funding, underwriting conditions, approval authority, and closing schedule. Distinguish a preliminary price indication from a binding purchase obligation with specified remedies.",
-          "example": "Buyer A supplies a $400,000 indication for TX-TWR-014, subject to lease, title, and lender review within 20 business days. Buyer B requests a 12% yield sensitivity. Neither indication supports releasing acquisition funds before an executed purchase agreement and documented closing conditions exist."
+          "prompt": "Decide whether to sell the rent stream now and transfer obsolescence risk, or hold and renegotiate at renewal. Record years remaining until renewal, any offer arriving on the eve of renewal, and the reasoning that tips your decision either way.",
+          "example": "Renewal is 26 months away and an unsolicited offer just landed. Buyers love an undervalued lease on the eve of renewal because the wider spread is their arbitrage play [Tower Genius — wpxdOZZukBY @ 00:03:34]. Decision: hold, renegotiate escalator and revenue share first, then shop the improved stream. Once sold, no other income remains from that site [Tower Genius — weiPEHNdlU0 @ 00:02:07]."
         },
         {
-          "name": "Spread qualification and rejection threshold",
+          "name": "termination_stress_test",
           "type": "textarea",
-          "prompt": "Calculate the operator's transaction spread using explicit acquisition consideration and closing charges. Establish a minimum spread and show which price change, delay, or document defect would force renegotiation or rejection.",
-          "example": "The telecom illustration produces $400,000 buyer consideration less $360,000 acquisition consideration and $5,000 closing charges, leaving $35,000 operator spread. The minimum acceptable spread is $25,000. A buyer reduction to $385,000 leaves $20,000 and therefore requires a lower acquisition price or withdrawal."
+          "prompt": "Model the rent stopping entirely in year five through eight and describe what happens to your income and your buyout value. Reference the Dish rent halt, then decide whether one site can survive that scenario or whether diversification is required.",
+          "example": "Dish halted rent on about 25,000 sites, and buyers price that termination risk into every bid. Acquisition Insider's rule: model rent stopping in year five to eight, and if one site cannot survive it, buy several or pass [Acquisition Insider — MtWLazzJb9Y @ 00:06:38]. My single-tenant rooftop fails the test, which argues for selling now rather than holding."
         },
         {
-          "name": "Concentration and correlated failure exposure",
-          "type": "textarea",
-          "prompt": "Measure exposure by municipality, lender, buyer, carrier, and fleet tenant rather than counting addresses alone. Explain how a shared dependency could delay several apparently independent opportunities at the same time.",
-          "example": "Four billboard prospects depend on one city's digital-sign ordinance, while three telecom parcels share one lender. Cap unresolved diligence spending at $6,000 per dependency group. Advance a separate IOS prospect only after confirming its fleet customer does not depend on the same logistics contract."
+          "name": "rooftop_premises_definition",
+          "type": "text",
+          "prompt": "Check whether your rooftop or ground lease defines the premises with written dimensions. Record the documented square footage, the equipment actually installed, and every antenna or remote radio unit that should be billed as an expansion under a tightened definition.",
+          "example": "A West Coast T-Mobile rooftop amendment had no premises dimensions written anywhere after roughly 20 years on the roof [Tower Genius — WlOtjvRO-jU @ 00:01:23]. My lease likewise omits dimensions. Proposed fix: define a 400-square-foot area plus two wall mounts in writing, so any added antenna or wall-mounted RRU becomes a billable expansion, and keep the renewal term short."
         },
         {
-          "name": "Underwriting decision and evidence register",
+          "name": "optimization_letter_response",
           "type": "textarea",
-          "prompt": "State the decision, evidence relied upon, unresolved conditions, authorized next expenditure, and review date. Make the decision auditable by another operator without requiring access to private recollections or informal messages.",
-          "example": "Advance TX-TWR-014 for document diligence only. Authorize $2,500 for title and lease review through day 12. The owner must deliver payment history and the lender contact by day 7. Archive the opportunity if rent ownership cannot be reconciled to the recorded instruments and executed lease."
+          "prompt": "Draft your response to any lease optimization or rent reduction letter you have received. Name the carrier involved, state the question you will ask about equipment removal, and note who you will copy so the bluff is called in writing.",
+          "example": "A tower company letter demands a $500 monthly rent cut. Reply: 'Please confirm when the equipment will be removed,' copying the carrier named on the letter [Tower Genius — Z2FKmFdZgvA @ 00:10:10]. An area director once called within 48 hours begging that it not be treated as termination. Sites usually move only under eminent domain, not over $500 [Tower Genius — RMRSHif8WD0 @ 00:07:09]."
         }
       ],
-      "completion_gate": "Advance only when the legal interest, counterparty authority, documented demand, transfer path, minimum spread, and capped next expenditure are recorded; unresolved title, use, or lender conditions must remain explicit conditions rather than assumptions."
+      "completion_gate": "Complete only when every carrier on site is named and physically verified, all three multiples are calculated in dollars, the right of first refusal, confidentiality, and consent clauses are quoted verbatim, the year-five-to-eight rent stop is modeled, and at least two written offers with sample easement documents are on file."
     },
     {
       "worksheet_id": "ws-02",
       "number": 2,
-      "title": "Unit Economics, Escrow/Reserve Float & Working-Capital Calculator",
-      "purpose": "Convert property-level cash movement into operator-level economics without counting acquisition principal as earned revenue. Reconcile the three canonical scenarios, distinguish retained spreads from customer billings, and size unrestricted working capital separately from escrow, deposits, restricted reserves, and buyer-funded acquisition cash.",
-      "chapter_ref": "Q3, Q4",
+      "title": "Lease Negotiation and Ground Rent Capture",
+      "purpose": "Negotiate a cell site lease from the owner's side of the table by refusing to name a number first, compounding escalators, limiting space and use, and structuring revenue share as a percentage, then test whether nearby vacant land can produce truck parking or outdoor storage income.",
+      "chapter_ref": "Q3-Q4",
       "instructions": [
-        "Copy the canonical annual revenue, margin, owner-profit, and staffing figures before building individual transactions. Use the same operator-level revenue basis throughout; property value, buyer purchase consideration, tenant billings, and retained spreads belong on separate lines.",
-        "Build a transaction waterfall showing every receipt, acquisition payment, pass-through, fee, and operating expense. Flag costs already deducted inside a spread so the annual expense schedule does not deduct the same cash outflow again.",
-        "Prepare a weekly cash calendar through the expected closing date and a delayed-closing case. Classify each balance by ownership and restriction, then exclude customer deposits and conditional buyer funds from the cash available to pay overhead.",
-        "Separate recurring monthly overhead from transaction pursuit costs, yard operations, and acquisition consideration. The stated monthly overhead range does not represent every annual expense or the funding required to carry an unfunded master lease.",
-        "Review the economic scorecard alongside the applicable accounting presentation. Document principal-versus-agent judgments for service arrangements and lease treatment where relevant; do not label every retained spread as ASC 606 revenue simply because cash settles net."
+        "Treat the carrier and the tower developer as the opposing side, and keep every exchange in writing from the first call forward.",
+        "Never sign a term sheet or option until you hold the full lease and know every term binding the whole property.",
+        "Keep co-location, sub-leasing, and revenue share out of early calls until the developer has done a site walk and spent money on engineering.",
+        "Value the individual site on its own merits and reject any argument built on so-called market rent or neighboring deals.",
+        "For any land screened for truck parking or outdoor storage, confirm surface, zoning, and highway access before projecting a single dollar."
       ],
       "fields": [
         {
-          "name": "Canonical scenario reconciliation",
-          "type": "textarea",
-          "prompt": "Enter all three Formula v2.0 scenarios with operator revenue, net margin, annual owner net profit, total modeled expenses, and staffing. Demonstrate arithmetic rather than rounding the figures into a different business case.",
-          "example": "Conservative: $120,000 revenue × 28% = $33,600 profit, with $86,400 expenses and 1 FT + 3 C. Base: $535,000 × 40% = $214,000, with $321,000 expenses and 1 FT + 3 C. Scaled: $950,000 × 52% = $494,000, with $456,000 expenses and 2 FT + 4 C."
+          "name": "lessee_identity",
+          "type": "text",
+          "prompt": "Identify whether the lessee is a carrier holding the site directly or a tower developer acting as middleman. Record the lessee's legal name and the realistic monthly rent range that identity implies before you respond to any number they propose.",
+          "example": "The lessee is a tower developer, not a carrier. Casella says a carrier-owned site supports about $2,000 a month while a developer realistically offers $750 to $1,000, because the developer spends $200,000 to $250,000 per tower and collects about $2,000 monthly per carrier tenant [Tower Genius — nUDRfQeqe7A @ 00:05:56]. Expect squeezed ground rent and negotiate structure, not just price."
         },
         {
-          "name": "Base revenue bridge by asset lane",
+          "name": "first_number_refusal",
           "type": "textarea",
-          "prompt": "Construct an illustrative activity mix that sums exactly to the canonical base revenue. Identify the number of completed transactions and annual retained yard spread without treating the illustrative mix as a supplied production forecast.",
-          "example": "Five telecom transactions at $35,000 spread contribute $175,000. Six billboard assignments at $20,000 contribute $120,000. One stabilized yard contributes $20,000 monthly retained spread, or $240,000 annually. Together they equal $535,000. This illustrative steady-state mix is not a claim that every startup reaches full occupancy immediately."
+          "prompt": "Record every document the developer or carrier has sent, including term sheets and blank lease templates. Write the exact reply you will send that refuses to name a number first and demands proposed rent, term length, and escalation in writing.",
+          "example": "Received: one blank lease template and one term sheet. Tower Genius holds it is never a good idea to sign a term sheet [Tower Genius — Eo568DFPXFk @ 00:01:06]. Reply drafted: 'Thank you; please return this with your proposed rent, term length, and escalation filled in,' bouncing the template politely so I never negotiate against myself [Tower Genius — DJfkRMlj2fg @ 00:00:59]."
         },
         {
-          "name": "Acquisition principal and spread waterfall",
-          "type": "textarea",
-          "prompt": "Show buyer consideration, acquisition consideration, closing charges, and resulting operator spread for a telecom deal. Identify cash held by the settlement agent and explain why acquisition principal is excluded from scorecard revenue.",
-          "example": "Escrow receives $400,000 from the buyer, disburses $360,000 for the easement, pays $5,000 transaction charges, and releases $35,000 to the operator. Scorecard revenue is $35,000, not $400,000. The $360,000 and $5,000 are already reflected in that spread and are not deducted again below it."
+          "name": "escalator_terms",
+          "type": "text",
+          "prompt": "Write the escalator currently offered and the escalator you will demand. Compare a compounding annual increase against any five-year bump or CPI alternative, and calculate what each produces on your base rent at year ten and year twenty.",
+          "example": "The tower company offered 1 percent. Odum reports companies pushing 2, 1, or zero percent and insists on at least 3 percent compounding annually or CPI, noting 10 or 15 percent every five years does not compound each year [Vertical Consultants — F1m9euwLJAQ @ 00:04:23]. On $2,000 monthly base, 3 percent compounding reaches about $2,690 by year eleven."
         },
         {
-          "name": "Retained share and accounting classification",
+          "name": "space_and_use_limits",
           "type": "textarea",
-          "prompt": "Calculate retained share where underlying billings are larger than the operator's economic contribution. Record whether the arrangement involves a lease, a service, or both, and identify the accounting review needed for each component.",
-          "example": "Annual yard billings of $660,000 less $420,000 master rent produce $240,000 retained spread; retained_share is 0.363636 approximately. Use $240,000 in this scorecard. Evaluate lease components under ASC 842 and service components under ASC 606, including principal-versus-agent presentation; net settlement alone does not determine recognized revenue."
+          "prompt": "Record the square footage the developer requested versus what a tower actually needs, and list the permitted uses written into the draft. Treat time, space, and use as separate commodities and note what you will trade or withhold on each.",
+          "example": "The draft asks for 10,000 square feet. Odum says tower companies request up to 10,000 or more but need closer to 2,000 or 3,000 [Vertical Consultants — NS76BzQHI_o @ 00:01:00]. Counter: 2,500 square feet, use limited to wireless communications, any expansion priced separately. Time: initial term shortened so future renegotiation remains available rather than locked away for decades."
         },
         {
-          "name": "Base expense bridge without duplicate deductions",
+          "name": "revenue_share_structure",
           "type": "textarea",
-          "prompt": "Reconcile total modeled base expenses to the owner-profit target using separately identified cost categories. Exclude acquisition consideration and charges already netted in the transaction spreads, and describe the recurring overhead component.",
-          "example": "Base expenses are $72,000 recurring overhead, $60,000 telecom pursuit costs, $54,000 billboard pursuit costs, $105,000 yard operations, and $30,000 portfolio contractor support: $321,000 total. Revenue of $535,000 less $321,000 yields $214,000. The $6,000 monthly overhead sits within the stated $2,000–$12,000 range; other categories are additional."
+          "prompt": "Describe how revenue share is currently offered and restructure it as a percentage of what the tower owner collects from each collocator. Note when you will raise the subject so you do not reveal it before the developer commits money to the site.",
+          "example": "Their fallback is a flat $200 a month revenue share, a tactic Odum calls a fallback to give you something [Vertical Consultants — F1m9euwLJAQ @ 00:16:40]. Flat $400 against AT&T paying $2,000 is 20 percent, but only 10 percent once AT&T pays $4,000 [Vertical Consultants — eJhWsOIzk6A @ 00:01:05]. Counter: percentage share, raised only after their engineering spend."
         },
         {
-          "name": "Startup allocation and commitment limits",
+          "name": "site_reconciliation",
           "type": "textarea",
-          "prompt": "Allocate startup cash within the stated capital range without implying that this amount purchases an entire easement or funds every yard reserve. Distinguish committed spending, available liquidity, and contingent future funding.",
-          "example": "Allocate $48,000 startup cash as $18,000 investigation capacity, $6,000 initial systems and document setup, $12,000 for two months of overhead, and $12,000 contingency liquidity. The amount fits the $12,000–$60,000 range. It does not fund the $360,000 easement purchase or authorize an unsupported yard lease."
+          "prompt": "Walk the site and reconcile the existing lease against what is physically installed. List any space used outside the lease lines, work done without consent, and unpaid taxes, insurance, utilities, or fees that create a renegotiation opening for you.",
+          "example": "The compound fence sits eight feet past the lease line, and a generator pad was added with no consent on file, the kind of painting outside the lines that hands owners an opening [Vertical Consultants — F1m9euwLJAQ @ 00:12:42]. Lease scan also shows property tax reimbursements unpaid for three years, a fee category that sometimes goes unpaid [Vertical Consultants — USOklBMqTr0 @ 00:00:55]."
         },
         {
-          "name": "Restricted deposits and escrow ownership",
-          "type": "textarea",
-          "prompt": "List each escrow balance, tenant deposit, landlord security requirement, and designated reserve. State ownership, permitted uses, release conditions, and ledger treatment so restricted money cannot quietly become operating cash.",
-          "example": "A fleet deposits $15,000 against damage and unpaid charges; record a deposit liability, not earned revenue. The landlord requires $35,000 security at commencement. A $10,000 buyer deposit remains subject to purchase-contract release terms. None of these balances substitutes for the operator's unrestricted overhead reserve."
+          "name": "expiration_leverage",
+          "type": "text",
+          "prompt": "Record the years remaining before final expiration and place yourself on the leverage scale practitioners describe. Note any competing tower nearby, its mount height and elevation, and whether you plan to pause talks rather than be worn down.",
+          "example": "Seven years remain, which JP Tower Consulting calls significant leverage; within two years is stronger, and talks run 3 to 12 months or longer [JP Tower Consulting — gy9A1QN_8Jk @ 00:03:14]. A competing tower sits a mile east with lower mounts, which can force their hand. Tower Genius warns against letting the lease fall below two years, so talks start now."
         },
         {
-          "name": "Working-capital gap and timing stress",
+          "name": "developer_commitment_check",
           "type": "textarea",
-          "prompt": "Calculate the largest cumulative unrestricted cash deficit through a delayed closing or lease commencement. Include security, first rent, overhead, and identified setup spending, then state the funding condition that prevents an uncovered obligation.",
-          "example": "Yard commencement requires $35,000 security, $35,000 first rent, $14,000 setup, and $6,000 overhead: $90,000. Even before other startup spending, $48,000 leaves a $42,000 gap. Defer commencement unless documented additional capital or enforceable timing concessions close the gap; prospective fleet interest is not cash."
+          "prompt": "Before signing any option, ask the developer to name a committed carrier and a construction start date. Record their answers, how quickly they came, and whether they are asking for a right of first refusal they have not paid for.",
+          "example": "Asked for the committed carrier and start date; the developer answered 'pending' after two weeks, so they are treated as speculators whose option encumbers the property from day one [Vertical Consultants — 7qwoLJg7Ya8 @ 00:03:33]. The draft's ROFR gets struck: under the Gazella rule, a carrier wanting an option pays for it, like any Wall Street option [Tower Genius — xv8TdIdnmRQ @ 00:06:27]."
         },
         {
-          "name": "Occupancy and contribution break-even",
-          "type": "textarea",
-          "prompt": "Stress the illustrative yard using occupied spaces, realized price, fixed master rent, and yard operating costs. Identify the break-even occupancy before central overhead and explain how vacant capacity changes the base revenue bridge.",
-          "example": "Yard operations of $105,000 annually equal $8,750 monthly. With $35,000 master rent and $550 per space, break-even before central overhead requires 80 occupied spaces. At 70 spaces, billing is $38,500 and site contribution is negative $5,250 monthly. The stabilized $240,000 retained spread therefore cannot be assumed during lease-up."
+          "name": "dollar_value_of_monthly_rent",
+          "type": "text",
+          "prompt": "Translate every proposed monthly rent difference into lifetime lease value using the rule of thumb that one dollar of monthly rent equals roughly one thousand dollars of value. Record the gap between their offer and your counter in those terms.",
+          "example": "Their offer is $1,200 a month; my counter is $1,800. Odum's rule over a roughly 30-year lease life says each $1 of monthly rent is worth about $1,000, so an extra $100 a month is about $100,000 [Vertical Consultants — F1m9euwLJAQ @ 00:19:51]. The $600 gap therefore represents roughly $600,000 of lease value, which explains their resistance."
         },
         {
-          "name": "Capital release and scenario ownership",
+          "name": "vacant_land_income_screen",
           "type": "textarea",
-          "prompt": "Record who approves expenditure, which scenario currently governs decisions, and what evidence permits releasing reserves. Keep annual scorecard targets separate from weekly cash forecasts and document any variance without rewriting canonical figures.",
-          "example": "The operating lead owns the weekly cash forecast and the bookkeeper verifies restricted balances each Friday. Use the conservative case for initial commitments. Release transaction contingency only after settlement reconciliation and document acceptance. Preserve the canonical base $214,000 target while separately reporting any actual occupancy or closing shortfall."
+          "prompt": "If you hold vacant or underused land, assess it for truck parking or outdoor storage income. Record surface type, adjacency to retail or residential, highway access, zoning, and the daily or monthly rate band that matches your market density.",
+          "example": "Two acres of compacted gravel off an interstate in a suburban market, no retail or residential neighbors, passing Shealy's surface rule [Ask Flip Man — NIYpBpIvXTc @ 00:07:16]. Suburban rate band: $20 to $25 per truck per day. For a monthly model, Cauble pegs $175 to $225 per truck space, checked against local comps [Tyler Cauble — IRDT0HnPpUc @ 00:14:46]."
         }
       ],
-      "completion_gate": "The three scenarios reconcile exactly; the base activity and expense bridges tie to $535,000 and $214,000; restricted money is segregated; and every proposed commitment has documented funding through the delayed-close case."
+      "completion_gate": "Complete only when the lessee type is identified, a written counter specifying rent, term, a compounding escalator of at least 3 percent, square footage, permitted use, and percentage revenue share has been sent, the site reconciliation is logged, and no term sheet or option has been signed."
     },
     {
       "worksheet_id": "ws-03",
       "number": 3,
-      "title": "End-to-End Execution, Idempotent Ledger & QA Pre-Flight Sheet",
-      "purpose": "Turn a qualified opportunity into a repeatable closing or operating workflow. Establish immutable document references, explicit state transitions, duplicate-resistant accounting events, and independent payment checks so retries, revised contracts, delayed permits, and device outages cannot silently create duplicate obligations or releases.",
-      "chapter_ref": "Q7, Q8",
+      "title": "Tower Ownership Returns and Billboard Permit Underwriting",
+      "purpose": "Underwrite a tower purchase or build on signed tenants, payback, and land control, then underwrite a billboard acquisition on permit status, ground lease, real occupancy, DOT traffic, and reroute risk, so both assets are priced as permit-protected infrastructure rather than steel.",
+      "chapter_ref": "Q5-Q6",
       "instructions": [
-        "Map the process from sourced lead through executed documents, recording, settlement, and recurring operation. Give each state an entry condition, responsible person, required evidence, and permitted next action rather than relying on a single percentage-complete field.",
-        "Assign stable identifiers to opportunities, legal interests, contracts, payments, and source events. Keep revision numbers separate from business identity so an amended document does not accidentally create a second acquisition, deposit, invoice, or payout.",
-        "Design money movement as a checked workflow rather than a side effect of receiving an email or webhook. Persist the intended action, verify settlement status, and reconcile externally before retrying any uncertain payment request.",
-        "Run the pre-flight review against the final signed document set and current title evidence. Recheck assignment consent, permit status, lender requirements, bank instructions, and settlement arithmetic whenever a material term changes before funds are released.",
-        "Exercise failure cases before processing live transactions: duplicate events, reversed payments, missing signatures, expired permits, and offline access devices. Record expected recovery behavior and confirm a named operator can restore service without inventing ledger entries."
+        "Count only signed tenants; treat verbal prospects and hoped-for third tenants as zero when calculating returns and payback.",
+        "Line up the remaining ground lease term against payback for every structure before any purchase price is discussed.",
+        "Classify every billboard permit as conforming or nonconforming and confirm your state's re-erection rules in writing.",
+        "Source traffic counts and construction plans directly from the state DOT, never from the seller's package.",
+        "Build cash flow on twelve months of real occupancy and advertiser contracts, then apply a multiple only after every risk adjustment."
       ],
       "fields": [
         {
-          "name": "State machine and accountable handoffs",
-          "type": "textarea",
-          "prompt": "Define the operational states for one asset lane and the evidence required to move between them. Assign ownership of each handoff and prevent a commercial milestone from being mistaken for legal completion.",
-          "example": "TX-TWR-014 moves through sourced, owner-verified, option-executed, diligence-complete, buyer-contracted, closing-ready, settled, and recorded-confirmed. The title coordinator controls closing-ready. A buyer signature alone cannot set settled. Settlement requires escrow confirmation; recorded-confirmed requires the instrument number and a checked copy of the recorded easement."
+          "name": "tenant_count_returns",
+          "type": "text",
+          "prompt": "Ask how many tenants are on the tower before anything else. Record the signed tenant count and the return band that count implies, and state plainly whether the structure clears the two-tenant line or remains a single-tenant gamble.",
+          "example": "One signed anchor only. Mr. Money puts returns near 6.5 percent with one tenant, about 13 percent with two, and approaching 20 percent with three [Mr. Money — jQ79QHMZWQE @ 00:07:36]. Economic Oddities calls a single-tenant tower a coin flip with a lease and draws the line at two tenants [Economic Oddities — QdFbgvbJJ-M @ 00:08:28]. Verdict: not yet underwritable."
         },
         {
-          "name": "Stable identifiers and revision lineage",
+          "name": "build_cost_payback",
           "type": "textarea",
-          "prompt": "Specify identifiers for the parcel interest, transaction, contract revision, and settlement event. Explain how amendments retain their parent relationship while preserving the exact terms used to authorize an action.",
-          "example": "Use deal_id TX-TWR-014, interest_id EASE-014-A, and contract revision 3. Store the executed PDF digest and signing timestamp against revision 3. A price amendment becomes revision 4 under the same deal; it invalidates the prior closing checklist without creating a duplicate acquisition record."
+          "prompt": "Enter the modeled build cost, anchor rent, and margin for the tower, then calculate annual profit and payback years. Repeat the calculation with a second tenant added, including the extra capital required, so the jump in return is documented.",
+          "example": "On a $275,000 monopole, one tenant yields about $8,000 profit and a 34-year payback. A second tenant adds $30,000 revenue for $50,000 capex, lifting profit to $37,000 a year with under a 9-year payback, and about 97 percent of that revenue converts to profit [Mr. Finance — ku_-0C-ZnV4 @ 00:04:19]. My site matches this shape almost exactly."
         },
         {
-          "name": "Idempotency key and durable event receipt",
+          "name": "anchor_loss_stress",
           "type": "textarea",
-          "prompt": "Describe the event key, uniqueness constraint, durable receipt, and side-effect record used to prevent duplicate processing. Explain what happens when an external sender retries after the local process has already committed.",
-          "example": "For billing, key receipts by provider account plus provider event identifier, and invoices by lease, service month, and charge type. A SQLite UNIQUE constraint rejects duplicate keys. Commit the receipt and pending action together; repeated delivery returns the existing result instead of posting another $550 space charge."
+          "prompt": "Stress-test the loss of your anchor tenant and a carrier default. Record the revenue and profit decline, how long rent could stop, and what recovery you could realistically expect if a carrier stops paying across many sites at once.",
+          "example": "An anchor exit cuts revenue about 60 percent and profit about 78 percent [Mr. Finance — ku_-0C-ZnV4 @ 00:12:46]. Crown's Dish claim exceeds $3.5 billion with recovery uncertain [Profit Chain — t9bXdQI0jPM @ 00:08:38]. My tower's second tenant is Dish, so the stress case assumes zero Dish rent from year three and no recovery from any claim."
         },
         {
-          "name": "Settlement instruction and independent verification",
-          "type": "textarea",
-          "prompt": "Record the final settlement statement, approved beneficiaries, verification method, and release authority. Require an independent check of changed payment instructions and define the evidence needed before marking a disbursement complete.",
-          "example": "The reviewer checks $400,000 inflow against $360,000 seller consideration, $5,000 charges, and $35,000 operator proceeds. A second person confirms the escrow destination using an independently established phone number. Record the confirmation time and settlement reference; a transmitted wire request is not evidence of completed settlement."
+          "name": "land_control_match",
+          "type": "text",
+          "prompt": "Compare the remaining ground lease term under the tower with the payback period you calculated. Record the gap, the renewal options, and whether you hold enough land control to recover your capital before the dirt can be taken back.",
+          "example": "Payback with one tenant runs about 15 years on a $275,000 build at $2,000 a month and a 75 percent margin [Mr. Money — jQ79QHMZWQE @ 00:02:30]. The ground lease has 11 years remaining, the exact live exposure Holly Lane Radio flags under a producing tower [Holly Lane Radio — RRrHddpY1pU @ 00:17:58]. Gap: four years; extension required before any purchase."
         },
         {
-          "name": "Ledger accounts and deposit treatment",
+          "name": "landowner_buyout_cross_check",
           "type": "textarea",
-          "prompt": "Define operational ledger categories for unrestricted cash, restricted balances, deposit liabilities, receivables, earned fees, and reversals. Explain how the ledger reconciles to bank evidence without imposing one accounting model on every asset lane.",
-          "example": "Receipt of the fleet's $15,000 security deposit increases the designated bank balance and tenant deposit liability by $15,000. It creates no earned fee. Track yard billings and master rent separately, then derive the scorecard spread. The accountant maps these operational records to the applicable reporting accounts."
+          "prompt": "If you own the ground under a tower, list every buyout multiple quoted to you and compare it against the ranges practitioners report. Note how far your renewal date is and whether the approach letter arrived suspiciously friendly and early.",
+          "example": "Offer received at 12 times rent. Selina Gonzales describes 15 to 20 times as typical, peaking near 21 times in 2024, with anything under 15 the cheap side [Selina Gonzales — x2ZfqDSKoOI @ 00:07:17]. Renewal is five years out, and Gonzales warns never to sell then, because the approach is designed to land soft: the letter is friendly."
         },
         {
-          "name": "Final document package and recording evidence",
-          "type": "textarea",
-          "prompt": "List the exact documents needed for the chosen transaction and how signed versions are distinguished from drafts. Identify recording, delivery, and acknowledgment evidence that remains outstanding after signatures are collected.",
-          "example": "The telecom package contains the executed easement, legal description, assignment of rents, tenant estoppel when required, lender instrument, settlement statement, and tax reporting documents. Hash final files with SHA-256 and retain access-controlled copies. Match the returned recording image to the submitted instrument before closing the document task."
+          "name": "permit_classification",
+          "type": "text",
+          "prompt": "Classify the billboard permit as conforming or nonconforming and record your state's position on re-erection after damage. Note whether destruction by weather or by vandalism changes the outcome, and price the board only after this classification is complete.",
+          "example": "The permit is nonconforming, so the board can be maintained but not rebuilt [Cashflow Anatomy — GzFGSTXAVaI @ 00:06:46]. A grandfathered sign destroyed by vandalism or other criminal or tortious acts may return only where state law permits and only in kind; weather damage does not qualify [Cashflow Anatomy — GzFGSTXAVaI @ 00:02:59]. Storm risk therefore caps my offer."
         },
         {
-          "name": "Billing commencement and prorated charges",
+          "name": "ground_lease_permit_transfer",
           "type": "textarea",
-          "prompt": "Define when an IOS tenant becomes billable, which contract controls proration, and what evidence connects occupied capacity to invoices. Prevent gate access activation from silently substituting for an executed occupancy agreement.",
-          "example": "Fleet A takes 20 spaces at $550 each under an executed agreement. Monthly billing is $11,000. For 15 chargeable days in a 30-day month, contractual daily proration produces $5,500. Activate credentials only after the documented commencement conditions; gate events support occupancy review but do not rewrite rent."
+          "prompt": "Confirm the billboard ground lease length, renewal rights, and rent as a share of revenue, and verify the permit actually transfers to you. Record advertiser contracts on hand and twelve months of real occupancy rather than seller projections.",
+          "example": "Ground lease shows 14 years remaining plus two renewals, at about 18 percent of gross. Acquisition Insider requires 10-plus years with renewals, a permit that transfers, advertiser contracts, and 12 months of real occupancy [Acquisition Insider — 4PyMov-VjoE @ 00:05:22]. Seller supplied only nine months of invoices, so three months of occupancy remain unverified and the price is held."
         },
         {
-          "name": "Access-device outage and manual continuity",
+          "name": "static_board_cash_flow",
           "type": "textarea",
-          "prompt": "Specify the response to an RFID controller outage, lost credential, or network failure. Preserve safe emergency access while distinguishing physical entry logs from billing records and authorization to enter.",
-          "example": "If the RFID connection fails, the site responder uses the approved local roster and manual incident log. Emergency egress remains available under the site design. Restore synchronized access records after connectivity returns, checking timestamps and duplicates. A lost credential is revoked before a replacement credential becomes active."
+          "prompt": "Build the cash flow for a single static board using price per face, occupancy, operating costs, and ground lease share. Apply a trading multiple to that cash flow and compare the result with the asking price before negotiating with the seller.",
+          "example": "A two-sided static board at $600 per face per month and 80 percent occupancy, with roughly 40 percent costs including a 15 to 20 percent ground lease, nets about $7,000 a year and trades at 8 to 10 times, or $55,000 to $70,000 [Acquisition Insider — 4PyMov-VjoE @ 00:02:07]. The seller asks $95,000, well above that band."
         },
         {
-          "name": "Exception, reversal, and uncertain-payment queue",
-          "type": "textarea",
-          "prompt": "Define how disputed charges, returned payments, expired documents, and uncertain external responses enter a review queue. Preserve original records and require explicit correcting entries rather than editing history.",
-          "example": "A $5,500 tenant payment is later returned. Preserve the original receipt, append the return event, and reopen the receivable using the provider reference. If a payout request times out, query its status before retrying. The operator resolves exceptions daily and records the evidence supporting each correction."
+          "name": "dot_reroute_and_traffic",
+          "type": "text",
+          "prompt": "Call the state DOT about planned construction or bypasses near the board and pull the DOT traffic count yourself. Record the contact, date, findings, and any difference between the official count and the figure the seller provided.",
+          "example": "Boards all over America stare at bypassed asphalt because buyers checked revenue and never asked about reroutes [Acquisition Insider — 4PyMov-VjoE @ 00:04:30]. Called the district office on March 3: a bypass is in design for 2029. DOT count shows 14,200 daily vehicles versus the seller's 21,000 claim. Both findings go into the offer letter as price adjustments."
         },
         {
-          "name": "Pre-flight test cases and release evidence",
+          "name": "permit_roll_sourcing",
           "type": "textarea",
-          "prompt": "List practical tests proving duplicate resistance, arithmetic accuracy, document completeness, and recovery behavior. Record expected results and identify who signs the release checklist after comparing those expectations with observed outcomes.",
-          "example": "Replay one invoice event three times and expect one invoice. Replace the signed contract with an unsigned draft and expect closing-ready to fail. Simulate a payment timeout and expect status inquiry before retry. The reviewer records screenshots, ledger counts, and the final $35,000 settlement reconciliation before authorizing release."
+          "prompt": "Pull the state DOT outdoor advertising permit roll for your target corridor and list independent owners by name. Note zoning history for each site, including any rezoning requested specifically to erect a billboard, and the direct-mail approach you will use.",
+          "example": "The permit roll lists 42 boards held by six mom-and-pop owners, the same channel Lamar uses for tuck-in acquisitions [Acquisition Insider — 4PyMov-VjoE @ 00:05:06]. Meeting minutes show one parcel was rezoned specifically to get a billboard erected, which INDOT reviewers flag as against the law [INDOT — YWN-XPL47M0 @ 00:11:00]. Exclude it; write the other five directly."
         }
       ],
-      "completion_gate": "The reviewer has verified final documents, settlement arithmetic, independent payment checks, duplicate-event tests, correcting-entry behavior, and operational recovery procedures; any failed test blocks the affected action until retested successfully."
+      "completion_gate": "Complete only when the tower clears two signed tenants or is rejected, anchor loss and carrier default are stress-tested, land control covers payback, the billboard permit is classified and confirmed transferable, DOT traffic and reroute findings are logged, and the offer sits inside the documented cash-flow multiple band."
     },
     {
       "worksheet_id": "ws-04",
       "number": 4,
-      "title": "Statutory, Licensing, Contract Addendum & Compliance Audit",
-      "purpose": "Translate applicable property, highway-sign, environmental, and licensing requirements into specific evidence and contract terms. Separate federal frameworks from state and municipal decisions, then document assignment authority, lender protection, permitted use, environmental review, and responsibility for ongoing operating obligations.",
-      "chapter_ref": "Q5, Q9",
+      "title": "Billboard Startup and Unit Economics Ledger",
+      "purpose": "Convert a candidate billboard site or acquisition into a permit-first, occupancy-realistic operating plan, so that land control, landowner terms, conversion decisions, storm exposure, and debt are all decided before steel is ordered or capital is wired.",
+      "chapter_ref": "Q7-Q8",
       "instructions": [
-        "Identify the property's actual jurisdiction and each authority with a decision role. Retrieve current official statutes, regulations, ordinances, permit conditions, and recorded instruments rather than copying requirements from a different municipality or relying on a listing description.",
-        "Map each proposed activity to the rule governing that activity: negotiating for another owner, acquiring a principal interest, operating a sign, leasing storage capacity, or altering drainage. Similar commercial labels can conceal different licensing and land-use consequences.",
-        "Convert material dependencies into drafted conditions, deadlines, document-delivery duties, and termination rights. An obligation to cooperate does not equal an issued permit, a lender's executed protection, or a counterparty's effective consent to an assignment.",
-        "Inspect environmental and operating exposure before executing an IOS master lease. Allocate responsibility for existing conditions, newly introduced materials, stormwater controls, surface maintenance, and restoration, while recognizing that contract allocation does not bind government enforcement authorities.",
-        "Maintain a dated audit register with the rule source, reviewer, finding, required evidence, and renewal schedule. Resolve material conflicts before commitment and recheck requirements when the proposed use, ownership structure, sign technology, or physical layout changes."
+        "Start with the permit field and stop if the permit is unverified or nontransferable; every downstream number depends on the permit, not the structure.",
+        "Use the DOT traffic count and construction plans, never figures supplied by the seller, when completing the site filter and exit fields.",
+        "Underwrite occupancy at 85 percent or lower and show the breakeven fill explicitly; do not enter any revenue figure based on full rate card.",
+        "Write lease language as you would propose it to the landowner, including rent commencement triggers, cancellation rights, removal limits, and recording instructions.",
+        "Revisit the leverage field after every change to revenue or rent assumptions, and rerun the 6 percent versus 9 percent interest test each time."
       ],
       "fields": [
         {
-          "name": "Jurisdiction and authoritative source register",
-          "type": "textarea",
-          "prompt": "Identify county, municipality, state agencies, and federal frameworks relevant to the parcel. Record official source locations, retrieval dates, and reviewer responsibilities without assuming one source answers every land-use question.",
-          "example": "For BB-009, the register links the state DOT outdoor advertising office, municipal sign ordinance, county recording office, and 23 U.S.C. § 131. Record the actual retrieval date with each saved source. DOT eligibility does not replace municipal authorization, and a municipal permit does not establish title rights."
+          "name": "permit_status_verification",
+          "type": "text",
+          "prompt": "Record the exact permit status for the target board or site, including whether the permit is conforming or nonconforming, whether it transfers to you, and the date you confirmed it, before any steel, deposit, or ground lease commitment is made.",
+          "example": "Permit confirmed transferable before ordering steel, because building first is how beginners end up with 'a very expensive pole' [Global Finance Desk — AkX52_z30r4 @ 00:09:45]. The board is grandfathered under the Highway Beautification Act, so supply stays frozen and the permit, not the structure, is the asset I am paying for [The Finance Explainer — pHu5ZfxNtfg @ 00:06:17]."
         },
         {
-          "name": "Principal dealing and brokerage activity analysis",
-          "type": "textarea",
-          "prompt": "Describe exactly whose interest the operator represents, what compensation is earned, and whether activities trigger state real-estate licensing requirements. Identify the applicable statutory definitions and document any relied-upon exception before soliciting transactions.",
-          "example": "For a Texas opportunity, review Texas Occupations Code §§ 1101.002 and 1101.351 against the actual conduct. Buying an option for the operator's own account differs from negotiating another owner's lease for a fee. Document the specific exception analysis; calling compensation an assignment spread does not settle licensing."
+          "name": "site_traffic_filter",
+          "type": "text",
+          "prompt": "Enter the daily vehicle count for the proposed billboard location, the source of that count, and whether it falls inside the operator band, then note any planned reroute or bypass that could strand the face on dead asphalt within the lease term.",
+          "example": "Corridor falls inside the 10,000 to 20,000 daily vehicle band operators filter for, measured with the DOT count, never the seller's [Acquisition Insider — 4PyMov-VjoE @ 00:04:30]. I called the DOT about construction plans before closing and found no reroute. More eyeballs raise value, so 'think of your billboard as like a mini mall' [Clear Multifamily — LMD9ecO4o1M @ 00:02:51]."
         },
         {
-          "name": "Highway advertising and digital-display requirements",
+          "name": "land_control_structure",
           "type": "textarea",
-          "prompt": "Record highway classification, controlled-area status, spacing, lighting, size, digital-transition restrictions, and transfer procedure from the applicable authority. Distinguish screening measurements from an official eligibility or permit determination for the exact sign location.",
-          "example": "Review 23 U.S.C. § 131 and 23 CFR § 750.705 alongside the state's implementing rules. Measure the proposed sign coordinates against controlled routes and neighboring structures. Obtain written treatment of digital conversion and permit transfer; no single spacing distance is assumed to apply nationwide."
+          "prompt": "Describe how you will control the dirt under the structure, whether a ground lease, a recorded easement, or owned land, and explain why that choice fits your capital, timeline, and exit, including what happens if the state takes the property.",
+          "example": "Ground lease, recorded with the county before ordering steel, because an unfiled 50-year lease left one operator with no reimbursement after the state took the property [The Bell Board Podcast — r6MxdTpj3sg @ 00:01:31]. An easement was priced but rejected, since 'Easements usually require a lump sum of 8 to 15 years of rent paid upfront' [Robert_Wallace — 0Lv5_kKNNWg @ 00:03:20]."
         },
         {
-          "name": "FCC registration and telecom right verification",
+          "name": "rent_commencement_clause",
           "type": "textarea",
-          "prompt": "Explain what FCC antenna-structure records establish and what must be proved through leases, title documents, and site evidence. Identify registration requirements relevant to the structure without treating a database match as proof of ownership.",
-          "example": "Search FCC Antenna Structure Registration records and review 47 CFR § 17.4 where registration applies. A matching structure helps locate the opportunity but does not prove rent ownership or easement boundaries. A rooftop installation may lack a separate ASR entry; verify the lease and physical installation independently."
+          "prompt": "Write the exact rent commencement trigger and cancellation language you will propose to the landowner, naming which milestones must occur before the first rent check, and the walk-away right you keep if the permit application is denied or stalls.",
+          "example": "Rent begins only after permits issue, the structure is finished, and ads are posted, so I never pay monthly land rent from the signing date [Robert_Wallace — hxwD9JLVZs8 @ 00:05:42]. The lease also carries the clause that 'Smart operators add': the right to cancel without penalty if the permits fail [Mr. Money — t4mEx2qxaZ8 @ 00:04:49]."
         },
         {
-          "name": "Lender consent and SNDA addendum",
-          "type": "textarea",
-          "prompt": "Draft the required lender and superior-interest protections with document delivery, execution, and commencement conditions. Address successor ownership, default notices, cure opportunities, and permitted subtenants rather than relying on a generic consent sentence.",
-          "example": "Proposed term: rent commencement is conditioned on delivery of the lender's executed SNDA in the agreed form, protecting the master tenant and permitted subtenants after foreclosure while they perform their obligations. Include notice and cure periods aligned with the underlying documents, and specify required recording and delivery evidence."
+          "name": "landowner_revenue_split",
+          "type": "text",
+          "prompt": "State the landowner compensation structure you will offer, flat rent, percentage of gross, or the higher of the two, with the exact percentage, escalator cap, and lease term, and explain how it protects both parties over a twenty-year horizon.",
+          "example": "Opening letter offers a low flat rate or 18-20% of revenue, whichever is higher, which 'protects the landowner from inflation and keeps them happy' [Bama Billboards — rxbKA112Tdc @ 00:02:54]. Escalators are capped at 2-3% on a 20-year term, and expirations are staggered so the portfolio never resets at once [Felix Finance — Zfn3IARm5no @ 00:05:04]."
         },
         {
-          "name": "Assignment, estoppel, and closing conditions",
+          "name": "occupancy_underwriting",
           "type": "textarea",
-          "prompt": "Identify every assignment restriction, consent standard, notice requirement, estoppel request, and permitted transfer mechanism. Draft objective conditions that prevent a closing from relying on silence where affirmative written consent is required.",
-          "example": "The ground lease requires written landlord consent before assignment. The option therefore conditions closing on signed consent naming the buyer and confirming no existing default. Request an estoppel showing rent, deposits, amendments, and renewal rights. If consent is absent by day 45, the negotiated extension or termination clause controls."
+          "prompt": "Underwrite the board's revenue at a realistic fill rate rather than rate card, listing sold weeks per year, the price per block, the breakeven fill, and how far occupancy can fall before the board loses money after fixed costs.",
+          "example": "Underwritten at 85% occupancy, about 44 sold weeks per year, never full rate card [Walt Runs The Numbers — 9d5MJAQGDk8 @ 00:06:58]. Using the $40,000 build model at $2,000 per four-week block across 13 blocks, breakeven sits near 38% fill and 35% fill loses about $800 [Econometrics — q9ejuh31AvI @ 00:03:20]. Discounting stays one-off, never the norm."
         },
         {
-          "name": "Environmental inquiry and historical conditions",
+          "name": "digital_conversion_case",
           "type": "textarea",
-          "prompt": "Specify the environmental investigation, historical records, site reconnaissance, and follow-up process needed before the proposed IOS commitment. Connect identified conditions to decision thresholds without assuming a report automatically creates statutory protection.",
-          "example": "Commission a Phase I using ASTM E1527-21 and evaluate 40 CFR Part 312 where All Appropriate Inquiries applies. Review CERCLA, 42 U.S.C. §§ 9601(40) and 9607, for relevant liability questions. A former fueling area requires specialist follow-up; lease status and continuing obligations must be assessed separately from report completion."
+          "prompt": "Lay out the case for or against converting this static face to digital, including conversion cost, current monthly static revenue, projected digital revenue at realistic slot fill, and the specific condition that must be proven before capital is committed.",
+          "example": "Conversion runs about $200,000 and could lift a face from roughly $3,000 a month static to $15,000-$18,000 digital [Rio Explains — OYv2q23Z36g @ 00:03:05]. The inventory goes from two ads to sixteen [Ken McElroy — bteMgQqmSCk @ 00:00:58]. Deferred until the static face proves demand, because three of six slots sold at $1,500 halves gross from $9,000 to $4,500."
         },
         {
-          "name": "Stormwater, heavy vehicles, and permitted use",
+          "name": "storm_and_nonconforming_plan",
           "type": "textarea",
-          "prompt": "Confirm the actual outdoor-storage use, heavy-vehicle routes, operating hours, drainage controls, and surface requirements. Determine whether industrial stormwater permitting applies to the activities rather than assuming all fleet storage has identical obligations.",
-          "example": "The proposed use is trailer parking with no fueling, washing, or repair. Obtain municipal confirmation covering heavy-axle access and overnight storage. Review 40 CFR § 122.26 and state stormwater requirements against actual activities. If vehicle maintenance is added, repeat the discharge and land-use analysis before changing operations."
+          "prompt": "Document your storm-damage protocol for a nonconforming structure, covering who strips the faces, how repair cost is totaled against replacement value, which records are kept, and what you will do if the structure cannot legally be rebuilt.",
+          "example": "Before repairing any storm-damaged non-conforming sign, I total the cost against roughly 50% of replacement value and document every repair [Business Breakdown — exXUEqaAB2k @ 00:11:18]. Warning: 'She could not replace it' [Business Breakdown — exXUEqaAB2k @ 00:12:07]. Faces come off at the onset of a storm so the structure better withstands high winds [Plain Sight — Nuf8IbOuL70 @ 00:22:38]."
         },
         {
-          "name": "NNN expense allocation and property classification",
+          "name": "ground_lease_red_flags",
           "type": "textarea",
-          "prompt": "Specify taxes, insurance, maintenance, capital work, environmental response, and restoration obligations. Separate fixtures and personal property from the real-property interest, and identify how recorded liens or security interests affect the transaction.",
-          "example": "The addendum assigns routine gate maintenance, litter removal, and tenant-caused surface damage to the master tenant, while separately addressing preexisting drainage defects. Schedule installed equipment and review applicable UCC Article 9 issues, including § 9-102 definitions. A UCC search does not replace the county real-property title search."
+          "prompt": "List every clause in the existing ground lease that could impair value, including right of first refusal, tear-down obligations, removal duties, renewal terms, and whether the lease is recorded, and price the board only after each is cleared.",
+          "example": "Read the ground lease for right-of-first-refusal and tear-down clauses before pricing [ledgerandland — 6oamhwKj2wU @ 00:10:33]. Removal duties are limited to above-ground portions only [Robert_Wallace — hxwD9JLVZs8 @ 00:09:27]. The lease runs 10-plus years with renewals and the permit transfers with advertiser contracts and 12 months of real occupancy [Acquisition Insider — 4PyMov-VjoE @ 00:05:22]."
         },
         {
-          "name": "Audit findings, cures, and renewal calendar",
+          "name": "leverage_and_exit",
           "type": "textarea",
-          "prompt": "Record each material finding with an accountable reviewer, corrective action, evidence requirement, deadline, and ongoing review interval. Explain how the operating team learns of changes that could invalidate an earlier determination.",
-          "example": "Finding BB-009-03 identifies missing permit-transfer confirmation. The permit specialist owns resolution before assignment closing. Attach the authority's written response and revised permit record. Calendar annual permit and insurance checks, plus immediate review after a sign-face conversion, ownership transfer, or material site-layout change."
+          "prompt": "Stress-test the debt load and exit value, modeling interest at two rates, renewal rent at double, the exit multiple you expect a buyer to pay, and the minimum cash cushion required so the mortgage never crushes a producing board.",
+          "example": "Interest is stress-tested at 6% versus 9%, and I refuse to enter undercapitalized at $20K [Money Mechanics — PIQPl5zhm5s @ 00:21:27]. Renewals are modeled at double rent, the scenario that bankrupted a 300-board, 75%-debt roll-up in 2021 [Behind The Billions — Bb-6A1zEJAc @ 00:07:54]. Exit assumes 7-12x revenue, $670,000 to $1M+ on $96,000 a year [Profit Mechanics — chCNj5IEUZw @ 00:22:10]."
         }
       ],
-      "completion_gate": "Applicable jurisdictional sources, licensing analysis, permit status, assignment rights, lender protections, environmental findings, and operating allocations are documented; every material condition has either verified satisfaction or an enforceable condition preventing premature commitment."
+      "completion_gate": "Do not order steel, sign a ground lease, or fund an acquisition until the permit is confirmed transferable, the lease is recorded with the county, rent commencement is tied to permits and posted ads, and the board survives 85 percent occupancy at 9 percent interest."
     },
     {
       "worksheet_id": "ws-05",
       "number": 5,
-      "title": "Automation Pipeline, Acquisition Flywheel & Risk Fallback Tracker",
-      "purpose": "Build a small-team sourcing and operating system that improves qualified opportunity throughput without automating away judgment. Combine public infrastructure records, parcel evidence, structured underwriting, and controlled document generation while maintaining data provenance, exception queues, device continuity, and measurable acquisition economics.",
-      "chapter_ref": "Q6, Q10",
+      "title": "Ad Sales Engine and IOS Market Screen",
+      "purpose": "Build a repeatable process for selling billboard and alternative faces on location, rate, and occupancy, then apply the same discipline to screening industrial outdoor storage yards where zoning, usable dirt, and tenant demand decide the deal.",
+      "chapter_ref": "Q9-Q10",
       "instructions": [
-        "Map each automation to a specific operator task, input source, output artifact, and measurable time saving. Keep title decisions, statutory interpretation, counterparty verification, and fund-release authority assigned to named people rather than treating model output as completed diligence.",
-        "Use documented source access methods and record source dates, coordinate systems, update frequency, and licensing terms. Public map visibility does not establish permission for unrestricted extraction, redistribution, or reliance on stale parcel ownership information.",
-        "Separate source discovery from identity resolution and commercial outreach. Deduplicate parcels and legal interests, verify contact relevance, and keep suppression records so repeated imports do not create duplicate owner messages or conflicting negotiations across the team.",
-        "Generate draft valuation and document packages from validated structured inputs, then require field-level review before external delivery. Retain the source documents and calculation version so every number can be traced back after a buyer challenges it.",
-        "Track throughput, conversion, acquisition cost, exception age, and recovery time together. A faster pipeline that accumulates defective permits or weak buyers is deteriorating; activate a documented fallback when a critical source, lender, or operating device fails."
+        "Fill the six ad-sales fields for every face in inventory, not just the strongest boards, so dead inventory surfaces early.",
+        "Attach a spec ad and a tracking plan to every proposal before a contract is drafted or sent.",
+        "Treat the 75-80 percent occupancy band as the switch point between pushing fill and pushing rate, and record which side each face sits on.",
+        "For the IOS fields, obtain zoning confirmation in writing from the municipality and local land use counsel before entering any rent or cap rate assumption.",
+        "Measure usable acres on site and against the survey, then price rent and debt only on the usable figure."
       ],
       "fields": [
         {
-          "name": "Source catalog and permitted acquisition method",
-          "type": "textarea",
-          "prompt": "List infrastructure, traffic, parcel, ownership, and permit sources with their access methods and refresh cadence. Describe source limitations and the evidence needed before a discovered record becomes a qualified prospect.",
-          "example": "Use FCC ASR downloads for registered structures, state DOT AADT releases for traffic context, county parcel services for boundaries, and official permit records for sign status. Refresh traffic inputs when new releases appear. An AADT count describes measured traffic, not billboard revenue or permit availability."
+          "name": "occupancy_rate_band",
+          "type": "text",
+          "prompt": "Record current occupancy for each face you sell, the band at which your team stops chasing fill and starts pushing rate, and the contract length mix you will accept, including any premium charged for campaigns shorter than three months.",
+          "example": "Below 75-80% occupancy the team pushes fill; above that band it pushes rate [The Bell Board Podcast — N6EyLPQ9NhA @ 00:25:03]. Contracts follow the norm that 'The minimum is usually 3 months, 6 or 12 months is typical,' and anything shorter costs a premium [Billboard Source — gReq9TXl5BY @ 00:01:18]. Panels are ranked by revenue per panel, rural to digital corridor."
         },
         {
-          "name": "GIS matching and spatial quality checks",
+          "name": "spec_ad_pipeline",
           "type": "textarea",
-          "prompt": "Describe coordinate normalization, parcel intersection, distance checks, and manual review thresholds. Explain how the pipeline handles rooftop structures, boundary ambiguity, road alignment changes, and sources with different positional accuracy.",
-          "example": "Load parcel and tower layers into QGIS, transform them to an appropriate local projected coordinate system, and inspect matches within 30 meters of a parcel boundary. Do not assign ownership solely from the nearest centroid. Flag ambiguous rooftop matches for imagery and recorded-document review."
+          "prompt": "Describe how every prospect and renewal will see a spec ad before any contract appears, who designs it, how quickly it is delivered, and how the creative is kept short enough to read at highway speed and distance.",
+          "example": "Every prospect and every renewal sees a spec ad first, because reps who arrive with only a contract, map and photos are selling a car nobody has seen [Tasty Ad — ivfNhpDax7I @ 00:00:53]. Creative stays at 7-8 words maximum to suit dwell time and read distance, and sales go direct for the highest margin [The Finance Explainer — pHu5ZfxNtfg @ 00:06:59]."
         },
         {
-          "name": "Identity resolution and duplicate suppression",
-          "type": "textarea",
-          "prompt": "Define canonical keys for owners, parcels, interests, and opportunities. Explain how the system merges repeat observations without collapsing separate rights on the same property or overwriting verified contact restrictions.",
-          "example": "Key parcels by county identifier plus assessor parcel number, then attach separate telecom, sign, and yard interests. Normalize entity names but preserve original source text. A repeated FCC import updates provenance rather than creating another owner campaign. A recorded do-not-contact request survives every refresh."
+          "name": "dead_inventory_recovery",
+          "type": "text",
+          "prompt": "Name the faces that have sat empty longest, the incentive you will pay reps to fill them, the vacancy signage on each, and the date by which an unanswered sign triggers a direct-mail campaign to nearby businesses.",
+          "example": "Any face empty 90 days carries a double-commission bounty [The Bell Board Podcast — N6EyLPQ9NhA @ 00:13:11]. Each vacancy shows a 'Rent this sign' face, white letters on red with a phone number; no call within 30 days triggers 500 flyers at about $1 each, where a 1% response yields five calls [CREUniversity — QDvEU9XEEA4 @ 00:02:14]."
         },
         {
-          "name": "NPV engine and buyer sensitivity package",
-          "type": "textarea",
-          "prompt": "Specify the cash-flow model inputs, discount convention, terminal assumptions, and buyer sensitivity outputs. Keep contractual income separate from speculative renewals and explain why a nominal perpetual easement can contain finite income.",
-          "example": "Model $24,000 first-year rent, 3% annual increases, and 20 annual end-of-year payments at a 10% discount rate. With no terminal value, present value is approximately $250,000. Compare the $400,000 buyer indication against alternative discount and renewal assumptions; do not force the model to reproduce a marketing multiple."
+          "name": "programmatic_bid_plan",
+          "type": "text",
+          "prompt": "Set your programmatic bid strategy for any network digital face, stating the default bid, your chosen bid, the expected cost per blip, slot length under state rules, and how certified circulation data supports the rate you quote advertisers.",
+          "example": "Blips clear around 2-6 cents each on 6-8 second slots [Local Marketing Institute — uoJvU0CyoBY @ 00:49:54]. Bids run at $0.50, above the $0.35 default, because 'our algorithm favors the higher' bid [Local Marketing Institute — uoJvU0CyoBY @ 00:48:29]. The board's daily effective circulation gets Geopath-certified, since a certified 80K DEC commands 40-60% more [The Money Mindset HQ — JCnJw5eFyEE @ 00:01:32]."
         },
         {
-          "name": "SNDA and diligence package generator",
+          "name": "alternative_formats",
           "type": "textarea",
-          "prompt": "Identify structured inputs used to generate the lender request, document checklist, and buyer package. Explain which clauses require specialist review and how generated drafts remain traceable to current transaction terms.",
-          "example": "The generator pulls borrower name, recorded mortgage reference, tenant entity, permitted use, lease term, and notice addresses into a draft lender request. Highlight missing subtenant protection and cure periods. The reviewer compares every populated field to signed documents before sending the package outside the project."
+          "prompt": "Evaluate one alternative face format beyond the fixed roadside board, such as a mobile LED truck or indoor screen network, listing day or monthly rates, advertisers per screen, equipment specifications that matter, and the monthly gross at realistic booking.",
+          "example": "An LED truck books $1,200-1,800 a day on routes and $2,500-3,600 a day at events, so 10 event days a month grosses $12K-18K [Cant Miss US — o3KgQJFdGXQ @ 00:01:10]. Power matters: 'Most trucks are underpowered at 8, 10 or 12 kW' [Mobile Digital Billboard University | Jerry Teeter — mG9J2Z6RgSY @ 00:02:56]. Indoor screens carry 5-10 advertisers at $100-300 monthly."
         },
         {
-          "name": "Owner outreach and acquisition funnel",
+          "name": "campaign_tracking_stack",
           "type": "textarea",
-          "prompt": "Define the outreach sequence, qualification criteria, suppression process, and stage conversion measures. Use a consistent cohort so response rates and cost per qualified opportunity do not mix unrelated campaigns.",
-          "example": "A 200-owner cohort yields 40 replies, 16 qualified conversations, six document packages, and two executed options. At $3,200 campaign cost, cost per qualified conversation is $200 and cost per option is $1,600. These are pilot observations, not evidence that either option will produce a completed resale."
+          "prompt": "List the tracking tools attached to each advertiser campaign before launch, explain how response data will be reported back at renewal, and note the day-parting schedule for digital slots that matches each advertiser to the hours their customers drive past.",
+          "example": "No launch without a dedicated URL or landing page, QR retargeting, call tracking, an SMS short code, and asking callers where they heard of you [Adrian Boysel — 14aRU-ObgC0 @ 00:09:01]. Digital slots are day-parted, coffee in the morning and restaurants in the evening, with 6-10 slots on an 8-second rotation [Hidden Economics — XlZ7pkhH2fM @ 00:02:17]."
         },
         {
-          "name": "RFID billing and occupancy reconciliation",
+          "name": "ios_zoning_by_right",
           "type": "textarea",
-          "prompt": "Describe the connection between executed fleet agreements, assigned spaces, access credentials, and monthly billing. State how exceptions are reviewed without turning raw gate movements into unauthorized new charges.",
-          "example": "Assign Fleet A 20 spaces and one account with separately revocable driver credentials. Billing follows the $11,000 monthly agreement. A weekly report compares active credentials, assigned spaces, and observed entry patterns. Investigate persistent excess occupancy, then document any agreed amendment before changing recurring charges."
+          "prompt": "Confirm in writing whether outdoor storage is allowed by right, conditional, or only as a grandfathered nonconforming use on the target yard, naming the land use counsel retained and the municipal officials met about allowed activities and future tenants.",
+          "example": "Outdoor storage is confirmed by right, not conditional, and not a grandfathered legal non-conforming use that disappears when the tenant leaves [MaxLife Commercial RE MLR — oYtLEutv1NQ @ 00:04:00]. Local land use counsel met the municipality on allowed activities and future tenant types, because the top three challenges are zoning, zoning, and zoning [CREDA Global — cKtqug8KPPk @ 00:01:12]."
         },
         {
-          "name": "Access permissions and sensitive record handling",
-          "type": "textarea",
-          "prompt": "Assign least-privilege access to parcel research, contracts, bank instructions, and operational credentials. Define retention, backup, and incident procedures while avoiding unnecessary collection of personal information unrelated to the transaction.",
-          "example": "The sourcing contractor sees owner contacts and outreach history but cannot edit bank instructions. The bookkeeper reconciles deposits without administering RFID credentials. Enable multifactor authentication for document and billing accounts, encrypt backups, and test restoration monthly. Remove contractor access when the engagement ends and retain the access-change record."
+          "name": "usable_acreage_net",
+          "type": "text",
+          "prompt": "Measure gross acres against usable acres after landscaping, retention, and setbacks, record building coverage as a share of the site, and confirm a 53-foot trailer can turn in, since tenants may pay only for the ground they can actually use.",
+          "example": "The 2-acre site measures as 1.5 usable acres net of landscaping, retention and setbacks, and tenants may pay only on usable area [EdisonIndustrial — Wu_IobArlaI @ 00:02:48]. Coverage stays under 25 percent. On the tour, a 53-foot trailer turned in cleanly, the test Justin Horowitz runs on every site [Industrial Real Estate Show — yb3YiKWxoFg @ 00:06:44]."
         },
         {
-          "name": "Risk fallback and dependency interruption",
+          "name": "ios_pricing_and_debt",
           "type": "textarea",
-          "prompt": "Define fallback actions for stale public records, delayed lender responses, permit denials, buyer withdrawal, and gate failures. Attach spending limits and decision deadlines so fallback execution remains economically bounded.",
-          "example": "If the lender has not responded by day 15, escalate through the owner and request an option extension before expiration. Cap additional review at $1,500. A permit denial triggers appeal analysis only within the documented budget; otherwise archive the sign deal rather than presenting unissued rights as transferable inventory."
+          "prompt": "Underwrite the acquisition cap rate against the stabilized trade, months of modeled vacancy, per-acre rent, site-work budget per acre, and the debt yield and coverage ratio your lender requires, flagging any premium for managed truck parking debt.",
+          "example": "Buying at 8.5% against 7% stabilized trades after modeling 6 to 8 months of vacancy, with Atlanta rent around $5K per acre per month [Industrial Real Estate Show — LftC_mcL69E @ 00:14:54]. Debt sizes to a 10% debt yield and 1.25x DSCR; managed truck parking needs 12-13% [Industrial Real Estate Show — yb3YiKWxoFg @ 00:21:12]."
         },
         {
-          "name": "Automation performance and controlled expansion",
+          "name": "environmental_and_demand_check",
           "type": "textarea",
-          "prompt": "Measure actual labor saved, error rates, review backlog, and downstream conversion after each automation change. State the thresholds for expanding usage and the conditions that require reverting to manual processing.",
-          "example": "A parcel matcher reduces initial review from 12 minutes to five minutes across 100 records, saving 700 minutes. Manual sampling finds three incorrect matches. Keep boundary cases in human review and fix the matching rule before expansion. Do not count time savings as realized cash profit without a corresponding expense reduction."
+          "prompt": "Record the environmental diligence completed on the yard, including Phase I findings, insurance bound, holdbacks negotiated, and emerging contaminant flags, then note whether demand for this site size is deep or thin in the submarket you are buying.",
+          "example": "Phase I ordered, environmental insurance bound from day one, and holdbacks negotiated pending no-further-action letters, with PFAS flagged as an emerging issue [Industrial Real Estate Show — yb3YiKWxoFg @ 00:26:50]. The site is 2 acres, inside the 1 to 3 acre range users want, avoiding the 5 to 7 acre band where Industrial Advisors calls demand overstated."
         }
       ],
-      "completion_gate": "Each automation has a documented source, stable identifier, human review boundary, measured result, and tested fallback; external delivery, payment changes, and property-right decisions remain subject to the assigned operator's verified authorization."
+      "completion_gate": "No face is considered sold until a spec ad was shown and tracking is live, and no IOS yard proceeds to contract until outdoor storage is confirmed by right, usable acres are measured, the Phase I is complete, and debt sizes to a 10 percent debt yield and 1.25x DSCR."
     },
     {
       "worksheet_id": "ws-06",
       "number": 6,
-      "title": "30-Day Launch Sprint, Pod KPI Scorecard & Exit-Readiness Ledger",
-      "purpose": "Launch a disciplined acquisition pod with measurable evidence rather than an assumed first-month closing. Connect weekly deliverables to the two-to-six-month first-deal horizon, preserve the canonical staffing and profit targets, and build records that support orderly handoffs, buyer diligence, and eventual portfolio transfer.",
-      "chapter_ref": "Q11, Q12",
+      "title": "Yard Operations and Under-the-Lease Infrastructure Audit",
+      "purpose": "Turn an approved IOS or truck parking site into a built, gated, paying yard, and audit any cell or battery storage lease on the property for grid, structural, and obsolescence risk before committing land for decades.",
+      "chapter_ref": "Q11-Q12",
       "instructions": [
-        "Choose one initial asset lane and a defined geographic market using the underwriting evidence already collected. Keep the other lanes available for later expansion, but do not split a one-person operating lead across three unproven acquisition systems immediately.",
-        "Set weekly deliverables that can be completed without a closing: verified sources, owner conversations, document packages, buyer feedback, and funded diligence plans. The stated two-to-six-month first-deal range requires runway discipline beyond the initial thirty-day sprint.",
-        "Assign the full-time lead and contractors specific responsibilities, response times, and spending authority. Preserve independent checks for money movement and document release even when the same small pod handles sourcing, underwriting, execution, and administration.",
-        "Review a short scorecard every week, separating activity counts from qualified pipeline, executable transactions, cash collected, and owner profit. Investigate aged exceptions and concentrated dependencies before adding leads or increasing automated outreach volume.",
-        "Build the transfer package from the first transaction rather than reconstructing it during a sale. Keep rights, consents, source records, operating procedures, and reconciliations organized so a successor can understand both recurring income and nonrecurring deal spreads."
+        "Complete the jurisdiction and easement fields before signing a purchase contract; a friendly city and clean title come before any build budget.",
+        "Price every build line from current quotes and compare against the fence, gate, light, and base-material benchmarks operators report.",
+        "Model stall income net of insurance, bad debt, vacancy, and late payments, and rerun the model whenever an insurance quote changes.",
+        "For battery storage, confirm substation capacity with the utility and slope with contour lines and soil survey, never with the listing.",
+        "For cell sites, reconcile on-site equipment against the lease and record any structural analysis before new panels are approved."
       ],
       "fields": [
         {
-          "name": "Launch mandate and lane selection",
-          "type": "textarea",
-          "prompt": "State the initial asset lane, geography, target counterparty, cash limit, and success definition. Explain why this starting position fits available capital and documented operator capabilities rather than merely market enthusiasm.",
-          "example": "Begin with telecom easement options in two adjacent counties where parcel records and buyer coverage are accessible. Limit startup commitments to the $48,000 allocation. Thirty-day success means one fully documented option candidate with buyer feedback, not a promised closing or an unsupported $360,000 acquisition commitment."
+          "name": "jurisdiction_friendliness",
+          "type": "text",
+          "prompt": "Before going under contract, record your conversation with the city about the intended yard use, the officials you spoke with, the certificate-of-occupancy steps they described, and whether the jurisdiction signaled it would actually sign off on the use.",
+          "example": "The city confirmed friendly before contract, because 'The city is the number one issue' [Ronald Rohde Law — gcg4K6xqYaU @ 00:05:42]; Ron's 5.5-acre site drew 50 to 75+ tours and still could not lease without approval. The certificate-of-occupancy process was mapped first, the step Ron wishes they had mastered early [Tyler Cauble — q7HQGiIiT_8 @ 00:32:22]."
         },
         {
-          "name": "Week one evidence and system setup",
-          "type": "textarea",
-          "prompt": "Define the first week's concrete deliverables, responsible people, and acceptance evidence. Include source access, record structure, statutory research, buyer criteria, and cash controls before launching a substantial outreach campaign.",
-          "example": "By day 7, the lead approves the opportunity schema, verifies two buyer mandates, and establishes the restricted-money register. The research contractor validates 50 parcel matches. The property review contractor identifies relevant licensing and assignment questions. The closing administrator tests document storage and independent payment-verification procedures."
+          "name": "land_basis_and_easements",
+          "type": "text",
+          "prompt": "Enter the per-acre land basis for the proposed yard, the number of recorded easements found in title, and any easement that could delay construction or raise cost, confirming the basis still allows the yard to cash flow at realistic stall rents.",
+          "example": "Basis is viable: 'At $1M per acre the site likely won't cash flow, while $50,000 to $100,000 per acre is viable' [Ronald Rohde Law — rPXHwXgqWs8 @ 00:01:28]. Every easement was pulled before closing; Chris Long lost 2 years and saw costs rise by a third on a site carrying 12 easements [Garret Wong Podcast — RPNJmiZNQdY @ 00:39:23]."
         },
         {
-          "name": "Week two outreach and qualification",
+          "name": "yard_build_budget",
           "type": "textarea",
-          "prompt": "Set a bounded outreach cohort with qualification criteria, document requests, and follow-up ownership. Specify how the team records responses and avoids mistaking general interest for an executable property-right transaction.",
-          "example": "By day 14, contact 40 verified owners using the approved sequence and suppression list. Target eight substantive conversations and request four lease packages. A qualified conversation requires confirmed ownership, a relevant income interest, willingness to share documents, and an identifiable decision-maker rather than a positive email alone."
+          "prompt": "Itemize the yard build budget, including fencing per linear foot, the gate and operator, light poles, base material choice between gravel and asphalt millings, and explain how you will fund improvements from rent rather than a large upfront reserve.",
+          "example": "Chain link at $16 per linear foot, light poles at $1,000 each, and a 30 ft cantilever gate at about $30K installed plus a $5K operator [Ronald Rohde Law — rPXHwXgqWs8 @ 00:06:59]. Base is asphalt millings at $30 per truck instead of $800 gravel [Industrial Real Estate Show — LftC_mcL69E @ 00:29:41]. Rents rise at closing to fund the value-add."
         },
         {
-          "name": "Week three diligence and buyer testing",
+          "name": "stall_pricing_and_noi",
           "type": "textarea",
-          "prompt": "Specify the documentary and commercial tests required before negotiating an executable option. Include title, rent history, lender dependencies, buyer feedback, and the maximum spending permitted while material uncertainties remain.",
-          "example": "By day 21, complete two initial underwriting files and obtain buyer feedback on each actual lease. Spend no more than $2,500 on TX-TWR-014's initial review. Request lender involvement and reconcile annual rent to payments. Reject a candidate whose claimed $24,000 income cannot be tied to enforceable rights."
+          "prompt": "Model stall count per acre, monthly rent per stall, expected occupancy, and resulting net operating income after taxes, insurance, management, utilities, and software, and note how insurance increases could offset any rent lift you achieve after stabilization.",
+          "example": "One acre at about 40 spaces times $175 a month grosses $7,000 a month, roughly $57K NOI with occupancy in the mid-to-upper 90s [Tyler Cauble — q7HQGiIiT_8 @ 00:19:30]. Rohde pushed stalls from $100 to $215-225, yet higher insurance kept net income flat [Ronald Rohde Law — gcg4K6xqYaU @ 00:04:24], so insurance is re-quoted before any rent assumption."
         },
         {
-          "name": "Week four decision and next-horizon plan",
+          "name": "access_and_payment_control",
           "type": "textarea",
-          "prompt": "Define the day-thirty decision package and the funded plan for the following months. Distinguish option execution, diligence completion, buyer commitment, and closing so the launch report describes actual progress.",
-          "example": "On day 30, present one option-ready file, its $35,000 target spread, lender response status, and remaining conditions. If documents remain incomplete, report that status explicitly. Budget the next 60 days using the weekly cash model and the two-to-six-month first-deal horizon rather than booking projected proceeds."
+          "prompt": "Describe the gate and access system you will run, how access is tied to payment, how inbound calls are answered, and the metric you will track for average revenue per space after bad debt, vacancy, and late payments.",
+          "example": "Gate access is tied to payment, and average revenue per space is tracked net of bad debt, vacancy and late payments [Truck Parking Media — ulBXkeE5I_8 @ 00:02:13]. Calls are answered live, because callers dial three yards at once and a 20-minute callback lost bookings [Truck Parking Media — ulBXkeE5I_8 @ 00:02:30]. SIM cards at about $10 each replace commercial Wi-Fi."
         },
         {
-          "name": "Pod staffing and decision ownership",
+          "name": "marketplace_or_recapture_play",
           "type": "textarea",
-          "prompt": "Allocate responsibilities within the canonical staffing limits and identify specialist work that requires an authorized provider. State how contractors are counted and preserve segregation for high-consequence decisions.",
-          "example": "Conservative and base staffing use one full-time operating lead plus three contractor seats covering research, property and document review, and closing administration. Buy specialist services within the expense plan when required. Scaled staffing is two full-time people plus four contractors, six people total, not six full-time employees."
+          "prompt": "If you will monetize spare spaces through a parking marketplace or recapture excess acreage from an underutilized yard, record the revenue split or give-back terms, the expected cap rate change, and the location test that proves demand exists nearby.",
+          "example": "Truck Parking Club starts hosts at a 70/30 owner/platform split covering marketing, payments and 24/7/365 support [REtipster — Ombo8TjihMk @ 00:12:41]. The recapture play: the tenant gives back 1.5 acres to save $3,000 a month, re-leased at $6,000 NNN to turn a 6.25 cap into an 8 [Jonathan Hayek — mPrS0VognEo @ 00:22:53]. Remote rural land is excluded."
         },
         {
-          "name": "Weekly KPI definitions and evidence",
+          "name": "bess_site_screen",
           "type": "textarea",
-          "prompt": "Define a small set of KPIs with denominators, observation periods, evidence sources, and owners. Include quality and cash indicators alongside activity so a larger pipeline cannot conceal deteriorating execution.",
-          "example": "Track verified owners, qualified conversations, complete document packages, buyer-priced opportunities, option aging, unrestricted runway, and unresolved critical conditions. Six complete packages from 16 qualified conversations produce a 37.5% package conversion. Count settled spread only after escrow evidence; a signed indication does not enter collected revenue."
+          "prompt": "Screen the parcel for a battery storage lease by recording acreage, measured distance to the nearest substation, capacity confirmed directly with the utility, slope and soil conditions, and access, then state whether the parcel passes or fails each threshold.",
+          "example": "Parcel falls inside the 2 to 15 acre range developers want, with the substation less than half a mile away [LandApp by LandGate — Yes7DTfUfJs @ 00:00:33]. Capacity was confirmed with the utility, because 'The listing tells you what you want to hear' [Land Owl — yVhfvSQwGRQ @ 00:02:53]. Contour lines and soil survey were checked for 6 to 10% slopes."
         },
         {
-          "name": "Owner-profit scorecard and variance actions",
+          "name": "bess_lease_terms",
           "type": "textarea",
-          "prompt": "Restate the canonical annual targets and describe how actual results will be compared without changing the reference model. Tie corrective actions to specific expense, occupancy, timing, or conversion variances.",
-          "example": "Reference targets remain $33,600 conservative, $214,000 base, and $494,000 scaled annual owner net profit. If billboard assignments close at four rather than six, illustrative base revenue falls $40,000 before expense changes. Reforecast actual profit with identified cost savings; do not apply the 40% margin automatically."
+          "prompt": "Draft the battery storage lease terms you will require, including total term length, facility upgrade rights, the state incentives you researched before negotiating, and the point in the project timeline at which you are willing to commit the land.",
+          "example": "Term runs 20 to 30 years and must allow periodic facility upgrades as technology changes [LandApp by LandGate — Yes7DTfUfJs @ 00:01:44]. State renewable energy incentives were studied first, since few owners know them [LandApp by LandGate — Yes7DTfUfJs @ 00:00:51]. Timing is the price: too early carries planning, land and grid risk [Gore Street Capital — 9jXkiEU8op0 @ 00:05:40]."
         },
         {
-          "name": "Exit-readiness and transferable evidence ledger",
+          "name": "tower_equipment_and_structure",
           "type": "textarea",
-          "prompt": "List the records a buyer or successor would need to verify rights, recurring income, operating dependencies, and transfer restrictions. Separate completed transaction history from assets and contracts that remain economically owned.",
-          "example": "Maintain executed leases, permit records, assignment consents, lender instruments, title evidence, deposit liabilities, tenant aging, operating procedures, and monthly reconciliations. Completed easement flip spreads are historical earnings, not still-owned easements. Identify which yard contracts transfer, which require consent, and which terminate upon a change of control."
+          "prompt": "For any cell site on your property, record the sectors and antennas present, whether a structural analysis preceded heavier 5G panels, and which carriers occupy the structure, noting any equipment installed outside the lease lines that creates a renegotiation opening.",
+          "example": "Three sectors, each with antennas covering 120 degrees [Telecom Training — tqz39K230_w @ 00:01:27]. A structural analysis ran before the heavier 5G panels, since sometimes the answer is reinforce the pole first [Buildrightacademy — kHmq6jr22Ms @ 00:15:43]. Equipment was reconciled against the lease, because space used outside the lease lines hands the owner a renegotiation opening [Vertical Consultants — F1m9euwLJAQ @ 00:12:42]."
         },
         {
-          "name": "Scale decision and orderly downside plan",
+          "name": "obsolescence_and_battery_risk",
           "type": "textarea",
-          "prompt": "State the evidence required to add a second full-time role or another asset lane. Define how the team will reduce commitments, preserve records, and satisfy existing obligations if performance weakens.",
-          "example": "Add the second full-time role only after documented throughput supports its cost and unrestricted cash covers the revised runway plan. If two expected closings slip, pause new paid diligence and renegotiate expiring options. Preserve tenant service, restricted deposits, and contractual notice duties while reducing discretionary acquisition spending."
+          "prompt": "Assess the long-term obsolescence risk to the lease income on your site, covering satellite or microcell substitution for tower rent and annual battery degradation with reserve sizing for storage, and state the assumption you will hold in your model.",
+          "example": "SpaceX's reported push for at least 80,000 cell sites is noted [The Space Flight — 0P3b6pUkElk @ 00:06:48], but the model holds that 'Satellite is a supplement, not a substitute' [Vertical Consultants — BoWyq83WIVk @ 00:00:21]. Storage cash flow assumes 1.5 to 3.5% annual battery fade and a 20% reserve, with cooling holding cells between 20 and 40 degrees C."
         }
       ],
-      "completion_gate": "The thirty-day evidence package is complete, unresolved work is explicitly listed, the next sixty days are funded, pod responsibilities fit the stated staffing, canonical profit targets remain intact, and transfer records distinguish historical spreads from currently owned contractual interests."
+      "completion_gate": "No yard opens until the city has signed off, the certificate of occupancy is issued, every easement is cleared, and gate access is tied to payment; no battery or cell lease is signed until utility capacity, upgrade rights, structural analysis, and a written obsolescence assumption are on file."
     }
   ]
 }

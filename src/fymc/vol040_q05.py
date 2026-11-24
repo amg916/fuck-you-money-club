@@ -1,601 +1,885 @@
 from __future__ import annotations
 
-CHAPTER_5 = {
-    "id": "Q5",
-    "chapter_id": "Q5",
-    "chapter_number": 5,
-    "question_number": 5,
-    "slug": "beginner-traps-clawbacks-asymmetric-failure-modes",
-    "question_prompt": "What kills 80% of newcomers in self-funded health, pbm & workers' comp arbitrage, and what forensic metrics detect margin leaks, regulatory landmines, or platform bans before they wipe out capital?",
-    "kicker": "Q5 / THE BIG MONEY PLAYBOOKS",
-    "title": "Beginner Traps, Clawbacks & Asymmetric Failure Modes",
-    "subtitle": "Stop-Loss Lasers, PBM Rebate Receivables, NCCI Corrections, ERISA Compensation Disclosures, and WOTC Evidence Controls",
-    "layout_template": "expert_insights",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #40, Rank #08 of 42, scores 93/100, but its eleven mapped plays depend on disciplined evidence, "
-        "contract boundaries, and collectible compensation. This chapter tests renewal intelligence, benefits advisory, "
-        "self-funding transitions, captive placement, stop-loss placement, TPA selection, PBM repricing, rebate recovery, "
-        "reference-based pricing, E-Mod recovery, and the WOTC/Section 41 engine against asymmetric failure. Annual owner "
-        "profit remains $38,400 Conservative, $240,750 Base, and $551,000 Scaled; employer claim funds and insurance "
-        "premiums never become operator revenue. The question's 80% framing is not a measured failure rate. The practical "
-        "objective is to detect missing coverage, disputed rebates, invalid classifications, unsupported tax claims, "
-        "access suspensions, and commission reversals before an attractive spreadsheet becomes an unfunded obligation."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$120,000",
-            "context": "Annual retained operator revenue; excludes claim funds and insurance premiums",
-            "note": "32% net margin; $38,400 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Base",
-            "value": "$535,000",
-            "context": "Annual retained operator revenue; excludes claim funds and insurance premiums",
-            "note": "45.0% net margin; $240,750 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$950,000",
-            "context": "Annual retained operator revenue; excludes claim funds and insurance premiums",
-            "note": "58% net margin; $551,000 annual owner net profit; 2 FT + 4 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Refuse the Coverage Gap Before Selling the Savings",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "The first fatal trap is treating an employer's premium budget as the brokerage's addressable revenue. "
-                    "A $4 million health-plan budget is an employer funding obligation, not $4 million of agency sales. "
-                    "Renewal intelligence from EFAST2 Form 5500 filings identifies potential conversations, but Schedule A "
-                    "and Schedule C are neither universal nor current contract inventories. A self-funded arrangement can "
-                    "have incomplete commission visibility in those schedules, and filing exemptions remove some prospects "
-                    "entirely. Confirm plan funding, renewal date, incumbent authority, and actual decision rights directly. "
-                    "For benefits advisory, 1,000 covered employees at $8 PEPM produces $96,000 annually only if the agreement "
-                    "bills employees rather than members and all twelve months remain collectible. A covered-life count of "
-                    "1,800 does not justify billing 1,800 employees. Build a monthly census bridge covering additions, "
-                    "terminations, retroactive eligibility changes, and invoice adjustments. Stop automated invoicing when "
-                    "unexplained census differences exceed 1%; that is an internal investigation threshold, not an industry "
-                    "standard. Incumbent broker defense typically attacks timing, compensation ambiguity, and coverage "
-                    "continuity. Counter with signed authority and reconciled facts, never fabricated incumbent fees or "
-                    "unsupported savings claims. The safe fallback is a fixed-scope diagnostic while the incumbent coverage "
-                    "remains intact."
-                ),
-                (
-                    "The second and third traps are buying a stop-loss headline and forgetting the calendar. A $100,000 "
-                    "specific attachment point does not protect a claimant carrying a $500,000 individual laser. If that "
-                    "claimant incurs $420,000 of otherwise eligible expenses, employer exposure can be $420,000 rather "
-                    "than $100,000, a $320,000 difference before other policy terms. An aggregate attachment is not "
-                    "automatically a second route around that exclusion; inspect how laser claims enter the aggregate "
-                    "calculation. Compare incurred and paid windows, terminal liability, actively-at-work language, "
-                    "disclosure duties, reimbursement deadlines, and advance-funding provisions against the plan document "
-                    "and TPA agreement. A 12/12 arrangement and a 12/15 arrangement allocate late-paid claims differently. "
-                    "Never describe a three-month extension as complete protection against every late submission. "
-                    "For self-funding transitions and stop-loss placement, require a claimant-specific exposure schedule "
-                    "and a monthly cash stress test. A $250,000 eligible claim reimbursed sixty days later still requires "
-                    "$250,000 of interim liquidity unless an enforceable advance mechanism applies. Pause placement when "
-                    "any material claimant falls outside the signed coverage comparison. The fallback is to retain "
-                    "existing coverage or select a fully insured alternative rather than finance the employer's shock "
-                    "claim from the operator's working capital."
-                ),
-                (
-                    "The fourth trap is presenting captive participation as premium savings without contingent liabilities. "
-                    "A $75,000 contribution plus a possible $50,000 assessment creates a different exposure from a fixed "
-                    "$75,000 premium; collateral, exit accounting, and loss-development provisions determine the actual "
-                    "commitment. The fifth trap is outsourcing TPA selection to a commission grid. Reconcile eligibility "
-                    "feeds, claim-payment authority, stop-loss reporting, banking controls, and termination assistance before "
-                    "comparing administrative prices. A $2 PEPM discount across 1,000 employees saves $24,000 annually, "
-                    "but one unrecoverable $60,000 reporting defect overwhelms it. The sixth trap is selling reference-based "
-                    "pricing as a discount that providers must accept. If an illustrative $100,000 billed service yields a "
-                    "$30,000 plan payment and a $20,000 negotiated settlement, the relevant employer cost is $50,000 plus "
-                    "defense and administration, not the initial payment alone. Confirm provider agreements, participant "
-                    "communications, appeals, balance-bill defense, and federal surprise-billing rules where applicable. "
-                    "Escalate every collection notice immediately rather than waiting for a monthly dashboard. State "
-                    "producer authority and any required TPA authority must match the actual activities. When defense "
-                    "capacity or licensing is missing, use properly authorized partners and narrower services; do not "
-                    "convert an advice engagement into unauthorized claims administration or custody."
-                ),
-            ],
-            "table": {
-                "caption": "Coverage Defects That Turn Advisory Revenue into Employer Disputes",
-                "headers": [
-                    "Failure mechanism and exposed operating play",
-                    "Evidence required before any binding recommendation",
-                    "Early warning and immediate investigation threshold",
-                    "Circuit breaker and retained service alternative",
-                ],
-                "rows": [
-                    [
-                        "Renewal targeting mistakes historical filings for current authority",
-                        "Obtain current policy dates and signed employer authorization",
-                        "Investigate every conflicting renewal date before sending proposals",
-                        "Limit work to research until employer confirms facts",
-                    ],
-                    [
-                        "Benefits advisory invoices dependents as separately billable employees",
-                        "Reconcile employee census against executed PEPM billing definitions",
-                        "Investigate unexplained monthly census differences greater than 1%",
-                        "Hold disputed invoice lines while preserving supported charges",
-                    ],
-                    [
-                        "Stop-loss placement hides claimant lasers behind headline deductibles",
-                        "Read final endorsements alongside claimant-specific underwriting exposure schedules",
-                        "Escalate every material claimant omitted from coverage comparison",
-                        "Retain existing protection until replacement terms are acceptable",
-                    ],
-                    [
-                        "Self-funding transition strands claims outside contracted payment windows",
-                        "Map incurred dates and paid dates across policies",
-                        "Investigate every projected claim outside both coverage windows",
-                        "Purchase appropriate extension or preserve prior funding arrangement",
-                    ],
-                    [
-                        "Captive participation conceals assessments collateral and exit costs",
-                        "Review participation agreement alongside assessment and collateral schedules",
-                        "Escalate exposure exceeding the employer's documented liquidity capacity",
-                        "Use conventional coverage when contingent commitments exceed capacity",
-                    ],
-                    [
-                        "TPA selection sacrifices reporting reliability for commission economics",
-                        "Test reporting extracts against actual stop-loss reimbursement requirements",
-                        "Escalate missed contractual reporting deadlines on the same day",
-                        "Retain proven administration until replacement reporting passes testing",
-                    ],
-                    [
-                        "Reference-based pricing ignores participant collections and defense costs",
-                        "Verify settlement authority and funded participant defense arrangements",
-                        "Escalate every collection notice upon receipt by operations",
-                        "Use contracted networks when dispute defense remains inadequate",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four Checks Before Recommending a Funding Change",
-                "body": (
-                    "These checks stop a recommendation, not the entire client relationship. Preserve supported diagnostic "
-                    "work while the responsible parties resolve the defect."
-                ),
-                "items": [
-                    "Verify active Life & Health and Property & Casualty producer authority for the relevant states and activities; separately determine TPA requirements.",
-                    "Deliver applicable ERISA Section 408(b)(2)(B) compensation disclosures before the arrangement and document the responsible plan fiduciary's receipt.",
-                    "Match final stop-loss endorsements, plan terms, TPA reporting, run-out treatment, and claimant exposures in one signed comparison.",
-                    "Obtain employer confirmation that claim-payment liquidity, captive obligations, and participant defense resources fit documented capacity.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Rebuild PBM Savings from Adjudicated Claims and Collectible Rebates",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "The seventh trap is repricing pharmacy claims against NADAC and calling the difference recoverable "
-                    "spread. NADAC is a survey-based acquisition-cost reference, not the employer's contract price or a "
-                    "universal benchmark for specialty, limited-distribution, or unavailable products. Normalize NDC format, "
-                    "package quantity, dispensing units, service dates, reversals, ingredient cost, dispensing fees, and "
-                    "member cost share before comparing transactions. Suppose 10,000 comparable paid prescriptions show "
-                    "$1,200,000 in employer and member payments against a $1,050,000 modeled alternative. The $150,000 "
-                    "difference is a screening result, not operator revenue and not automatically an enforceable refund. "
-                    "If implementation and network effects cost $40,000, estimated employer improvement falls to $110,000. "
-                    "A separately contracted 20% fee would equal $22,000 only on the agreed, validated measurement basis. "
-                    "Stop the repricing run when unmatched product or unit records exceed 2% of evaluated spend; inspect "
-                    "all high-dollar exceptions even below that threshold. Compare therapeutic and network disruption "
-                    "before promising savings. The fallback is a paid procurement comparison with clearly separated "
-                    "measured, modeled, and excluded populations, not a recovery demand built from unmatched benchmarks. "
-                    "Preserve the original extract and transformation log so a challenger can reproduce every included "
-                    "claim without receiving unnecessary patient identifiers."
-                ),
-                (
-                    "The eighth trap is equating a pass-through label with ownership of every manufacturer dollar. Rebate "
-                    "definitions may exclude administrative fees, purchase discounts, price-protection payments, specialty "
-                    "arrangements, or amounts earned through affiliated entities. Read the economic definition, permitted "
-                    "deductions, reconciliation timing, audit rights, termination tail, and disputes process. At 1,000 "
-                    "eligible members, a $300 annual guarantee suggests $300,000, but a contract excluding 200 members "
-                    "from that guarantee produces $240,000 before other adjustments. A 15% recovery fee on a verified "
-                    "$60,000 incremental payment is $9,000; it is not 15% of all historical rebates. Establish one ledger "
-                    "for amounts contractually earned, another for invoiced receivables, and another for cash received. "
-                    "Flag an unpaid amount immediately after its contractual due date and suspend any discretionary "
-                    "distributions tied to that receivable. A rebate payable 180 days after quarter-end is not late at "
-                    "day ninety, although it still creates a working-capital requirement. Tie contingency recognition to "
-                    "the accountant-approved treatment of variable consideration and reversal risk. If the PBM refuses "
-                    "the evidence needed to establish an amount, pursue contractual audit or dispute channels and "
-                    "revert to an agreed fixed-fee analytical scope. Do not invent an accrual to preserve a monthly "
-                    "sales target."
-                ),
-                (
-                    "The ninth trap combines hidden remuneration with careless health-information access. ERISA Section "
-                    "408(b)(2)(B), codified at 29 U.S.C. 1108(b)(2)(B), imposes disclosure requirements on covered group-health "
-                    "brokerage and consulting arrangements expecting at least $1,000 in direct or indirect compensation. "
-                    "Disclose applicable commissions, referral compensation, and payment formulas; merely saying that "
-                    "carriers may pay compensation does not explain a known arrangement. Whether a particular person "
-                    "is a fiduciary depends on their functions, not their business card. Separate compensation analysis "
-                    "from claim-level processing permissions. Execute required business associate arrangements when "
-                    "performing covered functions involving protected health information, apply minimum-necessary access "
-                    "where required, and restrict employer access according to plan-administration rules. A pharmacy "
-                    "extract containing 40,000 rows does not justify forty thousand patient names in a sales workspace. "
-                    "Use purpose-limited identifiers and secure transfers, with named accounts and access expiration. "
-                    "Stop processing upon an authorization mismatch, a rejected credential, or an export outside the "
-                    "agreed purpose. Do not bypass a portal suspension with shared credentials, rotating accounts, "
-                    "or scraped session tokens. Those shortcuts can terminate contractual access and create additional "
-                    "liability. Preserve the failure evidence, contact the authorized administrator, and use an approved "
-                    "export while permissions are repaired."
-                ),
-            ],
-            "table": {
-                "caption": "PBM Forensic Controls for Spread, Rebate Ownership, and Data Access",
-                "headers": [
-                    "Economic or access defect requiring explicit investigation",
-                    "Source evidence and reproducible reconciliation operating method",
-                    "Internal threshold or contractual escalation timing requirement",
-                    "Safe fallback preserving useful authorized client service",
-                ],
-                "rows": [
-                    [
-                        "NADAC comparison treats every product as directly comparable",
-                        "Join dated benchmarks to normalized units and eligible products",
-                        "Stop when unmatched records exceed 2% of evaluated spend",
-                        "Deliver matched-population analysis with excluded spend separately quantified",
-                    ],
-                    [
-                        "Claim reversal duplicates inflate apparent recoverable pharmacy spread",
-                        "Pair reversal transactions with originals using adjudication identifiers",
-                        "Investigate every duplicate high-dollar transaction before calculating fees",
-                        "Recalculate recovery solely from reconciled final paid transactions",
-                    ],
-                    [
-                        "Rebate guarantee denominator excludes members included by sales",
-                        "Reconcile eligibility definitions against contract-specific covered member counts",
-                        "Escalate any unsupported member included in guarantee calculations",
-                        "Present guaranteed economics using only contractually eligible populations",
-                    ],
-                    [
-                        "Affiliate receipts escape the contract's pass-through rebate definition",
-                        "Read affiliate provisions and request contractually available statements",
-                        "Investigate material receipts outside the disclosed economic definition",
-                        "Price future procurement using explicit retained-payment disclosure requirements",
-                    ],
-                    [
-                        "Contingency revenue precedes resolution of disputed recovery amounts",
-                        "Separate earned amounts invoices receipts and reversal exposure",
-                        "Review unpaid balances immediately after contractual payment deadlines",
-                        "Bill agreed analytical fees rather than disputed recoveries",
-                    ],
-                    [
-                        "Indirect compensation remains absent from required client disclosures",
-                        "Inventory carrier referral affiliate and subcontractor payment arrangements",
-                        "Stop recommendation delivery when required disclosure remains incomplete",
-                        "Complete applicable disclosures before entering the covered arrangement",
-                    ],
-                    [
-                        "Unauthorized portal extraction jeopardizes access and patient confidentiality",
-                        "Retain named authorization and purpose-limited access audit records",
-                        "Stop upon denied access or mismatched processing authorization",
-                        "Request approved exports through the client's authorized administrator",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Four Veteran Habits That Protect the Recovery",
-                "body": (
-                    "The valuable artifact is a reproducible entitlement calculation backed by enforceable terms, "
-                    "not a spectacular savings percentage."
-                ),
-                "items": [
-                    "Freeze the pre-renewal PBM extract and record its checksum before cleaning; retain a separate reversal and unit-conversion exception ledger.",
-                    "Ask stop-loss underwriters to identify every claimant-specific deviation in the final quotation and reconcile it again against issued endorsements.",
-                    "Track PBM termination-tail rebates by earned quarter, contractual payment date, audit deadline, and the party entitled to collect.",
-                    "Submit E-Mod correction packets with original unit statistical records, supporting payroll records, and a before-and-after calculation that preserves unrelated adjustments.",
-                ],
-            },
-        },
-        {
-            "heading": "3. Separate Bureau Corrections from Tax Credits and Unsupported Recoveries",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "The tenth trap is changing workers' compensation classifications because a cheaper code appears "
-                    "plausible. Actual operations, governing classification rules, state exceptions, payroll segregation, "
-                    "and supporting records control the result. NCCI does not administer every jurisdiction; California "
-                    "uses WCIRB, and other states have independent arrangements. Obtain the applicable bureau worksheet, "
-                    "policy audits, payroll detail, and carrier unit statistical reporting. A simple illustration uses "
-                    "$300,000 of mod-sensitive premium: changing the modifier from 1.20 to 1.10 suggests a $30,000 "
-                    "difference before other rating factors. At a permitted 25% recovery share, the operator fee is "
-                    "$7,500 only if the defined recovery is actually supported and the agreement's earning conditions "
-                    "are met. Do not apply that percentage to total payroll, claim reserves, or the entire premium "
-                    "invoice. Expense constants, discounts, state assessments, and policy-specific adjustments can "
-                    "change the final refund. Stop the demand whenever the governing classification or reporting "
-                    "period is unresolved. The fallback is a fixed-fee payroll and classification review with an "
-                    "appropriately licensed producer handling placement or premium negotiations. Never coach an "
-                    "employer to relabel hazardous work, conceal subcontractors, or alter time records; those actions "
-                    "create false applications rather than legitimate rating corrections."
-                ),
-                (
-                    "The eleventh trap is assuming a closed claim automatically repairs an experience modifier. Rating "
-                    "uses defined experience periods, valuation dates, loss limitations, and reporting procedures. A "
-                    "$100,000 reserve reduction after a valuation date may affect a later calculation, an allowable "
-                    "revision, or neither immediate premium nor the current worksheet. Trace each proposed adjustment "
-                    "from carrier claim history through unit statistical reporting to the bureau's applicable revision "
-                    "rules. Track correction acceptance separately from refund issuance and client receipt. Flag a "
-                    "carrier acknowledgment missing after ten business days as an internal service escalation, while "
-                    "respecting the actual contractual and bureau deadlines. The twelfth trap is ignoring commission "
-                    "chargebacks when a corrected premium falls or a policy cancels. If a $20,000 commission has a "
-                    "contractually determined $6,000 reversal, available contribution falls by $6,000 even though the "
-                    "sales report still celebrates the placement. Maintain a policy-level chargeback schedule covering "
-                    "earning rules, cancellation provisions, audits, and producer splits. For recovery compensation, "
-                    "confirm state restrictions and avoid promising advocacy beyond the operator's authority. If a "
-                    "carrier disputes causation or timing, preserve the written decision and invoke the applicable "
-                    "review process. Do not net a disputed recovery against employer premiums or withhold claim funds "
-                    "to force payment."
-                ),
-                (
-                    "The mapped play wotc_hourly_payroll_tax_credit_contingency_engine combines authorized WOTC screening "
-                    "with separately substantiated Section 41 work; it does not make employee hiring a research activity. "
-                    "Verify statutory program authorization for each hiring date before projecting WOTC. Do not assume "
-                    "a post-2025 start date qualifies merely because payroll software offers a screening form. For an "
-                    "authorized hiring period, complete Form 8850 pre-screening as required and submit the certification "
-                    "request to the designated state workforce agency within the applicable 28-day deadline. In an "
-                    "illustration involving ten certified employees in a qualifying category with a $6,000 wage limit, "
-                    "each reaching 400 hours and sufficient eligible wages, the 40% rate yields $2,400 each, or $24,000. "
-                    "A hypothetical permitted 15% service fee is $3,600, never $24,000 of operator revenue. Wage "
-                    "coordination can reduce the credit; maintain an employee-level allocation ledger. Section 41 "
-                    "requires its own activity analysis, qualified-expense support, funded-research review, and applicable "
-                    "base calculation. A separately validated $50,000 credit could imply a $5,000 fee at 10% only where "
-                    "professional and other applicable fee rules permit. Exclude unsupported claims and use fixed-fee "
-                    "payroll and research-documentation services under independent tax review when eligibility or fee "
-                    "authority fails."
-                ),
-            ],
-            "table": {
-                "caption": "E-Mod and Tax Recovery Defects That Break the Contingency Model",
-                "headers": [
-                    "Claimed recovery mechanism and hidden eligibility defect",
-                    "Required source records and responsible reviewing party",
-                    "Unit economics and early warning investigation trigger",
-                    "Fallback service when recovery cannot be supported",
-                ],
-                "rows": [
-                    [
-                        "Cheaper classification conflicts with actual documented employer operations",
-                        "Review payroll segregation and governing state classification rules",
-                        "Stop when proposed codes lack supporting operational evidence",
-                        "Offer fixed-scope classification documentation through appropriately authorized professionals",
-                    ],
-                    [
-                        "Modifier reduction is applied to nonmodifiable premium components",
-                        "Reconcile carrier audit and bureau worksheet line items",
-                        "Illustrative $300,000 basis times 0.10 yields $30,000 difference",
-                        "Calculate fees only from supported contract-defined recovery amounts",
-                    ],
-                    [
-                        "Reserve reduction misses the applicable experience valuation period",
-                        "Trace carrier reporting through bureau revision eligibility rules",
-                        "Escalate missing acknowledgment after ten business days internally",
-                        "Preserve evidence for the next eligible reporting correction",
-                    ],
-                    [
-                        "Premium correction reverses commissions already distributed to producers",
-                        "Review producer agreement and policy-level commission earning schedules",
-                        "A $6,000 reversal reduces retained contribution by $6,000",
-                        "Reserve contractual exposure before making discretionary owner distributions",
-                    ],
-                    [
-                        "WOTC screening assumes authorization for every hiring date",
-                        "Check current statute and designated workforce agency instructions",
-                        "Exclude every start date without confirmed program authority",
-                        "Provide fixed-fee payroll documentation without projecting unsupported credits",
-                    ],
-                    [
-                        "WOTC claim lacks certification hours or coordinated wage support",
-                        "Reconcile timely certification requests with employee-level payroll records",
-                        "Ten qualifying $2,400 credits total $24,000 before coordination",
-                        "Remove unsupported employees and request independent tax review",
-                    ],
-                    [
-                        "Research credit uses hiring evidence instead of qualified activities",
-                        "Substantiate Section 41 activities expenses funding and base calculations",
-                        "Review every contingent fee against applicable professional restrictions",
-                        "Use fixed-fee research documentation with independent tax determination",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "4. Install Cash, Access, and Evidence Circuit Breakers Before Scaling",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Keep the canonical Formula v2.0 cases separate from every downside illustration. Conservative "
-                    "recognized operator revenue is $120,000; at 32% net margin, costs are $81,600 and annual owner "
-                    "profit is $38,400. Base revenue is $535,000; at 45.0%, costs are $294,250 and profit is $240,750. "
-                    "Scaled revenue is $950,000; at 58%, costs are $399,000 and profit is $551,000. Staffing stays "
-                    "1 FT + 3 C for Conservative and Base, and 2 FT + 4 C for Scaled. One illustrative composition, "
-                    "not an additional scorecard assumption, reconciles Conservative as $96,000 PEPM fees plus "
-                    "$18,000 retained commissions plus $6,000 recovery fees. Base can reconcile as 3,000 employees "
-                    "times $10 times twelve months, plus $125,000 commissions and $50,000 recovery fees. Scaled can "
-                    "reconcile as 5,000 employees times $11 times twelve, plus $200,000 commissions and $90,000 "
-                    "recovery fees. These components must already reflect the operator's retained share where "
-                    "applicable; never deduct the same producer split twice. Determine gross-versus-net presentation "
-                    "under ASC 606 from the actual principal-agent relationship, not the scorecard's shorthand "
-                    "revenue label. Employer premiums, pharmacy spend, recovered tax credits, and claim funds stay "
-                    "outside these revenue totals."
-                ),
-                (
-                    "The thirteenth trap is running an agency on accrued wins while paying contractors in cash. Track "
-                    "cash collected, revenue recognized, disputed receivables, expected commission reversals, and "
-                    "contractor commitments separately. The stated $2,000–$11,000 monthly operating range is a planning "
-                    "input, not the full expense denominator behind every canonical profit case; do not substitute "
-                    "that range for scorecard costs. At the upper planning level, three months requires $33,000 "
-                    "before claim disputes or owner withdrawals. Startup capital of $8,000–$45,000 and a two-to-five-month "
-                    "first-deal cycle make collection timing material. Use an internal stop on discretionary owner "
-                    "distributions when unrestricted cash falls below three months of committed outflows. Reserve "
-                    "commission exposure using contract-specific earning schedules rather than a convenient flat "
-                    "percentage. A Base downside illustration with $25,000 of lost recognized revenue and $15,000 "
-                    "of additional dispute expense reduces profit from $240,750 to $200,750, assuming other costs "
-                    "remain unchanged. That illustration does not revise the canonical Base case. Investigate "
-                    "receivables thirty days beyond their contractual due date and any client exceeding 25% of "
-                    "annual retained revenue. Concentration is an exposure signal, not an automatic reason to "
-                    "terminate a good client. Renegotiate deposits, milestones, or fixed fees before expanding "
-                    "unfunded work."
-                ),
-                (
-                    "The fourteenth trap is automating a broken permission model. Public Form 5500 research, employer "
-                    "claim extracts, PBM portals, and bureau worksheets have different access rights; one employer "
-                    "signature does not authorize every downstream system action. Respect published access methods, "
-                    "service terms, rate limits, and the precise scope of delegated authority. Stop after an "
-                    "authorization rejection or account suspension; repeated evasion attempts can convert a repairable "
-                    "access issue into permanent termination. Detect bulk-export anomalies, new administrator accounts, "
-                    "unexpected destination changes, and expired client authority. For this chapter, the eleven operating "
-                    "lanes are renewal intelligence, benefits advisory, self-funding transitions, captive placement, "
-                    "stop-loss placement, TPA selection, PBM repricing, rebate recovery, reference-based pricing, E-Mod "
-                    "recovery, and the named WOTC/Section 41 engine; these labels organize work rather than assert "
-                    "additional catalog identifiers. Give each lane an evidence owner and a recoverable shutdown "
-                    "procedure. Preserve raw records, calculation versions, signed terms, and correction history under "
-                    "a documented retention schedule. When a defect appears, stop the affected calculation, quantify "
-                    "exposed revenue and client obligations, notify the authorized decision-maker, and resume only "
-                    "after correction is verified. A small team survives by narrowing unsupported work immediately, "
-                    "not by hiding exceptions until renewal."
-                ),
-            ],
-            "table": {
-                "caption": "Small-Team Telemetry That Separates Model Profit from Collectible Cash",
-                "headers": [
-                    "Monitored exposure and named responsible operating owner",
-                    "Measurement method and reconciled source evidence requirement",
-                    "Explicit internal threshold for investigation or shutdown",
-                    "Corrective action preserving supported revenue and client service",
-                ],
-                "rows": [
-                    [
-                        "Owner monitors revenue presentation and retained compensation share",
-                        "Reconcile contracts invoices producer splits and accounting treatment",
-                        "Investigate every premium or claim-fund entry within revenue",
-                        "Reclassify excluded flows and correct duplicate split deductions",
-                    ],
-                    [
-                        "Operations lead monitors unrestricted cash against committed outflows",
-                        "Maintain rolling weekly collections and payable maturity schedule",
-                        "Stop discretionary distributions below three months committed outflows",
-                        "Reduce unfunded work and negotiate supported billing milestones",
-                    ],
-                    [
-                        "Account lead monitors overdue contractual recovery fee receivables",
-                        "Measure aging from contractual due dates rather than invoices",
-                        "Investigate balances thirty days beyond contractual payment deadlines",
-                        "Escalate disputes and avoid funding contractors from expected recoveries",
-                    ],
-                    [
-                        "Principal monitors client concentration within annual retained revenue",
-                        "Divide each client's retained revenue by total retained revenue",
-                        "Review any single client exceeding 25% annual retained revenue",
-                        "Diversify pipeline and document replacement capacity before expansion",
-                    ],
-                    [
-                        "Producer manager monitors policy cancellation and audit chargebacks",
-                        "Map each payment to contractual commission earning provisions",
-                        "Reserve identified reversal exposure before discretionary producer distributions",
-                        "Reconcile carrier statements and recover contractually repayable advances",
-                    ],
-                    [
-                        "Access owner monitors delegated authority and portal rejection events",
-                        "Review named accounts access expiration and export audit records",
-                        "Stop affected access upon rejection suspension or authorization mismatch",
-                        "Use administrator-approved recovery without alternate accounts or evasion",
-                    ],
-                    [
-                        "Quality owner monitors evidence completeness for every recovery claim",
-                        "Link source records calculations contracts and independent review outcomes",
-                        "Stop unsupported claims before submission or contingent fee recognition",
-                        "Deliver documented fixed-fee work while substantive defects are repaired",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Freeze the affected lane",
-                    "action": "Suspend the disputed calculation, submission, invoice line, or portal session without disabling unrelated authorized work.",
-                    "detail": "Preserve original extracts, timestamps, contract versions, access events, and the current client-facing calculation.",
-                },
-                {
-                    "step": 2,
-                    "title": "Quantify the actual exposure",
-                    "action": "Separate employer obligations, operator retained revenue, repayable commissions, receivables, and incremental correction costs.",
-                    "detail": "Calculate a bounded downside using specific contract terms; never count employer claim funds as available agency liquidity.",
-                },
-                {
-                    "step": 3,
-                    "title": "Assign the authorized correction",
-                    "action": "Route coverage defects to the licensed producer, reporting defects to the carrier or TPA, and tax questions to independent tax review.",
-                    "detail": "Notify the responsible client decision-maker and record applicable response, appeal, filing, and contractual dispute deadlines.",
-                },
-                {
-                    "step": 4,
-                    "title": "Verify before resuming",
-                    "action": "Reperform the affected reconciliation against corrected evidence and obtain the required client or administrator authorization.",
-                    "detail": "Resume only the repaired scope, update reserves and forecasts, and add the defect to the recurring exception checklist.",
-                },
-            ],
-        },
-    ],
-    "pull_quote": "A recovery becomes a business only when the evidence survives challenge and the retained fee survives collection.",
-    "diagram_id": "diag-05",
-    "action_checklist": [
-        "Build a claimant-level stop-loss comparison covering lasers, incurred and paid windows, reimbursement timing, and employer liquidity.",
-        "Reconcile PEPM invoices to the contracted employee denominator and investigate unexplained census differences above 1%.",
-        "Version PBM claim transformations and separate modeled spread, enforceable recoveries, rebate receivables, and collected fees.",
-        "Tie every E-Mod correction to governing bureau rules, carrier reporting, actual refund mechanics, and commission reversal exposure.",
-        "Validate WOTC hiring-date authorization, certification timing, wage coordination, and separate Section 41 support before any claim or outcome-linked fee.",
-        "Install cash-runway, overdue-receivable, client-concentration, evidence-completeness, and access-rejection controls with named owners.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "29 U.S.C. 1108(b)(2)(B) — Group health brokerage and consulting compensation disclosures",
-            "url": "https://www.law.cornell.edu/uscode/text/29/1108",
-            "relevance": "Defines covered group-health service arrangements and required direct and indirect compensation disclosures.",
-        },
-        {
-            "title": "29 U.S.C. 1104 — Fiduciary duties under ERISA",
-            "url": "https://www.law.cornell.edu/uscode/text/29/1104",
-            "relevance": "Establishes duties applicable to persons acting as fiduciaries, including prudence and loyalty in relevant plan decisions.",
-        },
-        {
-            "title": "45 CFR 164.502 — Uses and disclosures of protected health information",
-            "url": "https://www.ecfr.gov/current/title-45/section-164.502",
-            "relevance": "Governs permitted uses and disclosures and the minimum-necessary standard where applicable to claims analysis.",
-        },
-        {
-            "title": "45 CFR 164.504 — Organizational requirements",
-            "url": "https://www.ecfr.gov/current/title-45/section-164.504",
-            "relevance": "Addresses business associate arrangements and conditions governing disclosures to group-health plan sponsors.",
-        },
-        {
-            "title": "42 U.S.C. 300gg-111 — Surprise medical bills",
-            "url": "https://www.law.cornell.edu/uscode/text/42/300gg-111",
-            "relevance": "Sets federal requirements for specified emergency and nonemergency services relevant to plan-payment and participant-exposure analysis.",
-        },
-        {
-            "title": "26 U.S.C. 51 — Work opportunity credit",
-            "url": "https://www.law.cornell.edu/uscode/text/26/51",
-            "relevance": "Controls qualifying groups, wages, hours, certification mechanics, coordination restrictions, and applicable hiring-period authority.",
-        },
-        {
-            "title": "26 U.S.C. 41 — Credit for increasing research activities",
-            "url": "https://www.law.cornell.edu/uscode/text/26/41",
-            "relevance": "Defines qualified research expenses, qualifying activity requirements, exclusions, and credit calculation structures.",
-        },
-        {
-            "title": "26 U.S.C. 280C — Disallowance of certain deductions",
-            "url": "https://www.law.cornell.edu/uscode/text/26/280C",
-            "relevance": "Requires applicable deduction and credit coordination for work opportunity and research credit calculations.",
-        },
-        {
-            "title": "31 CFR 10.27 — Fees",
-            "url": "https://www.ecfr.gov/current/title-31/section-10.27",
-            "relevance": "Provides professional fee rules whose applicability, exceptions, and judicial treatment require review before selecting contingent tax-service compensation.",
-        },
-    ],
-}
+CHAPTER_5 = {'id': 'Q5',
+ 'chapter_id': 'Q5',
+ 'chapter_number': 5,
+ 'question_number': 5,
+ 'slug': 'pbm-follow-the-money',
+ 'question_prompt': 'What do pharmacy benefit managers actually do, and how does money flow between '
+                    'manufacturers, PBMs, pharmacies, plans, and patients?',
+ 'kicker': 'Q5 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Pharmacy Benefit Managers: Following the Money',
+ 'subtitle': "PBM money-flow mapping, formulary tiers, rebates, spread pricing basics, PBM 'games,' "
+             'industry consolidation and scrutiny, transparency claims, and the economics of owning a PBM',
+ 'layout_template': 'case_study',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Pharmacy benefit managers sit between plan sponsors, drugmakers, wholesalers and '
+                      'pharmacies, and every practitioner here agrees the money is made in the gaps '
+                      'between contracts the buyer never sees. Three PBMs, CVS Caremark, Express Scripts '
+                      'and OptumRx, control roughly 80 to 85 percent of the market, run the formulary '
+                      'auction, and own mail-order and specialty pharmacies. The street math is '
+                      'consistent: brand rebates priced as a percentage of list (PBM retention estimated '
+                      'at 20 to 45 percent), generic spread pricing ($6 billed, $2 paid to the pharmacy, '
+                      '30 cents acquisition cost), and one worked example extracting $175 gross from a '
+                      'single $1,000 specialty script. Practitioners split on remedies: transparent '
+                      'pass-through PBMs and carve-outs versus legislated delinking and fiduciary duties, '
+                      'with ERISA preemption already knocking back state reform in Oklahoma.',
+ 'key_metrics': [{'label': 'PBM share of manufacturer rebate retained',
+                  'metric': 'PBM share of manufacturer rebate retained',
+                  'value': '55 to 80 percent passed to the plan; PBM keeps 20 to 45 percent',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Dr. Eric Bricker's working estimate of how the manufacturer rebate paid for "
+                             'preferred formulary placement is split between plan and PBM',
+                  'source': 'AHealthcareZ - Healthcare Finance Explained ([vT0NNXYjQ_Y @ 00:03:31])'},
+                 {'label': 'Generic spread stack per monthly script',
+                  'metric': 'Generic spread stack per monthly script',
+                  'value': '$30 AWP; plan pays $6; pharmacy paid $2 MAC; NADAC 30 cents',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Worked generic example: PBM keeps $4, pharmacy keeps $1.70, while the '
+                             'employer believes $6 is a great deal',
+                  'source': 'AHealthcareZ - Healthcare Finance Explained ([-xH2R8NZ4pU @ 00:16:24])'},
+                 {'label': 'Spread game net retained on one fill',
+                  'metric': 'Spread game net retained on one fill',
+                  'value': '$92 retained on a $10 pharmacy payment invoiced at $112',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'PBM pays the pharmacy $10, invoices the plan $100 plus a $2 admin fee, and '
+                             'keeps the difference without client awareness',
+                  'source': 'RxPreferred ([15IQO_jTMUM @ 00:01:17])'},
+                 {'label': 'Gross PBM extraction on a $1,000 specialty script',
+                  'metric': 'Gross PBM extraction on a $1,000 specialty script',
+                  'value': '$175 ($90 spread + $80 rebate retention + $5 admin fee)',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'PBM bills the employer $940, pays the pharmacy $850, keeps 20 percent of a '
+                             '$400 rebate, and adds a $5 transaction fee',
+                  'source': 'Vault of Profit ([351RCg-LQ6I @ 00:07:49])'}],
+ 'sections': [{'number': 1,
+               'title': 'The Practitioner Consensus',
+               'paragraphs': ['The baseline every speaker builds on is leverage through scale. KFF Health '
+                              'News traces how PBMs began in the late 1960s as claims processors and, '
+                              'after the FTC stepped in and drugmakers like Merck and Eli Lilly spun off '
+                              'their PBM holdings, consolidated until three players, CVS Caremark, Optum '
+                              'Rx and Express Scripts, control about 80 percent of the market [P21Zb_OySIg '
+                              '@ 00:01:43]. Dr. Eric Bricker of AHealthcareZ puts the figure at 85 percent '
+                              'and flags both the PBM layer and the three-wholesaler layer (McKesson, '
+                              'AmerisourceBergen, Cardinal) as oligopolies where the plan sponsor has very '
+                              'few options [vT0NNXYjQ_Y @ 00:04:36]. Tyler Dutchover explains why '
+                              'employers hand over the keys anyway: a 100-person company with four insulin '
+                              'users gets zero discount from a manufacturer, while a PBM negotiating for '
+                              'millions of prescriptions extracts major concessions [ufeHEzWD1Cc @ '
+                              "00:04:08]. Vault of Profit frames the same moat from the owner's side: a "
+                              'PBM managing 1 million lives gets laughed out of the room with zero '
+                              'discounts, a PBM managing 100 million lives holds commercial life or death '
+                              "over a manufacturer's balance sheet, and no HR director will take the call "
+                              'unless the card works at 60,000 retail counters on day one [351RCg-LQ6I @ '
+                              '00:04:13]. Scale is the entry ticket; everything else is built on top of '
+                              'it.',
+                              'The second point of agreement is that the formulary is an auction and the '
+                              'rebate is the bid. STAT lays out the mechanic: drugmakers want tier 1 or '
+                              'tier 2 placement because that is where volume lives, so they offer the PBM '
+                              "a rebate, and the more expensive the list price, the higher the PBM's "
+                              'rebate tends to be [27INQuNycLA @ 00:02:27]. CancerCare states the '
+                              'incentive flatly: drugs with higher list prices can offer larger rebates, '
+                              'which can push a higher-priced drug into a preferred slot even when a '
+                              'lower-cost drug would be cheaper for the patient or the plan [f8oI5KtxoXM @ '
+                              '00:01:56]. Audio Articles cites manufacturer rebates to PBMs climbing from '
+                              '$39.7 billion in 2012 to $89.5 billion in 2016 and notes that because '
+                              'rebates are calculated as a percentage of list price, high-deductible '
+                              'patients paying on list get hit harder [Cyz7QbHNjKc @ 00:02:11]. Tyler '
+                              'Dutchover runs the selection game with four insulin bids: the obvious '
+                              'lowest-price option loses, and the PBM picks Pharma Company 3 at a $300 '
+                              'sticker because it carries the biggest rebate, a $70 check split between '
+                              "PBM and client [ufeHEzWD1Cc @ 00:05:50]. The consistent read: the PBM's "
+                              'revenue rises with list price, so the auction rewards inflation rather than '
+                              'cheap net cost.',
+                              'The third consensus pillar is that the money hides in contracts the buyer '
+                              'never sees. Benefits On The Fly sums up the three profit channels as spread '
+                              'pricing, retained rebates, and complex contracts where hidden fees and '
+                              'multiple revenue streams make it hard to track where the money actually '
+                              'goes [0ga6iJF0H1I @ 00:00:36]. Kendra Roberson of Faegre Drinker, speaking '
+                              'on the American Health Law Association podcast, defines spread pricing as '
+                              'the PBM charging the plan more than it pays the pharmacy and keeping the '
+                              'difference, and flags the Senate PBM Reform Act as proposing to prohibit it '
+                              'outright [bO0c-bD-CEA @ 00:13:15]. Audio Articles adds why it survives: the '
+                              'payment schedules PBMs generate for pharmacies are kept confidential from '
+                              'health plans, so the employer cannot compare what it paid against what the '
+                              'pharmacy received [Cyz7QbHNjKc @ 00:03:28]. Then comes vertical '
+                              "integration. Dr. Glaucomflecken's sketch has the insurer, the PBM and the "
+                              'pharmacy all turn out to be United Healthcare operating as Optum and Optum '
+                              'Rx, with every customer required to use the in-house pharmacy and the '
+                              'conglomerate boasting of 200 billion dollars a year [5rw4kNHNZyk @ '
+                              '00:01:22]. The operator baseline: assume the PBM has a second customer, a '
+                              'pharmacy it owns, and a contract written so you cannot audit either.'],
+               'table': {'caption': 'Where the practitioners agree: the structural facts every PBM buyer '
+                                    'should start from',
+                         'headers': ['Consensus Point',
+                                     'What Practitioners Report',
+                                     'Operator Implication',
+                                     'Expert Source'],
+                         'rows': [['Three PBMs control most of the market',
+                                   'CVS Caremark, Optum Rx and Express Scripts together hold about 80 '
+                                   'percent of the PBM market',
+                                   'Expect very few real alternatives when shopping a large-carrier PBM '
+                                   'contract',
+                                   'KFF Health News ([P21Zb_OySIg @ 00:01:43])'],
+                                  ['The PBM has two paying customers',
+                                   'The health plan pays the PBM while the drug manufacturer pays rebates '
+                                   'for preferred formulary placement',
+                                   'Ask who else pays your PBM before trusting any savings claim it makes',
+                                   'AHealthcareZ - Healthcare Finance Explained ([vT0NNXYjQ_Y @ '
+                                   '00:03:16])'],
+                                  ['Rebates grow with the list price',
+                                   'The more expensive the list price of the drug, the higher the PBM '
+                                   'rebate tends to be',
+                                   'High-list brands can win preferred tiers over cheaper drugs that work '
+                                   'the same',
+                                   'STAT ([27INQuNycLA @ 00:02:27])'],
+                                  ['Spread pricing sits between plan and pharmacy',
+                                   'The PBM charges the plan more than it pays the pharmacy and keeps the '
+                                   'difference',
+                                   'Billed ingredient cost and actual pharmacy reimbursement are two '
+                                   'different numbers on every claim',
+                                   'American Health Law Association ([bO0c-bD-CEA @ 00:13:15])'],
+                                  ['Volume is what buys manufacturer discounts',
+                                   'A 100-employee company with four insulin users gets no manufacturer '
+                                   'discount on its own',
+                                   'Small sponsors depend on pooled PBM purchasing power to access any '
+                                   'rebate at all',
+                                   'Tyler Dutchover ([ufeHEzWD1Cc @ 00:04:08])'],
+                                  ['Owned pharmacies capture the high margin',
+                                   'Integrated PBMs squeeze independents while steering high-margin '
+                                   'scripts into corporate-owned mail-order and specialty pharmacies',
+                                   'Mandatory mail-order or specialty pharmacy clauses signal the PBM is '
+                                   'capturing margin on both sides',
+                                   'Vault of Profit ([351RCg-LQ6I @ 00:10:04])'],
+                                  ['Specialty pharmacy is where the money concentrates',
+                                   '73 percent of prescription spend goes to specialty pharmacy, including '
+                                   'injectables, cancer pills and HIV pills',
+                                   'Point PBM scrutiny at specialty pricing before chasing small generic '
+                                   'savings',
+                                   'AHealthcareZ - Healthcare Finance Explained ([vT0NNXYjQ_Y @ '
+                                   '00:06:20])']]}},
+              {'number': 2,
+               'title': 'Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['Start with the brand rebate, because every speaker who runs the numbers '
+                              "lands on the same retention trick. Dr. Eric Bricker's illustrative case in "
+                              'AHealthcareZ: a $400 monthly brand, a $100 negotiated rebate, the PBM keeps '
+                              '$75 and tells the employer it secured a $25 rebate, which Bricker argues is '
+                              'really a commission dressed up as a discount [-xH2R8NZ4pU @ 00:13:37]. '
+                              'Bricker flags the figures as invented to show the principle, but the '
+                              'incentive holds: higher list prices mean bigger rebates and a bigger '
+                              'retained slice. Vault of Profit uses a $1,000 specialty carton: the '
+                              'manufacturer sends a $400 rebate per carton, the PBM announces it is '
+                              'passing 80 percent back, the employer receives $320 and the PBM keeps $80 '
+                              "as a rebate retention fee [351RCg-LQ6I @ 00:07:26]. Tyler Dutchover's "
+                              'insulin version shows the disclosure gap: the client is told it got a $50 '
+                              'rebate on a $300 drug, but the real check was $70 and the PBM quietly '
+                              'pocketed $20 [ufeHEzWD1Cc @ 00:07:26]. RxPreferred adds the '
+                              "formulary-exclusion angle: Tom's plan refuses a $20 generic antacid but "
+                              'covers $148 Nexium, the manufacturer pays a $50 rebate with $10 to the plan '
+                              'and $40 to the PBM, so the plan spends $138 instead of $20 [15IQO_jTMUM @ '
+                              '00:03:22]. Same structure, four price points.',
+                              'Spread is the second engine, and the numbers get sharper on generics. '
+                              'Bricker walks a generic with a $30 AWP: the PBM negotiates an 80 percent '
+                              'discount so the plan pays $6, pays the pharmacy a $2 maximum allowable cost '
+                              "(MAC), and keeps $4, while the pharmacy's actual acquisition cost, the "
+                              'NADAC, may be just 30 cents, leaving the pharmacy $1.70 [-xH2R8NZ4pU @ '
+                              "00:16:24]. Bricker's punchline: AWP, the anchor for that 80 percent "
+                              "discount, stands for 'ain't what's paid', a number two quiet companies "
+                              "arguably make up. RxPreferred's spread game is blunter: the PBM pays the "
+                              'pharmacy $10, invoices the plan $100 plus a $2 admin fee, and nets $92 on '
+                              'one fill without the client knowing [15IQO_jTMUM @ 00:01:17]. Vault of '
+                              'Profit runs it on the $1,000 specialty script: the patient pays a $30 '
+                              'copay, the PBM pays the pharmacy $850, bills the employer $940, and '
+                              'captures a $90 spread; stack the $80 rebate retention and a $5 admin fee '
+                              'and the PBM extracts $175 gross without touching the box [351RCg-LQ6I @ '
+                              "00:06:29]. Tyler Dutchover's insulin example: employer billed $250, "
+                              'pharmacy paid $200 take-it-or-leave-it under threat of network removal, a '
+                              '$50 spread on top of the $20 hidden rebate cut [ufeHEzWD1Cc @ 00:07:50].',
+                              "The third layer runs through owned pharmacies. RxPreferred's repackaging "
+                              'game: the PBM pulls the plan and the member into its mail-order pharmacy '
+                              'with deeper discounts, a waived admin fee and lower copays, then repackages '
+                              'the drug and assigns its own AWP. The Lipitor fill that costs AWP $441 '
+                              'minus 15 percent plus a $2 fee, $376.85, at retail becomes AWP $684 minus '
+                              '20 percent with no fee, $547.20, by mail, which RxPreferred calls '
+                              'technically legal but not ethical [15IQO_jTMUM @ 00:02:19]. Rujul Desai of '
+                              'Covington & Burling, on the American Health Law Association podcast, '
+                              'describes the specialty-pharmacy version: the PBM tells manufacturers to '
+                              'give larger discounts at its own pharmacy and lower rebates, because '
+                              'rebates must be passed along but pharmacy discounts stay with the owner '
+                              '[bO0c-bD-CEA @ 00:15:51]. Vault of Profit adds the back-end squeeze on '
+                              'independents: post-adjudication direct and indirect remuneration fees, '
+                              'where an automated audit months later claws back thousands from future '
+                              'remittances with no appeal, because the master contract was the only way to '
+                              'accept cards from 80 percent of the town [351RCg-LQ6I @ 00:10:55]. The '
+                              "counter-model SmithRx's Alan Pannier pitches is a PBM that owns no "
+                              'pharmacies or supply-chain assets and shows plan sponsors pharmacy '
+                              'contracts, manufacturer rebates and true drug cost through its Partner and '
+                              'Member Portals [KB9tHMlyhyA @ 00:00:55].'],
+               'table': {'caption': 'PBM profit levers with the exact worked numbers practitioners use',
+                         'headers': ['Profit Lever', 'Worked Numbers', 'Where It Hides', 'Expert Source'],
+                         'rows': [['Brand rebate retention on a specialty carton',
+                                   '$400 rebate per $1,000 carton, 80 percent passed back: employer gets '
+                                   '$320, PBM keeps $80',
+                                   'Retention is labeled a fee while the PBM advertises its generous '
+                                   'pass-through percentage',
+                                   'Vault of Profit ([351RCg-LQ6I @ 00:07:26])'],
+                                  ['Generic spread on the MAC price',
+                                   '$30 AWP, 80 percent discount, plan pays $6, pharmacy gets $2, NADAC '
+                                   'about 30 cents',
+                                   "The AWP benchmark is 'ain't what's paid', so the headline discount "
+                                   'looks enormous',
+                                   'AHealthcareZ - Healthcare Finance Explained ([-xH2R8NZ4pU @ '
+                                   '00:16:24])'],
+                                  ['Invoice spread game on a single fill',
+                                   'PBM pays the pharmacy $10, invoices the plan $100 plus a $2 fee, nets '
+                                   '$92',
+                                   "The PBM represents the pharmacy payment as $100 without the client's "
+                                   'awareness',
+                                   'RxPreferred ([15IQO_jTMUM @ 00:01:17])'],
+                                  ['Mail-order repackaging and repricing',
+                                   'Lipitor at retail $376.85 versus $547.20 after mail-order repackaging '
+                                   'under a new AWP',
+                                   'The PBM assigns its own AWP with no obligation to inform the health '
+                                   'plan',
+                                   'RxPreferred ([15IQO_jTMUM @ 00:02:19])'],
+                                  ['Manufacturer payments outside the rebate',
+                                   'Formulary payments, market penetration payments and bonus payments on '
+                                   'top of the rebate itself',
+                                   'A 100 percent transparent rebate clause can still miss every one of '
+                                   'these payments',
+                                   'AHealthcareZ - Healthcare Finance Explained ([vT0NNXYjQ_Y @ '
+                                   '00:03:46])'],
+                                  ['Hidden rebate cut plus spread on one script',
+                                   '$70 real rebate with $50 disclosed; $250 billed to employer, $200 paid '
+                                   'to pharmacy',
+                                   'Separate employer and pharmacy contracts that neither side is allowed '
+                                   'to see',
+                                   'Tyler Dutchover ([ufeHEzWD1Cc @ 00:07:39])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'How Practitioners Pry Open the PBM Black Box',
+                           'body': 'These are the specific questions, contract reads and structural moves '
+                                   'the speakers use to find where the spread and retained rebates are '
+                                   'hiding.',
+                           'items': ['Ask the transparency question that actually matters: does the PBM '
+                                     'have another customer besides the health plan? Demand disclosure of '
+                                     'market share and bonus payments, not just rebates [AHealthcareZ - '
+                                     'Healthcare Finance Explained — vT0NNXYjQ_Y @ 00:04:07].',
+                                     "Read how 'rebate' is defined in any pass-through clause; Desai warns "
+                                     'the definition has been narrowed over the years to create other '
+                                     'pockets of revenue that escape a pass-through requirement [American '
+                                     'Health Law Association — bO0c-bD-CEA @ 00:14:31].',
+                                     'If you are self-funded, carve out the PBM: fully insured plans are '
+                                     "locked to the carrier's PBM, but self-funded sponsors run "
+                                     'UnitedHealthcare medical with CVS Caremark or Express Scripts, or '
+                                     'use a smaller PBM [AHealthcareZ - Healthcare Finance Explained — '
+                                     '-xH2R8NZ4pU @ 00:12:22].',
+                                     'Attack the formulary itself: target heavily advertised, low-efficacy '
+                                     'drugs and move to evidence-proven medications that cost a fraction '
+                                     'because they do not pay for Super Bowl ads [Benefits On The Fly — '
+                                     '0ga6iJF0H1I @ 00:02:12].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Map the seven players and both flows',
+                              'action': 'Draw plan sponsor, plan, PBM, manufacturer, wholesaler, pharmacy '
+                                        'and patient, then trace money one way and drugs the other.',
+                              'detail': "Bricker's standard is that a benefits operator can reproduce the "
+                                        'PBM money-flow chart on a napkin and explain it in plain English '
+                                        'before negotiating anything [AHealthcareZ - Healthcare Finance '
+                                        'Explained — vT0NNXYjQ_Y @ 00:01:08].'},
+                             {'step': 2,
+                              'title': 'Demand full manufacturer-payment disclosure',
+                              'action': 'Require the PBM to disclose rebates plus formulary, market '
+                                        'penetration and bonus payments, and push for 100 percent '
+                                        'pass-through.',
+                              'detail': "Benefits On The Fly's first move is partnering with a transparent "
+                                        'PBM that passes 100 percent of manufacturer rebates and discounts '
+                                        'to the plan sponsor, then using fee-discovery tools to surface '
+                                        'what clients actually pay [Benefits On The Fly — 0ga6iJF0H1I @ '
+                                        '00:01:57].'},
+                             {'step': 3,
+                              'title': 'Audit billed price against pharmacy paid price',
+                              'action': 'Ask for what the PBM paid the pharmacy versus what it charged the '
+                                        'plan, and benchmark generics against MAC and NADAC instead of '
+                                        'AWP.',
+                              'detail': 'Expect resistance: Dutchover reports PBMs can simply refuse, '
+                                        'having written clauses calling the real drug cost a confidential '
+                                        'trade secret, which is itself the signal that spread is in play '
+                                        '[Tyler Dutchover — ufeHEzWD1Cc @ 00:09:52].'},
+                             {'step': 4,
+                              'title': 'Restructure toward specialty control and flat fees',
+                              'action': 'Concentrate on specialty spend and move to models with zero '
+                                        'spread, zero retained rebates and flat per-script admin fees.',
+                              'detail': 'Vault of Profit reports new competitors promising zero spread '
+                                        'pricing, zero retained rebates and flat $5 administrative fees '
+                                        'per script, the exact model large employers are defecting toward '
+                                        '[Vault of Profit — 351RCg-LQ6I @ 00:12:47].'}]},
+              {'heading': 'Section 3: Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The first fault line is whether the PBM toll is worth paying at all. STAT '
+                              'frames two camps directly: PBMs work with hospitals and insurers, carry a '
+                              'lot of people to negotiate for, and can push better prices for everybody, '
+                              'yet nobody outside the deal knows how much of the rebate reaches the '
+                              'consumer and the PBM could be pocketing a larger share [27INQuNycLA @ '
+                              '00:02:47]. KFF Health News lands on a blunt yes and no: PBMs have helped '
+                              'keep some drug prices and premiums lower, but consumers do not see the '
+                              'savings directly, may be limited in drug choice, and prices for some drugs '
+                              'keep going up [P21Zb_OySIg @ 00:03:28]. Audio Articles adds the strongest '
+                              'pro-PBM data point, reporting that the Centers for Medicare and Medicaid '
+                              'Services found larger negotiated rebates helped lower drug prices and slow '
+                              'spending growth over the last three years, while still flagging the '
+                              'percentage-of-list incentive [Cyz7QbHNjKc @ 00:01:17]. Benefits On The Fly '
+                              'takes the hard opposite line for employers: PBMs are just middlemen that '
+                              'evolved into major players profiting at your expense, and businesses with '
+                              'the right strategy are cutting pharmacy expenses by 30 to sometimes 50 '
+                              'percent [0ga6iJF0H1I @ 00:01:40]. Operators should treat the savings pitch '
+                              'and the extraction pitch as two sides they must price, not pick on faith.',
+                              'The pass-through numbers themselves do not agree. Dr. Eric Bricker of '
+                              'AHealthcareZ pegs the share of manufacturer rebates passed to the plan at '
+                              'roughly 55 to 80 percent, with the PBM keeping 20 to 45 percent, and warns '
+                              'the manufacturer also pays formulary, market penetration and bonus payments '
+                              'outside the rebate line [vT0NNXYjQ_Y @ 00:03:31]. Audio Articles cites a '
+                              'study showing pass-through rising from 78 percent in 2012 to 91 percent in '
+                              '2016, then immediately notes many small insurers and employers say they do '
+                              'not receive that share [Cyz7QbHNjKc @ 00:03:06]. Vault of Profit models an '
+                              '80 percent pass-through on a $400 rebate, which still leaves the PBM $80 '
+                              'retained per carton before spread and admin fees are counted [351RCg-LQ6I @ '
+                              '00:07:26]. The American Health Law Association panel explains why headline '
+                              'percentages mislead: Rujul Desai describes a narrowing and narrowing of the '
+                              'definition of rebate to create other pockets of revenue, so even a 100 '
+                              'percent pass-through mandate turns on how rebate gets defined [bO0c-bD-CEA '
+                              '@ 00:14:31]. The playbook split is clear: one camp audits the rebate '
+                              'percentage, the other audits every manufacturer payment stream, including '
+                              'discounts booked at a PBM-owned specialty pharmacy.',
+                              'The biggest structural argument is whether to stay bundled, carve out, or '
+                              'go with a transparent independent. AHealthcareZ notes that if you are fully '
+                              'insured your PBM is tied to your carrier, but a self-funded plan can carve '
+                              "out the PBM, use a small independent, or even run a competing insurer's "
+                              'PBM, such as UnitedHealthcare medical with CVS Caremark or Express Scripts '
+                              'pharmacy [-xH2R8NZ4pU @ 00:12:22]. On specialty carve-outs, Bricker calls '
+                              'the question highly controversial, pointing to an OptumRx paper arguing a '
+                              'specialty carve-out PBM is a bad idea against a Pfizer presentation to the '
+                              'Dallas Fort Worth Business Group on Health arguing it is a good one '
+                              "[vT0NNXYjQ_Y @ 00:08:30]. SmithRx's Alan Pannier argues the opposite of "
+                              'scale-through-ownership: SmithRx owns no pharmacies or supply chain assets, '
+                              'which the company frames as what aligns incentives with plan sponsors and '
+                              'patients [KB9tHMlyhyA @ 00:00:55]. Vault of Profit argues the economics run '
+                              'the other way for anyone building a PBM, insisting you need at least 5 '
+                              'million covered lives before negotiating your first rebate contract and '
+                              'your own mail order and specialty network to capture the therapies driving '
+                              '70 percent of pharmacy spend [351RCg-LQ6I @ 00:16:01].'],
+               'table': {'caption': 'Practitioner Splits on PBM Value, Pass-Through, Structure and Reform',
+                         'headers': ['Dispute', 'Camp A Position', 'Camp B Position', 'Expert Source'],
+                         'rows': [['Does PBM purchasing power actually lower prices?',
+                                   'Scale lets PBMs negotiate better prices for certain drugs for '
+                                   'everybody',
+                                   'Opaque rebates mean nobody knows how much reaches the consumer',
+                                   'STAT ([27INQuNycLA @ 00:02:47]); Audio Articles ([Cyz7QbHNjKc @ '
+                                   '00:01:17])'],
+                                  ['How much rebate actually passes through to plans',
+                                   'Study shows pass-through rising from 78 percent to 91 percent by 2016',
+                                   'Estimate of 55 to 80 percent passed while PBM keeps 20 to 45 percent',
+                                   'Audio Articles ([Cyz7QbHNjKc @ 00:03:06]); AHealthcareZ - Healthcare '
+                                   'Finance Explained ([vT0NNXYjQ_Y @ 00:03:31])'],
+                                  ['Specialty pharmacy carve-out PBM for self-funded employers',
+                                   'Pfizer presentation to self-funded employers argues the carve-out is a '
+                                   'good idea',
+                                   'OptumRx paper argues a specialty pharmacy carve-out PBM is a bad idea',
+                                   'AHealthcareZ - Healthcare Finance Explained ([vT0NNXYjQ_Y @ '
+                                   '00:08:30])'],
+                                  ['Owning pharmacies versus staying asset-free as a PBM',
+                                   'SmithRx owns no pharmacies so incentives align with plan sponsors and '
+                                   'patients',
+                                   'Builders need proprietary mail order and specialty networks to capture '
+                                   'high-margin therapies',
+                                   'SmithRx ([KB9tHMlyhyA @ 00:00:55]); Vault of Profit ([351RCg-LQ6I @ '
+                                   '00:16:36])'],
+                                  ['Which reform actually fixes PBM economics the fastest',
+                                   'Transparency has the most bipartisan support and is likeliest to pass '
+                                   'this fall',
+                                   'Transparency alone is a very skinny win; delinking fees from drug '
+                                   'price is transformative',
+                                   'American Health Law Association ([bO0c-bD-CEA @ 00:11:31]); American '
+                                   'Health Law Association ([bO0c-bD-CEA @ 00:15:01])'],
+                                  ['Imposing a fiduciary duty on PBMs for plan enrollees',
+                                   'Employers want PBMs held to a best-interest standard like plan '
+                                   'fiduciaries are',
+                                   'Full ERISA fiduciary standard may be a bridge too far; light '
+                                   'self-dealing rules instead',
+                                   'American Health Law Association ([bO0c-bD-CEA @ 00:18:44]); American '
+                                   'Health Law Association ([bO0c-bD-CEA @ 00:21:24])'],
+                                  ['State laws reining in PBM pharmacy network design',
+                                   'Florida plan bans mandated mail order and preserves the community '
+                                   'pharmacist choice',
+                                   'Tenth Circuit held Oklahoma network rules preempted by ERISA in PCMA '
+                                   'versus Mulready',
+                                   'FOX 35 Orlando ([cPJFKseasX0 @ 00:01:02]); American Health Law '
+                                   'Association ([bO0c-bD-CEA @ 00:26:49])']]}},
+              {'heading': 'Section 4: Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The most repeated firsthand trap is paying a fictitious price. RxPreferred '
+                              "walks through Tom's fill: the PBM paid the pharmacy $10, invoiced the plan "
+                              '$100 plus a $2 admin fee, so the plan paid $112 and the PBM kept $92 '
+                              "without its client's awareness [15IQO_jTMUM @ 00:01:17]. AHealthcareZ shows "
+                              'the generic version: a $30 AWP discounted 80 percent looks like a $6 win, '
+                              'but the PBM pays the pharmacy a $2 maximum allowable cost and the national '
+                              'average drug acquisition cost is 30 cents, which is why insiders say AWP '
+                              "stands for ain't what's paid [-xH2R8NZ4pU @ 00:16:24]. Vault of Profit runs "
+                              'the brand math on a $1,000 list specialty carton: the employer is billed '
+                              '$940, the pharmacy gets $850, and the $90 gap is spread taken with zero '
+                              'additional labor [351RCg-LQ6I @ 00:06:06]. Tyler Dutchover adds the insulin '
+                              'case where the employer is charged $250, the pharmacy is told to take $200 '
+                              'or leave the network, and the PBM pockets $50 on top of a $20 rebate skim, '
+                              "because neither side can see the other's contract [ufeHEzWD1Cc @ 00:07:39]. "
+                              'The check is simple: demand the pharmacy-paid amount per claim, not the AWP '
+                              'discount.',
+                              'The rebate engine fails the payer by rewarding the expensive drug. '
+                              "RxPreferred's rebate game has Tom's plan refusing a $20 generic antacid but "
+                              'covering $148 Nexium; of a $50 manufacturer rebate, $10 goes to the plan '
+                              'and $40 returns to the PBM, so the plan spends $138 instead of $20 '
+                              '[15IQO_jTMUM @ 00:03:03]. AHealthcareZ calls the structure what it is: on a '
+                              '$400 brand with a $100 rebate, a PBM that keeps $75 and passes $25 is '
+                              'collecting a commission, which means it wants more prescriptions of '
+                              'higher-cost drugs and wants prices to go up [-xH2R8NZ4pU @ 00:13:37]. Tyler '
+                              'Dutchover plays the former drug company CEO testifying before Congress that '
+                              'bringing a product with a low list price gets you punished financially with '
+                              'no uptake, because everyone in the supply chain makes money on a higher '
+                              'list price [ufeHEzWD1Cc @ 00:08:46]. CancerCare spells out who eats it: the '
+                              'list price at the counter is often far higher than what the PBM or plan '
+                              'pays after rebates, which drives the copay and the out-of-pocket hit on '
+                              'high-deductible plans [f8oI5KtxoXM @ 00:02:31]. The economics check is net '
+                              'cost after rebate per therapeutic class, not the size of the rebate check.',
+                              "The third trap lives in PBM-owned pharmacies. RxPreferred's repackaging "
+                              'game lures plan and member into mail order with deeper discounts and waived '
+                              'copays, then reassigns its own AWP: Lipitor at retail runs AWP $441 less 15 '
+                              'percent plus a $2 fee for $376.85, while repackaged mail order runs AWP '
+                              '$684 less 20 percent for $547.20 [15IQO_jTMUM @ 00:02:01]. The National '
+                              "Community Pharmacists Association's fill-my-pockets PBM character brags "
+                              'about forcing patients into a mail order pharmacy the PBM owns, lousy '
+                              'service or not, and says not even your pharmacist can do anything about it '
+                              '[lbfUr3FiuyU @ 00:01:40]. Rujul Desai of the American Health Law '
+                              'Association flags the self-dealing play: a PBM tells manufacturers to give '
+                              'larger discounts at its own specialty pharmacy and lower rebates, because '
+                              'rebates must be passed along but pharmacy discounts are kept [bO0c-bD-CEA @ '
+                              '00:15:51]. Vault of Profit describes the pharmacy-side kill shot, '
+                              'retroactive direct and indirect remuneration fees clawed back months after '
+                              'dispensing through automated audits, with no court of appeal and no '
+                              'alternative network [351RCg-LQ6I @ 00:10:55]. Any model that routes '
+                              'specialty volume through an affiliated pharmacy needs a per-claim price '
+                              'comparison against retail before signing.'],
+               'table': {'caption': 'Documented PBM Failure Modes and the Economics Check for Each',
+                         'headers': ['Failure Mode', 'What Happened', 'Economics Check', 'Expert Source'],
+                         'rows': [['Spread pricing on a brand specialty claim',
+                                   'Employer billed $940 while the pharmacy was paid only $850 per carton',
+                                   'Reconcile the employer invoice against pharmacy reimbursement on every '
+                                   'single claim',
+                                   'Vault of Profit ([351RCg-LQ6I @ 00:06:29])'],
+                                  ['Generic spread hidden behind steep AWP discounts',
+                                   'Plan paid $6 monthly while pharmacy acquisition cost was only 30 cents',
+                                   'Price generics against the MAC and NADAC, never against the AWP number',
+                                   'AHealthcareZ - Healthcare Finance Explained ([-xH2R8NZ4pU @ '
+                                   '00:17:00])'],
+                                  ['Mail order repackaging with a reassigned AWP',
+                                   'Repackaged Lipitor costs $547.20 versus $376.85 at a local retail '
+                                   'pharmacy',
+                                   'Compare mail order net cost to retail before accepting waived admin '
+                                   'fees',
+                                   'RxPreferred ([15IQO_jTMUM @ 00:02:19])'],
+                                  ['Mail order waste from PBM-owned pharmacies',
+                                   'PBM-owned mail order keeps shipping unwanted or unnecessary '
+                                   'medications to members',
+                                   'Audit refill volume coming out of PBM-owned mail order pharmacies',
+                                   'RxPreferred ([15IQO_jTMUM @ 00:04:03])'],
+                                  ["Contract confidentiality blocks the employer's own audit",
+                                   'PBM refuses to show what it paid the pharmacy, citing trade secrets',
+                                   'Employers flying blind may pay more despite receiving rebate checks',
+                                   'Tyler Dutchover ([ufeHEzWD1Cc @ 00:09:52])'],
+                                  ['Retroactive DIR clawbacks hitting independent pharmacies',
+                                   'Automated audits claw back thousands months after the medication was '
+                                   'dispensed',
+                                   'Independents have no appeal and no alternative network to join',
+                                   'Vault of Profit ([351RCg-LQ6I @ 00:11:14])'],
+                                  ['Prior authorization and step therapy delaying patient treatment',
+                                   'Fail-first protocols and prior authorization delay treatment and limit '
+                                   'drug access',
+                                   'Appeal every denial; patients are often successful getting denials '
+                                   'overturned',
+                                   'CancerCare ([f8oI5KtxoXM @ 00:03:45]); CancerCare ([f8oI5KtxoXM @ '
+                                   '00:05:31])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Four Pre-Signature Kill Checks',
+                           'body': 'Run these before any PBM contract or renewal. Each one maps to a loss '
+                                   'a practitioner documented on a real claim, rebate or contract clause.',
+                           'items': ['Demand the actual pharmacy-paid amount next to the plan-billed '
+                                     'amount on every claim; the $10 paid versus $100 billed case shows '
+                                     'what an AWP-only invoice hides [RxPreferred — 15IQO_jTMUM @ '
+                                     '00:01:17].',
+                                     'Ask whether the PBM has another customer besides the health plan, '
+                                     'and get formulary, market share and bonus payments disclosed, not '
+                                     'just rebates [AHealthcareZ - Healthcare Finance Explained — '
+                                     'vT0NNXYjQ_Y @ 00:04:07].',
+                                     'Lock the contract definition of rebate to include all discounts and '
+                                     'amounts based on a percentage of drug cost, because a narrowed '
+                                     'definition creates new revenue pockets [American Health Law '
+                                     'Association — bO0c-bD-CEA @ 00:14:31].',
+                                     'Strike any clause calling real drug costs confidential trade '
+                                     'secrets; if the PBM can refuse to show the receipts, assume you are '
+                                     'paying more than needed [Tyler Dutchover — ufeHEzWD1Cc @ '
+                                     '00:09:52].']}}],
+ 'pull_quote': "An inside joke in the PBM world is AWP stands for ain't what's paid, so arguably the PBMs "
+               'are negotiating a discount off of a fictitious price to begin with. — AHealthcareZ - '
+               'Healthcare Finance Explained (-xH2R8NZ4pU @ 00:18:10).',
+ 'diagram_id': 'diag-05',
+ 'action_checklist': ['Learn the seven-player money flow cold, plan sponsor, health plan, PBM, '
+                      'manufacturer, wholesaler, pharmacy and patient, until you can redraw it on a napkin '
+                      '(AHealthcareZ - Healthcare Finance Explained, vT0NNXYjQ_Y @ 00:00:50).',
+                      'If self-funded, carve the PBM out of the medical carrier and bid small independents '
+                      "or a competing insurer's PBM (AHealthcareZ - Healthcare Finance Explained, "
+                      '-xH2R8NZ4pU @ 00:12:22).',
+                      'Partner with a transparent PBM that passes 100 percent of manufacturer rebates and '
+                      'discounts to the plan sponsor, and run fee-discovery tools to surface hidden PBM '
+                      'fees (Benefits On The Fly, 0ga6iJF0H1I @ 00:01:57).',
+                      'Push for a flat, non-percentage fee per claim so PBM compensation is delinked from '
+                      'drug price, rebate retention and spread (American Health Law Association, '
+                      'bO0c-bD-CEA @ 00:16:42).',
+                      'Audit the formulary for low-efficacy, heavily advertised drugs and steer to '
+                      'evidence-proven medications that cost a fraction as much (Benefits On The Fly, '
+                      '0ga6iJF0H1I @ 00:02:12).',
+                      'Check generic cash prices against the copay, since a $1.80 cash cream beat a $10 '
+                      'copay, and use first-line generics like methotrexate before jumping to specialty '
+                      'drugs (AHealthcareZ - Healthcare Finance Explained, -xH2R8NZ4pU @ 00:04:25).'],
+ 'statutory_citations': [{'title': 'AHealthcareZ - Healthcare Finance Explained — How Prescription Drug '
+                                   'Coverage Works: Formulary Tiers, PBM, Rebates, Spread-Pricing '
+                                   'Explained [00:13:16]',
+                          'url': 'https://www.youtube.com/watch?v=-xH2R8NZ4pU&t=796s',
+                          'relevance': 'Primary practitioner testimony on rebate commissions, MAC versus '
+                                       'NADAC spread pricing and the AWP fiction.'},
+                         {'title': 'Vault of Profit — The Economics of Owning a Pharmacy Benefit Manager '
+                                   'PBM [00:06:06]',
+                          'url': 'https://www.youtube.com/watch?v=351RCg-LQ6I&t=366s',
+                          'relevance': 'Primary practitioner testimony on per-claim spread, rebate '
+                                       'retention, DIR clawbacks and PBM unit economics.'},
+                         {'title': 'RxPreferred — Pharmacy Benefit Manager (PBM) Games [00:01:17]',
+                          'url': 'https://www.youtube.com/watch?v=15IQO_jTMUM&t=77s',
+                          'relevance': 'Primary practitioner testimony on the spread, repackaging, rebate '
+                                       'and mail order waste games.'},
+                         {'title': 'American Health Law Association — The Evolving Landscape of the PBM '
+                                   'Industry [00:10:58]',
+                          'url': 'https://www.youtube.com/watch?v=bO0c-bD-CEA&t=658s',
+                          'relevance': 'Primary practitioner testimony on reform themes, rebate definition '
+                                       'games, self-dealing and ERISA preemption.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': '27INQuNycLA',
+                       'title': 'How pharmacy benefit managers influence drug pricing',
+                       'channel': 'STAT',
+                       'author': 'STAT',
+                       'text': "There's not a lot of transparency in the relationship between drugmakers "
+                               "and PBMs, so we often don't know how much the actual rebates are.",
+                       'tip': "There's not a lot of transparency in the relationship between drugmakers "
+                              "and PBMs, so we often don't know how much the actual rebates are.",
+                       'timestamp': 167,
+                       'timestamp_seconds': 167,
+                       'timestamp_label': '[00:02:47]',
+                       'url': 'https://www.youtube.com/watch?v=27INQuNycLA&t=167s',
+                       'markdown': '[00:02:47](https://www.youtube.com/watch?v=27INQuNycLA&t=167s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'vT0NNXYjQ_Y',
+                       'title': 'Pharmacy Benefit Managers (PBMs) Explained - Learn How the Money Flows',
+                       'channel': 'AHealthcareZ - Healthcare Finance Explained',
+                       'author': 'AHealthcareZ - Healthcare Finance Explained',
+                       'text': 'The payment from the drug manufacturer is quote-unquote a rebate, some of '
+                               "which, let's just call it 55 to 80 percent, then gets passed on to the "
+                               'plan, but then they keep the difference.',
+                       'tip': 'The payment from the drug manufacturer is quote-unquote a rebate, some of '
+                              "which, let's just call it 55 to 80 percent, then gets passed on to the "
+                              'plan, but then they keep the difference.',
+                       'timestamp': 211,
+                       'timestamp_seconds': 211,
+                       'timestamp_label': '[00:03:31]',
+                       'url': 'https://www.youtube.com/watch?v=vT0NNXYjQ_Y&t=211s',
+                       'markdown': '[00:03:31](https://www.youtube.com/watch?v=vT0NNXYjQ_Y&t=211s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'lbfUr3FiuyU',
+                       'title': 'What is a Pharmacy Benefit Manager (PBM)? -- Longer version',
+                       'channel': 'National Community Pharmacists Association',
+                       'author': 'National Community Pharmacists Association',
+                       'text': 'The script scam is where I charge you and your health insurance plan a lot '
+                               'more for the drugs you need than I pay the pharmacy where you get them.',
+                       'tip': 'The script scam is where I charge you and your health insurance plan a lot '
+                              'more for the drugs you need than I pay the pharmacy where you get them.',
+                       'timestamp': 61,
+                       'timestamp_seconds': 61,
+                       'timestamp_label': '[00:01:01]',
+                       'url': 'https://www.youtube.com/watch?v=lbfUr3FiuyU&t=61s',
+                       'markdown': '[00:01:01](https://www.youtube.com/watch?v=lbfUr3FiuyU&t=61s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '5rw4kNHNZyk',
+                       'title': '30 Days of US Healthcare: Pharmacy Benefit Managers',
+                       'channel': 'Dr. Glaucomflecken',
+                       'author': 'Dr. Glaucomflecken',
+                       'text': "We go by Optum but it's all United Healthcare, and we have our own "
+                               'pharmacy, Optum Rx, and all our customers have to use it.',
+                       'tip': "We go by Optum but it's all United Healthcare, and we have our own "
+                              'pharmacy, Optum Rx, and all our customers have to use it.',
+                       'timestamp': 82,
+                       'timestamp_seconds': 82,
+                       'timestamp_label': '[00:01:22]',
+                       'url': 'https://www.youtube.com/watch?v=5rw4kNHNZyk&t=82s',
+                       'markdown': '[00:01:22](https://www.youtube.com/watch?v=5rw4kNHNZyk&t=82s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'P21Zb_OySIg',
+                       'title': 'Pharmacy Benefit Managers: Companies In The Thick Of Prescription Drug '
+                                'Pricing',
+                       'channel': 'KFF Health News',
+                       'author': 'KFF Health News',
+                       'text': 'PBMs insist that they pass most of the rebate savings onto their clients, '
+                               'but they keep the actual numbers a trade secret.',
+                       'tip': 'PBMs insist that they pass most of the rebate savings onto their clients, '
+                              'but they keep the actual numbers a trade secret.',
+                       'timestamp': 164,
+                       'timestamp_seconds': 164,
+                       'timestamp_label': '[00:02:44]',
+                       'url': 'https://www.youtube.com/watch?v=P21Zb_OySIg&t=164s',
+                       'markdown': '[00:02:44](https://www.youtube.com/watch?v=P21Zb_OySIg&t=164s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'f8oI5KtxoXM',
+                       'title': 'What is a Pharmacy Benefit Manager (PBM)?',
+                       'channel': 'CancerCare',
+                       'author': 'CancerCare',
+                       'text': 'Step therapy is also known as a fail first protocol because it forces you '
+                               'to first try one or more lower tier treatments on the formulary to save '
+                               'the plan money.',
+                       'tip': 'Step therapy is also known as a fail first protocol because it forces you '
+                              'to first try one or more lower tier treatments on the formulary to save the '
+                              'plan money.',
+                       'timestamp': 225,
+                       'timestamp_seconds': 225,
+                       'timestamp_label': '[00:03:45]',
+                       'url': 'https://www.youtube.com/watch?v=f8oI5KtxoXM&t=225s',
+                       'markdown': '[00:03:45](https://www.youtube.com/watch?v=f8oI5KtxoXM&t=225s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'KB9tHMlyhyA',
+                       'title': 'Modern PBM 101 with Alan Pannier, PharmD, MBA: Transparency',
+                       'channel': 'SmithRx',
+                       'author': 'SmithRx',
+                       'text': 'At SmithRx, we do not own any pharmacies or assets across the supply '
+                               'chain, which we feel is an important capability for PBMs to align their '
+                               'incentives with the plan sponsors and patients that they serve.',
+                       'tip': 'At SmithRx, we do not own any pharmacies or assets across the supply chain, '
+                              'which we feel is an important capability for PBMs to align their incentives '
+                              'with the plan sponsors and patients that they serve.',
+                       'timestamp': 55,
+                       'timestamp_seconds': 55,
+                       'timestamp_label': '[00:00:55]',
+                       'url': 'https://www.youtube.com/watch?v=KB9tHMlyhyA&t=55s',
+                       'markdown': '[00:00:55](https://www.youtube.com/watch?v=KB9tHMlyhyA&t=55s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'bO0c-bD-CEA',
+                       'title': 'The Evolving Landscape of the PBM Industry',
+                       'channel': 'American Health Law Association',
+                       'author': 'American Health Law Association',
+                       'text': 'Spread pricing is where PBMs charge the plan more than what the PBM pays '
+                               'the pharmacy for a prescription drug, and then the PBM is able to keep the '
+                               'difference.',
+                       'tip': 'Spread pricing is where PBMs charge the plan more than what the PBM pays '
+                              'the pharmacy for a prescription drug, and then the PBM is able to keep the '
+                              'difference.',
+                       'timestamp': 795,
+                       'timestamp_seconds': 795,
+                       'timestamp_label': '[00:13:15]',
+                       'url': 'https://www.youtube.com/watch?v=bO0c-bD-CEA&t=795s',
+                       'markdown': '[00:13:15](https://www.youtube.com/watch?v=bO0c-bD-CEA&t=795s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'bO0c-bD-CEA',
+                       'title': 'The Evolving Landscape of the PBM Industry',
+                       'channel': 'American Health Law Association',
+                       'author': 'American Health Law Association',
+                       'text': "There shouldn't be any ability for a PBM to link their financial rewards "
+                               'to a percentage of a drug price or a margin, but instead there should just '
+                               "be a flat fee or a non-percentage based fee for the activity they're "
+                               'doing.',
+                       'tip': "There shouldn't be any ability for a PBM to link their financial rewards to "
+                              'a percentage of a drug price or a margin, but instead there should just be '
+                              "a flat fee or a non-percentage based fee for the activity they're doing.",
+                       'timestamp': 1002,
+                       'timestamp_seconds': 1002,
+                       'timestamp_label': '[00:16:42]',
+                       'url': 'https://www.youtube.com/watch?v=bO0c-bD-CEA&t=1002s',
+                       'markdown': '[00:16:42](https://www.youtube.com/watch?v=bO0c-bD-CEA&t=1002s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '3cUGL3xTK7E',
+                       'title': 'What is a PBM? (Long)',
+                       'channel': 'SmithRx',
+                       'author': 'SmithRx',
+                       'text': "Employers often can't clearly see how legacy PBMs set drug prices or where "
+                               'their money actually goes, which makes it nearly impossible to know if '
+                               "they're getting a fair deal.",
+                       'tip': "Employers often can't clearly see how legacy PBMs set drug prices or where "
+                              'their money actually goes, which makes it nearly impossible to know if '
+                              "they're getting a fair deal.",
+                       'timestamp': 75,
+                       'timestamp_seconds': 75,
+                       'timestamp_label': '[00:01:15]',
+                       'url': 'https://www.youtube.com/watch?v=3cUGL3xTK7E&t=75s',
+                       'markdown': '[00:01:15](https://www.youtube.com/watch?v=3cUGL3xTK7E&t=75s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '15IQO_jTMUM',
+                       'title': 'Pharmacy Benefit Manager (PBM) Games',
+                       'channel': 'RxPreferred',
+                       'author': 'RxPreferred',
+                       'text': 'Your PBM paid a total of $10, however your PBM invoice reflects a $100 '
+                               'charge for that same drug in addition to its $2 administrative fee, '
+                               'resulting in a net of $92 retained by the PBM.',
+                       'tip': 'Your PBM paid a total of $10, however your PBM invoice reflects a $100 '
+                              'charge for that same drug in addition to its $2 administrative fee, '
+                              'resulting in a net of $92 retained by the PBM.',
+                       'timestamp': 77,
+                       'timestamp_seconds': 77,
+                       'timestamp_label': '[00:01:17]',
+                       'url': 'https://www.youtube.com/watch?v=15IQO_jTMUM&t=77s',
+                       'markdown': '[00:01:17](https://www.youtube.com/watch?v=15IQO_jTMUM&t=77s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '-xH2R8NZ4pU',
+                       'title': 'How Prescription Drug Coverage Works: Formulary Tiers, PBM, Rebates, '
+                                'Spread-Pricing Explained',
+                       'channel': 'AHealthcareZ - Healthcare Finance Explained',
+                       'author': 'AHealthcareZ - Healthcare Finance Explained',
+                       'text': "An inside joke in the PBM world is AWP stands for ain't what's paid, so "
+                               'arguably the PBMs are negotiating a discount off of a fictitious price to '
+                               'begin with.',
+                       'tip': "An inside joke in the PBM world is AWP stands for ain't what's paid, so "
+                              'arguably the PBMs are negotiating a discount off of a fictitious price to '
+                              'begin with.',
+                       'timestamp': 1090,
+                       'timestamp_seconds': 1090,
+                       'timestamp_label': '[00:18:10]',
+                       'url': 'https://www.youtube.com/watch?v=-xH2R8NZ4pU&t=1090s',
+                       'markdown': '[00:18:10](https://www.youtube.com/watch?v=-xH2R8NZ4pU&t=1090s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'cPJFKseasX0',
+                       'title': 'What pharmacy benefit managers?',
+                       'channel': 'FOX 35 Orlando',
+                       'author': 'FOX 35 Orlando',
+                       'text': "The state's plan includes prohibiting PBMs from mandating mail order "
+                               "pharmacies for patients and preserves patients' ability to use their own "
+                               'community pharmacist.',
+                       'tip': "The state's plan includes prohibiting PBMs from mandating mail order "
+                              "pharmacies for patients and preserves patients' ability to use their own "
+                              'community pharmacist.',
+                       'timestamp': 62,
+                       'timestamp_seconds': 62,
+                       'timestamp_label': '[00:01:02]',
+                       'url': 'https://www.youtube.com/watch?v=cPJFKseasX0&t=62s',
+                       'markdown': '[00:01:02](https://www.youtube.com/watch?v=cPJFKseasX0&t=62s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '351RCg-LQ6I',
+                       'title': 'The Economics of Owning a Pharmacy Benefit Manager PBM',
+                       'channel': 'Vault of Profit',
+                       'author': 'Vault of Profit',
+                       'text': 'The benefit manager billed the employer $940 but paid the dispensing '
+                               'pharmacy only $850, and that $90 gap is what the industry calls spread '
+                               'pricing.',
+                       'tip': 'The benefit manager billed the employer $940 but paid the dispensing '
+                              'pharmacy only $850, and that $90 gap is what the industry calls spread '
+                              'pricing.',
+                       'timestamp': 366,
+                       'timestamp_seconds': 366,
+                       'timestamp_label': '[00:06:06]',
+                       'url': 'https://www.youtube.com/watch?v=351RCg-LQ6I&t=366s',
+                       'markdown': '[00:06:06](https://www.youtube.com/watch?v=351RCg-LQ6I&t=366s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '351RCg-LQ6I',
+                       'title': 'The Economics of Owning a Pharmacy Benefit Manager PBM',
+                       'channel': 'Vault of Profit',
+                       'author': 'Vault of Profit',
+                       'text': 'Months after the medication has been swallowed by the patient, the benefit '
+                               'manager conducts an automated audit and automatically claws back thousands '
+                               "of dollars directly from the pharmacy's future electronic remittances.",
+                       'tip': 'Months after the medication has been swallowed by the patient, the benefit '
+                              'manager conducts an automated audit and automatically claws back thousands '
+                              "of dollars directly from the pharmacy's future electronic remittances.",
+                       'timestamp': 655,
+                       'timestamp_seconds': 655,
+                       'timestamp_label': '[00:10:55]',
+                       'url': 'https://www.youtube.com/watch?v=351RCg-LQ6I&t=655s',
+                       'markdown': '[00:10:55](https://www.youtube.com/watch?v=351RCg-LQ6I&t=655s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '0ga6iJF0H1I',
+                       'title': 'The Truth About PBMs: Are You Overpaying for Pharmacy Benefits?',
+                       'channel': 'Benefits On The Fly',
+                       'author': 'Benefits On The Fly',
+                       'text': 'Number one is partnering with a transparent PBM that passes 100 percent of '
+                               'the drug manufacturer rebates and discounts to you, the plan sponsor.',
+                       'tip': 'Number one is partnering with a transparent PBM that passes 100 percent of '
+                              'the drug manufacturer rebates and discounts to you, the plan sponsor.',
+                       'timestamp': 117,
+                       'timestamp_seconds': 117,
+                       'timestamp_label': '[00:01:57]',
+                       'url': 'https://www.youtube.com/watch?v=0ga6iJF0H1I&t=117s',
+                       'markdown': '[00:01:57](https://www.youtube.com/watch?v=0ga6iJF0H1I&t=117s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Cyz7QbHNjKc',
+                       'title': 'Understanding Pharmacy Benefit Managers (PBMs) #healthcare',
+                       'channel': 'Audio Articles',
+                       'author': 'Audio Articles',
+                       'text': 'A recent study found that the share of rebates PBMs passed through to '
+                               'insurers and payers increased from 78 percent in 2012 to 91 percent in '
+                               '2016, but many small insurers and employers say they do not receive this '
+                               'share of savings.',
+                       'tip': 'A recent study found that the share of rebates PBMs passed through to '
+                              'insurers and payers increased from 78 percent in 2012 to 91 percent in '
+                              '2016, but many small insurers and employers say they do not receive this '
+                              'share of savings.',
+                       'timestamp': 167,
+                       'timestamp_seconds': 167,
+                       'timestamp_label': '[00:02:47]',
+                       'url': 'https://www.youtube.com/watch?v=Cyz7QbHNjKc&t=167s',
+                       'markdown': '[00:02:47](https://www.youtube.com/watch?v=Cyz7QbHNjKc&t=167s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ufeHEzWD1Cc',
+                       'title': 'What are Pharmacy Benefit Managers? Simple Explanation',
+                       'channel': 'Tyler Dutchover',
+                       'author': 'Tyler Dutchover',
+                       'text': 'On the single prescription, the PBM made a secret $20 off the rebate and a '
+                               'secret $50 off the spread, a completely hidden markup on millions of drugs '
+                               'every single day.',
+                       'tip': 'On the single prescription, the PBM made a secret $20 off the rebate and a '
+                              'secret $50 off the spread, a completely hidden markup on millions of drugs '
+                              'every single day.',
+                       'timestamp': 484,
+                       'timestamp_seconds': 484,
+                       'timestamp_label': '[00:08:04]',
+                       'url': 'https://www.youtube.com/watch?v=ufeHEzWD1Cc&t=484s',
+                       'markdown': '[00:08:04](https://www.youtube.com/watch?v=ufeHEzWD1Cc&t=484s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'}]}

@@ -1,676 +1,840 @@
 from __future__ import annotations
 
-CHAPTER_1 = {
-    "id": "Q1",
-    "chapter_id": "Q1",
-    "chapter_number": 1,
-    "question_number": 1,
-    "slug": "contingent-corporate-bill-audit-and-tax-credit-recovery",
-    "question_prompt": "What exactly is contingent corporate bill-audit & tax-credit recovery, how is real operator revenue recognized vs underlying asset/client GMV, and what separates durable small-team moats from fragile beginner hype?",
-    "kicker": "Q1 / THE BIG MONEY PLAYBOOKS",
-    "title": "What Exactly Is Contingent Corporate Bill-Audit & Tax-Credit Recovery?",
-    "subtitle": "FedEx and UPS Invoice Recovery, Utility Tariff Corrections, Assessment Appeals, and WOTC Processing Under ASC 606 and Circular 230",
-    "layout_template": "opportunity_overview",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #38 ranks #06 of 42 with a 94/100 Money-to-Manpower Score: "
-        "an evidence-led recovery business, not ownership of client spending or tax credits. "
-        "Its 12 mapped plays connect parcel audits, utility and telecom corrections, property assessments, "
-        "tax-credit processing, and disciplined customer acquisition. Operators earn documented refund shares, "
-        "36-month shared-savings splits, and processing fees; client bills and recovered principal stay outside "
-        "operator revenue. Formula v2.0 produces annual owner profits of $33,000 Conservative, $217,150 Base, "
-        "and $504,000 Scaled. The durable advantage is a reusable contract-and-evidence library, authorized "
-        "data access, defensible baselines, and specialist execution. The fragile version forecasts waived "
-        "carrier guarantees, premature tax credits, unlimited free inboxes, or savings that disappear "
-        "when shipment mix and utility consumption change."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$110,000",
-            "context": "Annual earned operator fees; excludes underlying client spending",
-            "note": "30% net margin; $33,000 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Base",
-            "value": "$505,000",
-            "context": "Annual earned operator fees; excludes underlying client spending",
-            "note": "43.0% net margin; $217,150 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$900,000",
-            "context": "Annual earned operator fees; excludes underlying client spending",
-            "note": "56% net margin; $504,000 annual owner net profit; 2 FT + 4 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Sell a documented recovery, not a percentage of the client's spending",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Contingent corporate bill-audit and tax-credit recovery converts a documented billing error, "
-                    "tariff mismatch, assessment defect, or eligible credit workflow into an earned service fee. "
-                    "The operator does not buy the customer's receivable, own the utility account, or acquire "
-                    "the tax credit merely by discovering an opportunity. The engagement starts with signed "
-                    "Letters of Authorization, contractual access rights, baseline invoice snapshots, a defined "
-                    "lookback, and a precise payment trigger. For commercial expense recovery, a negotiated "
-                    "25%–50% share can align payment with realized benefits; tax work requires a separate "
-                    "fee-eligibility analysis. A $40,000 utility refund at 35% creates $14,000 of operator "
-                    "fees, not $40,000 of revenue and certainly not the customer's $800,000 annual utility "
-                    "spend. The client ordinarily receives the refund directly and pays the earned invoice. "
-                    "This separation preserves a clean audit trail and avoids unnecessary custody of client "
-                    "funds. The service is therefore closer to specialized receivables investigation and "
-                    "contract administration than passive arbitrage. Finding an anomaly is only the first "
-                    "milestone; collecting a defensible fee requires proof, timely submission, acceptance, "
-                    "benefit verification, and a contract that survives reversals without an argument over "
-                    "who actually produced the recovery."
-                ),
-                (
-                    "Five operator archetypes organize the work: parcel recovery specialists, utility and "
-                    "facilities auditors, telecom expense auditors, property-assessment specialists, and "
-                    "tax-credit processing teams. Each uses different evidence and different clocks. A parcel "
-                    "claim joins invoice lines to service commitments, shipment events, customer agreements, "
-                    "and any applicable guarantee exclusions. A sewer adjustment joins billed consumption "
-                    "to approved cooling-tower meter readings and the municipality's applicable rules. A "
-                    "property appeal needs assessment records, comparable evidence, a filing calendar, and "
-                    "appropriately authorized representation; it cannot be treated as another carrier refund "
-                    "ticket. WOTC processing connects timely prescreening, state workforce certification, "
-                    "eligible wages, and tax preparation, rather than promising cash merely because a new "
-                    "hire belongs to a potentially eligible group. The smallest viable team chooses one "
-                    "repeatable evidence pattern and contracts specialists for exceptions. A founder who "
-                    "markets every recovery category before securing that specialist bench creates an "
-                    "expensive coordination problem. Select clients with retrievable records, material "
-                    "recoverable errors, and a controller willing to confirm realized benefits. Reject "
-                    "accounts where another auditor already owns the same recovery rights or where contract "
-                    "language prevents the proposed claim. Exclusivity should identify specific accounts, "
-                    "categories, periods, and termination treatment rather than capture every future saving."
-                ),
-                (
-                    "The commercial offer should distinguish historical refunds, prospective savings, and "
-                    "processing deliverables. Historical refunds depend on an accepted correction to a "
-                    "past charge. Prospective savings depend on a negotiated baseline and a measurable "
-                    "future reduction, commonly shared for 36 months. Processing fees compensate defined "
-                    "work such as screening, certification submission, and evidence assembly when that fee "
-                    "structure is permitted. These products should not share an ambiguous definition of "
-                    "'recovered value.' For example, reducing a valid parcel minimum through negotiation "
-                    "creates prospective savings; it does not prove the old minimum was an overcharge. "
-                    "Similarly, a lower utility bill after a factory shutdown does not establish tariff "
-                    "audit performance. Write normalization rules for volume, service mix, rates, taxes, "
-                    "weather, occupancy, and customer-directed changes before disclosing findings. Give "
-                    "each finding a unique identifier tied to source records and a benefit category. "
-                    "Document prior disputes and concurrent vendor negotiations so attribution remains "
-                    "testable. The moat is accumulated evidence about what particular contracts, utilities, "
-                    "and agencies actually accept, together with a reliable handoff to specialists. A "
-                    "generic anomaly detector is useful triage, but it cannot substitute for enforceable "
-                    "rights, calibrated estimates, or records that survive the customer's next finance-team review."
-                ),
-            ],
-            "table": {
-                "caption": "Five operating archetypes and the evidence each must control",
-                "headers": [
-                    "Operator archetype and primary customer buying role",
-                    "Evidence package required before pursuing a recovery",
-                    "Earned fee basis and practical commercial structure",
-                    "Principal failure mode and defensible operating response",
-                ],
-                "rows": [
-                    [
-                        "Parcel recovery specialist serving shipping directors and controllers",
-                        "FedEx, UPS, and DHL invoices matched against effective agreements",
-                        "Collect 35%–50% of eligible refunds actually realized by clients",
-                        "Exclude waived guarantees and close claims outside filing windows",
-                    ],
-                    [
-                        "Utility and facilities auditor serving multisite finance teams",
-                        "Utility tariffs, interval records, waste contracts, and approved meters",
-                        "Share accepted refunds or normalized savings over agreed periods",
-                        "Separate consumption changes from tariff errors before invoicing fees",
-                    ],
-                    [
-                        "Telecom expense auditor serving procurement and infrastructure managers",
-                        "Carrier inventories, signed orders, circuit records, and disconnect confirmations",
-                        "Share credited overcharges and verified reductions in recurring charges",
-                        "Resolve termination charges and retained circuits before claiming savings",
-                    ],
-                    [
-                        "Property assessment specialist serving commercial real estate owners",
-                        "Assessor records, comparable evidence, ownership documents, and appeal calendars",
-                        "Use jurisdiction-permitted fees tied to defined assessment benefit calculations",
-                        "Confirm representation authority and licensing before accepting appeal assignments",
-                    ],
-                    [
-                        "Tax-credit processing team serving payroll and tax departments",
-                        "Timely screening records, certifications, payroll evidence, and preparer review",
-                        "Charge permitted processing fees under separately evaluated engagement terms",
-                        "Stop unsupported eligibility claims and correct deficient substantiation promptly",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Protect attribution before showing the customer the answer",
-                "body": (
-                    "Veteran auditors preserve the contractual and evidentiary position first. "
-                    "An impressive finding has little commercial value when another provider "
-                    "owns the category or the customer cannot verify the benefit."
-                ),
-                "items": [
-                    "Capture the effective carrier agreement and every guarantee waiver alongside the first invoice export; current public service language alone cannot establish historical rights.",
-                    "Hash baseline invoice files with SHA-256 and preserve an untouched copy; attach each correction to the exact source version used in the calculation.",
-                    "For cooling-tower sewer adjustments, verify municipal meter approval and reading requirements before estimating an exclusion from billed discharge.",
-                    "Create separate refund, prospective-savings, and tax-processing schedules so each fee has its own evidence requirement, payment trigger, and reversal treatment.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Reconcile earned revenue, owner profit, and the 36-month savings ledger",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "The canonical scorecard measures operator service revenue, not client economic throughput. "
-                    "Conservative annual revenue is $110,000 at a 30% net margin, producing $33,000 owner "
-                    "net profit and $77,000 of implied costs. Base revenue is $505,000 at 43.0%, producing "
-                    "$217,150 profit and $287,850 of costs. Scaled revenue is $900,000 at 56%, producing "
-                    "$504,000 profit and $396,000 of costs. Staffing remains 1 FT plus 3 contractors in "
-                    "both Conservative and Base, then 2 FT plus 4 contractors in Scaled. Contractor "
-                    "counts describe participating people, not four full-time salaries disguised as one "
-                    "employee. These figures are prescribed annual scenarios, not a claim that every "
-                    "recovery category supports identical margins. The stated $1,500–$9,500 monthly "
-                    "operating-expense range cannot be substituted for total scenario costs: delivery "
-                    "labor, specialist allocations, acquisition spending, and other modeled costs must "
-                    "still reconcile to the annual difference between revenue and profit. Startup capital "
-                    "of $6,000–$35,000 and a one-to-four-month first-deal window make collections timing "
-                    "important. A signed contingency engagement can consume analyst time for months before "
-                    "a municipality issues a credit. Track cash runway independently from booked revenue, "
-                    "and do not present the scenario's owner-profit measure as a personal after-tax cash calculation."
-                ),
-                (
-                    "ASC 606 requires the operator to identify its customer, promised services, performance "
-                    "obligations, and transaction price, including the constraint on variable consideration. "
-                    "A speculative claim queue is not earned revenue. Neither is an entire 36-month "
-                    "savings estimate automatically recognizable at signature. Recognition depends on the "
-                    "specific performance obligation and when the associated consideration can be included "
-                    "without a probable significant reversal. Billing and cash collection can occur at "
-                    "different times from recognition. If a $100,000 refund generates a 40% earned fee, "
-                    "operator revenue is $40,000 when the applicable recognition conditions are satisfied; "
-                    "the remaining $60,000 belongs to the client. If the client pays a $50,000 service "
-                    "fee and another specialist receives $10,000, principal-versus-agent analysis determines "
-                    "whether the operator reports $50,000 with specialist expense or only a $40,000 "
-                    "retained share. Paying a subcontractor does not automatically require net presentation. "
-                    "Where a retained_share model applies, apply it once to the service-fee pool, never "
-                    "to underlying utility spend and never twice through both revenue and expense. No "
-                    "additional retained-share percentage is specified for these three canonical cases, "
-                    "so their supplied revenue and profit figures remain unchanged. Maintain a written "
-                    "accounting policy and reconcile claim status, invoices, recognition, and collections monthly."
-                ),
-                (
-                    "An illustrative 36-month agreement shows why the savings ledger needs invoice-level "
-                    "discipline. Suppose an accepted tariff correction produces $2,000 monthly normalized "
-                    "savings and the operator earns 35% as benefits occur. The fee is $700 per verified "
-                    "month, $8,400 over twelve complete eligible months, and $25,200 over thirty-six "
-                    "complete eligible months. Those are different periods, not interchangeable revenue "
-                    "labels. Twenty such agreements operating for a complete year produce $168,000 of "
-                    "annual fees before reversals, not $504,000 booked immediately from their full terms. "
-                    "To illustrate the Base total without changing it, combine that $168,000 with "
-                    "$280,000 of earned historical-refund shares and $57,000 of earned processing fees: "
-                    "the result is exactly $505,000. At a 40% refund share, the $280,000 component "
-                    "requires $700,000 of accepted client refunds; that refund pool remains outside "
-                    "operator revenue. The processing component could represent 570 completed billable "
-                    "units at $100 each under lawful, clearly defined terms, rather than 570 promised "
-                    "tax credits. This mix is an arithmetic bridge, not supplied production history. "
-                    "Monthly controls should reconcile baseline changes, client benefit confirmations, "
-                    "disputed invoices, refunds reversed after review, and outstanding receivables. Track "
-                    "concentration by carrier, municipality, client, and specialist because one delayed payer "
-                    "can impair cash even when annual margins appear attractive."
-                ),
-            ],
-            "table": {
-                "caption": "Formula v2.0 reconciliation with no client-spend inflation",
-                "headers": [
-                    "Canonical scenario and annual recognized operator revenue",
-                    "Exact owner profit and implied total costs",
-                    "Specified staffing and delivery capacity interpretation",
-                    "Required interpretation when reporting the operating result",
-                ],
-                "rows": [
-                    [
-                        "Conservative earns $110,000 annually from operator service fees",
-                        "30% margin yields $33,000 profit against $77,000 costs",
-                        "1 FT plus 3 C supports selective specialist delivery",
-                        "Exclude client refunds and spending from the revenue denominator",
-                    ],
-                    [
-                        "Base earns $505,000 annually from operator service fees",
-                        "43.0% margin yields $217,150 profit against $287,850 costs",
-                        "1 FT plus 3 C requires reusable evidence workflows",
-                        "Reconcile earned fees independently from collections and claim estimates",
-                    ],
-                    [
-                        "Scaled earns $900,000 annually from operator service fees",
-                        "56% margin yields $504,000 profit against $396,000 costs",
-                        "2 FT plus 4 C means six participating people",
-                        "Preserve exact scenario totals without inventing additional retention deductions",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "3. Compare twelve mapped plays without confusing automation with entitlement",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "The twelve mapped plays here are parcel recovery, outbound acquisition, electric "
-                    "tariffs, natural-gas tariffs, water billing, sewer adjustments, waste contracts, "
-                    "telecom billing, property assessments, WOTC processing, research-credit support, and "
-                    "state sales-and-use-tax recovery. Only the two supplied mappings carry canonical "
-                    "play identifiers; the remaining ten are descriptive operating lanes. The parcel "
-                    "mapping, parcel_carrier_refund_tariff_audit_contingency, joins authorized FedEx Billing "
-                    "Online, UPS Billing Center, and DHL invoice exports with shipment events, measured "
-                    "dimensions, and effective service agreements. At a negotiated 40% share, sixty "
-                    "accepted $25 refunds generate $1,500 for clients and $600 of operator fees. "
-                    "An additional $4,000 of accepted dimensional-weight or duplicate-billing corrections "
-                    "adds $1,600 in fees at the same rate. Neither calculation includes rejected, "
-                    "expired, suspended, or contractually waived claims. Negotiating a $0.20 reduction "
-                    "on 10,000 eligible monthly shipments creates $2,000 prospective monthly savings; "
-                    "a 35% share yields $700, subject to the agreed baseline. A valid minimum charge "
-                    "is not an error merely because another customer negotiated better terms. If a "
-                    "carrier integration stops working, pause that automation, use authorized exports "
-                    "and supported manual channels, and restrict forecasts to confirmed eligible services "
-                    "within open filing windows."
-                ),
-                (
-                    "The acquisition mapping, multi_inbox_free_workspace_outbound_clusters, should be "
-                    "evaluated as a cost-and-capacity hypothesis, not a delivery entitlement. Three "
-                    "hundred inboxes sending twenty messages on twenty-five operating days equal "
-                    "150,000 messages arithmetically; at fifteen per day the same footprint yields "
-                    "112,500, while twenty-five yields 187,500. Neither count establishes qualified "
-                    "meetings, primary-inbox placement, or lawful access to subsidized tenants. At "
-                    "$6–$12 per paid seat, three hundred seats cost $1,800–$3,600 monthly before "
-                    "domains, verification, and administration. Microsoft 365 developer or partner "
-                    "benefits must expressly permit the proposed production use; Cloudflare Email "
-                    "Routing is not itself an outbound SMTP sending service. Do not build the "
-                    "economics around tenant fragmentation, domain swapping after restrictions, or "
-                    "unsupported claims that catch-all testing validates every recipient. The durable "
-                    "fallback is a smaller, relevant audience, verified acquisition rights, accurate "
-                    "sender identity, a permitted sending service, centralized suppression, and prompt "
-                    "handling of opt-outs under 15 U.S.C. §7704. Removing tracking pixels may reduce "
-                    "unnecessary data collection, but it does not create permission to send. Stop "
-                    "campaigns when account restrictions or complaint patterns require investigation. "
-                    "Measure booked qualified audits and recovered-fee contribution per acquisition dollar, "
-                    "rather than advertising mailbox count as the business moat."
-                ),
-                (
-                    "The comparison matrix separates sixteen execution situations across those twelve "
-                    "plays because superficially similar claims often need different evidence. Utility "
-                    "tariffs are jurisdiction-specific public rate instruments, while waste and telecom "
-                    "recoveries frequently turn on negotiated contract terms. Property work adds state "
-                    "licensing and representation rules; Texas Occupations Code Chapter 1152 is one "
-                    "concrete example, not a nationwide license. Federal tax lanes demand particular "
-                    "care. Section 51(c)(4) limits the current statutory WOTC window to individuals "
-                    "beginning work before January 1, 2026; a later cohort needs an enacted extension "
-                    "before the operator markets credit eligibility. Existing eligible cohorts can "
-                    "still require processing and substantiation. Section 51(d)(13) generally requires "
-                    "prescreening by the offer date and certification-request submission within "
-                    "twenty-eight days after work begins. A common qualified first-year-wage example "
-                    "is $6,000 multiplied by 40%, or $2,400, after satisfying the applicable group "
-                    "and hours requirements; this is a client credit, not operator revenue. A "
-                    "$100 processing charge is the operator's separate service fee. Research-credit "
-                    "support under Section 41 and state tax refunds require their own factual "
-                    "tests and fee review. Where evidence, authorization, or fee permissibility "
-                    "fails, use an eligible fixed-fee scope or decline the assignment rather than "
-                    "relabeling an unsupported recovery."
-                ),
-            ],
-            "table": {
-                "caption": "Sixteen sub-vertical comparisons across the twelve mapped operating plays",
-                "headers": [
-                    "Sub-vertical and named platform or operating rail",
-                    "Illustrative commercial fee and concrete unit economics",
-                    "Defensible moat built from specific operational evidence",
-                    "Clawback trigger or failure and practical fallback",
-                ],
-                "rows": [
-                    [
-                        "Parcel late-delivery recovery through FedEx Billing Online exports",
-                        "Sixty accepted $25 refunds yield $600 at 40%",
-                        "Match shipment events with effective guarantees and customer waivers",
-                        "Suspend excluded claims and retain supported manual filing channels",
-                    ],
-                    [
-                        "Parcel dimensional-weight review using UPS Billing Center records",
-                        "A $4,000 accepted correction yields $1,600 at 40%",
-                        "Preserve measured dimensions and contract-specific dimensional divisor evidence",
-                        "Withdraw calculations when measurement evidence cannot support the dispute",
-                    ],
-                    [
-                        "Parcel duplicate-billing recovery through authorized DHL invoice exports",
-                        "Ten accepted $80 duplicates yield $320 at 40%",
-                        "Distinguish duplicate billing from valid rebills and separate services",
-                        "Reverse attributed fees when later records establish valid rebilling",
-                    ],
-                    [
-                        "Parcel minimum-charge negotiation using UPS shipment-level billing exports",
-                        "10,000 shipments saving $0.20 yield $700 at 35%",
-                        "Normalize shipment mix against the signed prospective savings baseline",
-                        "Exclude contractual minimums from historical overcharge claims entirely",
-                    ],
-                    [
-                        "Electric tariff recovery using ENERGY STAR Portfolio Manager context",
-                        "A $20,000 accepted refund yields $7,000 at 35%",
-                        "Join utility tariffs with interval demand and meter classifications",
-                        "Use utility billing records when benchmarking data lacks detail",
-                    ],
-                    [
-                        "Natural-gas tariff review using Enbridge Gas customer billing records",
-                        "A $12,000 accepted adjustment yields $4,200 at 35%",
-                        "Track applicable rate classes, riders, and effective billing dates",
-                        "Separate supply-price movements from recoverable tariff application errors",
-                    ],
-                    [
-                        "Commercial water billing review using NYC DEP My DEP",
-                        "An $18,000 accepted correction yields $6,300 at 35%",
-                        "Reconcile meter identity, actual readings, and estimated consumption periods",
-                        "Exclude unsupported consumption assumptions and follow local dispute procedures",
-                    ],
-                    [
-                        "Cooling-tower sewer adjustment using NYC DEP approved meter procedures",
-                        "A $30,000 eligible adjustment yields $10,500 at 35%",
-                        "Maintain approved submeter records and program-specific adjustment calculations",
-                        "Stop estimates when required meter approval or readings fail",
-                    ],
-                    [
-                        "Waste contract recovery using WM and Republic Services invoices",
-                        "A $15,000 accepted credit yields $5,250 at 35%",
-                        "Compare lift schedules and surcharge clauses against service evidence",
-                        "Exclude authorized extras and document disputed service events separately",
-                    ],
-                    [
-                        "Telecom recovery using Verizon Enterprise Center billing and inventory",
-                        "A $24,000 accepted credit yields $8,400 at 35%",
-                        "Tie disconnected circuits to orders and carrier acknowledgment dates",
-                        "Deduct valid termination charges before calculating attributable net savings",
-                    ],
-                    [
-                        "Property assessment review using Harris Central Appraisal District records",
-                        "A $40,000 benefit yields $12,000 where 30% is permitted",
-                        "Combine local comparables with licensed representation and filing discipline",
-                        "Recalculate benefits after settlement changes and exclude unrelated exemptions",
-                    ],
-                    [
-                        "WOTC prescreening workflow using Workday Recruiting and Form 8850",
-                        "Fifty completed screening units yield $5,000 at $100",
-                        "Preserve offer-date screening evidence and lawful targeted-group documentation",
-                        "Exclude expired statutory cohorts and avoid unsupported eligibility assertions",
-                    ],
-                    [
-                        "WOTC certification workflow using state workforce agency submission portals",
-                        "Forty completed submission units yield $4,000 at $100",
-                        "Retain submission receipts, certifications, wages, and hours by worker",
-                        "Treat screening and submission units as alternatives unless separately contracted",
-                    ],
-                    [
-                        "Research-credit support using Jira records and QuickBooks payroll exports",
-                        "Forty documented service hours yield $8,000 at $200",
-                        "Connect qualifying activities with contemporaneous wage and project evidence",
-                        "Exclude unsupported activities and have authorized tax specialists evaluate treatment",
-                    ],
-                    [
-                        "State sales-and-use-tax review using Texas Comptroller eSystems records",
-                        "A $50,000 refund yields $15,000 if 30% is permitted",
-                        "Link transaction facts with exemptions and state-specific refund standing",
-                        "Exclude federal fee assumptions and confirm state authorization separately",
-                    ],
-                    [
-                        "Outbound acquisition using permitted Microsoft 365 or Amazon SES accounts",
-                        "Ten meetings costing $1,000 imply $100 per qualified meeting",
-                        "Build relevant prospect selection and attributable signed-audit conversion records",
-                        "Stop restricted sending rather than cycling identities or subsidies",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "4. Build the evidence pipeline and enforce the conditions for repeatable profit",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "A lean delivery system needs a claim ledger, not a dashboard that counts every "
-                    "detected anomaly as money. Store original invoices, effective agreements, shipment "
-                    "events, tariff versions, authorization documents, and submission receipts under "
-                    "client-specific access controls. Amazon S3 with versioning and appropriate retention "
-                    "settings can preserve source packages; PostgreSQL can hold normalized invoice lines "
-                    "and claim states; an approved OCR service can extract scanned tariff or meter "
-                    "records. OCR output remains a hypothesis until arithmetic, dates, units, account "
-                    "identity, and tariff applicability reconcile. Define states such as detected, "
-                    "qualified, submitted, accepted, realized, invoiced, collected, and reversed. A "
-                    "rejected claim must retain its reason so the next automation run does not "
-                    "resubmit it blindly. Use idempotency controls to prevent duplicate submissions "
-                    "and account-level reconciliation to detect missing invoice periods. Authorized "
-                    "carrier EDI feeds and available APIs can reduce handling time, but availability "
-                    "and permitted operations vary by account and carrier. Never assume a public "
-                    "tracking API also permits refund submission. When access changes, preserve the "
-                    "evidence package and move eligible work to a supported channel rather than "
-                    "bypassing restrictions. Publish weekly exception reports that identify blocked "
-                    "amounts, approaching deadlines, responsible specialists, and the specific evidence "
-                    "needed to advance each claim."
-                ),
-                (
-                    "Fee design and specialist authority belong in intake, not in a footnote added "
-                    "after the client signs. Treasury Circular 230, 31 CFR §10.27, restricts "
-                    "contingent fees for covered matters before the IRS, subject to specified "
-                    "exceptions and the applicable judicial treatment of its scope. Do not "
-                    "generalize those exceptions into permission for every original-return credit "
-                    "engagement. Have the responsible qualified practitioner document whether the "
-                    "proposed work, representation, and compensation structure are permitted. Sections "
-                    "10.22 and 10.34 also matter for diligence and return-position standards where "
-                    "applicable. A fixed processing fee does not cure unsupported eligibility or "
-                    "authorize an unqualified person to represent a taxpayer. Property-assessment "
-                    "assignments require an equivalent state-by-state review of licensing, authorized "
-                    "representation, and fee restrictions. Sensitive hiring and tax records need "
-                    "role-limited access, encryption, retention schedules, and vendor review. Where "
-                    "the operator is acting as a tax return preparer, 26 U.S.C. §7216 and its "
-                    "implementing rules govern certain uses and disclosures of return information; "
-                    "the FTC Safeguards Rule also applies to covered financial institutions, "
-                    "including tax preparation firms. Avoid collecting complete identity records "
-                    "when a documented status or specialist-held record suffices. These requirements "
-                    "shape architecture, staffing, and unit costs rather than merely adding paperwork."
-                ),
-                (
-                    "Durable small-team economics emerge when the founder standardizes qualification "
-                    "and delegates bounded exceptions, not when they chase every apparent refund. "
-                    "The canonical 94/100 score combines revenue potential of 24, margin potential "
-                    "of 24, team efficiency of 19, startup accessibility of 14, and automation "
-                    "potential of 13. Treat that score as a prioritization framework, then test "
-                    "the actual operation with accepted-claim rates, analyst minutes per accepted "
-                    "dollar, recovery reversals, collection days, and contribution after specialist "
-                    "payments. A workflow producing $600 of fees but consuming eight hours at "
-                    "$75 per hour leaves zero before acquisition and overhead; automation cannot "
-                    "rescue a systematically invalid claim population. Conversely, a reusable tariff "
-                    "evidence package may lower handling effort across similar accounts without "
-                    "weakening review. Budget rework and delayed refunds explicitly. Specify who "
-                    "funds a fee reversal when a carrier rescinds a credit or a client benefit "
-                    "changes after appeal. Run a monthly cohort review by acquisition source and "
-                    "sub-vertical, and stop selling categories with weak substantiation or negative "
-                    "contribution. Scale from one proven evidence pattern to adjacent patterns only "
-                    "after the first produces collected fees and reproducible outcomes. The resulting "
-                    "asset is a trusted operating system for recovering documented value, not a "
-                    "pile of scraped invoices or a large inventory of mailboxes."
-                ),
-            ],
-            "table": {
-                "caption": "Four controls connecting authorized evidence to collectible operator revenue",
-                "headers": [
-                    "Control stage and accountable internal operating owner",
-                    "Required evidence before the next work transition",
-                    "Acceptance measure tied to a specific business outcome",
-                    "Failure response preserving customer rights and accurate accounting",
-                ],
-                "rows": [
-                    [
-                        "Founder qualifies account scope and signs recovery engagement schedules",
-                        "Signed authorization, category rights, baseline files, and specialist assignment",
-                        "Every proposed claim fits an authorized account and period",
-                        "Exclude overlapping mandates and unresolved representation or fee restrictions",
-                    ],
-                    [
-                        "Analyst validates recoverable errors against effective source documents",
-                        "Invoice arithmetic, contract clauses, event records, and filing deadlines",
-                        "Qualified claim amounts reconcile exactly to preserved source evidence",
-                        "Quarantine uncertain findings rather than inflating the recovery forecast",
-                    ],
-                    [
-                        "Specialist submits eligible claims through supported authorized channels",
-                        "Completed submission package, client permissions, and dated acknowledgment receipt",
-                        "Every submission has a traceable receipt and responsible reviewer",
-                        "Pause unsupported integrations and use permitted manual submission methods",
-                    ],
-                    [
-                        "Controller reconciles benefits, earned fees, collections, and subsequent reversals",
-                        "Client credit confirmation, contractual fee calculation, and payment records",
-                        "Recognized operator revenue excludes client principal and unsupported estimates",
-                        "Adjust reversed fees and reconcile outstanding amounts with clients",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Verify four conditions before a finding becomes a submission",
-                "body": (
-                    "A claim advances only when access, entitlement, evidence, and economics "
-                    "are documented. A missing condition creates an exception record, not "
-                    "a larger sales forecast."
-                ),
-                "items": [
-                    "Confirm signed Letters of Authorization, permitted platform access, category ownership, and any required professional license or representation authority.",
-                    "Verify the effective contract or statute, available filing window, applicable exclusions, and an objectively supported eligibility calculation.",
-                    "Preserve baseline invoices, source measurements, submission evidence, and a second-person review of material tax or contract interpretations.",
-                    "Confirm the fee structure is permitted, the recognition policy fits the service, and reversal obligations still leave acceptable expected contribution.",
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Scope and preserve",
-                    "action": "Execute category-specific engagement schedules and archive baseline records.",
-                    "detail": (
-                        "Record account identifiers, covered periods, existing auditor rights, "
-                        "permitted access methods, and the specialist responsible for regulated work."
-                    ),
-                },
-                {
-                    "step": 2,
-                    "title": "Qualify and calculate",
-                    "action": "Join each proposed recovery to an effective rule and reproducible calculation.",
-                    "detail": (
-                        "Separate historical errors from negotiated future savings; apply exclusions, "
-                        "deadline checks, and normalization before assigning an expected fee."
-                    ),
-                },
-                {
-                    "step": 3,
-                    "title": "Submit and track",
-                    "action": "Use supported channels and retain acknowledgments for every eligible submission.",
-                    "detail": (
-                        "Assign a claim identifier, reviewer, next follow-up date, and explicit "
-                        "reason whenever a carrier, utility, assessor, or agency rejects the request."
-                    ),
-                },
-                {
-                    "step": 4,
-                    "title": "Verify and reconcile",
-                    "action": "Confirm realized benefits and reconcile recognized fees with invoices and cash.",
-                    "detail": (
-                        "Apply the accounting policy, maintain the 36-month savings ledger where "
-                        "relevant, resolve reversals, and update contribution metrics by client cohort."
-                    ),
-                },
-            ],
-        },
-    ],
-    "pull_quote": "The recoverable asset is documented entitlement; the operator's revenue is only the earned fee.",
-    "diagram_id": "diag-01",
-    "action_checklist": [
-        "Choose one initial recovery archetype and identify its source records, filing clock, specialist requirements, and minimum acceptable contribution per account.",
-        "Execute signed Letters of Authorization and separate refund, 36-month savings, and processing schedules before disclosing account-specific findings.",
-        "Archive effective agreements and baseline invoices, then test ten findings against actual exclusions, measurement evidence, and supported submission channels.",
-        "Build the claim-state ledger and reconcile operator fees separately from client refunds, utility spending, tax credits, and prospective savings estimates.",
-        "Document tax-fee permissibility, property-consultant requirements, WOTC cohort eligibility, and sensitive-record handling before accepting the corresponding work.",
-        "Reconcile the $110,000, $505,000, and $900,000 revenue cases to their exact costs and profits, then monitor collected contribution and reversal rates monthly.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "31 CFR §10.27 — Fees",
-            "url": "https://www.ecfr.gov/current/title-31/subtitle-A/part-10/subpart-B/section-10.27",
-            "relevance": (
-                "Evaluate contingent-fee restrictions, specified exceptions, and the applicable "
-                "scope of covered federal tax work before selecting compensation terms."
-            ),
-        },
-        {
-            "title": "31 CFR §10.22 — Diligence as to accuracy",
-            "url": "https://www.ecfr.gov/current/title-31/subtitle-A/part-10/subpart-B/section-10.22",
-            "relevance": (
-                "Covered practitioners must exercise diligence when preparing or assisting "
-                "with tax documents and representations."
-            ),
-        },
-        {
-            "title": "31 CFR §10.34 — Standards with respect to tax returns and documents",
-            "url": "https://www.ecfr.gov/current/title-31/subtitle-A/part-10/subpart-B/section-10.34",
-            "relevance": (
-                "Return-position and document standards inform specialist review of credit "
-                "eligibility, factual support, and client communications."
-            ),
-        },
-        {
-            "title": "26 U.S.C. §51 — Amount of work opportunity credit",
-            "url": "https://www.law.cornell.edu/uscode/text/26/51",
-            "relevance": (
-                "Defines WOTC eligibility, wage and hours rules, certification timing, and "
-                "the statutory employment-start cutoff; verify enacted changes for later cohorts."
-            ),
-        },
-        {
-            "title": "26 U.S.C. §41 — Credit for increasing research activities",
-            "url": "https://www.law.cornell.edu/uscode/text/26/41",
-            "relevance": (
-                "Research-credit support must connect qualifying activities and expenditures "
-                "to statutory tests rather than infer eligibility from job titles."
-            ),
-        },
-        {
-            "title": "26 U.S.C. §7216 — Disclosure or use of information by preparers of returns",
-            "url": "https://www.law.cornell.edu/uscode/text/26/7216",
-            "relevance": (
-                "Where applicable, limits preparer use and disclosure of tax return "
-                "information and requires analysis of authorized exceptions."
-            ),
-        },
-        {
-            "title": "16 CFR Part 314 — Standards for safeguarding customer information",
-            "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-C/part-314",
-            "relevance": (
-                "Covered financial institutions must implement the required information "
-                "security program and associated safeguards for customer information."
-            ),
-        },
-        {
-            "title": "Texas Occupations Code Chapter 1152 — Property Tax Consultants",
-            "url": "https://statutes.capitol.texas.gov/Docs/OC/htm/OC.1152.htm",
-            "relevance": (
-                "Provides a concrete state framework for property-tax consultant "
-                "registration, practice requirements, and applicable exemptions."
-            ),
-        },
-        {
-            "title": "15 U.S.C. §7704 — Requirements for transmission of messages",
-            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
-            "relevance": (
-                "Commercial email operations must address accurate transmission information, "
-                "required identification and address elements, and effective opt-out handling."
-            ),
-        },
-    ],
-}
+CHAPTER_1 = {'id': 'Q1',
+ 'chapter_id': 'Q1',
+ 'chapter_number': 1,
+ 'question_number': 1,
+ 'slug': 'small-parcel-auditing-guaranteed-service-refund-recovery',
+ 'question_prompt': 'How do contingent parcel-audit firms recover late-delivery (GSR) refunds and billing '
+                    'errors from FedEx and UPS, and how should a shipper evaluate an audit provider?',
+ 'kicker': 'Q1 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Small-Parcel Auditing and Guaranteed-Service Refund Recovery',
+ 'subtitle': 'Late-package GSR claims, automatic vs. requested refunds, denied-refund handling, audit '
+             'workflows, qualifying a good auditor, common misconceptions, free audit tools like Audisee, '
+             'and percentage-of-savings onboarding',
+ 'layout_template': 'opportunity_overview',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'FedEx and UPS guarantee time-definite delivery, and practitioners from Refund '
+                      'Retriever, Empact Parcel, and Compete Consulting Group agree a package delivered '
+                      'even a minute late earns a full refund the carriers will never flag. The shared '
+                      'playbook: take online billing credentials, auto-download every invoice, audit 40 to '
+                      '44 points per shipment, file inside the 15-day window, and bill only on '
+                      "contingency, from Cerasis's 30 percent model to Refund Retriever's 50 percent "
+                      'starting split. Scarbrough Global and Refund Retriever both say the money sits in '
+                      'follow-up, with resubmission loops and live phone agents beating automatic denials, '
+                      'including FedEx rejecting GSR claims on already-paid invoices. Practitioners split '
+                      'on refund honesty, speed benchmarks, and minimums: Share a Refund bills only '
+                      'refunds it acted on and reads check refunds as a slow audit, while Cerasis argues '
+                      'tiny shippers cannot justify manual auditing.',
+ 'key_metrics': [{'label': 'GSR Late-Delivery Trigger',
+                  'metric': 'GSR Late-Delivery Trigger',
+                  'value': '60 seconds late',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Refund Retriever states guaranteed service refunds are available when FedEx '
+                             'or UPS delivers a package even 60 seconds late.',
+                  'source': 'Refund Retriever ([JeLyjRF9HEk @ 00:00:00])'},
+                 {'label': 'Late-Package Claim Window',
+                  'metric': 'Late-Package Claim Window',
+                  'value': '15 days',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Refund Retriever reports a 15-day time limit to get refunds for late '
+                             'packages, confirmed while working a batch of denied FedEx disputes.',
+                  'source': 'Refund Retriever ([JeLyjRF9HEk @ 00:01:06])'},
+                 {'label': 'Contingency Starting Fee',
+                  'metric': 'Contingency Starting Fee',
+                  'value': '50% of savings ($25 fee on $50 recovered)',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Brian Gibbs says Refund Retriever starts at 50 percent of whatever it saves '
+                             'and negotiates the rate down for higher-volume shippers.',
+                  'source': 'Refund Retriever ([vOX4irOA_Tk @ 00:05:11])'},
+                 {'label': 'Phone-Escalation Recovery on One Invoice',
+                  'metric': 'Phone-Escalation Recovery on One Invoice',
+                  'value': '$98.42 on a $4,253.53 invoice (2.3%)',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Phone dispute agents reversed FedEx auto-denials on all 5 late packages; '
+                             'without the calls the client would have received 0 refunds on that invoice.',
+                  'source': 'Refund Retriever ([JeLyjRF9HEk @ 00:01:42])'}],
+ 'sections': [{'heading': 'Section 1: The Practitioner Consensus',
+               'paragraphs': ['Every operator in this lane builds on the same premise: FedEx and UPS sell '
+                              'a time-definite promise, and when they break it the shipment is free. Brian '
+                              'Gibbs of Refund Retriever states that both carriers guarantee all ground '
+                              'and express packages to arrive by a certain date or time or the charge '
+                              'comes back [vOX4irOA_Tk @ 00:02:44], and his team defines a guaranteed '
+                              'service refund as available when a package lands even 60 seconds late '
+                              '[JeLyjRF9HEk @ 00:00:00]. The second shared belief is that the carrier will '
+                              'never flag the money for you. Empact Parcel runs the same one-minute '
+                              'trigger, frames the pitch bluntly as late packages being free, and warns '
+                              'that the carriers will not tell you which shipments are due a refund '
+                              '[frD9iyAvyds @ 00:00:19], while Compete Consulting Group compares '
+                              'carrier-provided monitoring tools to asking the fox to guard the henhouse '
+                              'and claims two billion dollars went unclaimed in a single year [RCPFFZVF7qs '
+                              '@ 00:00:35]. That combination, a hair-trigger refund right plus a '
+                              'counterparty with zero incentive to surface it, is the whole business. '
+                              'Nobody disputes that the refund exists; the fight is entirely about who '
+                              'detects the late scan, files first, and keeps pressing until the credit '
+                              'actually posts to the account.',
+                              'The practitioners also agree that a human with a highlighter cannot win '
+                              'this game at volume. Watchdog Advisory describes monthly bills running to '
+                              'hundreds of pages of shipping invoices that are difficult if not impossible '
+                              'to review for errors [5eTaFaKQdHY @ 00:00:00], and Compete Consulting Group '
+                              'says carrier invoices can run hundreds of pages each week, enough to bury '
+                              'an entire team of accountants working shipment by shipment [RCPFFZVF7qs @ '
+                              '00:01:06]. RAF Logistics points to more than 130 different add-on fees the '
+                              'carriers can now charge [eEERM3QJqyI @ 00:00:17], and Refund Retriever adds '
+                              "that surcharges alone can account for up to 35 percent of a shipper's "
+                              'parcel spend, with dimensional weight, residential delivery, peak season, '
+                              'and overweight fees piling on as prices rise every year [vOX4irOA_Tk @ '
+                              '00:01:33]. The consensus response is full automation keyed off the '
+                              "carrier's own billing portal. Every vendor here sells the same onboarding "
+                              'promise: hand over online billing access, do nothing else, and watch '
+                              'credits land. Nobody pitches a model where the shipper keeps working the '
+                              'invoices; RAF says there is nothing you need to send weekly, Compete '
+                              'promises no work for you once you sign up, and Watchdog calls its setup '
+                              "three minutes with no work on the client's part.",
+                              'On money, the consensus is pure contingency. Watchdog Advisory charges no '
+                              'setup costs or fees and takes a portion of savings, so no savings means no '
+                              'fee [5eTaFaKQdHY @ 00:01:47]; Refund Retriever bills a percentage of actual '
+                              'recovery with no cancellation, setup, or monthly fee [vOX4irOA_Tk @ '
+                              '00:04:55]; Empact Parcel stays profitable on a split of refund amounts. '
+                              'That alignment matters because the second consensus point is that filing is '
+                              'the easy part. Scarbrough Global says customers could find the late '
+                              'packages and surcharges and even make the requests themselves, but the real '
+                              'fortune is in the follow-up, because carriers often deny requests for no '
+                              'reason, which their data shows, likely to discourage human filers '
+                              '[NKDaSW7CKiQ @ 00:01:27]. Scarbrough ties that persistence to its billing: '
+                              'the product is paid only on success, so squeezing out every refund is how '
+                              'it makes money. The third shared prerequisite is speed. Share a Refund '
+                              'describes a limited window right after an invoice posts in which claims can '
+                              'be filed, after which each refund is lost forever [PheSsrwvW9c @ 00:00:23], '
+                              'and Refund Retriever and Compete both pin the late-package window at 15 '
+                              'days. Credentials, automation, contingency, relentless follow-up, and a '
+                              'fast clock are the baseline every one of these operators treats as '
+                              'non-negotiable.'],
+               'table': {'caption': 'Baseline consensus every small-parcel recovery operator builds on',
+                         'headers': ['Consensus Point',
+                                     'What Practitioners Say',
+                                     'Operator Implication',
+                                     'Expert Source'],
+                         'rows': [['Late delivery means the shipment is free',
+                                   'FedEx and UPS guarantee ground and express packages by a set date or '
+                                   'time, or the charge is refunded',
+                                   'Every late scan on an invoice is recoverable cash only if somebody '
+                                   'files for it',
+                                   'Refund Retriever ([vOX4irOA_Tk @ 00:02:44])'],
+                                  ['Carriers stay silent about refunds owed',
+                                   'The carriers will not tell shippers which shipments are due a refund '
+                                   'under the guarantee',
+                                   'Detection must be run by the shipper or a third-party auditor, never '
+                                   'the carrier',
+                                   'Empact Parcel ([frD9iyAvyds @ 00:00:19])'],
+                                  ['Manual invoice review collapses at real volume',
+                                   'Carrier invoices can run hundreds of pages each week, requiring a '
+                                   'whole accounting team to check',
+                                   'Automated software is the entry ticket, not an optional upgrade, for '
+                                   'serious recovery',
+                                   'Compete Consulting Group ([RCPFFZVF7qs @ 00:01:06])'],
+                                  ['Online billing access is the only onboarding input',
+                                   'All the auditor needs is FedEx and UPS online billing access, then '
+                                   'invoices are downloaded weekly',
+                                   'Onboarding friction is near zero, so the pitch is credentials in and '
+                                   'credits out',
+                                   'Refund Retriever ([vOX4irOA_Tk @ 00:03:17])'],
+                                  ['Pricing runs on contingency with no upfront fees',
+                                   'No setup costs or fees; the fee is a portion of savings, and no '
+                                   'savings means no fee',
+                                   'The shipper carries no cash risk, and the auditor eats the cost of '
+                                   'failed recoveries',
+                                   'Watchdog Advisory ([5eTaFaKQdHY @ 00:01:47])'],
+                                  ['The real money sits in follow-up after denials',
+                                   'Carriers often deny requests for no reason, apparently to discourage '
+                                   'human beings from filing',
+                                   'Resubmission loops and live phone escalation separate real recovery '
+                                   'from simple filing',
+                                   'Scarbrough Global ([NKDaSW7CKiQ @ 00:01:27])'],
+                                  ['Speed decides whether a refund survives at all',
+                                   'A limited window opens right after invoice posting; refunds not '
+                                   'captured then are lost forever',
+                                   'Audit and file within the same weekly billing cycle the invoice posts',
+                                   'Share a Refund ([PheSsrwvW9c @ 00:00:23])']]}},
+              {'heading': 'Section 2: Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['The workflow Nick of Share a Refund lays out runs in a fixed sequence: '
+                              'invoice retrieval, shipment audit, claim submission, claim verification, '
+                              'reporting, and billing [eTB0fyueR5A @ 00:00:37]. Retrieval goes one of two '
+                              'ways. Large multinationals and Fortune 500 shippers with existing EDI '
+                              'integrations open FTP data pools, while the more common setup is handing '
+                              'the auditor a username and password for the carrier accounts so invoices '
+                              'are pulled directly from the carrier website [eTB0fyueR5A @ 00:00:55]. '
+                              "Refund Retriever's signup is exactly that second path: contact details in "
+                              'step one, then FedEx and UPS online billing credentials plus billing '
+                              'address in step two, with a warning to confirm the login actually has '
+                              'invoice access; the company compares its always-on credential monitoring to '
+                              'mint.com [P3sA9eO0D-k @ 00:00:52]. Once invoices are in hand, the audit has '
+                              'to test every cost component on every shipment, both whether the charge '
+                              'should apply at all and whether its amount reflects the negotiated '
+                              'discount. Share a Refund checks 40 points per shipment, using the '
+                              'residential surcharge as its showcase: verify the ship-to really is '
+                              'residential, then verify the discount on that surcharge was applied '
+                              '[eTB0fyueR5A @ 00:02:08]. Compete Consulting Group runs a 44-point audit on '
+                              'each shipment, and Watchdog sweeps late deliveries, invalid surcharges, and '
+                              'dimensional and weight charges.',
+                              'Share a Refund insists each claim be filed fast, under the correct claim '
+                              'type, and for the exact amount of the mistake: if the residential discount '
+                              'was skipped, request the net difference; if a residential surcharge hit a '
+                              'commercial delivery, request the entire component [eTB0fyueR5A @ 00:03:16]. '
+                              'Its claims verification service then captures every response type, '
+                              'reconciles each credit to its dispute, and runs a decision agent on '
+                              'rejections, choosing between filing an invalid address correction dispute, '
+                              'resubmitting the service failure, or dropping the shipment [eTB0fyueR5A @ '
+                              '00:04:36]. Scarbrough Global runs hundreds of checks before submitting only '
+                              'charges it is very confident about, then resubmits, resubmits, resubmits, '
+                              'and finally has an internal team call a live human being [NKDaSW7CKiQ @ '
+                              '00:02:25]. Refund Retriever added a denial filter feeding in-house phone '
+                              'dispute agents, then proved it when a client emailed a list of denied FedEx '
+                              'disputes. In the FedEx invoice history, the team found the denial reason '
+                              'was an existing payment on file, because the client paid the invoice the '
+                              'moment it posted, which made FedEx auto-deny every GSR request. Phone '
+                              'agents called FedEx customer service inside the 15-day window and won '
+                              'refunds on all five late packages, recovering $98.42 on a $4,253.53 '
+                              'invoice, a 2.3 percent savings that would otherwise have been zero '
+                              '[JeLyjRF9HEk @ 00:01:42].',
+                              'The unit economics are simple percentages. Refund Retriever starts at 50 '
+                              'percent of whatever it saves, so $50 of late-delivery refunds in a month '
+                              'produces a $25 fee, invoiced with the tracking number and the invoice where '
+                              'the credit sits, and Brian Gibbs says the rate drops and is negotiable for '
+                              'heavy shippers, citing a $25 million a year UPS account as one he would '
+                              'work with [vOX4irOA_Tk @ 00:05:11]. Cerasis models a 30 percent auditor '
+                              'fee: $1,000 in total savings nets the shipper $700, scaling to as much as '
+                              '$70,000 across an enterprise [GnXmnbxCZ-A @ 00:05:14]. On the recovery '
+                              'side, Gibbs found roughly 10 percent of the packages from his own eBay '
+                              'reselling business arriving late before he automated the process '
+                              '[1JZzLbF5PrI @ 00:00:50], Compete puts daily late deliveries at four to six '
+                              'percent, Empact pitches an immediate 1 to 5 percent cut in parcel spend, '
+                              'and Cerasis says proper auditing can recoup up to 5 percent. Watchdog '
+                              'claims its clients average roughly 30 percent savings when audit recovery '
+                              'is combined with parcel intelligence and carrier contract engineering, on '
+                              'technology used by more than 3,300 companies [5eTaFaKQdHY @ 00:01:12]. For '
+                              "a free first look, Lojistic's Audisee web tool takes uploaded UPS or FedEx "
+                              'invoices and instantly returns findings, per-tracking-number details, '
+                              'charts, and stats, though it will not audit both carriers in one batch.'],
+               'table': {'caption': 'Audit engines, tools, and unit economics quoted by practitioners',
+                         'headers': ['Mechanic or Tool',
+                                     'Exact Number or Spec',
+                                     'How Operators Use It',
+                                     'Expert Source'],
+                         'rows': [['Per-shipment multi-point audit engine',
+                                   '40 checkpoints per shipment, including residential address and '
+                                   'surcharge discount validation',
+                                   'Test both whether each charge applies and whether the negotiated '
+                                   'discount was honored',
+                                   'Share a Refund ([eTB0fyueR5A @ 00:02:08])'],
+                                  ['Proprietary audit software with automated refund filing',
+                                   '44-point audit run on each and every shipment, with refunds automated',
+                                   "Credits pile up directly on the shipper's FedEx or UPS online accounts",
+                                   'Compete Consulting Group ([RCPFFZVF7qs @ 00:01:24])'],
+                                  ['Cloud audit plus intelligence and contract engineering',
+                                   'Used by more than 3,300 companies; clients average approximately 30 '
+                                   'percent savings',
+                                   'Pair refund recovery with network design and carrier contract rework '
+                                   'for larger savings',
+                                   'Watchdog Advisory ([5eTaFaKQdHY @ 00:01:12])'],
+                                  ['Outsourced audit fee taken off the top',
+                                   '30 percent fee on $1,000 savings leaves a $700 net refund; enterprise '
+                                   'up to $70,000',
+                                   'Frame outsourcing as an active revenue stream rather than a cost line',
+                                   'Cerasis , now part of GlobalTranz ([GnXmnbxCZ-A @ 00:05:14])'],
+                                  ['Contingency split with volume-based negotiation',
+                                   'Starts at 50 percent of savings; $50 recovered produces a $25 fee',
+                                   'Negotiate the split downward as annual shipping spend and refund '
+                                   'volume grow',
+                                   'Refund Retriever ([vOX4irOA_Tk @ 00:05:11])'],
+                                  ['Audisee free instant audit web tool',
+                                   'Findings, details, charts, and stats tabs; cannot audit UPS and FedEx '
+                                   'together',
+                                   'Upload invoices for a quick recovery estimate before chasing the '
+                                   'carrier for money',
+                                   'Lojistic ([5yyeqQ4VAFU @ 00:00:45])'],
+                                  ['Fee-complexity check across carrier invoices',
+                                   'Over 130 different add-on fees the carriers can now charge on '
+                                   'shipments',
+                                   'Justifies automated checks for billing errors and late deliveries on '
+                                   'every invoice',
+                                   'RAF Logistics ([eEERM3QJqyI @ 00:00:17])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Where the extra refunds and honest billing actually come from',
+                           'body': 'These are the edge moves practitioners use to squeeze more credits out '
+                                   'of the carriers and to catch auditors billing for work they never did.',
+                           'items': ['Check the original reason column in FedEx online billing invoice '
+                                     "history: 'systematic SVC fail' means FedEx refunded automatically, "
+                                     'and an auditor billing you for it may be dishonest [Refund Retriever '
+                                     '— 8Bw_30ivpb4 @ 00:00:48]',
+                                     'Read the refund method as an audit-speed meter: credits on unpaid '
+                                     'invoices signal a fast audit, while credit-card refunds or mailed '
+                                     'checks signal late filing [Share a Refund — PheSsrwvW9c @ 00:01:23]',
+                                     'Paying a FedEx invoice the moment it posts triggers automatic GSR '
+                                     'denials for an existing payment on file; phone agents reversed all 5 '
+                                     'denials inside the 15-day window [Refund Retriever — JeLyjRF9HEk @ '
+                                     '00:01:25]',
+                                     'When a service-failure dispute is rejected, decide between filing an '
+                                     'invalid address correction dispute, resubmitting the service '
+                                     'failure, or taking no further action [Share a Refund — eTB0fyueR5A @ '
+                                     '00:04:36]']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Connect carrier billing access',
+                              'action': 'Hand the auditor FedEx and UPS online billing credentials, or '
+                                        'open an EDI/FTP data pool for enterprise accounts.',
+                              'detail': 'Fill in contact details, then enter FedEx and UPS online billing '
+                                        'IDs and passwords with confirmed invoice access plus billing '
+                                        'address; past and future invoices are then downloaded for '
+                                        'processing [Refund Retriever — P3sA9eO0D-k @ 00:00:35]'},
+                             {'step': 2,
+                              'title': 'Audit every cost component',
+                              'action': 'Run each shipment through a multi-point check covering late '
+                                        'delivery, surcharge validity, and discount application.',
+                              'detail': 'Validate both the application of each cost component and its '
+                                        'amount against negotiated discounts, then prioritize findings so '
+                                        'the maximum refund is pursued on each shipment [Share a Refund — '
+                                        'eTB0fyueR5A @ 00:01:31]'},
+                             {'step': 3,
+                              'title': 'File fast with the right claim type and amount',
+                              'action': 'Submit disputes inside the carrier window, under the correct '
+                                        'claim type, for the exact billing-mistake amount.',
+                              'detail': 'Request the net discount difference when a residential discount '
+                                        'was skipped, or the entire component when a residential surcharge '
+                                        'hit a commercial delivery [Share a Refund — eTB0fyueR5A @ '
+                                        '00:03:16]'},
+                             {'step': 4,
+                              'title': 'Verify, resubmit, then escalate by phone',
+                              'action': 'Track every carrier response, resubmit denied high-confidence '
+                                        'claims, and push stubborn denials to a live carrier agent.',
+                              'detail': 'Resubmit denied charges repeatedly, and if they still get denied, '
+                                        'have an internal team reach out and talk to a live human being at '
+                                        'the carrier [Scarbrough Global — NKDaSW7CKiQ @ 00:02:25]'}]},
+              {'title': 'Section 3: Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['Fee structure is the sharpest split between shops. Brian at Refund '
+                              'Retriever says the firm starts at 50% of whatever it saves, so a $50 month '
+                              'of late-delivery refunds produces a $25 fee, and a shipper doing $25 '
+                              'million a year in UPS can negotiate that rate down because it is not set in '
+                              'stone [vOX4irOA_Tk @ 00:05:11]. Cerasis models the outsourced deal at a 30% '
+                              'cut instead: $1,000 in total savings still leaves the shipper a $700 net '
+                              'refund, scaling to as much as $70,000 across an enterprise [GnXmnbxCZ-A @ '
+                              '00:05:14]. Nick at Share a Refund attacks the billing base rather than the '
+                              'percentage, charging that competitors bill on all refunds delivered, even '
+                              'ones they took no action on, while Share a Refund only splits refunds on '
+                              'shipments where its system acted, which the firm says yields a lower '
+                              'service fee [eTB0fyueR5A @ 00:07:18]. Refund Retriever matches that stance '
+                              'for one credit class: when FedEx drops a systematic GSR refund onto an '
+                              'invoice unprompted, the firm marks it and never bills the client for it '
+                              '[8Bw_30ivpb4 @ 00:00:19]. Headline percentage and billable base are '
+                              'separate levers, and a cheaper-looking split can cost more if the auditor '
+                              'invoices credits it never chased.',
+                              'Practitioners split hard on whether small shippers belong in the game at '
+                              'all. Nick at Share a Refund says auditors that refuse anyone spending under '
+                              'a threshold such as a million dollars a year are exposing limited '
+                              'bandwidth, thin automation, and throughput caps, and asks whether those '
+                              'shops could audit every shipment once peak season hits [PheSsrwvW9c @ '
+                              '00:05:50]. Refund Retriever takes the opposite posture, onboarding '
+                              'companies from 50 shipments a week to 50 shipments a minute because its '
+                              'invoice downloads are run by programs rather than staff logging in '
+                              '[vOX4irOA_Tk @ 00:04:05]. Cerasis splits the difference with math: for a '
+                              'shipper using parcel only now and again, a 50-invoice audit that finds a '
+                              '10% markup on 10% of invoices at $22 per shipment saves roughly one dollar, '
+                              'so paying an employee two hours to find it costs more than leaving the '
+                              'invoices alone [GnXmnbxCZ-A @ 00:03:04]. The same Cerasis host then argues '
+                              'that once the process is automated, audits cost no more than the software, '
+                              'which is why companies outsource and why the low-volume objection collapses '
+                              '[GnXmnbxCZ-A @ 00:04:39]. The working rule from all three: low volume kills '
+                              'manual in-house auditing, while automated contingency shops will still '
+                              'chase small accounts.',
+                              "When carriers reject a claim, the playbooks diverge. Scarbrough Global's "
+                              'team says carriers often deny requests for no reason, which their data '
+                              'shows, and they believe it is done to discourage humans; their answer is '
+                              'brute persistence, resubmitting the same charge again and again and then '
+                              'putting an internal team on the phone with a live human [NKDaSW7CKiQ @ '
+                              '00:01:27] [NKDaSW7CKiQ @ 00:02:25]. Scarbrough frames the follow-up, not '
+                              'the detection, as where the real fortune sits. Refund Retriever runs a '
+                              'filter that catches denied FedEx late-package disputes and routes them to '
+                              'in-house phone dispute agents who call FedEx customer service, conceding it '
+                              'is time consuming but that clients see more refunds each week [JeLyjRF9HEk '
+                              '@ 00:00:33]. Nick at Share a Refund treats rejection as a branching '
+                              'decision: a decision agent inside the claims verification service reads '
+                              'each rejected service-failure dispute and picks the next move, which might '
+                              'be filing on an invalid address correction instead, resubmitting the same '
+                              'service-failure dispute, or taking no further action at all [eTB0fyueR5A @ '
+                              '00:04:36]. Scarbrough bets on volume of retries backed by hundreds of '
+                              'checks, Refund Retriever on human phone escalation for a filtered list, and '
+                              'Share a Refund on per-shipment branching logic that also reconciles every '
+                              'credit back to its dispute for statistical feedback.'],
+               'table': {'caption': 'Competing Parcel-Recovery Playbooks Side by Side',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Contingency fee level charged on recovered refunds',
+                                   'Refund Retriever starts at 50% of savings and negotiates down for '
+                                   'heavy UPS shippers',
+                                   'Cerasis models a 30% cut that still leaves $700 net on $1,000 '
+                                   'recovered',
+                                   'Refund Retriever ([vOX4irOA_Tk @ 00:05:11]); Cerasis , now part of '
+                                   'GlobalTranz ([GnXmnbxCZ-A @ 00:05:14])'],
+                                  ['Which credits the auditor is allowed to bill',
+                                   'Share a Refund splits only refunds on shipments where its system took '
+                                   'action',
+                                   'Refund Retriever refuses to bill FedEx systematic GSR credits it never '
+                                   'requested',
+                                   'Share a Refund ([eTB0fyueR5A @ 00:07:18]); Refund Retriever '
+                                   '([8Bw_30ivpb4 @ 00:00:19])'],
+                                  ['Account size minimums before an auditor takes you',
+                                   'Share a Refund says million-dollar minimums signal thin automation and '
+                                   'throughput limits',
+                                   'Refund Retriever takes shippers from 50 shipments a week to 50 a '
+                                   'minute',
+                                   'Share a Refund ([PheSsrwvW9c @ 00:05:50]); Refund Retriever '
+                                   '([vOX4irOA_Tk @ 00:04:05])'],
+                                  ['How carrier invoices reach the auditing system',
+                                   'Large EDI-integrated shippers open FTP data pools to pass invoices '
+                                   'electronically',
+                                   'Most shippers hand over carrier usernames and passwords for direct '
+                                   'website retrieval',
+                                   'Share a Refund ([eTB0fyueR5A @ 00:00:55]); Refund Retriever '
+                                   '([P3sA9eO0D-k @ 00:00:52])'],
+                                  ['Self-serve audit tool versus done-for-you recovery',
+                                   "Lojistic's free Audisee tool instantly audits uploaded UPS or FedEx "
+                                   'invoices on screen',
+                                   'Lojistic admits chasing the carrier down for the money is easier said '
+                                   'than done',
+                                   'Lojistic ([5yyeqQ4VAFU @ 00:00:00]); Lojistic ([5yyeqQ4VAFU @ '
+                                   '00:02:07])'],
+                                  ['Response when the carrier denies a refund claim',
+                                   'Scarbrough resubmits repeatedly, then has an internal team call a live '
+                                   'human',
+                                   "Share a Refund's decision agent picks address-correction dispute, "
+                                   'resubmission, or no action',
+                                   'Scarbrough Global ([NKDaSW7CKiQ @ 00:02:25]); Share a Refund '
+                                   '([eTB0fyueR5A @ 00:04:55])'],
+                                  ['Headline savings promised to prospective shipper clients',
+                                   'Watchdog Advisory says clients average approximately 30% savings using '
+                                   'its 3D approach',
+                                   'Empact Parcel pitches 1 to 5% immediately; Cerasis says up to 5% '
+                                   'recoupable',
+                                   'Watchdog Advisory ([5eTaFaKQdHY @ 00:00:56]); Empact Parcel '
+                                   '([frD9iyAvyds @ 00:00:00]); Cerasis , now part of GlobalTranz '
+                                   '([nGN0KikmdVk @ 00:00:16])']]}},
+              {'title': 'Section 4: Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The most expensive self-inflicted wound is paying the carrier too fast. '
+                              "Refund Retriever pulled a client's FedEx invoice history after every "
+                              'submitted dispute came back denied and found the reason: an existing '
+                              'payment on file. The client had paid the invoice the moment it posted, '
+                              'which caused FedEx to automatically deny every GSR service-failure request '
+                              'even though the claims were inside the 15-day window [JeLyjRF9HEk @ '
+                              '00:01:06] [JeLyjRF9HEk @ 00:01:25]. A phone dispute agent clawed back all '
+                              'five late packages, $98.42 on a $4,253.53 invoice, a 2.3% savings that '
+                              'would have been zero without the individual calls [JeLyjRF9HEk @ 00:01:42]. '
+                              'Nick at Share a Refund explains the mechanic: credits land on unpaid '
+                              'invoices during the gap between posting and payment, credits to open '
+                              'invoices are easier, and claims filed fast succeed more often; refunds '
+                              'arriving on the credit card on file or by mailed check signal disputes '
+                              'filed later than the ideal timeline [PheSsrwvW9c @ 00:02:03]. Nick also '
+                              'flags accounts payable working from a paper copy of the original invoice, '
+                              'instead of the updated credited amount, which overpays the carrier and '
+                              'forces refunds back as checks. Protect the payment gap until claims are '
+                              'filed, or auto-denials and slow refunds eat the recovery.',
+                              'Brian Gibbs, President of Refund Retriever, built the company after getting '
+                              'burned around 2005: signing up with an existing recovery firm produced only '
+                              'more work, sending copies of invoices, and zero refunds [1JZzLbF5PrI @ '
+                              '00:00:32]. Tracking packages by hand each week, Gibbs found about 10% of '
+                              'shipments from that eBay selling business arriving late, applied for every '
+                              'refund, and started getting money back before hiring a programmer to '
+                              'automate it [1JZzLbF5PrI @ 00:00:50]. The second trap is paying a vendor '
+                              'for credits the carrier gave away. Refund Retriever reports never seeing '
+                              'UPS refund a late parcel automatically, while FedEx rarely posts a '
+                              'systematic GSR failure credit on its own; if systematic SVC fail appears in '
+                              'the original reason column of the FedEx online billing invoice history, '
+                              'FedEx issued it automatically, and an auditor billing for it may be '
+                              'dishonest, though a refund applied within hours of the invoice publishing '
+                              'might be an honest dispute [8Bw_30ivpb4 @ 00:00:48]. Compete Consulting '
+                              'Group explains why shippers cannot simply rely on the carrier: you only '
+                              'have 15 days to claim, the carrier is not going to call to say a package '
+                              'arrived late, and trusting carrier web tools to flag every miss is like '
+                              'asking the fox to guard the henhouse [RCPFFZVF7qs @ 00:00:35].',
+                              'The in-house math is where DIY auditors bleed. Cerasis calculates that if a '
+                              'single audit takes five minutes, a shipper spending $10,000 or less a year '
+                              'on small parcels would burn a full-time employee eight hours a day, five '
+                              'days a week, for nearly 21 weeks, and if 50% of audits require a claim, the '
+                              'time could double or triple while some carriers enforce strict filing '
+                              'limits [nGN0KikmdVk @ 00:02:50] [nGN0KikmdVk @ 00:03:05]. Even after '
+                              'finding errors, Cerasis warns that shippers must still contact carriers, '
+                              'prove their case, and request the refund, a process complex enough that an '
+                              'international refund can take weeks [GnXmnbxCZ-A @ 00:03:43]. Sloppy claims '
+                              'fail too. Nick at Share a Refund insists claims go in quickly and every '
+                              'claim carry the correct claim type and the right amount: a residential '
+                              'surcharge that missed its negotiated discount should be claimed at the net '
+                              'expected refund, while a residential surcharge slapped on a commercial '
+                              'delivery should be claimed in full [eTB0fyueR5A @ 00:03:16]. Speed, claim '
+                              'type, context, expected amount, and priority are all important '
+                              'considerations when filing. Share a Refund checks 40 different points per '
+                              'shipment to catch these, and Compete Consulting Group runs a 44-point audit '
+                              'on every shipment.'],
+               'table': {'caption': 'Firsthand Recovery Failures and the Economics Behind Them',
+                         'headers': ['Failure Mode',
+                                     'What Happened Firsthand',
+                                     'Economics Check',
+                                     'Expert Source'],
+                         'rows': [['Paying FedEx invoices the moment they post',
+                                   'Client paid immediately, so FedEx auto-denied every GSR dispute citing '
+                                   'an existing payment',
+                                   'Phone agents recovered $98.42 on $4,253.53, a 2.3% save otherwise zero',
+                                   'Refund Retriever ([JeLyjRF9HEk @ 00:01:25])'],
+                                  ['Hiring a recovery vendor that creates more work',
+                                   "Brian Gibbs' first recovery firm demanded invoice copies and produced "
+                                   'zero refunds',
+                                   "Manual tracking then showed roughly 10% of the eBay business's "
+                                   'packages arriving late',
+                                   'Refund Retriever ([1JZzLbF5PrI @ 00:00:50])'],
+                                  ['Paying contingency fees on automatic carrier credits',
+                                   'FedEx systematic SVC fail credits can be billed by dishonest auditors '
+                                   'as their own',
+                                   'UPS never auto-refunds late parcels per Refund Retriever, and FedEx '
+                                   'only rarely',
+                                   'Refund Retriever ([8Bw_30ivpb4 @ 00:00:00])'],
+                                  ['Giving up after carrier denials with no reason',
+                                   'Scarbrough data shows carriers deny requests for no reason to '
+                                   'discourage human filers',
+                                   'The fortune is in follow-up: resubmit repeatedly, then call a live '
+                                   'human',
+                                   'Scarbrough Global ([NKDaSW7CKiQ @ 00:01:27])'],
+                                  ['Slow audits leaking refunds past the window',
+                                   'Refunds landing on credit cards or mailed checks signal late dispute '
+                                   'filing',
+                                   'Monthly-reporting auditors likely miss refunds because carriers bill '
+                                   'on weekly cycles',
+                                   'Share a Refund ([PheSsrwvW9c @ 00:04:54])'],
+                                  ['Manual in-house auditing for occasional parcel shippers',
+                                   'A 50-invoice audit example surfaced errors worth roughly one dollar in '
+                                   'total',
+                                   'If savings do not exceed auditor wage times hours, auditing costs more '
+                                   'than ignoring invoices',
+                                   'Cerasis , now part of GlobalTranz ([GnXmnbxCZ-A @ 00:03:23])'],
+                                  ['Missing the late-delivery claim window entirely',
+                                   'Carriers never call shippers to report late packages and claims expire '
+                                   'after 15 days',
+                                   'Compete cites four to six percent of packages delivered late every day',
+                                   'Compete Consulting Group ([RCPFFZVF7qs @ 00:00:17])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Pre-Signature Recovery Checks',
+                           'body': 'Four practitioner-reported leaks that zero out parcel refunds before '
+                                   'any contingency split even matters.',
+                           'items': ['Hold FedEx invoice payment until GSR disputes are filed inside the '
+                                     '15-day window, because an existing payment on file triggered '
+                                     'automatic denial of every late-package claim [Refund Retriever — '
+                                     'JeLyjRF9HEk @ 00:01:06].',
+                                     'Scan the FedEx online billing original reason column for systematic '
+                                     'SVC fail credits before paying any auditor fee on those refunds '
+                                     '[Refund Retriever — 8Bw_30ivpb4 @ 00:00:48].',
+                                     'Require a denied-claim escalation path of repeated resubmission plus '
+                                     'live phone follow-up, since carriers deny requests for no reason '
+                                     '[Scarbrough Global — NKDaSW7CKiQ @ 00:02:25].',
+                                     'Judge audit speed by the aggregate refund method: mostly invoice '
+                                     'credits means fast filing, while card credits or checks mean late '
+                                     'filing [Share a Refund — PheSsrwvW9c @ 00:04:02].']}}],
+ 'pull_quote': '"The real fortune is in the follow-up, because the carriers often deny the requests." — '
+               'Scarbrough Global (NKDaSW7CKiQ @ 00:01:27).',
+ 'diagram_id': 'diag-01',
+ 'action_checklist': ['Hand the auditor UPS and/or FedEx Online Billing credentials with invoice access '
+                      'confirmed, plus the current billing address, so invoices can be downloaded and '
+                      'monitored continuously [Refund Retriever — P3sA9eO0D-k @ 00:00:52].',
+                      'Run a free instant audit on a batch of UPS or FedEx invoices through Audisee, one '
+                      'carrier at a time, and review the findings, details, charts, and stats tabs to size '
+                      'recoverable dollars [Lojistic — 5yyeqQ4VAFU @ 00:00:45].',
+                      'Start a free 30-day invoice audit with no cost, commitment, or obligation to '
+                      'measure carrier credits before committing to a vendor [MTC Recovery Consultants — '
+                      'bNqu0vah45U @ 00:01:01].',
+                      'Confirm the auditor validates every cost component, such as checking that '
+                      'residential surcharges hit truly residential addresses and carry the negotiated '
+                      'discount [Share a Refund — eTB0fyueR5A @ 00:01:51].',
+                      'Negotiate the starting 50% contingency split downward as shipping volume and weekly '
+                      'refund counts rise [Refund Retriever — vOX4irOA_Tk @ 00:05:29].',
+                      'Demand recurring reports showing the number of incorrect billing statements, the '
+                      'amount recouped from the carrier, and net savings after all third-party fees '
+                      '[Cerasis , now part of GlobalTranz — nGN0KikmdVk @ 00:04:14].'],
+ 'statutory_citations': [{'title': 'Refund Retriever — FedEx Late Package Refund Denied? [00:01:06]',
+                          'url': 'https://www.youtube.com/watch?v=JeLyjRF9HEk&t=66s',
+                          'relevance': 'Primary practitioner testimony on FedEx auto-denying GSR disputes '
+                                       'after early invoice payment and recovering them by phone.'},
+                         {'title': 'Scarbrough Global — How does the Parcel Audit work? [00:01:27]',
+                          'url': 'https://www.youtube.com/watch?v=NKDaSW7CKiQ&t=87s',
+                          'relevance': 'Primary practitioner testimony on carriers denying refund requests '
+                                       'for no reason and the resubmit-then-call follow-up playbook.'},
+                         {'title': 'Share a Refund — One way to qualify a good parcel audit [00:02:03]',
+                          'url': 'https://www.youtube.com/watch?v=PheSsrwvW9c&t=123s',
+                          'relevance': 'Primary practitioner testimony on filing claims during the '
+                                       'unpaid-invoice gap and reading refund methods as audit-speed '
+                                       'signals.'},
+                         {'title': 'Refund Retriever — Automatic UPS & FedEx GSR Service Failure Refunds '
+                                   '[00:00:48]',
+                          'url': 'https://www.youtube.com/watch?v=8Bw_30ivpb4&t=48s',
+                          'relevance': 'Primary practitioner testimony on spotting systematic SVC fail '
+                                       'credits that auditors should never bill.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'P3sA9eO0D-k',
+                       'title': 'How to get started with Refund Retriever FedEx UPS auditing',
+                       'channel': 'Refund Retriever',
+                       'author': 'Refund Retriever',
+                       'text': 'Our functionality is similar to mint.com, we constantly use these '
+                               'credentials to monitor your invoices and shipping activity.',
+                       'tip': 'Our functionality is similar to mint.com, we constantly use these '
+                              'credentials to monitor your invoices and shipping activity.',
+                       'timestamp': 52,
+                       'timestamp_seconds': 52,
+                       'timestamp_label': '[00:00:52]',
+                       'url': 'https://www.youtube.com/watch?v=P3sA9eO0D-k&t=52s',
+                       'markdown': '[00:00:52](https://www.youtube.com/watch?v=P3sA9eO0D-k&t=52s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'JeLyjRF9HEk',
+                       'title': 'FedEx Late Package Refund Denied?',
+                       'channel': 'Refund Retriever',
+                       'author': 'Refund Retriever',
+                       'text': 'Our client had paid for the invoice as soon as it was available. This '
+                               'caused FedEx to automatically deny any GSR service failure requests.',
+                       'tip': 'Our client had paid for the invoice as soon as it was available. This '
+                              'caused FedEx to automatically deny any GSR service failure requests.',
+                       'timestamp': 85,
+                       'timestamp_seconds': 85,
+                       'timestamp_label': '[00:01:25]',
+                       'url': 'https://www.youtube.com/watch?v=JeLyjRF9HEk&t=85s',
+                       'markdown': '[00:01:25](https://www.youtube.com/watch?v=JeLyjRF9HEk&t=85s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'bNqu0vah45U',
+                       'title': 'Parcel Auditing to Lower FedEx, UPS, DHL, and Purolator Bills',
+                       'channel': 'MTC Recovery Consultants',
+                       'author': 'MTC Recovery Consultants',
+                       'text': "Go ahead and take advantage of our free 30-day invoice audit, there's no "
+                               'cost, no commitment or obligation.',
+                       'tip': "Go ahead and take advantage of our free 30-day invoice audit, there's no "
+                              'cost, no commitment or obligation.',
+                       'timestamp': 61,
+                       'timestamp_seconds': 61,
+                       'timestamp_label': '[00:01:01]',
+                       'url': 'https://www.youtube.com/watch?v=bNqu0vah45U&t=61s',
+                       'markdown': '[00:01:01](https://www.youtube.com/watch?v=bNqu0vah45U&t=61s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '5eTaFaKQdHY',
+                       'title': 'Parcel Shipping Audit',
+                       'channel': 'Watchdog Advisory',
+                       'author': 'Watchdog Advisory',
+                       'text': 'Our fee is simply a portion of your savings and contingent on results, if '
+                               "there is no savings then there's no fee.",
+                       'tip': 'Our fee is simply a portion of your savings and contingent on results, if '
+                              "there is no savings then there's no fee.",
+                       'timestamp': 107,
+                       'timestamp_seconds': 107,
+                       'timestamp_label': '[00:01:47]',
+                       'url': 'https://www.youtube.com/watch?v=5eTaFaKQdHY&t=107s',
+                       'markdown': '[00:01:47](https://www.youtube.com/watch?v=5eTaFaKQdHY&t=107s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'eTB0fyueR5A',
+                       'title': 'Workflow of a good parcel audit',
+                       'channel': 'Share a Refund',
+                       'author': 'Share a Refund',
+                       'text': 'Share a Refund only splits the refunds on shipments where actions were '
+                               'taken by our system to secure refunds, and this results in a lower service '
+                               'fee.',
+                       'tip': 'Share a Refund only splits the refunds on shipments where actions were '
+                              'taken by our system to secure refunds, and this results in a lower service '
+                              'fee.',
+                       'timestamp': 438,
+                       'timestamp_seconds': 438,
+                       'timestamp_label': '[00:07:18]',
+                       'url': 'https://www.youtube.com/watch?v=eTB0fyueR5A&t=438s',
+                       'markdown': '[00:07:18](https://www.youtube.com/watch?v=eTB0fyueR5A&t=438s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'PheSsrwvW9c',
+                       'title': 'One way to qualify a good parcel audit',
+                       'channel': 'Share a Refund',
+                       'author': 'Share a Refund',
+                       'text': "The credits lower the total amount of the invoice, and we've "
+                               'scientifically concluded that filing claims quickly increases the success '
+                               'rate of the refund delivered.',
+                       'tip': "The credits lower the total amount of the invoice, and we've scientifically "
+                              'concluded that filing claims quickly increases the success rate of the '
+                              'refund delivered.',
+                       'timestamp': 123,
+                       'timestamp_seconds': 123,
+                       'timestamp_label': '[00:02:03]',
+                       'url': 'https://www.youtube.com/watch?v=PheSsrwvW9c&t=123s',
+                       'markdown': '[00:02:03](https://www.youtube.com/watch?v=PheSsrwvW9c&t=123s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'GnXmnbxCZ-A',
+                       'title': 'Reducing Parcel Shipping Costs with Parcel Audits',
+                       'channel': 'Cerasis , now part of GlobalTranz',
+                       'author': 'Cerasis , now part of GlobalTranz',
+                       'text': 'If the total savings is a thousand, a shipper paying 30% to the auditing '
+                               'service would still see a net refund of $700.',
+                       'tip': 'If the total savings is a thousand, a shipper paying 30% to the auditing '
+                              'service would still see a net refund of $700.',
+                       'timestamp': 314,
+                       'timestamp_seconds': 314,
+                       'timestamp_label': '[00:05:14]',
+                       'url': 'https://www.youtube.com/watch?v=GnXmnbxCZ-A&t=314s',
+                       'markdown': '[00:05:14](https://www.youtube.com/watch?v=GnXmnbxCZ-A&t=314s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '5yyeqQ4VAFU',
+                       'title': 'Audisee Tutorial',
+                       'channel': 'Lojistic',
+                       'author': 'Lojistic',
+                       'text': 'You can choose multiple invoices all at once from UPS or FedEx, but right '
+                               "now Audisee won't let you audit UPS and FedEx invoices at the same time.",
+                       'tip': 'You can choose multiple invoices all at once from UPS or FedEx, but right '
+                              "now Audisee won't let you audit UPS and FedEx invoices at the same time.",
+                       'timestamp': 45,
+                       'timestamp_seconds': 45,
+                       'timestamp_label': '[00:00:45]',
+                       'url': 'https://www.youtube.com/watch?v=5yyeqQ4VAFU&t=45s',
+                       'markdown': '[00:00:45](https://www.youtube.com/watch?v=5yyeqQ4VAFU&t=45s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'RCPFFZVF7qs',
+                       'title': 'Understanding Shipping Invoicing | Invoice Auditing Service | Compete '
+                                'Consulting Group',
+                       'channel': 'Compete Consulting Group',
+                       'author': 'Compete Consulting Group',
+                       'text': 'On average four to six percent of packages are delivered late every day, '
+                               'and you only have 15 days to claim the money.',
+                       'tip': 'On average four to six percent of packages are delivered late every day, '
+                              'and you only have 15 days to claim the money.',
+                       'timestamp': 17,
+                       'timestamp_seconds': 17,
+                       'timestamp_label': '[00:00:17]',
+                       'url': 'https://www.youtube.com/watch?v=RCPFFZVF7qs&t=17s',
+                       'markdown': '[00:00:17](https://www.youtube.com/watch?v=RCPFFZVF7qs&t=17s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'vOX4irOA_Tk',
+                       'title': 'Importance of Small Parcel Auditing',
+                       'channel': 'Refund Retriever',
+                       'author': 'Refund Retriever',
+                       'text': 'We start at 50% of whatever we save you, so if in a certain month we get '
+                               'you back $50 worth of refunds on late deliveries, our fee is going to be '
+                               '25.',
+                       'tip': 'We start at 50% of whatever we save you, so if in a certain month we get '
+                              'you back $50 worth of refunds on late deliveries, our fee is going to be '
+                              '25.',
+                       'timestamp': 311,
+                       'timestamp_seconds': 311,
+                       'timestamp_label': '[00:05:11]',
+                       'url': 'https://www.youtube.com/watch?v=vOX4irOA_Tk&t=311s',
+                       'markdown': '[00:05:11](https://www.youtube.com/watch?v=vOX4irOA_Tk&t=311s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'NKDaSW7CKiQ',
+                       'title': 'How does the Parcel Audit work?',
+                       'channel': 'Scarbrough Global',
+                       'author': 'Scarbrough Global',
+                       'text': "We're going to resubmit it, resubmit it, and if it still gets denied, "
+                               "we're going to have our internal team actually reach out and talk to a "
+                               'live human being about it.',
+                       'tip': "We're going to resubmit it, resubmit it, and if it still gets denied, we're "
+                              'going to have our internal team actually reach out and talk to a live human '
+                              'being about it.',
+                       'timestamp': 145,
+                       'timestamp_seconds': 145,
+                       'timestamp_label': '[00:02:25]',
+                       'url': 'https://www.youtube.com/watch?v=NKDaSW7CKiQ&t=145s',
+                       'markdown': '[00:02:25](https://www.youtube.com/watch?v=NKDaSW7CKiQ&t=145s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'nGN0KikmdVk',
+                       'title': '7 Misconceptions of Parcel Audits',
+                       'channel': 'Cerasis , now part of GlobalTranz',
+                       'author': 'Cerasis , now part of GlobalTranz',
+                       'text': 'If a single audit takes five minutes to complete, that would equal a '
+                               'full-time employee working eight hours per day, five days a week, for '
+                               'nearly 21 weeks.',
+                       'tip': 'If a single audit takes five minutes to complete, that would equal a '
+                              'full-time employee working eight hours per day, five days a week, for '
+                              'nearly 21 weeks.',
+                       'timestamp': 170,
+                       'timestamp_seconds': 170,
+                       'timestamp_label': '[00:02:50]',
+                       'url': 'https://www.youtube.com/watch?v=nGN0KikmdVk&t=170s',
+                       'markdown': '[00:02:50](https://www.youtube.com/watch?v=nGN0KikmdVk&t=170s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '1JZzLbF5PrI',
+                       'title': 'About Refund Retriever UPS & FedEx Parcel Auditing',
+                       'channel': 'Refund Retriever',
+                       'author': 'Refund Retriever',
+                       'text': 'Sending them copies of invoices and getting zero refunds; I quickly '
+                               'realized about 10% of my packages were arriving late.',
+                       'tip': 'Sending them copies of invoices and getting zero refunds; I quickly '
+                              'realized about 10% of my packages were arriving late.',
+                       'timestamp': 50,
+                       'timestamp_seconds': 50,
+                       'timestamp_label': '[00:00:50]',
+                       'url': 'https://www.youtube.com/watch?v=1JZzLbF5PrI&t=50s',
+                       'markdown': '[00:00:50](https://www.youtube.com/watch?v=1JZzLbF5PrI&t=50s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '8Bw_30ivpb4',
+                       'title': 'Automatic UPS & FedEx GSR Service Failure Refunds',
+                       'channel': 'Refund Retriever',
+                       'author': 'Refund Retriever',
+                       'text': 'We have never seen UPS give a refund on a late delivered parcel '
+                               'automatically.',
+                       'tip': 'We have never seen UPS give a refund on a late delivered parcel '
+                              'automatically.',
+                       'timestamp': 0,
+                       'timestamp_seconds': 0,
+                       'timestamp_label': '[00:00:00]',
+                       'url': 'https://www.youtube.com/watch?v=8Bw_30ivpb4&t=0s',
+                       'markdown': '[00:00:00](https://www.youtube.com/watch?v=8Bw_30ivpb4&t=0s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'frD9iyAvyds',
+                       'title': 'Parcel Auditing - Empact Parcel',
+                       'channel': 'Empact Parcel',
+                       'author': 'Empact Parcel',
+                       'text': "In other words if your packages are late they're free; the problem is the "
+                               "carriers won't tell you what shipments are due a refund.",
+                       'tip': "In other words if your packages are late they're free; the problem is the "
+                              "carriers won't tell you what shipments are due a refund.",
+                       'timestamp': 19,
+                       'timestamp_seconds': 19,
+                       'timestamp_label': '[00:00:19]',
+                       'url': 'https://www.youtube.com/watch?v=frD9iyAvyds&t=19s',
+                       'markdown': '[00:00:19](https://www.youtube.com/watch?v=frD9iyAvyds&t=19s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'eEERM3QJqyI',
+                       'title': 'RAFL Parcel Invoice Auditing Video',
+                       'channel': 'RAF Logistics',
+                       'author': 'RAF Logistics',
+                       'text': "With over 130 different add-on fees the carriers can now charge, it's a "
+                               'daunting task.',
+                       'tip': "With over 130 different add-on fees the carriers can now charge, it's a "
+                              'daunting task.',
+                       'timestamp': 17,
+                       'timestamp_seconds': 17,
+                       'timestamp_label': '[00:00:17]',
+                       'url': 'https://www.youtube.com/watch?v=eEERM3QJqyI&t=17s',
+                       'markdown': '[00:00:17](https://www.youtube.com/watch?v=eEERM3QJqyI&t=17s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'}]}

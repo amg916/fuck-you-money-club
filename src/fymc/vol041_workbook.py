@@ -1,1864 +1,877 @@
 from __future__ import annotations
 
-
 def build_volume_041_workbook() -> dict:
-    def field(name: str, input_type: str, prompt: str, example: str) -> dict:
-        return {
-            "name": name,
-            "type": input_type,
-            "prompt": prompt,
-            "example": example,
-        }
-
-    return {
-        "workbook_id": "wb-041-buying-group-card-float-and-rebate-arbitrage",
-        "volume_id": "vol-041-buying-group-card-float-and-rebate-arbitrage",
-        "title": (
-            "Buying Group, Commercial Card-Float & Rebate Arbitrage "
-            "— Operator Companion Workbook"
-        ),
-        "subtitle": (
-            "6 Printable Operator Worksheets for Wholesale Buying-Group "
-            "Underwriting, Commercial Card and Portal Spread Testing, "
-            "Repayment-Safe Treasury Sweeps, Auditable Execution, "
-            "Automation Controls, and a Measured 30-Day Launch"
-        ),
-        "worksheets": [
-            {
-                "worksheet_id": "ws-01",
-                "number": 1,
-                "title": (
-                    "Arbitrage Deal / Counterparty Underwriting "
-                    "& Spread Qualification"
-                ),
-                "purpose": (
-                    "Qualify each opportunity before committing purchasing capacity. "
-                    "Separate wholesale fulfillment, commercial card and portal "
-                    "rebates, and treasury earnings into distinct economic models. "
-                    "Document enforceable commitments, settlement behavior, reward "
-                    "eligibility, and repayment resources so apparent spread never "
-                    "conceals counterparty exposure or borrowed principal."
-                ),
-                "chapter_ref": "Q1, Q2, Q6",
-                "instructions": [
-                    (
-                        "Assign every opportunity to one primary model before "
-                        "calculating returns. Record merchandise reimbursement, "
-                        "purchase-linked rewards, and treasury income in separate "
-                        "columns, even when one operating cycle produces all three. "
-                        "Never present card capacity or merchant transaction volume "
-                        "as earned income."
-                    ),
-                    (
-                        "Obtain the buying group's written quantity, SKU, destination, "
-                        "acceptance criteria, and payout clock before ordering. Treat "
-                        "BuyForMeRetail, Pointsmaker, and MaxOutDeals as candidates "
-                        "requiring current verification, rather than assuming their "
-                        "terms, warehouse capacity, or settlement reliability."
-                    ),
-                    (
-                        "Verify sales-tax treatment using the actual seller, delivery "
-                        "destination, resale documentation, and transaction facts. "
-                        "A DE, NH, or OR warehouse address alone does not establish "
-                        "that every charge disappears or that a particular retailer "
-                        "will accept your documentation."
-                    ),
-                    (
-                        "Price the opportunity without speculative rewards first. "
-                        "Then add separately supported commercial card rewards and "
-                        "one eligible shopping portal. Check resale exclusions, "
-                        "category caps, offer activation, and payment-method restrictions "
-                        "before describing any reward rate as available."
-                    ),
-                    (
-                        "Approve only quantities that survive delayed reimbursement "
-                        "without interest-bearing balances or emergency sales. Record "
-                        "the person responsible for settlement escalation, the cash "
-                        "reserve supporting repayment, and the precise conditions "
-                        "that suspend additional purchases from the same counterparty."
-                    ),
-                ],
-                "fields": [
-                    field(
-                        "Primary model and income boundaries",
-                        "textarea",
-                        (
-                            "Identify the primary operating model, the paying party, "
-                            "the purchased asset or service, and each separate income "
-                            "stream. Explain which amounts are reimbursements, "
-                            "purchase-price adjustments, earned fees, or interest."
-                        ),
-                        (
-                            "Deal BG-001 is wholesale fulfillment, not a treasury "
-                            "trade. Ten devices cost $8,000 and carry an $8,240 "
-                            "written reimbursement commitment. A supported $160 card "
-                            "reward is tracked separately. Potential portal rewards "
-                            "and subsequent interest remain separate records; the "
-                            "$8,000 card liability is never earnings."
-                        ),
-                    ),
-                    field(
-                        "Counterparty identity and verified settlement history",
-                        "textarea",
-                        (
-                            "Record the contracting entity, independently confirmed "
-                            "payment instructions, evidence sources, and observed "
-                            "settlement distribution. Distinguish your own completed "
-                            "transactions from marketing statements or another "
-                            "operator's unverified experience."
-                        ),
-                        (
-                            "The pilot file for a prospective Pointsmaker arrangement "
-                            "must contain its current contracting entity and independently "
-                            "confirmed payout details before release. Illustrative "
-                            "internal results from five later pilot lots show settlement "
-                            "in three, four, four, five, and eight business days, "
-                            "supporting an eight-day stress input."
-                        ),
-                    ),
-                    field(
-                        "Written commitment and acceptance specification",
-                        "textarea",
-                        (
-                            "Capture the commitment identifier, exact product "
-                            "configuration, quantity ceiling, delivery window, "
-                            "inspection rules, and payment trigger. State how "
-                            "substitutions, late arrivals, rejected units, and "
-                            "commitment cancellation affect reimbursement."
-                        ),
-                        (
-                            "Commitment BG-001 covers ten sealed devices with matching "
-                            "manufacturer SKU and serial-number records at $824 each. "
-                            "The proposed addendum requires inspection within two "
-                            "business days after carrier delivery and written defect "
-                            "evidence for rejection. Substitutions require written "
-                            "acceptance before purchase; silence does not authorize "
-                            "different merchandise."
-                        ),
-                    ),
-                    field(
-                        "Warehouse destination and tax sourcing evidence",
-                        "textarea",
-                        (
-                            "Identify the actual receiving warehouse, seller tax "
-                            "treatment, resale-certificate status, and evidence retained. "
-                            "Explain why the transaction receives its recorded "
-                            "treatment rather than relying exclusively on a "
-                            "destination abbreviation."
-                        ),
-                        (
-                            "The selected shipment goes to a verified DE receiving "
-                            "address listed in the commitment. The retailer invoice "
-                            "shows zero sales tax and the shipping record matches "
-                            "that destination. The file retains the resale certificate "
-                            "where applicable, seller acceptance, and transaction-specific "
-                            "sourcing support rather than a blanket exemption assumption."
-                        ),
-                    ),
-                    field(
-                        "Commercial card reward eligibility",
-                        "textarea",
-                        (
-                            "Record the exact business card program, eligible "
-                            "transaction category, reward rate, exclusions, limits, "
-                            "posting delay, and issuer terms. Distinguish a documented "
-                            "uncapped rate from a promotional headline or "
-                            "conditional offer."
-                        ),
-                        (
-                            "For this illustrative deal, the current business card "
-                            "agreement supports 2% on the $8,000 eligible merchandise "
-                            "purchase, producing $160. The evidence packet includes "
-                            "the applicable terms and transaction category. A separate "
-                            "4% offer is excluded until activation, category matching, "
-                            "remaining capacity, and resale eligibility are documented."
-                        ),
-                    ),
-                    field(
-                        "Portal attribution and stacking decision",
-                        "textarea",
-                        (
-                            "Choose one shopping portal per transaction and document "
-                            "its attribution requirements, resale restrictions, coupon "
-                            "rules, payout conditions, and reversal window. Explain "
-                            "whether portal value enters the base calculation "
-                            "or only conditional upside."
-                        ),
-                        (
-                            "Rakuten and TopCashback are compared, but only one "
-                            "tracking path is selected. A possible 1% reward would "
-                            "add $80 on $8,000 of eligible merchandise. Because "
-                            "wholesale eligibility remains unverified in this example, "
-                            "the approved base spread includes zero portal income; "
-                            "$80 appears only as conditional upside."
-                        ),
-                    ),
-                    field(
-                        "B2B invoice fee-versus-rebate screen",
-                        "textarea",
-                        (
-                            "For a separate Plastiq or Melio opportunity, document "
-                            "the real invoice, permitted payment route, current "
-                            "quoted fee, reward treatment, and recipient settlement "
-                            "timing. Calculate spread without borrowing assumptions "
-                            "that the transaction cannot support."
-                        ),
-                        (
-                            "A hypothetical $10,000 supplier invoice carries a quoted "
-                            "2.9% processing fee, or $290. If the issuer awards "
-                            "$200 on the invoice amount only, the transaction loses "
-                            "$90 before other costs. It is rejected. The example "
-                            "uses an input quote, not a claim about either platform's "
-                            "current pricing."
-                        ),
-                    ),
-                    field(
-                        "Treasury opportunity and available cash source",
-                        "textarea",
-                        (
-                            "Identify whether deployable cash is owner capital or "
-                            "cleared operating proceeds. Record the repayment reserve, "
-                            "eligible holding period, expected yield, bonus conditions, "
-                            "and withdrawal timing before treating treasury earnings "
-                            "as incremental value."
-                        ),
-                        (
-                            "An independent $10,000 owner-funded cash allocation may "
-                            "earn approximately $34.52 over 28 days at a 4.5% "
-                            "simple annualized rate using 365 days. The card repayment "
-                            "reserve is excluded. Any bank bonus remains separate "
-                            "until its deposit, balance, duration, account-status, "
-                            "and payout requirements are satisfied."
-                        ),
-                    ),
-                    field(
-                        "Concentration limit and delayed-payout stress",
-                        "textarea",
-                        (
-                            "Set counterparty and issuer exposure limits using "
-                            "unsettled purchase cost, not expected rewards. Describe "
-                            "the longest modeled payout delay, available unrestricted "
-                            "cash, and the stop-purchase trigger protecting "
-                            "statement repayment."
-                        ),
-                        (
-                            "The first counterparty receives an $8,000 unsettled-cost "
-                            "limit against $20,000 of unrestricted cash. An eight-business-day "
-                            "payout stress leaves the statement fully repayable. "
-                            "Additional commitments stop when any accepted lot passes "
-                            "its written payment date or total unsettled cost would "
-                            "exceed the limit, even if attractive offers remain."
-                        ),
-                    ),
-                    field(
-                        "Approved spread and rejection rationale",
-                        "textarea",
-                        (
-                            "Summarize contribution before overhead, distinguish "
-                            "confirmed assumptions from conditional upside, and "
-                            "document the acceptance decision. Include merchandise "
-                            "cost, shipping, loss provision, rewards, and the "
-                            "specific remaining verification steps."
-                        ),
-                        (
-                            "BG-001 shows $240 merchandise spread plus $160 supported "
-                            "card rewards, less $60 shipping and a $40 loss "
-                            "provision, yielding $300 expected contribution. Verified "
-                            "portal eligibility could add $80 later. Purchase remains "
-                            "blocked until the commitment and shipping coverage are "
-                            "confirmed; future card rewards cannot fund today's repayment."
-                        ),
-                    ),
-                ],
-                "completion_gate": (
-                    "Advance only when the commitment, counterparty identity, "
-                    "destination treatment, supported reward terms, $300 base "
-                    "contribution, and full repayment resources are documented. "
-                    "Leave the $80 conditional portal amount outside the approved "
-                    "base case until eligibility evidence resolves it."
-                ),
-            },
-            {
-                "worksheet_id": "ws-02",
-                "number": 2,
-                "title": (
-                    "Unit Economics, Escrow/Reserve Float "
-                    "& Working-Capital Calculator"
-                ),
-                "purpose": (
-                    "Build a cash-first operating model that reconciles individual "
-                    "deals with the supplied annual scorecard. Separate gross "
-                    "activity, retained contribution, owner profit, restricted "
-                    "balances, and card liabilities. Stress timing mismatches "
-                    "before allocating cleared cash to bank bonuses or T-bill "
-                    "holdings."
-                ),
-                "chapter_ref": "Q3, Q4",
-                "instructions": [
-                    (
-                        "Create three economic schedules: wholesale merchandise, "
-                        "commercial card and portal rebates, and treasury income. "
-                        "Link them through transaction identifiers without combining "
-                        "their denominators. An $8,000 merchandise purchase, a "
-                        "$160 reward, and an $8,000 liability describe different "
-                        "economic facts."
-                    ),
-                    (
-                        "Enter the Conservative, Base, and Scaled figures exactly "
-                        "as supplied. Apply the 35% retained-share assumption to "
-                        "gross scorecard revenue, then reconcile remaining costs "
-                        "to owner profit. Do not force individual electronics "
-                        "transactions to exhibit that portfolio-level retained share."
-                    ),
-                    (
-                        "Build the payment calendar from actual purchase, statement "
-                        "closing, payment due, warehouse acceptance, and cleared "
-                        "ACH dates. Treat 55 days as a possible cycle configuration, "
-                        "not a universal entitlement. Preserve a conservative "
-                        "repayment buffer before any treasury allocation."
-                    ),
-                    (
-                        "Distinguish an internal repayment reserve from contractual "
-                        "escrow. Record ownership, withdrawal rights, restrictions, "
-                        "and release conditions for every account. Do not describe "
-                        "ordinary business cash as protected escrow merely because "
-                        "a spreadsheet assigns it a dedicated label."
-                    ),
-                    (
-                        "Run delayed ACH, denied rewards, rejected merchandise, "
-                        "carrier loss, and issuer shutdown cases separately and "
-                        "together. Show the resulting cash gap and contribution "
-                        "loss. Reduce purchase volume whenever survival depends "
-                        "on selling assets before their scheduled liquidity date."
-                    ),
-                ],
-                "fields": [
-                    field(
-                        "Wholesale landed-cost contribution bridge",
-                        "textarea",
-                        (
-                            "Calculate wholesale contribution using committed "
-                            "reimbursement less actual merchandise cost, shipping, "
-                            "and expected loss. Keep purchase-linked rewards on "
-                            "separate lines and distinguish cash expenses from "
-                            "noncash planning provisions."
-                        ),
-                        (
-                            "Ten devices cost $8,000; reimbursement is $8,240. "
-                            "Shipping costs $60 and the planning loss provision "
-                            "is $40, leaving $140 wholesale contribution. Supported "
-                            "card rewards add $160, bringing expected combined "
-                            "contribution to $300. Cleared reimbursement less merchandise "
-                            "and shipping produces $180 cash spread before reward "
-                            "posting or realized losses."
-                        ),
-                    ),
-                    field(
-                        "Conservative canonical annual reconciliation",
-                        "textarea",
-                        (
-                            "Reconcile the Conservative scenario from gross "
-                            "scorecard revenue through the retained-share bridge "
-                            "to owner profit. State retained margin, staffing, "
-                            "and the distinction between routine overhead and "
-                            "other operating costs."
-                        ),
-                        (
-                            "Conservative gross revenue is $250,000. The 65% "
-                            "merchandise-cost bridge is $162,500, leaving $87,500 "
-                            "retained revenue. Remaining costs total $67,500, leaving "
-                            "$20,000 owner profit: 8% gross margin and 22.86% "
-                            "retained margin. Staffing is one full-time operator "
-                            "plus two contractors; illustrative overhead is $18,000 "
-                            "annually within those remaining costs."
-                        ),
-                    ),
-                    field(
-                        "Base canonical annual reconciliation",
-                        "textarea",
-                        (
-                            "Reconcile the Base scenario without changing the "
-                            "canonical gross amount, owner profit, or retained "
-                            "share. Separate monthly overhead from other residual "
-                            "costs, and identify the team assumed by the "
-                            "scorecard."
-                        ),
-                        (
-                            "Base gross revenue is $1,025,000. Subtract the $666,250 "
-                            "merchandise-cost bridge to obtain $358,750 retained "
-                            "revenue. Residual costs of $215,250 leave $143,500 "
-                            "owner profit, equal to 14% gross and 40% retained "
-                            "margins. Illustrative residual costs comprise $54,000 "
-                            "annual overhead and $161,250 other costs; staffing "
-                            "is one full-time operator plus two contractors."
-                        ),
-                    ),
-                    field(
-                        "Scaled canonical annual reconciliation",
-                        "textarea",
-                        (
-                            "Reconcile the Scaled scenario and show both gross "
-                            "and retained profit margins. Explain how the "
-                            "five-person team and upper monthly overhead input "
-                            "fit inside the residual cost allowance."
-                        ),
-                        (
-                            "Scaled gross revenue is $1,800,000. The $1,170,000 "
-                            "merchandise-cost bridge leaves $630,000 retained revenue. "
-                            "Residual costs of $270,000 leave $360,000 owner "
-                            "profit, equal to 20% gross and 57.14% retained "
-                            "margins. Staffing is two full-time operators plus "
-                            "three contractors. Illustrative annual overhead of "
-                            "$108,000 leaves $162,000 for other residual costs."
-                        ),
-                    ),
-                    field(
-                        "Scorecard basis versus accounting presentation",
-                        "textarea",
-                        (
-                            "Document the supplied 35% retained-share convention "
-                            "and distinguish it from transaction-specific accounting. "
-                            "Identify who controls merchandise before transfer "
-                            "and how purchase rebates, interest, and principal-agent "
-                            "conclusions affect ledger presentation."
-                        ),
-                        (
-                            "The planning bridge labels $358,750 as Base retained "
-                            "revenue, but does not automatically establish ASC 606 "
-                            "revenue presentation. The accountant evaluates control "
-                            "under ASC 606-10-55-36 through 55-40. Purchase-linked "
-                            "rebates may reduce inventory cost; interest is separately "
-                            "classified. The workbook preserves the canonical bridge "
-                            "while maintaining an accounting-policy reconciliation."
-                        ),
-                    ),
-                    field(
-                        "Statement dates and usable float days",
-                        "textarea",
-                        (
-                            "Enter actual card dates and calculate the available "
-                            "repayment interval for each purchase. Record whether "
-                            "the grace period applies, and identify charges "
-                            "whose timing differs materially from a headline "
-                            "55-day assumption."
-                        ),
-                        (
-                            "An illustrative January 2, 2027 purchase closes on "
-                            "January 31 and is due February 25, providing 54 "
-                            "calendar days from purchase. A January 30 purchase "
-                            "has only 26 days. The operator verifies grace-period "
-                            "eligibility and schedules repayment for February 22, "
-                            "rather than assuming every charge receives 55 days."
-                        ),
-                    ),
-                    field(
-                        "Reserve ownership and escrow restrictions",
-                        "textarea",
-                        (
-                            "List each cash account, balance, legal owner, "
-                            "permitted use, and withdrawal restriction. Define "
-                            "the amount dedicated to card repayment and "
-                            "whether any actual escrow agreement changes access "
-                            "or beneficiary rights."
-                        ),
-                        (
-                            "A business deposit account holds $20,000 of owner "
-                            "capital. An internal allocation reserves $8,000 for "
-                            "the card statement and $2,000 for shipping, disputes, "
-                            "and operating variability. This is a management reserve, "
-                            "not escrow. No third-party beneficiary or contractual "
-                            "release condition exists; $10,000 remains available "
-                            "for a separately approved treasury allocation."
-                        ),
-                    ),
-                    field(
-                        "Treasury yield and bonus calculator",
-                        "textarea",
-                        (
-                            "Calculate interest using deployable cash, the actual "
-                            "holding period, and an explicit yield convention. "
-                            "Record bonus qualification separately, and prevent "
-                            "the same cash balance from earning overlapping "
-                            "returns in the model."
-                        ),
-                        (
-                            "For planning, $10,000 multiplied by 4.5% multiplied "
-                            "by 28 divided by 365 equals $34.52 before tax "
-                            "and fees. Actual T-bill earnings use purchase price "
-                            "and maturity proceeds. A hypothetical $200 bank bonus "
-                            "requiring 90 days is excluded from the 28-day result "
-                            "and cannot use the same simultaneously allocated dollars."
-                        ),
-                    ),
-                    field(
-                        "Combined delayed-ACH and reward-denial stress",
-                        "textarea",
-                        (
-                            "Model reimbursement arriving after the card due "
-                            "date while a reward is denied. Show the "
-                            "cash required to repay, revised contribution, "
-                            "purchasing suspension, and whether an additional "
-                            "loss could exhaust available reserves."
-                        ),
-                        (
-                            "Assume the $8,240 reimbursement arrives March 5, "
-                            "after the February 25 card due date, and the "
-                            "$160 reward is denied. The reserved $8,000 repays "
-                            "the card without relying on ACH. Expected contribution "
-                            "falls from $300 to $140. New purchases stop; "
-                            "any disputed reimbursement triggers a separate "
-                            "full-principal loss test."
-                        ),
-                    ),
-                    field(
-                        "Working-capital ceiling and startup allocation",
-                        "textarea",
-                        (
-                            "Allocate startup cash within the supplied range "
-                            "and calculate the maximum unsettled purchasing "
-                            "cost supported without future reimbursements. Include "
-                            "monthly overhead, shipment exposure, and a "
-                            "minimum cash floor before authorizing expansion."
-                        ),
-                        (
-                            "A $25,000 startup allocation sits within the "
-                            "$10,000–$55,000 range: $16,000 supports two $8,000 "
-                            "unsettled lots, $4,500 covers one illustrative Base "
-                            "overhead month, and $4,500 remains a contingency "
-                            "floor. Maximum unsettled merchandise cost is $16,000; "
-                            "available credit above that amount does not increase "
-                            "the cash-supported purchasing limit."
-                        ),
-                    ),
-                ],
-                "completion_gate": (
-                    "All three canonical profit bridges must reconcile exactly. "
-                    "Every purchase must have dated, unrestricted repayment "
-                    "resources; treasury allocations must exclude required reserves. "
-                    "The delayed-ACH stress must show full statement repayment "
-                    "without treating expected rewards or borrowed principal as cash profit."
-                ),
-            },
-            {
-                "worksheet_id": "ws-03",
-                "number": 3,
-                "title": (
-                    "End-to-End Execution, Idempotent Ledger "
-                    "& QA Pre-Flight Sheet"
-                ),
-                "purpose": (
-                    "Translate a qualified deal into a reproducible evidence "
-                    "chain from commitment through cleared settlement. Define "
-                    "stable identifiers, duplicate-resistant imports, parcel "
-                    "custody records, and exception ownership. Make every ledger "
-                    "balance traceable without relying on portal screenshots "
-                    "or an operator's recollection."
-                ),
-                "chapter_ref": "Q7, Q8",
-                "instructions": [
-                    (
-                        "Create the deal record before any purchase. Attach "
-                        "the commitment, approved economics, destination, payment "
-                        "method, and quantity authorization. Generate separate "
-                        "identifiers for orders, parcels, serial numbers, card "
-                        "charges, rewards, and ACH settlements so partial outcomes "
-                        "remain independently traceable."
-                    ),
-                    (
-                        "Check product configuration, seller eligibility, shipping "
-                        "coverage, and receiving deadlines immediately before "
-                        "checkout. Save the applicable offer terms and order "
-                        "confirmation. If the price or destination changes, "
-                        "recalculate contribution rather than relying on the "
-                        "earlier approval."
-                    ),
-                    (
-                        "Import records through stable source identifiers and "
-                        "transactional database writes. Replaying the same source "
-                        "file must not create another purchase, reward, or "
-                        "settlement. Corrections should reverse or supersede "
-                        "earlier entries while preserving the original evidence "
-                        "and operator identity."
-                    ),
-                    (
-                        "Reconcile carrier delivery, warehouse acceptance, "
-                        "reimbursement allocation, and bank clearance as "
-                        "different states. A delivered parcel is not an "
-                        "accepted lot, and an ACH notification is not "
-                        "cleared cash available for repayment or treasury deployment."
-                    ),
-                    (
-                        "Run a daily exception report covering missing serials, "
-                        "partial acceptance, overdue reimbursement, reward reversals, "
-                        "and statement exposure. Assign each exception an owner "
-                        "and next action. Close the lot only after cash, "
-                        "liabilities, and supporting records reconcile."
-                    ),
-                ],
-                "fields": [
-                    field(
-                        "Deal identifier and evidence manifest",
-                        "textarea",
-                        (
-                            "Define a stable deal identifier and list the "
-                            "documents needed to reconstruct authorization. "
-                            "Record document versions, capture dates, and "
-                            "integrity checks so updated terms cannot silently "
-                            "replace the originally approved basis."
-                        ),
-                        (
-                            "Deal BG-2027-001 links commitment version 2, the "
-                            "$8,000 purchase budget, a ten-unit SKU list, "
-                            "shipping instructions, and the reward eligibility "
-                            "capture. The manifest stores a SHA-256 digest "
-                            "for each retained document. A later commitment "
-                            "amendment receives version 3 and a new approval "
-                            "record without replacing version 2."
-                        ),
-                    ),
-                    field(
-                        "Purchase release and price-change checks",
-                        "textarea",
-                        (
-                            "Specify the checks performed immediately before "
-                            "purchase, including price, quantity, destination, "
-                            "available cash, issuer capacity, and delivery "
-                            "window. Define the price or timing change "
-                            "that requires a revised contribution calculation."
-                        ),
-                        (
-                            "Checkout must show ten units at $800 each, "
-                            "the verified warehouse destination, and delivery "
-                            "inside the commitment window. A change to "
-                            "$815 per unit raises merchandise cost by "
-                            "$150 and reduces expected contribution to "
-                            "$153 after the related 2% reward increase. "
-                            "The operator recalculates and reauthorizes before ordering."
-                        ),
-                    ),
-                    field(
-                        "Idempotency key and duplicate handling",
-                        "textarea",
-                        (
-                            "Define the unique key for each imported event "
-                            "and explain how duplicate delivery, amended "
-                            "records, and partial settlements are handled. "
-                            "Avoid using amount and date alone because "
-                            "legitimate transactions can share both."
-                        ),
-                        (
-                            "The SQLite events table enforces uniqueness on "
-                            "source_system, source_account, and source_event_id. "
-                            "A repeated bank import with the same transaction "
-                            "identifier inserts zero additional events. An "
-                            "amended settlement creates a linked correction "
-                            "event. Two separate $824 payments on one "
-                            "date remain distinct because their bank identifiers differ."
-                        ),
-                    ),
-                    field(
-                        "Card liability and purchase ledger entries",
-                        "textarea",
-                        (
-                            "Describe how merchandise purchases, statement "
-                            "liabilities, repayments, and purchase-linked rewards "
-                            "enter the ledger. Preserve the difference "
-                            "between inventory acquisition and expense recognition "
-                            "when merchandise has not yet transferred."
-                        ),
-                        (
-                            "The $8,000 purchase debits inventory and credits "
-                            "card payable. An $8,000 payment later debits "
-                            "card payable and credits bank cash. Merchandise "
-                            "cost moves from inventory when the accounting "
-                            "policy requires recognition. A $160 purchase-linked "
-                            "reward follows the documented cost-adjustment policy "
-                            "rather than automatically becoming a second sales entry."
-                        ),
-                    ),
-                    field(
-                        "Parcel custody and insured value",
-                        "textarea",
-                        (
-                            "Record package contents, serial numbers, parcel "
-                            "weight, carrier service, coverage terms, and "
-                            "handoff evidence. Distinguish declared value "
-                            "from insurance coverage and identify the "
-                            "party responsible for pursuing a loss claim."
-                        ),
-                        (
-                            "Two parcels each contain five devices with "
-                            "$4,000 documented merchandise cost. Packing "
-                            "photos show serials, seals, and protective "
-                            "materials; acceptance receipts record weight. "
-                            "The operator verifies electronics coverage and "
-                            "claim exclusions instead of equating a declared "
-                            "value entry with insurance. The shipping contractor "
-                            "opens any carrier claim within the policy deadline."
-                        ),
-                    ),
-                    field(
-                        "Warehouse acceptance and partial rejection",
-                        "textarea",
-                        (
-                            "Define the transition from carrier delivery "
-                            "to accepted merchandise and record partial "
-                            "outcomes by serial number. Explain how "
-                            "rejected items affect reimbursement, inventory "
-                            "location, return authorization, and the original "
-                            "commitment balance."
-                        ),
-                        (
-                            "The warehouse accepts nine devices and disputes "
-                            "one seal. Accepted reimbursement is 9 multiplied "
-                            "by $824, or $7,416. The tenth device "
-                            "remains separately tracked at $800 cost "
-                            "pending photographs and disposition. The ledger "
-                            "does not mark all ten accepted merely "
-                            "because both parcels have carrier delivery confirmation."
-                        ),
-                    ),
-                    field(
-                        "ACH allocation and cleared-cash confirmation",
-                        "textarea",
-                        (
-                            "Specify how incoming transfers are matched "
-                            "to commitments and how clearance status "
-                            "is established. Record partial payments, "
-                            "unallocated cash, returned transfers, and "
-                            "the difference between a payer notification "
-                            "and bank evidence."
-                        ),
-                        (
-                            "A buying group announces an $8,240 payout "
-                            "on Monday, but the bank posts it "
-                            "Wednesday. The reconciler retains the notice "
-                            "as pending and uses bank evidence for "
-                            "the cash entry. If the transfer includes "
-                            "two lots, a remittance allocation must "
-                            "sum to $8,240 before either receivable is closed."
-                        ),
-                    ),
-                    field(
-                        "Reward lifecycle and reversal treatment",
-                        "textarea",
-                        (
-                            "Track eligible, pending, confirmed, paid, "
-                            "and reversed rewards separately. Define "
-                            "when each state affects planning contribution, "
-                            "accounting entries, and cash availability, "
-                            "including corrections caused by returns "
-                            "or portal attribution disputes."
-                        ),
-                        (
-                            "The $160 card reward remains expected "
-                            "until the issuer confirms posting under "
-                            "the program terms. The potential $80 "
-                            "portal reward stays outside the base "
-                            "case until eligibility is supported. If "
-                            "one $800 unit is returned, the "
-                            "expected 2% card reward falls by $16, "
-                            "with the reversal linked to that unit."
-                        ),
-                    ),
-                    field(
-                        "QA invariants and reconciliation tolerances",
-                        "textarea",
-                        (
-                            "List numerical and state-based assertions "
-                            "that must hold before lot closure. "
-                            "Set explicit rounding tolerances and "
-                            "identify discrepancies that always require "
-                            "investigation regardless of their apparent "
-                            "dollar size or operational convenience."
-                        ),
-                        (
-                            "The batch asserts ten unique serials, "
-                            "$8,000 original merchandise cost, $8,240 "
-                            "committed reimbursement, and settlement allocations "
-                            "matching bank cash within $0.01. Duplicate "
-                            "serials fail regardless of value. A "
-                            "$0.50 unexplained difference is assigned "
-                            "to an exception record rather than "
-                            "silently written into shipping expense to balance the lot."
-                        ),
-                    ),
-                    field(
-                        "Exception queue and closeout evidence",
-                        "textarea",
-                        (
-                            "Assign exception owners, deadlines, escalation "
-                            "paths, and the evidence required for "
-                            "closure. Separate operational completion "
-                            "from unresolved claims so a successful "
-                            "shipment cannot conceal an unpaid "
-                            "receivable or unsupported reward."
-                        ),
-                        (
-                            "Exception EX-017 records a missing $824 "
-                            "reimbursement allocation, with the settlement "
-                            "contractor responsible for obtaining remittance "
-                            "detail within one business day. The "
-                            "operator suspends new commitments if the "
-                            "contractual due date passes. Closure requires "
-                            "matched bank cash or an approved loss "
-                            "entry, not an email promising eventual payment."
-                        ),
-                    ),
-                ],
-                "completion_gate": (
-                    "Replay the import twice without changing balances. Confirm "
-                    "all serials, charges, settlements, and reward adjustments "
-                    "have stable identifiers and supporting evidence. No lot "
-                    "may be marked settled while its bank allocation, card "
-                    "liability, or material exception remains unresolved."
-                ),
-            },
-            {
-                "worksheet_id": "ws-04",
-                "number": 4,
-                "title": (
-                    "Statutory, Licensing, Contract Addendum "
-                    "& Compliance Audit"
-                ),
-                "purpose": (
-                    "Turn applicable statutes, commercial terms, and tax "
-                    "recordkeeping duties into specific operating controls. "
-                    "Verify the facts that determine resale treatment, "
-                    "business-credit rules, inventory ownership, and reporting. "
-                    "Preserve contract evidence and prevent purchasing volume "
-                    "from exceeding authorized commercial activity."
-                ),
-                "chapter_ref": "Q5, Q9",
-                "instructions": [
-                    (
-                        "Map requirements to the actual entity, transaction, "
-                        "warehouse, and payment instrument. State the triggering "
-                        "facts beside each citation. Do not treat a "
-                        "warehouse state's tax structure as a substitute "
-                        "for examining seller collection rules or your "
-                        "own business obligations."
-                    ),
-                    (
-                        "Maintain resale certificates, seller acceptance "
-                        "records, invoices, and shipping evidence as "
-                        "one transaction packet. Review changes in "
-                        "business location or fulfillment routing before "
-                        "reusing earlier tax assumptions. Investigate missing "
-                        "tax documentation before increasing the purchasing "
-                        "limit."
-                    ),
-                    (
-                        "Read the current issuer, portal, and B2B "
-                        "payment terms for the precise transaction "
-                        "type. Document restricted categories and "
-                        "recipient rules. Exclude fabricated purchases, "
-                        "self-payments, prohibited consumer card cycling, "
-                        "and any arrangement designed to conceal "
-                        "the underlying commercial purpose."
-                    ),
-                    (
-                        "Use a written addendum to allocate "
-                        "inspection deadlines, title, transit risk, "
-                        "return costs, and reimbursement timing. "
-                        "Reference the governing state's enacted "
-                        "UCC provisions where relevant. Keep "
-                        "contractual remedies separate from assumptions "
-                        "about how quickly disputes will resolve."
-                    ),
-                    (
-                        "Reconcile information returns to transaction-level "
-                        "records rather than treating reported "
-                        "payment volume as taxable profit. "
-                        "Preserve a documented policy for "
-                        "purchase-price adjustments, inventory costs, "
-                        "interest, and bonuses. Assign periodic "
-                        "review responsibility and track corrections "
-                        "to completion."
-                    ),
-                ],
-                "fields": [
-                    field(
-                        "Entity registration and operating-location requirements",
-                        "textarea",
-                        (
-                            "Identify the operating entity, actual "
-                            "business locations, warehouse relationship, "
-                            "and registrations triggered by those "
-                            "facts. Cite applicable provisions precisely "
-                            "and distinguish using a third-party "
-                            "warehouse from operating your own "
-                            "facility."
-                        ),
-                        (
-                            "For a planned Delaware operating location, "
-                            "the checklist evaluates business licensing "
-                            "under 30 Del. C. § 2301 "
-                            "and records the activity classification. "
-                            "Merely shipping to an independent "
-                            "DE warehouse is evaluated separately. "
-                            "The operator documents where purchasing, "
-                            "inventory control, and employees actually "
-                            "operate before concluding which registrations are required."
-                        ),
-                    ),
-                    field(
-                        "Resale certificate and destination-specific tax file",
-                        "textarea",
-                        (
-                            "List the certificate jurisdiction, validity "
-                            "conditions, seller acceptance, and "
-                            "transaction evidence. Explain how "
-                            "the actual sale qualifies for "
-                            "recorded treatment and how incorrect "
-                            "collection or certificate rejection "
-                            "will be corrected."
-                        ),
-                        (
-                            "For a California transaction using "
-                            "resale treatment, the file evaluates "
-                            "Cal. Rev. & Tax. Code "
-                            "§§ 6091–6092 and Cal. Code "
-                            "Regs., tit. 18, § 1668. "
-                            "The invoice, accepted certificate, "
-                            "and purchase-for-resale facts remain "
-                            "linked. A separate shipment to "
-                            "NH or OR receives its own sourcing analysis."
-                        ),
-                    ),
-                    field(
-                        "Business credit agreement and permitted usage",
-                        "textarea",
-                        (
-                            "Record the card's business purpose, "
-                            "issuer restrictions, repayment terms, "
-                            "and transaction classifications. Explain "
-                            "which contractual protections apply "
-                            "and why consumer-credit assumptions "
-                            "cannot be imported automatically "
-                            "into a commercial arrangement."
-                        ),
-                        (
-                            "The card funds documented business "
-                            "inventory only. The review records "
-                            "the business-purpose exemption in "
-                            "15 U.S.C. § 1603(1) and "
-                            "12 CFR § 1026.3(a), while "
-                            "checking applicable exceptions and "
-                            "the issuer agreement itself. "
-                            "Repayment planning uses the actual "
-                            "commercial contract, not assumed consumer billing protections."
-                        ),
-                    ),
-                    field(
-                        "Payment platform and reward program restrictions",
-                        "textarea",
-                        (
-                            "Document permitted invoice categories, "
-                            "recipient relationships, card network "
-                            "rules, reward exclusions, and "
-                            "verification requirements. Explain "
-                            "how the operator establishes "
-                            "a genuine commercial obligation "
-                            "before using a payment platform."
-                        ),
-                        (
-                            "A proposed Melio or Plastiq "
-                            "payment must match a genuine "
-                            "$10,000 supplier invoice and "
-                            "an allowed recipient category "
-                            "under current terms. The "
-                            "operator retains the quote "
-                            "and checks issuer treatment. "
-                            "Payments to controlled accounts "
-                            "solely to generate rewards are excluded from this operating model."
-                        ),
-                    ),
-                    field(
-                        "Title and transit-risk addendum",
-                        "textarea",
-                        (
-                            "Draft the commercial allocation "
-                            "of title, transit risk, "
-                            "insurance responsibility, and loss "
-                            "claims. Identify the governing "
-                            "state and distinguish contract "
-                            "language from default rules "
-                            "that apply only when "
-                            "the agreement leaves a gap."
-                        ),
-                        (
-                            "Proposed clause: Title transfers "
-                            "upon documented warehouse acceptance; "
-                            "seller bears transit loss "
-                            "until that event and "
-                            "maintains the specified shipment "
-                            "coverage. The contract separately "
-                            "allocates risk rather than "
-                            "assuming title determines it. "
-                            "Review references include the governing state's versions of UCC "
-                            "§§ 2-401 and 2-509."
-                        ),
-                    ),
-                    field(
-                        "Inspection, rejection, and return-cost addendum",
-                        "textarea",
-                        (
-                            "Specify inspection timing, acceptable "
-                            "defect evidence, rejection notice, "
-                            "return authorization, and shipping "
-                            "cost allocation. Address partial "
-                            "acceptance so one disputed "
-                            "unit cannot automatically suspend "
-                            "payment for every accepted "
-                            "unit in the commitment."
-                        ),
-                        (
-                            "Proposed clause: Buyer reports "
-                            "SKU, quantity, or seal "
-                            "exceptions with serial-specific "
-                            "photographs within two business "
-                            "days after delivery. Undisputed "
-                            "accepted units remain payable "
-                            "on schedule. Return costs "
-                            "follow documented fault. The "
-                            "review checks the governing state's UCC §§ 2-601, 2-602, and 2-606."
-                        ),
-                    ),
-                    field(
-                        "Settlement clock and overdue-payment remedies",
-                        "textarea",
-                        (
-                            "Define the event starting "
-                            "the payment clock, the "
-                            "business-day convention, bank "
-                            "holiday treatment, remittance "
-                            "detail, and escalation steps. "
-                            "Specify suspension rights "
-                            "without assuming contractual "
-                            "remedies create immediate liquidity."
-                        ),
-                        (
-                            "Proposed Net-5 language starts "
-                            "the five-business-day clock "
-                            "at documented acceptance and "
-                            "requires serial-level remittance "
-                            "detail. If Monday acceptance "
-                            "is followed by no "
-                            "holidays, the fifth subsequent "
-                            "business day is the "
-                            "following Monday. Overdue payment suspends new commitments; "
-                            "the card reserve remains necessary throughout any dispute."
-                        ),
-                    ),
-                    field(
-                        "Information-return and inventory-basis reconciliation",
-                        "textarea",
-                        (
-                            "Describe how payment reporting, "
-                            "gross receipts, refunds, inventory "
-                            "cost, and purchase-price "
-                            "adjustments reconcile. Cite "
-                            "the governing federal "
-                            "framework without assuming "
-                            "a reporting form determines "
-                            "the final taxable amount."
-                        ),
-                        (
-                            "The annual file reconciles "
-                            "any Form 1099-K amounts "
-                            "under IRC § 6050W "
-                            "to transaction records, "
-                            "returns, and duplicate "
-                            "reporting. Inventory and "
-                            "basis policies reference "
-                            "IRC §§ 471 and "
-                            "1012 as applicable. A $160 purchase-linked rebate "
-                            "is evaluated as a cost adjustment, not automatically as unrelated revenue."
-                        ),
-                    ),
-                    field(
-                        "Treasury income, bonuses, and bank identity records",
-                        "textarea",
-                        (
-                            "Record account ownership, bank "
-                            "identity documentation, interest "
-                            "classification, bonus conditions, "
-                            "and tax support. Distinguish "
-                            "deposit yield from Treasury "
-                            "interest and verify state "
-                            "treatment using the "
-                            "actual instrument held."
-                        ),
-                        (
-                            "The bank file retains "
-                            "entity identification requested "
-                            "under the bank's customer "
-                            "identification procedures, addressed "
-                            "in 31 CFR § "
-                            "1020.220. Interest and "
-                            "bonus treatment are reviewed "
-                            "under IRC § 61. "
-                            "Direct Treasury obligations receive a separate state-tax review "
-                            "under 31 U.S.C. § 3124; bank interest is not relabeled Treasury income."
-                        ),
-                    ),
-                    field(
-                        "Audit cadence and evidence remediation",
-                        "textarea",
-                        (
-                            "Assign review owners, "
-                            "document-expiry checks, "
-                            "sample sizes, and "
-                            "correction deadlines. "
-                            "Specify which defects "
-                            "stop purchasing and "
-                            "which permit existing "
-                            "lots to settle "
-                            "while remediation proceeds."
-                        ),
-                        (
-                            "Each month the operator "
-                            "samples five lots and "
-                            "checks certificates, commitments, "
-                            "shipping coverage, reward "
-                            "terms, and bank matches. "
-                            "An expired required certificate "
-                            "stops affected purchases "
-                            "immediately. A missing "
-                            "internal annotation receives a two-business-day correction deadline "
-                            "while already authorized shipments continue under their verified terms."
-                        ),
-                    ),
-                ],
-                "completion_gate": (
-                    "Required registrations and transaction-specific tax evidence "
-                    "must be current. Contract terms must address acceptance, "
-                    "title, transit risk, payment timing, and returns. Every "
-                    "payment route must represent permitted business activity, "
-                    "with an assigned owner for accounting and tax reconciliation."
-                ),
-            },
-            {
-                "worksheet_id": "ws-05",
-                "number": 5,
-                "title": (
-                    "Automation Pipeline, Acquisition Flywheel "
-                    "& Risk Fallback Tracker"
-                ),
-                "purpose": (
-                    "Automate evidence collection, spread calculations, and "
-                    "exception routing without automating unsupported assumptions. "
-                    "Build a repeatable supply and counterparty development "
-                    "process around measured settlement quality. Preserve "
-                    "manual operation, cash access, and repayment discipline "
-                    "when integrations, issuers, portals, or carriers fail."
-                ),
-                "chapter_ref": "Q6, Q10",
-                "instructions": [
-                    (
-                        "Map each input to an authorized source "
-                        "and an accountable owner. Prefer documented "
-                        "exports and permitted interfaces over fragile "
-                        "browser behavior. Store source timestamps "
-                        "and evidence versions so automation can "
-                        "explain exactly which terms produced "
-                        "each decision."
-                    ),
-                    (
-                        "Implement reward routing as a constrained "
-                        "comparison, not an automatic highest-rate "
-                        "selector. Filter by resale eligibility, "
-                        "transaction category, caps, payment compatibility, "
-                        "and portal attribution. Treat missing "
-                        "evidence as zero eligible reward "
-                        "until the relevant condition "
-                        "is resolved."
-                    ),
-                    (
-                        "Separate calculations from money movement. "
-                        "The system may propose purchasing "
-                        "limits, reserve allocations, or "
-                        "treasury transfers, but execution "
-                        "must use explicitly authorized "
-                        "accounts and permissions. Retain "
-                        "an audit trail of "
-                        "the approving operator and "
-                        "final bank confirmation."
-                    ),
-                    (
-                        "Develop counterparties through small "
-                        "paid pilots, measured acceptance "
-                        "quality, and documented settlement "
-                        "performance. Increase allocation only "
-                        "after repeated reconciled outcomes. "
-                        "Use operational reliability and "
-                        "specific product availability as "
-                        "the acquisition message rather "
-                        "than unsupported return claims."
-                    ),
-                    (
-                        "Test recovery from duplicate "
-                        "imports, unavailable portals, "
-                        "issuer suspension, and "
-                        "delayed ACH before "
-                        "increasing volume. Keep "
-                        "a manual payment "
-                        "calendar and readable "
-                        "ledger export. A "
-                        "failed integration must reduce activity rather than hide liabilities."
-                    ),
-                ],
-                "fields": [
-                    field(
-                        "Authorized source and ingestion register",
-                        "textarea",
-                        (
-                            "List each data source, "
-                            "authorized access method, "
-                            "refresh interval, schema "
-                            "owner, and fallback. "
-                            "Identify sensitive fields "
-                            "that should be "
-                            "excluded from exports "
-                            "or masked before "
-                            "contractors receive access."
-                        ),
-                        (
-                            "The pipeline ingests operator-authorized "
-                            "card CSV exports daily, "
-                            "bank transaction exports each "
-                            "morning, and commitment files "
-                            "when received. Full card "
-                            "numbers are excluded; an "
-                            "internal account alias links "
-                            "records. The settlement contractor "
-                            "sees amounts and references but cannot initiate "
-                            "payments or change bank destination details."
-                        ),
-                    ),
-                    field(
-                        "Deal-commit and tracking reconciler",
-                        "textarea",
-                        (
-                            "Define the state machine "
-                            "connecting commitment, purchase, "
-                            "shipment, acceptance, reimbursement, "
-                            "and closure. Specify "
-                            "permitted transitions, "
-                            "required evidence, and "
-                            "the rule preventing "
-                            "partial events from "
-                            "closing an entire deal."
-                        ),
-                        (
-                            "BG-2027-001 moves through "
-                            "committed, purchased, shipped, "
-                            "partially accepted, accepted, "
-                            "partially paid, and "
-                            "settled states. Nine "
-                            "accepted serials cannot "
-                            "produce the ten-unit "
-                            "accepted state. The "
-                            "reconciler computes outstanding cost and receivables "
-                            "from unit records, while the operator resolves contradictory source evidence."
-                        ),
-                    ),
-                    field(
-                        "Reward-stack router and exclusion logic",
-                        "textarea",
-                        (
-                            "Describe how the router "
-                            "evaluates card offers "
-                            "and one portal "
-                            "without double counting. "
-                            "Record evidence freshness, "
-                            "caps, exclusions, and "
-                            "the treatment of "
-                            "an attractive rate "
-                            "whose eligibility cannot be established."
-                        ),
-                        (
-                            "The router compares a "
-                            "supported 2% business "
-                            "card reward with "
-                            "a conditional 4% "
-                            "offer and evaluates "
-                            "Rakuten versus TopCashback "
-                            "as mutually exclusive "
-                            "portal paths. On "
-                            "$8,000, it approves $160 card value. "
-                            "The unsupported $320 card alternative and conditional $80 "
-                            "portal value remain outside the executable recommendation."
-                        ),
-                    ),
-                    field(
-                        "Treasury scheduler and maturity constraints",
-                        "textarea",
-                        (
-                            "Define the cash calculation "
-                            "used before a "
-                            "sweep, the minimum "
-                            "repayment reserve, maturity "
-                            "buffer, transfer timing, "
-                            "and failure response. "
-                            "Prevent projected ACH "
-                            "receipts from becoming "
-                            "deployable cash before clearance."
-                        ),
-                        (
-                            "The scheduler starts with "
-                            "cleared bank cash, "
-                            "subtracts $8,000 card "
-                            "repayment, $2,000 operating "
-                            "reserve, and every "
-                            "scheduled transfer. A "
-                            "Treasury purchase is "
-                            "proposed only if "
-                            "maturity and cash availability precede the repayment buffer. "
-                            "A maturity after February 22 cannot support the "
-                            "illustrative February 25 card payment."
-                        ),
-                    ),
-                    field(
-                        "Counterparty acquisition and pilot sequence",
-                        "textarea",
-                        (
-                            "Define the target counterparty "
-                            "profile, outreach evidence, "
-                            "pilot size, settlement "
-                            "measurement, and expansion "
-                            "criteria. Explain how "
-                            "the operator evaluates "
-                            "BuyForMeRetail, Pointsmaker, "
-                            "or MaxOutDeals without "
-                            "assuming identical commercial terms."
-                        ),
-                        (
-                            "The operator requests current "
-                            "onboarding requirements from "
-                            "three candidate groups, "
-                            "then selects one "
-                            "documented $1,600 pilot. "
-                            "Expansion requires three "
-                            "fully reconciled lots, "
-                            "no unresolved acceptance "
-                            "disputes, and settlement within the written clock. "
-                            "A different group starts its own pilot record; "
-                            "the first group's performance does not transfer automatically."
-                        ),
-                    ),
-                    field(
-                        "Acquisition flywheel and referral discipline",
-                        "textarea",
-                        (
-                            "Describe how reliable "
-                            "fulfillment creates repeat "
-                            "commitments and qualified "
-                            "introductions. Track the "
-                            "source, cost, and "
-                            "outcome of each "
-                            "relationship, and disclose "
-                            "material referral relationships "
-                            "when making promotional recommendations."
-                        ),
-                        (
-                            "After three clean lots, "
-                            "the operator sends "
-                            "a concise capacity "
-                            "report showing available "
-                            "SKUs, serial accuracy, "
-                            "and on-time delivery. "
-                            "A resulting introduction "
-                            "is tagged to "
-                            "that report. If a public recommendation carries "
-                            "a referral payment, the operator uses a clear "
-                            "material-connection disclosure consistent with 16 CFR Part 255."
-                        ),
-                    ),
-                    field(
-                        "Issuer review or shutdown fallback",
-                        "textarea",
-                        (
-                            "Specify the response "
-                            "to an issuer "
-                            "information request, reduced "
-                            "limit, suspended account, "
-                            "or terminated reward "
-                            "program. Preserve repayment "
-                            "and truthful documentation "
-                            "without disguising transactions "
-                            "or circumventing account restrictions."
-                        ),
-                        (
-                            "An issuer suspension freezes "
-                            "new card purchases "
-                            "immediately. The operator "
-                            "provides requested business "
-                            "invoices and inventory "
-                            "records through the "
-                            "issuer's verified channel. "
-                            "Existing liabilities remain "
-                            "scheduled for cash repayment. Another authorized business "
-                            "card is considered only under its own terms "
-                            "and cash-supported limit, never as a concealment tactic."
-                        ),
-                    ),
-                    field(
-                        "Carrier loss and disputed-acceptance fallback",
-                        "textarea",
-                        (
-                            "Record the response "
-                            "to a missing "
-                            "parcel or warehouse "
-                            "dispute, including claim "
-                            "evidence, cash exposure, "
-                            "replacement authority, and "
-                            "purchasing restrictions. "
-                            "Separate expected recovery "
-                            "from money currently available."
-                        ),
-                        (
-                            "If one five-device parcel "
-                            "is lost, $4,000 "
-                            "of merchandise cost "
-                            "is exposed. The "
-                            "shipping contractor gathers "
-                            "receipts, serials, photographs, "
-                            "and coverage documents. "
-                            "The ledger records "
-                            "the claim separately and reserves zero immediate "
-                            "recovery cash. Replacement purchases require additional capacity; "
-                            "the original card liability remains due in full."
-                        ),
-                    ),
-                    field(
-                        "Alert thresholds and operator response",
-                        "textarea",
-                        (
-                            "Define actionable thresholds "
-                            "for settlement aging, "
-                            "reserve coverage, duplicate "
-                            "records, reward reversals, "
-                            "and missing documents. "
-                            "Assign recipients and "
-                            "response deadlines so "
-                            "alerts produce specific "
-                            "operating decisions rather than background noise."
-                        ),
-                        (
-                            "The system raises an "
-                            "urgent alert when "
-                            "repayment reserve coverage "
-                            "falls below 1.00, "
-                            "a required commitment "
-                            "is missing, or "
-                            "a bank event "
-                            "duplicates an existing "
-                            "identifier with different data. The operator responds "
-                            "the same business day. Overdue accepted receivables "
-                            "automatically suspend further commitments to that group."
-                        ),
-                    ),
-                    field(
-                        "Recovery test and manual operating kit",
-                        "textarea",
-                        (
-                            "Define the backup "
-                            "frequency, restore test, "
-                            "manual records, and "
-                            "maximum acceptable outage. "
-                            "Explain how the "
-                            "team keeps repayment "
-                            "dates visible when "
-                            "the primary reconciler "
-                            "or a source integration becomes unavailable."
-                        ),
-                        (
-                            "A daily SQLite backup "
-                            "and encrypted document "
-                            "archive support recovery. "
-                            "Every Friday, the "
-                            "operator exports open "
-                            "lots, card due "
-                            "dates, reserves, and "
-                            "overdue receivables into "
-                            "a readable file. A monthly restore test "
-                            "must reproduce balances. During an outage exceeding "
-                            "one business day, purchasing pauses while manual settlement tracking continues."
-                        ),
-                    ),
-                ],
-                "completion_gate": (
-                    "The automation must explain every recommendation, reject "
-                    "duplicate events, preserve source evidence, and leave "
-                    "money movement under explicit authority. Demonstrate one "
-                    "successful restore and one manual repayment-calendar drill "
-                    "before increasing purchasing volume beyond the pilot limit."
-                ),
-            },
-            {
-                "worksheet_id": "ws-06",
-                "number": 6,
-                "title": (
-                    "30-Day Launch Sprint, Pod KPI Scorecard "
-                    "& Exit-Readiness Ledger"
-                ),
-                "purpose": (
-                    "Convert the operating design into a measured launch "
-                    "with explicit cash limits, named responsibilities, and "
-                    "repeatable reporting. Track the evidence required for "
-                    "expansion or transfer of the business. Preserve the "
-                    "canonical annual scenarios without presenting a "
-                    "30-day pilot as established annual performance."
-                ),
-                "chapter_ref": "Q11, Q12",
-                "instructions": [
-                    (
-                        "Plan the first 30 days around "
-                        "verification, system preparation, and a "
-                        "small authorized pilot if prerequisites "
-                        "are ready. The supplied time "
-                        "to first deal is one "
-                        "to three months, so a "
-                        "launch sprint may finish before "
-                        "the first settled transaction."
-                    ),
-                    (
-                        "Assign each operating responsibility "
-                        "to the full-time operator "
-                        "or a defined contractor "
-                        "role. Keep purchasing authority, "
-                        "bank access, evidence handling, "
-                        "and reconciliation distinct. Measure "
-                        "actual hours rather than "
-                        "assuming automation eliminates exception "
-                        "work or supervision."
-                    ),
-                    (
-                        "Report gross scorecard activity, "
-                        "retained contribution, owner profit, "
-                        "cash reserves, and unsettled "
-                        "liabilities separately. Compare actual "
-                        "results with Conservative, Base, "
-                        "and Scaled assumptions only "
-                        "after matching their economic "
-                        "definitions and avoiding duplicate "
-                        "reward or reimbursement recognition."
-                    ),
-                    (
-                        "Increase volume through demonstrated "
-                        "settlement quality and cash "
-                        "capacity, not available credit "
-                        "alone. Require completed pilot "
-                        "evidence, stable contribution, and "
-                        "successful delayed-payment stress "
-                        "before adding counterparties, "
-                        "invoices, or treasury "
-                        "allocations to the operating schedule."
-                    ),
-                    (
-                        "Build transferability from the "
-                        "start by documenting procedures, "
-                        "account dependencies, contract rights, "
-                        "and data ownership. Identify "
-                        "relationships that require fresh "
-                        "underwriting or consent after "
-                        "a sale. Maintain a "
-                        "clean evidence room without "
-                        "assuming personal credit access transfers."
-                    ),
-                ],
-                "fields": [
-                    field(
-                        "Days 1–7 foundation and capital allocation",
-                        "textarea",
-                        (
-                            "List the first-week "
-                            "deliverables, responsible person, "
-                            "cash allocation, and "
-                            "conditions that must "
-                            "be satisfied before "
-                            "ordering. Include entity "
-                            "records, business banking, "
-                            "repayment reserves, and "
-                            "the initial ledger configuration."
-                        ),
-                        (
-                            "By day 7, the "
-                            "operator documents the "
-                            "$25,000 startup allocation, "
-                            "business bank ownership, "
-                            "card terms, and "
-                            "resale requirements. The "
-                            "ledger contains test "
-                            "events only. A "
-                            "$1,600 pilot ceiling is proposed, but actual "
-                            "purchasing remains conditional on a verified commitment "
-                            "and shipping coverage rather than the calendar deadline."
-                        ),
-                    ),
-                    field(
-                        "Days 8–14 counterparties and dry-run evidence",
-                        "textarea",
-                        (
-                            "Define the second-week "
-                            "underwriting tasks, counterparties "
-                            "contacted, documents requested, "
-                            "and test results. "
-                            "Include a complete "
-                            "simulated lot that "
-                            "demonstrates duplicate-resistant "
-                            "imports and dated "
-                            "repayment planning before cash is committed."
-                        ),
-                        (
-                            "The operator requests current "
-                            "terms from BuyForMeRetail, "
-                            "Pointsmaker, and MaxOutDeals "
-                            "through their verified "
-                            "business channels. A "
-                            "simulated two-unit lot "
-                            "tests $1,600 cost, "
-                            "$1,648 reimbursement, and "
-                            "$32 supported card rewards. Import replay creates "
-                            "no duplicate events, and the repayment reserve "
-                            "remains sufficient even when simulated reimbursement is delayed."
-                        ),
-                    ),
-                    field(
-                        "Days 15–21 limited pilot and observation",
-                        "textarea",
-                        (
-                            "Specify the permitted "
-                            "pilot size, expected "
-                            "unit economics, evidence "
-                            "captured, and conditions "
-                            "that postpone execution. "
-                            "Avoid assuming small "
-                            "shipments inherit the "
-                            "same per-unit freight "
-                            "cost as a larger production lot."
-                        ),
-                        (
-                            "If prerequisites clear, two "
-                            "devices cost $1,600 "
-                            "and carry $1,648 "
-                            "reimbursement. Supported card "
-                            "rewards add $32; "
-                            "actual pilot shipping "
-                            "is budgeted at "
-                            "$20 and expected "
-                            "loss at $8. Expected contribution is $52, "
-                            "excluding portal upside. If onboarding remains incomplete, "
-                            "the week produces verified documentation instead of an unauthorized purchase."
-                        ),
-                    ),
-                    field(
-                        "Days 22–30 reconciliation and expansion decision",
-                        "textarea",
-                        (
-                            "Define the final-week "
-                            "review, remaining receivables, "
-                            "reward status, cash "
-                            "verification, and decision "
-                            "criteria. Distinguish a "
-                            "successful process rehearsal "
-                            "from a fully "
-                            "settled transaction and "
-                            "from a repeatable operating record."
-                        ),
-                        (
-                            "At day 30, the "
-                            "operator reports whether "
-                            "the pilot is "
-                            "unstarted, in transit, "
-                            "accepted, or settled, "
-                            "with dated evidence "
-                            "for its actual "
-                            "state. A settled "
-                            "pilot supports another small test, not immediate "
-                            "Base-scale purchasing. Three clean lots and adequate "
-                            "reserves are required before the counterparty limit increases."
-                        ),
-                    ),
-                    field(
-                        "Pod responsibilities and access separation",
-                        "textarea",
-                        (
-                            "Assign purchasing, shipment "
-                            "documentation, reconciliation, treasury "
-                            "decisions, and exception "
-                            "resolution to named "
-                            "roles. Match the "
-                            "canonical team configuration "
-                            "and define which "
-                            "permissions contractors do "
-                            "not receive."
-                        ),
-                        (
-                            "The Conservative and Base "
-                            "pod uses one "
-                            "full-time operator plus "
-                            "two contractors. The "
-                            "operator controls commitments "
-                            "and banking; contractor "
-                            "one manages shipment "
-                            "evidence; contractor two "
-                            "reconciles settlements with read-only access. Scaled operations "
-                            "use two full-time operators plus three contractors, "
-                            "with bank permissions assigned separately from data-processing duties."
-                        ),
-                    ),
-                    field(
-                        "Weekly KPI definitions and measured results",
-                        "textarea",
-                        (
-                            "Define each KPI's "
-                            "numerator, denominator, measurement "
-                            "window, and source. "
-                            "Include settlement timing, "
-                            "contribution, reserve coverage, "
-                            "exception aging, and "
-                            "labor intensity without "
-                            "substituting gross transaction "
-                            "volume for operating quality."
-                        ),
-                        (
-                            "A hypothetical ten-lot week "
-                            "has $80,000 merchandise "
-                            "cost and $82,400 "
-                            "committed reimbursement. Supported "
-                            "card rewards are "
-                            "$1,600, shipping $600, "
-                            "and expected losses "
-                            "$400, yielding $3,000 "
-                            "expected contribution before overhead. If eight lots "
-                            "clear within their payment clock, on-time settlement "
-                            "is 80%; unresolved lots remain in the denominator."
-                        ),
-                    ),
-                    field(
-                        "Canonical scorecard and scenario comparison",
-                        "textarea",
-                        (
-                            "Record the canonical "
-                            "ranking, score, scenario "
-                            "profits, retained-revenue range, "
-                            "and staffing assumptions. "
-                            "Explain how actual "
-                            "pilot results will "
-                            "be compared without "
-                            "altering the supplied "
-                            "Formula v2.0 economic definitions."
-                        ),
-                        (
-                            "Candidate #41 ranks #10 "
-                            "of 43 with "
-                            "93/100: revenue 23, "
-                            "margin 24, team "
-                            "20, accessibility 13, "
-                            "automation 13. Canonical "
-                            "owner profits are "
-                            "$20,000, $143,500, and "
-                            "$360,000. Retained revenue spans $87,500–$630,000, with "
-                            "$358,750 Base retained revenue. The pilot is "
-                            "compared through a separate bridge, not substituted for these annual scenarios."
-                        ),
-                    ),
-                    field(
-                        "Scale triggers and drawdown controls",
-                        "textarea",
-                        (
-                            "Set measurable expansion "
-                            "criteria and define "
-                            "the operating response "
-                            "to shrinking contribution, "
-                            "payment delays, reserve "
-                            "depletion, or concentration. "
-                            "Show how reduced "
-                            "purchase volume restores "
-                            "cash safety before additional commitments are accepted."
-                        ),
-                        (
-                            "A counterparty limit increases "
-                            "from $1,600 to "
-                            "$4,000 only after "
-                            "three reconciled lots, "
-                            "no overdue accepted "
-                            "receivables, and full "
-                            "repayment reserve coverage. "
-                            "Two consecutive lots "
-                            "below the approved contribution floor trigger repricing. "
-                            "Any overdue payout freezes that group's new "
-                            "commitments until cash clears and the delay is explained."
-                        ),
-                    ),
-                    field(
-                        "Exit-readiness evidence and transferable assets",
-                        "textarea",
-                        (
-                            "Identify the records, "
-                            "procedures, software, contracts, "
-                            "and relationships a "
-                            "successor could evaluate. "
-                            "Document assignment restrictions, "
-                            "account dependencies, and "
-                            "fresh underwriting requirements "
-                            "rather than assuming "
-                            "all operating advantages transfer with ownership."
-                        ),
-                        (
-                            "The evidence room contains "
-                            "12 monthly reconciliations, "
-                            "counterparty settlement histories, "
-                            "source-controlled automation, shipment "
-                            "claim records, and "
-                            "signed commercial terms. "
-                            "A transfer matrix "
-                            "flags issuer accounts "
-                            "and portal memberships for fresh review. Personal "
-                            "guarantees and individual account access are not "
-                            "priced as automatically transferable assets; assignment rights are documented contract by contract."
-                        ),
-                    ),
-                    field(
-                        "Owner decision log and next operating milestone",
-                        "textarea",
-                        (
-                            "State the completed "
-                            "evidence, remaining limitations, "
-                            "next authorized action, "
-                            "cash ceiling, and "
-                            "review date. Record "
-                            "why the decision "
-                            "follows observed results "
-                            "rather than desired "
-                            "annual profit or unused credit capacity."
-                        ),
-                        (
-                            "Day-30 decision: documentation and "
-                            "duplicate-import testing are "
-                            "complete; one $1,600 "
-                            "pilot is accepted "
-                            "but not yet "
-                            "paid. The next "
-                            "action is settlement "
-                            "verification, not expansion. "
-                            "The cash-supported ceiling remains unchanged. The operator "
-                            "reviews again after cleared reimbursement and updates "
-                            "contribution when actual shipping, rewards, and any losses are known."
-                        ),
-                    ),
-                ],
-                "completion_gate": (
-                    "Close the sprint with a dated evidence-backed status, "
-                    "reconciled cash and liabilities, assigned pod responsibilities, "
-                    "and an explicit next purchasing limit. Preserve the "
-                    "one-to-three-month first-deal expectation when onboarding "
-                    "takes longer; claim repeatability only after multiple "
-                    "fully reconciled operating cycles."
-                ),
-            },
-        ],
-    }
+    return {'workbook_id': 'wb-041-buying-group-card-float-and-rebate-arbitrage',
+ 'volume_id': 'vol-041-buying-group-card-float-and-rebate-arbitrage',
+ 'title': 'Buying Group, Commercial Card-Float & Rebate Arbitrage — Practitioner Testimony Operator '
+          'Workbook',
+ 'subtitle': 'Buying-group reimbursement spreads, promo gift card exits, interest-free card float, limit '
+             'growth timing, Amex financial review defense, and Capital One Spark charge-card economics, '
+             'worked through operator worksheets',
+ 'worksheets': [{'worksheet_id': 'ws-01',
+                 'number': 1,
+                 'title': 'Buying Group Order Survival & Gift Card Exit Ledger',
+                 'purpose': 'Lock down the cash ceiling, platform choice, order mechanics, and exit routes '
+                            'before a single buying-group order or promo gift card goes on a card, so '
+                            'every swipe has a reimbursement, a buyer, or a repayment path already '
+                            'committed.',
+                 'chapter_ref': 'Q1-Q2',
+                 'instructions': ['Fill in the float ceiling first; every later field must fit inside the '
+                                  'cash actually sitting in checking today.',
+                                  'Log every order in a spreadsheet with exact SKU, color, model, payout '
+                                  'price, order size, and ship-to address as posted by the group.',
+                                  'Run all math with the practitioner spreads in view: 2-5 percent per '
+                                  'deal, rarely 10, with points and minimum spend as the real prize.',
+                                  'Treat every Discord DM, unverified address, and buyer without an agreed '
+                                  'rate as a stop signal, not a negotiation.',
+                                  'Complete the liquidation and tax fields even if you never plan to '
+                                  'liquidate, so the cost and reporting exposure are known in advance.'],
+                 'fields': [{'name': 'float_ceiling_vs_bank_balance',
+                             'type': 'text',
+                             'prompt': 'Write the exact dollar amount currently sitting in your checking '
+                                       'account, then set the maximum total you will float across all open '
+                                       'buying-group orders awaiting reimbursement. State how many days of '
+                                       'pending payouts that ceiling must survive without touching other '
+                                       'funds.',
+                             'example': 'Checking balance is $14,000, so the float ceiling is $12,000, '
+                                        'leaving a cushion for pending charges. Julie recalls an attendee '
+                                        "who said 'I lost $60,000' after floating beyond cash on hand "
+                                        '[Geobreeze Travel — zay5oOKCEls @ 00:18:11]. The ceiling must '
+                                        'also absorb the 5-7 days that pending charges can take before '
+                                        'failed orders clear.'},
+                            {'name': 'group_and_platform_selection',
+                             'type': 'textarea',
+                             'prompt': 'Name the buying group you will start with and justify it against '
+                                       'at least one alternative. Record its payout method, payout speed, '
+                                       'how deals are posted, and any secrecy or communication concerns '
+                                       'practitioners raised about that group before committing money.',
+                             'example': 'Starting with BFMR, the consensus beginner pick for fast, simple '
+                                        'payouts; the group sends an ACH transfer back as soon as it '
+                                        'receives the package [Czech It Out: Money Hacks — HNO_8rnhPeE @ '
+                                        "00:00:54]. Mitch distrusts BFMR's secrecy, so deal terms get "
+                                        "screenshotted. Eunice's alternative, gift-card groups with fixed "
+                                        'payout dates, stays on the backup list.'},
+                            {'name': 'reserve_before_research_log',
+                             'type': 'text',
+                             'prompt': 'Describe your rule for committing to a deal before researching it, '
+                                       'given that reservations hold only a short window. List which '
+                                       'details you will verify inside that window: exact SKU, color, '
+                                       'model, payout price, and the posted ship-to address.',
+                             'example': 'Reserve first, because reservations hold only a 12 to 24 hour '
+                                        'window [Lets Get To The Points — mEjNm8zKoQs @ 00:35:32]. Inside '
+                                        'that window, match the exact SKU, since a wrong color or model '
+                                        'means no reimbursement, and log the payout price in a spreadsheet '
+                                        'because payout prices can change. Release the reservation if the '
+                                        'retail price no longer fits.'},
+                            {'name': 'spread_versus_points_math',
+                             'type': 'textarea',
+                             'prompt': 'Estimate the profit spread on your next three deals and the card '
+                                       'rewards each will earn. Show whether the trade still works at '
+                                       'break-even, and project annual points from your expected volume '
+                                       'using a stated earning multiplier on your primary card.',
+                             'example': 'Spread on buying-group deals usually runs 2-5 percent and rarely '
+                                        '10 [Frequent Miler — nMlQUH3s8qY @ 00:38:29], so the real prize '
+                                        'is points and minimum spend. At about $250,000 a year on a 4x '
+                                        'card, volume yields roughly 1M points. Czech It Out reported '
+                                        '$1,800 in July on about $70,000 processed, which sets a realistic '
+                                        'first-month benchmark.'},
+                            {'name': 'order_size_and_checkout_method',
+                             'type': 'text',
+                             'prompt': 'Set your maximum single-order size and the checkout method you '
+                                       'will use for each retailer. Note whether you will route payment '
+                                       "through a wallet service, where the card's billing address points, "
+                                       'and how you will split any larger purchase.',
+                             'example': 'Orders stay between $500 and $1,000 after a $2,000 Target order '
+                                        'was cited as an oversized-order flag [John Muscarello — '
+                                        'ThO9ard-k8E @ 00:03:24]. Checkout runs through PayPal, Apple Pay '
+                                        "or Shop Pay to mask billing, and the card's billing address is "
+                                        'set to the prep center. A $1,800 restock gets split into two '
+                                        'separate orders.'},
+                            {'name': 'ship_to_verification_and_alerts',
+                             'type': 'text',
+                             'prompt': 'Record where you receive deal alerts and how you confirm every '
+                                       'shipping address before checkout. Name the official channel where '
+                                       'addresses are posted, and write the rule you will follow when '
+                                       'someone claiming to be an admin sends a direct message.',
+                             'example': "Alerts come from Max Out Deals' Discord, which carries the "
+                                        'timeliest posts [Geobreeze Travel — zay5oOKCEls @ 00:20:49]. '
+                                        'Shipping goes only to addresses posted by the group itself. Any '
+                                        "DM from an 'admin' gets ignored and reported, because "
+                                        'impersonators redirected about $20k of goods. Before each '
+                                        'checkout, the address is compared character by character against '
+                                        'the posted listing.'},
+                            {'name': 'failed_order_and_returns_rule',
+                             'type': 'text',
+                             'prompt': 'Write your protocol for a declined or cancelled order and for '
+                                       'inventory that never sells. State how long you will wait before '
+                                       'retrying, what you will do with stuck pending charges, and why '
+                                       'returns are off the table for this account.',
+                             'example': 'No resubmits while pending charges sit for 5-7 days, and no '
+                                        'returns of unsold items, because returns are a red flag [John '
+                                        'Muscarello — rpJHRiGfebQ @ 00:11:25]. For in-store pickup, the '
+                                        'cart is loaded in-aisle and paid with a card not linked to the '
+                                        'store account, since Target tracks it. Failed orders get logged, '
+                                        'not retried the same day.'},
+                            {'name': 'gift_card_buyer_lock',
+                             'type': 'textarea',
+                             'prompt': 'Before buying any promotion-sourced gift cards, name the buyer, '
+                                       'the agreed buy rate as a percentage of face value, and the card '
+                                       'offer generating your margin. Show the margin calculation and the '
+                                       'format, physical or electronic, that actually triggers the offer.',
+                             'example': 'QCGC buys $100 Walmart gift cards at 91.5% of face against the '
+                                        'Amex spend $100, get 25% back offer, a 16.5% margin [Geobreeze '
+                                        'Travel — QTa7eNv00k4 @ 00:21:49]. Cards are bought physically '
+                                        'in-store, since e-gift cards processed through CashStar will not '
+                                        'trigger the offer. No card is purchased until the buyer confirms '
+                                        'that rate in writing.'},
+                            {'name': 'liquidation_route_cost_and_test',
+                             'type': 'textarea',
+                             'prompt': 'If you plan to convert card credit to cash, list each route you '
+                                       'are considering with its fee, payout timeline, and net cost after '
+                                       'card rewards. Describe the small test transfer you will run first '
+                                       'and which bank receives the funds.',
+                             'example': 'Liquidators charge 5% to 6% over 5-10 business days, per Alex '
+                                        'Barajas, while invoice and PayPal routes run about 2-3%. A 6% fee '
+                                        'minus 2% card rewards nets about 4% [Naam Wynn — AsYTdszcmx8 @ '
+                                        '00:10:07]. A $100 test goes first and must land before thousands '
+                                        'move, and cash never deposits into the bank it was pulled from.'},
+                            {'name': 'tax_reporting_1099k',
+                             'type': 'textarea',
+                             'prompt': 'Total your expected gross sales across payment processors and '
+                                       'third-party networks for the year. Compare that figure against the '
+                                       'reporting threshold, name the EIN or SSN the forms will be issued '
+                                       'under, and state how sales will appear on your return.',
+                             'example': 'Expected network sales of $38,000 clear the $5,000 Form 1099-K '
+                                        'threshold cited for calendar year 2024 [James Baker CPA — '
+                                        'w7-zxRnNOSo @ 00:00:58]. Sales get reported at or above the '
+                                        '1099-K total under the matching EIN to avoid an audit flag, and a '
+                                        'return gets filed reporting those sales even if there is no tax '
+                                        'to pay.'}],
+                 'completion_gate': 'All ten fields are filled with your own numbers; the float ceiling is '
+                                    'at or below your checking balance; the ship-to rule names the '
+                                    'official posting channel; a buyer and agreed rate are recorded for '
+                                    'any gift card plan; and a $100 test transfer is scheduled before any '
+                                    'liquidation route carries real volume.'},
+                {'worksheet_id': 'ws-02',
+                 'number': 2,
+                 'title': 'Interest-Free Float Stack & Limit Growth Planner',
+                 'purpose': 'Map every card, intro window, and issuer rule into one calendar so the float '
+                            'stays interest-free, charge cards clear inside their cycle, and limit '
+                            'increases are requested on schedule with clean repayment history instead of '
+                            'guesswork.',
+                 'chapter_ref': 'Q3-Q4',
+                 'instructions': ['Start with the pay-in-full rule; nothing else on this worksheet applies '
+                                  'to a card that is accruing interest.',
+                                  'Use exact dates for every 0% expiry, charge card statement close, and '
+                                  'next eligible limit increase request.',
+                                  'Count banks, not cards, when confirming rotation depth, and record any '
+                                  'limit cut as it happens.',
+                                  'Confirm pull type by phone or by reading the request page before every '
+                                  'limit increase or reallocation.',
+                                  'Revisit the cycling and exposure fields before any new application, '
+                                  "since a single new line shifts every issuer's math."],
+                 'fields': [{'name': 'issuer_economics_and_pay_in_full_rule',
+                             'type': 'textarea',
+                             'prompt': 'Explain in your own words how issuers earn money from your swipes '
+                                       'and who funds the rewards you collect. Then write the single '
+                                       'pay-in-full rule you will follow, including what happens to any '
+                                       'rewards strategy the month interest appears.',
+                             'example': 'Issuers already profit on 2 to 3% swipe fees, and about $15 '
+                                        'billion a year moves from revolvers to pay-in-full cardholders '
+                                        '[Mogulnomics — nzZ8nwy2xSY @ 00:03:29]. The rule: never pay '
+                                        'interest to chase rewards, because a 2% cashback card cannot beat '
+                                        'a 22% interest rate. Any month with interest pauses every rewards '
+                                        'play until balances clear.'},
+                            {'name': 'credit_stack_inventory',
+                             'type': 'textarea',
+                             'prompt': 'Inventory every card in your stack by type: 0% intro cards, charge '
+                                       'cards, and regular revolving cards. For each, record the limit, '
+                                       'the intro expiry date if any, and the issuer, then total the stack '
+                                       'and the share at 0%.',
+                             'example': "Joey's benchmark stack totals $277,000, with almost $142,000 at "
+                                        '0% expiring June 2027, roughly $100,000 in charge cards, and '
+                                        'about $36,000 in regular cards [Joey | Amazon FBA — tKw8SljNcPE @ '
+                                        '00:10:37]. A smaller operator logs three 0% cards, one charge '
+                                        'card, and two regular cards, totaling them the same way to see '
+                                        'what share actually floats interest-free.'},
+                            {'name': 'intro_expiry_map',
+                             'type': 'textarea',
+                             'prompt': 'Map every 0% intro expiry date on a calendar and identify where '
+                                       'each expiring balance will land. Note the spacing between intros, '
+                                       'the next window you plan to open, and the balance transfer fee you '
+                                       'would accept as a fallback.',
+                             'example': 'Intros get spaced about six months apart so every expiring '
+                                        'balance has a fresh 0% card to land on [Joey | Amazon FBA — '
+                                        'tKw8SljNcPE @ 00:08:19]. Elan offers the longest window at 18 '
+                                        'months, versus Chase at 12 and Bank of America at 7. The fallback '
+                                        'is an Elan balance transfer at around a 3% fee before the intro '
+                                        'rate dies.'},
+                            {'name': 'charge_card_clearance_test',
+                             'type': 'text',
+                             'prompt': 'Calculate how many days your cash conversion cycle takes from '
+                                       'purchase to cash in hand. Compare that number against the roughly '
+                                       '30-day charge card statement cycle and decide how much of your '
+                                       'stack can safely sit on charge cards.',
+                             'example': 'A charge-card-heavy stack only works when cash conversion can '
+                                        'clear the full statement balance inside roughly 30 days [Joey | '
+                                        'Amazon FBA — tKw8SljNcPE @ 00:02:52]. Inventory here turns in '
+                                        'about 45 days, so charge cards carry only spend that converts '
+                                        'faster, such as reimbursed buying-group orders, while slower '
+                                        'inventory sits on 0% cards instead.'},
+                            {'name': 'bank_rotation_and_application_sequence',
+                             'type': 'textarea',
+                             'prompt': 'List the banks currently in your rotation and confirm at least '
+                                       'three before scaling. Write your application sequence for the next '
+                                       'six months, including relationship seasoning periods, application '
+                                       'timing, and the order for issuers that share underwriting '
+                                       'visibility.',
+                             'example': 'Rotation covers Amex, Chase, and Elan after Amex cut one card to '
+                                        "a third and halved a charge line. Following McColl's playbook, "
+                                        'bank relationships season 30 to 60 days and Amex applications go '
+                                        'in after 7:00 p.m. Eastern. Elan comes first, then Elan balances '
+                                        'stay low before applying at US Bank, because shared underwriters '
+                                        'see them [Jack McColl — c5MGulNCfZ8 @ 00:09:44].'},
+                            {'name': 'velocity_banking_cash_flow_check',
+                             'type': 'text',
+                             'prompt': 'If you are considering velocity banking, record your monthly '
+                                       'income, monthly expenses, and the surplus between them. Show one '
+                                       "cycle's interest calculation on the residual balance and state "
+                                       'whether positive cash flow exists to make the method work at all.',
+                             'example': 'Maria pushes $3,500 onto a $4,000 card on day one, then charges '
+                                        '$3,200 of living expenses back on through the month, paying about '
+                                        '$7.87 on a $500 residual at 19% APR over 30 days [Stephen Smith — '
+                                        'bYSi0VFWtpg @ 00:07:22]. The method works only if income exceeds '
+                                        'expenses, even by $100 a month.'},
+                            {'name': 'income_update_and_primary_spender_plan',
+                             'type': 'textarea',
+                             'prompt': 'Record the household income currently on file with each issuer and '
+                                       'the date you will update it. Name the target card that will serve '
+                                       'as primary spender for about three months, and describe how you '
+                                       'will pay it down before requesting.',
+                             'example': 'Household income gets updated first, following Naam Wynn, Colin '
+                                        'Matthew and Bella Sloan Enterprises. The Navy Federal card then '
+                                        'runs as primary spender for three months with every statement '
+                                        'paid on time, because heavy usage means nothing without timely '
+                                        'payments [Stephen Smith — RY2Q9yq3v3E @ 00:04:25]. The balance '
+                                        'drops to near zero before the request goes in.'},
+                            {'name': 'issuer_specific_increase_calendar',
+                             'type': 'textarea',
+                             'prompt': 'For each issuer you hold, write the earliest date you can request '
+                                       'a limit increase and the spacing you will use afterward. Include '
+                                       'the ask size you plan, either a large multiple or a smaller '
+                                       'percentage step, and justify your choice.',
+                             'example': 'Amex at day 60 then every 90 days, Discover every 30 days, and '
+                                        'Navy Federal at 190 to 195 days rather than 181. Cal Barton '
+                                        'climbed Navy Federal from $10K in January 2020 to $66K in '
+                                        'February 2024 in roughly $8K steps [Cal Barton — D6bPd67bgps @ '
+                                        '00:07:26], so asks here run as 25-50% steps.'},
+                            {'name': 'pull_type_confirmation_script',
+                             'type': 'text',
+                             'prompt': 'Write the short phone script you will use to confirm whether a '
+                                       'limit increase request triggers a soft or hard pull. List the '
+                                       'exact page phrases that will make you back out of an online '
+                                       'request before submitting anything.',
+                             'example': 'Script: ask which pull applies before submitting, because 30 '
+                                        'seconds of asking saves you an inquiry [Bella Sloan Enterprises — '
+                                        '2sUP7XrGRgM @ 00:07:12]. Online, back out if the page says '
+                                        "'credit check', 'review your credit report', 'detailed credit "
+                                        "evaluation', or 'consent to obtain your credit report'. After any "
+                                        'denial, read the adverse-action reason before planning the next '
+                                        'ask.'},
+                            {'name': 'cycling_limits_and_exposure_caps',
+                             'type': 'textarea',
+                             'prompt': 'Set your monthly credit cycling ceiling for each issuer and the '
+                                       "maximum charge as a share of the line. Record each issuer's "
+                                       'approximate exposure cap against your income and note any limit '
+                                       'you would lower to make room for a new card.',
+                             'example': 'Cycling stays at one to three times per month with each charge '
+                                        'under 70% of the line [Colin Matthew — gTpUtrhQsnM @ 00:12:28], '
+                                        'and Capital One gets the least, since it cares most about '
+                                        'cycling. Exposure caps run about 50% of income at Chase and 35% '
+                                        'at Amex; cutting a Sapphire from $25K to $10K opened room for a '
+                                        '$30K Ink.'}],
+                 'completion_gate': 'Every card appears in the stack inventory with limit and expiry; each '
+                                    '0% expiry has a named landing card or transfer fallback; at least '
+                                    'three banks are in rotation; the charge-card share matches a cash '
+                                    'conversion cycle near 30 days; and each issuer has a dated limit '
+                                    'increase request with confirmed pull type.'},
+                {'worksheet_id': 'ws-03',
+                 'number': 3,
+                 'title': 'Amex Review Defense & Capital One Spark Deployment',
+                 'purpose': 'Build the documentation, spend curve, and points-exit plan that let an '
+                            'operator survive an Amex financial review, then decide whether Spark Cash '
+                            'Plus or Venture X Business earns its fee and personal-credit footprint in the '
+                            'stack.',
+                 'chapter_ref': 'Q5-Q6',
+                 'instructions': ['Pull six months of statements before starting; the velocity baseline '
+                                  'and trigger audit depend on actual numbers, not memory.',
+                                  'Assemble the documentation kit now, while there is no 14-day clock '
+                                  'running.',
+                                  'Treat Membership Rewards as exposed value until transferred to the '
+                                  'redemption it is meant for.',
+                                  'Run the Spark break-even with real projected business spend: inventory, '
+                                  'software, ads, and other unavoidable costs.',
+                                  'Write the exit strategy before the first Spark swipe, assuming the full '
+                                  'statement must clear every month.'],
+                 'fields': [{'name': 'spend_velocity_baseline',
+                             'type': 'textarea',
+                             'prompt': 'Calculate your average monthly Amex spend over the past six months '
+                                       'and identify the largest single-month jump. Write the ramp '
+                                       'schedule you will follow for any planned increase, and note when '
+                                       'you will call ahead before a large purchase.',
+                             'example': 'High-velocity spending sat behind 65% of financial reviews across '
+                                        '20 data points [Cal Barton — 0pnnp262mLg @ 00:12:07], and spend '
+                                        'above the six-month average raises a flag. Current average is '
+                                        '$4,000, so the ramp runs 5K, then 10K, then 15K across months, '
+                                        'with a call to Amex before any massive purchase rather than after '
+                                        'the decline.'},
+                            {'name': 'review_trigger_audit',
+                             'type': 'textarea',
+                             'prompt': 'Audit your recent activity against the known review triggers: '
+                                       'returned payments, repeated spending power checks, limit cycling, '
+                                       'cash-like purchases, large transfers to others, and stated income '
+                                       'you cannot prove. Mark each as clean, at risk, or active.',
+                             'example': 'Spending power gets checked once this week, below the '
+                                        'more-than-three-times-a-day pattern people claim can trigger a '
+                                        'review [CardRight — RqEu9gdaauI @ 00:00:58]. No PayPal, Cash App, '
+                                        'Square or Venmo transfers run through Amex; family money moves '
+                                        'through Amex Send and Split. Stated income matches tax returns. '
+                                        'Gift card purchases are marked at risk and paused.'},
+                            {'name': 'income_documentation_kit',
+                             'type': 'textarea',
+                             'prompt': 'Assemble the documents you could submit within the review window: '
+                                       'recent bank statements, pay stubs, and tax returns or transcripts. '
+                                       'Record where each file lives, how quickly you can produce it, and '
+                                       'whether it supports the income you reported.',
+                             'example': 'The Amex letter allows 14 days from its date before additional '
+                                        'credit actions, up to cancellation [RJ Financial — vfXgcEGNVuM @ '
+                                        '00:04:13]. Two-thirds of reviewed cases asked for two months of '
+                                        'bank statements or two pay stubs, so both sit in one folder. Last '
+                                        "year's tax return is ready too, since refusing it practically "
+                                        'guarantees a shutdown.'},
+                            {'name': 'same_day_response_protocol',
+                             'type': 'text',
+                             'prompt': 'Write the step-by-step protocol you will follow the day a '
+                                       'financial review notice arrives. Include which phone number you '
+                                       'will dial, what you will send, how you will handle numbers that '
+                                       'look unfavorable, and when you will request goodwill.',
+                             'example': 'Call the same day using the number on the back of the card, not '
+                                        'the one in the voicemail, which protects against spoofing [Colin '
+                                        'Matthew — xZwOSYlOyVc @ 00:03:29]. Send exactly what is asked and '
+                                        'submit even if the numbers are off. After weeks frozen on a card '
+                                        'with an $800 or $900 fee, request a goodwill credit.'},
+                            {'name': 'points_exposure_and_exit',
+                             'type': 'textarea',
+                             'prompt': 'Record your current Membership Rewards balance and the redemptions '
+                                       'you actually plan to make. Describe when you will transfer points '
+                                       'out ahead of any possible shutdown, and how much you are willing '
+                                       'to leave exposed if accounts close suddenly.',
+                             'example': 'One cardholder lost all nine cards and only kept value because '
+                                        '580,000 points were moved out in time [Cal Barton — sVToTQaS_Dw @ '
+                                        '00:04:50]. When Amex shuts accounts down, it takes all the '
+                                        'points. With 210,000 points on hand, the planned redemptions '
+                                        'transfer out now, leaving no more than 30,000 exposed while any '
+                                        'review remains possible.'},
+                            {'name': 'payment_bank_switch_checklist',
+                             'type': 'text',
+                             'prompt': 'If you are changing the bank account that pays your cards, list '
+                                       'each verification step before the switch. Include routing and '
+                                       'account numbers, available balance, confirmation the payment '
+                                       'cleared at both banks, and the autopays still tied to the old '
+                                       'account.',
+                             'example': 'Routing number, account number and available balance get verified '
+                                        'before the first payment from the new bank [Cal Barton — '
+                                        '3dq0zRBwn8E @ 00:10:02]. The payment is confirmed cleared at both '
+                                        'banks, since returned payments are a review trigger. The old '
+                                        'account stays open until every autopay, including three card '
+                                        'autopays and the phone bill, has moved.'},
+                            {'name': 'spark_break_even_math',
+                             'type': 'textarea',
+                             'prompt': 'Estimate your annual business spend that would run through Spark '
+                                       'Cash Plus and calculate the break-even against its annual fee. '
+                                       'Compare the net result against a no-fee flat-rate card and note '
+                                       'whether you reach the fee refund threshold.',
+                             'example': 'Break-even is $7,500 a year to cover the $150 fee, and about '
+                                        '$30,000 a year to beat no-fee 1.5% cards, where both net $450 '
+                                        '[Ask Sebby Business — x9-GMvg8lPA @ 00:02:10]. Projected spend of '
+                                        '$90,000 nets $1,650 after the fee; the fee only refunds once '
+                                        'yearly spend reaches $150,000. Inventory, software, and ad spend '
+                                        'all route through the card.'},
+                            {'name': 'personal_reporting_and_524_check',
+                             'type': 'textarea',
+                             'prompt': 'Before applying for a Spark product, count your Chase 5/24 slots '
+                                       'and list any planned stacking applications. Note how personal '
+                                       'credit reporting and the bureau pulls involved would affect those '
+                                       'plans and your utilization if a balance reports before payment.',
+                             'example': 'Spark pulls all three personal bureaus and its personal reporting '
+                                        'adds the card to the 5/24 tally [Just Money Ish — Zu5102EGxLc @ '
+                                        '00:03:20]. At 3/24 with an Ink planned, Spark waits. HowToCredit '
+                                        'warns a $5,000 charge on a $10,000 line reads as 50% utilization '
+                                        'even with the minimum paid, so balances get paid before the '
+                                        'statement reports.'},
+                            {'name': 'spark_ramp_and_exit_plan',
+                             'type': 'textarea',
+                             'prompt': 'Describe how you will ramp spend on a new no-preset-limit Spark '
+                                       'card over its first two months. Write the exit strategy for the '
+                                       'capital you deploy, including how each statement gets cleared and '
+                                       'what happens if revenue stalls.',
+                             'example': 'Spend ramps over the first month or two instead of dropping 50k '
+                                        'in month one, since Capital One scrutinizes early activity '
+                                        'against a limit it does not disclose [Ask Sebby Business — '
+                                        'x9-GMvg8lPA @ 00:01:34]. The $100,000 TikTok-live case failed '
+                                        'without pressure-testing or an exit and sat at roughly 20% '
+                                        'interest. Every statement clears from existing revenue.'},
+                            {'name': 'miles_conversion_and_banker_relationship',
+                             'type': 'textarea',
+                             'prompt': 'Decide whether your Spark rewards stay as cash or convert into '
+                                       'Capital One miles for partner transfers. Record the redemption you '
+                                       'are targeting, its cash value, and how you will use an assigned '
+                                       'banker or card controls to protect the account.',
+                             'example': 'The two-card setup turned $1,320 of Spark cash back into 132,000 '
+                                        'miles, moved as 130,000 Singapore miles for an ~$8,500 JFK to '
+                                        'Singapore saver seat [Ask Sebby Business — x9-GMvg8lPA @ '
+                                        "00:06:34]. Ryan Maya keeps the banker's cell number for problems "
+                                        'and new lines. Single-use virtual cards and per-employee limits '
+                                        'keep low spenders carrying less risk.'}],
+                 'completion_gate': 'The velocity baseline and ramp schedule are written; every review '
+                                    'trigger is marked clean, at risk, or active; the documentation kit '
+                                    'can be produced within 14 days; points exposure has a stated ceiling; '
+                                    'the Spark break-even and 5/24 count are calculated; and a written '
+                                    'exit plan covers every dollar of planned Spark spend.'},
+                {'worksheet_id': 'ws-04',
+                 'number': 4,
+                 'title': 'Net-60 Float & Chase Ink Stack Planner',
+                 'purpose': 'Turn the Amex Plum into a deliberate float instrument and build the Chase Ink '
+                            'entry rung without wasting a bonus. Every dollar gets one mode, either '
+                            'early-pay discount or full 60-day float, every large charge is confirmed '
+                            'before it is swiped, and every Ink application clears the 24-month card count '
+                            'first.',
+                 'chapter_ref': 'Q7-Q8',
+                 'instructions': ['Pull your last three statements and mark each statement close date '
+                                  'before planning any Plum purchase.',
+                                  'Assign every planned Plum dollar to exactly one mode, early-pay '
+                                  'discount or full 60-day float, and never mix them.',
+                                  'Only buy what cash on hand already covers, because interest after day '
+                                  '60 can wipe out the entire trade.',
+                                  'Count every card opened in the last 24 months, including '
+                                  'authorized-user accounts, before touching a Chase Ink application.',
+                                  'Log every office-store gift card purchase the same day, with PIN, '
+                                  'balance check, photos, and a non-round total.'],
+                 'fields': [{'name': 'plum_float_window_map',
+                             'type': 'text',
+                             'prompt': 'Map the Plum float window against your statement calendar. Record '
+                                       'the statement close date, the purchase date you will target, the '
+                                       '60-day payment deadline, and the total days of zero-interest float '
+                                       'you expect before any interest begins to accrue on inventory.',
+                             'example': 'Statement closes on the 3rd; Q4 inventory is bought that same '
+                                        'day, so the charge rides a full cycle plus 60 days. Stephen Smith '
+                                        'reads this as roughly 90 days of 0% on inventory [Stephen Smith — '
+                                        'zOrHXaEEgxk @ 00:10:51]. Deadline logged on the shared calendar '
+                                        'with a reminder set ten days earlier to confirm cash is staged.'},
+                            {'name': 'plum_mode_per_dollar',
+                             'type': 'textarea',
+                             'prompt': 'For each planned Plum charge, choose one mode: pay within 10 days '
+                                       'for the 1.5 percent discount, or float the full 60 days. Write the '
+                                       'dollar amount assigned to each mode and the reason float beats the '
+                                       'discount for that purchase.',
+                             'example': '$20,000 of supplier invoices paid early inside the 10-day window '
+                                        'to capture 1.5 percent, about $300; $8,000 of Q4 inventory '
+                                        'floated the full 60 days because sell-through cash arrives in '
+                                        'week seven. Jake Broe equates skipping the discount to roughly an '
+                                        '18 percent APR on top of the 250 dollar fee [Jake Broe — '
+                                        'UdDb_X5YHDI @ 00:06:47].'},
+                            {'name': 'plum_fee_breakeven',
+                             'type': 'text',
+                             'prompt': 'Calculate your Plum fee breakeven. Enter projected annual '
+                                       'early-paid spend, multiply by 1.5 percent, subtract the 250 dollar '
+                                       'fee charged from year two, and state whether your realistic volume '
+                                       'clears the breakeven line with margin to spare for the coming '
+                                       'year.',
+                             'example': 'Projected early-paid spend is $48,000, returning $720 at 1.5 '
+                                        'percent; minus the $250 fee nets $470. Daniel Shepherd puts '
+                                        'breakeven at a little over $16,600 of early-paid spend [Daniel '
+                                        'Shepherd — a0APMJagyzA @ 00:02:54], so this volume clears it '
+                                        'nearly three times over. Year one fee is waived, so the '
+                                        'first-year net is the full $720.'},
+                            {'name': 'plum_vs_blue_business_cash',
+                             'type': 'textarea',
+                             'prompt': 'Compare the always-paid-early Plum against the no-fee Blue '
+                                       'Business Cash at your actual annual spend. Show the cash returned '
+                                       'by each card net of fees and note the spend level where the Plum '
+                                       'finally catches up. Include employee card spend in totals.',
+                             'example': 'At $90,000 a year, the Blue Business Cash pays 2% on $50,000 '
+                                        '($1,000) plus 1% on $40,000 ($400), totaling $1,400. The Plum '
+                                        'pays $1,350 minus $250, netting $1,100. Jake Broe finds both '
+                                        'cards return $2,000 only at $150,000 [Jake Broe — UdDb_X5YHDI @ '
+                                        '00:11:55], so the Blue Business Cash stays primary below that.'},
+                            {'name': 'large_ticket_capacity_check',
+                             'type': 'text',
+                             'prompt': 'Before any large charge on a no-preset-limit card, record the '
+                                       'purchase amount, the date you called the issuer, the '
+                                       "representative's confirmation, and a fallback card ready in case "
+                                       'the transaction is still declined or flagged for review at '
+                                       'checkout.',
+                             'example': 'A $14,000 equipment order is planned for the 12th. Called Amex on '
+                                        'the 10th and the representative noted the charge for '
+                                        "pre-authorization, following Jake Broe's practice of calling "
+                                        'ahead on a charge card [Jake Broe — UdDb_X5YHDI @ 00:04:37]. '
+                                        'Because purchasing capacity can vary and transactions may still '
+                                        'be declined, the Ink Premier sits ready as backup.'},
+                            {'name': 'amex_slot_inventory',
+                             'type': 'textarea',
+                             'prompt': 'List every Amex card you hold across personal and business '
+                                       'profiles, tagging each as credit or charge. Count remaining '
+                                       'credit-card and charge-card slots and confirm the Plum or any new '
+                                       'no-preset-limit card lands in an open slot before you submit the '
+                                       'application.',
+                             'example': 'Held: Blue Business Plus, Blue Business Cash, and personal Blue '
+                                        'Cash Preferred, so three credit-card slots used and one '
+                                        'remaining; zero charge cards. Under the rule of four credit cards '
+                                        'and up to ten charge cards, the Plum sits in a charge-card slot '
+                                        '[u2 credit consulting — UYH3UwJ9oOM @ 00:03:53]. Existing '
+                                        'relationship should support a soft-pull-only approval.'},
+                            {'name': 'five_24_count',
+                             'type': 'text',
+                             'prompt': 'Count every card opened in the last 24 months from any issuer, '
+                                       'including authorized-user accounts and personally reporting '
+                                       'business cards. Enter the total, the date the oldest account falls '
+                                       'off, and whether you sit under five before any Chase Ink '
+                                       'application.',
+                             'example': 'Four accounts in 24 months: two personal cards, one '
+                                        'authorized-user card, and a Spark Cash Plus that reports '
+                                        'personally and counts toward the tally. The oldest falls off in '
+                                        'March, so an Ink application stays possible now while under five '
+                                        '[Just Money Ish — 04bDgAQcsYs @ 00:02:03]. Any additional '
+                                        'personal card waits until after the Ink approval.'},
+                            {'name': 'ink_bonus_card_choice',
+                             'type': 'textarea',
+                             'prompt': 'Decide whether the Ink Cash or Ink Unlimited earns your welcome '
+                                       'bonus, since only one pays. Record the current offer, required '
+                                       "spend and window, your planned spend sources, and why that card's "
+                                       'earning structure fits your business better than the other.',
+                             'example': 'Choosing the Ink Cash for the 100,000-point offer on $8,000 in 4 '
+                                        'months, because phone, internet and office-supply spend fills the '
+                                        '5x bucket. Chase pays the welcome bonus on only one of the two '
+                                        'cards [Miles with Mary - Points & Miles Travel — z45WdojPWE8 @ '
+                                        '00:07:21]. Spend sources: quarterly software renewals, phone '
+                                        'autopay, and a planned printer purchase.'},
+                            {'name': 'ink_cash_5x_plan',
+                             'type': 'textarea',
+                             'prompt': 'Plan your Ink Cash 5x spend against the $25,000 annual cap. List '
+                                       'monthly phone and internet bills, office-supply store purchases, '
+                                       'and any fee-free gift cards, then project the points earned toward '
+                                       'the 125,000-point ceiling for the year and note the remaining gap.',
+                             'example': 'Phone and internet autopay run $310 a month, about $3,720 a year. '
+                                        'Office-store purchases add $1,200 in one month for 6,000 points, '
+                                        'matching the Staples or Office Depot result [Leen on Travel — '
+                                        'zK3uQ4upb_4 @ 00:00:43]. Adding printer and supply purchases, '
+                                        'projected total is $9,000 at 5x, or 45,000 points, leaving '
+                                        '$16,000 of cap for later quarters.'},
+                            {'name': 'gift_card_hygiene_log',
+                             'type': 'textarea',
+                             'prompt': 'Log every office-store gift card purchase with date, store, card '
+                                       'amount, PIN set, balance verified, and receipt photographed. '
+                                       'Confirm the order total does not end in 000 and the gift card mall '
+                                       'address was typed fully into the browser bar every single time.',
+                             'example': 'March 6, Staples: two $200 Visa gift cards plus a pack of gum, '
+                                        'bringing the total to $401.89 so it never ends in 000 [Leen on '
+                                        'Travel — zK3uQ4upb_4 @ 00:01:15]. PINs set, balances verified, '
+                                        'both sides photographed, receipt saved, since a past claim '
+                                        'replacement took about six weeks. Address typed fully, not '
+                                        'clicked.'}],
+                 'completion_gate': 'Do not place a single Plum or Ink charge until every planned dollar '
+                                    'has one assigned mode, the 60-day deadline is calendared with cash '
+                                    'already on hand, large tickets are pre-cleared with the issuer, and '
+                                    'the 24-month card count sits under five.'},
+                {'worksheet_id': 'ws-05',
+                 'number': 5,
+                 'title': 'Business Gold Bonus Engine & Portal Stack Ledger',
+                 'purpose': 'Capture the largest available Business Gold offer, land the minimum spend on '
+                            'real expenses, route 4x categories correctly, and layer portal cashback, '
+                            'card-linked offers, and card earn on one checkout with tracking evidence '
+                            'saved for every order.',
+                 'chapter_ref': 'Q9-Q10',
+                 'instructions': ['Check the offer through a private window, VPN browser, and the '
+                                  'pre-approval tool before accepting anything below the top figure.',
+                                  'Schedule big real expenses into the three-month window so minimum spend '
+                                  'lands naturally without a tax payment crossing the line.',
+                                  'Confirm the merchant type qualifies for 4x before routing spend, and '
+                                  'verify each credit is live before counting it.',
+                                  'Set the Rakuten payout currency before each quarterly date and confirm '
+                                  'your status before choosing Bilt.',
+                                  'Disable ad blockers, use only portal-listed codes, and screenshot every '
+                                  'confirmation page before closing the browser tab.'],
+                 'fields': [{'name': 'bg_offer_hunt',
+                             'type': 'text',
+                             'prompt': 'Record the Business Gold offer you will accept. Note the figure '
+                                       'shown publicly, the figure surfaced through private browsing, VPN '
+                                       'browsers, or the pre-approval tool, and whether the offer carries '
+                                       'lifetime language that blocks a second bonus on this product '
+                                       'later.',
+                             'example': 'The public offer showed 100,000 points. Loading a referral link '
+                                        "in Opera's private browser with the built-in VPN surfaced 200,000 "
+                                        '[Phillip Pak — Ye64oVq2FgU @ 00:00:39], and the pre-approval tool '
+                                        'confirmed the targeted amount before applying. Terms show no '
+                                        "lifetime language. Following Phillip Pak's rule, nothing under "
+                                        '200,000 gets accepted on this card.'},
+                            {'name': 'bg_minimum_spend_timing',
+                             'type': 'textarea',
+                             'prompt': 'Map how the $15,000 minimum spend in three months will land '
+                                       'naturally. List each large expense, its expected date and amount, '
+                                       'and confirm that a tax payment is never the purchase that crosses '
+                                       'the threshold. If spend is low, record the expense you will wait '
+                                       'for.',
+                             'example': 'Application waits until the roof repair is quoted, so the $15,000 '
+                                        'lands naturally [The Rewards Master — qjuRrg-ROGg @ 00:02:50]. '
+                                        'Month one: $9,200 roof repair. Month two: $4,100 software and '
+                                        'advertising. Month three: $1,900 supplies push spend past the '
+                                        'threshold. The quarterly tax payment posts in month two, never as '
+                                        'the crossing purchase.'},
+                            {'name': 'tax_payment_net_return',
+                             'type': 'text',
+                             'prompt': 'If you route a tax payment toward the bonus, record the bill '
+                                       'amount, the processing fee percentage, the bonus return '
+                                       'percentage, and the net return after fees, so the real yield is '
+                                       'visible before you pay. Note which processor you will use.',
+                             'example': 'A $7,000 estimated tax bill goes on the Business Gold toward the '
+                                        'bonus. The bonus return works out to 30 percent, minus a 3 '
+                                        'percent processing fee, for a 27 percent net return [Spencer '
+                                        'Johnson — Fk75okyk2W4 @ 00:07:28]. Processing fee of $210 is '
+                                        'logged as a cost, and the payment is scheduled mid-window.'},
+                            {'name': 'four_x_category_routing',
+                             'type': 'textarea',
+                             'prompt': 'Identify the top two Business Gold categories your spend will hit '
+                                       'each cycle. Confirm merchant types qualify, noting gas exclusions '
+                                       'at supermarkets, superstores and warehouse clubs, and track '
+                                       'cumulative 4x spend against the $150,000 calendar-year cap, '
+                                       'including all employee card spend.',
+                             'example': 'Top two categories are software and advertising. Website hosting '
+                                        'moved off the Blue Business Plus at 2x after Points with Phillip '
+                                        'described the same mistake [Points with Phillip — nZSZ4gP-QwI @ '
+                                        '00:02:04]. Fuel at a warehouse club is excluded, so it goes '
+                                        'elsewhere. Year-to-date 4x spend sits at $41,000 against the '
+                                        '$150,000 cap.'},
+                            {'name': 'monthly_credit_harvest',
+                             'type': 'text',
+                             'prompt': 'Plan how the $20 monthly credit will be captured without opening '
+                                       'new subscriptions. Name the merchant, the exact purchase, and the '
+                                       'method, then calculate the effective annual fee after twelve '
+                                       'months of successful credit capture. Confirm the credit is live on '
+                                       'the account first.',
+                             'example': 'Each month a $20 Amazon gift card is bought on Staples.com, not '
+                                        'Office Depot.com, which runs through a third party [Leen on '
+                                        'Travel — TvJBiMpMRhw @ 00:01:33]. Twelve months of $20 equals '
+                                        '$240, bringing the $375 fee down to $135. Credit confirmed live '
+                                        'on the account dashboard before the first purchase was counted.'},
+                            {'name': 'keep_or_cancel_test',
+                             'type': 'textarea',
+                             'prompt': 'Decide whether the Business Gold earns its keep after year one. '
+                                       'Compare annual 4x points earned on real spend against what the '
+                                       'Blue Business Plus would earn on the same spend, then net the '
+                                       'effective fee. Record the keep or cancel verdict and date.',
+                             'example': 'Real 4x spend runs $12,000 a year, earning 48,000 points versus '
+                                        '24,000 on the Blue Business Plus at 2x. The extra 24,000 points '
+                                        'must beat a $135 effective fee. Daniel Shepherd warns the card '
+                                        'loses when 4x spend is low, so look at actual spending [Daniel '
+                                        'Shepherd — 9mXtEwhakHo @ 00:15:00]. Verdict: keep, reviewed every '
+                                        'renewal.'},
+                            {'name': 'rakuten_payout_currency',
+                             'type': 'text',
+                             'prompt': 'Record your Rakuten payout currency before each quarterly payout '
+                                       'date in February, May, August and November. Note whether you hold '
+                                       'an MR-earning card, the conversion rate you will receive, and your '
+                                       'Bilt status if routing there. Each payout is cash or points, not '
+                                       'both.',
+                             'example': 'Payout set to Amex Membership Rewards at $1 equals 100 points, '
+                                        'confirmed because the Blue Business Plus earns MR [Points Rookie '
+                                        '— lfbv6SuAgRE @ 00:05:10]. Bilt was rejected for now: without '
+                                        'Silver status the account converts at 2:1, a 50% cut. Currency is '
+                                        'rechecked one week before each payout date, next on February 15.'},
+                            {'name': 'four_layer_stack_build',
+                             'type': 'textarea',
+                             'prompt': 'Build one checkout stack layer by layer: sale price or '
+                                       'Rakuten-listed code, portal cashback rate, card-linked offer, and '
+                                       'card earn rate. Show the dollar value of each layer and the final '
+                                       'net cost of the order and the percentage saved.',
+                             'example': 'A $200 Nike order: 15% code drops it to $170, Rakuten 10% returns '
+                                        '$17, a 5% card offer returns $8.50, and 2% card cashback layers '
+                                        'on top, netting $141.10, nearly 30% saved [Everyday Money Heroes '
+                                        '— HbZGYalSsyc @ 00:19:01]. Only the code Rakuten displays was '
+                                        'used, so the multiplier stayed valid and the confirmation was '
+                                        'screenshotted.'},
+                            {'name': 'tracking_evidence_log',
+                             'type': 'textarea',
+                             'prompt': 'For every portal purchase, record the date, merchant, order total, '
+                                       'expected cashback, browser setup used, and screenshot location. '
+                                       'Note whether ad blockers were disabled, and log the claim filing '
+                                       'date if the purchase failed to track within the posting window.',
+                             'example': 'October 3, tire shop order of $1,054, expected cashback logged. '
+                                        'Ad blocker disabled and a private window used, confirmation '
+                                        'screenshotted to the receipts folder [Money with Andrey — '
+                                        'E-FSl936NIg @ 00:07:05]. Nothing tracked after the posting '
+                                        'period, so a claim was filed with the screenshot, since '
+                                        'non-tracking is the most common complaint.'},
+                            {'name': 'portal_focus_and_bank_offers',
+                             'type': 'textarea',
+                             'prompt': 'Choose the one to three portals you will concentrate funds in and '
+                                       'list the high-yield offer types you will chase, such as '
+                                       'subscription and bank-bonus offers. Record expected quarterly '
+                                       'points and offers you will deliberately skip because they earn '
+                                       'nothing.',
+                             'example': 'Portals limited to Rakuten plus Capital One Shopping in a '
+                                        "separate browser, following KaungFi's advice to focus on one or "
+                                        'two, maybe three at most [KaungFi — R-TCKAPsObw @ 00:07:54]. '
+                                        'Priority goes to 80-100% cashback subscriptions and bank offers, '
+                                        'which made up 58% of roughly 405k points in one two-player setup. '
+                                        'Newegg gift cards are skipped, since they earn nothing.'}],
+                 'completion_gate': 'Do not apply or check out until the accepted offer is the top figure '
+                                    'found, minimum spend maps to real expenses with no tax payment '
+                                    'crossing the line, every 4x merchant and credit is verified, and each '
+                                    'portal order has a saved screenshot.'},
+                {'worksheet_id': 'ws-06',
+                 'number': 6,
+                 'title': 'Shopping Offers, Transfer Hurdles & Wallet Fee Math',
+                 'purpose': 'Harvest Capital One Shopping targeted offers and the referral bonus without '
+                            'tracking failures, move points only when a priced award clears the hurdle '
+                            'rate, and build a pay-in-full wallet whose premium fees are justified by '
+                            'credits that replace real spending.',
+                 'chapter_ref': 'Q11-Q12',
+                 'instructions': ['Screenshot every targeted offer with amount, expiration, and current '
+                                  'date before activating it, and file requests after 30 days.',
+                                  'Run competing shopping extensions in separate browsers and complete a '
+                                  'small test purchase before any large order.',
+                                  'Price each award in partner miles and in bank-portal points, then '
+                                  'transfer only when the hurdle rate clears.',
+                                  'Count only premium card credits that replace spending you already make, '
+                                  'and subtract the full annual fee.',
+                                  'Calendar every 0% expiry and issuer rule change, and confirm the full '
+                                  'balance is cleared before each window closes.'],
+                 'fields': [{'name': 'cos_referral_bonus_checklist',
+                             'type': 'text',
+                             'prompt': 'Track the Capital One Shopping $80 referral bonus requirements. '
+                                       'Record the referral link used, install date, confirmation the '
+                                       'device never had the extension, the qualifying purchase amount and '
+                                       'date, and the expected posting window for the credit. Keep the '
+                                       'extension installed throughout.',
+                             'example': 'Signed up through a referral link and installed within seven days '
+                                        'on a laptop that never had the extension; $12 spent at a '
+                                        'qualifying store within 30 days and the extension stays installed '
+                                        "[Eli — L5V4-qjpKSw @ 00:01:59]. Nate Bind's $80 posted roughly 90 "
+                                        'days after a $1 purchase, so the calendar reminder sits at day '
+                                        '95.'},
+                            {'name': 'targeted_offer_hunt',
+                             'type': 'textarea',
+                             'prompt': 'Describe your routine for surfacing targeted Capital One Shopping '
+                                       'offers. Note merchants browsed inside the portal, logout and '
+                                       "return timing, marketing email settings, and each offer's amount, "
+                                       'spend requirement, and expiration, with screenshots and the '
+                                       'current date captured before activating anything.',
+                             'example': 'Browsed GNC, Vitamin Shop and Lucky Vitamin protein listings '
+                                        'inside the portal, logged out, and returned two to three days '
+                                        'later to a $45 back on $75 offer [Michael Martinez — CDTjD80PdZk '
+                                        '@ 00:09:30]. Marketing emails switched on, since emailed offers '
+                                        'run higher. Screenshot shows amount, expiration and current date '
+                                        'before activation.'},
+                            {'name': 'extension_conflict_and_test',
+                             'type': 'text',
+                             'prompt': 'Record how you prevent extension conflicts and confirm tracking. '
+                                       'Note which browser runs Capital One Shopping, which runs Rakuten, '
+                                       'whether ad blockers are removed, and the small test purchase '
+                                       'completed before any large order at that store. Never edit orders '
+                                       'after checkout.',
+                             'example': 'Capital One Shopping runs in Chrome with no other extensions; '
+                                        'Rakuten runs in a separate browser so the two never void each '
+                                        'other [Michael Martinez — CDTjD80PdZk @ 00:12:44]. A $14 test '
+                                        'order at the target store tracked before the $600 order went '
+                                        'through. Orders are never tweaked after checkout, since edits '
+                                        'risk the transaction not counting.'},
+                            {'name': 'offer_terms_and_payout_plan',
+                             'type': 'textarea',
+                             'prompt': "Read every targeted offer's terms for excluded items before "
+                                       'purchasing, and plan how gift-card-only payouts will be used. '
+                                       'Record exclusions found, the reward request deadline at 30 days, '
+                                       'and the gift card you intend to redeem toward with expected payout '
+                                       'timing.',
+                             'example': 'Electronics offer terms exclude Apple products, so the order was '
+                                        'built around other brands [Twin Finances — OxMh5dpHvJk @ '
+                                        '00:03:13]. Reward request goes in at day 31 with screenshots if '
+                                        'nothing posts. Because payouts come only as gift cards after one '
+                                        'to three months, the balance is building toward a large Marriott '
+                                        'gift card for a hotel stay.'},
+                            {'name': 'transfer_hurdle_calc',
+                             'type': 'text',
+                             'prompt': 'Before transferring any points, price the award in partner miles '
+                                       'and in bank-portal points. Divide the all-in cash price by points '
+                                       'required to get cents per point and compare against your personal '
+                                       'hurdle rate, remembering transfers are irreversible.',
+                             'example': 'Christmas Eve at the Grand Hyatt Vail costs 35,000 points against '
+                                        'a $773 all-in cash price. Dividing $773 by 35,000 gives 2.2 cents '
+                                        'per point, clearing a 2-cent hurdle rate [AskSebby — Uvyem-_QFhI '
+                                        '@ 00:09:00]. Bank-portal price checked first and came in far '
+                                        'higher, so the transfer is approved only once award space is '
+                                        'confirmed.'},
+                            {'name': 'transfer_bonus_watch',
+                             'type': 'textarea',
+                             'prompt': 'List active or expected transfer bonuses for your points '
+                                       'currencies. For each, record the partner, bonus percentage, end '
+                                       'date, baseline cents-per-point value, boosted value after the '
+                                       'bonus, and whether an actual redemption exists to justify moving '
+                                       'points before the deadline passes.',
+                             'example': 'Chase to IHG at an 80 percent bonus, ending December 3, lifts an '
+                                        'average IHG valuation from 0.6 cents to 1.08 cents per Chase '
+                                        'point [Ben Hedges — 3sY2v2Stv7c @ 00:01:36]. A two-night stay is '
+                                        'priced and matched to the boosted rate. ANA award space is '
+                                        'monitored through seats.aero alerts before any airline transfer.'},
+                            {'name': 'catch_all_wallet_architecture',
+                             'type': 'textarea',
+                             'prompt': 'Design your wallet around one 2x or 2 percent catch-all card '
+                                       'wrapped by category specialists. Name each card, the spend it '
+                                       'captures, its earn rate, and your estimated blended return across '
+                                       'total annual spend on a pay-in-full basis.',
+                             'example': 'Catch-all is the Blue Business Plus at 2x for uncategorized '
+                                        'spend, with Business Gold handling software and advertising, Ink '
+                                        'Cash covering phone and internet, and Blue Cash Preferred taking '
+                                        'groceries. Rob Berger shows a three-card system landing close to '
+                                        '3 percent on average [Rob Berger — 4pWev9D_0yQ @ 00:08:01]. Every '
+                                        'statement is paid in full.'},
+                            {'name': 'premium_fee_credit_capture',
+                             'type': 'textarea',
+                             'prompt': 'Run the premium card fee test. List each annual credit, the dollar '
+                                       'amount you will actually use, and whether it replaces spending you '
+                                       'already make, then subtract the annual fee to show your true net '
+                                       'value for the year.',
+                             'example': 'Gold credits listed total $524 against a $325 fee. Using every '
+                                        'credit nets +$199, but capturing only dining and Uber lands at '
+                                        "-$85 [Leo's Travel Hacks — 4uIEMf5mkHg @ 00:08:15]. Only credits "
+                                        'replacing existing spend are counted, which pushed a light '
+                                        'Platinum user to -$715 against the $895 fee [Card & Capital — '
+                                        '-JFBxMqq458 @ 00:07:27]. Verdict: Gold kept, Platinum declined.'},
+                            {'name': 'zero_apr_float_exit',
+                             'type': 'textarea',
+                             'prompt': 'Map every 0% APR window you will use for float. Record the card, '
+                                       'balance, intro expiry date, where idle cash is parked and at what '
+                                       'yield, any tax set-aside, and the date the full balance will be '
+                                       'cleared.',
+                             'example': 'Blue Business Plus 0% window holds $12,282.88 of spend, with '
+                                        'matching cash parked at 4.5% APY. The targeted 25k MR offer plus '
+                                        'interest produced $926.66 profit, or $861.34 after a 15% tax '
+                                        'set-aside [Fat Stacks Academy — 9JkcZCA1q_M @ 00:10:31]. Full '
+                                        'payoff is scheduled one month before expiry, since an 18 to 25 '
+                                        'percent APR wipes out rewards.'},
+                            {'name': 'rule_change_and_grocery_crossover',
+                             'type': 'textarea',
+                             'prompt': 'Record issuer rule changes and spend crossovers that alter your '
+                                       'wallet. Note the Platinum hotel credit two-night minimum, your '
+                                       'monthly supermarket spend against the Blue Cash Preferred '
+                                       'crossover, and the adjustments you will make before each change '
+                                       'takes effect.',
+                             'example': 'If held, Platinum hotel credit plans are rebuilt around the '
+                                        'two-night minimum confirmed for January 1, 2027 [Ben Hedges — '
+                                        '1K72JHTnPlw @ 00:03:14], so two-night stays are booked together. '
+                                        'Supermarket spend averages $410 a month, above the roughly $264 '
+                                        'crossover where the $95 Blue Cash Preferred at 6% overtakes the '
+                                        'no-fee Blue Cash Everyday. Preferred stays.'}],
+                 'completion_gate': 'Do not activate an offer, transfer a point, or renew a premium card '
+                                    'until screenshots are saved, the award clears your hurdle rate in '
+                                    'both pricing views, credits are counted only against existing spend, '
+                                    'and every 0% balance has a dated payoff.'}]}

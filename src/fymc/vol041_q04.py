@@ -1,697 +1,835 @@
 from __future__ import annotations
 
-CHAPTER_4 = {
-    "id": "Q4",
-    "chapter_id": "Q4",
-    "chapter_number": 4,
-    "question_number": 4,
-    "slug": "startup-capital-lean-infrastructure-pre-flight-stack",
-    "question_prompt": "How do you allocate startup capital ($10,000–$55,000 USD) and configure a lean, low-opex ($1,500–$9,000 USD/mo) production stack without wasting cash on bloated overhead?",
-    "kicker": "Q4 / THE BIG MONEY PLAYBOOKS",
-    "title": "Startup Capital, Lean Infrastructure & Pre-Flight Stack",
-    "subtitle": "Reserve-First Capital, BuyForMeRetail Settlement Controls, Commercial Card Ledgers, and Treasury Maturity Matching",
-    "layout_template": "comparison_table",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #41, Rank #10 of 43, scores 93/100 across 11 mapped plays, but its "
-        "production stack starts with repayment capacity rather than reward optimization. "
-        "Allocate 60% of the $10,000–$55,000 startup budget to working capital and "
-        "repayment reserves; keep wholesale fulfillment, commercial card rebates, and "
-        "treasury income in separate ledgers. Formula v2.0 produces annual owner profits "
-        "of $20,000 Conservative, $143,500 Base, and $360,000 Scaled. Those outcomes "
-        "require the specified contribution bridge, not an assumption that card limits "
-        "create earnings. This chapter prices a twelve-layer lean stack, sizes delayed-ACH "
-        "exposure, separates overhead from transaction costs, and establishes shipment, "
-        "issuer, accounting, and maturity checks. The agency advertising play earns its "
-        "place only when genuine authorized spend remains profitable after client obligations."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$250,000",
-            "context": "Annual gross scorecard basis; $87,500 retained contribution at 35%",
-            "note": "8% gross-basis net margin; $20,000 owner profit; 22.86% retained margin; 1 FT + 2 C",
-        },
-        {
-            "label": "Base",
-            "value": "$1,025,000",
-            "context": "Annual gross scorecard basis; $358,750 retained contribution at 35%",
-            "note": "14.0% gross-basis net margin; $143,500 owner profit; 40.0% retained margin; 1 FT + 2 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$1,800,000",
-            "context": "Annual gross scorecard basis; $630,000 retained contribution at 35%",
-            "note": "20% gross-basis net margin; $360,000 owner profit; 57.14% retained margin; 2 FT + 3 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Ring-fence repayment cash before purchasing the first unit",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Build the opening budget around money that can settle a statement, not the "
-                    "headline credit limit. At $10,000, dedicate $4,000 to purchase-cycle working "
-                    "capital and $2,000 to untouched repayment cash; at $55,000, allocate $22,000 "
-                    "and $11,000 respectively. Both plans preserve 60% for those two purposes, "
-                    "above the 50% minimum. The working-capital bucket may become inventory or "
-                    "a receivable, so it is not interchangeable with immediately available cash. "
-                    "The separate claims reserve absorbs damage, denied returns, and carrier "
-                    "deductibles; it should not silently fund another order. Treat each budget "
-                    "allocation as an internal envelope within properly titled business accounts, "
-                    "not a reason to open seven fee-bearing accounts. The $1,500 or $9,000 "
-                    "operating buffer funds only one month at the corresponding overhead ceiling. "
-                    "If launch requires three months without receipts, retain more runway by "
-                    "reducing purchasing, contributions from owners being recorded explicitly. "
-                    "Do not stretch supplier commitments to disguise insufficient capital. At the "
-                    "smallest budget, the untouched $2,000 repayment bucket supports a much "
-                    "smaller uncovered exposure than a $20,000 commercial card limit suggests. "
-                    "Owner draws begin only after taxes, statements, and unsettled shipment "
-                    "exposure have been reserved."
-                ),
-                (
-                    "Maintain a daily coverage ladder by actual calendar date: available bank "
-                    "cash, collectible buying-group balances, scheduled card debits, shipment "
-                    "exposure, and security maturities. A potential 55-day statement interval "
-                    "is a best-positioned purchase window, not a contractual grace period for "
-                    "every transaction. A purchase just before closing can have far less time; "
-                    "grace treatment also depends on the account agreement and payment behavior. "
-                    "For a $5,000 wholesale lot, assume three transit days, two receiving days, "
-                    "and a stated Net-5 payment term beginning only after accepted receipt. "
-                    "If business-day counting and an additional ten-business-day ACH delay "
-                    "push settlement beyond the card due date, the operator still owes the "
-                    "issuer on time. Never satisfy that obligation with an uncollected portal "
-                    "reward or a disputed carrier claim. At the lean budget, a $5,000 exposed "
-                    "lot exceeds the $2,000 untouched repayment reserve; either identify "
-                    "another $3,000 of genuinely unencumbered cash or reduce the lot. Freeze "
-                    "new commitments when stressed due-date coverage falls below one dollar "
-                    "of available cash per dollar due. Any permitted standby facility enters "
-                    "the cost model with its actual draw conditions, interest, and fees."
-                ),
-                (
-                    "Keep the canonical scorecard bridge visible beside the cash ladder. "
-                    "Conservative gross activity of $250,000 retains $87,500 at 35%, then "
-                    "absorbs $67,500 of remaining costs to produce $20,000 owner profit. "
-                    "Base activity of $1,025,000 retains $358,750, less $215,250, producing "
-                    "$143,500. Scaled activity of $1,800,000 retains $630,000, less $270,000, "
-                    "producing $360,000. The corresponding gross-basis margins remain 8%, "
-                    "14.0%, and 20%; retained-basis margins are 22.86%, 40.0%, and 57.14%. "
-                    "A planning allocation of $1,500, $4,500, and $9,000 monthly fixed "
-                    "overhead consumes $18,000, $54,000, and $108,000 annually, leaving "
-                    "$49,500, $161,250, and $162,000 for other post-contribution costs. "
-                    "Those residuals must cover the actual labor, processing, losses, and "
-                    "other expenses classified outside landed merchandise cost. Do not "
-                    "deduct a cost twice. The staffing labels describe one full-time person "
-                    "plus two contractors in the first two cases and two full-time people "
-                    "plus three contractors when scaled, not five full-time salaries. "
-                    "The 35% retained-share bridge is the supplied modeling convention; "
-                    "ASC 606 principal-versus-agent assessment still determines presentation. "
-                    "Client advertising spend, card principal, and treasury principal are "
-                    "not automatically recognized operator revenue."
-                ),
-            ],
-            "table": {
-                "caption": "Opening Cash Allocation: Two Fully Reconciled Budgets with 60% Working-Capital Protection",
-                "headers": [
-                    "Capital envelope and operational purpose",
-                    "$10,000 opening capitalization allocation",
-                    "$55,000 opening capitalization allocation",
-                    "Release condition and replenishment discipline",
-                ],
-                "rows": [
-                    [
-                        "Purchase-cycle working capital for accepted wholesale commitments",
-                        "$4,000 allocated to narrowly capped purchase cycles",
-                        "$22,000 allocated across independently verified buying counterparties",
-                        "Release against accepted commitments with dated settlement expectations",
-                    ],
-                    [
-                        "Untouched statement repayment reserve held as cash",
-                        "$2,000 reserved against card obligations approaching maturity",
-                        "$11,000 reserved against stressed card payment schedules",
-                        "Use for repayment rather than incremental speculative inventory",
-                    ],
-                    [
-                        "Entity formation, registered agent, and initial accounting",
-                        "$700 planning allowance with state charges verified",
-                        "$2,500 planning allowance including ownership documentation support",
-                        "Pay documented invoices and preserve formation evidence centrally",
-                    ],
-                    [
-                        "Initial insurance premium funding and shipment protection",
-                        "$600 planning allowance subject to actual underwriting",
-                        "$3,000 planning allowance subject to inventory exposure",
-                        "Bind appropriate coverage before releasing insured shipment values",
-                    ],
-                    [
-                        "Software, authentication hardware, and configuration equipment",
-                        "$300 planning allowance favoring existing supported hardware",
-                        "$1,500 planning allowance with tightly controlled subscriptions",
-                        "Purchase only tools assigned a measurable operational responsibility",
-                    ],
-                    [
-                        "Claims, return leakage, and deductible loss reserve",
-                        "$900 segregated economically from ordinary purchase capacity",
-                        "$6,000 segregated economically from ordinary purchase capacity",
-                        "Replenish after losses before increasing outstanding shipment exposure",
-                    ],
-                    [
-                        "One month of fixed operating expense liquidity",
-                        "$1,500 funds the lean monthly overhead floor",
-                        "$9,000 funds the scaled monthly overhead ceiling",
-                        "Extend runway by shrinking orders when receipts slip",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Buy repayment certainty before buying additional reward volume",
-                "body": "Experienced operators optimize collectible contribution per exposed dollar, not the largest advertised reward percentage.",
-                "items": [
-                    "Place the issuer due date, warehouse acceptance date, and ACH availability date on the same order record; statement closing alone cannot establish repayment safety.",
-                    "Use a small accepted shipment to measure each group's receiving-to-cleared-cash interval before allowing that group to consume a larger reserve allocation.",
-                    "Keep portal proceeds outside purchase authorization capacity until cash is available; retain the original click record and offer exclusions for later disputes.",
-                    "Allocate claims cash separately from repayment cash so a denied electronics claim cannot consume money already promised to an issuer.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Configure twelve inexpensive layers with one accountable ledger",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Provision the twelve layers below as a minimal control system, not a "
-                    "collection of dashboards. Prices are explicit US-dollar planning inputs "
-                    "for the named tiers, not verified current quotations; confirm checkout "
-                    "pricing, eligibility, taxes, and renewal terms before purchase. The "
-                    "selected one-user configuration totals $20 monthly for Google Workspace, "
-                    "Bitwarden, and Backblaze, plus $125 annually for the registered agent: "
-                    "$365 per year before taxes, domain registration, state charges, payment "
-                    "fees, insurance, and equipment. Workspace and Bitwarden prices assume "
-                    "annual commitments; Backblaze uses monthly billing. Zero-subscription "
-                    "tiers still have usage limits, restricted features, or transaction costs. "
-                    "Neither Mercury nor Fidelity removes the need to understand the "
-                    "underlying account, cash placement, and eligibility arrangements. Reuse "
-                    "a supported encrypted laptop rather than purchasing a server rack. "
-                    "Do not allocate the remaining overhead ceiling to subscriptions simply "
-                    "because it exists. That ceiling must also accommodate contractors, "
-                    "accounting review, insurance, and administrative work. Add a paid "
-                    "automation tier only after its documented savings exceed its cost and "
-                    "the workflow has survived a manual reconciliation cycle. Keep annual "
-                    "commitments short enough that a closed issuer account cannot strand "
-                    "a year of unnecessary infrastructure."
-                ),
-                (
-                    "Assign every purchase a stable order identifier shared across the "
-                    "buying-group commitment, retailer receipt, shipment label, warehouse "
-                    "acceptance, card posting, and bank settlement. Airtable can hold the "
-                    "operating register; Wave holds posted accounting entries, not the "
-                    "authoritative tracking history. GitHub stores stdlib reconciliation "
-                    "scripts and schema changes, while Make moves permitted notifications "
-                    "without becoming the sole repository of evidence. Export the register "
-                    "daily to a restricted Workspace folder and back up the working "
-                    "computer through Backblaze. Test restoration with actual sample "
-                    "records, because a successful backup notification does not prove "
-                    "recoverability. Avoid storing full card numbers, security codes, or "
-                    "bank credentials in order notes. Bitwarden handles secrets with "
-                    "individual accounts and documented offboarding. Prefer read-only "
-                    "bank exports or supported connections to browser automation carrying "
-                    "payment authority. No contractor needs unrestricted treasury access "
-                    "to reconcile a delivery exception. Preserve a simple manual fallback: "
-                    "download issuer CSV files, match transaction identifiers, review "
-                    "unmatched rows, and post approved adjustments. The automation should "
-                    "highlight discrepancies rather than fabricate matches based only on "
-                    "similar amounts. Repeated $999 electronics purchases make amount-only "
-                    "matching especially dangerous across multiple warehouses and statement cycles."
-                ),
-                (
-                    "Entity hygiene starts with the legal name on contracts, bank accounts, "
-                    "issuer applications, insurance, and resale documentation agreeing. "
-                    "Obtain an EIN directly from the IRS without a filing-service surcharge, "
-                    "record owner contributions separately from sales, and retain the "
-                    "operating agreement and authorized signer schedule. Delaware, New "
-                    "Hampshire, and Oregon lack a general statewide sales tax, but a "
-                    "warehouse address there does not automatically create resale "
-                    "eligibility for every transaction. Apply the actual seller, destination, "
-                    "resale, and nexus rules; maintain certificates where required and "
-                    "accepted. For insurance, obtain written treatment of electronics, "
-                    "commercial resale, transit, unattended delivery, third-party receiving, "
-                    "theft exclusions, valuation, and deductibles. Carrier declared value "
-                    "is not interchangeable with a standalone cargo policy. Read the "
-                    "buying-group contract for the point at which loss and title transfer; "
-                    "UCC section 2-509 supplies defaults that contractual terms can alter. "
-                    "Keep delivery signatures, serial numbers where available, packing "
-                    "evidence, and claim deadlines attached to the order. Separate banking "
-                    "reduces reconciliation mistakes but does not by itself resolve tax "
-                    "classification or liability questions. Review account ownership and "
-                    "insured-deposit aggregation before splitting reserves among interfaces "
-                    "that may place money at the same underlying bank."
-                ),
-            ],
-            "table": {
-                "caption": "Twelve-Layer Named-Vendor Stack: Explicit Planning Prices, Responsibilities, and Lean Substitutes",
-                "headers": [
-                    "Infrastructure layer and selected named vendor",
-                    "Selected tier and explicit subscription assumption",
-                    "Assigned responsibility and operating control boundary",
-                    "Cheaper or simpler lean operating alternative",
-                ],
-                "rows": [
-                    [
-                        "Entity notices through Northwest Registered Agent service",
-                        "$125 yearly registered-agent service; state charges excluded",
-                        "Receive official notices and maintain documented escalation ownership",
-                        "Act as your own agent where eligibility permits",
-                    ],
-                    [
-                        "Business operating bank interface through Mercury accounts",
-                        "$0 monthly standard banking subscription; incidental fees separate",
-                        "Segregate operating cash and verify underlying deposit placement",
-                        "Use an existing eligible zero-monthly-fee business account",
-                    ],
-                    [
-                        "Accounting and expense classification through Wave Starter",
-                        "$0 monthly Starter subscription; payment services priced separately",
-                        "Post reconciled entries without confusing reimbursements with earnings",
-                        "Use a controlled spreadsheet plus accountant-reviewed monthly journals",
-                    ],
-                    [
-                        "Business identity and records through Google Workspace",
-                        "$7 per user monthly Business Starter annual commitment",
-                        "Maintain business email and restricted evidence storage folders",
-                        "Use existing business email and encrypted local records",
-                    ],
-                    [
-                        "Credential management through Bitwarden Teams password management",
-                        "$4 per user monthly Teams tier billed annually",
-                        "Separate user access and remove departed contractor credentials",
-                        "Use Bitwarden Free for a sole operator only",
-                    ],
-                    [
-                        "Commitment and shipment register through Airtable Free",
-                        "$0 monthly Free tier within published usage limits",
-                        "Link commitments, tracking, acceptance, and cleared settlement evidence",
-                        "Maintain a versioned CSV register with validated columns",
-                    ],
-                    [
-                        "Reconciliation source control through GitHub Free repositories",
-                        "$0 monthly Free tier within included service allowances",
-                        "Version scripts while excluding credentials and customer records",
-                        "Use local Git with encrypted off-device repository backups",
-                    ],
-                    [
-                        "Permitted notification automation through Make Free scenarios",
-                        "$0 monthly Free tier within current usage allowances",
-                        "Flag unmatched events without autonomously releasing bank payments",
-                        "Run scheduled Python scripts and review exception emails",
-                    ],
-                    [
-                        "Shipping label purchase through Pirate Ship software",
-                        "$0 monthly software subscription; postage and protection separate",
-                        "Purchase supported labels and retain shipment purchase evidence",
-                        "Use merchant fulfillment labels when contractually acceptable shipping",
-                    ],
-                    [
-                        "Team coordination through Slack Free workspace messaging",
-                        "$0 monthly Free tier with limited history access",
-                        "Route exceptions while preserving durable decisions outside chat",
-                        "Use business email threads tied to order identifiers",
-                    ],
-                    [
-                        "Endpoint recovery through Backblaze Computer Backup service",
-                        "$9 per computer monthly Personal Backup billing assumption",
-                        "Back up the working computer and test restoration",
-                        "Rotate encrypted external drives with secure off-site storage",
-                    ],
-                    [
-                        "Treasury holdings through Fidelity eligible brokerage account",
-                        "$0 monthly brokerage account subscription; instrument charges separate",
-                        "Match authorized Treasury maturities to documented cash needs",
-                        "Leave reserve cash in an appropriate deposit account",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "3. Underwrite three separate engines and the authorized agency play",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Wholesale fulfillment begins with an accepted commitment from a "
-                    "counterparty such as BuyForMeRetail, Pointsmaker, or MaxOutDeals, not "
-                    "a general expectation that popular electronics will sell. Verify "
-                    "current terms directly; a Net-3 or Net-5 label says little without "
-                    "its triggering event, cutoff time, and dispute exclusions. In an "
-                    "illustrative lot, spend $5,000 on merchandise, receive $5,050 from "
-                    "the group, and earn $100 of eligible card rewards. Deduct $45 "
-                    "shipping, $10 shipment protection, and a $25 expected return or "
-                    "damage allowance: contribution is $70 before fixed overhead and "
-                    "tax. Without the card reward, the same lot loses $30. A $35 "
-                    "late-payment charge plus fourteen days of $5,000 bridge funding "
-                    "at 18% annual simple interest costs another $69.52, reducing "
-                    "contribution to $0.48. This narrow example does not demonstrate "
-                    "the scorecard's portfolio-level 35% retention; it exposes the "
-                    "evidence required before adopting that assumption. Split groups "
-                    "by legal counterparty and demonstrated settlement behavior rather "
-                    "than by website branding alone. Insure eligible shipments, retain "
-                    "acceptance evidence, and stop new commitments when unpaid accepted "
-                    "inventory breaches its assigned exposure limit. Favor smaller "
-                    "test lots over nominally higher rewards backed by unmeasured "
-                    "receiving delays."
-                ),
-                (
-                    "Commercial card and portal rebates form a separate engine whose "
-                    "inputs are eligible spend, settled rewards, processing costs, "
-                    "financing costs, and contractual pass-through obligations. Rakuten "
-                    "and TopCashback offers can exclude resellers, particular categories, "
-                    "gift cards, coupon combinations, or repeated purchases; never "
-                    "assume two portals can both earn on one checkout. A $5,000 "
-                    "order advertised at 1% portal cashback suggests $50, but the "
-                    "underwritten amount remains zero until eligibility and collection "
-                    "are adequately supported. Likewise, an uncapped 2%–4% commercial "
-                    "reward is a verified product characteristic, not a universal "
-                    "card feature. For Plastiq or Melio, insert the live quoted "
-                    "payment-method fee and permitted recipient category before "
-                    "authorizing payment. A hypothetical $10,000 invoice with a "
-                    "2.9% fee costs $290; a 2% reward produces $200, leaving "
-                    "a $90 loss before overhead or interest. Decline rewards-only "
-                    "routing under those conditions. Never count paying the card "
-                    "balance as another expense after recording the underlying "
-                    "purchase, and never count borrowed principal as revenue. "
-                    "Commercial-purpose credit may fall within 12 CFR 1026.3(a)'s "
-                    "exemption, so read the actual agreement rather than importing "
-                    "consumer-card protections. Issuer restrictions, purchase coding, "
-                    "and payment-service eligibility must all agree."
-                ),
-                (
-                    "The mapped play agency_ad_spend_card_multiplier_rebate_cycling "
-                    "belongs to TRACK_2 and requires genuine client-authorized advertising "
-                    "purchases, an eligible agency payment arrangement, and documented "
-                    "reward ownership. On $50,000 of authorized spend, an illustrative "
-                    "2% card reward supplies $1,000 and a contractual 0.5% volume "
-                    "rebate supplies $250. After $500 owed to the client, $150 "
-                    "processing, and $200 funding cost, operator contribution is "
-                    "$400, not $50,000. Reconcile platform invoices to client "
-                    "authorizations and stop rewards-dependent spending if the "
-                    "economics fail; use client-direct billing or prefunded approved "
-                    "agency terms instead. Treasury is the third engine, recorded "
-                    "independently: $10,000 of genuinely spare cash at an assumed "
-                    "4% annual simple yield earns approximately $21.92 over twenty "
-                    "days before taxes and charges. That amount does not rescue "
-                    "the separate $90 invoice-routing loss. A bank bonus of $300 "
-                    "requiring $15,000 for ninety days earns only $152.05 above "
-                    "a 4% alternative yield before fees and tax. Check bonus "
-                    "qualification, clawbacks, and account restrictions. Match Treasury "
-                    "maturities before repayment dates and account for settlement "
-                    "timing; selling early introduces price risk. Borrowed statement "
-                    "float remains a short-term liability even while cash earns interest."
-                ),
-            ],
-            "table": {
-                "caption": "Separate Unit Economics and Canonical Formula v2.0 Reconciliation",
-                "headers": [
-                    "Engine or scorecard case being evaluated",
-                    "Gross activity and retained contribution calculation",
-                    "Costs and resulting operator economic outcome",
-                    "Risk fallback and required interpretation discipline",
-                ],
-                "rows": [
-                    [
-                        "Wholesale buying-group fulfillment with eligible commercial rewards",
-                        "$5,050 reimbursement plus $100 reward against $5,000 merchandise",
-                        "$80 shipping, protection, and allowance leaves $70 contribution",
-                        "Reduce lots when collection uncertainty overwhelms repayment capacity",
-                    ],
-                    [
-                        "Wholesale delayed-settlement stress applied to identical lot",
-                        "$70 initial contribution before the additional delay costs",
-                        "$35 charge plus $34.52 funding leaves $0.48 contribution",
-                        "Suspend commitments until cleared cash restores dated coverage",
-                    ],
-                    [
-                        "Commercial invoice routing through an eligible payment service",
-                        "$10,000 invoice produces $200 at assumed 2% reward",
-                        "$290 assumed processing fee creates $90 transaction loss",
-                        "Use lower-cost bank payment instead of rewards-dependent routing",
-                    ],
-                    [
-                        "Authorized agency advertising rewards and contractual volume rebates",
-                        "$50,000 client spend produces $1,250 combined eligible rewards",
-                        "$850 client obligations and costs leaves $400 contribution",
-                        "Switch to client-direct billing or approved prefunded terms",
-                    ],
-                    [
-                        "Treasury yield and bank-bonus alternatives assessed independently",
-                        "$10,000 at 4% for twenty days earns $21.92",
-                        "$300 bonus less $147.95 opportunity cost leaves $152.05",
-                        "Keep repayment money liquid when restrictions outlast obligations",
-                    ],
-                    [
-                        "Conservative canonical case with one full-time operator",
-                        "$250,000 gross less $162,500 merchandise equals $87,500 retained",
-                        "$67,500 remaining costs leaves exactly $20,000 owner profit",
-                        "Preserve 8% gross margin and 22.86% retained margin",
-                    ],
-                    [
-                        "Base canonical case with two supporting contractors",
-                        "$1,025,000 gross less $666,250 merchandise equals $358,750 retained",
-                        "$215,250 remaining costs leaves exactly $143,500 owner profit",
-                        "Preserve 14.0% gross margin and 40.0% retained margin",
-                    ],
-                    [
-                        "Scaled canonical case with five total team members",
-                        "$1,800,000 gross less $1,170,000 merchandise equals $630,000 retained",
-                        "$270,000 remaining costs leaves exactly $360,000 owner profit",
-                        "Preserve 20% gross margin and 57.14% retained margin",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "4. Prove settlement, recovery, and tax records before increasing exposure",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Use the first one to three months to prove an end-to-end "
-                    "cycle rather than maximize purchase volume. Start with an "
-                    "accepted commitment small enough to repay entirely from "
-                    "unencumbered cash if the group never pays. Capture the offer, "
-                    "quantity limit, merchant invoice, receiving address, delivery "
-                    "evidence, acceptance event, and cleared ACH entry. Pay the "
-                    "issuer on its contractual schedule, independently of the "
-                    "expected group payment. Close the cycle only after reward "
-                    "eligibility and every expense have been reconciled; a pending "
-                    "portal balance can remain a separately flagged contingent "
-                    "benefit. Run a tabletop exception in which the parcel arrives "
-                    "damaged and the counterparty withholds payment. Identify who "
-                    "files the claim, which policy responds, what evidence is "
-                    "required, and who funds the statement while the dispute "
-                    "continues. Then simulate issuer access loss without attempting "
-                    "to bypass restrictions or obscure transaction purpose. Stop "
-                    "new charges, download available records through authorized "
-                    "channels, and use existing cash to discharge balances. "
-                    "Diversification means approved relationships and manageable "
-                    "counterparty concentrations, not deceptive applications or "
-                    "repeated credit-limit recycling. Business card payments must "
-                    "follow the issuer's permitted patterns and the operator's "
-                    "actual cash-generation cycle."
-                ),
-                (
-                    "Tax records must reconcile economic substance rather than "
-                    "copying gross payment reports into sales. IRC section 6050W "
-                    "governs applicable payment-settlement reporting; a Form 1099-K "
-                    "amount does not by itself establish taxable profit or resolve "
-                    "gross-versus-net presentation. Retain a bridge from reported "
-                    "receipts to reimbursements, returns, merchandise costs, card "
-                    "rewards, portal rebates, bank bonuses, and interest. Purchase-linked "
-                    "rebates commonly reduce the related purchase cost, but classify "
-                    "each arrangement from its terms instead of assuming every "
-                    "reward receives identical treatment. IRC sections 61, 162, "
-                    "and 471 provide relevant income, business-expense, and inventory "
-                    "anchors; IRS Publication 525 supplies practical rebate discussion. "
-                    "Record inventory consistently and preserve supporting records "
-                    "under IRC section 6001. Separate bank-bonus and Treasury "
-                    "income from merchandise margin so the same dollar cannot "
-                    "appear in two engines. For agency advertising, retain the "
-                    "client's authorization, invoice ownership, reimbursement terms, "
-                    "and reward-sharing agreement together. If the agency acts "
-                    "as an agent, the client's $50,000 advertising purchase "
-                    "does not become $50,000 of agency fee revenue merely "
-                    "because its card funded the platform. Have the accountant "
-                    "document the presentation decision and reconcile it to "
-                    "the scorecard bridge without changing the supplied scenario outputs."
-                ),
-                (
-                    "Make launch readiness a signed evidence packet, not an "
-                    "optimistic checklist. The owner confirms that each issuer "
-                    "due date has sufficient stress-tested cash coverage, the "
-                    "warehouse route is authorized, the shipment is protectable, "
-                    "and the current offer permits the intended commercial use. "
-                    "A second reviewer can be a narrowly engaged contractor "
-                    "rather than another full-time hire; grant that person "
-                    "read-only evidence access and authority to flag exceptions, "
-                    "not payment credentials. Test the reconciler against duplicate "
-                    "charges, partial reimbursements, split shipments, reversed "
-                    "rewards, and a transaction posted after statement closing. "
-                    "Require explicit resolution of unmatched cash before "
-                    "expanding purchase limits. Review fixed overhead against "
-                    "the selected scenario monthly: $9,000 monthly overhead "
-                    "would exceed the Conservative case's entire $87,500 "
-                    "annual retained contribution before other costs, so it "
-                    "cannot support that case's $20,000 owner profit. Scale "
-                    "only when observed net contribution, settlement duration, "
-                    "and loss experience support the next exposure tier. "
-                    "The team should know the stop condition before an "
-                    "exception happens: freeze commitments, preserve repayment "
-                    "cash, pursue documented collection or claims, and restore "
-                    "coverage before restarting. A clean first cycle is "
-                    "evidence of process competence, not proof that every "
-                    "future counterparty or reward offer will perform."
-                ),
-            ],
-            "table": {
-                "caption": "Pre-Launch Evidence Matrix: Named Owners, Adverse Tests, and Concrete Stop Conditions",
-                "headers": [
-                    "Readiness area and accountable operating owner",
-                    "Evidence required before committing additional capital",
-                    "Adverse test the stack must survive",
-                    "Failure response and condition for restarting",
-                ],
-                "rows": [
-                    [
-                        "Owner verifies entity identity and authorized signers",
-                        "Contracts, bank title, issuer profile, and signer schedule agree",
-                        "Attempt reconciliation using a deliberately mismatched legal name",
-                        "Correct affected records before accepting additional contractual obligations",
-                    ],
-                    [
-                        "Treasury owner verifies dated card repayment coverage",
-                        "Daily ladder covers every stressed payment with available cash",
-                        "Delay expected group ACH by ten additional business days",
-                        "Freeze commitments until cash covers every affected due date",
-                    ],
-                    [
-                        "Operations owner verifies warehouse and counterparty acceptance terms",
-                        "Written commitment specifies receiving location and payment trigger",
-                        "Model rejection of one unit within a multiunit shipment",
-                        "Resolve rejection ownership before repeating the affected purchase route",
-                    ],
-                    [
-                        "Shipping owner verifies protection and claims documentation completeness",
-                        "Policy terms, parcel evidence, valuation, and deadlines are retained",
-                        "Simulate a damaged parcel with delayed warehouse inspection",
-                        "Reduce exposure until the claim evidence process is repairable",
-                    ],
-                    [
-                        "Reconciliation reviewer verifies separate earnings and liability ledgers",
-                        "Issuer, bank, order, and reward records reconcile independently",
-                        "Inject duplicate postings and a reversed previously tracked reward",
-                        "Resolve unmatched amounts before increasing the authorized lot size",
-                    ],
-                    [
-                        "Agency owner verifies client authorization and reward ownership",
-                        "Client terms specify spend authority, repayment, and rebate sharing",
-                        "Remove expected rewards and delay client reimbursement one cycle",
-                        "Move to client-direct billing or approved prefunded arrangements",
-                    ],
-                    [
-                        "Accountant verifies tax records and scenario cost classifications",
-                        "Receipt bridge separates purchase adjustments, interest, and client funds",
-                        "Compare gross payment reporting with underlying transaction-level evidence",
-                        "Correct classifications without altering canonical scenario profit targets",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four evidence checks before the first production commitment",
-                "body": "Each check requires a dated artifact and an identified reviewer; a verbal expectation does not release purchase capacity.",
-                "items": [
-                    "Verify that at least 50% of opening capital is assigned to working capital and repayment reserves, while separately proving actual due-date cash coverage.",
-                    "Verify accepted buying-group terms, the authorized warehouse address, applicable resale documentation, and written shipment-protection treatment.",
-                    "Verify commercial-card and portal eligibility, quoted processing fees, reward ownership, and the fallback payment method for each proposed route.",
-                    "Verify a restored ledger backup, a completed delayed-ACH rehearsal, separated treasury principal, and a reconciled sample statement before raising limits.",
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Fund and label the opening envelopes",
-                    "action": "Record owner contributions and allocate the seven budget envelopes.",
-                    "detail": "Confirm the $10,000 or $55,000 total, the 60% working-capital allocation, and the cash-only repayment reserve before authorizing orders.",
-                },
-                {
-                    "step": 2,
-                    "title": "Configure identities, records, and recovery",
-                    "action": "Provision the twelve selected layers with minimal individual access.",
-                    "detail": "Confirm current vendor prices, enable strong authentication, exclude payment secrets from the order register, and restore a sample backup.",
-                },
-                {
-                    "step": 3,
-                    "title": "Run one fully funded settlement cycle",
-                    "action": "Fulfill a small accepted commitment and match every resulting record.",
-                    "detail": "Link merchant receipt, shipment, acceptance, ACH availability, issuer payment, and reward treatment; fund the statement even if collection slips.",
-                },
-                {
-                    "step": 4,
-                    "title": "Stress exposure and authorize the next lot",
-                    "action": "Apply delayed settlement, damaged shipment, and reward reversal tests.",
-                    "detail": "Increase exposure only after cash coverage, documented contribution, claims procedures, and scenario-specific overhead remain within their assigned limits.",
-                },
-            ],
-        },
-    ],
-    "pull_quote": "A reward becomes useful capital only after the liability is covered and the cash can actually be collected.",
-    "diagram_id": "diag-07",
-    "action_checklist": [
-        "Allocate the complete opening budget and document 60% in working-capital and repayment envelopes without treating inventory as available cash.",
-        "Build a dated coverage ladder from actual issuer statements, warehouse acceptance terms, bank availability, and Treasury maturities.",
-        "Confirm the twelve selected vendor tiers at checkout and preserve a manual export-and-reconciliation fallback for every automated workflow.",
-        "Verify entity names, applicable resale records, shipment coverage, loss-transfer terms, and counterparty receiving requirements before ordering.",
-        "Underwrite wholesale, commercial rewards, and treasury separately; test the agency advertising play at $400 contribution on the stated $50,000 example.",
-        "Complete one small settlement cycle, restore its records, simulate delayed ACH, and reconcile all three canonical profit cases before increasing exposure.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "12 CFR 1026.3(a) — Business, commercial, agricultural, and organizational credit exemptions",
-            "url": "https://www.ecfr.gov/current/title-12/chapter-X/part-1026/section-1026.3",
-            "relevance": "Determine the scope of Regulation Z coverage and use actual commercial-credit contract terms for payment, fee, and dispute controls.",
-        },
-        {
-            "title": "26 U.S.C. 6050W — Returns relating to payments made in settlement of payment card and third party network transactions",
-            "url": "https://www.law.cornell.edu/uscode/text/26/6050W",
-            "relevance": "Reconcile applicable payment-settlement reporting to transaction records without equating gross reported payments with operator profit.",
-        },
-        {
-            "title": "26 U.S.C. 6001 — Notice or regulations requiring records, statements, and special returns",
-            "url": "https://www.law.cornell.edu/uscode/text/26/6001",
-            "relevance": "Preserve receipts, purchase adjustments, settlement evidence, inventory support, and separately classified income records.",
-        },
-        {
-            "title": "26 U.S.C. 61 — Gross income defined",
-            "url": "https://www.law.cornell.edu/uscode/text/26/61",
-            "relevance": "Classify income by its actual character while separating earned amounts from borrowed principal and client funds.",
-        },
-        {
-            "title": "26 U.S.C. 162 — Trade or business expenses",
-            "url": "https://www.law.cornell.edu/uscode/text/26/162",
-            "relevance": "Support ordinary and necessary business-expense classification with invoices and a consistent operating-cost ledger.",
-        },
-        {
-            "title": "26 U.S.C. 471 — General rule for inventories",
-            "url": "https://www.law.cornell.edu/uscode/text/26/471",
-            "relevance": "Evaluate applicable inventory accounting rules and preserve consistent treatment of merchandise costs and related adjustments.",
-        },
-        {
-            "title": "UCC section 2-509 — Risk of Loss in the Absence of Breach",
-            "url": "https://www.law.cornell.edu/ucc/2/2-509",
-            "relevance": "Identify the model default rules for shipment and delivery risk, then verify the applicable state's enactment and the parties' contractual allocation.",
-        },
-        {
-            "title": "31 CFR 356.11 — How are Treasury securities issued?",
-            "url": "https://www.ecfr.gov/current/title-31/subtitle-B/chapter-II/subchapter-A/part-356/subpart-B/section-356.11",
-            "relevance": "Understand Treasury book-entry holding arrangements when selecting custody and documenting the treasury account structure.",
-        },
-    ],
-}
+CHAPTER_4 = {'id': 'Q4',
+ 'chapter_id': 'Q4',
+ 'chapter_number': 4,
+ 'question_number': 4,
+ 'slug': 'approvals-limit-increases-credit-cycling',
+ 'question_prompt': 'How do operators get approved for business cards and grow their limits, and when does '
+                    'credit cycling trigger closures?',
+ 'kicker': 'Q4 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Approvals, Limit Increases & Credit Cycling',
+ 'subtitle': 'Soft-pull credit limit increase tactics and timing, $10K and $25K limit paths, Amex '
+             'no-hard-pull approvals, Spark and Business Gold approval steps, and Capital One closures for '
+             'credit cycling',
+ 'layout_template': 'comparison_matrix',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Operators across these channels agree that credit limits are set by stated income '
+                      'and earned through heavy, cleanly repaid usage. Naam Wynn, Colin Matthew and Bella '
+                      'Sloan Enterprises lead with updating household income, then run a target card as '
+                      'the primary spender for about three months and pay it down ahead of a request. The '
+                      'street mechanics are issuer-specific: Amex at day 60 then every 90 days, Discover '
+                      'every 30 days, Navy Federal at 190–195 days, instant Chase reallocations, and a '
+                      'call before activation when a new limit comes in low. Reported results include $10K '
+                      'to $66K at Navy Federal and $1K to $30,800 at Capital One. The splits are on ask '
+                      'size (3x to 5x overshoots versus 25–50% steps), on target utilization, and on how '
+                      'much cycling Capital One and Amex tolerate before closing accounts.',
+ 'key_metrics': [{'label': 'Navy Federal Limit Climb',
+                  'metric': 'Navy Federal Limit Climb',
+                  'value': '$10K (Jan 2020) to $66K (Feb 2024) in roughly $8K steps',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Requests spaced 190–195 days apart rather than 181, targeting an $80K max on '
+                             'the same card.',
+                  'source': 'Cal Barton ([D6bPd67bgps @ 00:07:26])'},
+                 {'label': 'Capital One Increase Ladder',
+                  'metric': 'Capital One Increase Ladder',
+                  'value': '$1K start to $30,800',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Three +$100 increases, then +$2,500, +$7,000 and +$20K; median follow-up 5 '
+                             'months, 6 months called the sweet spot.',
+                  'source': 'Cal Barton ([D6bPd67bgps @ 00:08:54])'},
+                 {'label': 'Navy Federal Deposit Seasoning Jump',
+                  'metric': 'Navy Federal Deposit Seasoning Jump',
+                  'value': '$2K to $18K (900%)',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'A $250 opening deposit plus $500 biweekly direct deposit preceded the '
+                             'increase.',
+                  'source': 'Stephen Smith ([RY2Q9yq3v3E @ 00:05:19])'},
+                 {'label': 'Chase Total Exposure Cap',
+                  'metric': 'Chase Total Exposure Cap',
+                  'value': 'About 50% of income',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Ceiling on combined Chase credit lines, which drives limit reallocation and '
+                             'lowering limits before new Chase apps.',
+                  'source': 'Colin Matthew ([gTpUtrhQsnM @ 00:14:35])'}],
+ 'sections': [{'heading': 'Section 1: The Practitioner Consensus',
+               'paragraphs': ['Every limit-increase operator in this group starts at the same lever: '
+                              'stated income. Naam Wynn frames it bluntly. Issuers lend a percentage of '
+                              'income, and when you update the figure in the card profile, “They almost '
+                              'never verify this” [QmHwfz5Muvw @ 00:01:17]. Household income counts, so a '
+                              'roommate on $1,500 rent means you enter $750, and someone living with '
+                              'parents enters $0 [QmHwfz5Muvw @ 00:01:42]. Bella Sloan Enterprises calls '
+                              'the income update the biggest single lever, counting gross household income '
+                              'from job, self-employment, investments, interest and dividends that you '
+                              'have reasonable access to. They report mentee CJ moving stated income from '
+                              '$30K to $100K and collecting a +$20K increase [2sUP7XrGRgM @ 00:01:53] '
+                              '[2sUP7XrGRgM @ 00:03:01]. Cal Barton backs it from the underwriting side: '
+                              "“a lot of people don't know that your stated income is almost used "
+                              'exclusively to set your credit limit,” and he saw Synchrony fire an '
+                              'automatic increase right after an income update [D6bPd67bgps @ 00:10:34]. '
+                              'Stephen Smith ties the same move to the CARD Act 2009 ability-to-pay check '
+                              'and puts initial limits at roughly 10% of income. That is why a stale '
+                              'income field quietly caps every card in the wallet [RY2Q9yq3v3E @ 00:01:40] '
+                              '[RY2Q9yq3v3E @ 00:12:19].',
+                              'The second consensus point is that limits follow usage, not dormancy. Naam '
+                              'Wynn: “The data is clear. Heavy users get the highest limits, period” '
+                              '[QmHwfz5Muvw @ 00:06:12]. He makes the target card the main card for three '
+                              'months before any request [QmHwfz5Muvw @ 00:05:14]. Just Money Ish says '
+                              "Capital One in particular demands the card be used “religiously”: “I've "
+                              'literally seen dozens of people get denied for a credit limit increased '
+                              "with Capital 1 because they're just not simply using their card enough.” "
+                              'The same speaker notes Capital One only soft-pulls for increases, so the '
+                              'request itself costs nothing [Cm-vEtFQnC0 @ 00:00:19] [Cm-vEtFQnC0 @ '
+                              '00:00:10]. Stephen Smith adds the caveat everyone repeats. Run the card '
+                              'hard for 90 days with reported utilization under 10%, because “heavy usage '
+                              'means nothing without timely payments” [RY2Q9yq3v3E @ 00:03:15] '
+                              '[RY2Q9yq3v3E @ 00:04:25]. Business Credit Workshop shows the business-card '
+                              'version. An Amex Business Gold that started at $5K was pushed past $100,000 '
+                              'by repeatedly using the card and paying it down [W98zAyWtnrI @ 00:03:31]. '
+                              'The shared logic is that the issuer needs to see volume flowing through the '
+                              'line and clean payoffs landing before it extends more rope. Operators '
+                              'therefore build the spend pattern deliberately in the months before any '
+                              'request instead of asking cold on a sock-drawer card.',
+                              'Baseline prerequisites line up tightly. Naam Wynn says all of this is '
+                              "useless below a 680 score [QmHwfz5Muvw @ 00:12:12]. HowToCredit's personal "
+                              'checklist is 670+, one negative at most, under 30% utilization and no '
+                              'recent inquiries. Their business checklist rises to 680+ (ideally 700), '
+                              'zero negatives, under 20% utilization and an LLC at least 45 days old. In '
+                              'their words, “Utilization needs to be under 20% not 30%” [1F0G53GBilU @ '
+                              '00:01:30] [1F0G53GBilU @ 00:08:06]. Jack McColl sets the Amex bar at 720+ '
+                              'on Experian, two or fewer inquiries in six months, under 30% utilization '
+                              'and no lates in two years. He tells operators to “Become an Amex customer '
+                              'on the personal side first,” because existing customers get a soft pull '
+                              'while new ones get hard-pulled [SNCeMDvlJsQ @ 00:03:38] [SNCeMDvlJsQ @ '
+                              '00:01:31]. Daniel Braun lowers the entry bar on the business side. Almost '
+                              'anything counts as a business, and a sole proprietorship needs no formal '
+                              'steps and can apply with an SSN. A few thousand dollars of annual revenue '
+                              'is enough to start. He says to aim above 700 and expect a personal '
+                              'guarantee [HJuOgHKLiAc @ 00:00:25] [HJuOgHKLiAc @ 00:05:45]. He also tells '
+                              'applicants to be honest on revenue and history, and he flags writing off '
+                              'personal expenses through the business as tax fraud [HJuOgHKLiAc @ '
+                              '00:02:09] [HJuOgHKLiAc @ 00:15:30].'],
+               'table': {'caption': 'Consensus levers for approvals and limit growth',
+                         'headers': ['Consensus Lever',
+                                     'Operator Execution',
+                                     'Reported Payoff Or Reason',
+                                     'Expert Source'],
+                         'rows': [['Update stated income inside every card profile',
+                                   'Enter gross household income and only your share of rent',
+                                   'Issuers lend a percentage of income and almost never verify it',
+                                   'Naam Wynn ([QmHwfz5Muvw @ 00:01:17])'],
+                                  ['Heavy usage paired with strictly on-time payments',
+                                   'Make target card primary for 90 days, report utilization under 10%',
+                                   'Heavy usage means nothing without timely payments, per the speaker',
+                                   'Stephen Smith ([RY2Q9yq3v3E @ 00:03:15])'],
+                                  ['Capital One rewards constant, genuine card usage',
+                                   'Use the Capital One card religiously; increases are always soft pulls',
+                                   'Dozens of people were denied increases simply for underusing the card',
+                                   'Just Money Ish ([Cm-vEtFQnC0 @ 00:00:19])'],
+                                  ['Build an Amex personal relationship before business apps',
+                                   'Open an Amex personal card first, then apply for business cards',
+                                   'Existing Amex customers get soft pulls while new customers get hard '
+                                   'pulls',
+                                   'Jack McColl ([SNCeMDvlJsQ @ 00:01:31])'],
+                                  ['Hold a minimum score before running any increase play',
+                                   'Get to 680 or higher before requesting increases or new lines',
+                                   'Below 680 the whole limit-increase playbook is useless, per the '
+                                   'speaker',
+                                   'Naam Wynn ([QmHwfz5Muvw @ 00:12:12])'],
+                                  ['Business card checklist is stricter than the personal one',
+                                   'Show 680+ (ideally 700), zero negatives and under 20% utilization',
+                                   'LLC must be at least 45 days old before the business application',
+                                   'HowToCredit ([1F0G53GBilU @ 00:07:48])'],
+                                  ['Check pre-approval before any formal business application',
+                                   'Submit business name, address, revenue and industry for Capital One '
+                                   'pre-approval',
+                                   'No score impact, but you still must formally apply and can be denied',
+                                   'Checkmark Tutorial ([hglOA-iPzNc @ 00:00:41])']]}},
+              {'heading': 'Section 2: Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['Colin Matthew runs the request calendar by issuer. Amex comes at day 60 and '
+                              'then every 90 days, and Discover and BofA every 30 days. Capital One, Citi, '
+                              'Chase, Synchrony and Navy Federal come every six months, and Barclays is '
+                              'treated as a hard pull [gTpUtrhQsnM @ 00:05:33]. Naam Wynn sorts pull '
+                              'behavior the same way. Soft pulls come from NFCU, Amex, Chase, BofA and '
+                              'Capital One, Citi and US Bank are mixed, and USAA and Barclays are hard. He '
+                              'insists on app or web requests because NFCU by phone is a hard pull while '
+                              'the app is soft. His hack for hard-pull issuers is to freeze all three '
+                              'bureaus first [6KiaTyIQOCQ @ 00:08:30] [6KiaTyIQOCQ @ 00:08:45]. Cal '
+                              "Barton's data from 100+ points refines the timing. Amex is the most "
+                              'reliable at three months, with a Blue Cash Preferred going 3x at about 94 '
+                              'days, and other issuers median six months. Discover granted increases 30 '
+                              'days apart three of five times once usage ran over 50%. NFCU needs 190–195 '
+                              'days, not 181 [D6bPd67bgps @ 00:05:12] [D6bPd67bgps @ 00:07:26]. Stephen '
+                              'Smith reports Barclays has since moved to soft pulls, which conflicts with '
+                              'the older lists, while USAA stays hard. After a denial he waits three '
+                              'months if it was a soft pull and six if hard [RY2Q9yq3v3E @ 00:14:36].',
+                              "Ask sizing is where the scripts get specific. Colin Matthew's Level 2 is to "
+                              'request 3x the current limit. His Level 3 says to wait three statement '
+                              'cycles, unless the opening limit is low, in which case call before '
+                              'activating [gTpUtrhQsnM @ 00:04:45] [gTpUtrhQsnM @ 00:09:23]. Naam Wynn '
+                              'overshoots harder. On a $3K line he asks for $15K and expects a counter '
+                              'around $10K, and his 5x asks have come back at 4x, because “You literally '
+                              "can't lose by aiming too high” [QmHwfz5Muvw @ 00:03:29]. His post-approval "
+                              'reconsideration call, using a “renovating” script, turned a fresh $3K '
+                              'approval into $10K [QmHwfz5Muvw @ 00:04:36]. Cal Barton tested the '
+                              'pre-activation ask on Citi: a $6K approval, a $16K request and $13,700 '
+                              'granted, though it ran as a hard pull on Equifax. Another issuer went '
+                              '$3,500 to $4,200 to $6,000 [D6bPd67bgps @ 00:03:52]. Otherwise he waits for '
+                              'three or more statements, timing requests around the bill landing one to '
+                              'two days after the closing date. Bella Sloan Enterprises sizes asks at '
+                              '25–50% above the current line, which is $6,500–$7,500 on a $5K card. They '
+                              'report Herman moving $5K to $8K in 30 days and Bella going $5K to $8K to '
+                              '$15K. Their reasoning: “Two moderate increases beat one rejected moon shot” '
+                              '[2sUP7XrGRgM @ 00:05:32] [2sUP7XrGRgM @ 00:05:56].',
+                              'The usage engine is controlled cycling. Naam Wynn makes the target card '
+                              'primary for three months and cycles $1K at a time, putting $3–4K through a '
+                              '$1,500 limit. A week before asking he pays the balance below 10%, ideally '
+                              '1–6%, which means a $5K card under $500 and better under $150 [QmHwfz5Muvw '
+                              "@ 00:05:14] [QmHwfz5Muvw @ 00:07:07]. Colin Matthew's Level 4 caps it at "
+                              "one to three cycles a month, with each charge under 70%: “You don't want to "
+                              'cycle more than a couple times per month, more than three is what I would '
+                              'typically say” [gTpUtrhQsnM @ 00:11:44] [gTpUtrhQsnM @ 00:12:28]. RJ '
+                              'Financial ran the bonus version on a US Bank Leverage card with a $3K '
+                              'starting line and a $750 offer for $7,500 spend in 150 days. They hit it by '
+                              'splitting a $3,300 tax bill plus $1,400 insurance and $3,800 garage work '
+                              'across four to five payments over about six weeks, with no issues '
+                              '[HCkT2XqTvms @ 00:03:04]. Level 5 is reallocation. Naam moves $7K from a '
+                              '$15K Sapphire Preferred to a Freedom Flex carrying 0% for 15 months, '
+                              'instantly, leaving $500–$1K on the donor card: “You just created $7,000 of '
+                              'interest free credit out of thin air” [QmHwfz5Muvw @ 00:09:27]. Jack McColl '
+                              'adds that Amex lets you move personal limit onto a business card '
+                              '[SNCeMDvlJsQ @ 00:12:30].'],
+               'table': {'caption': 'Issuer-by-issuer increase mechanics and reported numbers',
+                         'headers': ['Issuer Or Lever',
+                                     'Exact Mechanic',
+                                     'Numbers Reported',
+                                     'Expert Source'],
+                         'rows': [['Request calendar across the major card issuers',
+                                   'Amex at day 60 then every 90 days; Discover and BofA every 30 days',
+                                   'Capital One, Citi, Chase, Synchrony and Navy Federal every six months',
+                                   'Colin Matthew ([gTpUtrhQsnM @ 00:05:33])'],
+                                  ['Navy Federal increases requested through the app only',
+                                   'Use the app, never the phone, and wait 190 to 195 days',
+                                   'Climbed from $10K in January 2020 to $66K by February 2024',
+                                   'Cal Barton ([D6bPd67bgps @ 00:07:26])'],
+                                  ['Discover high-usage increase loop every 30 days',
+                                   'Push usage above 50%, let the statement report, then pay off',
+                                   'Increases granted 30 days apart three out of five times',
+                                   'Cal Barton ([D6bPd67bgps @ 00:05:57])'],
+                                  ['Chase same-bank limit reallocation done instantly online',
+                                   'Move limit from Sapphire Preferred to Freedom Flex with 0% for 15 '
+                                   'months',
+                                   '$7K moved off a $15K line; leave $500 to $1K on the donor card',
+                                   'Naam Wynn ([QmHwfz5Muvw @ 00:08:48])'],
+                                  ['Reconsideration call made right after a low approval',
+                                   'Call immediately using a renovating-bedroom script for a 12-month 0% '
+                                   'APR card',
+                                   'A fresh $3K approval became a $10K limit on the same card',
+                                   'Naam Wynn ([6KiaTyIQOCQ @ 00:05:16])'],
+                                  ['Navy Federal deposit seasoning before requesting an increase',
+                                   'Open with a $250 deposit plus $500 biweekly direct deposit',
+                                   'Limit went from $2K to $18K, a 900% jump on one request',
+                                   'Stephen Smith ([RY2Q9yq3v3E @ 00:05:19])'],
+                                  ['Amex soft-pull increase requested by phone every six months',
+                                   'Call 1-800-567-1083 every six months and request a soft-pull increase',
+                                   'Speaker reports increases of 2 to 3x the current limit',
+                                   'Jack McColl ([SNCeMDvlJsQ @ 00:04:42])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Edge plays operators use to stack increases faster',
+                           'body': 'These moves come from practitioners who tested them on their own files '
+                                   'and client files. Each one shifts timing, pull type or exposure in the '
+                                   "operator's favor.",
+                           'items': ['A product change from Quicksilver to Venture X allowed two limit '
+                                     'increases inside 60 days, resetting the usual waiting clock [Cal '
+                                     'Barton — D6bPd67bgps @ 00:10:08].',
+                                     'Amex watches personal utilization. A maxed personal Blue card '
+                                     'depressed the Business Gold limit, and paying it to $0 raised it, so '
+                                     'keep personal utilization at 25% or below [Business Credit Workshop '
+                                     '— W98zAyWtnrI @ 00:04:21].',
+                                     'Pull type can differ by channel. Use a 30-second phone script asking '
+                                     'which pull applies before submitting, because “30 seconds of asking '
+                                     'saves you an inquiry” [Bella Sloan Enterprises — 2sUP7XrGRgM @ '
+                                     '00:07:12].',
+                                     'Exposure caps run about 50% of income at Chase and 35% at Amex. '
+                                     'Cutting a Sapphire from $25K to $10K opened room for a $30K Ink '
+                                     'Business Preferred approval [Naam Wynn — QmHwfz5Muvw @ 00:11:05].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Refresh stated income',
+                              'action': 'Update income in every card portal using household income and '
+                                        'only your share of housing cost.',
+                              'detail': "Colin Matthew's Level 1 is updating income, since household "
+                                        'income counts, and minimizing rent. Naam Wynn enters $750 on a '
+                                        'shared $1,500 rent and $0 when living with parents [Colin Matthew '
+                                        '— gTpUtrhQsnM @ 00:02:25] [Naam Wynn — QmHwfz5Muvw @ 00:01:42].'},
+                             {'step': 2,
+                              'title': 'Run the heavy-usage window',
+                              'action': 'Make the target card primary for about 90 days and cycle it one '
+                                        'to three times a month.',
+                              'detail': 'Stephen Smith uses the card heavily for 90 days with timely '
+                                        'payments. Colin Matthew caps cycling at one to three times a '
+                                        'month with each charge under 70% [Stephen Smith — RY2Q9yq3v3E @ '
+                                        '00:03:15] [Colin Matthew — gTpUtrhQsnM @ 00:11:44].'},
+                             {'step': 3,
+                              'title': 'Pay down before the ask',
+                              'action': 'A week before requesting, pay the reported balance to below 10%, '
+                                        'ideally 1–6%.',
+                              'detail': 'Naam Wynn pays below 10% a week before asking and fixes any card '
+                                        'over 30% first, since utilization is 30% of the score [Naam Wynn '
+                                        '— QmHwfz5Muvw @ 00:05:45].'},
+                             {'step': 4,
+                              'title': 'Request online at soft-pull issuers',
+                              'action': 'Submit through the app or web, size the ask, and retry after 3 '
+                                        'months if soft or 6 if hard.',
+                              'detail': 'Naam Wynn overshoots on soft-pull issuers through the app, not '
+                                        'the phone, and retries after three months on a soft-pull denial '
+                                        'or six on a hard one [Naam Wynn — QmHwfz5Muvw @ 00:03:02] [Naam '
+                                        'Wynn — 6KiaTyIQOCQ @ 00:12:31].'}]},
+              {'heading': 'Section 3: Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The sharpest split in the CLI playbook is how big to ask. Naam Wynn runs '
+                              'the overshoot doctrine: on a $3K line, request $15K and expect a counter '
+                              'around $10K. He reports 5x asks coming back at 4x and insists "you '
+                              'literally can\'t lose by aiming too high" [QmHwfz5Muvw @ 00:03:02]. Colin '
+                              'Matthew sets a fixed Level 2 rule of requesting 3x the current limit every '
+                              "time the issuer's window opens [gTpUtrhQsnM @ 00:04:45]. Bella Sloan "
+                              'Enterprises flatly rejects both. Her Step 4 is to ask only 25-50% above the '
+                              'current line, because aggressive asks get kicked to manual review. On a $5K '
+                              'card that means $6,500-$7,500, and two 50% bumps clear $11K [2sUP7XrGRgM @ '
+                              '00:05:12]. Her math line is blunt: "Two moderate increases beat one '
+                              'rejected moon shot." She adds that one denied triple ask buys a cooling-off '
+                              'period that pushes the next attempt back [2sUP7XrGRgM @ 00:05:56]. Her case '
+                              'numbers back the slower ladder: Herman went from $5K to $8K in 30 days, and '
+                              'Bella herself stepped from $5K to $8K to $15K. The operator read is a '
+                              'trade-off between speed and calendar time. Overshooters accept counters and '
+                              'occasional denials as the cost of speed. The moderate camp treats every '
+                              'denial as lost calendar time and a possible limit cut, since repeated '
+                              'denials stretch the cool-off and invite the bank to shrink the line.',
+                              'Practitioners also disagree on how empty the card must look on request day. '
+                              'Naam Wynn sets the tightest bar: a week before asking, pay the reported '
+                              'balance below 10%, ideally 1-6%. That means a $5K card shows under $500, '
+                              'and better under $150 [QmHwfz5Muvw @ 00:05:45]. Stephen Smith pairs the '
+                              'same under-10% target with 90 days of heavy use, warning that "heavy usage '
+                              'means nothing without timely payments" [RY2Q9yq3v3E @ 00:03:15]. '
+                              'HowToCredit moves the line to 20%, stating plainly that "utilization needs '
+                              'to be under 20% not 30%" on the business side [1F0G53GBilU @ 00:08:06]. The '
+                              'same business checklist also demands a 680-plus score, zero negatives, and '
+                              'an LLC at least 45 days old. Bella Sloan Enterprises runs the loosest gate '
+                              'at under 30%, framing it as simple optics: "Nobody hands more rope to '
+                              'somebody who\'s already maxed out." The same $1,000 balance reads as 20% of '
+                              'a $5K line but only 10% of a $10K line, which is how Felina moved from $5K '
+                              'to $10K [2sUP7XrGRgM @ 00:03:19]. The practical divergence is cash. Hitting '
+                              "Naam's 1-6% requires prepaying almost the entire statement before close, "
+                              "while Bella's threshold leaves working capital sitting on the card. "
+                              'Operators chasing the biggest single jump follow the 10% camp; operators '
+                              'protecting float follow the 30% ceiling.',
+                              'Cycling frequency and issuer tolerance split the field further. Colin '
+                              'Matthew builds cycling into Level 4 of his ladder, running the balance '
+                              'through one to three times a month with each charge kept under 70%. He caps '
+                              'it there: "You don\'t want to cycle more than a couple times per month, '
+                              'more than three is what I would typically say" [gTpUtrhQsnM @ 00:12:28]. '
+                              'Cal Barton pushes harder on a single card. He cites 1-4% interchange and '
+                              'routes over 50% usage onto one card because underwriters look for large '
+                              'paydowns. At Discover he let a 119% spend statement report before paying it '
+                              'off, and landed increases 30 days apart three times out of five '
+                              '[D6bPd67bgps @ 00:05:57]. On which issuer punishes cycling, the speakers '
+                              'conflict directly. RJ Financial reports that Capital One cares about '
+                              'cycling, while Amex and Discover reportedly care less [HCkT2XqTvms @ '
+                              '00:07:32]. Just Money Ish says the opposite about Amex: "honestly, I feel '
+                              'like Amex is even stricter." They add that most issuers run algorithms '
+                              'built to catch repeat patterns [Cm-vEtFQnC0 @ 00:04:13]. Yet the same Just '
+                              'Money Ish video still tells Capital One holders to max out and pay back for '
+                              'a CLI, as long as the spending is diversified. The real disagreement is '
+                              'about spend pattern and issuer, not raw volume.'],
+               'table': {'caption': 'Side-by-side CLI and cycling playbooks where named practitioners '
+                                    'conflict',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['How large the credit limit increase ask should be',
+                                   'Overshoot: ask $15K on a $3K line, accept a counter near 4x, or '
+                                   'request a flat 3x',
+                                   'Moderate: ask only 25-50% above current limit to avoid manual review '
+                                   'and cool-offs',
+                                   'Naam Wynn ([QmHwfz5Muvw @ 00:03:02]); Bella Sloan Enterprises '
+                                   '([2sUP7XrGRgM @ 00:05:12])'],
+                                  ['Reported utilization target before submitting the request',
+                                   'Pay the statement below 10%, ideally 1-6%, one week before asking',
+                                   'Business side under 20%; Bella Sloan treats under 30% as the working '
+                                   'threshold',
+                                   'Naam Wynn ([QmHwfz5Muvw @ 00:05:45]); HowToCredit ([1F0G53GBilU @ '
+                                   '00:08:06])'],
+                                  ['How many full cycles per month are safe',
+                                   'Cycle one to three times a month, keeping each charge under 70% of the '
+                                   'line',
+                                   'Max out once a month at most; four to five cycles gets Capital One '
+                                   'accounts closed',
+                                   'Colin Matthew ([gTpUtrhQsnM @ 00:11:44]); Just Money Ish ([u8QBKSzn5K8 '
+                                   '@ 00:02:41])'],
+                                  ['Which issuer polices cycling the hardest',
+                                   'Capital One cares about cycling while Amex and Discover reportedly '
+                                   'care less',
+                                   'Amex is called even stricter than Capital One, with algorithms '
+                                   'flagging repeat patterns',
+                                   'RJ Financial ([HCkT2XqTvms @ 00:07:32]); Just Money Ish ([Cm-vEtFQnC0 '
+                                   '@ 00:04:13])'],
+                                  ['Which channel to use for the request',
+                                   'Use the app or website only, because Navy Federal by phone is a hard '
+                                   'pull',
+                                   'Call first with a 30-second script asking which pull type applies '
+                                   'before requesting',
+                                   'Naam Wynn ([QmHwfz5Muvw @ 00:02:51]); Bella Sloan Enterprises '
+                                   '([2sUP7XrGRgM @ 00:06:38])'],
+                                  ['When to make the first increase request',
+                                   'Call immediately after a low approval, before activating, using a '
+                                   'renovation-style script',
+                                   'Wait three statements minimum; Amex is reliable at three months, '
+                                   'others median six',
+                                   'Colin Matthew ([gTpUtrhQsnM @ 00:09:23]); Cal Barton ([D6bPd67bgps @ '
+                                   '00:05:12])'],
+                                  ['Business setup required before applying for business cards',
+                                   'Sole proprietorship on an SSN with 0-1 employees and a $5-10K revenue '
+                                   'estimate',
+                                   'Form an LLC with a neutral name, free directory listings, and net-30 '
+                                   'vendors first',
+                                   'Daniel Braun ([HJuOgHKLiAc @ 00:07:43]); Business Credit Workshop '
+                                   '([W98zAyWtnrI @ 00:01:10])']]}},
+              {'heading': 'Section 4: Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The most expensive failure is a full closure triggered by pattern spend. '
+                              'Just Money Ish describes the trigger precisely: buying the same item weekly '
+                              'or monthly gets the account flagged, restricted, or closed because it reads '
+                              'as money laundering. Gift cards turned into money orders are the textbook '
+                              'case [Cm-vEtFQnC0 @ 00:02:26]. The same speaker adds that the closure '
+                              'lowers the credit score and forfeits the points. In the companion '
+                              'breakdown, the channel warns that heavy cycling can bring lowered limits, '
+                              'frozen accounts, and closure of every account held with that issuer. It '
+                              'names four to five cycles a month at Capital One as the line that gets '
+                              'people closed [u8QBKSzn5K8 @ 00:02:10]. RJ Financial flags a mechanical '
+                              'trap for anyone freeing up room mid-cycle: ACH payments can be unwound, so '
+                              'room that looks open on the account can vanish when the payment reverses '
+                              '[HCkT2XqTvms @ 00:07:01]. RJ also notes that Amex and Citi credit payments '
+                              'instantly, but prepaying never raises the limit itself. Jack McColl adds a '
+                              'points-specific trap on exits: closing your last Membership Rewards card '
+                              'zeroes the points balance [SNCeMDvlJsQ @ 00:11:25]. That means any Amex '
+                              'shutdown or voluntary cancellation should happen only after the rewards are '
+                              'spent or another Membership Rewards card stays open. Together, these '
+                              'failures turn a limit-building tactic into lost credit, lost points, and a '
+                              'damaged profile with that bank.',
+                              'Denials are the second trap, and they usually trace back to low usage or '
+                              'bad timing. Naam Wynn admits he was denied on a card he rarely used, '
+                              'calling the request an attempt to "stroke my ego." His conclusion: '
+                              '"there\'s really no reason to extend a higher credit limit to someone who '
+                              'doesn\'t use their credit card" [6KiaTyIQOCQ @ 00:04:35]. Just Money Ish '
+                              'reports the same pattern at Capital One at scale: "I\'ve literally seen '
+                              'dozens of people get denied for a credit limit increase with Capital One '
+                              'because they\'re just not simply using their card enough" [Cm-vEtFQnC0 @ '
+                              '00:00:19]. Bella Sloan Enterprises warns that repeated denials lengthen the '
+                              'cool-off and give banks a reason to cut limits. She reframes the '
+                              'adverse-action letter as a work order: "They\'re actually the bank telling '
+                              'you exactly what to fix" [2sUP7XrGRgM @ 00:07:12]. Stephen Smith sets the '
+                              'retry clock after a denial at three months when the pull was soft and six '
+                              'months when it was hard. He also flags that USAA still hard-pulls while '
+                              "Barclays has moved to soft [RY2Q9yq3v3E @ 00:14:36]. Naam Wynn's own "
+                              'adverse-action map lines up with that clock. Too new means wait, too many '
+                              'inquiries means stop applying for three to six months, and a delinquency '
+                              'means a 12-month wait before asking again. Firing off requests without '
+                              'fixing the coded reason only stacks more denials.',
+                              'The economics checks cut against the pure limit-maximizing playbook. '
+                              'ProudMoney cites Boston Fed research showing that utilization percentage '
+                              'stays constant as limits change, meaning balances scale up with the line. '
+                              'The channel adds that people who revolve balances pay 15-20% more, and '
+                              'tells anyone tempted to spend more by a bigger limit to decline the '
+                              'increase [IrfC1PHQGVQ @ 00:07:22]. Limits also move in both directions. '
+                              'ProudMoney points to roughly 40% limit cuts during 2008-09, and Cal Barton '
+                              'warns that X1 cut limits by more than $30K [D6bPd67bgps @ 00:11:01]. '
+                              'Personal utilization also bleeds into business lines. Business Credit '
+                              'Workshop says "Amex is very in tune with your personal credit utilization." '
+                              'A maxed personal Blue depressed their Business Gold limit, and paying it to '
+                              '$0 raised it. The rule they draw is personal utilization at 25% or below, '
+                              'about $2,500 on a $10K line [W98zAyWtnrI @ 00:04:21]. Daniel Braun adds a '
+                              'reporting check: Capital One reports business card activity to personal '
+                              'credit at all times, while Chase and Amex report it only when the account '
+                              'is delinquent [HJuOgHKLiAc @ 00:03:47]. That means a heavily cycled Capital '
+                              "One Spark balance shows up on the personal report. Naam Wynn's exposure "
+                              'caps close the loop: Chase sits near 50% of income and Amex near 35%.'],
+               'table': {'caption': 'Firsthand failure modes, triggers, and the economic hit reported by '
+                                    'practitioners',
+                         'headers': ['Failure Mode', 'Trigger Reported', 'Economic Hit', 'Expert Source'],
+                         'rows': [['Repetitive cycling flagged as money laundering',
+                                   'Buying the same item weekly or monthly, such as gift cards turned into '
+                                   'money orders',
+                                   'Account flagged, restricted, or closed; score drops and earned points '
+                                   'are forfeited',
+                                   'Just Money Ish ([Cm-vEtFQnC0 @ 00:02:26])'],
+                                  ['Too many full cycles inside one billing cycle',
+                                   'Using 80-100% of the limit repeatedly, four to five times a month at '
+                                   'Capital One',
+                                   'Lowered limits, frozen accounts, and closure of every account with '
+                                   'that issuer',
+                                   'Just Money Ish ([u8QBKSzn5K8 @ 00:02:10])'],
+                                  ['ACH payment reversal after freeing up room',
+                                   'Paying the card down mid-cycle by ACH to reopen available credit for '
+                                   'more spend',
+                                   'The bank can unwind the ACH payment, so the reopened room disappears',
+                                   'RJ Financial ([HCkT2XqTvms @ 00:07:01])'],
+                                  ['Requesting an increase on a rarely used card',
+                                   'Asking for a higher line on a card with little spend history behind it',
+                                   'Denial, then a three-month soft or six-month hard retry wait before '
+                                   'asking again',
+                                   'Naam Wynn ([6KiaTyIQOCQ @ 00:04:35]); Stephen Smith ([RY2Q9yq3v3E @ '
+                                   '00:14:36])'],
+                                  ['Maxed personal card dragging a business limit',
+                                   'Personal Amex Blue carried at a maxed balance while building a '
+                                   'Business Gold line',
+                                   'Business limit stayed depressed until the personal balance was paid to '
+                                   '$0',
+                                   'Business Credit Workshop ([W98zAyWtnrI @ 00:04:21])'],
+                                  ['Issuer-side limit cuts on existing lines',
+                                   'X1 cutting limits, and banks cutting lines about 40% during 2008-09',
+                                   'More than $30K of available credit removed from one cardholder by X1',
+                                   'Cal Barton ([D6bPd67bgps @ 00:11:01]); ProudMoney - Credit Cards & '
+                                   'Personal Finance ([IrfC1PHQGVQ @ 00:02:45])'],
+                                  ['Closing the last Membership Rewards card',
+                                   'Cancelling or losing the final Amex card that earns Membership Rewards '
+                                   'points',
+                                   'The entire Membership Rewards points balance is zeroed out on closure',
+                                   'Jack McColl ([SNCeMDvlJsQ @ 00:11:25])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Clear These Four Checks Before Every Cycle or CLI Request',
+                           'body': 'Each check comes from a closure, denial, or limit cut that a named '
+                                   'practitioner reported firsthand.',
+                           'items': ['Diversify card spend before cycling: mix in gas, groceries, movie '
+                                     'tickets, and shoes instead of the same item repeatedly; Just Money '
+                                     'Ish says gift cards bought at Office Depot or grocery stores code '
+                                     'differently [Just Money Ish — Cm-vEtFQnC0 @ 00:03:08].',
+                                     'Cap cycling at one to three times per month with each charge under '
+                                     '70% of the line, never more than three [Colin Matthew — gTpUtrhQsnM '
+                                     '@ 00:12:28].',
+                                     'Confirm the pull type before asking: back out if the request page '
+                                     "says 'credit check', 'review your credit report', 'detailed credit "
+                                     "evaluation', or 'consent to obtain your credit report' [Cal Barton — "
+                                     'D6bPd67bgps @ 00:03:11].',
+                                     'After any denial, read the adverse-action reason and wait three '
+                                     'months if it was a soft pull or six months if it was a hard pull '
+                                     'before asking again [Stephen Smith — RY2Q9yq3v3E @ 00:14:36].']}}],
+ 'pull_quote': '"Here\'s the math. Two moderate increases beat one rejected moon shot." — Bella Sloan '
+               'Enterprises (2sUP7XrGRgM @ 00:05:32).',
+ 'diagram_id': 'diag-07',
+ 'action_checklist': ['Update stated income in each issuer portal, counting household income, rounding '
+                      '$69,950 to $70K, and listing only your share of rent ($750 of a $1,500 split, $0 if '
+                      'living with parents) [Naam Wynn — QmHwfz5Muvw @ 00:01:30].',
+                      'Make the target card your primary card for three months, cycling $1K at a time, '
+                      'then pay the balance below 10% (ideally 1-6%) a week before requesting [Naam Wynn — '
+                      'QmHwfz5Muvw @ 00:05:14].',
+                      "Request on each issuer's clock: Amex at day 60 then every 90 days, Discover and "
+                      'BofA every 30 days, and Capital One, Citi, Chase, Synchrony, and Navy Federal every '
+                      '6 months [Colin Matthew — gTpUtrhQsnM @ 00:05:33].',
+                      'Request through the app or website for soft pulls, and freeze all three bureaus '
+                      'before a hard-pull CLI at Barclays or USAA [Naam Wynn — QmHwfz5Muvw @ 00:07:32].',
+                      'Reallocate limits inside Chase, such as moving $7K from Sapphire Preferred to a 0% '
+                      'Freedom Flex, leaving $500-$1K on the donor card [Naam Wynn — QmHwfz5Muvw @ '
+                      '00:08:48].',
+                      'If a business card application is denied, call reconsideration and send business '
+                      'documents; Daniel Braun was approved the next day [Daniel Braun — HJuOgHKLiAc @ '
+                      '00:16:29].'],
+ 'statutory_citations': [{'title': 'Naam Wynn — Do THIS to Get MASSIVE Credit Limit Increase (FAST) '
+                                   '[00:03:02]',
+                          'url': 'https://www.youtube.com/watch?v=QmHwfz5Muvw&t=182s',
+                          'relevance': 'Primary practitioner testimony on the overshoot CLI ask, counters '
+                                       'near 4x, and Chase limit reallocation.'},
+                         {'title': 'Bella Sloan Enterprises — Do THIS for a MASSIVE Credit Limit Increase '
+                                   '(FAST) [00:05:12]',
+                          'url': 'https://www.youtube.com/watch?v=2sUP7XrGRgM&t=312s',
+                          'relevance': 'Primary practitioner testimony on the moderate 25-50% ask, '
+                                       'cool-off periods, and denial codes.'},
+                         {'title': 'Just Money Ish — Capital One Will Close Your Credit Card For This One '
+                                   'BIG Reason! (CREDIT CYCLING) [00:02:15]',
+                          'url': 'https://www.youtube.com/watch?v=Cm-vEtFQnC0&t=135s',
+                          'relevance': 'Primary practitioner testimony on cycling patterns that get '
+                                       'Capital One and Amex accounts flagged or closed.'},
+                         {'title': 'Cal Barton — When Should You Ask for a Credit Limit Increase? '
+                                   '[00:05:12]',
+                          'url': 'https://www.youtube.com/watch?v=D6bPd67bgps&t=312s',
+                          'relevance': 'Primary practitioner testimony on issuer-by-issuer CLI timing from '
+                                       '100+ data points and limit-cut risk.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'hglOA-iPzNc',
+                       'title': 'HOW TO GET APPROVED FOR CAPITAL ONE SPARK BUSINESS CREDIT CARD',
+                       'channel': 'Checkmark Tutorial',
+                       'author': 'Checkmark Tutorial',
+                       'text': "Pre-approval doesn't guarantee approval, and a denial doesn't hurt your "
+                               'score.',
+                       'tip': "Pre-approval doesn't guarantee approval, and a denial doesn't hurt your "
+                              'score.',
+                       'timestamp': 85,
+                       'timestamp_seconds': 85,
+                       'timestamp_label': '[00:01:25]',
+                       'url': 'https://www.youtube.com/watch?v=hglOA-iPzNc&t=85s',
+                       'markdown': '[00:01:25](https://www.youtube.com/watch?v=hglOA-iPzNc&t=85s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'HJuOgHKLiAc',
+                       'title': 'The EASY Way To Get Business Credit Cards (Full Guide)',
+                       'channel': 'Daniel Braun',
+                       'author': 'Daniel Braun',
+                       'text': "If you're denied, call reconsideration; I sent my business documents and "
+                               'was approved the next day.',
+                       'tip': "If you're denied, call reconsideration; I sent my business documents and "
+                              'was approved the next day.',
+                       'timestamp': 989,
+                       'timestamp_seconds': 989,
+                       'timestamp_label': '[00:16:29]',
+                       'url': 'https://www.youtube.com/watch?v=HJuOgHKLiAc&t=989s',
+                       'markdown': '[00:16:29](https://www.youtube.com/watch?v=HJuOgHKLiAc&t=989s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'SNCeMDvlJsQ',
+                       'title': 'Do THIS Before Applying for an Amex Business Credit Card',
+                       'channel': 'Jack McColl',
+                       'author': 'Jack McColl',
+                       'text': 'So, you want to make sure you not just build strong personal credit, but '
+                               "you want to maintain the strong personal credit so the banks don't "
+                               'decrease your limit later.',
+                       'tip': 'So, you want to make sure you not just build strong personal credit, but '
+                              "you want to maintain the strong personal credit so the banks don't decrease "
+                              'your limit later.',
+                       'timestamp': 439,
+                       'timestamp_seconds': 439,
+                       'timestamp_label': '[00:07:19]',
+                       'url': 'https://www.youtube.com/watch?v=SNCeMDvlJsQ&t=439s',
+                       'markdown': '[00:07:19](https://www.youtube.com/watch?v=SNCeMDvlJsQ&t=439s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'u8QBKSzn5K8',
+                       'title': 'Credit Cycling Explained! (Should You Do it?)',
+                       'channel': 'Just Money Ish',
+                       'author': 'Just Money Ish',
+                       'text': "Now, it's not illegal to do this because there is no law saying that you "
+                               "can't use your credit card and pay it back immediately multiple times in a "
+                               'month.',
+                       'tip': "Now, it's not illegal to do this because there is no law saying that you "
+                              "can't use your credit card and pay it back immediately multiple times in a "
+                              'month.',
+                       'timestamp': 65,
+                       'timestamp_seconds': 65,
+                       'timestamp_label': '[00:01:05]',
+                       'url': 'https://www.youtube.com/watch?v=u8QBKSzn5K8&t=65s',
+                       'markdown': '[00:01:05](https://www.youtube.com/watch?v=u8QBKSzn5K8&t=65s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'HCkT2XqTvms',
+                       'title': 'Cycling Credit Card Limits - Spin Class',
+                       'channel': 'RJ Financial',
+                       'author': 'RJ Financial',
+                       'text': 'Capital One cares about cycling, while Amex and Discover reportedly care '
+                               'less.',
+                       'tip': 'Capital One cares about cycling, while Amex and Discover reportedly care '
+                              'less.',
+                       'timestamp': 452,
+                       'timestamp_seconds': 452,
+                       'timestamp_label': '[00:07:32]',
+                       'url': 'https://www.youtube.com/watch?v=HCkT2XqTvms&t=452s',
+                       'markdown': '[00:07:32](https://www.youtube.com/watch?v=HCkT2XqTvms&t=452s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'gTpUtrhQsnM',
+                       'title': 'Do THIS To Get MASSIVE SOFT PULL Credit Limit Increases (FAST)',
+                       'channel': 'Colin Matthew',
+                       'author': 'Colin Matthew',
+                       'text': "You don't want to cycle more than a couple times per month, more than "
+                               'three is what I would typically say.',
+                       'tip': "You don't want to cycle more than a couple times per month, more than three "
+                              'is what I would typically say.',
+                       'timestamp': 748,
+                       'timestamp_seconds': 748,
+                       'timestamp_label': '[00:12:28]',
+                       'url': 'https://www.youtube.com/watch?v=gTpUtrhQsnM&t=748s',
+                       'markdown': '[00:12:28](https://www.youtube.com/watch?v=gTpUtrhQsnM&t=748s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'RY2Q9yq3v3E',
+                       'title': "The Only Credit Limit Increase Video You'll Ever Need (2026)",
+                       'channel': 'Stephen Smith',
+                       'author': 'Stephen Smith',
+                       'text': 'But, the one thing you have to always remember, heavy usage means nothing '
+                               'without timely payments.',
+                       'tip': 'But, the one thing you have to always remember, heavy usage means nothing '
+                              'without timely payments.',
+                       'timestamp': 265,
+                       'timestamp_seconds': 265,
+                       'timestamp_label': '[00:04:25]',
+                       'url': 'https://www.youtube.com/watch?v=RY2Q9yq3v3E&t=265s',
+                       'markdown': '[00:04:25](https://www.youtube.com/watch?v=RY2Q9yq3v3E&t=265s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'IrfC1PHQGVQ',
+                       'title': 'Why Credit Card Limit Increases May Be Bad (And Why Banks Keep Giving '
+                                'Them To You)',
+                       'channel': 'ProudMoney - Credit Cards & Personal Finance',
+                       'author': 'ProudMoney - Credit Cards & Personal Finance',
+                       'text': 'Decline a credit limit increase if it tempts you to spend more.',
+                       'tip': 'Decline a credit limit increase if it tempts you to spend more.',
+                       'timestamp': 442,
+                       'timestamp_seconds': 442,
+                       'timestamp_label': '[00:07:22]',
+                       'url': 'https://www.youtube.com/watch?v=IrfC1PHQGVQ&t=442s',
+                       'markdown': '[00:07:22](https://www.youtube.com/watch?v=IrfC1PHQGVQ&t=442s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '1F0G53GBilU',
+                       'title': 'How To Get A $10k CREDIT CARD Limit FAST!! | PERSONAL & BUSINESS METHOD '
+                                '2026',
+                       'channel': 'HowToCredit',
+                       'author': 'HowToCredit',
+                       'text': 'Utilization needs to be under 20% not 30%.',
+                       'tip': 'Utilization needs to be under 20% not 30%.',
+                       'timestamp': 486,
+                       'timestamp_seconds': 486,
+                       'timestamp_label': '[00:08:06]',
+                       'url': 'https://www.youtube.com/watch?v=1F0G53GBilU&t=486s',
+                       'markdown': '[00:08:06](https://www.youtube.com/watch?v=1F0G53GBilU&t=486s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Cm-vEtFQnC0',
+                       'title': 'Capital One Will Close Your Credit Card For This One BIG Reason! (CREDIT '
+                                'CYCLING)',
+                       'channel': 'Just Money Ish',
+                       'author': 'Just Money Ish',
+                       'text': "All I'm saying is to diversify the spending that you guys are doing with "
+                               'your Capital One credit card.',
+                       'tip': "All I'm saying is to diversify the spending that you guys are doing with "
+                              'your Capital One credit card.',
+                       'timestamp': 285,
+                       'timestamp_seconds': 285,
+                       'timestamp_label': '[00:04:45]',
+                       'url': 'https://www.youtube.com/watch?v=Cm-vEtFQnC0&t=285s',
+                       'markdown': '[00:04:45](https://www.youtube.com/watch?v=Cm-vEtFQnC0&t=285s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Cm-vEtFQnC0',
+                       'title': 'Capital One Will Close Your Credit Card For This One BIG Reason! (CREDIT '
+                                'CYCLING)',
+                       'channel': 'Just Money Ish',
+                       'author': 'Just Money Ish',
+                       'text': "I've literally seen dozens of people get denied for a credit limit "
+                               "increase with Capital One because they're just not simply using their card "
+                               'enough.',
+                       'tip': "I've literally seen dozens of people get denied for a credit limit increase "
+                              "with Capital One because they're just not simply using their card enough.",
+                       'timestamp': 19,
+                       'timestamp_seconds': 19,
+                       'timestamp_label': '[00:00:19]',
+                       'url': 'https://www.youtube.com/watch?v=Cm-vEtFQnC0&t=19s',
+                       'markdown': '[00:00:19](https://www.youtube.com/watch?v=Cm-vEtFQnC0&t=19s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'QmHwfz5Muvw',
+                       'title': 'Do THIS to Get MASSIVE Credit Limit Increase (FAST)',
+                       'channel': 'Naam Wynn',
+                       'author': 'Naam Wynn',
+                       'text': "You literally can't lose by aiming too high.",
+                       'tip': "You literally can't lose by aiming too high.",
+                       'timestamp': 209,
+                       'timestamp_seconds': 209,
+                       'timestamp_label': '[00:03:29]',
+                       'url': 'https://www.youtube.com/watch?v=QmHwfz5Muvw&t=209s',
+                       'markdown': '[00:03:29](https://www.youtube.com/watch?v=QmHwfz5Muvw&t=209s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '6KiaTyIQOCQ',
+                       'title': '5 Steps to get MASSIVE CREDIT Limit Increases (FAST)',
+                       'channel': 'Naam Wynn',
+                       'author': 'Naam Wynn',
+                       'text': 'The bare minimum is at least three billing cycles but ideally you want to '
+                               'wait at least six billing cycles.',
+                       'tip': 'The bare minimum is at least three billing cycles but ideally you want to '
+                              'wait at least six billing cycles.',
+                       'timestamp': 382,
+                       'timestamp_seconds': 382,
+                       'timestamp_label': '[00:06:22]',
+                       'url': 'https://www.youtube.com/watch?v=6KiaTyIQOCQ&t=382s',
+                       'markdown': '[00:06:22](https://www.youtube.com/watch?v=6KiaTyIQOCQ&t=382s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '2sUP7XrGRgM',
+                       'title': 'Do THIS for a MASSIVE Credit Limit Increase (FAST)',
+                       'channel': 'Bella Sloan Enterprises',
+                       'author': 'Bella Sloan Enterprises',
+                       'text': "Here's the math. Two moderate increases beat one rejected moon shot.",
+                       'tip': "Here's the math. Two moderate increases beat one rejected moon shot.",
+                       'timestamp': 332,
+                       'timestamp_seconds': 332,
+                       'timestamp_label': '[00:05:32]',
+                       'url': 'https://www.youtube.com/watch?v=2sUP7XrGRgM&t=332s',
+                       'markdown': '[00:05:32](https://www.youtube.com/watch?v=2sUP7XrGRgM&t=332s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '2sUP7XrGRgM',
+                       'title': 'Do THIS for a MASSIVE Credit Limit Increase (FAST)',
+                       'channel': 'Bella Sloan Enterprises',
+                       'author': 'Bella Sloan Enterprises',
+                       'text': '30 seconds of asking saves you an inquiry.',
+                       'tip': '30 seconds of asking saves you an inquiry.',
+                       'timestamp': 432,
+                       'timestamp_seconds': 432,
+                       'timestamp_label': '[00:07:12]',
+                       'url': 'https://www.youtube.com/watch?v=2sUP7XrGRgM&t=432s',
+                       'markdown': '[00:07:12](https://www.youtube.com/watch?v=2sUP7XrGRgM&t=432s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'QFNkg3G6als',
+                       'title': '5 BEST Business Credit Cards ($25,000 Limit)',
+                       'channel': 'Naam Wynn',
+                       'author': 'Naam Wynn',
+                       'text': 'They go to the most qualified applicants.',
+                       'tip': 'They go to the most qualified applicants.',
+                       'timestamp': 482,
+                       'timestamp_seconds': 482,
+                       'timestamp_label': '[00:08:02]',
+                       'url': 'https://www.youtube.com/watch?v=QFNkg3G6als&t=482s',
+                       'markdown': '[00:08:02](https://www.youtube.com/watch?v=QFNkg3G6als&t=482s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'D6bPd67bgps',
+                       'title': 'When Should You Ask for a Credit Limit Increase?',
+                       'channel': 'Cal Barton',
+                       'author': 'Cal Barton',
+                       'text': 'Now you have to avoid manually asking for credit limit increases with '
+                               'banks that perform a hard credit pull.',
+                       'tip': 'Now you have to avoid manually asking for credit limit increases with banks '
+                              'that perform a hard credit pull.',
+                       'timestamp': 31,
+                       'timestamp_seconds': 31,
+                       'timestamp_label': '[00:00:31]',
+                       'url': 'https://www.youtube.com/watch?v=D6bPd67bgps&t=31s',
+                       'markdown': '[00:00:31](https://www.youtube.com/watch?v=D6bPd67bgps&t=31s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'W98zAyWtnrI',
+                       'title': 'How To Get Approved for the Amex Business Gold Card! *EASY*',
+                       'channel': 'Business Credit Workshop',
+                       'author': 'Business Credit Workshop',
+                       'text': 'I had to use the card pay it down use the card pay it down I now got that '
+                               'limit to over $100,000.',
+                       'tip': 'I had to use the card pay it down use the card pay it down I now got that '
+                              'limit to over $100,000.',
+                       'timestamp': 211,
+                       'timestamp_seconds': 211,
+                       'timestamp_label': '[00:03:31]',
+                       'url': 'https://www.youtube.com/watch?v=W98zAyWtnrI&t=211s',
+                       'markdown': '[00:03:31](https://www.youtube.com/watch?v=W98zAyWtnrI&t=211s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'}]}

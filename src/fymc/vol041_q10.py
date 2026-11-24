@@ -1,631 +1,846 @@
 from __future__ import annotations
 
-CHAPTER_10 = {
-    "id": "Q10",
-    "chapter_id": "Q10",
-    "chapter_number": 10,
-    "question_number": 10,
-    "slug": "automation-ai-leverage-scalable-distribution-flywheels",
-    "question_prompt": "How does a 1 FT + 2 C (3 people) buying group, commercial card-float & rebate arbitrage team automate 70%+ of repetitive research, qualification, fulfillment, and traffic/deal acquisition while keeping human-in-the-loop QA?",
-    "kicker": "Q10 / THE BIG MONEY PLAYBOOKS",
-    "title": "Automation, AI Leverage & Scalable Distribution Flywheels",
-    "subtitle": "Python Deal Reconciliation, Telegram Signal Intake, Rebate Eligibility Routing, and T-Bill Settlement Controls Under IRC 6050W",
-    "layout_template": "case_study_walkthrough",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #41, ranked #10 of 43 with a 93/100 Money-to-Manpower Score, earns its "
-        "automation edge through reconciled evidence rather than unattended purchasing. This "
-        "chapter translates 11 mapped plays into a three-person operating system spanning "
-        "wholesale commitments, commercial rebates, and treasury income. Python workers normalize "
-        "deal messages; constrained language models extract terms; humans authorize commitments "
-        "and cash movements. The canonical annual owner-profit cases remain $20,000 Conservative, "
-        "$143,500 Base, and $360,000 Scaled, with the Scaled team expanding to five people. "
-        "Every workflow separates borrowed statement float from earned contribution, validates "
-        "portal eligibility before spending, and measures exception-adjusted labor savings. "
-        "Distribution compounds only when useful inbound tools generate qualified demand without "
-        "exposing private deal inventory or harvesting community members."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$250,000",
-            "context": "Annual gross scorecard basis; $87,500 retained contribution at 35%.",
-            "note": "8% gross-basis net margin; $20,000 annual owner net profit; 22.86% retained net margin; 1 FT + 2 C.",
-        },
-        {
-            "label": "Base",
-            "value": "$1,025,000",
-            "context": "Annual gross scorecard basis; $358,750 retained contribution at 35%.",
-            "note": "14.0% gross-basis net margin; $143,500 annual owner net profit; 40.0% retained net margin; 1 FT + 2 C.",
-        },
-        {
-            "label": "Scaled",
-            "value": "$1,800,000",
-            "context": "Annual gross scorecard basis; $630,000 retained contribution at 35%.",
-            "note": "20% gross-basis net margin; $360,000 annual owner net profit; 57.14% retained net margin; 2 FT + 3 C.",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Build an evidence-first intake system around eleven operating plays",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Build three separate ledgers before connecting any feed: wholesale fulfillment, "
-                    "commercial card and portal rewards, and bank or Treasury earnings. A shared "
-                    "deal identifier connects evidence without merging their economics. For "
-                    "BuyForMeRetail, Pointsmaker, and MaxOutDeals, store the commitment identifier, "
-                    "accepted SKU, quantity ceiling, destination, expiration, reimbursement amount, "
-                    "and settlement terms from the actual accepted offer. An advertised opportunity "
-                    "is not a purchase commitment. Python workers using urllib.request, json, "
-                    "sqlite3, decimal, and zoneinfo can normalize authorized exports and documented "
-                    "webhooks; do not assume these vendors expose public integration endpoints. "
-                    "Preserve source timestamps and document hashes alongside parsed fields. An "
-                    "LLM may extract a proposed record into a fixed schema, but supplier text is "
-                    "untrusted data, never executable instructions. Require exact evidence spans "
-                    "for amounts and dates, reject absent terms, and route conflicting quantities "
-                    "to a person. The full-time operator owns capital and commitments; one contractor "
-                    "handles procurement evidence and parcel exceptions, while the second handles "
-                    "reconciliation and inbound acquisition. Access follows those duties: contractors "
-                    "can prepare records without possessing payment-release credentials. Keep "
-                    "separate production and test data, and redact account identifiers before any "
-                    "external model request. This structure makes automation replace repetitive "
-                    "handling rather than silently transferring spending authority."
-                ),
-                (
-                    "Implement telegram_channel_signal_scraping as permission-aware signal intake, "
-                    "not audience extraction. Monitor public Telegram broadcasts through a permitted "
-                    "read-only client where access and platform terms allow; the official Bot API "
-                    "does not provide unrestricted historical access to arbitrary public channels. "
-                    "For OTC deal rooms, wholesale distress feeds, and niche community streams, "
-                    "require explicit access rights before ingesting their messages. Capture product "
-                    "identifiers, requested volumes, delivery windows, and public contact routes, "
-                    "then deduplicate using source ID plus message ID. Never enumerate members "
-                    "or turn participant identities into an outbound list. If access becomes "
-                    "uncertain, stop that connector and retain only permitted passive public "
-                    "listeners; shift prospect capture to an official Bot API utility bot that "
-                    "people initiate themselves. Give the bot a shipment-readiness calculator or "
-                    "buying-group eligibility checklist, then ask users to submit their own "
-                    "requirements. An illustrative 1,000-message batch costing $2 to process "
-                    "and yielding 20 qualified signals costs $0.10 per signal before human "
-                    "review. If only four become accepted commitments, processing cost becomes "
-                    "$0.50 per commitment. Record both denominators so an impressive extraction "
-                    "rate cannot disguise weak purchasing relevance or excessive reviewer effort. "
-                    "Expire stale offers rather than repeatedly promoting yesterday's apparent spread."
-                ),
-                (
-                    "The eleven mapped plays below are chapter-level operating applications; only "
-                    "telegram_channel_signal_scraping carries a supplied catalog identifier. Their "
-                    "purpose is to form one auditable chain, not eleven disconnected subscriptions. "
-                    "Start with a two-week baseline of repetitive handling minutes, including "
-                    "rework, exception chasing, and duplicate entry. Suppose 1,000 monthly records "
-                    "previously required six minutes each, totaling 100 hours. If automation leaves "
-                    "250 records requiring four minutes of review, plus ten hours of exception "
-                    "handling and maintenance, remaining work is 26.67 hours: a 73.33% reduction. "
-                    "That meets the 70% objective without pretending human authorization disappeared. "
-                    "Also measure qualification precision, settlements reconciled before due dates, "
-                    "and dollars exposed to unresolved exceptions. A pipeline that saves time but "
-                    "increases overdue balances has failed. Use idempotency keys for every state "
-                    "transition, distinguish ingestion time from commercial effective time, and "
-                    "retain an append-only event history. A daily dashboard should show stale "
-                    "commitments, parcels without acceptance scans, unmatched ACH credits, and "
-                    "rewards awaiting eligibility confirmation. When a connector breaks, a "
-                    "documented CSV import must preserve the same identifiers and validation rules. "
-                    "Manual recovery should change the transport, not weaken the evidence needed "
-                    "to commit capital or recognize earnings."
-                ),
-            ],
-            "table": {
-                "caption": "Eleven mapped operating applications, with unit math and recovery boundaries",
-                "headers": [
-                    "Mapped operating play",
-                    "Automation and evidence boundary",
-                    "Illustrative unit economics",
-                    "Human check and fallback",
-                ],
-                "rows": [
-                    [
-                        "telegram_channel_signal_scraping converts permitted broadcasts into qualified deal signals",
-                        "Read permitted public messages without harvesting participant identities",
-                        "Two dollars processing divided by twenty qualified signals equals ten cents",
-                        "Stop uncertain access and capture inbound through utility bots",
-                    ],
-                    [
-                        "Commitment normalization converts accepted wholesale offers into structured records",
-                        "Extract accepted quantities and expiration with exact evidence spans",
-                        "Thirty dollars processing across three hundred commitments equals ten cents",
-                        "Operator verifies binding terms before any purchase is released",
-                    ],
-                    [
-                        "Wholesale qualification matches product identifiers against accepted buying instructions",
-                        "Compare SKU condition quantity destination and acceptance deadline",
-                        "One prevented fifty-dollar mismatch covers five hundred ten-cent checks",
-                        "Conflicting identifiers require supplier clarification instead of inferred matches",
-                    ],
-                    [
-                        "Shipment reconciliation joins carrier scans with warehouse receiving evidence",
-                        "Match tracking identifiers carton counts serials and receiving timestamps",
-                        "Twenty dollars processing across two hundred parcels equals ten cents",
-                        "Missing acceptance scans trigger carrier investigation and purchase suspension",
-                    ],
-                    [
-                        "Portal routing compares eligible alternatives without assuming simultaneous stacking",
-                        "Store exclusions click evidence caps and eligible purchase category",
-                        "One thousand eligible dollars at one percent yields ten dollars",
-                        "Use one qualifying portal path and exclude disputed rewards",
-                    ],
-                    [
-                        "Card offer routing selects eligible commercial payment instruments",
-                        "Validate issuer terms merchant category limits and statement dates",
-                        "One thousand eligible dollars at two percent yields twenty dollars",
-                        "Skip rewards assumptions when issuer eligibility remains unresolved",
-                    ],
-                    [
-                        "Invoice fee screening rejects negative payment-service reward spreads",
-                        "Compare current Plastiq or Melio fees against permitted rewards",
-                        "Ten thousand dollars earns two hundred against hypothetical fees of two hundred ninety",
-                        "Use ordinary ACH when the card route loses ninety dollars",
-                    ],
-                    [
-                        "Statement liability scheduling forecasts repayment from cleared available cash",
-                        "Join actual statement due dates with dated cash obligations",
-                        "Twenty thousand dollars due remains twenty thousand dollars payable",
-                        "Pause commitments when reserves cannot cover stressed settlement delays",
-                    ],
-                    [
-                        "Treasury sweep scheduling invests only verified surplus repayment capacity",
-                        "Match bill maturity and bank availability against liability calendar",
-                        "Ten thousand at four-point-five percent for forty-five days yields fifty-five dollars forty-eight cents",
-                        "Keep repayment reserves liquid rather than relying on early sales",
-                    ],
-                    [
-                        "Inbound utility distribution converts useful calculators into submitted requirements",
-                        "Attribute public resource visits to voluntarily completed qualification forms",
-                        "Three hundred dollars divided by ten commitments equals thirty dollars",
-                        "Remove misleading calculators and route incomplete submissions to review",
-                    ],
-                    [
-                        "Settlement attribution reconciliation connects growth spend with earned contribution",
-                        "Join cleared reimbursements vested rewards and completed treasury earnings",
-                        "Thirty-five dollars contribution less thirty dollars acquisition leaves five dollars",
-                        "Stop scaling when unresolved disputes erase measured acquisition payback",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Make evidence cheaper than exception chasing",
-                "body": "Preserve the small artifacts that determine whether an apparent spread survives receiving, settlement, and reward review.",
-                "items": [
-                    "Archive the accepted commitment and destination instructions together; a later edited deal message must not rewrite the original purchasing limit.",
-                    "Capture portal exclusions and the qualifying click before checkout; a missing tracked transaction is an exception, not earned cash.",
-                    "Match parcel serials and carton weights before dispatch, then retain delivery and warehouse acceptance as separate events.",
-                    "Publish rounded, synthetic calculator examples; keep current counterparties, committed quantities, and account-specific offers outside public growth assets.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Route purchases through three separate unit-economic engines",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Wholesale fulfillment starts with a pre-committed buyer, not a speculative cart. "
-                    "Consider a deliberately simplified accepted order: merchandise costs $1,000, "
-                    "the buying group reimburses $1,020, insured shipping costs $12, and the "
-                    "expected return or damage provision is $3. Wholesale contribution is $5 "
-                    "before overhead. An independently eligible 2% commercial card reward adds "
-                    "$20, and a qualifying 1% portal reward adds $10, producing $35 combined "
-                    "contribution only when those rewards become earned under their terms. Keep "
-                    "the $1,020 reimbursement, $1,000 merchandise cost, and separate $30 reward "
-                    "components visible; do not call reimbursement or borrowed purchasing capacity "
-                    "profit. This transaction illustration is not the canonical portfolio's 35% "
-                    "retained-share assumption. A DE, NH, or OR warehouse address does not itself "
-                    "establish every exemption for every seller or transaction. Validate destination "
-                    "treatment, resale documentation where relevant, title transfer, and actual "
-                    "warehouse acceptance requirements. Washington RCW 82.04.470 illustrates the "
-                    "importance of substantiated wholesale treatment rather than an unsupported "
-                    "resale assertion. Reject any order whose shipping, tax, or receiving conditions "
-                    "consume the spread. Route uncertain tax treatment to a documented decision "
-                    "before purchase, rather than allowing a scraper to treat a promotional "
-                    "headline as the governing commercial terms."
-                ),
-                (
-                    "The rebate router compares Rakuten and TopCashback as alternative qualifying "
-                    "portal paths, then tests whether a commercial card reward or card-linked "
-                    "offer can coexist with the selected path. Do not add two portal rates for "
-                    "one purchase or presume every gift card, business purchase, coupon, or bulk "
-                    "order qualifies. Store merchant exclusions, category restrictions, caps, "
-                    "activation requirements, return windows, and the terms snapshot used in the "
-                    "decision. Treat uncapped 2% to 4% rewards as a candidate eligibility range, "
-                    "not a universal issuer promise. For a B2B invoice routed through Plastiq "
-                    "or Melio, illustrative $10,000 principal at a 2% reward earns $200; an "
-                    "assumed 2.9% processing charge costs $290, leaving a $90 loss before any "
-                    "other cost. These are hypothetical inputs, not current vendor quotations. "
-                    "With equal eligible principal, the reward rate must exceed the fee rate "
-                    "plus incremental costs merely to break even. Model financed fees separately "
-                    "if they increase the statement balance. Require an authentic invoice, an "
-                    "eligible recipient, and permitted card usage. Default to ordinary bank "
-                    "payment when economics fail. Do not rescue a negative payment spread by "
-                    "counting unconfirmed bonuses, repeatedly recycling limits, or assuming "
-                    "issuer review will never interrupt availability."
-                ),
-                (
-                    "Treasury income is the third engine: interest, bill discount accretion, and "
-                    "earned bank bonuses belong here, while swept principal remains an asset "
-                    "matched against repayment liabilities. An illustrative $10,000 genuinely "
-                    "available for 45 days at a simple annualized 4.5% produces $55.48 using "
-                    "principal times rate times days divided by 365. Actual Treasury pricing "
-                    "and yield conventions determine realized earnings; this calculation is a "
-                    "planning approximation, not a quoted bill return. Subtract transfer charges, "
-                    "funding costs, and any sale loss. Record bonus eligibility periods separately "
-                    "so the same cash is not simultaneously assumed available for a locked "
-                    "deposit and a card payment. At portfolio level, retain the canonical Formula "
-                    "v2.0 cases exactly: $250,000, $1,025,000, and $1,800,000 gross bases yield "
-                    "$87,500, $358,750, and $630,000 at retained_share=0.35. Owner profits are "
-                    "$20,000, $143,500, and $360,000. Residual costs after retained contribution "
-                    "are therefore $67,500, $215,250, and $270,000; do not equate that entire "
-                    "residual with monthly operating overhead. Retained margins are 22.86%, "
-                    "40.0%, and 57.14%. The retained view distinguishes contribution from gross "
-                    "flows; actual ASC 606 gross-versus-net presentation depends on principal-agent "
-                    "facts and contract obligations, not merely applying the scorecard percentage."
-                ),
-            ],
-            "table": {
-                "caption": "Separate economic ledgers and canonical Formula v2.0 reconciliation",
-                "headers": [
-                    "Economic component or scenario",
-                    "Gross movement and classification",
-                    "Retained contribution or profit bridge",
-                    "Automation decision and evidence requirement",
-                ],
-                "rows": [
-                    [
-                        "Wholesale example preserves reimbursement and merchandise cost separately",
-                        "Buyer reimburses one thousand twenty against one thousand merchandise dollars",
-                        "Twelve shipping dollars and three reserve dollars leave five",
-                        "Release purchase only against accepted commitment and verified destination",
-                    ],
-                    [
-                        "Commercial rewards example requires two independently qualifying reward sources",
-                        "One thousand eligible purchase dollars supports twenty plus ten rewards",
-                        "Thirty earned reward dollars supplement five wholesale contribution dollars",
-                        "Exclude pending rewards from cash available for statement repayment",
-                    ],
-                    [
-                        "Treasury example uses surplus cash without erasing repayment obligations",
-                        "Ten thousand principal remains an asset rather than earned revenue",
-                        "Forty-five days at four-point-five percent approximates fifty-five dollars forty-eight cents",
-                        "Verify maturity settlement and transfer timing before allocating funds",
-                    ],
-                    [
-                        "Conservative canonical case maintains one employee plus two contractors",
-                        "Annual gross basis equals exactly two hundred fifty thousand dollars",
-                        "Retained $87,500 less $67,500 residual costs yields $20,000 profit",
-                        "Report eight percent gross margin and 22.86 percent retained margin",
-                    ],
-                    [
-                        "Base canonical case maintains one employee plus two contractors",
-                        "Annual gross basis equals exactly one million twenty-five thousand dollars",
-                        "Retained $358,750 less $215,250 residual costs yields $143,500 profit",
-                        "Report fourteen percent gross margin and forty percent retained margin",
-                    ],
-                    [
-                        "Scaled canonical case requires two employees plus three contractors",
-                        "Annual gross basis equals exactly one million eight hundred thousand dollars",
-                        "Retained $630,000 less $270,000 residual costs yields $360,000 profit",
-                        "Report twenty percent gross margin and 57.14 percent retained margin",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "3. Stress repayment timing and recover failed automations without duplicate spending",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Treat 55-day statement float as an upper-bound scenario available only when "
-                    "purchase timing and the issuer's actual terms support it. Store the posted "
-                    "transaction date, statement closing date, due date, grace conditions, and "
-                    "scheduled payment date for each account. A purchase near closing may have "
-                    "substantially less runway. Net-3 or Net-5 buying-group language also needs "
-                    "an explicit starting event: carrier delivery, warehouse acceptance, or "
-                    "approved reconciliation can produce different settlement dates. Forecast "
-                    "cash from cleared ACH, not a dashboard marked paid. Suppose $20,000 is due "
-                    "on day 55 and reimbursement is expected on day 10. Stress warehouse "
-                    "acceptance slipping seven days, payout slipping fifteen more, and bank "
-                    "availability slipping three, moving usable reimbursement to day 35. Then "
-                    "stress a dispute extending beyond day 55. The reserve must still cover "
-                    "the full $20,000 plus payment charges; an expected reimbursement is not "
-                    "a substitute for that reserve. Schedule repayment several business days "
-                    "early using the account's verified processing rules. Treasury bills should "
-                    "mature with transfer slack before payment, and emergency coverage must "
-                    "not depend on selling a bill at a favorable price. Suspend new "
-                    "commitments immediately when stressed coverage falls below scheduled obligations."
-                ),
-                (
-                    "Use a durable state machine: observed, qualified, committed, ordered, shipped, "
-                    "accepted, reimbursed, and closed. Reward and treasury events follow separate "
-                    "linked states because their completion dates differ. Verify documented webhook "
-                    "signatures where available, enforce replay windows, and acknowledge receipt "
-                    "only after persisting the event. For integrations without signed delivery, "
-                    "retrieve corroborating evidence through authenticated exports before advancing "
-                    "money-sensitive states. A sqlite3 prototype can use unique event keys and "
-                    "transactions; higher write concurrency may require a managed database rather "
-                    "than forcing the prototype beyond its operating envelope. Keep payment "
-                    "instructions out of LLM outputs. The model can recommend an exception "
-                    "classification but cannot alter beneficiary details or release money. Retry "
-                    "read operations with bounded exponential backoff; never blindly repeat an "
-                    "order or transfer after a timeout. First query its external reference, "
-                    "then require a person to resolve ambiguous completion. Dead-letter records "
-                    "need an owner, next action, and due time. If issuer review freezes an "
-                    "account, stop that account's new purchases and preserve its repayment "
-                    "schedule; do not redirect transactions to bypass the restriction. If a "
-                    "parcel disappears, freeze expected reimbursement, preserve serial and insurance "
-                    "evidence, and open the carrier claim within the applicable deadline."
-                ),
-                (
-                    "Budget automated runs using explicit assumptions rather than calling model "
-                    "usage negligible. At assumed prices of $0.50 per million input tokens "
-                    "and $2 per million output tokens, a 2,000-input, 300-output extraction "
-                    "costs $0.0016. Adding $0.0034 for hosting, storage, and monitoring produces "
-                    "$0.005 per normal run, or $50 for 10,000 runs. These are budgeting "
-                    "inputs, not a vendor price claim. If 8% require two minutes of "
-                    "review at $30 per hour, review adds $800; fully loaded processing is "
-                    "$850, or $0.085 per run before development and maintenance. Track retries "
-                    "and multi-message documents because they increase token consumption. Route "
-                    "deterministic fields through regular parsing first, and reserve model calls "
-                    "for ambiguous language. Maintain a labeled evaluation set covering changed "
-                    "quantities, expired commitments, portal exclusions, and suspicious payment "
-                    "instructions. A model or prompt update must match critical-field accuracy "
-                    "before production replacement. Log extracted values and evidence references "
-                    "without storing unnecessary personal data. Retain raw artifacts according "
-                    "to a documented access and retention schedule. The operator samples successful "
-                    "runs as well as exceptions: silent systematic errors often look clean "
-                    "until a warehouse rejects an entire batch or a reward program reverses "
-                    "multiple transactions together."
-                ),
-            ],
-            "table": {
-                "caption": "Failure recovery matrix for commitments, parcels, rewards, and statement liabilities",
-                "headers": [
-                    "Failure signal requiring intervention",
-                    "Automated containment and evidence capture",
-                    "Human recovery action and ownership",
-                    "Restart condition tied to observable evidence",
-                ],
-                "rows": [
-                    [
-                        "Commitment expiration arrives before purchase confirmation becomes available",
-                        "Block order creation and preserve original accepted offer evidence",
-                        "Procurement contractor requests renewed quantity and price confirmation",
-                        "Operator verifies refreshed acceptance before releasing another purchase instruction",
-                    ],
-                    [
-                        "Carrier delivery appears without matching warehouse acceptance records",
-                        "Freeze expected settlement date and collect parcel tracking history",
-                        "Fulfillment contractor submits serial carton and receiving evidence",
-                        "Warehouse acceptance resolves quantity differences and establishes settlement timing",
-                    ],
-                    [
-                        "Buying group marks payment sent without cleared ACH credit",
-                        "Exclude pending funds from available repayment and treasury balances",
-                        "Reconciliation contractor investigates reference identifiers with the counterparty",
-                        "Bank evidence confirms usable funds and matching settlement amount",
-                    ],
-                    [
-                        "Issuer review restricts account purchasing or available credit",
-                        "Disable new purchase routing while preserving existing liability forecasts",
-                        "Full-time operator answers issuer requests through authenticated account channels",
-                        "Issuer confirms permitted account use and repayment coverage remains intact",
-                    ],
-                    [
-                        "Transfer request times out after submission to external service",
-                        "Mark completion ambiguous and suppress automatic duplicate transfer attempts",
-                        "Operator checks external reference and reconciles actual account movements",
-                        "Confirmed transfer status supports one documented subsequent action only",
-                    ],
-                    [
-                        "Portal tracking disappears or rewards reverse after return review",
-                        "Remove provisional reward contribution and recalculate actual purchase economics",
-                        "Reconciliation contractor submits permitted evidence through official support routes",
-                        "Posted reward or documented rejection closes the outstanding exception",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four checks before consequential execution",
-                "body": "Automation prepares evidence; a named person authorizes commitments, changed payment details, and transfers.",
-                "items": [
-                    "Verify accepted SKU, quantity, price, warehouse address, and expiration against the original buying-group commitment before ordering.",
-                    "Verify current card and portal eligibility, fee assumptions, and a positive standalone contribution calculation before selecting a payment route.",
-                    "Verify stressed cleared-cash coverage for every statement due date, including disputed reimbursements and transfer delays, before any treasury sweep.",
-                    "Verify beneficiary details through an established authenticated channel and inspect external transaction status before releasing or retrying a transfer.",
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Capture and validate evidence",
-                    "action": "Persist source records, normalize identifiers, and reject unsupported commercial fields.",
-                    "detail": "Use unique source keys, timestamped terms snapshots, and decimal amounts; route conflicting records into an owned exception queue.",
-                },
-                {
-                    "step": 2,
-                    "title": "Calculate independent economic and liquidity tests",
-                    "action": "Compute wholesale contribution, eligible rewards, treasury earnings, and stressed statement coverage separately.",
-                    "detail": "Exclude pending rewards and uncleared reimbursements from repayment cash; reject negative invoice fee spreads.",
-                },
-                {
-                    "step": 3,
-                    "title": "Authorize and execute once",
-                    "action": "Present the evidence bundle to the authorized operator before consequential execution.",
-                    "detail": "Bind authorization to the exact quantities, amounts, recipient, and terms; changed inputs require renewed authorization.",
-                },
-                {
-                    "step": 4,
-                    "title": "Reconcile and learn from exceptions",
-                    "action": "Match receiving, cleared ACH, posted rewards, and repayment evidence before closing records.",
-                    "detail": "Feed resolved exception labels into evaluations and operating rules without allowing model-generated changes to deploy themselves.",
-                },
-            ],
-        },
-        {
-            "heading": "4. Scale distribution from verified contribution rather than vanity traffic",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Build distribution around useful operating artifacts, not claims of effortless "
-                    "card-funded income. A public shipping-loss calculator, statement-date planner, "
-                    "or portal fee comparison can attract suppliers and authorized wholesale "
-                    "participants without revealing private commitments. Programmatic pages should "
-                    "answer distinct questions with maintained inputs, methodology, and worked "
-                    "examples; do not publish thousands of near-identical pages generated from "
-                    "unverified rates. A Telegram utility bot can return a user-requested "
-                    "eligibility worksheet and offer a shareable result stripped of identifying "
-                    "details. Sharing must be user-initiated, with no automatic messages to contacts. "
-                    "Outbound targets should come from legitimate business directories or direct "
-                    "relationships, not harvested community membership. For commercial email, "
-                    "15 U.S.C. 7704 requires truthful routing information, nondeceptive subjects, "
-                    "required identification and address disclosures, and a working opt-out "
-                    "mechanism with timely honoring of requests. Store suppression records across "
-                    "all campaigns. Keep buying-group procurement, rebate education, and treasury "
-                    "tools visibly distinct so a supplier inquiry does not become an implied "
-                    "invitation to finance unrelated activity. The flywheel is specific: useful "
-                    "tool, voluntarily submitted requirement, qualified opportunity, settled outcome, "
-                    "and an anonymized improvement to the tool. Growth earns another iteration "
-                    "only when settlement data confirms that the acquired opportunity contributed "
-                    "more than its acquisition and servicing cost."
-                ),
-                (
-                    "Instrument the funnel through settled commitments rather than stopping at "
-                    "clicks. Suppose a monthly utility campaign costs $300 and produces 100 "
-                    "voluntary submissions, 20 qualified opportunities, and ten accepted, settled "
-                    "orders. Acquisition cost is $3 per submission, $15 per qualified opportunity, "
-                    "and $30 per settled order. If each order earns the earlier illustrative "
-                    "$35 combined contribution, the cohort produces $350 before acquisition "
-                    "and $50 afterward, before handling labor and overhead. At ten minutes "
-                    "of servicing per order and $30 per hour, labor consumes the remaining "
-                    "$50. The campaign therefore has no residual contribution in this example; "
-                    "higher traffic alone cannot fix it. Improve qualification or repeat-order "
-                    "retention before increasing spend. Attribute repeat orders conservatively "
-                    "and cap projected customer value until repeated settlements exist. Referral "
-                    "benefits should be explicit operating costs and payable only after the "
-                    "defined qualifying outcome. Never condition them on exposing another "
-                    "person's account information. Compare channels using contribution after "
-                    "returns, denied rewards, shipping disputes, and review labor. Publish "
-                    "weekly cohort tables with acquisition month and settlement maturity, "
-                    "because a young cohort with pending reversals will otherwise appear "
-                    "stronger than an older cohort whose losses have already arrived."
-                ),
-                (
-                    "Scale only after operational capacity and economic evidence agree. The "
-                    "canonical Base case remains one full-time operator plus two contractors; "
-                    "the Scaled case explicitly expands to two full-time people plus three "
-                    "contractors. Do not present $360,000 owner profit as a proven three-person "
-                    "outcome. Startup capital of $10,000 to $55,000 and monthly operating "
-                    "overhead of $1,500 to $9,000 are planning ranges, not substitutes for "
-                    "a dated repayment reserve calculation. First-deal timing remains one "
-                    "to three months. Before increasing throughput, inspect counterparty "
-                    "concentration, outstanding uninsured exposure, stale receiving records, "
-                    "and the age distribution of unpaid reimbursements. Diversifying across "
-                    "vetted Net-3 and Net-5 counterparties reduces dependence but does not "
-                    "turn their receivables into cash. Preserve the record chain needed "
-                    "to reconcile payment reporting under 26 U.S.C. 6050W and property "
-                    "basis under 26 U.S.C. 1012. Classify purchase-linked adjustments "
-                    "separately from service compensation and bank interest; do not assume "
-                    "every reward has identical tax treatment. Reconcile applicable payment "
-                    "reports against returns, fees, and ledger categories rather than "
-                    "treating reported payment volume as owner income. The durable advantage "
-                    "is an evidence-rich operating history that improves routing, qualification, "
-                    "and recovery while keeping principal, revenue, contribution, and profit "
-                    "distinct at every stage."
-                ),
-            ],
-            "table": {
-                "caption": "Distribution flywheel scorecard tied to settlement and contribution",
-                "headers": [
-                    "Distribution loop and intended audience",
-                    "Useful asset and permitted acquisition route",
-                    "Measurement linked to actual unit economics",
-                    "Failure boundary and corrective operating action",
-                ],
-                "rows": [
-                    [
-                        "Public calculator attracts operators researching shipment and payment economics",
-                        "Publish synthetic examples with dated inputs and transparent calculations",
-                        "Track qualified submissions rather than treating page impressions as demand",
-                        "Withdraw stale rate examples until verified inputs replace them",
-                    ],
-                    [
-                        "Telegram utility bot captures voluntarily initiated wholesale qualification requests",
-                        "Return requested worksheets without collecting unrelated community member identities",
-                        "Measure processing cost per submitted and accepted buying requirement",
-                        "Disable unsolicited messaging and retain user-controlled sharing mechanics",
-                    ],
-                    [
-                        "Targeted business outreach connects legitimate suppliers with documented requirements",
-                        "Use relevant business contacts and maintain centralized email suppression",
-                        "Compare outreach labor and tooling against settled cohort contribution",
-                        "Stop campaigns generating irrelevant responses or repeated recipient objections",
-                    ],
-                    [
-                        "Referral loop rewards genuinely completed and documented commercial introductions",
-                        "Explain reward conditions and request introductions without private account data",
-                        "Deduct referral expense before calculating acquired order contribution",
-                        "Withhold unearned referral payments when qualifying settlement remains incomplete",
-                    ],
-                    [
-                        "Repeat-order loop reduces acquisition cost through reliable fulfillment history",
-                        "Offer verified counterparties updated capacity and accepted product requirements",
-                        "Count repeat contribution only after receiving and settlement evidence",
-                        "Reduce allocations when counterparty payment aging exceeds operating limits",
-                    ],
-                    [
-                        "Programmatic resource loop improves tools using anonymized resolved exceptions",
-                        "Publish distinct maintained explanations instead of repetitive generated landing pages",
-                        "Measure useful engagement together with mature cohort contribution",
-                        "Remove private identifiers and review every consequential public calculation",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": "Automate the evidence trail, not the assumption that tomorrow's reimbursement can pay today's liability.",
-    "diagram_id": "diag-02",
-    "action_checklist": [
-        "Create separate wholesale, reward, and treasury ledgers with shared deal identifiers and explicit principal-versus-income classifications.",
-        "Implement permitted Telegram signal intake and an inbound utility bot without collecting channel member lists or sending unsolicited messages.",
-        "Build the commitment-to-settlement state machine with unique event keys, evidence snapshots, human authorization, and a validated CSV recovery path.",
-        "Stress every statement due date against delayed acceptance, delayed ACH, disputed parcels, issuer restrictions, and Treasury transfer timing.",
-        "Measure automated-run cost, review minutes, retry volume, and exception-adjusted labor reduction against a documented two-week baseline.",
-        "Scale acquisition only after mature cohorts show positive contribution after shipping losses, reward reversals, review labor, and channel costs.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "26 U.S.C. 6050W — Returns relating to payments made in settlement of payment card and third party network transactions",
-            "url": "https://www.law.cornell.edu/uscode/text/26/6050W",
-            "relevance": "Reconcile applicable payment reporting with transaction ledgers; reported settlement volume is not equivalent to owner profit.",
-        },
-        {
-            "title": "26 U.S.C. 1012 — Basis of property: cost",
-            "url": "https://www.law.cornell.edu/uscode/text/26/1012",
-            "relevance": "Preserve acquisition-cost and adjustment records supporting merchandise basis rather than collapsing reimbursements and rewards into one cash total.",
-        },
-        {
-            "title": "Washington RCW 82.04.470 — Wholesale sale, reseller permit, and taxability presumption",
-            "url": "https://app.leg.wa.gov/RCW/default.aspx?cite=82.04.470",
-            "relevance": "Apply the jurisdiction's actual wholesale substantiation requirements; a warehouse destination alone does not replace required resale evidence.",
-        },
-        {
-            "title": "15 U.S.C. 7704 — Other protections for users of commercial electronic mail",
-            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
-            "relevance": "Configure commercial outreach with truthful headers, nondeceptive subjects, required disclosures, a valid postal address, and timely opt-out handling.",
-        },
-        {
-            "title": "12 CFR 330.3 — General principles of deposit insurance",
-            "url": "https://www.ecfr.gov/current/title-12/chapter-III/subchapter-B/part-330/section-330.3",
-            "relevance": "Evaluate bank sweep balances using applicable depositor, ownership-category, and insured-bank aggregation rules rather than assuming every account receives separate coverage.",
-        },
-    ],
-}
+CHAPTER_10 = {'id': 'Q10',
+ 'chapter_id': 'Q10',
+ 'chapter_number': 10,
+ 'question_number': 10,
+ 'slug': 'rakuten-portal-stacking',
+ 'question_prompt': 'How do practitioners use Rakuten and stacked shopping portals to layer extra points '
+                    'or cash back on spend they already make?',
+ 'kicker': 'Q10 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Rakuten & Portal Stacking',
+ 'subtitle': 'Earning Amex MR and Bilt through Rakuten, portal-plus-card-plus-app stacking, holiday '
+             'elevated rates, 400K-points-from-portals case studies, and tracking card rewards with '
+             'CardPointers',
+ 'layout_template': 'expert_commentary',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Practitioners treat Rakuten as one layer in a stack, not a standalone income '
+                      'stream: sale price, portal cashback, card-linked offer, and card earn run on '
+                      'independent reward pools and compound on one checkout. Payouts land quarterly '
+                      '(Feb/May/Aug/Nov 15) as cash, PayPal, check, Amex Membership Rewards at $1 = 100 '
+                      'points, or Bilt, where post-May status rules halve Blue-tier value. Street numbers '
+                      'include a $200 Nike order netting $141.10, a $1,054 tire job landing at $719, '
+                      '23.28% back on a Hilton booking, and roughly 405k points in under a year from a '
+                      'two-player setup heavy on 80-100% subscription and bank-bonus offers. Disagreements '
+                      'center on whether to run the extension, how many portals to watch, and whether the '
+                      'switch to points is reversible; tracking failures from ad blockers and outside '
+                      'coupons are the recurring loss.',
+ 'key_metrics': [{'label': 'Nike four-layer stack net cost',
+                  'metric': 'Nike four-layer stack net cost',
+                  'value': '$141.10 on a $200 order (nearly 30% saved)',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': '15% code to $170, Rakuten 10% ($17), 5% card offer ($8.50), and 2% card '
+                             'cashback layered on one Nike purchase.',
+                  'source': 'Everyday Money Heroes ([HbZGYalSsyc @ 00:19:01])'},
+                 {'label': 'Points earned purely through shopping portals',
+                  'metric': 'Points earned purely through shopping portals',
+                  'value': '~405k points in under a year (two-player)',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Includes 12k Rakuten bonuses with ~15k still pending; banks plus 80-100% '
+                             'cashback subscriptions made up 235k, or 58%.',
+                  'source': 'Hoss the Points Boss ([Rs3ocS_gBOI @ 00:09:06])'},
+                 {'label': 'Rakuten to Amex MR conversion',
+                  'metric': 'Rakuten to Amex MR conversion',
+                  'value': '$1 = 100 Membership Rewards points',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Requires a card that earns MR; each payout is cash or points, not both.',
+                  'source': 'Points Rookie ([lfbv6SuAgRE @ 00:05:10])'},
+                 {'label': 'Hilton booking stack return',
+                  'metric': 'Hilton booking stack return',
+                  'value': '23.28% back ($1,093.95 down to $839.27)',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': '$200-on-$1,000 Amex Hilton offer plus two $27.34 deductions from portal and '
+                             'card earn on one booking.',
+                  'source': 'Spencer Johnson ([v36IWeannUs @ 00:12:38])'}],
+ 'sections': [{'heading': 'Section 1: The Practitioner Consensus',
+               'paragraphs': ['Every practitioner here frames Rakuten as a layer, not a business. Money '
+                              "with Andrey opens with the three-pillar build, the store sale, the card's "
+                              'rewards and purchase protection, and the portal on top, then adds Amex '
+                              'Offers as the "fourth pillar" [E-FSl936NIg @ 00:00:40] [E-FSl936NIg @ '
+                              '00:11:36]. The same channel punctures the hype directly: anyone claiming '
+                              '$2,000 earned has pushed "tens and tens of thousands" of spend through the '
+                              'portal. Nick Johnson of Everyday Money Heroes explains why the layers '
+                              'compound: Rakuten is an affiliate middleman splitting its commission with '
+                              'the shopper, and the portal, the card issuer, and the merchant each run '
+                              'independent reward pools, so nothing cancels [HbZGYalSsyc @ 00:06:04]. '
+                              'KaungFi sizes the middleman at $2B in 2025 cashback revenue and 12M '
+                              'customers, and estimates the average person can easily make 25,000 to '
+                              '50,000 points a year on Rakuten [VAOuseYv0SI @ 00:01:11] [VAOuseYv0SI @ '
+                              '00:06:10]. Points Rookie formalizes the full build as portal, card-linked '
+                              "offer, card earn, and card credit, citing CSR's StubHub credit of $150 per "
+                              'half-year, while warning that usually only two or three layers line up on a '
+                              'real purchase [lfbv6SuAgRE @ 00:14:31]. The same host sets the hard '
+                              'prerequisite: 10% back on unpaid card debt "is a loan with a coupon" '
+                              '[lfbv6SuAgRE @ 00:06:03].',
+                              'The payout rails are settled fact across channels. Rakuten pays quarterly '
+                              'on Feb, May, Aug, and Nov 15, with earnings moving from pending to '
+                              'confirmed to paid, and SimplyAndyHere notes a balance under $5 simply rolls '
+                              'over [lfbv6SuAgRE @ 00:04:10] [R9f9H7_4bE8 @ 00:03:29]. Switching to Amex '
+                              'Membership Rewards converts at $1 = 100 points and requires an MR-earning '
+                              'card; you take cash or points on a payout, never both. Simplyscotted spells '
+                              'out the conversion as $10 = 1,000 points and flags that the dashboard keeps '
+                              'showing cash percentages after the switch, so 20% back reads as 20 points '
+                              'per dollar, with occasional peaks of 80 [uUnfurRXAhs @ 00:00:14] '
+                              '[uUnfurRXAhs @ 00:02:54]. The Bilt route needs no Bilt card, only a free '
+                              'account, and Rakuten deposits count as activity that keeps Bilt points from '
+                              'expiring. Kira and Anthony of Travel Hacking Tips report that when people '
+                              'can\'t find the Bilt option, "95% of the time" it\'s because they\'re '
+                              "looking from Rakuten's side; link from biltrewards.com/rewards/rakuten and "
+                              'make the emails match [_xs_maW_2ZM @ 00:06:05]. Points Rookie adds that '
+                              'Bilt pays 100 per dollar only at Silver or higher, Blue gets 50 since May, '
+                              'and status on payout day is what counts [lfbv6SuAgRE @ 00:06:52]. Their '
+                              'audience poll slightly favored Bilt, and both currencies stay switchable.',
+                              'Tracking discipline is the consensus survival skill. Money with Andrey '
+                              'names untracked purchases as the most common complaint, blames ad blockers, '
+                              'and runs checkouts in a private window with a screenshot of the '
+                              'confirmation ready for a claim, noting the extension prompt itself costs '
+                              'only about 10 seconds [E-FSl936NIg @ 00:07:05] [E-FSl936NIg @ 00:02:21]. '
+                              'Points Rookie reduces the rule to "no click, no credit": reactivate on '
+                              'every visit, and when tracking still breaks, file the missing-cashback '
+                              'form, checking first for ad blockers, declined cookies, competing tabs, and '
+                              'gift-card payments [lfbv6SuAgRE @ 00:12:36]. Nick Johnson closes earlier '
+                              'store windows and runs a single extension, since Honey conflicts '
+                              '[HbZGYalSsyc @ 00:11:13]. Coupons are the silent killer multiple speakers '
+                              'flag: Points Rookie says unlisted codes can wipe out cashback and to "stick '
+                              'to the codes Rakuten shows you," while the BoldlyGo host warns that '
+                              'non-Rakuten coupons void the multiplier and Aaron Lynch notes that clicking '
+                              'coupons breaks tracking, screenshotting any $2,000 to $3,000 order '
+                              '[dXNdXw4A16A @ 00:22:28] [dXNdXw4A16A @ 00:33:06]. Small orders get less '
+                              'fuss: on a $20 or $30 purchase, Lynch says "I\'m not going to sweat it so '
+                              'much," saving the screenshot discipline for big tickets. The shared '
+                              'baseline is a clean session, portal first, Rakuten-listed codes only, and '
+                              'proof captured at checkout.'],
+               'table': {'caption': 'Where the practitioners agree on Rakuten stacking fundamentals',
+                         'headers': ['Consensus Point',
+                                     'What Practitioners Report',
+                                     'Operator Implication',
+                                     'Expert Source'],
+                         'rows': [['Rakuten is one layer of a stack',
+                                   'Sale, card rewards and protection, and portal stack; Amex Offers is '
+                                   'the fourth pillar',
+                                   'Never judge a purchase on the portal rate alone; price the full stack',
+                                   'Money with Andrey ([E-FSl936NIg @ 00:00:40])'],
+                                  ['Reward pools are independent and compound',
+                                   'Affiliate commission split with the shopper sits apart from card and '
+                                   'merchant rewards',
+                                   'Portal, card, and offer each pay on the same checkout without '
+                                   'cancelling',
+                                   'Everyday Money Heroes ([HbZGYalSsyc @ 00:06:04])'],
+                                  ['Payouts run on a fixed quarterly cycle',
+                                   'Pending, then confirmed, then paid mid-Feb, May, Aug, and Nov each '
+                                   'year',
+                                   'Set the payout currency before each quarterly date to control the '
+                                   'conversion',
+                                   'Points Rookie ([lfbv6SuAgRE @ 00:04:10])'],
+                                  ['Membership Rewards conversion is fixed at 100 per dollar',
+                                   '$10 cashback equals 1,000 MR points; the dashboard still shows cash '
+                                   'percentages',
+                                   'A 20% store rate becomes 20 points per dollar on top of card earn',
+                                   'Simplyscotted ([uUnfurRXAhs @ 00:02:54])'],
+                                  ['Bilt linking works without holding a Bilt card',
+                                   'A free Bilt account works; Rakuten deposits count as activity against '
+                                   'expiration',
+                                   "Link from Bilt's side with matching emails or the option stays hidden",
+                                   'Travel Hacking Tips WITHOUT Juggling Credit Cards ([_xs_maW_2ZM @ '
+                                   '00:06:05])'],
+                                  ['Tracking hygiene decides whether you get paid',
+                                   'No click, no credit; ad blockers, declined cookies, extra tabs, gift '
+                                   'cards break tracking',
+                                   'Reactivate every visit and file the missing-cashback form when '
+                                   'tracking fails',
+                                   'Points Rookie ([lfbv6SuAgRE @ 00:12:36])'],
+                                  ['Only Rakuten-listed coupon codes are safe to use',
+                                   'Outside coupon codes void the multiplier, and clicking coupons breaks '
+                                   'portal tracking',
+                                   'Use the codes Rakuten displays and screenshot every big-ticket order '
+                                   'confirmation',
+                                   'The BoldlyGo Podcast: Revolutionizing Your Journey ([dXNdXw4A16A @ '
+                                   '00:33:06])']]}},
+              {'heading': 'Section 2: Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ["The worked receipts are where the stack gets proven. Nick Johnson's $200 "
+                              'Nike order runs four layers: a 15% code drops it to $170, Rakuten at 10% '
+                              'returns $17 on a rate that sat at 2% a month earlier, a 5% card offer adds '
+                              '$8.50, and 2% card cashback finishes it at $141.10, nearly 30% saved '
+                              '[HbZGYalSsyc @ 00:19:01]. Spencer Johnson tallies a $1,093.95 Hilton '
+                              'booking minus a $200-on-$1,000 Amex Offer and two $27.34 deductions to '
+                              'reach $839.27, or 23.28% back, noting Rakuten still pays MR when another '
+                              'card, like the CSP at 3x, carries the charge [v36IWeannUs @ 00:12:38] '
+                              '[v36IWeannUs @ 00:05:46]. Hoss the Points Boss pushes harder on a $1,054 '
+                              'tire purchase: a ChatGPT-sourced 10% coupon to $963, then Rakuten 12%, a '
+                              '15% Amex Offer, and a $100 rebate land it at $719, which Hoss calls "a '
+                              'four-way stack on a single purchase" [Rs3ocS_gBOI @ 00:04:54]. Hoss\'s '
+                              'CookUnity order shows the portal payout can exceed the out-of-pocket cost: '
+                              "$258 cut 60% to $113, a $45 Chase offer to $68, and Rakuten's 30% still "
+                              'calculated on the pre-discount price for $77, about 8k Bilt [Rs3ocS_gBOI @ '
+                              "00:03:58]. Money with Andrey's softer holiday run nets $115 back, over 13% "
+                              '[E-FSl936NIg @ 00:12:19].',
+                              'Rate timing, not portal choice, is the main lever. KaungFi logs in daily in '
+                              "early November, parks items in the cart until the brand's daily-deal day "
+                              'hits 15-20x, and notes normal 2-5x rates rise to 10-15x over the holidays; '
+                              'the channel also checks Capital One Shopping for 20-30x daily deals, a '
+                              'check that takes about 10 seconds [R-TCKAPsObw @ 00:00:51] [R-TCKAPsObw @ '
+                              '00:08:10]. Aaron Lynch on BoldlyGo refuses portal loyalty because rates '
+                              'swing from 2 to 8-10 miles per dollar daily, and Viator, which ranges '
+                              '10x-20x, is book-now-pay-later, so the play is to cancel and rebook when '
+                              'the rate climbs; Guinness Storehouse hit 20x [dXNdXw4A16A @ 00:13:58] '
+                              '[dXNdXw4A16A @ 00:16:44]. Points Rookie flags Viator at 14x against the '
+                              'usual 2%, but travel only confirms after the trip, and on hotels the move '
+                              'is clicking through to the brand site, IHG at 6%, since OTAs paying 6%+ '
+                              'forfeit hotel points and perks and award stays earn nothing [lfbv6SuAgRE @ '
+                              '00:09:25] [lfbv6SuAgRE @ 00:10:43]. Money with Andrey applies the same '
+                              'logic to tech: Best Buy paid 0%, with accessories at 1%, so buying from the '
+                              "brand's own site wins, with Lenovo at 12% and HP, ASUS, and Samsung at 6% "
+                              '[E-FSl936NIg @ 00:05:20].',
+                              'Beyond retail, the biggest point hauls come from offers most shoppers never '
+                              'open. KaungFi switches payout to cash to surface Rakuten card sign-up '
+                              'offers of $100-$250 for holding a card three months, seen on Chase Freedom '
+                              'and Ink, Citi Strata Premier, and BofA, keeps bank-promo accounts like SoFi '
+                              'and Alliant open about six months instead of using a 3-4% HYSA, and ranks '
+                              'sign-up bonuses first, card referrals second at 10-15k each, Rakuten third '
+                              '[R-TCKAPsObw @ 00:03:15] [VAOuseYv0SI @ 00:07:03]. Hoss the Points Boss '
+                              'built 137k from 80-100% cashback subscriptions, including Surfshark 11k, '
+                              'ExpressVPN 13k, LifeLock 33k, and Incogni around 28k twice, plus 97.5k from '
+                              'SoFi and Ally bank bonuses after reading the direct-deposit, fee, and hold '
+                              'terms; together that was 235k, or 58% of roughly 405k [Rs3ocS_gBOI @ '
+                              '00:07:36]. On tooling, Miles with Mary uses the CardPointers extension to '
+                              "add one Amex offer to every eligible card, turning $50 off $200 at Lowe's "
+                              'across 10 cards into an extra $450, at about $72 a year or $240 lifetime '
+                              '[Mexc_KkiIkU @ 00:02:23] [Mexc_KkiIkU @ 00:04:50]. The pitch on security is '
+                              'blunt: no bank credentials, no Plaid connection, and no card information '
+                              'stored on its servers, with lifetime called a "no-brainer."'],
+               'table': {'caption': 'Street-level stack mechanics with the exact numbers practitioners ran',
+                         'headers': ['Mechanic',
+                                     'Exact Numbers Reported',
+                                     'Execution Note',
+                                     'Expert Source'],
+                         'rows': [['Rakuten credit card layered on the portal rate',
+                                   '4% on the first $10,000 per year, then 1%; $100 after $1,000 in 90 '
+                                   'days',
+                                   'Stack on top of the store rate, e.g. Mattress Firm 3% plus 4% equals '
+                                   '7%',
+                                   'SimplyAndyHere ([R9f9H7_4bE8 @ 00:01:49])'],
+                                  ['Viator tour booking at elevated portal rates',
+                                   'Ranges 10x to 20x; Guinness Storehouse hit 20x on one day',
+                                   'Book now, pay later, then cancel and rebook when the rate rises',
+                                   'The BoldlyGo Podcast: Revolutionizing Your Journey ([dXNdXw4A16A @ '
+                                   '00:16:44])'],
+                                  ['Expedia triple stack through the portal',
+                                   'Platinum 1x plus Rakuten 10x plus 10% Amex Offer capped at $100 equals '
+                                   '21x',
+                                   'Any card works through the portal; Amex Offers need manual activation '
+                                   'first',
+                                   'Daily Drop ([kDpEoiV0EZM @ 00:07:45])'],
+                                  ['Rakuten Dining with a linked Amex Gold card',
+                                   'Amex Gold 4x on dining plus an extra Rakuten 5x equals 9x per dollar',
+                                   'Link a card once and dining at participating restaurants earns '
+                                   'automatically',
+                                   'Simplyscotted ([uUnfurRXAhs @ 00:04:16])'],
+                                  ['SaveWise Pro offer automation and rate tracking',
+                                   'Auto-activates Amex, Chase, Rakuten, SimplyMiles offers; unlimited '
+                                   'alerts, 365-day history',
+                                   'Use the stackable-offers tab to spot Amex, Chase, Citi, and AA '
+                                   'overlaps',
+                                   'Itinerary Boss ([xTEAB6N6l_A @ 00:09:24])'],
+                                  ['Everyday gas and coffee app stacking',
+                                   'bp.me 5 cents per gallon plus Dosh 6 cents plus PNC 4% saved about '
+                                   '$2.70',
+                                   'Same layering on a $9 Dunkin run returned 90 cents via Dosh, Pei, Amex '
+                                   'Gold',
+                                   'Jon Joseph ([V_o90eWaTpI @ 00:00:58])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Timing, currency and gift-card moves the pros actually run',
+                           'body': 'These are the small timing and routing edges that separate a 2% portal '
+                                   'click from a double-digit stack.',
+                           'items': ['Time Bilt status around the August payout: Rakuten transfers early, '
+                                     'so aim for about Aug 7, and Palladium status posts 24-48h after '
+                                     'hitting spend [Travel Hacking Tips WITHOUT Juggling Credit Cards — '
+                                     '_xs_maW_2ZM @ 00:10:00]',
+                                     'Switch payout currency before each of the four quarterly dates; '
+                                     'KaungFi picked Hyatt ahead of a devaluation and says switching is '
+                                     'free and unlimited [KaungFi — VAOuseYv0SI @ 00:10:57]',
+                                     'Buy discounted gift cards through the portal for extra margin: '
+                                     'CardCash at 1% plus a $25 Red Lobster e-card for $23.13 [Everyday '
+                                     'Money Heroes — HbZGYalSsyc @ 00:13:24]',
+                                     'Watch Black Friday software deals, which can hit 100x, turning a '
+                                     '$500 purchase into 50k points [The BoldlyGo Podcast: Revolutionizing '
+                                     'Your Journey — dXNdXw4A16A @ 00:38:39]']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Set payout currency and link accounts',
+                              'action': 'Fill in PayPal or check info, then switch payout to Amex MR or '
+                                        "link Bilt from Bilt's side.",
+                              'detail': 'Go to Account Settings, then payment, then Amex; PayPal or check '
+                                        'must be set up first, and purchases made before a mid-quarter '
+                                        'switch still pay cash [Daily Drop — kDpEoiV0EZM @ 00:03:10]'},
+                             {'step': 2,
+                              'title': 'Price the stack before checkout',
+                              'action': 'Compare portal rates and check card-linked offers before '
+                                        'committing to a store.',
+                              'detail': 'Use Cashback Monitor and SaveWise to compare portals, and focus '
+                                        'funds in one or two, maybe three at most [KaungFi — R-TCKAPsObw @ '
+                                        '00:07:24]'},
+                             {'step': 3,
+                              'title': 'Click through clean on every visit',
+                              'action': 'Start from the Rakuten site, app, or extension and reactivate '
+                                        'each session.',
+                              'detail': 'No click, no credit: reactivate on every visit and use only the '
+                                        'codes Rakuten shows you [Points Rookie — lfbv6SuAgRE @ 00:11:32]'},
+                             {'step': 4,
+                              'title': 'Document and claim missed cashback',
+                              'action': 'Screenshot the confirmation and file a claim if the purchase does '
+                                        'not track.',
+                              'detail': 'Disable ad blockers or use a private window, screenshot the order '
+                                        'confirmation, then claim if it does not post [Money with Andrey — '
+                                        'E-FSl936NIg @ 00:07:05]'}]},
+              {'section_number': 3,
+               'title': 'Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The sharpest split on the payout side is what a Rakuten dollar is actually '
+                              'worth once it lands in Bilt. SimplyAndyHere lists Bilt as a 1:1 option '
+                              'sitting right next to Amex Membership Rewards, PayPal, Samsung Cash and '
+                              'check [R9f9H7_4bE8 @ 00:02:33]. The Travel Hacking Tips hosts, Kira and '
+                              'Anthony, contradict that outright: after August 15, accounts without status '
+                              'convert at 2:1, a 50% cut they call a significant devaluation, and without '
+                              'Silver status they say not to set Rakuten to Bilt at all [_xs_maW_2ZM @ '
+                              "00:08:25]. Points Rookie's Lane frames the same line by tier: Silver and "
+                              'above earns 100 points per dollar, Blue earns 50 per dollar, and the status '
+                              'held on payout day is what counts, so Blue members should choose Amex and '
+                              'anyone in neither program should take the cash [lfbv6SuAgRE @ 00:06:52]. '
+                              'Hoss the Points Boss plays the status route instead of dodging it, noting '
+                              'Bilt needs Silver or higher for the $1 = 100 points rate and that Palladium '
+                              'hands out Gold for year one [Rs3ocS_gBOI @ 00:01:27]. Read together, the '
+                              '1:1 headline only survives if Silver-plus status is already in place before '
+                              'the quarterly transfer posts, which turns Bilt from a free default into a '
+                              'status-gated bet.',
+                              'Practitioners also split on whether the payout switch is a one-way door. '
+                              'Daily Drop says you can switch back to cash back at any time, but that '
+                              'particular switch is irreversible, meaning no more option to earn points, '
+                              'and notes that purchases made before a mid-quarter switch still pay out as '
+                              'cash [kDpEoiV0EZM @ 00:04:50]. KaungFi says the opposite, that you can '
+                              'change it freely, and treats the four quarterly payout dates as the moment '
+                              'to flip currencies, which is how the channel routed a payout into Hyatt '
+                              'ahead of a devaluation [VAOuseYv0SI @ 00:10:57]. The deeper fork is cash '
+                              'versus points. Hoss the Points Boss always takes the points, turning 150k '
+                              'Bilt into 300k Virgin on a rent-day 100% transfer bonus and giving up '
+                              '$1,500 of cash for roughly $19k of Upper Class value at more than 6 cents a '
+                              "point [Rs3ocS_gBOI @ 00:11:17]. Everyday Money Heroes' Nick Johnson runs "
+                              'the opposite playbook, cashing out quarterly through PayPal even though '
+                              'Amex MR, check and gift cards are on the menu [HbZGYalSsyc @ 00:11:28]. '
+                              'Whichever side an operator follows, the currency decision has to be settled '
+                              "before the quarter closes, because Daily Drop's warning means a wrong flip "
+                              'may not be undoable.',
+                              'How many portals to run is the third live argument. KaungFi tells operators '
+                              'there is no point trying to optimize an extra half percent across 10 '
+                              'different portals, and names Capital One and Rakuten as the only two in '
+                              'rotation [VAOuseYv0SI @ 00:08:36]. BoldlyGo guest Aaron Lynch argues the '
+                              "reverse: don't stay loyal to one portal, because rates swing from 2 to 8 or "
+                              '10 miles per dollar day to day and Viator alone ranges from 10x to 20x, '
+                              'though Lynch still routes some spend through the AA portal for Platinum Pro '
+                              'status even when its rate is lower [dXNdXw4A16A @ 00:13:58]. The browser '
+                              'extension divides the room the same way. Money with Andrey teaches starting '
+                              'from the site, the app or the extension, and times the extension prompt at '
+                              'about 10 seconds before it activates on a store like American Eagle at 2% '
+                              "[E-FSl936NIg @ 00:01:56]. Everyday Money Heroes' Nick Johnson avoids the "
+                              'extension entirely [HbZGYalSsyc @ 00:10:03]. The practical split is that '
+                              'concentrators trade a few points of rate for simplicity and fewer accounts '
+                              'to watch, while rate-chasers accept more daily checking in exchange for '
+                              'catching the spikes that hit 10x to 20x.'],
+               'table': {'caption': 'Contested Rakuten playbooks: where named practitioners land on '
+                                    'opposite sides',
+                         'headers': ['Contested Question',
+                                     'Camp A Position',
+                                     'Camp B Position',
+                                     'Expert Source'],
+                         'rows': [['Is one Rakuten dollar worth 100 Bilt points?',
+                                   'SimplyAndyHere lists Bilt as a straight 1:1 redemption beside Amex MR, '
+                                   'PayPal and check.',
+                                   'Travel Hacking Tips says no-status accounts convert 2:1 after Aug 15; '
+                                   'Points Rookie says Blue earns 50 per dollar.',
+                                   'SimplyAndyHere ([R9f9H7_4bE8 @ 00:02:33]); Travel Hacking Tips WITHOUT '
+                                   'Juggling Credit Cards ([_xs_maW_2ZM @ 00:08:25]); Points Rookie '
+                                   '([lfbv6SuAgRE @ 00:06:52])'],
+                                  ['Can you flip the payout currency back and forth?',
+                                   'Daily Drop calls the switch back to cash irreversible, meaning no more '
+                                   'option to earn points.',
+                                   'KaungFi says you can change it freely and switches currency before '
+                                   'each quarterly payout date.',
+                                   'Daily Drop ([kDpEoiV0EZM @ 00:04:50]); KaungFi ([VAOuseYv0SI @ '
+                                   '00:10:07])'],
+                                  ['Should spend be concentrated in one or two portals?',
+                                   'KaungFi sticks to Capital One and Rakuten and calls chasing an extra '
+                                   'half percent across 10 portals pointless.',
+                                   'BoldlyGo guest Aaron Lynch refuses portal loyalty because rates swing '
+                                   'from 2 to 8-10 miles per dollar daily.',
+                                   'KaungFi ([VAOuseYv0SI @ 00:08:36]); The BoldlyGo Podcast: '
+                                   'Revolutionizing Your Journey ([dXNdXw4A16A @ 00:13:58])'],
+                                  ['Run the Rakuten browser extension or skip it entirely?',
+                                   'Money with Andrey, Simplyscotted and WorldlyTips all use the extension '
+                                   'so cash back prompts never get missed.',
+                                   'Everyday Money Heroes avoids the extension and keeps any browser setup '
+                                   'to one extension because Honey conflicts.',
+                                   'Money with Andrey ([E-FSl936NIg @ 00:01:56]); Simplyscotted '
+                                   '([uUnfurRXAhs @ 00:02:10]); WorldlyTips ([6_ILrKQ_BEI @ 00:05:44]); '
+                                   'Everyday Money Heroes ([HbZGYalSsyc @ 00:10:03])'],
+                                  ['Is Capital One Shopping a core second portal worth checking?',
+                                   'KaungFi checks daily deals running 20-30x and watches Capital One '
+                                   'weekly for 15-30% weeks.',
+                                   'BoldlyGo guest says Capital One Shopping pays only in gift cards, so '
+                                   'Capital One Offers are preferred.',
+                                   'KaungFi ([R-TCKAPsObw @ 00:08:10]); KaungFi ([VAOuseYv0SI @ '
+                                   '00:08:21]); The BoldlyGo Podcast: Revolutionizing Your Journey '
+                                   '([dXNdXw4A16A @ 00:25:47])'],
+                                  ['Do outside coupon codes stack safely with Rakuten cash back?',
+                                   'WorldlyTips stacks RetailMeNot and Honey codes; Hoss applied a '
+                                   "ChatGPT-sourced 10% tire coupon before Rakuten's 12%.",
+                                   'Points Rookie says unlisted codes can wipe out cash back; BoldlyGo '
+                                   'says non-Rakuten coupons void the multiplier.',
+                                   'WorldlyTips ([6_ILrKQ_BEI @ 00:02:40]); Hoss the Points Boss '
+                                   '([Rs3ocS_gBOI @ 00:04:54]); Points Rookie ([lfbv6SuAgRE @ 00:12:04]); '
+                                   'The BoldlyGo Podcast: Revolutionizing Your Journey ([dXNdXw4A16A @ '
+                                   '00:33:06])'],
+                                  ['Book hotels through an online travel agency or the hotel site?',
+                                   'Daily Drop stacks Expedia at Platinum 1x, Rakuten 10x and a 10% Amex '
+                                   'Offer for 21x.',
+                                   'Points Rookie says OTAs pay 6%+ but forfeit hotel points and perks; '
+                                   'click through to IHG at 6%.',
+                                   'Daily Drop ([kDpEoiV0EZM @ 00:07:45]); Points Rookie ([lfbv6SuAgRE @ '
+                                   '00:10:43])']]}},
+              {'section_number': 4,
+               'title': 'Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['Missed tracking is the loss nearly every practitioner reports eating. Money '
+                              "with Andrey says the most common complaint is that the purchase didn't "
+                              'track, names ad blockers as a cause, and fixes it by shopping in a private '
+                              'window, screenshotting the confirmation and then filing a claim '
+                              "[E-FSl936NIg @ 00:07:05]. Points Rookie's Lane runs the same drill: when "
+                              'tracking breaks, file the missing-cashback form, and look first at ad '
+                              'blockers, declined cookies, other open tabs and gift cards as the usual '
+                              'culprits [lfbv6SuAgRE @ 00:12:36]. Everyday Money Heroes adds the hygiene '
+                              'layer: close earlier store windows before clicking through and run only one '
+                              'extension, because Honey conflicts [HbZGYalSsyc @ 00:11:13]. BoldlyGo guest '
+                              'Aaron Lynch flags a self-inflicted version of the same failure: clicking '
+                              'coupons breaks tracking, so the safer path is to use the extension or open '
+                              'the app first, and to screenshot every $2,000 to $3,000 purchase as proof '
+                              '[dXNdXw4A16A @ 00:22:28]. Lynch also scales effort to ticket size, saying a '
+                              "$20 or $30 purchase isn't worth sweating. That gives operators a working "
+                              'threshold: document any order large enough to hurt if the cash back '
+                              'vanishes, and let the small baskets ride. Across all four, the named causes '
+                              "sit inside the shopper's own browser state and checkout clicks.",
+                              'The second trap is trusting the headline rate. SimplyAndyHere found Best '
+                              "Buy's 8% applied only to some products and dropped to 1% on others, a gap "
+                              "that matters when the Rakuten card's 4% is being stacked on top to reach "
+                              '12% [R9f9H7_4bE8 @ 00:01:22]. On the Canadian side, Money with Andrey saw '
+                              'Best Buy paying 0%, with accessories at 1%, and redirected tech spend to '
+                              'brand sites where Lenovo paid 12% and HP, ASUS and Samsung paid 6% '
+                              '[E-FSl936NIg @ 00:05:20]. The BoldlyGo host piled on more exclusions: '
+                              'Newegg gift cards earn nothing, Best Buy pays 10% on appliances but only 1% '
+                              'on cameras, and non-Rakuten coupons void the multiplier entirely '
+                              "[dXNdXw4A16A @ 00:33:06]. Points Rookie's Lane is blunt on that coupon "
+                              'point, warning that unlisted codes can wipe out cash back and telling '
+                              'listeners to stick to the codes Rakuten shows them [lfbv6SuAgRE @ '
+                              '00:12:04]. That puts these four in direct tension with code-hunting '
+                              'extensions that auto-test every coupon at checkout. The economics check '
+                              'before any large order is to read the category terms on the store page, '
+                              'confirm the exact product line qualifies, and treat any off-portal code as '
+                              'a bet that the discount beats the cash back it may cancel.',
+                              'The last layer of failure is economic rather than technical. Itinerary Boss '
+                              'tells anyone carrying credit card debt to focus on figuring that out first, '
+                              'before chasing a single Rakuten multiplier [xTEAB6N6l_A @ 00:17:06]. Points '
+                              "Rookie's Lane shows how fast a 100% cash back subscription can reverse: the "
+                              'ExpressVPN deal, normally 25%, turned about $210 of spend into roughly '
+                              '21,000 MR plus a 5,000 welcome bonus, but auto-renew has to be switched off '
+                              'and refunds claw the points back [lfbv6SuAgRE @ 00:17:28]. Hoss the Points '
+                              'Boss built 235k of a roughly 405k haul, 58% of the total, from bank bonuses '
+                              'and 80% to 100% cash back subscriptions, and on the SoFi and Ally side says '
+                              'to read the direct-deposit, fee and hold terms before moving money '
+                              '[Rs3ocS_gBOI @ 00:06:43]. Cash arrives slowly by design: SimplyAndyHere '
+                              'notes payouts land only on February, May, August and November 15, and a '
+                              'balance under $5 simply rolls over to the next quarter [R9f9H7_4bE8 @ '
+                              '00:03:29]. That calendar means rebates trail the purchase by up to a full '
+                              'quarter. The operator check is to price every stack against the real cash '
+                              'outlay, the clawback risk on any refund, and the quarter in which the '
+                              'points or dollars actually arrive.'],
+               'table': {'caption': 'Firsthand Rakuten stacking failures and the fixes practitioners used',
+                         'headers': ['Failure Mode',
+                                     'What Practitioners Reported',
+                                     'Fix Or Check They Used',
+                                     'Expert Source'],
+                         'rows': [['Purchase never tracks and the commission silently disappears',
+                                   'Money with Andrey calls untracked purchases the most common complaint '
+                                   'and names ad blockers as a cause.',
+                                   'Shop in a private window, screenshot the confirmation, then file the '
+                                   'missing cash back claim.',
+                                   'Money with Andrey ([E-FSl936NIg @ 00:07:05]); Points Rookie '
+                                   '([lfbv6SuAgRE @ 00:12:36])'],
+                                  ['Coupon clicks sever the affiliate link at checkout',
+                                   'BoldlyGo guest Aaron Lynch reports that clicking coupons breaks '
+                                   'Rakuten tracking on purchases.',
+                                   'Use the extension or open the app first, and screenshot every $2k-3k '
+                                   'purchase.',
+                                   'The BoldlyGo Podcast: Revolutionizing Your Journey ([dXNdXw4A16A @ '
+                                   '00:22:28])'],
+                                  ['Credit-freeze trick fails on the Rakuten card application',
+                                   'SimplyAndyHere tried the freeze trick credited to Travis White; '
+                                   'TransUnion had to be unfrozen.',
+                                   'SimplyAndyHere treated the trick as patched and accepted the hard pull '
+                                   'to get approved.',
+                                   'SimplyAndyHere ([R9f9H7_4bE8 @ 00:05:30])'],
+                                  ['Bilt payout lands at half value without status',
+                                   'Travel Hacking Tips reports no-status accounts convert 2:1 after Aug '
+                                   '15, a 50% cut.',
+                                   'Lock status by about Aug 7 because Rakuten transfers early; Palladium '
+                                   'status posts 24-48h after hitting spend.',
+                                   'Travel Hacking Tips WITHOUT Juggling Credit Cards ([_xs_maW_2ZM @ '
+                                   '00:08:25]); Travel Hacking Tips WITHOUT Juggling Credit Cards '
+                                   '([_xs_maW_2ZM @ 00:10:00])'],
+                                  ['Gift cards and gift-card rewards underpay the headline rate',
+                                   'Money with Andrey found the gift-card shop paying about 2%; BoldlyGo '
+                                   'saw Newegg gift cards earning nothing.',
+                                   'Prefer Capital One Offers over Capital One Shopping, which pays out '
+                                   'only in gift cards.',
+                                   'Money with Andrey ([E-FSl936NIg @ 00:06:28]); The BoldlyGo Podcast: '
+                                   'Revolutionizing Your Journey ([dXNdXw4A16A @ 00:33:06]); The BoldlyGo '
+                                   'Podcast: Revolutionizing Your Journey ([dXNdXw4A16A @ 00:25:47])'],
+                                  ['Paying with points kills card purchase protection coverage',
+                                   'Money with Andrey says 90-day purchase protection only covers gifts '
+                                   'charged at full price to the card.',
+                                   'Put the full price on the card, because paying with points voids the '
+                                   'protection.',
+                                   'Money with Andrey ([E-FSl936NIg @ 00:08:20])'],
+                                  ['Amex offers vanish from your other cards once added',
+                                   'Miles with Mary reports adding an Amex offer to one card normally '
+                                   'removes it from the others.',
+                                   'The CardPointers extension adds the offer to every eligible card; '
+                                   "Lowe's $50 off $200 across 10 cards meant an extra $450.",
+                                   'Miles with Mary - Points & Miles Travel ([Mexc_KkiIkU @ 00:01:34]); '
+                                   'Miles with Mary - Points & Miles Travel ([Mexc_KkiIkU @ 00:02:23])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Four Checks Before Any Rakuten Stack Goes Live',
+                           'body': 'Every item below comes from a loss, reversal or warning a named '
+                                   'practitioner reported firsthand. Clear all four before routing a large '
+                                   'order through the portal.',
+                           'items': ["No carried balance: Lane calls 10% back on unpaid card debt 'a loan "
+                                     "with a coupon,' so the stack only pays if the statement is cleared "
+                                     'in full [Points Rookie — lfbv6SuAgRE @ 00:06:03].',
+                                     'Bilt status confirmed: without Silver status, do not set Rakuten to '
+                                     'Bilt, because no-status accounts convert at 2:1, a 50% cut [Travel '
+                                     'Hacking Tips WITHOUT Juggling Credit Cards — _xs_maW_2ZM @ '
+                                     '00:09:23].',
+                                     'Rakuten-listed codes only: non-Rakuten coupons void the multiplier '
+                                     'and Newegg gift cards earn nothing, so verify category terms before '
+                                     'checkout [The BoldlyGo Podcast: Revolutionizing Your Journey — '
+                                     'dXNdXw4A16A @ 00:33:06].',
+                                     'Evidence captured: kill ad blockers or use a private window, '
+                                     "screenshot the confirmation, and file a claim if the purchase didn't "
+                                     'track [Money with Andrey — E-FSl936NIg @ 00:07:05].']}}],
+ 'pull_quote': "'There's no point trying to optimize like an extra half percent across 10 different "
+               "portals.' — KaungFi (VAOuseYv0SI @ 00:08:36).",
+ 'diagram_id': 'diag-02',
+ 'action_checklist': ['Sign up through a referral link instead of directly; the referral pays $30 cash '
+                      'back or 3,000 MX points after the qualifying spend [Simplyscotted — uUnfurRXAhs @ '
+                      '00:01:40].',
+                      'Set the payout currency before the quarterly payout date and only route to Bilt if '
+                      'Silver-plus status will be held on payout day; Blue members should pick Amex '
+                      '[Points Rookie — lfbv6SuAgRE @ 00:06:52].',
+                      'Start every purchase from Rakuten and reactivate on every visit, because no click '
+                      'means no credit [Points Rookie — lfbv6SuAgRE @ 00:11:32].',
+                      'Layer portal rate, card-linked offer, card points and retailer rebate on one order, '
+                      'the stack that took a $1,054 tire purchase down to $719 [Hoss the Points Boss — '
+                      'Rs3ocS_gBOI @ 00:04:54].',
+                      'Compare portal rates in Cashback Monitor and SaveWise before buying instead of '
+                      'defaulting to whatever Rakuten shows [KaungFi — R-TCKAPsObw @ 00:07:24].',
+                      'Book Viator tours as book-now-pay-later, then cancel and rebook when the Rakuten '
+                      'rate climbs; Guinness Storehouse ran at 20x [The BoldlyGo Podcast: Revolutionizing '
+                      'Your Journey — dXNdXw4A16A @ 00:16:44].'],
+ 'statutory_citations': [{'title': 'Points Rookie — Ep 26- Before Black Friday: How to Earn Money or '
+                                   'Travel Points With Rakuten [00:12:36]',
+                          'url': 'https://www.youtube.com/watch?v=lfbv6SuAgRE&t=756s',
+                          'relevance': 'Primary practitioner testimony on missing-cashback claims, '
+                                       'tracking breakers, coupon voiding and Bilt tier conversion.'},
+                         {'title': 'Travel Hacking Tips WITHOUT Juggling Credit Cards — Rakuten + Bilt: '
+                                   'The Ultimate Points Stacking Strategy [00:08:25]',
+                          'url': 'https://www.youtube.com/watch?v=_xs_maW_2ZM&t=505s',
+                          'relevance': 'Primary practitioner testimony on the 2:1 Bilt devaluation for '
+                                       'accounts without status and payout timing.'},
+                         {'title': 'KaungFi — Rakuten: What Influencers Won’t Share (Everything You Need '
+                                   'to Know 2026) [00:10:07]',
+                          'url': 'https://www.youtube.com/watch?v=VAOuseYv0SI&t=607s',
+                          'relevance': 'Primary practitioner testimony on free currency switching, portal '
+                                       'concentration and Capital One pairing.'},
+                         {'title': 'The BoldlyGo Podcast: Revolutionizing Your Journey — She Earned '
+                                   '100,000 Amex Points in 3 MONTHS on Rakuten Without Spending More '
+                                   '[00:33:06]',
+                          'url': 'https://www.youtube.com/watch?v=dXNdXw4A16A&t=1986s',
+                          'relevance': 'Primary practitioner testimony on category exclusions, non-Rakuten '
+                                       'coupon voiding and anti-loyalty rate chasing.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'E-FSl936NIg',
+                       'title': "Rakuten Won't Make You Rich... Use It Anyway (Rakuten Review)",
+                       'channel': 'Money with Andrey',
+                       'author': 'Money with Andrey',
+                       'text': "The most common complaint is that the purchase didn't track.",
+                       'tip': "The most common complaint is that the purchase didn't track.",
+                       'timestamp': 415,
+                       'timestamp_seconds': 415,
+                       'timestamp_label': '[00:06:55]',
+                       'url': 'https://www.youtube.com/watch?v=E-FSl936NIg&t=415s',
+                       'markdown': '[00:06:55](https://www.youtube.com/watch?v=E-FSl936NIg&t=415s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'R9f9H7_4bE8',
+                       'title': 'Applying for the Rakuten Credit Card… Is It Worth It?',
+                       'channel': 'SimplyAndyHere',
+                       'author': 'SimplyAndyHere',
+                       'text': 'Rakuten to me is basically coupon clipping but for online websites.',
+                       'tip': 'Rakuten to me is basically coupon clipping but for online websites.',
+                       'timestamp': 13,
+                       'timestamp_seconds': 13,
+                       'timestamp_label': '[00:00:13]',
+                       'url': 'https://www.youtube.com/watch?v=R9f9H7_4bE8&t=13s',
+                       'markdown': '[00:00:13](https://www.youtube.com/watch?v=R9f9H7_4bE8&t=13s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '_xs_maW_2ZM',
+                       'title': 'Rakuten + Bilt: The Ultimate Points Stacking Strategy',
+                       'channel': 'Travel Hacking Tips WITHOUT Juggling Credit Cards',
+                       'author': 'Travel Hacking Tips WITHOUT Juggling Credit Cards',
+                       'text': "It's a significant devaluation.",
+                       'tip': "It's a significant devaluation.",
+                       'timestamp': 563,
+                       'timestamp_seconds': 563,
+                       'timestamp_label': '[00:09:23]',
+                       'url': 'https://www.youtube.com/watch?v=_xs_maW_2ZM&t=563s',
+                       'markdown': '[00:09:23](https://www.youtube.com/watch?v=_xs_maW_2ZM&t=563s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'R-TCKAPsObw',
+                       'title': 'The RIGHT way to use Rakuten (from a points pro!)',
+                       'channel': 'KaungFi',
+                       'author': 'KaungFi',
+                       'text': 'Try to focus on one or two, maybe three at most, and keep all your funds '
+                               'in those portals.',
+                       'tip': 'Try to focus on one or two, maybe three at most, and keep all your funds in '
+                              'those portals.',
+                       'timestamp': 474,
+                       'timestamp_seconds': 474,
+                       'timestamp_label': '[00:07:54]',
+                       'url': 'https://www.youtube.com/watch?v=R-TCKAPsObw&t=474s',
+                       'markdown': '[00:07:54](https://www.youtube.com/watch?v=R-TCKAPsObw&t=474s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'HbZGYalSsyc',
+                       'title': 'Why Most People Overpay For Everyday Purchases| Hidden Rakuten Stacking '
+                                'Secrets',
+                       'channel': 'Everyday Money Heroes',
+                       'author': 'Everyday Money Heroes',
+                       'text': 'If I can save almost 30% on a single transaction, that is a win to me.',
+                       'tip': 'If I can save almost 30% on a single transaction, that is a win to me.',
+                       'timestamp': 1165,
+                       'timestamp_seconds': 1165,
+                       'timestamp_label': '[00:19:25]',
+                       'url': 'https://www.youtube.com/watch?v=HbZGYalSsyc&t=1165s',
+                       'markdown': '[00:19:25](https://www.youtube.com/watch?v=HbZGYalSsyc&t=1165s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'lfbv6SuAgRE',
+                       'title': 'Ep 26- Before Black Friday: How to Earn Money or Travel Points With '
+                                'Rakuten',
+                       'channel': 'Points Rookie',
+                       'author': 'Points Rookie',
+                       'text': 'Stick to the codes Rakuten shows you.',
+                       'tip': 'Stick to the codes Rakuten shows you.',
+                       'timestamp': 724,
+                       'timestamp_seconds': 724,
+                       'timestamp_label': '[00:12:04]',
+                       'url': 'https://www.youtube.com/watch?v=lfbv6SuAgRE&t=724s',
+                       'markdown': '[00:12:04](https://www.youtube.com/watch?v=lfbv6SuAgRE&t=724s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'v36IWeannUs',
+                       'title': 'How To Earn MAX Value From Credit Cards (Reward Stacking Guide)',
+                       'channel': 'Spencer Johnson',
+                       'author': 'Spencer Johnson',
+                       'text': 'Rakuten pays Membership Rewards points even when you pay with another '
+                               'card, so a Sapphire Preferred earns 3x and Rakuten adds 5x MR.',
+                       'tip': 'Rakuten pays Membership Rewards points even when you pay with another card, '
+                              'so a Sapphire Preferred earns 3x and Rakuten adds 5x MR.',
+                       'timestamp': 346,
+                       'timestamp_seconds': 346,
+                       'timestamp_label': '[00:05:46]',
+                       'url': 'https://www.youtube.com/watch?v=v36IWeannUs&t=346s',
+                       'markdown': '[00:05:46](https://www.youtube.com/watch?v=v36IWeannUs&t=346s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'dXNdXw4A16A',
+                       'title': 'She Earned 100,000 Amex Points in 3 MONTHS on Rakuten Without Spending '
+                                'More',
+                       'channel': 'The BoldlyGo Podcast: Revolutionizing Your Journey',
+                       'author': 'The BoldlyGo Podcast: Revolutionizing Your Journey',
+                       'text': "Just know that you're likely, most likely, 99% of the time not going to "
+                               'receive both.',
+                       'tip': "Just know that you're likely, most likely, 99% of the time not going to "
+                              'receive both.',
+                       'timestamp': 2081,
+                       'timestamp_seconds': 2081,
+                       'timestamp_label': '[00:34:41]',
+                       'url': 'https://www.youtube.com/watch?v=dXNdXw4A16A&t=2081s',
+                       'markdown': '[00:34:41](https://www.youtube.com/watch?v=dXNdXw4A16A&t=2081s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Rs3ocS_gBOI',
+                       'title': 'How I Earned 400K Points Through Shopping Portals',
+                       'channel': 'Hoss the Points Boss',
+                       'author': 'Hoss the Points Boss',
+                       'text': "That's a four-way stack on a single purchase.",
+                       'tip': "That's a four-way stack on a single purchase.",
+                       'timestamp': 317,
+                       'timestamp_seconds': 317,
+                       'timestamp_label': '[00:05:17]',
+                       'url': 'https://www.youtube.com/watch?v=Rs3ocS_gBOI&t=317s',
+                       'markdown': '[00:05:17](https://www.youtube.com/watch?v=Rs3ocS_gBOI&t=317s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'V_o90eWaTpI',
+                       'title': 'CASH BACK STACKING | How I combine deals/apps/cards to get money back! '
+                                '(Rakuten, Dosh, PEI)',
+                       'channel': 'Jon Joseph',
+                       'author': 'Jon Joseph',
+                       'text': 'When you add this all together I only spent $25 for this massive shopping '
+                               'spree and saved over $200 just by taking advantage of the right apps.',
+                       'tip': 'When you add this all together I only spent $25 for this massive shopping '
+                              'spree and saved over $200 just by taking advantage of the right apps.',
+                       'timestamp': 327,
+                       'timestamp_seconds': 327,
+                       'timestamp_label': '[00:05:27]',
+                       'url': 'https://www.youtube.com/watch?v=V_o90eWaTpI&t=327s',
+                       'markdown': '[00:05:27](https://www.youtube.com/watch?v=V_o90eWaTpI&t=327s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'VAOuseYv0SI',
+                       'title': 'Rakuten: What Influencers Won’t Share (Everything You Need to Know 2026)',
+                       'channel': 'KaungFi',
+                       'author': 'KaungFi',
+                       'text': "There's no point trying to optimize like an extra half percent across 10 "
+                               'different portals.',
+                       'tip': "There's no point trying to optimize like an extra half percent across 10 "
+                              'different portals.',
+                       'timestamp': 516,
+                       'timestamp_seconds': 516,
+                       'timestamp_label': '[00:08:36]',
+                       'url': 'https://www.youtube.com/watch?v=VAOuseYv0SI&t=516s',
+                       'markdown': '[00:08:36](https://www.youtube.com/watch?v=VAOuseYv0SI&t=516s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'xTEAB6N6l_A',
+                       'title': 'Maximize Credit Card Points with Rakuten & SaveWise',
+                       'channel': 'Itinerary Boss',
+                       'author': 'Itinerary Boss',
+                       'text': 'You know, if you carry any sort of credit card debt, right, focus on '
+                               'figuring that out first.',
+                       'tip': 'You know, if you carry any sort of credit card debt, right, focus on '
+                              'figuring that out first.',
+                       'timestamp': 1026,
+                       'timestamp_seconds': 1026,
+                       'timestamp_label': '[00:17:06]',
+                       'url': 'https://www.youtube.com/watch?v=xTEAB6N6l_A&t=1026s',
+                       'markdown': '[00:17:06](https://www.youtube.com/watch?v=xTEAB6N6l_A&t=1026s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'kDpEoiV0EZM',
+                       'title': 'Rakuten Review & Demo (How I Earn THOUSANDS of Extra Points)',
+                       'channel': 'Daily Drop',
+                       'author': 'Daily Drop',
+                       'text': 'Last thing you can switch back to cash back at any time but this '
+                               'particular switch is irreversible meaning no more option to earn points.',
+                       'tip': 'Last thing you can switch back to cash back at any time but this particular '
+                              'switch is irreversible meaning no more option to earn points.',
+                       'timestamp': 290,
+                       'timestamp_seconds': 290,
+                       'timestamp_label': '[00:04:50]',
+                       'url': 'https://www.youtube.com/watch?v=kDpEoiV0EZM&t=290s',
+                       'markdown': '[00:04:50](https://www.youtube.com/watch?v=kDpEoiV0EZM&t=290s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'uUnfurRXAhs',
+                       'title': 'Complete Rakuten Guide! Earn More American Express Reward Points FAST!',
+                       'channel': 'Simplyscotted',
+                       'author': 'Simplyscotted',
+                       'text': 'To break down the exchange rate for every $10 in cash back equals 1,000 '
+                               'American points so $20 cash back equals 2,000 American points.',
+                       'tip': 'To break down the exchange rate for every $10 in cash back equals 1,000 '
+                              'American points so $20 cash back equals 2,000 American points.',
+                       'timestamp': 174,
+                       'timestamp_seconds': 174,
+                       'timestamp_label': '[00:02:54]',
+                       'url': 'https://www.youtube.com/watch?v=uUnfurRXAhs&t=174s',
+                       'markdown': '[00:02:54](https://www.youtube.com/watch?v=uUnfurRXAhs&t=174s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '6_ILrKQ_BEI',
+                       'title': 'Stacking Cashback Apps Reveals This Shocking Hack',
+                       'channel': 'WorldlyTips',
+                       'author': 'WorldlyTips',
+                       'text': "Don't click checkout until you've checked this site.",
+                       'tip': "Don't click checkout until you've checked this site.",
+                       'timestamp': 160,
+                       'timestamp_seconds': 160,
+                       'timestamp_label': '[00:02:40]',
+                       'url': 'https://www.youtube.com/watch?v=6_ILrKQ_BEI&t=160s',
+                       'markdown': '[00:02:40](https://www.youtube.com/watch?v=6_ILrKQ_BEI&t=160s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Mexc_KkiIkU',
+                       'title': 'Maximizing Credit Card Rewards with CardPointers - Full Guide',
+                       'channel': 'Miles with Mary - Points & Miles Travel',
+                       'author': 'Miles with Mary - Points & Miles Travel',
+                       'text': 'A deal stack is when you layer multiple discounts and rewards on a single '
+                               'purchase.',
+                       'tip': 'A deal stack is when you layer multiple discounts and rewards on a single '
+                              'purchase.',
+                       'timestamp': 209,
+                       'timestamp_seconds': 209,
+                       'timestamp_label': '[00:03:29]',
+                       'url': 'https://www.youtube.com/watch?v=Mexc_KkiIkU&t=209s',
+                       'markdown': '[00:03:29](https://www.youtube.com/watch?v=Mexc_KkiIkU&t=209s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'VAOuseYv0SI',
+                       'title': 'Rakuten: What Influencers Won’t Share (Everything You Need to Know 2026)',
+                       'channel': 'KaungFi',
+                       'author': 'KaungFi',
+                       'text': 'You can change it freely.',
+                       'tip': 'You can change it freely.',
+                       'timestamp': 607,
+                       'timestamp_seconds': 607,
+                       'timestamp_label': '[00:10:07]',
+                       'url': 'https://www.youtube.com/watch?v=VAOuseYv0SI&t=607s',
+                       'markdown': '[00:10:07](https://www.youtube.com/watch?v=VAOuseYv0SI&t=607s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Rs3ocS_gBOI',
+                       'title': 'How I Earned 400K Points Through Shopping Portals',
+                       'channel': 'Hoss the Points Boss',
+                       'author': 'Hoss the Points Boss',
+                       'text': "I don't get the $100 cashback too.",
+                       'tip': "I don't get the $100 cashback too.",
+                       'timestamp': 509,
+                       'timestamp_seconds': 509,
+                       'timestamp_label': '[00:08:29]',
+                       'url': 'https://www.youtube.com/watch?v=Rs3ocS_gBOI&t=509s',
+                       'markdown': '[00:08:29](https://www.youtube.com/watch?v=Rs3ocS_gBOI&t=509s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q10.'}]}

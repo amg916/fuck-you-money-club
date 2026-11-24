@@ -29,14 +29,14 @@
     "08_phone_tablet_mockup",
     "09_series_collection_mockup",
     "10_social_promo_pack",
-    "diag-01-authorized-renewal-to-retained-fees",
-    "diag-02-nested-renewal-account-funnel",
-    "diag-03-base-retained-revenue-profit-waterfall",
-    "diag-04-base-payment-rail-yields",
-    "diag-05-statutory-and-risk-preflight",
-    "diag-06-four-person-core-six-person-scale",
-    "diag-07-startup-capital-allocation",
-    "diag-08-thirty-day-launch-sprint"
+    "diag-01-funding-switch-process",
+    "diag-02-generic-spread-funnel",
+    "diag-03-laser-exposure-waterfall",
+    "diag-04-level-funding-economics-bars",
+    "diag-05-pbm-contract-gates",
+    "diag-06-comp-mod-control-team",
+    "diag-07-captive-dollar-comparison",
+    "diag-08-comp-cost-recovery-roadmap"
   ],
   "cover_graphic_ids": [
     "cover_front",
@@ -54,14 +54,14 @@
     "10_social_promo_pack"
   ],
   "diagram_graphic_ids": [
-    "diag-01-authorized-renewal-to-retained-fees",
-    "diag-02-nested-renewal-account-funnel",
-    "diag-03-base-retained-revenue-profit-waterfall",
-    "diag-04-base-payment-rail-yields",
-    "diag-05-statutory-and-risk-preflight",
-    "diag-06-four-person-core-six-person-scale",
-    "diag-07-startup-capital-allocation",
-    "diag-08-thirty-day-launch-sprint"
+    "diag-01-funding-switch-process",
+    "diag-02-generic-spread-funnel",
+    "diag-03-laser-exposure-waterfall",
+    "diag-04-level-funding-economics-bars",
+    "diag-05-pbm-contract-gates",
+    "diag-06-comp-mod-control-team",
+    "diag-07-captive-dollar-comparison",
+    "diag-08-comp-cost-recovery-roadmap"
   ],
   "allowed_statuses": [
     "approved",
@@ -486,11 +486,11 @@
         "reviewed_at": null
       }
     },
-    "diag-01-authorized-renewal-to-retained-fees": {
+    "diag-01-funding-switch-process": {
       "concept_a": {
-        "graphic_id": "diag-01-authorized-renewal-to-retained-fees",
+        "graphic_id": "diag-01-funding-switch-process",
         "graphic_type": "diagram",
-        "label": "From Renewal Signal to Retained Operator Revenue",
+        "label": "Moving Off Fully Insured Without Getting Burned",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -498,9 +498,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-01-authorized-renewal-to-retained-fees",
+        "graphic_id": "diag-01-funding-switch-process",
         "graphic_type": "diagram",
-        "label": "From Renewal Signal to Retained Operator Revenue",
+        "label": "Moving Off Fully Insured Without Getting Burned",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -508,9 +508,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-01-authorized-renewal-to-retained-fees",
+        "graphic_id": "diag-01-funding-switch-process",
         "graphic_type": "diagram",
-        "label": "From Renewal Signal to Retained Operator Revenue",
+        "label": "Moving Off Fully Insured Without Getting Burned",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -518,11 +518,11 @@
         "reviewed_at": null
       }
     },
-    "diag-02-nested-renewal-account-funnel": {
+    "diag-02-generic-spread-funnel": {
       "concept_a": {
-        "graphic_id": "diag-02-nested-renewal-account-funnel",
+        "graphic_id": "diag-02-generic-spread-funnel",
         "graphic_type": "diagram",
-        "label": "A Nested Renewal-to-Client Cohort",
+        "label": "Where an Amlodipine Dollar Goes",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -530,9 +530,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-02-nested-renewal-account-funnel",
+        "graphic_id": "diag-02-generic-spread-funnel",
         "graphic_type": "diagram",
-        "label": "A Nested Renewal-to-Client Cohort",
+        "label": "Where an Amlodipine Dollar Goes",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -540,9 +540,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-02-nested-renewal-account-funnel",
+        "graphic_id": "diag-02-generic-spread-funnel",
         "graphic_type": "diagram",
-        "label": "A Nested Renewal-to-Client Cohort",
+        "label": "Where an Amlodipine Dollar Goes",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -550,11 +550,11 @@
         "reviewed_at": null
       }
     },
-    "diag-03-base-retained-revenue-profit-waterfall": {
+    "diag-03-laser-exposure-waterfall": {
       "concept_a": {
-        "graphic_id": "diag-03-base-retained-revenue-profit-waterfall",
+        "graphic_id": "diag-03-laser-exposure-waterfall",
         "graphic_type": "diagram",
-        "label": "Base Economics: $535,000 to $240,750",
+        "label": "What a Laser Really Costs",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -562,9 +562,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-03-base-retained-revenue-profit-waterfall",
+        "graphic_id": "diag-03-laser-exposure-waterfall",
         "graphic_type": "diagram",
-        "label": "Base Economics: $535,000 to $240,750",
+        "label": "What a Laser Really Costs",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -572,9 +572,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-03-base-retained-revenue-profit-waterfall",
+        "graphic_id": "diag-03-laser-exposure-waterfall",
         "graphic_type": "diagram",
-        "label": "Base Economics: $535,000 to $240,750",
+        "label": "What a Laser Really Costs",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -582,11 +582,11 @@
         "reviewed_at": null
       }
     },
-    "diag-04-base-payment-rail-yields": {
+    "diag-04-level-funding-economics-bars": {
       "concept_a": {
-        "graphic_id": "diag-04-base-payment-rail-yields",
+        "graphic_id": "diag-04-level-funding-economics-bars",
         "graphic_type": "diagram",
-        "label": "Five Payment Rails Behind the Base Case",
+        "label": "Level-Funding Economics in Practitioner Numbers",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -594,9 +594,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-04-base-payment-rail-yields",
+        "graphic_id": "diag-04-level-funding-economics-bars",
         "graphic_type": "diagram",
-        "label": "Five Payment Rails Behind the Base Case",
+        "label": "Level-Funding Economics in Practitioner Numbers",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -604,9 +604,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-04-base-payment-rail-yields",
+        "graphic_id": "diag-04-level-funding-economics-bars",
         "graphic_type": "diagram",
-        "label": "Five Payment Rails Behind the Base Case",
+        "label": "Level-Funding Economics in Practitioner Numbers",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -614,11 +614,11 @@
         "reviewed_at": null
       }
     },
-    "diag-05-statutory-and-risk-preflight": {
+    "diag-05-pbm-contract-gates": {
       "concept_a": {
-        "graphic_id": "diag-05-statutory-and-risk-preflight",
+        "graphic_id": "diag-05-pbm-contract-gates",
         "graphic_type": "diagram",
-        "label": "Four Pre-Flight Decisions Before Execution",
+        "label": "Four Gates Before Signing a PBM Contract",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -626,9 +626,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-05-statutory-and-risk-preflight",
+        "graphic_id": "diag-05-pbm-contract-gates",
         "graphic_type": "diagram",
-        "label": "Four Pre-Flight Decisions Before Execution",
+        "label": "Four Gates Before Signing a PBM Contract",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -636,9 +636,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-05-statutory-and-risk-preflight",
+        "graphic_id": "diag-05-pbm-contract-gates",
         "graphic_type": "diagram",
-        "label": "Four Pre-Flight Decisions Before Execution",
+        "label": "Four Gates Before Signing a PBM Contract",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -646,11 +646,11 @@
         "reviewed_at": null
       }
     },
-    "diag-06-four-person-core-six-person-scale": {
+    "diag-06-comp-mod-control-team": {
       "concept_a": {
-        "graphic_id": "diag-06-four-person-core-six-person-scale",
+        "graphic_id": "diag-06-comp-mod-control-team",
         "graphic_type": "diagram",
-        "label": "Four Core Seats, Two Expansion Seats",
+        "label": "The Workers' Comp Mod-Control Team",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -658,9 +658,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-06-four-person-core-six-person-scale",
+        "graphic_id": "diag-06-comp-mod-control-team",
         "graphic_type": "diagram",
-        "label": "Four Core Seats, Two Expansion Seats",
+        "label": "The Workers' Comp Mod-Control Team",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -668,9 +668,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-06-four-person-core-six-person-scale",
+        "graphic_id": "diag-06-comp-mod-control-team",
         "graphic_type": "diagram",
-        "label": "Four Core Seats, Two Expansion Seats",
+        "label": "The Workers' Comp Mod-Control Team",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -678,11 +678,11 @@
         "reviewed_at": null
       }
     },
-    "diag-07-startup-capital-allocation": {
+    "diag-07-captive-dollar-comparison": {
       "concept_a": {
-        "graphic_id": "diag-07-startup-capital-allocation",
+        "graphic_id": "diag-07-captive-dollar-comparison",
         "graphic_type": "diagram",
-        "label": "Allocate $8,000–$45,000 Without Funding Claims",
+        "label": "Where the Captive Health Dollar Sits",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -690,9 +690,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-07-startup-capital-allocation",
+        "graphic_id": "diag-07-captive-dollar-comparison",
         "graphic_type": "diagram",
-        "label": "Allocate $8,000–$45,000 Without Funding Claims",
+        "label": "Where the Captive Health Dollar Sits",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -700,9 +700,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-07-startup-capital-allocation",
+        "graphic_id": "diag-07-captive-dollar-comparison",
         "graphic_type": "diagram",
-        "label": "Allocate $8,000–$45,000 Without Funding Claims",
+        "label": "Where the Captive Health Dollar Sits",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -710,11 +710,11 @@
         "reviewed_at": null
       }
     },
-    "diag-08-thirty-day-launch-sprint": {
+    "diag-08-comp-cost-recovery-roadmap": {
       "concept_a": {
-        "graphic_id": "diag-08-thirty-day-launch-sprint",
+        "graphic_id": "diag-08-comp-cost-recovery-roadmap",
         "graphic_type": "diagram",
-        "label": "Thirty Days to an Evidence-Ready Operating Desk",
+        "label": "Workers' Comp Cost and Recovery Roadmap",
         "concept_id": "concept_a",
         "concept_label": "Concept A — Black & Gold Executive",
         "status": "pending_review",
@@ -722,9 +722,9 @@
         "reviewed_at": null
       },
       "concept_b": {
-        "graphic_id": "diag-08-thirty-day-launch-sprint",
+        "graphic_id": "diag-08-comp-cost-recovery-roadmap",
         "graphic_type": "diagram",
-        "label": "Thirty Days to an Evidence-Ready Operating Desk",
+        "label": "Workers' Comp Cost and Recovery Roadmap",
         "concept_id": "concept_b",
         "concept_label": "Concept B — Bold Editorial",
         "status": "pending_review",
@@ -732,9 +732,9 @@
         "reviewed_at": null
       },
       "concept_c": {
-        "graphic_id": "diag-08-thirty-day-launch-sprint",
+        "graphic_id": "diag-08-comp-cost-recovery-roadmap",
         "graphic_type": "diagram",
-        "label": "Thirty Days to an Evidence-Ready Operating Desk",
+        "label": "Workers' Comp Cost and Recovery Roadmap",
         "concept_id": "concept_c",
         "concept_label": "Concept C — Modern Wealth Intelligence",
         "status": "pending_review",
@@ -743,5 +743,5 @@
       }
     }
   },
-  "updated_at": "2026-11-23T22:48:03Z"
+  "updated_at": "2026-11-24T23:55:16Z"
 }

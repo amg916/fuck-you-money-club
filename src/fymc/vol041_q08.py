@@ -1,709 +1,866 @@
 from __future__ import annotations
 
-CHAPTER_8 = {
-    "id": "Q8",
-    "chapter_id": "Q8",
-    "chapter_number": 8,
-    "question_number": 8,
-    "slug": "public-records-apis-pipelines-and-operator-tooling",
-    "question_prompt": "Which exact public registries, government databases, commercial APIs, enrichment waterfalls, and diagnostic tools give a small buying group, commercial card-float & rebate arbitrage desk an unfair information edge?",
-    "kicker": "Q8 / THE BIG MONEY PLAYBOOKS",
-    "title": "Public Records, APIs, Data Pipelines & Operator Tooling",
-    "subtitle": "State Entity and UCC Searches, Buying-Group Settlement Evidence, Authorized Rebate Feeds, and Treasury Fiscal Data Joined to a Due-Date Ledger",
-    "layout_template": "resource_directory",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #41 ranks #10 of 43 with a 93/100 Money-to-Manpower Score. "
-        "This resource directory organizes 11 mapped plays: ten operating workflows "
-        "for wholesale fulfillment, commercial rebates, and treasury management, plus "
-        "one explicitly excluded cross-shelf mapping. The information edge comes "
-        "from joining legal-entity evidence, accepted purchase commitments, parcel "
-        "events, rebate terms, cleared ACH receipts, and card obligations without "
-        "mistaking pending rewards or borrowed principal for earnings. Eighteen "
-        "named resources specify access, costs, refresh practices, and fallbacks. "
-        "Canonical annual owner profit remains $20,000 Conservative, $143,500 Base, "
-        "and $360,000 Scaled. A 35% retained contribution bridge separates landed "
-        "merchandise cost from the gross planning basis; transaction evidence, not "
-        "headline reward percentages, determines whether each operating play deserves capital."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$250,000",
-            "context": "Annual gross planning basis; $87,500 retained contribution at 35%.",
-            "note": "8% gross-basis net margin; $20,000 annual owner net profit; 1 FT + 2 C; 22.86% retained margin.",
-        },
-        {
-            "label": "Base",
-            "value": "$1,025,000",
-            "context": "Annual gross planning basis; $358,750 retained contribution at 35%.",
-            "note": "14.0% gross-basis net margin; $143,500 annual owner net profit; 1 FT + 2 C; 40.0% retained margin.",
-        },
-        {
-            "label": "Scaled",
-            "value": "$1,800,000",
-            "context": "Annual gross planning basis; $630,000 retained contribution at 35%.",
-            "note": "20% gross-basis net margin; $360,000 annual owner net profit; 2 FT + 3 C; 57.14% retained margin.",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Build an evidence waterfall before assigning buying-group credit",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Start with a counterparty record, not a promotional spreadsheet. "
-                    "BuyForMeRetail, Pointsmaker, and MaxOutDeals are research targets, "
-                    "not interchangeable credits or endorsements. Obtain the contracting "
-                    "entity, warehouse operator, remittance entity, written payment terms, "
-                    "and accepted product specifications directly from each proposed "
-                    "counterparty. Resolve the entity against its formation registry, "
-                    "then search UCC filings in the legally appropriate jurisdiction "
-                    "using the exact debtor name and documented variants. A warehouse "
-                    "address in Delaware does not establish the counterparty's state "
-                    "of organization. Preserve search date, search criteria, filing "
-                    "number, and source document; a clean search is evidence about "
-                    "indexed filings, not proof of solvency. The first six directory "
-                    "entries below establish identity, secured-credit context, and "
-                    "tax treatment. Apply the waterfall in order: first-party contract, "
-                    "official entity record, relevant UCC record, state tax authority, "
-                    "then a small paid pilot. Do not purchase consumer enrichment "
-                    "profiles when the business decision requires corporate authority "
-                    "and payment performance. For a $10,000 purchase, cap initial "
-                    "exposure at the amount the desk can repay without any buying-group "
-                    "receipt. Expand only after matching accepted inventory to cleared "
-                    "funds and resolving every short-pay explanation in writing."
-                ),
-                (
-                    "Treat DE, NH, and OR warehouse routing as a sourcing fact "
-                    "requiring documentation, rather than a universal exemption switch. "
-                    "These states lack a general statewide sales tax, but destination, "
-                    "delivery evidence, retailer policy, local exceptions, and resale "
-                    "rules still matter. Delaware's gross receipts regime is distinct "
-                    "from a retail sales tax; Oregon has targeted taxes, including "
-                    "vehicle-related provisions, rather than a general sales tax. "
-                    "New Hampshire's tax structure also contains transaction-specific "
-                    "taxes outside ordinary merchandise sales. A resale certificate "
-                    "must be valid for the actual seller and transaction when required; "
-                    "a warehouse ZIP code does not replace it. Store certificate "
-                    "jurisdiction, taxpayer identity, scope, effective date, and "
-                    "seller acceptance alongside the invoice. The purchasing operator "
-                    "must verify that commercial resale quantities are permitted "
-                    "before creating an order. For example, a $10,000 electronics "
-                    "invoice reimbursed at $10,200 produces $200 merchandise spread; "
-                    "$45 shipping and $35 expected loss reduce that spread to $120. "
-                    "Record a separately earned $300 card reward in the rebate "
-                    "subledger, not as another wholesale reimbursement. If the seller "
-                    "rejects the proposed tax treatment, recalculate landed cost "
-                    "with the actual tax or abandon the commitment before purchase."
-                ),
-                (
-                    "Measure counterparty quality using settlement cohorts that public "
-                    "records cannot supply. For each accepted shipment, capture "
-                    "delivery timestamp, warehouse acceptance timestamp, contractual "
-                    "payment trigger, promised payment date, ACH initiation, and "
-                    "bank-posted availability. Net-3 and Net-5 describe negotiated "
-                    "terms only when the agreement defines the starting event and "
-                    "business-day calendar. A carrier delivery scan can precede "
-                    "warehouse inspection by several days. Report median and "
-                    "ninety-fifth-percentile acceptance-to-cash intervals separately "
-                    "from delivery-to-acceptance intervals. With five $2,000 batches "
-                    "outstanding, a counterparty interruption creates $10,000 of "
-                    "repayment exposure even when every parcel shows delivered. "
-                    "Use a concentration limit based on independently available "
-                    "cash, not advertised card limits. Require a second operator "
-                    "to verify any beneficiary change through an established "
-                    "contact channel before updating payment instructions. Public "
-                    "filings may lag real events; review entities monthly, UCC "
-                    "evidence quarterly, and payment exceptions every business day. "
-                    "Increase frequency after returned ACH entries, unexplained "
-                    "entity changes, or repeated acceptance disputes. The useful "
-                    "fallback is a smaller purchase commitment or another already "
-                    "vetted buyer, not a last-minute transfer to an unverified "
-                    "warehouse offering a higher headline spread. Keep rejected "
-                    "counterparties in the audit history with their documented reasons."
-                ),
-            ],
-            "table": {
-                "caption": "Directory Entries 1–6: Official Identity, Secured-Credit, and State Tax Evidence",
-                "headers": [
-                    "Named resource and exact access route",
-                    "Cost tier and operating refresh",
-                    "Rate hygiene and evidence capture",
-                    "Fallback source and decision supported",
-                ],
-                "rows": [
-                    [
-                        "Delaware Division of Corporations entity search through https://icis.corp.delaware.gov/Ecorp/EntitySearch/NameSearch.aspx using legal names.",
-                        "Basic entity lookup is free; status products carry posted fees; refresh monthly and before material exposure increases.",
-                        "Use the interactive search manually; retain dated results and do not bypass session restrictions or verification challenges.",
-                        "Obtain a paid official status certificate when basic results cannot establish the status needed for contracting.",
-                    ],
-                    [
-                        "New Hampshire Secretary of State QuickStart business search through https://quickstart.sos.nh.gov/ using registered entity identifiers.",
-                        "Public business searches are free; ordered certificates carry posted charges; refresh monthly for active counterparties.",
-                        "Use browser searches within published terms; record entity numbers and distinguish historical filings from current status.",
-                        "Request official filed documents or counterparty formation evidence when name matching produces multiple plausible entities.",
-                    ],
-                    [
-                        "Oregon Secretary of State business search through https://sos.oregon.gov/business/Pages/find.aspx and its linked registry search.",
-                        "Public registry searches are free; certified products may cost extra; review monthly and after contracting changes.",
-                        "Search exact names and registry numbers manually; archive dated evidence without assuming every filing is immediately indexed.",
-                        "Request filed organizational documents and official certificates when registry summaries cannot resolve contracting authority.",
-                    ],
-                    [
-                        "Delaware UCC search information through https://corp.delaware.gov/ucc/ and authorized search services identified by the filing office.",
-                        "Official searches and service-provider searches use posted fees; search before onboarding and quarterly during continuing exposure.",
-                        "Apply the filing office's search rules; preserve exact debtor spelling, jurisdiction rationale, search scope, and report date.",
-                        "Search the actual debtor jurisdiction's filing office when Delaware is merely the warehouse location rather than the relevant jurisdiction.",
-                    ],
-                    [
-                        "Delaware Division of Revenue tax information through https://revenue.delaware.gov/ for business licensing and gross receipts rules.",
-                        "Published guidance is free; review before first routing decision and monthly for material transaction-rule changes.",
-                        "Read official guidance manually; retain dated pages and avoid treating informational pages as taxpayer account verification.",
-                        "Use seller-issued invoices and written state responses to resolve transaction treatment before calculating landed purchase cost.",
-                    ],
-                    [
-                        "NH Department of Revenue at https://www.revenue.nh.gov/ and Oregon Department of Revenue at https://www.oregon.gov/dor/.",
-                        "Public tax guidance is free; review before warehouse onboarding and whenever product classes or destination facts change.",
-                        "Check relevant tax programs directly; preserve source dates and do not extrapolate merchandise treatment to every transaction.",
-                        "Request seller tax documentation and written agency clarification when product-specific rules change the economics of fulfillment.",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Buy evidence before increasing unsecured exposure",
-                "body": "A small desk wins by discovering broken assumptions while the outstanding balance is still repayable.",
-                "items": [
-                    "Keep warehouse receipt and purchase acceptance as separate events; only the contract-defined event starts the payment clock.",
-                    "Test the complete return path with a small order before shipping concentrated high-value electronics batches.",
-                    "Preserve an immutable beneficiary-change history and verify changes using an established phone number, never the replacement email alone.",
-                    "Track short-pay reason codes by group and SKU; a persistent inspection deduction can erase an apparently superior reimbursement quote.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Capture authorized commerce evidence and price rebate eligibility",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "The commercial evidence layer begins with authorized exports, "
-                    "not assumed public APIs. Obtain buying-group commitments and "
-                    "settlement reports from the authenticated account interface, "
-                    "email confirmations, or a feed the counterparty explicitly "
-                    "provides. Rakuten and TopCashback consumer accounts do not "
-                    "automatically confer access to affiliate reporting APIs or "
-                    "permission to automate account interactions. Use downloadable "
-                    "reports where offered, saved confirmations, and permissioned "
-                    "integrations whose contracts match the operator's role. Snapshot "
-                    "merchant exclusions, commercial-resale restrictions, eligible "
-                    "categories, coupon rules, maximum rewards, and posting deadlines "
-                    "before purchase. A portal click is evidence of referral, not "
-                    "an earned receivable. Maintain separate states for observed, "
-                    "pending, confirmed, payable, paid, and reversed rewards. On "
-                    "$10,000 of eligible spend, a 3% card reward and 1% portal "
-                    "reward total $400 before fees and losses; if resale purchases "
-                    "are excluded, the portal component is zero, leaving $300. "
-                    "Do not silently substitute the advertised percentage when "
-                    "eligibility fails. Freeze the source terms associated with "
-                    "each purchase so later website changes do not overwrite "
-                    "the evidence used to underwrite that transaction. Attribute "
-                    "reversals to the original purchase cohort rather than hiding "
-                    "them in the current month's acquisition performance."
-                ),
-                (
-                    "Price invoice-payment rails independently from merchandise routing. "
-                    "Plastiq and Melio product availability, card acceptance, permitted "
-                    "payees, fees, and delivery times depend on the account and "
-                    "transaction; capture the actual checkout quote before approval. "
-                    "An illustrative $10,000 eligible invoice with a 2.9% service "
-                    "fee costs $290. A 3% reward calculated on the invoice amount "
-                    "earns $300, leaving only $10 before financing, exceptions, "
-                    "or reward disqualification. At 2%, the same transaction "
-                    "loses $90. If the fee itself earns rewards, record that "
-                    "increment only after confirming issuer treatment; do not "
-                    "assume it in underwriting. Portal rewards generally should "
-                    "not be attached to invoice-payment services without express "
-                    "eligibility evidence. Reject self-payments, fabricated invoices, "
-                    "and any flow that violates issuer or payment-service terms. "
-                    "A legitimate supplier invoice does not establish card-reward "
-                    "eligibility by itself. The fallback for a negative spread "
-                    "is ordinary ACH or another approved low-cost method, not "
-                    "a larger payment intended to manufacture bonus volume. "
-                    "Keep commercial-card activity within approved purchasing "
-                    "capacity and documented repayment resources; exclude consumer "
-                    "card-cycling. Reconcile provider settlement confirmations to "
-                    "the supplier's receipt because a successful card authorization "
-                    "does not prove final delivery of the supplier payment."
-                ),
-                (
-                    "Normalize parcel evidence without granting it more authority "
-                    "than it deserves. UPS Developer Portal tracking access requires "
-                    "an application and the applicable credentials and account "
-                    "permissions; permitted volumes and available services depend "
-                    "on the developer agreement. Use a shipment-level polling "
-                    "schedule, slow polling after stable transit events, and "
-                    "stop routine polling once a terminal status is reconciled. "
-                    "A delivered scan does not establish serial-number acceptance, "
-                    "damage condition, or reimbursement liability. Join tracking "
-                    "number, purchase order, carton identifier, insured value, "
-                    "and warehouse acceptance evidence. If $10,000 of inventory "
-                    "is split across five parcels, a missing $2,000 parcel "
-                    "remains an unresolved asset exposure until an accepted "
-                    "claim or buyer payment resolves it. Insurance coverage "
-                    "must match merchandise class, value, packaging, and "
-                    "claim conditions; declared value alone may not provide "
-                    "the coverage the operator expects. Store shipping receipts, "
-                    "packing images, serial records, and claim deadlines outside "
-                    "the carrier's short-lived tracking interface. When an API "
-                    "fails, use the carrier's authorized web tracking and "
-                    "warehouse evidence, tagging the observation as manually "
-                    "collected. Do not mark a shipment accepted merely to "
-                    "make the settlement dashboard look current or to "
-                    "release another purchase into an already concentrated counterparty."
-                ),
-            ],
-            "table": {
-                "caption": "Directory Entries 7–12: Permissioned Commitments, Rewards, Payment Quotes, and Parcel Events",
-                "headers": [
-                    "Named resource and authorized access",
-                    "Cost tier and refresh latency",
-                    "Rate hygiene and retained evidence",
-                    "Fallback and economic decision",
-                ],
-                "rows": [
-                    [
-                        "BuyForMeRetail, Pointsmaker, and MaxOutDeals through their official account portals, accepted commitments, and provided settlement exports.",
-                        "Account and transaction terms govern charges; collect commitments before purchase and settlement evidence each business day.",
-                        "Do not presume public API availability; use permitted downloads and preserve original accepted quantities, prices, and payment triggers.",
-                        "Obtain direct written confirmation from the established counterparty contact; suspend new orders if commitment evidence cannot be reproduced.",
-                    ],
-                    [
-                        "Rakuten through https://www.rakuten.com/ account activity, merchant terms, purchase confirmations, and approved partner interfaces when contractually available.",
-                        "Consumer membership is free; partner access has separate terms; observe daily while recognizing merchant confirmation can take weeks.",
-                        "Avoid unsupported authenticated scraping; capture dated exclusions and distinguish tracked transactions from confirmed payable reward balances.",
-                        "Use order records and the official missing-reward process; underwrite zero portal income until eligibility and confirmation are supported.",
-                    ],
-                    [
-                        "TopCashback through https://www.topcashback.com/ account earnings, merchant conditions, claim tools, and expressly authorized reporting arrangements.",
-                        "Standard US membership is free; review current account terms; pending-to-payable latency depends on merchant validation and returns.",
-                        "Collect authorized statements daily when useful; retain claim identifiers and never retry purchases to force duplicate referral attribution.",
-                        "Use official claim channels with original order evidence; continue forecasting without disputed rewards until the claim is resolved.",
-                    ],
-                    [
-                        "Plastiq through https://www.plastiq.com/ business account quotes, payment history, and integrations expressly enabled for the account.",
-                        "Use the live transaction quote for fees; capture before payment and refresh status until supplier receipt is reconciled.",
-                        "Respect documented integration limits; reconcile provider identifiers and never infer fee rates or card eligibility from historical transactions.",
-                        "Use ordinary bank ACH when permitted card funding produces negative spread or supplier-delivery timing cannot support the obligation.",
-                    ],
-                    [
-                        "Melio through https://meliopayments.com/ authenticated bill-pay screens, transaction exports, and account-supported integrations.",
-                        "Plan and payment-method charges follow current quotes; capture each transaction price and update outstanding delivery states daily.",
-                        "Use enabled integrations only; retain invoice, fee quote, delivery estimate, and recipient identity without sharing account credentials.",
-                        "Use bank-originated supplier payment and obtain receipt confirmation when service timing or reward treatment makes card funding unattractive.",
-                    ],
-                    [
-                        "UPS Developer Portal through https://developer.ups.com/ using approved tracking applications and applicable OAuth credentials.",
-                        "Developer enrollment and shipping-service economics follow account terms; poll active shipments periodically, then reconcile terminal events daily.",
-                        "Honor published quotas and retry instructions; back off after throttling and retain provider event times separately from ingestion times.",
-                        "Use authorized UPS web tracking, warehouse acceptance records, and carrier claim correspondence when API delivery or event detail fails.",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Verify four facts before releasing purchase capacity",
-                "body": "An attractive advertised percentage cannot override missing evidence about ownership, eligibility, settlement, or repayment.",
-                "items": [
-                    "Verify the legal buyer, accepted SKU quantity, reimbursement price, warehouse destination, and contractual payment trigger before placing the merchandise order.",
-                    "Verify commercial resale eligibility, card reward treatment, actual payment-service fees, and portal exclusions before counting any reward.",
-                    "Verify independent repayment cash covers the next statement obligation under a buying-group delay and simultaneous reward reversal.",
-                    "Verify insured shipment conditions, return ownership, claim deadlines, and evidence retention before releasing high-value cartons.",
-                ],
-            },
-        },
-        {
-            "heading": "3. Join treasury feeds to a liability-first, auditable pipeline",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Build the treasury waterfall from bank-posted balances, card "
-                    "statements, and instrument settlement facts before adding "
-                    "public yield observations. Treasury Fiscal Data supplies "
-                    "official auction records through a documented API; it "
-                    "does not supply a guaranteed executable secondary-market "
-                    "price. TreasuryDirect explains auction and holding mechanics, "
-                    "while a brokerage confirmation supplies the actual purchased "
-                    "security, settlement date, maturity date, and cash proceeds. "
-                    "FDIC BankFind Suite verifies bank identity and insurance "
-                    "status, but it does not determine whether every fintech "
-                    "balance arrangement satisfies pass-through coverage requirements. "
-                    "Review account ownership and deposit placement separately. "
-                    "For an illustrative $10,000 reserve earning 4.5% simple "
-                    "annualized yield over 25 days, expected gross interest "
-                    "is $30.82 using a 365-day denominator. That calculation "
-                    "is a planning approximation, not Treasury bill pricing. "
-                    "A $40 transfer or liquidation cost makes the proposed "
-                    "incremental sweep unattractive. Prefer maturities and "
-                    "available settlement cash that precede card obligations "
-                    "by a documented buffer. Never count the same $10,000 "
-                    "as both unrestricted purchasing capacity and reserved "
-                    "repayment cash. Bank bonuses belong in a separate "
-                    "conditional receivable schedule with qualifying activities, "
-                    "holding periods, payment windows, account fees, and clawback "
-                    "conditions linked to the issuer's dated offer."
-                ),
-                (
-                    "Represent a 55-day statement float as a possible timing "
-                    "interval, not a standing entitlement. Actual purchase "
-                    "date, statement close, grace-period conditions, due date, "
-                    "and issuer terms determine the obligation. Suppose a "
-                    "$10,000 purchase occurs on day zero and its full "
-                    "card payment is due on day 55. A buying group "
-                    "expected to pay on day 12 may instead pay on "
-                    "day 60; the desk must fund five days without "
-                    "that reimbursement. At an illustrative 24% annualized "
-                    "simple borrowing cost, five days costs $32.88 before "
-                    "fees, although the card agreement may impose a different "
-                    "interest calculation or remove the grace period. Stress "
-                    "a longer delay and an issuer limit reduction together. "
-                    "Keep bank API observations distinct from final statements: "
-                    "pending card charges, reversed transactions, and changing "
-                    "bank transaction identifiers can distort apparent liquidity. "
-                    "Plaid Transactions access, where supported and authorized, "
-                    "provides useful observations but does not replace the "
-                    "issuer statement for the amount due. The fallback "
-                    "is an issuer-exported statement and direct bank balance "
-                    "verification. Stop new purchases when the repayment "
-                    "coverage test fails; do not extend the model by "
-                    "assuming another card will remain available during "
-                    "the same issuer or counterparty disruption."
-                ),
-                (
-                    "A small desk can implement the evidence pipeline with "
-                    "Python's sqlite3, decimal, csv, json, hashlib, urllib.request, "
-                    "and zoneinfo modules. Use integer cents or Decimal "
-                    "for money, explicit currency fields, timezone-aware "
-                    "timestamps, and an append-only observation table. Preserve "
-                    "source identifiers and hash original statements; a hash "
-                    "detects later alteration but does not authenticate the "
-                    "original issuer. Model commitments, orders, shipments, "
-                    "acceptances, reimbursements, rewards, obligations, and "
-                    "treasury positions as separate records joined by "
-                    "stable internal keys. Deduplicate using provider identifiers "
-                    "plus account context, not amount and date alone. "
-                    "Poll with bounded concurrency, pagination checkpoints, "
-                    "timeouts, exponential backoff, and Retry-After handling; "
-                    "never invent a universal requests-per-minute allowance. "
-                    "Quarantine malformed or stale observations rather than "
-                    "silently replacing missing values with zero. Keep "
-                    "credentials outside source files and encrypt stored "
-                    "account exports using the operating system's supported "
-                    "storage controls. Each morning, run sqlite3 integrity_check, "
-                    "balance roll-forwards, unmatched-event counts, and due-date "
-                    "coverage tests before refreshing the operator dashboard. "
-                    "Restore a backup weekly into an isolated database "
-                    "and reconcile a sample statement end to end. "
-                    "If an integration fails, continue from signed-off "
-                    "manual imports carrying source dates and reviewer "
-                    "identity, while preventing duplicate ingestion when "
-                    "automated collection resumes."
-                ),
-            ],
-            "table": {
-                "caption": "Directory Entries 13–18: Treasury Observations, Banking Evidence, Calendar Controls, and Local Diagnostics",
-                "headers": [
-                    "Named resource and exact access",
-                    "Cost tier and observation latency",
-                    "Rate hygiene and diagnostic practice",
-                    "Fallback and operational application",
-                ],
-                "rows": [
-                    [
-                        "Treasury Fiscal Data API at https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/od/auctions_query using documented filters and pagination.",
-                        "Public API access is free; fetch after relevant auction results are published and cache completed historical auction records.",
-                        "Read endpoint metadata, bound page sizes, honor throttling responses, and record publication dates instead of assuming real-time execution prices.",
-                        "Use official Treasury auction announcements and results; use brokerage executable quotes for an actual secondary-market purchase decision.",
-                    ],
-                    [
-                        "TreasuryDirect marketable-security guidance through https://www.treasurydirect.gov/marketable-securities/ and official auction schedules and results.",
-                        "Public research is free; refresh around scheduled auctions, while actual purchase and custody conditions require account-specific review.",
-                        "Use official downloads and browser access; avoid automated credential entry and preserve the schedule version supporting each maturity decision.",
-                        "Use brokerage confirmations and official security terms to establish purchased principal, actual settlement, maturity, and proceeds.",
-                    ],
-                    [
-                        "FDIC BankFind Suite through https://banks.data.fdic.gov/bankfind-suite/bankfind and FDIC API documentation at https://banks.data.fdic.gov/docs/.",
-                        "Public search and documented API access are free; verify before account funding and review institutional changes monthly.",
-                        "Cache institution identifiers and dated results; obey published query constraints and distinguish bank status from account-level insurance analysis.",
-                        "Use FDIC official institution records and written account agreements to resolve legal bank identity and deposit-placement structure.",
-                    ],
-                    [
-                        "Plaid Transactions through https://plaid.com/docs/transactions/ using an authorized application, supported institution connection, and permitted account access.",
-                        "Sandbox testing is available without production usage charges; production pricing is contractual; refresh timing varies by institution and product.",
-                        "Handle transaction updates and removals, verify webhook authenticity, and honor endpoint-specific limits rather than treating observations as final statements.",
-                        "Import issuer and bank CSV or OFX exports; use the actual card statement to determine repayment amount and due date.",
-                    ],
-                    [
-                        "Federal Reserve Financial Services holiday schedules through https://www.frbservices.org/about/holiday-schedules for official processing-calendar context.",
-                        "Published calendars are free; refresh annually and after schedule notices, while bank-specific cutoff information requires direct confirmation.",
-                        "Cache the published calendar with its year; combine holidays with the bank's actual ACH cutoff and availability rules.",
-                        "Use written bank cutoff schedules and posted transaction evidence; never treat an ACH initiation timestamp as available repayment cash.",
-                    ],
-                    [
-                        "Python sqlite3 and decimal documentation at https://docs.python.org/3.9/library/ with local database diagnostics and reproducible reconciliation tests.",
-                        "Standard-library tools have no license charge; run ingestion checks continuously and full integrity and liquidity checks every morning.",
-                        "Use transactions, unique constraints, Decimal arithmetic, and integrity_check; protect source exports and test restoration without production credentials.",
-                        "Rebuild balances from retained statements and approved manual imports when corrupted records or broken joins invalidate the dashboard.",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Acquire and fingerprint original evidence",
-                    "action": "Collect authorized commitments, account exports, statements, and official reference observations.",
-                    "detail": "Assign source, observation time, effective time, account scope, and SHA-256 digest; retain the original outside the working tables.",
-                },
-                {
-                    "step": 2,
-                    "title": "Normalize without merging distinct economic events",
-                    "action": "Create separate merchandise, rebate, liability, and treasury records using stable internal identifiers.",
-                    "detail": "Use integer cents or Decimal, reject unsupported currency mixtures, and quarantine missing identifiers instead of guessing purchase matches.",
-                },
-                {
-                    "step": 3,
-                    "title": "Reconcile cash and stress the next due date",
-                    "action": "Match warehouse acceptances to reimbursements and bank-posted cash to issuer-stated obligations.",
-                    "detail": "Run delayed-ACH, reward-reversal, and issuer-capacity scenarios; reserve independent repayment cash before releasing another purchase.",
-                },
-                {
-                    "step": 4,
-                    "title": "Publish exceptions with accountable resolution",
-                    "action": "Issue a daily dashboard showing stale sources, unmatched amounts, concentrated counterparties, and repayment coverage.",
-                    "detail": "Assign an owner and deadline to every exception, preserve the correction trail, and verify a backup restoration each week.",
-                },
-            ],
-        },
-        {
-            "heading": "4. Map eleven workflows without corrupting the three-model scorecard",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Keep three economic models separate: wholesale fulfillment "
-                    "earns merchandise spread, commercial cards and portals "
-                    "earn eligible rebates net of fees, and treasury "
-                    "management earns interest or satisfied bonus awards. "
-                    "The canonical Formula v2.0 planning basis combines "
-                    "gross wholesale reimbursements, rebates, and treasury "
-                    "yield; it does not include card advances, invested "
-                    "principal, or underlying customer spending as additional "
-                    "income. Conservative gross basis of $250,000 multiplied "
-                    "by 35% produces $87,500 retained contribution; subtracting "
-                    "$67,500 of remaining costs yields $20,000 owner "
-                    "profit. Base gross basis of $1,025,000 produces "
-                    "$358,750 retained contribution; subtracting $215,250 "
-                    "yields $143,500. Scaled gross basis of $1,800,000 "
-                    "produces $630,000 retained contribution; subtracting "
-                    "$270,000 yields $360,000. Gross-basis margins are "
-                    "8%, 14.0%, and 20%; retained margins are "
-                    "22.86%, 40.0%, and 57.14%. These residual costs "
-                    "are reconciliation amounts, not invented monthly "
-                    "overhead budgets. The supplied $1,500–$9,000 monthly "
-                    "opex range cannot automatically be equated with "
-                    "every annual residual cost category. Maintain the "
-                    "35% retained-share bridge while assessing ASC 606 "
-                    "principal-versus-agent presentation from actual contracts; "
-                    "a planning multiplier alone does not establish "
-                    "recognized accounting revenue. The illustrative transaction "
-                    "examples above explain controls and are not forecasts "
-                    "that mechanically reproduce the annual scorecard."
-                ),
-                (
-                    "The eleven mappings below are ten chapter-defined operating "
-                    "workflows and one supplied cross-shelf identifier. The "
-                    "ten workflows are entity verification, tax routing, "
-                    "commitment matching, parcel claims, settlement forecasting, "
-                    "card eligibility, portal attribution, invoice-fee routing, "
-                    "treasury maturity matching, and bank-bonus qualification. "
-                    "They are not claimed to be ten additional canonical "
-                    "play identifiers. Each workflow needs a measurable "
-                    "decision and a fallback that reduces exposure when "
-                    "evidence fails. For instance, a $300 expected card "
-                    "reward cannot justify $400 of incremental shipping "
-                    "and handling, and a $200 bank bonus less $75 "
-                    "in account fees contributes only $125 before "
-                    "taxes and capital opportunity cost. Preserve the "
-                    "supplied staffing cases of 1 FT + 2 C "
-                    "for Conservative and Base, and 2 FT + 3 C "
-                    "for Scaled. Automation should remove duplicate "
-                    "collection and matching work rather than manufacture "
-                    "additional purchasing authority. Route beneficiary "
-                    "changes, unexplained short-pays, and missing statement "
-                    "obligations to a named reviewer. Test the system "
-                    "with a duplicate shipment event, a reversed "
-                    "reward, a stale bank connection, and a delayed "
-                    "warehouse acceptance. Correct handling means the "
-                    "ledger remains balanced and available purchasing "
-                    "capacity falls when uncertainty rises."
-                ),
-                (
-                    "The supplied mapping sportsbook_promo_ev_matched_betting_syndicates "
-                    "is retained only as an excluded cross-shelf reference, "
-                    "not a fourth business model or a source of "
-                    "Volume 041 revenue. Its claimed guaranteed conversion "
-                    "should not be adopted: eligibility, promotional rules, "
-                    "market movement, settlement differences, and counterparty "
-                    "restrictions prevent a universal risk-free result. "
-                    "As arithmetic rather than an operating recommendation, "
-                    "$1,000 of face-value promotional credits multiplied "
-                    "by a hypothetical 70%–85% realization rate equals "
-                    "$700–$850 before costs and any participant split. "
-                    "That calculation does not establish $3,000–$8,000 "
-                    "per resident or validate access across multiple "
-                    "platforms. The supplied fallback is participant-only "
-                    "execution on their own device and cellular "
-                    "connection, with high-liquidity mainlines; those "
-                    "conditions do not remove eligibility, settlement, "
-                    "or licensing questions. No account access, "
-                    "participant funds, or promotional balances enter "
-                    "this desk's pipeline. For the three permitted "
-                    "models, retain purchase invoices, price-adjustment "
-                    "evidence, interest statements, and payment-network "
-                    "reports under the applicable recordkeeping rules. "
-                    "IRC Section 6050W reporting does not by itself "
-                    "determine taxable profit, and purchase-linked "
-                    "rebates require treatment distinct from interest "
-                    "or standalone promotional income. Reconcile "
-                    "information returns to the ledger rather "
-                    "than forcing ledger classifications to match "
-                    "an unexplained gross reporting number."
-                ),
-            ],
-            "table": {
-                "caption": "Eleven Explicit Mappings: Ten In-Scope Operating Workflows and One Excluded Cross-Shelf Reference",
-                "headers": [
-                    "Workflow or supplied mapping identity",
-                    "Concrete unit calculation and decision",
-                    "Evidence needed before counting value",
-                    "Risk fallback and model boundary",
-                ],
-                "rows": [
-                    [
-                        "Entity verification workflow supporting wholesale counterparty credit decisions.",
-                        "Five outstanding purchases of $2,000 create $10,000 unsecured reimbursement exposure requiring independent repayment resources.",
-                        "Match contracting entity, official registry identity, relevant UCC evidence, beneficiary details, and completed pilot settlements.",
-                        "Reduce commitments to independently repayable amounts when identity, authority, or payment performance cannot be established.",
-                    ],
-                    [
-                        "Tax routing workflow supporting documented DE, NH, and OR merchandise delivery.",
-                        "A $10,000 purchase with $200 spread leaves $120 after $45 shipping and $35 expected loss.",
-                        "Retain accepted warehouse destination, seller tax treatment, qualifying resale documentation where required, and actual landed invoice.",
-                        "Reprice using actual assessed tax or cancel before purchase when the proposed treatment is unsupported.",
-                    ],
-                    [
-                        "Commitment matching workflow connecting accepted quantities with wholesale reimbursement obligations.",
-                        "A commitment for ten $1,000 units supports $10,000 inventory exposure; two unaccepted units leave $2,000 unmatched.",
-                        "Preserve original commitment version, SKU specifications, quantity acceptance, reimbursement price, and contractual payment-trigger language.",
-                        "Stop additional orders and resolve the unaccepted units through the documented return or alternative-buyer process.",
-                    ],
-                    [
-                        "Parcel claims workflow isolating insured logistics losses from merchandise spread.",
-                        "One missing $2,000 parcel among five equal parcels leaves $2,000 unresolved, not an automatic insurance receivable.",
-                        "Join packing evidence, serial records, coverage conditions, tracking events, warehouse inspection, and timely claim submissions.",
-                        "Reserve the disputed amount and use the documented carrier claim process without assuming full recovery.",
-                    ],
-                    [
-                        "Settlement forecasting workflow measuring buying-group cash arrival against card obligations.",
-                        "A $10,000 balance due day 55 remains fully payable when expected reimbursement slips from day 12 to day 60.",
-                        "Use contract-defined acceptance dates, cleared bank receipts, actual issuer statements, and observed delay distributions.",
-                        "Fund repayment from independent reserves and suspend purchasing when stressed coverage fails the desk's liquidity test.",
-                    ],
-                    [
-                        "Card eligibility workflow measuring commercial rewards without manufactured payment volume.",
-                        "Eligible $10,000 spend earning 3% creates $300 before fees, reversals, financing, and fulfillment losses.",
-                        "Verify issuer reward terms, eligible transaction treatment, current caps, statement posting, and approved commercial purchasing capacity.",
-                        "Underwrite zero reward when eligibility fails and avoid consumer card-cycling or unsupported replacement-card assumptions.",
-                    ],
-                    [
-                        "Portal attribution workflow separating referral observations from confirmed rebate earnings.",
-                        "A valid 1% portal reward on $10,000 adds $100; a commercial-resale exclusion reduces that component to zero.",
-                        "Retain click evidence, merchant terms, coupon eligibility, order confirmation, validation status, and eventual paid reward.",
-                        "Submit an official missing-reward claim while excluding disputed amounts from repayment cash and confirmed contribution.",
-                    ],
-                    [
-                        "Invoice-fee routing workflow comparing legitimate B2B payment costs with commercial rewards.",
-                        "A $10,000 invoice earning 3% against a 2.9% fee leaves $10; earning 2% instead loses $90.",
-                        "Capture actual Plastiq or Melio quote, permitted supplier identity, issuer treatment, invoice authenticity, and supplier receipt.",
-                        "Use ordinary ACH when verified rewards fail to exceed payment fees and all incremental financing costs.",
-                    ],
-                    [
-                        "Treasury maturity workflow earning interest only on properly available reserves.",
-                        "Illustrative $10,000 at 4.5% for 25 days earns $30.82 before costs using simple annualized planning arithmetic.",
-                        "Use actual available cash, purchased-security confirmation, settlement date, maturity proceeds, card due date, and transfer cutoffs.",
-                        "Leave repayment money in available cash when maturity or transfer timing cannot preserve the documented due-date buffer.",
-                    ],
-                    [
-                        "Bank-bonus qualification workflow isolating conditional awards from ordinary treasury yield.",
-                        "A $200 earned bonus less $75 account fees leaves $125 before taxes and capital opportunity cost.",
-                        "Archive offer eligibility, qualifying activities, minimum-balance periods, payout windows, account fees, and clawback conditions.",
-                        "Assign zero forecast bonus when conditions cannot be satisfied economically without diverting required repayment reserves.",
-                    ],
-                    [
-                        "sportsbook_promo_ev_matched_betting_syndicates remains an excluded cross-shelf mapping outside the three operating models.",
-                        "Hypothetical $1,000 promotional face value at 70%–85% yields $700–$850 before costs; universal guaranteed proceeds are unsupported.",
-                        "Separate reference arithmetic from verified eligibility and settlement facts; collect no participant accounts or promotional balances here.",
-                        "Supplied participant-only device and cellular execution with high-liquidity mainlines remains external; allocate no desk capital or revenue.",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": "An information edge exists only when every promised dollar has an evidence trail and every borrowed dollar has a repayment date.",
-    "diagram_id": "diag-04",
-    "action_checklist": [
-        "Create a counterparty evidence packet linking exact legal identity, relevant UCC search, accepted warehouse terms, verified beneficiary, and completed pilot payment.",
-        "Capture purchase-specific tax treatment, accepted buying-group commitment, commercial reward eligibility, portal exclusions, and the actual payment-service quote before spending.",
-        "Implement separate wholesale, rebate, and treasury subledgers with stable identifiers, source fingerprints, explicit observation times, and reversible correction entries.",
-        "Reserve repayment cash against actual card statements and stress a buying-group payment arriving after the due date alongside an issuer capacity reduction.",
-        "Run daily stale-source, unmatched-shipment, reversed-reward, duplicate-event, and cash-coverage diagnostics; restore and reconcile a backup every week.",
-        "Reproduce all three canonical gross-to-retained-to-profit bridges and keep the excluded cross-shelf mapping outside capital allocation and revenue reporting.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "6 Del. C. § 9-307 — Location of debtor",
-            "url": "https://delcode.delaware.gov/title6/c009/sc03/index.html",
-            "relevance": "Supports determining debtor location for secured-transactions analysis; a Delaware warehouse alone does not establish the relevant debtor jurisdiction.",
-        },
-        {
-            "title": "6 Del. C. § 9-503 — Name of debtor and secured party",
-            "url": "https://delcode.delaware.gov/title6/c009/sc05/index.html",
-            "relevance": "Provides debtor-name rules relevant to financing statements and disciplined UCC searches using the actual legal entity rather than a trading label.",
-        },
-        {
-            "title": "30 Del. C. Chapter 23 — Occupations requiring licenses; gross receipts provisions",
-            "url": "https://delcode.delaware.gov/title30/c023/index.html",
-            "relevance": "Anchors the distinction between Delaware business licensing and gross receipts obligations and the absence of a general retail sales tax.",
-        },
-        {
-            "title": "26 U.S.C. § 6001 — Notice or regulations requiring records, statements, and special returns",
-            "url": "https://www.law.cornell.edu/uscode/text/26/6001",
-            "relevance": "Supports retaining transaction records sufficient to substantiate purchase costs, rebates, reimbursements, interest, and the resulting tax classifications.",
-        },
-        {
-            "title": "26 U.S.C. § 6050W — Returns relating to payments made in settlement of payment card and third party network transactions",
-            "url": "https://www.law.cornell.edu/uscode/text/26/6050W",
-            "relevance": "Governs payment-settlement information reporting; reported gross amounts require reconciliation and do not independently establish taxable profit.",
-        },
-        {
-            "title": "31 CFR Part 356 — Sale and issue of marketable book-entry Treasury securities",
-            "url": "https://www.ecfr.gov/current/title-31/subtitle-B/chapter-II/subchapter-A/part-356",
-            "relevance": "Provides primary auction and issuance rules relevant to Treasury security purchases, settlement assumptions, and maturity-aware reserve planning.",
-        },
-        {
-            "title": "12 CFR Part 330 — Deposit insurance coverage",
-            "url": "https://www.ecfr.gov/current/title-12/chapter-III/subchapter-B/part-330",
-            "relevance": "Provides deposit-insurance rules requiring attention to ownership categories and account arrangements rather than relying solely on a bank-name search.",
-        },
-    ],
-}
+CHAPTER_8 = {'id': 'Q8',
+ 'chapter_id': 'Q8',
+ 'chapter_number': 8,
+ 'question_number': 8,
+ 'slug': 'chase-ink-stack',
+ 'question_prompt': 'Which Chase Ink cards should operators hold, and how do they stack them for bonuses '
+                    'and category earning?',
+ 'kicker': 'Q8 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'The Chase Ink Stack',
+ 'subtitle': 'Ink Cash vs. Ink Unlimited vs. Preferred, 90K-100K welcome bonuses, 5x office-supply '
+             'categories, holding multiple Ink cards, and points vs. cash back on no-annual-fee business '
+             'cards',
+ 'layout_template': 'legal_compliance_callout',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Practitioners treat the no-fee Ink Cash and Ink Unlimited as the entry rung of a '
+                      'Chase business stack: sole proprietors apply on an SSN, balances stay off personal '
+                      'reports, and 0% APR covers the first 12 months. Both cards were pushed to an '
+                      'all-time-high 100,000-point bonus on $8,000 spend in 4 months, and speaker after '
+                      'speaker routes the points into a Sapphire or Ink Preferred to unlock Hyatt, '
+                      'Aeroplan and Air France transfers. Street mechanics center on the Ink Cash 5x '
+                      'bucket: phone and internet autopay, office-supply gift cards bought fee-free, and a '
+                      '125,000-point annual ceiling. Disagreement runs on which card comes first, with '
+                      "John Liang and Credit4CEO's split on Unlimited simplicity versus Cash categories, "
+                      'while Spencer Johnson logs roughly 5,000 points a year after the bonus and The '
+                      'Rewards Master reports the Ink Train being shut down.',
+ 'key_metrics': [{'label': 'Ink Cash 5x Annual Point Ceiling',
+                  'metric': 'Ink Cash 5x Annual Point Ceiling',
+                  'value': '125,000 points per year on the $25,000 cap',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Maxing the shared 5x cap on office supply stores plus internet, cable and '
+                             'phone services, framed as enough for a roundtrip business class flight to '
+                             'Europe or 3 to 5 luxury Hyatt nights.',
+                  'source': 'Miles with Mary - Points & Miles Travel ([E07WIJs8BE0 @ 00:02:58])'},
+                 {'label': 'Office-Store Gift Card Monthly Yield',
+                  'metric': 'Office-Store Gift Card Monthly Yield',
+                  'value': '6,000 points from $1,200 of gift cards in one month',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Fee-free Visa gift cards bought at Staples or Office Depot with the Ink '
+                             'Cash, then spent on groceries and utilities outside a signup-bonus period.',
+                  'source': 'Leen on Travel ([zK3uQ4upb_4 @ 00:00:43])'},
+                 {'label': 'Welcome Bonus Return on Spend',
+                  'metric': 'Welcome Bonus Return on Spend',
+                  'value': '12.5% floor up to 31.25%',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': '$750 standard Ink Cash offer divided by $6,000 required spend, stretching to '
+                             '$1,875 of value when redeemed toward a business class flight to Japan on '
+                             'ANA.',
+                  'source': 'Ask Sebby Business ([oH1xNl2vB28 @ 00:02:17])'},
+                 {'label': 'Relationship Manager Credit Limits',
+                  'metric': 'Relationship Manager Credit Limits',
+                  'value': '$50,000 to $75,000 on a single Ink Unlimited',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Limits reported when a Chase branch relationship manager justifies the '
+                             'funding need to underwriting, versus $2,000 to $12,000 without one.',
+                  'source': 'Just Money Ish ([04bDgAQcsYs @ 00:05:43])'}],
+ 'sections': [{'section_number': 1,
+               'title': 'The Practitioner Consensus',
+               'paragraphs': ['The entry ticket is lower than most operators assume. John Liang says a '
+                              'formal LLC or C-Corp is unnecessary: anyone who has flipped items on eBay, '
+                              'driven for Uber or run any side hustle generating revenue qualifies as a '
+                              'sole proprietor and fills their Social Security number into the EIN field '
+                              'twice, with a free IRS-issued EIN optional for anyone who wants to hand '
+                              'vendors a separate number [SkbED_I8KzM @ 00:00:41]. Cards and Points pushes '
+                              'the floor further, stating that a freelancer, independent contractor or gig '
+                              'worker needs no EIN, no separate bank account and no revenue yet, and can '
+                              'list a personal phone number and home address on the application '
+                              "[z9qhRLe7frA @ 00:01:15]. Credit4CEO's frames it as intent: if you intend "
+                              'to make money you are a business, and their own first business approval, '
+                              'the Ink Unlimited, landed before they had a company or any income, helped '
+                              'by existing Chase checking, savings and personal cards [uvd7Aufi38A @ '
+                              '00:07:34]. The payoff every camp leans on is reporting. Ish of Just Money '
+                              'Ish says the personal guarantee pulls personal credit at approval, but the '
+                              'account never reports to the personal file unless you default, so a $5,000, '
+                              '$10,000 or $20,000-plus business balance can sit beside a strong personal '
+                              'score as long as no payment is missed, keeping the door open for further '
+                              'personal and business applications [04bDgAQcsYs @ 00:02:57].',
+                              "Gatekeeping runs through Chase's 5/24 rule, and the speakers agree on how "
+                              'to sequence around it. Just Money Ish describes it as an unofficial rule '
+                              'that blocks a new Chase card if you opened five or more cards in the last '
+                              '24 months, warns that authorized-user accounts eat a slot, and notes the '
+                              'business card needs that last open slot at application but does not consume '
+                              'it afterward because it never lands on the personal report [04bDgAQcsYs @ '
+                              '00:01:32]. Rachel of Rachel | Points & Miles confirms the rule counts cards '
+                              'from every issuer and lays out the sequencing play: with four personal '
+                              'cards opened in two years, a Sapphire Reserve for Business approval does '
+                              'not push the count to five, because Chase business cards drop into a '
+                              'separate pool, so an Ink Business Unlimited application can follow while '
+                              'still under 5/24 [59DiBbciIn8 @ 00:12:56]. The second gate is bonus '
+                              'eligibility. CardsChooser says Chase may block the bonus if you ever held a '
+                              'no-fee Chase business card, so pick either the Ink Cash or the Ink '
+                              'Unlimited, and match the spend window to when your normal bills hit '
+                              '[pie5mBLwycU @ 00:00:27]. Miles with Mary states flatly that Chase lets you '
+                              'earn the welcome bonus on only one of the two no-fee Inks, so the second '
+                              'card gets added later purely for its everyday earning structure '
+                              '[z45WdojPWE8 @ 00:07:21].',
+                              'The core value mechanic is identical across playbooks: the no-fee Inks earn '
+                              'Ultimate Rewards points marketed as cash back, and the real money comes '
+                              'from moving them. John Liang explains the Ink Cash and Ink Unlimited cannot '
+                              'transfer to airline or hotel partners directly; you combine the points into '
+                              'a Sapphire product or the Ink Preferred and transfer from there, pointing '
+                              'to Air France business class to Paris for 60,000 points against a $3,000 to '
+                              '$5,000 fare, and Hyatt nights at 30,000 to 45,000 points instead of $700 to '
+                              '$1,000 cash [SkbED_I8KzM @ 00:06:37]. Daily Drop calls it the '
+                              'cashback-to-points conversion that explains why they hold seven Chase '
+                              'business cards: paired with a points-earning Chase card, the Ink Cash 5% '
+                              'becomes 5x Ultimate Rewards and a $750 bonus becomes 75,000 points from a '
+                              'no-fee card [61XiQ9ahJjA @ 00:03:51]. Miles with Mary adds that the move '
+                              'happens in a few taps inside the Chase app, and that left standalone the '
+                              'points are worth one cent each [E07WIJs8BE0 @ 00:05:15]. The financing leg '
+                              'is equally agreed: Ish calls the 12-month 0% purchase APR, stacked with no '
+                              'personal reporting, one of the craziest plays in the credit game for '
+                              'funding a new business interest-free for a full year while the personal '
+                              'score stays intact [04bDgAQcsYs @ 00:04:02].'],
+               'table': {'caption': 'Chase Ink Stack: Where the Practitioners Line Up',
+                         'headers': ['Consensus Point',
+                                     'What Practitioners Report',
+                                     'Operator Implication',
+                                     'Expert Source'],
+                         'rows': [['No LLC or EIN is required to apply',
+                                   'Sole proprietors with any revenue-generating side hustle apply using '
+                                   'their Social Security number in both fields',
+                                   'eBay flips, Uber driving or freelance work is enough to open the stack',
+                                   'John Liang ([SkbED_I8KzM @ 00:00:41])'],
+                                  ['Business balances stay off personal credit reports',
+                                   'Personal guarantee pulls personal credit, but the account only reports '
+                                   'to the personal file on default',
+                                   'Large business balances do not drag personal utilization or score '
+                                   'while payments stay current',
+                                   'Just Money Ish ([04bDgAQcsYs @ 00:02:57])'],
+                                  ['Chase 5/24 gates every Ink application',
+                                   'Five or more new cards from any issuer in 24 months triggers denial, '
+                                   'but approved Chase business cards do not count',
+                                   'Stack Chase business cards while still under five so each approval '
+                                   'preserves room',
+                                   'Rachel | Points & Miles ([59DiBbciIn8 @ 00:12:40])'],
+                                  ['One welcome bonus across Ink Cash and Ink Unlimited',
+                                   'Chase pays the bonus on only one of the two no-fee Inks, so the second '
+                                   'card is earning-only',
+                                   'Apply first for the card whose earning profile your business needs '
+                                   'most',
+                                   'Miles with Mary - Points & Miles Travel ([z45WdojPWE8 @ 00:07:21])'],
+                                  ['No-fee Inks need a premium partner card to transfer',
+                                   'Points must be combined into Sapphire Preferred, Sapphire Reserve or '
+                                   'Ink Preferred before going to Hyatt or airlines',
+                                   'Hold one annual-fee Chase card to unlock transfer-partner value on Ink '
+                                   'points',
+                                   'Cards and Points ([z9qhRLe7frA @ 00:05:36])'],
+                                  ['Ink Cash earning core is 5x on a shared $25,000 cap',
+                                   'Office supply stores plus internet, cable and phone earn 5% on the '
+                                   'first $25,000 combined, then 1%',
+                                   'Route recurring telecom bills and office-store purchases into the '
+                                   'bucket before the anniversary reset',
+                                   'Ask Sebby Business ([oH1xNl2vB28 @ 00:00:12])'],
+                                  ['Zero annual fee and 12-month 0% APR on both entry Inks',
+                                   'Both cards carry no annual fee and a 0% intro APR on purchases for the '
+                                   'first year',
+                                   'Use the interest-free window to fund startup expenses with nothing '
+                                   'paid to hold the card',
+                                   "Jake's Tech Lab ([W3nb-AdwMck @ 00:03:13])"]]}},
+              {'section_number': 2,
+               'title': 'Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['The Ink Cash 5x bucket is where the unit economics live. Miles with Mary '
+                              'runs the ceiling: maxing the $25,000 cap at 5x yields 125,000 points a year '
+                              'from office supply and telecom spend alone, enough in their framing for a '
+                              'roundtrip business class flight to Europe or three to five luxury Hyatt '
+                              'nights [E07WIJs8BE0 @ 00:02:58]. In the head-to-head, Mary turns that into '
+                              'a hurdle the Ink Unlimited cannot clear cheaply: the flat 1.5x card would '
+                              'need over $83,000 of total spend to match those 125,000 points, so if '
+                              'spending lines up with the Ink Cash categories it wins on pure math '
+                              '[z45WdojPWE8 @ 00:04:34]. Ask Sebby Business models the most common scaled '
+                              'use, commercial internet. Low-end business internet runs $500 a month and '
+                              'fiber $1,300 to $1,500; at $1,500 times 12 months, $18,000 of spend earns '
+                              '90,000 bonus points, worth $900 at one cent or $1,800 at their two-cent '
+                              'target. Sebby is blunt that nobody should buy extra internet for fun; the '
+                              'play is capturing 5x on bills already being paid [oH1xNl2vB28 @ 00:04:30]. '
+                              'Daily Drop runs the small-operator version, a $250 monthly phone and '
+                              'internet bill producing $3,000 of annual spend and $150 back at 5%, and '
+                              'admits the number is not exciting until the points-conversion layer turns '
+                              'it into transferable Ultimate Rewards [61XiQ9ahJjA @ 00:03:36].',
+                              'The street-level accelerator is office-supply gift cards run through the 5x '
+                              'category. Colleen of Leen on Travel says Staples and Office Depot each run '
+                              'fee-free Visa and Mastercard gift card windows twice a month; buying those '
+                              'with the Ink Cash earns 5x, and one month they logged 6,000 points by '
+                              'pushing $1,200 of grocery and utility spending through those cards '
+                              '[zK3uQ4upb_4 @ 00:00:43]. Their execution rules are tight: always add a '
+                              'soda or a pack of gum so the total never ends in 000, because round numbers '
+                              "look like manufactured spending; register a PIN on the card's website "
+                              'before use, since Aldi and most merchants require it; and at Office Depot '
+                              'buy two $200 cards rather than a $200 and a $100 card to capture the '
+                              '$15-off-$300 promo [zK3uQ4upb_4 @ 00:02:28]. The Rewards Master confirms '
+                              'the same sleeper angle, noting office supply stores often sell gift cards '
+                              'at a discounted rate so the 5x stacks on top, calling it what a lot of '
+                              'people do with this card even though they mostly use it for their phone '
+                              'bill [j9y58XP66lw @ 00:03:29]. Ask Sebby Business adds that Staples and '
+                              'Office Depot carry strong price-match guarantees and that a lot of people '
+                              'treat the category as a money printer and hit the $25,000 cap [oH1xNl2vB28 '
+                              '@ 00:04:02].',
+                              "Application mechanics and limit engineering get specific. Credit4CEO's says "
+                              'the annual revenue field takes projected numbers: they entered $5,000 a '
+                              'month, about $60,000 a year, for an e-commerce store that did not exist '
+                              'yet, but they warn that a $20,000 monthly spend estimate against $60,000 of '
+                              'personal income and $60,000 of projected revenue raises red flags, so '
+                              '$2,000 to $3,000 a month is the realistic band, and trucking, real estate, '
+                              'cannabis and gambling categories read as high risk [uvd7Aufi38A @ '
+                              '00:10:36]. Ish says Chase hands out $50,000 to $75,000 limits on this one '
+                              'card, but only through a relationship manager who takes the application in '
+                              'the branch and justifies the funding need to the underwriter; without one, '
+                              'expect $2,000, $10,000 or $12,000. Their checklist is a 700 score, no '
+                              'derogatories in two years, few hard inquiries in three to six months and '
+                              'one existing card at $5,000 or more [04bDgAQcsYs @ 00:06:39]. Spencer '
+                              'Johnson describes the bonus-reload loop: Ink bonuses become available again '
+                              'every two years, so you product change the current Ink Cash to a different '
+                              'Ink card and reapply fresh, or apply under a separate business, sole '
+                              'proprietorship on SSN versus an LLC, because Chase treats those as separate '
+                              'products and the welcome bonus can land multiple times [egM5zxfGtj0 @ '
+                              '00:02:37].'],
+               'table': {'caption': 'Chase Ink Stack: Street Numbers and Levers',
+                         'headers': ['Lever', 'Exact Number or Tool', 'How It Is Run', 'Expert Source'],
+                         'rows': [['Ink Cash 5x annual ceiling',
+                                   '$25,000 shared cap yields 125,000 points per year',
+                                   'Push office supply, internet, cable and phone spend until the shared '
+                                   'cap resets',
+                                   'Miles with Mary - Points & Miles Travel ([E07WIJs8BE0 @ 00:02:58])'],
+                                  ['Office-store gift card cycle',
+                                   '$1,200 of fee-free Visa gift cards produced 6,000 points in one month',
+                                   'Buy fee-free Visa and Mastercard cards in store, then spend them on '
+                                   'groceries and utilities',
+                                   'Leen on Travel ([zK3uQ4upb_4 @ 00:00:43])'],
+                                  ['Commercial internet routing',
+                                   '$18,000 yearly spend equals 90,000 points, $900 cash or $1,800 travel',
+                                   'Put the business fiber or commercial internet bill on the Ink Cash '
+                                   'every month',
+                                   'Ask Sebby Business ([oH1xNl2vB28 @ 00:04:30])'],
+                                  ['Relationship manager limit push',
+                                   '$50,000 to $75,000 limits versus $2,000 to $12,000 without one',
+                                   'Apply in branch and have the banker justify the business funding need '
+                                   'to underwriting',
+                                   'Just Money Ish ([04bDgAQcsYs @ 00:06:18])'],
+                                  ['Chase business checking relationship bonus',
+                                   'One-time 10% bonus on all eligible cash back earned in year one',
+                                   'Hold a Chase business checking account within the first card '
+                                   'anniversary year to qualify',
+                                   "Credit4CEO's ([uvd7Aufi38A @ 00:01:42])"],
+                                  ['Card-routing and bonus-tracking software',
+                                   'Max Rewards app with a welcome bonus spend tracker',
+                                   'Aggregate balances, due dates and per-merchant card recommendations '
+                                   'across five Chase cards',
+                                   'Spencer Johnson ([egM5zxfGtj0 @ 00:06:15])'],
+                                  ['Transfer bonus timing on Aeroplan',
+                                   'A 20% bonus turns 90,000 Chase points into 108,000 Aeroplan points',
+                                   'Combine Ink points into a Sapphire card, wait for a bonus window, then '
+                                   'transfer',
+                                   'Miles with Mary - Points & Miles Travel ([E07WIJs8BE0 @ 00:06:46])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Running the Ink Cash Gift Card and Redemption Loop Clean',
+                           'body': 'Execution details the practitioners use to keep the 5x bucket '
+                                   'producing and to squeeze more than one cent out of no-fee Ink points.',
+                           'items': ['Never let a gift card purchase total end in 000; throw a soda or '
+                                     'pack of gum on the order because round numbers look like '
+                                     'manufactured spending to the issuer [Leen on Travel — zK3uQ4upb_4 @ '
+                                     '00:01:15]',
+                                     'Branded gift cards like Chewy or Amazon bought on staples.com still '
+                                     'earn 5x, while the other office-store website codes as a third party '
+                                     'instead of an office supply store [Leen on Travel — zK3uQ4upb_4 @ '
+                                     '00:02:10]',
+                                     'Type giftcardmall.com in fully rather than clicking the suggested '
+                                     'URL, since a known spam lookalike steals card numbers; save receipts '
+                                     'and photograph both sides of every card, as the claim replacement '
+                                     'took about 6 weeks [Leen on Travel — zK3uQ4upb_4 @ 00:02:59]',
+                                     'Pay a $900 flight with a 2x card to earn 1,800 points, then cash out '
+                                     '90,000 Ink points as a $900 statement credit or mailed check to pay '
+                                     'that card off, pushing effective value above one cent per point '
+                                     '[Miles with Mary - Points & Miles Travel — E07WIJs8BE0 @ 00:08:26]']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Qualify and Sequence Under 5/24',
+                              'action': 'Confirm you sit under five new cards in 24 months, keep personal '
+                                        'utilization under 30% and stay below four Experian inquiries in '
+                                        '12 months, then land Chase business cards while the slot is open.',
+                              'detail': 'Approved Chase business cards drop into a separate pool and do '
+                                        'not push you to five [Rachel | Points & Miles — 59DiBbciIn8 @ '
+                                        "00:12:56]; Credit4CEO's targets under 30% personal utilization "
+                                        'and fewer than four Experian hard inquiries before applying '
+                                        "[Credit4CEO's — uvd7Aufi38A @ 00:06:53]."},
+                             {'step': 2,
+                              'title': 'Fill the Business Application Realistically',
+                              'action': 'Select sole proprietor if applying on SSN, enter projected annual '
+                                        'revenue, pick the closest NAICS category and set an estimated '
+                                        'monthly spend that matches income and revenue.',
+                              'detail': 'Projected revenue of $5,000 a month, about $60,000 a year, was '
+                                        'accepted for a pre-launch e-commerce store, while $2,000 to '
+                                        '$3,000 monthly spend is the realistic band against $60,000 '
+                                        'revenue; expect instant approval or a 7 to 10 business day review '
+                                        "[Credit4CEO's — uvd7Aufi38A @ 00:10:36]."},
+                             {'step': 3,
+                              'title': 'Clear the Minimum Spend and Load the 5x Bucket',
+                              'action': 'Hit the $8,000-in-4-months threshold on the 100,000-point offer, '
+                                        'then set phone, internet and cable bills to autopay and run '
+                                        'office-store gift cards through the Ink Cash.',
+                              'detail': 'Both no-fee Inks offered 100,000 points after $8,000 in the first '
+                                        '4 months [John Liang — SkbED_I8KzM @ 00:02:47]; set the phone '
+                                        'bill to the card and collect 5x every month [The Rewards Master — '
+                                        'j9y58XP66lw @ 00:03:10]; one gift card month produced 6,000 '
+                                        'points on $1,200 [Leen on Travel — zK3uQ4upb_4 @ 00:00:43].'},
+                             {'step': 4,
+                              'title': 'Combine Points and Transfer Out',
+                              'action': 'Move Ink points into a Sapphire Preferred, Sapphire Reserve or '
+                                        'Ink Preferred inside the Chase app, then transfer to Hyatt, '
+                                        'Aeroplan, United or Air France for outsized redemptions.',
+                              'detail': 'Points move card to card in the Chase app before transferring to '
+                                        'partners [Miles with Mary - Points & Miles Travel — E07WIJs8BE0 @ '
+                                        '00:05:15]; a one-way Air France flight to Croatia priced at '
+                                        '$2,762 cost 68,000 points plus $220, a 3.74 cents-per-point '
+                                        'result [Spencer Johnson — egM5zxfGtj0 @ 00:09:49].'}]},
+              {'heading': 'Section 3: Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The sharpest split is which no-fee Ink to open first. John Liang, forced to '
+                              'pick one, leans Ink Unlimited purely for simplicity: 1.5% set-and-forget '
+                              'because a business owner has other things to worry about, reserving the Ink '
+                              'Cash for operators who know for a fact they spend at office supply stores '
+                              "or take clients out [SkbED_I8KzM @ 00:08:07]. Credit4CEO's normally ranks "
+                              'the Unlimited first for new businesses unsure where expenses will land, but '
+                              'flipped the order to Ink Cash first because its split offer paid $350 after '
+                              '$3,000 in three months plus $400 after $6,000 in six months, a lower spend '
+                              "bar than the Unlimited's $6,000 in three months [uvd7Aufi38A @ 00:12:47]. "
+                              'Miles with Mary sets a two-condition test: the Ink Cash wins only if real '
+                              'spend runs through office supplies, internet, cable and phone, and a '
+                              'flat-rate card like the Freedom Unlimited already covers everything else; '
+                              'maxing the $25,000 5x cap yields 125,000 points, which would take over '
+                              '$83,000 of spend on the Unlimited [z45WdojPWE8 @ 00:05:44]. The Rewards '
+                              'Master rejects the hedging entirely and calls the Ink Cash the best of the '
+                              'lineup, especially when paired with a Sapphire card for transfers, running '
+                              'a phone bill on it like clockwork every month [j9y58XP66lw @ 00:06:33].',
+                              'Practitioners split hard on whether the Ink Cash keeps earning after the '
+                              "bonus lands. Spencer Johnson's one-year audit is the bear case: roughly "
+                              '$6,000 of the 2023 spend went to the welcome bonus and only about $800 to '
+                              'normal spending, generating 10,529 points beyond the 90,000-point bonus; '
+                              'the projection after year one is maybe 5,000 points a year, worth $50 in '
+                              'cash, $75 through the portal or $100 via transfer partners, and the verdict '
+                              'is that the card was mainly there for the welcome offer [egM5zxfGtj0 @ '
+                              '00:11:36]. Ask Sebby Business runs the bull case on overhead: commercial '
+                              'internet at $1,500 a month is $18,000 a year, which at 5x is 90,000 points, '
+                              '$900 in cash or $1,800 at a 2-cent target, while office supply buyers lean '
+                              'on Staples and Office Depot price-match guarantees and treat the card as a '
+                              'money printer to hit the $25,000 cap [oH1xNl2vB28 @ 00:04:30]. Daily Drop '
+                              'lands in between, pricing a $250 monthly phone-and-internet bill at $150 a '
+                              'year and admitting it is not super exciting until the cash back converts to '
+                              'Ultimate Rewards points [61XiQ9ahJjA @ 00:03:36]. Leen on Travel pushes the '
+                              'ceiling with gift cards, earning 6,000 points in one month by routing '
+                              '$1,200 of groceries and utilities through fee-free Visa gift cards bought '
+                              'with the Ink Cash [zK3uQ4upb_4 @ 00:00:43].',
+                              'Redemption philosophy splits the room as sharply as card choice. Hort '
+                              'frames cash back as a guaranteed win that stabilizes cash flow and points '
+                              'as a high-stakes game that demands learning transfer systems and checking '
+                              'award availability, which eats time for a busy business owner [udBIC2M_DhM '
+                              '@ 00:05:53]. Spencer Johnson shows why the points camp keeps playing: an '
+                              'Air France leg to Croatia with a cash value around $2,762 cost 68,000 '
+                              'points plus $220 in taxes, pricing out at 3.74 cents per point, while '
+                              'Southwest bookings never beat about 1.4 cents [egM5zxfGtj0 @ 00:09:49]. '
+                              'Miles with Mary runs a hybrid: book a $900 flight on another card earning '
+                              '2x for 1,800 points, cash out 90,000 Ink Cash points as a $900 statement '
+                              'credit or mailed check, and pay the travel card off with it, so the points '
+                              'effectively beat 1 cent each [E07WIJs8BE0 @ 00:08:26]. On funding, Just '
+                              'Money Ish draws the hardest line, saying only get business cards with a 0% '
+                              'offer on purchases and stay far away otherwise, and that $50,000 to $75,000 '
+                              'limits take a relationship manager at a Chase branch who justifies the ask '
+                              'to the underwriter; without one, expect $2,000, $10,000 or $12,000 and that '
+                              'is it [04bDgAQcsYs @ 00:06:39].'],
+               'table': {'caption': 'Competing Ink Stack Playbooks Side by Side',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Which no-fee Ink card to open first',
+                                   'Ink Unlimited first for flat 1.5% set-and-forget simplicity on every '
+                                   'purchase',
+                                   'Ink Cash first when its current offer needs lower spend to unlock',
+                                   "John Liang ([SkbED_I8KzM @ 00:08:07]); Credit4CEO's ([uvd7Aufi38A @ "
+                                   "00:12:47]); Jake's Tech Lab ([W3nb-AdwMck @ 00:02:34])"],
+                                  ['Ongoing role of the Ink Cash after year one',
+                                   'Mainly a welcome-offer vehicle earning roughly 5,000 points a year '
+                                   'afterward',
+                                   'Commercial internet at $1,500 monthly turns into 90,000 points every '
+                                   'year',
+                                   'Spencer Johnson ([egM5zxfGtj0 @ 00:11:36]); Ask Sebby Business '
+                                   '([oH1xNl2vB28 @ 00:04:30])'],
+                                  ['Office supply gift card play for 5x points',
+                                   'Fee-free Visa gift cards convert groceries and utilities into 5x '
+                                   'office spend',
+                                   'Acknowledged as a common move but rarely used, phone bill autopay '
+                                   'instead',
+                                   'Leen on Travel ([zK3uQ4upb_4 @ 00:00:43]); The Rewards Master '
+                                   '([j9y58XP66lw @ 00:03:47])'],
+                                  ['Cash back versus transferable points redemption',
+                                   'Cash back is a guaranteed win that stabilizes business cash flow',
+                                   'Air France business award priced at 3.74 cents per point through '
+                                   'transfers',
+                                   'Hort ([udBIC2M_DhM @ 00:05:53]); Spencer Johnson ([egM5zxfGtj0 @ '
+                                   '00:09:49])'],
+                                  ['Earning repeat Ink welcome bonuses over time',
+                                   'Bonus every two years via product change or applying under separate '
+                                   'businesses',
+                                   'Only one bonus between Cash and Unlimited, and prior no-fee Ink can '
+                                   'block it',
+                                   'Spencer Johnson ([egM5zxfGtj0 @ 00:02:04]); Miles with Mary - Points & '
+                                   'Miles Travel ([z45WdojPWE8 @ 00:07:21]); CardsChooser ([pie5mBLwycU @ '
+                                   '00:00:27])'],
+                                  ['How to push for a bigger credit limit',
+                                   'Apply in a Chase branch with a relationship manager justifying '
+                                   'business funds',
+                                   'Keep estimated monthly spend realistic against income to avoid '
+                                   'high-risk flags',
+                                   "Just Money Ish ([04bDgAQcsYs @ 00:06:18]); Credit4CEO's ([uvd7Aufi38A "
+                                   '@ 00:10:36])'],
+                                  ['Whether a 0% intro APR is mandatory',
+                                   'Only take business cards carrying a 0% offer on purchases, nothing '
+                                   'else',
+                                   'Ink Preferred has no intro APR, so balances get paid off monthly',
+                                   'Just Money Ish ([04bDgAQcsYs @ 00:04:26]); Elliot Explains '
+                                   '([ZxYkMfSxxpI @ 00:02:19])']]}},
+              {'heading': 'Section 4: Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The first wall is approval, and it trips people before they ever earn a '
+                              "point. Just Money Ish says Chase's unofficial 5/24 rule kills applications "
+                              'from anyone with five or more cards in 24 months, that authorized-user '
+                              'accounts eat a slot, and that the channel has seen many people denied '
+                              'because they opened too many cards; the pull hits Experian and sometimes '
+                              'TransUnion as well [04bDgAQcsYs @ 00:01:42]. Rachel | Points & Miles adds '
+                              'the counting nuance: the rule tallies personal cards from every issuer, but '
+                              'once approved, a Chase business card lands in a separate pool and does not '
+                              'push the count toward five, so the walkthrough stacks a Sapphire Reserve '
+                              'for Business and then an Ink Unlimited while staying under 5/24 '
+                              "[59DiBbciIn8 @ 00:12:56]. Credit4CEO's sets the soft thresholds: personal "
+                              'utilization under 30%, fewer than four Experian hard inquiries in 12 '
+                              'months, and a score of at least 680 [uvd7Aufi38A @ 00:06:53]. The same '
+                              'operator flags high-risk business types such as trucking, real estate, '
+                              'cannabis and gambling, and warns that a $20,000 monthly spend estimate '
+                              'against $60,000 of income raises red flags, so keep the number realistic '
+                              '[uvd7Aufi38A @ 00:10:36]. Pending reviews run 7 to 10 business days, and '
+                              'cards sometimes simply arrive in the mail.',
+                              'Product-selection mistakes are the second trap. The Rewards Master knows '
+                              'someone who applied for the Ink Business Premier assuming the more '
+                              'expensive card was better, only to find its $195-fee rewards work as cash '
+                              'back or 1 cent per point and cannot be combined with other cards or '
+                              "transferred to partners [j9y58XP66lw @ 00:05:59]. Credit4CEO's adds the "
+                              'exit problem: an Ink Business Preferred that stops paying can be downgraded '
+                              'to a no-fee Ink, but the Premier has no downgrade path, so cancellation is '
+                              'the only way out [uvd7Aufi38A @ 00:16:03]. Even the right card decays. '
+                              'Spencer Johnson lost the internet and cable 5x once those bills moved into '
+                              'a rental portal, and points out the Ink Cash carries no cell phone '
+                              'protection, which is why that operator is willing to put phone bills on a '
+                              'lower-earning card that covers the phone rather than pay the carrier for '
+                              'protection [egM5zxfGtj0 @ 00:04:05]. Caps bite too: John Liang notes both '
+                              'the 5% and 2% buckets revert to 1% after $25,000 in a year, and the Ink '
+                              'Cash and Unlimited cannot transfer to airline or hotel partners without a '
+                              'Sapphire or Ink Preferred sitting in the ecosystem as an intermediary '
+                              '[SkbED_I8KzM @ 00:06:21].',
+                              'The gift-card lane carries its own operational landmines, and Leen on '
+                              'Travel reports them firsthand: the fee-free Visa and Mastercard cards must '
+                              'be bought in store, branded cards can come from staples.com, but buying '
+                              'from the flagged office-store website codes as a third party rather than an '
+                              'office supply store; the cards fail at the gas pump, Costco takes only the '
+                              'Visa versions, and every transaction gets a soda or pack of gum added so '
+                              'the total never ends in 000 and looks like manufactured spend [zK3uQ4upb_4 '
+                              '@ 00:01:15]. The worst hit was a spoofed site that steals gift card '
+                              'numbers; typing the address fully avoids it, and the claim took about six '
+                              'weeks to produce a replacement, so receipts and front-and-back photos get '
+                              'saved [zK3uQ4upb_4 @ 00:02:59]. Bonus economics carry traps too. '
+                              'CardsChooser warns Chase may block the bonus if you ever had a no-fee Chase '
+                              'business card and that bonus clocks vary between 3 months, 180 days and 3 '
+                              'billing cycles [pie5mBLwycU @ 00:00:27], while The Rewards Master reports '
+                              'the Ink Train churn is being shut down because people were slamming it '
+                              "[j9y58XP66lw @ 00:02:00]. Leen's general rule still applies: category "
+                              'points have zero importance while a signup bonus is in progress.'],
+               'table': {'caption': 'Firsthand Ink Stack Failures and Countermeasures',
+                         'headers': ['Failure Mode',
+                                     'What Happened Or Was Reported',
+                                     'Operator Countermeasure',
+                                     'Expert Source'],
+                         'rows': [['Denied under 5/24 after too many new cards',
+                                   'Many applicants blocked for opening too many cards, authorized-user '
+                                   'accounts counted',
+                                   'Count every new card including authorized-user slots before applying '
+                                   'to Chase',
+                                   'Just Money Ish ([04bDgAQcsYs @ 00:01:42])'],
+                                  ['Applying for the Ink Premier by mistake',
+                                   'Applicant assumed the pricier card was better and got non-transferable '
+                                   'rewards',
+                                   'Confirm the product name; Premier has no downgrade path and only '
+                                   'cancellation',
+                                   "The Rewards Master ([j9y58XP66lw @ 00:05:59]); Credit4CEO's "
+                                   '([uvd7Aufi38A @ 00:16:03])'],
+                                  ['Bonus-category bills migrate off the card',
+                                   'Internet and cable moved into a rental portal, killing the 5x earning',
+                                   'Audit where recurring bills actually charge before counting on 5x '
+                                   'categories',
+                                   'Spencer Johnson ([egM5zxfGtj0 @ 00:04:05])'],
+                                  ['Gift card numbers stolen through a spoof site',
+                                   'Lookalike gift card mall site stole numbers; replacement took about '
+                                   'six weeks',
+                                   'Type the balance URL fully, save receipts and photograph both card '
+                                   'sides',
+                                   'Leen on Travel ([zK3uQ4upb_4 @ 00:02:59])'],
+                                  ['Online gift card purchase codes wrong',
+                                   'Office-store website purchases code as third party instead of office '
+                                   'supply',
+                                   'Buy Visa and Mastercard gift cards in store, branded cards via '
+                                   'staples.com',
+                                   'Leen on Travel ([zK3uQ4upb_4 @ 00:02:10])'],
+                                  ['Overstated monthly spend on the application',
+                                   'A $20,000 monthly estimate on $60,000 income can mark you high risk',
+                                   'Project realistic spend, around $2,000 to $3,000 monthly on $60,000 '
+                                   'revenue',
+                                   "Credit4CEO's ([uvd7Aufi38A @ 00:10:36])"],
+                                  ['Year-two earning cliff after the welcome bonus',
+                                   'Post-bonus earning projected near 5,000 points, about $50 to $100 '
+                                   'yearly',
+                                   'Keep small subscriptions on the card so it stays active with Chase',
+                                   'Spencer Johnson ([egM5zxfGtj0 @ 00:11:36])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Four Checks Before You Apply or Load Gift Cards',
+                           'body': 'Every item below is a trap a practitioner hit or watched someone hit. '
+                                   'Clear all four before submitting an Ink application or running gift '
+                                   'card volume through the 5x office category.',
+                           'items': ['Count every card opened in the last 24 months from any issuer, '
+                                     'including authorized-user accounts, and stay under five before '
+                                     'applying [Just Money Ish — 04bDgAQcsYs @ 00:02:03].',
+                                     'Confirm the product is the Ink Cash, Unlimited or Preferred, not the '
+                                     '$195 Ink Premier whose rewards cannot combine or transfer [The '
+                                     'Rewards Master — j9y58XP66lw @ 00:06:15].',
+                                     'Set a PIN and verify the balance on every gift card, never let a '
+                                     'total end in 000, and type the gift card mall address fully [Leen on '
+                                     'Travel — zK3uQ4upb_4 @ 00:01:28].',
+                                     'Pick the Ink Cash or Ink Unlimited for the bonus deliberately, '
+                                     'because Chase pays the welcome bonus on only one of the two [Miles '
+                                     'with Mary - Points & Miles Travel — z45WdojPWE8 @ 00:07:21].']}}],
+ 'pull_quote': 'A nice round number looks suspicious in the eyes of credit card companies and will be '
+               'suspicious of manufactured spending. — Leen on Travel (zK3uQ4upb_4 @ 00:01:15).',
+ 'diagram_id': 'diag-04',
+ 'action_checklist': ['Apply as a sole proprietor if you have gig, freelance or 1099 income, entering your '
+                      'Social Security number in the tax ID field [Rachel | Points & Miles — 59DiBbciIn8 @ '
+                      '00:12:23].',
+                      'Choose the Ink Cash only if real spend runs through office supplies, internet, '
+                      'cable and phone and a flat-rate card covers the rest; otherwise take the Ink '
+                      'Unlimited [Miles with Mary - Points & Miles Travel — z45WdojPWE8 @ 00:05:44].',
+                      'Set your phone, internet and cable bills to autopay on the Ink Cash to collect 5x '
+                      'every month without thinking about it [The Rewards Master — j9y58XP66lw @ '
+                      '00:03:29].',
+                      'Pair the no-fee Ink with an Ink Preferred or Sapphire card and combine points to '
+                      'convert cash back into transferable Ultimate Rewards points [Daily Drop — '
+                      '61XiQ9ahJjA @ 00:03:51].',
+                      'Buy fee-free Visa gift cards in store at Office Depot as two $200 cards to capture '
+                      'the $15 off $300 promotion while earning 5x [Leen on Travel — zK3uQ4upb_4 @ '
+                      '00:02:28].',
+                      'Track minimum-spend progress toward the welcome bonus with a bonus tracker such as '
+                      'MaxRewards, then keep small subscriptions on the card to hold it active [Spencer '
+                      'Johnson — egM5zxfGtj0 @ 00:06:38].'],
+ 'statutory_citations': [{'title': 'Spencer Johnson — The Chase Ink Cash: My HONEST 1-Year Review '
+                                   '[00:11:36]',
+                          'url': 'https://www.youtube.com/watch?v=egM5zxfGtj0&t=696s',
+                          'relevance': 'Primary practitioner testimony on real year-one versus post-bonus '
+                                       'Ink Cash earning economics.'},
+                         {'title': 'Leen on Travel — My favorite perk of the Chase Business Ink Cash  '
+                                   '#travelhacking [00:01:15]',
+                          'url': 'https://www.youtube.com/watch?v=zK3uQ4upb_4&t=75s',
+                          'relevance': 'Primary practitioner testimony on office supply gift card spend, '
+                                       'round-number avoidance and spoof-site theft.'},
+                         {'title': "Credit4CEO's — Chase Ink Business Credit Cards (Which One Is For You?) "
+                                   '[00:10:36]',
+                          'url': 'https://www.youtube.com/watch?v=uvd7Aufi38A&t=636s',
+                          'relevance': 'Primary practitioner testimony on application inputs, high-risk '
+                                       'flags and the Ink Premier downgrade trap.'},
+                         {'title': 'The Rewards Master — Why the Chase Ink Cash Is STILL the Best Business '
+                                   'Card (Full Review & Defense!) [00:05:59]',
+                          'url': 'https://www.youtube.com/watch?v=j9y58XP66lw&t=359s',
+                          'relevance': 'Primary practitioner testimony on the wrong-product Premier '
+                                       'mistake and the Ink Train shutdown.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'SkbED_I8KzM',
+                       'title': 'Chase Ink Unlimited vs Chase Ink Cash - 100,000 Point Bonus!',
+                       'channel': 'John Liang',
+                       'author': 'John Liang',
+                       'text': 'Now, the problem with that is the Chase Ink Cash and the Ink Unlimited '
+                               "don't directly transfer to partners.",
+                       'tip': 'Now, the problem with that is the Chase Ink Cash and the Ink Unlimited '
+                              "don't directly transfer to partners.",
+                       'timestamp': 381,
+                       'timestamp_seconds': 381,
+                       'timestamp_label': '[00:06:21]',
+                       'url': 'https://www.youtube.com/watch?v=SkbED_I8KzM&t=381s',
+                       'markdown': '[00:06:21](https://www.youtube.com/watch?v=SkbED_I8KzM&t=381s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '04bDgAQcsYs',
+                       'title': '5 Reasons Why You Should Get the Chase Ink Business Unlimited Credit '
+                                'Card!',
+                       'channel': 'Just Money Ish',
+                       'author': 'Just Money Ish',
+                       'text': 'The way how you get one of these is by walking into the Chase branch and '
+                               'applying for the credit card there with a relationship manager.',
+                       'tip': 'The way how you get one of these is by walking into the Chase branch and '
+                              'applying for the credit card there with a relationship manager.',
+                       'timestamp': 378,
+                       'timestamp_seconds': 378,
+                       'timestamp_label': '[00:06:18]',
+                       'url': 'https://www.youtube.com/watch?v=04bDgAQcsYs&t=378s',
+                       'markdown': '[00:06:18](https://www.youtube.com/watch?v=04bDgAQcsYs&t=378s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'pie5mBLwycU',
+                       'title': 'Best Business Card Bonuses in November 2026  - Ink Cash vs Triple Cash vs '
+                                'Ink Unlimited',
+                       'channel': 'CardsChooser',
+                       'author': 'CardsChooser',
+                       'text': 'Also the Chase may block the bonus if you ever had a no fee Chase business '
+                               'card.',
+                       'tip': 'Also the Chase may block the bonus if you ever had a no fee Chase business '
+                              'card.',
+                       'timestamp': 27,
+                       'timestamp_seconds': 27,
+                       'timestamp_label': '[00:00:27]',
+                       'url': 'https://www.youtube.com/watch?v=pie5mBLwycU&t=27s',
+                       'markdown': '[00:00:27](https://www.youtube.com/watch?v=pie5mBLwycU&t=27s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'E07WIJs8BE0',
+                       'title': 'Chase Ink Business Cash Review 2026 — The Best No Fee Business Card?',
+                       'channel': 'Miles with Mary - Points & Miles Travel',
+                       'author': 'Miles with Mary - Points & Miles Travel',
+                       'text': 'These 5x points are up to a cap of $25,000 in spend per year, and office '
+                               'supply stores sell a lot more than just printer paper.',
+                       'tip': 'These 5x points are up to a cap of $25,000 in spend per year, and office '
+                              'supply stores sell a lot more than just printer paper.',
+                       'timestamp': 178,
+                       'timestamp_seconds': 178,
+                       'timestamp_label': '[00:02:58]',
+                       'url': 'https://www.youtube.com/watch?v=E07WIJs8BE0&t=178s',
+                       'markdown': '[00:02:58](https://www.youtube.com/watch?v=E07WIJs8BE0&t=178s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '61XiQ9ahJjA',
+                       'title': 'I Have 7 Chase Business Cards: This One’s the Best',
+                       'channel': 'Daily Drop',
+                       'author': 'Daily Drop',
+                       'text': 'If you pair either one of these with a points-earning Chase card, you can '
+                               'convert all of that cashback into Chase Ultimate Rewards points.',
+                       'tip': 'If you pair either one of these with a points-earning Chase card, you can '
+                              'convert all of that cashback into Chase Ultimate Rewards points.',
+                       'timestamp': 231,
+                       'timestamp_seconds': 231,
+                       'timestamp_label': '[00:03:51]',
+                       'url': 'https://www.youtube.com/watch?v=61XiQ9ahJjA&t=231s',
+                       'markdown': '[00:03:51](https://www.youtube.com/watch?v=61XiQ9ahJjA&t=231s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'egM5zxfGtj0',
+                       'title': 'The Chase Ink Cash: My HONEST 1-Year Review',
+                       'channel': 'Spencer Johnson',
+                       'author': 'Spencer Johnson',
+                       'text': 'All these numbers just go to show you in broad daylight that this card was '
+                               'mainly in addition to setup for the welcome offer.',
+                       'tip': 'All these numbers just go to show you in broad daylight that this card was '
+                              'mainly in addition to setup for the welcome offer.',
+                       'timestamp': 744,
+                       'timestamp_seconds': 744,
+                       'timestamp_label': '[00:12:24]',
+                       'url': 'https://www.youtube.com/watch?v=egM5zxfGtj0&t=744s',
+                       'markdown': '[00:12:24](https://www.youtube.com/watch?v=egM5zxfGtj0&t=744s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'egM5zxfGtj0',
+                       'title': 'The Chase Ink Cash: My HONEST 1-Year Review',
+                       'channel': 'Spencer Johnson',
+                       'author': 'Spencer Johnson',
+                       'text': 'Technically what you can do instead is apply for the card under different '
+                               'businesses.',
+                       'tip': 'Technically what you can do instead is apply for the card under different '
+                              'businesses.',
+                       'timestamp': 136,
+                       'timestamp_seconds': 136,
+                       'timestamp_label': '[00:02:16]',
+                       'url': 'https://www.youtube.com/watch?v=egM5zxfGtj0&t=136s',
+                       'markdown': '[00:02:16](https://www.youtube.com/watch?v=egM5zxfGtj0&t=136s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'W3nb-AdwMck',
+                       'title': 'Ink Business Unlimited vs Ink Business Cash | Best Chase Business Card '
+                                '2026',
+                       'channel': "Jake's Tech Lab",
+                       'author': "Jake's Tech Lab",
+                       'text': 'Ink Business Unlimited is all about set it and forget it.',
+                       'tip': 'Ink Business Unlimited is all about set it and forget it.',
+                       'timestamp': 123,
+                       'timestamp_seconds': 123,
+                       'timestamp_label': '[00:02:03]',
+                       'url': 'https://www.youtube.com/watch?v=W3nb-AdwMck&t=123s',
+                       'markdown': '[00:02:03](https://www.youtube.com/watch?v=W3nb-AdwMck&t=123s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'oH1xNl2vB28',
+                       'title': 'BEST Chase Business Credit Card?! | Chase Ink Cash Review',
+                       'channel': 'Ask Sebby Business',
+                       'author': 'Ask Sebby Business',
+                       'text': 'Lots of things you can buy there and a lot of people treat this as a money '
+                               'printer and hit that 25k cap.',
+                       'tip': 'Lots of things you can buy there and a lot of people treat this as a money '
+                              'printer and hit that 25k cap.',
+                       'timestamp': 242,
+                       'timestamp_seconds': 242,
+                       'timestamp_label': '[00:04:02]',
+                       'url': 'https://www.youtube.com/watch?v=oH1xNl2vB28&t=242s',
+                       'markdown': '[00:04:02](https://www.youtube.com/watch?v=oH1xNl2vB28&t=242s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'z9qhRLe7frA',
+                       'title': 'Which Chase Business Card is Right For You? [Compare Chase Ink Credit '
+                                'Cards]',
+                       'channel': 'Cards and Points',
+                       'author': 'Cards and Points',
+                       'text': "The biggest downside to the Ink Premiere is that its rewards don't "
+                               'transfer to the other Chase cards.',
+                       'tip': "The biggest downside to the Ink Premiere is that its rewards don't transfer "
+                              'to the other Chase cards.',
+                       'timestamp': 157,
+                       'timestamp_seconds': 157,
+                       'timestamp_label': '[00:02:37]',
+                       'url': 'https://www.youtube.com/watch?v=z9qhRLe7frA&t=157s',
+                       'markdown': '[00:02:37](https://www.youtube.com/watch?v=z9qhRLe7frA&t=157s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ZxYkMfSxxpI',
+                       'title': 'Chase Ink Business Preferred Credit Card Review 2025 | Worth It or Leave '
+                                'It?',
+                       'channel': 'Elliot Explains',
+                       'author': 'Elliot Explains',
+                       'text': 'Approval usually requires good to excellent credit and the Chase 5 by 24 '
+                               'rule can be a hurdle for some applicants.',
+                       'tip': 'Approval usually requires good to excellent credit and the Chase 5 by 24 '
+                              'rule can be a hurdle for some applicants.',
+                       'timestamp': 139,
+                       'timestamp_seconds': 139,
+                       'timestamp_label': '[00:02:19]',
+                       'url': 'https://www.youtube.com/watch?v=ZxYkMfSxxpI&t=139s',
+                       'markdown': '[00:02:19](https://www.youtube.com/watch?v=ZxYkMfSxxpI&t=139s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'zK3uQ4upb_4',
+                       'title': 'My favorite perk of the Chase Business Ink Cash  #travelhacking',
+                       'channel': 'Leen on Travel',
+                       'author': 'Leen on Travel',
+                       'text': 'A nice round number looks suspicious in the eyes of credit card companies '
+                               'and will be suspicious of manufactured spending.',
+                       'tip': 'A nice round number looks suspicious in the eyes of credit card companies '
+                              'and will be suspicious of manufactured spending.',
+                       'timestamp': 75,
+                       'timestamp_seconds': 75,
+                       'timestamp_label': '[00:01:15]',
+                       'url': 'https://www.youtube.com/watch?v=zK3uQ4upb_4&t=75s',
+                       'markdown': '[00:01:15](https://www.youtube.com/watch?v=zK3uQ4upb_4&t=75s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'z45WdojPWE8',
+                       'title': "Chase Ink Business Cash or Ink Business Unlimited? Here's How to Choose",
+                       'channel': 'Miles with Mary - Points & Miles Travel',
+                       'author': 'Miles with Mary - Points & Miles Travel',
+                       'text': 'Chase only lets you earn the bonus on one of these two cards, not both.',
+                       'tip': 'Chase only lets you earn the bonus on one of these two cards, not both.',
+                       'timestamp': 441,
+                       'timestamp_seconds': 441,
+                       'timestamp_label': '[00:07:21]',
+                       'url': 'https://www.youtube.com/watch?v=z45WdojPWE8&t=441s',
+                       'markdown': '[00:07:21](https://www.youtube.com/watch?v=z45WdojPWE8&t=441s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'uvd7Aufi38A',
+                       'title': 'Chase Ink Business Credit Cards (Which One Is For You?)',
+                       'channel': "Credit4CEO's",
+                       'author': "Credit4CEO's",
+                       'text': "With the Ink Business Premier, if it doesn't offer you any additional "
+                               'value, your only option would be to cancel it since there are no downgrade '
+                               'paths available.',
+                       'tip': "With the Ink Business Premier, if it doesn't offer you any additional "
+                              'value, your only option would be to cancel it since there are no downgrade '
+                              'paths available.',
+                       'timestamp': 963,
+                       'timestamp_seconds': 963,
+                       'timestamp_label': '[00:16:03]',
+                       'url': 'https://www.youtube.com/watch?v=uvd7Aufi38A&t=963s',
+                       'markdown': '[00:16:03](https://www.youtube.com/watch?v=uvd7Aufi38A&t=963s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'uvd7Aufi38A',
+                       'title': 'Chase Ink Business Credit Cards (Which One Is For You?)',
+                       'channel': "Credit4CEO's",
+                       'author': "Credit4CEO's",
+                       'text': 'If your estimated monthly spend is going to be twenty thousand dollars a '
+                               'month, this may raise some red flags and may consider you a high risk.',
+                       'tip': 'If your estimated monthly spend is going to be twenty thousand dollars a '
+                              'month, this may raise some red flags and may consider you a high risk.',
+                       'timestamp': 636,
+                       'timestamp_seconds': 636,
+                       'timestamp_label': '[00:10:36]',
+                       'url': 'https://www.youtube.com/watch?v=uvd7Aufi38A&t=636s',
+                       'markdown': '[00:10:36](https://www.youtube.com/watch?v=uvd7Aufi38A&t=636s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '59DiBbciIn8',
+                       'title': 'Are You Using The WRONG Business Credit Cards?! (Here are the 7 best)!',
+                       'channel': 'Rachel | Points & Miles',
+                       'author': 'Rachel | Points & Miles',
+                       'text': "But here's the good news. Once you're approved, Chase business cards don't "
+                               'count towards your 524.',
+                       'tip': "But here's the good news. Once you're approved, Chase business cards don't "
+                              'count towards your 524.',
+                       'timestamp': 760,
+                       'timestamp_seconds': 760,
+                       'timestamp_label': '[00:12:40]',
+                       'url': 'https://www.youtube.com/watch?v=59DiBbciIn8&t=760s',
+                       'markdown': '[00:12:40](https://www.youtube.com/watch?v=59DiBbciIn8&t=760s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'udBIC2M_DhM',
+                       'title': 'Points vs Cash Back Analysis Best No Annual Fee Business Credit Cards '
+                                '2026',
+                       'channel': 'Hort',
+                       'author': 'Hort',
+                       'text': 'Cash back is a guaranteed win that stabilizes your cash flow, while points '
+                               'are a high stakes game.',
+                       'tip': 'Cash back is a guaranteed win that stabilizes your cash flow, while points '
+                              'are a high stakes game.',
+                       'timestamp': 353,
+                       'timestamp_seconds': 353,
+                       'timestamp_label': '[00:05:53]',
+                       'url': 'https://www.youtube.com/watch?v=udBIC2M_DhM&t=353s',
+                       'markdown': '[00:05:53](https://www.youtube.com/watch?v=udBIC2M_DhM&t=353s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'j9y58XP66lw',
+                       'title': 'Why the Chase Ink Cash Is STILL the Best Business Card (Full Review & '
+                                'Defense!)',
+                       'channel': 'The Rewards Master',
+                       'author': 'The Rewards Master',
+                       'text': 'They accidentally applied for the wrong one thinking that if they get the '
+                               "more expensive one, it's the better one.",
+                       'tip': 'They accidentally applied for the wrong one thinking that if they get the '
+                              "more expensive one, it's the better one.",
+                       'timestamp': 359,
+                       'timestamp_seconds': 359,
+                       'timestamp_label': '[00:05:59]',
+                       'url': 'https://www.youtube.com/watch?v=j9y58XP66lw&t=359s',
+                       'markdown': '[00:05:59](https://www.youtube.com/watch?v=j9y58XP66lw&t=359s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q8.'}]}

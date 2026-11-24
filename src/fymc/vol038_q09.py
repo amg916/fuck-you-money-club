@@ -1,725 +1,866 @@
 from __future__ import annotations
 
-CHAPTER_9 = {
-    "id": "Q9",
-    "chapter_id": "Q9",
-    "chapter_number": 9,
-    "question_number": 9,
-    "slug": "contracts-statutory-guardrails-licensing-outreach-scripts",
-    "question_prompt": "Which federal/state statutes, licensing boundaries, contract clauses, and compliant outreach scripts govern contingent corporate bill-audit & tax-credit recovery?",
-    "kicker": "Q9 / THE BIG MONEY PLAYBOOKS",
-    "title": "Contracts, Statutory Guardrails, Licensing & Outreach Scripts",
-    "subtitle": "Circular 230 Fee Boundaries, State Appeal Credentials, Carrier Authorizations, Transferable-Credit Settlement & Evidence-Led Outreach",
-    "layout_template": "legal_compliance_notes",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #38, Rank #06 of 42, earns a 94/100 Money-to-Manpower Score by "
-        "turning documented billing errors and eligible incentives into earned operator "
-        "fees across 12 mapped plays. The operating boundary is precise: carrier "
-        "recoveries, utility adjustments, assessment appeals, federal tax work, and "
-        "state credit placements require different authority, pricing, and evidence. "
-        "Secure signed authorization and baseline invoices before revealing findings; "
-        "separate restricted tax engagements from commercial contingency work. Formula "
-        "v2.0 projects annual owner net profit of $33,000 Conservative, $217,150 Base, "
-        "and $504,000 Scaled. This chapter supplies contract mechanics, state-specific "
-        "credential checks, transferable-credit settlement controls, and verbatim scripts "
-        "that sell an auditable process without promising recovery amounts or treating "
-        "client refunds as operator revenue."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$110,000",
-            "context": "Annual earned operator revenue; excludes underlying client bills",
-            "note": "30% net margin; $33,000 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Base",
-            "value": "$505,000",
-            "context": "Annual earned operator revenue; excludes underlying client bills",
-            "note": "43.0% net margin; $217,150 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$900,000",
-            "context": "Annual earned operator revenue; excludes underlying client bills",
-            "note": "56% net margin; $504,000 annual owner net profit; 2 FT + 4 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Assign Each Recovery Lane Its Own Authority and Fee Rule",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Build twelve operating lanes before quoting one blended contingency: FedEx "
-                    "parcel refunds, UPS parcel refunds, utility tariff corrections, utility "
-                    "sales-tax refunds, cooling-tower sewer credits, waste invoice recoveries, "
-                    "telecom billing disputes, property assessment appeals, WOTC processing, "
-                    "specialty federal credit substantiation, 36-month shared-savings administration, "
-                    "and state transferable-credit placement. These are the chapter's twelve mapped "
-                    "plays, not twelve interchangeable permissions. Commercial invoice analysis "
-                    "does not authorize tax representation, a property appeal, or credential "
-                    "sharing. Create a jurisdiction register recording the client entity, service "
-                    "address, taxing authority, carrier account, claim period, limitation date, "
-                    "permitted representative, and applicable fee restriction. For FedEx and UPS, "
-                    "obtain signed Letters of Authorization and baseline invoice snapshots before "
-                    "disclosing shipment-level findings. Inspect the customer's negotiated agreement "
-                    "for service-guarantee waivers, claim exclusions, and duplicate-recovery provisions. "
-                    "A documented late shipment is an investigative lead, not automatically an "
-                    "eligible refund. For utilities, distinguish tariff misapplication from an "
-                    "engineering retrofit and separate historical refunds from prospective rate "
-                    "changes. Waste and telecom claims turn on service orders, renewal terms, "
-                    "usage records, taxes, and dispute deadlines. Freeze the original source "
-                    "documents with collection dates and hashes so another reviewer can reproduce "
-                    "the conclusion after the supplier changes its portal or invoice format."
-                ),
-                (
-                    "Treasury Circular 230, 31 CFR §10.27, restricts practitioner contingent fees "
-                    "for covered matters before the IRS, subject to defined exceptions and "
-                    "relevant judicial limits. Do not translate a carrier's thirty-percent "
-                    "recovery arrangement into a percentage of a federal credit merely because "
-                    "both engagements produce cash. Section 10.27 distinguishes ordinary return "
-                    "work from specified examination, interest-or-penalty refund, and judicial "
-                    "proceeding circumstances; court decisions also limit its application in "
-                    "certain settings. Have the responsible tax practitioner classify the actual "
-                    "service and document the permissible pricing basis rather than asserting a "
-                    "universal percentage-fee exemption. Use a separate fixed-fee or hourly "
-                    "engagement when the proposed contingency is restricted. Under 31 CFR "
-                    "§10.22, covered practitioners must exercise due diligence; attaching software "
-                    "output does not discharge that responsibility. WOTC introduces a different "
-                    "clock: 26 U.S.C. §51(d)(13) requires timely prescreening and certification "
-                    "procedures, including submission within the statutory twenty-eight-day period "
-                    "when using that route. The provision in §51(c)(4) sets a commencement-of-work "
-                    "cutoff of December 31, 2025 unless subsequently amended. For later starts, "
-                    "verify enacted extension language before representing eligibility, while "
-                    "continuing properly supported work on earlier qualifying starts. Never "
-                    "backdate prescreening records to repair a missed deadline."
-                ),
-                (
-                    "Property-tax engagements need a state-by-state credential map, not a national "
-                    "consultant label. Texas Occupations Code Chapter 1152 regulates property-tax "
-                    "consultants and provides specific exemptions; determine whether the actual "
-                    "person performing the work must register and whether supervision requirements "
-                    "apply. California Revenue and Taxation Code §1607 addresses written "
-                    "authorization for agents appearing in assessment proceedings. Neither "
-                    "example establishes permission for every state, tribunal, or court appeal. "
-                    "Record who may inspect records, sign the application, negotiate, appear, "
-                    "and litigate; retain local counsel where the next procedural step requires "
-                    "an attorney. For utility and sewer claims, retrieve the applicable commission "
-                    "tariff or municipal ordinance, including meter certification, retroactivity, "
-                    "and refund-interest rules. A cooling-tower deduction may require an approved "
-                    "deduct meter rather than an estimated evaporation spreadsheet. Utility "
-                    "sales-tax exemptions belong in a separate state tax workstream because "
-                    "certificate requirements and refund claimants differ. Carrier API access "
-                    "must follow the account owner's authorization and the provider's developer "
-                    "agreement; an EDI invoice feed does not establish claim-submission rights. "
-                    "When authority is incomplete, keep the engagement in read-only analysis, "
-                    "identify the missing credential or document, and pause submission without "
-                    "allowing a filing deadline to disappear from the task register."
-                ),
-            ],
-            "table": {
-                "caption": "Authority Matrix for Commercial Recoveries, Tax Work, and State Representation",
-                "headers": [
-                    "Recovery lane and governing boundary",
-                    "Authority evidence required before action",
-                    "Concrete operating restriction or failure mode",
-                    "Fallback preserving a viable client engagement",
-                ],
-                "rows": [
-                    [
-                        "FedEx and UPS parcel service guarantee refund claims",
-                        "Signed account authorization plus negotiated carrier agreement extracts",
-                        "Guarantee waiver or excluded service defeats apparent lateness",
-                        "Remove waived shipments and pursue only documented eligible claims",
-                    ],
-                    [
-                        "Utility tariff corrections and utility sales-tax refund claims",
-                        "Applicable tariff sheets and state exemption certificate requirements",
-                        "Incorrect claimant identity or refund period invalidates submissions",
-                        "Correct entity records before submitting separately supported claim periods",
-                    ],
-                    [
-                        "Cooling-tower sewer deductions under applicable municipal billing ordinances",
-                        "Approved meter records and municipal deduction application instructions",
-                        "Estimated evaporation alone may fail the local evidentiary standard",
-                        "Install accepted metering and pursue supported prospective deductions first",
-                    ],
-                    [
-                        "Waste invoice recoveries and telecom billing dispute recoveries",
-                        "Executed service orders with invoices and contemporaneous usage records",
-                        "Expired dispute periods or valid renewal charges defeat recovery",
-                        "Separate recoverable errors from future contract renegotiation opportunities",
-                    ],
-                    [
-                        "Federal credit substantiation and WOTC processing service engagements",
-                        "Practitioner scope review plus dated eligibility and certification records",
-                        "Restricted percentage fees and expired statutory windows block offers",
-                        "Use permissible service pricing and verify qualifying employment dates",
-                    ],
-                    [
-                        "Property assessment appeals requiring state-specific representative authority checks",
-                        "Texas registration analysis or applicable written agency appointment documentation",
-                        "Unqualified representation can undermine filings and expose contractual liability",
-                        "Assign the authorized local practitioner before the filing deadline",
-                    ],
-                    [
-                        "Shared-savings administration and state transferable-credit placement operating lanes",
-                        "Agreed measurement baseline or verified statutory transfer eligibility evidence",
-                        "Savings estimates and credit certificates alone do not establish earnings",
-                        "Bill verified savings separately and suspend unsupported credit settlements",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four Verifications Before Any Claim Leaves the Workspace",
-                "body": (
-                    "The submission owner records evidence for each check, names the responsible "
-                    "reviewer, and preserves the decision with the claim packet."
-                ),
-                "items": [
-                    "Match the signed Letter of Authorization to the exact legal entity, account numbers, permitted actions, expiration, and provider requirements.",
-                    "Attach the operative tariff, carrier agreement, statute, or agency instruction and confirm both filing deadlines and historical recovery limits.",
-                    "Verify the representative's current credential or documented exemption, then classify tax-service pricing before presenting a percentage fee.",
-                    "Reconcile the proposed claim to immutable invoice snapshots, remove duplicate submissions, and confirm the client approved the factual calculation.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Draft Separate Schedules for Scope, Earnings, Data, and Exit",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Use a master services agreement with lane-specific schedules rather than a "
-                    "single promise to recover every overpayment. The scope schedule names covered "
-                    "entities, accounts, periods, taxes, suppliers, claim types, and exclusions; "
-                    "its attachment freezes the baseline invoice inventory before findings are "
-                    "disclosed. The authorization schedule permits only specified acts, such as "
-                    "retrieving invoices and submitting supported billing disputes, and separately "
-                    "addresses settlement authority. It does not give the operator ownership of "
-                    "client refunds or power to change banking instructions. Define a recovery "
-                    "as cleared cash or an actually applied account credit, net of reversals "
-                    "and agreed offsets, rather than an issued claim number. At a thirty-percent "
-                    "fee, a $20,000 accepted claim that yields $18,000 cash and a $2,000 "
-                    "rejection earns $5,400, not $6,000. Specify invoicing dates, payment terms, "
-                    "credit verification, reversal adjustments, and collection responsibility. "
-                    "Separate any fixed WOTC processing charge from commercial refund shares "
-                    "and from restricted federal tax services. Have the client pay each supplier "
-                    "normally while disputes proceed unless the supplier expressly authorizes "
-                    "another arrangement. An auditor-created payment shortfall can trigger service "
-                    "interruption, late charges, or an avoidable dispute over the operator's "
-                    "own fee."
-                ),
-                (
-                    "For 36-month shared savings, attach a measurement formula that neutralizes "
-                    "usage, weather, occupancy, service level, and tariff movements where relevant. "
-                    "A $5,000 monthly baseline reduced to $4,000 at equivalent activity supports "
-                    "$1,000 verified monthly savings; a thirty-percent split produces $300 per "
-                    "month and $10,800 over thirty-six fully realized months. Those future "
-                    "installments are not automatically current revenue. Define the commencement "
-                    "date, comparison period, verification source, treatment of facility closures, "
-                    "and whether negotiated extensions require a fresh signature. Prevent double "
-                    "billing when a historical refund and a future rate correction address the "
-                    "same charge. Anti-circumvention language should protect identified findings "
-                    "and documented introductions for a defined period, with exclusions for "
-                    "preexisting projects and independently documented discoveries. It should "
-                    "not claim every future improvement across the client's business. Require "
-                    "a dated findings register and client acknowledgment rather than relying "
-                    "on a broad confidentiality sentence. A termination schedule distinguishes "
-                    "earned fees, pending authorized claims, prospective work, and a narrowly "
-                    "defined collection tail. State who completes deadline-sensitive filings "
-                    "after termination, whether the client may revoke portal access immediately, "
-                    "and how both parties exchange the evidence needed to avoid duplicate "
-                    "claims or abandoned appeals."
-                ),
-                (
-                    "Negotiate liability, dispute resolution, and information rights as operating "
-                    "mechanics, not decorative boilerplate. A liability cap can reference a "
-                    "defined amount or specified fee period, with negotiated treatment of "
-                    "fraud, willful misconduct, confidentiality breaches, and other appropriate "
-                    "exceptions; enforceability depends on governing law and the actual claim. "
-                    "Specify required insurance, notice procedures, mitigation duties, and "
-                    "responsibility for penalties caused by inaccurate client records versus "
-                    "operator errors. The dispute clause identifies governing law, venue or "
-                    "arbitration rules, escalation contacts, and treatment of undisputed invoices. "
-                    "It cannot extend a statutory appeal deadline or prevent a regulator "
-                    "from exercising authority. Give the client ownership of its invoices, "
-                    "payroll records, claim packets, and engagement-specific deliverables, while "
-                    "reserving the operator's preexisting methods and reusable software. Permit "
-                    "use of confidential records only for contracted purposes and identify "
-                    "approved subprocessors. Establish access controls, incident notification "
-                    "timing, export formats, retention periods, and deletion obligations subject "
-                    "to applicable preservation duties. IRS Form 2848 and Form 8821 serve "
-                    "different purposes; information access is not equivalent to representation "
-                    "authority. Tax-return information may implicate 26 U.S.C. §7216 and "
-                    "implementing regulations when handled by covered preparers, so data reuse "
-                    "and disclosures require a separate, fact-specific review."
-                ),
-            ],
-            "table": {
-                "caption": "Seven Contract Clauses That Convert Findings into Collectible Fees",
-                "headers": [
-                    "Clause and intended commercial protection",
-                    "Specific language elements to negotiate",
-                    "Evidence retained throughout the engagement",
-                    "Failure response built into the agreement",
-                ],
-                "rows": [
-                    [
-                        "Scope and authorization limited to identified recovery activities",
-                        "List entities, accounts, claim periods, exclusions, and settlement permissions",
-                        "Store signed schedules alongside the original baseline invoice inventory",
-                        "Amend the schedule before adding accounts or representation tasks",
-                    ],
-                    [
-                        "Fee trigger linked to realized cash or applied credits",
-                        "Define earned percentages, offsets, reversals, invoicing, and payment dates",
-                        "Retain bank confirmation or ledger proof of applied credits",
-                        "Reverse affected fees when contractual clawback conditions actually occur",
-                    ],
-                    [
-                        "Shared-savings measurement across thirty-six separately verified operating months",
-                        "Normalize activity and define start dates and closure adjustments",
-                        "Preserve baseline calculations and each approved monthly measurement worksheet",
-                        "Suspend disputed installments while paying the separately undisputed amounts",
-                    ],
-                    [
-                        "Anti-circumvention protection limited to documented findings and introductions",
-                        "Specify protection periods and exclude independently established client projects",
-                        "Maintain dated findings acknowledgments and preexisting project exception lists",
-                        "Resolve attribution disputes using contemporaneous records rather than speculation",
-                    ],
-                    [
-                        "Liability allocation with negotiated caps and specific exception treatment",
-                        "Define monetary limits, insurance duties, notices, and mitigation obligations",
-                        "Preserve insurance certificates and source-record responsibility acknowledgments throughout engagement",
-                        "Escalate material errors promptly and preserve applicable claim deadlines",
-                    ],
-                    [
-                        "Dispute resolution and termination with orderly pending-claim handover",
-                        "Name governing law, forum, escalation contacts, and collection tails",
-                        "Track pending claims, statutory deadlines, and delivered termination notices",
-                        "Transfer evidence promptly without abandoning authorized deadline-sensitive client filings",
-                    ],
-                    [
-                        "Client data ownership and operator background intellectual property",
-                        "Separate deliverables, reusable methods, subprocessors, retention, and deletion duties",
-                        "Keep access logs and approved exports within segregated client workspaces",
-                        "Revoke access and provide agreed exports before scheduled deletion",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Protect Attribution Before the Client Can Implement the Finding",
-                "body": (
-                    "Experienced recovery operators preserve the commercial chain from "
-                    "source record to accepted finding to realized benefit."
-                ),
-                "items": [
-                    "Capture negotiated FedEx and UPS guarantee provisions before counting eligible shipments; a clean lateness report cannot overcome a contractual waiver.",
-                    "Record each disclosed tariff correction in a dated findings register linked to the signed scope, so fee attribution survives a supplier's direct adjustment.",
-                    "Request utility credit-ledger exports as well as refund checks; an applied credit can satisfy the agreed fee trigger without a bank deposit.",
-                    "Give credit purchasers a certificate-level diligence index and settlement checklist, but withhold unnecessary taxpayer identifiers from exploratory buyer outreach.",
-                ],
-            },
-        },
-        {
-            "heading": "3. Settle Transferable Credits Without Misstating Value or Revenue",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "The play state_film_historic_brownfield_tax_credit_brokerage, TRACK_1, matches "
-                    "certified state film, historic rehabilitation, and brownfield credits with "
-                    "eligible taxpayers at negotiated discounts while retaining disclosed "
-                    "placement fees. Transferability belongs to the particular state program "
-                    "and credit vintage; a label resembling a transferable program elsewhere "
-                    "proves nothing. Federal historic rehabilitation credits under 26 U.S.C. "
-                    "§47 cannot simply be sold outright because a state historic credit "
-                    "permits assignment. Establish statutory transfer permission, seller "
-                    "ownership, certification status, permitted transfer count, transfer "
-                    "registration, buyer eligibility, tax type, carryforward, expiration, and "
-                    "recapture exposure before circulating a priced opportunity. Georgia's "
-                    "film-credit framework in O.C.G.A. §48-7-40.26 illustrates why the actual "
-                    "state provision matters, but its mechanics must not be copied onto "
-                    "another state's historic or brownfield program. Distinguish an application "
-                    "from an allocation, an allocation from a final certificate, and a "
-                    "certificate from a completed transfer. Build the buyer list around "
-                    "verified tax usability, not merely corporate size. Obtain qualified "
-                    "state tax review and examine whether the proposed structure introduces "
-                    "additional licensing obligations, especially when someone proposes "
-                    "selling an entity interest instead of assigning a credit. A placement "
-                    "operator earns for documented intermediation, not for issuing a tax "
-                    "opinion or promising the purchaser's ultimate result."
-                ),
-                (
-                    "Use transparent settlement arithmetic. In an illustrative placement, "
-                    "$100,000 of certified state credit face value sells for $90,000, and "
-                    "the seller pays a disclosed three-percent fee on purchase price. The "
-                    "operator earns $2,700; the seller receives $87,300 before other costs; "
-                    "the purchaser pays $90,000 before its own costs. The $100,000 face "
-                    "amount and $90,000 settlement proceeds are not operator revenue. A "
-                    "nominal $10,000 purchaser discount is not established realized tax savings "
-                    "until eligibility, usability, timing, and costs are resolved. State "
-                    "clearly whether the fee is seller-paid, buyer-paid, or split, and "
-                    "disclose any compensation from both sides before engagement. Use an "
-                    "independent settlement provider where appropriate, confirm bank instructions "
-                    "through a known contact, and release funds only against the agreed "
-                    "transfer evidence. The purchase agreement allocates title warranties, "
-                    "recapture responsibility, indemnity limits, survival periods, and dispute "
-                    "procedures without treating contractual promises as substitutes for "
-                    "statutory eligibility. If certification is defective, buyer usability "
-                    "fails, or transfer registration stalls, suspend settlement under the "
-                    "diligence contingencies. Rematch only verified eligible credits without "
-                    "guaranteeing tax savings. Keep a failed placement out of earned "
-                    "revenue and return funds according to the documented settlement "
-                    "instructions rather than improvising custody arrangements."
-                ),
-                (
-                    "Maintain separate operating ledgers for refund shares, shared-savings "
-                    "installments, processing fees, and placement fees, then reconcile their "
-                    "earned totals to the scorecard. Formula v2.0 fixes Conservative revenue "
-                    "at $110,000 with $77,000 expenses and $33,000 owner net profit; Base "
-                    "revenue at $505,000 with $287,850 expenses and $217,150 profit; and "
-                    "Scaled revenue at $900,000 with $396,000 expenses and $504,000 profit. "
-                    "The corresponding margins are thirty percent, 43.0 percent, and "
-                    "fifty-six percent. Staffing remains one full-time operator plus three "
-                    "contractors for Conservative and Base, then two full-time operators "
-                    "plus four contractors for Scaled. These are canonical annual cases, "
-                    "not promises that a particular contract mix will achieve them. "
-                    "The placement example explains a fee unit without adding revenue "
-                    "to those totals. Under an ASC 606 principal-versus-agent analysis, "
-                    "evaluate the promised service and control before recognizing gross "
-                    "amounts; customer refunds and credit purchase proceeds never become "
-                    "operator sales merely by passing through an account. If settlement "
-                    "documents show gross billings, bridge them explicitly to the operator's "
-                    "retained share and assess variable-consideration constraints. Age municipal "
-                    "refund receivables separately from earned fees, because slow issuance "
-                    "affects collection timing and working capital even when the underlying "
-                    "claim is valid."
-                ),
-            ],
-            "table": {
-                "caption": "Transferable-Credit Diligence and Canonical Revenue Reconciliation",
-                "headers": [
-                    "Transaction checkpoint or accounting control",
-                    "Specific calculation or documentary requirement",
-                    "Primary risk requiring an explicit decision",
-                    "Required action when evidence fails review",
-                ],
-                "rows": [
-                    [
-                        "State program permission and particular credit vintage classification",
-                        "Read the enacted transfer provision and current agency instructions",
-                        "Similar program names can conceal materially different assignment restrictions",
-                        "Remove ineligible vintages before circulating any priced buyer materials",
-                    ],
-                    [
-                        "Seller title and final certified credit availability verification",
-                        "Match certificate identifiers to seller records and prior transfer history",
-                        "Previously transferred or uncertified amounts cannot support clean settlement",
-                        "Suspend the transaction until agency-verifiable ownership evidence is available",
-                    ],
-                    [
-                        "Buyer eligibility and actual state tax usability analysis",
-                        "Confirm tax type, utilization limits, expiration, and carryforward mechanics",
-                        "Face value can exceed the purchaser's legally usable credit amount",
-                        "Reduce the allocation or rematch with a verified eligible purchaser",
-                    ],
-                    [
-                        "Disclosed placement fee on illustrative negotiated purchase price",
-                        "Multiply $90,000 purchase price by three percent for $2,700",
-                        "Treating $100,000 credit face value as sales overstates operator revenue",
-                        "Record only the earned fee and separately track settlement proceeds",
-                    ],
-                    [
-                        "Diligence-contingent settlement with documented recapture and transfer obligations",
-                        "Require agreed transfer evidence before releasing the purchaser's funds",
-                        "Failed registration or recapture exposure can undermine purchaser economics",
-                        "Suspend settlement and rematch only credits with verified eligibility",
-                    ],
-                    [
-                        "Conservative and Base annual scorecard revenue expense reconciliation",
-                        "$110,000 less $77,000 equals $33,000; $505,000 less $287,850 equals $217,150",
-                        "Adding illustrative placements again would double count scenario revenue",
-                        "Keep examples subordinate to the fixed canonical annual revenue totals",
-                    ],
-                    [
-                        "Scaled annual scorecard and six-person delivery capacity reconciliation",
-                        "$900,000 less $396,000 equals $504,000 with fifty-six percent margin",
-                        "Customer settlement proceeds can distort both margins and throughput measures",
-                        "Exclude client funds and retain two employees plus four contractors",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Classify the credit",
-                    "action": "Identify the state statute, program, vintage, seller, and final certification status.",
-                    "detail": (
-                        "Record assignment permission, transfer limits, registration requirements, "
-                        "recapture rules, and the responsible state tax reviewer."
-                    ),
-                },
-                {
-                    "step": 2,
-                    "title": "Verify the purchaser",
-                    "action": "Confirm the purchaser can use the particular credit against the relevant state tax.",
-                    "detail": (
-                        "Document tax type, utilization limits, expiration, carryforward, "
-                        "and any restrictions tied to purchaser identity or transaction structure."
-                    ),
-                },
-                {
-                    "step": 3,
-                    "title": "Document settlement",
-                    "action": "Execute price, fee, transfer, diligence, warranty, and funds-release terms.",
-                    "detail": (
-                        "Show the operator's disclosed fee separately from face value and "
-                        "purchase price; independently verify payment instructions."
-                    ),
-                },
-                {
-                    "step": 4,
-                    "title": "Close or suspend",
-                    "action": "Release settlement only after the agreed transfer evidence is complete.",
-                    "detail": (
-                        "If a condition fails, suspend under the contract and rematch only "
-                        "verified eligible credits; recognize fees only when earned."
-                    ),
-                },
-            ],
-        },
-        {
-            "heading": "4. Use Verbatim Outreach That Sells Evidence Before Outcomes",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Commercial outreach must identify the sender, describe the actual service, "
-                    "and avoid invented findings. Under CAN-SPAM, 15 U.S.C. §7704, business "
-                    "email is not categorically exempt: use accurate routing information and "
-                    "subjects, required commercial identification, a valid physical postal "
-                    "address, and an effective opt-out honored within ten business days. "
-                    "Keep the suppression list operative across contractors. Use this opening "
-                    "verbatim after supplying the sender's normal identifying signature: "
-                    "'Subject: Review of parcel and utility billing terms. We audit corporate "
-                    "parcel and utility invoices for documented billing errors and eligible "
-                    "contractual adjustments. We have not reviewed your accounts and cannot "
-                    "state that money is owed. For eligible commercial recovery work, our "
-                    "fee is an agreed share of realized recoveries. Would you consider a "
-                    "fifteen-minute scope call before sharing any records? This is a commercial "
-                    "solicitation. Reply stop to end these emails.' Append the firm's real "
-                    "postal address before sending. For calls and texts, classify the "
-                    "recipient number, technology, message purpose, consent evidence, and "
-                    "applicable state restrictions under the TCPA and FCC rules. Prefer "
-                    "individually initiated business calls with accurate identification, but "
-                    "do not assume that method removes every restriction. Honor a "
-                    "recipient's stop request immediately across the outreach sequence."
-                ),
-                (
-                    "Use discovery to establish authority and constraints before discussing a "
-                    "recovery estimate: 'Which legal entity owns these accounts, who may "
-                    "authorize records access, and are another auditor or existing refund "
-                    "service already working on them? Can we review the carrier amendments "
-                    "and baseline invoices after signing the scope and authorization? We "
-                    "will identify exclusions before calculating any fee opportunity.' For "
-                    "utilities, add: 'Which meters serve production, irrigation, and cooling "
-                    "equipment, and has the municipality approved any sewer deduction? We "
-                    "need the operative tariff and meter evidence before asserting an "
-                    "overcharge.' For tax work, say: 'Our commercial refund percentage does "
-                    "not automatically apply to federal tax services. The responsible "
-                    "practitioner will define the service, fee basis, and filing authority "
-                    "before work begins.' For WOTC, ask: 'What are the employment start "
-                    "dates, when was prescreening completed, and which state workforce "
-                    "agency received each request? We verify the applicable statutory "
-                    "employment window before offering processing.' Do not solicit full "
-                    "Social Security numbers through email or a sales form. Move "
-                    "sensitive documentation into the approved restricted workspace after "
-                    "authorization. Record the prospect's answers as unverified statements "
-                    "until documents substantiate them; a salesperson's transcript must "
-                    "not silently become an eligibility determination."
-                ),
-                (
-                    "For state credit placement, use: 'We introduce verified eligible state "
-                    "credits to purchasers whose tax position supports their use. Availability, "
-                    "transferability, price, and usability depend on the program and diligence. "
-                    "Our disclosed placement fee is separate from credit face value. We "
-                    "can exchange a redacted certificate summary before either party commits "
-                    "to settlement.' If asked for certainty, answer: 'We can commit to "
-                    "the documented review and settlement process, not to a tax outcome. "
-                    "If a diligence condition fails, settlement pauses and we consider "
-                    "only verified eligible alternatives.' For an account-access objection, "
-                    "say: 'We do not need your personal password. We can begin with "
-                    "authorized exports and request provider-supported access only within "
-                    "the signed scope.' Close discovery with a specific next step: "
-                    "'Please designate the account owner, confirm existing auditor commitments, "
-                    "and review the proposed authorization and fee schedule. We will "
-                    "return a scoped evidence request before disclosing account-level "
-                    "findings.' Track outreach source, suppression status, authorization, "
-                    "qualification, document completeness, and submission readiness separately. "
-                    "Review a sample of sent messages weekly for unsupported savings "
-                    "claims, misleading government affiliation, and missing opt-outs. Measure "
-                    "signed qualified engagements and collected earned fees rather than "
-                    "inflating performance with client bill totals, credit face values, "
-                    "or unsubmitted recovery estimates."
-                ),
-            ],
-            "table": {
-                "caption": "Outreach and Discovery Scripts with Evidence-Based Next Steps",
-                "headers": [
-                    "Conversation moment and operating objective",
-                    "Verbatim language for the customer conversation",
-                    "Evidence requested after the customer agrees",
-                    "Restriction or fallback protecting the engagement",
-                ],
-                "rows": [
-                    [
-                        "Initial commercial email seeking a narrow scope discussion",
-                        "We have not reviewed your accounts and cannot state money is owed.",
-                        "Request only a meeting and the responsible account owner's identity",
-                        "Include sender identity, postal address, commercial identification, and opt-out",
-                    ],
-                    [
-                        "Parcel discovery testing contract eligibility before refund estimates",
-                        "May we inspect the carrier amendments before estimating eligible refunds?",
-                        "Obtain negotiated agreements and baseline invoices under signed authorization",
-                        "Exclude waived services and avoid promising universal refund eligibility",
-                    ],
-                    [
-                        "Utility discovery separating tariff evidence from engineering assumptions",
-                        "Has the municipality approved this meter for sewer deduction calculations?",
-                        "Collect approved meter documentation and the applicable municipal billing rules",
-                        "Pursue supported prospective corrections when historical evidence cannot qualify",
-                    ],
-                    [
-                        "Federal tax scope discussion separating fees and practitioner authority",
-                        "The responsible practitioner will confirm the service and permissible fee basis.",
-                        "Request the proposed service description and existing representation documents",
-                        "Use a separate permissible engagement rather than copying commercial contingencies",
-                    ],
-                    [
-                        "WOTC qualification checking dates before requesting sensitive worker records",
-                        "When did employment begin, and when was prescreening completed?",
-                        "Collect dated records through an approved restricted document exchange",
-                        "Verify the enacted eligibility window and never repair dates retrospectively",
-                    ],
-                    [
-                        "Credit purchaser outreach presenting a conditional documented placement",
-                        "Our disclosed placement fee is separate from the credit's face value.",
-                        "Exchange redacted certificate summaries and purchaser usability review requirements",
-                        "Suspend settlement if transfer eligibility or purchaser usability fails",
-                    ],
-                    [
-                        "Access objection and opt-out handling without account pressure",
-                        "We can begin with authorized exports instead of your personal password.",
-                        "Record export permission or the recipient's request to stop contact",
-                        "Use provider-supported access and suppress further unwanted outreach promptly",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": "A recoverable dollar needs evidence, an earned fee needs a contract, and a submission needs authority.",
-    "diagram_id": "diag-05",
-    "action_checklist": [
-        "Create a twelve-lane jurisdiction register identifying the governing rule, authorized representative, filing deadline, fee basis, and fallback for each engagement.",
-        "Secure signed Letters of Authorization and immutable baseline invoice snapshots before revealing account-level tariff corrections or refund findings.",
-        "Separate commercial contingency schedules from federal tax services, state appeal representation, WOTC processing, and state credit placement terms.",
-        "Define realized-recovery triggers, thirty-six-month savings measurement, attribution protection, liability allocation, dispute procedures, and client data rights.",
-        "Verify state credit certification, transfer permission, purchaser usability, disclosed fees, and settlement contingencies before committing either party's funds.",
-        "Deploy reviewed outreach scripts with suppression controls, then reconcile earned operator fees to the exact Conservative, Base, and Scaled scorecard totals.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "31 CFR §10.27 — Fees",
-            "url": "https://www.ecfr.gov/current/title-31/subtitle-A/part-10/subpart-B/section-10.27",
-            "relevance": (
-                "Defines Circular 230 fee restrictions and specified exceptions; classify "
-                "the actual tax service and consider relevant judicial limits before pricing."
-            ),
-        },
-        {
-            "title": "31 CFR §10.22 — Diligence as to accuracy",
-            "url": "https://www.ecfr.gov/current/title-31/subtitle-A/part-10/subpart-B/section-10.22",
-            "relevance": (
-                "Requires covered practitioners to exercise due diligence in relevant "
-                "preparation, representations, and reliance on others' work."
-            ),
-        },
-        {
-            "title": "26 U.S.C. §51 — Amount of work opportunity credit",
-            "url": "https://www.law.cornell.edu/uscode/text/26/51",
-            "relevance": (
-                "Supplies WOTC eligibility, prescreening and certification procedures, "
-                "and the employment commencement cutoff that must be checked for amendments."
-            ),
-        },
-        {
-            "title": "Texas Occupations Code Chapter 1152 — Property Tax Consultants",
-            "url": "https://statutes.capitol.texas.gov/Docs/OC/htm/OC.1152.htm",
-            "relevance": (
-                "Establishes Texas property-tax consultant registration requirements, "
-                "regulated activities, and exemptions requiring engagement-specific review."
-            ),
-        },
-        {
-            "title": "California Revenue and Taxation Code §1607 — Authorized agents",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=1607.&lawCode=RTC",
-            "relevance": (
-                "Addresses written authorization for an agent appearing for a taxpayer "
-                "in assessment proceedings; preserve the appointment with the appeal file."
-            ),
-        },
-        {
-            "title": "26 U.S.C. §47 — Rehabilitation credit",
-            "url": "https://www.law.cornell.edu/uscode/text/26/47",
-            "relevance": (
-                "Defines the federal rehabilitation credit, which must be distinguished "
-                "from state programs permitting particular credit assignments."
-            ),
-        },
-        {
-            "title": "26 U.S.C. §7216 — Disclosure or use of information by preparers of returns",
-            "url": "https://www.law.cornell.edu/uscode/text/26/7216",
-            "relevance": (
-                "Restricts specified disclosures and uses of tax-return information by "
-                "covered preparers, subject to statutory and regulatory exceptions."
-            ),
-        },
-        {
-            "title": "26 CFR §301.7216-3 — Disclosure or use only with taxpayer consent",
-            "url": "https://www.ecfr.gov/current/title-26/section-301.7216-3",
-            "relevance": (
-                "Provides rules for qualifying taxpayer permission where required for "
-                "covered preparer disclosures or uses of tax-return information."
-            ),
-        },
-        {
-            "title": "15 U.S.C. §7704 — Requirements for transmission of messages",
-            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
-            "relevance": (
-                "Governs commercial email identification, truthful headers and subjects, "
-                "postal addresses, opt-out mechanisms, and suppression timing."
-            ),
-        },
-        {
-            "title": "47 U.S.C. §227 — Restrictions on use of telephone equipment",
-            "url": "https://www.law.cornell.edu/uscode/text/47/227",
-            "relevance": (
-                "Requires outreach classification by calling technology, message type, "
-                "recipient number, and applicable permission requirements."
-            ),
-        },
-        {
-            "title": "47 CFR §64.1200 — Delivery restrictions",
-            "url": "https://www.ecfr.gov/current/title-47/section-64.1200",
-            "relevance": (
-                "Supplies FCC rules relevant to telephone solicitations, automated "
-                "communications, identification, and do-not-call operating procedures."
-            ),
-        },
-    ],
-}
+CHAPTER_9 = {'id': 'Q9',
+ 'chapter_id': 'Q9',
+ 'chapter_number': 9,
+ 'question_number': 9,
+ 'slug': 'capturing-the-work-opportunity-tax-credit',
+ 'question_prompt': 'What is the Work Opportunity Tax Credit, who qualifies, and how do employers capture '
+                    'up to $9,600 per hire?',
+ 'kicker': 'Q9 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Capturing the Work Opportunity Tax Credit',
+ 'subtitle': 'Targeted groups and credit amounts, payroll and ATS-integrated screening, restaurant and '
+             'high-turnover hiring, provider service models, whether WOTC is worth it, expiration '
+             'concerns, and CPA-exam treatment of the credit',
+ 'layout_template': 'tool_resource_directory',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Practitioners agree the Work Opportunity Tax Credit is a dollar-for-dollar federal '
+                      'credit worth $2,400 for most targeted hires and up to $9,600 for certain veterans, '
+                      'with SNAP households supplying roughly 70 percent of qualified hires. The '
+                      'non-negotiable mechanic is the 28-day window: Form 8850, usually paired with Form '
+                      '9061, must reach the State Workforce Agency within 28 days of the start date or the '
+                      'credit dies. The math runs 25 percent of first-year wages at 120 hours and 40 '
+                      'percent at 400 hours on a $6,000 base, claimed on Form 5884 with one-year carryback '
+                      'and 20-year carryforward. Everyone says screen every hire for capture rate. The '
+                      'split is on execution: vendors charge 20 to 25 percent, with outsourcing pitched '
+                      'above roughly 50 hires a year, while screening before the offer is pushed by '
+                      'Workstream and discouraged by MP.',
+ 'key_metrics': [{'label': 'WOTC.com Contingency Fee',
+                  'metric': 'WOTC.com Contingency Fee',
+                  'value': '20 percent of credit, invoiced only after a credit exists and paid only after '
+                           'it is used',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Doug Simon of WOTC.com answered a live webinar question on the fee, stating '
+                             'the firm does not expect payment until the client has actually used the '
+                             'credit against tax.',
+                  'source': 'The TLC Companies ([kuYWnLG5-A4 @ 00:17:36])'},
+                 {'label': 'ADP Outsourcing Fee And Volume Threshold',
+                  'metric': 'ADP Outsourcing Fee And Volume Threshold',
+                  'value': 'Approximately 25 percent of credit claimed; worth it above about 50 new hires '
+                           'per year',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Linked Accounting recommends ADP for screening and state reporting when '
+                             'turnover or hiring exceeds about 50 new hires a year, and self-filing or '
+                             'firm-assisted filing below that.',
+                  'source': 'Linked Accounting, LLP ([yEWXbR-V5qs @ 00:01:01])'},
+                 {'label': 'Five Guys Franchise First-Year Projection',
+                  'metric': 'Five Guys Franchise First-Year Projection',
+                  'value': '$27,600 in projected tax credits from 86 qualifying new hires',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'A Five Guys franchise group operating since 2005 in Oregon, Washington and '
+                             'California had never used WOTC until implementing Walton Management Services '
+                             'screening.',
+                  'source': 'Official ReadyATS ([KqRldQ_XlyA @ 00:06:18])'},
+                 {'label': 'SNAP Share Of Qualified Hires',
+                  'metric': 'SNAP Share Of Qualified Hires',
+                  'value': 'About 70 percent of qualified hires are SNAP recipients; veterans about 7 '
+                           'percent',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Lydia at Workstream reported which target groups actually generate '
+                             'certifications, countering the belief that WOTC is mainly about veterans and '
+                             'ex-felons.',
+                  'source': 'Workstream ([3hIbQPQR66Y @ 00:20:13])'}],
+ 'sections': [{'title': 'The Practitioner Consensus: Dollar-for-Dollar Credit, a 28-Day Clock, and '
+                        'Screening Every Hire',
+               'paragraphs': ['Every practitioner frames WOTC the same way: a federal credit paid for '
+                              'hiring from roughly ten targeted groups, applied dollar for dollar against '
+                              'tax rather than as a deduction. Fenton Tax Help puts it in operator terms: '
+                              'a business owing $20,000 that qualifies for a $5,000 WOTC drops its bill to '
+                              '$15,000 [3iHBB7snmho @ 00:01:33]. TGG Accounting calls the baseline $2,400 '
+                              "per qualifying hire 'newfound money' generated just by making a hiring "
+                              'decision [DBpv31eMcBA @ 00:00:53]. The ceiling everyone quotes is $9,600 '
+                              'per qualified employee. The target list repeats across speakers: SNAP '
+                              'households, TANF and long-term TANF recipients, qualified veterans, '
+                              'ex-felons hired within a year of conviction or release, designated '
+                              'community residents in empowerment zones or rural renewal counties, '
+                              'vocational rehab referrals, summer youth, SSI recipients, and long-term '
+                              "unemployed with 27 consecutive weeks out of work. Workstream's Lydia "
+                              'stresses the street reality that the program is not about ex-cons; SNAP is '
+                              'the dominant bucket, and a hire qualifies even when only a family member '
+                              'draws the benefit [3hIbQPQR66Y @ 00:02:13]. Gift CPAs lays down the '
+                              'exclusions: no relatives or dependents, no majority owners, and no former '
+                              'employees regardless of how long they have been gone, so firing and '
+                              'rehiring to manufacture the credit is dead on arrival [RzWkA9XcT7g @ '
+                              '00:01:59].',
+                              'The single hard deadline every speaker hammers is 28 days. Gift CPAs is '
+                              'blunt: Form 8850 and the accompanying Form 9061 must reach the State '
+                              "Workforce Agency by day 28 after the start date, and if they do not, 'don't "
+                              "bother doing it,' because no credit will be granted [RzWkA9XcT7g @ "
+                              "00:05:34]. Fenton Tax Help repeats it as 'no exceptions' and lists late "
+                              'filing as the number-one reason businesses lose the credit [3iHBB7snmho @ '
+                              '00:08:39]. Buffalo Tax Strategies adds the mailing detail that matters '
+                              'operationally: the packet must be postmarked within 28 days of hire or the '
+                              'application is immediately denied, so the forms belong inside the same '
+                              'envelope as initial hiring paperwork [AUiM2KAknsw @ 00:02:25]. Paul '
+                              'Corellis of MP: Wired for HR reports watching employers who collected forms '
+                              "and sat on them until long after the fact, and it 'didn't go well for "
+                              "them,' because agencies check the hire date and reject anything past the "
+                              'window [tAf8rI1hwtc @ 00:25:25]. The clock runs from the start date, not '
+                              'the offer date: someone hired today but starting Monday is measured from '
+                              'Monday. That same deadline is why the credit is forward-only; there is no '
+                              'retroactive sweep of past hires the way ERTC allowed.',
+                              'The third pillar of agreement is that every new hire fills out the '
+                              'screening form, no cherry-picking. Gift CPAs warns that selecting one '
+                              'employee over another to complete Form 8850 creates a discrimination issue, '
+                              'so everyone signs it even if they plainly do not qualify [RzWkA9XcT7g @ '
+                              '00:04:57]. Eric Lynch of The TLC Companies, who ran blue-collar staffing '
+                              'employing hundreds of thousands of lower-income workers, says their old '
+                              "shop 'just submitted for everybody no matter what,' and Doug Simon of "
+                              "WOTC.com calls it 'brushing your teeth,' because people do not know they "
+                              "live in an empowerment zone and prideful households hide benefits; Simon's "
+                              "two-word takeaway is 'capture rate' [kuYWnLG5-A4 @ 00:24:28]. The ReadyATS "
+                              'hosts land on the same logic: screening everyone upfront automatically '
+                              'means no eligible hire slips through because a manager forgot to ask '
+                              '[KqRldQ_XlyA @ 00:11:54]. The eligibility hit rate that justifies the habit '
+                              'clusters tightly. Simon uses the Department of Labor figure of 20 percent '
+                              'of new hires, Corellis cites estimates of up to 20 percent varying by '
+                              'industry, and ReadyATS cites research putting 12 to 15 percent of a typical '
+                              'restaurant workforce in range [tAf8rI1hwtc @ 00:06:41]. Lynch says the '
+                              "credits were material to their former staffing firm's profit and loss every "
+                              'year.'],
+               'table': {'caption': 'Where the practitioners line up: the baseline rules every WOTC '
+                                    'operator works from',
+                         'headers': ['Consensus Point',
+                                     'What Practitioners Report',
+                                     'Why It Matters To An Operator',
+                                     'Expert Source'],
+                         'rows': [['Dollar-for-dollar federal credit against tax owed',
+                                   'A $5,000 WOTC cuts a $20,000 federal tax bill straight down to $15,000',
+                                   'Every certified hire reduces tax actually owed, not merely the taxable '
+                                   'income figure',
+                                   'Fenton Tax Help ([3iHBB7snmho @ 00:01:55])'],
+                                  ['Hard 28-day State Workforce Agency submission deadline',
+                                   'Form 8850 and Form 9061 must reach the state agency by day 28, '
+                                   "otherwise don't bother",
+                                   'Late packets earn zero credit, so onboarding filing discipline decides '
+                                   'the entire outcome',
+                                   'Gift CPAs ([RzWkA9XcT7g @ 00:05:34])'],
+                                  ['Screen every single new hire without exception',
+                                   'Submit for everybody because households hide benefits and residents '
+                                   'miss empowerment zone status',
+                                   'Universal screening drives capture rate, the one metric WOTC.com says '
+                                   'matters most',
+                                   'The TLC Companies ([kuYWnLG5-A4 @ 00:25:12])'],
+                                  ['SNAP households dominate the certified pool of hires',
+                                   'SNAP recipients make up about 70 percent of qualified hires while '
+                                   'veterans are about 7 percent',
+                                   'Screening should prioritize household food assistance questions over '
+                                   'ex-felon or veteran status alone',
+                                   'Workstream ([3hIbQPQR66Y @ 00:20:13])'],
+                                  ['Roughly one in five new hires may be eligible',
+                                   'Up to 20 percent of new hires may qualify, varying by industry and '
+                                   'location',
+                                   'Eligible roles span blue collar, white collar, retail and hospitality, '
+                                   'not one niche',
+                                   'MP: Wired for HR ([tAf8rI1hwtc @ 00:06:41])'],
+                                  ['Non-refundable credit with long carryover runway available',
+                                   'Credit is capped at tax liability; excess carries back one year or '
+                                   'forward 20 years',
+                                   'Startups and loss years can still bank certified credits against '
+                                   'future tax liability',
+                                   'David Fiene ([dg087iZZfsQ @ 00:05:10])'],
+                                  ['Program repeatedly renewed but carries a sunset date',
+                                   'Created in 1996, renewed multiple times, and authorized through '
+                                   'December 31, 2025',
+                                   'The 2025 sunset collided with expiring 2017 tax provisions, so '
+                                   'operators were told to act early',
+                                   'Fenton Tax Help ([3iHBB7snmho @ 00:02:52])']]}},
+              {'title': 'Exact Street Mechanics, Tools & Numbers: Forms, Hour Tiers, Wage Bases and Vendor '
+                        'Fees',
+               'paragraphs': ['The filing stack is short but sequence-sensitive. The new hire completes '
+                              'Form 8850, the pre-screening notice; Corellis explains that it is almost '
+                              'always paired with Form 9061, which captures unemployment dates and '
+                              'assistance dates, while agency referrals arriving with paperwork in hand '
+                              'use Form 9062 and long-term unemployment hires carry their own separate '
+                              'certification form [tAf8rI1hwtc @ 00:17:21]. David Fiene flags the classic '
+                              'routing error: the 8850 does not go to the IRS, it goes to the State '
+                              'Workforce Agency, which certifies the target group [dg087iZZfsQ @ '
+                              '00:01:17]. Gift CPAs warns the determination letter can take up to a year '
+                              'or longer depending on the state, the agency may come back requesting more '
+                              'information, and nothing gets claimed until the final letter arrives. Once '
+                              'certified, the credit is calculated on Form 5884, and Gift CPAs traces the '
+                              'S corporation path step by step: the total lands on the K-1 in box 13 with '
+                              "code JE, flows to the owner's Form 3800, and ends on line 54 of the Form "
+                              '1040 as other credits [RzWkA9XcT7g @ 00:08:17]. Buffalo Tax Strategies '
+                              'notes the claim rides on the year-end income tax return, not on payroll '
+                              "filings, and needs two inputs: the employee's W-2 wages and a payroll "
+                              'register showing hours [AUiM2KAknsw @ 00:03:38].',
+                              'The credit math is a two-tier hour test on a capped wage base. Corellis '
+                              'lays it out: at least 120 hours in year one unlocks 25 percent of qualified '
+                              'wages, 400 hours unlocks 40 percent, and for most groups the base is '
+                              '$6,000, producing the standard $2,400; certain veteran categories quadruple '
+                              'the base to $24,000, which is where the $9,600 ceiling comes from '
+                              '[tAf8rI1hwtc @ 00:19:54]. Corellis also flags a trap inside the tiers: TANF '
+                              'hires must hit the full 400 hours or earn nothing. Doug Simon pegs '
+                              'long-term TANF at up to $9,000 split $4,000 in year one and $5,000 in year '
+                              'two, and points out that 400 hours is just a part-timer at 20 hours a week '
+                              'for 20 weeks [kuYWnLG5-A4 @ 00:06:21]. Farhat Lectures shows how the cap '
+                              'behaves across tax years: Samantha earns $4,000 for 400 hours in year one, '
+                              'generating $1,600, then only the remaining $2,000 of the $6,000 base earns '
+                              'another $800 the next year, and the credit is exhausted for that employee '
+                              '[JKK9Lp_jP0k @ 00:07:30]. David Fiene adds the offset that trims the net: '
+                              'the wage deduction shrinks by the credit, so $100,000 of wages with $30,000 '
+                              'of credits leaves only $70,000 deductible [dg087iZZfsQ @ 00:04:20]. Unused '
+                              'credit carries back one year or forward 20.',
+                              'The outsourced model dominates the street economics, and the fees are on '
+                              'the record. Doug Simon of WOTC.com quotes a 20 percent contingency fee, '
+                              'invoices only when a credit exists, and does not expect payment until the '
+                              'client has actually used the credit against tax; the shop has a human '
+                              'review every 8850 by hand because some states deny over spelling or '
+                              'punctuation, resubmits denials, files Form 5884 batches two to four times a '
+                              'year, and says period-end data entry runs 30 seconds to a minute per '
+                              'certified person [kuYWnLG5-A4 @ 00:17:36]. Linked Accounting routes clients '
+                              'to ADP at roughly 25 percent of the credit claimed and draws the line at '
+                              'about 50 new hires a year; below that, self-file or have the firm handle it '
+                              '[yEWXbR-V5qs @ 00:01:01]. Kirk at DCI Solutions uses the same 50-hire '
+                              'threshold, pegging the payoff at $25,000 or more in federal savings with a '
+                              'survey, supervise, support process built for 100 percent screening capture '
+                              "[THfq9yETSTo @ 00:00:16]. Software rounds out the stack: Deloitte's T4 WOTC "
+                              "web app plugs into existing applicant tracking, MPAY's Pay Entry Hire "
+                              'scores eligibility at application, and Workstream texts and emails '
+                              'reminders until the new hire finishes the forms inside the 28-day window '
+                              '[3hIbQPQR66Y @ 00:13:24].'],
+               'table': {'caption': 'The numbers operators actually run: hour tiers, wage bases, group '
+                                    'rules and vendor pricing',
+                         'headers': ['Mechanic',
+                                     'Exact Number Or Rule',
+                                     'Execution Detail',
+                                     'Expert Source'],
+                         'rows': [['120-hour partial credit tier in year one',
+                                   '25 percent of first-year qualified wages, maximum $750 to $6,000 by '
+                                   'target group',
+                                   'A hire who quits after 100 hours earns nothing, so track the 120-hour '
+                                   'line',
+                                   'Gift CPAs ([RzWkA9XcT7g @ 00:02:56])'],
+                                  ['400-hour full credit tier in year one',
+                                   '40 percent of first-year wages, maximum $1,200 to $9,600 by target '
+                                   'group',
+                                   'Pull hours from the payroll register and push certified hires past 400 '
+                                   'hours',
+                                   'Gift CPAs ([RzWkA9XcT7g @ 00:03:16])'],
+                                  ['Top-tier veteran credit at the $9,600 ceiling',
+                                   'A qualified veteran out of work six months or more can generate the '
+                                   'full $9,600',
+                                   'Veteran hiring initiatives carry the largest single-hire payoff in the '
+                                   'entire program',
+                                   'Official ReadyATS ([KqRldQ_XlyA @ 00:02:46])'],
+                                  ['Long-term family assistance second-year wages on Form 5884',
+                                   'Qualified second-year wages are multiplied by a 50 percent credit rate',
+                                   'The only group credited across two years, reaching up to $9,000 '
+                                   'combined',
+                                   'Gift CPAs ([RzWkA9XcT7g @ 00:07:55])'],
+                                  ['SNAP recipient eligibility test for the household hire',
+                                   'Age 18 to under 40, family on SNAP prior six months or three of '
+                                   'previous five',
+                                   'Ask about household benefits, since the hire need not personally '
+                                   'receive SNAP',
+                                   'MP: Wired for HR ([tAf8rI1hwtc @ 00:13:55])'],
+                                  ['Full-service contingency vendor pricing and billing terms',
+                                   '20 percent fee, invoiced only after a credit exists, paid after credit '
+                                   'is used',
+                                   'Human review of every form plus resubmission of state denials included '
+                                   'in fee',
+                                   'The TLC Companies ([kuYWnLG5-A4 @ 00:17:36])'],
+                                  ['Payroll-provider outsourcing fee and hiring volume threshold',
+                                   'Approximately 25 percent of credit claimed, recommended above about 50 '
+                                   'new hires annually',
+                                   'Below 50 hires, notify the state agency yourself or with accountant '
+                                   'help',
+                                   'Linked Accounting, LLP ([yEWXbR-V5qs @ 00:01:01])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Field Moves That Raise Capture Rate And Turn The Credit Into A Hiring '
+                                    'Lever',
+                           'body': 'Four tactics practitioners use to get more forms completed, more hires '
+                                   'certified, and more value out of each certified dollar.',
+                           'items': ['Split the ex-felon and veteran screener questions away from the '
+                                     'SNAP, welfare and residency questions; Lydia reports applicants are '
+                                     'about 20 percent less likely to fill out the form when they see '
+                                     'ex-felon wording [Workstream — 3hIbQPQR66Y @ 00:06:34].',
+                                     'Drop the 8850 right next to the I-9 in electronic onboarding; Doug '
+                                     'Simon says clients have had success there because much of the I-9 '
+                                     'data is what the 8850 asks for anyway [The TLC Companies — '
+                                     'kuYWnLG5-A4 @ 00:19:52].',
+                                     'Turn the $2,400 into a recruiting weapon by splitting it with the '
+                                     'new hire as a $1,200 signing bonus or a $1,200 stay bonus after 90 '
+                                     'days to land higher-quality people [TGG Accounting — DBpv31eMcBA @ '
+                                     '00:01:11].',
+                                     'Build a pre-screened applicant pool by asking screener questions in '
+                                     'exact Form 8850 language before choosing who to interview, and ask '
+                                     'about SSI benefits rather than whether someone is over 65 '
+                                     '[Workstream — 3hIbQPQR66Y @ 00:14:58].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Embed Form 8850 In Every Onboarding Packet',
+                              'action': 'Add Form 8850 to electronic, DocuSign and paper hire packets so '
+                                        'every new hire completes it, regardless of apparent eligibility.',
+                              'detail': 'All new hires must fill it out or selective screening becomes a '
+                                        'discrimination issue [Gift CPAs — RzWkA9XcT7g @ 00:04:57]; place '
+                                        'it beside the I-9 where it rolls through naturally [The TLC '
+                                        'Companies — kuYWnLG5-A4 @ 00:19:52].'},
+                             {'step': 2,
+                              'title': 'Ship 8850 Plus 9061 To The State Within 28 Days',
+                              'action': 'Send the signed 8850 and the 9061 individual characteristics form '
+                                        'to the State Workforce Agency, never the IRS, before day 28 after '
+                                        'the start date.',
+                              'detail': 'Miss day 28 and the agency grants no credit [Gift CPAs — '
+                                        'RzWkA9XcT7g @ 00:05:34]; mailed packets must be postmarked inside '
+                                        'the window or are immediately denied [Buffalo Tax Strategies — '
+                                        'AUiM2KAknsw @ 00:02:25].'},
+                             {'step': 3,
+                              'title': 'Track Hours And Wages Against The 120 And 400 Thresholds',
+                              'action': 'Pull a payroll register and W-2 wages for each certified hire and '
+                                        'monitor first-year hours against the 25 and 40 percent tiers.',
+                              'detail': 'Form 5884 needs both wages and hours from the payroll register '
+                                        '[Buffalo Tax Strategies — AUiM2KAknsw @ 00:03:38]; 120 hours '
+                                        'unlocks credit and 400 hours maximizes it [MP: Wired for HR — '
+                                        'tAf8rI1hwtc @ 00:19:08].'},
+                             {'step': 4,
+                              'title': 'Batch Certified Hires Onto Form 5884 And Route To Form 3800',
+                              'action': 'After determination letters arrive, compile certified hires onto '
+                                        'Form 5884 two to four times a year and flow the total through '
+                                        'Form 3800.',
+                              'detail': 'WOTC.com batches 10 to 20 people per credit two to four times a '
+                                        'year [The TLC Companies — kuYWnLG5-A4 @ 00:09:22]; the total '
+                                        'flows to Form 3800 and unused amounts carry forward 20 years '
+                                        '[Gift CPAs — RzWkA9XcT7g @ 00:08:38].'}]},
+              {'heading': 'Section 3: Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The first split is who runs the machine and what they take. Doug Simon of '
+                              'WOTC.com, presenting on The TLC Companies webinar, pitches a 100 percent '
+                              'contingency structure: no invoice unless a credit exists, and no payment '
+                              'expected until the client has actually used that credit against tax '
+                              '[kuYWnLG5-A4 @ 00:12:23]. When an attendee asked for the number in chat, he '
+                              'confirmed the contingency fee is 20 percent [kuYWnLG5-A4 @ 00:17:36]. '
+                              'Linked Accounting, LLP steers its clients to ADP instead, quotes that '
+                              "vendor's fee at approximately 25 percent of the credit claimed, and calls "
+                              'it well worth the time saved once turnover or hiring passes about 50 new '
+                              'hires per year; below 50, the firm tells employers to alert the Department '
+                              'of Workforce Services on their own or engage the firm directly [yEWXbR-V5qs '
+                              '@ 00:01:01]. DCI Solutions draws the same volume line from the vendor side, '
+                              'saying the program typically works best with at least 50 new hires and that '
+                              'such an employer might be looking at 25,000 dollars or more in federal tax '
+                              'savings [THfq9yETSTo @ 00:00:16]. The operator read: under roughly 50 hires '
+                              'a year, the 20 to 25 percent cut is the number you control; above it, the '
+                              'question becomes which vendor bills only after the credit lands.',
+                              'The sharpest conflict is when to ask the eligibility questions. Lydia at '
+                              'Workstream tells employers they are allowed to run screener questions '
+                              'before choosing who to interview, then push likely qualifiers to the next '
+                              'stage; she says it sounds discriminatory but is not, because the program '
+                              'was written to tip the choice between two identical applicants [3hIbQPQR66Y '
+                              '@ 00:11:21]. Her craft rules: mirror the exact language of Form 8850, ask '
+                              'whether someone receives SSI benefits rather than whether they are over 65, '
+                              'and bank pre-screened applicants in a pool to invite back for interviews '
+                              'later [3hIbQPQR66Y @ 00:14:58]. Paul Corellis at MP: Wired for HR takes the '
+                              'opposite line, warning that in most cases you do not want to ask about '
+                              'disabilities or food stamps before making an offer, and that he would not '
+                              'generally run the 8850 even at offer stage unless the hire comes from an '
+                              'agency, so it never looks like the data clouded the hiring decision '
+                              '[tAf8rI1hwtc @ 00:27:58]. Fenton Tax Help sits in between, instructing '
+                              'employers to pre-screen with Form 8850 on or before the date of the job '
+                              'offer [3iHBB7snmho @ 00:08:15]. Pick a lane deliberately: Workstream runs '
+                              'WOTC as a recruiting filter, while MP runs it as post-offer onboarding '
+                              'paperwork.',
+                              'Practitioners do not even agree on the clock. Gift CPAs states flatly that '
+                              'Form 8850 and Form 9061 must reach the state workforce agency within 28 '
+                              "days of the employee's start date, and that if they do not, there is no "
+                              'point filing because no credit will be granted [RzWkA9XcT7g @ 00:05:34]. '
+                              'Linked Accounting, LLP describes the new-hire questionnaire and the claim '
+                              'with the Department of Workforce Services as due within the first 30 days '
+                              'of hiring, or the employer has not qualified [yEWXbR-V5qs @ 00:00:33]. '
+                              'Workstream told its webinar audience they actually had until July 15 '
+                              'because of the CARES Act, and framed the old 28-day window as one reason '
+                              'the program used to feel so complicated that employers skipped it '
+                              '[3hIbQPQR66Y @ 00:07:35]. The renewal outlook splits as well: Eric Lynch of '
+                              'The TLC Companies says Congress sometimes takes it down to the wire but '
+                              'always renews the program because it appeals to both sides of the aisle '
+                              '[kuYWnLG5-A4 @ 00:01:42]. Run your process to the tightest number: the '
+                              'CARES Act date was a relief-period exception, and most practitioners still '
+                              'build intake around 28 days from the start date.'],
+               'table': {'caption': 'Competing WOTC playbooks: fees, screening timing, forecasting, '
+                                    'deadlines, and renewal risk',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Outsourced fee model and billing timing',
+                                   'WOTC.com charges a 20 percent contingency, invoices only after a '
+                                   'credit exists, expects payment after use',
+                                   'Linked Accounting routes clients to ADP at roughly 25 percent of the '
+                                   'credit claimed',
+                                   'The TLC Companies ([kuYWnLG5-A4 @ 00:17:36]); Linked Accounting, LLP '
+                                   '([yEWXbR-V5qs @ 00:01:01])'],
+                                  ['Hiring volume threshold for outsourcing the whole program',
+                                   'Below about 50 new hires a year, file with the state yourself or with '
+                                   'your accountant',
+                                   'DCI says the program typically works best at 50 or more new hires per '
+                                   'year',
+                                   'Linked Accounting, LLP ([yEWXbR-V5qs @ 00:01:16]); DCI Solutions - '
+                                   'Cost & Tax Credit Specialists ([THfq9yETSTo @ 00:00:16])'],
+                                  ['When to ask the eligibility screening questions',
+                                   'Workstream runs 8850-language screener questions before choosing who '
+                                   'gets an interview',
+                                   'MP avoids benefit and disability questions until after an offer is '
+                                   'made',
+                                   'Workstream ([3hIbQPQR66Y @ 00:11:21]); MP: Wired for HR ([tAf8rI1hwtc '
+                                   '@ 00:27:58])'],
+                                  ['Eligibility rate used for credit forecasting',
+                                   'WOTC.com forecasts with 10 percent turnover and one in five new hires '
+                                   'eligible',
+                                   'ReadyATS cites research that 12 to 15 percent of a restaurant '
+                                   'workforce qualifies',
+                                   'The TLC Companies ([kuYWnLG5-A4 @ 00:13:57]); Official ReadyATS '
+                                   '([KqRldQ_XlyA @ 00:05:28])'],
+                                  ['How to deploy the recovered credit dollars',
+                                   'TGG Accounting suggests splitting the 2,400 dollars as a 1,200 dollar '
+                                   'signing or stay bonus',
+                                   'ReadyATS points the savings at training, menu innovation, and building '
+                                   'upgrades instead',
+                                   'TGG Accounting ([DBpv31eMcBA @ 00:01:11]); Official ReadyATS '
+                                   '([KqRldQ_XlyA @ 00:07:27])'],
+                                  ['Filing window for the state certification request',
+                                   'Gift CPAs holds a hard 28 day cutoff from start date, otherwise do not '
+                                   'bother filing',
+                                   'Workstream cited a CARES Act extension to July 15; Linked Accounting '
+                                   'quotes 30 days',
+                                   'Gift CPAs ([RzWkA9XcT7g @ 00:05:34]); Workstream ([3hIbQPQR66Y @ '
+                                   '00:07:35])'],
+                                  ['Program longevity and renewal risk for planning',
+                                   'The TLC Companies says Congress goes to the wire but always renews the '
+                                   'credit',
+                                   'Fenton Tax Help treated 2025 as a possible last chance amid expiring '
+                                   '2017 provisions',
+                                   'The TLC Companies ([kuYWnLG5-A4 @ 00:01:42]); Fenton Tax Help '
+                                   '([3iHBB7snmho @ 00:03:11])']]}},
+              {'heading': 'Section 4: Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The most expensive firsthand failure is the late batch. Paul Corellis of '
+                              'MP: Wired for HR says the state agencies are not joking about 28 days, '
+                              'recounting employers who collected all the forms and did not send them in '
+                              'until way later, and it did not go well for them; agencies check the hire '
+                              'date and will probably reject anything past the window [tAf8rI1hwtc @ '
+                              '00:25:25]. He also kills the retroactive play: unless the hire happened '
+                              'within the last month, this is not like ERTC, where you go back and claim '
+                              'credits for people hired over the last couple of years [tAf8rI1hwtc @ '
+                              '00:17:00]. Buffalo Tax Strategies adds the mailroom trap, warning that if '
+                              'the 8850 and the Individual Characteristics Form are not postmarked within '
+                              '28 days of the hire, the application is immediately denied, and recommends '
+                              'bundling both with the initial hire paperwork [AUiM2KAknsw @ 00:02:05]. '
+                              'Fenton Tax Help lists the recurring misses: not filing on time, assuming '
+                              'small businesses cannot benefit, failing to educate HR so managers never '
+                              'collect the forms, not tracking the 120 and 400 hour thresholds, and '
+                              'forgetting to claim the credit on the return, a step it says businesses '
+                              'miss all the time [3iHBB7snmho @ 00:09:01].',
+                              'Getting a certification out of the state is its own grind. Doug Simon of '
+                              'WOTC.com says some states are very finicky and his team has seen '
+                              'submissions denied over punctuation, so every form gets a human hand review '
+                              'for spelling errors, and anything that still comes back denied gets its '
+                              'documentation chased down and resubmitted, which he calls pretty unheard of '
+                              'in the industry [kuYWnLG5-A4 @ 00:08:29]. Gift CPAs warns the determination '
+                              'letter can take up to a year or longer depending on the state, that the '
+                              'agency may come back mid-stream asking for more information, and that '
+                              'nothing can be claimed until the final determination letter is in hand '
+                              '[RzWkA9XcT7g @ 00:05:51]. Hours are the quiet killer: MP: Wired for HR '
+                              'notes most groups need 120 hours in year one for any credit, but '
+                              'TANF-eligible hires must hit the full 400 hours or produce nothing '
+                              '[tAf8rI1hwtc @ 00:19:31]. Workstream flags an intake leak on the applicant '
+                              'side: when people see the ex-felon question they are roughly 20 percent '
+                              'less likely to fill out the form, so the ex-felon and veteran questions '
+                              'should be separated from the food stamp, welfare and resident questions '
+                              '[3hIbQPQR66Y @ 00:06:34].',
+                              'Run the math before counting the money. Gift CPAs stresses the credit is '
+                              'non-refundable: a 5,000 dollar credit against only 2,500 dollars of income '
+                              'tax yields 2,500 dollars now, with the remainder carried back one year or '
+                              'forward up to 20 years [RzWkA9XcT7g @ 00:03:16]. MP: Wired for HR draws the '
+                              'ERTC contrast directly: if credits total 2 million dollars against 1 '
+                              'million dollars of liability, you do not get a check in the mail for the '
+                              'difference [tAf8rI1hwtc @ 00:22:09]. The credit also shrinks the wage '
+                              'deduction. David Fiene shows that 100,000 dollars of wages with 30,000 '
+                              'dollars of credits leaves only 70,000 dollars deductible, and that the '
+                              'no-double-dipping rule applies to other credits such as the employee '
+                              'retention credit [dg087iZZfsQ @ 00:04:20]; Farhat Lectures runs the same '
+                              'check with 8,000 dollars of credits cutting deductible wages to 92,000 '
+                              'dollars [JKK9Lp_jP0k @ 00:06:20]. Eligibility walls are absolute too: Gift '
+                              'CPAs lists relatives, dependents, majority owners and former employees, '
+                              'regardless of how long ago they left, as ineligible, and warns that firing '
+                              'and rehiring a recent hire to capture the credit will not work. Net the '
+                              'lost deduction and the liability ceiling against the gross credit before '
+                              'quoting savings to ownership.'],
+               'table': {'caption': 'Firsthand WOTC failure modes with the economics check each one '
+                                    'demands',
+                         'headers': ['Failure Mode',
+                                     'What Practitioners Saw Or Warned',
+                                     'Economics Check',
+                                     'Expert Source'],
+                         'rows': [['Late batch submission of collected 8850 forms',
+                                   'Employers collected forms and mailed them way later, and it did not go '
+                                   'well',
+                                   'A missed window means the state rejects certification and the credit '
+                                   'is zero',
+                                   'MP: Wired for HR ([tAf8rI1hwtc @ 00:25:25])'],
+                                  ['Short-tenure hires who quit before the hours threshold',
+                                   'A hire who works only 100 hours and then leaves produces no credit',
+                                   'Under 120 hours earns nothing; 120 to 399 hours earns only 25 percent',
+                                   'Gift CPAs ([RzWkA9XcT7g @ 00:02:38])'],
+                                  ['Finicky state reviewers rejecting clean-looking submissions',
+                                   'States have denied certifications over punctuation and spelling errors '
+                                   'on submitted forms',
+                                   'Hand review and resubmission protect capture rate, the metric WOTC.com '
+                                   'prizes most',
+                                   'The TLC Companies ([kuYWnLG5-A4 @ 00:08:29])'],
+                                  ['Non-refundable credit landing on thin tax liability',
+                                   'A 5,000 dollar credit against 2,500 dollars of tax only yields 2,500 '
+                                   'now',
+                                   'Carry the unused remainder back one year or forward up to 20 years',
+                                   'Gift CPAs ([RzWkA9XcT7g @ 00:03:16])'],
+                                  ['Double dipping the wage deduction alongside the credit',
+                                   '100,000 dollars of wages with 30,000 dollars of credits leaves 70,000 '
+                                   'deductible',
+                                   'Net the lost wage deduction against the credit before quoting savings',
+                                   'David Fiene ([dg087iZZfsQ @ 00:04:20])'],
+                                  ['Trying to qualify relatives, owners, or rehired former staff',
+                                   'Relatives, dependents, majority owners and any former employee never '
+                                   'qualify for the credit',
+                                   'Firing and rehiring an existing employee to trigger the credit does '
+                                   'not work',
+                                   'Gift CPAs ([RzWkA9XcT7g @ 00:01:59])'],
+                                  ['Never starting the program despite years of steady hiring',
+                                   'A Five Guys franchise group operating since 2005 had never used the '
+                                   'program',
+                                   'After finally starting, the group projected about 27,600 dollars in '
+                                   'first-year credits',
+                                   'Official ReadyATS ([KqRldQ_XlyA @ 00:06:18])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Four Checks Before Any WOTC Dollar Hits The Forecast',
+                           'body': 'Every item below maps to a loss, denial, or haircut practitioners '
+                                   'reported firsthand; clear all four before booking a credit [MP: Wired '
+                                   'for HR — tAf8rI1hwtc @ 00:25:25].',
+                           'items': ['Treat 28 days from the start date as a hard wall and send forms to '
+                                     'the state as they come in, never batched for later [MP: Wired for HR '
+                                     '— tAf8rI1hwtc @ 00:25:25].',
+                                     'Do not book the credit until the final determination letter arrives; '
+                                     'budget for state waits of up to a year or longer and answer '
+                                     'information requests fast [Gift CPAs — RzWkA9XcT7g @ 00:05:51].',
+                                     'Pull W-2 wages and a payroll register for each certified hire to '
+                                     'prove the 120 and 400 hour tiers before filing Form 5884 [Buffalo '
+                                     'Tax Strategies — AUiM2KAknsw @ 00:03:38].',
+                                     'Retain 8850s, SWA transmittal letters, proof of mailing and '
+                                     'certifications, generally for three years after the return claiming '
+                                     'the credit is due or filed [Gift CPAs — RzWkA9XcT7g @ 00:09:14].']}}],
+ 'pull_quote': '"If I\'m going to leave you with two words: capture rate. That\'s everything we want to do '
+               'for you guys." — Doug Simon, WOTC.com, on The TLC Companies (kuYWnLG5-A4 @ 00:25:29).',
+ 'diagram_id': 'diag-05',
+ 'action_checklist': ['Embed Form 8850 into electronic onboarding right next to the I-9, since much of the '
+                      'I-9 data is reused on the 8850 [The TLC Companies — kuYWnLG5-A4 @ 00:19:52].',
+                      'Have every new hire complete Form 8850, eligible or not, so you avoid a '
+                      'discrimination issue and catch hidden household benefits [Gift CPAs — RzWkA9XcT7g @ '
+                      '00:04:57].',
+                      'Send Form 8850 with Form 9061, or 9062 for agency referrals, to the state workforce '
+                      'agency within 28 days of the start date [MP: Wired for HR — tAf8rI1hwtc @ '
+                      '00:16:44].',
+                      'Track hours and wages for each certified hire against the 120 and 400 hour marks '
+                      'using W-2 data and a payroll register [Buffalo Tax Strategies — AUiM2KAknsw @ '
+                      '00:03:38].',
+                      'Claim the credit on Form 5884 with the business return and carry any unused amount '
+                      'back one year or forward 20 years [David Fiene — dg087iZZfsQ @ 00:05:10].',
+                      'Generate the 5884 two to four times a year based on hiring volume and route each '
+                      'credit to your CPA as it is created [The TLC Companies — kuYWnLG5-A4 @ 00:09:39].'],
+ 'statutory_citations': [{'title': 'Gift CPAs — Work Opportunity Tax Credit Presentation [00:05:34]',
+                          'url': 'https://www.youtube.com/watch?v=RzWkA9XcT7g&t=334s',
+                          'relevance': 'Primary practitioner testimony on the 28-day SWA deadline, '
+                                       'non-refundable limits, ineligible hires, and record retention.'},
+                         {'title': 'The TLC Companies — Work Opportunity Tax Credit - Webinar with '
+                                   'WOTC.com [00:12:23]',
+                          'url': 'https://www.youtube.com/watch?v=kuYWnLG5-A4&t=743s',
+                          'relevance': 'Primary practitioner testimony on the 20 percent contingency '
+                                       'model, hand review for capture rate, and conservative credit '
+                                       'forecasting.'},
+                         {'title': 'MP: Wired for HR — Work Opportunity Tax Credit (WOTC): Eligibility, '
+                                   'Proven Strategies, and Best Practices [00:25:25]',
+                          'url': 'https://www.youtube.com/watch?v=tAf8rI1hwtc&t=1525s',
+                          'relevance': 'Primary practitioner testimony on late-submission rejections, '
+                                       'post-offer screening timing, and hour thresholds by target group.'},
+                         {'title': 'Workstream — How To Claim Up To $9,600 In Tax Credits Per Hire - A '
+                                   'Work Opportunity Tax Credit Webinar [00:11:21]',
+                          'url': 'https://www.youtube.com/watch?v=3hIbQPQR66Y&t=681s',
+                          'relevance': 'Primary practitioner testimony on pre-interview screener '
+                                       'questions, applicant pools, and ex-felon question placement.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': '9kzq5Jf3Bpk',
+                       'title': 'Work Opportunity Tax Credit (WOTC) Explained',
+                       'channel': 'Veritas Insurance Services & Risk Management',
+                       'author': 'Veritas Insurance Services & Risk Management',
+                       'text': "It's been around a long time, just no one takes advantage of it because a "
+                               "lot of times they think there's too much paperwork, not enough benefit.",
+                       'tip': "It's been around a long time, just no one takes advantage of it because a "
+                              "lot of times they think there's too much paperwork, not enough benefit.",
+                       'timestamp': 73,
+                       'timestamp_seconds': 73,
+                       'timestamp_label': '[00:01:13]',
+                       'url': 'https://www.youtube.com/watch?v=9kzq5Jf3Bpk&t=73s',
+                       'markdown': '[00:01:13](https://www.youtube.com/watch?v=9kzq5Jf3Bpk&t=73s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'RzWkA9XcT7g',
+                       'title': 'Work Opportunity Tax Credit Presentation',
+                       'channel': 'Gift CPAs',
+                       'author': 'Gift CPAs',
+                       'text': 'Both of these forms must be submitted to your state work agency within 28 '
+                               "days of the start date of the employee; if it is not within 28 days don't "
+                               "bother doing it, they won't give you any credit.",
+                       'tip': 'Both of these forms must be submitted to your state work agency within 28 '
+                              "days of the start date of the employee; if it is not within 28 days don't "
+                              "bother doing it, they won't give you any credit.",
+                       'timestamp': 334,
+                       'timestamp_seconds': 334,
+                       'timestamp_label': '[00:05:34]',
+                       'url': 'https://www.youtube.com/watch?v=RzWkA9XcT7g&t=334s',
+                       'markdown': '[00:05:34](https://www.youtube.com/watch?v=RzWkA9XcT7g&t=334s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'THfq9yETSTo',
+                       'title': 'Reducing Costs Using the WOTC Tax Credit',
+                       'channel': 'DCI Solutions - Cost & Tax Credit Specialists',
+                       'author': 'DCI Solutions - Cost & Tax Credit Specialists',
+                       'text': 'It typically works best if you have at least 50 new hires, and if you do, '
+                               'you might be looking at 25,000 or more dollars in federal tax savings.',
+                       'tip': 'It typically works best if you have at least 50 new hires, and if you do, '
+                              'you might be looking at 25,000 or more dollars in federal tax savings.',
+                       'timestamp': 16,
+                       'timestamp_seconds': 16,
+                       'timestamp_label': '[00:00:16]',
+                       'url': 'https://www.youtube.com/watch?v=THfq9yETSTo&t=16s',
+                       'markdown': '[00:00:16](https://www.youtube.com/watch?v=THfq9yETSTo&t=16s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'uODSKRdc1bI',
+                       'title': 'Work Opportunity Tax Credit (WOTC) Services',
+                       'channel': 'Deloitte US',
+                       'author': 'Deloitte US',
+                       'text': "With WOTC there's a statutory 28 day timeframe to submit requests to the "
+                               'State Workforce agencies.',
+                       'tip': "With WOTC there's a statutory 28 day timeframe to submit requests to the "
+                              'State Workforce agencies.',
+                       'timestamp': 59,
+                       'timestamp_seconds': 59,
+                       'timestamp_label': '[00:00:59]',
+                       'url': 'https://www.youtube.com/watch?v=uODSKRdc1bI&t=59s',
+                       'markdown': '[00:00:59](https://www.youtube.com/watch?v=uODSKRdc1bI&t=59s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'kuYWnLG5-A4',
+                       'title': 'Work Opportunity Tax Credit - Webinar with WOTC.com',
+                       'channel': 'The TLC Companies',
+                       'author': 'The TLC Companies',
+                       'text': "It's 100 percent contingency fee based structure, so we are not going to "
+                               'invoice you unless we have a credit.',
+                       'tip': "It's 100 percent contingency fee based structure, so we are not going to "
+                              'invoice you unless we have a credit.',
+                       'timestamp': 743,
+                       'timestamp_seconds': 743,
+                       'timestamp_label': '[00:12:23]',
+                       'url': 'https://www.youtube.com/watch?v=kuYWnLG5-A4&t=743s',
+                       'markdown': '[00:12:23](https://www.youtube.com/watch?v=kuYWnLG5-A4&t=743s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'kuYWnLG5-A4',
+                       'title': 'Work Opportunity Tax Credit - Webinar with WOTC.com',
+                       'channel': 'The TLC Companies',
+                       'author': 'The TLC Companies',
+                       'text': "Every single form that is submitted we're going to have a human being "
+                               'review it by hand; some of the states are very finicky.',
+                       'tip': "Every single form that is submitted we're going to have a human being "
+                              'review it by hand; some of the states are very finicky.',
+                       'timestamp': 509,
+                       'timestamp_seconds': 509,
+                       'timestamp_label': '[00:08:29]',
+                       'url': 'https://www.youtube.com/watch?v=kuYWnLG5-A4&t=509s',
+                       'markdown': '[00:08:29](https://www.youtube.com/watch?v=kuYWnLG5-A4&t=509s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'DBpv31eMcBA',
+                       'title': 'What You Need to Know About the Work Opportunity Tax Credit',
+                       'channel': 'TGG Accounting',
+                       'author': 'TGG Accounting',
+                       'text': 'One of the profitability things that you might want to think about is '
+                               "taking that 2,400 and splitting it with that new person you're hiring.",
+                       'tip': 'One of the profitability things that you might want to think about is '
+                              "taking that 2,400 and splitting it with that new person you're hiring.",
+                       'timestamp': 71,
+                       'timestamp_seconds': 71,
+                       'timestamp_label': '[00:01:11]',
+                       'url': 'https://www.youtube.com/watch?v=DBpv31eMcBA&t=71s',
+                       'markdown': '[00:01:11](https://www.youtube.com/watch?v=DBpv31eMcBA&t=71s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ZAJF8uhnR3Q',
+                       'title': 'WOTC Work Opportunity Tax Credit',
+                       'channel': 'MPAY Inc.',
+                       'author': 'MPAY Inc.',
+                       'text': 'Many small businesses do not take advantage of these tax credits because '
+                               'the application process can be time-consuming and complicated.',
+                       'tip': 'Many small businesses do not take advantage of these tax credits because '
+                              'the application process can be time-consuming and complicated.',
+                       'timestamp': 15,
+                       'timestamp_seconds': 15,
+                       'timestamp_label': '[00:00:15]',
+                       'url': 'https://www.youtube.com/watch?v=ZAJF8uhnR3Q&t=15s',
+                       'markdown': '[00:00:15](https://www.youtube.com/watch?v=ZAJF8uhnR3Q&t=15s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'yEWXbR-V5qs',
+                       'title': 'The Work Opportunity Tax Credit',
+                       'channel': 'Linked Accounting, LLP',
+                       'author': 'Linked Accounting, LLP',
+                       'text': 'Their fee is approximately 25 percent of your credit claimed but well '
+                               'worth the time you save; ADP is a great option when your turnover or '
+                               'hiring rate exceeds about 50 new hires per year.',
+                       'tip': 'Their fee is approximately 25 percent of your credit claimed but well worth '
+                              'the time you save; ADP is a great option when your turnover or hiring rate '
+                              'exceeds about 50 new hires per year.',
+                       'timestamp': 61,
+                       'timestamp_seconds': 61,
+                       'timestamp_label': '[00:01:01]',
+                       'url': 'https://www.youtube.com/watch?v=yEWXbR-V5qs&t=61s',
+                       'markdown': '[00:01:01](https://www.youtube.com/watch?v=yEWXbR-V5qs&t=61s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '3hIbQPQR66Y',
+                       'title': 'How To Claim Up To $9,600 In Tax Credits Per Hire - A Work Opportunity '
+                                'Tax Credit Webinar',
+                       'channel': 'Workstream',
+                       'author': 'Workstream',
+                       'text': 'You are allowed to use screener questions before you even choose who to '
+                               'interview to see if the applicant is likely to qualify you for WOTC '
+                               'credits.',
+                       'tip': 'You are allowed to use screener questions before you even choose who to '
+                              'interview to see if the applicant is likely to qualify you for WOTC '
+                              'credits.',
+                       'timestamp': 681,
+                       'timestamp_seconds': 681,
+                       'timestamp_label': '[00:11:21]',
+                       'url': 'https://www.youtube.com/watch?v=3hIbQPQR66Y&t=681s',
+                       'markdown': '[00:11:21](https://www.youtube.com/watch?v=3hIbQPQR66Y&t=681s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '3iHBB7snmho',
+                       'title': 'The Work Opportunity Tax Credit Is Ending  Here is H',
+                       'channel': 'Fenton Tax Help',
+                       'author': 'Fenton Tax Help',
+                       'text': 'If you miss that 28-day deadline, you lose the credit. No exceptions.',
+                       'tip': 'If you miss that 28-day deadline, you lose the credit. No exceptions.',
+                       'timestamp': 519,
+                       'timestamp_seconds': 519,
+                       'timestamp_label': '[00:08:39]',
+                       'url': 'https://www.youtube.com/watch?v=3iHBB7snmho&t=519s',
+                       'markdown': '[00:08:39](https://www.youtube.com/watch?v=3iHBB7snmho&t=519s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'dg087iZZfsQ',
+                       'title': 'Work Opportunity Tax Credit   What You need to Know',
+                       'channel': 'David Fiene',
+                       'author': 'David Fiene',
+                       'text': 'If you have a hundred thousand dollars of wages that you paid and you have '
+                               'credits of thirty thousand dollars, you can only deduct in your tax return '
+                               '70,000 of wages, not the full hundred thousand.',
+                       'tip': 'If you have a hundred thousand dollars of wages that you paid and you have '
+                              'credits of thirty thousand dollars, you can only deduct in your tax return '
+                              '70,000 of wages, not the full hundred thousand.',
+                       'timestamp': 260,
+                       'timestamp_seconds': 260,
+                       'timestamp_label': '[00:04:20]',
+                       'url': 'https://www.youtube.com/watch?v=dg087iZZfsQ&t=260s',
+                       'markdown': '[00:04:20](https://www.youtube.com/watch?v=dg087iZZfsQ&t=260s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'WLD-qzEGnIg',
+                       'title': 'Help wanted? Businesses that are hiring should know about the work '
+                                'opportunity tax credit',
+                       'channel': 'Accounting Instruction, Help, & How To (Financial & Managerial)',
+                       'author': 'Accounting Instruction, Help, & How To (Financial & Managerial)',
+                       'text': 'For a taxable business the credit is limited to the business income tax '
+                               "liability, so it's not what we would call a refundable credit.",
+                       'tip': 'For a taxable business the credit is limited to the business income tax '
+                              "liability, so it's not what we would call a refundable credit.",
+                       'timestamp': 305,
+                       'timestamp_seconds': 305,
+                       'timestamp_label': '[00:05:05]',
+                       'url': 'https://www.youtube.com/watch?v=WLD-qzEGnIg&t=305s',
+                       'markdown': '[00:05:05](https://www.youtube.com/watch?v=WLD-qzEGnIg&t=305s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'KqRldQ_XlyA',
+                       'title': "ATS Podcast #2: Don't Leave Money on the Table: The $9,600 Hiring Secret "
+                                'Restaurants Are Missing',
+                       'channel': 'Official ReadyATS',
+                       'author': 'Official ReadyATS',
+                       'text': "This Five Guys group had been running since 2005 successfully, but they'd "
+                               'never used the WOTC program before.',
+                       'tip': "This Five Guys group had been running since 2005 successfully, but they'd "
+                              'never used the WOTC program before.',
+                       'timestamp': 362,
+                       'timestamp_seconds': 362,
+                       'timestamp_label': '[00:06:02]',
+                       'url': 'https://www.youtube.com/watch?v=KqRldQ_XlyA&t=362s',
+                       'markdown': '[00:06:02](https://www.youtube.com/watch?v=KqRldQ_XlyA&t=362s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'AUiM2KAknsw',
+                       'title': 'TAX TIP For Employers - The Work Opportunity Tax Credit (WOTC)',
+                       'channel': 'Buffalo Tax Strategies',
+                       'author': 'Buffalo Tax Strategies',
+                       'text': 'If you do not send this in or if it is not postmarked within 28 days of '
+                               'the hire, then the application will be immediately denied.',
+                       'tip': 'If you do not send this in or if it is not postmarked within 28 days of the '
+                              'hire, then the application will be immediately denied.',
+                       'timestamp': 125,
+                       'timestamp_seconds': 125,
+                       'timestamp_label': '[00:02:05]',
+                       'url': 'https://www.youtube.com/watch?v=AUiM2KAknsw&t=125s',
+                       'markdown': '[00:02:05](https://www.youtube.com/watch?v=AUiM2KAknsw&t=125s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'tAf8rI1hwtc',
+                       'title': 'Work Opportunity Tax Credit (WOTC): Eligibility, Proven Strategies, and '
+                                'Best Practices',
+                       'channel': 'MP: Wired for HR',
+                       'author': 'MP: Wired for HR',
+                       'text': 'I have had experience with employers who kind of just collected all the '
+                               "forms and didn't send them in until after the fact, way later on, and it "
+                               "didn't go well for them.",
+                       'tip': 'I have had experience with employers who kind of just collected all the '
+                              "forms and didn't send them in until after the fact, way later on, and it "
+                              "didn't go well for them.",
+                       'timestamp': 1525,
+                       'timestamp_seconds': 1525,
+                       'timestamp_label': '[00:25:25]',
+                       'url': 'https://www.youtube.com/watch?v=tAf8rI1hwtc&t=1525s',
+                       'markdown': '[00:25:25](https://www.youtube.com/watch?v=tAf8rI1hwtc&t=1525s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'JKK9Lp_jP0k',
+                       'title': 'Work Opportunity Credit and Rehabilitation Expenditure Credit. CPA Exam',
+                       'channel': 'Farhat Lectures | CPA, CMA, EA & Accounting',
+                       'author': 'Farhat Lectures | CPA, CMA, EA & Accounting',
+                       'text': "Let's assume you paid a hundred thousand dollar in wages and you had eight "
+                               'thousand dollar in credits; now your net wages is ninety two thousand, '
+                               "that's how much you can deduct.",
+                       'tip': "Let's assume you paid a hundred thousand dollar in wages and you had eight "
+                              'thousand dollar in credits; now your net wages is ninety two thousand, '
+                              "that's how much you can deduct.",
+                       'timestamp': 380,
+                       'timestamp_seconds': 380,
+                       'timestamp_label': '[00:06:20]',
+                       'url': 'https://www.youtube.com/watch?v=JKK9Lp_jP0k&t=380s',
+                       'markdown': '[00:06:20](https://www.youtube.com/watch?v=JKK9Lp_jP0k&t=380s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q9.'}]}

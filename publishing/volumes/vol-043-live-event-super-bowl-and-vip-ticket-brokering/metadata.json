@@ -9,49 +9,49 @@
       "BROKERING"
     ],
     "deck": [
-      "SOURCE PREMIUM ACCESS. PRICE THE FULL EXPERIENCE.",
-      "THREE MODELS. ONE DISCIPLINED BROKERAGE."
+      "READING SUPER BOWL RESALE FLOORS, 48-TO-72-HOUR DIPS, ONE-WEEK COLLAPSES AND GAME-DAY DUMPS",
+      "SOURCING PLAYER, COACH AND TEAM ALLOTMENTS, THEN VERIFYING, LISTING AND FLIPPING SEATS ON DIGITAL RAILS"
     ],
-    "lead": "Build a premium-access brokerage around live events, Super Bowl demand, and VIP buyers—with verified inventory, disciplined pricing, and reliable fulfillment.",
-    "summary": "Multi-exchange POS resale distributes verified ticket inventory through a synchronized point-of-sale system, while stadium suite seat-splitting sells individual places in suites only where contracts and venue rules permit. Super Bowl and tentpole hospitality bundling combines transferable tickets with separately contracted amenities, requiring clear inclusions, supplier verification, and pricing that covers fees, fulfillment, and cancellation exposure.",
+    "lead": "Broker-level testimony on how Super Bowl and marquee-event seats are allocated, sourced, priced, verified and flipped, from $950 face value to $40,000-plus seats near the 50-yard line.",
+    "summary": "All 12 chapters synthesize 192 verbatim YouTube practitioner testimonies, and every quote carries timestamped inline attribution to its channel and video. Together they map the market from StubHub's 25% average commission and the NFL's 17.5-percent-per-team allocation through VIP hospitality, seat licenses, transfers, resale law and the reseller's flipping playbook.",
     "chapters": [
-      "Q1 — The Premium-Access Opportunity",
-      "Q2 — Pick Your Brokerage Model",
-      "Q3 — Find Buyers Before Buying",
-      "Q4 — Source Verified Inventory",
-      "Q5 — Underwrite Every Deal",
-      "Q6 — Package and Price Access",
-      "Q7 — Build the Sales Pipeline",
-      "Q8 — Close With Clear Terms",
-      "Q9 — Sync Inventory and Fulfill",
-      "Q10 — Control Compliance and Risk",
-      "Q11 — Launch Your First Event",
-      "Q12 — Scale Profitable Relationships"
+      "Reading the Super Bowl Resale Market",
+      "Sourcing Super Bowl Seats: Allotments, Face Value and Fraud Avoidance",
+      "Super Bowl VIP Packages, Suites and Stadium Premium Hospitality",
+      "F1 Paddock Club and Ultra-Premium Event Hospitality",
+      "Marquee Events Beyond the NFL: Masters, Tennis, UFC, Coachella and College Finals",
+      "Personal Seat Licenses: The Right to Buy",
+      "World Cup and Soccer Demand: Hospitality, Resale and Scams",
+      "Ticketmaster Delivery, Transfers and Refunds",
+      "AXS Workflows and Back-Office Ticketing Tools",
+      "The Law of Reselling: BOTS Act, FTC Actions and Broker Failures",
+      "Concert Pricing Mechanics: Dynamic Pricing, Platinum Seats and Fees",
+      "The Reseller's Playbook: Sourcing, Selection and Flipping"
     ],
     "flow": [
       [
-        "SELECT",
-        "Choose an event, buyer segment, and model: POS resale, permitted suite seat-splitting, or hospitality bundling."
+        "READ THE MARKET",
+        "Watch prices early, let the conference-championship spike burn off, and read buyer geography, since one traveling fan base kept StubHub sales 30 to 40% ahead of the prior year."
+      ],
+      [
+        "SOURCE INVENTORY",
+        "Fill the board from players, coaches, agents and team front-door deals, which supplied about 80 percent of one broker's listings, with roster players 35 through 53 the most likely to resell."
       ],
       [
         "VERIFY",
-        "Confirm supplier identity, inventory rights, transfer timing, resale restrictions, and any suite or hospitality permissions."
+        "Stay on digital rails through verified marketplaces such as NFL Ticket Exchange, reject physical tickets for a mobile-only game, and kill any listing $1,000 to $2,000 under the going market."
       ],
       [
-        "UNDERWRITE",
-        "Set acquisition limits using net proceeds after fees, amenities, taxes, fulfillment costs, and downside reserves."
+        "LIST AND SELL",
+        "List the same seats on multiple sites at once, sell direct to fans to dodge secondary-site fees, and bundle a perk such as a tailgate bash to move inventory in a soft year."
       ],
       [
-        "MARKET",
-        "Publish accurate listings or buyer proposals with explicit seat details, inclusions, exclusions, and delivery terms."
+        "TIME THE BUY",
+        "Set price alerts under the current floor and target the 48-to-72-hour window before kickoff, staying out of the final rush when desperation pushes prices back up."
       ],
       [
-        "FULFILL",
-        "Synchronize inventory to prevent double-selling, complete authorized transfers, and confirm each hospitality component."
-      ],
-      [
-        "RECONCILE",
-        "Resolve delivery issues, reconcile payouts and supplier bills, measure realized margin, and cultivate repeat buyers."
+        "EXIT",
+        "Gauge leftover game-day supply before betting on a collapse, and never carry unsold inventory into a soft-matchup week without an exit plan, as game-day sellers cut hardest."
       ]
     ]
   },
@@ -59,10 +59,10 @@
   "book_series": "THE BIG MONEY PLAYBOOKS",
   "tagline": "Big Money. Small Teams. No Bullshit.",
   "title": "LIVE-EVENT, SUPER BOWL & VIP TICKET BROKERING",
-  "subtitle": "The Complete Playbook for Live-Event, Super Bowl & VIP Ticket Brokering: $220,000–$1,800,000 USD in Annual Gross Billings, a Core 1 FT + 2 C Pod (3 People), and Settlement-Disciplined Arbitrage",
+  "subtitle": "Allotment Sourcing, 48-to-72-Hour Resale Timing, PSL Fee Math, Paddock Club and Suite Hospitality, Ticketmaster and AXS Transfer Custody, BOTS Act Limits and the 25% Margin Flipping Playbook",
   "chapter_count": 12,
-  "total_word_count": 80566,
-  "expert_youtube_link_count": 180,
+  "total_word_count": 74955,
+  "expert_youtube_link_count": 212,
   "min_expert_youtube_links_required": 150,
   "target_expert_youtube_links": "150-200+",
   "min_expert_youtube_links_per_chapter": 12,
@@ -77,5 +77,5 @@
   "publication_status": "approved_master",
   "public_deploy_approved": false,
   "paid_sales_approved": false,
-  "updated_at": "2026-11-23T22:48:03Z"
+  "updated_at": "2026-11-24T23:55:17Z"
 }

@@ -1,470 +1,470 @@
 {
   "workbook_id": "wb-040-self-funded-erisa-pbm-and-workers-comp-arbitrage",
   "volume_id": "vol-040-self-funded-erisa-pbm-and-workers-comp-arbitrage",
-  "title": "Self-Funded Health, PBM & Workers' Comp Arbitrage — Operator Companion Workbook",
-  "subtitle": "6 Printable Operator Worksheets for ERISA Prospect Underwriting, Retained-Fee Economics, Stop-Loss and PBM Execution, Workers' Comp Recovery Controls, Licensed Delivery, and a Transferable Small-Team Practice",
+  "title": "Self-Funded Health, PBM & Workers' Comp Arbitrage — Practitioner Testimony Operator Workbook",
+  "subtitle": "Funding Architecture, Stop-Loss Layers, Medical Captives, and PBM Money Trails: Operator Worksheets for Employers Leaving Guaranteed-Cost Health Plans",
   "worksheets": [
     {
       "worksheet_id": "ws-01",
       "number": 1,
-      "title": "Arbitrage Deal / Counterparty Underwriting & Spread Qualification",
-      "purpose": "Separate a defensible employer benefit improvement from an attractive sales illustration. Underwrite the employer, plan, carrier, PBM, and rating jurisdiction before proposing a transition. Establish which savings are measurable, which fees the operator retains, and which dependencies could prevent collection.",
-      "chapter_ref": "Q1, Q2, Q6",
+      "title": "Funding Architecture and Level-Funding Readiness Audit",
+      "purpose": "Decide whether the group should stay fully insured, move to level funding, or graduate to traditional self-funding by quantifying the dollars the carrier keeps, the load inside flat quotes, the surplus terms on offer, and the downside exposure if year two turns ugly.",
+      "chapter_ref": "Q1-Q2",
       "instructions": [
-        "Start with the employer's legal identity, plan year, covered employee count, current funding arrangement, and authorized decision maker. Use public Form 5500 material for prospecting, then obtain employer authorization before requesting nonpublic contracts or participant information.",
-        "Build separate health, pharmacy, and Workers' Comp opportunity records. Assign each its own baseline, evidence period, billing basis, and recovery deadline so projected employer savings cannot be mistaken for operator revenue or counted across overlapping services.",
-        "Request binding stop-loss terms, underlying plan documents, PBM definitions, and the applicable rating bureau worksheet. Treat illustrative quotes and public filings as leads rather than evidence that a carrier, administrator, or employer has accepted an obligation.",
-        "Normalize every comparison for enrollment, benefit design, claims period, rebates, administrative charges, and coverage exclusions. Identify excluded costs explicitly, particularly participant balance bills, specialty pharmacy substitutions, claim run-out, and individual stop-loss lasers.",
-        "Approve pursuit only after documenting authority, measurable value, collectible compensation, licensed delivery capacity, and a credible fallback. Assign an owner and dated evidence request to each unresolved dependency rather than concealing uncertainty inside a savings percentage."
+        "Start with the most recent renewal and the last full plan year of premium and paid claims before looking at any new quote.",
+        "Fill every field with dollar figures or exact contract wording; a field answered with an adjective is not answered.",
+        "Request itemized quotes and surplus language in writing from the carrier or broker before scoring any option.",
+        "Run the walk-away screen before investing time in underwriting paperwork, so an unfit group never reaches submission.",
+        "Review the completed sheet with the owner, confirm the business horizon and cash reserve, and only then authorize binding."
       ],
       "fields": [
         {
-          "name": "Employer identity, plan scope, and authorized sponsor",
+          "name": "current_renewal_loss_ratio",
           "type": "textarea",
-          "prompt": "Record the employer entity, controlled-group questions, plan number, funding status, plan year, covered employees, covered lives, and sponsor representative. Explain which signed authorization permits each requested dataset and vendor conversation.",
-          "example": "Harbor Components LLC sponsors calendar-year plan 501 with 350 covered employees and 612 covered lives. The CFO signs a benefits review engagement and authorizes contract requests. The 350 employees establish the proposed PEPM billing base; 612 lives inform claims analysis but do not multiply advisory fees."
+          "prompt": "Pull your last fully insured renewal and calculate your loss ratio by dividing paid claims by total premium. Record the premium, the claims, the dollars the carrier kept, and whether any credit, refund, or rate relief came back to you.",
+          "example": "A 120-employee Dallas group paid about $1.4 million in premium at a 60% loss ratio and received a flat renewal with no refund, leaving roughly $560,000 with the carrier [AHealthcareZ - Healthcare Finance Explained — wshiRRBh4Gs @ 00:03:45]. Log: premium $1.4M, claims about $840,000, retained $560,000, credit $0, renewal flat. Flag as a self-funding candidate."
         },
         {
-          "name": "Renewal intelligence and incumbent position",
+          "name": "funding_model_map",
           "type": "textarea",
-          "prompt": "Identify the renewal date, public filing source, incumbent broker relationship, cancellation notice requirements, and procurement calendar. Distinguish historical Schedule A or C information from current arrangements verified directly with the employer.",
-          "example": "A DOL EFAST2 filing identifies a prior carrier relationship and December plan-year end. The employer confirms a January renewal and September market review. Its current agreement requires 60 days' termination notice. Schedule C amounts remain historical evidence, not proof of this year's broker compensation."
+          "prompt": "Map your current and candidate funding models side by side: fully insured, level-funded, and traditional self-funded. For each, note who keeps unspent claims dollars, what portion is fixed versus variable, and what happens to surplus at year end.",
+          "example": "Fully insured: carrier keeps every unspent dollar. Self-funded: about 60 to 70% of spend is claims, so that share becomes variable and manageable [Self-Funded — VPeObJ32l7M @ 00:03:36]. Level-funded: one flat monthly bill split into admin, stop-loss, and a claims fund, with 50 to 80% of surplus returned depending on contract [Tyler Dutchover — ExcUj28jzzc @ 00:03:47]."
         },
         {
-          "name": "Health baseline and comparable exposure",
+          "name": "carrier_load_check",
           "type": "textarea",
-          "prompt": "Specify the paid and incurred claim periods, enrollment denominator, benefit design, administrative fees, and large-claim adjustments. Identify the reconciliations needed before comparing an insured renewal against self-funded or captive alternatives.",
-          "example": "The employer reports $3,600,000 annual health spend, including medical and pharmacy costs, carrier charges, and administration. The analyst obtains 24 months of monthly enrollment and claims summaries. A proposed $180,000 reduction remains an employer projection, with trend, benefit changes, and run-out shown separately."
+          "prompt": "Ask the carrier or broker to break the level-funded quote into admin, individual stop-loss, aggregate stop-loss, and claims fund. Estimate how much load sits above expected cost and write down whether the flat number was ever itemized for you.",
+          "example": "Matt Roy says carriers price admin, ISL, ASL and claims, then usually charge about 25% more than they expect it to cost and present one flat number [Blue Ocean Benefits & Consulting — D23XjGg7o_g @ 00:05:15]. Entry: flat quote received, itemization requested in writing, and every line treated as carrying that 25% load until the carrier shows the expected-claims figure separately."
         },
         {
-          "name": "Stop-loss counterparty and laser qualification",
+          "name": "surplus_split_language",
           "type": "textarea",
-          "prompt": "Capture carrier identity, specific and aggregate attachments, contract basis, exclusions, disclosure duties, reimbursement timing, and named claimant lasers. Compare the binding wording with the plan's obligations rather than relying on a quote summary.",
-          "example": "A proposal offers $100,000 specific coverage with one $250,000 claimant laser and a 125% aggregate attachment. The additional $150,000 laser exposure is modeled separately. The sponsor requests a firm aggregate schedule, reimbursement requirements, and contract wording before treating the quote as executable protection."
+          "prompt": "Quote the exact surplus-split and renewal language from the level-funded contract. Record the refund percentage, whether it arrives as cash or as lower rates, the runout period that delays payment, and how long the owner expects to stay in business.",
+          "example": "Security Health Plan currently refunds 66% of unused claim dollars at the end of the run-out period [Security Health Plan — 8FR_2qIAL34 @ 00:15:46]. ATA advises asking the owner how long they expect to be in business and setting the split to that horizon [American Trust Administrators | Level Funding — 8scqEaAolto @ 00:05:56]. Entry: 66% refund, 12/18 runout, owner horizon ten-plus years."
         },
         {
-          "name": "PBM spread and rebate opportunity",
+          "name": "year_two_downside",
           "type": "textarea",
-          "prompt": "Define the claim sample, ingredient-cost benchmark, dispensing fees, specialty exclusions, rebate ownership, and reconciliation period. Explain how NADAC comparisons will distinguish a screening signal from contractually recoverable dollars and achievable future savings.",
-          "example": "A 10,000-claim generic sample totals $420,000 in ingredient charges against $370,000 using date-matched NADAC observations. Adding $15,000 modeled dispensing fees produces a $35,000 screening difference. Specialty products, missing benchmark observations, rebates, and member cost sharing require separate treatment before presenting savings."
+          "prompt": "Model the year-two downside before binding. Write the worst plausible renewal: a laser on one high-cost employee, the fully insured fallback rate if you return, and the cash the business could write if aggregate claims hit early in the year.",
+          "example": "Tyler Dutchover flags a renewal laser that pushes one employee's specific attachment to $200,000, plus a 10 percent or higher fully insured fallback rate [Tyler Dutchover — m5BLhBDIZZ4 @ 00:06:25]. On traditional self-funding, prove the business can write a check for the full aggregate within a couple of months [Maximize Asset Protection — hqPZ5l67B4A @ 00:17:42]. Entry: both scenarios priced, cash reserve confirmed."
         },
         {
-          "name": "Workers' Comp jurisdiction and E-Mod evidence",
+          "name": "group_fit_screen",
           "type": "textarea",
-          "prompt": "Identify each state's rating authority, policy period, experience worksheet, payroll classifications, ownership history, and loss valuation date. Record the specific correction mechanism and filing deadline rather than assuming every state uses NCCI.",
-          "example": "An Indiana employer supplies an NCCI worksheet showing a 1.18 modification. A supported correction models 1.06 on $240,000 of premium subject to modification, implying $28,800 before other rating factors. The carrier must issue an endorsed calculation before a refund amount becomes collectible."
+          "prompt": "Screen the group against the walk-away conditions. Note claims history versus average, emergency room use, owner plans to sell within one to two years, demographics, expected utilization, and whether the client accepts a full 12-month contract with delayed surplus.",
+          "example": "ATA says walk away if the group runs above-average claims, shows high ER use, or the owner plans to sell within one to two years [American Trust Administrators | Level Funding — dgpkKOJBv_s @ 00:01:22]. JS Benefits Group warns against picking level funding just because the first quote looks cheaper [JS Benefits Group — qE34fv4L2qU @ 00:00:54]. Entry: claims average, no sale planned."
         },
         {
-          "name": "Contractual compensation and retained spread",
+          "name": "underwriting_packet",
           "type": "textarea",
-          "prompt": "List advisory fees, direct and indirect commissions, recovery splits, referral obligations, and payment triggers. Reconcile each amount to retained operator consideration, excluding employer claim accounts, insurance premiums, and recoveries owed to the employer.",
-          "example": "The annual base portfolio contains $315,000 retained advisory fees, $140,000 retained stop-loss and TPA commissions, and $80,000 earned recovery fees. Advisory fees equal 350 covered employees times $75 times 12 months. Employer premiums and claim funding remain outside the $535,000 operator revenue total."
+          "prompt": "List every underwriting document the quote requires and its status: individual health questionnaires, census with SIC code and zip, quarterly wage and tax filing, and enrollment forms. Record the owner's hard deadline and who is chasing missing employees.",
+          "example": "ATA budgets 5 to 10 minutes per employee for IHQs [American Trust Administrators | Level Funding — ise8qdroICE @ 00:02:28], and Warp notes some carriers require an IMQ taking three to five minutes each [Warp — XHSDGFk6y94 @ 00:02:08]. Entry: owner sets a Friday deadline [American Trust Administrators | Level Funding — E2z3UzEl2Ds @ 00:01:14]; census, wage report and all IHQs held until complete."
         },
         {
-          "name": "Vendor solvency, service, and dispute exposure",
-          "type": "textarea",
-          "prompt": "Assess each counterparty's operating authority, carrier backing where relevant, service references, termination rights, data access, auditability, and dispute process. Record the evidence source and the commercial consequence of a failed obligation.",
-          "example": "The stop-loss carrier's state authority is verified through the insurance department. The TPA supplies two comparable employer references, a specimen service agreement, and a claims export specification. A proposed 90-day export delay is rejected because it would obstruct transition reconciliation and independent claim review."
+          "name": "broker_compensation_model",
+          "type": "text",
+          "prompt": "Write how your broker is paid today and how that pay would change under a fee model. Note whether the broker will grind level-funding paperwork, whether they quoted alternatives at all, and whether you need a different broker.",
+          "example": "Self Insured Reporting recommends converting 5% commission into a visible fee paid like an accountant or attorney [Self Insured Reporting — 5PxkF9WUCd0 @ 00:05:13]. Warp says typical brokers skip level funding because of extra work [Warp — XHSDGFk6y94 @ 00:00:48], and ATA adds: 'If your broker refuses to look, find another broker' [American Trust Administrators | Level Funding — ise8qdroICE @ 00:05:50]."
         },
         {
-          "name": "Employer savings bridge and downside case",
+          "name": "plan_redesign_levers",
           "type": "textarea",
-          "prompt": "Bridge baseline employer cost to proposed cost using separately labeled benefit, utilization, price, fee, and risk changes. Stress the principal adverse assumptions without using operator margin as evidence of employer value.",
-          "example": "A $180,000 gross employer improvement less $70,000 incremental service costs and $40,000 transition costs yields $70,000 modeled first-year benefit. A further $150,000 uncovered laser exposure turns that case into an $80,000 adverse outcome. The sponsor considers alternate coverage before accepting retained risk."
+          "prompt": "Inventory the plan redesign levers available inside a level-funded or self-funded structure. Note network options, reference-based access fees, direct primary care diversion, site-of-care price gaps, and which admin and stop-loss fees you will reopen at each renewal.",
+          "example": "Hint Health shows diverted claims worth about $40 PMPM and avoided services about 25 [Hint Health — 5ztwBEIpJjs @ 00:19:47]. BenefitsAlly cites an MRI at $3,200 versus $680 three miles away [BenefitsAlly | Home of the 3x3x3 Challenge — xXX6dBL4p3A @ 00:00:15]. BeneSmart notes admin and stop-loss fees are negotiable annually [BeneSmart - A Modern Approach to Benefits — UOjbo9Dprhw @ 00:05:47]."
         },
         {
-          "name": "Pursuit decision and evidence conditions",
-          "type": "textarea",
-          "prompt": "Write the pursue, defer, or decline decision with documented reasons, required evidence, accountable owners, and dates. Separate a commercial pursuit decision from authority to bind insurance, move funds, or transmit participant records.",
-          "example": "Pursue the PBM review and defer the funding transition. The analyst must reconcile rebates by day 8; the licensed producer must obtain firm laser terms by day 12. No carrier binding, participant transfer, or employer fund movement is authorized by this internal pursuit decision."
+          "name": "go_live_timeline",
+          "type": "text",
+          "prompt": "Set the go-live timeline backward from the effective date. Record the enrollment start date, the provider briefing on the new ID card, the expected speed of the level-funded quote, and the data you will harvest for a future self-funding move.",
+          "example": "BeneSmart starts enrollment 30 days out and briefs providers on the new ID card [BeneSmart - A Modern Approach to Benefits — UOjbo9Dprhw @ 00:09:35]. ATA warns level funding is slower than fully insured [American Trust Administrators | Level Funding — E2z3UzEl2Ds @ 00:03:20]. Allstate considers self-funding under 100 lives with level-funded claims data proving good results [Maximize Asset Protection — hqPZ5l67B4A @ 00:09:05]."
         }
       ],
-      "completion_gate": "The principal and licensed service lead sign a dated opportunity record containing a reconciled baseline, retained-fee schedule, counterparty evidence, jurisdiction map, and assigned resolution dates for every material underwriting dependency."
+      "completion_gate": "Complete only when the loss ratio and retained dollars are calculated, the surplus split and runout are quoted in writing, the year-two laser and fallback scenarios are priced, every IHQ and wage report is collected, and the owner has accepted the 12-month commitment."
     },
     {
       "worksheet_id": "ws-02",
       "number": 2,
-      "title": "Unit Economics, Escrow/Reserve Float & Working-Capital Calculator",
-      "purpose": "Reconcile the canonical portfolio scenarios to retained operator revenue, annual expense, and owner net profit. Separate revenue recognition from cash collection, distinguish operating reserves from employer claim funds, and size working capital for commission delays, refund disputes, and implementation spending.",
-      "chapter_ref": "Q3, Q4",
+      "title": "Stop-Loss Contract and Captive Layer Audit",
+      "purpose": "Expose the gaps between a self-funded plan and its stop-loss protection, including lasers, unfiled claims, split medical and pharmacy feeds, and unmirrored plan language, then test whether a member-owned captive offers a more stable layer design for the group.",
+      "chapter_ref": "Q3-Q4",
       "instructions": [
-        "Copy the three canonical scenarios without changing their revenue, margin, profit, or team assumptions. Explain that the scorecard's gross revenue label refers to retained operator revenue here, not employer premiums, plan assets, or underlying medical spend.",
-        "Build each scenario from covered employee months, retained advisory rates, retained commissions, and earned recovery fees. Treat the component mixes as workbook assumptions that reconcile to the fixed scenario totals, not additional facts supplied by the scorecard.",
-        "Apply principal-versus-agent analysis to every compensation stream and document the accounting policy. For this scorecard, use the retained contribution basis consistently; do not deduct upstream sharing arrangements a second time after revenue has already been reduced.",
-        "Prepare a weekly cash forecast that separates issued invoices, recognized consideration, unrestricted receipts, restricted amounts, and expenses. Exclude employer claim funding from available working capital even if a vendor dashboard displays those balances alongside operator commissions.",
-        "Stress collections and dispute exposure before committing the startup budget. Show monthly recurring overhead separately from total delivery costs, and make owner draws subordinate to the chosen cash floor rather than to an uncollected revenue forecast."
+        "Gather the current stop-loss contract, the renewal proposal, the plan document, and all amendments before starting.",
+        "Price every laser and corridor in dollars of added exposure, not in percentages alone.",
+        "Confirm claim-filing ownership and data feeds with written acknowledgment from the TPA, PBM, and stop-loss carrier.",
+        "Begin the captive evaluation four to six months before renewal so actuarial layer work can finish on time.",
+        "Escalate any field left blank or contested to the broker and counsel before the renewal is signed."
       ],
       "fields": [
         {
-          "name": "Conservative retained-revenue scenario",
+          "name": "spec_ag_structure",
           "type": "textarea",
-          "prompt": "Reproduce conservative revenue, margin, owner net profit, expense, and staffing exactly. Construct an explicit illustrative fee mix that adds to the canonical revenue without including employer premiums or claim funds.",
-          "example": "Conservative revenue is $120,000: 100 employees times $60 PEPM times 12 equals $72,000, plus $30,000 retained commissions and $18,000 earned recovery fees. Expenses are $81,600, leaving $38,400 at 32% margin. Staffing is 1 full-time principal plus 3 contractors, not four full-time equivalents."
+          "prompt": "Record the specific deductible, the aggregate attachment point, and the aggregate corridor percentage on your stop-loss quote. Note what share of stop-loss premium funds the specific layer and whether the aggregate looks conservatively or aggressively set.",
+          "example": "Spencer calls 25% the most common corridor, so $1M expected claims becomes a $1.25M attachment [Self-Funded — Dy4S9Ie5mEM @ 00:01:15], and warns carriers sometimes get too aggressive on that calculation to win business [Self-Funded — Dy4S9Ie5mEM @ 00:05:34]. Pete Dorne puts 85 to 90% of premium in the specific layer [ParetoHealth — 4VhWXTCGo74 @ 00:01:52]."
         },
         {
-          "name": "Base-case retained-revenue scenario",
+          "name": "laser_inventory",
           "type": "textarea",
-          "prompt": "Reproduce base revenue, margin, owner net profit, expense, and staffing exactly. State whether enrolled employees or covered lives drive the advisory calculation, and identify the recognition condition for contingent fees.",
-          "example": "Base revenue is $535,000: 350 employees times $75 PEPM times 12 equals $315,000, plus $140,000 retained commissions and $80,000 earned recovery fees. Expenses are $294,250, leaving $240,750 at 45.0% margin. Staffing is 1 full-time principal plus 3 contractors with defined delivery capacity."
+          "prompt": "Search the renewal for every laser. For each named claimant, record the laser amount, the standard specific deductible, the extra exposure between them, and the counter-offer you will make, such as an aggregating specific deductible or premium relief.",
+          "example": "A $600,000 laser over a $150,000 spec meant up to $450,000 of extra exposure [Benefit Whisperer — 6E1eObzSNLc @ 00:01:05]. Spencer offers a $50,000 ag spec in exchange for dropping a $125,000 laser on a $100,000 spec, which carriers often accept when it is that close [Self-Funded — VatFfWseBbI @ 00:07:48]. Entry: one laser found, ag spec counter sent."
         },
         {
-          "name": "Scaled small-team retained-revenue scenario",
-          "type": "textarea",
-          "prompt": "Reproduce scaled revenue, margin, owner net profit, expense, and headcount exactly. Explain how increased covered enrollment and retained ancillary compensation produce the revenue total without counting premium volume as sales.",
-          "example": "Scaled revenue is $950,000: 800 employees times $65 PEPM times 12 equals $624,000, plus $226,000 retained commissions and $100,000 earned recovery fees. Expenses are $399,000, leaving $551,000 at 58% margin. Staffing is 2 full-time personnel plus 4 contractors, totaling six people."
+          "name": "claim_filer_assignment",
+          "type": "text",
+          "prompt": "Name the single party responsible for filing stop-loss claims, whether TPA, general agent, or broker team. Record how the carrier receives claims, how fast specific claims are submitted after the deductible is met, and who verifies receipt.",
+          "example": "Spencer fielded broker calls at Sun Life about a $300,000 claim the carrier had never received, because a BUCA ASO setup with a third-party carrier was not sending claims [Self-Funded — AM2DB13I88c @ 00:02:56]. Stop-loss reimburses after the employer pays, with specific claims submitted once the deductible is met [Self Insured Reporting — HuaDk3XBOrc @ 00:02:34]. Entry: TPA named filer."
         },
         {
-          "name": "ASC 606 retained-share bridge",
+          "name": "rx_medical_claim_feed",
           "type": "textarea",
-          "prompt": "Document gross contractual consideration, pass-through shares, retained_share, performance obligations, and collection timing. Explain the actual principal-versus-agent conclusion separately from the scorecard presentation, especially when statutory accounts require a different gross presentation.",
-          "example": "A commission stream has $200,000 gross contractual consideration and a $60,000 upstream share. With retained_share equal to 0.70, the scorecard includes $140,000. A documented ASC 606 assessment supports net presentation for this example; delayed receipt of $20,000 changes cash timing, not the retained-share multiplication."
+          "prompt": "If the PBM is unbundled from the medical TPA, document how both medical and pharmacy claims reach the stop-loss carrier. Record each data source, the reporting frequency, and the test you ran to confirm split claims count toward the deductible.",
+          "example": "Spencer warns that in unbundled PBM arrangements the stop-loss carrier must receive medical and Rx claims from their corresponding sources, or split claims get missed and a breached deductible can stay hidden [Self-Funded — AM2DB13I88c @ 00:06:19]. Entry: TPA sends medical monthly, PBM sends Rx monthly, carrier confirmed both feeds in writing, one combined claimant reconciled against the deductible."
         },
         {
-          "name": "Annual cost bridge and monthly overhead",
+          "name": "plan_mirroring",
           "type": "textarea",
-          "prompt": "Reconcile annual scenario expense to recurring overhead and other delivery costs. Keep the stated monthly opex range visible without falsely equating that range to all annual costs required to earn the scenario revenue.",
-          "example": "The base expense bridge allocates $72,000 to recurring overhead, or $6,000 monthly within the $2,000–$11,000 range. Other delivery, acquisition, and project costs total $222,250. Combined expense is $294,250. The $6,000 overhead line is a subset, not the full monthly economic cost."
+          "prompt": "Compare the plan document to the stop-loss contract clause by clause. Confirm a plan mirroring provision exists, list any plan document amendments, and note every benefit the plan covers that the stop-loss contract could refuse to reimburse.",
+          "example": "This STUFF is complicated advises looking for plan mirroring language so whatever the plan document covers is covered by the stop-loss contract, and leaning on plan document amendments for extra protection [This STUFF is complicated — q36fieahkDs @ 00:03:37]. Entry: mirroring clause confirmed, two amendments attached, no coverage gaps flagged, counsel sign-off pending before the renewal is bound."
         },
         {
-          "name": "Startup capital and delayed-collection stress",
+          "name": "renewal_comparison_baseline",
           "type": "textarea",
-          "prompt": "Specify one-time setup spending, unrestricted opening cash, monthly burn, expected first collection, and stress duration. Compare required funding with the $8,000–$45,000 startup range and the 2–5 month first-deal expectation.",
-          "example": "At the high end, $8,000 setup plus three months of $11,000 burn plus a $4,000 incident cushion requires $45,000. Five months at that burn would require $67,000. The operator therefore reduces burn, secures permissible deposits, or adds capital rather than assuming the startup range covers every delay."
+          "prompt": "Compare your self-funded attachment point not to today's fully insured renewal but to the renewal you would face twelve months after a bad claims year. Record both numbers and the gap, and note recent large-claim severity trends.",
+          "example": "ParetoHealth frames the right comparison as a fully insured renewal delayed 12 months, the 30 to 35% hit after a bad year [ParetoHealth — 4VhWXTCGo74 @ 00:10:01]. One stop-loss carrier partner saw a 45% increase in size and severity of large claims, with former $250,000 claims running $500,000 to $600,000 [ParetoHealth — 4VhWXTCGo74 @ 00:02:21]."
         },
         {
-          "name": "Employer funds, escrow, and operating reserve separation",
-          "type": "textarea",
-          "prompt": "Identify every account, beneficial owner, permitted use, transfer authority, and reconciliation owner. Distinguish employer claim reserves, insurer premium payments, and disputed recoveries from unrestricted operator cash available for payroll or acquisitions.",
-          "example": "The employer maintains a $300,000 claim account under its own authorized funding arrangement. The operator holds $28,000 unrestricted business cash and has no claim-account withdrawal rights. A $12,000 disputed recovery stays with its contractual holder; neither external balance extends the operator's measured runway."
+          "name": "aggregate_value_test",
+          "type": "text",
+          "prompt": "Decide whether aggregate coverage is worth buying at the quoted price. Record its premium, how often groups actually collect, the corridor used, and whether an experience refund or a straight premium cut better fits your risk appetite.",
+          "example": "Self-Funded calls aggregate 'sleep insurance' because it is really inexpensive and highly predictable to a stop-loss underwriter [Self-Funded — 4cndcrJWUGg @ 00:05:27]. Pete Dorne reports aggregate claims hit less than 3% of self-funded groups [ParetoHealth — 4VhWXTCGo74 @ 00:08:54]. Tyler Dutchover notes the attachment is usually 125% of expected claims [Tyler Dutchover — b2StkpG4yOY @ 00:03:37]."
         },
         {
-          "name": "Recovery fee recognition and reversal exposure",
+          "name": "captive_layer_design",
           "type": "textarea",
-          "prompt": "Record the recovery amount, split, evidence of carrier acceptance, employer receipt, invoice trigger, and reversal terms. Apply variable-consideration constraints before recognizing a disputed fee, and distinguish a billing milestone from a recognition conclusion.",
-          "example": "The carrier confirms a $100,000 premium correction and the employer receives the refund. A 20% engagement fee produces $20,000, subject to the documented recognition assessment. A separate proposed $60,000 correction remains disputed; its potential $12,000 fee stays outside recognized revenue and unrestricted cash."
+          "prompt": "Sketch the captive layer stack you are evaluating: the specific deductible you retain, the member-owned pool layer above it, the excess carrier on top, the aggregate attachment, and the share of premium ceded to the member loss fund.",
+          "example": "Captive Resources illustrates Omega choosing a $100,000 specific deductible, meaning the company pays the first $100,000 of any claim [Captive Resources — c_F-WNrCoqk @ 00:03:16]. CRI reports 60 to 65% of premium ceded to the loss fund and $35M returned over 10 years [Christopher Martens — M8zhsS8szwY @ 00:55:23]. Entry: $100,000 retention, pool layer, A-rated excess above."
         },
         {
-          "name": "Receivable aging and portfolio cash floor",
+          "name": "captive_fit_and_timing",
           "type": "textarea",
-          "prompt": "List receivables by counterparty, contractual due date, dispute status, and expected collection week. Calculate unrestricted runway from cash and committed burn, excluding unsigned renewals, unearned contingencies, and employer-controlled balances from the calculation.",
-          "example": "Unrestricted cash is $28,000 and committed monthly overhead is $6,000, giving 4.67 months before other outlays. Receivables include $18,000 due in 15 days and $12,000 disputed. A $12,000 cash floor leaves $16,000 deployable; neither receivable is treated as already collected."
+          "prompt": "Test captive fit and timing. Record whether leadership treats stop-loss as a commodity, the months remaining before renewal, the captive's common anniversary, whether claims are accruing toward the deductible now, and the first-contract length needed to align.",
+          "example": "Captives use a common anniversary with short or long first contracts, and you do not move mid-year if claims are accruing to the deductible [Christopher Martens — M8zhsS8szwY @ 01:06:08]. TheSpringGroup starts building 4 to 6 months before renewal [TheSpringGroup — L4bWq8jE_JE @ 00:01:45]. A commodity buyer is not a fit [Self-Funded — 8nD9sJwgMdE @ 00:05:41]."
         },
         {
-          "name": "Break-even and owner distribution policy",
+          "name": "captive_downside_and_reserves",
           "type": "textarea",
-          "prompt": "State the contribution assumptions used for marginal break-even, then reconcile them with the full portfolio result. Define who authorizes distributions and which cash, tax, dispute, and delivery obligations must be funded first.",
-          "example": "At an illustrative 70% marginal contribution rate, $6,000 monthly fixed overhead requires $8,571.43 monthly retained revenue. This planning ratio does not replace the base annual 45% margin. The principal reviews distributions monthly only after the $12,000 cash floor, committed invoices, and tax reserve remain funded."
+          "prompt": "Run the downside and upside of captive membership. Record the look-back of historical large claims against the member bucket, the chance of an assessment year, the program's retention rate, and how you would deploy accumulated reserves.",
+          "example": "Captive Resources runs a look-back analysis of large claims against the member bucket [Captive Resources — BQVeLgnIx8A @ 00:15:20] and reports 98 plus percent retention [Captive Resources — BQVeLgnIx8A @ 00:18:27]. Self-Funded lists three reserve uses: lower deductibles, raise contributions, or grant premium holidays [Self-Funded — 8nD9sJwgMdE @ 00:06:20]. Entry: no assessment signal, reserves earmarked for a premium holiday."
         }
       ],
-      "completion_gate": "All three revenue-minus-expense calculations equal the canonical owner profit figures; retained-share calculations contain no double deduction; and the weekly cash forecast excludes every employer-controlled balance while funding the selected downside duration."
+      "completion_gate": "Complete only when every laser is priced and countered, a single claim filer is named, medical and Rx claims are confirmed flowing to the carrier, plan mirroring is verified, and the captive decision is documented against timing, fit, and look-back results."
     },
     {
       "worksheet_id": "ws-03",
       "number": 3,
-      "title": "End-to-End Execution, Idempotent Ledger & QA Pre-Flight Sheet",
-      "purpose": "Turn signed authority into a reproducible delivery sequence without duplicate invoices, unsupported savings, or participant data leakage. Define source records, stable identifiers, reconciliation checkpoints, release evidence, and correction procedures across health transitions, PBM repricing, and Workers' Comp recoveries.",
-      "chapter_ref": "Q7, Q8",
+      "title": "PBM Money Trail and Contract Forensics Worksheet",
+      "purpose": "Follow every pharmacy dollar from plan sponsor to PBM, pharmacy, manufacturer, and aggregator, quantify spread and retained rebates at the claim level, and rewrite contract definitions, pricing basis, term, and audit rights so savings flow to the plan instead of the middleman.",
+      "chapter_ref": "Q5-Q6",
       "instructions": [
-        "Map each engagement from signed scope through intake, analysis, proposal, accepted terms, implementation, billing, and collection. Attach an owner and evidence artifact to each transition so a completed task means an observable outcome rather than a checked box.",
-        "Create stable engagement, source-file, claim, adjustment, and invoice identifiers before importing records. Use explicit versioning for corrected records and database uniqueness constraints for economic events so retrying a job cannot create another fee or recovery entry.",
-        "Reconcile source counts and money totals before applying pricing logic. Keep paid claims, reversals, adjustments, rebates, and fees in distinct record types; a negative transaction is not automatically an error, and an apparent duplicate may be a legitimate correction.",
-        "Require independent review of coverage wording, repricing assumptions, rating corrections, and billing calculations. The reviewer must reproduce material totals from source evidence rather than merely confirming that the analyst's final spreadsheet looks internally consistent.",
-        "Release only the contracted deliverable to authorized recipients and preserve a compact evidence package. Record actual vendor acceptance, employer acknowledgment, and cash receipt separately; internal completion does not establish that an external counterparty performed its obligation."
+        "Request claim-level data that shows plan-billed amounts, pharmacy-paid amounts, and pricing basis for at least one generic and one specialty drug.",
+        "Read the definitions section of the PBM contract before reading any price guarantee or discount promise.",
+        "Put every transparency question and disclosure request in writing and log the date and quality of each response.",
+        "Use counsel and advisers with no payment relationship to the PBM when redlining terms.",
+        "Carry unresolved findings into the audit plan and the next RFP so they become contract requirements, not open questions."
       ],
       "fields": [
         {
-          "name": "Engagement state machine and handoff owners",
+          "name": "pbm_ownership_map",
           "type": "textarea",
-          "prompt": "Define allowed engagement states, transition evidence, responsible roles, and blocked-state behavior. Specify which actions require sponsor authority or a licensed producer, and prevent an analyst status change from creating external authority.",
-          "example": "ENG-040-017 advances from signed to intake-complete after contract and enrollment checks, then to analyzed after independent reconciliation. Only the licensed producer records carrier binding evidence. The billing specialist opens invoicing after the contractual milestone; an analyst cannot bind coverage by marking analysis complete."
+          "prompt": "Map who owns your PBM and every pharmacy, mail-order, and specialty operation tied to it. Record whether your funding model locks you to the carrier's PBM and whether a carve-out to an independent PBM is available.",
+          "example": "Dr. Eric Bricker notes that on fully insured plans Cigna requires Express Scripts, Aetna requires CVS Caremark, and United requires OptumRx [AHealthcareZ - Healthcare Finance Explained — wshiRRBh4Gs @ 00:01:32], while self-funded sponsors can carve out the PBM [AHealthcareZ - Healthcare Finance Explained — -xH2R8NZ4pU @ 00:12:22]. SmithRx says it owns no pharmacies or supply-chain assets [SmithRx — KB9tHMlyhyA @ 00:00:55]."
         },
         {
-          "name": "Source manifest and protected intake",
+          "name": "rebate_flow",
           "type": "textarea",
-          "prompt": "List each source file's sender, authorization, receipt time, cryptographic digest, record count, monetary control total, and retention class. Define how malformed files and excess participant identifiers are isolated before analysts receive access.",
-          "example": "A monthly pharmacy extract arrives through an encrypted portal with 10,080 transactions and a $424,200 net control total. The intake service records a SHA-256 digest and restricts the original to the review team. Names and addresses are removed from the pricing copy when unnecessary."
+          "prompt": "Trace rebate dollars from manufacturer to plan. Record the rebate share passed through, the share the PBM retains, whether a rebate aggregator or PBM-owned GPO sits in between, and the administrative fees that never appear in rebate reporting.",
+          "example": "Bricker estimates 55 to 80 percent of the rebate reaches the plan while the PBM keeps the rest [AHealthcareZ - Healthcare Finance Explained — vT0NNXYjQ_Y @ 00:03:31]. Frier Levitt says the aggregator keeps about 30 percent and passes 60 to 70 cents to the PBM [Frier Levitt — 8mubYuuHvMI @ 00:01:20]. Entry: aggregator confirmed, GPO fees undisclosed."
         },
         {
-          "name": "Idempotency keys and duplicate-event handling",
+          "name": "spread_per_claim",
           "type": "textarea",
-          "prompt": "Specify a stable economic-event key, storage uniqueness rule, retry behavior, and corrected-record policy. Explain why file names and arrival timestamps alone cannot identify an obligation or prevent duplicate posting across repeated vendor exports.",
-          "example": "A PBM event key combines engagement, vendor transaction identifier, transaction type, and version. SQLite enforces a UNIQUE constraint on those columns. Reimporting the same version changes no ledger balances. A corrected version supersedes the earlier analysis and creates a linked adjustment rather than silently overwriting history."
+          "prompt": "Pull a sample of generic and specialty claims and place the plan-billed amount next to the pharmacy-paid amount and acquisition cost for each. Record the spread per claim and the multiple of acquisition cost your plan actually paid.",
+          "example": "Bricker's amlodipine walk-through shows 48 cents billed against 1.9 cents acquisition, almost exactly 25 times more [AHealthcareZ - Healthcare Finance Explained — 0XFk1m3yGuY @ 00:03:09]. RxPreferred shows a PBM paying the pharmacy $10, invoicing $100 plus a $2 admin fee, and keeping $92 [RxPreferred — 15IQO_jTMUM @ 00:01:17]. Entry: twenty claims sampled, median generic multiple logged."
         },
         {
-          "name": "PBM claim, reversal, and rebate reconciliation",
+          "name": "specialty_script_extraction",
           "type": "textarea",
-          "prompt": "Describe transaction classification, original-to-reversal matching, benchmark dates, quantity normalization, and rebate allocation. State which exceptions block a savings calculation and how the reviewer reconciles transaction totals to vendor settlement reports.",
-          "example": "The extract contains 10,000 paid transactions totaling $430,000 and 80 reversals totaling negative $5,800, for $424,200 net. Each reversal links to its original transaction. Rebate receivables remain separate until the contract period is reconciled, preventing a credit from being counted as both lower claim cost and rebate income."
+          "prompt": "Break down one high-cost specialty script end to end. Record what the plan was billed, what the pharmacy was paid, the rebate amount and share retained, any transaction fee, and the total gross dollars the PBM extracted from that fill.",
+          "example": "Vault of Profit walks a $1,000 specialty script: the PBM bills the employer $940, pays the pharmacy $850, keeps 20 percent of a $400 rebate, and adds a $5 fee, for $175 gross [Vault of Profit — 351RCg-LQ6I @ 00:07:49]. PBM Insider cites an almost 500% average markup on high-cost drugs in the Johnson & Johnson case [PBM Insider — o57C9bK5ouI @ 00:01:20]."
         },
         {
-          "name": "Stop-loss implementation and coverage continuity",
+          "name": "rebate_definition_clause",
           "type": "textarea",
-          "prompt": "Record the binding evidence, plan-document alignment, eligibility transmission, contract basis, terminal liability arrangements, and reimbursement workflow. Identify who verifies that old-period claims and new-period claims have a defined funding and coverage path.",
-          "example": "The implementation checklist records the signed binder, accepted eligibility roster, $100,000 specific attachment, and $250,000 laser. A 12/15 proposal is checked against actual contract definitions. Prior incurred claims receive a separate run-out schedule; the team does not assume the new contract automatically covers them."
+          "prompt": "Copy the contract's exact definition of rebate and every related term. Record whether it captures all discounts and amounts based on a percentage of drug cost, or whether narrowed wording leaves bonus payments, market share fees, and GPO fees outside pass-through.",
+          "example": "Desai warns the rebate definition has been narrowed over the years to create other revenue pockets that escape pass-through [American Health Law Association — bO0c-bD-CEA @ 00:14:31]. Nephron data shows rebates fell from 48% to 13% of PBM profit, so full rebate pass-through leaves 87% untouched [AHealthcareZ - Healthcare Finance Explained — yFJFnewKqw4 @ 00:08:25]. Entry: definition redlined by counsel."
         },
         {
-          "name": "Workers' Comp correction evidence chain",
+          "name": "transparency_questions",
           "type": "textarea",
-          "prompt": "Identify the disputed classification, payroll or loss record, source authority, requested correction, bureau response, and carrier endorsement. Require dated evidence linking the underlying error to a revised modification and actual premium consequence.",
-          "example": "The employer supplies payroll records supporting a classification correction and a carrier loss-run letter confirming one closed claim's revised value. The analyst logs submission and bureau response dates. The file reaches collectible status only after the carrier issues the endorsed premium calculation and contractual recovery conditions are satisfied."
+          "prompt": "Write the transparency questions you will put to the PBM in writing. Include whether it has another customer besides the health plan, disclosure of formulary, market share and bonus payments, and whether any clause calls real drug costs trade secrets.",
+          "example": "Bricker's key question: does the PBM have another customer besides the health plan, with market share and bonus payments disclosed, not just rebates [AHealthcareZ - Healthcare Finance Explained — vT0NNXYjQ_Y @ 00:04:07]. Tyler Dutchover says if the PBM can refuse to show the receipts, assume you are paying more than needed [Tyler Dutchover — ufeHEzWD1Cc @ 00:09:52]. Entry: trade-secret clause struck."
         },
         {
-          "name": "Retained-fee ledger and settlement entries",
+          "name": "pass_through_charge_basis",
           "type": "textarea",
-          "prompt": "Define ledger accounts for receivables, cash, retained revenue, external shares, and adjustments. Specify how accounting presentation is reconciled to the scorecard, and require settlement references connecting each receipt to an existing obligation.",
-          "example": "A $20,000 earned recovery fee creates one receivable and one revenue event under the adopted policy. A later $15,000 receipt reduces that receivable to $5,000; it does not create another $15,000 of revenue. Bank reference and invoice identifier remain linked in the settlement record."
+          "prompt": "Test whether a pass-through label is real. Record the basis the plan is charged on, the basis the pharmacy is reimbursed on, whether MAC overperformance flows to you, and whether pricing moves toward NADAC or acquisition cost.",
+          "example": "Cora Opsahl reports AWP-discount billing to the plan against acquisition-cost-plus reimbursement to the pharmacy [Relentless Health Value — xHAyQelFkf8 @ 00:12:47]. TheCoyPharmer recommends monthly or weekly reporting and NADAC or pass-through pricing so MAC overperformance flows to the sponsor [TheCoyPharmer — H3p5Yw0Y-ek @ 00:15:25]. Entry: charge basis mismatched, NADAC pricing requested in redline."
         },
         {
-          "name": "Independent QA and release tolerances",
-          "type": "textarea",
-          "prompt": "Set reproducible checks for record counts, currency precision, enrollment months, contract terms, and recipient authorization. Distinguish permitted rounding from unexplained differences, and document the reviewer who can withhold an unsupported deliverable.",
-          "example": "The reviewer reproduces 350 times $75 as $26,250 monthly advisory fees and confirms the current enrollment definition. Source-to-ledger totals must reconcile to the cent after documented rounding rules. An unexplained $240 difference blocks release until the missing adjustment is identified and recorded."
+          "name": "contract_term_and_repricing",
+          "type": "text",
+          "prompt": "Record the contract length, the annual repricing or market-check provision, the exit penalty, and who reviewed the definitions section. Note whether any adviser on the deal receives payment from the PBM and how that conflict was handled.",
+          "example": "The Partners Group describes a client trapped in a multi-year deal by stale discounts and an exit penalty above $500K [The Partners Group — Cxvmh46o824 @ 00:44:25]. Frier Levitt urges negotiating down to the definitions section with competent counsel and avoiding consultants paid by the PBM [Frier Levitt — 8mubYuuHvMI @ 00:03:34]. Entry: three-year term, annual repricing added, independent counsel."
         },
         {
-          "name": "Corrections, rollback, and customer notification",
+          "name": "audit_plan",
           "type": "textarea",
-          "prompt": "Describe how an incorrect analysis, invoice, or exported file is withdrawn and replaced without erasing history. Identify notification responsibility, external acceptance checks, and the conditions requiring participant incident assessment or contractual escalation.",
-          "example": "A mistaken invoice bills 360 rather than 350 employees at $75 PEPM. The billing specialist issues a linked $750 credit and sends the corrected statement to the employer's authorized contact. The original remains auditable, and the delivery log records acknowledgment rather than assuming an email was read."
+          "prompt": "Plan the PBM audit. Record audit frequency, the line-level items tested, the expected recovery range, and who will run the audit even when the dollar amount looks too small to chase. Note which overcharge categories you suspect first and why.",
+          "example": "A jumbo plan sponsor reports audits finding 30 to 40% overcharges, with every audit yielding money back, and notes The Partners Group puts typical findings at 10 to 30% [Relentless Health Value — xHAyQelFkf8 @ 00:16:37]. Frier Levitt hears pharmacies call $5,000 or $10,000 findings too small to challenge [Frier Levitt — 67He43cmPRc @ 00:45:23]. Entry: annual audit, spread and rebates tested."
         },
         {
-          "name": "Evidence package and closeout reconciliation",
+          "name": "formulary_and_specialty_strategy",
           "type": "textarea",
-          "prompt": "List the minimum closeout artifacts, access roles, retention basis, and unresolved balances. Separate durable decision evidence from unnecessary participant-level copies, and state which open items prevent engagement closure despite a delivered presentation.",
-          "example": "Closeout contains the engagement, compensation disclosure, source manifest, reproducible calculation, reviewer sign-off, carrier endorsement, invoice, and receipt reference. The remaining $5,000 receivable keeps collection open while delivery is complete. Participant-level working files follow the documented retention schedule instead of being copied into every project folder."
+          "prompt": "Set the formulary and specialty strategy. List heavily advertised, low-efficacy drugs to replace, the first biosimilar switch for a specialty carve-out, member outreach steps, step-therapy rules, and whether the network RFP will require Cost Plus Drugs participation.",
+          "example": "Purdue moved Remicade to Inflectra for about 32% year-over-year savings, met with nearly every affected member, and now adds drugs quarterly [Employers' Forum of Indiana — zoRFywXBoLM @ 00:17:56]. Cuban says requiring Cost Plus Drugs in the RFP prompts big PBMs to offer bigger rebates and better terms [Relentless Health Value — xHAyQelFkf8 @ 00:18:34]. Entry: one biosimilar switch scheduled."
         }
       ],
-      "completion_gate": "A second operator reproduces the material totals, a repeated import creates zero additional economic events, every outward action has recorded authority, and the evidence package reconciles delivery status, invoices, adjustments, and collected cash."
+      "completion_gate": "Complete only when sample claims show billed versus paid amounts, rebate definitions are redlined to include all discounts, the charge basis matches pharmacy reimbursement, annual repricing and audit rights are written into the contract, and a specialty or formulary action is scheduled."
     },
     {
       "worksheet_id": "ws-04",
       "number": 4,
-      "title": "Statutory, Licensing, Contract Addendum & Compliance Audit",
-      "purpose": "Convert statutory duties and contract dependencies into testable operating requirements. Map producer and administrator authority by state, disclose compensation before covered engagements, protect health information, and preserve enforceable rights around stop-loss coverage, PBM accounting, rating corrections, and reference-based pricing.",
-      "chapter_ref": "Q5, Q9",
+      "title": "Reference-Based Pricing, Direct Contracting & Broker Compensation Audit",
+      "purpose": "Build a defensible reference-based pricing launch plan, map direct-contracting leverage, and expose exactly how your broker is paid before renewing, switching, or issuing a broker of record letter.",
+      "chapter_ref": "Q7-Q8",
       "instructions": [
-        "Create a jurisdiction map based on employer locations, insured risks, solicitation activity, and performed services. Verify individual and business-entity authority with the relevant insurance department before treating a contractor's license as authority for the whole practice.",
-        "Identify the actual service role before applying ERISA, HIPAA, or state administrator requirements. A brokerage engagement does not automatically make every activity fiduciary, and a consulting title does not remove licensing requirements when the underlying activity is regulated.",
-        "Attach direct and indirect compensation schedules to covered engagements before execution, renewal, or extension within the statutory timing framework. Describe payment sources, formulas, offsets, and termination compensation clearly enough for the responsible plan fiduciary to evaluate reasonableness.",
-        "Review contract provisions against the actual operating workflow, including data access, audit rights, reimbursement duties, dispute escalation, and termination assistance. Reject wording that promises transparency while withholding the transaction-level evidence needed to verify the promise.",
-        "Record the exact rule source, effective date, reviewer, and corrective action for each finding. Use current state and rating-bureau requirements for recovery work; neither an ERISA label nor a national vendor contract substitutes for jurisdiction-specific analysis."
+        "Pull twelve months of claims at the per-employee-per-month level before modeling any reference-based pricing savings, and use matured claims rather than early estimates.",
+        "Secure written access to HR and rank-and-file employees for education sessions before go-live, because RBP deals launched without that access went sideways [Dysrupt Healthcare Podcast — mPaz9R2yMrs @ 00:08:26].",
+        "Net every TPA, repricing, and advocacy fee against projected savings so the headline percentage reflects true plan spend.",
+        "Request the broker's written compensation disclosure in named dollar figures before discussing any renewal, plan redesign, or marketing exercise.",
+        "Treat any broker of record letter as a firing decision, not a quoting tool, and complete the remaining fields before signing one."
       ],
       "fields": [
         {
-          "name": "Producer license and appointment matrix",
-          "type": "textarea",
-          "prompt": "Record individual and agency licenses, relevant Life and Health and Property and Casualty authority, carrier appointments where required, renewal dates, and responsible personnel for every state implicated by the proposed services.",
-          "example": "The practice verifies Texas Life and Health authority under Texas Insurance Code Chapter 4054 and Property and Casualty authority under Chapter 4051, plus business-entity and applicable appointment requirements. A spreadsheet links each verification to the named producer and permitted activity; an inactive credential blocks that activity."
+          "name": "current_pepm_baseline",
+          "type": "text",
+          "prompt": "Record your plan's current cost per covered employee per month, the network discount structure you pay through, and the percentage savings you would need from a reference-based pricing build to justify switching away from a chargemaster-discount PPO model.",
+          "example": "A 300-employee blue-collar California agricultural group started at $819 per covered employee per month and landed at $480 after year one, a 41.4% reduction worth about $1.6M, with zero known balance bills across 2,000-plus claims and a stop-loss renewal at minus 10.1% [Dysrupt Healthcare Podcast — mPaz9R2yMrs @ 00:45:10]. Set your own target against that benchmark."
         },
         {
-          "name": "TPA scope and stop-loss placement authority",
+          "name": "facility_payment_formula",
           "type": "textarea",
-          "prompt": "Describe whether the operator administers claims, collects premiums, handles plan assets, or only advises and places coverage. Test administrator licensing and exemptions separately from producer authority using the actual service scope and jurisdiction.",
-          "example": "The Texas engagement excludes claims adjudication, premium collection, and discretionary claim payments. The service lead reviews Texas Insurance Code Chapter 4151 for administrator requirements and exemptions before adding services. Stop-loss placement also receives a line-of-authority and product review rather than assuming a health license resolves every issue."
+          "prompt": "Write the exact facility payment formula your plan will use, including the Medicare multiple, any cost-plus alternative, and which method controls when the two produce different numbers, then note how inpatient bills will be clinically audited line by line.",
+          "example": "Pay facilities the greater of Medicare plus 25% or the hospital's own self-reported cost plus 20%, run line by line against the cost-of-services report every Medicare-participating hospital files with CMS [Dysrupt Healthcare Podcast — mPaz9R2yMrs @ 00:24:54]. Compare that against the common 150% to 200% of Medicare range [Holloway Benefit Concepts — 2dsXkvZasDU @ 00:00:24]."
         },
         {
-          "name": "ERISA compensation disclosure evidence",
+          "name": "physician_outreach_plan",
           "type": "textarea",
-          "prompt": "Identify covered brokerage or consulting services, expected compensation, direct and indirect payment sources, recipient, and delivery date. Apply ERISA Section 408(b)(2)(B) to covered group health arrangements rather than automatically extending it to every Workers' Comp engagement.",
-          "example": "For a covered group health engagement expecting at least $1,000 compensation, the practice provides disclosures reasonably in advance under 29 U.S.C. 1108(b)(2)(B). The schedule identifies $75 PEPM advisory fees, carrier-paid commissions, referral payments, formulas, and termination amounts, with dated evidence of delivery to the responsible plan fiduciary."
+          "prompt": "List the physicians your members already see, who will call each office before the effective date, and what the outreach script covers about payment terms, payer ID, and the new ID card, so acceptance is secured before claims arrive.",
+          "example": "Collect member-nominated doctors during enrollment, then call each office before go-live to explain payment terms, payer ID, and the ID card; this outreach produced 95% physician acceptance [Dysrupt Healthcare Podcast — mPaz9R2yMrs @ 00:12:17]. For holdouts, cut single-case agreements, and confirm members check in advance whether a provider accepts RBP pricing [Rhett Robbins — 8begy-typh4 @ 00:01:24]."
         },
         {
-          "name": "Plan fiduciary role and employer decision record",
+          "name": "balance_bill_defense",
           "type": "textarea",
-          "prompt": "Identify who exercises discretion over plan administration, assets, and vendor selection. Document service limitations and sponsor decisions against ERISA's functional fiduciary framework, without assuming that a contract label overrides the activities actually performed.",
-          "example": "Under 29 U.S.C. 1002(21)(A), functional discretion can establish fiduciary status. The employer's committee documents vendor selection under 29 U.S.C. 1104(a), comparing coverage, compensation, and service quality. The operator provides analysis but receives no discretionary claim-payment authority; any later expansion triggers a fresh role assessment."
+          "prompt": "Describe the balance-bill advocacy structure you will stand up before go-live, who answers the member's first call when a provider demands cash upfront, and whether your posture is pay-and-defend or negotiate-and-settle when a facility disputes the payment.",
+          "example": "One producer watched a client revert to a conventional PPO within months because employees faced cash-upfront demands and complaints mounted before advocates were in place [Partners MGU — YEFRBSmT3IE @ 00:00:29]. Assign a third-party advocate to step in on billing disputes [Rhett Robbins — 8begy-typh4 @ 00:01:24], and avoid the 1.0 bait-and-switch models that turned litigious [Dysrupt Healthcare Podcast — xVuFXA-gN8g @ 00:07:13]."
         },
         {
-          "name": "HIPAA role, minimum necessary access, and incidents",
+          "name": "dominant_market_map",
           "type": "textarea",
-          "prompt": "Map covered-entity and business-associate relationships, permitted uses, subcontractors, security responsibilities, and incident reporting. Specify when a business associate agreement is required and how analytical access is limited to the information needed for the task.",
-          "example": "When acting as a business associate, the practice executes terms addressing 45 CFR 164.504(e), applies relevant minimum-necessary requirements under 45 CFR 164.502(b), and uses safeguards under 45 CFR 164.308 and 164.312. Suspected exposure enters the documented assessment process, including applicable notification duties under 45 CFR 164.410."
+          "prompt": "Map every market where a single dominant health system or rural hospital controls access, name the freestanding ambulatory surgery centers you will contract as plan B, and state how members will be steered there before they need surgery.",
+          "example": "Flag dominant-system and rural markets early and contract freestanding ambulatory surgery centers as the backup before members need procedures [Self-Funded — A__ZFq9k8Ds @ 00:38:56]. Price gaps justify the effort: at one hospital an MRI costs $3,200, while three miles away it runs $680, one-fifth of the price [BenefitsAlly | Home of the 3x3x3 Challenge — xXX6dBL4p3A @ 00:00:15]."
         },
         {
-          "name": "Stop-loss, run-out, and captive addendum",
+          "name": "direct_contract_leverage",
           "type": "textarea",
-          "prompt": "Specify attachment definitions, claimant lasers, eligibility, exclusions, reimbursement documents, advance funding, termination liability, and captive assessments where relevant. State which party funds a claim before reimbursement and how contract conflicts are resolved.",
-          "example": "The addendum schedules $100,000 specific attachment, the identified $250,000 laser, and the signed aggregate calculation. It assigns employer funding responsibility until reimbursement and lists claim submission deadlines. A captive proposal separately discloses collateral, additional assessments, and exit obligations rather than treating membership contributions as ordinary operator revenue."
+          "prompt": "Identify the providers you could contract with directly, the concentrated headcount you can steer to them, how fast your plan can pay compared with major carriers, and what negotiation leverage beyond pure cost analysis you are prepared to use.",
+          "example": "Offer steerage and faster payment, since major carriers can take 30, 60, even 90 days to pay [AHealthcareZ - Healthcare Finance Explained — xcu6bvj22fc @ 00:02:17]. Montana cut hospital pay from 191-611% to 200-220% of Medicare, saving $15M on hospitals, only after threatening to publish rates and board contacts and offering free out-of-state transport [AHealthcareZ - Healthcare Finance Explained — gpm3vtKEf5U @ 00:03:19]."
         },
         {
-          "name": "PBM rebate ownership and gag-clause review",
+          "name": "dual_option_design",
           "type": "textarea",
-          "prompt": "Define rebates, administrative fees, affiliate remuneration, audit rights, data access, and settlement timing. Evaluate contractual restrictions under applicable gag-clause provisions and distinguish an operator's assistance from the plan or issuer's attestation responsibility.",
-          "example": "The PBM addendum assigns defined manufacturer remuneration to the plan, itemizes retained fees, and permits authorized audit access. Review addresses 29 U.S.C. 1185m, 42 U.S.C. 300gg-119, and 26 U.S.C. 9824. The plan tracks its annual attestation responsibility and documents vendor support without assuming a signature resolves every restriction."
+          "prompt": "Sketch a dual-option enrollment design that places the reference-based plan beside a conventional network plan, listing deductible, employee monthly contribution for each, and the enrollment split you expect, plus TPA and repricing fees netted against projected savings.",
+          "example": "ClaimDOC's first case ran a dual option on the UMR and United network: a $2,000 deductible at $130 a month versus $200 a month for United, and 350 enrolled with ClaimDOC while six picked United [Self-Funded — A__ZFq9k8Ds @ 00:55:41]. Get TPA and repricing fees quoted, because they can eat into the saving [Benefits Studio — noY8cLblMi4 @ 00:01:12]."
         },
         {
-          "name": "Workers' Comp correction authority and fee terms",
+          "name": "broker_comp_disclosure",
           "type": "textarea",
-          "prompt": "Identify the state's rating rules, correction window, licensed activities, employer authorization, and permitted contingent compensation. Check separate adjuster or consultant requirements where implicated, and distinguish employer premium recovery from representation on an employee's injury claim.",
-          "example": "For California exposure, the operator uses WCIRB materials rather than NCCI rules and reviews California Insurance Code Sections 11750 and following with the applicable rating plan. The engagement limits work to authorized employer premium analysis and a permitted 20% received-refund fee; it excludes handling an employee's benefit claim."
+          "prompt": "Record every dollar your broker receives, separating base commission, persistency or retention bonuses, and indirect agency-level pay, then note the date you requested the written compensation statement and how quickly and completely the broker actually responded.",
+          "example": "Request the 408(b)(2) compensation statement in named dollar figures; a confident broker sends it the same week, while stalling or a summary tells you something [Benefits Blake — m68BBrL5G18 @ 00:19:46]. Watch for the line item that pays an advisor for you not to change carriers [Benefits Blake — m68BBrL5G18 @ 00:06:46]."
         },
         {
-          "name": "Reference-based pricing and participant defense",
-          "type": "textarea",
-          "prompt": "Describe reference-based pricing methodology, provider acceptance, participant communications, balance-bill support, appeal rights, and funded defense arrangements. Separate plan payment methodology from statutory surprise-billing protections and identify cases where protection does not apply.",
-          "example": "A proposed reference-based pricing arrangement includes a written balance-bill assistance protocol and funded access to qualified counsel. Review distinguishes applicable protections under 42 U.S.C. 300gg-111 and 300gg-131 from unrelated bills. A Medicare multiple alone does not establish provider acceptance or eliminate participant disputes."
+          "name": "peer_benchmark_5500",
+          "type": "text",
+          "prompt": "Name three peer employers of similar size in your area whose Form 5500 Schedule A filings you pulled, and record what each pays its broker per enrolled person per year compared with your own plan's broker cost.",
+          "example": "Pull peer Schedule A filings free on EFAST2 [Benefits Blake — m68BBrL5G18 @ 00:16:12], then compare against the $178 median per enrolled person per year, roughly $15 a month, from almost 30,000 fully insured plans [Benefits Blake — m68BBrL5G18 @ 00:02:31]. Treat Schedule A as the floor of compensation, not the ceiling [Benefits Blake — m68BBrL5G18 @ 00:17:00]."
         },
         {
-          "name": "Audit findings, contract precedence, and corrective action",
+          "name": "bor_decision",
           "type": "textarea",
-          "prompt": "Record each finding's rule source, affected contract, severity, owner, remedy, and verification evidence. Identify which document controls when the sales proposal, service agreement, plan document, and insurance contract describe different obligations.",
-          "example": "Finding C-07 identifies a proposal promising full rebate pass-through while the PBM agreement excludes affiliate receipts. The contract lead requests a defined remuneration amendment and independent review. The employer receives the unresolved difference in writing, and no savings calculation assumes the amendment is effective before execution."
+          "prompt": "State whether you will issue a broker of record letter, the specific reason, such as firing the incumbent or changing market access, whether the carrier accepts midterm changes, and how you will handle the incumbent's rescind request.",
+          "example": "Sign a BOR only to fire the incumbent or move market access, never because an agent claims it is needed for quotes [Beyond Business Insurance — rnj58CEkGiE @ 00:02:47]. Expect the incumbent to call inside the five-day hold window asking you to rescind, and prepare for the difficult conversation [Strategic Builders-Dev Insurance & Risk Solutions — 79EPdRvCp3A @ 00:01:50]."
         }
       ],
-      "completion_gate": "The service lead verifies current activity-specific authority, required compensation disclosures, executed data-use terms, and material coverage addenda. Every remaining finding has a documented operating restriction, named owner, and dated resolution requirement."
+      "completion_gate": "Do not launch reference-based pricing or sign a broker of record letter until the facility formula, physician outreach list, balance-bill advocate, plan B surgery centers, netted fee schedule, and written broker compensation disclosure in dollar figures are all documented on this worksheet."
     },
     {
       "worksheet_id": "ws-05",
       "number": 5,
-      "title": "Automation Pipeline, Acquisition Flywheel & Risk Fallback Tracker",
-      "purpose": "Build a small-team acquisition and delivery system that automates repeatable evidence handling without automating unsupported decisions. Track source provenance, renewal timing, repricing quality, bureau-specific logic, and human review capacity while preserving a manual fallback for every critical dependency.",
-      "chapter_ref": "Q6, Q10",
+      "title": "CAA Compliance, Fiduciary Defense & Claims Administration Control",
+      "purpose": "Document the fiduciary process the CAA now demands of every ERISA health plan sponsor, from gag-clause removal and compensation disclosures to PBM definition audits, vendor liability terms, and claimant-level cost analysis.",
+      "chapter_ref": "Q9-Q10",
       "instructions": [
-        "Use public employer filings to prioritize outreach, not to infer current benefit terms or acquire participant records. Respect source access conditions, cache retrieved material, and preserve filing dates so prospect scores do not silently rely on stale arrangements.",
-        "Version the NADAC reference series, PBM contract rules, and rating-bureau inputs used by each calculation. A reproducible result must identify its source period and exclusions, including products without a valid benchmark and states outside the selected bureau.",
-        "Measure automation by reconciled work completed per reviewer hour rather than by files downloaded. Separate technical processing success from commercial validity; a perfectly parsed contract can still contain an unacceptable exclusion or an unenforceable savings assumption.",
-        "Keep outreach, analytics, and billing stores separated by purpose and access role. Public prospect records belong in the CRM, while participant-level claims require restricted handling; copying medical details into a sales note creates unnecessary exposure without improving qualification.",
-        "For each automated stage, define a failure signal, stop condition, manual procedure, owner, and recovery target. Reconcile the backlog before restarting a failed job so resumed processing does not duplicate outreach, imports, correction submissions, or invoices."
+        "Gather every carrier, ASO, TPA, PBM, broker, and consultant contract currently in force, including amendments, before filling in any field.",
+        "Record dates for every request, response, and attestation, because documenting the process matters as much as doing it.",
+        "Read contract definitions before price guarantees, and quote exact contract language rather than summarizing it.",
+        "Escalate in writing any vendor that refuses gag-clause removal, compensation disclosure, or line-level claims data.",
+        "Review this worksheet with fiduciary decision-makers at least annually and before every renewal, RFP, or attestation deadline."
       ],
       "fields": [
         {
-          "name": "Form 5500 prospect acquisition manifest",
+          "name": "fiduciary_roster",
           "type": "textarea",
-          "prompt": "Specify public sources, permitted retrieval method, filing identifiers, employer matching logic, and refresh cadence. Document absent schedules as evidence limitations without inventing insurance arrangements or treating every plan as subject to identical filing requirements.",
-          "example": "The weekly job reads public DOL Form 5500 datasets and records employer EIN, plan number, filing year, and source reference. It links Schedule A and C only when present and applicable. A missing schedule prompts employer verification, not an invented carrier, commission figure, or funding classification."
+          "prompt": "List every person and committee acting as fiduciary for the health plan, which tasks each has delegated to vendors, and which vendors have signed in writing that they accept fiduciary status, noting where liability still rests with the employer.",
+          "example": "Fully insured employers are now fiduciaries too [Ameriflex — l5tGs_zQ8xA @ 00:04:02]. You can delegate responsibility but never liability [Self-Funded — I7g6idLkgrc @ 00:29:13], and unless vendors sign off as fiduciaries, the liabilities lie with you [OneVision — ks-F1VjDtk4 @ 00:18:05]. Document the process and keep receipts [Walsh Insurance — 9hPiS9wv_F4 @ 00:16:25]."
         },
         {
-          "name": "Renewal scoring and outreach eligibility",
+          "name": "gag_clause_inventory",
           "type": "textarea",
-          "prompt": "Define the scoring features, evidence age limits, contact verification, suppression logic, and reviewer role. Ensure scoring supports relevant outreach without implying that public benefit filings establish interest, authority, or permission to access private plan information.",
-          "example": "A prospect earns 30 points for a verified renewal within 180 days, 25 for suitable employee count, and 20 for a documented service mismatch. The operator suppresses opted-out contacts and checks business-email requirements under 15 U.S.C. 7704. A high score creates a review task, not automatic enrollment."
+          "prompt": "Inventory every carrier, ASO, TPA, and PBM contract, quote any language restricting access to claims or cost data, record the date each gag clause was removed, and note any vendor refusing removal whose contract cannot be extended.",
+          "example": "You cannot extend any contract with someone who will not remove the gag clause [Berger Montague — WBl8smrz_3E @ 00:01:38]. The employer carries a new fiduciary duty to vet that those clauses are gone [Mel 😊 DeWeese — k0FZkQKH4SQ @ 00:07:35]. Strike any clause calling real drug costs confidential trade secrets [Tyler Dutchover — ufeHEzWD1Cc @ 00:09:52]."
         },
         {
-          "name": "NADAC reference ingestion and normalization",
+          "name": "attestation_readiness",
           "type": "textarea",
-          "prompt": "Record the CMS reference release, effective dates, NDC normalization, unit definitions, and unmatched product treatment. Prevent the engine from presenting a retail acquisition benchmark as a universal PBM contract price or a complete specialty-drug benchmark.",
-          "example": "The repricing job preserves each CMS NADAC release and matches claim service dates to effective observations. It checks NDC format and quantity units before multiplication. Of 10,000 generic claims, 430 lack defensible matches and enter an exception queue rather than receiving zero benchmark cost or an estimated savings credit."
+          "prompt": "Record the date of your annual gag-clause compliance attestation, which internal deadline you are working to, and the claims data pull and audit steps completed beforehand to check for double payments and improper reductions before anyone signs.",
+          "example": "Plans must attest every single year by December 31st that insurance and pharmacy contracts comply [HUB Midwest East (fka Henriott) — JY_hbh9Kxrc @ 00:01:42], though some practitioners work to December 27. Hold the signature until claims data has actually been pulled and audited for double payments and improper reductions [Berger Montague — WBl8smrz_3E @ 00:03:15]."
         },
         {
-          "name": "PBM pricing engine and reproducibility tests",
+          "name": "comp_disclosure_tracker",
           "type": "textarea",
-          "prompt": "Define contract-specific ingredient, dispensing, rebate, and specialty logic with test fixtures. State how the engine proves arithmetic accuracy while keeping benchmark comparisons separate from contractual recoveries and enrollment-adjusted forward savings projections.",
-          "example": "Python decimal arithmetic prices a fixture of 30 units at $1.20 plus a $1.50 dispensing fee as $37.50. The test suite checks reversals, unit changes, and effective-date boundaries. A benchmark difference is labeled analytical opportunity until the contract and claim evidence establish an enforceable recovery."
+          "prompt": "For each broker or consultant expecting more than $1,000 in direct or indirect compensation, log the disclosure request date, the 30-day response deadline, the dollar figures received, and the 90-day termination date that applies if they never deliver.",
+          "example": "The trigger is more than $1,000 in expected compensation [The Leapfrog Group — QU7rxyEAEjQ @ 00:10:51]. A Florida school system expected about $195,000 in provider pay over four years and found about $4 million [OneVision — ks-F1VjDtk4 @ 00:17:25]. Do not renew until disclosure arrives; otherwise request it in writing and report to DOL [Berger Montague — 3ZIAPoIvjvc @ 00:03:59]."
         },
         {
-          "name": "E-Mod analyzer and jurisdiction-specific rules",
-          "type": "textarea",
-          "prompt": "Identify the bureau, experience period, valuation dates, payroll classes, loss inputs, and authorized reference materials. Define which computations the tool can reproduce and which require bureau confirmation or carrier endorsement before presenting a refund.",
-          "example": "The analyzer stores the employer's actual NCCI worksheet and licensed reference inputs for the applicable period. It flags a mismatch between submitted and supported payroll rather than inventing rating factors. California files route to a WCIRB workflow; no universal NCCI formula is applied across every jurisdiction."
+          "name": "form5500_status",
+          "type": "text",
+          "prompt": "List every welfare plan requiring a Form 5500, each original due date, whether any filing is late, whether a DOL notice has arrived, and whether an SPD wrap could combine plans under a single DFVCP penalty cap.",
+          "example": "Late filers face $2,739 per day per plan outside DFVCP versus $10 a day inside, capped at $1,500 small or $4,000 large [HR Service, Inc. — K_Kmaqdjrns @ 00:09:00]. Penalties run from the day after the original due date, not the extension date [HR Service, Inc. — K_Kmaqdjrns @ 00:10:11]. Filing is electronic only."
         },
         {
-          "name": "CRM boundaries and role-based permissions",
+          "name": "pbm_definitions_audit",
           "type": "textarea",
-          "prompt": "Specify which attributes enter the CRM, which remain in restricted analysis storage, and which roles can export information. Define account removal, multifactor authentication, access review, and logging responsibilities for employees and contractors.",
-          "example": "The CRM stores company contacts, renewal dates, employee-count bands, and opportunity stage. Participant names, diagnoses, and claim identifiers remain in restricted storage. The principal reviews access monthly, requires multifactor authentication, and removes a departing analyst's account immediately while retaining an auditable record of the authorized work."
+          "prompt": "Copy the contract definitions of generic drug, brand drug, specialty drug, and rebate from your PBM agreement, note which pricing basis applies to each category, and flag any definition that lets a generic be relabeled and repriced as specialty.",
+          "example": "Read definitions before price guarantees [Total Control Health Plans — FvXAV4cqPRg @ 00:03:16]. The J&J plan paid $10,239 for teriflunomide acquired at $81, a 12,403% markup [Total Control Health Plans — FvXAV4cqPRg @ 00:02:29]. Relabeling generics as specialty moves reimbursement from AWP minus 87 percent to AWP minus 12 percent, so lock every definition before renewal."
         },
         {
-          "name": "Acquisition flywheel and conversion economics",
+          "name": "rfp_contract_terms",
           "type": "textarea",
-          "prompt": "Measure prospect-to-meeting, meeting-to-review, and review-to-engagement conversion with dated cohorts. Calculate acquisition cost from actual spend and signed engagements, keeping pipeline estimates separate from earned revenue and recognizing the 2–5 month first-deal cycle.",
-          "example": "A cohort of 120 verified employers produces 24 meetings, 8 authorized reviews, and 2 signed engagements over three months. With $6,000 attributable acquisition spending, cost is $3,000 per signed engagement. The cohort supports pipeline planning; it does not create recognized fees before contractual service and recognition conditions are met."
+          "prompt": "List the must-have contract terms you will load into the RFP itself, including limitation of liability, indemnification, data access, lock-in length, and audit rights, and record the liability cap structure each finalist vendor proposed in response.",
+          "example": "Load must-have terms before vendors respond, because once a vendor knows it won the RFP, employers lose leverage [theallianceorg — 2VQyGj0Z_oY @ 00:40:26]. Typical caps run $50K per error, $1M per claim, or 4x the last 12 months of fees [theallianceorg — 2VQyGj0Z_oY @ 00:38:42]. Contractual indemnification is how to shift TPA-caused costs [Miller Johnson — WVU2CeENchc @ 00:34:53]."
         },
         {
-          "name": "Automation observability and exception budget",
+          "name": "line_level_pbm_audit",
           "type": "textarea",
-          "prompt": "Define success metrics for accepted records, reconciled totals, exception age, reviewer hours, and unauthorized-access alerts. Set thresholds that stop unreliable output rather than rewarding high throughput when source quality or contract interpretation has deteriorated.",
-          "example": "A batch passes only when source counts and settlement totals reconcile. Unmatched benchmark claims above 5% trigger analyst review; any unexplained money difference blocks release. A dashboard tracks exceptions older than two business days and reviewer hours per completed employer analysis, not merely the number of imported files."
+          "prompt": "Describe how you will audit pharmacy claims at the line level, comparing the amount charged to the plan with the amount paid to the pharmacy, and how retained rebates and spread will be quantified rather than relying on discount guarantees.",
+          "example": "Audit spread line by line, such as $1 charged to the plan versus $0.80 paid to the pharmacy [Frier Levitt — jpLEKhmPpLs @ 00:58:47]. Stop negotiating on discount guarantees, which the same panel calls the wrong questions to be asking [Frier Levitt — jpLEKhmPpLs @ 00:54:25]. A jumbo sponsor reports audits finding 30 to 40% overcharges [Relentless Health Value — xHAyQelFkf8 @ 00:16:37]."
         },
         {
-          "name": "Vendor outage and manual fallback tracker",
+          "name": "claimant_concentration",
           "type": "textarea",
-          "prompt": "List critical dependencies, outage indicators, manual substitutes, recovery targets, and data reconciliation steps. Distinguish a temporary processing pause from loss of coverage or a statutory deadline, and assign escalation to the role able to resolve each consequence.",
-          "example": "If the PBM portal fails, intake pauses and the analyst requests an authorized encrypted export through the named vendor contact. The service target is one business day for status confirmation. After recovery, source digests and transaction identifiers are checked before import so the alternate delivery cannot duplicate economic events."
+          "prompt": "Using your TPA claims report, count members above $20,000 and above $100,000 in annual cost, classify each large claim as ongoing or complete by diagnosis and procedure code, and name the intervention you will apply to the middle band.",
+          "example": "Members above $100K form the 5% driving 50% of costs, and members above $20K form the 20% driving 80%, so the sweet spot sits at $20K-$100K [AHealthcareZ - Healthcare Finance Explained — UQkzQUPP8JE @ 00:02:00]. Cancer and surgical complications keep running, while ortho and heart-attack claims are mostly complete [AHealthcareZ - Healthcare Finance Explained — UQkzQUPP8JE @ 00:04:10]."
         },
         {
-          "name": "Incumbent defense and concentration fallback",
+          "name": "surcharge_litigation_review",
           "type": "textarea",
-          "prompt": "Identify renewal obstruction, missing broker authority, carrier concentration, and key-person dependencies. Define commercial fallback services that remain authorized and valuable without claiming leverage over a carrier, employer, or incumbent relationship the operator does not control.",
-          "example": "When the incumbent retains placement, the operator offers a separately authorized PBM contract review instead of promising a carrier change. No single commission payer should dominate the planning case without a documented stress test. A second licensed producer maintains continuity if the principal becomes unavailable during the renewal window."
+          "prompt": "Review your SPD and every flyer, enrollment guide, and program document describing a tobacco surcharge or wellness program, list each required term and where it appears, and note your documented RFP history in case a fiduciary claim arrives.",
+          "example": "Audit the SPD and all program materials for any surcharge or wellness program so no required term goes missing from a flyer [The Class Action Weekly Wire — NtoIMU293PI @ 00:07:30]. The stakes are real: typical ERISA class settlements run $8-15M before fees, threatening fiduciary insurance [Multnomah Group, Inc. — _QhwEj0_Hrg @ 00:01:39]."
         }
       ],
-      "completion_gate": "Each production automation has versioned inputs, a reproducible test, reconciliation thresholds, an assigned reviewer, and a manual fallback. Outreach metrics use dated cohorts, and no pipeline value, benchmark difference, or unendorsed correction is posted as earned revenue."
+      "completion_gate": "Do not sign the annual gag-clause attestation, renew any vendor contract, or extend any broker or consultant agreement until gag clauses are confirmed removed, compensation disclosures in dollar figures are on file, PBM definitions are audited, and liability terms are locked into the RFP."
     },
     {
       "worksheet_id": "ws-06",
       "number": 6,
-      "title": "30-Day Launch Sprint, Pod KPI Scorecard & Exit-Readiness Ledger",
-      "purpose": "Translate the operating model into a realistic first month and a measurable small-team practice. Assign licensed responsibilities, set collection-aware performance targets, and preserve transferable evidence of recurring revenue, client rights, vendor dependencies, and delivery quality without assuming immediate deal closure.",
-      "chapter_ref": "Q11, Q12",
+      "title": "Workers' Comp Mod Correction, Classification & Recovery Tracker",
+      "purpose": "Verify the experience mod and class codes that set workers' comp premium, control the claims and reserves that drive the mod, prepare for premium audits, and recover dollars lost to clawbacks and ERISA liens.",
+      "chapter_ref": "Q11-Q12",
       "instructions": [
-        "Treat the first 30 days as a setup and evidence-building sprint, not a promise of closing inside one month. Preserve the canonical 2–5 month first-deal expectation while setting immediate milestones for authority, contracts, intake, outreach, and analytical readiness.",
-        "Assign named responsibilities across the principal and contractors, including license-dependent actions, source reconciliation, accounting, and contract review. Contractor count measures people, not full-time equivalents; document available hours and backup coverage before assuming the pod can absorb a new employer.",
-        "Use a scorecard that pairs activity with evidence quality and collection outcomes. Meetings, analyses, and proposals are leading indicators; earned retained revenue, unrestricted receipts, corrections, and unresolved obligations determine whether the practice is actually producing durable owner profit.",
-        "Build exit readiness from the first engagement through assignable contracts, documented producer relationships, source provenance, and clean revenue classification. Do not copy participant records into a broad buyer folder or assume a purchaser automatically inherits licenses and carrier appointments.",
-        "At day 30, reconcile completed tasks against artifacts and remaining dependencies. Continue only the services supported by current authority, cash, and delivery capacity; revise the next sprint explicitly rather than silently changing the canonical scenario targets or hiding incomplete work."
+        "Obtain the current experience rating worksheet and the last five years of loss runs, and have the broker explain each line.",
+        "Compare every class code against the work employees actually perform, and keep time records for any split payroll.",
+        "Challenge open reserves before loss data is reported, since reserves weigh the same as paid dollars in the mod.",
+        "Assign one named owner for claims monitoring, light duty, and audit documentation, because what is not written down did not happen [RapidSync — pzqZsKtSynY @ 00:03:31].",
+        "Route every overpayment demand and lien through verification before any money moves, and never pay to make a demand disappear."
       ],
       "fields": [
         {
-          "name": "Days 1–7 authority, scope, and capital",
-          "type": "textarea",
-          "prompt": "List the first week's deliverables for licenses, business scope, insurance, contracts, bank separation, and startup funding. Assign an owner and objective acceptance evidence to each task, including items that cannot be completed within the week.",
-          "example": "By day 7, the principal verifies existing licenses, documents pending state extensions, approves the engagement template, and sets a $28,000 opening cash balance. The team spends no more than $4,000 of the setup budget. Work requiring pending authority remains outside the active service scope until verification is complete."
+          "name": "emod_baseline",
+          "type": "text",
+          "prompt": "Record your current experience mod, standard premium, the three policy years feeding the calculation, and the dollar premium difference between your mod and a 1.00 average, so the cost of every point above or below average is visible.",
+          "example": "On a $200k base premium, a 0.75 mod produces $150k while a 1.50 mod produces $300k; at a 10% margin, that extra $100k takes about $1M in additional sales to cover [Employers Group — XYYaHz216lk @ 00:17:14]. A couple of moderate claims can flip a 0.8 to a 1.2 for three years, so track it annually."
         },
         {
-          "name": "Days 8–14 intake and analytical rehearsal",
+          "name": "minimum_mod_gap",
           "type": "textarea",
-          "prompt": "Define the second week's intake, ledger, repricing, and recovery workflow tests. Specify synthetic or properly authorized source material, reviewer responsibility, pass criteria, and the remediation path for failed arithmetic, access, or duplicate-event checks.",
-          "example": "By day 14, the analyst processes a synthetic 200-transaction pharmacy fixture, reconciles its control total, and reimports it without additional ledger events. A reviewer verifies the $37.50 pricing fixture and one linked reversal. No real participant file is used merely to demonstrate the intake software."
+          "prompt": "Calculate your minimum possible mod by dividing the stabilizing value by expected totals from the rating worksheet, then compare the premium at your current mod against the premium at that minimum to size the money you leave on the table.",
+          "example": "Take the stabilizing value over expected totals to get the minimum mod [Amaxx | Workers' Comp for Employers — z2GYx81GGEM @ 00:01:47]. A $500,000 manual premium company at a 0.8 credit mod pays $400,000 versus $200,000 at its 0.4 minimum, paying twice what it could with zero claim costs [Amaxx | Workers' Comp for Employers — z2GYx81GGEM @ 00:05:12]."
         },
         {
-          "name": "Days 15–21 targeted acquisition sprint",
+          "name": "mod_worksheet_verification",
           "type": "textarea",
-          "prompt": "Set a bounded prospect cohort, contact verification process, outreach budget, meeting target, and documented qualification standard. Separate permission to discuss an employer's needs from authority to collect claims, obtain carrier quotes, or represent the employer.",
-          "example": "The principal selects 40 verified employers with renewals within 180 days and budgets $1,000 for outreach and meeting preparation. The target is eight conversations and three scoped review opportunities. A signed engagement and appropriate authorization precede nonpublic contract requests; meeting acceptance alone provides neither."
+          "prompt": "Walk through your experience rating worksheet line by line, checking payroll, class codes, primary and excess loss splits at your state's split point, and medical-only claim weighting, then list every discrepancy you will submit for correction before renewal.",
+          "example": "Some experts believe 60 to 70 percent of mods are wrong, and no bureau, carrier, or broker is responsible for verifying accuracy [The Coyle Group - Business Insurance — V5MJi6gMjSg @ 00:04:19]. Illinois uses a $30,000 split point, Indiana $18,500, Wisconsin $21,500 [JJ Doorhy & Associates — cgxTiDoClOs @ 00:14:35], and a $100 medical-only claim enters as $30."
         },
         {
-          "name": "Days 22–30 proposal readiness and cash review",
+          "name": "reserve_review",
           "type": "textarea",
-          "prompt": "Specify the final week's deliverables for proposal quality, compensation disclosure, counterparty readiness, and cash runway. State what counts as completed preparation when no employer has yet signed, consistent with the expected first-deal timing.",
-          "example": "By day 30, the pod completes two evidence-backed proposal drafts, a reviewed compensation schedule, and a 13-week cash forecast. If no engagement is signed, revenue remains zero. The principal reports proposal readiness and remaining dependencies accurately while maintaining the 2–5 month expected time to first deal."
+          "prompt": "List every open claim with its current reserve, the adjuster's rationale, and whether the reserve still matches the injury's actual trajectory, then record the date you challenged any inflated reserve before loss data was reported to the rating bureau.",
+          "example": "A $50,000 reserve on a claim impacts the mod the same as $50,000 paid out [JJ Doorhy & Associates — cgxTiDoClOs @ 00:12:03], so verify every open reserve before data goes to NCCI [JJ Doorhy & Associates — cgxTiDoClOs @ 00:12:21]. The most common mistake is no one monitoring claims experience [The Coyle Group - Business Insurance — Nfw1Tq_wDio @ 00:07:03]."
         },
         {
-          "name": "Pod responsibility, contractor capacity, and backups",
+          "name": "class_code_review",
           "type": "textarea",
-          "prompt": "Assign each regulated, analytical, commercial, and accounting responsibility to a qualified person. Record contractor hours, review dependencies, backup coverage, and the workload threshold requiring deferred intake or the scaled six-person configuration.",
-          "example": "The base pod has one full-time principal and three contractors: an analyst at 50 hours monthly, a licensed service specialist at 30, and an accounting coordinator at 12. External counsel is engaged for defined matters. Scaled staffing is two full-time personnel and four contractors, with capacity validated before accepting additional implementations."
+          "prompt": "List each governing class code, the payroll assigned to it, and the work actually performed by employees in that code, then identify any operation that may belong in a lower-rated classification and the time records supporting any payroll split.",
+          "example": "A mental-health program misclassified as home health care moved to a doctor's office code, cutting premium about 80% on $2.5M payroll with no new carrier and no negotiation [Insurance for Entrepreneurs — abb1Gjc-5z4 @ 00:03:59]. Without actual time records, the whole payroll goes to the highest-rated code at audit [Nia Brooks — POU9QtCmQZk @ 00:06:07]."
         },
         {
-          "name": "Weekly KPI scorecard and evidence thresholds",
+          "name": "subcontractor_certificates",
           "type": "textarea",
-          "prompt": "Define leading, delivery, cash, and quality indicators with denominators, measurement periods, and accountable owners. Include exceptions and aging so a high proposal count cannot obscure duplicate billing, incomplete disclosures, or deteriorating collections.",
-          "example": "The weekly scorecard records 12 verified prospects, four meetings, two authorized reviews, and one independently checked analysis. Quality targets are zero duplicate economic events and 100% required disclosure delivery before covered engagement execution. Cash reporting shows unrestricted balance, overdue receivables, and the next four weeks' committed payments."
+          "prompt": "Inventory every subcontractor used during the policy period, attach each certificate of insurance, and note whether it excludes owners, covers clerical work only, or lapsed mid-project, before the annual premium auditor reviews those same certificates.",
+          "example": "Run a class code review and check every subcontractor certificate for excluded owners and clerical-only coverage before the auditor does [WorkCompConsultants — tkOuTso-3RA @ 00:01:52]; [The Coyle Group - Business Insurance — 7sfUUlxeHHk @ 00:08:42]. Refusing the annual audit brings a charge up to 3x annual premium, collections, a worse e-mod, and possible cancellation [Insurance Brokers of Arizona — TZ9e1Sq1WJw @ 00:00:47]."
         },
         {
-          "name": "Canonical performance and owner-profit bridge",
+          "name": "return_to_work_plan",
           "type": "textarea",
-          "prompt": "Present actual retained revenue, expense, and owner profit beside the fixed annual scenarios. Label the measurement period and distinguish an annualized run rate from earned annual results, preserving the scorecard's team and margin assumptions.",
-          "example": "The annual reference remains $120,000 revenue and $38,400 profit conservative, $535,000 and $240,750 base, and $950,000 and $551,000 scaled. If month four earns $26,250 advisory revenue, report that month's result separately. Multiplying it by 12 is an advisory run rate, not proof of the full base portfolio."
+          "prompt": "Describe your light-duty and return-to-work program, including who obtains doctor approval for modified duty, which on-site or nonprofit placements are available, and how lost-time days will be minimized so indemnity dollars stay off the loss runs.",
+          "example": "Once doctor-approved light duty is offered, the worker cannot refuse it; many dislike desk or nonprofit placements and heal faster, and some carriers partner with nonprofits so those indemnity dollars stay off loss runs and out of the mod [JJ Doorhy & Associates — cgxTiDoClOs @ 00:18:28]. Dedicated comp carriers with their own nurses push workers back sooner [ClinardInsGroup — -hUWvUBIr1A @ 00:02:10]."
         },
         {
-          "name": "Renewal retention and recurring-revenue quality",
+          "name": "small_claim_policy",
           "type": "textarea",
-          "prompt": "Measure contracted employee months, cancellation rights, commission persistency, client concentration, and contingent-fee dependence. Distinguish recurring contractual economics from one-time recoveries and forecasts, and document the evidence supporting each classification in a buyer-ready revenue schedule.",
-          "example": "The base mix contains $315,000 advisory fees, $140,000 retained commissions, and $80,000 recovery fees. Advisory and commission streams require contract and persistency review before being labeled recurring. The $80,000 recovery component is separately identified as contingent, preventing a buyer from treating all $535,000 as durable subscription revenue."
+          "prompt": "Write your rule for handling minor injuries, covering first aid versus recordable treatment, when if ever a small claim is paid outside the policy, and which risks such as overpayment, abusive claims, and Medicare penalties you weighed first.",
+          "example": "Have the clinic dispense 600 mg of ibuprofen instead of 800 mg, since the 800 mg dose turns a first aid into a recordable claim [Employers Group — XYYaHz216lk @ 00:45:27]. Before paying a small claim directly, weigh lost Texas Star Network savings, overpayment, abusive claims and Medicare penalties against the mod hit [Texas Mutual Insurance Co — gt3I3IxlEkE @ 00:02:34]."
         },
         {
-          "name": "Exit-readiness ledger and controlled diligence",
+          "name": "overpayment_clawback",
           "type": "textarea",
-          "prompt": "List contracts, assignment provisions, carrier relationships, license dependencies, accounting policies, operating procedures, and data-transfer restrictions needed for a transaction. Define staged buyer access that supports diligence without disclosing unnecessary participant information or implying automatic regulatory transfer.",
-          "example": "The diligence index contains redacted engagements, compensation schedules, monthly retained-revenue bridges, renewal calendars, and process tests. Counsel reviews assignment and change-of-control provisions. Buyer access starts with aggregated records; participant-level access requires a separate justified process. Producer licenses and carrier appointments receive their own continuity plan rather than being listed as automatically transferable assets."
+          "prompt": "For any bulk overpayment demand or retroactive denial, record the auditor's claimed authority, the look-back period cited, the timeline of notices, and the lien or administrative review request you filed to preserve rights instead of paying voluntarily.",
+          "example": "Never refund a bulk clawback voluntarily; the voluntary payment doctrine waives objections, and silence plus payment can equal acceptance [Medical Lien Management, Inc. — k60NAIUrnWA @ 00:08:19]. Verify the timeline, the auditor's authority, and the 12- or 24-month look-back first, then preserve rights through a lien or administrative review request [Medical Lien Management, Inc. — k60NAIUrnWA @ 00:12:56]."
         },
         {
-          "name": "Day-30 decision, next sprint, and unresolved obligations",
+          "name": "erisa_lien_negotiation",
           "type": "textarea",
-          "prompt": "Record completed artifacts, missed milestones, cash remaining, unresolved authority issues, and the next 30-day priorities. State explicitly whether to continue, narrow authorized activity, defer spending, or stop a service based on observable capacity and evidence.",
-          "example": "Day 30 ends with $22,000 unrestricted cash, two reviewed proposals, one pending state extension, and no collected fees. The principal continues authorized consulting, defers placement in the pending state, and limits next-month overhead to $6,000. The next sprint prioritizes signed scope, verified source records, and collection timing rather than declaring launch revenue prematurely."
+          "prompt": "For each ERISA health plan lien asserted against an injury settlement, record the face amount, the date you sent a 1024(b)(4) document request to the plan administrator, itemization errors found, and the reduced amount negotiated before settlement.",
+          "example": "Send the 1024(b)(4) request to the plan administrator, never the vendor, and hold the $110-per-day penalty as leverage [synergy. — 6-UxSZMCtMg @ 00:21:17]. Audit itemizations for duplicates, unrelated claims, lump sums, and paid-over-billed lines [synergy. — 6-UxSZMCtMg @ 00:28:18]. Reported reductions run 30-78%, including $1.2M cut to $387k [synergy. — 6-UxSZMCtMg @ 00:39:22]."
         }
       ],
-      "completion_gate": "The principal signs the day-30 artifact register, staffing and license map, current cash forecast, and next-sprint priorities. The KPI ledger distinguishes preparation, signed work, recognized retained revenue, and collected cash, while the exit index contains no unnecessary participant-level disclosures."
+      "completion_gate": "Do not accept a renewal quote, sign off on a premium audit, refund an overpayment demand, or settle a case carrying an ERISA lien until the mod worksheet is verified, reserves are challenged, class codes and subcontractor certificates are reviewed, and lien itemizations are audited."
     }
   ]
 }

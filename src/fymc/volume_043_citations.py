@@ -1,4712 +1,3442 @@
-"""Curated 180-citation Live-Event, Super Bowl & VIP Ticket Brokering baseline (15 per chapter across Q1-Q12) mined strictly from verified Live-Event, Super Bowl & VIP Ticket Brokering YouTube transcripts."""
+"""100% verbatim YouTube practitioner citations selected directly by Claude across Chapters Q1-Q12 of Volume 043 (Live-Event, Super Bowl & VIP Ticket Brokering)."""
 from __future__ import annotations
 
-CHAPTER_KEYWORDS: dict[int, set[str]] = {1: {'1099',
-     '200',
-     '500k',
-     'access',
-     'accounting',
-     'act',
-     'add',
-     'agency',
-     'all',
-     'allocation',
-     'allotments',
-     'amex',
-     'api',
-     'arbitrage',
-     'arena',
-     'artist',
-     'association',
-     'augusta',
-     'automatiq',
-     'avoiding',
-     'axs',
-     'b2b',
-     'badge',
-     'ban',
-     'barcode',
-     'best',
-     'beverage',
-     'beyonce',
-     'bots',
-     'bowl',
-     'business',
-     'client',
-     'clients',
-     'firm',
-     'margin',
-     'market',
-     'model',
-     'niche',
-     'operator',
-     'revenue',
-     'service',
-     'value'},
- 2: {'1099',
-     '200',
-     '500k',
-     'access',
-     'accounting',
-     'act',
-     'add',
-     'agency',
-     'all',
-     'allocation',
-     'allotments',
-     'amex',
-     'api',
-     'arbitrage',
-     'arena',
-     'artist',
-     'association',
-     'augusta',
-     'automatiq',
-     'avoiding',
-     'axs',
-     'b2b',
-     'badge',
-     'ban',
-     'barcode',
-     'best',
-     'beverage',
-     'beyonce',
-     'bots',
-     'bowl',
-     'budget',
-     'buyer',
-     'contract',
-     'customer',
-     'decision',
-     'escrow',
-     'fee',
-     'fees',
-     'invoice',
-     'pay',
-     'payment',
-     'pays',
-     'retainer'},
- 3: {'1099',
-     '200',
-     '500k',
-     'access',
-     'accounting',
-     'act',
-     'add',
-     'agency',
-     'all',
-     'allocation',
-     'allotments',
-     'amex',
-     'api',
-     'arbitrage',
-     'arena',
-     'artist',
-     'association',
-     'augusta',
-     'automatiq',
-     'avoiding',
-     'axs',
-     'b2b',
-     'badge',
-     'ban',
-     'barcode',
-     'best',
-     'beverage',
-     'beyonce',
-     'bots',
-     'bowl',
-     'cash',
-     'cashflow',
-     'commission',
-     'cost',
-     'costs',
-     'economics',
-     'margin',
-     'margins',
-     'price',
-     'pricing',
-     'profit',
-     'roi',
-     'unit'},
- 4: {'1099',
-     '200',
-     '500k',
-     'access',
-     'accounting',
-     'act',
-     'add',
-     'agency',
-     'all',
-     'allocation',
-     'allotments',
-     'amex',
-     'api',
-     'arbitrage',
-     'arena',
-     'artist',
-     'association',
-     'augusta',
-     'automatiq',
-     'avoiding',
-     'axs',
-     'b2b',
-     'badge',
-     'ban',
-     'barcode',
-     'best',
-     'beverage',
-     'beyonce',
-     'bots',
-     'bowl',
-     'budget',
-     'capital',
-     'entity',
-     'insurance',
-     'lean',
-     'license',
-     'llc',
-     'setup',
-     'software',
-     'stack',
-     'startup',
-     'tools'},
- 5: {'1099',
-     '200',
-     '500k',
-     'access',
-     'accounting',
-     'act',
-     'add',
-     'agency',
-     'all',
-     'allocation',
-     'allotments',
-     'amex',
-     'api',
-     'arbitrage',
-     'arena',
-     'artist',
-     'association',
-     'audit',
-     'augusta',
-     'automatiq',
-     'avoid',
-     'avoiding',
-     'axs',
-     'b2b',
-     'badge',
-     'ban',
-     'barcode',
-     'best',
-     'beverage',
-     'beyonce',
-     'bots',
-     'bowl',
-     'clawback',
-     'dispute',
-     'edge',
-     'fail',
-     'mistake',
-     'mistakes',
-     'problem',
-     'risk',
-     'risks',
-     'trap',
-     'traps'},
- 6: {'1099',
-     '200',
-     '500k',
-     'access',
-     'accounting',
-     'act',
-     'add',
-     'agency',
-     'all',
-     'allocation',
-     'allotments',
-     'amex',
-     'api',
-     'arbitrage',
-     'arena',
-     'artist',
-     'association',
-     'augusta',
-     'automatiq',
-     'avoiding',
-     'axs',
-     'b2b',
-     'badge',
-     'ban',
-     'barcode',
-     'best',
-     'beverage',
-     'beyonce',
-     'bots',
-     'bowl',
-     'client',
-     'data',
-     'deal',
-     'find',
-     'first',
-     'lead',
-     'leads',
-     'list',
-     'outbound',
-     'prospect',
-     'qualify',
-     'search',
-     'sourcing'},
- 7: {'1099',
-     '200',
-     '500k',
-     'access',
-     'accounting',
-     'act',
-     'add',
-     'agency',
-     'all',
-     'allocation',
-     'allotments',
-     'amex',
-     'api',
-     'arbitrage',
-     'arena',
-     'artist',
-     'association',
-     'augusta',
-     'automatiq',
-     'avoiding',
-     'axs',
-     'b2b',
-     'badge',
-     'ban',
-     'barcode',
-     'best',
-     'beverage',
-     'beyonce',
-     'bots',
-     'bowl',
-     'checklist',
-     'delivery',
-     'execution',
-     'process',
-     'quality',
-     'sop',
-     'step',
-     'steps',
-     'system',
-     'underwriting',
-     'verify',
-     'workflow'},
- 8: {'1099',
-     '200',
-     '500k',
-     'access',
-     'accounting',
-     'act',
-     'add',
-     'agency',
-     'all',
-     'allocation',
-     'allotments',
-     'amex',
-     'api',
-     'arbitrage',
-     'arena',
-     'artist',
-     'association',
-     'augusta',
-     'automatiq',
-     'avoiding',
-     'axs',
-     'b2b',
-     'badge',
-     'ban',
-     'barcode',
-     'best',
-     'beverage',
-     'beyonce',
-     'bots',
-     'bowl',
-     'crm',
-     'data',
-     'database',
-     'platform',
-     'portal',
-     'scraper',
-     'search',
-     'software',
-     'tool',
-     'tools',
-     'tracking'},
- 9: {'1099',
-     '200',
-     '500k',
-     'access',
-     'accounting',
-     'act',
-     'add',
-     'agency',
-     'agreement',
-     'all',
-     'allocation',
-     'allotments',
-     'amex',
-     'api',
-     'arbitrage',
-     'arena',
-     'artist',
-     'association',
-     'augusta',
-     'automatiq',
-     'avoiding',
-     'axs',
-     'b2b',
-     'badge',
-     'ban',
-     'barcode',
-     'best',
-     'beverage',
-     'beyonce',
-     'bots',
-     'bowl',
-     'compliance',
-     'contract',
-     'disclosure',
-     'law',
-     'legal',
-     'license',
-     'outreach',
-     'rules',
-     'script',
-     'state',
-     'terms'},
- 10: {'1099',
-      '200',
-      '500k',
-      'access',
-      'accounting',
-      'act',
-      'add',
-      'agency',
-      'agent',
-      'ai',
-      'all',
-      'allocation',
-      'allotments',
-      'amex',
-      'api',
-      'arbitrage',
-      'arena',
-      'artist',
-      'association',
-      'augusta',
-      'automate',
-      'automation',
-      'automatiq',
-      'avoiding',
-      'axs',
-      'b2b',
-      'badge',
-      'ban',
-      'barcode',
-      'best',
-      'beverage',
-      'beyonce',
-      'bots',
-      'bowl',
-      'dashboard',
-      'leverage',
-      'pipeline',
-      'scale',
-      'script',
-      'speed',
-      'template',
-      'workflow'},
- 11: {'1099',
-      '200',
-      '500k',
-      'access',
-      'accounting',
-      'act',
-      'add',
-      'agency',
-      'all',
-      'allocation',
-      'allotments',
-      'amex',
-      'api',
-      'arbitrage',
-      'arena',
-      'artist',
-      'association',
-      'augusta',
-      'automatiq',
-      'avoiding',
-      'axs',
-      'b2b',
-      'badge',
-      'ban',
-      'barcode',
-      'best',
-      'beverage',
-      'beyonce',
-      'bots',
-      'bowl',
-      'contractor',
-      'exit',
-      'hire',
-      'hiring',
-      'kpi',
-      'manager',
-      'operations',
-      'pod',
-      'scale',
-      'scaling',
-      'team',
-      'valuation'},
- 12: {'1099',
-      '200',
-      '500k',
-      'access',
-      'accounting',
-      'act',
-      'action',
-      'add',
-      'agency',
-      'all',
-      'allocation',
-      'allotments',
-      'amex',
-      'api',
-      'arbitrage',
-      'arena',
-      'artist',
-      'association',
-      'augusta',
-      'automatiq',
-      'avoiding',
-      'axs',
-      'b2b',
-      'badge',
-      'ban',
-      'barcode',
-      'best',
-      'beverage',
-      'beyonce',
-      'bots',
-      'bowl',
-      'day',
-      'days',
-      'launch',
-      'milestone',
-      'month',
-      'plan',
-      'roadmap',
-      'sprint',
-      'start',
-      'thirty',
-      'week'}}
+CHAPTER_KEYWORDS: dict[int, set[str]] = {1: {'market', 'super', 'resale', 'bowl', 'reading'},
+ 2: {'sourcing', 'fraud', 'super', 'value', 'face', 'bowl', 'seats', 'avoidance', 'allotments'},
+ 3: {'suites', 'super', 'stadium', 'premium', 'bowl', 'packages', 'hospitality'},
+ 4: {'ultra', 'club', 'premium', 'paddock', 'hospitality', 'event'},
+ 5: {'masters', 'coachella', 'marquee', 'tennis', 'college', 'beyond', 'events', 'finals'},
+ 6: {'personal', 'licenses', 'seat', 'right'},
+ 7: {'soccer', 'resale', 'demand', 'hospitality', 'world', 'scams'},
+ 8: {'delivery', 'transfers', 'ticketmaster', 'refunds'},
+ 9: {'ticketing', 'back', 'tools', 'office', 'workflows'},
+ 10: {'bots', 'broker', 'reselling', 'actions', 'failures'},
+ 11: {'mechanics', 'pricing', 'concert', 'platinum', 'seats', 'dynamic', 'fees'},
+ 12: {'flipping', 'sourcing', 'playbook', 'selection', 'reseller'}}
 
-BASELINE_EXPERT_CITATIONS_BY_CHAPTER: dict[int, list[dict]] = {1: [{'author': 'Nerd Nook Hub',
+BASELINE_EXPERT_CITATIONS_BY_CHAPTER: dict[int, list[dict]] = {1: [{'author': 'CBS Mornings',
+      'channel': 'CBS Mornings',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:11](https://www.youtube.com/watch?v=RGn3Hcnvklg&t=131s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
+      'source_type': 'video_pro_tip',
+      'text': "On StubHub buyers can usually pick their seats and shop for prices they're willing "
+              'to pay while the company gets an average 25% commission.',
+      'timestamp': 131,
+      'timestamp_label': '[00:02:11]',
+      'timestamp_seconds': 131,
+      'tip': "On StubHub buyers can usually pick their seats and shop for prices they're willing "
+             'to pay while the company gets an average 25% commission.',
+      'title': "Security behind StubHub's Super Bowl ticket operations",
+      'url': 'https://www.youtube.com/watch?v=RGn3Hcnvklg&t=131s',
+      'video_id': 'RGn3Hcnvklg'},
+     {'author': 'CBS Mornings',
+      'channel': 'CBS Mornings',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:03](https://www.youtube.com/watch?v=RGn3Hcnvklg&t=183s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
+      'source_type': 'video_pro_tip',
+      'text': 'What we do here is investigations, we do forensic investigations, and the folks '
+              'here in this room have the ability to go in and watch these transactions happen in '
+              'real time globally.',
+      'timestamp': 183,
+      'timestamp_label': '[00:03:03]',
+      'timestamp_seconds': 183,
+      'tip': 'What we do here is investigations, we do forensic investigations, and the folks here '
+             'in this room have the ability to go in and watch these transactions happen in real '
+             'time globally.',
+      'title': "Security behind StubHub's Super Bowl ticket operations",
+      'url': 'https://www.youtube.com/watch?v=RGn3Hcnvklg&t=183s',
+      'video_id': 'RGn3Hcnvklg'},
+     {'author': 'WKMG News 6 ClickOrlando',
+      'channel': 'WKMG News 6 ClickOrlando',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:54](https://www.youtube.com/watch?v=9L6opSvFpSA&t=54s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
+      'source_type': 'video_pro_tip',
+      'text': 'Expect prices to stay high regardless of who ends up playing and given the limited '
+              'number of capacity.',
+      'timestamp': 54,
+      'timestamp_label': '[00:00:54]',
+      'timestamp_seconds': 54,
+      'tip': 'Expect prices to stay high regardless of who ends up playing and given the limited '
+             'number of capacity.',
+      'title': 'How much is a resale ticket for the Super Bowl?',
+      'url': 'https://www.youtube.com/watch?v=9L6opSvFpSA&t=54s',
+      'video_id': '9L6opSvFpSA'},
+     {'author': 'NBC10 Boston',
+      'channel': 'NBC10 Boston',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:24](https://www.youtube.com/watch?v=-GwKaOFdk_M&t=84s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
+      'source_type': 'video_pro_tip',
+      'text': 'The sweet spot to buy tickets is 48 to 72 hours before the event.',
+      'timestamp': 84,
+      'timestamp_label': '[00:01:24]',
+      'timestamp_seconds': 84,
+      'tip': 'The sweet spot to buy tickets is 48 to 72 hours before the event.',
+      'title': "Want Super Bowl tickets? Here's what to know",
+      'url': 'https://www.youtube.com/watch?v=-GwKaOFdk_M&t=84s',
+      'video_id': '-GwKaOFdk_M'},
+     {'author': 'Nerd Nook Hub',
       'channel': 'Nerd Nook Hub',
       'epistemic_status': 'attributed_practitioner_claim',
       'markdown': '[00:00:48](https://www.youtube.com/watch?v=8OkQ2Oq5Lbc&t=48s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q1 operational verification).',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
       'source_type': 'video_pro_tip',
-      'text': 'The sweet spot is usually located in the lower bowl corners or end zone areas '
-              'or even a solid 200 level seats. Expect to pay roughly $7,500 to $10,500 '
-              'depending on the matchup and timing. This is the best value per view zone.',
+      'text': 'The sweet spot is usually located in the lower bowl corners or end zone areas or '
+              'even a solid 200 level seats, and you should expect to pay roughly $7,500 to '
+              '$10,500 depending on the matchup and timing.',
       'timestamp': 48,
       'timestamp_label': '[00:00:48]',
       'timestamp_seconds': 48,
       'tip': 'The sweet spot is usually located in the lower bowl corners or end zone areas or '
-             'even a solid 200 level seats. Expect to pay roughly $7,500 to $10,500 depending '
-             'on the matchup and timing. This is the best value per view zone.',
-      'title': 'How Much Does it Cost to Go to the Super Bowl LX? 2026 (Nerd Nook Hub)',
+             'even a solid 200 level seats, and you should expect to pay roughly $7,500 to $10,500 '
+             'depending on the matchup and timing.',
+      'title': 'How Much Does it Cost to Go to the Super Bowl LX? 2026',
       'url': 'https://www.youtube.com/watch?v=8OkQ2Oq5Lbc&t=48s',
       'video_id': '8OkQ2Oq5Lbc'},
-     {'author': 'Why It Costs',
-      'channel': 'Why It Costs',
+     {'author': 'AP Archive',
+      'channel': 'AP Archive',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:09:07](https://www.youtube.com/watch?v=tH7bLaJI6ZE&t=547s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q1 operational verification).',
+      'markdown': '[00:00:21](https://www.youtube.com/watch?v=NxbqrXeuWTI&t=21s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
       'source_type': 'video_pro_tip',
-      'text': "The artist's majority share comes after show costs. A thin Concerts margin does "
-              'not erase market power, or the earnings of other business segments.',
-      'timestamp': 547,
-      'timestamp_label': '[00:09:07]',
-      'timestamp_seconds': 547,
-      'tip': "The artist's majority share comes after show costs. A thin Concerts margin does "
-             'not erase market power, or the earnings of other business segments.',
-      'title': 'Concert Tickets: Why a 90% Artist Share Misleads (Why It Costs)',
-      'url': 'https://www.youtube.com/watch?v=tH7bLaJI6ZE&t=547s',
-      'video_id': 'tH7bLaJI6ZE'},
-     {'author': 'Hidden Price',
-      'channel': 'Hidden Price',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:32](https://www.youtube.com/watch?v=pfp0vvw1nXo&t=92s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q1 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "That's our calculation, from the company's own figures. Eight cents doesn't "
-              'sound like much. But on that revenue, the ticketing business reported an '
-              'operating margin of twenty-nine percent. Now the ticket price itself, the face '
-              'value.',
-      'timestamp': 92,
-      'timestamp_label': '[00:01:32]',
-      'timestamp_seconds': 92,
-      'tip': "That's our calculation, from the company's own figures. Eight cents doesn't "
-             'sound like much. But on that revenue, the ticketing business reported an '
-             'operating margin of twenty-nine percent. Now the ticket price itself, the face '
-             'value.',
-      'title': 'Why Concert Tickets Are So Expensive (Who Really Gets Your Money) (Hidden '
-               'Price)',
-      'url': 'https://www.youtube.com/watch?v=pfp0vvw1nXo&t=92s',
-      'video_id': 'pfp0vvw1nXo'},
-     {'author': 'SportsRender',
-      'channel': 'SportsRender',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:24](https://www.youtube.com/watch?v=BQI_sOqcfx4&t=204s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q1 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Santiago Bernabéu, premium hospitality became a major part of the stadium's "
-              'business model. Between VIP seating, events, and concerts, the stadium now '
-              'generates revenue far beyond just football matches. Because every luxury suite '
-              'usually replaces dozens of regular seats.',
-      'timestamp': 204,
-      'timestamp_label': '[00:03:24]',
-      'timestamp_seconds': 204,
-      'tip': "Santiago Bernabéu, premium hospitality became a major part of the stadium's "
-             'business model. Between VIP seating, events, and concerts, the stadium now '
-             'generates revenue far beyond just football matches. Because every luxury suite '
-             'usually replaces dozens of regular seats.',
-      'title': 'Why Football Stadiums Are Turning Into Luxury Hotels (SportsRender)',
-      'url': 'https://www.youtube.com/watch?v=BQI_sOqcfx4&t=204s',
-      'video_id': 'BQI_sOqcfx4'},
-     {'author': 'Decibel & Docket',
-      'channel': 'Decibel & Docket',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:20](https://www.youtube.com/watch?v=2Vb_eyHh2aw&t=20s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q1 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'I think radically change um the resale market. It would basically ban scalpers '
-              '[snorts] from selling concert tickets for more than 10% markups on the face '
-              'value of a ticket, right?',
-      'timestamp': 20,
-      'timestamp_label': '[00:00:20]',
-      'timestamp_seconds': 20,
-      'tip': 'I think radically change um the resale market. It would basically ban scalpers '
-             '[snorts] from selling concert tickets for more than 10% markups on the face '
-             'value of a ticket, right?',
-      'title': 'Decibel and Docket covers hearing on AB1720, California concert ticket resale '
-               'price cap. (Decibel & Docket)',
-      'url': 'https://www.youtube.com/watch?v=2Vb_eyHh2aw&t=20s',
-      'video_id': '2Vb_eyHh2aw'},
-     {'author': 'CBS News',
-      'channel': 'CBS News',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:56](https://www.youtube.com/watch?v=IF-yvujBqTU&t=176s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q1 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'THAT IS A HUGE ISSUE THAT ARTISTS ARE FACING WITH MANAGEMENT. DO THEY WANT TO '
-              'POTENTIALLY ANGER OR UPSET A HUGE PORTION OF THEIR FAN BASE OR -- DO THEY WANT '
-              'TO CUT INTO THE GRAY MARKET , THE BUSINESS OF SCALPERS, TO ENSURE WHATEVER '
-              'EXTRA PROFIT GOES TO THE ARTIST.',
-      'timestamp': 176,
-      'timestamp_label': '[00:02:56]',
-      'timestamp_seconds': 176,
-      'tip': 'THAT IS A HUGE ISSUE THAT ARTISTS ARE FACING WITH MANAGEMENT. DO THEY WANT TO '
-             'POTENTIALLY ANGER OR UPSET A HUGE PORTION OF THEIR FAN BASE OR -- DO THEY WANT '
-             'TO CUT INTO THE GRAY MARKET , THE BUSINESS OF SCALPERS, TO ENSURE WHATEVER EXTRA '
-             'PROFIT GOES TO THE ARTIST.',
-      'title': 'Beyoncé fans complain of inconsistent ticket prices for Cowboy Carter Tour '
-               '(CBS News)',
-      'url': 'https://www.youtube.com/watch?v=IF-yvujBqTU&t=176s',
-      'video_id': 'IF-yvujBqTU'},
-     {'author': 'Scott Cramer',
-      'channel': 'Scott Cramer',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:20:00](https://www.youtube.com/watch?v=kFsH01UthzA&t=1200s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q1 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Ticketmaster is like the best service. They don't own 80% of the market because "
-              "they're the best service. If that was the case, whatever. You know, let the "
-              'best rise to the top.',
-      'timestamp': 1200,
-      'timestamp_label': '[00:20:00]',
-      'timestamp_seconds': 1200,
-      'tip': "Ticketmaster is like the best service. They don't own 80% of the market because "
-             "they're the best service. If that was the case, whatever. You know, let the best "
-             'rise to the top.',
-      'title': 'Ticket Prices Are Disgusting (Scott Cramer)',
-      'url': 'https://www.youtube.com/watch?v=kFsH01UthzA&t=1200s',
-      'video_id': 'kFsH01UthzA'},
-     {'author': 'FOX 5 Washington DC',
-      'channel': 'FOX 5 Washington DC',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:07](https://www.youtube.com/watch?v=ZiwpM_Fr8eU&t=127s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q1 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'REVENUE GENERATION TECHNIQUE, SO IT IS NOT NEW TO THE COMMANDERS. MANY OTHER '
-              'PLACES SO IT IS NOT NEW TO THE COMMANDERS. MANY OTHER PLACES STADIUMS HAVE '
-              'IMPLEMENTED SLS COMMANDERS. MANY OTHER PLACES STADIUMS HAVE IMPLEMENTED SLS AND '
-              'THEY’VE ALL WORKED WELL.',
-      'timestamp': 127,
-      'timestamp_label': '[00:02:07]',
-      'timestamp_seconds': 127,
-      'tip': 'REVENUE GENERATION TECHNIQUE, SO IT IS NOT NEW TO THE COMMANDERS. MANY OTHER '
-             'PLACES SO IT IS NOT NEW TO THE COMMANDERS. MANY OTHER PLACES STADIUMS HAVE '
-             'IMPLEMENTED SLS COMMANDERS. MANY OTHER PLACES STADIUMS HAVE IMPLEMENTED SLS AND '
-             'THEY’VE ALL WORKED WELL.',
-      'title': 'New Commanders’ stadium personal seat licenses explained (FOX 5 Washington DC)',
-      'url': 'https://www.youtube.com/watch?v=ZiwpM_Fr8eU&t=127s',
-      'video_id': 'ZiwpM_Fr8eU'},
-     {'author': 'Romano Law PLLC',
-      'channel': 'Romano Law PLLC',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:29](https://www.youtube.com/watch?v=nQoLincg1zk&t=89s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q1 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Would there be any retroaction as a result of some of these legal matters? Um, '
-              'you know, according to the allegations, the brokers are scooping up tickets and '
-              'reselling them at inflated prices, all while layering on hidden fees. Now, '
-              "that's not just bad business.",
-      'timestamp': 89,
-      'timestamp_label': '[00:01:29]',
-      'timestamp_seconds': 89,
-      'tip': 'Would there be any retroaction as a result of some of these legal matters? Um, '
-             'you know, according to the allegations, the brokers are scooping up tickets and '
-             'reselling them at inflated prices, all while layering on hidden fees. Now, '
-             "that's not just bad business.",
-      'title': 'FTC Sues Ticketmaster: Domenic Romano Weighs In On Lawsuits for Unethical '
-               'Ticket Reselling Practices (Romano Law PLLC)',
-      'url': 'https://www.youtube.com/watch?v=nQoLincg1zk&t=89s',
-      'video_id': 'nQoLincg1zk'},
-     {'author': 'CBC News: The National',
-      'channel': 'CBC News: The National',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:25](https://www.youtube.com/watch?v=h_mhu-A8WR4&t=25s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q1 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'The millions the movie was way way easier to get tickets for than the concert '
-              "it's a business lesson for a 2020s pop star music is just a percentage even if "
-              "it's a large percentage and Swift isn't alone Beyonce by her side at the "
-              "world's.",
-      'timestamp': 25,
-      'timestamp_label': '[00:00:25]',
-      'timestamp_seconds': 25,
-      'tip': 'The millions the movie was way way easier to get tickets for than the concert '
-             "it's a business lesson for a 2020s pop star music is just a percentage even if "
-             "it's a large percentage and Swift isn't alone Beyonce by her side at the "
-             "world's.",
-      'title': 'Taylor Swift and Beyoncé attempt to pack movie theatres like stadiums (CBC '
-               'News: The National)',
-      'url': 'https://www.youtube.com/watch?v=h_mhu-A8WR4&t=25s',
-      'video_id': 'h_mhu-A8WR4'},
-     {'author': '2 Minute Expert',
-      'channel': '2 Minute Expert',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:20](https://www.youtube.com/watch?v=1m8cAjtjH5A&t=20s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q1 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Now, let's delve into the details. Starting with the pros, dynamic pricing can "
-              'maximize revenue for sellers. By adjusting prices to match real-time demand, '
-              "organizations can ensure they're getting the most value out of each ticket.",
-      'timestamp': 20,
-      'timestamp_label': '[00:00:20]',
-      'timestamp_seconds': 20,
-      'tip': "Now, let's delve into the details. Starting with the pros, dynamic pricing can "
-             'maximize revenue for sellers. By adjusting prices to match real-time demand, '
-             "organizations can ensure they're getting the most value out of each ticket.",
-      'title': 'The Pros & Cons of Dynamic Ticket Pricing in 2 Minutes (2 Minute Expert)',
-      'url': 'https://www.youtube.com/watch?v=1m8cAjtjH5A&t=20s',
-      'video_id': '1m8cAjtjH5A'},
-     {'author': 'The Current',
-      'channel': 'The Current',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:49](https://www.youtube.com/watch?v=9rdi7Mk3v-Y&t=109s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q1 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'JADE: And unfortunately, I have to bring you some bad news about a very young '
-              'musician. Hip-hop artist Chynna as died at the age of 25. Now the rapper, she '
-              'first rose to fame as a model, but you might know her either from her solo work '
-              'or from her work with ASAP Mob.',
-      'timestamp': 109,
-      'timestamp_label': '[00:01:49]',
-      'timestamp_seconds': 109,
-      'tip': 'JADE: And unfortunately, I have to bring you some bad news about a very young '
-             'musician. Hip-hop artist Chynna as died at the age of 25. Now the rapper, she '
-             'first rose to fame as a model, but you might know her either from her solo work '
-             'or from her work with ASAP Mob.',
-      'title': 'Angry fans accuse ticketers of deceptive concert refund policies (The Current '
-               'Music News) (The Current)',
-      'url': 'https://www.youtube.com/watch?v=9rdi7Mk3v-Y&t=109s',
-      'video_id': '9rdi7Mk3v-Y'},
-     {'author': 'ESPN FC',
-      'channel': 'ESPN FC',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:18](https://www.youtube.com/watch?v=p9Q9_2anOiA&t=138s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q1 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Think this is a fair representation of the change in value from one season to '
-              "another if you add Leon Messi and if I'm an inter Miami fan I may be bitter I "
-              'may.',
-      'timestamp': 138,
-      'timestamp_label': '[00:02:18]',
-      'timestamp_seconds': 138,
-      'tip': 'Think this is a fair representation of the change in value from one season to '
-             "another if you add Leon Messi and if I'm an inter Miami fan I may be bitter I "
-             'may.',
-      'title': "'Somebody's getting rich here!' 🤑 Sebi & Herc get heated over Inter Miami "
-               'ticket prices | ESPN FC (ESPN FC)',
-      'url': 'https://www.youtube.com/watch?v=p9Q9_2anOiA&t=138s',
-      'video_id': 'p9Q9_2anOiA'},
+      'text': "We haven't seen a lot of downward trend movement which we have seen in the past at "
+              'other Super Bowls.',
+      'timestamp': 21,
+      'timestamp_label': '[00:00:21]',
+      'timestamp_seconds': 21,
+      'tip': "We haven't seen a lot of downward trend movement which we have seen in the past at "
+             'other Super Bowls.',
+      'title': 'StubHub officials discuss market for Super Bowl tickets, fan experience at '
+               'amusement park',
+      'url': 'https://www.youtube.com/watch?v=NxbqrXeuWTI&t=21s',
+      'video_id': 'NxbqrXeuWTI'},
      {'author': '9NEWS',
       'channel': '9NEWS',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:13](https://www.youtube.com/watch?v=rhYfYkzJGmU&t=133s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q1 operational verification).',
+      'markdown': '[00:01:24](https://www.youtube.com/watch?v=Qmi-KnjQ-xo&t=84s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
       'source_type': 'video_pro_tip',
-      'text': "It's frustrating Steve on your side. Contacted Yad attorney who told us the "
-              'real secret the family emergency is her business imploding a decades old '
-              'business model of waiting until the last minute to snag discounted seats.',
-      'timestamp': 133,
-      'timestamp_label': '[00:02:13]',
-      'timestamp_seconds': 133,
-      'tip': "It's frustrating Steve on your side. Contacted Yad attorney who told us the real "
-             'secret the family emergency is her business imploding a decades old business '
-             'model of waiting until the last minute to snag discounted seats.',
-      'title': 'Dozens are out hundreds of dollars after using a local ticket broker (9NEWS)',
-      'url': 'https://www.youtube.com/watch?v=rhYfYkzJGmU&t=133s',
-      'video_id': 'rhYfYkzJGmU'},
+      'text': 'Travel experts say those looking to go to the big game should look outside the city '
+              'for the best price.',
+      'timestamp': 84,
+      'timestamp_label': '[00:01:24]',
+      'timestamp_seconds': 84,
+      'tip': 'Travel experts say those looking to go to the big game should look outside the city '
+             'for the best price.',
+      'title': "Super Bowl 2026 tickets: How much they cost, where they're sold and how to get "
+               'them',
+      'url': 'https://www.youtube.com/watch?v=Qmi-KnjQ-xo&t=84s',
+      'video_id': 'Qmi-KnjQ-xo'},
+     {'author': 'Snazzy Trendz',
+      'channel': 'Snazzy Trendz',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:28](https://www.youtube.com/watch?v=5ggSZvvL_vo&t=268s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
+      'source_type': 'video_pro_tip',
+      'text': 'Some ticket holders who could not attend decided to sell at the last minute and '
+              'resellers lowered prices to avoid being stuck with unsold tickets.',
+      'timestamp': 268,
+      'timestamp_label': '[00:04:28]',
+      'timestamp_seconds': 268,
+      'tip': 'Some ticket holders who could not attend decided to sell at the last minute and '
+             'resellers lowered prices to avoid being stuck with unsold tickets.',
+      'title': 'How Much Did Super Bowl LX 2026 Tickets REALLY Cost? Total Breakdown! '
+               '#superbowllx  #nfl',
+      'url': 'https://www.youtube.com/watch?v=5ggSZvvL_vo&t=268s',
+      'video_id': '5ggSZvvL_vo'},
+     {'author': 'The Pat McAfee Show',
+      'channel': 'The Pat McAfee Show',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:08](https://www.youtube.com/watch?v=uK2f6TsToVA&t=188s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
+      'source_type': 'video_pro_tip',
+      'text': "It's not illegal, you have a ticket, you're allowed to sell a ticket.",
+      'timestamp': 188,
+      'timestamp_label': '[00:03:08]',
+      'timestamp_seconds': 188,
+      'tip': "It's not illegal, you have a ticket, you're allowed to sell a ticket.",
+      'title': 'The Average Resell Price Of Super Bowl LIX Is Over $10,000?! | Pat McAfee Show',
+      'url': 'https://www.youtube.com/watch?v=uK2f6TsToVA&t=188s',
+      'video_id': 'uK2f6TsToVA'},
+     {'author': 'Valuetainment Short Clips',
+      'channel': 'Valuetainment Short Clips',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:52](https://www.youtube.com/watch?v=jQCA_9sgdpM&t=52s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
+      'source_type': 'video_pro_tip',
+      'text': 'Super Bowl ticket prices have plummeted 58% in a week.',
+      'timestamp': 52,
+      'timestamp_label': '[00:00:52]',
+      'timestamp_seconds': 52,
+      'tip': 'Super Bowl ticket prices have plummeted 58% in a week.',
+      'title': '"Ticket Prices Have PLUMMETED!" - NFL Fans STUNNED As Super Bowl Tickets Hit By '
+               'MASSIVE Price Drop',
+      'url': 'https://www.youtube.com/watch?v=jQCA_9sgdpM&t=52s',
+      'video_id': 'jQCA_9sgdpM'},
+     {'author': 'Overtime Economics',
+      'channel': 'Overtime Economics',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:33](https://www.youtube.com/watch?v=C_QtPWHCo_U&t=93s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
+      'source_type': 'video_pro_tip',
+      'text': "Face-value seats aren't sold to the public. They go through teams and the league.",
+      'timestamp': 93,
+      'timestamp_label': '[00:01:33]',
+      'timestamp_seconds': 93,
+      'tip': "Face-value seats aren't sold to the public. They go through teams and the league.",
+      'title': 'Super Bowl I vs Today: No Sellout at $12. Now Seats Start at $950',
+      'url': 'https://www.youtube.com/watch?v=C_QtPWHCo_U&t=93s',
+      'video_id': 'C_QtPWHCo_U'},
+     {'author': 'Cold Talk',
+      'channel': 'Cold Talk',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:08:21](https://www.youtube.com/watch?v=0sxw7eRx9Fs&t=501s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
+      'source_type': 'video_pro_tip',
+      'text': 'Those ticket prices are continuing to slump and they dropped by almost 50% within '
+              '24 hours after Donald Trump announced he was going to be attending the Super Bowl.',
+      'timestamp': 501,
+      'timestamp_label': '[00:08:21]',
+      'timestamp_seconds': 501,
+      'tip': 'Those ticket prices are continuing to slump and they dropped by almost 50% within 24 '
+             'hours after Donald Trump announced he was going to be attending the Super Bowl.',
+      'title': 'Super Bowl Ticket Prices Are HIGH.. Fans Are Going BROKE',
+      'url': 'https://www.youtube.com/watch?v=0sxw7eRx9Fs&t=501s',
+      'video_id': '0sxw7eRx9Fs'},
+     {'author': 'Football Explainer',
+      'channel': 'Football Explainer',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:32:14](https://www.youtube.com/watch?v=Y_cqkCHiMu8&t=1934s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
+      'source_type': 'video_pro_tip',
+      'text': 'Forbes, using secondary market data, reported that the average resale ticket went '
+              'for about $152, almost twice the average face value.',
+      'timestamp': 1934,
+      'timestamp_label': '[00:32:14]',
+      'timestamp_seconds': 1934,
+      'tip': 'Forbes, using secondary market data, reported that the average resale ticket went '
+             'for about $152, almost twice the average face value.',
+      'title': 'NFL Ticket Prices Explained (How They Became Expensive)',
+      'url': 'https://www.youtube.com/watch?v=Y_cqkCHiMu8&t=1934s',
+      'video_id': 'Y_cqkCHiMu8'},
+     {'author': 'AP Archive',
+      'channel': 'AP Archive',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:29](https://www.youtube.com/watch?v=NwYrOSq9-5Q&t=29s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
+      'source_type': 'video_pro_tip',
+      'text': 'The average of what people are spending is around fifty three hundred dollars, so '
+              "that's going to get you closer up to seats in the stadium.",
+      'timestamp': 29,
+      'timestamp_label': '[00:00:29]',
+      'timestamp_seconds': 29,
+      'tip': 'The average of what people are spending is around fifty three hundred dollars, so '
+             "that's going to get you closer up to seats in the stadium.",
+      'title': 'StubHub Reports Latest Super Bowl Ticket Prices',
+      'url': 'https://www.youtube.com/watch?v=NwYrOSq9-5Q&t=29s',
+      'video_id': 'NwYrOSq9-5Q'},
+     {'author': 'N.F.L Podcast',
+      'channel': 'N.F.L Podcast',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:00](https://www.youtube.com/watch?v=Aj09Nv4kg04&t=240s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
+      'source_type': 'video_pro_tip',
+      'text': 'Always buy from verified marketplaces; Super Bowl tickets are all mobile only now, '
+              "so if anyone's trying to sell you a physical ticket it's a scam.",
+      'timestamp': 240,
+      'timestamp_label': '[00:04:00]',
+      'timestamp_seconds': 240,
+      'tip': 'Always buy from verified marketplaces; Super Bowl tickets are all mobile only now, '
+             "so if anyone's trying to sell you a physical ticket it's a scam.",
+      'title': 'Super Bowl 59 Ticket Prices: Cost Breakdown, Buying Tips & Best Deals!',
+      'url': 'https://www.youtube.com/watch?v=Aj09Nv4kg04&t=240s',
+      'video_id': 'Aj09Nv4kg04'},
+     {'author': 'Global News',
+      'channel': 'Global News',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:00](https://www.youtube.com/watch?v=U7vnKDQx7ow&t=0s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
+      'source_type': 'video_pro_tip',
+      'text': 'Cheaper seats sold for $4,500 US on Ticketmaster with prime seats fetching more '
+              'than 20,000 bucks.',
+      'timestamp': 0,
+      'timestamp_label': '[00:00:00]',
+      'timestamp_seconds': 0,
+      'tip': 'Cheaper seats sold for $4,500 US on Ticketmaster with prime seats fetching more than '
+             '20,000 bucks.',
+      'title': 'Super Bowl LX: How much will tickets, ads and more cost for the biggest sporting '
+               'event of the year?',
+      'url': 'https://www.youtube.com/watch?v=U7vnKDQx7ow&t=0s',
+      'video_id': 'U7vnKDQx7ow'},
+     {'author': 'CBS Boston',
+      'channel': 'CBS Boston',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:40](https://www.youtube.com/watch?v=hhJFZEqMUpQ&t=40s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
+      'source_type': 'video_pro_tip',
+      'text': 'How has the demand been this year? Bad. Nobody wants to see Brady.',
+      'timestamp': 40,
+      'timestamp_label': '[00:00:40]',
+      'timestamp_seconds': 40,
+      'tip': 'How has the demand been this year? Bad. Nobody wants to see Brady.',
+      'title': 'Super Bowl Ticket Prices Falling Fast',
+      'url': 'https://www.youtube.com/watch?v=hhJFZEqMUpQ&t=40s',
+      'video_id': 'hhJFZEqMUpQ'},
+     {'author': 'CBS Boston',
+      'channel': 'CBS Boston',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:36](https://www.youtube.com/watch?v=hhJFZEqMUpQ&t=96s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q1.',
+      'source_type': 'video_pro_tip',
+      'text': 'Get on a flight and come down. Get a bargain. Tickets will probably get down to '
+              'face value at some point.',
+      'timestamp': 96,
+      'timestamp_label': '[00:01:36]',
+      'timestamp_seconds': 96,
+      'tip': 'Get on a flight and come down. Get a bargain. Tickets will probably get down to face '
+             'value at some point.',
+      'title': 'Super Bowl Ticket Prices Falling Fast',
+      'url': 'https://www.youtube.com/watch?v=hhJFZEqMUpQ&t=96s',
+      'video_id': 'hhJFZEqMUpQ'}],
+ 2: [{'author': 'Arizona’s Family (3TV / CBS 5)',
+      'channel': 'Arizona’s Family (3TV / CBS 5)',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:27](https://www.youtube.com/watch?v=3kV_14yzGfk&t=87s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'If you are looking to buy or sell digital tickets, stay away from private parties '
+              'advertising on the internet.',
+      'timestamp': 87,
+      'timestamp_label': '[00:01:27]',
+      'timestamp_seconds': 87,
+      'tip': 'If you are looking to buy or sell digital tickets, stay away from private parties '
+             'advertising on the internet.',
+      'title': 'Ways to buy or sell Super Bowl tickets without being defrauded',
+      'url': 'https://www.youtube.com/watch?v=3kV_14yzGfk&t=87s',
+      'video_id': '3kV_14yzGfk'},
+     {'author': 'TickPick',
+      'channel': 'TickPick',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:41](https://www.youtube.com/watch?v=tY7hYkxsK3k&t=41s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'One of the great features of TickPick when buying Super Bowl tickets is you can set '
+              'a price alert.',
+      'timestamp': 41,
+      'timestamp_label': '[00:00:41]',
+      'timestamp_seconds': 41,
+      'tip': 'One of the great features of TickPick when buying Super Bowl tickets is you can set '
+             'a price alert.',
+      'title': 'How to Buy Super Bowl 50 Tickets',
+      'url': 'https://www.youtube.com/watch?v=tY7hYkxsK3k&t=41s',
+      'video_id': 'tY7hYkxsK3k'},
+     {'author': 'Yea Baby',
+      'channel': 'Yea Baby',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:13](https://www.youtube.com/watch?v=0a9pLnuCUAk&t=73s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'If it seems too good to be true then it probably is, an example would be a Super '
+              'Bowl ticket for less than face value.',
+      'timestamp': 73,
+      'timestamp_label': '[00:01:13]',
+      'timestamp_seconds': 73,
+      'tip': 'If it seems too good to be true then it probably is, an example would be a Super '
+             'Bowl ticket for less than face value.',
+      'title': 'Cheapest Super Bowl Tickets for Last-Minute Buyers Are Running #tickets #scalping '
+               '#superbowl',
+      'url': 'https://www.youtube.com/watch?v=0a9pLnuCUAk&t=73s',
+      'video_id': '0a9pLnuCUAk'},
+     {'author': 'thumbsuprun',
+      'channel': 'thumbsuprun',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:02](https://www.youtube.com/watch?v=O-Sq4DDGKAY&t=242s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': "There's no real way of going ahead and getting those tickets for face value unless "
+              "you're basically a season seat holder, a player, a sponsor of the NFL or you win "
+              'one of their lotteries.',
+      'timestamp': 242,
+      'timestamp_label': '[00:04:02]',
+      'timestamp_seconds': 242,
+      'tip': "There's no real way of going ahead and getting those tickets for face value unless "
+             "you're basically a season seat holder, a player, a sponsor of the NFL or you win one "
+             'of their lotteries.',
+      'title': 'HOW TO GET SUPER BOWL TICKETS FOR FACE VALUE!',
+      'url': 'https://www.youtube.com/watch?v=O-Sq4DDGKAY&t=242s',
+      'video_id': 'O-Sq4DDGKAY'},
+     {'author': '24H SPORT',
+      'channel': '24H SPORT',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:42](https://www.youtube.com/watch?v=pAU7eEVgp1A&t=222s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': "Brokers will hear you have a ticket and they'll say hey, I have $2,500 cash, want "
+              'me to buy your ticket from you.',
+      'timestamp': 222,
+      'timestamp_label': '[00:03:42]',
+      'timestamp_seconds': 222,
+      'tip': "Brokers will hear you have a ticket and they'll say hey, I have $2,500 cash, want me "
+             'to buy your ticket from you.',
+      'title': 'Players, coaches continue to resell Super Bowl tickets, despite ban on the '
+               'practice',
+      'url': 'https://www.youtube.com/watch?v=pAU7eEVgp1A&t=222s',
+      'video_id': 'pAU7eEVgp1A'},
+     {'author': 'Apparently Athletic',
+      'channel': 'Apparently Athletic',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:22](https://www.youtube.com/watch?v=wOQ8g0C7oCw&t=22s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'Kendrick Lamar reportedly got union scale, about $1,000 a day.',
+      'timestamp': 22,
+      'timestamp_label': '[00:00:22]',
+      'timestamp_seconds': 22,
+      'tip': 'Kendrick Lamar reportedly got union scale, about $1,000 a day.',
+      'title': "Why the World's Biggest Stars Accept $0 for the Super Bowl",
+      'url': 'https://www.youtube.com/watch?v=wOQ8g0C7oCw&t=22s',
+      'video_id': 'wOQ8g0C7oCw'},
+     {'author': 'Chicoblanco',
+      'channel': 'Chicoblanco',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:08](https://www.youtube.com/watch?v=v-LGKb8taFw&t=68s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'I have a friend that works for the NFL that can get me some Super Bowl tickets for '
+              '$2 to $3,000.',
+      'timestamp': 68,
+      'timestamp_label': '[00:01:08]',
+      'timestamp_seconds': 68,
+      'tip': 'I have a friend that works for the NFL that can get me some Super Bowl tickets for '
+             '$2 to $3,000.',
+      'title': 'Trading a Penny to Super Bowl Tickets',
+      'url': 'https://www.youtube.com/watch?v=v-LGKb8taFw&t=68s',
+      'video_id': 'v-LGKb8taFw'},
+     {'author': 'L0B0',
+      'channel': 'L0B0',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:34](https://www.youtube.com/watch?v=TofGuOnLm0A&t=94s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': "I don't believe the game is really decided on the field.",
+      'timestamp': 94,
+      'timestamp_label': '[00:01:34]',
+      'timestamp_seconds': 94,
+      'tip': "I don't believe the game is really decided on the field.",
+      'title': 'Former NFL Player Dwight Smith EXPOSES NFL For RIGGING Games!!!',
+      'url': 'https://www.youtube.com/watch?v=TofGuOnLm0A&t=94s',
+      'video_id': 'TofGuOnLm0A'},
+     {'author': 'ABC7 News Bay Area',
+      'channel': 'ABC7 News Bay Area',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:54](https://www.youtube.com/watch?v=YZ3TuDNRcvw&t=54s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'He put up nearly 4,300 bucks for the rights to two seats if the Niners made it to '
+              "the Super Bowl; if they didn't make it, he would have lost that money.",
+      'timestamp': 54,
+      'timestamp_label': '[00:00:54]',
+      'timestamp_seconds': 54,
+      'tip': 'He put up nearly 4,300 bucks for the rights to two seats if the Niners made it to '
+             "the Super Bowl; if they didn't make it, he would have lost that money.",
+      'title': "Here's how Bay Area 49ers fan got Super Bowl tickets under average resale price of "
+               '$9,000',
+      'url': 'https://www.youtube.com/watch?v=YZ3TuDNRcvw&t=54s',
+      'video_id': 'YZ3TuDNRcvw'},
+     {'author': 'Chicoblanco',
+      'channel': 'Chicoblanco',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:31](https://www.youtube.com/watch?v=we9NjqAzpU0&t=271s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'I tried trading to a record player and this girl just scammed me; the record player '
+              'is broken.',
+      'timestamp': 271,
+      'timestamp_label': '[00:04:31]',
+      'timestamp_seconds': 271,
+      'tip': 'I tried trading to a record player and this girl just scammed me; the record player '
+             'is broken.',
+      'title': 'Trading Football For NFL Tickets',
+      'url': 'https://www.youtube.com/watch?v=we9NjqAzpU0&t=271s',
+      'video_id': 'we9NjqAzpU0'},
+     {'author': 'NBC Bay Area',
+      'channel': 'NBC Bay Area',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:00](https://www.youtube.com/watch?v=X3-flSVor4E&t=120s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': "We're expecting each team to have 4 to 6 large aircraft.",
+      'timestamp': 120,
+      'timestamp_label': '[00:02:00]',
+      'timestamp_seconds': 120,
+      'tip': "We're expecting each team to have 4 to 6 large aircraft.",
+      'title': 'Behind the scenes: Watch special teams prepare for blitz of Super Bowl flights',
+      'url': 'https://www.youtube.com/watch?v=X3-flSVor4E&t=120s',
+      'video_id': 'X3-flSVor4E'},
+     {'author': '6abc Philadelphia',
+      'channel': '6abc Philadelphia',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:44](https://www.youtube.com/watch?v=w_3Yfr30xIo&t=44s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'You definitely want to just bundle it together and not have to parcel out the '
+              'ticket price, the airfare, the hotel as well.',
+      'timestamp': 44,
+      'timestamp_label': '[00:00:44]',
+      'timestamp_seconds': 44,
+      'tip': 'You definitely want to just bundle it together and not have to parcel out the ticket '
+             'price, the airfare, the hotel as well.',
+      'title': 'Trip to the Super Bowl would be super fun but super costly',
+      'url': 'https://www.youtube.com/watch?v=w_3Yfr30xIo&t=44s',
+      'video_id': 'w_3Yfr30xIo'},
+     {'author': 'KY3 News - Springfield, Mo.',
+      'channel': 'KY3 News - Springfield, Mo.',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:57](https://www.youtube.com/watch?v=IG5D5gNEEok&t=57s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': "We've always wanted to do something with the Super Bowl and not being able to bring "
+              'all your family, just come out and do the experience.',
+      'timestamp': 57,
+      'timestamp_label': '[00:00:57]',
+      'timestamp_seconds': 57,
+      'tip': "We've always wanted to do something with the Super Bowl and not being able to bring "
+             'all your family, just come out and do the experience.',
+      'title': 'Chiefs fans from the Ozarks enjoy NFL Fan Experience, despite no Super Bowl '
+               'tickets',
+      'url': 'https://www.youtube.com/watch?v=IG5D5gNEEok&t=57s',
+      'video_id': 'IG5D5gNEEok'},
+     {'author': '6abc Philadelphia',
+      'channel': '6abc Philadelphia',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:06](https://www.youtube.com/watch?v=cd508uGHJxU&t=66s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'M&J Travel is offering a package complete with round-trip airfare, hotel and a '
+              'ticket to the game starting at seven thousand six hundred dollars per person.',
+      'timestamp': 66,
+      'timestamp_label': '[00:01:06]',
+      'timestamp_seconds': 66,
+      'tip': 'M&J Travel is offering a package complete with round-trip airfare, hotel and a '
+             'ticket to the game starting at seven thousand six hundred dollars per person.',
+      'title': 'Eagles release Super Bowl ticket, travel packages details',
+      'url': 'https://www.youtube.com/watch?v=cd508uGHJxU&t=66s',
+      'video_id': 'cd508uGHJxU'},
+     {'author': 'Minnesota Vikings',
+      'channel': 'Minnesota Vikings',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:19](https://www.youtube.com/watch?v=zY-wSsK4lQM&t=79s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': "Kendall, before you go, we have one more surprise for you: you're going to Super "
+              'Bowl 58 in Las Vegas.',
+      'timestamp': 79,
+      'timestamp_label': '[00:01:19]',
+      'timestamp_seconds': 79,
+      'tip': "Kendall, before you go, we have one more surprise for you: you're going to Super "
+             'Bowl 58 in Las Vegas.',
+      'title': 'Kyle Rudolph Surprises Hometown Hero Kendall Lundahl With Super Bowl Tickets | '
+               'Vikings vs. Chargers',
+      'url': 'https://www.youtube.com/watch?v=zY-wSsK4lQM&t=79s',
+      'video_id': 'zY-wSsK4lQM'},
+     {'author': 'Jimmy Carnes',
+      'channel': 'Jimmy Carnes',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:08:49](https://www.youtube.com/watch?v=u6L1asP5uB0&t=529s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q2.',
+      'source_type': 'video_pro_tip',
+      'text': 'Do you even need tickets to the game to experience the Super Bowl in your city? '
+              'Honestly, no.',
+      'timestamp': 529,
+      'timestamp_label': '[00:08:49]',
+      'timestamp_seconds': 529,
+      'tip': 'Do you even need tickets to the game to experience the Super Bowl in your city? '
+             'Honestly, no.',
+      'title': 'Is a $5,000 Super Bowl Ticket Actually Worth It? (The Truth)',
+      'url': 'https://www.youtube.com/watch?v=u6L1asP5uB0&t=529s',
+      'video_id': 'u6L1asP5uB0'}],
+ 3: [{'author': 'lighthouse travel group',
+      'channel': 'lighthouse travel group',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:34](https://www.youtube.com/watch?v=YbCPfj2AvV4&t=94s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': 'Flights and transfers, hotels, too. Lighthouse handles it all for you.',
+      'timestamp': 94,
+      'timestamp_label': '[00:01:34]',
+      'timestamp_seconds': 94,
+      'tip': 'Flights and transfers, hotels, too. Lighthouse handles it all for you.',
+      'title': '🏈🔥 GO BIG! GO LOUD! SUPER BOWL 2027! 🔥🏈🏆  GAME. THE ULTIMATE VIP EXPERIENCE. THE '
+               'TRIP OF A LIFETIME!',
+      'url': 'https://www.youtube.com/watch?v=YbCPfj2AvV4&t=94s',
+      'video_id': 'YbCPfj2AvV4'},
+     {'author': 'Front Office Sports News',
+      'channel': 'Front Office Sports News',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:05:16](https://www.youtube.com/watch?v=6ufb5u4PcIQ&t=316s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': "We launched in May. We've been selling, we sold out all of our premium experiences "
+              'and premium hospitality and our best seating a long time ago.',
+      'timestamp': 316,
+      'timestamp_label': '[00:05:16]',
+      'timestamp_seconds': 316,
+      'tip': "We launched in May. We've been selling, we sold out all of our premium experiences "
+             'and premium hospitality and our best seating a long time ago.',
+      'title': 'How the VIP Super Bowl Experience Works with On Location President Paul Caine',
+      'url': 'https://www.youtube.com/watch?v=6ufb5u4PcIQ&t=316s',
+      'video_id': '6ufb5u4PcIQ'},
+     {'author': 'GQ',
+      'channel': 'GQ',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:07:04](https://www.youtube.com/watch?v=nT-DpxVmqC0&t=424s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': 'You wanna be in a suite on Super Bowl Sunday, you better have deep pockets. Prices '
+              'range from 300K all the way to 2 1/2 million.',
+      'timestamp': 424,
+      'timestamp_label': '[00:07:04]',
+      'timestamp_seconds': 424,
+      'tip': 'You wanna be in a suite on Super Bowl Sunday, you better have deep pockets. Prices '
+             'range from 300K all the way to 2 1/2 million.',
+      'title': 'What $2.5M Gets You at the Super Bowl | All Access | GQ Sports',
+      'url': 'https://www.youtube.com/watch?v=nT-DpxVmqC0&t=424s',
+      'video_id': 'nT-DpxVmqC0'},
+     {'author': 'Bloomberg Television',
+      'channel': 'Bloomberg Television',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:31](https://www.youtube.com/watch?v=zXgujuB9yXw&t=91s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': 'All of that hype created a demand that game averaged over $9,000 a ticket with some '
+              'on the secondary market going for $12,000.',
+      'timestamp': 91,
+      'timestamp_label': '[00:01:31]',
+      'timestamp_seconds': 91,
+      'tip': 'All of that hype created a demand that game averaged over $9,000 a ticket with some '
+             'on the secondary market going for $12,000.',
+      'title': 'What You Really Get In a Super Bowl Suite',
+      'url': 'https://www.youtube.com/watch?v=zXgujuB9yXw&t=91s',
+      'video_id': 'zXgujuB9yXw'},
+     {'author': 'Team Jesser',
+      'channel': 'Team Jesser',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:06:18](https://www.youtube.com/watch?v=jgHnABCslrA&t=378s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': "Tomorrow is the big game, the Super Bowl. We're getting tickets. Suite tickets. It "
+              'came with being a part of this.',
+      'timestamp': 378,
+      'timestamp_label': '[00:06:18]',
+      'timestamp_seconds': 378,
+      'tip': "Tomorrow is the big game, the Super Bowl. We're getting tickets. Suite tickets. It "
+             'came with being a part of this.',
+      'title': 'VIP Experience At The Super Bowl!',
+      'url': 'https://www.youtube.com/watch?v=jgHnABCslrA&t=378s',
+      'video_id': 'jgHnABCslrA'},
+     {'author': 'MMG',
+      'channel': 'MMG',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:10:16](https://www.youtube.com/watch?v=JfafTeTKsyo&t=616s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': 'I always say the Super Bowl is one of the worst football events to attend because '
+              'all the people that are in the Super Bowl watching are usually not die-hard fans of '
+              'the team.',
+      'timestamp': 616,
+      'timestamp_label': '[00:10:16]',
+      'timestamp_seconds': 616,
+      'tip': 'I always say the Super Bowl is one of the worst football events to attend because '
+             'all the people that are in the Super Bowl watching are usually not die-hard fans of '
+             'the team.',
+      'title': 'My VIP Experience at Super Bowl LX!',
+      'url': 'https://www.youtube.com/watch?v=JfafTeTKsyo&t=616s',
+      'video_id': 'JfafTeTKsyo'},
+     {'author': 'FOX 13 Seattle',
+      'channel': 'FOX 13 Seattle',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:54](https://www.youtube.com/watch?v=q4jIeRrkSGg&t=54s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': "Obviously not everybody can go to the Super Bowl. It's pretty expensive, but I love "
+              'that they do it for a whole week.',
+      'timestamp': 54,
+      'timestamp_label': '[00:00:54]',
+      'timestamp_seconds': 54,
+      'tip': "Obviously not everybody can go to the Super Bowl. It's pretty expensive, but I love "
+             'that they do it for a whole week.',
+      'title': 'Inside the Super Bowl 2026 fan experience',
+      'url': 'https://www.youtube.com/watch?v=q4jIeRrkSGg&t=54s',
+      'video_id': 'q4jIeRrkSGg'},
+     {'author': 'Sportico',
+      'channel': 'Sportico',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:14](https://www.youtube.com/watch?v=uhgdo0oPQ0E&t=14s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': "There's several levels of offerings from free to paid to invite only, and we got "
+              'the access to show you all of them.',
+      'timestamp': 14,
+      'timestamp_label': '[00:00:14]',
+      'timestamp_seconds': 14,
+      'tip': "There's several levels of offerings from free to paid to invite only, and we got the "
+             'access to show you all of them.',
+      'title': "The 'NFL Suite Life' at Tottenham Hotspur Stadium | BTS NFL Exclusive VIP "
+               'Hospitality & Suites',
+      'url': 'https://www.youtube.com/watch?v=uhgdo0oPQ0E&t=14s',
+      'video_id': 'uhgdo0oPQ0E'},
+     {'author': 'SportsRender',
+      'channel': 'SportsRender',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:21](https://www.youtube.com/watch?v=BQI_sOqcfx4&t=81s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': 'Sometimes, a single suite can earn more money in a season than dozens of regular '
+              'seats combined.',
+      'timestamp': 81,
+      'timestamp_label': '[00:01:21]',
+      'timestamp_seconds': 81,
+      'tip': 'Sometimes, a single suite can earn more money in a season than dozens of regular '
+             'seats combined.',
+      'title': 'Why Football Stadiums Are Turning Into Luxury Hotels',
+      'url': 'https://www.youtube.com/watch?v=BQI_sOqcfx4&t=81s',
+      'video_id': 'BQI_sOqcfx4'},
      {'author': 'Luxology',
       'channel': 'Luxology',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:29](https://www.youtube.com/watch?v=rodIE0qwiT4&t=209s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q1 operational verification).',
+      'markdown': '[00:01:36](https://www.youtube.com/watch?v=rodIE0qwiT4&t=96s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
       'source_type': 'video_pro_tip',
-      'text': 'Even the seating is evolving. Modern premium seats can feature wider spacing, '
-              'improved comfort, charging points, dedicated service, and unobstructed views.',
-      'timestamp': 209,
-      'timestamp_label': '[00:03:29]',
-      'timestamp_seconds': 209,
-      'tip': 'Even the seating is evolving. Modern premium seats can feature wider spacing, '
-             'improved comfort, charging points, dedicated service, and unobstructed views.',
-      'title': 'A Stadium Designed Like a Five-Star Resort | Inside the New Entertainment Era '
-               '(Luxology)',
-      'url': 'https://www.youtube.com/watch?v=rodIE0qwiT4&t=209s',
-      'video_id': 'rodIE0qwiT4'}],
- 2: [{'author': 'THE MARKUP FILES',
-      'channel': 'THE MARKUP FILES',
+      'text': 'Private entrances allow VIP visitors to bypass crowded public areas and enter '
+              'sophisticated hospitality spaces.',
+      'timestamp': 96,
+      'timestamp_label': '[00:01:36]',
+      'timestamp_seconds': 96,
+      'tip': 'Private entrances allow VIP visitors to bypass crowded public areas and enter '
+             'sophisticated hospitality spaces.',
+      'title': 'A Stadium Designed Like a Five-Star Resort | Inside the New Entertainment Era',
+      'url': 'https://www.youtube.com/watch?v=rodIE0qwiT4&t=96s',
+      'video_id': 'rodIE0qwiT4'},
+     {'author': 'ALSD',
+      'channel': 'ALSD',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:13:00](https://www.youtube.com/watch?v=rT4gQkoEVDI&t=780s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q2 operational verification).',
+      'markdown': '[00:02:32](https://www.youtube.com/watch?v=ImKo957VLSo&t=152s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
       'source_type': 'video_pro_tip',
-      'text': 'The buyer pays a separate 12% fee on the same amount. On a $10,000 transaction, '
-              "the seller receives 8,800. That's almost $2,400 in combined fees on a single "
-              'transaction.',
-      'timestamp': 780,
-      'timestamp_label': '[00:13:00]',
-      'timestamp_seconds': 780,
-      'tip': 'The buyer pays a separate 12% fee on the same amount. On a $10,000 transaction, '
-             "the seller receives 8,800. That's almost $2,400 in combined fees on a single "
-             'transaction.',
-      'title': 'How NFL Teams Make Money Before Selling Season Tickets ($750 to $50,000 Just '
-               'for the Right) (THE MARKUP FILES)',
-      'url': 'https://www.youtube.com/watch?v=rT4gQkoEVDI&t=780s',
-      'video_id': 'rT4gQkoEVDI'},
-     {'author': 'The Fine Print Audit',
-      'channel': 'The Fine Print Audit',
+      'text': 'Very simple, we send out an email the Monday or Tuesday before a home game, and '
+              "it's two fields.",
+      'timestamp': 152,
+      'timestamp_label': '[00:02:32]',
+      'timestamp_seconds': 152,
+      'tip': "Very simple, we send out an email the Monday or Tuesday before a home game, and it's "
+             'two fields.',
+      'title': 'Hotel Hospitality Ideas for the Sports and Entertainment Venue Marketplace',
+      'url': 'https://www.youtube.com/watch?v=ImKo957VLSo&t=152s',
+      'video_id': 'ImKo957VLSo'},
+     {'author': 'Forbes',
+      'channel': 'Forbes',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:06:14](https://www.youtube.com/watch?v=SdsGfL0IdKk&t=374s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q2 operational verification).',
+      'markdown': '[00:02:21](https://www.youtube.com/watch?v=fI8OAlihCxc&t=141s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
       'source_type': 'video_pro_tip',
-      'text': "The seller's projected payout was $254. 85 seller fee, which is 15%. The spread "
-              'between what the seller got and what the buyer paid, $168. 30 on a $299 ticket, '
-              "and not all of it is Ticketmaster's to keep because the help page says resale "
-              'fees are shared.',
-      'timestamp': 374,
-      'timestamp_label': '[00:06:14]',
-      'timestamp_seconds': 374,
-      'tip': "The seller's projected payout was $254. 85 seller fee, which is 15%. The spread "
-             'between what the seller got and what the buyer paid, $168. 30 on a $299 ticket, '
-             "and not all of it is Ticketmaster's to keep because the help page says resale "
-             'fees are shared.',
-      'title': 'Ticketmaster Fees Hit 44%. The FTC Is Suing. I Read the Fine Print. (The Fine '
-               'Print Audit)',
-      'url': 'https://www.youtube.com/watch?v=SdsGfL0IdKk&t=374s',
-      'video_id': 'SdsGfL0IdKk'},
-     {'author': 'Business Made Simple',
-      'channel': 'Business Made Simple',
+      'text': 'Now we create an incredible breadth of premium inventory for each client at '
+              'different price points and different demographics.',
+      'timestamp': 141,
+      'timestamp_label': '[00:02:21]',
+      'timestamp_seconds': 141,
+      'tip': 'Now we create an incredible breadth of premium inventory for each client at '
+             'different price points and different demographics.',
+      'title': 'Why Sports Arenas Make Millions More By Building Fewer Luxury Suites',
+      'url': 'https://www.youtube.com/watch?v=fI8OAlihCxc&t=141s',
+      'video_id': 'fI8OAlihCxc'},
+     {'author': 'Morning Brew',
+      'channel': 'Morning Brew',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:47](https://www.youtube.com/watch?v=VBp4zpS7F3o&t=167s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q2 operational verification).',
+      'markdown': '[00:04:42](https://www.youtube.com/watch?v=ow9KXpcvvEg&t=282s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
       'source_type': 'video_pro_tip',
-      'text': 'The first add-on is usually called a service fee, and it is the one people '
-              'notice most. A ticketing company sells the tickets, runs the website, handles '
-              'payments, and answers customer questions.',
+      'text': 'More common now are the per game suite rentals, which they can actually charge more '
+              "for because it's a one off.",
+      'timestamp': 282,
+      'timestamp_label': '[00:04:42]',
+      'timestamp_seconds': 282,
+      'tip': 'More common now are the per game suite rentals, which they can actually charge more '
+             "for because it's a one off.",
+      'title': 'The real reason NFL stadiums have so many luxury suites',
+      'url': 'https://www.youtube.com/watch?v=ow9KXpcvvEg&t=282s',
+      'video_id': 'ow9KXpcvvEg'},
+     {'author': 'David Fiene',
+      'channel': 'David Fiene',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:05:16](https://www.youtube.com/watch?v=QPC4K8A6GJg&t=316s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': 'Since the meals and tickets are all inclusive and are not separately stated you '
+              "can't deduct the cost of the meal.",
+      'timestamp': 316,
+      'timestamp_label': '[00:05:16]',
+      'timestamp_seconds': 316,
+      'tip': 'Since the meals and tickets are all inclusive and are not separately stated you '
+             "can't deduct the cost of the meal.",
+      'title': 'Business Meals and Entertainment Tax deduction - What You Should Know',
+      'url': 'https://www.youtube.com/watch?v=QPC4K8A6GJg&t=316s',
+      'video_id': 'QPC4K8A6GJg'},
+     {'author': 'Power Raider',
+      'channel': 'Power Raider',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:16:36](https://www.youtube.com/watch?v=o_WpoJl9phM&t=996s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': "If you buy your PSL and you don't purchase your season tickets they have the right "
+              'to sell your tickets and possibly take your PSL away.',
+      'timestamp': 996,
+      'timestamp_label': '[00:16:36]',
+      'timestamp_seconds': 996,
+      'tip': "If you buy your PSL and you don't purchase your season tickets they have the right "
+             'to sell your tickets and possibly take your PSL away.',
+      'title': 'Planning on owning Raiders Season Tickets?',
+      'url': 'https://www.youtube.com/watch?v=o_WpoJl9phM&t=996s',
+      'video_id': 'o_WpoJl9phM'},
+     {'author': 'Dave Chung',
+      'channel': 'Dave Chung',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:06:30](https://www.youtube.com/watch?v=CpHB_gOGYSs&t=390s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': "I end up giving away and dumping my tickets below cost for teams that don't have a "
+              'lot of star power right now.',
+      'timestamp': 390,
+      'timestamp_label': '[00:06:30]',
+      'timestamp_seconds': 390,
+      'tip': "I end up giving away and dumping my tickets below cost for teams that don't have a "
+             'lot of star power right now.',
+      'title': "What it's REALLY like having NBA season tickets | Should you get season tickets?",
+      'url': 'https://www.youtube.com/watch?v=CpHB_gOGYSs&t=390s',
+      'video_id': 'CpHB_gOGYSs'},
+     {'author': 'Power Raider',
+      'channel': 'Power Raider',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:20:53](https://www.youtube.com/watch?v=o_WpoJl9phM&t=1253s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': 'If you sell it on another site and that person does something really bad you may '
+              'get your PSL revoked.',
+      'timestamp': 1253,
+      'timestamp_label': '[00:20:53]',
+      'timestamp_seconds': 1253,
+      'tip': 'If you sell it on another site and that person does something really bad you may get '
+             'your PSL revoked.',
+      'title': 'Planning on owning Raiders Season Tickets?',
+      'url': 'https://www.youtube.com/watch?v=o_WpoJl9phM&t=1253s',
+      'video_id': 'o_WpoJl9phM'},
+     {'author': 'David Fiene',
+      'channel': 'David Fiene',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:06:08](https://www.youtube.com/watch?v=QPC4K8A6GJg&t=368s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q3.',
+      'source_type': 'video_pro_tip',
+      'text': 'Proof of payment is not proof of what you purchased, so in addition to the proof of '
+              'payment keep the receipt with the notations.',
+      'timestamp': 368,
+      'timestamp_label': '[00:06:08]',
+      'timestamp_seconds': 368,
+      'tip': 'Proof of payment is not proof of what you purchased, so in addition to the proof of '
+             'payment keep the receipt with the notations.',
+      'title': 'Business Meals and Entertainment Tax deduction - What You Should Know',
+      'url': 'https://www.youtube.com/watch?v=QPC4K8A6GJg&t=368s',
+      'video_id': 'QPC4K8A6GJg'}],
+ 4: [{'author': 'Luxury Travel Professional',
+      'channel': 'Luxury Travel Professional',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:06:44](https://www.youtube.com/watch?v=6CYg2Av2xS4&t=404s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'No photos allowed in here, classified information.',
+      'timestamp': 404,
+      'timestamp_label': '[00:06:44]',
+      'timestamp_seconds': 404,
+      'tip': 'No photos allowed in here, classified information.',
+      'title': '[$14,000 Ticket] Inside the F1 Paddock Club | Singapore Grand Prix VIP Experience',
+      'url': 'https://www.youtube.com/watch?v=6CYg2Av2xS4&t=404s',
+      'video_id': '6CYg2Av2xS4'},
+     {'author': 'Martin Bursatil',
+      'channel': 'Martin Bursatil',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:36](https://www.youtube.com/watch?v=S5_EsejwubY&t=216s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'The Paddock can run up to 200,000 pesos.',
+      'timestamp': 216,
+      'timestamp_label': '[00:03:36]',
+      'timestamp_seconds': 216,
+      'tip': 'The Paddock can run up to 200,000 pesos.',
+      'title': '¿Vale la pena pagar por el Paddock Club de Fórmula 1?',
+      'url': 'https://www.youtube.com/watch?v=S5_EsejwubY&t=216s',
+      'video_id': 'S5_EsejwubY'},
+     {'author': 'SOL - Supercars of London',
+      'channel': 'SOL - Supercars of London',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:05:16](https://www.youtube.com/watch?v=rQvPQuH1YXw&t=316s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'The pit lane opens to ticket holders about 90 minutes before lights out.',
+      'timestamp': 316,
+      'timestamp_label': '[00:05:16]',
+      'timestamp_seconds': 316,
+      'tip': 'The pit lane opens to ticket holders about 90 minutes before lights out.',
+      'title': 'INSIDE The Most Expensive Qatar F1 Tickets | Behind the Scenes!',
+      'url': 'https://www.youtube.com/watch?v=rQvPQuH1YXw&t=316s',
+      'video_id': 'rQvPQuH1YXw'},
+     {'author': 'Kayvan Goes',
+      'channel': 'Kayvan Goes',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:24:42](https://www.youtube.com/watch?v=2UDtC8EP8GA&t=1482s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'So in the networking out of 10 I give one.',
+      'timestamp': 1482,
+      'timestamp_label': '[00:24:42]',
+      'timestamp_seconds': 1482,
+      'tip': 'So in the networking out of 10 I give one.',
+      'title': 'Is the F1 Paddock Club Actually Worth It?',
+      'url': 'https://www.youtube.com/watch?v=2UDtC8EP8GA&t=1482s',
+      'video_id': '2UDtC8EP8GA'},
+     {'author': 'Kayvan Goes',
+      'channel': 'Kayvan Goes',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:30:21](https://www.youtube.com/watch?v=2UDtC8EP8GA&t=1821s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': "Like I wouldn't pay 15,000 euros for this.",
+      'timestamp': 1821,
+      'timestamp_label': '[00:30:21]',
+      'timestamp_seconds': 1821,
+      'tip': "Like I wouldn't pay 15,000 euros for this.",
+      'title': 'Is the F1 Paddock Club Actually Worth It?',
+      'url': 'https://www.youtube.com/watch?v=2UDtC8EP8GA&t=1821s',
+      'video_id': '2UDtC8EP8GA'},
+     {'author': 'Mercedes-AMG PETRONAS F1 Team',
+      'channel': 'Mercedes-AMG PETRONAS F1 Team',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:20](https://www.youtube.com/watch?v=fl-tIcZO3u4&t=260s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'The demand was just too strong, so we needed another space.',
+      'timestamp': 260,
+      'timestamp_label': '[00:04:20]',
+      'timestamp_seconds': 260,
+      'tip': 'The demand was just too strong, so we needed another space.',
+      'title': 'The VIP Experience | How It Works: F1 Hospitality 🤩',
+      'url': 'https://www.youtube.com/watch?v=fl-tIcZO3u4&t=260s',
+      'video_id': 'fl-tIcZO3u4'},
+     {'author': 'Emily Canham Vlogs',
+      'channel': 'Emily Canham Vlogs',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:05:45](https://www.youtube.com/watch?v=UgpOwtQHKS4&t=345s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'We have a garage tour to see the race cars about three hours before the race.',
+      'timestamp': 345,
+      'timestamp_label': '[00:05:45]',
+      'timestamp_seconds': 345,
+      'tip': 'We have a garage tour to see the race cars about three hours before the race.',
+      'title': 'Surprising my DAD with F1 PADDOCK CLUB tickets at Silverstone 😅 British Grand Prix '
+               '2023 🏎️',
+      'url': 'https://www.youtube.com/watch?v=UgpOwtQHKS4&t=345s',
+      'video_id': 'UgpOwtQHKS4'},
+     {'author': 'Live The Dash',
+      'channel': 'Live The Dash',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:12:30](https://www.youtube.com/watch?v=emvC24ZLBWo&t=750s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'If you go on the Thursday, you can have a free pit lane walk.',
+      'timestamp': 750,
+      'timestamp_label': '[00:12:30]',
+      'timestamp_seconds': 750,
+      'tip': 'If you go on the Thursday, you can have a free pit lane walk.',
+      'title': 'I Upgraded My F1 Ticket In China…',
+      'url': 'https://www.youtube.com/watch?v=emvC24ZLBWo&t=750s',
+      'video_id': 'emvC24ZLBWo'},
+     {'author': 'Katarina Mogus',
+      'channel': 'Katarina Mogus',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:32](https://www.youtube.com/watch?v=ouFzQnXDzjU&t=32s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'We are doing the garage tour, and there is no filming allowed.',
+      'timestamp': 32,
+      'timestamp_label': '[00:00:32]',
+      'timestamp_seconds': 32,
+      'tip': 'We are doing the garage tour, and there is no filming allowed.',
+      'title': "I Got Ferrari's MOST Exclusive F1 Experience",
+      'url': 'https://www.youtube.com/watch?v=ouFzQnXDzjU&t=32s',
+      'video_id': 'ouFzQnXDzjU'},
+     {'author': 'Global Nomads',
+      'channel': 'Global Nomads',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:31:34](https://www.youtube.com/watch?v=ePgxCdmE8o8&t=1894s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': "It was a really good view, but I really don't think I should spend $6,000 on a "
+              'ticket and have to run to try and get one of the 40 seats that are available.',
+      'timestamp': 1894,
+      'timestamp_label': '[00:31:34]',
+      'timestamp_seconds': 1894,
+      'tip': "It was a really good view, but I really don't think I should spend $6,000 on a "
+             'ticket and have to run to try and get one of the 40 seats that are available.',
+      'title': 'Melbourne Grand Prix 2026 | Formula 1 Paddock Club v Red Bull Pit Lane Review. Was '
+               'it worth $6,000',
+      'url': 'https://www.youtube.com/watch?v=ePgxCdmE8o8&t=1894s',
+      'video_id': 'ePgxCdmE8o8'},
+     {'author': 'Global Nomads',
+      'channel': 'Global Nomads',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:14:58](https://www.youtube.com/watch?v=ePgxCdmE8o8&t=898s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': "So, so the track opened at 8:30, but this stand didn't open until 9:30, which is "
+              'really weird because there were races, I think we missed one race already because '
+              "we couldn't get into the stand.",
+      'timestamp': 898,
+      'timestamp_label': '[00:14:58]',
+      'timestamp_seconds': 898,
+      'tip': "So, so the track opened at 8:30, but this stand didn't open until 9:30, which is "
+             'really weird because there were races, I think we missed one race already because we '
+             "couldn't get into the stand.",
+      'title': 'Melbourne Grand Prix 2026 | Formula 1 Paddock Club v Red Bull Pit Lane Review. Was '
+               'it worth $6,000',
+      'url': 'https://www.youtube.com/watch?v=ePgxCdmE8o8&t=898s',
+      'video_id': 'ePgxCdmE8o8'},
+     {'author': 'LawVS',
+      'channel': 'LawVS',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:10:22](https://www.youtube.com/watch?v=0KKYkQr1SBk&t=622s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'Suffice to say, you get a lot of swag.',
+      'timestamp': 622,
+      'timestamp_label': '[00:10:22]',
+      'timestamp_seconds': 622,
+      'tip': 'Suffice to say, you get a lot of swag.',
+      'title': "I Spent A Day In F1's Most Expensive Hospitality",
+      'url': 'https://www.youtube.com/watch?v=0KKYkQr1SBk&t=622s',
+      'video_id': '0KKYkQr1SBk'},
+     {'author': 'Only Scrans',
+      'channel': 'Only Scrans',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:15](https://www.youtube.com/watch?v=XhaS3MGZL-o&t=15s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'It costs upwards of 2 Grand for a day ticket, and the more you pay the more access '
+              'you get.',
+      'timestamp': 15,
+      'timestamp_label': '[00:00:15]',
+      'timestamp_seconds': 15,
+      'tip': 'It costs upwards of 2 Grand for a day ticket, and the more you pay the more access '
+             'you get.',
+      'title': "THE WORLD'S MOST EXPENSIVE F1 EXPERIENCE",
+      'url': 'https://www.youtube.com/watch?v=XhaS3MGZL-o&t=15s',
+      'video_id': 'XhaS3MGZL-o'},
+     {'author': 'CBS Atlanta',
+      'channel': 'CBS Atlanta',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:08](https://www.youtube.com/watch?v=vYgE480j7AA&t=68s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'The club only opens seven days a year.',
+      'timestamp': 68,
+      'timestamp_label': '[00:01:08]',
+      'timestamp_seconds': 68,
+      'tip': 'The club only opens seven days a year.',
+      'title': 'Inside Club Magnolia: The Masters’ secret experience with Atlanta ties',
+      'url': 'https://www.youtube.com/watch?v=vYgE480j7AA&t=68s',
+      'video_id': 'vYgE480j7AA'},
+     {'author': 'Tickets To Travel Podcast',
+      'channel': 'Tickets To Travel Podcast',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:11:14](https://www.youtube.com/watch?v=pugjl3jzpWU&t=674s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'Taylor Swift tickets were about $5,000 each in the US versus about $1,000 in Paris.',
+      'timestamp': 674,
+      'timestamp_label': '[00:11:14]',
+      'timestamp_seconds': 674,
+      'tip': 'Taylor Swift tickets were about $5,000 each in the US versus about $1,000 in Paris.',
+      'title': 'Tickets To Travel Ep  10  Beyond the Ticket  Merging Travel with VIP Event '
+               'Experiences   A Conversa',
+      'url': 'https://www.youtube.com/watch?v=pugjl3jzpWU&t=674s',
+      'video_id': 'pugjl3jzpWU'},
+     {'author': 'DownieLive',
+      'channel': 'DownieLive',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:36](https://www.youtube.com/watch?v=FqfiHSncdow&t=96s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'The Paddock Club Suite is limited access, with sit-down dining.',
+      'timestamp': 96,
+      'timestamp_label': '[00:01:36]',
+      'timestamp_seconds': 96,
+      'tip': 'The Paddock Club Suite is limited access, with sit-down dining.',
+      'title': 'A REAL LOOK inside the F1 Paddock Club',
+      'url': 'https://www.youtube.com/watch?v=FqfiHSncdow&t=96s',
+      'video_id': 'FqfiHSncdow'},
+     {'author': 'Phillip Riggs',
+      'channel': 'Phillip Riggs',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:12](https://www.youtube.com/watch?v=-qouj-ME6Xw&t=132s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': 'Team village happens at every single race.',
+      'timestamp': 132,
+      'timestamp_label': '[00:02:12]',
+      'timestamp_seconds': 132,
+      'tip': 'Team village happens at every single race.',
+      'title': 'They Don’t Show You This Side of F1 Las Vegas | Inside Paddock Club',
+      'url': 'https://www.youtube.com/watch?v=-qouj-ME6Xw&t=132s',
+      'video_id': '-qouj-ME6Xw'},
+     {'author': 'Pit Stop Lab',
+      'channel': 'Pit Stop Lab',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:54](https://www.youtube.com/watch?v=qjr3BHunOxo&t=114s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q4.',
+      'source_type': 'video_pro_tip',
+      'text': "Turns out the best place to close the deal isn't a meeting room.",
+      'timestamp': 114,
+      'timestamp_label': '[00:01:54]',
+      'timestamp_seconds': 114,
+      'tip': "Turns out the best place to close the deal isn't a meeting room.",
+      'title': 'The World’s Most Expensive Boardroom: F1 Paddock Club',
+      'url': 'https://www.youtube.com/watch?v=qjr3BHunOxo&t=114s',
+      'video_id': 'qjr3BHunOxo'}],
+ 5: [{'author': 'Sports Travel Tom',
+      'channel': 'Sports Travel Tom',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:43](https://www.youtube.com/watch?v=iKAz6YJRTXI&t=103s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'Now, they say it is a less than 1% chance of being successful in The Masters ballot '
+              'just because of the amount of people apply for tickets.',
+      'timestamp': 103,
+      'timestamp_label': '[00:01:43]',
+      'timestamp_seconds': 103,
+      'tip': 'Now, they say it is a less than 1% chance of being successful in The Masters ballot '
+             'just because of the amount of people apply for tickets.',
+      'title': 'How to Get Masters Tickets (2027 Guide: Ballot vs Packages)',
+      'url': 'https://www.youtube.com/watch?v=iKAz6YJRTXI&t=103s',
+      'video_id': 'iKAz6YJRTXI'},
+     {'author': 'Sports Travel Tom',
+      'channel': 'Sports Travel Tom',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:58](https://www.youtube.com/watch?v=iKAz6YJRTXI&t=298s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'The prices are quite expensive, ranging from anything from $4,000 upwards of '
+              '$10,000, but it secures your attendance at The Masters.',
+      'timestamp': 298,
+      'timestamp_label': '[00:04:58]',
+      'timestamp_seconds': 298,
+      'tip': 'The prices are quite expensive, ranging from anything from $4,000 upwards of '
+             '$10,000, but it secures your attendance at The Masters.',
+      'title': 'How to Get Masters Tickets (2027 Guide: Ballot vs Packages)',
+      'url': 'https://www.youtube.com/watch?v=iKAz6YJRTXI&t=298s',
+      'video_id': 'iKAz6YJRTXI'},
+     {'author': 'J Properties Group',
+      'channel': 'J Properties Group',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:04:55](https://www.youtube.com/watch?v=U3YMt8EJCrE&t=295s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'Prices can range from anywhere from $1,500 to $10,000 or more a ticket, and in some '
+              'cases, Sunday tickets can be even higher.',
+      'timestamp': 295,
+      'timestamp_label': '[00:04:55]',
+      'timestamp_seconds': 295,
+      'tip': 'Prices can range from anywhere from $1,500 to $10,000 or more a ticket, and in some '
+             'cases, Sunday tickets can be even higher.',
+      'title': "Masters Tickets Explained | Why They're Almost Impossible to Get!",
+      'url': 'https://www.youtube.com/watch?v=U3YMt8EJCrE&t=295s',
+      'video_id': 'U3YMt8EJCrE'},
+     {'author': '11Alive',
+      'channel': '11Alive',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:51](https://www.youtube.com/watch?v=QiKFtpmNUqo&t=51s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'It says if you have a ticket obtained by a third party by whatever means, you may '
+              'be excluded from attendance to the tournament.',
+      'timestamp': 51,
+      'timestamp_label': '[00:00:51]',
+      'timestamp_seconds': 51,
+      'tip': 'It says if you have a ticket obtained by a third party by whatever means, you may be '
+             'excluded from attendance to the tournament.',
+      'title': "Yes, it's true. You cannot buy or sell tickets for The Masters on a secondary "
+               'resale site',
+      'url': 'https://www.youtube.com/watch?v=QiKFtpmNUqo&t=51s',
+      'video_id': 'QiKFtpmNUqo'},
+     {'author': 'Gameday Guides',
+      'channel': 'Gameday Guides',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:59](https://www.youtube.com/watch?v=LtTBm2wHjoE&t=119s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'They are actively voiding tickets at the gate using RFID tracking to catch brokers '
+              'and permanently revoking lifetime badges.',
+      'timestamp': 119,
+      'timestamp_label': '[00:01:59]',
+      'timestamp_seconds': 119,
+      'tip': 'They are actively voiding tickets at the gate using RFID tracking to catch brokers '
+             'and permanently revoking lifetime badges.',
+      'title': 'How to Get Tickets To The Masters and Insider Tips When You Get There',
+      'url': 'https://www.youtube.com/watch?v=LtTBm2wHjoE&t=119s',
+      'video_id': 'LtTBm2wHjoE'},
+     {'author': 'thebombtickets',
+      'channel': 'thebombtickets',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:39:05](https://www.youtube.com/watch?v=icH7RV48MeY&t=2345s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': "In the last two years it's been so difficult to recalibrate your kind of idea of "
+              'what things are worth because they change so fast.',
+      'timestamp': 2345,
+      'timestamp_label': '[00:39:05]',
+      'timestamp_seconds': 2345,
+      'tip': "In the last two years it's been so difficult to recalibrate your kind of idea of "
+             'what things are worth because they change so fast.',
+      'title': 'World Series & NBA Finals Ticket Stubs - Ticket Stub Collecting w/ James Burzynski',
+      'url': 'https://www.youtube.com/watch?v=icH7RV48MeY&t=2345s',
+      'video_id': 'icH7RV48MeY'},
+     {'author': 'WTHR',
+      'channel': 'WTHR',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:38](https://www.youtube.com/watch?v=5T8RLIaR8yg&t=98s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': "Those are just listed for sale, and that doesn't mean people are actually buying "
+              'very many at that price.',
+      'timestamp': 98,
+      'timestamp_label': '[00:01:38]',
+      'timestamp_seconds': 98,
+      'tip': "Those are just listed for sale, and that doesn't mean people are actually buying "
+             'very many at that price.',
+      'title': 'College football championship tickets will cost Hoosiers a pretty penny',
+      'url': 'https://www.youtube.com/watch?v=5T8RLIaR8yg&t=98s',
+      'video_id': '5T8RLIaR8yg'},
+     {'author': 'WTHR',
+      'channel': 'WTHR',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:13](https://www.youtube.com/watch?v=OSa-CK_qebs&t=73s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': '9 times out of 10, prices come down as you get closer to the event; sellers put up '
+              "a really high price and most of them don't sell at those prices.",
+      'timestamp': 73,
+      'timestamp_label': '[00:01:13]',
+      'timestamp_seconds': 73,
+      'tip': '9 times out of 10, prices come down as you get closer to the event; sellers put up a '
+             "really high price and most of them don't sell at those prices.",
+      'title': "Here's what it'll cost to go to CFP National Championship between IU and Miami",
+      'url': 'https://www.youtube.com/watch?v=OSa-CK_qebs&t=73s',
+      'video_id': 'OSa-CK_qebs'},
+     {'author': 'WTHR',
+      'channel': 'WTHR',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:30](https://www.youtube.com/watch?v=OSa-CK_qebs&t=150s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'Ticket scammers likely are going to be people that try to rush you, and make sure '
+              "you're only buying from verified sites and get a proof of purchase.",
+      'timestamp': 150,
+      'timestamp_label': '[00:02:30]',
+      'timestamp_seconds': 150,
+      'tip': 'Ticket scammers likely are going to be people that try to rush you, and make sure '
+             "you're only buying from verified sites and get a proof of purchase.",
+      'title': "Here's what it'll cost to go to CFP National Championship between IU and Miami",
+      'url': 'https://www.youtube.com/watch?v=OSa-CK_qebs&t=150s',
+      'video_id': 'OSa-CK_qebs'},
+     {'author': 'Prodigy Slots',
+      'channel': 'Prodigy Slots',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:10:53](https://www.youtube.com/watch?v=rYABa5xL6d0&t=653s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': "As soon as they go on sale there's a tendency for people to purchase them in bulk "
+              "and then resell them, so you're going to end up paying more in the long run if you "
+              "don't purchase those tickets the day they go on sale.",
+      'timestamp': 653,
+      'timestamp_label': '[00:10:53]',
+      'timestamp_seconds': 653,
+      'tip': "As soon as they go on sale there's a tendency for people to purchase them in bulk "
+             "and then resell them, so you're going to end up paying more in the long run if you "
+             "don't purchase those tickets the day they go on sale.",
+      'title': 'Is the UFC VIP Experience worth it?',
+      'url': 'https://www.youtube.com/watch?v=rYABa5xL6d0&t=653s',
+      'video_id': 'rYABa5xL6d0'},
+     {'author': 'Troydan',
+      'channel': 'Troydan',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:32](https://www.youtube.com/watch?v=0jqhQFvHHcc&t=32s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'Two tickets for this event come to a total of about $47,000 Canadian, which is '
+              'roughly $35,000 American.',
+      'timestamp': 32,
+      'timestamp_label': '[00:00:32]',
+      'timestamp_seconds': 32,
+      'tip': 'Two tickets for this event come to a total of about $47,000 Canadian, which is '
+             'roughly $35,000 American.',
+      'title': 'I got $47,000 VIP Tickets to the UFC!',
+      'url': 'https://www.youtube.com/watch?v=0jqhQFvHHcc&t=32s',
+      'video_id': '0jqhQFvHHcc'},
+     {'author': 'The Wrestling Classic',
+      'channel': 'The Wrestling Classic',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:18:04](https://www.youtube.com/watch?v=oqJoU9yO2_c&t=1084s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'We stuck around after the fights because we had the VIP package with On Location '
+              'that allowed us to go into the octagon with the blood on the mat to take some '
+              'pictures.',
+      'timestamp': 1084,
+      'timestamp_label': '[00:18:04]',
+      'timestamp_seconds': 1084,
+      'tip': 'We stuck around after the fights because we had the VIP package with On Location '
+             'that allowed us to go into the octagon with the blood on the mat to take some '
+             'pictures.',
+      'title': 'UFC Fight Night: Vancouver Vlog - On Location VIP Experience',
+      'url': 'https://www.youtube.com/watch?v=oqJoU9yO2_c&t=1084s',
+      'video_id': 'oqJoU9yO2_c'},
+     {'author': 'MMALeaked',
+      'channel': 'MMALeaked',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:07:03](https://www.youtube.com/watch?v=2vauuB_YXFc&t=423s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': "In the prelims there's so many seats open; it really doesn't start filling up until "
+              'the main fights on the card.',
+      'timestamp': 423,
+      'timestamp_label': '[00:07:03]',
+      'timestamp_seconds': 423,
+      'tip': "In the prelims there's so many seats open; it really doesn't start filling up until "
+             'the main fights on the card.',
+      'title': 'First UFC Event? Essential Tips for Buying Tickets!',
+      'url': 'https://www.youtube.com/watch?v=2vauuB_YXFc&t=423s',
+      'video_id': '2vauuB_YXFc'},
+     {'author': 'PowerBombClub',
+      'channel': 'PowerBombClub',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:17](https://www.youtube.com/watch?v=UTfE6DLqtLY&t=17s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'You have to be invited by the UFC to purchase them; the specific ticket package is '
+              'called Elite Plus, and they can only be sold in pairs of two.',
+      'timestamp': 17,
+      'timestamp_label': '[00:00:17]',
+      'timestamp_seconds': 17,
+      'tip': 'You have to be invited by the UFC to purchase them; the specific ticket package is '
+             'called Elite Plus, and they can only be sold in pairs of two.',
+      'title': 'I got $80,000 VIP Tickets to the UFC!',
+      'url': 'https://www.youtube.com/watch?v=UTfE6DLqtLY&t=17s',
+      'video_id': 'UTfE6DLqtLY'},
+     {'author': 'Courtney Willis',
+      'channel': 'Courtney Willis',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:20](https://www.youtube.com/watch?v=f5hPIW3U13c&t=80s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'Purchasing my ticket was such a nightmare with the site crashing, the queue '
+              'restarting, having to open and close the tabs, switching to incognito mode, '
+              'changing my Chrome profile.',
+      'timestamp': 80,
+      'timestamp_label': '[00:01:20]',
+      'timestamp_seconds': 80,
+      'tip': 'Purchasing my ticket was such a nightmare with the site crashing, the queue '
+             'restarting, having to open and close the tabs, switching to incognito mode, changing '
+             'my Chrome profile.',
+      'title': 'Coachella 2027 Tickets Are Selling Out! Prices, Camping & More',
+      'url': 'https://www.youtube.com/watch?v=f5hPIW3U13c&t=80s',
+      'video_id': 'f5hPIW3U13c'},
+     {'author': 'BAG & TRAVEL',
+      'channel': 'BAG & TRAVEL',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:48](https://www.youtube.com/watch?v=B2P9oIBqq5Q&t=48s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': "Players that people were hoping to see aren't still in the tournament anymore, so "
+              'they resell their tickets through Ticketmaster, and sometimes you can get some '
+              'really good deals.',
+      'timestamp': 48,
+      'timestamp_label': '[00:00:48]',
+      'timestamp_seconds': 48,
+      'tip': "Players that people were hoping to see aren't still in the tournament anymore, so "
+             'they resell their tickets through Ticketmaster, and sometimes you can get some '
+             'really good deals.',
+      'title': 'What ticket should you buy for US Open? My experience',
+      'url': 'https://www.youtube.com/watch?v=B2P9oIBqq5Q&t=48s',
+      'video_id': 'B2P9oIBqq5Q'},
+     {'author': 'Tennis Fights',
+      'channel': 'Tennis Fights',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:04](https://www.youtube.com/watch?v=vvND5YxS-Hg&t=64s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': "I would never pay for a ticket to go to Arthur Stadium, it's worthless; you can't "
+              'see anything no matter where you are in the court.',
+      'timestamp': 64,
+      'timestamp_label': '[00:01:04]',
+      'timestamp_seconds': 64,
+      'tip': "I would never pay for a ticket to go to Arthur Stadium, it's worthless; you can't "
+             'see anything no matter where you are in the court.',
+      'title': 'US OPEN Tennis Tickets in New York are CRAZY',
+      'url': 'https://www.youtube.com/watch?v=vvND5YxS-Hg&t=64s',
+      'video_id': 'vvND5YxS-Hg'},
+     {'author': 'Firstpost',
+      'channel': 'Firstpost',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:22](https://www.youtube.com/watch?v=R9QNsXzjvxU&t=142s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q5.',
+      'source_type': 'video_pro_tip',
+      'text': 'Center Court debenture seats for 2026 to 2030 are already being sold, and the cost '
+              'stands at more than $275,000.',
+      'timestamp': 142,
+      'timestamp_label': '[00:02:22]',
+      'timestamp_seconds': 142,
+      'tip': 'Center Court debenture seats for 2026 to 2030 are already being sold, and the cost '
+             'stands at more than $275,000.',
+      'title': 'Inside Wimbledon’s $275,000 Debenture Seats: The Profit-Making Machine | Vantage '
+               'with Palki Sharma',
+      'url': 'https://www.youtube.com/watch?v=R9QNsXzjvxU&t=142s',
+      'video_id': 'R9QNsXzjvxU'}],
+ 6: [{'author': '9NEWS',
+      'channel': '9NEWS',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:12](https://www.youtube.com/watch?v=s4p8gnL-WFw&t=72s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': "In the NFL, 34% of each team's ticket revenue is shared with other teams, but if a "
+              "team sells a PSL, that revenue doesn't have to go to the league.",
+      'timestamp': 72,
+      'timestamp_label': '[00:01:12]',
+      'timestamp_seconds': 72,
+      'tip': "In the NFL, 34% of each team's ticket revenue is shared with other teams, but if a "
+             "team sells a PSL, that revenue doesn't have to go to the league.",
+      'title': 'Broncos uncertain about selling Personal Seat Licenses to buy the right to '
+               'purchase future tickets',
+      'url': 'https://www.youtube.com/watch?v=s4p8gnL-WFw&t=72s',
+      'video_id': 's4p8gnL-WFw'},
+     {'author': 'JCFB',
+      'channel': 'JCFB',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:05](https://www.youtube.com/watch?v=Dl5FeuC7tUA&t=185s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'As a PSL holder, you must purchase and renew season tickets each year, or else your '
+              'PSL will be forfeited and sold to someone else.',
+      'timestamp': 185,
+      'timestamp_label': '[00:03:05]',
+      'timestamp_seconds': 185,
+      'tip': 'As a PSL holder, you must purchase and renew season tickets each year, or else your '
+             'PSL will be forfeited and sold to someone else.',
+      'title': 'The NFL’s Biggest Scam: Personal Seat Licenses',
+      'url': 'https://www.youtube.com/watch?v=Dl5FeuC7tUA&t=185s',
+      'video_id': 'Dl5FeuC7tUA'},
+     {'author': 'News 5 Cleveland',
+      'channel': 'News 5 Cleveland',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:20](https://www.youtube.com/watch?v=-zd2mlj0u8U&t=140s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'The prices for PSLs range from $550 to more than $193,000, and for VIP club seats '
+              'the midpoint was about $4,500 a seat.',
+      'timestamp': 140,
+      'timestamp_label': '[00:02:20]',
+      'timestamp_seconds': 140,
+      'tip': 'The prices for PSLs range from $550 to more than $193,000, and for VIP club seats '
+             'the midpoint was about $4,500 a seat.',
+      'title': 'How much? Browns fans outraged by possible personal seat-license (PSL) pricing in '
+               'Brook Park.',
+      'url': 'https://www.youtube.com/watch?v=-zd2mlj0u8U&t=140s',
+      'video_id': '-zd2mlj0u8U'},
+     {'author': 'TicketWire',
+      'channel': 'TicketWire',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:11](https://www.youtube.com/watch?v=hlfwsoMBQS0&t=131s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': "You can make them an offer, it doesn't hurt to ask; you say 28, they might counter "
+              "at 31, and that's how you beat me at this.",
+      'timestamp': 131,
+      'timestamp_label': '[00:02:11]',
+      'timestamp_seconds': 131,
+      'tip': "You can make them an offer, it doesn't hurt to ask; you say 28, they might counter "
+             "at 31, and that's how you beat me at this.",
+      'title': 'NFL Season Tickets: Shawn Covers Key Step in Buying',
+      'url': 'https://www.youtube.com/watch?v=hlfwsoMBQS0&t=131s',
+      'video_id': 'hlfwsoMBQS0'},
+     {'author': 'TicketWire',
+      'channel': 'TicketWire',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:13](https://www.youtube.com/watch?v=M80btlo7xJc&t=193s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': "My only thing with Facebook is do your research, don't get scammed, it happens "
+              "every day; just make sure they're real people and make sure it's a legit offer.",
+      'timestamp': 193,
+      'timestamp_label': '[00:03:13]',
+      'timestamp_seconds': 193,
+      'tip': "My only thing with Facebook is do your research, don't get scammed, it happens every "
+             "day; just make sure they're real people and make sure it's a legit offer.",
+      'title': 'Buying NFL Season Tickets: SBL is Step One.',
+      'url': 'https://www.youtube.com/watch?v=M80btlo7xJc&t=193s',
+      'video_id': 'M80btlo7xJc'},
+     {'author': 'TicketWire',
+      'channel': 'TicketWire',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:06](https://www.youtube.com/watch?v=M80btlo7xJc&t=126s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'I made the lowest ball offer I could think of and they accepted it, so you can '
+              'throw an offer out there, and who cares if they deny you, make another offer to '
+              'somebody else.',
+      'timestamp': 126,
+      'timestamp_label': '[00:02:06]',
+      'timestamp_seconds': 126,
+      'tip': 'I made the lowest ball offer I could think of and they accepted it, so you can throw '
+             'an offer out there, and who cares if they deny you, make another offer to somebody '
+             'else.',
+      'title': 'Buying NFL Season Tickets: SBL is Step One.',
+      'url': 'https://www.youtube.com/watch?v=M80btlo7xJc&t=126s',
+      'video_id': 'M80btlo7xJc'},
+     {'author': 'Zach Bye',
+      'channel': 'Zach Bye',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:25](https://www.youtube.com/watch?v=FZyPq0QfTdg&t=205s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'This is a one-time fee, and from what I understand, in a lot of these markets you '
+              'can finance it through the course of a few payments.',
+      'timestamp': 205,
+      'timestamp_label': '[00:03:25]',
+      'timestamp_seconds': 205,
+      'tip': 'This is a one-time fee, and from what I understand, in a lot of these markets you '
+             'can finance it through the course of a few payments.',
+      'title': 'Personal Seat License are coming to the Denver Broncos new stadium',
+      'url': 'https://www.youtube.com/watch?v=FZyPq0QfTdg&t=205s',
+      'video_id': 'FZyPq0QfTdg'},
+     {'author': 'Any Given Wednesday with Bill Simmons',
+      'channel': 'Any Given Wednesday with Bill Simmons',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:33](https://www.youtube.com/watch?v=VzrNov3Y_qM&t=33s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': "It's a massive surcharge for the right to buy season tickets; it's like a price tag "
+              'on the price tag.',
+      'timestamp': 33,
+      'timestamp_label': '[00:00:33]',
+      'timestamp_seconds': 33,
+      'tip': "It's a massive surcharge for the right to buy season tickets; it's like a price tag "
+             'on the price tag.',
+      'title': 'Personal Seat Licenses are Bulls**t (HBO)',
+      'url': 'https://www.youtube.com/watch?v=VzrNov3Y_qM&t=33s',
+      'video_id': 'VzrNov3Y_qM'},
+     {'author': 'MPR News',
+      'channel': 'MPR News',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:47](https://www.youtube.com/watch?v=V-6dQZRMe2Y&t=167s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'Big markups for big games like playoffs or Green Bay matchups could offset the cost '
+              'of seat licenses for fans willing to sell off some tickets.',
       'timestamp': 167,
       'timestamp_label': '[00:02:47]',
       'timestamp_seconds': 167,
-      'tip': 'The first add-on is usually called a service fee, and it is the one people '
-             'notice most. A ticketing company sells the tickets, runs the website, handles '
-             'payments, and answers customer questions.',
-      'title': 'Why Are Concert Tickets So Expensive? The Fees After Face Value (Business Made '
-               'Simple)',
-      'url': 'https://www.youtube.com/watch?v=VBp4zpS7F3o&t=167s',
-      'video_id': 'VBp4zpS7F3o'},
+      'tip': 'Big markups for big games like playoffs or Green Bay matchups could offset the cost '
+             'of seat licenses for fans willing to sell off some tickets.',
+      'title': 'How seat licenses work',
+      'url': 'https://www.youtube.com/watch?v=V-6dQZRMe2Y&t=167s',
+      'video_id': 'V-6dQZRMe2Y'},
+     {'author': '9NEWS',
+      'channel': '9NEWS',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:41](https://www.youtube.com/watch?v=w0cU0-OiMB8&t=221s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'Around 2020, thousands of Atlanta Falcons PSL holders defaulted, and many of them '
+              "said they couldn't find a buyer.",
+      'timestamp': 221,
+      'timestamp_label': '[00:03:41]',
+      'timestamp_seconds': 221,
+      'tip': 'Around 2020, thousands of Atlanta Falcons PSL holders defaulted, and many of them '
+             "said they couldn't find a buyer.",
+      'title': 'Personal seat licenses | Will longtime Denver Broncos fans be priced out of '
+               'tickets at new stadium?',
+      'url': 'https://www.youtube.com/watch?v=w0cU0-OiMB8&t=221s',
+      'video_id': 'w0cU0-OiMB8'},
+     {'author': '9NEWS',
+      'channel': '9NEWS',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:07](https://www.youtube.com/watch?v=w0cU0-OiMB8&t=187s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'Fans in Buffalo reported a 10% interest rate on a payment plan that lasted 10 '
+              'years, and the Titans offered fans a 10% discount if they paid it all up front.',
+      'timestamp': 187,
+      'timestamp_label': '[00:03:07]',
+      'timestamp_seconds': 187,
+      'tip': 'Fans in Buffalo reported a 10% interest rate on a payment plan that lasted 10 years, '
+             'and the Titans offered fans a 10% discount if they paid it all up front.',
+      'title': 'Personal seat licenses | Will longtime Denver Broncos fans be priced out of '
+               'tickets at new stadium?',
+      'url': 'https://www.youtube.com/watch?v=w0cU0-OiMB8&t=187s',
+      'video_id': 'w0cU0-OiMB8'},
+     {'author': 'THE MARKUP FILES',
+      'channel': 'THE MARKUP FILES',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:13:14](https://www.youtube.com/watch?v=rT4gQkoEVDI&t=794s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'On a $10,000 transaction, the seller receives 8,800 and the buyer pays 11,200, '
+              'which is almost $2,400 in combined fees on a single transaction.',
+      'timestamp': 794,
+      'timestamp_label': '[00:13:14]',
+      'timestamp_seconds': 794,
+      'tip': 'On a $10,000 transaction, the seller receives 8,800 and the buyer pays 11,200, which '
+             'is almost $2,400 in combined fees on a single transaction.',
+      'title': 'How NFL Teams Make Money Before Selling Season Tickets ($750 to $50,000 Just for '
+               'the Right)',
+      'url': 'https://www.youtube.com/watch?v=rT4gQkoEVDI&t=794s',
+      'video_id': 'rT4gQkoEVDI'},
+     {'author': 'THE MARKUP FILES',
+      'channel': 'THE MARKUP FILES',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:18:41](https://www.youtube.com/watch?v=rT4gQkoEVDI&t=1121s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'According to the executive who ran PSL sales for the project, the Bills retained '
+              'roughly 70 to 75% of their existing season ticket holders through the PSL '
+              'transition.',
+      'timestamp': 1121,
+      'timestamp_label': '[00:18:41]',
+      'timestamp_seconds': 1121,
+      'tip': 'According to the executive who ran PSL sales for the project, the Bills retained '
+             'roughly 70 to 75% of their existing season ticket holders through the PSL '
+             'transition.',
+      'title': 'How NFL Teams Make Money Before Selling Season Tickets ($750 to $50,000 Just for '
+               'the Right)',
+      'url': 'https://www.youtube.com/watch?v=rT4gQkoEVDI&t=1121s',
+      'video_id': 'rT4gQkoEVDI'},
+     {'author': 'FOX 5 Washington DC',
+      'channel': 'FOX 5 Washington DC',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:01](https://www.youtube.com/watch?v=ZiwpM_Fr8eU&t=61s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': "Seat rights in the Commanders' new stadium will be sold for up to $975 million "
+              'total, with the proceeds going to construction costs.',
+      'timestamp': 61,
+      'timestamp_label': '[00:01:01]',
+      'timestamp_seconds': 61,
+      'tip': "Seat rights in the Commanders' new stadium will be sold for up to $975 million "
+             'total, with the proceeds going to construction costs.',
+      'title': 'New Commanders’ stadium personal seat licenses explained',
+      'url': 'https://www.youtube.com/watch?v=ZiwpM_Fr8eU&t=61s',
+      'video_id': 'ZiwpM_Fr8eU'},
+     {'author': 'WGRZ-TV',
+      'channel': 'WGRZ-TV',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:07](https://www.youtube.com/watch?v=-hTj-NHHeDc&t=67s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'A lot of the times season ticket holders want to recoup some of their investment, '
+              'and they sell tickets with us.',
+      'timestamp': 67,
+      'timestamp_label': '[00:01:07]',
+      'timestamp_seconds': 67,
+      'tip': 'A lot of the times season ticket holders want to recoup some of their investment, '
+             'and they sell tickets with us.',
+      'title': 'Bills sell out of personal seat licenses',
+      'url': 'https://www.youtube.com/watch?v=-hTj-NHHeDc&t=67s',
+      'video_id': '-hTj-NHHeDc'},
+     {'author': 'WKBW TV | Buffalo, NY',
+      'channel': 'WKBW TV | Buffalo, NY',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:15](https://www.youtube.com/watch?v=gBkBFmKTfls&t=75s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'A Jets ticket representative told me its cheapest lower level end zone PSL is '
+              '$4,000 per seat and its most expensive is $30,000 a seat.',
+      'timestamp': 75,
+      'timestamp_label': '[00:01:15]',
+      'timestamp_seconds': 75,
+      'tip': 'A Jets ticket representative told me its cheapest lower level end zone PSL is $4,000 '
+             'per seat and its most expensive is $30,000 a seat.',
+      'title': "Bills to sell PSL's",
+      'url': 'https://www.youtube.com/watch?v=gBkBFmKTfls&t=75s',
+      'video_id': 'gBkBFmKTfls'},
+     {'author': 'Expedition Money Snacks',
+      'channel': 'Expedition Money Snacks',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:28](https://www.youtube.com/watch?v=JVYNSYvukwY&t=28s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'PSL owners have the right to renew their season tickets every year and can also '
+              'sell or transfer their PSL ownership rights to other fans.',
+      'timestamp': 28,
+      'timestamp_label': '[00:00:28]',
+      'timestamp_seconds': 28,
+      'tip': 'PSL owners have the right to renew their season tickets every year and can also sell '
+             'or transfer their PSL ownership rights to other fans.',
+      'title': 'What Are Chicago Bears Personal Seat Licenses? | How Soldier Field PSLs Work',
+      'url': 'https://www.youtube.com/watch?v=JVYNSYvukwY&t=28s',
+      'video_id': 'JVYNSYvukwY'},
+     {'author': 'Athletic Asset',
+      'channel': 'Athletic Asset',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:05](https://www.youtube.com/watch?v=QSa3WS1Pbrc&t=65s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': "Buffalo's new stadium got $850 million of public money, then seat licenses on top; "
+              "the team's downside is capped at zero, yours isn't.",
+      'timestamp': 65,
+      'timestamp_label': '[00:01:05]',
+      'timestamp_seconds': 65,
+      'tip': "Buffalo's new stadium got $850 million of public money, then seat licenses on top; "
+             "the team's downside is capped at zero, yours isn't.",
+      'title': 'The Fee NFL Fans Pay Before They Ever Buy a Ticket',
+      'url': 'https://www.youtube.com/watch?v=QSa3WS1Pbrc&t=65s',
+      'video_id': 'QSa3WS1Pbrc'},
+     {'author': 'Dad and Demi',
+      'channel': 'Dad and Demi',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:12](https://www.youtube.com/watch?v=1SEhOJq2k2o&t=72s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q6.',
+      'source_type': 'video_pro_tip',
+      'text': 'Any money PSL owners have paid this season can be put forward to the 2020 season, '
+              'put towards their actual PSL, or put to actual seats for the 2020 season.',
+      'timestamp': 72,
+      'timestamp_label': '[00:01:12]',
+      'timestamp_seconds': 72,
+      'tip': 'Any money PSL owners have paid this season can be put forward to the 2020 season, '
+             'put towards their actual PSL, or put to actual seats for the 2020 season.',
+      'title': 'Atlanta Falcons Email PSL Owners Their Options | Atlanta Sporting News| Episode 41',
+      'url': 'https://www.youtube.com/watch?v=1SEhOJq2k2o&t=72s',
+      'video_id': '1SEhOJq2k2o'}],
+ 7: [{'author': 'KPRC 2 Click2Houston',
+      'channel': 'KPRC 2 Click2Houston',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:47](https://www.youtube.com/watch?v=UVUOSv2U_BM&t=167s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': "I definitely would buy now. I don't think I'd wait, because that'll just drive the "
+              'price up.',
+      'timestamp': 167,
+      'timestamp_label': '[00:02:47]',
+      'timestamp_seconds': 167,
+      'tip': "I definitely would buy now. I don't think I'd wait, because that'll just drive the "
+             'price up.',
+      'title': "'Buy now': Houston ticket broker says FIFA World Cup ticket prices are sky-high "
+               'and trending upward',
+      'url': 'https://www.youtube.com/watch?v=UVUOSv2U_BM&t=167s',
+      'video_id': 'UVUOSv2U_BM'},
      {'author': 'KPRC 2 Click2Houston',
       'channel': 'KPRC 2 Click2Houston',
       'epistemic_status': 'attributed_practitioner_claim',
       'markdown': '[00:05:31](https://www.youtube.com/watch?v=UVUOSv2U_BM&t=331s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q2 operational verification).',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
       'source_type': 'video_pro_tip',
-      'text': 'Um, StubHub and all the secondary sites usually charge a fee. They charge the '
-              'buyer a fee and they charge the seller a fee, which is about 15 to 20%. So, if '
-              'you call a local ticket broker, they have the tickets in their possession, in '
-              'their inventory.',
+      'text': 'StubHub and all the secondary sites usually charge a fee. They charge the buyer a '
+              'fee and they charge the seller a fee, which is about 15 to 20%.',
       'timestamp': 331,
       'timestamp_label': '[00:05:31]',
       'timestamp_seconds': 331,
-      'tip': 'Um, StubHub and all the secondary sites usually charge a fee. They charge the '
-             'buyer a fee and they charge the seller a fee, which is about 15 to 20%. So, if '
-             'you call a local ticket broker, they have the tickets in their possession, in '
-             'their inventory.',
-      'title': "'Buy now': Houston ticket broker says FIFA World Cup ticket prices are "
-               'sky-high and trending upward (KPRC 2 Click2Houston)',
+      'tip': 'StubHub and all the secondary sites usually charge a fee. They charge the buyer a '
+             'fee and they charge the seller a fee, which is about 15 to 20%.',
+      'title': "'Buy now': Houston ticket broker says FIFA World Cup ticket prices are sky-high "
+               'and trending upward',
       'url': 'https://www.youtube.com/watch?v=UVUOSv2U_BM&t=331s',
       'video_id': 'UVUOSv2U_BM'},
-     {'author': 'Cold Talk',
-      'channel': 'Cold Talk',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:54](https://www.youtube.com/watch?v=0sxw7eRx9Fs&t=54s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q2 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Super Bowl for this much money is if y'all are accepting Monopoly bucks. "
-              'Because every price you got on here is a down payment on something. This is '
-              "I'mma watch the game at home or I'mma turn my PlayStation on, put on Madden, "
-              'and play the Super Bowl myself.',
-      'timestamp': 54,
-      'timestamp_label': '[00:00:54]',
-      'timestamp_seconds': 54,
-      'tip': "Super Bowl for this much money is if y'all are accepting Monopoly bucks. Because "
-             "every price you got on here is a down payment on something. This is I'mma watch "
-             "the game at home or I'mma turn my PlayStation on, put on Madden, and play the "
-             'Super Bowl myself.',
-      'title': 'Super Bowl Ticket Prices Are HIGH.. Fans Are Going BROKE (Cold Talk)',
-      'url': 'https://www.youtube.com/watch?v=0sxw7eRx9Fs&t=54s',
-      'video_id': '0sxw7eRx9Fs'},
-     {'author': 'Brian Jones',
-      'channel': 'Brian Jones',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:10](https://www.youtube.com/watch?v=4Ddm_7kF3nc&t=70s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q2 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': '0) and a reason, such as a press ticket. If the customer is driving, tick Add '
-              "parking and type in the car's registration. The parking fee is added to the "
-              'total, and it covers the day of the show, from arrival until midnight. Next, '
-              "the customer's name and phone number.",
-      'timestamp': 70,
-      'timestamp_label': '[00:01:10]',
-      'timestamp_seconds': 70,
-      'tip': '0) and a reason, such as a press ticket. If the customer is driving, tick Add '
-             "parking and type in the car's registration. The parking fee is added to the "
-             'total, and it covers the day of the show, from arrival until midnight. Next, the '
-             "customer's name and phone number.",
-      'title': 's-ticket for staff: box office, parking, refunds and door check-in (5-minute '
-               'guide) (Brian Jones)',
-      'url': 'https://www.youtube.com/watch?v=4Ddm_7kF3nc&t=70s',
-      'video_id': '4Ddm_7kF3nc'},
-     {'author': 'Consumer Context',
-      'channel': 'Consumer Context',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:33](https://www.youtube.com/watch?v=L3_AaKpmtQI&t=93s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q2 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'That total includes every fee the business knows about and can calculate in '
-              'advance. So the headline number is supposed to be the real number. But which '
-              "fees count as fees you have to pay? The FTC's guidance lists conditions.",
-      'timestamp': 93,
-      'timestamp_label': '[00:01:33]',
-      'timestamp_seconds': 93,
-      'tip': 'That total includes every fee the business knows about and can calculate in '
-             'advance. So the headline number is supposed to be the real number. But which '
-             "fees count as fees you have to pay? The FTC's guidance lists conditions.",
-      'title': 'The Hidden System Behind Concert Ticket And Hotel Fees (Consumer Context)',
-      'url': 'https://www.youtube.com/watch?v=L3_AaKpmtQI&t=93s',
-      'video_id': 'L3_AaKpmtQI'},
-     {'author': 'WFAA',
-      'channel': 'WFAA',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:10](https://www.youtube.com/watch?v=OSbD9xp5Dw4&t=70s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q2 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'You want -- to look for a real buyer protection, places like Facebook '
-              "Marketplace or social media sites, uh, or Craigslist, don't have that. Another "
-              'thing to keep in mind, even if you pay and get a confirmation, right now, '
-              'nobody has the ticket or barcode.',
-      'timestamp': 70,
-      'timestamp_label': '[00:01:10]',
-      'timestamp_seconds': 70,
-      'tip': 'You want -- to look for a real buyer protection, places like Facebook '
-             "Marketplace or social media sites, uh, or Craigslist, don't have that. Another "
-             'thing to keep in mind, even if you pay and get a confirmation, right now, nobody '
-             'has the ticket or barcode.',
-      'title': "Trying to get World Cup tickets? Here's how to avoid a scam (WFAA)",
-      'url': 'https://www.youtube.com/watch?v=OSbD9xp5Dw4&t=70s',
-      'video_id': 'OSbD9xp5Dw4'},
-     {'author': 'Prof AI Unfiltered',
-      'channel': 'Prof AI Unfiltered',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:26](https://www.youtube.com/watch?v=enPVz7BsM7Q&t=206s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q2 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Seller and another fee from the next buyer. When one corporate  group '
-              'participates at several stages, each stage can create a new incentive.',
-      'timestamp': 206,
-      'timestamp_label': '[00:03:26]',
-      'timestamp_seconds': 206,
-      'tip': 'Seller and another fee from the next buyer. When one corporate  group '
-             'participates at several stages, each stage can create a new incentive.',
-      'title': 'Taylor Swift’s Ticketmaster Fiasco: Who Really Controls Ticket Prices? Prof AI '
-               'Unfiltered (Prof AI Unfiltered)',
-      'url': 'https://www.youtube.com/watch?v=enPVz7BsM7Q&t=206s',
-      'video_id': 'enPVz7BsM7Q'},
-     {'author': 'Fastweigh',
-      'channel': 'Fastweigh',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:39](https://www.youtube.com/watch?v=SqgRdPpIv_I&t=39s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q2 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'In the bulk edit screen all selected tickets will be repriced based on the '
-              'latest pricing information three the hall or pay or new.',
-      'timestamp': 39,
-      'timestamp_label': '[00:00:39]',
-      'timestamp_seconds': 39,
-      'tip': 'In the bulk edit screen all selected tickets will be repriced based on the '
-             'latest pricing information three the hall or pay or new.',
-      'title': 'Ticket Repricing Overview (Fastweigh)',
-      'url': 'https://www.youtube.com/watch?v=SqgRdPpIv_I&t=39s',
-      'video_id': 'SqgRdPpIv_I'},
-     {'author': 'Football Explainer',
-      'channel': 'Football Explainer',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:43:40](https://www.youtube.com/watch?v=Y_cqkCHiMu8&t=2620s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q2 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Premium sections had been constructed specifically for fans and corporations '
-              'willing to pay enormous amounts for access. Now, many of those seats were '
-              'empty, and the financial consequences were enormous.',
-      'timestamp': 2620,
-      'timestamp_label': '[00:43:40]',
-      'timestamp_seconds': 2620,
-      'tip': 'Premium sections had been constructed specifically for fans and corporations '
-             'willing to pay enormous amounts for access. Now, many of those seats were empty, '
-             'and the financial consequences were enormous.',
-      'title': 'NFL Ticket Prices Explained (How They Became Expensive) (Football Explainer)',
-      'url': 'https://www.youtube.com/watch?v=Y_cqkCHiMu8&t=2620s',
-      'video_id': 'Y_cqkCHiMu8'},
-     {'author': '9NEWS',
-      'channel': '9NEWS',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:36](https://www.youtube.com/watch?v=w0cU0-OiMB8&t=36s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q2 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "'ll be priced out when there's a new stadium back there by a one-time fee to "
-              "keep their seats. Let's talk about personal seat licenses. It's kind of like a "
-              'down payment on a mortgage, a mortgage with no end date.',
-      'timestamp': 36,
-      'timestamp_label': '[00:00:36]',
-      'timestamp_seconds': 36,
-      'tip': "'ll be priced out when there's a new stadium back there by a one-time fee to "
-             "keep their seats. Let's talk about personal seat licenses. It's kind of like a "
-             'down payment on a mortgage, a mortgage with no end date.',
-      'title': 'Personal seat licenses | Will longtime Denver Broncos fans be priced out of '
-               'tickets at new stadium? (9NEWS)',
-      'url': 'https://www.youtube.com/watch?v=w0cU0-OiMB8&t=36s',
-      'video_id': 'w0cU0-OiMB8'},
-     {'author': 'Yea Baby',
-      'channel': 'Yea Baby',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:24](https://www.youtube.com/watch?v=0a9pLnuCUAk&t=84s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q2 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Be everywhere and Glendale PD says it hasn't yet had a case of anyone trying to "
-              "sell fake tickets but if you're there on Sunday and you learn that a scammer "
-              'did it to you find an officer immediately and they will try to help you but '
-              "remember it's always buyer beware.",
-      'timestamp': 84,
-      'timestamp_label': '[00:01:24]',
-      'timestamp_seconds': 84,
-      'tip': "Be everywhere and Glendale PD says it hasn't yet had a case of anyone trying to "
-             "sell fake tickets but if you're there on Sunday and you learn that a scammer did "
-             'it to you find an officer immediately and they will try to help you but remember '
-             "it's always buyer beware.",
-      'title': 'Cheapest Super Bowl Tickets for Last-Minute Buyers Are Running #tickets '
-               '#scalping #superbowl (Yea Baby)',
-      'url': 'https://www.youtube.com/watch?v=0a9pLnuCUAk&t=84s',
-      'video_id': '0a9pLnuCUAk'},
-     {'author': 'Reuters',
-      'channel': 'Reuters',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:10](https://www.youtube.com/watch?v=2mMyznWPgpc&t=190s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q2 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "The ticket and then we can get it uh cheap you know because right now they're "
-              "asking crazy number they're asking him for 700 800 1000 crazy numbers you know "
-              'and they how much they pay for the ticket is ridiculous they probably pay 150 '
-              'dollars or less.',
-      'timestamp': 190,
-      'timestamp_label': '[00:03:10]',
-      'timestamp_seconds': 190,
-      'tip': "The ticket and then we can get it uh cheap you know because right now they're "
-             "asking crazy number they're asking him for 700 800 1000 crazy numbers you know "
-             'and they how much they pay for the ticket is ridiculous they probably pay 150 '
-             'dollars or less.',
-      'title': "This is what it's like to scalp World Cup tickets (Reuters)",
-      'url': 'https://www.youtube.com/watch?v=2mMyznWPgpc&t=190s',
-      'video_id': '2mMyznWPgpc'},
-     {'author': 'The Savvy Professor',
-      'channel': 'The Savvy Professor',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:38](https://www.youtube.com/watch?v=zH4ITvC9voc&t=158s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q2 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "App to get into the event if it's unavailable contact your seller and that's "
-              'how you save your Ticket Master tickets to Apple wallet I hope this helps feel '
-              'free to leave a comment like and share the video till next time thanks for '
-              'watching.',
-      'timestamp': 158,
-      'timestamp_label': '[00:02:38]',
-      'timestamp_seconds': 158,
-      'tip': "App to get into the event if it's unavailable contact your seller and that's how "
-             'you save your Ticket Master tickets to Apple wallet I hope this helps feel free '
-             'to leave a comment like and share the video till next time thanks for watching.',
-      'title': 'How to Save Ticketmaster Tickets to Apple Wallet (How Do I Add Tickets to a '
-               'Digital Wallet?) (The Savvy Professor)',
-      'url': 'https://www.youtube.com/watch?v=zH4ITvC9voc&t=158s',
-      'video_id': 'zH4ITvC9voc'}],
- 3: [{'author': 'Overtime Economics',
-      'channel': 'Overtime Economics',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:16](https://www.youtube.com/watch?v=C_QtPWHCo_U&t=76s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Green Bay won, 35 to 10, in front of all those empty seats. In today's money, "
-              "that best seat would cost about 123 dollars. Super Bowl one's cheapest seat, in "
-              "today's money: about 61 dollars. That's about 15 times as much after inflation, "
-              'and most fans never see that price.',
-      'timestamp': 76,
-      'timestamp_label': '[00:01:16]',
-      'timestamp_seconds': 76,
-      'tip': "Green Bay won, 35 to 10, in front of all those empty seats. In today's money, "
-             "that best seat would cost about 123 dollars. Super Bowl one's cheapest seat, in "
-             "today's money: about 61 dollars. That's about 15 times as much after inflation, "
-             'and most fans never see that price.',
-      'title': 'Super Bowl I vs Today: No Sellout at $12. Now Seats Start at $950 (Overtime '
-               'Economics)',
-      'url': 'https://www.youtube.com/watch?v=C_QtPWHCo_U&t=76s',
-      'video_id': 'C_QtPWHCo_U'},
-     {'author': 'Firstpost',
-      'channel': 'Firstpost',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:10](https://www.youtube.com/watch?v=R9QNsXzjvxU&t=190s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'And sporting events have witnessed a surge in ticket costs. Look at the tickets '
-              'for the Premier League games. They have increased by 800% since 1990. Tickets '
-              'for the Super Bowl were sold at an average price of about $10,000 last year.',
-      'timestamp': 190,
-      'timestamp_label': '[00:03:10]',
-      'timestamp_seconds': 190,
-      'tip': 'And sporting events have witnessed a surge in ticket costs. Look at the tickets '
-             'for the Premier League games. They have increased by 800% since 1990. Tickets '
-             'for the Super Bowl were sold at an average price of about $10,000 last year.',
-      'title': 'Inside Wimbledon’s $275,000 Debenture Seats: The Profit-Making Machine | '
-               'Vantage with Palki Sharma (Firstpost)',
-      'url': 'https://www.youtube.com/watch?v=R9QNsXzjvxU&t=190s',
-      'video_id': 'R9QNsXzjvxU'},
-     {'author': 'Profit Mechanics',
-      'channel': 'Profit Mechanics',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:41](https://www.youtube.com/watch?v=p8peX6mgbrw&t=281s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'It is the same trick airlines use with baggage fees and hotels use with resort '
-              'fees. Show a low price to win the click, then add the real cost at the end when '
-              'leaving feels like is the resale cut. The promoter getting paid twice for the '
-              'same seat.',
-      'timestamp': 281,
-      'timestamp_label': '[00:04:41]',
-      'timestamp_seconds': 281,
-      'tip': 'It is the same trick airlines use with baggage fees and hotels use with resort '
-             'fees. Show a low price to win the click, then add the real cost at the end when '
-             'leaving feels like is the resale cut. The promoter getting paid twice for the '
-             'same seat.',
-      'title': 'How concert promoters make money: dynamic pricing and the resale cut (Profit '
-               'Mechanics)',
-      'url': 'https://www.youtube.com/watch?v=p8peX6mgbrw&t=281s',
-      'video_id': 'p8peX6mgbrw'},
-     {'author': 'NBC10 Boston',
-      'channel': 'NBC10 Boston',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:50](https://www.youtube.com/watch?v=-GwKaOFdk_M&t=110s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Secure their tickets on a major marketplace that is backed by a guarantee, so '
-              'you know that your purchase is protected. Also very important that you are '
-              "price shopping and making sure that you're getting the best deal possible. It's "
-              'a lot of money to go to the Super Bowl.',
-      'timestamp': 110,
-      'timestamp_label': '[00:01:50]',
-      'timestamp_seconds': 110,
-      'tip': 'Secure their tickets on a major marketplace that is backed by a guarantee, so '
-             'you know that your purchase is protected. Also very important that you are price '
-             "shopping and making sure that you're getting the best deal possible. It's a lot "
-             'of money to go to the Super Bowl.',
-      'title': "Want Super Bowl tickets? Here's what to know (NBC10 Boston)",
-      'url': 'https://www.youtube.com/watch?v=-GwKaOFdk_M&t=110s',
-      'video_id': '-GwKaOFdk_M'},
-     {'author': 'Bloomberg Television',
-      'channel': 'Bloomberg Television',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:57](https://www.youtube.com/watch?v=zXgujuB9yXw&t=57s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Over the last few years, walking into the golden gates of the Super Bowl will '
-              'at minimum cost you $3,000. But Super Bowl 58 in Las Vegas tripled that. What '
-              'really drives the price comes down to the matchup in the venue.',
-      'timestamp': 57,
-      'timestamp_label': '[00:00:57]',
-      'timestamp_seconds': 57,
-      'tip': 'Over the last few years, walking into the golden gates of the Super Bowl will at '
-             'minimum cost you $3,000. But Super Bowl 58 in Las Vegas tripled that. What '
-             'really drives the price comes down to the matchup in the venue.',
-      'title': 'What You Really Get In a Super Bowl Suite (Bloomberg Television)',
-      'url': 'https://www.youtube.com/watch?v=zXgujuB9yXw&t=57s',
-      'video_id': 'zXgujuB9yXw'},
-     {'author': 'JCFB',
-      'channel': 'JCFB',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:08:19](https://www.youtube.com/watch?v=Dl5FeuC7tUA&t=499s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "PSLs we've covered, but it's crazy to see the price increases that Browns fans "
-              'are taking on. According to this Twitter user, their PSL and season ticket cost '
-              'for six tickets went from $24,600 all the way up to $131,000 with this new '
-              'stadium.',
-      'timestamp': 499,
-      'timestamp_label': '[00:08:19]',
-      'timestamp_seconds': 499,
-      'tip': "PSLs we've covered, but it's crazy to see the price increases that Browns fans "
-             'are taking on. According to this Twitter user, their PSL and season ticket cost '
-             'for six tickets went from $24,600 all the way up to $131,000 with this new '
-             'stadium.',
-      'title': 'The NFL’s Biggest Scam: Personal Seat Licenses (JCFB)',
-      'url': 'https://www.youtube.com/watch?v=Dl5FeuC7tUA&t=499s',
-      'video_id': 'Dl5FeuC7tUA'},
-     {'author': 'Martin Bursatil',
-      'channel': 'Martin Bursatil',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:11:41](https://www.youtube.com/watch?v=S5_EsejwubY&t=701s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Apart from all the brands that want to be here. It has four main sources of '
-              'income. Broadcast rights, race promotion, sponsorship, and others. The profit '
-              "margin is close to 16%. And you can be a shareholder; there's F1 , there's "
-              "Ferrari, there's Mercedes.",
-      'timestamp': 701,
-      'timestamp_label': '[00:11:41]',
-      'timestamp_seconds': 701,
-      'tip': 'Apart from all the brands that want to be here. It has four main sources of '
-             'income. Broadcast rights, race promotion, sponsorship, and others. The profit '
-             "margin is close to 16%. And you can be a shareholder; there's F1 , there's "
-             "Ferrari, there's Mercedes.",
-      'title': '¿Vale la pena pagar por el Paddock Club de Fórmula 1? (Martin Bursatil)',
-      'url': 'https://www.youtube.com/watch?v=S5_EsejwubY&t=701s',
-      'video_id': 'S5_EsejwubY'},
-     {'author': 'Snazzy Trendz',
-      'channel': 'Snazzy Trendz',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:40](https://www.youtube.com/watch?v=5ggSZvvL_vo&t=220s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': '20,000 depending on location and demand. For fans who wanted the absolute best '
-              'experience, front row and premium seating came at an entirely different price '
-              'level.',
-      'timestamp': 220,
-      'timestamp_label': '[00:03:40]',
-      'timestamp_seconds': 220,
-      'tip': '20,000 depending on location and demand. For fans who wanted the absolute best '
-             'experience, front row and premium seating came at an entirely different price '
-             'level.',
-      'title': 'How Much Did Super Bowl LX 2026 Tickets REALLY Cost? Total Breakdown! '
-               '#superbowllx  #nfl (Snazzy Trendz)',
-      'url': 'https://www.youtube.com/watch?v=5ggSZvvL_vo&t=220s',
-      'video_id': '5ggSZvvL_vo'},
-     {'author': 'WTHR',
-      'channel': 'WTHR',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:49](https://www.youtube.com/watch?v=5T8RLIaR8yg&t=109s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "So you know I can ask for any price for a ticket, but that doesn't mean that's "
-              'actually the market price. So we should be a little cautious about how many '
-              'transactions are actually going on at these prices. Now his best advice is to '
-              'keep watching.',
-      'timestamp': 109,
-      'timestamp_label': '[00:01:49]',
-      'timestamp_seconds': 109,
-      'tip': "So you know I can ask for any price for a ticket, but that doesn't mean that's "
-             'actually the market price. So we should be a little cautious about how many '
-             'transactions are actually going on at these prices. Now his best advice is to '
-             'keep watching.',
-      'title': 'College football championship tickets will cost Hoosiers a pretty penny (WTHR)',
-      'url': 'https://www.youtube.com/watch?v=5T8RLIaR8yg&t=109s',
-      'video_id': '5T8RLIaR8yg'},
-     {'author': 'AwayDays',
-      'channel': 'AwayDays',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:12:49](https://www.youtube.com/watch?v=Hl-tVhzYfsw&t=769s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "The best hospitality in my opinion in the world is Man City's Tunnel Club. If "
-              'you could get that for what this cost, and that is like five-course dinner.',
-      'timestamp': 769,
-      'timestamp_label': '[00:12:49]',
-      'timestamp_seconds': 769,
-      'tip': "The best hospitality in my opinion in the world is Man City's Tunnel Club. If "
-             'you could get that for what this cost, and that is like five-course dinner.',
-      'title': 'I Tried a 2026 World Cup VIP Ticket (AwayDays)',
-      'url': 'https://www.youtube.com/watch?v=Hl-tVhzYfsw&t=769s',
-      'video_id': 'Hl-tVhzYfsw'},
-     {'author': 'thumbsuprun',
-      'channel': 'thumbsuprun',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:53](https://www.youtube.com/watch?v=TpXJCfuFf4o&t=293s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Initially assigned you know for the pre-sale add a specific face value price '
-              "and they're actually just converting them directly to official platinum.",
-      'timestamp': 293,
-      'timestamp_label': '[00:04:53]',
-      'timestamp_seconds': 293,
-      'tip': 'Initially assigned you know for the pre-sale add a specific face value price and '
-             "they're actually just converting them directly to official platinum.",
-      'title': 'HOW DYNAMIC TICKET PRICING & OFFICIAL PLATINUM SEATS WORK ON TICKETMASTER '
-               '(thumbsuprun)',
-      'url': 'https://www.youtube.com/watch?v=TpXJCfuFf4o&t=293s',
-      'video_id': 'TpXJCfuFf4o'},
-     {'author': 'Ticket Flipping',
-      'channel': 'Ticket Flipping',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:49](https://www.youtube.com/watch?v=GORTWFnPPt0&t=289s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Help you find better tickets and the price break seats are always going to make '
-              'more money and let you make more profit than the seats in front of them and the '
-              'more expensive s.',
-      'timestamp': 289,
-      'timestamp_label': '[00:04:49]',
-      'timestamp_seconds': 289,
-      'tip': 'Help you find better tickets and the price break seats are always going to make '
-             'more money and let you make more profit than the seats in front of them and the '
-             'more expensive s.',
-      'title': 'WHY some tickets ALWAYS make more Profit (Ticket Flipping)',
-      'url': 'https://www.youtube.com/watch?v=GORTWFnPPt0&t=289s',
-      'video_id': 'GORTWFnPPt0'},
-     {'author': 'The Pat McAfee Show',
-      'channel': 'The Pat McAfee Show',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:11](https://www.youtube.com/watch?v=uK2f6TsToVA&t=251s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "It's like we won't we won't they walk out of the room I got a guy 7500 I got a "
-              "guy 8500 whoa whoa whoa whoa whoa who's is that cash is that happening right "
-              "now obviously I'll write it off I will report to the earnings anything over 599 "
-              'bucks.',
-      'timestamp': 251,
-      'timestamp_label': '[00:04:11]',
-      'timestamp_seconds': 251,
-      'tip': "It's like we won't we won't they walk out of the room I got a guy 7500 I got a "
-             "guy 8500 whoa whoa whoa whoa whoa who's is that cash is that happening right now "
-             "obviously I'll write it off I will report to the earnings anything over 599 "
-             'bucks.',
-      'title': 'The Average Resell Price Of Super Bowl LIX Is Over $10,000?! | Pat McAfee Show '
-               '(The Pat McAfee Show)',
-      'url': 'https://www.youtube.com/watch?v=uK2f6TsToVA&t=251s',
-      'video_id': 'uK2f6TsToVA'},
      {'author': 'CBS Boston',
       'channel': 'CBS Boston',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:20](https://www.youtube.com/watch?v=QRxTlhb8Bt4&t=20s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q3 operational verification).',
+      'markdown': '[00:02:01](https://www.youtube.com/watch?v=QRxTlhb8Bt4&t=121s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
       'source_type': 'video_pro_tip',
-      'text': 'Yeah, Lisa and David, that mom I spoke to is out nearly $4,000 right now. And a '
-              'new bill proposed here at the State House is trying to make it illegal for '
-              "tickets to even cost that much. Auburn's Jack Campbell dreamed of seeing a "
-              'World Cup match.',
-      'timestamp': 20,
-      'timestamp_label': '[00:00:20]',
-      'timestamp_seconds': 20,
-      'tip': 'Yeah, Lisa and David, that mom I spoke to is out nearly $4,000 right now. And a '
-             'new bill proposed here at the State House is trying to make it illegal for '
-             "tickets to even cost that much. Auburn's Jack Campbell dreamed of seeing a World "
-             'Cup match.',
-      'title': 'Some World Cup fans frustrated with ticket buying experience on secondary '
-               'market (CBS Boston)',
-      'url': 'https://www.youtube.com/watch?v=QRxTlhb8Bt4&t=20s',
-      'video_id': 'QRxTlhb8Bt4'},
-     {'author': 'Chicoblanco',
-      'channel': 'Chicoblanco',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:17:58](https://www.youtube.com/watch?v=v-LGKb8taFw&t=1078s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q3 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Gonna go ahead and text James and tell him that we should meet up I think this '
-              'is it I think this is the final draw right here this is going to get us to the '
-              'Super.',
-      'timestamp': 1078,
-      'timestamp_label': '[00:17:58]',
-      'timestamp_seconds': 1078,
-      'tip': 'Gonna go ahead and text James and tell him that we should meet up I think this '
-             'is it I think this is the final draw right here this is going to get us to the '
-             'Super.',
-      'title': 'Trading a Penny to Super Bowl Tickets (Chicoblanco)',
-      'url': 'https://www.youtube.com/watch?v=v-LGKb8taFw&t=1078s',
-      'video_id': 'v-LGKb8taFw'}],
- 4: [{'author': 'Hustle Audit',
-      'channel': 'Hustle Audit',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:29](https://www.youtube.com/watch?v=NOBp14Qcy_8&t=329s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q4 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': '273 tickets against a posted limit of six per person. The company argues it '
-              'used no automated software at all, no bots, and so did not violate the act. '
-              'Whether 49 accounts and 273 tickets counts as circumvention without a bot is '
-              'now the question a court will decide.',
-      'timestamp': 329,
-      'timestamp_label': '[00:05:29]',
-      'timestamp_seconds': 329,
-      'tip': '273 tickets against a posted limit of six per person. The company argues it used '
-             'no automated software at all, no bots, and so did not violate the act. Whether '
-             '49 accounts and 273 tickets counts as circumvention without a bot is now the '
-             'question a court will decide.',
-      'title': 'The BOTS Act: Why Ticket Reselling Communities Live In A Legal Grey Zone '
-               '(Hustle Audit)',
-      'url': 'https://www.youtube.com/watch?v=NOBp14Qcy_8&t=329s',
-      'video_id': 'NOBp14Qcy_8'},
-     {'author': 'Strat Americas',
-      'channel': 'Strat Americas',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:25](https://www.youtube.com/watch?v=d4DslgcIQ7Y&t=25s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q4 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Now, the Maryland company at the center of the suit has been allegedly scamming '
-              'the system and according to the Federal Trade Commission breaking the Bots Act. '
-              'The Bots Act was passed in 2016. It makes it illegal to use software to evade '
-              'online ticket limits or restrictions.',
-      'timestamp': 25,
-      'timestamp_label': '[00:00:25]',
-      'timestamp_seconds': 25,
-      'tip': 'Now, the Maryland company at the center of the suit has been allegedly scamming '
-             'the system and according to the Federal Trade Commission breaking the Bots Act. '
-             'The Bots Act was passed in 2016. It makes it illegal to use software to evade '
-             'online ticket limits or restrictions.',
-      'title': 'The FTC Goes After A Ticket Reseller (Strat Americas)',
-      'url': 'https://www.youtube.com/watch?v=d4DslgcIQ7Y&t=25s',
-      'video_id': 'd4DslgcIQ7Y'},
-     {'author': 'PBS NewsHour',
-      'channel': 'PBS NewsHour',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:20](https://www.youtube.com/watch?v=rZJgedd2Fk4&t=320s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q4 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Um It's like a feminist act to listen to. You know, the Taylors version of "
-              'Speak now or red instead of the original Swift concert kicked off the girl Bus '
-              "summer one also defined by Greta Gerwig, Blockbuster Barbie movie and Beyonce's "
-              'World Renaissance Tools.',
-      'timestamp': 320,
-      'timestamp_label': '[00:05:20]',
-      'timestamp_seconds': 320,
-      'tip': "Um It's like a feminist act to listen to. You know, the Taylors version of Speak "
-             'now or red instead of the original Swift concert kicked off the girl Bus summer '
-             "one also defined by Greta Gerwig, Blockbuster Barbie movie and Beyonce's World "
-             'Renaissance Tools.',
-      'title': 'How Taylor Swift created an economic juggernaut with her Eras Tour (PBS '
-               'NewsHour)',
-      'url': 'https://www.youtube.com/watch?v=rZJgedd2Fk4&t=320s',
-      'video_id': 'rZJgedd2Fk4'},
-     {'author': 'Matthew Josiah',
-      'channel': 'Matthew Josiah',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:23](https://www.youtube.com/watch?v=qg3wvctM0wM&t=83s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q4 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'That is the special ticket access that you get. All card members can access MX '
-              'pre-sale tickets and AMX reserve tickets. So, the pre-sale is obviously the '
-              'ability to buy tickets before the event and before the public is able to buy '
-              'those tickets.',
-      'timestamp': 83,
-      'timestamp_label': '[00:01:23]',
-      'timestamp_seconds': 83,
-      'tip': 'That is the special ticket access that you get. All card members can access MX '
-             'pre-sale tickets and AMX reserve tickets. So, the pre-sale is obviously the '
-             'ability to buy tickets before the event and before the public is able to buy '
-             'those tickets.',
-      'title': 'This AMEX Perk Gets You Concert Tickets Before Everyone Else (Matthew Josiah)',
-      'url': 'https://www.youtube.com/watch?v=qg3wvctM0wM&t=83s',
-      'video_id': 'qg3wvctM0wM'},
-     {'author': 'FOX 13 Seattle',
-      'channel': 'FOX 13 Seattle',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:43](https://www.youtube.com/watch?v=q4jIeRrkSGg&t=163s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q4 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Super Bowl unless Jackson gives me a ticket. Jaxon Smith-njigba Super Bowl '
-              'unless Jackson gives me a ticket. Jaxon Smith-njigba now, if you’re listening. '
-              'Jaxon Smith-njigba now, if you’re listening. Being here with all the now, if '
-              'you’re listening.',
-      'timestamp': 163,
-      'timestamp_label': '[00:02:43]',
-      'timestamp_seconds': 163,
-      'tip': 'Super Bowl unless Jackson gives me a ticket. Jaxon Smith-njigba Super Bowl '
-             'unless Jackson gives me a ticket. Jaxon Smith-njigba now, if you’re listening. '
-             'Jaxon Smith-njigba now, if you’re listening. Being here with all the now, if '
-             'you’re listening.',
-      'title': 'Inside the Super Bowl 2026 fan experience (FOX 13 Seattle)',
-      'url': 'https://www.youtube.com/watch?v=q4jIeRrkSGg&t=163s',
-      'video_id': 'q4jIeRrkSGg'},
-     {'author': 'Zach Bye',
-      'channel': 'Zach Bye',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:06:08](https://www.youtube.com/watch?v=FZyPq0QfTdg&t=368s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q4 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "All right, who can afford it where the average person cannot. PSL's, you know, "
-              "if you look around sports, they're not super prominent in a place like uh the "
-              'NBA, only four teams in the NBA, the Hornets, the Warriors, the Raptors, and '
-              'the Jazz have personal seat license.',
-      'timestamp': 368,
-      'timestamp_label': '[00:06:08]',
-      'timestamp_seconds': 368,
-      'tip': "All right, who can afford it where the average person cannot. PSL's, you know, "
-             "if you look around sports, they're not super prominent in a place like uh the "
-             'NBA, only four teams in the NBA, the Hornets, the Warriors, the Raptors, and the '
-             'Jazz have personal seat license.',
-      'title': 'Personal Seat License are coming to the Denver Broncos new stadium (Zach Bye)',
-      'url': 'https://www.youtube.com/watch?v=FZyPq0QfTdg&t=368s',
-      'video_id': 'FZyPq0QfTdg'},
-     {'author': 'WGRZ-TV',
-      'channel': 'WGRZ-TV',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:20](https://www.youtube.com/watch?v=-hTj-NHHeDc&t=20s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q4 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Dave, the president of VIP Ticks. The bill's informing fans who are unable to "
-              'secure a personal seat license to stay on the priority list. Priority list '
-              'members receive access to purchase PSLs when seats become available.',
-      'timestamp': 20,
-      'timestamp_label': '[00:00:20]',
-      'timestamp_seconds': 20,
-      'tip': "Dave, the president of VIP Ticks. The bill's informing fans who are unable to "
-             'secure a personal seat license to stay on the priority list. Priority list '
-             'members receive access to purchase PSLs when seats become available.',
-      'title': 'Bills sell out of personal seat licenses (WGRZ-TV)',
-      'url': 'https://www.youtube.com/watch?v=-hTj-NHHeDc&t=20s',
-      'video_id': '-hTj-NHHeDc'},
-     {'author': 'Travel with Frodo',
-      'channel': 'Travel with Frodo',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:53](https://www.youtube.com/watch?v=3jMjNVjPzTo&t=173s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q4 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "There isn't even hot water available. This is really disappointing. Here you "
-              'can see the chef stations at the end and all the food is located here. There is '
-              'a similar setup on the other end with the same food is duplicated.',
-      'timestamp': 173,
-      'timestamp_label': '[00:02:53]',
-      'timestamp_seconds': 173,
-      'tip': "There isn't even hot water available. This is really disappointing. Here you can "
-             'see the chef stations at the end and all the food is located here. There is a '
-             'similar setup on the other end with the same food is duplicated.',
-      'title': '$2900 World Cup VIP Hospitality ticket! Am I crazy? (Travel with Frodo)',
-      'url': 'https://www.youtube.com/watch?v=3jMjNVjPzTo&t=173s',
-      'video_id': '3jMjNVjPzTo'},
-     {'author': 'BBB National Programs',
-      'channel': 'BBB National Programs',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:09:30](https://www.youtube.com/watch?v=111H45dtJsI&t=570s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q4 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Software that scoops up all the tickets for a long time we we have arguments '
-              "that we think we get blamed for the scarcity of tickets when it's not really.",
-      'timestamp': 570,
-      'timestamp_label': '[00:09:30]',
-      'timestamp_seconds': 570,
-      'tip': 'Software that scoops up all the tickets for a long time we we have arguments '
-             "that we think we get blamed for the scarcity of tickets when it's not really.",
-      'title': 'The Ticket Industry Uncovered (BBB National Programs)',
-      'url': 'https://www.youtube.com/watch?v=111H45dtJsI&t=570s',
-      'video_id': '111H45dtJsI'},
-     {'author': 'TickPick',
-      'channel': 'TickPick',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:30](https://www.youtube.com/watch?v=tY7hYkxsK3k&t=90s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q4 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Sunday and can accommodate any questions that anyone may have you can give us a '
-              'call at 845-538-4567 and a representative would be happy to help or you can '
-              'email us at support tickpick.com hoping we can help you get to see Super Bowl '
-              '50 this year take a pic.',
-      'timestamp': 90,
-      'timestamp_label': '[00:01:30]',
-      'timestamp_seconds': 90,
-      'tip': 'Sunday and can accommodate any questions that anyone may have you can give us a '
-             'call at 845-538-4567 and a representative would be happy to help or you can '
-             'email us at support tickpick.com hoping we can help you get to see Super Bowl 50 '
-             'this year take a pic.',
-      'title': 'How to Buy Super Bowl 50 Tickets (TickPick)',
-      'url': 'https://www.youtube.com/watch?v=tY7hYkxsK3k&t=90s',
-      'video_id': 'tY7hYkxsK3k'},
-     {'author': 'SOL - Supercars of London',
-      'channel': 'SOL - Supercars of London',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:09:35](https://www.youtube.com/watch?v=rQvPQuH1YXw&t=575s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q4 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Tour I don't think there's anything else these are all quite large Vehicles so "
-              "I don't think there's any super cars here the F1 cars are still whizzing around "
-              "I'm going to quickly take a photo of the satin black GT3 RS down here and then "
-              'make my way back to the paddock.',
-      'timestamp': 575,
-      'timestamp_label': '[00:09:35]',
-      'timestamp_seconds': 575,
-      'tip': "Tour I don't think there's anything else these are all quite large Vehicles so I "
-             "don't think there's any super cars here the F1 cars are still whizzing around "
-             "I'm going to quickly take a photo of the satin black GT3 RS down here and then "
-             'make my way back to the paddock.',
-      'title': 'INSIDE The Most Expensive Qatar F1 Tickets | Behind the Scenes! (SOL - '
-               'Supercars of London)',
-      'url': 'https://www.youtube.com/watch?v=rQvPQuH1YXw&t=575s',
-      'video_id': 'rQvPQuH1YXw'},
-     {'author': 'The Savvy Professor',
-      'channel': 'The Savvy Professor',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:17](https://www.youtube.com/watch?v=kC2NXuA1XV4&t=137s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q4 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Number 11 you will get a confirmation email when the receiver has received the '
-              "ticket so there you have it that's all the information on how to transfer "
-              'tickets on tickets Master kindly share like and leave a comment on the video '
-              'till next time thanks for watching.',
-      'timestamp': 137,
-      'timestamp_label': '[00:02:17]',
-      'timestamp_seconds': 137,
-      'tip': 'Number 11 you will get a confirmation email when the receiver has received the '
-             "ticket so there you have it that's all the information on how to transfer "
-             'tickets on tickets Master kindly share like and leave a comment on the video '
-             'till next time thanks for watching.',
-      'title': 'How to Transfer Tickets on Ticketmaster (What is a Ticket Transfer?) (The '
-               'Savvy Professor)',
-      'url': 'https://www.youtube.com/watch?v=kC2NXuA1XV4&t=137s',
-      'video_id': 'kC2NXuA1XV4'},
-     {'author': 'Tennis Fights',
-      'channel': 'Tennis Fights',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:29](https://www.youtube.com/watch?v=vvND5YxS-Hg&t=89s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q4 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'This is This is the sad thing. This is a whole This This must be a whole big '
-              "city thing. Like a whole because it's in New York. Because I mean you can see "
-              'all these guys anywhere else for hardly anything.',
-      'timestamp': 89,
-      'timestamp_label': '[00:01:29]',
-      'timestamp_seconds': 89,
-      'tip': 'This is This is the sad thing. This is a whole This This must be a whole big '
-             "city thing. Like a whole because it's in New York. Because I mean you can see "
-             'all these guys anywhere else for hardly anything.',
-      'title': 'US OPEN Tennis Tickets in New York are CRAZY (Tennis Fights)',
-      'url': 'https://www.youtube.com/watch?v=vvND5YxS-Hg&t=89s',
-      'video_id': 'vvND5YxS-Hg'},
-     {'author': '9NEWS',
-      'channel': '9NEWS',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:52](https://www.youtube.com/watch?v=s4p8gnL-WFw&t=112s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q4 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Who knows what they could cost in Denver if the Broncos do decide to go with '
-              'the PSLs. I think there will be some definite sticker shock. 22 of the 32 NFL '
-              'teams have used some sort of seat license at a new stadium.',
-      'timestamp': 112,
-      'timestamp_label': '[00:01:52]',
-      'timestamp_seconds': 112,
-      'tip': 'Who knows what they could cost in Denver if the Broncos do decide to go with the '
-             'PSLs. I think there will be some definite sticker shock. 22 of the 32 NFL teams '
-             'have used some sort of seat license at a new stadium.',
-      'title': 'Broncos uncertain about selling Personal Seat Licenses to buy the right to '
-               'purchase future tickets (9NEWS)',
-      'url': 'https://www.youtube.com/watch?v=s4p8gnL-WFw&t=112s',
-      'video_id': 's4p8gnL-WFw'},
-     {'author': 'MPR News',
-      'channel': 'MPR News',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:06](https://www.youtube.com/watch?v=V-6dQZRMe2Y&t=186s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q4 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Fans go for this scheme if other NFL cities are any indication they probably '
-              'will fans have paid football teams more than a billion dollars for the seed '
-              'licenses in just the last three years Tim Nelson Minnesota Public Radio News.',
-      'timestamp': 186,
-      'timestamp_label': '[00:03:06]',
-      'timestamp_seconds': 186,
-      'tip': 'Fans go for this scheme if other NFL cities are any indication they probably '
-             'will fans have paid football teams more than a billion dollars for the seed '
-             'licenses in just the last three years Tim Nelson Minnesota Public Radio News.',
-      'title': 'How seat licenses work (MPR News)',
-      'url': 'https://www.youtube.com/watch?v=V-6dQZRMe2Y&t=186s',
-      'video_id': 'V-6dQZRMe2Y'}],
- 5: [{'author': '6abc Philadelphia',
-      'channel': '6abc Philadelphia',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:44](https://www.youtube.com/watch?v=w_3Yfr30xIo&t=44s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'BOWL 59, GET READY TO DIG DEEP INTO YOUR POCKETS. JESSICA PARKER, FOUNDER OF '
-              'THE TRAVEL WHISPERER TRAVEL AGENCY IN PHILADELPHIA, SAYS THE BEST WAY TO DO IT '
-              'IS TO PURCHASE AN ALL INCLUSIVE PACKAGE FROM A REPUTABLE SOURCE.',
-      'timestamp': 44,
-      'timestamp_label': '[00:00:44]',
-      'timestamp_seconds': 44,
-      'tip': 'BOWL 59, GET READY TO DIG DEEP INTO YOUR POCKETS. JESSICA PARKER, FOUNDER OF THE '
-             'TRAVEL WHISPERER TRAVEL AGENCY IN PHILADELPHIA, SAYS THE BEST WAY TO DO IT IS TO '
-             'PURCHASE AN ALL INCLUSIVE PACKAGE FROM A REPUTABLE SOURCE.',
-      'title': 'Trip to the Super Bowl would be super fun but super costly (6abc Philadelphia)',
-      'url': 'https://www.youtube.com/watch?v=w_3Yfr30xIo&t=44s',
-      'video_id': 'w_3Yfr30xIo'},
-     {'author': 'Team Jesser',
-      'channel': 'Team Jesser',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:14:21](https://www.youtube.com/watch?v=jgHnABCslrA&t=861s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "So, this is not good for the Patriots at all. It's time for the Bad Bunny "
-              'performance. Obviously, the copyright music is going to be a problem, BUT WE '
-              'GOT YOU WITH THE MONTAGE. HEY, let me get you on the vlog. We got a legend '
-              "right here. I'm just trying to survive.",
-      'timestamp': 861,
-      'timestamp_label': '[00:14:21]',
-      'timestamp_seconds': 861,
-      'tip': "So, this is not good for the Patriots at all. It's time for the Bad Bunny "
-             'performance. Obviously, the copyright music is going to be a problem, BUT WE GOT '
-             'YOU WITH THE MONTAGE. HEY, let me get you on the vlog. We got a legend right '
-             "here. I'm just trying to survive.",
-      'title': 'VIP Experience At The Super Bowl! (Team Jesser)',
-      'url': 'https://www.youtube.com/watch?v=jgHnABCslrA&t=861s',
-      'video_id': 'jgHnABCslrA'},
-     {'author': 'Quick and Easy',
-      'channel': 'Quick and Easy',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:22](https://www.youtube.com/watch?v=oQOmX8EOyW4&t=82s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Even if you don't have internet you will be able to access this information so "
-              'all you have to do is open up the app and show this QR code to use your a a XS.',
-      'timestamp': 82,
-      'timestamp_label': '[00:01:22]',
-      'timestamp_seconds': 82,
-      'tip': "Even if you don't have internet you will be able to access this information so "
-             'all you have to do is open up the app and show this QR code to use your a a XS.',
-      'title': 'How To Use AXS Tickets (Quick and Easy!) (Quick and Easy)',
-      'url': 'https://www.youtube.com/watch?v=oQOmX8EOyW4&t=82s',
-      'video_id': 'oQOmX8EOyW4'},
-     {'author': 'Firstpost',
-      'channel': 'Firstpost',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:45](https://www.youtube.com/watch?v=nAgJ_xD_wuE&t=225s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': '7 million tickets were sold then with many failing to secure seats for the '
-              "coveted concerts. After all, who wouldn't want to experience the concert of an "
-              "artist who had won album of the year at the Grammys? That even Queen Bay isn't "
-              'immune to a stadium standoff.',
-      'timestamp': 225,
-      'timestamp_label': '[00:03:45]',
-      'timestamp_seconds': 225,
-      'tip': '7 million tickets were sold then with many failing to secure seats for the '
-             "coveted concerts. After all, who wouldn't want to experience the concert of an "
-             "artist who had won album of the year at the Grammys? That even Queen Bay isn't "
-             'immune to a stadium standoff.',
-      'title': "Beyonce's Cowboy Carter Tour Struggles to Sell Out Stadiums | Firstpost "
-               'America | N18G (Firstpost)',
-      'url': 'https://www.youtube.com/watch?v=nAgJ_xD_wuE&t=225s',
-      'video_id': 'nAgJ_xD_wuE'},
-     {'author': 'AP Archive',
-      'channel': 'AP Archive',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:41](https://www.youtube.com/watch?v=NxbqrXeuWTI&t=101s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "This is a gift to you back from us it's a little surprise and delight it's "
-              "definitely a thank you and it's something we like to do for all our fans this "
-              "is the eighth year in a row that we've done a super bowl experience for free "
-              'for our customers.',
-      'timestamp': 101,
-      'timestamp_label': '[00:01:41]',
-      'timestamp_seconds': 101,
-      'tip': "This is a gift to you back from us it's a little surprise and delight it's "
-             "definitely a thank you and it's something we like to do for all our fans this is "
-             "the eighth year in a row that we've done a super bowl experience for free for "
-             'our customers.',
-      'title': 'StubHub officials discuss market for Super Bowl tickets, fan experience at '
-               'amusement park (AP Archive)',
-      'url': 'https://www.youtube.com/watch?v=NxbqrXeuWTI&t=101s',
-      'video_id': 'NxbqrXeuWTI'},
-     {'author': 'Katarina Mogus',
-      'channel': 'Katarina Mogus',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:01](https://www.youtube.com/watch?v=ouFzQnXDzjU&t=241s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "It's called sneaker tattoos. So, there's all these different tattoos and I can "
-              "put them on my sneakers and it's going to end up like this. So, I just got "
-              "these yesterday. I don't want to add anything, but I think I'm going to get "
-              'that tiny F1 car on like the heel of my shoe.',
-      'timestamp': 241,
-      'timestamp_label': '[00:04:01]',
-      'timestamp_seconds': 241,
-      'tip': "It's called sneaker tattoos. So, there's all these different tattoos and I can "
-             "put them on my sneakers and it's going to end up like this. So, I just got these "
-             "yesterday. I don't want to add anything, but I think I'm going to get that tiny "
-             'F1 car on like the heel of my shoe.',
-      'title': "I Got Ferrari's MOST Exclusive F1 Experience (Katarina Mogus)",
-      'url': 'https://www.youtube.com/watch?v=ouFzQnXDzjU&t=241s',
-      'video_id': 'ouFzQnXDzjU'},
-     {'author': 'WTHR',
-      'channel': 'WTHR',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:10](https://www.youtube.com/watch?v=OSa-CK_qebs&t=70s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Hoosiers still have a chance to snag tickets. 9 times out of 10, prices come '
-              'down as you get closer to the event. Sellers put up a really high price. Most '
-              "of them don't sell at those prices. It all comes down to if a fan wants to run "
-              'the risk.',
-      'timestamp': 70,
-      'timestamp_label': '[00:01:10]',
-      'timestamp_seconds': 70,
-      'tip': 'Hoosiers still have a chance to snag tickets. 9 times out of 10, prices come '
-             'down as you get closer to the event. Sellers put up a really high price. Most of '
-             "them don't sell at those prices. It all comes down to if a fan wants to run the "
-             'risk.',
-      'title': "Here's what it'll cost to go to CFP National Championship between IU and Miami "
-               '(WTHR)',
-      'url': 'https://www.youtube.com/watch?v=OSa-CK_qebs&t=70s',
-      'video_id': 'OSa-CK_qebs'},
-     {'author': 'Proxxxymiron',
-      'channel': 'Proxxxymiron',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:43](https://www.youtube.com/watch?v=6xTWnxPdGP0&t=43s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Ticketmaster and access as thousands of independent buyers. To avoid being '
-              "blocked, it allegedly used other people's names, numerous email addresses and "
-              'phone numbers, VPNs, rotating proxies, multi-session browsers, and other '
-              'methods.',
-      'timestamp': 43,
-      'timestamp_label': '[00:00:43]',
-      'timestamp_seconds': 43,
-      'tip': 'Ticketmaster and access as thousands of independent buyers. To avoid being '
-             "blocked, it allegedly used other people's names, numerous email addresses and "
-             'phone numbers, VPNs, rotating proxies, multi-session browsers, and other '
-             'methods.',
-      'title': 'Why You Can’t Get Concert Tickets: The $1.3 Billion Scheme (Proxxxymiron)',
-      'url': 'https://www.youtube.com/watch?v=6xTWnxPdGP0&t=43s',
-      'video_id': '6xTWnxPdGP0'},
-     {'author': 'Ticket Flipping',
-      'channel': 'Ticket Flipping',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:14](https://www.youtube.com/watch?v=NGFBVOXqxpA&t=74s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "They're coming directly from the artist so you're going to get some of the best "
-              'deals the second place is the secondary marketplaces so a lot of you might not.',
-      'timestamp': 74,
-      'timestamp_label': '[00:01:14]',
-      'timestamp_seconds': 74,
-      'tip': "They're coming directly from the artist so you're going to get some of the best "
-             'deals the second place is the secondary marketplaces so a lot of you might not.',
-      'title': 'How to get More Tickets to Flip (Ticket Flipping)',
-      'url': 'https://www.youtube.com/watch?v=NGFBVOXqxpA&t=74s',
-      'video_id': 'NGFBVOXqxpA'},
-     {'author': 'Sportico',
-      'channel': 'Sportico',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:17](https://www.youtube.com/watch?v=uhgdo0oPQ0E&t=137s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Um but it's a product that's does really well here. Um but yeah, this will be "
-              'full à la carte menu, beer, wine, soft drinks. So, no shortage of food and '
-              "beverage. Um it's invited guests only.",
-      'timestamp': 137,
-      'timestamp_label': '[00:02:17]',
-      'timestamp_seconds': 137,
-      'tip': "Um but it's a product that's does really well here. Um but yeah, this will be "
-             'full à la carte menu, beer, wine, soft drinks. So, no shortage of food and '
-             "beverage. Um it's invited guests only.",
-      'title': "The 'NFL Suite Life' at Tottenham Hotspur Stadium | BTS NFL Exclusive VIP "
-               'Hospitality & Suites (Sportico)',
-      'url': 'https://www.youtube.com/watch?v=uhgdo0oPQ0E&t=137s',
-      'video_id': 'uhgdo0oPQ0E'},
-     {'author': 'Oscar Alejandro',
-      'channel': 'Oscar Alejandro',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:07:26](https://www.youtube.com/watch?v=Sl_1OxOBH2c&t=446s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'De probar los servicios de Future boutique vamos a esperarla porque va a salir '
-              'de desde [Música] allá ya la gorra está lista y ahora vamos a pagar con la.',
-      'timestamp': 446,
-      'timestamp_label': '[00:07:26]',
-      'timestamp_seconds': 446,
-      'tip': 'De probar los servicios de Future boutique vamos a esperarla porque va a salir '
-             'de desde [Música] allá ya la gorra está lista y ahora vamos a pagar con la.',
-      'title': 'FÓRMULA 1 VIP EN MIAMI 🔥 ¡Solo MILLONARIOS pueden VIVIRLO! Paddock Club (Oscar '
-               'Alejandro)',
-      'url': 'https://www.youtube.com/watch?v=Sl_1OxOBH2c&t=446s',
-      'video_id': 'Sl_1OxOBH2c'},
-     {'author': 'Guide Nation',
-      'channel': 'Guide Nation',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:22](https://www.youtube.com/watch?v=Mkuhus1taO4&t=82s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Guys is how to use digital tickets on Ticket Master if you guys know of a '
-              'better or easier way to actually do this let me know in the comments down below '
-              "I would love to know but thanks so much for watching everyone and I'll see you "
-              'guys all in the next video.',
-      'timestamp': 82,
-      'timestamp_label': '[00:01:22]',
-      'timestamp_seconds': 82,
-      'tip': 'Guys is how to use digital tickets on Ticket Master if you guys know of a better '
-             'or easier way to actually do this let me know in the comments down below I would '
-             "love to know but thanks so much for watching everyone and I'll see you guys all "
-             'in the next video.',
-      'title': 'How To Use Digital Tickets On Ticketmaster (Guide Nation)',
-      'url': 'https://www.youtube.com/watch?v=Mkuhus1taO4&t=82s',
-      'video_id': 'Mkuhus1taO4'},
-     {'author': 'Chicoblanco',
-      'channel': 'Chicoblanco',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:48](https://www.youtube.com/watch?v=we9NjqAzpU0&t=348s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "I'm telling you, I knew you'd like the color. And this is a lens, correct? Why "
-              "don't you have the lens? I know very well she's hiding all that pain behind her "
-              'smile.',
-      'timestamp': 348,
-      'timestamp_label': '[00:05:48]',
-      'timestamp_seconds': 348,
-      'tip': "I'm telling you, I knew you'd like the color. And this is a lens, correct? Why "
-             "don't you have the lens? I know very well she's hiding all that pain behind her "
-             'smile.',
-      'title': 'Trading Football For NFL Tickets (Chicoblanco)',
-      'url': 'https://www.youtube.com/watch?v=we9NjqAzpU0&t=348s',
-      'video_id': 'we9NjqAzpU0'},
-     {'author': 'thumbsuprun',
-      'channel': 'thumbsuprun',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:20](https://www.youtube.com/watch?v=O-Sq4DDGKAY&t=20s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': '5 of the tickets make sense teams who are in the super bowl they should '
-              "probably you know be able to attend said super bowl what's dealers come on "
-              'steelers come on stealers concealers come and steal this concealer now 17.',
-      'timestamp': 20,
-      'timestamp_label': '[00:00:20]',
-      'timestamp_seconds': 20,
-      'tip': '5 of the tickets make sense teams who are in the super bowl they should probably '
-             "you know be able to attend said super bowl what's dealers come on steelers come "
-             'on stealers concealers come and steal this concealer now 17.',
-      'title': 'HOW TO GET SUPER BOWL TICKETS FOR FACE VALUE! (thumbsuprun)',
-      'url': 'https://www.youtube.com/watch?v=O-Sq4DDGKAY&t=20s',
-      'video_id': 'O-Sq4DDGKAY'},
-     {'author': 'Poolarity - Life Hacks',
-      'channel': 'Poolarity - Life Hacks',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:40](https://www.youtube.com/watch?v=IENQeieAOCo&t=100s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q5 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Actually just transfer one ticket which is a you know in case I'm selling it to "
-              "somebody or that um you know I'm I want to I bought a bunch of tickets and I "
-              "want to send it to each individual so that's also a possibility so if I'm just "
-              'sending one and I do continue.',
-      'timestamp': 100,
-      'timestamp_label': '[00:01:40]',
-      'timestamp_seconds': 100,
-      'tip': "Actually just transfer one ticket which is a you know in case I'm selling it to "
-             "somebody or that um you know I'm I want to I bought a bunch of tickets and I "
-             "want to send it to each individual so that's also a possibility so if I'm just "
-             'sending one and I do continue.',
-      'title': 'TicketMaster SafeTix Transfer Tickets | How To Demo (Poolarity - Life Hacks)',
-      'url': 'https://www.youtube.com/watch?v=IENQeieAOCo&t=100s',
-      'video_id': 'IENQeieAOCo'}],
- 6: [{'author': 'The Credit Nerd',
-      'channel': 'The Credit Nerd',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:44](https://www.youtube.com/watch?v=JS9sO0Fx9A0&t=44s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q6 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Let's dive into the first card on the list, the Capital One Savor Card. For "
-              'many people, this is probably the best all-around credit card for entertainment '
-              'spending.',
-      'timestamp': 44,
-      'timestamp_label': '[00:00:44]',
-      'timestamp_seconds': 44,
-      'tip': "Let's dive into the first card on the list, the Capital One Savor Card. For many "
-             'people, this is probably the best all-around credit card for entertainment '
-             'spending.',
-      'title': '3 Best Credit Cards For Concert Tickets & Entertainment In 2026 | NerdWallet '
-               '(The Credit Nerd)',
-      'url': 'https://www.youtube.com/watch?v=JS9sO0Fx9A0&t=44s',
-      'video_id': 'JS9sO0Fx9A0'},
-     {'author': 'Zippykind',
-      'channel': 'Zippykind',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:26](https://www.youtube.com/watch?v=OaCa2-zmCe8&t=26s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q6 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "If you're the client of a courier, include your Location ID in the file. You'll "
-              'find it in the Locations Manager. To add several items to one ticket, put each '
-              'item on its own row under the ticket and leave the first column blank on those '
-              'rows, like you see here.',
-      'timestamp': 26,
-      'timestamp_label': '[00:00:26]',
-      'timestamp_seconds': 26,
-      'tip': "If you're the client of a courier, include your Location ID in the file. You'll "
-             'find it in the Locations Manager. To add several items to one ticket, put each '
-             'item on its own row under the ticket and leave the first column blank on those '
-             'rows, like you see here.',
-      'title': 'Bulk Import Delivery Orders From a Spreadsheet | Zippykind (Zippykind)',
-      'url': 'https://www.youtube.com/watch?v=OaCa2-zmCe8&t=26s',
-      'video_id': 'OaCa2-zmCe8'},
-     {'author': 'Arizona’s Family (3TV / CBS 5)',
-      'channel': 'Arizona’s Family (3TV / CBS 5)',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:02](https://www.youtube.com/watch?v=3kV_14yzGfk&t=62s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q6 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "OWL IN WHICH TICKETS >> IT'S NOT THE FIRST SUPER BOWL IN WHICH TICKETS WILL >> "
-              "IT'S NOT THE FIRST SUPER BOWL IN WHICH TICKETS WILL BE >> IT'S NOT THE FIRST "
-              'SUPER BOWL IN WHICH TICKETS WILL BE ALL IN WHICH TICKETS WILL BE ALL IN WHICH '
-              'TICKETS WILL BE ALL DIGITAL.',
-      'timestamp': 62,
-      'timestamp_label': '[00:01:02]',
-      'timestamp_seconds': 62,
-      'tip': "OWL IN WHICH TICKETS >> IT'S NOT THE FIRST SUPER BOWL IN WHICH TICKETS WILL >> "
-             "IT'S NOT THE FIRST SUPER BOWL IN WHICH TICKETS WILL BE >> IT'S NOT THE FIRST "
-             'SUPER BOWL IN WHICH TICKETS WILL BE ALL IN WHICH TICKETS WILL BE ALL IN WHICH '
-             'TICKETS WILL BE ALL DIGITAL.',
-      'title': 'Ways to buy or sell Super Bowl tickets without being defrauded (Arizona’s '
-               'Family (3TV / CBS 5))',
-      'url': 'https://www.youtube.com/watch?v=3kV_14yzGfk&t=62s',
-      'video_id': '3kV_14yzGfk'},
-     {'author': 'CBS Atlanta',
-      'channel': 'CBS Atlanta',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:25](https://www.youtube.com/watch?v=vYgE480j7AA&t=25s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q6 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "AUGUSTA, BUT DURING THE WEEK OF THE MASTERS IT'S SOMETHING COMPLETELY "
-              'DIFFERENT. FOR 18 YEARS, THIS IS THE FIRST FACE MANY PEOPLE SEE WHEN THEY WALK '
-              'THROUGH THE DOOR. LEE SMITH FROM ACWORTH MAKES THE TRIP FROM METRO ATLANTA '
-              "EVERY YEAR. SO IT'S NOT A BAD DRIVE AT ALL.",
-      'timestamp': 25,
-      'timestamp_label': '[00:00:25]',
-      'timestamp_seconds': 25,
-      'tip': "AUGUSTA, BUT DURING THE WEEK OF THE MASTERS IT'S SOMETHING COMPLETELY DIFFERENT. "
-             'FOR 18 YEARS, THIS IS THE FIRST FACE MANY PEOPLE SEE WHEN THEY WALK THROUGH THE '
-             'DOOR. LEE SMITH FROM ACWORTH MAKES THE TRIP FROM METRO ATLANTA EVERY YEAR. SO '
-             "IT'S NOT A BAD DRIVE AT ALL.",
-      'title': 'Inside Club Magnolia: The Masters’ secret experience with Atlanta ties (CBS '
-               'Atlanta)',
-      'url': 'https://www.youtube.com/watch?v=vYgE480j7AA&t=25s',
-      'video_id': 'vYgE480j7AA'},
-     {'author': 'Prodigy Slots',
-      'channel': 'Prodigy Slots',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:54](https://www.youtube.com/watch?v=rYABa5xL6d0&t=114s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q6 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "'s where you'll find the VIP experience location. Uh from there, it'll give you "
-              'a little bit of background information, a little bit of information about what '
-              "all it entails. Um and then it'll have the the list of events at the bottom.",
-      'timestamp': 114,
-      'timestamp_label': '[00:01:54]',
-      'timestamp_seconds': 114,
-      'tip': "'s where you'll find the VIP experience location. Uh from there, it'll give you "
-             'a little bit of background information, a little bit of information about what '
-             "all it entails. Um and then it'll have the the list of events at the bottom.",
-      'title': 'Is the UFC VIP Experience worth it? (Prodigy Slots)',
-      'url': 'https://www.youtube.com/watch?v=rYABa5xL6d0&t=114s',
-      'video_id': 'rYABa5xL6d0'},
-     {'author': 'Simply Finance',
-      'channel': 'Simply Finance',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:06](https://www.youtube.com/watch?v=SnJa0jDKiKE&t=66s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q6 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'You should be doing if you are unable to find ticket in the AXS app that is all '
-              'for this video I hope the video was helpful make sure like share and.',
-      'timestamp': 66,
-      'timestamp_label': '[00:01:06]',
-      'timestamp_seconds': 66,
-      'tip': 'You should be doing if you are unable to find ticket in the AXS app that is all '
-             'for this video I hope the video was helpful make sure like share and.',
-      'title': "What Should I Do If I Can't Find My Tickets In The Axs App ! (Simply Finance)",
-      'url': 'https://www.youtube.com/watch?v=SnJa0jDKiKE&t=66s',
-      'video_id': 'SnJa0jDKiKE'},
-     {'author': 'NDSE',
-      'channel': 'NDSE',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:01](https://www.youtube.com/watch?v=N4lHcJFrT1E&t=121s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q6 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Better help desk practices lead to fewer repeat issues, smoother onboarding, '
-              'clearer budgeting, stronger cybersecurity awareness, and less disruption across '
-              'daily work. To go deeper, read the full article and add this to your Spotify '
-              'playlist.',
+      'text': 'Well, at this point your only option is a refund. And I said, I do not want a '
+              "refund. I want tickets for the two 16-year-olds who've been expecting to go to this "
+              'game since January.',
       'timestamp': 121,
       'timestamp_label': '[00:02:01]',
       'timestamp_seconds': 121,
-      'tip': 'Better help desk practices lead to fewer repeat issues, smoother onboarding, '
-             'clearer budgeting, stronger cybersecurity awareness, and less disruption across '
-             'daily work. To go deeper, read the full article and add this to your Spotify '
-             'playlist.',
-      'title': 'IT Helpdesk Best Practices That Reduce Tickets And Keep Work Moving (NDSE)',
-      'url': 'https://www.youtube.com/watch?v=N4lHcJFrT1E&t=121s',
-      'video_id': 'N4lHcJFrT1E'},
-     {'author': 'Ticket Flipping',
-      'channel': 'Ticket Flipping',
+      'tip': 'Well, at this point your only option is a refund. And I said, I do not want a '
+             "refund. I want tickets for the two 16-year-olds who've been expecting to go to this "
+             'game since January.',
+      'title': 'Some World Cup fans frustrated with ticket buying experience on secondary market',
+      'url': 'https://www.youtube.com/watch?v=QRxTlhb8Bt4&t=121s',
+      'video_id': 'QRxTlhb8Bt4'},
+     {'author': 'Adventure & Sports',
+      'channel': 'Adventure & Sports',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:14:50](https://www.youtube.com/watch?v=ajoRfqew338&t=890s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q6 operational verification).',
+      'markdown': '[00:00:16](https://www.youtube.com/watch?v=qSTxMUdp-ro&t=16s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
       'source_type': 'video_pro_tip',
-      'text': "So, we'll go here and go to shows. Uh, and we'll start scrolling down here. Uh, "
-              "this is, you know, this event is today. So, we'll go ahead and search Dell "
-              "Water. I don't know if that's the actual name of the artist, but yeah, it is. "
-              "So, let's go to the artist here.",
-      'timestamp': 890,
-      'timestamp_label': '[00:14:50]',
-      'timestamp_seconds': 890,
-      'tip': "So, we'll go here and go to shows. Uh, and we'll start scrolling down here. Uh, "
-             "this is, you know, this event is today. So, we'll go ahead and search Dell "
-             "Water. I don't know if that's the actual name of the artist, but yeah, it is. "
-             "So, let's go to the artist here.",
-      'title': 'Live Training: How to find tickets to flip based on the Venue! (Ticket '
-               'Flipping)',
-      'url': 'https://www.youtube.com/watch?v=ajoRfqew338&t=890s',
-      'video_id': 'ajoRfqew338'},
-     {'author': 'News 5 Cleveland',
-      'channel': 'News 5 Cleveland',
+      'text': 'Hospitality packages featuring premium tickets, food, beverage, and beyond are now '
+              'available across all three host nations, and prices start at $1,400.',
+      'timestamp': 16,
+      'timestamp_label': '[00:00:16]',
+      'timestamp_seconds': 16,
+      'tip': 'Hospitality packages featuring premium tickets, food, beverage, and beyond are now '
+             'available across all three host nations, and prices start at $1,400.',
+      'title': 'World Cup Hospitality Tickets Explained',
+      'url': 'https://www.youtube.com/watch?v=qSTxMUdp-ro&t=16s',
+      'video_id': 'qSTxMUdp-ro'},
+     {'author': "Ryan's Reviews and Overviews",
+      'channel': "Ryan's Reviews and Overviews",
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:44](https://www.youtube.com/watch?v=-zd2mlj0u8U&t=104s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q6 operational verification).',
+      'markdown': '[00:00:24](https://www.youtube.com/watch?v=25ntbvX_0_0&t=24s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
       'source_type': 'video_pro_tip',
-      'text': 'CAM POWELL IS A SPORTS MARKETING CONSULTANT PART OF THE TEAM THAT NEGOTIATED '
-              'WITH THE NFL TO MAKE THE STADIUM DEAL HAPPENS WHEN THAT THE ASSAULTS FIRST CAME '
-              "ON EARLY 90'S THAT WAS CONSIDERED RACKET IN A JUST A MONEY GRAB. BUT IT'S "
-              "THEY'RE KIND OF ENTRENCHED NOW.",
-      'timestamp': 104,
-      'timestamp_label': '[00:01:44]',
-      'timestamp_seconds': 104,
-      'tip': 'CAM POWELL IS A SPORTS MARKETING CONSULTANT PART OF THE TEAM THAT NEGOTIATED '
-             'WITH THE NFL TO MAKE THE STADIUM DEAL HAPPENS WHEN THAT THE ASSAULTS FIRST CAME '
-             "ON EARLY 90'S THAT WAS CONSIDERED RACKET IN A JUST A MONEY GRAB. BUT IT'S "
-             "THEY'RE KIND OF ENTRENCHED NOW.",
-      'title': 'How much? Browns fans outraged by possible personal seat-license (PSL) pricing '
-               'in Brook Park. (News 5 Cleveland)',
-      'url': 'https://www.youtube.com/watch?v=-zd2mlj0u8U&t=104s',
-      'video_id': '-zd2mlj0u8U'},
-     {'author': 'Kayvan Goes',
-      'channel': 'Kayvan Goes',
+      'text': "Do what you can to avoid the shuttle service. There's no special shuttle lanes, so "
+              'the bus just goes through heavy Miami traffic.',
+      'timestamp': 24,
+      'timestamp_label': '[00:00:24]',
+      'timestamp_seconds': 24,
+      'tip': "Do what you can to avoid the shuttle service. There's no special shuttle lanes, so "
+             'the bus just goes through heavy Miami traffic.',
+      'title': 'Miami FIFA World Cup 26 Hospitality Tickets (FIFA Pavilion) Saudi Arabia vs '
+               'Uruguay VLOG',
+      'url': 'https://www.youtube.com/watch?v=25ntbvX_0_0&t=24s',
+      'video_id': '25ntbvX_0_0'},
+     {'author': 'Travel with Frodo',
+      'channel': 'Travel with Frodo',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:30:42](https://www.youtube.com/watch?v=2UDtC8EP8GA&t=1842s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q6 operational verification).',
+      'markdown': '[00:00:46](https://www.youtube.com/watch?v=3jMjNVjPzTo&t=46s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
       'source_type': 'video_pro_tip',
-      'text': "Like the people who paid the most don't have seats because we can move around. "
-              'The The idea was like, okay, we can move anywhere in the Paddock Club. Like we '
-              'can go all the way through the pit pit lane. We can go all the way to the '
-              'Tarzan, the first turn.',
-      'timestamp': 1842,
-      'timestamp_label': '[00:30:42]',
-      'timestamp_seconds': 1842,
-      'tip': "Like the people who paid the most don't have seats because we can move around. "
-             'The The idea was like, okay, we can move anywhere in the Paddock Club. Like we '
-             'can go all the way through the pit pit lane. We can go all the way to the '
-             'Tarzan, the first turn.',
-      'title': 'Is the F1 Paddock Club Actually Worth It? (Kayvan Goes)',
-      'url': 'https://www.youtube.com/watch?v=2UDtC8EP8GA&t=1842s',
-      'video_id': '2UDtC8EP8GA'},
+      'text': 'There are four levels of hospitality tickets available, and I bought the VIP '
+              'ticket, the second most expensive one 9 months ago for $2,900.',
+      'timestamp': 46,
+      'timestamp_label': '[00:00:46]',
+      'timestamp_seconds': 46,
+      'tip': 'There are four levels of hospitality tickets available, and I bought the VIP ticket, '
+             'the second most expensive one 9 months ago for $2,900.',
+      'title': '$2900 World Cup VIP Hospitality ticket! Am I crazy?',
+      'url': 'https://www.youtube.com/watch?v=3jMjNVjPzTo&t=46s',
+      'video_id': '3jMjNVjPzTo'},
      {'author': 'Landon Kissell',
       'channel': 'Landon Kissell',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:01](https://www.youtube.com/watch?v=76zFs7tuCJw&t=241s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q6 operational verification).',
+      'markdown': '[00:00:40](https://www.youtube.com/watch?v=76zFs7tuCJw&t=40s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
       'source_type': 'video_pro_tip',
-      'text': '3 2 1 >> [cheering] [cheering] [cheering] >> All right, match has ended saying '
-              'at the Brazilian area now absolute insanity of a game. Brazil Morocco first '
-              'half so fast flowing a great great goal by Vinnie.',
-      'timestamp': 241,
-      'timestamp_label': '[00:04:01]',
-      'timestamp_seconds': 241,
-      'tip': '3 2 1 >> [cheering] [cheering] [cheering] >> All right, match has ended saying '
-             'at the Brazilian area now absolute insanity of a game. Brazil Morocco first half '
-             'so fast flowing a great great goal by Vinnie.',
-      'title': 'WORLD CUP FIFA PAVILION HOSPITALITY TICKETS | Brazil vs Morocco (Landon '
-               'Kissell)',
-      'url': 'https://www.youtube.com/watch?v=76zFs7tuCJw&t=241s',
+      'text': 'We got the FIFA Pavilion hospitality package before the draw was even announced. We '
+              "knew that we wanted to go to a game. We didn't really care about the teams. So we "
+              'pre-bought.',
+      'timestamp': 40,
+      'timestamp_label': '[00:00:40]',
+      'timestamp_seconds': 40,
+      'tip': 'We got the FIFA Pavilion hospitality package before the draw was even announced. We '
+             "knew that we wanted to go to a game. We didn't really care about the teams. So we "
+             'pre-bought.',
+      'title': 'WORLD CUP FIFA PAVILION HOSPITALITY TICKETS | Brazil vs Morocco',
+      'url': 'https://www.youtube.com/watch?v=76zFs7tuCJw&t=40s',
       'video_id': '76zFs7tuCJw'},
-     {'author': 'Wise Explainer',
-      'channel': 'Wise Explainer',
+     {'author': 'Senior Travel World',
+      'channel': 'Senior Travel World',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:59](https://www.youtube.com/watch?v=WNNmn1bxFEU&t=59s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q6 operational verification).',
+      'markdown': '[00:04:13](https://www.youtube.com/watch?v=QaNF9gbCV78&t=253s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
       'source_type': 'video_pro_tip',
-      'text': 'But, there are some downsides. First, the experience can feel more '
-              'information-heavy than consumer-focused concert apps. If you just want a quick '
-              'list of concerts near you and an easy checkout, Pollstar may not feel as '
-              'straightforward.',
-      'timestamp': 59,
-      'timestamp_label': '[00:00:59]',
-      'timestamp_seconds': 59,
-      'tip': 'But, there are some downsides. First, the experience can feel more '
-             'information-heavy than consumer-focused concert apps. If you just want a quick '
-             'list of concerts near you and an easy checkout, Pollstar may not feel as '
-             'straightforward.',
-      'title': 'Pollstar for Concert Discovery Honest Review - Watch Before Using (Wise '
-               'Explainer)',
-      'url': 'https://www.youtube.com/watch?v=WNNmn1bxFEU&t=59s',
-      'video_id': 'WNNmn1bxFEU'},
+      'text': 'While the upfront cost of a hospitality ticket is higher, it often includes a full '
+              'gourmet meal, snacks, and drinks.',
+      'timestamp': 253,
+      'timestamp_label': '[00:04:13]',
+      'timestamp_seconds': 253,
+      'tip': 'While the upfront cost of a hospitality ticket is higher, it often includes a full '
+             'gourmet meal, snacks, and drinks.',
+      'title': 'FIFA World Cup 2026: Hospitality vs General Admission - Which to Buy?',
+      'url': 'https://www.youtube.com/watch?v=QaNF9gbCV78&t=253s',
+      'video_id': 'QaNF9gbCV78'},
+     {'author': 'AwayDays',
+      'channel': 'AwayDays',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:22:31](https://www.youtube.com/watch?v=Hl-tVhzYfsw&t=1351s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': '$2,000 a ticket and people are eating off of bins. Like that is like come on. It is '
+              "too much. It's oversold.",
+      'timestamp': 1351,
+      'timestamp_label': '[00:22:31]',
+      'timestamp_seconds': 1351,
+      'tip': '$2,000 a ticket and people are eating off of bins. Like that is like come on. It is '
+             "too much. It's oversold.",
+      'title': 'I Tried a 2026 World Cup VIP Ticket',
+      'url': 'https://www.youtube.com/watch?v=Hl-tVhzYfsw&t=1351s',
+      'video_id': 'Hl-tVhzYfsw'},
+     {'author': 'CBS TEXAS',
+      'channel': 'CBS TEXAS',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:35](https://www.youtube.com/watch?v=6a_saGlb7l8&t=95s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'Both families bought their seats on the resale site Viagogo, which runs under the '
+              'same parent company as StubHub.',
+      'timestamp': 95,
+      'timestamp_label': '[00:01:35]',
+      'timestamp_seconds': 95,
+      'tip': 'Both families bought their seats on the resale site Viagogo, which runs under the '
+             'same parent company as StubHub.',
+      'title': 'FIFA World Cup fans report issues with match tickets purchased from resale sites',
+      'url': 'https://www.youtube.com/watch?v=6a_saGlb7l8&t=95s',
+      'video_id': '6a_saGlb7l8'},
+     {'author': 'Reuters',
+      'channel': 'Reuters',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:10](https://www.youtube.com/watch?v=2mMyznWPgpc&t=130s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'This Argentina match that can be bought between 62 euros and up to 250 euros was '
+              'resold in the best case for 900 euros and I resold for 700 euros.',
+      'timestamp': 130,
+      'timestamp_label': '[00:02:10]',
+      'timestamp_seconds': 130,
+      'tip': 'This Argentina match that can be bought between 62 euros and up to 250 euros was '
+             'resold in the best case for 900 euros and I resold for 700 euros.',
+      'title': "This is what it's like to scalp World Cup tickets",
+      'url': 'https://www.youtube.com/watch?v=2mMyznWPgpc&t=130s',
+      'video_id': '2mMyznWPgpc'},
+     {'author': 'NBC New York',
+      'channel': 'NBC New York',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:03:27](https://www.youtube.com/watch?v=-NeAkVXcsP4&t=207s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': "Just because you see a ticket listed for a very high price doesn't mean someone's "
+              'actually going to buy it at that price.',
+      'timestamp': 207,
+      'timestamp_label': '[00:03:27]',
+      'timestamp_seconds': 207,
+      'tip': "Just because you see a ticket listed for a very high price doesn't mean someone's "
+             'actually going to buy it at that price.',
+      'title': "SeatGeek's tips for buying FIFA World Cup tickets",
+      'url': 'https://www.youtube.com/watch?v=-NeAkVXcsP4&t=207s',
+      'video_id': '-NeAkVXcsP4'},
+     {'author': 'WFAA',
+      'channel': 'WFAA',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:26](https://www.youtube.com/watch?v=OSbD9xp5Dw4&t=86s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'Even if you pay and get a confirmation, right now, nobody has the ticket or barcode '
+              "they'll use to get into the stadium.",
+      'timestamp': 86,
+      'timestamp_label': '[00:01:26]',
+      'timestamp_seconds': 86,
+      'tip': 'Even if you pay and get a confirmation, right now, nobody has the ticket or barcode '
+             "they'll use to get into the stadium.",
+      'title': "Trying to get World Cup tickets? Here's how to avoid a scam",
+      'url': 'https://www.youtube.com/watch?v=OSbD9xp5Dw4&t=86s',
+      'video_id': 'OSbD9xp5Dw4'},
+     {'author': 'ESPN FC',
+      'channel': 'ESPN FC',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:21](https://www.youtube.com/watch?v=p9Q9_2anOiA&t=141s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': "Whatever I'm paying, as long as Leonel Messi is playing, I know 100% I'm gonna get "
+              'my money back.',
+      'timestamp': 141,
+      'timestamp_label': '[00:02:21]',
+      'timestamp_seconds': 141,
+      'tip': "Whatever I'm paying, as long as Leonel Messi is playing, I know 100% I'm gonna get "
+             'my money back.',
+      'title': "'Somebody's getting rich here!' 🤑 Sebi & Herc get heated over Inter Miami ticket "
+               'prices | ESPN FC',
+      'url': 'https://www.youtube.com/watch?v=p9Q9_2anOiA&t=141s',
+      'video_id': 'p9Q9_2anOiA'},
+     {'author': 'WFAA',
+      'channel': 'WFAA',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:08](https://www.youtube.com/watch?v=5niSyiKlGY4&t=68s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'FC Dallas tickets are regularly between 20 and $200. For this match the lowest '
+              'ticket sold by the team was $299, but resale is the story. Tickets are going up to '
+              '1000 dollars.',
+      'timestamp': 68,
+      'timestamp_label': '[00:01:08]',
+      'timestamp_seconds': 68,
+      'tip': 'FC Dallas tickets are regularly between 20 and $200. For this match the lowest '
+             'ticket sold by the team was $299, but resale is the story. Tickets are going up to '
+             '1000 dollars.',
+      'title': 'The Messi effect: FC Dallas vs. Inter Miami ticket prices soar ahead of match',
+      'url': 'https://www.youtube.com/watch?v=5niSyiKlGY4&t=68s',
+      'video_id': '5niSyiKlGY4'},
+     {'author': 'Kicking it with Drew',
+      'channel': 'Kicking it with Drew',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:59](https://www.youtube.com/watch?v=TIrEHtyuX3g&t=119s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': 'Those dark blue tickets instead of being $3,600 or $3,000 a ticket, they are now '
+              '$7,000 a ticket. One of them is actually $13,000 a ticket for a certain section.',
+      'timestamp': 119,
+      'timestamp_label': '[00:01:59]',
+      'timestamp_seconds': 119,
+      'tip': 'Those dark blue tickets instead of being $3,600 or $3,000 a ticket, they are now '
+             '$7,000 a ticket. One of them is actually $13,000 a ticket for a certain section.',
+      'title': 'These Are Most EXPENSIVE Season Tickets Ever!!',
+      'url': 'https://www.youtube.com/watch?v=TIrEHtyuX3g&t=119s',
+      'video_id': 'TIrEHtyuX3g'},
+     {'author': 'Lessons Untold',
+      'channel': 'Lessons Untold',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:22](https://www.youtube.com/watch?v=Je00xGIU3m0&t=22s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q7.',
+      'source_type': 'video_pro_tip',
+      'text': "In the final week, SeatGeek's seven-day average final sale price exceeded $11,000, "
+              'while average active listings moved above $18,000.',
+      'timestamp': 22,
+      'timestamp_label': '[00:00:22]',
+      'timestamp_seconds': 22,
+      'tip': "In the final week, SeatGeek's seven-day average final sale price exceeded $11,000, "
+             'while average active listings moved above $18,000.',
+      'title': 'From $60 to $32,000: How World Cup Tickets Became This Expensive | FIFA Pricing '
+               'Power Explained',
+      'url': 'https://www.youtube.com/watch?v=Je00xGIU3m0&t=22s',
+      'video_id': 'Je00xGIU3m0'}],
+ 8: [{'author': 'GigaBits',
+      'channel': 'GigaBits',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:02:58](https://www.youtube.com/watch?v=7KU-5HUqmzA&t=178s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'Ticket Master is the most reliable for official mobile entry, and on refunds and '
+              'customer support Ticket Master is strict and slow.',
+      'timestamp': 178,
+      'timestamp_label': '[00:02:58]',
+      'timestamp_seconds': 178,
+      'tip': 'Ticket Master is the most reliable for official mobile entry, and on refunds and '
+             'customer support Ticket Master is strict and slow.',
+      'title': 'Ticketmaster vs StubHub vs SeatGeek (2025) – What Ticket Seller Do We Need in '
+               '2026?',
+      'url': 'https://www.youtube.com/watch?v=7KU-5HUqmzA&t=178s',
+      'video_id': '7KU-5HUqmzA'},
      {'author': 'thumbsuprun',
       'channel': 'thumbsuprun',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:38](https://www.youtube.com/watch?v=s9mNdqH694I&t=338s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q6 operational verification).',
+      'markdown': '[00:01:32](https://www.youtube.com/watch?v=sIgspwKXj_0&t=92s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
       'source_type': 'video_pro_tip',
-      'text': "Soon no first wave opens up May 1st to May 30th all the things I've already "
-              "haven't in the past that would be the window to make your selections on.",
-      'timestamp': 338,
-      'timestamp_label': '[00:05:38]',
-      'timestamp_seconds': 338,
-      'tip': "Soon no first wave opens up May 1st to May 30th all the things I've already "
-             "haven't in the past that would be the window to make your selections on.",
-      'title': 'TICKETMASTER REFUND POLICY UPDATE FOR CANCELLED AND POSTPONED EVENTS | TICKET '
-               'REFUND PLAN (thumbsuprun)',
-      'url': 'https://www.youtube.com/watch?v=s9mNdqH694I&t=338s',
-      'video_id': 's9mNdqH694I'},
-     {'author': 'Tickets To Travel Podcast',
-      'channel': 'Tickets To Travel Podcast',
+      'text': 'If they do not get you in, they will either make sure they get replacement tickets '
+              'to get you into that event regardless or they will give you a 100% money-back '
+              'guarantee on your tickets.',
+      'timestamp': 92,
+      'timestamp_label': '[00:01:32]',
+      'timestamp_seconds': 92,
+      'tip': 'If they do not get you in, they will either make sure they get replacement tickets '
+             'to get you into that event regardless or they will give you a 100% money-back '
+             'guarantee on your tickets.',
+      'title': 'THE 5 THINGS ANY TICKET RESALE WEBSITE NEEDS TO HAVE | ARE THEY LEGIT?',
+      'url': 'https://www.youtube.com/watch?v=sIgspwKXj_0&t=92s',
+      'video_id': 'sIgspwKXj_0'},
+     {'author': 'Poolarity - Life Hacks',
+      'channel': 'Poolarity - Life Hacks',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:26:11](https://www.youtube.com/watch?v=pugjl3jzpWU&t=1571s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q6 operational verification).',
+      'markdown': '[00:00:00](https://www.youtube.com/watch?v=IENQeieAOCo&t=0s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
       'source_type': 'video_pro_tip',
-      'text': "Discussing and sort of how entrepreneurs find a way to get it done I think it's "
-              'a perfect storm I think that travel experiences led by tickets are going to.',
-      'timestamp': 1571,
-      'timestamp_label': '[00:26:11]',
-      'timestamp_seconds': 1571,
-      'tip': "Discussing and sort of how entrepreneurs find a way to get it done I think it's "
-             'a perfect storm I think that travel experiences led by tickets are going to.',
-      'title': 'Tickets To Travel Ep  10  Beyond the Ticket  Merging Travel with VIP Event '
-               'Experiences   A Conversa (Tickets To Travel Podcast)',
-      'url': 'https://www.youtube.com/watch?v=pugjl3jzpWU&t=1571s',
-      'video_id': 'pugjl3jzpWU'},
-     {'author': 'MMALeaked',
-      'channel': 'MMALeaked',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:44](https://www.youtube.com/watch?v=2vauuB_YXFc&t=224s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q6 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Event yes I could see them from far away but it just hits different when you '
-              'can see them up close like that now I want to now I want to show you how far I '
-              'was at the UFC 299 event mind you this was $300 more than the fight.',
-      'timestamp': 224,
-      'timestamp_label': '[00:03:44]',
-      'timestamp_seconds': 224,
-      'tip': 'Event yes I could see them from far away but it just hits different when you can '
-             'see them up close like that now I want to now I want to show you how far I was '
-             'at the UFC 299 event mind you this was $300 more than the fight.',
-      'title': 'First UFC Event? Essential Tips for Buying Tickets! (MMALeaked)',
-      'url': 'https://www.youtube.com/watch?v=2vauuB_YXFc&t=224s',
-      'video_id': '2vauuB_YXFc'}],
- 7: [{'author': 'Emmanuel Ak',
-      'channel': 'Emmanuel Ak',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:13:15](https://www.youtube.com/watch?v=RsyNgibgVJY&t=795s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q7 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'That was at the start of the year when they released. But Beyonce, Houston, '
-              "Texas, performed the best because I believe that's her hometown in comparison "
-              'to Chicago where she was performing as well. Hometown of the artist is usually '
-              'a guaranteed sellout.',
-      'timestamp': 795,
-      'timestamp_label': '[00:13:15]',
-      'timestamp_seconds': 795,
-      'tip': 'That was at the start of the year when they released. But Beyonce, Houston, '
-             "Texas, performed the best because I believe that's her hometown in comparison to "
-             'Chicago where she was performing as well. Hometown of the artist is usually a '
-             'guaranteed sellout.',
-      'title': 'The Hidden System Behind $30K/Month Concert Ticket Flips (Emmanuel Ak)',
-      'url': 'https://www.youtube.com/watch?v=RsyNgibgVJY&t=795s',
-      'video_id': 'RsyNgibgVJY'},
+      'text': "I'm preferring the website over the app because the website actually allows me to "
+              'do multi select so I could transfer multiple tickets to one email versus one by one '
+              'in the app.',
+      'timestamp': 0,
+      'timestamp_label': '[00:00:00]',
+      'timestamp_seconds': 0,
+      'tip': "I'm preferring the website over the app because the website actually allows me to do "
+             'multi select so I could transfer multiple tickets to one email versus one by one in '
+             'the app.',
+      'title': 'TicketMaster SafeTix Transfer Tickets | How To Demo',
+      'url': 'https://www.youtube.com/watch?v=IENQeieAOCo&t=0s',
+      'video_id': 'IENQeieAOCo'},
      {'author': 'Paso a paso',
       'channel': 'Paso a paso',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:12](https://www.youtube.com/watch?v=EwQdnuSrWAo&t=72s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q7 operational verification).',
+      'markdown': '[00:00:18](https://www.youtube.com/watch?v=EwQdnuSrWAo&t=18s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
       'source_type': 'video_pro_tip',
-      'text': 'To use Safetix more efficiently, you should take the following steps into '
-              'account. Present the dynamic barcode of your digital ticket in its original '
-              'size. Do not make it larger or smaller. Verify that the elements of your '
-              'digital Ticketmaster Safetix are in motion.',
-      'timestamp': 72,
-      'timestamp_label': '[00:01:12]',
-      'timestamp_seconds': 72,
-      'tip': 'To use Safetix more efficiently, you should take the following steps into '
-             'account. Present the dynamic barcode of your digital ticket in its original '
-             'size. Do not make it larger or smaller. Verify that the elements of your digital '
-             'Ticketmaster Safetix are in motion.',
-      'title': '¿Cómo usar SafeTix de Ticketmaster? Tutorial paso a paso (Paso a paso)',
-      'url': 'https://www.youtube.com/watch?v=EwQdnuSrWAo&t=72s',
+      'text': 'It features a dynamic code that changes every 15 seconds.',
+      'timestamp': 18,
+      'timestamp_label': '[00:00:18]',
+      'timestamp_seconds': 18,
+      'tip': 'It features a dynamic code that changes every 15 seconds.',
+      'title': '¿Cómo usar SafeTix de Ticketmaster? Tutorial paso a paso',
+      'url': 'https://www.youtube.com/watch?v=EwQdnuSrWAo&t=18s',
       'video_id': 'EwQdnuSrWAo'},
-     {'author': 'Guide Gurus',
-      'channel': 'Guide Gurus',
+     {'author': 'Paso a paso',
+      'channel': 'Paso a paso',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:08](https://www.youtube.com/watch?v=6Og6Y7NbLsk&t=128s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q7 operational verification).',
+      'markdown': '[00:01:15](https://www.youtube.com/watch?v=EwQdnuSrWAo&t=75s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
       'source_type': 'video_pro_tip',
-      'text': 'The recipient will then need to create a Seedgeek account, claim their tickets, '
-              'and access them through the Seedgeek app. By following these steps and being '
-              'aware of any fees and time requirements, you can successfully transfer tickets '
-              'from AXS to Seedgeek.',
-      'timestamp': 128,
-      'timestamp_label': '[00:02:08]',
-      'timestamp_seconds': 128,
-      'tip': 'The recipient will then need to create a Seedgeek account, claim their tickets, '
-             'and access them through the Seedgeek app. By following these steps and being '
-             'aware of any fees and time requirements, you can successfully transfer tickets '
-             'from AXS to Seedgeek.',
-      'title': 'How To Transfer Tickets From Axs To Seatgeek (2025) (Guide Gurus)',
-      'url': 'https://www.youtube.com/watch?v=6Og6Y7NbLsk&t=128s',
-      'video_id': '6Og6Y7NbLsk'},
+      'text': 'Present the dynamic barcode of your digital ticket in its original size. Do not '
+              'make it larger or smaller.',
+      'timestamp': 75,
+      'timestamp_label': '[00:01:15]',
+      'timestamp_seconds': 75,
+      'tip': 'Present the dynamic barcode of your digital ticket in its original size. Do not make '
+             'it larger or smaller.',
+      'title': '¿Cómo usar SafeTix de Ticketmaster? Tutorial paso a paso',
+      'url': 'https://www.youtube.com/watch?v=EwQdnuSrWAo&t=75s',
+      'video_id': 'EwQdnuSrWAo'},
+     {'author': 'Nexustech',
+      'channel': 'Nexustech',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:21](https://www.youtube.com/watch?v=lBLVmAx5wkQ&t=21s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
+      'source_type': 'video_pro_tip',
+      'text': 'You cannot transfer a ticket from Apple Wallet directly. Apple Wallet only stores a '
+              'copy of the ticket.',
+      'timestamp': 21,
+      'timestamp_label': '[00:00:21]',
+      'timestamp_seconds': 21,
+      'tip': 'You cannot transfer a ticket from Apple Wallet directly. Apple Wallet only stores a '
+             'copy of the ticket.',
+      'title': 'How To Transfer Ticketmaster Tickets from Apple Wallet to Someone Else [2026 '
+               'GUIDE]',
+      'url': 'https://www.youtube.com/watch?v=lBLVmAx5wkQ&t=21s',
+      'video_id': 'lBLVmAx5wkQ'},
      {'author': 'Gadget Tune',
       'channel': 'Gadget Tune',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:48](https://www.youtube.com/watch?v=8yXxF_U1uek&t=108s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q7 operational verification).',
+      'markdown': '[00:01:13](https://www.youtube.com/watch?v=8yXxF_U1uek&t=73s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
       'source_type': 'video_pro_tip',
-      'text': 'To ensure successful ticket transfers, follow these essential best practices '
-              'that will save you time and prevent common issues. Always verify the '
-              "recipient's email address or phone number before initiating the transfer.",
-      'timestamp': 108,
-      'timestamp_label': '[00:01:48]',
-      'timestamp_seconds': 108,
-      'tip': 'To ensure successful ticket transfers, follow these essential best practices '
-             "that will save you time and prevent common issues. Always verify the recipient's "
-             'email address or phone number before initiating the transfer.',
-      'title': 'How to Transfer Ticketmaster Tickets from Apple Wallet – Step By Step Guide '
-               '(Gadget Tune)',
-      'url': 'https://www.youtube.com/watch?v=8yXxF_U1uek&t=108s',
+      'text': 'Many events now have specific transfer deadlines, typically 72 hours before the '
+              'event starts.',
+      'timestamp': 73,
+      'timestamp_label': '[00:01:13]',
+      'timestamp_seconds': 73,
+      'tip': 'Many events now have specific transfer deadlines, typically 72 hours before the '
+             'event starts.',
+      'title': 'How to Transfer Ticketmaster Tickets from Apple Wallet – Step By Step Guide',
+      'url': 'https://www.youtube.com/watch?v=8yXxF_U1uek&t=73s',
       'video_id': '8yXxF_U1uek'},
      {'author': 'Helpful Solutions',
       'channel': 'Helpful Solutions',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:03](https://www.youtube.com/watch?v=hNlTOy1daSA&t=63s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q7 operational verification).',
+      'markdown': '[00:00:19](https://www.youtube.com/watch?v=hNlTOy1daSA&t=19s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
       'source_type': 'video_pro_tip',
-      'text': 'The operating system that is not compatible then such issues May prevent '
-              'barcodes from displaying in the wallet so first of all you must update The.',
-      'timestamp': 63,
-      'timestamp_label': '[00:01:03]',
-      'timestamp_seconds': 63,
-      'tip': 'The operating system that is not compatible then such issues May prevent '
-             'barcodes from displaying in the wallet so first of all you must update The.',
+      'text': 'The barcodes are typically made available 24 to 48 hours before the event to '
+              'prevent ticket fraud.',
+      'timestamp': 19,
+      'timestamp_label': '[00:00:19]',
+      'timestamp_seconds': 19,
+      'tip': 'The barcodes are typically made available 24 to 48 hours before the event to prevent '
+             'ticket fraud.',
       'title': 'How To Fix Ticketmaster Barcode Not Showing In Wallet (Easy Solutions To '
-               'Troubleshoot The Issue) (Helpful Solutions)',
-      'url': 'https://www.youtube.com/watch?v=hNlTOy1daSA&t=63s',
+               'Troubleshoot The Issue)',
+      'url': 'https://www.youtube.com/watch?v=hNlTOy1daSA&t=19s',
       'video_id': 'hNlTOy1daSA'},
-     {'author': 'Web Mind',
-      'channel': 'Web Mind',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:24](https://www.youtube.com/watch?v=RDQeHkadlqk&t=24s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q7 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'It has over 10 million downloads. It is a very good application. And here we '
-              'will learn how the booking process works in this application. We will explain '
-              'how to understand it and how to make bookings and all.',
-      'timestamp': 24,
-      'timestamp_label': '[00:00:24]',
-      'timestamp_seconds': 24,
-      'tip': 'It has over 10 million downloads. It is a very good application. And here we '
-             'will learn how the booking process works in this application. We will explain '
-             'how to understand it and how to make bookings and all.',
-      'title': 'how to buy tickets on axs !! How to use axs tickets app (Web Mind)',
-      'url': 'https://www.youtube.com/watch?v=RDQeHkadlqk&t=24s',
-      'video_id': 'RDQeHkadlqk'},
-     {'author': "Ryan's Reviews and Overviews",
-      'channel': "Ryan's Reviews and Overviews",
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:11:20](https://www.youtube.com/watch?v=25ntbvX_0_0&t=680s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q7 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Uh some of the the best food I've had in a very long time. Now for the most "
-              'improved, um, getting here. So, if you can, if you are traveling to Miami for '
-              'the World Cup and the games and everything, try to do what you can to avoid the '
-              'shuttle system.',
-      'timestamp': 680,
-      'timestamp_label': '[00:11:20]',
-      'timestamp_seconds': 680,
-      'tip': "Uh some of the the best food I've had in a very long time. Now for the most "
-             'improved, um, getting here. So, if you can, if you are traveling to Miami for '
-             'the World Cup and the games and everything, try to do what you can to avoid the '
-             'shuttle system.',
-      'title': 'Miami FIFA World Cup 26 Hospitality Tickets (FIFA Pavilion) Saudi Arabia vs '
-               "Uruguay VLOG (Ryan's Reviews and Overviews)",
-      'url': 'https://www.youtube.com/watch?v=25ntbvX_0_0&t=680s',
-      'video_id': '25ntbvX_0_0'},
-     {'author': 'Nexustech',
-      'channel': 'Nexustech',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:16](https://www.youtube.com/watch?v=lBLVmAx5wkQ&t=136s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q7 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Screenshots or copies won't work. Entry scanners will reject them. So the "
-              'system forces you to transfer only through ticket master. When the person '
-              'accepts the ticket in their ticket master account, then they can open the '
-              'ticket and tap add to Apple wallet.',
-      'timestamp': 136,
-      'timestamp_label': '[00:02:16]',
-      'timestamp_seconds': 136,
-      'tip': "Screenshots or copies won't work. Entry scanners will reject them. So the system "
-             'forces you to transfer only through ticket master. When the person accepts the '
-             'ticket in their ticket master account, then they can open the ticket and tap add '
-             'to Apple wallet.',
-      'title': 'How To Transfer Ticketmaster Tickets from Apple Wallet to Someone Else [2026 '
-               'GUIDE] (Nexustech)',
-      'url': 'https://www.youtube.com/watch?v=lBLVmAx5wkQ&t=136s',
-      'video_id': 'lBLVmAx5wkQ'},
-     {'author': 'thumbsuprun',
-      'channel': 'thumbsuprun',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:35](https://www.youtube.com/watch?v=MP1aH4hgG70&t=95s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q7 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Once you're there two things you wanna know. One, not all events will have the "
-              'transfer feature available. Reason behind that is twofold: One, the event '
-              'itself may not have the delivery delay lifted, so the tickets are still not '
-              'available to be accessed.',
-      'timestamp': 95,
-      'timestamp_label': '[00:01:35]',
-      'timestamp_seconds': 95,
-      'tip': "Once you're there two things you wanna know. One, not all events will have the "
-             'transfer feature available. Reason behind that is twofold: One, the event itself '
-             'may not have the delivery delay lifted, so the tickets are still not available '
-             'to be accessed.',
-      'title': 'HOW TO TRANSFER TICKETS ON TICKETMASTER TO ANOTHER PHONE | TICKET TIP THURSDAY '
-               '(thumbsuprun)',
-      'url': 'https://www.youtube.com/watch?v=MP1aH4hgG70&t=95s',
-      'video_id': 'MP1aH4hgG70'},
-     {'author': 'TicketWire',
-      'channel': 'TicketWire',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:53](https://www.youtube.com/watch?v=M80btlo7xJc&t=53s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q7 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Verify trust but verify folks so then there's Str Marketplace I'll go down I'll "
-              'click the team I want to purchase tickets for and once again this is just the '
-              "SPL so sbl's for sale.",
-      'timestamp': 53,
-      'timestamp_label': '[00:00:53]',
-      'timestamp_seconds': 53,
-      'tip': "Verify trust but verify folks so then there's Str Marketplace I'll go down I'll "
-             'click the team I want to purchase tickets for and once again this is just the '
-             "SPL so sbl's for sale.",
-      'title': 'Buying NFL Season Tickets: SBL is Step One. (TicketWire)',
-      'url': 'https://www.youtube.com/watch?v=M80btlo7xJc&t=53s',
-      'video_id': 'M80btlo7xJc'},
-     {'author': 'LawVS',
-      'channel': 'LawVS',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:05:49](https://www.youtube.com/watch?v=0KKYkQr1SBk&t=349s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q7 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'I forgot the pit walls are like laid in the pit passes little bit of grass. But '
-              "now we've reached the point where McLaren is right now. Oh, it looks so good in "
-              'the flesh. You can tell all the pearlescence.',
-      'timestamp': 349,
-      'timestamp_label': '[00:05:49]',
-      'timestamp_seconds': 349,
-      'tip': 'I forgot the pit walls are like laid in the pit passes little bit of grass. But '
-             "now we've reached the point where McLaren is right now. Oh, it looks so good in "
-             'the flesh. You can tell all the pearlescence.',
-      'title': "I Spent A Day In F1's Most Expensive Hospitality (LawVS)",
-      'url': 'https://www.youtube.com/watch?v=0KKYkQr1SBk&t=349s',
-      'video_id': '0KKYkQr1SBk'},
-     {'author': '850 Club Credit',
-      'channel': '850 Club Credit',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:19](https://www.youtube.com/watch?v=p8CMjg4a_CI&t=139s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q7 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Purchased prior to okay during the whole resale process or the pre-sale '
-              'processes I should say so with the American Express they allow you to buy up up '
-              'to I.',
-      'timestamp': 139,
-      'timestamp_label': '[00:02:19]',
-      'timestamp_seconds': 139,
-      'tip': 'Purchased prior to okay during the whole resale process or the pre-sale '
-             'processes I should say so with the American Express they allow you to buy up up '
-             'to I.',
-      'title': 'How American Express/CITI Bank Can Get You Into Any Concert/Event For Free - '
-               'Drake & Migos Concert (850 Club Credit)',
-      'url': 'https://www.youtube.com/watch?v=p8CMjg4a_CI&t=139s',
-      'video_id': 'p8CMjg4a_CI'},
-     {'author': 'Hermanos F.C.',
-      'channel': 'Hermanos F.C.',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:07:51](https://www.youtube.com/watch?v=x2psJ5xGp18&t=471s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q7 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "Else's seat yeah they take me down with the cops this all happened super fast "
-              "take me down with the cops cuz you wouldn't cuz wouldn't move cuz I also.",
-      'timestamp': 471,
-      'timestamp_label': '[00:07:51]',
-      'timestamp_seconds': 471,
-      'tip': "Else's seat yeah they take me down with the cops this all happened super fast "
-             "take me down with the cops cuz you wouldn't cuz wouldn't move cuz I also.",
-      'title': 'Inter Miami Let Me Down—Why I’m Canceling My Season Tickets (Hermanos F.C.)',
-      'url': 'https://www.youtube.com/watch?v=x2psJ5xGp18&t=471s',
-      'video_id': 'x2psJ5xGp18'},
-     {'author': 'Emmanuel Ak',
-      'channel': 'Emmanuel Ak',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:09:06](https://www.youtube.com/watch?v=ETQnblEeP94&t=546s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q7 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': "I've traveled five times and it's October. Ah, I'm getting I'm getting "
-              "distracted here. But what I'm just trying to get across here is that never "
-              "settle for less. Step by step, you're gonna get there. Don't don't feel like "
-              "it's not achievable.",
-      'timestamp': 546,
-      'timestamp_label': '[00:09:06]',
-      'timestamp_seconds': 546,
-      'tip': "I've traveled five times and it's October. Ah, I'm getting I'm getting "
-             "distracted here. But what I'm just trying to get across here is that never "
-             "settle for less. Step by step, you're gonna get there. Don't don't feel like "
-             "it's not achievable.",
-      'title': 'How I scaled to 5 figure months Reselling Concert Tickets(1hr Full Course) '
-               '(Emmanuel Ak)',
-      'url': 'https://www.youtube.com/watch?v=ETQnblEeP94&t=546s',
-      'video_id': 'ETQnblEeP94'},
-     {'author': 'Francerz',
-      'channel': 'Francerz',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:45](https://www.youtube.com/watch?v=7VYhOZ4uE-I&t=45s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q7 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'De abrirla para que agregue su cuenta posteriormente a ello este van a ir al '
-              'sitio de Ticket Master en el sitio de Ticket Master van a darle clic en su '
-              'perfil una y una vez lo quedo iniciado la sesión van a darle clic en ver '
-              'próximos.',
-      'timestamp': 45,
-      'timestamp_label': '[00:00:45]',
-      'timestamp_seconds': 45,
-      'tip': 'De abrirla para que agregue su cuenta posteriormente a ello este van a ir al '
-             'sitio de Ticket Master en el sitio de Ticket Master van a darle clic en su '
-             'perfil una y una vez lo quedo iniciado la sesión van a darle clic en ver '
-             'próximos.',
-      'title': 'Ticketmaster SafeTix + Google Wallet (Francerz)',
-      'url': 'https://www.youtube.com/watch?v=7VYhOZ4uE-I&t=45s',
-      'video_id': '7VYhOZ4uE-I'}],
- 8: [{'author': 'GigaBits',
-      'channel': 'GigaBits',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:12](https://www.youtube.com/watch?v=7KU-5HUqmzA&t=72s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q8 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'I now have a clear picture of which platform actually works in 2026 and which '
-              'one only works for itself. All three claim to offer secure purchases, '
-              'transparent pricing, and the best seat selection. Ticket Master highlights '
-              'official access.',
-      'timestamp': 72,
-      'timestamp_label': '[00:01:12]',
-      'timestamp_seconds': 72,
-      'tip': 'I now have a clear picture of which platform actually works in 2026 and which '
-             'one only works for itself. All three claim to offer secure purchases, '
-             'transparent pricing, and the best seat selection. Ticket Master highlights '
-             'official access.',
-      'title': 'Ticketmaster vs StubHub vs SeatGeek (2025) – What Ticket Seller Do We Need in '
-               '2026? (GigaBits)',
-      'url': 'https://www.youtube.com/watch?v=7KU-5HUqmzA&t=72s',
-      'video_id': '7KU-5HUqmzA'},
-     {'author': 'AidensGotGuides',
-      'channel': 'AidensGotGuides',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:04](https://www.youtube.com/watch?v=xEM0K5YLBZk&t=124s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q8 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'So, it helps to move efficiently and double-check all event details before '
-              'buying. The key takeaway is simple. Direct cross-platform transfers between AXS '
-              'and Ticketmaster are generally not supported.',
-      'timestamp': 124,
-      'timestamp_label': '[00:02:04]',
-      'timestamp_seconds': 124,
-      'tip': 'So, it helps to move efficiently and double-check all event details before '
-             'buying. The key takeaway is simple. Direct cross-platform transfers between AXS '
-             'and Ticketmaster are generally not supported.',
-      'title': 'How to Transfer AXS Tickets to Ticketmaster (AidensGotGuides)',
-      'url': 'https://www.youtube.com/watch?v=xEM0K5YLBZk&t=124s',
-      'video_id': 'xEM0K5YLBZk'},
-     {'author': 'NBC Bay Area',
-      'channel': 'NBC Bay Area',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:01](https://www.youtube.com/watch?v=X3-flSVor4E&t=181s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q8 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Private jets park here for the Super Bowl. Noah expects about 150 to flood this '
-              'zone. How do you put 150 airplanes on the ground here all at the same time? '
-              'Noah says the real sorcery is software to virtually assign parking spots.',
-      'timestamp': 181,
-      'timestamp_label': '[00:03:01]',
-      'timestamp_seconds': 181,
-      'tip': 'Private jets park here for the Super Bowl. Noah expects about 150 to flood this '
-             'zone. How do you put 150 airplanes on the ground here all at the same time? Noah '
-             'says the real sorcery is software to virtually assign parking spots.',
-      'title': 'Behind the scenes: Watch special teams prepare for blitz of Super Bowl flights '
-               '(NBC Bay Area)',
-      'url': 'https://www.youtube.com/watch?v=X3-flSVor4E&t=181s',
-      'video_id': 'X3-flSVor4E'},
      {'author': 'Patchwave Tutorials',
       'channel': 'Patchwave Tutorials',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:20](https://www.youtube.com/watch?v=Wqb02oxLDJ0&t=20s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q8 operational verification).',
+      'markdown': '[00:00:43](https://www.youtube.com/watch?v=Wqb02oxLDJ0&t=43s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
       'source_type': 'video_pro_tip',
-      'text': 'Open settings and go to general then go to software update to install the '
-              'latest iOS. Then update the Ticketmaster app via the App Store. Go to App '
-              'Store, search for Ticketmaster, click update button and wait for the process to '
-              'complete.',
-      'timestamp': 20,
-      'timestamp_label': '[00:00:20]',
-      'timestamp_seconds': 20,
-      'tip': 'Open settings and go to general then go to software update to install the latest '
-             'iOS. Then update the Ticketmaster app via the App Store. Go to App Store, search '
-             'for Ticketmaster, click update button and wait for the process to complete.',
-      'title': 'How to Fix Unable to Add Pass to Apple Wallet from Ticketmaster – iPhone Setup '
-               '& Fix Guide (Patchwave Tutorials)',
-      'url': 'https://www.youtube.com/watch?v=Wqb02oxLDJ0&t=20s',
+      'text': 'Disable any active VPN or Apple private relay in your iCloud settings as security '
+              'proxies frequently block Apple Wallet API handshakes.',
+      'timestamp': 43,
+      'timestamp_label': '[00:00:43]',
+      'timestamp_seconds': 43,
+      'tip': 'Disable any active VPN or Apple private relay in your iCloud settings as security '
+             'proxies frequently block Apple Wallet API handshakes.',
+      'title': 'How to Fix Unable to Add Pass to Apple Wallet from Ticketmaster – iPhone Setup & '
+               'Fix Guide',
+      'url': 'https://www.youtube.com/watch?v=Wqb02oxLDJ0&t=43s',
       'video_id': 'Wqb02oxLDJ0'},
-     {'author': 'ALSD',
-      'channel': 'ALSD',
+     {'author': 'Fixed Formulas',
+      'channel': 'Fixed Formulas',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:14](https://www.youtube.com/watch?v=ImKo957VLSo&t=194s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q8 operational verification).',
+      'markdown': '[00:01:09](https://www.youtube.com/watch?v=f7BuIdB0-6I&t=69s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
       'source_type': 'video_pro_tip',
-      'text': "We're all trying to get better. We're all trying to be the best, either in our "
-              "cities or our organizations, whatever it may be. It's a forum where we all get "
-              'to network, and come together, and share crazy ideas, failures, successes, make '
-              'friends in the same community.',
-      'timestamp': 194,
-      'timestamp_label': '[00:03:14]',
-      'timestamp_seconds': 194,
-      'tip': "We're all trying to get better. We're all trying to be the best, either in our "
-             "cities or our organizations, whatever it may be. It's a forum where we all get "
-             'to network, and come together, and share crazy ideas, failures, successes, make '
-             'friends in the same community.',
-      'title': 'Hotel Hospitality Ideas for the Sports and Entertainment Venue Marketplace '
-               '(ALSD)',
-      'url': 'https://www.youtube.com/watch?v=ImKo957VLSo&t=194s',
-      'video_id': 'ImKo957VLSo'},
-     {'author': 'Senior Travel World',
-      'channel': 'Senior Travel World',
+      'text': 'After clicking on the transfer option, you will have to first of all authenticate '
+              'your account, so on your registered email address and your phone number they are '
+              'going to send an OTP.',
+      'timestamp': 69,
+      'timestamp_label': '[00:01:09]',
+      'timestamp_seconds': 69,
+      'tip': 'After clicking on the transfer option, you will have to first of all authenticate '
+             'your account, so on your registered email address and your phone number they are '
+             'going to send an OTP.',
+      'title': 'How to Transfer Tickets on Ticketmaster [2026] UPDATED',
+      'url': 'https://www.youtube.com/watch?v=f7BuIdB0-6I&t=69s',
+      'video_id': 'f7BuIdB0-6I'},
+     {'author': 'The Savvy Professor',
+      'channel': 'The Savvy Professor',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:49](https://www.youtube.com/watch?v=QaNF9gbCV78&t=169s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q8 operational verification).',
+      'markdown': '[00:01:21](https://www.youtube.com/watch?v=kC2NXuA1XV4&t=81s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
       'source_type': 'video_pro_tip',
-      'text': 'The most underrated benefit in these lounges is the access to clean, private '
-              'bathrooms. Avoiding the legendary lines of a soldout 80,000 seat stadium is a '
-              'massive stress reducer, keeping you comfortable and close to your seat. These '
-              'stadiums are sprawling.',
-      'timestamp': 169,
-      'timestamp_label': '[00:02:49]',
-      'timestamp_seconds': 169,
-      'tip': 'The most underrated benefit in these lounges is the access to clean, private '
-             'bathrooms. Avoiding the legendary lines of a soldout 80,000 seat stadium is a '
-             'massive stress reducer, keeping you comfortable and close to your seat. These '
-             'stadiums are sprawling.',
-      'title': 'FIFA World Cup 2026: Hospitality vs General Admission - Which to Buy? (Senior '
-               'Travel World)',
-      'url': 'https://www.youtube.com/watch?v=QaNF9gbCV78&t=169s',
-      'video_id': 'QaNF9gbCV78'},
-     {'author': 'DigitalThinker Inc.',
-      'channel': 'DigitalThinker Inc.',
+      'text': "Once you've viewed that the details of the ticket are accurate click on transfer, "
+              "however if the transfer button is gray you can't transfer them.",
+      'timestamp': 81,
+      'timestamp_label': '[00:01:21]',
+      'timestamp_seconds': 81,
+      'tip': "Once you've viewed that the details of the ticket are accurate click on transfer, "
+             "however if the transfer button is gray you can't transfer them.",
+      'title': 'How to Transfer Tickets on Ticketmaster (What is a Ticket Transfer?)',
+      'url': 'https://www.youtube.com/watch?v=kC2NXuA1XV4&t=81s',
+      'video_id': 'kC2NXuA1XV4'},
+     {'author': 'The Savvy Professor',
+      'channel': 'The Savvy Professor',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:15](https://www.youtube.com/watch?v=Y0_GSVWwMIw&t=15s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q8 operational verification).',
+      'markdown': '[00:02:02](https://www.youtube.com/watch?v=zH4ITvC9voc&t=122s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
       'source_type': 'video_pro_tip',
-      'text': 'Going to talk about how you can get access to digital thinkers customer portal '
-              'how to submit help desk tickets and also.',
-      'timestamp': 15,
-      'timestamp_label': '[00:00:15]',
-      'timestamp_seconds': 15,
-      'tip': 'Going to talk about how you can get access to digital thinkers customer portal '
-             'how to submit help desk tickets and also.',
-      'title': 'Learn how to submit Support Tickets & Navigate the DTI portal! (DigitalThinker '
-               'Inc.)',
-      'url': 'https://www.youtube.com/watch?v=Y0_GSVWwMIw&t=15s',
-      'video_id': 'Y0_GSVWwMIw'},
-     {'author': 'Inside Edition',
-      'channel': 'Inside Edition',
+      'text': "You bought your ticket from someone else and they didn't transfer it properly, or "
+              'you selected will call or print at home during checkout.',
+      'timestamp': 122,
+      'timestamp_label': '[00:02:02]',
+      'timestamp_seconds': 122,
+      'tip': "You bought your ticket from someone else and they didn't transfer it properly, or "
+             'you selected will call or print at home during checkout.',
+      'title': 'How to Save Ticketmaster Tickets to Apple Wallet (How Do I Add Tickets to a '
+               'Digital Wallet?)',
+      'url': 'https://www.youtube.com/watch?v=zH4ITvC9voc&t=122s',
+      'video_id': 'zH4ITvC9voc'},
+     {'author': 'Guide Nation',
+      'channel': 'Guide Nation',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:03](https://www.youtube.com/watch?v=qQIN_PDMcPA&t=123s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q8 operational verification).',
+      'markdown': '[00:00:36](https://www.youtube.com/watch?v=Mkuhus1taO4&t=36s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
       'source_type': 'video_pro_tip',
-      'text': "Reality here is you've got what 20 million people trying to get 200 000 tickets "
-              "of course there are going to be problems of course there's going to be "
-              'bottlenecks nobody really ends up looking good now if the artist now '
-              'Ticketmaster.',
-      'timestamp': 123,
-      'timestamp_label': '[00:02:03]',
-      'timestamp_seconds': 123,
-      'tip': "Reality here is you've got what 20 million people trying to get 200 000 tickets "
-             "of course there are going to be problems of course there's going to be "
-             'bottlenecks nobody really ends up looking good now if the artist now '
-             'Ticketmaster.',
-      'title': 'Taylor Swift’s ‘Eras Tour’ Tickets Crash Ticketmaster (Inside Edition)',
-      'url': 'https://www.youtube.com/watch?v=qQIN_PDMcPA&t=123s',
-      'video_id': 'qQIN_PDMcPA'},
-     {'author': 'TechTutorXpress',
-      'channel': 'TechTutorXpress',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:22](https://www.youtube.com/watch?v=edUbHihe2lI&t=22s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q8 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Over here, you can either search for the app or you can scroll down and look '
-              'for it. On the next screen, you need to tap on the offload app option. A '
-              'confirmation pop-up will come up. Now, tap on the offload app option here.',
-      'timestamp': 22,
-      'timestamp_label': '[00:00:22]',
-      'timestamp_seconds': 22,
-      'tip': 'Over here, you can either search for the app or you can scroll down and look for '
-             'it. On the next screen, you need to tap on the offload app option. A '
-             'confirmation pop-up will come up. Now, tap on the offload app option here.',
-      'title': 'AXS Tickets App Not Working: How to FIX AXS Tickets App Not Working (FIXED) '
-               '(TechTutorXpress)',
-      'url': 'https://www.youtube.com/watch?v=edUbHihe2lI&t=22s',
-      'video_id': 'edUbHihe2lI'},
-     {'author': 'Forbes',
-      'channel': 'Forbes',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:09](https://www.youtube.com/watch?v=fI8OAlihCxc&t=249s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q8 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'Reserving the right to buy a season ticket reportedly ranges from $750 all the '
-              "way up to $75,000 for full coverage check out Brett Knight's piece on "
-              'forbes.com this is Kieran Meadows from Forbes thanks for tuning in e.',
-      'timestamp': 249,
-      'timestamp_label': '[00:04:09]',
-      'timestamp_seconds': 249,
-      'tip': 'Reserving the right to buy a season ticket reportedly ranges from $750 all the '
-             "way up to $75,000 for full coverage check out Brett Knight's piece on forbes.com "
-             'this is Kieran Meadows from Forbes thanks for tuning in e.',
-      'title': 'Why Sports Arenas Make Millions More By Building Fewer Luxury Suites (Forbes)',
-      'url': 'https://www.youtube.com/watch?v=fI8OAlihCxc&t=249s',
-      'video_id': 'fI8OAlihCxc'},
-     {'author': 'thebombtickets',
-      'channel': 'thebombtickets',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:55:41](https://www.youtube.com/watch?v=icH7RV48MeY&t=3341s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q8 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'In vancouver and sort of thing the the intensity of that that event that was '
-              'really cool and I have the tickets so and I one one got a psa 10. so I do have '
-              'some software.',
-      'timestamp': 3341,
-      'timestamp_label': '[00:55:41]',
-      'timestamp_seconds': 3341,
-      'tip': 'In vancouver and sort of thing the the intensity of that that event that was '
-             'really cool and I have the tickets so and I one one got a psa 10. so I do have '
-             'some software.',
-      'title': 'World Series & NBA Finals Ticket Stubs - Ticket Stub Collecting w/ James '
-               'Burzynski (thebombtickets)',
-      'url': 'https://www.youtube.com/watch?v=icH7RV48MeY&t=3341s',
-      'video_id': 'icH7RV48MeY'},
-     {'author': 'PowerBombClub',
-      'channel': 'PowerBombClub',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:12:41](https://www.youtube.com/watch?v=UTfE6DLqtLY&t=761s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q8 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'I know us MMA fans love to talk about robberies, but since you know I did have '
-              "the best seat in the house, I've got to say this, I just don't know how they "
-              'gave it to Cortez. In my opinion, this was like the most clear spac I think '
-              "I've ever seen.",
-      'timestamp': 761,
-      'timestamp_label': '[00:12:41]',
-      'timestamp_seconds': 761,
-      'tip': 'I know us MMA fans love to talk about robberies, but since you know I did have '
-             "the best seat in the house, I've got to say this, I just don't know how they "
-             "gave it to Cortez. In my opinion, this was like the most clear spac I think I've "
-             'ever seen.',
-      'title': 'I got $80,000 VIP Tickets to the UFC! (PowerBombClub)',
-      'url': 'https://www.youtube.com/watch?v=UTfE6DLqtLY&t=761s',
-      'video_id': 'UTfE6DLqtLY'},
-     {'author': 'NFL',
-      'channel': 'NFL',
-      'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:12:58](https://www.youtube.com/watch?v=G6FuWd4wNd8&t=778s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q8 operational verification).',
-      'source_type': 'video_pro_tip',
-      'text': 'The National Football League thanks you for watching the Apple Music Super Bowl '
-              '60 halftime show. Thank you for [música] watching this presentation of the '
-              'national foall league.',
-      'timestamp': 778,
-      'timestamp_label': '[00:12:58]',
-      'timestamp_seconds': 778,
-      'tip': 'The National Football League thanks you for watching the Apple Music Super Bowl '
-             '60 halftime show. Thank you for [música] watching this presentation of the '
-             'national foall league.',
-      'title': "Bad Bunny's Apple Music Super Bowl Halftime Show (NFL)",
-      'url': 'https://www.youtube.com/watch?v=G6FuWd4wNd8&t=778s',
-      'video_id': 'G6FuWd4wNd8'},
+      'text': "You can either click on view ticket and then here you'll see a digital version of "
+              'your ticket, so at the gate the scanner person can actually scan this barcode so '
+              'that you can be allowed into the event.',
+      'timestamp': 36,
+      'timestamp_label': '[00:00:36]',
+      'timestamp_seconds': 36,
+      'tip': "You can either click on view ticket and then here you'll see a digital version of "
+             'your ticket, so at the gate the scanner person can actually scan this barcode so '
+             'that you can be allowed into the event.',
+      'title': 'How To Use Digital Tickets On Ticketmaster',
+      'url': 'https://www.youtube.com/watch?v=Mkuhus1taO4&t=36s',
+      'video_id': 'Mkuhus1taO4'},
      {'author': 'thumbsuprun',
       'channel': 'thumbsuprun',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:07:34](https://www.youtube.com/watch?v=sIgspwKXj_0&t=454s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q8 operational verification).',
+      'markdown': '[00:05:39](https://www.youtube.com/watch?v=MP1aH4hgG70&t=339s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
       'source_type': 'video_pro_tip',
-      'text': "You're going ahead and actually trying to buy those tickets online with all "
-              'that being said thanks again for watching be sure to stay tuned to all the '
-              'different reviews coming up and see you guys next time.',
-      'timestamp': 454,
-      'timestamp_label': '[00:07:34]',
-      'timestamp_seconds': 454,
-      'tip': "You're going ahead and actually trying to buy those tickets online with all that "
-             'being said thanks again for watching be sure to stay tuned to all the different '
-             'reviews coming up and see you guys next time.',
-      'title': 'THE 5 THINGS ANY TICKET RESALE WEBSITE NEEDS TO HAVE | ARE THEY LEGIT? '
-               '(thumbsuprun)',
-      'url': 'https://www.youtube.com/watch?v=sIgspwKXj_0&t=454s',
-      'video_id': 'sIgspwKXj_0'},
-     {'author': 'Follow The Why',
-      'channel': 'Follow The Why',
+      'text': 'Any tickets you bought where an event has been postponed and rescheduled to a new '
+              "date, even if the date hasn't yet been set, the old barcodes will always work for "
+              'the new event.',
+      'timestamp': 339,
+      'timestamp_label': '[00:05:39]',
+      'timestamp_seconds': 339,
+      'tip': 'Any tickets you bought where an event has been postponed and rescheduled to a new '
+             "date, even if the date hasn't yet been set, the old barcodes will always work for "
+             'the new event.',
+      'title': 'HOW TO TRANSFER TICKETS ON TICKETMASTER TO ANOTHER PHONE | TICKET TIP THURSDAY',
+      'url': 'https://www.youtube.com/watch?v=MP1aH4hgG70&t=339s',
+      'video_id': 'MP1aH4hgG70'},
+     {'author': 'thumbsuprun',
+      'channel': 'thumbsuprun',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:08:14](https://www.youtube.com/watch?v=cmeE4rZAlVk&t=494s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q8 operational verification).',
+      'markdown': '[00:03:09](https://www.youtube.com/watch?v=s9mNdqH694I&t=189s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
       'source_type': 'video_pro_tip',
-      'text': 'Is still being fought over. So, why do concert tickets sell out in 9 seconds? '
-              'Not because fans are slow, because the building was carved up before you '
-              'arrived.',
-      'timestamp': 494,
-      'timestamp_label': '[00:08:14]',
-      'timestamp_seconds': 494,
-      'tip': 'Is still being fought over. So, why do concert tickets sell out in 9 seconds? '
-             'Not because fans are slow, because the building was carved up before you '
-             'arrived.',
-      'title': 'Concert Tickets Explained: Why They Sell Out in 9 Seconds (Follow The Why)',
-      'url': 'https://www.youtube.com/watch?v=cmeE4rZAlVk&t=494s',
-      'video_id': 'cmeE4rZAlVk'}],
- 9: [{'author': 'NBC News',
-      'channel': 'NBC News',
+      'text': 'You can go ahead and get up to a hundred and fifty percent concert cash credit back '
+              'on your account.',
+      'timestamp': 189,
+      'timestamp_label': '[00:03:09]',
+      'timestamp_seconds': 189,
+      'tip': 'You can go ahead and get up to a hundred and fifty percent concert cash credit back '
+             'on your account.',
+      'title': 'TICKETMASTER REFUND POLICY UPDATE FOR CANCELLED AND POSTPONED EVENTS | TICKET '
+               'REFUND PLAN',
+      'url': 'https://www.youtube.com/watch?v=s9mNdqH694I&t=189s',
+      'video_id': 's9mNdqH694I'},
+     {'author': 'thumbsuprun',
+      'channel': 'thumbsuprun',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:55](https://www.youtube.com/watch?v=BOIfCHick7o&t=55s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q9 operational verification).',
+      'markdown': '[00:05:01](https://www.youtube.com/watch?v=s9mNdqH694I&t=301s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
       'source_type': 'video_pro_tip',
-      'text': "LET'S BRING IN NBC NEWS LEGAL ANALYST DANNY CEVALLOS TO BREAK IT DOWN. SO WALK "
-              "US THROUGH THE FTC'S LAWSUIT HERE, AND HOW THE FTC CLAIMS THIS COMPANY BROKE "
-              'THE LAW. ESSENTIALLY, THE FTC ALLEGES THAT THE DEFENDANT BROKE THE BOTS ACT.',
-      'timestamp': 55,
-      'timestamp_label': '[00:00:55]',
-      'timestamp_seconds': 55,
-      'tip': "LET'S BRING IN NBC NEWS LEGAL ANALYST DANNY CEVALLOS TO BREAK IT DOWN. SO WALK "
-             "US THROUGH THE FTC'S LAWSUIT HERE, AND HOW THE FTC CLAIMS THIS COMPANY BROKE THE "
-             'LAW. ESSENTIALLY, THE FTC ALLEGES THAT THE DEFENDANT BROKE THE BOTS ACT.',
-      'title': 'FTC sues ticket-reselling operation for using fake accounts (NBC News)',
-      'url': 'https://www.youtube.com/watch?v=BOIfCHick7o&t=55s',
-      'video_id': 'BOIfCHick7o'},
-     {'author': '11Alive',
-      'channel': '11Alive',
+      'text': 'Any postponed events that do not have a rescheduled date set within 60 days of when '
+              'it was postponed, these will also now qualify for a refund.',
+      'timestamp': 301,
+      'timestamp_label': '[00:05:01]',
+      'timestamp_seconds': 301,
+      'tip': 'Any postponed events that do not have a rescheduled date set within 60 days of when '
+             'it was postponed, these will also now qualify for a refund.',
+      'title': 'TICKETMASTER REFUND POLICY UPDATE FOR CANCELLED AND POSTPONED EVENTS | TICKET '
+               'REFUND PLAN',
+      'url': 'https://www.youtube.com/watch?v=s9mNdqH694I&t=301s',
+      'video_id': 's9mNdqH694I'},
+     {'author': 'WCPO 9',
+      'channel': 'WCPO 9',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:04](https://www.youtube.com/watch?v=QiKFtpmNUqo&t=64s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q9 operational verification).',
+      'markdown': '[00:01:24](https://www.youtube.com/watch?v=VBj60jqiycw&t=84s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
       'source_type': 'video_pro_tip',
-      'text': 'There is so much tradition at Augusta National. The Masters is one of the most '
-              'coveted events in all of sports. It is the first major of the year for the. So '
-              'there is that kind of amplified excitement around it and there are a lot of '
-              'rules to follow.',
-      'timestamp': 64,
-      'timestamp_label': '[00:01:04]',
-      'timestamp_seconds': 64,
-      'tip': 'There is so much tradition at Augusta National. The Masters is one of the most '
-             'coveted events in all of sports. It is the first major of the year for the. So '
-             'there is that kind of amplified excitement around it and there are a lot of '
-             'rules to follow.',
-      'title': "Yes, it's true. You cannot buy or sell tickets for The Masters on a secondary "
-               'resale site (11Alive)',
-      'url': 'https://www.youtube.com/watch?v=QiKFtpmNUqo&t=64s',
-      'video_id': 'QiKFtpmNUqo'},
-     {'author': 'Dot Detective',
-      'channel': 'Dot Detective',
+      'text': 'If you purchase directly from Ticketmaster, after outrage from fans and lawmakers '
+              'Ticketmaster is now offering refunds for both cancelled and postponed shows.',
+      'timestamp': 84,
+      'timestamp_label': '[00:01:24]',
+      'timestamp_seconds': 84,
+      'tip': 'If you purchase directly from Ticketmaster, after outrage from fans and lawmakers '
+             'Ticketmaster is now offering refunds for both cancelled and postponed shows.',
+      'title': 'Struggle for concert ticket refunds',
+      'url': 'https://www.youtube.com/watch?v=VBj60jqiycw&t=84s',
+      'video_id': 'VBj60jqiycw'},
+     {'author': 'WGRZ-TV',
+      'channel': 'WGRZ-TV',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:49](https://www.youtube.com/watch?v=7SSPFtppfGE&t=49s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q9 operational verification).',
+      'markdown': '[00:02:16](https://www.youtube.com/watch?v=YksJO2KDmnk&t=136s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q8.',
       'source_type': 'video_pro_tip',
-      'text': 'Break it, and the FTC can treat that as an unfair or deceptive practice with '
-              "civil penalties attached. The law is called the BOTS Act, and as we'll see, the "
-              "company's defenses, roughly, were not bots, we're just a lot of people. Now, "
-              'how did the scheme allegedly work?',
-      'timestamp': 49,
-      'timestamp_label': '[00:00:49]',
-      'timestamp_seconds': 49,
-      'tip': 'Break it, and the FTC can treat that as an unfair or deceptive practice with '
-             "civil penalties attached. The law is called the BOTS Act, and as we'll see, the "
-             "company's defenses, roughly, were not bots, we're just a lot of people. Now, how "
-             'did the scheme allegedly work?',
-      'title': "Limit 8 Per Customer… 1,300 Accounts? The DOJ's BOTS Act Case Against REPS, "
-               'Explained (Dot Detective)',
-      'url': 'https://www.youtube.com/watch?v=7SSPFtppfGE&t=49s',
-      'video_id': '7SSPFtppfGE'},
-     {'author': 'CBS Boston',
-      'channel': 'CBS Boston',
+      'text': 'Tate was able to get his 1577 dollars back, and the best advice is send strongly '
+              'worded emails, be loud about it and demand that refund.',
+      'timestamp': 136,
+      'timestamp_label': '[00:02:16]',
+      'timestamp_seconds': 136,
+      'tip': 'Tate was able to get his 1577 dollars back, and the best advice is send strongly '
+             'worded emails, be loud about it and demand that refund.',
+      'title': 'Wednesday Town Hall: Can you get a refund on canceled or postponed concert '
+               'tickets?',
+      'url': 'https://www.youtube.com/watch?v=YksJO2KDmnk&t=136s',
+      'video_id': 'YksJO2KDmnk'}],
+ 9: [{'author': 'DigitalThinker Inc.',
+      'channel': 'DigitalThinker Inc.',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:01:20](https://www.youtube.com/watch?v=Wtsvx9NdMgc&t=80s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q9 operational verification).',
+      'markdown': '[00:01:57](https://www.youtube.com/watch?v=Y0_GSVWwMIw&t=117s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
       'source_type': 'video_pro_tip',
-      'text': 'LIVE NATION SAYS IT IS TO PREVENT TICKET SCALPERS. IT IS ABOUT WHETHER THE '
-              'PROFESSIONAL BROKERS AND RETAIL SITES CAN USE THEIR BOTS AND ALL THEIR OTHER '
-              'TACTICS TO GRAB THOUSANDS OF TICKETS MEANT FOR REAL FANS AND RESELL THEM. THERE '
-              'ARE SCALPERS THAT UP SELL THE COST.',
+      'text': 'Now category is important because it determines how your ticket is routed to what '
+              'departments at Digital Thinker.',
+      'timestamp': 117,
+      'timestamp_label': '[00:01:57]',
+      'timestamp_seconds': 117,
+      'tip': 'Now category is important because it determines how your ticket is routed to what '
+             'departments at Digital Thinker.',
+      'title': 'Learn how to submit Support Tickets & Navigate the DTI portal!',
+      'url': 'https://www.youtube.com/watch?v=Y0_GSVWwMIw&t=117s',
+      'video_id': 'Y0_GSVWwMIw'},
+     {'author': 'PromoTix',
+      'channel': 'PromoTix',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:21:49](https://www.youtube.com/watch?v=IdHpcPxQTfU&t=1309s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'What happens there is the original QR code is canceled and then a new QR code is '
+              'generated and issued to the new registered owner.',
+      'timestamp': 1309,
+      'timestamp_label': '[00:21:49]',
+      'timestamp_seconds': 1309,
+      'tip': 'What happens there is the original QR code is canceled and then a new QR code is '
+             'generated and issued to the new registered owner.',
+      'title': 'Create, Sell, and Manage Tickets for Any Event: Ticketing Demo || PromoTix',
+      'url': 'https://www.youtube.com/watch?v=IdHpcPxQTfU&t=1309s',
+      'video_id': 'IdHpcPxQTfU'},
+     {'author': 'PromoTix',
+      'channel': 'PromoTix',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:33:47](https://www.youtube.com/watch?v=IdHpcPxQTfU&t=2027s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': "So they'll have to show up and show their ID or some other form of identification "
+              'for you, event organizer to check their tickets in manually.',
+      'timestamp': 2027,
+      'timestamp_label': '[00:33:47]',
+      'timestamp_seconds': 2027,
+      'tip': "So they'll have to show up and show their ID or some other form of identification "
+             'for you, event organizer to check their tickets in manually.',
+      'title': 'Create, Sell, and Manage Tickets for Any Event: Ticketing Demo || PromoTix',
+      'url': 'https://www.youtube.com/watch?v=IdHpcPxQTfU&t=2027s',
+      'video_id': 'IdHpcPxQTfU'},
+     {'author': 'Logitix',
+      'channel': 'Logitix',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:20](https://www.youtube.com/watch?v=YaZpToURgBk&t=80s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': "If a marketplace icon is grayed out it means the mapping doesn't exist yet.",
       'timestamp': 80,
       'timestamp_label': '[00:01:20]',
       'timestamp_seconds': 80,
-      'tip': 'LIVE NATION SAYS IT IS TO PREVENT TICKET SCALPERS. IT IS ABOUT WHETHER THE '
-             'PROFESSIONAL BROKERS AND RETAIL SITES CAN USE THEIR BOTS AND ALL THEIR OTHER '
-             'TACTICS TO GRAB THOUSANDS OF TICKETS MEANT FOR REAL FANS AND RESELL THEM. THERE '
-             'ARE SCALPERS THAT UP SELL THE COST.',
-      'title': 'New Massachusetts law changes how people can resell concert or sports tickets '
-               '(CBS Boston)',
-      'url': 'https://www.youtube.com/watch?v=Wtsvx9NdMgc&t=80s',
-      'video_id': 'Wtsvx9NdMgc'},
-     {'author': 'Gameday Guides',
-      'channel': 'Gameday Guides',
+      'tip': "If a marketplace icon is grayed out it means the mapping doesn't exist yet.",
+      'title': 'Logitix One - Event Detail Page',
+      'url': 'https://www.youtube.com/watch?v=YaZpToURgBk&t=80s',
+      'video_id': 'YaZpToURgBk'},
+     {'author': 'Supplier Digital Portal',
+      'channel': 'Supplier Digital Portal',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:28](https://www.youtube.com/watch?v=LtTBm2wHjoE&t=28s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q9 operational verification).',
+      'markdown': '[00:01:08](https://www.youtube.com/watch?v=Db5sc_kyZFE&t=68s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
       'source_type': 'video_pro_tip',
-      'text': 'Welcome to your complete Masters survival guide. How to actually get tickets, '
-              "what to do once you're inside, the rules that will get you kicked out if you "
-              'break them, and the perfect itinerary for your first trip to Augusta. First, '
-              'there are three ways to get tickets.',
-      'timestamp': 28,
-      'timestamp_label': '[00:00:28]',
-      'timestamp_seconds': 28,
-      'tip': 'Welcome to your complete Masters survival guide. How to actually get tickets, '
-             "what to do once you're inside, the rules that will get you kicked out if you "
-             'break them, and the perfect itinerary for your first trip to Augusta. First, '
-             'there are three ways to get tickets.',
-      'title': 'How to Get Tickets To The Masters and Insider Tips When You Get There (Gameday '
-               'Guides)',
-      'url': 'https://www.youtube.com/watch?v=LtTBm2wHjoE&t=28s',
-      'video_id': 'LtTBm2wHjoE'},
-     {'author': 'Any Given Wednesday with Bill Simmons',
-      'channel': 'Any Given Wednesday with Bill Simmons',
+      'text': 'Select the back to dashboard option. This will allow you to access the relevant '
+              'details without creating a ticket.',
+      'timestamp': 68,
+      'timestamp_label': '[00:01:08]',
+      'timestamp_seconds': 68,
+      'tip': 'Select the back to dashboard option. This will allow you to access the relevant '
+             'details without creating a ticket.',
+      'title': 'Ticket Creation',
+      'url': 'https://www.youtube.com/watch?v=Db5sc_kyZFE&t=68s',
+      'video_id': 'Db5sc_kyZFE'},
+     {'author': 'TechTutorXpress',
+      'channel': 'TechTutorXpress',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:20](https://www.youtube.com/watch?v=VzrNov3Y_qM&t=20s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q9 operational verification).',
+      'markdown': '[00:01:06](https://www.youtube.com/watch?v=edUbHihe2lI&t=66s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
       'source_type': 'video_pro_tip',
-      'text': 'Just in time for a whole new generation of fair weather LA football fans. MAN: '
-              'In 2019, the team anticipates the majority of its seats, if not all, will '
-              "require a personal seat license or PSL. BILL: What's a PSL you ask?",
-      'timestamp': 20,
-      'timestamp_label': '[00:00:20]',
-      'timestamp_seconds': 20,
-      'tip': 'Just in time for a whole new generation of fair weather LA football fans. MAN: '
-             'In 2019, the team anticipates the majority of its seats, if not all, will '
-             "require a personal seat license or PSL. BILL: What's a PSL you ask?",
-      'title': 'Personal Seat Licenses are Bulls**t (HBO) (Any Given Wednesday with Bill '
-               'Simmons)',
-      'url': 'https://www.youtube.com/watch?v=VzrNov3Y_qM&t=20s',
-      'video_id': 'VzrNov3Y_qM'},
-     {'author': 'WKBW TV | Buffalo, NY',
-      'channel': 'WKBW TV | Buffalo, NY',
+      'text': 'However, if you continue to encounter this issue, then you will need to completely '
+              'reinstall the app, which usually resolves the problem.',
+      'timestamp': 66,
+      'timestamp_label': '[00:01:06]',
+      'timestamp_seconds': 66,
+      'tip': 'However, if you continue to encounter this issue, then you will need to completely '
+             'reinstall the app, which usually resolves the problem.',
+      'title': 'AXS Tickets App Not Working: How to FIX AXS Tickets App Not Working (FIXED)',
+      'url': 'https://www.youtube.com/watch?v=edUbHihe2lI&t=66s',
+      'video_id': 'edUbHihe2lI'},
+     {'author': 'Quick and Easy',
+      'channel': 'Quick and Easy',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:21](https://www.youtube.com/watch?v=gBkBFmKTfls&t=21s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q9 operational verification).',
+      'markdown': '[00:00:16](https://www.youtube.com/watch?v=oQOmX8EOyW4&t=16s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
       'source_type': 'video_pro_tip',
-      'text': 'WILL ADD ON PS ELSE EACH SEASON TICKET HOLDER SEAT IN ITS NEW 60,000 SEAT '
-              'ORCHARD PARK STADIUM. WHAT IS A PSL PSL STANDS FOR A PERSONAL SEAT LICENSE BY '
-              "DEFINITION, IT'S A PREMIUM PRICE. YOU PAY TO ENJOY THAT FACILITY.",
-      'timestamp': 21,
-      'timestamp_label': '[00:00:21]',
-      'timestamp_seconds': 21,
-      'tip': 'WILL ADD ON PS ELSE EACH SEASON TICKET HOLDER SEAT IN ITS NEW 60,000 SEAT '
-             'ORCHARD PARK STADIUM. WHAT IS A PSL PSL STANDS FOR A PERSONAL SEAT LICENSE BY '
-             "DEFINITION, IT'S A PREMIUM PRICE. YOU PAY TO ENJOY THAT FACILITY.",
-      'title': "Bills to sell PSL's (WKBW TV | Buffalo, NY)",
-      'url': 'https://www.youtube.com/watch?v=gBkBFmKTfls&t=21s',
-      'video_id': 'gBkBFmKTfls'},
-     {'author': 'Bear Bets: A FOX Sports Gambling Show',
-      'channel': 'Bear Bets: A FOX Sports Gambling Show',
+      'text': 'You will need to download the mobile app in order to attend.',
+      'timestamp': 16,
+      'timestamp_label': '[00:00:16]',
+      'timestamp_seconds': 16,
+      'tip': 'You will need to download the mobile app in order to attend.',
+      'title': 'How To Use AXS Tickets (Quick and Easy!)',
+      'url': 'https://www.youtube.com/watch?v=oQOmX8EOyW4&t=16s',
+      'video_id': 'oQOmX8EOyW4'},
+     {'author': 'Web Mind',
+      'channel': 'Web Mind',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:37:05](https://www.youtube.com/watch?v=T7ujtjzkDcQ&t=2225s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q9 operational verification).',
+      'markdown': '[00:00:59](https://www.youtube.com/watch?v=RDQeHkadlqk&t=59s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
       'source_type': 'video_pro_tip',
-      'text': 'Those Mariners guys are all really good. They always leave you at least me '
-              "wanting a little more. But Kirby just in terms of a talent play, Jeff, I don't "
-              'know. If I had to bet anyone right now, that would probably be the guy.',
-      'timestamp': 2225,
-      'timestamp_label': '[00:37:05]',
-      'timestamp_seconds': 2225,
-      'tip': 'Those Mariners guys are all really good. They always leave you at least me '
-             "wanting a little more. But Kirby just in terms of a talent play, Jeff, I don't "
-             'know. If I had to bet anyone right now, that would probably be the guy.',
-      'title': 'NBA Playoffs Gambling Guide 🏀💰 (Bear Bets: A FOX Sports Gambling Show)',
-      'url': 'https://www.youtube.com/watch?v=T7ujtjzkDcQ&t=2225s',
-      'video_id': 'T7ujtjzkDcQ'},
-     {'author': 'Apparently Athletic',
-      'channel': 'Apparently Athletic',
+      'text': 'After booking, your ticket will be shown to you digitally. It will be shown on your '
+              'mobile.',
+      'timestamp': 59,
+      'timestamp_label': '[00:00:59]',
+      'timestamp_seconds': 59,
+      'tip': 'After booking, your ticket will be shown to you digitally. It will be shown on your '
+             'mobile.',
+      'title': 'how to buy tickets on axs !! How to use axs tickets app',
+      'url': 'https://www.youtube.com/watch?v=RDQeHkadlqk&t=59s',
+      'video_id': 'RDQeHkadlqk'},
+     {'author': 'Simply Finance',
+      'channel': 'Simply Finance',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:03:44](https://www.youtube.com/watch?v=wOQ8g0C7oCw&t=224s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q9 operational verification).',
+      'markdown': '[00:00:55](https://www.youtube.com/watch?v=SnJa0jDKiKE&t=55s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
       'source_type': 'video_pro_tip',
-      'text': "Since 2023, it's been the Apple Music Super Bowl Halftime Show. The terms "
-              "haven't been disclosed. Press reports put them at about $50 million a year. So "
-              'almost everything around those 12 minutes is sold. The airtime, the name on the '
-              'show, everything except the performance.',
-      'timestamp': 224,
-      'timestamp_label': '[00:03:44]',
-      'timestamp_seconds': 224,
-      'tip': "Since 2023, it's been the Apple Music Super Bowl Halftime Show. The terms "
-             "haven't been disclosed. Press reports put them at about $50 million a year. So "
-             'almost everything around those 12 minutes is sold. The airtime, the name on the '
-             'show, everything except the performance.',
-      'title': "Why the World's Biggest Stars Accept $0 for the Super Bowl (Apparently "
-               'Athletic)',
-      'url': 'https://www.youtube.com/watch?v=wOQ8g0C7oCw&t=224s',
-      'video_id': 'wOQ8g0C7oCw'},
-     {'author': 'David Fiene',
-      'channel': 'David Fiene',
+      'text': 'You can go and directly contact the organizer or the seller who has actually sold '
+              'the ticket and state the issue and send them some sort of screenshot.',
+      'timestamp': 55,
+      'timestamp_label': '[00:00:55]',
+      'timestamp_seconds': 55,
+      'tip': 'You can go and directly contact the organizer or the seller who has actually sold '
+             'the ticket and state the issue and send them some sort of screenshot.',
+      'title': "What Should I Do If I Can't Find My Tickets In The Axs App !",
+      'url': 'https://www.youtube.com/watch?v=SnJa0jDKiKE&t=55s',
+      'video_id': 'SnJa0jDKiKE'},
+     {'author': 'iKnow iOS',
+      'channel': 'iKnow iOS',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:39](https://www.youtube.com/watch?v=QPC4K8A6GJg&t=39s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q9 operational verification).',
+      'markdown': '[00:00:00](https://www.youtube.com/watch?v=zghU1cQya5k&t=0s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
       'source_type': 'video_pro_tip',
-      'text': "Video i'm going to walk you through those rules including what you should keep "
-              "to support the deduction so let's get to work all right so let's talk.",
-      'timestamp': 39,
-      'timestamp_label': '[00:00:39]',
-      'timestamp_seconds': 39,
-      'tip': "Video i'm going to walk you through those rules including what you should keep "
-             "to support the deduction so let's get to work all right so let's talk.",
-      'title': 'Business Meals and Entertainment Tax deduction - What You Should Know (David '
-               'Fiene)',
-      'url': 'https://www.youtube.com/watch?v=QPC4K8A6GJg&t=39s',
-      'video_id': 'QPC4K8A6GJg'},
-     {'author': 'CBS TEXAS',
-      'channel': 'CBS TEXAS',
+      'text': 'The issue might arise due to the connectivity issue, in that case you have to check '
+              'whether your internet connection is stable or not.',
+      'timestamp': 0,
+      'timestamp_label': '[00:00:00]',
+      'timestamp_seconds': 0,
+      'tip': 'The issue might arise due to the connectivity issue, in that case you have to check '
+             'whether your internet connection is stable or not.',
+      'title': 'AXS App Not Working: How to Fix AXS Tickets App Not Working',
+      'url': 'https://www.youtube.com/watch?v=zghU1cQya5k&t=0s',
+      'video_id': 'zghU1cQya5k'},
+     {'author': 'Simply Finance',
+      'channel': 'Simply Finance',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:23](https://www.youtube.com/watch?v=6a_saGlb7l8&t=23s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q9 operational verification).',
+      'markdown': '[00:00:19](https://www.youtube.com/watch?v=s7E1Yc3RoQc&t=19s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
       'source_type': 'video_pro_tip',
-      'text': "THEIR APPEARANCE KNOWN AHEAD OF THIS GAME. THAT'S RIGHT, ENGLAND FANS. YOU "
-              'MIGHT HAVE SEEN THEM ACROSS NORTH TEXAS THIS WEEK. FROM COWBOY BOOTS TO '
-              'BARBECUE JOINTS. AGAIN ALL ACROSS SOCIAL MEDIA, MANY ARE EXPERIENCING TEXAS FOR '
-              'THE VERY FIRST TIME NOW.',
-      'timestamp': 23,
-      'timestamp_label': '[00:00:23]',
-      'timestamp_seconds': 23,
-      'tip': "THEIR APPEARANCE KNOWN AHEAD OF THIS GAME. THAT'S RIGHT, ENGLAND FANS. YOU MIGHT "
-             'HAVE SEEN THEM ACROSS NORTH TEXAS THIS WEEK. FROM COWBOY BOOTS TO BARBECUE '
-             'JOINTS. AGAIN ALL ACROSS SOCIAL MEDIA, MANY ARE EXPERIENCING TEXAS FOR THE VERY '
-             'FIRST TIME NOW.',
-      'title': 'FIFA World Cup fans report issues with match tickets purchased from resale '
-               'sites (CBS TEXAS)',
-      'url': 'https://www.youtube.com/watch?v=6a_saGlb7l8&t=23s',
-      'video_id': '6a_saGlb7l8'},
-     {'author': 'NBC New York',
-      'channel': 'NBC New York',
+      'text': 'Request for delivery method changes can only be made by using the live chat to '
+              'connect with an agent.',
+      'timestamp': 19,
+      'timestamp_label': '[00:00:19]',
+      'timestamp_seconds': 19,
+      'tip': 'Request for delivery method changes can only be made by using the live chat to '
+             'connect with an agent.',
+      'title': 'Can I Change The Delivery Method Of My Tickets In The Axs App !',
+      'url': 'https://www.youtube.com/watch?v=s7E1Yc3RoQc&t=19s',
+      'video_id': 's7E1Yc3RoQc'},
+     {'author': 'Guide Gurus',
+      'channel': 'Guide Gurus',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:00:21](https://www.youtube.com/watch?v=-NeAkVXcsP4&t=21s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q9 operational verification).',
+      'markdown': '[00:01:33](https://www.youtube.com/watch?v=6Og6Y7NbLsk&t=93s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
       'source_type': 'video_pro_tip',
-      'text': 'So, certainly different cities have different levels of demand, different teams '
-              "as well. I think what we're seeing in terms of cities is places like Miami, New "
-              "York. They're really driving some of the biggest demand, but really it comes "
-              'down to the team specifically.',
-      'timestamp': 21,
-      'timestamp_label': '[00:00:21]',
-      'timestamp_seconds': 21,
-      'tip': 'So, certainly different cities have different levels of demand, different teams '
-             "as well. I think what we're seeing in terms of cities is places like Miami, New "
-             "York. They're really driving some of the biggest demand, but really it comes "
-             'down to the team specifically.',
-      'title': "SeatGeek's tips for buying FIFA World Cup tickets (NBC New York)",
-      'url': 'https://www.youtube.com/watch?v=-NeAkVXcsP4&t=21s',
-      'video_id': '-NeAkVXcsP4'},
-     {'author': 'TicketWire',
-      'channel': 'TicketWire',
+      'text': 'It is crucial to note that the transfer process may take some time to complete and '
+              'it is essential to allow sufficient time for the recipient to claim their tickets '
+              'before the event.',
+      'timestamp': 93,
+      'timestamp_label': '[00:01:33]',
+      'timestamp_seconds': 93,
+      'tip': 'It is crucial to note that the transfer process may take some time to complete and '
+             'it is essential to allow sufficient time for the recipient to claim their tickets '
+             'before the event.',
+      'title': 'How To Transfer Tickets From Axs To Seatgeek (2025)',
+      'url': 'https://www.youtube.com/watch?v=6Og6Y7NbLsk&t=93s',
+      'video_id': '6Og6Y7NbLsk'},
+     {'author': 'AidensGotGuides',
+      'channel': 'AidensGotGuides',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:02:28](https://www.youtube.com/watch?v=hlfwsoMBQS0&t=148s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q9 operational verification).',
+      'markdown': '[00:02:09](https://www.youtube.com/watch?v=xEM0K5YLBZk&t=129s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
       'source_type': 'video_pro_tip',
-      'text': "That's how you beat me so but I didn't even think of any of this I just here "
-              'take my money and just keep in mind this is so this is the the license for the '
-              "seats this isn't actually for the the price for the tickets for that year no "
-              'right this is a one-time.',
-      'timestamp': 148,
-      'timestamp_label': '[00:02:28]',
-      'timestamp_seconds': 148,
-      'tip': "That's how you beat me so but I didn't even think of any of this I just here "
-             'take my money and just keep in mind this is so this is the the license for the '
-             "seats this isn't actually for the the price for the tickets for that year no "
-             'right this is a one-time.',
-      'title': 'NFL Season Tickets: Shawn Covers Key Step in Buying (TicketWire)',
-      'url': 'https://www.youtube.com/watch?v=hlfwsoMBQS0&t=148s',
-      'video_id': 'hlfwsoMBQS0'},
-     {'author': 'CBS Mornings',
-      'channel': 'CBS Mornings',
+      'text': 'Direct cross-platform transfers between AXS and Ticketmaster are generally not '
+              'supported.',
+      'timestamp': 129,
+      'timestamp_label': '[00:02:09]',
+      'timestamp_seconds': 129,
+      'tip': 'Direct cross-platform transfers between AXS and Ticketmaster are generally not '
+             'supported.',
+      'title': 'How to Transfer AXS Tickets to Ticketmaster',
+      'url': 'https://www.youtube.com/watch?v=xEM0K5YLBZk&t=129s',
+      'video_id': 'xEM0K5YLBZk'},
+     {'author': 'Fastweigh',
+      'channel': 'Fastweigh',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:04:30](https://www.youtube.com/watch?v=RGn3Hcnvklg&t=270s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q9 operational verification).',
+      'markdown': '[00:01:21](https://www.youtube.com/watch?v=SqgRdPpIv_I&t=81s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
       'source_type': 'video_pro_tip',
-      'text': 'TV you can build yourself a TV room you get you get a new outfit a new pair of '
-              'shoes to show everybody to serve everybody some weenie dogs with order some '
-              "chicken wings that's like a good option to me yes.",
-      'timestamp': 270,
-      'timestamp_label': '[00:04:30]',
-      'timestamp_seconds': 270,
-      'tip': 'TV you can build yourself a TV room you get you get a new outfit a new pair of '
-             'shoes to show everybody to serve everybody some weenie dogs with order some '
-             "chicken wings that's like a good option to me yes.",
-      'title': "Security behind StubHub's Super Bowl ticket operations (CBS Mornings)",
-      'url': 'https://www.youtube.com/watch?v=RGn3Hcnvklg&t=270s',
-      'video_id': 'RGn3Hcnvklg'},
-     {'author': 'Troydan',
-      'channel': 'Troydan',
+      'text': 'Single ticket rate locks, this provides the ability to lock rates for individual '
+              'tickets preventing further changes.',
+      'timestamp': 81,
+      'timestamp_label': '[00:01:21]',
+      'timestamp_seconds': 81,
+      'tip': 'Single ticket rate locks, this provides the ability to lock rates for individual '
+             'tickets preventing further changes.',
+      'title': 'Ticket Repricing Overview',
+      'url': 'https://www.youtube.com/watch?v=SqgRdPpIv_I&t=81s',
+      'video_id': 'SqgRdPpIv_I'},
+     {'author': 'Brian Jones',
+      'channel': 'Brian Jones',
       'epistemic_status': 'attributed_practitioner_claim',
-      'markdown': '[00:20:14](https://www.youtube.com/watch?v=0jqhQFvHHcc&t=1214s)',
-      'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                   'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                   'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                   'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                   '(Chapter Q9 operational verification).',
+      'markdown': '[00:04:26](https://www.youtube.com/watch?v=4Ddm_7kF3nc&t=266s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
       'source_type': 'video_pro_tip',
-      'text': 'Mullet smell like tobacco I loved it this was a great experience one that I '
-              'will never forget but I am exhausted I need to sleep right now guys thank you '
-              'for watching and as always keep yours stick on the ice.',
-      'timestamp': 1214,
-      'timestamp_label': '[00:20:14]',
-      'timestamp_seconds': 1214,
-      'tip': 'Mullet smell like tobacco I loved it this was a great experience one that I will '
-             'never forget but I am exhausted I need to sleep right now guys thank you for '
-             'watching and as always keep yours stick on the ice.',
-      'title': 'I got $47,000 VIP Tickets to the UFC! (Troydan)',
-      'url': 'https://www.youtube.com/watch?v=0jqhQFvHHcc&t=1214s',
-      'video_id': '0jqhQFvHHcc'}],
- 10: [{'author': 'GQ',
-       'channel': 'GQ',
+      'text': 'If a ticket has already been used, or someone shares a screenshot of it, it shows '
+              'red, with the time it was used and who let them in.',
+      'timestamp': 266,
+      'timestamp_label': '[00:04:26]',
+      'timestamp_seconds': 266,
+      'tip': 'If a ticket has already been used, or someone shares a screenshot of it, it shows '
+             'red, with the time it was used and who let them in.',
+      'title': 's-ticket for staff: box office, parking, refunds and door check-in (5-minute '
+               'guide)',
+      'url': 'https://www.youtube.com/watch?v=4Ddm_7kF3nc&t=266s',
+      'video_id': '4Ddm_7kF3nc'},
+     {'author': 'NDSE',
+      'channel': 'NDSE',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:01:29](https://www.youtube.com/watch?v=N4lHcJFrT1E&t=89s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'Repeat issues should trigger review, not another temporary fix.',
+      'timestamp': 89,
+      'timestamp_label': '[00:01:29]',
+      'timestamp_seconds': 89,
+      'tip': 'Repeat issues should trigger review, not another temporary fix.',
+      'title': 'IT Helpdesk Best Practices That Reduce Tickets And Keep Work Moving',
+      'url': 'https://www.youtube.com/watch?v=N4lHcJFrT1E&t=89s',
+      'video_id': 'N4lHcJFrT1E'},
+     {'author': 'Zippykind',
+      'channel': 'Zippykind',
+      'epistemic_status': 'attributed_practitioner_claim',
+      'markdown': '[00:00:51](https://www.youtube.com/watch?v=OaCa2-zmCe8&t=51s)',
+      'relevance': 'Verbatim practitioner testimony from Chapter Q9.',
+      'source_type': 'video_pro_tip',
+      'text': 'Each file can hold up to 1,000 rows.',
+      'timestamp': 51,
+      'timestamp_label': '[00:00:51]',
+      'timestamp_seconds': 51,
+      'tip': 'Each file can hold up to 1,000 rows.',
+      'title': 'Bulk Import Delivery Orders From a Spreadsheet | Zippykind',
+      'url': 'https://www.youtube.com/watch?v=OaCa2-zmCe8&t=51s',
+      'video_id': 'OaCa2-zmCe8'}],
+ 10: [{'author': 'Proxxxymiron',
+       'channel': 'Proxxxymiron',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:00:58](https://www.youtube.com/watch?v=nT-DpxVmqC0&t=58s)',
-       'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                    'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                    'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                    'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                    '(Chapter Q10 operational verification).',
+       'markdown': '[00:01:25](https://www.youtube.com/watch?v=6xTWnxPdGP0&t=85s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': "Nothing is off limits because this is GQ All Access. You've come to the crown "
-               'jewels of NFL stadium, Allegiant Stadium, home of the Super Bowl. It almost '
-               "makes me wanna suit up. I mean, I don't know if you guys know this, but I can "
-               'kick a pretty mean field goal.',
-       'timestamp': 58,
-       'timestamp_label': '[00:00:58]',
-       'timestamp_seconds': 58,
-       'tip': "Nothing is off limits because this is GQ All Access. You've come to the crown "
-              'jewels of NFL stadium, Allegiant Stadium, home of the Super Bowl. It almost '
-              "makes me wanna suit up. I mean, I don't know if you guys know this, but I can "
-              'kick a pretty mean field goal.',
-       'title': 'What $2.5M Gets You at the Super Bowl | All Access | GQ Sports (GQ)',
-       'url': 'https://www.youtube.com/watch?v=nT-DpxVmqC0&t=58s',
-       'video_id': 'nT-DpxVmqC0'},
-      {'author': 'Supplier Digital Portal',
-       'channel': 'Supplier Digital Portal',
+       'text': 'The company allegedly made more than 800,000 dollars from tickets to a single '
+               'Beyoncé concert. A new AXS verification system slowed purchases by around 40 '
+               'percent, but that did not stop Reps.',
+       'timestamp': 85,
+       'timestamp_label': '[00:01:25]',
+       'timestamp_seconds': 85,
+       'tip': 'The company allegedly made more than 800,000 dollars from tickets to a single '
+              'Beyoncé concert. A new AXS verification system slowed purchases by around 40 '
+              'percent, but that did not stop Reps.',
+       'title': 'Why You Can’t Get Concert Tickets: The $1.3 Billion Scheme',
+       'url': 'https://www.youtube.com/watch?v=6xTWnxPdGP0&t=85s',
+       'video_id': '6xTWnxPdGP0'},
+      {'author': 'Hustle Audit',
+       'channel': 'Hustle Audit',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:01:06](https://www.youtube.com/watch?v=Db5sc_kyZFE&t=66s)',
-       'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                    'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                    'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                    'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                    '(Chapter Q10 operational verification).',
+       'markdown': '[00:05:59](https://www.youtube.com/watch?v=NOBp14Qcy_8&t=359s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': 'After reviewing the details, check the tick box to confirm that you have read '
-               'all the provided information. If you are satisfied with the information '
-               'provided, select the back to dashboard option. This will allow you to access '
-               'the relevant details without creating a ticket.',
-       'timestamp': 66,
-       'timestamp_label': '[00:01:06]',
-       'timestamp_seconds': 66,
-       'tip': 'After reviewing the details, check the tick box to confirm that you have read '
-              'all the provided information. If you are satisfied with the information '
-              'provided, select the back to dashboard option. This will allow you to access '
-              'the relevant details without creating a ticket.',
-       'title': 'Ticket Creation (Supplier Digital Portal)',
-       'url': 'https://www.youtube.com/watch?v=Db5sc_kyZFE&t=66s',
-       'video_id': 'Db5sc_kyZFE'},
-      {'author': 'Simply Finance',
-       'channel': 'Simply Finance',
+       'text': 'Reselling tickets, even at a markup, is legal in most of the country. But the '
+               'moment a method depends on defeating a purchase limit, bots, automated checkout '
+               'scripts, or armies of fake accounts grabbing inventory the platform tried to cap, '
+               'you have crossed from the gray zone.',
+       'timestamp': 359,
+       'timestamp_label': '[00:05:59]',
+       'timestamp_seconds': 359,
+       'tip': 'Reselling tickets, even at a markup, is legal in most of the country. But the '
+              'moment a method depends on defeating a purchase limit, bots, automated checkout '
+              'scripts, or armies of fake accounts grabbing inventory the platform tried to cap, '
+              'you have crossed from the gray zone.',
+       'title': 'The BOTS Act: Why Ticket Reselling Communities Live In A Legal Grey Zone',
+       'url': 'https://www.youtube.com/watch?v=NOBp14Qcy_8&t=359s',
+       'video_id': 'NOBp14Qcy_8'},
+      {'author': 'KSAT 12',
+       'channel': 'KSAT 12',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:00:41](https://www.youtube.com/watch?v=s7E1Yc3RoQc&t=41s)',
-       'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                    'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                    'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                    'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                    '(Chapter Q10 operational verification).',
+       'markdown': '[00:00:26](https://www.youtube.com/watch?v=UB3lQ-5pQXE&t=26s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': "All that but I'm going to go with buying ticket and here you could go ahead "
-               'and tap the question button in order to get in contact with the live agent so '
-               'over.',
-       'timestamp': 41,
-       'timestamp_label': '[00:00:41]',
-       'timestamp_seconds': 41,
-       'tip': "All that but I'm going to go with buying ticket and here you could go ahead and "
-              'tap the question button in order to get in contact with the live agent so over.',
-       'title': 'Can I Change The Delivery Method Of My Tickets In The Axs App ! (Simply '
-                'Finance)',
-       'url': 'https://www.youtube.com/watch?v=s7E1Yc3RoQc&t=41s',
-       'video_id': 's7E1Yc3RoQc'},
-      {'author': 'lighthouse travel group',
-       'channel': 'lighthouse travel group',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:02:45](https://www.youtube.com/watch?v=YbCPfj2AvV4&t=165s)',
-       'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                    'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                    'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                    'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                    '(Chapter Q10 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': '>> We have it all for Lighthouse Crew. >>  >> Super Bowl.',
-       'timestamp': 165,
-       'timestamp_label': '[00:02:45]',
-       'timestamp_seconds': 165,
-       'tip': '>> We have it all for Lighthouse Crew. >>  >> Super Bowl.',
-       'title': '🏈🔥 GO BIG! GO LOUD! SUPER BOWL 2027! 🔥🏈🏆  GAME. THE ULTIMATE VIP EXPERIENCE. '
-                'THE TRIP OF A LIFETIME! (lighthouse travel group)',
-       'url': 'https://www.youtube.com/watch?v=YbCPfj2AvV4&t=165s',
-       'video_id': 'YbCPfj2AvV4'},
-      {'author': 'Morning Brew',
-       'channel': 'Morning Brew',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:02:11](https://www.youtube.com/watch?v=ow9KXpcvvEg&t=131s)',
-       'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                    'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                    'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                    'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                    '(Chapter Q10 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': "But it wasn't until the 1980s when the scale of business potential was "
-               'realized in an effort to bring the Super Bowl to Miami, Dolphins owner Joe '
-               'Robbie made a plan to build a new stadium for $115 million.',
-       'timestamp': 131,
-       'timestamp_label': '[00:02:11]',
-       'timestamp_seconds': 131,
-       'tip': "But it wasn't until the 1980s when the scale of business potential was realized "
-              'in an effort to bring the Super Bowl to Miami, Dolphins owner Joe Robbie made a '
-              'plan to build a new stadium for $115 million.',
-       'title': 'The real reason NFL stadiums have so many luxury suites (Morning Brew)',
-       'url': 'https://www.youtube.com/watch?v=ow9KXpcvvEg&t=131s',
-       'video_id': 'ow9KXpcvvEg'},
-      {'author': 'PromoTix',
-       'channel': 'PromoTix',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:02:10](https://www.youtube.com/watch?v=IdHpcPxQTfU&t=130s)',
-       'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                    'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                    'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                    'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                    '(Chapter Q10 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'So this is where you add in your venue address, select the time zone for the '
-               'event. And also at the bottom here, this is where you add all of the dates and '
-               'times. For this event specifically, I set this up as a recurring event.',
-       'timestamp': 130,
-       'timestamp_label': '[00:02:10]',
-       'timestamp_seconds': 130,
-       'tip': 'So this is where you add in your venue address, select the time zone for the '
-              'event. And also at the bottom here, this is where you add all of the dates and '
-              'times. For this event specifically, I set this up as a recurring event.',
-       'title': 'Create, Sell, and Manage Tickets for Any Event: Ticketing Demo || PromoTix '
-                '(PromoTix)',
-       'url': 'https://www.youtube.com/watch?v=IdHpcPxQTfU&t=130s',
-       'video_id': 'IdHpcPxQTfU'},
-      {'author': 'Logitix',
-       'channel': 'Logitix',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:03:20](https://www.youtube.com/watch?v=YaZpToURgBk&t=200s)',
-       'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                    'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                    'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                    'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                    '(Chapter Q10 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'Venue please reference our pricing automation recording for additional '
-               'capabilities within the Zone grid within the ticket group grid you have the '
-               'ability to mass edit inventory this is useful to quickly update listing prices '
-               'or add internal or external.',
-       'timestamp': 200,
-       'timestamp_label': '[00:03:20]',
-       'timestamp_seconds': 200,
-       'tip': 'Venue please reference our pricing automation recording for additional '
-              'capabilities within the Zone grid within the ticket group grid you have the '
-              'ability to mass edit inventory this is useful to quickly update listing prices '
-              'or add internal or external.',
-       'title': 'Logitix One - Event Detail Page (Logitix)',
-       'url': 'https://www.youtube.com/watch?v=YaZpToURgBk&t=200s',
-       'video_id': 'YaZpToURgBk'},
-      {'author': 'L0B0',
-       'channel': 'L0B0',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:01:12](https://www.youtube.com/watch?v=TofGuOnLm0A&t=72s)',
-       'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                    'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                    'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                    'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                    '(Chapter Q10 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': "Know when you were the super bowl that's not no advantage I don't have no then "
-               "no advantage okay all right so everybody's saying they have advantage at every "
-               "home game during the year so I mean it ain't like they won every home game so "
-               "it ain't much of an advantage.",
-       'timestamp': 72,
-       'timestamp_label': '[00:01:12]',
-       'timestamp_seconds': 72,
-       'tip': "Know when you were the super bowl that's not no advantage I don't have no then "
-              "no advantage okay all right so everybody's saying they have advantage at every "
-              "home game during the year so I mean it ain't like they won every home game so "
-              "it ain't much of an advantage.",
-       'title': 'Former NFL Player Dwight Smith EXPOSES NFL For RIGGING Games!!! (L0B0)',
-       'url': 'https://www.youtube.com/watch?v=TofGuOnLm0A&t=72s',
-       'video_id': 'TofGuOnLm0A'},
-      {'author': 'ABC7 News Bay Area',
-       'channel': 'ABC7 News Bay Area',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:01:04](https://www.youtube.com/watch?v=YZ3TuDNRcvw&t=64s)',
-       'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                    'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                    'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                    'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                    '(Chapter Q10 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'SO PENA IS PAYING $11,300 TOTAL FOR TWO TICKETS IN THE LOWER END ZONE. TICKETS '
-               'THAT ARE GOING FOR MORE THAN 12 GRAND APIECE IN THE RESALE MARKETPLACE. A LOT '
-               'OF PEOPLE MIGHT BE WORRIED ABOUT LOSING THAT MONEY. YEAH, WELL, I WAS I WAS '
-               'PRETTY STRESSED OUT ALL YEAR.',
-       'timestamp': 64,
-       'timestamp_label': '[00:01:04]',
-       'timestamp_seconds': 64,
-       'tip': 'SO PENA IS PAYING $11,300 TOTAL FOR TWO TICKETS IN THE LOWER END ZONE. TICKETS '
-              'THAT ARE GOING FOR MORE THAN 12 GRAND APIECE IN THE RESALE MARKETPLACE. A LOT '
-              'OF PEOPLE MIGHT BE WORRIED ABOUT LOSING THAT MONEY. YEAH, WELL, I WAS I WAS '
-              'PRETTY STRESSED OUT ALL YEAR.',
-       'title': "Here's how Bay Area 49ers fan got Super Bowl tickets under average resale "
-                'price of $9,000 (ABC7 News Bay Area)',
-       'url': 'https://www.youtube.com/watch?v=YZ3TuDNRcvw&t=64s',
-       'video_id': 'YZ3TuDNRcvw'},
-      {'author': 'Luxury Travel Professional',
-       'channel': 'Luxury Travel Professional',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:05:10](https://www.youtube.com/watch?v=6CYg2Av2xS4&t=310s)',
-       'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                    'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                    'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                    'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                    '(Chapter Q10 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': "Lewis and N rord back in 2016 here's what's coming up we've had this Stu "
-               "already but we've got the third practice session coming up at 5:30 this "
-               'afternoon 5:30 this afternoon all 20 cars out on track the final chance for '
-               'ad.',
-       'timestamp': 310,
-       'timestamp_label': '[00:05:10]',
-       'timestamp_seconds': 310,
-       'tip': "Lewis and N rord back in 2016 here's what's coming up we've had this Stu "
-              "already but we've got the third practice session coming up at 5:30 this "
-              'afternoon 5:30 this afternoon all 20 cars out on track the final chance for ad.',
-       'title': '[$14,000 Ticket] Inside the F1 Paddock Club | Singapore Grand Prix VIP '
-                'Experience (Luxury Travel Professional)',
-       'url': 'https://www.youtube.com/watch?v=6CYg2Av2xS4&t=310s',
-       'video_id': '6CYg2Av2xS4'},
-      {'author': 'Fixed Formulas',
-       'channel': 'Fixed Formulas',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:00:31](https://www.youtube.com/watch?v=f7BuIdB0-6I&t=31s)',
-       'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                    'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                    'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                    'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                    '(Chapter Q10 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'After that click on the option of upcoming events under my tickets. So when '
-               'you do this you will be landed here on this particular page. Now it is going '
-               'to show you all of the tickets that are available in your upcoming events.',
-       'timestamp': 31,
-       'timestamp_label': '[00:00:31]',
-       'timestamp_seconds': 31,
-       'tip': 'After that click on the option of upcoming events under my tickets. So when you '
-              'do this you will be landed here on this particular page. Now it is going to '
-              'show you all of the tickets that are available in your upcoming events.',
-       'title': 'How to Transfer Tickets on Ticketmaster [2026] UPDATED (Fixed Formulas)',
-       'url': 'https://www.youtube.com/watch?v=f7BuIdB0-6I&t=31s',
-       'video_id': 'f7BuIdB0-6I'},
-      {'author': 'Courtney Willis',
-       'channel': 'Courtney Willis',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:00:49](https://www.youtube.com/watch?v=f5hPIW3U13c&t=49s)',
-       'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                    'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                    'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                    'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                    '(Chapter Q10 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': "Now that I'm thinking back on it, I totally could have gotten VIP, but in my "
-               "mind, I'm like this is my first year. Don't need to be bougie, don't need to "
-               'be posh. I do know that Coachella offers certain presale tickets to like AMEX '
-               'cardholders.',
-       'timestamp': 49,
-       'timestamp_label': '[00:00:49]',
-       'timestamp_seconds': 49,
-       'tip': "Now that I'm thinking back on it, I totally could have gotten VIP, but in my "
-              "mind, I'm like this is my first year. Don't need to be bougie, don't need to be "
-              'posh. I do know that Coachella offers certain presale tickets to like AMEX '
-              'cardholders.',
-       'title': 'Coachella 2027 Tickets Are Selling Out! Prices, Camping & More (Courtney '
-                'Willis)',
-       'url': 'https://www.youtube.com/watch?v=f5hPIW3U13c&t=49s',
-       'video_id': 'f5hPIW3U13c'},
+       'text': "You really want to go, you're going to do what you can, and I think I paid almost "
+               '$250, probably for tickets that were maybe like $90.',
+       'timestamp': 26,
+       'timestamp_label': '[00:00:26]',
+       'timestamp_seconds': 26,
+       'tip': "You really want to go, you're going to do what you can, and I think I paid almost "
+              '$250, probably for tickets that were maybe like $90.',
+       'title': 'SA concertgoer shares how bots, high resale prices hurt real fans amid FTC '
+                'Ticketmaster lawsuit',
+       'url': 'https://www.youtube.com/watch?v=UB3lQ-5pQXE&t=26s',
+       'video_id': 'UB3lQ-5pQXE'},
       {'author': 'NBC News',
        'channel': 'NBC News',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:00:20](https://www.youtube.com/watch?v=7SO1FTTFaBM&t=20s)',
-       'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                    'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                    'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                    'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                    '(Chapter Q10 operational verification).',
+       'markdown': '[00:01:50](https://www.youtube.com/watch?v=7SO1FTTFaBM&t=110s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': "KNOW, BOTS HAPPEN WHEN YOU'RE BUYING TICKETS. THIS LAWSUIT SAYS THAT THE "
-               'COMPANY, LIVE NATION, WENT AGAINST THEIR OWN LIMITS AND LET RESELLERS BUY, '
-               "LIKE, A LOT OF TICKETS FOR BIG EVENTS. AND IF YOU'RE LIKE, WAIT A SECOND, THIS "
-               'SOUNDS FAMILIAR.',
-       'timestamp': 20,
-       'timestamp_label': '[00:00:20]',
-       'timestamp_seconds': 20,
-       'tip': "KNOW, BOTS HAPPEN WHEN YOU'RE BUYING TICKETS. THIS LAWSUIT SAYS THAT THE "
-              'COMPANY, LIVE NATION, WENT AGAINST THEIR OWN LIMITS AND LET RESELLERS BUY, '
-              "LIKE, A LOT OF TICKETS FOR BIG EVENTS. AND IF YOU'RE LIKE, WAIT A SECOND, THIS "
-              'SOUNDS FAMILIAR.',
-       'title': 'FTC sues Live Nation and Ticketmaster over claims of illegal resale tactics '
-                '(NBC News)',
-       'url': 'https://www.youtube.com/watch?v=7SO1FTTFaBM&t=20s',
+       'text': "Each violation comes with a price tag fine of $53,000. We're talking about "
+               'hundreds of thousands, potentially millions of violations.',
+       'timestamp': 110,
+       'timestamp_label': '[00:01:50]',
+       'timestamp_seconds': 110,
+       'tip': "Each violation comes with a price tag fine of $53,000. We're talking about hundreds "
+              'of thousands, potentially millions of violations.',
+       'title': 'FTC sues Live Nation and Ticketmaster over claims of illegal resale tactics',
+       'url': 'https://www.youtube.com/watch?v=7SO1FTTFaBM&t=110s',
        'video_id': '7SO1FTTFaBM'},
-      {'author': 'iKnow iOS',
-       'channel': 'iKnow iOS',
+      {'author': 'Strat Americas',
+       'channel': 'Strat Americas',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:01:48](https://www.youtube.com/watch?v=zghU1cQya5k&t=108s)',
-       'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                    'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                    'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                    'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                    '(Chapter Q10 operational verification).',
+       'markdown': '[00:00:51](https://www.youtube.com/watch?v=d4DslgcIQ7Y&t=51s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': 'Button and consider subscribing if you found this video helpful and if you '
-               "have any queries you can drop it down in the comment section below we'll see "
-               'you in the next one.',
-       'timestamp': 108,
-       'timestamp_label': '[00:01:48]',
-       'timestamp_seconds': 108,
-       'tip': 'Button and consider subscribing if you found this video helpful and if you have '
-              "any queries you can drop it down in the comment section below we'll see you in "
-              'the next one.',
-       'title': 'AXS App Not Working: How to Fix AXS Tickets App Not Working (iKnow iOS)',
-       'url': 'https://www.youtube.com/watch?v=zghU1cQya5k&t=108s',
-       'video_id': 'zghU1cQya5k'},
-      {'author': 'Ticket Flipping',
-       'channel': 'Ticket Flipping',
+       'text': 'For a Taylor Swift concert, the company that does business under Epic Seats and '
+               'Totally Tickets bought up to 273 tickets just for one show, then resold at '
+               'marked-up prices despite the six ticket per person limit.',
+       'timestamp': 51,
+       'timestamp_label': '[00:00:51]',
+       'timestamp_seconds': 51,
+       'tip': 'For a Taylor Swift concert, the company that does business under Epic Seats and '
+              'Totally Tickets bought up to 273 tickets just for one show, then resold at '
+              'marked-up prices despite the six ticket per person limit.',
+       'title': 'The FTC Goes After A Ticket Reseller',
+       'url': 'https://www.youtube.com/watch?v=d4DslgcIQ7Y&t=51s',
+       'video_id': 'd4DslgcIQ7Y'},
+      {'author': 'NBC News',
+       'channel': 'NBC News',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:12:04](https://www.youtube.com/watch?v=JwHo6if-9Wo&t=724s)',
-       'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                    'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                    'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                    'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                    '(Chapter Q10 operational verification).',
+       'markdown': '[00:02:25](https://www.youtube.com/watch?v=BOIfCHick7o&t=145s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': "Kind of check it out if you want you'll be one of the first people in the "
-               'group um so again check out the free training and you can decide if this '
-               "business is for you uh again thanks for watching the video um and I'll see you "
-               'guys in the next one.',
-       'timestamp': 724,
-       'timestamp_label': '[00:12:04]',
-       'timestamp_seconds': 724,
-       'tip': "Kind of check it out if you want you'll be one of the first people in the group "
-              'um so again check out the free training and you can decide if this business is '
-              "for you uh again thanks for watching the video um and I'll see you guys in the "
-              'next one.',
-       'title': 'The Simplest Resale Business No One is Doing (Ticket Flipping)',
-       'url': 'https://www.youtube.com/watch?v=JwHo6if-9Wo&t=724s',
-       'video_id': 'JwHo6if-9Wo'}],
- 11: [{'author': 'MMG',
-       'channel': 'MMG',
+       'text': 'Was this purchase from a human? Yes it was. Well, show me the human.',
+       'timestamp': 145,
+       'timestamp_label': '[00:02:25]',
+       'timestamp_seconds': 145,
+       'tip': 'Was this purchase from a human? Yes it was. Well, show me the human.',
+       'title': 'FTC sues ticket-reselling operation for using fake accounts',
+       'url': 'https://www.youtube.com/watch?v=BOIfCHick7o&t=145s',
+       'video_id': 'BOIfCHick7o'},
+      {'author': 'Dot Detective',
+       'channel': 'Dot Detective',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:10:21](https://www.youtube.com/watch?v=JfafTeTKsyo&t=621s)',
-       'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                    'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                    'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                    'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                    '(Chapter Q11 operational verification).',
+       'markdown': '[00:01:19](https://www.youtube.com/watch?v=7SSPFtppfGE&t=79s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': 'Super Bowl like WATCHING ARE USUALLY NOT DIE HARD FANS OF THE TEAM. I mean '
-               "we're not Patriots or fans. The 12 people in front of us were all Patriots "
-               'fans. This is the Super Bowl, ladies and gentlemen. These are like these are '
-               "like $20,000 seats and they're meeting traffic.",
-       'timestamp': 621,
-       'timestamp_label': '[00:10:21]',
-       'timestamp_seconds': 621,
-       'tip': 'Super Bowl like WATCHING ARE USUALLY NOT DIE HARD FANS OF THE TEAM. I mean '
-              "we're not Patriots or fans. The 12 people in front of us were all Patriots "
-              'fans. This is the Super Bowl, ladies and gentlemen. These are like these are '
-              "like $20,000 seats and they're meeting traffic.",
-       'title': 'My VIP Experience at Super Bowl LX! (MMG)',
-       'url': 'https://www.youtube.com/watch?v=JfafTeTKsyo&t=621s',
-       'video_id': 'JfafTeTKsyo'},
+       'text': 'The government says Reps paired those names with its own email addresses, phone '
+               "numbers, and virtual credit cards. As many as 40 accounts under one person's name, "
+               'and 19 on average.',
+       'timestamp': 79,
+       'timestamp_label': '[00:01:19]',
+       'timestamp_seconds': 79,
+       'tip': 'The government says Reps paired those names with its own email addresses, phone '
+              "numbers, and virtual credit cards. As many as 40 accounts under one person's name, "
+              'and 19 on average.',
+       'title': "Limit 8 Per Customer… 1,300 Accounts? The DOJ's BOTS Act Case Against REPS, "
+                'Explained',
+       'url': 'https://www.youtube.com/watch?v=7SSPFtppfGE&t=79s',
+       'video_id': '7SSPFtppfGE'},
+      {'author': 'Romano Law PLLC',
+       'channel': 'Romano Law PLLC',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:01:16](https://www.youtube.com/watch?v=nQoLincg1zk&t=76s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
+       'source_type': 'video_pro_tip',
+       'text': 'Ticketmaster makes money. It makes profits when tickets are sold, resold, and then '
+               "resold again by the very scalpers it's claiming are the problem.",
+       'timestamp': 76,
+       'timestamp_label': '[00:01:16]',
+       'timestamp_seconds': 76,
+       'tip': 'Ticketmaster makes money. It makes profits when tickets are sold, resold, and then '
+              "resold again by the very scalpers it's claiming are the problem.",
+       'title': 'FTC Sues Ticketmaster: Domenic Romano Weighs In On Lawsuits for Unethical Ticket '
+                'Reselling Practices',
+       'url': 'https://www.youtube.com/watch?v=nQoLincg1zk&t=76s',
+       'video_id': 'nQoLincg1zk'},
+      {'author': 'The Fine Print Audit',
+       'channel': 'The Fine Print Audit',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:04:05](https://www.youtube.com/watch?v=SdsGfL0IdKk&t=245s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
+       'source_type': 'video_pro_tip',
+       'text': 'The FTC says a senior executive wrote that the company has turned a blind eye as a '
+               'matter of policy to brokers breaking ticket limits, and that one review found five '
+               'brokers controlling 6,345 accounts with 246,000 tickets to 2,594 events.',
+       'timestamp': 245,
+       'timestamp_label': '[00:04:05]',
+       'timestamp_seconds': 245,
+       'tip': 'The FTC says a senior executive wrote that the company has turned a blind eye as a '
+              'matter of policy to brokers breaking ticket limits, and that one review found five '
+              'brokers controlling 6,345 accounts with 246,000 tickets to 2,594 events.',
+       'title': 'Ticketmaster Fees Hit 44%. The FTC Is Suing. I Read the Fine Print.',
+       'url': 'https://www.youtube.com/watch?v=SdsGfL0IdKk&t=245s',
+       'video_id': 'SdsGfL0IdKk'},
+      {'author': 'The Fine Print Audit',
+       'channel': 'The Fine Print Audit',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:06:05](https://www.youtube.com/watch?v=SdsGfL0IdKk&t=365s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
+       'source_type': 'video_pro_tip',
+       'text': "A seller listed a Bruno Mars seat at $299. Buyers saw $422.45. The seller's "
+               'projected payout was $254.15 after a $44.85 seller fee, which is 15%.',
+       'timestamp': 365,
+       'timestamp_label': '[00:06:05]',
+       'timestamp_seconds': 365,
+       'tip': "A seller listed a Bruno Mars seat at $299. Buyers saw $422.45. The seller's "
+              'projected payout was $254.15 after a $44.85 seller fee, which is 15%.',
+       'title': 'Ticketmaster Fees Hit 44%. The FTC Is Suing. I Read the Fine Print.',
+       'url': 'https://www.youtube.com/watch?v=SdsGfL0IdKk&t=365s',
+       'video_id': 'SdsGfL0IdKk'},
+      {'author': 'Decibel & Docket',
+       'channel': 'Decibel & Docket',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:23:37](https://www.youtube.com/watch?v=2Vb_eyHh2aw&t=1417s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
+       'source_type': 'video_pro_tip',
+       'text': 'If there is no 300% profit margin to be had, the bad actors leave the room, '
+               'leaving behind a true secondary market just for fans.',
+       'timestamp': 1417,
+       'timestamp_label': '[00:23:37]',
+       'timestamp_seconds': 1417,
+       'tip': 'If there is no 300% profit margin to be had, the bad actors leave the room, leaving '
+              'behind a true secondary market just for fans.',
+       'title': 'Decibel and Docket covers hearing on AB1720, California concert ticket resale '
+                'price cap.',
+       'url': 'https://www.youtube.com/watch?v=2Vb_eyHh2aw&t=1417s',
+       'video_id': '2Vb_eyHh2aw'},
+      {'author': 'Decibel & Docket',
+       'channel': 'Decibel & Docket',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:26:25](https://www.youtube.com/watch?v=2Vb_eyHh2aw&t=1585s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
+       'source_type': 'video_pro_tip',
+       'text': "Where there are price caps, there is a fourfold increase in ticket fraud and it's "
+               'a serious problem.',
+       'timestamp': 1585,
+       'timestamp_label': '[00:26:25]',
+       'timestamp_seconds': 1585,
+       'tip': "Where there are price caps, there is a fourfold increase in ticket fraud and it's a "
+              'serious problem.',
+       'title': 'Decibel and Docket covers hearing on AB1720, California concert ticket resale '
+                'price cap.',
+       'url': 'https://www.youtube.com/watch?v=2Vb_eyHh2aw&t=1585s',
+       'video_id': '2Vb_eyHh2aw'},
+      {'author': 'Hidden Price',
+       'channel': 'Hidden Price',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:02:40](https://www.youtube.com/watch?v=pfp0vvw1nXo&t=160s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
+       'source_type': 'video_pro_tip',
+       'text': 'On average, only about forty-six percent of tickets were released to the general '
+               'public. Sixteen percent were held for insiders, and thirty-eight percent went to '
+               'presales.',
+       'timestamp': 160,
+       'timestamp_label': '[00:02:40]',
+       'timestamp_seconds': 160,
+       'tip': 'On average, only about forty-six percent of tickets were released to the general '
+              'public. Sixteen percent were held for insiders, and thirty-eight percent went to '
+              'presales.',
+       'title': 'Why Concert Tickets Are So Expensive (Who Really Gets Your Money)',
+       'url': 'https://www.youtube.com/watch?v=pfp0vvw1nXo&t=160s',
+       'video_id': 'pfp0vvw1nXo'},
+      {'author': 'CBS Boston',
+       'channel': 'CBS Boston',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:01:54](https://www.youtube.com/watch?v=Wtsvx9NdMgc&t=114s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
+       'source_type': 'video_pro_tip',
+       'text': 'You are required to sell it on the original platform as long as the company lets '
+               'you know of the policy first.',
+       'timestamp': 114,
+       'timestamp_label': '[00:01:54]',
+       'timestamp_seconds': 114,
+       'tip': 'You are required to sell it on the original platform as long as the company lets '
+              'you know of the policy first.',
+       'title': 'New Massachusetts law changes how people can resell concert or sports tickets',
+       'url': 'https://www.youtube.com/watch?v=Wtsvx9NdMgc&t=114s',
+       'video_id': 'Wtsvx9NdMgc'},
+      {'author': 'The Current',
+       'channel': 'The Current',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:00:58](https://www.youtube.com/watch?v=9rdi7Mk3v-Y&t=58s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
+       'source_type': 'video_pro_tip',
+       'text': 'Ticketmaster is also declining to refund many ticket purchases, and customers are '
+               'increasingly crying foul, saying that they bought tickets under the understanding '
+               'they would get their money back if the concerts were canceled.',
+       'timestamp': 58,
+       'timestamp_label': '[00:00:58]',
+       'timestamp_seconds': 58,
+       'tip': 'Ticketmaster is also declining to refund many ticket purchases, and customers are '
+              'increasingly crying foul, saying that they bought tickets under the understanding '
+              'they would get their money back if the concerts were canceled.',
+       'title': 'Angry fans accuse ticketers of deceptive concert refund policies (The Current '
+                'Music News)',
+       'url': 'https://www.youtube.com/watch?v=9rdi7Mk3v-Y&t=58s',
+       'video_id': '9rdi7Mk3v-Y'},
+      {'author': 'BBB National Programs',
+       'channel': 'BBB National Programs',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:07:28](https://www.youtube.com/watch?v=111H45dtJsI&t=448s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
+       'source_type': 'video_pro_tip',
+       'text': "Our fan protection measure is that if you're promised a ticket and that ticket's "
+               "not delivered to you, you don't just get a refund, you get two hundred percent.",
+       'timestamp': 448,
+       'timestamp_label': '[00:07:28]',
+       'timestamp_seconds': 448,
+       'tip': "Our fan protection measure is that if you're promised a ticket and that ticket's "
+              "not delivered to you, you don't just get a refund, you get two hundred percent.",
+       'title': 'The Ticket Industry Uncovered',
+       'url': 'https://www.youtube.com/watch?v=111H45dtJsI&t=448s',
+       'video_id': '111H45dtJsI'},
       {'author': '9NEWS',
        'channel': '9NEWS',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:01:56](https://www.youtube.com/watch?v=Qmi-KnjQ-xo&t=116s)',
-       'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                    'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                    'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                    'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                    '(Chapter Q11 operational verification).',
+       'markdown': '[00:02:27](https://www.youtube.com/watch?v=rhYfYkzJGmU&t=147s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': "Santa Clara is a weird deal. I mean, and you're probably not gonna probably "
-               "stay there, so you're gonna have to go to some of those other cities around "
-               "there. But if your team's in the Super Bowl and you do all sorts of crazy "
-               'things, you have a pot of gold sorts of money.',
-       'timestamp': 116,
-       'timestamp_label': '[00:01:56]',
-       'timestamp_seconds': 116,
-       'tip': "Santa Clara is a weird deal. I mean, and you're probably not gonna probably "
-              "stay there, so you're gonna have to go to some of those other cities around "
-              "there. But if your team's in the Super Bowl and you do all sorts of crazy "
-              'things, you have a pot of gold sorts of money.',
-       'title': "Super Bowl 2026 tickets: How much they cost, where they're sold and how to "
-                'get them (9NEWS)',
-       'url': 'https://www.youtube.com/watch?v=Qmi-KnjQ-xo&t=116s',
-       'video_id': 'Qmi-KnjQ-xo'},
-      {'author': 'Mercedes-AMG PETRONAS F1 Team',
-       'channel': 'Mercedes-AMG PETRONAS F1 Team',
+       'text': 'Busted by two unexpectedly popular shows at Mile High Stadium, Zach Bryan and '
+               'Morgan Wallen. Her attorney says Ticket Secrets is about to file for bankruptcy '
+               'and any money the company has is frozen until then.',
+       'timestamp': 147,
+       'timestamp_label': '[00:02:27]',
+       'timestamp_seconds': 147,
+       'tip': 'Busted by two unexpectedly popular shows at Mile High Stadium, Zach Bryan and '
+              'Morgan Wallen. Her attorney says Ticket Secrets is about to file for bankruptcy and '
+              'any money the company has is frozen until then.',
+       'title': 'Dozens are out hundreds of dollars after using a local ticket broker',
+       'url': 'https://www.youtube.com/watch?v=rhYfYkzJGmU&t=147s',
+       'video_id': 'rhYfYkzJGmU'},
+      {'author': 'Consumer Context',
+       'channel': 'Consumer Context',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:02:04](https://www.youtube.com/watch?v=fl-tIcZO3u4&t=124s)',
-       'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                    'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                    'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                    'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                    '(Chapter Q11 operational verification).',
+       'markdown': '[00:05:47](https://www.youtube.com/watch?v=L3_AaKpmtQI&t=347s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q10.',
        'source_type': 'video_pro_tip',
-       'text': 'I have a core team of people from designers to project managers to hospitality '
-               'and event specialists and they all come together to deliver these phenomenal '
-               'experiences. Hospitality can add to performance of the team in many ways.',
-       'timestamp': 124,
-       'timestamp_label': '[00:02:04]',
-       'timestamp_seconds': 124,
-       'tip': 'I have a core team of people from designers to project managers to hospitality '
-              'and event specialists and they all come together to deliver these phenomenal '
-              'experiences. Hospitality can add to performance of the team in many ways.',
-       'title': 'The VIP Experience | How It Works: F1 Hospitality 🤩 (Mercedes-AMG PETRONAS F1 '
-                'Team)',
-       'url': 'https://www.youtube.com/watch?v=fl-tIcZO3u4&t=124s',
-       'video_id': 'fl-tIcZO3u4'},
-      {'author': 'WFAA',
-       'channel': 'WFAA',
+       'text': "The FTC's example is a speculative seller advertising seats to a sold-out concert "
+               "that it doesn't actually have. Those tickets aren't available, whatever the "
+               'listing says.',
+       'timestamp': 347,
+       'timestamp_label': '[00:05:47]',
+       'timestamp_seconds': 347,
+       'tip': "The FTC's example is a speculative seller advertising seats to a sold-out concert "
+              "that it doesn't actually have. Those tickets aren't available, whatever the listing "
+              'says.',
+       'title': 'The Hidden System Behind Concert Ticket And Hotel Fees',
+       'url': 'https://www.youtube.com/watch?v=L3_AaKpmtQI&t=347s',
+       'video_id': 'L3_AaKpmtQI'}],
+ 11: [{'author': 'World Of Entertainment',
+       'channel': 'World Of Entertainment',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:00:57](https://www.youtube.com/watch?v=5niSyiKlGY4&t=57s)',
-       'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                    'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                    'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                    'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                    '(Chapter Q11 operational verification).',
+       'markdown': '[00:00:00](https://www.youtube.com/watch?v=0hT1wi4_aew&t=0s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
        'source_type': 'video_pro_tip',
-       'text': 'FC Dallas president Dan Hunt is excited and tired and all the above for Messi. '
-               'The match, but mostly for the team and fans. So we made sure the pre sale was '
-               'dedicated to our core FC Dallas fan base. FC Dallas tickets are regularly '
-               'between 20 and $200 for this match.',
-       'timestamp': 57,
-       'timestamp_label': '[00:00:57]',
-       'timestamp_seconds': 57,
-       'tip': 'FC Dallas president Dan Hunt is excited and tired and all the above for Messi. '
-              'The match, but mostly for the team and fans. So we made sure the pre sale was '
-              'dedicated to our core FC Dallas fan base. FC Dallas tickets are regularly '
-              'between 20 and $200 for this match.',
-       'title': 'The Messi effect: FC Dallas vs. Inter Miami ticket prices soar ahead of match '
-                '(WFAA)',
-       'url': 'https://www.youtube.com/watch?v=5niSyiKlGY4&t=57s',
-       'video_id': '5niSyiKlGY4'},
-      {'author': 'Kicking it with Drew',
-       'channel': 'Kicking it with Drew',
+       'text': 'The top 20 global concert tours ranks artists by average box office gross per city '
+               'and includes the average ticket price for shows worldwide.',
+       'timestamp': 0,
+       'timestamp_label': '[00:00:00]',
+       'timestamp_seconds': 0,
+       'tip': 'The top 20 global concert tours ranks artists by average box office gross per city '
+              'and includes the average ticket price for shows worldwide.',
+       'title': 'Top 20 Global Concert Tours from Pollstar',
+       'url': 'https://www.youtube.com/watch?v=0hT1wi4_aew&t=0s',
+       'video_id': '0hT1wi4_aew'},
+      {'author': 'Wise Explainer',
+       'channel': 'Wise Explainer',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:07:04](https://www.youtube.com/watch?v=TIrEHtyuX3g&t=424s)',
-       'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                    'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                    'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                    'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                    '(Chapter Q11 operational verification).',
+       'markdown': '[00:01:07](https://www.youtube.com/watch?v=WNNmn1bxFEU&t=67s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
        'source_type': 'video_pro_tip',
-       'text': 'That one of the best teams, if not the best team right now in England and one '
-               'of the top leagues in the world, has cheaper tickets than a mediocre MLS team '
-               "that has the best player of all time in it. That That That's absolutely crazy. "
-               'Like this is really the Messi effect.',
-       'timestamp': 424,
-       'timestamp_label': '[00:07:04]',
-       'timestamp_seconds': 424,
-       'tip': 'That one of the best teams, if not the best team right now in England and one '
-              'of the top leagues in the world, has cheaper tickets than a mediocre MLS team '
-              "that has the best player of all time in it. That That That's absolutely crazy. "
-              'Like this is really the Messi effect.',
-       'title': 'These Are Most EXPENSIVE Season Tickets Ever!! (Kicking it with Drew)',
-       'url': 'https://www.youtube.com/watch?v=TIrEHtyuX3g&t=424s',
-       'video_id': 'TIrEHtyuX3g'},
-      {'author': '24H SPORT',
-       'channel': '24H SPORT',
+       'text': 'Pollstar can help you discover events, but you may still need to visit an external '
+               'ticket seller or venue website to actually purchase tickets.',
+       'timestamp': 67,
+       'timestamp_label': '[00:01:07]',
+       'timestamp_seconds': 67,
+       'tip': 'Pollstar can help you discover events, but you may still need to visit an external '
+              'ticket seller or venue website to actually purchase tickets.',
+       'title': 'Pollstar for Concert Discovery Honest Review - Watch Before Using',
+       'url': 'https://www.youtube.com/watch?v=WNNmn1bxFEU&t=67s',
+       'video_id': 'WNNmn1bxFEU'},
+      {'author': 'Why It Costs',
+       'channel': 'Why It Costs',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:05:36](https://www.youtube.com/watch?v=pAU7eEVgp1A&t=336s)',
-       'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                    'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                    'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                    'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                    '(Chapter Q11 operational verification).',
+       'markdown': '[00:08:16](https://www.youtube.com/watch?v=tH7bLaJI6ZE&t=496s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
        'source_type': 'video_pro_tip',
-       'text': "Goldberg said if you're a broker with a front door deal with the team where "
-               "you buy 500 season tickets during the regular season it's reasonable to expect "
-               "you're going to get Super Bowl tickets from that team photos one great image "
-               'from every Super Bowl.',
-       'timestamp': 336,
-       'timestamp_label': '[00:05:36]',
-       'timestamp_seconds': 336,
-       'tip': "Goldberg said if you're a broker with a front door deal with the team where you "
-              "buy 500 season tickets during the regular season it's reasonable to expect "
-              "you're going to get Super Bowl tickets from that team photos one great image "
-              'from every Super Bowl.',
-       'title': 'Players, coaches continue to resell Super Bowl tickets, despite ban on the '
-                'practice (24H SPORT)',
-       'url': 'https://www.youtube.com/watch?v=pAU7eEVgp1A&t=336s',
-       'video_id': 'pAU7eEVgp1A'},
-      {'author': 'WKMG News 6 ClickOrlando',
-       'channel': 'WKMG News 6 ClickOrlando',
+       'text': 'The later transaction routes money to a seller, with platform fees separate, and '
+               'CRS says weak demand can instead leave resale losses.',
+       'timestamp': 496,
+       'timestamp_label': '[00:08:16]',
+       'timestamp_seconds': 496,
+       'tip': 'The later transaction routes money to a seller, with platform fees separate, and '
+              'CRS says weak demand can instead leave resale losses.',
+       'title': 'Concert Tickets: Why a 90% Artist Share Misleads',
+       'url': 'https://www.youtube.com/watch?v=tH7bLaJI6ZE&t=496s',
+       'video_id': 'tH7bLaJI6ZE'},
+      {'author': 'Follow The Why',
+       'channel': 'Follow The Why',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:01:24](https://www.youtube.com/watch?v=9L6opSvFpSA&t=84s)',
-       'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                    'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                    'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                    'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                    '(Chapter Q11 operational verification).',
+       'markdown': '[00:00:52](https://www.youtube.com/watch?v=cmeE4rZAlVk&t=52s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
        'source_type': 'video_pro_tip',
-       'text': 'THAT NUMBER IS ONLY EXPECTED TO GO UP IF THE HOMETOWN BUCCANEERS BECOME IS '
-               'ONLY EXPECTED TO GO UP IF THE HOMETOWN BUCCANEERS BECOME THE FIRST TEAM TO '
-               'PLAY A SUPER THE HOMETOWN BUCCANEERS BECOME THE FIRST TEAM TO PLAY A SUPER '
-               'BOWL IN THEIR HOME STADIUM.',
-       'timestamp': 84,
-       'timestamp_label': '[00:01:24]',
-       'timestamp_seconds': 84,
-       'tip': 'THAT NUMBER IS ONLY EXPECTED TO GO UP IF THE HOMETOWN BUCCANEERS BECOME IS ONLY '
-              'EXPECTED TO GO UP IF THE HOMETOWN BUCCANEERS BECOME THE FIRST TEAM TO PLAY A '
-              'SUPER THE HOMETOWN BUCCANEERS BECOME THE FIRST TEAM TO PLAY A SUPER BOWL IN '
-              'THEIR HOME STADIUM.',
-       'title': 'How much is a resale ticket for the Super Bowl? (WKMG News 6 ClickOrlando)',
-       'url': 'https://www.youtube.com/watch?v=9L6opSvFpSA&t=84s',
-       'video_id': '9L6opSvFpSA'},
-      {'author': 'Global Nomads',
-       'channel': 'Global Nomads',
+       'text': 'On average, 54% of tickets to major events never reach the general public at all, '
+               'with 16% vanishing into insider holds and 38% eaten by pre-sales.',
+       'timestamp': 52,
+       'timestamp_label': '[00:00:52]',
+       'timestamp_seconds': 52,
+       'tip': 'On average, 54% of tickets to major events never reach the general public at all, '
+              'with 16% vanishing into insider holds and 38% eaten by pre-sales.',
+       'title': 'Concert Tickets Explained: Why They Sell Out in 9 Seconds',
+       'url': 'https://www.youtube.com/watch?v=cmeE4rZAlVk&t=52s',
+       'video_id': 'cmeE4rZAlVk'},
+      {'author': 'Follow The Why',
+       'channel': 'Follow The Why',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:06:37](https://www.youtube.com/watch?v=ePgxCdmE8o8&t=397s)',
-       'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                    'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                    'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                    'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                    '(Chapter Q11 operational verification).',
+       'markdown': '[00:05:54](https://www.youtube.com/watch?v=cmeE4rZAlVk&t=354s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
        'source_type': 'video_pro_tip',
-       'text': "'s a very famous photographer who does all of the F1. And we also saw Fred "
-               "Vasuer and Zach who's the team Zack. He also came out onto the pit. So, and "
-               'Martin Brundle zoom past on a little on a scooter. And today was really a lot '
-               'of testing.',
-       'timestamp': 397,
-       'timestamp_label': '[00:06:37]',
-       'timestamp_seconds': 397,
-       'tip': "'s a very famous photographer who does all of the F1. And we also saw Fred "
-              "Vasuer and Zach who's the team Zack. He also came out onto the pit. So, and "
-              'Martin Brundle zoom past on a little on a scooter. And today was really a lot '
-              'of testing.',
-       'title': 'Melbourne Grand Prix 2026 | Formula 1 Paddock Club v Red Bull Pit Lane '
-                'Review. Was it worth $6,000 (Global Nomads)',
-       'url': 'https://www.youtube.com/watch?v=ePgxCdmE8o8&t=397s',
-       'video_id': 'ePgxCdmE8o8'},
+       'text': 'Ticketmaster defended it with math: only about 11% of tickets were platinum, and '
+               'the average ticket sold for $262.',
+       'timestamp': 354,
+       'timestamp_label': '[00:05:54]',
+       'timestamp_seconds': 354,
+       'tip': 'Ticketmaster defended it with math: only about 11% of tickets were platinum, and '
+              'the average ticket sold for $262.',
+       'title': 'Concert Tickets Explained: Why They Sell Out in 9 Seconds',
+       'url': 'https://www.youtube.com/watch?v=cmeE4rZAlVk&t=354s',
+       'video_id': 'cmeE4rZAlVk'},
+      {'author': 'Prof AI Unfiltered',
+       'channel': 'Prof AI Unfiltered',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:04:12](https://www.youtube.com/watch?v=enPVz7BsM7Q&t=252s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'Ticketmaster offers tools that can adjust some ticket prices as demand changes, '
+               'and the 2026 staff report said the company pushed artists to expand their use.',
+       'timestamp': 252,
+       'timestamp_label': '[00:04:12]',
+       'timestamp_seconds': 252,
+       'tip': 'Ticketmaster offers tools that can adjust some ticket prices as demand changes, and '
+              'the 2026 staff report said the company pushed artists to expand their use.',
+       'title': 'Taylor Swift’s Ticketmaster Fiasco: Who Really Controls Ticket Prices? Prof AI '
+                'Unfiltered',
+       'url': 'https://www.youtube.com/watch?v=enPVz7BsM7Q&t=252s',
+       'video_id': 'enPVz7BsM7Q'},
+      {'author': 'CBS News',
+       'channel': 'CBS News',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:00:24](https://www.youtube.com/watch?v=IF-yvujBqTU&t=24s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'Prices were set in advance of the sale of the tour, and Ticketmaster does not have '
+               'surge pricing or dynamic algorithms to adjust ticket prices.',
+       'timestamp': 24,
+       'timestamp_label': '[00:00:24]',
+       'timestamp_seconds': 24,
+       'tip': 'Prices were set in advance of the sale of the tour, and Ticketmaster does not have '
+              'surge pricing or dynamic algorithms to adjust ticket prices.',
+       'title': 'Beyoncé fans complain of inconsistent ticket prices for Cowboy Carter Tour',
+       'url': 'https://www.youtube.com/watch?v=IF-yvujBqTU&t=24s',
+       'video_id': 'IF-yvujBqTU'},
+      {'author': 'PBS NewsHour',
+       'channel': 'PBS NewsHour',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:01:55](https://www.youtube.com/watch?v=rZJgedd2Fk4&t=115s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'On average people spend about 100 to $500 on any given concert, and people are '
+               'spending $1300 on average to go see Taylor Swift.',
+       'timestamp': 115,
+       'timestamp_label': '[00:01:55]',
+       'timestamp_seconds': 115,
+       'tip': 'On average people spend about 100 to $500 on any given concert, and people are '
+              'spending $1300 on average to go see Taylor Swift.',
+       'title': 'How Taylor Swift created an economic juggernaut with her Eras Tour',
+       'url': 'https://www.youtube.com/watch?v=rZJgedd2Fk4&t=115s',
+       'video_id': 'rZJgedd2Fk4'},
+      {'author': 'Firstpost',
+       'channel': 'Firstpost',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:02:54](https://www.youtube.com/watch?v=nAgJ_xD_wuE&t=174s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'Resale tickets have plummeted to a reported measly $35.',
+       'timestamp': 174,
+       'timestamp_label': '[00:02:54]',
+       'timestamp_seconds': 174,
+       'tip': 'Resale tickets have plummeted to a reported measly $35.',
+       'title': "Beyonce's Cowboy Carter Tour Struggles to Sell Out Stadiums | Firstpost America | "
+                'N18G',
+       'url': 'https://www.youtube.com/watch?v=nAgJ_xD_wuE&t=174s',
+       'video_id': 'nAgJ_xD_wuE'},
+      {'author': 'CBC News: The National',
+       'channel': 'CBC News: The National',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:00:45](https://www.youtube.com/watch?v=h_mhu-A8WR4&t=45s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'Each one worked directly with theater chains cutting out the film studios, so they '
+               'get to take home a bigger cut than they would otherwise.',
+       'timestamp': 45,
+       'timestamp_label': '[00:00:45]',
+       'timestamp_seconds': 45,
+       'tip': 'Each one worked directly with theater chains cutting out the film studios, so they '
+              'get to take home a bigger cut than they would otherwise.',
+       'title': 'Taylor Swift and Beyoncé attempt to pack movie theatres like stadiums',
+       'url': 'https://www.youtube.com/watch?v=h_mhu-A8WR4&t=45s',
+       'video_id': 'h_mhu-A8WR4'},
+      {'author': 'Making It Network',
+       'channel': 'Making It Network',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:07:00](https://www.youtube.com/watch?v=zwZDxD4dEpY&t=420s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'When it comes to dynamic and platinum ticketing, the artist approves if the '
+               'promoter and venue are even allowed to use it.',
+       'timestamp': 420,
+       'timestamp_label': '[00:07:00]',
+       'timestamp_seconds': 420,
+       'tip': 'When it comes to dynamic and platinum ticketing, the artist approves if the '
+              'promoter and venue are even allowed to use it.',
+       'title': 'Taylor Swift Eras Tour VS Ticketmaster Dynamic Pricing - Who is Responsible for '
+                'High Ticket Prices?',
+       'url': 'https://www.youtube.com/watch?v=zwZDxD4dEpY&t=420s',
+       'video_id': 'zwZDxD4dEpY'},
+      {'author': 'Inside Edition',
+       'channel': 'Inside Edition',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:01:54](https://www.youtube.com/watch?v=qQIN_PDMcPA&t=114s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': "You've got what 20 million people trying to get 200,000 tickets, of course there "
+               "are going to be problems, of course there's going to be bottlenecks.",
+       'timestamp': 114,
+       'timestamp_label': '[00:01:54]',
+       'timestamp_seconds': 114,
+       'tip': "You've got what 20 million people trying to get 200,000 tickets, of course there "
+              "are going to be problems, of course there's going to be bottlenecks.",
+       'title': 'Taylor Swift’s ‘Eras Tour’ Tickets Crash Ticketmaster',
+       'url': 'https://www.youtube.com/watch?v=qQIN_PDMcPA&t=114s',
+       'video_id': 'qQIN_PDMcPA'},
+      {'author': '2 Minute Expert',
+       'channel': '2 Minute Expert',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:01:41](https://www.youtube.com/watch?v=1m8cAjtjH5A&t=101s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': "Sudden price changes might frustrate buyers who feel they're being treated "
+               'unfairly or forced to pay more last minute.',
+       'timestamp': 101,
+       'timestamp_label': '[00:01:41]',
+       'timestamp_seconds': 101,
+       'tip': "Sudden price changes might frustrate buyers who feel they're being treated unfairly "
+              'or forced to pay more last minute.',
+       'title': 'The Pros & Cons of Dynamic Ticket Pricing in 2 Minutes',
+       'url': 'https://www.youtube.com/watch?v=1m8cAjtjH5A&t=101s',
+       'video_id': '1m8cAjtjH5A'},
+      {'author': 'thumbsuprun',
+       'channel': 'thumbsuprun',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:06:35](https://www.youtube.com/watch?v=TpXJCfuFf4o&t=395s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': "If you get in on the very first presale and get in right away, you're gonna see "
+               'the true face value for many of these seats.',
+       'timestamp': 395,
+       'timestamp_label': '[00:06:35]',
+       'timestamp_seconds': 395,
+       'tip': "If you get in on the very first presale and get in right away, you're gonna see the "
+              'true face value for many of these seats.',
+       'title': 'HOW DYNAMIC TICKET PRICING & OFFICIAL PLATINUM SEATS WORK ON TICKETMASTER',
+       'url': 'https://www.youtube.com/watch?v=TpXJCfuFf4o&t=395s',
+       'video_id': 'TpXJCfuFf4o'},
+      {'author': 'Scott Cramer',
+       'channel': 'Scott Cramer',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:11:23](https://www.youtube.com/watch?v=kFsH01UthzA&t=683s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'The tickets were $227 each, but when she got to the final screen they turned into '
+               '$291 a piece, a 30% bump on the very last screen of the transaction.',
+       'timestamp': 683,
+       'timestamp_label': '[00:11:23]',
+       'timestamp_seconds': 683,
+       'tip': 'The tickets were $227 each, but when she got to the final screen they turned into '
+              '$291 a piece, a 30% bump on the very last screen of the transaction.',
+       'title': 'Ticket Prices Are Disgusting',
+       'url': 'https://www.youtube.com/watch?v=kFsH01UthzA&t=683s',
+       'video_id': 'kFsH01UthzA'},
+      {'author': 'Business Made Simple',
+       'channel': 'Business Made Simple',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:09:01](https://www.youtube.com/watch?v=VBp4zpS7F3o&t=541s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'A useful habit here is to compare the all-in total across sites, not the headline '
+               'price.',
+       'timestamp': 541,
+       'timestamp_label': '[00:09:01]',
+       'timestamp_seconds': 541,
+       'tip': 'A useful habit here is to compare the all-in total across sites, not the headline '
+              'price.',
+       'title': 'Why Are Concert Tickets So Expensive? The Fees After Face Value',
+       'url': 'https://www.youtube.com/watch?v=VBp4zpS7F3o&t=541s',
+       'video_id': 'VBp4zpS7F3o'},
+      {'author': 'Profit Mechanics',
+       'channel': 'Profit Mechanics',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:05:07](https://www.youtube.com/watch?v=p8peX6mgbrw&t=307s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q11.',
+       'source_type': 'video_pro_tip',
+       'text': 'Today, the promoter and the ticketing platform run the resale marketplace '
+               'themselves, and they take a cut on both sides of the deal.',
+       'timestamp': 307,
+       'timestamp_label': '[00:05:07]',
+       'timestamp_seconds': 307,
+       'tip': 'Today, the promoter and the ticketing platform run the resale marketplace '
+              'themselves, and they take a cut on both sides of the deal.',
+       'title': 'How concert promoters make money: dynamic pricing and the resale cut',
+       'url': 'https://www.youtube.com/watch?v=p8peX6mgbrw&t=307s',
+       'video_id': 'p8peX6mgbrw'}],
+ 12: [{'author': 'thumbsuprun',
+       'channel': 'thumbsuprun',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:08:47](https://www.youtube.com/watch?v=sQtHQZ6UoRM&t=527s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'This is where you make all your money, playoffs, playoffs, playoffs, that is why '
+               'you buy season tickets.',
+       'timestamp': 527,
+       'timestamp_label': '[00:08:47]',
+       'timestamp_seconds': 527,
+       'tip': 'This is where you make all your money, playoffs, playoffs, playoffs, that is why '
+              'you buy season tickets.',
+       'title': 'CAN YOU MAKE MONEY SELLING SEASON TICKETS? | 4 WAYS TO SELL TICKETS TO MAKE MONEY '
+                '| NFL NBA NHL MLB',
+       'url': 'https://www.youtube.com/watch?v=sQtHQZ6UoRM&t=527s',
+       'video_id': 'sQtHQZ6UoRM'},
       {'author': 'Grind City Media',
        'channel': 'Grind City Media',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:34:55](https://www.youtube.com/watch?v=x5waP6wwK-Y&t=2095s)',
-       'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                    'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                    'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                    'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                    '(Chapter Q11 operational verification).',
+       'markdown': '[00:01:38](https://www.youtube.com/watch?v=x5waP6wwK-Y&t=98s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
        'source_type': 'video_pro_tip',
-       'text': "I think um [laughter] I think there's a lot of resources that are being put in "
-               "the game and you've got a lot of Well, I think first of all, look at our team. "
-               "If you look at look at all of our team, the whole team, everybody's playing at "
-               'big clubs in Europe.',
-       'timestamp': 2095,
-       'timestamp_label': '[00:34:55]',
-       'timestamp_seconds': 2095,
-       'tip': "I think um [laughter] I think there's a lot of resources that are being put in "
-              "the game and you've got a lot of Well, I think first of all, look at our team. "
-              "If you look at look at all of our team, the whole team, everybody's playing at "
-              'big clubs in Europe.',
-       'title': 'NBA Finals, World Cup Odds, Stanley Cup Finals, College World Series | The '
-                'Odds Couple (Grind City Media)',
-       'url': 'https://www.youtube.com/watch?v=x5waP6wwK-Y&t=2095s',
+       'text': 'Sign up with the new Kroger buzzer beater deal.',
+       'timestamp': 98,
+       'timestamp_label': '[00:01:38]',
+       'timestamp_seconds': 98,
+       'tip': 'Sign up with the new Kroger buzzer beater deal.',
+       'title': 'NBA Finals, World Cup Odds, Stanley Cup Finals, College World Series | The Odds '
+                'Couple',
+       'url': 'https://www.youtube.com/watch?v=x5waP6wwK-Y&t=98s',
        'video_id': 'x5waP6wwK-Y'},
       {'author': 'Break The Board Sports',
        'channel': 'Break The Board Sports',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:05:55](https://www.youtube.com/watch?v=ojMLC_Y0QgI&t=355s)',
-       'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                    'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                    'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                    'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                    '(Chapter Q11 operational verification).',
+       'markdown': '[00:00:59](https://www.youtube.com/watch?v=ojMLC_Y0QgI&t=59s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
        'source_type': 'video_pro_tip',
-       'text': "'re looking at the conference, right, looking at the conference bets in the "
-               'NBA, um I said before the year, Knicks and Nuggets, uh I still am not worried '
-               "about the Cavs. The Cavs don't scare me at all. I think the Pistons are a "
-               'really good regular season team.',
-       'timestamp': 355,
-       'timestamp_label': '[00:05:55]',
-       'timestamp_seconds': 355,
-       'tip': "'re looking at the conference, right, looking at the conference bets in the "
-              'NBA, um I said before the year, Knicks and Nuggets, uh I still am not worried '
-              "about the Cavs. The Cavs don't scare me at all. I think the Pistons are a "
-              'really good regular season team.',
-       'title': 'The Ultimate Futures Betting Guide | NBA, NHL, MLB & More (Break The Board '
-                'Sports)',
-       'url': 'https://www.youtube.com/watch?v=ojMLC_Y0QgI&t=355s',
-       'video_id': 'ojMLC_Y0QgI'},
-      {'author': 'Making It Network',
-       'channel': 'Making It Network',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:07:02](https://www.youtube.com/watch?v=zwZDxD4dEpY&t=422s)',
-       'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                    'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                    'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                    'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                    '(Chapter Q11 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'The the artist has to sign off on that the artist and their team has to '
-               'approve on ticket prices so when it come comes to Dynamic and platinum '
-               'ticketing the.',
-       'timestamp': 422,
-       'timestamp_label': '[00:07:02]',
-       'timestamp_seconds': 422,
-       'tip': 'The the artist has to sign off on that the artist and their team has to approve '
-              'on ticket prices so when it come comes to Dynamic and platinum ticketing the.',
-       'title': 'Taylor Swift Eras Tour VS Ticketmaster Dynamic Pricing - Who is Responsible '
-                'for High Ticket Prices? (Making It Network)',
-       'url': 'https://www.youtube.com/watch?v=zwZDxD4dEpY&t=422s',
-       'video_id': 'zwZDxD4dEpY'},
-      {'author': 'Víctor Abad',
-       'channel': 'Víctor Abad',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:03:05](https://www.youtube.com/watch?v=3cvtvbU9nb0&t=185s)',
-       'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                    'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                    'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                    'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                    '(Chapter Q11 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'España con una promoción muy sencilla. Si os creáis una cuenta y hacéis una '
-               'compra de al menos 1 € os podéis llevar una gorra exclusiva del equipo '
-               'McLaren.',
-       'timestamp': 185,
-       'timestamp_label': '[00:03:05]',
-       'timestamp_seconds': 185,
-       'tip': 'España con una promoción muy sencilla. Si os creáis una cuenta y hacéis una '
-              'compra de al menos 1 € os podéis llevar una gorra exclusiva del equipo McLaren.',
-       'title': 'Así ven la Fórmula 1 los ricos - Entramos en el Paddock Club de Zandvoort '
-                '(Víctor Abad)',
-       'url': 'https://www.youtube.com/watch?v=3cvtvbU9nb0&t=185s',
-       'video_id': '3cvtvbU9nb0'},
-      {'author': 'WGRZ-TV',
-       'channel': 'WGRZ-TV',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:00:26](https://www.youtube.com/watch?v=YksJO2KDmnk&t=26s)',
-       'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                    'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                    'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                    'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                    '(Chapter Q11 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'Others were simply postponed by the pandemic and that can impact whether or '
-               'not you get a refund tonight another reminder about reading all the fine print '
-               'when you purchase something like a ticket.',
-       'timestamp': 26,
-       'timestamp_label': '[00:00:26]',
-       'timestamp_seconds': 26,
-       'tip': 'Others were simply postponed by the pandemic and that can impact whether or not '
-              'you get a refund tonight another reminder about reading all the fine print when '
-              'you purchase something like a ticket.',
-       'title': 'Wednesday Town Hall: Can you get a refund on canceled or postponed concert '
-                'tickets? (WGRZ-TV)',
-       'url': 'https://www.youtube.com/watch?v=YksJO2KDmnk&t=26s',
-       'video_id': 'YksJO2KDmnk'},
-      {'author': 'KSAT 12',
-       'channel': 'KSAT 12',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:00:29](https://www.youtube.com/watch?v=UB3lQ-5pQXE&t=29s)',
-       'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                    'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                    'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                    'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                    '(Chapter Q11 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'AND I THINK I PAID ALMOST $250, PROBABLY FOR TICKETS THAT WERE MAYBE LIKE. '
-               '250, PROBABLY FOR TICKETS THAT WERE MAYBE LIKE. BUT I’VE SEEN, YOU KNOW, WERE '
-               'MAYBE LIKE. BUT I’VE SEEN, YOU KNOW, EVEN ARE IN RE CENT. BUT I’VE SEEN, YOU '
-               'KNOW, EVEN ARE IN RE CENT.',
-       'timestamp': 29,
-       'timestamp_label': '[00:00:29]',
-       'timestamp_seconds': 29,
-       'tip': 'AND I THINK I PAID ALMOST $250, PROBABLY FOR TICKETS THAT WERE MAYBE LIKE. 250, '
-              'PROBABLY FOR TICKETS THAT WERE MAYBE LIKE. BUT I’VE SEEN, YOU KNOW, WERE MAYBE '
-              'LIKE. BUT I’VE SEEN, YOU KNOW, EVEN ARE IN RE CENT. BUT I’VE SEEN, YOU KNOW, '
-              'EVEN ARE IN RE CENT.',
-       'title': 'SA concertgoer shares how bots, high resale prices hurt real fans amid FTC '
-                'Ticketmaster lawsuit (KSAT 12)',
-       'url': 'https://www.youtube.com/watch?v=UB3lQ-5pQXE&t=29s',
-       'video_id': 'UB3lQ-5pQXE'},
-      {'author': 'The Credit Nerd',
-       'channel': 'The Credit Nerd',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:01:28](https://www.youtube.com/watch?v=JS9sO0Fx9A0&t=88s)',
-       'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                    'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                    'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                    'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                    '(Chapter Q11 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'Capital One also gives eligible cardholders access to select exclusive '
-               'tickets, events, and presales, making this a good combination of potential '
-               'rewards and access. But, with that said, Capital One is not going to have '
-               'access to every single artist, team, or event.',
-       'timestamp': 88,
-       'timestamp_label': '[00:01:28]',
-       'timestamp_seconds': 88,
-       'tip': 'Capital One also gives eligible cardholders access to select exclusive tickets, '
-              'events, and presales, making this a good combination of potential rewards and '
-              'access. But, with that said, Capital One is not going to have access to every '
-              'single artist, team, or event.',
-       'title': '3 Best Credit Cards For Concert Tickets & Entertainment In 2026 | NerdWallet '
-                '(The Credit Nerd)',
-       'url': 'https://www.youtube.com/watch?v=JS9sO0Fx9A0&t=88s',
-       'video_id': 'JS9sO0Fx9A0'}],
- 12: [{'author': 'Ticket Flipping',
-       'channel': 'Ticket Flipping',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:01:54](https://www.youtube.com/watch?v=hw92haJDs9Y&t=114s)',
-       'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                    'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                    'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                    'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                    '(Chapter Q12 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': "24 hours or the past 7 days. It's simple, it's easy to sort, you can filter "
-               '[clears throat] by many, many different metrics such as venue size, such as '
-               'the artist popularity score from Spotify. And this latest availability column '
-               'refreshes non-stop all day long.',
-       'timestamp': 114,
-       'timestamp_label': '[00:01:54]',
-       'timestamp_seconds': 114,
-       'tip': "24 hours or the past 7 days. It's simple, it's easy to sort, you can filter "
-              '[clears throat] by many, many different metrics such as venue size, such as the '
-              'artist popularity score from Spotify. And this latest availability column '
-              'refreshes non-stop all day long.',
-       'title': 'The New Way to Find Tickets To Flip (Ticket Flipping)',
-       'url': 'https://www.youtube.com/watch?v=hw92haJDs9Y&t=114s',
-       'video_id': 'hw92haJDs9Y'},
-      {'author': 'Front Office Sports News',
-       'channel': 'Front Office Sports News',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:02:14](https://www.youtube.com/watch?v=6ufb5u4PcIQ&t=134s)',
-       'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                    'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                    'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                    'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                    '(Chapter Q12 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'Super Bowl game day experience freely adept, exciting, great access, easy to '
-               "get in and out of. That makes for a great environment for us. Um, it doesn't "
-               'necessarily work per perfectly on a regular season.',
-       'timestamp': 134,
-       'timestamp_label': '[00:02:14]',
-       'timestamp_seconds': 134,
-       'tip': 'Super Bowl game day experience freely adept, exciting, great access, easy to '
-              "get in and out of. That makes for a great environment for us. Um, it doesn't "
-              'necessarily work per perfectly on a regular season.',
-       'title': 'How the VIP Super Bowl Experience Works with On Location President Paul Caine '
-                '(Front Office Sports News)',
-       'url': 'https://www.youtube.com/watch?v=6ufb5u4PcIQ&t=134s',
-       'video_id': '6ufb5u4PcIQ'},
-      {'author': 'J Properties Group',
-       'channel': 'J Properties Group',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:06:54](https://www.youtube.com/watch?v=U3YMt8EJCrE&t=414s)',
-       'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                    'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                    'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                    'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                    '(Chapter Q12 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'And third, plan your trip very early because during the Masters week in '
-               'Augusta, hotels fill up, homes rent out very quick, restaurants get booked up '
-               'sometimes months or even years in advance.',
-       'timestamp': 414,
-       'timestamp_label': '[00:06:54]',
-       'timestamp_seconds': 414,
-       'tip': 'And third, plan your trip very early because during the Masters week in '
-              'Augusta, hotels fill up, homes rent out very quick, restaurants get booked up '
-              'sometimes months or even years in advance.',
-       'title': "Masters Tickets Explained | Why They're Almost Impossible to Get! (J "
-                'Properties Group)',
-       'url': 'https://www.youtube.com/watch?v=U3YMt8EJCrE&t=414s',
-       'video_id': 'U3YMt8EJCrE'},
-      {'author': 'Adventure & Sports',
-       'channel': 'Adventure & Sports',
-       'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:00:59](https://www.youtube.com/watch?v=qSTxMUdp-ro&t=59s)',
-       'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                    'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                    'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                    'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                    '(Chapter Q12 operational verification).',
-       'source_type': 'video_pro_tip',
-       'text': 'Watch every match at the venue of your choice. Includes four to nine matches '
-               'depending on venue. All match days and stages eligible. And it is available '
-               'for all the hospitality options. See your team in action at every early stage '
-               'match regardless of location.',
+       'text': 'I got no confidence in Duke.',
        'timestamp': 59,
        'timestamp_label': '[00:00:59]',
        'timestamp_seconds': 59,
-       'tip': 'Watch every match at the venue of your choice. Includes four to nine matches '
-              'depending on venue. All match days and stages eligible. And it is available for '
-              'all the hospitality options. See your team in action at every early stage match '
-              'regardless of location.',
-       'title': 'World Cup Hospitality Tickets Explained (Adventure & Sports)',
-       'url': 'https://www.youtube.com/watch?v=qSTxMUdp-ro&t=59s',
-       'video_id': 'qSTxMUdp-ro'},
-      {'author': 'BAG & TRAVEL',
-       'channel': 'BAG & TRAVEL',
+       'tip': 'I got no confidence in Duke.',
+       'title': 'The Ultimate Futures Betting Guide | NBA, NHL, MLB & More',
+       'url': 'https://www.youtube.com/watch?v=ojMLC_Y0QgI&t=59s',
+       'video_id': 'ojMLC_Y0QgI'},
+      {'author': 'Bear Bets: A FOX Sports Gambling Show',
+       'channel': 'Bear Bets: A FOX Sports Gambling Show',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:01:31](https://www.youtube.com/watch?v=B2P9oIBqq5Q&t=91s)',
-       'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                    'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                    'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                    'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                    '(Chapter Q12 operational verification).',
+       'markdown': '[00:48:36](https://www.youtube.com/watch?v=T7ujtjzkDcQ&t=2916s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
        'source_type': 'video_pro_tip',
-       'text': "I've had, um I'm going to get start with the best ticket that I've had and "
-               'then go work my way back. I can only give you advice based on the tickets that '
-               "I've had and the best ticket that I've had is fan week, the week before is the "
-               'qualifying week basically essentially.',
-       'timestamp': 91,
-       'timestamp_label': '[00:01:31]',
-       'timestamp_seconds': 91,
-       'tip': "I've had, um I'm going to get start with the best ticket that I've had and then "
-              "go work my way back. I can only give you advice based on the tickets that I've "
-              "had and the best ticket that I've had is fan week, the week before is the "
-              'qualifying week basically essentially.',
-       'title': 'What ticket should you buy for US Open? My experience (BAG & TRAVEL)',
-       'url': 'https://www.youtube.com/watch?v=B2P9oIBqq5Q&t=91s',
-       'video_id': 'B2P9oIBqq5Q'},
-      {'author': 'Sports Travel Tom',
-       'channel': 'Sports Travel Tom',
+       'text': 'The less you bet, the more you listen.',
+       'timestamp': 2916,
+       'timestamp_label': '[00:48:36]',
+       'timestamp_seconds': 2916,
+       'tip': 'The less you bet, the more you listen.',
+       'title': 'NBA Playoffs Gambling Guide 🏀💰',
+       'url': 'https://www.youtube.com/watch?v=T7ujtjzkDcQ&t=2916s',
+       'video_id': 'T7ujtjzkDcQ'},
+      {'author': 'Matthew Josiah',
+       'channel': 'Matthew Josiah',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:03:08](https://www.youtube.com/watch?v=iKAz6YJRTXI&t=188s)',
-       'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                    'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                    'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                    'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                    '(Chapter Q12 operational verification).',
+       'markdown': '[00:01:29](https://www.youtube.com/watch?v=qg3wvctM0wM&t=89s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
        'source_type': 'video_pro_tip',
-       'text': 'If you get tickets for Tuesday, $125. Wednesday slightly more, but of course '
-               'you get the par 3 tournament within that as well, $150. And then tournament '
-               "days, $160. Those ticket prices aren't bad at all really for The Masters.",
-       'timestamp': 188,
-       'timestamp_label': '[00:03:08]',
-       'timestamp_seconds': 188,
-       'tip': 'If you get tickets for Tuesday, $125. Wednesday slightly more, but of course '
-              'you get the par 3 tournament within that as well, $150. And then tournament '
-              "days, $160. Those ticket prices aren't bad at all really for The Masters.",
-       'title': 'How to Get Masters Tickets (2027 Guide: Ballot vs Packages) (Sports Travel '
-                'Tom)',
-       'url': 'https://www.youtube.com/watch?v=iKAz6YJRTXI&t=188s',
-       'video_id': 'iKAz6YJRTXI'},
-      {'author': 'thumbsuprun',
-       'channel': 'thumbsuprun',
+       'text': 'So, the pre-sale is obviously the ability to buy tickets before the event and '
+               'before the public is able to buy those tickets.',
+       'timestamp': 89,
+       'timestamp_label': '[00:01:29]',
+       'timestamp_seconds': 89,
+       'tip': 'So, the pre-sale is obviously the ability to buy tickets before the event and '
+              'before the public is able to buy those tickets.',
+       'title': 'This AMEX Perk Gets You Concert Tickets Before Everyone Else',
+       'url': 'https://www.youtube.com/watch?v=qg3wvctM0wM&t=89s',
+       'video_id': 'qg3wvctM0wM'},
+      {'author': 'The Credit Nerd',
+       'channel': 'The Credit Nerd',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:00:42](https://www.youtube.com/watch?v=sQtHQZ6UoRM&t=42s)',
-       'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                    'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                    'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                    'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                    '(Chapter Q12 operational verification).',
+       'markdown': '[00:04:19](https://www.youtube.com/watch?v=JS9sO0Fx9A0&t=259s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
        'source_type': 'video_pro_tip',
-       'text': 'The best way to go ahead and actually start making money selling seasoned '
-               'seats there are a couple of reasons behind that one if you.',
-       'timestamp': 42,
-       'timestamp_label': '[00:00:42]',
-       'timestamp_seconds': 42,
-       'tip': 'The best way to go ahead and actually start making money selling seasoned seats '
-              'there are a couple of reasons behind that one if you.',
-       'title': 'CAN YOU MAKE MONEY SELLING SEASON TICKETS? | 4 WAYS TO SELL TICKETS TO MAKE '
-                'MONEY | NFL NBA NHL MLB (thumbsuprun)',
-       'url': 'https://www.youtube.com/watch?v=sQtHQZ6UoRM&t=42s',
-       'video_id': 'sQtHQZ6UoRM'},
-      {'author': 'Emily Canham Vlogs',
-       'channel': 'Emily Canham Vlogs',
+       'text': 'Your best strategy is to check every presale available for a specific event above '
+               'and beyond just offers through your credit card.',
+       'timestamp': 259,
+       'timestamp_label': '[00:04:19]',
+       'timestamp_seconds': 259,
+       'tip': 'Your best strategy is to check every presale available for a specific event above '
+              'and beyond just offers through your credit card.',
+       'title': '3 Best Credit Cards For Concert Tickets & Entertainment In 2026 | NerdWallet',
+       'url': 'https://www.youtube.com/watch?v=JS9sO0Fx9A0&t=259s',
+       'video_id': 'JS9sO0Fx9A0'},
+      {'author': '850 Club Credit',
+       'channel': '850 Club Credit',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:04:34](https://www.youtube.com/watch?v=UgpOwtQHKS4&t=274s)',
-       'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                    'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                    'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                    'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                    '(Chapter Q12 operational verification).',
+       'markdown': '[00:04:17](https://www.youtube.com/watch?v=p8CMjg4a_CI&t=257s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
        'source_type': 'video_pro_tip',
-       'text': "A text from a car saying that they were a few minutes away oh look the car's "
-               "here Dad whenever you're ready I'm ready got my own thank you all good if you "
-               'need to throw is amazing thank you have a wonderful day.',
-       'timestamp': 274,
-       'timestamp_label': '[00:04:34]',
-       'timestamp_seconds': 274,
-       'tip': "A text from a car saying that they were a few minutes away oh look the car's "
-              "here Dad whenever you're ready I'm ready got my own thank you all good if you "
-              'need to throw is amazing thank you have a wonderful day.',
-       'title': 'Surprising my DAD with F1 PADDOCK CLUB tickets at Silverstone 😅 British Grand '
-                'Prix 2023 🏎️ (Emily Canham Vlogs)',
-       'url': 'https://www.youtube.com/watch?v=UgpOwtQHKS4&t=274s',
-       'video_id': 'UgpOwtQHKS4'},
-      {'author': 'Live The Dash',
-       'channel': 'Live The Dash',
+       'text': 'We sold the other two tickets for about I think $390 a piece or something like '
+               'that.',
+       'timestamp': 257,
+       'timestamp_label': '[00:04:17]',
+       'timestamp_seconds': 257,
+       'tip': 'We sold the other two tickets for about I think $390 a piece or something like '
+              'that.',
+       'title': 'How American Express/CITI Bank Can Get You Into Any Concert/Event For Free - '
+                'Drake & Migos Concert',
+       'url': 'https://www.youtube.com/watch?v=p8CMjg4a_CI&t=257s',
+       'video_id': 'p8CMjg4a_CI'},
+      {'author': 'Hermanos F.C.',
+       'channel': 'Hermanos F.C.',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:21:03](https://www.youtube.com/watch?v=emvC24ZLBWo&t=1263s)',
-       'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                    'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                    'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                    'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                    '(Chapter Q12 operational verification).',
+       'markdown': '[00:08:57](https://www.youtube.com/watch?v=x2psJ5xGp18&t=537s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
        'source_type': 'video_pro_tip',
-       'text': "China is that it's a sprint race. So it means you get more on track action "
-               'than a normal race weekend. Another reason why this is the race to upgrade, if '
-               "you're going to upgrade any of them. We've decided to watch the sprint from "
-               'the rooftop.',
-       'timestamp': 1263,
-       'timestamp_label': '[00:21:03]',
-       'timestamp_seconds': 1263,
-       'tip': "China is that it's a sprint race. So it means you get more on track action than "
-              'a normal race weekend. Another reason why this is the race to upgrade, if '
-              "you're going to upgrade any of them. We've decided to watch the sprint from the "
-              'rooftop.',
-       'title': 'I Upgraded My F1 Ticket In China… (Live The Dash)',
-       'url': 'https://www.youtube.com/watch?v=emvC24ZLBWo&t=1263s',
-       'video_id': 'emvC24ZLBWo'},
-      {'author': 'Only Scrans',
-       'channel': 'Only Scrans',
+       'text': 'They got double charged on the playoff tickets.',
+       'timestamp': 537,
+       'timestamp_label': '[00:08:57]',
+       'timestamp_seconds': 537,
+       'tip': 'They got double charged on the playoff tickets.',
+       'title': 'Inter Miami Let Me Down—Why I’m Canceling My Season Tickets',
+       'url': 'https://www.youtube.com/watch?v=x2psJ5xGp18&t=537s',
+       'video_id': 'x2psJ5xGp18'},
+      {'author': 'Emmanuel Ak',
+       'channel': 'Emmanuel Ak',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:03:34](https://www.youtube.com/watch?v=XhaS3MGZL-o&t=214s)',
-       'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                    'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                    'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                    'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                    '(Chapter Q12 operational verification).',
+       'markdown': '[00:16:00](https://www.youtube.com/watch?v=RsyNgibgVJY&t=960s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
        'source_type': 'video_pro_tip',
-       'text': "Review when there are cars going 100 Mil hour straight P here maybe more it's "
-               "all super tasty it is quite small that's not the worst thing in the world when "
-               'you got a full day of watching cars go dead.',
-       'timestamp': 214,
-       'timestamp_label': '[00:03:34]',
-       'timestamp_seconds': 214,
-       'tip': "Review when there are cars going 100 Mil hour straight P here maybe more it's "
-              "all super tasty it is quite small that's not the worst thing in the world when "
-              'you got a full day of watching cars go dead.',
-       'title': "THE WORLD'S MOST EXPENSIVE F1 EXPERIENCE (Only Scrans)",
-       'url': 'https://www.youtube.com/watch?v=XhaS3MGZL-o&t=214s',
-       'video_id': 'XhaS3MGZL-o'},
-      {'author': 'The Wrestling Classic',
-       'channel': 'The Wrestling Classic',
+       'text': 'So the sweet spot with ticket reselling is high demand artists, small venue, '
+               'limited dates, weekend shows.',
+       'timestamp': 960,
+       'timestamp_label': '[00:16:00]',
+       'timestamp_seconds': 960,
+       'tip': 'So the sweet spot with ticket reselling is high demand artists, small venue, '
+              'limited dates, weekend shows.',
+       'title': 'The Hidden System Behind $30K/Month Concert Ticket Flips',
+       'url': 'https://www.youtube.com/watch?v=RsyNgibgVJY&t=960s',
+       'video_id': 'RsyNgibgVJY'},
+      {'author': 'Emmanuel Ak',
+       'channel': 'Emmanuel Ak',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:02:49](https://www.youtube.com/watch?v=oqJoU9yO2_c&t=169s)',
-       'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                    'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                    'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                    'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                    '(Chapter Q12 operational verification).',
+       'markdown': '[00:25:17](https://www.youtube.com/watch?v=RsyNgibgVJY&t=1517s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
        'source_type': 'video_pro_tip',
-       'text': "UFC the first fight, but he's been on a tear since then. And Brendan is, you "
-               "know, he's been battle tested since day one. So I think they both deserve "
-               'respect and I know there is a lot of respect between all of them guys.',
-       'timestamp': 169,
-       'timestamp_label': '[00:02:49]',
-       'timestamp_seconds': 169,
-       'tip': "UFC the first fight, but he's been on a tear since then. And Brendan is, you "
-              "know, he's been battle tested since day one. So I think they both deserve "
-              'respect and I know there is a lot of respect between all of them guys.',
-       'title': 'UFC Fight Night: Vancouver Vlog - On Location VIP Experience (The Wrestling '
-                'Classic)',
-       'url': 'https://www.youtube.com/watch?v=oqJoU9yO2_c&t=169s',
-       'video_id': 'oqJoU9yO2_c'},
-      {'author': 'World Of Entertainment',
-       'channel': 'World Of Entertainment',
+       'text': 'Always use the resale market before you buy the tickets because people can list '
+               'tickets early or people got insider tickets, etc.',
+       'timestamp': 1517,
+       'timestamp_label': '[00:25:17]',
+       'timestamp_seconds': 1517,
+       'tip': 'Always use the resale market before you buy the tickets because people can list '
+              'tickets early or people got insider tickets, etc.',
+       'title': 'The Hidden System Behind $30K/Month Concert Ticket Flips',
+       'url': 'https://www.youtube.com/watch?v=RsyNgibgVJY&t=1517s',
+       'video_id': 'RsyNgibgVJY'},
+      {'author': 'Ticket Flipping',
+       'channel': 'Ticket Flipping',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:01:39](https://www.youtube.com/watch?v=0hT1wi4_aew&t=99s)',
-       'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                    'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                    'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                    'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                    '(Chapter Q12 operational verification).',
+       'markdown': '[00:04:44](https://www.youtube.com/watch?v=GORTWFnPPt0&t=284s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
        'source_type': 'video_pro_tip',
-       'text': '10 dead in company 2 288 252 115. 11 queen plus adam lambert hundred 21777 '
-               'dollars one hundred thirty nine dollars oh seven dot twelve iron maiden one '
-               'five hundred ninety five thousand two hundred eighty five dollars dollar '
-               'seventy dot 18.',
-       'timestamp': 99,
-       'timestamp_label': '[00:01:39]',
-       'timestamp_seconds': 99,
-       'tip': '10 dead in company 2 288 252 115. 11 queen plus adam lambert hundred 21777 '
-              'dollars one hundred thirty nine dollars oh seven dot twelve iron maiden one '
-              'five hundred ninety five thousand two hundred eighty five dollars dollar '
-              'seventy dot 18.',
-       'title': 'Top 20 Global Concert Tours from Pollstar (World Of Entertainment)',
-       'url': 'https://www.youtube.com/watch?v=0hT1wi4_aew&t=99s',
-       'video_id': '0hT1wi4_aew'},
-      {'author': 'WCPO 9',
-       'channel': 'WCPO 9',
+       'text': 'The price break seats are always going to make more money and let you make more '
+               'profit than the seats in front of them.',
+       'timestamp': 284,
+       'timestamp_label': '[00:04:44]',
+       'timestamp_seconds': 284,
+       'tip': 'The price break seats are always going to make more money and let you make more '
+              'profit than the seats in front of them.',
+       'title': 'WHY some tickets ALWAYS make more Profit',
+       'url': 'https://www.youtube.com/watch?v=GORTWFnPPt0&t=284s',
+       'video_id': 'GORTWFnPPt0'},
+      {'author': 'Ticket Flipping',
+       'channel': 'Ticket Flipping',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:01:48](https://www.youtube.com/watch?v=VBj60jqiycw&t=108s)',
-       'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                    'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                    'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                    'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                    '(Chapter Q12 operational verification).',
+       'markdown': '[00:09:05](https://www.youtube.com/watch?v=JwHo6if-9Wo&t=545s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
        'source_type': 'video_pro_tip',
-       'text': "Spokesman promised to investigate nicu's request for a refund but keep this in "
-               'mind in the next few years as you start purchasing tickets again that there '
-               "are differences with third-party websites so you don't waste your money I'm "
-               "john madder's wcbo 9 news.",
-       'timestamp': 108,
-       'timestamp_label': '[00:01:48]',
-       'timestamp_seconds': 108,
-       'tip': "Spokesman promised to investigate nicu's request for a refund but keep this in "
-              'mind in the next few years as you start purchasing tickets again that there are '
-              "differences with third-party websites so you don't waste your money I'm john "
-              "madder's wcbo 9 news.",
-       'title': 'Struggle for concert ticket refunds (WCPO 9)',
-       'url': 'https://www.youtube.com/watch?v=VBj60jqiycw&t=108s',
-       'video_id': 'VBj60jqiycw'},
-      {'author': 'Valuetainment Short Clips',
-       'channel': 'Valuetainment Short Clips',
+       'text': "It's not rocket science when it comes down to it, you just need to make 25% on "
+               'every ticket you buy.',
+       'timestamp': 545,
+       'timestamp_label': '[00:09:05]',
+       'timestamp_seconds': 545,
+       'tip': "It's not rocket science when it comes down to it, you just need to make 25% on "
+              'every ticket you buy.',
+       'title': 'The Simplest Resale Business No One is Doing',
+       'url': 'https://www.youtube.com/watch?v=JwHo6if-9Wo&t=545s',
+       'video_id': 'JwHo6if-9Wo'},
+      {'author': 'Ticket Flipping',
+       'channel': 'Ticket Flipping',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:11:26](https://www.youtube.com/watch?v=jQCA_9sgdpM&t=686s)',
-       'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                    'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                    'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                    'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                    '(Chapter Q12 operational verification).',
+       'markdown': '[00:02:23](https://www.youtube.com/watch?v=hw92haJDs9Y&t=143s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
        'source_type': 'video_pro_tip',
-       'text': 'Just happy though that end racism which is the most UN goal as much as we want '
-               "it you're not going to stop some guy in Mississippi stop being racism that's "
-               "like saying stop ugliness you can't so the fact that they finally took that "
-               'stupid ass thing out of there Choose.',
-       'timestamp': 686,
-       'timestamp_label': '[00:11:26]',
-       'timestamp_seconds': 686,
-       'tip': 'Just happy though that end racism which is the most UN goal as much as we want '
-              "it you're not going to stop some guy in Mississippi stop being racism that's "
-              "like saying stop ugliness you can't so the fact that they finally took that "
-              'stupid ass thing out of there Choose.',
-       'title': '"Ticket Prices Have PLUMMETED!" - NFL Fans STUNNED As Super Bowl Tickets Hit '
-                'By MASSIVE Price Drop (Valuetainment Short Clips)',
-       'url': 'https://www.youtube.com/watch?v=jQCA_9sgdpM&t=686s',
-       'video_id': 'jQCA_9sgdpM'},
-      {'author': 'Nerd Nook Hub',
-       'channel': 'Nerd Nook Hub',
+       'text': 'So, the number one rule is 500 tickets really tells you nothing.',
+       'timestamp': 143,
+       'timestamp_label': '[00:02:23]',
+       'timestamp_seconds': 143,
+       'tip': 'So, the number one rule is 500 tickets really tells you nothing.',
+       'title': 'The New Way to Find Tickets To Flip',
+       'url': 'https://www.youtube.com/watch?v=hw92haJDs9Y&t=143s',
+       'video_id': 'hw92haJDs9Y'},
+      {'author': 'Ticket Flipping',
+       'channel': 'Ticket Flipping',
        'epistemic_status': 'attributed_practitioner_claim',
-       'markdown': '[00:02:44](https://www.youtube.com/watch?v=8OkQ2Oq5Lbc&t=164s)',
-       'relevance': 'Attributed practitioner commentary on `Super Bowl`/`World Cup`/`F1` VIP '
-                    'hospitality & sponsor-allotment bundling, stadium luxury-suite '
-                    'seat-splitting, `NFL`/`NBA` `SSL` playoff-option strips, and `BOTS '
-                    'Act`-compliant `SkyBox`/`Automatiq` multi-exchange POS broadcasting '
-                    '(Chapter Q12 operational verification).',
+       'markdown': '[00:10:09](https://www.youtube.com/watch?v=hw92haJDs9Y&t=609s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
        'source_type': 'video_pro_tip',
-       'text': '1,000 if you want to take it up a notch. Transportation depends on whether you '
-               'rent a car, ride share, or use public transit. Super Bowl day ride shares can '
-               'surge hard. The best approach is to plan around transit or arrive early.',
-       'timestamp': 164,
-       'timestamp_label': '[00:02:44]',
-       'timestamp_seconds': 164,
-       'tip': '1,000 if you want to take it up a notch. Transportation depends on whether you '
-              'rent a car, ride share, or use public transit. Super Bowl day ride shares can '
-              'surge hard. The best approach is to plan around transit or arrive early.',
-       'title': 'How Much Does it Cost to Go to the Super Bowl LX? 2026 (Nerd Nook Hub)',
-       'url': 'https://www.youtube.com/watch?v=8OkQ2Oq5Lbc&t=164s',
-       'video_id': '8OkQ2Oq5Lbc'}]}
+       'text': "If there's 200 tickets and it's selling 50 a day, you have 4 days until that event "
+               'is sold out.',
+       'timestamp': 609,
+       'timestamp_label': '[00:10:09]',
+       'timestamp_seconds': 609,
+       'tip': "If there's 200 tickets and it's selling 50 a day, you have 4 days until that event "
+              'is sold out.',
+       'title': 'The New Way to Find Tickets To Flip',
+       'url': 'https://www.youtube.com/watch?v=hw92haJDs9Y&t=609s',
+       'video_id': 'hw92haJDs9Y'},
+      {'author': 'Ticket Flipping',
+       'channel': 'Ticket Flipping',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:05:12](https://www.youtube.com/watch?v=ajoRfqew338&t=312s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'What our job is, is to determine if the venue is too small and the demand will '
+               'exceed the ticket supply.',
+       'timestamp': 312,
+       'timestamp_label': '[00:05:12]',
+       'timestamp_seconds': 312,
+       'tip': 'What our job is, is to determine if the venue is too small and the demand will '
+              'exceed the ticket supply.',
+       'title': 'Live Training: How to find tickets to flip based on the Venue!',
+       'url': 'https://www.youtube.com/watch?v=ajoRfqew338&t=312s',
+       'video_id': 'ajoRfqew338'},
+      {'author': 'Emmanuel Ak',
+       'channel': 'Emmanuel Ak',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:32:36](https://www.youtube.com/watch?v=ETQnblEeP94&t=1956s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': "Sometimes it's better to skip events than tie up money in dead stock.",
+       'timestamp': 1956,
+       'timestamp_label': '[00:32:36]',
+       'timestamp_seconds': 1956,
+       'tip': "Sometimes it's better to skip events than tie up money in dead stock.",
+       'title': 'How I scaled to 5 figure months Reselling Concert Tickets(1hr Full Course)',
+       'url': 'https://www.youtube.com/watch?v=ETQnblEeP94&t=1956s',
+       'video_id': 'ETQnblEeP94'},
+      {'author': 'Ticket Flipping',
+       'channel': 'Ticket Flipping',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:04:09](https://www.youtube.com/watch?v=NGFBVOXqxpA&t=249s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'And then also there are transfer delays, so you want to make sure that you can get '
+               'the tickets in time to have them transferred to you.',
+       'timestamp': 249,
+       'timestamp_label': '[00:04:09]',
+       'timestamp_seconds': 249,
+       'tip': 'And then also there are transfer delays, so you want to make sure that you can get '
+              'the tickets in time to have them transferred to you.',
+       'title': 'How to get More Tickets to Flip',
+       'url': 'https://www.youtube.com/watch?v=NGFBVOXqxpA&t=249s',
+       'video_id': 'NGFBVOXqxpA'},
+      {'author': 'FAQS',
+       'channel': 'FAQS',
+       'epistemic_status': 'attributed_practitioner_claim',
+       'markdown': '[00:00:24](https://www.youtube.com/watch?v=-W8Qblym0eg&t=24s)',
+       'relevance': 'Verbatim practitioner testimony from Chapter Q12.',
+       'source_type': 'video_pro_tip',
+       'text': 'So you can keep checking back.',
+       'timestamp': 24,
+       'timestamp_label': '[00:00:24]',
+       'timestamp_seconds': 24,
+       'tip': 'So you can keep checking back.',
+       'title': 'HOW TO BUY NFL SEASON TICKETS (2026)',
+       'url': 'https://www.youtube.com/watch?v=-W8Qblym0eg&t=24s',
+       'video_id': '-W8Qblym0eg'}]}

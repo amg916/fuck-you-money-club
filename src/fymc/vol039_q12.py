@@ -1,805 +1,819 @@
 from __future__ import annotations
 
-CHAPTER_12 = {
-    "id": "Q12",
-    "chapter_id": "Q12",
-    "chapter_number": 12,
-    "question_number": 12,
-    "slug": "first-30-day-launch-sprint-kill-fix-scale",
-    "question_prompt": "What is the exact Day-1-to-Day-30 execution schedule for launching inbound pay-per-call & rtb ping-post arbitrage, and what quantitative thresholds govern Kill, Fix, or Scale decisions at Day 30/60/90?",
-    "kicker": "Q12 / THE BIG MONEY PLAYBOOKS",
-    "title": "The First 30-Day Launch Sprint & Kill / Fix / Scale Gates",
-    "subtitle": "A Three-Person Ringba / Retreaver Launch Pod, Evidence-Bound Call Auctions, Net-7 Collections, and Measurable Cash-Control Decisions",
-    "layout_template": "thirty_day_plan",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #39, Inbound Pay-Per-Call & RTB Ping-Post Arbitrage, ranks "
-        "#01 of 42 with a 95/100 Money-to-Manpower Score. This sprint operationalizes "
-        "14 mapped plays through one full-time operator and two contractors, beginning "
-        "with one vertical, two contracted buyers, and tightly capped traffic. Days "
-        "1-7 establish contracts and evidence; Days 8-14 prove routing and qualification; "
-        "Days 15-21 reconcile buyer outcomes; Days 22-30 test collections and decide "
-        "whether to Kill, Fix, or Scale. Canonical annual owner profits remain $30,000 "
-        "Conservative, $199,750 Base, and $480,000 Scaled; they are not first-month "
-        "targets. A $6,000 launch loss ceiling, separate settlement float, mature-cohort "
-        "measurements, and explicit Day 30/60/90 thresholds prevent attractive bid "
-        "prices from concealing rejected calls, missing evidence, or uncollectible invoices."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$200,000",
-            "context": "Annual gross billable call settlements; $110,000 retained at 55%",
-            "note": "15% gross-basis net margin; $30,000 owner profit; 1 FT + 2 C; 27.27% retained-basis margin",
-        },
-        {
-            "label": "Base",
-            "value": "$850,000",
-            "context": "Annual gross billable call settlements; $467,500 retained at 55%",
-            "note": "23.5% gross-basis net margin; $199,750 owner profit; 1 FT + 2 C; 42.73% retained-basis margin",
-        },
-        {
-            "label": "Scaled",
-            "value": "$1,500,000",
-            "context": "Annual gross billable call settlements; $825,000 retained at 55%",
-            "note": "32% gross-basis net margin; $480,000 owner profit; 2 FT + 3 C; 58.18% retained-basis margin",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Days 1-7 — Contract the Spread Before Buying Traffic",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Start with one emergency-trade service in one metropolitan area, "
-                    "rather than simultaneously entering Medicare, legal referrals, and "
-                    "insurance. The first-week deliverable is a runnable commercial "
-                    "specification, not an advertising account with unrestricted spend. "
-                    "Assign the full-time operator buyer negotiation, treasury, and the "
-                    "daily decision log; assign contractor C1 tracking and routing "
-                    "engineering; assign contractor C2 evidence review and settlement "
-                    "quality assurance. Budget approximately forty operator hours and "
-                    "eight hours per contractor weekly. To make the fourteen-play "
-                    "requirement executable, this chapter uses an explicit operational "
-                    "mapping rather than asserting unavailable source-play titles: P01 "
-                    "vertical selection, P02 buyer underwriting, P03 qualification "
-                    "contracts, P04 acquisition attribution, P05 permission evidence, "
-                    "P06 suppression controls, P07 tracking infrastructure, P08 RTB "
-                    "routing, P09 duration qualification, P10 fraud detection, P11 "
-                    "transcript disposition, P12 server-to-server feedback, P13 "
-                    "settlement reconciliation, and P14 cash-constrained optimization. "
-                    "Maintain one evidence folder and one accountable owner for each "
-                    "play. Two buyers provide routing resilience, but neither receives "
-                    "traffic until its service area, staffed hours, credit exposure, "
-                    "duplicate definition, and rejection timetable are written down. "
-                    "A quoted payout without those terms is only a sales conversation. "
-                    "The operator signs off on the complete specification before C1 "
-                    "enables any production destination."
-                ),
-                (
-                    "Use an illustrative $18,000 capitalization within the supplied "
-                    "$8,000-$45,000 startup range. Ring-fence $8,000 as untouched reserve, "
-                    "$4,000 as maximum settlement working capital, and $6,000 as the "
-                    "maximum first-month loss allowance. Inside that allowance, cap "
-                    "traffic acquisition at $4,500 and setup, software, telephony, and "
-                    "contractor commitments at $1,500; reprice the sprint if written "
-                    "quotes exceed either envelope. These are pilot assumptions, not "
-                    "the scorecard's steady-state monthly expense projection. Track "
-                    "gross committed outlays before giving credit for uncollected "
-                    "invoices, and count publisher liabilities when incurred rather "
-                    "than when paid. The $4,000 float funds timing differences, not "
-                    "extra acquisition experiments; never count the same publisher "
-                    "payment in both spending categories. Stop new commitments when "
-                    "either the $6,000 spending cap, $4,000 receivable exposure cap, "
-                    "or reserve floor would be breached. Require buyer net-7 terms "
-                    "in writing and publisher terms that the operator can honor "
-                    "without collecting early. A buyer refusing a short pilot "
-                    "settlement cycle can remain a prospect, but cannot justify "
-                    "uncapped publisher intake. Expected first-deal timing remains "
-                    "one to three months, so Day 30 may legitimately produce a "
-                    "controlled Fix decision instead of revenue."
-                ),
-                (
-                    "Translate permissions into specific call paths before selecting "
-                    "TrustedForm or Jornaya. A certificate supports evidence retention; "
-                    "it does not independently establish lawful outreach, authorized "
-                    "recording, or permission to share information with every bidder. "
-                    "Separate consumer-initiated inbound calls from callbacks, automated "
-                    "outreach, texts, transfers, and recorded conversations. Apply "
-                    "47 U.S.C. § 227 and 47 CFR § 64.1200 to the actual technology "
-                    "and activity. The FCC's 2023 one-to-one consent amendment was "
-                    "vacated in Insurance Marketing Coalition Ltd. v. FCC in January "
-                    "2025; do not describe it as an operative nationwide FCC "
-                    "requirement. Adopt named-recipient permission as a contractual "
-                    "control where useful, while checking existing written-consent "
-                    "duties independently. For Medicare work, apply the distinct "
-                    "TPMO personal-data sharing requirements in 42 CFR §§ 422.2274 "
-                    "and 423.2274, and the scope-of-appointment timing provisions "
-                    "in §§ 422.2264 and 423.2264, including their exceptions. A "
-                    "48-hour appointment rule is not a universal inbound-call "
-                    "waiting period. For California legal referrals, evaluate "
-                    "Business and Professions Code §§ 6151-6155 before accepting "
-                    "per-call compensation. Keep Medicare and legal traffic disabled "
-                    "through this launch unless the pod can implement their "
-                    "separate operating requirements with documented specialist review."
-                ),
-            ],
-            "table": {
-                "caption": "Days 1-7: Commercial Specification, Capital Controls, and Play Ownership",
-                "headers": [
-                    "Day and accountable owner",
-                    "Mapped work and concrete deliverable",
-                    "Acceptance evidence required before progression",
-                    "Failure response and spending boundary",
-                ],
-                "rows": [
-                    [
-                        "Day 1 — full-time operator selects launch market",
-                        "P01 defines one trade, territory, and staffed schedule",
-                        "Written service exclusions match both prospective buyer capabilities",
-                        "Reject unsupported services before committing any acquisition spending",
-                    ],
-                    [
-                        "Day 2 — full-time operator underwrites two buyers",
-                        "P02 records business identity, references, and settlement contacts",
-                        "Both buyers acknowledge net-7 pilot invoices in writing",
-                        "Keep unverified buyers outside the production routing tree",
-                    ],
-                    [
-                        "Day 3 — operator and C2 negotiate qualification",
-                        "P03 fixes duration, geography, duplicates, and dispute deadlines",
-                        "Signed examples explain payable calls and rejected calls",
-                        "Reject contracts permitting unlimited retroactive duration threshold changes",
-                    ],
-                    [
-                        "Day 4 — C2 documents permission and suppression",
-                        "P05 and P06 classify inbound, callback, and recording paths",
-                        "Evidence checklist identifies applicable permission and suppression requirements",
-                        "Disable unsupported callbacks rather than assuming inbound permission transfers",
-                    ],
-                    [
-                        "Day 5 — C1 specifies attribution and tracking",
-                        "P04 and P07 map source identifiers to call identifiers",
-                        "Test records preserve source, destination, timestamps, and evidence references",
-                        "Keep advertising paused until identifiers survive every transfer",
-                    ],
-                    [
-                        "Day 6 — operator establishes bounded treasury ledger",
-                        "P14 separates spending commitments, receivable float, and reserve",
-                        "Ledger enforces six-thousand spending and four-thousand exposure caps",
-                        "Stop commitments before touching the eight-thousand reserve floor",
-                    ],
-                    [
-                        "Day 7 — entire pod reviews launch packet",
-                        "P01 through P07 have owners, evidence, and closure dates",
-                        "Both buyer specifications match the configured production destinations",
-                        "Unresolved commercial or evidence defects postpone paid traffic",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four Preconditions Before the First Paid Call",
-                "body": "All four checks must pass for the selected traffic path; a missing artifact blocks that path rather than being averaged into a quality score.",
-                "items": [
-                    "Obtain two executed buyer specifications covering staffed hours, payable connected duration, duplicate windows, net-7 payment, and a finite rejection deadline.",
-                    "Replay the exact landing page and call path; retrieve required permission evidence, recording disclosures, and recipient restrictions using the resulting call identifier.",
-                    "Run authorized synthetic calls through both destinations; confirm timeout fallback, capacity limits, duplicate protection, and zero delivery to excluded buyers.",
-                    "Show that the next traffic commitment preserves the $6,000 spending ceiling, $4,000 receivable exposure ceiling, and $8,000 reserve floor.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Days 8-14 — Prove Routing, Qualification, and Event Integrity",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Build one Ringba or Retreaver routing tree, not two competing "
-                    "production systems. Use the second product only if a documented "
-                    "requirement makes migration worthwhile. C1 configures territory, "
-                    "opening hours, concurrency, buyer caps, and a deterministic "
-                    "fallback destination before enabling auctions. Treat sub-second "
-                    "RTB as a measured engineering objective: target ping-response "
-                    "p95 below 800 milliseconds in authorized testing, subject to "
-                    "the buyer's supported endpoint contract. Timeout behavior must "
-                    "release the call to a suitable available route without "
-                    "duplicate posting or unsupported transfers. Bind each bid to "
-                    "an expiry, destination, qualification specification, and call "
-                    "identifier. Minimize information in the ping; bid solicitation "
-                    "does not authorize distributing the consumer's identity or "
-                    "health details to every potential buyer. Test stale bids, "
-                    "empty auctions, duplicate webhook delivery, rejected posts, "
-                    "closed destinations, and downstream disconnects. Preserve "
-                    "response codes and timestamps so an apparently low acceptance "
-                    "rate can be separated into routing failure and commercial "
-                    "rejection. The operator approves the destination roster; "
-                    "C1 cannot add a higher-paying buyer without updating its "
-                    "contract and eligibility rules. Keep a manual shutdown "
-                    "control available to the operator throughout staffed hours, "
-                    "and automatically stop traffic when no contracted destination "
-                    "can safely handle the selected service."
-                ),
-                (
-                    "Implement the 90-120-second qualification buffer as a "
-                    "buyer-specific commercial timer, never as a reason to keep "
-                    "an unsuitable caller talking. Record arrival, answer, "
-                    "transfer, connected conversation, disconnect, and disposition "
-                    "timestamps separately. If a buyer pays after ninety seconds "
-                    "of connected conversation, IVR time and ringing cannot "
-                    "inflate that measure. C2 reviews the first twenty genuine "
-                    "calls in full and compares buyer disposition with the "
-                    "contract, using recordings only where collection and access "
-                    "are permitted. AI transcript labels can triage wrong "
-                    "geography, duplicate demand, silence, solicitation, or "
-                    "service mismatch, but disputed payment decisions require "
-                    "human review of the underlying evidence. Configure fraud "
-                    "controls around repeated device or source patterns, "
-                    "implausible call bursts, recycled callers, and repeated "
-                    "short connections without making caller identity alone "
-                    "a definitive fraud finding. For outbound callbacks, "
-                    "implement applicable National Do Not Call and "
-                    "entity-specific suppression controls, honoring relevant "
-                    "exceptions and revocations. A private litigation-risk list "
-                    "is merely supplementary risk screening, not permission "
-                    "evidence or a replacement for required suppression. "
-                    "Document recording disclosures and applicable state "
-                    "requirements separately, including California Penal Code "
-                    "§ 632 when confidential communications fall within its "
-                    "scope. Limit recording access to the assigned reviewers "
-                    "and preserve an auditable retention schedule."
-                ),
-                (
-                    "Release one acquisition cell on Day 11 after synthetic "
-                    "testing passes: one source, one service, one geography, "
-                    "and one declared creative promise. Set a $150 daily "
-                    "acquisition ceiling initially, with cumulative commitments "
-                    "still constrained by the monthly budget. If the vendor "
-                    "requires a prepaid minimum beyond that ceiling, defer "
-                    "that source rather than disguising the commitment as "
-                    "unused credit. Use Google Ads call assets or an "
-                    "individually contracted publisher, but do not combine "
-                    "untraceable publisher traffic with search traffic in "
-                    "one reporting bucket. For P12, distinguish an early "
-                    "connected-call signal from a finalized payable-call "
-                    "conversion. Send idempotent server-to-server events "
-                    "using a stable event identifier and retain correction "
-                    "or retraction support where the receiving platform "
-                    "provides it. Never train bidding solely on duration "
-                    "when the buyer also rejects geography or duplicates. "
-                    "The three-person pod can support a fifteen-minute "
-                    "morning review and one bounded afternoon exception "
-                    "queue; it cannot manually investigate hundreds of "
-                    "unclassified calls while negotiating new verticals. "
-                    "Pause a cell when attribution completeness falls below "
-                    "99%, required permission evidence is missing, or "
-                    "destination failures exceed 2% of attempted transfers. "
-                    "Restart only after replaying the failed condition "
-                    "and recording a successful test against the corrected "
-                    "configuration."
-                ),
-            ],
-            "table": {
-                "caption": "Days 8-14: Controlled RTB Build and First-Traffic Release",
-                "headers": [
-                    "Day and accountable owner",
-                    "Mapped play and implementation task",
-                    "Measured deliverable for the daily review",
-                    "Specific stop or repair instruction",
-                ],
-                "rows": [
-                    [
-                        "Day 8 — C1 builds eligible routing branches",
-                        "P08 configures geography, schedules, concurrency, and buyer capacity",
-                        "Every synthetic route resolves only to eligible destinations",
-                        "Disable branches that bypass buyer hours or territory",
-                    ],
-                    [
-                        "Day 9 — C1 tests bid and post lifecycle",
-                        "P08 validates expiry, timeout fallback, and duplicate handling",
-                        "Authorized tests achieve ping-response p95 below eight-hundred milliseconds",
-                        "Repair slow endpoints before allocating incremental paid traffic",
-                    ],
-                    [
-                        "Day 10 — C2 validates timers and disclosures",
-                        "P09 separates ringing, IVR, transfer, and connected conversation",
-                        "Buyer examples reconcile against ninety-to-one-hundred-twenty-second contractual qualification timers",
-                        "Remove routes with inconsistent recording or duration evidence",
-                    ],
-                    [
-                        "Day 11 — operator releases one acquisition cell",
-                        "P04 starts attributable traffic under one-hundred-fifty-dollar daily ceiling",
-                        "First genuine calls retain complete source-to-buyer identifier linkage",
-                        "Pause spending immediately when source attribution becomes unreliable",
-                    ],
-                    [
-                        "Day 12 — C2 reviews first twenty calls",
-                        "P10 and P11 classify fraud indicators and service mismatch",
-                        "Human review compares transcript labels with original call evidence",
-                        "Quarantine suspicious sources without declaring every repeat caller fraudulent",
-                    ],
-                    [
-                        "Day 13 — C1 enables corrected conversion feedback",
-                        "P12 separates connected events from finalized payable conversions",
-                        "Duplicate webhook replay produces only one recognized conversion",
-                        "Disable feedback that rewards rejected or incorrectly attributed calls",
-                    ],
-                    [
-                        "Day 14 — operator reviews reliability and commitments",
-                        "P14 checks attribution, transfer failures, and cumulative spending",
-                        "Attribution reaches ninety-nine percent and transfer failures stay bounded",
-                        "Freeze expansion until all failed reliability checks pass",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Preserve the Spread Where Exchanges Usually Leak",
-                "body": "These tactics improve diagnosis without multiplying vendors, traffic cells, or contractor hours.",
-                "items": [
-                    "Store the applicable buyer specification version with every bid and call; a later contract edit must not rewrite the evidence for an earlier settlement.",
-                    "Compare the buyer's duration clock with your connected-conversation clock on the same twenty calls before blaming a publisher for short-duration rejects.",
-                    "Feed bidding with finalized payable outcomes and supported conversion adjustments, while keeping early connection events in a separate diagnostic stream.",
-                    "Maintain a tiny authorized test suite for expired bids, closed buyers, duplicate posts, and empty auctions; rerun it after every routing-tree edit.",
-                ],
-            },
-        },
-        {
-            "heading": "3. Days 15-21 — Reconcile Mature Calls and Collect Actual Cash",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Use three separate measures: gross billable settlements, "
-                    "retained contribution after publisher payouts and "
-                    "click-to-call media, and owner profit after all remaining "
-                    "expenses. The canonical retained share is 55%, leaving "
-                    "45% for those acquisition payouts and media costs. "
-                    "Conservative therefore reconciles $200,000 gross to "
-                    "$110,000 retained, $80,000 of remaining annual expenses, "
-                    "and $30,000 owner profit. Base reconciles $850,000 gross "
-                    "to $467,500 retained, $267,750 of remaining expenses, "
-                    "and $199,750 owner profit. Scaled reconciles $1,500,000 "
-                    "gross to $825,000 retained, $345,000 of remaining "
-                    "expenses, and $480,000 owner profit. The corresponding "
-                    "gross-basis margins are 15%, 23.5%, and 32%; retained-basis "
-                    "margins are 27.27%, 42.73%, and 58.18%. These residual "
-                    "annual expenses are mathematical requirements of the "
-                    "supplied cases, not independently quoted software budgets. "
-                    "The supplied $2,500-$14,000 monthly operating range "
-                    "cannot alone reconcile every residual; build an "
-                    "itemized expense bridge before adopting a forecast. "
-                    "Use the supplied ASC 606 retained-share convention "
-                    "for comparison while documenting principal-versus-agent "
-                    "presentation from actual contracts. Neither the "
-                    "homeowner's repair invoice, an insurance premium, "
-                    "nor a legal client's recovery belongs in operator "
-                    "call-exchange revenue. Day 30 performance should "
-                    "test this accounting structure, not extrapolate "
-                    "one unusually profitable afternoon into annual earnings."
-                ),
-                (
-                    "Model the acquisition cell with explicit denominators. "
-                    "Suppose one hundred connected calls generate eighty "
-                    "final payable calls at $75 each: gross settlements "
-                    "equal $6,000. A 55% retained contribution allows "
-                    "$2,700 of total acquisition costs, or $27 per "
-                    "connected call and $33.75 per payable call, leaving "
-                    "$3,300 before remaining expenses. If search clicks "
-                    "convert to connected calls at 10%, the maximum "
-                    "CPC compatible with that contribution target is "
-                    "$2.70, assuming no additional publisher payouts; "
-                    "adding publisher payments reduces the available "
-                    "media budget. This is unit arithmetic, not a "
-                    "forecast that the launch will achieve those "
-                    "prices or volumes. With the same $2,700 acquisition "
-                    "spend but only sixty payable calls, gross falls "
-                    "to $4,500 and retained contribution falls to "
-                    "40%. A high quoted bid cannot rescue poor "
-                    "payability. Report effective cost per payable "
-                    "call only after including rejected-call acquisition "
-                    "spending, telephony classified consistently, and "
-                    "any publisher minimums. Keep fixed overhead "
-                    "outside retained contribution and inside owner "
-                    "profit, avoiding double counting. Trigger a "
-                    "same-day Fix review when the three-day median "
-                    "CPC exceeds the launch baseline by 20% "
-                    "without an offsetting increase in collected "
-                    "value per click."
-                ),
-                (
-                    "Define a mature call as one whose contractual "
-                    "rejection window has expired and whose disposition "
-                    "has been reconciled, not merely a call that "
-                    "occurred yesterday. Track connected calls, final "
-                    "payable calls, gross finalized settlements, "
-                    "acquisition liabilities, and collected cash by "
-                    "source, buyer, and service date. Acceptance equals "
-                    "final payable calls divided by mature connected "
-                    "calls; dispute rate equals formally disputed "
-                    "initially billed dollars divided by initially "
-                    "billed dollars for the same mature cohort. "
-                    "Due-dollar collection equals cash applied to "
-                    "invoices due by the checkpoint divided by "
-                    "those invoices' collectible balances after "
-                    "contractually valid finalized adjustments. Show "
-                    "the adjustments separately so write-offs cannot "
-                    "manufacture a perfect collection score. C2 "
-                    "matches the buyer ledger to event identifiers; "
-                    "the operator sends the invoice and resolves "
-                    "commercial exceptions. Request the first net-7 "
-                    "remittance by Day 21 if the invoice date "
-                    "supports it. Until a buyer completes one "
-                    "full pilot settlement cycle, cap its unpaid "
-                    "exposure at $500 within the overall $4,000 "
-                    "limit. Freeze that buyer when an undisputed "
-                    "balance is more than seven days overdue. "
-                    "Publishers still receive payment on their "
-                    "agreed terms; buyer delinquency does not "
-                    "retroactively authorize withholding valid "
-                    "publisher earnings."
-                ),
-            ],
-            "table": {
-                "caption": "Days 15-21: Mature-Cohort Economics and Net-7 Cash Verification",
-                "headers": [
-                    "Day and accountable owner",
-                    "Mapped play and reconciliation work",
-                    "Required artifact or quantitative comparison",
-                    "Decision when evidence fails the test",
-                ],
-                "rows": [
-                    [
-                        "Day 15 — C2 opens cohort reconciliation ledger",
-                        "P13 matches buyer dispositions against original call identifiers",
-                        "Every billed line links to its qualification evidence",
-                        "Exclude unresolved lines from finalized contribution calculations",
-                    ],
-                    [
-                        "Day 16 — operator validates invoice delivery",
-                        "P13 confirms invoice receipt, due date, and remittance instructions",
-                        "Buyer acknowledges the complete invoice and dispute timetable",
-                        "Do not expand exposure against unacknowledged pilot invoices",
-                    ],
-                    [
-                        "Day 17 — C2 audits duration-related rejection patterns",
-                        "P09 and P11 compare connected timers with buyer records",
-                        "Disputed dollars remain visible beside finalized valid adjustments",
-                        "Repair timer discrepancies before purchasing more affected traffic",
-                    ],
-                    [
-                        "Day 18 — operator recomputes cell acquisition ceilings",
-                        "P14 converts payable yield into maximum allowable media costs",
-                        "One-hundred-call example supports twenty-seven dollars per connected call",
-                        "Lower bids when payable yield cannot support current acquisition",
-                    ],
-                    [
-                        "Day 19 — C1 checks feedback and suppression",
-                        "P06 and P12 reconcile revocations and payable conversion corrections",
-                        "Suppressed callbacks remain disabled across every active routing integration",
-                        "Pause affected outbound paths immediately after evidence failures",
-                    ],
-                    [
-                        "Day 20 — operator checks buyer credit exposure",
-                        "P02 and P13 compare unsettled balances with pilot limits",
-                        "Unproven buyers remain below five-hundred dollars unpaid exposure",
-                        "Suspend allocations exceeding buyer-specific or aggregate credit limits",
-                    ],
-                    [
-                        "Day 21 — operator verifies first settlement cycle",
-                        "P13 matches received bank funds to invoice line balances",
-                        "Cleared funds establish collectability rather than emailed payment promises",
-                        "Keep traffic capped when the first collection remains unproven",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Freeze the evidence cohort",
-                    "action": "Export calls whose contractual rejection windows have expired.",
-                    "detail": "Preserve source, buyer, specification version, connected duration, permission references, acquisition liabilities, and original billed amounts.",
-                },
-                {
-                    "step": 2,
-                    "title": "Resolve commercial differences",
-                    "action": "Match each buyer disposition and adjustment to its contractual rule.",
-                    "detail": "Keep unresolved disputes visible; distinguish wrong geography, duplicate demand, duration differences, and unsupported retroactive scrubs.",
-                },
-                {
-                    "step": 3,
-                    "title": "Bridge contribution to cash",
-                    "action": "Calculate gross finalized settlements, retained contribution, remaining expenses, and invoice collections separately.",
-                    "detail": "Apply bank receipts to invoice balances and retain a separate aging schedule for overdue amounts and valid adjustments.",
-                },
-                {
-                    "step": 4,
-                    "title": "Authorize only bounded commitments",
-                    "action": "Record the operator's next-day source caps and buyer exposure limits.",
-                    "detail": "Check aggregate spending, available working capital, reserve floor, routing reliability, and evidence completeness before reopening traffic.",
-                },
-            ],
-        },
-        {
-            "heading": "4. Days 22-30 — Decide with Evidence, Then Recheck at Days 60 and 90",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Use Days 22-24 to close the first invoice "
-                    "cycle, repair the largest rejection cause, "
-                    "and rerun the routing regression suite. "
-                    "Use Days 25-27 to measure one unchanged "
-                    "cell, test a reversible 20% budget "
-                    "increase only if provisional scale conditions "
-                    "hold, and verify the second buyer's "
-                    "collection evidence. Days 28-30 are for "
-                    "expense accruals, a written decision, and "
-                    "next-month caps, not a last-minute traffic "
-                    "surge. All thresholds here are proposed "
-                    "operating rules rather than measured "
-                    "performance of Candidate #39. Evaluate "
-                    "economic thresholds per acquisition cell, "
-                    "with treasury and evidence failures "
-                    "overriding the entire affected operation. "
-                    "At Day 30 require at least one "
-                    "hundred mature connected calls, 75% "
-                    "acceptance, 55% retained contribution, "
-                    "disputed dollars no higher than 5%, "
-                    "and at least 95% collection of "
-                    "due dollars before scaling. Both "
-                    "active buyers must have completed "
-                    "one invoice cycle. Zero due invoices "
-                    "means collectability is unproven, not "
-                    "100% collected. Require complete "
-                    "mandatory evidence, at least 99% "
-                    "attribution completeness, and transfer "
-                    "failures no higher than 2%. "
-                    "A sample shortfall produces Fix "
-                    "with frozen expansion; it never "
-                    "justifies more spending beyond the "
-                    "cash limits merely to reach "
-                    "statistical convenience."
-                ),
-                (
-                    "Kill means stop paid acquisition for "
-                    "the failing cell and settle existing "
-                    "obligations; it does not mean erase "
-                    "records or abandon valid debts. "
-                    "Immediately pause affected activity for "
-                    "missing required permission, unlawful "
-                    "routing, unauthorized disclosure, or "
-                    "breached treasury limits. Terminate "
-                    "a source relationship when material "
-                    "evidence falsification is substantiated. "
-                    "For economic failures, kill a "
-                    "cell when retained contribution is "
-                    "zero or negative across two "
-                    "consecutive non-overlapping mature "
-                    "cohorts of at least fifty "
-                    "connected calls each, despite "
-                    "one documented repair attempt. "
-                    "Otherwise classify below-threshold "
-                    "results as Fix and assign "
-                    "one cause, one owner, one "
-                    "test, and a seven-day deadline. "
-                    "At Day 60 require three "
-                    "hundred mature connected calls "
-                    "in the trailing thirty-day "
-                    "service cohort; at Day 90 "
-                    "require six hundred, with "
-                    "the same maturity rule. "
-                    "An immature portion remains "
-                    "outside the denominator and "
-                    "is reported explicitly. Raise "
-                    "acceptance to 80% and 85%, "
-                    "reduce dispute limits to "
-                    "3% and 2%, and increase "
-                    "due-dollar collection to 98% "
-                    "and 99%, respectively. Maintain "
-                    "55% retained contribution "
-                    "throughout. These are cumulative "
-                    "requirements within each checkpoint, "
-                    "not interchangeable achievements. "
-                    "Recheck whenever a publisher, "
-                    "buyer contract, geography, "
-                    "or routing configuration changes "
-                    "materially, because prior evidence "
-                    "does not automatically transfer "
-                    "to the new cell."
-                ),
-                (
-                    "Scale only by 20% in daily "
-                    "acquisition budget after seven "
-                    "additional stable calendar days "
-                    "and another mature-cohort review; "
-                    "reserve buyer capacity before "
-                    "lifting source caps. At "
-                    "Day 60 also require nonnegative "
-                    "trailing-thirty-day owner profit "
-                    "after accrued expenses; at "
-                    "Day 90 require at least "
-                    "15% owner margin on gross "
-                    "finalized settlements. The Day "
-                    "90 threshold matches the "
-                    "Conservative margin, not the "
-                    "Base or Scaled promise. "
-                    "Track collection lag and "
-                    "publisher payment dates before "
-                    "each increase because profitable "
-                    "receivables can still exhaust "
-                    "cash. Hold expansion if "
-                    "the operator exceeds forty-five "
-                    "hours weekly for two weeks, "
-                    "either contractor exceeds ten "
-                    "hours weekly, or unresolved "
-                    "exceptions remain older than "
-                    "two business days. First "
-                    "automate repetitive identifier "
-                    "matching, rejection categorization, "
-                    "and invoice preparation; do "
-                    "not automate disputed commercial "
-                    "judgments merely to hide "
-                    "a staffing deficit. The "
-                    "Conservative and Base cases "
-                    "use one full-time person "
-                    "plus two contractors. The "
-                    "$480,000 Scaled owner-profit "
-                    "case explicitly requires two "
-                    "full-time people plus three "
-                    "contractors, so crossing into "
-                    "that operating design needs "
-                    "a separately funded staffing "
-                    "plan. End Day 30 with "
-                    "a signed internal decision "
-                    "record listing live cells, "
-                    "paused cells, unpaid exposure, "
-                    "remaining cash, repair owners, "
-                    "and the next checkpoint date."
-                ),
-            ],
-            "table": {
-                "caption": "Days 22-30 Execution and Day 30/60/90 Kill / Fix / Scale Matrix",
-                "headers": [
-                    "Execution day or decision checkpoint",
-                    "Required deliverable or measurable scale conditions",
-                    "Kill or immediate stop condition",
-                    "Fix response and permitted next commitment",
-                ],
-                "rows": [
-                    [
-                        "Day 22 — operator closes first invoice cycle",
-                        "Match cleared bank receipts against every due invoice",
-                        "Freeze buyers with undisputed balances seven days overdue",
-                        "Resolve allocation differences without increasing the buyer exposure",
-                    ],
-                    [
-                        "Day 23 — C2 prioritizes largest rejection cause",
-                        "Choose one repair using rejected dollars and evidence",
-                        "Terminate sources with substantiated material permission-evidence falsification",
-                        "Assign one cause, owner, test, and seven-day deadline",
-                    ],
-                    [
-                        "Day 24 — C1 reruns routing regression tests",
-                        "Replay expired bids, duplicate posts, and closed destinations",
-                        "Pause routes delivering calls outside contracted recipient restrictions",
-                        "Restore traffic only after the failed condition passes",
-                    ],
-                    [
-                        "Day 25 — operator freezes configuration for measurement",
-                        "Measure one unchanged acquisition cell against mature-cohort economics",
-                        "Stop new commitments that breach any treasury ceiling",
-                        "Keep configuration stable while collecting remaining mature evidence",
-                    ],
-                    [
-                        "Day 26 — operator considers bounded budget experiment",
-                        "Require provisional Day 30 thresholds before twenty-percent increase",
-                        "Cancel increases that consume protected reserve or excess float",
-                        "Retain original cap when sample or collections remain insufficient",
-                    ],
-                    [
-                        "Day 27 — operator verifies second buyer settlement",
-                        "Require cleared payment from each active production buyer",
-                        "Freeze overdue buyers instead of relying on remittance promises",
-                        "Route within proven buyer capacity without expanding total spend",
-                    ],
-                    [
-                        "Day 28 — C2 closes expenses and adjustments",
-                        "Accrue publisher liabilities, contractor work, and supported buyer adjustments",
-                        "Reject profit reports omitting valid unpaid operating obligations",
-                        "Rebuild the expense bridge before adopting next-month targets",
-                    ],
-                    [
-                        "Day 29 — operator drafts checkpoint decision record",
-                        "List cell economics, cash exposure, evidence failures, and repairs",
-                        "Kill cells meeting the repeated nonpositive contribution rule",
-                        "Freeze expansion for every cell missing any scale requirement",
-                    ],
-                    [
-                        "Day 30 — entire pod signs next-month caps",
-                        "Require one-hundred mature connections, seventy-five-percent acceptance, fifty-five-percent contribution",
-                        "Stop affected activity for evidence failures or breached cash limits",
-                        "Also require disputes at most five-percent and collections ninety-five-percent",
-                    ],
-                    [
-                        "Day 60 — operator reviews trailing service cohort",
-                        "Require three-hundred mature connections, eighty-percent acceptance, fifty-five-percent contribution",
-                        "Kill repaired cells with two qualifying nonpositive contribution cohorts",
-                        "Also require three-percent disputes, ninety-eight-percent collections, nonnegative owner profit",
-                    ],
-                    [
-                        "Day 90 — operator tests sustainable operating margin",
-                        "Require six-hundred mature connections, eighty-five-percent acceptance, fifty-five-percent contribution",
-                        "Keep expansion stopped when staffing or treasury controls fail",
-                        "Also require two-percent disputes, ninety-nine-percent collections, fifteen-percent owner margin",
-                    ],
-                    [
-                        "Every checkpoint — operator applies shared evidence requirements",
-                        "Require complete mandatory evidence, ninety-nine-percent attribution, bounded transfer failures",
-                        "Pause affected paths immediately when required permission evidence disappears",
-                        "Permit twenty-percent increases only after seven additional stable days",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": "Scale the collected spread, not the winning bid.",
-    "diagram_id": "diag-08",
-    "action_checklist": [
-        "Assign all fourteen operationally mapped plays to the full-time operator, C1 engineering contractor, or C2 evidence and settlement contractor before Day 7.",
-        "Execute two buyer specifications defining territory, staffing, duration clocks, duplicate windows, rejection deadlines, net-7 terms, and recipient restrictions.",
-        "Configure the $6,000 first-month spending ceiling, $4,000 aggregate receivable exposure ceiling, $500 unproven-buyer limit, and $8,000 protected reserve.",
-        "Replay the complete Ringba or Retreaver call path and retrieve attribution, required permission evidence, qualification timing, and idempotent conversion events.",
-        "Reconcile mature calls to buyer adjustments, publisher liabilities, remaining expenses, and cleared bank receipts without mixing customer transaction value into exchange revenue.",
-        "Record Day 30 Kill, Fix, or Scale decisions and schedule Day 60/90 reviews using the defined sample sizes, contribution, collections, disputes, staffing, and owner-margin thresholds.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "47 U.S.C. § 227 — Restrictions on use of telephone equipment",
-            "url": "https://www.law.cornell.edu/uscode/text/47/227",
-            "relevance": "Classify callbacks, automated outreach, and other telephone activities against the applicable TCPA restrictions rather than treating every inbound interaction as blanket outreach permission.",
-        },
-        {
-            "title": "47 CFR § 64.1200 — Delivery restrictions",
-            "url": "https://www.ecfr.gov/current/title-47/section-64.1200",
-            "relevance": "Implement applicable consent, revocation, calling, and do-not-call controls by traffic path; do not treat the vacated FCC one-to-one amendment as an operative universal requirement.",
-        },
-        {
-            "title": "16 CFR § 310.4 — Abusive telemarketing acts or practices",
-            "url": "https://www.ecfr.gov/current/title-16/section-310.4",
-            "relevance": "Evaluate covered outbound telemarketing and suppression practices, including National Do Not Call requirements, alongside the separate FCC framework.",
-        },
-        {
-            "title": "42 CFR § 422.2264 — Medicare Advantage beneficiary contact",
-            "url": "https://www.ecfr.gov/current/title-42/section-422.2264",
-            "relevance": "Implement applicable scope-of-appointment documentation and forty-eight-hour timing requirements with their stated exceptions instead of imposing a universal delay on inbound calls.",
-        },
-        {
-            "title": "42 CFR § 423.2264 — Part D beneficiary contact",
-            "url": "https://www.ecfr.gov/current/title-42/section-423.2264",
-            "relevance": "Apply Part D appointment and beneficiary-contact requirements independently when a future launch cell includes prescription drug plan marketing.",
-        },
-        {
-            "title": "42 CFR § 422.2274 — Medicare Advantage agent, broker, and TPMO requirements",
-            "url": "https://www.ecfr.gov/current/title-42/section-422.2274",
-            "relevance": "Build the applicable TPMO call-recording, oversight, and separately identified recipient consent controls for personal beneficiary data sharing.",
-        },
-        {
-            "title": "42 CFR § 423.2274 — Part D agent, broker, and TPMO requirements",
-            "url": "https://www.ecfr.gov/current/title-42/section-423.2274",
-            "relevance": "Apply corresponding Part D TPMO operating requirements before enabling personal-data exchange or marketing call paths in that vertical.",
-        },
-        {
-            "title": "California Business and Professions Code § 6152 — Runners and cappers",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=6152.",
-            "relevance": "Review prohibited runner and capper conduct before acquiring or selling California legal-service calls; ordinary trade-call economics do not resolve legal-referral restrictions.",
-        },
-        {
-            "title": "California Business and Professions Code § 6155 — Lawyer referral services",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=6155.",
-            "relevance": "Determine whether the proposed California legal-call operation constitutes a regulated lawyer referral service before accepting buyer compensation.",
-        },
-        {
-            "title": "California Penal Code § 632 — Confidential communications",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=PEN&sectionNum=632.",
-            "relevance": "Assess recording permissions for confidential communications within the statute's scope and retain evidence supporting the configured recording procedure.",
-        },
-    ],
-}
+CHAPTER_12 = {'id': 'Q12',
+ 'chapter_id': 'Q12',
+ 'chapter_number': 12,
+ 'question_number': 12,
+ 'slug': 'pay-per-call-unit-economics-call-quality-scaling-case-studies',
+ 'question_prompt': 'What makes a call billable, how do payouts, margins and quality control work, and '
+                    'what do real scaling case studies show?',
+ 'kicker': 'Q12 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Unit Economics, Call Quality, and Scaling Case Studies',
+ 'subtitle': 'Economics of a call, billing, payouts and margins, net terms with publishers, reading '
+             'campaign rules, billable call criteria, quality assurance, fraud control, call center lead '
+             'verification, optimization reporting, and debt settlement and million-dollar case studies',
+ 'layout_template': 'action_worksheet_summary',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Practitioners from TrackDrive, Ringba, ExclusiveLiveCall, Marketcall, John Ventura, '
+                      'Yoder, ceohec and DigitalTriggers agree on one rule: the payout rate alone never '
+                      'proves a deal is profitable. Margin lives in the spread between buyer price and '
+                      'publisher payout. Rejected calls, duplicates, callback fraud, telecom costs and '
+                      'buyer credit risk then eat into it. Street numbers cluster around $35 publisher '
+                      "payouts against $50+ buyer prices and 90-second billable thresholds. Marketcall's "
+                      'debt-settlement funnel converts 25-35% of calls to billable. Operators demand '
+                      'upfront buyer deposits, align net terms so wires clear before publishers are paid, '
+                      'and run QA as a profit center. They disagree on duration-based versus '
+                      'conversation-based billing and on network versus direct-to-business selling. They '
+                      'also split on whether to chase cheap calls or pricier calls that close one in three '
+                      'or four.',
+ 'key_metrics': [{'label': 'Affiliate-to-Buyer Spread Per Call',
+                  'metric': 'Affiliate-to-Buyer Spread Per Call',
+                  'value': '$35 affiliate payout vs $50+ buyer price = $15 spread; 500 calls/day = '
+                           '$7,500/day',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "John Ventura's core middleman math, scaled to '$225,000 every single month' "
+                             'at 500 calls per day',
+                  'source': 'John Ventura ([KeC4mKXnzs4 @ 00:03:05])'},
+                 {'label': 'Margin Collapse When Paying On All Calls',
+                  'metric': 'Margin Collapse When Paying On All Calls',
+                  'value': '30% margin ($1,200) falls to 12.5% ($500)',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "TrackDrive's illustrative 100-call example where the publisher is paid on "
+                             'all 100 calls instead of the 80 that qualify',
+                  'source': 'TrackDrive ([yYZ5s6jFzQs @ 00:02:04])'},
+                 {'label': 'Call-to-Billable Conversion Rate',
+                  'metric': 'Call-to-Billable Conversion Rate',
+                  'value': '25-35% of calls go billable (>90s); 8-13% of billable calls enroll',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Marketcall's debt settlement Facebook funnel benchmarks from an 8-month case "
+                             'run',
+                  'source': 'Marketcall ([Dq9KUpYUWsE @ 00:09:49])'},
+                 {'label': 'Minimum Billable Rate Before Scaling',
+                  'metric': 'Minimum Billable Rate Before Scaling',
+                  'value': '50% or higher billable rate, plus positive post-reconciliation margin and '
+                           'clean QA',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "John Ventura's fifth step: scale only past this bar and never add 10 "
+                             'affiliates at once',
+                  'source': 'John Ventura ([KeC4mKXnzs4 @ 00:09:37])'}],
+ 'sections': [{'section_number': 1,
+               'title': 'The Practitioner Consensus',
+               'paragraphs': ['Every operator who breaks down a call starts from the same place. The '
+                              'payout headline means nothing until it is set against the buyer price, the '
+                              'qualification rules and the hidden costs underneath. TrackDrive frames its '
+                              'numbers as illustrative rather than benchmarks, then walks 100 calls '
+                              'through the machine. Eighty qualify, and the buyer pays $50 on each for '
+                              '$4,000. The publisher earns $35 on each for $2,800, and the operator keeps '
+                              '$1,200, a 30% margin [yYZ5s6jFzQs @ 00:01:20]. ExclusiveLiveCall runs the '
+                              'same logic at a higher price point. A $200 buyer and a $150 publisher leave '
+                              'a $50 gross spread, or $5,000 on 100 calls. Telecom, AI, processing, '
+                              'chargebacks and bad debt still come out of that spread, and $2 saved across '
+                              '10,000 transactions is $20,000 [b7P50zcQzTs @ 00:02:32]. John Ventura '
+                              'describes the model as pure middleman arbitrage, likening it to Amazon, '
+                              'Uber and Airbnb. Affiliates accept $35 and buyers pay $50 or more, so the '
+                              '$15 spread on 500 calls a day becomes $7,500 daily, or $225,000 a month '
+                              '[KeC4mKXnzs4 @ 00:03:05]. TrackDrive states the consensus line directly: '
+                              'the rate alone never tells you if a deal is profitable, so know your margin '
+                              'before you negotiate a payout [yYZ5s6jFzQs @ 00:02:27].',
+                              'The second point of agreement is that the billable event defines the money. '
+                              'TrackDrive shows what happens when an operator pays the publisher on all '
+                              '100 calls instead of the 80 that qualify. Payout jumps to $3,500 and margin '
+                              'collapses from 30% to $500, or 12.5%, because rejected calls come straight '
+                              'out of margin [yYZ5s6jFzQs @ 00:02:04]. Nate of Money Printer Marketing, '
+                              'interviewed on Yoder, works off a 90-second billable duration, and the '
+                              'warning is blunt: hang the phone up before 90 seconds or the call gets '
+                              "charged [-GEw-hz8tiY @ 00:06:29]. Marketcall's debt settlement offer prices "
+                              'the same way. English calls over 90 seconds pay $55-60 and Spanish calls '
+                              'pay $50-55. A private offer pays $20-25 for calls over just 10 seconds, and '
+                              'every state except Oregon is accepted, Monday to Friday, 9am to 7pm ET '
+                              '[Dq9KUpYUWsE @ 00:03:03]. ExclusiveLiveCall pushes operators to read every '
+                              'payout alongside its trigger, because a $150 qualified-call campaign cannot '
+                              'be compared head-to-head with an $800 acquisition campaign [scPdPdSnQWY @ '
+                              '00:01:55]. Geography, hours, caps and duplicate windows also decide whether '
+                              'a call ever pays. A Dallas caller is simply wasted on a South-Florida-only '
+                              'buyer. The shared rule is never to choose a campaign based only on the '
+                              'payout.',
+                              'The baseline prerequisites are just as uniform. Collect cash before you '
+                              'route, track every call yourself, and treat quality as a business line. '
+                              'ceohec takes buyer payment upfront on every deal, because buyers whose '
+                              'calls do not close have no incentive to pay, and they have been stiffed '
+                              'before. The only exception is a massive deal backed by invoice insurance '
+                              '[SkS03nygdoY @ 00:01:48]. ExclusiveLiveCall calls post-paid net 7, 15 or 30 '
+                              'terms what they really are: extended credit. They start new buyers on '
+                              'smaller limits and repeat that revenue on a dashboard is not the same as '
+                              'cash in the bank [b7P50zcQzTs @ 00:04:31]. John Ventura says the beginner '
+                              'with one affiliate, one buyer and a spreadsheet breaks within about three '
+                              'days. The usual break is a fight where the buyer counts 40 qualified calls '
+                              'and the affiliate claims 60. Their own AdSync operation still spent six '
+                              'figures a year managing Ringba and Retreaver [KeC4mKXnzs4 @ 00:09:02]. '
+                              "Ringba's QA masterclass argues that everyone in the chain should run QA, "
+                              'because it keeps everyone honest and can become a profit center. It also '
+                              'calls affiliates who skip their own call tracking a major mistake, since '
+                              'networks are under-resourced and will not catch everything [JxU9bgFTUUs @ '
+                              '00:05:01].'],
+               'table': {'caption': 'Core consensus rules practitioners apply before sending a single call',
+                         'headers': ['Consensus Principle',
+                                     'What Operators Actually Do',
+                                     'Number or Rule Stated',
+                                     'Expert Source'],
+                         'rows': [['The payout rate alone never proves a deal is profitable',
+                                   'Price every deal on qualified calls instead of raw volume sent',
+                                   '80 of 100 calls qualify, leaving $1,200 or a 30% margin',
+                                   'TrackDrive ([yYZ5s6jFzQs @ 00:01:43])'],
+                                  ['Pay publishers on qualified calls, never on every call sent',
+                                   'Confirm the publisher payout trigger before negotiating any rate at '
+                                   'all',
+                                   'Paying all 100 calls drops margin to $500, or 12.5%',
+                                   'TrackDrive ([yYZ5s6jFzQs @ 00:02:04])'],
+                                  ['The spread between buyer price and payout is the business',
+                                   'Recruit affiliates at a lower rate and resell their calls to buyers',
+                                   '$35 affiliate payout against a $50-plus buyer price, a $15 spread',
+                                   'John Ventura ([KeC4mKXnzs4 @ 00:02:36])'],
+                                  ['Hidden costs quietly erode the gross spread on every call',
+                                   'Audit telecom, AI, processing, chargebacks and bad debt line by line',
+                                   '$2 saved across 10,000 transactions adds $20,000 to profit',
+                                   'ExclusiveLiveCall ([b7P50zcQzTs @ 00:02:32])'],
+                                  ['Buyer cash must arrive before any calls are routed to them',
+                                   'Take deposits upfront unless a massive deal carries invoice insurance',
+                                   'Agent Calls requires $250 minimum; recommended deposit is $500 to '
+                                   '1,000',
+                                   'ceohec ([SkS03nygdoY @ 00:08:10])'],
+                                  ['Own call tracking is mandatory because spreadsheets break almost '
+                                   'immediately',
+                                   'Install dedicated tracking, routing, recording and QA instead of '
+                                   'manual logs',
+                                   'Spreadsheet tracking fails within roughly three days; disputes run 40 '
+                                   'versus 60',
+                                   'John Ventura ([KeC4mKXnzs4 @ 00:09:02])'],
+                                  ['QA is a profit center that keeps everyone in the chain honest',
+                                   'Put QA clauses at the top of every IO and review them live',
+                                   'No one reads terms and conditions, so walk partners through by voice',
+                                   'Ringba ([JxU9bgFTUUs @ 00:07:05])']]}},
+              {'section_number': 2,
+               'title': 'Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ["Marketcall's Alex, VP of Ops, lays out the most complete media playbook on "
+                              'the debt settlement offer. It targets adults 30-55 with low but nonzero '
+                              'income and over $10K of unsecured debt. Campaigns use a lifetime budget to '
+                              'unlock ad scheduling, a 1-10-1 CBO structure, the special credit category '
+                              'for cheaper CPMs, and broad targeting. News-style, B-roll voiceover and '
+                              'Arcads UGC creatives feed into advertorial quiz pages or chatbots, and UGC '
+                              'is currently winning [Dq9KUpYUWsE @ 00:05:12]. The funnel benchmarks are '
+                              'explicit. Seven to 10% of clicks hit the call button, and 60-90% of those '
+                              'actually dial. Then 25-35% of calls go billable past 90 seconds, and 8-13% '
+                              'of billable calls enroll [Dq9KUpYUWsE @ 00:09:49]. Testing budgets run '
+                              'about $20-30 per ad set to buy one raw call and $100-150 per billable call. '
+                              'Losers are paused after two to three days [Dq9KUpYUWsE @ 00:11:35]. Nate, '
+                              "on Yoder, works the same equation from the buyer's side. The pre-dial "
+                              'filter is targeting, a qualifying landing-page flow and an urgency CTA. The '
+                              'sales pitch is closing math, positioned against $5-20K monthly retainers: a '
+                              '$200 CPA goal at $50 per call means one in four calls must close '
+                              '[-GEw-hz8tiY @ 00:08:33].',
+                              'Cash mechanics are where operators get specific. ceohec usually runs '
+                              'publishers on weekly net 7, and some deals run monthly net 3. Terms are '
+                              'aligned so wires clear first. A buyer on net 7 means the publisher goes on '
+                              'net 10, while a publisher on net 7 against a buyer on net 3 leaves a '
+                              'four-day buffer [SkS03nygdoY @ 00:05:31]. Their worked example is $40 times '
+                              '10 billable calls for $400, invoiced on Sunday, with funds taking one to '
+                              'two days to land in the bank [SkS03nygdoY @ 00:03:51]. ExclusiveLiveCall '
+                              'builds prepaid billing as a $1,000 deposit with auto-recharge at a $200 '
+                              'balance, tied directly to routing. They warn that a buyer on net 30, while '
+                              'publishers are paid every seven days, means you are financing that '
+                              'difference [b7P50zcQzTs @ 00:05:41]. Inside Ringba, payouts live under '
+                              'Campaigns, Edit, Default Payout Settings, Add. A payout is either a fixed '
+                              'amount or a rev-share percentage with limits. A fixed payout can trigger on '
+                              'call length, connected, inbound or converted. Operators can optionally pay '
+                              'for duplicates within a time limit and set payout hours. Caps cover call '
+                              'count and concurrency at global, monthly, daily and hourly levels. Payouts '
+                              'are ordered top to bottom for priority, with per-publisher overrides '
+                              'available [YWJrO94X-f4 @ 00:00:37].',
+                              'Optimization runs on a fixed weekly cadence rather than gut feel. '
+                              'TrackDrive reviews four numbers by publisher and sub ID: qualified rate, '
+                              'billable rate, revenue per call and margin. Revenue per call is the best '
+                              'single figure for comparing sources. Any drop is diagnosed in a fixed order '
+                              'of traffic, routing, buyer and pricing, changing one thing at a time. '
+                              'Operators raise caps on performers, tighten or pause the rest, and log '
+                              "every change [8O9Q1wVmurU @ 00:02:18]. Ringba's QA method for callback "
+                              "fraud is mechanical. In this scheme an agent says 'let me call you back' "
+                              'and bypasses tracking. The fix is to filter non-converted calls and sort '
+                              'under-threshold calls by duration, highest to lowest. Group them by buyer '
+                              'and ignore 5-8 second calls. Then hand the network the recording and caller '
+                              'ID, and demand a QA addendum carrying a 50% penalty per CPA [JxU9bgFTUUs @ '
+                              '00:17:55]. The same session benchmarks automated IVR selection at about '
+                              '40%. It treats 50-60% as fine and flags roughly 100% as fraud [JxU9bgFTUUs '
+                              '@ 00:40:16]. DigitalTriggers keeps review cheap with a VA who manually '
+                              'checks calls averaging about three minutes. The VA skips through at the 30, '
+                              '60 and 90 second marks to confirm the caller is in market and in territory '
+                              '[1agI5uDKUlQ @ 00:14:33].'],
+               'table': {'caption': 'Exact settings, benchmarks and tools operators run in live campaigns',
+                         'headers': ['Mechanic',
+                                     'Exact Setting or Number',
+                                     'How Operators Use It',
+                                     'Expert Source'],
+                         'rows': [['Debt settlement payout grid by language and duration',
+                                   '$55-60 English and $50-55 Spanish over 90s; private offer $20-25 over '
+                                   '10s',
+                                   'Price media against billable duration across all states except Oregon',
+                                   'Marketcall ([Dq9KUpYUWsE @ 00:03:03])'],
+                                  ['Facebook ad cost benchmarks for the debt settlement vertical',
+                                   'CPM $20-30 Spanish, $40-60 English; CPC under $1.3-1.5; CTR 1.5-2.5%',
+                                   'Benchmark every new ad set against these ranges before scaling spend',
+                                   'Marketcall ([Dq9KUpYUWsE @ 00:10:33])'],
+                                  ['Pixel event mapping for deeper Facebook optimization signals',
+                                   'Call click as AddToCart, raw call as Lead, billable call as Contact '
+                                   'via CAPI',
+                                   'Feed the algorithm billable and enrollment events instead of page '
+                                   'views',
+                                   'Marketcall ([Dq9KUpYUWsE @ 00:09:10])'],
+                                  ['Bidding war between competing buyers on the same call flow',
+                                   'Bids climb from 45 to 50 to 55 to 60 dollars per call',
+                                   'Play buyers against each other to lift revenue by 20-40% more',
+                                   'Yoder ([-GEw-hz8tiY @ 00:13:26])'],
+                                  ['Duplicate routing and conditional number display inside the router',
+                                   'Repeat callers route to the same buyer; JavaScript shows the number '
+                                   'only when a buyer is available',
+                                   'Stop wasted calls by hiding the number when no buyer is eligible',
+                                   'boberdoo.com ([gOc6yQYGV4s @ 00:01:26])'],
+                                  ['AI voice recovery for calls that no buyer will take',
+                                   'No upfront fee; $5 charged only per booked appointment synced to '
+                                   'Google Calendar',
+                                   'Monetize missed and unsold calls instead of letting them die unpaid',
+                                   'ExclusiveLiveCall ([b7P50zcQzTs @ 00:09:22])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Street-Level Edges That Widen the Spread',
+                           'body': 'These are the small operator moves practitioners credit with finding '
+                                   'buyers, closing deals and squeezing extra revenue out of traffic '
+                                   'already paid for.',
+                           'items': ['Listen to call greetings to identify who the real end buyer is, then '
+                                     'pitch that buyer directly [John Ventura — x3UYaJjRdx0 @ 00:05:57].',
+                                     'Sell buyers a $2-5k test that reads out within 24-48 hours, set '
+                                     'against a $15k/month agency retainer locked for 90 days [John '
+                                     'Ventura — x3UYaJjRdx0 @ 00:01:26].',
+                                     'Build exit pages for disqualified traffic, which add 5-10% revenue '
+                                     'on clicks you already paid for [Marketcall — Dq9KUpYUWsE @ '
+                                     '00:14:48].',
+                                     "Open disputes with dated specifics such as 'between the third and "
+                                     "the seventh...' rather than 'your traffic is bad' [TrackDrive — "
+                                     'y8V08rKKNWY @ 00:04:31].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Lock the Vertical, Buyers and Billable Event',
+                              'action': 'Pick one vertical that can justify about $50 per call, sign '
+                                        'buyers before recruiting traffic, and write down the exact '
+                                        'billable trigger.',
+                              'detail': 'Choose buyers first and only enter verticals that justify '
+                                        '$50/call [John Ventura — KeC4mKXnzs4 @ 00:09:37]; read every '
+                                        'payout alongside its billable event so a $150 qualified call is '
+                                        'never confused with an $800 acquisition [ExclusiveLiveCall — '
+                                        'scPdPdSnQWY @ 00:01:55].'},
+                             {'step': 2,
+                              'title': 'Collect Deposits and Align Net Terms',
+                              'action': 'Take buyer money upfront, then set publisher terms longer than '
+                                        'buyer terms so wires clear before payouts go out.',
+                              'detail': 'Put the publisher on net 10 when the buyer is on net 7, or run '
+                                        'publisher net 7 against buyer net 3 for a four-day buffer [ceohec '
+                                        '— SkS03nygdoY @ 00:05:31]; use a $1,000 prepaid deposit with '
+                                        'auto-recharge at $200 tied to routing [ExclusiveLiveCall — '
+                                        'b7P50zcQzTs @ 00:03:15].'},
+                             {'step': 3,
+                              'title': 'Configure Payouts, Caps and Routing in the Tracker',
+                              'action': 'Build payout rules, duplicate handling, hours and caps inside the '
+                                        'call platform instead of a spreadsheet.',
+                              'detail': 'Set fixed or rev-share payouts, payout hours, and global, '
+                                        'monthly, daily and hourly caps on count and concurrency, ordered '
+                                        'top to bottom for priority [Ringba — YWJrO94X-f4 @ 00:01:05]; '
+                                        'overflow to buyers B and C once a 20/day cap on buyer A fills '
+                                        '[ExclusiveLiveCall — scPdPdSnQWY @ 00:06:58].'},
+                             {'step': 4,
+                              'title': 'Start Small, Review Weekly, Scale on Proof',
+                              'action': 'Launch with limited traffic, review the four core metrics weekly, '
+                                        'and only raise caps once the numbers hold.',
+                              'detail': 'Review qualified rate, billable rate, revenue per call and margin '
+                                        'by publisher and sub ID, then raise caps on performers and pause '
+                                        'the rest [TrackDrive — 8O9Q1wVmurU @ 00:02:57]; scale only at a '
+                                        '50%-plus billable rate with positive post-reconciliation margin '
+                                        'and clean QA [John Ventura — KeC4mKXnzs4 @ 00:11:09].'}]},
+              {'heading': 'Section 3: Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The sharpest split is over what a billable call even is. Nate on Yoder runs '
+                              'a 90-second threshold and tells buyers to hang up before 90 seconds or get '
+                              'charged, adding that some buyers need 120 seconds instead [-GEw-hz8tiY @ '
+                              '00:06:29]. DigitalTriggers attacks that network model head-on: networks pay '
+                              'only on calls past 90 seconds, after treating callers through IVRs where '
+                              'each keypress loses about 20% of callers, and only for in-network zips, and '
+                              'leading a pitch with duration creates an adversarial conversation with '
+                              'local businesses [1agI5uDKUlQ @ 00:01:58]. The DigitalTriggers direct-sale '
+                              'criteria run in strict order: the caller is in market with no '
+                              'cherry-picking, in territory by county as verified by listening, over 30 '
+                              'seconds, and voicemail is billable because home services miss 20 to 30% of '
+                              'calls and some clients miss 10 to 15 per day worth $90 to $400 each '
+                              '[1agI5uDKUlQ @ 00:11:57]. ExclusiveLiveCall lands between the camps, '
+                              'arguing duration is imperfect because a 70-second call can be legitimate '
+                              'while a 4-minute call is not, and routing that judgment to AI Verdict, '
+                              'which scores calls on conversation content instead of the clock '
+                              '[scPdPdSnQWY @ 00:06:04]. Pick the definition in writing before you pick '
+                              'the buyer.',
+                              'The second fight is rate versus quality, and the practitioners who buy '
+                              'calls refuse to buy on price. Nate argues a $10-per-call vendor that needs '
+                              '20 calls to produce one sale angers agents, while a $50-per-call vendor '
+                              'converting 1 in 3 or 4 is the better buy; the math is that a $200 CPA at '
+                              '$50 per call means 1 in 4 calls must close [-GEw-hz8tiY @ 00:10:00]. '
+                              'TrackDrive frames the same trap from the seller side: a great rate with '
+                              'strict rules can earn less than a modest rate with fair ones, so the rate '
+                              'alone never tells you whether a deal is profitable [yYZ5s6jFzQs @ '
+                              '00:03:06]. ExclusiveLiveCall agrees and pushes it further, telling '
+                              'operators never to choose a campaign based only on the payout and to read '
+                              'every payout alongside its billable event, because a $150 qualified-call '
+                              'campaign cannot be compared directly with an $800 acquisition campaign '
+                              '[scPdPdSnQWY @ 00:01:55]. John Ventura is the counterweight, running a pure '
+                              'spread model where affiliates accept $35 and buyers pay $50 or more for a '
+                              '$15 margin, scaling that to $7,500 a day at 500 calls and pitching it as '
+                              'straight profit on every single call [KeC4mKXnzs4 @ 00:02:36]. Spread '
+                              'operators chase volume; quality buyers chase close rate.',
+                              'Cash terms and buyer sourcing split the room again. ceohec runs weekly net '
+                              '7 with some monthly net 3 deals and insists on taking buyer payment '
+                              "upfront, because buyers who don't close aren't incentivized to pay; the "
+                              'only exception is a massive deal backed by invoice insurance [SkS03nygdoY @ '
+                              '00:01:48]. ExclusiveLiveCall accepts post-paid net 7, 15, or 30 terms but '
+                              'calls them extending credit, starts new buyers on smaller limits, and '
+                              'models prepaid as a $1,000 deposit that auto-recharges at a $200 balance '
+                              'tied to routing [b7P50zcQzTs @ 00:04:31]. On sourcing, John Ventura says '
+                              'finding buyers was the hardest part of the first 3 to 6 months, so '
+                              'beginners should start with a network or aggregator, then listen to call '
+                              'greetings to identify end buyers and pitch them directly [x3UYaJjRdx0 @ '
+                              '00:05:57]. DigitalTriggers flips the hierarchy and sells to networks only '
+                              'when no direct buyer exists, since a network might pay $12 where a direct '
+                              'sale gets $90, roughly 6 to 15 times more per call; direct buyers get won '
+                              'with a PPC ad-spend test or a 30-day test instead of a duration debate '
+                              '[1agI5uDKUlQ @ 00:13:51]. Network loyalists stay put for reliable pay; '
+                              'direct sellers chase the multiple.'],
+               'table': {'caption': 'Competing playbooks on billability, pricing, cash terms, sourcing, '
+                                    'and QA posture',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Where the billable line sits on duration',
+                                   'Network-style 90-second threshold, with some buyers demanding 120 '
+                                   'seconds before billing',
+                                   'Direct-sale criteria: in market, in territory, over 30 seconds, '
+                                   'voicemail billable',
+                                   'Yoder ([-GEw-hz8tiY @ 00:09:36]); DigitalTriggers ([1agI5uDKUlQ @ '
+                                   '00:11:11])'],
+                                  ['How call quality gets judged and billed',
+                                   'Billable once the call passes the buffer time of 90, 120, 10, or 25 '
+                                   'seconds',
+                                   'AI Verdict judges conversation content because a 70-second call can be '
+                                   'legitimate',
+                                   'ceohec ([SkS03nygdoY @ 00:03:31]); ExclusiveLiveCall ([scPdPdSnQWY @ '
+                                   '00:06:04])'],
+                                  ['Choosing an offer by its payout headline',
+                                   'Chasing headline payouts like roofing at $300 or water damage at '
+                                   '$1,000',
+                                   'A modest rate with fair rules can out-earn a great rate with strict '
+                                   'ones',
+                                   'ExclusiveLiveCall ([scPdPdSnQWY @ 00:00:00]); TrackDrive ([yYZ5s6jFzQs '
+                                   '@ 00:03:06])'],
+                                  ['How buyers pay for the calls they take',
+                                   'Always collect buyer payment upfront, with invoice insurance only for '
+                                   'massive deals',
+                                   'Post-paid net 7, 15, or 30 treated as credit with small starting '
+                                   'limits',
+                                   'ceohec ([SkS03nygdoY @ 00:02:14]); ExclusiveLiveCall ([b7P50zcQzTs @ '
+                                   '00:04:31])'],
+                                  ['Where a new operator sources call buyers',
+                                   'Start with a network or aggregator, then pitch end buyers heard in '
+                                   'call greetings',
+                                   'Sell direct first and route to networks only when no direct buyer '
+                                   'exists',
+                                   'John Ventura ([x3UYaJjRdx0 @ 00:05:45]); DigitalTriggers ([1agI5uDKUlQ '
+                                   '@ 00:13:51])'],
+                                  ['Default posture when bad calls show up',
+                                   'Assume stupidity, not malice, because call centers hire the cheapest '
+                                   'labor available',
+                                   'Classify each dispute as honest mistake, careless practice, or '
+                                   'deliberate violation, then document',
+                                   'Ringba ([JxU9bgFTUUs @ 00:03:18]); TrackDrive ([y8V08rKKNWY @ '
+                                   '00:03:16])'],
+                                  ['What to do with calls nobody answers',
+                                   'Bill voicemail because home services miss 20 to 30% of their calls',
+                                   'Recover unclaimed calls with AI voice at $5 only per booked '
+                                   'appointment',
+                                   'DigitalTriggers ([1agI5uDKUlQ @ 00:11:57]); ExclusiveLiveCall '
+                                   '([b7P50zcQzTs @ 00:09:22])']]}},
+              {'heading': 'Section 4: Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The most expensive failures are paper failures. TrackDrive shows the math: '
+                              'send 100 calls, qualify 80, bill the buyer $50 and pay the publisher $35, '
+                              'and margin is $1,200 or 30%; pay the publisher on all 100 calls instead and '
+                              'payout jumps to $3,500 while margin collapses to $500, or 12.5%, which is '
+                              'why rejected calls come straight out of margin and you price on 80, not '
+                              '100, even though TrackDrive warns its example numbers are totally made up '
+                              '[yYZ5s6jFzQs @ 00:02:04]. Nate reports losing hundreds of thousands of '
+                              'dollars to agreements that were unsigned or misread [-GEw-hz8tiY @ '
+                              '00:22:43]. ceohec has been stiffed by buyers who never closed and therefore '
+                              'felt no incentive to pay, hence the upfront payment rule, the $500 to '
+                              '$1,000 minimum deposit advice, and publishers on net 10 whenever the buyer '
+                              'sits on net 7 so wires clear first [SkS03nygdoY @ 00:05:31]. '
+                              'ExclusiveLiveCall names the same working-capital gap: a buyer on net 30 '
+                              'while publishers get paid every 7 days means you are financing that '
+                              'difference, and revenue on a dashboard is not the same as cash in the bank '
+                              '[b7P50zcQzTs @ 00:05:41]. Collectible revenue, not booked revenue, is the '
+                              'only scoreboard that pays rent.',
+                              'Fraud shows up as patterns, and the Ringba masterclass maps the ugliest '
+                              'one: callback fraud, where the agent says let me call you back and the '
+                              'conversion escapes tracking entirely. The real example was a braces caller '
+                              'on a 40-second call with about 35 seconds of talk time against a 1:30 '
+                              'conversion threshold, and smaller buyers running 10 to 30 agents are '
+                              'likelier to pull it [JxU9bgFTUUs @ 00:14:42]. Detection is mechanical: '
+                              'filter non-converted calls, sort by duration highest to lowest under the '
+                              'threshold, group by buyer, ignore 5-to-8-second calls, then hand the '
+                              'network the recording and caller ID and demand a QA addendum carrying a 50% '
+                              'penalty per CPA [JxU9bgFTUUs @ 00:20:34]. The same speaker flags automated '
+                              'IVR selection: around 40% is the benchmark, 50 to 60% is fine, and roughly '
+                              "100% is fraud [JxU9bgFTUUs @ 00:40:16]. TrackDrive's warning list covers "
+                              'the traffic side: the same number calling 20 times a day, many calls ending '
+                              'at 58 or 59 seconds against a 60-second minimum, out-of-state or off-hours '
+                              'calls, a sudden spike from one sub ID, and pre-recorded audio, with the '
+                              'rule that a pattern proves a problem while a single sign does not '
+                              '[y8V08rKKNWY @ 00:01:21]. Read the pattern, then pull the recording.',
+                              'Scaling breaks operators who skip infrastructure. John Ventura says most '
+                              'beginners find one affiliate and one buyer, track everything in a '
+                              'spreadsheet, and watch it fail within about three days, ending in the '
+                              'classic dispute where the buyer counts 40 qualified calls and the affiliate '
+                              'claims 60; even at scale, AdSync spent six figures a year just managing '
+                              'Ringba and Retreaver [KeC4mKXnzs4 @ 00:09:02]. The Ventura scaling gate is '
+                              'a billable rate of at least 50%, positive post-reconciliation margins, and '
+                              'clean QA, with an explicit warning against adding 10 affiliates at once '
+                              '[KeC4mKXnzs4 @ 00:11:09]. Andy on Beginner to 1K a Day Journey blames dips '
+                              'on Google Ads updates and reports that legal tests on Facebook, Instagram, '
+                              'and Google spent more than they earned, while Market Call has no legal '
+                              'vertical at all [Cea6GBkjsgg @ 00:03:33]. Buyer capacity is the hidden '
+                              'ceiling: ExclusiveLiveCall warns a buyer taking 50 calls a day may have '
+                              'only 2 agents, so concurrency limits matter as much as daily caps, and the '
+                              'fix is routing to buyers B and C once buyer A fills a 20-per-day cap '
+                              '[scPdPdSnQWY @ 00:07:33]. Start small, reconcile weekly, and add affiliates '
+                              'one at a time until the numbers hold.'],
+               'table': {'caption': 'Firsthand losses, fraud patterns, and the checks practitioners run '
+                                    'against them',
+                         'headers': ['Failure Mode',
+                                     'What Happened Or Was Measured',
+                                     'Operator Check',
+                                     'Expert Source'],
+                         'rows': [['Paying publishers on every call sent',
+                                   'Margin fell from $1,200 at 30% to $500 at 12.5% on 100 calls',
+                                   'Confirm payout triggers on qualified calls only and price on 80, not '
+                                   '100',
+                                   'TrackDrive ([yYZ5s6jFzQs @ 00:02:27])'],
+                                  ['Unsigned or misread buyer and publisher agreements',
+                                   'Hundreds of thousands of dollars lost to unsigned or misread '
+                                   'agreements',
+                                   'Put QA clauses at the top of IOs and review them by voice or chat',
+                                   'Yoder ([-GEw-hz8tiY @ 00:22:43]); Ringba ([JxU9bgFTUUs @ 00:07:05])'],
+                                  ['Buyers who stop paying after weak closes',
+                                   'Stiffed by buyers who did not close and had no incentive to pay',
+                                   'Take payment upfront and require a $500 to $1,000 minimum deposit',
+                                   'ceohec ([SkS03nygdoY @ 00:01:48]); ceohec ([SkS03nygdoY @ 00:08:10])'],
+                                  ['Mismatched buyer and publisher payment terms',
+                                   'Buyer on net 30 while publishers get paid every 7 days creates a '
+                                   'financing gap',
+                                   'Put publishers on net 10 when the buyer is on net 7 so wires clear',
+                                   'ExclusiveLiveCall ([b7P50zcQzTs @ 00:05:41]); ceohec ([SkS03nygdoY @ '
+                                   '00:05:31])'],
+                                  ['Callback fraud by smaller buyer call centers',
+                                   'A 40-second braces call with about 35 seconds of talk against a 1:30 '
+                                   'conversion',
+                                   'Sort non-converted calls by duration under threshold, group by buyer, '
+                                   'enforce 50% penalty',
+                                   'Ringba ([JxU9bgFTUUs @ 00:14:42])'],
+                                  ['Manual spreadsheet tracking between one affiliate and one buyer',
+                                   'Breaks within about three days; buyer counts 40 qualified while the '
+                                   'affiliate claims 60',
+                                   'Set up tracking, routing, recording, and QA before adding any second '
+                                   'affiliate',
+                                   'John Ventura ([KeC4mKXnzs4 @ 00:09:02])'],
+                                  ['Buyer agents cherry-picking the calls they keep',
+                                   'Agent hang-ups running 30% above the rate seen at other buyers',
+                                   'No penalty on first offense, then $500, and $100 per call for removed '
+                                   'agents',
+                                   'Ringba ([JxU9bgFTUUs @ 01:02:54]); Ringba ([JxU9bgFTUUs @ '
+                                   '01:05:06])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Do Not Scale Until These Four Clear',
+                           'body': 'Each gate below traces back to a loss, a dispute, or a fraud pattern a '
+                                   'practitioner reported firsthand. Clear all four before raising caps or '
+                                   'onboarding more affiliates.',
+                           'items': ['Billable rate at or above 50%, positive post-reconciliation margins, '
+                                     'and clean QA before adding affiliates, and never 10 at once [John '
+                                     'Ventura — KeC4mKXnzs4 @ 00:11:09].',
+                                     'Buyer payment collected upfront with a $500 to $1,000 minimum '
+                                     'deposit, with invoice insurance reserved for massive deals [ceohec — '
+                                     'SkS03nygdoY @ 00:08:10].',
+                                     'QA addendum signed with a 50% penalty per CPA for callback fraud, '
+                                     'plus a signed affiliate one-pager [Ringba — JxU9bgFTUUs @ 00:20:34].',
+                                     'When 15 of 100 calls are disputed, find out why, because a buyer '
+                                     'failing to close is not an invalid call [ExclusiveLiveCall — '
+                                     'b7P50zcQzTs @ 00:07:01].']}}],
+ 'pull_quote': '"The rate alone never tells you if a deal is profitable." — TrackDrive (yYZ5s6jFzQs @ '
+               '00:02:27)',
+ 'diagram_id': 'diag-08',
+ 'action_checklist': ['Review qualified rate, billable rate, revenue per call, and margin weekly by '
+                      'publisher and sub ID, raise caps on performers, tighten or pause the rest, and log '
+                      'every change [TrackDrive — 8O9Q1wVmurU @ 00:02:57].',
+                      'Diagnose any drop in fixed order of traffic, routing, buyer, then pricing, and '
+                      'change one thing at a time [TrackDrive — 8O9Q1wVmurU @ 00:02:18].',
+                      'Map pixel events so call click fires AddToCart, raw call fires Lead, billable call '
+                      'over 90 seconds fires Contact via CAPI, and enrollment fires Purchase [Marketcall — '
+                      'Dq9KUpYUWsE @ 00:09:10].',
+                      'Add exit pages for disqualified traffic to pick up 5 to 10% more revenue '
+                      '[Marketcall — Dq9KUpYUWsE @ 00:14:48].',
+                      'Build Ringba payouts as fixed or rev-share with triggers, caps, and duplicate '
+                      'windows, then order them top-to-bottom for priority and add per-publisher overrides '
+                      '[Ringba — YWJrO94X-f4 @ 00:02:00].',
+                      'Switch on per-partner call center verification in boberdoo, select it in the '
+                      'partner filter set, and approve or decline pending leads with the green headset '
+                      'icon [boberdoo.com — gUYjvbnA54I @ 00:00:56].'],
+ 'statutory_citations': [{'title': 'Ringba — Pay Per Call Masterclass - Quality Assurance [00:20:34]',
+                          'url': 'https://www.youtube.com/watch?v=JxU9bgFTUUs&t=1234s',
+                          'relevance': 'Primary practitioner testimony on callback fraud detection, QA '
+                                       'addendums, and the 50% penalty per CPA.'},
+                         {'title': 'ExclusiveLiveCall — How the Money Works in Pay Per Call | Billing, '
+                                   'Payouts, Margins & Profit- Pay Per Call University #8 [00:05:41]',
+                          'url': 'https://www.youtube.com/watch?v=b7P50zcQzTs&t=341s',
+                          'relevance': 'Primary practitioner testimony on post-paid credit risk and the '
+                                       'net 30 versus 7-day working-capital gap.'},
+                         {'title': 'TrackDrive — The Economics of a Call | Pay-Per-Call Masterclass '
+                                   '[00:02:04]',
+                          'url': 'https://www.youtube.com/watch?v=yYZ5s6jFzQs&t=124s',
+                          'relevance': 'Primary practitioner testimony on margin collapse when publishers '
+                                       'are paid on all calls instead of qualified calls.'},
+                         {'title': 'John Ventura — My Pay Per Call Biz is Boring, But it Makes Me '
+                                   '$10M/year [00:09:02]',
+                          'url': 'https://www.youtube.com/watch?v=KeC4mKXnzs4&t=542s',
+                          'relevance': 'Primary practitioner testimony on spreadsheet tracking failure, '
+                                       'reconciliation disputes, and scaling gates.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'yYZ5s6jFzQs',
+                       'title': 'The Economics of a Call | Pay-Per-Call Masterclass',
+                       'channel': 'TrackDrive',
+                       'author': 'TrackDrive',
+                       'text': 'The rate alone never tells you if a deal is profitable.',
+                       'tip': 'The rate alone never tells you if a deal is profitable.',
+                       'timestamp': 147,
+                       'timestamp_seconds': 147,
+                       'timestamp_label': '[00:02:27]',
+                       'url': 'https://www.youtube.com/watch?v=yYZ5s6jFzQs&t=147s',
+                       'markdown': '[00:02:27](https://www.youtube.com/watch?v=yYZ5s6jFzQs&t=147s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'yYZ5s6jFzQs',
+                       'title': 'The Economics of a Call | Pay-Per-Call Masterclass',
+                       'channel': 'TrackDrive',
+                       'author': 'TrackDrive',
+                       'text': 'Know your margin before you negotiate a payout.',
+                       'tip': 'Know your margin before you negotiate a payout.',
+                       'timestamp': 20,
+                       'timestamp_seconds': 20,
+                       'timestamp_label': '[00:00:20]',
+                       'url': 'https://www.youtube.com/watch?v=yYZ5s6jFzQs&t=20s',
+                       'markdown': '[00:00:20](https://www.youtube.com/watch?v=yYZ5s6jFzQs&t=20s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '8O9Q1wVmurU',
+                       'title': 'Optimizing and Reporting | Pay-Per-Call Masterclass',
+                       'channel': 'TrackDrive',
+                       'author': 'TrackDrive',
+                       'text': "It's tempting to jump to conclusions, so I suggest checking in a fixed "
+                               'order.',
+                       'tip': "It's tempting to jump to conclusions, so I suggest checking in a fixed "
+                              'order.',
+                       'timestamp': 138,
+                       'timestamp_seconds': 138,
+                       'timestamp_label': '[00:02:18]',
+                       'url': 'https://www.youtube.com/watch?v=8O9Q1wVmurU&t=138s',
+                       'markdown': '[00:02:18](https://www.youtube.com/watch?v=8O9Q1wVmurU&t=138s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'y8V08rKKNWY',
+                       'title': 'Call Quality and Fraud Control | Pay-Per-Call Masterclass',
+                       'channel': 'TrackDrive',
+                       'author': 'TrackDrive',
+                       'text': 'A genuine customer might call back once or twice.',
+                       'tip': 'A genuine customer might call back once or twice.',
+                       'timestamp': 60,
+                       'timestamp_seconds': 60,
+                       'timestamp_label': '[00:01:00]',
+                       'url': 'https://www.youtube.com/watch?v=y8V08rKKNWY&t=60s',
+                       'markdown': '[00:01:00](https://www.youtube.com/watch?v=y8V08rKKNWY&t=60s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '-GEw-hz8tiY',
+                       'title': 'This 26 Year Old Marketer Generated Over $15,000,000 Selling Phonecalls - '
+                                '30 Min Pay Per Call Guide',
+                       'channel': 'Yoder',
+                       'author': 'Yoder',
+                       'text': 'Hang the damn phone up before 90 seconds, or you get charged for the call.',
+                       'tip': 'Hang the damn phone up before 90 seconds, or you get charged for the call.',
+                       'timestamp': 389,
+                       'timestamp_seconds': 389,
+                       'timestamp_label': '[00:06:29]',
+                       'url': 'https://www.youtube.com/watch?v=-GEw-hz8tiY&t=389s',
+                       'markdown': '[00:06:29](https://www.youtube.com/watch?v=-GEw-hz8tiY&t=389s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Cea6GBkjsgg',
+                       'title': 'I Built a $1,000/Day Pay Per Call Business — Here’s What’s Next',
+                       'channel': 'Beginner to 1K a Day Journey',
+                       'author': 'Beginner to 1K a Day Journey',
+                       'text': 'My account manager offered to raise my cap from 26 to 30 calls if I '
+                               'consistently deliver 30 qualified calls a day.',
+                       'tip': 'My account manager offered to raise my cap from 26 to 30 calls if I '
+                              'consistently deliver 30 qualified calls a day.',
+                       'timestamp': 41,
+                       'timestamp_seconds': 41,
+                       'timestamp_label': '[00:00:41]',
+                       'url': 'https://www.youtube.com/watch?v=Cea6GBkjsgg&t=41s',
+                       'markdown': '[00:00:41](https://www.youtube.com/watch?v=Cea6GBkjsgg&t=41s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Dq9KUpYUWsE',
+                       'title': 'Debt Settlement $400k Pay Per Call Case Study 2025',
+                       'channel': 'Marketcall',
+                       'author': 'Marketcall',
+                       'text': 'So using a call tracker is a must when running pay per call campaigns.',
+                       'tip': 'So using a call tracker is a must when running pay per call campaigns.',
+                       'timestamp': 794,
+                       'timestamp_seconds': 794,
+                       'timestamp_label': '[00:13:14]',
+                       'url': 'https://www.youtube.com/watch?v=Dq9KUpYUWsE&t=794s',
+                       'markdown': '[00:13:14](https://www.youtube.com/watch?v=Dq9KUpYUWsE&t=794s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'SkS03nygdoY',
+                       'title': 'How I Pay Publishers in Pay Per Call (net terms)',
+                       'channel': 'ceohec',
+                       'author': 'ceohec',
+                       'text': 'And so, always get your payments up front.',
+                       'tip': 'And so, always get your payments up front.',
+                       'timestamp': 91,
+                       'timestamp_seconds': 91,
+                       'timestamp_label': '[00:01:31]',
+                       'url': 'https://www.youtube.com/watch?v=SkS03nygdoY&t=91s',
+                       'markdown': '[00:01:31](https://www.youtube.com/watch?v=SkS03nygdoY&t=91s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'scPdPdSnQWY',
+                       'title': 'How to Read a Pay Per Call Campaign Before You Send Traffic | Pay Per '
+                                'Call University #6',
+                       'channel': 'ExclusiveLiveCall',
+                       'author': 'ExclusiveLiveCall',
+                       'text': 'Never choose a campaign based only on the payout.',
+                       'tip': 'Never choose a campaign based only on the payout.',
+                       'timestamp': 734,
+                       'timestamp_seconds': 734,
+                       'timestamp_label': '[00:12:14]',
+                       'url': 'https://www.youtube.com/watch?v=scPdPdSnQWY&t=734s',
+                       'markdown': '[00:12:14](https://www.youtube.com/watch?v=scPdPdSnQWY&t=734s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'YWJrO94X-f4',
+                       'title': 'Payouts | Ringba Platform Training',
+                       'channel': 'Ringba',
+                       'author': 'Ringba',
+                       'text': 'Fixed payouts can trigger on call length, connected, inbound, or converted '
+                               'calls.',
+                       'tip': 'Fixed payouts can trigger on call length, connected, inbound, or converted '
+                              'calls.',
+                       'timestamp': 37,
+                       'timestamp_seconds': 37,
+                       'timestamp_label': '[00:00:37]',
+                       'url': 'https://www.youtube.com/watch?v=YWJrO94X-f4&t=37s',
+                       'markdown': '[00:00:37](https://www.youtube.com/watch?v=YWJrO94X-f4&t=37s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'JxU9bgFTUUs',
+                       'title': 'Pay Per Call Masterclass - Quality Assurance',
+                       'channel': 'Ringba',
+                       'author': 'Ringba',
+                       'text': 'You should do it in a hundred percent of the cases and then escalate if it '
+                               'continues.',
+                       'tip': 'You should do it in a hundred percent of the cases and then escalate if it '
+                              'continues.',
+                       'timestamp': 1288,
+                       'timestamp_seconds': 1288,
+                       'timestamp_label': '[00:21:28]',
+                       'url': 'https://www.youtube.com/watch?v=JxU9bgFTUUs&t=1288s',
+                       'markdown': '[00:21:28](https://www.youtube.com/watch?v=JxU9bgFTUUs&t=1288s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'KeC4mKXnzs4',
+                       'title': 'My Pay Per Call Biz is Boring, But it Makes Me $10M/year',
+                       'channel': 'John Ventura',
+                       'author': 'John Ventura',
+                       'text': 'They find one affiliate, they find one buyer, and they try to manually '
+                               'track everything in a spreadsheet.',
+                       'tip': 'They find one affiliate, they find one buyer, and they try to manually '
+                              'track everything in a spreadsheet.',
+                       'timestamp': 542,
+                       'timestamp_seconds': 542,
+                       'timestamp_label': '[00:09:02]',
+                       'url': 'https://www.youtube.com/watch?v=KeC4mKXnzs4&t=542s',
+                       'markdown': '[00:09:02](https://www.youtube.com/watch?v=KeC4mKXnzs4&t=542s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'x3UYaJjRdx0',
+                       'title': 'I make $1M/mo with Pay Per Call (just copy me)',
+                       'channel': 'John Ventura',
+                       'author': 'John Ventura',
+                       'text': 'Listen to the call greetings to identify the end buyers, then pitch them '
+                               'directly.',
+                       'tip': 'Listen to the call greetings to identify the end buyers, then pitch them '
+                              'directly.',
+                       'timestamp': 357,
+                       'timestamp_seconds': 357,
+                       'timestamp_label': '[00:05:57]',
+                       'url': 'https://www.youtube.com/watch?v=x3UYaJjRdx0&t=357s',
+                       'markdown': '[00:05:57](https://www.youtube.com/watch?v=x3UYaJjRdx0&t=357s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'gOc6yQYGV4s',
+                       'title': 'Call Routing Solutions | boberdoo Call/Phone Routing System',
+                       'channel': 'boberdoo.com',
+                       'author': 'boberdoo.com',
+                       'text': 'The JavaScript number display shows the number only when a buyer is '
+                               'available.',
+                       'tip': 'The JavaScript number display shows the number only when a buyer is '
+                              'available.',
+                       'timestamp': 86,
+                       'timestamp_seconds': 86,
+                       'timestamp_label': '[00:01:26]',
+                       'url': 'https://www.youtube.com/watch?v=gOc6yQYGV4s&t=86s',
+                       'markdown': '[00:01:26](https://www.youtube.com/watch?v=gOc6yQYGV4s&t=86s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'b7P50zcQzTs',
+                       'title': 'How the Money Works in Pay Per Call | Billing, Payouts, Margins & Profit- '
+                                'Pay Per Call University #8',
+                       'channel': 'ExclusiveLiveCall',
+                       'author': 'ExclusiveLiveCall',
+                       'text': 'Revenue is not profit.',
+                       'tip': 'Revenue is not profit.',
+                       'timestamp': 70,
+                       'timestamp_seconds': 70,
+                       'timestamp_label': '[00:01:10]',
+                       'url': 'https://www.youtube.com/watch?v=b7P50zcQzTs&t=70s',
+                       'markdown': '[00:01:10](https://www.youtube.com/watch?v=b7P50zcQzTs&t=70s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'b7P50zcQzTs',
+                       'title': 'How the Money Works in Pay Per Call | Billing, Payouts, Margins & Profit- '
+                                'Pay Per Call University #8',
+                       'channel': 'ExclusiveLiveCall',
+                       'author': 'ExclusiveLiveCall',
+                       'text': 'Profitable, collectible revenue is the goal.',
+                       'tip': 'Profitable, collectible revenue is the goal.',
+                       'timestamp': 771,
+                       'timestamp_seconds': 771,
+                       'timestamp_label': '[00:12:51]',
+                       'url': 'https://www.youtube.com/watch?v=b7P50zcQzTs&t=771s',
+                       'markdown': '[00:12:51](https://www.youtube.com/watch?v=b7P50zcQzTs&t=771s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '1agI5uDKUlQ',
+                       'title': 'With Pay Per Call What Makes a Call Billable?',
+                       'channel': 'DigitalTriggers',
+                       'author': 'DigitalTriggers',
+                       'text': 'Each IVR keypress loses about 20% of callers.',
+                       'tip': 'Each IVR keypress loses about 20% of callers.',
+                       'timestamp': 118,
+                       'timestamp_seconds': 118,
+                       'timestamp_label': '[00:01:58]',
+                       'url': 'https://www.youtube.com/watch?v=1agI5uDKUlQ&t=118s',
+                       'markdown': '[00:01:58](https://www.youtube.com/watch?v=1agI5uDKUlQ&t=118s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'gUYjvbnA54I',
+                       'title': 'Enable Call Center Lead Verification | boberdoo Call Routing Software',
+                       'channel': 'boberdoo.com',
+                       'author': 'boberdoo.com',
+                       'text': 'Pending leads show a red check mark, and you click the green headset icon '
+                               'to approve or decline.',
+                       'tip': 'Pending leads show a red check mark, and you click the green headset icon '
+                              'to approve or decline.',
+                       'timestamp': 56,
+                       'timestamp_seconds': 56,
+                       'timestamp_label': '[00:00:56]',
+                       'url': 'https://www.youtube.com/watch?v=gUYjvbnA54I&t=56s',
+                       'markdown': '[00:00:56](https://www.youtube.com/watch?v=gUYjvbnA54I&t=56s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'}]}

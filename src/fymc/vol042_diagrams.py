@@ -1,742 +1,536 @@
-from __future__ import annotations
+"""Volume 042 diagrams: Cell-Tower, Digital-Billboard & IOS Lease Arbitrage."""
 
-VOLUME_042_SUBTITLE = (
-    "The Complete Playbook for Cell-Tower, Digital-Billboard & IOS Lease "
-    "Arbitrage: $120,000–$950,000 USD in Annual Operator Revenue, "
-    "Starting with a 1 FT + 3 C Pod (4 People); Six People at Scale"
+from typing import Dict, List
+
+VOLUME_042_SUBTITLE: str = (
+    "Sell the rent stream at 16 to 19 times or strike the ROFR and make buyers bid, "
+    "buy the billboard permit instead of the steel and underwrite at 85% fill, "
+    "and lease gravel yards, truck stalls and substation-adjacent acres on day-one yield"
 )
 
-VOLUME_042_POSITIONING_ALTERNATIVES = [
+
+def build_volume_042_diagrams_data() -> List[Dict]:
+    """Return the eight structured diagram dicts for Volume 042."""
+    return [
+        {
+            "diagram_id": "diag-01-cell-lease-buyout-diligence-flow",
+            "chapter_number": 1,
+            "title": "Cell Tower Lease Buyout Diligence Flow",
+            "subtitle": "Five gates before a landlord accepts a lump sum for the rent stream",
+            "caption": (
+                "Practitioners price a buyout as a multiple of annual rent; tenant mix, "
+                "lease language and termination risk decide where the multiple lands."
+            ),
+            "assumptions_note": (
+                "Steps follow the operator gates and pro-tips reported by Tower Genius, "
+                "Acquisition Insider and Allworth Financial. The rent-stop window of year "
+                "five to eight and the December/January payment split are as stated by "
+                "those speakers; no other figures are added."
+            ),
+            "note": (
+                "Sources: Acquisition Insider (MtWLazzJb9Y @ 00:06:24, 00:06:38); "
+                "Tower Genius (X75LHgvP1U8 @ 00:02:04, wpxdOZZukBY @ 00:05:12); "
+                "Allworth Financial (L5rvTFM0pVg @ 00:06:46)."
+            ),
+            "chart_type": "process_flow",
+            "stages": [
+                {
+                    "step": "01",
+                    "label": "Identify Every Carrier on the Tower",
+                    "value": "Step 1",
+                    "detail": (
+                        "Count every carrier physically on the structure and walk away "
+                        "from single-tenant sites (Acquisition Insider)."
+                    ),
+                },
+                {
+                    "step": "02",
+                    "label": "Name Each Sub-Tenant",
+                    "value": "Step 2",
+                    "detail": (
+                        "Confirm names from meter labels, equipment cabinets and building "
+                        "permits; Dish exposure is toxic to buyers (Tower Genius)."
+                    ),
+                },
+                {
+                    "step": "03",
+                    "label": "Clear ROFR and Consent Language",
+                    "value": "Step 3",
+                    "detail": (
+                        "Read for right of first refusal, confidentiality and "
+                        "consent-to-assign before soliciting offers, or a signed LOI can "
+                        "put the landlord in default (Tower Genius)."
+                    ),
+                },
+                {
+                    "step": "04",
+                    "label": "Stress-Test a Rent Stop in Years 5 to 8",
+                    "value": "Step 4",
+                    "detail": (
+                        "Model the rent stopping in year five to eight; if one site cannot "
+                        "survive that, buy several or pass (Acquisition Insider)."
+                    ),
+                },
+                {
+                    "step": "05",
+                    "label": "Shop Bids and Split the Payout",
+                    "value": "Step 5",
+                    "detail": (
+                        "Push the buyer on price and take half in December and half in "
+                        "January to spread the tax over two years (Allworth Financial)."
+                    ),
+                },
+            ],
+        },
+        {
+            "diagram_id": "diag-02-static-billboard-cash-flow-funnel",
+            "chapter_number": 6,
+            "title": "Single Static Billboard Cash-Flow Funnel",
+            "subtitle": "From full-calendar rate card to about $7,000 a year of true cash flow",
+            "caption": (
+                "A two-sided static board at $600 per face per month and 80% occupancy "
+                "keeps roughly 60% of occupied revenue after costs, then trades at 8 to "
+                "10 times cash flow, or $55,000 to $70,000."
+            ),
+            "assumptions_note": (
+                "Inputs are Acquisition Insider's: $600 per face per month, two faces, "
+                "80% occupancy, roughly 40% costs including a 15% to 20% ground lease. "
+                "Intermediate dollar values are straight arithmetic on those inputs; the "
+                "ground-lease stages show the low and high end of the stated band."
+            ),
+            "note": "Source: Acquisition Insider (4PyMov-VjoE @ 00:02:07).",
+            "chart_type": "funnel",
+            "stages": [
+                {
+                    "label": "Full-Calendar Rate Card",
+                    "value": 14400,
+                    "display": "$14,400/yr",
+                    "conversion": "100%",
+                    "detail": "$600 per face per month, two faces, twelve months sold.",
+                },
+                {
+                    "label": "Revenue at 80% Occupancy",
+                    "value": 11520,
+                    "display": "$11,520/yr",
+                    "conversion": "80% of rate card",
+                    "detail": "Occupancy assumption used in the single-board model.",
+                },
+                {
+                    "label": "After a 15% Ground Lease",
+                    "value": 9792,
+                    "display": "$9,792/yr",
+                    "conversion": "85% of occupied revenue",
+                    "detail": "Low end of the 15% to 20% ground-lease band.",
+                },
+                {
+                    "label": "After a 20% Ground Lease",
+                    "value": 9216,
+                    "display": "$9,216/yr",
+                    "conversion": "80% of occupied revenue",
+                    "detail": "High end of the 15% to 20% ground-lease band.",
+                },
+                {
+                    "label": "True Cash Flow After ~40% Costs",
+                    "value": 6912,
+                    "display": "About $7,000/yr",
+                    "conversion": "60% of occupied revenue",
+                    "detail": "Trades at 8 to 10 times cash flow, or $55,000 to $70,000.",
+                },
+            ],
+        },
+        {
+            "diagram_id": "diag-03-ohio-tower-lease-structure-waterfall",
+            "chapter_number": 3,
+            "title": "What Lease Structure Is Worth: The Ohio Renegotiation",
+            "subtitle": "Unwinding over $6,000 a month back to the original $900",
+            "caption": (
+                "Vertical Consultants' Ohio client went from about $900 to about $2,000 a "
+                "month, and the structured lease now pays over $6,000; a rent-only deal "
+                "with a 3% escalator would sit near $2,700 to $2,800."
+            ),
+            "assumptions_note": (
+                "Endpoints are Hugh Odum's reported figures. The rent-only subtotal uses "
+                "the midpoint of his $2,700 to $2,800 range; deductions are the gaps "
+                "between his stated figures. Odum's rule of thumb that $1 of monthly rent "
+                "equals roughly $1,000 of lease value frames the stakes of each step."
+            ),
+            "note": (
+                "Source: Vertical Consultants, Hugh Odum (F1m9euwLJAQ @ 00:25:01, "
+                "00:19:51, 00:04:23)."
+            ),
+            "chart_type": "waterfall",
+            "bars": [
+                {
+                    "label": "Structured Lease Eight Years On",
+                    "value": 6000,
+                    "display": "Over $6,000/mo",
+                    "kind": "total",
+                },
+                {
+                    "label": "Remove Tower-Value Participation",
+                    "value": 3250,
+                    "display": "-$3,200 to -$3,300/mo",
+                    "kind": "deduction",
+                },
+                {
+                    "label": "Rent-Only Path With 3% Escalator",
+                    "value": 2750,
+                    "display": "$2,700 to $2,800/mo",
+                    "kind": "total",
+                },
+                {
+                    "label": "Remove Eight Years of 3% Escalation",
+                    "value": 750,
+                    "display": "-$700 to -$800/mo",
+                    "kind": "deduction",
+                },
+                {
+                    "label": "Remove the Renegotiated Base Lift",
+                    "value": 1100,
+                    "display": "-$1,100/mo",
+                    "kind": "deduction",
+                },
+                {
+                    "label": "Original Rent Before Renegotiation",
+                    "value": 900,
+                    "display": "About $900/mo",
+                    "kind": "result",
+                },
+            ],
+        },
+        {
+            "diagram_id": "diag-04-cell-lease-buyout-multiples",
+            "chapter_number": 2,
+            "title": "Buyout Multiples of Annual Rent by Source and Tenant",
+            "subtitle": "Fine print and carrier identity move the multiple from 5x to 25x",
+            "caption": (
+                "Easement buyers paid 24-25x for AT&T rent and about 5x for US Cellular "
+                "on the same rooftop, while aggregator offers cluster at 8 to 15 times."
+            ),
+            "assumptions_note": (
+                "Ranges are as quoted by each practitioner. Typical values are the "
+                "speaker's stated point where one exists (17.5x Tower Genius worked "
+                "example, 14x Acquisition Insider discount example); otherwise the "
+                "midpoint of the quoted range."
+            ),
+            "note": (
+                "Sources: Tower Genius (pSGbaA0AbTo @ 00:00:32); Acquisition Insider "
+                "(MtWLazzJb9Y @ 00:02:09, 00:02:26); Selina Gonzales (x2ZfqDSKoOI @ "
+                "00:07:17); James Furlo, Furlo Capital (bk4EnTlbPdA @ 00:11:22)."
+            ),
+            "chart_type": "horizontal_bars",
+            "unit": "x annual rent",
+            "bars": [
+                {
+                    "label": "Aggregator Offer to Shopped Lease",
+                    "min": 8,
+                    "max": 18,
+                    "typical": 14,
+                    "display": "8-15x offers; ~18x shopped multi-carrier",
+                },
+                {
+                    "label": "Tower Genius Average to Clean Lease",
+                    "min": 16,
+                    "max": 19,
+                    "typical": 17.5,
+                    "display": "16-17.5x average; 19x with 3% escalator, no ROFR",
+                },
+                {
+                    "label": "Ground Lease Buyout Band",
+                    "min": 15,
+                    "max": 21,
+                    "typical": 17.5,
+                    "display": "15-20x typical; peak near 21x in 2024",
+                },
+                {
+                    "label": "AT&T Tenant on a Rooftop",
+                    "min": 24,
+                    "max": 25,
+                    "typical": 24.5,
+                    "display": "24-25x",
+                },
+                {
+                    "label": "US Cellular Tenant on a Rooftop",
+                    "min": 5,
+                    "max": 5,
+                    "typical": 5,
+                    "display": "About 5x",
+                },
+            ],
+        },
+        {
+            "diagram_id": "diag-05-tower-ownership-go-no-go",
+            "chapter_number": 5,
+            "title": "Tower Ownership Go/No-Go Gates",
+            "subtitle": "The first tenant pays the bills; every tenant after that pays the owner",
+            "caption": (
+                "One tenant can yield as little as 1% to 3% with paybacks of 34 to 75 "
+                "years; a second tenant converts about 90% to 97% of its revenue to profit."
+            ),
+            "assumptions_note": (
+                "Gate thresholds are the practitioners' own: no build without a signed "
+                "anchor, underwrite to two signed tenants, match land control to payback, "
+                "and stress-test an anchor exit that cuts revenue 60% and profit about 78%."
+            ),
+            "note": (
+                "Sources: Economic Oddities (QdFbgvbJJ-M @ 00:09:49, 00:08:28, 00:10:56); "
+                "Holly Lane Radio (RRrHddpY1pU @ 00:24:22, 00:17:58); Mr. Finance "
+                "(ku_-0C-ZnV4 @ 00:12:46); Profit Chain (t9bXdQI0jPM @ 00:08:38); "
+                "Mr. Money (jQ79QHMZWQE @ 00:08:14)."
+            ),
+            "chart_type": "decision_tree",
+            "nodes": [
+                {
+                    "gate": "G1",
+                    "question": "Is a signed anchor tenant in hand before any steel goes up?",
+                    "pass_next": "G2",
+                    "fail_action": (
+                        "Do not build; a single-tenant tower is a coin flip with a lease "
+                        "(Economic Oddities)."
+                    ),
+                },
+                {
+                    "gate": "G2",
+                    "question": "Does the price work on two signed tenants, not three hoped-for ones?",
+                    "pass_next": "G3",
+                    "fail_action": (
+                        "Re-price; a price built on three future tenants is speculation "
+                        "dressed as infrastructure (Holly Lane Radio)."
+                    ),
+                },
+                {
+                    "gate": "G3",
+                    "question": "Does the ground-lease term cover the payback period?",
+                    "pass_next": "G4",
+                    "fail_action": (
+                        "Extend land control first; an 11-year remaining ground lease "
+                        "under a producing tower is live exposure."
+                    ),
+                },
+                {
+                    "gate": "G4",
+                    "question": "Does the deal survive an anchor exit and a carrier default?",
+                    "pass_next": "Proceed to build or acquire",
+                    "fail_action": (
+                        "Pass; an anchor exit cuts revenue 60% and profit about 78%, and "
+                        "Crown's Dish claim exceeds $3.5B with recovery uncertain."
+                    ),
+                },
+            ],
+        },
+        {
+            "diagram_id": "diag-06-truck-parking-yard-operating-model",
+            "chapter_number": 11,
+            "title": "Self-Managed Truck Parking Yard Operating Model",
+            "subtitle": "One operator, automated gates and a marketplace channel",
+            "caption": (
+                "Operators self-manage yards with Easy Storage, PDK text-to-gate or Rig Hut "
+                "app access tied to payment, and Truck Parking Club hosts start on a 70/30 split."
+            ),
+            "assumptions_note": (
+                "Practitioners did not report staff counts; the hub reflects the "
+                "self-managed setups they describe. Spoke KPIs are the figures stated by "
+                "Ronald Rohde, Truck Parking Media and REtipster's Evan Shelley interview."
+            ),
+            "note": (
+                "Sources: Truck Parking Media (ulBXkeE5I_8 @ 00:02:30, 00:02:13); "
+                "Ronald Rohde Law (rPXHwXgqWs8 @ 00:06:59, tonuCLfZrYE @ 00:14:14); "
+                "REtipster (Ombo8TjihMk @ 00:12:41)."
+            ),
+            "chart_type": "org_architecture",
+            "center": {
+                "role": "Yard Owner-Operator",
+                "headcount": "Self-managed through yard software and gate automation",
+                "focus": (
+                    "By-right zoning, stall rent, and average revenue per space net of "
+                    "bad debt, vacancy and late payments"
+                ),
+            },
+            "spokes": [
+                {
+                    "role": "Inbound Booking Line",
+                    "type": "In-house, answer-first",
+                    "kpi": (
+                        "Caller entered into the system immediately; a 20-minute callback "
+                        "lost bookings"
+                    ),
+                },
+                {
+                    "role": "Gate and Access Control",
+                    "type": "Automation (PDK text-to-gate or Rig Hut app)",
+                    "kpi": "Access tied to payment; 30 ft cantilever about $30K installed",
+                },
+                {
+                    "role": "Truck Parking Club Listing",
+                    "type": "Marketplace platform",
+                    "kpi": "70/30 owner/platform starting split, lower for 5-10 lot operators",
+                },
+                {
+                    "role": "Class A Service Vendors",
+                    "type": "Outsourced with markup",
+                    "kpi": "Wash billed at $225 against a $200 vendor price; patrol about $5K/mo",
+                },
+            ],
+        },
+        {
+            "diagram_id": "diag-07-truck-parking-daily-rate-bands",
+            "chapter_number": 4,
+            "title": "Truck Parking Daily Rates by Market Density",
+            "subtitle": "No-ownership parking arbitrage priced per truck per day",
+            "caption": (
+                "Evan Shealy prices Truck Parking Club lots at $10-$15 rural, $20-$25 "
+                "suburban and $30-plus in dense markets, averaging about $20 a day."
+            ),
+            "assumptions_note": (
+                "Bands are Evan Shealy's. The dense-market band has no stated ceiling, so "
+                "$30 marks its floor only. Lots must sit on gravel, asphalt millings or "
+                "compacted ground, away from active retail and residential."
+            ),
+            "note": "Source: Ask Flip Man, Evan Shealy (NIYpBpIvXTc @ 00:14:17, 00:07:16).",
+            "chart_type": "stacked_comparison",
+            "total_range": "$10 to $30-plus per truck per day",
+            "buckets": [
+                {
+                    "label": "Rural Lot",
+                    "low": 10,
+                    "high": 15,
+                    "notes": "Lowest band on the platform.",
+                },
+                {
+                    "label": "Suburban Lot",
+                    "low": 20,
+                    "high": 25,
+                    "notes": "Mid band for suburban locations.",
+                },
+                {
+                    "label": "Dense Metro Lot",
+                    "low": 30,
+                    "high": 30,
+                    "notes": (
+                        "$30-plus in LA-Long Beach, Dallas, Chicago, New York-Newark and Orlando."
+                    ),
+                },
+                {
+                    "label": "Platform Average",
+                    "low": 20,
+                    "high": 20,
+                    "notes": "About $20 per truck per day across listed lots.",
+                },
+            ],
+        },
+        {
+            "diagram_id": "diag-08-battery-storage-land-lease-roadmap",
+            "chapter_number": 12,
+            "title": "Battery Storage Land Lease Screening Roadmap",
+            "subtitle": "A grid-proximity play: acreage, terrain, substation capacity, then terms",
+            "caption": (
+                "LandGate wants 2 to 15 acres next to a substation or under half a mile "
+                "away, on leases of 20 to 30 years with upgrade rights."
+            ),
+            "assumptions_note": (
+                "Week labels order the checks; practitioners did not state durations. "
+                "Thresholds are LandGate's and Land Owl's; Doxy's free check allows 10 "
+                "screenings a day with a $9.99 map."
+            ),
+            "note": (
+                "Sources: LandApp by LandGate (Yes7DTfUfJs @ 00:00:17, 00:00:33, 00:00:51, "
+                "00:01:44); Land Owl (yVhfvSQwGRQ @ 00:01:23, 00:02:53)."
+            ),
+            "chart_type": "timeline_roadmap",
+            "weeks": [
+                {
+                    "week": "Week 1",
+                    "title": "Screen the Parcel",
+                    "deliverable": (
+                        "Shortlist of 2 to 15 acre parcels next to a substation or under "
+                        "half a mile away"
+                    ),
+                    "gate": "Parcel fits acreage and substation distance",
+                },
+                {
+                    "week": "Week 2",
+                    "title": "Trust the Map Over the Listing",
+                    "deliverable": (
+                        "Contour lines and soil survey reviewed; 50 feet of fall on 6 to "
+                        "10% slopes flagged as grading cost"
+                    ),
+                    "gate": "Terrain does not erase the economics",
+                },
+                {
+                    "week": "Week 3",
+                    "title": "Confirm Capacity With the Utility",
+                    "deliverable": "Utility answer on substation room; zoning confirmed with the county",
+                    "gate": "A substation in service still may have no room for you",
+                },
+                {
+                    "week": "Week 4",
+                    "title": "Negotiate the Lease",
+                    "deliverable": (
+                        "20 to 30 year term with periodic upgrade rights, informed by state "
+                        "renewable incentives"
+                    ),
+                    "gate": "Owner knows the incentives before the developer call",
+                },
+            ],
+        },
+    ]
+
+
+VOLUME_042_POSITIONING_ALTERNATIVES: List[Dict] = [
     {
-        "title": "The Telecom Rights Spread Desk",
-        "subtitle": (
-            "Build a parcel-to-closing engine for tower and rooftop rights, "
-            "pricing transferable cash flows rather than institutional purchase principal."
-        ),
-        "audience": (
-            "Principal investors and infrastructure acquisition operators who can "
-            "underwrite lease rights, title exceptions, lender consent, and buyer demand."
-        ),
+        "title": "Don't Sell Your Cell Tower Rent for Pennies",
+        "subtitle": "Strike the ROFR, name every tenant and make buyers bid against each other",
+        "audience": "Landowners and building owners collecting cell site rent who are fielding buyout letters",
         "research_basis": (
-            "47 CFR 17.4 establishes registration requirements for covered antenna "
-            "structures; the FCC Antenna Structure Registration search supports initial "
-            "prospecting but does not establish ownership or transferable lease rights. "
-            "47 U.S.C. 332(c)(7) preserves specified local siting authority subject "
-            "to federal limitations. California Business and Professions Code "
-            "10130 and 10131 illustrate why transaction capacity and brokerage "
-            "activities require state-specific review. Neither registration nor "
-            "these statutes establishes a buyer's purchase multiple."
+            "Tower Genius pegs average buyouts at 16 to 17.5 times rent and 19 times for "
+            "clean leases; Acquisition Insider sees aggregator offers at 8 to 15 times; a "
+            "struck ROFR drew over $200,000 above a best offer; Furlo saw 24-25x for AT&T "
+            "versus about 5x for US Cellular."
         ),
         "sources": [
-            "https://www.ecfr.gov/current/title-47/section-17.4",
-            "https://wireless2.fcc.gov/UlsApp/AsrSearch/asrRegistrationSearch.jsp",
-            "https://www.law.cornell.edu/uscode/text/47/332",
-            "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=10130.",
-            "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=10131.",
+            "https://www.youtube.com/watch?v=pSGbaA0AbTo&t=32s",
+            "https://www.youtube.com/watch?v=MtWLazzJb9Y&t=129s",
+            "https://www.youtube.com/watch?v=H0Q5FZ_5RWA&t=254s",
+            "https://www.youtube.com/watch?v=bk4EnTlbPdA&t=682s",
         ],
-        "validation_status": (
-            "Source-informed editorial positioning; not market-tested."
-        ),
+        "validation_status": "Grounded strictly in Vol. 042 YouTube practitioner transcripts.",
     },
     {
-        "title": "The Permitted Billboard Assignment Desk",
-        "subtitle": (
-            "Turn highway parcel screening, sign entitlement diligence, and "
-            "assignable ground control into documented assignment-fee opportunities."
-        ),
-        "audience": (
-            "Land-rights acquisition teams serving outdoor-advertising operators "
-            "with verified demand for legally usable digital-sign locations."
-        ),
+        "title": "Buy the Permit, Not the Steel",
+        "subtitle": "Billboard underwriting at 85% fill, digital conversion math and the debt that kills roll-ups",
+        "audience": "Small-business buyers and real estate investors evaluating static and digital billboards",
         "research_basis": (
-            "23 U.S.C. 131 provides the federal highway-advertising control "
-            "framework. 23 CFR 750.705 and 750.706 address effective control "
-            "and state criteria. Federal coverage, applicable state agreements, "
-            "state DOT rules, and local ordinances must be checked together; "
-            "traffic counts alone establish neither permit eligibility nor "
-            "digital conversion rights. Assignment value also depends on "
-            "permit transfer procedures and the ground lease's consent language."
+            "A single static board nets about $7,000 a year and trades at 8 to 10 times "
+            "cash flow; Lamar's Sean Reilly cites $3,000 a month static becoming $15,000 "
+            "to $18,000 digital for about $200,000; operators underwrite at 85% occupancy; "
+            "a 300-board, 75%-debt roll-up went bankrupt in 2021 when leases came back at "
+            "double rent."
         ),
         "sources": [
-            "https://www.law.cornell.edu/uscode/text/23/131",
-            "https://www.ecfr.gov/current/title-23/section-750.705",
-            "https://www.ecfr.gov/current/title-23/section-750.706",
-            "https://www.fhwa.dot.gov/policyinformation/travel_monitoring/tvthwy.cfm",
+            "https://www.youtube.com/watch?v=4PyMov-VjoE&t=127s",
+            "https://www.youtube.com/watch?v=OYv2q23Z36g&t=185s",
+            "https://www.youtube.com/watch?v=9d5MJAQGDk8&t=418s",
+            "https://www.youtube.com/watch?v=Bb-6A1zEJAc&t=474s",
         ],
-        "validation_status": (
-            "Source-informed editorial positioning; not market-tested."
-        ),
+        "validation_status": "Grounded strictly in Vol. 042 YouTube practitioner transcripts.",
     },
     {
-        "title": "The Zero-Building Fleet Yard Spread",
-        "subtitle": (
-            "Control usable industrial outdoor storage, contract fleet demand, "
-            "and retain the master-lease spread with metered access and billing."
-        ),
-        "audience": (
-            "Small industrial-property operating teams with fleet relationships "
-            "and capacity to supervise site diligence, lease obligations, and collections."
-        ),
+        "title": "Gravel, Gates and Day-One Yield",
+        "subtitle": "Industrial outdoor storage and truck parking yards where zoning and dirt are the deal",
+        "audience": "Investors moving from small residential rentals into IOS, truck parking and parking arbitrage",
         "research_basis": (
-            "40 CFR 312.20 and 312.21 establish elements of all appropriate "
-            "inquiries and environmental-professional inquiry requirements. "
-            "Use a qualified professional to scope Phase I work and any "
-            "transaction-specific liability-protection requirements. "
-            "40 CFR 122.26 supplies the federal industrial stormwater framework; "
-            "coverage depends on actual activities, exposure, and the applicable "
-            "permitting authority. Neither a Phase I report nor a triple-net "
-            "lease substitutes for permitted heavy-vehicle use."
+            "Evan Shealy prices truck parking at $10 to $30-plus per truck per day; Tyler "
+            "Cauble's buy box is $300,000-$500,000 an acre and $175-$225 per space; Ron "
+            "Rohde lifted stalls from $100 to $215-225; 9606 Capital buys Atlanta at 8.5% "
+            "against 7% stabilized; one acre models at about 40 spaces and about $57K NOI."
         ),
         "sources": [
-            "https://www.ecfr.gov/current/title-40/section-312.20",
-            "https://www.ecfr.gov/current/title-40/section-312.21",
-            "https://www.ecfr.gov/current/title-40/section-122.26",
-            "https://www.epa.gov/brownfields/brownfields-all-appropriate-inquiries",
-            "https://www.epa.gov/npdes/stormwater-discharges-industrial-activities",
+            "https://www.youtube.com/watch?v=NIYpBpIvXTc&t=857s",
+            "https://www.youtube.com/watch?v=IRDT0HnPpUc&t=886s",
+            "https://www.youtube.com/watch?v=gcg4K6xqYaU&t=264s",
+            "https://www.youtube.com/watch?v=LftC_mcL69E&t=894s",
+            "https://www.youtube.com/watch?v=q7HQGiIiT_8&t=1170s",
         ],
-        "validation_status": (
-            "Source-informed editorial positioning; not market-tested."
-        ),
+        "validation_status": "Grounded strictly in Vol. 042 YouTube practitioner transcripts.",
     },
 ]
-
-
-def build_volume_042_diagrams_data() -> list[dict]:
-    specs = [
-        (
-            "diag-01-parcel-to-retained-spread",
-            "process_flow",
-            "Control Rights Before Selling the Spread",
-            "Five operating steps from a mapped parcel to collected operator revenue",
-            1,
-            "operating_framework",
-            (
-                "This workflow serves telecom rights, billboard assignments, and "
-                "industrial outdoor storage. First-deal planning remains 2–6 months. "
-                "The scorecard counts earned spreads and fees, excluding institutional "
-                "purchase principal and tenant gross billings."
-            ),
-            (
-                "A mapped opportunity becomes inventory only after rights, "
-                "consents, permitted use, and an executable exit are documented."
-            ),
-            [
-                (
-                    "Map eligible parcels",
-                    "FCC ASR + DOT AADT",
-                    1.0,
-                    (
-                        "Join FCC ASR records, state DOT annual average daily "
-                        "traffic layers, and assessor parcels in QGIS. Verify "
-                        "rooftop candidates separately because ASR is not a "
-                        "complete inventory of telecom installations."
-                    ),
-                ),
-                (
-                    "Establish transferable control",
-                    "Title + options + consents",
-                    2.0,
-                    (
-                        "Review recorded instruments, lease amendments, assignment "
-                        "limits, mortgage priority, and access rights. Use "
-                        "diligence-contingent control documents and identify required "
-                        "lender subordination, nondisturbance, and attornment agreements."
-                    ),
-                ),
-                (
-                    "Underwrite the actual spread",
-                    "Cash-flow NPV + buyer bids",
-                    3.0,
-                    (
-                        "Model escalators, termination, restoration, and collection "
-                        "risk in a spreadsheet. Test a 16×–22× telecom buyer "
-                        "multiple only as an illustrative sensitivity on buyer-accepted "
-                        "annual contractual rent; obtain written bids before relying "
-                        "on an exit value."
-                    ),
-                ),
-                (
-                    "Clear site-specific execution risks",
-                    "Permits + environmental + access",
-                    4.0,
-                    (
-                        "Confirm sign spacing and digital operation permissions, "
-                        "telecom access and utility easements, or IOS heavy-axle "
-                        "use and stormwater obligations. Commission Phase I work "
-                        "before executing an IOS master lease."
-                    ),
-                ),
-                (
-                    "Close and reconcile collections",
-                    "Settlement ledger + yard billing",
-                    5.0,
-                    (
-                        "Match settlement statements to earned assignment or buyout "
-                        "spreads. For IOS, reconcile contracted tenant receipts, "
-                        "master rent, and directly allocated property obligations "
-                        "before measuring retained spread; link RFID access to "
-                        "the authorized tenant roster."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-02-annual-parcel-cohort-funnel",
-            "funnel",
-            "One Cohort, Seventeen Monetized Opportunities",
-            "Annual illustrative funnel supporting the Base operator-revenue mix",
-            6,
-            "illustrative_model",
-            (
-                "The same 400 unique parcel opportunities flow through every "
-                "stage; each stage is a subset of the preceding stage. "
-                "Conversions are planning assumptions, not observed performance. "
-                "The cohort represents a mature annual operating period, not "
-                "a promise to close within the first 30 days."
-            ),
-            (
-                "Seventeen outcomes comprise four telecom spread transactions, "
-                "five billboard assignments, and eight IOS activations. The "
-                "IOS revenue mix assumes twelve billed months per activated yard."
-            ),
-            [
-                (
-                    "Mapped opportunities",
-                    "400 unique parcel records",
-                    400.0,
-                    (
-                        "Deduplicate by parcel and proposed rights package before "
-                        "counting. Capture source date, owner contact route, "
-                        "traffic or telecom evidence, and the proposed use."
-                    ),
-                ),
-                (
-                    "Desktop-qualified opportunities",
-                    "200 parcels; 50% of mapped",
-                    200.0,
-                    (
-                        "Remove incompatible zoning, unsuitable access, obvious "
-                        "sign-spacing conflicts, and absent buyer demand. Retain "
-                        "a recorded reason for every exclusion."
-                    ),
-                ),
-                (
-                    "Owner-engaged opportunities",
-                    "80 parcels; 40% of qualified",
-                    80.0,
-                    (
-                        "Confirm the owner's identity and transaction interest, "
-                        "obtain relevant leases, and establish a credible route "
-                        "to inspect title and site conditions."
-                    ),
-                ),
-                (
-                    "Controlled diligence opportunities",
-                    "24 parcels; 30% of engaged",
-                    24.0,
-                    (
-                        "Secure documented diligence access and conditional control "
-                        "where appropriate. Obtain preliminary counterparty economics "
-                        "before ordering expensive reports or committing deposits."
-                    ),
-                ),
-                (
-                    "Monetized opportunities",
-                    "17 parcels; 70.83% of controlled",
-                    17.0,
-                    (
-                        "Close four telecom transactions and five billboard "
-                        "assignments; activate eight leased yards. Overall cohort "
-                        "conversion is 4.25%, with annual IOS revenue dependent "
-                        "on full-year occupancy and payment."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-03-base-owner-profit-waterfall",
-            "waterfall",
-            "$535,000 Operator Revenue to $214,000 Owner Profit",
-            "Six bars reconcile the Base scenario to a 40.0% net margin",
-            3,
-            "illustrative_model",
-            (
-                "Formula v2.0 Base totals are canonical; the four expense "
-                "allocations are illustrative. The first bar is the opening "
-                "total, middle bars are signed deductions, and the final bar "
-                "is the ending total rather than another additive movement. "
-                "Operator revenue already excludes acquisition principal, "
-                "tenant gross billings, and IOS property costs used to compute "
-                "retained lease spreads."
-            ),
-            (
-                "$535,000 − $90,000 − $75,000 − $60,000 − $96,000 = "
-                "$214,000; $214,000 / $535,000 = 40.0%. The $96,000 "
-                "recurring-overhead allocation equals $8,000 monthly; other "
-                "deductions are variable transaction expenses."
-            ),
-            [
-                (
-                    "Gross operator revenue",
-                    "$535,000 opening total",
-                    535000.0,
-                    (
-                        "Combine $260,000 telecom buyout spreads, $95,000 billboard "
-                        "assignment fees, and $180,000 retained IOS spreads. "
-                        "These are operator-level economics, not the underlying "
-                        "property or easement transaction values."
-                    ),
-                ),
-                (
-                    "Origination and closing support",
-                    "−$90,000 variable expense",
-                    -90000.0,
-                    (
-                        "Allocate transaction-specific sourcing and closing support "
-                        "only after verifying the permitted compensation structure. "
-                        "Do not duplicate contractor costs assigned to recurring overhead."
-                    ),
-                ),
-                (
-                    "Title, legal, and consent execution",
-                    "−$75,000 variable expense",
-                    -75000.0,
-                    (
-                        "Budget title work, instrument drafting, lender negotiations, "
-                        "recording coordination, and failed-deal legal costs outside "
-                        "the already calculated acquisition spread."
-                    ),
-                ),
-                (
-                    "Site and permit diligence",
-                    "−$60,000 variable expense",
-                    -60000.0,
-                    (
-                        "Allocate surveys, Phase I reports, zoning verification, "
-                        "engineering checks, and permit diligence. Include abandoned "
-                        "opportunity costs rather than charging only completed deals."
-                    ),
-                ),
-                (
-                    "Recurring operating overhead",
-                    "−$96,000 annual overhead",
-                    -96000.0,
-                    (
-                        "Reserve $8,000 monthly for contracted administration, "
-                        "software, insurance, accounting, travel, and routine "
-                        "operating support, with no duplication of variable expenses."
-                    ),
-                ),
-                (
-                    "Annual owner net profit",
-                    "$214,000 ending total",
-                    214000.0,
-                    (
-                        "The canonical Base result is owner profit after "
-                        "$321,000 modeled operating expenses. Personal taxes, "
-                        "owner distributions, and financing principal movements "
-                        "are not additional operating-expense bars."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-04-five-operator-revenue-rails",
-            "horizontal_bars",
-            "Five Revenue Rails, One $535,000 Base",
-            "Illustrative annual dollar yield by sub-niche, not asset investment returns",
-            2,
-            "illustrative_model",
-            (
-                "Bar values are annual operator-revenue contributions in USD, "
-                "not percentage yields or underlying asset prices. Deal counts "
-                "and unit spreads are illustrative allocations of the canonical "
-                "Base total. The eight IOS yards each contribute twelve months "
-                "of retained spread in this mature-year model."
-            ),
-            (
-                "Scenario anchors remain Conservative $120,000 revenue at 28% "
-                "for $33,600 owner profit; Base $535,000 at 40.0% for "
-                "$214,000; Scaled $950,000 at 52% for $494,000. "
-                "Conservative and Base use four people; Scaled uses six."
-            ),
-            [
-                (
-                    "Ground-tower easement spreads",
-                    "2 transactions × $75,000",
-                    150000.0,
-                    (
-                        "Retain $150,000 after the modeled acquisition consideration "
-                        "embedded in each buyout spread, before the waterfall's "
-                        "separate operating expenses. Collect through documented "
-                        "settlement disbursements rather than counting buyer principal."
-                    ),
-                ),
-                (
-                    "Rooftop telecom rights spreads",
-                    "2 transactions × $55,000",
-                    110000.0,
-                    (
-                        "Retain $110,000 from transferable rooftop rights. "
-                        "Price roof replacement access, relocation provisions, "
-                        "building lender consent, and operator termination rights "
-                        "before accepting the acquisition obligation."
-                    ),
-                ),
-                (
-                    "Digital-billboard assignments",
-                    "5 assignments × $19,000",
-                    95000.0,
-                    (
-                        "Earn $95,000 in documented assignment fees for "
-                        "usable ground-control packages. Verify permit transfer "
-                        "procedures and lease consent separately; traffic volume "
-                        "does not establish transferable sign rights."
-                    ),
-                ),
-                (
-                    "Fleet drop-yard master leases",
-                    "4 yards × $25,000 annually",
-                    100000.0,
-                    (
-                        "Retain $100,000 after master rent and directly allocated "
-                        "property obligations. Bill fleet tenants through "
-                        "authorized ACH instructions and reconcile settled receipts "
-                        "against contract schedules and access records."
-                    ),
-                ),
-                (
-                    "Equipment-storage master leases",
-                    "4 yards × $20,000 annually",
-                    80000.0,
-                    (
-                        "Retain $80,000 after master rent and directly allocated "
-                        "property obligations. Monitor permitted storage categories, "
-                        "surface damage, delinquency, and exposure to uninsured "
-                        "tenant equipment losses."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-05-rights-statutes-and-site-checks",
-            "decision_tree",
-            "Four Checks Before Irreversible Exposure",
-            "Proceed on documented evidence; resolve defects or reject the parcel",
-            5,
-            "operating_framework",
-            (
-                "These four sequential checks apply according to transaction "
-                "type and jurisdiction. A failed check routes the opportunity "
-                "to documented remediation or rejection, not automatic execution. "
-                "Cited provisions establish specific requirements or frameworks; "
-                "they do not replace parcel-level determinations."
-            ),
-            (
-                "Capital follows confirmed capacity, priority, permitted use, "
-                "and site condition. A favorable exit multiple cannot repair "
-                "an unassignable right or prohibited yard operation."
-            ),
-            [
-                (
-                    "Capacity and licensed activity",
-                    "Proceed if transaction role is verified",
-                    1.0,
-                    (
-                        "Map principal activity, options, referrals, and services "
-                        "performed for others against the applicable state rules. "
-                        "California Business and Professions Code 10130 and "
-                        "10131 illustrate the licensing boundary; do not assume "
-                        "every option assignment qualifies for an exemption."
-                    ),
-                ),
-                (
-                    "Priority and required consents",
-                    "Proceed if enforceable rights survive",
-                    2.0,
-                    (
-                        "Inspect title, mortgage priority, termination clauses, "
-                        "assignment restrictions, and access easements. Obtain "
-                        "required lender and lessor consents and negotiate "
-                        "an effective SNDA where needed; the SNDA requirement "
-                        "depends on documents and risk, not a universal statute."
-                    ),
-                ),
-                (
-                    "Sign and telecom permissions",
-                    "Proceed if the proposed use is permitted",
-                    3.0,
-                    (
-                        "For covered highway signs, apply 23 U.S.C. 131, "
-                        "23 CFR 750.705–750.706, state DOT spacing criteria, "
-                        "and local digital-sign rules. For telecom, check "
-                        "47 CFR 17.4 applicability and local siting requirements "
-                        "within 47 U.S.C. 332(c)(7)."
-                    ),
-                ),
-                (
-                    "IOS environmental and axle suitability",
-                    "Proceed if site obligations are costed",
-                    4.0,
-                    (
-                        "Before executing the master lease, obtain Phase I "
-                        "screening and verify heavy-vehicle zoning, turning paths, "
-                        "surface capacity, drainage, and fire access. Scope "
-                        "40 CFR Part 312 when applicable and assess industrial "
-                        "stormwater coverage under 40 CFR 122.26."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-06-four-person-pod-six-person-scale",
-            "org_architecture",
-            "Four Core Seats; Two Additions at Scale",
-            "Conservative and Base use 1 FT + 3 C; Scaled uses 2 FT + 4 C",
-            11,
-            "operating_framework",
-            (
-                "FT denotes a full-time operator and C denotes a contracted "
-                "seat. The first four seats form the four-person pod; the "
-                "last two activate only in the six-person Scaled scenario. "
-                "Specialist reports are purchased services, not additional "
-                "standing pod seats."
-            ),
-            (
-                "Keep signing authority and cash exposure with the principal. "
-                "Automate evidence assembly and recurring billing, while "
-                "retaining human review of rights and exceptions."
-            ),
-            [
-                (
-                    "Principal and acquisition lead",
-                    "Core seat 1; full-time operator",
-                    1.0,
-                    (
-                        "Own pricing, capital commitments, counterparty selection, "
-                        "and final execution. Approve acquisition assumptions "
-                        "against written demand and review the operator-revenue "
-                        "bridge before signing."
-                    ),
-                ),
-                (
-                    "Rights and transaction counsel",
-                    "Core seat 2; contracted specialist",
-                    1.0,
-                    (
-                        "Review licensed-activity questions, title exceptions, "
-                        "assignment language, lender consent, and SNDA terms. "
-                        "Maintain a document checklist tied to each parcel."
-                    ),
-                ),
-                (
-                    "GIS and site diligence coordinator",
-                    "Core seat 3; contracted specialist",
-                    1.0,
-                    (
-                        "Maintain QGIS parcel screening and coordinate "
-                        "surveys, environmental professionals, zoning confirmation, "
-                        "and DOT permit checks without substituting desktop "
-                        "screening for required field work."
-                    ),
-                ),
-                (
-                    "Billing and transaction operations",
-                    "Core seat 4; contracted specialist",
-                    1.0,
-                    (
-                        "Reconcile settlement statements, tenant invoices, "
-                        "master-rent schedules, insurance evidence, and access "
-                        "permissions. Escalate collection exceptions rather "
-                        "than automatically changing contractual rights."
-                    ),
-                ),
-                (
-                    "Portfolio operating lead",
-                    "Scaled addition; second full-time operator",
-                    1.0,
-                    (
-                        "Take daily responsibility for active yards, renewal "
-                        "calendars, tenant exceptions, and vendor performance "
-                        "so the principal can maintain acquisition discipline."
-                    ),
-                ),
-                (
-                    "Dedicated sourcing coordinator",
-                    "Scaled addition; fourth contracted specialist",
-                    1.0,
-                    (
-                        "Expand owner contact coverage and buyer matching "
-                        "using approved transaction roles and compensation "
-                        "structures. Preserve parcel-level attribution and "
-                        "prevent duplicate acquisition outreach."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-07-startup-capital-four-buckets",
-            "stacked_comparison",
-            "Deploy $12,000–$60,000 Without Buying the Whole Asset",
-            "Four startup buckets shown at a $36,000 planning allocation",
-            4,
-            "illustrative_model",
-            (
-                "Numeric values show the $36,000 planning allocation. "
-                "Matched lean allocations total $12,000; matched expanded "
-                "allocations total $60,000. These budgets fund diligence, "
-                "conditional control, and runway, not full easement purchases "
-                "or major yard construction. Capital deployment is not "
-                "automatically a current-period operating expense."
-            ),
-            (
-                "The lean budget depends on low deposits, staged reports, "
-                "and limited cash burn. First-deal timing is 2–6 months "
-                "and monthly operating expense planning is $2,000–$12,000; "
-                "the startup range does not cover every timing and burn combination."
-            ),
-            [
-                (
-                    "Rights and transaction setup",
-                    "$8,000 planning allocation",
-                    8000.0,
-                    (
-                        "Lean $3,000; expanded $12,000. Fund entity-specific "
-                        "contracts, title review, licensing analysis, consent "
-                        "planning, and documented control instruments before "
-                        "committing to acquisition obligations."
-                    ),
-                ),
-                (
-                    "Site and permit investigation",
-                    "$10,000 planning allocation",
-                    10000.0,
-                    (
-                        "Lean $3,000; expanded $16,000. Stage Phase I work, "
-                        "surveys, drainage review, sign eligibility checks, "
-                        "and heavy-vehicle use verification by parcel priority."
-                    ),
-                ),
-                (
-                    "Conditional control and deposits",
-                    "$12,000 planning allocation",
-                    12000.0,
-                    (
-                        "Lean $4,000; expanded $22,000. Reserve cash for "
-                        "negotiated options, refundable deposits where available, "
-                        "and initial yard security deposits; track refund "
-                        "conditions and expiry dates separately."
-                    ),
-                ),
-                (
-                    "Systems and working reserve",
-                    "$6,000 planning allocation",
-                    6000.0,
-                    (
-                        "Lean $2,000; expanded $10,000. Fund GIS hosting, "
-                        "document storage, billing setup, insurance activation, "
-                        "and operating liquidity. Stress-test slower closings "
-                        "before treating this reserve as sufficient runway."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-08-thirty-day-evidence-sprint",
-            "timeline_roadmap",
-            "Thirty Days to a Defensible Acquisition Pipeline",
-            "Four weekly milestones produce evidence, not an assumed first closing",
-            12,
-            "operating_framework",
-            (
-                "The first sprint establishes a working acquisition system. "
-                "A first completed deal remains a 2–6 month planning horizon. "
-                "Weekly activity targets are illustrative and separate from "
-                "the mature annual cohort used in the funnel."
-            ),
-            (
-                "End the month with priced, documented opportunities and "
-                "explicit unresolved conditions; do not accelerate execution "
-                "by skipping lender, permit, or environmental work."
-            ),
-            [
-                (
-                    "Days 1-7",
-                    "Choose one market and map 50 parcels",
-                    7.0,
-                    (
-                        "Select a primary revenue rail and buyer profile. "
-                        "Load FCC ASR or state DOT AADT layers into QGIS, "
-                        "verify local use criteria, and create parcel records "
-                        "with source dates and ownership evidence."
-                    ),
-                ),
-                (
-                    "Days 8-14",
-                    "Screen 20 parcels and seek 10 owner conversations",
-                    14.0,
-                    (
-                        "Prioritize transferable rights and demonstrated buyer "
-                        "demand. Request leases and amendments, document "
-                        "owner authority, and record exclusion reasons without "
-                        "treating outreach targets as achieved conversions."
-                    ),
-                ),
-                (
-                    "Days 15-21",
-                    "Price three candidates and assemble diligence scopes",
-                    21.0,
-                    (
-                        "Model downside rent and termination assumptions, "
-                        "request buyer indications, identify lender requirements, "
-                        "and obtain title, Phase I, survey, or permit "
-                        "work proposals appropriate to each candidate."
-                    ),
-                ),
-                (
-                    "Days 22-30",
-                    "Advance one conditional control package",
-                    30.0,
-                    (
-                        "Negotiate a diligence-contingent option or equivalent "
-                        "control structure, assign consent owners, and schedule "
-                        "specialist work. Test settlement and billing ledgers "
-                        "using synthetic entries; execute no IOS master lease "
-                        "before environmental and heavy-axle checks."
-                    ),
-                ),
-            ],
-        ),
-    ]
-    return [
-        dict(
-            diagram_id=identifier,
-            chart_type=kind,
-            title=title,
-            subtitle=subtitle,
-            chapter_number=chapter,
-            epistemic_tag=tag,
-            assumptions_note=note,
-            caption=caption,
-            stages=[
-                dict(
-                    label=label,
-                    value=value,
-                    numeric_value=float(number),
-                    detail=detail,
-                )
-                for label, value, number, detail in stages
-            ],
-        )
-        for (
-            identifier,
-            kind,
-            title,
-            subtitle,
-            chapter,
-            tag,
-            note,
-            caption,
-            stages,
-        ) in specs
-    ]

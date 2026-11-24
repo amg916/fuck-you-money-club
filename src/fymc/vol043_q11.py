@@ -1,763 +1,851 @@
 from __future__ import annotations
 
-CHAPTER_11 = {
-    "id": "Q11",
-    "chapter_id": "Q11",
-    "chapter_number": 11,
-    "question_number": 11,
-    "slug": "pod-architecture-contractor-kpis-exit-valuation",
-    "question_prompt": "How do you structure a lean 1 FT + 2 C (3 people) -> 2 FT + 3 C (5 people) pod, enforce weekly scorecards, and build transferable books that command a premium exit multiple (or durable cash cow)?",
-    "kicker": "Q11 / THE BIG MONEY PLAYBOOKS",
-    "title": "Pod Architecture, Contractor KPIs & Exit Valuation",
-    "subtitle": "SkyBox, Automatiq and Logitix Pod Controls, Event-Cohort Accruals, BOTS Act Discipline and Transferable Hospitality Books",
-    "layout_template": "action_checklist",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #43, Live-Event, Super Bowl & VIP Ticket Brokering, ranks #02 of 43 "
-        "with a 95/100 Money-to-Manpower Score. Its 12 mapped plays require three distinct "
-        "operating lanes: multi-exchange resale, stadium suite seat-splitting, and tentpole "
-        "corporate hospitality. Build the first pod around one accountable owner and two "
-        "specialist contractors; expand to two employees and three contractors only after "
-        "settled cohort economics support the payroll. Canonical annual owner profit is "
-        "$26,400 Conservative, $191,900 Base, and $468,000 Scaled. Weekly scorecards must "
-        "measure payout liquidity, transfer accuracy, concentration, and fully burdened "
-        "spread rather than ticket volume. Transferable supplier permissions, signed IP "
-        "assignments, clean accrual books, and documented replacement labor make either "
-        "a disciplined sale or a durable owner-operated cash business possible."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$220,000",
-            "context": "Annual gross operating billings; $88,000 retained contribution at 40%.",
-            "note": "12% gross-basis net margin; 30% retained margin; $26,400 owner profit; 1 FT + 2 C.",
-        },
-        {
-            "label": "Base",
-            "value": "$1,010,000",
-            "context": "Annual gross operating billings; $404,000 retained contribution at 40%.",
-            "note": "19.0% gross-basis net margin; 47.5% retained margin; $191,900 owner profit; 1 FT + 2 C.",
-        },
-        {
-            "label": "Scaled",
-            "value": "$1,800,000",
-            "context": "Annual gross operating billings; $720,000 retained contribution at 40%.",
-            "note": "26% gross-basis net margin; 65% retained margin; $468,000 owner profit; 2 FT + 3 C.",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Assign twelve plays to accountable seats, not twelve miniature businesses",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Treat the twelve mapped operator plays as one controlled inventory business "
-                    "with three operating lanes. For this chapter's staffing map, label them P01 "
-                    "multi-exchange broadcasting, P02 exchange spread capture, P03 event drop-curve "
-                    "repricing, P04 NFL playoff strips, P05 NBA playoff strips, P06 SSL-linked "
-                    "playoff options, P07 suite seat-splitting, P08 suite group placements, P09 "
-                    "Super Bowl hospitality, P10 World Cup hospitality, P11 F1 hospitality, and "
-                    "P12 permissioned sponsor-allotment bundles for Masters or Final Four demand. "
-                    "These labels allocate work; they do not assert that every rights holder "
-                    "permits resale or every ticket includes hospitality access. The owner "
-                    "underwrites acquisition, signs supplier contracts, approves event exposure, "
-                    "and owns cash forecasting. Contractor C1 operates listings, pricing rules, "
-                    "and transfer exceptions. Contractor C2 handles corporate proposals, suite "
-                    "guest manifests, supplier confirmations, and invoice matching. Both "
-                    "contractors work against documented deliverables rather than sharing an "
-                    "unrestricted administrator account. The owner remains the escalation seat "
-                    "when either specialist is unavailable. Maintain one inventory identifier "
-                    "across the purchase document, POS record, exchange order, barcode transfer, "
-                    "and accounting cohort. Every play must inherit these controls before its "
-                    "first listing, including a backup contact who can halt sales without "
-                    "needing the owner's personal device."
-                ),
-                (
-                    "Separate the capital and settlement profiles before assigning workload. "
-                    "Multi-exchange resale uses SkyBox, Automatiq, or Logitix as the selected "
-                    "system of record, with verified integrations to StubHub, Vivid Seats, "
-                    "SeatGeek, and TickPick; integration coverage and synchronization latency "
-                    "must be tested rather than assumed. Inventory is commonly purchased before "
-                    "sale, and an exchange may release proceeds only after the event under "
-                    "its seller agreement. Suite splitting adds a fixed suite commitment, "
-                    "per-seat occupancy risk, catering minimums, parking entitlements, and a "
-                    "hard guest-manifest deadline. A partially sold suite can generate cash "
-                    "receipts while remaining economically underwater. Tentpole hospitality "
-                    "adds supplier deposits, staged corporate collections, hotel or transport "
-                    "deliverables, and refund mismatches across multiple providers. Super Bowl, "
-                    "World Cup, and F1 packages therefore need component-level obligations, "
-                    "not merely ticket quantities. Never treat a sponsor allocation as freely "
-                    "transferable because a contact offered it informally. Confirm the "
-                    "supplier's authority and each component's resale restrictions before "
-                    "taking customer money. For all three lanes, measure time from acquisition "
-                    "cash leaving the bank until unrestricted settlement arrives. A profitable "
-                    "event with a delayed payout can exhaust the same working capital "
-                    "needed to fulfill the following week's contracted orders."
-                ),
-                (
-                    "Expand to the five-person pod only when an eight-week workload record "
-                    "shows sustained exceptions or corporate fulfillment exceeding existing "
-                    "capacity, and settled contribution funds the added seat. The second "
-                    "full-time employee becomes operations lead, owning daily exception "
-                    "triage, event readiness, and contractor quality assurance. C1 remains "
-                    "the exchange execution specialist; C2 remains hospitality fulfillment; "
-                    "C3 supplies reconciliation and reporting deliverables. The owner "
-                    "retains capital allocation and senior corporate relationships but "
-                    "should no longer be the only person who can explain an event's "
-                    "margin. Write a responsibility matrix separating purchase authority, "
-                    "listing authority, refund authority, and bank-payment release. Require "
-                    "two-person evidence review for supplier bank-detail changes without "
-                    "giving every worker banking access. Contractor status follows actual "
-                    "working conditions, not the letter C in a staffing model: evaluate "
-                    "federal employment standards, tax classification, and applicable state "
-                    "tests before imposing employee-like schedules or control. Use "
-                    "contracted event coverage windows and service outcomes where genuine "
-                    "independence exists. If classification requires payroll employment, "
-                    "reprice the operating plan rather than hiding payroll costs inside "
-                    "a nominal contractor budget. The scorecard's team counts describe "
-                    "capacity assumptions, not permission to misclassify the people "
-                    "who perform the work."
-                ),
-            ],
-            "table": {
-                "caption": "Twelve-Play Seat Map and Event-Lane Accountability",
-                "headers": [
-                    "Play allocation",
-                    "Primary accountable seat",
-                    "Required operating evidence",
-                    "Backup and exposure control",
-                ],
-                "rows": [
-                    [
-                        "P01 and P02 cover broadcasting and exchange spreads.",
-                        "C1 executes listings while owner authorizes acquisition exposure.",
-                        "Match inventory identifiers against exchange acknowledgments before release.",
-                        "Owner pauses affected listings when synchronization evidence fails.",
-                    ],
-                    [
-                        "P03 covers event drop-curve pricing and controlled markdowns.",
-                        "C1 proposes changes inside owner-approved event loss limits.",
-                        "Store price history, comparable observations, and override reasons.",
-                        "Operations backup restores last validated pricing configuration promptly.",
-                    ],
-                    [
-                        "P04 and P05 cover NFL and NBA playoff strips.",
-                        "Owner underwrites advancement probabilities and series purchase obligations.",
-                        "Separate guaranteed games from contingent inventory purchase commitments.",
-                        "C1 suppresses unavailable games before publishing transferable inventory.",
-                    ],
-                    [
-                        "P06 covers SSL-linked playoff options and contractual rights.",
-                        "Owner verifies option exercise terms with documented counterparties.",
-                        "Retain rights agreements, exercise deadlines, and transfer permissions.",
-                        "Backup calendar alerts precede every irreversible exercise deadline.",
-                    ],
-                    [
-                        "P07 and P08 cover suite splitting and group placements.",
-                        "C2 manages manifests, catering scope, and group confirmations.",
-                        "Reconcile sold seats against suite capacity and package entitlements.",
-                        "Owner caps whole-suite downside before releasing individual seats.",
-                    ],
-                    [
-                        "P09 and P10 cover Super Bowl and World Cup.",
-                        "Owner sells relationships while C2 validates component fulfillment.",
-                        "Link supplier deposits to customer milestones and refund terms.",
-                        "Operations backup owns event-day contacts and substitute sourcing.",
-                    ],
-                    [
-                        "P11 and P12 cover F1 and sponsor-allotment bundles.",
-                        "C2 documents hospitality access while owner verifies resale authority.",
-                        "Preserve written permissions for Masters or Final Four components.",
-                        "Reject bundles whose underlying rights cannot support promised delivery.",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Make institutional knowledge survive the owner's absence",
-                "body": (
-                    "A buyer values evidence that another qualified operator can reproduce "
-                    "the spread without borrowing the founder's personal credentials."
-                ),
-                "items": [
-                    "Record each suite's actual seating configuration, obstructed positions, catering minimums, parking allocation, and guest cutoff before splitting inventory.",
-                    "Keep a permissioned event-day supplier roster with alternate contacts; test the alternate before Super Bowl or World Cup travel begins.",
-                    "Tag playoff-strip commitments by advancement condition so automated repricing never mistakes a contingent right for deliverable inventory.",
-                    "Run a supervised owner-absence event cycle and record every escalation that still requires personal relationships or undocumented knowledge.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Pay for settled quality and review a scorecard that exposes hidden losses",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Contractor compensation should purchase reliable execution, not encourage "
-                    "inventory churn. For the Base pod, an illustrative monthly contract "
-                    "could pay C1 a $1,200 service retainer and C2 a $1,000 service "
-                    "retainer for explicitly bounded deliverables. Add a combined variable "
-                    "pool of up to 3% of positive event contribution after acquisition, "
-                    "exchange fees, markdowns, customer remedies, and event-specific "
-                    "fulfillment costs, but before the pool itself. Specify this ordering "
-                    "in the contract so the calculation cannot become circular. Pay "
-                    "the variable component after settlement reconciliation and a "
-                    "documented claims review, with a final true-up under agreed "
-                    "terms. These figures illustrate contract design, not additional "
-                    "profit on top of the canonical case; retainers, incentives, "
-                    "replacement coverage, and employer costs where applicable must "
-                    "fit inside its expense allowance. Do not impose arbitrary "
-                    "wage deductions or pass every exchange penalty directly to "
-                    "a worker. Assign errors by evidence, distinguish platform "
-                    "outages from controllable mistakes, and define commercially "
-                    "reasonable remediation. A contractor who flags a cancellation "
-                    "risk early should not lose the same quality score as one "
-                    "who conceals it. Separate speed, accuracy, and economic "
-                    "outcomes so a fast transfer cannot disguise an unprofitable "
-                    "purchase or an unresolved customer complaint."
-                ),
-                (
-                    "Hold a thirty-minute weekly operating review using the same "
-                    "event-cohort export every time. Start with unrestricted cash, "
-                    "committed acquisitions, customer refund obligations, and expected "
-                    "post-event exchange receipts; then examine contribution and service "
-                    "quality. Set an internal target of zero duplicate fills and "
-                    "100% evidence-backed transfer completion by contractual deadlines. "
-                    "For active event windows, contract an exception acknowledgment "
-                    "target such as fifteen minutes, with named backup coverage "
-                    "and an earlier internal transfer deadline than the exchange "
-                    "requires. These are negotiated service targets, not claims "
-                    "about vendor uptime. Track synchronization acknowledgment age "
-                    "and stop affected listings whenever their state cannot be "
-                    "verified. A POS auto-hold must demonstrably propagate across "
-                    "enabled exchanges; a local screen showing sold is insufficient. "
-                    "Model the cited 200% replacement-penalty exposure as a stress "
-                    "case wherever relevant contractual terms support it, rather "
-                    "than assuming every marketplace uses an identical penalty. "
-                    "Review unsold units by days to event, realized versus "
-                    "underwritten spread, postponement reserve coverage, and payout "
-                    "days past contractual expectation. Give each breach an owner, "
-                    "a cash impact, and a dated correction. Never accept "
-                    "ticket count or gross billings as a substitute for "
-                    "these operating measurements."
-                ),
-                (
-                    "Concentration discipline belongs in the weekly scorecard, not "
-                    "only the eventual sale presentation. Cap each corporate "
-                    "customer and each acquisition counterparty at 25% of "
-                    "trailing-twelve-month retained contribution and at 25% of "
-                    "forward committed acquisition exposure, using separate "
-                    "denominators for the two tests. Aggregate related entities "
-                    "and commonly controlled purchasing accounts. Also cap each "
-                    "exchange at 25% of unsettled receivables when the available "
-                    "channel mix permits that policy; if it does not, reduce "
-                    "commitments rather than labeling the risk diversified. "
-                    "Launch cohorts with tiny denominators will naturally fail "
-                    "percentage tests, so identify them explicitly as concentrated "
-                    "and stop increasing the dominant exposure until the book "
-                    "broadens. A buyer should see that history, not a "
-                    "retrospective rewrite. All-in pricing checks belong beside "
-                    "transfer accuracy: 16 CFR Part 464 addresses live-event "
-                    "ticket price presentation, while New York Article 25 "
-                    "adds jurisdiction-specific reseller requirements. The BOTS "
-                    "Act, 15 U.S.C. 45c, prohibits covered security-measure "
-                    "circumvention and certain sales involving tickets obtained "
-                    "that way. Contractors must use permitted inventory "
-                    "sources and approved integrations, never queue-bypass "
-                    "automation. Preserve acquisition provenance and listing "
-                    "price evidence so operational quality remains auditable "
-                    "after a contractor leaves or an exchange disputes fulfillment."
-                ),
-            ],
-            "table": {
-                "caption": "Weekly Contractor KPI, QA and Concentration Scorecard",
-                "headers": [
-                    "Measurement and operating target",
-                    "Evidence and accountable reviewer",
-                    "Compensation or capacity implication",
-                    "Required response when breached",
-                ],
-                "rows": [
-                    [
-                        "Zero duplicate fills across every enabled exchange connection.",
-                        "C1 supplies timestamped hold acknowledgments and order identifiers.",
-                        "Quality assessment distinguishes controllable errors from documented outages.",
-                        "Pause affected inventory and calculate contractual replacement exposure.",
-                    ],
-                    [
-                        "Every transfer completes before its documented contractual deadline.",
-                        "C2 or C1 preserves recipient and platform completion evidence.",
-                        "Variable compensation considers verified completion rather than transfer initiation.",
-                        "Escalate missing acceptance while substitute inventory remains obtainable.",
-                    ],
-                    [
-                        "Active-window exceptions receive acknowledgment within fifteen contracted minutes.",
-                        "Operations lead compares alert timestamps with response records.",
-                        "Repeated coverage gaps require revised scope or backup capacity.",
-                        "Activate named backup and document customer impact immediately.",
-                    ],
-                    [
-                        "Each customer remains within both specified 25% concentration limits.",
-                        "Owner aggregates related accounts using contribution and exposure ledgers.",
-                        "Sales incentives favor diversified settled contribution over concentrated bookings.",
-                        "Stop adding dominant exposure until the denominator genuinely broadens.",
-                    ],
-                    [
-                        "Each acquisition counterparty remains within specified 25% concentration limits.",
-                        "Owner reconciles supplier commitments with common ownership records.",
-                        "Sourcing rewards depend on authorized and economically diversified supply.",
-                        "Replace prospective commitments with documented alternative supplier capacity.",
-                    ],
-                    [
-                        "Each exchange holds at most 25% of unsettled receivables.",
-                        "Reconciliation seat ages balances against contractual settlement expectations.",
-                        "Liquidity restrictions override attractive but concentrated listing volume.",
-                        "Reduce commitments and investigate delayed post-event payout balances.",
-                    ],
-                    [
-                        "Every sampled listing presents required all-in price information.",
-                        "Operations reviewer archives customer-facing prices and jurisdiction checks.",
-                        "Pricing defects suspend affected campaigns until corrected evidence exists.",
-                        "Correct listings and assess already accepted customer transactions.",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Freeze the weekly evidence set",
-                    "action": "Export orders, inventory, transfers, supplier commitments, and bank activity.",
-                    "detail": "Use a common cutoff timestamp and preserve the source exports before modifying classifications.",
-                },
-                {
-                    "step": 2,
-                    "title": "Reconcile cash and event exposure",
-                    "action": "Tie exchange receivables and customer deposits to individual event cohorts.",
-                    "detail": "Separate available bank cash from amounts economically required for refunds, fulfillment, and unpaid suppliers.",
-                },
-                {
-                    "step": 3,
-                    "title": "Score service and contribution",
-                    "action": "Review the seven scorecard measures and calculate contractor variable compensation.",
-                    "detail": "Apply documented expense ordering, resolve attribution disputes, and preserve signed review notes.",
-                },
-                {
-                    "step": 4,
-                    "title": "Close exceptions with evidence",
-                    "action": "Assign each breach a responsible seat, deadline, and measurable correction.",
-                    "detail": "Carry unresolved items into the next review and restrict new commitments when liquidity or fulfillment remains impaired.",
-                },
-            ],
-        },
-        {
-            "heading": "3. Reconcile gross billings, retained contribution and event-cohort cash",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Use the Formula v2.0 retained-share bridge without confusing "
-                    "ticket transaction value with operator economics. Conservative "
-                    "gross operating billings of $220,000 less $132,000 of "
-                    "ticket and suite acquisition produce $88,000 retained "
-                    "contribution at 40%. Subtract $61,600 of remaining "
-                    "costs to reach $26,400 owner profit: 12% of "
-                    "gross billings and 30% of retained contribution. "
-                    "Base billings of $1,010,000 less $606,000 acquisition "
-                    "produce $404,000 retained contribution; $212,100 of "
-                    "remaining costs leave $191,900, or 19.0% gross "
-                    "and 47.5% retained margin. Scaled billings of "
-                    "$1,800,000 less $1,080,000 acquisition produce "
-                    "$720,000 retained contribution; $252,000 remaining "
-                    "costs leave $468,000, or 26% gross and 65% "
-                    "retained margin. Remaining costs must include exchange "
-                    "sell fees, unsold inventory and markdown slippage, "
-                    "expected cancellation or postponement clawback losses, "
-                    "labor, software, fulfillment, and financing charges "
-                    "where incurred. Do not deduct acquisition twice. "
-                    "Do not count hotel or venue transaction values "
-                    "outside the operator's contracted billings. These "
-                    "are exact annual planning reconciliations; the "
-                    "expense residuals are constraints to substantiate "
-                    "with detailed budgets, not evidence that any "
-                    "particular staffing contract automatically achieves "
-                    "the stated margin. A cost overrun changes "
-                    "forecast profit rather than disappearing inside "
-                    "the fixed 40% retained-share assumption."
-                ),
-                (
-                    "Build an event subledger that separates recognition from "
-                    "collection. Record customer deposits against unperformed "
-                    "obligations, supplier advances against undelivered components, "
-                    "ticket inventory where appropriate, and exchange receivables "
-                    "according to the actual contractual rights. Recognize "
-                    "revenue when the relevant performance obligation is "
-                    "satisfied under the adopted accounting policy, not "
-                    "simply when a buyer pays or an event date "
-                    "passes. Ticket-only delivery and a hosted hospitality "
-                    "package may have different fulfillment patterns. "
-                    "Assess principal-versus-agent presentation under ASC "
-                    "606 for each arrangement: control before transfer, "
-                    "responsibility for fulfillment, inventory risk, and "
-                    "pricing discretion require documented judgment. The "
-                    "scorecard's 40% retained contribution is an analytical "
-                    "net basis, not a universal instruction to report "
-                    "exactly 40% as financial-statement revenue. A "
-                    "principal arrangement may report gross revenue "
-                    "and acquisition cost separately; an agent "
-                    "arrangement reports its fee or commission. "
-                    "Maintain a bridge from either presentation "
-                    "to the canonical scorecard. When an exchange "
-                    "remits cash net of sell fees, reconstruct "
-                    "the gross settlement and record the fee "
-                    "once. Otherwise a bookkeeper can both understate "
-                    "billings and deduct the same fee again, "
-                    "creating a false explanation for an event's "
-                    "apparently weak retained margin."
-                ),
-                (
-                    "Close cohorts by event, purchase batch, channel, and "
-                    "package component, retaining both underwriting and "
-                    "actual outcomes. Treat a markdown as reduced "
-                    "realized proceeds or an explicitly bridged planning "
-                    "variance, never both. Unsold expired inventory "
-                    "requires the appropriate write-down; recoverable "
-                    "postponed inventory needs a supported recoverability "
-                    "assessment rather than an automatic full loss. "
-                    "Distinguish expected clawback expense and related "
-                    "obligations from a management cash reserve: "
-                    "earmarking cash does not itself create another "
-                    "expense. Post-event payout delay affects liquidity "
-                    "and any actual financing cost, while a "
-                    "doubtful receivable requires a separate collection "
-                    "assessment. Maintain a rolling thirteen-week "
-                    "cash forecast and stress a thirty-day "
-                    "settlement delay alongside simultaneous event "
-                    "postponements. The stated $10,000-$50,000 startup "
-                    "capital range does not automatically finance "
-                    "the Scaled case's acquisition pipeline. Fund "
-                    "timing gaps through retained cash, genuine "
-                    "supplier terms, or appropriately priced facilities "
-                    "and include their charges in forecasts. "
-                    "Monthly operating overhead within the "
-                    "$1,800-$11,000 planning range excludes the "
-                    "separate inventory funding requirement. A "
-                    "buyer should be able to trace a "
-                    "single Super Bowl package from signed "
-                    "scope through supplier payment, customer "
-                    "delivery, final settlement, and the "
-                    "remaining refund exposure without asking "
-                    "the owner to reconstruct it orally."
-                ),
-            ],
-            "table": {
-                "caption": "Canonical Formula v2.0 Bridge and Cohort Accounting Controls",
-                "headers": [
-                    "Case or ledger control",
-                    "Gross and acquisition treatment",
-                    "Retained contribution and expense bridge",
-                    "Profit or operating evidence",
-                ],
-                "rows": [
-                    [
-                        "Conservative case supports one employee and two contractors.",
-                        "$220,000 gross billings less $132,000 acquisition cost annually.",
-                        "$88,000 retained contribution less $61,600 remaining annual costs.",
-                        "$26,400 owner profit equals 12% gross and 30% retained.",
-                    ],
-                    [
-                        "Base case supports one employee and two contractors.",
-                        "$1,010,000 gross billings less $606,000 acquisition cost annually.",
-                        "$404,000 retained contribution less $212,100 remaining annual costs.",
-                        "$191,900 owner profit equals 19.0% gross and 47.5% retained.",
-                    ],
-                    [
-                        "Scaled case supports two employees and three contractors.",
-                        "$1,800,000 gross billings less $1,080,000 acquisition cost annually.",
-                        "$720,000 retained contribution less $252,000 remaining annual costs.",
-                        "$468,000 owner profit equals 26% gross and 65% retained.",
-                    ],
-                    [
-                        "Exchange settlement reconstruction prevents duplicated sell-fee expense recognition.",
-                        "Rebuild gross proceeds when exchange remittances arrive net.",
-                        "Record exchange fees once within remaining operating costs.",
-                        "Tie remittance identifiers to bank deposits and receivable balances.",
-                    ],
-                    [
-                        "Suite cohorts retain unsold-seat exposure and catering obligations.",
-                        "Allocate whole-suite acquisition consistently across actual sale components.",
-                        "Recognize expired inventory losses without duplicating acquisition deductions.",
-                        "Show occupancy, realized proceeds, and remaining supplier commitments.",
-                    ],
-                    [
-                        "Hospitality cohorts separate deposits from satisfied performance obligations.",
-                        "Assess component control before selecting gross or net presentation.",
-                        "Bridge accounting revenue to the analytical 40% retained basis.",
-                        "Preserve signed scope, delivery evidence, and component refund terms.",
-                    ],
-                    [
-                        "Liquidity forecasts distinguish delayed cash from additional economic expense.",
-                        "Track acquisition payments before unrestricted post-event settlements arrive.",
-                        "Include actual financing charges and supported expected clawback losses.",
-                        "Stress thirty-day delays within a rolling thirteen-week forecast.",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Verify the book before increasing event commitments",
-                "body": (
-                    "Complete these four checks before expanding a tentpole allocation, "
-                    "adding permanent payroll, or presenting earnings to a buyer."
-                ),
-                "items": [
-                    "Reconcile all three canonical cases from gross billings through acquisition and remaining costs; substantiate every expense residual with the operating budget.",
-                    "Verify auto-hold propagation, permitted acquisition provenance, required price presentation, and transfer deadlines for each enabled exchange.",
-                    "Demonstrate that thirteen-week cash survives the selected delay and clawback stress without spending funds needed for existing fulfillment obligations.",
-                    "Test customer, acquisition-counterparty, and exchange concentration against the documented 25% limits and disclose any concentrated launch cohort.",
-                ],
-            },
-        },
-        {
-            "heading": "4. Price transferable earnings, document ownership and preserve the cash-cow option",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Build the transfer file before asking anyone to "
-                    "pay a premium. Obtain signed confidentiality "
-                    "terms, a present assignment of commissioned "
-                    "copyright interests, and delivery of editable "
-                    "source materials from each contractor. Under "
-                    "17 U.S.C. 204(a), a copyright ownership "
-                    "transfer generally requires a signed writing "
-                    "from the owner or an authorized agent. "
-                    "Do not rely exclusively on a work-for-hire "
-                    "label for contractor-created software, pricing "
-                    "scripts, or operating manuals. Identify pre-existing "
-                    "contractor tools and secure adequate licenses "
-                    "for anything embedded in the deliverable. "
-                    "Copyright ownership does not itself transfer "
-                    "exchange accounts, customer permissions, supplier "
-                    "contracts, or venue entitlements. List assignment "
-                    "and change-of-control provisions separately, then "
-                    "obtain required counterparties' written permissions. "
-                    "Use business-controlled email, role-based access, "
-                    "documented recovery procedures, and individual "
-                    "credentials; transfer administration through permitted "
-                    "platform procedures rather than sharing passwords. "
-                    "Retain corporate purchasing histories only "
-                    "within the applicable contractual and privacy "
-                    "permissions. A clean data room includes "
-                    "event-cohort statements, bank reconciliations, "
-                    "tax filings, rights provenance, contractor "
-                    "agreements, incident history, and customer "
-                    "renewal evidence. It also records what "
-                    "cannot transfer. A buyer discounts "
-                    "unassignable access and personal favors "
-                    "even when those relationships generated "
-                    "excellent historical ticket spreads."
-                ),
-                (
-                    "Value the operation on normalized transferable "
-                    "earnings rather than gross ticket billings. "
-                    "For preliminary small-business underwriting, "
-                    "use an explicitly illustrative 2.0-3.0 "
-                    "times normalized seller's discretionary "
-                    "earnings for an owner-operated book "
-                    "and 3.0-4.0 times normalized EBITDA "
-                    "for a genuinely manager-run business. "
-                    "These are negotiation sensitivities, not "
-                    "observed transaction comparables or an "
-                    "automatic premium for using a POS. "
-                    "Before applying them, reconcile owner "
-                    "profit to the selected earnings "
-                    "definition, adding back only evidenced "
-                    "eligible items and preserving recurring "
-                    "labor, claims, and replacement costs. "
-                    "If Base owner profit of $191,900 "
-                    "is treated as an SDE proxy "
-                    "with no further adjustments, the "
-                    "illustrative enterprise-value range is "
-                    "$383,800-$575,700. If an absentee "
-                    "buyer must spend an additional "
-                    "$90,000 annually on fully loaded "
-                    "replacement management, the simplified "
-                    "earnings proxy becomes $101,900; "
-                    "at 3.0-4.0 times, the range "
-                    "is $305,700-$407,600. This proxy "
-                    "is not audited EBITDA without "
-                    "the full reconciliation. Apply "
-                    "replacement expense only for duties "
-                    "not already funded in the "
-                    "pod. Strong margins do not "
-                    "justify counting the same manager "
-                    "twice or pretending the founder's "
-                    "sales work has no economic cost."
-                ),
-                (
-                    "Negotiate price, working capital, and contingent "
-                    "risk as separate schedules. Enterprise "
-                    "value is not closing cash: "
-                    "debt, agreed cash treatment, normal "
-                    "working capital, transaction expenses, "
-                    "escrows, and contingent consideration "
-                    "change proceeds. Define whether "
-                    "ticket inventory, supplier advances, "
-                    "exchange receivables, customer deposits, "
-                    "and refund obligations enter the "
-                    "working-capital calculation. Prevent deposits "
-                    "from appearing as free seller "
-                    "cash while the buyer inherits "
-                    "all fulfillment costs. Set any "
-                    "earnout against precisely defined "
-                    "settled cohort contribution, with "
-                    "rules for cancellation losses, "
-                    "channel migration, related-party sales, "
-                    "and buyer-controlled marketing spend. "
-                    "A headline multiple inflated "
-                    "by an uncertain earnout may "
-                    "deliver less value than a "
-                    "lower cash offer. The premium "
-                    "case rests on diversified repeat "
-                    "corporate demand, transferable supplier "
-                    "rights, low founder dependence, "
-                    "clean claims history, and "
-                    "reproducible settlement records. If "
-                    "those conditions do not support "
-                    "an attractive offer, retain "
-                    "the cash-cow structure: distribute "
-                    "only cash above event commitments, "
-                    "tax obligations, expected remedies, "
-                    "and the stress liquidity buffer. "
-                    "Compare holding the business "
-                    "with sale proceeds after "
-                    "taxes and transition workload, "
-                    "not with a promotional "
-                    "multiple. Revisit the decision "
-                    "after each full event "
-                    "season using actual owner "
-                    "hours and cash distributions."
-                ),
-            ],
-            "table": {
-                "caption": "Transferability Evidence, Illustrative Multiples and Closing Adjustments",
-                "headers": [
-                    "Value driver or underwriting case",
-                    "Evidence required before giving credit",
-                    "Illustrative valuation or treatment",
-                    "Failure mode that reduces proceeds",
-                ],
-                "rows": [
-                    [
-                        "Base owner-operated book uses a clearly reconciled SDE proxy.",
-                        "Substantiate $191,900 earnings and every proposed normalization adjustment.",
-                        "At 2.0-3.0 times, enterprise value spans $383,800-$575,700.",
-                        "Unrecorded founder work or recurring expenses invalidate normalized earnings.",
-                    ],
-                    [
-                        "Base absentee ownership requires incremental fully loaded management coverage.",
-                        "Document $90,000 replacement cost beyond already funded staffing.",
-                        "$101,900 proxy at 3.0-4.0 times yields $305,700-$407,600.",
-                        "Double-counted managers or omitted sales duties distort valuation materially.",
-                    ],
-                    [
-                        "Contractor-created intellectual property requires documented ownership and licenses.",
-                        "Collect signed assignments and schedules of retained background tools.",
-                        "Treat complete ownership evidence as necessary for transferable operations.",
-                        "Missing source rights force rebuilding or renegotiating contractor permissions.",
-                    ],
-                    [
-                        "Supplier and venue relationships require actual contractual transferability.",
-                        "Review assignment clauses and obtain required written counterparty permissions.",
-                        "Credit recurring earnings only where continued fulfillment is supportable.",
-                        "Personal allocations disappear when the founding operator exits relationships.",
-                    ],
-                    [
-                        "Customer diversification supports a more durable repeat-purchase earnings base.",
-                        "Verify related-party aggregation and documented 25% concentration tests.",
-                        "Use retention evidence to support sensitivity assumptions during negotiation.",
-                        "One sponsor departure removes disproportionate contribution after the transaction.",
-                    ],
-                    [
-                        "Closing working capital includes event obligations and settlement timing.",
-                        "Reconcile inventory, advances, receivables, deposits, and refund liabilities.",
-                        "Define negotiated adjustments separately from the headline enterprise value.",
-                        "Seller withdraws deposits while buyer inherits unfunded event commitments.",
-                    ],
-                    [
-                        "Contingent consideration follows settled contribution rather than gross bookings.",
-                        "Specify expense rules, cancellation treatment, and buyer operating discretion.",
-                        "Discount uncertain earnouts when comparing immediate cash sale alternatives.",
-                        "Broad buyer discretion makes apparently attractive contingent proceeds unreachable.",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": "A premium ticket book is a transferable system of settled spreads, not a founder's memory of who owes them seats.",
-    "diagram_id": "diag-06",
-    "action_checklist": [
-        "Assign P01-P12 to the three-person pod, document backup coverage, and reserve the five-person structure for contribution-supported capacity expansion.",
-        "Execute contractor scopes with bounded deliverables, service targets, compensation ordering, classification review, and signed intellectual-property assignments.",
-        "Run a weekly evidence-backed scorecard covering duplicate fills, transfer completion, exception response, price presentation, payout aging, and 25% concentration limits.",
-        "Reconcile the $26,400, $191,900, and $468,000 annual owner-profit cases to the 40% retained-share bridge without duplicating acquisition or exchange fees.",
-        "Close event cohorts and maintain a thirteen-week liquidity forecast that separately stresses inventory commitments, clawback losses, and post-event payout delays.",
-        "Prepare a transferability data room and compare illustrative earnings-based sale proceeds with owner-operated cash distributions after funding outstanding event obligations.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "15 U.S.C. 45c — Unfair and deceptive acts and practices relating to circumvention of ticket access controls",
-            "url": "https://www.law.cornell.edu/uscode/text/15/45c",
-            "relevance": (
-                "Prohibits covered circumvention of ticket-issuer security measures and "
-                "specified sales involving improperly obtained tickets; informs acquisition "
-                "provenance, contractor sourcing rules, and permitted automation."
-            ),
-        },
-        {
-            "title": "16 CFR Part 464 — Rule on Unfair or Deceptive Fees",
-            "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-D/part-464",
-            "relevance": (
-                "Establishes total-price presentation and related requirements for live-event "
-                "ticket offers, including treatment of mandatory charges and specified exclusions."
-            ),
-        },
-        {
-            "title": "New York Arts and Cultural Affairs Law, Article 25 — Tickets to Places of Entertainment",
-            "url": "https://www.nysenate.gov/legislation/laws/ACA/A25",
-            "relevance": (
-                "Provides New York ticket-reseller licensing, disclosure, refund, and related "
-                "operating requirements to evaluate for covered transactions and activities."
-            ),
-        },
-        {
-            "title": "17 U.S.C. 204(a) — Execution of Transfers of Copyright Ownership",
-            "url": "https://www.law.cornell.edu/uscode/text/17/204",
-            "relevance": (
-                "Generally requires a signed writing for copyright ownership transfers; "
-                "supports written assignments for contractor-created scripts and manuals."
-            ),
-        },
-        {
-            "title": "17 U.S.C. 101 — Definitions, including Work Made for Hire",
-            "url": "https://www.law.cornell.edu/uscode/text/17/101",
-            "relevance": (
-                "Defines the limited circumstances for work-made-for-hire treatment, "
-                "supporting express assignments rather than reliance on contractual labels alone."
-            ),
-        },
-        {
-            "title": "29 U.S.C. 203 — Fair Labor Standards Act Definitions",
-            "url": "https://www.law.cornell.edu/uscode/text/29/203",
-            "relevance": (
-                "Defines employee and employ for federal wage-and-hour analysis; "
-                "actual working arrangements require review beyond a contractor designation."
-            ),
-        },
-        {
-            "title": "26 U.S.C. 3121(d) — Employee Definition for Federal Employment Taxes",
-            "url": "https://www.law.cornell.edu/uscode/text/26/3121",
-            "relevance": (
-                "Includes common-law employee treatment for employment-tax purposes, "
-                "requiring staffing budgets to reflect the actual worker relationship."
-            ),
-        },
-    ],
-}
+CHAPTER_11 = {'id': 'Q11',
+ 'chapter_id': 'Q11',
+ 'chapter_number': 11,
+ 'question_number': 11,
+ 'slug': 'concert-pricing-dynamic-platinum-fees',
+ 'question_prompt': 'How is concert ticket pricing set, and who captures the money from face value, fees '
+                    'and dynamic pricing?',
+ 'kicker': 'Q11 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Concert Pricing Mechanics: Dynamic Pricing, Platinum Seats and Fees',
+ 'subtitle': 'Pollstar tour grosses, artist share, 9-second sell-outs, dynamic and Official Platinum '
+             'pricing, Eras Tour and Cowboy Carter case studies, the Ticketmaster crash, fee stacks after '
+             'face value, and promoter resale cuts',
+ 'layout_template': 'chapter_opener',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Practitioners agree the concert price war is fought over the gap between polite '
+                      'face value and what the market will bear. More than half of major-event inventory '
+                      'never reaches public sale, brokers historically captured markups averaging 49%, and '
+                      'Live Nation CEO Michael Rapino openly tells artists to price the house better. '
+                      'Artists sign off on dynamic and Official Platinum pricing, which now converts '
+                      'pre-sale seats mid-checkout, turning a $299 floor seat into $799. Fees stack '
+                      "separately: a 27% average primary fee in GAO's sample, 40% to 82% in artist "
+                      'testimony, scaling with ticket price and rebated to venues. The disagreements '
+                      'center on blame and mechanism. Ticketmaster denies algorithmic surge pricing, while '
+                      'promoters and buyers describe millisecond repricing. Brokers also face fee drag on '
+                      "every resale and outright losses when demand collapses, as Beyonce's $35 resale "
+                      'floor showed.',
+ 'key_metrics': [{'label': 'Major-event tickets that never reach the public sale',
+                  'metric': 'Major-event tickets that never reach the public sale',
+                  'value': '54% (16% insider holds + 38% pre-sales)',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'New York Attorney General three-year investigation average across major '
+                             'events; pre-sales alone consumed up to 70% at some top shows',
+                  'source': 'Follow The Why ([cmeE4rZAlVk @ 00:00:52])'},
+                 {'label': 'Platinum share and average price on the 2022 Springsteen tour',
+                  'metric': 'Platinum share and average price on the 2022 Springsteen tour',
+                  'value': 'About 11% platinum; $262 average ticket; some platinum seats at $5,000',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Ticketmaster's own defense of platinum pricing when Springsteen seats hit "
+                             '$5,000',
+                  'source': 'Follow The Why ([cmeE4rZAlVk @ 00:05:54])'},
+                 {'label': 'Promoter margin on concert revenue',
+                  'metric': 'Promoter margin on concert revenue',
+                  'value': '1% to 5% of all show revenue; artists take 85% to 90% on bigger shows',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Independent promoter's account of show-level economics at Live Nation and "
+                             'for promoters generally',
+                  'source': 'Making It Network ([zwZDxD4dEpY @ 00:08:44])'},
+                 {'label': 'Ticketmaster fee add-on reported by a touring band',
+                  'metric': 'Ticketmaster fee add-on reported by a touring band',
+                  'value': 'Typically 40% to 50% on top of base price; one show hit 82%',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Clyde Lawrence's Senate testimony, replayed and analyzed; the band does not "
+                             'know the fee until on-sale',
+                  'source': 'Scott Cramer ([kFsH01UthzA @ 00:08:46])'}],
+ 'sections': [{'section_number': 1,
+               'heading': 'The Practitioner Consensus',
+               'paragraphs': ['Every operator in this lineup starts from the same arithmetic. Superstar '
+                              'demand dwarfs the seats that ever reach a public checkout. Follow The Why '
+                              "cites the New York Attorney General's three-year probe, which found that "
+                              '54% of tickets to major events never hit the general public. Insider holds '
+                              'swallowed 16% and pre-sales took 38%, and pre-sales at some top shows ate '
+                              'up to 70% of inventory [cmeE4rZAlVk @ 00:00:52]. Inside Edition framed the '
+                              'Eras on-sale as roughly 20 million people chasing 200,000 tickets '
+                              '[qQIN_PDMcPA @ 00:01:54]. Prof AI Unfiltered logged 3.5 million Verified '
+                              'Fan registrations against about 1.5 million codes, with 2 million '
+                              'wait-listed [enPVz7BsM7Q @ 00:00:52]. The consensus conclusion is blunt: '
+                              'face value is set politely below what the market will pay, and that gap '
+                              'does not vanish. Follow The Why says somebody always collects it. For years '
+                              'the collector was the broker, reselling at an average 49% above face and '
+                              'sometimes more than 1,000% [cmeE4rZAlVk @ 00:05:21]. Making It Network put '
+                              'a hard example on it. A Shawn Mendes ticket bought at $440 flipped for '
+                              '$1,900, roughly $1,500 of pure spread captured outside the show. That is '
+                              'about three times what the artist, promoter and venue took from the same '
+                              'seat [zwZDxD4dEpY @ 00:03:22].',
+                              'The second point of agreement is that the artist side, not the box office, '
+                              'signs off on the pricing architecture. Making It Network, an independent '
+                              'promoter, says artists tell promoters and venues which ticket prices to '
+                              'offer. Dynamic and platinum ticketing only run if the artist approves them '
+                              '[zwZDxD4dEpY @ 00:07:00]. Scott Cramer reports the same chain on the Harry '
+                              "Styles Madison Square Garden residency. Ticketmaster's own page says "
+                              "platinum prices are set by the event organizer, and Styles' team had to "
+                              'approve platinum before it went live [kFsH01UthzA @ 00:02:14]. The CBS News '
+                              'guest, a Northeastern music professor, supplies the motive. When tickets '
+                              'are scarce, scalpers flip them on the gray market and that extra profit '
+                              'never reaches the people who staged the show. That gives artists an '
+                              'economic incentive to price high enough that the premium lands with the '
+                              'tour [IF-yvujBqTU @ 00:02:34]. Live Nation CEO Michael Rapino, quoted by '
+                              'Making It Network, states the playbook outright. His advice is to price the '
+                              'house better, quit being bashful and charge more if fans will pay more. He '
+                              'then wants delivery locked down with verified technology so the roughly $8 '
+                              'billion secondary pot moves back toward artists [zwZDxD4dEpY @ 00:05:15]. '
+                              'Follow The Why cites the Springsteen proof case: platinum hit $5,000, yet '
+                              'only about 11% of seats were platinum and the average sold at $262 '
+                              '[cmeE4rZAlVk @ 00:05:54].',
+                              'Fees are the third consensus layer, and every speaker treats them as a '
+                              "separate profit lane stacked on face value. Business Made Simple's worked "
+                              'example turns an $80 listing into $106.50 at checkout. The gap comes from a '
+                              '$14 service fee, a $5 facility charge, a $4 order fee and $3.50 in delivery '
+                              "and other charges [VBp4zpS7F3o @ 00:00:57]. Why It Costs reports that GAO's "
+                              '2018 sample put primary fees at an average 27% of base price, with one '
+                              'sampled event reaching 58% [tH7bLaJI6ZE @ 00:02:17]. Venues typically keep '
+                              'the whole facility fee, and Live Nation claims venues normally receive '
+                              'about two-thirds of the service charge [tH7bLaJI6ZE @ 00:03:01]. Making It '
+                              'Network explains why fees balloon alongside dynamic pricing. Service fees '
+                              'run on a scale tied to ticket price, so the higher the ticket, the higher '
+                              'the fee, and venues holding the Ticketmaster contract take a rebate '
+                              '[zwZDxD4dEpY @ 00:07:43]. That fee lane matters because the show itself is '
+                              'thin. Artists on big shows take 85% to 90% of revenue, and promoter margins '
+                              "sit between 1% and 5% [zwZDxD4dEpY @ 00:08:30]. Live Nation's 3.3% Concerts "
+                              'adjusted margin on $20.9 billion of 2025 revenue echoes the same point '
+                              '[tH7bLaJI6ZE @ 00:06:48]. Profit Mechanics sums it up: the ticket is the '
+                              'bait, and the real money sits in fees, resale, sponsors and beer '
+                              '[p8peX6mgbrw @ 00:00:00].'],
+               'table': {'caption': 'Where practitioners agree the concert price is actually set and '
+                                    'captured',
+                         'headers': ['Consensus Point',
+                                     'What Practitioners Report',
+                                     'Operator Implication',
+                                     'Expert Source'],
+                         'rows': [['Supply is carved up before the public queue opens',
+                                   '54% of major-event tickets never reach the public: 16% holds, 38% '
+                                   'pre-sales',
+                                   'The public on-sale is a raffle for leftovers, so inventory is decided '
+                                   'before anyone clicks',
+                                   'Follow The Why ([cmeE4rZAlVk @ 00:00:52])'],
+                                  ['Face value is deliberately set below market value',
+                                   'Artists keep face value polite, and brokers historically resold at a '
+                                   '49% average markup',
+                                   'The gap between printed price and market price is the core profit pool '
+                                   'everyone fights over',
+                                   'Follow The Why ([cmeE4rZAlVk @ 00:05:21])'],
+                                  ['The artist approves the dynamic and platinum pricing tools',
+                                   'The artist and their team must sign off before promoters run dynamic '
+                                   'or platinum ticketing',
+                                   'Price architecture traces back to management decisions, not the '
+                                   'ticketing platform alone',
+                                   'Making It Network ([zwZDxD4dEpY @ 00:07:00])'],
+                                  ['Platinum is priced by the organizer, not by surge pricing',
+                                   'Ticketmaster says the event organizer sets platinum prices and denies '
+                                   'algorithmic surge pricing',
+                                   'Early queue buyers clear the cheap seats, and later buyers hit '
+                                   'platinum seats right next door',
+                                   'Scott Cramer ([kFsH01UthzA @ 00:01:41])'],
+                                  ['Service fees scale upward with the ticket price',
+                                   'The service fee follows a price scale, and venue contract holders take '
+                                   'a rebate from it',
+                                   'Every dynamic price increase automatically inflates the fee take '
+                                   'collected on the same seat',
+                                   'Making It Network ([zwZDxD4dEpY @ 00:07:43])'],
+                                  ['The concert show itself runs on a thin margin',
+                                   'The Concerts segment posted a 3.3% adjusted margin on $20.9 billion of '
+                                   '2025 revenue',
+                                   'Promoter profit comes from fees, sponsors and resale rather than from '
+                                   'door revenue',
+                                   'Why It Costs ([tH7bLaJI6ZE @ 00:06:48])'],
+                                  ['Different pre-sale channels carry different price policies',
+                                   'Fan club, credit card and other pre-sales showed different prices for '
+                                   'Cowboy Carter seats',
+                                   'The same section can show more than three times the price depending on '
+                                   'purchase timing',
+                                   'CBS News ([IF-yvujBqTU @ 00:01:22])']]}},
+              {'section_number': 2,
+               'heading': 'Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ["thumbsuprun walks through how Ticketmaster's dynamic engine crept earlier "
+                              'into the sale cycle. It started by repricing events close to selling out, '
+                              'then moved to a couple of weeks after on-sale, then a few days after, then '
+                              'into the general sale. It finally reached the pre-sales themselves, where '
+                              'waiting-room traffic tells the platform immediately what buyers will spend '
+                              '[TpXJCfuFf4o @ 00:02:33]. The mechanic that hits buyers hardest is '
+                              'conversion. Seats assigned a pre-sale face value get pulled and relisted as '
+                              'Official Platinum, so a $299 floor seat in a prime section comes back at '
+                              'three to five times the price. A buyer who clicked it at $299 sees $799 '
+                              'after a page error and refresh [TpXJCfuFf4o @ 00:05:02]. Platinum is now '
+                              'appearing in upper bowls and back sections, anywhere the platform thinks it '
+                              'can pull extra value [TpXJCfuFf4o @ 00:06:20]. Making It Network describes '
+                              'the automation. When the queue is deep, the algorithm can flex every seat '
+                              'in the house within milliseconds without anyone touching it manually '
+                              "[zwZDxD4dEpY @ 00:09:15]. SeatGeek and AEG's AXS run the same technology "
+                              '[zwZDxD4dEpY @ 00:10:14]. Profit Mechanics puts a number on the climb: a '
+                              'ticket that starts at $80 can hit $200 by evening [p8peX6mgbrw @ 00:01:54]. '
+                              'Slow sellers get a quiet discount framed as a special offer, while hot '
+                              'sellers get a surge framed as market demand [p8peX6mgbrw @ 00:02:48].',
+                              'The fee math practitioners quote is specific. Scott Cramer replays Clyde '
+                              "Lawrence's Senate testimony. Ticketmaster fees typically add 40% to closer "
+                              'to 50% on top of base price, one show hit 82%, and the band never knows the '
+                              'number until on-sale [kFsH01UthzA @ 00:08:46]. On a $35 base ticket the fan '
+                              'pays about $45. Roughly $10 comes off as the ticket fee and $3 to $4 as a '
+                              'facility fee, leaving about $31, of which the band nets 40% to 70% '
+                              '[kFsH01UthzA @ 00:10:09]. Cramer also logs last-screen jumps. A Shania '
+                              'Twain seat listed at $227 became $291 at final checkout, a 30% bump '
+                              '[kFsH01UthzA @ 00:11:23]. Two Olivia Dean tickets at $155 each landed at '
+                              '$388 instead of $310 after $35.25 in fees and a $7 order processing fee '
+                              '[kFsH01UthzA @ 00:11:59]. Making It Network runs the venue rebate math from '
+                              'Nissan Stadium. A $400 Stevie Nicks and Billy Joel ticket carried a $75 '
+                              'service fee. The venue likely keeps at least half, about $40, and that '
+                              'rebate multiplies across 60,000 seats [zwZDxD4dEpY @ 00:12:36]. Profit '
+                              'Mechanics scales the same logic: a $30 fee stack across 20,000 seats is '
+                              '$600,000 collected before a note is played [p8peX6mgbrw @ 00:03:59].',
+                              'For brokers, the resale lane is where the spread lives, and where the '
+                              'platform taxes it twice. Making It Network shows the side-hustle flips. Two '
+                              'tickets bought for $241.40 total resold on StubHub at $895 each, and a pair '
+                              'bought for $880 resold for $3,420 [zwZDxD4dEpY @ 00:03:22]. Scott Cramer '
+                              'explains the fee stack that eats into those flips. A $50 listing becomes '
+                              '$75 after fees, so the seller must ask $75 just to break even. The next '
+                              'buyer then pays another $25-plus in fees, and every further resale repeats '
+                              'the cycle while the artist sees nothing [kFsH01UthzA @ 00:08:02]. Why It '
+                              "Costs cites GAO's sample averaging secondary fees of 31% of listed price "
+                              'before fees, and warns that weak demand leaves resellers with losses '
+                              '[tH7bLaJI6ZE @ 00:08:16]. Firstpost shows that downside live. With less '
+                              "than two weeks to go, Beyonce's Cowboy Carter opener in Los Angeles still "
+                              'had over 3,200 unsold seats. Resale fell as low as $35, and MetLife carried '
+                              'more than 5,500 unsold [nAgJ_xD_wuE @ 00:00:16]. Profit Mechanics adds that '
+                              'official resale platforms charge the seller a listing commission and the '
+                              'buyer a service fee. Some tours also hold back the best seats to release '
+                              'later at resale prices [p8peX6mgbrw @ 00:05:24]. Resale data then feeds '
+                              "straight back into the next tour's dynamic pricing [p8peX6mgbrw @ "
+                              '00:06:15].'],
+               'table': {'caption': 'Exact pricing levers, numbers and execution details practitioners '
+                                    'quoted',
+                         'headers': ['Lever', 'Exact Numbers', 'Execution Detail', 'Expert Source'],
+                         'rows': [['Official Platinum conversion during the pre-sale',
+                                   'A $299 floor seat relisted at $799, or three to five times face',
+                                   'Seats are pulled from the pre-sale allocation mid-checkout after a '
+                                   'page error and refresh',
+                                   'thumbsuprun ([TpXJCfuFf4o @ 00:05:02])'],
+                                  ['Face-value drift after the waiting room',
+                                   'A $50 ticket becomes a $65 or $70 ticket by checkout',
+                                   'The first pre-sale wave sees true face value before the platform '
+                                   'gathers demand data',
+                                   'thumbsuprun ([TpXJCfuFf4o @ 00:07:15])'],
+                                  ['Checkout fee stack on a single order',
+                                   'An $80 listing becomes $106.50 through $14, $5, $4 and $3.50 charges',
+                                   'The order fee stays at $4 per order, so two tickets total $209 all-in',
+                                   'Business Made Simple ([VBp4zpS7F3o @ 00:05:19])'],
+                                  ['Demand-triggered repricing of a section',
+                                   'Selling 600 of 1,000 seats in the first hour lifts $80 to $95',
+                                   'If only 100 sell, the seller holds the price or even lowers it',
+                                   'Business Made Simple ([VBp4zpS7F3o @ 00:07:31])'],
+                                  ['Venue rebate on the service fee',
+                                   'A $75 fee on a $400 ticket, with roughly $40 going to the venue',
+                                   'Multiply the per-ticket rebate by 60,000 stadium seats to see the '
+                                   "venue's take",
+                                   'Making It Network ([zwZDxD4dEpY @ 00:12:36])'],
+                                  ['Promoter fee-sharing with the headlining artist',
+                                   'An estimated $10 to $20 per ticket, or $31 million to $62 million over '
+                                   'the tour',
+                                   'Messina reportedly shares service fee, parking and sponsorship revenue '
+                                   'with the artist',
+                                   'Making It Network ([zwZDxD4dEpY @ 00:19:26])'],
+                                  ['Resale buyer fee on top of the asking price',
+                                   'An $80 ticket listed at $150 plus a 25% buyer fee comes to $187.50',
+                                   'Compare all-in totals across resale sites rather than the headline '
+                                   'listing prices',
+                                   'Business Made Simple ([VBp4zpS7F3o @ 00:08:42])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Beat the Repricing Window and Read the Real Number',
+                           'body': 'Practitioners repeat four tactics for buying ahead of conversion, '
+                                   'catching last-screen jumps and spotting tours where the flip is dead.',
+                           'items': ['Hit the very first pre-sale wave. Ticketmaster still needs demand '
+                                     'data before it converts seats to Official Platinum or raises face '
+                                     'values, so early entrants see true face value [thumbsuprun — '
+                                     'TpXJCfuFf4o @ 00:06:35]',
+                                     'Re-verify the price at the payment screen. On a Rolling Stones '
+                                     'general admission sale, the price jumped $50, $70 or $90 between '
+                                     'cart and checkout, and buyers who assumed the cart price held got '
+                                     'caught [thumbsuprun — TpXJCfuFf4o @ 00:09:44]',
+                                     'Run every deal on the all-in number. Add every line, divide by face '
+                                     'value, and compare all-in totals across sites, because that single '
+                                     'number is the only one that leaves your account [Business Made '
+                                     'Simple — VBp4zpS7F3o @ 00:09:17]',
+                                     "Flag face-value-capped tours before buying to flip. Noah Kahan's "
+                                     'model allows resale only on Ticketmaster at base price, so the '
+                                     'seller eats the original fees and the markup disappears [Scott '
+                                     'Cramer — kFsH01UthzA @ 00:23:58]']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Size the real public inventory',
+                              'action': 'Discount the advertised capacity for holds and pre-sale rungs '
+                                        'before estimating scarcity.',
+                              'detail': 'Assume roughly 16% goes to insider holds and 38% to pre-sales, '
+                                        'and treat the general sale as leftovers. A 20,000-seat arena can '
+                                        'open to the public with only a few thousand seats [Follow The Why '
+                                        '— cmeE4rZAlVk @ 00:00:52]'},
+                             {'step': 2,
+                              'title': 'Enter the earliest waiting room available',
+                              'action': 'Get into the first pre-sale queue as early as possible to lock in '
+                                        'true face value.',
+                              'detail': "Ticketmaster's pricing gets more aggressive as each wave reveals "
+                                        'demand, so buy the first wave before seats convert to platinum or '
+                                        'face values climb [thumbsuprun — TpXJCfuFf4o @ 00:09:06]'},
+                             {'step': 3,
+                              'title': 'Model the full fee stack before committing',
+                              'action': 'Load 40% to 50% primary fees, with outliers up to 82%, into the '
+                                        'cost basis, and add the resale-side fees again.',
+                              'detail': 'A $50 ticket becomes $75 after fees, so the seller must list at '
+                                        "$75 just to break even before the next buyer's fees land [Scott "
+                                        'Cramer — kFsH01UthzA @ 00:08:46]'},
+                             {'step': 4,
+                              'title': 'Check live resale demand before listing',
+                              'action': 'Compare unsold primary inventory and current resale floors before '
+                                        'pricing a flip.',
+                              'detail': 'Cowboy Carter resale fell to a reported $35 while thousands of '
+                                        'primary seats stayed unsold, so soft demand can turn a premium '
+                                        'buy into a loss [Firstpost — nAgJ_xD_wuE @ 00:02:54]'}]},
+              {'heading': '3. Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['Price authority is the first fault line. Making It Network, speaking as an '
+                              "independent promoter, is blunt: the artist's agent and manager direct "
+                              'ticket prices, the promoter can only suggest dynamic or platinum ticketing, '
+                              'and the artist has to sign off before either goes live, because it grows '
+                              'the pot for artist, promoter and venue alike [zwZDxD4dEpY @ 00:07:00]. '
+                              'Scott Cramer lands on the same approval point from the fan side, saying '
+                              'Harry Styles and his team had to approve platinum seats for the 30-night '
+                              'Madison Square Garden residency [kFsH01UthzA @ 00:02:14]. Where the camps '
+                              "split is fees. Cramer plays Clyde Lawrence's Senate testimony: the band "
+                              'sets the base price, typically sees a 40% to 50% fee stacked on top through '
+                              'Ticketmaster, once hit 82%, and has no say in the number and no idea what '
+                              'it will be until the on-sale [kFsH01UthzA @ 00:09:03]. Prof AI Unfiltered '
+                              'frames control as layered: Ticketmaster says artists and venues largely '
+                              'control ticket prices, while the March 2026 Senate minority staff report '
+                              'says internal presentations treated wider adoption of pricing tools as a '
+                              'business objective and that the company pushed artists to expand their use '
+                              '[enPVz7BsM7Q @ 00:04:48]. Operator read: the face number is negotiated '
+                              'inside the artist camp, but the fee stack and the push toward pricing tools '
+                              'come from the platform side, and the buyer only ever sees the combined '
+                              'total.',
+                              'The second split is over what the pricing machine actually does. Making It '
+                              'Network describes Ticketmaster dynamic pricing as fully automatic: when the '
+                              'queue is packed, an algorithm drives prices up within milliseconds and can '
+                              'flex the price of every single seat in the house without anyone touching it '
+                              "manually [zwZDxD4dEpY @ 00:09:15]. Ticketmaster's own line, read on air by "
+                              'CBS News during the Cowboy Carter on-sale, is the opposite: prices were set '
+                              'in advance of the sale and the company does not have surge pricing or '
+                              'dynamic algorithms. The Northeastern music professor on that segment traced '
+                              'the three-times spread inside one section to presale channels instead, with '
+                              'fan club and credit card presales carrying different ticket policies '
+                              '[IF-yvujBqTU @ 00:01:22]. Scott Cramer splits the difference on Harry '
+                              'Styles: no dynamic pricing at all, just platinum seats placed in '
+                              'high-demand spots, so early queue buyers cleared the cheap tickets and late '
+                              'entrants paid more for seats literally next to them [kFsH01UthzA @ '
+                              '00:01:24]. thumbsuprun describes the hybrid in the wild: presale inventory '
+                              'pulled at face value and converted straight to official platinum, the same '
+                              '$299 floor seat reappearing at $799, three to five times the price '
+                              '[TpXJCfuFf4o @ 00:05:02]. Whatever the label, the buyer-side mechanic is '
+                              'identical: early queue gets the posted face, late queue gets the repriced '
+                              'seat.',
+                              'The third disagreement is strategic: capture the resale gap or kill it '
+                              'outright. Live Nation CEO Michael Rapino, played by Making It Network from '
+                              'a promoter podcast, wants artists to price the house better and quit being '
+                              'bashful, arguing that the $8 billion sitting in secondary, monetized by '
+                              'professional bots, should be in the pot with the artist and the sports '
+                              'teams [zwZDxD4dEpY @ 00:05:01]. Follow The Why explains why that gap exists '
+                              'in the first place: stars deliberately keep face value polite to protect '
+                              'full rooms, happy fans and decades-long careers, and for years brokers '
+                              'collected the difference, reselling at an average 49% above face and '
+                              'sometimes more than 1,000% [cmeE4rZAlVk @ 00:04:47]. The counter-playbook '
+                              'kills transferability. Scott Cramer points to Noah Kahan: resale allowed '
+                              "only on Ticketmaster's platform and only at the base price paid, so the "
+                              'platform still keeps its fees while scalpers lose their spread [kFsH01UthzA '
+                              '@ 00:23:58]. Making It Network adds Morrissey refusing to play any show '
+                              "carrying service fees, the Foo Fighters' beat the bots campaign selling at "
+                              'the box office for $150 plus maybe a $2 fee, and blockchain tickets whose '
+                              'codes change every second so only the original buyer can get in '
+                              '[zwZDxD4dEpY @ 00:21:44]. For a broker these are two different worlds: '
+                              'price-the-house tours compress the spread from above, while '
+                              'non-transferable tours erase it.'],
+               'table': {'caption': 'Side-by-side playbooks: who sets the price, who keeps the premium, '
+                                    'and how resale gets locked down',
+                         'headers': ['Fault Line', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Who approves platinum and dynamic pricing on a tour',
+                                   'Artist, agent and manager must sign off; the promoter can only suggest '
+                                   'or ask for it',
+                                   'Ticketmaster pushed artists to expand pricing tools, per the March '
+                                   '2026 Senate minority staff report',
+                                   'Making It Network ([zwZDxD4dEpY @ 00:07:16]); Prof AI Unfiltered '
+                                   '([enPVz7BsM7Q @ 00:04:12])'],
+                                  ['Who actually controls the fee stack at checkout',
+                                   'Artists can waive service fees, though promoters and venues almost '
+                                   'always push back on it',
+                                   'Bands set the base price only and see 40% to 50% fees, once 82%, with '
+                                   'no say',
+                                   'Making It Network ([zwZDxD4dEpY @ 00:08:16]); Scott Cramer '
+                                   '([kFsH01UthzA @ 00:08:46])'],
+                                  ['Whether a repricing algorithm is running at all',
+                                   'Automatic code reads queue demand and flexes every seat price within '
+                                   'milliseconds, no manual input',
+                                   'Ticketmaster told CBS News prices were set in advance with no surge '
+                                   'pricing or dynamic algorithms',
+                                   'Making It Network ([zwZDxD4dEpY @ 00:09:15]); CBS News ([IF-yvujBqTU @ '
+                                   '00:00:24])'],
+                                  ['Where the resale premium should end up',
+                                   'Price the house better, quit being bashful, and pull the $8 billion '
+                                   'secondary into the artist pot',
+                                   'Artists weigh angering fans against cutting into the scalper gray '
+                                   'market so extra profit reaches them',
+                                   'Making It Network ([zwZDxD4dEpY @ 00:05:01]); CBS News ([IF-yvujBqTU @ '
+                                   '00:02:49])'],
+                                  ['Which direction dynamic prices actually move',
+                                   'Cheapest seats sell first on purpose, then an $80 ticket can cost $200 '
+                                   'by the evening',
+                                   'Prices get lowered during low-demand periods to fill seats and pull in '
+                                   'last-minute buyers',
+                                   'Profit Mechanics ([p8peX6mgbrw @ 00:01:54]); 2 Minute Expert '
+                                   '([1m8cAjtjH5A @ 00:01:00])'],
+                                  ['How official platinum seats get pitched to fans',
+                                   'Sold as paying more so the money goes to your artist, with 100% '
+                                   'verified tickets included',
+                                   'Just a more expensive seat sitting right next to cheaper ones, priced '
+                                   'higher just because',
+                                   'thumbsuprun ([TpXJCfuFf4o @ 00:03:12]); Scott Cramer ([kFsH01UthzA @ '
+                                   '00:02:14])'],
+                                  ['Locking down resale to kill the scalper spread',
+                                   'Noah Kahan model: resale only on Ticketmaster at base price, so '
+                                   'scalpers cannot flip in bulk',
+                                   'Sellers recover only the base price while Ticketmaster keeps its fees '
+                                   'and controls everything itself',
+                                   'Scott Cramer ([kFsH01UthzA @ 00:24:20])']]}},
+              {'heading': '4. Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The most repeated failure is the number moving between the seat map and the '
+                              'payment screen. thumbsuprun recalls the Rolling Stones run: the venue '
+                              'carried a set general admission price, then buyers reaching the payment '
+                              'step saw it jump $50, $70, $90, and plenty paid anyway because nobody '
+                              'expects a carted price to change before checkout [TpXJCfuFf4o @ 00:09:44]. '
+                              "Scott Cramer shows a friend's Shania Twain order listed at $227 each "
+                              'turning into $291 apiece on the final screen, a 30% bump on the very last '
+                              'step of the transaction [kFsH01UthzA @ 00:11:23]. Follow The Why documents '
+                              'the queue version from the Oasis reunion: fans watched a standing ticket '
+                              'listed around 135 pounds, queued for hours, and reached the front to find '
+                              'it over 350, same ticket, same day, with backlash loud enough that '
+                              "Britain's competition watchdog investigated [cmeE4rZAlVk @ 00:06:11]. "
+                              'Profit Mechanics explains why the trap lands on nearly everyone: a $60 '
+                              'headline becomes $90 once service, facility, order processing and email '
+                              'delivery fees appear, and by then the buyer has already committed, so '
+                              'walking away feels like losing the night. Across 20,000 seats, a $30 fee '
+                              'stack becomes $600,000 collected before a single note is played '
+                              '[p8peX6mgbrw @ 00:03:24]. Every one of these is a cost-basis error waiting '
+                              'to happen if the cart price gets logged as the buy price.',
+                              'The second trap is assuming resale margin survives the fee cascade. Scott '
+                              'Cramer walks it through: a $50 listed ticket checks out at $75, so a holder '
+                              'who resells must ask $75 just to break even, the next buyer pays at least '
+                              'another $25 in fees, and the platform has now pulled an extra $50 out of '
+                              'one $50 seat, repeating on every transfer after that [kFsH01UthzA @ '
+                              '00:07:45]. Business Made Simple puts both sides on one receipt: list an $80 '
+                              'ticket at $150 and the buyer sees $187.50 after a 25% buyer fee, while the '
+                              'site often takes a cut from the seller as well [VBp4zpS7F3o @ 00:08:42]. '
+                              'Why It Costs flags the floor that gets ignored: a GAO sample averaged '
+                              'secondary fees at 31% of listed price before fees, and CRS says weak demand '
+                              'can leave resellers with outright losses, so an expensive listing '
+                              'guarantees nothing [tH7bLaJI6ZE @ 00:08:16]. Firstpost shows the downside '
+                              'live on Cowboy Carter: resale collapsing to a reported $35, more than 3,200 '
+                              'unsold seats on the Los Angeles opening night, over 5,500 still sitting for '
+                              'the New Jersey date added for high demand, and nearly half the Atlanta '
+                              'floor open while the platform claimed 94% sold [nAgJ_xD_wuE @ 00:02:54]. A '
+                              'superstar name is not the same thing as superstar resale demand.',
+                              'The third failure cluster is the on-sale itself. Follow The Why logs the '
+                              'Eras Tour collapse on November 15, 2022: 3.5 billion requests in one day, '
+                              "four times Ticketmaster's previous peak, 2 million tickets sold, and the "
+                              'Friday public sale canceled entirely because nothing was left to sell '
+                              '[cmeE4rZAlVk @ 00:03:59]. Inside Edition captured the street-level damage: '
+                              'one fan landed nosebleed seats after a five-hour wait, another was kicked '
+                              'out of line after queuing since 10 a.m., and a mother and daughter went '
+                              'from next in line to behind 2,000 others [qQIN_PDMcPA @ 00:00:39]. Prof AI '
+                              'Unfiltered adds that internal messages later published by Senate minority '
+                              'staff described several system parts failing, old legacy pages going down, '
+                              'rate limiting, a password server outage and older checkout technology, with '
+                              'no single root cause identified [enPVz7BsM7Q @ 00:02:31]. Then comes the '
+                              'speculative listing trap Scott Cramer describes: a third-party seller lists '
+                              'tickets before the show even goes on sale, at high rates, without holding '
+                              'them, hoping a bot can scrape seats later; if it cannot, the buyer is '
+                              'simply out of luck [kFsH01UthzA @ 00:21:28]. Cramer notes the Ticket Act '
+                              'would make speculative ticketing illegal, but doubts enforcement, since '
+                              'reselling bot-bought tickets is already illegal and ignored.'],
+               'table': {'caption': 'Firsthand traps and the economics check each one demands before money '
+                                    'moves',
+                         'headers': ['Trap', 'What Practitioners Saw', 'Economics Check', 'Expert Source'],
+                         'rows': [['Carted price changes at the payment step',
+                                   'Rolling Stones general admission jumped $50, $70 and $90 between cart '
+                                   'and checkout',
+                                   'Treat the carted price as provisional and double-check the total '
+                                   'before paying',
+                                   'thumbsuprun ([TpXJCfuFf4o @ 00:09:44])'],
+                                  ['Fee stack sitting on a modest face value',
+                                   'Olivia Dean ticket at $155 plus $35.25 in fees and a $7 order '
+                                   'processing fee',
+                                   'Two tickets landed at $388 instead of $310 before anyone reached the '
+                                   'venue',
+                                   'Scott Cramer ([kFsH01UthzA @ 00:11:59])'],
+                                  ['Superstar tour running into soft demand',
+                                   'Cowboy Carter resale reportedly fell to $35 with thousands of seats '
+                                   'unsold in Los Angeles',
+                                   'Platform claimed 94% sold while fans posted seat maps showing empty '
+                                   'sections',
+                                   'Firstpost ([nAgJ_xD_wuE @ 00:02:15])'],
+                                  ['Thin promoter margin on the door itself',
+                                   'On bigger shows artists take 85% to 90%, leaving promoters roughly 1% '
+                                   'to 5% of revenue',
+                                   'Promoters lean on service fees and ancillary revenue, so they push '
+                                   'back on fee waivers',
+                                   'Making It Network ([zwZDxD4dEpY @ 00:08:30])'],
+                                  ['Venue locked into a single ticketing platform',
+                                   'Venue managers fear losing concerts if they leave Ticketmaster; '
+                                   'contracts stretched from 5 to 10 years',
+                                   'Buyers at those rooms have no alternative checkout lane to compare '
+                                   'fees against',
+                                   'Scott Cramer ([kFsH01UthzA @ 00:19:20])'],
+                                  ['Speculative listings before the real on-sale',
+                                   'Third-party sellers list tickets they do not hold, hoping a bot '
+                                   'scrapes seats later',
+                                   'If the bot fails to buy, the prepaid buyer is simply out of luck',
+                                   'Scott Cramer ([kFsH01UthzA @ 00:21:40])'],
+                                  ['Holding out for prices to fall later',
+                                   'Waiting risks the price never dropping or the wanted section selling '
+                                   'out completely',
+                                   'You may end up seated away from your group or shut out entirely',
+                                   'thumbsuprun ([TpXJCfuFf4o @ 00:08:27])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Four Checks Before Capital Moves',
+                           'body': 'Clear each gate before committing money to a primary buy or posting a '
+                                   'resale listing; every one maps to a loss or reversal practitioners hit '
+                                   'firsthand.',
+                           'items': ['Enter the waiting room for the very first presale: early buyers see '
+                                     'true face value before the platform gathers data to convert seats to '
+                                     'official platinum or raise face values [thumbsuprun — TpXJCfuFf4o @ '
+                                     '00:06:35].',
+                                     'Re-verify the price on the final payment screen: a Shania Twain '
+                                     'order listed at $227 each turned into $291 apiece, a 30% bump on the '
+                                     'last step [Scott Cramer — kFsH01UthzA @ 00:11:23].',
+                                     'Underwrite resale against the fee drag and weak demand: secondary '
+                                     'fees averaged 31% of listed price in the GAO sample, and weak demand '
+                                     'can leave resellers with losses [Why It Costs — tH7bLaJI6ZE @ '
+                                     '00:08:16].',
+                                     'Do not bank on click speed: queue positions are handed out '
+                                     'essentially by lottery, so the fastest fiber in the state can still '
+                                     'draw number 80,000 [Follow The Why — cmeE4rZAlVk @ 00:02:53].']}}],
+ 'pull_quote': '"In truth, the scalper moved inside the building, put on a suit, and started calling '
+               'itself the official resale partner." — Profit Mechanics (p8peX6mgbrw @ 00:05:40).',
+ 'diagram_id': 'diag-06',
+ 'action_checklist': ['Get into the waiting room as early as possible to catch the first wave of true '
+                      'face-value tickets before platinum conversion kicks in [thumbsuprun — TpXJCfuFf4o @ '
+                      '00:09:06].',
+                      'Compare the all-in total across sites rather than the headline price, and divide '
+                      'every fee line by face value to see where the total comes from [Business Made '
+                      'Simple — VBp4zpS7F3o @ 00:09:01].',
+                      'Map the inventory before the on-sale: on average 54% of major-event tickets never '
+                      'reach the public, with 16% to holds and 38% to presales [Follow The Why — '
+                      'cmeE4rZAlVk @ 00:00:52].',
+                      'Price any resale to clear the fee cascade: a $50 listed ticket that checked out at '
+                      '$75 must resell at $75 just to break even [Scott Cramer — kFsH01UthzA @ 00:08:02].',
+                      'Benchmark tours on Pollstar average gross and average ticket price, then verify '
+                      'dates and ticket details on the official artist or venue page before buying [Wise '
+                      'Explainer — WNNmn1bxFEU @ 00:01:24].',
+                      "Flag tours where the artist caps resale at face value, as Olivia Dean's face value "
+                      'exchange did, since those sales are capped at the original price with no added fees '
+                      '[Scott Cramer — kFsH01UthzA @ 00:26:05].'],
+ 'statutory_citations': [{'title': 'Making It Network — Taylor Swift Eras Tour VS Ticketmaster Dynamic '
+                                   'Pricing - Who is Responsible for High Ticket Prices? [00:07:00]',
+                          'url': 'https://www.youtube.com/watch?v=zwZDxD4dEpY&t=420s',
+                          'relevance': 'Primary practitioner testimony on artist sign-off for dynamic and '
+                                       'platinum ticketing, service fee rebates and promoter margins.'},
+                         {'title': 'thumbsuprun — HOW DYNAMIC TICKET PRICING & OFFICIAL PLATINUM SEATS '
+                                   'WORK ON TICKETMASTER [00:04:51]',
+                          'url': 'https://www.youtube.com/watch?v=TpXJCfuFf4o&t=291s',
+                          'relevance': 'Primary practitioner testimony on converting presale face-value '
+                                       'seats into official platinum at three to five times the price.'},
+                         {'title': 'Scott Cramer — Ticket Prices Are Disgusting [00:01:24]',
+                          'url': 'https://www.youtube.com/watch?v=kFsH01UthzA&t=84s',
+                          'relevance': 'Primary practitioner testimony on platinum versus dynamic pricing, '
+                                       'checkout fee jumps and the resale fee cascade.'},
+                         {'title': 'Profit Mechanics — How concert promoters make money: dynamic pricing '
+                                   'and the resale cut [00:05:07]',
+                          'url': 'https://www.youtube.com/watch?v=p8peX6mgbrw&t=307s',
+                          'relevance': 'Primary practitioner testimony on promoter-run resale marketplaces '
+                                       'taking a cut on both sides of each trade.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': '0hT1wi4_aew',
+                       'title': 'Top 20 Global Concert Tours from Pollstar',
+                       'channel': 'World Of Entertainment',
+                       'author': 'World Of Entertainment',
+                       'text': 'The top 20 global concert tours ranks artists by average box office gross '
+                               'per city and includes the average ticket price for shows worldwide.',
+                       'tip': 'The top 20 global concert tours ranks artists by average box office gross '
+                              'per city and includes the average ticket price for shows worldwide.',
+                       'timestamp': 0,
+                       'timestamp_seconds': 0,
+                       'timestamp_label': '[00:00:00]',
+                       'url': 'https://www.youtube.com/watch?v=0hT1wi4_aew&t=0s',
+                       'markdown': '[00:00:00](https://www.youtube.com/watch?v=0hT1wi4_aew&t=0s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'WNNmn1bxFEU',
+                       'title': 'Pollstar for Concert Discovery Honest Review - Watch Before Using',
+                       'channel': 'Wise Explainer',
+                       'author': 'Wise Explainer',
+                       'text': 'Pollstar can help you discover events, but you may still need to visit an '
+                               'external ticket seller or venue website to actually purchase tickets.',
+                       'tip': 'Pollstar can help you discover events, but you may still need to visit an '
+                              'external ticket seller or venue website to actually purchase tickets.',
+                       'timestamp': 67,
+                       'timestamp_seconds': 67,
+                       'timestamp_label': '[00:01:07]',
+                       'url': 'https://www.youtube.com/watch?v=WNNmn1bxFEU&t=67s',
+                       'markdown': '[00:01:07](https://www.youtube.com/watch?v=WNNmn1bxFEU&t=67s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'tH7bLaJI6ZE',
+                       'title': 'Concert Tickets: Why a 90% Artist Share Misleads',
+                       'channel': 'Why It Costs',
+                       'author': 'Why It Costs',
+                       'text': 'The later transaction routes money to a seller, with platform fees '
+                               'separate, and CRS says weak demand can instead leave resale losses.',
+                       'tip': 'The later transaction routes money to a seller, with platform fees '
+                              'separate, and CRS says weak demand can instead leave resale losses.',
+                       'timestamp': 496,
+                       'timestamp_seconds': 496,
+                       'timestamp_label': '[00:08:16]',
+                       'url': 'https://www.youtube.com/watch?v=tH7bLaJI6ZE&t=496s',
+                       'markdown': '[00:08:16](https://www.youtube.com/watch?v=tH7bLaJI6ZE&t=496s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'cmeE4rZAlVk',
+                       'title': 'Concert Tickets Explained: Why They Sell Out in 9 Seconds',
+                       'channel': 'Follow The Why',
+                       'author': 'Follow The Why',
+                       'text': 'On average, 54% of tickets to major events never reach the general public '
+                               'at all, with 16% vanishing into insider holds and 38% eaten by pre-sales.',
+                       'tip': 'On average, 54% of tickets to major events never reach the general public '
+                              'at all, with 16% vanishing into insider holds and 38% eaten by pre-sales.',
+                       'timestamp': 52,
+                       'timestamp_seconds': 52,
+                       'timestamp_label': '[00:00:52]',
+                       'url': 'https://www.youtube.com/watch?v=cmeE4rZAlVk&t=52s',
+                       'markdown': '[00:00:52](https://www.youtube.com/watch?v=cmeE4rZAlVk&t=52s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'cmeE4rZAlVk',
+                       'title': 'Concert Tickets Explained: Why They Sell Out in 9 Seconds',
+                       'channel': 'Follow The Why',
+                       'author': 'Follow The Why',
+                       'text': 'Ticketmaster defended it with math: only about 11% of tickets were '
+                               'platinum, and the average ticket sold for $262.',
+                       'tip': 'Ticketmaster defended it with math: only about 11% of tickets were '
+                              'platinum, and the average ticket sold for $262.',
+                       'timestamp': 354,
+                       'timestamp_seconds': 354,
+                       'timestamp_label': '[00:05:54]',
+                       'url': 'https://www.youtube.com/watch?v=cmeE4rZAlVk&t=354s',
+                       'markdown': '[00:05:54](https://www.youtube.com/watch?v=cmeE4rZAlVk&t=354s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'enPVz7BsM7Q',
+                       'title': 'Taylor Swift’s Ticketmaster Fiasco: Who Really Controls Ticket Prices? '
+                                'Prof AI Unfiltered',
+                       'channel': 'Prof AI Unfiltered',
+                       'author': 'Prof AI Unfiltered',
+                       'text': 'Ticketmaster offers tools that can adjust some ticket prices as demand '
+                               'changes, and the 2026 staff report said the company pushed artists to '
+                               'expand their use.',
+                       'tip': 'Ticketmaster offers tools that can adjust some ticket prices as demand '
+                              'changes, and the 2026 staff report said the company pushed artists to '
+                              'expand their use.',
+                       'timestamp': 252,
+                       'timestamp_seconds': 252,
+                       'timestamp_label': '[00:04:12]',
+                       'url': 'https://www.youtube.com/watch?v=enPVz7BsM7Q&t=252s',
+                       'markdown': '[00:04:12](https://www.youtube.com/watch?v=enPVz7BsM7Q&t=252s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'IF-yvujBqTU',
+                       'title': 'Beyoncé fans complain of inconsistent ticket prices for Cowboy Carter '
+                                'Tour',
+                       'channel': 'CBS News',
+                       'author': 'CBS News',
+                       'text': 'Prices were set in advance of the sale of the tour, and Ticketmaster does '
+                               'not have surge pricing or dynamic algorithms to adjust ticket prices.',
+                       'tip': 'Prices were set in advance of the sale of the tour, and Ticketmaster does '
+                              'not have surge pricing or dynamic algorithms to adjust ticket prices.',
+                       'timestamp': 24,
+                       'timestamp_seconds': 24,
+                       'timestamp_label': '[00:00:24]',
+                       'url': 'https://www.youtube.com/watch?v=IF-yvujBqTU&t=24s',
+                       'markdown': '[00:00:24](https://www.youtube.com/watch?v=IF-yvujBqTU&t=24s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'rZJgedd2Fk4',
+                       'title': 'How Taylor Swift created an economic juggernaut with her Eras Tour',
+                       'channel': 'PBS NewsHour',
+                       'author': 'PBS NewsHour',
+                       'text': 'On average people spend about 100 to $500 on any given concert, and people '
+                               'are spending $1300 on average to go see Taylor Swift.',
+                       'tip': 'On average people spend about 100 to $500 on any given concert, and people '
+                              'are spending $1300 on average to go see Taylor Swift.',
+                       'timestamp': 115,
+                       'timestamp_seconds': 115,
+                       'timestamp_label': '[00:01:55]',
+                       'url': 'https://www.youtube.com/watch?v=rZJgedd2Fk4&t=115s',
+                       'markdown': '[00:01:55](https://www.youtube.com/watch?v=rZJgedd2Fk4&t=115s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'nAgJ_xD_wuE',
+                       'title': "Beyonce's Cowboy Carter Tour Struggles to Sell Out Stadiums | Firstpost "
+                                'America | N18G',
+                       'channel': 'Firstpost',
+                       'author': 'Firstpost',
+                       'text': 'Resale tickets have plummeted to a reported measly $35.',
+                       'tip': 'Resale tickets have plummeted to a reported measly $35.',
+                       'timestamp': 174,
+                       'timestamp_seconds': 174,
+                       'timestamp_label': '[00:02:54]',
+                       'url': 'https://www.youtube.com/watch?v=nAgJ_xD_wuE&t=174s',
+                       'markdown': '[00:02:54](https://www.youtube.com/watch?v=nAgJ_xD_wuE&t=174s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'h_mhu-A8WR4',
+                       'title': 'Taylor Swift and Beyoncé attempt to pack movie theatres like stadiums',
+                       'channel': 'CBC News: The National',
+                       'author': 'CBC News: The National',
+                       'text': 'Each one worked directly with theater chains cutting out the film studios, '
+                               'so they get to take home a bigger cut than they would otherwise.',
+                       'tip': 'Each one worked directly with theater chains cutting out the film studios, '
+                              'so they get to take home a bigger cut than they would otherwise.',
+                       'timestamp': 45,
+                       'timestamp_seconds': 45,
+                       'timestamp_label': '[00:00:45]',
+                       'url': 'https://www.youtube.com/watch?v=h_mhu-A8WR4&t=45s',
+                       'markdown': '[00:00:45](https://www.youtube.com/watch?v=h_mhu-A8WR4&t=45s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'zwZDxD4dEpY',
+                       'title': 'Taylor Swift Eras Tour VS Ticketmaster Dynamic Pricing - Who is '
+                                'Responsible for High Ticket Prices?',
+                       'channel': 'Making It Network',
+                       'author': 'Making It Network',
+                       'text': 'When it comes to dynamic and platinum ticketing, the artist approves if '
+                               'the promoter and venue are even allowed to use it.',
+                       'tip': 'When it comes to dynamic and platinum ticketing, the artist approves if the '
+                              'promoter and venue are even allowed to use it.',
+                       'timestamp': 420,
+                       'timestamp_seconds': 420,
+                       'timestamp_label': '[00:07:00]',
+                       'url': 'https://www.youtube.com/watch?v=zwZDxD4dEpY&t=420s',
+                       'markdown': '[00:07:00](https://www.youtube.com/watch?v=zwZDxD4dEpY&t=420s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'qQIN_PDMcPA',
+                       'title': 'Taylor Swift’s ‘Eras Tour’ Tickets Crash Ticketmaster',
+                       'channel': 'Inside Edition',
+                       'author': 'Inside Edition',
+                       'text': "You've got what 20 million people trying to get 200,000 tickets, of course "
+                               "there are going to be problems, of course there's going to be bottlenecks.",
+                       'tip': "You've got what 20 million people trying to get 200,000 tickets, of course "
+                              "there are going to be problems, of course there's going to be bottlenecks.",
+                       'timestamp': 114,
+                       'timestamp_seconds': 114,
+                       'timestamp_label': '[00:01:54]',
+                       'url': 'https://www.youtube.com/watch?v=qQIN_PDMcPA&t=114s',
+                       'markdown': '[00:01:54](https://www.youtube.com/watch?v=qQIN_PDMcPA&t=114s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '1m8cAjtjH5A',
+                       'title': 'The Pros & Cons of Dynamic Ticket Pricing in 2 Minutes',
+                       'channel': '2 Minute Expert',
+                       'author': '2 Minute Expert',
+                       'text': "Sudden price changes might frustrate buyers who feel they're being treated "
+                               'unfairly or forced to pay more last minute.',
+                       'tip': "Sudden price changes might frustrate buyers who feel they're being treated "
+                              'unfairly or forced to pay more last minute.',
+                       'timestamp': 101,
+                       'timestamp_seconds': 101,
+                       'timestamp_label': '[00:01:41]',
+                       'url': 'https://www.youtube.com/watch?v=1m8cAjtjH5A&t=101s',
+                       'markdown': '[00:01:41](https://www.youtube.com/watch?v=1m8cAjtjH5A&t=101s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'TpXJCfuFf4o',
+                       'title': 'HOW DYNAMIC TICKET PRICING & OFFICIAL PLATINUM SEATS WORK ON TICKETMASTER',
+                       'channel': 'thumbsuprun',
+                       'author': 'thumbsuprun',
+                       'text': "If you get in on the very first presale and get in right away, you're "
+                               'gonna see the true face value for many of these seats.',
+                       'tip': "If you get in on the very first presale and get in right away, you're gonna "
+                              'see the true face value for many of these seats.',
+                       'timestamp': 395,
+                       'timestamp_seconds': 395,
+                       'timestamp_label': '[00:06:35]',
+                       'url': 'https://www.youtube.com/watch?v=TpXJCfuFf4o&t=395s',
+                       'markdown': '[00:06:35](https://www.youtube.com/watch?v=TpXJCfuFf4o&t=395s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'kFsH01UthzA',
+                       'title': 'Ticket Prices Are Disgusting',
+                       'channel': 'Scott Cramer',
+                       'author': 'Scott Cramer',
+                       'text': 'The tickets were $227 each, but when she got to the final screen they '
+                               'turned into $291 a piece, a 30% bump on the very last screen of the '
+                               'transaction.',
+                       'tip': 'The tickets were $227 each, but when she got to the final screen they '
+                              'turned into $291 a piece, a 30% bump on the very last screen of the '
+                              'transaction.',
+                       'timestamp': 683,
+                       'timestamp_seconds': 683,
+                       'timestamp_label': '[00:11:23]',
+                       'url': 'https://www.youtube.com/watch?v=kFsH01UthzA&t=683s',
+                       'markdown': '[00:11:23](https://www.youtube.com/watch?v=kFsH01UthzA&t=683s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'VBp4zpS7F3o',
+                       'title': 'Why Are Concert Tickets So Expensive? The Fees After Face Value',
+                       'channel': 'Business Made Simple',
+                       'author': 'Business Made Simple',
+                       'text': 'A useful habit here is to compare the all-in total across sites, not the '
+                               'headline price.',
+                       'tip': 'A useful habit here is to compare the all-in total across sites, not the '
+                              'headline price.',
+                       'timestamp': 541,
+                       'timestamp_seconds': 541,
+                       'timestamp_label': '[00:09:01]',
+                       'url': 'https://www.youtube.com/watch?v=VBp4zpS7F3o&t=541s',
+                       'markdown': '[00:09:01](https://www.youtube.com/watch?v=VBp4zpS7F3o&t=541s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'p8peX6mgbrw',
+                       'title': 'How concert promoters make money: dynamic pricing and the resale cut',
+                       'channel': 'Profit Mechanics',
+                       'author': 'Profit Mechanics',
+                       'text': 'Today, the promoter and the ticketing platform run the resale marketplace '
+                               'themselves, and they take a cut on both sides of the deal.',
+                       'tip': 'Today, the promoter and the ticketing platform run the resale marketplace '
+                              'themselves, and they take a cut on both sides of the deal.',
+                       'timestamp': 307,
+                       'timestamp_seconds': 307,
+                       'timestamp_label': '[00:05:07]',
+                       'url': 'https://www.youtube.com/watch?v=p8peX6mgbrw&t=307s',
+                       'markdown': '[00:05:07](https://www.youtube.com/watch?v=p8peX6mgbrw&t=307s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'}]}

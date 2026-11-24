@@ -1,1018 +1,843 @@
 from __future__ import annotations
 
-CHAPTER_7 = {
-    "id": "Q7",
-    "chapter_id": "Q7",
-    "chapter_number": 7,
-    "question_number": 7,
-    "slug": "complete-operating-process-production-blueprint-90-day-cohort-walk",
-    "question_prompt": "How does an operator execute cell-tower, digital-billboard & ios lease arbitrage end-to-end from intake to reconciled cash, backed by an auditable technical/ledger blueprint and a worked 90-day cohort walk?",
-    "kicker": "Q7 / THE BIG MONEY PLAYBOOKS",
-    "title": "The Complete Operating Process, Production Blueprint & 90-Day Cohort Walk",
-    "subtitle": "FCC ASR and DOT AADT Intake, Lender SNDA Evidence, SQLite Settlement Controls, and Retained-Spread Cash Reconciliation",
-    "layout_template": "research_exhibit",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #42, ranked #11 of 42 with a 91/100 Money-to-Manpower "
-        "Score, turns infrastructure rights into documented retained spreads "
-        "rather than treating property values or institutional purchase principal "
-        "as revenue. This chapter connects that execution system to the shelf's "
-        "11 mapped plays, including property-tax assessment appeal contingency. "
-        "Follow parcel intake through verified authority, assignable contracts, "
-        "escrow evidence, balanced ledger entries, and bank reconciliation. Six "
-        "copy-pasteable reference modules implement serialized SQLite writes and "
-        "content-checked retries. A worked 90-day cohort produces $133,750 retained "
-        "revenue, $80,250 operating costs, and $53,500 owner profit. Four equivalent "
-        "quarterly production blocks reconcile to the $214,000 Base annual profit; "
-        "Conservative and Scaled annual profits remain $33,600 and $494,000."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$120,000",
-            "context": "Annual scorecard revenue from retained infrastructure spreads and assignment fees",
-            "note": "28% net margin; $33,600 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Base",
-            "value": "$535,000",
-            "context": "Annual scorecard revenue excluding purchase principal and underlying tenant billings",
-            "note": "40.0% net margin; $214,000 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$950,000",
-            "context": "Annual scorecard revenue measured on the same retained-spread basis",
-            "note": "52% net margin; $494,000 annual owner net profit; 2 FT + 4 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Turn parcel signals into transferable, fundable rights",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Start with a rights inventory, not a list of attractive parcels. "
-                    "Import FCC Antenna Structure Registration records, state DOT annual "
-                    "average daily traffic layers, county assessor rolls, and recorded "
-                    "parcel geometry into QGIS. ASR coverage is incomplete for the "
-                    "telecom universe, so supplement rooftop and smaller structure leads "
-                    "with recorded leases and owner-authorized documents. Every intake "
-                    "record needs a jurisdiction, parcel identifier, source snapshot date, "
-                    "owner contact provenance, and proposed transaction type. Separate "
-                    "tower easement acquisition, billboard permit-linked assignment, and "
-                    "IOS seasonal master leasing before scoring; each purchases different "
-                    "rights and fails for different reasons. The intake script uses "
-                    "integer cents and a deterministic source key, preventing a refreshed "
-                    "assessor export from creating another payable opportunity. Its score "
-                    "prioritizes documented spread and evidence completeness, not legal "
-                    "eligibility. Preserve the original export and its SHA-256 digest "
-                    "outside the database, then store that digest with subsequent "
-                    "verification events. A contractor may collect records, but only "
-                    "the designated deal lead can confirm ownership against title "
-                    "evidence. Missing instruments trigger a document request, while "
-                    "confirmed nonassignability ends that branch before deposits or "
-                    "engineering invoices accumulate against a speculative exit."
-                ),
-                (
-                    "Underwrite tower rights from the actual rent schedule, escalation "
-                    "clause, remaining term, renewal rights, termination language, and "
-                    "access easement. An illustrative $30,000 annual eligible rent stream "
-                    "purchased at 16 times rent costs $480,000; a buyer paying 18 times "
-                    "rent offers $540,000. After $15,000 of transaction charges, the "
-                    "retained spread is $45,000, not $540,000. The advertised 16–22 "
-                    "times range is a screening reference, never an executable bid. "
-                    "Obtain buyer-specific pricing and settlement instructions before "
-                    "committing acquisition capital. With only $12,000–$60,000 startup "
-                    "capital, use a permitted assignment or an escrow-controlled, "
-                    "buyer-funded simultaneous closing rather than pretending the team "
-                    "can warehouse six-figure easements. Review existing mortgage "
-                    "priority and obtain the required lender subordination, "
-                    "nondisturbance, and attornment agreement, or an equivalent approved "
-                    "instrument appropriate to the transaction. A perpetual easement "
-                    "does not make the associated tenant rent perpetual. Model tenant "
-                    "termination and equipment removal separately. If lender execution "
-                    "outlasts the option period, negotiate a documented extension before "
-                    "expiry; otherwise release the transaction and preserve the buyer "
-                    "relationship. Do not silently replace a missing consent with a "
-                    "higher assumed exit multiple."
-                ),
-                (
-                    "For billboards, connect traffic counts to a legally usable display "
-                    "location rather than converting AADT directly into advertising "
-                    "revenue. Check state-controlled route coverage, spacing, lighting, "
-                    "digital conversion rules, municipal zoning, and whether the permit "
-                    "and ground lease can transfer together. A $50,000 assignment receipt "
-                    "less $20,000 of directly attributable acquisition and closing "
-                    "charges creates a $30,000 retained assignment spread. For IOS, "
-                    "document heavy-axle use, turning geometry, drainage, access hours, "
-                    "fire access, and environmental conditions before accepting rent "
-                    "liability. One activated month with 100 occupied spaces at $600 "
-                    "produces $60,000 tenant billings; a $35,000 head-lease obligation "
-                    "leaves $25,000 retained spread before operating overhead. The "
-                    "cohort below assumes only four contracted activation months "
-                    "annually and no rent liability outside them. If the owner requires "
-                    "twelve paid months, rebuild the economics rather than retaining "
-                    "the seasonal case. NNN language allocates specified expenses; it "
-                    "does not erase the operator's contractual liability. Keep the "
-                    "scorecard's retained economic basis separate from statutory "
-                    "reporting: lease accounting generally belongs under ASC 842, "
-                    "while applicable service and assignment arrangements require their "
-                    "own ASC 606 principal-versus-agent assessment and recognition analysis."
-                ),
-            ],
-            "table": {
-                "caption": "Rights-to-Cash Intake Matrix for Telecom, Billboard, and IOS Transactions",
-                "headers": [
-                    "Workstream and specific source of evidence",
-                    "Required operating decision before spending further",
-                    "Concrete unit economics and retained basis",
-                    "Failure response preserving capital and optionality",
-                ],
-                "rows": [
-                    [
-                        "FCC ASR export joined to recorded county parcel ownership",
-                        "Confirm the structure and recorded rent rights concern identical premises",
-                        "Thirty thousand annual rent supports separate buyer multiple sensitivity calculations",
-                        "Request missing rooftop records instead of treating absent registration as rejection",
-                    ],
-                    [
-                        "Recorded telecom lease together with amendments and payment history",
-                        "Verify escalation dates, termination rights, access scope, and assignment language",
-                        "Four hundred eighty thousand acquisition against five hundred forty thousand exit",
-                        "Replace unsupported exit assumptions with an executable buyer-specific written indication",
-                    ],
-                    [
-                        "Mortgage schedule, title commitment, and transaction-specific lender correspondence",
-                        "Identify required lender signatures and establish a dated consent tracker",
-                        "Fifteen thousand transaction charges reduce sixty thousand gross spread to forty-five thousand",
-                        "Extend the option explicitly or terminate before nonrefundable obligations increase",
-                    ],
-                    [
-                        "State DOT route classification and current outdoor-advertising permit records",
-                        "Confirm spacing, digital operation, transferable permit rights, and location eligibility",
-                        "Fifty thousand assignment receipt less twenty thousand acquisition charges retains thirty thousand",
-                        "Offer another eligible location rather than acquiring an unusable sign entitlement",
-                    ],
-                    [
-                        "Municipal zoning determination and engineer-reviewed heavy-vehicle access drawing",
-                        "Confirm fleet storage use, turning movements, surface loading, and fire access",
-                        "One hundred occupied spaces multiplied by six hundred yields sixty thousand",
-                        "Reduce vehicle class or abandon the yard when authorized use fails",
-                    ],
-                    [
-                        "Environmental professional report, drainage records, and applicable stormwater authorization",
-                        "Resolve recognized environmental conditions and determine permit applicability before possession",
-                        "Thirty-five thousand activated head rent leaves twenty-five thousand retained monthly spread",
-                        "Require remediation allocation or reject uncapped environmental and drainage exposure",
-                    ],
-                    [
-                        "Buyer settlement statement and separately documented operator compensation agreement",
-                        "Separate purchase principal, reimbursed charges, deposits, and earned operator compensation",
-                        "Only retained spreads enter the scorecard rather than institutional acquisition principal",
-                        "Hold recognition until the completed transaction supports the agreed compensation amount",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Protect the spread before negotiating the headline multiple",
-                "body": (
-                    "The best small-team advantage is early discovery of a document "
-                    "defect that would otherwise consume weeks of buyer attention."
-                ),
-                "items": [
-                    "Ask the title examiner to identify mortgage recording references before sending the lender an SNDA request; attach the precise legal description and signature requirements.",
-                    "Ask the billboard buyer to underwrite the permitted face and digital operating restrictions, not a traffic-count screenshot or an assumed future conversion.",
-                    "Walk the IOS entrance with the intended tractor-trailer configuration; compare turning geometry with the lease exhibit before installing an RFID reader.",
-                    "Price tower termination and renewal language separately from the buyer's rent multiple, and obtain a fresh indication whenever the underlying lease amendments change.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Implement six modules with serialized writes and explicit recovery",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Use the following six modules as a local SQLite reference "
-                    "implementation, not as an unattended bank integration. Save each "
-                    "code cell under its indicated filename in one project directory. "
-                    "Initialize with sqlite3 from Python by executing schema.sql through "
-                    "Connection.executescript, then execute views.sql the same way. The "
-                    "remaining Python files expose callable functions; qa.py runs "
-                    "directly after initialization. Every writer enables foreign keys, "
-                    "waits for the database lock, and executes BEGIN IMMEDIATE before "
-                    "reading mutable business state. This serializes read-modify-write "
-                    "operations across processes sharing this local database. Unique "
-                    "source keys collapse repeated intake, event keys bind retries "
-                    "to their original payload, and a partial unique index prevents "
-                    "two settlement postings for one deal. A reused key carrying "
-                    "different content raises an error rather than overwriting evidence. "
-                    "If the process fails before commit, SQLite rolls back the "
-                    "transaction; after commit, the same key returns the recorded "
-                    "result. Keep the database on a supported local filesystem, "
-                    "not a shared network drive. Multiple hosts require a database "
-                    "such as Postgres with corresponding row locks, uniqueness "
-                    "constraints, and transaction boundaries, not synchronized copies "
-                    "of this SQLite file."
-                ),
-                (
-                    "The state machine deliberately excludes remote side effects. "
-                    "It can qualify, verify, place into escrow, or scrub an opportunity, "
-                    "but it cannot wire funds, submit a permit, or create an "
-                    "easement. Verification events carry the digest of an evidence "
-                    "packet whose title, consent, zoning, and environmental conclusions "
-                    "were reviewed by the responsible specialists. A digest proves "
-                    "which packet was used; it does not prove that the conclusions "
-                    "are correct. CLOSED is reached only through a settlement posting "
-                    "that checks the current ESCROW state and records balanced cash "
-                    "and retained-revenue entries in the same database transaction. "
-                    "Consequently, competing settlement workers cannot both close "
-                    "and recognize the same deal. External settlement remains a "
-                    "separate process: use the escrow provider's transaction reference, "
-                    "retain its final statement, and confirm actual bank receipt "
-                    "before posting. A timeout while asking a provider for status "
-                    "means query that reference again, not issue another payment. "
-                    "When a provider supports idempotency keys, reuse the same stable "
-                    "key; otherwise use a documented single-operator release procedure. "
-                    "Local atomicity cannot manufacture exactly-once behavior inside "
-                    "an unrelated bank or government filing portal."
-                ),
-                (
-                    "The ledger is intentionally narrow: it records cash-settled "
-                    "retained revenue, operating expense, and refundable deposits. "
-                    "Signed journal amounts use debit-positive convention. Settlement "
-                    "debits CASH and credits REVENUE; expense debits OPEX and credits "
-                    "CASH; deposit receipts credit DEPOSIT rather than revenue. "
-                    "Finalization requires at least two balanced lines, and triggers "
-                    "prevent edits to posted entries. The reconciliation view "
-                    "distinguishes operating profit from cash movement because deposit "
-                    "liabilities can move cash without creating earnings. Refunds "
-                    "reverse the deposit movement through a separately keyed posting. "
-                    "This is a transaction-control subledger, not a replacement for "
-                    "the statutory general ledger: accruals, lease assets, taxes, "
-                    "distributions, and correction entries need a separately specified "
-                    "accounting interface. For the illustrated cohort, earned spreads "
-                    "and expenses settle within their stated months, with no deposit "
-                    "balance or unpaid accrual at quarter end. Run QA after every "
-                    "import and before issuing the owner statement. Back up through "
-                    "SQLite's backup API, verify restoration, and preserve evidence "
-                    "files alongside their digest manifest. Database triggers "
-                    "constrain ordinary application writes; filesystem permissions "
-                    "and restricted deployment access must prevent unauthorized "
-                    "schema changes or direct replacement of the database."
-                ),
-            ],
-            "table": {
-                "caption": "Six-Module Production Engineering / SQLite Ledger & Idempotent Workflow Reference Table",
-                "headers": [
-                    "Module filename and precise execution responsibility",
-                    "Copy-pasteable implementation using only standard library components",
-                    "Concurrency boundary and required operational verification",
-                ],
-                "rows": [
-                    [
-                        "schema.sql establishes constrained deal, event, posting, and journal storage",
-                        """PRAGMA foreign_keys = ON;
-PRAGMA journal_mode = WAL;
-CREATE TABLE IF NOT EXISTS deal (
-    id INTEGER PRIMARY KEY,
-    source_key TEXT NOT NULL UNIQUE,
-    payload_hash TEXT NOT NULL,
-    play TEXT NOT NULL,
-    spread_cents INTEGER NOT NULL CHECK(spread_cents >= 0),
-    score INTEGER NOT NULL CHECK(score BETWEEN 0 AND 100),
-    state TEXT NOT NULL DEFAULT 'NEW'
-        CHECK(state IN ('NEW','QUALIFIED','VERIFIED','ESCROW','CLOSED','SCRUBBED')),
-    version INTEGER NOT NULL DEFAULT 0
-);
-CREATE TABLE IF NOT EXISTS event (
-    event_key TEXT PRIMARY KEY,
-    deal_id INTEGER NOT NULL REFERENCES deal(id),
-    payload_hash TEXT NOT NULL,
-    target TEXT NOT NULL,
-    evidence_hash TEXT NOT NULL,
-    created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
-);
-CREATE TABLE IF NOT EXISTS posting (
-    posting_key TEXT PRIMARY KEY,
-    payload_hash TEXT NOT NULL,
-    deal_id INTEGER REFERENCES deal(id),
-    kind TEXT NOT NULL
-        CHECK(kind IN ('settlement','opex','deposit','refund')),
-    month TEXT NOT NULL,
-    evidence_hash TEXT NOT NULL,
-    status TEXT NOT NULL DEFAULT 'DRAFT'
-        CHECK(status IN ('DRAFT','POSTED')),
-    CHECK(kind != 'settlement' OR deal_id IS NOT NULL)
-);
-CREATE UNIQUE INDEX IF NOT EXISTS one_settlement_per_deal
-ON posting(deal_id) WHERE kind = 'settlement';
-CREATE TABLE IF NOT EXISTS journal (
-    posting_key TEXT NOT NULL REFERENCES posting(posting_key),
-    line_no INTEGER NOT NULL,
-    account TEXT NOT NULL CHECK(account IN ('CASH','REVENUE','OPEX','DEPOSIT')),
-    cents INTEGER NOT NULL CHECK(typeof(cents) = 'integer' AND cents != 0),
-    UNIQUE(posting_key, line_no)
-);
-CREATE TRIGGER IF NOT EXISTS posting_insert_draft
-BEFORE INSERT ON posting WHEN NEW.status != 'DRAFT'
-BEGIN SELECT RAISE(ABORT, 'Insert draft before balanced finalization'); END;
-CREATE TRIGGER IF NOT EXISTS posting_finalize
-BEFORE UPDATE OF status ON posting WHEN NEW.status = 'POSTED'
-BEGIN
-    SELECT CASE WHEN
-        (SELECT COUNT(*) FROM journal WHERE posting_key = OLD.posting_key) < 2
-        OR
-        (SELECT COALESCE(SUM(cents), 0) FROM journal
-         WHERE posting_key = OLD.posting_key) != 0
-    THEN RAISE(ABORT, 'Posting requires balanced journal lines') END;
-END;
-CREATE TRIGGER IF NOT EXISTS posting_no_edit
-BEFORE UPDATE ON posting WHEN OLD.status = 'POSTED'
-BEGIN SELECT RAISE(ABORT, 'Posted records are immutable'); END;
-CREATE TRIGGER IF NOT EXISTS posting_no_delete
-BEFORE DELETE ON posting WHEN OLD.status = 'POSTED'
-BEGIN SELECT RAISE(ABORT, 'Posted records are immutable'); END;
-CREATE TRIGGER IF NOT EXISTS journal_insert_draft
-BEFORE INSERT ON journal
-WHEN COALESCE((SELECT status FROM posting
-              WHERE posting_key = NEW.posting_key), '') != 'DRAFT'
-BEGIN SELECT RAISE(ABORT, 'Journal insertion requires draft posting'); END;
-CREATE TRIGGER IF NOT EXISTS journal_no_edit
-BEFORE UPDATE ON journal
-BEGIN SELECT RAISE(ABORT, 'Replace draft lines instead of updating'); END;
-CREATE TRIGGER IF NOT EXISTS journal_no_delete_posted
-BEFORE DELETE ON journal
-WHEN (SELECT status FROM posting
-      WHERE posting_key = OLD.posting_key) = 'POSTED'
-BEGIN SELECT RAISE(ABORT, 'Posted journal lines are immutable'); END;
-""",
-                        "Initialize before workers start; uniqueness and immutable posting triggers constrain every writer",
-                    ],
-                    [
-                        "intake.py deduplicates immutable source snapshots and calculates transparent priority scores",
-                        """from __future__ import annotations
-import hashlib
-import json
-import sqlite3
-
-def ingest(source_key, play, spread_cents, evidence_count, db="ledger.db"):
-    if not source_key or not play:
-        raise ValueError("Source key and play are required")
-    if type(spread_cents) is not int or spread_cents < 0:
-        raise ValueError("Spread must be nonnegative integer cents")
-    if type(evidence_count) is not int or not 0 <= evidence_count <= 5:
-        raise ValueError("Evidence count must range from zero through five")
-    payload = [source_key, play, spread_cents, evidence_count]
-    digest = hashlib.sha256(json.dumps(payload).encode()).hexdigest()
-    score = min(50, spread_cents // 100000) + evidence_count * 10
-    con = sqlite3.connect(db, timeout=30, isolation_level=None)
-    try:
-        con.execute("PRAGMA foreign_keys = ON")
-        con.execute("BEGIN IMMEDIATE")
-        old = con.execute(
-            "SELECT id, payload_hash FROM deal WHERE source_key = ?",
-            (source_key,),
-        ).fetchone()
-        if old:
-            if old[1] != digest:
-                raise ValueError("Source key reused with different content")
-            result = old[0]
-        else:
-            result = con.execute(
-                "INSERT INTO deal(source_key,payload_hash,play,spread_cents,score) "
-                "VALUES (?,?,?,?,?)",
-                (source_key, digest, play, spread_cents, score),
-            ).lastrowid
-        con.commit()
-        return result
-    except Exception:
-        if con.in_transaction:
-            con.rollback()
-        raise
-    finally:
-        con.close()
-""",
-                        "One write reservation covers lookup and insertion; changed evidence requires a new versioned snapshot",
-                    ],
-                    [
-                        "workflow.py advances verification and escrow states without initiating external transfers",
-                        """from __future__ import annotations
-import hashlib
-import json
-import sqlite3
-
-ALLOWED = {
-    "NEW": {"QUALIFIED", "SCRUBBED"},
-    "QUALIFIED": {"VERIFIED", "SCRUBBED"},
-    "VERIFIED": {"ESCROW", "SCRUBBED"},
-    "ESCROW": {"SCRUBBED"},
-}
-
-def advance(event_key, deal_id, target, evidence_hash, db="ledger.db"):
-    if not event_key or len(evidence_hash) != 64:
-        raise ValueError("Event key and SHA-256 evidence digest are required")
-    int(evidence_hash, 16)
-    payload = [deal_id, target, evidence_hash]
-    digest = hashlib.sha256(json.dumps(payload).encode()).hexdigest()
-    con = sqlite3.connect(db, timeout=30, isolation_level=None)
-    try:
-        con.execute("PRAGMA foreign_keys = ON")
-        con.execute("BEGIN IMMEDIATE")
-        old = con.execute(
-            "SELECT payload_hash FROM event WHERE event_key = ?", (event_key,)
-        ).fetchone()
-        if old:
-            if old[0] != digest:
-                raise ValueError("Event key content conflict")
-            con.commit()
-            return target
-        row = con.execute(
-            "SELECT state, version FROM deal WHERE id = ?", (deal_id,)
-        ).fetchone()
-        if row is None or target not in ALLOWED.get(row[0], set()):
-            raise ValueError("Disallowed state transition")
-        changed = con.execute(
-            "UPDATE deal SET state=?, version=version+1 WHERE id=? AND version=?",
-            (target, deal_id, row[1]),
-        ).rowcount
-        if changed != 1:
-            raise RuntimeError("Concurrent state change")
-        con.execute(
-            "INSERT INTO event(event_key,deal_id,payload_hash,target,evidence_hash) "
-            "VALUES (?,?,?,?,?)",
-            (event_key, deal_id, digest, target, evidence_hash),
-        )
-        con.commit()
-        return target
-    except Exception:
-        if con.in_transaction:
-            con.rollback()
-        raise
-    finally:
-        con.close()
-""",
-                        "Evidence review happens before invocation; serialized transition checks prevent competing state changes",
-                    ],
-                    [
-                        "posting.py posts balanced cash events and closes settled deals atomically",
-                        """from __future__ import annotations
-import datetime
-import hashlib
-import json
-import sqlite3
-
-PAIRS = {
-    "settlement": ("CASH", "REVENUE"),
-    "opex": ("OPEX", "CASH"),
-    "deposit": ("CASH", "DEPOSIT"),
-    "refund": ("DEPOSIT", "CASH"),
-}
-
-def post(key, kind, month, cents, evidence_hash, deal_id=None, db="ledger.db"):
-    if not key or kind not in PAIRS or type(cents) is not int or cents <= 0:
-        raise ValueError("Posting requires key, supported kind, and positive cents")
-    parsed = datetime.datetime.strptime(month, "%Y-%m")
-    if parsed.strftime("%Y-%m") != month:
-        raise ValueError("Month must use four-digit year and two-digit month")
-    if len(evidence_hash) != 64:
-        raise ValueError("SHA-256 evidence digest is required")
-    int(evidence_hash, 16)
-    payload = [kind, month, cents, evidence_hash, deal_id]
-    digest = hashlib.sha256(json.dumps(payload).encode()).hexdigest()
-    con = sqlite3.connect(db, timeout=30, isolation_level=None)
-    try:
-        con.execute("PRAGMA foreign_keys = ON")
-        con.execute("BEGIN IMMEDIATE")
-        old = con.execute(
-            "SELECT payload_hash,status FROM posting WHERE posting_key=?", (key,)
-        ).fetchone()
-        if old:
-            if old != (digest, "POSTED"):
-                raise ValueError("Posting key conflict or incomplete posting")
-            con.commit()
-            return key
-        if kind == "settlement":
-            row = con.execute(
-                "SELECT state FROM deal WHERE id=?", (deal_id,)
-            ).fetchone()
-            if row != ("ESCROW",):
-                raise ValueError("Settlement requires escrow state")
-        con.execute(
-            "INSERT INTO posting(posting_key,payload_hash,deal_id,kind,month,"
-            "evidence_hash) VALUES (?,?,?,?,?,?)",
-            (key, digest, deal_id, kind, month, evidence_hash),
-        )
-        debit, credit = PAIRS[kind]
-        con.executemany(
-            "INSERT INTO journal(posting_key,line_no,account,cents) VALUES (?,?,?,?)",
-            [(key, 1, debit, cents), (key, 2, credit, -cents)],
-        )
-        con.execute("UPDATE posting SET status='POSTED' WHERE posting_key=?", (key,))
-        if kind == "settlement":
-            con.execute(
-                "UPDATE deal SET state='CLOSED',version=version+1 WHERE id=?",
-                (deal_id,),
-            )
-        con.commit()
-        return key
-    except Exception:
-        if con.in_transaction:
-            con.rollback()
-        raise
-    finally:
-        con.close()
-""",
-                        "Unique settlement index plus one transaction prevents duplicate recognition even under different retry keys",
-                    ],
-                    [
-                        "views.sql reconciles recognized retained revenue, expenses, deposits, and monthly cash",
-                        """CREATE VIEW IF NOT EXISTS monthly_reconciliation AS
-SELECT
-    p.month,
-    -SUM(CASE WHEN j.account='REVENUE' THEN j.cents ELSE 0 END)
-        AS revenue_cents,
-    SUM(CASE WHEN j.account='OPEX' THEN j.cents ELSE 0 END)
-        AS opex_cents,
-    -SUM(CASE WHEN j.account IN ('REVENUE','OPEX')
-              THEN j.cents ELSE 0 END) AS profit_cents,
-    SUM(CASE WHEN j.account='CASH' THEN j.cents ELSE 0 END)
-        AS cash_delta_cents,
-    -SUM(CASE WHEN j.account='DEPOSIT' THEN j.cents ELSE 0 END)
-        AS deposit_delta_cents
-FROM posting AS p
-JOIN journal AS j ON j.posting_key=p.posting_key
-WHERE p.status='POSTED'
-GROUP BY p.month;
-""",
-                        "Compare bank movement with cash delta; profit differs whenever refundable deposit balances change",
-                    ],
-                    [
-                        "qa.py checks integrity, settlement coverage, balanced entries, and bank movement",
-                        """from __future__ import annotations
-import json
-import sqlite3
-
-def check(db="ledger.db", bank_cash_delta_cents=None):
-    con = sqlite3.connect(db, timeout=30, isolation_level=None)
-    try:
-        con.execute("PRAGMA foreign_keys = ON")
-        con.execute("BEGIN")
-        failures = []
-        integrity = con.execute("PRAGMA integrity_check").fetchall()
-        if integrity != [("ok",)]:
-            failures.append("Database integrity check failed")
-        if con.execute("PRAGMA foreign_key_check").fetchall():
-            failures.append("Foreign key violations detected")
-        bad = con.execute(
-            "SELECT p.posting_key FROM posting p LEFT JOIN journal j "
-            "ON j.posting_key=p.posting_key GROUP BY p.posting_key "
-            "HAVING p.status!='POSTED' OR COUNT(j.line_no)<2 "
-            "OR COALESCE(SUM(j.cents),0)!=0"
-        ).fetchall()
-        if bad:
-            failures.append("Incomplete or unbalanced postings detected")
-        missing = con.execute(
-            "SELECT d.id FROM deal d WHERE d.state='CLOSED' AND NOT EXISTS "
-            "(SELECT 1 FROM posting p WHERE p.deal_id=d.id "
-            "AND p.kind='settlement' AND p.status='POSTED')"
-        ).fetchall()
-        if missing:
-            failures.append("Closed deals lack posted settlement")
-        wrong = con.execute(
-            "SELECT p.posting_key FROM posting p JOIN deal d ON d.id=p.deal_id "
-            "WHERE p.kind='settlement' AND p.status='POSTED' AND d.state!='CLOSED'"
-        ).fetchall()
-        if wrong:
-            failures.append("Settlement postings lack closed deal state")
-        con.row_factory = sqlite3.Row
-        rows = [
-            dict(row) for row in con.execute(
-                "SELECT * FROM monthly_reconciliation ORDER BY month"
-            )
-        ]
-        for row in rows:
-            if row["cash_delta_cents"] != (
-                row["profit_cents"] + row["deposit_delta_cents"]
-            ):
-                failures.append("Cash bridge failed for " + row["month"])
-        movement = sum(row["cash_delta_cents"] for row in rows)
-        if bank_cash_delta_cents is not None:
-            if type(bank_cash_delta_cents) is not int:
-                raise ValueError("Bank movement must use integer cents")
-            if movement != bank_cash_delta_cents:
-                failures.append("Bank movement differs from ledger movement")
-        con.commit()
-        if failures:
-            raise RuntimeError("; ".join(failures))
-        return {
-            "months": rows,
-            "bank_reconciled": bank_cash_delta_cents is not None,
-            "cash_delta_cents": movement,
-        }
-    finally:
-        if con.in_transaction:
-            con.rollback()
-        con.close()
-
-if __name__ == "__main__":
-    print(json.dumps(check(), indent=2))
-""",
-                        "Read transaction fixes the QA snapshot; bank verification requires an independently sourced movement total",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Initialize and test isolated ledger storage",
-                    "action": "Execute schema.sql and views.sql using sqlite3.Connection.executescript in a temporary project database.",
-                    "detail": "Run integrity checks, confirm foreign-key enforcement per connection, and prove restoration from a SQLite backup before using live settlement evidence.",
-                },
-                {
-                    "step": 2,
-                    "title": "Prove retry behavior before processing money",
-                    "action": "Invoke intake and workflow twice with identical keys, then repeat with deliberately changed payloads.",
-                    "detail": "Identical requests must return the prior result; changed content must raise an error without inserting another record or advancing state.",
-                },
-                {
-                    "step": 3,
-                    "title": "Exercise competing settlement and crash recovery",
-                    "action": "Run two local processes against one ESCROW deal using distinct posting keys, then test process termination before commit.",
-                    "detail": "Only one settlement may commit; the other must fail its state or uniqueness check. An interrupted uncommitted transaction must leave no partial journal.",
-                },
-                {
-                    "step": 4,
-                    "title": "Reconcile evidence, ledger, and independent cash",
-                    "action": "Call check with the bank's integer-cent operating cash movement after excluding separately tracked capital and distributions.",
-                    "detail": "Compare every posting with its settlement or invoice artifact, clear exceptions individually, and retain the QA result with the monthly evidence manifest.",
-                },
-            ],
-        },
-        {
-            "heading": "3. Make specialist review, tax appeals, and exception ownership explicit",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Assign the Base team as one full-time principal and three "
-                    "contractor functions: title and transaction counsel, environmental "
-                    "and civil diligence, and GIS plus bookkeeping operations. "
-                    "Contractor functions describe responsibility, not a promise that "
-                    "one person holds every professional credential. The principal "
-                    "owns pricing, buyer commitments, cash exposure, and the weekly "
-                    "exception meeting. Counsel resolves assignment restrictions, "
-                    "brokerage status, recorded interests, and closing instruments. "
-                    "The environmental professional controls Phase I scope and "
-                    "findings; the civil specialist confirms drainage and access "
-                    "where needed. Operations maintains source snapshots, deadlines, "
-                    "posting evidence, and reconciliation. Separate the person "
-                    "preparing a payment instruction from the person independently "
-                    "confirming escrow destination details through an established "
-                    "contact channel. Buying or assigning a principal interest "
-                    "does not automatically satisfy every state licensing exemption; "
-                    "document the exact local rule and the actual conduct performed. "
-                    "When activity is brokerage, engage the required licensee rather "
-                    "than renaming a commission. Contractor invoices must reference "
-                    "the deal and work product so that failed diligence remains "
-                    "visible in acquisition cost. Review aging weekly by the "
-                    "specific missing instrument and responsible counterparty, "
-                    "not by a vague probability-of-closing percentage."
-                ),
-                (
-                    "The mapped play property_tax_assessment_appeal_contingency adds a "
-                    "separate, deadline-driven service queue rather than magically "
-                    "increasing tower rent. Ingest county valuation rolls when "
-                    "annual notices release, normalize parcel class and valuation "
-                    "date, and compare assessed-to-market ratios across genuinely "
-                    "comparable neighbors. An AVM flag starts review; it is not "
-                    "proof of unequal assessment or a permitted filing position. "
-                    "For illustration, a supportable $200,000 reduction multiplied "
-                    "by a 2.0% applicable effective tax rate implies $4,000 annual "
-                    "tax savings. A 40% first-year contingency yields $1,600 "
-                    "service revenue only after the contract's verification and "
-                    "collection conditions are satisfied. Across ten successful "
-                    "parcels, that becomes $16,000 before specialist fees and "
-                    "filing costs. The operating range is 30–50% of the first "
-                    "year's verified reduction, not a percentage of property "
-                    "value or a recurring claim on future savings. Track the "
-                    "jurisdiction's actual deadline, service authorization, appeal "
-                    "basis, submission receipt, and final tax outcome. In regulated "
-                    "states, partner with licensed local property-tax consultants "
-                    "or attorneys of record and automate pre-deadline batch "
-                    "electronic filing through authorized channels. Keep this "
-                    "adjacent service outside the Base cohort dollars unless "
-                    "the annual model explicitly replaces another revenue component."
-                ),
-                (
-                    "Treat statutory requirements as operating inputs with named "
-                    "evidence owners. The Highway Beautification Act, 23 U.S.C. "
-                    "131, and 23 CFR Part 750 establish the federal outdoor "
-                    "advertising framework, while state programs and municipal "
-                    "rules determine the site's concrete restrictions. Federal "
-                    "eligibility is not a local sign permit. For IOS acquisitions "
-                    "where all appropriate inquiries matters, 40 CFR Part 312 "
-                    "governs that inquiry framework; an environmental professional "
-                    "must determine scope, timing, and any need for further "
-                    "investigation. A Phase I report neither authorizes stormwater "
-                    "discharges nor resolves every operational environmental "
-                    "obligation. Evaluate 40 CFR 122.26 and the applicable state "
-                    "program against actual industrial activity and exposure, "
-                    "rather than assuming every yard requires the same permit. "
-                    "Texas property-tax representation illustrates why the "
-                    "adjacent appeal service needs jurisdictional routing: "
-                    "Occupations Code Chapter 1152 addresses property-tax "
-                    "consultants, and Tax Code 41.44 addresses protest timing. "
-                    "Archive the applicable rule version and transaction facts "
-                    "with each decision. When facts change, such as a new "
-                    "vehicle class, revised digital display operation, or "
-                    "different appeal representative, reopen the corresponding "
-                    "review before continuing work under stale evidence."
-                ),
-            ],
-            "table": {
-                "caption": "Exception Ownership and Adjacent Appeal Play Operating Matrix",
-                "headers": [
-                    "Specific exception or mapped operating play",
-                    "Evidence owner and concrete verification artifact",
-                    "Unit economics or deadline exposure measurement",
-                    "Required fallback when the preferred path fails",
-                ],
-                "rows": [
-                    [
-                        "Tower mortgage priority prevents immediate recording of purchased easement rights",
-                        "Transaction counsel obtains lender requirements and final signed consent instruments",
-                        "Track extension cost against the remaining executable retained transaction spread",
-                        "Extend the option in writing or release before acquisition funds become exposed",
-                    ],
-                    [
-                        "Billboard spacing or digital conversion restrictions defeat the proposed display",
-                        "Permit specialist retains state determination and municipal zoning disposition",
-                        "Remove projected assignment revenue until a transferable permitted configuration exists",
-                        "Reprice a permitted static configuration or move acquisition work to another parcel",
-                    ],
-                    [
-                        "IOS environmental findings create unresolved remediation or operational discharge exposure",
-                        "Environmental professional documents findings while civil specialist addresses drainage design",
-                        "Cap investigatory spending against the activated month's twenty-five thousand retained spread",
-                        "Allocate remediation contractually or decline possession until the exposure is resolved",
-                    ],
-                    [
-                        "property_tax_assessment_appeal_contingency uses annual notice rolls and comparable equity ratios",
-                        "Authorized representative validates AVM flags against local protest grounds and evidence",
-                        "Two hundred thousand reduction at two percent produces four thousand annual savings",
-                        "Route regulated representation to licensed consultants or attorneys before batch filing",
-                    ],
-                    [
-                        "First-year contingency calculation must follow verified tax reduction and contract terms",
-                        "Bookkeeper matches final tax outcome, owner invoice, and collected contingency payment",
-                        "Forty percent of four thousand verified savings produces sixteen hundred service revenue",
-                        "Defer billing or recognition when outcome verification and contractual earning conditions remain incomplete",
-                    ],
-                    [
-                        "Bank destination changes arrive during an otherwise ready infrastructure settlement",
-                        "Principal confirms instructions through previously established escrow provider contact details",
-                        "Suspend the affected transfer without adding projected proceeds to available working capital",
-                        "Resolve the changed destination independently rather than replying to the amendment email",
-                    ],
-                    [
-                        "Quarter-end cash movement differs from retained revenue less recorded operating expenses",
-                        "Bookkeeper reconciles posting evidence, deposit movements, timing differences, and bank activity",
-                        "Cash movement equals operating profit plus refundable deposit liability movement here",
-                        "Investigate individual unmatched entries and issue no reconciled statement before resolution",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four pre-flight verifications before irreversible exposure",
-                "body": (
-                    "Record a dated decision and evidence digest for each check; "
-                    "a checked box without its supporting instrument is insufficient."
-                ),
-                "items": [
-                    "Confirm owner authority, legal description, transferable rights, mortgage priority, and every transaction-specific lender consent before releasing acquisition funds.",
-                    "Confirm billboard route classification, applicable spacing and lighting restrictions, municipal entitlement, and the permitted method of transferring the display rights.",
-                    "Confirm IOS heavy-axle use, operational drainage requirements, environmental findings, and the exact activated-month rent obligation before taking possession.",
-                    "Confirm buyer funding, independently verified escrow instructions, balanced posting tests, and a cash buffer sufficient for delayed closings before signing a nonrefundable commitment.",
-                ],
-            },
-        },
-        {
-            "heading": "4. Walk three monthly cohorts from source records to reconciled owner cash",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "The Worked 90-Day Cohort Walk is a constructed production "
-                    "case, not a report of completed transactions. Begin with "
-                    "$60,000 operator cash and no receivables, deposits, borrowings, "
-                    "or existing lease obligations. Month 1 sources cohort A's "
-                    "60 opportunities. Forty-eight fail desktop screening; of "
-                    "12 reviewed candidates, nine fail document or economic "
-                    "diligence and three advance. No retained revenue arrives "
-                    "that month, while $18,000 of paid operating costs creates "
-                    "an $18,000 cumulative operating deficit and leaves $42,000 "
-                    "cash. In Month 2, two cohort A tower assignments settle "
-                    "for retained spreads of $20,000 and $25,000. Their "
-                    "underlying easement purchase principal moves through "
-                    "buyer-controlled escrow and never enters this operator "
-                    "cash schedule. Month 2 also sources cohort B's 60 "
-                    "opportunities: 50 fail desktop review and eight of "
-                    "ten diligence candidates are scrubbed, leaving a "
-                    "billboard assignment and an IOS activation. Paid "
-                    "Month 2 costs total $27,000, so $45,000 receipts "
-                    "generate $18,000 operating cash and restore the "
-                    "opening $60,000 balance. Scrubbed leads create no "
-                    "fictional revenue write-off; their consumed labor "
-                    "and diligence invoices remain inside the operating "
-                    "cost schedule."
-                ),
-                (
-                    "Month 3 receives $30,000 from cohort A's billboard "
-                    "assignment, $33,750 from cohort B's billboard assignment, "
-                    "and $25,000 retained IOS spread from cohort B's first "
-                    "contracted activation. Those five completed transactions "
-                    "produce quarterly retained revenue of $133,750. Month 3 "
-                    "sources cohort C's 60 opportunities; 52 fail desktop "
-                    "screening, six more fail diligence, and two remain "
-                    "documented carry-forward candidates with no recognized "
-                    "revenue. Month 3 paid operating costs are $35,250, "
-                    "leaving $53,500 incremental cash and $113,500 closing "
-                    "cash. The cost schedule separates recurring overhead "
-                    "of $4,000, $5,000, and $6,000 from variable "
-                    "professional, acquisition, diligence, and closing support "
-                    "costs of $14,000, $22,000, and $29,250. These "
-                    "variable costs are additional to charges already "
-                    "deducted in computing retained deal spreads; never "
-                    "post the same charge twice. Thus recurring monthly "
-                    "overhead stays within the stated $2,000–$12,000 range "
-                    "while total production costs can exceed it. To "
-                    "reproduce the ledger, post settlements of 2000000, "
-                    "2500000, 3000000, 3375000, and 2500000 cents "
-                    "against five separately verified ESCROW deals, and "
-                    "post monthly expense totals of 1800000, 2700000, "
-                    "and 3525000 cents."
-                ),
-                (
-                    "Quarterly profit equals $133,750 minus $80,250, or "
-                    "$53,500, giving exactly 40.0% margin. Four equivalent "
-                    "production blocks yield $535,000 annual retained "
-                    "revenue, $321,000 costs, and $214,000 owner net "
-                    "profit. The annual construction contains eight tower "
-                    "assignments totaling $180,000, eight billboard "
-                    "assignments totaling $255,000, and four IOS activation "
-                    "months totaling $100,000 retained spread. It does "
-                    "not assume twelve IOS rent months or add repeat "
-                    "revenue from the same activation. Cohort C remains "
-                    "pipeline, not an extra cash asset. Repeating "
-                    "production requires replenishing buyer capacity, "
-                    "maintaining the same cost discipline, and signing "
-                    "seasonal terms that actually support four paid "
-                    "activation months. A delayed $33,750 billboard "
-                    "closing shifts cash and recognition into the "
-                    "later period; it cannot remain in Month 3 "
-                    "merely to preserve the target. The separate "
-                    "Conservative case remains $120,000 revenue less "
-                    "$86,400 costs, producing $33,600 at 28%; Scaled "
-                    "remains $950,000 less $456,000, producing $494,000 "
-                    "at 52%. Base and Conservative use one full-time "
-                    "operator plus three contractors; Scaled uses two "
-                    "plus four. These are distinct annual assumptions, "
-                    "not automatic outcomes of multiplying the lead "
-                    "count or shortening specialist review."
-                ),
-            ],
-            "table": {
-                "caption": "Worked 90-Day Cohort Walk",
-                "headers": [
-                    "Period or cohort and production scope",
-                    "Lead progression, scrubs, and unresolved obligations",
-                    "Recognized retained revenue and actual cash timing",
-                    "Paid operating costs and cumulative cash bridge",
-                ],
-                "rows": [
-                    [
-                        "Month 1 launches cohort A using sixty thousand opening operator cash",
-                        "Sixty sourced; forty-eight desktop scrubs; nine diligence scrubs; three advance",
-                        "Zero retained receipts because all three transactions remain unfinished",
-                        "Eighteen thousand costs; cumulative operating cash negative eighteen thousand; bank forty-two thousand",
-                    ],
-                    [
-                        "Month 2 closes two tower transactions while sourcing cohort B",
-                        "Sixty new leads; fifty desktop scrubs; eight diligence scrubs; two advance",
-                        "Twenty thousand plus twenty-five thousand retained tower receipts equals forty-five thousand",
-                        "Twenty-seven thousand costs; cumulative operating cash zero; bank sixty thousand",
-                    ],
-                    [
-                        "Month 3 closes two billboard assignments and one IOS activation",
-                        "Cohort C contributes sixty leads; fifty-two desktop scrubs; six diligence scrubs",
-                        "Thirty thousand plus thirty-three thousand seven hundred fifty plus twenty-five thousand received",
-                        "Thirty-five thousand two hundred fifty costs; cumulative cash fifty-three thousand five hundred",
-                    ],
-                    [
-                        "Cohort A disposition across its complete ninety-day transaction lifecycle",
-                        "Fifty-seven total scrubs leave two completed towers and one completed billboard",
-                        "Month 2 receives forty-five thousand; Month 3 receives thirty thousand",
-                        "Shared production costs remain allocated by month rather than duplicated against cohorts",
-                    ],
-                    [
-                        "Cohort B disposition across its first sixty days of production",
-                        "Fifty-eight total scrubs leave one completed billboard and one activated IOS yard",
-                        "Month 3 receives fifty-eight thousand seven hundred fifty retained combined spread",
-                        "IOS head rent already reduces retained spread and is excluded from overhead",
-                    ],
-                    [
-                        "Cohort C disposition at the ninety-day reporting cutoff date",
-                        "Fifty-eight total scrubs leave two carry-forward candidates requiring further verified execution",
-                        "Zero recognized receipts; neither pending candidate contributes to reported operating cash",
-                        "Consumed diligence spending remains included in Month 3 paid production costs",
-                    ],
-                    [
-                        "Quarter totals and four-block annual Base-Case production reconciliation",
-                        "One hundred eighty leads; one hundred seventy-three scrubs; five completions; two pending",
-                        "Quarter revenue $133,750; four equivalent blocks produce annual revenue $535,000",
-                        "Quarter costs $80,250; profit $53,500; ending cash $113,500; annual profit $214,000",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": (
-        "A spread becomes owner cash only when the rights transfer, the evidence "
-        "survives review, and the bank agrees with the ledger."
-    ),
-    "diagram_id": "diag-01",
-    "action_checklist": [
-        "Build a versioned parcel intake from FCC ASR, state DOT AADT, assessor rolls, and recorded interests; assign stable source keys before contractor outreach.",
-        "Price each tower, billboard, and IOS opportunity on retained spread, with buyer-specific execution evidence and explicit treatment of principal, deposits, and head rent.",
-        "Initialize the six reference modules in an isolated project database, then test duplicate keys, competing settlement workers, rollback recovery, and backup restoration.",
-        "Collect title, lender consent, permit, environmental, and heavy-axle evidence under dated ownership before taking nonrefundable acquisition or possession exposure.",
-        "Route property-tax appeal candidates to authorized local representatives, calculate first-year verified savings, and preserve filing receipts before jurisdictional deadlines.",
-        "Recreate the three-month cohort using integer cents, reconcile $53,500 operating cash to independent bank movement, and preserve the $535,000 annual retained-revenue basis.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "23 U.S.C. 131 — Control of outdoor advertising",
-            "url": "https://www.law.cornell.edu/uscode/text/23/131",
-            "relevance": (
-                "Establishes the federal outdoor-advertising framework relevant "
-                "to controlled highways; site underwriting must also identify "
-                "the applicable state program and municipal requirements."
-            ),
-        },
-        {
-            "title": "23 CFR Part 750 — Highway Beautification",
-            "url": "https://www.ecfr.gov/current/title-23/chapter-I/subchapter-H/part-750",
-            "relevance": (
-                "Provides implementing outdoor-advertising rules that inform "
-                "route eligibility, state control, and permit diligence before "
-                "billboard rights are acquired or assigned."
-            ),
-        },
-        {
-            "title": "47 CFR 17.4 — Antenna structure registration",
-            "url": "https://www.ecfr.gov/current/title-47/chapter-I/subchapter-A/part-17/section-17.4",
-            "relevance": (
-                "Defines antenna structure registration requirements and helps "
-                "operators understand why the ASR database is a useful intake "
-                "source but not a complete inventory of telecom lease rights."
-            ),
-        },
-        {
-            "title": "40 CFR Part 312 — Innocent Landowners, Standards for Conducting All Appropriate Inquiries",
-            "url": "https://www.ecfr.gov/current/title-40/chapter-I/subchapter-J/part-312",
-            "relevance": (
-                "Supplies the all appropriate inquiries framework where "
-                "applicable to environmental diligence; the environmental "
-                "professional must determine transaction-specific scope and timing."
-            ),
-        },
-        {
-            "title": "40 CFR 122.26 — Storm water discharges",
-            "url": "https://www.ecfr.gov/current/title-40/chapter-I/subchapter-D/part-122/section-122.26",
-            "relevance": (
-                "Supports activity-specific evaluation of industrial stormwater "
-                "requirements alongside the authorized state program rather "
-                "than assuming identical treatment for every IOS operation."
-            ),
-        },
-        {
-            "title": "Texas Occupations Code Chapter 1152 — Property Tax Consultants",
-            "url": "https://statutes.capitol.texas.gov/Docs/OC/htm/OC.1152.htm",
-            "relevance": (
-                "Provides a concrete jurisdictional example for routing "
-                "property-tax representation through appropriately registered "
-                "professionals and evaluating applicable exemptions."
-            ),
-        },
-        {
-            "title": "Texas Tax Code 41.44 — Notice of Protest",
-            "url": "https://statutes.capitol.texas.gov/Docs/TX/htm/TX.41.htm#41.44",
-            "relevance": (
-                "Establishes protest notice timing and related exceptions "
-                "that must be reflected in the parcel-level filing calendar "
-                "before automated batch submission."
-            ),
-        },
-    ],
-}
+CHAPTER_7 = {'id': 'Q7',
+ 'chapter_id': 'Q7',
+ 'chapter_number': 7,
+ 'question_number': 7,
+ 'slug': 'starting-and-building-a-billboard-company',
+ 'question_prompt': 'How do I start, build or buy my way into a billboard business from scratch?',
+ 'kicker': 'Q7 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Starting and Building a Billboard Company',
+ 'subtitle': 'Seven startup steps from ordinance research, land lease vs. easement vs. buying land, land '
+             "lease contracts, building on your own property, Frank Rolfe's bootcamp, the $3M "
+             'rented-billboard model, and operator interviews from the field',
+ 'layout_template': 'thirty_day_roadmap',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Billboard operators agree that the permit, not the structure, is the asset. Highway '
+                      'Beautification Act grandfathering, county moratoriums and cap-and-replace laws '
+                      'freeze supply and give incumbents pricing power. Site filters cluster around 10,000 '
+                      'to 20,000 daily vehicles. Landowners take roughly 15 to 20 percent of gross, and '
+                      'leases run 20 years or longer, with rent starting only once the sign is permitted, '
+                      'built and powered. Build costs run from $5,000 wood structures to $100,000-plus '
+                      'digitals. One static two-face board nets about $68,000 a year, and a digital '
+                      'conversion turns two ad slots into sixteen. Operators split on four questions: '
+                      'owning land or leasing it, flat or percentage rent, converting to digital or '
+                      'keeping static faces, and developing new sites or slowly buying distressed boards '
+                      'and portfolios.',
+ 'key_metrics': [{'label': 'Digital Conversion Inventory Multiplier',
+                  'metric': 'Digital Conversion Inventory Multiplier',
+                  'value': '2 ads become 16 ads (8 per side) on a $250K-$400K conversion',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Ken McElroy on converting a fixed two-sided static board to digital, '
+                             'multiplying sellable ad slots eightfold.',
+                  'source': 'Ken McElroy ([bteMgQqmSCk @ 00:00:58])'},
+                 {'label': 'Landowner Revenue Split',
+                  'metric': 'Landowner Revenue Split',
+                  'value': 'Low flat rate or 18-20% of revenue, whichever is higher',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Bama Billboards' opening landowner letter structure, pitched as protecting "
+                             'the landowner from inflation and keeping them happy.',
+                  'source': 'Bama Billboards ([rxbKA112Tdc @ 00:02:54])'},
+                 {'label': 'Single-Board Net Cash Flow Model',
+                  'metric': 'Single-Board Net Cash Flow Model',
+                  'value': '$12K gross minus $2,160 (18%) and ~$1.5K costs = ~$8K/mo (~$96K/yr)',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Mr. Money's worked monthly model for one board after the landowner cut and "
+                             'operating costs.',
+                  'source': 'Mr. Money ([t4mEx2qxaZ8 @ 00:03:50])'},
+                 {'label': 'Ground Lease Buyout Multiple',
+                  'metric': 'Ground Lease Buyout Multiple',
+                  'value': '12-15x annual rent on old 30-year leases',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Dan Franklin's offer range for converting legacy ground leases into owned "
+                             'land or easements.',
+                  'source': 'The Bell Board Podcast ([nCrchtKHbFw @ 00:07:38])'}],
+ 'sections': [{'heading': 'Section 1: The Practitioner Consensus',
+               'paragraphs': ['Every serious operator here treats the permit, not the steel, as the thing '
+                              'being bought and sold. Mr. Money frames the whole business around one line: '
+                              "'the permit is the asset' [t4mEx2qxaZ8 @ 00:01:37]. Business Breakdown "
+                              'traces the moat to the 1965 Highway Beautification Act. The Act froze '
+                              "supply and left grandfathered 'non-conforming' signs that new entrants "
+                              'cannot replicate, which gives whoever holds them pricing power over '
+                              'advertisers [exXUEqaAB2k @ 00:10:03]. Ken McElroy sees the same squeeze in '
+                              'Nevada. Clark County has stopped approving new boards, and only a few '
+                              "brokers work the niche. McElroy's group buys fixed two-sided boards sitting "
+                              'on 25-to-50-year leases without ever owning the land [bteMgQqmSCk @ '
+                              "00:05:40]. REtipster, reviewing Frank Rolfe's bootcamp, points to "
+                              "Michigan's cap-and-replace law: a new billboard goes up only if another one "
+                              'comes down somewhere else. The same review lists Vermont, Hawaii, Maine and '
+                              'Alaska as outright bans [Yo8dSroHdMk @ 00:06:45]. All four speakers draw '
+                              'the same conclusion. Regulation manufactures the scarcity, so a legally '
+                              'permitted face is a hard-to-copy position, and the edge goes to whoever '
+                              'locks up the site and the paperwork before the rules close the door.',
+                              'On site quality, the practitioners apply one filter before anything else: '
+                              'eyeballs. Bama Billboards screens for daily traffic above 10,000 vehicles '
+                              'and marks stoplight locations as preferable when building a target list '
+                              "[rxbKA112Tdc @ 00:02:03]. Franchise Inspectors works from Frank Rolfe's "
+                              'playbook. It sets a floor of 5,000 vehicles a day for off-highway locations '
+                              'and 20,000 on a highway, then checks whether advertisers exist nearby, the '
+                              'rent spread, and legality, confirmed with the state first and City Hall '
+                              'second [mNNTe8Yz_PI @ 00:04:28]. Codie Sanchez comes from the '
+                              'digital-platform side and lands in the same band of 10,000 to 20,000 cars a '
+                              "day. Sanchez adds two qualifiers: pick growing areas such as Miami's "
+                              'Brickell, and make sure the passing crowd matches the demographic the '
+                              'advertiser wants [DXWpZSGVI4w @ 00:09:44]. Clear Multifamily gives real '
+                              'estate investors the simplest mental model: think of the billboard as a '
+                              "'mini mall,' because the more eyeballs a location gets, the more it is "
+                              'worth [LMD9ecO4o1M @ 00:02:51]. The working floor is therefore roughly '
+                              '10,000 daily vehicles for local boards and 20,000 for highway boards. '
+                              'Growth trajectory and audience fit break ties between otherwise similar '
+                              'parcels, and visibility from the travel lane is part of every check.',
+                              'The third point of agreement is the ground deal: the landowner gets a '
+                              'minority cut and the operator gets a long runway. Mr. Money pegs the '
+                              "landowner's take at 15 to 20 percent of gross revenue [t4mEx2qxaZ8 @ "
+                              '00:02:23]. Bama Billboards opens with a low flat rate or an 18 to 20 '
+                              'percent revenue split, whichever is higher. Bama argues this protects the '
+                              'landowner from inflation and keeps them happy, and lowers the split on '
+                              "expensive builds [rxbKA112Tdc @ 00:02:54]. Shaun Academy's instructor, "
+                              'Sarah, sets the same ceiling: ground rent should not exceed about 20 '
+                              'percent of revenue. Sarah benchmarks expected advertising rates at $800 to '
+                              '$5,000 a month, or $200 to $300 in a small town [dzIF5i2KhaA @ 00:01:10]. '
+                              'On term, Robert Wallace accepts nothing shorter than 20 years. The '
+                              'alternative is a 10-year term with two or three automatic renewals, which '
+                              'stretches control to 40 to 60 years [0Lv5_kKNNWg @ 00:03:42]. The baseline, '
+                              'then, is a ground lease that keeps land cost near one-fifth of revenue and '
+                              'holds the site long enough to justify the build. Revenue-split language '
+                              'should scale down as structure cost rises, so the landowner stays whole '
+                              'without eating the margin on a monopole or digital.'],
+               'table': {'caption': 'Where multiple billboard practitioners agree on the core business '
+                                    'mechanics',
+                         'headers': ['Consensus Point',
+                                     'What Practitioners Report',
+                                     'Operator Implication',
+                                     'Expert Source'],
+                         'rows': [['The permit is the core asset',
+                                   'The legal right to stand a sign is what carries value; the structure '
+                                   'itself is secondary',
+                                   'Underwrite every deal on permit status before looking at the steel or '
+                                   'the faces',
+                                   'Mr. Money ([t4mEx2qxaZ8 @ 00:01:37])'],
+                                  ['Frozen supply creates pricing power',
+                                   'The 1965 Highway Beautification Act left grandfathered non-conforming '
+                                   'signs that cannot be newly built',
+                                   'Grandfathered faces command premium rates because advertisers have few '
+                                   'legal alternatives nearby',
+                                   'Business Breakdown ([exXUEqaAB2k @ 00:10:03])'],
+                                  ['Traffic floors decide which sites qualify',
+                                   'Minimum 5,000 vehicles per day off-highway and 20,000 per day on '
+                                   'highway locations',
+                                   'Pull counts first and drop any parcel below the floor before '
+                                   'contacting owners',
+                                   'Franchise Inspectors ([mNNTe8Yz_PI @ 00:04:28])'],
+                                  ['Landowner takes a minority share of gross',
+                                   'Landowner cut commonly runs 15 to 20 percent of gross billboard '
+                                   'revenue',
+                                   'Model land cost as roughly one-fifth of revenue when pricing any new '
+                                   'lease',
+                                   'Mr. Money ([t4mEx2qxaZ8 @ 00:02:23])'],
+                                  ['Long lease terms protect the investment',
+                                   'Twenty-year minimum, or ten years plus two to three automatic renewals '
+                                   'totaling 40-60 years',
+                                   'Never sign short terms that leave a build exposed to an early renewal '
+                                   'cliff',
+                                   'Robert_Wallace ([0Lv5_kKNNWg @ 00:03:42])'],
+                                  ['Local service beats the national chains',
+                                   'Independents win against Lamar, Outfront and Clear Channel by being '
+                                   'local and maintaining boards',
+                                   'Keep signs painted, trees cut and lights working as the main '
+                                   'competitive weapon',
+                                   'The Bell Board Podcast ([nCrchtKHbFw @ 00:30:49])'],
+                                  ['Digital multiplies sellable inventory per structure',
+                                   'Converting a two-sided static board turns two ads into sixteen, eight '
+                                   'per side',
+                                   'Treat static-to-digital conversion as the main upside lever on '
+                                   'existing permitted structures',
+                                   'Ken McElroy ([bteMgQqmSCk @ 00:00:58])']]}},
+              {'heading': 'Section 2: Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['Execution starts at the desk and finishes on the road. Bama Billboards '
+                              'begins by pulling 10 to 15 candidate parcels from the county GIS and '
+                              'recording the PPIN and owner details for each. Every parcel is then checked '
+                              'against spacing rules of 600 to 1,500 feet from other boards and 600 to '
+                              '1,000 feet from commercial activity, and only then do landowner letters go '
+                              'out [rxbKA112Tdc @ 00:01:30]. Mr. Money prices the state permit at $500 to '
+                              '$2,000, with a 60-to-120-day wait between application and approval '
+                              '[t4mEx2qxaZ8 @ 00:04:27]. Justin Booher of Vital Outdoor shows what reading '
+                              "the code line by line can produce. Booher's fifth site came from a rare CBD "
+                              'zoning class, the last one listed in the sign regulations, and the ODOT '
+                              'permit was secured first, before anything else moved [yE0a5pCCcZ0 @ '
+                              '01:01:04]. Operators on The Bell Board Podcast push back on pure screen '
+                              'work. They tell new entrants to ride the roads and join the local chamber, '
+                              "because 'you can't just do it by Google Maps' [r6MxdTpj3sg @ 00:19:43]. The "
+                              'working sequence is a GIS pull, an ordinance and spacing check, a physical '
+                              'drive-by, landowner contact, and then the permit filing. Each step either '
+                              'kills the site cheaply or feeds the next one.',
+                              'Operators use the lease to protect cash before the first ad runs. Robert '
+                              "Wallace's template runs 360 months and starts rent only after the permits "
+                              'are obtained, the structure is installed and ads are posted. Wallace '
+                              'reports this trigger has worked many times and warns against paying monthly '
+                              'land rent from the day the contract is signed [hxwD9JLVZs8 @ 00:05:26]. '
+                              'Justin Booher writes the same protection into Vital Outdoor leases: rental '
+                              'does not start until the sign is fully built and has power to it '
+                              '[yE0a5pCCcZ0 @ 00:27:37]. Mr. Money adds an exit: smart operators include a '
+                              'clause that lets them cancel the lease without penalty if the permits fail '
+                              '[t4mEx2qxaZ8 @ 00:04:49]. Wallace calls assignability the most important '
+                              'sentence in the lease. It lets an operator with no capital sign leases and '
+                              "sell them, ideally without the landlord's written consent [hxwD9JLVZs8 @ "
+                              '00:19:46]. The rest of the Wallace template builds on those terms. It gives '
+                              'the tenant sole permit rights and requires the landlord to clear '
+                              'obstructions within 24 hours. It bars competing off-premise signs on '
+                              'adjacent land the landlord controls. It lets the tenant terminate on 30 '
+                              "days' notice if visibility or traffic drops, and it sends condemnation "
+                              'compensation to the tenant.',
+                              'Practitioners give hard numbers for both build costs and revenue. Bama '
+                              'Billboards prices structures on a ladder: wood at $5,000 to $10,000 and an '
+                              'I-frame at $15,000 to $20,000. A monopole runs $50,000 to $90,000 and has '
+                              'the best resale multiple. A digital board costs $100,000 to $200,000 and '
+                              "carries six to eight advertiser slots [rxbKA112Tdc @ 00:04:51]. Mr. Money's "
+                              'model starts with $12,000 in monthly gross, then subtracts 18 percent '
+                              '($2,160) for the landowner and about $1,500 in costs. That leaves roughly '
+                              '$8,000 a month, or about $96,000 a year [t4mEx2qxaZ8 @ 00:03:50]. Business '
+                              "Breakdown's Elena case is an $85,000 build on a $9,000-a-year ground lease. "
+                              'Two faces at about $3,500 a month bring in $84,000 a year, and roughly '
+                              '$16,000 in costs leaves about $68,000 net, a margin above 80 percent '
+                              "[exXUEqaAB2k @ 00:04:12]. Ken McElroy's Columbus, Ohio deal shows the "
+                              'larger-scale version: about $20,000 a month top line, roughly $250,000 '
+                              'gross a year, and $180,000 to $190,000 net on a $1 million cost '
+                              '[bteMgQqmSCk @ 00:01:50]. Each speaker separates out the same two '
+                              "variables: the landowner's share of gross and the choice of structure type. "
+                              'Those two numbers set both the upfront capital and the monthly spread, and '
+                              'they determine how fast a board pays back its build.'],
+               'table': {'caption': 'Step-level billboard mechanics, numbers and tools taught by '
+                                    'practitioners',
+                         'headers': ['Mechanic',
+                                     'Exact Number or Tool',
+                                     'How It Is Executed',
+                                     'Expert Source'],
+                         'rows': [['Ordinance and spacing screen',
+                                   '600-1,500 ft to other boards; 600-1,000 ft to commercial activity',
+                                   'Confirm whether city or county has jurisdiction, then measure spacing '
+                                   'before any outreach',
+                                   'Bama Billboards ([rxbKA112Tdc @ 00:00:00])'],
+                                  ['Target parcel list',
+                                   '10-15 parcels pulled from county GIS with PPIN and owner details',
+                                   "Record each parcel's identifiers and owner contact, then mail lease "
+                                   'letters to owners',
+                                   'Bama Billboards ([rxbKA112Tdc @ 00:01:30])'],
+                                  ['State permit cost and timeline',
+                                   '$500-$2,000 per permit with a 60-120 day approval window',
+                                   'File in parallel with lease signing so the clock starts as early as '
+                                   'possible',
+                                   'Mr. Money ([t4mEx2qxaZ8 @ 00:04:27])'],
+                                  ['Structure cost ladder',
+                                   'Wood $5-10K, I-frame $15-20K, monopole $50-90K, digital $100-200K',
+                                   'Match structure type to capital available and the resale multiple you '
+                                   'are targeting',
+                                   'Bama Billboards ([rxbKA112Tdc @ 00:04:51])'],
+                                  ['Rent commencement trigger',
+                                   '360-month term; rent starts after permits, installation and posted ads',
+                                   'Write commencement into the lease so no land rent accrues during the '
+                                   'permitting dead time',
+                                   'Robert_Wallace ([hxwD9JLVZs8 @ 00:05:26])'],
+                                  ['Platform pricing for idle digital inventory',
+                                   "Owner's weekly or monthly rate converted to an hourly rate plus markup",
+                                   'Connect the player to the platform, owner approves each ad yes or no',
+                                   'Codie Sanchez ([DXWpZSGVI4w @ 00:08:14])'],
+                                  ['Ground lease buyout offers',
+                                   '12-15x annual rent on old 30-year leases; 10x easement equals 10% '
+                                   'return',
+                                   'Target legacy leases and mail buyout offers to convert rent into owned '
+                                   'land',
+                                   'The Bell Board Podcast ([nCrchtKHbFw @ 00:07:38])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Street-Level Moves for Filling Faces and Protecting Structures',
+                           'body': 'These are the low-cost tactics practitioners use to fill vacant faces '
+                                   'and keep structures portable without adding overhead.',
+                           'items': ["Put a 'Rent this sign' face on every vacancy: white letters on a red "
+                                     'background with a phone number. If that number gets no call within '
+                                     '30 days, it is not going to [CREUniversity — QDvEU9XEEA4 @ '
+                                     '00:00:48].',
+                                     'Mail a flyer showing traffic count, price, a photo and a map at '
+                                     'about $1 per piece. Five hundred pieces at a 1% response produce '
+                                     'five calls, and one signed advertiser fills the face [CREUniversity '
+                                     '— QDvEU9XEEA4 @ 00:02:14].',
+                                     'Call the billboard company twice, once as a buyer and once as a '
+                                     'seller, to learn both rates and see the real spread before entering '
+                                     'a market [Franchise Inspectors — mNNTe8Yz_PI @ 00:04:46].',
+                                     'Set the concrete 3-4 inches below grade so the structure can be '
+                                     'torch-cut and relocated, and limit removal duties to above-ground '
+                                     'portions only [Robert_Wallace — hxwD9JLVZs8 @ 00:09:27].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Screen the ordinance and jurisdiction',
+                              'action': 'Find out whether the city or the county controls the site and '
+                                        'record its spacing rules before choosing any parcel.',
+                              'detail': 'Check spacing of 600-1,500 ft to other boards and 600-1,000 ft to '
+                                        'commercial activity, and confirm city versus county jurisdiction '
+                                        "[Bama Billboards — rxbKA112Tdc @ 00:00:41]. In Booher's fifth "
+                                        'site, reading the zoning list all the way to the last class '
+                                        'turned up a site competitors had missed [The Bell Board Podcast — '
+                                        'yE0a5pCCcZ0 @ 01:01:04].'},
+                             {'step': 2,
+                              'title': 'Build and qualify the target list',
+                              'action': 'Pull 10-15 parcels from the county GIS, record the PPIN and '
+                                        'owner, and filter by traffic count.',
+                              'detail': 'Keep parcels with more than 10,000 vehicles a day and prefer '
+                                        'stoplight locations [Bama Billboards — rxbKA112Tdc @ 00:02:03]. '
+                                        'Drive every site and join the chamber instead of relying on '
+                                        'Google Maps [The Bell Board Podcast — r6MxdTpj3sg @ 00:19:43].'},
+                             {'step': 3,
+                              'title': 'Sign a lease that protects cash and resale',
+                              'action': 'Offer a flat rate or an 18-20% split, whichever is higher, with '
+                                        'rent deferred until the board is live and full assignability.',
+                              'detail': 'Rent starts only after permits, installation and posted ads '
+                                        '[Robert_Wallace — hxwD9JLVZs8 @ 00:05:26]. Include assignability '
+                                        "so the lease can be sold without the landlord's consent "
+                                        '[Robert_Wallace — hxwD9JLVZs8 @ 00:19:46], and add penalty-free '
+                                        'cancellation if the permits fail [Mr. Money — t4mEx2qxaZ8 @ '
+                                        '00:04:49].'},
+                             {'step': 4,
+                              'title': 'Permit, build and sell the faces',
+                              'action': 'Submit the permit package, choose a structure type, then fill the '
+                                        'faces through signage, mail and move-over calls.',
+                              'detail': 'The permit package needs the lease, the deed, drawings and '
+                                        'insurance or a bond [Bama Billboards — rxbKA112Tdc @ 00:03:47]. '
+                                        'Once the board is up, call existing advertisers up and down the '
+                                        'highway and undercut their current rate to move them onto your '
+                                        'face [CREUniversity — QDvEU9XEEA4 @ 00:01:24].'}]},
+              {'heading': 'Section 3: Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The sharpest split among operators is whether to rent the dirt or own it. '
+                              'Robert_Wallace stays on standard ground leases because the parcels in play '
+                              'sit on $2–3M land, and when a landowner asks for an easement instead, the '
+                              'expected price is a lump sum equal to 8 to 15 years of rent paid upfront '
+                              '[0Lv5_kKNNWg @ 00:03:20]. Dan Franklin, a third-generation operator, runs '
+                              'the opposite playbook: the company owns land or easements under roughly 30% '
+                              'of about 501 sites, and that slice produces about 35% of revenue '
+                              '[nCrchtKHbFw @ 00:03:29]. Host Neil Bell pushed back in the same episode, '
+                              'warning that easements cannot be depreciated and that roads can move; '
+                              "Franklin's counter is to check future road plans before paying and to note "
+                              'that a $10,000 easement carries far less exposure [nCrchtKHbFw @ 00:04:15]. '
+                              'Franchise Inspectors frames ownership in the bluntest terms: put the sign '
+                              'on land you already own and the ground-rent line vanishes, which they call '
+                              '100 percent margin [mNNTe8Yz_PI @ 00:05:18]. Leasing preserves capital and '
+                              'lets a thin-wallet operator stack sites quickly; owning the dirt trades '
+                              'cash today for permanent rent elimination, and the operators who choose it '
+                              'are betting the road stays put and the permit stays live.',
+                              'Practitioners also split on how the landowner gets paid. Bama Billboards '
+                              'opens with a letter offering a low flat rate or an 18–20% revenue split, '
+                              'whichever is higher, arguing the structure protects the landowner from '
+                              'inflation and keeps them happy, and offers a lower split on sites that are '
+                              'costly to build [rxbKA112Tdc @ 00:02:54]. Dan Franklin pushes the other '
+                              "way: the company's leases are mostly flat, because percentage deals breed "
+                              'disputes, down to an argument over a $17 trade for window blinds '
+                              '[nCrchtKHbFw @ 00:47:38]. The flat camp is buying peace; the split camp is '
+                              "buying landowner goodwill that rises alongside the board's revenue. Timing "
+                              'of the first rent check is contested as well. Justin Booher of Vital '
+                              'Outdoor uses a lease stating that rental does not start until the sign is '
+                              'fully built and has power to it, which means the landowner waits out every '
+                              'month of permitting and construction [yE0a5pCCcZ0 @ 00:27:37]. The host of '
+                              'the same episode runs a different trigger, with rent starting within 180 '
+                              "days of permits being issued [yE0a5pCCcZ0 @ 00:28:50]. Booher's clause "
+                              "shields the operator's cash through a slow build, while the host's clause "
+                              'hands the landowner a fixed outer date for the first payment, so an '
+                              'operator has to pick which side absorbs construction delays.',
+                              'Digital is where the loudest disagreement lives. Ken McElroy pitches '
+                              'conversion as pure multiplication: spend $250–400K and a two-sided board '
+                              'goes from two ads to 16, eight per side [bteMgQqmSCk @ 00:00:58]. On paper '
+                              'that is the same structure, the same ground lease and the same permit '
+                              'carrying eight times the inventory. Business Breakdown backs the upside '
+                              'with a case where converting one face more than doubled its income '
+                              '[exXUEqaAB2k @ 00:14:04]. Justin Booher lived the downside. Converting a '
+                              'static board to digital cost the existing advertiser, and some buyers '
+                              'balked at paying the same price for a one-eighth share of the screen '
+                              '[yE0a5pCCcZ0 @ 00:12:38]. Shaun Academy flags the same friction from the '
+                              'advertiser side: some businesses are reluctant to share an electronic '
+                              'billboard that changes advertisements every 10 seconds [dzIF5i2KhaA @ '
+                              '00:02:51]. The practical split is between operators who see digital as an '
+                              'occupancy multiplier and operators who know their anchor tenants bought '
+                              'exclusivity. An anchor paying for a static face is not automatically a '
+                              'buyer of one slot in a rotation, so the conversion math only works if the '
+                              'market has enough short-term and small-budget advertisers to refill the '
+                              'freed slots.'],
+               'table': {'caption': 'Side-by-side playbooks where billboard operators take opposite '
+                                    'positions',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Land control on new sites',
+                                   'Stay on ground leases: 20-year minimum or 10 years with two to three '
+                                   'auto-renewals',
+                                   'Own the dirt: buy out old 30-year leases with 12–15x rent offers',
+                                   'Robert_Wallace ([0Lv5_kKNNWg @ 00:03:42]); The Bell Board Podcast '
+                                   '([nCrchtKHbFw @ 00:07:38])'],
+                                  ['Landowner rent structure',
+                                   'Low flat rate or 18–20% revenue split, whichever is higher for the '
+                                   'landowner',
+                                   'Mostly flat leases, because percentage deals spark disputes such as a '
+                                   '$17 blinds trade',
+                                   'Bama Billboards ([rxbKA112Tdc @ 00:02:54]); The Bell Board Podcast '
+                                   '([nCrchtKHbFw @ 00:47:38])'],
+                                  ['When the first rent check is due',
+                                   'No rent until the sign is fully built and has power to it',
+                                   'Rent starts within 180 days of the permits being issued by the '
+                                   'jurisdiction',
+                                   'The Bell Board Podcast ([yE0a5pCCcZ0 @ 00:27:37]; [yE0a5pCCcZ0 @ '
+                                   '00:28:50])'],
+                                  ['Static versus digital conversion',
+                                   'Spend $250–400K and turn two ads into 16, eight per side',
+                                   'Conversion lost the existing advertiser and buyers balked at '
+                                   'one-eighth share pricing',
+                                   'Ken McElroy ([bteMgQqmSCk @ 00:00:58]); The Bell Board Podcast '
+                                   '([yE0a5pCCcZ0 @ 00:12:38])'],
+                                  ['How inventory gets sold',
+                                   'Platform model with no sales team, weekly rates converted to hourly '
+                                   'plus markup',
+                                   'Local relational selling dominates; programmatic money arrives in 3–4 '
+                                   'months as icing',
+                                   'Codie Sanchez ([DXWpZSGVI4w @ 00:08:14]); The Bell Board Podcast '
+                                   '([r6MxdTpj3sg @ 00:14:11]; [nCrchtKHbFw @ 00:33:56])'],
+                                  ['Site selection filter',
+                                   'Hard traffic floors: 5,000 vehicles a day off-highway, 20,000 on '
+                                   'highway',
+                                   'A cow-field hilltop visible two to four miles beats a sign with 4x the '
+                                   'traffic',
+                                   'Franchise Inspectors ([mNNTe8Yz_PI @ 00:04:28]); The Bell Board '
+                                   'Podcast ([yE0a5pCCcZ0 @ 00:48:50])'],
+                                  ['Insurance on the portfolio',
+                                   'Buy a standard liability insurance policy and require builder '
+                                   'warranties and software training',
+                                   'Insure only bank-financed signs; paid-off statics carry no insurance '
+                                   'at all',
+                                   'Shaun Academy ([dzIF5i2KhaA @ 00:03:30]); The Bell Board Podcast '
+                                   '([yE0a5pCCcZ0 @ 00:44:19])']]}},
+              {'heading': 'Section 4: Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The most expensive failures start on paper, not on the pole. On The Bell '
+                              'Board Podcast, an operator named Jonathan spent 13 months landing what was '
+                              'called the best lease yet: 50 years, fixed rate, $2,000 a year. The steel '
+                              'was delivered, then the state took the property, and because the lease had '
+                              'never been filed with the county as an addendum, the team expects no '
+                              'reimbursement while the steel sits on a farm [r6MxdTpj3sg @ 00:01:31]. '
+                              "Robert_Wallace's template closes that hole from the other side by routing "
+                              'condemnation compensation to the tenant, not the landlord [hxwD9JLVZs8 @ '
+                              '00:15:14]. Mr. Money shows what that clause can be worth, pointing to St. '
+                              'Paul paying $4.3M for a single digital board taken by eminent domain '
+                              '[t4mEx2qxaZ8 @ 00:06:25]. Acquisitions carry their own paper traps. Dan '
+                              'Franklin deliberately buys messes, yet still lists surprise ownership '
+                              'claims, landlords who had gone unpaid for two years, and overpaying for '
+                              'land among the mistakes made along the way [nCrchtKHbFw @ 00:12:47]. The '
+                              'pattern across all four: the structure is only as safe as the recorded '
+                              'lease, the condemnation clause and the title work behind it, and a missing '
+                              'filing can zero out a site that cost more than a year to sign.',
+                              'Weather and the non-conforming rulebook combine into the second trap. '
+                              "Business Breakdown walks through Elena's storm loss: grandfathered "
+                              'non-conforming signs lose their protection if reconstruction runs above '
+                              'roughly 50% of replacement value, so instead of rebuilding, the damage was '
+                              'repaired and every cost documented, because a fresh build would have voided '
+                              'the protection and, as the narrator put it, "She could not replace it" '
+                              '[exXUEqaAB2k @ 00:11:18]. Wind is the routine killer. A 50-foot backlit '
+                              'fuel-sign vinyl blew out twice, each time with a rented lift, until a '
+                              'breathable mesh replacement survived later storms [r6MxdTpj3sg @ 00:04:51]. '
+                              'Justin Booher reports wind frames blowing out vinyl even with a self-promo '
+                              'underneath, which is why Booher prefers metal faces, especially on remote '
+                              'signs [yE0a5pCCcZ0 @ 00:45:11]. Lightning is the digital-specific version: '
+                              "a one-year-old Booher digital was struck on Father's Day 2025, insurance "
+                              'with loss-of-income coverage paid to reface both sides, and Watchfire would '
+                              'only write a letter saying it could not cover latent damage [yE0a5pCCcZ0 @ '
+                              '00:47:15]. The economics check is simple: a static face blown out twice '
+                              'costs two lift rentals and two prints, while an uninsured, unprotected '
+                              'hilltop digital can take a full face replacement in one strike.',
+                              "Fights over permits and dirt eat the margin quietly. Justin Booher's ninth "
+                              'sign drew a lawsuit from a wealthy neighborhood against the city over the '
+                              'permit, triggering a stop-work order; an offer of free nonprofit ad space '
+                              'was refused, and although Booher won on the TxDOT 660-foot question and '
+                              'again on the district-court appeal, the fight ran 4 years and cost $40K, '
+                              'after which the street got an overlay banning new signs [yE0a5pCCcZ0 @ '
+                              '00:30:18]. The same build produced a second hit: concrete filled an '
+                              'unmarked private sewer lateral, roughly 150–200 feet had to be dug up, and '
+                              'Booher brought in porta-potties for the affected businesses [yE0a5pCCcZ0 @ '
+                              '00:35:33]. Dan Franklin drills foundations nine times in ten and has a well '
+                              'driller probe a 100–150-foot window first, so soil surprises show up before '
+                              'the crew mobilizes [nCrchtKHbFw @ 00:18:37]. On the revenue side, '
+                              'CREUniversity sets a hard clock: if the phone number on a rent-this-sign '
+                              'face draws no call within 30 days, it will not, so a dead board needs '
+                              'move-over calls, direct mail and exit-now lists instead of patience '
+                              '[QDvEU9XEEA4 @ 00:00:17]. Legal bills, utility damage and empty faces all '
+                              'hit the same early cash flow, so each one needs a budget line before the '
+                              'build starts.'],
+               'table': {'caption': 'Firsthand traps, what they cost, and the operator fix',
+                         'headers': ['Trap',
+                                     'What Happened Firsthand',
+                                     'Economics Check Or Fix',
+                                     'Expert Source'],
+                         'rows': [['Unfiled long-term ground lease before steel ships',
+                                   'A 50-year, $2,000-a-year lease took 13 months; the state took the '
+                                   'property and steel sits on a farm',
+                                   'File the lease with the county as an addendum before ordering steel',
+                                   'The Bell Board Podcast ([r6MxdTpj3sg @ 00:01:31])'],
+                                  ['Rebuilding a storm-damaged non-conforming sign',
+                                   'Reconstruction above roughly 50% of replacement value voids the '
+                                   'grandfathered protection on the sign',
+                                   'Repair instead of rebuilding and document every repair cost after the '
+                                   'storm',
+                                   'Business Breakdown ([exXUEqaAB2k @ 00:11:18])'],
+                                  ['Trusting utility locates before pouring concrete',
+                                   'Concrete filled an unmarked private sewer lateral, forcing 150–200 '
+                                   'feet of digging and porta-potties for businesses',
+                                   'Re-mark utilities through 811; one re-mark revealed a fiber line at '
+                                   'the original pole spot',
+                                   'The Bell Board Podcast ([yE0a5pCCcZ0 @ 00:35:33]; [yE0a5pCCcZ0 @ '
+                                   '00:39:04])'],
+                                  ['Exposed hilltop digital with no lightning protection',
+                                   "A one-year-old digital was hit by lightning on Father's Day 2025, "
+                                   'requiring both sides refaced',
+                                   'Carry loss-of-income insurance and put a lightning rod on undeveloped '
+                                   'hilltop digitals',
+                                   'The Bell Board Podcast ([yE0a5pCCcZ0 @ 00:47:52])'],
+                                  ['Cheap imported digital screens without the right technology',
+                                   'Low-cost China imports lack the reporting and platform connectivity '
+                                   'needed to sell and prove inventory',
+                                   'Buy displays that support reporting and can connect to booking '
+                                   'platforms',
+                                   'Codie Sanchez ([DXWpZSGVI4w @ 00:09:20])'],
+                                  ['Underpricing small-town static rents and carrying slow payers',
+                                   'Rents of $150, $200 and $250 a month, plus a non-paying tenant to '
+                                   'chase down',
+                                   'Move rents toward $250; a 1% rule on $800 a month supports roughly an '
+                                   '$80K note',
+                                   'Ryan Wilson Vlogs ([jp9v3OKFs20 @ 00:12:11]; [jp9v3OKFs20 @ '
+                                   '00:14:56])'],
+                                  ['Overestimating digital payback speed on a big build',
+                                   'Digital builds run $150–300K-plus, with state permits taking 60–120 '
+                                   'days to clear',
+                                   'Model roughly 2.5 to 3 years of payback on a $250K investment',
+                                   'Mr. Money ([t4mEx2qxaZ8 @ 00:04:27]; [t4mEx2qxaZ8 @ 00:07:47])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Clear These Four Checks Before Steel Goes Up',
+                           'body': 'Pass/fail checks pulled from losses operators actually ate in the '
+                                   'field.',
+                           'items': ['Record the ground lease with the county as an addendum before '
+                                     'ordering steel; an unfiled 50-year lease left one operator with no '
+                                     'reimbursement after the state took the property [The Bell Board '
+                                     'Podcast — r6MxdTpj3sg @ 00:01:31].',
+                                     'Tie rent commencement to permits, a finished structure and posted '
+                                     'ads, so you never pay monthly land rent from the signing date '
+                                     '[Robert_Wallace — hxwD9JLVZs8 @ 00:05:42].',
+                                     'Before repairing any storm-damaged non-conforming sign, total the '
+                                     'cost against roughly 50% of replacement value and document every '
+                                     'repair [Business Breakdown — exXUEqaAB2k @ 00:11:18].',
+                                     'Re-mark utilities and confirm private laterals before pouring; one '
+                                     're-mark found a fiber line at the original pole spot [The Bell Board '
+                                     'Podcast — yE0a5pCCcZ0 @ 00:39:04].']}}],
+ 'pull_quote': '"You can\'t build a billboard company well super fast." — Dan Franklin, The Bell Board '
+               'Podcast (nCrchtKHbFw @ 00:51:02).',
+ 'diagram_id': 'diag-01',
+ 'action_checklist': ['Pull the city and county sign ordinances first and log spacing rules of 600–1,500 '
+                      'ft to other boards and 600–1,000 ft to commercial activity [Bama Billboards — '
+                      'rxbKA112Tdc @ 00:00:41].',
+                      'Build a 10–15 parcel target list from county GIS, recording PPIN and owner details, '
+                      'and keep sites above 10,000 traffic with stoplights preferred [Bama Billboards — '
+                      'rxbKA112Tdc @ 00:00:59].',
+                      'Ride the roads in person and join the local chamber instead of scouting by Google '
+                      'Maps alone [The Bell Board Podcast — r6MxdTpj3sg @ 00:19:43].',
+                      'Lock an assignable lease with a 12-month non-renewal notice so the signed site can '
+                      'be sold or transferred [Robert_Wallace — hxwD9JLVZs8 @ 00:19:46].',
+                      'Fill empty faces with a red-and-white rent-this-sign creative and mail about 500 '
+                      'flyers at roughly $1 each with traffic, price, photo and map [CREUniversity — '
+                      'QDvEU9XEEA4 @ 00:02:14].',
+                      'Call the incumbent billboard company twice to capture both its buy rate and its '
+                      'sell rate before pricing your own board [Franchise Inspectors — mNNTe8Yz_PI @ '
+                      '00:04:46].'],
+ 'statutory_citations': [{'title': 'The Bell Board Podcast — How Profitable Is the Billboard Business? '
+                                   'Industry Experts Share Their Advice [00:01:31]',
+                          'url': 'https://www.youtube.com/watch?v=r6MxdTpj3sg&t=91s',
+                          'relevance': 'Primary practitioner testimony on losing a 50-year lease and '
+                                       'delivered steel after an unfiled lease met a state taking.'},
+                         {'title': 'The Bell Board Podcast — How to Buy, Build & Grow a Billboard Business '
+                                   '| Dan Franklin [00:12:47]',
+                          'url': 'https://www.youtube.com/watch?v=nCrchtKHbFw&t=767s',
+                          'relevance': 'Primary practitioner testimony on acquisition mistakes, easement '
+                                       'buyouts and flat versus percentage leases.'},
+                         {'title': 'The Bell Board Podcast — Want to build a billboard business? W/Justin '
+                                   'Booher - Vital Outdoor [00:30:18]',
+                          'url': 'https://www.youtube.com/watch?v=yE0a5pCCcZ0&t=1818s',
+                          'relevance': 'Primary practitioner testimony on a 4-year, $40K permit lawsuit, '
+                                       'sewer-lateral damage and lightning losses.'},
+                         {'title': 'Business Breakdown — The Real Economics of Owning a Billboard '
+                                   '[00:11:18]',
+                          'url': 'https://www.youtube.com/watch?v=exXUEqaAB2k&t=678s',
+                          'relevance': 'Primary practitioner testimony on the 50% replacement-value trap '
+                                       'for non-conforming signs after storm damage.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'DXWpZSGVI4w',
+                       'title': 'How to Make $3M a Year Buying Billboards',
+                       'channel': 'Codie Sanchez',
+                       'author': 'Codie Sanchez',
+                       'text': 'For long-term campaigns, go direct to the billboard owner.',
+                       'tip': 'For long-term campaigns, go direct to the billboard owner.',
+                       'timestamp': 543,
+                       'timestamp_seconds': 543,
+                       'timestamp_label': '[00:09:03]',
+                       'url': 'https://www.youtube.com/watch?v=DXWpZSGVI4w&t=543s',
+                       'markdown': '[00:09:03](https://www.youtube.com/watch?v=DXWpZSGVI4w&t=543s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'bteMgQqmSCk',
+                       'title': 'This Is the Most Underrated Investment in America',
+                       'channel': 'Ken McElroy',
+                       'author': 'Ken McElroy',
+                       'text': 'So, I go from two ads to 16 ads.',
+                       'tip': 'So, I go from two ads to 16 ads.',
+                       'timestamp': 58,
+                       'timestamp_seconds': 58,
+                       'timestamp_label': '[00:00:58]',
+                       'url': 'https://www.youtube.com/watch?v=bteMgQqmSCk&t=58s',
+                       'markdown': '[00:00:58](https://www.youtube.com/watch?v=bteMgQqmSCk&t=58s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'rxbKA112Tdc',
+                       'title': 'How to start a Billboard Company in 7 Steps',
+                       'channel': 'Bama Billboards',
+                       'author': 'Bama Billboards',
+                       'text': 'So, this kind of protects the landowner from inflation and keeps them '
+                               'happy, which I think is good business.',
+                       'tip': 'So, this kind of protects the landowner from inflation and keeps them '
+                              'happy, which I think is good business.',
+                       'timestamp': 174,
+                       'timestamp_seconds': 174,
+                       'timestamp_label': '[00:02:54]',
+                       'url': 'https://www.youtube.com/watch?v=rxbKA112Tdc&t=174s',
+                       'markdown': '[00:02:54](https://www.youtube.com/watch?v=rxbKA112Tdc&t=174s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'LMD9ecO4o1M',
+                       'title': '2 Things Real Estate Investors MUST Know About Billboard Investments',
+                       'channel': 'Clear Multifamily',
+                       'author': 'Clear Multifamily',
+                       'text': 'So, think of your billboard as like a mini mall because the more eyeballs '
+                               'you have, the more your location is worth.',
+                       'tip': 'So, think of your billboard as like a mini mall because the more eyeballs '
+                              'you have, the more your location is worth.',
+                       'timestamp': 171,
+                       'timestamp_seconds': 171,
+                       'timestamp_label': '[00:02:51]',
+                       'url': 'https://www.youtube.com/watch?v=LMD9ecO4o1M&t=171s',
+                       'markdown': '[00:02:51](https://www.youtube.com/watch?v=LMD9ecO4o1M&t=171s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '0Lv5_kKNNWg',
+                       'title': 'Leasing VS Easements VS Buying land for billboards',
+                       'channel': 'Robert_Wallace',
+                       'author': 'Robert_Wallace',
+                       'text': 'Easements usually require a lump sum of 8 to 15 years of rent paid '
+                               'upfront.',
+                       'tip': 'Easements usually require a lump sum of 8 to 15 years of rent paid upfront.',
+                       'timestamp': 200,
+                       'timestamp_seconds': 200,
+                       'timestamp_label': '[00:03:20]',
+                       'url': 'https://www.youtube.com/watch?v=0Lv5_kKNNWg&t=200s',
+                       'markdown': '[00:03:20](https://www.youtube.com/watch?v=0Lv5_kKNNWg&t=200s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'jp9v3OKFs20',
+                       'title': 'Billboard Hustle – Watch This! How Much $$ Can You Really Make?!',
+                       'channel': 'Ryan Wilson Vlogs',
+                       'author': 'Ryan Wilson Vlogs',
+                       'text': 'So I make pretty good cash flow off of them all.',
+                       'tip': 'So I make pretty good cash flow off of them all.',
+                       'timestamp': 54,
+                       'timestamp_seconds': 54,
+                       'timestamp_label': '[00:00:54]',
+                       'url': 'https://www.youtube.com/watch?v=jp9v3OKFs20&t=54s',
+                       'markdown': '[00:00:54](https://www.youtube.com/watch?v=jp9v3OKFs20&t=54s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 't4mEx2qxaZ8',
+                       'title': 'So You Want to Own a Billboard? The Real Numbers Behind $10,000 a Month',
+                       'channel': 'Mr. Money',
+                       'author': 'Mr. Money',
+                       'text': 'Smart operators add a clause that lets them cancel the lease without '
+                               'penalty if the permits fail.',
+                       'tip': 'Smart operators add a clause that lets them cancel the lease without '
+                              'penalty if the permits fail.',
+                       'timestamp': 289,
+                       'timestamp_seconds': 289,
+                       'timestamp_label': '[00:04:49]',
+                       'url': 'https://www.youtube.com/watch?v=t4mEx2qxaZ8&t=289s',
+                       'markdown': '[00:04:49](https://www.youtube.com/watch?v=t4mEx2qxaZ8&t=289s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'exXUEqaAB2k',
+                       'title': 'The Real Economics of Owning a Billboard',
+                       'channel': 'Business Breakdown',
+                       'author': 'Business Breakdown',
+                       'text': 'She could not replace it.',
+                       'tip': 'She could not replace it.',
+                       'timestamp': 727,
+                       'timestamp_seconds': 727,
+                       'timestamp_label': '[00:12:07]',
+                       'url': 'https://www.youtube.com/watch?v=exXUEqaAB2k&t=727s',
+                       'markdown': '[00:12:07](https://www.youtube.com/watch?v=exXUEqaAB2k&t=727s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'QDvEU9XEEA4',
+                       'title': 'The Outdoor Billboard Investment Boot Camp - The Ultimate Resource To '
+                                'Learn Billboard Investing',
+                       'channel': 'CREUniversity',
+                       'author': 'CREUniversity',
+                       'text': 'If the phone number on the sign does not get a call within 30 days, it is '
+                               'not going to.',
+                       'tip': 'If the phone number on the sign does not get a call within 30 days, it is '
+                              'not going to.',
+                       'timestamp': 17,
+                       'timestamp_seconds': 17,
+                       'timestamp_label': '[00:00:17]',
+                       'url': 'https://www.youtube.com/watch?v=QDvEU9XEEA4&t=17s',
+                       'markdown': '[00:00:17](https://www.youtube.com/watch?v=QDvEU9XEEA4&t=17s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'mNNTe8Yz_PI',
+                       'title': 'Unique Passive Income Business  - Billboards!',
+                       'channel': 'Franchise Inspectors',
+                       'author': 'Franchise Inspectors',
+                       'text': 'Call the billboard company twice to get both the buy rate and the sell '
+                               'rate.',
+                       'tip': 'Call the billboard company twice to get both the buy rate and the sell '
+                              'rate.',
+                       'timestamp': 286,
+                       'timestamp_seconds': 286,
+                       'timestamp_label': '[00:04:46]',
+                       'url': 'https://www.youtube.com/watch?v=mNNTe8Yz_PI&t=286s',
+                       'markdown': '[00:04:46](https://www.youtube.com/watch?v=mNNTe8Yz_PI&t=286s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Yo8dSroHdMk',
+                       'title': "A Review of Frank Rolfe's Billboard University Bootcamp",
+                       'channel': 'REtipster',
+                       'author': 'REtipster',
+                       'text': 'You can put a new billboard in, but only if you remove another billboard '
+                               'somewhere else.',
+                       'tip': 'You can put a new billboard in, but only if you remove another billboard '
+                              'somewhere else.',
+                       'timestamp': 405,
+                       'timestamp_seconds': 405,
+                       'timestamp_label': '[00:06:45]',
+                       'url': 'https://www.youtube.com/watch?v=Yo8dSroHdMk&t=405s',
+                       'markdown': '[00:06:45](https://www.youtube.com/watch?v=Yo8dSroHdMk&t=405s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'r6MxdTpj3sg',
+                       'title': 'How Profitable Is the Billboard Business? Industry Experts Share Their '
+                                'Advice',
+                       'channel': 'The Bell Board Podcast',
+                       'author': 'The Bell Board Podcast',
+                       'text': "It's my best one yet, 50-year lease, fixed rate, $2,000 a year.",
+                       'tip': "It's my best one yet, 50-year lease, fixed rate, $2,000 a year.",
+                       'timestamp': 91,
+                       'timestamp_seconds': 91,
+                       'timestamp_label': '[00:01:31]',
+                       'url': 'https://www.youtube.com/watch?v=r6MxdTpj3sg&t=91s',
+                       'markdown': '[00:01:31](https://www.youtube.com/watch?v=r6MxdTpj3sg&t=91s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'nCrchtKHbFw',
+                       'title': 'How to Buy, Build & Grow a Billboard Business | Dan Franklin',
+                       'channel': 'The Bell Board Podcast',
+                       'author': 'The Bell Board Podcast',
+                       'text': "You can't build a billboard company well super fast.",
+                       'tip': "You can't build a billboard company well super fast.",
+                       'timestamp': 3062,
+                       'timestamp_seconds': 3062,
+                       'timestamp_label': '[00:51:02]',
+                       'url': 'https://www.youtube.com/watch?v=nCrchtKHbFw&t=3062s',
+                       'markdown': '[00:51:02](https://www.youtube.com/watch?v=nCrchtKHbFw&t=3062s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'hxwD9JLVZs8',
+                       'title': 'Billboard Land Lease Contract (Free Download)',
+                       'channel': 'Robert_Wallace',
+                       'author': 'Robert_Wallace',
+                       'text': 'Out of the whole lease, this right here is a very, very important '
+                               'sentence, because this allows you to assign the lease contract to another '
+                               'person.',
+                       'tip': 'Out of the whole lease, this right here is a very, very important sentence, '
+                              'because this allows you to assign the lease contract to another person.',
+                       'timestamp': 1186,
+                       'timestamp_seconds': 1186,
+                       'timestamp_label': '[00:19:46]',
+                       'url': 'https://www.youtube.com/watch?v=hxwD9JLVZs8&t=1186s',
+                       'markdown': '[00:19:46](https://www.youtube.com/watch?v=hxwD9JLVZs8&t=1186s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'hxwD9JLVZs8',
+                       'title': 'Billboard Land Lease Contract (Free Download)',
+                       'channel': 'Robert_Wallace',
+                       'author': 'Robert_Wallace',
+                       'text': "You don't want to have to start paying monthly land rent on the date this "
+                               'contract is signed.',
+                       'tip': "You don't want to have to start paying monthly land rent on the date this "
+                              'contract is signed.',
+                       'timestamp': 342,
+                       'timestamp_seconds': 342,
+                       'timestamp_label': '[00:05:42]',
+                       'url': 'https://www.youtube.com/watch?v=hxwD9JLVZs8&t=342s',
+                       'markdown': '[00:05:42](https://www.youtube.com/watch?v=hxwD9JLVZs8&t=342s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'dzIF5i2KhaA',
+                       'title': 'How to Start a Billboard Advertising Business',
+                       'channel': 'Shaun Academy',
+                       'author': 'Shaun Academy',
+                       'text': 'At the same time advertisers may be reluctant to share an electronic '
+                               'billboard that changes advertisements every 10 seconds.',
+                       'tip': 'At the same time advertisers may be reluctant to share an electronic '
+                              'billboard that changes advertisements every 10 seconds.',
+                       'timestamp': 171,
+                       'timestamp_seconds': 171,
+                       'timestamp_label': '[00:02:51]',
+                       'url': 'https://www.youtube.com/watch?v=dzIF5i2KhaA&t=171s',
+                       'markdown': '[00:02:51](https://www.youtube.com/watch?v=dzIF5i2KhaA&t=171s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'yE0a5pCCcZ0',
+                       'title': 'Want to build a billboard business? W/Justin Booher - Vital Outdoor',
+                       'channel': 'The Bell Board Podcast',
+                       'author': 'The Bell Board Podcast',
+                       'text': "But I will say if anybody has a sign, a digital especially that's in a "
+                               "kind of not remote area but undeveloped and it's up on a hill with no "
+                               'trees around it, you better put a lightning rod on it.',
+                       'tip': "But I will say if anybody has a sign, a digital especially that's in a kind "
+                              "of not remote area but undeveloped and it's up on a hill with no trees "
+                              'around it, you better put a lightning rod on it.',
+                       'timestamp': 2872,
+                       'timestamp_seconds': 2872,
+                       'timestamp_label': '[00:47:52]',
+                       'url': 'https://www.youtube.com/watch?v=yE0a5pCCcZ0&t=2872s',
+                       'markdown': '[00:47:52](https://www.youtube.com/watch?v=yE0a5pCCcZ0&t=2872s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'yE0a5pCCcZ0',
+                       'title': 'Want to build a billboard business? W/Justin Booher - Vital Outdoor',
+                       'channel': 'The Bell Board Podcast',
+                       'author': 'The Bell Board Podcast',
+                       'text': "The statics that are paid off, we don't insure.",
+                       'tip': "The statics that are paid off, we don't insure.",
+                       'timestamp': 2659,
+                       'timestamp_seconds': 2659,
+                       'timestamp_label': '[00:44:19]',
+                       'url': 'https://www.youtube.com/watch?v=yE0a5pCCcZ0&t=2659s',
+                       'markdown': '[00:44:19](https://www.youtube.com/watch?v=yE0a5pCCcZ0&t=2659s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'}]}

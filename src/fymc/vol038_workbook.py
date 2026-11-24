@@ -1,1404 +1,921 @@
 from __future__ import annotations
 
-
 def build_volume_038_workbook() -> dict:
-    def field(name: str, input_type: str, prompt: str, example: str) -> dict:
-        return {
-            "name": name,
-            "type": input_type,
-            "prompt": prompt,
-            "example": example,
-        }
-
-    return {
-        "workbook_id": "wb-038-contingent-bill-audit-and-tax-credit-recovery",
-        "volume_id": "vol-038-contingent-bill-audit-and-tax-credit-recovery",
-        "title": "Contingent Corporate Bill-Audit & Tax-Credit Recovery — Operator Companion Workbook",
-        "subtitle": (
-            "6 Printable Operator Worksheets for Counterparty Underwriting, "
-            "Recovery Economics, Evidence-Led Execution, Statutory Controls, "
-            "Carrier and Utility Automation, and a Transferable Small-Team Recovery Pod"
-        ),
-        "worksheets": [
-            {
-                "worksheet_id": "ws-01",
-                "number": 1,
-                "title": "Arbitrage Deal / Counterparty Underwriting & Spread Qualification",
-                "purpose": (
-                    "Qualify recoverable corporate expenses before purchasing specialist time. "
-                    "Separate measurable carrier, utility, property-assessment, and employment-credit "
-                    "opportunities from speculative savings; establish account authority, contract "
-                    "eligibility, evidence quality, collection timing, and an operator fee that "
-                    "survives both disputes and delivery costs."
-                ),
-                "chapter_ref": "Q1, Q2, Q6",
-                "instructions": [
-                    (
-                        "Create one opportunity record for each client entity, account, recovery "
-                        "category, and assessment or invoice period. Obtain signed authority and "
-                        "immutable baseline invoices before sharing findings, contacting counterparties, "
-                        "or requesting access to client account systems."
-                    ),
-                    (
-                        "Read the actual carrier agreement, utility tariff, assessment notice, or "
-                        "credit statute before applying a recovery percentage. Record exclusions, "
-                        "waivers, filing windows, account ownership, and specialist requirements; "
-                        "never substitute a public marketing page for the governing document."
-                    ),
-                    (
-                        "Estimate recoverable value from a documented sample and distinguish issued "
-                        "credits from merely alleged errors. Model the operator's contractual share "
-                        "separately from client benefits, then subtract specialist delivery costs "
-                        "and expected rework before qualifying the spread."
-                    ),
-                    (
-                        "Interview accounts payable, procurement, facilities, payroll, and the "
-                        "authorized tax practitioner as relevant. Reconcile their answers against "
-                        "documents, identify incumbent auditors, and assign ownership for duplicate "
-                        "claims, prior appeals, disputed baselines, and delayed counterparty responses."
-                    ),
-                    (
-                        "Advance only opportunities with an identified payer, defensible entitlement, "
-                        "accessible evidence, and executable fee terms. Route tax-linked compensation "
-                        "for practitioner review independently of commercial bill auditing, and "
-                        "document a narrower paid-processing scope when contingent compensation is restricted."
-                    ),
-                ],
-                "fields": [
-                    field(
-                        "Client entity, account map, and signing authority",
-                        "textarea",
-                        (
-                            "Identify the contracting entity, covered subsidiaries, account numbers, "
-                            "authorized signer, and records custodian. Explain how authority will "
-                            "be verified and which accounts remain outside the signed engagement "
-                            "until separately documented."
-                        ),
-                        (
-                            "Harbor Components LLC covers two facilities and parcel accounts ending "
-                            "1842 and 9916. Its controller signs the engagement and account-specific "
-                            "Letters of Authorization. A third facility belongs to Harbor Realty "
-                            "LLC and stays excluded until that entity signs. Accounts payable "
-                            "provides twelve months of dated invoice exports."
-                        ),
-                    ),
-                    field(
-                        "Recovery lane and counterparty entitlement",
-                        "textarea",
-                        (
-                            "Specify the recoverable charge, governing entitlement, counterparty "
-                            "responsible for resolution, and recovery period. Distinguish historical "
-                            "refunds, prospective tariff savings, assessment reductions, and tax "
-                            "credits because their evidence and fee treatments differ."
-                        ),
-                        (
-                            "The initial lane is duplicate utility demand billing for meters "
-                            "A104 and A105, not general energy procurement. Twelve invoices show "
-                            "$42,000 of potentially duplicated charges. The municipal utility's "
-                            "billing supervisor receives the evidence package; prospective tariff "
-                            "changes require a separate baseline schedule and savings calculation."
-                        ),
-                    ),
-                    field(
-                        "Baseline integrity and sample extrapolation",
-                        "textarea",
-                        (
-                            "Describe the invoice population, sample selection method, excluded "
-                            "periods, duplicate removal, and reconciliation controls. Show how the "
-                            "sample supports a qualified estimate without presenting extrapolated "
-                            "recoveries as approved credits or earned revenue."
-                        ),
-                        (
-                            "A sample of 500 shipments from 10,000 annual shipments contains "
-                            "$1,200 of apparent billing errors. Multiplying by twenty suggests "
-                            "$24,000 for screening only. The analyst stratifies by service, month, "
-                            "and account before expanding review; the proposal labels $24,000 "
-                            "as an estimate requiring shipment-level validation."
-                        ),
-                    ),
-                    field(
-                        "Carrier guarantees, waivers, and claim windows",
-                        "textarea",
-                        (
-                            "Record the exact FedEx or UPS contract provision, service eligibility, "
-                            "effective dates, exclusions, filing deadline, and authorized submission "
-                            "method. Separate delivery-guarantee requests from duplicate-charge or "
-                            "rating disputes, which may follow different contractual procedures."
-                        ),
-                        (
-                            "The illustrative parcel agreement waives delivery-guarantee refunds "
-                            "for negotiated services but preserves billing-error disputes. The "
-                            "analyst excludes late-delivery claims and reviews duplicate charges "
-                            "instead. A contract-specific deadline register records each invoice's "
-                            "last submission date; the pod does not apply one carrier's timing "
-                            "rule to another account."
-                        ),
-                    ),
-                    field(
-                        "Utility, waste, and telecom tariff fit",
-                        "textarea",
-                        (
-                            "Identify the operative tariff or service schedule, physical equipment "
-                            "supporting eligibility, required meter evidence, and contract-change "
-                            "mechanism. Explain whether savings arise from a billing correction, "
-                            "a new rate election, or a measurable service reduction."
-                        ),
-                        (
-                            "A facility's cooling-tower deduction requires a qualifying submeter "
-                            "and accepted readings under the local sewer schedule. Historical "
-                            "invoices alone cannot prove evaporation volume. The operator collects "
-                            "installation records and monthly readings, then distinguishes a "
-                            "$9,600 refund request from a prospective $800 monthly charge reduction."
-                        ),
-                    ),
-                    field(
-                        "Property assessment appeal qualification",
-                        "textarea",
-                        (
-                            "Capture parcel ownership, jurisdiction, assessment date, appeal "
-                            "deadline, representation requirements, and valuation evidence. Separate "
-                            "assessed-value reductions from actual tax savings and identify other "
-                            "advisers whose existing engagement could create overlapping compensation."
-                        ),
-                        (
-                            "A Texas warehouse has an $8,000,000 assessment and a supported "
-                            "$7,400,000 comparison value. At an illustrative 2.2% combined rate, "
-                            "the potential annual tax difference is $13,200, not $600,000. "
-                            "A qualified local representative checks the notice, filing deadline, "
-                            "existing engagement, and applicable licensing requirements before submission."
-                        ),
-                    ),
-                    field(
-                        "WOTC cohort eligibility and processing scope",
-                        "textarea",
-                        (
-                            "Identify hiring dates, applicable statutory authorization, targeted-group "
-                            "documentation, certification workflow, and practitioner responsibilities. "
-                            "Keep employer tax benefits separate from processing revenue and state "
-                            "the permitted fee basis before promising a credit-linked compensation arrangement."
-                        ),
-                        (
-                            "A historical 2025 cohort contains 100 employees whose certification "
-                            "records require review. The operator charges an agreed $100 per "
-                            "completed processing file, yielding $10,000 if all deliverables qualify "
-                            "for billing. For later hiring dates, the practitioner verifies any "
-                            "enacted extension of 26 U.S.C. §51(c)(4) before activating screening."
-                        ),
-                    ),
-                    field(
-                        "Contingency spread and retained share",
-                        "textarea",
-                        (
-                            "Calculate the operator's fee from eligible client recoveries, then "
-                            "deduct direct specialist and delivery costs. State the contractual "
-                            "earning event, collection trigger, dispute allocation, and minimum "
-                            "acceptable contribution for the proposed engagement."
-                        ),
-                        (
-                            "An $80,000 eligible utility refund at a 35% retained share produces "
-                            "$28,000 of operator revenue. Specialist work costs $7,500 and "
-                            "evidence preparation costs $2,500, leaving $18,000 before shared "
-                            "overhead. The agreement earns the fee on an accepted, applied "
-                            "client credit and invoices after supporting proof arrives."
-                        ),
-                    ),
-                    field(
-                        "Counterparty timing and collection confidence",
-                        "textarea",
-                        (
-                            "Assess counterparty responsiveness, historical processing duration, "
-                            "client payment behavior, disputed amounts, and escalation contacts. "
-                            "Convert these observations into a dated collection range rather "
-                            "than treating an accepted recovery as immediately available operating cash."
-                        ),
-                        (
-                            "The municipal utility estimates sixty days to review the package "
-                            "and thirty additional days to apply an accepted credit. The client "
-                            "then pays the operator within fifteen days. The cash plan therefore "
-                            "allows 105 days from submission, while the claim ledger separately "
-                            "tracks acceptance, application, invoicing, and payment."
-                        ),
-                    ),
-                    field(
-                        "Qualification decision and disqualifying conditions",
-                        "textarea",
-                        (
-                            "Summarize the evidence-based decision, unresolved dependencies, named "
-                            "owners, and latest acceptable resolution dates. Define objective "
-                            "conditions that stop work, including absent authority, expired "
-                            "deadlines, duplicate representation, uneconomic delivery, and unsupported benefit assumptions."
-                        ),
-                        (
-                            "Advance the $80,000 utility case after the controller signs both "
-                            "meter authorizations and the specialist confirms tariff entitlement. "
-                            "Exclude parcel guarantee claims because the agreement waives them. "
-                            "Stop additional utility analysis if documentary support falls below "
-                            "$35,000 of eligible recovery or specialist costs exceed the approved "
-                            "$7,500 budget without revised economics."
-                        ),
-                    ),
-                ],
-                "completion_gate": (
-                    "The engagement owner signs a qualification record containing verified "
-                    "authority, baseline evidence, account-specific entitlement, deadline ownership, "
-                    "a documented fee basis, and positive delivery contribution. No excluded "
-                    "lane enters production merely because another lane qualified."
-                ),
-            },
-            {
-                "worksheet_id": "ws-02",
-                "number": 2,
-                "title": "Unit Economics, Escrow/Reserve Float & Working-Capital Calculator",
-                "purpose": (
-                    "Translate recovery opportunities into recognized operator revenue, cash "
-                    "requirements, and owner profit without counting client bills or credits "
-                    "as sales. Reconcile all three canonical scenarios, model delayed collections, "
-                    "and isolate operating reserves from any client-owned funds or unearned fees."
-                ),
-                "chapter_ref": "Q3, Q4",
-                "instructions": [
-                    (
-                        "Build separate schedules for historical recovery fees, verified monthly "
-                        "shared savings, and completed WOTC processing services. For every line, "
-                        "record client benefit, retained share or fixed price, recognition basis, "
-                        "invoice timing, cash receipt, and associated delivery expense."
-                    ),
-                    (
-                        "Reproduce the canonical Conservative, Base, and Scaled totals exactly "
-                        "before testing sensitivities. Treat the illustrative channel mixes below "
-                        "as reconciling allocations rather than additional source forecasts; scenario "
-                        "changes must remain visibly separate from the canonical comparison."
-                    ),
-                    (
-                        "Distinguish core recurring overhead from total expenses used to calculate "
-                        "owner net profit. Contractor delivery, specialist review, acquisition, "
-                        "rework, insurance, and transaction costs belong in the annual cost bridge "
-                        "even when omitted from a narrow monthly overhead estimate."
-                    ),
-                    (
-                        "Model cash using collection dates rather than claim approval dates. "
-                        "Exclude client refund balances from available runway, document restricted "
-                        "reserve treatment, and use a weekly cash schedule to expose the combined "
-                        "effect of delayed refunds and contractor payment commitments."
-                    ),
-                    (
-                        "Have the responsible accountant review principal-versus-agent treatment, "
-                        "variable consideration, and service completion evidence. A thirty-six-month "
-                        "shared-savings term establishes a measurement period; it does not permit "
-                        "booking all future monthly fees when the contract is signed."
-                    ),
-                ],
-                "fields": [
-                    field(
-                        "Recognized revenue perimeter and retained-share mapping",
-                        "textarea",
-                        (
-                            "Define what the operator controls and earns in each recovery lane. "
-                            "Identify client-owned amounts, retained_share assumptions, pass-through "
-                            "items, and the accountant's ASC 606 assessment so gross billings "
-                            "cannot inflate recognized operator revenue."
-                        ),
-                        (
-                            "For the Base allocation, retained_share equals 0.35 on $600,000 "
-                            "of eligible refunds and 0.40 on $600,000 of verified annual "
-                            "savings. These produce $210,000 and $240,000 of operator revenue. "
-                            "Completed processing adds $55,000. Client benefits and underlying "
-                            "utility or freight bills never become an extra revenue line."
-                        ),
-                    ),
-                    field(
-                        "Conservative scenario reconciliation",
-                        "textarea",
-                        (
-                            "Reconcile annual revenue, expenses, owner net profit, margin, and "
-                            "staffing to the canonical Conservative case. Show the channel "
-                            "allocation explicitly and identify which costs are already included "
-                            "so they are not deducted twice."
-                        ),
-                        (
-                            "Illustrative allocation: $200,000 recovered at 30% yields $60,000; "
-                            "$100,000 verified savings at 40% yields $40,000; 100 processing "
-                            "files at $100 yield $10,000. Revenue totals $110,000. Expenses "
-                            "of $77,000 leave $33,000 owner net profit, exactly 30%, with "
-                            "one full-time employee and three contractors."
-                        ),
-                    ),
-                    field(
-                        "Base scenario reconciliation",
-                        "textarea",
-                        (
-                            "Reconcile the Base case using distinct earned-fee streams and a "
-                            "complete annual expense bridge. Preserve the exact canonical profit "
-                            "and margin, and distinguish modeled annual delivery capacity from "
-                            "the number of people on the pod."
-                        ),
-                        (
-                            "Refund shares contribute $210,000, shared savings contribute $240,000, "
-                            "and 550 completed processing files at $100 contribute $55,000. "
-                            "The $505,000 total less $287,850 of expenses equals $217,150 "
-                            "owner net profit. Dividing $217,150 by $505,000 gives 43.0%. "
-                            "Staffing remains one full-time employee plus three contractors."
-                        ),
-                    ),
-                    field(
-                        "Scaled small-team scenario reconciliation",
-                        "textarea",
-                        (
-                            "Reproduce the Scaled revenue, expense, margin, profit, and six-person "
-                            "staffing totals. Explain the operational capacity assumptions behind "
-                            "the illustration without suggesting that more client spending itself "
-                            "creates additional recognized operator revenue."
-                        ),
-                        (
-                            "Illustrative allocation: $1,000,000 refunded at 35% yields $350,000; "
-                            "$1,100,000 verified savings at 40% yields $440,000; 1,100 completed "
-                            "files at $100 yield $110,000. Revenue is $900,000. Expenses "
-                            "of $396,000 leave $504,000, or 56%, with two full-time employees "
-                            "and four contractors, totaling six people."
-                        ),
-                    ),
-                    field(
-                        "Thirty-six-month shared-savings waterfall",
-                        "textarea",
-                        (
-                            "Specify the normalized baseline, measurement adjustments, monthly "
-                            "client savings, operator share, and thirty-six-month duration. Describe "
-                            "how closures, volume changes, tariff revisions, reversals, and "
-                            "termination affect each month's verified fee and recognition."
-                        ),
-                        (
-                            "Verified savings of $50,000 monthly at a 40% operator share "
-                            "produce a $20,000 monthly fee and $240,000 over twelve measured "
-                            "months. If sustained for all thirty-six months, fees total $720,000. "
-                            "Only earned periods enter current revenue; production-volume declines "
-                            "are normalized rather than mislabeled as tariff savings."
-                        ),
-                    ),
-                    field(
-                        "Core overhead versus total expense bridge",
-                        "textarea",
-                        (
-                            "List recurring core overhead separately from variable delivery and "
-                            "other annual expenses. Reconcile the complete expense total to "
-                            "the selected scenario, keeping the published monthly operating "
-                            "range distinct from all-in costs of earning revenue."
-                        ),
-                        (
-                            "A Base illustration uses $6,500 monthly core overhead, or $78,000 "
-                            "annually. Add $125,000 contractor delivery, $35,000 acquisition, "
-                            "$25,000 specialist review, and $24,850 other operating costs. "
-                            "Total expenses equal $287,850. The $1,500–$9,500 monthly core "
-                            "range is therefore not a ceiling on total scenario expenses."
-                        ),
-                    ),
-                    field(
-                        "Startup capital and delayed-collection runway",
-                        "textarea",
-                        (
-                            "Choose startup funding within the stated range and schedule setup "
-                            "spending, recurring burn, restricted reserves, and the first expected "
-                            "collection. Calculate remaining runway under a delayed-refund case "
-                            "without assuming unsigned deals provide usable cash."
-                        ),
-                        (
-                            "Start with $35,000, spend $4,500 on setup, and ring-fence $1,500 "
-                            "for fee reversals. Deployable cash is $29,000, supporting about "
-                            "4.46 months at $6,500 core burn before variable costs. A "
-                            "seventy-five-day wait consumes $16,250 of core cash; committed "
-                            "specialist payments must be added separately."
-                        ),
-                    ),
-                    field(
-                        "Client funds, reserve ownership, and release controls",
-                        "textarea",
-                        (
-                            "State who receives refunds, whether any client money enters "
-                            "operator accounts, and how reserves are funded and released. "
-                            "If custodial handling is proposed, identify the required contractual, "
-                            "banking, accounting, and jurisdiction-specific review before accepting funds."
-                        ),
-                        (
-                            "The utility pays an $80,000 refund directly to the client, "
-                            "and the operator invoices its earned $28,000 fee separately. "
-                            "A $1,500 operator-funded reversal reserve remains unavailable for "
-                            "routine spending until the documented exposure expires. Client "
-                            "refunds never finance payroll, and the operator offers no custodial "
-                            "account without a separately reviewed arrangement."
-                        ),
-                    ),
-                    field(
-                        "Receivables aging and collection sensitivity",
-                        "textarea",
-                        (
-                            "Calculate average receivables using recognized fee revenue and "
-                            "collection duration, then compare the result with available working "
-                            "capital. Keep collection timing sensitivities separate from changes "
-                            "in entitlement, recognized revenue, and expected credit losses."
-                        ),
-                        (
-                            "The Base refund-fee stream averages $17,500 monthly from $210,000 "
-                            "annual revenue. At an illustrative sixty-day collection cycle, "
-                            "steady-state receivables approximate $35,000 using thirty-day months. "
-                            "At ninety days they approximate $52,500, requiring $17,500 more "
-                            "working capital before considering savings-fee receivables, tax-processing "
-                            "invoices, or overdue balances."
-                        ),
-                    ),
-                    field(
-                        "Downside sensitivity and economic stop rule",
-                        "textarea",
-                        (
-                            "Stress a specific engagement for lower eligible recovery, higher "
-                            "specialist expense, and slower cash collection. Show contribution "
-                            "before overhead and define a documented decision rule without "
-                            "overwriting the three canonical annual scorecard scenarios."
-                        ),
-                        (
-                            "If the $80,000 utility estimate falls to $40,000, the 35% "
-                            "fee becomes $14,000. Original delivery costs of $10,000 leave "
-                            "$4,000 before overhead; an added $5,000 specialist requirement "
-                            "would make contribution negative $1,000. Pause incremental work "
-                            "and renegotiate scope rather than treating the original $28,000 "
-                            "fee estimate as collectible."
-                        ),
-                    ),
-                ],
-                "completion_gate": (
-                    "The finance owner verifies exact canonical totals of $33,000, $217,150, "
-                    "and $504,000 annual owner net profit, signs the revenue-versus-client-benefit "
-                    "mapping, and confirms that dated operating commitments fit available "
-                    "operator cash without using client funds."
-                ),
-            },
-            {
-                "worksheet_id": "ws-03",
-                "number": 3,
-                "title": "End-to-End Execution, Idempotent Ledger & QA Pre-Flight Sheet",
-                "purpose": (
-                    "Build a reproducible path from authorized invoice intake to collected "
-                    "operator fees. Use immutable evidence, deterministic claim identities, "
-                    "controlled state transitions, and independent review to prevent duplicate "
-                    "submissions, unsupported findings, premature invoicing, and silent mismatches "
-                    "between counterparty credits and client receipts."
-                ),
-                "chapter_ref": "Q7, Q8",
-                "instructions": [
-                    (
-                        "Create an evidence manifest before extraction begins. Preserve each "
-                        "original file, calculate its SHA-256 digest, record account and period "
-                        "ownership, and link the signed authority so every proposed finding "
-                        "can be traced to an authorized source."
-                    ),
-                    (
-                        "Normalize invoice identifiers, currencies, dates, and amounts while "
-                        "retaining raw source values. Use decimal arithmetic for money, distinguish "
-                        "credits from debits, and send ambiguous OCR output to a human queue "
-                        "instead of silently repairing material amounts."
-                    ),
-                    (
-                        "Define the economic identity of each claim before writing submission "
-                        "automation. Enforce one active claim per identity, store attempts separately, "
-                        "and reconcile uncertain external responses before retrying; an internal "
-                        "idempotency key does not force a carrier endpoint to deduplicate."
-                    ),
-                    (
-                        "Require an independent reviewer to compare entitlement, arithmetic, "
-                        "deadline, authority, and attached evidence before submission. Review "
-                        "every material exception and a documented sample of routine items, "
-                        "then preserve reviewer identity and decision timestamps in the event history."
-                    ),
-                    (
-                        "Close work only after reconciling counterparty disposition, client credit "
-                        "application, fee earning, invoice issuance, and payment. Preserve denials "
-                        "and reversals as new events rather than rewriting history, and feed "
-                        "root causes back into qualification and extraction rules."
-                    ),
-                ],
-                "fields": [
-                    field(
-                        "Authorized intake manifest",
-                        "textarea",
-                        (
-                            "Define required source files, authorization links, ingestion timestamps, "
-                            "account ownership, and integrity checks. Explain how incomplete "
-                            "periods and documents received through unapproved channels are "
-                            "quarantined before any findings or submissions are produced."
-                        ),
-                        (
-                            "Manifest HC-UTIL-2025 lists twelve original PDF invoices, a meter "
-                            "schedule, the effective tariff, and two signed authorizations. Each "
-                            "file receives a SHA-256 digest and restricted storage key. November "
-                            "is initially missing, so the analyst requests it and marks that "
-                            "period incomplete instead of extrapolating a submission amount."
-                        ),
-                    ),
-                    field(
-                        "Normalization and OCR exception rules",
-                        "textarea",
-                        (
-                            "Specify extraction fields, money precision, date formats, invoice "
-                            "reconciliation, and confidence thresholds. Identify which fields "
-                            "require visual confirmation and how the workflow preserves original "
-                            "values alongside normalized values for later reviewer inspection."
-                        ),
-                        (
-                            "The parser records account, invoice number, service dates, meter "
-                            "identifier, tariff code, quantity, rate, and tax. Decimal values "
-                            "quantize to cents only at the documented calculation step. An "
-                            "OCR reading of $18,800 against a $1,880 invoice total fails "
-                            "reconciliation and enters manual review with the source page attached."
-                        ),
-                    ),
-                    field(
-                        "Deterministic claim identity and uniqueness",
-                        "textarea",
-                        (
-                            "Define the immutable components of a claim's economic identity "
-                            "and the database uniqueness constraint. Explain how corrections, "
-                            "resubmissions, and multiple distinct charge disputes on one invoice "
-                            "remain linked without creating duplicate recovery claims."
-                        ),
-                        (
-                            "A utility claim key combines tenant, counterparty, account, invoice, "
-                            "service period, charge line, and recovery reason. A unique database "
-                            "constraint permits one active claim for that identity. Correcting "
-                            "the requested amount from $920 to $890 creates a new version "
-                            "under the same claim, not another collectible asset."
-                        ),
-                    ),
-                    field(
-                        "Ledger states and accounting boundaries",
-                        "textarea",
-                        (
-                            "List permitted claim states and the evidence needed for each "
-                            "transition. Keep operational claim status separate from revenue "
-                            "recognition, receivables, and cash so a submitted or accepted "
-                            "request cannot automatically become an earned fee."
-                        ),
-                        (
-                            "Claim U-184 moves through draft, reviewed, submitted, accepted, "
-                            "applied, invoiced, and paid. Submission stores a counterparty receipt; "
-                            "application stores the credit memo and client statement. The "
-                            "engagement earns fees on accepted, applied credits, so acceptance "
-                            "alone creates no fee invoice. A denial records its own reason "
-                            "and supporting correspondence."
-                        ),
-                    ),
-                    field(
-                        "Submission transaction and uncertain-response handling",
-                        "textarea",
-                        (
-                            "Describe the outbox record, request fingerprint, external receipt, "
-                            "retry policy, and reconciliation procedure for timeouts. Identify "
-                            "where human inspection is required because the counterparty "
-                            "cannot provide a reliable request-status lookup or deduplication mechanism."
-                        ),
-                        (
-                            "The system commits claim U-184 and its submission outbox record "
-                            "in one local transaction. A network timeout occurs after dispatch, "
-                            "so the attempt becomes reconciliation-required. The operator checks "
-                            "the approved portal for a matching account, invoice, and amount "
-                            "before retrying; repeated blind submissions are prohibited by "
-                            "the internal runbook."
-                        ),
-                    ),
-                    field(
-                        "Evidence package and independent QA",
-                        "textarea",
-                        (
-                            "Define the minimum evidence bundle and reviewer checklist for "
-                            "each lane. Set materiality and sampling rules, preserve reviewer "
-                            "independence, and state which discrepancies prevent submission "
-                            "until the underlying entitlement or calculation is corrected."
-                        ),
-                        (
-                            "For an $8,400 tariff correction, the bundle includes twelve "
-                            "invoices, effective tariff pages, meter records, authorization, and "
-                            "a line-by-line calculation. A second reviewer checks all material "
-                            "amounts and filing dates. One invoice uses a later tariff version, "
-                            "so the package returns for recalculation before any external submission."
-                        ),
-                    ),
-                    field(
-                        "Counterparty credit and client receipt matching",
-                        "textarea",
-                        (
-                            "Explain how accepted amounts, issued credits, client applications, "
-                            "and reversals are matched to claims. Specify treatment of partial "
-                            "recoveries, bundled credits, offsets, and unapplied balances before "
-                            "calculating the operator's earned contractual share."
-                        ),
-                        (
-                            "A utility accepts $12,000 but initially applies only $9,000 "
-                            "against the client's account. The signed terms earn a 35% "
-                            "fee on applied credits, producing $3,150 for this period. "
-                            "The remaining $3,000 stays in the unapplied-credit register, "
-                            "and a bundled statement adjustment is allocated using the utility's "
-                            "claim-level explanation."
-                        ),
-                    ),
-                    field(
-                        "Fee invoice, payment allocation, and reversal",
-                        "textarea",
-                        (
-                            "Specify the fee calculation, invoice evidence, payment matching "
-                            "rules, and correction procedure. Show how a later recovery "
-                            "reversal affects operator consideration and reserves without "
-                            "deleting the original claim, invoice, or cash event."
-                        ),
-                        (
-                            "Invoice F-208 bills $3,150 against claim U-184 and links the "
-                            "$9,000 applied credit. The client pays $3,150 with the invoice "
-                            "reference. If $1,000 of that credit is later reversed and "
-                            "the contract requires proportional adjustment, the operator issues "
-                            "a $350 credit note and records the reserve use separately."
-                        ),
-                    ),
-                    field(
-                        "Deadline, denial, and escalation queue",
-                        "textarea",
-                        (
-                            "Assign ownership for approaching deadlines, missing documents, "
-                            "counterparty silence, and denied requests. Record escalation "
-                            "intervals and appeal evidence requirements without assuming "
-                            "that resubmission automatically extends a statutory or contractual filing period."
-                        ),
-                        (
-                            "A parcel billing dispute has a documented account-specific filing "
-                            "deadline on June 18. Internal review is due June 11, with "
-                            "an owner alert June 9. A June 13 denial triggers contract "
-                            "review and a reason-coded appeal assessment; the system retains "
-                            "June 18 until written governing terms establish a different deadline."
-                        ),
-                    ),
-                    field(
-                        "Closeout export and reproducibility test",
-                        "textarea",
-                        (
-                            "Define the closing package, evidence retention schedule, access "
-                            "restrictions, and independent reconstruction test. Require a "
-                            "reviewer to reproduce client benefits and operator fees from "
-                            "source records rather than relying solely on dashboard totals."
-                        ),
-                        (
-                            "The closing package contains the source manifest, claim versions, "
-                            "submission receipts, disposition letters, credit applications, fee "
-                            "invoices, and payment allocations. An independent reviewer reconstructs "
-                            "$80,000 of client recovery and $28,000 of operator revenue. "
-                            "Any difference remains an open exception, and the export excludes "
-                            "employee screening records unrelated to the utility engagement."
-                        ),
-                    ),
-                ],
-                "completion_gate": (
-                    "A reviewer reproduces one complete recovery and fee transaction from "
-                    "original evidence, confirms duplicate protection and uncertain-response "
-                    "handling, and verifies that all material submission exceptions have "
-                    "documented resolution before production volume increases."
-                ),
-            },
-            {
-                "worksheet_id": "ws-04",
-                "number": 4,
-                "title": "Statutory, Licensing, Contract Addendum & Compliance Audit",
-                "purpose": (
-                    "Convert legal and contractual constraints into executable account-level "
-                    "requirements. Document practitioner roles, fee restrictions, state licensing, "
-                    "employment-credit timing, representation authority, carrier permissions, "
-                    "and evidence handling so each recovery lane operates within its actual "
-                    "jurisdiction, agreement, and authorized service scope."
-                ),
-                "chapter_ref": "Q5, Q9",
-                "instructions": [
-                    (
-                        "Create a jurisdiction-and-service matrix before marketing specific "
-                        "outcomes. Identify the applicable statute, regulation, contract, tariff, "
-                        "licensed role, and responsible reviewer for each lane; broad authority "
-                        "to audit invoices does not establish authority to represent taxpayers."
-                    ),
-                    (
-                        "Have the tax practitioner classify the proposed federal tax work "
-                        "and compensation arrangement under current law and controlling authority. "
-                        "Use Treasury Circular 230 requirements where applicable, preserve the "
-                        "written conclusion, and do not assume commercial contingency terms transfer."
-                    ),
-                    (
-                        "Check WOTC hiring-date authorization, pre-screening requirements, state "
-                        "workforce certification procedures, and filing deadlines before screening "
-                        "a cohort. Preserve the actual submission acknowledgment and separate "
-                        "credit computation from the operator's authorized administrative processing service."
-                    ),
-                    (
-                        "Attach account-specific contract schedules covering authority, exclusions, "
-                        "baseline methodology, fee earning, collections, reversals, and termination. "
-                        "Make the client responsible for identified source records while retaining "
-                        "operator responsibility for evidence integrity and agreed delivery obligations."
-                    ),
-                    (
-                        "Record a dated reviewer, source version, and next review trigger for "
-                        "every material requirement. Refresh the matrix when a jurisdiction, "
-                        "service, tariff, carrier agreement, employment cohort, or compensation "
-                        "model changes instead of treating the initial review as permanent."
-                    ),
-                ],
-                "fields": [
-                    field(
-                        "Service and jurisdiction responsibility matrix",
-                        "textarea",
-                        (
-                            "List each offered service, operating jurisdiction, governing source, "
-                            "qualified role, and representation boundary. Distinguish administrative "
-                            "analysis from regulated representation and identify the documents "
-                            "that establish the assigned specialist's current authority."
-                        ),
-                        (
-                            "The pod analyzes utility invoices under the client's tariff and "
-                            "authorization, routes Texas property-tax representation to a qualified "
-                            "specialist, and limits WOTC work to agreed processing support. "
-                            "The matrix cites Texas Occupations Code Chapter 1152 for property-tax "
-                            "consultant registration and records the specialist's status, scope, "
-                            "and applicable exemption analysis."
-                        ),
-                    ),
-                    field(
-                        "Circular 230 compensation classification",
-                        "textarea",
-                        (
-                            "Describe the federal tax service, practitioner status, proposed "
-                            "fee formula, and current legal assessment of contingent compensation. "
-                            "Identify the precise permitted basis or exception rather than "
-                            "assuming every refund-related engagement permits percentage pricing."
-                        ),
-                        (
-                            "The practitioner reviews 31 CFR §10.27 and relevant controlling "
-                            "authority before accepting any tax-credit percentage arrangement. "
-                            "Pending that review, the operator offers $100 fixed processing "
-                            "per completed file, subject to engagement requirements. Utility "
-                            "refund contingency terms remain in a separate schedule and do "
-                            "not determine the federal tax fee treatment."
-                        ),
-                    ),
-                    field(
-                        "Tax substantiation and practitioner diligence",
-                        "textarea",
-                        (
-                            "Specify the evidence required to support each tax position, "
-                            "who evaluates eligibility, and who signs or submits tax "
-                            "materials. Link the practitioner's diligence duties to source "
-                            "records, calculation review, and resolution of contradictory information."
-                        ),
-                        (
-                            "The assigned practitioner applies relevant duties under 31 CFR "
-                            "§§10.22 and 10.34 when evaluating credit support and return "
-                            "positions. Payroll hours, qualified wages, certification, and related-party "
-                            "checks are retained with the workpaper. A recruiter spreadsheet "
-                            "alone cannot establish eligibility, and conflicting wage totals "
-                            "return to payroll for documented reconciliation."
-                        ),
-                    ),
-                    field(
-                        "WOTC authorization, screening, and submission timing",
-                        "textarea",
-                        (
-                            "Record hiring dates, applicable authorization under 26 U.S.C. §51, "
-                            "pre-screening completion, state submission deadline, and certification "
-                            "evidence. Explain how the workflow responds when authorization "
-                            "for a hiring period or timely filing cannot be established."
-                        ),
-                        (
-                            "For a historical employee starting June 2, 2025, the employer "
-                            "completes the required pre-screening by the offer date and submits "
-                            "Form 8850 to the state workforce agency by June 30. "
-                            "The record cites §51(d)(13). Section 51(c)(4)'s December 31, 2025 "
-                            "hiring cutoff requires checking enacted extensions before later cohorts proceed."
-                        ),
-                    ),
-                    field(
-                        "WOTC wage-hour calculation and processing boundary",
-                        "textarea",
-                        (
-                            "Document the employee category, qualified wage cap, hours worked, "
-                            "certification status, and employer-level limitations. Show an "
-                            "illustrative credit calculation separately from the operator's "
-                            "processing fee and identify who verifies the final return treatment."
-                        ),
-                        (
-                            "For an otherwise eligible ordinary category with a $6,000 wage "
-                            "cap, 400 qualifying hours support a 40% calculation, or $2,400; "
-                            "120–399 qualifying hours generally use 25%, or $1,500 at that "
-                            "cap. Category-specific rules and limitations still apply. The "
-                            "operator's agreed $100 processing fee remains separate from either credit."
-                        ),
-                    ),
-                    field(
-                        "Property-tax registration and protest deadline",
-                        "textarea",
-                        (
-                            "Identify the parcel jurisdiction, representative qualifications, "
-                            "client appointment, protest deadline, and evidence requirements. "
-                            "Use the applicable notice and statutory exceptions to calculate "
-                            "the actual filing date rather than relying on a generic annual reminder."
-                        ),
-                        (
-                            "For a Texas parcel, the representative checks Texas Occupations "
-                            "Code Chapter 1152 and appointment requirements under Texas Tax "
-                            "Code §1.111. The ordinary protest deadline under §41.44 is "
-                            "generally May 15 or thirty days after notice delivery, whichever "
-                            "is later, subject to applicable exceptions. The actual notice "
-                            "and filing receipt remain attached."
-                        ),
-                    ),
-                    field(
-                        "Letters of Authorization and disclosure restrictions",
-                        "textarea",
-                        (
-                            "Draft the account-specific authority, permitted communications, "
-                            "delegation limits, term, revocation process, and evidence-sharing "
-                            "boundaries. Require baseline snapshots and signed authority "
-                            "before disclosing tariff findings or contacting the counterparty about recoveries."
-                        ),
-                        (
-                            "The authorization permits Harbor's named operator to obtain "
-                            "billing records and submit documented disputes for meters A104 "
-                            "and A105 through December 31. It excludes changing bank "
-                            "instructions, accepting settlements, and filing tax returns. The "
-                            "operator may share relevant invoices with the named utility "
-                            "specialist only under the engagement's confidentiality terms."
-                        ),
-                    ),
-                    field(
-                        "Contingency and shared-savings contract addendum",
-                        "textarea",
-                        (
-                            "Specify eligible recoveries, exclusions, fee percentage, baseline "
-                            "adjustments, thirty-six-month measurement, payment timing, reversals, "
-                            "termination, and dispute resolution. Explain how incumbent claims "
-                            "and client operational changes are excluded from the operator's earned savings."
-                        ),
-                        (
-                            "The addendum charges 35% of accepted, applied historical utility "
-                            "credits and 40% of independently verified monthly savings for "
-                            "thirty-six measured months. It excludes previously filed claims, "
-                            "production shutdowns, and unrelated procurement discounts. Fees "
-                            "are due fifteen days after invoice; proportional credit reversals "
-                            "generate corresponding fee adjustments under the stated reconciliation procedure."
-                        ),
-                    ),
-                    field(
-                        "Carrier access permissions and agreement hierarchy",
-                        "textarea",
-                        (
-                            "Record carrier developer terms, account permissions, available "
-                            "interfaces, rate limits, and submission restrictions. Explain "
-                            "how negotiated agreements and service-specific rules affect "
-                            "automation, including situations where only an approved manual channel is available."
-                        ),
-                        (
-                            "UPS billing exports are enabled for the client's account, but "
-                            "the available interface does not provide an authorized refund "
-                            "submission operation. The pipeline prepares reviewed evidence "
-                            "and assigns portal submission to an authorized operator. FedEx "
-                            "capabilities are evaluated separately; possessing account credentials "
-                            "does not establish permission to automate every account action."
-                        ),
-                    ),
-                    field(
-                        "Sensitive records, tax information, and retention",
-                        "textarea",
-                        (
-                            "Define access roles, transfer methods, retention periods, deletion "
-                            "triggers, and incident responsibilities for client and employee "
-                            "records. Assess applicable tax-information restrictions and state "
-                            "privacy obligations according to the actual service and information handled."
-                        ),
-                        (
-                            "Employee screening records stay in a restricted workspace separate "
-                            "from invoice-audit exports. The practitioner evaluates 26 U.S.C. "
-                            "§7216 and 26 CFR §301.7216 where return-preparer disclosure "
-                            "rules apply. Role-based access excludes sales staff, retention "
-                            "follows the documented engagement schedule, and legal holds "
-                            "suspend deletion only for the affected records."
-                        ),
-                    ),
-                ],
-                "completion_gate": (
-                    "The engagement owner and assigned specialists sign the dated service "
-                    "matrix, fee classification, jurisdiction checks, authorization schedules, "
-                    "and evidence-handling requirements. Each active lane has an identified "
-                    "qualified reviewer and no unresolved restriction affecting the planned work."
-                ),
-            },
-            {
-                "worksheet_id": "ws-05",
-                "number": 5,
-                "title": "Automation Pipeline, Acquisition Flywheel & Risk Fallback Tracker",
-                "purpose": (
-                    "Automate evidence collection and repeatable analysis while preserving "
-                    "human judgment for entitlement, deadlines, and uncertain outcomes. Build "
-                    "an acquisition loop around verified recovery results, monitor integration "
-                    "permissions and error rates, and maintain practical fallback paths for "
-                    "carrier outages, OCR failures, and hiring-system interruptions."
-                ),
-                "chapter_ref": "Q6, Q10",
-                "instructions": [
-                    (
-                        "Map each integration to a specific authorized task, account owner, "
-                        "credential scope, and fallback procedure. Evaluate FedEx and UPS "
-                        "interfaces independently, and treat refund submission capability as "
-                        "account-dependent rather than a universal feature of carrier developer access."
-                    ),
-                    (
-                        "Separate ingestion, extraction, entitlement evaluation, review, submission, "
-                        "and reconciliation into observable stages. Give every stage an owner, "
-                        "retry budget, evidence output, and error queue so automation failure "
-                        "cannot silently convert incomplete work into a completed claim."
-                    ),
-                    (
-                        "Automate utility tariff and cooling-tower meter extraction only after "
-                        "documenting the governing calculation. Pair OCR confidence with total "
-                        "reconciliation and physical meter evidence; an apparently precise "
-                        "reading remains unusable when its tariff period or unit is wrong."
-                    ),
-                    (
-                        "Connect ATS events to WOTC processing through approved employment "
-                        "workflows and restricted records. Track pre-screening and state filing "
-                        "deadlines explicitly, prevent duplicate employee records, and stop "
-                        "credit-specific processing when the hiring period lacks verified statutory authorization."
-                    ),
-                    (
-                        "Measure acquisition using signed qualified engagements and collected "
-                        "contribution, not raw lead volume or client spending. Reinvest only "
-                        "after claims clear evidence review, preserve attribution by channel, "
-                        "and use client-approved case studies stripped of unnecessary account information."
-                    ),
-                ],
-                "fields": [
-                    field(
-                        "Integration inventory and least-privilege access",
-                        "textarea",
-                        (
-                            "List carrier, utility, document, accounting, and ATS connections "
-                            "with their permitted operations and account owners. Specify "
-                            "credential storage, rotation, access review, and revocation "
-                            "procedures without placing secrets in workbook examples or exported records."
-                        ),
-                        (
-                            "The inventory includes authorized UPS invoice exports, FedEx "
-                            "account reporting, a restricted document repository, QuickBooks "
-                            "invoice synchronization, and Greenhouse hiring events. Service "
-                            "accounts receive only necessary scopes. The controller owns "
-                            "carrier access, payroll owns ATS access, and the operator "
-                            "reviews permissions monthly and immediately after contractor departure."
-                        ),
-                    ),
-                    field(
-                        "Carrier EDI and permitted refund workflow",
-                        "textarea",
-                        (
-                            "Describe supported EDI or API inputs, account-specific refund "
-                            "capabilities, entitlement checks, and submission ownership. Include "
-                            "rate-limit handling and a controlled manual process when "
-                            "the carrier does not expose an authorized claim-submission endpoint."
-                        ),
-                        (
-                            "An approved EDI 210 feed supplies invoice lines where the "
-                            "carrier and account support that format. The pipeline identifies "
-                            "duplicate charges and attaches the governing contract rule. "
-                            "Reviewed claims use an authorized endpoint only when available; "
-                            "otherwise a named operator submits through the approved channel "
-                            "and records the receipt in the same ledger."
-                        ),
-                    ),
-                    field(
-                        "Utility OCR and meter-evidence controls",
-                        "textarea",
-                        (
-                            "Define supported document layouts, extraction thresholds, tariff "
-                            "versioning, meter-unit conversions, and human review rules. "
-                            "Explain how the pipeline detects missing pages, changed "
-                            "layouts, impossible readings, and deductions unsupported by approved physical metering."
-                        ),
-                        (
-                            "The utility pipeline extracts gallons, meter dates, tariff "
-                            "codes, and sewer charges. A cooling-tower reading of 120,000 "
-                            "gallons reconciles to meter history before a deduction is "
-                            "calculated. Layout changes or unexplained volume jumps above "
-                            "the client's agreed threshold enter review; the engine never "
-                            "infers a qualifying submeter from an invoice description alone."
-                        ),
-                    ),
-                    field(
-                        "ATS-integrated WOTC deadline automation",
-                        "textarea",
-                        (
-                            "Map offer, start, screening, certification, and payroll events "
-                            "to the responsible owner and restricted record. Define "
-                            "deduplication, deadline alerts, failed-event recovery, and "
-                            "hiring-date authorization checks before creating a credit-processing task."
-                        ),
-                        (
-                            "For the supported historical cohort, a Greenhouse offer event "
-                            "creates a pre-screening task; the start event creates the "
-                            "twenty-eight-day state submission deadline. Alerts fire on days "
-                            "14, 21, and 25. Employee identifiers remain restricted, "
-                            "rehires trigger review, and missing authorization for later "
-                            "hiring periods prevents automatic credit eligibility assumptions."
-                        ),
-                    ),
-                    field(
-                        "Rules engine versioning and release evidence",
-                        "textarea",
-                        (
-                            "Record rule owners, effective dates, source citations, test "
-                            "fixtures, and deployment rollback procedures. Separate tariff "
-                            "and contract changes from code changes so historical "
-                            "claims can be reproduced using the rules effective for their periods."
-                        ),
-                        (
-                            "Tariff rule UTIL-A-2025-v3 applies only to the documented "
-                            "service dates and meter class. Ten fixtures cover correct "
-                            "charges, duplicate lines, partial periods, credits, and missing "
-                            "readings. A reviewer approves the evidence before activation. "
-                            "Existing claims retain their rule version, while a rollback "
-                            "restores the prior rule for newly queued work."
-                        ),
-                    ),
-                    field(
-                        "Operational telemetry and exception thresholds",
-                        "textarea",
-                        (
-                            "Define stage-level throughput, extraction accuracy, duplicate "
-                            "attempts, aging, and recovery-conversion measures. Set clear "
-                            "alert thresholds and owners, distinguishing a technical "
-                            "integration fault from a commercial denial or a missing client document."
-                        ),
-                        (
-                            "The dashboard tracks invoices ingested, reviewed claims, "
-                            "submitted claims, applied recoveries, and collected fees. "
-                            "An OCR exception rate above 8% for a document layout "
-                            "pauses that layout's automatic processing. Any duplicate "
-                            "submission attempt triggers same-day inspection, while claims "
-                            "without counterparty acknowledgment after the documented interval "
-                            "enter the operations queue."
-                        ),
-                    ),
-                    field(
-                        "Acquisition channel and qualification funnel",
-                        "textarea",
-                        (
-                            "Choose a narrowly defined client segment and acquisition "
-                            "channel, then document stage counts, qualification criteria, "
-                            "acquisition costs, and responsible owners. Tie conversion "
-                            "to signed authority and reviewable evidence rather than verbal interest."
-                        ),
-                        (
-                            "A facilities-accounting partner introduces twenty multi-site "
-                            "manufacturers. Twelve attend discovery, eight supply sample "
-                            "invoices under confidentiality terms, four qualify, and two "
-                            "sign engagements with authorizations. At $3,000 total channel "
-                            "spend, acquisition cost is $1,500 per signed client. "
-                            "The team tracks later collected contribution before increasing partner spend."
-                        ),
-                    ),
-                    field(
-                        "Proof-of-recovery referral and expansion loop",
-                        "textarea",
-                        (
-                            "Specify the evidence required for a case study, client "
-                            "permission process, referral request, and adjacent-lane expansion. "
-                            "Separate verified results from projected savings and "
-                            "avoid disclosing account details or employee information in acquisition materials."
-                        ),
-                        (
-                            "After an $80,000 utility credit is applied, the client "
-                            "approves an anonymized summary describing the error category "
-                            "and measurement period. The operator requests one introduction "
-                            "to a peer controller and offers a separately authorized "
-                            "telecom review. The summary reports the verified credit, "
-                            "not a projected thirty-six-month benefit presented as cash already received."
-                        ),
-                    ),
-                    field(
-                        "Outage, waiver, and specialist fallback tracker",
-                        "textarea",
-                        (
-                            "Document the trigger, immediate containment, alternate workflow, "
-                            "capacity limit, and recovery owner for each material "
-                            "failure. Cover carrier access loss, guarantee waivers, "
-                            "municipal delay, specialist absence, and tax-substantiation gaps with distinct responses."
-                        ),
-                        (
-                            "If carrier access fails, the client supplies approved "
-                            "invoice exports while the team resolves permissions; deadline "
-                            "owners continue manual tracking. If a guarantee waiver "
-                            "eliminates entitlement, that claim lane closes rather than "
-                            "switching submission methods. A municipal delay moves "
-                            "collections forecasts, while a missing tax workpaper suspends "
-                            "only the affected processing file."
-                        ),
-                    ),
-                    field(
-                        "Automation return and controlled capacity increase",
-                        "textarea",
-                        (
-                            "Calculate labor saved, review burden, implementation expense, "
-                            "and error-related costs for one automation. Identify "
-                            "the evidence required to expand throughput and specify "
-                            "how the team preserves reviewer capacity as input volume rises."
-                        ),
-                        (
-                            "Automating 1,000 invoice extractions saves six minutes each, "
-                            "or 100 hours monthly. At $35 per hour, gross "
-                            "labor value is $3,500. Subtract $700 additional review "
-                            "and $300 infrastructure costs for $2,500 monthly net "
-                            "value before implementation. A $5,000 setup cost pays "
-                            "back in two months if measured accuracy and volume persist."
-                        ),
-                    ),
-                ],
-                "completion_gate": (
-                    "Every active integration has documented permission, an accountable owner, "
-                    "observable errors, and a tested fallback. One end-to-end batch demonstrates "
-                    "correct deduplication and review, while acquisition reporting connects "
-                    "channel spending to authorized engagements and collected operator contribution."
-                ),
-            },
-            {
-                "worksheet_id": "ws-06",
-                "number": 6,
-                "title": "30-Day Launch Sprint, Pod KPI Scorecard & Exit-Readiness Ledger",
-                "purpose": (
-                    "Launch an evidence-led recovery pod in thirty days without confusing "
-                    "setup milestones with collected revenue. Assign specialist ownership, "
-                    "measure cash and quality alongside throughput, and preserve transferable "
-                    "contracts, reproducible economics, and restricted diligence materials "
-                    "for future operator succession or a potential business transfer."
-                ),
-                "chapter_ref": "Q11, Q12",
-                "instructions": [
-                    (
-                        "Use the first week to select a narrow recovery lane, verify "
-                        "specialist access, finalize engagement documents, and establish baseline "
-                        "controls. Budget within the $6,000–$35,000 startup range and retain "
-                        "the canonical one-to-four-month expectation for the first deal."
-                    ),
-                    (
-                        "Use the second week for targeted acquisition and authorized sample "
-                        "reviews, not broad unsupported benefit promises. Define a qualified "
-                        "opportunity using documented entitlement, reachable decision-makers, usable "
-                        "evidence, and positive contribution after specialist costs."
-                    ),
-                    (
-                        "Use the third week to process a small reviewed pilot through "
-                        "the complete ledger. Capture missing documents, deadline failures, "
-                        "and uncertain responses as explicit exceptions, and revise the "
-                        "runbook before increasing claim volume or extending the service scope."
-                    ),
-                    (
-                        "Use the fourth week to reconcile economics, cash, delivery capacity, "
-                        "and client communications. Distinguish submitted claims from applied "
-                        "recoveries and paid fees; a successful launch may establish a "
-                        "qualified pipeline without producing a collected refund during thirty days."
-                    ),
-                    (
-                        "Maintain exit-readiness as an operating discipline rather than a "
-                        "valuation promise. Organize assignability terms, customer concentration, "
-                        "rule ownership, contractor agreements, restricted evidence, and scenario "
-                        "reconciliations so another authorized operator could reproduce delivery and reporting."
-                    ),
-                ],
-                "fields": [
-                    field(
-                        "Days 1–7 foundation and funded scope",
-                        "textarea",
-                        (
-                            "Assign daily owners for service selection, specialist review, "
-                            "engagement documents, account authority, storage controls, and "
-                            "cash planning. Define tangible outputs and stop conditions "
-                            "that keep the launch within its funded and authorized scope."
-                        ),
-                        (
-                            "The founder selects utility invoice recovery for manufacturers, "
-                            "engages one tariff specialist, and prepares account-specific "
-                            "authorization schedules by day 5. A $35,000 funding plan "
-                            "allocates $4,500 setup and a $1,500 reversal reserve. "
-                            "By day 7, restricted storage, claim identity rules, "
-                            "and a weekly cash schedule are ready for authorized pilot evidence."
-                        ),
-                    ),
-                    field(
-                        "Days 8–14 acquisition and qualification deliverables",
-                        "textarea",
-                        (
-                            "Set outreach, discovery, sample-review, and engagement targets "
-                            "with named owners and evidence requirements. Identify "
-                            "how unsupported opportunities are rejected and preserve "
-                            "the distinction between a launch activity target and a signed client commitment."
-                        ),
-                        (
-                            "The founder seeks twenty partner introductions, twelve discovery "
-                            "meetings, and eight authorized sample packages. Four qualified "
-                            "opportunities are a target, not an assured result. "
-                            "An analyst rejects two sites lacking historical meter "
-                            "evidence. Any signed engagement must include the correct "
-                            "client entity, covered accounts, fee schedule, and designated records custodian."
-                        ),
-                    ),
-                    field(
-                        "Days 15–21 reviewed pilot execution",
-                        "textarea",
-                        (
-                            "Define the pilot population, reviewer assignment, evidence "
-                            "checklist, submission limits, and daily exception meeting. "
-                            "Require the pilot to exercise actual state transitions "
-                            "and reconciliation controls rather than merely demonstrating that extraction software runs."
-                        ),
-                        (
-                            "The pod reviews twelve utility invoices covering two meters "
-                            "and identifies three supportable billing corrections. A second "
-                            "reviewer checks all three before the authorized operator "
-                            "submits them. One deliberately repeated intake file confirms "
-                            "duplicate detection; no repeated external claim is sent. "
-                            "The daily meeting assigns owners to missing acknowledgments and calculation questions."
-                        ),
-                    ),
-                    field(
-                        "Days 22–30 reconciliation and next-month decision",
-                        "textarea",
-                        (
-                            "Record completed launch outputs, open claims, cash "
-                            "remaining, unresolved risks, and the next thirty-day "
-                            "capacity decision. Evaluate progress against documented "
-                            "readiness and evidence quality without treating pending recoveries as earned owner profit."
-                        ),
-                        (
-                            "At day 30, three reviewed claims are submitted, none "
-                            "has yet produced an applied credit, and operator "
-                            "fee revenue from those claims remains zero. The "
-                            "team reports this plainly while maintaining the one-to-four-month "
-                            "first-deal expectation. Next-month spending is limited to "
-                            "funded commitments and additional opportunities meeting the qualification checklist."
-                        ),
-                    ),
-                    field(
-                        "Pod roles, contractor capacity, and escalation ownership",
-                        "textarea",
-                        (
-                            "Assign accountable ownership for sales, analysis, specialist "
-                            "judgment, quality review, submission, billing, and collections. "
-                            "Translate headcount into scheduled hours and coverage "
-                            "without equating a contractor relationship to a full-time delivery allocation."
-                        ),
-                        (
-                            "The Base pod has one full-time founder and three "
-                            "contractors covering tariff expertise, document analysis, and "
-                            "independent review with tax-processing coordination. Their planned "
-                            "weekly allocations are twelve, twenty, and ten hours. "
-                            "The founder owns collections and substitutes only within "
-                            "their competence; regulated specialist work waits for an appropriately qualified replacement."
-                        ),
-                    ),
-                    field(
-                        "Weekly operational and cash KPI definitions",
-                        "textarea",
-                        (
-                            "Define each KPI's numerator, denominator, measurement date, "
-                            "source, and owner. Include evidence completeness, review "
-                            "accuracy, submission timeliness, applied recovery, collected "
-                            "fees, receivables aging, and runway so volume cannot conceal deteriorating cash or quality."
-                        ),
-                        (
-                            "Evidence completeness equals fully supported claims divided "
-                            "by claims entering review; 18 of 20 yields "
-                            "90%. On-time submission equals timely eligible submissions "
-                            "divided by submissions due; 9 of 10 yields "
-                            "90%. Collected fees include matched cash only, "
-                            "and runway divides unrestricted operator cash by the forward monthly cash requirement."
-                        ),
-                    ),
-                    field(
-                        "Canonical owner-profit and staffing scorecard",
-                        "textarea",
-                        (
-                            "Record the canonical annual comparisons and identify "
-                            "the separate actual-period reporting columns. Preserve "
-                            "the stated margin and staffing assumptions while "
-                            "preventing early pilot results, annualized pipeline estimates, or client benefits from replacing recognized revenue."
-                        ),
-                        (
-                            "The comparison retains Conservative $110,000 revenue and "
-                            "$33,000 profit at 30%; Base $505,000 and "
-                            "$217,150 at 43.0%; Scaled $900,000 and "
-                            "$504,000 at 56%. Conservative and Base use "
-                            "one full-time employee plus three contractors; Scaled "
-                            "uses two plus four. Actual results occupy a separate "
-                            "dated ledger and never overwrite these canonical benchmarks."
-                        ),
-                    ),
-                    field(
-                        "Risk concentration, reserve review, and cash intervention",
-                        "textarea",
-                        (
-                            "Measure exposure by client, counterparty, recovery lane, "
-                            "specialist, and collection date. Define interventions "
-                            "for concentration or reserve shortfalls using cash "
-                            "and evidence thresholds rather than relying on aggregate projected recovery value."
-                        ),
-                        (
-                            "If one municipality represents $42,000 of $60,000 "
-                            "pending operator fees, counterparty concentration is 70%. "
-                            "The founder pauses discretionary acquisition when unrestricted "
-                            "cash falls below six weeks of committed spending. "
-                            "A new $2,200 reversal exposure exceeds the $1,500 "
-                            "reserve by $700, prompting a documented cash allocation "
-                            "and updated weekly collection forecast."
-                        ),
-                    ),
-                    field(
-                        "Transferability and restricted diligence ledger",
-                        "textarea",
-                        (
-                            "Inventory contract assignment terms, client permissions, "
-                            "software ownership, rule documentation, specialist agreements, "
-                            "and evidence access restrictions. Explain how a "
-                            "potential successor receives enough information to evaluate operations without unauthorized disclosure of client or employee records."
-                        ),
-                        (
-                            "The ledger marks each engagement's assignment clause "
-                            "and required client action, documents ownership of "
-                            "internally written extraction rules, and links contractor "
-                            "confidentiality and work-product terms. A prospective successor "
-                            "first receives aggregated revenue, aging, and concentration "
-                            "schedules. Account-level files and employee records remain "
-                            "restricted until an authorized transaction process permits the specific disclosure."
-                        ),
-                    ),
-                    field(
-                        "Founder independence and reproducible handover test",
-                        "textarea",
-                        (
-                            "Design a timed handover exercise covering qualification, "
-                            "claim review, submission reconciliation, invoicing, and "
-                            "management reporting. Record failures, remediation owners, "
-                            "and evidence that another authorized operator can reproduce the work without undocumented founder judgment."
-                        ),
-                        (
-                            "An authorized backup receives one closed utility case "
-                            "and reconstructs its $80,000 applied recovery, 35% "
-                            "fee, $28,000 invoice, and matched payment within "
-                            "two hours. They also locate the governing tariff "
-                            "and authorization without founder assistance. A missing "
-                            "baseline adjustment explanation becomes a remediation item; "
-                            "the exercise repeats after the runbook and evidence index are corrected."
-                        ),
-                    ),
-                ],
-                "completion_gate": (
-                    "The founder signs a thirty-day closeout showing completed outputs, "
-                    "open exceptions, unrestricted cash, assigned pod capacity, and accurate "
-                    "claim-to-fee reporting. An authorized backup completes the handover test, "
-                    "and the next sprint proceeds only within documented authority and funded commitments."
-                ),
-            },
-        ],
-    }
+    return {'workbook_id': 'wb-038-contingent-bill-audit-and-tax-credit-recovery',
+ 'volume_id': 'vol-038-contingent-bill-audit-and-tax-credit-recovery',
+ 'title': 'Contingent Corporate Bill-Audit & Tax-Credit Recovery — Practitioner Testimony Operator '
+          'Workbook',
+ 'subtitle': 'A Contingency Field Workbook for Parcel Refund Recovery, Surcharge Rerating, Carrier '
+             'Contract Engineering, Utility Bill Rebuilds, Indirect Expense Audits, and Property Tax '
+             'Assessment Appeals',
+ 'worksheets': [{'worksheet_id': 'ws-01',
+                 'number': 1,
+                 'title': 'Small-Parcel Refund and Surcharge Recovery Ledger',
+                 'purpose': 'Build a recovery ledger that captures every guaranteed service refund, blocks '
+                            'automatic denials, exposes auditor fee overreach, and rerates surcharges '
+                            'package by package so that parcel spend is both recovered and repriced on a '
+                            'strict contingency basis.',
+                 'chapter_ref': 'Q1-Q2',
+                 'instructions': ['Grant the auditor online billing credentials for every FedEx and UPS '
+                                  'account before completing any other field, so every invoice downloads '
+                                  'automatically and nothing depends on manual pulls.',
+                                  'Freeze same-day invoice payment until every guaranteed service refund '
+                                  'dispute is filed inside the 15-day late-package window, because an '
+                                  'existing payment on file triggers automatic denials.',
+                                  'Scan the original reason column for systematic SVC fail credits before '
+                                  'approving any auditor fee statement, and strike fees billed on refunds '
+                                  'the carrier issued automatically.',
+                                  'Measure every oversize-adjacent SKU sealed, at its widest points '
+                                  'including handles and bulges, and store the results in your own SKU '
+                                  'dimension file before modeling any surcharge rule.',
+                                  'Rerate package by package with no sampling, average weights, or average '
+                                  'zones, and send no dispute whose figures did not come from the audit '
+                                  'itself or lack analyst sign-off.'],
+                 'fields': [{'name': 'carrier_billing_access',
+                             'type': 'text',
+                             'prompt': 'List every FedEx and UPS online billing account the client holds, '
+                                       'who controls the credentials, and whether invoices can be '
+                                       'auto-downloaded for continuous monitoring. Note any account where '
+                                       'invoices are paid manually the moment they post, because timing '
+                                       'matters.',
+                             'example': 'FedEx account ending 4471 and UPS account ending 2208, both held '
+                                        'by the controller, both granted to the auditor for daily pulls. '
+                                        'Refund Retriever describes the model as similar to mint.com, '
+                                        'constantly using credentials to monitor invoices and shipping '
+                                        'activity [Refund Retriever — P3sA9eO0D-k @ 00:00:52]. FedEx '
+                                        'invoices currently auto-pay on posting, flagged for immediate '
+                                        'change.'},
+                            {'name': 'payment_hold_policy',
+                             'type': 'textarea',
+                             'prompt': 'Describe the current invoice payment timing and write the revised '
+                                       'hold rule that keeps FedEx invoices unpaid until every guaranteed '
+                                       'service refund dispute is filed inside the 15-day late-package '
+                                       'window. Name who approves release of payment.',
+                             'example': 'Old rule: pay on posting. New rule: AP holds every FedEx invoice '
+                                        'until the auditor confirms GSR filings are complete, then '
+                                        'releases within the 15-day window. Refund Retriever saw a client '
+                                        'pay as soon as the invoice was available, which caused FedEx to '
+                                        'automatically deny any GSR service failure requests [Refund '
+                                        'Retriever — JeLyjRF9HEk @ 00:01:25]. Controller signs each '
+                                        'release.'},
+                            {'name': 'systematic_svc_fail_scan',
+                             'type': 'textarea',
+                             'prompt': 'Open the FedEx online billing invoice history and record how many '
+                                       'credits show systematic SVC fail in the original reason column. '
+                                       'Compare that count against any refunds an auditor has billed you '
+                                       'for, and flag every overlap for challenge.',
+                             'example': 'Last quarter showed 31 credits marked systematic SVC fail, '
+                                        'meaning FedEx refunded those automatically. The incumbent '
+                                        "auditor's fee statement included 12 of them. Refund Retriever "
+                                        'warns that an auditor billing for these credits may be dishonest '
+                                        '[Refund Retriever — 8Bw_30ivpb4 @ 00:00:48]. All 12 fee lines are '
+                                        'disputed in writing, and the auditor must strip automatic credits '
+                                        'from future statements.'},
+                            {'name': 'denied_claim_escalation',
+                             'type': 'textarea',
+                             'prompt': 'Map the escalation path for every rejected service-failure '
+                                       'dispute, including repeated resubmission, live phone follow-up, '
+                                       'and the choice between an invalid address correction dispute, a '
+                                       'fresh service-failure resubmission, or no further action. Assign '
+                                       'an owner to each branch.',
+                             'example': 'Rejected disputes route first to the Share a Refund decision '
+                                        'tree: invalid address correction dispute, resubmit the service '
+                                        'failure, or take no further action [Share a Refund — eTB0fyueR5A '
+                                        '@ 00:04:36]. Anything still denied goes to live phone agents. On '
+                                        'one $4,253.53 invoice, phone calls reversed auto-denials on all 5 '
+                                        'late packages and recovered $98.42 [Refund Retriever — '
+                                        'JeLyjRF9HEk @ 00:01:42].'},
+                            {'name': 'refund_method_speed_meter',
+                             'type': 'text',
+                             'prompt': 'Tally recovered refunds by method over the last audit period: '
+                                       'credits on unpaid invoices, credit-card refunds, and mailed '
+                                       'checks. Use the mix to grade whether your auditor files quickly or '
+                                       'late, and record the percentage in each bucket.',
+                             'example': 'Invoice credits 54 percent, card refunds 30 percent, checks 16 '
+                                        'percent. Share a Refund reads mostly invoice credits as fast '
+                                        'filing and card credits or checks as late filing [Share a Refund '
+                                        '— PheSsrwvW9c @ 00:04:02], and says filing claims quickly '
+                                        'increases the success rate of the refund delivered [Share a '
+                                        'Refund — PheSsrwvW9c @ 00:02:03]. Grade: mixed, push for faster '
+                                        'filing.'},
+                            {'name': 'contingency_fee_terms',
+                             'type': 'textarea',
+                             'prompt': "Record the auditor's contingency fee percentage, the base it "
+                                       'applies to, any volume step-downs, and whether fees attach only to '
+                                       'refunds the auditor actually acted on. Calculate the net refund '
+                                       'you keep on a sample recovery amount.',
+                             'example': 'Offer one starts at 50 percent of savings, so a $50 recovery '
+                                        'carries a $25 fee, with rate negotiated down at volume [Refund '
+                                        'Retriever — vOX4irOA_Tk @ 00:05:11]. Offer two at 30 percent '
+                                        'leaves $700 net on $1,000 of savings [Cerasis , now part of '
+                                        'GlobalTranz — GnXmnbxCZ-A @ 00:05:14]. Require fees only on '
+                                        'shipments where the auditor took action.'},
+                            {'name': 'oversize_sku_measurement',
+                             'type': 'textarea',
+                             'prompt': 'List every SKU that sits near an additional handling or oversize '
+                                       'threshold, with sealed dimensions measured at the widest points '
+                                       'including handles and bulges. Note the 48-inch, 30-inch, 50-pound, '
+                                       '96-inch, and 130-inch triggers each carton approaches.',
+                             'example': 'SKU T-220 measures 47.5 inches empty but 48.25 sealed with the '
+                                        'bulge, crossing the additional handling line. FedEx advises '
+                                        'measuring everything at the widest point, including handles, '
+                                        'bulges and irregular shapes [FedEx — OpAC2Ev8SH0 @ 00:02:26]. '
+                                        'Refund Retriever warns FedEx can remeasure in transit and hit a '
+                                        'compliant-looking carton with a $300 oversize charge [Refund '
+                                        'Retriever — iizNycveRfc @ 00:01:08].'},
+                            {'name': 'cubic_rule_exposure',
+                             'type': 'textarea',
+                             'prompt': 'Using your own SKU dimension file, model exposure to the UPS '
+                                       '5-cubic-foot additional handling rule. Record box dimensions, '
+                                       'actual weight, the minimum billable weight applied, the added '
+                                       'handling charge, and the percentage change in cost per package.',
+                             'example': 'A 20x20x22 inch, 20 lb box to zone 5 rose from $19.69 to $57.18, '
+                                        'a 190 percent increase, after the custom DIM 250 was voided, a 40 '
+                                        'lb minimum applied, and a $36 charge added [iDrive Logistics — '
+                                        'H64bWcLI0O8 @ 00:08:56]. Dimensions come from our own file, '
+                                        'because most UPS billing detail carries none [iDrive Logistics — '
+                                        'H64bWcLI0O8 @ 00:10:19].'},
+                            {'name': 'line_by_line_rerate',
+                             'type': 'textarea',
+                             'prompt': 'Describe the scope of a package-by-package rerate: carrier, date '
+                                       'range, invoice count, line count, and whether any sampling or '
+                                       'average weights were used. Record the number of findings, their '
+                                       'dollar value, and the yield as a share of audited spend.',
+                             'example': "Benchmark: Experidium rerated 90 days of one carrier's invoices, "
+                                        '402 invoices and 1,870 lines, with no sampling, and surfaced 42 '
+                                        'findings worth $11,414, or 2.38 percent of audited spend '
+                                        '[Experidium — 8-Sguow2LDM @ 00:02:37]. Amware Fulfillment warns '
+                                        'that discounts, minimums, DIM factors, thresholds and fuel can '
+                                        'each swing numbers five million dollars [Amware Fulfillment — '
+                                        'd3jQIelSHJM @ 00:19:26].'},
+                            {'name': 'surcharge_variance_requests',
+                             'type': 'textarea',
+                             'prompt': 'List the surcharges where you will request a definition or size '
+                                       'variance rather than a simple discount. For each, record the '
+                                       'current trigger, the product dimension or weight that crosses it, '
+                                       'and the revised trigger you will ask the carrier for.',
+                             'example': 'A 97-inch product against the FedEx 96-inch limit: ask to raise '
+                                        'the limit to 98 inches, which can eliminate the fee entirely '
+                                        '[Refund Retriever — iizNycveRfc @ 00:02:04]. A 51-pound product '
+                                        'just over 50: push the additional handling weight trigger to 53 '
+                                        'or 55 pounds instead of settling for a 25 to 75 percent fee '
+                                        'reduction [Refund Retriever — TzPaNZCC4js @ 00:02:57].'}],
+                 'completion_gate': 'Do not advance until FedEx payment holds are in force, systematic SVC '
+                                    'fail credits are reconciled against every auditor fee line, a written '
+                                    'denied-claim escalation path with named owners exists, and at least '
+                                    'one full package-by-package rerate with analyst sign-off is '
+                                    'complete.'},
+                {'worksheet_id': 'ws-02',
+                 'number': 2,
+                 'title': 'Carrier Agreement Engineering and Utility Bill Rebuild',
+                 'purpose': 'Engineer UPS and FedEx agreements around your true shipping profile, expose '
+                            'discounts pinned to minimum floors, protect the money-back guarantee, and '
+                            'rebuild every utility invoice from the rate book to recover misclassified '
+                            'rates and misapplied demand charges.',
+                 'chapter_ref': 'Q3-Q4',
+                 'instructions': ['Assemble your own zone, weight, service and accessorial profile before '
+                                  'the first carrier meeting, so you know your shipping better than the '
+                                  'carrier representative across the table.',
+                                  'Never share your current agreement with a competing carrier, because it '
+                                  'hands them a floor to match instead of a number to beat.',
+                                  'Test every proposed discount against the minimum net charge before '
+                                  'counting savings, and plan for a negotiation cycle of 3-6 rounds over '
+                                  '6-10 weeks.',
+                                  'Pull three to five years of utility bills, tariffs, meter data and '
+                                  'exemption certificates, then recalculate each invoice line against the '
+                                  'rate book rather than approving any bill on its total.',
+                                  'Re-verify tax exemptions every billing cycle and flag every estimated '
+                                  'read, possibly shared meter, and broken or leaking meter before '
+                                  'trusting the usage history.'],
+                 'fields': [{'name': 'shipping_profile',
+                             'type': 'textarea',
+                             'prompt': 'Summarize your zone, weight, service, and accessorial profile in '
+                                       'enough detail that you know it better than the carrier rep. Note '
+                                       'your top five zones, dominant weight breaks, service mix, and the '
+                                       'accessorials that appear most often on invoices.',
+                             'example': 'Ground is 82 percent of volume, concentrated in zones 2 through 5 '
+                                        'at 1 to 10 lb, with residential and additional handling as the '
+                                        'top accessorials. Refund Retriever holds that every part of the '
+                                        'contract is negotiable and can be renegotiated at any time '
+                                        'instead of waiting for expiration [Refund Retriever — Tu2F34LOK0g '
+                                        '@ 00:00:30].'},
+                            {'name': 'minimum_net_charge_test',
+                             'type': 'textarea',
+                             'prompt': 'Run each proposed discount against the minimum net charge for your '
+                                       'most common zone and weight. Record the list rate, the headline '
+                                       'discount, the discounted net, the minimum, and the effective '
+                                       'discount, then estimate how much volume is pinned to the floor.',
+                             'example': 'Zone 4, 10 lb package lists at $13.27; 50 percent off yields '
+                                        '$6.64, but the $8.23 minimum makes the effective discount 38 '
+                                        'percent, and a 65 percent offer would save nothing [Shipware — '
+                                        'rjelY0C_iQg @ 00:03:37]. Refund Retriever calls the minimum net '
+                                        'charge a basement floor under discounts [Refund Retriever — '
+                                        'JAnVvaSg0TA @ 00:03:38].'},
+                            {'name': 'grid_vs_tier_allocation',
+                             'type': 'textarea',
+                             'prompt': 'Break each proposed discount into its guaranteed grid portion and '
+                                       'its volume-dependent tier portion. Show the combined headline '
+                                       'figure, the constrained figure after minimums, and the trade you '
+                                       'will propose to shift more of the total into the grid.',
+                             'example': 'A 23 percent grid plus 12 percent tier makes a 35 percent '
+                                        'headline, constrained to about 22 percent; LJM says maximize the '
+                                        'grid [LJM — 56winzXYmPA @ 00:26:48]. Counter-proposal follows '
+                                        'Scarbrough Global: concede column D from 50 to 45 percent to lift '
+                                        'column A ground from 30 to 35-40 percent [Scarbrough Global — '
+                                        'iflfyKDuJzY @ 00:03:59].'},
+                            {'name': 'gsr_waiver_strike',
+                             'type': 'textarea',
+                             'prompt': 'Read every section of the proposed agreement for guaranteed '
+                                       'service refund waiver language and list where it appears. Record '
+                                       'the discount the carrier offered in exchange, and document your '
+                                       'decision to strike the waiver regardless of the sweetener '
+                                       'attached.',
+                             'example': 'Waiver language appears in the service terms and again in an '
+                                        'addendum, so the full agreement was read twice. Refund Retriever '
+                                        'says strike any guaranteed service refund waiver even when a '
+                                        'hefty discount is dangled, because the language hides in multiple '
+                                        'sections [Refund Retriever — C_7KIASDpS8 @ 00:02:41]. The offered '
+                                        '1-2 percent sweetener is declined and the money-back guarantee '
+                                        'stays.'},
+                            {'name': 'fee_waivers_and_account_type',
+                             'type': 'textarea',
+                             'prompt': 'List the administrative concessions you will request beyond rate '
+                                       'discounts, such as waiver of the processing fee and conversion to '
+                                       'a scan-based account. For each, note the expected billing impact '
+                                       "and the carrier's response in each negotiation round.",
+                             'example': 'Request one: waive the 2 percent processing fee, which LJM '
+                                        'reports gets waived about 75 percent of the time [LJM — '
+                                        '56winzXYmPA @ 00:18:26]. Request two: a scan-based UPS account so '
+                                        'canceled orders and unused return labels never get billed [Good '
+                                        'Citizens Society — 72KTU2Th6eY @ 00:02:42]. Round one response: '
+                                        'fee waiver under review, scan-based billing accepted.'},
+                            {'name': 'exit_and_monitoring_plan',
+                             'type': 'textarea',
+                             'prompt': 'Price the early termination fee in the proposed agreement, '
+                                       'describe your exit path if the carrier underperforms, and set the '
+                                       'post-implementation monitoring plan that checks every shipment for '
+                                       'billing errors during the first months under the new contract.',
+                             'example': 'Early termination fee is quoted in six figures, consistent with '
+                                        'what Shipware says is typical, so an exit clause tied to service '
+                                        'failures is requested [Shipware — 6WEh56BpnbM @ 00:14:47]. '
+                                        'Post-launch, the auditor checks every shipment, since Refund '
+                                        'Retriever says the risk of billing errors skyrockets after a new '
+                                        'contract is implemented [Refund Retriever — VpvZiUp02QU @ '
+                                        '00:02:56].'},
+                            {'name': 'utility_bill_inventory',
+                             'type': 'textarea',
+                             'prompt': 'Inventory every utility account, meter, and service address, and '
+                                       'record whether signed authorization exists to download historical '
+                                       'invoices directly from each utility. Note the lookback the state '
+                                       'allows and how many months of bills, tariffs, and meter data you '
+                                       'hold.',
+                             'example': 'Fourteen electric, gas and water accounts across six sites, with '
+                                        'signed authorization filed so bills come straight from each '
+                                        'utility rather than from years of client paper [Puleo Energy — '
+                                        'a4dO2n1QfzQ @ 00:04:47]. Target lookback is about 36 months, as '
+                                        'far back as the state allows [Puleo Energy — a4dO2n1QfzQ @ '
+                                        '00:00:54]. Two water accounts the client never flagged are '
+                                        'added.'},
+                            {'name': 'rate_class_check',
+                             'type': 'textarea',
+                             'prompt': 'For each account, record the rate class billed, the rate class the '
+                                       'account should carry under the tariff, and the overpayment implied '
+                                       'by any mismatch. Note any accounts the auditor requested that the '
+                                       'client did not know were improperly rated.',
+                             'example': 'Warehouse meter 2 is billed on the small business plan despite '
+                                        'large-business load. Vert Energy Group cites a misclassification '
+                                        'that caused $21,000 in overpayments over a year and a half [Vert '
+                                        'Energy Group — bQpXnGBfNJY @ 00:02:36]. Ryan Sumerlan notes '
+                                        'knowledge of all state tariffs lets the auditor ask for bills '
+                                        'clients never knew were misrated [Ryan Sumerlan — h6W5k5owNiU @ '
+                                        '00:01:43].'},
+                            {'name': 'demand_ratchet_rebuild',
+                             'type': 'textarea',
+                             'prompt': 'Rebuild the demand ratchet for each demand-metered account month '
+                                       'by month. Record the highest peak across the current and previous '
+                                       '11 months, the calculated ratchet, the billed demand, and whether '
+                                       'months above the ratchet were billed at actual demand.',
+                             'example': 'Peak across the 12-month window was 500 kW, so the ratchet should '
+                                        'be 400 kW at 80 percent, yet March billed 450 kW against a 380 kW '
+                                        'actual read. Oncor describes the ratchet as 80 percent of the '
+                                        'highest peak across current and previous 11 months [Oncor — '
+                                        'yHlhF0nEJ14 @ 00:01:46].'},
+                            {'name': 'utility_fee_agreement',
+                             'type': 'textarea',
+                             'prompt': "Record the utility auditor's contingency terms in writing: the "
+                                       'share of refunds, the share of ongoing realized savings, the '
+                                       'number of months savings are shared, when invoicing occurs, and '
+                                       'the requirement that only true and uncontested findings are '
+                                       'billed.',
+                             'example': 'Terms mirror Puleo Energy: 50 percent of refunds after the check '
+                                        'or bill credit arrives, 50 percent of realized monthly savings '
+                                        'for 24 months, and 100 percent to the client from month 25 [Puleo '
+                                        'Energy — a4dO2n1QfzQ @ 00:05:57]. Billing applies only to true '
+                                        'and uncontested findings [Puleo Energy — a4dO2n1QfzQ @ '
+                                        '00:06:15].'}],
+                 'completion_gate': 'Do not advance until every proposed discount has been tested against '
+                                    'the minimum net charge, all guaranteed service refund waiver language '
+                                    'is struck, an exit path and post-implementation monitoring plan are '
+                                    'written, and every utility account has a rate-class check and '
+                                    'line-by-line rebuild against the rate book.'},
+                {'worksheet_id': 'ws-03',
+                 'number': 3,
+                 'title': 'Indirect Expense Audit and Property Tax Appeal Tracker',
+                 'purpose': "Audit telecom, waste hauling, shipping, and workers' comp spend on a "
+                            'no-savings, no-fee basis, then screen owned property for assessment appeals '
+                            'argued on value, cap rate, and evidence, while protecting every filing '
+                            'deadline and avoiding counter-appeal traps.',
+                 'chapter_ref': 'Q5-Q6',
+                 'instructions': ['Confirm monthly spend per indirect category and prioritize any category '
+                                  'above $2,000 a month, keeping existing vendor relationships wherever '
+                                  'the savings can be captured inside them.',
+                                  'Demand proof for every overfill or overage fee before paying it, and '
+                                  'back-claim credits for any period in which drivers took no photos.',
+                                  'Confirm every disconnected telecom circuit is fully dead at the modem '
+                                  'or NID, not merely canceled on paper, and review USF taxes and '
+                                  'exemptions line by line.',
+                                  'Argue assessed value, never the bill, and build commercial appeals on '
+                                  'the income approach and cap rate, stripping intangible value from hotel '
+                                  'and operating business sales.',
+                                  'Calendar every filing deadline and 30-day change notice, walk the '
+                                  'property for unrecorded improvements before filing, and keep prior-year '
+                                  'taxes current past January 31.'],
+                 'fields': [{'name': 'indirect_spend_categories',
+                             'type': 'textarea',
+                             'prompt': 'List each indirect expense category under review, including '
+                                       "telecom, waste hauling, shipping, and workers' comp, with monthly "
+                                       'spend per category. Flag every category that clears the threshold '
+                                       'worth a conversation and note whether recommendations can stay '
+                                       'with existing vendors.',
+                             'example': "Telecom $6,800, waste $3,100, shipping $33,000 and workers' comp "
+                                        'premium tracked annually. Zog Inc sets the bar at $2,000 a month '
+                                        'in a category as worth the conversation [Zog Inc — u-o74Ze2VNs @ '
+                                        '00:09:52]. Schooley Mitchell has no vendor ties, and 80 percent '
+                                        'of recommendations involve no change of supplier [RiverForest '
+                                        'Connections — VvAP-sQig0I @ 00:00:38].'},
+                            {'name': 'cfo_opening_question',
+                             'type': 'text',
+                             'prompt': 'Write the opening question you will put to the CFO about how '
+                                       'recovered savings will be used, and note any signs of financial '
+                                       'stress or prospects going dark that suggest a different approach '
+                                       'or a referral opportunity.',
+                             'example': 'Opening line: What are you going to do with the money I save you? '
+                                        'Rob Sullivan uses that question and treats financial stress and '
+                                        'prospects who go dark as referral cues; one client held off '
+                                        'layoffs [Zog Inc — u-o74Ze2VNs @ 00:08:15]. Answer recorded: fund '
+                                        'two retained positions and a delayed equipment purchase.'},
+                            {'name': 'telecom_circuit_audit',
+                             'type': 'textarea',
+                             'prompt': 'List every telecom circuit, line, and data service still billing, '
+                                       'and confirm which ones are fully disconnected versus '
+                                       'half-disconnected with the modem or NID still live. Record USF '
+                                       'taxes and exemptions line by line and any credits requested.',
+                             'example': 'Three circuits at a closed branch still bill because the NID '
+                                        'stays live; Macronet Services hunts exactly these '
+                                        'half-disconnected circuits and checks USF taxes and exemptions '
+                                        'line by line [Macronet Services — QMubvpeApZk @ 00:03:13]. '
+                                        'Benchmark: Auditel stacked $215K of additional credits on an '
+                                        'earlier $165,000 credit across wireline, data and voice, about '
+                                        '$370K total [Auditel, Inc. Telecom Expense Management — '
+                                        'gIcFGhjFIKI @ 00:02:05].'},
+                            {'name': 'waste_contract_baseline',
+                             'type': 'textarea',
+                             'prompt': 'Lock a ledger baseline for waste hauling and record the contract '
+                                       'end date, inflation cap status, container sizes, pickup frequency, '
+                                       'and billing basis. Note when you will approach the current hauler '
+                                       'and competing haulers before the renewal date arrives.',
+                             'example': 'Contract ends December 31 with no inflation cap; Barracuda B2B '
+                                        'has seen rates jump as much as 25 percent from one month to the '
+                                        'next at year end [Barracuda B2B — vnkFP_2Jzng @ 00:03:27]. Busch '
+                                        'Systems suggests comparing a 6-yard weekly container against a '
+                                        '3-yard and weighing weight versus volume billing [Busch Systems — '
+                                        'LoP7CFupHr8 @ 00:30:02]. Hauler outreach begins in September.'},
+                            {'name': 'overfill_fee_challenge',
+                             'type': 'textarea',
+                             'prompt': 'List every overfill, overage, or contamination fee billed by the '
+                                       'hauler over the lookback period, whether photo proof was provided '
+                                       'for each, and the credit you will claim back where the driver '
+                                       'documented nothing. Include compactor charges that cannot be '
+                                       'audited.',
+                             'example': 'A $25-a-week overfill fee appears on every invoice for three '
+                                        "years with no driver photos. Following Paige's approach at Zog "
+                                        'Inc, proof is demanded and three years of credits are '
+                                        'back-claimed [Zog Inc — u-o74Ze2VNs @ 00:05:18]. The compactor is '
+                                        'flagged too; Busch Systems calls compactors a black hole that is '
+                                        'really hard to audit [Busch Systems — LoP7CFupHr8 @ 00:30:02].'},
+                            {'name': 'workers_comp_lookback',
+                             'type': 'textarea',
+                             'prompt': "Record the workers' comp policy years available for review, the "
+                                       'classification codes assigned, credits applied, and loss reporting '
+                                       'on file. Note the lookback the auditor will use, the error areas '
+                                       'covered, and the contingency fee basis for any premium recovery.',
+                             'example': 'Seven policy years are on file, matching the five-to-seven-year '
+                                        'lookbacks across 40-plus error areas that operators report. '
+                                        'Watchdog Advisory claims 3 in 4 employers are overcharged, '
+                                        'typically by 10 percent or more, and reports $25M recovered plus '
+                                        '$5M in future savings [Watchdog Advisory — Joo1fuo4HkY @ '
+                                        '00:00:40]. Its fee is a portion of savings: no savings, no fee '
+                                        '[Watchdog Advisory — 5eTaFaKQdHY @ 00:01:47].'},
+                            {'name': 'assessment_target_screen',
+                             'type': 'textarea',
+                             'prompt': 'Screen each owned property for appeal potential by recording the '
+                                       'assessed value, recent purchase price and cap rate, income '
+                                       'approach indicators, and any intangible value embedded in a hotel '
+                                       'or operating business sale. Rank properties by expected reduction.',
+                             'example': 'The hotel bought last year at a very low cap rate ranks first. '
+                                        'Paramount finds about a 20 percent value change for every 1 '
+                                        'percent cap-rate move [Paramount Property Tax Appeal — '
+                                        'fOMz56wkRgs @ 00:00:30] and typically removes 15 to 20 percent '
+                                        'off hotel purchase prices by stripping intangible and goodwill '
+                                        'value [Paramount Property Tax Appeal — R_juWiwAZ-k @ 00:00:54].'},
+                            {'name': 'appeal_deadline_calendar',
+                             'type': 'text',
+                             'prompt': 'Enter the original filing deadline for each property and every '
+                                       '30-day change notice the county sends mid-appeal. Confirm '
+                                       'prior-year taxes are current, and name the person responsible for '
+                                       'calendaring each date so no year is forfeited.',
+                             'example': 'Filing deadline and a 30-day change notice are entered on the tax '
+                                        'calendar, since letting either lapse forfeits the year [Save '
+                                        'Paulding — oIIj8lWBYVY @ 00:08:18]. Missing a deadline by a '
+                                        'single day means waiting a full year [USA Senior Laws Guide — '
+                                        'LopTSxbolHY @ 00:07:10]. Prior-year taxes are paid, avoiding '
+                                        'delinquency past January 31 [Lane Property Tax Advocates — '
+                                        'ePPknD36YQc @ 00:01:41].'},
+                            {'name': 'hearing_evidence_strategy',
+                             'type': 'textarea',
+                             'prompt': 'Outline your hearing strategy: whether you will ask the appraiser '
+                                       'to present first, the county evidence you have requested and when, '
+                                       'comparable sales including off-market deals, and any request to '
+                                       'disallow county evidence not provided in a timely manner.',
+                             'example': 'Request that the appraiser present first; in one Douglas County '
+                                        "hearing the appraiser's own tax map showed a parcel at $12,000 an "
+                                        "acre, cutting Roy's land from $32,000 [Save Paulding — "
+                                        'oIIj8lWBYVY @ 00:13:11]. If county evidence arrives late, ask the '
+                                        'chairman to disallow it [Save Paulding — oIIj8lWBYVY @ 00:22:46]. '
+                                        'Submit the purchase contract, closing statement and appraisal for '
+                                        'the off-market sale.'},
+                            {'name': 'pre_filing_risk_check',
+                             'type': 'textarea',
+                             'prompt': 'Before filing, record the results of a property walk for '
+                                       'unrecorded improvements, confirm rent roll unit counts and income '
+                                       'are accurate, and estimate the risk of a county counter-appeal. '
+                                       'Record the contingency fee percentage and expected net savings.',
+                             'example': 'Walk found a new roof missing from county records; filing '
+                                        'triggers a review that can raise value [Save Paulding — '
+                                        'oIIj8lWBYVY @ 00:04:53]. Rent roll unit counts are verified; '
+                                        'Jimmy calls misstating them fraud [Quality Builders — tHXC3Ph5z0Q '
+                                        '@ 00:35:04]. Fee set at 35 percent, within the 25 to 50 percent '
+                                        'range [Cross the River, Find the Treasure — 7CfK4x3Fijc @ '
+                                        '00:02:40].'}],
+                 'completion_gate': 'Do not advance until every indirect category above $2,000 a month has '
+                                    'a baseline, every overfill fee and half-disconnected circuit is '
+                                    'challenged, each appeal property is ranked with deadlines calendared, '
+                                    'prior-year taxes are confirmed current, and a pre-filing property '
+                                    'walk is documented.'},
+                {'worksheet_id': 'ws-04',
+                 'number': 4,
+                 'title': 'Cost Segregation Payoff and Catch-Up Depreciation Screen',
+                 'purpose': 'Decide whether a cost segregation study, a Form 3115 catch-up, or a Section '
+                            '179D claim produces usable tax savings that clearly exceed the study fee, '
+                            'recapture exposure, and audit risk before any engagement is signed.',
+                 'chapter_ref': 'Q7-Q8',
+                 'instructions': ['Pull the closing statement, county appraisal district land value, and '
+                                  'placed-in-service records before entering any basis or depreciation '
+                                  'figure.',
+                                  'Request the free benefit analysis first and treat its numbers as the '
+                                  'ceiling until a full engineering-based study confirms them.',
+                                  'Map every projected loss to income the owner can actually offset this '
+                                  'year, and mark suspended losses as zero savings.',
+                                  'Model the exit before the benefit, including hold period, recapture on '
+                                  'sale, and any components likely to be removed.',
+                                  'For prior-year properties and 179D work, confirm the five-year '
+                                  'method-change window, DCN code, third-party certification, and signed '
+                                  'allocation letter before filing.'],
+                 'fields': [{'name': 'property_basis_and_land',
+                             'type': 'textarea',
+                             'prompt': 'Record the purchase price, closing date, and the land value you '
+                                       'will strip out before any reclassification. State where the land '
+                                       'figure came from, naming the county appraisal district record, and '
+                                       'explain why no flat percentage split was used anywhere in your '
+                                       'basis calculation.',
+                             'example': 'A $3M building closes with $2.5M of depreciable basis left after '
+                                        'land [Engineered Tax Services — qEFJIGNNOkw @ 00:12:13]. Land is '
+                                        'pulled from the county appraisal district record, not an 80/20, '
+                                        '15 percent, or 10 percent split, because Streit says those flat '
+                                        'splits get lost in less than three minutes [Toby Mathis Esq | Tax '
+                                        'Planning & Asset Protection — beMOZDrXOJ8 @ 00:21:41].'},
+                            {'name': 'reclassification_estimate',
+                             'type': 'textarea',
+                             'prompt': 'Estimate the share of basis likely to move into 5-, 7-, and '
+                                       '15-year buckets for this asset type. Compare your property against '
+                                       'the reclassification ranges reported for good candidates, mobile '
+                                       'home parks, and warehouses, and note which range you are assuming.',
+                             'example': 'A suburban office building is assumed at the low end of the '
+                                        '25-40% band Chris Streit gives for good candidates, not the '
+                                        'little over 80% seen on mobile home parks or the 12-15% typical '
+                                        'of warehouses [Toby Mathis Esq | Tax Planning & Asset Protection '
+                                        '— beMOZDrXOJ8 @ 00:15:54]. On $2.5M of basis, 25% moves $625,000 '
+                                        'into accelerated classes for modeling.'},
+                            {'name': 'year_one_writeoff',
+                             'type': 'textarea',
+                             'prompt': 'Model year-one depreciation with bonus against straight-line on '
+                                       'the same basis. Show both numbers side by side, state the closing '
+                                       'month, and confirm whether a late-year close changes the bonus '
+                                       'result, since practitioners report bonus is not prorated.',
+                             'example': 'On the $2.5M basis, straight-line yields $64K in year one while '
+                                        'bonus yields $794K, and $172K accelerated without bonus '
+                                        '[Engineered Tax Services — qEFJIGNNOkw @ 00:12:13]. Because the '
+                                        'close lands in December, the model still books about $770K versus '
+                                        'about $6K straight-line, since bonus is not prorated [Engineered '
+                                        'Tax Services — qEFJIGNNOkw @ 00:13:12].'},
+                            {'name': 'loss_usability',
+                             'type': 'textarea',
+                             'prompt': 'Identify the income the year-one loss will actually offset. State '
+                                       'whether the owner qualifies as a real estate professional or uses '
+                                       'the short-term rental route, and describe what happens to the loss '
+                                       'if neither applies and it becomes suspended.',
+                             'example': 'The owner has no real estate professional status and no '
+                                        'short-term rental use, so the model mirrors Marcus, whose $55,000 '
+                                        'loss was suspended and who saved nothing [Clint Coons Esq. | Real '
+                                        'Estate Asset Protection — fV7tusLGp3E @ 00:04:59]. Contrast a '
+                                        'real estate professional turning $13,120 of taxable income into a '
+                                        'loss of about $9,308 [C2 Realty Group — dCExXUUA6zA @ 00:01:51].'},
+                            {'name': 'study_fee_vs_benefit',
+                             'type': 'textarea',
+                             'prompt': 'Enter the quoted study fee and the projected tax impact, then '
+                                       'compute how far the benefit clears the fee. Note whether the free '
+                                       'benefit analysis was run first and whether the deal is too small '
+                                       'to justify a paid study at all.',
+                             'example': 'The free benefit analysis came back in about 24 hours at no cost '
+                                        '[Engineered Tax Services — sXpa52KOvog @ 00:25:23]. The quote '
+                                        'sits inside the $3-6K average range [Mark Perlberg, CPA — '
+                                        '3bjz5YCldWA @ 00:21:12]. If projected impact lands near $13,000 '
+                                        'to $14,000 against a $5,000 to $6,000 fee, as in Santa Monica, '
+                                        'the study is killed [Advise RE — 8ZzVeQLb80E @ 00:02:41].'},
+                            {'name': 'exit_and_recapture',
+                             'type': 'textarea',
+                             'prompt': 'Describe the planned hold period and the most likely exit. '
+                                       'Estimate recapture on an early sale, list any components that may '
+                                       'be removed before sale, and decide whether a hold shorter than '
+                                       'five years makes the study pointless for this property.',
+                             'example': 'The owner may sell in year four, which PorterKinney says rarely '
+                                        'justifies a study [PorterKinney — G6l9WU9XBgI @ 00:07:49]. An '
+                                        'early sale handed back $42,500 in recapture on $150,000 of '
+                                        'depreciation [Clint Coons Esq. | Real Estate Asset Protection — '
+                                        'fV7tusLGp3E @ 00:09:03]. Removed assets get logged because there '
+                                        'is no recapture on them [Engineered Tax Services — sXpa52KOvog @ '
+                                        '00:16:56].'},
+                            {'name': 'form_3115_lookback',
+                             'type': 'textarea',
+                             'prompt': 'For a property placed in service in a prior year, document the '
+                                       'Form 3115 path. Record the DCN code you will use, the sign of the '
+                                       '481A adjustment, and confirm no prior method change sits inside '
+                                       'the five-year window.',
+                             'example': 'Prior returns cannot be amended for a depreciation change, so '
+                                        'Form 3115 is mandatory [Tax Modern — hjpQzDqWetI @ 00:02:55]. The '
+                                        'Wealthy Accountant uses DCN 8 for a permissible-to-permissible '
+                                        'change, while Tax Modern cites 7 [The Wealthy Accountant — '
+                                        'XhVfWjlDk3w @ 00:02:35]. The 481A adjustment is entered as a '
+                                        'negative number [Tax Modern — hjpQzDqWetI @ 00:10:32].'},
+                            {'name': 'placed_in_service_and_bracket_timing',
+                             'type': 'text',
+                             'prompt': 'Record the placed-in-service date as the day the property was '
+                                       'ready and available for rental, not the closing date. Then state '
+                                       "the owner's bracket this year and whether waiting for a higher "
+                                       'bracket year before running the study makes sense.',
+                             'example': 'Closing was in March, but the unit was ready and available for '
+                                        'rental in May, so May is the placed-in-service date [Asset Wise '
+                                        'Institute — e9edFqL1urU @ 00:06:50]. Income is low this purchase '
+                                        'year, so the study is deferred and run later through a 3115 once '
+                                        'income reaches the 37% bracket [PorterKinney — G6l9WU9XBgI @ '
+                                        '00:08:46].'},
+                            {'name': 'section_179d_eligibility',
+                             'type': 'textarea',
+                             'prompt': 'For design or contracting work on a commercial or tax-exempt '
+                                       'building, test Section 179D eligibility. Record square footage, '
+                                       'energy savings over ASHRAE 90.1-2007, prevailing wage and '
+                                       'apprenticeship status, and the name of the independent third-party '
+                                       'engineer certifying the model.',
+                             'example': 'A 100,000 square foot building meeting the 25% savings standard '
+                                        'plus prevailing wage and apprenticeship moves from a $180,000 '
+                                        'deduction under the old rule to $500,000 at $5.00 per square foot '
+                                        '[Cherry Bekaert — JZ5NlVOVnnw @ 00:11:07]. Efficiency cannot be '
+                                        'self-certified, so a third-party engineer is engaged before '
+                                        'project close [Cherry Bekaert — JZ5NlVOVnnw @ 00:07:35].'},
+                            {'name': 'allocation_letter_leverage',
+                             'type': 'textarea',
+                             'prompt': 'If the building owner is a tax-exempt or nonprofit entity, '
+                                       'document the 179D allocation letter status. Record when you asked '
+                                       'about allocation during bidding, the date the signed letter '
+                                       'arrived, and anything the owner requested in exchange for granting '
+                                       'it.',
+                             'example': "Allocation was raised during bidding, per George Ghazarian's "
+                                        'advice [George Ghazarian, CPA — Exr84oxoKzc @ 00:04:26]. No '
+                                        'signed letter means no deduction, so the claim waits for it '
+                                        '[George Ghazarian, CPA — Exr84oxoKzc @ 00:04:54]. The campus '
+                                        'owner asked for an extended warranty period in exchange, a trade '
+                                        'nonprofit clients have negotiated before [Cherry Bekaert — '
+                                        'zU4xMPqHWY0 @ 00:06:46].'}],
+                 'completion_gate': 'Do not engage a study or file a Form 3115 until land value comes from '
+                                    'the county appraisal district, the year-one loss maps to usable '
+                                    'income, projected tax impact clearly exceeds the fee, the hold period '
+                                    'exceeds five years, and any 179D claim has third-party certification '
+                                    'plus a signed allocation letter in hand.'},
+                {'worksheet_id': 'ws-05',
+                 'number': 5,
+                 'title': 'Work Opportunity Tax Credit Screening and Claim Mechanics',
+                 'purpose': 'Build a hiring-to-filing pipeline that screens every new hire, lands Form '
+                            '8850 and ETA 9061 inside the 28-day window, proves hours and wages, and '
+                            'documents every adjacent credit or refund claim so it survives verification.',
+                 'chapter_ref': 'Q9-Q10',
+                 'instructions': ['Start from actual hiring volume and turnover, then decide whether to '
+                                  'self-file or outsource screening and state reporting.',
+                                  'Design screener questions around the target groups that actually '
+                                  'generate certifications, using exact Form 8850 language.',
+                                  'Treat 28 calendar days from each start date as a hard wall and send '
+                                  'both forms together as they come in.',
+                                  'Hold the credit off the books until the final determination letter '
+                                  'arrives, then prove hours and wages before Form 5884.',
+                                  'Keep a retention file for every claim, and confirm substantiation '
+                                  'exists before pushing any R&D, sales tax, or 179D benefit.'],
+                 'fields': [{'name': 'hiring_volume_and_credit_value',
+                             'type': 'textarea',
+                             'prompt': 'Record annual new-hire volume and turnover, then estimate '
+                                       'potential credit value using the $2,400 typical figure and the '
+                                       'higher veteran amounts. Note whether volume crosses the roughly '
+                                       '50-hires-per-year line that practitioners use to justify '
+                                       'outsourcing the screening and state filing.',
+                             'example': 'The restaurant group hires about 120 people a year, well above '
+                                        'the roughly 50 hires where ADP outsourcing at about 25 percent of '
+                                        'the credit becomes worth it [Linked Accounting, LLP — yEWXbR-V5qs '
+                                        '@ 00:01:01]. For scale, a Five Guys franchise projected $27,600 '
+                                        'from 86 qualifying hires after first adopting screening [Official '
+                                        'ReadyATS — KqRldQ_XlyA @ 00:06:18].'},
+                            {'name': 'target_group_mix',
+                             'type': 'textarea',
+                             'prompt': 'List the target groups your applicant pool most likely falls into '
+                                       'and the expected share of each. Do not assume veterans and '
+                                       'ex-felons dominate; compare your expectations against the reported '
+                                       'split between SNAP recipients and veterans among actual '
+                                       'certifications.',
+                             'example': 'The screening plan assumes SNAP households will drive most '
+                                        'certifications, since Lydia at Workstream reports about 70 '
+                                        'percent of qualified hires are SNAP recipients and only about 7 '
+                                        'percent are veterans [Workstream — 3hIbQPQR66Y @ 00:20:13]. '
+                                        'Veteran hires are still flagged because the top credit reaches '
+                                        '$9,600 for disabled-veteran groups [Workforce3One — w5ydUbSH5TI @ '
+                                        '00:00:23].'},
+                            {'name': 'screener_question_design',
+                             'type': 'textarea',
+                             'prompt': 'Draft how screener questions will be presented to applicants. '
+                                       'Specify whether ex-felon and veteran questions are separated from '
+                                       'SNAP, welfare, and residency questions, whether wording follows '
+                                       'Form 8850 exactly, and how age-related eligibility is asked '
+                                       'without asking age directly.',
+                             'example': 'Ex-felon and veteran questions move to a separate screen, because '
+                                        'Lydia reports applicants are about 20 percent less likely to '
+                                        'finish when they see ex-felon wording [Workstream — 3hIbQPQR66Y @ '
+                                        '00:06:34]. All remaining questions use exact Form 8850 language, '
+                                        'and the form asks about SSI benefits rather than whether someone '
+                                        'is over 65 [Workstream — 3hIbQPQR66Y @ 00:14:58].'},
+                            {'name': 'screening_timing',
+                             'type': 'textarea',
+                             'prompt': 'Decide when Form 8850 reaches the candidate: before the offer, at '
+                                       'the job offer, or alongside the I-9 during onboarding. Record the '
+                                       'reasoning behind that choice and how the chosen point integrates '
+                                       'with your applicant tracking or electronic onboarding system.',
+                             'example': 'The 8850 is handed over at the job offer, which IRS liaisons call '
+                                        'best practice [VA OSDBU (On Demand) — onLA9L1sYIc @ 00:49:10]. In '
+                                        'electronic onboarding it sits right next to the I-9, since much '
+                                        'of the I-9 data is what the 8850 asks for anyway [The TLC '
+                                        'Companies — kuYWnLG5-A4 @ 00:19:52]. Pre-offer screening, which '
+                                        'Workstream pushes and MP discourages, is declined.'},
+                            {'name': 'twenty_eight_day_tracker',
+                             'type': 'textarea',
+                             'prompt': 'For each new hire, log the start date, the calculated 28th '
+                                       'calendar day, and the submission method. Confirm both Form 8850 '
+                                       'and ETA 9061 travel together, and confirm forms go out as they '
+                                       'arrive rather than being batched for later.',
+                             'example': 'A cook starting March 3 gets a March 31 wall date. Both forms go '
+                                        'together, because you cannot send just one [Jason D. Knott — '
+                                        'RmnPUe0eO7s @ 00:08:06]. Packets are uploaded as they arrive, '
+                                        'never batched [MP: Wired for HR — tAf8rI1hwtc @ 00:25:25]. Past '
+                                        "28 days, Gift CPAs says don't bother, the state gives no credit "
+                                        '[Gift CPAs — RzWkA9XcT7g @ 00:05:34].'},
+                            {'name': 'submission_method_compliance',
+                             'type': 'text',
+                             'prompt': 'State exactly how packets reach the state workforce agency. '
+                                       'Confirm whether you use the e-file portal or mailed packets with a '
+                                       'real postmark, and list any methods you have ruled out because the '
+                                       'agency does not accept them for timeliness.',
+                             'example': 'All packets go through the state e-file portal. Mailed backups '
+                                        'carry a real post office postmark, because SC DEW says postage '
+                                        'meter stamps do not satisfy the postmark rule and email or fax '
+                                        'submissions are not accepted [SC DEW — ujWX1IZPyFc @ 00:07:11]. '
+                                        'Late filings sit on the ineligible list alongside rehires, '
+                                        'relatives and 1099 workers [SC DEW — ujWX1IZPyFc @ 00:05:22].'},
+                            {'name': 'special_population_timing',
+                             'type': 'textarea',
+                             'prompt': 'Identify any hires from special populations, such as '
+                                       'justice-involved transitional workers, whose eligibility depends '
+                                       'on when the application is filed. Record the status at filing and '
+                                       'confirm the timing preserves eligibility rather than converting '
+                                       'the person into an ineligible rehire.',
+                             'example': 'A transitional worker from a corrections work program receives an '
+                                        'offer for permanent employment. The application is filed while '
+                                        'the person is still a transitional worker, because after release '
+                                        'they count as a rehire and no longer qualify [Louisiana Dept of '
+                                        'Public Safety and Corrections — xtpFtLZJyrM @ 00:14:04]. The hire '
+                                        'date and filing date are both recorded in the tracker.'},
+                            {'name': 'hours_and_wage_proof',
+                             'type': 'textarea',
+                             'prompt': 'For each certified hire, attach W-2 wages and a payroll register '
+                                       'showing hours worked. Mark whether the hire cleared 120 hours for '
+                                       'the 25 percent tier or 400 hours for the 40 percent tier on the '
+                                       '$6,000 wage base.',
+                             'example': 'One certified hire worked 450 hours, clearing the 400-hour tier, '
+                                        'so 40 percent of $6,000 yields $2,400. Another worked only 20 '
+                                        'hours in the year, which yields zero credit [Jason D. Knott — '
+                                        'RmnPUe0eO7s @ 00:11:55]. W-2 wages and the payroll register for '
+                                        'both are pulled before Form 5884 is prepared [Buffalo Tax '
+                                        'Strategies — AUiM2KAknsw @ 00:03:38].'},
+                            {'name': 'vendor_fee_and_booking',
+                             'type': 'textarea',
+                             'prompt': 'If a screening vendor is used, record the contingency percentage, '
+                                       'when the invoice is issued, and when payment is due. Then state '
+                                       'your booking rule: confirm the credit is not booked until the '
+                                       'final state determination letter arrives.',
+                             'example': 'The vendor charges 20 percent, invoices only after a credit '
+                                        'exists, and expects payment only after the credit is used against '
+                                        'tax [The TLC Companies — kuYWnLG5-A4 @ 00:17:36]. Credits stay '
+                                        'off the books until the final determination letter arrives, with '
+                                        'state waits budgeted at up to a year or longer [Gift CPAs — '
+                                        'RzWkA9XcT7g @ 00:05:51].'},
+                            {'name': 'adjacent_claim_documentation',
+                             'type': 'textarea',
+                             'prompt': 'List the retention file for every WOTC claim, then note any '
+                                       'adjacent claims in flight, such as R&D credits, sales tax refunds, '
+                                       'or 179D. For each, state what substantiation exists today and '
+                                       'which election or certification deadline could close.',
+                             'example': 'WOTC files keep 8850s, SWA transmittal letters, proof of mailing '
+                                        'and certifications, generally for three years [Gift CPAs — '
+                                        'RzWkA9XcT7g @ 00:09:14]. A pending sales tax refund needs an '
+                                        'audit trail for the entire audit period [Sales Tax Sisters — '
+                                        'LibBgjGxja4 @ 00:05:34]. The R&D team notes the 280C election '
+                                        'keeps 79 percent of the credit [Cherry Bekaert — nR3lgfqRNqg @ '
+                                        '00:13:08].'}],
+                 'completion_gate': 'Do not claim any WOTC credit until every hire has a logged 28-day '
+                                    'wall date, both forms reached the state by portal or true postmark, '
+                                    'the final determination letter is on file, payroll proves the 120 or '
+                                    '400 hour tier, and the retention file is complete for each adjacent '
+                                    'claim.'},
+                {'worksheet_id': 'ws-06',
+                 'number': 6,
+                 'title': 'Contingency Fee Vetting and Reverse-Audit Recovery Plan',
+                 'purpose': 'Vet every contingency or shared-savings arrangement against a defensible '
+                            "baseline, then run your own look-back across sales tax, workers' comp, "
+                            "customs, CAM, and contractor rates to find overpayments the other side's "
+                            'audit will never surface.',
+                 'chapter_ref': 'Q11-Q12',
+                 'instructions': ['Get the fee percentage, billing trigger, and full scope in writing '
+                                  'before any contingency firm touches your records.',
+                                  'Lock the baseline from your own ledger and validate any third-party or '
+                                  'payer data before accepting it.',
+                                  'Model every threshold, corridor, or tier before counting shared-savings '
+                                  'cash, and reject metrics the paid party cannot control.',
+                                  'Set look-back windows by statute, extend them where an open audit '
+                                  'allows, and demand source documents before paying any true-up.',
+                                  'Install a prevention control the day the refund lands so the same '
+                                  'overpayment never recurs and a follow-on audit runs smoothly.'],
+                 'fields': [{'name': 'contingency_engagement_terms',
+                             'type': 'textarea',
+                             'prompt': "Record the proposed engagement's fee percentage, what triggers "
+                                       'billing, and the scope of work the firm performs. Confirm whether '
+                                       'the firm handles everything from identification to check in hand, '
+                                       'and whether any cost is owed when nothing is recovered.',
+                             'example': 'The sales tax reverse-audit firm confirms in writing that it does '
+                                        '100 percent of the work from identification to check in hand on a '
+                                        '100 percent contingent basis [PM Business Advisors — ePf76grjr8U '
+                                        "@ 00:01:32]. Aaron Hall's warning that contingency lawyers look "
+                                        'out for themselves first is the reason the scope and fee trigger '
+                                        'are written out line by line.'},
+                            {'name': 'baseline_definition',
+                             'type': 'textarea',
+                             'prompt': 'Define the baseline against which savings or recoveries will be '
+                                       'measured. Name the data source, the period it covers, who '
+                                       'validated it, and whether any third-party or payer-supplied '
+                                       'figures were checked independently before being accepted as the '
+                                       'starting point.',
+                             'example': 'The baseline is twelve months of invoiced spend pulled from the '
+                                        'general ledger, then cross-checked with operational staff before '
+                                        'the contingency firm starts. Payer and vendor data are never '
+                                        "taken at face value, echoing Forster's rule: do not just trust "
+                                        'the data because the payer said so [Garrett Schmitt — UEDbkKJ-9Xk '
+                                        '@ 00:18:12]. Benchmarks can be gamed [Health Affairs — '
+                                        'Zzb5OKFwcbg @ 00:22:28].'},
+                            {'name': 'gainsharing_metric_design',
+                             'type': 'textarea',
+                             'prompt': 'If the arrangement shares savings with physicians or operating '
+                                       'partners, describe each metric, who controls it, and the payout '
+                                       'structure. Record the share paid out, and show whether payouts use '
+                                       'tiers or a single all-or-nothing threshold that could zero out.',
+                             'example': 'The physician share is capped at 50 percent, the ceiling '
+                                        "Fredrikson's speakers would defend, versus a 75 percent deal they "
+                                        'would not do [Fredrikson — VMuMGmjYplc @ 00:28:18]. On-time '
+                                        'starts pay at 85/90/95 percent tiers, because a single 90 percent '
+                                        'trigger zeroed a $100,000 bonus at about 87 percent after '
+                                        'anesthesia and nursing delays [Fredrikson — VMuMGmjYplc @ '
+                                        '00:20:34].'},
+                            {'name': 'minimum_savings_threshold',
+                             'type': 'textarea',
+                             'prompt': 'Identify any minimum savings rate, corridor, or floor that must be '
+                                       'cleared before shared savings pay out. Model expected savings '
+                                       'against that threshold and state what portion, if any, flows back '
+                                       'to your organization at the projected savings level.',
+                             'example': 'Projected savings of 2.5 percent sit under the roughly 3 percent '
+                                        'corridor, where the ACO gets 20 percent and CMS keeps 80 percent '
+                                        '[Reyann Davis — EotsrYaUjUs @ 00:07:45]. No cash is counted yet, '
+                                        'because about 160 participants in 2018 generated savings and '
+                                        'received no check due to the minimum savings rate [COPE Health '
+                                        'Solutions — PDcTn9Sq3mg @ 00:21:31].'},
+                            {'name': 'contingency_plan_and_release_controls',
+                             'type': 'textarea',
+                             'prompt': 'Document any operational contingency plan or contract contingency '
+                                       'tied to this recovery effort. Record where the plan lives, the '
+                                       'date it was last reviewed and tested, and the conditions that must '
+                                       'clear before any contingency release is signed.',
+                             'example': 'The supplier contingency plan moves out of email into the '
+                                        'controlled document system and is reviewed within twelve months, '
+                                        'since a 15-month-old, email-only plan drew a major nonconformance '
+                                        '[IATF 16949 Auditing — 4-TMYIb48FA @ 00:04:38]. On the facility '
+                                        'purchase, no full release is signed until inspection, appraisal '
+                                        'and loan conditions clear [Jeb Smith — HDpLh9uRXMo @ 00:21:54].'},
+                            {'name': 'reverse_audit_lookback',
+                             'type': 'textarea',
+                             'prompt': 'Set the look-back window for your sales and use tax reverse audit. '
+                                       'State the statute of limitations in each relevant state, note any '
+                                       'open audit that extends the window, and list purchase categories '
+                                       'most likely to contain overpaid tax.',
+                             'example': 'Most states in scope allow three years, one allows four, and an '
+                                        'old audit still open in the third state lets the review reach '
+                                        'seven to ten years back [PM Business Advisors — ePf76grjr8U @ '
+                                        '00:00:30]. The look-back exists because state audits are pro '
+                                        'state and agents do not weigh pro-taxpayer provisions [Carr, '
+                                        'Riggs & Ingram — HpOuVeLrWBs @ 00:00:42].'},
+                            {'name': 'workers_comp_and_customs_review',
+                             'type': 'textarea',
+                             'prompt': "List the workers' compensation and customs items you will "
+                                       'reexamine for overpayment. Note classification codes, credits, and '
+                                       "loss reporting for workers' comp, and for imports confirm that "
+                                       'entry values, invoices, payments, weights, quantities, and dates '
+                                       'line up before filing any refund.',
+                             'example': "Workers' comp review covers classification codes, credits and "
+                                        'loss reporting over three years, the scope behind a $190,000 '
+                                        'Kentucky manufacturer recovery [Greg Walker — sM254iPKhSo @ '
+                                        '00:02:41]. Before any CAPE upload, the team adds 80 days to each '
+                                        'liquidation date, confirms a US ACH account in ACE, and confirms '
+                                        'no drawback on any entry line [Flexport — xtorVFI9g4c @ '
+                                        '00:47:05].'},
+                            {'name': 'cam_reconciliation_review',
+                             'type': 'textarea',
+                             'prompt': 'Before paying any CAM reconciliation invoice, list the documents '
+                                       'you will demand from the landlord and the lease terms you will '
+                                       'test. Note caps, exclusions, gross-up, and controllable-expense '
+                                       'definitions, and describe how you would handle an unusually large '
+                                       'true-up.',
+                             'example': 'The tenant requests the general ledger, big-ticket invoices and '
+                                        'controllable-expense definitions, then checks caps, exclusions '
+                                        'and gross-up [Commercial Real Estate Escalations Made Simple — '
+                                        'CWHu33HRBVY @ 00:01:42]. An extra $30,000 water main break in the '
+                                        'true-up is negotiated into repayment over several months rather '
+                                        'than one bill [Coastline Equity — u1Y-WxOKXpc @ 00:09:18].'},
+                            {'name': 'rate_renegotiation_ask',
+                             'type': 'text',
+                             'prompt': 'For any contractor rate renegotiation, such as a FedEx CSA, record '
+                                       'the exact dollar figure you will request and how it was built. '
+                                       'Note the submission lead time, the tracking method for your unique '
+                                       'characteristics file, and any early-acceptance bonus at stake.',
+                             'example': 'The ask is an exact figure, like the $121,417.12 Route Consultant '
+                                        'cites as proof of homework [Route Consultant — 39UxCZgtvHU @ '
+                                        '00:23:22]. Unique characteristics go out four to six months early '
+                                        'through a Google link that shows opens [Route Consultant — '
+                                        '39UxCZgtvHU @ 00:24:34]. Negotiating forfeits nothing, since the '
+                                        '1 percent early-accept bonus rolls into rates [Route Consultant — '
+                                        '-AnzYDP3LQw @ 00:04:13].'},
+                            {'name': 'post_recovery_controls',
+                             'type': 'textarea',
+                             'prompt': 'Describe the controls you will install once the refund or savings '
+                                       'lands so the same overpayment does not recur. Name who owns each '
+                                       'control, how purchases or invoices get checked going forward, and '
+                                       'how you would prepare for a follow-on audit.',
+                             'example': 'Purchasing now asks the tax team whether a machine or new-vendor '
+                                        'item is taxable before buying it [Cherry Bekaert — S7Qlojol4pE @ '
+                                        '00:09:00]. The refund file stays audit-ready, since that same '
+                                        'client was hit with an audit after the refund and it went '
+                                        'smoothly [Cherry Bekaert — S7Qlojol4pE @ 00:05:53]. The '
+                                        'controller owns the check and reviews exceptions monthly.'}],
+                 'completion_gate': 'Do not sign any contingency engagement or pay any true-up until fee '
+                                    'terms and scope are written, the baseline is validated against your '
+                                    'own ledger, every threshold and tier is modeled, look-back windows '
+                                    'are set by statute, source documents are in hand, and a named owner '
+                                    'holds each post-recovery control.'}]}

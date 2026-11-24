@@ -1,670 +1,802 @@
 from __future__ import annotations
 
-CHAPTER_2 = {
-    "id": "Q2",
-    "chapter_id": "Q2",
-    "chapter_number": 2,
-    "question_number": 2,
-    "slug": "who-pays-and-how-the-payment-rail-works",
-    "question_prompt": "Who writes the check in buying group, commercial card-float & rebate arbitrage, what acute financial or statutory pain forces them to pay, and how do funds clear cleanly without circumvention or non-payment?",
-    "kicker": "Q2 / THE BIG MONEY PLAYBOOKS",
-    "title": "Who Pays, Why They Pay & How the Payment Rail Works",
-    "subtitle": "Buying-Group ACH, Commercial Card Settlement, Treasury Maturities, UCC Payment Rights & IRC Basis Records",
-    "layout_template": "executive_summary",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #41, ranked #10 of 43 with a 93/100 Money-to-Manpower Score, "
-        "works only when each payer, contractual obligation, and clearing event is "
-        "identified before capital moves. This chapter connects 11 mapped plays "
-        "to three separate engines: wholesale buying-group fulfillment, commercial "
-        "card and portal rebates, and bank or Treasury returns. Buying groups pay "
-        "for accepted inventory; issuers and merchants fund qualifying rewards; "
-        "banks and Treasury securities compensate eligible balances. None pays "
-        "because borrowed principal exists. Formula v2.0 produces annual owner "
-        "profit of $20,000 Conservative, $143,500 Base, and $360,000 Scaled. "
-        "The operating discipline is explicit purchase commitments, evidence-backed "
-        "receivables, verified payout authority, and a repayment reserve that survives "
-        "late ACH. Startup compute credits remain an adjacent cost-reduction play, "
-        "never wholesale cash receipts or transferable currency."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$250,000",
-            "context": "Annual gross scorecard basis; $87,500 retained contribution at 35%.",
-            "note": "8% gross-basis net margin; $20,000 owner profit; 22.86% retained margin; 1 FT + 2 C.",
-        },
-        {
-            "label": "Base",
-            "value": "$1,025,000",
-            "context": "Annual gross scorecard basis; $358,750 retained contribution at 35%.",
-            "note": "14.0% gross-basis net margin; $143,500 owner profit; 40.0% retained margin; 1 FT + 2 C.",
-        },
-        {
-            "label": "Scaled",
-            "value": "$1,800,000",
-            "context": "Annual gross scorecard basis; $630,000 retained contribution at 35%.",
-            "note": "20% gross-basis net margin; $360,000 owner profit; 57.14% retained margin; 2 FT + 3 C.",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Identify the economic buyer and the person authorized to release funds",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "The wholesale buying group writes the inventory check because its downstream "
-                    "resale spread supports a procurement budget, not because a participant earns "
-                    "card rewards. BuyForMeRetail, Pointsmaker, and MaxOutDeals are counterparties "
-                    "to investigate individually; their current commitments, eligible products, "
-                    "warehouse instructions, and payment terms must come from authenticated "
-                    "contracts or account records. The procurement contact wants correct models, "
-                    "predictable arrival, and a clean serial-number trail. Accounts payable wants "
-                    "an accepted receipt matched to a purchase authorization and verified bank "
-                    "instructions. A warehouse scan alone does not establish that either person "
-                    "has authorized payment. Before buying, obtain the legal purchaser, quantity, "
-                    "unit reimbursement, acceptance deadline, deduction rules, and payment trigger "
-                    "in durable writing. For ten devices costing $900 each, a $930 commitment "
-                    "creates $9,300 of expected wholesale collections against $9,000 of "
-                    "merchandise, leaving $300 before freight, damage, and rewards. If freight "
-                    "and insurance cost $90, the inventory spread is $210. A buyer's downstream "
-                    "sales volume is neither your revenue nor collateral you control. Confirm "
-                    "who can resolve a rejected serial and who can release ACH after acceptance. "
-                    "The fallback for an unconfirmed commitment is no purchase, not a larger "
-                    "reward assumption or an unsecured promise from a chat contact."
-                ),
-                (
-                    "Commercial card and portal economics have different payers and different "
-                    "psychology. The issuer funds contractual rewards to attract profitable "
-                    "spend; a merchant funds affiliate acquisition, with Rakuten or TopCashback "
-                    "administering the participant's share under offer terms. A merchant may "
-                    "exclude resellers, particular product categories, gift instruments, or "
-                    "orders using another attribution channel. The shopper has no entitlement "
-                    "merely because a browser displayed a large percentage. On $9,000 of "
-                    "eligible purchases, a verified 2% card reward contributes $180; a separate "
-                    "eligible 1% portal offer contributes $90. Combined with the $210 inventory "
-                    "spread, the illustrative contribution becomes $480 before overhead, but "
-                    "only $210 exists without those rewards. Record pending portal amounts "
-                    "separately until their contractual conditions are satisfied. For treasury "
-                    "income, the bank's deposit-acquisition budget funds a qualifying bonus, "
-                    "while Treasury pays security obligations through its established payment "
-                    "system. A $50,000 balance earning a simple annualized 4.5% for 55 days "
-                    "produces approximately $339.04 before tax and costs; the $50,000 remains "
-                    "principal. Statutes establish records and payment rights, but no statute "
-                    "forces a group to buy unwanted stock, a portal to honor an excluded "
-                    "purchase, or a bank to waive bonus eligibility requirements."
-                ),
-                (
-                    "Use an eleven-play operating map without pretending that ten additional "
-                    "catalog identifiers were supplied. The ten local workflow mappings are "
-                    "committed wholesale spread capture, eligible resale-tax treatment, parcel "
-                    "loss containment, commercial card rewards, Rakuten attribution, TopCashback "
-                    "attribution, card-offer matching, Plastiq or Melio invoice economics, "
-                    "Treasury maturity matching, and bank-bonus qualification. The eleventh "
-                    "mapping is cloud_ai_startup_credit_aggregation_arbitrage, addressed as an "
-                    "adjacent infrastructure expense reduction rather than a fourth arbitrage "
-                    "engine. Each mapping needs its own payer, calculation, evidence packet, "
-                    "and stop condition. Two portals are alternative attribution routes for "
-                    "one purchase unless their written terms explicitly permit another result; "
-                    "they are not two automatic commissions. Likewise, the same cash balance "
-                    "cannot simultaneously support a Treasury position, a locked bank bonus, "
-                    "and immediate card repayment. A 2% to 4% reward range is an underwriting "
-                    "input to verify, including caps and exclusions, rather than a universal "
-                    "commercial-card feature. The operating map separates controllable cost "
-                    "savings from contingent receipts and prevents attractive percentages from "
-                    "being counted twice. Require a named budget owner and settlement owner "
-                    "for every external receivable. When those roles cannot be identified, "
-                    "reduce the exposure to a small paid trial or decline the transaction "
-                    "before inventory leaves the merchant."
-                ),
-            ],
-            "table": {
-                "caption": "Seven Payer and Authority Checks Before Committing Purchase Capital",
-                "headers": [
-                    "Payer and economic motivation",
-                    "Authority and evidence required",
-                    "Unit economics to verify",
-                    "Failure response protecting available cash",
-                ],
-                "rows": [
-                    [
-                        "Buying-group procurement purchases inventory for profitable downstream resale.",
-                        "Named purchasing officer confirms quantities, prices, acceptance, and deductions.",
-                        "Ten $900 devices reimbursed at $930 create $300 spread.",
-                        "Cancel uncommitted orders before shipment; respect merchant cancellation terms.",
-                    ],
-                    [
-                        "Buying-group accounts payable releases accepted inventory reimbursements after matching.",
-                        "Verified treasury contact supplies payment calendar and authenticated bank instructions.",
-                        "$9,300 receivable remains exposed until the reimbursement actually clears.",
-                        "Freeze additional commitments when the oldest accepted invoice becomes overdue.",
-                    ],
-                    [
-                        "Commercial issuer rewards eligible spending under its published account agreement.",
-                        "Account agreement establishes reward eligibility, limits, exclusions, and redemption timing.",
-                        "A verified 2% reward on $9,000 contributes exactly $180.",
-                        "Remove rewards from underwriting when eligibility evidence cannot support inclusion.",
-                    ],
-                    [
-                        "Merchant affiliate budget funds qualifying Rakuten or TopCashback purchase attribution.",
-                        "Saved offer terms and transaction evidence support one permitted attribution route.",
-                        "A qualifying 1% portal reward on $9,000 contributes $90.",
-                        "Carry disputed rewards separately and repay cards without relying on them.",
-                    ],
-                    [
-                        "Business supplier receives payment for an authentic invoice through approved rails.",
-                        "Supplier authorization and processor eligibility establish the permitted recipient relationship.",
-                        "$10,000 invoice at 2.9% costs $290 before other charges.",
-                        "Use ordinary bank transfer when processing costs exceed realizable benefits.",
-                    ],
-                    [
-                        "Bank acquisition team funds bonuses for eligible new business relationships.",
-                        "Offer document identifies balance duration, transaction conditions, and payout window.",
-                        "$500 bonus less $225 displaced yield leaves $275 incremental benefit.",
-                        "Keep the repayment reserve outside balances restricted by bonus conditions.",
-                    ],
-                    [
-                        "Treasury security obligations compensate invested capital through maturity proceeds.",
-                        "Trade confirmation establishes security ownership, settlement date, and maturity proceeds.",
-                        "$50,000 at simple 4.5% for 55 days earns approximately $339.04.",
-                        "Select an earlier maturity or retain cash when payment dates conflict.",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Negotiate the acceptance clock before negotiating the headline reward",
-                "body": "Veteran operators protect the small spread by removing ambiguity from the large principal movement.",
-                "items": [
-                    "Ask each buying group for a sample remittance statement showing accepted serials, deductions, and the actual event that starts its payment clock.",
-                    "Maintain separate Rakuten and TopCashback offer snapshots, but select one eligible attribution route for each purchase instead of projecting duplicate portal rewards.",
-                    "Put the procurement contact and accounts-payable contact on the same exception record so a warehouse discrepancy cannot circulate without an accountable owner.",
-                    "Evaluate DE, NH, and OR warehouse destinations using actual sourcing rules, merchant documentation, freight, insurance, and rejection costs rather than assuming every shipment receives resale treatment.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Choose the settlement rail by finality, recourse, cost, and control",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Payment rails are not interchangeable protections. ACH is inexpensive and "
-                    "well suited to repeat wholesale reimbursements, but an initiation notice "
-                    "is not the same event as available funds, and return or reversal exposure "
-                    "depends on the entry and applicable rules. A wire usually provides faster "
-                    "usable funds at higher fixed cost, yet fraudulent instructions can redirect "
-                    "the entire principal. Verify changed beneficiary details through a previously "
-                    "validated contact, never through the replacement email itself. UCC Article "
-                    "4A governs many commercial funds transfers as enacted by the relevant "
-                    "state; covered Fedwire transfers also operate under Regulation J. Commercial "
-                    "accounts generally cannot be managed as though consumer Regulation E "
-                    "protections automatically apply. With a $9,300 reimbursement and a $25 "
-                    "incoming wire charge, the illustrative $210 inventory spread becomes $185 "
-                    "if that charge belongs to the seller. Agree whether the purchaser must "
-                    "deliver the full invoice amount or may deduct bank charges. For a claimed "
-                    "Net-3 or Net-5 arrangement, define the starting event and business-day "
-                    "calendar explicitly. Do not infer those terms for any named buying group. "
-                    "Record payment initiation, bank availability, contractual discharge, and "
-                    "remaining dispute exposure as separate fields rather than one misleading "
-                    "paid checkbox in a spreadsheet."
-                ),
-                (
-                    "Escrow, retainers, and milestone holds change who controls money before "
-                    "performance. A genuine independent escrow arrangement can release funds "
-                    "against specified warehouse acceptance evidence, but vague release language "
-                    "merely replaces buyer credit risk with a dispute over instructions. A "
-                    "$100 escrow charge consumes nearly half of a $210 inventory spread, so "
-                    "small lots rarely support elaborate arrangements unless the buyer funds "
-                    "the cost. A retainer is an advance governed by a contract, not a special "
-                    "bank rail and not automatically earned revenue. Match its refund and "
-                    "offset provisions to actual procurement duties. A milestone hold can "
-                    "reserve 10% of a $9,300 invoice, or $930, which exceeds the entire "
-                    "illustrative spread and therefore demands substantial working capital. "
-                    "Specify an objective release deadline and prohibit indefinite withholding "
-                    "for unrelated invoices. Statutory disbursement is included for comparison, "
-                    "not presented as a normal source of buying-group money: a court order "
-                    "or other specific legal authority must identify the authorized disburser "
-                    "and recipient. Do not accept custody of third-party funds merely to "
-                    "make the transaction feel safer. Use an appropriately qualified provider "
-                    "when escrow is genuinely required, and reconcile its ledger to the "
-                    "underlying purchase obligation before relying on any released balance."
-                ),
-                (
-                    "Platform checkout and factoring solve different problems. A merchant "
-                    "checkout establishes a purchase funded through the acquirer and card "
-                    "network; it does not establish the downstream buying group's obligation "
-                    "to reimburse you. Preserve merchant receipts, tracking, acceptance, and "
-                    "card statements as linked but distinct records. Factoring monetizes an "
-                    "eligible receivable by selling or financing it, often with recourse, "
-                    "reserves, notification requirements, and restrictions on assignment. A "
-                    "2% factoring charge on $9,300 is $186, leaving only $24 of the "
-                    "illustrative $210 inventory spread before any additional reserve or "
-                    "dispute cost. Obtain the actual agreement rather than treating an advance "
-                    "rate as a purchase price. UCC Section 9-406 addresses aspects of account "
-                    "debtor discharge after assignment notification, subject to its scope "
-                    "and state enactment; it does not make defective delivery collectible. "
-                    "For Plastiq or Melio, verify current card acceptance, recipient eligibility, "
-                    "delivery timing, and whether the issuer treats the transaction as "
-                    "reward-eligible purchasing. Pay authentic business invoices only. Self-payment, "
-                    "fabricated supplier invoices, and repeated repayment designed to evade "
-                    "credit limits are not operating methods. The cheapest defensible route "
-                    "may be an ordinary ACH payment with no card rewards. Preserve that "
-                    "fallback in the purchasing workflow instead of forcing every invoice "
-                    "through a fee-bearing card transaction."
-                ),
-            ],
-            "table": {
-                "caption": "Eight Payment and Settlement Structures Compared by Authority, Economics, and Residual Exposure",
-                "headers": [
-                    "Rail or contractual settlement structure",
-                    "Release authority and required evidence",
-                    "Illustrative economic and timing effect",
-                    "Residual risk and practical fallback",
-                ],
-                "rows": [
-                    [
-                        "Wire transfer settles a verified business payment instruction directly.",
-                        "Authorized buyer treasury staff confirm beneficiary details through verified callbacks.",
-                        "$25 incoming charge reduces a $210 inventory spread to $185.",
-                        "Instruction fraud remains possible; independently authenticate every beneficiary change.",
-                    ],
-                    [
-                        "Independent escrow conditions release on agreed documentary performance evidence.",
-                        "Escrow provider follows signed instructions specifying acceptance and dispute handling.",
-                        "$100 escrow charge consumes 47.62% of a $210 spread.",
-                        "Ambiguous acceptance traps funds; require objective deadlines and allocation rules.",
-                    ],
-                    [
-                        "ACH credit carries recurring wholesale reimbursement through participating banks.",
-                        "Buyer accounts payable authorizes entries against accepted invoices and remittances.",
-                        "A $9,300 initiation notice does not itself establish usable funds.",
-                        "Track availability and return exposure; retain separate card repayment liquidity.",
-                    ],
-                    [
-                        "Contractual retainer advances procurement funding before specified services are completed.",
-                        "Signed purchasing agreement defines permitted application, refund rights, and offsets.",
-                        "$1,000 advance reduces initial funding need without automatically creating earnings.",
-                        "Refund liability survives receipt; segregate unearned balances and reconcile applications.",
-                    ],
-                    [
-                        "Statutory disbursement follows a specific legally authorized distribution process.",
-                        "Authorized disburser acts under the applicable order or statutory provision.",
-                        "Count zero anticipated proceeds without documented entitlement and scheduled distribution.",
-                        "Ordinary wholesale invoices create no such entitlement; use contractual collection.",
-                    ],
-                    [
-                        "Platform checkout funds the original merchant purchase through approved processing.",
-                        "Merchant confirmation and processor records establish the authorized purchase transaction.",
-                        "$9,000 card purchase creates repayment liability regardless of downstream collection.",
-                        "Purchase acceptance does not prove resale acceptance; preserve both evidence chains.",
-                    ],
-                    [
-                        "Factoring accelerates eligible receivable cash through a separate financing agreement.",
-                        "Factor verifies assignment, debtor acceptance, reserves, recourse, and permitted notification.",
-                        "A 2% charge on $9,300 consumes $186 before other costs.",
-                        "Recourse can restore exposure; compare financing costs against actual spread.",
-                    ],
-                    [
-                        "Milestone hold defers a contractual portion until specified acceptance conditions.",
-                        "Buyer releases retained balance after objective inspection evidence satisfies terms.",
-                        "A 10% hold on $9,300 ties up $930 of capital.",
-                        "Indefinite deductions destroy velocity; negotiate deadlines and prohibit unrelated offsets.",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Authenticate both parties and payment authority",
-                    "action": "Match the legal purchaser, authorized signer, warehouse, and beneficiary account.",
-                    "detail": "Verify new bank instructions through a previously established callback number and record the verifier, date, and source.",
-                },
-                {
-                    "step": 2,
-                    "title": "Bind the commitment to measurable evidence",
-                    "action": "Save quantity, serial requirements, price, acceptance trigger, deductions, and payment deadline.",
-                    "detail": "Link merchant orders and shipment identifiers to the commitment before purchasing, with separate records for each payer obligation.",
-                },
-                {
-                    "step": 3,
-                    "title": "Reconcile acceptance to cash availability",
-                    "action": "Match warehouse acceptance, remittance detail, bank posting, and available balance.",
-                    "detail": "Keep initiated, available, disputed, and returned payments separate; send unresolved deductions to the named accounts-payable owner.",
-                },
-                {
-                    "step": 4,
-                    "title": "Release surplus only after repayment coverage",
-                    "action": "Fund the card obligation before considering new inventory or treasury allocation.",
-                    "detail": "Archive the completed evidence packet and release only cash exceeding dated liabilities, dispute reserves, and operating requirements.",
-                },
-            ],
-        },
-        {
-            "heading": "3. Reconcile each engine before projecting the canonical annual cases",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Formula v2.0 supplies an aggregate planning bridge, not evidence that "
-                    "every electronics order earns a 35% spread. Conservative gross scorecard "
-                    "receipts are $250,000; applying the supplied 35% retained share yields "
-                    "$87,500, and $67,500 of remaining modeled costs leaves $20,000 owner "
-                    "profit. Base receipts of $1,025,000 yield $358,750 retained contribution; "
-                    "subtracting $215,250 leaves $143,500. Scaled receipts of $1,800,000 yield "
-                    "$630,000 retained contribution; subtracting $270,000 leaves $360,000. "
-                    "The respective gross-basis margins are 8%, 14.0%, and 20%; dividing "
-                    "profits by retained contribution produces 22.86%, 40.0%, and 57.14% "
-                    "after rounding. Merchandise deductions implied by this bridge are "
-                    "$162,500, $666,250, and $1,170,000. The remaining modeled costs are "
-                    "residual annual scenario costs, not a claim that every dollar is "
-                    "monthly office overhead. The supplied $1,500 to $9,000 monthly operating "
-                    "range therefore cannot substitute for a full expense build. Maintain "
-                    "separate schedules for people, processing, financing, shipping exceptions, "
-                    "and other residual costs without deducting merchandise twice. The "
-                    "illustrative device transaction demonstrates mechanics, not a derivation "
-                    "of these annual cases. Before investing, prove the actual transaction "
-                    "mix can support the supplied retained share; reject the projection "
-                    "if supplier quotes and collected rewards cannot reproduce it."
-                ),
-                (
-                    "Keep three economic schedules and a fourth reconciliation sheet. The "
-                    "wholesale schedule records merchandise purchase cost, contractual resale "
-                    "proceeds, freight, insurance, returns, and deductions. The commercial "
-                    "rewards schedule records eligible spend, issuer rewards, portal proceeds, "
-                    "and incremental payment fees without booking purchase principal as a "
-                    "second expense. The treasury schedule records interest and qualifying "
-                    "bonuses, custody costs, and displaced yield. The reconciliation sheet "
-                    "eliminates overlap and distinguishes cash timing from earnings. For "
-                    "a $10,000 authentic supplier invoice, illustrative processing at 2.9% "
-                    "costs $290; a verified 3% reward on the invoice amount contributes "
-                    "$300, leaving $10 before other costs. At a verified 2% reward, "
-                    "the same transaction loses $90 before other benefits. If genuinely "
-                    "available cash also earns simple annualized 4.5% for 55 days, its "
-                    "gross yield is $67.81, but that is a separate time-dependent result "
-                    "requiring eligible cash and safe maturity alignment. Do not assume "
-                    "reward eligibility on processing fees. A $500 bank bonus requiring "
-                    "$20,000 for 90 days sacrifices approximately $221.92 at that yield, "
-                    "leaving $278.08 before taxes and incidental charges. Use actual days "
-                    "and the applicable yield convention; Treasury discount quotations "
-                    "are not interchangeable with this simplified annualized calculation."
-                ),
-                (
-                    "Statement float is a dated liability, not another margin line. "
-                    "A purchase just after closing might enjoy a long interest-free "
-                    "interval if the agreement provides one and the full statement "
-                    "balance is paid on time; another purchase near closing gets "
-                    "much less runway. Treat 55 days as a case to verify, not "
-                    "an entitlement. Suppose $30,000 of merchandise is charged on day "
-                    "zero, expected group payment arrives on day ten, and the card "
-                    "is due on day 55. A forty-day payout delay moves expected "
-                    "cash to day 50, leaving only five days for settlement problems; "
-                    "a further ten-day delay breaches the repayment plan. Size an "
-                    "independent reserve or reduce purchases until the day-55 obligation "
-                    "can be met without that receivable. At an illustrative 24% "
-                    "annual simple financing cost, carrying $30,000 for 15 days costs "
-                    "approximately $295.89, before contractual fees or grace-period effects. "
-                    "That can consume the entire merchandise spread. A Treasury bill "
-                    "maturing after the card due date cannot serve as immediate "
-                    "repayment cash without sale and settlement risk. Stress two late "
-                    "buyers simultaneously, one damaged shipment, a reward reversal, and "
-                    "an issuer suspension. The $10,000 to $55,000 startup capital range "
-                    "limits exposure; it does not establish that every annual scenario "
-                    "is fundable from its lower endpoint."
-                ),
-            ],
-            "table": {
-                "caption": "Canonical Formula v2.0 Bridge and Separate Transaction-Level Economics",
-                "headers": [
-                    "Scenario or distinct economic engine",
-                    "Gross amount and direct deduction",
-                    "Retained result and profit interpretation",
-                    "Evidence or stress test required",
-                ],
-                "rows": [
-                    [
-                        "Conservative annual case uses one full-time operator plus two contractors.",
-                        "$250,000 gross basis less $162,500 implied merchandise deduction equals $87,500.",
-                        "$67,500 remaining costs leave $20,000 profit and 22.86% retained margin.",
-                        "Verify 8% gross-basis margin using collected transactions and complete costs.",
-                    ],
-                    [
-                        "Base annual case uses one full-time operator plus two contractors.",
-                        "$1,025,000 gross basis less $666,250 implied merchandise deduction equals $358,750.",
-                        "$215,250 remaining costs leave $143,500 profit and 40.0% retained margin.",
-                        "Verify 14.0% gross-basis margin without counting pending rewards twice.",
-                    ],
-                    [
-                        "Scaled annual case uses two full-time operators plus three contractors.",
-                        "$1,800,000 gross basis less $1,170,000 implied merchandise deduction equals $630,000.",
-                        "$270,000 remaining costs leave $360,000 profit and 57.14% retained margin.",
-                        "Verify 20% gross-basis margin with sufficient liquidity for concurrent failures.",
-                    ],
-                    [
-                        "Wholesale fulfillment example isolates committed inventory spread before commercial rewards.",
-                        "$9,300 proceeds less $9,000 merchandise and $90 freight equals $210.",
-                        "The $210 contribution excludes overhead, disputed deductions, and contingent rewards.",
-                        "Require acceptance evidence and test parcel loss against insurance exclusions.",
-                    ],
-                    [
-                        "Commercial invoice example isolates eligible rewards less incremental payment fees.",
-                        "$10,000 invoice earns $300 reward while illustrative processing costs $290.",
-                        "The $10 contribution excludes treasury yield and all incidental charges.",
-                        "At 2% rewards the same transaction loses $90 before other benefits.",
-                    ],
-                    [
-                        "Treasury example isolates time-weighted return from repayment principal and inventory.",
-                        "$50,000 multiplied by 4.5% and 55/365 produces approximately $339.04.",
-                        "Only the $339.04 return contributes income; invested principal remains capital.",
-                        "Use actual security pricing and ensure maturity precedes required payment.",
-                    ],
-                    [
-                        "Bank bonus example isolates qualifying incentive less displaced investment income.",
-                        "$500 bonus less $221.92 displaced yield produces $278.08 incremental benefit.",
-                        "The $20,000 qualifying balance remains principal rather than recognized earnings.",
-                        "Verify ninety-day conditions, payment timing, clawbacks, and actual alternative yield.",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four checks before any purchase consumes statement capacity",
-                "body": "Proceed only when the purchase remains fundable without speculative rewards or an optimistic ACH arrival.",
-                "items": [
-                    "Confirm a written purchase commitment, exact SKU eligibility, permitted warehouse destination, and a payment clock anchored to documented acceptance.",
-                    "Confirm actual card and portal eligibility, all processing charges, available credit, and the card's contractual due date without relying on a generic 55-day assumption.",
-                    "Demonstrate repayment coverage after a forty-day buying-group delay plus ten additional settlement days, with pending rewards excluded from the cash reserve.",
-                    "Verify parcel coverage, serial evidence, return deadlines, resale documentation where applicable, and an accountable person empowered to resolve payment deductions.",
-                ],
-            },
-        },
-        {
-            "heading": "4. Protect collection rights, screen counterparties, and contain adjacent credit plays",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Counterparty screening starts with identity and authority, then moves "
-                    "to payment capacity. Match the contracting name to state business "
-                    "records, obtain a completed tax identification record through a secure "
-                    "channel, verify the warehouse relationship, and independently confirm "
-                    "beneficiary ownership. Obtain trade references and ask about actual "
-                    "days paid after acceptance, not advertised terms. Search relevant "
-                    "state UCC filings and court records where appropriate; a filing "
-                    "shows a claimed security interest, not by itself insolvency or "
-                    "fraud. Begin with a small lot and require completed payment "
-                    "before increasing unsecured exposure. Set an exposure limit covering "
-                    "ordered inventory, goods in transit, accepted unpaid goods, and "
-                    "disputed deductions together. A $15,000 limit is already breached "
-                    "by $6,000 ordered, $5,000 in transit, and $5,000 accepted unpaid. "
-                    "For fee protection, define price, permitted offsets, inspection periods, "
-                    "rejection evidence, return responsibility, and collection costs enforceable "
-                    "under applicable law. UCC Sections 2-607 and 2-709 address payment "
-                    "for accepted goods and qualifying actions for the price, but "
-                    "litigation is not a substitute for liquidity. Preserve serials, "
-                    "delivery signatures, inspection responses, and remittance files. If "
-                    "the oldest receivable misses its agreed date, suspend new "
-                    "commitments and seek a documented cure rather than increasing "
-                    "volume to recover the existing exposure."
-                ),
-                (
-                    "Tax and accounting records must follow substance rather than the "
-                    "warehouse postcode. Delaware, New Hampshire, and Oregon lack a "
-                    "general state sales tax, but that fact does not erase "
-                    "other states' sourcing rules, use-tax obligations, or documentation "
-                    "requirements. Maintain valid resale certificates wherever the applicable "
-                    "transaction requires them; a certificate is not a universal "
-                    "tax exemption. Preserve merchant invoices and the commercial purpose "
-                    "of each purchase. IRC Section 6050W governs qualifying payment "
-                    "settlement reporting; an information return reports covered payment "
-                    "activity rather than calculating taxable profit. Reconcile reporting "
-                    "to refunds, merchandise cost, and actual payer records. Evaluate "
-                    "purchase-linked rebates as potential price adjustments affecting basis, "
-                    "rather than automatically treating every incentive as free-standing "
-                    "income; interest and bank bonuses require their own classification. "
-                    "IRC Sections 61, 1012, and 6001 supply relevant income, basis, "
-                    "and recordkeeping foundations. For reporting, the supplied 35% "
-                    "ASC 606 retained-share bridge is a scenario convention requiring "
-                    "a documented principal-versus-agent assessment, not an accounting "
-                    "election created by this chapter. Interest is evaluated separately "
-                    "from customer-contract revenue. Neither merchant sales volume, group "
-                    "downstream turnover, card limits, nor borrowed principal becomes "
-                    "recognized operator revenue simply because it passes through "
-                    "a dashboard. Reconcile the three operating schedules to bank "
-                    "cash and the general ledger every month."
-                ),
-                (
-                    "The mapped cloud_ai_startup_credit_aggregation_arbitrage play belongs to TRACK_1 "
-                    "and should reduce genuine software operating costs, not manufacture "
-                    "buying-group receipts. A Delaware or Wyoming micro-SaaS entity needs "
-                    "a real product, accurate ownership disclosures, and actual eligibility "
-                    "for any incubator, venture-partner, or founder-perk route. Investigate "
-                    "AWS Activate, Azure Founders Hub, GCP for Startups, Cloudflare, "
-                    "OpenAI, and Anthropic through authenticated program channels; entity "
-                    "formation alone creates no award entitlement. Treat the supplied "
-                    "$25,000 to $350,000 cross-program range as a research target, "
-                    "not currently verified availability or a stackable cash balance. "
-                    "A granted $25,000 compute credit covering $2,500 monthly eligible "
-                    "usage lasts ten months before expiry constraints. A SaaS product "
-                    "collecting $10,000 monthly with $200 of other cash delivery "
-                    "costs shows 98% cash delivery margin while eligible compute "
-                    "is covered, but only 73% after adding $2,500 compute expense; "
-                    "neither figure includes all owner-profit costs. A $1,000 other-cost "
-                    "case produces 90% while covered. Never resell raw API keys "
-                    "or create duplicate entities to evade program limits. Maintain "
-                    "genuine standalone products and tested Llama, vLLM, or DeepSeek "
-                    "fallback deployments with measured capacity, model-license compatibility, "
-                    "and recovery objectives. Local inference still costs money, "
-                    "and failover does not promise uninterrupted service. Record credits "
-                    "by provider, expiry, workload eligibility, and usable balance."
-                ),
-            ],
-            "table": {
-                "caption": "Six Collection and Eligibility Controls with Quantified Failure Responses",
-                "headers": [
-                    "Control and commercial purpose",
-                    "Evidence retained before funds move",
-                    "Quantified decision or monitoring trigger",
-                    "Fallback preserving legitimate operations",
-                ],
-                "rows": [
-                    [
-                        "Counterparty credit screening limits aggregate unsecured inventory and receivable exposure.",
-                        "Business identity, trade references, payment history, and relevant filings support limits.",
-                        "$6,000 ordered plus $5,000 transit plus $5,000 unpaid exceeds $15,000.",
-                        "Stop new commitments and collect existing balances before restoring capacity.",
-                    ],
-                    [
-                        "Fee protection defines deductions, acceptance deadlines, and enforceable collection rights.",
-                        "Signed commitment specifies inspection evidence, offsets, return responsibility, and payment timing.",
-                        "A disputed $300 deduction exceeds the illustrative $210 inventory spread.",
-                        "Escalate promptly through the named payment owner and documented dispute process.",
-                    ],
-                    [
-                        "Parcel protection preserves evidence for carrier and insurance recovery claims.",
-                        "Serial photographs, packing records, declared values, and coverage terms remain linked.",
-                        "One lost $900 device exceeds four $210 transaction contribution amounts.",
-                        "File timely claims and fund repayment without assuming immediate recovery.",
-                    ],
-                    [
-                        "Resale and basis records distinguish tax treatment from destination marketing.",
-                        "Applicable certificates, merchant invoices, refunds, and purchase-linked rebates support reconciliation.",
-                        "An additional 6% charge on $9,000 adds $540 of cost.",
-                        "Reprice before purchase when actual sourcing or exemption treatment changes.",
-                    ],
-                    [
-                        "Startup compute grants reduce eligible workloads rather than producing transferable cash.",
-                        "Authenticated award terms establish ownership eligibility, permitted usage, expiry, and restrictions.",
-                        "$25,000 award covers ten $2,500 months before considering expiry constraints.",
-                        "Operate genuine products and fund compute normally when awards expire.",
-                    ],
-                    [
-                        "Local inference fallback preserves service options without pretending operating costs vanish.",
-                        "Load tests document capacity, model licensing, recovery objectives, and migration readiness.",
-                        "$10,000 collections less $200 delivery and $2,500 compute leaves $7,300.",
-                        "Throttle workloads or migrate eligible traffic within measured capacity and budgets.",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": "A reward is margin only after eligibility survives, and float is useful only while repayment remains funded.",
-    "diagram_id": "diag-04",
-    "action_checklist": [
-        "Create a payer register identifying each buying group's legal entity, procurement authority, accounts-payable owner, accepted bank details, and contractual settlement trigger.",
-        "Build separate wholesale, card-and-portal, and treasury schedules; reconcile them to the canonical 35% retained-share bridge without presenting principal as income.",
-        "Save current BuyForMeRetail, Pointsmaker, MaxOutDeals, Rakuten, TopCashback, issuer, Plastiq, and Melio terms relevant to each proposed transaction before committing capital.",
-        "Run the forty-day payout-delay plus ten-day settlement stress against actual statement dates, excluding pending rewards and unavailable bank-bonus balances from repayment cash.",
-        "Set aggregate counterparty limits across ordered, in-transit, accepted, and disputed goods; preserve serial evidence, shipment coverage, permitted deductions, and collection deadlines.",
-        "Document resale treatment, payment reporting, rebate basis adjustments, and principal-versus-agent conclusions; keep genuine startup compute grants outside wholesale and treasury receipts.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "UCC Section 2-607 — Effect of Acceptance; Notice of Breach",
-            "url": "https://www.law.cornell.edu/ucc/2/2-607",
-            "relevance": "Addresses the buyer's duty to pay at the contract rate for accepted goods and related notice duties; verify the governing state's enacted text.",
-        },
-        {
-            "title": "UCC Section 2-709 — Action for the Price",
-            "url": "https://www.law.cornell.edu/ucc/2/2-709",
-            "relevance": "Identifies circumstances supporting a seller's action for the price; collection rights do not replace a funded repayment reserve.",
-        },
-        {
-            "title": "UCC Section 4A-202 — Authorized and Verified Payment Orders",
-            "url": "https://www.law.cornell.edu/ucc/4A/4A-202",
-            "relevance": "Provides a framework for authorization and agreed security procedures in covered commercial funds transfers, subject to state enactment and applicable federal rules.",
-        },
-        {
-            "title": "12 CFR Part 210, Subpart B — Funds Transfers Through Fedwire",
-            "url": "https://www.ecfr.gov/current/title-12/chapter-II/subchapter-A/part-210/subpart-B",
-            "relevance": "Governs covered Fedwire funds transfers; distinguish this framework from ACH operating rules and individual bank account agreements.",
-        },
-        {
-            "title": "UCC Section 9-406 — Discharge of Account Debtor; Notification of Assignment",
-            "url": "https://www.law.cornell.edu/ucc/9/9-406",
-            "relevance": "Addresses account-debtor discharge and assignment notification issues relevant to factoring, within the provision's scope and applicable state law.",
-        },
-        {
-            "title": "26 U.S.C. Section 6050W — Returns Relating to Payment Settlement Entities",
-            "url": "https://www.law.cornell.edu/uscode/text/26/6050W",
-            "relevance": "Establishes payment-settlement information reporting requirements; reported payment amounts must be reconciled rather than equated with operator profit.",
-        },
-        {
-            "title": "26 U.S.C. Section 61 — Gross Income Defined",
-            "url": "https://www.law.cornell.edu/uscode/text/26/61",
-            "relevance": "Supplies the general gross-income foundation relevant to interest and incentive classification; distinguish earnings from borrowed or returned principal.",
-        },
-        {
-            "title": "26 U.S.C. Section 1012 — Basis of Property",
-            "url": "https://www.law.cornell.edu/uscode/text/26/1012",
-            "relevance": "Provides the cost-basis foundation for purchased merchandise; document the treatment of qualifying purchase-price adjustments with supporting transaction records.",
-        },
-        {
-            "title": "26 U.S.C. Section 6001 — Records, Statements, and Special Returns",
-            "url": "https://www.law.cornell.edu/uscode/text/26/6001",
-            "relevance": "Supports maintaining records sufficient to substantiate merchandise costs, receipts, refunds, rebates, interest, and reported tax items.",
-        },
-        {
-            "title": "12 CFR Section 1005.2 — Consumer and Account Definitions",
-            "url": "https://www.ecfr.gov/current/title-12/chapter-X/part-1005/section-1005.2",
-            "relevance": "Defines the consumer-account scope relevant to Regulation E; do not assume business payment accounts receive identical consumer electronic-transfer protections.",
-        },
-    ],
-}
+CHAPTER_2 = {'id': 'Q2',
+ 'chapter_id': 'Q2',
+ 'chapter_number': 2,
+ 'question_number': 2,
+ 'slug': 'gift-card-resale-manufactured-spend-credit-to-cash-liquidation',
+ 'question_prompt': 'How do practitioners convert card spend into cash or points through gift card '
+                    'reselling, manufactured spending, and 0% APR liquidation?',
+ 'kicker': 'Q2 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Gift Card Resale, Manufactured Spend & Credit-to-Cash Liquidation',
+ 'subtitle': 'Gift card buy-and-resell volume and shutdown/clawback risk, ways to hit minimum spend, '
+             '1099-K tax exposure, and pulling cash off 0% APR cards without cash-advance fees',
+ 'layout_template': 'executive_summary',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Practitioners converge on one rule: credit converted to cash or points only pays '
+                      'when a buyer, exit, or repayment plan is locked before the swipe. Taylor of QCGC '
+                      'buys promo-sourced gift cards at set rates (Walmart at 91.5% against a 25% Amex '
+                      'offer, a 16.5% margin) and warns against buying without a buyer lined up. '
+                      'Liquidators charge 5-6% (Alex Barajas) or 6%+ (Naam Wynn), while invoice and PayPal '
+                      'routes run about 2-3%. Balance-transfer checks cost 3-5%. Frequent Miler catalogs '
+                      'taxes, bill-pay, Gift of College, Kiva and money orders, noting many Serve/Bluebird '
+                      'shutdowns. Splits are sharp: Kai Gibson pushes gift-card-to-money-order flows and '
+                      'tells viewers to unfollow critics, while Naam rejects that route and Make Manage '
+                      'Grow Money calls cash-from-card arbitrage very risky.',
+ 'key_metrics': [{'label': 'Walmart Amex-Offer Gift Card Buy Rate',
+                  'metric': 'Walmart Amex-Offer Gift Card Buy Rate',
+                  'value': '91.5% of face value, a 16.5% margin',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'QCGC buying $100 Walmart gift cards generated by the Amex spend $100, get '
+                             '25% back offer',
+                  'source': 'Geobreeze Travel ([QTa7eNv00k4 @ 00:21:49])'},
+                 {'label': 'Credit Card Liquidator Fee',
+                  'metric': 'Credit Card Liquidator Fee',
+                  'value': '5% to 6% of the amount liquidated, 5-10 business days',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Range Alex Barajas has seen across liquidation companies such as MF Capital '
+                             'and CashU Pay',
+                  'source': 'Alex Barajas ([MrvMwsC_ZOg @ 00:01:54])'},
+                 {'label': 'Net Liquidation Cost After Rewards',
+                  'metric': 'Net Liquidation Cost After Rewards',
+                  'value': 'About 4% (6% liquidator fee minus 2% card rewards)',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Naam Wynn netting card cash back against a 6%+ liquidator fee to get the '
+                             'real cost',
+                  'source': 'Naam Wynn ([AsYTdszcmx8 @ 00:10:07])'},
+                 {'label': 'Form 1099-K Reporting Threshold',
+                  'metric': 'Form 1099-K Reporting Threshold',
+                  'value': '$5,000 for calendar year 2024',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Transition-relief threshold for payment card and third-party network sales '
+                             'reporting',
+                  'source': 'James Baker CPA ([w7-zxRnNOSo @ 00:00:58])'}],
+ 'sections': [{'heading': '1. The Practitioner Consensus',
+               'paragraphs': ['The first point every serious operator lands on is that the exit gets '
+                              'locked before the card ever gets swiped. Taylor Thomas, who has resold gift '
+                              'cards since 2019 and built QCGC out of a WhatsApp group in April 2020, puts '
+                              "it bluntly: you probably shouldn't buy a pile of gift cards from a "
+                              'promotion without a buyer already lined up at an agreed rate [QTa7eNv00k4 @ '
+                              '00:28:36]. On the QCGC portal that discipline is enforced mechanically, '
+                              'because reserving capacity is a commitment to sell, and only listed '
+                              'denominations at full balance are accepted [638DPuaWt9s @ 00:13:10]. The '
+                              'liquidation crowd runs the same logic with cash instead of cards. Naam Wynn '
+                              'tells anyone using the invoice route to send $100 first and confirm it '
+                              'lands, because the last thing you want is a few thousand dollars stuck in '
+                              'limbo [AsYTdszcmx8 @ 00:05:53]. Alex Barajas, running trusted individuals '
+                              'through the cards, says to collect their cash first before they spend on '
+                              'your card, which puts the money in hand before any charge posts '
+                              '[MrvMwsC_ZOg @ 00:06:00]. Across gift cards, invoices, and spender '
+                              'networks, the shared rule is identical: price, counterparty, and payout '
+                              'path are settled up front, and volume only scales once a small test cycle '
+                              'clears cleanly.',
+                              'On liquidation, the strongest agreement is negative: the cash advance is '
+                              'the wrong tool. Naam Wynn calls a cash advance the payday loan of the '
+                              'credit card world, noting it drops the 0% rate for 25-30% interest, kills '
+                              'the usual 45-day grace period, caps out at 20-30% of the limit so a $10K '
+                              'line yields about $2,500, and carries roughly a 5% fee [AsYTdszcmx8 @ '
+                              '00:01:43]. Alex Barajas makes the same call from the deal side, where real '
+                              'estate deals and car dealers often demand cash: an advance voids the 0% '
+                              'rate and only unlocks a small slice of the limit [MrvMwsC_ZOg @ 00:01:17]. '
+                              'Monty The Card Nerd frames it structurally, listing four interest buckets '
+                              '(purchases, balance transfers, cash advances, and loans or lines of credit) '
+                              'and stressing the last two never get 0% offers [7n9y5L1-mD0 @ 00:01:22]. '
+                              'Even Make Manage Grow Money, which has never run arbitrage, calls '
+                              'cash-from-card interest bad and says the investment has to be close to '
+                              'guaranteed [pjLnjZQ79Ng @ 00:03:28]. That shared floor explains why every '
+                              'method in this playbook routes around the advance button: purchases, '
+                              'balance-transfer checks, invoices, buying groups, and liquidators all exist '
+                              'to keep the promo rate intact and the full limit usable.',
+                              'The baseline prerequisites repeat across channels. First, run the play on '
+                              'business cards. Alex Barajas says to use business cards only, because '
+                              'maxing personal cards drags your score [MrvMwsC_ZOg @ 00:11:06], and Monty '
+                              'The Card Nerd backs that with the math that utilization is 30% of a FICO '
+                              'score, so 0% strategies belong on cards like the Chase Ink Unlimited whose '
+                              'balances typically stay off the personal report [7n9y5L1-mD0 @ 00:04:16]. '
+                              'Second, the cash has a job. Kai Gibson of KG | The Professional Borrower '
+                              'tells viewers repayment is required and the money should not go to Jays or '
+                              "anything else that won't bring income [csgx01xGzeM @ 00:00:31], and to use "
+                              'the credit to create passive income rather than lifestyle. Third, the paper '
+                              'trail is real. James Baker CPA warns that reported sales must at least '
+                              'equal the 1099-K total or you invite an audit, with individuals reporting '
+                              'on Schedule C and entities on 1065 or 1120S matched to the EIN [w7-zxRnNOSo '
+                              '@ 00:01:47]. Baker describes a nonresident seller who never filed and got '
+                              'hit with a substitute return assessing over $100K with no expenses counted, '
+                              'so sales get reported even when no tax is due. Business cards, a defined '
+                              'use for the cash, and clean books form the entry ticket.'],
+               'table': {'caption': 'Where the practitioners agree before any card gets swiped',
+                         'headers': ['Consensus Point',
+                                     'What Practitioners Actually Do',
+                                     'Why It Matters To Operators',
+                                     'Expert Source'],
+                         'rows': [['Exit and payout rate locked before any purchase',
+                                   'Line up a buyer at an agreed rate before buying promo cards',
+                                   'Unsold promo inventory leaves you holding cards with no exit',
+                                   'Geobreeze Travel ([QTa7eNv00k4 @ 00:28:36])'],
+                                  ['Cash advances are skipped by every liquidation practitioner',
+                                   'Route cash needs through transfers, invoices, buying groups, or '
+                                   'liquidators',
+                                   'Advances lose 0%, lose the grace period, and cap at 20-30%',
+                                   'Naam Wynn ([AsYTdszcmx8 @ 00:01:43])'],
+                                  ['Business cards carry the balances, not personal cards',
+                                   'Run 0% balances on business cards like Chase Ink Unlimited',
+                                   'Utilization drives 30% of FICO; business balances typically stay off',
+                                   'Monty The Card Nerd ([7n9y5L1-mD0 @ 00:04:16])'],
+                                  ['Test every new rail with a small amount first',
+                                   'Send $100 through any invoice or processor route before scaling',
+                                   'Avoids a few thousand dollars stuck in limbo mid-transfer',
+                                   'Naam Wynn ([AsYTdszcmx8 @ 00:05:53])'],
+                                  ['Buy gift cards only while a promotion is live',
+                                   'Source cards only during promos, tracking active deals on GCgalore.com',
+                                   'Margin comes from the promo discount stacked on card rewards',
+                                   'Geobreeze Travel ([QTa7eNv00k4 @ 00:14:43])'],
+                                  ['Reported sales must match or exceed the 1099-K',
+                                   'Report at least the 1099-K total on the return matching the EIN',
+                                   'Underreporting against the form invites an audit and large assessments',
+                                   'James Baker CPA ([w7-zxRnNOSo @ 00:01:47])'],
+                                  ['Liquidated cash must fund income, never consumer purchases',
+                                   'Deploy cash into income plays like real estate, not Jays',
+                                   'Repayment is required and lifestyle spending cannot service the '
+                                   'balance',
+                                   'KG | The Professional Borrower ([csgx01xGzeM @ 00:00:31])']]}},
+              {'heading': '2. Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['The gift card resale loop is promo-sourced buying flipped at a locked rate, '
+                              "and the spread is the whole business. Taylor's QCGC was buying $100 Walmart "
+                              'cards generated by the Amex spend $100, get 25% back offer at 91.5%, which '
+                              'leaves the seller a 16.5% margin before card rewards even enter the picture '
+                              '[QTa7eNv00k4 @ 00:21:49]. Weaker promos still clear at a profit: '
+                              "Lululemon's spend $100, get $20 deal was bought at 88% for an 8% margin, "
+                              'and Tory Burch runs about 7% roughly twice a year [QTa7eNv00k4 @ 00:23:17]. '
+                              "The math gets thin fast on other deals. Lowe's cards bought at Dollar "
+                              'General for 10% off were being taken at 89%, a 1% loss that only pencils '
+                              'out on a 2%+ card such as BofA Platinum Honors earning 2.62% [638DPuaWt9s @ '
+                              '00:11:49]. Denomination also moves the payout: $500 cards fetch more '
+                              'because bulk buyers prefer them, even though most promos only cover $50 '
+                              'cards, so an operator who can source higher denominations captures a better '
+                              'rate on identical promo economics [638DPuaWt9s @ 00:17:04]. Every one of '
+                              'these rates is published before the buy, which is what turns a retail '
+                              'promotion into a measurable, pre-agreed spread rather than a speculative '
+                              'inventory bet sitting in a drawer.',
+                              'On the credit-to-cash side, the price list is explicit. Alex Barajas pegs '
+                              'liquidators at 5-6% and walks the $100K example: the $5-6K fee is either '
+                              'charged on top, so the card absorbs $105-106K, or deducted, so you net '
+                              '$95-96K, with funds landing in 5-10 business days through outfits Barajas '
+                              'names such as MF Capital and CashU Pay [MrvMwsC_ZOg @ 00:03:11]. Naam Wynn '
+                              'quotes liquidators at 6%+ and nets the rewards back out: a 6% fee against a '
+                              'card paying 2% back is a real cost closer to 4% [AsYTdszcmx8 @ 00:10:07]. '
+                              'Cheaper rails exist if the issuer cooperates. George Waters puts '
+                              'balance-transfer checks at a one-time 3-5% fee, with BofA and Chase known '
+                              'for them and some issuers requiring a phone call, and runs the '
+                              'trusted-friend invoice through Stripe, PayPal, or Plastique at about 2.9% '
+                              "[nRJlDybpS4s @ 00:01:05]. Naam's version of bill-pay is Melio at roughly "
+                              '2.9%, which also buys 30-50 days of float before the charge has to be '
+                              'covered [AsYTdszcmx8 @ 00:07:28]. The ladder, cheapest to priciest, runs '
+                              'processors and Melio near 2.9-3%, transfer checks at 3-5%, and liquidators '
+                              'at 5-6% or more, and each step up the ladder trades fee for speed and '
+                              'simplicity, which is why Barajas still calls liquidators the fastest route.',
+                              'For pure spend volume, the low-cost rails are where the 1% plays live. '
+                              "Frequent Miler's Gift of College route costs about $5 per $500 load, "
+                              'roughly 1%, and the balance can go into a 529 or toward loans; Target caps '
+                              'loads at $100, while Cumberland Farms works [p6KX6rsg_Rk @ 00:48:28]. '
+                              'Buying groups are the other volume engine: Chris Hutchins and Julia Menez '
+                              'describe groups that reimburse $2,900 on $3,000 of spend, a $100 haircut '
+                              'that still makes sense when it unlocks a 50K signup bonus, with rare PFS US '
+                              'Mint deals paying cost plus $200 commission [Dbhznmaq0Bg @ 00:06:58]. Kai '
+                              'Gibson runs the older physical route: load prepaid Visa gift cards off a '
+                              '$5,000 limit, then buy money orders at Walmart, where Dallas caps each at '
+                              '$500, so four orders move $2,000 into the bank as deposited cash '
+                              '[csgx01xGzeM @ 00:03:23]. Alex Barajas skips the retail loop entirely and '
+                              "has trusted people spend on the operator's cards after handing over cash "
+                              "first; at Barajas's own $20K a month in bills, five such spenders push "
+                              '$100K a month through the card while the operator pays only the roughly 1% '
+                              'minimum [MrvMwsC_ZOg @ 00:06:21]. Each rail trades a different cost: fees '
+                              'on Gift of College, haircuts in buying groups, legwork on money orders, and '
+                              'trust on spender networks.'],
+               'table': {'caption': 'Street-level rails, exact numbers, and execution details',
+                         'headers': ['Play or Rail',
+                                     'Exact Number Quoted',
+                                     'Execution Detail From The Speaker',
+                                     'Expert Source'],
+                         'rows': [['Walmart gift cards from the Amex offer',
+                                   '91.5% buy rate, leaving a 16.5% margin',
+                                   'Spend $100, get 25% back, sell the $100 cards to QCGC',
+                                   'Geobreeze Travel ([QTa7eNv00k4 @ 00:21:49])'],
+                                  ["Lowe's gift cards bought at Dollar General",
+                                   '89% buy rate on 10% off, a 1% loss',
+                                   'Only run it on a 2%+ card like BofA Platinum Honors at 2.62%',
+                                   'Geobreeze Travel ([638DPuaWt9s @ 00:11:49])'],
+                                  ['Credit card liquidation companies like CashU Pay',
+                                   '5-6% fee, funds in 5-10 business days',
+                                   'A $100K job costs $5-6K, charged on top or deducted',
+                                   'Alex Barajas ([MrvMwsC_ZOg @ 00:01:54])'],
+                                  ['Balance transfer checks from BofA and Chase',
+                                   'One-time fee of 3-5% of the amount',
+                                   'Some issuers require a phone call to get the checks',
+                                   'George Waters ([nRJlDybpS4s @ 00:01:05])'],
+                                  ['PayPal invoices from trusted family or friends',
+                                   'PayPal takes about 2% off the transferred cash',
+                                   'Three to five people invoice $2,000, $2,000, and $1,000, then send '
+                                   'funds back',
+                                   'KG | The Professional Borrower ([csgx01xGzeM @ 00:04:28])'],
+                                  ['Gift of College loads toward a 529 or loans',
+                                   'About $5 per $500 load, roughly 1% cost',
+                                   'Target caps loads at $100; Cumberland Farms works for loads',
+                                   'Frequent Miler ([p6KX6rsg_Rk @ 00:48:28])'],
+                                  ["Pays checkout statement credits stacked on Dunkin' gift cards",
+                                   '10 x $10 credits, $100 per eligible card',
+                                   "Buy $10 Dunkin' app gift cards and merge them into $120 cards",
+                                   'DansDeals ([ti02qu7iwX4 @ 00:01:03])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Shutdown-Avoidance and Deposit Hygiene From the Floor',
+                           'body': 'Four operational habits the resellers and liquidators use to keep '
+                                   'cards open, offers triggering, and cash flowing without tripping '
+                                   'issuer or bank alarms.',
+                           'items': ['Spread spend across multiple cards and add bananas to the basket so '
+                                     'totals are never round; Taylor cycled through seven cards per trip '
+                                     '[Geobreeze Travel — QTa7eNv00k4 @ 00:36:15]',
+                                     'Buy physical or in-store cards for Amex offers, because e-gift cards '
+                                     'processed through CashStar will not trigger the offer [Geobreeze '
+                                     'Travel — QTa7eNv00k4 @ 00:25:09]',
+                                     'Never deposit cash into the same bank that you pull it from when '
+                                     'running invoice or transfer liquidation [Naam Wynn — AsYTdszcmx8 @ '
+                                     '00:06:33]',
+                                     'Do not deposit money orders at Chase and do not mail money orders to '
+                                     'your card issuer to pay the bill [Frequent Miler — p6KX6rsg_Rk @ '
+                                     '01:12:14]']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Define the goal and pick the rail',
+                              'action': 'Decide whether the run is for a signup bonus, points, cash back, '
+                                        'or liquid cash, then match the method to that need.',
+                              'detail': 'Justin says to know your goal first because it dictates the '
+                                        'strategy [Elevate Business Consulting, LLC — EgyPkxlxqpI @ '
+                                        '00:00:39], and Naam Wynn says to match the method to the need, '
+                                        'from 3% transfers to 6%+ liquidators [Naam Wynn — AsYTdszcmx8 @ '
+                                        '00:11:19].'},
+                             {'step': 2,
+                              'title': 'Source during a live promo with the buyer locked',
+                              'action': 'Find the promotion, reserve capacity at a set rate, then buy the '
+                                        'exact listed denominations.',
+                              'detail': 'Buy only during promotions tracked on GCgalore.com [Geobreeze '
+                                        'Travel — QTa7eNv00k4 @ 00:14:43]; reserving capacity on the QCGC '
+                                        'portal is a commitment to sell, and a first run of one $50-100 '
+                                        'card is the suggested start [Geobreeze Travel — 638DPuaWt9s @ '
+                                        '00:13:10].'},
+                             {'step': 3,
+                              'title': 'Balance-check and submit clean',
+                              'action': 'Verify every card balance, then submit single, by bulk-paste, or '
+                                        'by CSV at full balance.',
+                              'detail': 'Typos are the most common error, so balance-check before '
+                                        'submitting [Geobreeze Travel — QTa7eNv00k4 @ 00:31:11]; denials '
+                                        'come back within 1-2 business days and some cards cannot be '
+                                        'balance-checked online [Geobreeze Travel — 638DPuaWt9s @ '
+                                        '00:18:43].'},
+                             {'step': 4,
+                              'title': 'Repay on schedule and book the sales',
+                              'action': 'Set fixed payments that clear the balance inside the promo window '
+                                        'and report sales against cost of goods.',
+                              'detail': 'Monty The Card Nerd uses fixed payments such as $6,000 / 12 = '
+                                        '$500 instead of minimums [Monty The Card Nerd — 7n9y5L1-mD0 @ '
+                                        '00:05:52], and Taylor reports gift card sales and COGS at tax '
+                                        'time [Geobreeze Travel — QTa7eNv00k4 @ 00:37:48].'}]},
+              {'heading': 'Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The cash-out leg splits operators into three camps, and the fee math is '
+                              'where they part ways. Naam Wynn rejects cash advances outright, calling '
+                              'them the payday loan of the credit card world, and prices liquidators at 6% '
+                              'and up, adding that some froze client funds for weeks or months, so every '
+                              'liquidator gets vetted hard before a dollar moves [AsYTdszcmx8 @ 00:09:41]. '
+                              'Alex Barajas runs the same play as his first method for $100K pulls, '
+                              'quoting 5 to 6% from what he has seen in the industry, naming MF Capital '
+                              'and CashU Pay, and clocking 5 to 10 business days as the fastest, simplest '
+                              'path [MrvMwsC_ZOg @ 00:01:54]. On $100K that fee either lands on top as a '
+                              '$105-106K balance or comes off the payout as $95-96K net. George Waters '
+                              'starts lower on the fee ladder: balance transfer checks from BofA or Chase '
+                              'at a one-time 3 to 5%, with some issuers requiring a call [nRJlDybpS4s @ '
+                              '00:01:05]. His invoice route runs about 2.9% through Stripe, PayPal, or '
+                              'Plastique, but he watched QuickBooks freeze roughly $5K for about six '
+                              "months. Naam's own invoice and Melio routes sit near 3%, with the Melio leg "
+                              'buying 30 to 50 days of float.',
+                              'The free-method camp and the resale camp disagree hard on retail '
+                              'manufactured spend. Justin at Elevate Business Consulting teaches the '
+                              'split-payment return: ring a $100 item as $10 on debit and $90 on credit, '
+                              'return it with the debit card inserted, and let the full refund land on '
+                              'debit to pay down the credit card while the points stay put [EgyPkxlxqpI @ '
+                              "00:01:58]. George Waters runs the same split at Sam's Club and on "
+                              'engagement rings, and reports an IKEA test where the refund hit in under 24 '
+                              'hours with no fees, while warning these methods change once they spread '
+                              '[nRJlDybpS4s @ 00:03:44]. Naam Wynn throws out both buy-and-return and '
+                              'gift-card-to-money-order as hassle with flag risk, steering volume to '
+                              'buying groups on Black Friday, Prime Day, and Kindles, paid back by check '
+                              'or ACH [AsYTdszcmx8 @ 00:08:23]. Alex Barajas acknowledges retail and '
+                              'money-order routes but prefers trusted individuals spending on your card '
+                              'after handing you their cash first; at his own $20K monthly bill load, five '
+                              'such people equal $100K a month with zero fees, at the cost of speed and '
+                              'the difficulty of finding people you can trust [MrvMwsC_ZOg @ 00:05:06].',
+                              'What to do with liquidated cash is the sharpest split. Kai Gibson of KG | '
+                              'The Professional Borrower tells viewers to use credit to create passive '
+                              'income and to unfollow anyone who calls it bad, funding real estate and '
+                              'other plays a card cannot pay for, as long as the cash never goes to Jays '
+                              '[csgx01xGzeM @ 00:01:18]. Make Manage Grow Money agrees with most of the '
+                              'arbitrage thesis but calls cash-from-card investing very very risky, '
+                              'demands the investment be like guaranteed, and warns that a failed play '
+                              'leaves you owing principal plus fresh interest; the speaker has never run '
+                              'arbitrage and grinds for more income instead [pjLnjZQ79Ng @ 00:03:12]. '
+                              'Monty The Card Nerd keeps it narrow: 0% purchase APR only, minimum '
+                              'payments, and the freed $1,000 parked in high-yield savings near 4%, with '
+                              'cash advances and loans never getting 0% offers [7n9y5L1-mD0 @ 00:01:56]. '
+                              'WealthRoom AI swings the other way, routing 12 to 18 months of 0% intro APR '
+                              'into treasury notes, index positions, or digital media pitched as '
+                              'guaranteed baseline cash flow, with minimums paid from the yield '
+                              '[8_GgpKDJJTE @ 00:04:50]. Monty treats even that 0% window as secondary to '
+                              'welcome bonuses.'],
+               'table': {'caption': 'Side-by-side playbooks where practitioners split on cost, speed, and '
+                                    'risk',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Liquidating the card limit into cash',
+                                   'Liquidators at 6% and up, with some freezing client funds for weeks or '
+                                   'months',
+                                   'Liquidators at 5 to 6%, paid out in 5 to 10 business days via MF '
+                                   'Capital or CashU Pay',
+                                   'Naam Wynn ([AsYTdszcmx8 @ 00:09:41]); Alex Barajas ([MrvMwsC_ZOg @ '
+                                   '00:01:54])'],
+                                  ['Retail buy-and-return manufactured spend',
+                                   'Split $10 debit and $90 credit, return to debit, pay the card, keep '
+                                   'the points',
+                                   'Rejects buy-and-return and gift-card-to-money-order as hassle carrying '
+                                   'flag risk',
+                                   'Elevate Business Consulting, LLC ([EgyPkxlxqpI @ 00:01:58]); Naam Wynn '
+                                   '([AsYTdszcmx8 @ 00:08:23])'],
+                                  ['Who generates the spend on your card',
+                                   'Trusted individuals hand you cash first, then spend on your card with '
+                                   'zero fees',
+                                   'Three to five trusted PayPal contacts invoice you, and PayPal takes '
+                                   'about 2%',
+                                   'Alex Barajas ([MrvMwsC_ZOg @ 00:06:00]); KG | The Professional '
+                                   'Borrower ([csgx01xGzeM @ 00:04:28])'],
+                                  ['Investing the liquidated credit',
+                                   'Use credit to create passive income and unfollow anyone who calls it '
+                                   'bad',
+                                   'Very very risky, and the investment has to be like guaranteed to work',
+                                   'KG | The Professional Borrower ([csgx01xGzeM @ 00:01:18]); Make Manage '
+                                   'Grow Money ([pjLnjZQ79Ng @ 00:03:12])'],
+                                  ['Where the 0% money gets parked',
+                                   'Pay minimums and park the freed $1,000 in high-yield savings near 4%',
+                                   'Route 12 to 18 months of 0% into treasury notes, index positions, or '
+                                   'digital media',
+                                   'Monty The Card Nerd ([7n9y5L1-mD0 @ 00:01:56]); WealthRoom AI '
+                                   '([8_GgpKDJJTE @ 00:04:50])'],
+                                  ['Stacking lines of credit into real estate',
+                                   'Draw about $25K from lines for a $100K rental, where $1,000 rent nets '
+                                   '$200 to $400 monthly',
+                                   'Fault arbitrage pitches that skip budgeting skills and an '
+                                   'emergency-fund backstop',
+                                   'Mr. Will Roundtree ([a1MwAkYtYBE @ 00:07:02]); Make Manage Grow Money '
+                                   '([pjLnjZQ79Ng @ 00:02:19])'],
+                                  ['Cheap fillers for minimum spend',
+                                   'Pays gives 10 x $10 statement credits per card, run across 30+ '
+                                   'eligible cards',
+                                   'A buying group reimbursing $2,900 on $3,000 still pays off for a 50K '
+                                   'bonus',
+                                   'DansDeals ([ti02qu7iwX4 @ 00:00:25]); Chris Hutchins ([Dbhznmaq0Bg @ '
+                                   '00:06:58])']]}},
+              {'heading': 'Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['Gift card resale breaks first on inventory risk. Taylor from QCGC says you '
+                              "probably shouldn't buy a bunch of gift cards from a promotion without a "
+                              'buyer lined up at an agreed rate, and names typos as the most common '
+                              'submission error, so every card gets balance-checked before it goes in '
+                              '[QTa7eNv00k4 @ 00:28:36]. He also flags two trigger traps: buying gift '
+                              'cards on an Amex while chasing its signup bonus, and e-gift cards processed '
+                              'through CashStar that never trigger the Amex offer, while physical or '
+                              'in-store buys do. On the later episode, Taylor adds that denials come back '
+                              'within one to two business days, that cards can be drained after purchase, '
+                              'that some cannot be balance-checked online, and that only listed '
+                              'denominations at full balance are accepted [638DPuaWt9s @ 00:18:43]. His '
+                              'risk list runs Amex clawbacks, shutdowns from Chase, Citi, or Capital One, '
+                              'retailers limiting purchases to cash or debit, and tampered cards, and his '
+                              'line is to operate within your own risk tolerance. Frequent Miler confirms '
+                              'counterparty risk is real: the resale site Plastic Merchant folded, and a '
+                              'Max Out Deals buyers club payout stalled over a tracking-number error '
+                              '[p6KX6rsg_Rk @ 01:05:41].',
+                              'Account shutdowns are the operational ceiling. Taylor spreads spend across '
+                              'cards and adds bananas so totals never land on round numbers, describing '
+                              'carrying seven cards and cycling through all of them [QTa7eNv00k4 @ '
+                              "00:36:15]. Taylor's framing for staying open is that it's a marathon, not a "
+                              'sprint. airelle warns that buying thousands in gift cards red-flags your '
+                              'account and that nobody knows the safe limit, even on a $500 prepaid '
+                              'Mastercard carrying a $9.95 fee [MWPOAsKJ1-g @ 00:07:50]. Her cleaner '
+                              'routes for hitting $5K to $15K minimums are rent via Chexy at 1.75% and '
+                              'taxes via PaySimply near 2.5%. Frequent Miler reports many Serve and '
+                              'Bluebird users shut down, and on money orders tells operators not to '
+                              'deposit at Chase and not to mail money orders to the card issuer, noting '
+                              "that people run complicated routes because the easy ways don't work "
+                              '[p6KX6rsg_Rk @ 01:12:14]. Frequent Miler adds that money-order rules are '
+                              'local, so each store runs its own limits. Naam Wynn layers on a banking '
+                              'rule: never deposit cash into the same bank you pull it from, keep business '
+                              'money in separate accounts, and go easy on new Amex cards [AsYTdszcmx8 @ '
+                              '00:06:33].',
+                              'The economics check kills thin plays before they start. Chris Hutchins ran '
+                              'federal taxes through pay1040.com at 1.87%: $10K cost $187 and earned $200 '
+                              'at 2%, a $13 net, and he concluded this is not a way to make money, only a '
+                              'way to clear minimum spend [Dbhznmaq0Bg @ 00:51:53]. Taylor accepts 0.5 to '
+                              '1% resale losses only when the card earns 3 to 4%, and reports both sales '
+                              'and cost of goods sold at tax time [QTa7eNv00k4 @ 00:40:55]. Monty The Card '
+                              'Nerd warns that 0% APR only defers interest until the promo ends, so a '
+                              'missed payment brings a late fee, a score hit, penalty APR, and backloaded '
+                              'interest [7n9y5L1-mD0 @ 00:05:37]. James Baker CPA closes the loop on '
+                              'reporting: sales must be at least the 1099-K total or you invite an audit, '
+                              'and one non-filer took an IRS substitute return assessing over $100K with '
+                              'zero expenses counted [w7-zxRnNOSo @ 00:01:47]. His rule is to file and '
+                              "report those sales even if there's no tax to pay, because the 1099-K may be "
+                              "the only information the IRS has on you, and if you don't, the IRS will "
+                              'just assume you made the money.'],
+               'table': {'caption': 'Firsthand traps, what broke, and the fix practitioners applied',
+                         'headers': ['Failure Mode',
+                                     'What Practitioners Saw',
+                                     'Operator Fix',
+                                     'Expert Source'],
+                         'rows': [['Buying promo gift cards with no exit',
+                                   'Inventory bought from a promotion without a buyer at an agreed rate',
+                                   'Line up a reputable buyer at a guaranteed set rate before the '
+                                   'promotion',
+                                   'Geobreeze Travel ([QTa7eNv00k4 @ 00:28:36])'],
+                                  ['The Amex offer never triggers',
+                                   'E-gift cards processed through CashStar do not trigger the statement '
+                                   'offer',
+                                   'Buy physical cards or in-store, and skip gift cards on signup-bonus '
+                                   'Amex cards',
+                                   'Geobreeze Travel ([QTa7eNv00k4 @ 00:25:09])'],
+                                  ['Denied or drained cards after submission',
+                                   'Denials return within one to two business days, and cards can be '
+                                   'drained later',
+                                   'Submit only listed denominations at full balance and balance-check '
+                                   'every single card',
+                                   'Geobreeze Travel ([638DPuaWt9s @ 00:18:43])'],
+                                  ['Payment processor freezes the transfer',
+                                   'QuickBooks froze a transfer of roughly $5K for about six months',
+                                   'Test $100 to $500 first before routing any real volume through a '
+                                   'processor',
+                                   'George Waters ([nRJlDybpS4s @ 00:02:27])'],
+                                  ['Liquidator sits on client funds',
+                                   'Some liquidators froze client funds for weeks or even months at a time',
+                                   'Vet hard, and price real cost as the fee minus card rewards, so 6% '
+                                   'minus 2% is 4%',
+                                   'Naam Wynn ([AsYTdszcmx8 @ 00:10:07])'],
+                                  ['The channel closes after it spreads',
+                                   'The prepaid gift card route worked on the Apple Card until everybody '
+                                   'used it',
+                                   'Expect methods to change once they spread and keep a second route '
+                                   'ready',
+                                   'KG | The Professional Borrower ([csgx01xGzeM @ 00:02:46])'],
+                                  ['Merchant loophole gets patched mid-promo',
+                                   'Newegg gift cards stopped working for Pays credits, though triggered '
+                                   'credits still posted',
+                                   "Pivot to Dunkin' app cards, $10 Sephora items, or Clover restaurant "
+                                   'gift cards',
+                                   'DansDeals ([ti02qu7iwX4 @ 00:00:39])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Pre-Flight Checks Before Any Liquidation Cycle',
+                           'body': 'Every loss reported by these operators traces back to skipping one of '
+                                   'four checks: no committed buyer, no test transfer, overextended '
+                                   'checking, or sales reported below the 1099-K figure. Clear all four '
+                                   'before charging a single card.',
+                           'items': ['Confirm a buyer at an agreed rate before buying any promo gift cards '
+                                     '[Geobreeze Travel — QTa7eNv00k4 @ 00:28:36].',
+                                     'Send $100 through any invoice, processor, or liquidator route and '
+                                     'confirm it lands before moving thousands [Naam Wynn — AsYTdszcmx8 @ '
+                                     '00:05:53].',
+                                     'Only charge what your checking account can cover if a payout is '
+                                     'delayed or denied [Geobreeze Travel — 638DPuaWt9s @ 00:09:10].',
+                                     'Report sales at or above the 1099-K total under the matching EIN to '
+                                     'avoid an audit flag [James Baker CPA — w7-zxRnNOSo @ 00:01:47].']}}],
+ 'pull_quote': '"A cash advance is just a payday loan of the credit card world." — Naam Wynn (AsYTdszcmx8 '
+               '@ 00:01:28).',
+ 'diagram_id': 'diag-04',
+ 'action_checklist': ['Pull current promo rates from GCgalore.com and buy only during promotions, '
+                      'prioritizing Apple, Best Buy, and Home Depot demand [Geobreeze Travel — QTa7eNv00k4 '
+                      '@ 00:14:43].',
+                      'Open a free qcgc.io account, reserve capacity only when committed to sell, and '
+                      'start with one $50-100 card [Geobreeze Travel — 638DPuaWt9s @ 00:08:26].',
+                      'Send $100 through any invoice or processor route first and confirm it lands before '
+                      'moving thousands [Naam Wynn — AsYTdszcmx8 @ 00:05:53].',
+                      'Run 0% liquidation on business cards so maxed balances stay off your personal score '
+                      '[Alex Barajas — MrvMwsC_ZOg @ 00:11:06].',
+                      'Set fixed monthly payments, such as $6,000 / 12 = $500, instead of minimums with a '
+                      'month-12 balloon [Monty The Card Nerd — 7n9y5L1-mD0 @ 00:05:52].',
+                      'Report total sales at or above the 1099-K figure under the matching EIN and book '
+                      'cost of goods sold against resale volume [James Baker CPA — w7-zxRnNOSo @ '
+                      '00:02:19].'],
+ 'statutory_citations': [{'title': 'Geobreeze Travel — Rapidly Earning Points Buying and Selling Gift '
+                                   'Cards with Taylor from QCGC | Ep 162 [00:28:36]',
+                          'url': 'https://www.youtube.com/watch?v=QTa7eNv00k4&t=1716s',
+                          'relevance': 'Primary practitioner testimony on lining up a gift card buyer at '
+                                       'an agreed rate before buying promo inventory.'},
+                         {'title': 'Naam Wynn — How to Get Cash from Credit Cards at 0% APR (2026) '
+                                   '[00:09:41]',
+                          'url': 'https://www.youtube.com/watch?v=AsYTdszcmx8&t=581s',
+                          'relevance': 'Primary practitioner testimony on liquidator fees of 6% and up and '
+                                       'frozen client funds.'},
+                         {'title': 'James Baker CPA — CPA Explains: 1099K (Everything You Need To Know - '
+                                   '2025 Update) [00:01:47]',
+                          'url': 'https://www.youtube.com/watch?v=w7-zxRnNOSo&t=107s',
+                          'relevance': 'Primary practitioner testimony on reporting sales at or above the '
+                                       '1099-K total.'},
+                         {'title': 'Frequent Miler — 13 ways to increase credit card spend (and get most '
+                                   'of it back) | Ep197 | 4-8-23 [01:05:41]',
+                          'url': 'https://www.youtube.com/watch?v=p6KX6rsg_Rk&t=3941s',
+                          'relevance': 'Primary practitioner testimony on resale-site failure, money order '
+                                       'rules, and Serve/Bluebird shutdowns.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'QTa7eNv00k4',
+                       'title': 'Rapidly Earning Points Buying and Selling Gift Cards with Taylor from '
+                                'QCGC | Ep 162',
+                       'channel': 'Geobreeze Travel',
+                       'author': 'Geobreeze Travel',
+                       'text': "You probably shouldn't go and just buy a bunch of gift cards from a "
+                               'promotion without having a buyer lined up to sell to at an agreed upon '
+                               'rate already.',
+                       'tip': "You probably shouldn't go and just buy a bunch of gift cards from a "
+                              'promotion without having a buyer lined up to sell to at an agreed upon rate '
+                              'already.',
+                       'timestamp': 1716,
+                       'timestamp_seconds': 1716,
+                       'timestamp_label': '[00:28:36]',
+                       'url': 'https://www.youtube.com/watch?v=QTa7eNv00k4&t=1716s',
+                       'markdown': '[00:28:36](https://www.youtube.com/watch?v=QTa7eNv00k4&t=1716s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'QTa7eNv00k4',
+                       'title': 'Rapidly Earning Points Buying and Selling Gift Cards with Taylor from '
+                                'QCGC | Ep 162',
+                       'channel': 'Geobreeze Travel',
+                       'author': 'Geobreeze Travel',
+                       'text': "I'd have seven cards with me and I just cycle through all of them.",
+                       'tip': "I'd have seven cards with me and I just cycle through all of them.",
+                       'timestamp': 2147,
+                       'timestamp_seconds': 2147,
+                       'timestamp_label': '[00:35:47]',
+                       'url': 'https://www.youtube.com/watch?v=QTa7eNv00k4&t=2147s',
+                       'markdown': '[00:35:47](https://www.youtube.com/watch?v=QTa7eNv00k4&t=2147s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'EgyPkxlxqpI',
+                       'title': 'The MANUFACTURED SPENDING Strategy That Changed Everything | Elevate '
+                                'Business Consulting, LLC',
+                       'channel': 'Elevate Business Consulting, LLC',
+                       'author': 'Elevate Business Consulting, LLC',
+                       'text': "You're going to put $90 on your credit card.",
+                       'tip': "You're going to put $90 on your credit card.",
+                       'timestamp': 132,
+                       'timestamp_seconds': 132,
+                       'timestamp_label': '[00:02:12]',
+                       'url': 'https://www.youtube.com/watch?v=EgyPkxlxqpI&t=132s',
+                       'markdown': '[00:02:12](https://www.youtube.com/watch?v=EgyPkxlxqpI&t=132s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '638DPuaWt9s',
+                       'title': 'Earn Credit Card Points by Buying Giftcards (2026) with Taylor from '
+                                'qcgc.io | Ep 280',
+                       'channel': 'Geobreeze Travel',
+                       'author': 'Geobreeze Travel',
+                       'text': 'Yeah, so there is always risk with selling gift cards.',
+                       'tip': 'Yeah, so there is always risk with selling gift cards.',
+                       'timestamp': 1241,
+                       'timestamp_seconds': 1241,
+                       'timestamp_label': '[00:20:41]',
+                       'url': 'https://www.youtube.com/watch?v=638DPuaWt9s&t=1241s',
+                       'markdown': '[00:20:41](https://www.youtube.com/watch?v=638DPuaWt9s&t=1241s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'AsYTdszcmx8',
+                       'title': 'How to Get Cash from Credit Cards at 0% APR (2026)',
+                       'channel': 'Naam Wynn',
+                       'author': 'Naam Wynn',
+                       'text': 'Send $100 first and make sure that it lands because the last thing you '
+                               'want is a few thousand dollars stuck in limbo.',
+                       'tip': 'Send $100 first and make sure that it lands because the last thing you want '
+                              'is a few thousand dollars stuck in limbo.',
+                       'timestamp': 353,
+                       'timestamp_seconds': 353,
+                       'timestamp_label': '[00:05:53]',
+                       'url': 'https://www.youtube.com/watch?v=AsYTdszcmx8&t=353s',
+                       'markdown': '[00:05:53](https://www.youtube.com/watch?v=AsYTdszcmx8&t=353s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'MrvMwsC_ZOg',
+                       'title': 'How I Turned Credit Into $100K Cash (0% Interest Hack)',
+                       'channel': 'Alex Barajas',
+                       'author': 'Alex Barajas',
+                       'text': 'Most liquidation companies are going to charge you anywhere from 5 to 6% '
+                               'from what I have seen in the industry.',
+                       'tip': 'Most liquidation companies are going to charge you anywhere from 5 to 6% '
+                              'from what I have seen in the industry.',
+                       'timestamp': 114,
+                       'timestamp_seconds': 114,
+                       'timestamp_label': '[00:01:54]',
+                       'url': 'https://www.youtube.com/watch?v=MrvMwsC_ZOg&t=114s',
+                       'markdown': '[00:01:54](https://www.youtube.com/watch?v=MrvMwsC_ZOg&t=114s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'w7-zxRnNOSo',
+                       'title': 'CPA Explains: 1099K (Everything You Need To Know - 2025 Update)',
+                       'channel': 'James Baker CPA',
+                       'author': 'James Baker CPA',
+                       'text': "You're going to have to file a tax return and report those sales even if "
+                               "there's no tax to pay.",
+                       'tip': "You're going to have to file a tax return and report those sales even if "
+                              "there's no tax to pay.",
+                       'timestamp': 304,
+                       'timestamp_seconds': 304,
+                       'timestamp_label': '[00:05:04]',
+                       'url': 'https://www.youtube.com/watch?v=w7-zxRnNOSo&t=304s',
+                       'markdown': '[00:05:04](https://www.youtube.com/watch?v=w7-zxRnNOSo&t=304s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Dbhznmaq0Bg',
+                       'title': 'Maximize Your Points: Stacking, Buyers Clubs, Redemption Hacks, and More',
+                       'channel': 'Chris Hutchins',
+                       'author': 'Chris Hutchins',
+                       'text': 'So, I thought, okay, this is not a way to make money.',
+                       'tip': 'So, I thought, okay, this is not a way to make money.',
+                       'timestamp': 3113,
+                       'timestamp_seconds': 3113,
+                       'timestamp_label': '[00:51:53]',
+                       'url': 'https://www.youtube.com/watch?v=Dbhznmaq0Bg&t=3113s',
+                       'markdown': '[00:51:53](https://www.youtube.com/watch?v=Dbhznmaq0Bg&t=3113s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'p6KX6rsg_Rk',
+                       'title': '13 ways to increase credit card spend (and get most of it back) | Ep197 | '
+                                '4-8-23',
+                       'channel': 'Frequent Miler',
+                       'author': 'Frequent Miler',
+                       'text': 'The reason people do it in a complicated way is because the easy ways '
+                               "don't work.",
+                       'tip': "The reason people do it in a complicated way is because the easy ways don't "
+                              'work.',
+                       'timestamp': 4364,
+                       'timestamp_seconds': 4364,
+                       'timestamp_label': '[01:12:44]',
+                       'url': 'https://www.youtube.com/watch?v=p6KX6rsg_Rk&t=4364s',
+                       'markdown': '[01:12:44](https://www.youtube.com/watch?v=p6KX6rsg_Rk&t=4364s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ti02qu7iwX4',
+                       'title': 'How to earn $100s with your credit cards!',
+                       'channel': 'DansDeals',
+                       'author': 'DansDeals',
+                       'text': 'Pays is a brand new checkout merchant competing with PayPal and Venmo.',
+                       'tip': 'Pays is a brand new checkout merchant competing with PayPal and Venmo.',
+                       'timestamp': 13,
+                       'timestamp_seconds': 13,
+                       'timestamp_label': '[00:00:13]',
+                       'url': 'https://www.youtube.com/watch?v=ti02qu7iwX4&t=13s',
+                       'markdown': '[00:00:13](https://www.youtube.com/watch?v=ti02qu7iwX4&t=13s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'MWPOAsKJ1-g',
+                       'title': '13 GENIUS Ways to Hit Your Credit Card Minimum Spend (Without '
+                                'Overspending!)',
+                       'channel': 'airelle',
+                       'author': 'airelle',
+                       'text': 'Now, there is a small fee of 1.75%, but that is absolutely going to be '
+                               'worth it if you have a minimum spend you need to meet.',
+                       'tip': 'Now, there is a small fee of 1.75%, but that is absolutely going to be '
+                              'worth it if you have a minimum spend you need to meet.',
+                       'timestamp': 256,
+                       'timestamp_seconds': 256,
+                       'timestamp_label': '[00:04:16]',
+                       'url': 'https://www.youtube.com/watch?v=MWPOAsKJ1-g&t=256s',
+                       'markdown': '[00:04:16](https://www.youtube.com/watch?v=MWPOAsKJ1-g&t=256s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'nRJlDybpS4s',
+                       'title': 'How To Liquidate Your Credit Cards | Turn Credit Into Cash!',
+                       'channel': 'George Waters',
+                       'author': 'George Waters',
+                       'text': 'Last thing with all of these payment processors, you want to test out a '
+                               'small amount first, like $100 to $500, cuz the last thing you want is your '
+                               'money to get stuck in transit.',
+                       'tip': 'Last thing with all of these payment processors, you want to test out a '
+                              'small amount first, like $100 to $500, cuz the last thing you want is your '
+                              'money to get stuck in transit.',
+                       'timestamp': 134,
+                       'timestamp_seconds': 134,
+                       'timestamp_label': '[00:02:14]',
+                       'url': 'https://www.youtube.com/watch?v=nRJlDybpS4s&t=134s',
+                       'markdown': '[00:02:14](https://www.youtube.com/watch?v=nRJlDybpS4s&t=134s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '8_GgpKDJJTE',
+                       'title': 'How to Turn Credit Into Capital in 2027 (Corporate Arbitrage Blueprint',
+                       'channel': 'WealthRoom AI',
+                       'author': 'WealthRoom AI',
+                       'text': 'Route 0% intro APR capital from a 12 to 18 month window into treasury '
+                               'notes, index positions, or digital media for baseline cash flow, and pay '
+                               'the minimums from the yield.',
+                       'tip': 'Route 0% intro APR capital from a 12 to 18 month window into treasury '
+                              'notes, index positions, or digital media for baseline cash flow, and pay '
+                              'the minimums from the yield.',
+                       'timestamp': 290,
+                       'timestamp_seconds': 290,
+                       'timestamp_label': '[00:04:50]',
+                       'url': 'https://www.youtube.com/watch?v=8_GgpKDJJTE&t=290s',
+                       'markdown': '[00:04:50](https://www.youtube.com/watch?v=8_GgpKDJJTE&t=290s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'a1MwAkYtYBE',
+                       'title': 'How I Use Credit Cards To Make Money With No Money',
+                       'channel': 'Mr. Will Roundtree',
+                       'author': 'Mr. Will Roundtree',
+                       'text': 'Person A, with credit, an entity, and bank compliance in place, can get '
+                               '$50,000 from multiple banks in one week.',
+                       'tip': 'Person A, with credit, an entity, and bank compliance in place, can get '
+                              '$50,000 from multiple banks in one week.',
+                       'timestamp': 208,
+                       'timestamp_seconds': 208,
+                       'timestamp_label': '[00:03:28]',
+                       'url': 'https://www.youtube.com/watch?v=a1MwAkYtYBE&t=208s',
+                       'markdown': '[00:03:28](https://www.youtube.com/watch?v=a1MwAkYtYBE&t=208s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'pjLnjZQ79Ng',
+                       'title': 'Credit Card Arbitrage to Generate Wealth AND Kill It',
+                       'channel': 'Make Manage Grow Money',
+                       'author': 'Make Manage Grow Money',
+                       'text': "If you don't make your money back from that investment you're gonna be "
+                               'screwed.',
+                       'tip': "If you don't make your money back from that investment you're gonna be "
+                              'screwed.',
+                       'timestamp': 229,
+                       'timestamp_seconds': 229,
+                       'timestamp_label': '[00:03:49]',
+                       'url': 'https://www.youtube.com/watch?v=pjLnjZQ79Ng&t=229s',
+                       'markdown': '[00:03:49](https://www.youtube.com/watch?v=pjLnjZQ79Ng&t=229s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '7n9y5L1-mD0',
+                       'title': 'How To CORRECTLY HACK 0% APR Credit Cards (2025)',
+                       'channel': 'Monty The Card Nerd',
+                       'author': 'Monty The Card Nerd',
+                       'text': "Crucially, 0% APR doesn't mean that interest isn't accruing on your "
+                               'balance; rather, the interest is just being deferred until the end of the '
+                               '0% APR period.',
+                       'tip': "Crucially, 0% APR doesn't mean that interest isn't accruing on your "
+                              'balance; rather, the interest is just being deferred until the end of the '
+                              '0% APR period.',
+                       'timestamp': 337,
+                       'timestamp_seconds': 337,
+                       'timestamp_label': '[00:05:37]',
+                       'url': 'https://www.youtube.com/watch?v=7n9y5L1-mD0&t=337s',
+                       'markdown': '[00:05:37](https://www.youtube.com/watch?v=7n9y5L1-mD0&t=337s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'csgx01xGzeM',
+                       'title': 'Credit card arbitrage|Secret Method#entrepreneurs #credit #2023',
+                       'channel': 'KG | The Professional Borrower',
+                       'author': 'KG | The Professional Borrower',
+                       'text': 'This method used to be able to work for the Apple credit card, but '
+                               'everybody started using it and Apple started to get used to it.',
+                       'tip': 'This method used to be able to work for the Apple credit card, but '
+                              'everybody started using it and Apple started to get used to it.',
+                       'timestamp': 166,
+                       'timestamp_seconds': 166,
+                       'timestamp_label': '[00:02:46]',
+                       'url': 'https://www.youtube.com/watch?v=csgx01xGzeM&t=166s',
+                       'markdown': '[00:02:46](https://www.youtube.com/watch?v=csgx01xGzeM&t=166s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'}]}

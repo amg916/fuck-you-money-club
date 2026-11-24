@@ -1,699 +1,798 @@
 from __future__ import annotations
 
-CHAPTER_1 = {
-    "id": "Q1",
-    "chapter_id": "Q1",
-    "chapter_number": 1,
-    "question_number": 1,
-    "slug": "buying-group-commercial-card-float-rebate-arbitrage",
-    "question_prompt": "What exactly is buying group, commercial card-float & rebate arbitrage, how is real operator revenue recognized vs underlying asset/client GMV, and what separates durable small-team moats from fragile beginner hype?",
-    "kicker": "Q1 / THE BIG MONEY PLAYBOOKS",
-    "title": "What Exactly Is Buying Group, Commercial Card-Float & Rebate Arbitrage?",
-    "subtitle": "Pre-Committed Warehouse Fulfillment, Eligible Card Rebates, ASC 606 Boundaries, IRC Records, and Cash-Matched Treasury Operations",
-    "layout_template": "opportunity_overview",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #41 ranks #10 of 43 with a 93/100 Money-to-Manpower Score. "
-        "The business combines three separately measured engines: pre-committed wholesale "
-        "fulfillment, eligible commercial-card and shopping-portal rebates, and bank or "
-        "Treasury income on genuinely available cash. This chapter maps 11 operator plays, "
-        "including a border-routing adjacency that cannot support assumed duty savings "
-        "under suspended de minimis treatment. Formula v2.0 fixes annual owner profit at "
-        "$20,000 Conservative, $143,500 Base, and $360,000 Scaled. Its 35% retained-share "
-        "bridge is a modeling assumption, not an automatic accounting election or an "
-        "observed buying-group spread. Durable operators win through accepted deliveries, "
-        "cleared ACH settlements, documented reward eligibility, and reserves that repay "
-        "every card balance even when counterparties stop paying."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$250,000",
-            "context": "Annual gross scorecard basis; $87,500 retained contribution at 35%.",
-            "note": "8% gross-basis margin; $20,000 owner profit; 22.86% retained margin; 1 FT + 2 C.",
-        },
-        {
-            "label": "Base",
-            "value": "$1,025,000",
-            "context": "Annual gross scorecard basis; $358,750 retained contribution at 35%.",
-            "note": "14.0% gross-basis margin; $143,500 owner profit; 40.0% retained margin; 1 FT + 2 C.",
-        },
-        {
-            "label": "Scaled",
-            "value": "$1,800,000",
-            "context": "Annual gross scorecard basis; $630,000 retained contribution at 35%.",
-            "note": "20% gross-basis margin; $360,000 owner profit; 57.14% retained margin; 2 FT + 3 C.",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Separate the three engines before committing purchase capital",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Buying-group arbitrage begins with a genuine purchase commitment, not a reward "
-                    "screenshot. An operator accepts a specified quantity, merchandise description, "
-                    "delivery address, purchase window, and reimbursement schedule from a counterparty "
-                    "such as BuyForMeRetail, Pointsmaker, or MaxOutDeals. The operator purchases eligible "
-                    "goods, documents ownership and shipment, and delivers to the designated receiving "
-                    "warehouse. A Delaware, New Hampshire, or Oregon destination can change sales-tax "
-                    "collection facts, but the address alone does not establish a resale exemption "
-                    "or eliminate obligations elsewhere. Confirm the seller's sourcing treatment, "
-                    "any applicable resale certificate, possession history, and downstream disposition. "
-                    "For an illustrative $10,000 merchandise order, a $10,050 committed payment "
-                    "creates $50 of merchandise spread. An eligible 2% card rebate adds $200; "
-                    "$80 shipping, $20 insurance, and a $30 expected-loss allowance leave $120 "
-                    "before overhead. A denied rebate turns that same order into an $80 loss. "
-                    "BuyForMeRetail and the other named counterparties are diligence starting points, "
-                    "not assertions of current acceptance or payment terms. The purchase record must "
-                    "identify who bears rejection, transit, and return risk. A profitable order is "
-                    "one that survives those allocations, not merely one that earns points at checkout."
-                ),
-                (
-                    "The second engine purchases eligible rebates without mistaking spending volume "
-                    "for earnings. Rakuten and TopCashback route qualifying purchases through merchant "
-                    "offers; commercial-card rewards and targeted card offers introduce separate "
-                    "eligibility rules. A $5,000 authorized purchase earning 2% card cashback and "
-                    "an actually eligible 3% portal rebate produces $250 before fees, reversals, "
-                    "and acquisition costs. Commercial resale, excluded categories, coupon codes, "
-                    "gift cards, quantity limits, and attribution conflicts can remove the portal "
-                    "component entirely. Do not combine two portals on one order or assume a "
-                    "consumer promotion permits commercial buying. Plastiq and Melio represent a "
-                    "different implementation: paying an authentic business invoice through a "
-                    "supported card-funded rail. At an illustrative 2.9% processing charge and "
-                    "2% reward on a $10,000 invoice, the immediate result is negative $90 "
-                    "before timing benefits. A 4% eligible reward would instead produce $110 "
-                    "before other costs. These are underwriting inputs, not advertised vendor "
-                    "prices. Verify the actual quote, payee category, card network, reward base, "
-                    "and settlement method. Never buy unnecessary inventory merely to activate "
-                    "a rebate; the underlying commercial transaction must already have an "
-                    "economically defensible purpose."
-                ),
-                (
-                    "The third engine earns bank bonuses or Treasury income on cash that remains "
-                    "available after obligations and reserves. It does not transform a credit "
-                    "limit into equity. A $20,000 cash balance earning an illustrative 4.5% "
-                    "annual yield for 30 days produces approximately $73.97 using a simple "
-                    "365-day convention, before taxes and execution differences. A $300 bank "
-                    "bonus requiring $20,000 for 90 days should be compared with approximately "
-                    "$221.92 of alternative interest, leaving $78.08 of incremental value if "
-                    "the promotional account pays no interest and has no fees. Account terms "
-                    "can change both results. TreasuryDirect and a brokerage holding short "
-                    "Treasury bills are implementation choices with different transfer, sale, "
-                    "and maturity mechanics. Keep card repayment cash outside any instrument "
-                    "that cannot produce cleared funds before the due date. Across all three "
-                    "engines, the startup range is $10,000–$55,000, with first transactions "
-                    "modeled at one to three months. Five useful operator archetypes appear "
-                    "below, but they remain implementations of these three engines rather "
-                    "than five independent revenue streams. The durable advantage is disciplined "
-                    "cash conversion, not maximizing nominal credit exposure or treating "
-                    "another party's purchasing volume as earned income."
-                ),
-            ],
-            "table": {
-                "caption": "Five operator archetypes within three separately measured business engines",
-                "headers": [
-                    "Operator archetype and economic engine",
-                    "Named rails and operating mandate",
-                    "Unit economics and earned contribution",
-                    "Durable moat and failure response",
-                ],
-                "rows": [
-                    [
-                        "Pre-committed electronics fulfiller within the wholesale engine",
-                        "BuyForMeRetail or Pointsmaker commitments with verified warehouse acceptance",
-                        "$10,050 reimbursement plus $200 eligible rewards less $10,130 costs",
-                        "Preserve receiving evidence; suspend purchases when accepted invoices age",
-                    ],
-                    [
-                        "Commercial purchase-stack specialist within the rebate engine",
-                        "Rakuten or TopCashback attribution plus independently eligible card offers",
-                        "$5,000 purchase yields $250 only when both rewards survive",
-                        "Archive offer exclusions; price transactions without disputed portal proceeds",
-                    ],
-                    [
-                        "Authentic invoice-payment optimizer within the rebate engine",
-                        "Plastiq or Melio payments to supported business payees",
-                        "$10,000 invoice costs $290 against $200 illustrative cashback",
-                        "Reject negative spreads unless documented timing value exceeds costs",
-                    ],
-                    [
-                        "Cash-matched Treasury allocator within the treasury engine",
-                        "TreasuryDirect or brokerage bills maturing before cash obligations",
-                        "$20,000 for thirty days at 4.5% earns approximately $73.97",
-                        "Match maturity and transfer buffers; retain immediately accessible repayment cash",
-                    ],
-                    [
-                        "Deposit-promotion operator within the treasury engine",
-                        "Chase business-account or other current bank promotion terms",
-                        "$300 bonus less $221.92 displaced interest leaves $78.08",
-                        "Track qualification and clawback dates without multiplying reserved cash",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Buy accepted economics rather than advertised reward percentages",
-                "body": (
-                    "A veteran operator underwrites the weakest enforceable component first, "
-                    "then treats conditional rewards as a separately monitored exposure."
-                ),
-                "items": [
-                    "Save the exact commitment, warehouse identifier, receiving deadline, and reward exclusions before checkout; link all four records to one order identifier.",
-                    "Calculate a zero-portal case for every order and a zero-card-reward case for each issuer; cap purchases at the loss your reserve can absorb.",
-                    "Use verified warehouse receipt rather than carrier delivery alone to start the contractual Net-3 or Net-5 settlement clock.",
-                    "Assign each dollar to one reserve or yield sleeve; a bank-bonus balance cannot simultaneously repay a card and fund a Treasury purchase.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Reconcile the scorecard without relabeling merchandise or borrowed principal",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "The canonical scorecard uses gross wholesale buying-group reimbursements, "
-                    "commercial-card and portal rebates, and treasury yields as its aggregate "
-                    "gross basis. That management denominator is not automatically one revenue "
-                    "caption in published accounts. Under ASC 606, a merchandise principal "
-                    "recognizes the transaction price when control transfers and records "
-                    "associated inventory cost separately; an agent generally recognizes "
-                    "its fee or commission. Principal status follows control and contractual "
-                    "facts, not an operator's preferred margin presentation. Purchase-linked "
-                    "rebates commonly reduce the related purchase cost, inventory basis, "
-                    "or expense, depending on their substance and accounting treatment. "
-                    "Interest is separately classified rather than forced into merchandise "
-                    "revenue. Track each category independently, then reconcile the management "
-                    "scorecard without duplicating receipts. A $10,050 wholesale payment is "
-                    "not $10,050 of profit, and $10,000 charged to a card is a payable, "
-                    "not earned revenue. Likewise, a client's $100,000 invoice paid through "
-                    "an authorized service does not become the service operator's revenue "
-                    "merely because the operator coordinates payment. Retained share is "
-                    "35% in this candidate's model; it describes the modeled contribution "
-                    "remaining after landed merchandise cost, not an ASC 606 rule permitting "
-                    "every operator to report only 35% of collections."
-                ),
-                (
-                    "Formula v2.0 fixes the Conservative case at $250,000 gross basis, "
-                    "$87,500 retained contribution, and $20,000 annual owner net profit. "
-                    "The Base case fixes $1,025,000, $358,750, and $143,500 respectively. "
-                    "The Scaled case fixes $1,800,000, $630,000, and $360,000. These "
-                    "produce gross-basis margins of 8%, 14.0%, and 20%, while retained "
-                    "margins are 22.86%, 40.0%, and 57.14%. The implied landed-cost "
-                    "bridge is $162,500, $666,250, and $1,170,000; remaining deductions "
-                    "after retained contribution are $67,500, $215,250, and $270,000. "
-                    "Those deductions must include every further cost required to reach "
-                    "owner profit, without charging landed costs twice. For a transparent "
-                    "illustrative allocation, assign annual recurring overhead of $18,000, "
-                    "$60,000, and $108,000, consistent with the $1,500–$9,000 monthly "
-                    "range. The residual deductions are then $49,500, $155,250, and "
-                    "$162,000 for separately budgeted variable labor, payment costs, "
-                    "losses, and other nonoverlapping expenses. This allocation reconciles "
-                    "the supplied totals but is not a vendor quote or observed operating "
-                    "history. The chapter preserves the canonical cases while exposing "
-                    "the cost bridge an operator must substantiate before relying on "
-                    "the projected income."
-                ),
-                (
-                    "A 35% retained contribution is especially demanding when most activity "
-                    "consists of reimbursement near merchandise cost. Ordinary 2%–4% rewards "
-                    "do not establish that ratio. On the earlier $10,000 purchase, "
-                    "$10,050 reimbursement plus $200 cashback equals $10,250 of combined "
-                    "management receipts; subtracting merchandise alone leaves $250, "
-                    "approximately 2.44%, before shipping or losses. Reaching the canonical "
-                    "35% therefore requires a materially different substantiated mix, "
-                    "larger contracted spreads, separately earned service economics, or "
-                    "other legitimate contribution already included in the scorecard basis. "
-                    "Do not silently assume these exist. Build a monthly bridge from "
-                    "accepted orders and earned rewards to collected cash, with separate "
-                    "columns for pending portal balances, inventory in transit, disputed "
-                    "receivables, and card liabilities. A spreadsheet or SQLite ledger "
-                    "can carry these classifications without a large software stack. "
-                    "Reconcile any Form 1099-K against actual settlement records under "
-                    "26 U.S.C. § 6050W rather than treating the form as proof of "
-                    "taxable profit. Purchase-price adjustments require consistent basis "
-                    "records; bank interest and qualifying bonuses need their own tax "
-                    "classification. Conservative and Base staffing remains one full-time "
-                    "operator plus two contractors; Scaled uses two full-time operators "
-                    "plus three contractors, without assuming contractors are costless."
-                ),
-            ],
-            "table": {
-                "caption": "Formula v2.0 exact annual bridge with an explicitly illustrative expense allocation",
-                "headers": [
-                    "Scenario and operating team",
-                    "Gross basis and landed-cost bridge",
-                    "Retained contribution and remaining deductions",
-                    "Owner profit and reconciled margins",
-                ],
-                "rows": [
-                    [
-                        "Conservative operation uses one full-time operator plus two contractors",
-                        "$250,000 gross less $162,500 landed costs leaves the prescribed contribution",
-                        "$87,500 retained less $18,000 overhead and $49,500 other deductions",
-                        "$20,000 owner profit; 8% gross margin and 22.86% retained margin",
-                    ],
-                    [
-                        "Base operation uses one full-time operator plus two contractors",
-                        "$1,025,000 gross less $666,250 landed costs leaves the prescribed contribution",
-                        "$358,750 retained less $60,000 overhead and $155,250 other deductions",
-                        "$143,500 owner profit; 14.0% gross margin and 40.0% retained margin",
-                    ],
-                    [
-                        "Scaled operation uses two full-time operators plus three contractors",
-                        "$1,800,000 gross less $1,170,000 landed costs leaves the prescribed contribution",
-                        "$630,000 retained less $108,000 overhead and $162,000 other deductions",
-                        "$360,000 owner profit; 20% gross margin and 57.14% retained margin",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "3. Compare sixteen sub-verticals and map eleven executable or excluded plays",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "The comparison matrix maps eleven plays and then adds five operating "
-                    "variants. Only the two supplied identifiers are treated as canonical "
-                    "identifiers; the other nine names describe this chapter's analytical "
-                    "breakdown. The principal wholesale play, "
-                    "wholesale_buying_group_card_float_cycling, means genuine pre-committed "
-                    "fulfillment financed by authorized commercial purchases. It does not "
-                    "authorize circular transactions, fictitious sales, or repeated paydowns "
-                    "intended to evade issuer limits. Require the counterparty to confirm "
-                    "SKU, quantity, reimbursement, acceptance conditions, and payment timing "
-                    "in writing. A contractually verified Net-3 payment means three days "
-                    "under that contract's specified clock, not three days after checkout. "
-                    "Whether days are business or calendar days materially affects cash "
-                    "availability. Independently verify the designated warehouse and receiving "
-                    "account before shipping expensive electronics. For a $10,000 order "
-                    "with $120 modeled contribution, one unrecovered $1,000 shortage "
-                    "consumes more than eight successful order contributions. That "
-                    "asymmetry explains why serial-number capture, packed-weight evidence, "
-                    "carrier acceptance scans, and written discrepancy procedures matter "
-                    "more than another half-point of theoretical rewards. If payment "
-                    "reliability deteriorates, stop purchasing, repay cards from reserved "
-                    "cash, and recover or resell legitimately owned goods through "
-                    "permitted channels rather than financing the gap with new orders."
-                ),
-                (
-                    "The rebate rows separate portal attribution, issuer cashback, targeted "
-                    "offers, and invoice-payment economics because each can fail independently. "
-                    "A 2% reward on a $10,000 eligible purchase is $200, not a "
-                    "license to assume 2% on every transaction category. Some products "
-                    "cap earnings, restrict redemption, exclude payment services, or "
-                    "apply different rates above spending thresholds. Use 4% only when "
-                    "the current contract supports that rate for the exact purchase "
-                    "and any necessary redemption method. An uncapped offer is "
-                    "uncapped only within its actual terms. Rakuten and TopCashback "
-                    "must be evaluated merchant by merchant; provisional tracking "
-                    "does not establish a collectible receivable at full face value. "
-                    "Use a documented reversal allowance or wait for sufficient "
-                    "evidence of entitlement, according to the accounting policy. "
-                    "Plastiq and Melio require equally specific checks on business "
-                    "purpose, accepted cards, payee restrictions, processing charges, "
-                    "and delivery timing. Their illustrative 2.9% fee in this "
-                    "chapter is a sensitivity input, not a statement of current "
-                    "pricing. The appropriate fallback is often ordinary ACH "
-                    "rather than another payment intermediary. A positive purchase "
-                    "spread should survive the loss of any optional promotion "
-                    "before it receives meaningful exposure."
-                ),
-                (
-                    "The second supplied identifier, "
-                    "section_321_de_minimis_bonded_tariff_arbitrage, is a screened "
-                    "adjacency rather than a fourth core earnings engine. The "
-                    "historical proposal routes goods through Tijuana IMMEX or "
-                    "Canadian bonded facilities and charges brands 35%–50% of "
-                    "verified duty savings plus fulfillment fees. The requested "
-                    "premise of automatic Section 321 exemption is not usable: "
-                    "Executive Order 14324 suspended duty-free de minimis treatment "
-                    "for all countries effective August 29, 2025. Consequently, "
-                    "Vietnam, India, European Union, Bangladesh, or Cambodia origin "
-                    "does not supply the proposed blanket fallback. Nor does "
-                    "foreign warehousing change origin or make artificial shipment "
-                    "fragmentation permissible. Illustratively, a $10,000 customs "
-                    "value at 20% duty creates $2,000 of duty; a 40% "
-                    "savings fee would equal $800 only if an applicable lawful "
-                    "treatment actually removed that duty. With no verified "
-                    "exemption, booked savings and savings fees are zero. First-sale "
-                    "valuation under 19 U.S.C. § 1401a requires qualifying "
-                    "transaction evidence and does not erase tariffs. The fallback "
-                    "is broker-supported ordinary entries, properly administered "
-                    "bonded handling, or documented valuation work, with separately "
-                    "contracted service fees. None of those speculative fees "
-                    "supports this volume's canonical profit cases."
-                ),
-            ],
-            "table": {
-                "caption": "Sixteen sub-vertical comparisons: eleven mapped plays followed by five implementation variants",
-                "headers": [
-                    "Mapped play or operating variant",
-                    "Named platform and qualifying transaction",
-                    "Illustrative fees and unit economics",
-                    "Moat, clawback trigger, and operating fallback",
-                ],
-                "rows": [
-                    [
-                        "Play 1: wholesale_buying_group_card_float_cycling for genuine pre-committed commercial fulfillment",
-                        "BuyForMeRetail or Pointsmaker orders delivered to independently verified receiving accounts",
-                        "$10,050 reimbursement plus $200 rewards less $10,130 costs leaves $120",
-                        "Receiving proof protects collections; delayed ACH triggers purchasing suspension and reserve-funded repayment",
-                    ],
-                    [
-                        "Play 2: independently vetted wholesale counterparty allocation and settlement rotation",
-                        "MaxOutDeals and alternative verified groups evaluated under their actual contracts",
-                        "Two $5,000 orders each earning $60 diversify one $10,000 exposure",
-                        "Separate legal counterparties reduce concentration; correlated warehouse failures still require immediate exposure cuts",
-                    ],
-                    [
-                        "Play 3: Rakuten eligible commercial purchase attribution and collection",
-                        "Rakuten merchant offer expressly allowing the specific purchase and buyer activity",
-                        "$5,000 qualifying spend at 3% creates $150 before reversals",
-                        "Preserve click and order evidence; excluded resale purchases receive zero portal value",
-                    ],
-                    [
-                        "Play 4: TopCashback eligible commercial purchase attribution and collection",
-                        "TopCashback merchant terms checked independently from competing portal offers",
-                        "$4,000 qualifying spend at 2.5% creates $100 before reversals",
-                        "Single-portal attribution protects evidence; tracking disputes trigger conservative receivable treatment",
-                    ],
-                    [
-                        "Play 5: authorized commercial-card cashback spread on genuine purchases",
-                        "Capital One Spark Cash Plus terms checked for current eligibility and limits",
-                        "$10,000 eligible purchases at an illustrative 2% create $200",
-                        "Issuer documentation supports continuity; category exclusions require repricing without cashback",
-                    ],
-                    [
-                        "Play 6: targeted commercial-card offer redemption on planned spending",
-                        "Amex Offers enrollment and exact business-card merchant conditions verified",
-                        "$50 qualifying credit on planned $500 spending saves ten percent",
-                        "Track enrollment and offer caps; returns or wrong merchants can reverse credits",
-                    ],
-                    [
-                        "Play 7: Plastiq authentic invoice payment and fee-spread underwriting",
-                        "Plastiq supported card and payee combination confirmed before authorization",
-                        "$10,000 invoice at 2.9% fee versus 2% reward loses $90",
-                        "Document actual timing benefit; choose ordinary ACH when net economics remain negative",
-                    ],
-                    [
-                        "Play 8: Melio authentic invoice payment and fee-spread underwriting",
-                        "Melio business invoice with verified supplier and selected delivery method",
-                        "$10,000 invoice at 2.9% fee versus eligible 4% earns $110",
-                        "Validate reward eligibility and delivery; unsupported payees move to ordinary ACH",
-                    ],
-                    [
-                        "Play 9: maturity-matched Treasury sweep on genuinely available cash",
-                        "TreasuryDirect or brokerage Treasury bills selected around repayment dates",
-                        "$20,000 at 4.5% for thirty days yields approximately $73.97",
-                        "Maturity matching protects liquidity; transfer delays require an accessible cash buffer",
-                    ],
-                    [
-                        "Play 10: business deposit bonus capture with opportunity-cost accounting",
-                        "Chase business promotion or another documented currently available bank offer",
-                        "$300 bonus less $221.92 displaced interest leaves $78.08 before fees",
-                        "Qualification calendar prevents mistakes; early closure can forfeit or reverse bonuses",
-                    ],
-                    [
-                        "Play 11: section_321_de_minimis_bonded_tariff_arbitrage screened as an excluded core adjacency",
-                        "CBP requirements and Tijuana IMMEX or Canadian bonded facilities assessed separately",
-                        "$10,000 value at 20% duty supports zero assumed exemption savings",
-                        "Suspended treatment defeats blanket savings; use ordinary entries and substantiated service contracts",
-                    ],
-                    [
-                        "Variant 12: Delaware warehouse fulfillment with documented sales-tax sourcing",
-                        "BuyForMeRetail designated Delaware destination verified against current purchase instructions",
-                        "$10,000 goods plus $100 freight requires at least $10,100 recovery",
-                        "Destination facts support sourcing; misdelivery or invalid resale documentation requires correction",
-                    ],
-                    [
-                        "Variant 13: New Hampshire warehouse fulfillment with documented acceptance",
-                        "Pointsmaker designated New Hampshire receiving account confirmed before carrier tender",
-                        "$8,000 goods plus $80 freight and $20 insurance costs $8,100",
-                        "Named receiving account prevents ambiguity; rejected deliveries trigger controlled return handling",
-                    ],
-                    [
-                        "Variant 14: Oregon warehouse fulfillment with insured high-value parcels",
-                        "MaxOutDeals designated Oregon destination checked against the specific commitment",
-                        "$12,000 goods plus $120 freight and $40 insurance costs $12,160",
-                        "Covered-value evidence supports claims; exclusions require lower parcel values or alternate coverage",
-                    ],
-                    [
-                        "Variant 15: failed wholesale commitment recovery through permitted resale",
-                        "eBay business selling account used only for legitimately owned recoverable goods",
-                        "$1,000 resale less $150 assumed fees and $30 shipping returns $820",
-                        "Serial records support ownership; actual category fees and returns determine recovery",
-                    ],
-                    [
-                        "Variant 16: insured business deposit holding instead of maturity exposure",
-                        "FDIC-insured bank deposit ownership category and aggregate balances independently checked",
-                        "$20,000 at 4% for thirty days earns approximately $65.75",
-                        "Accessible balances protect payment dates; rate changes require updated opportunity-cost comparisons",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "4. Build a repayment-first operating moat and test the bad settlement week",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Statement float is a short-term repayment liability with a calendar, "
-                    "not an earnings line. The advertised 55-day operating lever is "
-                    "only a modeled interval; actual purchase timing, closing date, "
-                    "payment terms, grace-period eligibility, and account status determine "
-                    "the available days. Approximately 60 days can occur on suitable "
-                    "products and dates, but never enter that interval as a universal "
-                    "contract term. A purchase immediately before closing can have "
-                    "substantially less time than one immediately afterward. Business "
-                    "credit is generally exempt from much of Regulation Z under "
-                    "12 CFR § 1026.3(a), so do not import consumer grace-period "
-                    "assumptions into a commercial-card model. Consider $20,000 "
-                    "charged on day zero, warehouse acceptance on day seven, "
-                    "contractual settlement expected on day ten, and a verified "
-                    "card due date on day forty. The ledger should stress "
-                    "ACH arriving on day forty-five, not merely day thirteen. "
-                    "The operator needs $20,000 of available repayment cash "
-                    "before day forty even though the order appears profitable. "
-                    "A Treasury bill maturing on day forty-one cannot meet "
-                    "that obligation. Schedule payment with a transfer buffer "
-                    "and verify posted receipt rather than relying on a "
-                    "pending instruction."
-                ),
-                (
-                    "Counterparty concentration, issuer continuity, and parcel disputes form "
-                    "one connected loss system. A delayed warehouse credit can postpone "
-                    "ACH, increase issuer balances, provoke a documentation request, "
-                    "and strand inventory purchases awaiting shipment. Measure exposure "
-                    "as unpaid accepted receivables plus goods in transit plus "
-                    "committed unshipped purchases, not merely the last invoice. "
-                    "Set limits from cash reserves and verified recovery values; "
-                    "a second trade name does not diversify risk when the "
-                    "same legal entity or warehouse controls settlement. Request "
-                    "business identity, bank-account ownership confirmation through "
-                    "an independently trusted channel, and evidence supporting "
-                    "payment history. Keep legitimate purchase invoices available "
-                    "for issuer review, and never disguise merchant categories "
-                    "or fabricate business purpose. For parcels, inspect the "
-                    "actual insurance contract: carrier declared value is not "
-                    "automatically equivalent to broad cargo insurance. Capture "
-                    "serial numbers, packaging, tender weight, acceptance scans, "
-                    "delivery signature, and warehouse discrepancy reports. Delaware "
-                    "6 Del. C. § 2-509 supplies default risk-of-loss rules "
-                    "for relevant sales, but express agreement and shipment "
-                    "structure matter. If a $5,000 claim remains disputed, "
-                    "reserve against that exposure instead of counting its "
-                    "face amount as cash available for card repayment."
-                ),
-                (
-                    "Automation earns its place by preventing duplicate commitments and "
-                    "unfunded obligations, not by accelerating unchecked purchases. "
-                    "A Python standard-library reconciler can ingest merchant "
-                    "CSV exports with csv, use decimal for currency, store "
-                    "order events in sqlite3, and calculate dated obligations "
-                    "with datetime. Give every purchase, shipment, receiving "
-                    "record, counterparty remittance, card charge, and reward "
-                    "adjustment a stable identifier. Matching must handle partial "
-                    "receipts, split payments, refunds, and reward reversals "
-                    "rather than assuming one order equals one settlement. "
-                    "Surface exceptions for human resolution; a missing ACH "
-                    "match must not be repaired by inventing a receipt. "
-                    "Export a daily cash ladder showing unrestricted cash, "
-                    "reserved repayments, inventory exposure, and treasury maturities. "
-                    "The owner controls commitments and liquidity, while contractors "
-                    "can reconcile evidence and pursue documented claims within "
-                    "defined access limits. Before increasing volume, run a "
-                    "combined scenario with a fifteen-day ACH delay, complete "
-                    "portal rejection, and one damaged parcel. Continue only "
-                    "if existing cash pays every due balance and the loss "
-                    "fits the reserve. That discipline turns a high score "
-                    "into a testable operating thesis instead of a promise "
-                    "that larger spending will repair weak unit economics."
-                ),
-            ],
-            "table": {
-                "caption": "Four repayment-first stress tests with explicit cash responses",
-                "headers": [
-                    "Stress event and measurable exposure",
-                    "Evidence and calendar test",
-                    "Illustrative economic or liquidity impact",
-                    "Mandatory operating response and resumption condition",
-                ],
-                "rows": [
-                    [
-                        "Buying-group ACH arrives fifteen days later than expected",
-                        "Compare contractual receipt clock with cleared bank settlement timestamps",
-                        "$20,000 card balance still requires full repayment before its due date",
-                        "Stop commitments; use reserved cash; resume after verified settlement reliability",
-                    ],
-                    [
-                        "Issuer requests purchase documentation or restricts new commercial spending",
-                        "Match business invoices, shipping records, and account terms to charges",
-                        "Loss of $200 rewards can turn a $120 contribution into negative $80",
-                        "Provide truthful evidence; pay obligations; remove restricted rewards from underwriting",
-                    ],
-                    [
-                        "Carrier damage or warehouse shortage creates a disputed shipment claim",
-                        "Preserve serial numbers, packaging evidence, receiving discrepancies, and coverage terms",
-                        "$1,000 unrecovered shortage consumes more than eight $120 order contributions",
-                        "Reserve the loss; pursue documented recovery; reduce uninsured shipment concentration",
-                    ],
-                    [
-                        "Treasury maturity or promotional deposit restriction outlasts card repayment date",
-                        "Compare accessible settlement dates against scheduled card payment posting dates",
-                        "$20,000 inaccessible principal creates a $20,000 repayment funding requirement",
-                        "Use separate liquid reserves; shorten maturities; abandon restrictive bonus economics",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four pre-flight checks before any purchase commitment",
-                "body": (
-                    "Each check must pass on documentary evidence for the specific order, "
-                    "card account, warehouse, and repayment calendar."
-                ),
-                "items": [
-                    "Verify the counterparty legal entity, designated receiving account, accepted SKU quantity, rejection rules, and the contractual Net-3 or Net-5 clock.",
-                    "Confirm current commercial-card eligibility, portal resale treatment, offer caps, processing charges, and a viable zero-optional-reward case.",
-                    "Reconcile the actual card due date against unrestricted cash under delayed ACH; exclude conditional bonuses and disputed claims from repayment resources.",
-                    "Validate sales-tax sourcing, applicable resale documentation, shipment coverage, and a permitted recovery channel with an estimated net resale value.",
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Underwrite the complete order",
-                    "action": "Record the commitment and independently verify the warehouse and counterparty.",
-                    "detail": (
-                        "Calculate reimbursement, eligible rewards, landed costs, expected losses, "
-                        "and the fallback resale recovery before authorizing the purchase."
-                    ),
-                },
-                {
-                    "step": 2,
-                    "title": "Reserve repayment cash first",
-                    "action": "Enter the charge, closing date, due date, and payment buffer into the cash ladder.",
-                    "detail": (
-                        "Stress settlement beyond the card due date; restrict purchase size "
-                        "to obligations supportable by genuinely available reserves."
-                    ),
-                },
-                {
-                    "step": 3,
-                    "title": "Prove shipment and acceptance",
-                    "action": "Link invoices, serial records, carrier evidence, and warehouse acceptance to one identifier.",
-                    "detail": (
-                        "Start the settlement clock only at the contractually defined event; "
-                        "escalate quantity or condition differences before assuming full reimbursement."
-                    ),
-                },
-                {
-                    "step": 4,
-                    "title": "Close the cash and contribution bridge",
-                    "action": "Match cleared ACH, posted card payment, earned rewards, and final costs.",
-                    "detail": (
-                        "Release surplus cash only after obligations and reserves are covered; "
-                        "allocate any sweep by verified maturity, access, and bonus conditions."
-                    ),
-                },
-            ],
-        },
-    ],
-    "pull_quote": "The moat is not how much you can charge, but how reliably every charge becomes accepted goods, cleared cash, and a fully funded repayment.",
-    "diagram_id": "diag-01",
-    "action_checklist": [
-        "Build separate wholesale, rebate, and treasury ledgers, then reconcile them to the canonical 35% retained-share bridge without duplicate receipts.",
-        "Obtain one documented buying-group commitment and verify the legal counterparty, warehouse account, acceptance terms, and settlement clock.",
-        "Price the first order with current card and portal terms, actual shipping coverage, a zero-optional-reward case, and a permitted resale fallback.",
-        "Construct a dated repayment ladder that survives a fifteen-day ACH delay, portal rejection, and one damaged parcel using existing cash.",
-        "Archive applicable resale records, purchase-price adjustments, receiving evidence, and Form 1099-K reconciliations under stable transaction identifiers.",
-        "Exclude assumed Section 321 savings from underwriting and place only genuinely surplus cash into maturity-matched Treasury or deposit opportunities.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "19 U.S.C. § 1321 — Administrative exemptions",
-            "url": "https://www.law.cornell.edu/uscode/text/19/1321",
-            "relevance": (
-                "Establishes the statutory framework for administrative import exemptions; "
-                "the statute alone does not establish currently available duty-free treatment "
-                "or permit artificial fragmentation."
-            ),
-        },
-        {
-            "title": "Executive Order 14324 — Suspending Duty-Free De Minimis Treatment for All Countries",
-            "url": "https://www.whitehouse.gov/presidential-actions/2025/07/suspending-duty-free-de-minimis-treatment-for-all-countries/",
-            "relevance": (
-                "Suspended duty-free de minimis treatment for all countries effective "
-                "August 29, 2025, defeating the proposed blanket non-China-origin exemption fallback."
-            ),
-        },
-        {
-            "title": "19 U.S.C. § 1401a — Value",
-            "url": "https://www.law.cornell.edu/uscode/text/19/1401a",
-            "relevance": (
-                "Governs customs valuation; any first-sale position requires qualifying "
-                "transaction evidence rather than a warehouse address or assumed tariff elimination."
-            ),
-        },
-        {
-            "title": "12 CFR § 1026.3(a) — Business, commercial, agricultural, or organizational credit",
-            "url": "https://www.ecfr.gov/current/title-12/chapter-X/part-1026/section-1026.3",
-            "relevance": (
-                "Generally exempts business-purpose credit from much of Regulation Z; "
-                "commercial repayment timing must therefore be established from actual account terms."
-            ),
-        },
-        {
-            "title": "26 U.S.C. § 6050W — Returns relating to payments made in settlement of payment card and third party network transactions",
-            "url": "https://www.law.cornell.edu/uscode/text/26/6050W",
-            "relevance": (
-                "Provides the payment-settlement reporting framework; operators reconcile "
-                "reported amounts with receipts, adjustments, costs, and their actual role."
-            ),
-        },
-        {
-            "title": "26 CFR § 1.471-3 — Inventories at cost",
-            "url": "https://www.ecfr.gov/current/title-26/section-1.471-3",
-            "relevance": (
-                "Addresses purchased inventory cost, discounts, and transportation charges; "
-                "supports maintaining a defensible merchandise-cost and adjustment ledger."
-            ),
-        },
-        {
-            "title": "26 U.S.C. § 61 — Gross income defined",
-            "url": "https://www.law.cornell.edu/uscode/text/26/61",
-            "relevance": (
-                "Includes interest within gross income and supports separating treasury "
-                "income from borrowed principal and merchandise purchase-price adjustments."
-            ),
-        },
-        {
-            "title": "6 Del. C. § 2-509 — Risk of loss in the absence of breach",
-            "url": "https://delcode.delaware.gov/title6/c002/sc05/index.html",
-            "relevance": (
-                "Supplies relevant default sales risk-of-loss rules; shipment terms, "
-                "warehouse acceptance provisions, and express contractual allocations require review."
-            ),
-        },
-    ],
-}
+CHAPTER_1 = {'id': 'Q1',
+ 'chapter_id': 'Q1',
+ 'chapter_number': 1,
+ 'question_number': 1,
+ 'slug': 'buying-groups-mechanics-platforms-order-survival',
+ 'question_prompt': 'How do buying groups and B2B group-purchasing models work, and how do operators avoid '
+                    'order cancellations and handle resale/sales-tax paperwork?',
+ 'kicker': 'Q1 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Buying Groups: Mechanics, Platforms & Order Survival',
+ 'subtitle': 'BFMR walkthroughs, group-purchasing and multi-tiered B2B pricing, dealer credit limits at '
+             "checkout, avoiding retailer order cancellations, and seller's permits vs. resale "
+             'certificates',
+ 'layout_template': 'opportunity_overview',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Every practitioner agrees on the core trade: buying groups exist because retailers '
+                      'cap units per household, so members buy capped items on their own cards, ship to a '
+                      'group warehouse, get reimbursed by ACH or check, and keep the rewards. Profit on '
+                      'the spread usually runs 2-5 percent and rarely 10, so the real prize is points, '
+                      'minimum spend and status on near-break-even volume. BFMR is the consensus beginner '
+                      'pick for fast, simple payouts. Order survival is its own discipline: $500-$1,000 '
+                      'checkouts, split orders, PayPal to mask billing, jigged addresses, warm-up '
+                      'purchases and multiple household accounts. The split comes on risk tolerance and '
+                      'ethics: Eunice drifts toward gift-card groups with fixed payout dates, Mitch '
+                      "distrusts BFMR's secrecy, and the Frequent Miler hosts argue over concert tickets "
+                      'and scarce items after watching The Plastic Merchant vanish owing members.',
+ 'key_metrics': [{'label': 'Typical buying-group profit margin',
+                  'metric': 'Typical buying-group profit margin',
+                  'value': '2-5% per deal, rarely 10%',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Frequent Miler hosts on the usual spread, with mint coin deals cited as the '
+                             'bigger outlier',
+                  'source': 'Frequent Miler ([nMlQUH3s8qY @ 00:38:29])'},
+                 {'label': 'BFMR first-month earnings',
+                  'metric': 'BFMR first-month earnings',
+                  'value': '$1,800 in July on about $70,000 processed',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Czech It Out's July result after a card decline; close to $3,000 had "
+                             'cancellations gone through',
+                  'source': 'Czech It Out: Money Hacks ([HNO_8rnhPeE @ 00:07:57])'},
+                 {'label': 'Cancellation-safe order size',
+                  'metric': 'Cancellation-safe order size',
+                  'value': '$500 to $1,000 per order',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "John Muscarello's ceiling after a $2,000 Target order was cited as an "
+                             'oversized-order flag',
+                  'source': 'John Muscarello ([ThO9ard-k8E @ 00:03:24])'},
+                 {'label': 'Annual spend-to-points yield',
+                  'metric': 'Annual spend-to-points yield',
+                  'value': 'About $250,000 per year at 4x is roughly 1M points',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Frequent Miler's estimate of what buying-group volume on a 4x card produces "
+                             'in a year',
+                  'source': 'Frequent Miler ([nMlQUH3s8qY @ 00:37:23])'}],
+ 'sections': [{'heading': 'Section 1: The Practitioner Consensus',
+               'paragraphs': ['Buying groups exist to beat per-household caps. Mac on Lets Get To The '
+                              'Points frames it with the Apple Watch: retailers hold a person to about '
+                              'three, so the group recruits members who buy on their own cards, ship to '
+                              'its warehouse, submit tracking and collect reimbursement while keeping '
+                              'every point the card throws off [mEjNm8zKoQs @ 00:05:01]. Pack Your Bag '
+                              'With Points runs the same logic on a $600 item marked down to $400 that '
+                              'resells for $500 to $600 but is capped at one or two per buyer, which is '
+                              'why groups recruit members for free instead of charging them [bUKjFvG2KfM @ '
+                              '00:00:54]. Czech It Out spells out the cash-flow angle that hooks '
+                              'newcomers: BFMR selects the sale item, the member buys and ships it, and an '
+                              'ACH transfer goes out as soon as the warehouse receives the box, so the '
+                              'play runs on card float rather than cash up front [HNO_8rnhPeE @ 00:00:54]. '
+                              'Under the street language sits plain aggregation. Marketing Business '
+                              'Network describes three cafes each needing 1,000 cups turning into one '
+                              '3,000-cup requirement with negotiating weight, and stresses that the '
+                              "product itself has not changed; only the buyer's size has [_lyxCWYwwJA @ "
+                              '00:00:22]. The group is the large buyer; members are its distributed '
+                              'checkout lanes.',
+                              'The consensus on economics is blunt: the spread is thin and the points are '
+                              "the product. Frequent Miler's hosts put typical profit at 2 to 5 percent, "
+                              'rarely 10, with mint coin deals as the bigger outlier, and peg roughly '
+                              '$250,000 a year of spend at 4x as about one million points [nMlQUH3s8qY @ '
+                              '00:38:29]. The same episode notes a $2,500 gift card deal taken at a 1 '
+                              'percent loss that helped clear minimum spend, with $10,000 to $15,000 '
+                              'requirements becoming easy. Pack Your Bag With Points says commissions run '
+                              '$10 to $20 on an $800 iPhone and calls the real benefit points earned on '
+                              'net-even spend [bUKjFvG2KfM @ 00:02:36]. Mac on Lets Get To The Points '
+                              'lists why members bother at all: minimum spend, elite status and the '
+                              '$15,000-spend free-night certificates on Hyatt and Hilton cards, and argues '
+                              'that even taking 3 percent under retail still nets 22 percent against a '
+                              'Chase Sapphire Preferred 100,000-point, $5,000 offer worth at least $1,250 '
+                              '[mEjNm8zKoQs @ 00:37:09]. On where to begin, the room converges on one '
+                              'name: Mac recommends BFMR to beginners, and Eunice tells newcomers on '
+                              'Geobreeze Travel to start there because it auto-credits, often pays the '
+                              'same night and never runs past about a week and a half [zay5oOKCEls @ '
+                              '00:08:43].',
+                              'The workflow is the same across every group. Frequent Miler lays it out as '
+                              'alert by email, text, Telegram or Discord, read the instructions carefully, '
+                              'opt in fast because spots fill, ship or drop-ship, then get paid by ACH, '
+                              'e-check or PayPal anywhere from one day to three weeks, with some groups '
+                              'adding 0.25 to 0.5 percent if the member waits [nMlQUH3s8qY @ 00:42:36]. '
+                              'Serena on Lets Get To The Points gives the identical sequence: sign up, '
+                              'find deals, verify stock and price, reserve, order, enter tracking, get '
+                              'reimbursed [mEjNm8zKoQs @ 00:12:07]. Pack Your Bag With Points adds hard '
+                              'checks: match the exact color, size, SKU and price, and skip the buy if the '
+                              'price moved from $395 to $415 [bUKjFvG2KfM @ 00:04:03]. Two baseline '
+                              'disciplines show up everywhere. First, records: Eunice keeps a spreadsheet '
+                              'of group, merchant, price, expected reimbursement, tracking number and '
+                              'check-in value, and uses it to open price disputes, while Mac warns that '
+                              'payout prices can change and belong in a spreadsheet. Second, spread the '
+                              'exposure: Eunice monitors seven groups, dropped one for non-payment, and '
+                              'treats diversification as risk control even when commissions shrink to a '
+                              'penny [zay5oOKCEls @ 00:13:00]. As Frequent Miler puts it, nobody should '
+                              'expect this to run smooth as butter.'],
+               'table': {'caption': 'Where the practitioners agree: buying-group fundamentals',
+                         'headers': ['Consensus Point',
+                                     'What Practitioners Report',
+                                     'Operator Implication',
+                                     'Expert Source'],
+                         'rows': [['Groups exist to bypass per-household purchase caps',
+                                   'Retailers cap Apple Watches at about three per person, so groups '
+                                   'recruit members to buy more',
+                                   'Every capped hot item is a potential group deal for your card',
+                                   'Lets Get To The Points ([mEjNm8zKoQs @ 00:05:01])'],
+                                  ['Thin spread, fat points on net-even spend',
+                                   'Profit usually runs 2 to 5 percent and rarely reaches 10 percent per '
+                                   'deal',
+                                   'Judge each deal by points and minimum spend, not cash profit',
+                                   'Frequent Miler ([nMlQUH3s8qY @ 00:38:29])'],
+                                  ['BFMR is the default starting platform for beginners',
+                                   'Auto-credit, often paid that night, never beyond about one and a half '
+                                   'weeks',
+                                   'Run first deals through BFMR before chasing slower or riskier groups',
+                                   'Geobreeze Travel ([zay5oOKCEls @ 00:08:43])'],
+                                  ['Start slow with small-ticket first deals before scaling up',
+                                   'Do not make a $1,500 laptop your first purchase; deals span $20 to '
+                                   '$3,000',
+                                   'Prove the full buy, ship and payout cycle on a cheap item first',
+                                   'Pack Your Bag With Points ([bUKjFvG2KfM @ 00:02:36])'],
+                                  ['Reimbursement lands by ACH after warehouse receipt',
+                                   'BFMR sends an ACH transfer back as soon as the warehouse receives the '
+                                   'item',
+                                   'Card float covers the gap, so match volume to payout speed',
+                                   'Czech It Out: Money Hacks ([HNO_8rnhPeE @ 00:00:54])'],
+                                  ['Track every order in one running spreadsheet',
+                                   'Log group, merchant, price, expected reimbursement, tracking number '
+                                   'and check-in value',
+                                   'Use the log to open price disputes when payouts come in short',
+                                   'Geobreeze Travel ([zay5oOKCEls @ 00:08:09])'],
+                                  ['Spread volume across several groups at once',
+                                   'Eunice monitors seven groups and dropped one of them for non-payment',
+                                   'Diversification caps the damage when any single group stops paying',
+                                   'Geobreeze Travel ([zay5oOKCEls @ 00:13:00])']]}},
+              {'heading': 'Section 2: Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ["The cleanest unit economics come from Czech It Out's first month on BFMR. "
+                              'An Apple Pencil paid out $96.50 against $99 retail, capped at three units, '
+                              'for $297 of spend and about $10 profit riding on an Amazon card that pays 5 '
+                              'percent back, 6 percent with delayed shipping and sometimes 7 percent '
+                              '[HNO_8rnhPeE @ 00:02:00]. Scale changes the picture: twelve MacBooks, three '
+                              'per color across four colors, bought at 4 percent below retail against 6 '
+                              'percent back netted about 2 percent, roughly $250. Month one logged '
+                              '$111,000 of orders, about $70,000 of which went through after a card '
+                              'decline; the tracker showed $30,000 paid, $24,800 pending and $14,000 '
+                              'action-needed, with 154 products paid and no weekend payouts. Earnings ran '
+                              '$300 in June and $1,800 in July on that $70,000, and close to $3,000 had '
+                              'the cancellations gone through [HNO_8rnhPeE @ 00:07:57]. Pack Your Bag With '
+                              'Points walks the platform side: subscribe to a deal such as a Lenovo with a '
+                              '$5 commission, confirm stock and ship date at the retailer, ship to the '
+                              'posted address, upload tracking and expect ACH usually the next day, with '
+                              'no buyer number required [aJ7DjHaD-XU @ 00:03:57]. The same channel flags a '
+                              'bad payout: an Apple Watch paying $399 while Amazon sells it for $410 to '
+                              '$415 [aJ7DjHaD-XU @ 00:04:13].',
+                              "Order survival is where the real craft lives, and John Muscarello's "
+                              'diagnosis is that cancellations are mostly fraud flags: new customer, '
+                              'billing mismatch, welcome-offer abuse with catch-all emails that end in '
+                              'bans, sale-limit abuse and oversized orders like a $2,000 Target cart, so '
+                              'orders stay at $500 to $1,000 [ThO9ard-k8E @ 00:03:24]. The fixes are '
+                              'specific: pay through PayPal, Apple Pay or Shop Pay to mask billing, match '
+                              "the card's billing address to the prep center, warm up a new account with "
+                              'about five units under $500 two or three times, and when an order dies, '
+                              'call the store, where about 90 percent say it was suspected fraud. In a '
+                              'second breakdown Muscarello splits into separate checkouts of ten units, '
+                              'runs 10 to 15 back-to-back Walmart orders, keeps Target to two or three '
+                              'back-to-back before spacing out, notes full-price items rarely get flagged '
+                              'while loss-leaders do, and refuses to resubmit failed orders because '
+                              'pending charges take 5 to 7 days to clear [rpJHRiGfebQ @ 00:03:39]. '
+                              'Christopher Grant puts hard ceilings on it: about seven Target orders a '
+                              'day, tested up to ten consecutive, and Ulta at six orders then a 24-hour '
+                              'wait with a quantity limit of ten [GFmuZ9Z3Drg @ 00:01:57].',
+                              'Groups also teach the workarounds that keep warehouse shipments alive. Pack '
+                              'Your Bag With Points notes Walmart and Best Buy block the main warehouse '
+                              'address, so members use backup addresses and vary names, and still logged '
+                              'about 12 cancellations against 10 to 12 successes [aJ7DjHaD-XU @ 00:02:27]. '
+                              'Mac on Lets Get To The Points teaches address jigging: prefix the line with '
+                              'ABC, add punctuation or invent an apartment or suite number, then multiply '
+                              'volume through P2, P3 and P4 household accounts [mEjNm8zKoQs @ 00:22:25]. '
+                              'Eunice on Geobreeze Travel splits three $1,500 laptops into separate orders '
+                              'or spreads them across groups, and runs separate accounts because Target, '
+                              'Costco and Amazon bans cap scale [zay5oOKCEls @ 00:21:51]. Stacking fattens '
+                              'the thin spread. The Lets Get To The Points crew layers Amex and Chase '
+                              "offers with Rakuten and TopCashback, burns Business Platinum's $200 Dell "
+                              'credit every six months alongside $1,000 back on $5,000 of Dell spend, and '
+                              'runs volume on a Business Gold at 4x, timed to Black Friday and Prime Day. '
+                              'Pack Your Bag With Points buys Amazon gift cards on Amex Gold or Chase '
+                              'Freedom Flex at 4 to 5x on groceries plus Kroger fuel points, or at gas '
+                              'stations for 3 to 10x Marriott points plus Speedway points [bUKjFvG2KfM @ '
+                              '00:05:43].'],
+               'table': {'caption': 'Order-survival numbers and tools practitioners run against retailer '
+                                    'fraud filters',
+                         'headers': ['Mechanic',
+                                     'Exact Number or Tool',
+                                     'How Operators Run It',
+                                     'Expert Source'],
+                         'rows': [['Order size ceiling per checkout',
+                                   '$500 to $1,000 per order; a $2,000 Target order triggers flags',
+                                   'Split large buys into multiple checkouts under the ceiling',
+                                   'John Muscarello ([ThO9ard-k8E @ 00:03:24])'],
+                                  ['New retailer account warm-up',
+                                   'About five units under $500, repeated two or three times',
+                                   'Season a new retailer account before pushing group volume',
+                                   'John Muscarello ([ThO9ard-k8E @ 00:07:09])'],
+                                  ['Target daily order cadence',
+                                   'About seven orders a day, tested up to ten consecutive orders',
+                                   'Stay under the pace that got another seller blocked in a month',
+                                   'Christopher Grant ([GFmuZ9Z3Drg @ 00:01:06])'],
+                                  ['Ulta order cadence and limits',
+                                   'Six orders then a 24-hour wait, quantity limit of ten',
+                                   'Pause after six orders; blocks came after 42 orders and $50,000-plus',
+                                   'Christopher Grant ([GFmuZ9Z3Drg @ 00:01:57])'],
+                                  ['OA Buddy Chrome extension',
+                                   '$75 per year or $150 lifetime, covering 190 retail sites',
+                                   "Check a retailer's reseller-friendliness before placing any orders",
+                                   'Christopher Grant ([GFmuZ9Z3Drg @ 00:05:10])'],
+                                  ['Walmart per-order quantity limit',
+                                   'Limit of 12 per order, but multiple orders are allowed',
+                                   'Run back-to-back orders instead of one oversized cart',
+                                   'John Muscarello ([ThO9ard-k8E @ 00:10:13])'],
+                                  ['BFMR payout timing after receipt',
+                                   'ACH usually arrives the next day after warehouse receipt',
+                                   'Recycle reimbursed cash into the next deal within the cycle',
+                                   'Pack Your Bag With Points ([aJ7DjHaD-XU @ 00:03:57])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Small moves that keep group orders from dying',
+                           'body': 'Four habits practitioners use to lock deals, dodge fraud filters and '
+                                   'protect shipments.',
+                           'items': ['Reserve before you research: commit to the deal first, because '
+                                     'reservations hold only a 12 to 24 hour window [Lets Get To The '
+                                     'Points — mEjNm8zKoQs @ 00:35:32]',
+                                     'Check out through PayPal, Apple Pay or Shop Pay to mask billing, and '
+                                     "set the card's billing address to the prep center [John Muscarello — "
+                                     'ThO9ard-k8E @ 00:04:04]',
+                                     'For in-store pickup, load the cart in-aisle and pay with a card not '
+                                     'linked to the store account, since Target tracks it [John Muscarello '
+                                     '— rpJHRiGfebQ @ 00:12:36]',
+                                     "Use Max Out Deals' Discord for the timeliest alerts, but ignore DMs "
+                                     "from 'admins' and ship only to posted addresses [Geobreeze Travel — "
+                                     'zay5oOKCEls @ 00:20:49]']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Pick the platform and set hard limits',
+                              'action': 'Open a BFMR account first, set a personal loss threshold and cap '
+                                        'float at your bank balance.',
+                              'detail': 'Eunice sets a loss threshold anywhere from $100 to $5,000 and '
+                                        'starts beginners on BFMR; host Julie warns against floating more '
+                                        'than your bank balance, recalling an attendee who said they lost '
+                                        '$60,000 [Geobreeze Travel — zay5oOKCEls @ 00:07:56].'},
+                             {'step': 2,
+                              'title': 'Reserve, then verify at the retailer',
+                              'action': 'Reserve the deal, then confirm stock, ship date, color, SKU and '
+                                        'price before buying.',
+                              'detail': 'Pack Your Bag With Points checks stock and ship date at the '
+                                        'retailer first, about 11 days on a Lenovo deal carrying a $5 '
+                                        'commission, before buying [Pack Your Bag With Points — '
+                                        'aJ7DjHaD-XU @ 00:00:39].'},
+                             {'step': 3,
+                              'title': 'Place orders built to survive',
+                              'action': 'Split into $500 to $1,000 checkouts, pay through PayPal, and '
+                                        'rotate jigged addresses and household accounts.',
+                              'detail': 'Muscarello splits into separate checkouts of ten units each, '
+                                        'keeps Target to two or three back-to-back orders, and never '
+                                        'resubmits a failed order while pending charges clear over 5 to 7 '
+                                        'days [John Muscarello — rpJHRiGfebQ @ 00:02:05].'},
+                             {'step': 4,
+                              'title': 'Ship, track and reconcile every payout',
+                              'action': 'Drop-ship to the posted warehouse, upload tracking, log each line '
+                                        'in a spreadsheet and dispute short payouts.',
+                              'detail': 'Check-in takes 1 to 5 days and payment by check or direct deposit '
+                                        'takes 1 to 7 days after the tracking number is logged in the '
+                                        "group's portal [Pack Your Bag With Points — bUKjFvG2KfM @ "
+                                        '00:04:50].'}]},
+              {'heading': 'Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The first split is which group deserves your capital. Mac on Lets Get To '
+                              'The Points tells beginners to start with Buy For Me Retail [mEjNm8zKoQs @ '
+                              '00:09:05], and Eunice on Geobreeze Travel gives the same advice because '
+                              'BFMR auto-credits, often pays that night, and never runs past about 1.5 '
+                              'weeks [zay5oOKCEls @ 00:08:43]. Pack Your Bag With Points ranks BFMR only '
+                              'second: fewer deals than NYS, but the simplest and fastest-paying, a place '
+                              'to "walk before you run" [aJ7DjHaD-XU @ 00:00:01]. Mitch Shannon breaks '
+                              'from the pack, distrusting BFMR\'s "secrecy" and routing volume to '
+                              'buyinggroup.com, run by Mark out of Portland and active on Discord '
+                              '[mEjNm8zKoQs @ 00:27:32]. Points Maker splits the room the same way. Miguel '
+                              'quit Points Maker after it lost a set of AirPods that Amazon ended up '
+                              'refunding [mEjNm8zKoQs @ 00:20:05], while Eunice still monitors it and Pack '
+                              "Your Bag With Points lists it as the newest group in the channel's stack "
+                              '[bUKjFvG2KfM @ 00:02:01]. The operating difference is diversification: '
+                              'Eunice spreads risk across BFMR, Buying Group, Max Out Deals, Points Maker, '
+                              'Closeout, Card Center, Aligned Incentives and QGC, accepting commissions as '
+                              'thin as 1 cent, rather than trusting one platform [zay5oOKCEls @ 00:13:48].',
+                              'The second fault line is what you are actually farming. Eunice is migrating '
+                              'away from merchandise groups, with their lead times, payment waves running '
+                              'two to three weeks behind, and theft or damage exposure, toward gift card '
+                              'groups that publish exact payouts at 10 or 14 days and pay incentives for '
+                              'accepting the later date [zay5oOKCEls @ 00:06:09]. Frequent Miler treats '
+                              'even a losing gift card deal as a tool: a $2,500 gift card buy at a 1% loss '
+                              'helped clear minimum spend and makes $10-15k requirements easy [nMlQUH3s8qY '
+                              '@ 00:35:11]. Pack Your Bag With Points pushes back on gift-card-heavy '
+                              'volume at one retailer, warning that buying only gift cards on Amazon can '
+                              'get accounts shut down, so the channel spreads activity across multiple '
+                              'Amazon accounts [bUKjFvG2KfM @ 00:03:28]. On return, Frequent Miler pegs '
+                              'typical profit at 2-5%, rarely 10%, with mint coin deals bigger '
+                              '[nMlQUH3s8qY @ 00:38:29], while Pack Your Bag With Points says $10-20 '
+                              'commissions on an $800 iPhone are secondary and the real prize is points on '
+                              'net-even spend [bUKjFvG2KfM @ 00:02:36]. Lets Get To The Points goes '
+                              'further, willing to take 3% under retail because a Chase Sapphire Preferred '
+                              '100k bonus on $5k spend, worth at least $1,250 through Chase travel, still '
+                              'nets about 22% [mEjNm8zKoQs @ 00:37:24].',
+                              'Cancellation avoidance splits into competing playbooks. John Muscarello '
+                              'keeps most orders around five hundred dollars, and on Walmart fires 10-15 '
+                              'back-to-back orders while holding Target to two or three back-to-back '
+                              'before spacing the rest out [rpJHRiGfebQ @ 00:03:00]. Christopher Grant '
+                              'reads Target the opposite way, saying it is actually pretty hard to get '
+                              'banned there, with about 7 orders a day tested up to 10 consecutive, and '
+                              'hands the reseller-friendliness call to the OA Buddy extension instead of '
+                              "gut feel [GFmuZ9Z3Drg @ 00:01:06]. Grant's own data cuts both ways: one "
+                              'seller was blocked after roughly 10 orders a day, five days a week, for a '
+                              'month [GFmuZ9Z3Drg @ 00:01:22]. Address tactics diverge as well: Muscarello '
+                              'hides the billing mismatch behind PayPal and uses incognito windows for '
+                              'codes [rpJHRiGfebQ @ 00:05:13], while Mitch Shannon jigs the shipping line '
+                              'with an "ABC" prefix, punctuation, or a fake suite number, and multiplies '
+                              'volume through P2, P3 and P4 accounts [mEjNm8zKoQs @ 00:22:25]. The ethics '
+                              "split too. Frequent Miler's Greg is uneasy about concert tickets and scarce "
+                              'items but fine with discounted gift cards and export iPhones, and applies a '
+                              'would-I-tell-my-wife test, while Nick avoids toys yet defends the rest on '
+                              "supply and demand and Ticketmaster's dynamic pricing [nMlQUH3s8qY @ "
+                              '01:01:47].'],
+               'table': {'caption': 'Competing buying-group playbooks, side by side',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Starter group choice for a first deal',
+                                   'Start on BFMR for auto-credit and payouts that night or next day',
+                                   'Mitch distrusts BFMR secrecy and routes volume to buyinggroup.com '
+                                   'instead',
+                                   'Geobreeze Travel ([zay5oOKCEls @ 00:08:43]); Lets Get To The Points '
+                                   '([mEjNm8zKoQs @ 00:27:32])'],
+                                  ['Merchandise groups versus gift card groups',
+                                   'Merchandise brings lead times, payment waves weeks behind, and theft '
+                                   'risk',
+                                   'Gift card groups publish exact 10 or 14 day payouts with later-payout '
+                                   'incentives',
+                                   'Geobreeze Travel ([zay5oOKCEls @ 00:06:09]); Geobreeze Travel '
+                                   '([zay5oOKCEls @ 00:07:05])'],
+                                  ['Cash profit target versus points target',
+                                   'Frequent Miler expects 2-5% profit, rarely 10%, bigger on mint coins',
+                                   'Take 3% under retail when a 100k Sapphire Preferred bonus nets about '
+                                   '22%',
+                                   'Frequent Miler ([nMlQUH3s8qY @ 00:38:29]); Lets Get To The Points '
+                                   '([mEjNm8zKoQs @ 00:37:09])'],
+                                  ['Target order cadence and ban exposure',
+                                   'Muscarello runs two or three Target orders back-to-back, then spaces '
+                                   'them out',
+                                   'Grant calls Target pretty hard to get banned at about 7 orders daily',
+                                   'John Muscarello ([rpJHRiGfebQ @ 00:03:39]); Christopher Grant '
+                                   '([GFmuZ9Z3Drg @ 00:01:22])'],
+                                  ['Payout speed versus payout premium on waiting',
+                                   'BFMR pays by ACH, usually the next day after the warehouse receives it',
+                                   'Some groups add 0.25-0.5% if you accept a slower payout date',
+                                   'Pack Your Bag With Points ([aJ7DjHaD-XU @ 00:03:57]); Frequent Miler '
+                                   '([nMlQUH3s8qY @ 00:42:36])'],
+                                  ['Ethics of scarce items and loss leaders',
+                                   'Greg resists concert tickets and scarce items but accepts gift cards '
+                                   'and export iPhones',
+                                   'Nick defends resale on supply and demand and Ticketmaster dynamic '
+                                   'pricing',
+                                   'Frequent Miler ([nMlQUH3s8qY @ 00:59:06]); Frequent Miler '
+                                   '([nMlQUH3s8qY @ 01:01:47])'],
+                                  ['Credit-limit enforcement on a B2B dealer portal',
+                                   'Block the order so checkout stays disabled until the order fits the '
+                                   'limit',
+                                   'Send it for credit review so a permitted user releases the hold',
+                                   'SKUio ([q4miWZl-6Jc @ 00:00:19]); SKUio ([q4miWZl-6Jc @ 00:01:28])']]}},
+              {'heading': 'Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The worst losses come from the group itself. On Frequent Miler, The Plastic '
+                              'Merchant simply vanished, leaving one member owed more than $100k '
+                              '[nMlQUH3s8qY @ 00:48:55]. Nick had about $20k outstanding, cut back, and '
+                              'still watched checks bounce roughly a month later [nMlQUH3s8qY @ 00:50:21]. '
+                              'PFS concert tickets blew up differently: a $25 commission per ticket, 8 '
+                              'tickets per show and no opt-in caps, then demand tanked, the 7-day payout '
+                              'was missed, and members were offered cost only. In the hosts\' words, "The '
+                              'value went through the floor," and "It became a big mess" [nMlQUH3s8qY @ '
+                              '00:53:48]. Eunice dropped one group outright for non-payment and now '
+                              'spreads exposure across several platforms [zay5oOKCEls @ 00:13:00]. '
+                              'Geobreeze host Julie recalls a conference attendee who said "I lost '
+                              '$60,000," which is why Julie\'s rule is never to float more than your bank '
+                              'balance, using $2,000 as the example [zay5oOKCEls @ 00:18:11]. Discord adds '
+                              'a social-engineering layer: impersonators posing as admins redirected about '
+                              '$20k of goods, so Eunice ignores DMs and ships only to posted addresses '
+                              '[zay5oOKCEls @ 00:18:25]. Lets Get To The Points sets the same ceiling, '
+                              'telling members to spend only amounts they can manage and still sleep good '
+                              'at night [mEjNm8zKoQs @ 00:31:37].',
+                              'Even honest groups bleed money at the warehouse and in the payout sheet. '
+                              'Lets Get To The Points reports warehouse theft that delayed payouts by '
+                              'about two months [mEjNm8zKoQs @ 00:31:19], and warns that the wrong color '
+                              'or model means no reimbursement at all [mEjNm8zKoQs @ 00:32:53]. Payout '
+                              'prices can also move after you buy, which is why the hosts keep a '
+                              'spreadsheet [mEjNm8zKoQs @ 00:33:22]. Frequent Miler flags the "we didn\'t '
+                              'get it" or empty-box dispute and suggests insurance, and Nick admits being '
+                              'nervous shipping $2-5k of mint gold coins [nMlQUH3s8qY @ 00:47:35]. Pack '
+                              'Your Bag With Points draws hard lines: if the price rose from $395 to $415, '
+                              'do not buy; verify color, size, SKU and price; and skip items out of stock '
+                              'for a month or two because they tie up money [bUKjFvG2KfM @ 00:06:36]. Even '
+                              'clean check-ins take 1-5 days, with payment by check or direct deposit '
+                              "another 1-7 days [bUKjFvG2KfM @ 00:04:50]. Eunice's countermeasure is a "
+                              'spreadsheet tracking group, merchant, price, expected reimbursement, '
+                              'tracking number and check-in value, which becomes the evidence for price '
+                              'disputes, plus a personal loss threshold set somewhere between $100 and '
+                              '$5,000 before the first order [zay5oOKCEls @ 00:08:09].',
+                              'Retailers are the other failure surface. Czech It Out: Money Hacks placed '
+                              'about $111,000 of orders in month one, but only about $70K went through '
+                              'after a card decline, leaving $14K stuck in action-needed; July earned '
+                              '$1,800 on $70K when it would have been close to 3,000 without cancellations '
+                              '[HNO_8rnhPeE @ 00:07:57]. Pack Your Bag With Points logged about 12 '
+                              'cancellations against 10-12 successes because Walmart and Best Buy block '
+                              "the group's main address, so the channel rotates backup addresses and "
+                              'varies names [aJ7DjHaD-XU @ 00:02:27]. Christopher Grant reports Ulta '
+                              'blocking a buyer after 42 orders and over $50K in a month [GFmuZ9Z3Drg @ '
+                              "00:01:57]. Ulta's own throttle is 6 orders, then a 24-hour wait, with a "
+                              "quantity limit of 10. John Muscarello's damage-control rules are blunt: do "
+                              'not resubmit a failed order because pending charges take 5-7 days to clear, '
+                              'never return unsold items because that is a red flag, and instead "Take the '
+                              'loss, liquidate it and move on" [rpJHRiGfebQ @ 00:11:44]. For in-store '
+                              'pickup, Muscarello loads the cart in the aisle and pays with a card not '
+                              'linked to the store account, because Target tracks it [rpJHRiGfebQ @ '
+                              '00:12:36].'],
+               'table': {'caption': 'Firsthand losses and the economics check each one forces',
+                         'headers': ['Failure Mode', 'What Happened', 'Economics Check', 'Expert Source'],
+                         'rows': [['Group vanishes with member money still outstanding',
+                                   "The Plastic Merchant vanished, one member owed $100k+, and Nick's "
+                                   'checks bounced',
+                                   'Nick cut back with about $20k outstanding and still took bounced '
+                                   'checks',
+                                   'Frequent Miler ([nMlQUH3s8qY @ 00:48:55])'],
+                                  ['Commission deal reverses on collapsing resale demand',
+                                   'PFS tickets paid $25 each, 8 per show, with no opt-in caps',
+                                   'Demand tanked, the 7-day payout was missed, members were offered cost '
+                                   'only',
+                                   'Frequent Miler ([nMlQUH3s8qY @ 00:53:48])'],
+                                  ['Payout sits below what the retailer actually charges',
+                                   'Apple Watch payout was $399 versus $410-415 at Amazon checkout',
+                                   'Compare payout with live retail before ordering, or the spread turns '
+                                   'negative',
+                                   'Pack Your Bag With Points ([aJ7DjHaD-XU @ 00:04:13])'],
+                                  ['Merchant and cashback accounts shut down mid-strategy',
+                                   "Dell banned about 20 of Mitch's emails and Rakuten accounts got closed",
+                                   'Dell credits and Rakuten cashback stacking layers disappear with each '
+                                   'closed account',
+                                   'Lets Get To The Points ([mEjNm8zKoQs @ 00:42:38]); Lets Get To The '
+                                   'Points ([mEjNm8zKoQs @ 00:30:28])'],
+                                  ['Pricing rules that silently stack below cost',
+                                   'A 13% uplift plus a 20% coupon means selling 7% under cost',
+                                   'Set priority and combinability toggles so promotions cannot stack '
+                                   'blindly together',
+                                   'ClarityVenturesVideo ([7kHlVyx4a9E @ 00:25:43])'],
+                                  ['Missing resale certificates on file with each vendor',
+                                   'Printful and Printify add sales tax of 5% or more without certificates',
+                                   'Vendors without a certificate owe the tax on audit, so they charge it',
+                                   'Hands Off Sales Tax (HOST) ([w-siA5UEWLY @ 00:03:02]); StartUp101 '
+                                   '([2N5t8bm1dpA @ 00:04:21])'],
+                                  ['Group fees and minimums hiding inside the offer',
+                                   'Transport, group fees, minimum commitments and membership fees may all '
+                                   'apply',
+                                   'Compare the full offer rather than only the headline unit price',
+                                   'Marketing Business Network ([_lyxCWYwwJA @ 00:01:21]); Marketing '
+                                   'Business Network ([_lyxCWYwwJA @ 00:01:36])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Clear these four checks before every reserve',
+                           'body': 'Each gate comes from a loss a practitioner took or watched happen. If '
+                                   'any one fails, skip the deal.',
+                           'items': ['Float capped at cash on hand: never float more than your bank '
+                                     'balance; Julie recalls an attendee who said "I lost $60,000" '
+                                     '[Geobreeze Travel — zay5oOKCEls @ 00:18:11].',
+                                     'Ship-to address verified: use only addresses posted by the group and '
+                                     'ignore Discord DMs from "admins"; impersonators redirected about '
+                                     '$20k of goods [Geobreeze Travel — zay5oOKCEls @ 00:18:25].',
+                                     'Exact SKU match: wrong color or model means no reimbursement, and '
+                                     'payout prices can change, so log every order in a spreadsheet [Lets '
+                                     'Get To The Points — mEjNm8zKoQs @ 00:32:53].',
+                                     'No resubmits, no returns: do not resubmit failed orders while '
+                                     'pending charges take 5-7 days, and do not return unsold items '
+                                     'because that is a red flag [John Muscarello — rpJHRiGfebQ @ '
+                                     '00:11:25].']}}],
+ 'pull_quote': '"Don\'t expect this to be smooth as butter, like just a simple click, buy, done with it." '
+               '— Frequent Miler (nMlQUH3s8qY @ 00:45:29).',
+ 'diagram_id': 'diag-01',
+ 'action_checklist': ['Open with BFMR and a cheap first deal, such as a $4.99 Woot phone case, before '
+                      'touching $10k Costco gold runs [Geobreeze Travel — zay5oOKCEls @ 00:11:43].',
+                      'Check stock and ship date at the retailer before subscribing to a deal, then ship '
+                      'to the group address and upload tracking [Pack Your Bag With Points — aJ7DjHaD-XU @ '
+                      '00:01:27].',
+                      'Reserve the spot first and research inside the 12-24 hour window, since spots fill '
+                      'fast [Lets Get To The Points — mEjNm8zKoQs @ 00:35:32].',
+                      'Split checkouts at about 10 units each and keep most orders around $500 to stay '
+                      'under fraud flags [John Muscarello — rpJHRiGfebQ @ 00:02:05].',
+                      "Run the OA Buddy extension ($75/year or $150 lifetime) to check a site's "
+                      'reseller-friendliness across 190 sites before ordering [Christopher Grant — '
+                      'GFmuZ9Z3Drg @ 00:00:19].',
+                      'Upload resale certificates under Billing, Tax information, Resale certificates and '
+                      'allow a few business days for review [Hands Off Sales Tax (HOST) — w-siA5UEWLY @ '
+                      '00:02:28].'],
+ 'statutory_citations': [{'title': 'Frequent Miler — Buying groups: Big risks / big rewards | Ep223 | '
+                                   '10-7-23 [00:48:55]',
+                          'url': 'https://www.youtube.com/watch?v=nMlQUH3s8qY&t=2935s',
+                          'relevance': 'Primary practitioner testimony on The Plastic Merchant collapse, '
+                                       'bounced checks, and the PFS concert ticket payout failure.'},
+                         {'title': 'Geobreeze Travel — Buying Groups 101 with Eunice from @ciao.eunice | '
+                                   'Ep 228 [00:18:25]',
+                          'url': 'https://www.youtube.com/watch?v=zay5oOKCEls&t=1105s',
+                          'relevance': 'Primary practitioner testimony on Discord admin impersonation, '
+                                       'float limits, and multi-group risk spreading.'},
+                         {'title': 'John Muscarello — How I Avoid Online Arbitrage Order Cancellations for '
+                                   'Amazon FBA [00:11:44]',
+                          'url': 'https://www.youtube.com/watch?v=rpJHRiGfebQ&t=704s',
+                          'relevance': 'Primary practitioner testimony on fraud-flag cancellations, order '
+                                       'splitting, and liquidating instead of returning.'},
+                         {'title': 'Lets Get To The Points — 98. Unlock MASSIVE Rewards with Buying '
+                                   'Groups! [00:31:19]',
+                          'url': 'https://www.youtube.com/watch?v=mEjNm8zKoQs&t=1879s',
+                          'relevance': 'Primary practitioner testimony on warehouse theft, payout delays, '
+                                       'reimbursement denials, and account bans.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'HNO_8rnhPeE',
+                       'title': 'How I Made $X,XXX in My First Month with BuyForMeRetail (BFMR Review) | '
+                                'Online Side Hustle',
+                       'channel': 'Czech It Out: Money Hacks',
+                       'author': 'Czech It Out: Money Hacks',
+                       'text': 'As soon as they receive it, they will send you AC transfer back to your '
+                               'bank account.',
+                       'tip': 'As soon as they receive it, they will send you AC transfer back to your '
+                              'bank account.',
+                       'timestamp': 54,
+                       'timestamp_seconds': 54,
+                       'timestamp_label': '[00:00:54]',
+                       'url': 'https://www.youtube.com/watch?v=HNO_8rnhPeE&t=54s',
+                       'markdown': '[00:00:54](https://www.youtube.com/watch?v=HNO_8rnhPeE&t=54s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '_lyxCWYwwJA',
+                       'title': 'What is a buying group?',
+                       'channel': 'Marketing Business Network',
+                       'author': 'Marketing Business Network',
+                       'text': 'Compare the full offer, including transport and group fees.',
+                       'tip': 'Compare the full offer, including transport and group fees.',
+                       'timestamp': 81,
+                       'timestamp_seconds': 81,
+                       'timestamp_label': '[00:01:21]',
+                       'url': 'https://www.youtube.com/watch?v=_lyxCWYwwJA&t=81s',
+                       'markdown': '[00:01:21](https://www.youtube.com/watch?v=_lyxCWYwwJA&t=81s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'lPhNLTTiENE',
+                       'title': 'Buying Groups Webinar - Increased Sales with Shopping Lists & Easier '
+                                'Re-ordering',
+                       'channel': 'ClarityVenturesVideo',
+                       'author': 'ClarityVenturesVideo',
+                       'text': 'A discount is useless if access is inconvenient, so the workflow must '
+                               'match or beat the alternatives.',
+                       'tip': 'A discount is useless if access is inconvenient, so the workflow must match '
+                              'or beat the alternatives.',
+                       'timestamp': 22,
+                       'timestamp_seconds': 22,
+                       'timestamp_label': '[00:00:22]',
+                       'url': 'https://www.youtube.com/watch?v=lPhNLTTiENE&t=22s',
+                       'markdown': '[00:00:22](https://www.youtube.com/watch?v=lPhNLTTiENE&t=22s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'qcQs8Xq3hPg',
+                       'title': 'Buying Groups Webinar - What is a Buying Group?',
+                       'channel': 'ClarityVenturesVideo',
+                       'author': 'ClarityVenturesVideo',
+                       'text': 'Org-managed members can carry a $500 per month on-account cap, with '
+                               'approval required above it.',
+                       'tip': 'Org-managed members can carry a $500 per month on-account cap, with '
+                              'approval required above it.',
+                       'timestamp': 319,
+                       'timestamp_seconds': 319,
+                       'timestamp_label': '[00:05:19]',
+                       'url': 'https://www.youtube.com/watch?v=qcQs8Xq3hPg&t=319s',
+                       'markdown': '[00:05:19](https://www.youtube.com/watch?v=qcQs8Xq3hPg&t=319s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '7kHlVyx4a9E',
+                       'title': 'Buying Groups Webinar - Multi Tiered & Customer-Specific Pricing',
+                       'channel': 'ClarityVenturesVideo',
+                       'author': 'ClarityVenturesVideo',
+                       'text': 'A 13% uplift plus a 20% coupon means buying 7% under cost, so use the '
+                               'priority and combinability toggles.',
+                       'tip': 'A 13% uplift plus a 20% coupon means buying 7% under cost, so use the '
+                              'priority and combinability toggles.',
+                       'timestamp': 1543,
+                       'timestamp_seconds': 1543,
+                       'timestamp_label': '[00:25:43]',
+                       'url': 'https://www.youtube.com/watch?v=7kHlVyx4a9E&t=1543s',
+                       'markdown': '[00:25:43](https://www.youtube.com/watch?v=7kHlVyx4a9E&t=1543s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'aJ7DjHaD-XU',
+                       'title': 'Buy For Me Retail Tutorial',
+                       'channel': 'Pack Your Bag With Points',
+                       'author': 'Pack Your Bag With Points',
+                       'text': 'Walmart and Best Buy block the main address, so use backup addresses and '
+                               'vary the names.',
+                       'tip': 'Walmart and Best Buy block the main address, so use backup addresses and '
+                              'vary the names.',
+                       'timestamp': 147,
+                       'timestamp_seconds': 147,
+                       'timestamp_label': '[00:02:27]',
+                       'url': 'https://www.youtube.com/watch?v=aJ7DjHaD-XU&t=147s',
+                       'markdown': '[00:02:27](https://www.youtube.com/watch?v=aJ7DjHaD-XU&t=147s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ThO9ard-k8E',
+                       'title': 'How to Avoid Order Cancellations When Doing Online Arbitrage - Amazon FBA '
+                                'Pro Tips',
+                       'channel': 'John Muscarello',
+                       'author': 'John Muscarello',
+                       'text': 'Keep orders between $500 and $1,000 to avoid oversized-order '
+                               'cancellations.',
+                       'tip': 'Keep orders between $500 and $1,000 to avoid oversized-order cancellations.',
+                       'timestamp': 204,
+                       'timestamp_seconds': 204,
+                       'timestamp_label': '[00:03:24]',
+                       'url': 'https://www.youtube.com/watch?v=ThO9ard-k8E&t=204s',
+                       'markdown': '[00:03:24](https://www.youtube.com/watch?v=ThO9ard-k8E&t=204s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'GFmuZ9Z3Drg',
+                       'title': 'Online Arbitrage Orders Keep Getting Canceled? 👎 [Here is a Solution] | '
+                                'OA Buddy',
+                       'channel': 'Christopher Grant',
+                       'author': 'Christopher Grant',
+                       'text': 'So, Target is actually pretty hard to get banned.',
+                       'tip': 'So, Target is actually pretty hard to get banned.',
+                       'timestamp': 82,
+                       'timestamp_seconds': 82,
+                       'timestamp_label': '[00:01:22]',
+                       'url': 'https://www.youtube.com/watch?v=GFmuZ9Z3Drg&t=82s',
+                       'markdown': '[00:01:22](https://www.youtube.com/watch?v=GFmuZ9Z3Drg&t=82s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'rpJHRiGfebQ',
+                       'title': 'How I Avoid Online Arbitrage Order Cancellations for Amazon FBA',
+                       'channel': 'John Muscarello',
+                       'author': 'John Muscarello',
+                       'text': 'Take the loss, liquidate it and move on.',
+                       'tip': 'Take the loss, liquidate it and move on.',
+                       'timestamp': 704,
+                       'timestamp_seconds': 704,
+                       'timestamp_label': '[00:11:44]',
+                       'url': 'https://www.youtube.com/watch?v=rpJHRiGfebQ&t=704s',
+                       'markdown': '[00:11:44](https://www.youtube.com/watch?v=rpJHRiGfebQ&t=704s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '2N5t8bm1dpA',
+                       'title': "Sellers Permit vs Resale Certificate - What's the Difference?",
+                       'channel': 'StartUp101',
+                       'author': 'StartUp101',
+                       'text': 'Well, because sales taxes are intended to be paid on the final value of a '
+                               'product or service.',
+                       'tip': 'Well, because sales taxes are intended to be paid on the final value of a '
+                              'product or service.',
+                       'timestamp': 175,
+                       'timestamp_seconds': 175,
+                       'timestamp_label': '[00:02:55]',
+                       'url': 'https://www.youtube.com/watch?v=2N5t8bm1dpA&t=175s',
+                       'markdown': '[00:02:55](https://www.youtube.com/watch?v=2N5t8bm1dpA&t=175s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'w-siA5UEWLY',
+                       'title': 'The Huge Printful Resale Certificate Mistake',
+                       'channel': 'Hands Off Sales Tax (HOST)',
+                       'author': 'Hands Off Sales Tax (HOST)',
+                       'text': "When they're set up correctly and kept up to date, you avoid paying sales "
+                               'tax you were never meant to pay in the first place.',
+                       'tip': "When they're set up correctly and kept up to date, you avoid paying sales "
+                              'tax you were never meant to pay in the first place.',
+                       'timestamp': 220,
+                       'timestamp_seconds': 220,
+                       'timestamp_label': '[00:03:40]',
+                       'url': 'https://www.youtube.com/watch?v=w-siA5UEWLY&t=220s',
+                       'markdown': '[00:03:40](https://www.youtube.com/watch?v=w-siA5UEWLY&t=220s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'mEjNm8zKoQs',
+                       'title': '98. Unlock MASSIVE Rewards with Buying Groups!',
+                       'channel': 'Lets Get To The Points',
+                       'author': 'Lets Get To The Points',
+                       'text': "So it's always good to make sure that you spend the amounts that you can "
+                               'manage and you can sleep good at night.',
+                       'tip': "So it's always good to make sure that you spend the amounts that you can "
+                              'manage and you can sleep good at night.',
+                       'timestamp': 1897,
+                       'timestamp_seconds': 1897,
+                       'timestamp_label': '[00:31:37]',
+                       'url': 'https://www.youtube.com/watch?v=mEjNm8zKoQs&t=1897s',
+                       'markdown': '[00:31:37](https://www.youtube.com/watch?v=mEjNm8zKoQs&t=1897s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'nMlQUH3s8qY',
+                       'title': 'Buying groups: Big risks / big rewards | Ep223 | 10-7-23',
+                       'channel': 'Frequent Miler',
+                       'author': 'Frequent Miler',
+                       'text': "Don't expect this to be smooth as butter, like just a simple click, buy, "
+                               'done with it.',
+                       'tip': "Don't expect this to be smooth as butter, like just a simple click, buy, "
+                              'done with it.',
+                       'timestamp': 2729,
+                       'timestamp_seconds': 2729,
+                       'timestamp_label': '[00:45:29]',
+                       'url': 'https://www.youtube.com/watch?v=nMlQUH3s8qY&t=2729s',
+                       'markdown': '[00:45:29](https://www.youtube.com/watch?v=nMlQUH3s8qY&t=2729s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'nMlQUH3s8qY',
+                       'title': 'Buying groups: Big risks / big rewards | Ep223 | 10-7-23',
+                       'channel': 'Frequent Miler',
+                       'author': 'Frequent Miler',
+                       'text': 'The value went through the floor and so it went the opposite of what they '
+                               "expected and so the payout timeline didn't get hit.",
+                       'tip': 'The value went through the floor and so it went the opposite of what they '
+                              "expected and so the payout timeline didn't get hit.",
+                       'timestamp': 3228,
+                       'timestamp_seconds': 3228,
+                       'timestamp_label': '[00:53:48]',
+                       'url': 'https://www.youtube.com/watch?v=nMlQUH3s8qY&t=3228s',
+                       'markdown': '[00:53:48](https://www.youtube.com/watch?v=nMlQUH3s8qY&t=3228s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'q4miWZl-6Jc',
+                       'title': 'How to Enforce Dealer Credit Limits at Checkout on a B2B Wholesale Portal '
+                                '| SKU.io',
+                       'channel': 'SKUio',
+                       'author': 'SKUio',
+                       'text': "Portal orders can be checked against each dealer's credit limit.",
+                       'tip': "Portal orders can be checked against each dealer's credit limit.",
+                       'timestamp': 2,
+                       'timestamp_seconds': 2,
+                       'timestamp_label': '[00:00:02]',
+                       'url': 'https://www.youtube.com/watch?v=q4miWZl-6Jc&t=2s',
+                       'markdown': '[00:00:02](https://www.youtube.com/watch?v=q4miWZl-6Jc&t=2s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'zay5oOKCEls',
+                       'title': 'Buying Groups 101 with Eunice from @ciao.eunice | Ep 228',
+                       'channel': 'Geobreeze Travel',
+                       'author': 'Geobreeze Travel',
+                       'text': 'Impersonators posing as admins redirected about $20k of goods, so ignore '
+                               'DMs and use only the posted addresses.',
+                       'tip': 'Impersonators posing as admins redirected about $20k of goods, so ignore '
+                              'DMs and use only the posted addresses.',
+                       'timestamp': 1105,
+                       'timestamp_seconds': 1105,
+                       'timestamp_label': '[00:18:25]',
+                       'url': 'https://www.youtube.com/watch?v=zay5oOKCEls&t=1105s',
+                       'markdown': '[00:18:25](https://www.youtube.com/watch?v=zay5oOKCEls&t=1105s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'bUKjFvG2KfM',
+                       'title': 'Buying Groups Overview',
+                       'channel': 'Pack Your Bag With Points',
+                       'author': 'Pack Your Bag With Points',
+                       'text': "If the price rose from $395 to $415, don't buy.",
+                       'tip': "If the price rose from $395 to $415, don't buy.",
+                       'timestamp': 243,
+                       'timestamp_seconds': 243,
+                       'timestamp_label': '[00:04:03]',
+                       'url': 'https://www.youtube.com/watch?v=bUKjFvG2KfM&t=243s',
+                       'markdown': '[00:04:03](https://www.youtube.com/watch?v=bUKjFvG2KfM&t=243s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q1.'}]}

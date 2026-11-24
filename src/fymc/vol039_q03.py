@@ -1,743 +1,849 @@
 from __future__ import annotations
 
-CHAPTER_3 = {
-    "id": "Q3",
-    "chapter_id": "Q3",
-    "chapter_number": 3,
-    "question_number": 3,
-    "slug": "unit-economics-margin-waterfall-working-capital-float",
-    "question_prompt": "What are the real unit economics, gross-to-net margin deductions, scrub/reversal reserves, and working-capital float requirements for inbound pay-per-call & rtb ping-post arbitrage?",
-    "kicker": "Q3 / THE BIG MONEY PLAYBOOKS",
-    "title": "Unit Economics, Margin Waterfall & Working-Capital Float",
-    "subtitle": "Ringba and Retreaver Settlement Cohorts, ASC 606 Retained Contribution, TCPA Evidence Costs, and Buyer-DSO Funding",
-    "layout_template": "financial_breakdown",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #39, Inbound Pay-Per-Call & RTB Ping-Post Arbitrage, ranks "
-        "#01 of 42 with a 95/100 Money-to-Manpower Score and 14 mapped plays. "
-        "Its economics depend on collected buyer settlements, not auction bids "
-        "or impressive call counts. Formula v2.0 fixes annual gross billings "
-        "at $200,000, $850,000, and $1,500,000; corresponding owner profits "
-        "are $30,000, $199,750, and $480,000. The 55% retained-share basis "
-        "produces $110,000, $467,500, and $825,000 before remaining operating "
-        "deductions. This chapter reconciles those cases, prices contractor "
-        "delivery and reversal exposure, and separates accounting reserves "
-        "from actual payout locks. It also tests social-to-search acquisition "
-        "and authorized advertising-card rebates without allowing either "
-        "to conceal negative call contribution or an unfunded collection gap."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$200,000",
-            "context": "Annual gross billable settlements; $110,000 retained contribution at 55%.",
-            "note": "15% gross-basis margin; $30,000 owner profit; 27.27% retained margin; 1 FT + 2 C.",
-        },
-        {
-            "label": "Base",
-            "value": "$850,000",
-            "context": "Annual gross billable settlements; $467,500 retained contribution at 55%.",
-            "note": "23.5% gross-basis margin; $199,750 owner profit; 42.73% retained margin; 1 FT + 2 C.",
-        },
-        {
-            "label": "Scaled",
-            "value": "$1,500,000",
-            "context": "Annual gross billable settlements; $825,000 retained contribution at 55%.",
-            "note": "32% gross-basis margin; $480,000 owner profit; 58.18% retained margin; 2 FT + 3 C.",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Reconcile gross settlements before declaring a retained margin",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Begin with the scorecard denominator: gross billable inbound-call "
-                    "and ping-post settlements, not a homeowner's repair invoice, an "
-                    "insurance premium, a legal recovery, or an advertiser's entire "
-                    "media budget. Formula v2.0 assigns 55% retained share after "
-                    "publisher payouts and click-to-call acquisition. Consequently, "
-                    "$200,000, $850,000, and $1,500,000 of annual gross billings "
-                    "produce $110,000, $467,500, and $825,000 of retained contribution. "
-                    "The accompanying waterfall allocates the other 45% to publisher "
-                    "payouts at 30% and paid media at 15%; that allocation is an "
-                    "illustrative operating assumption, not another supplied scorecard "
-                    "fact. These are blended portfolio costs: individual calls need "
-                    "not incur both a publisher commission and direct media expense. "
-                    "Keep the scorecard's ASC 606 retained-share convention separate "
-                    "from the statutory financial statements. ASC 606-10-55-36 "
-                    "through 55-40 requires a principal-versus-agent assessment "
-                    "based on control of the specified service. Purchased advertising "
-                    "does not automatically become a revenue deduction merely because "
-                    "the management model nets it against settlements. Maintain "
-                    "a bridge from gross buyer billing to recognized revenue, "
-                    "acquisition expense, and economic retained contribution. Otherwise, "
-                    "the same media invoice can disappear from costs while inflated "
-                    "settlements remain in reported revenue."
-                ),
-                (
-                    "The remaining deductions must reconcile exactly, rather than "
-                    "being chosen to make the opportunity appear attractive. In "
-                    "the Base case, subtract $25,500 of expected scrubs and "
-                    "reversals, $96,000 of contractor delivery labor, $36,000 of "
-                    "platform and verification costs, $60,000 of staff and "
-                    "administration, $12,000 of funding costs, and $38,250 of "
-                    "other operating costs from $467,500. The result is precisely "
-                    "$199,750. Conservative deductions total $80,000; Scaled "
-                    "deductions total $345,000. Their resulting profits are "
-                    "$30,000 and $480,000. These expense categories are a "
-                    "reconciled illustrative budget, not claimed vendor quotations "
-                    "or independently observed operating results. The contractor "
-                    "line funds campaign operations, call-quality review, buyer "
-                    "reconciliation, and technical maintenance; contractor counts "
-                    "are people, not assumed full-time equivalents. The first "
-                    "full-time position is the working owner, whose compensation "
-                    "comes from modeled owner profit. The Scaled staff budget "
-                    "also supports the additional employee. Treat owner profit "
-                    "as business earnings before the owner's personal taxes and "
-                    "distributions. A separately salaried replacement operator "
-                    "would reduce those earnings. Keep that distinction visible "
-                    "when comparing an owner-operated exchange with a genuinely "
-                    "passive portfolio or a management-heavy call center."
-                ),
-                (
-                    "Gross-basis profit margins remain exactly 15%, 23.5%, and "
-                    "32%. Dividing the same profits by retained contribution "
-                    "instead produces 27.27%, 42.73%, and 58.18%, rounded to "
-                    "two decimals. Never present the larger retained margin beside "
-                    "gross billings without labeling both denominators. The model "
-                    "places a 3% gross-billing scrub provision below the retained "
-                    "subtotal so readers can see its economic effect. In the "
-                    "accounting ledger, expected contractual price concessions may "
-                    "instead reduce the transaction price, while genuine credit "
-                    "losses require separate treatment. Reclassify those items "
-                    "without charging them twice. Likewise, a buyer's recoverable "
-                    "holdback is an asset-timing issue, not another expense. The "
-                    "published monthly operating range of $2,500 to $14,000 "
-                    "must not be mistaken for the complete waterfall: it can "
-                    "describe a narrower recurring-overhead perimeter, but it "
-                    "cannot cover every modeled payout, contractor invoice, "
-                    "reserve, and funding charge. Base deductions after retained "
-                    "contribution average $22,312.50 monthly, including the "
-                    "scrub provision. Establish an explicit account map before "
-                    "using either range in a cash forecast. At month-end, "
-                    "reconcile auction exports, buyer statements, publisher "
-                    "payables, media invoices, and bank receipts into the "
-                    "same cohort identifiers."
-                ),
-            ],
-            "table": {
-                "caption": "Formula v2.0 Annual Waterfall with Explicit Illustrative Expense Allocations",
-                "headers": [
-                    "Waterfall line and treatment",
-                    "Conservative annual case",
-                    "Base annual case",
-                    "Scaled annual case",
-                ],
-                "rows": [
-                    [
-                        "Gross billable settlements before modeled reversal deductions",
-                        "$200,000 gross settlements establish the canonical billing denominator.",
-                        "$850,000 gross settlements establish the canonical billing denominator.",
-                        "$1,500,000 gross settlements establish the canonical billing denominator.",
-                    ],
-                    [
-                        "Publisher acquisition payouts allocated at thirty percent",
-                        "$60,000 publisher payouts leave $140,000 before media expense.",
-                        "$255,000 publisher payouts leave $595,000 before media expense.",
-                        "$450,000 publisher payouts leave $1,050,000 before media expense.",
-                    ],
-                    [
-                        "Paid acquisition media allocated at fifteen percent",
-                        "$30,000 media expense completes the acquisition cost allocation.",
-                        "$127,500 media expense completes the acquisition cost allocation.",
-                        "$225,000 media expense completes the acquisition cost allocation.",
-                    ],
-                    [
-                        "Retained contribution subtotal at fifty-five percent share",
-                        "$110,000 retained contribution precedes all remaining operating deductions.",
-                        "$467,500 retained contribution precedes all remaining operating deductions.",
-                        "$825,000 retained contribution precedes all remaining operating deductions.",
-                    ],
-                    [
-                        "Expected scrubs and reversals at three percent",
-                        "$6,000 expected deductions require cohort-level dispute evidence.",
-                        "$25,500 expected deductions require cohort-level dispute evidence.",
-                        "$45,000 expected deductions require cohort-level dispute evidence.",
-                    ],
-                    [
-                        "Contractor delivery labor supporting actual settlement operations",
-                        "$36,000 funds two contractors with explicitly bounded assignments.",
-                        "$96,000 funds two contractors with expanded delivery responsibilities.",
-                        "$120,000 funds three contractors with automated exception handling.",
-                    ],
-                    [
-                        "Platforms, telephony, verification, storage, and transcript processing",
-                        "$12,000 supports measured platform usage and evidence retention.",
-                        "$36,000 supports measured platform usage and evidence retention.",
-                        "$48,000 supports measured platform usage and evidence retention.",
-                    ],
-                    [
-                        "Staff and administration excluding the working owner's distributions",
-                        "$16,000 covers administration while owner compensation remains profit.",
-                        "$60,000 covers administration while owner compensation remains profit.",
-                        "$78,000 includes additional staff while owner compensation remains profit.",
-                    ],
-                    [
-                        "Funding charges and other identified operating expense",
-                        "$4,000 funding plus $6,000 other expense completes deductions.",
-                        "$12,000 funding plus $38,250 other expense completes deductions.",
-                        "$18,000 funding plus $36,000 other expense completes deductions.",
-                    ],
-                    [
-                        "Owner profit after every modeled operating deduction",
-                        "$30,000 profit equals 15% gross or 27.27% retained margin.",
-                        "$199,750 profit equals 23.5% gross or 42.73% retained margin.",
-                        "$480,000 profit equals 32% gross or 58.18% retained margin.",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "2. Price accepted cohorts and isolate the two mapped acquisition plays",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Normalize the Base case to a 1,000-call billable cohort "
-                    "at an illustrative $100 average settlement. Gross billing "
-                    "is $100,000, publisher allocation is $30,000, and media "
-                    "allocation is $15,000, leaving $55,000 retained contribution. "
-                    "Applying the annual Base ratios adds $3,000 of expected "
-                    "reversals and $28,500 of remaining operating deductions, "
-                    "leaving $23,500 owner profit. The acquisition CAC is "
-                    "$15 per billable call for paid media alone, or $45 "
-                    "including the publisher allocation. These definitions must "
-                    "travel with every dashboard export. Suppose 1,250 connected "
-                    "calls generate 1,000 billable calls after an 80% qualification "
-                    "rate. A 90-second or 120-second buyer buffer is a "
-                    "contract term, not proof that every surviving connection "
-                    "will settle. Ringba or Retreaver records must preserve "
-                    "routing identity, transfer timestamps, actual talk time, "
-                    "duplicate checks, geographic eligibility, and buyer responses. "
-                    "Use connected talk time rather than queue time whenever "
-                    "the contract requires it. Reconcile the buyer's clock "
-                    "definition before publishing a duration-based bid ceiling. "
-                    "At the same $15,000 media spend, deterioration to 812.5 "
-                    "expected billable calls from those connections raises media "
-                    "CAC to $18.46; maintain fractional expectations in forecasts "
-                    "while settling only actual whole calls."
-                ),
-                (
-                    "The mapped play social_to_search_ping_post_arbitrage replaces "
-                    "fragile $1.50 RSOC/AFD search-feed monetization with direct "
-                    "$45–$180 lead auctions, but cheap curiosity clicks are "
-                    "not qualified demand. Buy 10,000 clicks at $0.08 across "
-                    "Meta, TikTok, NewsBreak, or native networks for $800. "
-                    "A four-question bridge converting 4% yields 400 submissions; "
-                    "40% qualification yields 160 eligible leads; selling 25% "
-                    "of those exclusively yields 40 settlements at $75, or "
-                    "$3,000 gross. Deduct $800 media, $200 verification and "
-                    "routing, $300 delivery labor, and a deliberately higher "
-                    "5% reversal allowance of $150: contribution is $1,550 "
-                    "before shared overhead and funding. This lane-level example "
-                    "does not replace the portfolio's canonical 55% retained "
-                    "share. At $0.12 clicks, 2% submission, 40% qualification, "
-                    "20% sale, and $45 settlement, gross falls to $720. "
-                    "With $1,200 media, the same $500 service costs, and "
-                    "$36 reversals, contribution becomes negative $1,016. "
-                    "Use entirely factual hooks, retain TrustedForm or Jornaya "
-                    "session evidence for every submission, and cryptographically "
-                    "hash the stored evidence bundle. Preserve vendor certificate "
-                    "identifiers and available signature verification without "
-                    "assuming every vendor artifact is digitally signed. Diversify "
-                    "across at least five direct buyers."
-                ),
-                (
-                    "The second mapped play, agency_ad_spend_card_multiplier_rebate_cycling, "
-                    "is a treasury optimization on genuine client-authorized "
-                    "advertising, not a reason to create more spend. On "
-                    "$50,000 of eligible spend, a contract-permitted 2% card "
-                    "reward produces $1,000 and a 0.4% volume rebate adds "
-                    "$200. Deduct 0.8% processing costs of $400, a contractual "
-                    "client pass-through of $200, and 20 days of funding "
-                    "at 18% annual interest, or $493.15. Net incremental "
-                    "benefit is only $106.85. With unchanged terms, funding "
-                    "beyond roughly 24.3 days consumes the entire remaining "
-                    "benefit. Record reward eligibility, category exclusions, "
-                    "redemption value, clawbacks, and statement dates rather "
-                    "than counting advertised points at face value. The "
-                    "$50,000 client advertising flow is neither operator "
-                    "settlement revenue nor automatic profit. Track it in "
-                    "a separate client-funds and reimbursement ledger, subject "
-                    "to the actual contractual arrangement. Neither rewards "
-                    "nor volume rebates are needed to reach the canonical "
-                    "profit cases in this chapter. If permission, eligibility, "
-                    "or collections weaken, move immediately to client-direct "
-                    "billing or prefunded approved agency terms. Stop "
-                    "rewards-dependent spending, and never substitute circular "
-                    "charges, artificial transactions, or unapproved client "
-                    "credit exposure for an economically sound advertising campaign."
-                ),
-            ],
-            "table": {
-                "caption": "Cohort Conversion, Acquisition CAC, and Mapped-Play Contribution Controls",
-                "headers": [
-                    "Operating unit",
-                    "Concrete calculation",
-                    "Required evidence",
-                    "Failure response",
-                ],
-                "rows": [
-                    [
-                        "Base portfolio cohort containing one thousand billable calls",
-                        "$100,000 billing less $45,000 acquisition leaves $55,000 retained.",
-                        "Join buyer acceptance records with publisher and media invoices.",
-                        "Reject contribution reports that omit either acquisition cost component.",
-                    ],
-                    [
-                        "Buyer buffer qualification measured against connected call inventory",
-                        "1,250 connections multiplied by 80% produces 1,000 billable calls.",
-                        "Compare connected talk timestamps against the contractual buffer definition.",
-                        "Suspend mismatched destinations before buying additional disputed call duration.",
-                    ],
-                    [
-                        "Base contractor delivery cost allocated to accepted settlements",
-                        "$96,000 annual contractor expense divided by 8,500 calls equals $11.29.",
-                        "Retain time allocation, deliverables, invoice amounts, and cohort identifiers.",
-                        "Automate recurring reconciliation before expanding contractor hours or headcount.",
-                    ],
-                    [
-                        "Social bridge acquisition with exclusive direct buyer settlements",
-                        "10,000 clicks produce forty sales and $1,550 direct contribution.",
-                        "Preserve factual creatives, four-question answers, certificates, and buyer receipts.",
-                        "Pause negative cohorts and redistribute across five qualified direct buyers.",
-                    ],
-                    [
-                        "Social bridge downside under simultaneous conversion and price deterioration",
-                        "$720 gross less $1,736 direct costs loses $1,016.",
-                        "Separate click cost, submission rate, qualification, acceptance, and settlement.",
-                        "Stop the traffic source rather than averaging losses into winners.",
-                    ],
-                    [
-                        "Authorized agency card rewards after every cash deduction",
-                        "$1,200 benefits less $1,093.15 deductions leaves only $106.85.",
-                        "Match client permission, issuer eligibility, rebate terms, and reimbursement.",
-                        "Use client-direct billing when funding exceeds the economic benefit.",
-                    ],
-                    [
-                        "Agency rewards recognition without inflating operator settlement revenue",
-                        "$50,000 client spend remains separate from operator fee earnings.",
-                        "Reconcile client reimbursement balances independently from call exchange receivables.",
-                        "Remove projected rewards from bids whenever eligibility becomes uncertain.",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Protect the spread before optimizing the bid",
-                "body": (
-                    "Experienced operators optimize collected contribution by source, "
-                    "buyer, destination, and settlement vintage rather than headline auction prices."
-                ),
-                "items": [
-                    "Store buyer quote expiry and destination capacity with every ping; an attractive expired bid has zero executable value.",
-                    "Replay disputed duration calculations using buyer-specific clock rules before changing publisher payouts or buying additional traffic.",
-                    "Compare AI transcript dispositions against a human-labeled sample; prioritize expensive false acceptances instead of maximizing automated coverage.",
-                    "Send provisional and settled S2S conversion events separately, with deduplication identifiers, so ad platforms do not learn solely from later-reversed calls.",
-                ],
-            },
-        },
-        {
-            "heading": "3. Fund the collection gap without mistaking holdbacks for losses",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Build working capital from contractual cash dates rather "
-                    "than a monthly profit percentage. Let annual gross "
-                    "billings be G and use 365 calendar days. Assume "
-                    "buyers pay 90% after 21 days and release the "
-                    "remaining 10% another 30 days later. Publishers receive "
-                    "their 30% allocation after seven days; media consumes "
-                    "its 15% allocation immediately. The acquisition bridge "
-                    "is therefore G divided by 365, multiplied by "
-                    "the sum of 0.30 times 14 and 0.15 times "
-                    "21. This gives $4,027.40 Conservative, $17,116.44 "
-                    "Base, and $30,205.48 Scaled. The additional rolling "
-                    "buyer holdback consumes 10% of daily gross billings "
-                    "times 30 days, or $1,643.84, $6,986.30, and "
-                    "$12,328.77. This calculation assumes the holdback begins "
-                    "releasing predictably after its extra lock period; a "
-                    "discretionary or continually extended holdback requires a "
-                    "different forecast. Track age from the actual contractual "
-                    "invoice or acceptance event, not whichever timestamp "
-                    "makes collection speed look better. Keep a daily "
-                    "receivables schedule by buyer legal entity, because "
-                    "five destinations controlled by one debtor do not "
-                    "create five independent sources of liquidity. Measure "
-                    "cash received rather than dashboard balances marked payable."
-                ),
-                (
-                    "Add a 30-day operating cash reserve for deductions "
-                    "other than the noncash scrub provision. The annual "
-                    "cash-cost bases are $74,000, $242,250, and $300,000; "
-                    "multiplying each by 30/365 gives $6,082.19, "
-                    "$19,910.96, and $24,657.53. Acquisition bridge, "
-                    "recoverable holdback, and operating reserve together require "
-                    "approximately $11,753, $44,014, and $67,192. These "
-                    "are planning requirements under the stated assumptions, "
-                    "not universal minimum balances; they exclude setup "
-                    "purchases, taxes, owner distributions, and an additional "
-                    "cash cushion for adverse disputes. The $8,000–$45,000 "
-                    "startup-capital range therefore supports only particular "
-                    "launch configurations. Base nearly exhausts its upper "
-                    "end before setup spending, while Scaled requires "
-                    "retained earnings, prepayment, improved settlement terms, "
-                    "or committed funding. The 3% expected reversal expense "
-                    "does not itself place cash in a reserve account. "
-                    "Conversely, moving cash into a designated bank subaccount "
-                    "does not create an additional profit deduction. Maintain "
-                    "one schedule for expected economic losses and another "
-                    "for restricted or intentionally protected cash. Allocate "
-                    "funding charges to the cohort that caused the "
-                    "borrowing, including statement interest and transfer fees. "
-                    "A campaign that appears profitable before its settlement "
-                    "delay can still destroy contribution after expensive financing."
-                ),
-                (
-                    "Before increasing publisher caps, prove net-seven buyer "
-                    "collectability with actual bank receipts on several "
-                    "small, fully documented cohorts. A promised net-seven "
-                    "term is not the same as an observed seven-day "
-                    "DSO. If buyers really pay in seven days, "
-                    "publisher timing aligns with their receipts, and "
-                    "only seven days of immediately paid media require "
-                    "the initial acquisition bridge; holdbacks still need "
-                    "separate funding. Negotiate payout locks around the "
-                    "buyer's documented review window, with explicit release "
-                    "dates and dispute procedures, rather than silently "
-                    "extending publisher payment terms. Publish source-level "
-                    "credit caps, single-buyer exposure limits, and minimum "
-                    "cash thresholds in the routing configuration. When "
-                    "collections slip, reduce new traffic while honoring "
-                    "existing obligations. A 14-day collection delay adds "
-                    "gross receivables exposure of $7,671.23 Conservative, "
-                    "$32,602.74 Base, or $57,534.25 Scaled; these "
-                    "figures measure additional cash awaiting collection, "
-                    "not an automatic expense or write-off. Model that "
-                    "shock in the daily cash ledger alongside scheduled "
-                    "payroll and publisher releases. Do not count an "
-                    "uncommitted credit limit, an unsettled reward balance, "
-                    "or a buyer's disputed invoice as available cash. "
-                    "Pause expansion before liquidity pressure forces "
-                    "unplanned changes to valid publisher commitments."
-                ),
-            ],
-            "table": {
-                "caption": "DSO, Payout-Lock, and Operating-Reserve Requirements Using a 365-Day Basis",
-                "headers": [
-                    "Cash requirement or timing assumption",
-                    "Conservative funding result",
-                    "Base funding result",
-                    "Scaled funding result",
-                ],
-                "rows": [
-                    [
-                        "Daily gross billings supporting all timing calculations",
-                        "$547.95 daily gross billings arise from $200,000 annually.",
-                        "$2,328.77 daily gross billings arise from $850,000 annually.",
-                        "$4,109.59 daily gross billings arise from $1,500,000 annually.",
-                    ],
-                    [
-                        "Acquisition bridge with buyer day twenty-one settlement",
-                        "$4,027.40 bridges publisher day-seven and immediate media payments.",
-                        "$17,116.44 bridges publisher day-seven and immediate media payments.",
-                        "$30,205.48 bridges publisher day-seven and immediate media payments.",
-                    ],
-                    [
-                        "Ten-percent buyer holdback locked thirty additional days",
-                        "$1,643.84 remains recoverable subject to documented release terms.",
-                        "$6,986.30 remains recoverable subject to documented release terms.",
-                        "$12,328.77 remains recoverable subject to documented release terms.",
-                    ],
-                    [
-                        "Thirty-day operating cash reserve excluding scrub provisions",
-                        "$6,082.19 funds operating costs beyond acquisition cash payments.",
-                        "$19,910.96 funds operating costs beyond acquisition cash payments.",
-                        "$24,657.53 funds operating costs beyond acquisition cash payments.",
-                    ],
-                    [
-                        "Combined planning liquidity before setup and adverse disputes",
-                        "$11,753 rounded requirement exceeds the lowest startup-capital estimate.",
-                        "$44,014 rounded requirement nearly exhausts maximum stated startup capital.",
-                        "$67,192 rounded requirement exceeds the stated startup-capital range.",
-                    ],
-                    [
-                        "Additional gross receivables exposure from fourteen-day collection delay",
-                        "$7,671.23 additional exposure requires explicit daily cash forecasting.",
-                        "$32,602.74 additional exposure requires explicit daily cash forecasting.",
-                        "$57,534.25 additional exposure requires explicit daily cash forecasting.",
-                    ],
-                    [
-                        "Acquisition bridge if actual buyer collections improve to seven days",
-                        "$575.34 funds seven days of immediately paid media.",
-                        "$2,445.21 funds seven days of immediately paid media.",
-                        "$4,315.07 funds seven days of immediately paid media.",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Freeze the settlement cohort",
-                    "action": "Export call identifiers, buyer acceptances, publisher obligations, and media spend into a dated settlement ledger.",
-                    "detail": "Preserve original source events and record later adjustments as separate entries instead of overwriting the first settlement view.",
-                },
-                {
-                    "step": 2,
-                    "title": "Classify every deduction",
-                    "action": "Separate contractual reversals, credit losses, vendor invoices, recoverable buyer holdbacks, and cash transfers.",
-                    "detail": "Apply each economic deduction once, then bridge accounting classification to the scorecard's retained-contribution presentation.",
-                },
-                {
-                    "step": 3,
-                    "title": "Project cash by payment date",
-                    "action": "Schedule buyer receipts, holdback releases, publisher payments, contractor invoices, media charges, and funding costs daily.",
-                    "detail": "Run both observed DSO and a fourteen-day delay while excluding uncommitted financing from available liquidity.",
-                },
-                {
-                    "step": 4,
-                    "title": "Release only funded traffic capacity",
-                    "action": "Set buyer and publisher caps from collected contribution, evidence quality, and available settlement funding.",
-                    "detail": "Increase caps after repeated timely receipts; reduce new acquisition when the forecast breaches the operating cash floor.",
-                },
-            ],
-        },
-        {
-            "heading": "4. Stress the spread and price evidence failures before scaling",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Sensitivity testing starts with the same canonical "
-                    "waterfall, not a more favorable alternate model. "
-                    "Holding billable volume constant, a 25% increase "
-                    "in the 15%-of-gross media budget costs another "
-                    "3.75% of original gross billings. Annual owner "
-                    "profit falls to $22,500 Conservative, $167,875 "
-                    "Base, and $423,750 Scaled. Increasing the scrub "
-                    "rate from 3% to 8% independently reduces "
-                    "profits to $20,000, $157,250, and $405,000. "
-                    "Together, those shocks leave $12,500, $125,375, "
-                    "and $348,750. The apparently strong Scaled "
-                    "margin does not eliminate buyer concentration or "
-                    "liquidity risk. A separate 10% settlement-price "
-                    "decline, with call counts and all non-scrub "
-                    "costs fixed, reduces profit by 9.7% of "
-                    "original gross billings because the 3% scrub "
-                    "provision also falls with price. Resulting profits "
-                    "are $10,600, $117,300, and $334,500. "
-                    "These tests deliberately isolate assumptions; do "
-                    "not add their results mechanically when changes "
-                    "share the same underlying cause. Model conversion "
-                    "deterioration separately from CPC inflation, and "
-                    "recompute contractor workload when more rejected "
-                    "calls require review. Establish source-level stop "
-                    "rules using realized contribution and cash exposure "
-                    "rather than the campaign's original underwriting "
-                    "spread or the most recent winning bid."
-                ),
-                (
-                    "Evidence requirements change both acceptance probability "
-                    "and delivery cost. Under 47 U.S.C. 227 "
-                    "and 47 CFR 64.1200, determine the requirements "
-                    "for the actual communication, technology, purpose, "
-                    "and recipient; a consumer-initiated inbound call "
-                    "does not automatically authorize later automated "
-                    "marketing texts or outbound calls. The FCC's "
-                    "2023 federal one-to-one consent amendment was "
-                    "vacated in Insurance Marketing Coalition Ltd. "
-                    "v. FCC in January 2025, so do not "
-                    "describe it as a current universal federal "
-                    "requirement. Seller-specific permission remains a "
-                    "useful operating standard, and Medicare TPMO "
-                    "data-sharing restrictions separately require "
-                    "particularized treatment under 42 CFR 422.2274 "
-                    "and 423.2274. For covered Medicare activity, "
-                    "apply the relevant recording, retention, and "
-                    "48-hour scope-of-appointment rules, including their "
-                    "actual scope and exceptions; not every inbound "
-                    "inquiry requires the same waiting period. Budget "
-                    "secure recording storage, access controls, certificate "
-                    "retrieval, and human exception review. TrustedForm "
-                    "and Jornaya artifacts document events, not a "
-                    "blanket legal entitlement to contact anyone. "
-                    "Apply DNC screening where the outbound activity "
-                    "requires it; a commercial litigator list is "
-                    "neither a substitute for permission nor evidence "
-                    "that an excluded consumer lacks rights. "
-                    "Version the rule mapping with each offer."
-                ),
-                (
-                    "Legal-intake and emergency-trade auctions need their "
-                    "own acceptance definitions rather than an "
-                    "insurance template with a different payout. "
-                    "California Business and Professions Code "
-                    "sections 6151 and 6152 address runners "
-                    "and cappers; a fee arrangement that depends "
-                    "on prohibited solicitation cannot be repaired "
-                    "by a longer duration buffer. Confirm buyer "
-                    "eligibility, permitted advertising arrangements, "
-                    "and source restrictions before enabling legal "
-                    "destinations. For home-service calls, record "
-                    "service radius, job category, opening hours, "
-                    "and duplicate windows so an answered "
-                    "emergency call does not become a predictable "
-                    "refund. Reserve rates should follow buyer "
-                    "and source vintages: track initial billing, "
-                    "day-seven disputes, day-thirty settlements, "
-                    "and late reversals. Retain evidence through "
-                    "the applicable dispute and statutory periods, "
-                    "with access limited to assigned reviewers. "
-                    "Require a reason code and supporting event "
-                    "for every buyer scrub, then measure "
-                    "recovery rates and review time. Use "
-                    "sub-second RTB routing to enforce capacity "
-                    "and economics, not to outrun missing "
-                    "evidence. When review costs exceed recoverable "
-                    "spread, narrow the source or buyer "
-                    "relationship. Scale only the cohorts whose "
-                    "collected economics survive adverse pricing, "
-                    "documented reversals, and realistic payment delays; "
-                    "automation accelerates both good underwriting "
-                    "and expensive mistakes."
-                ),
-            ],
-            "table": {
-                "caption": "Canonical-Case Stress Tests and Evidence-Driven Loss Controls",
-                "headers": [
-                    "Stress or operating condition",
-                    "Conservative consequence",
-                    "Base consequence",
-                    "Scaled consequence",
-                ],
-                "rows": [
-                    [
-                        "Canonical baseline with all original waterfall assumptions",
-                        "$30,000 annual profit supports the original conservative operating case.",
-                        "$199,750 annual profit supports the original base operating case.",
-                        "$480,000 annual profit supports the original scaled operating case.",
-                    ],
-                    [
-                        "Media cost increases twenty-five percent at unchanged call volume",
-                        "$22,500 annual profit remains after $7,500 additional media.",
-                        "$167,875 annual profit remains after $31,875 additional media.",
-                        "$423,750 annual profit remains after $56,250 additional media.",
-                    ],
-                    [
-                        "Scrub rate increases from three percent to eight percent",
-                        "$20,000 annual profit remains after $10,000 additional reversals.",
-                        "$157,250 annual profit remains after $42,500 additional reversals.",
-                        "$405,000 annual profit remains after $75,000 additional reversals.",
-                    ],
-                    [
-                        "Higher media costs and higher scrubs occur together",
-                        "$12,500 annual profit remains after both explicitly modeled shocks.",
-                        "$125,375 annual profit remains after both explicitly modeled shocks.",
-                        "$348,750 annual profit remains after both explicitly modeled shocks.",
-                    ],
-                    [
-                        "Settlement price falls ten percent with non-scrub costs fixed",
-                        "$10,600 annual profit remains after adjusting price-linked scrub expense.",
-                        "$117,300 annual profit remains after adjusting price-linked scrub expense.",
-                        "$334,500 annual profit remains after adjusting price-linked scrub expense.",
-                    ],
-                    [
-                        "Consent or Medicare evidence fails the applicable requirement",
-                        "Suspend affected destinations and isolate all related unsettled cohorts.",
-                        "Suspend affected destinations and isolate all related unsettled cohorts.",
-                        "Suspend affected destinations and isolate all related unsettled cohorts.",
-                    ],
-                    [
-                        "Buyer disputes duration without matching the signed contract",
-                        "Recalculate connected talk time and submit timestamped dispute evidence.",
-                        "Recalculate connected talk time and submit timestamped dispute evidence.",
-                        "Recalculate connected talk time and submit timestamped dispute evidence.",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four verifications before increasing a traffic cap",
-                "body": (
-                    "Release additional acquisition capacity only when unit economics, "
-                    "evidence, collection performance, and funding agree."
-                ),
-                "items": [
-                    "Verify that every modeled settlement uses the signed buyer price, duration clock, geographic restrictions, duplicate window, and reversal deadline.",
-                    "Verify applicable seller permission, Medicare recording and appointment requirements, and legal-intake source restrictions using versioned offer documentation.",
-                    "Verify repeated buyer bank receipts against promised net-seven terms before relaxing publisher traffic caps or shortening payout locks.",
-                    "Verify that available cash covers acquisition timing, recoverable holdbacks, operating payments, and the fourteen-day collection-delay scenario without relying on rewards.",
-                ],
-            },
-        },
-    ],
-    "pull_quote": "A winning bid becomes profit only after the buyer pays, the publisher clears, and the reversal window stops consuming your spread.",
-    "diagram_id": "diag-03",
-    "action_checklist": [
-        "Build a three-case ledger reproducing $30,000, $199,750, and $480,000 owner profit with both gross-basis and retained-basis margin denominators.",
-        "Join Ringba or Retreaver event identifiers to buyer settlements, publisher invoices, media costs, evidence bundles, and actual bank receipts.",
-        "Calculate paid-media CAC and fully landed acquisition cost separately, using billable accepted calls rather than pings or raw connections.",
-        "Set daily buyer credit caps and publisher traffic caps from observed DSO, holdback release dates, payout commitments, and available cash.",
-        "Run the social-bridge downside and authorized-card net-benefit calculations before treating either mapped play as incremental portfolio profit.",
-        "Publish a weekly vintage report covering expected scrubs, realized reversals, dispute recoveries, contractor review costs, and delayed receivables.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "47 U.S.C. 227 — Restrictions on use of telephone equipment",
-            "url": "https://www.law.cornell.edu/uscode/text/47/227",
-            "relevance": (
-                "Establishes the TCPA framework relevant to covered outbound "
-                "communications, permission requirements, and associated liability exposure."
-            ),
-        },
-        {
-            "title": "47 CFR 64.1200 — Delivery restrictions",
-            "url": "https://www.ecfr.gov/current/title-47/chapter-I/subchapter-B/part-64/subpart-L/section-64.1200",
-            "relevance": (
-                "Provides operative telephone solicitation, consent, and do-not-call "
-                "requirements; map the applicable provisions to each actual communication."
-            ),
-        },
-        {
-            "title": "42 CFR 422.2264 — Beneficiary contact",
-            "url": "https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-B/part-422/subpart-V/section-422.2264",
-            "relevance": (
-                "Governs Medicare Advantage beneficiary contact and personal marketing "
-                "appointment requirements, including scope-of-appointment timing and exceptions."
-            ),
-        },
-        {
-            "title": "42 CFR 422.2274 — Agent, broker, and other third-party requirements",
-            "url": "https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-B/part-422/subpart-V/section-422.2274",
-            "relevance": (
-                "Contains Medicare Advantage third-party marketing organization "
-                "requirements affecting recording, retention, oversight, and beneficiary data sharing."
-            ),
-        },
-        {
-            "title": "42 CFR 423.2274 — Agent, broker, and other third-party requirements",
-            "url": "https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-B/part-423/subpart-V/section-423.2274",
-            "relevance": (
-                "Supplies parallel Part D requirements that affect TPMO evidence "
-                "workflows and the cost of accepting covered prescription-drug-plan traffic."
-            ),
-        },
-        {
-            "title": "California Business and Professions Code 6152 — Prohibited runner and capper conduct",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?sectionNum=6152.&lawCode=BPC",
-            "relevance": (
-                "Identifies prohibited conduct relevant to California legal-intake "
-                "sourcing and compensation arrangements before auction destinations are activated."
-            ),
-        },
-    ],
-}
+CHAPTER_3 = {'id': 'Q3',
+ 'chapter_id': 'Q3',
+ 'chapter_number': 3,
+ 'question_number': 3,
+ 'slug': 'ivr-design-call-flows-pre-qualify-callers',
+ 'question_prompt': 'How do I build IVRs and call flows that pre-qualify callers before they reach a '
+                    'buyer?',
+ 'kicker': 'Q3 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'IVR Design and Call Flows That Pre-Qualify Callers',
+ 'subtitle': 'How IVR works, Ringba IVR, Dial IVR and call flows, profitable call-flow builds, quiz-funnel '
+             'pre-qualification, visual flow builders (SignalWire, WildJar, RingCentral, Autocia), IVR '
+             'best practices, Retell AI inbound webhooks, and GoHighLevel inbound routing',
+ 'layout_template': 'financial_analysis',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Practitioners from Ringba, Landerlab, SignalWire, WildJar, GetVoIP and independent '
+                      'operators agree on one rule: the IVR is a qualification gate that sorts callers on '
+                      "the attribute that decides payout before any buyer phone rings. Ringba's debt "
+                      'example forwards only callers with more than $10,000 in unsecured credit card debt. '
+                      "Carlos Corona's ACA flow routes uninsured callers into RTB and re-asks anyone who "
+                      'claims coverage, because many callers press the wrong key the first time. Corona '
+                      'does not monetize non-qualified Medicare and Medicaid callers as calls. He converts '
+                      'them into an IVR SMS opt-in, and the opt-in webhook carries the call UUID, the '
+                      'E.164 number, the campaign and the state. Landerlab pushes quiz answers such as '
+                      'carrier into Ringba URL parameters so router filters can use them. Practitioners '
+                      'disagree on two points. The first is whether to route mismatched callers to '
+                      'adjacent buyers, which Corona says breeds complaints. The second is whether to use '
+                      'audible menus or silent background IVR functions.',
+ 'key_metrics': [{'label': 'Debt Campaign IVR Qualification Threshold',
+                  'metric': 'Debt Campaign IVR Qualification Threshold',
+                  'value': 'More than $10,000 in unsecured credit card debt (press 1 = qualified, press 2 '
+                           '= not qualified)',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Jordan Soto's example of an IVR call flow where only the press-1 caller is "
+                             'forwarded to the buyer and the affiliate earns credit.',
+                  'source': 'Ringba ([4dnXkZ7u6zw @ 00:00:51])'},
+                 {'label': 'Inbound Call Webhook Timeout and Retries',
+                  'metric': 'Inbound Call Webhook Timeout and Retries',
+                  'value': '10-second timeout, retried up to 3 times, then falls back to the default agent',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Henryk Brzozowski's test of the Retell AI inbound webhook. When make.com "
+                             'returns nothing, the call uses the agent already set on the number.',
+                  'source': 'Henryk Brzozowski ([p7WavoW_6to @ 00:04:24])'},
+                 {'label': 'Gather Failure Disconnect Rule',
+                  'metric': 'Gather Failure Disconnect Rule',
+                  'value': 'Disconnect after 2 failed attempts (timeout or unknown input)',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Nicholas at SignalWire increments an attempt variable on each gather '
+                             'failure. The flow loops the caller back once with an audio cue, then hangs '
+                             'up.',
+                  'source': 'SignalWire ([VByuomL6T0s @ 00:05:14])'},
+                 {'label': 'Maximum Options Per IVR Menu',
+                  'metric': 'Maximum Options Per IVR Menu',
+                  'value': 'Limit each menu to 5 options, most common items listed first',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Nate at GetVoIP gives this as a best practice so inbound callers can '
+                             'identify their path instantly and select the DTMF option.',
+                  'source': 'GetVoIP - Simplify your search ([7vsOEhARsdU @ 00:02:23])'}],
+ 'sections': [{'title': 'The Practitioner Consensus: Qualify Before the Buyer Ever Rings',
+               'paragraphs': ['Every builder in this chapter treats the IVR as a qualification gate, not a '
+                              'greeting. Ringba defines interactive voice response as an automated system '
+                              'for qualifying callers with prompts and routing them to a destination based '
+                              'on their responses. It splits campaign routing into two modes. Standard '
+                              'routing sends calls to targets by priority and weight. IVR routing pushes '
+                              'callers into a node tree that hands off to a routing plan at the IVR level '
+                              '[Vd_ZoE2BRqQ @ 00:00:01] [Vd_ZoE2BRqQ @ 00:00:19]. Jordan Soto lays out the '
+                              'pay-per-call version plainly with a debt campaign. The caller is asked '
+                              'whether they carry more than ten thousand dollars in unsecured credit card '
+                              'debt. Pressing one means qualified, and the call is forwarded to the buyer. '
+                              'Pressing two means not qualified. Only the qualified leg earns the '
+                              'affiliate the commission [4dnXkZ7u6zw @ 00:00:51]. Carlos Corona runs the '
+                              'same logic on ACA traffic. A coverage question plays up front, and callers '
+                              'without Medicaid, Medicare, or employer coverage go straight into the RTB '
+                              'process against the buyers on that routing plan [tf4AieS7Mhc @ 00:00:45]. '
+                              "The shared premise is that a buyer's phone should ring only after the "
+                              'caller has already sorted themselves on the one or two attributes that '
+                              'decide payout. Any call that reaches a buyer without that sort is a call '
+                              'the publisher is gambling on rather than selling.',
+                              'Pre-qualification does not have to start at the keypad. Landerlab says '
+                              'anyone running pay-per-call to big auto insurance brands such as Allstate '
+                              'or Geico has to pre-qualify visitors before sending them to a buyer. Its '
+                              "build is a quiz funnel that asks for the visitor's current carrier and "
+                              'homeowner status. Those answers are then pushed into Ringba, where the call '
+                              'flow routes on them and filters exclusive buyers on homeowner or insured '
+                              'status [DMS29IlU8pE @ 00:00:01]. CallCentreHelper describes the silent side '
+                              'of an IVR. Some contact centers never want callers to hear a traditional '
+                              'menu at all. They still run background modules that connect into back-end '
+                              'systems and identify the caller from the number they display [8f7qA0z-AgQ @ '
+                              '00:01:31]. Calilio and GetVoIP both stress the payoff of collecting context '
+                              'before the transfer. The agent who answers already knows what the caller '
+                              'needs instead of going in blind [KT-Jaz-hayQ @ 00:00:21] [U9IWvkKvtWE @ '
+                              '00:01:08]. For an arbitrage operator the translation is direct. The '
+                              'qualifying data can come from a landing-page quiz, a keypad press, or a '
+                              'caller-ID lookup. Either way, it has to land on the call record before the '
+                              'routing decision is made. That is the only way to filter buyers on carrier, '
+                              'homeowner, or insured status instead of handing them whoever happens to '
+                              'dial in.',
+                              "The builders also agree on construction order and flow hygiene. Ringba's "
+                              'training says that before you can create a call flow, you need a routing '
+                              'plan configured. The dial node at the end of the tree needs a destination '
+                              "to hand callers to [Ua5XxaPrhRs @ 00:01:05]. Ringba's IVR builder then "
+                              'refuses to save a tree missing a validation node. The error is outlined in '
+                              'red until a hang-up node catches calls that fail to connect to the routing '
+                              "plan [Vd_ZoE2BRqQ @ 00:02:22]. WildJar's James hits the same wall in his "
+                              'demo. Saving fails, and red lines appear around any transfer that has no '
+                              'target number configured. The flow stays broken until every branch has a '
+                              "place to dial [5z0mahGmR40 @ 00:01:53]. GetVoIP's Nate pushes menu "
+                              'discipline on top of that structure. His rules are to use a drag-and-drop '
+                              'builder, keep the phrasing concise, cap each menu at five options, and list '
+                              'the most common items first so most callers recognize their path '
+                              'immediately [7vsOEhARsdU @ 00:02:23]. Put together, the consensus template '
+                              'has four parts: a short qualifying question asked up front, a hard '
+                              'qualified branch to the buyer, a defined branch for non-qualified callers, '
+                              'and no dangling node anywhere. Every vendor demo, from Ringba to WildJar, '
+                              'blocks publishing on an open end. That block is the cheapest quality '
+                              'control an operator gets.'],
+               'table': {'caption': 'Where the practitioners line up on IVR pre-qualification for inbound '
+                                    'call traffic',
+                         'headers': ['Consensus Point',
+                                     'What Practitioners Actually Do',
+                                     'Why It Matters for Call Buyers',
+                                     'Expert Source'],
+                         'rows': [['The IVR acts as a caller qualification gate',
+                                   'Prompts collect caller responses and route each caller to a '
+                                   'destination based on what they answered',
+                                   'Unqualified callers are filtered out before any buyer target ever '
+                                   'rings',
+                                   'Ringba ([Vd_ZoE2BRqQ @ 00:00:01])'],
+                                  ['Ask one binary question on the payout attribute',
+                                   'The caller presses one if they have more than ten thousand dollars of '
+                                   'unsecured debt and two if they do not',
+                                   'Only press-one calls are forwarded, and only those calls earn the '
+                                   'affiliate commission',
+                                   'Ringba ([4dnXkZ7u6zw @ 00:00:51])'],
+                                  ["Gather the caller's context before the transfer",
+                                   'The automated menu captures what the caller needs before they reach a '
+                                   'live agent',
+                                   'The answering agent already holds the context required to handle the '
+                                   'caller',
+                                   'Calilio ([KT-Jaz-hayQ @ 00:00:21])'],
+                                  ['Pre-qualify on the landing page with a quiz',
+                                   'The quiz captures carrier and homeowner status and pushes both into '
+                                   'the call software',
+                                   'Exclusive auto insurance buyers can then be filtered on those stated '
+                                   'conditions',
+                                   'Landerlab ([DMS29IlU8pE @ 00:16:17])'],
+                                  ['Configure the routing plan before building the flow',
+                                   'Create the routing plan first so the dial node has a destination for '
+                                   'callers',
+                                   'Without a routing plan, the call flow cannot send any qualified '
+                                   'traffic onward',
+                                   'Ringba ([Ua5XxaPrhRs @ 00:01:05])'],
+                                  ['Never leave an unconfigured transfer node in the flow',
+                                   'Saving fails, with red outlines, until every transfer has a target '
+                                   'number',
+                                   'Broken branches are caught before live paid traffic hits a dead end',
+                                   'WildJar Call Intelligence ([5z0mahGmR40 @ 00:01:53])'],
+                                  ['Keep each menu short with common options first',
+                                   'Limit each menu to five options, with concise phrasing and the most '
+                                   'common items leading',
+                                   'Most callers pick the right DTMF option on their very first listen',
+                                   'GetVoIP - Simplify your search ([7vsOEhARsdU @ 00:02:23])']]}},
+              {'title': 'Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ["Carlos Corona's ACA flow is the most complete pay-per-call build in this "
+                              'chapter, and it runs on two keypad prompts. The opening message reads: We '
+                              'are one step closer to getting you approved for help with gas, groceries, '
+                              'and rent. Please press two if you do not have Medicare, Medicaid, or '
+                              'employer coverage. Please press one if you do have it. A press of two '
+                              'qualifies the caller and kicks off the RTB process to the buyers on the '
+                              'routing plan [tf4AieS7Mhc @ 00:01:22]. A press of one does not end the '
+                              'call. Corona replays a longer version that opens with: please listen '
+                              'carefully as our menu has changed. The replay splits into one for Medicaid, '
+                              'two for Medicare, and three for no government health benefits, and a press '
+                              'of three routes back to the buyers [tf4AieS7Mhc @ 00:01:55]. His reason '
+                              'comes straight from live traffic. A lot of people press something that was '
+                              'not the correct answer, and the second pass gives them another chance to '
+                              "make the right choice [tf4AieS7Mhc @ 00:02:30]. SignalWire's Nicholas "
+                              'builds the same safety net generically. An attempt variable increments each '
+                              'time the gather times out or receives unknown input. A short audio cue '
+                              'plays before the caller loops back to the prompt. After two failed '
+                              'attempts, the flow disconnects the call [VByuomL6T0s @ 00:05:14].',
+                              'Corona treats callers who confirm Medicaid or Medicare as no-value calls. '
+                              'Instead of hanging up on them, he converts them into an SMS opt-in. He '
+                              'builds a gather that accepts only a press of one. He lists the elements an '
+                              'IVR consent has to carry: the brand name, how to opt out, where to see the '
+                              'terms, and that message rates apply [tf4AieS7Mhc @ 00:05:10]. His live '
+                              'script reads: Thank you for calling Medicare benefits. All agents are busy. '
+                              'Press one to complete your request via text. By pressing one, you agree to '
+                              'automated texts. To opt out, reply stop. Message rates apply. For terms, '
+                              'visit medicarebenefits.net/terms [tf4AieS7Mhc @ 00:06:06]. A press of one '
+                              'fires a webhook with four fields: the inbound call UUID for reference if '
+                              'issues come up, the phone number in E.164 format for later texting, a '
+                              'campaign tag, and the state for time zones. The flow then dials a '
+                              'confirmation routing plan whose target only plays a message-sent prompt, '
+                              'and every dial records the entire call [tf4AieS7Mhc @ 00:08:44]. Henryk '
+                              "Brzozowski's Retell AI setup shows the webhook limits operators must design "
+                              'around. The timeout is 10 seconds, with up to three retries before a silent '
+                              'fallback to the default agent. He also whitelists IPs so only Retell can '
+                              'reach his make.com endpoint [p7WavoW_6to @ 00:04:24].',
+                              "Ringba's node set is the toolkit most of these pay-per-call builds run on. "
+                              'The dial node routes to a target, and the menu node decides on the key '
+                              'pressed. The router node decides on filters, and the gather node collects '
+                              'numerical input. The hours node routes on hours of operation, and the pixel '
+                              'node fires pixels from inside the call flow. The JS node runs custom '
+                              'JavaScript once the team activates it, and the profile node pulls enriched '
+                              'caller data [Ua5XxaPrhRs @ 00:03:42]. The robocall verification template '
+                              'asks every caller to press one to continue and automatically terminates '
+                              'anything that cannot, so spam robocallers never reach targets [Ua5XxaPrhRs '
+                              '@ 00:04:54]. On the buyer side, Shane Hitchcock explains Dial IVR. The '
+                              "operator times how long a buyer's own IVR takes to ask for a keypress and "
+                              'enters that timing. Ringba then sends the DTMF digit, or a dynamic tag such '
+                              'as a zip code, without the caller hearing it [VQKxVnPn5zE @ 00:01:15]. '
+                              "Landerlab's carrier routing connects the page to the flow in three steps. "
+                              'First, create a URL parameter named carrier, with carrier as the report '
+                              'name. Next, add a router whose filters read carrier equal to Allstate or '
+                              'Geico, with a routing plan behind each one. Finally, place a live test call '
+                              'and confirm the carrier tag shows up on the call log [DMS29IlU8pE @ '
+                              '00:12:40].'],
+               'table': {'caption': 'Exact IVR build settings, scripts, and numbers taught by the '
+                                    'operators',
+                         'headers': ['Build Element',
+                                     'Exact Setting or Number',
+                                     'How Operators Use It',
+                                     'Expert Source'],
+                         'rows': [['Second-chance re-ask menu for coverage',
+                                   'The prompt opens with please listen carefully as our menu has changed, '
+                                   'then offers three numbered options',
+                                   'Callers who pressed the wrong key get a second chance, which recovers '
+                                   'qualified calls',
+                                   'Carlos Corona ([tf4AieS7Mhc @ 00:01:55])'],
+                                  ['IVR SMS consent gather for no-value callers',
+                                   'The script states the brand name, opt-out by replying stop, that '
+                                   'message rates apply, and the terms URL, then asks for one',
+                                   'No-value Medicare and Medicaid callers become textable opt-ins instead '
+                                   'of hang-ups',
+                                   'Carlos Corona ([tf4AieS7Mhc @ 00:05:10])'],
+                                  ['Opt-in webhook payload fields sent onward',
+                                   'Inbound call UUID, phone number in E.164 format, campaign tag, and '
+                                   'caller state',
+                                   'Supports dispute lookups, later text sends, campaign attribution, and '
+                                   'time zone handling',
+                                   'Carlos Corona ([tf4AieS7Mhc @ 00:08:27])'],
+                                  ['Inbound call webhook reliability limits',
+                                   'Ten-second timeout, up to three retries, then fallback to the default '
+                                   'agent',
+                                   'Keep the backend fast, or callers silently land on the default agent',
+                                   'Henryk Brzozowski ([p7WavoW_6to @ 00:04:24])'],
+                                  ['Gather error loop driven by an attempt variable',
+                                   'The attempt variable increments on each timeout or unknown input, and '
+                                   'the call disconnects after two failures',
+                                   'Confused callers are looped back once while dead air is cut off '
+                                   'cleanly',
+                                   'SignalWire ([VByuomL6T0s @ 00:04:54])'],
+                                  ["Dial IVR that bypasses the buyer's own IVR",
+                                   'A timed delay, then a DTMF digit or a dynamic tag such as a zip code',
+                                   "Callers reach the buyer's live agent faster without ever hearing the "
+                                   'menu',
+                                   'Ringba ([VQKxVnPn5zE @ 00:01:15])'],
+                                  ['Quiz funnel pre-qualifier before the call',
+                                   'A three-second loading screen, then a you qualify for 40% off call-now '
+                                   'button with a countdown',
+                                   'Builds urgency while carrier and homeowner answers flow into Ringba '
+                                   'for routing',
+                                   'Landerlab ([DMS29IlU8pE @ 00:04:21])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Small IVR tweaks the operators swear by',
+                           'body': 'These come from live builds and test calls, not from vendor feature '
+                                   'lists.',
+                           'items': ['Mix different voices across IVR prompts. Corona found that people '
+                                     'pay more attention when the voice changes, while a single voice lets '
+                                     'them tune out [Carlos Corona — tf4AieS7Mhc @ 00:07:06].',
+                                     'Treat buyer IVRs as conversion killers. Use Dial IVR to send DTMF '
+                                     'tones in the background so callers skip menus they never needed to '
+                                     'hear [Ringba — VQKxVnPn5zE @ 00:00:15].',
+                                     'Preview the landing page and confirm the base number has been '
+                                     'swapped. If the number is replaced, the Ringba number pool script is '
+                                     'loading correctly [Landerlab — DMS29IlU8pE @ 00:10:33].',
+                                     'Dynamic variable names must match exactly between the webhook '
+                                     "response and the agent prompt, or the caller's name will not "
+                                     'populate [Henryk Brzozowski — p7WavoW_6to @ 00:07:13].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Stand up the routing plan first',
+                              'action': 'Create the routing plan and choose priority routing or RPC '
+                                        'routing before building any call flow.',
+                              'detail': 'Priority routing sends calls by priority and weight. RPC routing '
+                                        "sends calls by a target's revenue and historical performance. "
+                                        'Then set how each target counts conversions, its revenue amount, '
+                                        'and how duplicate conversions are handled [Ringba — Ua5XxaPrhRs @ '
+                                        '00:01:24].'},
+                             {'step': 2,
+                              'title': 'Front-load the payout qualifier with a re-ask',
+                              'action': 'Open the flow with a coverage or eligibility gather, send '
+                                        'qualified presses to RTB, and replay a longer menu to callers who '
+                                        'answer the other way.',
+                              'detail': "Corona's longer replay starts with please listen carefully as our "
+                                        'menu has changed. It splits Medicaid, Medicare, and no coverage '
+                                        'onto separate keys, so callers who pressed the wrong key get a '
+                                        'second chance [Carlos Corona — tf4AieS7Mhc @ 00:01:55].'},
+                             {'step': 3,
+                              'title': 'Add an error loop and close every node',
+                              'action': 'Increment an attempt variable on timeouts and unknown input, loop '
+                                        'back once with an audio cue, and end in hang-up or voicemail.',
+                              'detail': 'Nicholas disconnects after two failed attempts. He ties off the '
+                                        'remaining error paths with stop recording, an apology played '
+                                        'through TTS, a voicemail recording, and a hang-up [SignalWire — '
+                                        'VByuomL6T0s @ 00:05:14].'},
+                             {'step': 4,
+                              'title': 'Convert no-value callers into SMS opt-ins',
+                              'action': 'Route non-qualified callers to a press-one consent gather, fire a '
+                                        'webhook, and dial a recorded confirmation routing plan.',
+                              'detail': 'The webhook passes the inbound call UUID, the E.164 phone number, '
+                                        'the campaign tag, and the state. Every dial should record the '
+                                        'entire call for later reference [Carlos Corona — tf4AieS7Mhc @ '
+                                        '00:08:27].'}]},
+              {'heading': 'Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The sharpest split is whether the caller should ever hear a qualifying '
+                              'menu. Carlos Corona builds the ACA flow around one: the inbound call plays '
+                              'a message asking whether the caller has Medicaid, Medicare, employer '
+                              'coverage or no insurance, and only the no-insurance press triggers the RTB '
+                              'hunt across the buyers under that routing plan [tf4AieS7Mhc @ 00:00:30]. '
+                              "Ringba's own walkthrough of the three core flows frames the audible IVR the "
+                              'same way, using a debt example where callers with more than ten thousand '
+                              'dollars in unsecured credit card debt press one and everyone else presses '
+                              'two and falls out [4dnXkZ7u6zw @ 00:00:51]. Shane Hitchcock at Ringba '
+                              'argues the opposite side of the wire: IVRs can be conversion killers for '
+                              "any call campaign, so Ringba's Dial IVR uses software and DTMF tones to "
+                              "bypass a buyer's unnecessary menus without the customer ever hearing it, "
+                              'timing how long the prompt takes and injecting a press one or even a zip '
+                              'code tag [VQKxVnPn5zE @ 00:00:15]. CallCentreHelper adds that some contact '
+                              'centers refuse a traditional audible IVR entirely yet still run its silent '
+                              'functions, connecting to back-end systems and identifying the caller from '
+                              'the displayed telephone number [8f7qA0z-AgQ @ 00:01:31]. The operator '
+                              "choice is screening friction on your side versus raw speed into the buyer's "
+                              'live agent.',
+                              'A second fork is where qualification data gets captured in the first place. '
+                              'Landerlab skips the keypad and qualifies on the landing page: a quiz asks '
+                              'the current insurance carrier and homeowner status, injects the Ringba '
+                              'number pool script, pushes the carrier value into a URL parameter, and a '
+                              'router node with filters sends Allstate and Geico callers to separate '
+                              "routing plans [DMS29IlU8pE @ 00:12:18]. Ringba's warm transfer model puts a "
+                              'human in that seat instead, where a qualifying call center agent asks a '
+                              'list of questions before handing off, and the conversion event typically '
+                              'lands on the transfer [4dnXkZ7u6zw @ 00:01:24]. Henryk Brzozowski routes '
+                              'before any agent speaks, using a Retell AI inbound webhook to make.com that '
+                              'checks the current time and the caller number, then returns a day agent '
+                              'armed with a transfer tool or a night agent stripped of it [p7WavoW_6to @ '
+                              '00:01:31]. On the voice-versus-keypad question, Calilio pitches NLP systems '
+                              'that open with how can I help you today and route on full sentences rather '
+                              'than press one prompts, a direct challenge to the DTMF menus every '
+                              'pay-per-call builder here still relies on [KT-Jaz-hayQ @ 00:02:02]. Each '
+                              'choice moves the filter to a different layer of the stack, with different '
+                              'costs.',
+                              'Practitioners also split hard on what to do with callers who fail the '
+                              'screen. Carlos Corona notes some publishers push Medicare callers to '
+                              'Medicare buyers, and strongly discourages it because the ad angle is ACA, '
+                              'the caller references that ad once on the phone with the agent, and the '
+                              'mismatch breeds complaints; the alternative playbook is an IVR SMS consent '
+                              'gather that names the brand, the opt-out, the terms page and message rates, '
+                              'then fires a webhook so the caller can be monetized by text with another '
+                              'offer [tf4AieS7Mhc @ 00:03:55]. Routing logic splits too: Ringba offers '
+                              "priority routing by priority and weight, or RPC routing by a target's "
+                              'revenue and historical performance [Ua5XxaPrhRs @ 00:01:24]. For the '
+                              'call-back side, the GoHighLevel for Commercial Real Estate operator calls '
+                              'it personal preference with no right or wrong answer, weighing direct '
+                              'connect to a cell phone, which gives a real-time call back but zero prep '
+                              'time, against an IVR offering press one to book an appointment or press two '
+                              'for a call back [7GRJx9A5y5c @ 00:00:33]. GetVoIP pushes a different menu '
+                              'philosophy entirely: limit each menu to five options and let callers reach '
+                              'an agent at any time [7vsOEhARsdU @ 00:02:07]. Pick the policy that matches '
+                              'whether you sell every call or only the clean ones.'],
+               'table': {'caption': 'Competing IVR and call flow playbooks for pre-qualifying pay-per-call '
+                                    'traffic',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Audible screen versus buyer IVR bypass',
+                                   'Play a coverage question and route only the no-insurance press to '
+                                   'buyers',
+                                   'Use Dial IVR DTMF tones to skip buyer menus unheard by the caller',
+                                   'Carlos Corona ([tf4AieS7Mhc @ 00:00:30]); Ringba ([VQKxVnPn5zE @ '
+                                   '00:00:15])'],
+                                  ['Where to capture the qualifying data',
+                                   'Quiz funnel pushes carrier and homeowner answers into Ringba URL '
+                                   'parameters',
+                                   'Warm transfer qualifying call center asks a question list before '
+                                   'handoff',
+                                   'Landerlab ([DMS29IlU8pE @ 00:11:28]); Ringba ([4dnXkZ7u6zw @ '
+                                   '00:01:24])'],
+                                  ['Keypad input versus natural language input',
+                                   'DTMF keypad presses mapped to each menu option by tone frequency',
+                                   'NLP IVR asks how can I help you today and routes on sentences',
+                                   'CallCentreHelper ([8f7qA0z-AgQ @ 00:00:19]); Calilio ([KT-Jaz-hayQ @ '
+                                   '00:02:02])'],
+                                  ['Handling callers who fail the screen',
+                                   'Send Medicare callers to Medicare buyers, which Corona says draws '
+                                   'complaints',
+                                   'Gather SMS consent and monetize the caller later with a text offer',
+                                   'Carlos Corona ([tf4AieS7Mhc @ 00:03:08])'],
+                                  ['Routing plan logic for buyer targets',
+                                   'Priority routing distributes calls by assigned priority and weight per '
+                                   'target',
+                                   'RPC routing picks targets by revenue and historical performance data',
+                                   'Ringba ([Ua5XxaPrhRs @ 00:01:24])'],
+                                  ['Time-of-day handling for inbound calls',
+                                   'Make.com webhook checks the time and swaps day and night AI agents',
+                                   'Assign different IVR flows Monday to Saturday versus after office '
+                                   'hours',
+                                   'Henryk Brzozowski ([p7WavoW_6to @ 00:01:31]); Autocia Technologies '
+                                   '([tdZ944Oycuo @ 00:03:53])'],
+                                  ['Ring strategy when transferring to a group',
+                                   'Sequential, parallel, round robin, or sticky agent policies inside one '
+                                   'group',
+                                   'Forward to mixed PSTN numbers and SIP endpoints sequentially or '
+                                   'simultaneously',
+                                   'Autocia Technologies ([tdZ944Oycuo @ 00:10:35]); SignalWire '
+                                   '([VByuomL6T0s @ 00:03:47])']]}},
+              {'heading': 'Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The most expensive trap Carlos Corona reports is trusting the first '
+                              'keypress. Testing showed a lot of callers press something that is not the '
+                              'correct answer, so a press one for coverage triggers a second, longer menu '
+                              'that opens with please listen carefully as our menu has changed and splits '
+                              'Medicaid, Medicare and no government benefits into separate keys before a '
+                              'call is written off [tf4AieS7Mhc @ 00:02:13]. Corona also found callers '
+                              'tune out a single voice, and swapping voices across prompts keeps them '
+                              'alert, a finding credited to plain testing [tf4AieS7Mhc @ 00:07:06]. Spam '
+                              "is the other leak: Ringba's robocall verification template plays a "
+                              'text-to-speech press one to continue, and any robocaller unable to complete '
+                              'it has the call automatically terminated before it ever reaches a target '
+                              "[Ua5XxaPrhRs @ 00:04:54]. SignalWire's Nicholas handles callers who time "
+                              'out or hit an unknown input with a set variables module that increments an '
+                              'attempt counter, plays an audio file confirming something went awry, loops '
+                              'back to the gather, and disconnects after two failed attempts [VByuomL6T0s '
+                              '@ 00:04:54]. Without that loop, confused callers either get dumped or route '
+                              'blind, and both outcomes burn paid traffic.',
+                              "Build errors stall launches more often than strategy does. Ringba's IVR "
+                              'builder refuses to save a tree that lacks a hang-up node for calls that '
+                              'fail to connect to the routing plan, marking the error in red on the node '
+                              "[Vd_ZoE2BRqQ @ 00:02:22]. WildJar's James hit the same wall live: the save "
+                              'failed with red lines around both transfers because no target number had '
+                              "been configured for sales or support [5z0mahGmR40 @ 00:01:53]. Landerlab's "
+                              'call flow threw publish errors until each router branch had a routing plan '
+                              'selected, and the team verified the number pool script by checking that the '
+                              'base number on the page was replaced by a Ringba pool number before running '
+                              'a live mobile test and reading the carrier tag in the call log [DMS29IlU8pE '
+                              '@ 00:10:33]. Webhook routing carries its own failure state: Henryk '
+                              'Brzozowski found the Retell inbound webhook has a ten-second timeout, '
+                              'retries up to three times, and then defaults to the agent already set on '
+                              'the number, so a slow make.com scenario lands callers on that fallback '
+                              'agent; the dynamic variable name must also match exactly, and the webhook '
+                              'was locked down by whitelisting the Retell IP [p7WavoW_6to @ 00:04:24]. '
+                              'Test every branch end to end before buying traffic.',
+                              'Economics leaks show up after the build, not during it. Autocia '
+                              "Technologies' Sanya warns that channels cap concurrent calls: five channels "
+                              'means five people can call together without anyone getting a busy tone, and '
+                              'the dashboard tracks answered, not answered and canceled calls plus answer '
+                              'rate per number [tdZ944Oycuo @ 00:02:28]. Missed calls need a recovery '
+                              'path, so WildJar routes unanswered transfers to voicemail with an instant '
+                              'missed-lead email and SMS alert to the sales team [5z0mahGmR40 @ 00:03:32]. '
+                              'The GoHighLevel for Commercial Real Estate operator sets the system to '
+                              'notify the agent whenever a caller hangs up without booking or requesting a '
+                              'call back, and calls direct connect a lost opportunity when the phone rings '
+                              'mid-tour or at a closing with zero prep time [7GRJx9A5y5c @ 00:03:15]. '
+                              "Carlos Corona's opt-in webhook passes the inbound call UUID, the E.164 "
+                              'phone number, the campaign tag and the state, so any issue can be traced '
+                              'back to how the caller opted in; the flow then dials a confirmation routing '
+                              'plan that plays a your message has been sent message, and every dial '
+                              'records the entire call [tf4AieS7Mhc @ 00:08:27]. Skip any of these and '
+                              'paid calls die unbilled or untraceable.'],
+               'table': {'caption': 'Firsthand IVR failure modes and the fixes practitioners deployed',
+                         'headers': ['Failure Mode',
+                                     'What Happened',
+                                     'Fix Practitioners Used',
+                                     'Expert Source'],
+                         'rows': [['Wrong first keypress from real callers',
+                                   'Callers pressed an answer that was not correct for their coverage',
+                                   'Replay a longer please listen carefully menu with three distinct keys',
+                                   'Carlos Corona ([tf4AieS7Mhc @ 00:02:13])'],
+                                  ['Mismatched buyer routing for failed screens',
+                                   'Medicare callers sent to Medicare buyers referenced the ACA ad and '
+                                   'complained',
+                                   'Capture SMS consent and monetize later with a matching text offer',
+                                   'Carlos Corona ([tf4AieS7Mhc @ 00:03:36])'],
+                                  ['Robocall spam reaching paying targets',
+                                   'Automated robocallers would otherwise route straight through to buyer '
+                                   'targets',
+                                   'Robocall verification template terminates callers who cannot press one',
+                                   'Ringba ([Ua5XxaPrhRs @ 00:04:54])'],
+                                  ['Missing validation node in the tree',
+                                   'IVR tree could not save and the node was outlined in red',
+                                   'Add a hang-up node for calls that fail to connect',
+                                   'Ringba ([Vd_ZoE2BRqQ @ 00:02:22])'],
+                                  ['Unconfigured transfer destinations in the flow',
+                                   'Call flow save failed with red lines around both transfer nodes',
+                                   'Enter target numbers for sales and support, then save again',
+                                   'WildJar Call Intelligence ([5z0mahGmR40 @ 00:01:53])'],
+                                  ['Inbound webhook timeout on AI routing',
+                                   'Retell webhook times out after ten seconds and retries three times',
+                                   'Fallback agent on the number answers, so keep the scenario fast',
+                                   'Henryk Brzozowski ([p7WavoW_6to @ 00:04:24])'],
+                                  ['Endless invalid input inside the gather',
+                                   'Callers time out or press unknown keys inside the gather menu',
+                                   'Increment an attempt variable and disconnect after two failed attempts',
+                                   'SignalWire ([VByuomL6T0s @ 00:05:14])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Four checks before a single paid call hits the flow',
+                           'body': 'Every item below is a pitfall a practitioner hit or warned about '
+                                   'firsthand while building pre-qualifying IVRs and call flows.',
+                           'items': ['Do not dump failed-screen Medicare callers on Medicare buyers off an '
+                                     'ACA ad; Corona says it works for days or weeks before complaints '
+                                     'arrive [Carlos Corona — tf4AieS7Mhc @ 00:03:55].',
+                                     'Confirm the Ringba number pool replaced the base number on the '
+                                     'landing page, then place a live mobile test and check the carrier '
+                                     'tag in the call log [Landerlab — DMS29IlU8pE @ 00:10:33].',
+                                     'Every IVR tree needs a hang-up node on the failed-connection path or '
+                                     'it will not validate and save [Ringba — Vd_ZoE2BRqQ @ 00:02:22].',
+                                     'Webhook routers must answer inside ten seconds or Retell retries and '
+                                     'then falls back to the default agent on the number [Henryk '
+                                     'Brzozowski — p7WavoW_6to @ 00:04:24].']}}],
+ 'pull_quote': '"IVRs can be conversion killers for any call campaign." — Ringba (VQKxVnPn5zE @ 00:00:15)',
+ 'diagram_id': 'diag-03',
+ 'action_checklist': ['Create the routing plan before the call flow, choosing priority routing by priority '
+                      'and weight or RPC routing by target revenue and historical performance [Ringba — '
+                      'Ua5XxaPrhRs @ 00:01:24].',
+                      'Open the flow with a coverage qualifier and send only the qualified keypress into '
+                      'the buyer routing plan to start the RTB process [Carlos Corona — tf4AieS7Mhc @ '
+                      '00:00:45].',
+                      'Replay a longer please listen carefully menu to callers who press a non-qualifying '
+                      'key, giving them a second chance to answer correctly [Carlos Corona — tf4AieS7Mhc @ '
+                      '00:01:55].',
+                      'Layer the robocall verification template so callers who cannot press a key to '
+                      'continue are terminated before reaching targets [Ringba — Ua5XxaPrhRs @ 00:04:54].',
+                      'Push quiz funnel answers such as carrier into a Ringba URL parameter and route with '
+                      'router node filters to buyer-specific routing plans [Landerlab — DMS29IlU8pE @ '
+                      '00:12:18].',
+                      'Time how long the buyer IVR takes to ask for a press and enter it in Dial IVR, '
+                      'swapping in tags like zip codes where needed [Ringba — VQKxVnPn5zE @ 00:01:15].'],
+ 'statutory_citations': [{'title': 'Carlos Corona — How to set up a profitable Ringba call flow that '
+                                   'converts [00:02:30]',
+                          'url': 'https://www.youtube.com/watch?v=tf4AieS7Mhc&t=150s',
+                          'relevance': 'Primary practitioner testimony on re-asking misfiring callers, '
+                                       'avoiding mismatched buyer routing, and IVR SMS opt-in '
+                                       'monetization.'},
+                         {'title': 'Ringba — Ringba Product Training: Dial IVR [00:00:15]',
+                          'url': 'https://www.youtube.com/watch?v=VQKxVnPn5zE&t=15s',
+                          'relevance': 'Primary practitioner testimony on bypassing buyer IVRs with DTMF '
+                                       'tones to protect conversion rates.'},
+                         {'title': 'Landerlab — We Built a Pay Per Call Quiz Funnel That Drives Quality '
+                                   'Calls (Watch This Ringba Setup!) [00:12:18]',
+                          'url': 'https://www.youtube.com/watch?v=DMS29IlU8pE&t=738s',
+                          'relevance': 'Primary practitioner testimony on pre-qualifying on the landing '
+                                       'page and routing by carrier with Ringba router filters.'},
+                         {'title': 'Ringba — Using Call Flows | Ringba Platform Training [00:04:54]',
+                          'url': 'https://www.youtube.com/watch?v=Ua5XxaPrhRs&t=294s',
+                          'relevance': 'Primary practitioner testimony on call flow nodes, routing types, '
+                                       'and robocall verification filtering.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'DMS29IlU8pE',
+                       'title': 'We Built a Pay Per Call Quiz Funnel That Drives Quality Calls (Watch This '
+                                'Ringba Setup!)',
+                       'channel': 'Landerlab',
+                       'author': 'Landerlab',
+                       'text': 'This comes in handy when you are doing auto insurance pay per calls and '
+                               'you have more than one exclusive buyer and you want them to be filtered '
+                               'out based on some conditions such as if the visitor is a home owner or '
+                               'not.',
+                       'tip': 'This comes in handy when you are doing auto insurance pay per calls and you '
+                              'have more than one exclusive buyer and you want them to be filtered out '
+                              'based on some conditions such as if the visitor is a home owner or not.',
+                       'timestamp': 977,
+                       'timestamp_seconds': 977,
+                       'timestamp_label': '[00:16:17]',
+                       'url': 'https://www.youtube.com/watch?v=DMS29IlU8pE&t=977s',
+                       'markdown': '[00:16:17](https://www.youtube.com/watch?v=DMS29IlU8pE&t=977s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Vd_ZoE2BRqQ',
+                       'title': 'Interactive Voice Response | Ringba Call Tracking & Analytics',
+                       'channel': 'Ringba',
+                       'author': 'Ringba',
+                       'text': 'An IVR or interactive voice response is an automated system for qualifying '
+                               'callers with prompts and routing them to a destination based on their '
+                               'responses.',
+                       'tip': 'An IVR or interactive voice response is an automated system for qualifying '
+                              'callers with prompts and routing them to a destination based on their '
+                              'responses.',
+                       'timestamp': 1,
+                       'timestamp_seconds': 1,
+                       'timestamp_label': '[00:00:01]',
+                       'url': 'https://www.youtube.com/watch?v=Vd_ZoE2BRqQ&t=1s',
+                       'markdown': '[00:00:01](https://www.youtube.com/watch?v=Vd_ZoE2BRqQ&t=1s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Ua5XxaPrhRs',
+                       'title': 'Using Call Flows | Ringba Platform Training',
+                       'channel': 'Ringba',
+                       'author': 'Ringba',
+                       'text': 'The robocall verification template contains a simple menu that asks the '
+                               'caller to press a key in order to continue, and a robocaller unable to '
+                               'complete this verification will have the call automatically terminated.',
+                       'tip': 'The robocall verification template contains a simple menu that asks the '
+                              'caller to press a key in order to continue, and a robocaller unable to '
+                              'complete this verification will have the call automatically terminated.',
+                       'timestamp': 294,
+                       'timestamp_seconds': 294,
+                       'timestamp_label': '[00:04:54]',
+                       'url': 'https://www.youtube.com/watch?v=Ua5XxaPrhRs&t=294s',
+                       'markdown': '[00:04:54](https://www.youtube.com/watch?v=Ua5XxaPrhRs&t=294s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'KT-Jaz-hayQ',
+                       'title': 'What is an IVR System | Interactive Voice Response and How Does It Work?',
+                       'channel': 'Calilio',
+                       'author': 'Calilio',
+                       'text': 'Instead of telling callers to press a number, a smart IVR can ask how can '
+                               'I help you today and then direct the call based on what the caller says.',
+                       'tip': 'Instead of telling callers to press a number, a smart IVR can ask how can I '
+                              'help you today and then direct the call based on what the caller says.',
+                       'timestamp': 122,
+                       'timestamp_seconds': 122,
+                       'timestamp_label': '[00:02:02]',
+                       'url': 'https://www.youtube.com/watch?v=KT-Jaz-hayQ&t=122s',
+                       'markdown': '[00:02:02](https://www.youtube.com/watch?v=KT-Jaz-hayQ&t=122s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'VByuomL6T0s',
+                       'title': 'Building an IVR - Call Flow Builder | SignalWire in Seconds Ep. 12',
+                       'channel': 'SignalWire',
+                       'author': 'SignalWire',
+                       'text': "Using the conditions module, I'll tell my flow to disconnect the call "
+                               'following two failed attempts.',
+                       'tip': "Using the conditions module, I'll tell my flow to disconnect the call "
+                              'following two failed attempts.',
+                       'timestamp': 294,
+                       'timestamp_seconds': 294,
+                       'timestamp_label': '[00:04:54]',
+                       'url': 'https://www.youtube.com/watch?v=VByuomL6T0s&t=294s',
+                       'markdown': '[00:04:54](https://www.youtube.com/watch?v=VByuomL6T0s&t=294s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'VQKxVnPn5zE',
+                       'title': 'Ringba Product Training: Dial IVR',
+                       'channel': 'Ringba',
+                       'author': 'Ringba',
+                       'text': 'IVRs can be conversion killers for any call campaign, so at Ringba we use '
+                               'software and DTMF tones to bypass unnecessary IVRs without the customer '
+                               'ever hearing us do so.',
+                       'tip': 'IVRs can be conversion killers for any call campaign, so at Ringba we use '
+                              'software and DTMF tones to bypass unnecessary IVRs without the customer '
+                              'ever hearing us do so.',
+                       'timestamp': 15,
+                       'timestamp_seconds': 15,
+                       'timestamp_label': '[00:00:15]',
+                       'url': 'https://www.youtube.com/watch?v=VQKxVnPn5zE&t=15s',
+                       'markdown': '[00:00:15](https://www.youtube.com/watch?v=VQKxVnPn5zE&t=15s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '4dnXkZ7u6zw',
+                       'title': '3 Call Flows You Need to Know',
+                       'channel': 'Ringba',
+                       'author': 'Ringba',
+                       'text': "If it's a debt call and we're asking if the caller has more than ten "
+                               'thousand dollars in unsecured credit card debt, if they have that they '
+                               "press one, which means they're qualified.",
+                       'tip': "If it's a debt call and we're asking if the caller has more than ten "
+                              'thousand dollars in unsecured credit card debt, if they have that they '
+                              "press one, which means they're qualified.",
+                       'timestamp': 51,
+                       'timestamp_seconds': 51,
+                       'timestamp_label': '[00:00:51]',
+                       'url': 'https://www.youtube.com/watch?v=4dnXkZ7u6zw&t=51s',
+                       'markdown': '[00:00:51](https://www.youtube.com/watch?v=4dnXkZ7u6zw&t=51s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '8f7qA0z-AgQ',
+                       'title': 'How Does an IVR Work?',
+                       'channel': 'CallCentreHelper',
+                       'author': 'CallCentreHelper',
+                       'text': "For some types of contact centers they don't actually want the caller to "
+                               'ever have what they consider to be a traditional IVR, but they may still '
+                               'want some of the silent functions of an IVR.',
+                       'tip': "For some types of contact centers they don't actually want the caller to "
+                              'ever have what they consider to be a traditional IVR, but they may still '
+                              'want some of the silent functions of an IVR.',
+                       'timestamp': 91,
+                       'timestamp_seconds': 91,
+                       'timestamp_label': '[00:01:31]',
+                       'url': 'https://www.youtube.com/watch?v=8f7qA0z-AgQ&t=91s',
+                       'markdown': '[00:01:31](https://www.youtube.com/watch?v=8f7qA0z-AgQ&t=91s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'U9IWvkKvtWE',
+                       'title': 'What is an IVR system & How it Works | Interactive Voice Response Systems '
+                                'Explained',
+                       'channel': 'GetVoIP - Simplify your search',
+                       'author': 'GetVoIP - Simplify your search',
+                       'text': 'IVRs can also collect information on the customer and their inquiry before '
+                               "transferring the call so that the representative picking up isn't going in "
+                               'blind.',
+                       'tip': 'IVRs can also collect information on the customer and their inquiry before '
+                              "transferring the call so that the representative picking up isn't going in "
+                              'blind.',
+                       'timestamp': 68,
+                       'timestamp_seconds': 68,
+                       'timestamp_label': '[00:01:08]',
+                       'url': 'https://www.youtube.com/watch?v=U9IWvkKvtWE&t=68s',
+                       'markdown': '[00:01:08](https://www.youtube.com/watch?v=U9IWvkKvtWE&t=68s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '5z0mahGmR40',
+                       'title': 'Call Flow Builder - IVR routing',
+                       'channel': 'WildJar Call Intelligence',
+                       'author': 'WildJar Call Intelligence',
+                       'text': "If I hit the save button at the top we get failed, and it's because we "
+                               "haven't configured where we want this number to then dial.",
+                       'tip': "If I hit the save button at the top we get failed, and it's because we "
+                              "haven't configured where we want this number to then dial.",
+                       'timestamp': 113,
+                       'timestamp_seconds': 113,
+                       'timestamp_label': '[00:01:53]',
+                       'url': 'https://www.youtube.com/watch?v=5z0mahGmR40&t=113s',
+                       'markdown': '[00:01:53](https://www.youtube.com/watch?v=5z0mahGmR40&t=113s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'tdZ944Oycuo',
+                       'title': 'Autocia IVR Demo | Complete IVR Software & Call Flow Setup | Business '
+                                'Automation',
+                       'channel': 'Autocia Technologies',
+                       'author': 'Autocia Technologies',
+                       'text': 'Channel simply means how many calls this number can handle at the same '
+                               'time, and if you have five channels then five people can call together and '
+                               'nobody gets a busy tone.',
+                       'tip': 'Channel simply means how many calls this number can handle at the same '
+                              'time, and if you have five channels then five people can call together and '
+                              'nobody gets a busy tone.',
+                       'timestamp': 148,
+                       'timestamp_seconds': 148,
+                       'timestamp_label': '[00:02:28]',
+                       'url': 'https://www.youtube.com/watch?v=tdZ944Oycuo&t=148s',
+                       'markdown': '[00:02:28](https://www.youtube.com/watch?v=tdZ944Oycuo&t=148s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'tf4AieS7Mhc',
+                       'title': 'How to set up a profitable Ringba call flow that converts',
+                       'channel': 'Carlos Corona',
+                       'author': 'Carlos Corona',
+                       'text': 'The reason why we do this is because we found out that a lot of people '
+                               "will press something and it wasn't necessarily the correct answer.",
+                       'tip': 'The reason why we do this is because we found out that a lot of people will '
+                              "press something and it wasn't necessarily the correct answer.",
+                       'timestamp': 133,
+                       'timestamp_seconds': 133,
+                       'timestamp_label': '[00:02:13]',
+                       'url': 'https://www.youtube.com/watch?v=tf4AieS7Mhc&t=133s',
+                       'markdown': '[00:02:13](https://www.youtube.com/watch?v=tf4AieS7Mhc&t=133s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'tf4AieS7Mhc',
+                       'title': 'How to set up a profitable Ringba call flow that converts',
+                       'channel': 'Carlos Corona',
+                       'author': 'Carlos Corona',
+                       'text': "It might work for a few days, for a few weeks, and eventually you're going "
+                               'to start hearing complaints about your calls.',
+                       'tip': "It might work for a few days, for a few weeks, and eventually you're going "
+                              'to start hearing complaints about your calls.',
+                       'timestamp': 235,
+                       'timestamp_seconds': 235,
+                       'timestamp_label': '[00:03:55]',
+                       'url': 'https://www.youtube.com/watch?v=tf4AieS7Mhc&t=235s',
+                       'markdown': '[00:03:55](https://www.youtube.com/watch?v=tf4AieS7Mhc&t=235s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '7vsOEhARsdU',
+                       'title': 'IVR Call Flow - What it is, Benefits & Best Practices',
+                       'channel': 'GetVoIP - Simplify your search',
+                       'author': 'GetVoIP - Simplify your search',
+                       'text': 'Keep the menu simple and the phrasing concise, and try to limit each menu '
+                               'to five options.',
+                       'tip': 'Keep the menu simple and the phrasing concise, and try to limit each menu '
+                              'to five options.',
+                       'timestamp': 127,
+                       'timestamp_seconds': 127,
+                       'timestamp_label': '[00:02:07]',
+                       'url': 'https://www.youtube.com/watch?v=7vsOEhARsdU&t=127s',
+                       'markdown': '[00:02:07](https://www.youtube.com/watch?v=7vsOEhARsdU&t=127s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'UPUMLukglNc',
+                       'title': 'Creating an IVR Menu | RingCentral Office Demo',
+                       'channel': 'RingCentral UK',
+                       'author': 'RingCentral UK',
+                       'text': 'If I click on the plus icon here I can see what routing options are '
+                               'available, and I could route to another menu, an external transfer, a '
+                               'directory, a voicemail, or an extension.',
+                       'tip': 'If I click on the plus icon here I can see what routing options are '
+                              'available, and I could route to another menu, an external transfer, a '
+                              'directory, a voicemail, or an extension.',
+                       'timestamp': 65,
+                       'timestamp_seconds': 65,
+                       'timestamp_label': '[00:01:05]',
+                       'url': 'https://www.youtube.com/watch?v=UPUMLukglNc&t=65s',
+                       'markdown': '[00:01:05](https://www.youtube.com/watch?v=UPUMLukglNc&t=65s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'p7WavoW_6to',
+                       'title': 'Tutorial - How to Use the Inbound Call Webhook & Dynamic Variables in '
+                                'Retell AI!',
+                       'channel': 'Henryk Brzozowski',
+                       'author': 'Henryk Brzozowski',
+                       'text': "The webhook has a time out of 10 seconds, and within 10 seconds if there's "
+                               'no success the webhook will be retried up to three times.',
+                       'tip': "The webhook has a time out of 10 seconds, and within 10 seconds if there's "
+                              'no success the webhook will be retried up to three times.',
+                       'timestamp': 264,
+                       'timestamp_seconds': 264,
+                       'timestamp_label': '[00:04:24]',
+                       'url': 'https://www.youtube.com/watch?v=p7WavoW_6to&t=264s',
+                       'markdown': '[00:04:24](https://www.youtube.com/watch?v=p7WavoW_6to&t=264s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '7GRJx9A5y5c',
+                       'title': 'Call Routing | How to Automate Inbound Calls | Workflow 2',
+                       'channel': 'GoHighLevel for Commercial Real Estate',
+                       'author': 'GoHighLevel for Commercial Real Estate',
+                       'text': 'The pros of that are obviously you get a real-time call back, and the cons '
+                               'are you have zero prep time for that.',
+                       'tip': 'The pros of that are obviously you get a real-time call back, and the cons '
+                              'are you have zero prep time for that.',
+                       'timestamp': 33,
+                       'timestamp_seconds': 33,
+                       'timestamp_label': '[00:00:33]',
+                       'url': 'https://www.youtube.com/watch?v=7GRJx9A5y5c&t=33s',
+                       'markdown': '[00:00:33](https://www.youtube.com/watch?v=7GRJx9A5y5c&t=33s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'}]}

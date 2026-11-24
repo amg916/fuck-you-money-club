@@ -1,639 +1,862 @@
 from __future__ import annotations
 
-CHAPTER_6 = {
-    "id": "Q6",
-    "chapter_id": "Q6",
-    "chapter_number": 6,
-    "question_number": 6,
-    "slug": "sourcing-demand-mining-and-landing-your-first-deals",
-    "question_prompt": "Where do high-margin deals, clients, or undervalued assets hide in live-event, super bowl & vip ticket brokering, and what repeatable outbound/inbound sourcing system lands the first 3-to-10 wins (1–3 months)?",
-    "kicker": "Q6 / THE BIG MONEY PLAYBOOKS",
-    "title": "Sourcing, Demand Mining & Landing Your First Deals",
-    "subtitle": "Sponsor Allotments, Suite Release Dates, SkyBox Inventory Locks, BOTS Act Boundaries & Buyer-Funded Hospitality",
-    "layout_template": "step_by_step_sop",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #43, Live-Event, Super Bowl & VIP Ticket Brokering, ranks #02 of 43 "
-        "with a 95/100 Money-to-Manpower Score. This chapter maps twelve sourcing and "
-        "settlement plays into a first-deal system: discover transferable supply, qualify "
-        "funded demand, secure written authority, and protect settlement through event "
-        "completion. Separate multi-exchange resale, suite seat-splitting, and tentpole "
-        "hospitality because their inventory rights, capital needs, and payout clocks "
-        "differ. The canonical annual owner-profit cases are $26,400 Conservative, "
-        "$191,900 Base, and $468,000 Scaled; underlying gross billings are not retained "
-        "operator revenue. Build the first three-to-ten wins through dated inventory "
-        "releases, account-specific outreach, conditional sourcing mandates, and measured "
-        "conversion rather than speculative purchasing or unsupported access claims."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$220,000",
-            "context": "Annual gross ticket and package basis; $88,000 retained revenue at 40%.",
-            "note": "12% gross-basis margin; 30% retained margin; $26,400 annual owner net profit; 1 FT + 2 C.",
-        },
-        {
-            "label": "Base",
-            "value": "$1,010,000",
-            "context": "Annual gross ticket and package basis; $404,000 retained revenue at 40%.",
-            "note": "19.0% gross-basis margin; 47.5% retained margin; $191,900 annual owner net profit; 1 FT + 2 C.",
-        },
-        {
-            "label": "Scaled",
-            "value": "$1,800,000",
-            "context": "Annual gross ticket and package basis; $720,000 retained revenue at 40%.",
-            "note": "26% gross-basis margin; 65% retained margin; $468,000 annual owner net profit; 2 FT + 3 C.",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Map twelve sourcing plays to rights, deadlines, and funded demand",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Start with three separate inventory lanes, not one undifferentiated ticket list. "
-                    "Multi-exchange resale involves individually identified tickets, exchange selling fees, "
-                    "replacement exposure, and platform-specific payout eligibility. Suite seat-splitting "
-                    "begins with a suite agreement whose permitted guests, resale rights, catering minimums, "
-                    "parking allocations, and access credentials must survive subdivision. Tentpole hospitality "
-                    "combines admission with separately documented services around the Super Bowl, World Cup, "
-                    "F1, Masters, or Final Four; a hotel booking or sponsor relationship does not establish "
-                    "permission to resell admission. Give each opportunity a HubSpot record with event identity, "
-                    "supplier authority, inventory evidence, acquisition deadline, transfer availability, "
-                    "buyer deadline, and expected cash-release date. Request redacted ownership evidence "
-                    "before asking for complete transferable credentials. Do not circulate live barcodes "
-                    "in prospecting decks. Rank supply by a specific reason for release: unused sponsor "
-                    "allocations, corporate attendance reductions, expiring suite commitments, or an "
-                    "authorized broker's aging stock. A cheap listing without transferable rights is "
-                    "not inventory. A verified release without a reachable buyer is merely a watchlist "
-                    "item. Concentrate the opening month on one venue cluster and two buyer segments "
-                    "so travel knowledge, seating expertise, and supplier references compound instead "
-                    "of fragmenting across unrelated events and jurisdictions."
-                ),
-                (
-                    "Map twelve plays explicitly. Plays one through eleven are sponsor-allotment "
-                    "releases, suite seat-splitting, Super Bowl corporate bundles, World Cup hospitality "
-                    "bundles, F1 hospitality bundles, Masters hospitality bundles, Final Four corporate "
-                    "bundles, NFL seat-license playoff strips, NBA seat-license playoff strips, "
-                    "authorized multi-exchange inventory distribution, and corporate cancellation "
-                    "recovery. Play twelve is b2b_commercial_vcc_interchange_rebate_arbitrage, a separate "
-                    "TRACK_1 accounts-payable settlement adjacency rather than ticket resale income. "
-                    "For each, record both the commercial trigger and the permission that makes it "
-                    "usable. An NFL stadium seat license, sometimes marketed as an SSL or PSL, may "
-                    "confer purchase rights without permitting every proposed transfer; read its "
-                    "actual agreement. NBA playoff strips similarly require round-specific acquisition "
-                    "obligations and refund treatment. Model three authorized playoff purchases at "
-                    "$800 each as $2,400 committed, not as three certain games or three certain "
-                    "sales. If elimination refunds only unplayed rounds, played-game losses remain "
-                    "yours. For sponsor releases, contact the person empowered to dispose of the "
-                    "allocation, not simply someone wearing the sponsor's badge. Treat a publicly "
-                    "announced sponsorship as a lead signal, never as proof of surplus inventory. "
-                    "Require event-specific confirmation before describing any package as official."
-                ),
-                (
-                    "Mine demand from public company event calendars, conference exhibitor directories, "
-                    "corporate sponsorship announcements, venue premium-seat pages, and SEC filings "
-                    "identifying regional expansion or material customer concentrations. Municipal "
-                    "procurement portals can reveal convention transport or hospitality requests, but "
-                    "a public buyer's request does not authorize gifts to its employees. Separate "
-                    "that procurement channel from ordinary client entertainment. Review source "
-                    "access terms and use permitted exports, manual research, or authorized APIs; "
-                    "never bypass ticket queues, purchase limits, or access controls. The BOTS Act, "
-                    "15 U.S.C. §45c, reaches prohibited circumvention and specified resale involving "
-                    "tickets obtained through it. Record a URL, observation date, relevant sentence, "
-                    "and proposed buyer need for every signal. A pharmaceutical conference beside "
-                    "an NBA arena suggests schedule fit, not automatic suitability for healthcare "
-                    "entertainment. Qualify the buyer's recipient restrictions before building that "
-                    "offer. Run a weekly release calendar at thirty, fourteen, seven, and three "
-                    "days before each supplier's genuine decision deadline. Ask which unsold "
-                    "allocation can be returned without penalty, which requires full payment, "
-                    "and which cannot be split. Prefer a documented conditional hold while "
-                    "matching demand; if the supplier requires speculative cash immediately, "
-                    "reduce quantity or walk away."
-                ),
-            ],
-            "table": {
-                "caption": "Twelve Mapped Plays: Source Signals, Authority Evidence, and Capital Fallbacks",
-                "headers": [
-                    "Mapped plays and inventory lane",
-                    "Specific signal and decision maker",
-                    "Required evidence before quoting supply",
-                    "Unit exposure and practical fallback",
-                ],
-                "rows": [
-                    [
-                        "Play 1 sponsor releases; play 11 corporate cancellation recovery.",
-                        "Contact sponsorship operations after documented guest-count reductions or release deadlines.",
-                        "Obtain written disposal authority, transferable seat identifiers, and supplier payment instructions.",
-                        "Four seats costing $500 commit $2,000; prefer conditional holds over ownership.",
-                    ],
-                    [
-                        "Play 2 suite splitting; play 10 authorized multi-exchange distribution.",
-                        "Ask premium-seat directors and established brokers about permitted inventory subdivisions.",
-                        "Inspect suite resale clauses and test contracted exchange connections before publication.",
-                        "A $12,000 suite needs separate funding; stop listings when locks fail.",
-                    ],
-                    [
-                        "Play 3 Super Bowl bundles; play 4 World Cup hospitality bundles.",
-                        "Approach agencies serving funded corporate groups with confirmed destination schedules.",
-                        "Verify event-specific resale permission and every included hospitality service entitlement.",
-                        "Eight $3,000 acquisitions require $24,000; seek matched deposits or smaller groups.",
-                    ],
-                    [
-                        "Play 5 F1 hospitality; play 6 Masters hospitality bundles.",
-                        "Track sponsor guest revisions and agency requests near verified release dates.",
-                        "Confirm credential transfer restrictions and distinguish lodging from actual event admission.",
-                        "Four $2,500 acquisitions require $10,000; reject unsupported transferable-access claims outright.",
-                    ],
-                    [
-                        "Play 7 Final Four bundles; play 8 NFL playoff strips.",
-                        "Contact alumni travel planners and licensed seat holders with documented purchase rights.",
-                        "Separate school affiliation claims from rights evidence and round-specific refund terms.",
-                        "Three $800 obligations commit $2,400; cap exposure before playoff outcomes change.",
-                    ],
-                    [
-                        "Play 9 NBA playoff strips with round-specific purchase obligations.",
-                        "Monitor corporate season-account releases and legitimate seat-license holder availability.",
-                        "Obtain elimination refund schedules, exercised-round costs, and current transfer restrictions.",
-                        "Two $900 played-game losses remain $1,800 even when later rounds refund.",
-                    ],
-                    [
-                        "Play 12 b2b_commercial_vcc_interchange_rebate_arbitrage, operated as a separate TRACK_1 adjacency.",
-                        "Approach freight, construction, medical-supply, property-management, and media-agency accounts-payable leaders.",
-                        "Require issuer sponsorship, vendor acceptance, rebate contracts, and authorized payment instructions.",
-                        "$100,000 eligible spend yields $1,400–$1,950 before costs; offer accepted ACH alternatives.",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Work the release clock before competing on public asking prices",
-                "body": "The useful edge is documented availability matched to a specific buyer deadline, not a mysterious source of cheap seats.",
-                "items": [
-                    "Ask suite managers for the exact catering commitment date; an earlier guest-count deadline can reveal divisible inventory before public discounting.",
-                    "Ask sponsor operations for written guest-allocation release dates and the employee authorized to approve transfers; marketing contacts alone rarely establish disposal authority.",
-                    "Save seating-map versions and photograph permitted sightline evidence; compare contiguous seats and restricted views before treating two prices as equivalent.",
-                    "Offer agencies a timestamped supplier-backed quote with an expiry and substitution rule; never advertise a hold that the supplier has not actually granted.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Turn intent signals into a scored, permission-aware outreach machine",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Build two linked pipelines: suppliers who can convey rights and buyers who can "
-                    "commit budget. Use Airtable for inventory evidence and HubSpot for account "
-                    "activity, connected through a unique opportunity identifier rather than attendee "
-                    "names. A research record becomes a qualified buyer only after a discovery "
-                    "conversation establishes event, date flexibility, headcount, seating configuration, "
-                    "all-in spending ceiling, contracting entity, decision maker, and payment timing. "
-                    "Score one hundred points across verified budget, schedule urgency, decision "
-                    "authority, documented inventory fit, transfer feasibility, and payment readiness. "
-                    "Award points for evidence, not confident language. Require seventy-five points "
-                    "for a priced proposal, with mandatory rights and transfer checks regardless "
-                    "of score. A ninety-point prospect cannot cure prohibited resale. Below "
-                    "seventy-five, send a bounded discovery request rather than reserving expensive "
-                    "inventory. Track supplier records separately for identity verification, authority, "
-                    "successful delivery history, cancellation terms, and banking verification. Confirm "
-                    "changed remittance instructions through a previously verified telephone number. "
-                    "Avoid collecting full guest identity documents until the actual issuer or "
-                    "service provider requires them through an appropriate channel. The system "
-                    "should let an operator explain why this buyer, this allocation, and this "
-                    "payment schedule belong together without searching personal messages for "
-                    "critical evidence."
-                ),
-                (
-                    "Run an account-specific cadence over twelve business days. On day one, email "
-                    "the relevant procurement, partnerships, or executive-assistant contact with the "
-                    "observed trigger, a plausible attendance use case, and one qualification "
-                    "question. On day three, use a manually placed business call where permitted; "
-                    "leave a short message about the same event rather than changing the offer. "
-                    "On day six, send a LinkedIn note referencing a public professional signal. "
-                    "On day nine, email a substantive seating or package comparison only if "
-                    "the lead remains suitable. Close the sequence on day twelve with a "
-                    "clear invitation to return when headcount and budget are approved. Suppress "
-                    "opt-outs across every channel immediately. Commercial email must satisfy "
-                    "15 U.S.C. §7704, including truthful routing, identification requirements, a "
-                    "postal address, and a working opt-out. Do not use automated promotional "
-                    "texts or prerecorded calls without establishing the applicable consent "
-                    "requirements under 47 U.S.C. §227 and 47 CFR §64.1200. Publish inbound "
-                    "pages for specific venue configurations, transfer procedures, and total-price "
-                    "comparisons. Forms should request business contact, event, party size, and "
-                    "budget range, while clearly distinguishing verified inventory from sourcing "
-                    "services. Answer qualified inbound requests the same business day with "
-                    "either a supported next step or a precise limitation."
-                ),
-                (
-                    "Use a testable funnel rather than a promised conversion rate. An illustrative "
-                    "opening cohort starts with 240 researched accounts, of which 180 pass "
-                    "contact-quality and relevance checks. Forty-five substantive responses represent "
-                    "25% of contacted accounts. Twenty-four discovery conversations represent "
-                    "53.3% of responders; twelve qualified opportunities represent 50% of "
-                    "discoveries. Eight written proposals convert at 66.7% of qualified "
-                    "opportunities, and four signed mandates or paid sales convert at 50% "
-                    "of proposals. The resulting account-to-win rate is 1.67%. A signed "
-                    "sourcing mandate is a commercial win, but it is not ticket revenue "
-                    "unless its contractual earning conditions are met. Tag mandates and "
-                    "delivered sales separately. At unchanged yield, 180 researched accounts "
-                    "produce three expected wins and 600 produce ten; neither arithmetic "
-                    "result establishes actual demand. Review rejection reasons every Friday "
-                    "before increasing volume. Poor response means weak targeting or messaging; "
-                    "good discovery with few proposals usually means unsuitable supply or "
-                    "budget; proposals without closes suggest trust, payment, or total-price "
-                    "friction. Track cohorts by first-contact week and allow their buying "
-                    "windows to mature. Do not inflate conversion by removing silent accounts "
-                    "or counting multiple follow-ups as new prospects. Keep acquisition labor "
-                    "and paid lead costs attached to the same cohort."
-                ),
-            ],
-            "table": {
-                "caption": "Buyer Qualification Scorecard and Non-Negotiable Evidence",
-                "headers": [
-                    "Qualification dimension and available points",
-                    "Evidence needed for full credit",
-                    "Partial-credit treatment and concrete concern",
-                    "Operator action before issuing proposal",
-                ],
-                "rows": [
-                    [
-                        "Budget certainty contributes twenty points toward the hundred-point qualification score.",
-                        "Buyer confirms an all-in ceiling and identifies the entity funding purchase.",
-                        "Verbal interest without an approved spending ceiling receives only five points.",
-                        "Ask for acceptable seating alternatives before requesting any paid supplier hold.",
-                    ],
-                    [
-                        "Decision authority contributes twenty points toward the hundred-point qualification score.",
-                        "Named signer confirms authority and explains any additional procurement requirements.",
-                        "An enthusiastic intermediary without signer access receives only five available points.",
-                        "Invite the authorized decision maker to a short scope-confirmation conversation.",
-                    ],
-                    [
-                        "Event urgency contributes fifteen points toward the hundred-point qualification score.",
-                        "Buyer supplies event dates, guest-count deadline, and actual purchase decision date.",
-                        "Flexible exploration without a purchase deadline receives only five available points.",
-                        "Align quote expiry with genuine supplier availability rather than manufactured scarcity.",
-                    ],
-                    [
-                        "Inventory fit contributes twenty points toward the hundred-point qualification score.",
-                        "Verified allocation matches headcount, adjacency, accessibility, and required hospitality components.",
-                        "Unverified supplier suggestions receive zero points until rights evidence arrives.",
-                        "Require documented resale authority regardless of the buyer's aggregate qualification score.",
-                    ],
-                    [
-                        "Transfer feasibility contributes fifteen points toward the hundred-point qualification score.",
-                        "Supplier confirms transfer method, release timing, recipient requirements, and fulfillment responsibility.",
-                        "Unreleased credentials with written timing commitments receive only five available points.",
-                        "Reject transactions whose promised delivery deadline precedes credible credential availability.",
-                    ],
-                    [
-                        "Payment readiness contributes ten points toward the hundred-point qualification score.",
-                        "Buyer accepts documented payment timing and passes appropriate payer identity checks.",
-                        "Purchase-order interest without a workable settlement date receives only three points.",
-                        "Calculate the peak funding gap before accepting supplier prepayment obligations.",
-                    ],
-                    [
-                        "Proposal threshold requires seventy-five points plus mandatory rights and transfer evidence.",
-                        "Attach source links, discovery notes, supplier terms, and timestamped budget confirmation.",
-                        "High scores never compensate for prohibited transfers or unverifiable inventory ownership.",
-                        "Send lower-scoring prospects a bounded discovery request rather than buying stock.",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Research a bounded account cohort",
-                    "action": "Build 240 source-linked accounts across one venue cluster and two buyer segments.",
-                    "detail": "Deduplicate contracting entities, record public intent triggers, and separate supplier records from buyer records.",
-                },
-                {
-                    "step": 2,
-                    "title": "Qualify demand before committing inventory",
-                    "action": "Contact the 180 accounts that pass relevance and contact-quality checks.",
-                    "detail": "Use the twelve-business-day cadence, score evidence consistently, and suppress opt-outs across channels.",
-                },
-                {
-                    "step": 3,
-                    "title": "Convert fit into a conditional written offer",
-                    "action": "Issue proposals only after the seventy-five-point threshold and mandatory rights checks.",
-                    "detail": "Specify seats, inclusions, total price, quote expiry, transfer timing, cancellation treatment, and payer obligations.",
-                },
-                {
-                    "step": 4,
-                    "title": "Reconcile the cohort through delivery and settlement",
-                    "action": "Track signed mandates, paid orders, delivered inventory, and settled owner contribution separately.",
-                    "detail": "Review lost-deal reasons weekly and compare actual cash-release dates against the original funding assumptions.",
-                },
-            ],
-        },
-        {
-            "heading": "3. Price the funding gap and reconcile every offer to retained contribution",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Reconcile sourcing decisions to Formula v2.0 before celebrating turnover. The "
-                    "canonical gross bases are $220,000, $1,010,000, and $1,800,000; acquisition "
-                    "costs consume 60%, leaving retained amounts of $88,000, $404,000, and "
-                    "$720,000. Owner profits of $26,400, $191,900, and $468,000 therefore "
-                    "require remaining expense envelopes of $61,600, $212,100, and $252,000. "
-                    "These produce gross-basis margins of 12%, 19.0%, and 26%, and retained "
-                    "margins of 30%, 47.5%, and 65%. The table allocates those envelopes "
-                    "illustratively across selling fees, inventory leakage, cancellation reserves, "
-                    "funding cost, and overhead without changing the canonical totals. Normalize "
-                    "exchange statements first: if a payout already deducts seller fees, recover "
-                    "the corresponding gross sale and fee entries rather than subtracting "
-                    "that fee twice. Likewise, recognize actual markdowns in actual realized "
-                    "proceeds and unsold inventory through the applicable loss treatment; the "
-                    "planning bridge's leakage allowance must not become a second deduction. "
-                    "The supplied 40% retained-share convention is a planning basis, not an "
-                    "automatic ASC 606 conclusion. Actual gross-versus-net presentation depends "
-                    "on principal-versus-agent facts and control of the promised service. Keep "
-                    "client package billings, supplier pass-through amounts, retained contribution, "
-                    "and owner profit visible as separate ledger fields. Do not describe "
-                    "customer spending as the operator's earnings."
-                ),
-                (
-                    "Underwrite each inventory lane with its own cash calendar. A multi-exchange "
-                    "ticket bought for $1,200 and targeted at $2,000 leaves $800 before "
-                    "selling and operating costs. Deduct $200 exchange fees, an $80 leakage "
-                    "allowance, a $60 cancellation allowance, $20 funding cost, and $100 "
-                    "allocated labor and overhead: planned profit is $340. That illustration "
-                    "is not a substitute for the annual scorecard's blended margins. Suite "
-                    "splitting might commit $12,000 for twenty seats offered at $900 each, "
-                    "but only $18,000 of full-capacity proceeds exist before any empty seats, "
-                    "fees, or services. The table's $1,800 leakage stress reduces that ceiling "
-                    "before calculating profit. Tentpole bundles require separately funded "
-                    "admission, rooms, transport, and hosting, often with different cancellation "
-                    "rights. Never assume a refundable hotel makes the whole package refundable. "
-                    "Record contractual payout timing for each exchange rather than assuming "
-                    "instant settlement. If an illustrative $12,000 suite is paid forty-five "
-                    "days before an event and proceeds arrive seven days afterward, $12,000 "
-                    "remains tied up for fifty-two days. At 18% annual simple funding cost, "
-                    "that is approximately $308, replacing any smaller budgeted funding "
-                    "allowance. A postponement extends the clock; rerun profitability and "
-                    "peak cash exposure rather than merely moving the event date."
-                ),
-                (
-                    "Treat the VCC play as an adjacent B2B operating business with its own "
-                    "contracts and ledger. The offer embeds a free automated AP and instant "
-                    "vendor-settlement interface inside freight brokerage, construction general "
-                    "contracting, medical supply, property management, or media agencies, replacing "
-                    "eligible checks and ACH payments with single-use Visa or Mastercard "
-                    "commercial virtual cards. Free describes the buyer-facing software offer, "
-                    "not an absence of acceptance, funding, or servicing costs. Market instant "
-                    "settlement only where the actual provider delivers that timing. At "
-                    "$100,000 eligible monthly invoice volume, a contracted 140–195 basis-point "
-                    "rebate yields $1,400–$1,950 before costs. Subtract an illustrative $700 "
-                    "customer revenue share and $200 servicing allocation to leave $500–$1,050. "
-                    "At $100 million annual eligible volume, the same gross rebate range is "
-                    "$1.4 million–$1.95 million, not $100 million of operator revenue. Confirm "
-                    "eligibility, tiers, reversals, exclusions, and whether the contract actually "
-                    "has no cap. Obtain vendor acceptance instead of forcing card conversion. "
-                    "Inject accurate Level-3 line-item invoice metadata where supported; it "
-                    "does not assure a particular interchange outcome. For card-averse vendors, "
-                    "offer mutually accepted 1.5%–2% ten-day early-pay ACH discounts and document "
-                    "who receives the savings. Focus on fragmented long-tail vendors, but "
-                    "keep every VCC dollar outside this volume's canonical ticket-profit cases."
-                ),
-            ],
-            "table": {
-                "caption": "Canonical Annual Bridge and Separate Illustrative Deal Underwriting",
-                "headers": [
-                    "Case and gross or target basis",
-                    "Acquisition cost and retained starting amount",
-                    "Remaining costs including reserves and funding",
-                    "Profit result and settlement interpretation",
-                ],
-                "rows": [
-                    [
-                        "Conservative annual canonical case uses $220,000 gross ticket and package basis.",
-                        "$132,000 acquisition costs leave exactly $88,000 retained revenue for operating expenses.",
-                        "$22,000 fees + $11,000 leakage + $6,600 cancellation + $400 funding + $21,600 overhead.",
-                        "$26,400 owner profit equals 12% gross margin and 30% retained margin.",
-                    ],
-                    [
-                        "Base annual canonical case uses $1,010,000 gross ticket and package basis.",
-                        "$606,000 acquisition costs leave exactly $404,000 retained revenue for operating expenses.",
-                        "$70,700 fees + $40,400 leakage + $20,200 cancellation + $8,800 funding + $72,000 overhead.",
-                        "$191,900 owner profit equals 19.0% gross margin and 47.5% retained margin.",
-                    ],
-                    [
-                        "Scaled annual canonical case uses $1,800,000 gross ticket and package basis.",
-                        "$1,080,000 acquisition costs leave exactly $720,000 retained revenue for operating expenses.",
-                        "$90,000 fees + $54,000 leakage + $18,000 cancellation + $12,000 funding + $78,000 overhead.",
-                        "$468,000 owner profit equals 26% gross margin and 65% retained margin.",
-                    ],
-                    [
-                        "Illustrative exchange position targets $2,000 proceeds before its modeled leakage allowance.",
-                        "$1,200 ticket acquisition leaves an $800 spread before remaining operating deductions.",
-                        "$200 selling + $80 leakage + $60 cancellation + $20 funding + $100 overhead.",
-                        "$340 planned profit remains exposed until delivery, dispute resolution, and actual payout.",
-                    ],
-                    [
-                        "Illustrative suite position targets twenty seats at $900, totaling $18,000 capacity.",
-                        "$12,000 suite acquisition leaves $6,000 before vacancy stress and operating deductions.",
-                        "$900 selling + $1,800 leakage + $600 cancellation + $308 funding + $700 overhead.",
-                        "$1,692 planned profit reflects fifty-two days of funding at approximately 18% annually.",
-                    ],
-                    [
-                        "Illustrative tentpole bundle targets $40,000 proceeds before its modeled leakage allowance.",
-                        "$28,000 admission, lodging, transport, and hosting costs leave $12,000 initial spread.",
-                        "$2,000 selling + $2,000 leakage + $1,200 cancellation + $800 funding + $2,000 overhead.",
-                        "$4,000 planned profit requires aligned component refunds and documented buyer payment timing.",
-                    ],
-                    [
-                        "Separate VCC adjacency processes $100,000 eligible monthly third-party supplier invoice volume.",
-                        "Contracted 1.40%–1.95% rebates create $1,400–$1,950 receipts, excluding the invoice principal.",
-                        "$700 customer share plus $200 servicing leaves the illustrated monthly contribution.",
-                        "$500–$1,050 contribution remains outside every canonical annual ticket-brokering scorecard scenario.",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four verifications before accepting an irreversible commitment",
-                "body": "A strong lead score does not replace rights evidence, executable delivery, a funded settlement plan, or a complete buyer offer.",
-                "items": [
-                    "Verify supplier identity, ownership or disposal authority, event-specific resale permission, and any required reseller license; retain dated evidence with the opportunity.",
-                    "Test inventory holds, delisting acknowledgments, transfer timing, and manual shutdown procedures across contracted SkyBox, Automatiq, or Logitix connections.",
-                    "Confirm the all-in selling price, seller fees, markdown stress, cancellation exposure, cash-release date, and funding gap after outstanding commitments.",
-                    "Confirm the authorized payer, written package scope, component-specific refund treatment, and buyer acceptance before promising delivery or spending deposits.",
-                ],
-            },
-        },
-        {
-            "heading": "4. Close the first three-to-ten wins without buying avoidable failure",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Close with a written scope that eliminates the buyer's most expensive "
-                    "ambiguities. Name the event, venue, date, section, row when available, "
-                    "seat adjacency, accessible-seating requirements, hospitality inclusions, excluded "
-                    "services, transfer channel, and delivery deadline. Disclose material limits "
-                    "before payment, including credentials released near the event. Under "
-                    "16 CFR Part 464, applicable live-event ticket offers must display "
-                    "the required total price upfront, subject to the rule's specified "
-                    "treatment of excluded charges; do not bury mandatory service charges "
-                    "behind a low headline. Apply relevant state requirements as well, "
-                    "including New York Arts and Cultural Affairs Law Article 25 "
-                    "where the transaction and business fall within its scope. Respond "
-                    "to price objections with equivalent inventory and a complete price "
-                    "comparison, not imaginary scarcity. Respond to trust objections with "
-                    "verified business identity, references shared with permission, documented "
-                    "rights, and appropriate payment protections. If the buyer requires "
-                    "certainty that the supplier cannot support, offer a different allocation "
-                    "or decline that configuration. A sourcing mandate should identify "
-                    "search scope, spending authority, fee earning conditions, cancellation "
-                    "rights, and whether the broker may commit funds. Never let an "
-                    "informal request to explore options become presumed authority to "
-                    "purchase nonreturnable inventory."
-                ),
-                (
-                    "Before broadcasting inventory, test the actual connected stack. SkyBox, "
-                    "Automatiq, and Logitix are named workflow options, not interchangeable "
-                    "promises of universal atomic locking. Verify the contracted integrations "
-                    "for StubHub, Vivid Seats, SeatGeek, and TickPick, including acknowledgment "
-                    "latency, quantity updates, order ingestion, and emergency delisting. "
-                    "Require real-time auto-hold behavior where available and an operator "
-                    "stop rule wherever synchronization becomes uncertain. If one order "
-                    "arrives while another exchange still shows availability, quarantine "
-                    "the remaining quantity and confirm the delisting acknowledgment "
-                    "before accepting additional fills. Do not continue selling while "
-                    "waiting for a dashboard to refresh. Stress-test a contractual "
-                    "replacement charge equal to 200% of a $1,000 sale as "
-                    "$2,000 of exposure, while checking whether that charge replaces "
-                    "or supplements other remedies in the actual agreement. Avoid "
-                    "double-counting the same penalty when calculating the loss. Maintain "
-                    "a permitted manual transfer path, but never bypass issuer controls "
-                    "to rescue an order. Store transfer confirmations, timestamps, recipient "
-                    "acceptance where provided, and reconciliation references. One contractor "
-                    "can verify delivery while the owner handles pricing and exceptions; "
-                    "a second contractor can reconcile invoices and settlements. Explicit "
-                    "responsibility matters more than adding another disconnected tool."
-                ),
-                (
-                    "Run the first ninety days as a sequence of controlled commitments. "
-                    "During days one through fourteen, establish the supplier evidence "
-                    "register, venue knowledge, total-price templates, and payout calendar; "
-                    "research the first account cohort concurrently. During days fifteen "
-                    "through thirty, complete discovery, test transfer operations, and "
-                    "seek conditional mandates or small matched transactions. During "
-                    "days thirty-one through sixty, deliver the first orders and "
-                    "reconcile actual selling fees, substitutions, funding days, and "
-                    "support labor against each quote. During days sixty-one through "
-                    "ninety, repeat the strongest source-and-buyer pairing rather than "
-                    "adding speculative events. The stated one-to-three-month first-deal "
-                    "window is an operating target, not evidence that demand has "
-                    "already been secured. Keep startup commitments inside the "
-                    "$10,000–$50,000 capital range, with a separate reserve for "
-                    "clawbacks and outstanding supplier obligations. Model monthly "
-                    "overhead within the supplied $1,800–$11,000 range and measure "
-                    "the actual burden rather than using revenue as a staffing "
-                    "trigger. At each weekly review, report researched accounts, "
-                    "qualified buyers, proposals, signed mandates, paid sales, fulfilled "
-                    "orders, settled proceeds, and owner contribution. Release buying "
-                    "capacity only after cash availability and remaining liabilities "
-                    "are reconciled. Three profitable, delivered, settled deals teach "
-                    "more than ten unsigned proposals or a large inventory balance "
-                    "whose buyers have not materialized."
-                ),
-            ],
-            "table": {
-                "caption": "Objection Handling That Preserves Rights, Contribution, and Settlement",
-                "headers": [
-                    "Buyer or supplier objection encountered",
-                    "Evidence-based response the operator provides",
-                    "Specific commercial concession worth considering",
-                    "Boundary and next action when unresolved",
-                ],
-                "rows": [
-                    [
-                        "The buyer says another marketplace shows a substantially lower headline price.",
-                        "Compare final totals, seat adjacency, restrictions, delivery timing, and included hospitality.",
-                        "Offer a cheaper verified section or remove genuinely optional service components.",
-                        "Decline to conceal mandatory charges or match economically unsupported inventory pricing.",
-                    ],
-                    [
-                        "The buyer asks why payment precedes the event or credential release.",
-                        "Show supplier obligations, actual transfer timing, payment protections, and cancellation language.",
-                        "Consider documented staged payments when supplier terms and available capital permit.",
-                        "Do not promise refundable funding when underlying components remain irrevocably committed.",
-                    ],
-                    [
-                        "The buyer asks for proof that the broker controls the advertised allocation.",
-                        "Provide redacted supplier evidence and verified business references without exposing barcodes.",
-                        "Arrange a supplier-authorized confirmation call or an available protected payment method.",
-                        "Withdraw the offer if control or disposal authority cannot be established.",
-                    ],
-                    [
-                        "The suite owner says individual seats cannot be sold separately to strangers.",
-                        "Read the executed suite agreement and confirm the restriction with authorized management.",
-                        "Offer an allowed whole-suite corporate transaction instead of prohibited seat splitting.",
-                        "Do not disguise separate sales as guest invitations to defeat contractual restrictions.",
-                    ],
-                    [
-                        "The corporate buyer needs one invoice covering admission, hotel, and transport.",
-                        "Itemize each component, supplier responsibility, service date, and applicable refund treatment.",
-                        "Provide consolidated billing only with supported supplier arrangements and clear earning terms.",
-                        "Never describe bundled third-party spending as wholly retained operator revenue or profit.",
-                    ],
-                    [
-                        "The supplier demands immediate full payment before providing ownership or authority evidence.",
-                        "Explain the required identity, inventory, transfer, and remittance verification sequence.",
-                        "Consider a small documented hold only after authority and refund terms are verified.",
-                        "Walk away from unexplained payment urgency or unverified changes in bank instructions.",
-                    ],
-                    [
-                        "The AP vendor rejects virtual cards because acceptance fees exceed available benefits.",
-                        "Compare agreed card costs with actual early-payment value and existing settlement terms.",
-                        "Offer mutually accepted 1.5%–2% ten-day ACH discounts with documented savings allocation.",
-                        "Retain the vendor's accepted payment rail and exclude unaccepted volume from rebate forecasts.",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": "The first profitable deal begins with transferable rights and funded demand, and ends only when delivery and settlement reconcile.",
-    "diagram_id": "diag-02",
-    "action_checklist": [
-        "Create separate exchange-ticket, suite-splitting, and tentpole-hospitality pipelines with documented rights, transfer deadlines, and cash-release dates.",
-        "Research 240 source-linked accounts across one venue cluster and two buyer segments; deduplicate entities and record dated public intent signals.",
-        "Apply the hundred-point qualification scorecard, require seventy-five points for proposals, and enforce mandatory rights and transfer checks independently.",
-        "Run the twelve-business-day outreach cadence with truthful commercial email, channel-specific contact requirements, and immediate cross-channel opt-out suppression.",
-        "Underwrite each proposal after selling fees, inventory leakage, cancellation exposure, funding delay, and allocated overhead; reconcile annual totals to the canonical retained-share bridge.",
-        "Test connected inventory locks, fulfill the first matched orders, and report mandates, sales, delivery, settlement, and owner contribution as separate outcomes.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "15 U.S.C. §45c — Better Online Ticket Sales Act",
-            "url": "https://www.law.cornell.edu/uscode/text/15/45c",
-            "relevance": "Prohibits covered circumvention of ticket-issuer security measures and purchase controls, and specified sales of tickets obtained through prohibited conduct.",
-        },
-        {
-            "title": "16 CFR Part 464 — Rule on Unfair or Deceptive Fees",
-            "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-D/part-464",
-            "relevance": "Establishes total-price and fee-representation requirements for covered live-event ticket and short-term lodging offers, including disclosure treatment for specified excluded charges.",
-        },
-        {
-            "title": "New York Arts and Cultural Affairs Law Article 25 — Tickets to Places of Entertainment",
-            "url": "https://www.nysenate.gov/legislation/laws/ACA/A25",
-            "relevance": "Provides New York ticket-sale and resale requirements; determine applicable licensing, disclosures, refund obligations, and transaction restrictions before operating within its scope.",
-        },
-        {
-            "title": "15 U.S.C. §7704 — Requirements for Commercial Electronic Mail",
-            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
-            "relevance": "Governs commercial prospecting email, including truthful transmission information, required identification, postal-address disclosure, and functioning opt-out procedures.",
-        },
-        {
-            "title": "47 U.S.C. §227 — Restrictions on Use of Telephone Equipment",
-            "url": "https://www.law.cornell.edu/uscode/text/47/227",
-            "relevance": "Requires channel- and technology-specific analysis before automated calls, prerecorded outreach, or promotional texting.",
-        },
-        {
-            "title": "47 CFR §64.1200 — Delivery Restrictions",
-            "url": "https://www.ecfr.gov/current/title-47/chapter-I/subchapter-B/part-64/subpart-L/section-64.1200",
-            "relevance": "Supplies implementing requirements for covered telephone solicitations, consent, do-not-call procedures, and related outreach controls.",
-        },
-    ],
-}
+CHAPTER_6 = {'id': 'Q6',
+ 'chapter_id': 'Q6',
+ 'chapter_number': 6,
+ 'question_number': 6,
+ 'slug': 'personal-seat-licenses-right-to-buy',
+ 'question_prompt': 'How do Personal Seat Licenses work, what do they cost, and how are they bought and '
+                    'resold?',
+ 'kicker': 'Q6 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Personal Seat Licenses: The Right to Buy',
+ 'subtitle': 'PSL mechanics and pricing ($500 to $50,000) for the Broncos, Browns, Bills, Commanders, '
+             'Vikings, Rams, Bears and Falcons, the case against PSLs, PSL secondary marketplaces, and '
+             'season-ticket waitlists',
+ 'layout_template': 'step_by_step_blueprint',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Practitioners agree a personal seat license buys zero tickets. It is a one-time fee '
+                      'for the right, and the obligation, to buy season tickets for one specific seat, and '
+                      'it is forfeited if renewals stop. Teams favor PSLs because the cash arrives during '
+                      "construction and escapes the NFL's 34% ticket-revenue share, and 21 to 22 NFL teams "
+                      'now use them. Buffalo sold over 53,000 licenses priced from $750 to $50,000 for '
+                      'roughly $262 million gross. On the street, TicketWire buyers skip 20-plus-year '
+                      'waitlists by using team-linked marketplaces, pslsource.com, and Facebook groups, '
+                      'and their lowball offers saved $3,000 to $4,000. The economics hinge on 10% '
+                      'ten-year financing, 12%-per-side resale fees, and recouping costs by selling '
+                      'individual games. Practitioners split on whether licenses behave like appreciating '
+                      "real estate or a one-way bet where the team's downside is capped at zero.",
+ 'key_metrics': [{'label': 'Bills PSL Gross Proceeds',
+                  'metric': 'Bills PSL Gross Proceeds',
+                  'value': 'Approximately $262 million gross, roughly $259 million net, across over 53,000 '
+                           'licenses',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Buffalo sold out its entire offered PSL inventory by December 2025. '
+                             'Quarterly reports to the state showed the gross figure, which beat the '
+                             "team's original $225 million target.",
+                  'source': 'THE MARKUP FILES ([rT4gQkoEVDI @ 00:01:40])'},
+                 {'label': 'Raiders PSL Resale Fee Load',
+                  'metric': 'Raiders PSL Resale Fee Load',
+                  'value': '12% seller fee plus 12% buyer fee, $250 minimum; a $10,000 sale nets the '
+                           'seller $8,800 and costs the buyer $11,200',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Fee structure from the Raiders' official marketplace FAQ. It works out to "
+                             'almost $2,400 in combined fees on a single $10,000 transaction.',
+                  'source': 'THE MARKUP FILES ([rT4gQkoEVDI @ 00:12:53])'},
+                 {'label': 'Unshared NFL Ticket Revenue Advantage',
+                  'metric': 'Unshared NFL Ticket Revenue Advantage',
+                  'value': "34% of each team's ticket revenue is shared with other teams; PSL revenue is "
+                           'not',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Sports economist Victor Matheson explains why owners sell PSLs instead of '
+                             'raising ticket prices: the money comes in early and does not go to the '
+                             'league.',
+                  'source': '9NEWS ([s4p8gnL-WFw @ 00:01:12])'},
+                 {'label': 'Offer-Route Savings on Resale PSLs',
+                  'metric': 'Offer-Route Savings on Resale PSLs',
+                  'value': 'About $3,000 to $4,000 saved by making an offer instead of paying asking price',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Shawn put a lowball offer on resale club-seat licenses through a seat '
+                             'license marketplace, and the seller accepted it.',
+                  'source': 'TicketWire ([M80btlo7xJc @ 00:01:48])'}],
+ 'sections': [{'title': 'Section 1: The Practitioner Consensus',
+               'paragraphs': ['Every practitioner who walks through the product lands on the same '
+                              'definition: a PSL buys you zero tickets. Sports economist Victor Matheson '
+                              'puts it bluntly on 9NEWS. When you buy a PSL, you have not bought season '
+                              'tickets or even a single ticket. You have bought the right to buy season '
+                              'tickets going forward [s4p8gnL-WFw @ 00:00:36]. News 5 Cleveland sharpens '
+                              'the edge: it is a one-time fee that gives fans the right and the obligation '
+                              'to pay for season tickets for the same seat, year after year [-zd2mlj0u8U @ '
+                              '00:01:27]. THE MARKUP FILES splits the deal into two pieces most fans '
+                              'assume come bundled. The first is the right to be the designated buyer for '
+                              'a specific seat. The second is the season tickets themselves. You are not '
+                              'buying the chair or real estate, only the contractual right to be the '
+                              'person the team invoices at renewal [rT4gQkoEVDI @ 00:02:41]. JCFB adds the '
+                              'hook that makes the obligation real: holders must buy and renew season '
+                              'tickets every year, or the PSL is forfeited and sold to someone else '
+                              '[Dl5FeuC7tUA @ 00:03:05]. For an operator, every license carries a '
+                              'recurring annual bill on top of the upfront price. The asset only stays '
+                              'alive as long as the renewal checks keep clearing on schedule.',
+                              'The money logic is where the practitioners agree most tightly. Matheson '
+                              'tells 9NEWS that owners building new stadiums can either jack up ticket '
+                              "prices or sell PSLs. The PSL route wins because 34% of each NFL team's "
+                              'ticket revenue is shared with other teams, while PSL revenue does not have '
+                              'to go to the league. It also lands before a single ticket is sold '
+                              '[s4p8gnL-WFw @ 00:01:12]. THE MARKUP FILES describes the same timing '
+                              'advantage from the construction side. A $2.1 billion build needs enormous '
+                              'cash long before season ticket and sponsorship revenue arrives. PSL '
+                              'commitments bridge that gap because fans pay during construction, either in '
+                              'full or through financing plans [rT4gQkoEVDI @ 00:05:29]. The scale is no '
+                              "longer niche. GW's Lisa Delpy tells FOX 5 Washington DC that PSLs are a "
+                              'very common revenue generation technique that has worked well wherever it '
+                              'has been implemented, with 21 NFL teams using them [ZiwpM_Fr8eU @ '
+                              '00:02:11]. Zach Bye runs the full list from the Falcons through the Titans '
+                              'and calls it industry standard, for better or worse. When NFL teams build '
+                              'new stadiums, he says, the fans are the ones helping pay for them '
+                              '[FZyPq0QfTdg @ 00:07:15]. The working assumption for any new-build market '
+                              'is that a license program is coming.',
+                              'Two more mechanics show up across nearly every account: pricing tracks seat '
+                              'quality, and the license is a tradable asset. THE MARKUP FILES documents '
+                              'the Buffalo price ladder. It runs from $750 for upper-level end zone seats '
+                              'to $50,000 for premium club positions, a 67-to-1 ratio for the same core '
+                              'contractual right, driven by location, demand, and bundled amenities '
+                              '[rT4gQkoEVDI @ 00:09:50]. FOX 5 Washington DC confirms the general rule: '
+                              'the nicer the seat, the more expensive the PSL. Some Commanders licenses '
+                              'will price well above the roughly $15,000 average and others well below it '
+                              '[ZiwpM_Fr8eU @ 00:01:23]. On the exit side, MPR News compares the shift to '
+                              'moving from renting an apartment to buying a condo. Holders get title to a '
+                              'seat they can sell, trade, or give away like real estate, and they can '
+                              'recover at least some of their money. With some teams, the licenses have '
+                              'grown in value by a lot [V-6dQZRMe2Y @ 00:02:08]. Expedition Money Snacks '
+                              'reports the same at Soldier Field, where Bears PSL owners renew every year '
+                              'and can sell or transfer their rights to other fans [JVYNSYvukwY @ '
+                              '00:00:28]. That transferability is the foundation of the brokering angle. '
+                              'Licenses change hands on secondary marketplaces, and the price of entry '
+                              'floats with demand.'],
+               'table': {'caption': 'Where the practitioners converge on how PSLs work',
+                         'headers': ['Consensus Point',
+                                     'What Practitioners Report',
+                                     'Operator Implication',
+                                     'Expert Source'],
+                         'rows': [['A PSL buys the right to purchase, not a ticket',
+                                   'Buying a PSL gets you zero tickets, only the right to buy season '
+                                   'tickets going forward',
+                                   'Budget the license and the annual season ticket bill as two separate '
+                                   'cash outflows',
+                                   '9NEWS ([s4p8gnL-WFw @ 00:00:36])'],
+                                  ['Annual renewal is mandatory to keep the license alive',
+                                   'Holders must buy and renew season tickets every year or forfeit the '
+                                   'license to someone else',
+                                   'Treat a missed renewal as a total write-off of the upfront license '
+                                   'payment',
+                                   'JCFB ([Dl5FeuC7tUA @ 00:03:05])'],
+                                  ['Teams keep PSL money out of league revenue sharing',
+                                   '34% of ticket revenue is shared with other teams, but PSL revenue '
+                                   'stays with the selling team',
+                                   'Expect every new-build owner to push a license program because that '
+                                   'cash is unshared',
+                                   '9NEWS ([s4p8gnL-WFw @ 00:01:12])'],
+                                  ['Seat licenses are now standard for new NFL buildings',
+                                   '21 NFL teams use seat licenses, and the technique has worked well '
+                                   'wherever it was implemented',
+                                   'Assume any new NFL stadium market will launch a license program before '
+                                   'opening day',
+                                   'FOX 5 Washington DC ([ZiwpM_Fr8eU @ 00:02:11])'],
+                                  ['License price scales directly with seat location and amenities',
+                                   "Buffalo's ladder ran from $750 upper end zone to $50,000 premium club, "
+                                   'a 67-to-1 ratio',
+                                   "Map every section's license tier before pricing any acquisition or "
+                                   'resale target',
+                                   'THE MARKUP FILES ([rT4gQkoEVDI @ 00:09:50])'],
+                                  ['Licenses are transferable assets that can appreciate',
+                                   'Holders can sell, trade, or give the seat away, and some licenses grew '
+                                   'a lot in value',
+                                   'Licenses trade on secondary marketplaces, creating buy-low, sell-high '
+                                   'inventory for operators',
+                                   'MPR News ([V-6dQZRMe2Y @ 00:02:08])'],
+                                  ['The one-time fee is commonly financed over several payments',
+                                   'In a lot of markets, fans can finance the PSL fee through a few '
+                                   'payments over time',
+                                   'Factor payment plan terms into total acquisition cost and resale '
+                                   'payoff timing',
+                                   'Zach Bye ([FZyPq0QfTdg @ 00:03:25])']]}},
+              {'title': 'Section 2: Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['Acquisition starts with deciding whether to wait or buy. On TicketWire, '
+                              'Shawn walks through the Steelers homepage, where the official season ticket '
+                              'waitlist sits next to a resale option. He notes that a lot of franchises, '
+                              'including the Steelers, Packers, Cowboys, and probably the Broncos, run '
+                              '20-plus-year waits [hlfwsoMBQS0 @ 00:00:00]. The skip-the-line route is the '
+                              'team-linked marketplace where current holders sell their licenses. Hovering '
+                              'over a section shows the listing count and the average price per seat. That '
+                              'average ran about $18,000 to $20,000 a seat at the 50-yard line, around '
+                              '$1,500 to $2,000 in the upper sections, and as high as $31,000 for premium '
+                              'spots [hlfwsoMBQS0 @ 00:01:06]. For the Vikings, the TicketWire crew pulls '
+                              'up pslsource.com sorted cheapest first. It shows roughly $700 per seat for '
+                              'nosebleeds and $3,000 per seat for corners. They then cross-shop STR '
+                              'Marketplace, where a stadium map and a seat-view preview let buyers pick an '
+                              'exact section [M80btlo7xJc @ 00:00:23]. The third channel is Facebook '
+                              'groups such as the Minnesota Vikings season ticket marketplace, where '
+                              'holders post licenses to sell or trade [M80btlo7xJc @ 00:02:28]. Every one '
+                              'of these listings covers the license only. The season ticket bill still '
+                              'arrives separately every year after the one-time purchase.',
+                              'The TicketWire buyers agree on one tactic: never pay asking. Shawn points '
+                              'to a section 530 listing asking $3,500 total for two seats. He suggests '
+                              "offering $2,800 and expecting a counter around $3,100, because it doesn't "
+                              'hurt to ask [hlfwsoMBQS0 @ 00:02:11]. He then describes looking at club '
+                              'seats with his buying partner Chris and throwing out the lowest-ball offer '
+                              'he could think of, which the seller accepted. The crew estimates the offer '
+                              'route saved him about $3,000 to $4,000. If a seller turns you down, you '
+                              'make another offer to somebody else [M80btlo7xJc @ 00:01:48]. Chris paid '
+                              'sticker price for his section 410 license. Corey, who bought in later after '
+                              'doing his research, came in at just over half the going rate. Corey '
+                              'actually paid the full asking price, because the deal already looked too '
+                              'good to be true and he did not want to get greedy [M80btlo7xJc @ 00:04:13]. '
+                              'Safety costs money in the form of the marketplace fee. The crew admits it '
+                              "stings to see a checkout fee of 'like 15,' but says it buys security in the "
+                              'purchase. Facebook deals, by contrast, require checking that sellers are '
+                              'real people making legit offers, because scams happen every day '
+                              '[M80btlo7xJc @ 00:03:36].',
+                              'The unit economics come down to financing, resale friction, and recouping '
+                              'costs game by game. 9NEWS consumer investigator Steve Steger reports that '
+                              'Buffalo fans described a 10% interest rate on a 10-year PSL payment plan. '
+                              'The Titans offered a 10% discount for paying in full up front [w0cU0-OiMB8 '
+                              '@ 00:03:07]. Exit costs are steep. THE MARKUP FILES cites the Raiders '
+                              'marketplace FAQ, where the seller and the buyer each pay a 12% fee with a '
+                              '$250 minimum. A $10,000 sale nets the seller $8,800 while the buyer pays '
+                              '$11,200, almost $2,400 in combined fees. Any outstanding financing balance '
+                              'typically has to be settled before proceeds are released [rT4gQkoEVDI @ '
+                              '00:12:53]. The offset is the secondary ticket market. The president of VIP '
+                              'Ticks.com tells WGRZ-TV that because PSLs are expensive, many Bills season '
+                              'ticket holders will pick the games they want and sell the rest to recoup '
+                              'their investment. He says 3,500 to 6,000 seats per game have hit the '
+                              'secondary market [-hTj-NHHeDc @ 00:01:07]. MPR News made the same case in '
+                              'Minnesota, which legalized scalping in 2007. Big markups on playoff and '
+                              'Green Bay games could offset license costs for fans willing to sell off '
+                              'some of their tickets [V-6dQZRMe2Y @ 00:02:47].'],
+               'table': {'caption': 'Street-level PSL price points, fees, and financing terms',
+                         'headers': ['Venue / Channel',
+                                     'Tier or Mechanic',
+                                     'Stated Number',
+                                     'Expert Source'],
+                         'rows': [['Steelers seat license resale marketplace listings',
+                                   'Average price per seat along the 50-yard line',
+                                   'About $18,000 to $20,000 per seat average at midfield',
+                                   'TicketWire ([hlfwsoMBQS0 @ 00:01:06])'],
+                                  ['Steelers section 530 resale listing for two seats',
+                                   'Total asking price and suggested counteroffer play',
+                                   '$3,500 asking for two seats; offer $2,800 and expect a counter near '
+                                   '$3,100',
+                                   'TicketWire ([hlfwsoMBQS0 @ 00:02:11])'],
+                                  ['Vikings licenses listed on pslsource.com',
+                                   'Cheapest-first sort across nosebleed and corner seats',
+                                   'Roughly $700 per seat for nosebleeds and $3,000 per seat for corners',
+                                   'TicketWire ([M80btlo7xJc @ 00:00:23])'],
+                                  ['Bills PSL payment plan reported by fans',
+                                   'Financing terms on the outstanding license balance',
+                                   '10% interest rate on a payment plan lasting 10 years',
+                                   '9NEWS ([w0cU0-OiMB8 @ 00:03:07])'],
+                                  ['Titans new stadium license pricing by deck',
+                                   'Upper deck versus lower deck per-seat license cost',
+                                   '$2,500 to $3,500 upper deck and $10,000 to $12,000 lower deck per seat',
+                                   '9NEWS ([w0cU0-OiMB8 @ 00:02:46])'],
+                                  ['Raiders official PSL resale marketplace fee schedule',
+                                   'Seller and buyer fees charged on each accepted sale',
+                                   '12% per side with a $250 minimum; a $10,000 sale nets the seller '
+                                   '$8,800',
+                                   'THE MARKUP FILES ([rT4gQkoEVDI @ 00:12:53])'],
+                                  ['Bills new Highmark Stadium priority list after sellout',
+                                   'Deposit to stay in line for released licenses',
+                                   '$150 per seat deposit to join the priority list',
+                                   'WGRZ-TV ([-hTj-NHHeDc @ 00:01:46])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'How the buyers actually beat the listing price',
+                           'body': 'The TicketWire crew and the Bills secondary market dealer agree on a '
+                                   'few moves: never anchor to asking, pay for transaction security on big '
+                                   'deals, and sell off games to work the cost basis down.',
+                           'items': ['Never pay asking: Shawn suggests answering a $3,500 two-seat ask '
+                                     'with an offer of $2,800 and expecting a counter near $3,100 '
+                                     '[TicketWire — hlfwsoMBQS0 @ 00:02:11]',
+                                     'Send lowball offers to several sellers: a rejected offer costs '
+                                     'nothing, so move on to the next seller. The lowball route saved '
+                                     'roughly $3,000 to $4,000 [TicketWire — M80btlo7xJc @ 00:01:48]',
+                                     'Pay the platform fee on big purchases: the marketplace fee buys '
+                                     'security in the purchase, while Facebook deals require checking that '
+                                     'sellers are real people with legit offers [TicketWire — M80btlo7xJc '
+                                     '@ 00:03:36]',
+                                     'Sell off games to recoup: holders pick the games they want and push '
+                                     'the rest to the secondary market to recover part of their investment '
+                                     '[WGRZ-TV — -hTj-NHHeDc @ 00:01:07]']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Choose between the waitlist and resale',
+                              'action': "Check the team's official season ticket waitlist, then go "
+                                        'straight to the resale marketplace if the wait is long.',
+                              'detail': 'Franchises such as the Steelers, Packers, and Cowboys run waits '
+                                        'of 20-plus years, and the team homepage links to a '
+                                        'holder-to-holder license marketplace next to the waitlist '
+                                        '[TicketWire — hlfwsoMBQS0 @ 00:00:00]'},
+                             {'step': 2,
+                              'title': 'Compare prices across every marketplace',
+                              'action': 'Price the same section on pslsource.com, STR Marketplace, and '
+                                        'team Facebook groups before committing.',
+                              'detail': "Check each platform's fee structure before buying ('trust but "
+                                        "verify'): one marketplace may charge no fee while another does "
+                                        '[TicketWire — M80btlo7xJc @ 00:00:46]'},
+                             {'step': 3,
+                              'title': 'Offer below ask and wait out the transfer',
+                              'action': 'Submit the lowest credible offer, move on to other sellers if '
+                                        'rejected, and expect paperwork to take time after acceptance.',
+                              'detail': "Shawn's lowest-ball club-seat offer was accepted [TicketWire — "
+                                        "M80btlo7xJc @ 00:02:06]. Corey's accepted deal took weeks and "
+                                        'weeks before it became official [TicketWire — M80btlo7xJc @ '
+                                        '00:04:54]'},
+                             {'step': 4,
+                              'title': 'Model the carrying cost and the exit cost',
+                              'action': 'Price in financing terms, mandatory annual renewals, and resale '
+                                        'fees before setting a target buy price.',
+                              'detail': 'Buffalo fans reported 10% interest over 10 years, and the Bills '
+                                        'contract forfeits the PSL if season tickets go unpaid [9NEWS — '
+                                        'w0cU0-OiMB8 @ 00:03:07]. Raiders resale takes 12% from each side '
+                                        '[THE MARKUP FILES — rT4gQkoEVDI @ 00:12:53]'}]},
+              {'heading': 'Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The sharpest split is moral, and it shapes how a PSL gets pitched to any '
+                              'buyer. JCFB calls seat licenses one of the biggest culprits of teams taking '
+                              'advantage of fan loyalty. JCFB argues that a Pegula family worth $9.3 '
+                              'billion charging lifelong fans $1,000 to $50,000 for the right to buy '
+                              'season tickets is a slap in the face [Dl5FeuC7tUA @ 00:06:24]. Sports '
+                              'economist Victor Matheson agrees the deal is absolutely raw for fans, yet '
+                              'he flips the policy verdict. In his view, PSLs are a good thing from a '
+                              'public policy standpoint because the season ticket holder should pay for '
+                              'the stadium more than a random school teacher in Aurora who does not even '
+                              'like football [w0cU0-OiMB8 @ 00:01:54]. University at Buffalo sports law '
+                              'professor Nellie Drew admits to first thinking PSLs were the greatest scam '
+                              'going. Drew then frames them as a financing vehicle that makes the people '
+                              'who physically enjoy the facility pay their share [gBkBFmKTfls @ 00:00:40]. '
+                              "GW's Lisa Delpy goes further, calling PSLs a very common revenue generation "
+                              'technique that has worked well at every stadium that implemented one '
+                              '[ZiwpM_Fr8eU @ 00:02:03]. The outrage camp and the economist camp both '
+                              'expect PSLs to stick, so license supply is not going away even as fan '
+                              'backlash grows louder in every new market.',
+                              'Practitioners also split on whether license money is owner profit or '
+                              'project obligation. THE MARKUP FILES walks the Bills capital stack: $600 '
+                              'million from New York State, $250 million from Erie County, and a $200 '
+                              'million NFL G4 loan. Ownership was on the hook for every dollar of overrun '
+                              'on a bill that climbed from an early $1.4 billion estimate to just over '
+                              "$2.1 billion. Their conclusion is that the PSL proceeds were not the team's "
+                              'profit but part of its obligation to get the building done [rT4gQkoEVDI @ '
+                              '00:07:28]. Athletic Asset reads the same Buffalo deal as $850 million of '
+                              'public money with seat licenses stacked on top, and states the asymmetry '
+                              "bluntly: the team's downside is capped at zero, yours is not [QSa3WS1Pbrc @ "
+                              "00:01:05]. JCFB draws the line by funding source. SoFi's $1,000 to $200,000 "
+                              'licenses feel more acceptable to JCFB because Rams ownership built the '
+                              "stadium 100% privately, while Buffalo's taxpayer-heavy build makes the same "
+                              'tactic indefensible [Dl5FeuC7tUA @ 00:05:30]. 9NEWS adds the motive nobody '
+                              'disputes. NFL teams share 34% of ticket revenue with other teams, but PSL '
+                              'money stays home and lands before a single ticket is sold [s4p8gnL-WFw @ '
+                              "00:01:12]. Whichever camp an operator sits in, license cash is the team's "
+                              'earliest and unshared capital.',
+                              'On the buy side, the TicketWire crew run opposite playbooks out of the same '
+                              'section 410. Chris paid sticker price on the cheapest license in that '
+                              'section and would not change a thing. Sean threw the lowest ball offer they '
+                              'could think of at club seats, got it accepted, and saved roughly three to '
+                              'four thousand dollars. Corey paid the full asking price on a listing '
+                              'already just over half the going rate, because it looked too good to haggle '
+                              'over [M80btlo7xJc @ 00:03:56]. On the Steelers marketplace they model the '
+                              'haggle explicitly. A $3,500 pair might take an offer at 32 or 33, and '
+                              'opening at 28 could draw a counter at 31 [hlfwsoMBQS0 @ 00:02:11]. The exit '
+                              'thesis splits too. MPR News frames the license like condo real estate that '
+                              'can be sold, traded, or given away, and notes some licenses have grown in '
+                              'value by a lot. MPR also pitches big markups on playoff and Green Bay games '
+                              'in the secondary market as a way to offset the license cost [V-6dQZRMe2Y @ '
+                              '00:02:27]. THE MARKUP FILES counters that a license can be transferable '
+                              'without being easy to sell. Even a completed sale may leave the original '
+                              'owner with a loss, depending on demand and team performance at the moment '
+                              'of sale [rT4gQkoEVDI @ 00:14:30].'],
+               'table': {'caption': 'Side-by-side practitioner disagreements on PSL value, funding, and '
+                                    'buying tactics',
+                         'headers': ['Debate', 'Camp A Position', 'Camp B Position', 'Expert Source'],
+                         'rows': [['Are PSLs a scam or fair user-pays financing?',
+                                   'JCFB calls PSLs a scam that exploits fan loyalty for billionaire '
+                                   'owners',
+                                   'Victor Matheson says stadium users, not random taxpayers, should pay '
+                                   'for it',
+                                   'JCFB ([Dl5FeuC7tUA @ 00:02:02]); 9NEWS ([w0cU0-OiMB8 @ 00:01:54])'],
+                                  ['Is license cash owner profit or a construction obligation?',
+                                   'PSL proceeds were part of the Bills obligation to finish the build',
+                                   "The team's downside is capped at zero while the fan's is not",
+                                   'THE MARKUP FILES ([rT4gQkoEVDI @ 00:07:50]); Athletic Asset '
+                                   '([QSa3WS1Pbrc @ 00:01:05])'],
+                                  ['Should a buyer pay asking price or lowball the seller?',
+                                   'Chris paid sticker on section 410 and would not change a thing',
+                                   "Sean's lowball club offer was accepted, saving three to four thousand "
+                                   'dollars',
+                                   'TicketWire ([M80btlo7xJc @ 00:01:48])'],
+                                  ['Facebook groups versus fee-charging third-party PSL marketplaces',
+                                   'Facebook season ticket groups list SBLs to sell or trade directly',
+                                   'The third-party fee buys security in the purchase you are making',
+                                   'TicketWire ([M80btlo7xJc @ 00:03:13])'],
+                                  ['Finance the license over time or pay everything upfront?',
+                                   'Buffalo fans reported a 10% interest rate on a 10-year payment plan',
+                                   'The Titans offered a 10% discount for paying the license in full '
+                                   'upfront',
+                                   '9NEWS ([w0cU0-OiMB8 @ 00:03:07])'],
+                                  ['Is a PSL an appreciating asset or a sunk cost?',
+                                   'MPR says holders get title to a seat and some licenses grew a lot',
+                                   'THE MARKUP FILES says there is no guaranteed return for the buyer at '
+                                   'sale',
+                                   'MPR News ([V-6dQZRMe2Y @ 00:02:27]); THE MARKUP FILES ([rT4gQkoEVDI @ '
+                                   '00:15:09])'],
+                                  ['Skip the license entirely through partial plans or priority lists',
+                                   'Jets rolled out a 10-game pack without a PSL that excludes seven games',
+                                   'Bills fans can join the priority list with a $150 per seat deposit',
+                                   'WKBW TV | Buffalo, NY ([gBkBFmKTfls @ 00:01:34]); WGRZ-TV '
+                                   '([-hTj-NHHeDc @ 00:01:46])']]}},
+              {'heading': 'Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The most expensive trap is that the right to buy is really a duty to buy. '
+                              'JCFB stresses that a PSL holder must purchase and renew season tickets '
+                              'every year, or the license is forfeited and sold to someone else '
+                              '[Dl5FeuC7tUA @ 00:03:05]. 9NEWS consumer investigator Steve Steger found '
+                              'the Bills contract spells it out: skip your season ticket payment and you '
+                              'forfeit the PSL [w0cU0-OiMB8 @ 00:03:26]. THE MARKUP FILES frames it as a '
+                              'dependency. The right to buy is dependent on actually buying, so you do not '
+                              'simply hold the access forever regardless of whether you keep paying for '
+                              'tickets [rT4gQkoEVDI @ 00:12:14]. The exit door can also jam. Around 2020, '
+                              'thousands of Atlanta Falcons PSL holders defaulted, and many of them said '
+                              'they could not find a buyer, because marketplace prices depend on how good '
+                              'the team actually is [w0cU0-OiMB8 @ 00:03:41]. Relocation is the nuclear '
+                              'version. Bill Simmons points out that St. Louis fans owned PSLs for a Rams '
+                              'team that suddenly ditched them, and those licenses did not even transfer '
+                              'to the new Los Angeles stadium [VzrNov3Y_qM @ 00:03:03]. The operator read '
+                              'is blunt: a license is only as liquid as the on-field product and the '
+                              "franchise's willingness to stay put. One missed ticket bill risks the "
+                              'entire upfront stake, not just a season of games.',
+                              'Resale friction eats margin on both sides of every trade. THE MARKUP FILES '
+                              'breaks down the Raiders marketplace, where the seller pays a 12% fee with a '
+                              '$250 minimum and the buyer pays a separate 12% fee on the same amount. On a '
+                              '$10,000 deal, the seller receives $8,800 and the buyer pays $11,200, so '
+                              'almost $2,400 disappears into combined fees on a single transaction '
+                              '[rT4gQkoEVDI @ 00:13:14]. If the seller financed the original license and '
+                              'still carries a balance, that balance typically has to be settled before '
+                              'any sale proceeds are released. That is why a resale listing price is not '
+                              'the same as a payout [rT4gQkoEVDI @ 00:13:35]. TicketWire confirm the sting '
+                              'from the buyer side: seeing a fee of around 15 at checkout makes you ask '
+                              'what the platform even did, and their answer is that it bought security on '
+                              'the purchase [M80btlo7xJc @ 00:03:36]. The same crew report a timing trap. '
+                              "Corey's accepted offer took weeks and weeks before anything happened, long "
+                              'enough to fear the deal was too good to be true, until a representative '
+                              'confirmed it by email [M80btlo7xJc @ 00:04:54]. Expedition Money Snacks '
+                              'notes Bears holders can sell or transfer PSL rights to other fans '
+                              '[JVYNSYvukwY @ 00:00:28], but every transfer still runs through fees, '
+                              'payoffs, and processing lag.',
+                              'Upgrade math blows up long-held positions when a team moves into a new '
+                              'building. JCFB cites a Browns season ticket holder whose PSL and season '
+                              'ticket cost for six tickets jumped from $24,600 to $131,000 at the new '
+                              'stadium, more than five times the old price [Dl5FeuC7tUA @ 00:08:26]. News '
+                              "5 Cleveland's Michelle Jarboe ran the Browns pricing survey and pulled "
+                              'licenses ranging from $550 to more than $193,000, with VIP club seats '
+                              'around a $4,500 midpoint. Longtime Dawg Pound fan Rich called the whole '
+                              'thing a money grab and is drawing a line rather than paying [-zd2mlj0u8U @ '
+                              '00:02:20]. Zach Bye warns that the per-seat price quietly doubles. A '
+                              '$10,000 license on the 45-yard line becomes $20,000 for a pair, on top of '
+                              'the season ticket bill, and Bye expects thousands of families to walk '
+                              "[FZyPq0QfTdg @ 00:04:31]. THE MARKUP FILES' rounded Mark and Sarah example "
+                              'shows the full exposure. Two $25,000 licenses plus $10,000 a year in '
+                              'tickets totals $100,000 after five seasons, before parking, food, or '
+                              'financing charges [rT4gQkoEVDI @ 00:16:29]. The same channel reports a '
+                              'Bills family holding four seats since the 1960s that faced a combined bill '
+                              'of around $40,000 just to keep comparable seats. Run the five-year all-in '
+                              'number per pair before committing to any seat.'],
+               'table': {'caption': 'Practitioner-reported PSL failure modes and the economics check each '
+                                    'one demands',
+                         'headers': ['Failure Mode', 'What Happened', 'Economics Check', 'Expert Source'],
+                         'rows': [['Forfeiture after a missed season ticket payment',
+                                   'The Bills contract forfeits the PSL when the season ticket bill goes '
+                                   'unpaid',
+                                   'Model every future ticket renewal as a mandatory cost, not optional '
+                                   'spending',
+                                   '9NEWS ([w0cU0-OiMB8 @ 00:03:26])'],
+                                  ['Mass default with no buyers on the marketplace',
+                                   'Thousands of Falcons holders defaulted around 2020, many unable to '
+                                   'find buyers',
+                                   'Resale value tracks team quality, so losing seasons crush exit prices',
+                                   '9NEWS ([w0cU0-OiMB8 @ 00:03:41])'],
+                                  ['Team relocation strands the original license holders',
+                                   "St. Louis PSLs did not transfer to the Rams' new Los Angeles stadium",
+                                   'A relocating franchise can wipe out the entire license stake at once',
+                                   'Any Given Wednesday with Bill Simmons ([VzrNov3Y_qM @ 00:03:03])'],
+                                  ['Double-sided marketplace fees on every resale transaction',
+                                   'Raiders charge 12% to the seller and 12% to the buyer, $250 minimum',
+                                   'A $10,000 trade loses almost $2,400 in combined fees before any payoff',
+                                   'THE MARKUP FILES ([rT4gQkoEVDI @ 00:13:14])'],
+                                  ['Scam exposure in Facebook season ticket marketplace groups',
+                                   'Vikings Facebook marketplace shows many people buying, selling, and '
+                                   'trading SBLs',
+                                   'Verify real people and legit offers, or pay the third-party security '
+                                   'fee',
+                                   'TicketWire ([M80btlo7xJc @ 00:03:13])'],
+                                  ['Financing charges inflating the true license price',
+                                   'Buffalo fans reported a 10% interest rate on a 10-year payment plan',
+                                   'Compare financing against the Titans-style 10% upfront discount before '
+                                   'signing',
+                                   '9NEWS ([w0cU0-OiMB8 @ 00:03:07])'],
+                                  ['New stadium price jump on a long-held seat package',
+                                   'A Browns six-seat package went from $24,600 to $131,000 at the new '
+                                   'stadium',
+                                   'Total cost can exceed five times the old price after a stadium move',
+                                   'JCFB ([Dl5FeuC7tUA @ 00:08:26])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Four Checks Before Any License Buy or Flip',
+                           'body': 'Every item below comes from a loss, scare, or forced exit that '
+                                   'practitioners reported firsthand. Clear all four before wiring money '
+                                   'for a PSL or listing one for sale.',
+                           'items': ['Confirm you can cover every future season ticket bill, because the '
+                                     'Bills contract forfeits the PSL on non-payment [9NEWS — w0cU0-OiMB8 '
+                                     '@ 00:03:26].',
+                                     'Net out both marketplace fees and any outstanding loan payoff before '
+                                     'pricing a flip, since a $10,000 Raiders sale nets the seller $8,800 '
+                                     '[THE MARKUP FILES — rT4gQkoEVDI @ 00:13:14].',
+                                     'Verify Facebook counterparties are real people making legit offers, '
+                                     'because scams happen every day in those groups [TicketWire — '
+                                     'M80btlo7xJc @ 00:03:13].',
+                                     'Stress-test your exit against a losing team, since thousands of '
+                                     'Falcons holders defaulted around 2020 when many could not find a '
+                                     'buyer [9NEWS — w0cU0-OiMB8 @ 00:03:41].']}}],
+ 'pull_quote': "The team's downside is capped at zero. Yours isn't. — Athletic Asset (QSa3WS1Pbrc @ "
+               '00:01:05).',
+ 'diagram_id': 'diag-02',
+ 'action_checklist': ["Check the team's season ticket waitlist first, then go straight to the "
+                      'holder-to-holder marketplace if you are too excited to wait 20-plus years; if the '
+                      'stadium is sold out, park on the priority list with a $150 per seat deposit '
+                      '[TicketWire — hlfwsoMBQS0 @ 00:00:22] [WGRZ-TV — -hTj-NHHeDc @ 00:01:46].',
+                      'Compare price per seat across PSL Source and the STR Marketplace, from around $700 '
+                      'nosebleeds to $3,000 corners on Vikings listings, and confirm whether each platform '
+                      'charges a fee [TicketWire — M80btlo7xJc @ 00:00:23].',
+                      'Never pay asking price by default; open with the lowest ball offer you can justify '
+                      'and move to another seller if denied [TicketWire — M80btlo7xJc @ 00:02:06].',
+                      'Price financing against paying in full, weighing a reported 10% interest rate over '
+                      "10 years in Buffalo against the Titans' 10% upfront discount [9NEWS — w0cU0-OiMB8 @ "
+                      '00:03:07].',
+                      'Recoup part of the license cost by choosing the games you will attend and selling '
+                      'the rest of your season tickets on the secondary market [WGRZ-TV — -hTj-NHHeDc @ '
+                      '00:01:07].',
+                      "If a PSL is coming to your team's new stadium, start saving monthly now, since "
+                      'Denver holders have about five to six years to prepare [Zach Bye — FZyPq0QfTdg @ '
+                      '00:08:13].'],
+ 'statutory_citations': [{'title': 'THE MARKUP FILES — How NFL Teams Make Money Before Selling Season '
+                                   'Tickets ($750 to $50,000 Just for the Right) [00:12:53]',
+                          'url': 'https://www.youtube.com/watch?v=rT4gQkoEVDI&t=773s',
+                          'relevance': 'Primary practitioner testimony on PSL resale fee mechanics, loan '
+                                       'payoff before proceeds, and resale value risk.'},
+                         {'title': '9NEWS — Personal seat licenses | Will longtime Denver Broncos fans be '
+                                   'priced out of tickets at new stadium? [00:03:26]',
+                          'url': 'https://www.youtube.com/watch?v=w0cU0-OiMB8&t=206s',
+                          'relevance': 'Primary practitioner testimony on PSL forfeiture terms, financing '
+                                       'rates, and Falcons holder defaults.'},
+                         {'title': 'TicketWire — Buying NFL Season Tickets: SBL is Step One. [00:02:06]',
+                          'url': 'https://www.youtube.com/watch?v=M80btlo7xJc&t=126s',
+                          'relevance': 'Primary practitioner testimony on lowball offers, marketplace '
+                                       'selection, Facebook scam risk, and closing delays.'},
+                         {'title': 'JCFB — The NFL’s Biggest Scam: Personal Seat Licenses [00:08:26]',
+                          'url': 'https://www.youtube.com/watch?v=Dl5FeuC7tUA&t=506s',
+                          'relevance': 'Primary practitioner testimony on PSL price escalation at new '
+                                       'stadiums and the forfeiture obligation.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 's4p8gnL-WFw',
+                       'title': 'Broncos uncertain about selling Personal Seat Licenses to buy the right '
+                                'to purchase future tickets',
+                       'channel': '9NEWS',
+                       'author': '9NEWS',
+                       'text': "In the NFL, 34% of each team's ticket revenue is shared with other teams, "
+                               "but if a team sells a PSL, that revenue doesn't have to go to the league.",
+                       'tip': "In the NFL, 34% of each team's ticket revenue is shared with other teams, "
+                              "but if a team sells a PSL, that revenue doesn't have to go to the league.",
+                       'timestamp': 72,
+                       'timestamp_seconds': 72,
+                       'timestamp_label': '[00:01:12]',
+                       'url': 'https://www.youtube.com/watch?v=s4p8gnL-WFw&t=72s',
+                       'markdown': '[00:01:12](https://www.youtube.com/watch?v=s4p8gnL-WFw&t=72s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Dl5FeuC7tUA',
+                       'title': 'The NFL’s Biggest Scam: Personal Seat Licenses',
+                       'channel': 'JCFB',
+                       'author': 'JCFB',
+                       'text': 'As a PSL holder, you must purchase and renew season tickets each year, or '
+                               'else your PSL will be forfeited and sold to someone else.',
+                       'tip': 'As a PSL holder, you must purchase and renew season tickets each year, or '
+                              'else your PSL will be forfeited and sold to someone else.',
+                       'timestamp': 185,
+                       'timestamp_seconds': 185,
+                       'timestamp_label': '[00:03:05]',
+                       'url': 'https://www.youtube.com/watch?v=Dl5FeuC7tUA&t=185s',
+                       'markdown': '[00:03:05](https://www.youtube.com/watch?v=Dl5FeuC7tUA&t=185s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '-zd2mlj0u8U',
+                       'title': 'How much? Browns fans outraged by possible personal seat-license (PSL) '
+                                'pricing in Brook Park.',
+                       'channel': 'News 5 Cleveland',
+                       'author': 'News 5 Cleveland',
+                       'text': 'The prices for PSLs range from $550 to more than $193,000, and for VIP '
+                               'club seats the midpoint was about $4,500 a seat.',
+                       'tip': 'The prices for PSLs range from $550 to more than $193,000, and for VIP club '
+                              'seats the midpoint was about $4,500 a seat.',
+                       'timestamp': 140,
+                       'timestamp_seconds': 140,
+                       'timestamp_label': '[00:02:20]',
+                       'url': 'https://www.youtube.com/watch?v=-zd2mlj0u8U&t=140s',
+                       'markdown': '[00:02:20](https://www.youtube.com/watch?v=-zd2mlj0u8U&t=140s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'hlfwsoMBQS0',
+                       'title': 'NFL Season Tickets: Shawn Covers Key Step in Buying',
+                       'channel': 'TicketWire',
+                       'author': 'TicketWire',
+                       'text': "You can make them an offer, it doesn't hurt to ask; you say 28, they might "
+                               "counter at 31, and that's how you beat me at this.",
+                       'tip': "You can make them an offer, it doesn't hurt to ask; you say 28, they might "
+                              "counter at 31, and that's how you beat me at this.",
+                       'timestamp': 131,
+                       'timestamp_seconds': 131,
+                       'timestamp_label': '[00:02:11]',
+                       'url': 'https://www.youtube.com/watch?v=hlfwsoMBQS0&t=131s',
+                       'markdown': '[00:02:11](https://www.youtube.com/watch?v=hlfwsoMBQS0&t=131s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'M80btlo7xJc',
+                       'title': 'Buying NFL Season Tickets: SBL is Step One.',
+                       'channel': 'TicketWire',
+                       'author': 'TicketWire',
+                       'text': "My only thing with Facebook is do your research, don't get scammed, it "
+                               "happens every day; just make sure they're real people and make sure it's a "
+                               'legit offer.',
+                       'tip': "My only thing with Facebook is do your research, don't get scammed, it "
+                              "happens every day; just make sure they're real people and make sure it's a "
+                              'legit offer.',
+                       'timestamp': 193,
+                       'timestamp_seconds': 193,
+                       'timestamp_label': '[00:03:13]',
+                       'url': 'https://www.youtube.com/watch?v=M80btlo7xJc&t=193s',
+                       'markdown': '[00:03:13](https://www.youtube.com/watch?v=M80btlo7xJc&t=193s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'M80btlo7xJc',
+                       'title': 'Buying NFL Season Tickets: SBL is Step One.',
+                       'channel': 'TicketWire',
+                       'author': 'TicketWire',
+                       'text': 'I made the lowest ball offer I could think of and they accepted it, so you '
+                               'can throw an offer out there, and who cares if they deny you, make another '
+                               'offer to somebody else.',
+                       'tip': 'I made the lowest ball offer I could think of and they accepted it, so you '
+                              'can throw an offer out there, and who cares if they deny you, make another '
+                              'offer to somebody else.',
+                       'timestamp': 126,
+                       'timestamp_seconds': 126,
+                       'timestamp_label': '[00:02:06]',
+                       'url': 'https://www.youtube.com/watch?v=M80btlo7xJc&t=126s',
+                       'markdown': '[00:02:06](https://www.youtube.com/watch?v=M80btlo7xJc&t=126s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'FZyPq0QfTdg',
+                       'title': 'Personal Seat License are coming to the Denver Broncos new stadium',
+                       'channel': 'Zach Bye',
+                       'author': 'Zach Bye',
+                       'text': 'This is a one-time fee, and from what I understand, in a lot of these '
+                               'markets you can finance it through the course of a few payments.',
+                       'tip': 'This is a one-time fee, and from what I understand, in a lot of these '
+                              'markets you can finance it through the course of a few payments.',
+                       'timestamp': 205,
+                       'timestamp_seconds': 205,
+                       'timestamp_label': '[00:03:25]',
+                       'url': 'https://www.youtube.com/watch?v=FZyPq0QfTdg&t=205s',
+                       'markdown': '[00:03:25](https://www.youtube.com/watch?v=FZyPq0QfTdg&t=205s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'VzrNov3Y_qM',
+                       'title': 'Personal Seat Licenses are Bulls**t (HBO)',
+                       'channel': 'Any Given Wednesday with Bill Simmons',
+                       'author': 'Any Given Wednesday with Bill Simmons',
+                       'text': "It's a massive surcharge for the right to buy season tickets; it's like a "
+                               'price tag on the price tag.',
+                       'tip': "It's a massive surcharge for the right to buy season tickets; it's like a "
+                              'price tag on the price tag.',
+                       'timestamp': 33,
+                       'timestamp_seconds': 33,
+                       'timestamp_label': '[00:00:33]',
+                       'url': 'https://www.youtube.com/watch?v=VzrNov3Y_qM&t=33s',
+                       'markdown': '[00:00:33](https://www.youtube.com/watch?v=VzrNov3Y_qM&t=33s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'V-6dQZRMe2Y',
+                       'title': 'How seat licenses work',
+                       'channel': 'MPR News',
+                       'author': 'MPR News',
+                       'text': 'Big markups for big games like playoffs or Green Bay matchups could offset '
+                               'the cost of seat licenses for fans willing to sell off some tickets.',
+                       'tip': 'Big markups for big games like playoffs or Green Bay matchups could offset '
+                              'the cost of seat licenses for fans willing to sell off some tickets.',
+                       'timestamp': 167,
+                       'timestamp_seconds': 167,
+                       'timestamp_label': '[00:02:47]',
+                       'url': 'https://www.youtube.com/watch?v=V-6dQZRMe2Y&t=167s',
+                       'markdown': '[00:02:47](https://www.youtube.com/watch?v=V-6dQZRMe2Y&t=167s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'w0cU0-OiMB8',
+                       'title': 'Personal seat licenses | Will longtime Denver Broncos fans be priced out '
+                                'of tickets at new stadium?',
+                       'channel': '9NEWS',
+                       'author': '9NEWS',
+                       'text': 'Around 2020, thousands of Atlanta Falcons PSL holders defaulted, and many '
+                               "of them said they couldn't find a buyer.",
+                       'tip': 'Around 2020, thousands of Atlanta Falcons PSL holders defaulted, and many '
+                              "of them said they couldn't find a buyer.",
+                       'timestamp': 221,
+                       'timestamp_seconds': 221,
+                       'timestamp_label': '[00:03:41]',
+                       'url': 'https://www.youtube.com/watch?v=w0cU0-OiMB8&t=221s',
+                       'markdown': '[00:03:41](https://www.youtube.com/watch?v=w0cU0-OiMB8&t=221s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'w0cU0-OiMB8',
+                       'title': 'Personal seat licenses | Will longtime Denver Broncos fans be priced out '
+                                'of tickets at new stadium?',
+                       'channel': '9NEWS',
+                       'author': '9NEWS',
+                       'text': 'Fans in Buffalo reported a 10% interest rate on a payment plan that lasted '
+                               '10 years, and the Titans offered fans a 10% discount if they paid it all '
+                               'up front.',
+                       'tip': 'Fans in Buffalo reported a 10% interest rate on a payment plan that lasted '
+                              '10 years, and the Titans offered fans a 10% discount if they paid it all up '
+                              'front.',
+                       'timestamp': 187,
+                       'timestamp_seconds': 187,
+                       'timestamp_label': '[00:03:07]',
+                       'url': 'https://www.youtube.com/watch?v=w0cU0-OiMB8&t=187s',
+                       'markdown': '[00:03:07](https://www.youtube.com/watch?v=w0cU0-OiMB8&t=187s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'rT4gQkoEVDI',
+                       'title': 'How NFL Teams Make Money Before Selling Season Tickets ($750 to $50,000 '
+                                'Just for the Right)',
+                       'channel': 'THE MARKUP FILES',
+                       'author': 'THE MARKUP FILES',
+                       'text': 'On a $10,000 transaction, the seller receives 8,800 and the buyer pays '
+                               '11,200, which is almost $2,400 in combined fees on a single transaction.',
+                       'tip': 'On a $10,000 transaction, the seller receives 8,800 and the buyer pays '
+                              '11,200, which is almost $2,400 in combined fees on a single transaction.',
+                       'timestamp': 794,
+                       'timestamp_seconds': 794,
+                       'timestamp_label': '[00:13:14]',
+                       'url': 'https://www.youtube.com/watch?v=rT4gQkoEVDI&t=794s',
+                       'markdown': '[00:13:14](https://www.youtube.com/watch?v=rT4gQkoEVDI&t=794s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'rT4gQkoEVDI',
+                       'title': 'How NFL Teams Make Money Before Selling Season Tickets ($750 to $50,000 '
+                                'Just for the Right)',
+                       'channel': 'THE MARKUP FILES',
+                       'author': 'THE MARKUP FILES',
+                       'text': 'According to the executive who ran PSL sales for the project, the Bills '
+                               'retained roughly 70 to 75% of their existing season ticket holders through '
+                               'the PSL transition.',
+                       'tip': 'According to the executive who ran PSL sales for the project, the Bills '
+                              'retained roughly 70 to 75% of their existing season ticket holders through '
+                              'the PSL transition.',
+                       'timestamp': 1121,
+                       'timestamp_seconds': 1121,
+                       'timestamp_label': '[00:18:41]',
+                       'url': 'https://www.youtube.com/watch?v=rT4gQkoEVDI&t=1121s',
+                       'markdown': '[00:18:41](https://www.youtube.com/watch?v=rT4gQkoEVDI&t=1121s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ZiwpM_Fr8eU',
+                       'title': 'New Commanders’ stadium personal seat licenses explained',
+                       'channel': 'FOX 5 Washington DC',
+                       'author': 'FOX 5 Washington DC',
+                       'text': "Seat rights in the Commanders' new stadium will be sold for up to $975 "
+                               'million total, with the proceeds going to construction costs.',
+                       'tip': "Seat rights in the Commanders' new stadium will be sold for up to $975 "
+                              'million total, with the proceeds going to construction costs.',
+                       'timestamp': 61,
+                       'timestamp_seconds': 61,
+                       'timestamp_label': '[00:01:01]',
+                       'url': 'https://www.youtube.com/watch?v=ZiwpM_Fr8eU&t=61s',
+                       'markdown': '[00:01:01](https://www.youtube.com/watch?v=ZiwpM_Fr8eU&t=61s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '-hTj-NHHeDc',
+                       'title': 'Bills sell out of personal seat licenses',
+                       'channel': 'WGRZ-TV',
+                       'author': 'WGRZ-TV',
+                       'text': 'A lot of the times season ticket holders want to recoup some of their '
+                               'investment, and they sell tickets with us.',
+                       'tip': 'A lot of the times season ticket holders want to recoup some of their '
+                              'investment, and they sell tickets with us.',
+                       'timestamp': 67,
+                       'timestamp_seconds': 67,
+                       'timestamp_label': '[00:01:07]',
+                       'url': 'https://www.youtube.com/watch?v=-hTj-NHHeDc&t=67s',
+                       'markdown': '[00:01:07](https://www.youtube.com/watch?v=-hTj-NHHeDc&t=67s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'gBkBFmKTfls',
+                       'title': "Bills to sell PSL's",
+                       'channel': 'WKBW TV | Buffalo, NY',
+                       'author': 'WKBW TV | Buffalo, NY',
+                       'text': 'A Jets ticket representative told me its cheapest lower level end zone PSL '
+                               'is $4,000 per seat and its most expensive is $30,000 a seat.',
+                       'tip': 'A Jets ticket representative told me its cheapest lower level end zone PSL '
+                              'is $4,000 per seat and its most expensive is $30,000 a seat.',
+                       'timestamp': 75,
+                       'timestamp_seconds': 75,
+                       'timestamp_label': '[00:01:15]',
+                       'url': 'https://www.youtube.com/watch?v=gBkBFmKTfls&t=75s',
+                       'markdown': '[00:01:15](https://www.youtube.com/watch?v=gBkBFmKTfls&t=75s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'JVYNSYvukwY',
+                       'title': 'What Are Chicago Bears Personal Seat Licenses? | How Soldier Field PSLs '
+                                'Work',
+                       'channel': 'Expedition Money Snacks',
+                       'author': 'Expedition Money Snacks',
+                       'text': 'PSL owners have the right to renew their season tickets every year and can '
+                               'also sell or transfer their PSL ownership rights to other fans.',
+                       'tip': 'PSL owners have the right to renew their season tickets every year and can '
+                              'also sell or transfer their PSL ownership rights to other fans.',
+                       'timestamp': 28,
+                       'timestamp_seconds': 28,
+                       'timestamp_label': '[00:00:28]',
+                       'url': 'https://www.youtube.com/watch?v=JVYNSYvukwY&t=28s',
+                       'markdown': '[00:00:28](https://www.youtube.com/watch?v=JVYNSYvukwY&t=28s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'QSa3WS1Pbrc',
+                       'title': 'The Fee NFL Fans Pay Before They Ever Buy a Ticket',
+                       'channel': 'Athletic Asset',
+                       'author': 'Athletic Asset',
+                       'text': "Buffalo's new stadium got $850 million of public money, then seat licenses "
+                               "on top; the team's downside is capped at zero, yours isn't.",
+                       'tip': "Buffalo's new stadium got $850 million of public money, then seat licenses "
+                              "on top; the team's downside is capped at zero, yours isn't.",
+                       'timestamp': 65,
+                       'timestamp_seconds': 65,
+                       'timestamp_label': '[00:01:05]',
+                       'url': 'https://www.youtube.com/watch?v=QSa3WS1Pbrc&t=65s',
+                       'markdown': '[00:01:05](https://www.youtube.com/watch?v=QSa3WS1Pbrc&t=65s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '1SEhOJq2k2o',
+                       'title': 'Atlanta Falcons Email PSL Owners Their Options | Atlanta Sporting News| '
+                                'Episode 41',
+                       'channel': 'Dad and Demi',
+                       'author': 'Dad and Demi',
+                       'text': 'Any money PSL owners have paid this season can be put forward to the 2020 '
+                               'season, put towards their actual PSL, or put to actual seats for the 2020 '
+                               'season.',
+                       'tip': 'Any money PSL owners have paid this season can be put forward to the 2020 '
+                              'season, put towards their actual PSL, or put to actual seats for the 2020 '
+                              'season.',
+                       'timestamp': 72,
+                       'timestamp_seconds': 72,
+                       'timestamp_label': '[00:01:12]',
+                       'url': 'https://www.youtube.com/watch?v=1SEhOJq2k2o&t=72s',
+                       'markdown': '[00:01:12](https://www.youtube.com/watch?v=1SEhOJq2k2o&t=72s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q6.'}]}

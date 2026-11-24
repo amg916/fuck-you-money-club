@@ -1,671 +1,789 @@
 from __future__ import annotations
 
-CHAPTER_12 = {
-    "id": "Q12",
-    "chapter_id": "Q12",
-    "chapter_number": 12,
-    "question_number": 12,
-    "slug": "first-30-day-launch-sprint-kill-fix-scale",
-    "question_prompt": "What is the exact Day-1-to-Day-30 execution schedule for launching live-event, super bowl & vip ticket brokering, and what quantitative thresholds govern Kill, Fix, or Scale decisions at Day 30/60/90?",
-    "kicker": "Q12 / THE BIG MONEY PLAYBOOKS",
-    "title": "The First 30-Day Launch Sprint & Kill / Fix / Scale Gates",
-    "subtitle": "A Three-Person SkyBox, Automatiq, and Logitix Launch Plan with BOTS Act Controls, Suite Rights Verification, and Settlement-Adjusted Capital Tests",
-    "layout_template": "thirty_day_plan",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #43 ranks #02 of 43 with a 95/100 Money-to-Manpower Score. "
-        "This sprint maps 12 operator plays across multi-exchange resale, stadium "
-        "suite seat-splitting, and tentpole corporate hospitality, but funds only "
-        "one initial lane. One full-time owner and two contractors establish "
-        "transfer rights, test inventory locks, secure buyer demand, and reconcile "
-        "cash before expanding exposure. Canonical annual owner profits are "
-        "$26,400 Conservative, $191,900 Base, and $468,000 Scaled; none is a "
-        "30-day sales target. Daily deliverables culminate in quantitative Day "
-        "30/60/90 Kill, Fix, or Scale decisions based on completed orders, "
-        "realized margin, settlement aging, and stressed liquidity. A $3,000 "
-        "first-month overhead ceiling protects capital while the normal "
-        "one-to-three-month first-deal window unfolds."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$220,000",
-            "context": "Annual gross fee basis; $88,000 retained revenue at 40%.",
-            "note": "12% gross-basis net margin; 30% retained margin; $26,400 annual owner net profit; 1 FT + 2 C.",
-        },
-        {
-            "label": "Base",
-            "value": "$1,010,000",
-            "context": "Annual gross fee basis; $404,000 retained revenue at 40%.",
-            "note": "19.0% gross-basis net margin; 47.5% retained margin; $191,900 annual owner net profit; 1 FT + 2 C.",
-        },
-        {
-            "label": "Scaled",
-            "value": "$1,800,000",
-            "context": "Annual gross fee basis; $720,000 retained revenue at 40%.",
-            "note": "26% gross-basis net margin; 65% retained margin; $468,000 annual owner net profit; 2 FT + 3 C.",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Days 1-7: Define the Twelve Plays, Lock Rights, and Ring-Fence Cash",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Day 1 starts with a bounded operating map, not twelve simultaneous launches. "
-                    "For this chapter, the twelve mapped plays are P01 authorized multi-exchange "
-                    "ticket resale; P02 contractual sponsor-allotment resale; P03 NFL playoff-option "
-                    "strips; P04 NBA playoff-option strips; P05 full-suite seat-splitting; P06 "
-                    "weekday suite corporate seat blocks; P07 Super Bowl hospitality bundles; "
-                    "P08 World Cup hospitality bundles; P09 F1 hospitality bundles; P10 Masters "
-                    "hospitality bundles; P11 Final Four hospitality bundles; and P12 repeat "
-                    "corporate hospitality procurement. These are operating workstreams within "
-                    "Candidate #43, not twelve independent profit forecasts. P01-P04 carry "
-                    "ticket acquisition and exchange settlement exposure; P05-P06 concentrate "
-                    "capital in a suite whose unsold seats expire together; P07-P12 add "
-                    "supplier deposits, package obligations, and corporate collection timing. "
-                    "Score each against transferable inventory, verified buyer demand, cash "
-                    "duration, and replacement exposure. Choose one funded pilot and one "
-                    "unfunded backup. Favor nearby events with inspectable supply and published "
-                    "payout terms rather than a distant tentpole that consumes the entire "
-                    "launch reserve. The owner handles purchasing, contracts, and exceptions; "
-                    "contractor A handles listings and transfer evidence; contractor B handles "
-                    "buyer outreach and reconciliation. Reserve forty owner hours and ten "
-                    "hours per contractor weekly, with event-day coverage scheduled explicitly."
-                ),
-                (
-                    "Use a $25,000 illustrative launch bankroll inside the canonical $10,000-$50,000 "
-                    "startup range. Allocate $10,000 to acquisition exposure, $7,500 to a "
-                    "protected refund and replacement reserve, $3,000 to first-month overhead, "
-                    "and $4,500 to uncommitted cash. Cap cumulative overhead at $750 on "
-                    "Day 7, $1,500 on Day 14, $2,250 on Day 21, and $3,000 "
-                    "on Day 30. The illustrative monthly budget assigns $1,200 to contractor "
-                    "coverage, $1,200 to software and integration access, $300 to insurance "
-                    "and accounting, and $300 to outbound activity. Obtain actual quotations "
-                    "before committing; if a suitable vendor exceeds its allowance, reduce "
-                    "scope rather than silently increasing burn. Acquisition payments are "
-                    "tracked separately from overhead but still consume bank cash. Owner "
-                    "draws reduce available capital and cannot disappear from the liquidity "
-                    "test. A $10,000 launch must shrink inventory exposure, not borrow the "
-                    "protected reserve to imitate this allocation. Do not buy a whole "
-                    "suite merely because its seat-level spread looks attractive. Its deposit, "
-                    "catering minimum, and unsold-seat risk can exceed the bankroll before "
-                    "a single customer settles. Keep all reserves liquid and exclude "
-                    "unsettled exchange receivables from immediately available cash."
-                ),
-                (
-                    "Days 2-7 establish enforceable supply and observable inventory behavior. "
-                    "For every proposed purchase, record seller identity, original order "
-                    "evidence, section and row, delivery deadline, transfer restrictions, event "
-                    "status, and cancellation treatment. A suite agreement must expressly "
-                    "permit the intended seat distribution and identify food, alcohol, parking, "
-                    "and admission entitlements. Hospitality components require separate supplier "
-                    "confirmation; possessing an event ticket does not establish authorization "
-                    "to resell an official package. Map purchaser and event jurisdictions "
-                    "before listing. Apply 15 U.S.C. §45c to acquisition methods: prohibit "
-                    "queue bypass, purchase-limit circumvention, and security-measure evasion. "
-                    "Review New York Arts and Cultural Affairs Law Article 25 where "
-                    "applicable, including reseller licensing and ticket-price disclosures. Apply "
-                    "16 CFR Part 464 to covered live-event price presentations, including "
-                    "mandatory package charges. Evaluate SkyBox, Automatiq, or Logitix against "
-                    "documented marketplace support rather than assumed universal connectivity. "
-                    "Test StubHub, Vivid Seats, SeatGeek, and TickPick individually when "
-                    "available under the actual account agreement. A local auto-hold is "
-                    "necessary but cannot prove instantaneous remote withdrawal. Log acknowledgments "
-                    "and suspend any connector with unbounded lag. Where a test environment "
-                    "is unavailable, use vendor-supervised validation or one controlled real "
-                    "listing; never manufacture customer purchases to generate test activity."
-                ),
-            ],
-            "table": {
-                "caption": "Week One: Rights, Capital, and Connector Evidence Before Inventory Exposure",
-                "headers": [
-                    "Daily owner and operating objective",
-                    "Concrete deliverable with retained supporting evidence",
-                    "Quantitative exposure limit or acceptance test",
-                    "Failure response and next permitted action",
-                ],
-                "rows": [
-                    [
-                        "Day 1: Owner assigns twelve plays to three operating lanes.",
-                        "Publish P01-P12 register with one funded pilot and backup.",
-                        "Limit simultaneous funded launch lanes to exactly one.",
-                        "Defer other plays until completed settlement evidence supports expansion.",
-                    ],
-                    [
-                        "Day 2: Owner verifies sourcing rights and applicable jurisdictions.",
-                        "Archive seller documents, transfer terms, and jurisdiction-specific licensing analysis.",
-                        "Require documented transfer rights for every proposed inventory unit.",
-                        "Reject unsupported inventory rather than relying on supplier assurances.",
-                    ],
-                    [
-                        "Day 3: Contractor A builds inventory and event identity records.",
-                        "Create unique event, section, row, seat, and supplier references.",
-                        "Allow zero duplicate active records for identical physical seats.",
-                        "Quarantine duplicates before any marketplace publication can occur.",
-                    ],
-                    [
-                        "Day 4: Owner ring-fences cash and contractual downside reserves.",
-                        "Separate acquisition budget, protected reserve, overhead allowance, and free cash.",
-                        "Cap initial acquisition exposure at ten thousand dollars total.",
-                        "Reduce purchase quantities when stress coverage exceeds available reserves.",
-                    ],
-                    [
-                        "Day 5: Contractor A configures supported marketplace connector permissions.",
-                        "Record actual account support and each channel's withdrawal acknowledgments.",
-                        "Complete twenty documented hold-and-withdrawal tests across intended supported channels.",
-                        "Keep failing connectors disabled and use one verified channel.",
-                    ],
-                    [
-                        "Day 6: Contractor B validates buyer demand and collection terms.",
-                        "Record twenty qualified buyer conversations with budget and event dates.",
-                        "Count only buyers identifying decision authority and payment method.",
-                        "Treat polite interest without purchasing detail as unqualified demand.",
-                    ],
-                    [
-                        "Day 7: Owner conducts first weekly capital and rights review.",
-                        "Sign evidence packet covering rights, prices, locks, and cash.",
-                        "Keep cumulative overhead at or below seven hundred fifty dollars.",
-                        "Stop new spending when the weekly burn ceiling is breached.",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four Pre-Flight Checks Before the First Purchase",
-                "body": "Release acquisition cash only after the owner can produce the evidence below for the exact pilot inventory.",
-                "items": [
-                    "Rights: Match the seller's authority, event restrictions, suite distribution permissions, and promised delivery date to the buyer-facing offer.",
-                    "Inventory: Complete twenty connector tests, require local holds within two seconds and remote acknowledgments within sixty seconds, and disable any failing channel.",
-                    "Cash: Preserve the greater of $7,500 or modeled stressed obligations, plus the next thirty days of committed overhead; do not count exchange receivables as bank cash.",
-                    "Pricing: Display applicable mandatory charges upfront, document supplier and exchange deductions, and confirm that acquisition methods satisfy 15 U.S.C. §45c.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Days 8-14: Build Contribution Ledgers and Run One Controlled Pilot",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Days 8-10 build the ledger before the sales dashboard. Preserve the "
-                    "scorecard's exact annual relationships: Conservative gross fee basis of "
-                    "$220,000 less $132,000 acquisition cost produces $88,000 retained revenue; "
-                    "subtracting $61,600 of remaining costs produces $26,400 owner profit. "
-                    "Base uses $1,010,000 less $606,000 acquisition cost, leaving $404,000 "
-                    "retained revenue; $212,100 of remaining costs leaves $191,900 profit. "
-                    "Scaled uses $1,800,000 less $1,080,000 acquisition cost, leaving $720,000 "
-                    "retained revenue; $252,000 of remaining costs leaves $468,000 profit. "
-                    "These reconcile to gross-basis margins of 12%, 19.0%, and 26%, "
-                    "and retained margins of 30%, 47.5%, and 65%. Remaining costs "
-                    "must include exchange selling fees, inventory markdowns and write-offs, "
-                    "postponement or cancellation reserves, payment costs, carrying costs, and "
-                    "operating overhead. The 40% retained share is the supplied net-contribution "
-                    "model, not a declaration that every contract receives identical ASC "
-                    "606 presentation. Determine principal-versus-agent treatment from actual control "
-                    "and contractual responsibilities. Never label the underlying event economy "
-                    "or corporate entertainment budget as operator revenue. Store gross customer "
-                    "consideration, channel fees, and net remittance separately. If an imported "
-                    "exchange payout already deducts a fee, reconstruct the bridge before "
-                    "applying the scorecard; do not deduct that fee twice."
-                ),
-                (
-                    "Keep the three operating lanes economically separate even when their "
-                    "headline retained share matches. A multi-exchange example starts with "
-                    "$1,000 customer consideration and $600 acquisition cost. Deduct $100 "
-                    "selling fees, $50 inventory slippage, $25 cancellation reserve, $10 "
-                    "carrying cost, and $50 allocated overhead: owner contribution is $165, "
-                    "not the $400 acquisition spread. A suite example sells eight "
-                    "seats for $1,250 each against a $6,000 suite commitment. Deduct "
-                    "$200 payment costs, $600 catering obligations, $500 markdown allowance, "
-                    "$300 cancellation reserve, $100 carrying cost, and $500 overhead; "
-                    "contribution is $1,800. The suite's entire acquisition commitment remains "
-                    "exposed if buyers disappear. A hospitality example bills $20,000 against "
-                    "$12,000 ticket and supplier acquisition cost, then deducts $600 payment "
-                    "costs, $1,000 service delivery, $800 slippage, $600 cancellation reserve, "
-                    "$200 carrying cost, and $1,000 overhead, leaving $3,800. These "
-                    "illustrative transactions explain mechanics; they do not replace the "
-                    "canonical annual scenarios. Separate supplier deposits, buyer deposits, event "
-                    "delivery, and final settlement dates. Corporate deposits can support "
-                    "procurement only within their contractual refund conditions. They are "
-                    "neither immediately earned profit nor unrestricted owner distributions. "
-                    "Exchange payouts arriving after the event create a different capital "
-                    "cycle from directly invoiced suite seats, even with identical accounting "
-                    "margin."
-                ),
-                (
-                    "Days 11-14 run the smallest pilot that can validate the full "
-                    "chain. For P01, use transferable inventory with enough time to "
-                    "withdraw listings, complete delivery, and correct an exception before "
-                    "doors open. For P05-P06, require a signed suite agreement and "
-                    "a seat-level allocation register before accepting money. For P07-P12, "
-                    "quote only supplier-confirmed components and specify substitutions, delivery "
-                    "milestones, and cancellation treatment. Keep P03-P04 option exposure separate "
-                    "from delivered admissions: document what happens when a team fails "
-                    "to qualify, when a series ends early, or when an SSL "
-                    "agreement restricts resale. Contractor B records qualified opportunities and "
-                    "signed orders without counting either as settled sales. Contractor A "
-                    "records every listing change, purchase acknowledgment, hold, transfer, and "
-                    "buyer receipt. The owner approves acquisition and handles unresolved "
-                    "exceptions. Test a contractual replacement charge as high as 200% "
-                    "of the affected order where the actual channel terms support "
-                    "that exposure; do not assume every marketplace uses that formula. "
-                    "Combine unrelated-event replacement exposure with a canceled-event refund "
-                    "obligation and an unsold-inventory markdown shock. Avoid counting mutually "
-                    "exclusive remedies twice. If the protected reserve cannot absorb "
-                    "that stress, reduce inventory before pursuing another buyer, regardless "
-                    "of the apparent quoted margin."
-                ),
-            ],
-            "table": {
-                "caption": "Week Two: Scorecard Reconciliation, Distinct Settlement Profiles, and Pilot Release",
-                "headers": [
-                    "Daily owner and operating objective",
-                    "Concrete deliverable with retained supporting evidence",
-                    "Quantitative exposure limit or acceptance test",
-                    "Failure response and next permitted action",
-                ],
-                "rows": [
-                    [
-                        "Day 8: Contractor B builds gross-to-retained contribution ledger bridges.",
-                        "Show customer consideration, acquisition costs, selling fees, and remittances.",
-                        "Reconcile every imported settlement to its underlying order record.",
-                        "Suspend performance reporting until fee deductions reconcile without duplication.",
-                    ],
-                    [
-                        "Day 9: Owner verifies all three canonical annual scenarios.",
-                        "Document exact retained revenue and owner profit for each case.",
-                        "Require zero dollar differences against the supplied scorecard totals.",
-                        "Correct classifications rather than changing the canonical financial assumptions.",
-                    ],
-                    [
-                        "Day 10: Owner separates exchange, suite, and hospitality cash cycles.",
-                        "Build dated acquisition, delivery, refund, and settlement schedules separately.",
-                        "Reject purchases that consume cash reserved for existing obligations.",
-                        "Select smaller exchange inventory instead of an unaffordable suite.",
-                    ],
-                    [
-                        "Day 11: Contractor B obtains a fully scoped pilot order.",
-                        "Retain buyer identity, exact entitlements, payment terms, and delivery commitment.",
-                        "Accept zero unsupported promises about access or official hospitality.",
-                        "Remove unsupported package components before collecting the buyer's payment.",
-                    ],
-                    [
-                        "Day 12: Contractor A verifies live pilot publication and locking.",
-                        "Capture listing identifiers, local hold timestamps, and remote withdrawal acknowledgments.",
-                        "Require two-second local holds and sixty-second remote withdrawal acknowledgments.",
-                        "Disable slow channels and retain only the verified selling channel.",
-                    ],
-                    [
-                        "Day 13: Owner runs cancellation and replacement cash stress.",
-                        "Model twenty-percent unsold markdown, affected refunds, and separate replacement charges.",
-                        "Protect cash covering stressed obligations plus committed thirty-day overhead.",
-                        "Reduce open exposure until bank cash covers the complete stress.",
-                    ],
-                    [
-                        "Day 14: Owner reviews pilot evidence and second weekly burn.",
-                        "Document actual costs, open exceptions, buyer response, and cash position.",
-                        "Keep cumulative overhead at or below fifteen hundred dollars.",
-                        "Hold new acquisitions while fixing any unresolved pilot exception.",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Four Habits That Protect Spread After the Sale",
-                "body": "Veteran operators optimize delivered contribution and cash duration, not the prettiest advertised markup.",
-                "items": [
-                    "Request the exchange's actual event-specific payout rule before purchasing; a high-spread ticket held through a distant event can produce poor cash turnover.",
-                    "Photograph or archive the suite seating plan and entitlement schedule; distinguish fixed seats, standing access, catering minimums, and parking before splitting inventory.",
-                    "Give each sponsor-allotment source a rights checklist and delivery deadline; relationship access does not itself establish transferable resale rights.",
-                    "Record the last profitable exit price before buying an NFL or NBA playoff strip; revise qualification probabilities without allowing automated repricing to override contractual inventory limits.",
-                ],
-            },
-        },
-        {
-            "heading": "3. Days 15-21: Prove Fulfillment, Reconcile Payouts, and Measure Failure",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Week three converts pipeline activity into auditable fulfillment evidence. "
-                    "On Day 15, contractor A checks each upcoming event against the "
-                    "ticketing system's transfer availability and the promised delivery deadline. "
-                    "A barcode image is not adequate proof of a valid transfer; "
-                    "retain the platform's recipient confirmation or another contractually accepted "
-                    "delivery record. Day 16 tests repricing with hard floors derived "
-                    "from acquisition cost, expected selling fees, remaining reserve needs, "
-                    "and the approved exit strategy. Do not let a generic dynamic "
-                    "drop curve sell suite seats below the remaining suite obligation "
-                    "without owner acknowledgment. Day 17 tests one disruption tabletop: "
-                    "postponement, cancellation, or supplier failure. Record who contacts the "
-                    "buyer, who freezes listings, and which contract determines refund "
-                    "timing. Day 18 reconciles the earliest available settlement, including "
-                    "withheld amounts and adjustments. If the event has not occurred "
-                    "or payout is not yet due, mark the order as open "
-                    "with its contractual maturity date; never manufacture completion to "
-                    "satisfy the sprint. Days 19-21 review buyer conversion, supplier "
-                    "delivery reliability, and event-level exposure. Keep acquisition decisions "
-                    "with the owner while contractors operate documented checklists. After-hours "
-                    "coverage must name a reachable primary and backup before any "
-                    "event-day inventory remains listed."
-                ),
-                (
-                    "Build a compact daily scorecard with denominators that resist vanity "
-                    "metrics. A completed order requires delivered entitlements, an elapsed "
-                    "event where relevant, and reconciled settlement; retain an appropriate "
-                    "reserve for later contractual claims. Count distinct economically independent "
-                    "orders, not split invoices manufactured from one corporate buyer. "
-                    "Track delivered-on-time orders divided by delivered orders, duplicate fills "
-                    "per accepted order, realized contribution after inventory losses, and "
-                    "owner net margin after all pilot overhead. Measure payout aging "
-                    "from the contractually due date, not from the sale date. "
-                    "Report overdue balances as a share of all due settlement "
-                    "balances, and show absolute dollars alongside percentages. Reconciliation "
-                    "variance equals unexplained settlement differences divided by the expected "
-                    "amount due. Report open inventory at acquisition cost with a "
-                    "separate estimated liquidation value; charging a markdown allowance and "
-                    "later recording the same realized loss requires a reserve release "
-                    "to prevent double counting. Allocate shared overhead consistently across "
-                    "plays, while showing the unallocated launch total so weak plays "
-                    "cannot hide inside accounting choices. When no settlement is due, "
-                    "there is no aging observation; the evidence requirement remains "
-                    "unmet. Pipeline quotations, deposits, and transfer confirmations cannot "
-                    "substitute for demonstrated collection."
-                ),
-                (
-                    "Use liquidity coverage to decide whether another sale is safe. "
-                    "Calculate available liquidity as unrestricted bank cash less the next "
-                    "thirty days of committed overhead. Exclude undelivered buyer deposits "
-                    "needed for refunds and do not add unsettled marketplace balances. "
-                    "For the stress denominator, estimate incremental cash needed for a "
-                    "20% markdown on open unsold inventory, full buyer refunds for "
-                    "one affected event before supplier recovery, and the documented "
-                    "replacement remedy on the largest independent open order. Where "
-                    "a refund deposit has already been excluded from the numerator, "
-                    "exclude the matching funded refund amount from the denominator "
-                    "to avoid double reservation. Apply the actual agreement if its "
-                    "remedy exceeds the illustrative replacement shock. This is a "
-                    "planning stress, not a maximum-loss claim. Maintain the separate "
-                    "$7,500 baseline reserve in the illustrative bankroll even when "
-                    "the current modeled denominator is smaller. A zero-exposure ledger "
-                    "does not establish commercial readiness; collection and fulfillment "
-                    "evidence still control expansion. Track capital-days as cash committed "
-                    "multiplied by days until unrestricted recovery. This exposes why "
-                    "a Super Bowl package purchased months ahead may be less "
-                    "deployable than a smaller nearby resale. Release reserves only "
-                    "against documented extinguishment or reduction of the underlying obligations."
-                ),
-            ],
-            "table": {
-                "caption": "Week Three: Delivery Evidence, Settlement Quality, and Cash-Duration Controls",
-                "headers": [
-                    "Daily owner and operating objective",
-                    "Concrete deliverable with retained supporting evidence",
-                    "Quantitative exposure limit or acceptance test",
-                    "Failure response and next permitted action",
-                ],
-                "rows": [
-                    [
-                        "Day 15: Contractor A verifies delivery readiness for upcoming events.",
-                        "Match transfer availability and recipient evidence to every promised deadline.",
-                        "Require documented readiness for every order inside its delivery window.",
-                        "Escalate missing transfer access immediately and freeze related new listings.",
-                    ],
-                    [
-                        "Day 16: Owner tests event-specific repricing and liquidation floors.",
-                        "Record fee-adjusted floor prices and explicit markdown authority by event.",
-                        "Permit zero automated overrides of the owner's approved exposure limits.",
-                        "Disable repricing on inventory with incomplete costs or unclear rights.",
-                    ],
-                    [
-                        "Day 17: Both contractors rehearse one event disruption scenario.",
-                        "Produce timed buyer communication, listing freeze, and refund responsibility records.",
-                        "Identify a primary and backup for every event-day exception.",
-                        "Stop unattended listings when neither assigned responder can provide coverage.",
-                    ],
-                    [
-                        "Day 18: Contractor B reconciles the earliest contractually due payout.",
-                        "Bridge expected proceeds to bank receipts and documented channel deductions.",
-                        "Escalate unexplained variance exceeding one percent of expected settlement.",
-                        "Retain the order as unresolved until supporting evidence closes differences.",
-                    ],
-                    [
-                        "Day 19: Contractor B measures qualified buyer conversion by play.",
-                        "Separate conversations, written quotes, signed orders, deposits, and completed settlements.",
-                        "Require twenty qualified conversations before judging the pilot's demand response.",
-                        "Revise audience or offer when conversations reveal repeated budget mismatch.",
-                    ],
-                    [
-                        "Day 20: Owner measures concentration and stressed cash coverage.",
-                        "Show event exposure, capital-days, refund funding, and replacement reserve needs.",
-                        "Cap each event at twenty percent of initial launch capital.",
-                        "Reduce event exposure before another purchase creates correlated downside.",
-                    ],
-                    [
-                        "Day 21: Owner reviews fulfillment evidence and third weekly burn.",
-                        "Publish open exceptions with responsible person, remedy, and next deadline.",
-                        "Keep cumulative overhead at or below twenty-two hundred fifty dollars.",
-                        "Freeze discretionary outreach spending until cash and delivery exceptions clear.",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Identify the exact obligation",
-                    "action": "Match the accepted order to unique inventory and the governing channel agreement.",
-                    "detail": "Record event, seats, buyer entitlements, delivery deadline, selling fee, refund terms, and replacement exposure before acknowledging availability.",
-                },
-                {
-                    "step": 2,
-                    "title": "Hold inventory and verify withdrawals",
-                    "action": "Apply the local inventory hold and capture acknowledgments from every connected selling channel.",
-                    "detail": "Target a local hold within two seconds and remote withdrawal within sixty seconds; suspend any channel that cannot reliably meet the selected operating threshold.",
-                },
-                {
-                    "step": 3,
-                    "title": "Deliver and preserve evidence",
-                    "action": "Transfer through the supported ticketing rail and archive recipient confirmation.",
-                    "detail": "For suite or hospitality orders, attach the entitlement schedule and supplier confirmations; escalate any missing component before the buyer's promised delivery deadline.",
-                },
-                {
-                    "step": 4,
-                    "title": "Settle and release only earned cash",
-                    "action": "Reconcile actual bank receipts, fees, deductions, and remaining claim exposure.",
-                    "detail": "Update contribution, overdue balances, and reserves without duplicating losses; release owner cash only after obligations and the next thirty days of overhead remain funded.",
-                },
-            ],
-        },
-        {
-            "heading": "4. Days 22-30 and Beyond: Apply Quantitative Kill, Fix, or Scale Decisions",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Days 22-29 assemble a decision packet rather than chase last-minute "
-                    "volume. Reprice stale inventory, confirm remaining supplier commitments, reconcile "
-                    "each bank receipt, and classify every unresolved exception. Compare "
-                    "plays using realized net contribution and capital-days, not quoted "
-                    "spread. The owner conducts a loss review on every markdown, "
-                    "refund, and delivery failure; contractors bring timestamps and documents "
-                    "rather than recollections. On Day 26, rerun the cash stress "
-                    "with current event concentrations and actual contractual remedies. On "
-                    "Day 27, prepare a continuation budget funded only by genuinely "
-                    "available cash. Cumulative overhead ceilings are $3,000 at Day 30, "
-                    "$6,000 at Day 60, and $9,000 at Day 90. These "
-                    "are maximum authorizations, not instructions to spend: the initial "
-                    "$25,000 allocation cannot fund every extension without releasing inventory "
-                    "capital or generating completed contribution. Do not consume protected "
-                    "reserves to meet the calendar. Day 28 documents contractor "
-                    "capacity and coverage gaps. Day 29 freezes the reporting "
-                    "cutoff and distinguishes open events from completed cohorts. Because "
-                    "the canonical first-deal window is one to three months, "
-                    "a clean but immature pilot normally receives Fix with "
-                    "restricted spending, not an invented Scale result or an "
-                    "automatic commercial failure verdict."
-                ),
-                (
-                    "At each checkpoint, apply safety stops first, evidence minimums second, "
-                    "and economic thresholds third. Kill the affected play immediately "
-                    "for fabricated supply, prohibited acquisition methods, an unresolved "
-                    "required license, or inability to fund obligations; stop new "
-                    "sales while fulfilling or refunding existing contracts. A double "
-                    "fill triggers an immediate channel freeze and incident review, "
-                    "even when the overall business remains viable. With adequate "
-                    "completed evidence, Kill thresholds are owner net margin at "
-                    "or below negative 10% on Day 30, negative 5% on "
-                    "Day 60, or zero on Day 90. Evidence minimums are "
-                    "ten independent completed orders across two events, twenty-five "
-                    "across four events, and fifty across six events respectively. "
-                    "Below those minimums, choose Fix without increasing capital; at "
-                    "Day 90, stop paid acquisition if there are no signed "
-                    "orders after sixty qualified buyer conversations and twenty "
-                    "written quotes. Scale requires all checkpoint conditions simultaneously, "
-                    "including net margins of at least 12%, 15%, and 19% "
-                    "respectively. Require at least 99% on-time delivery and zero "
-                    "double fills in the evaluation window. Between Kill and "
-                    "Scale lies Fix: assign one measurable defect, an owner, "
-                    "and a fourteen-day retest. No unresolved safety defect may "
-                    "be averaged away by stronger sales."
-                ),
-                (
-                    "Scale is a controlled capital increment, not permission to activate "
-                    "all twelve plays. At Day 30, require liquidity coverage of "
-                    "at least 1.25 times the modeled stress, overdue settlement "
-                    "balances no greater than 5% of due balances, and "
-                    "unexplained reconciliation variance no greater than 1%. Day 60 "
-                    "tightens coverage to 1.50 times, overdue balances to 2%, "
-                    "and variance to 0.5%; Day 90 retains 1.50 times "
-                    "coverage while tightening overdue balances to 1% and retaining "
-                    "0.5% variance. All checkpoints preserve the baseline reserve, "
-                    "funded overhead, and twenty-percent single-event capital cap. A "
-                    "passing checkpoint permits at most a 25% increase in "
-                    "acquisition exposure for the proven lane; add a second "
-                    "play only after that increment clears a complete settlement "
-                    "cycle. Keep the launch pod at one full-time owner "
-                    "and two contractors until documented exception volume justifies "
-                    "staffing expansion. The canonical Scaled case requires two "
-                    "full-time people plus three contractors, not the original "
-                    "three-person workload stretched indefinitely. Compare annual forecasts "
-                    "with the exact scorecard only after accounting for event "
-                    "seasonality, holiday concentration, and cash duration. A profitable "
-                    "Final Four weekend cannot simply be multiplied by fifty-two. "
-                    "Publish the decision, released capital, retained reserves, corrective "
-                    "actions, and next checkpoint in one dated operating memo."
-                ),
-            ],
-            "table": {
-                "caption": "Week Four and Day 30/60/90 Decision Matrix: Evidence Before Capital Expansion",
-                "headers": [
-                    "Checkpoint and accountable execution objective",
-                    "Required execution evidence and completed cohort",
-                    "Kill or Fix condition and immediate response",
-                    "Scale condition or controlled next operating action",
-                ],
-                "rows": [
-                    [
-                        "Day 22: Owner exits stale inventory within approved limits.",
-                        "List aged positions with acquisition cost and executable exit prices.",
-                        "Fix positions lacking executable prices before committing additional acquisition cash.",
-                        "Release capital only after actual sale proceeds become unrestricted cash.",
-                    ],
-                    [
-                        "Day 23: Contractor A verifies every remaining supplier commitment.",
-                        "Attach delivery dates and current transfer status to open obligations.",
-                        "Freeze affected sales when supplier evidence misses its contractual deadline.",
-                        "Continue only confirmed inventory with sufficient time for corrective delivery.",
-                    ],
-                    [
-                        "Day 24: Contractor B closes bank and settlement reconciliation.",
-                        "Show expected receipts, actual deposits, deductions, and unexplained differences separately.",
-                        "Fix unexplained differences above one percent before seeking expansion authority.",
-                        "Retain supporting statements and resolve each exception to source evidence.",
-                    ],
-                    [
-                        "Day 25: Owner performs play-level loss and contribution analysis.",
-                        "Attribute fees, slippage, reserves, carrying costs, and overhead consistently.",
-                        "Fix any ledger presenting acquisition spread as final owner profit.",
-                        "Rank proven plays using realized contribution and actual capital-days.",
-                    ],
-                    [
-                        "Day 26: Owner reruns correlated event and replacement stress.",
-                        "Update refund obligations and independent replacement exposure using current contracts.",
-                        "Kill new acquisition activity when existing obligations cannot remain funded.",
-                        "Preserve baseline reserves and twenty-percent single-event capital concentration limits.",
-                    ],
-                    [
-                        "Day 27: Owner funds a bounded fourteen-day correction budget.",
-                        "Specify available cash, one measurable defect, assigned owner, and retest.",
-                        "Fix only with unrestricted funds remaining after protected obligations.",
-                        "Continue existing exposure without increasing the acquisition capital ceiling.",
-                    ],
-                    [
-                        "Day 28: Both contractors verify capacity and event-day coverage.",
-                        "Record weekly hours, exception counts, backup coverage, and missed deadlines.",
-                        "Fix coverage gaps before adding events or another operating play.",
-                        "Keep the three-person pod within documented weekly workload capacity.",
-                    ],
-                    [
-                        "Day 29: Contractor B freezes the checkpoint reporting cutoff.",
-                        "Separate open orders from completed independent orders and distinct events.",
-                        "Fix insufficient evidence without counting deposits or quotations as settlements.",
-                        "Prepare dated decision packet with full costs and aging denominators.",
-                    ],
-                    [
-                        "Day 30: Owner decides within three-thousand-dollar cumulative overhead ceiling.",
-                        "Require ten completed independent orders across at least two events.",
-                        "Kill at net margin at or below negative ten percent; otherwise Fix if any Scale condition fails.",
-                        "Scale requires 12% net margin, 99% timely delivery, zero double fills, 1.25-times coverage, overdue balances at most 5%, and variance at most 1%.",
-                    ],
-                    [
-                        "Day 60: Owner retests within six-thousand-dollar cumulative overhead ceiling.",
-                        "Require twenty-five completed independent orders across at least four events.",
-                        "Kill at net margin at or below negative five percent; otherwise Fix if any Scale condition fails.",
-                        "Scale requires 15% net margin, 99% timely delivery, zero double fills, 1.50-times coverage, overdue balances at most 2%, and variance at most 0.5%.",
-                    ],
-                    [
-                        "Day 90: Owner decides within nine-thousand-dollar cumulative overhead ceiling.",
-                        "Require fifty completed independent orders across at least six events.",
-                        "Kill at nonpositive net margin; stop paid acquisition with zero signed orders after sixty qualified conversations and twenty quotes.",
-                        "Scale requires 19% net margin, 99% timely delivery, zero double fills, 1.50-times coverage, overdue balances at most 1%, and variance at most 0.5%.",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": "Scale the cash that survives delivery, deductions, and delay—not the spread displayed before the event.",
-    "diagram_id": "diag-08",
-    "action_checklist": [
-        "Assign P01-P12 to the exchange, suite, or hospitality lane; fund exactly one pilot and name its owner and two contractor responsibilities.",
-        "Build the $25,000 illustrative allocation or a smaller fully funded equivalent, preserving protected obligations and the $3,000 first-month overhead ceiling.",
-        "Verify sourcing rights, applicable reseller requirements, all-in price presentation, and twenty documented inventory hold-and-withdrawal tests before the first acquisition.",
-        "Create separate gross consideration, acquisition cost, selling fee, net remittance, reserve, and owner-profit fields; reconcile all three canonical annual cases exactly.",
-        "Execute one controlled order through delivery and settlement, preserving transfer evidence, contractual payout dates, and a current cancellation-and-replacement cash stress.",
-        "Publish Day 30/60/90 Kill, Fix, or Scale decisions using completed cohorts, fully costed margin, liquidity coverage, aging, variance, and bounded capital releases.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "15 U.S.C. §45c — Better Online Ticket Sales Act",
-            "url": "https://www.law.cornell.edu/uscode/text/15/45c",
-            "relevance": "Prohibits circumvention of specified ticketing security measures and purchase controls, and addresses resale of tickets obtained through prohibited circumvention under the statute's conditions. Acquisition automation must exclude those methods.",
-        },
-        {
-            "title": "16 CFR §464.2 — Prohibited Practices Concerning Fees",
-            "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-D/part-464/section-464.2",
-            "relevance": "Requires covered live-event ticket price presentations to disclose the total price with mandatory charges and meet the rule's prominence and final-payment requirements, subject to its specified exclusions.",
-        },
-        {
-            "title": "16 CFR §464.3 — Prohibited Misrepresentations",
-            "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-D/part-464/section-464.3",
-            "relevance": "Controls representations about fees and requires clear disclosure of specified excluded charges before payment consent; package quotes must accurately describe charge purpose and refundability.",
-        },
-        {
-            "title": "N.Y. Arts and Cultural Affairs Law §25.07 — Ticket Pricing",
-            "url": "https://www.nysenate.gov/legislation/laws/ACA/25.07",
-            "relevance": "Provides New York ticket-pricing and disclosure requirements. Apply the operative provisions to covered offers before publishing exchange, suite-seat, or package prices.",
-        },
-        {
-            "title": "N.Y. Arts and Cultural Affairs Law §25.13 — Licensing of Ticket Resellers",
-            "url": "https://www.nysenate.gov/legislation/laws/ACA/25.13",
-            "relevance": "Establishes reseller licensing requirements and exceptions. Determine applicability to the actual business model and document required licensing before conducting covered resale activity.",
-        },
-    ],
-}
+CHAPTER_12 = {'id': 'Q12',
+ 'chapter_id': 'Q12',
+ 'chapter_number': 12,
+ 'question_number': 12,
+ 'slug': 'resellers-playbook-sourcing-selection-flipping',
+ 'question_prompt': 'How do resellers find, acquire and flip profitable tickets, and how do season tickets '
+                    'fit into the model?',
+ 'kicker': 'Q12 / THE BIG MONEY PLAYBOOKS',
+ 'title': "The Reseller's Playbook: Sourcing, Selection and Flipping",
+ 'subtitle': 'Predicting profitability before buying, venue-based and sell-through-based event selection, '
+             'getting more tickets past queues, Amex/Citi presale access, scaling to five-figure months, '
+             'reselling season tickets four ways, buying and cancelling season tickets, and futures odds '
+             'for playoff demand',
+ 'layout_template': 'action_worksheet_summary',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Ticket flippers converge on one rule: buy where demand outruns seats. Ticket '
+                      'Flipping and Emmanuel Ak both steer operators away from headline stadium acts '
+                      'toward small venues, weekend dates and hometown shows. They screen those events '
+                      'with Spotify listeners and live inventory counts, and both work off a 25% margin '
+                      'benchmark or better. The street mechanics are concrete: buy just behind '
+                      'Ticketmaster price breaks, set Flare drop and price alerts, divide remaining '
+                      'tickets by capacity, and check StubHub while seats sit in the cart. Amex and Citi '
+                      'card presales open early access; 850 Club Credit turned $150 floor seats into '
+                      'roughly $390 resales. Season-ticket holder thumbsuprun says the playoffs are where '
+                      'the real money is made. The split is on timing: Ticket Flipping buys late on '
+                      'confirmed scarcity, while Emmanuel Ak buys at release in volume across roughly 70 '
+                      'proxied accounts.',
+ 'key_metrics': [{'label': 'Per-Ticket Margin Benchmark',
+                  'metric': 'Per-Ticket Margin Benchmark',
+                  'value': '25% on every ticket, aiming for 9 of 10 tickets selling well',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Ticket Flipping calls 25% a conservative target and says hitting it on every '
+                             'buy is not rocket science.',
+                  'source': 'Ticket Flipping ([JwHo6if-9Wo @ 00:09:05])'},
+                 {'label': 'Rush Cart-to-StubHub Spread',
+                  'metric': 'Rush Cart-to-StubHub Spread',
+                  'value': 'About $300 cost vs about $570 listed = $270 profit per ticket',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Emmanuel Ak checked StubHub while the Rush seats were still sitting in his '
+                             'cart, before he paid.',
+                  'source': 'Emmanuel Ak ([RsyNgibgVJY @ 00:24:33])'},
+                 {'label': 'Amex Presale Floor Flip',
+                  'metric': 'Amex Presale Floor Flip',
+                  'value': '4 floor seats at about $150 each; 2 resold at about $390 each',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Calvin Russell bought through an Amex presale for a Drake and Migos show, '
+                             'kept two seats and sold two.',
+                  'source': '850 Club Credit ([p8CMjg4a_CI @ 00:04:17])'},
+                 {'label': 'Playoff Upper-Bowl Resale',
+                  'metric': 'Playoff Upper-Bowl Resale',
+                  'value': 'About $180 cost resold for over $1,500 by Game 6',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'thumbsuprun reported resale of Bucks Finals upper-bowl season seats.',
+                  'source': 'thumbsuprun ([sQtHQZ6UoRM @ 00:08:00])'}],
+ 'sections': [{'heading': '1. The Practitioner Consensus',
+               'paragraphs': ['The baseline model is blunt. Ticket Flipping frames it as buying hot '
+                              'tickets and selling them for more once the event sells out. It is a '
+                              'business run 100% online in a couple of hours a week, with few people doing '
+                              'it [Ticket Flipping — JwHo6if-9Wo @ 00:01:02]. Emmanuel Ak is UK-based and '
+                              'roughly six years in, having started at 16. He pitches the same picture: '
+                              'digital tickets, an unsaturated field, and any event type from Dave '
+                              'Chappelle to WWE and UFC. His standing order is not to let personal '
+                              'interest interfere with the business [Emmanuel Ak — ETQnblEeP94 @ '
+                              '00:03:03]. He repeats it elsewhere: most beginners lose money because they '
+                              "are too emotional, and numbers don't lie [Emmanuel Ak — RsyNgibgVJY @ "
+                              '00:00:38]. On the sports side, thumbsuprun treats season tickets as the '
+                              'base inventory because they give the lowest average cost per ticket per '
+                              'game. The speaker monetizes them through local sales, a client list, early '
+                              'listing and the playoffs, which the speaker calls where the real money is '
+                              'made [thumbsuprun — sQtHQZ6UoRM @ 00:05:41]. The economic logic is the same '
+                              'in both camps. Acquire inventory below the price the market will bear once '
+                              'supply tightens, and stay detached from the fan side of the event. The only '
+                              'difference is which shows and which seats get bought.',
+                              "Selection is where the speakers agree most. Emmanuel Ak's jackpot combo is "
+                              'high-demand artists, a small venue, limited dates and weekend shows. He '
+                              'avoids oversaturated acts like The Weeknd, favors hometown dates such as '
+                              'Beyoncé in Houston, and picks Friday and Saturday over Sunday. He also '
+                              'notes that an 80K-capacity venue across 10 dates is 800K seats nobody needs '
+                              "to scramble for [Emmanuel Ak — RsyNgibgVJY @ 00:16:00]. Ticket Flipping's "
+                              'live venue training defines the job as determining whether the venue is too '
+                              'small, so that demand will exceed ticket supply. It points out that a 500 '
+                              'to 1,000 capacity room in New York sells out even on a Tuesday [Ticket '
+                              "Flipping — ajoRfqew338 @ 00:05:12]. The same channel's scarcity funnel adds "
+                              'that small venues move first and that the leftovers in stadiums are '
+                              'platinum or VIP. Standard tickets in small or GA rooms are the target '
+                              '[Ticket Flipping — hw92haJDs9Y @ 00:08:14]. Emmanuel Ak goes underground '
+                              'for the same reason, pointing to a 2K-capacity venue facing 20,000 fans. He '
+                              "says Taylor Swift's tour made him six figures, but he warns against chasing "
+                              'big names [Emmanuel Ak — ETQnblEeP94 @ 00:30:24]. The consensus filter is a '
+                              'ratio, not a celebrity: fans divided by seats, checked before any money '
+                              'moves.',
+                              'The baseline toolkit is consistent too. Ticket Flipping says brokers buy '
+                              'and sell mainly on Ticketmaster and StubHub, which hold 26% and 22% market '
+                              'share, with AXS, SeatGeek and Vivid Seats also in play [Ticket Flipping — '
+                              'JwHo6if-9Wo @ 00:03:05]. Emmanuel Ak sells through Listed, StubHub and '
+                              'Vivid Seats. He recommends at least £500 to 2K of starting capital and '
+                              'insists on staying liquid so money keeps cycling [Emmanuel Ak — ETQnblEeP94 '
+                              '@ 00:20:57]. Early access is the other prerequisite. Matthew Josiah shows '
+                              'Amex presale opening up to days before the public, without needing the '
+                              "Platinum card. In his example, The Fray's presale ran almost three days "
+                              'ahead of a Friday public sale, and many seats were gone about a day and a '
+                              'half in [Matthew Josiah — qg3wvctM0wM @ 00:05:24]. Calvin Russell of 850 '
+                              'Club Credit says Ticketmaster presales usually go to Amex holders and '
+                              'sometimes Citi holders. He says a credit score around 670 to 680 is enough '
+                              'for a Green or Everyday card, and that people turn this into a business '
+                              '[850 Club Credit — p8CMjg4a_CI @ 00:04:33]. He has helped people open '
+                              'multiple Amex cards in one day, and says charge or credit cards work but '
+                              'probably not debit. Without capital, platform accounts and a presale card, '
+                              'the rest of the playbook cannot run.'],
+               'table': {'caption': 'Where the flippers agree: core rules every operator runs before '
+                                    'buying',
+                         'headers': ['Consensus Point',
+                                     'What Practitioners Say',
+                                     'Operator Implication',
+                                     'Expert Source'],
+                         'rows': [['Small venues beat stadium tour runs',
+                                   'High-demand artist, small room, limited dates, weekend shows',
+                                   'Screen venue capacity before artist fame on every event',
+                                   'Emmanuel Ak ([RsyNgibgVJY @ 00:16:00])'],
+                                  ['Demand must clearly exceed venue supply',
+                                   'The job is spotting rooms too small for the fanbase',
+                                   'Compare Spotify listeners and local searches against seat counts',
+                                   'Ticket Flipping ([ajoRfqew338 @ 00:05:12])'],
+                                  ['Twenty-five percent margin is the benchmark',
+                                   'Make 25% on every ticket, aim for nine of ten selling',
+                                   'Reject buys that cannot clear a quarter margin on resale',
+                                   'Ticket Flipping ([JwHo6if-9Wo @ 00:09:05])'],
+                                  ['Check resale prices before checkout',
+                                   'Look at StubHub while seats sit in the cart',
+                                   'Confirm the spread before committing the card on primary',
+                                   'Emmanuel Ak ([RsyNgibgVJY @ 00:25:17])'],
+                                  ['Presale cards open early primary inventory',
+                                   'Amex and sometimes Citi holders get Ticketmaster presales first',
+                                   'Carry an Amex or Citi card to reach presale windows',
+                                   '850 Club Credit ([p8CMjg4a_CI @ 00:01:22])'],
+                                  ['Playoffs are the season-ticket payday',
+                                   'You cannot profit on every one of 81 MLB home games',
+                                   'Hold season seats for playoff resale and warm-lead buyers',
+                                   'thumbsuprun ([sQtHQZ6UoRM @ 00:05:56])'],
+                                  ['Stay detached and keep capital liquid',
+                                   'Skip high-risk events rather than tie money up in dead stock',
+                                   'Recycle capital quickly instead of holding stale inventory',
+                                   'Emmanuel Ak ([ETQnblEeP94 @ 00:32:36])']]}},
+              {'heading': '2. Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ["Seat selection starts on Ticketmaster's heat map. Ticket Flipping enables "
+                              'it to color seats by price, dark red for expensive and green or yellow for '
+                              'cheaper, and says to always target price breaks [Ticket Flipping — '
+                              'GORTWFnPPt0 @ 00:01:25]. Front-row chasers overpay at $234, while seats one '
+                              'row behind sit at $125. Those can be listed at $200 for a profit while '
+                              'still undercutting the front. In the Cole Swindle example, the front seats '
+                              'run 279 and 232, then 113, then green at 89. The play is to buy the $89 '
+                              'seats, list them at 110 to 115, and grab $89 pit seats where they exist. '
+                              'Brokers target the seats just behind the break, and the speaker says those '
+                              'price-break seats are always going to make more profit than the seats in '
+                              'front of them [Ticket Flipping — GORTWFnPPt0 @ 00:04:44]. Emmanuel Ak '
+                              'prices off comparables, averaging similar sections such as 100 versus 101. '
+                              'He lists $50 to $100 below market to sell fast, or above market to sell '
+                              'later, knowing demand peaks near the show [Emmanuel Ak — ETQnblEeP94 @ '
+                              '00:23:21]. In his Rush example, the seats cost about $300 in the cart and '
+                              'were listed at about $570 on StubHub, a $270 profit per ticket [Emmanuel Ak '
+                              '— RsyNgibgVJY @ 00:24:33].',
+                              'The scarcity method replaces hype buying. Ticket Flipping calls the old way '
+                              'buying at presale or onsale against everyone else for the top 20 to 30 '
+                              "performers. Instead, it scans Flare's Latest Availability column, which "
+                              'tracks Ticketmaster and AXS inventory with 24-hour and 7-day change [Ticket '
+                              'Flipping — hw92haJDs9Y @ 00:00:38]. Rule one: 500 tickets tells you nothing '
+                              'until you divide by capacity, since that is 2.5% of a 20,000-seat venue but '
+                              '83% of a 600-seat club. Rule two: direction beats the number, so a count '
+                              'falling from 900 to 210 beats a flat 210. Rule three: small venues move '
+                              'first. The filter keeps events with 30 to 500 tickets left, Spotify '
+                              'popularity above 49, an onsale at least a month old and a show at least a '
+                              'month out. The strongest signal is under 100 to 200 left and selling 20 to '
+                              '50 a day; 200 tickets selling 50 a day means four days to sellout [Ticket '
+                              'Flipping — hw92haJDs9Y @ 00:10:09]. A Chrome extension tracks tickets left, '
+                              'so buyers can strike near 50 remaining [Ticket Flipping — JwHo6if-9Wo @ '
+                              '00:08:19]. Emmanuel Ak runs the mirror check, always scanning resale before '
+                              'buying because people list early or hold insider tickets [Emmanuel Ak — '
+                              'RsyNgibgVJY @ 00:25:17]. Ticket Flipping says niche demand can return 25%, '
+                              '50% or even 100% margin.',
+                              'Acquisition runs through four doors. Ticket Flipping says 99% of brokers '
+                              'use presales, onsales, drop alerts and price alerts. Presales give the best '
+                              'prices and seats but need a password and cap buyers at 4 to 8 tickets, '
+                              'while secondary price alerts allow an unlimited amount of seats [Ticket '
+                              'Flipping — NGFBVOXqxpA @ 00:03:25]. In Flare, a drop alert on nine favorite '
+                              'sections fires by Slack and email when seats are added. A StubHub price '
+                              'alert can be set at $45, under an $87 minimum. Emmanuel Ak scales the '
+                              'primary side with proxies: a fixed IP per account and no VPNs. He once ran '
+                              'about 150 accounts and now runs about 70 on two devices, noting that 20 '
+                              'tickets at £500 is £10,000 [Emmanuel Ak — ETQnblEeP94 @ 00:14:48]. He then '
+                              'cross-lists through Listed to Vivid Seats, TickPick, TicketSwap and StubHub '
+                              'in about 30 minutes a day. He also uses vouched WhatsApp and Facebook '
+                              'groups for instant, zero-fee payouts. thumbsuprun adds a local layer: '
+                              'Facebook, Craigslist and street sales carry no fees. Repeat buyers become a '
+                              'client list, which turns into warm leads at playoff time [thumbsuprun — '
+                              'sQtHQZ6UoRM @ 00:03:17].'],
+               'table': {'caption': 'Street mechanics with the exact numbers the practitioners stated',
+                         'headers': ['Mechanic', 'Exact Numbers Stated', 'Execution Note', 'Expert Source'],
+                         'rows': [['Price-break seat buy on Ticketmaster',
+                                   '$125 seats behind a $234 front row, listed at $200',
+                                   'Undercut the front rows while keeping a profitable spread',
+                                   'Ticket Flipping ([GORTWFnPPt0 @ 00:02:02])'],
+                                  ['Remaining-inventory to capacity ratio',
+                                   '500 left is 2.5% of 20,000 or 83% of 600',
+                                   'Always divide remaining tickets by venue capacity first',
+                                   'Ticket Flipping ([hw92haJDs9Y @ 00:02:23])'],
+                                  ['Sellout clock from daily sell rate',
+                                   '200 tickets selling 50 a day equals four days left',
+                                   'Leave enough runway to list on StubHub before showtime',
+                                   'Ticket Flipping ([hw92haJDs9Y @ 00:10:09])'],
+                                  ['Amex presale floor-seat flip',
+                                   'Four floor seats at about $150, two sold near $390',
+                                   'Bought about three months out, sold one to one-and-a-half months out',
+                                   '850 Club Credit ([p8CMjg4a_CI @ 00:05:43])'],
+                                  ['Multi-account proxy scaling',
+                                   'About 70 proxied accounts; 20 tickets at £500 is £10,000',
+                                   'Fixed IP per account and stay away from VPNs entirely',
+                                   'Emmanuel Ak ([ETQnblEeP94 @ 00:14:48])'],
+                                  ['Secondary-market price alert',
+                                   'Alert set at $45 under an $87 StubHub minimum',
+                                   'Unlimited quantity, but watch transfer delays before listing',
+                                   'Ticket Flipping ([NGFBVOXqxpA @ 00:05:17])'],
+                                  ['Playoff upper-bowl season-seat resale',
+                                   'Bucks Finals seats near $180 resold above $1,500',
+                                   'Season-seat value peaked by Game 6 of the series',
+                                   'thumbsuprun ([sQtHQZ6UoRM @ 00:08:00])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Edges the working flippers actually use',
+                           'body': 'Four small habits separate a profitable buy from a stuck ticket, '
+                                   'straight from the operators running them.',
+                           'items': ['Buy the row where the price drops, not the front row: $89 seats '
+                                     'behind a 113 break list at 110 to 115, and brokers are targeting '
+                                     'just behind the break [Ticket Flipping — GORTWFnPPt0 @ 00:04:15].',
+                                     'Watch for held inventory: releases can push a count from 500 back to '
+                                     '700, so look for two or three large drops relative to capacity '
+                                     'before trusting the trend [Ticket Flipping — hw92haJDs9Y @ '
+                                     '00:11:21].',
+                                     'List season seats as soon as the schedule drops, since holders know '
+                                     'their seat locations before the general sale; thumbsuprun cites $75 '
+                                     'per ticket six months out in Calgary [thumbsuprun — sQtHQZ6UoRM @ '
+                                     '00:04:57].',
+                                     "Don't stop at your own card: Citi Strata adds Citi Entertainment "
+                                     'plus Mastercard presales, and The Credit Nerd says to check every '
+                                     'presale available for an event [The Credit Nerd — JS9sO0Fx9A0 @ '
+                                     '00:02:23].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Screen the event on demand versus seats',
+                              'action': 'Compare city-level Spotify listeners, weekend dating and hometown '
+                                        'status against venue capacity.',
+                              'detail': 'On Dave, Emmanuel Ak counted 1M London listeners against a venue '
+                                        "under 100K, leaving about 900,000 fans who can't get tickets "
+                                        '[Emmanuel Ak — RsyNgibgVJY @ 00:06:57].'},
+                             {'step': 2,
+                              'title': 'Confirm scarcity with the inventory curve',
+                              'action': 'Divide tickets left by capacity and confirm a daily downtrend '
+                                        'rather than a flat count.',
+                              'detail': 'A raw count of 500 tells you nothing until you divide it by '
+                                        'capacity; buy into a falling curve, not a dud with no movement '
+                                        '[Ticket Flipping — hw92haJDs9Y @ 00:02:23].'},
+                             {'step': 3,
+                              'title': 'Buy at the price break with resale verified',
+                              'action': 'Pick seats just behind the heat-map price break, then check '
+                                        'StubHub while they sit in the cart.',
+                              'detail': 'Target price breaks on Ticketmaster [Ticket Flipping — '
+                                        'GORTWFnPPt0 @ 00:01:25]; the Rush cart check showed $300 seats '
+                                        'listing near $570 [Emmanuel Ak — RsyNgibgVJY @ 00:24:19].'},
+                             {'step': 4,
+                              'title': 'Cross-list, price off comps, and recycle cash',
+                              'action': 'Push inventory through Listed to multiple secondaries, price '
+                                        'against comparable sections, then reinvest.',
+                              'detail': 'Listed cross-lists to Vivid Seats, TickPick, TicketSwap and '
+                                        'StubHub, fulfills orders and delists on sale, in about 30 minutes '
+                                        'a day [Emmanuel Ak — ETQnblEeP94 @ 00:16:42].'}]},
+              {'heading': 'Section 3: Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The sharpest split between these operators is timing. Emmanuel Ak loads up '
+                              'at release and scales through account count. He runs proxies with a fixed '
+                              'IP per account and no VPNs, ran roughly 150 accounts at one point, and now '
+                              'holds about 70 across two devices. He frames the payoff as 20 tickets at '
+                              '£500 producing £10,000 instead of one capped login [ETQnblEeP94 @ '
+                              '00:11:52]. Calvin Russell of 850 Club Credit works the same early window '
+                              'through card presales. He bought four floor seats at about $150 apiece '
+                              'roughly three months out and sold two at about $390 each a month to six '
+                              'weeks later, clearing the card bill in between [p8CMjg4a_CI @ 00:05:43]. '
+                              'Ticket Flipping calls hype-driven presale and onsale buying the old way, a '
+                              'brawl over the same top 20 to 30 performers. Instead, they wait until '
+                              'onsale is at least a month old and buy only where remaining inventory drops '
+                              'every day. They read the count against capacity: 500 left is 2.5% of a '
+                              '20,000-seat room but 83% of a 600-cap club [hw92haJDs9Y @ 00:02:23]. The '
+                              'Credit Nerd sides with the skeptics, stating that a presale guarantees '
+                              'neither tickets, lower prices, nor better seats [JS9sO0Fx9A0 @ 00:03:51].',
+                              'Selection logic splits on headliners versus rooms. Emmanuel Ak calls '
+                              'high-demand artists, small venues, limited dates and weekend shows the '
+                              'jackpot combo. He tells students that Friday and Saturday dates beat Sunday '
+                              'and warns off oversaturated acts like The Weeknd. He separately notes that '
+                              '80,000 capacity across 10 dates puts 800,000 seats on sale [RsyNgibgVJY @ '
+                              '00:16:00]. Yet the same operator says his Taylor Swift tour run made six '
+                              'figures in profit. He still tells students not to chase big names and to '
+                              'hunt underground acts, such as a 2,000-capacity venue facing 20,000 fans '
+                              '[ETQnblEeP94 @ 00:29:15]. Ticket Flipping works venue-first. In their view, '
+                              'the job is deciding whether the venue is too small for the demand, and they '
+                              'claim a 500 to 1,000 capacity New York room sells out even on a Tuesday '
+                              '[ajoRfqew338 @ 00:05:12]. Their own live research complicates that weekday '
+                              'call. At Bowery Ballroom, Greg Freeman, at roughly 5 million listeners, sat '
+                              'unsold on Tuesday and Wednesday, while the smaller Lemon Twigs sold out '
+                              'Friday and Saturday. On demand signals, Ticket Flipping treats Spotify as '
+                              "the best gauge of an artist's current popularity [JwHo6if-9Wo @ 00:06:49]. "
+                              'Emmanuel Ak cautions that labels buy likes and streams, so raw engagement '
+                              'numbers can mislead.',
+                              'Exit channels and pricing posture split again. thumbsuprun argues that '
+                              'selling locally means no fees, a direct client connection and the best '
+                              'negotiated price. He rates a repeat client list as even stronger: it grows '
+                              'to 5, 10, 15 or 30 buyers who become warm leads in the playoffs, which he '
+                              'calls the stretch where season tickets pay [sQtHQZ6UoRM @ 00:00:42]. '
+                              'Emmanuel Ak also takes zero-fee instant payments through WhatsApp and '
+                              'Facebook groups, but only in vouched groups because of scams [ETQnblEeP94 @ '
+                              '00:19:07]. His volume runs through Listed, which cross-lists to Vivid '
+                              'Seats, TickPick, TicketSwap and StubHub and takes him about 30 minutes a '
+                              'day. On price, he averages comparable sections, such as section 100 against '
+                              '101. He then lists $50 to $100 under market to move fast, or above market '
+                              'to sell later [ETQnblEeP94 @ 00:23:21]. Ticket Flipping refuses to chase '
+                              'undercutters. On a live board with StubHub listings at $35, the trainer '
+                              'said he would hold at $94 or higher and warned that you do not really want '
+                              'to be pricing down at the bottom [ajoRfqew338 @ 00:23:03]. One camp races '
+                              'the floor for turnover; the other protects margin and waits for scarcity to '
+                              'arrive.'],
+               'table': {'caption': 'Side-by-side playbooks: where named operators split on timing, '
+                                    'access, selection and exit pricing',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Entry timing for flip inventory',
+                                   'Buy at release across many proxy accounts, each with a fixed IP',
+                                   'Wait a month past onsale and buy only confirmed daily inventory drops',
+                                   'Emmanuel Ak ([ETQnblEeP94 @ 00:11:52]); Ticket Flipping ([hw92haJDs9Y '
+                                   '@ 00:00:38])'],
+                                  ['Value of card presale access',
+                                   'Amex presale ran almost three days before the public on-sale date',
+                                   'A presale guarantees neither tickets, lower prices, nor better seats '
+                                   'for buyers',
+                                   'Matthew Josiah ([qg3wvctM0wM @ 00:05:24]); The Credit Nerd '
+                                   '([JS9sO0Fx9A0 @ 00:03:51])'],
+                                  ['Which card unlocks presale access',
+                                   'Amex Green or Everyday cards are enough at roughly 670 to 680 credit',
+                                   "Platinum's $895 annual fee is hard to justify on concert tickets alone",
+                                   '850 Club Credit ([p8CMjg4a_CI @ 00:04:33]); The Credit Nerd '
+                                   '([JS9sO0Fx9A0 @ 00:03:35])'],
+                                  ['Headline acts versus niche acts',
+                                   'His Taylor Swift tour run still made six figures in profit',
+                                   'Avoid well-known shows and buy standard tickets in small or GA rooms',
+                                   'Emmanuel Ak ([ETQnblEeP94 @ 00:29:15]); Ticket Flipping ([hw92haJDs9Y '
+                                   '@ 00:08:14])'],
+                                  ['Which show night to target',
+                                   'Friday and Saturday dates beat Sunday dates for resale demand',
+                                   'A 500 to 1,000 cap New York room sells out even on Tuesday',
+                                   'Emmanuel Ak ([RsyNgibgVJY @ 00:14:38]); Ticket Flipping ([ajoRfqew338 '
+                                   '@ 00:04:09])'],
+                                  ['Primary versus secondary sourcing pool',
+                                   'Presales give the best prices and seats but need passwords and cap at '
+                                   '4 to 8',
+                                   'Secondary price alerts let you buy an unlimited amount of underpriced '
+                                   'seats',
+                                   'Ticket Flipping ([NGFBVOXqxpA @ 00:02:16]); Ticket Flipping '
+                                   '([NGFBVOXqxpA @ 00:03:25])'],
+                                  ['Exit pricing posture on resale boards',
+                                   'List $50 to $100 under comparable sections to sell fast',
+                                   'Hold at $94 or higher instead of matching $35 StubHub undercutters',
+                                   'Emmanuel Ak ([ETQnblEeP94 @ 00:23:21]); Ticket Flipping ([ajoRfqew338 '
+                                   '@ 00:23:03])']]}},
+              {'heading': 'Section 4: Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ["The first trap is the buyer's own head. Emmanuel Ak says most beginners "
+                              'lose money because they are too emotional, so he builds his selection '
+                              'process on numbers instead of taste [RsyNgibgVJY @ 00:00:38]. Ticket '
+                              'Flipping shows where that emotion costs cash on the seat map. Buyers '
+                              'chasing the front rows paid $234, while seats one row back cost about $125. '
+                              'Those seats can be listed at $200 for a profit while still undercutting the '
+                              'front row [GORTWFnPPt0 @ 00:01:41]. The same channel says that 99% of the '
+                              'time you do not want platinum tickets because they are overpriced. It also '
+                              'flags dynamic pricing as a trap: a $50 primary ticket gets relabeled as an '
+                              '$80 platinum seat once resale sits at $80 [hw92haJDs9Y @ 00:12:52]. The fix '
+                              'Emmanuel Ak teaches is a live comparison before checkout. Keep the tickets '
+                              'in your cart and check the resale market first, because people list early '
+                              'or hold insider tickets. He did this on Rush seats that cost about $300 and '
+                              'were listed near $570, about $270 profit per ticket [RsyNgibgVJY @ '
+                              '00:25:17]. Skip that check, and an operator ends up buying at or above what '
+                              'the secondary market will actually pay, with no margin left to cover fees '
+                              'or a slow sale.',
+                              'The second trap is fake scarcity. Ticket Flipping lists four warnings from '
+                              'their inventory-tracking method [hw92haJDs9Y @ 00:11:21]:\n'
+                              '- Held inventory released back into a show can push the count from 500 up '
+                              'to 700. They want two or three large drops relative to capacity before '
+                              'trusting a trend.\n'
+                              '- Duds show few tickets left but no movement.\n'
+                              '- Dynamic pricing hides the real get-in.\n'
+                              '- Some shows simply lack demand, with primary at $50 while secondary sits '
+                              'at $45.\n'
+                              'They add that there can always be one or two people selling for a loss. '
+                              'Judge the majority of listings across StubHub, Vivid Seats and TickPick, '
+                              'not the first few [hw92haJDs9Y @ 00:13:38]. Emmanuel Ak warns that labels '
+                              'buy likes and streams, so a big social following can mislead anyone who '
+                              'does not cross-check Spotify cities and venue size [RsyNgibgVJY @ '
+                              '00:01:36]. In live venue research, Ticket Flipping watched Avery Anna, near '
+                              '9 million listeners, sit unsold 23 days out. The trainer said to reconsider '
+                              'when get-in prices run four times face, $50 against $200, and told buyers '
+                              'to be careful with flips less than a week out [ajoRfqew338 @ 00:10:54]. A '
+                              'low count with no daily sales is not a signal; it is a stall.',
+                              'The third trap is operational and capital drag. Ticket Flipping warns that '
+                              'secondary-market buys carry transfer delays, so an operator needs time to '
+                              'receive, list, sell and transfer the tickets out. Primary queues can also '
+                              'drop you at position 10,000 with 15 to 30 minute waits and 4 to 8 ticket '
+                              'caps [NGFBVOXqxpA @ 00:04:09]. Emmanuel Ak tells operators to stay liquid '
+                              'and says it is sometimes better to skip events than tie up money in dead '
+                              'stock [ETQnblEeP94 @ 00:32:36]. Season-ticket holders face a different '
+                              'bleed. thumbsuprun cautions that across 81 MLB home games you cannot profit '
+                              'on every game, and names three main pitfalls that can lose quite a bit of '
+                              'money [sQtHQZ6UoRM @ 00:05:56]. Hermanos F.C. shows the counterparty side '
+                              '[x2psJ5xGp18 @ 00:08:57]:\n'
+                              "- Juan's added Inter Miami seat landed on the opposite side of the "
+                              'stadium.\n'
+                              '- Reps went unresponsive for about two months.\n'
+                              '- Friends were double-charged $280 instead of $70 on playoff tickets.\n'
+                              '- His debit card was charged anyway as he decided to cancel.\n'
+                              '- His group of ten is each paying $1,000, which he puts at $20,000.\n'
+                              'Margin on paper means nothing if cash, transfers or the seller of record '
+                              'fail.'],
+               'table': {'caption': 'Firsthand failure modes with the numbers operators reported and the '
+                                    'check each one implies',
+                         'headers': ['Failure Mode',
+                                     'Firsthand Evidence and Numbers',
+                                     'Operator Check',
+                                     'Expert Source'],
+                         'rows': [['Overpaying for front-row seats',
+                                   'Front-row buyers paid $234 while one row back cost about $125',
+                                   'Buy just behind the price break and list near $200',
+                                   'Ticket Flipping ([GORTWFnPPt0 @ 00:01:41])'],
+                                  ['Platinum and dynamic pricing trap',
+                                   'A $50 primary seat is relabeled platinum at $80 once resale hits $80',
+                                   'Skip platinum tickets 99% of the time because they are overpriced',
+                                   'Ticket Flipping ([hw92haJDs9Y @ 00:12:52])'],
+                                  ['Held inventory released back into the show',
+                                   'Remaining count jumped from 500 back up to 700 after a release',
+                                   'Require two or three large drops relative to capacity before buying',
+                                   'Ticket Flipping ([hw92haJDs9Y @ 00:11:21])'],
+                                  ['Transfer delay on secondary buys',
+                                   'Tickets must arrive, be listed, sell and transfer out in time',
+                                   'Confirm transfer timing first and be careful with flips under a week '
+                                   'out',
+                                   'Ticket Flipping ([NGFBVOXqxpA @ 00:04:09])'],
+                                  ['Dead stock tying up capital',
+                                   'Money locked in unsold tickets blocks reinvestment and buying power',
+                                   'Stay liquid and skip high-risk events rather than hold dead stock',
+                                   'Emmanuel Ak ([ETQnblEeP94 @ 00:32:36])'],
+                                  ['Getting stuck with presale inventory',
+                                   'Bought four floor seats near $150 each and warned against getting '
+                                   'stuck',
+                                   'Sell one to one and a half months out after paying the card bill',
+                                   '850 Club Credit ([p8CMjg4a_CI @ 00:05:30])'],
+                                  ['Season-ticket counterparty failure',
+                                   'Friends were double-charged $280 instead of $70 on Inter Miami playoff '
+                                   'tickets',
+                                   'Audit charges, rep responsiveness and seat assignment before renewing '
+                                   'seats',
+                                   'Hermanos F.C. ([x2psJ5xGp18 @ 00:08:57])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Four Checks Before Any Buy Goes Through',
+                           'body': 'Each gate comes straight from a loss, stall or reversal that a named '
+                                   'operator reported. If a buy fails any of these checks, kill it.',
+                           'items': ['Run the cart check: compare the resale market before paying, as with '
+                                     'Rush seats bought at about $300 and listed near $570 [Emmanuel Ak — '
+                                     'RsyNgibgVJY @ 00:25:17].',
+                                     'Divide remaining tickets by capacity and require a real daily '
+                                     'downtrend, not a 500 count that can jump back to 700 [Ticket '
+                                     'Flipping — hw92haJDs9Y @ 00:11:21].',
+                                     'Confirm you have time to receive, list, sell and transfer out before '
+                                     'committing to secondary-market buys [Ticket Flipping — NGFBVOXqxpA @ '
+                                     '00:04:09].',
+                                     'Skip any event that would tie up money in dead stock, and stay '
+                                     'liquid for the next buy [Emmanuel Ak — ETQnblEeP94 @ 00:32:36].']}}],
+ 'pull_quote': '"The price break seats are always going to make more money and let you make more profit '
+               'than the seats in front of them." — Ticket Flipping (GORTWFnPPt0 @ 00:04:44).',
+ 'diagram_id': 'diag-08',
+ 'action_checklist': ['Turn on the seat heat map and buy just behind the price break, such as $89 seats '
+                      'listed at $110 to $115 (Ticket Flipping, GORTWFnPPt0 @ 00:03:18).',
+                      'Filter for 30 to 500 tickets left, Spotify popularity above 49 and an onsale at '
+                      'least a month old before buying (Ticket Flipping, hw92haJDs9Y @ 00:04:48).',
+                      'Check Spotify monthly listeners and top cities against venue capacity before '
+                      'committing capital (Emmanuel Ak, RsyNgibgVJY @ 00:06:57).',
+                      'Set drop alerts on sold-out sections and secondary price alerts below the current '
+                      'market price (Ticket Flipping, NGFBVOXqxpA @ 00:04:28).',
+                      'Cross-list through Listed, and sell in WhatsApp or Facebook groups only when they '
+                      'are vouched (Emmanuel Ak, ETQnblEeP94 @ 00:16:42).',
+                      'Build a repeat client list, send it renewal pricing and games, and work those warm '
+                      'leads at playoff time (thumbsuprun, sQtHQZ6UoRM @ 00:02:34).'],
+ 'statutory_citations': [{'title': 'Ticket Flipping — The New Way to Find Tickets To Flip [00:02:23]',
+                          'url': 'https://www.youtube.com/watch?v=hw92haJDs9Y&t=143s',
+                          'relevance': 'Primary practitioner testimony on scarcity-based buying, '
+                                       'inventory-to-capacity math and false-demand warnings.'},
+                         {'title': 'Emmanuel Ak — How I scaled to 5 figure months Reselling Concert '
+                                   'Tickets(1hr Full Course) [00:20:57]',
+                          'url': 'https://www.youtube.com/watch?v=ETQnblEeP94&t=1257s',
+                          'relevance': 'Primary practitioner testimony on starting capital, multi-account '
+                                       'scaling, cross-listing, pricing and dead-stock risk.'},
+                         {'title': 'Ticket Flipping — Live Training: How to find tickets to flip based on '
+                                   'the Venue! [00:05:12]',
+                          'url': 'https://www.youtube.com/watch?v=ajoRfqew338&t=312s',
+                          'relevance': 'Primary practitioner testimony on venue-first selection, weekday '
+                                       'demand and holding price against undercutters.'},
+                         {'title': 'Emmanuel Ak — The Hidden System Behind $30K/Month Concert Ticket Flips '
+                                   '[00:16:00]',
+                          'url': 'https://www.youtube.com/watch?v=RsyNgibgVJY&t=960s',
+                          'relevance': 'Primary practitioner testimony on artist selection, Spotify city '
+                                       'checks and comparing resale prices before checkout.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'sQtHQZ6UoRM',
+                       'title': 'CAN YOU MAKE MONEY SELLING SEASON TICKETS? | 4 WAYS TO SELL TICKETS TO '
+                                'MAKE MONEY | NFL NBA NHL MLB',
+                       'channel': 'thumbsuprun',
+                       'author': 'thumbsuprun',
+                       'text': 'This is where you make all your money, playoffs, playoffs, playoffs, that '
+                               'is why you buy season tickets.',
+                       'tip': 'This is where you make all your money, playoffs, playoffs, playoffs, that '
+                              'is why you buy season tickets.',
+                       'timestamp': 527,
+                       'timestamp_seconds': 527,
+                       'timestamp_label': '[00:08:47]',
+                       'url': 'https://www.youtube.com/watch?v=sQtHQZ6UoRM&t=527s',
+                       'markdown': '[00:08:47](https://www.youtube.com/watch?v=sQtHQZ6UoRM&t=527s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'x5waP6wwK-Y',
+                       'title': 'NBA Finals, World Cup Odds, Stanley Cup Finals, College World Series | '
+                                'The Odds Couple',
+                       'channel': 'Grind City Media',
+                       'author': 'Grind City Media',
+                       'text': 'Sign up with the new Kroger buzzer beater deal.',
+                       'tip': 'Sign up with the new Kroger buzzer beater deal.',
+                       'timestamp': 98,
+                       'timestamp_seconds': 98,
+                       'timestamp_label': '[00:01:38]',
+                       'url': 'https://www.youtube.com/watch?v=x5waP6wwK-Y&t=98s',
+                       'markdown': '[00:01:38](https://www.youtube.com/watch?v=x5waP6wwK-Y&t=98s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ojMLC_Y0QgI',
+                       'title': 'The Ultimate Futures Betting Guide | NBA, NHL, MLB & More',
+                       'channel': 'Break The Board Sports',
+                       'author': 'Break The Board Sports',
+                       'text': 'I got no confidence in Duke.',
+                       'tip': 'I got no confidence in Duke.',
+                       'timestamp': 59,
+                       'timestamp_seconds': 59,
+                       'timestamp_label': '[00:00:59]',
+                       'url': 'https://www.youtube.com/watch?v=ojMLC_Y0QgI&t=59s',
+                       'markdown': '[00:00:59](https://www.youtube.com/watch?v=ojMLC_Y0QgI&t=59s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'T7ujtjzkDcQ',
+                       'title': 'NBA Playoffs Gambling Guide 🏀💰',
+                       'channel': 'Bear Bets: A FOX Sports Gambling Show',
+                       'author': 'Bear Bets: A FOX Sports Gambling Show',
+                       'text': 'The less you bet, the more you listen.',
+                       'tip': 'The less you bet, the more you listen.',
+                       'timestamp': 2916,
+                       'timestamp_seconds': 2916,
+                       'timestamp_label': '[00:48:36]',
+                       'url': 'https://www.youtube.com/watch?v=T7ujtjzkDcQ&t=2916s',
+                       'markdown': '[00:48:36](https://www.youtube.com/watch?v=T7ujtjzkDcQ&t=2916s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'qg3wvctM0wM',
+                       'title': 'This AMEX Perk Gets You Concert Tickets Before Everyone Else',
+                       'channel': 'Matthew Josiah',
+                       'author': 'Matthew Josiah',
+                       'text': 'So, the pre-sale is obviously the ability to buy tickets before the event '
+                               'and before the public is able to buy those tickets.',
+                       'tip': 'So, the pre-sale is obviously the ability to buy tickets before the event '
+                              'and before the public is able to buy those tickets.',
+                       'timestamp': 89,
+                       'timestamp_seconds': 89,
+                       'timestamp_label': '[00:01:29]',
+                       'url': 'https://www.youtube.com/watch?v=qg3wvctM0wM&t=89s',
+                       'markdown': '[00:01:29](https://www.youtube.com/watch?v=qg3wvctM0wM&t=89s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'JS9sO0Fx9A0',
+                       'title': '3 Best Credit Cards For Concert Tickets & Entertainment In 2026 | '
+                                'NerdWallet',
+                       'channel': 'The Credit Nerd',
+                       'author': 'The Credit Nerd',
+                       'text': 'Your best strategy is to check every presale available for a specific '
+                               'event above and beyond just offers through your credit card.',
+                       'tip': 'Your best strategy is to check every presale available for a specific event '
+                              'above and beyond just offers through your credit card.',
+                       'timestamp': 259,
+                       'timestamp_seconds': 259,
+                       'timestamp_label': '[00:04:19]',
+                       'url': 'https://www.youtube.com/watch?v=JS9sO0Fx9A0&t=259s',
+                       'markdown': '[00:04:19](https://www.youtube.com/watch?v=JS9sO0Fx9A0&t=259s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'p8CMjg4a_CI',
+                       'title': 'How American Express/CITI Bank Can Get You Into Any Concert/Event For '
+                                'Free - Drake & Migos Concert',
+                       'channel': '850 Club Credit',
+                       'author': '850 Club Credit',
+                       'text': 'We sold the other two tickets for about I think $390 a piece or something '
+                               'like that.',
+                       'tip': 'We sold the other two tickets for about I think $390 a piece or something '
+                              'like that.',
+                       'timestamp': 257,
+                       'timestamp_seconds': 257,
+                       'timestamp_label': '[00:04:17]',
+                       'url': 'https://www.youtube.com/watch?v=p8CMjg4a_CI&t=257s',
+                       'markdown': '[00:04:17](https://www.youtube.com/watch?v=p8CMjg4a_CI&t=257s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'x2psJ5xGp18',
+                       'title': 'Inter Miami Let Me Down—Why I’m Canceling My Season Tickets',
+                       'channel': 'Hermanos F.C.',
+                       'author': 'Hermanos F.C.',
+                       'text': 'They got double charged on the playoff tickets.',
+                       'tip': 'They got double charged on the playoff tickets.',
+                       'timestamp': 537,
+                       'timestamp_seconds': 537,
+                       'timestamp_label': '[00:08:57]',
+                       'url': 'https://www.youtube.com/watch?v=x2psJ5xGp18&t=537s',
+                       'markdown': '[00:08:57](https://www.youtube.com/watch?v=x2psJ5xGp18&t=537s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'RsyNgibgVJY',
+                       'title': 'The Hidden System Behind $30K/Month Concert Ticket Flips',
+                       'channel': 'Emmanuel Ak',
+                       'author': 'Emmanuel Ak',
+                       'text': 'So the sweet spot with ticket reselling is high demand artists, small '
+                               'venue, limited dates, weekend shows.',
+                       'tip': 'So the sweet spot with ticket reselling is high demand artists, small '
+                              'venue, limited dates, weekend shows.',
+                       'timestamp': 960,
+                       'timestamp_seconds': 960,
+                       'timestamp_label': '[00:16:00]',
+                       'url': 'https://www.youtube.com/watch?v=RsyNgibgVJY&t=960s',
+                       'markdown': '[00:16:00](https://www.youtube.com/watch?v=RsyNgibgVJY&t=960s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'RsyNgibgVJY',
+                       'title': 'The Hidden System Behind $30K/Month Concert Ticket Flips',
+                       'channel': 'Emmanuel Ak',
+                       'author': 'Emmanuel Ak',
+                       'text': 'Always use the resale market before you buy the tickets because people can '
+                               'list tickets early or people got insider tickets, etc.',
+                       'tip': 'Always use the resale market before you buy the tickets because people can '
+                              'list tickets early or people got insider tickets, etc.',
+                       'timestamp': 1517,
+                       'timestamp_seconds': 1517,
+                       'timestamp_label': '[00:25:17]',
+                       'url': 'https://www.youtube.com/watch?v=RsyNgibgVJY&t=1517s',
+                       'markdown': '[00:25:17](https://www.youtube.com/watch?v=RsyNgibgVJY&t=1517s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'GORTWFnPPt0',
+                       'title': 'WHY some tickets ALWAYS make more Profit',
+                       'channel': 'Ticket Flipping',
+                       'author': 'Ticket Flipping',
+                       'text': 'The price break seats are always going to make more money and let you make '
+                               'more profit than the seats in front of them.',
+                       'tip': 'The price break seats are always going to make more money and let you make '
+                              'more profit than the seats in front of them.',
+                       'timestamp': 284,
+                       'timestamp_seconds': 284,
+                       'timestamp_label': '[00:04:44]',
+                       'url': 'https://www.youtube.com/watch?v=GORTWFnPPt0&t=284s',
+                       'markdown': '[00:04:44](https://www.youtube.com/watch?v=GORTWFnPPt0&t=284s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'JwHo6if-9Wo',
+                       'title': 'The Simplest Resale Business No One is Doing',
+                       'channel': 'Ticket Flipping',
+                       'author': 'Ticket Flipping',
+                       'text': "It's not rocket science when it comes down to it, you just need to make "
+                               '25% on every ticket you buy.',
+                       'tip': "It's not rocket science when it comes down to it, you just need to make 25% "
+                              'on every ticket you buy.',
+                       'timestamp': 545,
+                       'timestamp_seconds': 545,
+                       'timestamp_label': '[00:09:05]',
+                       'url': 'https://www.youtube.com/watch?v=JwHo6if-9Wo&t=545s',
+                       'markdown': '[00:09:05](https://www.youtube.com/watch?v=JwHo6if-9Wo&t=545s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'hw92haJDs9Y',
+                       'title': 'The New Way to Find Tickets To Flip',
+                       'channel': 'Ticket Flipping',
+                       'author': 'Ticket Flipping',
+                       'text': 'So, the number one rule is 500 tickets really tells you nothing.',
+                       'tip': 'So, the number one rule is 500 tickets really tells you nothing.',
+                       'timestamp': 143,
+                       'timestamp_seconds': 143,
+                       'timestamp_label': '[00:02:23]',
+                       'url': 'https://www.youtube.com/watch?v=hw92haJDs9Y&t=143s',
+                       'markdown': '[00:02:23](https://www.youtube.com/watch?v=hw92haJDs9Y&t=143s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'hw92haJDs9Y',
+                       'title': 'The New Way to Find Tickets To Flip',
+                       'channel': 'Ticket Flipping',
+                       'author': 'Ticket Flipping',
+                       'text': "If there's 200 tickets and it's selling 50 a day, you have 4 days until "
+                               'that event is sold out.',
+                       'tip': "If there's 200 tickets and it's selling 50 a day, you have 4 days until "
+                              'that event is sold out.',
+                       'timestamp': 609,
+                       'timestamp_seconds': 609,
+                       'timestamp_label': '[00:10:09]',
+                       'url': 'https://www.youtube.com/watch?v=hw92haJDs9Y&t=609s',
+                       'markdown': '[00:10:09](https://www.youtube.com/watch?v=hw92haJDs9Y&t=609s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ajoRfqew338',
+                       'title': 'Live Training: How to find tickets to flip based on the Venue!',
+                       'channel': 'Ticket Flipping',
+                       'author': 'Ticket Flipping',
+                       'text': 'What our job is, is to determine if the venue is too small and the demand '
+                               'will exceed the ticket supply.',
+                       'tip': 'What our job is, is to determine if the venue is too small and the demand '
+                              'will exceed the ticket supply.',
+                       'timestamp': 312,
+                       'timestamp_seconds': 312,
+                       'timestamp_label': '[00:05:12]',
+                       'url': 'https://www.youtube.com/watch?v=ajoRfqew338&t=312s',
+                       'markdown': '[00:05:12](https://www.youtube.com/watch?v=ajoRfqew338&t=312s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ETQnblEeP94',
+                       'title': 'How I scaled to 5 figure months Reselling Concert Tickets(1hr Full '
+                                'Course)',
+                       'channel': 'Emmanuel Ak',
+                       'author': 'Emmanuel Ak',
+                       'text': "Sometimes it's better to skip events than tie up money in dead stock.",
+                       'tip': "Sometimes it's better to skip events than tie up money in dead stock.",
+                       'timestamp': 1956,
+                       'timestamp_seconds': 1956,
+                       'timestamp_label': '[00:32:36]',
+                       'url': 'https://www.youtube.com/watch?v=ETQnblEeP94&t=1956s',
+                       'markdown': '[00:32:36](https://www.youtube.com/watch?v=ETQnblEeP94&t=1956s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'NGFBVOXqxpA',
+                       'title': 'How to get More Tickets to Flip',
+                       'channel': 'Ticket Flipping',
+                       'author': 'Ticket Flipping',
+                       'text': 'And then also there are transfer delays, so you want to make sure that you '
+                               'can get the tickets in time to have them transferred to you.',
+                       'tip': 'And then also there are transfer delays, so you want to make sure that you '
+                              'can get the tickets in time to have them transferred to you.',
+                       'timestamp': 249,
+                       'timestamp_seconds': 249,
+                       'timestamp_label': '[00:04:09]',
+                       'url': 'https://www.youtube.com/watch?v=NGFBVOXqxpA&t=249s',
+                       'markdown': '[00:04:09](https://www.youtube.com/watch?v=NGFBVOXqxpA&t=249s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '-W8Qblym0eg',
+                       'title': 'HOW TO BUY NFL SEASON TICKETS (2026)',
+                       'channel': 'FAQS',
+                       'author': 'FAQS',
+                       'text': 'So you can keep checking back.',
+                       'tip': 'So you can keep checking back.',
+                       'timestamp': 24,
+                       'timestamp_seconds': 24,
+                       'timestamp_label': '[00:00:24]',
+                       'url': 'https://www.youtube.com/watch?v=-W8Qblym0eg&t=24s',
+                       'markdown': '[00:00:24](https://www.youtube.com/watch?v=-W8Qblym0eg&t=24s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q12.'}]}

@@ -1,673 +1,925 @@
 from __future__ import annotations
 
-CHAPTER_2 = {
-    "id": "Q2",
-    "chapter_id": "Q2",
-    "chapter_number": 2,
-    "question_number": 2,
-    "slug": "who-pays-and-how-recovery-fees-clear",
-    "question_prompt": "Who writes the check in contingent corporate bill-audit & tax-credit recovery, what acute financial or statutory pain forces them to pay, and how do funds clear cleanly without circumvention or non-payment?",
-    "kicker": "Q2 / THE BIG MONEY PLAYBOOKS",
-    "title": "Who Pays, Why They Pay & How the Payment Rail Works",
-    "subtitle": "CFO Buying Triggers, Utility Refunds, FedEx/UPS Credits, WOTC Evidence, Circular 230 and Eight Settlement Rails",
-    "layout_template": "executive_summary",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #38 ranks #06 of 42 with a 94/100 Money-to-Manpower Score because "
-        "documented recoveries can fund fees without a new operating appropriation. "
-        "The buyer is usually a CFO, controller, property owner or employer; the utility, "
-        "carrier or taxing authority releases the underlying benefit. Across 12 mapped "
-        "plays, this chapter separates buying authority, claim authority and payment "
-        "authority, then connects each to evidence and enforceable settlement terms. "
-        "Annual owner net profit is $33,000 Conservative, $217,150 Base and $504,000 Scaled. "
-        "Those outcomes derive from earned operator fees, never client bills, shipment "
-        "spend or credit face value. Protect collection through signed authorization, "
-        "dated baselines, verified realization, account-level reporting and credit-aware "
-        "payment terms before revealing actionable findings."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$110,000",
-            "context": "Annual earned operator revenue; underlying client bills excluded",
-            "note": "30% net margin; $33,000 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Base",
-            "value": "$505,000",
-            "context": "Annual earned operator revenue; underlying client bills excluded",
-            "note": "43.0% net margin; $217,150 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$900,000",
-            "context": "Annual earned operator revenue; underlying client bills excluded",
-            "note": "56% net margin; $504,000 annual owner net profit; 2 FT + 4 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Identify the economic buyer, benefit owner and actual signer",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "The client writes the operator's check; the carrier, utility, landlord or taxing "
-                    "authority usually delivers the benefit that funds it. Sell those as separate "
-                    "events. A controller buys defensible cash recovery and a clean close, while a "
-                    "CFO buys working-capital improvement without adding permanent analysts. A "
-                    "facilities director supplies meter history but may lack contracting authority. "
-                    "A logistics manager can validate late shipments but cannot necessarily amend "
-                    "a carrier agreement. A property manager may coordinate an appeal while the "
-                    "owner, lender or lease determines who receives the reduction. For WOTC, human "
-                    "resources controls onboarding evidence, payroll controls wages and hours, and "
-                    "the employer's tax team controls credit utilization. Build a stakeholder record "
-                    "naming the contracting entity, benefit owner, authorized signer, budget owner, "
-                    "accounts-payable contact and evidence custodian. Ask who can approve a $20,000 "
-                    "fee after a $50,000 refund, whether a purchase order is required, and whether "
-                    "supplier enrollment must precede work. Zero upfront pricing removes one "
-                    "objection, not procurement. The acute pain is a shrinking claim window, "
-                    "unexplained expense leakage, missed onboarding documentation or trapped cash; "
-                    "the signature follows when the buyer sees an auditable route from that pain "
-                    "to a measurable benefit and a bounded fee."
-                ),
-                (
-                    "For utility_waste_cam_tariff_overcharge_audit, request up to 36 months of "
-                    "electric, water/sewer, waste and lease CAM records, then shorten each review "
-                    "to the applicable tariff, contract and jurisdictional recovery limit. A "
-                    "$100,000 supported refund at a negotiated 40% share produces $40,000 of "
-                    "operator fees and leaves $60,000 with the client. The permitted commercial "
-                    "range is 35%–50% for this play, within the broader shelf's 25%–50% expense "
-                    "contingency positioning. Demand ratchets require interval and billing-demand "
-                    "evidence; cooling-tower sewer credits require an accepted evaporation or "
-                    "deduct-meter method; manufacturing exemptions require jurisdiction-specific "
-                    "eligibility. Waste escalation disputes turn on signed amendments, while CAM "
-                    "recoveries turn on the lease, allocation schedules and audit deadlines. Do "
-                    "not promise a universal three-year refund right. If the historical claim "
-                    "fails, withdraw unsupported items, preserve surviving disputes, and price "
-                    "documented prospective metering or classification changes separately. For "
-                    "example, $2,000 of verified monthly savings at 35% produces $700 monthly "
-                    "fees, or $25,200 across a fully realized 36-month term. Historical and "
-                    "prospective periods must not overlap. The buyer receives a schedule showing "
-                    "which invoices support each dollar, which items remain disputed, and who "
-                    "must approve the correction before savings begin."
-                ),
-                (
-                    "Use high_velocity_dm_outbound_systems to reach buyers through an expressed "
-                    "interest, not scraped inbox saturation. A LinkedIn comment inviting an "
-                    "invoice-check worksheet, an Instagram reaction to a metering case study, "
-                    "or an inbound message can create a permissioned routing event where the "
-                    "platform supports that workflow. An illustrative funnel of 200 trigger "
-                    "actions, 80 replies, 20 qualified calls and four signed audits yields "
-                    "40% reply, 25% qualification and 20% closing conversion at successive "
-                    "stages. At $4,000 expected earned fees per audit, that cohort represents "
-                    "$16,000 of potential fees, not booked revenue on signature. Route warm "
-                    "signals by company domain and account owner so several inboxes do not "
-                    "contact the same controller. Require user-initiated comment, reaction "
-                    "or inbound activity before automated dispatch, and send external links "
-                    "only after a reply. PeerFloodError, delivery restrictions or a platform "
-                    "warning means stop and use permitted manual follow-up or an inbound "
-                    "form, never identity rotation. The twelve applications below map buyer "
-                    "and payment problems; several deliberately share an audit workflow and "
-                    "must not be counted as twelve independent revenue streams. Only the "
-                    "two supplied identifiers are reproduced as canonical play identifiers."
-                ),
-            ],
-            "table": {
-                "caption": "Twelve Mapped Applications: Economic Buyers, Unit Fees and Recovery Fallbacks",
-                "headers": [
-                    "Mapped play or specific operating application",
-                    "Economic buyer and immediate purchasing pressure",
-                    "Illustrative benefit and operator fee mechanics",
-                    "Evidence failure and practical collection fallback",
-                ],
-                "rows": [
-                    [
-                        "utility_waste_cam_tariff_overcharge_audit combines historical expense disputes with separately measured prospective corrections",
-                        "Controller needs documented leakage recovered before individual dispute windows expire",
-                        "$100,000 realized historical refund multiplied by 40% earns $40,000",
-                        "Withdraw unsupported items; preserve timely disputes and document prospective corrections",
-                    ],
-                    [
-                        "high_velocity_dm_outbound_systems routes prospect initiated signals into qualified audit conversations",
-                        "Audit practice owner needs qualified controllers without damaging platform access",
-                        "Four signed audits multiplied by $4,000 expected earned fees suggests $16,000",
-                        "Stop restricted automation; require a trigger and reply before links",
-                    ],
-                    [
-                        "FedEx parcel service refund application for eligible contractual shipments",
-                        "Logistics controller needs eligible late delivery charges credited promptly",
-                        "$20,000 posted eligible refunds multiplied by 35% earns $7,000",
-                        "Exclude waived guarantees; pursue only other supported eligible billing errors",
-                    ],
-                    [
-                        "UPS parcel charge correction application for documented billing discrepancies",
-                        "Transportation manager needs duplicate charges corrected without disrupting carrier terms",
-                        "$12,000 realized eligible credits multiplied by 35% earns $4,200",
-                        "Reject unsupported service claims; preserve documented duplicates within contractual deadlines",
-                    ],
-                    [
-                        "Commercial telecom inventory reconciliation for disconnected and duplicate services",
-                        "IT controller needs unused circuits removed and duplicate charges recovered",
-                        "$30,000 realized refunds multiplied by 40% earns $12,000",
-                        "Resolve termination charges first; measure prospective savings after verified disconnects",
-                    ],
-                    [
-                        "Property assessment appeal coordination with appropriately licensed local professionals",
-                        "Property owner faces an excessive assessment and approaching appeal deadline",
-                        "$50,000 realized reduction multiplied by permitted 25% earns $12,500",
-                        "Verify local fee restrictions; decline unlicensed representation and unsupported appeals",
-                    ],
-                    [
-                        "WOTC onboarding evidence and certification processing for eligible employers",
-                        "Employer tax team needs timely applications and defensible wage records",
-                        "Forty completed contracted processing units multiplied by $150 earns $6,000",
-                        "Check statutory hire dates; separate processing fees from contingent return preparation",
-                    ],
-                    [
-                        "Specialty business tax credit evidence assembly for qualified practitioners",
-                        "Tax director needs substantiated eligibility before claiming an identified credit",
-                        "Ten completed evidence packages multiplied by $1,500 fixed fees earns $15,000",
-                        "Verify the specific credit statute; withdraw packages lacking required evidence",
-                    ],
-                    [
-                        "Waste hauler escalation review within the broader utility audit",
-                        "Facilities controller suspects annual increases exceed signed escalation provisions",
-                        "$18,000 realized contract refunds multiplied by 40% earns $7,200",
-                        "Honor executed amendments; negotiate only supported corrections and future pricing",
-                    ],
-                    [
-                        "Lease CAM allocation review within the historical expense audit",
-                        "Tenant controller needs improper allocations corrected before lease audit expiry",
-                        "$25,000 returned tenant overcharges multiplied by 40% earns $10,000",
-                        "Follow lease dispute procedures; exclude recoveries belonging to other tenants",
-                    ],
-                    [
-                        "Manufacturing meter exemption review within jurisdiction specific utility rules",
-                        "Plant controller needs qualifying production usage separated from taxable consumption",
-                        "$15,000 realized eligible refunds multiplied by 40% earns $6,000",
-                        "Remove ineligible usage; implement supportable meter classification prospectively instead",
-                    ],
-                    [
-                        "Cooling tower evaporation sewer credit review with accepted measurement",
-                        "Facilities director needs sewer billing aligned with documented nonreturn water",
-                        "$2,000 verified monthly savings multiplied by 35% earns $700",
-                        "Install economically justified accepted measurement before charging prospective savings shares",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Make the controller your collection ally before disclosing findings",
-                "body": "The fastest collections start with procurement and evidence design, not a forceful overdue invoice.",
-                "items": [
-                    "Ask accounts payable to validate a specimen invoice, vendor record and purchase-order treatment before the first claim is submitted.",
-                    "Save the signed carrier pricing agreement beside shipment evidence; a service-guarantee waiver can erase an otherwise attractive late-delivery population.",
-                    "Photograph meter identifiers and preserve installation dates; a cooling-tower credit often turns on the accepted measurement period rather than annual consumption estimates.",
-                    "Give the controller separate historical-refund and prospective-savings schedules so one posted credit cannot generate two fee invoices.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Choose a payment rail that matches authority and realization",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Start with client-direct settlement. The utility posts a credit or sends "
-                    "money to the account holder; the carrier credits the shipper; the tax "
-                    "authority applies or refunds an amount to the taxpayer. The operator "
-                    "then invoices the contracted fee against evidence of realization. A "
-                    "Letter of Authorization permits specified information access or claim "
-                    "communications; it does not automatically authorize fund custody, ACH "
-                    "debits, tax representation or a lien. Secure separate documents for "
-                    "those distinct powers where appropriate. A posted utility credit "
-                    "deserves special treatment when the account closes or has insufficient "
-                    "future charges: define whether the fee arises at posting, application "
-                    "against an enforceable bill, or cash refund. Prefer actual application "
-                    "or cash when collectability is uncertain. For a $50,000 refund and "
-                    "40% fee, the client receives $50,000 and pays $20,000; the operator "
-                    "does not report $50,000 as revenue. If a permitted settlement agent "
-                    "splits the distribution, its statement should show $30,000 to the "
-                    "client and $20,000 to the operator with the same underlying claim "
-                    "identifier. A split instruction requires acceptance by the actual "
-                    "disbursing party, not merely language in the engagement."
-                ),
-                (
-                    "Match rail friction to counterparty risk and ticket size. ACH credit "
-                    "is efficient for recurring shared-savings invoices because the client "
-                    "pushes payment through established treasury controls. Authorized ACH "
-                    "debit can reduce missed installments, but mandate business-account "
-                    "verification, retained authorization, an agreed notification process "
-                    "and processor-specific return handling. Do not assume consumer and "
-                    "business account protections or return periods are identical. Wires "
-                    "fit larger recoveries, provided bank changes are confirmed using a "
-                    "previously verified telephone number. Card or platform checkout helps "
-                    "small processing invoices but adds dispute exposure and processing "
-                    "costs. At an illustrative 3% checkout cost, collecting a $10,000 fee "
-                    "costs $300 before any other expenses; price that cost explicitly "
-                    "rather than pretending settlement is free. Escrow can solve a "
-                    "genuine trust problem when an independent provider can hold funds "
-                    "under clear release instructions. It is excessive for a routine "
-                    "$700 savings installment. Retainers and milestone holds are "
-                    "commercial funding structures rather than bank networks, but both "
-                    "belong in the comparison because they determine when the operator "
-                    "has usable cash and who bears the remaining performance risk."
-                ),
-                (
-                    "Budget authority is not escrow authority. A procurement manager may "
-                    "issue a purchase order yet lack permission to place company funds "
-                    "with a third party. Ask treasury to confirm acceptable institutions, "
-                    "signers, release conditions, fees and dispute procedures before "
-                    "offering escrow. Likewise, a statutory refund process can require "
-                    "payment to the taxpayer of record despite a private fee arrangement. "
-                    "Federal claim assignments implicate 31 U.S.C. §3727, and tax refund "
-                    "check negotiation by return preparers implicates 26 U.S.C. §6695(f); "
-                    "do not build collection around diverting government payments. "
-                    "Factoring belongs only after an enforceable, earned invoice exists "
-                    "and the factor accepts the debtor, documentation and recourse "
-                    "structure. Selling a $20,000 receivable at a 3% discount produces "
-                    "$19,400 before additional charges, not a new $20,000 revenue event. "
-                    "A customer can still dispute the original work, and recourse may "
-                    "return the loss to the operator. For each rail, record the "
-                    "settlement reference, gross fee, transaction cost, withheld amount "
-                    "and bank receipt. Reconcile those fields to the client ledger "
-                    "weekly. The chosen mechanism should make collection observable "
-                    "without turning the audit business into an unplanned custodian "
-                    "of customer or government funds."
-                ),
-            ],
-            "table": {
-                "caption": "Eight Payment and Settlement Rails Compared Against Authority, Cost and Failure",
-                "headers": [
-                    "Rail or commercial settlement structure",
-                    "Required authority and suitable operating use",
-                    "Illustrative fee cash flow and economics",
-                    "Failure exposure and practical operating control",
-                ],
-                "rows": [
-                    [
-                        "Domestic bank wire for larger earned recovery fees",
-                        "Treasury authorizes payment after matching recovery evidence and invoice",
-                        "$20,000 fee clears less explicitly allocated bank transfer charges",
-                        "Confirm changed instructions through a previously verified independent telephone channel",
-                    ],
-                    [
-                        "Independent escrow for a specifically disputed settlement sequence",
-                        "Authorized parties execute provider accepted release and dispute instructions",
-                        "$50,000 funded settlement releases $20,000 fees and $30,000 client proceeds",
-                        "Specify release evidence, holding costs and treatment of contested amounts",
-                    ],
-                    [
-                        "Business ACH credit or separately authorized business debit",
-                        "Verified business accounts support recurring invoices and documented debit authority",
-                        "$700 monthly savings installment settles less contracted processor transaction costs",
-                        "Track returns and account changes under bank and processor procedures",
-                    ],
-                    [
-                        "Retainer funding for separately scoped fixed fee evidence work",
-                        "Buyer authorizes a distinct service rather than a zero upfront contingency",
-                        "$3,000 advance funds contracted work but recognition follows delivered performance",
-                        "Define unused balance treatment and avoid charging twice for identical work",
-                    ],
-                    [
-                        "Statutory disbursement directly to the legally designated recipient",
-                        "Agency follows governing refund rules and any valid representative authorization",
-                        "$50,000 taxpayer refund precedes a separately permitted operator service invoice",
-                        "Do not presume an agency accepts private payment assignment instructions",
-                    ],
-                    [
-                        "Platform checkout for smaller earned processing service invoices",
-                        "Client authorized payer uses an approved merchant payment processor",
-                        "$10,000 fee less illustrative 3% processing yields $9,700 cash",
-                        "Retain delivery evidence and budget for disputes and processor reserves",
-                    ],
-                    [
-                        "Factoring of verified earned commercial fee receivables",
-                        "Factor accepts debtor credit and documented assignment of eligible receivables",
-                        "$20,000 invoice less illustrative 3% discount yields $19,400 proceeds",
-                        "Check recourse, existing liens, customer defenses and additional reserve deductions",
-                    ],
-                    [
-                        "Milestone holds limiting exposure while agreed evidence is completed",
-                        "Contract defines release events and segregates contested from undisputed fees",
-                        "$20,000 earned fee pays $16,000 initially and holds $4,000",
-                        "Use objective release dates rather than indefinite discretionary customer acceptance",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Verify every relevant entity and signer",
-                    "action": "Match the engagement, supplier record, account holder and bank beneficiary.",
-                    "detail": "Record separate claim authority, contracting authority and payment authority; resolve any owner, tenant or employer mismatch before submission.",
-                },
-                {
-                    "step": 2,
-                    "title": "Lock the realization definition and payment route",
-                    "action": "Select the rail and define which evidence creates an invoiceable fee.",
-                    "detail": "Specify cash receipt, applied credit or verified savings, plus the fee percentage, due date, transaction costs and any bounded holdback.",
-                },
-                {
-                    "step": 3,
-                    "title": "Match settlement evidence before invoicing",
-                    "action": "Attach the relevant account statement, claim identifier and fee calculation.",
-                    "detail": "Separate principal benefits, interest, historical refunds and prospective savings according to the signed fee schedule.",
-                },
-                {
-                    "step": 4,
-                    "title": "Reconcile receipts and resolve exceptions",
-                    "action": "Match bank receipts to earned invoices and escalate differences weekly.",
-                    "detail": "Track processing charges, returns, reversals, withholding and aged balances without recording customer benefits as operator sales.",
-                },
-            ],
-        },
-        {
-            "heading": "3. Protect the fee with evidence, bounded terms and credit screening",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Secure the engagement and signed Letter of Authorization before "
-                    "disclosing actionable tariff findings. Describe covered legal entities, "
-                    "account numbers, service periods, claim categories and authorized "
-                    "communications. Preserve baseline invoices with receipt timestamps "
-                    "and file hashes so a later rate correction cannot rewrite the "
-                    "starting point. The fee schedule should identify the percentage, "
-                    "eligible benefit, realization event, due date, reversals and expense "
-                    "allocation. Define a narrow protection period for findings delivered "
-                    "during the engagement: if the client submits the same documented "
-                    "claim directly, a contractually earned fee remains payable under "
-                    "the agreed terms. Exclude preexisting claims listed at onboarding "
-                    "and unrelated improvements developed independently. This protects "
-                    "work without asserting ownership over every future cost reduction. "
-                    "For prospective savings, state the 36-month maximum term, rate "
-                    "and consumption normalization, seasonality method, business changes "
-                    "and monthly reconciliation process. A closed facility cannot keep "
-                    "producing modeled savings merely because last year's invoice was "
-                    "large. Give the client an objection window and a workable dispute "
-                    "process, while requiring payment of undisputed amounts. Preserve "
-                    "an evidence delivery log and signed scope amendments. A clear "
-                    "causal chain from finding to realized benefit is stronger "
-                    "collection protection than an expansive penalty clause."
-                ),
-                (
-                    "Screen the entity that owes the fee, not simply the recognizable "
-                    "brand on the building. Confirm legal existence through the relevant "
-                    "secretary of state, inspect available business credit reports from "
-                    "Dun & Bradstreet or Experian Business with appropriate authority, "
-                    "request trade references, and review public insolvency indicators "
-                    "through PACER where warranted. Ask about disputed supplier balances, "
-                    "payment cycles, lender restrictions and treasury centralization. "
-                    "A profitable tenant can still be a poor debtor if the engagement "
-                    "is signed by a thinly funded property affiliate. Set exposure "
-                    "limits using the work already invested, earned unpaid fees and "
-                    "credible settlement timing. For example, a $12,000 fee payable "
-                    "60 days after a utility refund expected in 120 days creates "
-                    "roughly 180 days between submission and cash; the refund itself "
-                    "is not interim working capital. Where credit is weak, shorten "
-                    "invoice periods, require an accepted split-disbursement mechanism "
-                    "when available, reduce scope or use a separately negotiated "
-                    "paid diagnostic. A parent guarantee requires the parent's "
-                    "actual signature and review of enforceability. Do not infer "
-                    "security from a purchase order, an authorization letter or a "
-                    "promise that the municipality usually pays quickly."
-                ),
-                (
-                    "Tax work needs its own fee architecture. Treasury Circular 230, "
-                    "31 CFR §10.27, restricts contingent fees for covered services "
-                    "connected with matters before the IRS, subject to specified "
-                    "exceptions and applicable judicial limits. Do not transplant "
-                    "a utility's 40% refund share onto original return preparation "
-                    "or credit claims without a qualified review of the precise "
-                    "service, practitioner status and governing law. Use separately "
-                    "priced evidence assembly or processing where appropriate, and "
-                    "keep representation with properly authorized practitioners. "
-                    "For WOTC, verify that the employee's start date falls within "
-                    "the credit's enacted authorization period before forecasting "
-                    "value. Section 51(d)(13) generally requires prescreening on or "
-                    "before the offer date and submission to the designated local "
-                    "agency within 28 days after work starts, subject to applicable "
-                    "relief. Certification is not cash and does not establish "
-                    "usable tax capacity. An illustrative eligible worker with "
-                    "$6,000 qualified wages and the applicable 40% rate produces "
-                    "$2,400 potential credit, subject to group rules, hours, "
-                    "limitations and substantiation. A $150 processing fee can "
-                    "be earned at a defined delivered milestone without claiming "
-                    "the employer realized $2,400. If authorization, certification "
-                    "or evidence fails, stop the affected filing and correct the forecast."
-                ),
-            ],
-            "table": {
-                "caption": "Six Contract and Credit Controls That Preserve Collectible Fees",
-                "headers": [
-                    "Control and concrete document to obtain",
-                    "Specific authority or evidence to verify",
-                    "Fee protection mechanism and example application",
-                    "Exception handling without overstating contractual rights",
-                ],
-                "rows": [
-                    [
-                        "Signed engagement with account level scope and fee schedule",
-                        "Authorized company signer binds the entity receiving covered benefits",
-                        "Named accounts and periods connect the $20,000 fee to delivery",
-                        "Amend scope before adding an affiliate or unrelated account",
-                    ],
-                    [
-                        "Separate Letter of Authorization for defined claim communications",
-                        "Provider accepts the representative and the specific requested information access",
-                        "Authorized access supports evidence collection without implying debit permission",
-                        "Obtain separate permissions for representation, payment instructions or fund custody",
-                    ],
-                    [
-                        "Baseline invoice archive with hashes and dated delivery log",
-                        "Original usage, tariff version and prior claims remain independently traceable",
-                        "Delivered findings support narrowly defined post termination fee protection",
-                        "Exclude listed preexisting claims and independently achieved unrelated savings",
-                    ],
-                    [
-                        "Credit review matched to the actual contracting legal entity",
-                        "Registry records, trade references and permitted credit reports align",
-                        "Exposure limits constrain unpaid fees and unreimbursed specialist work",
-                        "Reduce scope or seek signed support from a stronger obligor",
-                    ],
-                    [
-                        "Prospective savings schedule with normalization and bounded duration",
-                        "Meter changes, production shifts and closed locations receive explicit treatment",
-                        "$2,000 verified monthly benefit supports $700 monthly fees at 35%",
-                        "Pause unsupported estimates and reconcile actual periods before invoicing",
-                    ],
-                    [
-                        "Tax service scope with practitioner review and distinct pricing",
-                        "Applicable fee restrictions, representation authority and credit eligibility are checked",
-                        "$150 delivered processing unit stays separate from employer credit value",
-                        "Withdraw unsupported claims and correct forecasts when required evidence fails",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four pre-flight checks before revealing or submitting a finding",
-                "body": "Proceed only when the responsible person can produce the evidence behind each check.",
-                "items": [
-                    "Verify the contracting debtor, benefit owner, signer, purchase-order requirement and payment contact against actual entity and account records.",
-                    "Verify signed authorization, preserved baseline invoices, applicable recovery deadlines and carrier waiver terms before calculating recoverable amounts.",
-                    "Verify the precise fee scope against Circular 230 where relevant, state property-tax licensing requirements and the applicable credit authorization period.",
-                    "Verify fee realization, nonoverlapping benefit periods, accepted settlement instructions and a credit exposure limit that the practice can fund.",
-                ],
-            },
-        },
-        {
-            "heading": "4. Reconcile benefit realization, earned fees and the three profit cases",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Operate three linked ledgers: client benefits, operator receivables "
-                    "and operator cash. The first records submitted, disputed, allowed, "
-                    "applied and refunded amounts by claim. The second records earned "
-                    "fees, invoices, credits and aging under the engagement. The third "
-                    "records actual bank movement and processing costs. A $100,000 "
-                    "refund at 40% creates $40,000 fee revenue when the applicable "
-                    "recognition requirements are satisfied; the remaining $60,000 "
-                    "belongs to the client and is never an operator expense used "
-                    "to manufacture a larger revenue figure. Under ASC 606, evaluate "
-                    "the service promise, performance obligations, variable consideration "
-                    "and principal-versus-agent presentation for the actual arrangement. "
-                    "No separate retained_share input is supplied for this scorecard; "
-                    "do not invent one or apply a second haircut to its earned-fee "
-                    "totals. Contractor costs belong in the appropriate operating "
-                    "expense treatment unless the actual arrangement requires net "
-                    "presentation. Neither a claim submission nor a projected "
-                    "36-month savings stream is automatically current revenue. "
-                    "Recognize shared-savings fees as contract performance and "
-                    "verified benefits support recognition, and treat advance "
-                    "payments according to remaining obligations. Track reversals "
-                    "through credit notes tied to the original claim rather "
-                    "than silently reducing a later client's invoice."
-                ),
-                (
-                    "The following annual production bridge is illustrative, but its "
-                    "totals reconcile exactly to Formula v2.0. Conservative combines "
-                    "$70,000 historical recovery fees, $30,000 earned shared-savings "
-                    "fees and $10,000 processing fees for $110,000 revenue. Base "
-                    "combines $315,000, $150,000 and $40,000 for $505,000. Scaled "
-                    "combines $540,000, $270,000 and $90,000 for $900,000. At a "
-                    "blended illustrative 40% expense recovery fee, those historical "
-                    "fee components require $175,000, $787,500 and $1,350,000 of "
-                    "realized client recoveries respectively; those benefit figures "
-                    "are not additional sales. At a 35% savings split, the three "
-                    "annual savings-fee components require approximately $85,714.29, "
-                    "$428,571.43 and $771,428.57 of verified client savings during "
-                    "the recognized periods. Processing is illustrated with fixed "
-                    "deliverable units, not a presumed lawful tax contingency. "
-                    "Conservative expenses of $77,000 leave $33,000 owner net "
-                    "profit at 30%; Base expenses of $287,850 leave $217,150 "
-                    "at 43.0%; Scaled expenses of $396,000 leave $504,000 at "
-                    "56%. Staffing remains 1 FT + 3 C for Conservative and "
-                    "Base, then 2 FT + 4 C for Scaled. The higher margin "
-                    "requires demonstrated repeatability and disciplined collections, "
-                    "not merely a larger pipeline or more claim submissions."
-                ),
-                (
-                    "Use a weekly exceptions meeting to defend those economics. "
-                    "Review carrier claims nearing deadlines, utility refunds "
-                    "awaiting issuance, missing WOTC certifications, client disputes "
-                    "and invoices that have exceeded terms. FedEx and UPS EDI "
-                    "feeds or available authorized claim interfaces can accelerate "
-                    "matching, but availability, refund rights and contractual "
-                    "permission must be verified for each account. Utility tariff "
-                    "and cooling-tower meter OCR should retain source images and "
-                    "flag uncertain readings for human review. ATS integration "
-                    "can timestamp Form 8850 workflows without replacing statutory "
-                    "eligibility checks or state agency submission evidence. Use "
-                    "role-based access and encrypted storage for employee tax "
-                    "records, and provide contractors only the accounts they need. "
-                    "The $6,000–$35,000 startup capital range and $1,500–$9,500 "
-                    "monthly operating-cost range are planning envelopes, not "
-                    "substitutes for the full scenario expense totals, which "
-                    "include broader delivery costs. First-deal timing of one "
-                    "to four months does not promise first cash in that window. "
-                    "If a customer pays slowly, freeze additional discretionary "
-                    "work within contractual rights, preserve claim deadlines "
-                    "and agree a documented payment plan. Measure earned "
-                    "fees collected, reversal rates and days to cash alongside "
-                    "claim value; otherwise a profitable spreadsheet can hide "
-                    "a practice that cannot fund its next filing cycle."
-                ),
-            ],
-            "table": {
-                "caption": "Formula v2.0 Annual Revenue Bridge and Cash Discipline",
-                "headers": [
-                    "Scenario component or operating reconciliation",
-                    "Conservative case with one employee and three contractors",
-                    "Base case with one employee and three contractors",
-                    "Scaled case with two employees and four contractors",
-                ],
-                "rows": [
-                    [
-                        "Historical expense recovery fees from illustrative realized client benefits",
-                        "$175,000 client recoveries multiplied by 40% produces $70,000 fees",
-                        "$787,500 client recoveries multiplied by 40% produces $315,000 fees",
-                        "$1,350,000 client recoveries multiplied by 40% produces $540,000 fees",
-                    ],
-                    [
-                        "Annual shared savings fees from verified nonoverlapping benefit periods",
-                        "$85,714.29 approximate client savings at 35% produces $30,000 fees",
-                        "$428,571.43 approximate client savings at 35% produces $150,000 fees",
-                        "$771,428.57 approximate client savings at 35% produces $270,000 fees",
-                    ],
-                    [
-                        "Fixed processing deliverables under separately defined earned service milestones",
-                        "Forty delivered processing units at $250 produces $10,000 fees",
-                        "Two hundred delivered processing units at $200 produces $40,000 fees",
-                        "Six hundred delivered processing units at $150 produces $90,000 fees",
-                    ],
-                    [
-                        "Total annual operator revenue excluding underlying customer benefits",
-                        "$70,000 plus $30,000 plus $10,000 equals $110,000 earned revenue",
-                        "$315,000 plus $150,000 plus $40,000 equals $505,000 earned revenue",
-                        "$540,000 plus $270,000 plus $90,000 equals $900,000 earned revenue",
-                    ],
-                    [
-                        "Total annual expenses implied by the canonical profit cases",
-                        "$110,000 revenue less $33,000 owner profit leaves $77,000 expenses",
-                        "$505,000 revenue less $217,150 owner profit leaves $287,850 expenses",
-                        "$900,000 revenue less $504,000 owner profit leaves $396,000 expenses",
-                    ],
-                    [
-                        "Canonical annual owner profit and net operating margin",
-                        "$33,000 annual owner net profit equals 30% of earned revenue",
-                        "$217,150 annual owner net profit equals 43.0% of earned revenue",
-                        "$504,000 annual owner net profit equals 56% of earned revenue",
-                    ],
-                    [
-                        "Weekly cash conversion discipline across every earned fee category",
-                        "Match each collected fee to the relevant bank settlement reference",
-                        "Review overdue fee invoices and claim reversals with the controller",
-                        "Separate contractor capacity commitments from cash already collected and available",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": "The recovery creates the benefit; evidence, authority and settlement terms make your fee collectible.",
-    "diagram_id": "diag-04",
-    "action_checklist": [
-        "Build a signer map naming the benefit owner, contracting debtor, claim representative, treasury approver and accounts-payable contact for every engagement.",
-        "Obtain the signed engagement and Letter of Authorization, preserve baseline invoices, and record account-specific recovery deadlines before disclosing findings.",
-        "Choose a settlement rail and document realization, fee calculation, bank verification, permitted holdbacks, reversals and payment due dates.",
-        "Separate historical refunds from normalized prospective savings, and prevent the same invoice period or benefit from appearing in both fee schedules.",
-        "Review tax service pricing, practitioner authority, WOTC hire-date eligibility, state licensing and carrier waivers before submitting affected claims.",
-        "Reconcile client benefits, earned fee receivables and bank receipts weekly against the exact $110,000, $505,000 and $900,000 annual revenue cases.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "31 CFR §10.27 — Fees under Treasury Circular 230",
-            "url": "https://www.ecfr.gov/current/title-31/subtitle-A/part-10/subpart-B/section-10.27",
-            "relevance": "Review contingent-fee restrictions, specified exceptions and the precise covered tax service before adopting recovery-share pricing.",
-        },
-        {
-            "title": "26 U.S.C. §51 — Work Opportunity Tax Credit",
-            "url": "https://www.law.cornell.edu/uscode/text/26/51",
-            "relevance": "Verify targeted-group rules, qualified wages, hours, prescreening, certification deadlines and the enacted employment-start authorization period.",
-        },
-        {
-            "title": "31 U.S.C. §3727 — Assignment of claims",
-            "url": "https://www.law.cornell.edu/uscode/text/31/3727",
-            "relevance": "Check federal claim-assignment restrictions before promising that a government refund will be redirected or split to pay operator fees.",
-        },
-        {
-            "title": "26 U.S.C. §6695(f) — Negotiation of check",
-            "url": "https://www.law.cornell.edu/uscode/text/26/6695",
-            "relevance": "Identify the penalty concerning a tax return preparer's endorsement or negotiation of a taxpayer refund check; keep taxpayer receipts distinct from service fees.",
-        },
-        {
-            "title": "Texas Occupations Code Chapter 1152 — Property Tax Consultants",
-            "url": "https://statutes.capitol.texas.gov/Docs/OC/htm/OC.1152.htm",
-            "relevance": "For Texas engagements, assess registration requirements, exemptions and practice rules before offering property-tax consulting services.",
-        },
-        {
-            "title": "Texas Tax Code §11.43 — Application for exemption",
-            "url": "https://statutes.capitol.texas.gov/Docs/TX/htm/TX.11.htm#11.43",
-            "relevance": "For Texas property-tax exemption work, verify application requirements and deadlines rather than treating exemption value as an automatically recoverable refund.",
-        },
-    ],
-}
+CHAPTER_2 = {'id': 'Q2',
+ 'chapter_id': 'Q2',
+ 'chapter_number': 2,
+ 'question_number': 2,
+ 'slug': 'carrier-surcharges-dim-weight-invoice-rerating',
+ 'question_prompt': 'Which carrier surcharges and billable-weight rules inflate parcel and freight '
+                    'invoices, and how do audit tools catch them?',
+ 'kicker': 'Q2 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Decoding Carrier Surcharges, Dimensional Weight, and Invoice Rerating',
+ 'subtitle': 'Dimensional and billable weight, box measurement, additional handling, large-package and '
+             'oversize fees, the 5-cubic-foot rule, One Rate flat pricing, commercial invoices and duties, '
+             'and automated freight bill audit and payment platforms',
+ 'layout_template': 'executive_summary',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Carrier-side trainers and parcel auditors agree that invoices are priced on '
+                      'billable weight, which is the greater of scale weight and dimensional weight. They '
+                      "also agree that surcharges, not base rates, now drive spend: Intelligent Audit's "
+                      'Joe Wilkinson puts base rate in the high 20s to 30 percent of total cost. The '
+                      'street mechanics hinge on exact thresholds. Additional handling triggers sit at 48 '
+                      'inches, 30 inches and 50 pounds. Oversize lines sit at 96 inches and 130 inches '
+                      "length plus girth, with a 90-pound minimum. UPS's new 8,640-cubic-inch rule, per "
+                      "iDrive's Glenn Gooding, inflates one 20x20x22 box by 190 percent. Experidium's "
+                      'line-by-line rerate surfaced 2.38 percent of audited spend. Practitioners split on '
+                      'DIM divisors (139, 166, 194, custom 250) and on rounding rules. They also differ on '
+                      'whether to fight fees through discounts, definition variances, repackaging, or '
+                      'carrier diversification.',
+ 'key_metrics': [{'label': 'UPS 5-Cubic-Foot Additional Handling Cost Jump',
+                  'metric': 'UPS 5-Cubic-Foot Additional Handling Cost Jump',
+                  'value': '190% increase ($19.69 to $57.18 on one zone 5 parcel)',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Glenn Gooding reran a 20x20x22 inch, 20 lb box under the new UPS cubic rule: '
+                             'custom DIM 250 voided, 40 lb minimum, $36 AHC added, excluding fuel and '
+                             'other surcharges.',
+                  'source': 'iDrive Logistics ([H64bWcLI0O8 @ 00:08:56])'},
+                 {'label': 'Line-by-Line Rerate Recovery Yield',
+                  'metric': 'Line-by-Line Rerate Recovery Yield',
+                  'value': '2.38% of audited spend; 42 findings worth $11,414',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Experidium's agent rerated 90 days of one carrier's invoices, 402 invoices "
+                             'and 1,870 lines, with no sampling.',
+                  'source': 'Experidium ([8-Sguow2LDM @ 00:02:37])'},
+                 {'label': 'Base Rate Share of Total Parcel Spend',
+                  'metric': 'Base Rate Share of Total Parcel Spend',
+                  'value': 'High 20s to 30 percent; 50 percent would be extremely high',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Joe Wilkinson's read on how much of parcel spend is base rate versus fuel, "
+                             'accessorials and surcharges.',
+                  'source': 'Amware Fulfillment ([d3jQIelSHJM @ 00:24:20])'},
+                 {'label': 'Negotiated Discount on FedEx Oversize Charges',
+                  'metric': 'Negotiated Discount on FedEx Oversize Charges',
+                  'value': '15 to 75 percent off',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Refund Retriever's Brian says they regularly see shippers get this range; if "
+                             'it is not in the agreement, the shipper is overpaying.',
+                  'source': 'Refund Retriever ([iizNycveRfc @ 00:01:47])'}],
+ 'sections': [{'heading': '1. The Practitioner Consensus',
+               'paragraphs': ['Every carrier-side and audit-side speaker lands on the same root mechanic. '
+                              'The invoice is priced on billable weight, not scale weight, and billable '
+                              'weight is whichever is larger: actual weight or dimensional weight. UPS '
+                              'walks it as a three-step routine. You weigh on a scale, compute DIM from '
+                              'length times width times height, and take the greater of the two. For a '
+                              'multi-package shipment, you total the billable weight across every parcel '
+                              '[dp5xVhpuf64 @ 00:01:31]. The official FedEx packing guide says the same '
+                              'thing in plain language: many carriers compare actual weight with DIM '
+                              'weight and charge the higher. Charges are based on the external length '
+                              'times width times height of the sealed package. Internal measurements only '
+                              'tell you whether the product fits [OpAC2Ev8SH0 @ 00:01:33]. S3 Stores '
+                              'explains why the rule exists at all. If shipping charge tracked only actual '
+                              'weight, a rival could paralyze a network within three days by shipping '
+                              'large empty boxes from every location. So the carrier defines billable '
+                              'weight as a function of both values, then reads the price off its tables by '
+                              'destination and service method [q9kvSNRcgfs @ 00:01:28]. For an auditor, '
+                              'every line on a carrier invoice is only as defensible as the dimensions and '
+                              'weight behind it. Every rerate starts by rebuilding that comparison package '
+                              'by package.',
+                              'The second point of agreement is that the base rate is no longer where the '
+                              'money hides. FedEx APAC tells shippers that the base rate and fuel '
+                              'surcharge are the predictable pieces. The other fees fall into '
+                              'shipment-related surcharges and customs-clearance-related fees, and the '
+                              'customs fees are often undetermined at booking [wFYAxOSZzMg @ 00:00:00]. '
+                              'FedEx Europe sorts extra charges into duties and taxes, processing fees, '
+                              'and carrier surcharges. It lists the usual surcharges billed to the sender: '
+                              'fuel, special handling for fragile or oddly shaped goods, dangerous goods, '
+                              'remote-area delivery, and address correction [KB4Xoe9MLWk @ 00:01:45]. Joe '
+                              'Wilkinson of Intelligent Audit, a former FedEx strategic pricing analyst, '
+                              'puts numbers on the drift. Over the last five to ten years of general rate '
+                              'increases, the percentage increase on surcharges has well outpaced the '
+                              'increase on freight charges. The published 6.9 figure pulls back to double '
+                              'digits once surcharges are counted. Base rate commonly sits in the high 20s '
+                              'or 30 percent of total spend, and a 50 percent base share would be '
+                              'extremely high [d3jQIelSHJM @ 00:23:42]. Wilkinson points to UPS operating '
+                              'income rising 67 percent year over year in 2021. He calls the rate and '
+                              'surcharge increases a yield management play, not a pure cost offset '
+                              '[d3jQIelSHJM @ 00:02:30].',
+                              "Refund Retriever's Brian and iDrive's Glenn Gooding agree that additional "
+                              'handling has become a revenue lever, not just an operational fee. On UPS, '
+                              'Brian lists three trigger buckets [XPU680Aw1bg @ 00:01:22]:\n'
+                              '- Weight: actual weight above 50 pounds domestic or 70 pounds '
+                              'international.\n'
+                              '- Dimensions: a longest side over 48 inches, a second-longest side at 30 '
+                              'inches, or length plus girth over 105 inches.\n'
+                              '- Packaging: non-cardboard containers, shrink wrap, banding, wheels, '
+                              'cylinders, and soft packs over 18 inches.\n'
+                              'A separate peak additional handling charge stacks on every package. On '
+                              'FedEx, Brian cites the same 50-pound, 48-inch and 30-inch lines. He notes '
+                              'the FedEx weight trigger dropped from 70 pounds to 50 beginning in 2020 '
+                              '[TzPaNZCC4js @ 00:02:06]. Gooding priced at the highest levels for a major '
+                              'carrier. He explains the original logic: the fee covered non-conveyable '
+                              'freight that cannot make a 90-degree turn or slide safely down a gravity '
+                              'chute. Then the thresholds drifted. 70 pounds became 50, and six feet '
+                              'became five and then four, as carriers made billing more complex to lift '
+                              'revenue outside the GRI [H64bWcLI0O8 @ 00:06:27]. His warning is that when '
+                              'UPS or FedEx changes billing methodology, the other has historically '
+                              'followed closely [H64bWcLI0O8 @ 00:11:18].'],
+               'table': {'caption': 'Where carrier trainers and parcel auditors line up on how invoices '
+                                    'get built',
+                         'headers': ['Consensus Point',
+                                     'What Practitioners Report',
+                                     'Audit Implication',
+                                     'Expert Source'],
+                         'rows': [['Billable weight is the greater of two weights',
+                                   'Scale weight and dimensional weight are compared, and the greater sets '
+                                   'the rate',
+                                   'Rerate disputed lines from rebuilt dimensions and scale weight, '
+                                   'package by package',
+                                   'UPS ([dp5xVhpuf64 @ 00:01:31])'],
+                                  ['Measure the external sealed package at the widest points',
+                                   'Charges use external length times width times height, including '
+                                   'handles, bulges and irregular shapes',
+                                   'Under-reported dimensions invite surcharges and delays once the '
+                                   'carrier measures the sealed box',
+                                   'FedEx ([OpAC2Ev8SH0 @ 00:02:26])'],
+                                  ['Accurate booking data controls the surcharge outcome',
+                                   'Non-Standard Shipment Fees hinge on dimension, weight and packaging '
+                                   'criteria at booking',
+                                   'Accurate weight and dimensions at booking produce precise rate '
+                                   'estimates from the start',
+                                   'FedEx APAC ([wFYAxOSZzMg @ 00:01:07])'],
+                                  ['Surcharges outpace base rate increases',
+                                   'Surcharge percentage increases have well outpaced freight charge '
+                                   'increases over five to ten years',
+                                   'Hit accessorial lines first, because base rate is often only high 20s '
+                                   'to 30 percent',
+                                   'Amware Fulfillment ([d3jQIelSHJM @ 00:23:42])'],
+                                  ['Additional handling thresholds keep creeping down',
+                                   'Thresholds moved from 70 to 50 pounds and from six feet down to four '
+                                   'feet',
+                                   'Reprofile every SKU against each new threshold before the next invoice '
+                                   'cycle lands',
+                                   'iDrive Logistics ([H64bWcLI0O8 @ 00:06:27])'],
+                                  ["UPS and FedEx mirror each other's billing changes",
+                                   'When one carrier imposes a billing methodology change, the other '
+                                   'historically follows suit closely',
+                                   'Model both carriers under the stricter rule before betting on a '
+                                   'carrier switch',
+                                   'iDrive Logistics ([H64bWcLI0O8 @ 00:11:18])'],
+                                  ['Carriers will not flag their own billing errors',
+                                   'Billing errors, duplicate charges and missed refunds add up across '
+                                   'hundreds of monthly shipments',
+                                   'Scan every carrier invoice automatically instead of trusting invoices '
+                                   'that merely look accurate',
+                                   'LateShipment ([WvGPHvucRD0 @ 00:00:00])']]}},
+              {'heading': '2. Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['Rerating starts with the tape measure. The FedEx guide defines three '
+                              'measurements, all taken externally at the widest points with bulges '
+                              'included [OpAC2Ev8SH0 @ 00:00:30]:\n'
+                              '- Length: the longest side.\n'
+                              '- Width: the shortest side of the base.\n'
+                              '- Height: from the base to the top, ignoring flaps.\n'
+                              "Any fraction rounds up, so 11.2 inches becomes 12. FedEx's worked example: "
+                              '20 by 12 by 10 inches is 2,400 cubic inches. Divided by 139, that is 17.26, '
+                              'billed as 18 pounds of DIM weight [OpAC2Ev8SH0 @ 00:01:33].\n'
+                              '\n'
+                              'On metric UPS small parcel, dimensions go in centimeters and cubic '
+                              'centimeters are divided by 5,000. Every weight fraction rounds up to the '
+                              'next half kilogram, so 5.3 kg bills as 5.5 kg [dp5xVhpuf64 @ 00:01:09].\n'
+                              '\n'
+                              'S3 Stores runs a different domestic US model [q9kvSNRcgfs @ 00:16:11]:\n'
+                              '- Rounding: dimensions round to the nearest whole inch, so 13.2 drops to 13 '
+                              'while 14.6 goes to 15.\n'
+                              '- Domestic ground: volume is divided by 194. DIM only overrides actual '
+                              'weight when volume exceeds 5,184 cubic inches, which works out to a DIM '
+                              'weight of 27 pounds or more.\n'
+                              '- Air: the 27-pound floor disappears.\n'
+                              '- International, including Canada: the divisor is 166.\n'
+                              'The result is that the same box can bill at actual weight on domestic '
+                              'ground but at DIM on air or export.',
+                              'Once a box crosses the oversize line, the math changes category. Refund '
+                              "Retriever's 2025 UPS breakdown covers the large package surcharge "
+                              '[v9AT9Omrd5c @ 00:00:15]:\n'
+                              '- Trigger: the longest side exceeds 96 inches, or length plus girth exceeds '
+                              '130 inches. Girth is two times width plus two times height.\n'
+                              '- Price: $205 to $297 per package, depending on destination type and zone.\n'
+                              '- Minimum: a 90-pound billable weight.\n'
+                              '- Stacking: no additional handling charge is added once the large package '
+                              'charge applies.\n'
+                              'Past 165 inches length plus girth, UPS bills an over maximum fee of $1,325 '
+                              'per package [v9AT9Omrd5c @ 00:00:57].\n'
+                              '\n'
+                              "FedEx's 2026 oversize triggers are length over 96 inches, length plus girth "
+                              'over 130 inches, cubic size over 17,280 inches, or actual weight over 110 '
+                              'pounds. Any one of these flags the parcel, and the 90-pound minimum '
+                              'applies. Express and Ground fees, including home delivery, run as follows '
+                              '[iizNycveRfc @ 00:01:25]:\n'
+                              '- Zone 2: $255.\n'
+                              '- Zones 3 and 4: $275.\n'
+                              '- Zones 5 and 6: $320.\n'
+                              '- Zone 7 and up: $330.\n'
+                              '- International: an additional $280 per package.\n'
+                              "Brian's sharpest warning is that FedEx can remeasure in transit. A parcel "
+                              'that leaves compliant can arrive oversize with a $300 charge attached '
+                              '[iizNycveRfc @ 00:01:08]. S3 Stores had logged the older UPS oversize '
+                              'regime as a 90-pound floor plus a $45 surcharge [q9kvSNRcgfs @ 00:27:01].',
+                              "Gooding's 5-cubic-foot case is the cleanest rerating drill. UPS moved "
+                              'domestic additional handling off length plus girth and onto cubic size '
+                              'above 8,640 cubic inches. The effective date slid from June 1 to August 17 '
+                              '[H64bWcLI0O8 @ 00:02:59]. His test box is 20 by 20 by 22 inches and weighs '
+                              '20 pounds on the scale. Under the old rules, with a negotiated custom DIM '
+                              'factor of 250 instead of the published 139:\n'
+                              '- 8,800 cubic inches bills at 36 pounds.\n'
+                              '- In zone 5 at a 50 percent ground commercial discount, transportation '
+                              'costs $19.69.\n'
+                              'Under the new rule:\n'
+                              '- The custom DIM factor no longer applies, and the parcel bills at a '
+                              '40-pound minimum.\n'
+                              '- Transportation becomes $21.18, plus a $36 additional handling charge.\n'
+                              '- The total is $57.18, a 190 percent jump before fuel, DAS or residential '
+                              'surcharges [H64bWcLI0O8 @ 00:08:32].\n'
+                              'The trap is that most UPS billing detail lines carry no package dimensions. '
+                              'Post-audit math comes up blank unless the shipper holds its own dimension '
+                              'data for every SKU [H64bWcLI0O8 @ 00:10:19].\n'
+                              '\n'
+                              "On detection, Experidium's agent rerated 90 days from one carrier: 402 "
+                              'invoices and 1,870 lines, with no sampling. It surfaced 42 findings worth '
+                              '$11,414. Among them was a shipment invoiced twice and paid twice. Another '
+                              'invoice was billed at $2,791 against $1,339 expected, because the carrier '
+                              'charged the full $2,342 tariff on the linehaul and never applied the '
+                              'contracted 62 percent discount [8-Sguow2LDM @ 00:01:31].'],
+               'table': {'caption': 'Surcharge trigger and price ledger for rerating UPS and FedEx invoice '
+                                    'lines',
+                         'headers': ['Charge', 'Trigger', 'Stated Price or Rule', 'Expert Source'],
+                         'rows': [['UPS additional handling, weight category',
+                                   'Domestic actual weight over 50 pounds; international actual weight '
+                                   'over 70 pounds',
+                                   '2024 pricing: $34.50 zone 2, $37.50 zones 3 and 4, $41.50 zone 5 and '
+                                   'up',
+                                   'Refund Retriever ([XPU680Aw1bg @ 00:01:22])'],
+                                  ['UPS additional handling, dimensions category',
+                                   'Longest side over 48 inches, second side 30 inches, or length plus '
+                                   'girth over 105',
+                                   '2024 pricing: $22 zone 2, $24.50 zones 3 and 4, $28.25 zone 5 and up',
+                                   'Refund Retriever ([XPU680Aw1bg @ 00:01:43])'],
+                                  ['UPS additional handling, cubic rule (2025 update)',
+                                   'Domestic cubic size above 8,640 cubic inches, which equals five cubic '
+                                   'feet',
+                                   'Custom DIM factor voided, 40 pound minimum billed, $36 charge in zone '
+                                   '5',
+                                   'iDrive Logistics ([H64bWcLI0O8 @ 00:08:32])'],
+                                  ['FedEx additional handling (weight, length, width, packaging)',
+                                   'Actual weight over 50 pounds, longest side over 48 inches, second side '
+                                   'over 30 inches, or non-standard packaging',
+                                   '$24 weight charge, $15 length, $15 width, $13 non-standard packaging '
+                                   'fee',
+                                   'Refund Retriever ([TzPaNZCC4js @ 00:00:33])'],
+                                  ['UPS large package surcharge (2025)',
+                                   'Longest side over 96 inches, or length plus girth over 130 inches',
+                                   '$205 to $297 per package by destination type and zone, 90 pound '
+                                   'minimum',
+                                   'Refund Retriever ([v9AT9Omrd5c @ 00:00:15])'],
+                                  ['UPS over maximum fee',
+                                   'Package length plus girth exceeding 165 inches per individual package '
+                                   'shipped',
+                                   '$1,325 per package over maximum fee, described as a big hit',
+                                   'Refund Retriever ([v9AT9Omrd5c @ 00:00:57])'],
+                                  ['FedEx oversize charge (2026)',
+                                   'Over 96 inches long, length plus girth over 130 inches, cubic size '
+                                   'over 17,280 inches, or weight over 110 pounds',
+                                   '$255 zone 2 up to $330 zone 7 and up, international adds $280 per '
+                                   'package',
+                                   'Refund Retriever ([iizNycveRfc @ 00:01:25])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Bend the definition, not just the price',
+                           'body': 'The highest-leverage plays change which bucket a parcel falls into, or '
+                                   'attack spend the carrier never negotiates on.',
+                           'items': ['Request a size variance instead of only a discount. A 97-inch '
+                                     "product against FedEx's 96-inch limit carries a massive fee; ask "
+                                     'FedEx to raise your limit to 98 inches, which can eliminate the '
+                                     'charge entirely [Refund Retriever — iizNycveRfc @ 00:02:04].',
+                                     'Negotiate the additional handling definition itself. Push the actual '
+                                     'weight trigger to 53 or 55 pounds when a product sits just over 50, '
+                                     'rather than settling for a 25 to 75 percent fee reduction [Refund '
+                                     'Retriever — TzPaNZCC4js @ 00:02:57].',
+                                     'Never accept a high-level parcel analysis. Rerate package by '
+                                     'package, with no average weights or zones, because discounts, '
+                                     'minimums, DIM factors, DIM thresholds and fuel can each swing the '
+                                     'numbers five million dollars [Amware Fulfillment — d3jQIelSHJM @ '
+                                     '00:19:26].',
+                                     'Harvest the savings that cost no negotiation capital first. Stop '
+                                     'shipping air through DIM weighting, and kill address correction '
+                                     'charges, which can run half a million dollars, with address '
+                                     'validation software [Amware Fulfillment — d3jQIelSHJM @ 00:22:54].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Build your own dimension master',
+                              'action': 'Record sealed, external dimensions and scale weight for every SKU '
+                                        'and carton configuration.',
+                              'detail': 'UPS billing detail mostly omits package dimensions, so post-audit '
+                                        'math comes up blank without your own data [iDrive Logistics — '
+                                        'H64bWcLI0O8 @ 00:10:19]. Measure after sealing, at the widest '
+                                        'points including handles and bulges, and round up to the whole '
+                                        'inch [FedEx — OpAC2Ev8SH0 @ 00:02:26].'},
+                             {'step': 2,
+                              'title': 'Rerate every line against the signed contract',
+                              'action': 'Run every invoice line, not a sample, through the contract rate, '
+                                        'discount, fuel and accessorial terms.',
+                              'detail': "Experidium's engine checks fuel, accessorials and linehaul "
+                                        'separately. It flagged a linehaul billed at the full $2,342 '
+                                        'tariff when the 62 percent contract discount put the rate at '
+                                        '$890, and it says so when it cannot rate an invoice instead of '
+                                        'guessing [Experidium — 8-Sguow2LDM @ 00:01:31].'},
+                             {'step': 3,
+                              'title': 'Flag threshold crossings and illegal stacks',
+                              'action': 'Test each parcel against the 48, 96, 130, 165 inch, 8,640 cubic '
+                                        'inch and 50/90/110 pound lines, then check for fees that should '
+                                        'not stack.',
+                              'detail': 'UPS states that no additional handling charge applies when the '
+                                        'large package charge is applied, so an invoice showing both is a '
+                                        'dispute target [Refund Retriever — v9AT9Omrd5c @ 00:01:19]. Also '
+                                        'expect the separate peak additional handling charge on every '
+                                        'qualifying package [Refund Retriever — XPU680Aw1bg @ 00:02:48].'},
+                             {'step': 4,
+                              'title': 'Package the evidence, approve, dispute, then renegotiate',
+                              'action': 'Attach the invoice, contract clause and computation to each '
+                                        'finding, approve it, send the dispute, and feed the recurring '
+                                        'findings into the contract talks.',
+                              'detail': 'Every Experidium finding ships with an evidence pack. Claude '
+                                        'drafts the dispute using only audit figures, and nothing reaches '
+                                        'the carrier without analyst approval [Experidium — 8-Sguow2LDM @ '
+                                        '00:02:17]. LateShipment pitches claims backtracked up to 45 days '
+                                        'on a pay-only-on-recovery model [LateShipment — WvGPHvucRD0 @ '
+                                        '00:00:32].'}]},
+              {'heading': 'Section 3: Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ["Refund Retriever's Brian runs a two-track playbook on handling and oversize "
+                              'fees, and the tracks pull in different directions. On FedEx additional '
+                              'handling, he says many shippers simply cannot avoid the definitions, so '
+                              'they buy down the fee in contract talks, cutting it 25 to 75 percent, but '
+                              'he pushes a sharper move: negotiate a variance in the definition itself, '
+                              'lifting the actual weight trigger to 53 or 55 pounds when a product sits '
+                              'just over the line [TzPaNZCC4js @ 00:02:57]. On FedEx oversize he repeats '
+                              'the pattern, citing 15 to 75 percent discounts and a size variance from 96 '
+                              'to 98 inches for a 97-inch product, calling that the place where the real '
+                              'savings happens [iizNycveRfc @ 00:02:04]. For UPS large package fees, '
+                              'though, his first lever is physical: smaller, more efficient boxes to stay '
+                              'under the 130-inch girth limit, then alternative carriers or LTL freight '
+                              "[v9AT9Omrd5c @ 00:01:37]. Intelligent Audit's Joe Wilkinson flips the "
+                              'sequence entirely. He tells shippers to start with the non-contractual '
+                              'items, packaging that ships air through dim weighting and address '
+                              'correction charges that validation software can fix, because those savings '
+                              'cost no negotiation capital at all, and only then does he move to rate '
+                              'caps, minimums, and the most common surcharges [d3jQIelSHJM @ 00:22:54].',
+                              "Wilkinson and iDrive Logistics' Glenn Gooding split on how much carrier "
+                              'diversification actually buys a shipper. Wilkinson treats it as a key '
+                              'element of a parcel program, but draws a hard floor: a two million dollar '
+                              'shipper may do best consolidating under a single national and becoming the '
+                              "account executive's best friend [d3jQIelSHJM @ 00:15:12]. Above that size "
+                              'he doubts consolidation still pays, recommending regional carve-outs that '
+                              'leave roughly 80 percent with the national, and never more than two new '
+                              'regionals at once, because four or five at a time is a recipe for chaos '
+                              '[d3jQIelSHJM @ 00:17:44]. Gooding, who priced at the highest levels inside '
+                              'a major carrier, is more skeptical that switching nationals solves a '
+                              'methodology change. He says history shows when UPS or FedEx imposes a '
+                              'billing change the other follows closely, and that FedEx, lacking dimension '
+                              'data on UPS shipping history, would likely mirror the new cubic rule and '
+                              'just aggressively discount it [H64bWcLI0O8 @ 00:11:37]. His escape hatch is '
+                              'different: brands will break bulk cartons into smaller parcels, raising '
+                              'volume and opening the door for other viable carriers. Brian at Refund '
+                              'Retriever, meanwhile, frames switching as zone-by-zone arbitrage, noting '
+                              'FedEx might be cheaper for some zones or that freight may beat parcel for '
+                              'large shipments [v9AT9Omrd5c @ 00:01:37].',
+                              'The audit vendors themselves sell competing models, and the differences '
+                              "matter for who controls the dispute. Experidium's agent rerates every line "
+                              'of every invoice against the signed contract, flags where it cannot rate '
+                              'instead of guessing, and keeps a person approving every dispute before '
+                              'anything reaches the carrier; its 90-day run on one carrier surfaced 42 '
+                              'findings worth $11,414 [8-Sguow2LDM @ 00:00:20]. LateShipment pitches the '
+                              'opposite posture, software that scans invoices and files refund claims on '
+                              "the shipper's behalf with no manual effort, no monthly fee, payment only "
+                              'when refunds land, and claims backtracked up to 45 days [WvGPHvucRD0 @ '
+                              '00:00:51]. Wilkinson warns that no dashboard summary replaces the math: '
+                              'there is no such thing as a high-level parcel analysis, because discounts, '
+                              'minimum package charges, dim factors, dim thresholds, and fuel can each '
+                              'swing the numbers five million dollars, so he insists on package-by-package '
+                              're-rating rather than average weights or zones [d3jQIelSHJM @ 00:19:26]. CT '
+                              'Logistics president Alan Minor sells longevity instead of automation, '
+                              'telling buyers to look for stability, ongoing investment in people and '
+                              'technology, and a firm with 90 years in business and the same leadership '
+                              'for decades that keeps putting money behind its name [35fjaKeQp-I @ '
+                              '00:03:02].'],
+               'table': {'caption': 'Side-by-side playbooks where practitioners take different routes on '
+                                    'the same billing problem',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Which dim divisor converts cubic inches into billed pounds',
+                                   'S3 Stores divides cubic inches by 194 for domestic ground and by 166 '
+                                   'for international shipments.',
+                                   "FedEx's measuring guide divides length times width times height by "
+                                   '139, then rounds the result up.',
+                                   'S3 Stores ([q9kvSNRcgfs @ 00:09:29]); FedEx ([OpAC2Ev8SH0 @ '
+                                   '00:01:33])'],
+                                  ['How fractional inches are rounded before dim weight is computed',
+                                   'S3 Stores rounds each side to the nearest whole inch, so a 13.2-inch '
+                                   'side becomes 13.',
+                                   'FedEx rounds every fraction up, turning an 11.2-inch measurement into '
+                                   'a billed 12 inches.',
+                                   'S3 Stores ([q9kvSNRcgfs @ 00:08:39]); FedEx ([OpAC2Ev8SH0 @ '
+                                   '00:01:01])'],
+                                  ['How to attack a recurring FedEx additional handling charge',
+                                   'Buy the fee down 25 to 75 percent inside the contract agreement '
+                                   'negotiation with FedEx.',
+                                   'Negotiate a definition variance that raises the actual weight trigger '
+                                   'to 53 or 55 pounds.',
+                                   'Refund Retriever ([TzPaNZCC4js @ 00:02:57])'],
+                                  ['How to escape a UPS large package surcharge of $205 to $297',
+                                   'Re-engineer into smaller, more efficient boxes that stay inside the '
+                                   '130-inch length plus girth limit.',
+                                   'Shift those zones to FedEx or move the large shipments to LTL '
+                                   'less-than-truckload freight.',
+                                   'Refund Retriever ([v9AT9Omrd5c @ 00:01:37])'],
+                                  ['Whether to consolidate volume or diversify across national and '
+                                   'regional carriers',
+                                   'A two million dollar shipper consolidates under one national to '
+                                   'maximize the leverage it has.',
+                                   'Larger shippers carve out regionals, keep roughly 80 percent national, '
+                                   'and add two regionals maximum at once.',
+                                   'Amware Fulfillment ([d3jQIelSHJM @ 00:15:12]); Amware Fulfillment '
+                                   '([d3jQIelSHJM @ 00:17:44])'],
+                                  ['Who controls the refund claim once an invoice error is found',
+                                   'Experidium rerates every line and a person approves each dispute '
+                                   'before it reaches the carrier.',
+                                   'LateShipment files claims automatically with no monthly fee and gets '
+                                   'paid only when refunds are recovered.',
+                                   'Experidium ([8-Sguow2LDM @ 00:00:03]); LateShipment ([WvGPHvucRD0 @ '
+                                   '00:00:51])'],
+                                  ['Whether to fight dim weight or sidestep it with flat pricing',
+                                   'FedEx One Rate ignores package weight under 50 pounds and prices by '
+                                   'box and service speed.',
+                                   "Gooding's negotiated custom dim factor of 250 cuts billed weight "
+                                   'against the published 139 divisor.',
+                                   'FedEx ([jPerYiSDCp0 @ 00:01:13]); iDrive Logistics ([H64bWcLI0O8 @ '
+                                   '00:07:31])']]}},
+              {'heading': 'Section 4: Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ["The first trap is that the carrier's tape measure, not yours, sets the "
+                              'bill. Every practitioner who touched measurement framed it as a '
+                              'self-inflicted, preventable leak. Brian at Refund Retriever warns that '
+                              'FedEx can remeasure a package in transit, so a carton that left the dock '
+                              'within limits arrives flagged oversize and draws a $300 charge nobody '
+                              'expected [iizNycveRfc @ 00:01:08]. UPS spells out the companion penalty: '
+                              'enter the wrong billable weight when creating the shipment and a shipping '
+                              'charge correction audit fee gets applied to the invoice, which is why its '
+                              'metric method rounds every fraction up to the next half kilogram and '
+                              "divides centimeter cubes by 5,000 [dp5xVhpuf64 @ 00:01:49]. FedEx's own "
+                              'packing team lists the habits that trigger these corrections: measuring '
+                              'internal instead of external dimensions, skipping bulges and handles, and '
+                              'under-reporting dimensions on the label; their fix is to measure the sealed '
+                              'box at its widest points and round 11.2 inches up to 12 [OpAC2Ev8SH0 @ '
+                              '00:02:26]. Wilkinson ties the same sloppiness to real money on the address '
+                              'side, describing shippers paying half a million dollars in address '
+                              'correction charges that address validation software could have resolved '
+                              'upstream, without spending any negotiation capital with the carrier '
+                              '[d3jQIelSHJM @ 00:22:54].',
+                              'The second trap is the threshold cliff, where a fraction of an inch or a '
+                              'cubic foot reprices the whole parcel. Gooding walks a 20x20x22-inch, '
+                              "20-pound box through UPS's new 5-cubic-foot additional handling rule: under "
+                              'a negotiated dim factor of 250 and a 50 percent ground discount it cost '
+                              '$19.69 in zone 5, but crossing the cube threshold voids the custom dim '
+                              'factor, imposes a 40-pound minimum, and adds a $36 handling charge, for '
+                              '$57.18 total, a 190 percent jump [H64bWcLI0O8 @ 00:08:32]. His point is '
+                              'that the hit lands on exactly the mid-size cartons carriers used to covet. '
+                              'He also had to correct his own launch date on air, from June 1st to August '
+                              '17th, a reminder that the trigger dates move too [H64bWcLI0O8 @ 00:01:01]. '
+                              "Brian's UPS numbers show the cliff at the top end: past 165 inches of "
+                              'length plus girth, an over maximum fee of $1,325 per package dwarfs the '
+                              '$205 to $297 large package surcharge, and every large package still carries '
+                              'a 90-pound minimum billable weight [v9AT9Omrd5c @ 00:00:57]. Stacking '
+                              'compounds it: his UPS handling breakdown notes a peak additional handling '
+                              'charge layered on every handling charge, so each flagged box pays twice '
+                              'during peak [XPU680Aw1bg @ 00:02:48].',
+                              "The third trap is assuming the invoice matches the contract. Experidium's "
+                              '90-day run caught a shipment invoiced twice with both invoices paid, and a '
+                              'line haul where the carrier billed the full $2,342 tariff and never applied '
+                              "the contract's 62 percent discount, against a contract rate of $890 "
+                              '[8-Sguow2LDM @ 00:01:31]. Gooding warns that post-audit math can fail '
+                              'outright: most UPS billing detail for these parcels carries no package '
+                              'dimensions, so without your own SKU dimension data any impact estimate is a '
+                              'swag at best, and he found most companies he worked with lack that data '
+                              "[H64bWcLI0O8 @ 00:10:19]. Wilkinson's economics check is surcharge share: "
+                              'if surcharges reach 50 percent of spend, check them, because that would be '
+                              'extremely high, while high 20s to 30 percent is common, and surcharge '
+                              'increases have well outpaced freight charges over the last five to ten '
+                              'years [d3jQIelSHJM @ 00:24:20]. His leverage horror stories are the final '
+                              'check. A carrier gave a $200 million shipper 30 days to rehome 15 percent '
+                              'of its volume, and another handed a $40 million shipper a '
+                              'take-it-or-lose-pickups agreement that analyzed out to a 35 percent net '
+                              'cost increase; shippers without diversified carriers had no operational '
+                              'exit [d3jQIelSHJM @ 00:07:52].'],
+               'table': {'caption': 'Firsthand traps, what they cost, and the countermeasure each '
+                                    'practitioner teaches',
+                         'headers': ['Trap',
+                                     'Firsthand Cost or Trigger',
+                                     'Countermeasure Taught',
+                                     'Expert Source'],
+                         'rows': [['FedEx remeasures the package somewhere during transit',
+                                   'A carton leaves within limits, arrives reclassified as oversize, and '
+                                   'draws a $300 surprise charge.',
+                                   'Request a size variance, shrink the box, and avoid bulging or '
+                                   'irregular shapes at tender.',
+                                   'Refund Retriever ([iizNycveRfc @ 00:01:08])'],
+                                  ['Wrong billable weight entered when the UPS shipment is created',
+                                   'UPS applies a shipping charge correction audit fee on top of the '
+                                   'corrected parcel charge.',
+                                   'Compare actual and dim weight, enter the greater, and total billable '
+                                   'weight across multi-package shipments.',
+                                   'UPS ([dp5xVhpuf64 @ 00:01:49])'],
+                                  ['Bulk carton crosses the UPS 5-cubic-foot additional handling threshold',
+                                   'A $19.69 zone 5 parcel becomes $57.18, a 190 percent increase before '
+                                   'any other surcharges.',
+                                   'Split five-unit cartons into smaller packs and recheck whether free '
+                                   'shipping still holds margin.',
+                                   'iDrive Logistics ([H64bWcLI0O8 @ 00:08:32])'],
+                                  ['Length plus girth creeps past the 165-inch over maximum line',
+                                   'UPS charges an over maximum fee of $1,325 per package on anything '
+                                   'beyond 165 inches.',
+                                   'Measure length plus girth before tender and route anything over the '
+                                   'line to UPS freight or trucking.',
+                                   'Refund Retriever ([v9AT9Omrd5c @ 00:00:57]); S3 Stores ([q9kvSNRcgfs @ '
+                                   '00:29:04])'],
+                                  ['Carrier bills duplicates or skips the contracted discount entirely',
+                                   'One shipment invoiced twice and both paid; a $2,342 line billed '
+                                   'against an $890 contract rate.',
+                                   'Rerate every line against the signed contract and build an evidence '
+                                   'pack for each finding.',
+                                   'Experidium ([8-Sguow2LDM @ 00:01:08])'],
+                                  ['Customs paperwork stalls clearance and triggers storage and '
+                                   'disbursement fees',
+                                   'Storage fees apply when shipments stay uncleared past the allowed '
+                                   'time; disbursement fees follow duty prepayment.',
+                                   'Complete documentation accurately, declare true market value, and '
+                                   'include the correct HS code and origin.',
+                                   'FedEx APAC ([wFYAxOSZzMg @ 00:01:32]); FedEx Europe ([yIHtr7s1k6o @ '
+                                   '00:01:29])'],
+                                  ["Minimum commitment clause conflicts with the carrier's own capacity "
+                                   'cap',
+                                   'Shipper must keep 90 percent of volume while the carrier will only '
+                                   'service 85 percent.',
+                                   'Strip out or soften early termination and minimum commitment penalties '
+                                   'before signing the agreement.',
+                                   'Amware Fulfillment ([d3jQIelSHJM @ 00:09:00])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Four checks before you pay, rerate, or dispute a parcel invoice',
+                           'body': 'Each check comes straight from a loss or trap a practitioner reported. '
+                                   'Run all four before an invoice is paid or a dispute leaves the '
+                                   'building.',
+                           'items': ['Measure every oversize-adjacent SKU sealed, at its widest points '
+                                     'including bulges, because FedEx can remeasure in transit and hit a '
+                                     'compliant-looking carton with a $300 oversize charge [Refund '
+                                     'Retriever — iizNycveRfc @ 00:01:08].',
+                                     'Build your own SKU dimension file before modeling the 5-cubic-foot '
+                                     'rule, since most UPS billing detail carries no package dimensions '
+                                     'and any estimate without them is a swag at best [iDrive Logistics — '
+                                     'H64bWcLI0O8 @ 00:10:19].',
+                                     'Reject any high-level parcel analysis and re-rate package by package '
+                                     'across discounts, minimum package charges, dim factors, dim '
+                                     'thresholds, and fuel [Amware Fulfillment — d3jQIelSHJM @ 00:19:26].',
+                                     'Send no dispute whose figures did not come from the audit itself; '
+                                     'Experidium rejects any rewrite that drops a number and requires '
+                                     'analyst sign-off before anything reaches the carrier [Experidium — '
+                                     '8-Sguow2LDM @ 00:02:17].']}}],
+ 'pull_quote': '"If you are someone that ships a lot of packages that fall into this size range, brace '
+               'yourself. Next week\'s invoice is going to be a doozy." — Glenn Gooding, iDrive Logistics '
+               '(H64bWcLI0O8 @ 00:15:58).',
+ 'diagram_id': 'diag-04',
+ 'action_checklist': ['Pull your shipping spend by service level and learn what is actually driving costs '
+                      'before fighting over discounts on services you barely use [Amware Fulfillment — '
+                      'd3jQIelSHJM @ 00:22:20].',
+                      'Measure external sealed dimensions, round fractions up, compute dim weight at '
+                      'length times width times height divided by 139, and bill the higher of dim or '
+                      'actual weight [FedEx — OpAC2Ev8SH0 @ 00:01:33].',
+                      'Run every carrier invoice, not a sample, through line-level rerating against the '
+                      'signed contract to catch rate mismatches, duplicate invoices, missing service '
+                      'credits, and fuel surcharge errors [Experidium — 8-Sguow2LDM @ 00:00:46].',
+                      'For SKUs sitting just over a trigger, request a size or weight variance, such as '
+                      'raising a 96-inch oversize limit to 98 inches for a 97-inch product [Refund '
+                      'Retriever — iizNycveRfc @ 00:02:04].',
+                      'Model 5-cubic-foot exposure on bulk cartons and re-engineer five-unit packs into '
+                      'individual, two-pack, or three-pack shipments where the 190 percent jump lands '
+                      '[iDrive Logistics — H64bWcLI0O8 @ 00:14:56].',
+                      'Check the ZIP and postal code tier list for ODA and OPA surcharges before shipping, '
+                      'and consolidate deliveries to those areas when possible [FedEx APAC — wFYAxOSZzMg @ '
+                      '00:00:46].'],
+ 'statutory_citations': [{'title': 'iDrive Logistics — UPS Additional Handling 2025: How a 5‑Cubic‑Foot '
+                                   'Rule Can Add 190 % to Your Parcel Costs [00:08:32]',
+                          'url': 'https://www.youtube.com/watch?v=H64bWcLI0O8&t=512s',
+                          'relevance': 'Primary practitioner testimony on the UPS 5-cubic-foot additional '
+                                       'handling cliff turning a $19.69 parcel into $57.18.'},
+                         {'title': 'Amware Fulfillment — Making Sense of Parcel Costs with Joe Wilkinson '
+                                   'at Intelligent Audit [00:19:44]',
+                          'url': 'https://www.youtube.com/watch?v=d3jQIelSHJM&t=1184s',
+                          'relevance': 'Primary practitioner testimony on package-by-package re-rating and '
+                                       'why high-level parcel analysis fails.'},
+                         {'title': 'Refund Retriever — FedEx Oversize Accessorial Fees 2026 [00:01:08]',
+                          'url': 'https://www.youtube.com/watch?v=iizNycveRfc&t=68s',
+                          'relevance': 'Primary practitioner testimony on FedEx in-transit remeasurement '
+                                       'triggering surprise oversize charges.'},
+                         {'title': 'Experidium — Freight Audit & Recovery Agent: Claude Checks Every '
+                                   'Carrier Invoice [00:01:31]',
+                          'url': 'https://www.youtube.com/watch?v=8-Sguow2LDM&t=91s',
+                          'relevance': 'Primary practitioner testimony on contract rerating exposing a '
+                                       'skipped 62 percent discount and duplicate paid invoices.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'q9kvSNRcgfs',
+                       'title': 'How UPS and FedEx Dimensional Weight Works?',
+                       'channel': 'S3 Stores',
+                       'author': 'S3 Stores',
+                       'text': 'So first consequence is that the minimum billable weight for this kind of '
+                               'package is going to be 90 lb.',
+                       'tip': 'So first consequence is that the minimum billable weight for this kind of '
+                              'package is going to be 90 lb.',
+                       'timestamp': 1621,
+                       'timestamp_seconds': 1621,
+                       'timestamp_label': '[00:27:01]',
+                       'url': 'https://www.youtube.com/watch?v=q9kvSNRcgfs&t=1621s',
+                       'markdown': '[00:27:01](https://www.youtube.com/watch?v=q9kvSNRcgfs&t=1621s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'wFYAxOSZzMg',
+                       'title': 'Understanding shipping surcharges',
+                       'channel': 'FedEx APAC',
+                       'author': 'FedEx APAC',
+                       'text': 'Before shipping check the ZIP and postal code list by tier to see if ODA '
+                               'or OPA applies, and when possible consolidate deliveries to optimize '
+                               'costs.',
+                       'tip': 'Before shipping check the ZIP and postal code list by tier to see if ODA or '
+                              'OPA applies, and when possible consolidate deliveries to optimize costs.',
+                       'timestamp': 46,
+                       'timestamp_seconds': 46,
+                       'timestamp_label': '[00:00:46]',
+                       'url': 'https://www.youtube.com/watch?v=wFYAxOSZzMg&t=46s',
+                       'markdown': '[00:00:46](https://www.youtube.com/watch?v=wFYAxOSZzMg&t=46s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'KB4Xoe9MLWk',
+                       'title': 'Extra shipping charges explained | Fees, duties and surcharges',
+                       'channel': 'FedEx Europe',
+                       'author': 'FedEx Europe',
+                       'text': 'Typos can be pricey, especially when your carrier needs to adjust the '
+                               'paperwork for you, so just check, check, and double check.',
+                       'tip': 'Typos can be pricey, especially when your carrier needs to adjust the '
+                              'paperwork for you, so just check, check, and double check.',
+                       'timestamp': 192,
+                       'timestamp_seconds': 192,
+                       'timestamp_label': '[00:03:12]',
+                       'url': 'https://www.youtube.com/watch?v=KB4Xoe9MLWk&t=192s',
+                       'markdown': '[00:03:12](https://www.youtube.com/watch?v=KB4Xoe9MLWk&t=192s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'dp5xVhpuf64',
+                       'title': 'How to Calculate Billable Weight on UPS Small Parcels | UPS',
+                       'channel': 'UPS',
+                       'author': 'UPS',
+                       'text': "It's important to ensure that you enter the correct billable weight when "
+                               'creating your shipment in order to avoid the shipping charge correction '
+                               'audit fee from being applied.',
+                       'tip': "It's important to ensure that you enter the correct billable weight when "
+                              'creating your shipment in order to avoid the shipping charge correction '
+                              'audit fee from being applied.',
+                       'timestamp': 109,
+                       'timestamp_seconds': 109,
+                       'timestamp_label': '[00:01:49]',
+                       'url': 'https://www.youtube.com/watch?v=dp5xVhpuf64&t=109s',
+                       'markdown': '[00:01:49](https://www.youtube.com/watch?v=dp5xVhpuf64&t=109s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'yIHtr7s1k6o',
+                       'title': 'FedEx I How to Ship Learning Center | How to complete a commercial '
+                                'invoice for shipping',
+                       'channel': 'FedEx Europe',
+                       'author': 'FedEx Europe',
+                       'text': "If the value doesn't seem reasonable, customs may ask you or your receiver "
+                               'for evidence of the value you have declared on the invoice.',
+                       'tip': "If the value doesn't seem reasonable, customs may ask you or your receiver "
+                              'for evidence of the value you have declared on the invoice.',
+                       'timestamp': 89,
+                       'timestamp_seconds': 89,
+                       'timestamp_label': '[00:01:29]',
+                       'url': 'https://www.youtube.com/watch?v=yIHtr7s1k6o&t=89s',
+                       'markdown': '[00:01:29](https://www.youtube.com/watch?v=yIHtr7s1k6o&t=89s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'OpAC2Ev8SH0',
+                       'title': 'How to Measure a Box for Shipping | The Official FedEx Guide',
+                       'channel': 'FedEx',
+                       'author': 'FedEx',
+                       'text': "Don't under-report dimensions; include handles, bulges, and irregular "
+                               'shapes, and measure everything at the widest point.',
+                       'tip': "Don't under-report dimensions; include handles, bulges, and irregular "
+                              'shapes, and measure everything at the widest point.',
+                       'timestamp': 146,
+                       'timestamp_seconds': 146,
+                       'timestamp_label': '[00:02:26]',
+                       'url': 'https://www.youtube.com/watch?v=OpAC2Ev8SH0&t=146s',
+                       'markdown': '[00:02:26](https://www.youtube.com/watch?v=OpAC2Ev8SH0&t=146s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'v9AT9Omrd5c',
+                       'title': 'UPS Large Package Surcharge for 2025',
+                       'channel': 'Refund Retriever',
+                       'author': 'Refund Retriever',
+                       'text': 'If a package exceeds 165 in in length and girth, UPS is going to charge an '
+                               'over maximum fee of $1,325 per package.',
+                       'tip': 'If a package exceeds 165 in in length and girth, UPS is going to charge an '
+                              'over maximum fee of $1,325 per package.',
+                       'timestamp': 57,
+                       'timestamp_seconds': 57,
+                       'timestamp_label': '[00:00:57]',
+                       'url': 'https://www.youtube.com/watch?v=v9AT9Omrd5c&t=57s',
+                       'markdown': '[00:00:57](https://www.youtube.com/watch?v=v9AT9Omrd5c&t=57s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'XPU680Aw1bg',
+                       'title': 'UPS Additional Handling Charge: What you need to know',
+                       'channel': 'Refund Retriever',
+                       'author': 'Refund Retriever',
+                       'text': 'If you have a package that you see a lot of, try to get a variance, try to '
+                               'get discounts on things.',
+                       'tip': 'If you have a package that you see a lot of, try to get a variance, try to '
+                              'get discounts on things.',
+                       'timestamp': 187,
+                       'timestamp_seconds': 187,
+                       'timestamp_label': '[00:03:07]',
+                       'url': 'https://www.youtube.com/watch?v=XPU680Aw1bg&t=187s',
+                       'markdown': '[00:03:07](https://www.youtube.com/watch?v=XPU680Aw1bg&t=187s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '8-Sguow2LDM',
+                       'title': 'Freight Audit & Recovery Agent: Claude Checks Every Carrier Invoice',
+                       'channel': 'Experidium',
+                       'author': 'Experidium',
+                       'text': 'The signed contract quoted its page base tariff less a 62% discount, and '
+                               'the carrier billed the full tariff of $2,342 and never applied the '
+                               'discount.',
+                       'tip': 'The signed contract quoted its page base tariff less a 62% discount, and '
+                              'the carrier billed the full tariff of $2,342 and never applied the '
+                              'discount.',
+                       'timestamp': 91,
+                       'timestamp_seconds': 91,
+                       'timestamp_label': '[00:01:31]',
+                       'url': 'https://www.youtube.com/watch?v=8-Sguow2LDM&t=91s',
+                       'markdown': '[00:01:31](https://www.youtube.com/watch?v=8-Sguow2LDM&t=91s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '8-Sguow2LDM',
+                       'title': 'Freight Audit & Recovery Agent: Claude Checks Every Carrier Invoice',
+                       'channel': 'Experidium',
+                       'author': 'Experidium',
+                       'text': 'Your analyst approves the finding, then you decide to pursue it, and you '
+                               'get a findings report with 2.38% of audited spend identified and '
+                               'evidenced.',
+                       'tip': 'Your analyst approves the finding, then you decide to pursue it, and you '
+                              'get a findings report with 2.38% of audited spend identified and evidenced.',
+                       'timestamp': 157,
+                       'timestamp_seconds': 157,
+                       'timestamp_label': '[00:02:37]',
+                       'url': 'https://www.youtube.com/watch?v=8-Sguow2LDM&t=157s',
+                       'markdown': '[00:02:37](https://www.youtube.com/watch?v=8-Sguow2LDM&t=157s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'WvGPHvucRD0',
+                       'title': 'Top 10 Parcel Audit Software Solutions for E-Commerce',
+                       'channel': 'LateShipment',
+                       'author': 'LateShipment',
+                       'text': 'Reducing shipping costs by up to 20% with claims backtracked up to 45 days '
+                               'and no monthly fee; you only pay when refunds are recovered.',
+                       'tip': 'Reducing shipping costs by up to 20% with claims backtracked up to 45 days '
+                              'and no monthly fee; you only pay when refunds are recovered.',
+                       'timestamp': 51,
+                       'timestamp_seconds': 51,
+                       'timestamp_label': '[00:00:51]',
+                       'url': 'https://www.youtube.com/watch?v=WvGPHvucRD0&t=51s',
+                       'markdown': '[00:00:51](https://www.youtube.com/watch?v=WvGPHvucRD0&t=51s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'TzPaNZCC4js',
+                       'title': 'FedEx Additional Handling Surcharge: What to know',
+                       'channel': 'Refund Retriever',
+                       'author': 'Refund Retriever',
+                       'text': 'What if instead of a cost reduction a company could negotiate a variance '
+                               'in the definition of additional handling.',
+                       'tip': 'What if instead of a cost reduction a company could negotiate a variance in '
+                              'the definition of additional handling.',
+                       'timestamp': 177,
+                       'timestamp_seconds': 177,
+                       'timestamp_label': '[00:02:57]',
+                       'url': 'https://www.youtube.com/watch?v=TzPaNZCC4js&t=177s',
+                       'markdown': '[00:02:57](https://www.youtube.com/watch?v=TzPaNZCC4js&t=177s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'iizNycveRfc',
+                       'title': 'FedEx Oversize Accessorial Fees 2026',
+                       'channel': 'Refund Retriever',
+                       'author': 'Refund Retriever',
+                       'text': 'Your shipment might leave your facility within the limits, but arrives as '
+                               "oversize after a remeasure, and just like that you're hit with a $300 "
+                               "charge you didn't expect.",
+                       'tip': 'Your shipment might leave your facility within the limits, but arrives as '
+                              "oversize after a remeasure, and just like that you're hit with a $300 "
+                              "charge you didn't expect.",
+                       'timestamp': 68,
+                       'timestamp_seconds': 68,
+                       'timestamp_label': '[00:01:08]',
+                       'url': 'https://www.youtube.com/watch?v=iizNycveRfc&t=68s',
+                       'markdown': '[00:01:08](https://www.youtube.com/watch?v=iizNycveRfc&t=68s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'H64bWcLI0O8',
+                       'title': 'UPS Additional Handling 2025: How a 5‑Cubic‑Foot Rule Can Add 190 % to '
+                                'Your Parcel Costs',
+                       'channel': 'iDrive Logistics',
+                       'author': 'iDrive Logistics',
+                       'text': 'It does cross the 5 cubic foot threshold, therefore the custom dim factor '
+                               "no longer applies, it's billed at a minimum 40 lb, and the additional "
+                               'handling charge applies for this zone 5 of $36.',
+                       'tip': 'It does cross the 5 cubic foot threshold, therefore the custom dim factor '
+                              "no longer applies, it's billed at a minimum 40 lb, and the additional "
+                              'handling charge applies for this zone 5 of $36.',
+                       'timestamp': 512,
+                       'timestamp_seconds': 512,
+                       'timestamp_label': '[00:08:32]',
+                       'url': 'https://www.youtube.com/watch?v=H64bWcLI0O8&t=512s',
+                       'markdown': '[00:08:32](https://www.youtube.com/watch?v=H64bWcLI0O8&t=512s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'H64bWcLI0O8',
+                       'title': 'UPS Additional Handling 2025: How a 5‑Cubic‑Foot Rule Can Add 190 % to '
+                                'Your Parcel Costs',
+                       'channel': 'iDrive Logistics',
+                       'author': 'iDrive Logistics',
+                       'text': 'If you were to pull down your billing invoice detail from UPS, you would '
+                               'note that the vast majority of the parcels being billed do not contain '
+                               'package dimensions.',
+                       'tip': 'If you were to pull down your billing invoice detail from UPS, you would '
+                              'note that the vast majority of the parcels being billed do not contain '
+                              'package dimensions.',
+                       'timestamp': 619,
+                       'timestamp_seconds': 619,
+                       'timestamp_label': '[00:10:19]',
+                       'url': 'https://www.youtube.com/watch?v=H64bWcLI0O8&t=619s',
+                       'markdown': '[00:10:19](https://www.youtube.com/watch?v=H64bWcLI0O8&t=619s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '35fjaKeQp-I',
+                       'title': 'CT Logistics Freight Bill Audit and Payment',
+                       'channel': 'CT Logistics',
+                       'author': 'CT Logistics',
+                       'text': 'We have capability to show them the cost savings through validation of '
+                               'those invoices outside of North America.',
+                       'tip': 'We have capability to show them the cost savings through validation of '
+                              'those invoices outside of North America.',
+                       'timestamp': 109,
+                       'timestamp_seconds': 109,
+                       'timestamp_label': '[00:01:49]',
+                       'url': 'https://www.youtube.com/watch?v=35fjaKeQp-I&t=109s',
+                       'markdown': '[00:01:49](https://www.youtube.com/watch?v=35fjaKeQp-I&t=109s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'd3jQIelSHJM',
+                       'title': 'Making Sense of Parcel Costs with Joe Wilkinson at Intelligent Audit',
+                       'channel': 'Amware Fulfillment',
+                       'author': 'Amware Fulfillment',
+                       'text': 'There are so many variables that any one of them can swing the numbers '
+                               "five million dollars; you've got to do package level analytics, don't use "
+                               "average package weights, don't use average zones, package by package "
+                               're-rating.',
+                       'tip': 'There are so many variables that any one of them can swing the numbers five '
+                              "million dollars; you've got to do package level analytics, don't use "
+                              "average package weights, don't use average zones, package by package "
+                              're-rating.',
+                       'timestamp': 1184,
+                       'timestamp_seconds': 1184,
+                       'timestamp_label': '[00:19:44]',
+                       'url': 'https://www.youtube.com/watch?v=d3jQIelSHJM&t=1184s',
+                       'markdown': '[00:19:44](https://www.youtube.com/watch?v=d3jQIelSHJM&t=1184s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'jPerYiSDCp0',
+                       'title': 'What is FedEx One Rate and how does flat rate shipping work?',
+                       'channel': 'FedEx',
+                       'author': 'FedEx',
+                       'text': "The weight of your packages below 50 pounds doesn't affect shipping rates, "
+                               "so just make sure it doesn't exceed the weight limits.",
+                       'tip': "The weight of your packages below 50 pounds doesn't affect shipping rates, "
+                              "so just make sure it doesn't exceed the weight limits.",
+                       'timestamp': 73,
+                       'timestamp_seconds': 73,
+                       'timestamp_label': '[00:01:13]',
+                       'url': 'https://www.youtube.com/watch?v=jPerYiSDCp0&t=73s',
+                       'markdown': '[00:01:13](https://www.youtube.com/watch?v=jPerYiSDCp0&t=73s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'}]}

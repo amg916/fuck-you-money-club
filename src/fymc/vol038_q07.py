@@ -1,1393 +1,855 @@
 from __future__ import annotations
 
-_SCHEMA_SQL = """
-PRAGMA foreign_keys = ON;
-
-CREATE TABLE IF NOT EXISTS claims (
-    claim_id TEXT PRIMARY KEY,
-    client_id TEXT NOT NULL,
-    invoice_key TEXT NOT NULL,
-    play TEXT NOT NULL,
-    cohort TEXT NOT NULL,
-    source_sha256 TEXT NOT NULL CHECK(length(source_sha256) = 64),
-    recoverable_cents INTEGER NOT NULL CHECK(recoverable_cents > 0),
-    fee_bps INTEGER NOT NULL CHECK(fee_bps BETWEEN 1 AND 5000),
-    score INTEGER NOT NULL CHECK(score BETWEEN 0 AND 100),
-    state TEXT NOT NULL DEFAULT 'held'
-        CHECK(state IN ('held', 'verified', 'submitted', 'settled',
-                        'invoiced', 'void')),
-    external_ref TEXT UNIQUE,
-    UNIQUE(client_id, invoice_key, play)
-);
-
-CREATE TABLE IF NOT EXISTS events (
-    event_id TEXT PRIMARY KEY,
-    claim_id TEXT NOT NULL REFERENCES claims(claim_id),
-    kind TEXT NOT NULL,
-    payload_sha256 TEXT NOT NULL CHECK(length(payload_sha256) = 64),
-    evidence_json TEXT NOT NULL,
-    created_at TEXT NOT NULL DEFAULT
-        (strftime('%Y-%m-%dT%H:%M:%fZ', 'now'))
-);
-
-CREATE TABLE IF NOT EXISTS postings (
-    event_id TEXT PRIMARY KEY REFERENCES events(event_id),
-    claim_id TEXT NOT NULL REFERENCES claims(claim_id),
-    debit_account TEXT NOT NULL,
-    credit_account TEXT NOT NULL,
-    amount_cents INTEGER NOT NULL CHECK(amount_cents > 0),
-    CHECK(
-        (debit_account = 'AR' AND credit_account = 'REVENUE')
-        OR
-        (debit_account = 'CASH' AND credit_account = 'AR')
-    )
-);
-
-CREATE UNIQUE INDEX IF NOT EXISTS one_earning_per_claim
-    ON postings(claim_id)
-    WHERE credit_account = 'REVENUE';
-
-CREATE INDEX IF NOT EXISTS events_by_claim
-    ON events(claim_id, created_at);
-
-CREATE INDEX IF NOT EXISTS postings_by_claim
-    ON postings(claim_id);
-"""
-
-_INTAKE_PY = """
-import hashlib
-import json
-from datetime import date
-
-
-def intake(db, claim_id, client_id, invoice_key, play, cohort,
-           source_sha256, recoverable_cents, fee_bps, facts):
-    if not all(isinstance(value, str) and value.strip()
-               for value in (claim_id, client_id, invoice_key, play)):
-        raise ValueError('Nonempty claim identities are required')
-    if date.fromisoformat(cohort + '-01').strftime('%Y-%m') != cohort:
-        raise ValueError('Use an ISO year-month cohort')
-    if (len(source_sha256) != 64 or
-            any(c not in '0123456789abcdef' for c in source_sha256)):
-        raise ValueError('Use the immutable source SHA-256 digest')
-    if type(recoverable_cents) is not int or recoverable_cents <= 0:
-        raise ValueError('Recovery must be positive integer cents')
-    if type(fee_bps) is not int or not 1 <= fee_bps <= 5000:
-        raise ValueError('Fee basis points must be between 1 and 5000')
-
-    weights = {
-        'authorization_signed': 25,
-        'baseline_locked': 25,
-        'deadline_open': 20,
-        'contract_eligible': 20,
-        'payer_identified': 10,
-    }
-    if set(facts) != set(weights):
-        raise ValueError('Supply every named scoring fact exactly once')
-    if any(type(value) is not bool for value in facts.values()):
-        raise ValueError('Scoring facts must be actual booleans')
-    score = sum(weight for name, weight in weights.items() if facts[name])
-    payload = {
-        'claim_id': claim_id,
-        'client_id': client_id,
-        'invoice_key': invoice_key,
-        'play': play,
-        'cohort': cohort,
-        'source_sha256': source_sha256,
-        'recoverable_cents': recoverable_cents,
-        'fee_bps': fee_bps,
-        'facts': facts,
-    }
-    encoded = json.dumps(payload, sort_keys=True, separators=(',', ':'))
-    digest = hashlib.sha256(encoded.encode('utf-8')).hexdigest()
-    event_id = 'intake:' + claim_id
-    values = (
-        claim_id, client_id, invoice_key, play, cohort, source_sha256,
-        recoverable_cents, fee_bps, score,
-    )
-
-    db.execute('BEGIN IMMEDIATE')
-    try:
-        prior = db.execute(
-            'SELECT payload_sha256 FROM events WHERE event_id = ?',
-            (event_id,),
-        ).fetchone()
-        if prior:
-            if prior[0] != digest:
-                raise ValueError('An intake key cannot change its payload')
-            db.commit()
-            return claim_id
-
-        db.execute(
-            'INSERT INTO claims '
-            '(claim_id, client_id, invoice_key, play, cohort, source_sha256, '
-            'recoverable_cents, fee_bps, score) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)',
-            values,
-        )
-        db.execute(
-            'INSERT INTO events '
-            '(event_id, claim_id, kind, payload_sha256, evidence_json) '
-            'VALUES (?, ?, ?, ?, ?)',
-            (event_id, claim_id, 'intake', digest, encoded),
-        )
-        db.commit()
-        return claim_id
-    except BaseException:
-        db.rollback()
-        raise
-"""
-
-_WORKFLOW_PY = """
-import hashlib
-import json
-
-
-def _encoded(payload):
-    text = json.dumps(payload, sort_keys=True, separators=(',', ':'))
-    return text, hashlib.sha256(text.encode('utf-8')).hexdigest()
-
-
-def _evidence(evidence):
-    if not isinstance(evidence, dict):
-        raise ValueError('Evidence must be a structured object')
-    digest = evidence.get('document_sha256', '')
-    if (not isinstance(digest, str) or len(digest) != 64 or
-            any(c not in '0123456789abcdef' for c in digest)):
-        raise ValueError('Attach a verified document SHA-256 digest')
-    if not isinstance(evidence.get('reviewer'), str):
-        raise ValueError('Name the responsible evidence reviewer')
-    if not evidence['reviewer'].strip():
-        raise ValueError('Reviewer identity must be nonempty')
-
-
-def _replay(db, event_id, digest):
-    row = db.execute(
-        'SELECT payload_sha256 FROM events WHERE event_id = ?',
-        (event_id,),
-    ).fetchone()
-    if row and row[0] != digest:
-        raise ValueError('An event key cannot change its payload')
-    return bool(row)
-
-
-def advance(db, event_id, claim_id, target, evidence, external_ref=None):
-    if not isinstance(event_id, str) or not event_id.startswith('step:'):
-        raise ValueError('Transition keys must use the step namespace')
-    _evidence(evidence)
-    allowed = {
-        'held': {'verified', 'void'},
-        'verified': {'submitted', 'void'},
-        'submitted': {'settled', 'void'},
-        'settled': {'invoiced'},
-        'invoiced': set(),
-        'void': set(),
-    }
-    payload = {
-        'claim_id': claim_id,
-        'target': target,
-        'evidence': evidence,
-        'external_ref': external_ref,
-    }
-    text, digest = _encoded(payload)
-    db.execute('BEGIN IMMEDIATE')
-    try:
-        if _replay(db, event_id, digest):
-            db.commit()
-            return
-        row = db.execute(
-            'SELECT state, score, recoverable_cents, fee_bps, external_ref '
-            'FROM claims WHERE claim_id = ?',
-            (claim_id,),
-        ).fetchone()
-        if row is None:
-            raise ValueError('Claim must exist before transition')
-        state, score, recovery, fee_bps, existing_ref = row
-        if target not in allowed[state]:
-            raise ValueError('Transition is outside the state graph')
-        if target == 'verified' and score != 100:
-            raise ValueError('Every intake fact must pass before verification')
-        if target == 'submitted':
-            if not isinstance(external_ref, str) or not external_ref.strip():
-                raise ValueError('Record the provider-qualified acknowledgement')
-        elif external_ref is not None:
-            raise ValueError('External references belong to submission events')
-        if target == 'settled':
-            actual = evidence.get('actual_recovery_cents')
-            if type(actual) is not int or actual != recovery:
-                raise ValueError('Settlement mismatch requires reviewed rework')
-        if target == 'invoiced':
-            if evidence.get('performance_complete') is not True:
-                raise ValueError('Document completed contractual performance')
-            if evidence.get('unconditional_fee_right') is not True:
-                raise ValueError('Document the unconditional fee receivable')
-
-        db.execute(
-            'INSERT INTO events '
-            '(event_id, claim_id, kind, payload_sha256, evidence_json) '
-            'VALUES (?, ?, ?, ?, ?)',
-            (event_id, claim_id, target, digest, text),
-        )
-        ref = external_ref if target == 'submitted' else existing_ref
-        changed = db.execute(
-            'UPDATE claims SET state = ?, external_ref = ? '
-            'WHERE claim_id = ? AND state = ?',
-            (target, ref, claim_id, state),
-        ).rowcount
-        if changed != 1:
-            raise RuntimeError('State compare-and-swap failed')
-        if target == 'invoiced':
-            fee = (recovery * fee_bps + 5000) // 10000
-            if fee <= 0:
-                raise ValueError('Rounded fee must be positive')
-            db.execute(
-                'INSERT INTO postings '
-                '(event_id, claim_id, debit_account, credit_account, amount_cents) '
-                'VALUES (?, ?, ?, ?, ?)',
-                (event_id, claim_id, 'AR', 'REVENUE', fee),
-            )
-        db.commit()
-    except BaseException:
-        db.rollback()
-        raise
-
-
-def receive(db, claim_id, bank_transaction_id, amount_cents, evidence):
-    _evidence(evidence)
-    if not isinstance(bank_transaction_id, str) or not bank_transaction_id.strip():
-        raise ValueError('Use an account-qualified immutable bank transaction ID')
-    if type(amount_cents) is not int or amount_cents <= 0:
-        raise ValueError('Receipt must be positive integer cents')
-    event_id = 'bank:' + bank_transaction_id
-    payload = {
-        'claim_id': claim_id,
-        'bank_transaction_id': bank_transaction_id,
-        'amount_cents': amount_cents,
-        'evidence': evidence,
-    }
-    text, digest = _encoded(payload)
-    db.execute('BEGIN IMMEDIATE')
-    try:
-        if _replay(db, event_id, digest):
-            db.commit()
-            return
-        row = db.execute(
-            'SELECT state FROM claims WHERE claim_id = ?', (claim_id,)
-        ).fetchone()
-        if row is None or row[0] != 'invoiced':
-            raise ValueError('A fee receivable must precede allocation')
-        balance = db.execute(
-            'SELECT COALESCE(SUM(CASE WHEN debit_account = ? '
-            'THEN amount_cents ELSE -amount_cents END), 0) '
-            'FROM postings WHERE claim_id = ?',
-            ('AR', claim_id),
-        ).fetchone()[0]
-        if amount_cents > balance:
-            raise ValueError('Receipt exceeds the open fee receivable')
-        db.execute(
-            'INSERT INTO events '
-            '(event_id, claim_id, kind, payload_sha256, evidence_json) '
-            'VALUES (?, ?, ?, ?, ?)',
-            (event_id, claim_id, 'receipt', digest, text),
-        )
-        db.execute(
-            'INSERT INTO postings '
-            '(event_id, claim_id, debit_account, credit_account, amount_cents) '
-            'VALUES (?, ?, ?, ?, ?)',
-            (event_id, claim_id, 'CASH', 'AR', amount_cents),
-        )
-        db.commit()
-    except BaseException:
-        db.rollback()
-        raise
-"""
-
-_RECONCILIATION_SQL = """
-CREATE VIEW IF NOT EXISTS claim_reconciliation AS
-SELECT
-    c.claim_id,
-    c.client_id,
-    c.cohort,
-    c.state,
-    COALESCE(SUM(
-        CASE WHEN p.credit_account = 'REVENUE'
-        THEN p.amount_cents ELSE 0 END
-    ), 0) AS earned_fee_cents,
-    COALESCE(SUM(
-        CASE WHEN p.debit_account = 'CASH'
-        THEN p.amount_cents ELSE 0 END
-    ), 0) AS received_fee_cents,
-    COALESCE(SUM(
-        CASE WHEN p.debit_account = 'AR'
-        THEN p.amount_cents
-        WHEN p.credit_account = 'AR'
-        THEN -p.amount_cents
-        ELSE 0 END
-    ), 0) AS receivable_cents
-FROM claims AS c
-LEFT JOIN postings AS p ON p.claim_id = c.claim_id
-GROUP BY c.claim_id, c.client_id, c.cohort, c.state;
-"""
-
-_QA_PY = """
-def check(db):
-    db.execute('BEGIN')
-    try:
-        if db.execute('PRAGMA integrity_check').fetchall() != [('ok',)]:
-            raise RuntimeError('SQLite structural integrity failed')
-        if db.execute('PRAGMA foreign_key_check').fetchall():
-            raise RuntimeError('Ledger foreign-key integrity failed')
-
-        bad_balances = db.execute(
-            'SELECT claim_id FROM claim_reconciliation '
-            'WHERE receivable_cents < 0 '
-            'OR earned_fee_cents != received_fee_cents + receivable_cents'
-        ).fetchall()
-        if bad_balances:
-            raise RuntimeError('Fee roll-forward failed: ' + repr(bad_balances))
-
-        bad_states = db.execute(
-            'SELECT claim_id FROM claim_reconciliation '
-            'WHERE (state = ? AND earned_fee_cents <= 0) '
-            'OR (state != ? AND earned_fee_cents != 0)',
-            ('invoiced', 'invoiced'),
-        ).fetchall()
-        if bad_states:
-            raise RuntimeError('Earning state mismatch: ' + repr(bad_states))
-
-        bad_events = db.execute(
-            'SELECT p.event_id FROM postings AS p '
-            'JOIN events AS e ON e.event_id = p.event_id '
-            'WHERE p.claim_id != e.claim_id '
-            'OR (p.credit_account = ? AND e.kind != ?) '
-            'OR (p.debit_account = ? AND e.kind != ?)',
-            ('REVENUE', 'invoiced', 'CASH', 'receipt'),
-        ).fetchall()
-        if bad_events:
-            raise RuntimeError('Posting evidence mismatch: ' + repr(bad_events))
-        db.commit()
-        return {
-            'integrity': 'passed',
-            'fee_roll_forward': 'passed',
-            'state_alignment': 'passed',
-            'event_alignment': 'passed',
-        }
-    except BaseException:
-        db.rollback()
-        raise
-"""
-
-_RUNNER_PY = """
-import argparse
-import json
-import sqlite3
-from pathlib import Path
-
-from intake import intake
-from workflow import advance, receive
-from qa import check
-
-
-def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument('database')
-    parser.add_argument(
-        'action',
-        choices=('init', 'intake', 'advance', 'receive', 'report', 'qa'),
-    )
-    parser.add_argument('--payload', default='{}')
-    args = parser.parse_args()
-    payload = json.loads(args.payload)
-    root = Path(__file__).resolve().parent
-    db = sqlite3.connect(args.database, timeout=30, isolation_level=None)
-    try:
-        db.execute('PRAGMA foreign_keys = ON')
-        db.execute('PRAGMA busy_timeout = 30000')
-        db.execute('PRAGMA journal_mode = WAL')
-        db.execute('PRAGMA synchronous = FULL')
-        if args.action == 'init':
-            sql = (
-                (root / 'schema.sql').read_text(encoding='utf-8')
-                + '\\n'
-                + (root / 'reconciliation.sql').read_text(encoding='utf-8')
-            )
-            try:
-                db.executescript('BEGIN IMMEDIATE;\\n' + sql + '\\nCOMMIT;')
-            except BaseException:
-                if db.in_transaction:
-                    db.rollback()
-                raise
-            print('Schema and reconciliation view initialized')
-        elif args.action == 'intake':
-            print(intake(db, **payload))
-        elif args.action == 'advance':
-            advance(db, **payload)
-            print('Transition committed or matching replay accepted')
-        elif args.action == 'receive':
-            receive(db, **payload)
-            print('Receipt committed or matching replay accepted')
-        elif args.action == 'qa':
-            print(json.dumps(check(db), sort_keys=True))
-        else:
-            rows = db.execute(
-                'SELECT cohort, SUM(earned_fee_cents), '
-                'SUM(received_fee_cents), SUM(receivable_cents) '
-                'FROM claim_reconciliation GROUP BY cohort ORDER BY cohort'
-            ).fetchall()
-            print(json.dumps(rows))
-    finally:
-        db.close()
-
-
-if __name__ == '__main__':
-    main()
-"""
-
-CHAPTER_7 = {
-    "id": "Q7",
-    "chapter_id": "Q7",
-    "chapter_number": 7,
-    "question_number": 7,
-    "slug": "complete-operating-process-production-blueprint-90-day-cohort-walk",
-    "question_prompt": (
-        "How does an operator execute contingent corporate bill-audit & tax-credit "
-        "recovery end-to-end from intake to reconciled cash, backed by an auditable "
-        "technical/ledger blueprint and a worked 90-day cohort walk?"
-    ),
-    "kicker": "Q7 / THE BIG MONEY PLAYBOOKS",
-    "title": (
-        "The Complete Operating Process, Production Blueprint & 90-Day Cohort Walk"
-    ),
-    "subtitle": (
-        "FedEx/UPS Eligibility, Utility Baselines, Form 8850 Timing, IRC Section "
-        "179D Allocation Evidence, and a Transactional SQLite Fee Subledger"
-    ),
-    "layout_template": "research_exhibit",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #38, Contingent Corporate Bill-Audit & Tax-Credit Recovery, "
-        "holds Rank #06 of 42 with a Money-to-Manpower Score of 94/100. This "
-        "chapter turns 12 mapped plays into one controlled production line: "
-        "authorize access, freeze evidence, verify eligibility, submit once, "
-        "prove client benefit, earn the fee, and reconcile operator cash. Six "
-        "copy-pasteable engineering modules define a transactional SQLite "
-        "subledger without treating client recoveries as operator revenue. "
-        "The worked cohort earns $126,250 over 90 days, exactly one quarter "
-        "of the $505,000 Base revenue case, while exposing collection lag "
-        "and $10,000 closing receivables. Annual owner profit remains "
-        "$33,000 Conservative, $217,150 Base, and $504,000 Scaled; tax-service "
-        "restrictions determine compensation structure before any engagement starts."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$110,000",
-            "context": (
-                "Annual earned operator fees; excludes client bills, recovered "
-                "principal, and deduction amounts"
-            ),
-            "note": (
-                "30% net margin; $33,000 annual owner net profit; "
-                "1 FT + 3 C"
-            ),
-        },
-        {
-            "label": "Base",
-            "value": "$505,000",
-            "context": (
-                "Annual earned contingency shares, shared-savings fees, and "
-                "processing revenue"
-            ),
-            "note": (
-                "43.0% net margin; $217,150 annual owner net profit; "
-                "1 FT + 3 C"
-            ),
-        },
-        {
-            "label": "Scaled",
-            "value": "$900,000",
-            "context": (
-                "Annual earned operator revenue, never underlying customer "
-                "spend or tax benefits"
-            ),
-            "note": (
-                "56% net margin; $504,000 annual owner net profit; "
-                "2 FT + 4 C, six people total"
-            ),
-        },
-    ],
-    "sections": [
-        {
-            "heading": (
-                "1. Convert twelve recovery plays into authorized, "
-                "evidence-complete work packets"
-            ),
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Start with a signed engagement, a narrowly scoped Letter of "
-                    "Authorization, and a baseline invoice snapshot before revealing "
-                    "recoverable findings. Record the legal customer, billing account, "
-                    "service location, covered period, permitted access method, "
-                    "submission deadline, fee trigger, and refund destination. The "
-                    "customer receives the supplier refund directly; the operator "
-                    "separately invoices an earned service fee. Obtain FedEx or UPS "
-                    "contract schedules before testing service guarantees because a "
-                    "negotiated waiver can erase an apparently attractive late-delivery "
-                    "claim. Use authorized EDI exports or documented carrier interfaces "
-                    "where access exists, rather than assuming every developer account "
-                    "includes refund submission. For utilities, preserve tariff sheets, "
-                    "meter identifiers, interval histories, sewer factors, and municipal "
-                    "credit policies. Freeze original files with SHA-256 digests; retain "
-                    "OCR output as a derivative, never as the sole evidence. Intake "
-                    "scores authorization and baseline integrity at 25 points each, "
-                    "deadline and contract eligibility at 20 each, and an identified "
-                    "payer at ten. A score below 100 can prioritize remediation but "
-                    "cannot authorize submission. This deliberately separates sales "
-                    "enthusiasm from production readiness and makes rejected work "
-                    "visible before contractors spend scarce review hours."
-                ),
-                (
-                    "Map the shelf into twelve operational lanes, not twelve different "
-                    "businesses. Parcel service refunds, duplicate parcel charges, and "
-                    "dimensional corrections share invoice ingestion but require "
-                    "different evidence. Utility tariff changes, cooling-tower sewer "
-                    "abatements, utility tax exemptions, waste true-ups, and telecom "
-                    "disconnects share site ownership records but not eligibility rules. "
-                    "Property assessment appeals need jurisdiction-specific authority "
-                    "and qualified representation. WOTC processing, specialty-credit "
-                    "documentation, and Section 179D allocation support belong in "
-                    "separate tax-service workspaces with distinct fee terms. The "
-                    "matrix supplies illustrative unit economics for all twelve; only "
-                    "the refund lanes enter the worked cohort. A $20,000 verified "
-                    "supplier recovery at 25% produces $5,000 of operator revenue, "
-                    "not $20,000. A $1,000 monthly verified saving at a 30% split "
-                    "produces $300 per qualifying month, not an immediate $10,800 "
-                    "receivable merely because the contract runs 36 months. Specify "
-                    "the counterfactual baseline, volume adjustments, termination "
-                    "rights, and disputed-month treatment before starting. Keep "
-                    "proposed benefits, earned fees, invoiced balances, and bank "
-                    "receipts in separate fields so commercial forecasts cannot "
-                    "quietly become accounting entries during a busy weekly close."
-                ),
-                (
-                    "Treat section_179d_municipal_deduction_allocation_arbitrage as "
-                    "TRACK_1 coordination of an eligible owner, qualifying designer, "
-                    "and independent energy certifier. It is not the resale of a "
-                    "freely transferable deduction. Establish building ownership, "
-                    "designer responsibility, applicable construction and placed-in-service "
-                    "dates, energy-model support, allocation documentation, and the "
-                    "rules governing the particular project year. Section 179D "
-                    "includes a termination rule for property whose construction "
-                    "begins after June 30, 2026; a current calendar date alone "
-                    "does not establish project eligibility. Illustratively, a "
-                    "$100,000 allowable deduction at a 24% marginal rate represents "
-                    "$24,000 of potential taxpayer benefit, while a separately "
-                    "agreed $6,000 documentation engagement produces only $6,000 "
-                    "of operator fees. Neither figure establishes the deduction "
-                    "without project-specific substantiation. Apply Treasury Circular "
-                    "230 Section 10.27 to the actual practitioner service and "
-                    "proceeding, accounting for applicable judicial limits rather "
-                    "than assuming all tax-related contingency arrangements are "
-                    "permitted or prohibited. If eligibility, allocation authority, "
-                    "or compensation treatment remains disputed, pause allocation, "
-                    "obtain independent tax review, and offer fixed-fee documentation "
-                    "support only for eligible projects. Do not substitute a "
-                    "marketing success fee for that unresolved analysis."
-                ),
-            ],
-            "table": {
-                "caption": (
-                    "Twelve Mapped Operator Plays — Illustrative Units, Evidence, "
-                    "and Specific Risk Fallbacks"
-                ),
-                "headers": [
-                    "Mapped play and operating scope",
-                    "Illustrative operator fee calculation",
-                    "Evidence required before production work",
-                    "Failure condition and practical fallback",
-                ],
-                "rows": [
-                    [
-                        "Parcel service-guarantee refunds through authorized FedEx or UPS channels",
-                        "$20,000 accepted service refunds multiplied by 25% earns $5,000",
-                        "Executed carrier contract, guarantee eligibility, tracking events, and invoice identifiers",
-                        "Guarantee waiver defeats eligibility; redirect review toward documented billing errors",
-                    ],
-                    [
-                        "Duplicate parcel-charge recovery across customer-authorized billing account histories",
-                        "$8,000 duplicate charges recovered multiplied by 30% earns $2,400",
-                        "Matching shipment identifiers, duplicate invoice lines, and original payment records",
-                        "Legitimate rebilling explains duplicates; close claim without charging recovery fees",
-                    ],
-                    [
-                        "Dimensional-weight and accessorial correction using verified shipment measurement evidence",
-                        "$12,000 accepted adjustments multiplied by 25% earns $3,000 operator fees",
-                        "Package measurements, applicable dimensional divisor, carrier adjustments, and service contract",
-                        "Missing contemporaneous measurements blocks recovery; implement prospective measurement capture instead",
-                    ],
-                    [
-                        "Commercial utility tariff reclassification with normalized monthly savings measurement",
-                        "$1,000 verified monthly savings multiplied by 30% earns $300 monthly",
-                        "Applicable tariff, interval usage, demand peaks, and approved classification change",
-                        "Usage shifts distort baseline; recalculate counterfactual before recognizing monthly fees",
-                    ],
-                    [
-                        "Cooling-tower sewer abatement supported by separately measured evaporative water consumption",
-                        "$24,000 approved sewer credits multiplied by 25% earns $6,000",
-                        "Municipal abatement rule, approved submeter, inspection records, and consumption reconciliation",
-                        "Unapproved meter prevents retrospective credits; pursue approved prospective measurement only",
-                    ],
-                    [
-                        "Utility sales-tax exemption recovery for demonstrably eligible customer usage categories",
-                        "$16,000 recoverable tax credits multiplied by 25% earns $4,000",
-                        "State exemption authority, usage study, valid certificates, and covered invoice periods",
-                        "Exemption classification remains contested; obtain specialist review before refund submission",
-                    ],
-                    [
-                        "Waste-service contract true-ups for unsupported lifts, surcharges, or rate changes",
-                        "$10,000 vendor credits multiplied by 30% earns $3,000 operator fees",
-                        "Signed waste agreement, lift logs, service changes, and surcharge calculations",
-                        "Contract authorizes charges; close historical claim and negotiate prospective pricing",
-                    ],
-                    [
-                        "Telecom inventory disconnects with verified savings across the shared-savings term",
-                        "$2,000 verified monthly savings multiplied by 25% earns $500 monthly",
-                        "Circuit ownership, utilization evidence, termination terms, and customer disconnect authorization",
-                        "Critical circuit or termination penalty defeats savings; retain service pending redesign",
-                    ],
-                    [
-                        "Property-tax assessment appeals through properly authorized jurisdiction-qualified representation",
-                        "$40,000 realized tax reduction multiplied by permitted 25% earns $10,000",
-                        "Assessment notice, valuation support, appeal deadline, and required representative credentials",
-                        "Licensing or deadline prevents representation; refer qualified counsel without unauthorized filing",
-                    ],
-                    [
-                        "WOTC processing with Form 8850 and state workforce certification coordination",
-                        "Twenty completed processing units at $150 each earns $3,000",
-                        "Qualifying hire date, timely prescreening, certification packet, and employer wage records",
-                        "Statutory hiring window or submission deadline fails; exclude affected worker processing",
-                    ],
-                    [
-                        "Specialty tax-credit documentation under separately reviewed fixed-fee service engagements",
-                        "Four accepted documentation packages at $1,500 each earns $6,000",
-                        "Credit-specific eligibility analysis, underlying expenditures, responsible preparer, and substantiation file",
-                        "Unsupported expenditure or service restriction blocks work; narrow scope before invoicing",
-                    ],
-                    [
-                        (
-                            "section_179d_municipal_deduction_allocation_arbitrage — "
-                            "TRACK_1 eligible allocation coordination and documentation"
-                        ),
-                        (
-                            "$100,000 deduction times 24% suggests $24,000 taxpayer "
-                            "benefit; documentation fee equals $6,000"
-                        ),
-                        (
-                            "Eligible owner, qualifying designer, independent certification, "
-                            "construction timing, and allocation instrument"
-                        ),
-                        (
-                            "Pause allocation, obtain independent tax review, and offer "
-                            "fixed-fee documentation support only for eligible projects"
-                        ),
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four verifications before a recoverable finding leaves the workspace",
-                "body": (
-                    "The founder owns the engagement decision; the evidence reviewer "
-                    "records the result and supporting document digest."
-                ),
-                "items": [
-                    (
-                        "Verify signed authorization covers the exact account, entity, "
-                        "period, interface, and representative action being proposed."
-                    ),
-                    (
-                        "Verify the frozen contract and baseline establish claim "
-                        "eligibility, including carrier guarantee waivers and tariff dates."
-                    ),
-                    (
-                        "Verify deadlines, applicable tax-service compensation treatment, "
-                        "and any required property-tax representative credentials."
-                    ),
-                    (
-                        "Verify the customer refund destination and separate operator "
-                        "fee trigger; prohibit recovery principal from entering revenue."
-                    ),
-                ],
-            },
-        },
-        {
-            "heading": (
-                "2. Install six executable reference modules around a "
-                "transactional fee subledger"
-            ),
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Extract the six reference cells into the filenames shown, place "
-                    "them together, and initialize with python runner.py recovery.db "
-                    "init. Python 3.9 and SQLite are sufficient; the chapter module "
-                    "itself imports no application dependencies. The reference is a "
-                    "refund-fee subledger, not a complete general ledger or a tax "
-                    "return engine. It deliberately excludes custodial funds, supplier "
-                    "principal, recurring savings accruals, credit notes, and foreign "
-                    "currency. Those require additional reviewed posting types rather "
-                    "than improvised negative receipts. Store integer cents and "
-                    "integer basis points, with explicit half-up fee rounding. "
-                    "The natural claim key combines client, invoice item, and play; "
-                    "make invoice_key granular enough to distinguish recoverable "
-                    "line items while preventing the same line from being counted "
-                    "twice under renamed campaigns. SHA-256 connects the database "
-                    "to immutable evidence retained outside it. A hash proves "
-                    "identity of bytes, not commercial validity, so a named "
-                    "reviewer still validates every document. The scoring script "
-                    "records facts without granting credentials. Run intake with "
-                    "a JSON payload containing the documented parameters; missing "
-                    "facts, altered replay payloads, or duplicate natural keys "
-                    "fail instead of silently changing an existing claim."
-                ),
-                (
-                    "Every mutating function obtains BEGIN IMMEDIATE before reading "
-                    "mutable state, holds the SQLite writer reservation through "
-                    "validation and posting, and commits the event with its business "
-                    "effect. Unique event identifiers reject changed retries; a "
-                    "matching replay returns without another posting. A partial "
-                    "unique index allows one earnings entry per claim, and a "
-                    "provider-qualified external reference prevents two local claims "
-                    "from sharing one acknowledgement. Concurrent receipts serialize "
-                    "before checking the open balance, so two workers cannot each "
-                    "consume the same receivable. These properties remove "
-                    "check-then-write races within this controlled database path. "
-                    "Use one local database on durable storage, not a network "
-                    "filesystem or independent copied databases. Set foreign keys "
-                    "on every connection, retain FULL synchronous durability, and "
-                    "restrict write access to the service identity. The reference "
-                    "makes no network submissions: it records an acknowledgement "
-                    "only after a documented external action. Where a provider "
-                    "supports idempotency keys, reuse a stable claim identifier. "
-                    "Where it does not, an ambiguous timeout requires a status "
-                    "inquiry and human resolution, never an automatic resend. "
-                    "A database transaction cannot make an unrelated carrier "
-                    "system participate in an atomic commit."
-                ),
-                (
-                    "The verification and escrow state machine starts at held, "
-                    "advances through verified, submitted, settled, and invoiced, "
-                    "and allows documented voiding before settlement. Here escrow "
-                    "means an internal evidence hold, not possession of client "
-                    "money. Submission requires a provider-qualified acknowledgement; "
-                    "settlement requires documentary proof that the actual customer "
-                    "recovery equals the reviewed amount. A partial award stops "
-                    "the transition for controlled rework rather than overstating "
-                    "fees. Invoicing records completed contractual performance and "
-                    "an unconditional fee right, then debits fee receivables and "
-                    "credits operator revenue atomically. Bank receipts debit cash "
-                    "and credit those receivables using an account-qualified bank "
-                    "transaction identifier. The minimal implementation allocates "
-                    "one bank transaction to one claim; multi-invoice deposits "
-                    "need a dedicated allocation model before use. Reconciliation "
-                    "shows earned fees minus allocated receipts equals remaining "
-                    "receivables for every claim and cohort. QA runs inside one "
-                    "read transaction, avoiding inconsistent snapshots during "
-                    "concurrent writes. Structural checks supplement, rather than "
-                    "replace, independent bank and source-document matching. "
-                    "Export monthly operator expenses into the accounting system "
-                    "separately; do not infer owner profit from this revenue-only "
-                    "subledger. These supplied modules are reference source, "
-                    "not reported execution results."
-                ),
-            ],
-            "table": {
-                "caption": (
-                    "Production Engineering / SQLite-or-Postgres Ledger & "
-                    "Idempotent Workflow Reference Table — Six SQLite Modules"
-                ),
-                "headers": [
-                    "Module filename and narrowly bounded responsibility",
-                    "Copy-pasteable executable reference source",
-                    "Concurrency control and operating boundary",
-                ],
-                "rows": [
-                    [
-                        "schema.sql — create constrained claims, evidence events, and paired ledger postings",
-                        _SCHEMA_SQL,
-                        (
-                            "Natural keys, event keys, provider references, and one "
-                            "earning per claim have database uniqueness enforcement."
-                        ),
-                    ],
-                    [
-                        "intake.py — validate identifiers, freeze scoring inputs, and insert one work packet",
-                        _INTAKE_PY,
-                        (
-                            "Writer reservation precedes replay checks; changed "
-                            "payloads and duplicate natural claims fail without mutation."
-                        ),
-                    ],
-                    [
-                        "workflow.py — transition evidence holds, recognize earned fees, and allocate receipts",
-                        _WORKFLOW_PY,
-                        (
-                            "State change, evidence event, and posting commit together; "
-                            "external submission remains outside the database boundary."
-                        ),
-                    ],
-                    [
-                        "reconciliation.sql — expose earned fees, collected cash, and remaining claim receivables",
-                        _RECONCILIATION_SQL,
-                        (
-                            "Each paired posting contributes once; customer recovery "
-                            "principal never enters operator revenue or fee cash."
-                        ),
-                    ],
-                    [
-                        "qa.py — verify structure, fee roll-forwards, states, and posting evidence alignment",
-                        _QA_PY,
-                        (
-                            "One read snapshot prevents mixed-version checks; "
-                            "independent bank matching remains an additional operating control."
-                        ),
-                    ],
-                    [
-                        "runner.py — initialize storage and expose explicit JSON-driven operational commands",
-                        _RUNNER_PY,
-                        (
-                            "Local durable storage, controlled writers, bounded lock "
-                            "waiting, and explicit errors define the supported deployment."
-                        ),
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Extract and initialize the six reference files",
-                    "action": (
-                        "Copy each executable cell to its named file and run "
-                        "python runner.py recovery.db init on local durable storage."
-                    ),
-                    "detail": (
-                        "Use a disposable database first. Preserve evidence separately, "
-                        "restrict database access, and include the SQLite backup API "
-                        "in the deployment backup procedure."
-                    ),
-                },
-                {
-                    "step": 2,
-                    "title": "Exercise intake and transition replay behavior",
-                    "action": (
-                        "Create one fully scored claim, replay the identical intake, "
-                        "then attempt the same identifier with a changed amount."
-                    ),
-                    "detail": (
-                        "The matching retry must create no new event; the changed "
-                        "retry must fail. Concurrent verification attempts must "
-                        "produce only one committed transition."
-                    ),
-                },
-                {
-                    "step": 3,
-                    "title": "Prove settlement and receipt invariants",
-                    "action": (
-                        "Record documented submission and settlement, invoice once, "
-                        "then test duplicate and competing bank allocations."
-                    ),
-                    "detail": (
-                        "A settlement mismatch must stop; a duplicate receipt must "
-                        "be harmless; competing receipts must never exceed the "
-                        "remaining receivable."
-                    ),
-                },
-                {
-                    "step": 4,
-                    "title": "Close the subledger against independent records",
-                    "action": (
-                        "Run python runner.py recovery.db qa and report, then "
-                        "match every receipt to the bank statement."
-                    ),
-                    "detail": (
-                        "Export earned fees, cash, and receivables into the main "
-                        "books. Reconcile operating expenses separately and "
-                        "investigate every unmatched bank credit."
-                    ),
-                },
-            ],
-        },
-        {
-            "heading": (
-                "3. Operate the evidence queue, specialist handoffs, and "
-                "exception recovery without inventing cash"
-            ),
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Run a daily queue by deadline exposure, expected collectible "
-                    "fee, and remaining evidence effort. The founder owns customer "
-                    "communication, engagement scope, and collection; three contractors "
-                    "cover invoice analysis, domain verification, and bookkeeping "
-                    "with narrowly separated access. Begin each morning with expiring "
-                    "carrier claims, unresolved acknowledgements, municipal inquiries, "
-                    "and tax-processing deadlines. An OCR exception goes back to "
-                    "the source invoice, not directly into a dispute letter. "
-                    "Utility reviewers compare billed rate components to the "
-                    "effective tariff and distinguish a retrospective credit from "
-                    "a prospective classification change. Parcel reviewers establish "
-                    "that service commitments applied to that shipment before "
-                    "calculating lateness. The bookkeeper receives accepted amounts "
-                    "and evidence references, not authority to revise eligibility. "
-                    "Hold a weekly exception review with explicit owners and "
-                    "next-contact dates. A municipal refund that takes another "
-                    "60 days changes the collection forecast; it does not "
-                    "justify recording a bank receipt. Similarly, a verbal "
-                    "carrier concession stays out of settled status until the "
-                    "credit memo or payment evidence arrives. This cadence "
-                    "protects the small-team model by preventing contractors "
-                    "from repeatedly rediscovering why the same unresolved "
-                    "claim cannot yet move forward."
-                ),
-                (
-                    "Separate tax-credit workflow from ordinary bill corrections at "
-                    "the first intake screen. WOTC uses employer prescreening and "
-                    "state workforce certification, including the statutory "
-                    "28-day submission timing under Section 51(d)(13); confirm "
-                    "the applicable eligible-hire window under Section 51(c)(4) "
-                    "rather than assuming a later legislative extension. The "
-                    "Form 8850 process must capture the applicant's timely "
-                    "prescreening information, employer signatures, hiring dates, "
-                    "and submission evidence. An ATS integration should create "
-                    "a deadline task and secure document request, not fabricate "
-                    "answers from demographic guesses. Where tax-return information "
-                    "falls within Section 7216, apply its disclosure and use "
-                    "restrictions and the applicable Treasury regulations before "
-                    "sharing records with contractors or outside processors. "
-                    "Property-tax matters receive a separate jurisdiction review; "
-                    "Texas Occupations Code Chapter 1152, for example, governs "
-                    "property-tax consultants within its scope and exemptions. "
-                    "Independent qualified specialists own technical conclusions "
-                    "outside the founder's competence. Compensation follows the "
-                    "actual service and applicable rules, not the general "
-                    "25%–50% commercial audit pitch. The fixed processing and "
-                    "documentation examples in the matrix therefore remain "
-                    "outside the refund-only reference ledger until their "
-                    "performance obligations and posting rules are explicitly implemented."
-                ),
-                (
-                    "Use exception handling to preserve economics instead of "
-                    "concealing losses. A disputed baseline creates a measurement "
-                    "task; an expired deadline creates a closed loss; an "
-                    "unconfirmed provider response creates an inquiry, not another "
-                    "submission. For partial settlements, retain the original "
-                    "claim and evidence trail, approve a revised work packet "
-                    "under a controlled amendment procedure, and prevent the "
-                    "same provider acknowledgement from supporting duplicate "
-                    "revenue. The compact reference intentionally refuses this "
-                    "amendment path until an extended model is reviewed. "
-                    "Likewise, reversals, customer refunds, chargebacks, and "
-                    "split bank deposits belong in explicit extension tests "
-                    "before live use. Archive raw evidence with restricted "
-                    "access, encrypted storage, retention dates, and documented "
-                    "deletion authority; the SQLite database stores digests "
-                    "and review metadata rather than payroll documents. "
-                    "Restore a backup into an isolated environment and "
-                    "compare claim counts, event counts, fee totals, and "
-                    "bank allocations before declaring recovery successful. "
-                    "For shared savings, recalculate each month using "
-                    "agreed production or occupancy normalizers and retain "
-                    "the baseline version used. A 36-month contract is "
-                    "a measurement commitment, not permission to recognize "
-                    "three years of estimated fees on signing day."
-                ),
-            ],
-            "table": {
-                "caption": (
-                    "Production Exception Matrix — Named Owner, Release Evidence, "
-                    "and Recovery Action"
-                ),
-                "headers": [
-                    "Exception detected in the operating queue",
-                    "Accountable owner and evidence required",
-                    "Concrete release or closure criterion",
-                    "Specific fallback preserving money and auditability",
-                ],
-                "rows": [
-                    [
-                        "Carrier contract contains a service-guarantee waiver affecting proposed shipment claims",
-                        "Parcel analyst retrieves signed contract schedule and effective service terms",
-                        "Eligibility reviewer confirms a recoverable billing error independent of waived guarantee",
-                        "Close waived service claims and inspect duplicate charges or supported measurement errors",
-                    ],
-                    [
-                        "Utility credit amount differs from the originally verified recovery expectation",
-                        "Utility reviewer obtains credit memorandum and line-level explanation from the supplier",
-                        "Reviewed amendment reconciles approved recovery before any revised fee is recognized",
-                        "Keep compact ledger transition blocked until controlled amendment support is implemented",
-                    ],
-                    [
-                        "Provider submission times out without a reliable acknowledgement or accepted case identifier",
-                        "Founder checks provider case history using the original customer and claim identifiers",
-                        "Documented provider response establishes whether the original submission already exists",
-                        "Do not resend automatically when provider idempotency support cannot resolve ambiguity",
-                    ],
-                    [
-                        "WOTC packet lacks timely prescreening or state workforce submission evidence",
-                        "Tax-processing specialist checks Form 8850 dates and retained delivery confirmation",
-                        "Applicable statutory eligibility and timing requirements are supported by contemporaneous records",
-                        "Exclude the affected worker rather than reconstructing signatures or backdating records",
-                    ],
-                    [
-                        "Section 179D project lacks qualifying allocation authority or independent energy certification",
-                        "Independent tax reviewer checks owner eligibility, designer role, dates, and certification",
-                        "Eligible project documentation supports the allocation and permitted service compensation structure",
-                        "Pause allocation and offer fixed-fee documentation support only for eligible projects",
-                    ],
-                    [
-                        "Bank deposit combines multiple fee invoices beyond the reference allocation model",
-                        "Bookkeeper obtains remittance detail identifying every invoice and paid amount",
-                        "Reviewed deposit-allocation extension preserves one immutable bank transaction with multiple allocations",
-                        "Hold deposit in the main-book suspense process without fabricating separate bank transactions",
-                    ],
-                    [
-                        "Backup restoration produces different event counts or unmatched operator bank receipts",
-                        "Bookkeeper and technical contractor compare snapshot totals with independent statement records",
-                        "Restored ledger passes structural checks and source-to-bank reconciliation for the affected period",
-                        "Keep production writes suspended while restoring the last verified consistent backup",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Four habits that prevent expensive rework",
-                "body": (
-                    "Experienced operators spend review minutes on claim eligibility "
-                    "and collection evidence before spending hours on presentation."
-                ),
-                "items": [
-                    (
-                        "Ask for the carrier pricing addendum with the first invoice "
-                        "export; guarantee waivers often hide outside the shipment data."
-                    ),
-                    (
-                        "Photograph cooling-tower submeter identifiers and retain the "
-                        "municipality's acceptance record before projecting sewer credits."
-                    ),
-                    (
-                        "Save provider acknowledgement identifiers immediately and "
-                        "qualify them with provider and account context before ledger entry."
-                    ),
-                    (
-                        "Send fee invoices with the exact supplier credit memo and "
-                        "contract calculation; this shortens customer approval disputes."
-                    ),
-                ],
-            },
-        },
-        {
-            "heading": (
-                "4. Walk a ninety-day cohort from lead scrubs to "
-                "Base-case earned profit and closing cash"
-            ),
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Use a deliberately explicit steady-production quarter rather "
-                    "than portraying a cold start as instant cash. The modeled "
-                    "operator begins with authorized prospect relationships, ready "
-                    "invoice access, $24,000 opening liquidity, and no opening "
-                    "fee receivables. This fits within the $6,000–$35,000 startup "
-                    "capital range but does not eliminate the stated one-to-four-month "
-                    "first-deal interval for a new entrant. Each month supplies "
-                    "40 qualified leads, ten signed work packets, two eligibility "
-                    "scrubs, and eight retained cases. Across 90 days, 120 "
-                    "leads produce 30 signed packets, six closed losses, and "
-                    "24 collectible cases. Cohort A earns $60,000, cohort B "
-                    "earns $41,250, and cohort C earns $25,000; these are "
-                    "different verified recovery sizes, not equal-value deals. "
-                    "All use a permitted 25% commercial refund fee, requiring "
-                    "$240,000, $165,000, and $100,000 of actual customer "
-                    "recoveries respectively. The resulting $505,000 customer "
-                    "recovery total is coincidentally equal to annual Base "
-                    "operator revenue, but the two measures have different "
-                    "periods and meanings. Quarter operator revenue is only "
-                    "$126,250. Scrubbed packets earn zero and their review "
-                    "effort remains inside the modeled delivery expense."
-                ),
-                (
-                    "Month 1 recognizes $30,000 from cohort A and collects "
-                    "$20,000, leaving $10,000 receivable. Month 2 recognizes "
-                    "another $20,000 from A and $22,500 from B, while "
-                    "collecting $25,000 from A and $15,000 from B. "
-                    "Month 3 recognizes A's remaining $10,000, B's "
-                    "remaining $18,750, and C's $25,000; receipts are "
-                    "$15,000, $21,250, and $20,000 respectively. Thus "
-                    "quarter earnings total $126,250, cash receipts total "
-                    "$116,250, and closing receivables total $10,000, "
-                    "split evenly between B and C. Customer recovery "
-                    "evidence supports each recognition event, and the "
-                    "contract makes the fee unconditional at completed "
-                    "performance; a signature alone never earns revenue. "
-                    "The cash pattern assumes reasonably prompt commercial "
-                    "refund processing, not municipal or tax-refund timing. "
-                    "Slower utility credits move their affected cases "
-                    "into later periods instead of borrowing cash from "
-                    "another cohort in the presentation. The two scrubs "
-                    "per cohort consist of one contract or eligibility "
-                    "failure and one evidence or deadline failure. Their "
-                    "losses reduce signed-to-retained conversion to 80%, "
-                    "with no invented fee receivable to write off afterward."
-                ),
-                (
-                    "Monthly operating expense is $23,987.50, comprising $6,500 "
-                    "of recurring overhead and $17,487.50 of delivery, contractor, "
-                    "and variable operating costs. Recurring overhead stays "
-                    "within the supplied $1,500–$9,500 monthly opex range; "
-                    "the additional direct costs reconcile the full scorecard "
-                    "expense envelope rather than pretending the overhead "
-                    "range covers every expense. Quarter costs are "
-                    "$71,962.50 and earned owner profit is $54,287.50, "
-                    "exactly 43% of revenue. Cash operating flow is "
-                    "negative $3,987.50 in Month 1, positive $16,012.50 "
-                    "in Month 2, and positive $32,262.50 in Month 3. "
-                    "Cumulative flow therefore reaches $44,287.50, with "
-                    "$68,287.50 closing cash after opening liquidity. "
-                    "The $10,000 difference between earned profit and "
-                    "cash flow is closing receivables. No owner distributions, "
-                    "capital purchases, borrowing, or personal taxes enter "
-                    "this operating illustration. Four equivalent quarters "
-                    "produce $505,000 revenue, $287,850 expenses, and "
-                    "$217,150 annual owner profit with one full-time "
-                    "operator and three contractors. Annual cash requires "
-                    "its own receivable roll-forward; do not multiply "
-                    "the first quarter's collection lag mechanically. "
-                    "Conservative and Scaled economics remain separate "
-                    "canonical cases, not extrapolations from optimistic "
-                    "recovery principal or unsigned savings estimates."
-                ),
-            ],
-            "table": {
-                "caption": "Worked 90-Day Cohort Walk",
-                "headers": [
-                    "Cohort, period, or reconciliation control",
-                    "Lead conversion, scrubs, and earned operator fees",
-                    "Fee collection timing and closing receivables",
-                    "Operating expense, profit, and cumulative cash",
-                ],
-                "rows": [
-                    [
-                        "Cohort A originates during Month 1 and completes recognition during Month 3",
-                        (
-                            "Forty leads yield ten signed packets; two scrubbed, "
-                            "eight retained; $60,000 earned on $240,000 customer recoveries"
-                        ),
-                        (
-                            "Collect $20,000 in Month 1, $25,000 in Month 2, "
-                            "$15,000 in Month 3; closing receivables equal zero"
-                        ),
-                        (
-                            "Recognition is $30,000, $20,000, then $10,000; "
-                            "delivery costs remain in the monthly expense pool"
-                        ),
-                    ],
-                    [
-                        "Cohort B originates during Month 2 and completes recognition during Month 3",
-                        (
-                            "Forty leads yield ten signed packets; two scrubbed, "
-                            "eight retained; $41,250 earned on $165,000 customer recoveries"
-                        ),
-                        (
-                            "Collect $15,000 in Month 2 and $21,250 in "
-                            "Month 3; closing receivables equal $5,000"
-                        ),
-                        (
-                            "Recognition is $22,500 then $18,750; no additional "
-                            "revenue is created when remaining receivables collect"
-                        ),
-                    ],
-                    [
-                        "Cohort C originates during Month 3 and earns its modeled fees that month",
-                        (
-                            "Forty leads yield ten signed packets; two scrubbed, "
-                            "eight retained; $25,000 earned on $100,000 customer recoveries"
-                        ),
-                        (
-                            "Collect $20,000 during Month 3; remaining $5,000 "
-                            "is a supported closing fee receivable"
-                        ),
-                        (
-                            "All $25,000 is earned during Month 3; timing "
-                            "assumes ready evidence and prompt commercial refunds"
-                        ),
-                    ],
-                    [
-                        "Month 1 consolidated close starts with $24,000 opening liquidity",
-                        (
-                            "Forty leads, ten signed packets, two scrubs, eight "
-                            "retained cases; recognized operator revenue equals $30,000"
-                        ),
-                        (
-                            "Operator receipts equal $20,000; cumulative earned fees "
-                            "less receipts leave $10,000 closing receivables"
-                        ),
-                        (
-                            "Expenses $23,987.50; profit $6,012.50; monthly and "
-                            "cumulative flow negative $3,987.50; closing cash $20,012.50"
-                        ),
-                    ],
-                    [
-                        "Month 2 consolidated close combines new work with earlier cohort collections",
-                        (
-                            "Forty new leads, ten signed packets, two scrubs; "
-                            "A and B recognition totals $42,500"
-                        ),
-                        (
-                            "Operator receipts equal $40,000; cumulative earned fees "
-                            "less receipts leave $12,500 closing receivables"
-                        ),
-                        (
-                            "Expenses $23,987.50; profit $18,512.50; monthly flow "
-                            "$16,012.50; cumulative flow $12,025; closing cash $36,025"
-                        ),
-                    ],
-                    [
-                        "Month 3 consolidated close finishes the illustrated ninety-day recognition cycle",
-                        (
-                            "Forty new leads, ten signed packets, two scrubs; "
-                            "A, B, and C recognition totals $53,750"
-                        ),
-                        (
-                            "Operator receipts equal $56,250; cumulative earned fees "
-                            "less receipts leave $10,000 closing receivables"
-                        ),
-                        (
-                            "Expenses $23,987.50; profit $29,762.50; monthly flow "
-                            "$32,262.50; cumulative flow $44,287.50; closing cash $68,287.50"
-                        ),
-                    ],
-                    [
-                        "Quarter control and annual Base run-rate reconciliation preserve period distinctions",
-                        (
-                            "120 leads, 30 signed, six scrubbed, 24 retained; "
-                            "$126,250 quarter fees times four equals $505,000 annually"
-                        ),
-                        (
-                            "$116,250 quarter receipts plus $10,000 closing "
-                            "receivables equals $126,250 earned operator revenue"
-                        ),
-                        (
-                            "$71,962.50 quarter expenses and $54,287.50 profit "
-                            "annualize to $287,850 expenses and $217,150 profit"
-                        ),
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": (
-        "A recovery is real when the evidence proves the customer benefit, "
-        "the contract earns the fee, and the bank closes the loop."
-    ),
-    "diagram_id": "diag-01",
-    "action_checklist": [
-        (
-            "Secure account-specific Letters of Authorization and immutable "
-            "baseline snapshots before disclosing proposed recoveries."
-        ),
-        (
-            "Map each work packet to one of the twelve operating lanes, "
-            "document its fee trigger, and close ineligible packets explicitly."
-        ),
-        (
-            "Extract the six reference modules, initialize a disposable SQLite "
-            "database, and test replay, duplicate, concurrency, and overpayment cases."
-        ),
-        (
-            "Require provider acknowledgements, verified customer settlement "
-            "evidence, and completed performance before recognizing refund fees."
-        ),
-        (
-            "Route WOTC timing, Section 179D allocations, practitioner fee "
-            "restrictions, and property-tax credentials to qualified reviewers."
-        ),
-        (
-            "Reconcile $126,250 quarter earnings to $116,250 receipts and "
-            "$10,000 receivables, then match expenses and bank cash independently."
-        ),
-    ],
-    "statutory_citations": [
-        {
-            "title": (
-                "31 CFR Section 10.27 — Treasury Circular 230 fee provisions"
-            ),
-            "url": (
-                "https://www.ecfr.gov/current/title-31/subtitle-A/part-10/"
-                "subpart-B/section-10.27"
-            ),
-            "relevance": (
-                "Evaluate contingent compensation against the actual practitioner "
-                "service, proceeding, regulatory exceptions, and applicable judicial "
-                "limits before agreeing to tax-related fee terms."
-            ),
-        },
-        {
-            "title": (
-                "26 U.S.C. Section 179D — Energy efficient commercial buildings deduction"
-            ),
-            "url": "https://www.law.cornell.edu/uscode/text/26/179D",
-            "relevance": (
-                "Establish eligible building and owner facts, designer allocation "
-                "authority, certification requirements, applicable benefit rules, "
-                "and the construction-beginning termination provision."
-            ),
-        },
-        {
-            "title": (
-                "26 U.S.C. Section 51 — Work opportunity credit"
-            ),
-            "url": "https://www.law.cornell.edu/uscode/text/26/51",
-            "relevance": (
-                "Apply Section 51(d)(13) certification and prescreening requirements, "
-                "including the 28-day submission rule, and verify the eligible-hire "
-                "window under Section 51(c)(4)."
-            ),
-        },
-        {
-            "title": (
-                "26 U.S.C. Section 7216 — Disclosure or use of information by "
-                "preparers of returns"
-            ),
-            "url": "https://www.law.cornell.edu/uscode/text/26/7216",
-            "relevance": (
-                "Identify restrictions and applicable exceptions before a covered "
-                "preparer discloses or uses tax-return information in contractor "
-                "handoffs or processing integrations."
-            ),
-        },
-        {
-            "title": (
-                "26 CFR Section 301.7216-2 — Permissible disclosures or uses "
-                "without taxpayer consent"
-            ),
-            "url": (
-                "https://www.ecfr.gov/current/title-26/chapter-I/subchapter-F/"
-                "part-301/section-301.7216-2"
-            ),
-            "relevance": (
-                "Evaluate the precise regulatory exception and its conditions "
-                "rather than assuming every operational disclosure is permitted."
-            ),
-        },
-        {
-            "title": (
-                "Texas Occupations Code Chapter 1152 — Property Tax Consultants"
-            ),
-            "url": "https://statutes.capitol.texas.gov/Docs/OC/htm/OC.1152.htm",
-            "relevance": (
-                "Check registration requirements, scope, and exemptions before "
-                "undertaking covered Texas property-tax consulting services."
-            ),
-        },
-    ],
-}
+CHAPTER_7 = {'id': 'Q7',
+ 'chapter_id': 'Q7',
+ 'chapter_number': 7,
+ 'question_number': 7,
+ 'slug': 'cost-segregation-fundamentals-and-payoff-analysis',
+ 'question_prompt': 'What is a cost segregation study, when does it pay off, and when is it a bad idea?',
+ 'kicker': 'Q7 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Cost Segregation Fundamentals and Payoff Analysis',
+ 'subtitle': 'Reclassifying building components into shorter lives, $350K and $750K benefit estimates, '
+             'short-term rental and real-estate-professional use cases, a real study walkthrough, referral '
+             'processes, and cases where cost seg backfires',
+ 'layout_template': 'thirty_day_roadmap',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'CPAs, tax attorneys and engineering-led study shops agree cost segregation is a '
+                      "timing weapon: carve 25-40% of a building's basis into 5-, 7- and 15-year buckets "
+                      'and, with 100% bonus restored, write it off in year one. Engineered Tax Services '
+                      'turns a $2.5M depreciable basis from $64K of straight-line into $794K in year one; '
+                      'CostSegRx shows $25,921 saved on a $750K commercial buy at 24%. Studies run $500 '
+                      'DIY to $15K, averaging $3-6K, with the free benefit analysis back in 1-2 days and '
+                      "final reports inside about six weeks. Land value is, per CSA Partners' Chris "
+                      'Streit, the easiest thing for the IRS to deny. The fault lines: whether the loss is '
+                      'usable outside REPS or the short-term-rental loophole, what rate recapture hits at, '
+                      'whether 2026 bonus sits at 100% or 20%, and whether small deals beat the fee.',
+ 'key_metrics': [{'label': 'Typical Reclassification Range on Good Candidates',
+                  'metric': 'Typical Reclassification Range on Good Candidates',
+                  'value': '25-40% of basis',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Chris Streit of CSA Partners on the share of a good candidate property that '
+                             'moves into accelerated classes; mobile home parks run a little over 80% and '
+                             'warehouses 12-15%.',
+                  'source': 'Toby Mathis Esq | Tax Planning & Asset Protection ([beMOZDrXOJ8 @ 00:15:54])'},
+                 {'label': 'Year-One Write-Off With Bonus on a $2.5M Basis',
+                  'metric': 'Year-One Write-Off With Bonus on a $2.5M Basis',
+                  'value': '$794K year one vs $64K straight-line',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'A $3M building with $2.5M left after land; $172K accelerated without bonus, '
+                             'and a December close still books about $770K because bonus is not prorated.',
+                  'source': 'Engineered Tax Services ([qEFJIGNNOkw @ 00:12:13])'},
+                 {'label': 'Cost of a Study',
+                  'metric': 'Cost of a Study',
+                  'value': '$500 DIY up to $15K; average $3-6K',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Mark Perlberg's range for study pricing, against historical pricing of "
+                             '$20-25K and $100K-plus on large projects reported by Engineered Tax '
+                             'Services.',
+                  'source': 'Mark Perlberg, CPA ([3bjz5YCldWA @ 00:21:12])'},
+                 {'label': 'Audit Frequency on Cost Segregation Studies',
+                  'metric': 'Audit Frequency on Cost Segregation Studies',
+                  'value': 'About 4-5 audits per ~5,000 studies a year (1 in 1,000)',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Chris Streit's firm volume versus audits it defends each year; land value, "
+                             'missing site visits and missing cost methodology are the red flags.',
+                  'source': 'Toby Mathis Esq | Tax Planning & Asset Protection ([beMOZDrXOJ8 @ '
+                            '00:18:44])'}],
+ 'sections': [{'section_number': 1,
+               'heading': 'The Practitioner Consensus',
+               'paragraphs': ['Every operator here runs the same engine: a study pulls components out of '
+                              'the long-life building bucket and drops them into short-life buckets that '
+                              'can be written off fast. Toby Mathis sets the baseline, with residential '
+                              'treated as 1250 property over 27.5 years and commercial stretched over 39 '
+                              'years [3G2c1STMThk @ 00:00:25]. Karlton Dennis shows the drag in raw '
+                              'numbers: $1M of residential building throws off only $36,363.63 a year, and '
+                              'the same $1M on a 39-year schedule yields $25,641; his field test for '
+                              "splitting structural from non-structural components is to 'flip a house "
+                              "upside down' [NOA2tGOp9G8 @ 00:06:08]. Mark Perlberg puts fridges, TVs, "
+                              'linens and cabinetry in the 5-year bucket, driveways and pools in 15-year, '
+                              'and stresses that bonus depreciation only reaches assets with lives under '
+                              '20 years [3bjz5YCldWA @ 00:06:07]. Brendan Hall of Hall CPA confirms the '
+                              'allocation runs across 5-, 7-, 15- and 27.5-year classes and that 100% '
+                              'bonus lands on the short-life pieces when the study is done in the first '
+                              'year of ownership, generally 20-30% of the purchase price [6eVkkFsis9g @ '
+                              '00:02:01]. Nothing new is deducted; the same basis is simply pulled forward '
+                              'out of the back decades and into the early years when cash matters most.',
+                              'The reclassification band is remarkably tight across shops that compete '
+                              'hard for the same investor clients. Engineered Tax Services reports about '
+                              '30% of basis, with a 25-40% range, on multifamily, commercial and '
+                              'hospitality deals pushed through its pipeline of 75,000-plus studies '
+                              '[qEFJIGNNOkw @ 00:18:41]. Chris Streit, CEO of the cost-seg-only shop CSA '
+                              "Partners, quotes the identical 25-40% for good candidates on Toby Mathis's "
+                              'channel and walks a $500K duplex down to a $400K basis, roughly 30% '
+                              'accelerated, a $120K deduction worth about $50K in tax at a 37% bracket '
+                              '[beMOZDrXOJ8 @ 00:15:54]. Karlton Dennis lands in the same 25-40% '
+                              'non-structural window and runs it to the end: with 100% bonus, a $1M '
+                              'purchase produces roughly a negative $400K loss on paper [NOA2tGOp9G8 @ '
+                              '00:07:39]. Mark Perlberg, after seeing hundreds of studies, compresses it '
+                              'to a ballpark operators can do in their heads: 25% of purchase price for a '
+                              'long-term rental and 30% for a short-term rental, with year-one write-offs '
+                              'that can reach 50% [3bjz5YCldWA @ 00:17:47]. That convergence is the core '
+                              'screening tool. Before paying anyone, multiply the depreciable basis by '
+                              '25-30%, apply your marginal bracket, and see whether the resulting cash '
+                              "number moves the needle at all on this year's return.",
+                              'The prerequisite every serious practitioner hammers is not the property; it '
+                              "is the owner's tax status. Streit's two-part test on Toby Mathis's channel "
+                              'is simple: you need an income-producing property, and then your status '
+                              'decides the reach, because a real estate professional can offset all income '
+                              'while everyone else offsets only rental or passive income [beMOZDrXOJ8 @ '
+                              '00:10:13]. Mark Perlberg spells out the REP bar as 750 hours, 50% of '
+                              'working time, 5% ownership, plus material participation at the 100- or '
+                              '500-hour marks, and names the short-term-rental loophole, an average stay '
+                              'of 7 days or less, as the side door [3bjz5YCldWA @ 00:09:37]. Brendan Hall '
+                              'gives the non-REP math: a $25K passive allowance below $100K of MAGI, '
+                              'phased out above $150K, with suspended losses carried forward, while REPs '
+                              'who materially participate are unlimited [6eVkkFsis9g @ 00:02:33]. The LYFE '
+                              'Accounting CPA, who runs studies through a virtual cost-seg vendor, shows '
+                              "what happens when that gate is skipped: one client is sitting on 'hundreds "
+                              "of thousands' in passive losses that cannot be used [w16nUKkydYc @ "
+                              '00:07:57]. Consensus verdict: confirm exactly where the loss will land, '
+                              'against W-2, business or passive income, before ordering the study, or the '
+                              'deduction just parks on the return as a carryforward.'],
+               'table': {'caption': 'Where the practitioners line up on cost segregation fundamentals',
+                         'headers': ['Consensus Point',
+                                     'What the Practitioner Reported',
+                                     'Operator Takeaway',
+                                     'Expert Source'],
+                         'rows': [['Reclassification band for standard income property deals',
+                                   'About 30% of basis, 25-40% range, on multifamily, commercial and '
+                                   'hospitality',
+                                   'Screen every deal at 25-30% of basis before ordering anything',
+                                   'Engineered Tax Services ([qEFJIGNNOkw @ 00:18:41])'],
+                                  ['Quick rule of thumb by rental type',
+                                   'Ballpark 25% of purchase price for long-term rentals and 30% for '
+                                   'short-term',
+                                   'Use the rental type to set a fast first-year write-off estimate',
+                                   'Mark Perlberg, CPA ([3bjz5YCldWA @ 00:17:47])'],
+                                  ['Bonus reach is limited to short-life assets',
+                                   '100% bonus covers lives under 20 years when the study is done in year '
+                                   'one',
+                                   'Order the study in the first year of ownership to capture full bonus',
+                                   'Hall CPA | Tax Smart Real Estate Investors ([6eVkkFsis9g @ 00:02:01])'],
+                                  ['Owner tax status decides whether the loss is usable',
+                                   'A REP offsets all income; everyone else offsets only rental or passive '
+                                   'income',
+                                   'Confirm REP or passive position before paying any study fee at all',
+                                   'Toby Mathis Esq | Tax Planning & Asset Protection ([beMOZDrXOJ8 @ '
+                                   '00:10:13])'],
+                                  ['Short-term rental route as the alternative pathway',
+                                   'STR requires 100 hours and an average guest stay of 7 days or less',
+                                   'Dennis buys in October, runs it short-term, then converts to long-term '
+                                   'in January',
+                                   'Karlton Dennis ([NOA2tGOp9G8 @ 00:10:17])'],
+                                  ['Passive allowance ceiling for non-REP owners',
+                                   '$25K allowance below $100K MAGI, phased out above $150K, suspended '
+                                   'losses carry forward',
+                                   'High earners without REP status should expect the loss to sit '
+                                   'suspended',
+                                   'Hall CPA | Tax Smart Real Estate Investors ([6eVkkFsis9g @ 00:02:33])'],
+                                  ['Large deals are the default use case',
+                                   'Morris says cost seg is almost always prescribed on large deals, with '
+                                   'REP NOLs carrying forward',
+                                   'Bigger basis clears the study fee with plenty of room to spare',
+                                   'Advise RE ([8ZzVeQLb80E @ 00:05:40])']]}},
+              {'section_number': 2,
+               'heading': 'Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['The worked numbers line up across shops. Engineered Tax Services runs a $3M '
+                              'building with $2.5M left after land: $64K a year straight-line, $172K '
+                              'accelerated without bonus, and $794K in year one with bonus, and because '
+                              'bonus is not prorated, a December close still books about $770K against '
+                              "roughly $6K of straight-line [qEFJIGNNOkw @ 00:13:12]. CostSegRx's $750K "
+                              'commercial file backs land out at 20%, or $150,000, straight from county '
+                              'tax records, adds $75,000 of improvements for a $675,000 basis, and lands '
+                              '$101,250 accelerated, $108,003 of first-year depreciation and $25,921 of '
+                              'savings at a 24% rate [IFbN2m1Gw3Y @ 00:01:44]. Its $350K Sarasota rental '
+                              'placed in service 7/15/2026 uses 25% land for a $262,500 basis, then '
+                              '$46,200 accelerated, $49,806 first-year and $11,953 saved at 24% '
+                              '[Ha5KYCa_Yjk @ 00:01:20]. Karlton Dennis opens his own 2023 duplex study at '
+                              '80% bonus: $404,990 cost, $29,295 land, $375,695 basis, split into $83K of '
+                              '5-year, $24K of 15-year and $266K of 27.5-year, which put $93,505 of '
+                              'year-one depreciation on his return [NOA2tGOp9G8 @ 00:13:45]. Each file '
+                              'shows the same shape: a fat first year, then thinner trailing depreciation, '
+                              'which CostSegRx quantifies at $14,711 with the study versus $17,307 without '
+                              'on the commercial deal and $7,865 versus $9,545 on the rental.',
+                              'Execution is a short, mostly manual pipeline. Engineered Tax Services times '
+                              "it: a benefit analysis that takes 1-2 days and is 'not automated,' a site "
+                              'visit within 2-3 weeks, and a final report in no more than about 6 weeks '
+                              '[qEFJIGNNOkw @ 00:21:39]. In its real-estate-pro webinar the same firm '
+                              'quotes the benefit analysis at about 24 hours and no cost, prices an '
+                              "in-person visit at 'a couple hundred bucks,' and calls a virtual visit 'not "
+                              "ideal' if the study ever lands in audit; its calculator defaults to 20% "
+                              'land, 23% to 5-year and 5% to 15-year, turning a $5M property into $1.1M of '
+                              'bonus and then about $104K a year [sXpa52KOvog @ 00:29:02]. Pricing is down '
+                              'hard from the era when studies ran $20-25K and large projects $100K-plus. '
+                              "Mark Perlberg puts today's range at $500 DIY up to $15K, averaging $3-6K "
+                              '[3bjz5YCldWA @ 00:21:12]. Peter Harris budgets $4-5K for a 10-unit and '
+                              'about $20K for a 100-unit, and his own math shows why scale wins: the fee '
+                              'roughly quadruples while the reclassified basis jumps from $300K to $2.1M, '
+                              'about sevenfold, which on his 100-unit deal split across 10 investors hands '
+                              'each $210K of write-off in year one [lJFBf789ODI @ 00:12:14].',
+                              'The defense file is built before the IRS ever asks. Chris Streit puts land '
+                              "value at the top of the red-flag list because 'it is the easiest thing for "
+                              "the IRS to deny'; examiners pull the county appraisal district number, and "
+                              "flat 80/20, 15% or 10% land splits have been 'lost in less than three "
+                              "minutes' [beMOZDrXOJ8 @ 00:21:41]. His next two flags are no site visit and "
+                              "no cost methodology such as RSMeans, and he warns that 'there are firms "
+                              "right now who can give you a report in 30 minutes with no site visit'; his "
+                              'own shop handles 70% of visits remotely but live [beMOZDrXOJ8 @ 00:23:34]. '
+                              'Engineered Tax Services pushes land value back to the CPA, notes a '
+                              'California property can be 80% land, and says the IRS audits land value '
+                              'more often [qEFJIGNNOkw @ 00:52:48]. Stefan Morris of Advise RE starts '
+                              'every analysis with the land-building allocation and treats it as a '
+                              'facts-and-circumstances call [8ZzVeQLb80E @ 00:00:26]. Audit odds are low '
+                              "but not zero: Streit's firm runs about 5,000 studies a year and sees "
+                              'roughly 4-5 audits, about 1 in 1,000, and Engineered Tax Services says 99% '
+                              'of IDRs close once the study is sent and covers clients through appeals.'],
+               'table': {'caption': 'Deal-level numbers practitioners ran on camera',
+                         'headers': ['Deal / Scenario',
+                                     'Inputs Stated',
+                                     'Reported Output',
+                                     'Expert Source'],
+                         'rows': [['$3M commercial building walked through the webinar',
+                                   '$3M price with $2.5M depreciable after backing out land',
+                                   '$64K straight-line, $172K accelerated without bonus, $794K year one '
+                                   'with bonus',
+                                   'Engineered Tax Services ([qEFJIGNNOkw @ 00:12:13])'],
+                                  ['$750K commercial property for tax year 2026',
+                                   '20% land per county tax records, $75K improvements, $675K total basis',
+                                   '$101,250 accelerated, $108,003 first-year, $25,921 saved at a 24% rate',
+                                   'CostSegRx ([IFbN2m1Gw3Y @ 00:01:44])'],
+                                  ['$350K Sarasota residential rental on Freewater Lane',
+                                   '25% land, $262,500 basis, in service 7/15/2026, 100% bonus',
+                                   '$46,200 accelerated, $49,806 first-year, $11,953 saved at 24% '
+                                   'effective',
+                                   'CostSegRx ([Ha5KYCa_Yjk @ 00:00:37])'],
+                                  ["Karlton Dennis's own 2023 duplex study at 80% bonus",
+                                   '$404,990 cost, $29,295 land, $375,695 depreciable basis',
+                                   '$83K 5-year, $24K 15-year, $93,505 of year-one depreciation received',
+                                   'Karlton Dennis ([NOA2tGOp9G8 @ 00:13:45])'],
+                                  ['Self-storage outlier deal with leverage',
+                                   '$1.35M price, 25% down ($337K), 8% interest, 10% cap rate',
+                                   '$1.08M year-one depreciation produced a $421K refund on $32K yearly '
+                                   'cash flow',
+                                   'Engineered Tax Services ([qEFJIGNNOkw @ 00:16:40])'],
+                                  ['10-unit apartment building example from Peter Harris',
+                                   '$1M price, 20% land, about 30% land improvements plus personal '
+                                   'property',
+                                   'About $29K/yr straight-line versus $300K pulled into year one with '
+                                   'bonus',
+                                   'Commercial Property Advisors ([lJFBf789ODI @ 00:05:57])'],
+                                  ['Yield by asset class from a cost-seg-only firm',
+                                   'Mobile home parks, warehouses, log cabins and high-rise condos '
+                                   'compared',
+                                   'Mobile home park a little over 80%, warehouses 12-15%, cabins and '
+                                   'condos weak',
+                                   'Toby Mathis Esq | Tax Planning & Asset Protection ([beMOZDrXOJ8 @ '
+                                   '00:17:33])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'What the Study Shops Do That Retail Investors Miss',
+                           'body': 'Four moves the study firms and their CPAs use to squeeze more out of '
+                                   'the same building and the same calendar.',
+                           'items': ['Run the free benefit analysis before spending a dollar: Engineered '
+                                     'Tax Services turns it around in about 24 hours at no cost '
+                                     '[Engineered Tax Services — sXpa52KOvog @ 00:25:23].',
+                                     'Close in December without fear: bonus is not prorated, so a '
+                                     'late-year buy still books about $770K on a $2.5M basis versus about '
+                                     '$6K straight-line [Engineered Tax Services — qEFJIGNNOkw @ '
+                                     '00:13:12].',
+                                     'Missed the filing window? Streit applies the study to the open year '
+                                     'through the September/October extension with no amendment and calls '
+                                     "it 'not a red flag' [Toby Mathis Esq | Tax Planning & Asset "
+                                     'Protection — beMOZDrXOJ8 @ 00:12:33].',
+                                     'Work the insurance angle: Engineered Tax Services reports 20-23% '
+                                     'premium savings per property, citing seven car washes and gas '
+                                     'stations in one week [Engineered Tax Services — sXpa52KOvog @ '
+                                     '00:22:19].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Pin the land number to the county record',
+                              'action': 'Back land out using the county tax record or appraisal district '
+                                        'figure, never a flat percentage split.',
+                              'detail': "CostSegRx backs land out at 20% 'per the county tax records' on "
+                                        'its $750K file [CostSegRx — IFbN2m1Gw3Y @ 00:00:00], and Streit '
+                                        'says the IRS uses the county appraisal district while flat 80/20, '
+                                        "15% or 10% splits were 'lost in less than three minutes' [Toby "
+                                        'Mathis Esq | Tax Planning & Asset Protection — beMOZDrXOJ8 @ '
+                                        '00:21:41].'},
+                             {'step': 2,
+                              'title': 'Run the calculator and the benefit analysis',
+                              'action': 'Get a free estimate and a human-built benefit analysis before '
+                                        'committing to the full study fee.',
+                              'detail': "Streit's free calculator runs in a few seconds, but the land "
+                                        'value behind it takes 4-6 hours [Toby Mathis Esq | Tax Planning & '
+                                        'Asset Protection — beMOZDrXOJ8 @ 00:28:06]; Engineered Tax '
+                                        "Services says its benefit analysis takes 1-2 days and is 'not "
+                                        "automated' [Engineered Tax Services — qEFJIGNNOkw @ 00:20:51]."},
+                             {'step': 3,
+                              'title': 'Book the engineer site visit with a cost methodology',
+                              'action': 'Insist on an engineer site visit and a named cost methodology '
+                                        'such as RSMeans in the report.',
+                              'detail': 'AirDNA lays the process out as document review, engineer site '
+                                        'visit, then depreciation schedules [AirDNA — nj5gSNmRQuU @ '
+                                        '00:01:12]; Streit lists no site visit and no cost methodology '
+                                        'such as RSMeans as audit red flags [Toby Mathis Esq | Tax '
+                                        'Planning & Asset Protection — beMOZDrXOJ8 @ 00:23:34].'},
+                             {'step': 4,
+                              'title': 'Load the revised fixed asset schedule and model trailing years',
+                              'action': 'Hand the CPA the revised schedule and check year-one against the '
+                                        'lower trailing depreciation that follows.',
+                              'detail': "CostSegRx's revised schedule breaks out building, distributive "
+                                        'trades and services, land improvements and land, then pulls '
+                                        'forward bonus [CostSegRx — IFbN2m1Gw3Y @ 00:00:42], and shows '
+                                        'trailing depreciation of $14,711 with the study versus $17,307 '
+                                        'without [CostSegRx — IFbN2m1Gw3Y @ 00:02:07].'}]},
+              {'heading': 'Section 3: Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['Recapture is the fault line that splits the bench. Karlton Dennis waves it '
+                              'off, saying they "aren\'t worried" because an IRC 1031 exchange rolls the '
+                              'gain forward [NOA2tGOp9G8 @ 00:16:02]. Peter Harris of Commercial Property '
+                              'Advisors lands in a similar camp, pricing recapture at 25 to 30 percent but '
+                              'framing the whole maneuver as a "zero interest loan" that funds '
+                              'wealth-building while the property inflates [lJFBf789ODI @ 00:13:26]. '
+                              'Stefan Morris at Advise RE is blunter about what the study actually is: '
+                              'deferral, not permanent savings, with the benefit coming back at the 25 '
+                              'percent Section 1250 rate, so flipping fails while buy, hold and 1031 works '
+                              '[8ZzVeQLb80E @ 00:04:57]. Clint Coons puts hard numbers on an early exit: '
+                              '$100,000 recaptured at 32 percent is $32,000, plus $50,000 of straight-line '
+                              'at 25 percent is another $12,500, for $42,500 handed back, and he warns '
+                              'that Section 1245 property complicates the 1031 escape hatch Dennis leans '
+                              'on [fV7tusLGp3E @ 00:09:03]. Even the stated rate splits them: Morris says '
+                              '25 percent, Coons splits ordinary and 25 percent, and Harris quotes a 25 to '
+                              '30 percent band. Operators should model the exit price and hold period '
+                              'before ordering the study, not after the refund lands.',
+                              'The second split is the bonus rate itself, and operators pricing a 2026 '
+                              'deal get contradictory instructions. CostSegRx runs its $350,000 Sarasota '
+                              'rental at "100% for tax year 2026," producing $46,200 of accelerated '
+                              'depreciation and $49,806 in year one [Ha5KYCa_Yjk @ 00:00:37]. Clint Coons '
+                              'says 100 percent bonus is now permanent for property placed in service '
+                              'after January 19, 2025, with 2018 to 2025 property riding a declining '
+                              'schedule [fV7tusLGp3E @ 00:02:06]. BizCpas, by contrast, lays out a '
+                              'schedule of 100 percent in 2022, stepping down 20 points a year to just 20 '
+                              'percent in 2026, and builds its $700,000 home example on that phase-down '
+                              '[mKOnV6RitlA @ 00:06:04]. Engineered Tax Services threads the needle with a '
+                              'date test: property purchased, or construction started, before January 2025 '
+                              'still falls under the phase-down rules, and their presenter adds that not '
+                              'everything qualifies for 100 percent bonus [qEFJIGNNOkw @ 00:22:13]. The '
+                              'playbook difference is real money. A study modeled at 20 percent bonus '
+                              'front-loads a fraction of what the same study modeled at 100 percent does, '
+                              'so the acquisition date, the placed-in-service date and the construction '
+                              'start date have to be pinned down before anyone quotes a first-year number '
+                              'to a client or a syndication investor.',
+                              'Practitioners also split on how much study an operator actually needs to '
+                              'buy. Brendan Hall of Hall CPA teaches a DIY "mini" study, pricing movable '
+                              'items by make and model on eBay, while conceding the "results won\'t be '
+                              'near as good" as an engineered report [6eVkkFsis9g @ 00:03:20]. Toby Mathis '
+                              'tells viewers to "calculate, calculate, and calculate," notes that software '
+                              'studies run about $1,000 but carry uncertain audit durability, and relays '
+                              'Jeff Webb\'s dissent that a study is "a waste of time and money" if you '
+                              'plan to sell, yet valuable if you hold [3G2c1STMThk @ 00:02:02]. On the '
+                              'site visit, Chris Streit of CSA Partners lists a missing visit as a red '
+                              "flag but says 70 percent of his firm's visits are now remote or live "
+                              '[beMOZDrXOJ8 @ 00:22:34]. Engineered Tax Services pushes the other way, '
+                              'saying an in-person visit is worth "a couple hundred bucks" and a virtual '
+                              'one is "not ideal" once an examiner shows up, after a free benefit analysis '
+                              'turned around in about 24 hours [sXpa52KOvog @ 00:25:23]. The practical '
+                              'read: cheap or virtual work trims the fee but shifts risk to the audit '
+                              'file, and the hold-versus-sell question decides whether any version is '
+                              'worth commissioning.'],
+               'table': {'caption': 'Contested Cost Segregation Calls: Side-by-Side Practitioner Playbooks',
+                         'headers': ['Contested Question', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['How worried should an owner be about depreciation recapture at sale',
+                                   'Dennis says they "aren\'t worried" because an IRC 1031 exchange rolls '
+                                   'the gain forward',
+                                   'Morris calls the study pure deferral; flipping fails while buy, hold '
+                                   'and 1031 works',
+                                   'Karlton Dennis ([NOA2tGOp9G8 @ 00:16:02]); Advise RE ([8ZzVeQLb80E @ '
+                                   '00:04:57])'],
+                                  ['What bonus depreciation rate applies to property placed in service '
+                                   'during 2026',
+                                   'CostSegRx models its $350,000 Sarasota rental at 100 percent bonus for '
+                                   'tax year 2026',
+                                   'BizCpas states a schedule stepping down 20 points per year to 20 '
+                                   'percent in 2026',
+                                   'CostSegRx ([Ha5KYCa_Yjk @ 00:00:37]); BizCpas Accountants & Advisors '
+                                   '([mKOnV6RitlA @ 00:06:04])'],
+                                  ['What rate recaptured depreciation is actually taxed at on exit',
+                                   "Perlberg says recapture is taxed at the owner's marginal rate on the "
+                                   'sale',
+                                   'Harris quotes 25 to 30 percent and treats it as a "zero interest loan"',
+                                   'Mark Perlberg, CPA ([3bjz5YCldWA @ 00:22:05]); Commercial Property '
+                                   'Advisors ([lJFBf789ODI @ 00:13:26])'],
+                                  ['Whether the engineer site visit must be physically in person',
+                                   'CSA Partners runs about 70 percent of its site visits remote or live',
+                                   'Engineered Tax Services says in person is worth "a couple hundred '
+                                   'bucks" and virtual is "not ideal"',
+                                   'Toby Mathis Esq | Tax Planning & Asset Protection ([beMOZDrXOJ8 @ '
+                                   '00:22:34]); Engineered Tax Services ([sXpa52KOvog @ 00:25:23])'],
+                                  ['How much study depth and fee an operator should pay for',
+                                   'Hall teaches a DIY mini study pricing movable items by make and model '
+                                   'on eBay',
+                                   'Perlberg prices studies from $500 DIY up to $15,000, averaging $3,000 '
+                                   'to $6,000',
+                                   'Hall CPA | Tax Smart Real Estate Investors ([6eVkkFsis9g @ 00:03:20]); '
+                                   'Mark Perlberg, CPA ([3bjz5YCldWA @ 00:21:12])'],
+                                  ['Whether a planned sale kills the case for ordering a study',
+                                   'Jeff Webb calls a study "a waste of time and money" if you plan to '
+                                   'sell',
+                                   'Morris says large deals "almost always" get a study, with REP losses '
+                                   'carrying forward',
+                                   'Toby Mathis Esq | Tax Planning & Asset Protection ([3G2c1STMThk @ '
+                                   '00:02:36]); Advise RE ([8ZzVeQLb80E @ 00:05:40])'],
+                                  ['Who should actually prepare the cost segregation study for the owner',
+                                   'Dennis says a CPA, EA or CTEC plus a licensed engineer is "required by '
+                                   'law"',
+                                   'Harris says use a specialist firm, not your regular accountant, to '
+                                   'avoid aggressive penalties',
+                                   'Karlton Dennis ([NOA2tGOp9G8 @ 00:01:58]); Commercial Property '
+                                   'Advisors ([lJFBf789ODI @ 00:14:01])']]}},
+              {'heading': 'Section 4: Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The most common way a study backfires is a loss with nowhere to land. Clint '
+                              'Coons walks through Marcus: $300,000 of W-2 income, a $100,000 study-driven '
+                              'loss against $45,000 of rent, leaving a $55,000 loss suspended under '
+                              'Section 469. His verdict is flat: "He saved nothing" [fV7tusLGp3E @ '
+                              '00:04:59]. LYFE Accounting reports the same trap at scale, describing a '
+                              'client now sitting on "hundreds of thousands" of passive losses that sit '
+                              'unusable, because passive losses only offset passive income unless the '
+                              'owner qualifies as a real estate professional [w16nUKkydYc @ 00:07:57]. '
+                              'Brendan Hall spells out the ceiling for non-professionals: a $25,000 '
+                              'passive allowance below $100,000 of MAGI, phased out above $150,000, with '
+                              'suspended losses carrying forward, while real estate professionals who '
+                              'materially participate are unlimited [6eVkkFsis9g @ 00:02:33]. Chris Streit '
+                              'builds his whole intake on this, running a two-part test of whether the '
+                              'buyer owns income-producing property and whether their tax status lets the '
+                              'loss offset all income or only rental and passive income [beMOZDrXOJ8 @ '
+                              '00:10:13]. The economics check is simple: before paying a fee, map exactly '
+                              'which income the year-one loss will hit, whether through 750-hour '
+                              'professional status, the short-term-rental route, or other passive income '
+                              'already on the return.',
+                              'The second failure mode is buying a study that cannot beat its own fee. '
+                              'Stefan Morris runs a Santa Monica purchase at $1 million with $800,000 of '
+                              'land: 25 percent of the $200,000 building yields $50,000 of bonus, roughly '
+                              '$13,000 to $14,000 of tax impact against a $5,000 to $6,000 study, which he '
+                              'calls "not that interesting" [8ZzVeQLb80E @ 00:02:41]. Engineered Tax '
+                              'Services flags the same geography problem, noting a California property can '
+                              'run 80 percent land, and they push the land number back to the CPA '
+                              '[qEFJIGNNOkw @ 00:23:12]. Clint Coons describes Ryan, buying at $180,000 '
+                              'with $90,000 of land, who is "barely going to beat the fee" [fV7tusLGp3E @ '
+                              '00:10:56]. Bracket is the other half of the math: Coons prices a $10,000 '
+                              'deduction at $3,700 for a 37 percent filer but only $1,200 at 12 percent, '
+                              'and tells Lisa, who has a business sale coming, to time the study to the '
+                              'income arc rather than burn it in a low year [fV7tusLGp3E @ 00:05:56]. '
+                              "Morris's counterexample in the High Desert, a $200,000 to $300,000 "
+                              'deduction, clears a $5,000 fee easily, which is why the land-to-building '
+                              'allocation is the first line of every analysis.',
+                              'Audit exposure clusters in a few predictable spots. Chris Streit says land '
+                              'value "is the easiest thing for the IRS to deny," because the examiner '
+                              'reaches for the county appraisal district, and flat 80/20, 15 percent or 10 '
+                              'percent land splits have "lost in less than three minutes" [beMOZDrXOJ8 @ '
+                              '00:21:41]. His other red flags are no site visit and no cost methodology '
+                              'such as RSMeans, and he warns that some firms now deliver a report in 30 '
+                              'minutes without a visit; Toby Mathis adds that cheap reports tend to '
+                              '"sandbag" the percentages [beMOZDrXOJ8 @ 00:24:52]. Streit\'s firm runs '
+                              'about 5,000 studies a year and sees roughly four or five audits, about one '
+                              'in 1,000. Engineered Tax Services claims 99 percent of IDRs close once the '
+                              'study is sent, with support through appeals and hourly billing if it goes '
+                              'to tax court [qEFJIGNNOkw @ 00:51:34]. The deepest trap is strategic rather '
+                              'than technical. Clint Coons says he never does a deal only on the tax side, '
+                              'and closes with a three-question filter: can you use the loss this year, '
+                              'how long will you hold, and does the deal work without the tax benefit, '
+                              '"otherwise you got a bad deal wrapped up in a costume" [fV7tusLGp3E @ '
+                              '00:14:49].'],
+               'table': {'caption': 'Firsthand Cost Segregation Failure Modes and the Numbers Behind Them',
+                         'headers': ['Failure Mode',
+                                     'What Happened / Numbers',
+                                     'Economics Check',
+                                     'Expert Source'],
+                         'rows': [['Study loss has no income to offset this year',
+                                   'Marcus: $300,000 W-2, $100,000 loss, $45,000 rent, $55,000 suspended; '
+                                   '"He saved nothing"',
+                                   'Confirm REP status, short-term-rental route, or existing passive '
+                                   'income before ordering',
+                                   'Clint Coons Esq. | Real Estate Asset Protection ([fV7tusLGp3E @ '
+                                   '00:04:59])'],
+                                  ['Passive losses pile up and sit unusable for years',
+                                   'One client holds "hundreds of thousands" in passive losses that cannot '
+                                   'offset other income',
+                                   'Passive losses only offset passive income unless the owner qualifies '
+                                   'as a REPS',
+                                   'LYFE Accounting ([w16nUKkydYc @ 00:07:57])'],
+                                  ['Study fee eats most of the tax benefit',
+                                   'Santa Monica: $800,000 land on $1 million, $13,000 to $14,000 impact '
+                                   'versus $5,000 to $6,000 fee',
+                                   'Run the land and building allocation first; land-heavy deals are "not '
+                                   'that interesting"',
+                                   'Advise RE ([8ZzVeQLb80E @ 00:02:41]); Clint Coons Esq. | Real Estate '
+                                   'Asset Protection ([fV7tusLGp3E @ 00:10:56])'],
+                                  ['Selling early triggers recapture on accelerated depreciation',
+                                   '$100,000 at 32 percent plus $50,000 at 25 percent equals $42,500 owed '
+                                   'back',
+                                   'Fix the hold period or 1031 plan before the study, since 1245 '
+                                   'complicates exchanges',
+                                   'Clint Coons Esq. | Real Estate Asset Protection ([fV7tusLGp3E @ '
+                                   '00:09:03])'],
+                                  ['Flat land percentage gets denied under IRS examination',
+                                   'Flat 80/20, 15 percent, or 10 percent land splits "lost in less than '
+                                   'three minutes"',
+                                   'Anchor land to the county appraisal district figure the IRS itself '
+                                   'uses',
+                                   'Toby Mathis Esq | Tax Planning & Asset Protection ([beMOZDrXOJ8 @ '
+                                   '00:21:41])'],
+                                  ['Deduction burned in a low tax bracket year',
+                                   'A $10,000 deduction is worth $3,700 at 37 percent versus only $1,200 '
+                                   'at 12 percent',
+                                   'Time the study to the income arc, such as a coming business sale',
+                                   'Clint Coons Esq. | Real Estate Asset Protection ([fV7tusLGp3E @ '
+                                   '00:05:56])'],
+                                  ['Aggressive or misclassified components create penalty and compliance '
+                                   'exposure',
+                                   'AirDNA warns misclassification creates compliance issues; Harris flags '
+                                   'penalties if too aggressive',
+                                   'Use a cost segregation specialist rather than a generalist accountant '
+                                   'for the report',
+                                   'AirDNA ([nj5gSNmRQuU @ 00:04:25]); Commercial Property Advisors '
+                                   '([lJFBf789ODI @ 00:14:01])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Four Kill Switches Before Paying for a Study',
+                           'body': 'Practitioners who watched studies backfire run every deal through the '
+                                   'same four checks: usable income, defensible land value, fee coverage, '
+                                   'and the exit.',
+                           'items': ["Map the year-one loss to income you can actually offset; Marcus's "
+                                     '$55,000 loss was suspended and "He saved nothing" [Clint Coons Esq. '
+                                     '| Real Estate Asset Protection — fV7tusLGp3E @ 00:04:59].',
+                                     'Pull land value from the county appraisal district; flat 80/20, 15 '
+                                     'percent, or 10 percent splits "lost in less than three minutes" '
+                                     '[Toby Mathis Esq | Tax Planning & Asset Protection — beMOZDrXOJ8 @ '
+                                     '00:21:41].',
+                                     'Kill the study if tax impact barely clears the fee, as with $13,000 '
+                                     'to $14,000 of impact against a $5,000 to $6,000 study in Santa '
+                                     'Monica [Advise RE — 8ZzVeQLb80E @ 00:02:41].',
+                                     'Model the exit first: an early sale handed back $42,500 in recapture '
+                                     'on $150,000 of depreciation [Clint Coons Esq. | Real Estate Asset '
+                                     'Protection — fV7tusLGp3E @ 00:09:03].']}}],
+ 'pull_quote': '"I never do a deal only based upon the tax side of it. Otherwise you got a bad deal '
+               'wrapped up in a costume." Clint Coons Esq. | Real Estate Asset Protection (fV7tusLGp3E @ '
+               '00:14:49).',
+ 'diagram_id': 'diag-01',
+ 'action_checklist': ['Start every analysis with the land and building allocation, because it depends on '
+                      'facts and circumstances and drives whether the study pays [Advise RE — 8ZzVeQLb80E '
+                      '@ 00:00:26].',
+                      'Back land out per the county tax records before calculating basis, as on the '
+                      '$750,000 commercial example with 20 percent land [CostSegRx — IFbN2m1Gw3Y @ '
+                      '00:00:00].',
+                      'Confirm tax status first: 750 hours and 50 percent of work time for REP, or a '
+                      'seven-day-or-less average stay for the short-term-rental route [Mark Perlberg, CPA '
+                      '— 3bjz5YCldWA @ 00:09:37].',
+                      'Order the free benefit analysis, then insist on a site visit and documented cost '
+                      'methodology so the report holds under audit [Engineered Tax Services — sXpa52KOvog '
+                      '@ 00:25:23].',
+                      'Apply the study to the open year through the extension in September or October with '
+                      'no amendment, which Streit says is "not a red flag" [Toby Mathis Esq | Tax Planning '
+                      '& Asset Protection — beMOZDrXOJ8 @ 00:12:33].',
+                      'Plan the exit by identifying removed assets, which carry no recapture, and lining '
+                      'up a 1031 or "slow 1031" [Engineered Tax Services — sXpa52KOvog @ 00:16:56].'],
+ 'statutory_citations': [{'title': 'Clint Coons Esq. | Real Estate Asset Protection — Why Cost Segregation '
+                                   'Can Be A BAD Idea [00:04:59]',
+                          'url': 'https://www.youtube.com/watch?v=fV7tusLGp3E&t=299s',
+                          'relevance': 'Primary practitioner testimony on suspended passive losses, '
+                                       'early-sale recapture, fee-versus-benefit and the three-question '
+                                       'filter.'},
+                         {'title': 'Toby Mathis Esq | Tax Planning & Asset Protection — How To Do A Cost '
+                                   'Segregation Study: When It Saves You Money And When It Doesn’t '
+                                   '[00:21:41]',
+                          'url': 'https://www.youtube.com/watch?v=beMOZDrXOJ8&t=1301s',
+                          'relevance': 'Primary practitioner testimony on land value audit losses, site '
+                                       'visit red flags, cost methodology and audit frequency.'},
+                         {'title': 'Advise RE — When a Cost Segregation Study Is Actually Worth It 💡 '
+                                   '[00:02:41]',
+                          'url': 'https://www.youtube.com/watch?v=8ZzVeQLb80E&t=161s',
+                          'relevance': 'Primary practitioner testimony on land-heavy deals failing to beat '
+                                       'the study fee and cost segregation as deferral.'},
+                         {'title': 'Engineered Tax Services — Webinar: Cost Segregation Deep Dive & '
+                                   'Referral Process - August 27 [00:22:13]',
+                          'url': 'https://www.youtube.com/watch?v=qEFJIGNNOkw&t=1333s',
+                          'relevance': 'Primary practitioner testimony on bonus phase-down dates, land '
+                                       'value pushed to the CPA and IDR audit outcomes.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'IFbN2m1Gw3Y',
+                       'title': 'Cost Segregation Example: $750K Commercial Property Tax Savings (2026)',
+                       'channel': 'CostSegRx',
+                       'author': 'CostSegRx',
+                       'text': 'At a 24% tax rate, the savings come to $25,921 dollar-for-dollar.',
+                       'tip': 'At a 24% tax rate, the savings come to $25,921 dollar-for-dollar.',
+                       'timestamp': 104,
+                       'timestamp_seconds': 104,
+                       'timestamp_label': '[00:01:44]',
+                       'url': 'https://www.youtube.com/watch?v=IFbN2m1Gw3Y&t=104s',
+                       'markdown': '[00:01:44](https://www.youtube.com/watch?v=IFbN2m1Gw3Y&t=104s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'qEFJIGNNOkw',
+                       'title': 'Webinar: Cost Segregation Deep Dive & Referral Process - August 27',
+                       'channel': 'Engineered Tax Services',
+                       'author': 'Engineered Tax Services',
+                       'text': 'Um, so just be aware that not everything qualifies for 100% bonus.',
+                       'tip': 'Um, so just be aware that not everything qualifies for 100% bonus.',
+                       'timestamp': 1375,
+                       'timestamp_seconds': 1375,
+                       'timestamp_label': '[00:22:55]',
+                       'url': 'https://www.youtube.com/watch?v=qEFJIGNNOkw&t=1375s',
+                       'markdown': '[00:22:55](https://www.youtube.com/watch?v=qEFJIGNNOkw&t=1375s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'sXpa52KOvog',
+                       'title': 'Webinar: Cost Segregation for Real Estate Professionals',
+                       'channel': 'Engineered Tax Services',
+                       'author': 'Engineered Tax Services',
+                       'text': 'So we can help mitigate that by identifying all the different assets and '
+                               "what gets removed, because there's no recapture on assets that are removed "
+                               'from the property.',
+                       'tip': 'So we can help mitigate that by identifying all the different assets and '
+                              "what gets removed, because there's no recapture on assets that are removed "
+                              'from the property.',
+                       'timestamp': 1016,
+                       'timestamp_seconds': 1016,
+                       'timestamp_label': '[00:16:56]',
+                       'url': 'https://www.youtube.com/watch?v=sXpa52KOvog&t=1016s',
+                       'markdown': '[00:16:56](https://www.youtube.com/watch?v=sXpa52KOvog&t=1016s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'w16nUKkydYc',
+                       'title': 'CPA Explains The #1 Real Estate Tax Deduction: Cost Segregation Explained',
+                       'channel': 'LYFE Accounting',
+                       'author': 'LYFE Accounting',
+                       'text': 'Over the last 20 years, bonus depreciation has fluctuated from 30% to '
+                               '100%.',
+                       'tip': 'Over the last 20 years, bonus depreciation has fluctuated from 30% to 100%.',
+                       'timestamp': 320,
+                       'timestamp_seconds': 320,
+                       'timestamp_label': '[00:05:20]',
+                       'url': 'https://www.youtube.com/watch?v=w16nUKkydYc&t=320s',
+                       'markdown': '[00:05:20](https://www.youtube.com/watch?v=w16nUKkydYc&t=320s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '3G2c1STMThk',
+                       'title': 'Cost Segregation Study - Bonus Accelerated Depreciation (BIG Tax Cuts Job '
+                                'Act CHANGES)',
+                       'channel': 'Toby Mathis Esq | Tax Planning & Asset Protection',
+                       'author': 'Toby Mathis Esq | Tax Planning & Asset Protection',
+                       'text': 'In the Tax Cuts and Jobs Act, they gave us bonus depreciation.',
+                       'tip': 'In the Tax Cuts and Jobs Act, they gave us bonus depreciation.',
+                       'timestamp': 67,
+                       'timestamp_seconds': 67,
+                       'timestamp_label': '[00:01:07]',
+                       'url': 'https://www.youtube.com/watch?v=3G2c1STMThk&t=67s',
+                       'markdown': '[00:01:07](https://www.youtube.com/watch?v=3G2c1STMThk&t=67s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'dCExXUUA6zA',
+                       'title': 'Real Estate Cost Segregation Example',
+                       'channel': 'C2 Realty Group',
+                       'author': 'C2 Realty Group',
+                       'text': 'With $2,000 a month in rent less expenses, cost segregation turns $13,120 '
+                               'of taxable income into a loss of about $9,308 that a real estate '
+                               'professional can apply to other income.',
+                       'tip': 'With $2,000 a month in rent less expenses, cost segregation turns $13,120 '
+                              'of taxable income into a loss of about $9,308 that a real estate '
+                              'professional can apply to other income.',
+                       'timestamp': 111,
+                       'timestamp_seconds': 111,
+                       'timestamp_label': '[00:01:51]',
+                       'url': 'https://www.youtube.com/watch?v=dCExXUUA6zA&t=111s',
+                       'markdown': '[00:01:51](https://www.youtube.com/watch?v=dCExXUUA6zA&t=111s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'NOA2tGOp9G8',
+                       'title': 'Inside My Real Cost Segregation Study (What Actually Happened)',
+                       'channel': 'Karlton Dennis',
+                       'author': 'Karlton Dennis',
+                       'text': 'By choosing to do a cost segregation study on this property, I received '
+                               '93,505 dollars in year one depreciation.',
+                       'tip': 'By choosing to do a cost segregation study on this property, I received '
+                              '93,505 dollars in year one depreciation.',
+                       'timestamp': 825,
+                       'timestamp_seconds': 825,
+                       'timestamp_label': '[00:13:45]',
+                       'url': 'https://www.youtube.com/watch?v=NOA2tGOp9G8&t=825s',
+                       'markdown': '[00:13:45](https://www.youtube.com/watch?v=NOA2tGOp9G8&t=825s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'nj5gSNmRQuU',
+                       'title': 'Cost Segregation for Airbnb Hosts: The Tax Strategy That Saves Thousands',
+                       'channel': 'AirDNA',
+                       'author': 'AirDNA',
+                       'text': "To do this right, you'll want to work with a tax adviser who specializes "
+                               'in cost segregation.',
+                       'tip': "To do this right, you'll want to work with a tax adviser who specializes in "
+                              'cost segregation.',
+                       'timestamp': 265,
+                       'timestamp_seconds': 265,
+                       'timestamp_label': '[00:04:25]',
+                       'url': 'https://www.youtube.com/watch?v=nj5gSNmRQuU&t=265s',
+                       'markdown': '[00:04:25](https://www.youtube.com/watch?v=nj5gSNmRQuU&t=265s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'beMOZDrXOJ8',
+                       'title': 'How To Do A Cost Segregation Study: When It Saves You Money And When It '
+                                'Doesn’t',
+                       'channel': 'Toby Mathis Esq | Tax Planning & Asset Protection',
+                       'author': 'Toby Mathis Esq | Tax Planning & Asset Protection',
+                       'text': 'There are firms right now who can give you a report in 30 minutes with no '
+                               'site visit.',
+                       'tip': 'There are firms right now who can give you a report in 30 minutes with no '
+                              'site visit.',
+                       'timestamp': 1385,
+                       'timestamp_seconds': 1385,
+                       'timestamp_label': '[00:23:05]',
+                       'url': 'https://www.youtube.com/watch?v=beMOZDrXOJ8&t=1385s',
+                       'markdown': '[00:23:05](https://www.youtube.com/watch?v=beMOZDrXOJ8&t=1385s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'beMOZDrXOJ8',
+                       'title': 'How To Do A Cost Segregation Study: When It Saves You Money And When It '
+                                'Doesn’t',
+                       'channel': 'Toby Mathis Esq | Tax Planning & Asset Protection',
+                       'author': 'Toby Mathis Esq | Tax Planning & Asset Protection',
+                       'text': 'It is the easiest thing for the IRS to deny.',
+                       'tip': 'It is the easiest thing for the IRS to deny.',
+                       'timestamp': 1274,
+                       'timestamp_seconds': 1274,
+                       'timestamp_label': '[00:21:14]',
+                       'url': 'https://www.youtube.com/watch?v=beMOZDrXOJ8&t=1274s',
+                       'markdown': '[00:21:14](https://www.youtube.com/watch?v=beMOZDrXOJ8&t=1274s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '3bjz5YCldWA',
+                       'title': 'What is Cost Segregation, and When do I do a Cost Segregation Study?',
+                       'channel': 'Mark Perlberg, CPA',
+                       'author': 'Mark Perlberg, CPA',
+                       'text': "Your best rule of thumb that we've seen after seeing hundreds of cost "
+                               "segregation studies is if it's a long-term rental, we ballpark 25% of the "
+                               'purchase price.',
+                       'tip': "Your best rule of thumb that we've seen after seeing hundreds of cost "
+                              "segregation studies is if it's a long-term rental, we ballpark 25% of the "
+                              'purchase price.',
+                       'timestamp': 1067,
+                       'timestamp_seconds': 1067,
+                       'timestamp_label': '[00:17:47]',
+                       'url': 'https://www.youtube.com/watch?v=3bjz5YCldWA&t=1067s',
+                       'markdown': '[00:17:47](https://www.youtube.com/watch?v=3bjz5YCldWA&t=1067s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '6eVkkFsis9g',
+                       'title': 'Cost Segregation Studies Explained',
+                       'channel': 'Hall CPA | Tax Smart Real Estate Investors',
+                       'author': 'Hall CPA | Tax Smart Real Estate Investors',
+                       'text': 'You can do a mini study yourself by pricing movable items by make and '
+                               "model on eBay, but the results won't be near as good.",
+                       'tip': 'You can do a mini study yourself by pricing movable items by make and model '
+                              "on eBay, but the results won't be near as good.",
+                       'timestamp': 200,
+                       'timestamp_seconds': 200,
+                       'timestamp_label': '[00:03:20]',
+                       'url': 'https://www.youtube.com/watch?v=6eVkkFsis9g&t=200s',
+                       'markdown': '[00:03:20](https://www.youtube.com/watch?v=6eVkkFsis9g&t=200s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'fV7tusLGp3E',
+                       'title': 'Why Cost Segregation Can Be A BAD Idea',
+                       'channel': 'Clint Coons Esq. | Real Estate Asset Protection',
+                       'author': 'Clint Coons Esq. | Real Estate Asset Protection',
+                       'text': 'Otherwise you got a bad deal wrapped up in a costume.',
+                       'tip': 'Otherwise you got a bad deal wrapped up in a costume.',
+                       'timestamp': 889,
+                       'timestamp_seconds': 889,
+                       'timestamp_label': '[00:14:49]',
+                       'url': 'https://www.youtube.com/watch?v=fV7tusLGp3E&t=889s',
+                       'markdown': '[00:14:49](https://www.youtube.com/watch?v=fV7tusLGp3E&t=889s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'fV7tusLGp3E',
+                       'title': 'Why Cost Segregation Can Be A BAD Idea',
+                       'channel': 'Clint Coons Esq. | Real Estate Asset Protection',
+                       'author': 'Clint Coons Esq. | Real Estate Asset Protection',
+                       'text': 'I never do a deal only based upon the tax side of it.',
+                       'tip': 'I never do a deal only based upon the tax side of it.',
+                       'timestamp': 857,
+                       'timestamp_seconds': 857,
+                       'timestamp_label': '[00:14:17]',
+                       'url': 'https://www.youtube.com/watch?v=fV7tusLGp3E&t=857s',
+                       'markdown': '[00:14:17](https://www.youtube.com/watch?v=fV7tusLGp3E&t=857s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Ha5KYCa_Yjk',
+                       'title': 'Cost Segregation Example: $350K Rental Property Tax Savings (2026)',
+                       'channel': 'CostSegRx',
+                       'author': 'CostSegRx',
+                       'text': 'Below that, you can see the bonus rate is at 100% for tax year 2026 and '
+                               'our estimated accelerated depreciation is $46,200.',
+                       'tip': 'Below that, you can see the bonus rate is at 100% for tax year 2026 and our '
+                              'estimated accelerated depreciation is $46,200.',
+                       'timestamp': 37,
+                       'timestamp_seconds': 37,
+                       'timestamp_label': '[00:00:37]',
+                       'url': 'https://www.youtube.com/watch?v=Ha5KYCa_Yjk&t=37s',
+                       'markdown': '[00:00:37](https://www.youtube.com/watch?v=Ha5KYCa_Yjk&t=37s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '8ZzVeQLb80E',
+                       'title': 'When a Cost Segregation Study Is Actually Worth It 💡',
+                       'channel': 'Advise RE',
+                       'author': 'Advise RE',
+                       'text': 'It is a tax deferral strategy.',
+                       'tip': 'It is a tax deferral strategy.',
+                       'timestamp': 254,
+                       'timestamp_seconds': 254,
+                       'timestamp_label': '[00:04:14]',
+                       'url': 'https://www.youtube.com/watch?v=8ZzVeQLb80E&t=254s',
+                       'markdown': '[00:04:14](https://www.youtube.com/watch?v=8ZzVeQLb80E&t=254s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'lJFBf789ODI',
+                       'title': 'Cost Segregation Made Simple',
+                       'channel': 'Commercial Property Advisors',
+                       'author': 'Commercial Property Advisors',
+                       'text': 'Recapture comes back at 25 to 30 percent, but I look at it as a zero '
+                               'interest loan.',
+                       'tip': 'Recapture comes back at 25 to 30 percent, but I look at it as a zero '
+                              'interest loan.',
+                       'timestamp': 806,
+                       'timestamp_seconds': 806,
+                       'timestamp_label': '[00:13:26]',
+                       'url': 'https://www.youtube.com/watch?v=lJFBf789ODI&t=806s',
+                       'markdown': '[00:13:26](https://www.youtube.com/watch?v=lJFBf789ODI&t=806s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'mKOnV6RitlA',
+                       'title': 'Cost Segregation Analysis Explained: How Real Estate Investors Save '
+                                '$45,000+ in Taxes Legally',
+                       'channel': 'BizCpas Accountants & Advisors',
+                       'author': 'BizCpas Accountants & Advisors',
+                       'text': 'With the study, year one depreciation totals about $86,000, roughly four '
+                               'times the standard amount, for $31,853 in first-year savings.',
+                       'tip': 'With the study, year one depreciation totals about $86,000, roughly four '
+                              'times the standard amount, for $31,853 in first-year savings.',
+                       'timestamp': 254,
+                       'timestamp_seconds': 254,
+                       'timestamp_label': '[00:04:14]',
+                       'url': 'https://www.youtube.com/watch?v=mKOnV6RitlA&t=254s',
+                       'markdown': '[00:04:14](https://www.youtube.com/watch?v=mKOnV6RitlA&t=254s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q7.'}]}

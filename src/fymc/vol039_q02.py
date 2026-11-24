@@ -1,666 +1,801 @@
 from __future__ import annotations
 
-CHAPTER_2 = {
-    "id": "Q2",
-    "chapter_id": "Q2",
-    "chapter_number": 2,
-    "question_number": 2,
-    "slug": "who-pays-and-how-inbound-call-settlements-clear",
-    "question_prompt": "Who writes the check in inbound pay-per-call & rtb ping-post arbitrage, what acute financial or statutory pain forces them to pay, and how do funds clear cleanly without circumvention or non-payment?",
-    "kicker": "Q2 / THE BIG MONEY PLAYBOOKS",
-    "title": "Who Pays, Why They Pay & How the Payment Rail Works",
-    "subtitle": "Ringba and Retreaver Buyer Economics, Prepaid Call Wallets, ACH Collections, TCPA Evidence, and Defensible Settlement Ledgers",
-    "layout_template": "executive_summary",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #39, Inbound Pay-Per-Call & RTB Ping-Post Arbitrage, ranks "
-        "#01 of 42 with a 95/100 Money-to-Manpower Score across 14 mapped plays. "
-        "Buyers pay for qualified conversations that convert idle intake capacity "
-        "into contribution, not for raw ringing minutes. This chapter follows the "
-        "budget owner, contracting entity, accepted-call ledger, and cleared funds "
-        "through prepaid wallets, ACH, wire, escrow, and alternative settlement structures. "
-        "The canonical annual owner-profit cases are $30,000 Conservative, $199,750 "
-        "Base, and $480,000 Scaled. Their gross call settlements are $200,000, "
-        "$850,000, and $1,500,000; the corresponding 55% retained revenue is "
-        "$110,000, $467,500, and $825,000. Protect that spread with bounded credit, "
-        "objective qualification, consent provenance, and disputes resolved before publisher cash leaves."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$200,000",
-            "context": "Annual gross call settlements; $110,000 retained revenue at 55%.",
-            "note": "15% gross-basis net margin; $30,000 owner profit; 1 FT + 2 C; 27.27% retained net margin.",
-        },
-        {
-            "label": "Base",
-            "value": "$850,000",
-            "context": "Annual gross call settlements; $467,500 retained revenue at 55%.",
-            "note": "23.5% gross-basis net margin; $199,750 owner profit; 1 FT + 2 C; 42.73% retained net margin.",
-        },
-        {
-            "label": "Scaled",
-            "value": "$1,500,000",
-            "context": "Annual gross call settlements; $825,000 retained revenue at 55%.",
-            "note": "32% gross-basis net margin; $480,000 owner profit; 2 FT + 3 C; 58.18% retained net margin.",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Sell to the budget owner, contract with the payer, and price the recovered contribution",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "The check writer is normally the operating business acquiring customers, "
-                    "an agency with purchasing authority, or an aggregator reselling qualified "
-                    "calls to licensed service providers. These are different credit risks. "
-                    "A restoration owner buys immediate dispatch opportunities because an empty "
-                    "crew consumes payroll while water damage keeps escalating. An insurance "
-                    "distribution manager buys licensed-agent conversations because staffed seats "
-                    "and carrier acquisition targets make missed inbound demand expensive. A "
-                    "law firm's marketing manager buys permissible advertising exposure and "
-                    "prospective-client inquiries, not a share of settlements or a guaranteed "
-                    "retainer. The salesperson who requests traffic may control none of the "
-                    "money. Identify the commercial sponsor, accounts-payable contact, treasury "
-                    "approver, and contract signatory before provisioning a destination number. "
-                    "Obtain the exact purchasing entity and determine whether an agency signs "
-                    "as principal or only as agent for a disclosed client. Put payment "
-                    "responsibility in the agreement rather than assuming a famous downstream "
-                    "brand supports an intermediary's debt. Ask which budget pays the invoice, "
-                    "who can increase the daily cap, and what evidence releases payment. "
-                    "A purchase order documents internal authorization; it does not establish "
-                    "cash availability or eliminate a buyer's contractual dispute rights."
-                ),
-                (
-                    "Translate the buyer's urgency into contribution math before quoting a "
-                    "payout. Suppose a foundation-repair operator earns $2,400 of contribution "
-                    "per completed job before acquisition spending. If 20% of qualified calls "
-                    "become appointments and half those appointments close, expected contribution "
-                    "is $240 per accepted call. A $120 call price leaves $120 "
-                    "before remaining acquisition overhead and estimation costs. For the exchange, "
-                    "an illustrative $54 publisher or media allocation leaves $66, matching "
-                    "the canonical 55% retained share before operating expenses. The buyer "
-                    "cares about profitable jobs, but the invoice must depend on observable "
-                    "contract terms rather than the buyer's sales execution. Define geography, "
-                    "service request, operating hours, duplicate window, caller eligibility, and "
-                    "the connected-duration threshold separately. A 90-second buffer is a "
-                    "qualification rule, not proof of intent or permission. A 120-second "
-                    "insurance threshold should not bill hold music as an agent conversation. "
-                    "Exclude IVR and queue time when the contract measures agent-connected "
-                    "duration, and test how transfers affect the timer. Buyers often seek "
-                    "longer buffers after their close rates deteriorate; offer prospective "
-                    "repricing instead of retroactive rejection of previously conforming calls. "
-                    "Preserve a price-version identifier on every accepted event."
-                ),
-                (
-                    "Decision-maker psychology changes with the buyer's failure mode. An owner "
-                    "with idle technicians wants dispatchable demand today; a call-center "
-                    "director wants predictable occupancy without overwhelming licensed agents; "
-                    "a finance controller wants a finite liability and reproducible invoice. "
-                    "Show each person the evidence they actually use. Give operations a "
-                    "capacity dashboard, procurement a signed rate card, and accounts payable "
-                    "a call-level export tied to the invoice total. Statutory exposure adds "
-                    "another purchasing motive: a professional buyer values documented source "
-                    "provenance and lawful handling because a cheap inquiry with unusable "
-                    "permissions can become an expensive complaint. That pressure does not "
-                    "force anybody to buy calls or transfer their regulatory duties to "
-                    "the exchange. Treat escrow authority literally: only an authorized "
-                    "account holder or contracted escrow agent can release held funds under "
-                    "the agreed conditions. A marketing employee cannot pledge client trust "
-                    "money, insurance premiums, or an expected court distribution. Establish "
-                    "a small prepaid pilot with a signed qualification schedule and "
-                    "named escalation contacts. Expand only after operational acceptance and "
-                    "actual collection both work; enthusiastic sales feedback without remittance "
-                    "is evidence of demand, not evidence of creditworthiness."
-                ),
-            ],
-            "table": {
-                "caption": "Buyer Psychology, Budget Ownership, and Evidence That Releases Call Payments",
-                "headers": [
-                    "Purchasing seat and immediate operating pressure",
-                    "Economic reason the buyer accepts pricing",
-                    "Authority and documentation required before routing",
-                    "Collection weakness and practical operator response",
-                ],
-                "rows": [
-                    [
-                        "Restoration owner maintaining crews for urgent water losses",
-                        "Recover idle crew contribution through immediately dispatchable inquiries",
-                        "Owner signs rate card and funds prepaid wallet",
-                        "Pause routing automatically when available wallet balance falls",
-                    ],
-                    [
-                        "Foundation repair manager maintaining an estimator appointment pipeline",
-                        "Accepted calls feed measurable inspections and profitable contracts",
-                        "Controller approves purchase order and written service geography",
-                        "Reject retrospective price changes after valid call acceptance",
-                    ],
-                    [
-                        "Commercial roofing director filling surveyed project opportunity capacity",
-                        "Qualified property inquiries reduce expensive outbound prospecting effort",
-                        "Authorized officer approves commercial property qualification and caps",
-                        "Separate residential misroutes from valid commercial buyer rejections",
-                    ],
-                    [
-                        "Insurance distribution director balancing licensed agent seat utilization",
-                        "Connected prospects monetize otherwise unused licensed agent capacity",
-                        "Purchasing entity confirms licensing footprint and payment responsibility",
-                        "Throttle auctions when staffing or licensed coverage deteriorates",
-                    ],
-                    [
-                        "Law firm marketing partner buying permissible advertising inquiries",
-                        "Relevant inquiries improve intake without purchasing case outcomes",
-                        "Responsible lawyer approves advertising structure and operating jurisdiction",
-                        "Avoid outcome percentages and prohibited paid recommendation arrangements",
-                    ],
-                    [
-                        "Agency media buyer spending a disclosed client's budget",
-                        "Reliable supply helps fulfill contracted acquisition delivery obligations",
-                        "Agreement identifies principal payer and authorized agency capacity",
-                        "Require prepayment when agency disclaims direct payment liability",
-                    ],
-                    [
-                        "Call aggregator matching upstream inventory to downstream demand",
-                        "Positive resale spread depends on accepted downstream conversations",
-                        "Credit review examines actual debtor rather than advertised brands",
-                        "Decline unrestricted payment dependence on downstream buyer collection",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Sell certainty to three different desks",
-                "body": "The strongest buyer relationship gives operations, treasury, and dispute reviewers independently usable evidence.",
-                "items": [
-                    "During the pilot, send accounts payable the exact sample invoice and call export before sending meaningful traffic; resolve vendor onboarding friction while exposure is small.",
-                    "Ask the intake supervisor to identify queue and transfer events in a test call; encode the agreed agent-connected timer instead of trusting a generic duration field.",
-                    "Reserve a small buyer wallet balance for in-flight calls so simultaneous auctions cannot spend the same remaining dollars.",
-                    "Price staffed hours separately from overflow hours when measured acceptance differs; do not conceal weaker inventory inside a blended headline payout.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Make routing, mapped-play economics, and permission evidence agree",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "For rank_and_rent_pay_per_call_routing, build useful local service hubs for "
-                    "foundation repair, water restoration, probate liquidation, and commercial "
-                    "roofing, then route attributed calls through Ringba, Retreaver, or Twilio. "
-                    "The mapped price band is $75–$300 for an eligible inbound call "
-                    "lasting over 90 seconds; the executed contract determines the exact "
-                    "buffer and whether that means agent-connected time. At 100 accepted "
-                    "calls priced at $150, gross settlements equal $15,000. Applying the "
-                    "canonical 45% acquisition allocation gives $6,750 of publisher or media "
-                    "cost and $8,250 retained before operating expenses. These are illustrative "
-                    "unit economics, not another annual scenario. Organic city pages and "
-                    "useful repair calculators reduce dependence on paid-search CPC inflation "
-                    "and Google Business Profile availability. Organic search still carries "
-                    "ranking risk; independence from a profile suspension is not immunity "
-                    "from search changes. Verify Maps profiles only for genuine eligible "
-                    "partner locations, never fabricated offices. Route probate-related requests "
-                    "according to the actual service and applicable professional restrictions "
-                    "rather than treating every inquiry as unrestricted inventory. Require "
-                    "prepaid auto-refill wallets, reserve exposure before connecting, and send "
-                    "overflow only to a permitted buyer with current capacity. Suspend "
-                    "a route when its permission scope or wallet coverage fails."
-                ),
-                (
-                    "The identity_graph_pixel_arbitrage mapping requires a narrower implementation than "
-                    "its promotional description suggests. A first-party CNAME does not make "
-                    "third-party identity processing first-party in substance, and SHA-256 "
-                    "identifiers are linkable pseudonyms rather than anonymous records. Do "
-                    "not reconstruct anonymous visitors' names, home addresses, or profiles "
-                    "through rainbow-table matching or combine bidstream signals into covert "
-                    "person-level dossiers. Use permissioned first-party records, authorized "
-                    "partners, and aggregate intent segments instead. Treat the mapped "
-                    "35–55% resolution range as an unverified hypothesis, not a performance "
-                    "promise. In a hypothetical pool of 10,000 eligible, permissioned "
-                    "records, that range would produce 3,500–5,500 valid matches; at an "
-                    "assumed $0.20 processing cost per input, spend would be $2,000. "
-                    "At the midpoint, 4,500 matches must create more than $0.444 "
-                    "incremental contribution each merely to cover processing. Measure that "
-                    "incrementality with a holdout rather than crediting every later call "
-                    "to the pixel. Fallback to contextual acquisition, authorized audience "
-                    "matching, or lawfully sourced physical trigger mail. Postal mail sits "
-                    "outside CAN-SPAM's commercial-email scope, but privacy and marketing "
-                    "restrictions still apply. Suppress unconsented consumer-email outreach, "
-                    "honor deletion and sale/share choices, and use US-only edge filtering "
-                    "as a geographic control rather than proof of permission."
-                ),
-                (
-                    "Make the permission record answer who collected information, what the "
-                    "consumer requested, which seller may respond, and which communication "
-                    "methods were authorized. TrustedForm and Jornaya can support source "
-                    "provenance, but neither a certificate nor a telephone number proves "
-                    "every later use is lawful. The FCC's 2023 federal one-to-one "
-                    "consent amendment was vacated in Insurance Marketing Coalition Ltd. "
-                    "v. FCC in January 2025; do not describe it as a "
-                    "currently enforceable universal TCPA requirement. Seller-specific, one-to-one "
-                    "evidence remains a sensible contractual standard, while applicable TCPA "
-                    "written-consent requirements depend on the technology and communication. "
-                    "Distinguish a consumer-initiated inbound call from an outbound marketing "
-                    "callback or text. Apply DNC suppression where outbound solicitation "
-                    "rules require it, and honor internal do-not-contact requests; a "
-                    "litigator list cannot replace those controls. For Medicare work, "
-                    "evaluate CMS TPMO marketing, sales, and enrollment recording obligations, "
-                    "the applicable Scope of Appointment timing and exceptions, and "
-                    "separate rules for sharing beneficiary information. A blanket claim "
-                    "that every inbound Medicare conversation requires a 48-hour wait "
-                    "is inaccurate. Recording also needs a state-law analysis. Route "
-                    "legal inquiries only after reviewing local advertising, recommendation, "
-                    "solicitation, and runner restrictions; a per-call label does not "
-                    "cure a prohibited arrangement."
-                ),
-            ],
-            "table": {
-                "caption": "Mapped-Play Controls and Call Qualification Evidence",
-                "headers": [
-                    "Control point within the acquisition path",
-                    "Specific record the operator must retain",
-                    "Illustrative economics or measurable operating test",
-                    "Fallback when the expected condition fails",
-                ],
-                "rows": [
-                    [
-                        "Rank and rent routing for genuine local service demand",
-                        "Landing page version and eligible partner destination number",
-                        "One hundred accepted calls generate fifteen thousand dollars",
-                        "Use organic calculators and stop uncovered wallet spending",
-                    ],
-                    [
-                        "Permissioned identity matching instead of covert visitor identification",
-                        "Source permissions and permitted recipient use for matching",
-                        "Ten thousand eligible inputs cost two thousand dollars",
-                        "Switch to contextual demand when record permissions fail",
-                    ],
-                    [
-                        "Connected duration qualification for insurance and emergency trades",
-                        "Answer timestamps, agent connection timestamps, and transfer events",
-                        "Test ninety and one hundred twenty second thresholds",
-                        "Quarantine ambiguous timers rather than automatically invoicing buyers",
-                    ],
-                    [
-                        "Seller specific evidence for planned outbound followup communications",
-                        "Capture disclosure wording, seller identity, timestamp, and source",
-                        "Verify intended technology against the actual permission record",
-                        "Restrict use to the consumer's supported inbound request",
-                    ],
-                    [
-                        "Medicare TPMO recording and appointment scope requirements",
-                        "Document applicable call category and appointment timing exception",
-                        "Test recording availability before accepting Medicare campaign traffic",
-                        "Pause the campaign when required records are missing",
-                    ],
-                    [
-                        "Professional advertising boundaries for legal service inquiry buyers",
-                        "Retain jurisdiction review and approved advertising compensation structure",
-                        "Use permitted advertising pricing independent of case recovery",
-                        "Exclude jurisdictions where the proposed arrangement is prohibited",
-                    ],
-                    [
-                        "Privacy choices affecting authorized audience matching and sharing",
-                        "Preserve deletion, opt out, and recipient restriction events",
-                        "Compare incremental accepted calls against a randomized holdout",
-                        "Delete affected audience records and stop unauthorized sharing",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Verify four facts before the first production auction",
-                "body": "A route becomes eligible only when commercial, technical, permission, and cash records agree.",
-                "items": [
-                    "Verify the buyer's legal entity, signatory authority, permitted services, and real payment account through an independently established contact channel.",
-                    "Run test calls through the complete ping, bid, acceptance, connection, duration, duplicate, and settlement sequence without treating tests as billable customer demand.",
-                    "Verify source-specific disclosures, intended recipients, recording requirements, and any applicable Medicare or professional-advertising restrictions.",
-                    "Confirm cleared wallet funding or a documented credit limit, plus an atomic in-flight reservation that stops delivery before authorized exposure is exceeded.",
-                ],
-            },
-        },
-        {
-            "heading": "3. Choose the settlement structure before choosing the payment button",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Separate the commercial settlement structure from the mechanism that "
-                    "moves money. Wire and ACH are transfer rails; escrow, retainers, "
-                    "factoring, and milestone holds allocate timing, control, or financing. "
-                    "A platform checkout is an interface whose underlying card or bank "
-                    "rail determines returns and disputes. Statutory disbursement describes "
-                    "funds governed by a particular legal regime, not an ordinary "
-                    "shortcut for paying advertising vendors. For a new local buyer, "
-                    "a prepaid wallet funded by an approved method is usually simpler "
-                    "than financing net terms. Specify whether funds are an advance "
-                    "against calls, how unused balances are refunded, and whether the "
-                    "operator holds any funds for others. Do not describe an ordinary "
-                    "operating account as escrow. At $120 per call, a $3,000 "
-                    "wallet covers 25 accepted calls before reserves. If five calls "
-                    "can be connected concurrently, reserve $600 and replenish before "
-                    "available funds reach that exposure. A failed auto-refill must "
-                    "stop new reservations, not merely send an email. Payment acceptance "
-                    "is not always irreversible collection: card disputes, ACH returns, "
-                    "fraud investigations, and contractual refunds can reopen exposure. "
-                    "Choose funding thresholds and reserves from the actual processor "
-                    "terms, buyer history, and campaign loss distribution."
-                ),
-                (
-                    "Run a call subledger rather than asking a bank statement to "
-                    "explain revenue. Assign a unique call identifier, buyer identifier, "
-                    "publisher identifier, bid identifier, price version, qualification status, "
-                    "gross billable amount, acquisition allocation, and settlement status. "
-                    "Keep personal information out of auction payloads unless needed "
-                    "and permitted; a bid request should expose only necessary eligibility "
-                    "signals. Ringba or Retreaver routing events support the operating "
-                    "record, while an accounting ledger and processor records establish "
-                    "invoices, receipts, and cash reconciliation. Protect callback ingestion "
-                    "with authentication, replay controls, idempotency, and documented retry "
-                    "behavior. A duplicated acceptance webhook must not produce two "
-                    "charges or two publisher payouts. Distinguish provisional qualification, "
-                    "buyer acceptance, dispute reserve, paid invoice, and paid publisher. "
-                    "For a $120 accepted call with $54 acquisition cost, the "
-                    "retained amount is $66 before overhead; posting $120 as cash "
-                    "collected before settlement misstates liquidity. Reconcile daily event "
-                    "counts to invoices and weekly receipts to bank activity. Keep "
-                    "processor fees, refunds, bad debt, and routing costs in named "
-                    "expense or adjustment accounts. Never silently deduct them twice "
-                    "from both retained revenue and owner profit. Preserve adjustment "
-                    "links so an auditor can reconstruct each changed balance."
-                ),
-                (
-                    "Fee protection starts with measurable entitlement, not aggressive boilerplate. "
-                    "Define a short contractual objection period, required reason codes, "
-                    "supporting evidence, and the treatment of undisputed balances. Allow "
-                    "fraud or legally required corrections where applicable rather than "
-                    "pretending elapsed time validates every charge. A buyer disputing "
-                    "twelve of one hundred $120 calls should identify the $1,440 "
-                    "in question and pay the remaining $10,560 under the agreed "
-                    "terms. Escalate timer disagreements using connection events and lawfully "
-                    "retained recordings, with access restricted to authorized reviewers. "
-                    "AI transcript disposition can prioritize review but should not "
-                    "unilaterally resolve contested charges. Protect introduced commercial "
-                    "relationships through reasonable, locally reviewed noncircumvention "
-                    "terms, source confidentiality, and continued routing value. Define "
-                    "covered counterparties, duration, permitted direct relationships, and "
-                    "remedies supported by actual loss. Do not obstruct the "
-                    "consumer's access to a chosen service provider or claim "
-                    "ownership of their future communications. Tracking numbers, service "
-                    "continuity obligations, and portability rights belong in the "
-                    "contract. Pay publishers according to an explicit timetable "
-                    "and reserve policy; financing yourself through unexplained payout "
-                    "delays destroys supply quality. If buyers demand long terms, "
-                    "price that working-capital burden or require an advance instead."
-                ),
-            ],
-            "table": {
-                "caption": "Eight Payment Rails and Settlement Structures Compared for Call Exchanges",
-                "headers": [
-                    "Rail or structure and appropriate operating use",
-                    "Funding authority and condition for releasing money",
-                    "Finality, timing, and principal credit limitation",
-                    "Specific operator protection and fallback collection method",
-                ],
-                "rows": [
-                    [
-                        "Wire transfer funding larger approved buyer wallet balances",
-                        "Buyer treasury authorizes transfer to independently verified beneficiary",
-                        "Bank receipt reduces ordinary return exposure without eliminating fraud",
-                        "Verify changed instructions independently before allocating usable balance",
-                    ],
-                    [
-                        "Independent escrow securing unusually large negotiated supply commitments",
-                        "Named escrow agent releases funds under objective contract conditions",
-                        "Disputed release conditions can immobilize otherwise funded balances",
-                        "Use call acceptance schedules and dispute only contested amounts",
-                    ],
-                    [
-                        "ACH credit or authorized business debit for recurring invoices",
-                        "Buyer treasury initiates credit or signs valid debit authorization",
-                        "Return exposure depends on entry type and applicable rules",
-                        "Prefer verified accounts and pause traffic after payment failures",
-                    ],
-                    [
-                        "Prepaid retainer applied against objectively accepted inbound calls",
-                        "Authorized buyer funds advance and approves written drawdown rules",
-                        "Unused advances remain subject to agreed refund obligations",
-                        "Maintain liability ledger and reserve concurrent call exposure",
-                    ],
-                    [
-                        "Statutory disbursement only when governing law permits that payment",
-                        "Authorized fiduciary follows applicable distribution and entitlement requirements",
-                        "Restricted funds cannot be presumed available for marketing invoices",
-                        "Invoice ordinary operating funds instead of relying on recoveries",
-                    ],
-                    [
-                        "Platform checkout collecting wallet topups through supported payment methods",
-                        "Authorized account user accepts purchase terms and processor authentication",
-                        "Underlying card or bank method determines disputes and reserves",
-                        "Use transaction limits and avoid sensitive call payload uploads",
-                    ],
-                    [
-                        "Factoring accepted business receivables to accelerate available working capital",
-                        "Factor approves debtor and purchases contractually assignable receivables",
-                        "Recourse and dispute exclusions can preserve seller loss exposure",
-                        "Compare total fees and retain disputed invoices outside facility",
-                    ],
-                    [
-                        "Milestone holds releasing payment after defined pilot acceptance stages",
-                        "Buyer controller releases scheduled amounts against observable delivery evidence",
-                        "Subjective milestones invite delayed acceptance and accumulating unsecured exposure",
-                        "Use finite batches and stop delivery before unpaid expansion",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Bind the payer and qualification schedule",
-                    "action": "Execute the buyer agreement, price version, permitted verticals, and dispute schedule.",
-                    "detail": "Record signatory authority, invoice recipient, payment method, duplicate window, connected-duration definition, and permitted adjustment reasons.",
-                },
-                {
-                    "step": 2,
-                    "title": "Fund and reserve before connecting",
-                    "action": "Confirm usable funding or approved credit and reserve the maximum contracted call liability.",
-                    "detail": "Use an atomic reservation across concurrent routes; release unused reservations after definitive call disposition and stop new calls when coverage fails.",
-                },
-                {
-                    "step": 3,
-                    "title": "Qualify once and reconcile evidence",
-                    "action": "Join routing events, buyer acceptance, source provenance, and acquisition cost by immutable call identifier.",
-                    "detail": "Deduplicate webhook retries, quarantine inconsistent timestamps, and review contested AI classifications against authorized source records.",
-                },
-                {
-                    "step": 4,
-                    "title": "Collect, resolve, and release publisher funds",
-                    "action": "Invoice accepted calls, collect undisputed balances, resolve coded objections, and execute scheduled publisher payouts.",
-                    "detail": "Match bank receipts to the subledger, retain the agreed risk reserve, and record every refund or rejection against its original call.",
-                },
-            ],
-        },
-        {
-            "heading": "4. Underwrite the debtor and reconcile profit without financing the entire chain",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Screen the entity that owes the invoice, not the reputation "
-                    "of its salesperson. Verify registration through the relevant secretary "
-                    "of state's records, obtain tax and billing details securely, "
-                    "and confirm the account beneficiary through a known contact. "
-                    "Use trade references, suitable business credit reports, litigation "
-                    "and insolvency searches, and available financial statements to "
-                    "evaluate repayment capacity. UCC filings can reveal secured "
-                    "creditors but do not independently prove distress or available "
-                    "collateral. Match licensed activities to official licensing records "
-                    "when the vertical requires them. Begin with prepaid volume "
-                    "or a deliberately small unsecured limit; net-7 wording "
-                    "is useful only when the buyer actually pays within "
-                    "seven days. At an illustrative $2,400 of daily gross "
-                    "delivery, seven days creates $16,800 of receivables and "
-                    "$7,560 of associated acquisition cost at the canonical "
-                    "45% allocation. A further three-day dispute delay increases "
-                    "those figures to $24,000 and $10,800. Limit exposure "
-                    "using outstanding accepted calls plus provisional calls and "
-                    "in-flight reservations, less usable prepayments. Pause routing "
-                    "before the limit is crossed. Verify the first net-7 "
-                    "collection before increasing publisher traffic, then raise "
-                    "caps in measured increments rather than doubling supply "
-                    "on an unsigned promise of payment."
-                ),
-                (
-                    "Reconcile the annual scorecard on two distinct bases. Conservative "
-                    "gross settlements of $200,000 less $90,000 in publisher payouts "
-                    "and click-to-call acquisition leave $110,000 retained revenue; $80,000 "
-                    "in remaining expenses leaves $30,000 owner profit. Base "
-                    "gross settlements of $850,000 less $382,500 leave $467,500 "
-                    "retained revenue; $267,750 in remaining expenses leaves "
-                    "$199,750 owner profit. Scaled gross settlements of $1,500,000 "
-                    "less $675,000 leave $825,000 retained revenue; $345,000 "
-                    "in remaining expenses leaves $480,000 owner profit. The "
-                    "gross-basis margins are exactly 15%, 23.5%, and 32%; "
-                    "retained-basis margins round to 27.27%, 42.73%, and "
-                    "58.18%. Staffing remains 1 FT + 2 C, "
-                    "1 FT + 2 C, and 2 FT + "
-                    "3 C respectively. Under the supplied ASC 606 "
-                    "net-presentation convention, retained revenue is the operator's "
-                    "revenue measure; actual principal-versus-agent presentation requires "
-                    "the applicable control assessment. Neither client construction "
-                    "contract values, insurance premiums, nor legal recoveries "
-                    "belong in exchange revenue. The $2,500–$14,000 monthly "
-                    "opex band cannot represent every residual expense "
-                    "in these annual cases. Treat it as a "
-                    "planning band for core recurring operations, with "
-                    "additional delivery, personnel, loss, and service expenses "
-                    "explicitly budgeted to reconcile the annual totals."
-                ),
-                (
-                    "Stress the Base case before releasing capital. A ten-percentage-point "
-                    "increase in acquisition cost, from 45% to 55% "
-                    "of unchanged $850,000 gross settlements, consumes $85,000 "
-                    "and reduces owner profit from $199,750 to $114,750 "
-                    "if remaining expenses stay fixed. Separately, an incremental "
-                    "2% uncollectible balance costs $17,000 when no publisher "
-                    "recovery or expense saving offsets it. These are "
-                    "sensitivities, not replacements for the canonical cases. "
-                    "A buyer-duration scrub is worse when the exchange "
-                    "already paid its publisher and cannot reverse that "
-                    "cost. Measure retained contribution after source-specific rejection, "
-                    "refund, collection, and platform costs before increasing "
-                    "ad bids. Send S2S optimization events only from "
-                    "the correct acceptance stage and transmit later reversals "
-                    "where the destination supports adjustments; optimizing against "
-                    "raw connections buys more expensive noise. The startup "
-                    "capital range is $8,000–$45,000, with first-deal timing "
-                    "of one to three months. A $16,800 buyer "
-                    "receivable can overwhelm the lower end even when "
-                    "the campaign is profitable on paper. Preserve a "
-                    "cash runway, stagger publisher payouts within agreed "
-                    "terms, and prefer prepaid expansion until collections "
-                    "support credit. Scale the Scaled team's five "
-                    "people through exception queues, not by allowing "
-                    "automation to invent acceptance or release unsupported "
-                    "payments."
-                ),
-            ],
-            "table": {
-                "caption": "Canonical Scorecard Reconciliation and Buyer Credit Stop Rules",
-                "headers": [
-                    "Scenario or credit control being evaluated",
-                    "Gross settlement and acquisition cost treatment",
-                    "Retained revenue, expense, or cash exposure result",
-                    "Required decision before increasing operating volume",
-                ],
-                "rows": [
-                    [
-                        "Conservative operation staffed by one employee and two contractors",
-                        "$200,000 gross settlements less $90,000 acquisition allocation annually",
-                        "$110,000 retained less $80,000 remaining expenses yields $30,000",
-                        "Maintain 15% gross margin and 27.27% retained margin",
-                    ],
-                    [
-                        "Base operation staffed by one employee and two contractors",
-                        "$850,000 gross settlements less $382,500 acquisition allocation annually",
-                        "$467,500 retained less $267,750 remaining expenses yields $199,750",
-                        "Maintain 23.5% gross margin and 42.73% retained margin",
-                    ],
-                    [
-                        "Scaled operation staffed by two employees and three contractors",
-                        "$1,500,000 gross settlements less $675,000 acquisition allocation annually",
-                        "$825,000 retained less $345,000 remaining expenses yields $480,000",
-                        "Maintain 32% gross margin and 58.18% retained margin",
-                    ],
-                    [
-                        "Illustrative seven day exposure at twenty daily accepted calls",
-                        "Twenty calls at $120 create $2,400 daily gross",
-                        "Seven unpaid days create $16,800 receivables before reserves",
-                        "Require demonstrated collections before expanding publisher traffic caps",
-                    ],
-                    [
-                        "Illustrative acquisition inflation applied only to Base sensitivity",
-                        "Acquisition share increases from 45% to 55% gross",
-                        "Additional $85,000 expense reduces owner profit to $114,750",
-                        "Reduce bids or reprice before incremental contribution disappears",
-                    ],
-                    [
-                        "Illustrative incremental credit loss applied separately to Base",
-                        "Two percent loss on $850,000 equals $17,000 annually",
-                        "Owner profit becomes $182,750 without offsetting cost recoveries",
-                        "Reduce unsecured limits and obtain usable prepaid funding",
-                    ],
-                ],
-            },
-        },
-    ],
-    "pull_quote": "A qualified call creates an invoice; verified authority, bounded exposure, and collected cash create a business.",
-    "diagram_id": "diag-04",
-    "action_checklist": [
-        "Identify the actual debtor, authorized signatory, budget owner, accounts-payable contact, and verified bank beneficiary before enabling buyer destinations.",
-        "Execute a price-versioned qualification schedule covering agent-connected duration, geography, duplicates, eligible services, dispute evidence, and payment deadlines.",
-        "Pilot rank_and_rent_pay_per_call_routing with useful organic local pages, genuine partner locations, and prepaid wallets that reserve concurrent call exposure.",
-        "Constrain identity_graph_pixel_arbitrage to permissioned records and authorized matching; validate incremental economics with holdouts rather than covert identity reconstruction.",
-        "Reconcile each accepted call across routing events, permission evidence, invoices, acquisition allocation, receipts, refunds, and publisher payouts using one immutable identifier.",
-        "Verify the first net-7 collection before increasing unsecured volume, and preserve the exact canonical profit cases when modeling separate collection or CPC sensitivities.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "47 U.S.C. § 227 — Restrictions on the use of telephone equipment",
-            "url": "https://www.law.cornell.edu/uscode/text/47/227",
-            "relevance": "Evaluate applicable restrictions on outbound calls and texts separately from consumer-initiated inbound traffic; preserve evidence supporting the intended communication.",
-        },
-        {
-            "title": "47 CFR § 64.1200 — Delivery restrictions",
-            "url": "https://www.ecfr.gov/current/title-47/chapter-I/subchapter-B/part-64/subpart-L/section-64.1200",
-            "relevance": "Apply current calling, consent, identification, and do-not-call requirements to the relevant technology and campaign; do not treat a vendor certificate as universal authorization.",
-        },
-        {
-            "title": "42 CFR § 422.2264 — Beneficiary contact",
-            "url": "https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-B/part-422/subpart-V/section-422.2264",
-            "relevance": "Determine Medicare Advantage beneficiary-contact and Scope of Appointment requirements, including the applicable 48-hour timing rule and its exceptions.",
-        },
-        {
-            "title": "42 CFR § 422.2274 — Agent, broker, and other third-party requirements",
-            "url": "https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-B/part-422/subpart-V/section-422.2274",
-            "relevance": "Evaluate Medicare Advantage TPMO oversight, applicable recording duties, and beneficiary-information sharing requirements before routing campaign traffic.",
-        },
-        {
-            "title": "42 CFR § 423.2274 — Agent, broker, and other third-party requirements",
-            "url": "https://www.ecfr.gov/current/title-42/chapter-IV/subchapter-B/part-423/subpart-V/section-423.2274",
-            "relevance": "Apply the corresponding Part D third-party marketing requirements when prescription-drug plan inquiries enter the exchange.",
-        },
-        {
-            "title": "California Business and Professions Code § 6152 — Runners and cappers",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=BPC&sectionNum=6152.",
-            "relevance": "Screen California legal-inquiry acquisition and compensation arrangements against statutory restrictions rather than assuming per-call pricing makes every referral permissible.",
-        },
-        {
-            "title": "California Civil Code § 1798.120 — Sale and sharing opt-out rights",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=CIV&sectionNum=1798.120.",
-            "relevance": "For covered processing, implement applicable sale and sharing choices in identity matching and advertising workflows; hashing does not itself eliminate personal-information obligations.",
-        },
-        {
-            "title": "15 U.S.C. § 7704 — Requirements for transmission of messages",
-            "url": "https://www.law.cornell.edu/uscode/text/15/7704",
-            "relevance": "Commercial-email obligations differ from postal marketing rules; physical mail's exclusion from this email statute does not remove other sourcing or privacy restrictions.",
-        },
-    ],
-}
+CHAPTER_2 = {'id': 'Q2',
+ 'chapter_id': 'Q2',
+ 'chapter_number': 2,
+ 'question_number': 2,
+ 'slug': 'q02-platform-setup-real-time-bidding-for-calls',
+ 'question_prompt': 'How do I set up a call tracking platform and plug into real-time bidding and call '
+                    'exchanges as a seller or buyer?',
+ 'kicker': 'Q2 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Platform Setup and Real-Time Bidding for Calls',
+ 'subtitle': 'Ringba account, campaign and target setup, trackable numbers, seller ring trees and RingbaX '
+             'buyer campaigns, dynamic ring tree targets, programmatic RTB mechanics, overflow routing, '
+             'and Retreaver and TrackDrive campaign setup',
+ 'layout_template': 'executive_summary',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Ringba, TrackDrive, ExclusiveLiveCall, ceohec, and Decoding Ads all describe call '
+                      'RTB as ping-post for live phone calls. The platform pings buyers with call data, '
+                      'bids and durations come back in a couple hundred milliseconds, and the call routes '
+                      'to the best expected payout before the phone rings. The consensus prerequisites are '
+                      'unique tracking numbers per publisher, owning your own numbers, eligibility filters '
+                      'on geo, hours, caps, and concurrency, and failover so an unanswered winner never '
+                      'kills a paid call. The street mechanics include Ringba ring trees with a $29.01 '
+                      "minimum-revenue floor over static fallbacks, and RingbaX's 10-second dial and 3,000 "
+                      "ms ping timeouts. They also include ceohec's Retreaver build at about 4 cents a "
+                      'minute, with TTL 45, a 5-second timeout, and an 8-second billing buffer. '
+                      'Practitioners split on static versus RTB buyers, Ringba versus Retreaver, and '
+                      'highest-bid versus earnings-per-call routing.',
+ 'key_metrics': [{'label': 'Ping-to-route decision time',
+                  'metric': 'Ping-to-route decision time',
+                  'value': 'A couple hundred milliseconds, always under one second',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Ringba says all pings, posts, and routing decisions finish before the phone '
+                             'rings or the caller knows they are being connected',
+                  'source': 'Ringba ([yat7hRHHsKY @ 00:02:28])'},
+                 {'label': 'Retreaver usage cost',
+                  'metric': 'Retreaver usage cost',
+                  'value': 'About 4 cents per minute, pay-as-you-go, no monthly fee',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "ceohec's stated cost of sending calls to buyers through Retreaver, which "
+                             'they describe as free to open',
+                  'source': 'ceohec ([RWVdTqjVYE8 @ 00:00:36])'},
+                 {'label': 'Billing latency buffer',
+                  'metric': 'Billing latency buffer',
+                  'value': '+8 seconds (a 120-second buffer converts at 128 seconds)',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Padding ceohec pitches to publishers so connect and ring time does not '
+                             'create billing discrepancies against the buyer',
+                  'source': 'ceohec ([RWVdTqjVYE8 @ 00:09:59])'},
+                 {'label': 'RingbaX ring tree timeouts',
+                  'metric': 'RingbaX ring tree timeouts',
+                  'value': '10-second dial timeout and 3,000 ms ping timeout',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Values in Ringba's seller ring tree recipe for selling calls into the "
+                             'RingbaX exchange',
+                  'source': 'Ringba ([uDzWrD17wqg @ 00:02:04])'}],
+ 'sections': [{'heading': 'Section 1: The Practitioner Consensus',
+               'paragraphs': ['Every practitioner here treats real-time bidding as the ping-post model '
+                              'ported from lead gen to live calls. Ringba frames it plainly. The caller '
+                              'dials, and the platform pings every programmatic buyer with mapped metadata '
+                              'such as geography and call category. Buyers return a bid, a required '
+                              'duration, and sometimes a dynamic destination number. The call is then '
+                              'routed before the phone even rings, all inside a couple hundred '
+                              'milliseconds [yat7hRHHsKY @ 00:01:10]. ceohec, operating on Retreaver, uses '
+                              'the same vocabulary from the street side. Static means no ping post. RTB '
+                              "means the buyer's system is pinged to see if a buyer is available, and then "
+                              "the call is posted through. In ceohec's view, most operators getting into "
+                              'pay per call run RTB unless they have one buyer who can absorb volume '
+                              '[RWVdTqjVYE8 @ 00:04:42]. TrackDrive lists ping post as a fifth routing '
+                              'mode alongside priority, weight, highest bid, and earnings per call. It '
+                              'describes the ping as a quick message asking whether the buyer wants the '
+                              'call and what they will pay [9uZila67hss @ 00:02:52]. ExclusiveLiveCall '
+                              'adds the coverage angle. With a ping integration you do not need the '
+                              "downstream buyer's destination number loaded into your platform, because "
+                              'the external network or marketplace returns both the bid and the routing '
+                              'instructions in real time [Hnh5huLjUoE @ 00:06:45].',
+                              'The second point of agreement is that attribution gets set before any money '
+                              "moves. TrackDrive's rule is one tracking number per publisher and campaign, "
+                              'because two publishers sharing a number kills the ability to say who earned '
+                              'the call and breeds disputes. A sub ID scheme on top tells you which ad, '
+                              'page, or placement produced the call, which TrackDrive calls gold for '
+                              'diagnosing source performance [9uZila67hss @ 00:03:29]. ExclusiveLiveCall '
+                              'pushes the same logic down to the traffic source. It splits one roofing '
+                              'site across separate numbers for Google Ads, SEO, and each subpublisher, so '
+                              'origin follows the call through every routing decision [Hnh5huLjUoE @ '
+                              '00:01:07]. Decoding Ads runs programmatic SEO sites with many numbers on '
+                              "the page. They advise against dropping a pay-per-call network's number "
+                              'directly onto the site. Instead, use your own number and route it yourself '
+                              'through Ringba, which also lets you stand up your own network by adding '
+                              "publishers [OFst3KoUCj0 @ 00:00:38]. Ringba's onboarding shows how cheap "
+                              'that first number is to get. It offers on-demand toll-free and local DID '
+                              'inventory in over 60 countries. The number is auto-assigned to you until '
+                              'publishers exist, and the campaign name carries through every report '
+                              '[8ojiGzzsrV0 @ 00:01:17].',
+                              "Third, nobody lets a paid-for call die at a busy signal. Ringba's position "
+                              'is that if the winning ping buyer does not answer, drops, or returns busy, '
+                              'the platform reruns the process. It then routes to another ping buyer or a '
+                              'normal static buyer, so the ping tree inherits every standard routing rule '
+                              "[yat7hRHHsKY @ 00:04:41]. Ringba's Jordan Soto gives the buyer-side reason "
+                              'the model pays. Buyers can deny calls when the floor has no capacity or the '
+                              'caller is a bad fit, and they can bid harder on high-intent callers or when '
+                              'seats are empty. Soto says this yields higher payouts, fewer abandoned '
+                              'calls, and fatter margins [VTCVhKxmT1o @ 00:00:20]. ExclusiveLiveCall walks '
+                              'the eligibility funnel call by call. Start with ten buyers on a campaign. '
+                              'Strip out the one not covering the zip, the closed one, the one capped for '
+                              'the day, the one at max concurrency, and the one rejecting the traffic '
+                              'source, and maybe three remain [Hnh5huLjUoE @ 00:04:00]. Overflow then '
+                              'tries buyer B and C, because the publisher may already have paid Google $50 '
+                              'to $100 for that click [Hnh5huLjUoE @ 00:10:01]. TrackDrive keeps the two '
+                              'jobs separate when diagnosing problems. A call that went to the wrong place '
+                              'is a routing failure, and a call that should have been stopped is a filter '
+                              'failure [9uZila67hss @ 00:04:10].'],
+               'table': {'caption': 'Where the practitioners line up on call RTB fundamentals',
+                         'headers': ['Consensus Point',
+                                     'What Practitioners Say',
+                                     'Operator Implication',
+                                     'Expert Source'],
+                         'rows': [['RTB equals ping post for live calls',
+                                   'Platform pings buyers with call data; buyers return bid, duration, and '
+                                   'destination in under a second',
+                                   'Treat every inbound call as an auction before the phone ever rings',
+                                   'Ringba ([yat7hRHHsKY @ 00:01:10])'],
+                                  ['Static and RTB are distinct buyer types',
+                                   'Static has no ping post; RTB pings for an available buyer, then posts '
+                                   'the call',
+                                   'Run static only when a single buyer can absorb your call volume',
+                                   'ceohec ([RWVdTqjVYE8 @ 00:04:42])'],
+                                  ['One tracking number per publisher, always',
+                                   'Shared numbers destroy attribution and create credit disputes between '
+                                   'competing publishers',
+                                   'Assign unique numbers plus a clear sub ID scheme before launch',
+                                   'TrackDrive ([9uZila67hss @ 00:03:29])'],
+                                  ['Own your numbers instead of network numbers',
+                                   'Put your own number on SEO pages and route calls through Ringba',
+                                   'Keeps routing control and lets you build your own publisher network',
+                                   'Decoding Ads ([OFst3KoUCj0 @ 00:00:38])'],
+                                  ['Failover when the winner misses the call',
+                                   'An unanswered, dropped, or busy ping winner gets rerouted to the next '
+                                   'buyer',
+                                   'Stack backup ping and static buyers so no paid call dies',
+                                   'Ringba ([yat7hRHHsKY @ 00:04:41])'],
+                                  ['Eligibility shrinks the buyer pool on each call',
+                                   'Zip coverage, hours, caps, concurrency, and source rules remove buyers '
+                                   'per call',
+                                   'Ten listed buyers may mean only three are eligible right now',
+                                   'ExclusiveLiveCall ([Hnh5huLjUoE @ 00:04:00])'],
+                                  ['Buyers bid based on capacity and caller fit',
+                                   'Buyers deny calls when full and bid harder when seats are open',
+                                   'Expect higher payouts and fewer abandoned calls than fixed pricing '
+                                   'delivers',
+                                   'Ringba ([VTCVhKxmT1o @ 00:00:20])']]}},
+              {'heading': 'Section 2: Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['Inside Ringba the build order is campaign, number, target, then payout. The '
+                              'account walkthrough starts with verifying billing documents, or service '
+                              'gets disrupted. A wizard then names the campaign, picks the country, issues '
+                              'a toll-free or local DID, and creates the first target. Use SIP whenever '
+                              'the target accepts it, because it connects faster, sounds better, and '
+                              'converts better. Phone-number targets must include the country code '
+                              '[8ojiGzzsrV0 @ 00:02:20]. The campaign training layers on the controls that '
+                              'protect margin. These include reporting duplicate calls, treating anonymous '
+                              'callers as duplicates, and paying out once per caller regardless of '
+                              'publisher. Recording is on by default, with an option to trim silence. '
+                              'Payouts can be fixed amounts triggered on call length, connection, inbound '
+                              'call, or conversion, or a revenue share with limits [BOFMLupLrSM @ '
+                              '00:01:12]. On each target, the connection timeout defaults to 30 seconds '
+                              'before the call reroutes, and priority 1 is the highest. Two targets with '
+                              'equal weight split traffic 50/50. Caps run on conversions, connections, or '
+                              'revenue at overall, monthly, daily, or hourly levels, with a separate '
+                              'concurrency ceiling [BOFMLupLrSM @ 00:06:12]. The targets training adds tag '
+                              'routing filters with AND and OR rules. It also adds an RPC setting that '
+                              'controls how estimated revenue per call is calculated for each destination '
+                              '[2p-PtocR9pE @ 00:02:29].',
+                              'Ring trees are where Ringba runs the auction. Matthias Musters splits the '
+                              'setup into two layers. The ring tree target is a normal destination with '
+                              'hours, caps, and concurrency, plus a request URL your buyer supplies for '
+                              'pinging. The ring tree houses one or more of those targets. In the demo, '
+                              'the ring tree carries a minimum revenue of $29.01. If no dynamic bid clears '
+                              'that floor, the call drops to a static buyer paying $29, then to one paying '
+                              '$25 [WOqDYpchQOo @ 00:03:31]. Selling into RingbaX follows an exact recipe. '
+                              'Create RingbaX as a buyer, and name the ring tree target by category and '
+                              'traffic source. Toggle dynamic number so the destination arrives during the '
+                              "ping and post, and set Pacific time. Paste the seller offer's bid URL with "
+                              'appended parameters and use GET. Parse the bid with JPath on bidAmount and '
+                              'parse call acceptance with JavaScript. Then build a ring tree named with an '
+                              'RT suffix, with zero minimum revenue and zero failure revenue. It converts '
+                              'on dynamic call length from connect, with a 10-second dial timeout and a '
+                              '3,000 ms ping timeout [uDzWrD17wqg @ 00:02:04]. On the buy side, RingbaX '
+                              'offers static or Ringba RTB destinations. A higher minimum duration lowers '
+                              'your priority in the exchange, and hitting the daily budget stops all '
+                              'bidding [wyW52qkPCrc @ 00:02:26].',
+                              'ceohec runs the same machine on Retreaver, which they describe as free to '
+                              'open and pay-as-you-go at roughly 4 cents a minute. They enable performance '
+                              'marketing and RTB from the shopping cart, then split campaigns by vertical '
+                              'and even by buffer time. They quote auto insurance buffers at anywhere from '
+                              '90 to 180 seconds. The route needs only dummy data, and the IVR prompts '
+                              'should be left alone [RWVdTqjVYE8 @ 00:01:09]. The default conversion '
+                              'criteria act as a fallback, such as a $40 lowest bid on a 120-second auto '
+                              'buffer, while the real bids live as tags at the publisher level. For a '
+                              'publisher such as Market Call, ceohec creates an RTB postback key with a '
+                              'TTL of 45 seconds and a 5-second timeout. They send the link over Telegram '
+                              'and tag the conversion criteria to the exact campaign ID, because without a '
+                              "response to the publisher's ping you get no calls [RWVdTqjVYE8 @ 00:08:03]. "
+                              'Buyers on RTB still need a dummy number plus a pass-through ping webhook. '
+                              'More negative priority wins first, and a buyer left out of the campaign '
+                              "receives nothing. TrackDrive's launch discipline closes the loop. Place "
+                              'real test calls end to end, then start with conservative caps and widen '
+                              'them as quality proves out [ncatAE6wf_0 @ 00:02:38].'],
+               'table': {'caption': 'Exact settings and numbers practitioners use in their builds',
+                         'headers': ['Lever', 'Exact Setting or Number', 'Operator Use', 'Expert Source'],
+                         'rows': [['Retreaver RTB postback key timing',
+                                   'TTL of 45 seconds and a 5-second timeout per publisher key',
+                                   'Copy the link and send it to the publisher rep, usually via Telegram',
+                                   'ceohec ([RWVdTqjVYE8 @ 00:08:03])'],
+                                  ['Billing latency buffer pitched to publishers',
+                                   'Add 8 seconds so a 120-second buffer converts at 128 seconds',
+                                   'Avoid paying for ring time that your buyer never paid you for',
+                                   'ceohec ([RWVdTqjVYE8 @ 00:09:59])'],
+                                  ['RingbaX seller ring tree timeouts',
+                                   '10-second dial timeout and 3,000 millisecond ping timeout',
+                                   'Standard values in the RingbaX seller ring tree setup recipe',
+                                   'Ringba ([uDzWrD17wqg @ 00:02:04])'],
+                                  ['Ring tree minimum revenue floor',
+                                   '$29.01 floor, then static fallbacks at $29 and then $25',
+                                   'Dynamic bids must beat your static money or the call falls through',
+                                   'Ringba ([WOqDYpchQOo @ 00:03:31])'],
+                                  ['Target connection timeout before rerouting',
+                                   '30 seconds by default before the call reroutes onward',
+                                   'Tune it per buyer so unanswered calls move to the next target',
+                                   'Ringba ([BOFMLupLrSM @ 00:04:35])'],
+                                  ['Ping bid comparison example',
+                                   '$25 at one minute, $20 at 1:30, $18 at two minutes',
+                                   'Highest bid wins, and Ringba also scores buyers on estimated earnings '
+                                   'per call',
+                                   'Ringba ([yat7hRHHsKY @ 00:03:41])'],
+                                  ['Retreaver platform usage cost',
+                                   'About 4 cents per minute, pay-as-you-go, with no monthly fee',
+                                   'Budget telecom cost per routed minute instead of a fixed subscription',
+                                   'ceohec ([RWVdTqjVYE8 @ 00:00:36])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Small settings that protect the spread',
+                           'body': 'Four settings that keep billing clean, conversions in sync, supply '
+                                   'private, and connect rates high.',
+                           'items': ['Pitch publishers an extra 8 seconds on the buffer, so 120 seconds '
+                                     'becomes 128. That way, connect and ring time never leave you paying '
+                                     'for a call your buyer did not pay for [ceohec — RWVdTqjVYE8 @ '
+                                     '00:09:59]',
+                                     'Turn on conversion propagation when routing Retreaver to Retreaver. '
+                                     'The 3 to 5 seconds it takes to connect on a 90-second buffer '
+                                     "otherwise makes your conversions and the buyer's disagree [ceohec — "
+                                     'RWVdTqjVYE8 @ 00:06:05]',
+                                     'Keep publisher names and IDs out of fields that buyer collaborators '
+                                     'can see, because that is sensitive info you do not want to release '
+                                     '[ceohec — RWVdTqjVYE8 @ 00:07:05]',
+                                     'Route to SIP whenever the buyer accepts it. Faster connections, '
+                                     'better voice quality, and data passed in the SIP header all lift '
+                                     'conversion rates [Ringba — BOFMLupLrSM @ 00:03:59]']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Lock attribution',
+                              'action': 'Issue a unique tracking number per publisher and source, then '
+                                        'attach a sub ID scheme.',
+                              'detail': 'Shared numbers kill attribution and spark disputes [TrackDrive — '
+                                        '9uZila67hss @ 00:03:29]. Pull toll-free or local DIDs from the '
+                                        'campaign wizard [Ringba — 8ojiGzzsrV0 @ 00:01:39].'},
+                             {'step': 2,
+                              'title': 'Build buyers with guardrails',
+                              'action': 'Create each target or buyer with hours, caps, concurrency, '
+                                        'timeout, and priority set.',
+                              'detail': 'Set caps on conversions, connections, or revenue at overall, '
+                                        'monthly, daily, or hourly levels, plus a concurrency ceiling, '
+                                        'before any traffic flows [Ringba — BOFMLupLrSM @ 00:05:22].'},
+                             {'step': 3,
+                              'title': 'Wire the ping',
+                              'action': 'Generate the RTB postback key or ring tree and send or configure '
+                                        'the bid endpoint.',
+                              'detail': 'On Retreaver, set TTL 45 and a 5-second timeout and tag '
+                                        'conversion criteria to the campaign ID [ceohec — RWVdTqjVYE8 @ '
+                                        '00:08:03]. On RingbaX, use GET with JPath bid parsing [Ringba — '
+                                        'uDzWrD17wqg @ 00:01:04].'},
+                             {'step': 4,
+                              'title': 'Test, then go live small',
+                              'action': 'Place real calls end to end and confirm tracking, routing, '
+                                        'answer, duration, and recording.',
+                              'detail': 'Testing finds problems for the price of a few calls, and caps '
+                                        'should start conservative [TrackDrive — ncatAE6wf_0 @ 00:02:38]. '
+                                        'Watch the test call appear in real time before clicking go live '
+                                        '[Ringba — 8ojiGzzsrV0 @ 00:04:04].'}]},
+              {'heading': 'Section 3: Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['Static versus ping-post is the first fork, and the camps split hard. ceohec '
+                              "tells newcomers that most of the time you don't run static unless you have "
+                              'one buyer that can take the volume; static just means no ping post, while '
+                              'RTB pings the system to see if an available buyer exists and then posts the '
+                              'call through, so no DID is needed [RWVdTqjVYE8 @ 00:04:42]. ceohec reserves '
+                              'static for offers that are fine with calls hitting a cell phone the buyer '
+                              "toggles with pause and play. Ringba's buyer-side RingbaX walkthrough offers "
+                              'both static and Ringba RTB destinations but highly recommends RTB for the '
+                              "most control over how calls get bought [wyW52qkPCrc @ 00:00:38]. Ringba's "
+                              'masterclass refuses the either-or: a call center paying a flat $10 on a '
+                              '1:30 duration and a pay-per-call network paying $11 after two minutes sit '
+                              'on the same routing plan as programmatic bidders, and every buyer gets '
+                              'pinged before the routing decision [yat7hRHHsKY @ 00:05:10]. Matthias '
+                              'Musters builds the hybrid concretely with a ring tree of dynamic targets '
+                              'above static targets and a $29.01 minimum revenue floor; if no bid clears '
+                              'it, the call falls to a static buyer paying $29, then one paying $25 '
+                              '[WOqDYpchQOo @ 00:03:50].',
+                              "How the winner gets picked is the second split. Ringba's masterclass argues "
+                              'the raw top bid is not automatically the winner: ping buyer three bids $12 '
+                              'on a 1:30 duration, yet ping buyer one at $8 on a one-minute duration '
+                              'carries a higher probability of conversion, so Ringba scores every buyer on '
+                              'estimated earnings per call from previous behavior before deciding where '
+                              'the call goes [yat7hRHHsKY @ 00:08:04]. TrackDrive lays the options out as '
+                              'a menu rather than a doctrine: priority, weight, highest bid, historical '
+                              'earnings per call, or ping post, where buyers answer in real time whether '
+                              'they want the call and what they will pay [9uZila67hss @ 00:02:34]. '
+                              'ExclusiveLiveCall pushes back on the reflex to dump everything on the $200 '
+                              'buyer over the $120 and $150 buyers, because that buyer may have limited '
+                              'capacity, you may hold contractual volume commitments, or certain '
+                              'publishers may carry different buyer relationships [Hnh5huLjUoE @ '
+                              '00:04:56]. ceohec runs the blunt version inside Retreaver: priority is set '
+                              'so whoever is bidding more gets the calls before anybody else, with the '
+                              'more negative number earning the higher priority [RWVdTqjVYE8 @ 00:11:41]. '
+                              'Four operators, four answers: modeled EPC, a selectable menu, '
+                              'contract-aware rules, and plain bid-ranked priority.',
+                              'The fiercest contrast is what the system does with the caller before and '
+                              'after the bid. ceohec tells beginners to ignore the IVR prompts completely '
+                              "and leave them exactly as they are, using a 'this is Farmers Insurance, "
+                              "please state your name' greeting as the example of what not to build "
+                              '[RWVdTqjVYE8 @ 00:03:25]. ExclusiveLiveCall treats caller data as the '
+                              'backbone of matching instead: the system asks for a five-digit zip code '
+                              'through an IVR, or a conversational AI receptionist asks what service the '
+                              "caller needs, hears 'my air conditioner stopped working,' tags it HVAC, and "
+                              'then collects the zip conversationally [Hnh5huLjUoE @ 00:03:10]. On dead '
+                              "calls, Ringba's answer is mechanical overflow: if ping buyer one doesn't "
+                              "answer, the call drops, or there's a busy signal, the platform reruns the "
+                              'process and routes to another ping buyer or a normal routing-plan buyer '
+                              'because it will not let that phone call die [yat7hRHHsKY @ 00:04:41]. '
+                              'ExclusiveLiveCall pushes past overflow into recovery: when a contractor is '
+                              'not answering at 8:00 at night, an AI receptionist schedules a slot on the '
+                              "buyer's calendar, turning a call worth $0 into a monetizable appointment, "
+                              'or banks the stated need and zip code as a lead record for a different '
+                              'monetization path [Hnh5huLjUoE @ 00:12:04].'],
+               'table': {'caption': 'Competing playbooks for platform setup and real-time call bidding',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Static buyers versus ping-post RTB routing for new operators',
+                                   'ceohec: skip static unless one buyer can absorb the volume',
+                                   'Ringba: put static and programmatic buyers on one routing plan',
+                                   'ceohec ([RWVdTqjVYE8 @ 00:04:42]); Ringba ([yat7hRHHsKY @ 00:05:10])'],
+                                  ['Choosing the winning buyer among several returned bids',
+                                   'Ringba scores estimated earnings per call from prior buyer behavior',
+                                   'ceohec ranks by priority so higher bidders get calls first',
+                                   'Ringba ([yat7hRHHsKY @ 00:08:04]); ceohec ([RWVdTqjVYE8 @ 00:11:41])'],
+                                  ['Collecting caller data before the routing decision is made',
+                                   'ceohec: beginners should ignore IVR prompts and leave defaults alone',
+                                   'ExclusiveLiveCall: zip code via IVR or a conversational AI '
+                                   'receptionist',
+                                   'ceohec ([RWVdTqjVYE8 @ 00:03:25]); ExclusiveLiveCall ([Hnh5huLjUoE @ '
+                                   '00:03:10])'],
+                                  ['Handling a call when the chosen buyer never answers',
+                                   'Ringba reruns the process and overflows to another ping or static '
+                                   'buyer',
+                                   'ExclusiveLiveCall: AI books appointments or saves the caller as a lead',
+                                   'Ringba ([yat7hRHHsKY @ 00:04:41]); ExclusiveLiveCall ([Hnh5huLjUoE @ '
+                                   '00:12:04])'],
+                                  ["Whose phone number goes on the publisher's ranking website",
+                                   'Decoding Ads: never paste a network number directly, route your own',
+                                   "Automate & Chill: pull a local 626 number from LeadSmart's Ringba "
+                                   'dashboard',
+                                   'Decoding Ads ([OFst3KoUCj0 @ 00:00:38]); Automate & Chill By Abhishek '
+                                   'Sood ([g7SAWXINXDo @ 00:01:33])'],
+                                  ['Platform cost model for running the tracking and routing stack',
+                                   'ceohec: Retreaver is free pay-as-you-go, about 4 cents per minute',
+                                   'Ringba: verified card and documents on file or service gets disrupted',
+                                   'ceohec ([RWVdTqjVYE8 @ 00:00:36]); Ringba ([8ojiGzzsrV0 @ 00:00:19])'],
+                                  ['Setting volume limits on a brand-new buyer or publisher',
+                                   'TrackDrive: start with conservative caps and widen as quality proves '
+                                   'out',
+                                   'Ringba stacks global, monthly, daily, and hourly cap rules per target',
+                                   'TrackDrive ([ncatAE6wf_0 @ 00:03:34]); Ringba ([2p-PtocR9pE @ '
+                                   '00:01:56])']]}},
+              {'heading': 'Section 4: Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The most expensive firsthand trap is billing duration drift. ceohec '
+                              'explains that connecting a call takes 3, 4, 5 seconds, so on a 90-second '
+                              'buffer you lose time to latency, and for Retreaver-to-Retreaver routing '
+                              'conversion propagation has to be switched on so the conversion on the '
+                              "buyer's end fires on your end too [RWVdTqjVYE8 @ 00:06:05]. The bigger fix "
+                              'is negotiated, not technical: when buying from a publisher like Market Call '
+                              'on a 120-second buffer at $30, ceohec asks for 8 extra seconds so the call '
+                              'converts at 128 seconds, because ringing time otherwise leaves you paying '
+                              'the publisher for a call your buyer never paid you for [RWVdTqjVYE8 @ '
+                              '00:10:15]. RingbaX adds a buyer-side twist: minimum duration is only '
+                              'available on static routing, and the higher you set it, the less priority '
+                              "the campaign gets in the exchange [wyW52qkPCrc @ 00:02:26]. Ringba's "
+                              'masterclass shows why duration matters inside the auction itself, treating '
+                              'an $8 bid on a one-minute duration as a higher conversion probability than '
+                              "a $12 bid on 1:30 [yat7hRHHsKY @ 00:07:47]. ceohec's rule is flat: always "
+                              'add on that latency before the publisher deal is signed, or eat the gap '
+                              'between your buy-side and sell-side timers on every call.',
+                              'Silent configuration errors kill volume before a single caller hears a '
+                              'ring. ceohec warns that when a publisher pings your system you need a '
+                              "response, and with no conversion criteria set up you won't get calls; the "
+                              "walkthrough then hits the trap live, forgetting that the conversion tag's "
+                              'campaign ID must match the auto insurance campaign ID 6DB and having to go '
+                              'back into the Market Call publisher to retag it [RWVdTqjVYE8 @ 00:09:15]. '
+                              'The same build flags that a call buyer added to a campaign is live right '
+                              'away, so the safe move is to click pause buyer until that buyer is ready '
+                              'and let them press play themselves through collaborator access [RWVdTqjVYE8 '
+                              "@ 00:15:37]. Ringba's account setup warns that skipping billing "
+                              'verification and the required document upload can disrupt service when the '
+                              'card cannot be billed [8ojiGzzsrV0 @ 00:00:19]. TrackDrive names test calls '
+                              'as the step most often skipped and the cheapest to do: place real calls '
+                              'start to finish, then check the call is tracked, routed to the right buyer, '
+                              'answered, timed correctly, and recorded as expected, so a mistake costs a '
+                              'few phone calls instead of a whole day of wasted traffic [ncatAE6wf_0 @ '
+                              '00:02:38].',
+                              'Unit economics break hardest on calls that look good and still go wrong. '
+                              'ceohec describes the area-code routing trap: a Texas-licensed buyer gets a '
+                              '214 Dallas caller who has moved to Florida, where the buyer is not '
+                              'licensed, and you will most likely refund the buyer and still eat the call, '
+                              'a rare one-off but a real loss [RWVdTqjVYE8 @ 00:12:49]. ExclusiveLiveCall '
+                              'frames the no-answer loss: the publisher may already have paid Google $50 '
+                              'or $100 for the click, the consumer and the intent were real, and because '
+                              'nobody picked up, the opportunity disappears unless overflow or recovery '
+                              'catches it [Hnh5huLjUoE @ 00:10:01]. Recordings cut the other way too. One '
+                              'Ringba-titled upload is a parody of the onboarding pitch that ends in an '
+                              "investigator's exposé: a supposed travel company running campaigns named "
+                              "'USA Blue Screen of Death' and 'UK adult' recorded every call through "
+                              'Ringba as its VoIP provider, and those recordings let outsiders listen in '
+                              'on fake tech-support pitches [RVobRCTpSEg @ 00:04:08]. A companion parody '
+                              "mocks the RTB pitch itself as a way to 'drop bids when lawsuits rise' "
+                              '[eLfL-CGZaa4 @ 00:01:21]. Every recorded call becomes a permanent trail of '
+                              'what the operation actually sells.'],
+               'table': {'caption': 'Firsthand failure modes and the economics check each one demands',
+                         'headers': ['Failure Mode',
+                                     'What Went Wrong Firsthand',
+                                     'Economics Check Or Fix',
+                                     'Expert Source'],
+                         'rows': [['Ringing latency eats the billable duration buffer on every call',
+                                   'Connects take 3 to 5 seconds, so buy-side and sell-side timers drift',
+                                   'Ask publishers for 8 extra seconds so calls convert at 128, not 120',
+                                   'ceohec ([RWVdTqjVYE8 @ 00:09:59])'],
+                                  ['Publisher pings return nothing and the calls never arrive',
+                                   "Missing conversion criteria means no response to the publisher's ping "
+                                   'request',
+                                   'Tag conversion criteria with the exact matching campaign ID before '
+                                   'launch',
+                                   'ceohec ([RWVdTqjVYE8 @ 00:08:21])'],
+                                  ['Area-code geo routing sends out-of-license callers to licensed buyers',
+                                   'A Texas-licensed buyer got a 214 caller who had moved to Florida',
+                                   'Expect to refund that buyer and still eat the cost of the call',
+                                   'ceohec ([RWVdTqjVYE8 @ 00:12:49])'],
+                                  ['Shared tracking numbers across multiple publishers on one campaign',
+                                   'Two publishers on one number erases any record of who earned the call',
+                                   'Give every publisher its own tracking number to stop payout disputes',
+                                   'TrackDrive ([9uZila67hss @ 00:03:50])'],
+                                  ['No-answer calls after the publisher already paid for the click',
+                                   'A $50 to $100 Google click dies when nobody picks up the phone',
+                                   'Configure overflow so buyer B, then buyer C, gets a shot first',
+                                   'ExclusiveLiveCall ([Hnh5huLjUoE @ 00:10:01])'],
+                                  ['Ring tree builds break on technical request and bid parsing settings',
+                                   'Ringba itself calls ring tree technology inherently technical for call '
+                                   'sellers',
+                                   'Lean on live-chat support engineers or the RingbaX team for setup',
+                                   'Ringba ([WOqDYpchQOo @ 00:00:52])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Pre-Launch Kill Switches',
+                           'body': 'Four practitioner-reported pitfalls that must be cleared before paid '
+                                   'traffic touches the routing plan.',
+                           'items': ['Do not send paid traffic until real test calls confirm tracking, '
+                                     'buyer routing, an answer, correct timing, and recording end to end '
+                                     '[TrackDrive — ncatAE6wf_0 @ 00:02:38].',
+                                     "Do not accept a publisher's billable duration until it carries the "
+                                     "8-second latency pad over your buyer's buffer [ceohec — RWVdTqjVYE8 "
+                                     '@ 00:09:59].',
+                                     'Do not add a call buyer to a campaign before they are ready; they go '
+                                     'live immediately, so hit pause buyer first [ceohec — RWVdTqjVYE8 @ '
+                                     '00:15:37].',
+                                     'Do not launch a ring tree without a minimum revenue floor and static '
+                                     'targets underneath it to catch bids that fall short [Ringba — '
+                                     'WOqDYpchQOo @ 00:03:50].']}}],
+ 'pull_quote': '"Before we allow a legitimate opportunity to die, we want the routing engine to look for '
+               'additional ways to monetize it." — ExclusiveLiveCall (Hnh5huLjUoE @ 00:08:34).',
+ 'diagram_id': 'diag-04',
+ 'action_checklist': ['Split campaigns by vertical and by buffer time, running a separate campaign for the '
+                      'same offer at a different duration [ceohec — RWVdTqjVYE8 @ 00:01:45].',
+                      "Create each publisher's RTB postback key with TTL at 45 seconds and timeout at 5 "
+                      "seconds, then send the link to the publisher's rep [ceohec — RWVdTqjVYE8 @ "
+                      '00:08:03].',
+                      'Connect targets over SIP whenever the buyer accepts it for higher voice quality and '
+                      'faster connection times [Ringba — 8ojiGzzsrV0 @ 00:02:20].',
+                      'Build the RingbaX seller ring tree with minimum and failure revenue at zero, '
+                      'convert on dynamic call length, dial timeout 10 seconds, and ping timeout 3,000 '
+                      'milliseconds [Ringba — uDzWrD17wqg @ 00:02:04].',
+                      'Switch on duplicate call reporting and payout once per caller so one caller ID '
+                      'cannot trigger multiple publisher payouts [Ringba — BOFMLupLrSM @ 00:01:12].',
+                      'Download call recordings from Ringba reporting and run them through AI '
+                      'transcription to mine neighborhoods and micro-services by zip code [Automate & '
+                      'Chill By Abhishek Sood — g7SAWXINXDo @ 00:03:13].'],
+ 'statutory_citations': [{'title': 'Ringba — Pay Per Call Masterclass - Real Time Bidding for Calls '
+                                   '[00:07:47]',
+                          'url': 'https://www.youtube.com/watch?v=yat7hRHHsKY&t=467s',
+                          'relevance': 'Primary practitioner testimony on ping-tree bid scoring by '
+                                       'estimated earnings per call across static and programmatic '
+                                       'buyers.'},
+                         {'title': 'ceohec — How To Set Up Retreaver (Pay Per Call) [00:09:59]',
+                          'url': 'https://www.youtube.com/watch?v=RWVdTqjVYE8&t=599s',
+                          'relevance': 'Primary practitioner testimony on RTB postback setup and the '
+                                       '8-second latency pad on publisher durations.'},
+                         {'title': 'ExclusiveLiveCall — How Pay Per Call Routing Actually Works | RTB, '
+                                   'Overflow & AI Call Recovery | Pay Per Call Episode #7 [00:06:45]',
+                          'url': 'https://www.youtube.com/watch?v=Hnh5huLjUoE&t=405s',
+                          'relevance': 'Primary practitioner testimony on ping-based RTB to external '
+                                       'partners, overflow, and AI call recovery.'},
+                         {'title': 'Ringba — Ringba Product Training: Routing Calls to Dynamic Ring Tree '
+                                   'Targets [00:03:50]',
+                          'url': 'https://www.youtube.com/watch?v=WOqDYpchQOo&t=230s',
+                          'relevance': 'Primary practitioner testimony on ring tree minimum revenue floors '
+                                       'with static target fallback.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'yat7hRHHsKY',
+                       'title': 'Pay Per Call Masterclass - Real Time Bidding for Calls',
+                       'channel': 'Ringba',
+                       'author': 'Ringba',
+                       'text': 'What we do is we figure out the estimated earnings per call based on '
+                               'previous behavior of all these buyers and then we decide which one is '
+                               'going to make the most amount of money for you.',
+                       'tip': 'What we do is we figure out the estimated earnings per call based on '
+                              'previous behavior of all these buyers and then we decide which one is going '
+                              'to make the most amount of money for you.',
+                       'timestamp': 484,
+                       'timestamp_seconds': 484,
+                       'timestamp_label': '[00:08:04]',
+                       'url': 'https://www.youtube.com/watch?v=yat7hRHHsKY&t=484s',
+                       'markdown': '[00:08:04](https://www.youtube.com/watch?v=yat7hRHHsKY&t=484s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'VTCVhKxmT1o',
+                       'title': 'How Real Time Bidding Works With Ringba',
+                       'channel': 'Ringba',
+                       'author': 'Ringba',
+                       'text': 'This technology is beneficial because it allows the buyer to deny calls '
+                               'when their call center has no capacity or when they already know that a '
+                               'potential customer is not a good fit for their products.',
+                       'tip': 'This technology is beneficial because it allows the buyer to deny calls '
+                              'when their call center has no capacity or when they already know that a '
+                              'potential customer is not a good fit for their products.',
+                       'timestamp': 20,
+                       'timestamp_seconds': 20,
+                       'timestamp_label': '[00:00:20]',
+                       'url': 'https://www.youtube.com/watch?v=VTCVhKxmT1o&t=20s',
+                       'markdown': '[00:00:20](https://www.youtube.com/watch?v=VTCVhKxmT1o&t=20s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '8ojiGzzsrV0',
+                       'title': 'Account Setup | Ringba Call Tracking & Analytics',
+                       'channel': 'Ringba',
+                       'author': 'Ringba',
+                       'text': 'Whenever possible you will want to connect to your targets using SIP; SIP '
+                               'has a higher voice quality and a faster connection time which results in a '
+                               'better conversion rate.',
+                       'tip': 'Whenever possible you will want to connect to your targets using SIP; SIP '
+                              'has a higher voice quality and a faster connection time which results in a '
+                              'better conversion rate.',
+                       'timestamp': 140,
+                       'timestamp_seconds': 140,
+                       'timestamp_label': '[00:02:20]',
+                       'url': 'https://www.youtube.com/watch?v=8ojiGzzsrV0&t=140s',
+                       'markdown': '[00:02:20](https://www.youtube.com/watch?v=8ojiGzzsrV0&t=140s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'eLfL-CGZaa4',
+                       'title': "How Programmatic Call Buying Works with Ringba's Real time Bidding System",
+                       'channel': 'Ringba',
+                       'author': 'Ringba',
+                       'text': 'Raise your budget during crisis hours. Drop bids when lawsuits rise and '
+                               'adjust operations without ever speaking to a single human being.',
+                       'tip': 'Raise your budget during crisis hours. Drop bids when lawsuits rise and '
+                              'adjust operations without ever speaking to a single human being.',
+                       'timestamp': 81,
+                       'timestamp_seconds': 81,
+                       'timestamp_label': '[00:01:21]',
+                       'url': 'https://www.youtube.com/watch?v=eLfL-CGZaa4&t=81s',
+                       'markdown': '[00:01:21](https://www.youtube.com/watch?v=eLfL-CGZaa4&t=81s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'BOFMLupLrSM',
+                       'title': 'Creating Campaigns | Ringba Platform Training',
+                       'channel': 'Ringba',
+                       'author': 'Ringba',
+                       'text': 'With payout once per caller you can allow only one payout to occur per '
+                               'caller ID regardless of the publisher.',
+                       'tip': 'With payout once per caller you can allow only one payout to occur per '
+                              'caller ID regardless of the publisher.',
+                       'timestamp': 72,
+                       'timestamp_seconds': 72,
+                       'timestamp_label': '[00:01:12]',
+                       'url': 'https://www.youtube.com/watch?v=BOFMLupLrSM&t=72s',
+                       'markdown': '[00:01:12](https://www.youtube.com/watch?v=BOFMLupLrSM&t=72s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'uDzWrD17wqg',
+                       'title': 'RingbaX |  How to Setup a Seller Ring Tree and Ring Tree Target',
+                       'channel': 'Ringba',
+                       'author': 'Ringba',
+                       'text': 'Set minimum revenue to zero and failure revenue to zero, then set the dial '
+                               'timeout to 10 seconds and ping timeout to 3,000 milliseconds.',
+                       'tip': 'Set minimum revenue to zero and failure revenue to zero, then set the dial '
+                              'timeout to 10 seconds and ping timeout to 3,000 milliseconds.',
+                       'timestamp': 124,
+                       'timestamp_seconds': 124,
+                       'timestamp_label': '[00:02:04]',
+                       'url': 'https://www.youtube.com/watch?v=uDzWrD17wqg&t=124s',
+                       'markdown': '[00:02:04](https://www.youtube.com/watch?v=uDzWrD17wqg&t=124s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'WOqDYpchQOo',
+                       'title': 'Ringba Product Training: Routing Calls to Dynamic Ring Tree Targets',
+                       'channel': 'Ringba',
+                       'author': 'Ringba',
+                       'text': "If none of the bids are higher than 29 we'll then resort to selecting "
+                               'whichever target is next in your routing plan, be that one of these static '
+                               'targets or even another ring tree with other dynamic targets.',
+                       'tip': "If none of the bids are higher than 29 we'll then resort to selecting "
+                              'whichever target is next in your routing plan, be that one of these static '
+                              'targets or even another ring tree with other dynamic targets.',
+                       'timestamp': 251,
+                       'timestamp_seconds': 251,
+                       'timestamp_label': '[00:04:11]',
+                       'url': 'https://www.youtube.com/watch?v=WOqDYpchQOo&t=251s',
+                       'markdown': '[00:04:11](https://www.youtube.com/watch?v=WOqDYpchQOo&t=251s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'RVobRCTpSEg',
+                       'title': 'Getting Started with Ringba (2025) | Ringba Call Tracking & Analytics | '
+                                'Live demonstration',
+                       'channel': 'Ringba',
+                       'author': 'Ringba',
+                       'text': 'They happened to record audio on a different system called Ringba, their '
+                               'VoIP provider, which had the advantage where every phone call they '
+                               'received was recorded.',
+                       'tip': 'They happened to record audio on a different system called Ringba, their '
+                              'VoIP provider, which had the advantage where every phone call they received '
+                              'was recorded.',
+                       'timestamp': 231,
+                       'timestamp_seconds': 231,
+                       'timestamp_label': '[00:03:51]',
+                       'url': 'https://www.youtube.com/watch?v=RVobRCTpSEg&t=231s',
+                       'markdown': '[00:03:51](https://www.youtube.com/watch?v=RVobRCTpSEg&t=231s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'RWVdTqjVYE8',
+                       'title': 'How To Set Up Retreaver (Pay Per Call)',
+                       'channel': 'ceohec',
+                       'author': 'ceohec',
+                       'text': "You need to add 8 seconds onto this, so it's going to convert on 128 "
+                               "seconds rather than 120 seconds, just to make sure we don't have any "
+                               'discrepancies in the billing.',
+                       'tip': "You need to add 8 seconds onto this, so it's going to convert on 128 "
+                              "seconds rather than 120 seconds, just to make sure we don't have any "
+                              'discrepancies in the billing.',
+                       'timestamp': 599,
+                       'timestamp_seconds': 599,
+                       'timestamp_label': '[00:09:59]',
+                       'url': 'https://www.youtube.com/watch?v=RWVdTqjVYE8&t=599s',
+                       'markdown': '[00:09:59](https://www.youtube.com/watch?v=RWVdTqjVYE8&t=599s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'RWVdTqjVYE8',
+                       'title': 'How To Set Up Retreaver (Pay Per Call)',
+                       'channel': 'ceohec',
+                       'author': 'ceohec',
+                       'text': "You'll most likely have to refund them that call and still eat the call "
+                               "because it's routed by area code.",
+                       'tip': "You'll most likely have to refund them that call and still eat the call "
+                              "because it's routed by area code.",
+                       'timestamp': 769,
+                       'timestamp_seconds': 769,
+                       'timestamp_label': '[00:12:49]',
+                       'url': 'https://www.youtube.com/watch?v=RWVdTqjVYE8&t=769s',
+                       'markdown': '[00:12:49](https://www.youtube.com/watch?v=RWVdTqjVYE8&t=769s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '9uZila67hss',
+                       'title': 'How Calls Are Tracked and Routed | Pay-Per-Call Masterclass',
+                       'channel': 'TrackDrive',
+                       'author': 'TrackDrive',
+                       'text': 'Give every publisher its own tracking number so every call is '
+                               'attributable.',
+                       'tip': 'Give every publisher its own tracking number so every call is attributable.',
+                       'timestamp': 230,
+                       'timestamp_seconds': 230,
+                       'timestamp_label': '[00:03:50]',
+                       'url': 'https://www.youtube.com/watch?v=9uZila67hss&t=230s',
+                       'markdown': '[00:03:50](https://www.youtube.com/watch?v=9uZila67hss&t=230s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ncatAE6wf_0',
+                       'title': 'Setting Up a Campaign | Pay-Per-Call Masterclass',
+                       'channel': 'TrackDrive',
+                       'author': 'TrackDrive',
+                       'text': 'Start with conservative caps and widen them as quality is proven.',
+                       'tip': 'Start with conservative caps and widen them as quality is proven.',
+                       'timestamp': 214,
+                       'timestamp_seconds': 214,
+                       'timestamp_label': '[00:03:34]',
+                       'url': 'https://www.youtube.com/watch?v=ncatAE6wf_0&t=214s',
+                       'markdown': '[00:03:34](https://www.youtube.com/watch?v=ncatAE6wf_0&t=214s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Hnh5huLjUoE',
+                       'title': 'How Pay Per Call Routing Actually Works | RTB, Overflow & AI Call '
+                                'Recovery | Pay Per Call Episode #7',
+                       'channel': 'ExclusiveLiveCall',
+                       'author': 'ExclusiveLiveCall',
+                       'text': 'Before we allow a legitimate opportunity to die, we want the routing '
+                               'engine to look for additional ways to monetize it.',
+                       'tip': 'Before we allow a legitimate opportunity to die, we want the routing engine '
+                              'to look for additional ways to monetize it.',
+                       'timestamp': 514,
+                       'timestamp_seconds': 514,
+                       'timestamp_label': '[00:08:34]',
+                       'url': 'https://www.youtube.com/watch?v=Hnh5huLjUoE&t=514s',
+                       'markdown': '[00:08:34](https://www.youtube.com/watch?v=Hnh5huLjUoE&t=514s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'OFst3KoUCj0',
+                       'title': 'Ringba Setup Tutorial 2026 🔥 | Complete Pay Per Call Tracking Setup',
+                       'channel': 'Decoding Ads',
+                       'author': 'Decoding Ads',
+                       'text': 'Should we use a number from any pay-per-call network directly? I always '
+                               'advise against it. You should use your own number and route it '
+                               'accordingly.',
+                       'tip': 'Should we use a number from any pay-per-call network directly? I always '
+                              'advise against it. You should use your own number and route it accordingly.',
+                       'timestamp': 38,
+                       'timestamp_seconds': 38,
+                       'timestamp_label': '[00:00:38]',
+                       'url': 'https://www.youtube.com/watch?v=OFst3KoUCj0&t=38s',
+                       'markdown': '[00:00:38](https://www.youtube.com/watch?v=OFst3KoUCj0&t=38s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'g7SAWXINXDo',
+                       'title': 'LeadSmart Pay Per Call Affiliate Approval & How to get trackable phone '
+                                'number from Ringba',
+                       'channel': 'Automate & Chill By Abhishek Sood',
+                       'author': 'Automate & Chill By Abhishek Sood',
+                       'text': 'You can play this recording from here, download it, and submit it to the '
+                               'AI for transcription.',
+                       'tip': 'You can play this recording from here, download it, and submit it to the AI '
+                              'for transcription.',
+                       'timestamp': 193,
+                       'timestamp_seconds': 193,
+                       'timestamp_label': '[00:03:13]',
+                       'url': 'https://www.youtube.com/watch?v=g7SAWXINXDo&t=193s',
+                       'markdown': '[00:03:13](https://www.youtube.com/watch?v=g7SAWXINXDo&t=193s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '2p-PtocR9pE',
+                       'title': 'Creating Targets | Ringba Platform Training',
+                       'channel': 'Ringba',
+                       'author': 'Ringba',
+                       'text': 'You can set global, monthly, daily and hourly caps and Ringba will '
+                               'gracefully stack cap rules for your target.',
+                       'tip': 'You can set global, monthly, daily and hourly caps and Ringba will '
+                              'gracefully stack cap rules for your target.',
+                       'timestamp': 116,
+                       'timestamp_seconds': 116,
+                       'timestamp_label': '[00:01:56]',
+                       'url': 'https://www.youtube.com/watch?v=2p-PtocR9pE&t=116s',
+                       'markdown': '[00:01:56](https://www.youtube.com/watch?v=2p-PtocR9pE&t=116s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'wyW52qkPCrc',
+                       'title': 'How to Create a RingbaX Campaign | Buyers | RingbaX',
+                       'channel': 'Ringba',
+                       'author': 'Ringba',
+                       'text': 'Please note that the higher you set your minimum duration the less '
+                               'priority it will be given in the exchange.',
+                       'tip': 'Please note that the higher you set your minimum duration the less priority '
+                              'it will be given in the exchange.',
+                       'timestamp': 146,
+                       'timestamp_seconds': 146,
+                       'timestamp_label': '[00:02:26]',
+                       'url': 'https://www.youtube.com/watch?v=wyW52qkPCrc&t=146s',
+                       'markdown': '[00:02:26](https://www.youtube.com/watch?v=wyW52qkPCrc&t=146s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q2.'}]}

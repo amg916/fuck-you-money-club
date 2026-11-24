@@ -1,622 +1,828 @@
 from __future__ import annotations
 
-CHAPTER_5 = {
-    "id": "Q5",
-    "chapter_id": "Q5",
-    "chapter_number": 5,
-    "question_number": 5,
-    "slug": "beginner-traps-clawbacks-and-asymmetric-failure-modes",
-    "question_prompt": "What kills 80% of newcomers in buying group, commercial card-float & rebate arbitrage, and what forensic metrics detect margin leaks, regulatory landmines, or platform bans before they wipe out capital?",
-    "kicker": "Q5 / THE BIG MONEY PLAYBOOKS",
-    "title": "Beginner Traps, Clawbacks & Asymmetric Failure Modes",
-    "subtitle": "Buying-Group ACH Exposure, Rakuten Clawbacks, Commercial Card Repayment, IRC Records & Treasury Liquidity",
-    "layout_template": "expert_insights",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #41, Rank #10 of 43, earns 93/100 across a shelf with 11 mapped plays, "
-        "but its efficiency disappears when operators confuse reimbursements, rewards, and borrowed "
-        "principal. This chapter isolates buying-group fulfillment, commercial card and portal rebates, "
-        "and bank/T-bill treasury bonuses into separate control ledgers. The canonical annual owner "
-        "profit cases are $20,000 Conservative, $143,500 Base, and $360,000 Scaled; none makes "
-        "pending ACH or conditional rewards spendable. Learn to detect disappearing rebate eligibility, "
-        "warehouse acceptance defects, issuer concentration, promotional-rate expiry, and entity-history "
-        "misrepresentation before they consume repayment reserves. Concrete loss waterfalls, aging "
-        "thresholds, shipment evidence, and financing fallbacks turn attractive headline spreads into "
-        "auditable decisions. The question's 80% framing is not a measured failure rate."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$250,000",
-            "context": "Annual gross scorecard basis; $87,500 retained contribution at 35%",
-            "note": "8% gross-basis net margin; $20,000 owner profit; 22.86% retained margin; 1 FT + 2 C",
-        },
-        {
-            "label": "Base",
-            "value": "$1,025,000",
-            "context": "Annual gross scorecard basis; $358,750 retained contribution at 35%",
-            "note": "14.0% gross-basis net margin; $143,500 owner profit; 40.0% retained margin; 1 FT + 2 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$1,800,000",
-            "context": "Annual gross scorecard basis; $630,000 retained contribution at 35%",
-            "note": "20% gross-basis net margin; $360,000 owner profit; 57.14% retained margin; 2 FT + 3 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Separate Three Economic Engines Before Measuring Any Spread",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "The first fatal trap is treating every dollar crossing the bank account as earned "
-                    "income. Maintain three economic engines: wholesale buying-group fulfillment, commercial "
-                    "card and shopping-portal rebates, and bank/T-bill treasury returns. For fulfillment, "
-                    "record merchandise cost, committed reimbursement, delivery acceptance, and settlement "
-                    "separately. For rebates, record eligibility, tracked amounts, approved amounts, and cash "
-                    "received; a portal notification is evidence of tracking, not an unconditional receivable. "
-                    "For treasury, record principal as an asset or liability and yield as the economic "
-                    "return. Card-funded inventory creates a repayment obligation even if a buying group "
-                    "rejects delivery. Candidate #41's Formula v2.0 uses a 35% retained-share bridge, producing "
-                    "$87,500, $358,750, and $630,000 from the three canonical gross bases. Owner profits "
-                    "remain $20,000, $143,500, and $360,000. Their gross-basis margins are 8%, 14.0%, "
-                    "and 20%; their retained margins are 22.86%, 40.0%, and 57.14%. Treat that bridge "
-                    "as the supplied planning convention, not proof that ordinary electronics fulfillment "
-                    "earns a 35% spread. ASC 606 principal-versus-agent presentation requires transaction-specific "
-                    "analysis; a fixed percentage does not establish accounting treatment. Merchant sales "
-                    "volume, bank transfers, and loan principal must never inflate recognized operator "
-                    "revenue. Reconcile both gross and retained views without adding them together."
-                ),
-                (
-                    "Build a purchase-level waterfall before clicking through any portal. Consider an "
-                    "illustrative $10,000 merchandise order with a written $10,050 buying-group reimbursement, "
-                    "$200 eligible commercial-card rewards, and $100 eligible portal rewards. Deduct $70 "
-                    "shipping and insurance plus a $40 expected defect reserve. Contribution is $240 "
-                    "before overhead and financing: $50 merchandise spread plus $300 rewards minus $110 "
-                    "costs. If the portal excludes resale purchases, contribution falls to $140; if the "
-                    "card also excludes the transaction, the order loses $60. These are sensitivity cases, "
-                    "not published BuyForMeRetail, Pointsmaker, or MaxOutDeals terms. A hypothetical additional "
-                    "2.9% payment fee on the same $10,000 removes another $290 and turns the fully "
-                    "rewarded case into a $50 loss. Do not insert Plastiq or Melio into a merchant "
-                    "checkout merely to manufacture this stack; analyze their eligible business-invoice "
-                    "workflows independently. A reserve estimates recurring losses but does not cap a "
-                    "single missing parcel. Require a second view with zero portal payout, one damaged "
-                    "unit, and delayed reimbursement. Reject orders whose repayment depends on optimistic "
-                    "reward recognition, and preserve the exact vendor terms supporting each included "
-                    "credit. Compare modeled contribution with realized contribution after every settlement "
-                    "rather than celebrating a rising purchase total."
-                ),
-                (
-                    "The second accounting trap is exporting blended scorecard margins into every operating "
-                    "decision. A $1,025,000 gross basis and $143,500 owner profit describe the canonical "
-                    "Base scenario, not permission to approve any order with a nominal 14% spread. "
-                    "The $358,750 retained bridge leaves $215,250 between retained contribution and owner "
-                    "profit; that amount represents the scenario's remaining cost burden, not a newly "
-                    "asserted monthly fixed budget. Keep the supplied $1,500–$9,000 monthly operating-expense "
-                    "range distinct from transaction losses, payment costs, and other scenario deductions. "
-                    "Allocate shared overhead once, then measure each engine before allocation so a "
-                    "bank bonus cannot hide a losing fulfillment cohort. Require unique identifiers linking "
-                    "purchase, shipment, reimbursement, reward, and repayment records. Suggested internal "
-                    "circuit-breakers are a realized contribution shortfall exceeding 20% against the approved "
-                    "order model, an unreconciled cash difference persisting beyond two business days, or "
-                    "any transaction with negative contribution after confirmed fees. Freeze the affected "
-                    "route while investigating; do not average it into a profitable month. Startup "
-                    "capital of $10,000–$55,000 and a one-to-three-month first-deal window reinforce the "
-                    "need for small pilots. Scale only after completed cash cycles demonstrate both "
-                    "positive contribution and repayment capacity, not after a larger credit limit appears."
-                ),
-            ],
-            "table": {
-                "caption": "Seven Economic Misclassifications and the Ledger Tests That Expose Them",
-                "headers": [
-                    "Beginner failure and affected economic engine",
-                    "Required measurement and substantive evidence",
-                    "Illustrative trigger requiring immediate operator attention",
-                    "Circuit-breaker and practical recovery action",
-                ],
-                "rows": [
-                    [
-                        "Wholesale reimbursement is mistaken for freely distributable earnings",
-                        "Match reimbursement against landed merchandise cost and outstanding card liability",
-                        "Any distribution leaves the next statement repayment insufficiently funded",
-                        "Restore repayment cash before approving additional inventory purchase commitments",
-                    ],
-                    [
-                        "Tracked portal rewards are booked as settled operating cash",
-                        "Separate tracked, approved, payable, and received reward ledger states",
-                        "Purchase becomes unprofitable when its conditional portal reward disappears",
-                        "Exclude conditional rewards from repayment funding and resize orders",
-                    ],
-                    [
-                        "The canonical retained percentage becomes an assumed merchandise markup",
-                        "Compare actual order contribution with the supplied planning bridge",
-                        "Observed fulfillment spreads cannot support the modeled retained contribution",
-                        "Reforecast engine weights without rewriting canonical published scenario totals",
-                    ],
-                    [
-                        "Payment processing charges erase a seemingly attractive reward stack",
-                        "Calculate rewards less checkout fees using the same transaction denominator",
-                        "Confirmed payment fees exceed verified cash rewards before overhead",
-                        "Use a cheaper eligible payment rail or decline transaction",
-                    ],
-                    [
-                        "Shared overhead is deducted twice across separate engine reports",
-                        "Maintain one allocation schedule reconciled to the general ledger",
-                        "Engine totals fail reconciliation with consolidated operating expense accounts",
-                        "Reverse duplicate allocations and preserve independent contribution margin reporting",
-                    ],
-                    [
-                        "A treasury transfer is reported as newly earned yield",
-                        "Split every sweep into principal movement and actual interest",
-                        "Reported treasury income rises when only transferred principal increases",
-                        "Correct journal entries and reconcile statements before distributing proceeds",
-                    ],
-                    [
-                        "Expected defect reserves are mistaken for maximum possible losses",
-                        "Measure both expected losses and largest uninsured shipment exposure",
-                        "One rejected shipment exceeds unrestricted cash available after repayments",
-                        "Reduce parcel concentration and strengthen documented insurance coverage first",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "2. Treat Warehouse Acceptance and ACH Timing as Separate Risks",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Buying groups create two independent failure points: merchandise acceptance and payment "
-                    "performance. A pre-commitment from BuyForMeRetail, Pointsmaker, or MaxOutDeals must identify "
-                    "the precise SKU, quantity, condition, destination, submission deadline, and reimbursement "
-                    "amount. Verify the current agreement rather than assuming all groups share one "
-                    "workflow. Delivery to a DE, NH, or OR warehouse does not establish acceptance, "
-                    "and the absence of general statewide sales tax at those destinations does not "
-                    "erase every sourcing or resale obligation. Preserve the ship-to address, merchant "
-                    "invoice, order confirmation, serial numbers when available, carrier acceptance, and "
-                    "warehouse acknowledgment. UCC risk-of-loss allocation depends on the contract and "
-                    "applicable state enactment; a carrier's delivered scan alone cannot resolve ownership "
-                    "or liability. A substituted model, partial shipment, or expired commitment can convert "
-                    "a tiny expected spread into a full inventory liquidation problem. Require explicit "
-                    "written renewal when an order ships after its commitment window. If rejection "
-                    "occurs, compare documented return rights, restocking fees, return freight, and secondary "
-                    "sale proceeds before choosing a recovery route. Never assume the retailer will "
-                    "accept an opened or serialized unit indefinitely. Suspend the affected SKU until "
-                    "the actual acceptance defect is corrected across the purchase and warehouse records."
-                ),
-                (
-                    "Now stress payment timing independently of merchandise quality. Suppose $10,000 is "
-                    "charged with twenty calendar days until the card due date, while a buying "
-                    "group advertises settlement within several business days after acceptance. Neither "
-                    "the shipment date nor the delivered scan necessarily starts that clock. A twelve-day "
-                    "receiving backlog plus a seven-business-day payout delay can push cash beyond the "
-                    "statement deadline. Maintain a daily maturity ladder showing card obligations by "
-                    "actual due date, cleared bank cash, contractually expected reimbursements, and unrestricted "
-                    "liquid reserves. Exclude unsettled ACH, disputed reimbursements, unapproved rewards, and "
-                    "assets that cannot settle before the payment cutoff from hard repayment coverage. "
-                    "Set an internal minimum of 1.25 times covered obligations due within fourteen "
-                    "days, with a stop on new commitments below 1.10 times; these are policy choices, "
-                    "not vendor promises. A card payment must still be made when group settlement "
-                    "fails. Carrying $10,000 for thirty days at an illustrative 27.99% simple annual "
-                    "rate costs about $230.05 before other charges, nearly eliminating the earlier "
-                    "$240 contribution. Actual issuer interest methods and grace-period consequences can "
-                    "increase the damage. Use previously arranged, transparently priced liquidity only "
-                    "when its complete cost fits the downside model; otherwise reduce committed purchases "
-                    "before the liability is created."
-                ),
-                (
-                    "Counterparty diversification fails when operators count brand names instead of correlated "
-                    "exposure. Two groups using the same receiving bottleneck, resale channel, or payment "
-                    "processor can deteriorate together. Start with an internal cap of 20% of available "
-                    "risk capital in unsecured exposure to any one group, and measure common dependencies "
-                    "separately. For a $25,000 risk-capital pool, that cap is $5,000, not $5,000 per "
-                    "unpaid purchase. Track accepted-but-unpaid dollars, oldest contractual past-due age, rejection "
-                    "rate, receiving lag, and settlement-date changes. Escalate immediately when a promised "
-                    "payment date is missed; pause fresh commitments when accepted balances are two "
-                    "business days beyond their agreed due dates or when dispute exposure exceeds "
-                    "the chosen capital cap. Net-3 and Net-5 labels are useful only after confirming "
-                    "their contractual starting event and business-day convention. Insure high-value electronics "
-                    "against the actual covered perils and confirm exclusions, declared-value rules, "
-                    "deductibles, and the party entitled to claim. Carrier declared value is not "
-                    "automatically equivalent to a separate insurance policy. Preserve packaging photographs "
-                    "and claim deadlines before a parcel disappears. Increasing purchases to recover a "
-                    "stalled balance compounds unsecured exposure; the correct response is collections "
-                    "discipline, smaller commitments, and a documented alternate liquidation route."
-                ),
-            ],
-            "table": {
-                "caption": "Buying-Group Failure Telemetry from Commitment Through Cleared Settlement",
-                "headers": [
-                    "Failure mode requiring a distinct operational owner",
-                    "Evidence and monitoring calculation to maintain daily",
-                    "Illustrative threshold or event that stops expansion",
-                    "Immediate containment and economically defensible fallback",
-                ],
-                "rows": [
-                    [
-                        "Expired buying-group commitment leaves purchased inventory without acceptance certainty",
-                        "Compare actual shipment timestamp with written commitment expiration terms",
-                        "Shipment occurs after commitment expiry without documented written renewal",
-                        "Obtain renewed acceptance or exercise documented retailer return rights",
-                    ],
-                    [
-                        "Warehouse delivery scan is confused with accepted sale completion",
-                        "Track delivery, intake, inspection, and acceptance as separate events",
-                        "Receiving lag exceeds the agreement or established internal tolerance",
-                        "Pause further shipments and obtain itemized warehouse intake reconciliation",
-                    ],
-                    [
-                        "Incorrect SKU or serial mismatch creates a reimbursement dispute",
-                        "Link merchant invoice identifiers with warehouse received-item exception reports",
-                        "Any serial mismatch affects ownership evidence or acceptance eligibility",
-                        "Quarantine matching orders and resolve records before further fulfillment",
-                    ],
-                    [
-                        "Counterparty payment slippage consumes the remaining statement repayment window",
-                        "Measure accepted unpaid balances against contractual settlement due dates",
-                        "Accepted balances remain unpaid two business days beyond agreement",
-                        "Freeze new commitments and fund card repayment from reserves",
-                    ],
-                    [
-                        "Multiple counterparties conceal dependence on one shared processing bottleneck",
-                        "Aggregate exposures by warehouse, settlement processor, and resale dependency",
-                        "Combined dependency exposure exceeds the documented risk capital limit",
-                        "Redirect only future commitments toward independently verified operating routes",
-                    ],
-                    [
-                        "Lost electronics shipment exceeds realistic insurance recovery and liquidity",
-                        "Compare documented coverage limits with parcel value and deductible",
-                        "One uninsured parcel loss breaches unrestricted post-repayment cash reserves",
-                        "Split shipments and obtain suitable coverage before carrier handoff",
-                    ],
-                    [
-                        "Return-window expiry turns recoverable inventory into forced liquidation exposure",
-                        "Record return deadlines alongside acceptance and claim resolution deadlines",
-                        "Unresolved rejection approaches the last documented retailer return date",
-                        "Authorize timely return or documented secondary sale with loss estimate",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Protect the Calendar Before Optimizing the Rebate",
-                "body": "Experienced operators preserve proof and repayment capacity before increasing order velocity.",
-                "items": [
-                    "Create a shipment evidence packet at label creation, then append carrier acceptance, packaging photographs, and warehouse acknowledgment under one purchase identifier.",
-                    "Sort unpaid balances by the earlier of card funding cutoff and retailer return deadline; accounting age alone misses the most urgent recovery decision.",
-                    "Pilot each group through three completed acceptance-to-cleared-cash cycles before raising its unsecured exposure cap.",
-                    "Track shared warehouse and settlement dependencies so apparently separate groups do not consume the same concentration allowance unnoticed.",
-                ],
-            },
-        },
-        {
-            "heading": "3. Price Reward Reversals, Invoice Fees and Treasury Liquidity Honestly",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Commercial card and portal rebates form a separate model because eligibility can "
-                    "fail even when merchandise reaches its destination. Rakuten and TopCashback offers "
-                    "may vary by merchant, product category, coupon use, customer status, and purchase "
-                    "purpose. Review resale restrictions and permitted stacking before routing an order; "
-                    "do not assume both portals can claim the same checkout. Save dated offer terms, "
-                    "click records, merchant confirmations, and exclusions. Browser extensions, coupon "
-                    "substitution, app handoffs, returns, and order modifications can disrupt attribution "
-                    "or reverse rewards. Treat a proposed 2%–4% commercial-card return as a rate requiring "
-                    "verification of caps, redemption value, category treatment, and issuer conditions, "
-                    "not an uncapped entitlement. If a $10,000 eligible purchase earns 2%, the $200 "
-                    "reward cannot absorb unlimited returns or cash-advance charges. Measure denial rate "
-                    "on matured eligible cohorts, not yesterday's pending clicks. An illustrative control "
-                    "pauses a route when matured denial exceeds 10% by dollars or realized rewards "
-                    "fall 20% below its approved model. Reconcile partial returns against both merchandise "
-                    "refunds and reward reversals. Multiple accounts, invented identities, disguised resale "
-                    "intent, and fabricated orders are not optimization techniques; they expose the "
-                    "business to closure, recovery demands, and potential fraud liability. Preserve truthful "
-                    "transaction records and discontinue routes that require concealment."
-                ),
-                (
-                    "Plastiq and Melio require a business-invoice analysis, not a generic assertion that "
-                    "card float is free. Confirm supported recipients, payment purposes, funding cards, "
-                    "delivery methods, and the actual quoted fee before initiating payment. In an "
-                    "illustrative $20,000 invoice, a 2.9% fee costs $580 while a 2% reward on the "
-                    "invoice amount yields $400, leaving a $180 deficit before overhead. Do not assume "
-                    "the fee itself earns rewards or that the issuer treats every supported transaction "
-                    "as an ordinary purchase. Legitimate timing value can justify a cost only when "
-                    "the business measures the alternative funding expense and can repay on schedule. "
-                    "A separate treasury engine should deploy unrestricted surplus, not statement repayment "
-                    "cash needed before maturity. At a hypothetical 4.5% simple annual yield, $10,000 "
-                    "held for fifty-five days earns approximately $67.81 before taxes and transaction "
-                    "costs. That amount does not rescue a $290 processing fee. The fifty-five-day "
-                    "window is a timing assumption dependent on purchase date, statement cycle, grace "
-                    "conditions, and bank cutoffs. It is not a standard T-bill maturity or assured "
-                    "card entitlement. Match actual bill maturity and settlement to required cash dates; "
-                    "selling early introduces market-price and execution risk that a spreadsheet's "
-                    "straight-line yield calculation omits."
-                ),
-                (
-                    "Bank bonuses add another conditional receivable, often with minimum balances, qualifying "
-                    "deposit definitions, holding periods, payout delays, and early-closure recovery provisions. "
-                    "Model incremental benefit against a realistic alternative use of the same cash. "
-                    "An illustrative $300 bonus requiring $20,000 for ninety days competes with roughly "
-                    "$221.92 of simple interest at 4.5%, leaving $78.08 before fees and taxes if "
-                    "the promotional account earns no interest. If it does earn interest, include "
-                    "that actual amount rather than assuming the opportunity cost disappears. Track "
-                    "eligibility under the bank's current terms, including previous-customer restrictions; "
-                    "do not manufacture qualifying activity. FDIC coverage under 12 CFR Part 330 "
-                    "depends on bank, depositor, and ownership category, while Treasury securities involve "
-                    "a different protection structure and are not insured bank deposits. Neither "
-                    "structure removes settlement timing risk. Keep bonus cash isolated from inventory "
-                    "repayment reserves until holding obligations expire. Monitor bonus receivables by "
-                    "contractual payout date, and exclude late bonuses from liquidity coverage. Reinvest "
-                    "only settled interest and released principal after reconciling upcoming obligations. "
-                    "The fatal shortcut is using one dollar simultaneously as required promotional "
-                    "balance, inventory contingency reserve, and card repayment funding. Assign each "
-                    "dollar one binding purpose and report encumbered balances separately from freely "
-                    "available cash every business day."
-                ),
-            ],
-            "table": {
-                "caption": "Reward, Invoice and Treasury Controls That Prevent Apparent Yield from Becoming Loss",
-                "headers": [
-                    "Specific route and asymmetric failure mechanism",
-                    "Unit economics or required eligibility evidence",
-                    "Monitoring threshold and decision-relevant exception signal",
-                    "Fallback that preserves truthful records and repayment",
-                ],
-                "rows": [
-                    [
-                        "Rakuten attribution disappears after an excluded coupon changes checkout",
-                        "Archive merchant offer exclusions and actual checkout coupon details",
-                        "Matured denied rewards exceed ten percent of eligible dollars",
-                        "Pause the affected merchant route and exclude disputed rewards",
-                    ],
-                    [
-                        "TopCashback purchase attribution conflicts with another portal referral",
-                        "Select one eligible portal and preserve its transaction reference",
-                        "Duplicate attribution assumptions appear within the same order model",
-                        "Remove the unsupported second reward before approving order economics",
-                    ],
-                    [
-                        "Commercial-card category exclusions reduce a modeled four percent return",
-                        "Verify issuer category treatment, reward caps, and redemption values",
-                        "Realized reward dollars fall twenty percent below approved expectations",
-                        "Reprice purchases using confirmed realized rates and permitted categories",
-                    ],
-                    [
-                        "Plastiq invoice fees exceed eligible commercial-card reward proceeds",
-                        "Illustrative twenty thousand dollar invoice loses one hundred eighty",
-                        "Quoted processing fee exceeds verified rewards plus documented timing value",
-                        "Pay through a cheaper permitted rail or reject financing",
-                    ],
-                    [
-                        "Melio recipient restrictions invalidate the intended business payment route",
-                        "Verify recipient eligibility and current funding method restrictions first",
-                        "Payment purpose or recipient cannot satisfy published service requirements",
-                        "Use direct bank payment without disguising the underlying transaction",
-                    ],
-                    [
-                        "T-bill maturity occurs after the card payment funding cutoff",
-                        "Match actual settlement dates against every required repayment deadline",
-                        "Unencumbered available cash cannot cover obligations before asset settlement",
-                        "Shorten maturities and retain sufficient immediately available repayment cash",
-                    ],
-                    [
-                        "Bank bonus balance requirements secretly immobilize inventory contingency reserves",
-                        "Calculate bonus benefit after interest opportunity cost and fees",
-                        "Promotional holding obligations consume cash assigned to another liability",
-                        "Reduce promotional balances or inventory commitments without double-counting cash",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four Checks Before Any Financed Commitment",
-                "body": "Proceed only when the actual transaction passes all four documented checks.",
-                "items": [
-                    "Verify the exact buying-group commitment, SKU, warehouse address, acceptance deadline, and enforceable return alternative before placing the order.",
-                    "Recalculate contribution with current fees, zero conditional portal rewards, realistic shipping losses, and the actual eligible card reward rate.",
-                    "Confirm unrestricted cleared cash covers the internal repayment buffer without counting unsettled ACH, restricted bank balances, or future credit availability.",
-                    "Archive truthful underwriting disclosures, valid destination and resale documentation where applicable, and current merchant, portal, issuer, and payment-service terms.",
-                ],
-            },
-        },
-        {
-            "heading": "4. Stop Credit-History Shortcuts and Build an Evidence-Led Shutdown Protocol",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "The mapped TRACK_1 play aged_shelf_corp_tradeline_credit_stacking requires the strongest "
-                    "distinction between lawful entity administration and misleading underwriting. Reinstating "
-                    "an aged entity may restore its state standing, but entity age is not operating "
-                    "history, revenue, ownership continuity, or repayment capacity. A genuine primary "
-                    "tradeline records a real credit relationship; purchasing appearances does not create "
-                    "cash flow. Compare documented commercial facilities using total cost, guarantees, "
-                    "covenants, repayment schedule, and promotional-rate expiration. For an illustrative "
-                    "$20,000 twelve-month 0%-APR balance with a separate 3% origination fee, the fee "
-                    "is $600 and principal amortization requires approximately $1,666.67 monthly, with "
-                    "a final rounding adjustment. Even a fully eligible 2% purchase reward of $400 "
-                    "leaves a $200 deficit before treasury earnings, operating costs, and losses. Confirm "
-                    "whether any fee applies and whether the actual transaction receives promotional "
-                    "treatment; balance transfers and purchases can differ. Never fabricate revenue, "
-                    "backdate invoices, disguise beneficial ownership, or describe dormant years as active "
-                    "operations. Material false statements on applications to covered institutions can "
-                    "implicate 18 U.S.C. 1014, depending on the facts. If disclosures are inaccurate "
-                    "or repayment depends on another approval, halt applications, correct disclosures, "
-                    "and use a transparent term facility or reduce financed spending."
-                ),
-                (
-                    "Issuer shutdown is an exposure-management event, not merely an inconvenience. Monitor "
-                    "utilization, payment reversals, unusual purchase concentration, requests for supporting "
-                    "documents, and any mismatch between stated business activity and actual transactions. "
-                    "Do not attempt consumer card-cycling, repeated limit recycling outside issuer terms, "
-                    "circular self-payments, or transactions without a genuine commercial purpose. A payment "
-                    "made from unsettled reimbursement can reverse and leave both the issuer and "
-                    "operator exposed. Maintain an alternate permitted payment rail, but never route "
-                    "around a restriction by hiding identity or transaction purpose. Business-purpose "
-                    "credit is generally exempt from Regulation Z under 12 CFR 1026.3(a), subject "
-                    "to specified exceptions; do not assume consumer billing protections or grace "
-                    "mechanics apply unchanged to a commercial agreement. Read the actual contract "
-                    "and preserve its change notices. Separately, retain records required by 26 U.S.C. "
-                    "6001 and 26 CFR 1.6001-1, reconcile information returns under 26 U.S.C. 6050W "
-                    "where applicable, and distinguish gross payment reporting from taxable profit. "
-                    "Purchase-linked rebates may require cost-basis adjustments, while bank bonuses "
-                    "and interest have different tax treatment. A tax preparer should classify the "
-                    "specific facts. Reconcile returns, reimbursements, and rewards without counting "
-                    "the same amount twice or treating an information return as the complete "
-                    "operating ledger."
-                ),
-                (
-                    "Use a written incident protocol so the operator does not improvise under deadline "
-                    "pressure. First, stop only the affected purchase route while preserving all card "
-                    "repayment obligations and evidence. Second, produce a same-day exposure snapshot "
-                    "listing inventory location, accepted unpaid balances, pending rewards, outstanding "
-                    "principal, due dates, restricted cash, and insurance claims. Third, choose recovery "
-                    "actions by recoverable cash and deadline, not by the desire to preserve a "
-                    "headline margin. Return eligible inventory before its window closes, pursue "
-                    "documented warehouse discrepancies, and contact counterparties through verified "
-                    "channels. Fourth, resume only after the root cause is corrected and a small "
-                    "test transaction settles completely. Maintain a weekly forensic dashboard with "
-                    "realized contribution per order, reward denial by matured cohort, acceptance-to-ACH "
-                    "percentiles, repayment coverage, concentration, claim age, and forecast error. Set "
-                    "explicit owners: the founder controls financing and cash releases, contractors "
-                    "collect evidence and reconcile transactions, and a second reviewer checks exceptions. "
-                    "The canonical teams are 1 FT plus 2 C in Conservative and Base, and "
-                    "2 FT plus 3 C in Scaled. Small teams can enforce strong controls when "
-                    "permissions prevent one person from changing bank details, approving settlement, "
-                    "and concealing the resulting exception. Automation should expose broken assumptions "
-                    "earlier, never accelerate an unverified spread."
-                ),
-            ],
-            "table": {
-                "caption": "Financing, Records and Incident Controls for Permanent-Capital Protection",
-                "headers": [
-                    "Trap or control failure with capital consequences",
-                    "Primary evidence and specific forensic measurement",
-                    "Event requiring intervention before further expansion",
-                    "Required response and transparent operating alternative",
-                ],
-                "rows": [
-                    [
-                        "Reinstated entity age is presented as genuine operating history",
-                        "Compare formation records with actual revenue and ownership history",
-                        "Application narrative contradicts invoices, tax records, or business activity",
-                        "Halt applications, correct disclosures, and seek transparent term financing",
-                    ],
-                    [
-                        "Promotional credit expiry becomes a hidden refinancing dependency",
-                        "Schedule principal retirement against actual promotional expiration and fees",
-                        "Repayment plan requires an unapproved future facility to succeed",
-                        "Reduce financed spending and establish funded monthly principal reductions",
-                    ],
-                    [
-                        "Issuer document requests reveal unresolved underwriting or transaction inconsistencies",
-                        "Reconcile submitted disclosures with current purchases and supporting records",
-                        "Requested evidence cannot substantiate the previously stated business facts",
-                        "Stop affected activity and provide accurate corrected supporting information",
-                    ],
-                    [
-                        "Consumer card-cycling substitutes repeated limit recycling for real liquidity",
-                        "Track payment sources, reversals, utilization, and issuer permitted practices",
-                        "Purchasing capacity depends on recycling unsettled reimbursements into payments",
-                        "Cease the pattern and resize commitments to cleared capital",
-                    ],
-                    [
-                        "Information-return totals are mistaken for actual taxable operating profit",
-                        "Reconcile payment reports against invoices, returns, costs, and rewards",
-                        "Reported gross amounts diverge from documented transaction-level source records",
-                        "Investigate differences and preserve records supporting accurate tax preparation",
-                    ],
-                    [
-                        "Destination tax assumptions replace valid sourcing and resale documentation",
-                        "Retain destination proof and certificates accepted by relevant jurisdictions",
-                        "Merchant exemption claim lacks required factual or documentary support",
-                        "Correct purchase treatment and obtain proper jurisdiction-specific documentation",
-                    ],
-                    [
-                        "Automation expands purchases while settlement and reward exceptions accumulate",
-                        "Display unresolved exceptions alongside contribution and repayment coverage metrics",
-                        "Any hard-stop condition remains unresolved while new commitments continue",
-                        "Disable affected routing and restart only after verified settlement",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Freeze the Affected Route",
-                    "action": "Suspend new commitments tied to the failed counterparty, SKU, portal, or financing facility.",
-                    "detail": "Keep existing repayment instructions active, preserve access logs, and record the precise trigger and incident owner.",
-                },
-                {
-                    "step": 2,
-                    "title": "Build the Exposure Snapshot",
-                    "action": "Reconcile open inventory, unpaid reimbursements, card principal, restricted cash, and approaching deadlines.",
-                    "detail": "Exclude conditional rewards and unsettled transfers from available cash; attach evidence to every material balance.",
-                },
-                {
-                    "step": 3,
-                    "title": "Recover Cash Before Windows Close",
-                    "action": "Prioritize valid returns, acceptance corrections, contractual collections, and timely carrier or insurer claims.",
-                    "detail": "Compare net recovery alternatives after freight, restocking, deductibles, and timing; never delay card repayment pending a dispute.",
-                },
-                {
-                    "step": 4,
-                    "title": "Prove the Repair at Small Size",
-                    "action": "Document the corrected root cause and complete one limited transaction through cleared settlement.",
-                    "detail": "Restore exposure limits gradually only after independent reconciliation confirms contribution, eligibility, and adequate repayment coverage.",
-                },
-            ],
-        },
-    ],
-    "pull_quote": "A reward is conditional, a reimbursement can be late, and the card balance is still due.",
-    "diagram_id": "diag-05",
-    "action_checklist": [
-        "Create separate fulfillment, rebate, and treasury ledgers with unique transaction identifiers and a single reconciled overhead allocation.",
-        "Reconcile the canonical gross bases to 35% retained contribution and the exact $20,000, $143,500, and $360,000 owner profit cases.",
-        "Install a fourteen-day repayment ladder that excludes unsettled ACH, conditional rewards, restricted balances, and assets settling after payment cutoffs.",
-        "Archive current buying-group commitments, portal exclusions, issuer conditions, shipment evidence, and jurisdiction-specific resale documentation before purchasing.",
-        "Set explicit concentration, overdue-settlement, matured reward-denial, and contribution-variance limits with named owners and automatic route suspension.",
-        "Audit entity-history disclosures and promotional-credit amortization, then rehearse the four-step incident protocol using one delayed reimbursement scenario.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "18 U.S.C. 1014 — Loan and credit applications",
-            "url": "https://www.law.cornell.edu/uscode/text/18/1014",
-            "relevance": "Addresses knowingly false statements or reports made to influence specified covered institutions; supports accurate entity, revenue, and credit disclosures.",
-        },
-        {
-            "title": "12 CFR 1026.3(a) — Business, commercial, agricultural, or organizational credit",
-            "url": "https://www.ecfr.gov/current/title-12/chapter-X/part-1026/section-1026.3",
-            "relevance": "Defines the business-purpose exemption and specified exceptions; commercial-card operations must examine their actual agreements rather than assume consumer protections.",
-        },
-        {
-            "title": "26 U.S.C. 6001 — Notice or regulations requiring records, statements, and special returns",
-            "url": "https://www.law.cornell.edu/uscode/text/26/6001",
-            "relevance": "Supports maintaining records sufficient to substantiate merchandise costs, reimbursements, rewards, interest, and reported tax amounts.",
-        },
-        {
-            "title": "26 CFR 1.6001-1 — Records",
-            "url": "https://www.ecfr.gov/current/title-26/section-1.6001-1",
-            "relevance": "Specifies recordkeeping and retention requirements relevant to transaction-level substantiation and reconciliation of business income and deductions.",
-        },
-        {
-            "title": "26 U.S.C. 6050W — Returns relating to payments made in settlement of payment card and third party network transactions",
-            "url": "https://www.law.cornell.edu/uscode/text/26/6050W",
-            "relevance": "Provides the information-reporting framework for covered payment settlements; reported gross payments must be reconciled separately from operator profit.",
-        },
-        {
-            "title": "12 CFR Part 330 — Deposit Insurance Coverage",
-            "url": "https://www.ecfr.gov/current/title-12/chapter-III/subchapter-B/part-330",
-            "relevance": "Governs deposit-insurance aggregation and ownership categories used when evaluating bank sweep exposure and promotional balances.",
-        },
-        {
-            "title": "Delaware Code, Title 6, Section 2-509 — Risk of loss in the absence of breach",
-            "url": "https://delcode.delaware.gov/title6/c002/sc05/index.html#2-509",
-            "relevance": "Provides Delaware's enacted UCC rules for risk allocation in specified delivery situations, subject to contrary agreement and other applicable provisions.",
-        },
-        {
-            "title": "26 U.S.C. 61 — Gross income defined",
-            "url": "https://www.law.cornell.edu/uscode/text/26/61",
-            "relevance": "Includes interest within gross income and supports separating taxable treasury receipts from principal transfers and fact-dependent purchase adjustments.",
-        },
-    ],
-}
+CHAPTER_5 = {'id': 'Q5',
+ 'chapter_id': 'Q5',
+ 'chapter_number': 5,
+ 'question_number': 5,
+ 'slug': 'amex-financial-reviews-account-shutdowns',
+ 'question_prompt': 'What triggers an American Express financial review or account shutdown, and how '
+                    'should operators prevent and respond to one?',
+ 'kicker': 'Q5 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Amex Financial Reviews & Account Shutdowns',
+ 'subtitle': 'Common review triggers, high-velocity spend survival stories, handling a review honestly, '
+             "income verification, blacklisting risk, and Amex's crackdown on rewards gamers",
+ 'layout_template': 'case_study',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Amex financial reviews freeze every personal and business card plus Membership '
+                      'Rewards until you document income, usually inside a 14-day window. CardRight, Colin '
+                      'Matthew, RJ Financial, AskSebby and Cal Barton converge on the same triggers: '
+                      'sudden spend velocity, returned payments, repeated spending power checks, limit '
+                      "cycling, cash-like purchases and stated income you cannot prove. Cal Barton's case "
+                      'reviews put high-velocity spending behind 65% of 20 data points and half of 40 '
+                      'cases, while two-thirds of reviewed cases asked for two months of bank statements '
+                      'or two pay stubs. The response playbook is unanimous: call the same day, send '
+                      'exactly what is asked, and submit even if your numbers are off. Disagreement '
+                      'centers on whether a clean, high-income profile protects you, with Cal Barton '
+                      'documenting decades-long members shut down by system flags, and on whether a tax '
+                      'transcript is mandatory or negotiable.',
+ 'key_metrics': [{'label': 'Reviews Caused by High-Velocity Spending',
+                  'metric': 'Reviews Caused by High-Velocity Spending',
+                  'value': '65% of financial review cases',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Cal Barton reviewed 20 data points and found flat-out high spending or '
+                             'irregular, high-velocity spending behind 65% of financial reviews, calling '
+                             'it the number one mistake.',
+                  'source': 'Cal Barton ([0pnnp262mLg @ 00:12:07])'},
+                 {'label': 'Spending Spikes in 40-Case Sample',
+                  'metric': 'Spending Spikes in 40-Case Sample',
+                  'value': '20 of 40 cases (50%)',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'In a larger review of 40 US cardholder stories from 2023 to 2026, half '
+                             'involved a large or sudden jump in spending, the biggest pattern by far.',
+                  'source': 'Cal Barton ([3dq0zRBwn8E @ 00:10:17])'},
+                 {'label': 'Cardholders Keeping Accounts After Review',
+                  'metric': 'Cardholders Keeping Accounts After Review',
+                  'value': '25 of 28 reported decisions (about 90%)',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Of 28 cases with a reported Amex decision, 25 kept at least some accounts, '
+                             'but 12 of those 25 reported lower limits, fixed spending limits, closed '
+                             'cards or other restrictions.',
+                  'source': 'Cal Barton ([3dq0zRBwn8E @ 00:11:51])'},
+                 {'label': 'Document Submission Deadline',
+                  'metric': 'Document Submission Deadline',
+                  'value': '14 days from the date of the letter',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'The Amex review letter states that failing to provide required documents '
+                             'within 14 days may lead to additional credit actions up to and including '
+                             'cancellation of accounts.',
+                  'source': 'RJ Financial ([vfXgcEGNVuM @ 00:04:13])'}],
+ 'sections': [{'heading': 'Section 1: The Practitioner Consensus',
+               'paragraphs': ['An Amex financial review is a hard freeze, not a polite question. CardRight '
+                              'defines it as Amex temporarily suspending the account and asking to review '
+                              'the tax return [XsemDHBgzWE @ 00:00:23]. Colin Matthew draws the line '
+                              'operators need first: an income verification is small, happens at '
+                              'application or on a credit limit increase request, and your existing cards '
+                              'keep working, while a financial review suspends charging privileges across '
+                              'every personal and business card, locks Membership Rewards, and puts a '
+                              'deadline on you. His reframe is that Amex is both issuer and network, a '
+                              'closed loop that sees merchant, amount and pattern on every swipe, while '
+                              'carrying uncapped exposure on no-preset-spending-limit charge cards, so it '
+                              'freezes first and asks questions second [xZwOSYlOyVc @ 00:02:11]. RJ '
+                              'Financial separates this from the rewards abuse team that hunts '
+                              'manufactured spending: financial review is a risk-management tool built to '
+                              'catch people who were extended credit on stated income they cannot pay back '
+                              '[vfXgcEGNVuM @ 00:00:33]. AskSebby frames it as trust but verify, a middle '
+                              'ground between secured and unsecured lending, aimed squarely at the '
+                              'synthetic-identity pattern of building good history, maxing out a big line '
+                              'and running [Er1tcSbzC2w @ 00:01:37]. Every trigger the operators list '
+                              'makes sense once you see Amex protecting that unsecured exposure.',
+                              'The trigger list is remarkably stable across channels. Spend velocity tops '
+                              'it: Cal Barton found high-velocity or irregular spending behind 65% of 20 '
+                              'data points [0pnnp262mLg @ 00:12:07], then half of 40 cases in a larger '
+                              '2023 to 2026 sample, with no magic dollar amount because Amex compares the '
+                              'charge against your previous spending, account age, stated income and '
+                              'payment history [3dq0zRBwn8E @ 00:10:17]. Returned payments come next: '
+                              'CardRight says a payment bounced for insufficient funds can instantly '
+                              'trigger a review, and Simon Katz watched a single returned payment after '
+                              'switching bank accounts flag every other account on file, Centurion '
+                              'relationship included [1AvpfkuaT_Q @ 00:01:14]. Hammering the check '
+                              'spending power tool shows up everywhere; CardRight cites more than three '
+                              'checks a day, and RJ Financial lists it beside cycling the credit limit, '
+                              'limits of 35K across all cards, a 25,000 limit on a single card and large '
+                              'changes to stated income [vfXgcEGNVuM @ 00:01:41]. The operator read is '
+                              'identical across all of them: none of these are nefarious alone, but the '
+                              'bank gets no context, so a wedding, a contractor payment or a curious '
+                              'late-night click all look like a borrower preparing to max out and vanish. '
+                              'Spend like the profile Amex underwrote, or tell them first.',
+                              'On the response, the consensus is blunt: submit. CardRight recommends '
+                              'sending the tax return whether or not you think your income is sufficient, '
+                              'because skipping it means the accounts definitely get shut down while '
+                              'sending at least gives you a chance, and pay stubs or bank statements have '
+                              'been accepted in place of a return [Nevp4Iee4iw @ 00:01:12]. AskSebby runs '
+                              'it as a decision tree: no documents is a guaranteed shutdown, documents '
+                              'with a discrepancy might mean cut limits or nothing at all, so refusing is '
+                              'opting for the worst outcome, and if the risk is shutdown and blacklisting '
+                              'you might as well shoot your shot [w8CgH2R003g @ 00:08:11]. Colin Matthew '
+                              'adds that you can decline to sign the 4506-C and Amex cannot compel you, '
+                              'but declining generally means closed accounts and a flagged file, and his '
+                              'team has watched people who overstated income submit anyway and keep every '
+                              "card and limit [xZwOSYlOyVc @ 00:12:38]. Cal Barton's shutdown research "
+                              'lands in the same place: respond quickly, send exactly what was asked, make '
+                              'sure nothing is missing, because delays are one of the fastest ways a '
+                              'review turns into a shutdown [sVToTQaS_Dw @ 00:08:51]. The 14-day clock is '
+                              'the shared deadline every one of these operators works against.'],
+               'table': {'caption': 'Consensus Review Triggers and Baseline Rules Repeated Across '
+                                    'Practitioners',
+                         'headers': ['Consensus Point',
+                                     'What Practitioners Report',
+                                     'Operator Implication',
+                                     'Expert Source'],
+                         'rows': [['Sudden spending ramp on an established card',
+                                   'Running 2K monthly for years then pushing 15K to 20K through the card '
+                                   'in a single month draws scrutiny.',
+                                   'Ramp incrementally across several months or call Amex before any '
+                                   'massive purchase lands.',
+                                   'Colin Matthew ([xZwOSYlOyVc @ 00:03:55])'],
+                                  ['Returned payment for insufficient bank funds',
+                                   'A payment returned by the bank due to insufficient funds can instantly '
+                                   'trigger a financial review.',
+                                   'Never schedule an Amex payment from an account that cannot cover it on '
+                                   'the pull date.',
+                                   'CardRight ([XsemDHBgzWE @ 00:00:59])'],
+                                  ['Repeated use of the check spending power tool',
+                                   'People claim checking spending power more than three times a day can '
+                                   'trigger a financial review.',
+                                   'Treat the tool as a one-time check for a real purchase, never a toy.',
+                                   'CardRight ([RqEu9gdaauI @ 00:00:58])'],
+                                  ['Spending close to the income stated on application',
+                                   'Stating $50,000 yearly income then spending $40,000 in the first '
+                                   'couple of months invites Amex knocking.',
+                                   'Keep annual spend clearly inside the income figure Amex has on file '
+                                   'for you.',
+                                   'CardRight ([RqEu9gdaauI @ 00:01:14])'],
+                                  ['Cash-like transactions such as gift cards and transfers',
+                                   'Foreign currency, precious metals, crypto, gambling, gift cards and '
+                                   'digital transfers caused 15% of reviews.',
+                                   'Keep cash-equivalent purchases off Amex cards, especially new cards '
+                                   'still chasing a bonus.',
+                                   'Cal Barton ([0pnnp262mLg @ 00:09:25])'],
+                                  ['Tax transcript request through IRS form 4506-T',
+                                   'Roughly 99% of the time the cardholder has to submit the 4506-T, even '
+                                   'when income does not line up.',
+                                   'Expect the transcript request as the default and prepare to sign it '
+                                   'promptly.',
+                                   'AskSebby ([Er1tcSbzC2w @ 00:08:03])'],
+                                  ['Significant negative changes on the credit report',
+                                   'Defaults and bankruptcies elsewhere signal that Amex cards are '
+                                   'probably next in line for nonpayment.',
+                                   'Keep every other lender current because Amex reads the whole credit '
+                                   'file.',
+                                   'AskSebby ([w8CgH2R003g @ 00:02:00])']]}},
+              {'heading': 'Section 2: Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['The freeze announces itself four ways, per Colin Matthew: an unexplained '
+                              'decline, a red banner saying charging privileges are suspended, an email '
+                              'giving roughly 14 days to respond, or a call from a number you do not '
+                              'recognize; call back on the number printed on the back of the card, not the '
+                              'voicemail number, because the clock starts when they send the notice '
+                              '[xZwOSYlOyVc @ 00:03:15]. RJ Financial read the actual letter aloud: Amex '
+                              'places a restriction, requests financial documents, and warns that failure '
+                              'within 14 days can mean cancellation, and calling in routes you to an '
+                              'assigned specialist rather than regular customer service [vfXgcEGNVuM @ '
+                              "00:04:13]. On what actually gets requested, Cal Barton's 20-case sample "
+                              'showed only 25% were asked for two years of tax returns while 66% were '
+                              'asked for two months of bank statements or two pay stubs, with verification '
+                              'running one to three weeks depending on Amex and the IRS [0pnnp262mLg @ '
+                              '00:03:01]. AskSebby flags the submission detail people blow: upload through '
+                              'the specific link in the email and include the cover sheet, or nothing gets '
+                              'processed, then expect a call with the decision followed by an explanatory '
+                              'email the same day [w8CgH2R003g @ 00:12:07]. Membership Rewards stay frozen '
+                              'for the duration, so transfers have to be planned before the review starts.',
+                              "Colin Matthew's playbook doubles as the call script: phone the same day and "
+                              'ask for the financial review department, be exceptionally pleasant because '
+                              'humans process these files, send exactly what was asked with nothing extra '
+                              'and nothing missing, and have a clean, true, specific story ready, such as '
+                              'a business opened in March or a contractor paid for a renovation, because '
+                              'vague answers extend the review. Then follow up every other day or every '
+                              'few days to confirm receipt, and once it clears ask for a goodwill credit '
+                              'on an $800 or $900 annual fee for the weeks you were locked out, or a '
+                              'prorated refund if they close you [xZwOSYlOyVc @ 00:11:42]. AskSebby warns '
+                              'that the review team is taking notes on the call, so anything you say that '
+                              'conflicts with verifiable documents will hurt you later [w8CgH2R003g @ '
+                              '00:05:55]. Cal Barton adds a counterintuitive trap from a flooring remodel '
+                              'case: the Amex representative, not the customer, ran spending power checks '
+                              'at 15,000, 12,000, 10,000 and 5,000, advised prepaying the card, and the '
+                              '$12,000 retry was still declined and triggered suspension, so ask exactly '
+                              'what a rep is doing before they start testing amounts on your account '
+                              '[3dq0zRBwn8E @ 00:06:32].',
+                              "Prevention is mostly velocity management. Colin Matthew's curve: someone "
+                              'spending 3,000 a month who needs to reach 15K goes to 5K next month, 10K '
+                              'the month after, then 15K, uses the spend authorization process before a '
+                              'big charge rather than after a decline, pays early from one verified bank '
+                              'account, and keeps two months of statements, the latest pay stub and two '
+                              'years of returns in a ready folder [xZwOSYlOyVc @ 00:13:41]. Simon Katz '
+                              'relayed a Centurion team email saying Amex averages six months of spending '
+                              'and anything above that average by a certain percent raises a flag; the '
+                              'workaround is pre-warning Amex and splitting large charges across two '
+                              'cards, after a Rolex nearly cost a suspension [1AvpfkuaT_Q @ 00:03:02]. For '
+                              'money to family, Cal Barton points to Amex Send and Split instead of '
+                              'PayPal, Square Cash or Venmo, after a $7,500 PayPal send to a mother froze '
+                              'every personal and business account until two months of bank statements '
+                              "were provided [0pnnp262mLg @ 00:10:15]. Joe Barreto's rule closes the loop: "
+                              "pay large balances from your own bank account, never someone else's, and "
+                              'keep business spend on business cards and personal spend on personal cards '
+                              'so the payment trail matches the cardholder [xgsxM7jSJ8U @ 00:03:26].'],
+               'table': {'caption': 'Hard Numbers, Deadlines and Rules Operators Work With During and '
+                                    'Before a Review',
+                         'headers': ['Mechanic or Number',
+                                     'Exact Figure or Rule Stated',
+                                     'How Practitioners Apply It',
+                                     'Expert Source'],
+                         'rows': [['Response window after the review notice',
+                                   'The review email typically gives around 14 days to provide what Amex '
+                                   'is asking for.',
+                                   'Call the same day using the number on the back of the card.',
+                                   'Colin Matthew ([xZwOSYlOyVc @ 00:03:15])'],
+                                  ['Most common document request in reviewed cases',
+                                   'Only 25% were asked for two years of tax returns; 66% for two bank '
+                                   'statements or two pay stubs.',
+                                   'Keep two recent statements and pay stubs downloaded and ready before '
+                                   'any big spend.',
+                                   'Cal Barton ([0pnnp262mLg @ 00:03:17])'],
+                                  ['Outcome split across reported Amex decisions',
+                                   '25 of 28 kept some accounts, 12 of those 25 had restrictions, 10 of 40 '
+                                   'were repeat reviews.',
+                                   'Treat new limits after passing as a warning, not permission to repeat '
+                                   'the behavior.',
+                                   'Cal Barton ([3dq0zRBwn8E @ 00:11:51])'],
+                                  ['Duration of post-review limit cuts on hybrid cards',
+                                   'Gold and Platinum show hard limits instead of no preset limit for 6 to '
+                                   '12 months, typically 12.',
+                                   'Wait it out; for every caller who got around it, about ten got '
+                                   'nowhere.',
+                                   'AskSebby ([Er1tcSbzC2w @ 00:09:46])'],
+                                  ['Points de-risk math when shutdown odds are non-zero',
+                                   '300,000 points is about $3,300 via Schwab versus two round-trip '
+                                   'business or first tickets to Japan via Virgin Red.',
+                                   'Transfer to partners for outsized redemptions before a cash-out path '
+                                   'closes on you.',
+                                   'AskSebby ([w8CgH2R003g @ 00:11:09])'],
+                                  ['Amex application velocity rules versus other banks',
+                                   'One card per day and two cards per 90 days; charge cards allow four in '
+                                   'a day; 5/24 is Chase only.',
+                                   'Avoid rapid open-and-close bonus cycling that scores you into Amex '
+                                   'jail.',
+                                   'Colin Matthew ([xZwOSYlOyVc @ 00:07:19])'],
+                                  ['Fastest documented clearance after a bounced payment',
+                                   'Statements showing 15,000 to 30,000 monthly deposits and a 5,000 '
+                                   'average daily balance cleared review in under 24 hours.',
+                                   'Submit the requested statements immediately; fast, complete uploads '
+                                   'shorten the freeze dramatically.',
+                                   'Cal Barton ([3dq0zRBwn8E @ 00:09:07])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Small Moves That Separate a Five-Day Review From a Shutdown',
+                           'body': 'Operators who survive reviews cleanly control the payment rails, the '
+                                   'points balance and the spending power tool before Amex ever looks at '
+                                   'them.',
+                           'items': ['Missed the Amex call? Dial the number on the back of your card, not '
+                                     'the one in the voicemail, which protects against scams and spoofing '
+                                     'while the clock keeps running [Colin Matthew — xZwOSYlOyVc @ '
+                                     '00:03:29].',
+                                     'When switching payment banks, verify routing number, account number '
+                                     'and available balance, confirm the payment cleared at both banks, '
+                                     'and keep the old account open until every autopay has moved [Cal '
+                                     'Barton — 3dq0zRBwn8E @ 00:10:02].',
+                                     'Do not let a big Membership Rewards stash sit idle; one cardholder '
+                                     'losing all nine cards only kept value because 580,000 points were '
+                                     'moved out in time [Cal Barton — sVToTQaS_Dw @ 00:04:50].',
+                                     'Reserve check spending power for purchases that exceed your average '
+                                     'spending over the past six months, and use it sparingly rather than '
+                                     'multiple times a day [Cal Barton — 0pnnp262mLg @ 00:08:50].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Confirm It Is a True Financial Review',
+                              'action': 'Check whether Amex lets you withdraw the request without touching '
+                                        'your account.',
+                              'detail': 'If Amex offers to let you withdraw a credit limit increase or '
+                                        'large purchase request, you are not in a financial review; a true '
+                                        'review locks the account and gives no option to back out [Cal '
+                                        'Barton — 0pnnp262mLg @ 00:01:18].'},
+                             {'step': 2,
+                              'title': 'Call First and Lock Down the Document List',
+                              'action': 'Call before submitting anything and note exactly which documents '
+                                        'and deadline they give you.',
+                              'detail': 'Figure out which documents they need before uploading, because '
+                                        'there is no point submitting A, B, C and D if they only want B; '
+                                        'then note the roughly 14-day timeline they state [AskSebby — '
+                                        'w8CgH2R003g @ 00:09:08].'},
+                             {'step': 3,
+                              'title': 'Submit the Least Invasive Satisfying Documents',
+                              'action': 'Upload exactly what was asked through the emailed link, with the '
+                                        'cover sheet attached.',
+                              'detail': 'Send the least invasive item that satisfies them, commonly two '
+                                        'recent bank statements from the account that pays the Amex bill '
+                                        'or recent pay stubs, and only escalate to a tax authorization if '
+                                        'specifically required [Colin Matthew — xZwOSYlOyVc @ 00:10:50].'},
+                             {'step': 4,
+                              'title': 'De-Risk Points and Backup Credit Lines',
+                              'action': 'Move points you plan to use and line up non-Amex cards while the '
+                                        'review runs.',
+                              'detail': 'If there is even a one percent chance of shutdown, do not snooze; '
+                                        'transfer points to partners you actually want, such as Emirates '
+                                        'or Singapore, and diversify to other issuers [AskSebby — '
+                                        'w8CgH2R003g @ 00:09:48].'}]},
+              {'heading': 'Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The sharpest split is over what to hand Amex once the freeze lands. '
+                              'CardRight runs a hard line: whether or not your income looks sufficient, '
+                              'send the tax return, because skipping it means your accounts will '
+                              'definitely get shut down, while sending it at least keeps you in the game; '
+                              'if no return exists, upload a pay stub or bank statement, which Amex has '
+                              'accepted in many cases [Nevp4Iee4iw @ 00:01:12]. Colin Matthew plays it the '
+                              'opposite way: send the least invasive thing that satisfies them, because '
+                              'plenty of reviews close on two bank statements or two pay stubs, and only '
+                              'escalate to tax authorization when it is specifically required [xZwOSYlOyVc '
+                              "@ 00:11:04]. AskSebby's read of hundreds of data points tilts toward "
+                              'CardRight: roughly 99% of the time the 4506-T is mandatory, while bank '
+                              'statements, brokerage records and payroll requests are uncommon edge cases '
+                              'for retirees and new arrivals without a prior-year US return [Er1tcSbzC2w @ '
+                              "00:08:29]. Cal Barton's 20-case tally lands closer to Colin: only 25% were "
+                              'asked for two years of returns, while 66% were asked for two months of bank '
+                              'statements or two pay stubs [0pnnp262mLg @ 00:03:01]. Operator takeaway: '
+                              'call first, learn exactly which document is on the table, then decide.',
+                              'Practitioners also split on how much paper to push across the table. Trip '
+                              "Astute's Ernest tells reviewees to be proactive: if there is additional "
+                              'information Amex should consider, document it and hand it to the assigned '
+                              'specialist [hdNIogj_le0 @ 00:03:59]. Colin Matthew runs the opposite rule, '
+                              'insisting on exactly what was requested, nothing more, nothing less, with '
+                              'no extra pile hoping it helps and no shortfall hoping they forget '
+                              '[xZwOSYlOyVc @ 00:12:07]. The Check Spending Power tool is a second fault '
+                              'line. CardRight passes along the community claim that more than three '
+                              'checks in a day can trigger a review [XsemDHBgzWE @ 00:00:59], and Colin '
+                              "widens the window to several checks inside one week. Cal Barton's 40-case "
+                              'audit cuts the panic down to size: only four people, about 10% of the '
+                              'sample, had touched the tool before their review, and in the flooring case '
+                              'the customer says the Amex representative ran the $15,000, $12,000, $10,000 '
+                              'and $5,000 tests, then advised prepaying the card, and the $12,000 retry '
+                              "still triggered the suspension [3dq0zRBwn8E @ 00:06:32]. Cal's lesson is "
+                              "that a frontline rep's suggestion is not automatically safe; ask exactly "
+                              'what they are doing before multiple amounts get tested on your account.',
+                              'The bigger argument is about who Amex is actually hunting. Joe Barreto '
+                              'frames the shutdown waves as targeted at behavior: international spend '
+                              "while cycling limits, paying from someone else's bank account, manufactured "
+                              'spend with quick cash-outs, self-referrals and returned purchases kept for '
+                              'statement credits, while regular travel, dining and everyday cardholders '
+                              'face much lower closure risk [xgsxM7jSJ8U @ 00:11:02]. Points Wire reports '
+                              'Amex executives promising a crackdown on gamers squeezing every Resy and '
+                              'hotel credit, with Sam reading it as tighter credit terms rather than '
+                              'immediate trouble for normal-looking usage [0EsrkpAxvQQ @ 00:00:53]. Cal '
+                              'Barton rejects the idea that only gamers get caught: the shutdown stories '
+                              'are long-time Platinum members with 780 to 850 scores, steady six-figure '
+                              'W-2 income and autopay, swept up by an automated, pattern-based system '
+                              'catching perfectly normal people in the crossfire [sVToTQaS_Dw @ 00:02:50]. '
+                              'IV(4) Prosperity bridges the two camps with an alignment thesis: Amex '
+                              'tracks income consistency, spend discipline and lifestyle fit, so the hack '
+                              'game that looks good for the first 90 days gets a cold shower once the '
+                              'incongruency shows, and nobody teaches how to stay nine years [L5GeiqJtqEc '
+                              '@ 00:07:08]. Same tactics, very different reads on the risk.'],
+               'table': {'caption': 'Competing Playbooks on Amex Financial Reviews and Shutdowns',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Which document to hand over first during review',
+                                   'Always send the tax return because skipping it means certain shutdown',
+                                   'Send the least invasive document; two bank statements or two pay stubs '
+                                   'often close it',
+                                   'CardRight ([Nevp4Iee4iw @ 00:01:12]); Colin Matthew ([xZwOSYlOyVc @ '
+                                   '00:11:04])'],
+                                  ['How much paperwork to push to the specialist',
+                                   'Proactively document and provide any extra information that could help '
+                                   'your case',
+                                   'Send exactly what was requested, nothing more and nothing less, every '
+                                   'time',
+                                   'Trip Astute ([hdNIogj_le0 @ 00:03:59]); Colin Matthew ([xZwOSYlOyVc @ '
+                                   '00:12:07])'],
+                                  ['Whether a $25,000 single-card limit is a trigger',
+                                   'A $25,000 limit on one card is known to trigger a financial review',
+                                   'Some holders carry limits like that and never get reviewed; it depends '
+                                   'on income',
+                                   'CardRight ([XsemDHBgzWE @ 00:00:42]); AskSebby ([Er1tcSbzC2w @ '
+                                   '00:05:43])'],
+                                  ['How dangerous the Check Spending Power tool really is',
+                                   'Checking spending power more than three times a day can trigger a '
+                                   'review',
+                                   'Only four of 40 cases involved the tool, and in one the rep ran the '
+                                   'tests',
+                                   'CardRight ([RqEu9gdaauI @ 00:00:58]); Cal Barton ([3dq0zRBwn8E @ '
+                                   '00:06:17])'],
+                                  ['The rumored 73K stated personal income ceiling',
+                                   'Community lore says stating over 73K personal income triggers a manual '
+                                   'review',
+                                   'No such Amex rule exists; state only the income you can actually '
+                                   'document',
+                                   'Colin Matthew ([xZwOSYlOyVc @ 00:09:04])'],
+                                  ['What happens after a full account shutdown',
+                                   'Expect to lose all points and be blacklisted from future Amex products',
+                                   'One cardholder who skipped the tax form reopened a new account three '
+                                   'months later',
+                                   'RJ Financial ([vfXgcEGNVuM @ 00:08:30]); Cal Barton ([0pnnp262mLg @ '
+                                   '00:13:39])'],
+                                  ['Fighting a post-review credit limit cut by phone',
+                                   'Some edge-case cardholders called in and got around the reduced limits',
+                                   'Wait out the 6 to 12 months; roughly 10 callers got nowhere per '
+                                   'success',
+                                   'AskSebby ([Er1tcSbzC2w @ 00:09:46])']]}},
+              {'heading': 'Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['Returned payments are the trap that hits even clean files hardest. Simon '
+                              'Katz had their Centurion account suspended after switching bank accounts '
+                              'caused a returned payment; once that one flag went up, every other Amex '
+                              'account got flagged too, and they had to pay down a bill that was not even '
+                              'late to get the card back [1AvpfkuaT_Q @ 00:01:14]. Cal Barton logs a '
+                              'cardholder whose Capital One account was frozen for suspicious activity; '
+                              'the payment bounced, they repaid immediately and it cleared, yet a week '
+                              'later both the Platinum and Blue Cash cards were canceled and the review '
+                              "call dropped mid-explanation [0pnnp262mLg @ 00:10:55]. In Cal's 40-case "
+                              'set, one cardholder switching from Bank of America to Chase fumbled the '
+                              'routing details, then hit an uncleared transfer, and the review still '
+                              'opened about 15 days after the first failure even though the account was '
+                              'never late; another bounced a payment from an already-closed account and '
+                              'was under review within hours, though two bank statements showing $15,000 '
+                              'to $30,000 in monthly deposits lifted the freeze in under 24 hours '
+                              "[3dq0zRBwn8E @ 00:09:33]. Cal's fix: verify routing and account numbers, "
+                              'confirm clearance at both banks, and keep the old account open until every '
+                              'autopay has moved.',
+                              'Sudden velocity is the most expensive mistake, and it does not care about '
+                              'tenure. Colin Matthew cites a 25-year cardmember who ran about $3,000 a '
+                              'month for five months, then charged $27,000 and over $70,000 on consecutive '
+                              'days to pay an HVAC contractor and landed straight in review [xZwOSYlOyVc @ '
+                              '00:04:08]. Cal Barton documents the welcome-bonus version: a business '
+                              'cardholder chasing 200,000 points on $15,000 of spend had legitimately '
+                              'cleared $13,800 when the card froze with five days left, and Amex flatly '
+                              'refused to extend the window [sVToTQaS_Dw @ 00:04:14]. Another Cal case had '
+                              'a five-year customer with an 800 score, a $50,000 Amex savings account and '
+                              '$500,000 reported income put a $46,000 watch on a card and pay it the next '
+                              'day, then walk out with $4,500 limits on each charge card and a Delta limit '
+                              'cut from $33,000 to $4,200 [3dq0zRBwn8E @ 00:11:02]. AskSebby admits doing '
+                              'it to themselves: $100,000 of secondary-market resale purchases in six '
+                              'days, paid down as they went, which edged into cycling risk; the Palazzo '
+                              'deposit in Vegas was the final flag, and pay stubs plus bank statements '
+                              'cleared it in five days [w8CgH2R003g @ 00:14:10].',
+                              'The economics check is the points balance. RJ Financial warns that when '
+                              'Amex shuts accounts down they take all your points, with no 30-day grace '
+                              "window to move out [vfXgcEGNVuM @ 00:08:30]. Cal Barton's shutdown files "
+                              'put numbers on it: one cardholder saved 580,000 membership rewards points '
+                              'only by moving them out before the remaining five cards and a business '
+                              'checking account were closed, while a 16-year customer with $150,000 income '
+                              'and 800-plus scores lost every card with 400,000 points still sitting in '
+                              "the account [sVToTQaS_Dw @ 00:05:06]. AskSebby's de-risk move during review "
+                              'is to transfer out rather than cash out: 300,000 points is about $3,300 '
+                              'through Schwab, but through Virgin Red it can be two round-trip business or '
+                              'first tickets from the US to Japan [w8CgH2R003g @ 00:11:09]. Repeat '
+                              'exposure compounds the risk: Cal found 25% of 40 cases involved a repeated '
+                              'or reopened review, and 48% of survivors reported lower limits, fixed '
+                              'spending limits, closed cards or other restrictions [3dq0zRBwn8E @ '
+                              '00:12:06]. Cal also warns two reviews in a short window send shutdown odds '
+                              'skyrocketing, which is the cue to cut Amex spend, transfer points you plan '
+                              'to use and line up backup cards.'],
+               'table': {'caption': 'Firsthand Review and Shutdown Failures with the Economic Damage',
+                         'headers': ['Failure Mode',
+                                     'What Happened Firsthand',
+                                     'Damage or Economic Hit',
+                                     'Expert Source'],
+                         'rows': [['Returned payment right after switching bank accounts',
+                                   'Payment returned after a bank switch, flagging every linked Amex '
+                                   'account at once',
+                                   'Centurion suspended until a bill that was not late got paid down',
+                                   'Simon Katz - Ideal Media ([1AvpfkuaT_Q @ 00:01:14])'],
+                                  ['Payment bounce from a frozen outside bank account',
+                                   'Capital One account frozen, payment bounced, then repaid immediately '
+                                   'and cleared fine',
+                                   'Platinum and Blue Cash both canceled a week later; review call dropped',
+                                   'Cal Barton ([0pnnp262mLg @ 00:10:55])'],
+                                  ['Card frozen in the middle of a welcome bonus',
+                                   '$13,800 of $15,000 required spend cleared when the card froze with '
+                                   'five days left',
+                                   '200,000-point bonus window extension flatly denied by Amex',
+                                   'Cal Barton ([sVToTQaS_Dw @ 00:04:14])'],
+                                  ['Single large luxury purchase on an established relationship',
+                                   '$46,000 watch charged and paid off in full the very next day',
+                                   '$4,500 charge card limits imposed; Delta limit cut from $33,000 to '
+                                   '$4,200',
+                                   'Cal Barton ([3dq0zRBwn8E @ 00:11:02])'],
+                                  ['Spending Power probing on a brand new Platinum',
+                                   'Tested 25K, 50K and 100K, then an Apple Store MacBook purchase froze '
+                                   'everything',
+                                   '4506-T submitted and limits stayed cut for roughly 12 months afterward',
+                                   'AskSebby ([w8CgH2R003g @ 00:12:47])'],
+                                  ['PayPal transfer sending money to a family member',
+                                   '$7,500 sent via PayPal on Monday, cards declined by that Wednesday',
+                                   'All personal and business accounts frozen pending two months of bank '
+                                   'statements',
+                                   'Cal Barton ([0pnnp262mLg @ 00:09:58])'],
+                                  ['Points left sitting while documents were under review',
+                                   '16-year customer with $150,000 income submitted every requested '
+                                   'document on time',
+                                   'Every card closed with 400,000 membership rewards points still in the '
+                                   'account',
+                                   'Cal Barton ([3dq0zRBwn8E @ 00:12:41])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Pre-Spend Freeze-Proofing Gate',
+                           'body': 'Clear these four checks before any large charge, payment-account '
+                                   'change, or points-heavy month, because each one maps to a freeze or '
+                                   'shutdown practitioners took firsthand.',
+                           'items': ['Verify routing and account numbers, confirm the payment cleared at '
+                                     'both banks, and keep the old account open until every autopay has '
+                                     'moved [Cal Barton — 3dq0zRBwn8E @ 00:10:02].',
+                                     'Ramp spend on a curve, 5K then 10K then 15K across months, and call '
+                                     'ahead before any massive purchase instead of after the decline '
+                                     '[Colin Matthew — xZwOSYlOyVc @ 00:13:41].',
+                                     'Never push PayPal, Cash App, Square or Venmo transfers through an '
+                                     'Amex card; use Amex Send and Split for family money instead [Cal '
+                                     'Barton — 0pnnp262mLg @ 00:10:15].',
+                                     'If there is any non-zero chance of a shutdown, transfer out the '
+                                     'points you plan to use before the decision lands [AskSebby — '
+                                     'w8CgH2R003g @ 00:09:48].']}}],
+ 'pull_quote': '"If you think there\'s a non-zero chance of a shutdown, don\'t just snooze and hope it '
+               'goes away." — AskSebby (w8CgH2R003g @ 00:09:48)',
+ 'diagram_id': 'diag-05',
+ 'action_checklist': ['Call the number on the back of your card the same day the freeze hits and ask for '
+                      'the financial review department [Colin Matthew — xZwOSYlOyVc @ 00:11:29].',
+                      'Note the roughly 14-day deadline the moment the review opens, because inaction '
+                      'almost always ends in account closure [AskSebby — w8CgH2R003g @ 00:09:20].',
+                      'Submit the tax return or requested documents even if you think your income falls '
+                      'short, since not sending guarantees shutdown [CardRight — A8jkRXH6hXc @ 00:01:10].',
+                      'Stay courteous, cooperative and professional with the specialist instead of venting '
+                      'frustration [Trip Astute — hdNIogj_le0 @ 00:03:40].',
+                      'Update the income on your Amex profile whenever it rises or falls so spending and '
+                      'stated income never drift apart [Cal Barton — sVToTQaS_Dw @ 00:08:36].',
+                      'Ask for a goodwill annual-fee credit for frozen weeks, or a prorated refund if the '
+                      'account is closed [Colin Matthew — xZwOSYlOyVc @ 00:13:03].'],
+ 'statutory_citations': [{'title': 'AskSebby — I Survived an Amex Financial Review AGAIN: Mistakes to '
+                                   'AVOID [00:09:48]',
+                          'url': 'https://www.youtube.com/watch?v=w8CgH2R003g&t=588s',
+                          'relevance': 'Primary practitioner testimony on surviving two reviews, '
+                                       'de-risking points and the decision to submit.'},
+                         {'title': 'Cal Barton — How to Avoid Amex Financial Reviews [00:11:51]',
+                          'url': 'https://www.youtube.com/watch?v=3dq0zRBwn8E&t=711s',
+                          'relevance': 'Primary practitioner testimony on 40 review cases, outcome rates '
+                                       'and repeat-review risk.'},
+                         {'title': 'Colin Matthew — HOW TO AVOID A FINANCIAL REVIEW FROM AMERICAN EXPRESS '
+                                   '(2026) [00:11:29]',
+                          'url': 'https://www.youtube.com/watch?v=xZwOSYlOyVc&t=689s',
+                          'relevance': 'Primary practitioner testimony on the seven-step review survival '
+                                       'playbook and trigger list.'},
+                         {'title': 'Cal Barton — Amex Account Shutdowns Are Out of Control! [00:07:36]',
+                          'url': 'https://www.youtube.com/watch?v=sVToTQaS_Dw&t=456s',
+                          'relevance': 'Primary practitioner testimony on automated shutdown waves hitting '
+                                       'long-tenured, high-income cardholders.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'XsemDHBgzWE',
+                       'title': 'Avoid a Amex financial review. 4 things not to do',
+                       'channel': 'CardRight',
+                       'author': 'CardRight',
+                       'text': 'Number one, avoid having a 25,000 credit limit on a single card as this is '
+                               'known to trigger a financial review.',
+                       'tip': 'Number one, avoid having a 25,000 credit limit on a single card as this is '
+                              'known to trigger a financial review.',
+                       'timestamp': 42,
+                       'timestamp_seconds': 42,
+                       'timestamp_label': '[00:00:42]',
+                       'url': 'https://www.youtube.com/watch?v=XsemDHBgzWE&t=42s',
+                       'markdown': '[00:00:42](https://www.youtube.com/watch?v=XsemDHBgzWE&t=42s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'RqEu9gdaauI',
+                       'title': 'Avoid a Amex financial review. 4 things not to do [2024]',
+                       'channel': 'CardRight',
+                       'author': 'CardRight',
+                       'text': 'People claim that if you check your spending power more than three times a '
+                               'day then this can trigger an Amex financial review.',
+                       'tip': 'People claim that if you check your spending power more than three times a '
+                              'day then this can trigger an Amex financial review.',
+                       'timestamp': 58,
+                       'timestamp_seconds': 58,
+                       'timestamp_label': '[00:00:58]',
+                       'url': 'https://www.youtube.com/watch?v=RqEu9gdaauI&t=58s',
+                       'markdown': '[00:00:58](https://www.youtube.com/watch?v=RqEu9gdaauI&t=58s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'xZwOSYlOyVc',
+                       'title': 'HOW TO AVOID A FINANCIAL REVIEW FROM AMERICAN EXPRESS (2026)',
+                       'channel': 'Colin Matthew',
+                       'author': 'Colin Matthew',
+                       'text': 'Not every review requires a tax form; there are plenty of documented cases '
+                               'resolved with just two bank statements or two pay stubs.',
+                       'tip': 'Not every review requires a tax form; there are plenty of documented cases '
+                              'resolved with just two bank statements or two pay stubs.',
+                       'timestamp': 664,
+                       'timestamp_seconds': 664,
+                       'timestamp_label': '[00:11:04]',
+                       'url': 'https://www.youtube.com/watch?v=xZwOSYlOyVc&t=664s',
+                       'markdown': '[00:11:04](https://www.youtube.com/watch?v=xZwOSYlOyVc&t=664s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'xZwOSYlOyVc',
+                       'title': 'HOW TO AVOID A FINANCIAL REVIEW FROM AMERICAN EXPRESS (2026)',
+                       'channel': 'Colin Matthew',
+                       'author': 'Colin Matthew',
+                       'text': 'If you were frozen for weeks on a card carrying an $800 or $900 annual '
+                               'fee, ask for a goodwill credit for the time you were locked out.',
+                       'tip': 'If you were frozen for weeks on a card carrying an $800 or $900 annual fee, '
+                              'ask for a goodwill credit for the time you were locked out.',
+                       'timestamp': 783,
+                       'timestamp_seconds': 783,
+                       'timestamp_label': '[00:13:03]',
+                       'url': 'https://www.youtube.com/watch?v=xZwOSYlOyVc&t=783s',
+                       'markdown': '[00:13:03](https://www.youtube.com/watch?v=xZwOSYlOyVc&t=783s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'vfXgcEGNVuM',
+                       'title': 'Amex Financial Reviews - Honesty Counts!',
+                       'channel': 'RJ Financial',
+                       'author': 'RJ Financial',
+                       'text': "They're just going to shut your accounts down, and when Amex shuts your "
+                               'accounts down they take all your points.',
+                       'tip': "They're just going to shut your accounts down, and when Amex shuts your "
+                              'accounts down they take all your points.',
+                       'timestamp': 510,
+                       'timestamp_seconds': 510,
+                       'timestamp_label': '[00:08:30]',
+                       'url': 'https://www.youtube.com/watch?v=vfXgcEGNVuM&t=510s',
+                       'markdown': '[00:08:30](https://www.youtube.com/watch?v=vfXgcEGNVuM&t=510s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Nevp4Iee4iw',
+                       'title': 'Hit with a Amex financial review? Here is how to handle it properly',
+                       'channel': 'CardRight',
+                       'author': 'CardRight',
+                       'text': "If you don't send them your tax return your accounts will definitely get "
+                               'shut down, and if you do send it at least you have a chance of staying '
+                               'open.',
+                       'tip': "If you don't send them your tax return your accounts will definitely get "
+                              'shut down, and if you do send it at least you have a chance of staying '
+                              'open.',
+                       'timestamp': 72,
+                       'timestamp_seconds': 72,
+                       'timestamp_label': '[00:01:12]',
+                       'url': 'https://www.youtube.com/watch?v=Nevp4Iee4iw&t=72s',
+                       'markdown': '[00:01:12](https://www.youtube.com/watch?v=Nevp4Iee4iw&t=72s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'hdNIogj_le0',
+                       'title': 'How to Avoid an AMEX Financial Review | Things to Avoid & What To Do If '
+                                'It Happens to You',
+                       'channel': 'Trip Astute',
+                       'author': 'Trip Astute',
+                       'text': 'Since the banks are often worried about the possibility of money '
+                               'laundering, transferring large amounts of money to others can raise a red '
+                               'flag.',
+                       'tip': 'Since the banks are often worried about the possibility of money '
+                              'laundering, transferring large amounts of money to others can raise a red '
+                              'flag.',
+                       'timestamp': 74,
+                       'timestamp_seconds': 74,
+                       'timestamp_label': '[00:01:14]',
+                       'url': 'https://www.youtube.com/watch?v=hdNIogj_le0&t=74s',
+                       'markdown': '[00:01:14](https://www.youtube.com/watch?v=hdNIogj_le0&t=74s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '1AvpfkuaT_Q',
+                       'title': 'How To Avoid A Financial Review From American Express',
+                       'channel': 'Simon Katz - Ideal Media',
+                       'author': 'Simon Katz - Ideal Media',
+                       'text': 'We average out six months of your spending and anything above that six '
+                               'month average to a certain percent is going to raise a flag.',
+                       'tip': 'We average out six months of your spending and anything above that six '
+                              'month average to a certain percent is going to raise a flag.',
+                       'timestamp': 167,
+                       'timestamp_seconds': 167,
+                       'timestamp_label': '[00:02:47]',
+                       'url': 'https://www.youtube.com/watch?v=1AvpfkuaT_Q&t=167s',
+                       'markdown': '[00:02:47](https://www.youtube.com/watch?v=1AvpfkuaT_Q&t=167s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Er1tcSbzC2w',
+                       'title': 'Yikes! Amex Financial Review: How to Avoid in 2023',
+                       'channel': 'AskSebby',
+                       'author': 'AskSebby',
+                       'text': "If you decide not to submit then you're getting shut down; if you submit "
+                               'you might get shut down but you might also be fine.',
+                       'tip': "If you decide not to submit then you're getting shut down; if you submit "
+                              'you might get shut down but you might also be fine.',
+                       'timestamp': 688,
+                       'timestamp_seconds': 688,
+                       'timestamp_label': '[00:11:28]',
+                       'url': 'https://www.youtube.com/watch?v=Er1tcSbzC2w&t=688s',
+                       'markdown': '[00:11:28](https://www.youtube.com/watch?v=Er1tcSbzC2w&t=688s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'sVToTQaS_Dw',
+                       'title': 'Amex Account Shutdowns Are Out of Control!',
+                       'channel': 'Cal Barton',
+                       'author': 'Cal Barton',
+                       'text': 'More than one person reported that reps told them, we cannot override the '
+                               'system flags.',
+                       'tip': 'More than one person reported that reps told them, we cannot override the '
+                              'system flags.',
+                       'timestamp': 456,
+                       'timestamp_seconds': 456,
+                       'timestamp_label': '[00:07:36]',
+                       'url': 'https://www.youtube.com/watch?v=sVToTQaS_Dw&t=456s',
+                       'markdown': '[00:07:36](https://www.youtube.com/watch?v=sVToTQaS_Dw&t=456s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'A8jkRXH6hXc',
+                       'title': 'Hit with a Amex financial review? Here is how to handle it properly '
+                                '[2024]',
+                       'channel': 'CardRight',
+                       'author': 'CardRight',
+                       'text': "They're not looking for you to prove the income that you wrote on your "
+                               'application however long ago; they are looking for you to prove your '
+                               'current income.',
+                       'tip': "They're not looking for you to prove the income that you wrote on your "
+                              'application however long ago; they are looking for you to prove your '
+                              'current income.',
+                       'timestamp': 21,
+                       'timestamp_seconds': 21,
+                       'timestamp_label': '[00:00:21]',
+                       'url': 'https://www.youtube.com/watch?v=A8jkRXH6hXc&t=21s',
+                       'markdown': '[00:00:21](https://www.youtube.com/watch?v=A8jkRXH6hXc&t=21s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '0pnnp262mLg',
+                       'title': 'How To Avoid Amex Financial Review',
+                       'channel': 'Cal Barton',
+                       'author': 'Cal Barton',
+                       'text': '65% of financial review cases were caused by flat out high spending or '
+                               'irregular and high velocity spending.',
+                       'tip': '65% of financial review cases were caused by flat out high spending or '
+                              'irregular and high velocity spending.',
+                       'timestamp': 727,
+                       'timestamp_seconds': 727,
+                       'timestamp_label': '[00:12:07]',
+                       'url': 'https://www.youtube.com/watch?v=0pnnp262mLg&t=727s',
+                       'markdown': '[00:12:07](https://www.youtube.com/watch?v=0pnnp262mLg&t=727s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'xgsxM7jSJ8U',
+                       'title': 'The REAL Reason Amex Is Closing Customer Accounts Suddenly',
+                       'channel': 'Joe Barreto',
+                       'author': 'Joe Barreto',
+                       'text': "Using another person's account to pay a large spend can raise those flags.",
+                       'tip': "Using another person's account to pay a large spend can raise those flags.",
+                       'timestamp': 206,
+                       'timestamp_seconds': 206,
+                       'timestamp_label': '[00:03:26]',
+                       'url': 'https://www.youtube.com/watch?v=xgsxM7jSJ8U&t=206s',
+                       'markdown': '[00:03:26](https://www.youtube.com/watch?v=xgsxM7jSJ8U&t=206s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'w8CgH2R003g',
+                       'title': 'I Survived an Amex Financial Review AGAIN: Mistakes to AVOID',
+                       'channel': 'AskSebby',
+                       'author': 'AskSebby',
+                       'text': "If you think there's a non-zero chance of a shutdown, don't just snooze "
+                               'and hope it goes away.',
+                       'tip': "If you think there's a non-zero chance of a shutdown, don't just snooze and "
+                              'hope it goes away.',
+                       'timestamp': 588,
+                       'timestamp_seconds': 588,
+                       'timestamp_label': '[00:09:48]',
+                       'url': 'https://www.youtube.com/watch?v=w8CgH2R003g&t=588s',
+                       'markdown': '[00:09:48](https://www.youtube.com/watch?v=w8CgH2R003g&t=588s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '3dq0zRBwn8E',
+                       'title': 'How to Avoid Amex Financial Reviews',
+                       'channel': 'Cal Barton',
+                       'author': 'Cal Barton',
+                       'text': 'Of those 28 cases, 25 people kept at least some of their Amex accounts, '
+                               'which is about 90% of the people.',
+                       'tip': 'Of those 28 cases, 25 people kept at least some of their Amex accounts, '
+                              'which is about 90% of the people.',
+                       'timestamp': 711,
+                       'timestamp_seconds': 711,
+                       'timestamp_label': '[00:11:51]',
+                       'url': 'https://www.youtube.com/watch?v=3dq0zRBwn8E&t=711s',
+                       'markdown': '[00:11:51](https://www.youtube.com/watch?v=3dq0zRBwn8E&t=711s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'L5GeiqJtqEc',
+                       'title': '“Why American Express Trusts Income More Than Credit”',
+                       'channel': 'IV(4) PROSPERITY',
+                       'author': 'IV(4) PROSPERITY',
+                       'text': 'Credit scores open the door; income and behavior decide how wide it opens.',
+                       'tip': 'Credit scores open the door; income and behavior decide how wide it opens.',
+                       'timestamp': 497,
+                       'timestamp_seconds': 497,
+                       'timestamp_label': '[00:08:17]',
+                       'url': 'https://www.youtube.com/watch?v=L5GeiqJtqEc&t=497s',
+                       'markdown': '[00:08:17](https://www.youtube.com/watch?v=L5GeiqJtqEc&t=497s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '0EsrkpAxvQQ',
+                       'title': 'Amex Cracks Down on Gamers, Chase Penta-Stack Spotted',
+                       'channel': 'Points Wire',
+                       'author': 'Points Wire',
+                       'text': 'American Express cut about 5% of its workforce, and executives promised a '
+                               'new crackdown on what they call gamers.',
+                       'tip': 'American Express cut about 5% of its workforce, and executives promised a '
+                              'new crackdown on what they call gamers.',
+                       'timestamp': 17,
+                       'timestamp_seconds': 17,
+                       'timestamp_label': '[00:00:17]',
+                       'url': 'https://www.youtube.com/watch?v=0EsrkpAxvQQ&t=17s',
+                       'markdown': '[00:00:17](https://www.youtube.com/watch?v=0EsrkpAxvQQ&t=17s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q5.'}]}

@@ -1,470 +1,470 @@
 {
   "workbook_id": "wb-039-inbound-pay-per-call-and-ping-post-arbitrage",
   "volume_id": "vol-039-inbound-pay-per-call-and-ping-post-arbitrage",
-  "title": "Inbound Pay-Per-Call & RTB Ping-Post Arbitrage — Operator Companion Workbook",
-  "subtitle": "6 Printable Operator Worksheets for Buyer Underwriting, Call-Level Spread Math, Settlement Float, Idempotent Ping-Post Execution, Statutory Evidence, Automated Acquisition, and a Measured 30-Day Launch",
+  "title": "Inbound Pay-Per-Call & RTB Ping-Post Arbitrage — Practitioner Testimony Operator Workbook",
+  "subtitle": "A field workbook for modeling call margins, wiring RTB ring trees, building IVR qualification gates, controlling routing and attribution, running ping-post auctions, and capturing one-to-one consent before a single paid call goes live",
   "worksheets": [
     {
       "worksheet_id": "ws-01",
       "number": 1,
-      "title": "Arbitrage Deal / Counterparty Underwriting & Spread Qualification",
-      "purpose": "Qualify an inbound call market before buying traffic, assigning numbers, or enabling an auction. Establish which buyer actually owes payment, which publisher creates the demand, and which measurable call conditions convert a quoted bid into a collectible settlement with an auditable spread.",
-      "chapter_ref": "Q1, Q2, Q6",
+      "title": "Call Economics and Platform Readiness Ledger",
+      "purpose": "Turn the pay-per-call model into hard numbers before any spend: choose a starting lane, prove the spread survives a weak paid ratio, own the tracking layer, and wire an RTB ring tree with revenue floors, timeouts, latency buffers, paused buyers, and tested failover.",
+      "chapter_ref": "Q1-Q2",
       "instructions": [
-        "Select one vertical and one geographic footprint, then document the caller's intended service. Separate emergency trades, insurance, and legal inquiries because their qualification, licensing, advertising, and transfer requirements cannot safely share an undifferentiated routing policy.",
-        "Obtain buyer and publisher agreements before negotiating volume. Verify the contracting entity, payment contact, dispute window, and permitted acquisition methods against independent records; a dashboard balance or enthusiastic account manager does not establish collectible settlement value.",
-        "Express the spread using accepted, billable calls rather than raw dial attempts. Specify when the duration clock starts, how transfers are treated, and whether duplicate callers, disconnected agents, or out-of-area requests invalidate an otherwise long conversation.",
-        "Run a deliberately capped pilot and match its recordings, source identifiers, qualification timestamps, invoices, and bank receipts. Keep publisher limits unchanged until an actual net-7 buyer payment demonstrates the collection behavior assumed by the proposed working-capital plan.",
-        "Assign one owner to each unresolved underwriting exception and record a dated remedy. Reject opportunities whose attractive bids depend on unsupported consent, prohibited referral compensation, unilateral retroactive scrubs, or a payment obligation that nobody will sign."
+        "Fill every field with numbers from a real offer you are evaluating, never placeholder figures or averages you cannot defend.",
+        "Complete the spread model and paid-ratio stress test before touching platform settings, because the margin decides every routing choice downstream.",
+        "Read the full offer page and copy its rules verbatim, including minimum call length, buyer hours, hold period, and buyer ownership.",
+        "Build the ring tree, timeouts, and buffers inside your own tracking account, keeping every new buyer paused until each is ready.",
+        "Place live test calls and log every result; any failed check sends you back to the matching field before spend."
       ],
       "fields": [
         {
-          "name": "Vertical, territory, and caller intent",
-          "type": "textarea",
-          "prompt": "Define the initial service category, permitted caller locations, operating hours, and intended transaction. Identify categories that must remain outside this route because their qualification or licensing conditions differ materially.",
-          "example": "Pilot route serves emergency plumbing inquiries in three Phoenix ZIP-code clusters, Monday through Saturday, 07:00–19:00 Arizona time. Callers must request service at a residential property. Insurance enrollment, attorney matching, employment inquiries, and existing-customer warranty calls use separate routes or receive a clear unavailable-service message."
+          "name": "lane_selection",
+          "type": "text",
+          "prompt": "State the starting lane you will run first: pay-per-call through a network, pay-per-lead, a hybrid funnel, or direct local clients. Explain why that lane fits your current budget, approval odds, and tolerance for slow-paying businesses right now.",
+          "example": "Starting on network pay-per-call for easy approval, accepting thinner checks. Matt Wacek warns that nine times out of 10 an affiliate network pays its bill while a business sometimes does not [Matt Wacek — uxYMcIUwpLA @ 00:06:30]. A hybrid lead-form backup stays ready, pushing urgency on the thank-you page where some Leadbase Pro members reach a 40% call rate [Leadbase — ewNftdwX784 @ 00:12:52]."
         },
         {
-          "name": "Buyer identity and payment obligation",
+          "name": "spread_model",
           "type": "textarea",
-          "prompt": "Record the buyer's contracting entity, service authority, settlement signer, payment account verification method, and evidence of operating capacity. Distinguish the actual debtor from an intermediary selling access to somebody else's demand.",
-          "example": "Buyer A contracts directly through its verified Arizona operating entity, supplies its contractor-license record, and names a controller authorized to approve invoices. A callback to an independently verified office number confirms payment instructions. The signed schedule requires net-7 settlement for accepted calls."
+          "prompt": "Write the per-call revenue, publisher payout, and margin for your first offer. Show the arithmetic line by line, name who keeps the spread, and note whether a direct buyer-seller deal would leave any margin to split at all.",
+          "example": "Revenue $50, publisher payout $35, network margin $15 per qualified call, mirroring the TrackDrive split [TrackDrive — V1FTIO7peWA @ 00:02:27]. If selling direct, there is no middle margin, so the full $50 lands with the publisher. Brokered roofing calls follow ceohec's 40% minimum markup, buying at $150 and reselling at $210 [ceohec — Rcc1hu6P28g @ 00:04:34]."
         },
         {
-          "name": "Publisher provenance and acquisition restrictions",
+          "name": "paid_ratio_stress_test",
           "type": "textarea",
-          "prompt": "Identify every publisher, acquisition account, landing page, and subpublisher permission. Describe evidence connecting the consumer request to the call, and prohibit traffic sources that cannot produce the agreed provenance records.",
-          "example": "Publisher P receives one source identifier for its owned search campaign and one approved landing-page version. The agreement bars undisclosed subpublishers, impersonation, incentivized dialing, and purchased callback lists. Each call carries campaign, click, page-version, and timestamp references; missing provenance stops new routing immediately."
+          "prompt": "Model the worst-case paid ratio for your offer. Assume the buyer pays for only a fraction of delivered calls, then recalculate your true cost per paid call and decide the lowest ratio at which the campaign still clears profit.",
+          "example": "Leadbase saw debt buyers receive 10 calls and agree to pay for three [Leadbase — ewNftdwX784 @ 00:06:44]. At a $50 generation cost, paying on three of ten pushes true cost to $150 per paid call [Leadbase — ewNftdwX784 @ 00:06:55]. Floor set at five of ten paid; below that, traffic pauses and the buyer gets renegotiated or replaced."
         },
         {
-          "name": "Billable call definition and duration clock",
+          "name": "offer_page_audit",
           "type": "textarea",
-          "prompt": "Write the exact qualification predicate, including buyer connection, duration threshold, service intent, geography, duplicate period, and exclusions. Specify which system measures each condition and how contradictory timestamps are resolved.",
-          "example": "A call becomes billable at 120 seconds after a live buyer agent answers, provided the caller requests covered plumbing service inside the accepted territory. IVR time does not count. Calls from the same normalized number within 30 days require documented distinct service intent."
+          "prompt": "Copy every rule from the offer page before you build anything: minimum call length, buyer hours, hold period, geography, and who owns the buyer relationship. Flag any rule that conflicts with your traffic source or planned call hours.",
+          "example": "Offer page read line by line per WordsAtScale: minimum call length, buyer hours, hold period, and buyer ownership all logged [WordsAtScale — DJFaYJ3O7aU @ 00:01:59]. A call that meets those rules is qualified and gets paid; one that misses is not [TrackDrive — _h1_mcKPGjY @ 00:08:23]. Conflict flagged: buyer closes at 6 p.m. while ads run until 9 p.m."
         },
         {
-          "name": "Quoted bid and matched acquisition spread",
-          "type": "textarea",
-          "prompt": "Translate the buyer bid into gross settlement, publisher payment, media allocation, and retained contribution per accepted call. State whether rejected calls still incur acquisition expense and keep that exposure outside optimistic headline spreads.",
-          "example": "The reference unit settles at $100, pays $42 to the publisher, and allocates $3 to click-to-call media, leaving $55 retained contribution before other costs. The $45 combined acquisition allocation must include rejected-attempt expense when reconciled across the whole accepted-call cohort."
+          "name": "own_tracking_layer",
+          "type": "text",
+          "prompt": "Name the tracking number you will place in front of the network's number and the platform that issues it. Describe how you will verify every call, catch skimming, and compare your counts against the network's reported qualified calls.",
+          "example": "A Ringba number sits in front of the network number on every placement, so each call is logged before handoff [Ringba — 4kaOQgGnpJo @ 00:13:58]. Ringba stresses using your own call tracking [Ringba — 4kaOQgGnpJo @ 00:07:21]. Weekly, own counts get compared against network-reported qualified calls, and any gap over a few calls triggers a dispute."
         },
         {
-          "name": "Scrub rights and dispute evidence",
+          "name": "compliance_creative_check",
           "type": "textarea",
-          "prompt": "Specify allowed rejection reasons, submission deadlines, required evidence, appeal ownership, and treatment of undisputed amounts. Measure disputed value separately from accepted value so a duration disagreement cannot silently rewrite settled revenue.",
-          "example": "Buyer A may dispute duplicate, geography, service-intent, or duration failures within seven calendar days, supplying call identifiers and supporting timestamps. Undisputed amounts remain payable. A 20-call dispute at $100 each creates a $2,000 contested balance, not an automatic publisher deduction."
+          "prompt": "List every ad, sign, or page that will generate calls and mark any claim that could mislead a caller. Record how consent will be captured and stored, given that a litigator suing your client can pull you in too.",
+          "example": "Three ad creatives reviewed; one promising a guaranteed settlement was dropped as misleading, following John Casto's warning that a litigator suing the client puts the publisher on the hook too [John Casto — XQvPekJ-K8M @ 00:03:23]. Consent records are captured on the landing page with timestamp and stored per caller. Casto would rather sell 100 calls than 1,000 leads."
         },
         {
-          "name": "Capacity, pacing, and concentration limits",
+          "name": "rtb_buyer_stack",
           "type": "textarea",
-          "prompt": "Document concurrent-call capacity, geographic coverage, hourly pacing, and buyer concentration limits. Describe the routing response when capacity disappears after a bid, including whether an alternate buyer has independently satisfied the applicable requirements.",
-          "example": "Buyer A accepts two simultaneous calls and at most 40 accepted calls daily. The pilot starts at 10 daily calls with a $1,000 gross exposure ceiling. A prequalified Buyer B may receive overflow only within its own service footprint and documented consumer-transfer permissions."
+          "prompt": "Map your routing plan for one campaign: which buyers sit in the ring tree as dynamic RTB targets, which sit underneath as static fallbacks, the minimum revenue floor, and what happens when no bid clears that floor.",
+          "example": "Ring tree with three dynamic targets and a $29.01 minimum revenue floor; if no bid beats 29, routing falls to the next static target or another ring tree [Ringba — WOqDYpchQOo @ 00:04:11]. Ringba estimates earnings per call from past buyer behavior to pick the winner [Ringba — yat7hRHHsKY @ 00:08:04]. Two static buyers sit underneath as catch-all failover."
         },
         {
-          "name": "Net-7 collectability verification",
-          "type": "textarea",
-          "prompt": "Record the first invoice, acceptance evidence, due date, collected amount, and bank-clearing date. Define the exposure ceiling that remains active until payment is verified and the response to a partial or late receipt.",
-          "example": "The first 50 accepted calls produce a $5,000 invoice issued March 8, 2027, due March 15. The exposure ceiling stays at $5,000 until the full receipt clears. A $4,500 remittance leaves $500 unresolved and prevents any automatic increase in publisher traffic."
+          "name": "timeout_and_buffer_settings",
+          "type": "text",
+          "prompt": "Record the exact dial timeout, ping timeout, buyer billable buffer, and publisher billable duration for this campaign. Show the latency pad you added so connect and ring time never leave you paying for a call your buyer rejected.",
+          "example": "Dial timeout 10 seconds and ping timeout 3,000 milliseconds, matching the RingbaX seller ring tree recipe [Ringba — uDzWrD17wqg @ 00:02:04]. Buyer buffer 120 seconds; publisher pitched at 128 seconds using ceohec's 8-second latency pad [ceohec — RWVdTqjVYE8 @ 00:09:59]. Conversion propagation switched on for Retreaver-to-Retreaver routes so both sides agree [ceohec — RWVdTqjVYE8 @ 00:06:05]."
         },
         {
-          "name": "Contract economics and change control",
+          "name": "buyer_onboarding_controls",
           "type": "textarea",
-          "prompt": "Capture rate-card version, duration rule, payment terms, source restrictions, and prospective amendment procedure. Require economic changes to preserve traceability between the terms offered during the auction and the terms applied during settlement.",
-          "example": "Rate card PL-2027-03 pays $100 for the defined 120-second call and permits changes only for calls initiated after the documented effective timestamp. The buyer cannot apply a new 150-second threshold to yesterday's calls. Both parties retain the original auction terms with each settlement record."
+          "prompt": "Describe how each new buyer enters a live campaign without receiving calls early. Note whether the buyer is paused on entry, which fields hide publisher names and IDs, and whether the buyer accepts SIP delivery for faster connections.",
+          "example": "New buyer added with pause buyer hit first, since buyers go live immediately on entry [ceohec — RWVdTqjVYE8 @ 00:15:37]. Publisher names and IDs stay out of collaborator-visible fields [ceohec — RWVdTqjVYE8 @ 00:07:05]. Buyer accepts SIP, so routing uses it for faster connection, better voice quality, and header data [Ringba — BOFMLupLrSM @ 00:03:59]."
         },
         {
-          "name": "Underwriting decision and exception register",
+          "name": "end_to_end_test_log",
           "type": "textarea",
-          "prompt": "Make a proceed, revise, or reject decision using collectible spread, verified authority, evidence completeness, and available cash. Assign an accountable owner and deadline to every exception that prevents the next volume increase.",
-          "example": "Decision is proceed with a 50-call capped pilot, not unrestricted scale. The operator owns payment verification; the routing contractor owns duration-clock testing. A missing publisher source declaration must be resolved before its first call. The next cap review occurs after cleared net-7 payment."
+          "prompt": "Log the real test calls you placed before sending paid traffic. For each, confirm tracking fired, the correct buyer received it, someone answered, the duration timed correctly, and the recording saved, then note any failure and its fix.",
+          "example": "Five test calls placed before any paid spend, checking tracking, buyer routing, answer, timing, and recording end to end [TrackDrive — ncatAE6wf_0 @ 00:02:38]. Call three hit voicemail because buyer hours were wrong; fixed and retested. Every call recorded, echoing the case where Ringba recordings captured every call a business received [Ringba — RVobRCTpSEg @ 00:03:51]."
         }
       ],
-      "completion_gate": "Advance only when both counterparties are verified, qualification and scrub terms are signed, source evidence is reproducible, and a named owner has approved a cash-funded pilot cap without assuming uncollected receipts."
+      "completion_gate": "Do not send paid traffic until the spread math survives a three-of-ten paid ratio, your own tracking number sits in front of every network number, the ring tree carries a revenue floor with static fallbacks underneath, publisher durations include the 8-second pad, and five live test calls pass end to end."
     },
     {
       "worksheet_id": "ws-02",
       "number": 2,
-      "title": "Unit Economics, Escrow/Reserve Float & Working-Capital Calculator",
-      "purpose": "Reconcile gross exchange settlements, acquisition payouts, retained contribution, operating costs, and owner profit without treating buyer sales as operator revenue. Use the canonical annual scenarios as fixed anchors, then calculate payment timing, restricted balances, and stress losses as separate cash-management schedules.",
-      "chapter_ref": "Q3, Q4",
+      "title": "IVR Qualification Gates and Routing Control Map",
+      "purpose": "Design IVR gates that sort callers on the attribute that decides payout, then control everything after qualification: number pools, tag filters fed by URL parameters, priority and weight tiers, dollar caps, duplicate remonetization, zip-level geo routing, and recording reviews that expose weak buyers.",
+      "chapter_ref": "Q3-Q4",
       "instructions": [
-        "Enter the three canonical scenarios exactly before testing any custom assumptions. Calculate retained contribution as gross settlements multiplied by 0.55, and calculate owner profit using the stated gross-basis margin rather than applying that margin again to retained contribution.",
-        "Build one accepted-call cohort with all associated publisher and media costs, including unsuccessful attempts. Divide aggregate costs by accepted calls only after reconciliation; otherwise, cheap-looking accepted units can conceal the acquisition expense generated by rejected traffic.",
-        "Separate baseline monthly overhead from the complete annual expense bridge. The published overhead range does not replace contractors, transaction costs, other operating expenses, or losses already needed to reconcile the canonical owner-profit figures without double counting.",
-        "Model receipt dates and payment dates on a calendar rather than using profit as a cash proxy. Keep contractual escrow, internal reserves, receivables, and available bank cash in distinct accounts with explicit release conditions and reconciled ownership.",
-        "Stress collections, acquisition prices, and dispute rates independently before combining them. Label every stress result as a deviation from the canonical scenario, then set a traffic reduction rule that activates before unrestricted cash falls below the funded payment floor."
+        "Start with the single attribute your buyer pays on, then build every menu and filter around protecting it.",
+        "Script each IVR prompt word for word, keeping menus short and placing a hang-up node on every failure path.",
+        "Map every quiz answer to a URL parameter and a matching tag filter before connecting any target.",
+        "Set priority, weight, concurrency, dollar caps, and hours for each buyer, treating unverified capacity claims as warnings.",
+        "Listen to a sample of recordings weekly and rewrite routing whenever agents, buyer IVRs, or hours burn revenue."
       ],
       "fields": [
         {
-          "name": "Conservative canonical annual bridge",
-          "type": "textarea",
-          "prompt": "Reproduce the Conservative scenario with gross settlements, the 45% acquisition allocation, 55% retained contribution, residual costs, owner profit, and both margin denominators. Preserve the stated staffing model without adding hypothetical revenue.",
-          "example": "Conservative gross settlements are $200,000; acquisition costs are $90,000; retained contribution is $110,000. Other costs total $80,000, leaving $30,000 owner net profit. Gross-basis margin is 15%; retained-basis margin is 27.27%. Staffing remains one full-time operator plus two contractors."
+          "name": "payout_attribute",
+          "type": "text",
+          "prompt": "Name the single caller attribute that decides payout on this campaign, such as debt level, insurance status, or homeownership. Write the exact IVR question, the key that qualifies, and the key that disqualifies the caller before any buyer phone rings.",
+          "example": "Attribute: unsecured credit card debt. Prompt asks whether the caller has more than $10,000; press 1 means qualified and forwarded, press 2 means not qualified [Ringba — 4dnXkZ7u6zw @ 00:00:51]. Only the press-1 caller reaches the buyer and earns affiliate credit. A press-key robocall check sits in front, terminating callers who cannot complete it [Ringba — Ua5XxaPrhRs @ 00:04:54]."
         },
         {
-          "name": "Base canonical annual bridge",
+          "name": "reask_and_failure_path",
           "type": "textarea",
-          "prompt": "Reproduce the Base scenario exactly and show why the retained margin differs from the gross-basis margin. Record the owner-profit amount without rounding it to a nearby marketing headline or changing its denominator.",
-          "example": "Base gross settlements are $850,000; acquisition costs are $382,500; retained contribution is $467,500. Other costs total $267,750, leaving exactly $199,750 owner net profit. The margins are 23.5% of gross and 42.73% of retained contribution, with one full-time operator plus two contractors."
+          "prompt": "Design the path for callers who answer wrong, time out, or press an unknown key. State how many retries they get, what audio cue loops them back, and where the hang-up node sits on the failed-connection branch.",
+          "example": "Callers claiming coverage on the ACA flow get re-asked, because many press the wrong key the first time, per Carlos Corona. An attempt variable increments on each gather failure; after two failed attempts the call disconnects [SignalWire — VByuomL6T0s @ 00:04:54]. A hang-up node closes the failed-connection path so the tree validates and saves [Ringba — Vd_ZoE2BRqQ @ 00:02:22]."
         },
         {
-          "name": "Scaled canonical annual bridge",
+          "name": "non_qualified_monetization",
           "type": "textarea",
-          "prompt": "Reproduce the Scaled Small-Team scenario, including all five people and the residual cost bridge. Distinguish increasing settlement volume from increasing retained share, which remains fixed at the canonical 55% assumption.",
-          "example": "Scaled gross settlements are $1,500,000; acquisition costs are $675,000; retained contribution is $825,000. Other costs total $345,000, leaving $480,000 owner net profit. Gross margin is 32%; retained margin is 58.18%. Staffing is two full-time people plus three contractors."
+          "prompt": "Decide what happens to callers who fail the screen. Choose between hanging up, routing to an adjacent buyer, or converting them into an SMS opt-in, and list the data fields your opt-in webhook will carry downstream.",
+          "example": "Failed-screen Medicare callers from an ACA ad are not dumped on Medicare buyers; Corona says that works for days or weeks before complaints arrive [Carlos Corona — tf4AieS7Mhc @ 00:03:55]. Instead they convert into an IVR SMS opt-in, with the webhook carrying call UUID, E.164 number, campaign, and state for later follow-up."
         },
         {
-          "name": "Accepted-call unit bridge and revenue presentation",
-          "type": "textarea",
-          "prompt": "Convert the Base scenario into an illustrative accepted-call count, then distinguish settlement volume from retained revenue. Document the principal-versus-agent assessment needed for actual ASC 606 presentation instead of assuming every exchange is identical.",
-          "example": "At $100 per settled call, 8,500 annual calls produce $850,000 gross settlements. Each allocates $45 acquisition, $55 retained contribution, $31.50 other costs, and $23.50 owner profit. The model uses net presentation; actual presentation follows the control assessment in ASC 606-10-55-36 through 55-40."
+          "name": "menu_and_voice_design",
+          "type": "text",
+          "prompt": "Write your menu options in order and count them. Note which options are most common and listed first, whether prompts switch voices to hold attention, and whether any step should run silently in the background instead.",
+          "example": "Four options, most common first, staying under the five-option ceiling [GetVoIP - Simplify your search — 7vsOEhARsdU @ 00:02:23]. Prompts alternate between two voices because Corona found callers pay more attention when the voice changes [Carlos Corona — tf4AieS7Mhc @ 00:07:06]. Buyer menus are skipped with Dial IVR sending DTMF tones in the background [Ringba — VQKxVnPn5zE @ 00:00:15]."
         },
         {
-          "name": "Baseline overhead and complete cost allocation",
+          "name": "quiz_parameter_passing",
           "type": "textarea",
-          "prompt": "Allocate baseline overhead and remaining expenses so their sum equals each scenario's residual costs. Identify which ledger accounts include people, platforms, losses, and transaction charges, preventing any expense from appearing twice.",
-          "example": "An illustrative allocation uses Conservative core overhead $48,000 plus $32,000 other costs; Base $108,000 plus $159,750; Scaled $168,000 plus $177,000. Monthly core amounts are $4,000, $9,000, and $14,000. These reconcile the annual bridges while remaining inside the stated overhead range."
+          "prompt": "List each quiz or landing-page answer you will pass into the call platform as a URL parameter or tag. For each, name the router filter it feeds and the buyer condition it enforces, such as carrier or homeowner status.",
+          "example": "Auto insurance quiz passes carrier and homeowner answers into Ringba URL parameters, so two exclusive buyers are filtered on whether the visitor owns a home [Landerlab — DMS29IlU8pE @ 00:16:17]. Each answer becomes a tag routing filter at the target level, making a target eligible only when the call meets its conditions [Ringba — 4MDNmxviCKk @ 00:00:36]."
         },
         {
-          "name": "Payment-gap working-capital requirement",
-          "type": "textarea",
-          "prompt": "Calculate acquisition cash needed between publisher payment and buyer receipt using annual acquisition expense divided by 365. State the timing assumptions explicitly and model late payment as additional exposure rather than extra revenue.",
-          "example": "Base acquisition outflow averages $382,500 / 365 = $1,047.95 daily. Publisher net-2 against buyer net-7 creates a five-day gap requiring $5,239.73 before other cash needs. Collection on day 21 instead requires $19,910.96 for the 19-day gap, adding $14,671.23 of funding pressure."
+          "name": "number_pool_verification",
+          "type": "text",
+          "prompt": "Describe how you confirmed the dynamic number pool is working on the live landing page. Record the base number, the swapped number you saw, the mobile test call you placed, and the tag that appeared in the call log.",
+          "example": "Preview showed the base number replaced, confirming the Ringba number pool script loaded; a live mobile test then showed the carrier tag in the call log [Landerlab — DMS29IlU8pE @ 00:10:33]. The pool locks one number to each browser session until the visitor goes idle, closes the browser, or leaves the page [Ringba — pNWCpdBjuPA @ 00:00:35]."
         },
         {
-          "name": "Dispute reserve and accounting treatment",
-          "type": "textarea",
-          "prompt": "Set a reserve policy using unsettled exposure and observed dispute behavior. Distinguish earmarked cash from recognized expense, buyer receivable allowances, and publisher liabilities; specify who authorizes a release after the relevant risk expires.",
-          "example": "For $20,000 of unsettled gross invoices, management earmarks 10%, or $2,000, as internal cash reserve. Moving that cash does not itself create expense. A separately supported $600 receivable allowance affects earnings; the controller checks existing loss allocations before posting any additional charge."
+          "name": "ai_webhook_fallback",
+          "type": "text",
+          "prompt": "If an AI voice agent answers any inbound calls, document the webhook router's response time, retry behavior, and default fallback agent. Confirm each dynamic variable name matches exactly between the webhook response and the agent prompt.",
+          "example": "Retell inbound webhook must answer inside 10 seconds; it retries up to three times, then falls back to the default agent on the number [Henryk Brzozowski — p7WavoW_6to @ 00:04:24]. The caller_name variable is spelled identically in the make.com response and the agent prompt, otherwise the name will not populate [Henryk Brzozowski — p7WavoW_6to @ 00:07:13]."
         },
         {
-          "name": "Startup cash, escrow, and unrestricted balance",
+          "name": "priority_weight_caps",
           "type": "textarea",
-          "prompt": "Allocate startup capital among setup spending, payment-gap funding, internal reserves, and accessible operating cash. Identify any third-party escrow agreement separately, including ownership, release triggers, and whether the balance can fund publisher payments.",
-          "example": "A $30,000 startup budget allocates $6,000 to setup, $5,239.73 to the modeled payment gap, and $2,000 to an internal reserve, leaving $16,760.27 unrestricted. If a buyer also requires $3,000 contractual escrow, accessible cash falls to $13,760.27; the escrow is not another expense."
+          "prompt": "Lay out every target's priority tier, weight, concurrency cap, dollar cap, and hours of operation including lunch breaks. Mark which buyers are new, the hard dollar exposure each carries until their first payment clears, and any quoted hours not yet verified.",
+          "example": "Priority one holds two direct buyers split by weight; if neither is available, priority two takes the call [Ringba — 0eCCbtHmCJE @ 00:02:15]. The new buyer is capped at $2,000 for the first two weeks until payment lands [Ringba — yFkULiyenzk @ 00:01:44]. One network quotes 8 a.m. to 6 p.m.; recordings get checked for later answering [Ringba — ojcbZuG798w @ 00:50:23]."
         },
         {
-          "name": "Acquisition and collection sensitivity",
+          "name": "duplicate_and_geo_routing",
           "type": "textarea",
-          "prompt": "Apply one explicit acquisition-cost shock and one collection-loss shock to the Base scenario. Keep the canonical reference unchanged, disclose the changed retained share, and avoid presenting stressed results as the published Base case.",
-          "example": "If annual media allocation of $25,500 rises 20%, additional cost is $5,100 and Base profit falls to $194,650. An additional 2% collection loss on $850,000 removes $17,000. Combined incremental shocks leave $177,650, assuming no recovery, volume change, or duplicate loss provision."
+          "prompt": "Explain how duplicate callers and geography will be handled. State your duplicate rule, where repeat callers route for remonetization, and whether geo routing uses area code or a more precise location signal such as zip, and the duplicate share you expect.",
+          "example": "Budgeting duplicates at 5% to 25% of call flow, per Ringba platform statistics [Ringba — ojcbZuG798w @ 00:14:05]. Repeat callers route to a second network instead of being dropped. Geo routing uses zip, not area code, since roughly 35% of people live outside their area code [Ringba — ojcbZuG798w @ 00:22:10]. Zip-level routing lifted one mortgage client from $10 to $250 per call."
         },
         {
-          "name": "Cash release and owner distribution test",
+          "name": "concurrency_and_recording_review",
           "type": "textarea",
-          "prompt": "Specify a cash waterfall that pays due obligations before distributions. Include collected receipts, publisher liabilities, operating payments, restricted balances, and the minimum liquidity floor; do not substitute accrued owner profit for available cash.",
-          "example": "With $40,000 bank cash, deduct $9,000 payable to publishers, $9,000 due operating costs, $3,000 escrow, $2,000 internal reserve, and a $10,000 liquidity floor. Maximum distributable cash is $7,000. The annual $199,750 Base profit figure does not override this current cash limit."
+          "prompt": "Record each buyer's stated concurrency and how you verified it. Then summarize what your call recordings revealed about back-end agents, buyer IVRs, and greetings, and list the buyers you will pause, renegotiate, or replace as a result.",
+          "example": "Network claimed unlimited concurrency; flagged, since ten extra CC is reasonable while 500 into one giant buyer is fishy [Ringba — ojcbZuG798w @ 00:55:36]. Recordings exposed a back-end buyer with weak agents and a long IVR burning return on investment [Ringba — ojcbZuG798w @ 00:48:43]. That buyer now gets auto-dialed IVR selections or gets replaced [Ringba — ojcbZuG798w @ 00:47:46]."
         }
       ],
-      "completion_gate": "Advance when all three annual bridges reconcile exactly, the retained share remains 0.55 in canonical cases, startup allocations sum to cash available, and the operator can fund the modeled payment delay without spending escrow or counting unpaid receivables as cash."
+      "completion_gate": "Do not route live traffic until the IVR validates with a hang-up node on every failure path, non-qualified callers have a defined destination other than a mismatched buyer, the number pool swap and carrier tag are confirmed on a mobile test, every new buyer carries a hard dollar cap, and duplicates route to a second buyer."
     },
     {
       "worksheet_id": "ws-03",
       "number": 3,
-      "title": "End-to-End Execution, Idempotent Ledger & QA Pre-Flight Sheet",
-      "purpose": "Map each call from source attribution through auction, connection, qualification, dispute, and cash settlement. Establish deterministic identifiers and append-only accounting events so retries, delayed webhooks, contradictory duration records, and partial remittances cannot create duplicate revenue or erase the original transaction evidence.",
-      "chapter_ref": "Q7, Q8",
+      "title": "Ping-Post Auction Rules and One-to-One Consent Audit",
+      "purpose": "Run ping-post lead and call auctions on defensible rules, then prove every contact rests on one-to-one consent: margin carves, timeout windows, refund caps, fallback scenarios, call campaign safeguards, earnings-per-call checks, consent wording, consent records, and source rejection criteria.",
+      "chapter_ref": "Q5-Q6",
       "instructions": [
-        "Draw the complete event sequence before configuring Ringba or Retreaver. Name the authoritative system for call identity, buyer connection, measured duration, qualification status, invoice issuance, and bank receipt so conflicting records have a predetermined resolution path.",
-        "Create a stable internal call identifier and persist every provider identifier as a mapping. Use separate keys for event delivery and economic posting because one call can legitimately produce several events but only one settlement for each contracted obligation.",
-        "Implement transaction boundaries around qualification and ledger posting. Acknowledge a webhook only after durable receipt, process it with bounded retries, and send exhausted failures to a review queue without manufacturing a successful disposition or replaying an uncontrolled buyer transfer.",
-        "Test duration boundaries, caller disconnects, stale bid responses, duplicate callbacks, and buyer capacity exhaustion using authorized test numbers. Compare expected events with actual ledger entries, including the absence of entries when a call never satisfies the agreed billable conditions.",
-        "Reconcile the first production cohort across call records, qualification evidence, invoices, publisher accruals, and bank receipts. Resolve differences by appending documented corrections rather than editing history, and preserve the exact route and rate versions used when each call occurred."
+        "Write the auction rules before onboarding any buyer, including margin, timeouts, refund cap, and matching priority.",
+        "Start every dynamic source on plain Yes and change fallback settings only after the math proves a gain.",
+        "Enter call durations in the unit the platform expects and launch on one small geo with a low cap.",
+        "Copy consent language exactly as consumers see it, and attach a sample consent record to each buyer file.",
+        "Reject any source that cannot produce documented, company-specific consent, regardless of volume or price offered."
       ],
       "fields": [
         {
-          "name": "Event map and authoritative timestamps",
+          "name": "ping_post_flow",
           "type": "textarea",
-          "prompt": "List the events that define the call lifecycle and identify the authoritative timestamp for each. Explain how the system handles delayed delivery without confusing webhook arrival time with the underlying business event.",
-          "example": "Call C039-0001 records source capture, ping sent, bid accepted, buyer answered, 120-second qualification, disconnect, invoice, and receipt. Buyer-answer time starts the duration clock. A webhook arriving 40 seconds late keeps its original event timestamp and records ingestion time separately for latency measurement."
+          "prompt": "Describe your ping-post sequence from first ping to final post. Identify which buyers receive the non-contact ping, which filters exclude them, when PII is released, and what the seller sees if no buyer responds inside the timeout window.",
+          "example": "Non-contact ping fires simultaneously to every buyer with an active account, funds, and a matching filter set; the PII post lands only after the buyer returns success. Extra fields often trigger exclusion [boberdoo.com — vNu0tV99Lnw @ 00:07:35]. If no response returns in 20 seconds, the seller gets a generic unmatched [boberdoo.com — YLw0lKsOayk @ 00:09:51]."
         },
         {
-          "name": "Idempotency keys and uniqueness constraints",
-          "type": "textarea",
-          "prompt": "Define delivery deduplication, economic uniqueness, and correction identifiers separately. Describe how the database prevents two workers from posting the same billable event while permitting a later, explicitly linked reversal or adjustment.",
-          "example": "Webhook delivery is unique on provider plus provider_event_id. The settlement posting is unique on internal_call_id, buyer_id, and obligation_version. Two workers racing on C039-0001 produce one $100 receivable. A later $100 reversal uses a new adjustment identifier referencing the original posting, never a deleted row."
+          "name": "margin_carve",
+          "type": "text",
+          "prompt": "Write the margin you carve off each buyer bid before the offer returns to the seller. State whether it is a fixed dollar amount or a percentage tier, and show the resulting offer for at least two sample bids.",
+          "example": "Fixed $2 margin: a $10 bid returns an $8 offer to the seller, and a $3 margin drops it to $7 [boberdoo.com — yCAVYNpSdZI @ 00:28:04]. The vendor then decides whether to accept the $8 offer and send the post [boberdoo.com — lpWTQpnduYo @ 00:05:43]. Larger accounts move to variable tiers between 10% and 50%."
         },
         {
-          "name": "Ping request minimization and timeout budget",
-          "type": "textarea",
-          "prompt": "Specify the auction request fields, permissible recipients, timeout budget, and treatment of late responses. Send only attributes needed to price eligible demand, reserving consumer identifiers for a justified and authorized transfer stage.",
-          "example": "The ping carries service category, coarse geography, source class, and a short-lived auction identifier rather than the caller's phone number. The engineering target is a 700-millisecond total decision budget, subject to provider capabilities. Bids received after auction closure cannot replace the selected buyer."
+          "name": "timeout_windows",
+          "type": "text",
+          "prompt": "Set the ping timeout and post timeout for every source, and explain how lagging buyers will be excluded so the seller always receives a bid back. Note any source that requires longer windows and the reason it was granted.",
+          "example": "Standard sources run 15 seconds on the ping and 30 on the post, with lagging buyers excluded so the seller always gets a bid back [boberdoo.com — yCAVYNpSdZI @ 00:15:39]. One aggregator source runs 20 seconds on the ping and 60 on the post because its buyer API returns slowly during peak hours."
         },
         {
-          "name": "Bid token, reservation, and post behavior",
+          "name": "refund_and_priority_rules",
           "type": "textarea",
-          "prompt": "Describe how the selected bid becomes a single authorized transfer, including token expiry, capacity reservation, and ambiguous response handling. Prevent network retries from creating two live transfers or a second charge.",
-          "example": "Buyer A returns a $100 bid with a five-second validity window. The adapter stores the winning token before transfer and consumes it once. If the post request times out after possible acceptance, the worker queries status or holds for review rather than blindly posting again."
+          "prompt": "Record the refund cap on every buyer account, the window it covers, and each buyer's matching priority. Explain how buyers sharing a priority are rotated and how you will stop any single buyer from refunding most of what they receive.",
+          "example": "Refund cap set at 15% of leads over 30 days on every buyer, installed before onboarding, so no buyer can refund 90 of 100 [boberdoo.com — yCAVYNpSdZI @ 00:22:50]. All buyers default to matching priority five and rotate round robin [boberdoo.com — I3MdV-IDLRk @ 00:24:08]. The highest-paying direct buyer moves up one priority level."
         },
         {
-          "name": "Qualification state machine and duration boundary",
+          "name": "fallback_and_scenarios",
           "type": "textarea",
-          "prompt": "Define permitted state transitions and the evidence required for billable status. Include exact boundary behavior and ensure an apparently long total call cannot qualify when connected buyer conversation remains below the contracted threshold.",
-          "example": "States progress from received to auctioned, connected, qualified, invoiced, and settled, with separate rejected and disputed branches. A 119.999-second buyer connection fails a 120-second rule; 120.000 seconds passes if other predicates hold. A 150-second call containing 40 seconds of IVR remains below the buyer-duration threshold."
+          "prompt": "State whether each dynamic source starts on plain Yes or on yes but sold non-exclusively, and whether you run exclusive or shared scenarios. Show the math proving any non-exclusive or shared sale beats selling the lead once.",
+          "example": "Every dynamic source starts on Yes; the non-exclusive fallback stays off because it can sell a lead at a loss [boberdoo.com — EKrBDZYFq2A @ 00:23:24]. Scenarios compare one exclusive $20 sale against two shared sales: selling it twice at $12 makes 24 compared to 20 [boberdoo.com — W03nRhCi63A @ 00:31:46]. Shared wins only when two buyers clear $10."
         },
         {
-          "name": "Settlement subledger and accounting adapter",
+          "name": "call_campaign_setup",
           "type": "textarea",
-          "prompt": "Show the gross settlement, acquisition obligations, retained contribution, and later cash movements for one accepted call. Separate operational subledger facts from the journal presentation required by the approved principal-versus-agent accounting assessment.",
-          "example": "For C039-0001, the subledger records $100 buyer receivable, $42 publisher obligation, $3 media allocation, and $55 retained contribution. A net-presentation adapter recognizes the retained amount under the documented accounting policy. Buyer receipt clears the receivable; publisher payment clears its liability without recognizing revenue again."
+          "prompt": "Document your ping-post call campaign settings: number type ordered, duration field units, starting geo, and daily cap. Explain how many days you will hold the campaign small and how you will hide the number when no buyer is available.",
+          "example": "Local numbers ordered for lower monthly and per-minute cost [boberdoo.com — CSGuZ-Sping @ 00:06:49]. Duration entered as 2 minutes, not 120, after clients created 120-minute durations [boberdoo.com — CSGuZ-Sping @ 00:17:10]. One metro, low daily cap, held for several days. JavaScript number display hides the phone at 1 a.m. when no buyer is open [boberdoo.com — I3MdV-IDLRk @ 00:12:24]."
         },
         {
-          "name": "Webhook authentication and retry handling",
-          "type": "textarea",
-          "prompt": "Record the provider-supported authentication method, replay controls, durable receipt procedure, and retry schedule. Define how unauthenticated events and exhausted retries are isolated without exposing secrets or losing the original event body.",
-          "example": "Where supported, the endpoint verifies the provider's documented signature over the original request body and checks its timestamp tolerance. A restricted inbox stores accepted events before processing. Retries occur after 5, 30, and 120 seconds; repeated failure opens a ticket with redacted payload references."
+          "name": "epc_vs_bid_check",
+          "type": "text",
+          "prompt": "Compare your highest-bidding call buyer against your best earnings-per-call buyer. Record each buyer's bid, duration requirement, and actual paid rate, then decide which buyer should win routing priority on earnings rather than headline price for the next test cycle.",
+          "example": "Buyer A bids $50 with a duration gate; Buyer B bids $30 with no duration requirement. The call desk warns the $50 buyer can lose on earnings per call to the $30 buyer. Calldrive routes to the highest earnings per call, and lower bids simply mean fewer calls [Calldrive — jHMaZ1k0rpY @ 00:06:16]. Buyer B wins priority this cycle."
         },
         {
-          "name": "Recording, transcript, and evidence linkage",
+          "name": "consent_language",
           "type": "textarea",
-          "prompt": "Specify how recording identifiers, transcript versions, permissions, and evidence hashes attach to the call record. Prevent a regenerated transcript or renamed object from silently replacing the evidence used for qualification and dispute review.",
-          "example": "C039-0001 links to an access-controlled recording object, its SHA-256 digest, capture timestamp, disclosure evidence, and transcript version 1. A corrected transcript becomes version 2 with reviewer identity. The original remains intact under the applicable retention schedule; ordinary dashboard users receive no unrestricted recording download."
+          "prompt": "Paste the consent language from your form exactly as a consumer sees it. Confirm it names one business per unchecked box, has no select-all or pre-check, matches the ad's context, and lists every regulated technology you might use.",
+          "example": "Form shows 15 checkboxes for 15 buyers under an individual bid scenario [ActiveProspect, Inc. — uXTg2yB_ZTM @ 00:44:12]. Single select for each item, no select all, and no pre-check [TechMarketer — B9lfPgUUls0 @ 00:00:43]. The call to action changed from select the best to compare after single picks dominated [ActiveProspect, Inc. — uXTg2yB_ZTM @ 00:22:42]."
         },
         {
-          "name": "Pre-flight test matrix and expected postings",
+          "name": "consent_record_proof",
           "type": "textarea",
-          "prompt": "Write concrete test cases for duration, duplication, auction failure, and partial settlement. Include expected ledger counts and monetary amounts so a passing dashboard status cannot conceal an incorrect or duplicated economic result.",
-          "example": "Six fixtures cover 119-second rejection, 120-second acceptance, duplicate qualification webhook, expired bid, caller abandonment, and $60 partial receipt. Only the accepted fixture posts $100 once. Its partial receipt leaves $40 outstanding; none of the rejected fixtures creates a buyer receivable or an automatic publisher payment."
+          "prompt": "Describe the consent record each buyer receives before any outbound contact. List the token, IP address, session video, timestamp, and checked company name it contains, and confirm the buyer physically holds that record before dialing or texting.",
+          "example": "Each record carries a consent token, the IP address, and a video of the form fill, mirroring Calldrive's capture [Calldrive — jHMaZ1k0rpY @ 00:02:28]. The buyer takes physical possession of the record before calling, with the consumer having checked a box naming that exact company [Evocalize — h8PlsMHs16k @ 00:01:27]. Buyers need one-to-one consent as well [ActiveProspect, Inc. — uXTg2yB_ZTM @ 00:47:31]."
         },
         {
-          "name": "Daily reconciliation and correction ownership",
+          "name": "source_rejection_and_exposure",
           "type": "textarea",
-          "prompt": "Define the daily comparison across provider records, internal qualification, invoices, publisher obligations, and bank receipts. State how unmatched records are aged, assigned, and corrected without changing historical evidence or silently netting unrelated balances.",
-          "example": "The daily cohort contains 100 accepted calls and $10,000 gross settlement, with $4,200 publisher obligations and $300 media allocation. A buyer report containing only 98 calls creates a $200 exception. The operator investigates the two identifiers before invoicing corrections or releasing any associated disputed amount."
+          "prompt": "List every lead or call source under review and the reason each passes or fails. Note vague or blanket consent, missing documentation, or high volume with thin verification, and write the per-violation fine range you are budgeting against.",
+          "example": "Source two rejected for blanket our-partners consent and no documentation [Pitchit — k6g6hxICGH4 @ 00:07:03]. Troutman estimates only two of 10 circulating one-to-one forms pass [Seasalt AI — KBFaRW7QmVQ @ 00:33:10]. Exposure budgeted at $500 to $2,000 per text or call [Seasalt AI — KBFaRW7QmVQ @ 00:14:15]. Rule status is contested, so the form stays compliant regardless."
         }
       ],
-      "completion_gate": "Advance after all boundary and replay fixtures produce the expected single postings, unauthorized events are rejected, ambiguous transfers are contained, and the first production cohort reconciles to source records with individually owned exceptions."
+      "completion_gate": "Do not accept a ping or dial a lead until the margin carve, timeout windows, and 15% refund cap are configured, every dynamic source starts on plain Yes, call durations are verified in minutes, and every buyer holds a consent record naming their exact company."
     },
     {
       "worksheet_id": "ws-04",
       "number": 4,
-      "title": "Statutory, Licensing, Contract Addendum & Compliance Audit",
-      "purpose": "Translate applicable communications, insurance, recording, privacy, and professional-referral rules into route-specific controls and evidence requirements. Distinguish current legal obligations from stricter contractual policies, especially for inbound calls, automated callbacks, Medicare marketing, and attorney advertising, where different activities trigger materially different duties.",
-      "chapter_ref": "Q5, Q9",
+      "title": "Traffic Engine: Google, Meta, and Home-Services Call Verticals",
+      "purpose": "Build a paid traffic plan that treats the billable call as the only scoreboard, pairing search intent on Google and cheaper volume on Meta with an emergency home-services vertical whose payouts, buffers, and seasonality leave a real spread after ad cost.",
+      "chapter_ref": "Q7-Q8",
       "instructions": [
-        "Classify the actual activity before applying a rule: consumer-initiated inbound call, live outbound callback, automated marketing contact, Medicare appointment, or attorney referral. Record applicable jurisdictions and effective dates rather than treating every call exchange as one statutory category.",
-        "Correct the consent premise in the operating specification: the FCC's 2023 one-to-one lead-generation amendment was vacated before taking effect. Preserve named-buyer permission as a contractual control where appropriate, while separately applying existing TCPA requirements and CMS-specific sharing restrictions.",
-        "Inspect actual consumer-facing language and preserved evidence instead of accepting a certificate label as conclusive. TrustedForm and Jornaya records support provenance, but the route still needs valid disclosures, appropriate scope, revocation handling, and proof matching the communication actually made.",
-        "Create separate Medicare and legal-service schedules before either vertical receives traffic. Test call-recording duties, appointment timing, permitted information sharing, professional licensing, and referral compensation against the specific service and jurisdiction rather than copying emergency-trade terms.",
-        "Assign remediation owners and evidence deadlines for every failed control, then disable only the affected route until repaired. Preserve lawful records under a documented retention schedule, restrict access by role, and verify the repair with a reproducible test before restoring traffic."
+        "Write down the payout and billable buffer of your chosen offer before you estimate any channel cost, so every number below is measured against what a call actually earns.",
+        "Plan Google builds around Search campaigns with call assets, since new call-only ads are blocked from February 2026, and keep Performance Max and Smart out of the account.",
+        "Treat Meta as cheaper but riskier volume, and record the billable rate you need rather than celebrating a low cost per raw call.",
+        "Pull payout data by zip, day, and hour before choosing geography, and read every network's fine print before writing a single line of ad copy.",
+        "Do not move to the next worksheet until a controlled spend has proven billable percentage, revenue per call, and return on spend with more than one buyer lined up."
       ],
       "fields": [
         {
-          "name": "TCPA rule status and named-buyer policy",
-          "type": "textarea",
-          "prompt": "Document the distinction between the vacated FCC amendment, existing TCPA consent duties, and your own buyer-specific permission requirement. Cite the applicable authorities and identify the communication technology and purpose being evaluated.",
-          "example": "The register cites 47 U.S.C. § 227 and 47 CFR § 64.1200. Insurance Marketing Coalition Ltd. v. FCC, 127 F.4th 303 (11th Cir. 2025), vacated the new one-to-one amendment. Our contract still requires named-buyer permission for covered transfers without describing that policy as the vacated federal rule."
+          "name": "channel_cost_benchmark",
+          "type": "text",
+          "prompt": "List each traffic channel you plan to test and write the cost per call you expect from it, then state the payout your offer pays so you can see whether the spread survives before a single dollar of media is spent.",
+          "example": "Ventura's ranges set the plan: Google at $50-150 per call, Facebook and Instagram at $15-40, and YouTube, TikTok and Outbrain at $25-60, with Meta creative refreshed every 2-3 weeks to hold the low end [John Ventura — GV0ML_xytX8 @ 00:04:04]. Against a $42 pest payout, only the Meta range leaves room for profit."
         },
         {
-          "name": "Consent evidence and revocation linkage",
+          "name": "google_campaign_structure",
           "type": "textarea",
-          "prompt": "Identify the consent language, seller identity, capture timestamp, page version, evidence reference, and revocation status required for the planned contact. Explain how evidence is verified without assuming a vendor certificate establishes every legal element.",
-          "example": "Record CF-039-81 links the rendered disclosure, Buyer A identity, consumer action, timestamp, source page, and TrustedForm certificate reference. Jornaya evidence, when used, receives the same review. A subsequent revocation is linked to the consumer record and suppresses affected future contacts before another campaign export."
+          "prompt": "Describe how your Google build will work now that new call-only ads are blocked: campaign type, ad format, device bid adjustments, landing page behavior, and the call length you will count as a conversion inside the account before launch.",
+          "example": "Downey Marketing flagged new call-only ads disappear in February 2026 [Downey Marketing — 4jiwxMObZvQ @ 00:01:07], so the build is a plain Search campaign with responsive search ads plus call assets, desktop and tablet bids at minus 100 percent, a tap-to-call mobile page, and any call over 15 seconds counted as a conversion [Hasib Ashad - Google Ads — Y4oieZQ07T8 @ 00:03:55]."
         },
         {
-          "name": "Inbound versus outbound contact classification",
+          "name": "negative_keyword_loop",
           "type": "textarea",
-          "prompt": "Separate consumer-initiated inbound calls from callbacks, prerecorded messages, automated dialing, and marketing texts. Record which technology and purpose trigger consent requirements so an inbound inquiry is not treated as unlimited permission for later campaigns.",
-          "example": "A consumer directly dialing the plumbing number enters the inbound route. A requested live callback receives its own purpose and timing record. Prerecorded promotional callbacks and automated marketing texts remain disabled unless their applicable consent requirements are satisfied; the original inbound call alone does not authorize them."
+          "prompt": "Explain the routine you will run to keep irrelevant searches from producing paid calls, including where your starting negative list comes from, how often you review call recordings, and who adds new terms to the account each week.",
+          "example": "Day one starts with the network's own negative list instead of a blank sheet [Dollar_Earn_with_us — e4KqhdonStw @ 00:34:52]. Every morning the team listens to yesterday's recordings and pushes each irrelevant request into negatives [Ringba — YhBQnt2AHbI @ 00:00:59]. Caller wording that does convert gets fed back into ad copy [Sabri Suby — u57s5wmdl5s @ 00:16:49]."
         },
         {
-          "name": "DNC suppression and restricted-contact screening",
+          "name": "meta_call_flow",
           "type": "textarea",
-          "prompt": "Specify registry refresh, entity-specific suppression, permitted exceptions, and real-time checks for applicable outbound activity. Distinguish statutory suppression from supplementary litigation-risk screening, which cannot replace consent evidence or justify evasive contacting.",
-          "example": "Outbound telemarketing checks the National Do Not Call Registry on the required refresh cycle, including the 31-day framework in 16 CFR § 310.4(b)(3)(iv), plus current entity-specific suppression. Supplementary litigation-risk screening is documented separately. A registry match does not block a consumer's voluntary inbound service request."
+          "prompt": "Choose the Meta format you will run for calls, whether call-now buttons, Reach campaigns, or a lead-to-call flow, and write the cost per call, cost per billable call, and billable rate you must hit to stay profitable on that platform.",
+          "example": "Health insurance on Facebook is benchmarked at $8-15 per call, $20-25 per billable call and a 40-70 percent billable rate, with CPM near $10 and CTR at 1-1.5 percent [Marketcall — 9msaK2zlGMI @ 00:29:13]. The campaign caps bids at five to eight dollars per call click with a one-day conversion window [Marketcall — 9msaK2zlGMI @ 00:22:40]."
         },
         {
-          "name": "Medicare TPMO recording and retention",
-          "type": "textarea",
-          "prompt": "Identify whether the organization acts as a Medicare third-party marketing organization and which calls require recording. Specify recording scope, applicable retention, access restrictions, and the technical response when required capture fails.",
-          "example": "For the Medicare route, the register maps TPMO marketing, sales, and enrollment call recording to 42 CFR §§ 422.2274(g) and 423.2274(g), including applicable ten-year retention obligations. Required calls cannot proceed without working capture and required disclosures. Other service calls follow their own purpose-specific retention rules."
+          "name": "answer_speed_failover",
+          "type": "text",
+          "prompt": "Write down the maximum seconds a caller may ring before a human answers, the failover that fires when nobody picks up, and the follow-up step that rescues callers who refuse to leave a voicemail on your line during buyer hours.",
+          "example": "Answer inside 30 seconds, because pickup in that window converts at 31 percent while answering after five minutes drops to 4 percent and 80 percent of callers will not leave a voicemail [John Ventura — GV0ML_xytX8 @ 00:07:43]. If nobody answers in 10-15 seconds, an auto-SMS fires and a five-minute callback is scheduled for the caller."
         },
         {
-          "name": "Medicare scope-of-appointment timing",
+          "name": "vertical_selection",
           "type": "textarea",
-          "prompt": "Document when a Medicare scope of appointment is required, the applicable 48-hour timing rule, and supported exceptions. Keep appointment timing separate from inbound call qualification so a duration threshold cannot substitute for appointment evidence.",
-          "example": "A scheduled personal marketing appointment records its scope at least 48 hours beforehand under 42 CFR §§ 422.2264(c) and 423.2264(c), unless a documented exception applies. Relevant exceptions include beneficiary-initiated walk-ins and qualifying end-of-election-period circumstances. The worksheet does not impose a blanket 48-hour hold on every inbound call."
+          "prompt": "Name the home-services vertical you will enter first and justify it with emergency intent, payout range, billable buffer, and seasonality, then list the single urgent service you will sell as the foot in the door with local buyers.",
+          "example": "Pest control first: offer 11558 pays $20-$65 per call on a 90-125 second buffer, set by zip [Marketcall — g3sxn6A6bDc @ 00:03:56]. Testing begins in early April so campaigns are dialed in before the May-September peak, when volume rises 40-60 percent [Marketcall — g3sxn6A6bDc @ 00:06:09]. Google autocomplete 'emergency' searches confirm urgency [Ryan Moran — yB7cDGVlP0k @ 00:00:47]."
         },
         {
-          "name": "Medicare TPMO sharing and recipient permission",
-          "type": "textarea",
-          "prompt": "Identify proposed recipients of Medicare beneficiary information and the written permission supporting each transfer. Separate CMS's TPMO sharing requirements from FCC rule status and prohibit broad distribution unsupported by the applicable recipient-specific permission.",
-          "example": "The Medicare intake flow names each receiving TPMO and supports separate permission for each under 42 CFR §§ 422.2274(g) and 423.2274(g). Permission for Buyer M does not authorize sending beneficiary contact information to Buyers N and P. An auction must not broadcast personal information to unauthorized recipients."
+          "name": "geo_bid_map",
+          "type": "text",
+          "prompt": "Record the payout threshold you will use to build your geographic target list, the tool or export you will pull it from, and how you will check whether payouts shift by day of week or hour of the day before setting bids.",
+          "example": "Filter the Bid Map for zips paying over $50, check payouts by day and by hour, and export the result to Excel as the geo-target list [Marketcall — g3sxn6A6bDc @ 00:04:36]. Against a $42 average payout and $20-$28 average ad cost, profit lands near $10-$20 per call [Marketcall — g3sxn6A6bDc @ 00:06:41], so low-paying zips stay excluded."
         },
         {
-          "name": "Legal advertising, referral compensation, and licensing",
+          "name": "low_cost_source_test",
           "type": "textarea",
-          "prompt": "Define the jurisdiction-specific legal-services model, attorney license verification, advertising review, and compensation structure. Determine whether the exchange constitutes a regulated referral service or prohibited solicitation rather than assuming a call fee is always permissible.",
-          "example": "A California legal route remains disabled until its model is reviewed against Business and Professions Code §§ 6151–6156 and Rule of Professional Conduct 7.2. The draft excludes case-proceeds percentages, paid recommendations, and prohibited runner activity. An advertising label alone does not resolve lawyer-referral service registration requirements."
+          "prompt": "Describe one low-cost call source you will test outside of paid search, such as classifieds or physical signage, including the cost per placement, the payout trigger, the tracking method, and the return you need to keep it running each month.",
+          "example": "A Craigslist-only plumbing offer pays $16 on any call over 90 seconds; each Hennepin County small business post costs $5, so one qualified lead returns 4x [Matt Wacek — S1xXLvaXSvU @ 00:05:02]. Posts run plain text, no images, with the phone number repeated several times [Matt Wacek — S1xXLvaXSvU @ 00:07:11], each on its own tracked number."
         },
         {
-          "name": "State recording, privacy, and deletion controls",
+          "name": "network_fine_print",
           "type": "textarea",
-          "prompt": "Map caller and recipient locations to recording and privacy requirements, including notice, permission, access, and deletion handling. Explain how legally required retention or a documented preservation hold interacts with ordinary deletion requests.",
-          "example": "California calls receive review under Penal Code § 632; federal interception requirements are assessed under 18 U.S.C. § 2511. Where applicable, California privacy requests follow Civil Code § 1798.100 et seq. A deletion request triggers verification and a documented exception assessment, not automatic destruction of required Medicare records."
+          "prompt": "List the creative rules and restrictions from each network's offer page that will shape your ad copy, including banned phrases, required phrases, and naming rules, and note how your business name will match your ad domain before writing a headline.",
+          "example": "Network A bans the phrase 'free estimate' while Network B requires it, so copy is written only after both fine-print pages are read line by line [Matt Wacek — S1xXLvaXSvU @ 00:01:14]. The Google business name is set to match the domain the ads point to [Marketcall — 9msaK2zlGMI @ 01:04:47], and a dedicated vertical page replaces any general landing page."
         },
         {
-          "name": "Contract addendum and audit remediation",
+          "name": "controlled_spend_gate",
           "type": "textarea",
-          "prompt": "Write enforceable operational clauses for evidence access, source restrictions, subcontractors, security incidents, scrub deadlines, and rule changes. Identify the audit sample and restoration evidence required after a material source or routing failure.",
-          "example": "The addendum requires approved sources, preserved disclosure versions, prompt incident notice, and evidence delivery within two business days. A 25-call sample with three missing permission records suspends that source. Restoration requires corrected capture, review of the affected cohort, and a clean ten-call verification sample with named reviewer sign-off."
+          "prompt": "Set the controlled test budget, the billable percentage, revenue per call, and return on spend you must prove before scaling, and name the backup buyers you have lined up so one account never becomes a single point of failure.",
+          "example": "Billable percentage, revenue per call and ROI are proven on a controlled spend before pushing toward $10,000, never judged on raw call count [ExclusiveLiveCall — grygjesM2j8 @ 00:09:30]. Brokering starts at a $3-5 margin, where 50 calls a day at $10 margin yields $500 daily [Nate Ancelet — q4tpqSo7KCE @ 00:10:09], with more than one buyer ready [Nate Ancelet — q4tpqSo7KCE @ 00:10:40]."
         }
       ],
-      "completion_gate": "Advance only when the activity-specific legal register distinguishes current rules from stricter policy, applicable licenses are verified, required consent and recording evidence can be retrieved, and unresolved Medicare or legal-service defects keep those routes disabled."
+      "completion_gate": "Worksheet 4 is complete only when a controlled spend has proven billable percentage, revenue per call, and return on spend against your offer payout, an answer path under 30 seconds with a 10-15 second failover is live, network fine print has been checked against your copy, and more than one buyer is confirmed for every geography you target."
     },
     {
       "worksheet_id": "ws-05",
       "number": 5,
-      "title": "Automation Pipeline, Acquisition Flywheel & Risk Fallback Tracker",
-      "purpose": "Design a small-team operating loop that acquires suitable callers, routes them to eligible buyers, learns from verified outcomes, and limits losses when dependencies fail. Connect automation decisions to settlement evidence rather than optimizing for cheap calls, long conversations, or uncollected dashboard revenue.",
-      "chapter_ref": "Q6, Q10",
+      "title": "Buyer-Side Discipline: Insurance Inbounds, Live Transfers, and Litigation Exposure",
+      "purpose": "Protect revenue per call on the buyer side by mapping billable buffers, scripting agents to hold price until qualification clears, covering every hour with enough buyers, and quantifying the TCPA and mass tort exposure that a single bad lead source can create.",
+      "chapter_ref": "Q9-Q10",
       "instructions": [
-        "Implement one observable routing path before adding branches. Use Ringba or Retreaver capabilities actually enabled in the account, record configuration versions, and measure the complete decision latency rather than assuming a vendor feature makes every auction sub-second.",
-        "Connect source evidence and eligibility checks before price optimization. A high bid cannot repair missing permission, an unlicensed service recipient, or exhausted buyer capacity; those conditions must remove the buyer from the candidate set before economic ranking begins.",
-        "Treat AI transcript disposition as an assisted classification layer with sampled review. Keep deterministic duration, geography, and ledger rules authoritative, and prevent unreviewed model output from creating retroactive scrubs, new consumer-contact permission, or irreversible payment deductions.",
-        "Send server-to-server advertising feedback only after the chosen outcome has satisfied its definition. Separate qualified, accepted, and collected events so campaign optimization does not reward disputed calls or count the same transaction multiple times across retries.",
-        "Define a fallback for every external dependency and exercise it with authorized fixtures. Prefer reduced volume, a clearly unavailable route, or a permitted alternate buyer over silent evidence loss, uncontrolled transfers, or acquisition spending that continues during a collection freeze."
+        "Start with the billable buffer for every campaign, because a price quoted inside the buffer makes the call billable and disputes past the buffer are usually denied.",
+        "Write agent scripts that open with a question, hold price for at least 90 seconds, and qualify area, health, bank account, and age early.",
+        "Audit routing and buyer coverage before raising spend, since poor routing rather than creative is the most expensive mistake on inbound programs.",
+        "Run every purchased lead or transfer feed through consent, DNC, and reassigned-number checks before anyone dials it.",
+        "Model worst-case litigation exposure in dollars per call so the cost of one bad vendor is visible before you sign with them."
       ],
       "fields": [
         {
-          "name": "Routing tree and latency service objective",
+          "name": "billable_buffer_map",
           "type": "textarea",
-          "prompt": "Describe the routing order, eligible buyer filters, auction timing, and measurable latency objective. Record the behavior when the deadline expires and avoid implying that a sub-second target supersedes permission or capacity checks.",
-          "example": "Route version R17 checks service eligibility, recipient permission, geography, capacity, and then bid price. The target is 95% of decisions within 700 milliseconds during the pilot. An expired auction sends the caller to the documented unavailable-service path unless an independently eligible fallback buyer is already configured."
+          "prompt": "List every campaign you will buy or sell into, with the exact billable buffer in seconds for each, and explain how your agents will know which buffer applies the moment a call connects to their line, and what happens if they guess wrong.",
+          "example": "The buffer sheet mirrors PRiMe Calls training: 20 seconds on FE raw inbound, 180 seconds on FE inbound transfer, 90 seconds on FE Spanish and FEX, and 60 seconds on CTV [PRiMeCalls — B5upgjqvbi4 @ 00:00:36]. The campaign name appears on the agent screen at connect, and quoting price inside a buffer makes the call billable [PRiMeCalls — B5upgjqvbi4 @ 00:02:34]."
         },
         {
-          "name": "Evidence verification and dependency failure",
-          "type": "textarea",
-          "prompt": "Specify how TrustedForm or Jornaya references are retrieved, validated, and attached to the call. Define which activities can continue during verification outages and which require holding or stopping the affected contact workflow.",
-          "example": "The intake worker retrieves the evidence reference and checks it against source, timestamp, and disclosure version before a covered transfer. A vendor timeout creates an evidence-pending state, not assumed permission. A direct inbound service route may continue only if its own documented requirements are independently satisfied."
+          "name": "rpc_floor",
+          "type": "text",
+          "prompt": "State the revenue-per-call floor your agents must hold, the running call count you will measure it over, and the share of calls each agent must carry past ninety seconds to avoid being paused or removed from the inbound program.",
+          "example": "RPC is tracked on a 50-call running total, and agents stay above the $5 to $8 floor by taking at least three of every ten calls past 90 seconds [FFL Success Zone | Integrity Connect Inbounds — N3imbfBa8rI @ 00:26:38]. The target is Adeline's $18 RPC at about 40 percent of calls [FFL Success Zone | Integrity Connect Inbounds — -YRrdoKG1xs @ 00:07:47]."
         },
         {
-          "name": "AI disposition controls and review sample",
+          "name": "inbound_script_opener",
           "type": "textarea",
-          "prompt": "Define transcript labels, model confidence handling, human review sampling, and prohibited automated actions. Measure classification errors against adjudicated examples, especially where a wrong label changes billing, source restrictions, or consumer treatment.",
-          "example": "The classifier suggests service intent, wrong geography, duplicate inquiry, and agent disconnect. Twenty of every 100 pilot calls receive manual review, plus every low-confidence result. A model suggestion cannot reverse the $100 settlement; a reviewer must link contract criteria and evidence before an adjustment is posted."
+          "prompt": "Write the first three lines your agent will say on an inbound call, the question that opens the conversation, the four qualifiers asked before any price, and the closing question that replaces a passive check-in like how does that sound.",
+          "example": "Open with a question, never quote price inside 90 seconds, and qualify area, health, bank account and age early. The close swaps 'how does that sound' for 'have you heard enough to be able to make a decision today', then asks Visa, Mastercard or American Express, the sequence Derek finished in 4.5 minutes [Cody Askins — lRuXMEO6hbI @ 00:19:22]."
         },
         {
-          "name": "Server-to-server conversion event design",
+          "name": "live_transfer_test",
           "type": "textarea",
-          "prompt": "List conversion stages, stable identifiers, event values, and supported correction behavior for the advertising platform. Send the minimum permitted information and ensure retries preserve event identity instead of manufacturing additional conversions.",
-          "example": "Event C039-0001-qualified reports the defined qualification stage; C039-0001-collected reports verified collection when the destination supports that separate goal. Retained value is $55 before other costs, not the buyer's plumbing invoice. Duplicate deliveries retain the same event identifier, and corrections use documented platform mechanisms."
+          "prompt": "Design a short live transfer test: the number of transfers you will buy, the price per transfer, the test length, and the cost per sale that would justify continuing, then name who will personally close during the test.",
+          "example": "Mirror Willie Goldberg's two-week run: 49 transfers at $25 each produced 5 sales, about 1 in 10, for roughly $250-300 per sale, with Willie closing 3 of the 5 personally [Willie Goldberg — A4zDgHX2VWI @ 00:01:15]. Continue only if cost per sale stays comfortably under that band and issued premium covers it."
         },
         {
-          "name": "Acquisition flywheel and source cohort learning",
+          "name": "buyer_coverage_audit",
           "type": "textarea",
-          "prompt": "Describe how source-level outcomes inform keyword selection, landing-page revisions, publisher allocations, and bid limits. Compare cohorts using accepted and collected contribution rather than raw call count, while preserving evidence for each revision.",
-          "example": "Campaign A sends 80 calls, produces 50 accepted settlements, and collects $5,000. Its matched acquisition expense is $2,250, leaving $2,750 retained contribution. Campaign B has more calls but worse collected contribution per acquisition dollar. The next test shifts only 10% of budget and retains page-version records."
+          "prompt": "Map how many buyers cover each state and hour you sell into, what catches calls when every buyer is busy or closed, and how those unanswered callers are monetized later without ever being resold as leads to other buyers.",
+          "example": "Corona's incomplete Google setup produced hundreds of missed calls, and poor routing, not creative, was the biggest mistake [Ryan Clogg — 7Q7WzSONnX4 @ 00:11:35]. High volume needs quite a few buyers, so Retell AI or Synthflow catches unanswered calls, captures consent, and monetizes later via call-back, SMS, email, or resale as a click [Ryan Clogg — 7Q7WzSONnX4 @ 00:13:10]."
         },
         {
-          "name": "CPC spike detector and acquisition ceiling",
-          "type": "textarea",
-          "prompt": "Set an acquisition-cost ceiling using the complete accepted-call cohort, not isolated click prices. Define the observation window, minimum sample, reduction amount, and restoration conditions when paid-search cost rises faster than collectible settlement value.",
-          "example": "The reference ceiling is $45 combined acquisition per accepted $100 call. If a 50-call cohort exceeds $49.50, spend falls 25% pending source review. A rise from $3 to $3.60 in allocated media cost alone increases combined cost to $45.60 and triggers monitoring rather than immediate shutdown."
+          "name": "recording_retention",
+          "type": "text",
+          "prompt": "Specify the call recording system you will use, whether every inbound call is recorded in full, how long audio and records are stored, and who on your team can pull a recording when a buyer disputes a call.",
+          "example": "Every call is recorded in full and kept for six years, as audio for at least the first three [JustCall — DOcBtaUIjpE @ 00:00:15]. Consent records, including scanned wet-signature forms, stay on file four to five years to cover the four-year TCPA statute of limitations [Channel Automation — NlU2OB8OEBI @ 00:26:21]. The compliance lead pulls disputed recordings."
         },
         {
-          "name": "Buyer scrub and collectability circuit breaker",
+          "name": "purchased_lead_consent",
           "type": "textarea",
-          "prompt": "Define buyer-level disputed-value, overdue-value, and collection-lag thresholds with distinct responses. Prevent a high auction bid from overriding a collection freeze, and state which verified evidence is required before restoring the original traffic ceiling.",
-          "example": "A buyer with more than $2,000 overdue or disputed value above 5% of its recent $20,000 cohort loses new allocation. Existing disputes remain tracked individually. Restoration requires cleared receipts, resolved systemic qualification issues, and a reduced 25-call test rather than an account manager's payment promise."
+          "prompt": "Describe the checks every purchased lead or transfer feed must pass before your team dials it, covering whose company the consent names, whether it matches the product, lead age, and whether the vendor can pay an indemnification claim.",
+          "example": "Reject any form that does not name the company, since generic consent like agreeing to calls about solar cannot be relied on [Channel Automation — NlU2OB8OEBI @ 00:15:13]. Never buy aged leads, which carry fraud and untracked opt-outs [Channel Automation — NlU2OB8OEBI @ 00:34:59], and confirm the vendor can actually pay indemnification [Henson Legal — 8-P7UvS--tE @ 00:29:51]."
         },
         {
-          "name": "Observability, alert routing, and response ownership",
+          "name": "dnc_reassigned_scrub",
           "type": "textarea",
-          "prompt": "Choose operational and economic metrics with explicit thresholds, recipients, and response times. Separate availability failures from margin erosion so a green telephony dashboard cannot hide missing evidence, growing disputes, or unpaid settlement balances.",
-          "example": "Alerts fire when auction latency exceeds 900 milliseconds at the 95th percentile, evidence-pending calls exceed five, or unmatched accepted calls exceed two. The routing contractor handles latency; the operator handles settlement exposure. Critical routing faults receive a ten-minute response target and a documented traffic decision."
+          "prompt": "Explain the scrub sequence each record runs through before outbound contact, including your internal do-not-call list, the reassigned number database, and how a revocation travels back out to every downstream sub-vendor you rely on within the revocation window.",
+          "example": "Each purchased lead hits the internal DNC first, because an opted-out consumer resurfacing through a third-party form does not reopen permission [Channel Automation — NlU2OB8OEBI @ 00:39:49]. Aged records then run against the reassigned number database, since 100,000 wrong-number messages at $500 each is $50 million [Channel Automation — NlU2OB8OEBI @ 00:34:45]. Sub-vendors are mapped [Troutman Amin, LLP — RtsC_jp9Y_U @ 00:14:04]."
         },
         {
-          "name": "Dependency fallback and recovery exercise",
+          "name": "tort_intake_horizon",
           "type": "textarea",
-          "prompt": "List failure responses for telephony, buyer availability, evidence retrieval, ledger posting, and advertising feedback. Distinguish safely queued work from live calls that cannot wait, and require a reconciliation check before queued events are replayed.",
-          "example": "If the ledger is unavailable, new paid acquisition pauses and durable received events remain queued. If Buyer A fails, only eligible Buyer B receives live transfers. During recovery, the worker deduplicates 300 queued events against existing postings before resuming normal volume, preventing duplicate revenue and publisher liabilities."
+          "prompt": "If you generate mass tort or motor vehicle accident calls, describe the intake criteria your law firm buyers use, the payout horizon they face, and how shrinking criteria could change the value of calls you already sold.",
+          "example": "Mass tort buyers wait three to seven years to get paid, if ever, and intake criteria can shrink midstream [The Lovely Law Firm — Uh9pQb_1l_I @ 00:00:32]. MVA leads command three and sometimes four figures against 18,720 average daily accidents [Peak ROI — MR5_DoylzPY @ 00:04:04], and car-wreck intakes also screen for other health issues."
         },
         {
-          "name": "Access control and automation change record",
+          "name": "litigation_exposure_model",
           "type": "textarea",
-          "prompt": "Define least-privilege roles, secret storage, configuration review, and rollback evidence for route changes. Identify which permissions can change payouts, export recordings, or alter buyer destinations, and separate those powers from ordinary monitoring access.",
-          "example": "The routing contractor can propose R18 but cannot edit bank instructions or export bulk recordings. The operator approves destination and rate changes after fixture comparison. Credentials remain in the platform's supported secret store. A failed R18 deployment restores R17 and preserves both configuration versions and test results."
+          "prompt": "Calculate your worst-case exposure if one bad lead source slips through, using the per-call statutory floor, regulator penalties, and the number of calls you place monthly, and note which regulatory reading of one-to-one consent you follow and why.",
+          "example": "Each invalid call carries a $500 floor and up to $166,000 in regulator penalties [Channel Automation — NlU2OB8OEBI @ 00:16:53], and one bad lead put a Federal Savings Bank in a $17 billion certified class [Troutman Amin, LLP — AyhsduniOPA @ 00:05:46]. Revenx reports one-to-one consent vacated in 2025, but other TCPA rules still apply [Revenx — iqEAeq8xyfY @ 00:00:00]."
         }
       ],
-      "completion_gate": "Advance when source evidence, routing, disposition review, and conversion feedback operate with stable identifiers; each critical dependency has an exercised fallback; and collection or acquisition thresholds can reduce traffic without manual reconstruction of the call ledger."
+      "completion_gate": "Worksheet 5 is complete only when every campaign has a documented billable buffer, agents hold an RPC floor measured on a 50-call running total, buyer coverage and a catch-all for unanswered calls exist for every hour you sell, and each purchased lead source has passed consent, DNC, reassigned-number, and indemnification checks with a dollar exposure model on file."
     },
     {
       "worksheet_id": "ws-06",
       "number": 6,
-      "title": "30-Day Launch Sprint, Pod KPI Scorecard & Exit-Readiness Ledger",
-      "purpose": "Turn the operating design into a bounded launch with dated deliverables, measurable evidence, and explicit staffing ownership. Track whether the pod can acquire, qualify, collect, reconcile, and document calls consistently before increasing exposure or presenting the business as a transferable operating asset.",
-      "chapter_ref": "Q11, Q12",
+      "title": "Network Leverage and Unit Economics: Buyers, Publishers, Margin, and the Scale Gate",
+      "purpose": "Turn a single affiliate relationship into a load-balanced network that moves toward direct buyers, then lock the unit economics, payment terms, QA process, and scale thresholds that keep the spread intact as publishers and volume grow.",
+      "chapter_ref": "Q11-Q12",
       "instructions": [
-        "Schedule the launch around evidence-producing milestones rather than a promised revenue date. The expected first deal window is one to three months, so a 30-day sprint can finish with a verified pipeline and tested system even when commercial collection occurs later.",
-        "Assign the one full-time operator and two contractors to distinct responsibilities with explicit coverage. Keep payment authority, source review, routing changes, and daily reconciliation visible so a small team does not depend on undocumented access or a single contractor's private notes.",
-        "Use cohort-based daily metrics for qualification, acceptance, collection, retained contribution, and evidence completeness. Always show the denominator and observation period; a strong first invoice does not establish annual scale, and a short pilot cannot validate the full Base scenario.",
-        "Assemble transferable records while operating instead of reconstructing them for a future buyer. Preserve contracts, assignment provisions, settlement history, source ownership, route versions, and restricted evidence inventories without unnecessarily sharing consumer recordings or contact information with prospective purchasers.",
-        "Finish the sprint with a continue, hold, or stop decision tied to collection, cash, evidence, and concentration thresholds. Record unfinished work honestly, maintain the current cap where proof is missing, and distinguish a conditional operating plan from an achieved result."
+        "Apply to several networks at once and let side-by-side routing tests, not stated payouts, decide which buyers earn your traffic.",
+        "Collect conversion and capacity data in writing before negotiating, and never threaten a takeaway unless the backup route is already configured.",
+        "Write the full unit economics of one call, including rejects, duplicates, telecom cost, and buyer credit risk, before you quote any publisher a payout.",
+        "Collect buyer deposits upfront and align net terms so buyer money clears before publishers are paid.",
+        "Scale only when billable rate, post-reconciliation margin, and QA all clear the bar, and add affiliates in small steps rather than ten at once."
       ],
       "fields": [
         {
-          "name": "Days 1–5 market and counterparty package",
-          "type": "textarea",
-          "prompt": "Define the first week's deliverables for vertical selection, buyer verification, publisher provenance, and contract terms. Attach owners and evidence locations, and identify what must remain disabled while any essential commercial or statutory condition is unresolved.",
-          "example": "By day 5, the operator selects emergency plumbing, verifies Buyer A and Publisher P, and assembles the $100 rate card with the 120-second predicate. The evidence contractor checks source disclosures. Medicare and legal routes remain disabled because their separate activity-specific reviews are outside this initial pilot."
+          "name": "network_application_plan",
+          "type": "text",
+          "prompt": "List the pay-per-call networks you will apply to this month, the number of acceptances you expect, and the test that will reveal which network actually pays best once real calls start flowing through each one of them.",
+          "example": "Apply to 8-12 networks and expect 4-6 acceptances [Ryan Moran — NC4s18S7p00 @ 00:04:32]. One network may pay more but have an inaccurate zip list, so testing reveals the truth [Ryan Moran — NC4s18S7p00 @ 00:04:00]. In Ringba's capacity test, 50 calls each saw Network A pay 8 and Network B pay 19 [Ringba — 20s5iGyl_MY @ 00:52:19]."
         },
         {
-          "name": "Days 6–10 routing and ledger fixtures",
-          "type": "textarea",
-          "prompt": "Specify the configuration, integration, and test artifacts required before live traffic. Include idempotency, timing boundaries, evidence retrieval, and permission checks, with concrete pass criteria that another operator can reproduce from the recorded fixtures.",
-          "example": "By day 10, the routing contractor delivers R17, six boundary fixtures, and a replay report showing one $100 posting despite three duplicate callbacks. The operator verifies partial receipt handling and unavailable-buyer behavior. Production spending stays at zero until every required fixture matches its expected event and ledger results."
+          "name": "concurrency_verification",
+          "type": "text",
+          "prompt": "Record the guaranteed concurrency figure each network or buyer has confirmed in writing, how you will verify it against real traffic, and what your routing does with overflow calls that exceed that stated capacity during peak hours.",
+          "example": "Network B states a 100-per-day cap while Network A claims unlimited capacity, which is treated as a warning sign because dropped overflow is never refunded [Ringba — 20s5iGyl_MY @ 00:46:47]. Networks will not reimburse advertising costs when they lack capacity [Ringba — 20s5iGyl_MY @ 00:36:19], so overflow routes to a second network already configured."
         },
         {
-          "name": "Days 11–15 capped pilot and evidence review",
+          "name": "direct_buyer_path",
           "type": "textarea",
-          "prompt": "Set pilot call limits, maximum gross exposure, acquisition funding, and review sampling. State what happens if counterparties are not ready, rather than using the sprint calendar to justify unverified traffic or unsupported revenue claims.",
-          "example": "If agreements are executed, days 11–15 permit 10 accepted calls daily up to 50 total, representing $5,000 gross exposure and $2,250 matched acquisition allocation. Twenty calls receive full manual review. If the buyer is not ready, the team completes authorized synthetic tests and records commercial launch as pending."
+          "prompt": "Describe how you will move from network buyers to direct buyers, including how you identify the real end buyer behind a network, how you reach them, and the price uplift you expect once the middle layer is removed.",
+          "example": "Call greetings reveal the real end buyer, who is then pitched directly [John Ventura — x3UYaJjRdx0 @ 00:05:57]. Competitors' ads get cold-called to reach their buyers, and outbound call centers get a pitch deck and an in-person visit [Ringba — AMwEMCOuhA0 @ 01:00:15]. Going direct is worth 100 to 300 points, turning a $10 call into $30-$80 [Ringba — RhODbxB4ylU @ 00:01:36]."
         },
         {
-          "name": "Days 16–20 invoice and payment verification",
+          "name": "negotiation_leverage",
           "type": "textarea",
-          "prompt": "Define invoice preparation, buyer acceptance, dispute review, publisher accrual, and receipt verification deliverables. Preserve the pilot exposure cap until actual payment evidence supports a change, even if the buyer's portal marks the invoice approved.",
-          "example": "The operator submits the 50-call invoice with qualification references and monitors the net-7 due date. A $5,000 portal approval is recorded as receivable status, not cash. Only a verified bank receipt satisfies collection. Any disputed identifiers receive individual owners while undisputed publisher liabilities remain visible."
+          "prompt": "Write the data you will collect before asking a network for a payout bump, the exact comparison you will present, how the bump gets locked in writing, and the backup route that makes any takeaway threat real.",
+          "example": "Get the network's average conversion in chat before negotiating; a 20 versus 30 percent gap is pitched as '33% higher quality' and doubles as the case for going direct [Ringba — Jvd7AeYwbns @ 00:34:08]. The takeaway is threatened only with the backup route already configured, because a bluff kills future movement [Ringba — Jvd7AeYwbns @ 00:30:12]."
         },
         {
-          "name": "Days 21–25 controlled acquisition iteration",
-          "type": "textarea",
-          "prompt": "Specify the first source or landing-page experiment, its budget limit, evaluation window, and stopping condition. Tie any volume increase to verified collection and evidence quality instead of extrapolating from click-through rate or raw inbound volume.",
-          "example": "After cleared pilot payment, test a second landing-page headline with 10% of acquisition budget while keeping disclosures unchanged. Increase the daily accepted-call ceiling from 10 to 15 only if matched acquisition stays within $45, evidence completeness remains 100%, and the modeled payment-gap cash remains funded."
+          "name": "buyer_density",
+          "type": "text",
+          "prompt": "Name the city or suburban market you will build in, count the buyers already active there, and explain how you will stack enough accounts so the whole business never hinges on one or two buyer relationships.",
+          "example": "A market qualifies only with at least 10 or 20 buyers, because with two the business is hinged on those two [Ringba — RhODbxB4ylU @ 00:25:51]. Payout alone does not decide placement: Network A pays $200 but monetizes 10 percent of traffic, while Network B pays $150 with broader coverage [ExclusiveLiveCall — Cu3vdN7Cn84 @ 00:03:45]."
         },
         {
-          "name": "Days 26–30 resilience and handover review",
-          "type": "textarea",
-          "prompt": "List the final resilience exercise, ledger close, evidence inventory, and handover tasks. Identify which launch claims are actually demonstrated and which remain untested, including collection cycles, buyer redundancy, and sustained acquisition economics over longer observation periods.",
-          "example": "By day 30, simulate Buyer A unavailability, replay duplicate events, close the pilot ledger, and have the evidence contractor retrieve five sampled call records. Report one collected cohort if that is all the evidence supports. Do not describe a 30-day pilot as proof of annual Base profit."
+          "name": "duplicate_monetization",
+          "type": "text",
+          "prompt": "Estimate the share of your call flow that arrives as duplicate callers, describe how your routing sends those repeat callers to a different network, and calculate the monthly revenue that recovery adds against your tracking platform cost.",
+          "example": "Duplicates run at least 5 percent and sometimes up to 25 percent of call flow across hundreds of verticals [Ringba — ojcbZuG798w @ 00:14:05]. Routing every duplicate to a different network gets paid twice for the same caller, and duplicate routing alone pays for the tracking platform [Ringba — AMwEMCOuhA0 @ 00:56:56]. At 1,000 monthly calls, that is 50-250 extra sellable calls."
         },
         {
-          "name": "Pod ownership, staffing, and coverage",
+          "name": "margin_math",
           "type": "textarea",
-          "prompt": "Assign operator and contractor responsibilities, time budgets, escalation coverage, and decision rights. Preserve the canonical team structures while explaining the work that must be redesigned before moving from one full-time operator to the five-person Scaled pod.",
-          "example": "Base staffing is one full-time operator plus two contractors: one handles routing and integrations, the other evidence and reconciliation support. The operator owns cash and counterparties. Scaled staffing adds a second full-time operator and a third contractor, reaching five people with documented backup coverage rather than hidden unpaid labor."
+          "prompt": "Write out the full unit economics of one call: buyer price, publisher payout, spread, rejected and duplicate calls, telecom cost, and buyer credit risk, then show how margin changes if you pay publishers on every call instead of qualified ones.",
+          "example": "A $35 affiliate payout against a $50-plus buyer price leaves a $15 spread, and 500 calls a day yields $7,500 daily [John Ventura — KeC4mKXnzs4 @ 00:03:05]. In TrackDrive's 100-call example, paying the publisher on all 100 instead of the 80 that qualify drops a 30 percent margin of $1,200 to 12.5 percent, or $500 [TrackDrive — yYZ5s6jFzQs @ 00:02:04]."
         },
         {
-          "name": "Pod KPI scorecard with cohort denominators",
+          "name": "payment_terms",
           "type": "textarea",
-          "prompt": "Record call counts, accepted value, collected value, acquisition allocation, disputes, evidence completeness, and latency for one defined cohort. Show denominators and distinguish retained contribution before other expenses from owner profit after the complete cost allocation.",
-          "example": "For a closed 100-attempt cohort, 80 calls connect and 50 settle and collect at $100, producing $5,000 cash receipts. Matched acquisition is $2,250 and retained contribution $2,750 before other costs. Acceptance is 50% of attempts; evidence completeness is 50/50 accepted calls, with zero unresolved settlement disputes."
+          "prompt": "Define the payment terms you will require from buyers and offer to publishers, including minimum deposits, prepayment versus credit, net terms alignment, and the review period before a new affiliate's calls become eligible for any payout at all.",
+          "example": "Buyers pay upfront with a $500 to $1,000 minimum deposit, and invoice insurance is reserved for massive deals [ceohec — SkS03nygdoY @ 00:08:10]. Net terms are aligned so buyer wires clear before publishers are paid, and new affiliates wait until their calls are reviewed, because paying too quickly invites fraud [Ringba — AMwEMCOuhA0 @ 01:13:11]."
         },
         {
-          "name": "Exit-readiness asset and obligation ledger",
+          "name": "qa_dispute_protocol",
           "type": "textarea",
-          "prompt": "Inventory transferable contracts, domains, numbers, configuration ownership, accounting records, publisher relationships, and outstanding obligations. Identify assignment restrictions and consumer-information limits before sharing diligence materials, keeping valuation assumptions separate from verified historical operating results.",
-          "example": "The ledger lists two buyer agreements, one publisher agreement, owned domains, number-porting rights, R17 configuration, and monthly settlement reconciliations. Buyer A requires written assignment permission. A prospective purchaser receives redacted cohort summaries first; recording access requires a separately justified process. Outstanding publisher liabilities and disputes remain attached to the period."
+          "prompt": "Describe your quality assurance and dispute process, including the signed documents affiliates must return, the penalty for callback fraud, how disputes are written with dated specifics, and how you separate invalid calls from buyer closing problems.",
+          "example": "Affiliates sign a QA addendum carrying a 50 percent penalty per CPA for callback fraud [Ringba — JxU9bgFTUUs @ 00:20:34]. Disputes cite dates: 'between the third and the seventh' [TrackDrive — y8V08rKKNWY @ 00:04:31]. When 15 of 100 calls are disputed, the cause is investigated, since a buyer failing to close is not an invalid call [ExclusiveLiveCall — b7P50zcQzTs @ 00:07:01]."
         },
         {
-          "name": "Day-30 decision and next exposure ceiling",
+          "name": "scale_gate",
           "type": "textarea",
-          "prompt": "Choose continue, hold, or stop using explicit collection, cash, evidence, and concentration criteria. State the next exposure ceiling, responsible owner, review date, and unfinished conditions without converting an internal readiness score into a promise of earnings.",
-          "example": "Decision is continue at 15 accepted calls daily only after full net-7 collection, 100% required evidence, and funded liquidity floor. Otherwise hold at the current cap. The operator reviews again after two additional collected cohorts. The 95/100 candidate score and pipeline rank #01 are selection metadata, not measured pilot performance."
+          "prompt": "Set the exact thresholds that must be met before you add publishers or raise caps, including billable rate, post-reconciliation margin, and QA results, and state how many new affiliates you will onboard in any single step.",
+          "example": "Scale only at a billable rate of 50 percent or higher, positive post-reconciliation margin and clean QA, and never add 10 affiliates at once [John Ventura — KeC4mKXnzs4 @ 00:09:37]. Marketcall's debt funnel saw 25-35 percent of calls go billable past 90 seconds [Marketcall — Dq9KUpYUWsE @ 00:09:49], and exit pages add 5-10 percent revenue [Marketcall — Dq9KUpYUWsE @ 00:14:48]."
         }
       ],
-      "completion_gate": "Close the sprint with a dated decision, reconciled cohort scorecard, named pod owners, and an evidence-backed exposure ceiling. Mark any uncollected invoice, untested route, missing assignment right, or incomplete statutory control as unfinished work rather than reporting full launch completion."
+      "completion_gate": "Worksheet 6 is complete only when at least two networks are routing side by side with written concurrency figures, a direct-buyer pitch path is underway, the full unit economics of one call show a positive spread after rejects and duplicates, buyer deposits and aligned net terms are in place, a signed QA addendum covers every affiliate, and billable rate sits at or above 50 percent before any new publisher is added."
     }
   ]
 }

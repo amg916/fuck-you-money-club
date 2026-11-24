@@ -1,671 +1,805 @@
 from __future__ import annotations
 
-CHAPTER_4 = {
-    "id": "Q4",
-    "chapter_id": "Q4",
-    "chapter_number": 4,
-    "question_number": 4,
-    "slug": "startup-capital-lean-infrastructure-and-pre-flight-stack",
-    "question_prompt": "How do you allocate startup capital ($10,000–$50,000 USD) and configure a lean, low-opex ($1,800–$11,000 USD/mo) production stack without wasting cash on bloated overhead?",
-    "kicker": "Q4 / THE BIG MONEY PLAYBOOKS",
-    "title": "Startup Capital, Lean Infrastructure & Pre-Flight Stack",
-    "subtitle": "Fund Settlement Float First: SkyBox, Automatiq, Logitix, BOTS Act Controls, Suite Deposits & Event-Level Cash Reconciliation",
-    "layout_template": "comparison_table",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #43, Live-Event, Super Bowl & VIP Ticket Brokering, ranks #02 of 43 "
-        "with a 95/100 Money-to-Manpower Score. This chapter connects 12 mapped plays "
-        "to a reserve-first operating stack: lawful allocations, exchange resale, suite "
-        "splitting, tentpole hospitality, sponsor allotments, NFL and NBA strips, consignment, "
-        "corporate procurement, repricing, barcode delivery, and invoice reconciliation. "
-        "Allocate 55% of the $10,000–$50,000 startup budget to protected liquidity, then "
-        "purchase only infrastructure that prevents duplicate sales, proves delivery, or "
-        "accelerates collections. Canonical annual owner profit is $26,400 Conservative, "
-        "$191,900 Base, and $468,000 Scaled, after acquisition costs and operating deductions. "
-        "The production design separates gross billings from the 40% retained contribution, "
-        "treats delayed exchange payouts as unavailable cash, and rejects account-limit "
-        "circumvention as a sourcing strategy."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$220,000",
-            "context": "Annual gross revenue basis; $88,000 retained contribution at 40%",
-            "note": "12% gross-basis net margin; 30% retained margin; $26,400 owner profit; 1 FT + 2 C",
-        },
-        {
-            "label": "Base",
-            "value": "$1,010,000",
-            "context": "Annual gross revenue basis; $404,000 retained contribution at 40%",
-            "note": "19.0% gross-basis net margin; 47.5% retained margin; $191,900 owner profit; 1 FT + 2 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$1,800,000",
-            "context": "Annual gross revenue basis; $720,000 retained contribution at 40%",
-            "note": "26% gross-basis net margin; 65% retained margin; $468,000 owner profit; 2 FT + 3 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Protect settlement liquidity before buying inventory or software",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Start with three cash buckets: unrestricted settlement liquidity, committed inventory, "
-                    "and launch expenditure. The budgets below protect 55% of opening capital as working "
-                    "capital and float; that money is not permission to enlarge speculative positions. "
-                    "At $10,000, preserve $5,500 and cap initial acquisitions at $1,500. At $25,000, "
-                    "preserve $13,750 and deploy $5,000 into inventory. At $50,000, preserve $27,500 "
-                    "and deploy $11,000. Record each event's purchase date, transfer deadline, event "
-                    "date, contractual payout condition, and expected bank receipt date before committing "
-                    "cash. A $1,500 purchase sold for $2,500 with a 10% exchange fee produces $2,250 "
-                    "before other deductions, but none of that receivable funds tomorrow's checkout "
-                    "until settlement actually arrives. Stress the ledger with a 30-day payout extension "
-                    "and a simultaneous refund demand. Stop acquisitions when projected unrestricted "
-                    "cash breaches the reserve floor. The launch-expense bucket is separate from recurring "
-                    "monthly burn; its size does not imply a fully funded month of operations. If the "
-                    "first settlement takes longer than available runway, reduce launch scope, obtain "
-                    "additional committed capital, or postpone purchasing. Never label refundable customer "
-                    "deposits as unrestricted owner cash, and never count an unused credit limit as "
-                    "money already available."
-                ),
-                (
-                    "Separate the three inventory businesses before choosing an opening position. "
-                    "Multi-exchange resale places individually identified seats through a POS such as "
-                    "SkyBox, Automatiq, or Logitix; its primary liquidity risk is paying suppliers well "
-                    "before exchanges release proceeds. Suite seat-splitting purchases a larger contractual "
-                    "block, then sells access units whose catering, parking, seating, and admission rights "
-                    "must remain explicit. For example, a $6,000 suite containing twelve transferable "
-                    "admissions needs $500 per admission merely to recover acquisition cost. Selling "
-                    "ten admissions at $800 generates $8,000; subtract $800 selling fees, $400 catering, "
-                    "and a $300 event reserve to leave $500 before allocated overhead and carrying "
-                    "costs. Tentpole hospitality combines ticket rights with separately sourced services "
-                    "for the Super Bowl, World Cup, F1, Masters, or Final Four. Four packages billed "
-                    "at $5,000 create $20,000 of billings, not $20,000 of earnings. If supplier "
-                    "commitments total $14,000, collection costs are $600, servicing costs are $1,200, "
-                    "and cancellation reserves are $1,000, only $3,200 remains before overhead and "
-                    "carrying costs. These examples are individual transaction stress tests, not substitutes "
-                    "for the canonical annual 40% retained-share model. A $10,000 startup should "
-                    "normally reject both large suite guarantees and unsecured tentpole commitments."
-                ),
-                (
-                    "Form the operating entity, obtain its EIN, open dedicated operating and reserve "
-                    "accounts, and give the bookkeeper read-only access rather than shared owner "
-                    "credentials. Budget filing, registered-agent service, local permits, and ticket-reseller "
-                    "licensing separately; the illustrated allowance is a purchasing limit, not a claim "
-                    "that every jurisdiction fits it. New York licensing under Arts and Cultural Affairs "
-                    "Law §25.13 can make a small launch budget unsuitable once applicable fees and "
-                    "bond requirements are included. Obtain actual broker quotations for general liability, "
-                    "professional liability where available, cyber coverage, and employee or contractor "
-                    "requirements. Confirm exclusions for resale, contractual replacement obligations, "
-                    "event cancellation, and customer refunds in writing. An insurance premium does "
-                    "not prove those exposures are insured. Use written contractor scopes for sourcing "
-                    "and event-day delivery, with least-privilege system access and documented payment "
-                    "authority. Treat bank identity checks under 31 CFR §1020.220 as bank requirements "
-                    "you must support with accurate entity information. Keep sales-tax collections and "
-                    "customer refund obligations identifiable in the ledger. Before launch, replace every "
-                    "budget allowance with an accepted quote or published fee, and shrink the operating "
-                    "footprint rather than consume protected float to cover an unexpectedly expensive "
-                    "jurisdiction or insurance requirement."
-                ),
-            ],
-            "table": {
-                "caption": "Reserve-First Startup Allocation: Three Exact Capital Budgets",
-                "headers": [
-                    "Capital allocation and operating purpose",
-                    "$10,000 opening capital allocation",
-                    "$25,000 opening capital allocation",
-                    "$50,000 opening capital allocation",
-                ],
-                "rows": [
-                    [
-                        "Protected liquidity for settlement delays and refund exposure",
-                        "$5,500 protected reserve; maintain fifty-five percent opening liquidity",
-                        "$13,750 protected reserve; maintain fifty-five percent opening liquidity",
-                        "$27,500 protected reserve; maintain fifty-five percent opening liquidity",
-                    ],
-                    [
-                        "Initial inventory with documented transfer and resale rights",
-                        "$1,500 acquisition ceiling; favor small verified seat positions",
-                        "$5,000 acquisition ceiling; diversify purchases across settlement dates",
-                        "$11,000 acquisition ceiling; avoid concentrated tentpole supplier exposure",
-                    ],
-                    [
-                        "Entity formation, licensing, and jurisdiction-specific filing allowances",
-                        "$700 planning allowance; restrict geography if requirements exceed",
-                        "$1,250 planning allowance; replace estimates with accepted requirements",
-                        "$2,000 planning allowance; exclude unfunded jurisdictions before trading",
-                    ],
-                    [
-                        "Insurance placement supported by written activity-specific coverage terms",
-                        "$600 planning allowance; obtain coverage-specific broker quotation first",
-                        "$1,000 planning allowance; document cancellation and replacement exclusions",
-                        "$1,500 planning allowance; increase limits only against exposures",
-                    ],
-                    [
-                        "Secure hardware, authentication keys, and isolated business access",
-                        "$400 equipment allowance; reuse an adequately secured computer",
-                        "$750 equipment allowance; add independent hardware authentication keys",
-                        "$1,500 equipment allowance; provision two secured operating devices",
-                    ],
-                    [
-                        "Launch expenditure excluding protected cash and inventory purchases",
-                        "$1,300 launch allowance; stage subscriptions and contractor onboarding",
-                        "$3,250 launch allowance; fund controlled production setup work",
-                        "$6,500 launch allowance; stage staffing against actual transactions",
-                    ],
-                    [
-                        "Total allocation with reserve separated from deployable inventory",
-                        "$10,000 allocated exactly; inventory remains a separate bucket",
-                        "$25,000 allocated exactly; no customer deposits counted twice",
-                        "$50,000 allocated exactly; protected liquidity remains fully identifiable",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Buy liquidity before buying prestigious inventory",
-                "body": "The best opening position is the one whose contractual cash cycle survives an event disruption without forcing another inventory sale.",
-                "items": [
-                    "Maintain separate event-level clocks for supplier payment, ticket delivery, exchange settlement, and refund exposure; never collapse them into one sale date.",
-                    "For suite splitting, divide acquisition cost by realistically sellable admissions, excluding host credentials and restricted seats rather than counting every credential as revenue inventory.",
-                    "Request supplier deposits and corporate customer milestones that align cash flows, but retain enough liquidity to return refundable customer money.",
-                    "Obtain written cancellation and replacement exclusions from the insurance broker before treating any policy as protection for unsold or unusable ticket inventory.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Provision twelve lean layers and prove cross-exchange behavior",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Purchase one inventory authority, not three overlapping dashboards. SkyBox, Automatiq, "
-                    "and Logitix are alternatives or integrated services whose actual exchange coverage, "
-                    "commercial scope, and automation rights must be established contractually. The "
-                    "matrix names twelve infrastructure layers, but a layer can remain dormant until "
-                    "transaction volume justifies it. Reference self-service prices are procurement "
-                    "assumptions in USD before tax, not verified current offers; annual commitments, "
-                    "seat minimums, introductory discounts, and regional differences must be checked "
-                    "before purchase. Enterprise ticketing products do not have a universal public "
-                    "tier that can honestly be filled with an invented exact price. Their rows therefore "
-                    "state explicit budget ceilings and require written quotations. If a quotation "
-                    "exceeds the ceiling, remove optional functionality or begin on a single authorized "
-                    "exchange rather than weaken settlement reserves. The illustrated $1,800 monthly "
-                    "floor includes software, contractor support, bookkeeping, insurance allocation, "
-                    "communications, and routine administration; it is not a software-only allowance. "
-                    "At Base and Scaled, use $6,500 and $11,000 monthly fixed operating budgets. "
-                    "Do not subscribe to advanced repricing before you have enough completed events "
-                    "to distinguish a useful price signal from an attractive dashboard. Record each "
-                    "subscription's renewal date, cancellation process, named owner, and measurable "
-                    "failure-prevention benefit in the purchasing register."
-                ),
-                (
-                    "Model each ticket with event identifier, section, row, seat, quantity, source "
-                    "contract, transfer status, and an immutable internal inventory key. Orders from "
-                    "StubHub, Vivid Seats, SeatGeek, and TickPick must resolve against that same "
-                    "inventory key wherever supported integrations are actually enabled. Require a "
-                    "real-time auto-hold workflow, but recognize that separate marketplaces do not "
-                    "provide a universal atomic transaction. Test the residual race explicitly. A "
-                    "reservation must suppress sibling listings, record acknowledgments, and escalate "
-                    "when delisting confirmation misses the configured timeout. Retries need idempotency "
-                    "keys so a network interruption cannot create duplicate listings or transfers. "
-                    "Reconcile marketplace quantities against the authoritative ledger after reconnects "
-                    "and before every event-day shift. If one seat sells for $500 and the applicable "
-                    "contract permits a 200% replacement assessment, the resulting $1,000 assessment "
-                    "can exceed the transaction's entire expected spread; this stress assumption is "
-                    "not a universal exchange tariff. Suspend affected listings when synchronization "
-                    "fails instead of relying on an operator to remember which browser tab is current. "
-                    "Use only supported transfer methods, retain recipient acceptance evidence, and "
-                    "never treat an email saying sent as proof that the purchaser can enter. Test "
-                    "these behaviors with permitted fixtures or controlled transactions, not fabricated "
-                    "customer orders."
-                ),
-                (
-                    "Keep customer identity, payment collection, and ticket delivery in separate "
-                    "permission domains. Google Workspace supplies named mailboxes, Bitwarden protects "
-                    "credentials, and the POS handles inventory; a contractor assigned to delivery "
-                    "does not need bank withdrawal access. Require hardware-backed authentication "
-                    "where supported, separate emergency recovery credentials, and remove access at "
-                    "the end of each assignment. Stripe is a possible hosted-payment rail only after "
-                    "the processor accepts the actual ticket and hospitality activity; a published "
-                    "card rate does not establish underwriting acceptance, reserve terms, or payout "
-                    "timing. At 2.9% plus $0.30, a permitted $2,000 domestic card payment costs "
-                    "$58.30 before additional services or exceptions, while a $20,000 payment costs "
-                    "$580.30. Prefer contractually supported bank collection for large corporate "
-                    "invoices when the customer accepts it, and verify changed bank instructions "
-                    "through a previously authenticated contact. Store transaction references rather "
-                    "than card details. Back up contracts, invoice records, and delivery evidence "
-                    "under a documented retention schedule; do not assume a computer backup protects "
-                    "every cloud application. Export a daily event exposure report and test restoration "
-                    "before opening sales. A cheap stack is useful only when another authorized "
-                    "operator can recover the workflow without the founder's unlocked laptop."
-                ),
-            ],
-            "table": {
-                "caption": "Twelve Named-Vendor Layers: Reference Tiers, Purchasing Limits, Roles, and Lean Alternatives",
-                "headers": [
-                    "Layer and named production candidate",
-                    "Exact reference tier or explicit quotation treatment",
-                    "Operating role and required acceptance evidence",
-                    "Cheap alternative and concrete spending trigger",
-                ],
-                "rows": [
-                    [
-                        "01 Inventory authority using SkyBox POS services",
-                        "Contract-priced scope; $150 monthly planning ceiling, not quotation",
-                        "Prove inventory ownership, exchange acknowledgments, and auto-hold behavior",
-                        "Single authorized exchange initially; expand after synchronization testing",
-                    ],
-                    [
-                        "02 Repricing service using Automatiq or Logitix",
-                        "Contract-priced service; $0 launch allocation until separately justified",
-                        "Bound price changes by acquisition cost and event exposure",
-                        "Manual approved price ladder until completed-event evidence accumulates",
-                    ],
-                    [
-                        "03 Business identity using Google Workspace Starter",
-                        "Business Starter reference: $7 per user monthly, annual commitment",
-                        "Named mailboxes, controlled recovery, and authenticated customer correspondence",
-                        "Existing secured business mailbox avoids duplicate subscription expenditure",
-                    ],
-                    [
-                        "04 Credential control using Bitwarden Teams organization",
-                        "Teams reference: $4 per user monthly, billed annually",
-                        "Separate employee credentials with organization-controlled access and recovery",
-                        "Individual secured vault during solo operation; upgrade before sharing",
-                    ],
-                    [
-                        "05 Accounting ledger using Wave Starter bookkeeping",
-                        "Starter reference: $0 subscription; payment services incur separate charges",
-                        "Track supplier costs, retained contribution, and event-level liabilities",
-                        "Structured double-entry workbook initially; reconcile against bank statements",
-                    ],
-                    [
-                        "06 Operating accounts using Mercury standard business banking",
-                        "Standard account reference: $0 monthly subscription; services may differ",
-                        "Separate reserve cash and validate actual bank partner terms",
-                        "Existing insured business bank with equivalent access controls",
-                    ],
-                    [
-                        "07 Hosted collections using Stripe standard card processing",
-                        "Reference domestic online cards: 2.9% plus $0.30 per payment",
-                        "Obtain activity acceptance and written settlement or reserve terms",
-                        "Permitted bank transfer with independently verified beneficiary instructions",
-                    ],
-                    [
-                        "08 Corporate relationship tracking using HubSpot Free CRM",
-                        "Free tools reference: $0 subscription within current product limits",
-                        "Record corporate buyers, package requirements, and authorized contacts",
-                        "Permission-restricted contact workbook until pipeline coordination becomes difficult",
-                    ],
-                    [
-                        "09 Event workflow tracking using Trello Free workspaces",
-                        "Free tier reference: $0 subscription within published workspace limits",
-                        "Assign delivery deadlines, incident owners, and customer escalation tasks",
-                        "Shared event checklist with named owners and timestamps",
-                    ],
-                    [
-                        "10 Noncritical workflow automation using Make Free tier",
-                        "Free tier reference: $0 subscription within current usage allowance",
-                        "Send reconciliation reminders without becoming the inventory locking authority",
-                        "Scheduled manual checklist; upgrade only against measured administrative savings",
-                    ],
-                    [
-                        "11 Endpoint recovery using Backblaze Computer Backup service",
-                        "Computer Backup reference: $9 monthly for each covered computer",
-                        "Protect local exports and test restoration of required records",
-                        "Encrypted offline backup with documented rotation and restoration testing",
-                    ],
-                    [
-                        "12 Public domain protection using Cloudflare Free plan",
-                        "Free plan reference: $0 subscription; domain registration billed separately",
-                        "Protect DNS access and maintain a minimal public presence",
-                        "Registrar-managed DNS with strong authentication and recovery controls",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Establish the authoritative inventory record",
-                    "action": "Create one immutable identifier per sellable seat or permitted package unit.",
-                    "detail": "Attach source rights, cost basis, quantity, transfer restrictions, and settlement assumptions before any listing is published.",
-                },
-                {
-                    "step": 2,
-                    "title": "Exercise the reservation and withdrawal sequence",
-                    "action": "Simulate permitted order events and confirm sibling listings are suppressed.",
-                    "detail": "Capture reservation timestamps, marketplace acknowledgments, retry behavior, and the exact timeout that requires suspension.",
-                },
-                {
-                    "step": 3,
-                    "title": "Validate delivery and settlement evidence",
-                    "action": "Connect accepted transfer evidence to the corresponding order and receivable.",
-                    "detail": "Reconcile the payout statement to the bank receipt without subtracting an exchange fee twice.",
-                },
-                {
-                    "step": 4,
-                    "title": "Test recovery with a second authorized operator",
-                    "action": "Restore required records and execute the incident checklist without shared credentials.",
-                    "detail": "Verify account recovery, vendor escalation contacts, listing suspension, customer communication, and reserve visibility.",
-                },
-            ],
-        },
-        {
-            "heading": "3. Reconcile every operating dollar to Formula v2.0",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Use the supplied Formula v2.0 scorecard as the annual reconciliation anchor. "
-                    "Conservative gross revenue is $220,000, Base is $1,010,000, and Scaled is "
-                    "$1,800,000. Apply the canonical 40% retained share to obtain $88,000, $404,000, "
-                    "and $720,000 after acquisition costs of $132,000, $606,000, and $1,080,000. "
-                    "Annual owner profit remains exactly $26,400, $191,900, and $468,000. Those "
-                    "profits equal 12%, 19.0%, and 26% of gross revenue, or 30%, 47.5%, and "
-                    "65% of retained contribution. The retained-share presentation is the supplied "
-                    "model's net contribution convention; actual ASC 606 presentation requires a "
-                    "principal-versus-agent assessment for each contractual activity, not a blanket "
-                    "assertion that every reseller recognizes only its spread. Keep gross customer "
-                    "billings, net exchange remittances, supplier acquisition costs, and recognized "
-                    "revenue in separate ledger fields. When a marketplace remits $900 on a $1,000 "
-                    "sale after a $100 fee, record the sale and fee consistently rather than "
-                    "charging that fee again against an already net receipt. Corporate hospitality "
-                    "and suite invoices likewise require separate lines for admission rights, services, "
-                    "taxes, and collections. Underlying sponsor budgets, stadium receipts, or merchant "
-                    "transaction volume are not additional operator revenue and must never inflate "
-                    "the opportunity's economics."
-                ),
-                (
-                    "The expense bridge below is an illustrative decomposition that preserves every "
-                    "canonical scenario total; it is not a claim that the scorecard supplies individual "
-                    "vendor costs. Fixed operating expense equals $21,600, $78,000, and $132,000 "
-                    "annually, corresponding to $1,800, $6,500, and $11,000 monthly. After those "
-                    "costs, the remaining deductions must total $40,000, $134,100, and $120,000. "
-                    "Allocate them explicitly among selling fees, incremental unsold or markdown "
-                    "losses, cancellation provisions, and carrying or settlement costs. Lower scaled "
-                    "fee intensity assumes a larger directly contracted corporate mix and favorable "
-                    "executed commercial terms; it does not assume public exchanges spontaneously "
-                    "cut their tariffs. Reprice the scenario if those conditions fail. Incremental "
-                    "slippage means economic loss not already reflected in realized gross sales "
-                    "or acquisition expense. Do not subtract the same markdown twice. Likewise, "
-                    "a cancellation provision represents an expected-loss planning charge, while "
-                    "cash held against potential refunds is a liquidity allocation, not a second "
-                    "expense. Release or replenish provisions against documented event outcomes. "
-                    "The owner-profit measure is the scorecard's operating result, before owner-level "
-                    "income taxes and distributions. Contractor support belongs inside operating "
-                    "expense, with the owner providing the primary full-time labor in the "
-                    "Conservative and Base staffing models."
-                ),
-                (
-                    "Model settlement lag separately from profitability because a profitable event "
-                    "can still consume the entire bank balance. At Base, annual acquisition cost "
-                    "of $606,000 averages $50,500 monthly. A simple 45-day acquisition-to-cash "
-                    "cycle therefore ties up approximately $75,750 before operating buffers, using "
-                    "a 30-day planning month. That exceeds even the $50,000 opening capital "
-                    "range. The Base case consequently requires some combination of faster turns, "
-                    "supplier credit, properly structured consignment, additional committed capital, "
-                    "or customer payments whose contractual refund obligations remain funded. "
-                    "Do not present startup capital as sufficient for immediate steady-state "
-                    "Base throughput. For a $10,000 pilot, limit positions to inventory whose "
-                    "combined worst-case cash demands fit available liquidity and whose delivery "
-                    "rights are documented. For NFL SSL and NBA playoff-option strips, model "
-                    "each contingent game separately: acquisition installments, qualification "
-                    "probability, transfer restrictions, and refund treatment can differ materially. "
-                    "A $2,400 strip containing four possible games is not automatically four "
-                    "$600 sellable assets. Stress elimination, postponement, and the loss of the "
-                    "most valuable matchup before allocating capital. Do not count cash from an "
-                    "unplayed game until the supplier's refund is actually received. Maintain "
-                    "a rolling thirteen-week cash forecast and review it before every meaningful "
-                    "inventory commitment."
-                ),
-            ],
-            "table": {
-                "caption": "Exact Annual Scorecard Reconciliation with Illustrative Expense Components",
-                "headers": [
-                    "Reconciliation line and accounting treatment",
-                    "Conservative annual operating scenario",
-                    "Base annual operating scenario",
-                    "Scaled annual operating scenario",
-                ],
-                "rows": [
-                    [
-                        "Gross revenue basis supplied by the canonical scorecard",
-                        "$220,000 gross annual basis before acquisition and operating deductions",
-                        "$1,010,000 gross annual basis before acquisition and operating deductions",
-                        "$1,800,000 gross annual basis before acquisition and operating deductions",
-                    ],
-                    [
-                        "Acquisition cost representing sixty percent of gross basis",
-                        "$132,000 ticket and suite acquisition costs deducted exactly once",
-                        "$606,000 ticket and suite acquisition costs deducted exactly once",
-                        "$1,080,000 ticket and suite acquisition costs deducted exactly once",
-                    ],
-                    [
-                        "Retained contribution representing forty percent of gross basis",
-                        "$88,000 retained contribution available before remaining operating expense",
-                        "$404,000 retained contribution available before remaining operating expense",
-                        "$720,000 retained contribution available before remaining operating expense",
-                    ],
-                    [
-                        "Fixed operating expense including budgeted paid support capacity",
-                        "$21,600 annually; equivalent to $1,800 monthly operating expenditure",
-                        "$78,000 annually; equivalent to $6,500 monthly operating expenditure",
-                        "$132,000 annually; equivalent to $11,000 monthly operating expenditure",
-                    ],
-                    [
-                        "Illustrative exchange and collection fees after acquisition spread",
-                        "$17,600 selling fees; eight percent effective gross-basis deduction",
-                        "$70,700 selling fees; seven percent effective gross-basis deduction",
-                        "$72,000 selling fees; four percent effective gross-basis deduction",
-                    ],
-                    [
-                        "Incremental unsold inventory and markdown slippage without duplication",
-                        "$11,000 additional inventory loss beyond amounts already recognized",
-                        "$35,350 additional inventory loss beyond amounts already recognized",
-                        "$25,200 additional inventory loss beyond amounts already recognized",
-                    ],
-                    [
-                        "Illustrative postponement and cancellation expected-loss provision expense",
-                        "$6,600 event-loss provision; cash reserves remain separately tracked",
-                        "$17,950 event-loss provision; cash reserves remain separately tracked",
-                        "$14,400 event-loss provision; cash reserves remain separately tracked",
-                    ],
-                    [
-                        "Illustrative carrying expense attributable to delayed settlement cycles",
-                        "$4,800 carrying expense; delayed principal remains a liquidity requirement",
-                        "$10,100 carrying expense; delayed principal remains a liquidity requirement",
-                        "$8,400 carrying expense; delayed principal remains a liquidity requirement",
-                    ],
-                    [
-                        "Total deductions after the forty-percent retained contribution line",
-                        "$61,600 total remaining deductions reconcile precisely to owner profit",
-                        "$212,100 total remaining deductions reconcile precisely to owner profit",
-                        "$252,000 total remaining deductions reconcile precisely to owner profit",
-                    ],
-                    [
-                        "Canonical owner profit and both correctly denominated margins",
-                        "$26,400 owner profit; 12% gross margin; 30% retained margin",
-                        "$191,900 owner profit; 19.0% gross margin; 47.5% retained margin",
-                        "$468,000 owner profit; 26% gross margin; 65% retained margin",
-                    ],
-                    [
-                        "Canonical team structure with contractors separated from employees",
-                        "1 FT + 2 C; owner-led operation with scoped contractors",
-                        "1 FT + 2 C; automation supports expanded transaction throughput",
-                        "2 FT + 3 C; five people support scaled operations",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "4. Launch only after sourcing, delivery, and cash controls pass",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Map verified_fan_ticketing_and_drop_allocation_farming to a lawful allocation "
-                    "program, not an account-evasion system. The proposed hundreds of aged accounts, "
-                    "residential proxies, synthetic browser histories, and virtual-card identities used "
-                    "to defeat one-to-four-ticket limits are excluded from this production design. "
-                    "The federal BOTS Act, 15 U.S.C. §45c, prohibits covered circumvention of "
-                    "ticketing controls and addresses resale of tickets obtained through prohibited "
-                    "circumvention. Genuine buyers must use their own truthful identities, authorized "
-                    "payment methods, and permitted accounts, obeying household, account, and "
-                    "aggregate purchasing restrictions. A consortium is acceptable only where the "
-                    "source terms permit the actual coordinated purchasing and subsequent transfer; "
-                    "different addresses or bank BINs do not themselves establish permission. If "
-                    "twenty genuinely eligible independent applicants each have a 2% selection "
-                    "probability, the illustrative chance of at least one selection is "
-                    "1 - 0.98**20, approximately 33.2%, assuming independence. That is not a "
-                    "promised 100x–500x success multiplier, and correlated allocation rules change "
-                    "the calculation. Obtain conditional wholesale commitments before lawful checkout "
-                    "where feasible, with quantity, transferability, refund treatment, and payment "
-                    "timing written down. If allocation terms prohibit the arrangement, abandon "
-                    "that source and purchase transferable inventory through authorized suppliers. "
-                    "U.S. Mint and collectible accounts belong outside this live-event production "
-                    "stack and consume none of its opening capital."
-                ),
-                (
-                    "Make readiness observable rather than ceremonial. Verify applicable reseller "
-                    "licenses and purchase rights before sourcing, then inspect the complete customer "
-                    "price presentation under 16 CFR Part 464. For covered live-event ticket offers, "
-                    "display the required total price including mandatory charges upfront and present "
-                    "permitted exclusions and final payment information as the rule requires. "
-                    "Marketplace checkout behavior does not establish that your own corporate "
-                    "proposal or landing page is correct. Test a cancelled event, a postponed "
-                    "event, a failed transfer, and an exchange outage using recorded procedures. "
-                    "Assign one operator to listing suspension and another authorized person to "
-                    "customer communications when staffing permits. Set a concentration limit "
-                    "against stressed cash exposure, not ticket face value: a $2,000 acquisition "
-                    "with a $1,000 potential replacement assessment can consume $3,000 before "
-                    "other event costs. Hold sufficient liquidity or reduce the position. Verify "
-                    "that each supplier actually controls the promised tickets and that suite "
-                    "contracts permit seat-level resale. For hospitality, document each admission, "
-                    "hotel, transport, food, and host-service obligation separately; a supplier's "
-                    "use of VIP language does not establish official affiliation or access "
-                    "rights. Preserve the evidence needed to resolve the customer's actual "
-                    "admission problem, not merely a screenshot of the sales listing."
-                ),
-                (
-                    "Use twelve practical mappings without pretending that every activity needs "
-                    "its own software subscription. Lawful allocations and sponsor allotments "
-                    "feed verified source records; multi-exchange resale and corporate procurement "
-                    "feed distinct sales channels. Suite splitting and tentpole hospitality require "
-                    "component-level contracts. NFL SSL strips and NBA playoff strips require "
-                    "contingent-game exposure records. Consignment requires documented ownership, "
-                    "settlement priority, and loss allocation. Event-relative repricing, barcode "
-                    "delivery, and B2B invoice reconciliation complete the operating loop. These "
-                    "are this chapter's twelve implementation mappings, not additional supplied "
-                    "catalog identifiers. Begin with one source type, one inventory authority, "
-                    "and one accountable daily reconciler, then expand after a complete acquisition, "
-                    "delivery, settlement, and exception cycle. A consigned $1,000 sale paying "
-                    "$800 to the owner and $100 in selling fees leaves $100 before support "
-                    "and reserves; avoiding acquisition funding does not create a 40% spread "
-                    "automatically. Record actual cohort economics and compare them with the "
-                    "canonical annual mix. During the expected one-to-three-month first-deal "
-                    "window, review cash weekly and software utilization monthly. Cancel "
-                    "subscriptions that have not prevented errors or saved measurable work. "
-                    "Release expansion capital only when settled receipts, verified margin, "
-                    "delivery evidence, and the thirteen-week forecast all support the next "
-                    "position without consuming protected liquidity."
-                ),
-            ],
-            "table": {
-                "caption": "Pre-Flight Evidence Matrix for Ticket, Suite, and Hospitality Operations",
-                "headers": [
-                    "Operating control and accountable decision",
-                    "Evidence required before production activity",
-                    "Failure condition requiring immediate corrective action",
-                    "Cash-preserving fallback and restart requirement",
-                ],
-                "rows": [
-                    [
-                        "Source eligibility and permitted allocation participation verification",
-                        "Buyer identity, purchase terms, quantity limits, and transferable rights",
-                        "Proxies or duplicate identities used to defeat purchase restrictions",
-                        "Abandon restricted allocation source; procure documented authorized resale inventory",
-                    ],
-                    [
-                        "Applicable entity registration and reseller licensing verification",
-                        "Current official requirements, accepted filings, and required bond evidence",
-                        "Operating geography exceeds the licenses or funded requirements",
-                        "Exclude affected geography until documented requirements are satisfied",
-                    ],
-                    [
-                        "Cross-exchange reservation and inventory withdrawal acceptance testing",
-                        "Timestamped hold events and acknowledgments from every enabled channel",
-                        "Unacknowledged withdrawal leaves the same seat available elsewhere",
-                        "Suspend affected listings; reconcile authoritative inventory before reopening",
-                    ],
-                    [
-                        "Customer total-price presentation and service-description verification",
-                        "Archived offer screens and itemized corporate package documents",
-                        "Mandatory charges appear late or promised inclusions lack support",
-                        "Correct price presentation and supplier evidence before accepting payment",
-                    ],
-                    [
-                        "Suite and hospitality component-rights verification before selling",
-                        "Executed contracts covering admission, catering, parking, and transfer permissions",
-                        "Supplier cannot substantiate promised access or seat-level resale rights",
-                        "Remove unsupported components and return refundable customer amounts",
-                    ],
-                    [
-                        "Delivery completion and payment-settlement reconciliation before expansion",
-                        "Accepted transfer evidence, marketplace statement, and matching bank receipt",
-                        "Order marked complete without usable admission or settled funds",
-                        "Escalate delivery incident and exclude receivable from available cash",
-                    ],
-                    [
-                        "Reserve adequacy under simultaneous delay and event disruption",
-                        "Thirteen-week forecast with refund, replacement, and delayed-payout stresses",
-                        "Projected unrestricted cash breaches the documented protected reserve floor",
-                        "Stop acquisitions and reduce exposure before adding subscriptions",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four evidence-backed checks before accepting live orders",
-                "body": "A launch passes only when the responsible operator can produce the underlying records and demonstrate the fallback procedure.",
-                "items": [
-                    "Sourcing check: establish lawful acquisition, applicable licensing, permitted quantities, and transferable admission rights without account-limit circumvention.",
-                    "Inventory check: demonstrate cross-channel holds, acknowledged withdrawals, duplicate-event handling, and suspension during an integration outage.",
-                    "Cash check: retain at least half of opening capital as protected working liquidity and survive the documented refund-plus-settlement-delay stress.",
-                    "Delivery check: confirm supplier obligations, accepted transfer evidence, truthful total-price presentation, and an executable cancellation response.",
-                ],
-            },
-        },
-    ],
-    "pull_quote": "A sold ticket is a receivable; settled cash after every obligation is operating capital.",
-    "diagram_id": "diag-07",
-    "action_checklist": [
-        "Allocate the opening $10,000, $25,000, or $50,000 budget exactly, preserving 55% as separately identifiable working-capital and settlement liquidity.",
-        "Obtain jurisdiction-specific licensing costs, insurance terms, processor acceptance, and written POS quotations before replacing any purchasing allowance with a commitment.",
-        "Configure one authoritative inventory ledger and test auto-holds, withdrawal acknowledgments, idempotent retries, and outage suspension across every enabled exchange.",
-        "Reconcile the canonical annual cases to $26,400, $191,900, and $468,000 owner profit after acquisition, selling fees, incremental slippage, cancellation provisions, and carrying expense.",
-        "Reject account-limit circumvention and document lawful buyer participation, transferable source rights, conditional wholesale commitments, and source-specific purchasing restrictions.",
-        "Complete a thirteen-week cash stress, a transfer-recovery exercise, and an event-cancellation simulation before releasing funds for the first production position.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "15 U.S.C. §45c — Better Online Ticket Sales Act",
-            "url": "https://www.law.cornell.edu/uscode/text/15/45c",
-            "relevance": "Prohibits covered circumvention of ticketing security measures and purchasing controls, and addresses resale of tickets obtained through prohibited circumvention.",
-        },
-        {
-            "title": "16 CFR Part 464 — Rule on Unfair or Deceptive Fees",
-            "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-D/part-464",
-            "relevance": "Establishes total-price presentation and related disclosure requirements for covered live-event ticket offers, including mandatory charges and permitted exclusions.",
-        },
-        {
-            "title": "N.Y. Arts and Cultural Affairs Law §25.13 — Licensing of Ticket Resellers",
-            "url": "https://www.nysenate.gov/legislation/laws/ACA/25.13",
-            "relevance": "Provides ticket-reseller licensing requirements relevant to jurisdiction selection, startup expenditure, and verification before operating in New York.",
-        },
-        {
-            "title": "31 CFR §1020.220 — Customer Identification Program Requirements for Banks",
-            "url": "https://www.ecfr.gov/current/title-31/subtitle-B/chapter-X/part-1020/subpart-B/section-1020.220",
-            "relevance": "Requires covered banks to maintain customer identification programs; operators should prepare accurate entity and authorized-person information for account opening.",
-        },
-    ],
-}
+CHAPTER_4 = {'id': 'Q4',
+ 'chapter_id': 'Q4',
+ 'chapter_number': 4,
+ 'question_number': 4,
+ 'slug': 'f1-paddock-club-ultra-premium-event-hospitality',
+ 'question_prompt': 'What does F1 Paddock Club and other ultra-premium hospitality deliver, and is it '
+                    'worth the price?',
+ 'kicker': 'Q4 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'F1 Paddock Club and Ultra-Premium Event Hospitality',
+ 'subtitle': 'Paddock Club pricing and access across Singapore, Qatar, Silverstone, Abu Dhabi, Las Vegas, '
+             'Melbourne and Montreal, team hospitality programs, pit-lane upgrades, Masters Club Magnolia, '
+             'and merging travel with VIP event packages',
+ 'layout_template': 'comparison_matrix',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'F1 Paddock Club and its peers are sponsor-funded corporate rooms first and retail '
+                      'tickets second. Practitioners agree the buyer is the corporate host: Pit Stop Lab '
+                      'puts seats at up to $15,000 per weekend with most guests company-paid, and Kayvan '
+                      'Goes estimates about 30% of the room pays nothing. The baseline package is '
+                      'consistent everywhere: escorted garage tour, pit lane walk, all-inclusive catering '
+                      'over the pit lane. Street mechanics turn on race selection and timing, from '
+                      "€10,000-€20,000 Paddock tickets and €25,000 drive-in tiers to Melbourne's $600 "
+                      'Champions Club versus $6,000 Red Bull Pit Lane, plus queuing 35-40 minutes early '
+                      'and booking travel in one transaction. The sharpest disagreement is value: '
+                      'Mercedes-AMG PETRONAS sells hospitality as partner retention, while Kayvan Goes '
+                      'scores networking 1 out of 10 and would pay €200 at most.',
+ 'key_metrics': [{'label': 'Paddock Club seat price ceiling',
+                  'metric': 'Paddock Club seat price ceiling',
+                  'value': 'Up to $15,000 per single race weekend',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Pit Stop Lab's figure for a Paddock Club seat, alongside 65,000 guests and "
+                             'over $450M in revenue.',
+                  'source': 'Pit Stop Lab ([qjr3BHunOxo @ 00:00:00])'},
+                 {'label': 'Networking score out of 10',
+                  'metric': 'Networking score out of 10',
+                  'value': '1 out of 10 (68/100 overall)',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Kayvan Goes scored the Paddock Club across 10 categories; networking was the '
+                             'lowest at 1.',
+                  'source': 'Kayvan Goes ([2UDtC8EP8GA @ 00:24:42])'},
+                 {'label': 'Share of guests who do not pay',
+                  'metric': 'Share of guests who do not pay',
+                  'value': 'About 30%',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Kayvan Goes's estimate of Paddock Club guests attending without paying for "
+                             'their ticket.',
+                  'source': 'Kayvan Goes ([2UDtC8EP8GA @ 00:21:38])'},
+                 {'label': 'Cross-border ticket arbitrage spread',
+                  'metric': 'Cross-border ticket arbitrage spread',
+                  'value': '$5,000 in the US vs about $1,000 in Paris (5x)',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "John Allen's Taylor Swift example of US prices running five times European "
+                             'prices.',
+                  'source': 'Tickets To Travel Podcast ([pugjl3jzpWU @ 00:11:14])'}],
+ 'sections': [{'title': 'Section 1: The Practitioner Consensus',
+               'paragraphs': ['Every operator who has worked or walked the Paddock Club agrees on one '
+                              'thing: this is a sponsor-funded corporate product that happens to sell some '
+                              'retail seats, not a fan ticket with extras bolted on. Pit Stop Lab puts the '
+                              'ceiling at up to $15,000 for a single race weekend, across 65,000 guests '
+                              'and over $450M in revenue, and says most of those guests are company-paid, '
+                              'with a $100M sponsorship bundling access and a $7,500 out-of-pocket buyer '
+                              'as the exception [qjr3BHunOxo @ 00:00:19]. Kayvan Goes, an event organizer '
+                              'with 20 years and over 4,000 events on the resume, estimates about 30% of '
+                              'the guests in the room never paid for their badge [2UDtC8EP8GA @ 00:21:38]. '
+                              'Martin Bursatil got in free because a brand brought them, and frames the '
+                              'whole room as a networking engine where sponsorship buys spots scaled by '
+                              'contribution and sponsor type, and where sponsors chase awareness and reach '
+                              'rather than direct profit [S5_EsejwubY @ 00:03:18]. Mercedes-AMG PETRONAS '
+                              'confirms the seller side: hospitality is integral to its sponsorship '
+                              'platform for C-level guests, customers, A-listers and influencers, and the '
+                              'stated goal is getting partners to resign and join again [fl-tIcZO3u4 @ '
+                              '00:02:22]. For a broker, the buyer to underwrite is the corporate host, not '
+                              'the fan.',
+                              'The deliverable stack is remarkably consistent from Abu Dhabi and Shanghai '
+                              'to Montreal and Singapore. Only Scrans describes Abu Dhabi as upwards of 2 '
+                              'grand for a day ticket that bundles a pit lane walk, unlimited food and '
+                              'free drinks, with tiered packages where the more you pay the more access '
+                              'you get [XhaS3MGZL-o @ 00:00:15]. Katarina Mogus, hosted by IBM and Ferrari '
+                              'in Montreal, got the same core: a garage tour with no filming, a pit lane '
+                              'walk, second-level seating directly above the garage and a provided '
+                              'photographer [ouFzQnXDzjU @ 00:00:32]. At Singapore, Luxury Travel '
+                              'Professional was escorted into the garage under a strict no-photos rule '
+                              'because of classified information [6CYg2Av2xS4 @ 00:06:44], while Live The '
+                              'Dash in Shanghai logged unlimited food and drink, Champagne, a hair and '
+                              'nail salon and rooftop balconies covering five corners plus the '
+                              'start/finish line [emvC24ZLBWo @ 00:13:53]. Across these accounts, three '
+                              'anchors recur and function as the baseline any resold package must carry: '
+                              'escorted garage access, a pit lane walk, and all-inclusive catering '
+                              'positioned over the pit lane. Escort and no-camera rules come with the '
+                              'territory, so set client expectations before arrival.',
+                              'The third point of agreement is that demand for premium experiences is '
+                              'outrunning supply. Mercedes-AMG PETRONAS built its Miami Club for 850 '
+                              'guests because the demand was just too strong and they needed another '
+                              'space, then copied the format into an 850-guest, three-floor Vegas Club at '
+                              'turn four [fl-tIcZO3u4 @ 00:04:20]. John Allen, co-founder of tkt and a '
+                              'veteran of Ticket Network and Logitix, tells the Tickets To Travel Podcast '
+                              'that demand has shifted from seats to experiences, and that international '
+                              'buyers on holiday want premium seats rather than cheap ones [pugjl3jzpWU @ '
+                              '00:23:30]. Pit Stop Lab frames the shift in corporate terms: the shared '
+                              'experience is replacing the golf day, and the best place to close the deal '
+                              'is not a meeting room [qjr3BHunOxo @ 00:01:54]. The same logic runs outside '
+                              "motorsport. CBS Atlanta's look at Club Magnolia near Augusta shows a "
+                              'private club inside a house that blends in, opens only seven days a year, '
+                              'and draws repeat attendees who say the people make it [vYgE480j7AA @ '
+                              '00:01:08]. The consensus prerequisite for anyone brokering this tier is '
+                              'therefore relationship capital, because the product is sold as access to a '
+                              'room of decision-makers, with the race as backdrop.'],
+               'table': {'caption': 'Where practitioners agree on who buys ultra-premium hospitality and '
+                                    'what it must include',
+                         'headers': ['Consensus Point',
+                                     'What Practitioners Report',
+                                     'Operator Implication',
+                                     'Expert Source'],
+                         'rows': [['The real buyer is the corporate host, not fans',
+                                   'Most guests company-paid; $100M sponsorship includes access; $7,500 '
+                                   'out-of-pocket example',
+                                   'Pitch the corporate host and price around sponsor budgets',
+                                   'Pit Stop Lab ([qjr3BHunOxo @ 00:00:19])'],
+                                  ['A large share of the room never pays',
+                                   'About 30% of guests attend without paying for tickets',
+                                   'Expect comped guests to sit beside paying clients in every room',
+                                   'Kayvan Goes ([2UDtC8EP8GA @ 00:21:38])'],
+                                  ['Networking is the stated reason people buy in',
+                                   'Sponsorship buys spots scaled by contribution and sponsor type',
+                                   'Sell access to businesspeople, not just the trackside view',
+                                   'Martin Bursatil ([S5_EsejwubY @ 00:03:18])'],
+                                  ['Hospitality exists to retain and win sponsorship partners',
+                                   'Integral to sponsorship platform; goal is partners resign and return',
+                                   'Team hospitality inventory follows partner renewals, not retail demand '
+                                   'cycles',
+                                   'Mercedes-AMG PETRONAS F1 Team ([fl-tIcZO3u4 @ 00:02:22])'],
+                                  ['Core package always includes pit lane walk and food',
+                                   'Upwards of 2 grand per day, unlimited food, free drinks',
+                                   'Any resold package must carry pit walk plus catering',
+                                   'Only Scrans ([XhaS3MGZL-o @ 00:00:15])'],
+                                  ['Garage access is escorted and often camera-restricted',
+                                   'Garage tour with no filming; second-level seats above garage',
+                                   'Brief clients on no-filming rules before they arrive trackside',
+                                   'Katarina Mogus ([ouFzQnXDzjU @ 00:00:32])'],
+                                  ['Demand for premium experiences is outrunning existing capacity',
+                                   'Miami Club holds 850 guests, built because demand was too strong',
+                                   'Capacity expansions signal new inventory brokers can source and '
+                                   'package',
+                                   'Mercedes-AMG PETRONAS F1 Team ([fl-tIcZO3u4 @ 00:04:20])']]}},
+              {'title': 'Section 2: Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['Price the full ladder before you quote a single client. Kayvan Goes put '
+                              'Paddock Club tickets at €10,000 to €20,000, with a VIP tier of at least '
+                              '€25,000 required just to drive in, while common-area tickets ran €500 to '
+                              '€600 [2UDtC8EP8GA @ 00:06:01]. Martin Bursatil quotes the paddock at up to '
+                              '200,000 pesos, notes a more expensive tier above it, and says the '
+                              'downstairs areas are invitation-only [S5_EsejwubY @ 00:03:36]. Global '
+                              'Nomads mapped the Melbourne spread in US dollars: about $600 per person for '
+                              'the Thursday Champions Club, sold as top tier and the same as a Paddock '
+                              'Club, against about $6,000 per person for the Red Bull Pit Lane '
+                              '[ePgxCdmE8o8 @ 00:25:19]. Live The Dash works the cheap end deliberately, '
+                              'calling China technically the cheapest F1 race and warning that doing the '
+                              'same thing in Monaco means remortgaging the house [emvC24ZLBWo @ 00:18:41]. '
+                              'The street read is a three-tier map: common-area and Thursday products in '
+                              'the hundreds, standard team hospitality in the low-to-mid five figures, and '
+                              'invitation-only or drive-in tiers above that. Race selection is the first '
+                              'pricing lever, ahead of any upgrade inside a single circuit.',
+                              'Arrival is where operators win or lose the day, and the timing tactics are '
+                              'specific. Live The Dash buys Paddock Club access through the F1 Experiences '
+                              'website, takes the metro as the fastest and cheapest route in, buys the '
+                              'return ticket ahead, and stakes out the driver entrance as the best spot to '
+                              'see drivers [emvC24ZLBWo @ 00:01:28]. Kayvan Goes priced the '
+                              'public-transport route the same way: a €4 to €5 train every 10 minutes, '
+                              'about 30 minutes on board, then a 20 to 40 minute walk [2UDtC8EP8GA @ '
+                              '00:06:16]. SOL - Supercars of London says to arrive as early as possible to '
+                              'film the lounge before the chaos, and notes that pit lane opens to ticket '
+                              'holders about 90 minutes before lights out, with lower-ranked team garages '
+                              'noticeably quieter [rQvPQuH1YXw @ 00:05:16]. Global Nomads turned queuing '
+                              'into a system in Melbourne: get to the stand 35 to 40 minutes before it '
+                              'opens, and on Sunday they arrived 45 minutes ahead of the 8:30 gates to '
+                              'secure a seat in a section with only about 40 of them [ePgxCdmE8o8 @ '
+                              '00:14:39]. Build these windows into every client itinerary, because the '
+                              'scarce resource inside the gate is position, not food.',
+                              'Packaging is where the margin lives. John Allen of tkt defines the '
+                              'value-add layer as a VIP entrance, a pre-event cocktail hour and a photo op '
+                              '[pugjl3jzpWU @ 00:08:35], and walks through the Taylor Swift arbitrage that '
+                              'exposed the gap: US tickets at $5,000 each against about $1,000 in Paris, a '
+                              '5x spread, with the trip hard to assemble because hotel, flight and tickets '
+                              "had to be booked separately [pugjl3jzpWU @ 00:11:14]. tkt's answer is "
+                              'one-transaction booking with tiers running from VIP entrance up to suites '
+                              'and lounges, treating travel as the missing ingredient. Mercedes-AMG '
+                              'PETRONAS shows the operating cadence behind a premium program: a team of 10 '
+                              'runs it, creative work starts more than a year out, and the team ships '
+                              'three travelling kits plus a separate Monaco kit with a penthouse, private '
+                              'yacht and paddock program [fl-tIcZO3u4 @ 00:02:57]. Kayvan Goes adds the '
+                              'fix the product most lacks, a structured team lunch from 12:00 to 2:00 with '
+                              'a team presentation, a two-to-three-minute driver appearance, and staff '
+                              'whose job is introducing guests to each other [2UDtC8EP8GA @ 00:22:44]. '
+                              'Bundle travel, timed access and engineered introductions into one invoice '
+                              'and you are selling something the circuit gate cannot.'],
+               'table': {'caption': 'Price points, costs and spreads quoted by practitioners on the ground',
+                         'headers': ['Line Item', 'Figure Quoted', 'How Operators Use It', 'Expert Source'],
+                         'rows': [['Paddock Club seat, single race weekend maximum',
+                                   'Up to $15,000 per weekend; 65,000 guests, $450M+ revenue',
+                                   'Top-of-band anchor for corporate quotes and sponsor-budget '
+                                   'conversations',
+                                   'Pit Stop Lab ([qjr3BHunOxo @ 00:00:00])'],
+                                  ['Paddock tickets versus the drive-in VIP tier',
+                                   '€10,000-€20,000 tickets; at least €25,000 to drive in',
+                                   'Use drive-in access as the upsell rung above standard',
+                                   'Kayvan Goes ([2UDtC8EP8GA @ 00:06:01])'],
+                                  ['Abu Dhabi Paddock Club day ticket with inclusions',
+                                   'Upwards of 2 grand per day, food and drinks included',
+                                   'Benchmark for single-day packages sold without full weekend commitment',
+                                   'Only Scrans ([XhaS3MGZL-o @ 00:00:15])'],
+                                  ['Melbourne Champions Club versus Red Bull Pit Lane',
+                                   'About $600 US versus about $6,000 US per person',
+                                   'Tenfold spread inside one venue; verify seating before quoting',
+                                   'Global Nomads ([ePgxCdmE8o8 @ 00:25:19])'],
+                                  ['Shanghai hotel and peak-period intercity rail costs',
+                                   'About £400 per night hotel; £250 per person train',
+                                   'Load travel costs into the package before marking up access',
+                                   'Live The Dash ([emvC24ZLBWo @ 00:20:50])'],
+                                  ['Taylor Swift US versus Paris ticket arbitrage spread',
+                                   '$5,000 each in the US versus about $1,000 in Paris',
+                                   'Cross-border price gaps fund travel bundles for premium buyers',
+                                   'Tickets To Travel Podcast ([pugjl3jzpWU @ 00:11:14])'],
+                                  ['Rumored catering spend and paddock club headcount',
+                                   '€3M per day catering; 3,000-4,000 guests across three floors',
+                                   'Explains why food scores high while networking scores low',
+                                   'Kayvan Goes ([2UDtC8EP8GA @ 00:20:45])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Small edges practitioners actually used',
+                           'body': 'Low-cost moves that changed access, cost or time on the ground at race '
+                                   'weekends.',
+                           'items': ['Skip the paid ticket for pit lane access where you can: going on '
+                                     'Thursday gets a free pit lane walk at Monaco, with Japan and Bahrain '
+                                     'testing listed as other free options [Live The Dash — emvC24ZLBWo @ '
+                                     '00:12:30].',
+                                     'Re-request the ride: an Uber quoted at $78 on Saturday came back at '
+                                     'about $35 on re-request in the Black tier [Global Nomads — '
+                                     'ePgxCdmE8o8 @ 00:29:57].',
+                                     'When rideshare collapses, switch modes: a bike ride took 13 minutes '
+                                     'versus a 45-minute walk because Ubers were overloaded [Katarina '
+                                     'Mogus — ouFzQnXDzjU @ 00:09:20].',
+                                     'Book on-site services immediately: the Qatar Airways barber in the '
+                                     'Qatar paddock was fully booked all weekend [SOL - Supercars of '
+                                     'London — rQvPQuH1YXw @ 00:04:03].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Pick the race by price band',
+                              'action': 'Choose the circuit and tier before sourcing any inventory.',
+                              'detail': 'Start with cheaper venues such as Shanghai, which Live The Dash '
+                                        'calls technically the cheapest F1 race [Live The Dash — '
+                                        'emvC24ZLBWo @ 00:00:39], then map the jump from €10,000-€20,000 '
+                                        'tickets to the €25,000+ drive-in tier [Kayvan Goes — 2UDtC8EP8GA '
+                                        '@ 00:06:01].'},
+                             {'step': 2,
+                              'title': 'Source from official and partner channels',
+                              'action': 'Buy through the official hospitality channel or ride in on a host '
+                                        'partner.',
+                              'detail': 'Live The Dash bought through the F1 Experiences website [Live The '
+                                        'Dash — emvC24ZLBWo @ 00:14:40]; LawVS entered the McLaren Paddock '
+                                        'Club at Silverstone as the guest of an Airwallex host [LawVS — '
+                                        '0KKYkQr1SBk @ 00:00:21].'},
+                             {'step': 3,
+                              'title': 'Bundle travel into one transaction',
+                              'action': 'Lock hotel and transport alongside the ticket, well in advance.',
+                              'detail': 'John Allen built tkt around one-transaction booking because '
+                                        'hotel, flight and tickets booked separately made trips hard to '
+                                        'organise [Tickets To Travel Podcast — pugjl3jzpWU @ 00:13:52]; '
+                                        'Global Nomads booked a Park Hyatt Park Suite on points a year '
+                                        'ahead [Global Nomads — ePgxCdmE8o8 @ 00:03:25].'},
+                             {'step': 4,
+                              'title': 'Script race-day timing and the exit',
+                              'action': 'Hand clients a minute-by-minute arrival and departure plan.',
+                              'detail': 'Queue 35-40 minutes before the stand opens [Global Nomads — '
+                                        'ePgxCdmE8o8 @ 00:14:39], expect pit lane to open about 90 minutes '
+                                        'before lights out [SOL - Supercars of London — rQvPQuH1YXw @ '
+                                        '00:05:16], and plan the exit: LawVS was funnelled through one '
+                                        'gate on a roughly 12-hour door-to-door day [LawVS — 0KKYkQr1SBk @ '
+                                        '00:15:22].'}]},
+              {'heading': 'Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The loudest split is over whether the Paddock Club delivers its core '
+                              'product: deal flow. Martin Bursatil frames networking with businesspeople '
+                              'as the reason anyone buys in, with sponsorship contribution and sponsor '
+                              'type dictating who lands which spots, and sponsors chasing awareness and '
+                              'reach rather than direct profit [S5_EsejwubY @ 00:03:18]. Pit Stop Lab goes '
+                              "further, pitching the room as the world's most expensive boardroom where "
+                              'shared experience is replacing golf days, because the best place to close '
+                              "the deal isn't a meeting room [qjr3BHunOxo @ 00:01:54]. Kayvan Goes, an "
+                              'event organizer claiming 20 years and over 4,000 events, walked the same '
+                              'product with a 10-category scorecard and gave networking a flat 1 out of '
+                              '10, dragging the total down to 68/100 [2UDtC8EP8GA @ 00:24:42]. Their fix '
+                              'is operational rather than decorative: a structured team lunch from 12:00 '
+                              'to 2:00, a team presentation, a two-to-three-minute driver appearance, and '
+                              'staff who physically introduce guests to each other [2UDtC8EP8GA @ '
+                              '00:22:44]. The operator read is blunt: the networking promise only pays '
+                              'when the host engineers the introductions, so a broker selling corporate '
+                              'seats on the strength of the room has to ask who is doing the introducing '
+                              'before quoting the deal-flow angle.',
+                              'Price, and who actually foots the bill, splits practitioners just as hard. '
+                              'Pit Stop Lab puts a seat at up to $15,000 for a single race weekend and '
+                              'says most guests are company-paid, with a $100M sponsorship bundling access '
+                              'and a $7,500 out-of-pocket buyer cited as the exception rather than the '
+                              'rule [qjr3BHunOxo @ 00:00:19]. Kayvan Goes quotes €10-20k tickets, a VIP '
+                              'tier of at least €25k just to drive in, and a rumored €3M-per-day catering '
+                              "budget, then estimates that about 30% of guests don't pay at all "
+                              '[2UDtC8EP8GA @ 00:21:38]. Martin Bursatil proves the point from the inside: '
+                              'the Paddock can run up to 200,000 pesos, yet a brand brought them in free '
+                              'while the downstairs areas stayed invitation-only [S5_EsejwubY @ 00:03:36]. '
+                              'Live The Dash runs the opposite playbook for self-funded buyers: Shanghai '
+                              'is technically the cheapest F1 race, the sprint format adds on-track '
+                              'action, and trying the same thing in Monaco means you need to remortgage '
+                              'the house [emvC24ZLBWo @ 00:18:41]. For an operator that means two separate '
+                              'markets: the sponsor-comped corporate guest who never sees an invoice, and '
+                              'the retail buyer hunting the cheapest circuit, arbitraging venue rather '
+                              'than tier to get inside the same paddock.',
+                              'The third fault line is the product itself and the channel that sells it. '
+                              'Only Scrans, paying upwards of 2 Grand for an Abu Dhabi day ticket, praised '
+                              'the live beef tenderloin theater but found the Korean fried chicken burger '
+                              "quite small with fries that weren't crispy [XhaS3MGZL-o @ 00:03:26]. Global "
+                              'Nomads rated the Red Bull Pit Lane grazing snacks better than Thursday but '
+                              'not like Singapore, and ranked Melbourne third behind Singapore and Abu '
+                              'Dhabi [ePgxCdmE8o8 @ 00:24:55]. On distribution, Live The Dash bought '
+                              'direct through the F1 Experiences website [emvC24ZLBWo @ 00:14:40], while '
+                              'John Allen of tkt argues the real value sits in packaging: VIP entrance, '
+                              'pre-event cocktail hour, photo op, and travel as the missing ingredient, '
+                              "all closed in one transaction [pugjl3jzpWU @ 00:13:52]. Allen's Taylor "
+                              'Swift example shows the arbitrage logic, with US tickets running $5,000 '
+                              'each against roughly $1,000 in Paris, yet the trip was hard to assemble '
+                              'because hotel, flight and tickets had to be booked separately. The Tickets '
+                              'To Travel host even argues inventory from a primary or a reseller API is '
+                              'probably about the same, which moves the competitive edge away from raw '
+                              'seat access and onto how cleanly the broker bundles the logistics wrapped '
+                              'around it.'],
+               'table': {'caption': 'Side-by-side playbooks where practitioners split on paddock '
+                                    'hospitality value, price and channel',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Does the club deliver real networking value',
+                                   'Networking with businesspeople is the core reason to buy, scaled by '
+                                   'sponsorship contribution and sponsor type',
+                                   'Networking scored 1 out of 10 and needs a structured lunch plus staff '
+                                   'introductions',
+                                   'Martin Bursatil ([S5_EsejwubY @ 00:03:18]); Kayvan Goes ([2UDtC8EP8GA '
+                                   '@ 00:24:42])'],
+                                  ['Who actually pays for the paddock seat',
+                                   'Most guests are company-paid through sponsorships, with $7,500 out of '
+                                   'pocket the exception',
+                                   "About 30% of guests do not pay at all, per an organizer's estimate",
+                                   'Pit Stop Lab ([qjr3BHunOxo @ 00:00:19]); Kayvan Goes ([2UDtC8EP8GA @ '
+                                   '00:21:38])'],
+                                  ['Which circuit gives the cheapest premium entry',
+                                   'Shanghai is technically the cheapest race and the sprint format adds '
+                                   'more track action',
+                                   'Monaco means remortgaging the house, though its Thursday pit lane walk '
+                                   'is free',
+                                   'Live The Dash ([emvC24ZLBWo @ 00:00:39]); Live The Dash ([emvC24ZLBWo '
+                                   '@ 00:12:30])'],
+                                  ['Thursday tier versus full weekend premium stand',
+                                   'Champions Club at about $600 US delivered the best-organised pit walk '
+                                   'with fewest people',
+                                   'Red Bull Pit Lane at about $6,000 US offered only about 40 seats',
+                                   'Global Nomads ([ePgxCdmE8o8 @ 00:05:25]); Global Nomads ([ePgxCdmE8o8 '
+                                   '@ 00:25:19])'],
+                                  ['How good the hospitality food really is',
+                                   "Food scored a perfect 10 inside the organizer's ten-category paddock "
+                                   'club rating',
+                                   'Burger was quite small and tempura prawns a bit soft from sitting out',
+                                   'Kayvan Goes ([2UDtC8EP8GA @ 00:19:00]); Only Scrans ([XhaS3MGZL-o @ '
+                                   '00:04:57])'],
+                                  ['Whether cameras are allowed inside team garages',
+                                   'Garage tours enforced no photos or no filming because of classified '
+                                   'information',
+                                   'McLaren garage visit ran under escort with the camera allowed '
+                                   'throughout',
+                                   'Luxury Travel Professional ([6CYg2Av2xS4 @ 00:06:44]); LawVS '
+                                   '([0KKYkQr1SBk @ 00:13:04])'],
+                                  ['Which sales channel moves the premium package',
+                                   'Buy paddock access direct through the F1 Experiences website before '
+                                   'travelling',
+                                   'Bundle tickets, travel, VIP entrance, suites and lounges into one '
+                                   'transaction',
+                                   'Live The Dash ([emvC24ZLBWo @ 00:14:40]); Tickets To Travel Podcast '
+                                   '([pugjl3jzpWU @ 00:13:52])']]}},
+              {'heading': 'Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The most expensive failures happen outside the lounge, at the gates. LawVS '
+                              'rode in as an Airwallex guest via the Chicheley Hall pickup and then '
+                              'watched the exit funnel through a single gate, turning the McLaren day at '
+                              'Silverstone into roughly 12 hours door to door [0KKYkQr1SBk @ 00:15:22]. '
+                              'Global Nomads took 2.5 hours to clear Melbourne on Saturday using the Crown '
+                              'shuttle plus an Uber, then on Sunday waited about an hour, faced a '
+                              '30-plus-minute tram queue, and saw Uber quote $78 before a re-request '
+                              'dropped it to about $35 on the Black tier [ePgxCdmE8o8 @ 00:29:57]. '
+                              'Katarina Mogus hit the same wall in Montreal, where overloaded Ubers pushed '
+                              'the run to the store onto a bike: 13 minutes versus a 45-minute walk '
+                              '[ouFzQnXDzjU @ 00:09:20]. Live The Dash dodged the problem in Shanghai by '
+                              'treating the metro as the fastest and cheapest route in and buying the '
+                              'return ticket ahead [emvC24ZLBWo @ 00:01:28]. For a broker, the exit plan '
+                              'is part of the product: a client who pays five figures for hospitality and '
+                              'then spends hours stranded after the flag remembers the queue, not the beef '
+                              'tenderloin or the Champagne bar.',
+                              "The second trap is paying for a tier that doesn't hold its shape on the "
+                              'day. Global Nomads were sold the Thursday Champions Club as top tier, same '
+                              'as a Paddock Club, then found upstairs had no seating, felt industrial and '
+                              "really wasn't top tier [ePgxCdmE8o8 @ 00:08:14]. Their Red Bull Pit Lane "
+                              'weekend was worse on the math: about $6,000 per person for a stand that '
+                              'opened at 9:30 when the track opened at 8:30, costing them a race, followed '
+                              'by Red Bull trying to clear the area as VIPs only and a scramble for one of '
+                              'roughly 40 seats [ePgxCdmE8o8 @ 00:31:34]. Kayvan Goes logged the same '
+                              'seating gap in the paddock club, plus no cocktails, entertainment limited '
+                              'to a simulator and hair and nails, and guests visibly sleeping, which is '
+                              'why they would pay €200 max and not 15,000 euros [2UDtC8EP8GA @ 00:30:21]. '
+                              'They also flagged that badges were never checked on entry, a leak that '
+                              'undercuts exactly what paying guests believe they are buying [2UDtC8EP8GA @ '
+                              '00:07:47]. The counter-tactic Global Nomads used was brute timing: queue 35 '
+                              'to 40 minutes before the stand opens, and arrive 45 minutes ahead of the '
+                              '8:30 gates on Sunday.',
+                              'Then come the leaks that quietly inflate the true cost per head. Global '
+                              'Nomads tallied a Ferrari fleece at A$220 with only 10% off on Amex, pins at '
+                              'A$20, a cap at A$40-50, water at A$6 and pizza around A$27, and said of the '
+                              'swag bag of cloth bag, cap and air freshener that they were not really sure '
+                              'it was worth it [ePgxCdmE8o8 @ 00:33:14]. Live The Dash priced the travel '
+                              'shell around Shanghai: a peak Beijing-Shanghai train at £250 per person and '
+                              'a hotel that will set you back about 400 pounds a night, with the track '
+                              'ride sold as an optional extra on top [emvC24ZLBWo @ 00:20:50]. Martin '
+                              'Bursatil watched the paddock run an art and watch sales section and '
+                              'countered the pressure with a 24-48-hour purchase rule before committing '
+                              'money in that environment [S5_EsejwubY @ 00:09:19]. On the resale side, '
+                              'John Allen warns that bad actors use bots while legitimate resellers sell '
+                              'below face to the tune of tens of millions a year, and that primaries using '
+                              'dynamic pricing slow-rolled the Taylor Swift sale [pugjl3jzpWU @ 00:32:58]. '
+                              'Run the full landed cost, including travel, merch, exits and add-ons, not '
+                              'just the ticket line, before quoting any client a premium package.'],
+               'table': {'caption': 'Firsthand failure modes with the economics check or fix each '
+                                    'practitioner reported',
+                         'headers': ['Failure Mode',
+                                     'What Happened Firsthand',
+                                     'Economics Check Or Fix',
+                                     'Expert Source'],
+                         'rows': [['Single-gate exit funnel after the McLaren Paddock Club',
+                                   'The exit funnelled through one gate and the day ran about 12 hours '
+                                   'door to door',
+                                   'Hosted guests used a fixed pickup point or chauffeur car instead of '
+                                   'improvising transport',
+                                   'LawVS ([0KKYkQr1SBk @ 00:15:22]); Emily Canham Vlogs ([UgpOwtQHKS4 @ '
+                                   '00:04:29])'],
+                                  ['Paid premium stand opened an hour after the track',
+                                   'Track opened at 8:30, the stand opened at 9:30, and a race was missed',
+                                   'Queue 35-40 minutes before the stand opens and arrive 45 minutes '
+                                   'before gates',
+                                   'Global Nomads ([ePgxCdmE8o8 @ 00:14:58]); Global Nomads ([ePgxCdmE8o8 '
+                                   '@ 00:14:39])'],
+                                  ['Seat scarcity inside a $6,000 per person ticket',
+                                   'Only about 40 seats existed and Red Bull tried clearing the area as '
+                                   'VIPs only',
+                                   'Judged not really good enough, and the verdict was they would not come '
+                                   'back',
+                                   'Global Nomads ([ePgxCdmE8o8 @ 00:25:19]); Global Nomads ([ePgxCdmE8o8 '
+                                   '@ 00:30:36])'],
+                                  ['Lower tier sold as equal to a Paddock Club',
+                                   'Champions Club upstairs had no seating, felt industrial, and really '
+                                   "wasn't top tier",
+                                   'At about $600 US it still delivered the best-organised pit walk with '
+                                   'fewest people',
+                                   'Global Nomads ([ePgxCdmE8o8 @ 00:08:14]); Global Nomads ([ePgxCdmE8o8 '
+                                   '@ 00:05:25])'],
+                                  ['Networking promise left entirely to chance on the floor',
+                                   'Networking scored 1 out of 10 and some guests were seen sleeping',
+                                   'Structured 12:00-2:00 team lunch, short driver appearance, and staff '
+                                   'making introductions',
+                                   'Kayvan Goes ([2UDtC8EP8GA @ 00:24:42]); Kayvan Goes ([2UDtC8EP8GA @ '
+                                   '00:22:44])'],
+                                  ['Unchecked badges dilute what paying guests actually bought',
+                                   'Badges were not checked on entry to the paddock club areas',
+                                   'The organizer would pay a €200 maximum rather than 15,000 euros for it',
+                                   'Kayvan Goes ([2UDtC8EP8GA @ 00:07:47]); Kayvan Goes ([2UDtC8EP8GA @ '
+                                   '00:30:21])'],
+                                  ['Rideshare collapse at peak race-weekend exit times',
+                                   'Uber quoted $78 on Saturday in Melbourne, and Montreal Ubers were '
+                                   'overloaded',
+                                   'Re-request dropped it to about $35, and a bike took 13 minutes versus '
+                                   '45 walking',
+                                   'Global Nomads ([ePgxCdmE8o8 @ 00:29:57]); Katarina Mogus ([ouFzQnXDzjU '
+                                   '@ 00:09:20])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Gate Before Quoting Any Ultra-Premium Hospitality Package',
+                           'body': 'Every one of these failures was hit firsthand by a paying or hosted '
+                                   "guest. Clear all four checks before a client's money moves.",
+                           'items': ['Map the exit before the entry: a one-gate funnel ran a Silverstone '
+                                     'McLaren hospitality day to about 12 hours door to door [LawVS — '
+                                     '0KKYkQr1SBk @ 00:15:22].',
+                                     'Confirm stand opening time against track opening time: an 8:30 track '
+                                     'with a 9:30 stand cost a race on a premium ticket [Global Nomads — '
+                                     'ePgxCdmE8o8 @ 00:14:58].',
+                                     'Verify the seat count behind the ticket: about $6,000 per person '
+                                     'bought a run at roughly 40 available seats [Global Nomads — '
+                                     'ePgxCdmE8o8 @ 00:31:34].',
+                                     'Do not sell networking as the product unless introductions are '
+                                     'staffed: left unassisted it scored 1 out of 10 [Kayvan Goes — '
+                                     '2UDtC8EP8GA @ 00:24:42].']}}],
+ 'pull_quote': '"Like I wouldn\'t pay 15,000 euros for this." — Kayvan Goes (2UDtC8EP8GA @ 00:30:21).',
+ 'diagram_id': 'diag-07',
+ 'action_checklist': ['Use Thursday as the low-cost entry point: if you go on the Thursday in Monaco you '
+                      'can have a free pit lane walk, with Japan and Bahrain testing as further free '
+                      'options [Live The Dash — emvC24ZLBWo @ 00:12:30].',
+                      'Arrive as early as possible to film and work the hospitality lounge before the '
+                      'chaos starts, then be ready when pit lane opens to ticket holders about 90 minutes '
+                      'before lights out [SOL - Supercars of London — rQvPQuH1YXw @ 00:01:20].',
+                      'Queue 35-40 minutes before a premium grandstand opens so clients land one of the '
+                      'limited seats instead of scrambling for them [Global Nomads — ePgxCdmE8o8 @ '
+                      '00:14:39].',
+                      'Position clients at the driver entrance, the best place to see drivers, and request '
+                      'the media pen at interview time [Live The Dash — emvC24ZLBWo @ 00:03:06].',
+                      'Apply a 24-48-hour purchase rule before committing money at in-paddock art and '
+                      'watch sales or upsells [Martin Bursatil — S5_EsejwubY @ 00:09:19].',
+                      'Package the value-add, not just the seat: VIP entrance, pre-event cocktail hour and '
+                      'photo op, sold together with travel in one transaction [Tickets To Travel Podcast — '
+                      'pugjl3jzpWU @ 00:08:35].'],
+ 'statutory_citations': [{'title': 'Kayvan Goes — Is the F1 Paddock Club Actually Worth It? [00:24:42]',
+                          'url': 'https://www.youtube.com/watch?v=2UDtC8EP8GA&t=1482s',
+                          'relevance': 'Primary practitioner testimony on a 10-category scorecard of the '
+                                       'Paddock Club, the 1/10 networking score, and the '
+                                       'structured-introduction fix.'},
+                         {'title': 'Global Nomads — Melbourne Grand Prix 2026 | Formula 1 Paddock Club v '
+                                   'Red Bull Pit Lane Review. Was it worth $6,000 [00:31:34]',
+                          'url': 'https://www.youtube.com/watch?v=ePgxCdmE8o8&t=1894s',
+                          'relevance': 'Primary practitioner testimony on $6,000 ticket seat scarcity, '
+                                       'late stand opening, exit logistics and on-site cost leaks.'},
+                         {'title': 'Tickets To Travel Podcast — Tickets To Travel Ep  10  Beyond the '
+                                   'Ticket  Merging Travel with VIP Event Experiences   A Conversa '
+                                   '[00:13:52]',
+                          'url': 'https://www.youtube.com/watch?v=pugjl3jzpWU&t=832s',
+                          'relevance': 'Primary practitioner testimony on one-transaction VIP packaging, '
+                                       'cross-border ticket arbitrage and reseller economics.'},
+                         {'title': 'Pit Stop Lab — The World’s Most Expensive Boardroom: F1 Paddock Club '
+                                   '[00:00:19]',
+                          'url': 'https://www.youtube.com/watch?v=qjr3BHunOxo&t=19s',
+                          'relevance': 'Primary practitioner testimony on company-paid guests, '
+                                       'sponsorship-bundled access and Paddock Club pricing.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': '6CYg2Av2xS4',
+                       'title': '[$14,000 Ticket] Inside the F1 Paddock Club | Singapore Grand Prix VIP '
+                                'Experience',
+                       'channel': 'Luxury Travel Professional',
+                       'author': 'Luxury Travel Professional',
+                       'text': 'No photos allowed in here, classified information.',
+                       'tip': 'No photos allowed in here, classified information.',
+                       'timestamp': 404,
+                       'timestamp_seconds': 404,
+                       'timestamp_label': '[00:06:44]',
+                       'url': 'https://www.youtube.com/watch?v=6CYg2Av2xS4&t=404s',
+                       'markdown': '[00:06:44](https://www.youtube.com/watch?v=6CYg2Av2xS4&t=404s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'S5_EsejwubY',
+                       'title': '¿Vale la pena pagar por el Paddock Club de Fórmula 1?',
+                       'channel': 'Martin Bursatil',
+                       'author': 'Martin Bursatil',
+                       'text': 'The Paddock can run up to 200,000 pesos.',
+                       'tip': 'The Paddock can run up to 200,000 pesos.',
+                       'timestamp': 216,
+                       'timestamp_seconds': 216,
+                       'timestamp_label': '[00:03:36]',
+                       'url': 'https://www.youtube.com/watch?v=S5_EsejwubY&t=216s',
+                       'markdown': '[00:03:36](https://www.youtube.com/watch?v=S5_EsejwubY&t=216s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'rQvPQuH1YXw',
+                       'title': 'INSIDE The Most Expensive Qatar F1 Tickets | Behind the Scenes!',
+                       'channel': 'SOL - Supercars of London',
+                       'author': 'SOL - Supercars of London',
+                       'text': 'The pit lane opens to ticket holders about 90 minutes before lights out.',
+                       'tip': 'The pit lane opens to ticket holders about 90 minutes before lights out.',
+                       'timestamp': 316,
+                       'timestamp_seconds': 316,
+                       'timestamp_label': '[00:05:16]',
+                       'url': 'https://www.youtube.com/watch?v=rQvPQuH1YXw&t=316s',
+                       'markdown': '[00:05:16](https://www.youtube.com/watch?v=rQvPQuH1YXw&t=316s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '2UDtC8EP8GA',
+                       'title': 'Is the F1 Paddock Club Actually Worth It?',
+                       'channel': 'Kayvan Goes',
+                       'author': 'Kayvan Goes',
+                       'text': 'So in the networking out of 10 I give one.',
+                       'tip': 'So in the networking out of 10 I give one.',
+                       'timestamp': 1482,
+                       'timestamp_seconds': 1482,
+                       'timestamp_label': '[00:24:42]',
+                       'url': 'https://www.youtube.com/watch?v=2UDtC8EP8GA&t=1482s',
+                       'markdown': '[00:24:42](https://www.youtube.com/watch?v=2UDtC8EP8GA&t=1482s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '2UDtC8EP8GA',
+                       'title': 'Is the F1 Paddock Club Actually Worth It?',
+                       'channel': 'Kayvan Goes',
+                       'author': 'Kayvan Goes',
+                       'text': "Like I wouldn't pay 15,000 euros for this.",
+                       'tip': "Like I wouldn't pay 15,000 euros for this.",
+                       'timestamp': 1821,
+                       'timestamp_seconds': 1821,
+                       'timestamp_label': '[00:30:21]',
+                       'url': 'https://www.youtube.com/watch?v=2UDtC8EP8GA&t=1821s',
+                       'markdown': '[00:30:21](https://www.youtube.com/watch?v=2UDtC8EP8GA&t=1821s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'fl-tIcZO3u4',
+                       'title': 'The VIP Experience | How It Works: F1 Hospitality 🤩',
+                       'channel': 'Mercedes-AMG PETRONAS F1 Team',
+                       'author': 'Mercedes-AMG PETRONAS F1 Team',
+                       'text': 'The demand was just too strong, so we needed another space.',
+                       'tip': 'The demand was just too strong, so we needed another space.',
+                       'timestamp': 260,
+                       'timestamp_seconds': 260,
+                       'timestamp_label': '[00:04:20]',
+                       'url': 'https://www.youtube.com/watch?v=fl-tIcZO3u4&t=260s',
+                       'markdown': '[00:04:20](https://www.youtube.com/watch?v=fl-tIcZO3u4&t=260s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'UgpOwtQHKS4',
+                       'title': 'Surprising my DAD with F1 PADDOCK CLUB tickets at Silverstone 😅 British '
+                                'Grand Prix 2023 🏎️',
+                       'channel': 'Emily Canham Vlogs',
+                       'author': 'Emily Canham Vlogs',
+                       'text': 'We have a garage tour to see the race cars about three hours before the '
+                               'race.',
+                       'tip': 'We have a garage tour to see the race cars about three hours before the '
+                              'race.',
+                       'timestamp': 345,
+                       'timestamp_seconds': 345,
+                       'timestamp_label': '[00:05:45]',
+                       'url': 'https://www.youtube.com/watch?v=UgpOwtQHKS4&t=345s',
+                       'markdown': '[00:05:45](https://www.youtube.com/watch?v=UgpOwtQHKS4&t=345s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'emvC24ZLBWo',
+                       'title': 'I Upgraded My F1 Ticket In China…',
+                       'channel': 'Live The Dash',
+                       'author': 'Live The Dash',
+                       'text': 'If you go on the Thursday, you can have a free pit lane walk.',
+                       'tip': 'If you go on the Thursday, you can have a free pit lane walk.',
+                       'timestamp': 750,
+                       'timestamp_seconds': 750,
+                       'timestamp_label': '[00:12:30]',
+                       'url': 'https://www.youtube.com/watch?v=emvC24ZLBWo&t=750s',
+                       'markdown': '[00:12:30](https://www.youtube.com/watch?v=emvC24ZLBWo&t=750s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ouFzQnXDzjU',
+                       'title': "I Got Ferrari's MOST Exclusive F1 Experience",
+                       'channel': 'Katarina Mogus',
+                       'author': 'Katarina Mogus',
+                       'text': 'We are doing the garage tour, and there is no filming allowed.',
+                       'tip': 'We are doing the garage tour, and there is no filming allowed.',
+                       'timestamp': 32,
+                       'timestamp_seconds': 32,
+                       'timestamp_label': '[00:00:32]',
+                       'url': 'https://www.youtube.com/watch?v=ouFzQnXDzjU&t=32s',
+                       'markdown': '[00:00:32](https://www.youtube.com/watch?v=ouFzQnXDzjU&t=32s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ePgxCdmE8o8',
+                       'title': 'Melbourne Grand Prix 2026 | Formula 1 Paddock Club v Red Bull Pit Lane '
+                                'Review. Was it worth $6,000',
+                       'channel': 'Global Nomads',
+                       'author': 'Global Nomads',
+                       'text': "It was a really good view, but I really don't think I should spend $6,000 "
+                               'on a ticket and have to run to try and get one of the 40 seats that are '
+                               'available.',
+                       'tip': "It was a really good view, but I really don't think I should spend $6,000 "
+                              'on a ticket and have to run to try and get one of the 40 seats that are '
+                              'available.',
+                       'timestamp': 1894,
+                       'timestamp_seconds': 1894,
+                       'timestamp_label': '[00:31:34]',
+                       'url': 'https://www.youtube.com/watch?v=ePgxCdmE8o8&t=1894s',
+                       'markdown': '[00:31:34](https://www.youtube.com/watch?v=ePgxCdmE8o8&t=1894s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ePgxCdmE8o8',
+                       'title': 'Melbourne Grand Prix 2026 | Formula 1 Paddock Club v Red Bull Pit Lane '
+                                'Review. Was it worth $6,000',
+                       'channel': 'Global Nomads',
+                       'author': 'Global Nomads',
+                       'text': "So, so the track opened at 8:30, but this stand didn't open until 9:30, "
+                               'which is really weird because there were races, I think we missed one race '
+                               "already because we couldn't get into the stand.",
+                       'tip': "So, so the track opened at 8:30, but this stand didn't open until 9:30, "
+                              'which is really weird because there were races, I think we missed one race '
+                              "already because we couldn't get into the stand.",
+                       'timestamp': 898,
+                       'timestamp_seconds': 898,
+                       'timestamp_label': '[00:14:58]',
+                       'url': 'https://www.youtube.com/watch?v=ePgxCdmE8o8&t=898s',
+                       'markdown': '[00:14:58](https://www.youtube.com/watch?v=ePgxCdmE8o8&t=898s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '0KKYkQr1SBk',
+                       'title': "I Spent A Day In F1's Most Expensive Hospitality",
+                       'channel': 'LawVS',
+                       'author': 'LawVS',
+                       'text': 'Suffice to say, you get a lot of swag.',
+                       'tip': 'Suffice to say, you get a lot of swag.',
+                       'timestamp': 622,
+                       'timestamp_seconds': 622,
+                       'timestamp_label': '[00:10:22]',
+                       'url': 'https://www.youtube.com/watch?v=0KKYkQr1SBk&t=622s',
+                       'markdown': '[00:10:22](https://www.youtube.com/watch?v=0KKYkQr1SBk&t=622s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'XhaS3MGZL-o',
+                       'title': "THE WORLD'S MOST EXPENSIVE F1 EXPERIENCE",
+                       'channel': 'Only Scrans',
+                       'author': 'Only Scrans',
+                       'text': 'It costs upwards of 2 Grand for a day ticket, and the more you pay the '
+                               'more access you get.',
+                       'tip': 'It costs upwards of 2 Grand for a day ticket, and the more you pay the more '
+                              'access you get.',
+                       'timestamp': 15,
+                       'timestamp_seconds': 15,
+                       'timestamp_label': '[00:00:15]',
+                       'url': 'https://www.youtube.com/watch?v=XhaS3MGZL-o&t=15s',
+                       'markdown': '[00:00:15](https://www.youtube.com/watch?v=XhaS3MGZL-o&t=15s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'vYgE480j7AA',
+                       'title': 'Inside Club Magnolia: The Masters’ secret experience with Atlanta ties',
+                       'channel': 'CBS Atlanta',
+                       'author': 'CBS Atlanta',
+                       'text': 'The club only opens seven days a year.',
+                       'tip': 'The club only opens seven days a year.',
+                       'timestamp': 68,
+                       'timestamp_seconds': 68,
+                       'timestamp_label': '[00:01:08]',
+                       'url': 'https://www.youtube.com/watch?v=vYgE480j7AA&t=68s',
+                       'markdown': '[00:01:08](https://www.youtube.com/watch?v=vYgE480j7AA&t=68s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'pugjl3jzpWU',
+                       'title': 'Tickets To Travel Ep  10  Beyond the Ticket  Merging Travel with VIP '
+                                'Event Experiences   A Conversa',
+                       'channel': 'Tickets To Travel Podcast',
+                       'author': 'Tickets To Travel Podcast',
+                       'text': 'Taylor Swift tickets were about $5,000 each in the US versus about $1,000 '
+                               'in Paris.',
+                       'tip': 'Taylor Swift tickets were about $5,000 each in the US versus about $1,000 '
+                              'in Paris.',
+                       'timestamp': 674,
+                       'timestamp_seconds': 674,
+                       'timestamp_label': '[00:11:14]',
+                       'url': 'https://www.youtube.com/watch?v=pugjl3jzpWU&t=674s',
+                       'markdown': '[00:11:14](https://www.youtube.com/watch?v=pugjl3jzpWU&t=674s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'FqfiHSncdow',
+                       'title': 'A REAL LOOK inside the F1 Paddock Club',
+                       'channel': 'DownieLive',
+                       'author': 'DownieLive',
+                       'text': 'The Paddock Club Suite is limited access, with sit-down dining.',
+                       'tip': 'The Paddock Club Suite is limited access, with sit-down dining.',
+                       'timestamp': 96,
+                       'timestamp_seconds': 96,
+                       'timestamp_label': '[00:01:36]',
+                       'url': 'https://www.youtube.com/watch?v=FqfiHSncdow&t=96s',
+                       'markdown': '[00:01:36](https://www.youtube.com/watch?v=FqfiHSncdow&t=96s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '-qouj-ME6Xw',
+                       'title': 'They Don’t Show You This Side of F1 Las Vegas | Inside Paddock Club',
+                       'channel': 'Phillip Riggs',
+                       'author': 'Phillip Riggs',
+                       'text': 'Team village happens at every single race.',
+                       'tip': 'Team village happens at every single race.',
+                       'timestamp': 132,
+                       'timestamp_seconds': 132,
+                       'timestamp_label': '[00:02:12]',
+                       'url': 'https://www.youtube.com/watch?v=-qouj-ME6Xw&t=132s',
+                       'markdown': '[00:02:12](https://www.youtube.com/watch?v=-qouj-ME6Xw&t=132s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'qjr3BHunOxo',
+                       'title': 'The World’s Most Expensive Boardroom: F1 Paddock Club',
+                       'channel': 'Pit Stop Lab',
+                       'author': 'Pit Stop Lab',
+                       'text': "Turns out the best place to close the deal isn't a meeting room.",
+                       'tip': "Turns out the best place to close the deal isn't a meeting room.",
+                       'timestamp': 114,
+                       'timestamp_seconds': 114,
+                       'timestamp_label': '[00:01:54]',
+                       'url': 'https://www.youtube.com/watch?v=qjr3BHunOxo&t=114s',
+                       'markdown': '[00:01:54](https://www.youtube.com/watch?v=qjr3BHunOxo&t=114s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q4.'}]}

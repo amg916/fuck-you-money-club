@@ -1,725 +1,554 @@
-from __future__ import annotations
+"""Volume 043 diagrams: Live-Event, Super Bowl & VIP Ticket Brokering."""
 
-VOLUME_043_SUBTITLE = (
-    "The Complete Playbook for Live-Event, Super Bowl & VIP Ticket Brokering: "
-    "$220,000–$1,800,000 USD in Annual Gross Billings, "
-    "a Core 1 FT + 2 C Pod (3 People), and Settlement-Disciplined Arbitrage"
+from typing import Any, Dict, List
+
+VOLUME_043_SUBTITLE: str = (
+    "Allotment Sourcing, 48-to-72-Hour Resale Timing, PSL Fee Math, Paddock Club "
+    "and Suite Hospitality, Ticketmaster and AXS Transfer Custody, BOTS Act Limits "
+    "and the 25% Margin Flipping Playbook"
 )
 
-VOLUME_043_POSITIONING_ALTERNATIVES = [
+
+def build_volume_043_diagrams_data() -> List[Dict[str, Any]]:
+    """Return the 8 structured diagram dicts for Volume 043."""
+    return [
+        {
+            "diagram_id": "diag-01-super-bowl-resale-timing-flow",
+            "chapter_number": 1,
+            "chart_type": "process_flow",
+            "title": "Reading the Super Bowl Resale Curve",
+            "subtitle": "From the conference-championship spike to a game-day exit plan",
+            "caption": (
+                "Five-step buying and exit sequence assembled from street brokers, "
+                "StubHub commentary and resale-timing segments."
+            ),
+            "assumptions_note": (
+                "All figures are attributed practitioner claims for specific Super Bowl "
+                "years; matchup, fan travel and leftover supply move the curve each season."
+            ),
+            "note": (
+                "Sources: N.F.L Podcast (Aj09Nv4kg04 @ 00:03:31), AP Archive "
+                "(NwYrOSq9-5Q @ 00:00:15; NxbqrXeuWTI @ 00:00:38), NBC10 Boston "
+                "(-GwKaOFdk_M @ 00:01:24), CBS Boston (hhJFZEqMUpQ @ 00:01:02 and 00:01:16)."
+            ),
+            "stages": [
+                {
+                    "step": "01",
+                    "label": "Let the conference-championship spike burn off",
+                    "value": "Step 1",
+                    "detail": (
+                        "Watch prices early, wait a few days to a week for the dip, and stay "
+                        "out of the final rush when desperation pushes prices back up "
+                        "(N.F.L Podcast)."
+                    ),
+                },
+                {
+                    "step": "02",
+                    "label": "Read the buyer-geography split",
+                    "value": "Step 2",
+                    "detail": (
+                        "A single traveling fan base, like the Philadelphia market, kept "
+                        "StubHub sales 30 to 40% ahead of the prior year (AP Archive)."
+                    ),
+                },
+                {
+                    "step": "03",
+                    "label": "Gauge leftover game-day supply",
+                    "value": "Step 3",
+                    "detail": (
+                        "StubHub said downward movement depends on how much inventory is "
+                        "left on game day (AP Archive)."
+                    ),
+                },
+                {
+                    "step": "04",
+                    "label": "Target the 48 to 72 hour buying window",
+                    "value": "Step 4",
+                    "detail": (
+                        "Prices dip leading up to the game, then pop on game day as "
+                        "last-minute purchases hit the market (NBC10 Boston)."
+                    ),
+                },
+                {
+                    "step": "05",
+                    "label": "Carry an exit plan or bundle a perk",
+                    "value": "Step 5",
+                    "detail": (
+                        "One broker ran a pop-up near NRG Stadium with a tailgate bash for "
+                        "buyers; another sat on a backpack of tickets as the average slid "
+                        "to just over $4,400 and the low hit $1,900 (CBS Boston)."
+                    ),
+                },
+            ],
+        },
+        {
+            "diagram_id": "diag-02-psl-resale-fee-funnel",
+            "chapter_number": 6,
+            "chart_type": "funnel",
+            "title": "Raiders PSL Resale Fee Funnel",
+            "subtitle": "How a $10,000 seat-license sale splits between buyer, seller and marketplace",
+            "caption": (
+                "A single $10,000 Raiders PSL transaction on the official marketplace, "
+                "from buyer all-in cost down to the per-side fee floor."
+            ),
+            "assumptions_note": (
+                "Fee structure is the Raiders' official marketplace FAQ as read by THE "
+                "MARKUP FILES; any outstanding PSL loan payoff comes out on top of the "
+                "seller net shown."
+            ),
+            "note": (
+                "Source: THE MARKUP FILES (rT4gQkoEVDI @ 00:12:53 and 00:13:14). Offer-route "
+                "context: TicketWire (M80btlo7xJc @ 00:01:48) reports $3,000 to $4,000 saved "
+                "by making a lowball offer instead of paying asking."
+            ),
+            "stages": [
+                {
+                    "label": "Buyer all-in cost",
+                    "value": 11200,
+                    "display": "$11,200",
+                    "conversion": "Starting point",
+                    "detail": "Negotiated price plus the 12% buyer fee.",
+                },
+                {
+                    "label": "Negotiated PSL price",
+                    "value": 10000,
+                    "display": "$10,000",
+                    "conversion": "12% buyer fee removed",
+                    "detail": "The headline sale price both sides agree on.",
+                },
+                {
+                    "label": "Seller net proceeds",
+                    "value": 8800,
+                    "display": "$8,800",
+                    "conversion": "12% seller fee removed",
+                    "detail": "Net before any outstanding loan payoff.",
+                },
+                {
+                    "label": "Combined marketplace fee take",
+                    "value": 2400,
+                    "display": "Almost $2,400",
+                    "conversion": "Both sides combined",
+                    "detail": "Total fees on a single $10,000 transaction.",
+                },
+                {
+                    "label": "Per-side fee floor",
+                    "value": 250,
+                    "display": "$250 minimum",
+                    "conversion": "Applies to small sales",
+                    "detail": "Minimum fee charged on each side of the trade.",
+                },
+            ],
+        },
+        {
+            "diagram_id": "diag-03-super-bowl-58-price-ladder-waterfall",
+            "chapter_number": 3,
+            "chart_type": "waterfall",
+            "title": "Super Bowl 58 Price Ladder",
+            "subtitle": "From a $12,000 secondary listing down to the recent-years minimum",
+            "caption": (
+                "Price steps at the record-priced Las Vegas Super Bowl, set against the "
+                "roughly $3,000 minimum of recent years that the game tripled."
+            ),
+            "assumptions_note": (
+                "Step sizes are the gaps between the price levels Rhonda Williams cited; "
+                "the cheapest band was quoted as a $5,000 to $7,000 range."
+            ),
+            "note": (
+                "Source: Rhonda Williams, Bloomberg Television (zXgujuB9yXw @ 00:01:31). "
+                "Suite context: GQ host Clay Skipper quoted $300,000 to $2.5 million "
+                "Super Bowl suites at Allegiant Stadium (nT-DpxVmqC0 @ 00:07:04)."
+            ),
+            "bars": [
+                {
+                    "label": "Top secondary listing",
+                    "value": 12000,
+                    "display": "$12,000",
+                    "kind": "total",
+                },
+                {
+                    "label": "Step down to game average",
+                    "value": 3000,
+                    "display": "Over $9,000 average",
+                    "kind": "deduction",
+                },
+                {
+                    "label": "Step down to cheapest band top",
+                    "value": 2000,
+                    "display": "$7,000 cheapest (upper)",
+                    "kind": "deduction",
+                },
+                {
+                    "label": "Step down to cheapest band floor",
+                    "value": 2000,
+                    "display": "$5,000 cheapest (lower)",
+                    "kind": "deduction",
+                },
+                {
+                    "label": "Step down to recent-years minimum",
+                    "value": 2000,
+                    "display": "Roughly $3,000",
+                    "kind": "deduction",
+                },
+                {
+                    "label": "Recent-years minimum",
+                    "value": 3000,
+                    "display": "Roughly $3,000",
+                    "kind": "result",
+                },
+            ],
+        },
+        {
+            "diagram_id": "diag-04-super-bowl-sourcing-price-bands",
+            "chapter_number": 2,
+            "chart_type": "horizontal_bars",
+            "title": "Super Bowl Seat Price Bands by Sourcing Path",
+            "subtitle": "Face value, broker cash offers, resale floors and listing ceilings",
+            "unit": "USD per ticket",
+            "caption": (
+                "Reported price bands from face value through the highest listings, "
+                "as described by brokers, TickPick coverage and allocation walkthroughs."
+            ),
+            "assumptions_note": (
+                "Face value is reachable only through season-holder raffles, roster "
+                "allotments, sponsors or contests; listing ceilings are asks, not completed sales."
+            ),
+            "note": (
+                "Sources: 24H SPORT (pAU7eEVgp1A @ 00:00:40, 00:01:17, 00:03:42), "
+                "thumbsuprun (O-Sq4DDGKAY @ 00:04:02 and 00:06:24)."
+            ),
+            "bars": [
+                {
+                    "label": "Face value seats",
+                    "min": 950,
+                    "max": 1250,
+                    "typical": 950,
+                    "display": "$950 face; players often hold $1,250 seats",
+                },
+                {
+                    "label": "Pre-game party cash offer",
+                    "min": 2500,
+                    "max": 2500,
+                    "typical": 2500,
+                    "display": "$2,500 cash from brokers",
+                },
+                {
+                    "label": "Buyer floor near game day",
+                    "min": 3200,
+                    "max": 3200,
+                    "typical": 3200,
+                    "display": "Buyers grab seats around $3,200",
+                },
+                {
+                    "label": "Reported resale floors",
+                    "min": 3500,
+                    "max": 4500,
+                    "typical": 4000,
+                    "display": "$3,500 to $4,500; about $4,000 on StubHub and TickPick",
+                },
+                {
+                    "label": "Listing ceilings",
+                    "min": 16000,
+                    "max": 30000,
+                    "typical": 16000,
+                    "display": "Up to $16,000 on Ticketmaster; up to $30,000 elsewhere",
+                },
+            ],
+        },
+        {
+            "diagram_id": "diag-05-marquee-event-buy-gates",
+            "chapter_number": 5,
+            "chart_type": "decision_tree",
+            "title": "Marquee Event Buy Gates",
+            "subtitle": "Masters, UFC, CFP and tennis purchase checks",
+            "caption": (
+                "Four gates separating Augusta's official-channel lockbox from the "
+                "resale and premium hospitality market around other marquee events."
+            ),
+            "assumptions_note": (
+                "Gate thresholds follow practitioner testimony; stated Masters ballot odds "
+                "range from under 1% to 3-5% depending on the source."
+            ),
+            "note": (
+                "Sources: Gameday Guides (LtTBm2wHjoE @ 00:01:03 and 00:01:59), WTHR "
+                "(OSa-CK_qebs @ 00:01:13 and 00:02:30), MMALeaked (2vauuB_YXFc @ 00:04:26), "
+                "Sports Travel Tom (iKAz6YJRTXI @ 00:01:43)."
+            ),
+            "nodes": [
+                {
+                    "gate": "G1",
+                    "question": (
+                        "If the event is the Masters, is the badge coming through the "
+                        "ballot with exactly one application per household?"
+                    ),
+                    "pass_next": "G2",
+                    "fail_action": (
+                        "Stop: Augusta voids tickets at the gate with RFID tracking and "
+                        "permanently revokes lifetime badges; duplicate household entries "
+                        "get both disqualified."
+                    ),
+                },
+                {
+                    "gate": "G2",
+                    "question": "Is the seller on a verified site, with proof of purchase kept?",
+                    "pass_next": "G3",
+                    "fail_action": "Refuse the deal and walk away from any seller who rushes you.",
+                },
+                {
+                    "gate": "G3",
+                    "question": "Is the price backed by completed sales rather than listed asks?",
+                    "pass_next": "G4",
+                    "fail_action": (
+                        "Wait: 9 times out of 10 prices come down closer to the event, and "
+                        "most high asks never sell."
+                    ),
+                },
+                {
+                    "gate": "G4",
+                    "question": "Has the sightline been checked before paying a premium?",
+                    "pass_next": "Buy",
+                    "fail_action": (
+                        "Skip the seat: a $470 last-section UFC ticket put a metal pillar "
+                        "between the buyer and the cage."
+                    ),
+                },
+            ],
+        },
+        {
+            "diagram_id": "diag-06-concert-pricing-desk-architecture",
+            "chapter_number": 11,
+            "chart_type": "org_architecture",
+            "title": "Concert Pricing Desk Architecture",
+            "subtitle": "Four controls around the gap between face value and market price",
+            "caption": (
+                "How a concert buying operation organizes around presale timing, "
+                "checkout verification, fee drag and face-value caps."
+            ),
+            "assumptions_note": (
+                "Headcount was not stated by any practitioner; the structure maps to "
+                "operator gates, not a staffing plan."
+            ),
+            "note": (
+                "Sources: thumbsuprun (TpXJCfuFf4o @ 00:06:35), Scott Cramer "
+                "(kFsH01UthzA @ 00:11:23 and 00:23:58), Why It Costs (tH7bLaJI6ZE @ 00:08:16), "
+                "Business Made Simple (VBp4zpS7F3o @ 00:09:17)."
+            ),
+            "center": {
+                "role": "Concert Pricing Desk",
+                "headcount": "Not stated by practitioners",
+                "focus": (
+                    "Run every deal on the all-in number: add every line, divide by face "
+                    "value, and compare totals across sites."
+                ),
+            },
+            "spokes": [
+                {
+                    "role": "Presale Entry",
+                    "type": "Access",
+                    "kpi": (
+                        "First presale wave entered before Official Platinum conversion "
+                        "or face-value increases."
+                    ),
+                },
+                {
+                    "role": "Checkout Price Verification",
+                    "type": "Control",
+                    "kpi": (
+                        "Final payment screen re-checked; a Shania Twain order at $227 each "
+                        "became $291 apiece, a 30% bump."
+                    ),
+                },
+                {
+                    "role": "Fee-Drag Underwriting",
+                    "type": "Risk",
+                    "kpi": (
+                        "Secondary fees averaged 31% of listed price in the GAO sample; "
+                        "weak demand can leave resale losses."
+                    ),
+                },
+                {
+                    "role": "Face-Value Cap Screening",
+                    "type": "Compliance",
+                    "kpi": (
+                        "Tours like Noah Kahan's allow resale only on Ticketmaster at base "
+                        "price, so the markup disappears."
+                    ),
+                },
+            ],
+        },
+        {
+            "diagram_id": "diag-07-f1-hospitality-tier-comparison",
+            "chapter_number": 4,
+            "chart_type": "stacked_comparison",
+            "title": "F1 Hospitality Tier Comparison",
+            "subtitle": "From a Melbourne Champions Club pass to drive-in Paddock tiers",
+            "total_range": "$600 Champions Club to EUR 25,000 drive-in tiers",
+            "caption": (
+                "Reported price points across F1 premium access, with the Paddock Club "
+                "sold as a sponsor-funded corporate room first and retail ticket second."
+            ),
+            "assumptions_note": (
+                "Currencies are mixed as reported (USD and EUR); Pit Stop Lab puts a "
+                "Paddock Club seat at up to $15,000 per race weekend."
+            ),
+            "note": (
+                "Sources: Pit Stop Lab (qjr3BHunOxo @ 00:00:00), Kayvan Goes "
+                "(2UDtC8EP8GA @ 00:21:38, 00:24:42, 00:30:21), Global Nomads "
+                "(ePgxCdmE8o8 @ 00:31:34), Live The Dash (emvC24ZLBWo @ 00:12:30)."
+            ),
+            "buckets": [
+                {
+                    "label": "Melbourne Champions Club",
+                    "low": 600,
+                    "high": 600,
+                    "notes": "Entry-level Melbourne hospitality at $600.",
+                },
+                {
+                    "label": "Melbourne Red Bull Pit Lane",
+                    "low": 6000,
+                    "high": 6000,
+                    "notes": "About $6,000 per person bought a run at roughly 40 available seats.",
+                },
+                {
+                    "label": "Paddock Club ticket",
+                    "low": 10000,
+                    "high": 20000,
+                    "notes": (
+                        "EUR 10,000 to EUR 20,000; about 30% of guests do not pay, and "
+                        "networking scored 1 out of 10 when unassisted."
+                    ),
+                },
+                {
+                    "label": "Drive-in tier",
+                    "low": 25000,
+                    "high": 25000,
+                    "notes": (
+                        "EUR 25,000 tier; Kayvan Goes said he would not pay EUR 15,000 and "
+                        "would pay EUR 200 at most."
+                    ),
+                },
+            ],
+        },
+        {
+            "diagram_id": "diag-08-reseller-four-week-roadmap",
+            "chapter_number": 12,
+            "chart_type": "timeline_roadmap",
+            "title": "Reseller Sourcing and Flipping Roadmap",
+            "subtitle": "Event selection, presale stacking, cart checks and sell-through tracking",
+            "caption": (
+                "A four-week ramp built on the flipper rule of buying where demand "
+                "outruns seats, screened against a 25% margin benchmark."
+            ),
+            "assumptions_note": (
+                "Every purchasing account must map to a real, provable person; methods "
+                "that beat a seller's purchase limit fall under the BOTS Act at over "
+                "$53,000 per violation (Hustle Audit, NOBp14Qcy_8 @ 00:06:47)."
+            ),
+            "note": (
+                "Sources: Ticket Flipping (JwHo6if-9Wo @ 00:09:05; hw92haJDs9Y @ 00:11:21; "
+                "NGFBVOXqxpA @ 00:04:09), Emmanuel Ak (RsyNgibgVJY @ 00:24:33; "
+                "ETQnblEeP94 @ 00:32:36), 850 Club Credit (p8CMjg4a_CI @ 00:04:17), "
+                "The Credit Nerd (JS9sO0Fx9A0 @ 00:02:23)."
+            ),
+            "weeks": [
+                {
+                    "week": "Week 1",
+                    "title": "Select events where demand outruns seats",
+                    "deliverable": (
+                        "Shortlist of small-venue, weekend and hometown shows screened with "
+                        "Spotify listeners and live inventory counts."
+                    ),
+                    "gate": "Each event clears a 25% per-ticket margin benchmark.",
+                },
+                {
+                    "week": "Week 2",
+                    "title": "Stack every presale",
+                    "deliverable": (
+                        "Amex, Citi Entertainment and Mastercard presale access mapped; one "
+                        "Amex presale turned $150 floor seats into about $390 resales."
+                    ),
+                    "gate": "Every presale available for the event has been checked.",
+                },
+                {
+                    "week": "Week 3",
+                    "title": "Run the cart check",
+                    "deliverable": (
+                        "StubHub compared while seats sit in the cart; Rush seats at about "
+                        "$300 listed near $570."
+                    ),
+                    "gate": "Resale spread confirmed before payment.",
+                },
+                {
+                    "week": "Week 4",
+                    "title": "Track sell-through and stay liquid",
+                    "deliverable": (
+                        "Remaining tickets divided by capacity daily, watching for held "
+                        "inventory that pushes a 500 count back to 700."
+                    ),
+                    "gate": (
+                        "Real daily downtrend, time to receive, list, sell and transfer, "
+                        "and no money tied up in dead stock."
+                    ),
+                },
+            ],
+        },
+    ]
+
+
+VOLUME_043_POSITIONING_ALTERNATIVES: List[Dict[str, Any]] = [
     {
-        "title": "The Synchronized Ticket Inventory Desk",
+        "title": "The Super Bowl Resale Desk",
         "subtitle": (
-            "Run authorized multi-exchange resale through SkyBox, Automatiq, or "
-            "Logitix while controlling replacement exposure and delayed settlement."
+            "Allocation math, face value versus resale, and the 48-to-72-hour buying window"
         ),
-        "audience": (
-            "One full-time inventory operator and two contractors managing "
-            "documented ticket rights across multiple secondary exchanges."
-        ),
+        "audience": "Ticket brokers and high-intent fans buying or selling Super Bowl seats",
         "research_basis": (
-            "15 U.S.C. §45c prohibits covered ticket-purchase security circumvention "
-            "and specified resale of tickets obtained through prohibited conduct. "
-            "16 CFR Part 464 supplies federal total-price requirements for "
-            "live-event tickets. These requirements support an inventory-control "
-            "positioning, rather than automated primary-market queue bypass."
+            "StubHub's average 25% commission, the $950 face value versus $4,950 cheapest "
+            "resale gap, the 48 to 72 hour sweet spot, the 58% one-week collapse and the "
+            "17.5 percent per-team allocation."
         ),
         "sources": [
-            "https://www.law.cornell.edu/uscode/text/15/45c",
-            "https://www.ecfr.gov/current/title-16/part-464",
+            "https://www.youtube.com/watch?v=RGn3Hcnvklg&t=146s",
+            "https://www.youtube.com/watch?v=C_QtPWHCo_U&t=118s",
+            "https://www.youtube.com/watch?v=-GwKaOFdk_M&t=84s",
+            "https://www.youtube.com/watch?v=jQCA_9sgdpM&t=52s",
+            "https://www.youtube.com/watch?v=O-Sq4DDGKAY&t=27s",
         ],
-        "validation_status": (
-            "Source-informed editorial positioning; not market-tested."
-        ),
+        "validation_status": "Grounded strictly in Vol. 043 YouTube practitioner transcripts.",
     },
     {
-        "title": "The Stadium Suite Seat-Splitting Desk",
-        "subtitle": (
-            "Turn expressly transferable suite capacity into individually priced "
-            "corporate seats without losing control of minimum commitments."
-        ),
-        "audience": (
-            "Small hospitality operators with venue relationships, written "
-            "seat-splitting permission, and enough liquidity to absorb empty seats."
-        ),
+        "title": "Premium Access Economics",
+        "subtitle": "Suites, Paddock Club rooms and seat licenses priced on fees and exits",
+        "audience": "Corporate hospitality buyers, PSL holders and premium-seat resellers",
         "research_basis": (
-            "New York Arts and Cultural Affairs Law Article 25 establishes "
-            "ticket-resale requirements, including licensing and pricing provisions. "
-            "16 CFR Part 464 informs live-event total-price presentation. Neither "
-            "source grants suite subdivision rights; the venue agreement must "
-            "expressly permit the proposed resale and access structure."
+            "$300,000 to $2.5 million Super Bowl suites, the 10% Allegiant PSL transaction "
+            "fee, Bills PSL gross proceeds of about $262 million, Paddock Club seats up to "
+            "$15,000 and a networking score of 1 out of 10."
         ),
         "sources": [
-            "https://www.nysenate.gov/legislation/laws/ACA/A25",
-            "https://www.ecfr.gov/current/title-16/part-464",
+            "https://www.youtube.com/watch?v=nT-DpxVmqC0&t=424s",
+            "https://www.youtube.com/watch?v=o_WpoJl9phM&t=259s",
+            "https://www.youtube.com/watch?v=rT4gQkoEVDI&t=100s",
+            "https://www.youtube.com/watch?v=qjr3BHunOxo&t=0s",
+            "https://www.youtube.com/watch?v=2UDtC8EP8GA&t=1482s",
         ],
-        "validation_status": (
-            "Source-informed editorial positioning; not market-tested."
-        ),
+        "validation_status": "Grounded strictly in Vol. 043 YouTube practitioner transcripts.",
     },
     {
-        "title": "The Tentpole Corporate Hospitality Desk",
-        "subtitle": (
-            "Build Super Bowl, World Cup, F1, Masters, and Final Four packages "
-            "around verified entitlements, milestone collections, and refund liquidity."
-        ),
-        "audience": (
-            "Corporate hospitality brokers sourcing authorized ticket allotments "
-            "and separately documented lounge, transport, and hosting services."
-        ),
+        "title": "Compliance-First Ticket Flipping",
+        "subtitle": "Margin screens, cart checks and transfer custody inside the BOTS Act line",
+        "audience": "Independent resellers scaling from side income to a full broker operation",
         "research_basis": (
-            "15 U.S.C. §45c constrains covered acquisition methods; 16 CFR Part 464 "
-            "addresses live-event ticket total-price presentation and fee "
-            "misrepresentations. Sponsor inventory requires contractual resale "
-            "permission, and an event name alone establishes no affiliation, "
-            "hospitality entitlement, or transfer authority."
+            "The 25% margin benchmark, the $300 cart versus $570 StubHub spread, Ticketmaster "
+            "transfer gating, and BOTS Act penalties above $53,000 per violation with the "
+            "show-me-the-human discovery test."
         ),
         "sources": [
-            "https://www.law.cornell.edu/uscode/text/15/45c",
-            "https://www.ecfr.gov/current/title-16/part-464",
-            "https://www.nysenate.gov/legislation/laws/ACA/A25",
+            "https://www.youtube.com/watch?v=NOBp14Qcy_8&t=407s",
+            "https://www.youtube.com/watch?v=BOIfCHick7o&t=145s",
+            "https://www.youtube.com/watch?v=JwHo6if-9Wo&t=545s",
+            "https://www.youtube.com/watch?v=RsyNgibgVJY&t=1473s",
+            "https://www.youtube.com/watch?v=MP1aH4hgG70&t=95s",
         ],
-        "validation_status": (
-            "Source-informed editorial positioning; not market-tested."
-        ),
+        "validation_status": "Grounded strictly in Vol. 043 YouTube practitioner transcripts.",
     },
 ]
-
-
-def build_volume_043_diagrams_data() -> list[dict]:
-    specs = [
-        (
-            "diag-01-controlled-ticket-workflow",
-            "process_flow",
-            "Acquire Rights, Lock Inventory, Collect Settled Cash",
-            "Three brokerage models share controls, not capital or payout profiles.",
-            1,
-            "operating_framework",
-            (
-                "The core pod is one full-time operator plus two contractors. "
-                "Multi-exchange resale, suite seat-splitting, and tentpole hospitality "
-                "must have separate inventory, obligation, and settlement ledgers. "
-                "This is event-rights brokerage, not wholesale electronics buying."
-            ),
-            (
-                "A confirmed sale does not release working capital. Track transfer "
-                "acceptance, event completion, refund exposure, and actual payout "
-                "before replenishing inventory."
-            ),
-            [
-                (
-                    "Verify acquisition rights",
-                    "Document source and permitted resale",
-                    1.0,
-                    (
-                        "Record seller identity, acquisition evidence, event, seat "
-                        "identifiers, transfer restrictions, and written authority. "
-                        "Apply 15 U.S.C. §45c; never bypass queues, purchase limits "
-                        "enforced by covered controls, or ticketing security measures."
-                    ),
-                ),
-                (
-                    "Separate deal structures",
-                    "Assign one of three ledgers",
-                    2.0,
-                    (
-                        "Exchange resale funds individual tickets before payout; "
-                        "suite splitting commits a suite minimum before seats sell; "
-                        "tentpole packages combine ticket allotments with distinct "
-                        "service deposits. Require venue subdivision permission and "
-                        "supplier-specific cancellation terms."
-                    ),
-                ),
-                (
-                    "Publish locked inventory",
-                    "One authoritative inventory record",
-                    3.0,
-                    (
-                        "Configure SkyBox, Automatiq, or Logitix for supported "
-                        "StubHub, Vivid Seats, SeatGeek, and TickPick connections. "
-                        "Test reservation propagation and automatic holds; suspend "
-                        "affected listings when acknowledgments lag. Never assume "
-                        "cross-exchange synchronization is inherently atomic."
-                    ),
-                ),
-                (
-                    "Transfer verified entitlements",
-                    "Reconcile ticket and service delivery",
-                    4.0,
-                    (
-                        "Capture accepted barcode transfers, named hospitality "
-                        "entitlements, suite access credentials, and B2B invoice "
-                        "matches. Price with mandatory charges included where "
-                        "required; preserve the buyer-facing offer and delivery trail."
-                    ),
-                ),
-                (
-                    "Release settled proceeds",
-                    "Reconcile event-level cash and profit",
-                    5.0,
-                    (
-                        "Match exchange statements and corporate receipts to each "
-                        "sale. Deduct acquisition, sell fees, markdown losses, "
-                        "clawback provisions, operating costs, and funding expense. "
-                        "Keep cash reserved until the applicable refund and "
-                        "post-event settlement obligations are covered."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-02-corporate-buyer-cohort",
-            "funnel",
-            "One Corporate Buyer Cohort, Five Nested Stages",
-            "Measure collected and settled business rather than proposal volume.",
-            6,
-            "illustrative_model",
-            (
-                "Illustrative cohort of 200 distinct corporate prospects followed "
-                "through their events and final settlement, not necessarily within "
-                "30 days. Every later stage is a subset of the preceding stage. "
-                "Counts are neither ticket quantities nor canonical revenue inputs."
-            ),
-            (
-                "Conditional conversion is 50%, 50%, 40%, then 60%; "
-                "12 settled accounts represent 6% of the original cohort."
-            ),
-            [
-                (
-                    "Screened corporate prospects",
-                    "200 distinct prospect accounts",
-                    200.0,
-                    (
-                        "Identify a named buyer, relevant event, plausible group "
-                        "size, and legitimate business contact route. Deduplicate "
-                        "accounts before counting outreach across multiple employees."
-                    ),
-                ),
-                (
-                    "Qualified event buyers",
-                    "100 accounts; 50% of prospects",
-                    100.0,
-                    (
-                        "Confirm spending authority, event dates, seat requirements, "
-                        "payment method, and procurement timing. Exclude accounts "
-                        "whose collection timetable cannot fund supplier commitments."
-                    ),
-                ),
-                (
-                    "Executable package offers",
-                    "50 accounts; 50% of qualified buyers",
-                    50.0,
-                    (
-                        "Issue inventory-backed offers with expiration times, "
-                        "mandatory charges, precise inclusions, transfer conditions, "
-                        "and cancellation terms. A speculative supplier inquiry "
-                        "does not qualify as an executable offer."
-                    ),
-                ),
-                (
-                    "Collected buyer deposits",
-                    "20 accounts; 40% of offers",
-                    20.0,
-                    (
-                        "Count cleared deposits tied to accepted contracts, not "
-                        "unsigned purchase orders. Record deposits as liabilities "
-                        "until performance supports revenue recognition; retain "
-                        "liquidity against refundable amounts."
-                    ),
-                ),
-                (
-                    "Fulfilled settled accounts",
-                    "12 accounts; 60% of depositors",
-                    12.0,
-                    (
-                        "Require completed delivery, reconciled supplier costs, "
-                        "cleared final payment, and documented residual exposure. "
-                        "The other eight depositors remain pending or are canceled; "
-                        "their deposits are not automatically earned profit."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-03-base-case-profit-bridge",
-            "waterfall",
-            "Base Case: $1,010,000 Gross to $191,900 Owner Profit",
-            "Six signed bars end at 19.0% gross margin and 47.5% retained margin.",
-            3,
-            "illustrative_model",
-            (
-                "Formula v2.0 fixes gross billings, retained_share=0.4, and owner "
-                "profit; the expense split below is an illustrative allocation "
-                "that reconciles exactly. Gross billings are not net-presented "
-                "operator revenue. Normalize fee-net exchange remittances back to "
-                "gross once, then deduct the sell fee once. Apply ASC 606 "
-                "principal-versus-agent analysis to actual contracts before choosing "
-                "financial-statement presentation; the scorecard uses 40% retained "
-                "revenue. Owner profit is after modeled operating costs and funding "
-                "expense, before owner-specific income taxes."
-            ),
-            (
-                "$1,010,000 - $606,000 - $80,800 - $40,400 - $20,200 - $70,700 "
-                "= $191,900. Retained revenue is $404,000; $191,900 / $404,000 "
-                "= 47.5%. Conservative: $220,000 gross, $88,000 retained, "
-                "$26,400 profit, 12% gross margin, 30% retained margin, "
-                "1 FT + 2 C. Base: $1,010,000 gross, $404,000 retained, "
-                "$191,900 profit, 19.0% gross margin, 47.5% retained margin, "
-                "1 FT + 2 C. Scaled: $1,800,000 gross, $720,000 retained, "
-                "$468,000 profit, 26% gross margin, 65% retained margin, "
-                "2 FT + 3 C. The sixth bar ends at profit; do not append "
-                "profit as another additive bar."
-            ),
-            [
-                (
-                    "Gross customer billings",
-                    "+$1,010,000 annual gross",
-                    1010000.0,
-                    (
-                        "Aggregate secondary ticket sales, suite-seat sales, and "
-                        "VIP package billings before the modeled acquisition and "
-                        "selling deductions. Exclude taxes collected for authorities "
-                        "and refundable customer deposits awaiting performance."
-                    ),
-                ),
-                (
-                    "Ticket and suite acquisition",
-                    "-$606,000; $404,000 retained",
-                    -606000.0,
-                    (
-                        "Deduct 60% of gross for face-value inventory and contracted "
-                        "ticket, suite, and package acquisition. The resulting 40% "
-                        "retained spread is $404,000, not the owner's profit."
-                    ),
-                ),
-                (
-                    "Exchange and collection fees",
-                    "-$80,800; $323,200 remaining",
-                    -80800.0,
-                    (
-                        "Model blended exchange sell fees and direct collection "
-                        "charges at 8% of gross. Match fee schedules to each rail; "
-                        "do not apply an exchange fee again to an already "
-                        "fee-net remittance."
-                    ),
-                ),
-                (
-                    "Unsold inventory and markdown loss",
-                    "-$40,400; $282,800 remaining",
-                    -40400.0,
-                    (
-                        "Charge 4% of gross for incremental unsold inventory "
-                        "write-offs and markdown variance against the acquisition "
-                        "baseline. Do not deduct a realized markdown twice when "
-                        "actual gross billings already include its price effect."
-                    ),
-                ),
-                (
-                    "Event disruption loss provision",
-                    "-$20,200; $262,600 remaining",
-                    -20200.0,
-                    (
-                        "Charge 2% of gross for expected postponement, cancellation, "
-                        "refund, and clawback losses net of supportable supplier "
-                        "recoveries. Maintain a separate cash liquidity reserve; "
-                        "moving cash into that reserve is not another expense."
-                    ),
-                ),
-                (
-                    "Operating and funding expense",
-                    "-$70,700; $191,900 owner profit",
-                    -70700.0,
-                    (
-                        "Allocate $64,700 to contractor compensation, POS services, "
-                        "administration, and other operating costs, plus $6,000 "
-                        "to inventory and delayed-payout funding expense. Combined "
-                        "monthly cost averages $5,891.67. Payout delay itself "
-                        "changes cash timing; its funding cost reduces profit."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-04-subniche-net-yield",
-            "horizontal_bars",
-            "Compare Fully Loaded Deal Yield by Sub-Niche",
-            "Five illustrative unit models use net profit divided by gross receipts.",
-            2,
-            "illustrative_model",
-            (
-                "These independent underwriting examples are not measured market "
-                "averages and do not determine the canonical scenario mix. Each "
-                "deducts acquisition, selling or collection fees, incremental "
-                "slippage, expected disruption loss, allocated operations, and "
-                "funding cost. Settlement intervals are planning assumptions, "
-                "not stated exchange policies."
-            ),
-            (
-                "A higher percentage spread can still consume more cash for longer. "
-                "Underwrite settlement dates, refund duties, and supplier deposits "
-                "alongside each net yield."
-            ),
-            [
-                (
-                    "Multi-exchange ticket resale",
-                    "17% net; $170 on $1,000",
-                    17.0,
-                    (
-                        "$1,000 gross less $600 acquisition, $100 exchange fees, "
-                        "$40 slippage, $20 disruption provision, $60 operations, "
-                        "and $10 funding leaves $170. Fund inventory upfront; "
-                        "stress-test payout seven days after event completion."
-                    ),
-                ),
-                (
-                    "Suite splitting with ACH",
-                    "19% net; $950 on $5,000",
-                    19.0,
-                    (
-                        "$5,000 gross less $3,000 suite allocation, $50 collection "
-                        "fees, $300 empty-seat slippage, $150 disruption provision, "
-                        "$500 operations, and $50 funding leaves $950. Suite "
-                        "minimums remain payable even when individual seats fail "
-                        "to sell; ACH collection does not remove refund duties."
-                    ),
-                ),
-                (
-                    "Tentpole hospitality with wire",
-                    "20% net; $2,000 on $10,000",
-                    20.0,
-                    (
-                        "$10,000 gross less $6,000 package acquisition, $100 "
-                        "collection fees, $500 slippage, $300 disruption provision, "
-                        "$900 operations, and $200 funding leaves $2,000. Apply "
-                        "to Super Bowl, World Cup, F1, or Final Four bundles "
-                        "only with documented rights; model a 90-day deposit cycle."
-                    ),
-                ),
-                (
-                    "NFL and NBA playoff strips",
-                    "7% net; $140 on $2,000",
-                    7.0,
-                    (
-                        "$2,000 gross less $1,200 acquisition, $200 exchange fees, "
-                        "$140 slippage, $60 disruption provision, $140 operations, "
-                        "and $20 funding leaves $140. Verify SSL and playoff-option "
-                        "transfer terms; elimination changes both inventory and "
-                        "refund obligations before post-event settlement."
-                    ),
-                ),
-                (
-                    "Masters hospitality with card",
-                    "16% net; $1,600 on $10,000",
-                    16.0,
-                    (
-                        "$10,000 gross less $6,000 acquisition, $200 collection "
-                        "fees, $700 slippage, $400 disruption provision, $900 "
-                        "operations, and $200 funding leaves $1,600. Verify each "
-                        "badge entitlement and hospitality component; model "
-                        "120-day supplier exposure and continuing card disputes."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-05-preflight-risk-decisions",
-            "decision_tree",
-            "Four Decisions Before Publishing an Offer",
-            "Any failed check stops the affected transaction until corrected.",
-            5,
-            "operating_framework",
-            (
-                "Apply requirements by event location, customer location, seller "
-                "activity, and contract. Federal rules do not replace state "
-                "licensing, venue restrictions, or exchange-specific obligations."
-            ),
-            (
-                "Document the answer and evidence for each branch. Strong demand "
-                "cannot cure defective acquisition rights, unlawful pricing, "
-                "unfunded refunds, or duplicate inventory."
-            ),
-            [
-                (
-                    "Acquisition and resale authority",
-                    "Pass with evidence; otherwise reject",
-                    1.0,
-                    (
-                        "Check 15 U.S.C. §45c acquisition restrictions and retain "
-                        "purchase provenance. Verify sponsor resale permission, "
-                        "suite subdivision rights, and event transfer conditions. "
-                        "Reject covered circumvention and inventory without "
-                        "supportable authority."
-                    ),
-                ),
-                (
-                    "Licensing and total price",
-                    "Pass after jurisdiction-specific checks",
-                    2.0,
-                    (
-                        "Apply relevant reseller licensing, including New York "
-                        "Arts and Cultural Affairs Law Article 25 when applicable. "
-                        "Under 16 CFR §§464.2–464.3, display required total pricing "
-                        "and avoid fee misrepresentations; account separately for "
-                        "permitted exclusions and required prepayment disclosures."
-                    ),
-                ),
-                (
-                    "Liquidity and disruption capacity",
-                    "Pass only with funded stress coverage",
-                    3.0,
-                    (
-                        "Model rainout, postponement, injury-driven markdown, and "
-                        "cancellation. Stress a 30-day payout extension and supplier "
-                        "refund arriving after customer reimbursement. If available "
-                        "cash cannot fund obligations, reduce position size or "
-                        "decline the purchase."
-                    ),
-                ),
-                (
-                    "Inventory lock and delivery",
-                    "Pass tested synchronization; otherwise pause",
-                    4.0,
-                    (
-                        "Test POS hold propagation, stale-feed alerts, transfer "
-                        "eligibility, and emergency delisting across active channels. "
-                        "Stress a replacement charge equal to 200% of sale value "
-                        "where contract terms support it; this is not a universal "
-                        "exchange penalty."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-06-core-and-scaled-pod",
-            "org_architecture",
-            "Three Core Seats, Two Capacity-Triggered Additions",
-            "Base economics use 1 FT + 2 C; scaled economics use 2 FT + 3 C.",
-            11,
-            "operating_framework",
-            (
-                "FT means full-time seat; C means contractor seat. The first three "
-                "roles form the core pod. Add the fourth and fifth only for the "
-                "five-person scaled configuration; do not attribute scaled output "
-                "to the unchanged three-person team."
-            ),
-            (
-                "Automation supports pricing, listing synchronization, barcode "
-                "transfer, and invoice matching. Named operators still own "
-                "exception handling and cash reconciliation."
-            ),
-            [
-                (
-                    "Owner and inventory principal",
-                    "Core full-time seat; cumulative one",
-                    1.0,
-                    (
-                        "Own acquisition limits, supplier rights, event exposure, "
-                        "dynamic drop-curve pricing, and playoff-probability inputs. "
-                        "Set position size from available settlement liquidity "
-                        "rather than headline inventory markups."
-                    ),
-                ),
-                (
-                    "POS and transfer operator",
-                    "Core contractor seat; cumulative two",
-                    2.0,
-                    (
-                        "Manage SkyBox, Automatiq, or Logitix exceptions, hold "
-                        "acknowledgments, barcode transfers, and emergency channel "
-                        "suspension. Reconcile sold inventory against delivery "
-                        "evidence before marking orders complete."
-                    ),
-                ),
-                (
-                    "Corporate sales coordinator",
-                    "Core contractor seat; cumulative three",
-                    3.0,
-                    (
-                        "Qualify corporate buyers, assemble documented package "
-                        "offers, collect authorized deposits, and reconcile B2B "
-                        "suite invoices. Keep promised access and hospitality "
-                        "services aligned with supplier entitlements."
-                    ),
-                ),
-                (
-                    "Settlement and event controller",
-                    "Scaled full-time seat; cumulative four",
-                    4.0,
-                    (
-                        "Own daily cash forecasting, exchange-statement matching, "
-                        "refund exposure, reserve sizing, and event-level profit "
-                        "close. Separate bank reconciliation from the operator "
-                        "initiating inventory purchases."
-                    ),
-                ),
-                (
-                    "Event fulfillment coordinator",
-                    "Scaled contractor seat; cumulative five",
-                    5.0,
-                    (
-                        "Handle event-day access exceptions, supplier confirmations, "
-                        "group manifests, and service-delivery evidence. Escalate "
-                        "missing entitlements before entry time instead of "
-                        "substituting undocumented benefits."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-07-startup-capital-allocation",
-            "stacked_comparison",
-            "Allocate $40,000 Without Spending the Refund Buffer",
-            "Four buckets fit the canonical $10,000–$50,000 startup envelope.",
-            4,
-            "illustrative_model",
-            (
-                "Numeric values are dollar allocations for one $40,000 launch "
-                "stack, totaling exactly $40,000. The 40%, 20%, 15%, and 25% "
-                "allocation also maps to $10,000 and $50,000 examples. Acquisition "
-                "cash and refundable deposits are not automatically expenses; "
-                "a cash reserve is not a second profit deduction."
-            ),
-            (
-                "A $10,000 launch should emphasize small, transferable positions. "
-                "Do not interpret the capital range as sufficient to warehouse "
-                "an entire premium suite or speculative tentpole allotment."
-            ),
-            [
-                (
-                    "Liquid resale inventory",
-                    "$16,000; 40% of startup capital",
-                    16000.0,
-                    (
-                        "Allocate $4,000 at a $10,000 launch or $20,000 at $50,000. "
-                        "Buy small positions with documented transferability and "
-                        "multiple demand outlets; cap correlated exposure to "
-                        "one team, venue, or event date."
-                    ),
-                ),
-                (
-                    "Suite and hospitality deposits",
-                    "$8,000; 20% of startup capital",
-                    8000.0,
-                    (
-                        "Allocate $2,000 at a $10,000 launch or $10,000 at $50,000. "
-                        "Fund only contract-sized deposits with understood balance "
-                        "dates and cancellation terms. Customer prepayment cannot "
-                        "justify an uncovered refundable obligation."
-                    ),
-                ),
-                (
-                    "Operating setup and runway",
-                    "$6,000; 15% of startup capital",
-                    6000.0,
-                    (
-                        "Allocate $1,500 at a $10,000 launch or $7,500 at $50,000. "
-                        "Budget applicable licensing, POS onboarding, bookkeeping, "
-                        "payment setup, and initial contractor coverage. Recurring "
-                        "spending must fit the $1,800–$11,000 monthly operating range."
-                    ),
-                ),
-                (
-                    "Settlement and refund liquidity",
-                    "$10,000; 25% of startup capital",
-                    10000.0,
-                    (
-                        "Allocate $2,500 at a $10,000 launch or $12,500 at $50,000. "
-                        "Hold liquid cash for delayed exchange payout, replacement "
-                        "tickets, and customer refunds ahead of supplier recoveries. "
-                        "Increase the buffer when correlated event exposure rises."
-                    ),
-                ),
-            ],
-        ),
-        (
-            "diag-08-thirty-day-launch-sprint",
-            "timeline_roadmap",
-            "Thirty Days to an Instrumented Brokerage Desk",
-            "Build execution readiness first; the first deal may take 1–3 months.",
-            12,
-            "operating_framework",
-            (
-                "Milestones describe implementation work rather than promised "
-                "sales. Use operator-owned accounts and authorized supplier "
-                "inventory. Do not fund positions that fail rights, liquidity, "
-                "pricing, or delivery checks."
-            ),
-            (
-                "By day 30, produce a rights file, tested inventory controls, "
-                "a priced offer set, and a cash-exposure report. Revenue and "
-                "owner profit follow completed, reconciled transactions."
-            ),
-            [
-                (
-                    "Days 1-7",
-                    "Map rights and settlement obligations",
-                    7.0,
-                    (
-                        "Choose one initial model, identify applicable reseller "
-                        "requirements, inspect supplier contracts, and document "
-                        "exchange payout terms. Build separate gross, retained "
-                        "revenue, expense, customer-deposit, and cash-reserve accounts."
-                    ),
-                ),
-                (
-                    "Days 8-14",
-                    "Test inventory and payment controls",
-                    14.0,
-                    (
-                        "Configure the selected POS and supported channels. Test "
-                        "holds, stale-feed alerts, authorized transfers, duplicate "
-                        "order handling, and invoice matching using permitted test "
-                        "procedures. Record observed latency and a manual delisting "
-                        "procedure for failed synchronization."
-                    ),
-                ),
-                (
-                    "Days 15-21",
-                    "Underwrite offers and qualify buyers",
-                    21.0,
-                    (
-                        "Price five small inventory-backed offers with acquisition, "
-                        "fees, markdown exposure, disruption provision, operations, "
-                        "and funding costs. Begin the corporate cohort ledger; "
-                        "collect deposits only against clear contracts and "
-                        "supportable delivery rights."
-                    ),
-                ),
-                (
-                    "Days 22-30",
-                    "Reconcile pilot or rehearse settlement",
-                    30.0,
-                    (
-                        "If a legitimate pilot sale occurs, reconcile payment, "
-                        "transfer, and expected payout without declaring premature "
-                        "profit. Otherwise rehearse a cancellation and 30-day "
-                        "settlement delay. Schedule the next 60 days around the "
-                        "canonical 1–3 month first-deal window."
-                    ),
-                ),
-            ],
-        ),
-    ]
-    return [
-        dict(
-            diagram_id=identifier,
-            chart_type=kind,
-            title=title,
-            subtitle=subtitle,
-            chapter_number=chapter,
-            epistemic_tag=tag,
-            assumptions_note=note,
-            caption=caption,
-            stages=[
-                dict(
-                    label=label,
-                    value=value,
-                    numeric_value=float(number),
-                    detail=detail,
-                )
-                for label, value, number, detail in stages
-            ],
-        )
-        for identifier, kind, title, subtitle, chapter, tag, note, caption, stages
-        in specs
-    ]

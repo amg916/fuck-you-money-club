@@ -1,687 +1,829 @@
 from __future__ import annotations
 
-CHAPTER_3 = {
-    "id": "Q3",
-    "chapter_id": "Q3",
-    "chapter_number": 3,
-    "question_number": 3,
-    "slug": "unit-economics-margin-waterfall-working-capital-float",
-    "question_prompt": "What are the real unit economics, gross-to-net margin deductions, scrub/reversal reserves, and working-capital float requirements for live-event, super bowl & vip ticket brokering?",
-    "kicker": "Q3 / THE BIG MONEY PLAYBOOKS",
-    "title": "Unit Economics, Margin Waterfall & Working-Capital Float",
-    "subtitle": "SkyBox Settlement Cohorts, Suite Seat-Splitting, Hospitality Deposits, ASC 606 Presentation, and BOTS Act Operating Boundaries",
-    "layout_template": "financial_breakdown",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #43, ranked #02 of 43 with a 95/100 Money-to-Manpower Score, "
-        "turns ticket distribution and hospitality assembly into a settlement-management "
-        "business. This chapter maps 12 operator plays across exchange resale, suite "
-        "seat-splitting, and tentpole corporate hospitality, then separates acquisition "
-        "cost, retained spread, operating deductions, and cash availability. Formula v2.0 "
-        "fixes annual owner profit at $26,400 Conservative, $191,900 Base, and $468,000 "
-        "Scaled. Those outcomes require $220,000, $1,010,000, and $1,800,000 of gross "
-        "volume respectively; the modeled 40% retained shares are $88,000, $404,000, "
-        "and $720,000. Cohort waterfalls expose exchange fees, inventory impairments, "
-        "reversal losses, contractor labor, acquisition CAC, and financing. Explicit "
-        "settlement calendars show why an apparently profitable Super Bowl position "
-        "can exhaust available liquidity before the exchange releases payment."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$220,000",
-            "context": "Annual gross volume; $88,000 modeled retained revenue at 40%.",
-            "note": "12% gross-basis net margin; 30% retained margin; $26,400 annual owner net profit; 1 FT + 2 C.",
-        },
-        {
-            "label": "Base",
-            "value": "$1,010,000",
-            "context": "Annual gross volume; $404,000 modeled retained revenue at 40%.",
-            "note": "19.0% gross-basis net margin; 47.5% retained margin; $191,900 annual owner net profit; 1 FT + 2 C.",
-        },
-        {
-            "label": "Scaled",
-            "value": "$1,800,000",
-            "context": "Annual gross volume; $720,000 modeled retained revenue at 40%.",
-            "note": "26% gross-basis net margin; 65% retained margin; $468,000 annual owner net profit; 2 FT + 3 C.",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Define the revenue denominator before buying the inventory",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Start every cohort with a documented revenue denominator, not the balance "
-                    "displayed in an exchange dashboard. Formula v2.0 supplies $220,000, "
-                    "$1,010,000, and $1,800,000 of annual gross volume and a 40% retained "
-                    "share after ticket or suite acquisition. This chapter normalizes that "
-                    "volume to seller-attributable billings before seller fees, excluding "
-                    "taxes collected for government and exchange buyer fees never earned by "
-                    "the broker. If an exchange statement reports only a net payout, add "
-                    "back its separately identified seller fee before using this waterfall; "
-                    "never subtract that fee twice. The resulting retained amounts are "
-                    "$88,000, $404,000, and $720,000. ASC 606 principal-versus-agent analysis "
-                    "still depends on control of the specified ticket or hospitality service "
-                    "before transfer. A 40% spreadsheet assumption does not establish agency "
-                    "or automatically determine reported revenue. Maintain the scorecard's "
-                    "retained-contribution view alongside the actual accounting presentation, "
-                    "with a reconciliation for supplier pass-throughs, recognized commissions, "
-                    "and customer liabilities. Do not call underlying event attendance spend, "
-                    "corporate travel budgets, or stadium hospitality GMV operator revenue. "
-                    "Allocate mixed packages to their distinct promised services and document "
-                    "when each obligation is satisfied. This prevents advance deposits from "
-                    "inflating both revenue and apparent purchasing capacity."
-                ),
-                (
-                    "Separate three businesses before combining their results. Exchange "
-                    "resale buys transferable ticket rights, carries mark-to-market inventory "
-                    "risk, and often waits until after the event for settlement. Suite "
-                    "seat-splitting commits to a block, then distributes permitted individual "
-                    "admissions while sharing catering, host, and minimum-spend obligations. "
-                    "Corporate hospitality assembles admissions and specified services under "
-                    "customer and supplier contracts with different cancellation clocks. "
-                    "For chapter mapping, the 12 operating lanes are multi-exchange drop-curve "
-                    "resale; NFL playoff-option strips; NBA playoff-option strips; regular-season "
-                    "suite splitting; playoff suite splitting; Super Bowl hospitality; World "
-                    "Cup hospitality; F1 hospitality; Masters hospitality; Final Four hospitality; "
-                    "authorized sponsor-allotment redistribution; and retained corporate ticket "
-                    "sourcing. These are the chapter's operating decomposition, not twelve "
-                    "identically funded inventory strategies. A $10,000 resale purchase may "
-                    "be entirely prepaid, a $10,000 suite may require staged deposits, and "
-                    "a $10,000 sourcing engagement may expose only a commission receivable "
-                    "if the customer contracts directly with suppliers. Authenticate allocation "
-                    "rights and redistribution permissions before assigning value to any "
-                    "sponsor offer. Require event-specific proof for claimed official hospitality "
-                    "status. For playoff strips, record which games exist conditionally, who "
-                    "receives refunds for unplayed games, and whether those refunds arrive "
-                    "before the next supplier payment."
-                ),
-                (
-                    "The required play, multi_exchange_pos_broadcast_drop_curve_arbitrage, "
-                    "uses supported, authorized SkyBox or Automatiq integrations, with Logitix "
-                    "as another evaluated POS option. Verify actual account and inventory "
-                    "eligibility for StubHub, Vivid Seats, SeatGeek, TickPick, GameTime, and "
-                    "Ticketmaster Resale rather than assuming universal connectivity. A "
-                    "Base-equivalent cohort of twenty fulfilled tickets billed at $505 each "
-                    "produces $10,100 gross and carries $6,060 of sold-ticket acquisition "
-                    "cost. Deduct $707 seller fees, $252.50 incremental inventory impairment, "
-                    "$151.50 expected reversal losses, $360 delivery labor, $180 acquisition "
-                    "CAC, $360 allocated overhead, and $110 financing to retain $1,919, "
-                    "or $95.95 per fulfilled ticket. The impairment allocation covers separate "
-                    "carried inventory losses, not a second charge for markdowns already "
-                    "embedded in the $505 realized price. Reprice against net realizable "
-                    "proceeds, considering fees and transfer deadlines rather than headline "
-                    "asks. Trigger an immediate internal hold when an order arrives and "
-                    "verify remote delisting acknowledgments. These controls reduce duplicate "
-                    "sales without eliminating race conditions. If synchronization fails, pause "
-                    "affected broadcasting, remove residual listings through authorized account "
-                    "interfaces, notify exchanges promptly, and resolve obligations through "
-                    "permitted equivalent replacements or the required cancellation process."
-                ),
-            ],
-            "table": {
-                "caption": "Seven Underwriting Records Separating the Twelve Operating Lanes",
-                "headers": [
-                    "Operating lane and commercial scope",
-                    "Revenue and acquisition measurement",
-                    "Capital and settlement exposure",
-                    "Required failure response and evidence",
-                ],
-                "rows": [
-                    [
-                        "Multi-exchange drop-curve resale through eligible authorized distribution channels.",
-                        "Twenty fulfilled tickets generate $10,100 before seller-fee deductions.",
-                        "$6,060 sold-ticket basis remains exposed until payout clears.",
-                        "Pause affected listings when delisting acknowledgments exceed tested latency.",
-                    ],
-                    [
-                        "NFL and NBA conditional playoff-option ticket strip positions.",
-                        "Attribute strip cost across executable games and refundable rights.",
-                        "Unplayed-game refunds can arrive after subsequent purchase obligations.",
-                        "Reprice surviving games and trace refunds to original purchasers.",
-                    ],
-                    [
-                        "Regular-season and playoff suite seat-splitting with documented permissions.",
-                        "Eighteen $500 admissions produce $9,000 against $6,000 suite cost.",
-                        "Suite deposits and catering commitments precede individual seat collections.",
-                        "Stop individual sales when the venue prohibits seat redistribution.",
-                    ],
-                    [
-                        "Super Bowl and World Cup contracted corporate hospitality.",
-                        "Four $5,000 packages yield $20,000 before supplier pass-through costs.",
-                        "Supplier deposits may precede customer acceptance and final payment.",
-                        "Replace failed components only within documented customer substitution rights.",
-                    ],
-                    [
-                        "F1, Masters, and Final Four event-specific hospitality programs.",
-                        "Price admission rights separately from transport and hosted services.",
-                        "Different suppliers impose different cancellation dates and payment schedules.",
-                        "Verify permitted transfer and access terms for every component.",
-                    ],
-                    [
-                        "Sponsor-allotment redistribution supported by explicit contractual resale authority.",
-                        "Recognize only the operator's contracted economics under documented control.",
-                        "Late allocation releases concentrate delivery work and replacement exposure.",
-                        "Reject unsupported allocations rather than financing promised future access.",
-                    ],
-                    [
-                        "Retained corporate sourcing where customers contract directly with suppliers.",
-                        "A $1,000 earned sourcing fee excludes client ticket spending.",
-                        "Commission receivables create collection exposure without owned ticket inventory.",
-                        "Suspend incremental sourcing when invoices breach agreed credit limits.",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Price the settlement terms as carefully as the seat",
-                "body": (
-                    "A small headline spread can outperform a larger spread when the "
-                    "first position settles sooner and carries enforceable delivery rights."
-                ),
-                "items": [
-                    "Maintain fee schedules by exchange account, inventory category, and contract version; calculate the channel's net bid before moving a listing.",
-                    "Record successful remote delisting acknowledgments, not merely outbound POS requests; quarantine inventory when acknowledgment latency exceeds the tested operating threshold.",
-                    "Deliver SafeTix inventory through issuer-supported transfer and wallet flows; copied rotating barcodes do not establish successful delivery.",
-                    "For playoff strips, maintain a game-by-game refund calendar and use only cleared refunds, rather than expected refunds, to replenish purchasing capacity.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Reconcile every dollar from gross volume to owner profit",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "The annual waterfall below preserves every canonical Formula v2.0 "
-                    "endpoint. Its intermediate expense allocations are explicit underwriting "
-                    "assumptions, not additional outputs supplied by the scorecard engine. "
-                    "Acquisition consumes 60% of gross volume in each case. Remaining "
-                    "deductions total $61,600 Conservative, $212,100 Base, and $252,000 "
-                    "Scaled, leaving exactly $26,400, $191,900, and $468,000 of owner "
-                    "profit. Gross-basis margins are 12%, 19.0%, and 26%; dividing the "
-                    "same profits by retained revenue produces 30%, 47.5%, and 65%. "
-                    "Weighted seller fees decline from 8% to 7% to 4% because the "
-                    "illustrative mix shifts toward direct suite and hospitality contracts; "
-                    "these are portfolio assumptions, not advertised marketplace rates. "
-                    "The Scaled case requires evidence for that mix change before adoption. "
-                    "Inventory impairment is 3%, 2.5%, and 1% of gross volume; reversal "
-                    "expense is 2%, 1.5%, and 0.5%. Smaller loss ratios require better "
-                    "contract matching and underwriting, not simply more listings. Actual "
-                    "ledger results must replace these allocations monthly while preserving "
-                    "the distinction between original underwriting, revised forecast, and "
-                    "realized economics. Any variance becomes a named bridge item rather "
-                    "than an unexplained adjustment to retained share."
-                ),
-                (
-                    "Labor must include the work that automated broadcasting cannot finish: "
-                    "supplier verification, exception handling, customer coordination, transfer "
-                    "chasing, invoice reconciliation, and event-day escalation. Conservative "
-                    "delivery labor assigns $12,000 across two contractors; Base assigns "
-                    "$36,000 across two contractors. Scaled assigns $30,000 across three "
-                    "contractors plus $54,000 of fully loaded nonowner employee expense, "
-                    "totaling $84,000. Those are annual budgets requiring role-specific "
-                    "hours and local pay validation, not asserted market wage schedules. "
-                    "The owner supplies the remaining full-time role in each case, so "
-                    "owner profit includes compensation for their work rather than profit "
-                    "after a separate owner replacement salary. Team counts therefore "
-                    "remain 1 FT + 2 C, 1 FT + 2 C, and 2 FT + 3 C. "
-                    "Acquisition CAC means customer acquisition expenditure, separate from "
-                    "ticket acquisition: outreach, paid lead generation, referral costs, and "
-                    "sales effort purchased externally. Combine delivery labor, CAC, and "
-                    "fixed overhead to obtain monthly operating budgets of $2,500, $7,500, "
-                    "and $11,000. Exchange fees, loss provisions, and financing remain "
-                    "separate variable or capital costs. Never describe that monthly operating "
-                    "budget as the entire cash requirement for running the brokerage."
-                ),
-                (
-                    "Use product-level waterfalls to test whether the annual blend is "
-                    "credible. A suite costs $6,000 for twenty permitted admissions. Selling "
-                    "eighteen at $500 generates $9,000; the two empty seats already reduce "
-                    "billings from the $10,000 sellout plan. Deduct $180 collection fees, "
-                    "$180 reversal provision, $450 fulfillment labor, $150 CAC, $300 "
-                    "overhead, and $200 financing, leaving $1,540. Do not subtract another "
-                    "$1,000 for those empty seats. Selling only seventeen seats reduces "
-                    "profit to $1,060 when fees and reversal provision remain 2% each "
-                    "and other costs stay fixed. A fully sold hospitality cohort of four "
-                    "$5,000 packages has $12,000 supplier cost, $400 collection fees, "
-                    "$600 expected reversal expense, $1,200 delivery labor, $600 CAC, "
-                    "$500 overhead, and $500 financing, leaving $4,200. Its 21% margin "
-                    "does not establish the portfolio's 26% Scaled margin; other cohorts "
-                    "must supply the difference. For either product, document access, hosting, "
-                    "transport, and catering obligations independently. Customer deposits remain "
-                    "liabilities until the relevant performance occurs. An unused refundable "
-                    "supplier deposit remains an asset until recovered or impaired, not an "
-                    "instant expense or a second source of earned spread."
-                ),
-            ],
-            "table": {
-                "caption": "Formula v2.0 Annual Gross-to-Net Bridge with Explicit Expense Allocations",
-                "headers": [
-                    "Waterfall line and accounting treatment",
-                    "Conservative annual case and allocation",
-                    "Base annual case and allocation",
-                    "Scaled annual case and allocation",
-                ],
-                "rows": [
-                    [
-                        "Gross seller-attributable volume before separately deducted selling expenses.",
-                        "$220,000 gross volume establishes the annual underwriting denominator.",
-                        "$1,010,000 gross volume establishes the annual underwriting denominator.",
-                        "$1,800,000 gross volume establishes the annual underwriting denominator.",
-                    ],
-                    [
-                        "Subtract acquisition basis allocated to sold tickets and services.",
-                        "$132,000 acquisition basis consumes 60% of gross volume.",
-                        "$606,000 acquisition basis consumes 60% of gross volume.",
-                        "$1,080,000 acquisition basis consumes 60% of gross volume.",
-                    ],
-                    [
-                        "Retained contribution subtotal before operating deductions and loss provisions.",
-                        "$88,000 retained contribution equals the required 40% share.",
-                        "$404,000 retained contribution equals the required 40% share.",
-                        "$720,000 retained contribution equals the required 40% share.",
-                    ],
-                    [
-                        "Subtract weighted seller fees and direct payment collection expenses.",
-                        "$17,600 expense assumes an 8% blended collection burden.",
-                        "$70,700 expense assumes a 7% blended collection burden.",
-                        "$72,000 expense assumes a 4% blended collection burden.",
-                    ],
-                    [
-                        "Subtract incremental unsold inventory impairments outside realized selling prices.",
-                        "$6,600 expense reserves 3% for incremental inventory losses.",
-                        "$25,250 expense reserves 2.5% for incremental inventory losses.",
-                        "$18,000 expense reserves 1% for incremental inventory losses.",
-                    ],
-                    [
-                        "Subtract expected unrecovered cancellation, scrub, replacement, and reversal losses.",
-                        "$4,400 provision allocates 2% to expected unrecovered losses.",
-                        "$15,150 provision allocates 1.5% to expected unrecovered losses.",
-                        "$9,000 provision allocates 0.5% to expected unrecovered losses.",
-                    ],
-                    [
-                        "Subtract contractor delivery labor and nonowner employee employment costs.",
-                        "$12,000 delivery budget supports the two contractor roles.",
-                        "$36,000 delivery budget supports the two contractor roles.",
-                        "$84,000 includes $30,000 contractors and $54,000 loaded employment.",
-                    ],
-                    [
-                        "Subtract customer acquisition expenditure without duplicating ticket acquisition basis.",
-                        "$6,000 customer acquisition budget supports measured referral and outreach.",
-                        "$18,000 customer acquisition budget supports measured referral and outreach.",
-                        "$12,000 customer acquisition budget assumes repeat contracted customer demand.",
-                    ],
-                    [
-                        "Subtract fixed software, insurance, accounting, and administrative operating expenses.",
-                        "$12,000 fixed expense requires a $1,000 monthly budget.",
-                        "$36,000 fixed expense requires a $3,000 monthly budget.",
-                        "$36,000 fixed expense requires a $3,000 monthly budget.",
-                    ],
-                    [
-                        "Subtract financing expense while retaining debt principal on balance sheet.",
-                        "$3,000 financing expense implies $25,000 average borrowing at 12%.",
-                        "$11,000 financing expense implies approximately $91,667 average borrowing at 12%.",
-                        "$21,000 financing expense implies $175,000 average borrowing at 12%.",
-                    ],
-                    [
-                        "Owner profit after all listed deductions and before personal taxes.",
-                        "$26,400 owner profit equals 12% gross and 30% retained.",
-                        "$191,900 owner profit equals 19.0% gross and 47.5% retained.",
-                        "$468,000 owner profit equals 26% gross and 65% retained.",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "3. Reserve for failed economics, then stress the assumptions",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Maintain separate loss and liquidity ledgers. Expected economic losses "
-                    "reduce profit; a cash reserve or processor hold restricts availability "
-                    "without automatically creating another expense. Build a reversal register "
-                    "for canceled events, postponed events, invalid inventory, rejected delivery, "
-                    "customer disputes, and duplicate-sale replacements. For each exposure, "
-                    "record gross refund liability, expected supplier recovery, unrecoverable "
-                    "fees, replacement cost, and the timing of each movement. A $5,000 "
-                    "customer refund with a collectible $4,000 supplier reimbursement creates "
-                    "$1,000 expected economic loss before incremental expenses, but may "
-                    "require the full $5,000 immediately. A postponement can extend the "
-                    "payout lock without producing a refund entitlement; apply the actual "
-                    "customer and marketplace terms. For cohort forecasting, estimate loss "
-                    "probability multiplied by net loss severity, then add concentration "
-                    "stress for correlated event failures. Reconcile provisions to actual "
-                    "charges and recoveries, releasing excess amounts only when the "
-                    "underlying uncertainty resolves. In financial reporting, classify each "
-                    "item according to its substance rather than treating every forecast "
-                    "allowance as an interchangeable reserve. Never count both a reduced "
-                    "selling price and a separate markdown expense for the same seat. "
-                    "Likewise, track supplier recovery rights without assuming disputed "
-                    "receivables are usable cash."
-                ),
-                (
-                    "Validate any claimed 200% double-sale replacement penalty against the "
-                    "applicable exchange agreement, including its calculation basis, alternatives, "
-                    "caps, and additional charges. If a contract actually permits a charge "
-                    "equal to 200% of a $500 sale price, the stated charge is $1,000; "
-                    "that is not proof that every duplicate costs $1,000 or that the "
-                    "charge includes every other liability. Ten such charges would consume "
-                    "$10,000 before any separately payable refunds or sourcing costs. "
-                    "Retain order timestamps, POS hold timestamps, listing identifiers, "
-                    "delisting responses, and issuer transfer acceptance records so the "
-                    "operator can reconstruct the failure without speculation. Under "
-                    "15 U.S.C. §45c, do not circumvent purchase limits or ticketing security "
-                    "measures; automated distribution of legitimately acquired inventory "
-                    "is operationally different from prohibited acquisition circumvention. "
-                    "SafeTix fulfillment must follow issuer-supported transfer and wallet "
-                    "flows rather than copied rotating barcodes. Apply 16 CFR Part 464 "
-                    "to covered live-event ticket offers, including required upfront total "
-                    "pricing and accurate fee representations. Check New York Arts and "
-                    "Cultural Affairs Law Article 25 for applicable reseller obligations. "
-                    "These requirements belong in cost and delivery design because a "
-                    "nontransferable allocation or incorrectly quoted price can erase an "
-                    "otherwise attractive modeled spread."
-                ),
-                (
-                    "Run sensitivities against all three canonical cases using the same "
-                    "denominator and clearly stated cost behavior. A two-percentage-point "
-                    "increase in seller fees removes $4,400, $20,200, and $36,000 of "
-                    "profit respectively. An additional three points of incremental inventory "
-                    "loss removes $6,600, $30,300, and $54,000. Raising reversal losses "
-                    "one point removes another $2,200, $10,100, and $18,000. Applying "
-                    "all three stresses together leaves $13,200, $131,300, and $360,000, "
-                    "before any additional settlement financing. A ten-day persistent "
-                    "extension in the inventory funding cycle requires approximately "
-                    "$3,616, $16,603, and $29,589 more average capital when measured "
-                    "against annual sold-ticket acquisition cost. At a 12% annual borrowing "
-                    "rate, that adds approximately $434, $1,992, and $3,551 of annual "
-                    "interest. This interest is an incremental stress, not a replacement "
-                    "for the existing financing line. Test revenue contraction separately: "
-                    "if volume falls 10%, acquisition and seller fees flex proportionally "
-                    "while all other budget lines stay fixed, resulting profits are "
-                    "$19,360, $158,570, and $403,200. Finally, run event-specific cliff "
-                    "tests; a portfolio average cannot represent losing the only hospitality "
-                    "allocation that supports several prepaid corporate orders."
-                ),
-            ],
-            "table": {
-                "caption": "Seven Sensitivity Tests Applied to the Canonical Annual Profit Cases",
-                "headers": [
-                    "Stress definition and cost behavior",
-                    "Conservative resulting annual owner profit",
-                    "Base resulting annual owner profit",
-                    "Scaled resulting annual owner profit",
-                ],
-                "rows": [
-                    [
-                        "Seller-fee burden increases by two percentage points of gross.",
-                        "$22,000 remains after deducting $4,400 additional seller fees.",
-                        "$171,700 remains after deducting $20,200 additional seller fees.",
-                        "$432,000 remains after deducting $36,000 additional seller fees.",
-                    ],
-                    [
-                        "Incremental inventory loss increases by three points of gross.",
-                        "$19,800 remains after deducting $6,600 additional inventory losses.",
-                        "$161,600 remains after deducting $30,300 additional inventory losses.",
-                        "$414,000 remains after deducting $54,000 additional inventory losses.",
-                    ],
-                    [
-                        "Unrecovered reversal losses increase by one point of gross.",
-                        "$24,200 remains after deducting $2,200 additional reversal losses.",
-                        "$181,800 remains after deducting $10,100 additional reversal losses.",
-                        "$450,000 remains after deducting $18,000 additional reversal losses.",
-                    ],
-                    [
-                        "Combine fee, inventory, and reversal stresses without interaction effects.",
-                        "$13,200 remains after the combined $13,200 incremental deduction.",
-                        "$131,300 remains after the combined $60,600 incremental deduction.",
-                        "$360,000 remains after the combined $108,000 incremental deduction.",
-                    ],
-                    [
-                        "Persistent ten-day acquisition funding extension financed at 12% annually.",
-                        "$25,966 approximately remains after $434 incremental annual interest.",
-                        "$189,908 approximately remains after $1,992 incremental annual interest.",
-                        "$464,449 approximately remains after $3,551 incremental annual interest.",
-                    ],
-                    [
-                        "Borrowing rate rises three points on baseline average balances.",
-                        "$25,650 remains after $750 interest on $25,000 borrowing.",
-                        "$189,150 remains after approximately $2,750 additional borrowing expense.",
-                        "$462,750 remains after $5,250 interest on $175,000 borrowing.",
-                    ],
-                    [
-                        "Gross volume contracts 10%; only acquisition and seller fees flex.",
-                        "$19,360 remains after losing $7,040 of net contribution.",
-                        "$158,570 remains after losing $33,330 of net contribution.",
-                        "$403,200 remains after losing $64,800 of net contribution.",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four checks before committing the next event cohort",
-                "body": (
-                    "Authorize the purchase only when rights, delivery, downside economics, "
-                    "and available liquidity are evidenced at the inventory-lot level."
-                ),
-                "items": [
-                    "Verify seller identity, transferable admission rights, suite splitting permission, purchase-limit adherence, and any required reseller licensing before wiring supplier funds.",
-                    "Test the actual POS channel connection, internal auto-hold, remote delisting acknowledgment, and issuer-supported transfer path for the inventory type being purchased.",
-                    "Reconcile realized-price assumptions, seller fees, incremental inventory losses, reversal provisions, labor, CAC, overhead, and interest to a positive stressed contribution.",
-                    "Show sufficient unrestricted cash and committed borrowing for peak supplier payments, customer refund exposure, payout holds, and a documented postponement scenario.",
-                ],
-            },
-        },
-        {
-            "heading": "4. Fund the payout lock without confusing profit with cash",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Build a dated cash calendar for every inventory lot and consolidate "
-                    "it into a rolling thirteen-week forecast. Record supplier deposit, "
-                    "supplier balance, customer order, customer collection, event date, "
-                    "transfer deadline, exchange release, bank availability, and possible "
-                    "refund dates. These dates answer different questions. Customer DSO "
-                    "measures collection after the relevant invoice or receivable trigger; "
-                    "a marketplace's post-event payout lock is an additional contractual "
-                    "restriction and should remain separately visible. Buying at day minus "
-                    "sixty and receiving cleared payout at day plus ten creates seventy "
-                    "days of inventory funding even if the customer ordered immediately. "
-                    "Financing $6,060 for seventy days at 12% costs $139.46 using a "
-                    "365-day year. That exceeds the earlier cohort's $110 allocated "
-                    "financing by $29.46 and reduces its $1,919 profit to $1,889.54 "
-                    "if all other lines remain unchanged. The comparison illustrates why "
-                    "portfolio financing allocations must be reconciled to actual cohort "
-                    "duration. Enter bank-clearing time and business-day release rules "
-                    "explicitly rather than calling every promised payout date available "
-                    "cash. For postponed events, extend the inventory lock and recalculate "
-                    "interest before initiating another buying cycle, even when the "
-                    "original ticket remains valid."
-                ),
-                (
-                    "A useful first approximation for steady-state acquisition float is "
-                    "annual acquisition cash cost multiplied by funded days and divided "
-                    "by 365, adjusted for supplier credit and genuinely usable customer "
-                    "collections. At seventy funded days, the Base sold-ticket basis of "
-                    "$606,000 implies $116,219 of acquisition float before unsold inventory, "
-                    "payroll, loss coverage, or seasonal concentration. This is a planning "
-                    "approximation, not the peak cash forecast. The $10,000–$50,000 startup "
-                    "capital range can support a narrow initial book, particularly with "
-                    "short settlement cycles or properly matched customer deposits; it "
-                    "does not finance unrestricted ownership of the Base or Scaled "
-                    "inventory portfolio. Baseline annual interest assumes average funded "
-                    "borrowings of $25,000, approximately $91,667, and $175,000 at 12%. "
-                    "Equity, supplier terms, and permissible customer funding must cover "
-                    "the rest, while committed facilities must accommodate seasonal peaks "
-                    "above those averages. A bank line advertised at $150,000 is not "
-                    "fully available if borrowing-base exclusions or existing draws consume "
-                    "capacity. Keep restricted processor balances, disputed receivables, "
-                    "and refundable customer money out of unrestricted liquidity. Calculate "
-                    "minimum required cash from the worst cumulative dated deficit plus "
-                    "the selected refund shock buffer, not from a percentage of annual profit."
-                ),
-                (
-                    "Corporate hospitality can shorten cash gaps only when customer and "
-                    "supplier contracts actually align. On the $20,000 package cohort, "
-                    "an illustrative 50% customer deposit collects $10,000 while a 50% "
-                    "supplier deposit consumes $6,000. The apparent $4,000 surplus remains "
-                    "subject to performance and refund obligations. If the remaining "
-                    "$6,000 supplier balance is due before the final $10,000 customer "
-                    "collection, the cohort reaches a $2,000 acquisition deficit before "
-                    "labor, overhead, and risk coverage. If the customer instead pays "
-                    "thirty days after the event, that receivable persists beyond delivery. "
-                    "Do not finance unrelated events with refundable deposits while "
-                    "ignoring the corresponding refund claim. Set exposure limits by "
-                    "event, supplier, exchange, and corporate customer, then stop new "
-                    "purchases when the cash calendar breaches the available funding "
-                    "envelope. Close each event by matching admissions delivered, exchange "
-                    "statements, customer invoices, supplier credits, contractor time, "
-                    "and bank receipts. Release reserves according to resolved exposures, "
-                    "not because the event date passed. Publish both earned owner profit "
-                    "and distributable cash: debt repayment, inventory replenishment, "
-                    "restricted reserves, and tax funding can make the second materially "
-                    "smaller. This is live-event inventory and service settlement management, "
-                    "not the wholesale electronics buying-group economics addressed in Volume 041."
-                ),
-            ],
-            "table": {
-                "caption": "Seven Cash Controls for Exchange Resale, Suites, and Corporate Hospitality",
-                "headers": [
-                    "Cash mechanism requiring separate tracking",
-                    "Concrete timing or capital calculation",
-                    "Operating record and accountable reconciliation",
-                    "Funding response when timing deteriorates",
-                ],
-                "rows": [
-                    [
-                        "Exchange inventory purchased before an event and settled afterward.",
-                        "$6,060 funded for seventy days costs $139.46 at 12%.",
-                        "Match supplier payment dates against cleared exchange bank receipts.",
-                        "Reduce new purchases when delayed releases consume committed headroom.",
-                    ],
-                    [
-                        "Steady-state Base acquisition float before additional operating cash needs.",
-                        "$606,000 annual acquisition basis times seventy divided by 365 equals $116,219.",
-                        "Reconcile the planning estimate against actual dated inventory outflows.",
-                        "Add seasonal peaks, unsold inventory, and operating payment obligations.",
-                    ],
-                    [
-                        "Suite contracts with advance deposits and minimum service commitments.",
-                        "$6,000 acquisition commitment precedes the eighteen-seat $9,000 collection target.",
-                        "Track venue invoices separately from catering and hosting obligations.",
-                        "Cut exposure before nonrefundable balances exceed funded customer demand.",
-                    ],
-                    [
-                        "Hospitality customer deposits offset only contractually usable supplier funding.",
-                        "$10,000 collected less $6,000 supplier deposit leaves $4,000 temporarily.",
-                        "Maintain customer liabilities and cancellation schedules beside bank balances.",
-                        "Preserve refund coverage rather than distributing the temporary surplus.",
-                    ],
-                    [
-                        "Hospitality final supplier balance precedes final customer collection.",
-                        "$12,000 cumulative supplier payments against $10,000 collections creates $2,000 deficit.",
-                        "Schedule final invoice dates and monitor actual corporate payment behavior.",
-                        "Arrange committed bridging funds before the supplier balance falls due.",
-                    ],
-                    [
-                        "Cancellation creates a gross refund need before supplier recovery.",
-                        "$5,000 immediate refund precedes a collectible $4,000 supplier reimbursement.",
-                        "Track the $1,000 economic loss separately from $5,000 liquidity exposure.",
-                        "Use the refund buffer and pursue documented supplier recovery rights.",
-                    ],
-                    [
-                        "Post-event receivable persists under negotiated corporate customer payment terms.",
-                        "Thirty-day customer terms extend collection beyond completed hospitality delivery.",
-                        "Age receivables from the contractual invoice trigger and verify acceptance.",
-                        "Stop additional unsecured sourcing when customer exposure exceeds approved limits.",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Create the inventory-lot economics record",
-                    "action": "Assign event, supplier, rights, channel, acquisition basis, and contractual delivery identifiers before committing capital.",
-                    "detail": "Store gross seller-attributable billings, expected fees, realized-price assumptions, incremental inventory losses, and fulfillment obligations in separate fields.",
-                },
-                {
-                    "step": 2,
-                    "title": "Build the dated funding bridge",
-                    "action": "Schedule supplier payments, customer collections, exchange holds, bank clearing, and refund exposures for the full cohort.",
-                    "detail": "Calculate peak cumulative deficit, available unrestricted cash, remaining committed borrowing, and the financing expense implied by actual funded days.",
-                },
-                {
-                    "step": 3,
-                    "title": "Execute delivery with verified inventory locks",
-                    "action": "Apply internal POS auto-holds, verify remote delisting, and complete issuer-supported transfer with acceptance evidence.",
-                    "detail": "When synchronization fails, pause affected inventory, remove residual listings through authorized interfaces, contact exchanges, and resolve duplicate obligations under the applicable contracts.",
-                },
-                {
-                    "step": 4,
-                    "title": "Close the event and release only resolved exposure",
-                    "action": "Reconcile supplier invoices, customer billings, exchange deductions, contractor time, recoveries, and cleared bank receipts.",
-                    "detail": "Bridge forecast profit to actual owner profit, update loss estimates, and calculate distributable cash after replenishment, debt service, reserves, and tax funding.",
-                },
-            ],
-        },
-    ],
-    "pull_quote": "A ticket spread becomes owner profit only after the seat is delivered, every deduction is booked, and the settlement cash clears.",
-    "diagram_id": "diag-03",
-    "action_checklist": [
-        "Normalize every exchange statement to seller-attributable gross billings and reconcile the 40% retained-share view without deducting seller fees twice.",
-        "Rebuild the Conservative, Base, and Scaled waterfalls to exactly $26,400, $191,900, and $468,000 of annual owner profit.",
-        "Separate exchange resale, permitted suite seat-splitting, and corporate hospitality into distinct inventory, delivery, reserve, and settlement cohorts.",
-        "Run the seven sensitivity tests, validate contract-specific duplicate-sale remedies, and document the resulting event and counterparty exposure limits.",
-        "Build a thirteen-week dated cash forecast that separates customer DSO, post-event payout locks, bank availability, refundable deposits, and committed borrowing.",
-        "Test authorized POS holds, cross-channel delisting acknowledgments, and issuer-supported transfers before releasing inventory into multi-exchange distribution.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "15 U.S.C. §45c — Unfair and deceptive acts and practices relating to ticket sales",
-            "url": "https://www.law.cornell.edu/uscode/text/15/45c",
-            "relevance": (
-                "Prohibits specified circumvention of ticketing security measures and "
-                "purchase controls, and specified sales of tickets obtained through "
-                "such violations; authorized POS distribution must remain separate "
-                "from prohibited acquisition practices."
-            ),
-        },
-        {
-            "title": "16 CFR §464.2 — Unfair or deceptive fees",
-            "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-D/part-464/section-464.2",
-            "relevance": (
-                "Requires covered live-event ticket price offers to disclose total "
-                "price and satisfy prominence and final-payment presentation rules; "
-                "build mandatory charges into customer-facing pricing as required."
-            ),
-        },
-        {
-            "title": "16 CFR §464.3 — Misleading fees",
-            "url": "https://www.ecfr.gov/current/title-16/chapter-I/subchapter-D/part-464/section-464.3",
-            "relevance": (
-                "Prohibits misrepresenting fee purposes and refundability and requires "
-                "specified disclosures about excluded charges before payment consent; "
-                "align package quotes and cancellation representations with actual terms."
-            ),
-        },
-        {
-            "title": "N.Y. Arts and Cultural Affairs Law Article 25 — Tickets to Places of Entertainment",
-            "url": "https://www.nysenate.gov/legislation/laws/ACA/A25",
-            "relevance": (
-                "Provides New York ticket-sale and resale requirements, including "
-                "applicable licensing, disclosure, and operating obligations; determine "
-                "which provisions govern the seller, transaction, and inventory."
-            ),
-        },
-        {
-            "title": "N.Y. Arts and Cultural Affairs Law §25.13 — Licensing of ticket resellers",
-            "url": "https://www.nysenate.gov/legislation/laws/ACA/25.13",
-            "relevance": (
-                "Establishes ticket-reseller licensing requirements and related "
-                "conditions; validate applicability and include required operating "
-                "costs before underwriting New York resale activity."
-            ),
-        },
-    ],
-}
+CHAPTER_3 = {'id': 'Q3',
+ 'chapter_id': 'Q3',
+ 'chapter_number': 3,
+ 'question_number': 3,
+ 'slug': 'super-bowl-vip-packages-suites-stadium-premium-hospitality',
+ 'question_prompt': 'What do Super Bowl VIP packages, luxury suites and stadium premium hospitality '
+                    'include, and why are venues built around them?',
+ 'kicker': 'Q3 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Super Bowl VIP Packages, Suites and Stadium Premium Hospitality',
+ 'subtitle': 'On Location VIP packages, the $2.5M all-access experience, Super Bowl suite contents, NFL '
+             'London suites, hotel-style stadium design, fewer-but-pricier suites, entertainment tax '
+             'deductions, and premium season seats at Allegiant and NBA arenas',
+ 'layout_template': 'financial_analysis',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Super Bowl premium hospitality is sold as access, not seats. On Location president '
+                      'Paul Caine reports Super Bowl LX premium hospitality launched in May and sold out '
+                      'long before game week, with a thousand guests taken onto the field after the trophy '
+                      'ceremony, while the rest of the market reprices once the teams are set. Bloomberg '
+                      "ties price to matchup and venue, citing Super Bowl 58's average ticket of more than "
+                      "$9,000. GQ's Allegiant walkthrough brackets the ladder: $20,000 to $50,000 "
+                      'lower-bowl seats, $300,000 to $2.5 million suites and a $700,000 Wynn Field Club '
+                      'table. Forbes, Sportico and Morning Brew describe fewer, tiered suites kept as '
+                      'retained team revenue. Power Raider and Dave Chung run PSL and resale math around '
+                      '10% fees, while MMG calls the Super Bowl one of the worst games to attend because '
+                      'the crowd is not die-hard.',
+ 'key_metrics': [{'label': 'Super Bowl suite price range at Allegiant Stadium',
+                  'metric': 'Super Bowl suite price range at Allegiant Stadium',
+                  'value': '$300,000 to $2.5 million',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "GQ host Clay Skipper's quoted range for a suite on Super Bowl Sunday at the "
+                             '2024 Las Vegas Super Bowl.',
+                  'source': 'GQ ([nT-DpxVmqC0 @ 00:07:04])'},
+                 {'label': 'Super Bowl 58 average ticket price',
+                  'metric': 'Super Bowl 58 average ticket price',
+                  'value': 'Over $9,000 average; $12,000 secondary; $5,000 to $7,000 cheapest',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Rhonda Williams on the record-priced Las Vegas Super Bowl, which tripled the '
+                             'roughly $3,000 minimum of recent years.',
+                  'source': 'Bloomberg Television ([zXgujuB9yXw @ 00:01:31])'},
+                 {'label': 'Allegiant Stadium secondary PSL transaction fee',
+                  'metric': 'Allegiant Stadium secondary PSL transaction fee',
+                  'value': '10% of the negotiated PSL price',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Four seats at $16,000 each ($64,000) carry a $6,400 transaction fee on the '
+                             'secondary PSL marketplace.',
+                  'source': 'Power Raider ([o_WpoJl9phM @ 00:04:19])'},
+                 {'label': 'SoFi terrace suite versus top-section ticket',
+                  'metric': 'SoFi terrace suite versus top-section ticket',
+                  'value': '$41,000 per game suite (no alcohol) = 221 tickets at $185',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Per-game terrace suite price for the same week as a $185 top-section ticket '
+                             'against the 49ers.',
+                  'source': 'Morning Brew ([ow9KXpcvvEg @ 00:04:56])'}],
+ 'sections': [{'title': 'Section 1: The Practitioner Consensus',
+               'paragraphs': ['Across the VIP desk, the product being sold is access, not a chair. '
+                              "Bloomberg sports business reporter Rhonda Williams closes her Levi's "
+                              'Stadium walkthrough by stating that at the Super Bowl luxury is not just '
+                              'about comfort but about access, describing the million-dollar suites as '
+                              'white glove service, specialized cocktails and an endless rotation of food '
+                              '[zXgujuB9yXw @ 00:02:10]. On Location president Paul Caine sells the same '
+                              'thing from the inside: pregame hospitality on campus behind the security '
+                              'perimeter, dedicated transportation and egress, and a thousand guests '
+                              'walked onto the field after the trophy ceremony for snow angels in the '
+                              'confetti, an experience Caine calls exclusive to On Location [6ufb5u4PcIQ @ '
+                              '00:06:36]. Morning Brew traces the stadium side of the trend and lands on '
+                              'identical language: the new focus is experience and access, with '
+                              'field-level suites granting warm-up access, Arrowhead suite holders '
+                              'reaching the postgame press conference, and Dallas guests watching the '
+                              "Cowboys walk the tunnel [ow9KXpcvvEg @ 00:05:16]. Lighthouse Travel Group's "
+                              'Los Angeles 2027 pitch shows the retail packaging of that idea, stacking '
+                              'tickets, luxury hotels, tailgates, VIP parties, flights and transfers into '
+                              'one booking under a no-stress, no-detail-left-undone promise [YbCPfj2AvV4 @ '
+                              '00:01:34]. The operator takeaway is consistent across all four: the buyer '
+                              'pays for proximity, privacy and logistics wrapped around the game, and the '
+                              'seat itself is the least differentiated piece of the package.',
+                              'The second point of agreement is timing. Caine says On Location launched '
+                              'its Super Bowl LX offering in May and had sold out all premium experiences, '
+                              'premium hospitality and its best seating long before game week [6ufb5u4PcIQ '
+                              "@ 00:05:16]. The rest of the industry, in Caine's account, only piles in "
+                              'once the participating teams are announced, and from there the market '
+                              'reacts to the host city, the matchup and buyer mentality; midweek softness '
+                              'reflects too much choice, while demand climbs into the weekend because '
+                              'people want to go to the game [6ufb5u4PcIQ @ 00:05:31]. Williams names the '
+                              'same two levers on price: the matchup and the venue, with bigger stars, '
+                              'more popular teams and nicer stadiums producing higher costs [zXgujuB9yXw @ '
+                              '00:01:00]. Her case study is Super Bowl 58 in Las Vegas, where a Chiefs '
+                              'repeat bid, Mahomes, Kelce, Taylor Swift hype and an Usher halftime pushed '
+                              'the average ticket past $9,000 and tripled the roughly $3,000 floor of '
+                              'recent years [zXgujuB9yXw @ 00:01:31]. Power Raider adds a local echo from '
+                              'the season-ticket side, reporting that Allegiant Stadium PSL listings were '
+                              'pricier while the Super Bowl was coming to town and then dropped a bit '
+                              'afterward. Inventory locked early by the official partner, and '
+                              'late-breaking matchup demand on everything else, is the shared map of how '
+                              'Super Bowl premium pricing moves through the season.',
+                              'Venue operators agree that premium inventory is now tiered and '
+                              "team-retained rather than mass-produced. Forbes reports that the Clippers' "
+                              'old home, crypto.com Arena, opened in 1999 stuffed with 170 suites, while '
+                              'the Intuit Dome carries 46 on its main suite level, and quotes Populous '
+                              'interior design director Wesley Crosby that one client now offers 13 '
+                              'different premium experiences at different price points [fI8OAlihCxc @ '
+                              '00:02:41]. The Tottenham Hotspur Stadium hospitality tour for the NFL '
+                              'London game walks that ladder live: a premium seating lounge with light '
+                              "bites and paid alcohol, an NFL fans' favorite all-day grazing package, an "
+                              'invite-only Lodge built for 250 partners, players and VIP-list guests, and '
+                              '57 suites running from 12-seaters up to 21-seaters [uhgdo0oPQ0E @ '
+                              '00:03:44]. Morning Brew explains why NFL owners keep building them: under '
+                              'collective bargaining rules, luxury suite revenue sits in the retained '
+                              'bucket each team keeps for itself, alongside 60% of ticket sales, stadium '
+                              'naming rights, sponsorships and concessions [ow9KXpcvvEg @ 00:04:10]. '
+                              'SportsRender frames the same math from the European side, noting that a '
+                              'single premium suite can bring in tens of thousands, sometimes hundreds of '
+                              'thousands, per season from just one client, usually large companies, '
+                              'sponsors or very wealthy fans, and now hosts meetings and private parties '
+                              'on non-event days [BQI_sOqcfx4 @ 00:02:46]. Premium is the profit layer of '
+                              'the building, and every speaker treats it that way.'],
+               'table': {'caption': 'Where the practitioners line up on Super Bowl and stadium premium '
+                                    'hospitality',
+                         'headers': ['Consensus Point',
+                                     'What Practitioners Report',
+                                     'Operator Read',
+                                     'Expert Source'],
+                         'rows': [['Access is the real product being sold',
+                                   'Million-dollar Super Bowl suites deliver white glove service, '
+                                   'cocktails and endless food',
+                                   'Price packages around proximity and exclusivity rather than raw seat '
+                                   'location',
+                                   'Bloomberg Television ([zXgujuB9yXw @ 00:02:10])'],
+                                  ['The official partner sells out premium inventory early',
+                                   'On Location launched in May and sold out premium hospitality and best '
+                                   'seating early',
+                                   'Secure premium inventory months before the participating teams are '
+                                   'known',
+                                   'Front Office Sports News ([6ufb5u4PcIQ @ 00:05:16])'],
+                                  ['Matchup and venue set the Super Bowl price',
+                                   'Bigger stars, more popular teams and nicer stadiums push ticket costs '
+                                   'higher',
+                                   'Reprice open inventory only after the matchup is locked in',
+                                   'Bloomberg Television ([zXgujuB9yXw @ 00:01:00])'],
+                                  ['Fewer suites with many more premium tiers',
+                                   'Intuit Dome runs 46 main-level suites versus 170 at the 1999 arena',
+                                   'Build a ladder of price points instead of one suite type',
+                                   'Forbes ([fI8OAlihCxc @ 00:02:41])'],
+                                  ['Suite revenue is retained by each team',
+                                   'Luxury suite revenue sits in the team-kept bucket, not the 32-team '
+                                   'share',
+                                   'Owners are motivated, aggressive sellers of premium inventory every '
+                                   'single season',
+                                   'Morning Brew ([ow9KXpcvvEg @ 00:04:10])'],
+                                  ['Hospitality runs as a tiered ladder on game day',
+                                   'Tottenham offers lounge, grazing package, invite-only Lodge and 57 '
+                                   'suites of 12 to 21',
+                                   'Map every tier and its inclusions before quoting a client package',
+                                   'Sportico ([uhgdo0oPQ0E @ 00:03:44])'],
+                                  ['Premium spaces earn beyond the event itself',
+                                   'Suites host business meetings, private parties and corporate events '
+                                   'all year round',
+                                   'Premium real estate earns on non-event days as well as game days',
+                                   'SportsRender ([BQI_sOqcfx4 @ 00:02:26])']]}},
+              {'title': 'Section 2: Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ["Clay Skipper's GQ All Access walkthrough of Allegiant Stadium ahead of the "
+                              '2024 Super Bowl produces the cleanest premium price ladder any speaker puts '
+                              'on camera. Raiders chief sales officer Quiava prices the brand-new Twitch '
+                              'Club level suites on the 50-yard line from $25,000 up to $55,000 depending '
+                              'on the game, the yard line and the size, with a sushi boat, beef, stadium '
+                              'fare and a private suite attendant built in [nT-DpxVmqC0 @ 00:05:54]. For '
+                              'Super Bowl Sunday, Skipper reports suite prices ranging from $300,000 all '
+                              'the way to $2.5 million, and warns that getting into the Owners suite that '
+                              'day is a long shot [nT-DpxVmqC0 @ 00:07:04]. The Wynn Field Club, a full '
+                              'nightclub spanning the north end zone with 29 tables, sells tickets on '
+                              'WynnSocial.com at $500 for Raider games and tables from $10,000 to $50,000, '
+                              'but a Super Bowl table runs $700,000; director Hunter Beaty tells anyone '
+                              'there for the Xs and Os that they are in the wrong place [nT-DpxVmqC0 @ '
+                              "00:12:40]. Bloomberg's Rhonda Williams supplies the general-admission floor "
+                              'for that same game: cheapest tickets between $5,000 and $7,000, an average '
+                              'above $9,000 and secondary-market listings reaching $12,000 [zXgujuB9yXw @ '
+                              '00:01:31]. Those data points bracket every Super Bowl quote an operator '
+                              'will build, from the nosebleed seat to the end-zone bottle table.',
+                              'For operators who want recurring access to premium and Super Bowl '
+                              'inventory, Power Raider walks through the secondary PSL marketplace for '
+                              'Allegiant Stadium line by line. The interactive grid showed 496 listings, '
+                              'every price negotiable through offers to the listing seller, and a 10% '
+                              'transaction fee layered on top, so four seats at $16,000 each meant $64,000 '
+                              'plus $6,400 in fees [o_WpoJl9phM @ 00:04:19]. Secondary PSLs are paid in '
+                              'full up front with no financing, unlike the three-year plan the Raiders '
+                              'gave first buyers, and the season tickets still bill annually on top: '
+                              'roughly $2,000 per seat in section 124, about $200 a game, against a USA '
+                              'Today average of $582 per Raiders game [o_WpoJl9phM @ 00:07:21]. The perk '
+                              'list explicitly includes access to purchase Super Bowl tickets, which Power '
+                              'Raider calls big time given talk of bringing the game back to Las Vegas '
+                              'more often [o_WpoJl9phM @ 00:19:26]. Dave Chung runs the same flip '
+                              'arithmetic on Denver Nuggets seats: about $5,000 for two seats, roughly $61 '
+                              'per ticket per game, profitable on Lakers, Warriors and Celtics dates and '
+                              'dumped below cost against weak draws, netting a slight profit over the '
+                              'season [CpHB_gOGYSs @ 00:06:30]. Both treat resale of unused dates as the '
+                              'lever that makes the annual bill work.',
+                              "The service layer is engineered, not improvised. The Minnesota Vikings' "
+                              "suite service lead, who came from seven years at Walt Disney World's Grand "
+                              'Floridian plus three years each at Hilton Orlando and Marriott, built a '
+                              "Black Jacket maitre d' program: staff greet suite guests in the corridor, "
+                              'escort them in, make first-half and second-half suite visits, and work from '
+                              "pregame 'Purple Notes' briefing sheets [ImKo957VLSo @ 00:01:31]. Those "
+                              'notes are fed by a two-field email sent the Monday or Tuesday before each '
+                              'home game asking who is hosting the suite and who the clientele is, so '
+                              'staff know whether a suite is closing a $2 million deal or there to party '
+                              '[ImKo957VLSo @ 00:02:32]. At Tottenham, the NFL hospitality team runs '
+                              'alcohol service from three hours before kickoff to halftime plus one hour '
+                              'post, and pours a complimentary halftime drink purely because it is quicker '
+                              "to serve everyone [uhgdo0oPQ0E @ 00:01:25]. On the corporate buyer's books, "
+                              'David Fiene states that game tickets are non-deductible entertainment and '
+                              'that suite food bundled into the ticket price cannot be deducted because it '
+                              'is not separately stated, while separately receipted food and drinks bought '
+                              'at the event could be deducted [QPC4K8A6GJg @ 00:05:16]. Separately stated '
+                              "food and beverage lines are what make that portion claimable under Fiene's "
+                              'rule, which is worth knowing when a corporate client asks for the invoice.'],
+               'table': {'caption': 'Premium hospitality price points and fees quoted on camera',
+                         'headers': ['Price Point', 'Figure Quoted', 'Operator Use', 'Expert Source'],
+                         'rows': [['Super Bowl lower-bowl seat behind the home bench',
+                                   '$20,000 to $50,000 per seat for the Super Bowl',
+                                   'Top-end single-seat benchmark below any suite quote',
+                                   'GQ ([nT-DpxVmqC0 @ 00:04:46])'],
+                                  ['Super Bowl suite at Allegiant Stadium',
+                                   '$300,000 all the way up to $2.5 million',
+                                   'Range for pricing full private suite packages on Super Bowl Sunday',
+                                   'GQ ([nT-DpxVmqC0 @ 00:07:04])'],
+                                  ['Wynn Field Club end-zone nightclub table',
+                                   '$700,000 for the Super Bowl versus $10,000 to $50,000',
+                                   'Party-first buyers pay a massive premium over the regular-season table',
+                                   'GQ ([nT-DpxVmqC0 @ 00:12:40])'],
+                                  ['SoFi Stadium terrace suite rented per game',
+                                   '$41,000, excluding alcohol, versus a $185 top-section ticket',
+                                   'Per-game rentals command more than multiyear suite lease contracts',
+                                   'Morning Brew ([ow9KXpcvvEg @ 00:04:56])'],
+                                  ['Tottenham Hotspur club seat membership',
+                                   '£30,000 one-time fee plus £15,000 per season per seat',
+                                   'International comparison for structuring premium seat membership '
+                                   'pricing',
+                                   'Morning Brew ([ow9KXpcvvEg @ 00:05:45])'],
+                                  ['Raiders secondary PSL marketplace transaction fee',
+                                   '10% fee on top of the negotiated PSL price',
+                                   'Private transfers avoid the fee compared with marketplace listings',
+                                   'Power Raider ([o_WpoJl9phM @ 00:04:19])'],
+                                  ['Ticketmaster cut on NBA season-ticket resales',
+                                   'About 10% of each resale through the league deal',
+                                   'Build the resale cut into every flip margin calculation',
+                                   'Dave Chung ([CpHB_gOGYSs @ 00:07:02])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Desk-level moves the practitioners actually use',
+                           'body': 'Timing, resale channel, seat selection and client intelligence '
+                                   'separate profitable premium operators from fans who overpay.',
+                           'items': ['Do not dump premium inventory midweek: Caine reads early game-week '
+                                     'softness as too much choice and expects demand to climb into the '
+                                     'weekend when people want to go to the game [Front Office Sports News '
+                                     '— 6ufb5u4PcIQ @ 00:06:06].',
+                                     'Resell PSL-backed seats through Ticketmaster even though it charges '
+                                     'more, because Ticketmaster holds the liability if a buyer '
+                                     'misbehaves, while other sites can leave the PSL exposed to '
+                                     'revocation [Power Raider — o_WpoJl9phM @ 00:20:53].',
+                                     'Buy the last row of the 100 level: casual buyers see 100 and assume '
+                                     'they are closer to the court, while the pricier 200 club level makes '
+                                     '100-level listings look like a deal [Dave Chung — CpHB_gOGYSs @ '
+                                     '00:04:22].',
+                                     'Send a two-field email before every event asking who is hosting the '
+                                     'suite and who the clientele is, then brief staff so they know if the '
+                                     'suite is closing a $2 million deal or partying [ALSD — ImKo957VLSo @ '
+                                     '00:02:32].']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Lock premium inventory early',
+                              'action': 'Secure suites, hospitality and best seating months before the '
+                                        'matchup is set.',
+                              'detail': 'On Location launched its Super Bowl offering in May and sold out '
+                                        'premium hospitality and its best seating long before game week, '
+                                        'while the rest of the industry entered only after teams were '
+                                        'announced [Front Office Sports News — 6ufb5u4PcIQ @ 00:05:16].'},
+                             {'step': 2,
+                              'title': 'Reprice on matchup and venue',
+                              'action': 'Adjust open inventory once the participating teams and star power '
+                                        'are known.',
+                              'detail': 'Williams ties Super Bowl pricing to the matchup and the venue, '
+                                        'with bigger stars, more popular teams and nicer stadiums driving '
+                                        'cost higher, as in the record Super Bowl 58 [Bloomberg Television '
+                                        '— zXgujuB9yXw @ 00:01:00].'},
+                             {'step': 3,
+                              'title': 'Build a tiered hospitality menu',
+                              'action': 'Quote clients across a ladder of lounge, grazing, club, '
+                                        'invite-only and suite tiers.',
+                              'detail': 'Tottenham runs a premium seating lounge, an all-day grazing '
+                                        'package, an invite-only Lodge for 250 guests and 57 suites from '
+                                        '12 to 21 seats, each with distinct food and drink rules [Sportico '
+                                        '— uhgdo0oPQ0E @ 00:03:44].'},
+                             {'step': 4,
+                              'title': 'Run suite intelligence and clean invoicing',
+                              'action': 'Brief service staff on each suite and itemize food and beverage '
+                                        'separately from tickets.',
+                              'detail': 'Vikings Black Jackets work from pregame Purple Notes and make '
+                                        'first-half and second-half suite visits [ALSD — ImKo957VLSo @ '
+                                        '00:01:31]; Fiene notes separately receipted event food could be '
+                                        'deducted while ticket-bundled suite food cannot [David Fiene — '
+                                        'QPC4K8A6GJg @ 00:04:59].'}]},
+              {'heading': 'Section 3: Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['Paul Caine of On Location runs the package-first playbook. On Location '
+                              'launched its Super Bowl inventory in May and sold out its premium '
+                              'experiences, premium hospitality and best seating long before kickoff week, '
+                              'while the rest of the industry only piles in once the participating teams '
+                              'are announced [6ufb5u4PcIQ @ 00:05:16]. Caine reads midweek softness as '
+                              "'too much choice,' then expects demand to climb into the weekend because "
+                              "people want to go to the game [6ufb5u4PcIQ @ 00:06:06]. Bloomberg's Rhonda "
+                              'Williams prices the other side of that bet from the secondary tape: the '
+                              'floor has run at least $3,000 in recent years, yet the Las Vegas Super Bowl '
+                              '58 averaged over $9,000 a ticket, some resale seats hit $12,000, and the '
+                              'cheapest landed between $5,000 and $7,000, all driven by matchup, star '
+                              'power and venue [zXgujuB9yXw @ 00:01:31]. Power Raider adds a cooling '
+                              'signal from the Allegiant PSL marketplace, where listings that ran pricey '
+                              'while the Super Bowl was coming to town have since dropped [o_WpoJl9phM @ '
+                              "00:15:50]. The split for operators is stark. Caine's camp buys certainty "
+                              'early and gives up price discovery; the secondary camp waits for the '
+                              'matchup to settle, reads the week, and accepts that a hyped matchup can '
+                              'triple the floor overnight.',
+                              'Morning Brew argues for volume. The NFL carries the highest average suite '
+                              'count of any league at 156.9 per venue, and suite money sits in the '
+                              'retained bucket each team keeps instead of sharing across all 32 clubs '
+                              '[ow9KXpcvvEg @ 00:03:38]. The same breakdown flags a contract shift: '
+                              'multiyear suite leases of five, seven or nine years lock revenue in but are '
+                              'less common now, while per-game suite rentals actually command more because '
+                              'each one is a one-off [ow9KXpcvvEg @ 00:04:42]. Forbes pushes the opposite '
+                              'architecture. Populous designers say fifteen to twenty years ago a venue '
+                              'had one suite type, and one client now runs 13 different premium '
+                              'experiences at different price points and demographics [fI8OAlihCxc @ '
+                              '00:02:21]. The Clippers dropped from 170 suites at their old arena to 46 on '
+                              "the Intuit Dome's main suite level, the Titans are cutting from 177 to 130, "
+                              'and the suites that remain become more customizable, sometimes in five '
+                              'different types and sizes [fI8OAlihCxc @ 00:03:19]. The contrast is about '
+                              "where pricing power lives. Morning Brew's teams win by stacking boxes and "
+                              'renting them per game at a premium; the Forbes model wins by shrinking the '
+                              'box count and slicing premium into many tiers, each tuned to a different '
+                              'buyer and price point.',
+                              'The deepest split is whether premium buyers are there for football at all. '
+                              "GQ's tour of the Wynn Field Club at Allegiant Stadium priced a Super Bowl "
+                              "table at $700,000, and director Hunter Beaty's pitch is blunt: if you came "
+                              'for the Xs and Os of the game, you are in the wrong place [nT-DpxVmqC0 @ '
+                              '00:12:40]. SportsRender reports the cost of that model from the stands: '
+                              'every luxury suite usually replaces dozens of regular seats, broadcasts '
+                              'catch half a box staring at phones, and the real noise comes from the fans '
+                              'down near the pitch [BQI_sOqcfx4 @ 00:03:48]. Morning Brew lays both camps '
+                              'side by side. One side says the luxury experience is ruining it for the '
+                              'average fan; the other says big spenders in suites work like casino high '
+                              'rollers, letting teams keep standard ticket prices down [ow9KXpcvvEg @ '
+                              "00:06:20]. MMG lands hardest from their seats at Levi's Stadium, calling "
+                              'the Super Bowl one of the worst football events to attend because most of '
+                              'the crowd are not die-hard fans of either team, then watching the $20,000 '
+                              'seats in front of them clear out early to beat traffic [JfafTeTKsyo @ '
+                              '00:10:16]. The buyer profile decides which camp a package should serve.'],
+               'table': {'caption': 'Competing Super Bowl and stadium premium playbooks, side by side',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Buy timing for Super Bowl premium hospitality inventory',
+                                   'On Location launches in May and sells out premium hospitality early',
+                                   'Secondary sellers enter after teams are announced and ride weekend '
+                                   'demand',
+                                   'Front Office Sports News ([6ufb5u4PcIQ @ 00:05:31])'],
+                                  ['Venue footprint preferred for game-day hospitality builds',
+                                   'Caine wants a spread-out campus with easy access in and out',
+                                   'As a fan, Caine loves walking from the hotel straight into the stadium',
+                                   'Front Office Sports News ([6ufb5u4PcIQ @ 00:02:29])'],
+                                  ['How many suites a modern venue should carry',
+                                   'NFL venues average 156.9 suites, the most of any major league',
+                                   'Intuit Dome cut to 46 main-level suites from 170 at the old arena',
+                                   'Morning Brew ([ow9KXpcvvEg @ 00:03:38]); Forbes ([fI8OAlihCxc @ '
+                                   '00:02:58])'],
+                                  ['Suite contract structure for locking or maximizing revenue',
+                                   'Multiyear leases of five, seven or nine years lock revenue in',
+                                   'Per-game suite rentals charge more because each sale is a one-off',
+                                   'Morning Brew ([ow9KXpcvvEg @ 00:04:42])'],
+                                  ['Resale platform for season ticket and PSL holders',
+                                   'Power Raider sells only on Ticketmaster because it holds the buyer '
+                                   'liability',
+                                   'Dave Chung skips buyer-side StubHub and does cash deals with friends',
+                                   'Power Raider ([o_WpoJl9phM @ 00:20:32]); Dave Chung ([CpHB_gOGYSs @ '
+                                   '00:07:17])'],
+                                  ['Commitment level before buying full season inventory',
+                                   'Power Raider says season tickets pay off at five or more games',
+                                   'Dave Chung starts with a ten-game weekend or half-season package first',
+                                   'Power Raider ([o_WpoJl9phM @ 00:00:16]); Dave Chung ([CpHB_gOGYSs @ '
+                                   '00:02:57])'],
+                                  ['Premium service model inside suite corridors and lounges',
+                                   'Vikings Black Jackets escort suite guests like a high-end restaurant '
+                                   'maitre d',
+                                   "Tottenham's Lodge stays invite-only for partners, players and the VIP "
+                                   'list',
+                                   'ALSD ([ImKo957VLSo @ 00:00:57]); Sportico ([uhgdo0oPQ0E @ '
+                                   '00:02:35])']]}},
+              {'heading': 'Section 4: Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ["David Fiene's warning is the first economics check on any corporate suite "
+                              'deal. Entertainment expenses like tickets to a game or golf are not '
+                              'deductible; only the meals, bought separately, qualify [QPC4K8A6GJg @ '
+                              '00:01:31]. The trap is the all-inclusive suite. If a client is invited to a '
+                              'game in a suite where food and beverages are included in the price, the '
+                              'meals and tickets are not separately stated, so the meal cost cannot be '
+                              'deducted at all [QPC4K8A6GJg @ 00:05:16]. Fiene also flags where people get '
+                              'documentation wrong: a credit card statement proves payment, not what was '
+                              'purchased, so the itemized receipt has to carry the names of the people at '
+                              "the meal and the business reason [QPC4K8A6GJg @ 00:06:08]. Morning Brew's "
+                              'SoFi Stadium check shows how fast suite math runs away: a top-section seat '
+                              'for week two against the 49ers cost $185 after taxes and fees, while the '
+                              'Terrace Suite that same week listed at $41,000 without alcohol, enough to '
+                              'cover 221 of those upper-deck tickets [ow9KXpcvvEg @ 00:04:56]. Stack an '
+                              'all-in package on top of excluded alcohol and the buyer is paying full '
+                              'freight on entertainment that, per Fiene, carries no deduction, plus a '
+                              'separate bar bill that still needs its own receipt.',
+                              "Power Raider's Allegiant Stadium walkthrough is a ledger of PSL traps. A "
+                              'four-seat lower-bowl listing at $16,000 per seat is $64,000, and the '
+                              'marketplace stacks a 10% transaction fee on top, another $6,400, which is '
+                              'why a private sale through someone you know runs cheaper [o_WpoJl9phM @ '
+                              '00:04:19]. The PSL is only a right to buy, good for 30 years, and it '
+                              'carries a hard obligation: buy the PSL and skip the season tickets, and the '
+                              'team can sell your tickets and possibly take the license away [o_WpoJl9phM '
+                              '@ 00:16:36]. Resale channel matters just as much. Selling on a cheaper site '
+                              'means that if the buyer acts up in your seats, the PSL can be revoked, '
+                              'while Ticketmaster charges a lot but holds the liability and backs the '
+                              "seller [o_WpoJl9phM @ 00:20:53]. Dave Chung's four seasons of Nuggets "
+                              'tickets put a ceiling on the flip thesis: games against the Lakers, '
+                              'Warriors and Celtics sell at a profit, but tickets against teams without '
+                              'star power get given away or dumped below cost, and the season only roughly '
+                              'evens out with a two-time MVP on the roster [CpHB_gOGYSs @ 00:06:30]. A '
+                              'broker who models every seat at peak resale is modeling a season that never '
+                              'shows up.',
+                              "The on-the-ground failures start before the gates. Bloomberg's Rhonda "
+                              'Williams warns that during Super Bowl week flight prices surge and hotels '
+                              'double and triple their rates, before food, transportation, parties or '
+                              'invite-only experiences are even counted [zXgujuB9yXw @ 00:00:23]. Inside, '
+                              "even premium tiers run on set service windows. Sportico's Tottenham host "
+                              'explains that the all-day grazing package pours alcohol in fixed blocks, '
+                              'three hours before, at halftime and one hour post, and anyone who wants a '
+                              'drink during the game buys it [uhgdo0oPQ0E @ 00:01:25]. MMG hit the '
+                              "concession wall at Levi's Stadium in real time: the stand ran out of beer "
+                              'and the group had to walk to another section to find one [JfafTeTKsyo @ '
+                              '00:06:37]. Team Jesser, watching from a creator suite, left for the team '
+                              'store mid-game, found $350 jackets they refused to pay for, and lost about '
+                              'half a quarter, missing a Seahawks score while away from the seats '
+                              '[jgHnABCslrA @ 00:12:52]. The pattern across all four is that the ticket or '
+                              'suite price is never the full bill. Travel inflation, alcohol carve-outs, '
+                              'concession stock-outs and merch markups all land on the guest, and every '
+                              'lap away from the seats burns live game time the package price was supposed '
+                              'to deliver.'],
+               'table': {'caption': 'Firsthand traps and the economics check each one forces',
+                         'headers': ['Failure Mode',
+                                     'What Practitioners Reported',
+                                     'Economics Check',
+                                     'Expert Source'],
+                         'rows': [['All-inclusive suite food bundled into the ticket price',
+                                   'Meals and tickets not separately stated make the meal cost '
+                                   'non-deductible',
+                                   'Get food and drinks on a separate itemized receipt instead',
+                                   'David Fiene ([QPC4K8A6GJg @ 00:05:16])'],
+                                  ['Buying a PSL listing through the public marketplace',
+                                   'A $64,000 four-seat listing carries a 10% transaction fee of $6,400',
+                                   'A private sale through someone you know runs a lot cheaper',
+                                   'Power Raider ([o_WpoJl9phM @ 00:04:19])'],
+                                  ['Skipping a season after buying the seat license',
+                                   'The team can sell your tickets and possibly take the PSL away',
+                                   'Buy the season every year and list unused games to recoup money',
+                                   'Power Raider ([o_WpoJl9phM @ 00:16:36])'],
+                                  ['Weeknight games against teams without star power',
+                                   'Tickets against the Spurs or Raptors on a Tuesday get given away',
+                                   'The season only roughly evens out even with a two-time MVP',
+                                   'Dave Chung ([CpHB_gOGYSs @ 00:06:46])'],
+                                  ['Super Bowl week travel and lodging inflation',
+                                   'Flight prices surge and hotels double and triple their nightly rates',
+                                   'Budget food, transport and parties on top of the ticket itself',
+                                   'Bloomberg Television ([zXgujuB9yXw @ 00:00:23])'],
+                                  ['Neutral, non-die-hard crowd sitting in $20,000 seats',
+                                   'Fans in front of MMG cleared out early to beat the traffic',
+                                   'Expensive seats do not guarantee an engaged crowd or real atmosphere',
+                                   'MMG ([JfafTeTKsyo @ 00:10:34])'],
+                                  ['Team store pricing and stock pressure during the game',
+                                   'Jackets at $350 were flying off shelves while staff rushed in more '
+                                   'gear',
+                                   'Both buyers walked away from the jacket and bought cheaper items',
+                                   'Team Jesser ([jgHnABCslrA @ 00:12:38])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Clear These Four Traps Before Committing Capital',
+                           'body': 'Each gate comes from a loss, reversal or penalty a practitioner hit or '
+                                   'warned about firsthand.',
+                           'items': ['Split every client suite outing into ticket and food lines; an '
+                                     'all-inclusive suite with meals not separately stated kills the meal '
+                                     'deduction [David Fiene — QPC4K8A6GJg @ 00:05:16].',
+                                     'Never skip the annual season-ticket purchase on a PSL; the team can '
+                                     'sell the tickets and possibly take the license [Power Raider — '
+                                     'o_WpoJl9phM @ 00:16:36].',
+                                     'Route PSL-seat resales through Ticketmaster; a bad buyer from a '
+                                     'cheaper site can get the PSL revoked [Power Raider — o_WpoJl9phM @ '
+                                     '00:20:53].',
+                                     'Do not underwrite every game at a profit; weak-opponent tickets get '
+                                     'given away or dumped below cost even with a winning roster [Dave '
+                                     'Chung — CpHB_gOGYSs @ 00:06:30].']}}],
+ 'pull_quote': '"At the Super Bowl, luxury isn\'t just about comfort, it\'s about access." — Rhonda '
+               'Williams, Bloomberg Television (zXgujuB9yXw @ 00:02:10).',
+ 'diagram_id': 'diag-03',
+ 'action_checklist': ['Lock premium hospitality before teams are set: On Location opened sales in May and '
+                      'sold out its premium experiences and best seating long before game week [Front '
+                      'Office Sports News — 6ufb5u4PcIQ @ 00:05:16].',
+                      "Hold secondary inventory through the midweek 'too much choice' dip and price for "
+                      'weekend demand, when people want to go to the game [Front Office Sports News — '
+                      '6ufb5u4PcIQ @ 00:06:06].',
+                      'Send suite hosts a two-field email the Monday or Tuesday before the event asking '
+                      'who is hosting and who the clientele is, then brief staff from the spreadsheet '
+                      '[ALSD — ImKo957VLSo @ 00:02:32].',
+                      'Run the per-seat math on any suite quote: the $41,000 SoFi Terrace Suite, alcohol '
+                      'excluded, equals 221 top-section tickets at $185 [Morning Brew — ow9KXpcvvEg @ '
+                      '00:04:56].',
+                      'Keep an itemized receipt for every client meal noting the restaurant, headcount, '
+                      'attendee names and business reason, because a card statement alone is not proof of '
+                      'purchase [David Fiene — QPC4K8A6GJg @ 00:06:08].',
+                      'Test a market with a 10-game weekend or half-season package before committing to '
+                      'full season tickets you must resell [Dave Chung — CpHB_gOGYSs @ 00:08:01].'],
+ 'statutory_citations': [{'title': 'Front Office Sports News — How the VIP Super Bowl Experience Works '
+                                   'with On Location President Paul Caine [00:05:16]',
+                          'url': 'https://www.youtube.com/watch?v=6ufb5u4PcIQ&t=316s',
+                          'relevance': 'Primary practitioner testimony on Super Bowl premium hospitality '
+                                       'launch timing, sell-out and market dynamics.'},
+                         {'title': 'GQ — What $2.5M Gets You at the Super Bowl | All Access | GQ Sports '
+                                   '[00:07:04]',
+                          'url': 'https://www.youtube.com/watch?v=nT-DpxVmqC0&t=424s',
+                          'relevance': 'Primary practitioner testimony on Super Bowl suite pricing from '
+                                       '$300K to $2.5 million.'},
+                         {'title': 'Morning Brew — The real reason NFL stadiums have so many luxury suites '
+                                   '[00:04:42]',
+                          'url': 'https://www.youtube.com/watch?v=ow9KXpcvvEg&t=282s',
+                          'relevance': 'Primary practitioner testimony on multiyear suite leases versus '
+                                       'higher-priced per-game suite rentals.'},
+                         {'title': 'David Fiene — Business Meals and Entertainment Tax deduction - What '
+                                   'You Should Know [00:05:16]',
+                          'url': 'https://www.youtube.com/watch?v=QPC4K8A6GJg&t=316s',
+                          'relevance': 'Primary practitioner testimony on all-inclusive suite meals and '
+                                       'ticket costs losing deductibility.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'YbCPfj2AvV4',
+                       'title': '🏈🔥 GO BIG! GO LOUD! SUPER BOWL 2027! 🔥🏈🏆  GAME. THE ULTIMATE VIP '
+                                'EXPERIENCE. THE TRIP OF A LIFETIME!',
+                       'channel': 'lighthouse travel group',
+                       'author': 'lighthouse travel group',
+                       'text': 'Flights and transfers, hotels, too. Lighthouse handles it all for you.',
+                       'tip': 'Flights and transfers, hotels, too. Lighthouse handles it all for you.',
+                       'timestamp': 94,
+                       'timestamp_seconds': 94,
+                       'timestamp_label': '[00:01:34]',
+                       'url': 'https://www.youtube.com/watch?v=YbCPfj2AvV4&t=94s',
+                       'markdown': '[00:01:34](https://www.youtube.com/watch?v=YbCPfj2AvV4&t=94s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '6ufb5u4PcIQ',
+                       'title': 'How the VIP Super Bowl Experience Works with On Location President Paul '
+                                'Caine',
+                       'channel': 'Front Office Sports News',
+                       'author': 'Front Office Sports News',
+                       'text': "We launched in May. We've been selling, we sold out all of our premium "
+                               'experiences and premium hospitality and our best seating a long time ago.',
+                       'tip': "We launched in May. We've been selling, we sold out all of our premium "
+                              'experiences and premium hospitality and our best seating a long time ago.',
+                       'timestamp': 316,
+                       'timestamp_seconds': 316,
+                       'timestamp_label': '[00:05:16]',
+                       'url': 'https://www.youtube.com/watch?v=6ufb5u4PcIQ&t=316s',
+                       'markdown': '[00:05:16](https://www.youtube.com/watch?v=6ufb5u4PcIQ&t=316s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'nT-DpxVmqC0',
+                       'title': 'What $2.5M Gets You at the Super Bowl | All Access | GQ Sports',
+                       'channel': 'GQ',
+                       'author': 'GQ',
+                       'text': 'You wanna be in a suite on Super Bowl Sunday, you better have deep '
+                               'pockets. Prices range from 300K all the way to 2 1/2 million.',
+                       'tip': 'You wanna be in a suite on Super Bowl Sunday, you better have deep pockets. '
+                              'Prices range from 300K all the way to 2 1/2 million.',
+                       'timestamp': 424,
+                       'timestamp_seconds': 424,
+                       'timestamp_label': '[00:07:04]',
+                       'url': 'https://www.youtube.com/watch?v=nT-DpxVmqC0&t=424s',
+                       'markdown': '[00:07:04](https://www.youtube.com/watch?v=nT-DpxVmqC0&t=424s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'zXgujuB9yXw',
+                       'title': 'What You Really Get In a Super Bowl Suite',
+                       'channel': 'Bloomberg Television',
+                       'author': 'Bloomberg Television',
+                       'text': 'All of that hype created a demand that game averaged over $9,000 a ticket '
+                               'with some on the secondary market going for $12,000.',
+                       'tip': 'All of that hype created a demand that game averaged over $9,000 a ticket '
+                              'with some on the secondary market going for $12,000.',
+                       'timestamp': 91,
+                       'timestamp_seconds': 91,
+                       'timestamp_label': '[00:01:31]',
+                       'url': 'https://www.youtube.com/watch?v=zXgujuB9yXw&t=91s',
+                       'markdown': '[00:01:31](https://www.youtube.com/watch?v=zXgujuB9yXw&t=91s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'jgHnABCslrA',
+                       'title': 'VIP Experience At The Super Bowl!',
+                       'channel': 'Team Jesser',
+                       'author': 'Team Jesser',
+                       'text': "Tomorrow is the big game, the Super Bowl. We're getting tickets. Suite "
+                               'tickets. It came with being a part of this.',
+                       'tip': "Tomorrow is the big game, the Super Bowl. We're getting tickets. Suite "
+                              'tickets. It came with being a part of this.',
+                       'timestamp': 378,
+                       'timestamp_seconds': 378,
+                       'timestamp_label': '[00:06:18]',
+                       'url': 'https://www.youtube.com/watch?v=jgHnABCslrA&t=378s',
+                       'markdown': '[00:06:18](https://www.youtube.com/watch?v=jgHnABCslrA&t=378s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'JfafTeTKsyo',
+                       'title': 'My VIP Experience at Super Bowl LX!',
+                       'channel': 'MMG',
+                       'author': 'MMG',
+                       'text': 'I always say the Super Bowl is one of the worst football events to attend '
+                               'because all the people that are in the Super Bowl watching are usually not '
+                               'die-hard fans of the team.',
+                       'tip': 'I always say the Super Bowl is one of the worst football events to attend '
+                              'because all the people that are in the Super Bowl watching are usually not '
+                              'die-hard fans of the team.',
+                       'timestamp': 616,
+                       'timestamp_seconds': 616,
+                       'timestamp_label': '[00:10:16]',
+                       'url': 'https://www.youtube.com/watch?v=JfafTeTKsyo&t=616s',
+                       'markdown': '[00:10:16](https://www.youtube.com/watch?v=JfafTeTKsyo&t=616s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'q4jIeRrkSGg',
+                       'title': 'Inside the Super Bowl 2026 fan experience',
+                       'channel': 'FOX 13 Seattle',
+                       'author': 'FOX 13 Seattle',
+                       'text': "Obviously not everybody can go to the Super Bowl. It's pretty expensive, "
+                               'but I love that they do it for a whole week.',
+                       'tip': "Obviously not everybody can go to the Super Bowl. It's pretty expensive, "
+                              'but I love that they do it for a whole week.',
+                       'timestamp': 54,
+                       'timestamp_seconds': 54,
+                       'timestamp_label': '[00:00:54]',
+                       'url': 'https://www.youtube.com/watch?v=q4jIeRrkSGg&t=54s',
+                       'markdown': '[00:00:54](https://www.youtube.com/watch?v=q4jIeRrkSGg&t=54s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'uhgdo0oPQ0E',
+                       'title': "The 'NFL Suite Life' at Tottenham Hotspur Stadium | BTS NFL Exclusive VIP "
+                                'Hospitality & Suites',
+                       'channel': 'Sportico',
+                       'author': 'Sportico',
+                       'text': "There's several levels of offerings from free to paid to invite only, and "
+                               'we got the access to show you all of them.',
+                       'tip': "There's several levels of offerings from free to paid to invite only, and "
+                              'we got the access to show you all of them.',
+                       'timestamp': 14,
+                       'timestamp_seconds': 14,
+                       'timestamp_label': '[00:00:14]',
+                       'url': 'https://www.youtube.com/watch?v=uhgdo0oPQ0E&t=14s',
+                       'markdown': '[00:00:14](https://www.youtube.com/watch?v=uhgdo0oPQ0E&t=14s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'BQI_sOqcfx4',
+                       'title': 'Why Football Stadiums Are Turning Into Luxury Hotels',
+                       'channel': 'SportsRender',
+                       'author': 'SportsRender',
+                       'text': 'Sometimes, a single suite can earn more money in a season than dozens of '
+                               'regular seats combined.',
+                       'tip': 'Sometimes, a single suite can earn more money in a season than dozens of '
+                              'regular seats combined.',
+                       'timestamp': 81,
+                       'timestamp_seconds': 81,
+                       'timestamp_label': '[00:01:21]',
+                       'url': 'https://www.youtube.com/watch?v=BQI_sOqcfx4&t=81s',
+                       'markdown': '[00:01:21](https://www.youtube.com/watch?v=BQI_sOqcfx4&t=81s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'rodIE0qwiT4',
+                       'title': 'A Stadium Designed Like a Five-Star Resort | Inside the New Entertainment '
+                                'Era',
+                       'channel': 'Luxology',
+                       'author': 'Luxology',
+                       'text': 'Private entrances allow VIP visitors to bypass crowded public areas and '
+                               'enter sophisticated hospitality spaces.',
+                       'tip': 'Private entrances allow VIP visitors to bypass crowded public areas and '
+                              'enter sophisticated hospitality spaces.',
+                       'timestamp': 96,
+                       'timestamp_seconds': 96,
+                       'timestamp_label': '[00:01:36]',
+                       'url': 'https://www.youtube.com/watch?v=rodIE0qwiT4&t=96s',
+                       'markdown': '[00:01:36](https://www.youtube.com/watch?v=rodIE0qwiT4&t=96s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ImKo957VLSo',
+                       'title': 'Hotel Hospitality Ideas for the Sports and Entertainment Venue '
+                                'Marketplace',
+                       'channel': 'ALSD',
+                       'author': 'ALSD',
+                       'text': 'Very simple, we send out an email the Monday or Tuesday before a home '
+                               "game, and it's two fields.",
+                       'tip': 'Very simple, we send out an email the Monday or Tuesday before a home game, '
+                              "and it's two fields.",
+                       'timestamp': 152,
+                       'timestamp_seconds': 152,
+                       'timestamp_label': '[00:02:32]',
+                       'url': 'https://www.youtube.com/watch?v=ImKo957VLSo&t=152s',
+                       'markdown': '[00:02:32](https://www.youtube.com/watch?v=ImKo957VLSo&t=152s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'fI8OAlihCxc',
+                       'title': 'Why Sports Arenas Make Millions More By Building Fewer Luxury Suites',
+                       'channel': 'Forbes',
+                       'author': 'Forbes',
+                       'text': 'Now we create an incredible breadth of premium inventory for each client '
+                               'at different price points and different demographics.',
+                       'tip': 'Now we create an incredible breadth of premium inventory for each client at '
+                              'different price points and different demographics.',
+                       'timestamp': 141,
+                       'timestamp_seconds': 141,
+                       'timestamp_label': '[00:02:21]',
+                       'url': 'https://www.youtube.com/watch?v=fI8OAlihCxc&t=141s',
+                       'markdown': '[00:02:21](https://www.youtube.com/watch?v=fI8OAlihCxc&t=141s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ow9KXpcvvEg',
+                       'title': 'The real reason NFL stadiums have so many luxury suites',
+                       'channel': 'Morning Brew',
+                       'author': 'Morning Brew',
+                       'text': 'More common now are the per game suite rentals, which they can actually '
+                               "charge more for because it's a one off.",
+                       'tip': 'More common now are the per game suite rentals, which they can actually '
+                              "charge more for because it's a one off.",
+                       'timestamp': 282,
+                       'timestamp_seconds': 282,
+                       'timestamp_label': '[00:04:42]',
+                       'url': 'https://www.youtube.com/watch?v=ow9KXpcvvEg&t=282s',
+                       'markdown': '[00:04:42](https://www.youtube.com/watch?v=ow9KXpcvvEg&t=282s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'QPC4K8A6GJg',
+                       'title': 'Business Meals and Entertainment Tax deduction - What You Should Know',
+                       'channel': 'David Fiene',
+                       'author': 'David Fiene',
+                       'text': 'Since the meals and tickets are all inclusive and are not separately '
+                               "stated you can't deduct the cost of the meal.",
+                       'tip': 'Since the meals and tickets are all inclusive and are not separately stated '
+                              "you can't deduct the cost of the meal.",
+                       'timestamp': 316,
+                       'timestamp_seconds': 316,
+                       'timestamp_label': '[00:05:16]',
+                       'url': 'https://www.youtube.com/watch?v=QPC4K8A6GJg&t=316s',
+                       'markdown': '[00:05:16](https://www.youtube.com/watch?v=QPC4K8A6GJg&t=316s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'o_WpoJl9phM',
+                       'title': 'Planning on owning Raiders Season Tickets?',
+                       'channel': 'Power Raider',
+                       'author': 'Power Raider',
+                       'text': "If you buy your PSL and you don't purchase your season tickets they have "
+                               'the right to sell your tickets and possibly take your PSL away.',
+                       'tip': "If you buy your PSL and you don't purchase your season tickets they have "
+                              'the right to sell your tickets and possibly take your PSL away.',
+                       'timestamp': 996,
+                       'timestamp_seconds': 996,
+                       'timestamp_label': '[00:16:36]',
+                       'url': 'https://www.youtube.com/watch?v=o_WpoJl9phM&t=996s',
+                       'markdown': '[00:16:36](https://www.youtube.com/watch?v=o_WpoJl9phM&t=996s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'CpHB_gOGYSs',
+                       'title': "What it's REALLY like having NBA season tickets | Should you get season "
+                                'tickets?',
+                       'channel': 'Dave Chung',
+                       'author': 'Dave Chung',
+                       'text': 'I end up giving away and dumping my tickets below cost for teams that '
+                               "don't have a lot of star power right now.",
+                       'tip': "I end up giving away and dumping my tickets below cost for teams that don't "
+                              'have a lot of star power right now.',
+                       'timestamp': 390,
+                       'timestamp_seconds': 390,
+                       'timestamp_label': '[00:06:30]',
+                       'url': 'https://www.youtube.com/watch?v=CpHB_gOGYSs&t=390s',
+                       'markdown': '[00:06:30](https://www.youtube.com/watch?v=CpHB_gOGYSs&t=390s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'o_WpoJl9phM',
+                       'title': 'Planning on owning Raiders Season Tickets?',
+                       'channel': 'Power Raider',
+                       'author': 'Power Raider',
+                       'text': 'If you sell it on another site and that person does something really bad '
+                               'you may get your PSL revoked.',
+                       'tip': 'If you sell it on another site and that person does something really bad '
+                              'you may get your PSL revoked.',
+                       'timestamp': 1253,
+                       'timestamp_seconds': 1253,
+                       'timestamp_label': '[00:20:53]',
+                       'url': 'https://www.youtube.com/watch?v=o_WpoJl9phM&t=1253s',
+                       'markdown': '[00:20:53](https://www.youtube.com/watch?v=o_WpoJl9phM&t=1253s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'QPC4K8A6GJg',
+                       'title': 'Business Meals and Entertainment Tax deduction - What You Should Know',
+                       'channel': 'David Fiene',
+                       'author': 'David Fiene',
+                       'text': 'Proof of payment is not proof of what you purchased, so in addition to the '
+                               'proof of payment keep the receipt with the notations.',
+                       'tip': 'Proof of payment is not proof of what you purchased, so in addition to the '
+                              'proof of payment keep the receipt with the notations.',
+                       'timestamp': 368,
+                       'timestamp_seconds': 368,
+                       'timestamp_label': '[00:06:08]',
+                       'url': 'https://www.youtube.com/watch?v=QPC4K8A6GJg&t=368s',
+                       'markdown': '[00:06:08](https://www.youtube.com/watch?v=QPC4K8A6GJg&t=368s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q3.'}]}

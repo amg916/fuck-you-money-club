@@ -9,49 +9,49 @@
       "RECOVERY"
     ],
     "deck": [
-      "AUDIT THE BILL. DOCUMENT ELIGIBILITY.",
-      "RECONCILE CONTINGENT RECOVERIES."
+      "PARCEL AUDITORS RERATE EVERY INVOICE LINE, FILE LATE-PACKAGE REFUND CLAIMS INSIDE 15 DAYS, AND ESCALATE DENIALS BY PHONE",
+      "CONTINGENCY RECOVERY ACROSS CARRIER, UTILITY, TELECOM, PROPERTY TAX, COST SEGREGATION, 179D, AND WOTC CLAIMS"
     ],
-    "lead": "FedEx/UPS Parcel Refund Audits, Utility & Telecom Tariff Reviews, Property-Tax Appeals & Specialist-Led WOTC and Cost-Segregation Engagements",
-    "summary": "Review authorized billing records for recoverable errors, verify carrier refund windows and tariff terms, and route property-tax and tax-benefit work to qualified specialists. Separate refunds, credits, and depreciation timing benefits while documenting fee permissions, eligibility, and realized client savings.",
+    "lead": "Practitioners show how a package delivered even 60 seconds late earns a refund the carriers will never flag, how surcharges rather than base rates now drive parcel spend, and how auditors recover that money on contingency.",
+    "summary": "All 12 chapters synthesize 192 verbatim YouTube practitioner testimonies, from guaranteed-service refund recovery and surcharge rerating to property tax appeals, cost segregation, and the Work Opportunity Tax Credit. Every claim, metric, and quote carries timestamped inline attribution to the practitioner and video it came from.",
     "chapters": [
-      "Contingent bill-audit & tax-benefit recovery models",
-      "Corporate payers, account authority & specialist partners",
-      "Recovery splits, collection lags & realized savings math",
-      "Secure invoice ingestion & lean audit startup stack",
-      "Refund exclusions, missed deadlines & unsupported claims",
-      "Parcel spend triggers & first audit mandates",
-      "FedEx/UPS refund APIs & claim reconciliation",
-      "Utility meters, telecom tariffs & contract benchmarks",
-      "Property-tax appeal deadlines & representation rules",
-      "WOTC eligibility, cost-seg studies & permitted fee splits",
-      "Audit pods, evidence retention & recurring reviews",
-      "First 30-day authorized-recovery launch sprint"
+      "Small-Parcel Auditing and Guaranteed-Service Refund Recovery",
+      "Decoding Carrier Surcharges, Dimensional Weight, and Invoice Rerating",
+      "Negotiating UPS and FedEx Shipper Agreements",
+      "Utility Bill Audits and Error Recovery",
+      "Telecom, Waste, and Workers' Comp Expense Audits",
+      "Property Tax Assessment Appeals",
+      "Cost Segregation Fundamentals and Payoff Analysis",
+      "Catch-Up Depreciation and the Section 179D Deduction",
+      "Capturing the Work Opportunity Tax Credit",
+      "Claim Mechanics: Forms, Deadlines, and Documentation",
+      "Contingency Fees, Shared Savings, and Contingency Planning",
+      "Reverse Audits, Reconciliations, and Rate Renegotiation"
     ],
     "flow": [
       [
-        "SOURCE",
-        "Identify parcel, utility & tax-review opportunities"
-      ],
-      [
-        "AUTHORIZE",
-        "Secure records access & permitted fee terms"
+        "CONNECT",
+        "Take the client's online billing credentials and auto-download every carrier invoice to monitor shipping activity continuously"
       ],
       [
         "AUDIT",
-        "Validate invoice errors, tariffs & eligibility"
+        "Rerate package by package with no sampling or average weights, checking 40 to 44 points per shipment against billable weight, DIM factors, and surcharge thresholds"
       ],
       [
-        "DOCUMENT",
-        "Build evidence with qualified tax specialists"
+        "FILE",
+        "Hold invoice payment and file guaranteed-service refund disputes inside the 15-day window, since a payment on file triggers automatic denials"
       ],
       [
-        "SUBMIT",
-        "File authorized claims within applicable deadlines"
+        "ESCALATE",
+        "Work denied claims through repeated resubmission and live phone agents, or choose an address correction dispute instead"
       ],
       [
-        "RECONCILE",
-        "Verify realized recoveries & earned fee splits"
+        "VERIFY",
+        "Screen out automatic systematic SVC fail credits and require analyst sign-off on every figure before a dispute reaches the carrier"
+      ],
+      [
+        "BILL",
+        "Charge only a contingent share of recovered savings, from 30 percent up to a 50 percent starting split, with no fee if nothing is saved"
       ]
     ]
   },
@@ -59,10 +59,10 @@
   "book_series": "THE BIG MONEY PLAYBOOKS",
   "tagline": "Big Money. Small Teams. No Bullshit.",
   "title": "CONTINGENT CORPORATE BILL-AUDIT & TAX-CREDIT RECOVERY",
-  "subtitle": "The Complete Playbook for Contingent Corporate Bill-Audit & Tax-Credit Recovery: $110,000-$900,000 USD in Annual Operator Revenue, a 1 FT + 3 C (4 People) Core Pod, and a Six-Person Scaled Model",
+  "subtitle": "No Savings, No Fee: GSR Late-Package Refunds, Surcharge Rerating, Carrier Contract Engineering, Utility and Expense Audits, Property Tax Appeals, Cost Segregation and 179D, WOTC Capture, Shared-Savings Deals, and Reverse Audits",
   "chapter_count": 12,
-  "total_word_count": 79217,
-  "expert_youtube_link_count": 180,
+  "total_word_count": 75056,
+  "expert_youtube_link_count": 209,
   "min_expert_youtube_links_required": 150,
   "target_expert_youtube_links": "150-200+",
   "min_expert_youtube_links_per_chapter": 12,
@@ -77,5 +77,5 @@
   "publication_status": "approved_master",
   "public_deploy_approved": false,
   "paid_sales_approved": false,
-  "updated_at": "2026-11-23T22:48:03Z"
+  "updated_at": "2026-11-24T23:55:16Z"
 }

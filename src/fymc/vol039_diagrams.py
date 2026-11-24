@@ -1,749 +1,508 @@
-from __future__ import annotations
+"""Volume 039 diagrams: Inbound Pay-Per-Call & RTB Ping-Post Arbitrage."""
 
-VOLUME_039_SUBTITLE = (
-    "The Complete Playbook for Inbound Pay-Per-Call & RTB Ping-Post Arbitrage: "
-    "$200,000–$1,500,000 USD in Annual Gross Settlements, "
-    "Starting with a 1 FT + 2 C (3 People) Pod"
-)
+from typing import Any, Dict, List
 
-VOLUME_039_POSITIONING_ALTERNATIVES = [
-    {
-        "title": "The Collectible Call Exchange",
-        "subtitle": (
-            "Build a three-person inbound exchange around buyer acceptance, "
-            "auditable call qualification, and cash collected before traffic expansion."
-        ),
-        "audience": (
-            "Paid-search operators and affiliate managers building an authorized "
-            "Ringba or Retreaver exchange with directly contracted buyers."
-        ),
-        "research_basis": (
-            "47 CFR 64.1200 distinguishes regulated outbound communications from "
-            "other call activity; 16 CFR 310.4 supplies applicable telemarketing "
-            "restrictions. Preserve the distinction between consumer-initiated "
-            "inbound calls, transfers, and later outbound contact. Buyer-specific "
-            "consent evidence is an operating control, not proof of a universal "
-            "FCC one-seller requirement."
-        ),
-        "sources": [
-            "https://www.ecfr.gov/current/title-47/section-64.1200",
-            "https://www.ecfr.gov/current/title-16/section-310.4",
-            "https://www.law.cornell.edu/uscode/text/47/227",
-        ],
-        "validation_status": (
-            "Source-informed editorial positioning; not market-tested."
-        ),
-    },
-    {
-        "title": "The Medicare Call Evidence Desk",
-        "subtitle": (
-            "Route Medicare inquiries with permission provenance, recorded "
-            "marketing calls, documented appointment timing, and buyer-level reconciliation."
-        ),
-        "audience": (
-            "Experienced insurance lead operators serving contracted Medicare "
-            "organizations and their third-party marketing organizations."
-        ),
-        "research_basis": (
-            "42 CFR 422.2264 and 423.2264 govern beneficiary contact and appointment "
-            "practices, including the applicable 48-hour scope-of-appointment rule "
-            "and exceptions. Sections 422.2274 and 423.2274 address TPMO oversight, "
-            "call recording, and beneficiary-information sharing. Do not treat "
-            "every unscheduled inbound inquiry as a scheduled appointment."
-        ),
-        "sources": [
-            "https://www.ecfr.gov/current/title-42/section-422.2264",
-            "https://www.ecfr.gov/current/title-42/section-423.2264",
-            "https://www.ecfr.gov/current/title-42/section-422.2274",
-            "https://www.ecfr.gov/current/title-42/section-423.2274",
-        ],
-        "validation_status": (
-            "Source-informed editorial positioning; not market-tested."
-        ),
-    },
-    {
-        "title": "The Emergency-Service Routing Desk",
-        "subtitle": (
-            "Auction verified local-service inquiries against live dispatch "
-            "capacity, geographic fit, and collectible per-call prices."
-        ),
-        "audience": (
-            "Local-service media buyers serving plumbing, HVAC, and restoration "
-            "contractors through fixed-price, documented inbound-call agreements."
-        ),
-        "research_basis": (
-            "15 U.S.C. 45 supports truthful advertising and accurate representations "
-            "of provider identity. Applicable outbound follow-up remains subject "
-            "to 47 CFR 64.1200. California Penal Code section 632 illustrates why "
-            "recording design must account for state confidentiality requirements "
-            "rather than assuming a single nationwide recording standard."
-        ),
-        "sources": [
-            "https://www.law.cornell.edu/uscode/text/15/45",
-            "https://www.ecfr.gov/current/title-47/section-64.1200",
-            (
-                "https://leginfo.legislature.ca.gov/faces/"
-                "codes_displaySection.xhtml?sectionNum=632.&lawCode=PEN"
-            ),
-        ],
-        "validation_status": (
-            "Source-informed editorial positioning; not market-tested."
-        ),
-    },
+__all__ = [
+    "VOLUME_039_SUBTITLE",
+    "build_volume_039_diagrams_data",
+    "VOLUME_039_POSITIONING_ALTERNATIVES",
 ]
 
 
-def build_volume_039_diagrams_data() -> list[dict]:
-    specs = [
-        (
-            "diag-01-inbound-auction-to-collected-cash",
-            "process_flow",
-            "One inquiry, one auditable settlement",
-            "Separate routing speed from qualification evidence and cash collection.",
-            1,
-            "operating_framework",
-            (
-                "Illustrative operating sequence for directly contracted publishers "
-                "and buyers. Ringba or Retreaver timeout settings are tested against "
-                "actual buyer response times; sub-second bidding is an engineering "
-                "target, not an asserted service level. A 90–120 second threshold "
-                "is a negotiated billing condition, never evidence of lawful contact."
+VOLUME_039_SUBTITLE: str = (
+    "Own the Tracking Layer, Gate Every Caller with IVR, Bid in Milliseconds, "
+    "Prove One-to-One Consent, and Broker the Spread from Network Offers to "
+    "Direct Buyers Who Pay Up Front"
+)
+
+
+def build_volume_039_diagrams_data() -> List[Dict[str, Any]]:
+    """Return the eight structured diagram dicts for Volume 039."""
+    return [
+        {
+            "diagram_id": "diag-01-pay-per-call-spread-workflow",
+            "chapter_number": 1,
+            "chart_type": "process_flow",
+            "title": "From Offer Page to Hidden Spread",
+            "subtitle": "The five-step pay-per-call lane check practitioners run before buying traffic",
+            "caption": (
+                "A buyer pays a fixed price for a live inbound call that clears pre-agreed rules on "
+                "duration, geography and hours; the operator keeps the spread between traffic cost "
+                "and call price."
             ),
-            (
-                "Preserve a shared call identifier from source click through buyer "
-                "payment; a winning bid alone does not establish collectible revenue."
+            "assumptions_note": (
+                "Figures are attributed practitioner claims: TrackDrive's $50 revenue, $35 payout, "
+                "$15 margin split; Ringba's $25 call costing $2 to generate; Leadbase's three-of-ten "
+                "paid ratio turning a $50 cost into $150. Results vary by vertical and buyer."
             ),
-            [
-                (
-                    "Capture source and permission",
-                    "Bind click, caller, disclosure, and intended recipient",
-                    1.0,
-                    (
-                        "Persist source campaign, landing-page version, timestamp, "
-                        "recipient identity, and TrustedForm or Jornaya evidence "
-                        "where applicable. A certificate records evidence; it does "
-                        "not independently establish valid permission."
+            "note": (
+                "Sources: WordsAtScale (DJFaYJ3O7aU), Ringba (4kaOQgGnpJo), Leadbase (ewNftdwX784), "
+                "TrackDrive (V1FTIO7peWA, _h1_mcKPGjY), Start & Grow Your Business (8qGNYXEyrqI)."
+            ),
+            "stages": [
+                {
+                    "step": "01",
+                    "label": "Read every line of the offer page",
+                    "value": "Step 1",
+                    "detail": (
+                        "Check minimum call length, buyer hours, hold period, and who owns the "
+                        "buyer before sending a single call (WordsAtScale)."
                     ),
-                ),
-                (
-                    "Validate inquiry and eligibility",
-                    "Check geography, duplication, contact rules, and capacity",
-                    2.0,
-                    (
-                        "Confirm service intent, buyer coverage, business hours, "
-                        "and duplicate-call lookback. For regulated outbound "
-                        "follow-up, apply current suppression and permission rules. "
-                        "A commercial litigation-risk list never substitutes for "
-                        "National or entity-specific DNC controls."
+                },
+                {
+                    "step": "02",
+                    "label": "Front the network number with your own tracking",
+                    "value": "Step 2",
+                    "detail": (
+                        "Put your own tracking number in front of the network's number to verify "
+                        "every call and catch skimming (Ringba)."
                     ),
-                ),
-                (
-                    "Ping eligible contracted buyers",
-                    "Auction minimal attributes against live caps",
-                    3.0,
-                    (
-                        "Send only contractually permitted routing attributes. "
-                        "Apply Ringba or Retreaver bid timeouts, geographic filters, "
-                        "capacity limits, and a fallback route; avoid broadcasting "
-                        "the caller's identity to every bidder."
+                },
+                {
+                    "step": "03",
+                    "label": "Model the worst-case paid ratio",
+                    "value": "Step 3",
+                    "detail": (
+                        "A buyer paying for three of ten calls turns a $50 cost into $150 per "
+                        "paid call (Leadbase)."
                     ),
-                ),
-                (
-                    "Post and qualify the connection",
-                    "Connect once and measure contracted connected seconds",
-                    4.0,
-                    (
-                        "Select the eligible bid, connect the caller, and measure "
-                        "the buyer-agreed 90–120 second buffer using the agreed "
-                        "clock. Distinguish ringing, hold time, and agent-connected "
-                        "time; review transcript classifications before billing."
+                },
+                {
+                    "step": "04",
+                    "label": "Qualify each call on duration rules",
+                    "value": "Step 4",
+                    "detail": (
+                        "A call that meets the rules is qualified and paid; one that does not is "
+                        "unpaid. Callers stay on the line a minute or two (TrackDrive; Start & Grow)."
                     ),
-                ),
-                (
-                    "Reconcile and collect",
-                    "Resolve scrubs before increasing publisher exposure",
-                    5.0,
-                    (
-                        "Match disposition, duration, duplicate status, invoice, "
-                        "and bank receipt by call identifier. Keep publisher caps "
-                        "tight until actual net-7 buyer collections are verified; "
-                        "send S2S value corrections when accepted calls reverse."
+                },
+                {
+                    "step": "05",
+                    "label": "Pocket the spread and keep it hidden",
+                    "value": "Step 5",
+                    "detail": (
+                        "$50 revenue minus $35 payout leaves $15 per call; once a campaign works, "
+                        "never let the buyer see a $25 call that cost $2 (TrackDrive; Ringba)."
                     ),
-                ),
+                },
             ],
-        ),
-        (
-            "diag-02-nested-cohort-settlement-funnel",
-            "funnel",
-            "From paid visits to settled calls",
-            "A single annual cohort produces the Base-Case $850,000 gross settlement model.",
-            6,
-            "illustrative_model",
-            (
-                "All five stages belong to the same illustrative annual cohort. "
-                "Each later stage is a subset of the prior stage, with one counted "
-                "call per qualifying visit. The 3,400 final calls average $250 "
-                "in gross billable settlements; these rates are model inputs, "
-                "not measured campaign results."
+        },
+        {
+            "diagram_id": "diag-02-one-to-one-consent-readiness-funnel",
+            "chapter_number": 6,
+            "chart_type": "funnel",
+            "title": "One-to-One Consent Readiness Funnel",
+            "subtitle": "Where lead-gen operators stood before January 27 enforcement",
+            "caption": (
+                "Most operators were still testing consent capture, and Eric Troutman read only "
+                "two of ten circulating one-to-one forms as passing."
             ),
-            (
-                "100,000 visits × 10% × 50% × 80% × 85% = 3,400 settled calls. "
-                "Gross settlements equal $850,000; the 55% retained share equals "
-                "$467,500 before remaining modeled costs."
+            "assumptions_note": (
+                "The first, second, third and fifth stages are percentage shares from the "
+                "ActiveProspect and boberdoo webinar poll taken 111 days before January 27 "
+                "enforcement. The fourth stage expresses Troutman's 'probably only 2 of 10' as a "
+                "share. Agent CRM and Revenx report the rule vacated, so regulatory direction is "
+                "contested among practitioners."
             ),
-            [
-                (
-                    "Tracked paid visits",
-                    "100,000 visits enter the same annual cohort",
-                    100000.0,
-                    (
-                        "Count attributed landing-page visits after traffic-quality "
-                        "filtering. Use a stable campaign identifier and defined "
-                        "attribution window; do not mix impressions or repeat "
-                        "telephone attempts into this visit count."
+            "note": (
+                "Sources: ActiveProspect, Inc. (uXTg2yB_ZTM), Eric Troutman via Seasalt AI "
+                "(KBFaRW7QmVQ), TechMarketer (B9lfPgUUls0), Calldrive (jHMaZ1k0rpY)."
+            ),
+            "stages": [
+                {
+                    "label": "Operators testing consent capture",
+                    "value": 50,
+                    "display": "50%",
+                    "conversion": "Largest bloc in the ActiveProspect and boberdoo poll",
+                    "detail": (
+                        "Single select for each item, no select all, and no pre-check "
+                        "(TechMarketer)."
                     ),
-                ),
-                (
-                    "Visits initiating calls",
-                    "10,000 call starts; 10% of tracked visits",
-                    10000.0,
-                    (
-                        "Count the first tracked call initiation associated with "
-                        "each converting visit. A telephone-link click without an "
-                        "actual call start does not enter this stage."
+                },
+                {
+                    "label": "Operators with an idea only",
+                    "value": 22,
+                    "display": "22%",
+                    "conversion": "Planning stage, no live forms yet",
+                    "detail": (
+                        "Bid per company, not per whole lead; with 15 buyers the form shows 15 "
+                        "checkboxes (ActiveProspect, Inc.)."
                     ),
-                ),
-                (
-                    "Unique eligible inquiries",
-                    "5,000 inquiries; 50% of call starts",
-                    5000.0,
-                    (
-                        "Remove duplicates, wrong-service inquiries, out-of-area "
-                        "callers, and inquiries lacking required routing permission. "
-                        "Preserve exclusion reasons so source quality can be "
-                        "reconciled with publisher invoices."
+                },
+                {
+                    "label": "Operators fully ready",
+                    "value": 20,
+                    "display": "20%",
+                    "conversion": "Consent records producible by buyer and seller",
+                    "detail": (
+                        "Calldrive pairs a consent token with IP address and a video of the form "
+                        "fill."
                     ),
-                ),
-                (
-                    "Buyer-qualified connections",
-                    "4,000 connections; 80% of eligible inquiries",
-                    4000.0,
-                    (
-                        "Require buyer connection, contracted intent, and the "
-                        "specified 90–120 second buffer. An AI transcript label "
-                        "supports review but does not override buyer acceptance "
-                        "terms or the actual call clock."
+                },
+                {
+                    "label": "Circulating forms that pass review",
+                    "value": 20,
+                    "display": "2 of 10 forms",
+                    "conversion": "Probably only 2 of 10 pass (Troutman)",
+                    "detail": (
+                        "Lead sellers create the risk, but buyers bear it, with indemnity flowing "
+                        "back."
                     ),
-                ),
-                (
-                    "Settled billable calls",
-                    "3,400 calls; 85% of qualified connections",
-                    3400.0,
-                    (
-                        "Exclude 600 rejected or reversed connections before "
-                        "applying the $250 settlement average. The resulting "
-                        "$850,000 is exchange settlement volume, not the value "
-                        "of policies, repairs, legal matters, or client purchases."
+                },
+                {
+                    "label": "Operators not yet started",
+                    "value": 7,
+                    "display": "7%",
+                    "conversion": "Exposed to per-call fines",
+                    "detail": (
+                        "Quoted exposure runs $500 to $2,000 per text or call violation "
+                        "(Amy Chan via Seasalt AI)."
                     ),
-                ),
+                },
             ],
-        ),
-        (
-            "diag-03-base-case-owner-profit-waterfall",
-            "waterfall",
-            "$850,000 gross settlements to $199,750 owner profit",
-            "Six bars reconcile the 55% retained share and 23.5% gross-basis net margin.",
-            3,
-            "illustrative_model",
-            (
-                "The first and last bars are absolute totals; the four intermediate "
-                "bars are signed deductions. Only the $382,500 acquisition deduction "
-                "is fixed by the canonical 55% retained share; the remaining "
-                "$267,750 is allocated illustratively. This model treats the quoted "
-                "$2,500–$14,000 monthly opex band as recurring pod and platform "
-                "overhead, with variable fulfillment separately funded. All-in "
-                "post-acquisition costs average $22,312.50 monthly. If the quoted "
-                "opex band were intended to include every such cost, it would not "
-                "reconcile to the canonical Base Case."
+        },
+        {
+            "diagram_id": "diag-03-ivr-gate-margin-waterfall",
+            "chapter_number": 3,
+            "chart_type": "waterfall",
+            "title": "Why the IVR Gate Protects Margin",
+            "subtitle": "TrackDrive's 100-call example of paying on every call versus qualified calls only",
+            "caption": (
+                "An IVR sorts callers on the attribute that decides payout before any buyer phone "
+                "rings; paying a publisher on unqualified calls drains margin from 30% to 12.5%."
             ),
-            (
-                "$850,000 − $382,500 − $99,750 − $108,000 − $60,000 = "
-                "$199,750. Retained revenue is $467,500; owner profit is 23.5% "
-                "of gross settlements and 42.73% of retained revenue. The 55% "
-                "presentation is the supplied ASC 606 modeling convention; actual "
-                "principal-versus-agent presentation depends on contract facts."
+            "assumptions_note": (
+                "TrackDrive states 100 calls, 80 qualifying, a $1,200 (30%) margin falling to $500 "
+                "(12.5%) when all 100 are paid. The 20 non-qualifying calls and the $700 gap are "
+                "arithmetic on those stated figures. Ringba's debt IVR forwards only callers with "
+                "more than $10,000 in unsecured credit card debt."
             ),
-            [
-                (
-                    "Gross billable settlements",
-                    "$850,000 annual exchange settlement total",
-                    850000.0,
-                    (
-                        "Opening absolute total equals 3,400 settled calls at "
-                        "$250 each. Keep this gross settlement basis separate "
-                        "from the $467,500 retained-revenue presentation and from "
-                        "any downstream buyer transaction value."
-                    ),
-                ),
-                (
-                    "Publisher and media acquisition",
-                    "Subtract $382,500; retain $467,500 before other costs",
-                    -382500.0,
-                    (
-                        "Publisher payouts plus click-to-call media consume 45% "
-                        "of gross settlements. Attribute each acquisition cost "
-                        "once; publisher-funded traffic must not also be charged "
-                        "as directly purchased media."
-                    ),
-                ),
-                (
-                    "Variable call fulfillment",
-                    "Subtract $99,750 in incremental transaction costs",
-                    -99750.0,
-                    (
-                        "Illustrative allocation covers usage-based telephony, "
-                        "metered evidence retrieval, outsourced call audits, and "
-                        "transaction handling. Exclude acquisition spending and "
-                        "fixed subscriptions already represented in other bars."
-                    ),
-                ),
-                (
-                    "Pod labor and contractors",
-                    "Subtract $108,000 for one employee and two contractors",
-                    -108000.0,
-                    (
-                        "Annual illustrative labor budget equals $9,000 monthly. "
-                        "Treat the full-time seat as paid operating labor; owner "
-                        "profit is the residual after this budget, not a substitute "
-                        "for recording labor expense."
-                    ),
-                ),
-                (
-                    "Fixed platform and administration",
-                    "Subtract $60,000 in annual recurring overhead",
-                    -60000.0,
-                    (
-                        "Budget $5,000 monthly for fixed software commitments, "
-                        "accounting, insurance, and administration. Combined with "
-                        "labor, recurring overhead reaches $14,000 monthly; variable "
-                        "fulfillment remains a separate waterfall deduction."
-                    ),
-                ),
-                (
-                    "Annual owner net profit",
-                    "$199,750 residual after all four modeled deductions",
-                    199750.0,
-                    (
-                        "Closing absolute total is the canonical Base Case. "
-                        "Conservative remains $200,000 gross, $110,000 retained, "
-                        "and $30,000 profit at 15% gross margin and 27.27% retained "
-                        "margin. Scaled remains $1,500,000 gross, $825,000 retained, "
-                        "and $480,000 profit at 32% and 58.18%, respectively."
-                    ),
-                ),
+            "note": (
+                "Sources: TrackDrive (yYZ5s6jFzQs), Ringba / Jordan Soto (4dnXkZ7u6zw), "
+                "Carlos Corona (tf4AieS7Mhc)."
+            ),
+            "bars": [
+                {"label": "Calls entering the IVR", "value": 100, "display": "100 calls", "kind": "total"},
+                {"label": "Calls failing qualification", "value": 20, "display": "-20 calls", "kind": "deduction"},
+                {"label": "Qualified calls forwarded", "value": 80, "display": "80 calls", "kind": "result"},
+                {"label": "Margin paying qualified calls only", "value": 1200, "display": "$1,200 (30%)", "kind": "total"},
+                {"label": "Payout leaked on unqualified calls", "value": 700, "display": "-$700", "kind": "deduction"},
+                {"label": "Margin paying on all calls", "value": 500, "display": "$500 (12.5%)", "kind": "result"},
             ],
-        ),
-        (
-            "diag-04-subniche-retained-yield-comparison",
-            "horizontal_bars",
-            "Compare retained dollars per settled call",
-            "Five illustrative sub-niche yields use the same 55% retained-share assumption.",
-            2,
-            "illustrative_model",
-            (
-                "Bar lengths measure retained dollars per settled call before "
-                "fulfillment, pod labor, and fixed overhead. Gross call prices are "
-                "illustrative contract inputs, not observed market quotes. These "
-                "alternatives are not an additive portfolio and do not alter the "
-                "Base-Case blended $250 gross settlement assumption."
+        },
+        {
+            "diagram_id": "diag-04-rtb-timing-envelope",
+            "chapter_number": 2,
+            "chart_type": "horizontal_bars",
+            "title": "The RTB Call Timing Envelope",
+            "subtitle": "Ping, timeout and billing-pad windows practitioners configure",
+            "unit": "seconds",
+            "caption": (
+                "Call RTB is ping-post for live phone calls: bids return and the call routes to the "
+                "best expected payout before the phone rings, with failover so an unanswered winner "
+                "never kills a paid call."
             ),
-            (
-                "Higher nominal yield can conceal longer collection cycles, "
-                "tighter statutory restrictions, or worse rejection rates. Compare "
-                "realized contribution per acquired inquiry before reallocating spend."
+            "assumptions_note": (
+                "Ping-to-route is 'a couple hundred milliseconds, always under one second' (Ringba), "
+                "plotted as 0.2 s typical. RingbaX values come from Ringba's seller ring tree recipe; "
+                "the 5-second timeout and 8-second pad come from ceohec's Retreaver build. Platform "
+                "defaults differ."
             ),
-            [
-                (
-                    "Emergency plumbing dispatch",
-                    "$110 retained from a $200 settled call",
-                    110.0,
-                    (
-                        "$200 × 55% = $110 before remaining costs. Require live "
-                        "service-area coverage, a working dispatch endpoint, and "
-                        "documented buyer acceptance; an unanswered emergency "
-                        "transfer cannot be counted as a completed job."
-                    ),
-                ),
-                (
-                    "Personal insurance inquiry",
-                    "$137.50 retained from a $250 settled call",
-                    137.5,
-                    (
-                        "$250 × 55% = $137.50 before remaining costs. Match "
-                        "state and product eligibility to the licensed buyer; "
-                        "record recipient-specific permission where required and "
-                        "reject duplicates under the signed lookback window."
-                    ),
-                ),
-                (
-                    "Commercial insurance inquiry",
-                    "$165 retained from a $300 settled call",
-                    165.0,
-                    (
-                        "$300 × 55% = $165 before remaining costs. Capture "
-                        "business class and coverage intent without collecting "
-                        "unnecessary sensitive information; reconcile buyer staffing "
-                        "hours and acceptance criteria before buying traffic."
-                    ),
-                ),
-                (
-                    "Water-restoration dispatch",
-                    "$192.50 retained from a $350 settled call",
-                    192.5,
-                    (
-                        "$350 × 55% = $192.50 before remaining costs. Verify "
-                        "incident location, actual dispatch availability, and "
-                        "service intent; do not equate the call price with "
-                        "restoration contract value or insurance proceeds."
-                    ),
-                ),
-                (
-                    "Permitted legal advertising inquiry",
-                    "$220 retained from a $400 settled call",
-                    220.0,
-                    (
-                        "$400 × 55% = $220 before remaining costs. Activate "
-                        "only where the precise advertising arrangement is permitted "
-                        "under applicable state rules; check California Rules of "
-                        "Professional Conduct 7.2 and Business and Professions "
-                        "Code sections 6151–6153 for relevant California activity. "
-                        "A fixed call price alone does not establish permissibility."
-                    ),
-                ),
+            "note": (
+                "Sources: Ringba (yat7hRHHsKY, uDzWrD17wqg), ceohec (RWVdTqjVYE8)."
+            ),
+            "bars": [
+                {
+                    "label": "Ping-to-route decision",
+                    "min": 0.2,
+                    "max": 1,
+                    "typical": 0.2,
+                    "display": "A couple hundred ms; always under 1 s",
+                },
+                {
+                    "label": "RingbaX ping timeout",
+                    "min": 3,
+                    "max": 3,
+                    "typical": 3,
+                    "display": "3,000 ms",
+                },
+                {
+                    "label": "Retreaver buyer timeout",
+                    "min": 5,
+                    "max": 5,
+                    "typical": 5,
+                    "display": "5 s (TTL 45)",
+                },
+                {
+                    "label": "Connect lag and billing pad",
+                    "min": 3,
+                    "max": 8,
+                    "typical": 8,
+                    "display": "3-5 s connect lag; pad +8 s (120 s becomes 128 s)",
+                },
+                {
+                    "label": "RingbaX dial timeout",
+                    "min": 10,
+                    "max": 10,
+                    "typical": 10,
+                    "display": "10 s",
+                },
             ],
-        ),
-        (
-            "diag-05-preflight-contact-and-counterparty-tree",
-            "decision_tree",
-            "Four checks before traffic is purchased",
-            "Pass each check in sequence; a failed branch stops the affected route.",
-            5,
-            "operating_framework",
-            (
-                "Numeric values encode ordered check positions, not risk scores. "
-                "The FCC's 2023 one-to-one consent amendment was vacated in "
-                "Insurance Marketing Coalition Ltd. v. FCC, 127 F.4th 303 "
-                "(11th Cir. 2025); do not present it as an operative universal "
-                "FCC mandate. Recipient-specific evidence remains a useful "
-                "contractual control. Confirm current rule text and controlling "
-                "decisions before activating a jurisdiction or product."
+        },
+        {
+            "diagram_id": "diag-05-ping-post-auction-gates",
+            "chapter_number": 5,
+            "chart_type": "decision_tree",
+            "title": "The Ping-Post Exclusionary Auction",
+            "subtitle": "Four gates between a non-contact ping and a paid PII post",
+            "caption": (
+                "A non-contact ping fires simultaneously to every eligible buyer; the best bid minus "
+                "margin returns to the seller, and the PII post lands only after the buyer returns "
+                "success."
             ),
-            (
-                "Pass proceeds to the next check; failure disables the relevant "
-                "campaign or recipient until the specified defect is corrected. "
-                "Commercial risk checks supplement statutory requirements."
+            "assumptions_note": (
+                "Timeouts of 15 s ping and 30 s post are boberdoo's typical windows; another boberdoo "
+                "setup returns a generic unmatched after 20 seconds. The $10 bid minus $2 margin and "
+                "the 15% refund cap over 30 days are boberdoo examples, not fixed rules."
             ),
-            [
-                (
-                    "Contact method and permission",
-                    "Pass to Medicare scope; fail to contact redesign",
-                    1.0,
-                    (
-                        "Classify consumer-initiated inbound activity, transfers, "
-                        "and outbound follow-up separately under 47 U.S.C. 227, "
-                        "47 CFR 64.1200, and applicable 16 CFR Part 310 provisions. "
-                        "Apply written-consent requirements where triggered. "
-                        "Refresh DNC suppression as required, including the "
-                        "applicable 31-day National Registry update interval, "
-                        "and check entity-specific suppression before outbound contact."
-                    ),
-                ),
-                (
-                    "Medicare marketing requirements",
-                    "Pass to state restrictions; fail to appointment repair",
-                    2.0,
-                    (
-                        "For Medicare activity, apply 42 CFR 422.2264 and "
-                        "423.2264 scope-of-appointment timing, including the "
-                        "48-hour rule and its actual exceptions. Apply TPMO "
-                        "marketing, sales, and enrollment call-recording rules "
-                        "under 422.2274 and 423.2274, plus applicable individual "
-                        "TPMO information-sharing permission requirements. "
-                        "Non-Medicare routes proceed without importing these rules."
-                    ),
-                ),
-                (
-                    "State recording and legal advertising",
-                    "Pass to buyer risk; fail to route exclusion",
-                    3.0,
-                    (
-                        "Map caller and recipient jurisdictions before recording; "
-                        "California Penal Code section 632 addresses confidential "
-                        "communications. For legal inquiries, examine applicable "
-                        "state advertising, solicitation, referral-payment, and "
-                        "runner restrictions, including California Business and "
-                        "Professions Code sections 6151–6153 when relevant. "
-                        "Exclude arrangements that fail the governing rules."
-                    ),
-                ),
-                (
-                    "Buyer collectability and acquisition risk",
-                    "Pass to capped traffic; fail to funding repair",
-                    4.0,
-                    (
-                        "Document the connected-time clock, rejection reasons, "
-                        "dispute window, credit exposure, and actual net-7 "
-                        "collections. Set CPC and publisher exposure limits from "
-                        "realized contribution, not headline bids. At Base Case, "
-                        "a 10% acquisition-cost increase with everything else "
-                        "fixed removes $38,250 and reduces profit to $161,500."
-                    ),
-                ),
+            "note": (
+                "Sources: boberdoo.com (yCAVYNpSdZI, YLw0lKsOayk, lpWTQpnduYo, EKrBDZYFq2A), "
+                "Scott Hoffman and Brett of boberdoo, Lead Prosper."
+            ),
+            "nodes": [
+                {
+                    "gate": "G1",
+                    "question": "Does the buyer hold an active account, funds and a matching filter set?",
+                    "pass_next": "G2",
+                    "fail_action": "Excluded from the ping; extra fields that trip the filter set are common.",
+                },
+                {
+                    "gate": "G2",
+                    "question": "Did the buyer bid inside the ping window (15 s typical)?",
+                    "pass_next": "G3",
+                    "fail_action": "Lagging buyer excluded so the seller still gets a bid or a generic unmatched.",
+                },
+                {
+                    "gate": "G3",
+                    "question": "Does the best bid minus margin still clear ($10 bid - $2 margin = $8 offer)?",
+                    "pass_next": "G4",
+                    "fail_action": "Stay on 'Yes'; the 'yes but sold non-exclusively' fallback can sell at a loss.",
+                },
+                {
+                    "gate": "G4",
+                    "question": "Did the vendor accept the $8 offer and the buyer return success on the post (30 s)?",
+                    "pass_next": "Post PII, bill the buyer, enforce a 15% refund cap over 30 days",
+                    "fail_action": "No PII is posted; read Show Lead Log bottom-up for 'price is missing' errors.",
+                },
             ],
-        ),
-        (
-            "diag-06-three-to-five-person-operating-pod",
-            "org_architecture",
-            "Three core seats, two scaled additions",
-            "Base pod is 1 FT + 2 C; scaled pod is 2 FT + 3 C.",
-            11,
-            "operating_framework",
-            (
-                "Each numeric value represents one person in the five-person "
-                "scaled configuration, not one full-time equivalent. The first "
-                "three seats form the Conservative and Base pods. The final two "
-                "seats are scaled additions; contractor hours are scoped separately."
+        },
+        {
+            "diagram_id": "diag-06-network-flywheel-architecture",
+            "chapter_number": 11,
+            "chart_type": "org_architecture",
+            "title": "The Call Network Flywheel",
+            "subtitle": "Buyer coverage attracts publishers; owned tracking holds the margin",
+            "caption": (
+                "Start as an affiliate sending calls into networks, load-balance across several, then "
+                "go direct to buyers, because a network-to-direct jump is worth 100 to 300 points."
             ),
-            (
-                "Automation handles routing, evidence indexing, and S2S corrections. "
-                "Named people still own spend limits, buyer disputes, recording "
-                "exceptions, and bank reconciliation."
+            "assumptions_note": (
+                "Network margins of 35-100% on average and 100-400% observed are Ringba masterclass "
+                "figures; 8-12 applications for 4-6 acceptances is Ryan Moran's estimate. Team size "
+                "is not quoted by practitioners."
             ),
-            [
-                (
-                    "Exchange operator — core full-time",
-                    "Own buyers, cash exposure, and daily contribution",
-                    1.0,
-                    (
-                        "Own signed buyer terms, Ringba or Retreaver routing "
-                        "configuration, publisher caps, and daily cash exposure. "
-                        "Reconcile settled-call contribution with invoices before "
-                        "increasing media budgets or buyer credit limits."
-                    ),
-                ),
-                (
-                    "Acquisition specialist — core contractor",
-                    "Own search campaigns, landing pages, and source controls",
-                    1.0,
-                    (
-                        "Manage Google Ads search terms, geographic targeting, "
-                        "negative keywords, landing-page versions, and S2S "
-                        "conversion corrections. Diagnose CPC spikes using settled "
-                        "cohorts rather than optimizing toward raw call starts."
-                    ),
-                ),
-                (
-                    "Evidence and reconciliation specialist — core contractor",
-                    "Own call audits, evidence retrieval, and dispute packets",
-                    1.0,
-                    (
-                        "Sample AI transcript dispositions, retrieve TrustedForm "
-                        "or Jornaya evidence where used, and reconcile duration "
-                        "scrubs. Assemble timestamped dispute packets and match "
-                        "buyer receipts to the settlement ledger."
-                    ),
-                ),
-                (
-                    "Buyer operations manager — scaled full-time",
-                    "Add live capacity management and counterparty coverage",
-                    1.0,
-                    (
-                        "Add this second full-time seat in the five-person scaled "
-                        "configuration. Maintain buyer schedules, backup routes, "
-                        "concentration limits, and collections follow-up while "
-                        "the operator retains portfolio-level spend authority."
-                    ),
-                ),
-                (
-                    "Automation engineer — scaled contractor",
-                    "Add routing tests, event reliability, and audit exports",
-                    1.0,
-                    (
-                        "Add this third contractor in the scaled configuration. "
-                        "Test bid timeouts, webhook retries, idempotent postbacks, "
-                        "access controls, and evidence exports; prevent duplicate "
-                        "billing when asynchronous events arrive out of order."
-                    ),
-                ),
+            "note": (
+                "Sources: Ringba (20s5iGyl_MY, RhODbxB4ylU, AMwEMCOuhA0, Jvd7AeYwbns), "
+                "ExclusiveLiveCall (Cu3vdN7Cn84), Ryan Moran (NC4s18S7p00)."
+            ),
+            "center": {
+                "role": "Call broker owning tracking and routing",
+                "headcount": "Not quoted by practitioners",
+                "focus": "Lock payout bumps in writing and never bluff a takeaway",
+            },
+            "spokes": [
+                {
+                    "role": "Affiliate networks",
+                    "type": "Entry lane and load balancing",
+                    "kpi": "8-12 applications for 4-6 acceptances; a guaranteed concurrency figure",
+                },
+                {
+                    "role": "Direct local buyers",
+                    "type": "Demand",
+                    "kpi": "10 to 20-plus buyers per market; a $10 network call becomes $30-$80 direct",
+                },
+                {
+                    "role": "Publishers",
+                    "type": "Supply",
+                    "kpi": "Separate sub IDs, conservative caps, paid on time after call review",
+                },
+                {
+                    "role": "Call tracking platform",
+                    "type": "Control layer",
+                    "kpi": "Duplicate calls routed to different networks get paid twice for one caller",
+                },
             ],
-        ),
-        (
-            "diag-07-startup-capital-allocation",
-            "stacked_comparison",
-            "Allocate startup cash before buying volume",
-            "Four buckets total $8,000 lean, $30,000 working, or $45,000 expanded.",
-            4,
-            "illustrative_model",
-            (
-                "Numeric values display the $30,000 working plan. Each detail "
-                "also states its lean and expanded allocations. Lean allocations "
-                "sum to $8,000; expanded allocations sum to $45,000. These are "
-                "startup cash allocations, not annual expense deductions or "
-                "additional revenue."
+        },
+        {
+            "diagram_id": "diag-07-routing-payout-comparison",
+            "chapter_number": 4,
+            "chart_type": "stacked_comparison",
+            "title": "Why Routing Method Sets the Payout",
+            "subtitle": "Divergent buyer payouts versus zip-level precision routing",
+            "total_range": "$6 to $250 per call",
+            "caption": (
+                "Whoever owns the call tracking and routing layer owns the margin: divergent buyers "
+                "rule out simultaneous dial, and zip-level routing lifted mortgage calls from $10 to "
+                "up to $250."
             ),
-            (
-                "Do not count an unspent reserve as an expense. Release test "
-                "capital in small cohorts, and resize settlement float using "
-                "observed buyer collections rather than invoice due dates alone."
+            "assumptions_note": (
+                "The $10, $22 and $6 payouts are Adam of Ringba's example of buyers that should never "
+                "share a simultaneous dial. The $10 to $250 lift is one Ringba mortgage client "
+                "routing high home-value California zips. Duplicates run 5% to 25% of call flow and "
+                "about 35% of people live outside their area code."
             ),
-            [
-                (
-                    "Routing and evidence setup",
-                    "$3,500 working allocation for initial systems",
-                    3500.0,
-                    (
-                        "Lean $1,000; working $3,500; expanded $5,000. Fund "
-                        "telephone numbers, initial Ringba or Retreaver configuration, "
-                        "evidence integration, landing-page instrumentation, and "
-                        "test-call fixtures before connecting paid traffic."
-                    ),
-                ),
-                (
-                    "Contracts and operating setup",
-                    "$4,500 working allocation for documented counterparties",
-                    4500.0,
-                    (
-                        "Lean $1,000; working $4,500; expanded $7,000. Fund "
-                        "buyer and publisher contract work, jurisdiction-specific "
-                        "advertising review, accounting setup, recording procedures, "
-                        "and written acceptance and dispute definitions."
-                    ),
-                ),
-                (
-                    "Controlled acquisition experiments",
-                    "$14,000 working allocation for measured traffic cohorts",
-                    14000.0,
-                    (
-                        "Lean $4,000; working $14,000; expanded $21,000. Release "
-                        "media or publisher test spending in capped increments. "
-                        "Stop a source when realized contribution or evidence "
-                        "quality breaches its documented operating threshold."
-                    ),
-                ),
-                (
-                    "Settlement float and contingency",
-                    "$8,000 working allocation for timing and reversals",
-                    8000.0,
-                    (
-                        "Lean $2,000; working $8,000; expanded $12,000. Reserve "
-                        "cash for prepaid acquisition, buyer payment delays, and "
-                        "reversals. Base acquisition averages about $1,047.95 "
-                        "daily; seven days consumes about $7,335.62 before "
-                        "other obligations, making an $8,000 reserve tight."
-                    ),
-                ),
+            "note": (
+                "Sources: Ringba / Adam (ojcbZuG798w), Ringba / Jordan Soto (yFkULiyenzk, 0eCCbtHmCJE)."
+            ),
+            "buckets": [
+                {
+                    "label": "Low-paying buyer in a split",
+                    "low": 6,
+                    "high": 6,
+                    "notes": "Route by priority and weight, not simultaneous dial.",
+                },
+                {
+                    "label": "Mid-paying buyer in a split",
+                    "low": 10,
+                    "high": 10,
+                    "notes": "East Coast and West Coast buyers need geo-accurate routing, not area code.",
+                },
+                {
+                    "label": "Top-paying buyer in a split",
+                    "low": 22,
+                    "high": 22,
+                    "notes": "Cap new buyers at $2,000 for the first 2 weeks until they pay.",
+                },
+                {
+                    "label": "Zip-level premium mortgage call",
+                    "low": 10,
+                    "high": 250,
+                    "notes": "Premium zips sold to smarter buyers; the rest dumped on networks.",
+                },
             ],
-        ),
-        (
-            "diag-08-thirty-day-controlled-launch",
-            "timeline_roadmap",
-            "Thirty days to an instrumented operating pilot",
-            "Four milestones prepare the exchange; first-deal planning remains one to three months.",
-            12,
-            "operating_framework",
-            (
-                "Numeric values mark milestone end days. This sprint establishes "
-                "buyer terms, tested routing, capped experiments, and reconciliation. "
-                "It does not assume a buyer payment or profitable campaign will "
-                "arrive within the first 30 days."
+        },
+        {
+            "diagram_id": "diag-08-unit-economics-scale-roadmap",
+            "chapter_number": 12,
+            "chart_type": "timeline_roadmap",
+            "title": "Deposit, Track, Reconcile, Then Scale",
+            "subtitle": "A four-step operating sequence for protecting the spread",
+            "caption": (
+                "The payout rate alone never proves a deal is profitable; rejected calls, duplicates, "
+                "callback fraud, telecom costs and buyer credit risk all eat into the spread."
             ),
-            (
-                "Increase exposure only after the evidence, contribution, and "
-                "collection record supports it. Carry unfinished buyer contracting "
-                "or collection work into the stated one-to-three-month deal window."
+            "assumptions_note": (
+                "Week labels group practitioner gates into an operating order; practitioners did not "
+                "prescribe a four-week schedule. Thresholds are attributed claims from John Ventura, "
+                "ceohec, Ringba, TrackDrive, ExclusiveLiveCall and Marketcall."
             ),
-            [
-                (
-                    "Days 1-7",
-                    "Define one niche and executable buyer terms",
-                    7.0,
-                    (
-                        "Choose one jurisdiction and service category. Document "
-                        "call price, connected-time definition, duplicate window, "
-                        "rejection reasons, payment timing, and recording duties. "
-                        "Complete the four pre-flight checks and assign a named "
-                        "owner to each operating control."
+            "note": (
+                "Sources: ceohec (SkS03nygdoY), Ringba (JxU9bgFTUUs), John Ventura (x3UYaJjRdx0, "
+                "KeC4mKXnzs4), Marketcall (Dq9KUpYUWsE), TrackDrive (y8V08rKKNWY, yYZ5s6jFzQs), "
+                "ExclusiveLiveCall (b7P50zcQzTs)."
+            ),
+            "weeks": [
+                {
+                    "week": "Week 1",
+                    "title": "Collect deposits and sign the paper",
+                    "deliverable": (
+                        "$500 to $1,000 minimum buyer deposit up front; QA addendum with a 50% "
+                        "penalty per CPA for callback fraud; signed affiliate one-pager."
                     ),
-                ),
-                (
-                    "Days 8-14",
-                    "Prove routing and evidence with authorized test calls",
-                    14.0,
-                    (
-                        "Configure Ringba or Retreaver buyer caps and fallback "
-                        "paths. Test no-bid, timeout, disconnect, duplicate-event, "
-                        "and webhook-retry cases. Verify evidence retrieval and "
-                        "recording access without sending test conversions into "
-                        "production bid optimization."
+                    "gate": "Always get payments up front before routing a call (ceohec).",
+                },
+                {
+                    "week": "Week 2",
+                    "title": "Run tracked calls into a paid test",
+                    "deliverable": (
+                        "Call tracker on every campaign; sell buyers a $2-5k test that reads out "
+                        "within 24-48 hours."
                     ),
-                ),
-                (
-                    "Days 15-21",
-                    "Run capped cohorts and inspect every disputed call",
-                    21.0,
-                    (
-                        "Release a limited acquisition tranche after buyer "
-                        "contracting is complete. Compare source cost, connected "
-                        "duration, buyer acceptance, and evidence completeness. "
-                        "Reconcile S2S values to accepted calls; pause faulty "
-                        "routes rather than padding call duration."
+                    "gate": "No campaign runs without a call tracker (Marketcall).",
+                },
+                {
+                    "week": "Week 3",
+                    "title": "Reconcile and dispute with specifics",
+                    "deliverable": (
+                        "Pay publishers only on qualified calls; open disputes with dated specifics "
+                        "such as 'between the third and the seventh'."
                     ),
-                ),
-                (
-                    "Days 22-30",
-                    "Close the first reconciliation and set the next exposure cap",
-                    30.0,
-                    (
-                        "Match call records, buyer statements, publisher invoices, "
-                        "and any received payments. Separate billed amounts from "
-                        "cash collected. If net-7 collectability remains unproven, "
-                        "retain pilot caps and extend observation instead of "
-                        "treating an unpaid invoice as validated demand."
+                    "gate": "When 15 of 100 calls are disputed, find out why; a buyer failing to close is not an invalid call.",
+                },
+                {
+                    "week": "Week 4",
+                    "title": "Scale only past the billable bar",
+                    "deliverable": (
+                        "Billable rate at or above 50%, positive post-reconciliation margin, and "
+                        "clean QA."
                     ),
-                ),
+                    "gate": "Add affiliates gradually and never 10 at once (John Ventura).",
+                },
             ],
-        ),
+        },
     ]
 
-    return [
-        dict(
-            diagram_id=identifier,
-            chart_type=kind,
-            title=title,
-            subtitle=subtitle,
-            chapter_number=chapter,
-            epistemic_tag=tag,
-            assumptions_note=note,
-            caption=caption,
-            stages=[
-                dict(
-                    label=label,
-                    value=value,
-                    numeric_value=float(number),
-                    detail=detail,
-                )
-                for label, value, number, detail in stages
-            ],
-        )
-        for (
-            identifier,
-            kind,
-            title,
-            subtitle,
-            chapter,
-            tag,
-            note,
-            caption,
-            stages,
-        ) in specs
-    ]
+
+VOLUME_039_POSITIONING_ALTERNATIVES: List[Dict[str, Any]] = [
+    {
+        "title": "The Spread Operator",
+        "subtitle": "Own the Tracking, Hide the Margin, and Jump from Network Offers to Direct Buyers",
+        "audience": "Affiliates and media buyers running pay-per-call offers through networks who want direct-buyer margins",
+        "research_basis": (
+            "Ringba pegs network margins at 35-100% on average and a network-to-direct jump at 100 "
+            "to 300 points; TrackDrive and John Ventura show the $35 payout against $50+ buyer price "
+            "spread and scale only past a 50% billable rate."
+        ),
+        "sources": [
+            "https://www.youtube.com/watch?v=4kaOQgGnpJo&t=838s",
+            "https://www.youtube.com/watch?v=RhODbxB4ylU&t=96s",
+            "https://www.youtube.com/watch?v=20s5iGyl_MY&t=1469s",
+            "https://www.youtube.com/watch?v=KeC4mKXnzs4&t=577s",
+        ],
+        "validation_status": "Grounded strictly in Vol. 039 YouTube practitioner transcripts.",
+    },
+    {
+        "title": "Milliseconds and Margins",
+        "subtitle": "Ring Trees, Ping-Post Auctions, and Routing Rules That Decide Who Gets Paid",
+        "audience": "Call brokers and lead distributors configuring Ringba, Retreaver, TrackDrive or boberdoo",
+        "research_basis": (
+            "Ringba routes on estimated earnings per call in a couple hundred milliseconds; ceohec "
+            "pads buffers by 8 seconds; boberdoo returns a $10 bid minus $2 margin as an $8 offer; "
+            "duplicates run 5% to 25% of call flow."
+        ),
+        "sources": [
+            "https://www.youtube.com/watch?v=yat7hRHHsKY&t=148s",
+            "https://www.youtube.com/watch?v=RWVdTqjVYE8&t=599s",
+            "https://www.youtube.com/watch?v=yCAVYNpSdZI&t=1684s",
+            "https://www.youtube.com/watch?v=ojcbZuG798w&t=845s",
+        ],
+        "validation_status": "Grounded strictly in Vol. 039 YouTube practitioner transcripts.",
+    },
+    {
+        "title": "The Clean Call",
+        "subtitle": "Consent Records, Billable Buffers, and Buyer-Side Discipline in Insurance and Legal Calls",
+        "audience": "Insurance agencies, law firms and call buyers carrying the burden of proof on purchased calls and leads",
+        "research_basis": (
+            "Eric Troutman reads only 2 of 10 one-to-one forms as passing and sets a $500 floor per "
+            "invalid call; ActiveProspect advocates an individual bid per company; PRiMeCalls warns "
+            "that quoting price inside the buffer makes a call billable."
+        ),
+        "sources": [
+            "https://www.youtube.com/watch?v=uXTg2yB_ZTM&t=2652s",
+            "https://www.youtube.com/watch?v=KBFaRW7QmVQ&t=1990s",
+            "https://www.youtube.com/watch?v=NlU2OB8OEBI&t=1013s",
+            "https://www.youtube.com/watch?v=B5upgjqvbi4&t=154s",
+        ],
+        "validation_status": "Grounded strictly in Vol. 039 YouTube practitioner transcripts.",
+    },
+]

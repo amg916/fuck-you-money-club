@@ -1,701 +1,814 @@
 from __future__ import annotations
 
-CHAPTER_11 = {
-    "id": "Q11",
-    "chapter_id": "Q11",
-    "chapter_number": 11,
-    "question_number": 11,
-    "slug": "pod-architecture-contractor-kpis-exit-valuation",
-    "question_prompt": "How do you structure a lean 1 FT + 3 C (4 people) -> 2 FT + 4 C (6 people) pod, enforce weekly scorecards, and build transferable books that command a premium exit multiple (or durable cash cow)?",
-    "kicker": "Q11 / THE BIG MONEY PLAYBOOKS",
-    "title": "Pod Architecture, Contractor KPIs & Exit Valuation",
-    "subtitle": "Eleven Infrastructure Plays, Evidence-Based Contractor Pay, SNDA Transferability, IOS Cohort Books & Buyer Earnings Bridges",
-    "layout_template": "action_checklist",
-    "reading_time_minutes": 14,
-    "executive_summary": (
-        "Candidate #42, ranked #11 of 42 with a 91/100 Money-to-Manpower Score, "
-        "works only when eleven mapped plays share one evidence system rather than "
-        "eleven separate teams. This chapter assigns origination, rights diligence, "
-        "environmental verification, collections, and transfer preparation to a "
-        "1 FT + 3 C pod, expanding to 2 FT + 4 C only when accepted workload "
-        "and collected contribution support the seats. Canonical annual owner "
-        "profits are $33,600 Conservative, $214,000 Base, and $494,000 Scaled. "
-        "Build contractor pay around accepted deliverables, cap connected "
-        "counterparty exposure at 25%, and separate transaction spreads from "
-        "recurring IOS cohorts. Buyers pay for assignable rights, reproducible "
-        "books, and replaceable founder labor; durable cash ownership demands "
-        "the same operating discipline."
-    ),
-    "key_metrics": [
-        {
-            "label": "Conservative",
-            "value": "$120,000",
-            "context": "Annual operator revenue from net spreads and assignment fees",
-            "note": "28% net margin; $33,600 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Base",
-            "value": "$535,000",
-            "context": "Annual operator revenue from net spreads and assignment fees",
-            "note": "40.0% net margin; $214,000 annual owner net profit; 1 FT + 3 C",
-        },
-        {
-            "label": "Scaled",
-            "value": "$950,000",
-            "context": "Annual operator revenue from net spreads and assignment fees",
-            "note": "52% net margin; $494,000 annual owner net profit; 2 FT + 4 C",
-        },
-    ],
-    "sections": [
-        {
-            "heading": "1. Assign Eleven Plays to Four Seats Before Adding Two",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Organize Candidate #42 around deliverables, not asset silos. For this "
-                    "chapter, the eleven-play operating map is P1 tower-parcel origination, "
-                    "P2 rooftop lease-option sourcing, P3 telecom easement underwriting, "
-                    "P4 lender-SNDA and easement resale execution, P5 billboard ground-option "
-                    "sourcing, P6 DOT permit and spacing diligence, P7 permitted billboard "
-                    "rights assignment, P8 IOS yard sourcing, P9 IOS environmental and "
-                    "heavy-axle diligence, P10 NNN master-lease and sublease structuring, "
-                    "and P11 RFID access, billing, and collections. These are eleven "
-                    "repeatable workflows within three economic engines, not eleven "
-                    "independent revenue assumptions. Give every opportunity a parcel "
-                    "identifier, play code, beneficial-owner group, rights-expiration date, "
-                    "and accountable seat in Airtable or a structured PostgreSQL register. "
-                    "FCC Antenna Structure Registration records seed tower searches; "
-                    "they do not establish parcel ownership, available easement rights, "
-                    "or universal tower coverage. State DOT AADT layers prioritize "
-                    "billboard corridors but cannot establish permit availability. QGIS "
-                    "joins those layers to assessor parcels, then the analyst attaches "
-                    "source dates and confidence notes. The founder accepts only records "
-                    "that identify a plausible counterparty and a specific monetizable "
-                    "right. This prevents a cheap scraped lead from masquerading as "
-                    "an underwritten opportunity or consuming scarce counsel capacity."
-                ),
-                (
-                    "At 1 FT + 3 C, the full-time founder owns capital allocation, "
-                    "principal negotiations, signed commitments, collections escalation, and "
-                    "the monthly close. Contractor one is a GIS and origination analyst "
-                    "covering P1, P2, P5, and P8. Contractor two is licensed real-estate "
-                    "counsel covering title exceptions, brokerage boundaries, P4, P6, P7, "
-                    "and P10; the founder retains commercial underwriting for P3. "
-                    "Contractor three is an appropriately qualified environmental and "
-                    "field specialist covering P9 and physical acceptance for P11. "
-                    "The founder configures billing and access integrations rather than "
-                    "quietly adding an uncounted automation employee. Counsel must identify "
-                    "jurisdiction-specific licensing limits before anyone negotiates for "
-                    "another party or earns transaction-contingent compensation. A principal "
-                    "option does not automatically create an exemption. Environmental "
-                    "qualifications likewise cannot be replaced by a generic site inspector. "
-                    "Title companies, surveyors, laboratories, and recording offices remain "
-                    "transaction suppliers, with their invoices charged to the relevant "
-                    "cohort. The four-person claim describes recurring staffed seats, "
-                    "not an assertion that every statutory service is performed internally. "
-                    "Report supplier spending and founder hours beside headcount so "
-                    "outsourcing does not manufacture a misleading efficiency story. "
-                    "At low volume, purchase scoped contractor capacity rather than "
-                    "three full-time workloads disguised as retainers."
-                ),
-                (
-                    "Expand to 2 FT + 4 C by adding a full-time portfolio and "
-                    "transaction manager plus a fractional accrual bookkeeper. The manager "
-                    "takes weekly scheduling, evidence acceptance, tenant escalations, "
-                    "and transfer-file maintenance; the bookkeeper owns reconciliations "
-                    "and cohort schedules while the founder approves payments. Do "
-                    "not assume the Scaled case proves these hires are affordable "
-                    "in a particular month. Require eight consecutive weeks of "
-                    "documented backlog, a replacement-cost budget, and collected "
-                    "contribution sufficient to cover each added seat and reserve "
-                    "requirements. Preserve segregation between contractor submission, "
-                    "deliverable acceptance, and bank release even when one person "
-                    "holds several operational responsibilities. A second reviewer "
-                    "checks changed bank instructions through a previously verified "
-                    "telephone number. Maintain a seat manual with delegated dollar "
-                    "limits, escalation deadlines, account-access ownership, and substitute "
-                    "coverage. Contractors should control legitimate independent methods "
-                    "and scheduling within deliverable deadlines; assess classification "
-                    "under applicable federal and state tests rather than relying "
-                    "on contract labels. In California, counsel should evaluate Labor "
-                    "Code section 2775 and relevant exceptions. Log all founder "
-                    "interventions for ninety days. The resulting task inventory "
-                    "becomes both the hiring specification and the buyer's evidence "
-                    "that earnings survive a change in ownership."
-                ),
-            ],
-            "table": {
-                "caption": "Eleven-Play Seat Ownership and Evidence Handoffs",
-                "headers": [
-                    "Seat and mapped operating coverage",
-                    "Accepted output before commercial advancement",
-                    "Authority boundary and review responsibility",
-                    "Capacity signal and substitution mechanism",
-                ],
-                "rows": [
-                    [
-                        "Founder owns P3 underwriting and all capital commitments.",
-                        "Signed investment memo reconciles rights, costs, and downside exposure.",
-                        "Only authorized signatories execute options, leases, and purchase commitments.",
-                        "Track founder intervention hours against documented substitute execution capability.",
-                    ],
-                    [
-                        "GIS contractor covers P1 tower and P2 rooftop sourcing.",
-                        "Parcel packet links ownership evidence, structures, and dated contact research.",
-                        "Analyst identifies prospects without representing unverified ownership or availability.",
-                        "Batch acceptance rate determines next week's paid research allocation.",
-                    ],
-                    [
-                        "GIS contractor also covers P5 billboard and P8 IOS sourcing.",
-                        "Corridor packet includes traffic layers, zoning evidence, and access constraints.",
-                        "Founder rejects speculative inventory before expensive professional diligence begins.",
-                        "Separate sourcing queues prevent attractive parcels overwhelming available diligence capacity.",
-                    ],
-                    [
-                        "Counsel covers P4 transfers and P6 through P7 billboard rights.",
-                        "Rights matrix identifies lender consents, permit conditions, and assignment mechanics.",
-                        "Counsel resolves legal interpretations; founder selects acceptable commercial exposure.",
-                        "Deadline register triggers substitute counsel before options lose remaining value.",
-                    ],
-                    [
-                        "Counsel structures P10 master leases while founder approves pricing.",
-                        "Lease package reconciles subletting rights, security, remedies, and restoration obligations.",
-                        "No operational shortcut overrides express landlord or lender consent requirements.",
-                        "Lease exception count measures complexity rather than raw document volume.",
-                    ],
-                    [
-                        "Field specialist covers P9 diligence and P11 physical acceptance.",
-                        "Qualified environmental findings accompany drainage, pavement, access, and equipment observations.",
-                        "Specialist reports technical conclusions within verified credentials and engagement scope.",
-                        "Independent reinspection addresses material defects before tenant access begins.",
-                    ],
-                    [
-                        "Scaled manager and fourth contractor absorb coordination and accrual accounting.",
-                        "Manager accepts evidence; bookkeeper prepares reconciliations and cohort close schedules.",
-                        "Founder retains bank release and exceptional commercial commitment authority.",
-                        "Eight weeks of supported workload precede expansion to six seats.",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "INSIDER PRO-TIPS",
-                "title": "Make Scarce Seats Produce Transferable Evidence",
-                "body": (
-                    "The strongest small pods buy verified decisions rather than activity. "
-                    "Use these tactics across the eleven-play register."
-                ),
-                "items": [
-                    "Ask the title provider to flag mortgage beneficiaries immediately; route SNDA requests before paying for a complete resale package.",
-                    "Store billboard spacing measurements with the controlling DOT rule version, measurement method, and permit-file correspondence; screenshots alone cannot resolve conflicting interpretations.",
-                    "Photograph IOS drainage paths after rainfall when access permits, then compare observations with the environmental professional's scope and stormwater obligations.",
-                    "Export RFID credentials, billing mappings, and exception logs monthly into owner-controlled storage; test restoration without the original installer.",
-                ],
-            },
-        },
-        {
-            "heading": "2. Pay for Accepted Evidence and Run a Weekly Exception Scorecard",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Contractor compensation should purchase bounded outputs with acceptance "
-                    "criteria, not reward optimistic pipeline labels. An illustrative analyst "
-                    "schedule pays $60 for an accepted parcel packet, with a $1,200 "
-                    "monthly ceiling unless the founder expands scope in writing. Acceptance "
-                    "requires a source-linked ownership search, relevant zoning extract, "
-                    "contact provenance, and a recorded duplication check. Counsel receives "
-                    "a scoped fixed fee or hourly cap appropriate to the jurisdiction "
-                    "and engagement; never treat a generic $500 document allowance "
-                    "as sufficient for contested title or unusual easements. The field "
-                    "specialist quotes separately for desktop triage, physical inspection, "
-                    "and a qualifying Phase I assessment. Those services have different "
-                    "credentials and cannot share a misleading flat inspection price. "
-                    "Use a two-business-day acknowledgment target, a five-business-day "
-                    "standard packet target after complete inputs, and one-business-day "
-                    "notification of missing inputs or external dependencies. Pause "
-                    "the clock visibly when waiting on a lender or agency. "
-                    "Pay undisputed accepted work promptly and define correction "
-                    "responsibilities before engagement. Any holdback must be contractually "
-                    "agreed and compatible with applicable payment rules. Do not "
-                    "pay unlicensed referral or negotiation bonuses merely because "
-                    "a contractor calls the payment a research incentive."
-                ),
-                (
-                    "Run the weekly meeting from a frozen Monday extract rather "
-                    "than a live dashboard that changes during discussion. Count "
-                    "accepted parcels, qualified rights conversations, diligence-ready opportunities, "
-                    "signed options, consent-ready files, closed spreads, and collected "
-                    "IOS contribution separately. Each stage needs a numerator, "
-                    "denominator, timestamp, and owner. An illustrative weekly analyst "
-                    "batch of twenty submissions with sixteen accepted yields 80% "
-                    "first-pass acceptance; four corrected packets remain rework, not "
-                    "four additional leads. A counsel queue of ten complete "
-                    "files with eight delivered within the agreed clock yields "
-                    "80% on-time delivery. External waiting time remains visible "
-                    "beside active processing time. Set initial internal targets "
-                    "at 90% first-pass acceptance, 95% deadline adherence, and "
-                    "zero expired rights caused by missed internal dates, then "
-                    "revise capacity assumptions after eight measured weeks. These "
-                    "are management targets, not scorecard revenue forecasts. For "
-                    "IOS, report occupied usable acreage, collected rent, arrears "
-                    "aging, gate-access exceptions, and landlord obligations through "
-                    "the next tenant break. For telecom and billboards, track "
-                    "buyer-ready documentation and consent aging instead of celebrating "
-                    "unpriced easement face values. End each meeting with three "
-                    "named exceptions, one responsible owner per exception, and "
-                    "a dated next action."
-                ),
-                (
-                    "Apply a 25% maximum to each connected customer or counterparty "
-                    "group, testing trailing-twelve-month recognized operator revenue, recurring "
-                    "contracted IOS contribution, outstanding receivables, and forward fixed "
-                    "lease commitments separately. Aggregate affiliates, common guarantors, "
-                    "and economically connected buyers; splitting invoices across related "
-                    "entities does not diversify exposure. Test both tenants and "
-                    "landlords because four unrelated tenants can still depend "
-                    "on one master landlord. At Base revenue, the revenue "
-                    "ceiling is $133,750 per connected group; at Scaled it "
-                    "is $237,500. A young operation with one completed transaction "
-                    "will necessarily breach a trailing-revenue cap. Label that "
-                    "condition explicitly, stop adding discretionary same-group exposure, "
-                    "and do not describe the book as diversified until "
-                    "the denominator supports it. Prospective commitments should satisfy "
-                    "the cap before signature; temporary legacy breaches require "
-                    "a dated reduction plan and founder review. Stress-test "
-                    "loss of the largest tenant against master rent, taxes, "
-                    "insurance, security, and restoration spending. Neither a refundable "
-                    "deposit nor an unsigned replacement inquiry cures concentration. "
-                    "Document the difference between acquiring another customer and "
-                    "acquiring another correlated risk. The six-person pod must "
-                    "improve survivability, not simply process more exposure through "
-                    "the same landlord, lender, billboard operator, or easement buyer."
-                ),
-            ],
-            "table": {
-                "caption": "Monday Scorecard Definitions, Targets, and Exception Responses",
-                "headers": [
-                    "Metric and accountable operating seat",
-                    "Exact denominator or timing convention",
-                    "Initial target or hard exposure limit",
-                    "Required response when the measure deteriorates",
-                ],
-                "rows": [
-                    [
-                        "Analyst owns first-pass parcel packet acceptance across sourcing plays.",
-                        "Accepted original submissions divided by all original submissions that week.",
-                        "Target at least ninety percent after initial calibration period.",
-                        "Inspect rejected evidence categories before purchasing additional sourcing volume.",
-                    ],
-                    [
-                        "Counsel owns complete-file turnaround across rights and consent workflows.",
-                        "On-time complete packets divided by packets due under agreed clocks.",
-                        "Target ninety-five percent with external waiting time separately disclosed.",
-                        "Reallocate work before options approach their contractual expiration dates.",
-                    ],
-                    [
-                        "Founder owns option expiry and lender consent deadline integrity.",
-                        "Count missed internal dates that cause rights loss or repricing.",
-                        "Permit zero internally caused expirations across all eleven mapped plays.",
-                        "Freeze new commitments until reminder ownership and substitute coverage recover.",
-                    ],
-                    [
-                        "Founder or manager owns connected-group revenue and obligation exposure.",
-                        "Calculate separate ratios for revenue, contribution, receivables, and lease commitments.",
-                        "Each connected group's exposure remains at or below twenty-five percent.",
-                        "Stop incremental exposure and implement documented legacy concentration reduction.",
-                    ],
-                    [
-                        "Portfolio owner tracks IOS cash collection and arrears aging.",
-                        "Compare received cash with invoices due under signed tenant terms.",
-                        "Investigate every overdue balance and reconcile collection exceptions each week.",
-                        "Use contractual notices while preserving documented access and dispute procedures.",
-                    ],
-                    [
-                        "Field specialist tracks safety-sensitive and revenue-sensitive equipment exceptions.",
-                        "Measure incident severity, discovery time, acknowledgment time, and closure evidence.",
-                        "Escalate critical access failures immediately through documented emergency contacts.",
-                        "Use tested manual access procedures while qualified specialists restore equipment.",
-                    ],
-                    [
-                        "Founder tracks accepted backlog against available paid contractor capacity.",
-                        "Divide estimated accepted-work hours by contracted available production hours.",
-                        "Require eight measured weeks before authorizing permanent seat expansion.",
-                        "Reduce intake or buy bounded capacity before changing recurring staffing.",
-                    ],
-                ],
-            },
-            "sop_steps": [
-                {
-                    "step": 1,
-                    "title": "Freeze the evidence-backed weekly extract",
-                    "action": "Export stage counts, aging, concentration ratios, and collected contribution.",
-                    "detail": "Use a dated snapshot with source links and preserve the prior week's denominator definitions.",
-                },
-                {
-                    "step": 2,
-                    "title": "Accept or reject contractor deliverables",
-                    "action": "Review source evidence and record acceptance separately from invoice approval.",
-                    "detail": "Identify missing inputs, controllable defects, and external waiting periods without inflating completed-work counts.",
-                },
-                {
-                    "step": 3,
-                    "title": "Resolve the three highest-value exceptions",
-                    "action": "Assign one owner and one deadline to each material risk.",
-                    "detail": "Prioritize expiring rights, concentration breaches, environmental findings, and cash shortfalls ahead of fresh lead volume.",
-                },
-                {
-                    "step": 4,
-                    "title": "Release payments and update capacity",
-                    "action": "Pay accepted obligations and adjust the following week's scoped assignments.",
-                    "detail": "Verify changed payment instructions independently, preserve disputed-item records, and report added commitments against available cash.",
-                },
-            ],
-        },
-        {
-            "heading": "3. Close Accrual Cohorts Without Inflating Operator Revenue",
-            "epistemic_status": "operating_framework",
-            "paragraphs": [
-                (
-                    "Maintain a management revenue bridge that exactly preserves Formula "
-                    "v2.0 while distinguishing it from statutory accounting presentation. "
-                    "The canonical annual operator revenue cases are $120,000, "
-                    "$535,000, and $950,000, with owner profits of $33,600, "
-                    "$214,000, and $494,000 respectively. Their implied total expense "
-                    "budgets are $86,400, $321,000, and $456,000, producing "
-                    "28%, 40.0%, and 52% margins. Those budgets include "
-                    "the modeled cost burden; they are not permission to "
-                    "add contractor costs again after calculating profit. Monthly "
-                    "overhead of $2,000–$12,000 describes a separate operating "
-                    "range and does not reconcile annual deal costs by "
-                    "itself. The scorecard's gross revenue label means operator "
-                    "spreads and assignment fees here, not institutional purchase "
-                    "principal, property value, or tenant throughput. Preserve the "
-                    "retained contribution basis once, without applying an invented "
-                    "second retained-share percentage. For actual reporting, have the "
-                    "accountant determine whether ASC 606 principal-agent presentation "
-                    "or another standard governs each contract. IOS head leases "
-                    "and subleases generally require ASC 842 analysis; their "
-                    "management spread bridge must reconcile to the resulting "
-                    "lease accounting. Never force every cash receipt into "
-                    "one revenue account just to resemble the model."
-                ),
-                (
-                    "Open a cohort when the pod first commits nonrecoverable "
-                    "diligence spending, using asset family, parcel, origination month, "
-                    "and disposition channel as dimensions. Post legal invoices, "
-                    "survey costs, environmental work, option consideration, permit charges, "
-                    "and closing adjustments against that identifier. The accountant "
-                    "determines capitalization or expense treatment from the relevant "
-                    "rights and standards; the cohort schedule retains cash "
-                    "economics either way. As an illustrative bridge, a "
-                    "telecom rights resale collecting $240,000 after a $210,000 "
-                    "rights acquisition produces a $30,000 acquisition-to-resale spread "
-                    "before separately tracked transaction expenses. The $240,000 "
-                    "receipt is not automatically scorecard operator revenue. A "
-                    "$25,000 billboard assignment fee belongs to its enforceable "
-                    "earning event, not the date a prospective operator "
-                    "expresses interest. An IOS yard collecting $12,000 monthly "
-                    "against $8,000 of head rent and $1,000 of "
-                    "specified pass-through obligations yields $3,000 of management "
-                    "spread before remaining operator costs. These examples illustrate "
-                    "classification, not an additional forecast layered onto the "
-                    "canonical cases. Identify deposits, escrow balances, prepaid rent, "
-                    "and refundable option payments separately. Accrue earned receivables "
-                    "and incurred obligations at each month end, and "
-                    "reconcile billing exports to bank activity and signed "
-                    "contract schedules before declaring a cohort profitable."
-                ),
-                (
-                    "Close monthly with a bank reconciliation, receivables aging, "
-                    "payables cutoff, deposit liability rollforward, rights inventory schedule, "
-                    "and committed lease exposure schedule. Reconcile each closed "
-                    "transaction to the settlement statement and each IOS "
-                    "cohort to occupied acreage, contract rates, credits, and "
-                    "collected cash. Preserve negative cohorts rather than moving "
-                    "failed diligence into a vague corporate bucket that "
-                    "flatters successful deal margins. Build a twelve-month contribution "
-                    "waterfall separating repeatable IOS spreads, repeat transactions with "
-                    "existing counterparties, and genuinely one-time assignments. A returning "
-                    "easement buyer does not turn an uncontracted future "
-                    "flip into recurring revenue. Record founder labor by "
-                    "activity so a buyer can estimate replacement cost "
-                    "without inventing a management team. Keep source documents "
-                    "in owner-controlled Microsoft SharePoint or Google Drive with "
-                    "restricted permissions, version history, and a tested export. "
-                    "Store executed agreements separately from drafts and preserve "
-                    "the final exhibit boundaries. Contractor-created maps, scripts, "
-                    "templates, and operating manuals need written ownership provisions "
-                    "and appropriate licenses for embedded third-party material. "
-                    "Under 17 U.S.C. section 204(a), copyright ownership "
-                    "transfers generally require a signed writing; merely paying "
-                    "an invoice does not establish that transfer. Counsel "
-                    "should reconcile assignment language with actual contributor "
-                    "signatures before a buyer discovers an ownership gap."
-                ),
-            ],
-            "table": {
-                "caption": "Accrual Close, Cohort Economics, and Intellectual Property Evidence",
-                "headers": [
-                    "Ledger or evidence control being maintained",
-                    "Source document and accountable preparation responsibility",
-                    "Reconciliation that protects the canonical revenue basis",
-                    "Transfer-ready artifact available for buyer examination",
-                ],
-                "rows": [
-                    [
-                        "Telecom acquisitions and resales retain separate settlement cash detail.",
-                        "Founder supplies executed rights documents and both settlement statements.",
-                        "Bridge acquisition consideration to realized spread without counting principal twice.",
-                        "Cohort worksheet traces each adjustment to signed closing evidence.",
-                    ],
-                    [
-                        "Billboard assignment fees follow enforceable contract earning conditions.",
-                        "Counsel identifies permit status, assignment effectiveness, and remaining obligations.",
-                        "Separate earned fees from deposits and conditional advance receipts.",
-                        "Assignment packet includes agency correspondence and evidence of required consents.",
-                    ],
-                    [
-                        "IOS cohorts distinguish head obligations from tenant billing schedules.",
-                        "Founder initially maintains lease schedules; scaled bookkeeper prepares monthly reconciliations.",
-                        "Bridge lease-accounting presentation to retained management spreads without double subtraction.",
-                        "Monthly cohort file shows acreage, rates, credits, cash, and obligations.",
-                    ],
-                    [
-                        "Security deposits and escrow balances remain distinct from earned income.",
-                        "Bank statements and signed contracts establish ownership and release conditions.",
-                        "Reconcile opening balances, receipts, authorized applications, refunds, and closing liabilities.",
-                        "Liability rollforward supports settlement adjustments and tenant deposit transfer instructions.",
-                    ],
-                    [
-                        "Failed diligence remains attached to original asset and origination cohort.",
-                        "Vendor invoices identify parcel identifiers and the actual service performed.",
-                        "Preserve unsuccessful deal costs within aggregate operator earnings calculations.",
-                        "Loss register explains writeoffs and revisions to underwriting criteria.",
-                    ],
-                    [
-                        "Canonical revenue and profit cases retain a transparent expense bridge.",
-                        "Founder reviews annual expense totals of $86,400, $321,000, and $456,000.",
-                        "Confirm expenses already included are never deducted a second time.",
-                        "Model reconciliation distinguishes reported accounts from management contribution presentation.",
-                    ],
-                    [
-                        "Contractor-created intellectual property requires documented ownership or usable licenses.",
-                        "Counsel collects contributor signatures and identifies embedded third-party restrictions.",
-                        "Match deliverable inventory to signed assignments and applicable license terms.",
-                        "Buyer receives transferable scripts, maps, manuals, and documented access credentials.",
-                    ],
-                ],
-            },
-        },
-        {
-            "heading": "4. Underwrite Buyer Multiples and the Cash-Cow Alternative",
-            "epistemic_status": "illustrative_model",
-            "paragraphs": [
-                (
-                    "Value the operating company separately from the property rights "
-                    "it trades. The volume's 16×–22× telecom exit concept "
-                    "concerns an asset-level multiple of a precisely defined "
-                    "annual contractual cash flow, subject to term, escalators, "
-                    "credit, title, and buyer underwriting. It is not "
-                    "a defensible multiple of the pod's owner profit. "
-                    "For planning, test an illustrative 2×–3× normalized seller's "
-                    "discretionary earnings range for a founder-dependent transaction brokerage-like "
-                    "operation, and 3×–5× normalized EBITDA for a demonstrably "
-                    "transferable, manager-run mixed book with durable recurring contribution. "
-                    "These are sensitivity assumptions, not observed comparable-sale evidence. "
-                    "Do not apply either range until defining the "
-                    "earnings measure and replacing unsupported addbacks. Canonical owner "
-                    "profit is neither automatically SDE nor EBITDA. Reconcile "
-                    "owner compensation, interest, taxes, depreciation, amortization, extraordinary "
-                    "costs, and replacement labor using actual accounts. If "
-                    "the Base $214,000 profit already approximated pre-replacement operating "
-                    "earnings and required $100,000 of incremental annual management "
-                    "cost, the illustrative replacement-adjusted figure would be $114,000. "
-                    "A 3×–4× sensitivity would indicate $342,000–$456,000 enterprise "
-                    "value before further normalization. If replacement labor is "
-                    "already expensed, subtracting it again would understate value "
-                    "and contradict the clean-book discipline established earlier."
-                ),
-                (
-                    "For the Scaled case, the same explicit hypothetical "
-                    "$100,000 incremental replacement adjustment would reduce $494,000 "
-                    "to $394,000; a 3×–5× sensitivity gives $1,182,000–$1,970,000 "
-                    "enterprise value. That arithmetic does not establish a "
-                    "market price, and the added full-time manager may "
-                    "already replace much of the founder's work. Obtain "
-                    "actual replacement evidence before using the adjustment. Split "
-                    "earnings quality before selecting any multiple. A ten-year "
-                    "IOS sublease supported by a shorter head lease "
-                    "is not ten years of durable spread. A "
-                    "billboard permit that cannot survive assignment without agency "
-                    "action is not freely transferable inventory. A telecom "
-                    "easement burdened by unresolved mortgage priority may require "
-                    "a lender instrument before closing. Build a contract "
-                    "matrix showing assignment, change-of-control, notice, consent, renewal, "
-                    "termination, security, and restoration provisions for every material "
-                    "right. Separate enterprise value from seller proceeds by "
-                    "bridging funded debt, debt-like items, agreed cash treatment, "
-                    "working-capital adjustments, transaction costs, and contingent consideration. "
-                    "Lease liabilities need explicit transaction treatment; subtracting "
-                    "them mechanically can double count obligations already reflected "
-                    "in rent-burdened earnings. Reject a headline offer whose "
-                    "earnout transfers collection risk back to the seller "
-                    "without control over staffing, pricing, or enforcement."
-                ),
-                (
-                    "Run a mock transfer before deciding whether to "
-                    "sell. For thirty days, the manager or designated "
-                    "substitute should operate the weekly scorecard, retrieve rights "
-                    "evidence, reconcile collections, and resolve ordinary access incidents "
-                    "without founder improvisation. Log every intervention and convert "
-                    "the pattern into revised procedures or a quantified "
-                    "replacement cost. Counsel verifies the Highway Beautification Act "
-                    "framework under 23 U.S.C. section 131 alongside "
-                    "applicable state DOT permits and local sign restrictions; "
-                    "the federal statute alone does not settle spacing "
-                    "or digital-display conditions. The environmental professional verifies "
-                    "the scope and timing of any all-appropriate-inquiries work "
-                    "under 40 CFR Part 312 where relevant, and "
-                    "separately identifies operational stormwater requirements under 40 CFR "
-                    "section 122.26. A Phase I report is not "
-                    "a stormwater permit or a guarantee of usable "
-                    "heavy-axle access. If transfer defects or concentration still "
-                    "dominate the book, retain the business as a "
-                    "cash cow only after funding reserves for head "
-                    "rent, repairs, option expirations, and restoration. Compare after-reserve "
-                    "distributable cash with net sale proceeds and required "
-                    "owner time. The premium comes from provable continuity "
-                    "of rights and earnings, while the decision to "
-                    "hold comes from the same evidence rather than "
-                    "attachment to a quoted multiple."
-                ),
-            ],
-            "table": {
-                "caption": "Buyer Earnings Bridge and Transferability Stress Tests",
-                "headers": [
-                    "Valuation or transferability question under examination",
-                    "Evidence required before using the proposed assumption",
-                    "Illustrative calculation or disciplined underwriting treatment",
-                    "Consequence for sale readiness or continued ownership",
-                ],
-                "rows": [
-                    [
-                        "Founder-dependent transaction earnings need a defined discretionary earnings bridge.",
-                        "Account records distinguish owner benefits from necessary recurring operating expenses.",
-                        "Test two to three times normalized discretionary earnings as sensitivity.",
-                        "Replace planning assumptions with credible buyer feedback and comparable evidence.",
-                    ],
-                    [
-                        "Manager-run recurring earnings require demonstrated continuity without founder execution.",
-                        "Operating logs establish substitute authority, documented procedures, and repeatable collections.",
-                        "Test three to five times normalized EBITDA as sensitivity.",
-                        "Do not award a recurring multiple to uncontracted future flips.",
-                    ],
-                    [
-                        "Base earnings illustration assumes incremental replacement labor remains unexpensed.",
-                        "Actual accounts must support the hypothetical $100,000 annual replacement adjustment.",
-                        "$214,000 less $100,000 gives $114,000 before further required normalization.",
-                        "Three to four times yields $342,000–$456,000 illustrative enterprise value.",
-                    ],
-                    [
-                        "Scaled earnings illustration requires independent review of existing manager coverage.",
-                        "Task logs establish whether any additional replacement expense remains necessary.",
-                        "$494,000 less hypothetical $100,000 gives $394,000 before further normalization.",
-                        "Three to five times yields $1,182,000–$1,970,000 illustrative enterprise value.",
-                    ],
-                    [
-                        "Telecom asset pricing cannot substitute for operating company valuation.",
-                        "Identify exact contractual cash flow, remaining rights, credit, and encumbrances.",
-                        "Sixteen to twenty-two times applies only to the stated asset-level concept.",
-                        "Keep property-right consideration outside canonical operator revenue and company multiples.",
-                    ],
-                    [
-                        "Enterprise value requires a transaction-specific bridge to seller proceeds.",
-                        "Purchase agreement defines debt, cash, working capital, leases, and contingent payments.",
-                        "Avoid double counting lease obligations already burdening the earnings measure.",
-                        "Compare realizable proceeds rather than promotional headline transaction consideration.",
-                    ],
-                    [
-                        "Cash-cow retention requires funded obligations and realistic owner time.",
-                        "Reserve schedule covers head rent, repairs, restoration, and concentrated exposure.",
-                        "Compare after-reserve distributions with net sale proceeds and alternative deployment.",
-                        "Retain only when continuity evidence supports the intended holding strategy.",
-                    ],
-                ],
-            },
-            "callout": {
-                "kind": "OPERATOR GATE",
-                "title": "Four Pre-Flight Checks Before Signing a Sale or Expanding Exposure",
-                "body": (
-                    "Use documentary evidence, not verbal assurances, to resolve each "
-                    "check before making the associated irreversible commitment."
-                ),
-                "items": [
-                    "Verify every material lease, easement, permit, and software right for assignment or change-of-control restrictions, then obtain the specific required consents.",
-                    "Reconcile twelve monthly closes, retained-spread bridges, failed-deal costs, deposits, and founder replacement assumptions to signed contracts and bank records.",
-                    "Verify lender priority and required SNDA instruments, current environmental findings, heavy-axle use permissions, and applicable stormwater requirements for each affected property.",
-                    "Confirm signed contractor IP assignments, tested account recovery, documented substitute operation, and connected-group exposures at or below 25% before claiming a transferable diversified book.",
-                ],
-            },
-        },
-    ],
-    "pull_quote": "A buyer pays for rights and earnings that survive your absence, not for a pipeline that survives only your explanation.",
-    "diagram_id": "diag-06",
-    "action_checklist": [
-        "Create the eleven-play register with parcel identifiers, connected counterparty groups, accountable seats, rights deadlines, and source-linked acceptance evidence.",
-        "Contract the three initial specialist seats against scoped deliverables, jurisdiction-appropriate compensation, correction duties, and measurable turnaround clocks.",
-        "Freeze a weekly scorecard covering acceptance, consent aging, collections, concentration, founder interventions, and the eight-week evidence required for staffing expansion.",
-        "Close monthly cohorts and reconcile $120,000, $535,000, and $950,000 operator revenue cases to their exact modeled expense and owner-profit totals.",
-        "Collect executed rights documents, lender instruments, environmental findings, signed IP assignments, and owner-controlled system exports in a transfer-ready repository.",
-        "Run a thirty-day founder-independence test and compare normalized buyer valuation sensitivities with after-reserve cash distributions before choosing sale or retention.",
-    ],
-    "statutory_citations": [
-        {
-            "title": "17 U.S.C. section 204(a) — Execution of transfers of copyright ownership",
-            "url": "https://www.law.cornell.edu/uscode/text/17/204",
-            "relevance": (
-                "Obtain signed writings for applicable transfers of contractor-created "
-                "copyright ownership; reconcile deliverables, contributor signatures, and embedded licenses."
-            ),
-        },
-        {
-            "title": "23 U.S.C. section 131 — Control of outdoor advertising",
-            "url": "https://www.law.cornell.edu/uscode/text/23/131",
-            "relevance": (
-                "Anchor billboard diligence in the federal outdoor-advertising framework, "
-                "then verify controlling state DOT rules, permits, and local restrictions."
-            ),
-        },
-        {
-            "title": "40 CFR Part 312 — Innocent Landowners, Standards for Conducting All Appropriate Inquiries",
-            "url": "https://www.ecfr.gov/current/title-40/chapter-I/subchapter-J/part-312",
-            "relevance": (
-                "Evaluate environmental professional qualifications, inquiry scope, and timing "
-                "when all appropriate inquiries are relevant to an IOS transaction."
-            ),
-        },
-        {
-            "title": "40 CFR section 122.26 — Storm water discharges",
-            "url": "https://www.ecfr.gov/current/title-40/chapter-I/subchapter-D/part-122/section-122.26",
-            "relevance": (
-                "Assess whether actual IOS activities trigger industrial stormwater requirements "
-                "and identify the applicable permitting authority and operating obligations."
-            ),
-        },
-        {
-            "title": "California Labor Code section 2775 — Employee classification framework",
-            "url": "https://leginfo.legislature.ca.gov/faces/codes_displaySection.xhtml?lawCode=LAB&sectionNum=2775.",
-            "relevance": (
-                "Review California contractor classifications under the applicable statutory "
-                "framework and relevant exceptions rather than relying on contractor labels."
-            ),
-        },
-        {
-            "title": "47 CFR Part 17 — Construction, Marking, and Lighting of Antenna Structures",
-            "url": "https://www.ecfr.gov/current/title-47/chapter-I/subchapter-A/part-17",
-            "relevance": (
-                "Distinguish antenna-structure registration and related obligations from parcel "
-                "ownership, transferable lease rights, and commercial availability."
-            ),
-        },
-    ],
-}
+CHAPTER_11 = {'id': 'Q11',
+ 'chapter_id': 'Q11',
+ 'chapter_number': 11,
+ 'question_number': 11,
+ 'slug': 'ios-truck-parking-yard-build-and-operations',
+ 'question_prompt': 'How do I develop and operate an IOS or truck parking yard, and what does it actually '
+                    'cost to make it work?',
+ 'kicker': 'Q11 / THE BIG MONEY PLAYBOOKS',
+ 'title': 'Building and Running IOS and Truck Parking Yards',
+ 'subtitle': 'Raw land to IOS in San Antonio, actual truck parking development costs, zoning hurdles, flex '
+             'vs. IOS, contractor yards (Longyards), managed truck parking challenges, gate and access '
+             'control systems, and Rig Hut yard-management lessons',
+ 'layout_template': 'chapter_opener',
+ 'reading_time_minutes': 15,
+ 'executive_summary': 'Operators building IOS and truck parking yards agree on a land-first, low-coverage '
+                      'thesis: zoning that allows outdoor storage by right, sites under roughly 20-30% '
+                      'building coverage, infill highway access, and a city that will actually sign off. '
+                      'Ron Rohde pushed DFW stall rents from $100 to $215-225 on a 5.5-acre yard, and '
+                      'models one acre at about 40 spaces at $175 per month. Build costs run $16 per '
+                      'linear foot for chain link, about $30K for a cantilever gate, and $1,000 per light '
+                      'pole, with self-management via Easy Storage, PDK text-to-gate, or Rig Hut app '
+                      'access tied to payment. Practitioners split on pavement versus gravel, single '
+                      'versus multi-tenant, padlocks versus automation, and daily versus monthly parkers, '
+                      'while Truck Parking Club runs a 70/30 marketplace split for hosts monetizing spare '
+                      'spaces.',
+ 'key_metrics': [{'label': 'Truck Stall Rent Lift',
+                  'metric': 'Truck Stall Rent Lift',
+                  'value': '$100 to $215-225 per stall per month',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Rohde's pro forma assumed a 50% bump to $150 per 75 ft x 12 ft stall on a "
+                             '5.5-acre graveled yard; actual rents reached $215-225, but higher insurance '
+                             'kept net income flat.',
+                  'source': 'Ronald Rohde Law ([gcg4K6xqYaU @ 00:04:24])'},
+                 {'label': 'One-Acre Truck Parking Gross and NOI',
+                  'metric': 'One-Acre Truck Parking Gross and NOI',
+                  'value': 'About 40 spaces x $175/mo = $7,000/mo gross; about $57K NOI',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Unit math run on the Tyler Cauble show with occupancy in the mid-to-upper '
+                             '90s, after taxes, insurance, management, utilities, and software; the hosts '
+                             'labeled it a 19% cap with no capex.',
+                  'source': 'Tyler Cauble ([q7HQGiIiT_8 @ 00:19:30])'},
+                 {'label': 'Marketplace Host Revenue Split',
+                  'metric': 'Marketplace Host Revenue Split',
+                  'value': '70/30 owner/platform starting rate',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': "Evan Shelley's Truck Parking Club split covers marketing, notifications, "
+                             'payment processing, 24/7/365 support, and payouts, with lower rates for '
+                             'operators running 5-10 lots.',
+                  'source': 'REtipster ([Ombo8TjihMk @ 00:12:41])'},
+                 {'label': 'Automatic Cantilever Gate Cost',
+                  'metric': 'Automatic Cantilever Gate Cost',
+                  'value': 'About $30K installed for a 30 ft cantilever; operator about $5K',
+                  'confidence': 'attributed_practitioner_claim',
+                  'context': 'Rohde recommends an automatic gate even on Class B yards because manual '
+                             'gates get left open; the cantilever needs a 30-40% counterbalance, so the '
+                             'gate runs about 70 ft long.',
+                  'source': 'Ronald Rohde Law ([rPXHwXgqWs8 @ 00:06:59])'}],
+ 'sections': [{'heading': '1. The Practitioner Consensus',
+               'paragraphs': ['Every operator in this lane starts from the same rule Ron Rohde repeats: '
+                              'land first, buildings second. Rohde frames IOS as low-coverage yards for '
+                              'trucks, trailers, and equipment, with no roofs or major plumbing to fail '
+                              'and no $50K air-conditioning surprises [-g_D6hbOPNE @ 00:00:16]. Rohde '
+                              'tightens the definition to 20% or less site coverage by improvements, with '
+                              'zoning that allows outdoor storage by right, and warns that flood zones and '
+                              'geotech problems shrink what you can actually use [q7HQGiIiT_8 @ 00:02:49]. '
+                              'Benji Miller of Negresco Property Group lands in the same place from the '
+                              'SoCal institutional side: the ideal sites run 30% coverage or less with '
+                              'by-right zoning, and once a site crosses that line rent tips to a '
+                              'per-building basis, so 32.5% coverage with demolishable sheds is a '
+                              'different game [7qT_5Pw0cTo @ 00:28:35]. When a Chicago residential '
+                              'investor tried to define IOS by acreage and infill location, Rohde pushed '
+                              'back, arguing size and infill do not belong in the definition and it falls '
+                              'apart once building coverage passes 20-30% [tonuCLfZrYE @ 00:02:19]. The '
+                              'operator takeaway: underwrite the dirt and the zoning entitlement first, '
+                              'treat any building as a leasing accelerator, and walk from sites where '
+                              'coverage pushes you into a different asset class.',
+                              'The demand side is the one point nobody argues. Rohde pegs the gap at '
+                              'roughly 3 million tractor-trailers chasing about 300,000 paid commercial '
+                              'spaces while city regulation keeps eliminating truck parking, and says a '
+                              'single site can earn $10-30K per month [rPXHwXgqWs8 @ 00:00:37]. On '
+                              "Jonathan Hayek's show Rohde flagged the truck count as possibly misquoted "
+                              'but held the thesis: San Antonio fines trucks parked more than two '
+                              'consecutive days, one fine equals a month of parking, and the trucks being '
+                              'protected cost $75-100K apiece [mPrS0VognEo @ 00:29:24]. The binding '
+                              'constraint is entitled land, not tenants. The Truck N’ Hustle operator '
+                              'calls finding land zoned for truck parking the toughest part of the '
+                              'business and picked industrial zoning ringed by trash and '
+                              "window-manufacturing neighbors who won't complain [uZVNo7EIaXA @ 00:00:03]. "
+                              'Rohde hit the same wall on a 5.5-acre yard: the city was the number-one '
+                              'issue across zoning, setbacks, fire lanes, sprinklers, sewer, and '
+                              'utilities, and 50-75+ tours from national and credit groups produced no '
+                              "lease without the city's green light [gcg4K6xqYaU @ 00:05:42]. The "
+                              'consensus rule: confirm the jurisdiction is friendly before going under '
+                              'contract, never after, because Rohde was still on regulatory work 24 months '
+                              'after closing.',
+                              'The baseline physical product is also settled: a secured, lit, fenced yard. '
+                              "Rohde's Class B standard is gravel, full fencing, a gate, and lighting with "
+                              'no frills, and the case for it is recession resilience, since $400 '
+                              'paved-lot parkers trade down in a downturn [tonuCLfZrYE @ 00:19:05]. The '
+                              "Massachusetts Truck N’ Hustle operator's build list ran new pavement, "
+                              'striping with assigned numbered spots, about 33 perimeter light poles they '
+                              'called a huge expense, and CCTV with posted signs that is actually '
+                              'monitored [uZVNo7EIaXA @ 00:01:43]. Management is the other baseline. Rohde '
+                              'says IOS rents will not justify paying a third-party manager a few hundred '
+                              'to $1,000 a month, so owners self-manage, while multi-tenant flex can carry '
+                              'a property manager [-g_D6hbOPNE @ 00:04:39]. The Rig Hut founders, who '
+                              'handled roughly 1,000 vehicles a month around a South Florida port city, '
+                              'add that monthly tenants paying $250-400 are the business: daily parking '
+                              'pays more but carries the highest management intensity and the most gate '
+                              "and damage incidents, so learn monthly tenants' names, equipment, and "
+                              'anniversary billing dates [ulBXkeE5I_8 @ 00:03:11]. Those four pillars, '
+                              'entitled dirt, perimeter security, self-management, and a monthly core, are '
+                              'the floor every speaker builds on.'],
+               'table': {'caption': 'Where IOS and truck parking operators line up on the fundamentals',
+                         'headers': ['Consensus Point',
+                                     'What Practitioners Do',
+                                     'Why It Matters',
+                                     'Expert Source'],
+                         'rows': [['Low site coverage with by-right outdoor storage zoning',
+                                   'Keep improvements at or under 20% site coverage with outdoor storage '
+                                   'allowed by right',
+                                   'Flood zones and geotech problems quietly cut the buildable and usable '
+                                   'square footage',
+                                   'Tyler Cauble ([q7HQGiIiT_8 @ 00:02:49])'],
+                                  ['Hard coverage ceiling that institutional IOS buyers respect',
+                                   'Buy sites at 30% coverage or less with by-right zoning in place',
+                                   'Above that line rent tips to a per-building basis and changes the game',
+                                   'Adding Value w/ Shy Assar | CRE & Industrial ([7qT_5Pw0cTo @ '
+                                   '00:28:35])'],
+                                  ['City approval cleared before signing the purchase contract',
+                                   'Clear zoning, setbacks, fire lanes, sprinklers, sewer, and utility '
+                                   'questions with the jurisdiction',
+                                   "Rohde drew 50-75+ tours yet signed no lease without the city's green "
+                                   'light',
+                                   'Ronald Rohde Law ([gcg4K6xqYaU @ 00:05:42])'],
+                                  ['Structural truck parking shortage drives the demand thesis',
+                                   'Underwrite against roughly 3 million tractor-trailers versus 300,000 '
+                                   'paid commercial spaces',
+                                   'City regulation keeps eliminating truck parking, and one site can earn '
+                                   '$10-30K monthly',
+                                   'Ronald Rohde Law ([rPXHwXgqWs8 @ 00:00:37])'],
+                                  ['Industrial neighbors who will never complain about trucks',
+                                   'Pick industrial zoning next to trash haulers and window manufacturers',
+                                   'Finding land zoned for truck parking is the toughest thing in the '
+                                   'business',
+                                   'Truck N’ Hustle ([uZVNo7EIaXA @ 00:00:03])'],
+                                  ['Monthly tenants form the stable core of the yard',
+                                   'Build around monthly tenants paying $250-400 and track their '
+                                   'anniversary billing dates',
+                                   'Daily parkers pay more but bring the most gate and damage incidents',
+                                   'Truck Parking Media ([ulBXkeE5I_8 @ 00:02:56])'],
+                                  ['Self-management is the norm for yard owners',
+                                   'Owners run IOS and truck parking themselves rather than hire a '
+                                   'third-party manager',
+                                   'Yard rents will not justify a few hundred to $1,000 monthly for '
+                                   'management',
+                                   'Ronald Rohde Law ([-g_D6hbOPNE @ 00:04:39])']]}},
+              {'heading': '2. Exact Street Mechanics, Tools & Numbers',
+               'paragraphs': ['Sourcing starts off-market because brokers ignore the deal size. Rohde says '
+                              'DFW infill runs $300-500K an acre, too small for brokers to give the time '
+                              'of day, so the team built a list of 200-300 sites from Google Maps and '
+                              'PropStream, scored each on highway proximity, lot shape, slope, zoning, and '
+                              'owner or use, then hit the top 30-50 with texts, calls, flyers, and emails; '
+                              "host Tyler Cauble's own cadence is 600 properties a quarter, 10 a day, "
+                              'where a 1% response is good [q7HQGiIiT_8 @ 00:05:05]. The unit math is a '
+                              '75-foot by 11-13-foot stall, about 900 square feet, which works out to '
+                              '20-25 spaces per acre at roughly 50% coverage [tonuCLfZrYE @ 00:31:22]. On '
+                              'the Cauble show the model ran about 40 spaces per acre at $175 a month for '
+                              '$7,000 gross, then taxes near $6K, insurance $2K, management $12K, '
+                              'utilities $6K, and software $1K, leaving about $57K of NOI the hosts '
+                              'labeled a 19% cap with no capex [q7HQGiIiT_8 @ 00:22:20]. To set the rent, '
+                              'Rohde tells operators to pull the Google Maps median, underwrite at or '
+                              'slightly below it, and validate with a $30-50 Facebook ad before committing '
+                              '[mPrS0VognEo @ 00:50:21].',
+                              "Rohde's line-item truck parking budget is the closest thing to a price "
+                              'sheet in this niche. Land at $50-100K an acre can cash flow while $1M an '
+                              "acre likely won't; clearing runs $1-4K an acre plus dumpsters, grading "
+                              'about $5K an acre in infill DFW off a topographic survey pulled during '
+                              'diligence, and gravel is the single most expensive item [rPXHwXgqWs8 @ '
+                              '00:01:28]. Fencing is $16 per linear foot for 6-foot chain link with top '
+                              'and bottom rails and three strands of barbed wire, measured off Google Maps '
+                              'or a boundary or ALTA survey, and the price doubles for R panel where a '
+                              'city bans chain link and demands opaque fencing [rPXHwXgqWs8 @ 00:05:27]. '
+                              'Rohde specs an automatic gate even at Class B because manual gates get left '
+                              'open: about $5K for a LiftMaster operator, about $30K installed for a '
+                              '30-foot cantilever, and since a cantilever needs a 30-40% counterbalance '
+                              'the gate runs roughly 70 feet long, while rolling gates need concrete or '
+                              'asphalt because rocks derail them [rPXHwXgqWs8 @ 00:06:59]. Chris Long of '
+                              'Longyards, building modular fencing that slides into concrete, reported '
+                              'Florida fence quotes at $55 a foot and 3-8 acre build-outs at $300-800K '
+                              '[7n_O1KWl4EQ @ 00:35:36].',
+                              'The operating stack is software plus remote access. Chris Long runs QR '
+                              'onboarding, Easy Storage Solutions with PDK text-to-gate, grid-labeled '
+                              'piles like B7, and view-only main-camera access for tenants with no audio '
+                              'and a posted disclosure, a setup Rohde said he plans to adopt [7n_O1KWl4EQ '
+                              '@ 00:24:21]. Jose of Rig Hut lays out the access ladder: padlock and chain '
+                              'needs on-site staff, a keypad gate operator assigns and expires codes per '
+                              'tenant or reservation as a strong middle ground, LPR logs in and out '
+                              'timestamps for high-value yards but demands connectivity, quality cameras, '
+                              'and subscriptions, and a mobile-app link opens the gate with no hardware '
+                              '[GOXjR9kZ3BA @ 00:01:54]. One Rig Hut client went from Zelle, Venmo, '
+                              'checks, cash, and inventory on a sheet of printer paper to phone-opened '
+                              'gates with timestamps, and locks out past-due tenants on the 10th, which '
+                              'generates calls [hjC6tiI5Kd4 @ 00:00:48]. Rohde sizes the labor: a minimum '
+                              'viable yard is about 4 acres grossing $7-8K a month, run by an offshore VA '
+                              'under $2K a month, and the VA tipping point sits at $8-10K gross, after '
+                              'which one VA lets you triple in size [tonuCLfZrYE @ 00:27:03].'],
+               'table': {'caption': 'Street-level build costs, layout specs, and platform economics',
+                         'headers': ['Line Item', 'Number or Spec', 'Operator Note', 'Expert Source'],
+                         'rows': [['Truck stall footprint and per-acre density',
+                                   '75 ft by 11-13 ft stalls, about 900 sq ft each',
+                                   'Yields 20-25 spaces per acre at roughly 50% coverage',
+                                   'Ronald Rohde Law ([tonuCLfZrYE @ 00:31:22])'],
+                                  ['Chain-link perimeter fencing with barbed wire',
+                                   '$16 per linear foot for 6 ft chain link with rails',
+                                   'Double the price for R panel where cities ban chain link',
+                                   'Ronald Rohde Law ([rPXHwXgqWs8 @ 00:05:27])'],
+                                  ['Automatic cantilever gate with LiftMaster operator',
+                                   'About $30K installed for 30 ft; operator alone about $5K',
+                                   'Cantilever needs 30-40% counterbalance, so the gate runs about 70 ft',
+                                   'Ronald Rohde Law ([rPXHwXgqWs8 @ 00:06:59])'],
+                                  ['Perimeter lighting on trenched electric service',
+                                   '$1,000 per pole, with 16-20 poles covering 4 acres',
+                                   'Add $20-30K for crews, permits, and utility tap fees',
+                                   'Ronald Rohde Law ([rPXHwXgqWs8 @ 00:10:01])'],
+                                  ['Solar SIM security cameras instead of Wi-Fi',
+                                   'A $10-20 SIM covers 2 GB for about six months',
+                                   'Cheapest item; deters opportunistic thieves and builds an insurance '
+                                   'record',
+                                   'Ronald Rohde Law ([rPXHwXgqWs8 @ 00:11:30])'],
+                                  ['Truck Parking Club marketplace listing split',
+                                   '70/30 owner to platform starting rate across the US',
+                                   'Covers marketing, payments, and 24/7 support; lower rates at 5-10 lots',
+                                   'REtipster ([Ombo8TjihMk @ 00:12:41])'],
+                                  ['Longyards Ottawa contractor mini-yard site',
+                                   '67 month-to-month yards of roughly 6-9K sq ft each',
+                                   'Bought $470K plus $710K build, appraised $3.6M at two-thirds leased',
+                                   'Garret Wong Podcast ([RPNJmiZNQdY @ 00:12:42])']]},
+               'callout': {'kind': 'INSIDER PRO-TIPS',
+                           'title': 'Small Edges Yard Operators Actually Use',
+                           'body': 'Four moves practitioners use to squeeze more revenue and fewer '
+                                   'headaches out of the same dirt.',
+                           'items': ['Answer first or lose the truck: inbound callers are dialing three '
+                                     'yards at once, and a 20-minute callback lost bookings, so get the '
+                                     'caller into the system immediately [Truck Parking Media — '
+                                     'ulBXkeE5I_8 @ 00:02:30]',
+                                     'Mark up vendor services on Class A yards: Rohde charges $225 for '
+                                     'wash services the vendor prices at $200, alongside showers and a '
+                                     '24-hour golf-cart patrol at about $5K a month [Ronald Rohde Law — '
+                                     'tonuCLfZrYE @ 00:14:14]',
+                                     'Skip commercial Wi-Fi: carriers see the address and quote a $150 '
+                                     'monthly commercial minimum while SIM cards run about $10 each, and '
+                                     'never mix the two technologies across one site [Ronald Rohde Law — '
+                                     'tonuCLfZrYE @ 00:21:27]',
+                                     'Work the underutilized-yard play: spot candidates on Google Earth, '
+                                     'count dock trailers as a utilization proxy, have the tenant give '
+                                     'back 1.5 acres to save $3,000 a month, and re-lease at $6,000 NNN to '
+                                     'turn a 6.25 cap into an 8 [Jonathan Hayek — mPrS0VognEo @ '
+                                     '00:22:53]']},
+               'sop_steps': [{'step': 1,
+                              'title': 'Build and Score the Off-Market List',
+                              'action': 'Pull 200-300 candidate sites and rank them before any outreach.',
+                              'detail': 'Use Google Maps and PropStream to build the list, score each site '
+                                        'on highway proximity, lot shape, slope, zoning, and owner or use, '
+                                        'then hit the top 30-50 with texts, calls, flyers, and emails '
+                                        '[Tyler Cauble — q7HQGiIiT_8 @ 00:05:41]'},
+                             {'step': 2,
+                              'title': 'Test Demand and Price Before Closing',
+                              'action': 'Run coming-soon ads and float daily, weekly, and monthly rates.',
+                              'detail': 'Rohde runs coming-soon ads to test demand at $30 a night, $100 a '
+                                        'week, or $300 a month, and pushes daily parking through Facebook, '
+                                        'trucker apps and forums, and signage [Ronald Rohde Law — '
+                                        'tonuCLfZrYE @ 00:26:18]'},
+                             {'step': 3,
+                              'title': 'Clear the City and the Dirt in Diligence',
+                              'action': 'Confirm zoning, approvals, and environmental condition before '
+                                        'going hard.',
+                              'detail': 'Tyler Cauble says always get a Phase I even in cash deals after a '
+                                        "tenant swapped clean fill for debris on Rohde's site, and Benji "
+                                        'Miller brought in a land-use attorney before contract because of '
+                                        'zoning landmines [Tyler Cauble — q7HQGiIiT_8 @ 00:14:06] [Adding '
+                                        'Value w/ Shy Assar | CRE & Industrial — 7qT_5Pw0cTo @ 00:08:56]'},
+                             {'step': 4,
+                              'title': 'Tie Gate Access to Payment',
+                              'action': 'Install code- or app-based access that shuts off when rent is '
+                                        'late.',
+                              'detail': "Rig Hut's rule is that if someone owes they should not be able to "
+                                        'get in, because leaked codes mean 50 trucks parked when you think '
+                                        "40 are paying and 3 haven't paid in 2 months [Truck Parking Media "
+                                        '— ulBXkeE5I_8 @ 00:02:13]'}]},
+              {'section_number': 3,
+               'title': 'Where Practitioners Disagree & Alternative Playbooks',
+               'paragraphs': ['The first fight is over what an IOS site even is, and the definition '
+                              'dictates what you buy. Ron Rohde, sitting with Tyler Cauble, draws the line '
+                              'at 20% or less site coverage by improvements, with outdoor storage allowed '
+                              'by right [q7HQGiIiT_8 @ 00:02:49]. Benji Miller of Negresco Property Group '
+                              'runs a looser box: 30% coverage or less with by-right zoning is ideal, and '
+                              'past that the rent tips toward a per-building basis, with 32.5% coverage '
+                              'and demolishable sheds being a different game [7qT_5Pw0cTo @ 00:28:35]. '
+                              'When a Chicago residential investor pitched IOS as 3 to 10 acre urban '
+                              'parcels near highways with outdoor-storage zoning, Ron pushed back, saying '
+                              "size and infill don't belong in the definition and that it falls apart "
+                              'above 20 to 30% building coverage [tonuCLfZrYE @ 00:02:19]. The sharper '
+                              'split is building versus bare dirt. Ron told Jonathan Hayek flatly that a '
+                              'pure yard is off the menu in 2024, because a site without a building gets '
+                              'fewer accessory uses by right [mPrS0VognEo @ 00:08:57]. Benji lands in the '
+                              'same place from the leasing side: bare paved yards only make sense for '
+                              'drayage or trucking near the port, and sites with buildings lease better. '
+                              'The pure-yard operator lives or dies on port-adjacent drayage demand.',
+                              'Surface and gate spend split the operators into two camps. The Truck N’ '
+                              'Hustle operator, running roughly 100 spots in Massachusetts at about $500 '
+                              'per spot per month, puts pavement at the top of the build list: number one '
+                              'is you want pavement, not crush gravel, followed by striping, numbered '
+                              'spots, around 33 perimeter light poles and CCTV that is actually monitored '
+                              '[uZVNo7EIaXA @ 00:01:43]. Ron Rohde runs the opposite playbook in DFW. '
+                              "Ron's pick is Class B: gravel, full fencing, a gate and lighting with no "
+                              'frills, which Ron calls recession-resilient because $400 paved-lot parkers '
+                              'trade down when the market tightens [tonuCLfZrYE @ 00:19:05]. On gates, Ron '
+                              'still tells builders to install an automatic gate even at Class B, because '
+                              'manual gates get left open, and prices a 30 ft cantilever gate with install '
+                              'at about $30K [rPXHwXgqWs8 @ 00:06:59]. Jose at Rig Hut takes the staged '
+                              'route: test the market under a lease with manual gates before investing in '
+                              'automation, then move to an automatic system once you want 24/7 access, '
+                              'multiple tenants and expansion beyond one location [Fc82YDH9IrI @ '
+                              '00:06:10]. Jose concedes that five-acre gravel lots in tight markets get '
+                              'away with padlocks purely because demand is high.',
+                              'Tenant concentration and rental term are the third fault line. Ron Rohde '
+                              'argues single tenant is a benefit: underwrite heavily and bet once, because '
+                              'in a building of 20 to 30 flex tenants at least 5 are financially shaky '
+                              '[-g_D6hbOPNE @ 00:02:17]. Ron frames the choice as a temperament call: with '
+                              'sweat equity, choose multi-tenant; if time-constrained, choose single '
+                              'tenant. The Truck N’ Hustle operator leans on the opposite logic and treats '
+                              "many tenants as a shield: with 50 tenants, losing 2 doesn't hurt, though "
+                              'they concede a single tenant is simpler to run and eventually leased the '
+                              "first lot to one tenant [uZVNo7EIaXA @ 00:04:16]. On term, Ron's math "
+                              'favors transient parking: $30 a night is about $900 a month per space '
+                              'against $225 to $300 from a monthly tenant, and even at 80% occupancy a '
+                              'daily space yields about $630, but it demands heavy marketing through '
+                              'Facebook, trucker apps, forums and signage [tonuCLfZrYE @ 00:10:32]. Rig '
+                              'Hut, having handled about 1,000 vehicles a month at peak around a South '
+                              'Florida port city, lands on the other side: daily and transient pays more '
+                              'but brings the highest management intensity and more gate and damage '
+                              'incidents, so monthly tenants paying $250 to $400 are the business '
+                              '[ulBXkeE5I_8 @ 00:02:56].'],
+               'table': {'caption': 'Side-by-side playbooks where IOS and truck parking operators split',
+                         'headers': ['Decision Point', 'Playbook A', 'Playbook B', 'Expert Source'],
+                         'rows': [['Maximum site coverage that still counts as IOS',
+                                   'Ron Rohde: 20% or less coverage by improvements, with outdoor storage '
+                                   'allowed by right',
+                                   'Benji Miller: 30% or less with by-right zoning; 32.5% with '
+                                   'demolishable sheds is a different game',
+                                   'Tyler Cauble ([q7HQGiIiT_8 @ 00:02:49]); Adding Value w/ Shy Assar | '
+                                   'CRE & Industrial ([7qT_5Pw0cTo @ 00:28:35])'],
+                                  ['Building on site versus a pure yard',
+                                   'Ron Rohde will not buy pure yard in 2024 because fewer accessory uses '
+                                   'are allowed by right',
+                                   'Benji Miller buys bare paved yards only for drayage or trucking near '
+                                   'the port; buildings lease better',
+                                   'Jonathan Hayek ([mPrS0VognEo @ 00:08:57]); Adding Value w/ Shy Assar | '
+                                   'CRE & Industrial ([7qT_5Pw0cTo @ 00:29:49])'],
+                                  ['Yard surface for a truck parking build',
+                                   'Truck N’ Hustle: pavement not crush gravel, plus striping, numbered '
+                                   'spots and about 33 light poles',
+                                   'Ron Rohde: Class B gravel, fencing, gate and lighting with no frills, '
+                                   'resilient when paved parkers trade down',
+                                   'Truck N’ Hustle ([uZVNo7EIaXA @ 00:01:43]); Ronald Rohde Law '
+                                   '([tonuCLfZrYE @ 00:19:05])'],
+                                  ['When to spend on an automatic gate',
+                                   'Ron Rohde: automatic gate even at Class B because manual gates get '
+                                   'left open; about $30K installed',
+                                   'Jose at Rig Hut: test the market under a lease with manual gates, '
+                                   'automate when scaling to 24/7',
+                                   'Ronald Rohde Law ([rPXHwXgqWs8 @ 00:06:59]); Truck Parking Media '
+                                   '([Fc82YDH9IrI @ 00:06:10])'],
+                                  ['One tenant versus many tenants on the lot',
+                                   'Ron Rohde: single tenant is a benefit, so underwrite heavily and bet '
+                                   'once',
+                                   "Truck N’ Hustle: 50 tenants act as a shield, so losing 2 doesn't hurt "
+                                   'the lot',
+                                   'Ronald Rohde Law ([-g_D6hbOPNE @ 00:02:17]); Truck N’ Hustle '
+                                   '([uZVNo7EIaXA @ 00:04:16])'],
+                                  ['Daily transient parking versus monthly tenants',
+                                   'Ron Rohde: $30 per night is about $900 per month per space, still '
+                                   'about $630 at 80% occupancy',
+                                   'Rig Hut: monthly tenants at $250 to $400 are the business; daily '
+                                   'brings the most gate and damage incidents',
+                                   'Ronald Rohde Law ([tonuCLfZrYE @ 00:10:32]); Truck Parking Media '
+                                   '([ulBXkeE5I_8 @ 00:02:56])'],
+                                  ['Target acreage for an acquisition or build',
+                                   'Benji Miller: 1 to 2 acres lease fastest; avoids vacant 7 to 10+ acre '
+                                   'white whales',
+                                   'Ron Rohde buys infill DFW over 4 acres; Chris Long screens for 3+ '
+                                   'acres in towns over 50k population',
+                                   'Adding Value w/ Shy Assar | CRE & Industrial ([7qT_5Pw0cTo @ '
+                                   '00:05:49]); Jonathan Hayek ([mPrS0VognEo @ 00:06:44]); Garret Wong '
+                                   'Podcast ([RPNJmiZNQdY @ 00:36:06])']]}},
+              {'section_number': 4,
+               'title': 'Firsthand Failure Modes, Traps & Economics Checks',
+               'paragraphs': ['The city kills more IOS deals than the market does. Ron Rohde, reviewing a '
+                              '5.5-acre graveled truck-parking site 24 months after closing, names the '
+                              'city the number one issue: zoning, setbacks, fire lanes, sprinklers, sewer '
+                              'and utility questions, with the fix being confirmation that the '
+                              'jurisdiction is friendly before going under contract [gcg4K6xqYaU @ '
+                              '00:05:42]. The site drew 50 to 75-plus tours, including national and credit '
+                              "groups, and still could not sign a lease without the city's green light. "
+                              "Ron's next steps there are regulatory work and landing a compatible use. "
+                              'Benji Miller avoids that trap by front-loading the work, running heavy '
+                              'diligence before contract on the Fontana deal, including land-use attorney '
+                              'Alan Mackins, because of zoning landmines [7qT_5Pw0cTo @ 00:08:56]. Chris '
+                              'Long of Longyards paid for the same lesson in a different currency: 12 '
+                              'easements on one site caused a 2-year loss and raised costs by a third '
+                              '[RPNJmiZNQdY @ 00:39:23]. Chris also flags that some Texas cities limit '
+                              'unbuilt sites to 5 years and that in DFW a structure was required for full '
+                              'occupancy; the DFW location fell through, and Tier 1 land with existing '
+                              'heavy-industrial use is where Longyards now concentrates [7n_O1KWl4EQ @ '
+                              '00:04:15].',
+                              'Thin NOI plus the wrong debt is the second killer. On that same site, rents '
+                              'climbed from $100 per stall to $215 to $225 against a pro forma of $150, '
+                              'yet insurance rose several thousand dollars and net income stayed flat '
+                              '[gcg4K6xqYaU @ 00:04:45]. A 5-year fixed note at about 5.5% saved their '
+                              'bacon; Ron says variable debt plus a thin NOI would have meant pain, and '
+                              'calls the lender a very powerful ally but a heavy sword. Benji Miller flags '
+                              'the same exposure at portfolio scale: 2022 and 2023 vintage portfolios on '
+                              '3-year loans face liquidity events, so expect recaps and new debt '
+                              'facilities [7qT_5Pw0cTo @ 00:35:08]. Evan Shelley of Truck Parking Club '
+                              'says a lot of underwriting in the last couple of years just made no sense, '
+                              'and that the lots that failed were too far out or over-leased; buying '
+                              'property in the middle of Kentucky or Tennessee, not close to anything, on '
+                              'the assumption you will fill it is not a wise decision [Ombo8TjihMk @ '
+                              "00:29:46]. Expense lines are stickier than first-timers expect: AT&T's "
+                              'commercial minimum is $250 a month and an electric hookup alone runs $100 a '
+                              "month, because, as Ron puts it, you can't do anything cheaply in commercial "
+                              '[q7HQGiIiT_8 @ 00:29:31].',
+                              'The daily grind leaks money through access, collections and tenants who '
+                              "abuse the yard. Rig Hut's founders, who managed a multi-yard portfolio "
+                              'around a South Florida port city, warn that your gate code is not a gate: '
+                              'codes get shared with cousins, dispatchers and buddies until you think 40 '
+                              "trucks are paying while 50 are parked and 3 haven't paid in 2 months, and "
+                              'the fix is tying access control to payment [ulBXkeE5I_8 @ 00:01:59]. One '
+                              'Rig Hut operator came off Zelle, Venmo, checks, cash and a single sheet of '
+                              'printer paper; now drivers open the gate from their phones and past-due '
+                              'tenants get locked out on the 10th, which generates calls [hjC6tiI5Kd4 @ '
+                              "00:00:48]. Chris Long's early equity-for-management deal failed and the "
+                              'managers were fired; Chris now insists on a strong lease, because abandoned '
+                              'cars can take 3 to 6 months to remove, and on separation of duties so '
+                              "people can't get crooked [RPNJmiZNQdY @ 00:42:02]. Ron Rohde had a tenant "
+                              'swap clean fill for debris, brought in Terracon, and now watches for truck '
+                              'oil changes with boots on the ground, cameras and a check of all four '
+                              "corners [q7HQGiIiT_8 @ 00:12:03]. Tyler Cauble's add-on: always get a Phase "
+                              'I, even in cash deals.'],
+               'table': {'caption': 'Firsthand losses, leaks and the economics check each operator now '
+                                    'runs',
+                         'headers': ['Failure Mode',
+                                     'What Went Wrong',
+                                     'Economics Check Or Fix',
+                                     'Expert Source'],
+                         'rows': [['City blocks the lease on a demanded site',
+                                   '50 to 75+ tours including national and credit groups, but no lease '
+                                   "without the city's green light",
+                                   'Confirm the jurisdiction is friendly on zoning, setbacks, fire lanes, '
+                                   'sprinklers and sewer before contract',
+                                   'Ronald Rohde Law ([gcg4K6xqYaU @ 00:06:51])'],
+                                  ['Insurance swallows the rent increase',
+                                   'Stall rents rose from $100 to $215 to $225 against a $150 pro forma',
+                                   'Insurance rose several thousand dollars and net income stayed flat; '
+                                   'fixed 5-year debt at about 5.5% saved the deal',
+                                   'Ronald Rohde Law ([gcg4K6xqYaU @ 00:04:45])'],
+                                  ['Easements buried in the site',
+                                   'Twelve easements on one Longyards site caused a 2-year loss',
+                                   'Costs rose by a third; Longyards now focuses on Tier 1 ready-to-go '
+                                   'land only',
+                                   'Garret Wong Podcast ([RPNJmiZNQdY @ 00:39:23])'],
+                                  ['Overpaying for land relative to parking rent',
+                                   "At $1M per acre a truck parking site likely won't cash flow",
+                                   'Land at $50,000 to $100,000 per acre is viable; higher land price must '
+                                   'be supported by higher rent',
+                                   'Ronald Rohde Law ([rPXHwXgqWs8 @ 00:01:28])'],
+                                  ['Remote or over-leased lots that never fill',
+                                   'Failed lots on the platform were too far out or over-leased',
+                                   "Don't buy in the middle of Kentucky or Tennessee assuming it fills; "
+                                   'bookings track interstate distance',
+                                   'REtipster ([Ombo8TjihMk @ 00:29:46])'],
+                                  ['Gate code leakage and silent non-payers',
+                                   "Operator thinks 40 trucks pay while 50 park and 3 haven't paid in 2 "
+                                   'months',
+                                   'Tie access control to payment so anyone who owes cannot get in',
+                                   'Truck Parking Media ([ulBXkeE5I_8 @ 00:01:59])'],
+                                  ['Tenant contaminates or degrades the yard',
+                                   'A tenant swapped clean fill for debris and Ron had to engage Terracon',
+                                   'Boots on the ground, cameras, all four corners checked, and a Phase I '
+                                   'even in cash deals',
+                                   'Tyler Cauble ([q7HQGiIiT_8 @ 00:12:03])']]},
+               'callout': {'kind': 'OPERATOR GATE',
+                           'title': 'Four Kill Checks Before You Wire Money',
+                           'body': 'Each check below comes from an operator who paid for the lesson in '
+                                   'lost tours, lost years, or leaked rent.',
+                           'items': ["Confirm the city is friendly before going under contract; Ron's "
+                                     '5.5-acre site drew 50 to 75+ tours and still could not lease without '
+                                     "the city's green light [Ronald Rohde Law — gcg4K6xqYaU @ 00:06:51].",
+                                     'Learn the certificate-of-occupancy process before buying, the one '
+                                     'step Ron says they wish they had mastered first [Tyler Cauble — '
+                                     'q7HQGiIiT_8 @ 00:32:22].',
+                                     'Pull every easement before closing; Chris Long lost 2 years and saw '
+                                     'costs rise by a third on a site carrying 12 easements [Garret Wong '
+                                     'Podcast — RPNJmiZNQdY @ 00:39:23].',
+                                     'Tie gate access to payment and know average revenue per space net of '
+                                     'bad debt, vacancy and late payments [Truck Parking Media — '
+                                     'ulBXkeE5I_8 @ 00:02:13].']}}],
+ 'pull_quote': '“Number two, speaking of leakage, your gate code is not a gate.” — Truck Parking Media '
+               '(ulBXkeE5I_8 @ 00:01:44).',
+ 'diagram_id': 'diag-06',
+ 'action_checklist': ['Build an off-market list of 200 to 300 sites with Google Maps and PropStream, score '
+                      'each on highway proximity, lot shape, slope, zoning and owner/use, then hit the top '
+                      '30 to 50 with texts, calls, flyers and emails [Tyler Cauble — q7HQGiIiT_8 @ '
+                      '00:05:05].',
+                      'Order a topographic survey during due diligence so the site plan can show drainage '
+                      'and gravel compaction depth, budgeting about $5K per acre for grading in infill DFW '
+                      '[Ronald Rohde Law — rPXHwXgqWs8 @ 00:02:53].',
+                      'Run coming-soon ads before opening and float $30 per night, $100 per week, or $300 '
+                      'per month to test demand [Ronald Rohde Law — tonuCLfZrYE @ 00:26:18].',
+                      'Underwrite rent at or slightly below the Google Maps median for nearby yards, '
+                      'validated with a $30 to $50 Facebook ad [Jonathan Hayek — mPrS0VognEo @ 00:50:21].',
+                      'Get every inbound caller into the system immediately, because callers ring 3 yards '
+                      'at once and a 20-minute callback lost bookings [Truck Parking Media — ulBXkeE5I_8 @ '
+                      '00:02:44].',
+                      'Install solar SIM cameras at $10 to $20 per SIM for 2 GB over about 6 months '
+                      'instead of Wi-Fi, creating a deterrent and an insurance record [Ronald Rohde Law — '
+                      'rPXHwXgqWs8 @ 00:11:30].'],
+ 'statutory_citations': [{'title': 'Ronald Rohde Law — Challenges I Faced On My Industrial Investment IOS '
+                                   '[00:05:42]',
+                          'url': 'https://www.youtube.com/watch?v=gcg4K6xqYaU&t=342s',
+                          'relevance': 'Primary practitioner testimony on the city as the number one '
+                                       'obstacle, insurance creep, and fixed debt protecting a thin NOI.'},
+                         {'title': 'Garret Wong Podcast — How to Invest in Industrial Outdoor Storage '
+                                   '[00:39:23]',
+                          'url': 'https://www.youtube.com/watch?v=RPNJmiZNQdY&t=2363s',
+                          'relevance': 'Primary practitioner testimony on 12 easements causing a 2-year '
+                                       'loss and a one-third cost overrun.'},
+                         {'title': 'Truck Parking Media — What I Wish I Knew Before Managing My First '
+                                   'Truck Parking Yard [00:01:59]',
+                          'url': 'https://www.youtube.com/watch?v=ulBXkeE5I_8&t=119s',
+                          'relevance': 'Primary practitioner testimony on gate code leakage, non-payment '
+                                       'excuses, and speed to lead.'},
+                         {'title': 'REtipster — Truck Yeah! How Evan Shelley Makes Bank on Truck Parking '
+                                   'Lots | REtipster 194 [00:29:46]',
+                          'url': 'https://www.youtube.com/watch?v=Ombo8TjihMk&t=1786s',
+                          'relevance': 'Primary practitioner testimony on failed lots that were too far '
+                                       'out or over-leased and broken underwriting.'}],
+ 'source_citations': [{'source_type': 'video_pro_tip',
+                       'video_id': 'gcg4K6xqYaU',
+                       'title': 'Challenges I Faced On My Industrial Investment IOS',
+                       'channel': 'Ronald Rohde Law',
+                       'author': 'Ronald Rohde Law',
+                       'text': 'Fixed debt saved our bacon, and the lender is a very powerful ally but a '
+                               'heavy sword.',
+                       'tip': 'Fixed debt saved our bacon, and the lender is a very powerful ally but a '
+                              'heavy sword.',
+                       'timestamp': 440,
+                       'timestamp_seconds': 440,
+                       'timestamp_label': '[00:07:20]',
+                       'url': 'https://www.youtube.com/watch?v=gcg4K6xqYaU&t=440s',
+                       'markdown': '[00:07:20](https://www.youtube.com/watch?v=gcg4K6xqYaU&t=440s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'gcg4K6xqYaU',
+                       'title': 'Challenges I Faced On My Industrial Investment IOS',
+                       'channel': 'Ronald Rohde Law',
+                       'author': 'Ronald Rohde Law',
+                       'text': 'The city is the number one issue, so confirm the jurisdiction is friendly '
+                               'before going under contract.',
+                       'tip': 'The city is the number one issue, so confirm the jurisdiction is friendly '
+                              'before going under contract.',
+                       'timestamp': 342,
+                       'timestamp_seconds': 342,
+                       'timestamp_label': '[00:05:42]',
+                       'url': 'https://www.youtube.com/watch?v=gcg4K6xqYaU&t=342s',
+                       'markdown': '[00:05:42](https://www.youtube.com/watch?v=gcg4K6xqYaU&t=342s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'aMpeVcjGM3c',
+                       'title': 'I Bought 7.5 Acres to Build This IOS Deal',
+                       'channel': 'Ronald Rohde Law',
+                       'author': 'Ronald Rohde Law',
+                       'text': 'And so we are targeting about 5 to 7,000 per acre triple net in terms of '
+                               'the rent.',
+                       'tip': 'And so we are targeting about 5 to 7,000 per acre triple net in terms of '
+                              'the rent.',
+                       'timestamp': 344,
+                       'timestamp_seconds': 344,
+                       'timestamp_label': '[00:05:44]',
+                       'url': 'https://www.youtube.com/watch?v=aMpeVcjGM3c&t=344s',
+                       'markdown': '[00:05:44](https://www.youtube.com/watch?v=aMpeVcjGM3c&t=344s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '7qT_5Pw0cTo',
+                       'title': 'Inside a $4.8M Industrial Outdoor Storage (IOS) Deal in Fontana | Benji '
+                                'Miller',
+                       'channel': 'Adding Value w/ Shy Assar | CRE & Industrial',
+                       'author': 'Adding Value w/ Shy Assar | CRE & Industrial',
+                       'text': 'So, generally what we view as like the most ideal IOS sites are 30% '
+                               'coverage or less with by right zoning.',
+                       'tip': 'So, generally what we view as like the most ideal IOS sites are 30% '
+                              'coverage or less with by right zoning.',
+                       'timestamp': 1715,
+                       'timestamp_seconds': 1715,
+                       'timestamp_label': '[00:28:35]',
+                       'url': 'https://www.youtube.com/watch?v=7qT_5Pw0cTo&t=1715s',
+                       'markdown': '[00:28:35](https://www.youtube.com/watch?v=7qT_5Pw0cTo&t=1715s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'rPXHwXgqWs8',
+                       'title': 'Actual Costs of Developing Truck Parking',
+                       'channel': 'Ronald Rohde Law',
+                       'author': 'Ronald Rohde Law',
+                       'text': "At $1M per acre the site likely won't cash flow, while $50,000 to $100,000 "
+                               'per acre is viable.',
+                       'tip': "At $1M per acre the site likely won't cash flow, while $50,000 to $100,000 "
+                              'per acre is viable.',
+                       'timestamp': 88,
+                       'timestamp_seconds': 88,
+                       'timestamp_label': '[00:01:28]',
+                       'url': 'https://www.youtube.com/watch?v=rPXHwXgqWs8&t=88s',
+                       'markdown': '[00:01:28](https://www.youtube.com/watch?v=rPXHwXgqWs8&t=88s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Ombo8TjihMk',
+                       'title': 'Truck Yeah! How Evan Shelley Makes Bank on Truck Parking Lots | REtipster '
+                                '194',
+                       'channel': 'REtipster',
+                       'author': 'REtipster',
+                       'text': "I don't think it's a wise decision to go out and buy property that's in "
+                               'the middle of Kentucky or Tennessee not close to anything with the '
+                               "assumption that you're going to fill it up.",
+                       'tip': "I don't think it's a wise decision to go out and buy property that's in the "
+                              'middle of Kentucky or Tennessee not close to anything with the assumption '
+                              "that you're going to fill it up.",
+                       'timestamp': 1929,
+                       'timestamp_seconds': 1929,
+                       'timestamp_label': '[00:32:09]',
+                       'url': 'https://www.youtube.com/watch?v=Ombo8TjihMk&t=1929s',
+                       'markdown': '[00:32:09](https://www.youtube.com/watch?v=Ombo8TjihMk&t=1929s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'uZVNo7EIaXA',
+                       'title': 'Pros And Cons; Building The “Truck Parking Lot Business!”',
+                       'channel': 'Truck N’ Hustle',
+                       'author': 'Truck N’ Hustle',
+                       'text': "The toughest thing is finding land that's zoned for truck parking.",
+                       'tip': "The toughest thing is finding land that's zoned for truck parking.",
+                       'timestamp': 3,
+                       'timestamp_seconds': 3,
+                       'timestamp_label': '[00:00:03]',
+                       'url': 'https://www.youtube.com/watch?v=uZVNo7EIaXA&t=3s',
+                       'markdown': '[00:00:03](https://www.youtube.com/watch?v=uZVNo7EIaXA&t=3s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'GOXjR9kZ3BA',
+                       'title': 'Truck Yard Access Control: 4 Systems That Can Make or Break Your Lot’s '
+                                'Success',
+                       'channel': 'Truck Parking Media',
+                       'author': 'Truck Parking Media',
+                       'text': 'Each system has a time and place, but what matters is knowing what your '
+                               'yard actually needs today and what will break as you grow.',
+                       'tip': 'Each system has a time and place, but what matters is knowing what your '
+                              'yard actually needs today and what will break as you grow.',
+                       'timestamp': 307,
+                       'timestamp_seconds': 307,
+                       'timestamp_label': '[00:05:07]',
+                       'url': 'https://www.youtube.com/watch?v=GOXjR9kZ3BA&t=307s',
+                       'markdown': '[00:05:07](https://www.youtube.com/watch?v=GOXjR9kZ3BA&t=307s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'Fc82YDH9IrI',
+                       'title': 'Manual vs Automatic Gates: Which Is Best for Your Truck Parking Yard?',
+                       'channel': 'Truck Parking Media',
+                       'author': 'Truck Parking Media',
+                       'text': 'Again, no one wants those calls at night.',
+                       'tip': 'Again, no one wants those calls at night.',
+                       'timestamp': 252,
+                       'timestamp_seconds': 252,
+                       'timestamp_label': '[00:04:12]',
+                       'url': 'https://www.youtube.com/watch?v=Fc82YDH9IrI&t=252s',
+                       'markdown': '[00:04:12](https://www.youtube.com/watch?v=Fc82YDH9IrI&t=252s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'hjC6tiI5Kd4',
+                       'title': 'Truck Parking Technology That Fills Yards Faster | Rig Hut',
+                       'channel': 'Truck Parking Media',
+                       'author': 'Truck Parking Media',
+                       'text': 'So, all these drivers can open the gate from their phone.',
+                       'tip': 'So, all these drivers can open the gate from their phone.',
+                       'timestamp': 48,
+                       'timestamp_seconds': 48,
+                       'timestamp_label': '[00:00:48]',
+                       'url': 'https://www.youtube.com/watch?v=hjC6tiI5Kd4&t=48s',
+                       'markdown': '[00:00:48](https://www.youtube.com/watch?v=hjC6tiI5Kd4&t=48s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'q7HQGiIiT_8',
+                       'title': 'How to Invest in Industrial Outdoor Storage with Ron Rohde',
+                       'channel': 'Tyler Cauble',
+                       'author': 'Tyler Cauble',
+                       'text': "So that's my answer is why it's kind of expensive because can't do "
+                               'anything cheaply in commercial and even IOS qualifies as commercial.',
+                       'tip': "So that's my answer is why it's kind of expensive because can't do anything "
+                              'cheaply in commercial and even IOS qualifies as commercial.',
+                       'timestamp': 1803,
+                       'timestamp_seconds': 1803,
+                       'timestamp_label': '[00:30:03]',
+                       'url': 'https://www.youtube.com/watch?v=q7HQGiIiT_8&t=1803s',
+                       'markdown': '[00:30:03](https://www.youtube.com/watch?v=q7HQGiIiT_8&t=1803s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '-g_D6hbOPNE',
+                       'title': 'Flex vs Outdoor Storage (IOS) Which industrial investment is better?',
+                       'channel': 'Ronald Rohde Law',
+                       'author': 'Ronald Rohde Law',
+                       'text': 'IOS on the other hand is essentially a covered land play.',
+                       'tip': 'IOS on the other hand is essentially a covered land play.',
+                       'timestamp': 346,
+                       'timestamp_seconds': 346,
+                       'timestamp_label': '[00:05:46]',
+                       'url': 'https://www.youtube.com/watch?v=-g_D6hbOPNE&t=346s',
+                       'markdown': '[00:05:46](https://www.youtube.com/watch?v=-g_D6hbOPNE&t=346s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'RPNJmiZNQdY',
+                       'title': 'How to Invest in Industrial Outdoor Storage',
+                       'channel': 'Garret Wong Podcast',
+                       'author': 'Garret Wong Podcast',
+                       'text': "You want to put bridges between that so people can't get crooked or do "
+                               'deals.',
+                       'tip': "You want to put bridges between that so people can't get crooked or do "
+                              'deals.',
+                       'timestamp': 2548,
+                       'timestamp_seconds': 2548,
+                       'timestamp_label': '[00:42:28]',
+                       'url': 'https://www.youtube.com/watch?v=RPNJmiZNQdY&t=2548s',
+                       'markdown': '[00:42:28](https://www.youtube.com/watch?v=RPNJmiZNQdY&t=2548s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'mPrS0VognEo',
+                       'title': 'Net Lease Industrial, IOS, and Truck Parking with Ron Rohde',
+                       'channel': 'Jonathan Hayek',
+                       'author': 'Jonathan Hayek',
+                       'text': 'Pick the median or slightly below the median for underwriting your '
+                               "property, and you'll be conservative.",
+                       'tip': 'Pick the median or slightly below the median for underwriting your '
+                              "property, and you'll be conservative.",
+                       'timestamp': 3021,
+                       'timestamp_seconds': 3021,
+                       'timestamp_label': '[00:50:21]',
+                       'url': 'https://www.youtube.com/watch?v=mPrS0VognEo&t=3021s',
+                       'markdown': '[00:50:21](https://www.youtube.com/watch?v=mPrS0VognEo&t=3021s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': '7n_O1KWl4EQ',
+                       'title': 'Massive Profit within IOS Industrial Contractor Yard with Chris Long and '
+                                'Longyards',
+                       'channel': 'Ronald Rohde Law',
+                       'author': 'Ronald Rohde Law',
+                       'text': 'You can have one employee manage to three of them.',
+                       'tip': 'You can have one employee manage to three of them.',
+                       'timestamp': 1096,
+                       'timestamp_seconds': 1096,
+                       'timestamp_label': '[00:18:16]',
+                       'url': 'https://www.youtube.com/watch?v=7n_O1KWl4EQ&t=1096s',
+                       'markdown': '[00:18:16](https://www.youtube.com/watch?v=7n_O1KWl4EQ&t=1096s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'tonuCLfZrYE',
+                       'title': 'How to Invest Industrial Outdoor Storage (Truck Parking)',
+                       'channel': 'Ronald Rohde Law',
+                       'author': 'Ronald Rohde Law',
+                       'text': 'And so all truck parking I would say is self-managed.',
+                       'tip': 'And so all truck parking I would say is self-managed.',
+                       'timestamp': 1680,
+                       'timestamp_seconds': 1680,
+                       'timestamp_label': '[00:28:00]',
+                       'url': 'https://www.youtube.com/watch?v=tonuCLfZrYE&t=1680s',
+                       'markdown': '[00:28:00](https://www.youtube.com/watch?v=tonuCLfZrYE&t=1680s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'},
+                      {'source_type': 'video_pro_tip',
+                       'video_id': 'ulBXkeE5I_8',
+                       'title': 'What I Wish I Knew Before Managing My First Truck Parking Yard',
+                       'channel': 'Truck Parking Media',
+                       'author': 'Truck Parking Media',
+                       'text': "If someone owes, they shouldn't be able to get in.",
+                       'tip': "If someone owes, they shouldn't be able to get in.",
+                       'timestamp': 133,
+                       'timestamp_seconds': 133,
+                       'timestamp_label': '[00:02:13]',
+                       'url': 'https://www.youtube.com/watch?v=ulBXkeE5I_8&t=133s',
+                       'markdown': '[00:02:13](https://www.youtube.com/watch?v=ulBXkeE5I_8&t=133s)',
+                       'epistemic_status': 'attributed_practitioner_claim',
+                       'relevance': 'Verbatim practitioner testimony from Chapter Q11.'}]}
